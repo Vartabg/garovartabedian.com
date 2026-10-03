@@ -1,0 +1,689 @@
+{
+  "eras": [
+    {
+      "id": "birth",
+      "name": "Birth & childhood"
+    },
+    {
+      "id": "preparation",
+      "name": "Baptism & wilderness"
+    },
+    {
+      "id": "galilee",
+      "name": "Galilean ministry"
+    },
+    {
+      "id": "journey",
+      "name": "The road to Jerusalem"
+    },
+    {
+      "id": "passion",
+      "name": "Passion week"
+    },
+    {
+      "id": "resurrection",
+      "name": "Resurrection & ascension"
+    }
+  ],
+  "events": [
+    {
+      "id": "annunciation",
+      "era": "birth",
+      "title": "The annunciation",
+      "place": "nazareth",
+      "line": "The angel Gabriel tells Mary in Nazareth that she will bear a son named Jesus.",
+      "refs": [
+        {
+          "ref": "LUK 1:26-33"
+        }
+      ]
+    },
+    {
+      "id": "nativity",
+      "era": "birth",
+      "title": "Born in Bethlehem",
+      "place": "bethlehem",
+      "line": "Jesus is born in Bethlehem and laid in a feeding trough.",
+      "refs": [
+        {
+          "ref": "LUK 2:4-7"
+        },
+        {
+          "ref": "MAT 1:24-25"
+        }
+      ]
+    },
+    {
+      "id": "shepherds",
+      "era": "birth",
+      "title": "Shepherds hear the news",
+      "place": "bethlehem",
+      "line": "An angel announces the birth to shepherds nearby, who go and find the child.",
+      "refs": [
+        {
+          "ref": "LUK 2:8-16"
+        }
+      ]
+    },
+    {
+      "id": "presentation",
+      "era": "birth",
+      "title": "Presented in the temple",
+      "place": "jerusalem",
+      "line": "Mary and Joseph present the infant Jesus in the temple, where Simeon blesses him.",
+      "refs": [
+        {
+          "ref": "LUK 2:22-32"
+        }
+      ]
+    },
+    {
+      "id": "magi",
+      "era": "birth",
+      "title": "Visit of the magi",
+      "place": "bethlehem",
+      "line": "Wise men from the east follow a star to Bethlehem and offer the child gifts.",
+      "refs": [
+        {
+          "ref": "MAT 2:1-11"
+        }
+      ]
+    },
+    {
+      "id": "flight-to-egypt",
+      "era": "birth",
+      "title": "Flight to Egypt",
+      "place": "egypt",
+      "line": "Warned in a dream, Joseph takes the family to Egypt until Herod dies, then settles in Nazareth.",
+      "refs": [
+        {
+          "ref": "MAT 2:13-15"
+        },
+        {
+          "ref": "MAT 2:19-23"
+        }
+      ]
+    },
+    {
+      "id": "boy-in-temple",
+      "era": "birth",
+      "title": "The boy in the temple",
+      "place": "jerusalem",
+      "line": "At twelve, Jesus stays behind in Jerusalem and is found in the temple among the teachers.",
+      "refs": [
+        {
+          "ref": "LUK 2:41-49"
+        }
+      ]
+    },
+    {
+      "id": "baptism",
+      "era": "preparation",
+      "title": "Baptized in the Jordan",
+      "place": "jordan-river",
+      "line": "John baptizes Jesus in the Jordan River, and a voice from heaven calls him the beloved Son.",
+      "refs": [
+        {
+          "ref": "MAT 3:13-17"
+        },
+        {
+          "ref": "MRK 1:9-11"
+        },
+        {
+          "ref": "LUK 3:21-22"
+        },
+        {
+          "ref": "JHN 1:32-34"
+        }
+      ]
+    },
+    {
+      "id": "temptation",
+      "era": "preparation",
+      "title": "Tempted in the wilderness",
+      "place": "wilderness",
+      "line": "Jesus fasts forty days in the wilderness and answers each temptation with Scripture.",
+      "refs": [
+        {
+          "ref": "MAT 4:1-11"
+        },
+        {
+          "ref": "LUK 4:1-13"
+        },
+        {
+          "ref": "MRK 1:12-13"
+        }
+      ]
+    },
+    {
+      "id": "wedding-at-cana",
+      "era": "galilee",
+      "title": "Water into wine at Cana",
+      "place": "cana",
+      "line": "At a wedding in Cana, Jesus turns water into wine, his first recorded sign.",
+      "refs": [
+        {
+          "ref": "JHN 2:1-11"
+        }
+      ]
+    },
+    {
+      "id": "samaritan-woman",
+      "era": "galilee",
+      "title": "The Samaritan woman",
+      "place": "samaria",
+      "line": "On the way north, Jesus speaks with a Samaritan woman at Jacob's well and tells her he is the Messiah.",
+      "refs": [
+        {
+          "ref": "JHN 4:5-14"
+        },
+        {
+          "ref": "JHN 4:25-26"
+        }
+      ]
+    },
+    {
+      "id": "nazareth-rejection",
+      "era": "galilee",
+      "title": "Rejected at Nazareth",
+      "place": "nazareth",
+      "line": "Jesus reads Isaiah in the Nazareth synagogue, and the town drives him out.",
+      "refs": [
+        {
+          "ref": "LUK 4:16-21"
+        },
+        {
+          "ref": "LUK 4:28-30"
+        }
+      ]
+    },
+    {
+      "id": "capernaum-ministry",
+      "era": "galilee",
+      "title": "Ministry base at Capernaum",
+      "place": "capernaum",
+      "line": "Jesus settles in Capernaum, teaching in the synagogue and healing many.",
+      "refs": [
+        {
+          "ref": "MAT 4:13-16"
+        },
+        {
+          "ref": "MRK 1:21-34"
+        }
+      ],
+      "composite": true
+    },
+    {
+      "id": "calling-fishermen",
+      "era": "galilee",
+      "title": "Calling the fishermen",
+      "place": "sea-of-galilee",
+      "line": "After a great catch of fish, Peter, Andrew, James, and John leave their nets to follow Jesus.",
+      "refs": [
+        {
+          "ref": "LUK 5:1-11"
+        },
+        {
+          "ref": "MAT 4:18-22"
+        },
+        {
+          "ref": "MRK 1:16-20"
+        }
+      ]
+    },
+    {
+      "id": "sermon-on-the-mount",
+      "era": "galilee",
+      "title": "Sermon on the Mount",
+      "place": "galilee-mountain",
+      "line": "On a mountainside Jesus teaches the crowds, beginning with the Beatitudes.",
+      "refs": [
+        {
+          "ref": "MAT 5:1-12"
+        },
+        {
+          "ref": "MAT 7:28-29"
+        }
+      ]
+    },
+    {
+      "id": "calming-the-storm",
+      "era": "galilee",
+      "title": "Calming the storm",
+      "place": "sea-of-galilee",
+      "line": "Jesus stills a storm on the Sea of Galilee with a word.",
+      "refs": [
+        {
+          "ref": "MRK 4:35-41"
+        },
+        {
+          "ref": "LUK 8:22-25"
+        },
+        {
+          "ref": "MAT 8:23-27"
+        }
+      ]
+    },
+    {
+      "id": "gerasene-demoniac",
+      "era": "galilee",
+      "title": "The Gerasene demoniac",
+      "place": "gerasa",
+      "line": "In the country of the Gerasenes, Jesus frees a man possessed by a legion of demons.",
+      "refs": [
+        {
+          "ref": "MRK 5:1-15"
+        },
+        {
+          "ref": "LUK 8:26-33"
+        },
+        {
+          "ref": "MAT 8:28-34"
+        }
+      ]
+    },
+    {
+      "id": "feeding-5000",
+      "era": "galilee",
+      "title": "Feeding the five thousand",
+      "place": "bethsaida",
+      "line": "Near Bethsaida, Jesus feeds about five thousand men with five loaves and two fish.",
+      "refs": [
+        {
+          "ref": "LUK 9:10-17"
+        },
+        {
+          "ref": "JHN 6:5-13"
+        },
+        {
+          "ref": "MAT 14:15-21"
+        },
+        {
+          "ref": "MRK 6:35-44"
+        }
+      ]
+    },
+    {
+      "id": "walking-on-water",
+      "era": "galilee",
+      "title": "Walking on the water",
+      "place": "sea-of-galilee",
+      "line": "Jesus walks across the Sea of Galilee to the disciples' boat in the night.",
+      "refs": [
+        {
+          "ref": "MAT 14:22-33"
+        },
+        {
+          "ref": "JHN 6:16-21"
+        },
+        {
+          "ref": "MRK 6:45-52"
+        }
+      ]
+    },
+    {
+      "id": "syrophoenician-woman",
+      "era": "galilee",
+      "title": "The Syrophoenician woman",
+      "place": "tyre-sidon",
+      "line": "In the region of Tyre and Sidon, Jesus heals the daughter of a Gentile woman who asks in faith.",
+      "refs": [
+        {
+          "ref": "MRK 7:24-30"
+        },
+        {
+          "ref": "MAT 15:21-28"
+        }
+      ]
+    },
+    {
+      "id": "peters-confession",
+      "era": "galilee",
+      "title": "Peter's confession",
+      "place": "caesarea-philippi",
+      "line": "At Caesarea Philippi, Peter declares that Jesus is the Christ, the Son of the living God.",
+      "refs": [
+        {
+          "ref": "MAT 16:13-17"
+        },
+        {
+          "ref": "MRK 8:27-29"
+        },
+        {
+          "ref": "LUK 9:18-20"
+        }
+      ]
+    },
+    {
+      "id": "transfiguration",
+      "era": "galilee",
+      "title": "The transfiguration",
+      "place": "galilee-mountain",
+      "line": "On a high mountain, Jesus is transfigured before Peter, James, and John, with Moses and Elijah appearing.",
+      "refs": [
+        {
+          "ref": "MAT 17:1-8"
+        },
+        {
+          "ref": "LUK 9:28-36"
+        },
+        {
+          "ref": "MRK 9:2-8"
+        }
+      ]
+    },
+    {
+      "id": "toward-jerusalem",
+      "era": "journey",
+      "title": "Setting out for Jerusalem",
+      "place": "galilee-mountain",
+      "line": "Jesus resolutely sets his face to go to Jerusalem, traveling and teaching along the way.",
+      "refs": [
+        {
+          "ref": "LUK 9:51-53"
+        }
+      ]
+    },
+    {
+      "id": "raising-lazarus",
+      "era": "journey",
+      "title": "Raising of Lazarus",
+      "place": "bethany",
+      "line": "At Bethany, Jesus calls Lazarus out of the tomb four days after his death.",
+      "refs": [
+        {
+          "ref": "JHN 11:38-44"
+        }
+      ]
+    },
+    {
+      "id": "blind-bartimaeus",
+      "era": "journey",
+      "title": "Healing blind Bartimaeus",
+      "place": "jericho",
+      "line": "Near Jericho, Jesus restores the sight of a blind beggar who calls him Son of David.",
+      "refs": [
+        {
+          "ref": "MRK 10:46-52"
+        },
+        {
+          "ref": "LUK 18:35-43"
+        },
+        {
+          "ref": "MAT 20:29-34"
+        }
+      ]
+    },
+    {
+      "id": "zacchaeus",
+      "era": "journey",
+      "title": "Zacchaeus the tax collector",
+      "place": "jericho",
+      "line": "In Jericho, Jesus stays at the house of Zacchaeus, who repays those he wronged.",
+      "refs": [
+        {
+          "ref": "LUK 19:1-10"
+        }
+      ]
+    },
+    {
+      "id": "anointing-at-bethany",
+      "era": "passion",
+      "title": "Anointed at Bethany",
+      "place": "bethany",
+      "line": "At Bethany, Mary anoints Jesus with costly ointment ahead of his burial.",
+      "refs": [
+        {
+          "ref": "JHN 12:1-8"
+        },
+        {
+          "ref": "MRK 14:3-9"
+        },
+        {
+          "ref": "MAT 26:6-13"
+        }
+      ],
+      "orderingNote": {
+        "note": "John 12:1 dates this six days before the Passover; Mark 14:1 introduces it two days before. The accounts agree on the place, the ointment, and the objection, and differ on when in the week it happened.",
+        "refs": [
+          {
+            "ref": "JHN 12:1"
+          },
+          {
+            "ref": "MRK 14:1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "triumphal-entry",
+      "era": "passion",
+      "title": "Triumphal entry",
+      "place": "jerusalem",
+      "line": "Jesus rides into Jerusalem on a donkey as crowds spread branches and shout Hosanna.",
+      "refs": [
+        {
+          "ref": "MAT 21:6-11"
+        },
+        {
+          "ref": "JHN 12:12-15"
+        },
+        {
+          "ref": "MRK 11:7-10"
+        },
+        {
+          "ref": "LUK 19:35-38"
+        }
+      ]
+    },
+    {
+      "id": "temple-cleansing",
+      "era": "passion",
+      "title": "Cleansing the temple",
+      "place": "jerusalem",
+      "line": "Jesus drives the money changers and merchants out of the temple courts.",
+      "refs": [
+        {
+          "ref": "MAT 21:12-13"
+        },
+        {
+          "ref": "MRK 11:15-17"
+        },
+        {
+          "ref": "LUK 19:45-46"
+        }
+      ],
+      "orderingNote": {
+        "note": "John places this at a Passover near the start of the ministry (John 2:13-22); Matthew, Mark, and Luke place it in the final week. The wording is close enough that the accounts describe the same scene, so readers differ over whether the temple was cleared twice or one event has been placed differently. The map follows the Synoptic position and says so.",
+        "refs": [
+          {
+            "ref": "JHN 2:13-22"
+          }
+        ]
+      }
+    },
+    {
+      "id": "last-supper",
+      "era": "passion",
+      "title": "The Last Supper",
+      "place": "jerusalem",
+      "line": "At a Passover meal, Jesus gives the disciples bread and the cup as his body and blood.",
+      "refs": [
+        {
+          "ref": "LUK 22:14-20"
+        },
+        {
+          "ref": "MAT 26:26-29"
+        },
+        {
+          "ref": "MRK 14:22-25"
+        }
+      ]
+    },
+    {
+      "id": "gethsemane",
+      "era": "passion",
+      "title": "Gethsemane",
+      "place": "jerusalem",
+      "line": "Jesus prays in the garden of Gethsemane and is arrested there after Judas betrays him.",
+      "refs": [
+        {
+          "ref": "MAT 26:36-46"
+        },
+        {
+          "ref": "MAT 26:47-50"
+        }
+      ]
+    },
+    {
+      "id": "trials",
+      "era": "passion",
+      "title": "Trials before the rulers",
+      "place": "jerusalem",
+      "line": "Jesus is tried by the council, then sent to Pilate and Herod.",
+      "refs": [
+        {
+          "ref": "MAT 26:57-66"
+        },
+        {
+          "ref": "LUK 23:1-11"
+        },
+        {
+          "ref": "MRK 14:53-64"
+        },
+        {
+          "ref": "JHN 18:19-24"
+        }
+      ]
+    },
+    {
+      "id": "crucifixion",
+      "era": "passion",
+      "title": "The crucifixion",
+      "place": "jerusalem",
+      "line": "Jesus is crucified at the place called The Skull, between two criminals, and dies.",
+      "refs": [
+        {
+          "ref": "LUK 23:33-46"
+        },
+        {
+          "ref": "JHN 19:17-30"
+        },
+        {
+          "ref": "MAT 27:35-50"
+        },
+        {
+          "ref": "MRK 15:24-37"
+        }
+      ]
+    },
+    {
+      "id": "burial",
+      "era": "passion",
+      "title": "Buried in the tomb",
+      "place": "jerusalem",
+      "line": "Joseph of Arimathea lays the body of Jesus in a new tomb cut from rock.",
+      "refs": [
+        {
+          "ref": "MAT 27:57-60"
+        },
+        {
+          "ref": "JHN 19:38-42"
+        },
+        {
+          "ref": "MRK 15:42-46"
+        },
+        {
+          "ref": "LUK 23:50-53"
+        }
+      ]
+    },
+    {
+      "id": "resurrection",
+      "era": "resurrection",
+      "title": "Risen from the dead",
+      "place": "jerusalem",
+      "line": "On the first day of the week, the tomb is found empty and Jesus is announced risen.",
+      "refs": [
+        {
+          "ref": "MAT 28:1-8"
+        },
+        {
+          "ref": "LUK 24:1-8"
+        },
+        {
+          "ref": "MRK 16:1-8"
+        },
+        {
+          "ref": "JHN 20:1-10"
+        }
+      ]
+    },
+    {
+      "id": "emmaus-road",
+      "era": "resurrection",
+      "title": "The road to Emmaus",
+      "place": "emmaus",
+      "line": "The risen Jesus walks with two disciples to Emmaus and is recognized in the breaking of bread.",
+      "refs": [
+        {
+          "ref": "LUK 24:13-32"
+        }
+      ]
+    },
+    {
+      "id": "thomas",
+      "era": "resurrection",
+      "title": "Appearing to Thomas",
+      "place": "jerusalem",
+      "line": "Jesus appears to the disciples in Jerusalem, and a week later shows Thomas his hands and side.",
+      "refs": [
+        {
+          "ref": "JHN 20:19-20"
+        },
+        {
+          "ref": "JHN 20:26-29"
+        }
+      ]
+    },
+    {
+      "id": "breakfast-by-the-sea",
+      "era": "resurrection",
+      "title": "Breakfast by the sea",
+      "place": "sea-of-galilee",
+      "line": "The risen Jesus meets seven disciples fishing on the Sea of Galilee and eats with them.",
+      "refs": [
+        {
+          "ref": "JHN 21:4-14"
+        }
+      ]
+    },
+    {
+      "id": "great-commission",
+      "era": "resurrection",
+      "title": "The great commission",
+      "place": "galilee-mountain",
+      "line": "On a mountain in Galilee, Jesus sends the disciples to make disciples of all nations.",
+      "refs": [
+        {
+          "ref": "MAT 28:16-20"
+        }
+      ]
+    },
+    {
+      "id": "ascension",
+      "era": "resurrection",
+      "title": "The ascension",
+      "place": "bethany",
+      "line": "Near Bethany, Jesus blesses the disciples and is taken up into heaven.",
+      "refs": [
+        {
+          "ref": "LUK 24:50-53"
+        },
+        {
+          "ref": "ACT 1:9-11"
+        }
+      ]
+    }
+  ]
+}

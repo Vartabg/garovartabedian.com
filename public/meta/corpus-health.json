@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/site/build-corpus-health.mjs",
+  "corpus": {
+    "books": {
+      "hostedIds": 86,
+      "unionChapterSlots": 1586,
+      "sourceBackedBriefings": 29
+    },
+    "traditions": {
+      "count": 5,
+      "shelves": [
+        {
+          "id": "protestant",
+          "hostedBookIds": 66
+        },
+        {
+          "id": "catholic",
+          "hostedBookIds": 73
+        },
+        {
+          "id": "orthodox",
+          "hostedBookIds": 81
+        },
+        {
+          "id": "ethiopian",
+          "hostedBookIds": 82
+        },
+        {
+          "id": "armenian",
+          "hostedBookIds": 75
+        }
+      ]
+    },
+    "translations": {
+      "count": 5,
+      "ids": [
+        "brenton",
+        "charles",
+        "drb",
+        "kjv",
+        "web"
+      ]
+    },
+    "guides": {
+      "files": 1586,
+      "questions": 10904,
+      "questionsWithVerseRefs": 9010,
+      "questionsWithoutVerseRefs": 1894,
+      "batchTemplateGuides": 851,
+      "customStructuredGuides": 735,
+      "review": {
+        "agentReviewed": 715,
+        "humanReviewed": 0,
+        "untracked": 871
+      },
+      "v2": {
+        "rubricVersion": "guide-v2",
+        "provenance": 538,
+        "passing": 538,
+        "failing": 0,
+        "rebound": 108
+      }
+    },
+    "crossReferences": {
+      "sourceVerses": 29055,
+      "targets": 376117
+    },
+    "topics": {
+      "count": 5319,
+      "references": 74041
+    },
+    "originals": {
+      "editions": [
+        {
+          "id": "lxx",
+          "name": "Rahlfs Septuagint — lxx-morph",
+          "revision": "c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2"
+        },
+        {
+          "id": "oshb",
+          "name": "Open Scriptures Hebrew Bible",
+          "revision": "3d15126fb1ef74867fc1434be1942e837932691f"
+        },
+        {
+          "id": "sblgnt",
+          "name": "SBL Greek New Testament + MorphGNT",
+          "revision": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d"
+        }
+      ],
+      "books": 83,
+      "chapters": 1386,
+      "verses": 36956,
+      "wordTokens": 557774,
+      "versesWithSourceReferenceMappings": 1973,
+      "sourceReferenceMappings": 2047
+    },
+    "earlyWritings": {
+      "library": {
+        "schemaVersion": 1,
+        "reviewedAt": "2026-09-26",
+        "sourceManifestSha256": "927438ea9bcd53c2dad8d40d3ea9b351169bd9194a2063ca7b99fff56ee7083a",
+        "importManifestSha256": "6cfd704ba92ff011954c46b7efc87260ffd504c04445829f8f5a0690c5b28b0a",
+        "acquiredEntries": 117,
+        "publishedEntries": 103,
+        "referenceOnlyEntries": 14,
+        "deferredEntries": 5,
+        "works": 111,
+        "newPrimaryEntries": 100,
+        "reusedPrimaryEntries": 3,
+        "readingSections": 5099,
+        "primaryCharacters": 18163661,
+        "commentaryCharacters": 3784092,
+        "exactSearch": "All published sections, edition commentary and reference metadata; legacy editions separately labelled. Server-side excerpts only.",
+        "semanticSearch": "Expanded editions: translated text is embedded for meaning search. Commentary, reference records, and editions that reuse the original shelf are not embedded again. Similarity is not evidence of historical dependence.",
+        "allusions": "Existing editions only; no allusion claims added for the expansion."
+      },
+      "texts": 23,
+      "sections": 614
+    }
+  },
+  "validation": {
+    "guides": {
+      "coverage": {
+        "status": "complete",
+        "guides": 1586,
+        "chapterSlots": 1586,
+        "scope": "one guide for every hosted union book/chapter slot"
+      },
+      "referencesAndQuotations": {
+        "status": "automated",
+        "scope": "path identity, reference bounds, and key-verse quotation matching against a hosted translation",
+        "test": "tests/scripture-guide-integrity.test.ts"
+      },
+      "v2Rubric": {
+        "status": "passing",
+        "rubricVersion": "guide-v2",
+        "guidesWithProvenance": 538,
+        "passing": 538,
+        "failing": 0,
+        "rebound": 108,
+        "scope": "template rejection, chapter coverage, exact hosted-edition quotations, cited questions, category depth, glossary, and current-grounding provenance",
+        "reboundNote": "rebound counts guides whose prompt hash was moved after a citation url/label correction to their book briefing, each carrying a validated generation.rebound record (when, who, why, previous hash, fields changed). No re-bind may cross a change to hosted text, briefing claims, cross-references, or the rubric."
+      },
+      "editorialReview": {
+        "status": "in-progress",
+        "agentReviewed": 715,
+        "humanReviewed": 0,
+        "untracked": 871,
+        "note": "reviewStatus tiers: agent-reviewed (multi-pass automated-agent editorial panel; quotations and references also machine-verified) and human-reviewed (a named person signed off). Only human-reviewed implies personal approval."
+      }
+    }
+  },
+  "coverage": {
+    "search": {
+      "translationIds": [
+        "brenton",
+        "charles",
+        "drb",
+        "kjv",
+        "web"
+      ],
+      "availableTranslationIds": [
+        "brenton",
+        "charles",
+        "drb",
+        "kjv",
+        "web"
+      ],
+      "scope": "exact-word index per translation plus Nave topical relationships"
+    },
+    "semanticSearch": {
+      "model": "Xenova/all-MiniLM-L6-v2",
+      "dims": 384,
+      "quantization": "int8-unit-127",
+      "translation": "web",
+      "books": 81,
+      "chapters": 1402,
+      "verses": 38029,
+      "verseShardBytes": 14603136
+    },
+    "chapterNeighbours": {
+      "grain": "chapter",
+      "model": "Xenova/all-MiniLM-L6-v2",
+      "chaptersIndexed": 1402,
+      "chaptersWithNeighbours": 1402,
+      "links": 8407,
+      "alsoCrossReferenced": 4323,
+      "minScore": 0.6,
+      "topK": 6
+    },
+    "originalLanguages": {
+      "editionIds": [
+        "lxx",
+        "oshb",
+        "sblgnt"
+      ],
+      "hasGreekSeptuagint": true,
+      "hasTextualApparatus": false
+    }
+  }
+}

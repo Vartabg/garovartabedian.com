@@ -1,0 +1,227 @@
+{
+  "book": "GEN",
+  "chapter": 7,
+  "bookName": "Genesis",
+  "summary": "Noah brings his household and animals into the ship as instructed, with larger numbers specified for clean animals and birds. The deep and sky release waters that lift the ship above the covered mountains, while the chapter repeatedly says life outside it dies and the waters prevail for 150 days.",
+  "whyItMatters": "The flood reaches its destructive peak here, making the loss of life as central as the survival of Noah’s household. The detailed timing and animal counts require reading the instructions across chapters 6–8 rather than flattening them.",
+  "context": {
+    "author": "Genesis names no historical writer. Jewish and Christian tradition associates the Torah with Moses; the book briefing describes older traditions shaped into a final literary form, without a settled account of every stage.",
+    "audience": "The book addresses Israel through a story of shared human origins and the family from whom Israel traces its ancestry; no single first audience is named in this chapter.",
+    "date": "The narrated events belong to primeval or ancestral time, not to a securely dated writing event. Major stages of Genesis are often placed across the monarchic to Persian periods, with exact models and dates debated.",
+    "setting": "Noah’s ship and the flooded earth as described by the narrative.",
+    "literaryForm": "Chronological flood narrative with repeated entry notices, rising-water descriptions, and a death summary."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "God has instructed Noah to build a ship and gather family, creatures, and food because a destructive flood is coming.",
+      "verseRefs": [
+        "6:13-22"
+      ]
+    },
+    "here": {
+      "text": "Follow the seven-day warning, the entry into the ship, and the escalating waters through the repeated declarations of death outside.",
+      "verseRefs": [
+        "7:1-24"
+      ]
+    },
+    "after": {
+      "text": "God remembers Noah and the creatures, the waters recede, and the ship comes to rest on Ararat’s mountains.",
+      "verseRefs": [
+        "8:1-5"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Final entry instructions",
+      "verses": "1-5",
+      "note": "Noah is told to bring his household and specified clean and unclean animals."
+    },
+    {
+      "heading": "Entry and dated onset",
+      "verses": "6-12",
+      "note": "The family and animals board; the deep and sky open on a named date."
+    },
+    {
+      "heading": "All aboard and the door shut",
+      "verses": "13-16",
+      "note": "The travelers are named again and Yahweh shuts them in."
+    },
+    {
+      "heading": "Waters rise over the mountains",
+      "verses": "17-20",
+      "note": "The ship floats as water covers even the high mountains."
+    },
+    {
+      "heading": "Life outside dies; waters prevail",
+      "verses": "21-24",
+      "note": "The passage states the death of land life and the 150-day duration."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "7:11",
+      "text": "In the six hundredth year of Noah’s life, in the second month, on the seventeenth day of the month, on that day all the fountains of the great deep burst open, and the sky’s windows opened.",
+      "why": "The date and two water sources begin the flood’s full arrival."
+    },
+    {
+      "ref": "7:16",
+      "text": "Those who went in, went in male and female of all flesh, as God commanded him; then Yahweh shut him in.",
+      "why": "The closing door marks the division between those inside and outside."
+    },
+    {
+      "ref": "7:23",
+      "text": "Every living thing was destroyed that was on the surface of the ground, including man, livestock, creeping things, and birds of the sky. They were destroyed from the earth. Only Noah was left, and those who were with him in the ship.",
+      "why": "The sweeping loss of life is stated plainly, with Noah’s group the sole survivors in the ship."
+    }
+  ],
+  "themes": [
+    "obedience and entry",
+    "clean and unclean animals",
+    "rising waters",
+    "mass death",
+    "survival in the ship"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What are “clean” and “unclean” animals here?",
+      "answer": "The chapter distinguishes them when specifying numbers to bring aboard, but does not provide a complete classification rule. Clean animals appear again in Noah’s offerings after the flood, so the distinction matters to the story’s continuation.",
+      "verseRefs": [
+        "7:1-3"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why seven pairs here when chapter 6 said two of every sort?",
+      "answer": "Chapter 6 gave a general preservation instruction; this chapter adds seven pairs of clean animals and birds, while unclean animals are taken by two. The text presents both notices, and the later offering helps explain why more clean animals are available.",
+      "verseRefs": [
+        "7:1-3",
+        "7:8-9"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        8
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How long does the chapter say the rain lasts?",
+      "answer": "It gives a seven-day warning, then forty days and nights of rain, while the waters remain prevailing for 150 days. These are different parts of the narrated sequence, not interchangeable counts for the whole flood.",
+      "verseRefs": [
+        "7:4",
+        "7:10-12",
+        "7:24"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        4,
+        10,
+        24
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How extensive is the destruction described?",
+      "answer": "The account says high mountains are covered and all dry-land creatures with the breath of life die except those in the ship. Readers differ over the geographical scope of the flood, but the narrator’s language is sweeping and the deaths cannot be hidden behind a rescue-only summary.",
+      "verseRefs": [
+        "7:19-24"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        19
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What does it mean that Yahweh shuts Noah in?",
+      "answer": "After the family and animals enter as commanded, Yahweh closes the ship. The detail gives God an active role in their preservation, while the passage does not explain how the door operated.",
+      "verseRefs": [
+        "7:13-16"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        13
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Are children and animals outside the ship exempted from the judgment?",
+      "answer": "No exemption is stated. The text says every living thing on the ground is destroyed except those with Noah; the moral difficulty of that comprehensive loss remains part of reading this chapter.",
+      "verseRefs": [
+        "7:21-23"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        21
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What are “the fountains of the great deep” and “sky’s windows”?",
+      "answer": "They are the account’s two images for water breaking up from below and pouring down from above. The chapter names both at the dated onset, without supplying a modern physical model of the event.",
+      "verseRefs": [
+        "7:10-12"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        10
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Who is named as entering the ship?",
+      "answer": "Noah, his wife, his three named sons, and their wives enter along with animals by kinds and pairs. The repeated list keeps the small surviving human household visible amid the larger flood description.",
+      "verseRefs": [
+        "7:7-9",
+        "7:13-16"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        7,
+        13
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "clean animals",
+      "def": "Animals singled out for a larger number of pairs, later used in Noah’s offerings."
+    },
+    {
+      "term": "great deep",
+      "def": "The lower water source whose fountains burst open as the flood begins."
+    },
+    {
+      "term": "ship",
+      "def": "The vessel Noah builds and enters with his household and living creatures."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "978a664e8489add727ce1377a81c26c6c0ebd33c5bfcf5797bb8324e3bbeb929",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

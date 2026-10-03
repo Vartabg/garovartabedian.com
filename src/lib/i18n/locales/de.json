@@ -1,0 +1,85 @@
+{
+  "life": {
+    "title": "Sein Leben",
+    "lede": "Von Bethlehem bis zur Himmelfahrt auf der Karte, wo es geschah. Die Evangelien sind keine Tagebücher — diese Ordnung folgt einer traditionellen Harmonie, und jedes Ereignis verweist direkt auf seinen eigenen Text.",
+    "language": {
+      "label": "Sprache der Führung",
+      "scope": "Ändert die Benutzeroberfläche und Kartenhinweise; Ereignistitel und Bibeltext bleiben auf Englisch."
+    },
+    "era": {
+      "birth": { "name": "Geburt und Kindheit", "title": "Geburt und Kindheit" },
+      "preparation": { "name": "Taufe und Wüste", "title": "Taufe und Wüste" },
+      "galilee": { "name": "Galiläischer Dienst", "title": "Galiläischer Dienst" },
+      "journey": { "name": "Der Weg nach Jerusalem", "title": "Der Weg nach Jerusalem" },
+      "passion": { "name": "Leidenszeit", "title": "Leidenszeit" },
+      "resurrection": { "name": "Auferstehung und Himmelfahrt", "title": "Auferstehung und Himmelfahrt" }
+    },
+    "rail": {
+      "label": "Leben Jesu nach Epoche",
+      "shapeOfLife": "Die Gestalt des Lebens",
+      "summary": "{eventCount} Ereignisse · {placeCount} Orte · {refCount} Schriftquellen",
+      "eraAriaLabel": "{eraName}-Epoche: {eventCount} Ereignisse, {refCount} Schriftquellen"
+    },
+    "map": {
+      "note": "Positionen aus echten Koordinaten; die Reise folgt der Harmonie.",
+      "noteHover": "Fahren Sie über ein Ereignis, um die Karte hervorzuheben; klicken Sie, um den Evangeliumstext zu erweitern.",
+      "noteTap": "Tippen Sie auf ein Ereignis, um den Text zu erweitern — die Karte folgt dem Ort.",
+      "placePickerLabel": "Ort auf der Karte auswählen",
+      "placePickerOverview": "Kartenübersicht",
+      "keyboardShortcutsTitle": "Tastaturkürzel",
+      "keyboardShortcutsText": "Tab drücken, um zwischen Ereignissen zu navigieren. Eingabe/Leertaste drücken, um Ereignistext zu erweitern. Verwenden Sie die Ortsauswahl, um einen Ort auf der Karte hervorzuheben und die Infokarte der aktuellen Station zu aktualisieren.",
+      "experienceKicker": "Eine Karte zum Eintauchen",
+      "experienceTitle": "Durchqueren Sie die Landschaft",
+      "experienceText": "Beginnen Sie mit dem übersichtlichen Atlas oder betreten Sie das Gelände, um der Reise durch Höhe und Entfernung zu folgen.",
+      "viewLabel": "Kartenansicht",
+      "overview": "Atlas",
+      "terrain": "Gelände",
+      "modeLabel": "Interaktionsmodus des Geländes",
+      "storyMode": "Erzählung",
+      "exploreMode": "Erkunden",
+      "wholeRegion": "Gesamte Region",
+      "loadingTerrain": "Das Gelände entsteht…",
+      "terrainUnavailable": "Die Geländeansicht ist nicht verfügbar. Kehren Sie zum Atlas zurück.",
+      "previousStop": "Vorherige Reisestation",
+      "nextStop": "Nächste Reisestation",
+      "pauseJourney": "Reise anhalten",
+      "playJourney": "Reise starten",
+      "ready": "Bereit zum Start",
+      "stopCount": "Station {current} von {total}",
+      "routeBoundary": "Die Linie verbindet dokumentierte Stationen in Erzählreihenfolge; sie beansprucht keine genaue antike Route.",
+      "currentStop": "Aktuelle Station",
+      "readEvent": "Ereignis lesen"
+    },
+    "narrative": {
+      "title": "Nur-Text-Reiseerzählung",
+      "sectionTitle": "Reise durch das Leben Jesu: Eine Texterzählung",
+      "intro": "Für Screenreader-Benutzer oder diejenigen, die einen textbasierten Leitfaden bevorzugen, ist hier eine chronologische Reise durch das Leben Jesu mit Beschreibungen jedes Ortes, modernen Ortsnamen und geografischen Richtungen.",
+      "travel": "Reise: Von der vorherigen Stelle aus reisen Sie {direction} etwa {distance} km ({distanceMiles} Meilen).",
+      "location": "Ort:",
+      "modernSite": "Moderner Ort:",
+      "coordinates": "Koordinaten:",
+      "scripture": "Schrift:",
+      "geographicOverview": "Geografischer Überblick",
+      "geographicOverviewText": "Jesu Dienst erstreckt sich von Nazareth in der Galiläa-Region nördlich bis Caesarea Philippi und südlich durch Samaria, das Jordantal und schließlich nach Jerusalem und die Judäa-Regionen.",
+      "narrativeNote": "Die Erzählung folgt den Evangelienberichten, die Galiläa als Ort des öffentlichen Dienstes Jesu und Jerusalem als Ort seiner Passion und Auferstehung betonen."
+    },
+    "dataTable": {
+      "title": "Ereignis- und Ortsreferenztabelle",
+      "description": "Optionale Tabelle aller Ereignisse nach Epoche und aller Orte in alphabetischer Reihenfolge.",
+      "descriptionHeader": "Beschreibung",
+      "byEra": "Ereignisse nach Epoche",
+      "eventTable": "Ereignisse in {eraName}",
+      "placeReference": "Ortsreferenz",
+      "allPlaces": "Alle im Leben Jesu erwähnten Orte, alphabetisch geordnet:",
+      "biblicalName": "Biblischer Name",
+      "modernLocation": "Moderner Ort",
+      "region": "Region",
+      "coordinatesHeader": "Koordinaten"
+    },
+    "sources": {
+      "title": "Sorgfaltsnachweise",
+      "description": "Archäologische Quellen und Verweise zur Ortsidentifizierung",
+      "text": "Diese Orte werden nach modernem archäologischem Konsens und traditionellen Pilgerorten identifiziert."
+    }
+  }
+}

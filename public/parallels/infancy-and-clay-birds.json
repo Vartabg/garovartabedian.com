@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infancy-and-clay-birds",
+  "slug": "infancy-and-clay-birds",
+  "title": "The Annunciation, the Nativity under the Palm, and Childhood Signs",
+  "subtitle": "Luke 1–2 · Protoevangelium of James & Infancy Thomas · Qur'an 3 & 19",
+  "summary": "A source-anchored comparison of the virgin birth of Jesus, Mary's dedicated temple upbringing, the nativity under the palm tree, the defense from the cradle, and the miracle of animating clay birds.",
+  "axis": "christology",
+  "witnesses": [
+    {
+      "id": "luke-1-2",
+      "title": "Gospel of Luke 1–2 (SBLGNT / World English Bible)",
+      "shortTitle": "Luke 1–2",
+      "language": "Koine Greek / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 60–85 CE",
+        "earliestManuscript": "P75 (c. 175–225 CE) · Codex Sinaiticus (c. 330–360 CE)",
+        "edition": "SBL Greek New Testament / World English Bible"
+      },
+      "primaryTradition": "Canonical Christian Scripture (New Testament)",
+      "corpusEditionId": "web-bible",
+      "licenseNotice": "World English Bible is a 100% public domain Modern English translation of the Holy Bible."
+    },
+    {
+      "id": "apocryphal-infancy",
+      "title": "Protoevangelium of James & Infancy Gospel of Thomas (M.R. James)",
+      "shortTitle": "Apocryphal Infancy Gospels",
+      "language": "Greek / Syriac / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 145–180 CE (Protoevangelium) · c. 2nd century CE (Infancy Thomas)",
+        "earliestManuscript": "Papyrus Bodmer V (3rd–4th century CE)",
+        "edition": "M.R. James, The Apocryphal New Testament (1924)"
+      },
+      "primaryTradition": "Early Christian Apocrypha / Syriac Milieu",
+      "corpusEditionId": "mrjames-apocrypha",
+      "licenseNotice": "English translations of the Protoevangelium of James and Infancy Gospel of Thomas by M.R. James (1924). In the public domain worldwide."
+    },
+    {
+      "id": "quran-3-and-19",
+      "title": "Qur'an 3:42–49 & 19:16–34 (Ali 'Imran & Maryam · Tanzil / Pickthall)",
+      "shortTitle": "Qur'an 3 & 19",
+      "language": "Classical Arabic / English",
+      "isRtl": true,
+      "dates": {
+        "composition": "c. 7th century CE",
+        "earliestManuscript": "Codex Sana'a / Birmingham Quran Fragment (c. 7th century CE)",
+        "edition": "Tanzil Project (Uthmani) / Pickthall (1930)"
+      },
+      "primaryTradition": "Islamic Scripture",
+      "corpusEditionId": "tanzil-uthmani",
+      "licenseNotice": "Tanzil Quran Text (Simple/Uthmani) is provided under the Tanzil Text License. Copyright © 2007-2024 Tanzil Project. Reproduction is permitted only verbatim with attribution and link to tanzil.net."
+    }
+  ],
+  "slots": [
+    {
+      "id": "mary-temple-upbringing",
+      "label": "Mary's Consecration & Temple Guardianship",
+      "description": "How Mary is dedicated by her mother and cared for by Zechariah in the sanctuary.",
+      "cells": {
+        "luke-1-2": {
+          "witnessId": "luke-1-2",
+          "locator": {
+            "corpusId": "new-testament",
+            "editionId": "web-bible",
+            "section": "LUK",
+            "passageRef": "Luke 1:26-27",
+            "originalLanguage": "Greek"
+          },
+          "basis": "explicit",
+          "summary": "Luke introduces Mary simply as a virgin living in Nazareth, betrothed to a man named Joseph of the house of David; her childhood is not narrated.",
+          "verbatimExcerpt": "Now in the sixth month, the angel Gabriel was sent from God to a city of Galilee, named Nazareth, to a virgin pledged to be married to a man whose name was Joseph, of the house of David. The virgin's name was Mary.",
+          "supportingCitations": ["Luke 1:26-27"],
+          "limits": "Canonical Gospels contain no narrative of Mary's birth, her mother Anna's vow, or her upbringing in the Temple."
+        },
+        "apocryphal-infancy": {
+          "witnessId": "apocryphal-infancy",
+          "locator": {
+            "corpusId": "early-apocrypha",
+            "editionId": "mrjames-apocrypha",
+            "section": "Protoevangelium",
+            "passageRef": "Protoevangelium of James 7:2-8:2",
+            "originalLanguage": "Greek"
+          },
+          "basis": "explicit",
+          "summary": "Anna dedicates three-year-old Mary to the Temple; the priest places her on the altar where she dances; she is nourished like a dove by an angel until age twelve.",
+          "verbatimExcerpt": "And the priest received her and kissed her and blessed her... and Mary was in the temple of the Lord nurtured like a dove, and received food from the hand of an angel.",
+          "supportingCitations": ["Protoevangelium of James 7:2-8:2"],
+          "limits": "Emphasizes ritual purity and miraculous divine feeding in the holy of holies."
+        },
+        "quran-3-and-19": {
+          "witnessId": "quran-3-and-19",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Ali 'Imran",
+            "passageRef": "Qur'an 3:35-37",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "The wife of 'Imran vows her unborn child to Allah's service; Zachariah is appointed Mary's guardian and finds her miraculously provided with sustenance in the sanctuary.",
+          "verbatimExcerpt": "When the wife of 'Imran said: My Lord! I have vowed unto Thee that which is in my belly as a consecrated offering... So her Lord accepted her with full acceptance and vouchsafed to her a goodly growth; and made Zachariah her guardian. Whenever Zachariah went into the sanctuary where she was, he found that she had food. He said: O Mary! Whence cometh unto thee this (food)? She answered: It is from Allah. Lo! Allah giveth without stint unto whom He will.",
+          "supportingCitations": ["Qur'an 3:35-37"],
+          "limits": "Closely reflects the Protoevangelium narrative of temple dedication and miraculous sanctuary feeding."
+        }
+      }
+    },
+    {
+      "id": "nativity-and-palm-tree",
+      "label": "The Nativity Scene & The Palm Tree",
+      "description": "Where Jesus is born and how Mary is provided for during labor.",
+      "cells": {
+        "luke-1-2": {
+          "witnessId": "luke-1-2",
+          "locator": {
+            "corpusId": "new-testament",
+            "editionId": "web-bible",
+            "section": "LUK",
+            "passageRef": "Luke 2:4-7",
+            "originalLanguage": "Greek"
+          },
+          "basis": "explicit",
+          "summary": "Mary travels to Bethlehem with Joseph for the census, gives birth, wraps Jesus in swaddling clothes, and lays him in a manger because there is no room in the inn.",
+          "verbatimExcerpt": "Joseph also went up from Galilee... to the city of David, which is called Bethlehem... to enroll himself with Mary, who was pledged to be married to him, being pregnant. While they were there, the day had come for her to give birth. She gave birth to her firstborn son. She wrapped him in swaddling clothes, and laid him in a feeding trough, because there was no room for them in the inn.",
+          "supportingCitations": ["Luke 2:4-7"],
+          "limits": "Mentions Bethlehem, a manger/trough, swaddling clothes, and Joseph's presence; no palm tree or stream."
+        },
+        "apocryphal-infancy": {
+          "witnessId": "apocryphal-infancy",
+          "locator": {
+            "corpusId": "early-apocrypha",
+            "editionId": "mrjames-apocrypha",
+            "section": "Pseudo-Matthew",
+            "passageRef": "Gospel of Pseudo-Matthew 20:1-2",
+            "originalLanguage": "Latin / Syriac Vorlage"
+          },
+          "basis": "explicit",
+          "summary": "During the flight to Egypt, Mary rests beneath a palm tree longing for its fruit; infant Jesus speaks and commands the tree to bend its branches and open water beneath its roots.",
+          "verbatimExcerpt": "Then the infant Jesus, sitting with a joyful countenance in His mother's lap, said to the palm: 'O tree, bend thy branches, and refresh my mother with thy fruit.' And immediately at His word the palm bent down its top to the very feet of the blessed Mary... And Jesus said: 'Open, O palm, from thy roots, the veins of water which are hidden under the earth, and let them flow forth, that we may be satisfied.' And it opened straightway, and there began to gush forth water clear, extremely cold and sweet.",
+          "supportingCitations": ["Gospel of Pseudo-Matthew 20:1-2"],
+          "limits": "Occurs during the flight to Egypt in Pseudo-Matthew, whereas the Qur'an situates the palm tree at the moment of birth itself."
+        },
+        "quran-3-and-19": {
+          "witnessId": "quran-3-and-19",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Maryam",
+            "passageRef": "Qur'an 19:22-26",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Mary withdraws alone to a distant place; the birth pangs drive her to the trunk of a palm tree; a voice calls to her to shake the palm for fresh dates and drink from a stream beneath her.",
+          "verbatimExcerpt": "And she conceived him, and she withdrew with him to a far place. And the pangs of childbirth drove her unto the trunk of the palm tree. She said: Oh, would that I had died before this and had become a thing of naught, forgotten! Then (one) cried unto her from below her, saying: Grieve not! Thy Lord hath placed a rivulet beneath thee, and shake the trunk of the palm tree toward thee, thou wilt cause ripe dates to fall upon thee. So eat and drink and be consoled.",
+          "supportingCitations": ["Qur'an 19:22-26"],
+          "limits": "Mary gives birth in isolation without Joseph; comforted by the voice from below (either Gabriel or newborn Jesus) providing water and dates."
+        }
+      }
+    },
+    {
+      "id": "cradle-speech-and-clay-birds",
+      "label": "Infant Speech & The Miracle of Clay Birds",
+      "description": "Childhood signs: Jesus speaking from the cradle to defend Mary and breathing life into clay birds.",
+      "cells": {
+        "luke-1-2": {
+          "witnessId": "luke-1-2",
+          "locator": {
+            "corpusId": "new-testament",
+            "editionId": "web-bible",
+            "section": "LUK",
+            "passageRef": "Luke 2:40, 52",
+            "originalLanguage": "Greek"
+          },
+          "basis": "explicit",
+          "summary": "The child grows and increases in wisdom, with his first recorded public speech taking place at age twelve in the Jerusalem Temple questioning the teachers.",
+          "verbatimExcerpt": "The child was growing, and was becoming strong in spirit, being filled with wisdom, and the grace of God was upon him... After three days they found him in the temple, sitting in the middle of the teachers, both listening to them, and asking them questions.",
+          "supportingCitations": ["Luke 2:40", "Luke 2:46"],
+          "limits": "Canonical Gospels contain no infant miracles; Jesus' public sign ministry begins at Cana (John 2:11)."
+        },
+        "apocryphal-infancy": {
+          "witnessId": "apocryphal-infancy",
+          "locator": {
+            "corpusId": "early-apocrypha",
+            "editionId": "mrjames-apocrypha",
+            "section": "Infancy Thomas",
+            "passageRef": "Infancy Gospel of Thomas 2:1-4 · Arabic Infancy Gospel 1",
+            "originalLanguage": "Greek / Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Jesus fashions twelve sparrows from soft clay on the Sabbath, claps his hands, and commands them to fly, and they take wing alive; the Arabic Infancy Gospel also records Jesus speaking from the cradle.",
+          "verbatimExcerpt": "This little child Jesus, being five years old, was playing at the ford of a brook... And having made soft clay, he fashioned thereof twelve sparrows... But Jesus clapped his hands together and cried out to the sparrows and said to them: 'Go!' and the sparrows took flight and went away crying.",
+          "supportingCitations": ["Infancy Gospel of Thomas 2:1-4", "Arabic Gospel of the Infancy 1"],
+          "limits": "Infancy Thomas portrays young Jesus performing powerful, sometimes volatile boyhood miracles."
+        },
+        "quran-3-and-19": {
+          "witnessId": "quran-3-and-19",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Maryam",
+            "passageRef": "Qur'an 19:29-33, 3:49",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Infant Jesus speaks from the cradle declaring he is a servant of Allah, given scripture and prophethood; he also fashions birds from clay and breathes life into them by Allah's leave.",
+          "verbatimExcerpt": "Then she pointed to him. They said: How can we talk to one who is in the cradle, a young boy? He spake: Lo! I am the slave of Allah. He hath given me the Scripture and hath appointed me a Prophet... And will make him a messenger unto the Children of Israel, (saying): Lo! I come unto you with a sign from your Lord. Lo! I fashion for you out of clay the likeness of a bird, and I breathe into it and it is a bird, by Allah's leave.",
+          "supportingCitations": ["Qur'an 19:29-33", "Qur'an 3:49", "Qur'an 5:110"],
+          "limits": "Every miracle is explicitly conditioned on 'by Allah's leave' (*bi-idhni Allah*) to emphasize prophetic agency rather than inherent divinity."
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "protoevangelium-to-quran-mariology",
+      "sourceWitnessId": "apocryphal-infancy",
+      "targetWitnessId": "quran-3-and-19",
+      "relationship": "shared-tradition",
+      "scholarlyConsensus": "strong",
+      "basisNote": "Academic consensus recognizes that the narrative details of Mary's temple childhood, her mother's vow, Zachariah's guardianship, the palm tree and water stream, and the clay birds mirror early Christian apocrypha (Protoevangelium of James, Pseudo-Matthew, and Infancy Thomas) widely circulated in Syriac and Arabic oral milieus in pre-Islamic Arabia.",
+      "citations": [
+        "Stephen J. Shoemaker, *The Death of a Prophet: The End of Muhammad's Life and the Beginnings of Islam* (University of Pennsylvania Press, 2011).",
+        "Gabriel Said Reynolds, *The Qur'an and the Bible: Text and Commentary* (Yale University Press, 2018), pp. 119–124, 467–473.",
+        "Sydney H. Griffith, *The Bible in Arabic: The Scriptures of the 'People of the Book' in the Language of Islam* (Princeton University Press, 2013)."
+      ]
+    },
+    {
+      "id": "luke-to-quran-christology-divergence",
+      "sourceWitnessId": "luke-1-2",
+      "targetWitnessId": "quran-3-and-19",
+      "relationship": "theological-divergence",
+      "scholarlyConsensus": "strong",
+      "basisNote": "While both canonical Luke and the Qur'an affirm the virginal conception of Jesus through divine decree, Luke's Annunciation identifies Jesus as 'the Son of God' and Lord (Luke 1:35), whereas the Qur'an's cradle speech explicitly insists: 'Lo! I am the slave of Allah... It befitteth not the Majesty of Allah that He should take unto Himself a son' (Surah 19:30, 35).",
+      "citations": [
+        "Raymond E. Brown, *The Birth of the Messiah* (Anchor Yale Bible, 1993).",
+        "Kenneth Cragg, *Jesus and the Muslim: An Exploration* (Oneworld, 1999)."
+      ]
+    }
+  ],
+  "receptionClaims": [
+    {
+      "id": "claim-christian-incarnation",
+      "tradition": "christian",
+      "subject": "The Virgin Birth as the Incarnation of the Son",
+      "text": "In Christian theology, the virgin birth of Luke 1 is the historical manner in which the eternal Word (Logos) took human flesh, being conceived of the Holy Spirit to become fully God and fully man without human father.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [
+        { "label": "Luke 1:35" },
+        { "label": "John 1:14" },
+        { "label": "Nicene-Constantinopolitan Creed (381 CE)" }
+      ],
+      "refs": ["LUK 1:35", "JHN 1:14"],
+      "limit": "Christian orthodoxy views Jesus' sonship as ontological and eternal, not biological generation."
+    },
+    {
+      "id": "claim-islamic-prophetic-servanthood",
+      "tradition": "islamic",
+      "subject": "The Virgin Birth as a Sign (Ayah) of Allah's Power",
+      "text": "In Islamic theology, the virgin birth demonstrates Allah's absolute creative power ('Be! and it is', *Kun fa-yakun*, comparing Jesus' creation without a father to Adam's creation without parents in Surah 3:59). Jesus ('Isa) is honored as the Messiah and Spirit from God, but strictly as a created prophet and servant ('abd).",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [
+        { "label": "Qur'an 3:59" },
+        { "label": "Al-Tabari, *Jami' al-Bayan* on Surah 19:30" }
+      ],
+      "refs": [],
+      "limit": "Islam regards calling Jesus 'Son of God' as an ontological impossibility and an infringement on pure monotheism (*Tawhid*)."
+    }
+  ],
+  "provenance": {
+    "reviewStatus": "agent-reviewed",
+    "reviewer": "Antigravity Theologian & Sourcing Panel",
+    "rubricVersion": "parallels-v1.0",
+    "reviewedContentHash": "15dd0b9090df81e1a0eb33e1c8c8c71389c5e462a156a192c2f7fb64c9733a1b",
+    "reviewedAt": "2026-08-31T12:00:00.000Z",
+    "reviewScope": "Luke 1–2, Protoevangelium of James, Infancy Gospel of Thomas, and Qur'an 3 & 19 comparative analysis."
+  }
+}

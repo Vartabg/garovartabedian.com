@@ -1,0 +1,217 @@
+{
+  "book": "GEN",
+  "chapter": 18,
+  "bookName": "Genesis",
+  "summary": "Three visitors receive Abraham’s hospitality near Mamre and announce that Sarah will have a son, prompting her private laughter and denial. As the visitors turn toward Sodom, Yahweh speaks of its grave outcry, and Abraham asks repeatedly whether the Judge of all the earth will spare the city for the sake of righteous people within it.",
+  "whyItMatters": "The chapter places an improbable birth promise beside a sustained appeal for justice before judgment. Abraham’s argument insists that a city’s guilt must not erase the lives of its righteous residents.",
+  "context": {
+    "author": "Genesis names no historical writer. Jewish and Christian tradition associates the Torah with Moses; the book briefing describes older traditions shaped into a final literary form, without a settled account of every stage.",
+    "audience": "The book addresses Israel through a story of shared human origins and the family from whom Israel traces its ancestry; no single first audience is named in this chapter.",
+    "date": "The narrated events belong to primeval or ancestral time, not to a securely dated writing event. Major stages of Genesis are often placed across the monarchic to Persian periods, with exact models and dates debated.",
+    "setting": "Abraham’s tent by the oaks of Mamre and the approach toward Sodom.",
+    "literaryForm": "Hospitality and birth-announcement narrative followed by divine deliberation and repeated intercession dialogue."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "God has promised Sarah a son named Isaac at a set time and has blessed Ishmael separately. The visitors now repeat the promise in Sarah’s hearing.",
+      "verseRefs": [
+        "17:15-21"
+      ]
+    },
+    "here": {
+      "text": "The chapter’s two scenes move from Sarah’s overheard laughter to Abraham’s question about destroying righteous people with wicked people.",
+      "verseRefs": [
+        "18:1-15",
+        "18:16-33"
+      ]
+    },
+    "after": {
+      "text": "Two angels reach Sodom, meet Lot, and the threatened destruction becomes an immediate crisis for his household and the city.",
+      "verseRefs": [
+        "19:1-16"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Visitors welcomed and fed",
+      "verses": "1-8",
+      "note": "Abraham offers rest and a meal and hurries to prepare it."
+    },
+    {
+      "heading": "Sarah hears and laughs",
+      "verses": "9-15",
+      "note": "A son is promised for next year, and her reaction is exposed."
+    },
+    {
+      "heading": "The Sodom outcry disclosed",
+      "verses": "16-22",
+      "note": "Yahweh discusses Abraham’s role and the city’s grave reported wrongdoing."
+    },
+    {
+      "heading": "Abraham argues for the righteous",
+      "verses": "23-33",
+      "note": "The dialogue moves from fifty possible righteous people down to ten."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "18:14",
+      "text": "Is anything too hard for Yahweh? At the set time I will return to you, when the season comes around, and Sarah will have a son.”",
+      "why": "The repeated birth promise confronts Sarah’s old age and disbelief."
+    },
+    {
+      "ref": "18:19",
+      "text": "For I have known him, to the end that he may command his children and his household after him, that they may keep the way of Yahweh, to do righteousness and justice; to the end that Yahweh may bring on Abraham that which he has spoken of him.”",
+      "why": "Righteousness and justice are named as the way Abraham’s household is to keep."
+    },
+    {
+      "ref": "18:25",
+      "text": "May it be far from you to do things like that, to kill the righteous with the wicked, so that the righteous should be like the wicked. May that be far from you. Shouldn’t the Judge of all the earth do right?”",
+      "why": "Abraham states the core moral question before the city’s destruction."
+    }
+  ],
+  "themes": [
+    "hospitality",
+    "Sarah’s laughter",
+    "promise amid age",
+    "Sodom’s outcry",
+    "intercession for justice"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why does Sarah laugh?",
+      "answer": "She overhears that she will have a son next year, though she and Abraham are old and she has passed childbearing age. Her private response registers the promise’s apparent impossibility, and fear leads her to deny laughing.",
+      "verseRefs": [
+        "18:9-15"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        9
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does “seahs” measure in the meal preparation?",
+      "answer": "It is the unit used for the fine meal Abraham asks Sarah to prepare into cakes. The passage stresses the hurried, generous hospitality, without defining its exact modern volume.",
+      "verseRefs": [
+        "18:5-8"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        5
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Who are the three visitors?",
+      "answer": "The chapter opens by saying Yahweh appears and then narrates three men arriving, eating, and speaking. As two turn toward Sodom, Abraham remains before Yahweh; the text does not give a complete explanation of how these descriptions relate.",
+      "verseRefs": [
+        "18:1-3",
+        "18:16-22"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        16
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What does Yahweh say he wants for Abraham’s household?",
+      "answer": "The speech expects Abraham to instruct his children and household to keep Yahweh’s way by doing righteousness and justice. That expectation immediately precedes the discussion of Sodom’s outcry.",
+      "verseRefs": [
+        "18:17-21"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        17
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Does the outcry prove every person in Sodom deserves death?",
+      "answer": "Yahweh describes a grave outcry and says he will examine the report, while Abraham asks whether righteous people are present. The dialogue itself refuses to assume that the city’s residents can all be treated as morally identical.",
+      "verseRefs": [
+        "18:20-26"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        20
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "How does Abraham’s appeal change as he speaks?",
+      "answer": "He begins with fifty righteous people and asks through successively smaller numbers down to ten. At each step Yahweh agrees not to destroy the place for the stated number, but the chapter does not report a count found in Sodom.",
+      "verseRefs": [
+        "18:23-33"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        23
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Is Abraham challenging justice or simply bargaining for Lot?",
+      "answer": "He asks whether the righteous will be killed with the wicked and appeals to the Judge of all the earth doing right. Lot is not named in the exchange, so the explicit argument concerns justice for inhabitants, not only a relative’s escape.",
+      "verseRefs": [
+        "18:23-33"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        23
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What does “dust and ashes” express in Abraham’s speech?",
+      "answer": "Abraham uses the phrase while acknowledging his smallness before continuing to question Yahweh. It frames a bold moral appeal with humility rather than ending the conversation.",
+      "verseRefs": [
+        "18:25-29"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        25
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "seahs",
+      "def": "The unit in the amount of fine meal requested for the visitors’ cakes."
+    },
+    {
+      "term": "cry",
+      "def": "The report of grave wrongdoing associated with Sodom and Gomorrah that brings threatened judgment into view."
+    },
+    {
+      "term": "Mamre",
+      "def": "The oaks beside Abraham’s tent where the visitors appear."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "de93caa5a752b753c6fbc1eb09005da97ecfc9ee0f5689ae2498ab6ef860254a",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

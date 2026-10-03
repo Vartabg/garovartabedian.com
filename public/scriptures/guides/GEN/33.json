@@ -1,0 +1,228 @@
+{
+  "book": "GEN",
+  "chapter": 33,
+  "bookName": "Genesis",
+  "summary": "Jacob approaches Esau with repeated bows, but Esau runs to embrace him and the brothers weep together. After introductions and a disputed gift, they travel separately; Jacob settles first at Succoth and then near Shechem, where he buys land and erects an altar.",
+  "whyItMatters": "The long-feared meeting becomes an act of welcome that Jacob compares with divine favor. Reconciliation is real in the scene, while the brothers' separate routes leave room for limits and unresolved questions.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "The brothers' meeting on Jacob's return, followed by Succoth and the vicinity of Shechem in Canaan.",
+    "literaryForm": "Reconciliation dialogue and family introductions followed by a travel and settlement notice."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Jacob has prayed for rescue from Esau, sent gifts ahead, and emerged from a nighttime struggle with a blessing and a limp.",
+      "verseRefs": [
+        "32:9-21",
+        "32:24-32"
+      ]
+    },
+    "here": {
+      "text": "Esau's embrace answers Jacob's fear, while the conversations negotiate gifts, companionship, and separate travel.",
+      "verseRefs": [
+        "33:1-17"
+      ]
+    },
+    "after": {
+      "text": "Life near Shechem leads into the account of Dinah's assault, marriage negotiations, and the brothers' violent retaliation.",
+      "verseRefs": [
+        "34:1-31"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "An unexpected embrace",
+      "verses": "1-4",
+      "note": "Jacob orders his household, approaches with bows, and is welcomed by Esau."
+    },
+    {
+      "heading": "The family introduced",
+      "verses": "5-7",
+      "note": "The women and children approach and bow."
+    },
+    {
+      "heading": "Esau persuaded to accept the gift",
+      "verses": "8-11",
+      "note": "Both speak of having enough, and Jacob urges acceptance as a sign of favor."
+    },
+    {
+      "heading": "Separate journeys",
+      "verses": "12-17",
+      "note": "Jacob declines immediate travel together and goes to Succoth while Esau returns to Seir."
+    },
+    {
+      "heading": "Settlement and an altar at Shechem",
+      "verses": "18-20",
+      "note": "Jacob buys a parcel of land and names an altar."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "33:4",
+      "text": "Esau ran to meet him, embraced him, fell on his neck, kissed him, and they wept.",
+      "why": "Esau’s running embrace overturns the expectation of violence that drove Jacob’s preparations."
+    },
+    {
+      "ref": "33:10",
+      "text": "Jacob said, “Please, no, if I have now found favor in your sight, then receive my present at my hand, because I have seen your face, as one sees the face of God, and you were pleased with me.",
+      "why": "Jacob describes Esau’s welcome with language recalling his recent divine encounter."
+    },
+    {
+      "ref": "33:20",
+      "text": "He erected an altar there, and called it El Elohe Israel.",
+      "why": "An altar marks Jacob’s arrival near Shechem under the identity Israel."
+    }
+  ],
+  "themes": [
+    "reconciliation and tears",
+    "gift and acceptance",
+    "household vulnerability",
+    "unequal family ordering",
+    "separate paths",
+    "settlement and worship"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What does the household’s order reveal?",
+      "answer": "The servants and their children go first, Leah and her children follow, and Rachel and Joseph come last. The arrangement preserves the household's unequal treatment even as Jacob himself goes ahead to face Esau.",
+      "verseRefs": [
+        "33:1-3"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How does Esau respond to Jacob?",
+      "answer": "He runs, embraces, kisses, and weeps with him. Those reported actions establish the meeting's welcome without requiring an invented account of what Esau thought during the preceding years.",
+      "verseRefs": [
+        "33:3-4"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why does Jacob keep urging Esau to take the gift?",
+      "answer": "Esau says he already has enough, but Jacob asks him to receive the gift if he has found favor. Acceptance becomes part of repairing the relationship, and Jacob attributes his own sufficiency to God's generosity.",
+      "verseRefs": [
+        "33:8-11"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Is Jacob calling Esau God?",
+      "answer": "He compares seeing Esau's face with seeing God's face because Esau has received him favorably. The language expresses the remarkable welcome and echoes the preceding encounter; it does not identify Esau as a deity.",
+      "verseRefs": [
+        "33:10-11"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What does “lord” do in Jacob’s speech?",
+      "answer": "Jacob repeatedly addresses Esau as lord while naming himself servant. In this conversation it is a deferential way to approach the brother whose anger he has feared, not a narrator's announcement of a new political office.",
+      "verseRefs": [
+        "33:8",
+        "33:13-15"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        8,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Does Jacob actually accompany Esau to Seir?",
+      "answer": "He says he will move slowly because of the children and nursing animals and mentions coming to Seir. The narrative then sends Esau to Seir and Jacob to Succoth and Shechem; it does not report the promised visit here or explain the discrepancy.",
+      "verseRefs": [
+        "33:12-18"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What marks Jacob’s settlement near Shechem?",
+      "answer": "He camps before the city, purchases a parcel from Hamor's sons, and erects an altar. The details present a tangible foothold in the land after his long absence, rather than possession of the entire promised territory.",
+      "verseRefs": [
+        "33:18-20"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        18,
+        19,
+        20
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Succoth",
+      "def": "The place where Jacob builds a house and shelters for his livestock."
+    },
+    {
+      "term": "present",
+      "def": "The livestock gift Jacob urges Esau to accept as part of their restored meeting."
+    },
+    {
+      "term": "El Elohe Israel",
+      "def": "The name Jacob gives his altar near Shechem."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "3a01b0527c0c6681906aa0d0e78d3921c1cbb988cf7882be0928ee1d301adc5e",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

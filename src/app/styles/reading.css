@@ -1,0 +1,205 @@
+/* Shared reading contract. World accents identify places; annotation colors identify roles. */
+:root {
+  --reading-paper: light-dark(#faf9f3, #181b1b);
+  --reading-surface: light-dark(#fffef9, #202525);
+  --reading-ink: light-dark(#242827, #efeee5);
+  --reading-muted: light-dark(#555e59, #b9c1ba);
+  --reading-line: light-dark(#bac0b9, #59615d);
+  --reading-source: light-dark(#056568, #81d3d2);
+  --reading-interpretation: light-dark(#984322, #f1b48e);
+  --reading-question: light-dark(#6a469a, #cdb0ee);
+  --reading-face: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --reading-size: 1.1875rem;
+  --reading-leading: 1.8;
+  --reading-measure: 65ch;
+}
+html[data-a11y-theme="warm"] { color-scheme: light; --reading-paper: #eee4d1; --reading-surface: #f8f0e2; --reading-ink: #302b23; --reading-muted: #655b4c; --reading-line: #b7a993; }
+html[data-a11y-theme="light"] { color-scheme: light; }
+html[data-a11y-font="readable"] { --reading-face: var(--font-atkinson), Verdana, Arial, sans-serif; }
+html[data-a11y-font="dyslexic"] { --reading-face: var(--font-open-dyslexic), Verdana, Arial, sans-serif; }
+html[data-a11y-font="system"] { --reading-face: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+html[data-a11y-spacing="compact"] { --reading-leading: 1.5; }
+html[data-a11y-spacing="spacious"] { --reading-leading: 2; }
+html[data-reading-monochrome="true"] { --reading-source: var(--reading-ink); --reading-interpretation: var(--reading-ink); --reading-question: var(--reading-ink); }
+html[data-a11y-contrast="high"] { --reading-muted: var(--reading-ink); --reading-line: var(--reading-ink); }
+
+/* Neutralize paper on text pages; world accent variables remain world-specific. */
+body :is(.world-scr,.world-early,.world-jesus,.world-apostles,.world-angels,.world-church,.world-word,.world-evidence):has([data-reading-surface]) {
+  --bg: var(--reading-paper); --paper: var(--reading-paper); --surface: var(--reading-surface);
+  --ink: var(--reading-ink); --muted: var(--reading-muted); --line: var(--reading-line);
+}
+body [data-reading-surface], .reading-note {
+  --paper: var(--reading-paper); --surface: var(--reading-surface); --ink: var(--reading-ink); --muted: var(--reading-muted); --line: var(--reading-line);
+  color: var(--reading-ink); background: var(--reading-paper);
+  overflow-wrap: anywhere;
+}
+body [data-reading-surface] { color-scheme: inherit; }
+body [data-reading-surface] :is(.reading-prose, .ew-section > p, .ew-para > p, .reading-source-text),
+body .reading-source-text {
+  font-family: var(--reading-face); font-size: var(--reading-size); line-height: var(--reading-leading);
+  max-width: var(--reading-measure); margin-inline: auto; text-align: start;
+}
+body .reading-prose { width: 100%; }
+body .reading-prose :is(p, li, blockquote) { font: inherit; line-height: var(--reading-leading); }
+body [data-reading-surface] :is(.ew-section > p, .ew-para > p) { margin-block: 1.25em; }
+body [data-reading-surface] :is(.ew-section, .reading-tools) { max-width: var(--reading-measure); margin-inline: auto; }
+body [data-reading-surface] .scr-read-text { --scr-fs: var(--reading-size); --scr-lead: var(--reading-leading); max-width: min(100%, 65ch); font-family: var(--reading-face); }
+body [data-reading-surface] .scr-verse { font-family: inherit; }
+body [data-reading-surface] [id] { scroll-margin-top: 5rem; }
+
+body [data-reading-surface] a { text-underline-offset: .22em; }
+.reading-tools { border-block: 1px solid var(--reading-line); margin-block: 1.25rem 2rem; padding-block: .5rem; font: .875rem/1.6 var(--font-interface); }
+.reading-tools details > summary { padding-block: .75rem; cursor: pointer; min-height: 44px; }
+.reading-modes { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.reading-modes button { border: 0; border-bottom: 3px solid transparent; background: none; color: inherit; font: inherit; min-height: 44px; cursor: pointer; }
+.reading-modes button[aria-pressed="true"] { border-bottom-color: currentColor; }
+.reading-settings-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,12rem),1fr)); gap: 1rem; }
+.reading-settings-grid > div { display: grid; gap: .4rem; }
+.reading-appearance { font: .875rem/1.6 var(--font-interface); text-align: start; }
+.reading-appearance :is(select,button) { color: var(--ink); background: var(--surface); border: 1px solid var(--line); font: inherit; min-height: 44px; padding: .5rem; max-width: 100%; }
+.reading-toggle { display: flex; align-items: center; gap: .7rem; min-height: 44px; }
+.reading-toggle input { width: 1.1rem; height: 1.1rem; accent-color: currentColor; }
+.reading-help { color: var(--muted); font: .85rem/1.7 var(--font-interface); }
+.reading-accessibility { margin-block: .5rem; }
+.reading-accessibility summary { cursor: pointer; min-height: 44px; padding-block: .6rem; }
+[data-reading-role="source"] { --reading-mark: var(--reading-source); --reading-pattern: solid; }
+[data-reading-role="interpretation"] { --reading-mark: var(--reading-interpretation); --reading-pattern: dashed; }
+[data-reading-role="question"] { --reading-mark: var(--reading-question); --reading-pattern: dotted; }
+.reading-role,.reading-legend > span, body .reading-note-link { color: var(--reading-mark); border-bottom: 2px var(--reading-pattern) currentColor; font: .8rem/1.7 var(--font-interface); text-decoration: none; width: fit-content; }
+.reading-legend { display: flex; flex-wrap: wrap; gap: .7rem 1.25rem; padding-block: .8rem; }
+body .reading-note-link { display: inline-flex; align-items: center; min-height: 44px; }
+.reading-note { border: 1px solid var(--reading-line); border-top: 3px var(--reading-pattern) var(--reading-mark); width: min(56rem,calc(100vw - 1.5rem)); max-width: none; max-height: 85dvh; padding: 0 1.25rem 1.25rem; margin: auto; overflow-y: auto; overscroll-behavior: contain; }
+.reading-note::backdrop { background: rgb(0 0 0 / .35); }
+.reading-note-head { position: sticky; top: 0; display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; justify-content: space-between; background: var(--reading-paper); border-bottom: 1px solid var(--reading-line); padding-block: .8rem; z-index: 1; }
+.reading-note-head h2 { font: 600 .95rem/1.6 var(--font-interface); margin: 0; }
+.reading-note-head h2:focus { outline: none; }
+.reading-note-head button { font: .85rem/1.5 var(--font-interface); min-height: 44px; padding: .65rem; background: var(--reading-paper); color: var(--reading-ink); border: 1px solid var(--reading-line); cursor: pointer; }
+.reading-note-body { line-height: 1.8; }
+.reading-note-body > p { font-size: 1rem; }
+.reading-note :is(a,button,summary):focus-visible, .reading-tools :is(a,button,summary,select,input):focus-visible { outline: 3px solid var(--reading-ink); outline-offset: 3px; }
+.reading-note a { color: var(--reading-ink); }
+.reading-note blockquote { white-space: pre-wrap; font: var(--reading-size)/var(--reading-leading) var(--reading-face); margin: 1.5rem 0; padding-inline-start: 1rem; border-inline-start: 3px var(--reading-pattern,solid) var(--reading-mark,var(--reading-source)); }
+.reading-pair { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 2rem; }
+.reading-comparison-source { min-width: 0; }
+.reading-source-text { white-space: pre-wrap; }
+html[data-reading-ready="true"] [data-reading-mode="read"] .reading-trace-only { display: none; }
+[data-reading-mode="trace"] [data-reading-annotation] { border-inline-start: 2px var(--reading-pattern,solid) var(--reading-mark,var(--reading-source)); }
+.reading-background { margin-block: 1.5rem; }
+.reading-background > summary { min-height: 44px; padding-block: .6rem; cursor: pointer; }
+@media(max-width:600px) { .reading-pair { grid-template-columns: minmax(0,1fr); } .reading-note { margin-bottom: max(.75rem,env(safe-area-inset-bottom)); padding-inline: 1rem; } }
+@media(forced-colors:active) { :root { --reading-paper: Canvas; --reading-surface: Canvas; --reading-ink: CanvasText; --reading-line: CanvasText; --reading-source: CanvasText; --reading-interpretation: CanvasText; --reading-question: CanvasText; } }
+@media print { .reading-tools,.reading-note { display:none !important; } body [data-reading-surface] { background:white; color:black; } [data-reading-mode="read"] .reading-trace-only { display:block; } }
+/* Read keeps the chapter central. Study tools remain deliberate actions at every width. */
+body [data-reading-surface] .scr-gloss-intents { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
+body [data-reading-surface] .scr-study-layout { display: block; }
+body [data-reading-surface] .scr-gloss { position: static; max-height: none; border-block: 1px solid var(--reading-line); margin-bottom: 1.5rem; }
+body [data-reading-surface] .scr-gloss-head { display: none; }
+body [data-reading-mode="read"] :is(.scr-gloss-body,.gloss-threads) { display: none; }
+body [data-reading-mode="trace"] .scr-gloss-body { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap: 1rem; padding: 1rem; }
+body [data-reading-surface] .scr-read-text { margin-inline: auto; }
+body [data-reading-surface] .ew-allusion { position: static; width: auto; margin-block: .25rem 1.25rem; padding-inline-start: .75rem; border-inline-start: 2px solid var(--reading-source); }
+body [data-reading-surface] .ew-allusion .reading-help { display: block; }
+body [data-reading-surface] .ew-edition-note { border-inline-start: 2px dashed var(--reading-interpretation); padding-inline-start: 1rem; }
+body [data-reading-surface] .ew-edition-note > p { font: var(--reading-size)/var(--reading-leading) var(--reading-face); }
+@media(max-width:380px) { body [data-reading-surface] .scr-gloss-intents { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+/* The manuscript's accent remains in navigation; a reader's paper is consistent across worlds. */
+html body .world-shell:has([data-reading-surface]) {
+  --bg: var(--reading-paper); --paper: var(--reading-paper); --folio: var(--reading-paper);
+  --surface: var(--reading-surface); --ink: var(--reading-ink); --soot: var(--reading-ink);
+  --muted: var(--reading-muted); --muted-ink: var(--reading-muted); --line: var(--reading-line);
+}
+.reading-narrative { display: contents; }
+/* Explicit prose targets leave map, timeline, table, media and comparison typography alone. */
+body :is(.reading-narrative, .diamond-essay) :is(
+  .lede, .world-detail p, .world-panel p, .world-witness p, .world-quote,
+  .jsu-history-answer-grid p, .jsu-history-verdict > p, .jsu-history-shelf > p,
+  .jsu-evidence-list p, .jsu-evidence-quote, .jsu-word-verse, .jsu-word-text,
+  .ch-step p, .ch-person p, .ch-giant p, .ap-road p, .ap-bio p,
+  .an-fall-copy p, .an-fall-fragment p, .an-witness-reading, .an-catena-item p,
+  .hw-case-panel p, .hw-charter p, .hw-dossier-container section > p,
+  .wd-prose p, .prose-wrap p, .diamond-introduction > p, .diamond-section > p
+):not(.kicker,.scr-meta,[class$="-kicker"],[class$="-number"]) {
+  font-family: var(--reading-face); font-size: var(--reading-size); line-height: var(--reading-leading);
+  max-width: var(--reading-measure); margin-block: 1.25em; text-align: start;
+}
+body .diamond-essay { --essay-bg: var(--reading-paper); --essay-ink: var(--reading-ink); }
+body [data-reading-surface] :is(.dothan-prose,.dothan-passage,.as-source-verses,.visual-story-passage) p,
+body [data-reading-surface] :is(.as-beat div > p:last-child,.as-aftermath > p,.as-source > p,.gate-prose,.bethel-prose) {
+  font-family: var(--reading-face); font-size: var(--reading-size); line-height: var(--reading-leading); max-width: var(--reading-measure);
+}
+/* Keep artwork scenes and their overlays intact; surrounding reading panels follow the chosen paper. */
+body [data-reading-surface] :is(.dothan-prose,.dothan-source,.visual-story-source) {
+  color: var(--reading-ink); background: var(--reading-paper); padding: 1.25rem;
+  --story-ink: var(--reading-ink); --story-muted: var(--reading-muted); --story-rule: var(--reading-line); --story-accent: var(--reading-source);
+  --dothan-bone: var(--reading-ink); --dothan-muted: var(--reading-muted); --dothan-gold: var(--reading-source);
+}
+body :is(.visual-story,.dothan-story) > .reading-tools { padding: 1rem; color: var(--reading-ink); background: var(--reading-paper); }
+html[data-reading-monochrome="true"] [data-reading-surface] :is(.reading-tools,.ew-allusion,.scr-gloss) { --accent: var(--reading-ink); --rubric: var(--reading-ink); }
+body [data-reading-surface].ew-reading-page .ew-section .ew-para > p {
+  font: var(--reading-size)/var(--reading-leading) var(--reading-face); margin-block: 1.25em;
+}
+body .reading-narrative p:not(.kicker,.scr-meta,.world-cite,.world-note,[class$="-meta"],[class$="-kicker"],[class$="-eyebrow"],[class$="-number"]):not(nav p,header p,summary p,table p,[role="dialog"] p,.world-pair p,.maplibregl-map p,.ui-panel p) {
+  font-family: var(--reading-face); font-size: var(--reading-size); line-height: var(--reading-leading); max-width: var(--reading-measure);
+}
+/* Stable citation and return offsets. Images keep their existing lazy loading. */
+body [data-reading-surface] :is(.ew-section,.scr-v) { content-visibility: visible; contain-intrinsic-size: none; }
+/* Illustrated scenes keep their original dark canvas and overlay contrast. Reading
+   copy and full-source panels receive the shared paper independently of the art. */
+body [data-reading-surface].dothan-story { background: #101310; color: var(--dothan-bone); --ink: var(--dothan-bone); }
+body [data-reading-surface].visual-story { background: var(--gate-night,#111316); color: var(--story-ink); --ink: var(--story-ink); }
+body [data-reading-surface] :is(.dothan-passage,.gate-prose,.bethel-prose) {
+  background: var(--reading-paper); color: var(--reading-ink); padding: 1.25rem;
+  --dothan-bone: var(--reading-ink); --dothan-muted: var(--reading-muted); --dothan-gold: var(--reading-ink);
+}
+body [data-reading-surface] .reading-tools { --ink: var(--reading-ink); --muted: var(--reading-muted); --surface: var(--reading-surface); --line: var(--reading-line); }
+body .ew-reading-page .gloss-term { border: 0; border-radius: 0; background: none; min-height: 0; padding: 0; font: inherit; color: inherit; }
+/* Do not fade the lettering at the edges of the cross-world reading links. */
+body .world-shell:has([data-reading-surface]) .vsw-track { mask-image: none; -webkit-mask-image: none; scrollbar-width: thin; }
+/* Apply new paper and ink together, avoiding a low-contrast intermediate frame. */
+body .world-shell:has([data-reading-surface]) .vsw-opt { transition: none; }
+/* Lossless downloaded-text layout. Source blocks and public anchors stay intact;
+   shorter reading fragments supply stable return points inside long chapters. */
+body :is([data-reading-surface], .reading-note) .reading-formatted {
+  font: var(--reading-size)/var(--reading-leading) var(--reading-face);
+  max-width: var(--reading-measure); margin-inline: auto; text-align: start;
+}
+body :is([data-reading-surface], .reading-note) .reading-formatted p {
+  font: inherit; line-height: var(--reading-leading); color: var(--reading-ink);
+  margin-block: 1.25em; white-space: pre-line; text-align: start;
+}
+body :is([data-reading-surface], .reading-note) .reading-quotation {
+  margin-block: 1.5em; padding-inline-start: clamp(.65rem, 2vw, 1.25rem);
+  border-inline-start: 2px var(--reading-pattern) var(--reading-mark);
+}
+body :is([data-reading-surface], .reading-note) .reading-quotation blockquote {
+  padding: 0; margin: .5em 0 0; border: 0; font: inherit; color: inherit;
+  background: transparent;
+}
+body :is([data-reading-surface], .reading-note) .reading-quotation blockquote > p:first-child { margin-top: 0; }
+body :is([data-reading-surface], .reading-note) .reading-quotation-label {
+  font: .75rem/1.6 var(--font-interface); color: var(--reading-mark);
+}
+.reading-layout-note { max-width: var(--reading-measure); margin: 0 auto 1.5rem; }
+.reading-layout-note summary { cursor: pointer; min-height: 44px; padding-block: .6rem; }
+.reading-layout-note p { max-width: var(--reading-measure); }
+.reading-boundary-space { white-space: normal; }
+body [data-reading-surface].ew-reading-page .ew-section .reading-formatted p {
+  font: var(--reading-size)/var(--reading-leading) var(--reading-face);
+}
+
+/* Search context is separate from the source edition and reading text. */
+.reading-search-return { margin: 0 0 1.5rem; font: 0.875rem/1.5 var(--font-sans, sans-serif); overflow-wrap: anywhere; }
+
+/* A compact door from Scripture search into the complete hosted writings. */
+.scr-writings-matches { margin-block: 1.25rem; padding-block: .8rem; border-block: 1px solid var(--line); }
+.scr-writings-matches summary { cursor: pointer; font-weight: 600; min-height: 44px; padding-block: .5rem; }
+.scr-writings-matches h3 { font-size: 1.1rem; }
+.scr-writings-matches li, .ew-library-results li { overflow-wrap: anywhere; }
+
+/* Verse groups supply breathing room in continuous reading. The same DOM
+   keeps every verse citation/tool intact in line, comparison and source modes. */
+.scr-reading-paragraph { display: contents; }
+.scr-flow > .scr-reading-paragraph { display: block; margin-block: 1.25em; }
+.scr-flow > .scr-reading-paragraph:first-child { margin-block-start: 0; }
+.scr-read-text .scr-verse { white-space: pre-line; }
+.scr-flow .scr-lined-verse, .scr-flow .scr-lined-verse .scr-verse { display: block; }

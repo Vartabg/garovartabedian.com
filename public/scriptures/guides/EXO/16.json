@@ -1,0 +1,224 @@
+{
+  "book": "EXO",
+  "chapter": 16,
+  "bookName": "Exodus",
+  "summary": "In the wilderness Israel fears hunger and recalls Egyptian food; Yahweh responds with evening quail and morning bread whose daily gathering is measured to each person’s need. The sixth day yields a double portion that keeps for the Sabbath, while ordinary leftovers spoil; a sample is saved for future generations, and the narrator looks ahead to forty years of manna.",
+  "whyItMatters": "Provision is tied to a daily rhythm of enough, restraint, and rest rather than a single miraculous meal. The closing preserved portion turns the wilderness food into a memory for descendants.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "The wilderness of Sin between Elim and Sinai, with the camp, surrounding ground, and morning gathering.",
+    "literaryForm": "Complaint-and-provision narrative with gathering rules, Sabbath instruction, naming, and retrospective notice."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The travelers have left Marah and camped at Elim’s springs. On the next stage they face the lack of food rather than drinkable water.",
+      "verseRefs": [
+        "15:22-27",
+        "16:1-3"
+      ]
+    },
+    "here": {
+      "text": "The congregation’s hunger is met with quail and bread, daily limits, a sixth-day double portion, and a Sabbath rest.",
+      "verseRefs": [
+        "16:1-30"
+      ]
+    },
+    "after": {
+      "text": "At Rephidim there is no water to drink, then Amalek attacks, adding thirst and conflict to the wilderness journey.",
+      "verseRefs": [
+        "17:1-16"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "Hunger and the promise of bread",
+      "verses": "1-8",
+      "note": "The people protest; Yahweh promises daily bread and meat to answer them."
+    },
+    {
+      "heading": "Glory, quail, and unfamiliar bread",
+      "verses": "9-15",
+      "note": "The cloud is seen, quail arrive, and Moses identifies the morning food."
+    },
+    {
+      "heading": "A daily portion without hoarding",
+      "verses": "16-21",
+      "note": "People gather by need; overnight leftovers spoil and morning heat melts the food."
+    },
+    {
+      "heading": "Double gathering and Sabbath rest",
+      "verses": "22-30",
+      "note": "The sixth-day portion keeps, while those who seek food on the seventh find none."
+    },
+    {
+      "heading": "Manna named and preserved",
+      "verses": "31-36",
+      "note": "A sample is kept for descendants; the narrator notes forty years and defines an omer."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "16:15",
+      "text": "When the children of Israel saw it, they said to one another, “What is it?” For they didn’t know what it was. Moses said to them, “It is the bread which Yahweh has given you to eat.",
+      "why": "The people’s question gives way to Moses’ explanation that the unfamiliar food is given by Yahweh."
+    },
+    {
+      "ref": "16:18",
+      "text": "When they measured it with an omer, he who gathered much had nothing over, and he who gathered little had no lack. They each gathered according to his eating.",
+      "why": "The measured gathering is described as enough for each person, despite differing amounts collected."
+    },
+    {
+      "ref": "16:29",
+      "text": "Behold, because Yahweh has given you the Sabbath, therefore he gives you on the sixth day the bread of two days. Everyone stay in his place. Let no one go out of his place on the seventh day.”",
+      "why": "The double portion is explicitly connected with the gift of Sabbath rest."
+    }
+  ],
+  "themes": [
+    "hunger and memory",
+    "daily bread",
+    "enough for each person",
+    "limits on storage",
+    "Sabbath rest",
+    "manna remembered"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why do the people speak longingly of Egypt’s food?",
+      "answer": "They say they had meat pots and bread there, while fearing the wilderness will kill the assembly with hunger. The speech is their desperate memory in a food crisis; it does not undo the book’s earlier account of bondage in Egypt.",
+      "verseRefs": [
+        "16:1-3"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does Yahweh promise in response to hunger?",
+      "answer": "He promises bread from the sky to gather daily and a double amount to prepare on the sixth day. Quail arrive in the evening and unfamiliar bread in the morning, making provision a repeated pattern.",
+      "verseRefs": [
+        "16:4-15"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        4
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why is the food called “Manna”?",
+      "answer": "When the people first see it they ask, “What is it?” because they do not recognize it; later the house of Israel calls it Manna. The chapter preserves that initial question as part of the food’s identity.",
+      "verseRefs": [
+        "16:14-15",
+        "16:31"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        14
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What happens when people gather different amounts?",
+      "answer": "Some collect more and some less, but when measured each has enough for the people in the tent. The account highlights a distribution matched to need rather than an advantage for the largest gatherer.",
+      "verseRefs": [
+        "16:16-18"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        16
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why do ordinary leftovers spoil but sixth-day leftovers keep?",
+      "answer": "Moses first forbids saving a daily portion overnight, and some saved food breeds worms. For the Sabbath he commands a double portion to be kept, and that food remains sound; the chapter presents the exception as part of the rest instruction.",
+      "verseRefs": [
+        "16:19-30"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        19
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What is an omer here?",
+      "answer": "It is the measure used for one person’s daily portion and for the preserved sample. The closing verse defines it as one tenth of an ephah, giving the reader its relation to another measure.",
+      "verseRefs": [
+        "16:16-18",
+        "16:32-36"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        16
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What is the Sabbath pattern in this chapter?",
+      "answer": "Six days allow gathering; the sixth yields enough for two days, and on the seventh no food is found outside. The people are told to rest rather than spend that day searching for a new portion.",
+      "verseRefs": [
+        "16:22-30"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        22
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Has the narrative already told forty years of travel?",
+      "answer": "No. The immediate scene takes place soon after leaving Egypt, while verse 35 steps forward to say the manna continued for forty years until the edge of Canaan. It is a retrospective notice inside this chapter, not a new forty-year episode being narrated now.",
+      "verseRefs": [
+        "16:1",
+        "16:31-36"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Manna",
+      "def": "The name given to the unfamiliar daily bread gathered in the wilderness."
+    },
+    {
+      "term": "omer",
+      "def": "The measure for a daily share and a preserved sample, defined here as one tenth of an ephah."
+    },
+    {
+      "term": "Sabbath",
+      "def": "The seventh-day rest for which a double portion is gathered and kept on the sixth day."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "13597a73f8c90b9f9f232b612950aec714e614a8ce4c533f877e4ea8a93b940d",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

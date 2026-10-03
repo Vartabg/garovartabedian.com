@@ -1,0 +1,325 @@
+{
+  "book": "MRK",
+  "bookName": "Mark",
+  "oneLine": "The shortest and fastest account of Jesus — no birth story, no genealogy, straight into a grown man walking out of the water and into trouble.",
+  "orient": "Mark is a short book in a hurry. It runs about 14,300 words in the English text hosted here — you can read the whole thing in an evening — and it moves at a pace the other three accounts never attempt. This translation uses the word \"immediately\" 42 times. Scenes get one or two sentences and then cut. The narrator names Jesus in the first line; demons recognize him early; Peter calls him the Christ but rejects the suffering that follows; and a Roman officer finally calls him God's Son while watching him die. The question is not only who Jesus is, but what those titles mean.",
+  "whereYouAre": "Nothing in this book depends on having read anything before it, and that is deliberate — it opens mid-stride, on a grown man. Judea is governed directly by Rome, while Galilee is ruled by Herod Antipas under Roman power. The temple is standing at the center of Jewish worship. Jewish hopes for God's deliverance take several forms — political, national, and religious — rather than one single expectation. A preacher named John is baptizing in the wilderness. That is where the book starts.",
+  "facts": {
+    "writtenBy": "Anonymous in the narrative itself. The title \"According to Mark\" is external to the story and appears in early manuscripts; the earliest surviving explanation, from Papias, names Mark as Peter's interpreter.",
+    "writtenWhen": "Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended. Chapter 13 is central to the debate below.",
+    "writtenFor": "Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.",
+    "place": "Traditionally Rome. Latin loanwords fit that setting but do not prove it, and Syria is a major alternative — see the debate below.",
+    "covers": "From Jesus's baptism to the announcement at the empty tomb. Mark supplies few firm chronological markers before the final week, so this book alone does not establish how long the ministry lasted.",
+    "size": "16 chapters, 678 verses, about 14,300 words. The shortest of the four accounts: Matthew is 22,800, John 18,700, Luke 24,400."
+  },
+  "language": {
+    "writtenIn": "Koine Greek. Mark's narrative and its earliest surviving manuscripts are Greek. The Aramaic forms below were carried into that Greek text in Greek letters and, in several places, translated for the reader.",
+    "register": "Fluent but comparatively non-literary Koine: short clauses, repetition, direct speech, and abrupt tense shifts make it sound closer to vigorous oral narration than to polished literary prose. That describes the surface, not the author's intelligence. Mark's large-scale structure, story sandwiches, and controlled disclosure are carefully made.",
+    "spokenWorld": "The action takes place in an Aramaic-dominant region where Greek was also heard. Mark normally gives only a Greek narration, so the language originally spoken in each conversation cannot be recovered simply by working backward from the English.",
+    "readerSignal": "Mark preserves a small cluster of Semitic words and sayings — mostly Aramaic — and repeatedly stops to explain them. That supports an audience unfamiliar with the phrases; by itself it does not identify a city or prove that every reader was Gentile.",
+    "englishLayer": "This site hosts the World English Bible, a modern English translation of the Greek text. English word counts and repeated words describe this translation unless the Greek is checked: one English word can represent several Greek words, and one Greek word can be translated several ways.",
+    "textualHistory": [
+      {
+        "label": "The composed book",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Every recoverable form of Mark is a Greek book. Proposals that individual memories or sayings once circulated in Aramaic are questions about sources behind Mark, not evidence for a lost Aramaic edition of the Gospel.",
+        "sourceIds": ["casey-aramaic", "sinaiticus", "vaticanus"]
+      },
+      {
+        "label": "The narrated speech world",
+        "language": "Aramaic alongside Greek",
+        "role": "section",
+        "description": "Aramaic was the dominant local language in Galilee, with meaningful Greek use in the region. Mark usually narrates conversations only in Greek and selectively preserves a few Aramaic forms, so the language of every historical exchange cannot be recovered from the translation alone.",
+        "sourceIds": ["chancey-galilee", "casey-aramaic"]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The displayed English is a translation of the Greek. Its wording is evidence for how this edition renders Mark; claims about Mark's repeated Greek vocabulary are checked against the Greek evidence separately.",
+        "sourceIds": ["hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "εὐθύς (euthys): “immediately,” “at once,” or sometimes simply “then”",
+        "original": "καὶ εὐθύς — kai euthys — “and immediately/then”",
+        "explanation": "Mark uses euthys about forty times; one linguistic count finds the combined phrase kai euthys 25 times. When the nets are dropped (1:18, 1:20) or an illness ends (5:29), “immediately” has real temporal force. In other places it works more like “then/next,” carrying the reader into the next beat (1:21, 1:23, 1:29). The repetition therefore creates urgency, marks sequence, and stitches episodes together — it is not forty separate claims that no time passed.",
+        "translationNote": "The World English Bible usually lets the drumbeat remain as “immediately.” Other translations vary it with “at once,” “just then,” or no separate English word, so the same Greek book can feel faster or smoother in English.",
+        "caution": "Frequent euthys fits Mark's colloquial, less literary register, but the construction also occurs in classical Greek. Its concentration is an individual Markan habit. “Common people talked this way” is useful context, not a complete explanation of why this author repeats it here.",
+        "refs": ["1:12", "1:18", "1:20", "1:21", "1:23", "1:29", "5:29"],
+        "sourceIds": ["geiger-syntax", "evans-style", "hosted-web"]
+      },
+      {
+        "title": "καί (kai): clauses stacked with “and”",
+        "original": "καί … καί … καί — “and … and … and”",
+        "explanation": "Mark often places one clause beside the next and joins them with kai instead of ranking them in polished subordinate sentences. This is called parataxis. It gives a listener one manageable action at a time and makes events accumulate with little pause.",
+        "translationNote": "Natural English often removes sentence-opening “and,” combines clauses, or supplies words like “when,” “after,” and “while.” That is easier to read silently but can erase Mark's additive, read-aloud rhythm.",
+        "caution": "Parataxis can fit speech-like vernacular, the Greek style of the Septuagint, Semitic influence, and an author's chosen storytelling method. The syntax alone cannot tell us which one caused every occurrence.",
+        "refs": ["1:9", "1:10", "1:11", "1:12", "1:13"],
+        "sourceIds": ["evans-style", "geiger-syntax", "hosted-web"]
+      },
+      {
+        "title": "Historical present: yesterday told as if it is happening now",
+        "original": "ἔρχονται — erchontai — “they come” (2:3)",
+        "explanation": "Mark repeatedly switches into a present-tense verb while narrating past events — roughly 150 times, depending on how the instances are counted. The shift can open a scene, move a character onstage, or foreground an action: “they come,” “he goes up,” “people come.” It gives oral narration a live, in-the-room quality.",
+        "translationNote": "The World English Bible normally regularizes these verbs into English past tense. At 2:3 its “Four people came” is Greek “they come … carrying a paralytic”; at 1:12 the Spirit “drove” Jesus is literally a present, “drives/casts out.”",
+        "caution": "The historical present is found in classical Greek as well as Mark. It is a discourse technique, not automatically bad grammar, an Aramaism, or proof that the author was remembering an eyewitness scene.",
+        "refs": ["1:12", "2:3", "3:13", "5:35"],
+        "sourceIds": ["geiger-syntax", "evans-style", "hosted-web"]
+      },
+      {
+        "title": "Rough surface, controlled architecture",
+        "explanation": "Mark repeats words, doubles expressions, changes tense abruptly, and lets clauses run together. Matthew and Luke often smooth these features when they tell parallel scenes. Yet Mark also builds deliberate intercalations, geographic movements, prediction cycles, and a two-part revelation of Jesus's identity. Plain or non-literary Greek is not the same thing as careless composition.",
+        "translationNote": "A polished English sentence can make Mark sound more literary than the Greek, while an aggressively literal version can make purposeful oral features sound like mistakes. Read the repetition and structure together.",
+        "caution": "Register tells us how a text sounds relative to other Greek prose; it does not securely reveal the author's class, education, birthplace, or native language by itself.",
+        "refs": ["5:21", "11:12", "14:53"],
+        "sourceIds": ["evans-style", "usccb-mark"]
+      }
+    ],
+    "examplesHeading": "Words Mark lets you hear",
+    "examples": [
+      {
+        "ref": "5:41",
+        "form": "Talitha cumi",
+        "meaning": "“Girl, I tell you, get up!”",
+        "why": "An Aramaic command is preserved at the moment Jesus raises Jairus's daughter, then interpreted inside the Greek narrative. Other English editions spell the transliteration differently.",
+        "sourceIds": ["delgado-socioling", "hosted-web"]
+      },
+      {
+        "ref": "7:11",
+        "form": "Corban",
+        "meaning": "“given to God”",
+        "why": "Mark keeps the Semitic religious term and explains it because the dispute depends on what the dedication formula meant.",
+        "sourceIds": ["delgado-socioling", "hosted-web"]
+      },
+      {
+        "ref": "7:34",
+        "form": "Ephphatha",
+        "meaning": "“Be opened!”",
+        "why": "The Aramaic command is retained in a healing scene and immediately translated.",
+        "sourceIds": ["delgado-socioling", "hosted-web"]
+      },
+      {
+        "ref": "14:36",
+        "form": "Abba",
+        "meaning": "“Father”",
+        "why": "Mark places the Aramaic address beside its Greek equivalent in Jesus's prayer in Gethsemane.",
+        "sourceIds": ["delgado-socioling", "hosted-web"]
+      },
+      {
+        "ref": "15:34",
+        "form": "Eloi, Eloi, lama sabachthani?",
+        "meaning": "“My God, my God, why have you forsaken me?”",
+        "why": "Jesus's Aramaic cry quotes the opening of Psalm 22; Mark preserves the sound of the cry and supplies its meaning.",
+        "sourceIds": ["casey-aramaic", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Gospel — an ancient life-of-a-person written to persuade, not a diary or a news report",
+    "how": "Like other ancient biographies, Mark selects and arranges scenes to make a case about its subject; it is not a day-by-day chronicle. So pay attention to arrangement as well as sequence. Mark's signature move is to start one story, interrupt it with a second, then finish the first — the two are meant to read against each other. He does it with Jairus's dying daughter and the woman who touches Jesus in the crowd (5:21-43), with the withered fig tree wrapped around the temple protest (11:12-25), and with Jesus on trial upstairs while Peter denies him in the courtyard below (14:53-72)."
+  },
+  "cast": [
+    { "name": "Jesus", "who": "Called Christ (a title, not a surname — it means anointed king), Son of God, and most often, by himself, \"Son of Man.\" He heals, argues, and refuses to be publicized." },
+    { "name": "The Twelve", "who": "His inner circle. In Mark they are slow, frightened, and frequently wrong — this is not an accident of the telling; it is one of the book's main themes." },
+    { "name": "Peter", "who": "The loudest of them. Gets the central answer right in 8:29 and is called Satan four verses later for what he does with it. Denies knowing Jesus at the end." },
+    { "name": "John the Baptist", "who": "The desert preacher who starts the book and is executed halfway through (6:14-29) — a warning about where this road goes." },
+    { "name": "Pharisees and scribes", "who": "Religious teachers and legal experts. Their objections are usually about law, purity, and authority, and they are the ones asking who gave Jesus permission." },
+    { "name": "The crowds", "who": "Constant, pressing, and hard to read. They want healing. Whether they want him is a different question." },
+    { "name": "The unclean spirits", "who": "They identify Jesus early and repeatedly, while the human characters struggle to understand — and Jesus repeatedly orders them to be silent." },
+    { "name": "Pontius Pilate", "who": "The Roman governor. Appears only in chapter 15, and is the one who has to sign off." },
+    { "name": "The women", "who": "Mary Magdalene, Mary the mother of James, Salome. They watch the execution, watch the burial, and are the only ones at the tomb — the book ends on them." }
+  ],
+  "shape": [
+    {
+      "heading": "Who is this? — Galilee and the lake",
+      "chapters": "1–7",
+      "precise": "1:1–8:26",
+      "note": "Healings, exorcisms, arguments with the religious authorities, parables. Everyone keeps asking what kind of authority this is, and nobody answers correctly. The section runs a little past chapter 7 — it closes at 8:26, with a blind man healed in two stages, right before the disciples half-see who Jesus is."
+    },
+    {
+      "heading": "The turn — what it costs",
+      "chapters": "8–10",
+      "precise": "8:27–10:52",
+      "note": "Peter finally says it: \"You are the Christ\" (8:29). Four verses later Jesus calls him Satan for refusing the part about dying. Three times Jesus predicts his death (8:31, 9:31, 10:33) and three times the disciples respond by arguing about rank. The whole section is a walk toward Jerusalem."
+    },
+    {
+      "heading": "The last week — Jerusalem",
+      "chapters": "11–16",
+      "note": "Over a third of the book covers seven days. The pace inverts: the loosely timed public ministry gets ten chapters, while the final week gets six."
+    }
+  ],
+  "purpose": "Mark states its claim in the first line: \"The beginning of the Good News of Jesus Christ, the Son of God\" (1:1). Peter reaches one part at the hinge — \"You are the Christ\" (8:29) — then rejects Jesus's explanation that the Christ will suffer. The first human character to voice the other title, Son of God, is the Roman centurion watching Jesus die (15:39). The structure makes the point: in Mark, the titles cannot be understood apart from the cross.",
+  "snags": [
+    {
+      "snag": "It starts with no birth, no shepherds, no wise men.",
+      "help": "Mark simply doesn't include one, and neither does John. The Christmas material is in Matthew 1–2 and Luke 1–2. Mark isn't contradicting them; his book begins where he thinks the news begins — at the Jordan."
+    },
+    {
+      "snag": "Jesus keeps ordering people not to tell anyone.",
+      "help": "It happens constantly (1:25, 1:34, 1:44, 3:12, 5:43, 7:36, 8:30, 9:9) and it is strange. Scholars call the pattern the messianic secret. One strong reading inside the book is that healings and royal titles can be misunderstood before the suffering path is clear: even Peter says \"Christ\" and then rejects what Jesus says it means. Other readers treat the secrecy as Mark's storytelling device, so this remains an interpretation rather than a settled fact."
+    },
+    {
+      "snag": "The disciples come off badly, over and over.",
+      "help": "They panic in the boat, fail to understand plain parables, argue about rank, fall asleep, run away. Mark is not hostile to them — he is showing that following Jesus without understanding the cross produces exactly this. For early readers under pressure, a book where the heroes fail and are still sent out was the point."
+    },
+    {
+      "snag": "The ending stops mid-panic — and different Bibles end it differently.",
+      "help": "In the oldest complete manuscripts, Mark ends at 16:8: the women flee the tomb and say nothing to anyone, because they were afraid. No appearance, no reunion. Most printed Bibles, including the text here, continue to 16:20. See the debates below — this one is worth knowing before you get there."
+    },
+    {
+      "snag": "\"Son of Man\" sounds like it means \"just a human.\"",
+      "help": "It is Jesus's usual way of referring to himself, and the phrase can carry more than one force: a human being, a suffering figure, or the Daniel 7:13 figure given authority by God. Mark makes the Daniel connection explicit when Jesus speaks of the Son of Man coming in clouds (13:26; 14:62), but not every use has to mean exactly the same thing."
+    },
+    {
+      "snag": "Parables are supposed to clarify, but chapter 4 says they conceal.",
+      "help": "Mark 4:11-12 is genuinely hard and readers have wrestled with it for centuries. It sits in a book where the insiders understand nothing and an outsider sees clearly at the end — the pattern is the argument, and it is not flattering to insider status."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Who wrote it, and when?",
+      "settled": "The narrative never identifies its author. The title and the early testimony about Mark are external evidence.",
+      "positions": [
+        {
+          "view": "Mark, recording Peter's preaching, in Rome in the 60s",
+          "grounds": "This is the oldest surviving explanation. Papias, writing around AD 95–140, says Mark was Peter's interpreter and wrote accurately but not in order, because he was recording what Peter taught as the occasion required rather than composing a sequential life. Irenaeus (c. 180) places the writing after Peter's death, which would put it in the late 60s. The Latin vocabulary and the explanations of Jewish custom fit a Roman, non-Jewish audience. The oddly specific detail in 15:21 — Simon of Cyrene named as \"the father of Alexander and Rufus\" — reads like a note for readers who knew those men."
+        },
+        {
+          "view": "Same tradition, but written while Peter was still alive",
+          "grounds": "Clement of Alexandria, quoted by Eusebius, says Mark wrote at the request of Peter's hearers in Rome while Peter was still preaching. That pushes the date earlier, into the 50s or early 60s. Early tradition is not unanimous on this point — Irenaeus and Clement flatly disagree about whether Peter was alive."
+        },
+        {
+          "view": "Anonymous, around or after AD 70, possibly in Syria",
+          "grounds": "Chapter 13 has Jesus predicting the temple's destruction in detail. Readers who conclude the description was shaped by that event date the book at or after Rome's destruction of the temple in AD 70. On this reading the Papias tradition is later external evidence rather than proof of authorship. Syria is a major proposed setting because Rome is not the only place where Mark's Greek, Latin vocabulary, Jewish material, and Gentile horizon can fit."
+        }
+      ],
+      "soWhat": "The date matters most visibly for chapter 13. Because an interpretation of that prophecy often feeds into the date assigned to the book, the assumption should be stated rather than hidden. The main narrative can still be read on its own terms whichever range you adopt."
+    },
+    {
+      "question": "How does Mark end?",
+      "settled": "This is not only a matter of interpretation: the manuscripts physically differ. Modern critical editions and most current translations flag the longer ending in a note or brackets.",
+      "positions": [
+        {
+          "view": "It ends at 16:8",
+          "grounds": "The two oldest complete Greek Bibles — Codex Sinaiticus and Codex Vaticanus, both 4th century — stop at 16:8, with the women fleeing in silence. Eusebius and Jerome both report that the accurate copies available to them ended there. The Greek of verses 9-20 also reads differently from the rest of the book, and 16:9 re-introduces Mary Magdalene as though she hadn't just been on stage."
+        },
+        {
+          "view": "The longer ending, 16:9-20, belongs",
+          "grounds": "It is in the vast majority of surviving manuscripts and was quoted as scripture by the 2nd century, so it is early. It is canonical in Catholic and Orthodox tradition, and was affirmed at the Council of Trent. Some argue a book cannot have been meant to end on the word \"afraid,\" and that the true ending was lost."
+        },
+        {
+          "view": "It ends at 16:8 on purpose",
+          "grounds": "The abrupt ending does what the whole book has been doing — refusing to let the reader stay a spectator. Everyone in Mark fails; the last line hands the reader the silence and the choice. On this reading the ending is not damaged, it's the sharpest thing in the book."
+        }
+      ],
+      "soWhat": "Read to 16:8 and stop, once, to feel what that book does. Then read 16:9-20 knowing what it is. The text here prints the longer ending, as most Bibles do."
+    },
+    {
+      "question": "Was Mark written first?",
+      "settled": "Matthew, Mark, and Luke share a great deal of material, often word for word in Greek. Some literary relationship exists; the question is the direction.",
+      "positions": [
+        {
+          "view": "Mark first (Markan priority)",
+          "grounds": "The majority position in modern scholarship. Almost all of Mark appears in Matthew and Luke. Mark's Greek is rougher and its portrait of the disciples harsher, and the other two consistently smooth both — it is easier to explain polishing than roughening. Mark is also the shortest, and the expansions run one direction."
+        },
+        {
+          "view": "Matthew first",
+          "grounds": "The older traditional view, held by Augustine and still defended today, on which Mark is a condensation. Papias does say Matthew composed his material in Hebrew, which some read as putting Matthew's work earliest, and the church listed Matthew first for most of its history."
+        }
+      ],
+      "soWhat": "This changes very little for reading Mark on its own terms, but it explains why the same scene can feel different across the gospels."
+    }
+  ],
+  "sources": [
+    {
+      "id": "papias",
+      "label": "Papias, Fragment VI (c. AD 95–140)",
+      "says": "The earliest surviving account of how Mark was written — that Mark was Peter's interpreter, wrote down what he remembered accurately but not in order, never heard Jesus himself, and took care to leave nothing out and add nothing false. Papias's own five books are lost; this survives only because Eusebius quoted it.",
+      "href": "/early/papias"
+    },
+    {
+      "id": "irenaeus",
+      "label": "Irenaeus, Against Heresies 3.1.1 (c. AD 180)",
+      "says": "Says Mark handed down Peter's preaching in writing after the deaths of Peter and Paul — the basis for a late-60s date.",
+      "url": "https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_III"
+    },
+    {
+      "id": "clement",
+      "label": "Clement of Alexandria, in Eusebius, Church History 6.14",
+      "says": "Says Peter's hearers in Rome asked Mark to write what Peter preached, while Peter was still living — putting the writing earlier than Irenaeus does.",
+      "url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_I/Church_History_of_Eusebius/Book_VI/Chapter_14"
+    },
+    {
+      "id": "sinaiticus",
+      "label": "Codex Sinaiticus (4th century)",
+      "says": "One of the two earliest nearly complete Greek Bibles. Its copy of Mark ends at 16:8.",
+      "url": "https://www.codexsinaiticus.org/en/"
+    },
+    {
+      "id": "vaticanus",
+      "label": "Codex Vaticanus, Vat. gr. 1209 (4th century)",
+      "says": "The other early manuscript central to the ending question. Its copy of Mark also stops at 16:8; the Vatican Library provides the digitized manuscript.",
+      "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209"
+    },
+    {
+      "id": "usccb-mark",
+      "label": "USCCB, Introduction to the Gospel of Mark",
+      "says": "A current institutional overview that distinguishes the traditional Roman setting from modern proposals of an unknown Hellenistic Jewish-Christian author in Syria around AD 70, and explains the manuscript endings.",
+      "url": "https://bible.usccb.org/bible/mark/0"
+    },
+    {
+      "id": "oxford-mark",
+      "label": "Oxford Bibliographies, Gospel of Mark",
+      "says": "James Keith Elliott's scholarly overview summarizes the broad dating and provenance range — mid-60s or shortly after AD 70, in Rome or Syria — and the modern case for Markan priority.",
+      "url": "https://academic.oup.com/reference/62341/reference-article-abstract/554100877"
+    },
+    {
+      "id": "casey-aramaic",
+      "label": "Maurice Casey, Aramaic Sources of Mark's Gospel (Cambridge University Press)",
+      "says": "The opening survey states the central linguistic distinction directly: Mark is written in Greek, while Jesus spoke Aramaic, and recovering any earlier Aramaic form requires a method rather than simply reversing a translation.",
+      "url": "https://www.cambridge.org/core/books/abs/aramaic-sources-of-marks-gospel/state-of-play/A01576E7E24CD8176E5FB2E7D55B67A0"
+    },
+    {
+      "id": "chancey-galilee",
+      "label": "Mark A. Chancey, Greco-Roman Culture and the Galilee of Jesus (Cambridge University Press)",
+      "says": "Surveys the linguistic and archaeological evidence for Greek use in Galilee while retaining Aramaic as the dominant local tongue, and warns against turning broad Hellenistic influence into claims the evidence cannot sustain.",
+      "url": "https://assets.cambridge.org/97805218/46479/excerpt/9780521846479_excerpt.htm"
+    },
+    {
+      "id": "geiger-syntax",
+      "label": "Gregor Geiger, “Syntaktische Aramaismen im Markusevangelium” (Liber Annuus 64)",
+      "says": "Counts 149 historical presents and 25 instances of kai euthys in Mark, then tests whether those constructions are Aramaic influence. Because both also occur in classical Greek, their presence alone cannot establish a foreign-language cause.",
+      "url": "https://www.brepolsonline.net/content/journals/10.1484/J.LA.5.105494"
+    },
+    {
+      "id": "evans-style",
+      "label": "Craig A. Evans, “How Mark writes” in The Written Gospel (Cambridge University Press)",
+      "says": "Surveys Mark's parataxis, frequent kai, redundancies, Semitic texture, and roughly 150 historical presents as recurring features of the author's style rather than isolated curiosities.",
+      "url": "https://www.cambridge.org/core/books/abs/written-gospel/how-mark-writes/7539C3903D989397B11340FC6C2FAF2C"
+    },
+    {
+      "id": "delgado-socioling",
+      "label": "Alfredo Delgado Gómez, “Get up! Be Opened!” (Journal for the Study of the New Testament 42.3)",
+      "says": "A sociolinguistic study of Mark's idiolect, Koine register, loanwords, and Aramaic-to-Greek code-switching that treats the preserved forms as social and literary choices rather than accidental leftovers.",
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/0142064X19890487"
+    },
+    {
+      "id": "hosted-web",
+      "label": "The text on this site",
+      "says": "Word counts, verse counts, the 42 English occurrences of \"immediately,\" the displayed spellings and translations of Mark's preserved terms, and every reference above were checked directly against the World English Bible text hosted here."
+    }
+  ],
+  "howToRead": [
+    { "tip": "Read it straight through in one sitting if you can. It is built for that — about ninety minutes — and the speed is the experience. Reading it in fragments loses the thing that makes it Mark." },
+    { "tip": "Watch how the World English Bible uses \"immediately\" 42 times. It lets you feel the pace here, but check the Greek before treating the English count as a one-word Greek study.", "refs": ["1:10", "1:12", "1:18", "1:20"] },
+    { "tip": "Treat 8:27-33 as the hinge and read the book in two halves against it. Everything before asks who he is; everything after is about what that costs.", "refs": ["8:27", "8:29", "8:31", "8:33"] },
+    { "tip": "Keep a running note of how each voice identifies Jesus. The narrator names Christ and Son of God; the heavenly voice and demons call him Son; Peter says Christ but rejects the suffering that follows; the Roman centurion says Son of God at the cross.", "refs": ["1:1", "1:11", "3:11", "5:7", "8:29", "8:32", "9:7", "15:39"] },
+    { "tip": "When a story gets interrupted by another story, read the inside one as a comment on the outside one. That is Mark's main structural device.", "refs": ["5:21", "11:12", "14:53"] },
+    { "tip": "Stop at 16:8 the first time, deliberately, then go on and read the rest knowing what it is." }
+  ],
+  "next": "Read Matthew or Luke next and watch what they do with the same scenes — Matthew writes for readers who know the Hebrew scriptures and works hard to connect them, Luke writes carefully for outsiders and includes far more about women and the poor. Then Acts, which is Luke's second volume and picks up where the gospels stop. If you want to know what the earliest surviving outside witness said about how this book came to be, read Papias directly.",
+  "traditionNote": "Mark's 16 chapters are identical across every tradition on this site. The main editorial difference is the ending: Catholic and Orthodox tradition receives 16:9-20 as canonical scripture, while Protestant editions generally print it with a bracket or footnote noting its absence from the earliest complete manuscripts. Most editions used across these traditions include the passage while clearly marking the textual question."
+}

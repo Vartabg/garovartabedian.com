@@ -1,0 +1,353 @@
+{
+  "book": "3JN",
+  "bookName": "3 John",
+  "oneLine": "A personal letter asking Gaius to support travelling fellow believers while confronting a local leader who blocks them.",
+  "orient": "Third John follows people, reports, and journeys through a small Christian network. The elder praises Gaius for putting his faith into practice by helping visitors, describes Diotrephes's resistance, and commends Demetrius. Truth and love take visible form in whom people welcome, support, or exclude. Read the praise and accusations as parts of the elder's appeal to Gaius, with a hoped-for personal visit still ahead.",
+  "whereYouAre": "Travelling believers have reported Gaius's generosity to the elder and the assembly. The elder has already written to an assembly, but says Diotrephes rejects his authority and obstructs the visitors. The letter does not name either community's location; an association with Ephesus in Asia Minor is a proposed setting, not a place given in the address.",
+  "facts": {
+    "writtenBy": "The writer calls himself the elder without giving a personal name. Christian tradition attributes the letter to John the apostle; identification with another leader in the Johannine circle remains a scholarly alternative.",
+    "writtenWhen": "Often placed near the end of the first century CE; the letter supplies no date.",
+    "writtenFor": "Gaius, an individual praised for helping fellow believers, including people who were strangers to him.",
+    "place": "Unspecified. Ephesus and its surrounding region in Asia Minor are associated with the letter in traditional and scholarly proposals.",
+    "covers": "Greeting and joy (1:1–4), support for travellers (1:5–8), Diotrephes and the call to imitate good (1:9–11), Demetrius's recommendation (1:12), and a planned visit and greetings (1:13–14).",
+    "size": "1 chapter, 14 verses, 292 words in the hosted World English Bible text."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "usccb-john-letters"
+    ],
+    "writtenWhen": [
+      "usccb-john-letters"
+    ],
+    "writtenFor": [
+      "hosted-web"
+    ],
+    "place": [
+      "hosted-web",
+      "usccb-john-letters"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek, the language of the letter's surviving text.",
+    "register": "An affectionate personal address becomes a practical request, a sharp accusation, and a recommendation. Repeated terms for truth, testimony, and doing good connect those changes of tone.",
+    "spokenWorld": "The letter connects communities through reports, travelling visitors, and written messages. Its Greek shows the language of this communication; it does not reveal every language spoken by Gaius or the other people involved.",
+    "readerSignal": "Follow the movement from hearing reports to giving help. The elder's joy at Gaius's conduct leads to a request for further support; the account of Diotrephes leads directly to the appeal to imitate good.",
+    "englishLayer": "The World English Bible retains the walking metaphor for conduct and renders the closing conversation idiom as face to face. The Douay–Rheims has the more literal mouth to mouth. These are different ways of expressing direct conversation, not different plans for the visit.",
+    "textualHistory": [
+      {
+        "label": "A Greek personal letter",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The Greek text preserves the address to Gaius, the recurring language of witness and truth, and the contrast between writing and a personal visit. The SBL Greek New Testament is a modern edited comparison text, not the writer's original manuscript or the direct source edition of the World English Bible.",
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "English translations and the closing verse division",
+        "language": "English",
+        "role": "translation",
+        "description": "The WEB, King James, and Douay–Rheims texts here put the peace wish and greetings to friends in verse 14. The SBL Greek text and the USCCB edition number that final greeting as verse 15. All contain the closing material; the boundary differs. References here follow the WEB's fourteen verses.",
+        "sourceIds": [
+          "hosted-web",
+          "hosted-editions",
+          "greek-3jn",
+          "usccb-3jn-notes"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Truth becomes a way of walking",
+        "original": "ἀλήθεια / περιπατέω — alētheia / peripateō — truth / walk",
+        "explanation": "Truth accompanies the opening declaration of love, the reports about Gaius, the invitation to shared work, and the testimony about Demetrius. In verses 3–4, walking in truth makes conduct something the elder can hear about from others. The praise prepares for the concrete request that follows.",
+        "translationNote": "English walk retains the Greek metaphor: the subject is a person's manner of life, not a journey on foot. Read it alongside the actual journeys in verses 6–7 so the two kinds of movement remain clear.",
+        "caution": "The letter connects truth with belief, conduct, and relationships. One recurring noun cannot by itself supply a complete definition of truth throughout all Johannine writings.",
+        "refs": [
+          "1:1",
+          "1:3",
+          "1:4",
+          "1:6",
+          "1:7",
+          "1:8",
+          "1:12"
+        ],
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Reports become testimony",
+        "original": "μαρτυρέω / μαρτυρία — martyreō / martyria — testify / testimony",
+        "explanation": "The same word family joins the brothers' reports about Gaius to the recommendation of Demetrius. The elder hears about Gaius's conduct, the assembly hears about his love, and Demetrius receives several expressions of support. Repeated witness language makes reputation part of the letter's case for trust.",
+        "translationNote": "The WEB repeats testify and testimony. Older English may distribute this language among borne witness, good report, and bear record, making the verbal connection less immediately visible.",
+        "caution": "These commendations are the elder's presentation of the evidence. Demetrius is praised, but the letter gives no separate account of his activities or an independent voice from Diotrephes.",
+        "refs": [
+          "1:3",
+          "1:6",
+          "1:12"
+        ],
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Welcome continues into help for the journey",
+        "original": "προπέμπω — propempō — send onward",
+        "explanation": "The request in verse 6 extends Gaius's care beyond receiving a guest. The travellers have accepted nothing from the Gentiles, and supporting people like them makes the hosts fellow workers for the truth. USCCB's note understands the sending as equipping them for further travel.",
+        "translationNote": "Send them forward on their journey can sound like simply giving directions. Read the phrase within the sequence of faithful service, public testimony about love, and shared work.",
+        "caution": "The passage describes these travellers and asks support for people like them. It does not establish one funding arrangement for every early Christian mission or require indiscriminate support of every visitor.",
+        "refs": [
+          "1:5",
+          "1:6",
+          "1:7",
+          "1:8"
+        ],
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web",
+          "usccb-3jn-notes"
+        ]
+      },
+      {
+        "title": "Loving first place and choosing what to imitate",
+        "original": "φιλοπρωτεύω / μιμέομαι — philoprōteuō / mimeomai — love to be first / imitate",
+        "explanation": "The elder characterizes Diotrephes through his desire for first place, then lists actions: rejecting the elder, accusing him, refusing visitors, and excluding their supporters. The next appeal asks Gaius to imitate good. This sequence turns an account of conflict into a choice about conduct.",
+        "translationNote": "The WEB makes the characterization explicit with loves to be first among them. The older preeminence wording can sound like the name of a formal rank, but the Greek expression here describes a desire.",
+        "caution": "The characterization belongs to the elder's accusation. It does not identify a precise church office, prove Diotrephes's doctrine, or give his own explanation of the dispute.",
+        "refs": [
+          "1:9",
+          "1:10",
+          "1:11"
+        ],
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web",
+          "hosted-editions",
+          "usccb-3jn-intro"
+        ]
+      }
+    ],
+    "examplesHeading": "Four small phrases to hear in the letter",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "ὁ πρεσβύτερος — ho presbyteros",
+        "meaning": "the elder",
+        "why": "The writer uses a recognized designation without a personal name. Translating the title does not settle which historical John, if any, wrote the letter.",
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web",
+          "usccb-john-letters"
+        ]
+      },
+      {
+        "ref": "1:3",
+        "form": "ἐν ἀληθείᾳ περιπατεῖς — en alētheia peripateis",
+        "meaning": "you walk in truth",
+        "why": "The present-tense description portrays Gaius's continuing conduct. The following request shows what further faithfulness can look like in practice.",
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:6",
+        "form": "προπέμψας — propempsas",
+        "meaning": "sending onward",
+        "why": "This participle belongs to the request that Gaius help the visitors continue their journey. Its form does not mean the requested help has already been completed.",
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web",
+          "usccb-3jn-notes"
+        ]
+      },
+      {
+        "ref": "1:14",
+        "form": "στόμα πρὸς στόμα — stoma pros stoma",
+        "meaning": "mouth to mouth; face to face",
+        "why": "The bodily expression contrasts personal conversation with ink and pen. WEB conveys the idiom as face to face; Douay–Rheims preserves its mouth-to-mouth wording.",
+        "sourceIds": [
+          "greek-3jn",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Personal letter with a recommendation",
+    "how": "Read the greeting, praise, request, warning, commendation, and closing as one appeal. The named people and the elder's relationship with Gaius explain why these particular actions matter. The final wish to speak in person leaves more to be said."
+  },
+  "cast": [
+    {
+      "name": "The elder",
+      "who": "The unnamed writer, who expresses affection for Gaius, asks for help for the travellers, and hopes to visit."
+    },
+    {
+      "name": "Gaius",
+      "who": "The recipient, commended for conduct that the visitors have reported. The letter gives too little detail to identify him securely with another New Testament person of this name."
+    },
+    {
+      "name": "The brothers and strangers",
+      "who": "Travelling fellow believers whose work and journeys call for support. The elder praises Gaius for helping even those previously unknown to him."
+    },
+    {
+      "name": "Diotrephes",
+      "who": "The person the elder accuses of rejecting him, refusing the brothers, and expelling those who want to receive them. His own account is absent."
+    },
+    {
+      "name": "Demetrius",
+      "who": "A man commended in verse 12. He may have carried the letter, as USCCB's note suggests, but the text does not state that role."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Hospitality, resistance, and a personal recommendation",
+      "chapters": "1",
+      "precise": "1:1–14",
+      "note": "Greeting and joy (1–4) lead to the request to support travellers (5–8). The account of Diotrephes and the appeal to imitate good (9–11) precede the commendation of Demetrius (12). A hoped-for visit and personal greetings close the letter (13–14)."
+    }
+  ],
+  "purpose": "The elder asks Gaius to continue practical support for travelling believers, to choose good conduct despite the obstruction he describes, and to trust the commendation of Demetrius. Hospitality becomes participation in their work for the truth.",
+  "snags": [
+    {
+      "snag": "Does prospering in verse 2 promise wealth or health to every believer?",
+      "help": "The elder expresses a prayer for Gaius's well-being, comparing it with his soul's well-being. Read the wish as part of a personal greeting; it is not phrased as a universal guarantee."
+    },
+    {
+      "snag": "Is Diotrephes's side of the conflict available?",
+      "help": "No. The letter records the elder's accusations and proposed response. Distinguish the actions he alleges from reconstructions of the opponent's motives, office, or teaching."
+    },
+    {
+      "snag": "Who is meant by the Name?",
+      "help": "In verse 7, the expression marks the cause for which the travellers went out. USCCB's note identifies it with Jesus Christ. The letter emphasizes the support owed to their work without spelling out the content of their preaching."
+    },
+    {
+      "snag": "Why do some editions have a fifteenth verse?",
+      "help": "They separate the final peace wish and greetings from the hope for a visit. In the WEB, KJV, and Douay–Rheims texts here, both are in verse 14; no closing greeting has disappeared."
+    }
+  ],
+  "debates": [
+    {
+      "question": "What lay behind Diotrephes's resistance?",
+      "settled": "The elder links the dispute to rejected authority, damaging words, and the treatment of visitors. He does not report a specific doctrinal argument.",
+      "positions": [
+        {
+          "view": "A dispute about authority and control",
+          "grounds": "The elder's description of first place and exclusion supports this reading of the conflict."
+        },
+        {
+          "view": "A dispute also involving teaching or local protection",
+          "grounds": "USCCB's introduction presents theological disagreement or a wish to keep outside disputes away as possible explanations. They remain reconstructions because Diotrephes's views are not quoted."
+        }
+      ],
+      "soWhat": "Assess the conduct described without supplying the opponent with a doctrinal label the letter does not give him."
+    },
+    {
+      "question": "Was the earlier letter in verse 9 our Second John?",
+      "settled": "Third John refers to a previous letter to an assembly but does not identify it.",
+      "positions": [
+        {
+          "view": "Second John could belong to the same exchange",
+          "grounds": "Both letters discuss receiving visitors and share an elder as writer. Dale Martin explores this sequence in his Yale lecture, explicitly as a speculative reconstruction."
+        },
+        {
+          "view": "The earlier letter could be another, unpreserved message",
+          "grounds": "The text gives no title or quotation that establishes the connection. Martin also notes that the two letters could concern different communities."
+        }
+      ],
+      "soWhat": "Read Second John alongside this letter for comparison, while leaving the sequence of events open."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible: 3 John",
+      "says": "The complete English text supports the letter's structure, named participants, claims, fourteen-verse numbering, and measured word count.",
+      "href": "/scriptures/text/web/3JN.json"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "Hosted King James and Douay–Rheims texts of 3 John",
+      "says": "Comparison of witness vocabulary, the direct-conversation idiom, and the inclusion of the final greetings in verse 14. Translation differences alone do not establish a manuscript history."
+    },
+    {
+      "id": "greek-3jn",
+      "label": "MorphGNT / SBL Greek New Testament: 3 John",
+      "says": "The Greek forms, morphology, recurring terms, and fifteen-verse division, checked against the Greek text available here. This is a modern edited text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/85-3Jn-morphgnt.txt"
+    },
+    {
+      "id": "usccb-3jn-intro",
+      "label": "USCCB: Introduction to 3 John",
+      "says": "The role of hospitality and competing authority, with several possible explanations of Diotrephes's resistance.",
+      "url": "https://bible.usccb.org/bible/3john/0"
+    },
+    {
+      "id": "usccb-3jn-notes",
+      "label": "USCCB: 3 John text and notes",
+      "says": "Onward support for travellers, the Name, the possible role of Demetrius, and the separate numbering of the final greeting as verse 15.",
+      "url": "https://bible.usccb.org/bible/3john/1"
+    },
+    {
+      "id": "usccb-john-letters",
+      "label": "USCCB: Introduction to 2 John, on both short Johannine letters",
+      "says": "Their shared elder and literary affinities, disputed authorship, and a proposed Ephesian setting near the end of the first century.",
+      "url": "https://bible.usccb.org/bible/2john/0"
+    },
+    {
+      "id": "yale-johannine",
+      "label": "Dale B. Martin, Open Yale Courses: Johannine Christianity, the Letters",
+      "says": "Explores a possible connection between 2 and 3 John while explicitly acknowledging that the proposed sequence and community history are speculative.",
+      "url": "https://oyc.yale.edu/religious-studies/rlst-152/lecture-12"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read the whole letter in one sitting, keeping Gaius, Diotrephes, and Demetrius distinct. Notice which person is addressed, accused, or recommended.",
+      "refs": [
+        "1:1",
+        "1:9",
+        "1:12"
+      ]
+    },
+    {
+      "tip": "Trace the practical verbs: helping, sending onward, receiving, forbidding, and throwing out. Ask how each action affects the travellers and their work.",
+      "refs": [
+        "1:5",
+        "1:6",
+        "1:8",
+        "1:10"
+      ]
+    },
+    {
+      "tip": "Read the command to imitate good between the accusation against Diotrephes and the commendation of Demetrius. That position gives the command concrete examples to consider.",
+      "refs": [
+        "1:10",
+        "1:11",
+        "1:12"
+      ]
+    },
+    {
+      "tip": "Notice what the elder postpones until a visit. The surviving letter is part of an ongoing relationship, and it does not tell us whether the visit occurred.",
+      "refs": [
+        "1:13",
+        "1:14"
+      ]
+    }
+  ],
+  "next": "Read 2 John for another use of truth and love in deciding which visitors to support. Compare the two appeals without assuming that their named or unnamed communities belong to one recoverable sequence of events.",
+  "traditionNote": "Third John is a New Testament letter. This reader follows the WEB's fourteen-verse division; an edition with fifteen verses separates the final greetings rather than adding a new episode."
+}

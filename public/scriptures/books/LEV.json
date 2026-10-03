@@ -1,0 +1,466 @@
+{
+  "book": "LEV",
+  "bookName": "Leviticus",
+  "oneLine": "At Sinai, Israel learns how life with a holy God orders worship, bodies, food, time, land, labor, repair, and care for neighbor and resident alien.",
+  "orient": "Leviticus picks up where Exodus ends: divine glory has filled the Tent of Meeting, and now Yahweh calls Moses from inside it. Most of the book is instruction about how Israel lives around holy presence. Sacrifice, priesthood, purification, holy time, economic restraint, restitution, and neighbor-love all contribute to that ordered life. As the rules change, watch who is addressed, what is at stake, and how a person or place returns to its proper status.",
+  "whereYouAre": "Israel has left slavery in Egypt, crossed the sea, received the covenant at Sinai, made the golden calf, and built the tabernacle. The camp is still at Sinai; the journey does not resume until Numbers. Leviticus therefore moves very little on a map. Its movement is toward and away from the Tent of Meeting, across degrees of access, and from sanctuary practice into the daily life of the people.",
+  "facts": {
+    "writtenBy": "Leviticus presents Yahweh speaking instructions to Moses, who relays them to Aaron, the priests, or all Israel. It does not name a writer of the finished book. Jewish and Christian traditions receive the Torah through Moses. Historical-critical studies relate Leviticus to Priestly writing and commonly distinguish a Holiness collection in chapters 17–26; the number and sequence of proposed layers remain debated.",
+    "writtenWhen": "The story locates these instructions during Israel's stay at Sinai. That narrated time is separate from the formation of the book. Traditional Mosaic readings root the instruction in Moses' lifetime; historical-critical models often place substantial Priestly shaping in the first millennium BCE and allow for older ritual traditions. The dates and sequence of composition and editing remain disputed. An early Exodus–Leviticus fragment is estimated at about 250 BCE; its copy date witnesses transmission, not the book's origin.",
+    "writtenFor": "The book names several audiences. Some instructions address any Israelite who brings an offering, some address Aaron and his sons as priests, and others address the whole congregation, including rules that also name resident aliens, poor people, hired workers, and debt-bound households.",
+    "place": "The narrative is set at Mount Sinai and the Tent of Meeting in Israel's wilderness camp. A location for the book's final composition cannot be established from that narrated setting alone.",
+    "covers": "Offerings; priestly ordination and failure; food, bodies, surfaces, and ritual status; the Day of Atonement; holiness in worship and social life; festivals; Sabbath years and Jubilee; covenant warnings; vows and valuations.",
+    "size": "27 chapters and 859 verses, with about 23,200 English words in the hosted World English Bible."
+  },
+  "factSourceIds": {
+    "writtenBy": ["hosted-web", "usccb-leviticus", "usccb-pentateuch", "cambridge-sacred-world"],
+    "writtenWhen": ["hosted-web", "usccb-pentateuch", "peeters-leviticus-text"],
+    "writtenFor": ["hosted-web", "usccb-leviticus"],
+    "place": ["hosted-web", "usccb-pentateuch"],
+    "covers": ["hosted-web", "usccb-leviticus"],
+    "size": ["hosted-web"]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew. The Hebrew book is called Vayyiqra, from its opening word, while the English title Leviticus comes through the ancient Greek title. The site also hosts an English translation of Greek Leviticus, so a reader may encounter a Hebrew-based or Septuagint-based route.",
+    "register": "Concentrated priestly instruction: conditional cases, direct prohibitions, step-by-step ritual procedures, catalogues, audience formulas, and recurring conclusions such as ‘I am Yahweh’ or ‘this is the law of …’ Sparse narratives in chapters 8–10 and 24 show the ordered system under pressure. Technical repetition is part of the book's precision, not verbal clutter.",
+    "spokenWorld": "Moses, Aaron, priests, Israelites, and resident aliens inhabit the story at Sinai. The received book renders divine speech, priestly instruction, and human dialogue in Hebrew and marks no internal language switch. That literary presentation does not let a reader reconstruct the everyday language of every historical participant simply by reversing the English.",
+    "readerSignal": "Watch who is addressed, what space is involved, and which pair of terms is active. The book repeatedly distinguishes holy from common and clean from unclean, shifts between instructions for lay offerers and priests, and changes the object of ‘make atonement’ from a person to an altar, tent, or inner sanctuary. Those changes are interpretive signals.",
+    "englishLayer": "This briefing and its chapter-guide batch use the hosted World English Bible (WEB), which translates a Masoretic Hebrew base; readers can select other English editions, and a tradition may open another edition by default. The word-level layer provides the Westminster Leningrad Codex through the Open Scriptures Hebrew Bible. Brenton is a nineteenth-century English translation of Greek Leviticus. Labels such as ‘sin offering,’ ‘trespass offering,’ ‘atonement,’ ‘unclean,’ and ‘scapegoat’ make interpretive choices about Hebrew terms.",
+    "textualHistory": [
+      {
+        "label": "The received Hebrew book",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "Leviticus is a Hebrew Torah book closely connected to the tabernacle material around it in Exodus and Numbers. The source-critical term ‘Priestly’ describes related prose and ritual concerns; it does not identify one securely dated individual author. Proposals about the book's layers and their sequence remain historical reconstructions.",
+        "sourceIds": ["hosted-oshb", "usccb-leviticus", "usccb-pentateuch", "cambridge-sacred-world"]
+      },
+      {
+        "label": "Early surviving Hebrew fragments",
+        "language": "Biblical Hebrew; one scroll in paleo-Hebrew script",
+        "role": "earliest-extant",
+        "description": "A published survey dates the 4Q17 Exodus–Leviticus fragment, preserving Leviticus 1:13–15, 1:17, and 2:1, to about 250 BCE. The fragmentary Cave 11 Leviticus scroll preserves portions of many later chapters; the Library of Congress exhibit dates that copy to the late second or early first century BCE, while scholarly dating proposals vary. These witnesses show stages of transmission, not when Leviticus was composed.",
+        "sourceIds": ["peeters-leviticus-text", "loc-leviticus-scroll"]
+      },
+      {
+        "label": "Ancient Greek Leviticus",
+        "language": "Koine Greek (Septuagint)",
+        "role": "translation",
+        "description": "Leviticus also circulated in ancient Greek translation; its Greek-derived title became the English ‘Leviticus.’ A modern critical edition of Greek Leviticus draws on multiple witnesses. The hosted Brenton English rendering gives readers one Greek-based route, but comparing it with WEB does not establish which ancient reading came first.",
+        "sourceIds": ["cambridge-greek-ot", "ioscs-greek-leviticus", "usccb-leviticus", "hosted-brenton", "hosted-web"]
+      },
+      {
+        "label": "The editions exposed on this site",
+        "language": "Modern English from Hebrew or Greek, with a Masoretic Hebrew word layer",
+        "role": "translation",
+        "description": "WEB and the OSHB word layer use a Masoretic Hebrew base; Brenton is an English Septuagint. The hosted OSHB derives from a medieval manuscript. In these hosted English editions, WEB 6:1–7 corresponds to Brenton 5:20–26, so references at the chapter 5–6 boundary require an edition label. The comparison alone cannot determine the earlier Hebrew or Greek form.",
+        "sourceIds": ["hosted-web", "hosted-oshb", "hosted-brenton"]
+      }
+    ],
+    "features": [
+      {
+        "title": "וַיִּקְרָא (wayyiqra): the book begins with ‘and,’ not a reset",
+        "original": "וַיִּקְרָא ... מֵאֹהֶל מוֹעֵד — wayyiqra ... me'ohel mo'ed — ‘and he called ... from the Tent of Meeting’",
+        "explanation": "The Hebrew title is simply the first word, ‘and he called.’ Its opening conjunction and the Tent of Meeting carry the reader directly out of Exodus 40, where glory fills the tabernacle and Moses cannot enter. The repeated ‘Yahweh spoke to Moses’ formulas then organize blocks of instruction and announce changes of audience.",
+        "translationNote": "‘Vayyiqra’ makes the narrative connection audible; ‘Leviticus,’ inherited through Greek and Latin, foregrounds priestly subject matter. Neither English title tells the whole reader what the book contains.",
+        "caution": "A title or speech formula does not prove who wrote the final literary form. ‘Leviticus’ also should not reduce the book to Levites: its instructions repeatedly address Aaronic priests and the whole congregation.",
+        "refs": ["1:1", "1:2", "6:8", "6:9", "19:1", "19:2"],
+        "sourceIds": ["usccb-leviticus", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "title": "קָרְבָּן (qorban): one offering system contains several different rites",
+        "original": "qorban — offering; olah — burnt offering; minchah — grain gift; zevach shelamim — well-being/communion sacrifice; chatat — sin/purification offering; asham — guilt/reparation offering",
+        "explanation": "Qorban is a broad term for what an offerer brings. Chapters 1–7 distinguish burnt offerings whose prepared animal portions go to the altar, grain gifts, sacrifices that support a shared meal, rites for inadvertent wrong or impurity, and reparative offerings joined to restitution. A purification offering follows childbirth, which the book does not portray as a moral offense; a person unable to afford an animal can bring flour for a chatat. The rites have different stated purposes and participants.",
+        "translationNote": "The World English Bible uses ‘burnt,’ ‘meal,’ ‘peace,’ ‘sin,’ and ‘trespass’ offerings. Other editions prefer ‘whole-burnt,’ ‘grain,’ ‘well-being’ or ‘communion,’ ‘purification,’ and ‘reparation.’ Each set makes one aspect clearer and can hide another.",
+        "caution": "The instructions describe actions more often than they explain one theory behind them. Do not make the name of one offering define every sacrifice, assume every rite uses blood, or treat all hand-laying as transfer of guilt; Leviticus 16:21 explicitly uses two hands when confessed offenses are placed on the live goat.",
+        "refs": ["1:2", "1:3", "2:1", "3:1", "4:3", "5:11", "5:15", "12:6", "16:21"],
+        "sourceIds": ["usccb-lev1", "usccb-lev3", "usccb-lev4", "yale-leviticus-one", "watts-offerings", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "title": "קֹדֶשׁ / חֹל and טָמֵא / טָהוֹר: two axes, not good people versus bad people",
+        "original": "בֵּין הַקֹּדֶשׁ וּבֵין הַחֹל וּבֵין הַטָּמֵא וּבֵין הַטָּהוֹר — ‘between the holy and the common, and between the unclean and the clean’",
+        "explanation": "Leviticus 10:10 names two distinctions. Holy/common concerns dedication and access; unclean/clean concerns ritual status. Childbirth, genital discharge, and contact with certain carcasses can produce a temporary unclean state without making the person morally wicked. The practical issue is often whether someone or something may approach, touch, or consume what is holy, and what waiting, washing, inspection, or offering restores the required status.",
+        "translationNote": "Modern English ‘unclean’ easily sounds dirty, disgusting, or guilty. ‘Ritually impure’ better marks a status, but it can sound abstract and should not hide the material rules about bodies, food, dwellings, and sanctuary access.",
+        "caution": "The distinction does not make ethics irrelevant. Leviticus also describes prohibited acts as defiling people or land, especially in chapters 18–20. The point is narrower: ritual impurity is not automatically moral guilt, and the surrounding procedure must show which kind of problem is in view.",
+        "refs": ["10:10", "11:47", "12:2", "15:31", "18:24"],
+        "sourceIds": ["cambridge-purity", "yale-leviticus-one", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "title": "כִּפֶּר (kipper): ‘make atonement’ can act on a place",
+        "original": "וְכִפֶּר עַל־הַקֹּדֶשׁ — vekhipper al-haqodesh — ‘he shall purge/make atonement for the holy place’",
+        "explanation": "In chapter 16 the priest applies blood within the inner sanctuary, the Tent of Meeting, and the altar; the thing acted upon can be sacred space as well as a person or community. The live goat performs a different action: confessed iniquities are placed on it and carried away. Leviticus 17:11 connects altar blood with the life of the creature. Taken together, the rites concern removal, cleansing, restored access, forgiveness, and represented life, not one undifferentiated transaction.",
+        "translationNote": "English ‘atonement’ can suggest only inward forgiveness or a later theory of punishment. Translators sometimes render the same Hebrew root ‘purge’ when a sanctuary or altar is being acted upon, allowing what receives the rite to remain visible.",
+        "caution": "The purgation reading does not erase the book's statements that people are forgiven, and the blood-as-life wording has supported representative and substitutionary readings. The Hebrew verb and ritual sequence do not by themselves settle one comprehensive Jewish or Christian theory of atonement.",
+        "refs": ["4:20", "16:16", "16:20", "16:21", "16:22", "17:11"],
+        "sourceIds": ["usccb-lev16", "yale-leviticus-two", "cambridge-rereading-sacrifice", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "title": "קְדֹשִׁים תִּהְיוּ (qedoshim tihyu): holiness reaches the field, court, payroll, and street",
+        "original": "קְדֹשִׁים תִּהְיוּ כִּי קָדוֹשׁ אֲנִי — qedoshim tihyu ki qadosh ani — ‘you shall be holy, for I am holy’",
+        "explanation": "Chapter 19 addresses the whole congregation and places sacrifice and Sabbath beside leaving harvest for the poor, paying a worker promptly, refusing to exploit disabled people, judging without favoritism, loving a neighbor, and loving the resident alien. Leviticus does not file ritual and social obligation in separate drawers. Holiness orders spaces, times, food, priestly service, households, land, and relations because they belong within Israel's life before God.",
+        "translationNote": "English ‘holy’ can sound like private spirituality, exceptional virtue, or clergy. The repeated Hebrew word-family also marks what is dedicated, protected from profanation, and shaped for God's service in ordinary communal life.",
+        "caution": "‘Set apart’ is a useful shorthand for one aspect of holiness. Chapter 19 also specifies practices concerning poor people, disabled people, workers, neighbors, and resident aliens.",
+        "refs": ["19:2", "19:9", "19:10", "19:13", "19:14", "19:15", "19:18", "19:33", "19:34", "20:7", "20:8"],
+        "sourceIds": ["cambridge-neighbor", "thetorah-holiness", "thetorah-neighbor", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "title": "צָרַעַת (tsara'at): priestly inspection covers people, cloth, and houses",
+        "original": "tsara'at — the condition traditionally translated ‘leprosy’",
+        "explanation": "Chapters 13–14 use the same Hebrew label for changes in skin, garments, and house walls. Priests inspect visible signs, classify ritual status, and later examine whether the affected person or place can return. The text includes exclusion, washing, removal of materials, and rites after healing or clearing.",
+        "translationNote": "WEB often says ‘leprosy’ or ‘mildew.’ The USCCB note warns that ancient tsara'at does not map cleanly onto modern Hansen's disease; a change in cloth or a wall cannot be that human illness.",
+        "caution": "The passages describe ancient priestly classification. They do not provide a diagnosis for readers today, and the social exclusion in 13:45–46 remains a serious part of the story.",
+        "refs": ["13:2", "13:45", "13:47", "14:3", "14:34", "14:44"],
+        "sourceIds": ["usccb-lev13", "hosted-oshb", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Hebrew terms whose English labels need context",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "Vayyiqra",
+        "meaning": "‘And he called’ — the Hebrew name of the book",
+        "why": "The first word ties Leviticus to the tabernacle scene at the end of Exodus, while the inherited English title directs attention toward priestly material.",
+        "sourceIds": ["usccb-leviticus", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "ref": "1:2",
+        "form": "qorban",
+        "meaning": "an offering or gift brought before Yahweh",
+        "why": "It is the umbrella term before the text distinguishes the offerings. Translating the whole system through the name of one subtype distorts its range.",
+        "sourceIds": ["usccb-lev1", "watts-offerings", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "ref": "10:10",
+        "form": "qodesh / chol; tame / tahor",
+        "meaning": "holy / common; unclean / clean",
+        "why": "The verse keeps dedication and ritual status as two distinctions. English readers often collapse both into one moral scale.",
+        "sourceIds": ["cambridge-purity", "yale-leviticus-one", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "ref": "16:8",
+        "form": "la-Azazel",
+        "meaning": "for Azazel — an uncertain name or designation associated with the wilderness rite",
+        "why": "The Hebrew does not simply say ‘scapegoat.’ Ancient and modern readers variously understand Azazel as a wilderness being, a place, or a designation connected with sending away; the rite itself clearly sends the live goat bearing confessed offenses out of the camp.",
+        "sourceIds": ["thetorah-azazel", "yale-leviticus-two", "hosted-oshb", "hosted-web", "hosted-brenton"]
+      },
+      {
+        "ref": "16:16",
+        "form": "kipper al-haqodesh",
+        "meaning": "purge or make atonement for the holy place",
+        "why": "The phrase names the sanctuary as what receives the rite. That grammar prevents ‘atonement’ from being reduced to a private feeling or to only one account of how an individual is forgiven.",
+        "sourceIds": ["usccb-lev16", "cambridge-rereading-sacrifice", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "ref": "19:34",
+        "form": "ger",
+        "meaning": "a resident alien, sojourner, or immigrant living among the community",
+        "why": "The command extends love-language from the neighbor in 19:18 to the resident alien and grounds it in Israel's own memory of being aliens in Egypt.",
+        "sourceIds": ["thetorah-neighbor", "cambridge-neighbor", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "ref": "13:47",
+        "form": "tsara'at",
+        "meaning": "a condition affecting skin, garments, or houses in Leviticus 13–14",
+        "why": "A garment's condition shows why the inherited English ‘leprosy’ is too narrow and can mislead readers toward a modern medical diagnosis.",
+        "sourceIds": ["usccb-lev13", "hosted-oshb", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Priestly Torah — legal and ritual instruction framed by a small but consequential Sinai narrative",
+    "how": "Read each unit by asking who acts, on whose behalf, with what material, in which place, at what time, and toward what stated result. Conditional cases and repeated procedures create a map of access and responsibility. The narratives of ordination, dangerous approach, and public judgment test that map. Begin with the ancient Israelite setting, then identify how later Jewish and Christian communities read these passages."
+  },
+  "cast": [
+    { "name": "Yahweh", "who": "The holy God whose presence fills the tabernacle, gives the instructions, sanctifies Israel, receives offerings, and demands justice in communal life." },
+    { "name": "Moses", "who": "Receives and relays most of the speeches, installs Aaron and his sons, and responds to the narrative crises that punctuate the laws, relaying Yahweh's ruling when it is given." },
+    { "name": "Aaron", "who": "Israel's first high priest in the book; ordained for sanctuary service, bereaved after his sons' unauthorized approach, and charged with the annual rites of chapter 16." },
+    { "name": "Aaron's sons and the priests", "who": "Guard, teach, inspect, offer, eat assigned portions, and maintain distinctions around holy space; their greater access also brings stricter limits." },
+    { "name": "Nadab and Abihu", "who": "Aaron's sons who bring unauthorized fire and die in chapter 10, making the danger of unbounded approach part of the book's plot." },
+    { "name": "The Israelites", "who": "Not passive spectators: lay people bring and identify offerings, confess, eat, rest, release, restore, and practice holiness in fields, households, courts, and commerce." },
+    { "name": "The resident alien", "who": "A non-native living among Israel, repeatedly named within communal obligations and explicitly included in the command to love and in several shared restrictions." }
+  ],
+  "shape": [
+    { "heading": "Offerings brought and administered", "chapters": "1–7", "note": "Instructions first for Israelite offerers and then for priests distinguish burnt, grain, well-being, purification, and reparation rites, including different provisions for economic means." },
+    { "heading": "Priests installed — and holy access turns dangerous", "chapters": "8–10", "note": "Aaron and his sons are ordained, glory appears at the first service, Nadab and Abihu die, and priests are charged to distinguish and teach." },
+    { "heading": "Clean, unclean, bodies, dwellings, and the camp", "chapters": "11–15", "note": "Food animals, childbirth, skin conditions, affected cloth or houses, and bodily discharges are classified with procedures for waiting, washing, inspection, and restoration." },
+    { "heading": "The annual purging and removal rite", "chapters": "16", "note": "The Day of Atonement addresses priest, people, inner sanctuary, tent, and altar through blood rites and the living goat that carries confessed offenses away." },
+    { "heading": "Holiness from altar to household and neighbor", "chapters": "17–22", "note": "Blood, sexual boundaries, gleaning, wages, justice, neighbor and resident alien, penalties, priests, and offerings are drawn into one communal call to holiness." },
+    { "heading": "Holy time, land, release, and covenant consequence", "chapters": "23–26", "note": "Festivals and Sabbath order time; lamp and bread mark continuing service; a blasphemy case ends in execution; Sabbath years and Jubilee regulate land and Israelite debt while 25:44–46 permits permanent foreign slavery; chapter 26 warns of siege, famine, and exile as well as blessing." },
+    { "heading": "Vows, valuations, and what may be redeemed", "chapters": "27", "note": "A final appendix regulates payments associated with vows and dedications of persons, animals, houses, fields, and tithes. It allows a poverty adjustment at 27:8 and includes a severe rule about persons devoted to destruction at 27:29." }
+  ],
+  "purpose": "Leviticus portrays Israel's life around divine presence. It distinguishes holy and common, clean and unclean, offerings and reparation, permitted access and dangerous approach, and ordinary property from what has been dedicated. Its rites address impurity and wrongdoing through purification, atonement, removal, restitution, waiting, and return. Holiness reaches beyond the sanctuary into harvest margins, wages, judgment, sexuality, disability, migration, debt, land tenure, rest, and release. These subjects shape the community's life in the book's narrated covenant setting.",
+  "snags": [
+    {
+      "snag": "It feels like Exodus stopped and a ritual handbook fell into the story.",
+      "help": "Read Exodus 40 immediately before Leviticus 1. The tabernacle has just been completed and filled; Leviticus explains how anyone can now approach and how that presence can remain among the camp. Numbers resumes the journey from Sinai, so this book occupies the necessary pause."
+    },
+    {
+      "snag": "‘Unclean’ sounds like sinful, filthy, or inferior.",
+      "help": "Childbirth and bodily processes create temporary ritual states, and the text supplies routes back to clean status. Some prohibited acts also defile. The procedure and context show whether a passage addresses ritual status, wrongdoing, or both."
+    },
+    {
+      "snag": "Every animal offering looks like a punishment transferred to a substitute.",
+      "help": "Keep the offering names and actions separate. Leviticus includes gifts, grain, whole dedication, shared meals, thanksgiving, purification, forgiveness, and restitution. The two-handed transfer of confessed offenses is explicit for the live goat in 16:21; that does not license importing the same mechanism into every one-handed gesture."
+    },
+    {
+      "snag": "‘Scapegoat’ sounds familiar enough that Azazel disappears.",
+      "help": "The live goat is not slaughtered. It bears confessed offenses out to the wilderness, and the Hebrew destination la-Azazel remains difficult. ‘Scapegoat’ preserves the removal function but can conceal the unresolved name and the fact that the blood rite and removal rite are distinct."
+    },
+    {
+      "snag": "The skin condition must be modern leprosy.",
+      "help": "The Hebrew tsara'at covers visible changes in human skin, cloth, and house walls. Priests inspect and classify ritual status. The USCCB note explains why older ‘leprosy’ wording does not identify a single modern disease, including Hansen's disease."
+    },
+    {
+      "snag": "I can sort every law into moral, civil, and ceremonial boxes.",
+      "help": "Those are later interpretive categories, not Leviticus's own headings. Chapter 19 moves from sacrifice and Sabbath to gleaning, wages, disability, courts, sexuality, and immigrants without announcing a change of kind. Later Jewish and Christian traditions make real distinctions, but a first reading should not use them to erase the book's own arrangement."
+    },
+    {
+      "snag": "How should I read laws about slavery, exclusion, sexuality, and death penalties?",
+      "help": "Describe each law's stated action and consequence. Leviticus 20 prescribes death for several offenses; 21:17–23 excludes priests with listed physical conditions from altar service while still allowing them to eat priestly portions; 25:44–46 permits permanent ownership of foreign slaves. The sexual laws name acts and relationships in an ancient kinship setting, not modern identity categories. Study later Jewish and Christian reception as reception, while recognizing the continuing harm these passages can cause."
+    }
+  ],
+  "debates": [
+    {
+      "question": "How did Leviticus reach its present form?",
+      "settled": "The received book presents instruction spoken by Yahweh to Moses at Sinai, uses a consistent priestly vocabulary, contains internal changes of audience and emphasis, and does not include a first-person claim naming the writer of the finished scroll.",
+      "positions": [
+        {
+          "view": "Mosaic revelation and authorship in the traditional sense",
+          "grounds": "Jewish and Christian tradition receives the Torah as mediated through Moses, and Leviticus repeatedly roots its commands in speech to Moses at Sinai. Traditional accounts vary over whether later scribes preserved, arranged, or updated details while Moses remains the originating human authority."
+        },
+        {
+          "view": "Priestly composition and editorial development",
+          "grounds": "Modern critical study relates Leviticus to Priestly material across the Pentateuch and commonly distinguishes chapters 17–26 as a Holiness collection that develops priestly concerns for the whole community. Dates proposed for P and H, their order, their boundaries, and the amount of older ritual material differ substantially."
+        }
+      ],
+      "soWhat": "The book's Mosaic-Sinai presentation is part of its literary frame; compositional models are historical reconstructions. Speech formulas do not identify the writer of the finished scroll, and proposed source layers have not been recovered as separate manuscripts."
+    },
+    {
+      "question": "What do sacrifice and atonement accomplish?",
+      "settled": "Leviticus names several offerings with different materials and actions. It says people can be forgiven, applies kipper language to people and sacred places, links altar blood with life, purges the sanctuary in chapter 16, and sends confessed offenses away on a living goat.",
+      "positions": [
+        {
+          "view": "Purgation and restoration of sacred space",
+          "grounds": "The purification offering's blood is applied to altar, tent, and inner sanctuary, and chapter 16 says those places are acted upon because they stand amid Israel's impurities and sins. On this reading ‘purge’ often communicates kipper better than an exclusively person-centered ‘atone.’"
+        },
+        {
+          "view": "Expiation, ransom, or representative life on behalf of the offerer",
+          "grounds": "The text also says rites are performed for people, leads to forgiveness, calls blood-as-life God's provision on the altar, and has the offerer identify an animal by hand. Interpreters differ over how substitution, representation, ransom, and the disposal of sin relate."
+        },
+        {
+          "view": "Several rites with different actions",
+          "grounds": "Burnt, grain, well-being, purification, and reparation offerings enact gift, tribute, dedication, shared food, thanksgiving, cleansing, restitution, and restored relationship in different combinations. Atonement matters greatly, but it does not define every offering in the same way."
+        }
+      ],
+      "soWhat": "Follow each rite's action and object. Name later Jewish and Christian theological readings when discussing them, and keep the local wording in view."
+    },
+    {
+      "question": "What or where is Azazel in chapter 16?",
+      "settled": "The Hebrew assigns one goat by lot to Yahweh and one la-Azazel. The second goat remains alive, receives the community's confessed offenses, and is led into an isolated wilderness region.",
+      "positions": [
+        {
+          "view": "A wilderness being or demonic figure",
+          "grounds": "Reading Azazel as a proper name fits its parallel position beside Yahweh in the lot formula and later Jewish interpretation associates the name with a wilderness being. The goat is nevertheless presented before Yahweh and sent only at Yahweh's command."
+        },
+        {
+          "view": "A place or designation for complete removal",
+          "grounds": "Ancient and later interpreters connected the expression with a rugged destination or with the goat that goes away. Greek and English traditions developed terms emphasizing removal, which produced the English ‘scapegoat.’"
+        }
+      ],
+      "soWhat": "Azazel's identity remains uncertain. The rite describes removal beyond the camp, even where the English word ‘scapegoat’ leaves the Hebrew name unresolved."
+    }
+  ],
+  "sources": [
+    {
+      "id": "usccb-leviticus",
+      "label": "USCCB, Introduction to Leviticus",
+      "says": "Explains the Greek-derived title, the book's priestly character and internal development, its continuation of Exodus, its ritual and ethical range, and its major divisions.",
+      "url": "https://bible.usccb.org/bible/leviticus/0"
+    },
+    {
+      "id": "usccb-lev1",
+      "label": "USCCB, Leviticus 1 notes",
+      "says": "Distinguishes lay and priestly actions, identifies several settings for the burnt offering, and cautions that one-handed placement can designate the offerer's animal rather than automatically transferring guilt.",
+      "url": "https://bible.usccb.org/bible/leviticus/1"
+    },
+    {
+      "id": "usccb-pentateuch",
+      "label": "USCCB, Introduction to the Pentateuch",
+      "says": "Distinguishes the narrated Sinai setting and traditional Mosaic reception from historical-critical proposals about Priestly shaping, and notes unresolved questions about the Pentateuch's composition.",
+      "url": "https://bible.usccb.org/bible/thepentateuch/0"
+    },
+    {
+      "id": "usccb-lev3",
+      "label": "USCCB, Leviticus 3 notes",
+      "says": "Explains that shelamim has several possible English labels, describes shared portions of the communion offering, and notes that even the whole-burnt offering excludes the skin.",
+      "url": "https://bible.usccb.org/bible/leviticus/3"
+    },
+    {
+      "id": "usccb-lev4",
+      "label": "USCCB, Leviticus 4 notes",
+      "says": "Distinguishes inadvertent wrong, purification offering, sanctuary cleansing, and ritual cleanness from ordinary dirt.",
+      "url": "https://bible.usccb.org/bible/leviticus/4"
+    },
+    {
+      "id": "usccb-lev13",
+      "label": "USCCB, Leviticus 13 notes",
+      "says": "Warns that older ‘leprosy’ language is misleading for the varied conditions of skin, cloth, and houses in Leviticus 13–14; it does not identify the passages with Hansen's disease.",
+      "url": "https://bible.usccb.org/bible/leviticus/13"
+    },
+    {
+      "id": "usccb-lev16",
+      "label": "USCCB, Leviticus 16 notes",
+      "says": "Discusses purging sacred space, the different meanings of one- and two-handed gestures, and one named interpretation of Azazel; it notes that the annual rite follows chapter 10's priestly deaths.",
+      "url": "https://bible.usccb.org/bible/leviticus/16"
+    },
+    {
+      "id": "usccb-lev17",
+      "label": "USCCB, Leviticus 17 notes",
+      "says": "Reads 17:3–4 as requiring domestic animal slaughter to be brought to the tent, distinguishes hunted game at 17:13, and contrasts Deuteronomy 12's allowance for local food slaughter.",
+      "url": "https://bible.usccb.org/bible/leviticus/17"
+    },
+    {
+      "id": "usccb-lev18",
+      "label": "USCCB, Leviticus 18 notes",
+      "says": "Presents the ancient text's listed sexual and kinship prohibitions, Molech prohibition, and land-defilement frame, with links to chapter 20's penalties.",
+      "url": "https://bible.usccb.org/bible/leviticus/18"
+    },
+    {
+      "id": "usccb-lev20",
+      "label": "USCCB, Leviticus 20 notes",
+      "says": "Gives the chapter's stated penalties and describes the patriarchal family concerns reflected in 20:9–21; it does not translate ancient act prohibitions into modern identity categories.",
+      "url": "https://bible.usccb.org/bible/leviticus/20"
+    },
+    {
+      "id": "usccb-lev25",
+      "label": "USCCB, Leviticus 25 notes",
+      "says": "Explains Jubilee land and release provisions alongside their exceptions, and explicitly notes that 25:44–46 permits permanent foreign slave ownership and inheritance.",
+      "url": "https://bible.usccb.org/bible/leviticus/25"
+    },
+    {
+      "id": "loc-leviticus-scroll",
+      "label": "Library of Congress, Qumran Leviticus Scroll exhibit caption",
+      "says": "Describes fragmentary 11Q1 in paleo-Hebrew script and labels its copy date late second or early first century BCE; other scholarly proposals vary, and the exhibit date is not a composition date.",
+      "url": "https://www.loc.gov/exhibits/scrolls/libr.html"
+    },
+    {
+      "id": "peeters-leviticus-text",
+      "label": "Innocent Himbaza, ‘Introduction: Where Does the Text of Leviticus Stand?,’ in The Text of Leviticus (Peeters), full publisher PDF",
+      "says": "The accessible introduction surveys multiple Hebrew and Greek witnesses, lists 4Q17's Leviticus 1:13–2:1 fragments at approximately 250 BCE, and records divergent dating proposals for 11Q1.",
+      "url": "https://www.peeters-leuven.be/pdf/9789042943452.pdf"
+    },
+    {
+      "id": "ioscs-greek-leviticus",
+      "label": "International Organization for Septuagint and Cognate Studies, critical editions",
+      "says": "Lists the Göttingen critical edition of Greek Leviticus by Wevers and Quast and explains how an edited Greek text differs from reliance on one manuscript.",
+      "url": "https://septuaginta.uni-goettingen.de/ioscs/editions/"
+    },
+    {
+      "id": "thetorah-dietary",
+      "label": "TheTorah.com, ‘Leviticus' More Priestly Version of the Dietary Laws’",
+      "says": "A named scholarly analysis of Leviticus 11's animal categories, contact rules, and relationship to Deuteronomy 14; its compositional sequence remains a proposal.",
+      "url": "https://www.thetorah.com/article/leviticus-more-priestly-version-of-the-dietary-laws"
+    },
+    {
+      "id": "cambridge-sacred-world",
+      "label": "Mark W. Scarlata, ‘The Sacred World,’ publisher abstract (Cambridge University Press)",
+      "says": "The accessible publisher abstract identifies the book's narrative setting and notes historical-critical approaches to Leviticus; it does not supply the chapter's full argument.",
+      "url": "https://www.cambridge.org/core/books/abs/theology-of-the-book-of-leviticus/sacred-world/A71A8A592969739C8BFCA131251BF047"
+    },
+    {
+      "id": "cambridge-atonement",
+      "label": "Mark W. Scarlata, ‘Sin, Sacrifice, and Atonement,’ publisher abstract (Cambridge University Press)",
+      "says": "The accessible abstract identifies offerings and atonement as the chapter's subject. Its keyword list is not treated as an account of the full argument.",
+      "url": "https://www.cambridge.org/core/books/abs/theology-of-the-book-of-leviticus/sin-sacrifice-and-atonement-leviticus-17-16/FC506DD2B8E1F4DE9D210A447D313569"
+    },
+    {
+      "id": "cambridge-purity",
+      "label": "Mark W. Scarlata, ‘Purity and Impurity (Leviticus 11–15),’ publisher abstract (Cambridge University Press)",
+      "says": "The accessible abstract frames Leviticus 11–15 around purity, the home, and God's tent. Individual procedures are checked in the hosted text rather than attributed to the unread chapter.",
+      "url": "https://www.cambridge.org/core/books/abs/theology-of-the-book-of-leviticus/purity-and-impurity-leviticus-1115/700E757AA30B2C1E75AFAC401F556FBD"
+    },
+    {
+      "id": "cambridge-neighbor",
+      "label": "Mark W. Scarlata, ‘Love Your Neighbor (Leviticus 17–22),’ publisher abstract (Cambridge University Press)",
+      "says": "The accessible abstract describes the Holiness collection as bringing household and sanctuary practices together; specific laws are checked in the hosted text.",
+      "url": "https://www.cambridge.org/core/books/abs/theology-of-the-book-of-leviticus/love-your-neighbor-leviticus-1722/FF74D455542EFDBD7807675917F1EB90"
+    },
+    {
+      "id": "watts-offerings",
+      "label": "James W. Watts, ‘The Rhetoric of Sin, Guilt, and Ritual Offerings,’ publisher summary (Cambridge University Press)",
+      "says": "The accessible summary describes how early Christian and later scholarly readings made the sin and guilt offerings paradigms for all Israelite sacrifice. The full chapter was not read.",
+      "url": "https://www.cambridge.org/core/books/abs/ritual-and-rhetoric-in-leviticus/rhetoric-of-sin-guilt-and-ritual-offerings/5555D1366C3C37D074A052E04500FA37"
+    },
+    {
+      "id": "cambridge-rereading-sacrifice",
+      "label": "Naomi Janowitz, ‘Rereading Sacrifice: The Semiosis of Blood’ (Signs and Society, Cambridge Core)",
+      "says": "The accessible article analyzes blood as a purifying sign in Priestly sacrifice and warns against projecting one later theory of substitution backward. Specific live-goat actions are checked in Leviticus 16 itself.",
+      "url": "https://resolve.cambridge.org/core/product/57CC9DC468A990956AC6AE1EAE7679FB/core-reader"
+    },
+    {
+      "id": "yale-leviticus-one",
+      "label": "Yale Bible Study, ‘Leviticus — Part 1’",
+      "says": "The two-page Yale study guide introduces voluntary and required offerings, shared food, holy things, naturally occurring ritual impurity, and sanctuary access.",
+      "url": "https://yalebiblestudy.org/wp-content/uploads/2023/05/Week-2-Leviticus-Part-1.pdf"
+    },
+    {
+      "id": "yale-leviticus-two",
+      "label": "Yale Bible Study, ‘Leviticus Part 2’",
+      "says": "This accessible Yale study guide describes the Day of Atonement's sanctuary and live-goat rites and introduces the Holiness material. Its interpretation of Azazel is one proposal.",
+      "url": "https://yalebiblestudy.org/courses/leviticus-numbers-and-deuteronomy/lessons/leviticus-part-2-study-guide/"
+    },
+    {
+      "id": "cambridge-greek-ot",
+      "label": "The Old Testament in Greek, publisher description (Cambridge University Press)",
+      "says": "The accessible publisher description identifies an ancient Greek version of Hebrew scripture and its Leviticus volume and describes the modern editor's use of multiple Greek manuscripts.",
+      "url": "https://www.cambridge.org/core/books/old-testament-in-greek/26DEFD1C7D7BBFD4F88BD4FE27E6A592"
+    },
+    {
+      "id": "thetorah-holiness",
+      "label": "TheTorah.com, ‘You Shall Be Holy — Israel's Formative and Core Revelation’",
+      "says": "Reads Leviticus 19 as the literary and theological center of the Holiness collection and shows its wide range of practices addressed to the whole Israelite community.",
+      "url": "https://www.thetorah.com/article/you-shall-be-holy-israels-formative-and-core-revelation"
+    },
+    {
+      "id": "thetorah-neighbor",
+      "label": "TheTorah.com, ‘Love Your Neighbor: How It Became the Golden Rule’",
+      "says": "Examines the Hebrew of Leviticus 19:18 and 19:34, including re'a, kamokha, and ger, and distinguishes the resident alien from an undifferentiated modern category of every foreign person.",
+      "url": "https://www.thetorah.com/article/love-your-neighbor-how-it-became-the-golden-rule"
+    },
+    {
+      "id": "thetorah-azazel",
+      "label": "TheTorah.com, ‘Is Azazel a Goat, Place, Demon, or Deity?’",
+      "says": "Surveys the uncertain Hebrew name, the wilderness-being reading, place and removal interpretations, ancient translations, and the later history behind the English word ‘scapegoat.’",
+      "url": "https://www.thetorah.com/article/is-azazel-a-goat-place-demon-or-deity"
+    },
+    {
+      "id": "hosted-oshb",
+      "label": "Hosted Open Scriptures Hebrew Bible and source notes",
+      "says": "The displayed Hebrew forms were checked against the site's word-level Westminster Leningrad Codex data; the public notes identify the pinned source layer and its limits.",
+      "href": "/scriptures/original/SOURCES.md"
+    },
+    {
+      "id": "hosted-web",
+      "label": "Hosted World English Bible and source notes",
+      "says": "The hosted Leviticus file has 27 chapters, 859 verse slots, and 23,181 whitespace-separated English words; cited local wording was checked there.",
+      "href": "/scriptures/SOURCES.md"
+    },
+    {
+      "id": "hosted-brenton",
+      "label": "Hosted Brenton English Septuagint and source notes",
+      "says": "Direct English-edition comparison places WEB 6:1–7 in Brenton 5:20–26. This does not establish priority among ancient textual witnesses.",
+      "href": "/scriptures/SOURCES.md"
+    }
+  ],
+  "howToRead": [
+    { "tip": "Read Exodus 40:34–38 before beginning, then notice that Leviticus opens with a call from the Tent of Meeting rather than a new location.", "refs": ["1:1"] },
+    { "tip": "Mark every change of audience: an Israelite bringing an offering, Aaron and his sons, the priests, or the whole congregation. A repeated rule may change because the responsible actor changed.", "refs": ["1:2", "6:9", "17:2", "19:2", "21:1"] },
+    { "tip": "Build a small offering table from chapters 1–7: name, material, who brings it, who eats it, where blood or grain goes, and the stated result. Compare the purposes of each rite.", "refs": ["1:3", "2:1", "3:1", "4:3", "5:15", "7:37"] },
+    { "tip": "Use 10:10 as a key. Track holy/common separately from unclean/clean, and note the stated procedure for each case.", "refs": ["10:10", "11:47", "12:2", "15:31"] },
+    { "tip": "At chapter 16, underline what receives action: Aaron, the people, the inner sanctuary, the tent, the altar, and the live goat. The objects keep the several parts of atonement from collapsing into one image.", "refs": ["16:6", "16:16", "16:18", "16:20", "16:21", "16:30"] },
+    { "tip": "Read chapter 19 as one speech. Keep Sabbath and sacrifice on the same page as harvest margins, wages, impartial judgment, neighbor-love, and love for the resident alien.", "refs": ["19:2", "19:9", "19:13", "19:15", "19:18", "19:34"] },
+    { "tip": "Begin with Leviticus in its Israelite Torah setting. When comparing later rabbinic, Christian, or modern ethical readings, name the interpreter and retain the earlier text and living Jewish tradition." },
+    { "tip": "At difficult laws, state the actual permission, exclusion, or penalty before discussing later interpretation. Chapter 20 prescribes death for some acts; chapter 21 restricts priests with listed physical conditions; chapter 25 permits permanent ownership of foreign slaves.", "refs": ["20:13", "21:17", "21:23", "25:44", "25:46"] }
+  ],
+  "next": "Continue into Numbers. The camp is counted, arranged around the tabernacle, and finally leaves Sinai, so the spatial and purity logic learned in Leviticus becomes visible on the move. For another Israelite treatment of sanctuary, holiness, priests, and land, compare Ezekiel 40–48. If you later read Hebrews, treat its use of Leviticus as a later Christian interpretation, not as a substitute for first hearing Leviticus within Torah.",
+  "traditionNote": "Leviticus is Torah in Judaism and remains a living text of Jewish study, liturgy, ethics, calendar, and legal interpretation; the absence of the Jerusalem Temple does not make the book or Judaism a discarded preliminary. Christian traditions also receive Leviticus and often read its priestly and sacrificial language through Jesus, but that is later reception and should not be presented as cancelling Israel's scripture or Jewish practice. Catholic, Orthodox, Protestant, Ethiopian, and Armenian routes here all contain 27 chapters. The Orthodox Brenton route follows Greek-based English and numbers the material corresponding to WEB 6:1–7 as 5:20–26, so references near that boundary need an edition label."
+}

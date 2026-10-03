@@ -1,0 +1,220 @@
+{
+  "book": "JUB",
+  "chapter": 47,
+  "bookName": "Jubilees",
+  "summary": "Addressing Moses directly, the angel recounts his birth during Pharaoh's campaign to drown Israelite boys and his preservation through his mother, Miriam, and Pharaoh's daughter Tharmuth. Moses is nursed by Jochebed, taught writing by Amram, and raised at court; after killing an Egyptian who strikes an Israelite, he flees when the killing becomes known.",
+  "whyItMatters": "Moses' survival depends on care that counters royal violence, including compassion from within Pharaoh's household. His later intervention against violence leads to exposure and flight, preparing the return narrated next.",
+  "context": {
+    "author": "In the book's Sinai frame an angel recounts this material to Moses. That narrative speaker is distinct from the historical author, whom this chapter does not identify.",
+    "audience": "Moses receives the account inside the story for Israel and its descendants. The historical work addresses Jewish concerns about covenant, inherited stories, and observance; a specific first community is uncertain.",
+    "date": "The narrative uses a chronology counted from creation within its Sinai revelation frame. The historical work is usually placed in the second century BCE; an exact composition date is not established.",
+    "setting": "Egypt under forced labor and the command against male children: the riverbank, Pharaoh's household, and encounters outside the court.",
+    "literaryForm": "Second-person birth and rescue narrative followed by a compact account of education, killing, and flight."
+  },
+  "readingContext": {
+    "before": {
+      "text": "Israel's growth has been answered with slavery and Egyptian hatred. The oppression now escalates to a command against newborn boys.",
+      "verseRefs": [
+        "46:12-16",
+        "47:1-2"
+      ]
+    },
+    "here": {
+      "text": "The chapter recounts Moses' life to Moses himself, tracing hidden care, adoption, education, and a violent intervention that forces him to leave.",
+      "verseRefs": [
+        "47:1-12"
+      ]
+    },
+    "after": {
+      "text": "After years in Midian, Moses returns to Egypt and faces Mastema's opposition as the plagues and deliverance unfold.",
+      "verseRefs": [
+        "48:1-8"
+      ]
+    }
+  },
+  "outline": [
+    {
+      "heading": "Birth under the drowning command",
+      "verses": "1-3",
+      "note": "The speaker dates Moses’ birth and describes the killing of male children and his mother’s concealment."
+    },
+    {
+      "heading": "Care at the river and royal rescue",
+      "verses": "4-8",
+      "note": "Mother and sister keep the infant alive, and Pharaoh’s daughter arranges for his own mother to nurse him."
+    },
+    {
+      "heading": "Education and court life",
+      "verses": "9",
+      "note": "Amram teaches writing, and Moses becomes part of Pharaoh’s daughter’s household and the court."
+    },
+    {
+      "heading": "A killing exposed and flight",
+      "verses": "10-12",
+      "note": "Moses kills an Egyptian, then hears the act invoked when intervening in another quarrel."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "47:4",
+      "text": "And she made an ark for thee, and covered it with pitch and asphalt, and placed it in the flags on the bank of the river, and she placed thee in it seven days, and thy mother came by night and suckled thee, and by day Miriam, thy sister, guarded thee from the birds.",
+      "why": "The mother’s nighttime nursing and Miriam’s daytime watch make the continuing protection concrete."
+    },
+    {
+      "ref": "47:6",
+      "text": "And she took thee out of the ark, and she had compassion on thee.",
+      "why": "Compassion from Pharaoh’s daughter interrupts the violence commanded by her father."
+    },
+    {
+      "ref": "47:12",
+      "text": "And he was angry and indignant, and said: 'Who made thee a prince and a judge over us? Thinkest thou to kill me as thou killedst the Egyptian yesterday?' And thou didst fear and flee on account of these words.",
+      "why": "The challenge to Moses’ authority reveals the killing is known and directly prompts his flight."
+    }
+  ],
+  "themes": [
+    "infanticide and survival",
+    "maternal and sisterly care",
+    "compassion within the royal house",
+    "writing and education",
+    "violence and flight"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why does the speaker keep saying “thou”?",
+      "answer": "The angel is recounting Moses' own past directly to him. The second-person address brings the recipient of the whole book into the narrated history.",
+      "verseRefs": [
+        "47:1",
+        "47:9-12"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What is Pharaoh’s command?",
+      "answer": "He orders all newborn male children of the oppressed people thrown into the river, and the text describes the policy operating for months. This is organized killing of children, not merely a difficult environment in which Moses happens to be born.",
+      "verseRefs": [
+        "47:1-3"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What is the “ark” made for the infant?",
+      "answer": "It is the container coated with pitch and asphalt and placed among the riverbank plants to hold Moses. In this scene it serves to conceal and protect a single child rather than referring to a large vessel.",
+      "verseRefs": [
+        "47:4-6"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Is Moses simply abandoned at the river?",
+      "answer": "The chapter says his mother returns at night to nurse him and Miriam guards him by day. Their continued care remains part of his survival before Pharaoh's daughter finds him.",
+      "verseRefs": [
+        "47:4-8"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Who is Tharmuth?",
+      "answer": "The chapter gives that name to Pharaoh's daughter, who hears the baby, has him brought out, and shows compassion. With Miriam's intervention, she hires Jochebed, the child's own mother, as his nurse.",
+      "verseRefs": [
+        "47:5-8"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What does the text say about Moses’ education?",
+      "answer": "It specifically credits Amram with teaching him writing before describing his time at the royal court. It does not list a complete curriculum or say that every part of his education came from Egyptian teachers.",
+      "verseRefs": [
+        "47:9"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        9
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Does the account approve Moses’ killing of the Egyptian?",
+      "answer": "It reports that he kills the Egyptian who is striking his Israelite friend and hides the body in sand, but adds no explicit divine approval. The next encounter exposes the killing and challenges his authority, leading to fear and flight.",
+      "verseRefs": [
+        "47:10-12"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        10,
+        11,
+        12
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "ark",
+      "def": "The coated container used to shelter the infant Moses among the riverbank plants."
+    },
+    {
+      "term": "flags",
+      "def": "The plants or reeds along the riverbank where Moses’ container is placed."
+    },
+    {
+      "term": "suckle",
+      "def": "To feed a baby with breast milk, the care Jochebed provides first secretly and later as a hired nurse."
+    }
+  ],
+  "contextSourceIds": [
+    "hosted-charles",
+    "oxford-endres"
+  ],
+  "readingContextSource": {
+    "translation": "charles",
+    "textHash": "c819c59f4b6b16a0782d2a6f7f4bdd574e018a3458282ebc59f3de8ed78f846c"
+  },
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "19e93295affd757b4d9faf77d276487ad1b82ca0b4a1dd062c4001737cafbe36",
+    "generatedAt": "2026-09-29T00:33:02.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent cross-review",
+  "sourceIds": [
+    "charles"
+  ]
+}

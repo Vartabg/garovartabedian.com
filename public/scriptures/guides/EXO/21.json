@@ -1,0 +1,275 @@
+{
+  "book": "EXO",
+  "chapter": 21,
+  "bookName": "Exodus",
+  "summary": "The covenant ordinances begin with rules for purchased Hebrew servants, including different conditions for men, women, and families. The chapter then distinguishes intentional killing from other injuries, regulates violence against enslaved people, and assigns responsibility for dangerous animals and uncovered pits.",
+  "whyItMatters": "The rescued community's law addresses labor, family power, bodily injury, and preventable harm. It imposes some limits on owners while still treating people as property and assigning unequal protections.",
+  "context": {
+    "author": "Exodus does not name its final author. It records Moses writing particular covenant material; traditional Mosaic attribution and modern accounts of composition are distinguished in the book briefing.",
+    "audience": "Israel remembering its rescue from Egypt and its obligations as a covenant community. The chapter does not identify an individual dedicatee.",
+    "date": "The narrative places these events at Sinai after the departure from Egypt. The date of the events and the history of the book’s composition are separate, debated questions.",
+    "setting": "The lawgiving at Sinai after the people ask Moses to mediate God's speech.",
+    "literaryForm": "Case laws introduced by hypothetical situations, combined with brief capital prohibitions and rules of compensation."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "God has announced the commandments, the people have asked Moses to speak to them, and instructions about worship have followed. The ordinances now turn to social and legal relationships.",
+      "verseRefs": [
+        "20:1-26"
+      ]
+    },
+    "here": {
+      "text": "Follow who can leave service, who remains under another's control, and how intent, injury, and prior knowledge change liability.",
+      "verseRefs": [
+        "21:2-11",
+        "21:12-36"
+      ]
+    },
+    "after": {
+      "text": "The next laws extend restitution to theft, damaged crops, and entrusted property, then address sexual relations, worship, and protection of vulnerable people.",
+      "verseRefs": [
+        "22:1-31"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "Release and continuing bondage",
+      "verses": "1-6",
+      "note": "A purchased Hebrew man may leave after six years, but a master-provided wife and children remain."
+    },
+    {
+      "heading": "A sold daughter’s unequal conditions",
+      "verses": "7-11",
+      "note": "Redemption, marriage, maintenance, and release are regulated without abolishing the sale."
+    },
+    {
+      "heading": "Killing, assault on parents, and kidnapping",
+      "verses": "12-17",
+      "note": "Intent and circumstances distinguish cases, and several offenses carry death."
+    },
+    {
+      "heading": "Injury, compensation, and violence against servants",
+      "verses": "18-27",
+      "note": "Recovery costs, punitive violence, proportional harm, and release for lost eyes or teeth are addressed."
+    },
+    {
+      "heading": "A bull that kills a person",
+      "verses": "28-32",
+      "note": "Prior warning changes the owner’s liability, while the death of a servant receives a separate payment rule."
+    },
+    {
+      "heading": "Pits and injured animals",
+      "verses": "33-36",
+      "note": "Owners must bear specified costs for uncovered hazards and dangerous livestock."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "21:4",
+      "text": "If his master gives him a wife and she bears him sons or daughters, the wife and her children shall be her master’s, and he shall go out by himself.",
+      "why": "The release provision leaves a master-provided wife and children in bondage, exposing its limits."
+    },
+    {
+      "ref": "21:21",
+      "text": "Notwithstanding, if his servant gets up after a day or two, he shall not be punished, for the servant is his property.",
+      "why": "The law explicitly invokes ownership to withhold punishment in this case."
+    },
+    {
+      "ref": "21:29",
+      "text": "But if the bull had a habit of goring in the past, and this has been testified to its owner, and he has not kept it in, but it has killed a man or a woman, the bull shall be stoned, and its owner shall also be put to death.",
+      "why": "An owner’s knowledge of a dangerous bull makes preventable harm a matter of serious responsibility."
+    }
+  ],
+  "themes": [
+    "limited release within slavery",
+    "unequal household power",
+    "intent and liability",
+    "bodily harm and restitution",
+    "ownership and punishment",
+    "known hazards"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Does “servant” here mean an ordinary paid employee?",
+      "answer": "The chapter describes buying people, a father selling his daughter, and a master retaining a wife and children. Whatever differences exist among the cases, the text regulates ownership and compelled service rather than a modern employment contract.",
+      "verseRefs": [
+        "21:2-11",
+        "21:20-21"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Can the Hebrew man take every member of his family when released?",
+      "answer": "A wife who entered with him may leave, but a wife supplied by the master and her children remain the master's. His declaration that he will stay may express attachment, yet the legal choice is constrained by the alternative of separation from that family.",
+      "verseRefs": [
+        "21:2-6"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Do the same release rules apply to a sold daughter?",
+      "answer": "The text explicitly says she does not leave as the male servants do. It sets conditions involving redemption, marriage within the household, continued food, clothing, and marital rights, and release if those obligations fail; her sale and unequal position remain part of the law.",
+      "verseRefs": [
+        "21:7-11"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What distinguishes accidental death from planned killing?",
+      "answer": "The ordinances allow a place of refuge for an unintentional killing but deny sanctuary even at the altar to someone who schemes to kill a neighbor. The distinction concerns intent, not simply whether death occurred.",
+      "verseRefs": [
+        "21:12-14"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What penalties apply to kidnapping and attacks on parents?",
+      "answer": "Kidnapping and sale or possession of the victim carry death, as do attacking or cursing a parent. The list places household authority and freedom from kidnapping under severe sanctions within the ancient covenant community.",
+      "verseRefs": [
+        "21:15-17"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Does the rule about beating a servant prohibit all such violence?",
+      "answer": "No. Immediate death under the rod requires punishment, but the WEB says that if the servant gets up after a day or two the owner is not punished because the servant is his property. The passage limits one outcome while accepting ownership and allowing violence that a blanket prohibition would forbid.",
+      "verseRefs": [
+        "21:20-21"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        20,
+        21
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What does the pregnant-woman case say in this edition?",
+      "answer": "The WEB describes a premature birth with no resulting harm as subject to a fine approved by judges; if harm follows, proportionate penalties begin with life for life. The short wording leaves the exact scope of the resulting harm unspecified, which limits how precisely this paragraph answers questions about either the woman or the child.",
+      "verseRefs": [
+        "21:22-25"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "How do the eye and tooth rules affect enslaved people?",
+      "answer": "Destroying a servant's eye or knocking out a tooth requires release. These are concrete remedies against an owner's injury, but they operate within an institution the surrounding rules continue to recognize.",
+      "verseRefs": [
+        "21:26-27"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        26,
+        27
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "Why does prior knowledge matter in the animal cases?",
+      "answer": "A bull's first fatal goring and an owner's failure to restrain a bull known to gore receive different judgments. The closing bull-against-bull rule likewise makes an informed but negligent owner replace the lost animal rather than share the loss equally.",
+      "verseRefs": [
+        "21:28-36"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "awl",
+      "def": "The pointed tool used to pierce the ear in the ceremony of permanent service."
+    },
+    {
+      "term": "ordinances",
+      "def": "The rulings Moses is to set before the people, covering service, violence, and liability."
+    },
+    {
+      "term": "ransom",
+      "def": "The payment that may be imposed to redeem the life of a negligent bull owner."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "d47f094984ca05fd93678717d13b24877bdd37df31ce9e76d8bc756c3d458d50",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

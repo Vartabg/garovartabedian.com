@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#faf8f2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Scripture">
+  <title>Saved Scripture — Read and Keep</title>
+  <meta name="description" content="Your saved Scripture chapters, kept on this device for reading without a connection.">
+  <link rel="manifest" href="/scripture-reader/manifest.webmanifest">
+  <link rel="icon" href="/scripture-reader/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/scripture-reader/icon-192.png">
+  <link rel="stylesheet" href="/scripture-reader/reader.css">
+  <script type="module" src="/scripture-reader/reader.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to reading</a>
+  <header class="shell masthead">
+    <a href="/scriptures">Scripture <span>online library</span></a>
+    <button id="install" hidden type="button">Install reader</button>
+  </header>
+  <main class="shell" id="main">
+    <p class="eyebrow">Read and keep</p>
+    <h1 id="title">Your saved chapters</h1>
+    <p id="edition" class="edition">Scripture, within reach.</p>
+    <p id="status" role="status" aria-live="polite" aria-atomic="true">Opening your saved chapters…</p>
+    <div class="tools" id="tools" hidden>
+      <label>Saved chapter<select id="chapters"></select></label>
+      <div class="sizes" role="group" aria-label="Reading text size">
+        <button id="smaller" type="button" aria-label="Smaller text">A−</button>
+        <output id="size" aria-label="Text size">100%</output>
+        <button id="larger" type="button" aria-label="Larger text">A+</button>
+      </div>
+    </div>
+    <div id="empty" hidden>
+      <p>Open a chapter in the online library and choose <strong>Save chapter offline</strong>. Its text and translation will be kept here, ready when you have no connection.</p>
+      <p><a class="button" href="/scriptures/protestant/JHN/3">Start with John 3 online</a></p>
+    </div>
+    <article id="reading" aria-labelledby="title"></article>
+    <footer id="chapter-footer" hidden>
+      <p id="attribution"></p>
+      <a id="source">Open this chapter online</a>
+      <details class="manage"><summary>Manage this saved chapter</summary><p>Remove this copy from the device. You can save it again from the online library.</p><button id="remove" type="button">Remove saved chapter</button></details>
+    </footer>
+    <details class="install-help"><summary>Keep this reader on your phone</summary><p>On iPhone or iPad, open this page in Safari, tap Share, then Add to Home Screen and choose Open as Web App when offered. On Android, use Install reader above or your browser menu’s Install app / Add to Home screen option.</p><p>Launch the saved icon for a reading window without browser tabs. Save a chapter while connected, then try reopening the reader in airplane mode.</p><p>Text stays in this browser on this device. Clearing website data removes saved chapters. Study tools and audio remain in the online library.</p></details>
+  </main>
+  <footer class="shell closing">Freely received. Freely given. <a href="/">garovartabedian.com</a></footer>
+  <noscript><p class="shell">JavaScript is needed to open locally saved chapters. <a href="/scriptures">Read Scripture online.</a></p></noscript>
+</body>
+</html>

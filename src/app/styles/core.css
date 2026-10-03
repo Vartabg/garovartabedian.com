@@ -1,0 +1,3116 @@
+/* Auto-split from globals.css — edit carefully; keep selector ownership clear. */
+
+/* ── Design tokens ───────────────────────────────────────────────
+   Vellum, soot, lapis and rubric. Gold is reserved for rules and ornament;
+   deep gold is the readable text value. Each world keeps one restrained accent.
+   Shared neutral ramp: --folio/--soot/--muted-ink below are the single source
+   for --surface/--ink/--muted. Worlds set only their --bg tint, --line tint,
+   and --accent family, and inherit the rest via var() — so nav, cards, and
+   footer stop shifting hue on every hop. Dark mode re-maps the same roles in
+   globals.css + worlds-shared.css; see the appearance comment there. */
+:root {
+  --vellum: #e9d9b4;
+  --folio: #f3e8cf;
+  --soot: #221a12;
+  --muted-ink: #5c4e3e;
+  --lapis: #1e3e72;
+  --night-lapis: #172f5a;
+  --rubric: #a6301c;
+  --antique-gold: #c9a24a;
+  --deep-gold: #6b4c12;
+  --bg: var(--vellum);
+  --paper: var(--vellum);
+  --surface: var(--folio);
+  --ink: var(--soot);
+  --muted: var(--muted-ink);
+  --line: #c9b48a;
+  --accent: var(--lapis);
+  --accent-deep: var(--night-lapis);
+  --accent-ink: var(--folio);
+  --night: var(--night-lapis);
+  --gold: var(--antique-gold);
+  /* One scribal voice for Fraunces everywhere: low optical size thickens the
+     hairlines, full SOFT rounds the terminals, WONK lets the pen wobble.
+     A pen, not a press. Worlds differ by ink (--accent), never by cut. */
+  --display-tune: "opsz" 48, "SOFT" 100, "WONK" 1, "wght" 500;
+  --text-tune: "opsz" 18, "SOFT" 60, "WONK" 1, "wght" 430;
+  --heading-tune: var(--display-tune);
+  /* Plates: every render sits in one frame and one hand — ink on vellum by
+     day (multiply), a lit print by lamplight (screen; see globals.css). */
+  --plate-filter: grayscale(1) sepia(0.6) contrast(1.06) brightness(1.06);
+  --plate-blend: multiply;
+  --maxw: 48rem;
+  /* Page frame shared by the site header, home sections, and world shells —
+     one width so chrome edges line up everywhere. Prose keeps --maxw;
+     the world-entry feature card keeps its own 68rem. */
+  --pagew: 82rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+/* Instant jumps for anchor links and scrollIntoView when the visitor asks for
+   less motion — animated scrolling is a vestibular trigger. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Skip link — off-screen until a keyboard user tabs to it, so screen-reader
+   and keyboard visitors can jump past the header straight to the content. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  min-height: 24px;
+  padding: 0.5rem 1rem;
+  background: var(--paper, #fff);
+  color: var(--ink, #111);
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* ── Plates ──────────────────────────────────────────────────────
+   A photograph or render on this site is a plate: a hairline frame on the
+   page's surface, one tone, a caption that says what it is. The tone comes
+   from --plate-filter/--plate-blend so daylight and lamplight each get the
+   right print. Museum works (.artplate) rest as plates and return to their
+   true colour on hover or focus; see worlds-shared.css. */
+.plate {
+  margin: 0;
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.plate-frame {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: var(--plate-ar, 3 / 2);
+  background: var(--surface);
+}
+.plate-frame img {
+  object-fit: cover;
+  filter: var(--plate-filter);
+  mix-blend-mode: var(--plate-blend);
+}
+.plate figcaption {
+  margin: 0.5rem 0.1rem 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+/* A versal set inline: the first letter of a title in gold leaf, bounded by
+   an ink line the way a scribe bounded the gold. Plain ink under high contrast. */
+/* The light in the room: --lx/--ly (0..1) are set from the pointer, or the
+   tilt of a phone, by IlluminatedEffects. Every piece of gold takes its
+   highlight from there, the way real leaf catches whatever light is on it. */
+@property --lx { syntax: "<number>"; inherits: true; initial-value: 0.35; }
+@property --ly { syntax: "<number>"; inherits: true; initial-value: 0.3; }
+html { transition: --lx 160ms ease-out, --ly 160ms ease-out; }
+.versal-inline {
+  position: relative;
+  font-variation-settings: var(--display-tune);
+  font-weight: 600;
+  background:
+    radial-gradient(circle at calc(var(--lx, 0.35) * 100%) calc(var(--ly, 0.3) * 100%), #fff4cc 0%, rgba(255, 244, 204, 0) 38%),
+    linear-gradient(calc(120deg + var(--lx, 0.35) * 80deg), #f2dc8e 0%, var(--gold) 52%, #8f6d22 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--deep-gold);
+}
+.versal-live {
+  cursor: default;
+}
+.versal-vines {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: visible;
+  opacity: 0;
+  transition: opacity 450ms ease;
+}
+.versal-tendril {
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 900ms cubic-bezier(0.3, 0, 0.2, 1);
+}
+.versal-leaf {
+  stroke: #8f6d22;
+  stroke-width: 0.5;
+  transition: opacity 400ms ease;
+}
+.versal-berry {
+  transition: opacity 400ms ease;
+}
+/* The cross marks are gold leaf too. */
+.st-cross-mark::before,
+.st-cross-mark::after {
+  background:
+    radial-gradient(circle at calc(var(--lx, 0.35) * 100%) calc(var(--ly, 0.3) * 100%), #fff4cc 0%, rgba(255, 244, 204, 0) 45%),
+    linear-gradient(calc(120deg + var(--lx, 0.35) * 80deg), #f2dc8e, var(--gold) 55%, #8f6d22);
+}
+/* Letters that breathe: font-variation-settings animate fine on inline
+   spans — real text, read once by screen readers and crawlers. (inline-box
+   letters make some screen readers spell the title out.) */
+.breathe [data-letter] {
+  display: inline;
+}
+/* The lamp: a warm pool that follows the hand in lamplight, the vellum fibre
+   showing inside it. Never under high contrast or reduced motion. */
+.lamp {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: none;
+  pointer-events: none;
+  opacity: 0.35;
+  --px: 50vw;
+  --py: 40vh;
+  background:
+    radial-gradient(36rem 36rem at var(--px) var(--py), rgba(255, 196, 110, 0.11) 0%, rgba(255, 196, 110, 0) 60%),
+    radial-gradient(56rem 56rem at var(--px) var(--py), rgba(10, 7, 4, 0) 28%, rgba(10, 7, 4, 0.34) 100%);
+}
+.lamp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.95 0 0 0 0 0.82 0 0 0 0 0.6 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+  -webkit-mask-image: radial-gradient(22rem 22rem at var(--px) var(--py), #000 0%, transparent 70%);
+  mask-image: radial-gradient(22rem 22rem at var(--px) var(--py), #000 0%, transparent 70%);
+}
+html[data-a11y-theme="dark"] .lamp {
+  display: block;
+}
+@media (prefers-color-scheme: dark) {
+  html[data-a11y-theme="system"] .lamp {
+    display: block;
+  }
+}
+html[data-a11y-contrast="high"] .lamp,
+html[data-a11y-motion="reduce"] .lamp {
+  display: none;
+}
+/* Reading and search keep a steady page luminance, including before hydration.
+   The remaining glow is only a subdued decorative effect on other pages. */
+html[data-a11y-theme] body:has([data-reading-surface], .world-reading-page, .scr-search-stage, .find-root) .lamp,
+html[data-reading-monochrome="true"] .lamp {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  /* Outranks the theme rules above, which carry an attribute selector. */
+  .lamp, html[data-a11y-theme] .lamp { display: none; }
+  html { transition: none; }
+  .versal-vines, .versal-tendril, .versal-leaf, .versal-berry { transition: none; }
+}
+html[data-a11y-motion="reduce"] :is(.versal-vines, .versal-tendril, .versal-leaf, .versal-berry) {
+  transition: none;
+}
+html[data-a11y-contrast="high"] .versal-inline {
+  background: none;
+  color: inherit;
+  -webkit-text-stroke: 0;
+}
+
+/* ── Layout ──────────────────────────────────────────────────── */
+.wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: var(--pagew);
+  min-height: 4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.site-header .nav {
+  justify-content: flex-end;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.nav a {
+  white-space: nowrap;
+}
+.nav a:hover {
+  color: var(--ink);
+}
+
+main {
+  padding: 4rem 0 5rem;
+}
+
+@media (max-width: 640px) {
+  .site-header .wrap {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .nav {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.55rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .world-header .wrap {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 3.5rem;
+  }
+  .world-header .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: normal;
+    line-height: 1.25;
+  }
+
+  main {
+    padding: 3rem 0 4rem;
+  }
+}
+
+/* ── Shared site navigation ────────────────────────────────────
+   One predictable map now spans the home, every content world, and the
+   portfolio pages. Local world guides still handle room-to-room movement. */
+.site-navigation {
+  --site-nav-text: var(--muted);
+  --site-nav-hover: var(--ink);
+  --site-nav-active: var(--accent);
+  --site-menu-bg: var(--surface);
+  --site-menu-text: var(--ink);
+  --site-menu-muted: var(--muted);
+  --site-menu-line: var(--line);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  margin-left: auto;
+  color: var(--site-nav-text);
+  font-size: 0.9rem;
+}
+
+.site-nav-direct {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.site-nav-direct > a,
+.site-nav-menu > summary,
+.site-nav-find {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 2px;
+  color: var(--site-nav-text);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.site-nav-find {
+  gap: 0.4rem;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 700;
+}
+
+.site-nav-find-kbd {
+  display: none;
+  min-height: 1.25rem;
+  align-items: center;
+  padding: 0.08rem 0.32rem;
+  border: 1px solid color-mix(in srgb, var(--site-nav-text) 35%, transparent);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.site-nav-direct > a:hover,
+.site-nav-menu > summary:hover,
+.site-nav-menu[open] > summary,
+.site-nav-find:hover,
+.site-nav-find[aria-expanded="true"] {
+  background: color-mix(in srgb, var(--site-nav-hover) 8%, transparent);
+  color: var(--site-nav-hover);
+}
+
+.site-nav-direct > a[aria-current="page"] {
+  color: var(--site-nav-active);
+  box-shadow: inset 0 -2px var(--site-nav-active);
+}
+
+.site-nav-menu {
+  position: relative;
+}
+
+.site-nav-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.site-nav-menu.has-current > summary {
+  color: var(--site-nav-active);
+}
+
+.site-nav-summary-mobile {
+  display: none;
+}
+
+.site-nav-chevron {
+  width: 0.42rem;
+  height: 0.42rem;
+  margin: -0.2rem 0 0 0.48rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 150ms ease;
+}
+
+.site-nav-menu[open] .site-nav-chevron {
+  margin-top: 0.15rem;
+  transform: rotate(225deg);
+}
+
+.site-nav-panel {
+  position: absolute;
+  z-index: 120;
+  top: calc(100% + 0.65rem);
+  right: 0;
+  display: grid;
+  grid-template-columns: minmax(18rem, 1.65fr) repeat(3, minmax(10rem, 1fr));
+  gap: 1.25rem;
+  width: min(62rem, calc(100vw - 2rem));
+  max-height: min(76vh, 43rem);
+  padding: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--site-menu-line);
+  border-radius: 4px;
+  background: var(--site-menu-bg);
+  box-shadow: 0 20px 60px rgb(0 0 0 / 28%);
+  color: var(--site-menu-text);
+}
+
+.site-nav-panel-head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--site-menu-line);
+}
+
+.site-nav-panel-head strong {
+  font-size: 1.05rem;
+}
+
+.site-nav-panel-head span {
+  color: var(--site-menu-muted);
+  font-size: 0.82rem;
+  text-align: right;
+}
+
+.site-nav-group h2 {
+  margin: 0 0 0.65rem;
+  padding: 0;
+  border: 0;
+  color: var(--site-menu-muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.site-nav-group-links {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.site-nav-group--worlds .site-nav-group-links {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.site-nav-group a {
+  display: flex;
+  min-height: 2.75rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.08rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 2px;
+  color: var(--site-menu-text);
+  line-height: 1.25;
+}
+
+.site-nav-group a:hover,
+.site-nav-group a[aria-current="page"] {
+  background: color-mix(in srgb, var(--site-nav-active) 10%, transparent);
+  color: var(--site-nav-active);
+}
+
+.site-nav-group a[aria-current="page"] {
+  box-shadow: inset 3px 0 var(--site-nav-active);
+}
+
+.site-nav-group a strong {
+  font-size: 0.88rem;
+}
+
+.site-nav-group a span {
+  color: var(--site-menu-muted);
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+@media (min-width: 761px) {
+  .site-nav-find-kbd {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .site-nav-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* The direct links only fit this range at the default type. Turn on the
+     dyslexic face, a larger size, or extra spacing and the row grows past the
+     viewport — on an iPad at 834px the header pushed the document to 872px,
+     so the whole page scrolled sideways and the fixed accessibility button sat
+     over content that swallowed the tap. The reader who most needs that button
+     could not get back to it.
+
+     Every one of these links is already in the Explore menu beside them, so
+     collapsing the row costs nothing and keeps the page from scrolling. */
+  :root[data-a11y-font="dyslexic"] .site-nav-direct,
+  :root[data-a11y-size="large"] .site-nav-direct,
+  :root[data-a11y-size="largest"] .site-nav-direct,
+  :root[data-a11y-spacing="spacious"] .site-nav-direct {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header .wrap,
+  .clean .site-header .wrap {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 4rem;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+
+  .site-header .brand {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .site-nav-direct {
+    display: none;
+  }
+
+  .site-nav-summary-desktop {
+    display: none;
+  }
+
+  .site-nav-summary-mobile {
+    display: inline;
+  }
+
+  .site-nav-find-kbd {
+    display: none;
+  }
+
+  .site-nav-menu > summary,
+  .site-nav-find {
+    min-height: 2.75rem;
+    padding-inline: 0.8rem;
+    border: 1px solid color-mix(in srgb, var(--site-nav-text) 35%, transparent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .site-nav-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(38rem, calc(100vw - 2rem));
+    max-height: calc(100svh - 6rem);
+  }
+}
+
+@media (max-width: 520px) {
+  .site-nav-panel {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .site-nav-panel-head {
+    display: block;
+  }
+
+  .site-nav-panel-head span {
+    display: block;
+    margin-top: 0.2rem;
+    text-align: left;
+  }
+
+  .site-nav-group--worlds .site-nav-group-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.site-footer .wrap {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  justify-content: space-between;
+}
+
+/* ── Typography ──────────────────────────────────────────────── */
+.kicker {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 450;
+  font-variation-settings: var(--display-tune);
+  font-size: 1.02rem;
+  letter-spacing: 0;
+}
+h1 {
+  font-size: clamp(2.2rem, 6vw, 3.1rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin: 0 0 1rem;
+  font-weight: 800;
+}
+.lede {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin: 0 0 2rem;
+  max-width: 38rem;
+}
+h2 {
+  font-size: 0.85rem;
+  letter-spacing: 0;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 3.5rem 0 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+p {
+  margin: 0 0 1.1rem;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.textlink {
+  color: var(--accent);
+  font-weight: 600;
+}
+.textlink:hover {
+  text-decoration: underline;
+}
+
+/* ── Work cards ──────────────────────────────────────────────── */
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 1.4rem 1.5rem;
+}
+.card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.card p {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.tag {
+  font-size: 0.78rem;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.2rem 0.65rem;
+}
+.work-cards {
+  margin-top: 1.5rem;
+}
+.work-card {
+  scroll-margin-top: 5rem;
+}
+.case-cards {
+  margin: 1.5rem 0 0;
+}
+.work-links {
+  color: var(--accent) !important;
+  font-weight: 700;
+}
+.work-links a:hover {
+  text-decoration: underline;
+}
+
+/* ── Contact list ────────────────────────────────────────────── */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 1rem;
+}
+.contact-list li {
+  display: flex;
+  flex-direction: column;
+}
+.contact-list .label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.contact-list .value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.note {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* ── World wayfinding ────────────────────────────────────────── */
+.world-guide {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--accent) 7%, transparent), transparent 68%),
+    color-mix(in oklab, var(--surface) 94%, var(--bg) 6%);
+  padding: 0.9rem 1rem;
+  margin: 0 0 2rem;
+}
+.wg-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.wg-breadcrumb a:hover {
+  color: var(--accent);
+}
+.wg-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 0.85rem;
+}
+.wg-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.wg-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 0.32rem 0.72rem;
+}
+.wg-nav a:hover,
+.wg-nav a[aria-current="page"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 8%, transparent);
+}
+.wg-source {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin: 0;
+}
+.wg-source strong {
+  color: var(--ink);
+}
+.wg-source a {
+  color: var(--accent);
+  font-weight: 700;
+}
+.wg-source a:hover {
+  text-decoration: underline;
+}
+.wg-source-disclosure {
+  border-top: 1px solid var(--line);
+  padding-top: 0.65rem;
+}
+.wg-mobile-menu,
+.wg-worlds-link {
+  display: none;
+}
+.wg-source-disclosure summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+.wg-source-disclosure .wg-source {
+  margin-top: 0.55rem;
+}
+.world-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(15rem, 0.85fr);
+  margin: 1.75rem 0 2.5rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  background: var(--surface);
+}
+.world-entry-lead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+.world-entry-eyebrow,
+.world-entry-paths > p {
+  margin: 0 0 0.45rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: none;
+}
+.world-entry-lead h2 {
+  margin: 0;
+  border-bottom: 0;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.15;
+  text-transform: none;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+.world-entry-note {
+  max-width: 36rem;
+  margin: 0.65rem 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+.world-entry-primary {
+  --control-radius: 2px;
+  --button-primary-bg: var(--accent);
+  --button-primary-fg: var(--accent-ink);
+  --button-primary-border: var(--accent);
+  --button-primary-hover: var(--accent-deep);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-width: min(100%, 16rem);
+  min-height: 3rem;
+  margin-top: 0;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 800;
+}
+.world-entry-primary span:last-child {
+  font-size: 1.2em;
+  line-height: 1;
+}
+.world-entry-paths {
+  min-width: 0;
+  border-left: 1px solid var(--line);
+  padding: 1.25rem;
+  background: color-mix(in oklab, var(--accent) 4%, var(--surface));
+}
+.world-entry-paths ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.world-entry-paths li + li {
+  border-top: 1px solid var(--line);
+}
+.world-entry-path {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.3rem 0.75rem;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: 0.65rem 0.25rem;
+}
+.world-entry-path > span {
+  display: grid;
+  gap: 0.08rem;
+}
+.world-entry-path strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+.world-entry-path small {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+html[data-a11y-size="largest"] .world-entry-path small,
+html[data-a11y-spacing="spacious"] .world-entry-path small {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+.world-entry-path em {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.world-entry-path:hover strong {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+@media (max-width: 700px) {
+  .world-entry {
+    grid-template-columns: 1fr;
+  }
+  .world-entry-paths {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+}
+.world-focus-anchor {
+  scroll-margin-top: 2rem;
+}
+.world-disclosure {
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  margin: 2rem 0;
+  overflow: clip;
+  scroll-margin-top: 1.5rem;
+}
+.world-disclosure > summary {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 3rem 1rem 1.05rem;
+}
+.world-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+.world-disclosure > summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 1.05rem;
+  color: var(--accent);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+.world-disclosure[open] > summary::after {
+  content: "−";
+}
+.world-disclosure > summary:hover {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+.world-disclosure > summary:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 28%, transparent);
+  outline-offset: -3px;
+}
+.world-disclosure > summary strong {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+.world-disclosure > summary span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+.world-disclosure[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+.world-disclosure-content {
+  padding: 0.35rem 1rem 1.25rem;
+}
+.world-disclosure-content > .scr-cards:first-child,
+.world-disclosure-content > .ew-era-nav:first-child,
+.world-disclosure-content > .wd-collision:first-child {
+  margin-top: 1rem;
+}
+.world-disclosure--deep {
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent 45%),
+    var(--surface);
+}
+.world-disclosure--deep > summary strong {
+  color: var(--accent);
+}
+.world-next {
+  border-top: 1px solid var(--line);
+  margin: 3.75rem 0 0;
+  padding-top: 1.2rem;
+}
+.world-next-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.85rem;
+  text-transform: none;
+}
+.world-next-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.75rem;
+}
+.world-next-grid a {
+  display: block;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  padding: 0.85rem 0.95rem;
+}
+.world-next-grid a:hover {
+  border-color: var(--accent);
+}
+.world-next-grid strong,
+.world-next-grid span {
+  display: block;
+}
+.world-next-grid strong {
+  color: var(--ink);
+  line-height: 1.25;
+}
+.world-next-grid span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0.25rem;
+}
+
+/* ── Source credibility layer ────────────────────────────────── */
+.source-basis {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--accent) 6%, transparent), transparent 70%),
+    color-mix(in oklab, var(--surface) 94%, var(--bg) 6%);
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+  padding: 1rem;
+}
+.source-basis p {
+  color: var(--muted);
+  margin: 0;
+}
+.source-basis-kicker,
+.source-group-kicker {
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.25rem;
+  text-transform: none;
+}
+.source-basis .source-basis-title {
+  border-bottom: 0;
+  color: var(--ink);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  letter-spacing: 0;
+  margin: 0 0 0.35rem;
+  padding-bottom: 0;
+  text-transform: none;
+}
+.source-basis-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+}
+.source-basis-list div {
+  border-top: 1px solid color-mix(in oklab, var(--line) 70%, transparent);
+  padding-top: 0.55rem;
+}
+.source-basis-list dt {
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.source-basis-list dd {
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0.1rem 0 0;
+}
+.source-basis-link {
+  align-self: start;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 800;
+  justify-self: start;
+  padding: 0.34rem 0.75rem;
+}
+.source-basis-link:hover {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 8%, transparent);
+}
+.source-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.2rem 0 2rem;
+}
+.source-index a {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+  padding: 0.32rem 0.72rem;
+}
+.source-index a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.source-page-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.source-build-card {
+  margin-top: 1rem;
+}
+.clean .source-build-card h2 {
+  border-bottom: 0;
+  color: var(--ink);
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  margin: 0 0 0.35rem;
+  padding-bottom: 0;
+  text-transform: none;
+}
+.source-group {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  padding: 1.1rem;
+  scroll-margin-top: 1.5rem;
+}
+.source-page-grid .source-group h2,
+.source-page-grid .source-group h3 {
+  margin-bottom: 0.35rem;
+}
+.source-page-grid .source-group h2 {
+  border-bottom: 0;
+  color: var(--ink);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  letter-spacing: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  text-transform: none;
+}
+.source-page-grid .source-group h3 {
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-variation-settings: normal;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.source-group p,
+.source-method,
+.source-links p {
+  color: var(--muted);
+}
+.source-method,
+.source-links {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+.source-method li + li {
+  margin-top: 0.4rem;
+}
+.source-links {
+  display: grid;
+  gap: 0.7rem;
+  list-style: none;
+  padding-left: 0;
+}
+.source-links li {
+  border-top: 1px solid var(--line);
+  padding-top: 0.7rem;
+}
+.source-links a {
+  color: var(--accent);
+  font-weight: 800;
+}
+.source-links a:hover {
+  text-decoration: underline;
+}
+.source-links p {
+  font-size: 0.93rem;
+  line-height: 1.45;
+  margin: 0.2rem 0 0;
+}
+.source-pill {
+  border: 1px solid color-mix(in oklab, var(--accent) 35%, var(--line));
+  border-radius: 2px;
+  color: var(--accent-deep);
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-left: 0.4rem;
+  padding: 0.08rem 0.42rem;
+  text-transform: uppercase;
+  vertical-align: 0.08rem;
+}
+
+@media (min-width: 760px) {
+  .wg-grid {
+    grid-template-columns: minmax(14rem, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+  }
+
+  .source-basis {
+    grid-template-columns: minmax(0, 1.05fr) minmax(13rem, 0.95fr);
+  }
+
+  .source-basis-link {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Desktop rail: the world's map stays pinned beside the rooms.
+     The wrap widens and the rail takes the extra space, so the content
+     column keeps its reading width. Browsers without :has() keep the
+     stacked layout. ─────────────────────────────────────────────── */
+@media (min-width: 1100px) {
+  main > .wrap:has(> .world-guide) {
+    max-width: calc(var(--maxw) + 16.75rem);
+    display: grid;
+    grid-template-columns: 14rem minmax(0, 1fr);
+    column-gap: 2.75rem;
+  }
+  main > .wrap:has(> .world-guide) > * {
+    grid-column: 2;
+  }
+  main > .wrap:has(> .world-guide) > .world-guide {
+    grid-column: 1;
+    grid-row: 1 / span 40;
+    align-self: start;
+    position: sticky;
+    top: 1.25rem;
+    margin-bottom: 0;
+    max-height: calc(100vh - 2.5rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  main > .wrap:has(> .world-guide) .wg-grid {
+    grid-template-columns: 1fr;
+  }
+  main > .wrap:has(> .world-guide) .wg-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3rem;
+  }
+  main > .wrap:has(> .world-guide) .wg-nav a {
+    border-color: transparent;
+    border-radius: 0.4rem;
+    padding: 0.34rem 0.6rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .world-guide {
+    position: sticky;
+    z-index: 35;
+    top: max(0.45rem, env(safe-area-inset-top));
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.45rem;
+    padding: 0.4rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 8px 22px color-mix(in srgb, var(--ink) 14%, transparent);
+  }
+
+  .wg-breadcrumb,
+  .wg-grid {
+    display: none;
+  }
+
+  .wg-mobile-menu,
+  .wg-worlds-link {
+    display: block;
+  }
+
+  .wg-mobile-menu {
+    min-width: 0;
+  }
+
+  .wg-mobile-menu summary {
+    display: grid;
+    align-content: center;
+    min-height: 2.75rem;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--line);
+    background: color-mix(in oklab, var(--accent) 6%, var(--surface));
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .wg-mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .wg-mobile-menu summary span {
+    color: var(--muted);
+    font-size: 0.63rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .wg-mobile-menu summary strong {
+    overflow: hidden;
+    color: var(--ink);
+    font-size: 0.9rem;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .wg-mobile-menu[open] {
+    max-height: calc(100dvh - 1rem - env(safe-area-inset-top));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .wg-mobile-menu > nav {
+    display: grid;
+    margin-top: 0.4rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  .wg-mobile-menu > nav a {
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.45rem 0.7rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .wg-mobile-menu > nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .wg-mobile-menu > nav a[aria-current="page"] {
+    color: var(--accent);
+    background: color-mix(in oklab, var(--accent) 8%, var(--surface));
+  }
+
+  .wg-mobile-menu .wg-source-disclosure {
+    margin-top: 0.4rem;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  .wg-worlds-link {
+    align-content: center;
+    min-height: 2.75rem;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .source-index a,
+  .source-basis-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .source-pill {
+    margin: 0.35rem 0 0;
+  }
+}
+
+/* ── Inline glossary ─────────────────────────────────────────────
+   Dotted terms in world prose open a short in-place explanation, so a reader
+   who hits an ancient name or old translation wording never leaves the page.
+   This is the documented WCAG 2.5.8 inline-text target exception: enlarging
+   the control box would break the sentence's line layout. */
+.gloss {
+  position: relative;
+  display: inline;
+}
+.gloss-term {
+  appearance: none;
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline dotted
+    color-mix(in oklab, var(--accent) 65%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.gloss-term[aria-expanded="true"] {
+  color: var(--accent);
+  text-decoration-style: solid;
+}
+@media (hover: hover) and (pointer: fine) {
+  .gloss-term:hover {
+    color: var(--accent);
+    text-decoration-style: solid;
+  }
+}
+.gloss-term:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.gloss-pop {
+  /* Portaled to <body> and positioned inline (document coordinates) —
+     see Gloss.tsx. Containment on host containers (content-visibility)
+     clips popovers painted inside them. */
+  position: absolute;
+  transform: translateX(calc(-50% + var(--gx, 0px)));
+  z-index: 60; /* above prose and plates, below the version switcher (z 100) */
+  width: min(21rem, calc(100vw - 2rem));
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--accent) 6%, transparent), transparent 70%),
+    color-mix(in oklab, var(--surface) 97%, var(--bg) 3%);
+  box-shadow: 0 10px 28px color-mix(in oklab, var(--ink) 18%, transparent);
+  padding: 0.7rem 0.8rem;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+  cursor: auto;
+}
+.gloss-pop-caret {
+  position: absolute;
+  top: -0.3rem;
+  left: calc(50% - var(--gx, 0px));
+  width: 0.55rem;
+  height: 0.55rem;
+  transform: translateX(-50%) rotate(45deg);
+  background: color-mix(in oklab, var(--surface) 97%, var(--bg) 3%);
+  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+}
+.gloss-pop.is-above .gloss-pop-caret {
+  top: auto;
+  bottom: -0.3rem;
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.gloss-pop-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+.gloss-pop-term {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+}
+.gloss-pop-kind {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.gloss-pop-say {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: italic;
+  margin-top: 0.05rem;
+}
+.gloss-pop-def {
+  display: block;
+  margin-top: 0.3rem;
+}
+.gloss-hint {
+  color: var(--muted);
+  font-size: 0.84rem;
+  margin: 0.35rem 0 0;
+}
+.gloss-hint::before {
+  content: "◌ ";
+  color: var(--accent);
+}
+
+/* ── Professional profile and case-study hero ──────────────── */
+.hire-hero {
+  max-width: 42rem;
+}
+.hire-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.1rem 0 0;
+}
+.hire-jump a {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 0.35rem 0.8rem;
+}
+.hire-jump a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.hire-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.75rem;
+  margin: 2rem 0 0;
+}
+.hire-facts > div {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 0.5rem;
+  padding: 0.95rem 1rem;
+}
+.hire-facts .label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.hire-facts .value {
+  display: block;
+  margin-top: 0.2rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.labs-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+}
+.hire-proof-more {
+  margin: 1.25rem 0 0;
+}
+.labs-fact {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 0.5rem;
+  padding: 0.95rem 1rem;
+}
+.labs-fact dt {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--accent);
+}
+.labs-fact dd {
+  margin: 0.35rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.labs-embeds {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0;
+}
+.labs-embed {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  overflow: hidden;
+}
+.labs-embed figcaption {
+  padding: 0.95rem 1rem;
+}
+.labs-embed figcaption h3 {
+  margin: 0;
+}
+.labs-embed figcaption p {
+  margin: 0.5rem 0 0;
+  max-width: 46rem;
+}
+.labs-embed iframe {
+  display: block;
+  width: 100%;
+  height: clamp(20rem, 60vh, 34rem);
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+.hire-reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.85rem;
+  margin: 1.5rem 0 0;
+}
+.hire-reasons article {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  background: color-mix(in oklab, var(--surface) 92%, var(--accent) 8%);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 1.05rem;
+}
+.hire-reasons h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.hire-reasons p {
+  color: var(--muted);
+  font-size: 0.96rem;
+  margin: 0;
+}
+.hire-proof-links {
+  color: var(--accent) !important;
+  font-weight: 700;
+}
+.hire-proof-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .hire-hero .btn,
+  .hire-hero .ui-button,
+  .hire-jump a {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card h3 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HOME — content-first front door
+   A cross-led threshold: Christ, Scripture, the record, investigations.
+   ═══════════════════════════════════════════════════════════════ */
+.v-root.v-story {
+  --home-night: #14100b;
+  --home-night-soft: #111b25;
+  --home-ink: var(--ink);
+  --home-muted: var(--muted);
+  --home-cloud: var(--folio);
+  --home-white: #eedfc2;
+  --home-gold: #cda652;
+  --home-line: var(--line);
+  --home-width: 82rem;
+  padding-bottom: 0;
+  /* The page is vellum; the walks and the worlds paint their own night panels. */
+  background: var(--bg);
+}
+
+.story {
+  min-height: 100vh;
+  background: var(--bg);
+  background-image: none;
+  color: var(--home-white);
+}
+
+.st-nav {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, var(--home-width));
+  min-height: 5.5rem;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  color: var(--ink);
+}
+
+.st-home-mark,
+.st-foot-cross {
+  display: inline-grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  place-items: center;
+  color: var(--home-white);
+}
+
+.st-home-mark {
+  border: 1px solid color-mix(in srgb, var(--deep-gold) 45%, var(--line));
+  border-radius: 50%;
+  background: transparent;
+  color: var(--deep-gold);
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.st-home-mark:hover {
+  border-color: var(--deep-gold);
+  background: color-mix(in srgb, var(--gold) 12%, transparent);
+  transform: translateY(-1px);
+}
+
+.st-cross-mark {
+  position: relative;
+  display: block;
+  width: 1.25rem;
+  height: 1.75rem;
+}
+
+.st-cross-mark::before,
+.st-cross-mark::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: currentColor;
+}
+
+.st-cross-mark::before {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.st-cross-mark::after {
+  top: 0.55rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.st-nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.86rem;
+  font-weight: 650;
+  letter-spacing: 0.025em;
+}
+
+.st-nav-links > .site-nav-direct > a,
+.st-nav-links > .site-nav-menu > summary,
+.st-nav-links > .site-nav-find {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0 0.8rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.st-nav-links > .site-nav-direct > a:hover,
+.st-nav-links > .site-nav-menu > summary:hover,
+.st-nav-links > .site-nav-find:hover,
+.st-nav-links > .site-nav-find[aria-expanded="true"] {
+  color: var(--ink);
+}
+
+.st-nav .site-navigation {
+  --site-nav-text: var(--muted);
+  --site-nav-hover: var(--ink);
+  --site-nav-active: var(--accent);
+  --site-menu-bg: var(--surface);
+  --site-menu-text: var(--ink);
+  --site-menu-muted: var(--muted);
+  --site-menu-line: var(--line);
+}
+
+.st-nav-links .site-nav-panel a {
+  color: var(--site-menu-text);
+}
+
+/* The builder's line. It takes the band the page already left between the nav
+   and the rule (main's own top padding), so the hero keeps its place. */
+.story > main {
+  padding-top: 0;
+}
+
+.st-builder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.6rem;
+  width: min(100%, var(--home-width));
+  min-height: 4rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.st-builder a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--deep-gold) 55%, transparent);
+  text-underline-offset: 0.22em;
+}
+
+.st-builder a:hover {
+  text-decoration-color: var(--deep-gold);
+}
+
+@media (max-width: 640px) {
+  .st-builder {
+    min-height: 3rem;
+  }
+}
+
+/* Too narrow for one row: the link drops under the name and the dot goes. */
+@media (max-width: 30rem) {
+  .st-builder {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0.75rem;
+  }
+
+  .st-builder-sep {
+    display: none;
+  }
+}
+
+.st-frontispiece {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 34rem);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  width: min(100%, var(--home-width));
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4.5rem) 2rem clamp(2rem, 4vw, 3.5rem);
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.st-frontispiece-plate {
+  --plate-ar: 3 / 2;
+  align-self: center;
+}
+
+@media (max-width: 899px) {
+  .st-frontispiece {
+    grid-template-columns: 1fr;
+  }
+
+  .st-front-title {
+    font-size: clamp(2.4rem, 11vw, 4rem);
+  }
+
+  .st-frontispiece-plate {
+    max-width: 34rem;
+  }
+}
+
+.st-front {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.st-label {
+  margin: 0 0 0.85rem;
+  color: var(--rubric);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 450;
+  font-variation-settings: var(--display-tune);
+  font-size: 1.05rem;
+  letter-spacing: 0;
+}
+
+.st-front-title {
+  max-width: 9ch;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 7.5vw, 6.5rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  view-transition-name: front-title;
+}
+
+@supports (view-transition-name: root) {
+  ::view-transition-old(front-title),
+  ::view-transition-new(front-title) {
+    animation-duration: 220ms;
+  }
+}
+
+.st-front-text {
+  max-width: 34rem;
+  margin: 1.5rem 0 0;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.35vw, 1.12rem);
+  line-height: 1.68;
+}
+
+.st-front-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.st-front-explore {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: clamp(1.75rem, 4vh, 3rem);
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.st-front-explore span {
+  color: var(--home-gold);
+  font-size: 1rem;
+  transition: transform 160ms ease;
+}
+
+.st-front-explore:hover {
+  color: var(--ink);
+}
+
+.st-front-explore:hover span {
+  transform: translateY(3px);
+}
+
+.st-scripture {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(30rem, 1.2fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  width: min(100%, var(--home-width));
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 4rem) 2rem;
+  background: var(--home-cloud);
+  color: var(--home-ink);
+}
+
+/* No backdrop gradient here: a %-stop gradient moves with total page height,
+   so any shorter/taller section above once dropped white-on-night text onto
+   the cloud half (invisible headings and links in the walks). Every home
+   section paints its own panel; the story backdrop stays solid night. */
+
+/* The three section headings share one display size. The walks heading was
+   left out of this list once and rendered at 13.6px. */
+.st-scripture-heading h2,
+.st-paths-heading h2,
+.st-worlds-heading h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+/* This panel is always light, so its heading must take the panel's ink rather
+   than the theme-aware `--muted` the bare `h2` rule hands down — that token
+   flips to the dark-theme value and drops the headline to 1.8:1 on a white
+   card for every visitor whose OS is set to dark. `.st-worlds-heading h2`
+   pins its own color the same way below. */
+.st-scripture-heading h2 {
+  color: var(--home-ink);
+}
+
+.st-scripture-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--home-line);
+  border-left: 1px solid var(--home-line);
+}
+
+.st-scripture-action {
+  position: relative;
+  display: flex;
+  min-height: 5.5rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem 3rem 1.25rem 1.5rem;
+  border-right: 1px solid var(--home-line);
+  border-bottom: 1px solid var(--home-line);
+  color: var(--home-ink);
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.st-scripture-action::after {
+  position: absolute;
+  top: 50%;
+  right: 1.35rem;
+  margin-top: -0.7rem;
+  content: "↗";
+  color: #805e1f;
+  font-size: 1.05rem;
+  transition: transform 180ms ease;
+}
+
+.st-scripture-action strong {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 650;
+  line-height: 1.15;
+}
+
+.st-scripture-action:hover {
+  background: var(--home-ink);
+  color: var(--home-white);
+}
+
+.st-scripture-action:hover::after,
+.st-scripture-action:focus-visible::after {
+  color: var(--home-gold);
+  transform: translate(3px, -3px);
+}
+
+.st-worlds {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(2.75rem, 5vw, 4.5rem) max(2rem, calc((100vw - var(--home-width)) / 2));
+  background: var(--home-night-soft);
+  color: var(--home-white);
+}
+
+.st-worlds-heading {
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.st-worlds-heading h2 {
+  color: var(--home-white);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 650ms ease, transform 650ms ease;
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Scroll-driven reveals: where the browser supports view timelines, the
+   fade/rise follows scroll position on the compositor — no JavaScript, and
+   sections still reveal with JS disabled. Elsewhere the IntersectionObserver
+   hook adds .in exactly as before, so this is strictly progressive. */
+@supports (animation-timeline: view()) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    animation: st-reveal-in 650ms ease both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+  }
+}
+
+@keyframes st-reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Ordered rail — the eight worlds as one walk, not card grids. One row at a
+   time: the row's only tint is its world's accent mixed toward white (the
+   dark panel needs the lift; same trick as the hero index), so palettes
+   never collide. Vocabulary mirrors .st-path-steps. */
+.st-rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgb(255 255 255 / 14%);
+}
+.st-rail-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr) auto;
+  gap: 0.5rem 1.25rem;
+  align-items: baseline;
+  padding: 1.15rem 0.5rem;
+  border-bottom: 1px solid rgb(255 255 255 / 14%);
+}
+.st-rail-num {
+  color: color-mix(in srgb, var(--rail-accent) 45%, #fff);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.st-rail-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.st-rail-title {
+  width: fit-content;
+  color: var(--home-white);
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.st-rail-title:hover {
+  border-bottom-color: color-mix(in srgb, var(--rail-accent) 65%, #fff);
+}
+/* The whole row is the target: one link stretched over it, so hover,
+   keyboard focus, and touch all agree on where "here" goes. */
+.st-rail-title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.st-rail-line {
+  color: rgb(251 252 250 / 62%);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  max-width: 44rem;
+}
+.st-rail-go {
+  color: color-mix(in srgb, var(--rail-accent) 65%, #fff);
+  font-size: 1.2rem;
+  font-weight: 700;
+  transform: translateX(0);
+  transition: transform 160ms ease;
+}
+.st-rail-row:hover .st-rail-go {
+  transform: translateX(6px);
+}
+.st-rail-row:hover {
+  background: rgb(255 255 255 / 3%);
+}
+/* Keyboard users get the same row-level feedback as hover. */
+.st-rail-row:has(.st-rail-title:focus-visible) {
+  background: rgb(255 255 255 / 3%);
+}
+.st-rail-row:has(.st-rail-title:focus-visible) .st-rail-go {
+  transform: translateX(6px);
+}
+@media (max-width: 640px) {
+  .st-rail-row {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+  }
+  .st-rail-go {
+    display: none;
+  }
+}
+
+.st-foot {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(12rem, 0.65fr);
+  gap: 3rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 4rem max(2rem, calc((100vw - var(--home-width)) / 2));
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--home-night);
+  color: rgba(251, 252, 250, 0.6);
+  font-size: 0.8rem;
+}
+
+.st-foot > div {
+  display: flex;
+  max-width: 34rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.st-foot p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.st-foot-cross {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex-basis: 2.4rem;
+}
+
+.st-foot-cross .st-cross-mark {
+  transform: scale(0.78);
+}
+
+.st-foot nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.st-foot nav a {
+  display: inline-flex;
+  min-height: 2.2rem;
+  align-items: center;
+  color: rgba(251, 252, 250, 0.72);
+  text-decoration: none;
+}
+
+.st-foot nav a:hover {
+  color: var(--home-white);
+}
+
+.st-foot-author {
+  grid-column: 1 / -1;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(251, 252, 250, 0.62);
+}
+
+@media (max-width: 900px) {
+  .st-scripture {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .st-worlds-heading > h2 {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 640px) {
+  .st-nav {
+    min-height: 4.75rem;
+    padding: 1rem;
+  }
+
+  .st-nav-links {
+    gap: 0;
+    font-size: 0.74rem;
+  }
+
+  .st-nav-links > .site-nav-direct > a,
+  .st-nav-links > .site-nav-menu > summary,
+  .st-nav-links > .site-nav-find {
+    min-height: 2.75rem;
+    padding: 0 0.45rem;
+  }
+
+  .st-front-title {
+    max-width: 8ch;
+    font-size: clamp(3.25rem, 17vw, 5rem);
+  }
+
+  .st-front-text {
+    max-width: 29rem;
+    margin-top: 1.15rem;
+    font-size: 0.96rem;
+  }
+
+  .st-front-actions {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .st-intro-primary,
+  .st-intro-secondary {
+    flex: 1 1 10rem;
+  }
+
+  .st-front-explore {
+    margin-top: 1.6rem;
+  }
+
+  .st-scripture {
+    gap: 1.5rem;
+    padding: 2.5rem 1rem;
+  }
+
+  .st-scripture-heading h2,
+  .st-paths-heading h2,
+  .st-worlds-heading h2 {
+    font-size: clamp(2.5rem, 12vw, 3.6rem);
+  }
+
+  .st-worlds-heading h2 {
+    font-size: clamp(2.35rem, 10vw, 3.4rem);
+  }
+
+  .st-scripture-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .st-scripture-action {
+    min-height: 4rem;
+    padding: 1rem 3rem 1rem 1.25rem;
+  }
+
+  .st-worlds {
+    padding: 2.75rem 1rem;
+  }
+
+  .st-foot {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 1rem;
+  }
+
+  .st-foot-author {
+    grid-column: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+
+  .st-home-mark,
+  .st-intro-primary,
+  .st-intro-secondary,
+  .st-front-explore span,
+  .st-scripture-action,
+  .st-scripture-action::after,
+  .st-rail-go {
+    transition: none;
+  }
+
+  .st-home-mark:hover,
+  .st-intro-primary:hover,
+  .st-intro-secondary:hover,
+  .st-front-explore:hover span,
+  .st-scripture-action:hover::after,
+  .st-scripture-action:focus-visible::after,
+  .st-rail-row:hover .st-rail-go {
+    transform: none;
+  }
+}
+
+/* SEO / no-JS supplement — present in HTML, visually hidden. */
+.sr-fallback {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SHAPE-SHIFTER — version root, themes, switcher, transitions
+   The visitor flips versions and the same spine re-skins live. A theme is just
+   a CSS-variable block on .v-root, so most version flips are one class swap.
+   ═══════════════════════════════════════════════════════════════ */
+.v-root {
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  /* Clearance for the fixed .vsw dock so version footers are never occluded
+     (plan: switcher mobile affordance). */
+  padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+}
+.v-root:has(.vsw[data-world-switcher="true"]) {
+  padding-bottom: 0;
+}
+
+/* ── Theme: Story — parchment + scriptures gold (anchor + SSR default) ── */
+.v-root.v-story {
+  --paper: var(--vellum);
+  --surface: var(--folio);
+  --ink: var(--soot);
+  --muted: var(--muted-ink);
+  --line: #c9b48a;
+  --accent: var(--lapis);
+  --accent-deep: var(--night-lapis);
+  --accent-ink: var(--folio);
+  --font-display: var(--font-fraunces), var(--font-reading);
+}
+html[data-a11y-font="dyslexic"] .v-root.v-story,
+html[data-a11y-font="system"] .v-root.v-story {
+  --font-display: var(--font-reading);
+}
+.v-root.v-story :is(h1, h2, h3, .st-front-title, .st-h2) {
+  font-variation-settings: var(--display-tune);
+}
+
+/* ── Version switcher — always-present "view" dock ── */
+.vsw {
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: calc(100vw - 1.5rem);
+  padding: 0.4rem 0.55rem 0.4rem 0.9rem;
+  border-radius: 2px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.16);
+  animation: vsw-in 0.6s 0.4s both;
+}
+:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word) {
+  --world-dock-clearance: calc(5.25rem + env(safe-area-inset-bottom));
+}
+:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word) main {
+  padding-bottom: calc(5rem + var(--world-dock-clearance));
+}
+:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word) .site-footer .wrap {
+  padding-bottom: calc(2rem + var(--world-dock-clearance));
+}
+:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word):has(.vsw[data-world-switcher="true"]) {
+  --world-dock-clearance: 0rem;
+}
+@keyframes vsw-in {
+  from { opacity: 0; transform: translate(-50%, 14px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+.vsw-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 450;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  user-select: none;
+  white-space: nowrap;
+}
+/* Swatch glyph — three overlapping dots read instantly as "appearance / theme". */
+.vsw-swatch {
+  display: inline-flex;
+}
+.vsw-swatch i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--paper);
+}
+.vsw-swatch i:nth-child(1) { background: var(--accent); }
+.vsw-swatch i:nth-child(2) { background: var(--ink); margin-left: -4px; }
+.vsw-swatch i:nth-child(3) { background: var(--line); margin-left: -4px; }
+.vsw-cell {
+  display: inline-flex;
+  align-items: center;
+}
+.vsw-track {
+  display: flex;
+  gap: 0.15rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  /* Edge fade as a scroll affordance — the scrollbar is hidden, so on narrow
+     phones this is the only hint that more versions exist off-screen. */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 0.85rem,
+    #000 calc(100% - 0.85rem),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 0.85rem,
+    #000 calc(100% - 0.85rem),
+    transparent
+  );
+}
+.vsw-track::-webkit-scrollbar {
+  display: none;
+}
+.vsw-opt {
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  padding: 0.45rem 0.85rem;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.2s ease;
+}
+.vsw-opt:hover {
+  color: var(--ink);
+}
+.vsw-opt.is-active {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+.vsw-opt:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.vsw[data-world-switcher="true"] {
+  --world-tone: var(--accent);
+  --world-tone-ink: var(--accent-ink);
+  position: relative;
+  inset: auto;
+  left: auto;
+  bottom: auto;
+  transform: none;
+  width: max-content;
+  margin: 1rem auto;
+  animation: none;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+}
+.vsw[data-world-switcher="true"] .vsw-opt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+}
+.vsw[data-world-switcher="true"] .vsw-opt:hover {
+  color: var(--world-tone);
+  background: color-mix(in srgb, var(--world-tone) 10%, transparent);
+}
+.vsw[data-world-switcher="true"] .vsw-opt.is-active {
+  color: var(--world-tone-ink);
+  background: var(--world-tone);
+}
+.vsw-world-mark {
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 50%;
+  background: var(--world-tone);
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--world-tone) 12%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, white 28%, transparent);
+  flex: none;
+}
+.vsw-opt.is-active .vsw-world-mark {
+  background: var(--world-tone-ink);
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--world-tone-ink) 18%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, var(--world-tone) 18%, transparent);
+}
+.vsw[data-world-switcher="true"] .vsw-hint {
+  top: auto;
+  bottom: calc(100% + 0.55rem);
+  max-width: min(30rem, calc(100vw - 1.4rem));
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
+  /* Cap the caption at two lines so its footprint above the dock stays
+     bounded (it can't creep up over page content). The frosted chip now
+     carries legibility, so the old naked text-shadow is dropped. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-shadow: none;
+}
+.vsw[data-world-switcher="true"][data-coach="true"] .vsw-hint {
+  opacity: 0;
+}
+/* Always-visible hint caption — updates on hover / focus / selection, so touch
+   and keyboard users get the preview a hover-only tooltip never gave them.
+   It floats outside the fixed dock, so it must be a self-contained surface:
+   a frosted chip that hugs its text and reads over any page background (text
+   or image) instead of bleeding raw glyphs over the content beneath it. */
+.vsw-hint {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: min(90vw, 26rem);
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  opacity: 0.96;
+}
+/* First-run coachmark — shown once, then remembered. */
+.vsw-coach {
+  --coach-surface: color-mix(in srgb, var(--accent) 55%, #17130d);
+  --coach-ink: #fffdf7;
+  position: absolute;
+  bottom: calc(100% + 0.6rem);
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: min(22rem, calc(100vw - 2rem));
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  color: var(--coach-ink);
+  background: var(--coach-surface);
+  border-radius: 2px;
+  padding: 0.5rem 0.6rem 0.5rem 0.95rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  animation: vsw-coach-in 0.4s ease both, vsw-coach-pulse 2.4s ease-in-out 0.6s infinite;
+}
+.vsw-coach::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--coach-surface);
+}
+.vsw-coach-x {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--control-target-min);
+  height: var(--control-target-min);
+  font-size: 0.7rem;
+  color: var(--coach-ink);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .vsw-coach-x:hover {
+    background: rgba(255, 255, 255, 0.35);
+  }
+}
+@keyframes vsw-coach-in {
+  from { transform: translate(-50%, 6px); }
+  to { transform: translate(-50%, 0); }
+}
+@keyframes vsw-coach-pulse {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vsw-coach { animation: none; }
+}
+@media (max-width: 640px) {
+  .vsw-coach {
+    display: none;
+  }
+  .vsw[data-world-switcher="true"] {
+    width: calc(100vw - 0.9rem);
+    padding-left: 0.55rem;
+    background: color-mix(in srgb, var(--paper) 94%, transparent);
+  }
+  .vsw[data-world-switcher="true"] .vsw-label {
+    display: none;
+  }
+  .vsw[data-world-switcher="true"] .vsw-opt {
+    padding: 0.48rem 0.7rem;
+  }
+  .vsw[data-world-switcher="true"] .vsw-hint {
+    max-width: calc(100vw - 1.4rem);
+    bottom: calc(100% + 0.36rem);
+    line-height: 1.25;
+  }
+  :where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word) main {
+    padding-bottom: calc(4rem + var(--world-dock-clearance));
+  }
+}
+
+@media (any-pointer: coarse) {
+  :root {
+    --tap-target: var(--control-target-coarse);
+  }
+
+  :where(
+    .st-nav-links a,
+    .site-nav-find,
+    .wg-nav a,
+    .a11y-close,
+    .a11y-size-options button,
+    .scr-btn,
+    .scr-bar button,
+    .scr-bar a,
+    .scr-sheet button,
+    .scr-sheet select,
+    .scr-toolbar select,
+    .scr-topic-bars button,
+    .scr-topics-az button,
+    .ap-section-links a,
+    .ch-section-links a,
+    .ap-dive-controls button,
+    .ch-dive-controls button,
+    .ew-catalog-eras button,
+    .hw-claim-filters button,
+    .jsu-word-bar,
+    .jsu-map-view-switch button,
+    .jsu-terrain-modes button,
+    .jsu-terrain-reset,
+    .jsu-terrain-era-nav button,
+    .jsu-journey-console button,
+    .jsu-map-event-card button,
+    .jsu-terrain-map .maplibregl-ctrl-group button,
+    .jsu-terrain-map .maplibregl-ctrl-attrib-button,
+    .orig-line-toggle,
+    .scr-ask-clear,
+    .word-search-clear,
+    .scr-original-token button,
+    .scr-word-inspector-head button,
+    .vsw-coach-x,
+    .vsw-opt
+  ) {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target) !important;
+    min-width: var(--tap-target) !important;
+  }
+}
+
+/* ── Turning the leaf (View Transitions API; progressive enhancement) ──
+   The page turns instead of blinking: the old leaf folds away to the left and
+   the new one settles from the right. Same-document transitions come from the
+   worlds dock; full loads opt in below. Nothing moves under reduced motion. */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root) {
+  animation: leaf-out 220ms cubic-bezier(0.4, 0, 0.7, 1) both;
+  transform-origin: 0% 50%;
+}
+::view-transition-new(root) {
+  animation: leaf-in 260ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  transform-origin: 0% 50%;
+}
+@keyframes leaf-out {
+  to {
+    transform: perspective(1400px) rotateY(-10deg) translateX(-2%);
+    opacity: 0;
+  }
+}
+@keyframes leaf-in {
+  from {
+    transform: perspective(1400px) rotateY(8deg) translateX(2%);
+    opacity: 0;
+  }
+}
+html[data-a11y-motion="reduce"]::view-transition-group(*),
+html[data-a11y-motion="reduce"]::view-transition-old(*),
+html[data-a11y-motion="reduce"]::view-transition-new(*) {
+  animation: none !important;
+}
+
+/* ── The reading thread and the pen ──────────────────────────────── */
+.reading-thread {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 100%;
+  height: 2px;
+  background: var(--rubric);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+@supports (animation-timeline: scroll()) {
+  .reading-thread {
+    animation: reading-thread linear both;
+    animation-timeline: scroll(root);
+  }
+}
+@keyframes reading-thread {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.write-in {
+  animation: write 720ms cubic-bezier(0.3, 0, 0.2, 1) both;
+}
+@keyframes write {
+  from { clip-path: inset(-0.25em 100% -0.25em 0); }
+  to { clip-path: inset(-0.25em 0 -0.25em 0); }
+}
+/* The eternity wheel beside a heading turns once over the length of the page. */
+.wheel {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+  color: var(--gold);
+  vertical-align: middle;
+}
+@supports (animation-timeline: scroll()) {
+  .wheel {
+    animation: wheel-turn linear both;
+    animation-timeline: scroll(root);
+  }
+}
+@keyframes wheel-turn {
+  to { rotate: 1turn; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reading-thread { display: none; }
+  .write-in, .wheel { animation: none; }
+}
+html[data-a11y-motion="reduce"] .reading-thread { display: none; }
+html[data-a11y-motion="reduce"] :is(.write-in, .wheel) { animation: none; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+  .vsw {
+    animation: none;
+  }
+}
+
+/* ── Accessible display type ────────────────────────────────────────
+   Display type follows the visitor's reading choice. Weight, scale, pigment,
+   and ruled space create hierarchy without forcing a decorative serif —
+   Fraunces (self-hosted variable font) only when the visitor hasn't opted
+   into the dyslexic or system reading mode below; those keep the font they
+   asked for. Lives here (not worlds-shared.css) because .clean (/hire,
+   /about, /resume, /work, /services, /contact) needs it too, and core.css
+   loads everywhere. */
+.world-scr,
+.world-jesus,
+.world-apostles,
+.world-early,
+.world-word,
+.world-church,
+.world-angels,
+.clean {
+  --font-display: var(--font-fraunces), var(--font-reading);
+}
+html[data-a11y-font="dyslexic"] :is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .clean),
+html[data-a11y-font="system"] :is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .clean) {
+  --font-display: var(--font-reading);
+}
+:is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .clean)
+  :is(h1, h2, h3) {
+  font-family: var(--font-display);
+  font-variation-settings: var(--display-tune);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+/* Rubrics: on the clean pages the section h2 is the scribe's red heading —
+   Fraunces italic in vermilion, sentence case, no tracking. */
+.clean h2 {
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 450;
+  letter-spacing: 0;
+  color: var(--rubric);
+}
+/* The ancient voice: scripture and the first-century texts read in the
+   serif at text optical size — you can see where the old words begin. */
+:is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels)
+  :is(.scr-verse, .ew-section p, .jsu-quote, blockquote) {
+  font-family: var(--font-display);
+  font-variation-settings: var(--text-tune);
+}
+/* Ledger numerals: the years are part of the record. */
+.world-word :is(.wd-year, .wd-case-year, .wd-abbr),
+.world-early .ew-tl-year {
+  font-family: var(--font-display);
+  font-variation-settings: var(--display-tune);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Light-page grain ──────────────────────────────────────────────
+   The portfolio rooms retain a restrained paper surface. The content-first
+   homepage intentionally uses flat, photographic planes instead. */
+.clean {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(64rem 30rem at 18% 0, color-mix(in oklab, var(--accent) 5%, transparent), transparent 72%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+}
+
+/* Walks through the record — the front door's second section. Numbered lists
+   rather than cards: a walk is a sequence, and the shape should say so before
+   the words do. Plain links throughout; nothing here runs in the browser. */
+.st-paths {
+  padding: clamp(2.5rem, 5vw, 4rem) clamp(1.1rem, 5vw, 4rem);
+  /* Explicit night panel: the walks are white-on-night by design and must
+     never inherit the page backdrop, whatever sits above or below them. */
+  background: var(--home-night);
+  color: var(--home-white);
+  /* Night muted (9.4:1 on the panel): the shared --muted serves light paper
+     and lands at 2.9:1 here, so notes, numbers, and lines re-scope it. */
+  --muted: #bbb5aa;
+}
+#paths-h {
+  color: var(--home-white);
+}
+.st-paths-heading {
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+.st-paths-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* One row per walk: the title, then its steps left to right. A walk is a
+   sequence, so it reads as one. */
+.st-path {
+  display: grid;
+  grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr);
+  gap: 0.35rem 2rem;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+.st-path:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.st-path h3 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+.st-path-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0;
+}
+.st-path-steps li {
+  display: inline-flex;
+  align-items: baseline;
+}
+.st-path-steps a {
+  padding-block: 0.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.st-path-steps a:hover {
+  border-bottom-color: var(--accent);
+}
+.st-path-arrow {
+  margin: 0 0.65rem;
+  /* Scheme-independent: the section never leaves the night background, so
+     warm-light text can't depend on the reader's color scheme. #b9b3a8 on
+     #091018 ≈ 8.6:1. */
+  color: #b9b3a8;
+}
+@media (max-width: 640px) {
+  .st-path {
+    grid-template-columns: 1fr;
+  }
+}

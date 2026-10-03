@@ -1,0 +1,243 @@
+{
+  "book": "LUK",
+  "bookName": "Luke",
+  "oneLine": "The first volume of Luke–Acts: an orderly, Scripture-saturated account in which Jesus brings God's promised salvation to Israel, the poor, sinners, and the nations on a road that leads through Jerusalem.",
+  "orient": "Luke contains the annunciation, the manger and shepherds, the Good Samaritan, the lost son, Zacchaeus, the criminal promised paradise, and the Emmaus road. Those scenes are not a loose anthology of compassion. A formal preface promises investigated order; paired birth stories root Jesus in Israel's promises; Galilean ministry announces good news to the poor; and at 9:51 Jesus ‘sets his face’ toward Jerusalem. The journey occupies almost half the Gospel and trains disciples in prayer, possessions, hospitality, reversal, repentance, and costly mercy. Volume two, Acts, resumes in Jerusalem and carries the witness outward.",
+  "whereYouAre": "The story moves through Roman-ruled Judea and Galilee under client rulers, governors, taxation, military power, and the Jerusalem temple. Luke dates scenes by Herod, Augustus, Tiberius, Pilate, and local tetrarchs while narrating them in the language of Israel's Greek Scriptures. Synagogues, Sabbath, pilgrimage festivals, purity, almsgiving, meals, patronage, debt, slavery, and village honor all shape what happens. Jerusalem is more than scenery: the Gospel begins and ends at the temple, Jesus journeys there knowingly, and Acts will depart from it toward the nations.",
+  "facts": {
+    "writtenBy": "Anonymous within both volumes. The ancient title, Irenaeus, and the Muratorian Fragment identify the author as Luke, Paul's physician-companion; the work itself claims careful dependence on earlier eyewitness testimony but never gives its writer's name.",
+    "writtenWhen": "Most current scholarship dates Luke after Mark and after Jerusalem's destruction in AD 70, commonly around AD 80–90. Earlier dates in the 60s and later dates into the early second century remain defended; the book supplies synchronisms for its story, not a date for its own publication.",
+    "writtenFor": "The named recipient is ‘most excellent Theophilus,’ already instructed in the message. The two volumes address a wider Greek-reading audience that needs assurance about the continuity from Israel's promises through Jesus to a mission among the nations.",
+    "place": "The place of composition is unknown. Proposals include Achaia, Asia Minor, Syria, and Rome; the text's eastern-Mediterranean reach and Greek literacy do not identify one city.",
+    "covers": "From announcements before the births of John and Jesus through Jesus's childhood, ministry, journey to Jerusalem, death, resurrection, appearances, and ascension. Acts repeats the ascension as the hinge into the church's witness.",
+    "size": "24 chapters, 1,151 verses, and about 24,400 words in the World English Bible hosted here."
+  },
+  "language": {
+    "writtenIn": "Educated Koine Greek. Luke and Acts form a sustained Greek composition with shared vocabulary and narrative habits. The Gospel can sound formally Hellenistic in its preface, scripturally Semitic in its infancy narrative, and more ordinary in dialogue and action; that range is literary control, not evidence that whole surviving sections were first written in different languages.",
+    "register": "Luke is the New Testament's most conspicuous register-switcher. The single periodic sentence at 1:1–4 resembles conventional Greek prefaces. At 1:5 the voice turns toward the Septuagint's cadence — repeated ‘and it happened,’ angelic announcements, parallel births, hymns, and scriptural phrases — before settling into fluent narrative Koine. Speeches and parables can be plain and memorable while the narrator supplies carefully ordered transitions and geographic purpose.",
+    "spokenWorld": "Aramaic was a major daily language in Galilee and Judea; Hebrew remained alive in Scripture, prayer, and learned religious use; Greek served administration, commerce, cities, diaspora communities, and many Jewish readers; Latin belonged especially to Roman power. Luke normally renders speech in Greek and often substitutes a Greek explanation for a Semitic term. A Greek sentence can preserve Semitic idiom without proving that its exact wording is a transcript translated from Aramaic.",
+    "readerSignal": "Theophilus is expected to recognize formal Greek address and follow long scriptural patterns. Luke translates or replaces some local terms, explains customs selectively, and traces Jesus's ancestry to Adam, signals consistent with readers beyond Palestine. Yet the book assumes Israel's Scriptures are their indispensable story; Gentile inclusion is narrated through Israel, not around or against it.",
+    "englishLayer": "This site displays the World English Bible, a modern translation of the Greek textual tradition. Its 11 uses of ‘today’ match the Greek sēmeron closely, while counts such as ‘must’ depend more heavily on English choices. Punctuation, paragraph breaks, red letters, capitalization, and quotation marks are editorial. Where early Greek witnesses differ — notably 2:14, the Lord's Prayer, 22:19b–20, 22:43–44, 23:34, and several resurrection details — the hosted wording represents one textual decision rather than the only form Christians have read.",
+    "textualHistory": [
+      {
+        "label": "Luke–Acts composed as a Greek two-volume work",
+        "language": "Koine Greek shaped by Hellenistic prose and the Septuagint",
+        "role": "composition",
+        "description": "Luke's preface names prior narratives, eyewitness transmission, investigation, order, and a recipient; Acts 1:1 explicitly refers back to the ‘first book.’ Shared style and narrative continuities make the volumes one project even though the later four-Gospel arrangement separates them.",
+        "sourceIds": ["usccb-luke", "adams-preface", "original-sblgnt"]
+      },
+      {
+        "label": "A text transmitted in more than one early form",
+        "language": "Greek manuscripts and ancient translations",
+        "role": "section",
+        "description": "Third-century P75 preserves much of Luke and John; fourth-century Codex Sinaiticus preserves Luke within a complete New Testament. Copyists, editors, and communities transmitted recognizable but not letter-for-letter identical forms, producing several famous longer/shorter readings concentrated in Luke's prayer, meal, passion, and resurrection material.",
+        "sourceIds": ["p75", "sinaiticus", "whitlark-23-34", "chadwick-22"]
+      },
+      {
+        "label": "The source layer and English edition on this site",
+        "language": "SBL Greek New Testament with MorphGNT data; modern English World English Bible",
+        "role": "translation",
+        "description": "The word inspector exposes a critically edited Greek text and morphology; the reader displays the WEB. Neither is an autograph or a facsimile of one manuscript. The pairing lets readers verify Greek repetition and inspect variants without pretending that an English gloss exhausts a word's range.",
+        "sourceIds": ["original-sblgnt", "hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "A formal Greek preface gives way to biblical cadence",
+        "original": "Ἐπειδήπερ πολλοὶ ἐπεχείρησαν … ἔδοξε κἀμοί — Epeidēper polloi epecheirēsan … edoxe kamoi — ‘Since many undertook … it seemed good to me also’",
+        "explanation": "Luke 1:1–4 is one carefully balanced sentence using the conventions of Greek preface-writing: predecessors, subject, transmission, investigation, arrangement, dedicatee, and purpose. Verse 5 abruptly begins ‘There was in the days of Herod,’ and the infancy scenes adopt Scripture-like coordination, parallel episodes, and hymnic language. Luke can inhabit both literary worlds.",
+        "translationNote": "English necessarily breaks or lightens the long opening period, so the stylistic drop into the Zechariah scene is less audible. ‘Orderly’ translates kathexēs, which can mean a coherent sequence and does not promise a modern chronological transcript of every event.",
+        "caution": "The contrast does not settle whether Luke used Semitic sources, imitated the Septuagint, wrote in a bilingual environment, or combined all three. Current linguistic work warns against calling every biblical-sounding Greek phrase a literal translation from Hebrew or Aramaic.",
+        "refs": ["1:1", "1:2", "1:3", "1:4", "1:5", "2:1"],
+        "sourceIds": ["adams-preface", "hogeterp-denaux", "usccb-luke1", "original-sblgnt"]
+      },
+      {
+        "title": "καὶ ἐγένετο (kai egeneto): ‘and it happened’ makes Greek sound like Scripture",
+        "original": "καὶ ἐγένετο — kai egeneto — ‘and it happened / and it came to pass’",
+        "explanation": "The sequence appears 34 times in the hosted SBL Greek data, especially in the infancy narrative and at major scene transitions. It echoes the Septuagint's way of rendering Hebrew wayhi and lets Luke's story sound continuous with biblical narrative even when its grammar remains Greek.",
+        "translationNote": "The WEB often keeps ‘it happened’ or ‘it came to pass’; many contemporary translations reduce it to ‘when,’ ‘one day,’ or nothing. Smoother English therefore hides a deliberate scriptural rhythm and makes Luke sound more uniformly modern than he is.",
+        "caution": "The formula alone cannot prove a Hebrew source behind a verse. Luke can imitate a familiar Greek biblical style, inherit source language, or use a construction that had become at home in Jewish Greek storytelling.",
+        "refs": ["1:23", "1:41", "2:15", "5:12", "9:18", "11:1", "17:11", "19:29", "24:15", "24:30"],
+        "sourceIds": ["hogeterp-denaux", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "δεῖ (dei): the journey unfolds under divine necessity",
+        "original": "δεῖ — dei — ‘it is necessary / must’",
+        "explanation": "Jesus ‘must’ be in his Father's concerns, preach other cities, suffer, go on toward Jerusalem, fulfill Scripture, and rise. The impersonal verb does not name the agent, but Luke's plot supplies it: God's saving purpose is moving through chosen obedience, rejection, death, resurrection, and witness.",
+        "translationNote": "English ‘must’ can sound like external compulsion or fate. In Luke it often marks theological necessity — what belongs to God's faithful plan — without making the human actors puppets or Jesus unwilling.",
+        "caution": "Not every English ‘must’ represents dei, and the same Greek verb can express ordinary necessity. Context distinguishes divine plan from practical obligation; frequency is not a code by itself.",
+        "refs": ["2:49", "4:43", "9:22", "13:33", "17:25", "19:5", "22:37", "24:7", "24:26", "24:44"],
+        "sourceIds": ["usccb-luke", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "σήμερον (sēmeron): salvation keeps arriving ‘today’",
+        "original": "σήμερον — sēmeron — ‘today’",
+        "explanation": "Luke uses the word eleven times. A Savior is born ‘today’; Scripture is fulfilled ‘today’; Zacchaeus must receive Jesus and salvation comes to his house ‘today’; the crucified criminal will be with Jesus ‘today.’ The repetition collapses promised salvation into a present encounter that demands response.",
+        "translationNote": "Because ‘today’ looks ordinary, readers can miss that Luke plants it at programmatic turning points. The word sometimes marks a literal day and sometimes carries narrative-theological emphasis; those senses reinforce rather than cancel each other.",
+        "caution": "The comma in 23:43 is editorial because ancient manuscripts did not punctuate like modern English. Most interpreters attach ‘today’ to ‘you will be with me,’ but groups that punctuate ‘I tell you today’ should be acknowledged as a later interpretive dispute, not hidden in the Greek letters themselves.",
+        "refs": ["2:11", "4:21", "5:26", "13:32", "13:33", "19:5", "19:9", "23:43"],
+        "sourceIds": ["usccb-luke", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "σῴζω and σωτηρία: healing, rescue, and salvation share one field",
+        "original": "σῴζω / σωτηρία / σωτήρ — sōzō / sōtēria / sōtēr — ‘save, heal, rescue / salvation / savior’",
+        "explanation": "Luke's salvation vocabulary moves from Israel's hoped-for deliverance in the hymns to Jesus as Savior, bodily healings, forgiveness, restored community, Zacchaeus's household, the cross, and worldwide proclamation. When Jesus tells a healed person ‘your faith has saved you,’ physical wholeness and restored relationship intentionally overlap.",
+        "translationNote": "English often chooses ‘made well’ in healing scenes and ‘saved’ in theological ones. That is readable, but it divides a Greek word family through which Luke lets bodily, social, and eschatological rescue illuminate one another.",
+        "caution": "The word does not make every healing identical with final salvation, nor does it reduce salvation to physical cure. The scene identifies what kind of rescue is foregrounded while the larger narrative widens the field.",
+        "refs": ["1:69", "1:77", "2:11", "2:30", "7:50", "8:48", "17:19", "18:42", "19:9", "19:10"],
+        "sourceIds": ["usccb-luke", "usccb-luke1", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "The road to Jerusalem turns geography into discipleship",
+        "original": "τὸ πρόσωπον ἐστήρισεν τοῦ πορεύεσθαι εἰς Ἰερουσαλήμ — to prosōpon estērisen tou poreuesthai eis Ierousalēm — ‘he set his face to go to Jerusalem’",
+        "explanation": "At 9:51 Jesus deliberately turns toward the city, and journey verbs recur through the long central section. Meals, disputes, parables, healings, warnings, and invitations become lessons given on the way to rejection, death, vindication, and the starting point of mission.",
+        "translationNote": "Maps can make readers expect a direct itinerary, but Luke's travel sequence is theological and literary as well as geographic. ‘Set his face’ is a scriptural idiom of resolute purpose, stronger than simply ‘decided to travel.’",
+        "caution": "The loose route is not proof that Luke knew no Palestinian geography, nor should every village order be forced into a modern map. The narrative destination and formation of disciples are the controlling signals.",
+        "refs": ["9:51", "9:53", "13:22", "13:33", "17:11", "18:31", "19:28", "19:41"],
+        "sourceIds": ["usccb-luke", "usccb-luke9", "original-sblgnt", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Greek and Semitic-scriptural expressions Luke makes carry extra weight",
+    "examples": [
+      {
+        "ref": "1:69",
+        "form": "κέρας σωτηρίας — keras sōtērias — ‘a horn of salvation’",
+        "meaning": "A powerful saving ruler, using the horn as a biblical image of strength",
+        "why": "Zechariah's song does not imagine an animal horn or musical instrument. It speaks in the imagery of the Greek Psalms and Israel's royal hopes, one example of Luke making a new scene sound inherited from Scripture.",
+        "sourceIds": ["usccb-luke1", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "2:14",
+        "form": "ἐν ἀνθρώποις εὐδοκίας — en anthrōpois eudokias",
+        "meaning": "‘among people of [God's] favor,’ with a famous case-ending variant",
+        "why": "One Greek letter distinguishes the well-attested ‘of favor’ reading from the later nominative behind ‘goodwill toward men.’ The theological contrast between grace and human niceness can disappear in familiar carol wording.",
+        "sourceIds": ["usccb-luke2", "p75", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "4:18",
+        "form": "ἄφεσις — aphesis — ‘release, remission, forgiveness’",
+        "meaning": "Freedom from captivity or debt and the remission of sins",
+        "why": "Jesus's Isaiah reading uses the word twice for release; Luke later ends with repentance and forgiveness being proclaimed. English choices can hide the bridge between social liberation imagery and the cancellation of sins and debts.",
+        "sourceIds": ["usccb-luke4", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "11:4",
+        "form": "ἁμαρτίας … ὀφείλοντι — hamartias … opheilonti — ‘sins … everyone indebted’",
+        "meaning": "Moral failure explained through the social world of obligation and debt",
+        "why": "Luke asks God to forgive ‘sins’ because the pray-ers forgive everyone ‘indebted’ to them. The switch keeps moral, relational, and economic obligation in contact without saying every financial loan is a sin.",
+        "sourceIds": ["original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "16:9",
+        "form": "μαμωνᾶς — mamōnas — Mammon",
+        "meaning": "A Semitic term for wealth or possessions, personified as a rival master",
+        "why": "English capitalization can make Mammon sound like the proper name of a separate god. Luke's paired sayings expose money itself as a power demanding loyalty and require possessions to be converted into merciful relationship.",
+        "sourceIds": ["usccb-luke16", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "23:33",
+        "form": "Κρανίον — Kranion — ‘Skull’",
+        "meaning": "Luke's Greek place-name for the execution site called Golgotha in Mark and Matthew",
+        "why": "Luke often replaces a Semitic local term with intelligible Greek for his audience. That editorial translation habit is evidence of mediation, not proof that the narrated world itself spoke only Greek.",
+        "sourceIds": ["usccb-luke", "usccb-luke23", "original-sblgnt", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Gospel and first volume of a two-part historical-theological narrative",
+    "how": "Read Luke as an ancient account that investigates and arranges inherited testimony to disclose meaning. It shares features with biography and historiography but also retells Israel's Scripture in Gospel form. Paired scenes, meals, songs, journey notices, prophetic fulfillment, reversal sayings, prayer before turning points, and parallels with Acts carry the argument. Historical intention does not mean modern stenography, and theological design does not mean indifference to events."
+  },
+  "cast": [
+    { "name": "Jesus", "who": "Spirit-anointed Savior, prophet, Lord, Son of God, Son of Man, friend of sinners, healer, teacher, rejected king, crucified innocent, and risen interpreter of Scripture." },
+    { "name": "Mary, Zechariah, Elizabeth, Simeon, and Anna", "who": "The infancy witnesses receive, question, sing, bless, and interpret. Women and men alternate, and their speech sounds like Israel's Scriptures coming to voice." },
+    { "name": "John the Baptist", "who": "Prophetic forerunner who demands economic fruits of repentance, announces the stronger one, confronts Herod, and later asks whether Jesus is truly the coming one." },
+    { "name": "Peter, the Twelve, and the larger disciple group", "who": "Called, sent, corrected, and taught on the road. Luke distinguishes the Twelve from a wider circle that includes women who support the mission and seventy-two sent ahead." },
+    { "name": "Women disciples and petitioners", "who": "Mary, Elizabeth, Anna, the widow of Nain, the forgiven woman, Mary Magdalene, Joanna, Susanna, Martha, Mary, a bent woman, persistent widows, daughters of Jerusalem, and resurrection witnesses receive unusual narrative attention without erasing the patriarchal world they inhabit." },
+    { "name": "Pharisees, scribes, lawyers, priests, and rulers", "who": "Distinct Jewish people and groups who may host, warn, question, resist, believe, or plot. Luke's conflicts are internal to a Jewish story and must not be flattened into an ethnic enemy." },
+    { "name": "Samaritans, Gentiles, sinners, the poor, and the rich", "who": "Boundary figures through whom Luke tests neighbor-love, gratitude, hospitality, repentance, and possessions. Outsider status never becomes automatic virtue; response to mercy remains decisive." },
+    { "name": "Theophilus and the reader", "who": "A named patron or high-status recipient — perhaps also representative of every ‘friend of God’ — invited to move from instruction toward tested assurance and witness." }
+  ],
+  "shape": [
+    { "heading": "Preface, paired births, and childhood", "chapters": "1–2", "note": "Formal purpose, Zechariah and Mary, John and Jesus, songs, shepherds, temple witnesses, and the twelve-year-old in his Father's house." },
+    { "heading": "Preparation and program", "chapters": "3–4", "note": "John's call, baptism, genealogy to Adam, testing, Nazareth's Isaiah reading, rejection, and the opening spread of healing and proclamation." },
+    { "heading": "Galilean authority and the question of identity", "chapters": "5–9", "note": "Calls, conflicts, level-place teaching, healings, women disciples, parables, storms, bread, confession, cross, transfiguration, and the turn toward Jerusalem." },
+    { "heading": "The long journey of discipleship", "chapters": "10–19", "note": "Mission, Samaritan mercy, prayer, meals, possessions, repentance, lost-and-found joy, rich and poor, kingdom, persistence, Zacchaeus, and approach to the city." },
+    { "heading": "Jerusalem teaching and warning", "chapters": "20–21", "note": "Temple authority disputes, tenants, Caesar, resurrection, David's son, widow, temple destruction, endurance, redemption, and watchfulness." },
+    { "heading": "Passover, arrest, trials, and crucifixion", "chapters": "22–23", "note": "Meal and covenant, servant leadership, Gethsemane, denial, Jewish and Roman hearings, Herod, crucifixion, forgiveness, paradise, death, women, and burial." },
+    { "heading": "Resurrection, opened Scripture, and ascension", "chapters": "24", "note": "Women at the tomb, Peter, Emmaus, recognition in broken bread, embodied appearance, opened minds, commission, blessing, ascension, joy, and return to the temple." }
+  ],
+  "purpose": "Luke writes to give grounded assurance that the story received by Theophilus is the outworking of God's faithful purpose: Israel's promises reach their decisive fulfillment in Jesus, and forgiveness and salvation are to be proclaimed from Jerusalem to all nations. That purpose arrives in bodies and households — the hungry fed, the sick restored, sinners welcomed into repentance, enemies loved, possessions released, women heard, strangers made neighbors, the proud lowered, and the dead raised. The risen Jesus then turns readers into witnesses, while Acts will show a fallible Spirit-led community carrying the same word outward.",
+  "snags": [
+    { "snag": "Luke's census under Quirinius seems difficult to align with Herod the Great's reign.", "help": "Herod died in 4 BC, while Josephus associates Quirinius's well-known Judean census with AD 6. Proposed earlier roles, translation alternatives, and multiple registrations have not produced consensus. Luke clearly intends Roman historical anchoring; readers should state the unresolved chronological problem rather than pretending either that it does not exist or that one proposed solution is certain." },
+    { "snag": "Luke's infancy narrative and genealogy are forced to match Matthew detail for detail.", "help": "Luke centers Mary, shepherds, Jerusalem, and a genealogy from Jesus back to Adam; Matthew centers Joseph, magi, Herod, Egypt, and a genealogy from Abraham forward through a different line. Both proclaim Davidic and divine identity, but neither explains the narrative and ancestral differences. Harmonization is an interpretive project, not something either Gospel performs for us." },
+    { "snag": "‘Orderly account’ is treated as a claim to modern neutral reporting or exact chronology.", "help": "Ancient writers selected, arranged, paraphrased, and composed speeches while making truth claims about events. Luke acknowledges sources and investigation, then organizes material around fulfillment and journey. Historical and theological intention belong together; neither cancels the other." },
+    { "snag": "Luke's blessings for the poor and woes to the rich are spiritualized until money disappears.", "help": "Luke speaks about actual hunger, property, debt, almsgiving, feasts, luxury, and economic reversal. Spiritual dependence matters, but it cannot erase material conditions. Nor does poverty automatically make every action righteous; the demand falls especially on how power and possessions are used." },
+    { "snag": "The command to ‘hate’ family is read as permission for cruelty or abandonment.", "help": "Luke preserves a Semitic contrast stated with shocking force: allegiance to Jesus outranks even primary kinship and self-preservation. The same Gospel commands enemy-love and condemns neglect. Costly priority is the point; abuse is not discipleship." },
+    { "snag": "Samaritans, Pharisees, priests, or ‘the Jews’ are turned into fixed moral ethnic types.", "help": "Samaritans and Judeans had real contested histories, while Pharisees and priests are varied characters within Judaism. A merciful Samaritan overturns an audience's boundary; it does not make Samaritans naturally good and Jews naturally bad. Christian anti-Judaism contradicts Luke's Israel-shaped account." },
+    { "snag": "Parables are mined for a coded meaning in every object.", "help": "Attend first to the narrative pressure: Who is addressed? What question prompted the story? Where does expectation reverse? Some details support interpretation, but the oil, coins, animals, clothing, and household objects are not automatically a secret dictionary of doctrines." },
+    { "snag": "Jesus's innocence before Rome is taken as an excuse for empire or collective blame elsewhere.", "help": "Luke repeatedly portrays Pilate recognizing innocence, yet Pilate still authorizes execution and Roman soldiers perform it. Leaders, Herod, a crowd, disciples, and empire have distinct agency. No scene transfers guilt to all Jewish people or absolves coercive government." }
+  ],
+  "debates": [
+    {
+      "question": "Who wrote Luke–Acts?",
+      "settled": "The two volumes share an author, the Gospel is internally anonymous, and late-second-century witnesses identify that author as Luke, a companion of Paul.",
+      "positions": [
+        { "view": "Luke the physician and Pauline companion wrote both volumes", "grounds": "The stable title, Irenaeus, Muratorian Fragment, ‘we’ passages in Acts, and Pauline references to Luke are read as converging external and internal memory." },
+        { "view": "An otherwise anonymous educated Christian wrote Luke–Acts", "grounds": "Neither volume names Luke, the ‘we’ passages admit several literary explanations, and tensions between Acts and Paul's letters make direct companionship uncertain." },
+        { "view": "Luke stands behind a work later developed or edited", "grounds": "Some scholars retain a Lukan connection while proposing stages of source collection, publication, or later revision, especially to explain textual and historical tensions." }
+      ],
+      "soWhat": "The traditional attribution deserves to be presented as ancient evidence, not smuggled in as the narrator's signature. The Gospel's claims should also be evaluated in the form actually transmitted."
+    },
+    {
+      "question": "What sources did Luke use, and how is Luke related to Matthew?",
+      "settled": "Luke explicitly knew prior narratives and traditions, shares extensive wording and order with Mark, shares many sayings with Matthew, and preserves a large body of distinctive material.",
+      "positions": [
+        { "view": "Luke used Mark, a sayings source called Q, and special Lukan traditions", "grounds": "The two-source model explains much triple-tradition order and Matthew–Luke overlap while allowing distinctive infancy, parable, and resurrection material." },
+        { "view": "Luke used Mark and Matthew directly", "grounds": "Farrer-type models remove hypothetical Q and explain agreements by Luke's knowledge and rearrangement of Matthew." },
+        { "view": "Luke drew on a more complex network of oral and written sources", "grounds": "The preface says ‘many,’ ancient transmission was not a neat family tree, and Semitic texture may enter through sources, scriptural imitation, synagogue Greek, or bilingual usage together." }
+      ],
+      "soWhat": "Source theories help identify Luke's editorial choices. They should not turn hypothetical documents into more certain objects than the final Gospel."
+    },
+    {
+      "question": "How historical is Luke's ‘orderly account’?",
+      "settled": "Luke intends to inform readers about real people, places, rulers, events, and testimony, while arranging them to make a theological narrative about fulfillment and mission.",
+      "positions": [
+        { "view": "A substantially reliable ancient historian and biographer", "grounds": "The preface, synchronisms, named officials, geographic knowledge in Acts, and attention to testimony are emphasized, with ancient compositional conventions allowed." },
+        { "view": "A theological historian whose accuracy must be assessed episode by episode", "grounds": "Strong literary shaping, speeches, source editing, census and chronology problems, and differences from other Gospels and Paul require differentiated judgments." },
+        { "view": "Primarily a literary-theological narrative using historical settings", "grounds": "The work's scriptural patterns, apologetic aims, and constructed parallels are treated as more determinative than recoverable chronology." }
+      ],
+      "soWhat": "Readers need not choose between ‘camera transcript’ and ‘fiction.’ Ancient history, biography, Scripture-shaped narrative, memory, and theology overlap in ways modern genre labels only partly capture."
+    }
+  ],
+  "howToRead": [
+    { "tip": "Read Luke with Acts nearby. Compare Luke 1:1–4 with Acts 1:1–8 and Luke 24:44–53 with Acts 1:1–12; repeated scenes show where volume one hands the story to volume two.", "refs": ["1:1", "1:4", "24:44", "24:49", "24:51"] },
+    { "tip": "Listen for the change after the preface. Track ‘and it happened,’ songs, angels, barren mothers, temple scenes, and scriptural phrases through chapters 1–2 before calling Luke a uniformly classical Greek writer.", "refs": ["1:5", "1:23", "1:41", "2:15"] },
+    { "tip": "Mark every ‘today’ and ‘must.’ The two small words reveal present salvation and the divine purpose guiding Jesus from birth through cross, resurrection, and witness.", "refs": ["2:11", "4:21", "9:22", "19:5", "19:9", "23:43", "24:26"] },
+    { "tip": "Treat 9:51 as a hinge. From there ask how every meal, parable, warning, healing, and question prepares people to follow Jesus toward Jerusalem.", "refs": ["9:51", "13:22", "17:11", "18:31", "19:28"] },
+    { "tip": "Track paired women and men, poor and rich, insider and outsider, exalted and humbled. Luke's reversals challenge status without making any social label an automatic verdict.", "refs": ["1:52", "1:53", "6:20", "6:24", "14:11", "18:14"] },
+    { "tip": "When ‘faith has saved you’ appears, ask what restoration occurs in that scene — body, peace, community, gratitude, forgiveness — and how it anticipates the Gospel's wider salvation.", "refs": ["7:50", "8:48", "17:19", "18:42", "19:9"] },
+    { "tip": "Do not let the road end at a private Easter. Luke 24 moves from empty tomb to interpreted Scripture, shared table, embodied witness, worldwide forgiveness, promised power, blessing, and public joy.", "refs": ["24:27", "24:30", "24:39", "24:47", "24:49", "24:52"] }
+  ],
+  "next": "Continue immediately into Acts, where the same author resumes the ascension and follows the Spirit-led witness from Jerusalem toward Rome. Then compare Luke with Mark and Matthew to see how shared scenes are reordered and retold. Read Isaiah 40 and 58–61, Deuteronomy, Psalms, 1–2 Samuel, and the Elijah–Elisha narratives alongside Luke's infancy songs, Nazareth sermon, journey, and resurrection interpretation.",
+  "traditionNote": "Luke's 24 chapters are shared across the Catholic, Orthodox, and Protestant traditions represented here, but several visible lines differ by manuscript and edition. The WEB includes the longer Lord's Prayer wording, the longer meal text at 22:19b–20, the angel and sweat at 22:43–44, Jesus's prayer at 23:34, Peter's run at 24:12, and ascension wording in 24:51. Modern critical editions print some, bracket or footnote others. These are transmission questions with ancient evidence on more than one side, not grounds for claiming that communities invented Luke's central theology wholesale.",
+  "sources": [
+    { "id": "usccb-luke", "label": "USCCB, Introduction to Luke", "says": "Surveys Luke–Acts as a two-volume work, purpose, sources, dating, audience, salvation history, journey structure, concern for the poor and outsiders, Spirit, prayer, women, and discipleship.", "url": "https://bible.usccb.org/bible/luke/0" },
+    { "id": "usccb-luke1", "label": "USCCB, Luke 1 notes", "says": "Explains the formal Greek prologue, Theophilus, infancy narrative's Septuagintal canticles and biblical style, paired announcements, fulfillment, and major Lukan themes.", "url": "https://bible.usccb.org/bible/luke/1" },
+    { "id": "usccb-luke2", "label": "USCCB, Luke 2 notes", "says": "Addresses the census problem, Savior title, glory-and-peace textual wording, shepherds, temple presentation, Simeon's song, and Jesus in his Father's house.", "url": "https://bible.usccb.org/bible/luke/2" },
+    { "id": "usccb-luke4", "label": "USCCB, Luke 4 notes", "says": "Provides the scriptural and programmatic setting of the temptation, Nazareth Isaiah reading, good news to the poor, release, Elijah–Elisha examples, rejection, and Galilean mission.", "url": "https://bible.usccb.org/bible/luke/4" },
+    { "id": "usccb-luke9", "label": "USCCB, Luke 9 notes", "says": "Explains the chapter's identity sequence, confession, passion prediction, transfiguration, discipleship sayings, and the decisive opening of the Jerusalem travel narrative.", "url": "https://bible.usccb.org/bible/luke/9" },
+    { "id": "usccb-luke16", "label": "USCCB, Luke 16 notes", "says": "Supplies context for the manager, use of possessions, Mammon, Pharisees, law, divorce saying, and the rich man and Lazarus.", "url": "https://bible.usccb.org/bible/luke/16" },
+    { "id": "usccb-luke22", "label": "USCCB, Luke 22 notes", "says": "Addresses the Passover meal, cup and bread sequence, covenant, textual forms, servant leadership, Peter, swords, prayer, arrest, and hearings.", "url": "https://bible.usccb.org/bible/luke/22" },
+    { "id": "usccb-luke23", "label": "USCCB, Luke 23 notes", "says": "Addresses Roman and Herodian hearings, innocence declarations, crucifixion, distinctive sayings, textual variation, death, women witnesses, and burial.", "url": "https://bible.usccb.org/bible/luke/23" },
+    { "id": "adams-preface", "label": "Sean A. Adams, ‘Does Luke's Preface Resemble a Greek Decree?’ (New Testament Studies)", "says": "Compares epigraphic and papyrological evidence and concludes that Luke 1:1–4 uses conventional features of Greek historiographical and technical prefaces without requiring a hidden decree code.", "url": "https://doi.org/10.1017/S002868851900016X" },
+    { "id": "hogeterp-denaux", "label": "Albert Hogeterp and Adelbert Denaux, Semitisms in Luke's Greek", "says": "Studies Luke's educated Greek and Semitic influences across Greek, Hebrew, and Aramaic evidence, arguing for complementary influences rather than one explanation for every Semitism.", "url": "https://doi.org/10.1628/978-3-16-155337-0" },
+    { "id": "irenaeus", "label": "Irenaeus, Against Heresies 3.1.1 and 3.14", "says": "Late-second-century testimony identifies Luke as Paul's companion and the recorder of a Gospel, then argues from the Acts ‘we’ passages and Lukan material.", "url": "https://www.newadvent.org/fathers/0103301.htm" },
+    { "id": "muratorian", "label": "The Muratorian Fragment, lines on the third Gospel", "says": "An early canonical list calls the third Gospel ‘according to Luke,’ identifies him as a physician and Pauline companion, and says he investigated though he had not seen the Lord in the flesh.", "url": "https://earlychristianwritings.com/text/muratorian-metzger.html" },
+    { "id": "p75", "label": "CSNTM digital collection, Papyrus 75", "says": "Catalogues and images a third-century fragmentary Greek papyrus containing substantial portions of Luke and John, one of the earliest extensive witnesses to Luke.", "url": "https://manuscripts.csntm.org/manuscript/Group/GA_P75" },
+    { "id": "sinaiticus", "label": "Codex Sinaiticus Project", "says": "Provides images and transcription of a fourth-century Greek witness containing Luke within the complete New Testament.", "url": "https://www.codexsinaiticus.org/en/manuscript.aspx" },
+    { "id": "whitlark-23-34", "label": "Jason A. Whitlark and Mikeal C. Parsons, ‘The Seven Last Words’ (New Testament Studies)", "says": "Analyzes the difficult manuscript evidence and possible transmission history of Luke 23:34a, ‘Father, forgive them.’", "url": "https://doi.org/10.1017/S0028688506000117" },
+    { "id": "chadwick-22", "label": "Henry Chadwick, ‘The Shorter Text of Luke XXII.15–20’ (Harvard Theological Review)", "says": "Presents the longstanding evidence and arguments surrounding the shorter and longer textual forms of Luke's Last Supper account.", "url": "https://doi.org/10.1017/S0017816000020964" },
+    { "id": "original-sblgnt", "label": "SBL Greek New Testament with MorphGNT data hosted on this site", "says": "Greek forms, lemmas, morphology, phrase counts, and verse-level examples were checked against the locally hosted SBLGNT/MorphGNT chapter data.", "url": "https://github.com/morphgnt/sblgnt" },
+    { "id": "hosted-web", "label": "The World English Bible text on this site", "says": "Chapter and verse totals, English word counts, repeated terms, quotation wording, and visible numbering were checked against the hosted edition." }
+  ]
+}

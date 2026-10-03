@@ -1,0 +1,228 @@
+{
+  "book": "GEN",
+  "chapter": 48,
+  "bookName": "Genesis",
+  "summary": "The sick Jacob claims Joseph's Egyptian-born sons Ephraim and Manasseh as his own, connecting their inheritance to God's promise at Luz and remembering Rachel's death. He deliberately places his right hand on the younger Ephraim despite Joseph's objection, blesses both boys, and assures Joseph that God will bring the family back to its ancestral land.",
+  "whyItMatters": "The blessing incorporates children born in Egypt into Israel's ancestral future and once again unsettles expected birth order. Jacob's words join his care over a lifetime, the memory of loss, and a promise that outlasts his own death.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Jacob's sickbed in Egypt, with recollections of Luz and Rachel's burial in Canaan.",
+    "literaryForm": "Adoption-like inheritance declaration, recollection, enacted blessing, birth-order reversal, and a final land promise."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Jacob has required Joseph to swear that his body will be buried with his ancestors. His coming death now raises the question of the next generation's place in that inheritance.",
+      "verseRefs": [
+        "47:28-31"
+      ]
+    },
+    "here": {
+      "text": "Ephraim and Manasseh receive standing among Jacob's own sons, and the deliberate crossing of hands gives the younger precedence without excluding the elder from blessing.",
+      "verseRefs": [
+        "48:3-20"
+      ]
+    },
+    "after": {
+      "text": "Jacob next gathers all his sons and addresses their futures as Israel's tribes before renewing his burial instructions and dying.",
+      "verseRefs": [
+        "49:1-33"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "The visit and a claim upon Joseph’s sons",
+      "verses": "1-7",
+      "note": "Jacob recalls the promise, assigns Ephraim and Manasseh standing, and remembers Rachel."
+    },
+    {
+      "heading": "The boys brought close",
+      "verses": "8-12",
+      "note": "Dim sight gives way to embrace and gratitude for seeing another generation."
+    },
+    {
+      "heading": "Hands crossed and a blessing spoken",
+      "verses": "13-16",
+      "note": "Jacob knowingly places his right hand on the younger and invokes lifelong divine care."
+    },
+    {
+      "heading": "Joseph’s objection and Jacob’s refusal",
+      "verses": "17-20",
+      "note": "Both boys will grow, but Ephraim receives priority."
+    },
+    {
+      "heading": "Return promised and an extra portion given",
+      "verses": "21-22",
+      "note": "Jacob anticipates death while speaking of God’s presence, land, and Joseph’s additional portion."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "48:5",
+      "text": "Now your two sons, who were born to you in the land of Egypt before I came to you into Egypt, are mine; Ephraim and Manasseh, even as Reuben and Simeon, will be mine.",
+      "why": "Jacob gives the Egyptian-born sons standing alongside his own eldest sons."
+    },
+    {
+      "ref": "48:16",
+      "text": "the angel who has redeemed me from all evil, bless the lads, and let my name be named on them, and the name of my fathers Abraham and Isaac. Let them grow into a multitude upon the earth.”",
+      "why": "The blessing asks that the ancestral names and future growth continue through the boys."
+    },
+    {
+      "ref": "48:21",
+      "text": "Israel said to Joseph, “Behold, I am dying, but God will be with you, and bring you again to the land of your fathers.",
+      "why": "Jacob’s approaching death is set beside God’s continuing presence and promised return."
+    }
+  ],
+  "themes": [
+    "children born abroad included",
+    "inheritance and adoption",
+    "memory of Rachel",
+    "younger before elder",
+    "lifelong divine care",
+    "return beyond death"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What changes when Jacob says the boys are his?",
+      "answer": "He places Ephraim and Manasseh alongside Reuben and Simeon as his own and discusses how any later sons of Joseph would be counted for inheritance. The declaration gives these two a direct place in the ancestral family rather than merely praising grandchildren.",
+      "verseRefs": [
+        "48:3-6"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why does Jacob recall Rachel here?",
+      "answer": "He remembers her death on the return journey and her roadside burial while speaking with her son Joseph. The recollection puts the new generation beside a loss that remains part of Jacob's account of his life.",
+      "verseRefs": [
+        "48:7-11"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Is the crossed-hand blessing an accidental result of poor eyesight?",
+      "answer": "No. Although the narrator says Jacob's eyes are dim, it also says he guides his hands knowingly and records his refusal when Joseph tries to correct them. Ephraim's priority is deliberate within the scene.",
+      "verseRefs": [
+        "48:10",
+        "48:13-19"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        10,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What does “redeemed” mean in the blessing?",
+      "answer": "Jacob describes the angel as having delivered him from evil and asks that this protection extend to the boys. The word functions as rescue language within his recollection of divine care, without a specified financial ransom transaction.",
+      "verseRefs": [
+        "48:15-16"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Does the blessing reject Manasseh?",
+      "answer": "Jacob expressly says Manasseh will become a people and be great. Ephraim receives the greater future and first position, but both are blessed and both names form the later blessing formula described here.",
+      "verseRefs": [
+        "48:18-20"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Who is the angel in Jacob’s prayer?",
+      "answer": "Jacob joins the God of his fathers and lifelong sustenance with the angel who has redeemed him from evil. The chapter supplies no personal name or fully developed account of that figure's identity, so identifying a later named being would go beyond its words.",
+      "verseRefs": [
+        "48:15-16"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Can the final military claim be reconstructed from this chapter?",
+      "answer": "Jacob says he took the extra portion from the Amorite with sword and bow, but the chapter does not narrate that action or locate it precisely. The statement should remain visible without inventing a battle or automatically equating it with another violent episode.",
+      "verseRefs": [
+        "48:21-22"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        21,
+        22
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Luz",
+      "def": "The place in Canaan where Jacob recalls receiving the promise of descendants and land."
+    },
+    {
+      "term": "firstborn",
+      "def": "The elder son’s position that Joseph invokes when trying to move Jacob’s right hand to Manasseh."
+    },
+    {
+      "term": "portion",
+      "def": "The additional share Jacob gives Joseph in his closing statement about land."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "b468f3030d06304fd5d90970bc98eaa90b096041b656928fe0972ef759049fde",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

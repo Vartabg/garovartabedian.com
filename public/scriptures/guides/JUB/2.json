@@ -1,0 +1,220 @@
+{
+  "book": "JUB",
+  "chapter": 2,
+  "bookName": "Jubilees",
+  "summary": "The angel recounts creation day by day, including heavenly spirits, earth, plants, lights, animals, and humanity. He then presents the seventh day as a heavenly practice and a covenant sign for Jacob's descendants, ending with detailed Sabbath prohibitions.",
+  "whyItMatters": "Creation and Sabbath are joined here: the book grounds Israel's calendar and identity in a pattern that it says began in heaven before human observance.",
+  "context": {
+    "author": "Within the book, the angel of the presence dictates the account to Moses; the historical writer is unnamed.",
+    "audience": "Israel is addressed through Moses in the book’s frame; the specific first historical audience is not identified.",
+    "date": "The narrative places the revelation at Sinai; the historical Hebrew work is usually dated to the second century BCE, without an established exact year.",
+    "setting": "The angel's Sinai account moves through the six days of creation and then addresses Israel's seventh-day practice.",
+    "literaryForm": "Numbered creation recital followed by Sabbath interpretation and legal exhortation."
+  },
+  "contextSourceIds": [
+    "hosted-charles",
+    "oxford-endres"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "At Sinai the angel has received tablets that organize history by days, weeks, and jubilees.",
+      "verseRefs": [
+        "1:27-29"
+      ]
+    },
+    "here": {
+      "text": "The first dictated episode makes creation and seventh-day rest the foundation for that ordered time.",
+      "verseRefs": [
+        "2:1-33"
+      ]
+    },
+    "after": {
+      "text": "The account narrows from all creation to Adam and Eve, their time in Eden, and the consequences of disobedience.",
+      "verseRefs": [
+        "3:1-4",
+        "3:15-25"
+      ]
+    }
+  },
+  "outline": [
+    {
+      "heading": "The first three days",
+      "verses": "1-7",
+      "note": "Heavenly beings, waters, land, and vegetation appear."
+    },
+    {
+      "heading": "Lights, living creatures, and humankind",
+      "verses": "8-16",
+      "note": "The sun is assigned calendar work before humanity is created."
+    },
+    {
+      "heading": "The Sabbath above and below",
+      "verses": "17-24",
+      "note": "Angels rest and Jacob’s descendants are named as the people of the day."
+    },
+    {
+      "heading": "Consequences and practical restrictions",
+      "verses": "25-33",
+      "note": "The text commands Israel to keep the day and specifies forbidden work."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "2:9",
+      "text": "And God appointed the sun to be a great sign on the earth for days and for sabbaths and for months and for feasts and for years and for sabbaths of years and for jubilees and for all seasons of the years.",
+      "why": "The sun is introduced as a sign for the book's linked cycles of days, feasts, sabbatical years, and jubilees."
+    },
+    {
+      "ref": "2:19",
+      "text": "And He said unto us: 'Behold, I will separate unto Myself a people from among all the peoples, and these shall keep the Sabbath day, and I will sanctify them unto Myself as My people, and will bless them; as I have sanctified the Sabbath day and do sanctify (it) unto Myself, even so will I bless them, and they shall be My people and I will be their God.",
+      "why": "The Sabbath becomes a marker of a people chosen and sanctified within this book's account."
+    }
+  ],
+  "themes": [
+    "six-day creation",
+    "calendar lights",
+    "angelic Sabbath",
+    "Jacob’s descendants",
+    "seventh-day restrictions"
+  ],
+  "questions": [
+    {
+      "category": "context",
+      "question": "Why does this creation account mention angels on the first day?",
+      "answer": "The narrator includes different serving spirits among God’s first-day works. That broadens the scene beyond the land and sea and prepares for the angels who later say that they keep Sabbath in heaven.",
+      "verseRefs": [
+        "2:1-3",
+        "2:17-18"
+      ],
+      "id": "q1",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        17,
+        18
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What is the firmament in this telling?",
+      "answer": "It is the expanse placed between upper and lower waters on the second day. The chapter uses the ancient picture to order the world; it is not offering a modern physical model of the atmosphere.",
+      "verseRefs": [
+        "2:4"
+      ],
+      "id": "q2",
+      "relatedVerses": [
+        4
+      ]
+    },
+    {
+      "category": "context",
+      "question": "Why is the sun called a sign for sabbaths and jubilees?",
+      "answer": "The fourth-day account assigns the sun a role in marking recurring times, including days, feasts, and years. This is an important clue to why precise calendrical order matters throughout Jubilees.",
+      "verseRefs": [
+        "2:8-10"
+      ],
+      "id": "q3",
+      "relatedVerses": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Are the twenty-two kinds of work a count readers can easily reconstruct?",
+      "answer": "The narrator reports a total after grouping created things by day, but the groupings in the speech do not provide a simple modern species list. The number is then paired with twenty-two heads from Adam to Jacob, so it also serves a literary connection.",
+      "verseRefs": [
+        "2:13-16",
+        "2:23-24"
+      ],
+      "id": "q4",
+      "relatedVerses": [
+        13,
+        14,
+        15,
+        16,
+        23,
+        24
+      ]
+    },
+    {
+      "category": "theology",
+      "question": "Who keeps Sabbath before Israel receives the command?",
+      "answer": "The angel says the angels of the presence and sanctification were commanded to rest with God. He then says Jacob’s descendants are taught the same day on earth.",
+      "verseRefs": [
+        "2:17-21",
+        "2:30"
+      ],
+      "id": "q5",
+      "relatedVerses": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        30
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Does the severe penalty in this chapter authorize readers to punish people today?",
+      "answer": "The speech gives this rule to the children of Israel inside its own covenant setting. Describing that ancient command and its threatened judgment does not itself establish authority for a present-day reader to enforce it.",
+      "verseRefs": [
+        "2:25-27",
+        "2:33"
+      ],
+      "id": "q6",
+      "relatedVerses": [
+        25,
+        26,
+        27,
+        33
+      ]
+    },
+    {
+      "category": "context",
+      "question": "What practical acts does the chapter forbid on the seventh day?",
+      "answer": "The commands mention preparation of food and drink, drawing water, and moving burdens between houses or gates. They turn the holy day from a general ideal into a concrete rhythm of preparation and rest.",
+      "verseRefs": [
+        "2:26-30"
+      ],
+      "id": "q7",
+      "relatedVerses": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "firmament",
+      "def": "The expanse in the ancient creation account that separates waters above from waters below."
+    },
+    {
+      "term": "Sabbath",
+      "def": "The seventh day set apart for rest and blessing in this account."
+    }
+  ],
+  "readingContextSource": {
+    "translation": "charles",
+    "textHash": "c819c59f4b6b16a0782d2a6f7f4bdd574e018a3458282ebc59f3de8ed78f846c"
+  },
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "c8d3580fa7aae5fbbd794b2aaabf409dfa887f2c9bf9c07d8cb14ed327d76227",
+    "generatedAt": "2026-09-29T00:33:02.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent cross-review",
+  "sourceIds": [
+    "charles"
+  ]
+}

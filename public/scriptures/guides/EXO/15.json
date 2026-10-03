@@ -1,0 +1,222 @@
+{
+  "book": "EXO",
+  "chapter": 15,
+  "bookName": "Exodus",
+  "summary": "Moses and Israel sing over the sea deliverance, describing Yahweh’s defeat of Pharaoh’s army and anticipating fear among peoples along Israel’s route; Miriam leads women with tambourines and repeats the refrain. The journey then reaches bitter water at Marah, which becomes drinkable after Moses cries to Yahweh, and the travelers camp at Elim’s springs.",
+  "whyItMatters": "The song gives the crossing a communal voice, including strong war imagery and future hopes, while the Marah scene immediately turns celebration into a need for water. Miriam’s public leadership and the healing claim are part of the chapter’s account of how rescue is remembered and tested.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "The shore after the sea crossing, the wilderness of Shur and Marah, and Elim’s springs.",
+    "literaryForm": "Victory poetry and Miriam’s sung response followed by a short wilderness-water narrative and instruction."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Israel has crossed on dry ground and seen the Egyptian army destroyed. The opening song answers that event before the travelers move into the wilderness.",
+      "verseRefs": [
+        "14:26-31",
+        "15:1-3"
+      ]
+    },
+    "here": {
+      "text": "War poetry celebrates the sea outcome, while Miriam’s refrain joins the people’s response; three days later the lack of drinkable water creates another test.",
+      "verseRefs": [
+        "15:1-21",
+        "15:22-27"
+      ]
+    },
+    "after": {
+      "text": "From Elim the congregation reaches the wilderness of Sin and complains of hunger, where meat and daily bread are promised.",
+      "verseRefs": [
+        "16:1-12"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "The enemy and the sea in song",
+      "verses": "1-10",
+      "note": "Moses and Israel praise Yahweh for overturning the army and its boast."
+    },
+    {
+      "heading": "Holiness and a future home",
+      "verses": "11-18",
+      "note": "The poetry asks who is like Yahweh and looks toward peoples on the route and a sanctuary."
+    },
+    {
+      "heading": "Miriam’s public response",
+      "verses": "19-21",
+      "note": "A prose recall of the crossing leads to Miriam and the women singing and dancing."
+    },
+    {
+      "heading": "Bitter water at Marah",
+      "verses": "22-26",
+      "note": "Three thirsty days end with undrinkable water, Moses’ appeal, a remedy, and an instruction."
+    },
+    {
+      "heading": "Water at Elim",
+      "verses": "27",
+      "note": "Twelve springs and seventy palms provide the next camp."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "15:3",
+      "text": "Yahweh is a man of war. Yahweh is his name.",
+      "why": "The song’s direct war image must be read as the singers’ response to the sea battle."
+    },
+    {
+      "ref": "15:20",
+      "text": "Miriam the prophetess, the sister of Aaron, took a tambourine in her hand; and all the women went out after her with tambourines and with dances.",
+      "why": "Miriam is named a prophetess and leads women’s music and dance after the crossing."
+    },
+    {
+      "ref": "15:25",
+      "text": "Then he cried to Yahweh. Yahweh showed him a tree, and he threw it into the waters, and the waters were made sweet. There he made a statute and an ordinance for them, and there he tested them.",
+      "why": "The water crisis turns when Moses cries to Yahweh and a shown tree is thrown in."
+    }
+  ],
+  "themes": [
+    "sea victory song",
+    "war and its human cost",
+    "Miriam’s leadership",
+    "future sanctuary hope",
+    "thirst at Marah",
+    "healing and provision"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What does “Yahweh is a man of war” describe?",
+      "answer": "It is the singers’ vivid claim that Yahweh defeated Pharaoh’s pursuing army at the sea. The poem speaks from the delivered community’s position; it is not a general instruction for readers to wage war.",
+      "verseRefs": [
+        "15:1-6"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How does the song portray the pursuers?",
+      "answer": "It recalls chariots and captains sinking and puts a boast of pursuit, plunder, and destruction into the enemy’s mouth. These lines connect the singers’ praise with the specific military threat just narrated.",
+      "verseRefs": [
+        "15:4-10"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        4
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does “Yah” mean in the opening praise?",
+      "answer": "The singers call Yah their strength and salvation, and the surrounding lines name Yahweh as the one who defeated the pursuing army. The short name belongs to the song’s praise of that deliverance.",
+      "verseRefs": [
+        "15:1-3"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What about the fear predicted for Philistia, Edom, Moab, and Canaan?",
+      "answer": "The poem imagines surrounding peoples trembling before Israel reaches its intended home. These are anticipatory lines in a song, not a report that all those peoples have already been encountered or given a voice here.",
+      "verseRefs": [
+        "15:13-18"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        13
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What part does Miriam play after the song?",
+      "answer": "She is named as Aaron’s sister and a prophetess, takes a tambourine, and leads the women in music and dance. Her answer repeats the opening refrain about horse and rider thrown into the sea.",
+      "verseRefs": [
+        "15:19-21"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        19
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Is the people’s question about water merely groundless complaining?",
+      "answer": "They have gone three days without finding water and then reach water they cannot drink. The text calls their response murmuring, but it also describes a concrete survival problem to which Moses appeals for help.",
+      "verseRefs": [
+        "15:22-25"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        22
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Why is the place called Marah?",
+      "answer": "The narrative says its waters are bitter and connects that condition with the name. The place name is introduced at the moment the thirsty travelers find water they cannot use.",
+      "verseRefs": [
+        "15:22-24"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        22
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What is said at Marah after the water becomes drinkable?",
+      "answer": "Yahweh gives a statute and a test tied to listening, doing right, and keeping commands. He says he will not place on Israel the diseases put on Egypt and calls himself the one who heals them, framing the statement within this covenant journey.",
+      "verseRefs": [
+        "15:25-27"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        25
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Yah",
+      "def": "The name used in the song for the one the singers call their strength and salvation."
+    },
+    {
+      "term": "Marah",
+      "def": "The place named for its bitter, initially undrinkable water."
+    },
+    {
+      "term": "tambourine",
+      "def": "The percussion instrument Miriam and the women carry while singing and dancing."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "c7fb1c8c6cafdf44daee5ef8be963caf844a955256ecb97e3b058e1a0b2ebb23",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

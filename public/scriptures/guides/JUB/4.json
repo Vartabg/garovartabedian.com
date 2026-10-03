@@ -1,0 +1,246 @@
+{
+  "book": "JUB",
+  "chapter": 4,
+  "bookName": "Jubilees",
+  "summary": "Adam and Eve's children appear, Cain kills Abel, and Seth's line advances through named families toward Enoch and Noah. Enoch writes heavenly knowledge and testifies against the Watchers; the chapter closes with Adam's death, Cain's death, and Noah's sons.",
+  "whyItMatters": "This genealogy makes writing, judgment, sacred places, and measured years part of the bridge between Eden and the flood.",
+  "context": {
+    "author": "Within the book, the angel of the presence dictates the account to Moses; the historical writer is unnamed.",
+    "audience": "Israel is addressed through Moses in the book’s frame; the specific first historical audience is not identified.",
+    "date": "The narrative places the revelation at Sinai; the historical Hebrew work is usually dated to the second century BCE, without an established exact year.",
+    "setting": "The generations outside Eden, counted in weeks and jubilees until Noah's family is born.",
+    "literaryForm": "Chronological genealogy expanded with moral judgments and an account of Enoch."
+  },
+  "contextSourceIds": [
+    "hosted-charles",
+    "oxford-endres"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Adam and Eve have left Eden and begun life in the land of their creation.",
+      "verseRefs": [
+        "3:26-35"
+      ]
+    },
+    "here": {
+      "text": "The chapter follows their descendants through Cain’s violence and Enoch’s witness to the birth of Noah’s sons.",
+      "verseRefs": [
+        "4:1-33"
+      ]
+    },
+    "after": {
+      "text": "The next chapter describes the Watchers’ unions, spreading corruption, the flood, and Noah’s survival.",
+      "verseRefs": [
+        "5:1-5",
+        "5:19-23"
+      ]
+    }
+  },
+  "outline": [
+    {
+      "heading": "Cain, Abel, judgment, and Seth",
+      "verses": "1-8",
+      "note": "Murder brings a curse before another line is born."
+    },
+    {
+      "heading": "Families from Cain and Seth to Jared",
+      "verses": "9-16",
+      "note": "Names, marriages, and time markers advance the genealogy."
+    },
+    {
+      "heading": "Enoch’s writing and witness",
+      "verses": "17-26",
+      "note": "Enoch records time, condemns the Watchers, and is taken to Eden."
+    },
+    {
+      "heading": "Noah’s family and the deaths of Adam and Cain",
+      "verses": "27-33",
+      "note": "The chapter links measured years with judgment and a new generation."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "4:17",
+      "text": "And he was the first among men that are born on earth who learnt writing and knowledge and wisdom and who wrote down the signs of heaven according to the order of their months in a book, that men might know the seasons of the years according to the order of their separate months.",
+      "why": "Enoch becomes the first human writer in this telling, connecting heavenly signs with recorded history."
+    },
+    {
+      "ref": "4:31",
+      "text": "At the close of this jubilee Cain was killed after him in the same year; for his house fell upon him and he died in the midst of his house, and he was killed by its stones; for with a stone he had killed Abel, and by a stone was he killed in righteous judgment.",
+      "why": "Cain's death is presented as a matching judgment for Abel's murder, showing how the narrator reads events morally."
+    }
+  ],
+  "themes": [
+    "Abel’s blood",
+    "family lines",
+    "Enoch’s record",
+    "Watchers and judgment",
+    "measured lifespans"
+  ],
+  "questions": [
+    {
+      "category": "context",
+      "question": "Why does Abel’s blood cry from the ground?",
+      "answer": "The description makes the killing an offense that cannot be concealed. God confronts Cain, and the narrator uses the murder to introduce a rule against treacherous violence.",
+      "verseRefs": [
+        "4:2-6"
+      ],
+      "id": "q1",
+      "relatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What does “jubilee” mean in these family dates?",
+      "answer": "The account measures long family history with recurring jubilees and smaller weeks of years. Those units organize the named births and deaths; they are not ordinary seven-day weeks in these verses.",
+      "verseRefs": [
+        "4:1",
+        "4:7-9",
+        "4:27-33"
+      ],
+      "id": "q2",
+      "relatedVerses": [
+        1,
+        7,
+        8,
+        9,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Why are siblings named as spouses in these early generations?",
+      "answer": "The chapter explicitly names sisters as the wives of Cain, Seth, and Enos while tracing the earliest families. It reports its own primeval family scheme; it does not give a general marriage rule for later readers.",
+      "verseRefs": [
+        "4:8-14"
+      ],
+      "id": "q3",
+      "relatedVerses": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "category": "context",
+      "question": "What makes Enoch different from the surrounding genealogy?",
+      "answer": "Instead of only receiving a birth and marriage date, Enoch is described as learning writing, recording the heavens, seeing a vision, and testifying. His extended profile interrupts the list because recorded knowledge and judgment matter to this book.",
+      "verseRefs": [
+        "4:16-23"
+      ],
+      "id": "q4",
+      "relatedVerses": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "category": "word",
+      "question": "Who are the Watchers in this chapter?",
+      "answer": "They are angels said to have descended to instruct and judge humanity, but the narrative later says they joined with human women. Enoch testifies against that wrongdoing before the coming flood.",
+      "verseRefs": [
+        "4:15",
+        "4:21-24"
+      ],
+      "id": "q5",
+      "relatedVerses": [
+        15,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Does Enoch’s place in Eden mean the text says he never died?",
+      "answer": "The chapter says he was taken from among humans into Eden and describes what he does there. It does not narrate a later death in these verses, but claims about his complete fate need more than this chapter supplies.",
+      "verseRefs": [
+        "4:22-25"
+      ],
+      "id": "q6",
+      "relatedVerses": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "category": "theology",
+      "question": "Why does the narrator list four special places?",
+      "answer": "Eden, the eastern mountain, Sinai, and Zion are named as places with a distinct sacred role in the book. Sinai also links the ancient genealogy back to Moses, the recipient of this revelation.",
+      "verseRefs": [
+        "4:23-26"
+      ],
+      "id": "q7",
+      "relatedVerses": [
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "How does the narrator explain Adam’s death within a “day”?",
+      "answer": "It interprets a heavenly day as a thousand years and notes that Adam died before reaching that span. This is the book’s explanation of the Eden warning, not a rule for converting every biblical use of “day” into a thousand years.",
+      "verseRefs": [
+        "4:29-30"
+      ],
+      "id": "q8",
+      "relatedVerses": [
+        29,
+        30
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Watchers",
+      "def": "Angelic figures who descend to the earth and become subjects of Enoch’s warning."
+    },
+    {
+      "term": "testimony",
+      "def": "A written or spoken witness concerning time, conduct, and coming judgment."
+    }
+  ],
+  "readingContextSource": {
+    "translation": "charles",
+    "textHash": "c819c59f4b6b16a0782d2a6f7f4bdd574e018a3458282ebc59f3de8ed78f846c"
+  },
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "379ec3526d428a26346d33c9391144fa9dc253c5d390260eb2f1fd76c9a14be0",
+    "generatedAt": "2026-09-29T00:33:02.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent cross-review",
+  "sourceIds": [
+    "charles"
+  ]
+}

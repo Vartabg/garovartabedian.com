@@ -1,0 +1,209 @@
+{
+  "tradition": "orthodox",
+  "traditionName": "Eastern Orthodox",
+  "oneLine": "This shelf represents an Eastern Orthodox, Septuagint-shaped Old Testament beside the shared twenty-seven-book New Testament.",
+  "orient": "Eastern Orthodox Scripture is received in the worship and teaching life of a communion of local churches. The Septuagint is the central Old Testament inheritance, but Greek, Slavonic, Georgian, and other editions do not always print or count every marginal book in exactly the same way.",
+  "keepInMind": "There is no single book total that describes every Eastern Orthodox printed Bible without qualification. Psalm 151 may be counted within Psalms, the Prayer of Manasseh within another book or among the Odes, and Fourth Maccabees may appear only as an appendix in Greek editions. This route is a map of the wider textual world, not a decree that every green spine has identical status everywhere.",
+  "facts": [
+    {
+      "label": "Old Testament anchor",
+      "value": "The ancient Greek Septuagint is the primary ecclesial Old Testament reference for Eastern Orthodox tradition.",
+      "sourceIds": ["goarch-languages", "oca-canon"]
+    },
+    {
+      "label": "New Testament",
+      "value": "The familiar twenty-seven books, read from Greek or translations based on the Greek text.",
+      "sourceIds": ["oca-bible", "goarch-languages"]
+    },
+    {
+      "label": "Canonical vocabulary",
+      "value": "Books beyond the Hebrew collection are often called anagignoskomena—books appointed or worthy to be read—rather than dismissed under one flat use of ‘Apocrypha.’",
+      "sourceIds": ["oca-canon", "orthodox-handbook"]
+    },
+    {
+      "label": "Hosted representation",
+      "value": "Brenton’s public-domain English Septuagint supplies much of the wider Old Testament here, alongside World English Bible and King James texts.",
+      "sourceIds": ["site-text-sources"]
+    }
+  ],
+  "formation": [
+    {
+      "date": "Third–first centuries BC",
+      "title": "Jewish Scriptures circulate in Greek",
+      "text": "The Septuagint grew as a Greek translation collection in the centuries before Christ. It contains translations and books whose textual history is not identical to the later medieval Hebrew manuscript tradition.",
+      "sourceIds": ["goarch-languages", "goarch-septuagint"]
+    },
+    {
+      "date": "Early church",
+      "title": "Greek Scripture becomes the Church’s ordinary Bible",
+      "text": "Greek-speaking Christians quoted, preached, and prayed from the Septuagint. Orthodox accounts therefore describe the longer collection as inherited Scripture rather than as a later supplement to the Hebrew-shaped Protestant Old Testament.",
+      "sourceIds": ["oca-canon", "goarch-septuagint"]
+    },
+    {
+      "date": "Byzantine and local reception",
+      "title": "Canon, lection, and liturgical use overlap without collapsing",
+      "text": "Lists, manuscripts, lectionaries, and local printed Bibles preserve a stable center with flexible edges. Orthodox scholarship warns against forcing that history into one modern, universally codified table of contents.",
+      "sourceIds": ["orthodox-handbook"]
+    },
+    {
+      "date": "Modern editions",
+      "title": "Translation and presentation remain local",
+      "text": "Greek Orthodox resources use the Septuagint for the Old Testament and Greek for the New; other Orthodox churches translate into their own languages. English editions may combine a fresh Septuagint translation with an established English New Testament.",
+      "sourceIds": ["goarch-languages", "goarch-study-bible"]
+    }
+  ],
+  "distinctives": [
+    {
+      "title": "The Catholic deuterocanon—and a wider Greek edge",
+      "text": "Along with Tobit, Judith, Wisdom, Sirach, Baruch, and 1–2 Maccabees, the Eastern Orthodox textual world commonly includes 1 Esdras, 3 Maccabees, Psalm 151, and the Prayer of Manasseh.",
+      "sourceIds": ["oca-canon", "orthodox-handbook"],
+      "bookIds": ["1ES", "3MA", "PS2", "MAN"]
+    },
+    {
+      "title": "Greek Esther and Daniel are not footnotes",
+      "text": "The Septuagint forms of Esther and Daniel preserve substantial material beyond the shorter Hebrew forms. Their chapters, stories, and numbering can appear integrated or separated depending on the edition.",
+      "sourceIds": ["oca-canon", "goarch-septuagint"],
+      "bookIds": ["ESG", "DAG", "SUS", "BEL"]
+    },
+    {
+      "title": "Fourth Maccabees needs an appendix label",
+      "text": "Some Greek Orthodox Bibles print Fourth Maccabees as additional material, often in an appendix; its presence in a bound volume does not establish uniform canonical or liturgical status across Eastern Orthodoxy.",
+      "sourceIds": ["fourth-maccabees"],
+      "bookIds": ["4MA"]
+    }
+  ],
+  "reception": [
+    {
+      "title": "Christ is the interpretive center",
+      "text": "Orthodox teaching reads every part of Scripture in the light of Christ. The Gospel book’s place on the altar visibly expresses that center without reducing the rest of Scripture to something optional.",
+      "sourceIds": ["oca-bible"]
+    },
+    {
+      "title": "Scripture lives inside Tradition",
+      "text": "Orthodox accounts place Scripture at the heart of the Church’s life through history—proclaimed in worship, interpreted by the fathers, confessed in doctrine, and prayed—rather than setting ‘Bible’ and ‘Tradition’ up as unrelated competitors.",
+      "sourceIds": ["orthodox-handbook", "oca-bible"]
+    },
+    {
+      "title": "The Psalter is a working liturgical book",
+      "text": "The Psalms are divided for repeated chanting in the cycle of services. Their Orthodox reception is therefore audible and communal as well as literary or doctrinal.",
+      "sourceIds": ["oca-psalms"],
+      "bookIds": ["PSA", "PS2"]
+    }
+  ],
+  "variations": [
+    {
+      "title": "Greek and Slavonic appendices differ",
+      "text": "Fourth Maccabees is associated especially with Greek appendices, while forms of 2 Esdras appear in Slavonic and Russian presentation. Neither should be silently promoted into a universally identical Orthodox list.",
+      "sourceIds": ["fourth-maccabees", "orthodox-handbook"]
+    },
+    {
+      "title": "Counts change when material is integrated",
+      "text": "Psalm 151, the Prayer of Manasseh, the Letter of Jeremiah, Susanna, and Bel and the Dragon may be counted as portions of larger books, liturgical collections, or separate entries. This site separates several of them so readers can actually find the text.",
+      "sourceIds": ["oca-canon", "site-text-sources"]
+    },
+    {
+      "title": "Eastern Orthodox is not a synonym for every Oriental Orthodox canon",
+      "text": "The Ethiopian Tewahedo and Armenian Apostolic churches belong to distinct Oriental Orthodox histories and have their own translation and canonical traditions. Their separate routes should not be folded into this one.",
+      "sourceIds": ["orthodox-handbook"]
+    }
+  ],
+  "debates": [
+    {
+      "question": "Is there one exact Eastern Orthodox Old Testament table of contents?",
+      "settled": "The Septuagint-shaped inheritance, the Catholic deuterocanonical core, and the shared New Testament are stable reference points.",
+      "positions": [
+        {
+          "view": "Pastoral summaries often present a straightforward longer canon.",
+          "grounds": "The Orthodox Church in America describes the Septuagint books beyond the Hebrew collection as fully part of the Old Testament.",
+          "sourceIds": ["oca-canon"]
+        },
+        {
+          "view": "Historical and local evidence resists one exhaustive, uniform list at the edges.",
+          "grounds": "Orthodox scholarship distinguishes central received books, books read in church, local appendices, and varying textual collections rather than claiming a single modern codification solves every case.",
+          "sourceIds": ["orthodox-handbook", "fourth-maccabees"]
+        }
+      ],
+      "soWhat": "The shelf can expose the wider texts, but labels and boundary notes must prevent ‘available here’ from becoming ‘equally canonical everywhere.’"
+    },
+    {
+      "question": "Why privilege the Septuagint when modern scholarship also studies Hebrew witnesses?",
+      "settled": "The Septuagint and Hebrew textual traditions are both ancient evidence, and modern Orthodox scholars use textual criticism.",
+      "positions": [
+        {
+          "view": "Ecclesial priority belongs to the Greek Bible received in Orthodox worship and theology.",
+          "grounds": "Greek Orthodox teaching identifies the Septuagint as the Church’s official Old Testament and emphasizes its early Christian use.",
+          "sourceIds": ["goarch-languages", "goarch-septuagint"]
+        },
+        {
+          "view": "No single textual witness should be flattened into every original reading.",
+          "grounds": "Current Orthodox scholarship describes a more complex textual history and notes that the Church has not codified one critical edition as the exclusive authoritative text.",
+          "sourceIds": ["orthodox-handbook"]
+        }
+      ],
+      "soWhat": "This reader names Brenton as a nineteenth-century English translation of a Greek edition; it does not label every difference from a Hebrew-based translation as a corruption."
+    }
+  ],
+  "hosting": {
+    "heading": "A broad Septuagint reading shelf, not one official Orthodox edition",
+    "summary": "The route exposes the longer Greek textual world in public-domain English and separates additions so they can be opened directly. That usability choice can produce more visible ‘books’ than a church edition that integrates the same material.",
+    "available": "The shared Old and New Testament books, the major anagignoskomena, Greek Esther and Daniel material, Psalm 151, Prayer of Manasseh, and Maccabean writings available in the source corpus.",
+    "unavailable": "A current ecclesially approved English Septuagint with its notes and lectionary use; complete local Greek, Slavonic, Georgian, Arabic, and other Orthodox edition patterns.",
+    "sourceIds": ["site-text-sources", "goarch-study-bible"]
+  },
+  "sources": [
+    {
+      "id": "oca-canon",
+      "label": "Orthodox Church in America, “Canon of Scripture”",
+      "says": "Explains why the longer Septuagint books are received as part of the Orthodox Old Testament.",
+      "url": "https://www.oca.org/questions/scripture/canon-of-scripture"
+    },
+    {
+      "id": "oca-bible",
+      "label": "Orthodox Church in America, “The Bible”",
+      "says": "Describes inspiration, the wider Old Testament, the shared New Testament, and Christ-centered interpretation.",
+      "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine-scripture/sources-of-christian-doctrine/bible1"
+    },
+    {
+      "id": "oca-psalms",
+      "label": "Orthodox Church in America, “Psalms”",
+      "says": "Explains the Psalter’s division and repeated liturgical chanting in Orthodox worship.",
+      "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine-scripture/old-testament/psalms"
+    },
+    {
+      "id": "goarch-languages",
+      "label": "Greek Orthodox Archdiocese of America, “The Bible: Its Original Languages and English Translations”",
+      "says": "Identifies the Septuagint as the Greek Church’s Old Testament reference and Greek as the New Testament source language.",
+      "url": "https://www.goarch.org/-/the-bible-its-original-languages-and-english-translations"
+    },
+    {
+      "id": "goarch-septuagint",
+      "label": "Greek Orthodox Archdiocese of America, “The Septuagint”",
+      "says": "Introduces the Greek translation’s formation, early Christian use, and continuing place in Orthodox Scripture.",
+      "url": "https://www.goarch.org/documents/32058/12709588/The%2BSeptuagint.pdf/4b84d81d-04fb-40c3-fba8-f79f0865e2f6"
+    },
+    {
+      "id": "goarch-study-bible",
+      "label": "Greek Orthodox Archdiocese of America, Orthodox Study Bible overview",
+      "says": "Describes a modern English project translating the Septuagint Old Testament and pairing it with an established English New Testament.",
+      "url": "https://www.goarch.org/-/orthodox-study-bible"
+    },
+    {
+      "id": "orthodox-handbook",
+      "label": "Oxford Handbook of the Bible in Orthodox Christianity",
+      "says": "Surveys Orthodox textual, canonical, liturgical, and interpretive diversity and cautions against treating one textual witness or modern list as universally codified.",
+      "url": "https://academic.oup.com/edited-volume/41986"
+    },
+    {
+      "id": "fourth-maccabees",
+      "label": "Lexham Bible Dictionary, entry on Fourth Maccabees",
+      "says": "Notes its appendix status in some Greek Orthodox Bibles and its absence from other regional Orthodox editions.",
+      "url": "https://biblia.com/books/lbd/offset/15707355"
+    },
+    {
+      "id": "site-text-sources",
+      "label": "Hosted Scripture text sources and processing notes",
+      "says": "Identifies Brenton’s Septuagint and the other public-domain English texts used by this reader.",
+      "href": "/sources#scripture-texts"
+    }
+  ]
+}

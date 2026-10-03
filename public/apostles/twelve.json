@@ -1,0 +1,1235 @@
+{
+  "intro": "Jesus did not recruit scholars or priests. He took four fishermen, a tax collector, a resistance sympathizer, and five men so quiet the record barely holds them — and sent them to announce a risen king to an empire. This room takes the twelve one by one: what each man was, what he said and did on the page, and what the sending cost him. Where scripture ends and tradition begins, the seam is marked, every time.",
+  "precedent": {
+    "text": "Now when they saw the boldness of Peter and John, and had perceived that they were unlearned and ignorant men, they marveled. They recognized that they had been with Jesus.",
+    "cite": "Acts 4:13, World English Bible",
+    "note": "The Sanhedrin's own verdict on the movement's leaders: no schooling, no standing — only the company they had kept. That is the standard this room applies. The credential was never the man."
+  },
+  "lists": [
+    {
+      "id": "matthew",
+      "cite": {
+        "ref": "MAT 10:2-4",
+        "label": "Matthew 10:2–4"
+      },
+      "note": "Pairs them two by two; keeps the tax-office label.",
+      "names": [
+        "Simon Peter",
+        "Andrew",
+        "James of Zebedee",
+        "John",
+        "Philip",
+        "Bartholomew",
+        "Thomas",
+        "Matthew the tax collector",
+        "James of Alphaeus",
+        "Thaddaeus",
+        "Simon the Cananaean",
+        "Judas Iscariot"
+      ]
+    },
+    {
+      "id": "mark",
+      "cite": {
+        "ref": "MRK 3:16-19",
+        "label": "Mark 3:16–19"
+      },
+      "note": "The earliest gospel's roll; adds the nicknames Jesus gave.",
+      "names": [
+        "Simon Peter",
+        "James of Zebedee",
+        "John",
+        "Andrew",
+        "Philip",
+        "Bartholomew",
+        "Matthew",
+        "Thomas",
+        "James of Alphaeus",
+        "Thaddaeus",
+        "Simon the Cananaean",
+        "Judas Iscariot"
+      ]
+    },
+    {
+      "id": "luke",
+      "cite": {
+        "ref": "LUK 6:14-16",
+        "label": "Luke 6:14–16"
+      },
+      "note": "Calls Simon a Zealot and Thaddaeus a Judas.",
+      "names": [
+        "Simon Peter",
+        "Andrew",
+        "James of Zebedee",
+        "John",
+        "Philip",
+        "Bartholomew",
+        "Matthew",
+        "Thomas",
+        "James of Alphaeus",
+        "Simon the Zealot",
+        "Judas of James",
+        "Judas Iscariot"
+      ]
+    },
+    {
+      "id": "acts",
+      "cite": {
+        "ref": "ACT 1:13",
+        "label": "Acts 1:13"
+      },
+      "note": "After the betrayal: eleven names and an empty seat.",
+      "names": [
+        "Peter",
+        "John",
+        "James of Zebedee",
+        "Andrew",
+        "Philip",
+        "Thomas",
+        "Bartholomew",
+        "Matthew",
+        "James of Alphaeus",
+        "Simon the Zealot",
+        "Judas of James"
+      ]
+    }
+  ],
+  "listsNote": "Four roll-calls survive, and no two agree on the order. But the structure never moves: three groups of four (Acts's last group missing its twelfth), with the same three names leading them — Peter always first, Philip always fifth, James of Alphaeus always ninth — and Judas Iscariot always last, until he is gone. The name-swaps inside the lists (Thaddaeus / Judas of James, Cananaean / Zealot) are the same men wearing different labels — the hosted text renders Cananaean as Zealot, so the citation links read Zealot in all four — and the records below say so where it matters.",
+  "apostles": [
+    {
+      "id": "peter",
+      "name": "Peter",
+      "aka": "Simon bar-Jonah · Cephas",
+      "meaning": "Petros — rock; the name Jesus gave him before he had earned it",
+      "seat": 1,
+      "band": "Fisherman of Bethsaida, settled in Capernaum; married, with a boat and a business",
+      "glanceCall": "Left the nets at a word, was renamed the rock, and spoke first in nearly every scene the gospels record.",
+      "glanceCost": "Denied Jesus three times in one night; restored three times at breakfast; early sources say Rome killed him under Nero.",
+      "before": "A working fisherman from Bethsaida who ran his trade out of Capernaum — the gospels show his boat, his nets, his house, and his mother-in-law. Not a rabbi's student. The Sanhedrin later files him under unlearned and ordinary.",
+      "call": {
+        "title": "The catch he couldn't argue with",
+        "note": "After a night of nothing, Jesus borrows the boat, then fills the nets until they tear. Peter's response is not excitement — it is 'depart from me, for I am a sinful man.' Jesus keeps him anyway: from now on you catch people.",
+        "refs": [
+          {
+            "ref": "LUK 5:1-11",
+            "label": "Luke 5:1–11"
+          },
+          {
+            "ref": "JHN 1:40-42",
+            "label": "John 1:40–42"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "The confession — and the rebuke, seven verses apart",
+          "note": "At Caesarea Philippi he answers the question no one else will touch: you are the Christ. Seven verses later he is contradicting Jesus about the cross and hearing 'get behind me, Satan.' Both scenes are him.",
+          "refs": [
+            {
+              "ref": "MAT 16:13-23",
+              "label": "Matthew 16:13–23"
+            }
+          ]
+        },
+        {
+          "title": "Out of the boat",
+          "note": "The only man in the story who walks on water besides Jesus — and the record keeps both halves: the walking and the sinking.",
+          "refs": [
+            {
+              "ref": "MAT 14:28-31",
+              "label": "Matthew 14:28–31"
+            }
+          ]
+        },
+        {
+          "title": "The sword in the garden",
+          "note": "When the arrest party comes he draws and swings — and is told to put it away. His courage was never in question; its direction was.",
+          "refs": [
+            {
+              "ref": "JHN 18:10-11",
+              "label": "John 18:10–11"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "Hours after swearing he would die first, he denied knowing Jesus three times — to servants, at a fire, while the trial ran upstairs. Luke adds the detail the others spare us: the Lord turned and looked at him. And the fault did not end at Pentecost — years later in Antioch, Paul confronted him for backing away from Gentile tables when the wrong crowd arrived. The rock cracked more than once.",
+        "refs": [
+          {
+            "ref": "LUK 22:54-62",
+            "label": "Luke 22:54–62"
+          },
+          {
+            "ref": "MRK 14:29-31",
+            "label": "Mark 14:29–31"
+          },
+          {
+            "ref": "GAL 2:11-14",
+            "label": "Galatians 2:11–14"
+          }
+        ]
+      },
+      "after": {
+        "text": "Restored over breakfast with three questions matching three denials, then told plainly how he would die. In Acts he is the voice of Pentecost, the defendant before the Sanhedrin, the first to carry the message to a Roman officer's house, and the prisoner an angel walks out of Herod's jail.",
+        "refs": [
+          {
+            "ref": "JHN 21:15-19",
+            "label": "John 21:15–19"
+          },
+          {
+            "ref": "ACT 2:14-41",
+            "label": "Acts 2:14–41"
+          },
+          {
+            "ref": "ACT 10:34-48",
+            "label": "Acts 10:34–48"
+          },
+          {
+            "ref": "ACT 12:6-11",
+            "label": "Acts 12:6–11"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Worked from Jerusalem outward through Judea, Samaria, and Antioch; his own letter writes from 'Babylon' — the early church's code for Rome.",
+          "earliest": "1 Peter 5:13; Ignatius, To the Romans 4 (~110)",
+          "sourceUrl": "https://www.newadvent.org/fathers/0107.htm",
+          "weight": "early"
+        }
+      ],
+      "death": {
+        "claim": "Executed in Rome under Nero, by crucifixion. The famous head-downward detail arrives later, in the apocryphal Acts of Peter and in Origen.",
+        "earliest": "John 21:18–19 foretells it; 1 Clement 5 (~96) states it; Eusebius, Church History 3.1 carries Origen's head-down detail",
+        "sourceUrl": "https://www.newadvent.org/fathers/250103.htm",
+        "weight": "early",
+        "note": "Death in Rome is among the best-attested apostle traditions. The upside-down cross is not in scripture and not in the first century."
+      },
+      "writings": "Two letters carry his name. 1 Peter was received everywhere from the start; 2 Peter was doubted in the ancient church itself — Origen records the hesitation — and the doubt is stated here, not hidden.",
+      "seeAlso": {
+        "href": "/church",
+        "label": "The road from the upper room"
+      }
+    },
+    {
+      "id": "andrew",
+      "name": "Andrew",
+      "aka": "Brother of Simon Peter",
+      "meaning": "Andreas — manly; a Greek name in a Galilean family",
+      "seat": 2,
+      "band": "Fisherman of Bethsaida; first a disciple of John the Baptist",
+      "glanceCall": "The first called — and his first recorded act was to go find his brother and bring him to Jesus.",
+      "glanceCost": "Origen's line sends him north to Scythia; the cross at Patras stands only on later acts.",
+      "before": "A fisherman already looking for something — he had attached himself to John the Baptist before Jesus ever passed by. When the Baptist said 'behold, the Lamb of God,' Andrew took him at his word and followed.",
+      "call": {
+        "title": "The first follower",
+        "note": "He spends a day with Jesus, then goes straight for Simon: 'we have found the Messiah.' The gospel's first evangelist, working on his own brother before there was anything to join.",
+        "refs": [
+          {
+            "ref": "JHN 1:35-42",
+            "label": "John 1:35–42"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "The boy with the loaves",
+          "note": "Five thousand hungry people, and Andrew is the one who turns up holding the absurd offer: a child's five loaves and two fish — 'but what are these among so many?' He brings what he finds and lets Jesus decide what it counts for.",
+          "refs": [
+            {
+              "ref": "JHN 6:8-9",
+              "label": "John 6:8–9"
+            }
+          ]
+        },
+        {
+          "title": "The Greeks at the door",
+          "note": "When Greek pilgrims want to see Jesus, Philip goes to Andrew, and Andrew walks them in. Three scenes in John, and in all three he is bringing someone to Jesus.",
+          "refs": [
+            {
+              "ref": "JHN 12:20-22",
+              "label": "John 12:20–22"
+            }
+          ]
+        },
+        {
+          "title": "The question on the Mount of Olives",
+          "note": "With the inner three, he asks the question that opens the longest prophecy Jesus gives: when will these things be?",
+          "refs": [
+            {
+              "ref": "MRK 13:3-4",
+              "label": "Mark 13:3–4"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "No personal fault is recorded against Andrew — the honest note is that the record itself thins out. The man who brought Peter watched Peter, James, and John become the inner circle without him. He shares the one fault charged to them all: when the arrest came, they all fled.",
+        "refs": [
+          {
+            "ref": "MRK 14:50",
+            "label": "Mark 14:50"
+          }
+        ]
+      },
+      "after": {
+        "text": "Named at the upper-room roll call after the ascension — and then the New Testament never mentions him again. The first man called is the first to vanish into the work.",
+        "refs": [
+          {
+            "ref": "ACT 1:13",
+            "label": "Acts 1:13"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Assigned Scythia — the steppe country north of the Black Sea — in the earliest surviving mission list.",
+          "earliest": "Origen, quoted in Eusebius, Church History 3.1 (~240)",
+          "sourceUrl": "https://www.newadvent.org/fathers/250103.htm",
+          "weight": "early"
+        }
+      ],
+      "death": {
+        "claim": "Crucified at Patras in Achaia, bound rather than nailed. The X-shaped cross of the flag traditions is a medieval addition.",
+        "earliest": "Acts of Andrew (~200), an apocryphal romance",
+        "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)",
+        "weight": "late",
+        "note": "The Patras death is old but stands on a legendary text; the saltire shape is centuries younger still."
+      }
+    },
+    {
+      "id": "james-zebedee",
+      "name": "James of Zebedee",
+      "aka": "Son of Zebedee · Boanerges",
+      "meaning": "Yaakov — Jacob; Boanerges, son of thunder, the nickname Jesus gave the brothers",
+      "seat": 3,
+      "band": "Fisherman; the family firm had a boat and hired men",
+      "glanceCall": "Left his father standing in the boat; became one of the inner three at every unveiled moment.",
+      "glanceCost": "The only apostle whose death scripture itself records: Herod's sword, about 44 AD.",
+      "before": "The elder Zebedee brother, partner with Peter's boat in a fishing operation big enough to employ hands. The nickname Jesus gave the pair — sons of thunder — is a character report from the man who knew them best.",
+      "call": {
+        "title": "Nets, father, hired men — left",
+        "note": "Mark's account is four verses of abruptness: Jesus calls, and James leaves the nets, the boat, and Zebedee himself standing in it.",
+        "refs": [
+          {
+            "ref": "MRK 1:19-20",
+            "label": "Mark 1:19–20"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "Inside the inner three",
+          "note": "At Jairus' house, on the transfiguration mountain, and in Gethsemane, Jesus takes the same three witnesses: Peter, James, John. James saw everything the movement's two loudest voices saw — and left no writing.",
+          "refs": [
+            {
+              "ref": "MRK 5:37",
+              "label": "Mark 5:37"
+            },
+            {
+              "ref": "MRK 9:2",
+              "label": "Mark 9:2"
+            },
+            {
+              "ref": "MRK 14:33",
+              "label": "Mark 14:33"
+            }
+          ]
+        },
+        {
+          "title": "The cup he said he could drink",
+          "note": "The brothers ask for the thrones on Jesus' right and left. He asks instead whether they can drink his cup, and they answer — 'we can' — with no idea what it holds. Jesus tells them plainly: you will.",
+          "refs": [
+            {
+              "ref": "MRK 10:35-40",
+              "label": "Mark 10:35–40"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "The thunder was real: when a Samaritan village refused them lodging, James and John proposed calling fire down on it. Jesus rebuked them both. Ambition and heat, both on the record.",
+        "refs": [
+          {
+            "ref": "LUK 9:51-55",
+            "label": "Luke 9:51–55"
+          },
+          {
+            "ref": "MRK 10:41",
+            "label": "Mark 10:41"
+          }
+        ]
+      },
+      "after": {
+        "text": "He never left the Jerusalem church's front line. Herod Agrippa opened his persecution by taking the loudest target available — and the cup prophecy landed first on James.",
+        "refs": [
+          {
+            "ref": "ACT 12:1-2",
+            "label": "Acts 12:1–2"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Stayed with the Jerusalem church; the sword found him before any road did. The Spain mission behind Santiago de Compostela first appears in seventh-century lists.",
+          "earliest": "Acts 12:1–2 for Jerusalem; the Breviarium Apostolorum (~600s) for Spain",
+          "sourceUrl": "https://www.newadvent.org/cathen/08279b.htm",
+          "weight": "scripture",
+          "note": "The pilgrimage is real history; the mission it commemorates is late tradition, and the two are kept separate here."
+        }
+      ],
+      "death": {
+        "claim": "Beheaded in Jerusalem by order of Herod Agrippa I, around 44 AD — the only apostolic death the New Testament itself records.",
+        "earliest": "Acts 12:1–2",
+        "sourceUrl": "/scriptures/protestant/ACT/12#v1",
+        "weight": "scripture"
+      }
+    },
+    {
+      "id": "john",
+      "name": "John",
+      "aka": "Son of Zebedee · Boanerges",
+      "meaning": "Yohanan — the LORD is gracious",
+      "seat": 4,
+      "band": "Fisherman; the younger Zebedee brother",
+      "glanceCall": "The other son of thunder — inner-circle witness from the first healing to the empty tomb.",
+      "glanceCost": "Tradition alone among the twelve lets him die old — at Ephesus, still repeating 'love one another.'",
+      "before": "The younger of Zebedee's sons, remembered by tradition as the youngest of the band. He earned the same thunder nickname as his brother and the gospels supply the evidence for it.",
+      "call": {
+        "title": "The same four verses",
+        "note": "Called in the same breath as James — same boat, same abandoned nets, same father left behind.",
+        "refs": [
+          {
+            "ref": "MRK 1:19-20",
+            "label": "Mark 1:19–20"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "'He was not one of us'",
+          "note": "John reports his own worst moment: we saw a man driving out demons in your name and told him to stop, because he was not following us. Jesus overrules him — whoever is not against us is for us. Gatekeeping, corrected on the record.",
+          "refs": [
+            {
+              "ref": "MRK 9:38-41",
+              "label": "Mark 9:38–41"
+            }
+          ]
+        },
+        {
+          "title": "At the cross, given a mother",
+          "note": "The fourth gospel places one disciple at the crucifixion itself, and Jesus hands his mother into that disciple's care. The church has read this as John since the second century — the gospel itself keeps him unnamed, and this site says so rather than smoothing it over.",
+          "refs": [
+            {
+              "ref": "JHN 19:26-27",
+              "label": "John 19:26–27"
+            }
+          ]
+        },
+        {
+          "title": "Outrunning Peter to the tomb",
+          "note": "On resurrection morning he wins the footrace, stops at the entrance, and lets Peter barrel past him inside. Then he goes in, sees the folded cloths, and believes.",
+          "refs": [
+            {
+              "ref": "JHN 20:2-8",
+              "label": "John 20:2–8"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "Fire on a village, a gag order on an outsider, a play for the best throne — the young John's recorded instincts are heat and exclusion. The letters at the end of the corpus are the same voice with the thunder converted: little children, love one another, because love is from God.",
+        "refs": [
+          {
+            "ref": "LUK 9:54",
+            "label": "Luke 9:54"
+          },
+          {
+            "ref": "1JN 4:7",
+            "label": "1 John 4:7"
+          }
+        ]
+      },
+      "after": {
+        "text": "Peter's partner through the early chapters of Acts — at the temple gate healing, before the Sanhedrin, sent to Samaria. Paul later names him one of the three pillars of the Jerusalem church. Revelation places its John on Patmos 'because of the word of God.'",
+        "refs": [
+          {
+            "ref": "ACT 3:1-10",
+            "label": "Acts 3:1–10"
+          },
+          {
+            "ref": "GAL 2:9",
+            "label": "Galatians 2:9"
+          },
+          {
+            "ref": "REV 1:9",
+            "label": "Revelation 1:9"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Settled at Ephesus and taught into extreme old age; Polycarp of Smyrna was remembered as his direct student.",
+          "earliest": "Irenaeus, Against Heresies 3.1.1 and his letter to Florinus (~180)",
+          "sourceUrl": "https://www.newadvent.org/fathers/0103301.htm",
+          "weight": "early"
+        }
+      ],
+      "death": {
+        "claim": "Died of old age at Ephesus in the reign of Trajan — the one member of the twelve tradition does not kill. His own gospel records the rumor that he would never die, and corrects it.",
+        "earliest": "Irenaeus, Against Heresies 2.22.5 (~180); John 21:20–23 for the corrected rumor",
+        "sourceUrl": "https://www.newadvent.org/fathers/0103222.htm",
+        "weight": "early"
+      },
+      "writings": "A gospel, three letters, and Revelation are carried under his name. The gospel and first letter were received early and broadly; Revelation's authorship was questioned inside the ancient church — Dionysius of Alexandria argued from the Greek itself that it was another John — and the question is as old as the book.",
+      "seeAlso": {
+        "href": "/early",
+        "label": "The students' generation: the Writings"
+      }
+    },
+    {
+      "id": "philip",
+      "name": "Philip",
+      "aka": "Of Bethsaida",
+      "meaning": "Philippos — lover of horses; another Greek name in Galilee",
+      "seat": 5,
+      "band": "From Bethsaida, the same town as Andrew and Peter",
+      "glanceCall": "Called directly — 'follow me' — and immediately went recruiting: found Nathanael and said 'come and see.'",
+      "glanceCost": "Early witnesses put his grave at Hierapolis in Phrygia; the martyrdom stories are centuries younger.",
+      "before": "A Bethsaida man with a Greek name, which is likely why Greek-speaking pilgrims later picked him as their way in. The fourth gospel is the only one that lets him speak, and it gives him four scenes.",
+      "call": {
+        "title": "'Follow me' — then 'come and see'",
+        "note": "Jesus finds Philip; Philip finds Nathanael. His answer to Nathanael's sneer about Nazareth is not an argument but an invitation: come and see. It remains the shortest apologetic on record.",
+        "refs": [
+          {
+            "ref": "JHN 1:43-46",
+            "label": "John 1:43–46"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "The math on the hillside",
+          "note": "Jesus tests him: where can we buy bread for all these? Philip runs the numbers — two hundred denarii would not buy a bite each — and the text says Jesus already knew what he would do. The calculator got to watch the arithmetic break.",
+          "refs": [
+            {
+              "ref": "JHN 6:5-7",
+              "label": "John 6:5–7"
+            }
+          ]
+        },
+        {
+          "title": "The Greeks choose their door",
+          "note": "Foreign pilgrims who want Jesus go to the apostle with the Greek name. Philip checks with Andrew, and together they carry the request in.",
+          "refs": [
+            {
+              "ref": "JHN 12:20-22",
+              "label": "John 12:20–22"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "At the last supper, after three years of watching, Philip asks: Lord, show us the Father, and it is enough for us. The answer carries an audible ache — 'have I been with you so long, and you still do not know me?' The slowness is on the record; so is the patience it met.",
+        "refs": [
+          {
+            "ref": "JHN 14:8-9",
+            "label": "John 14:8–9"
+          }
+        ]
+      },
+      "after": {
+        "text": "Present at the upper-room roll call, then silent in the New Testament. The Philip whose mission fills Acts 8 — Samaria, the Ethiopian official — is a different man: Philip the deacon-evangelist. Ancient writers already confused the two, and the confusion is flagged wherever this site touches him.",
+        "refs": [
+          {
+            "ref": "ACT 1:13",
+            "label": "Acts 1:13"
+          },
+          {
+            "ref": "ACT 21:8-9",
+            "label": "Acts 21:8–9"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Ended at Hierapolis in Phrygia — one of the earliest hard geographic claims for any apostle, from a bishop writing within living memory of the region.",
+          "earliest": "Polycrates of Ephesus (~190) and Papias' circle, both preserved in Eusebius, Church History 3.31 and 3.39",
+          "sourceUrl": "https://www.newadvent.org/fathers/250103.htm",
+          "weight": "early",
+          "note": "Even here the two-Philips problem shadows the sources, and honest readers keep it in view."
+        }
+      ],
+      "death": {
+        "claim": "Martyred at Hierapolis — crucified upside down in the developed legend.",
+        "earliest": "Acts of Philip (~350s), a late apocryphal text",
+        "sourceUrl": "https://www.newadvent.org/cathen/11799a.htm",
+        "weight": "late",
+        "note": "The grave at Hierapolis is early testimony; the manner of death is not."
+      }
+    },
+    {
+      "id": "bartholomew",
+      "name": "Bartholomew",
+      "aka": "Bar-Talmai · traditionally Nathanael of Cana",
+      "meaning": "Son of Talmai — a patronymic; if he is Nathanael, his given name means 'God has given'",
+      "seat": 6,
+      "band": "If Nathanael: from Cana in Galilee, found under a fig tree",
+      "glanceCall": "Sneered at Nazareth, then folded in one exchange: 'Rabbi, you are the Son of God, the King of Israel.'",
+      "glanceCost": "An early line leaves his teaching in India; Armenia's founding tradition claims his death — flaying is the art's addition.",
+      "before": "The synoptics give Bartholomew nothing but a seat beside Philip. The fourth gospel never mentions Bartholomew but gives Philip a recruit named Nathanael — the church has equated the two for centuries, plausibly, without proof. This record says 'if' and means it.",
+      "call": {
+        "title": "The skeptic under the fig tree",
+        "note": "'Can anything good come out of Nazareth?' is the record's first review of Jesus, delivered by his own future apostle. One sentence later — 'I saw you under the fig tree' — the skeptic is confessing him King of Israel. Jesus' verdict on him stands: an Israelite in whom there is no deceit.",
+        "refs": [
+          {
+            "ref": "JHN 1:45-51",
+            "label": "John 1:45–51"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "Back in the boat at the end",
+          "note": "Nathanael of Cana is named among the seven who go fishing after the resurrection and meet Jesus on the shore at breakfast. First scene: under a tree, doubting. Last scene: hauling an unbroken net he was told where to throw.",
+          "refs": [
+            {
+              "ref": "JHN 21:2",
+              "label": "John 21:2"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "His recorded fault is the sneer — dismissing the Messiah by hometown before meeting him. It earned no rebuke, because it came with no deceit: he said aloud what others think quietly, and he changed his verdict the moment the evidence arrived.",
+        "refs": [
+          {
+            "ref": "JHN 1:46",
+            "label": "John 1:46"
+          }
+        ]
+      },
+      "after": {
+        "text": "Named at the upper-room roll call; nothing after. From there the record passes to travelers' reports and national memory.",
+        "refs": [
+          {
+            "ref": "ACT 1:13",
+            "label": "Acts 1:13"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Reached 'India' — when the teacher Pantaenus traveled there a century on, believers showed him a Hebrew Matthew they said Bartholomew had left them.",
+          "earliest": "Eusebius, Church History 5.10, on Pantaenus (~180s)",
+          "sourceUrl": "https://www.newadvent.org/fathers/250105.htm",
+          "weight": "early",
+          "note": "'India' in Roman mouths could stretch from Arabia to the subcontinent; the report is early, its geography loose."
+        },
+        {
+          "claim": "Evangelized Armenia with Thaddaeus — the founding claim of the Armenian Apostolic Church, which calls the pair its first illuminators.",
+          "earliest": "Armenian national histories (Movses Khorenatsi, 5th century) carrying older tradition",
+          "sourceUrl": "https://www.newadvent.org/cathen/02313c.htm",
+          "weight": "late",
+          "note": "Late by the measure this room uses — and load-bearing for an entire nation's church, which made Christianity its state faith in 301."
+        }
+      ],
+      "death": {
+        "claim": "Martyred in Armenia — at Albak in Vaspurakan by the Armenian tradition, at 'Albanopolis' in Caucasian Albania by the Western martyrology. The flaying that put the knife in his statues' hands — and his skin over Michelangelo's self-portrait — is the developed legend.",
+        "earliest": "Late martyrologies; no early source names the manner",
+        "sourceUrl": "https://www.newadvent.org/cathen/02313c.htm",
+        "weight": "late"
+      },
+      "seeAlso": {
+        "href": "/church/faces",
+        "label": "Armenia's illuminator, in the faces"
+      }
+    },
+    {
+      "id": "thomas",
+      "name": "Thomas",
+      "aka": "Toma · Didymus — both mean twin",
+      "meaning": "The twin; whose twin, the text never says",
+      "seat": 7,
+      "band": "Galilean; trade unrecorded",
+      "glanceCall": "The gospel of John gives him three scenes before the famous one — and in the first he is volunteering to die.",
+      "glanceCost": "The strongest eastern tradition of any apostle: India's Thomas Christians keep his road, his hill, and his spear.",
+      "before": "History filed him under one adjective, and it is the wrong one. Before the doubt, John's gospel records his courage: when Jesus turns toward Judea and the stones waiting there, it is Thomas who says to the others, 'let us also go, that we may die with him.'",
+      "call": {
+        "title": "No call scene survives",
+        "note": "His calling is not narrated — he simply stands in all four lists. The record starts him mid-story, already committed.",
+        "refs": [
+          {
+            "ref": "MRK 3:18",
+            "label": "Mark 3:18"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "'Let us also go, that we may die with him'",
+          "note": "Lazarus is dead, Judea is lethal, and Jesus is going anyway. Thomas doesn't argue the plan; he signs onto the worst version of it. This is the same man later demanding evidence — courage and skepticism in one head.",
+          "refs": [
+            {
+              "ref": "JHN 11:16",
+              "label": "John 11:16"
+            }
+          ]
+        },
+        {
+          "title": "'We don't know where you are going'",
+          "note": "At the last supper he interrupts the comfort with the honest question nobody else asks. The answer he gets — I am the way, the truth, and the life — exists in the record because Thomas refused to nod along.",
+          "refs": [
+            {
+              "ref": "JHN 14:5-6",
+              "label": "John 14:5–6"
+            }
+          ]
+        },
+        {
+          "title": "The demand, and the confession",
+          "note": "He missed the first appearance and rejected eleven eyewitnesses: unless I put my finger in the mark of the nails, I will never believe. A week later Jesus offers him exactly that — and Thomas answers with the highest confession any gospel records: my Lord and my God. The blessing that follows belongs to everyone reading: blessed are those who have not seen, and believed.",
+          "refs": [
+            {
+              "ref": "JHN 20:24-29",
+              "label": "John 20:24–29"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "The doubt was real — a week of standing alone against every friend he had, demanding autopsy-grade proof. The record neither shames nor flatters it: Jesus met the demand, and the demand became the confession the church still repeats.",
+        "refs": [
+          {
+            "ref": "JHN 20:25",
+            "label": "John 20:25"
+          }
+        ]
+      },
+      "after": {
+        "text": "Back in the boat in John's last chapter, named at the upper-room roll call — then the New Testament lets him go east out of its sight.",
+        "refs": [
+          {
+            "ref": "JHN 21:2",
+            "label": "John 21:2"
+          },
+          {
+            "ref": "ACT 1:13",
+            "label": "Acts 1:13"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Assigned Parthia in the earliest mission list; the fuller tradition carries him to the Malabar coast of India, where the Mar Thoma churches have claimed him as founder for as long as records exist.",
+          "earliest": "Origen via Eusebius, Church History 3.1 (Parthia); Acts of Thomas (~220) and the continuous Kerala tradition (India)",
+          "sourceUrl": "https://www.newadvent.org/fathers/250103.htm",
+          "weight": "early",
+          "note": "The Acts of Thomas is a novel, not a report — but it is an early novel, and first-century sea lanes to Kerala are documented trade routes. India's claim is the strongest eastern tradition any apostle has."
+        }
+      ],
+      "death": {
+        "claim": "Speared on a hill at Mylapore, near modern Chennai, where the local church has kept the site continuously.",
+        "earliest": "Acts of Thomas (~220); Ephrem the Syrian (4th century) already knows the India martyrdom and the relics at Edessa",
+        "sourceUrl": "https://www.newadvent.org/cathen/14658b.htm",
+        "weight": "early",
+        "note": "Early attestation in a legendary genre — graded early with that caveat stated."
+      }
+    },
+    {
+      "id": "matthew",
+      "name": "Matthew",
+      "aka": "Traditionally Levi, son of Alphaeus (Mark 2:14)",
+      "meaning": "Mattityahu — gift of the LORD",
+      "seat": 8,
+      "band": "Tax collector at the Capernaum toll booth — a collaborator with the occupation",
+      "glanceCall": "Stood up from the toll booth mid-shift, left the ledgers, and threw Jesus a banquet full of his disreputable friends.",
+      "glanceCost": "Even his martyrdom is disputed — one early witness says he died naturally. The room says so plainly.",
+      "before": "A toll farmer on the Capernaum customs post — the trade Rome franchised and Judea despised. Tax collectors were classed with sinners in the era's own speech, barred as court witnesses in later rabbinic rules, and Matthew ran a booth in his hometown's face.",
+      "call": {
+        "title": "The shortest résumé conversion on record",
+        "note": "Two words at the booth — follow me — and he rose and followed. The synoptics tell it of Matthew and of Levi; the church has read them as one man since the beginning, and this record follows that reading, saying so. His first act was a dinner: his old colleagues and Jesus at one table, and the Pharisees' complaint answered with the line that defines the whole list: I came not to call the righteous, but sinners.",
+        "refs": [
+          {
+            "ref": "MAT 9:9-13",
+            "label": "Matthew 9:9–13"
+          },
+          {
+            "ref": "LUK 5:27-32",
+            "label": "Luke 5:27–32"
+          },
+          {
+            "ref": "MRK 2:14",
+            "label": "Mark 2:14"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "The label he kept",
+          "note": "Every list names him; only the list in his own gospel adds the epithet — Matthew the tax collector. If he wrote it, he chose to keep his shame in his own book's roll call. The record contains no other scene of him.",
+          "refs": [
+            {
+              "ref": "MAT 10:3",
+              "label": "Matthew 10:3"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "His fault predates the call and needs no unearthing: he took the empire's franchise against his own people. The gospels' point is not that the fault was small but that the call ignored it — and the man kept the receipt in writing.",
+        "refs": [
+          {
+            "ref": "MAT 9:11",
+            "label": "Matthew 9:11"
+          }
+        ]
+      },
+      "after": {
+        "text": "Named at the upper-room roll call, then individually silent in the New Testament — the loudest thing left under his name is a gospel.",
+        "refs": [
+          {
+            "ref": "ACT 1:13",
+            "label": "Acts 1:13"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Later lists scatter him — 'Ethiopia' in some, Persia in others. The traditions conflict and none is early.",
+          "earliest": "Rufinus and Socrates Scholasticus (4th–5th century) for Ethiopia",
+          "sourceUrl": "https://www.newadvent.org/cathen/10056b.htm",
+          "weight": "late",
+          "note": "Where the sources disagree, this site shows the disagreement instead of picking a winner. And 'Ethiopia' is itself a loose toponym in these legends — the African kingdom, or the Caucasus coast the Matthias traditions mean by the same word."
+        }
+      ],
+      "death": {
+        "claim": "Disputed at the root: Clement of Alexandria preserves Heracleon's claim that Matthew died a natural death, while later tradition supplies a martyrdom. The oldest voice on record is the one that says no one killed him.",
+        "earliest": "Heracleon via Clement of Alexandria, Stromata 4.9 (~180)",
+        "sourceUrl": "https://www.newadvent.org/fathers/02104.htm",
+        "weight": "early",
+        "note": "Graded by the earliest source — which, uncomfortably for the legends, reports no martyrdom."
+      },
+      "writings": "The first gospel has carried his name since the earliest testimony we have — Papias: 'Matthew collected the oracles in the Hebrew language.' What exactly Papias meant, and how it relates to the Greek Matthew we read, is a live scholarly question stated here as one."
+    },
+    {
+      "id": "james-alphaeus",
+      "name": "James of Alphaeus",
+      "aka": "Possibly 'James the less'",
+      "meaning": "Yaakov — Jacob, one of the era's most common names",
+      "seat": 9,
+      "band": "Nothing recorded — no town, no trade",
+      "glanceCall": "Four list-lines are his entire certain record — the ninth seat, held by a man history cannot see.",
+      "glanceCost": "No early source records his road or his death. This room refuses to invent one.",
+      "before": "The record holds a name, a father's name, and a seat. Attempts to enlarge him — merging him with 'James the less' of Mark 15:40, or with James the Lord's brother who led the Jerusalem church — stack identifications the text does not make. Paul's letters treat the Lord's brother as distinct from the twelve.",
+      "call": {
+        "title": "No scene survives",
+        "note": "He was called — the lists prove it happened — but no gospel spends a verse on it. The ninth seat's entire narrative is its existence.",
+        "refs": [
+          {
+            "ref": "MRK 3:18",
+            "label": "Mark 3:18"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "The whole file",
+          "note": "Matthew 10:3, Mark 3:18, Luke 6:15, Acts 1:13. Four occurrences, all of them roll calls. He heard everything, saw everything, fled with everyone, returned with everyone — and said nothing the record kept.",
+          "refs": [
+            {
+              "ref": "MAT 10:3",
+              "label": "Matthew 10:3"
+            },
+            {
+              "ref": "MRK 3:18",
+              "label": "Mark 3:18"
+            },
+            {
+              "ref": "LUK 6:15",
+              "label": "Luke 6:15"
+            },
+            {
+              "ref": "ACT 1:13",
+              "label": "Acts 1:13"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "Obscurity is his record, and there is no fault in it — but there is the shared one: all of them fled the garden, and all of them were at the table when the argument broke out over which of them was greatest. He was in that argument, and lost it, and the losing was the point.",
+        "refs": [
+          {
+            "ref": "MRK 14:50",
+            "label": "Mark 14:50"
+          },
+          {
+            "ref": "LUK 22:24-27",
+            "label": "Luke 22:24–27"
+          }
+        ]
+      },
+      "after": {
+        "text": "The upper-room roll call is his last certain appearance. Whatever he did with the remaining decades, he did it without a biographer — which is what most obedience looks like.",
+        "refs": [
+          {
+            "ref": "ACT 1:13",
+            "label": "Acts 1:13"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Later lists send him to Egypt; the claims are late, thin, and tangled with the other Jameses.",
+          "earliest": "Late martyrologies only",
+          "sourceUrl": "https://www.newadvent.org/cathen/08280a.htm",
+          "weight": "late"
+        }
+      ],
+      "death": {
+        "claim": "Unknown. Late accounts give him a martyrdom, but they cannot agree on where or how, and the earliest sources give nothing at all.",
+        "earliest": "No early source",
+        "sourceUrl": "https://www.newadvent.org/cathen/08280a.htm",
+        "weight": "late",
+        "note": "An honest blank. Ten thousand churches carry the name of a man about whom the record keeps four lines."
+      }
+    },
+    {
+      "id": "thaddaeus",
+      "name": "Thaddaeus",
+      "aka": "Judas of James · 'Judas, not Iscariot'",
+      "meaning": "Etymology uncertain — perhaps Aramaic for heart, perhaps a Greek nickname; his other name is Judah, praise",
+      "seat": 10,
+      "band": "Nothing recorded of trade or town",
+      "glanceCall": "One recorded sentence — and it drew the promise that God would make his home with anyone who loves him.",
+      "glanceCost": "Armenia holds his mission with Bartholomew; a monastery at one of the oldest claimed apostolic shrines keeps his name.",
+      "before": "Three names for one quiet man: Thaddaeus in Matthew and Mark, Judas of James in Luke and Acts, and the fourth gospel's careful 'Judas, not Iscariot' — a man spending history disambiguated from a traitor who shared his name.",
+      "call": {
+        "title": "No scene survives",
+        "note": "Like the other quiet ones, his call is attested only by his seat in the lists.",
+        "refs": [
+          {
+            "ref": "LUK 6:16",
+            "label": "Luke 6:16"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "The one question",
+          "note": "At the last supper: Lord, why will you reveal yourself to us, and not to the world? The answer is one of the largest promises in the gospel — if anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him. One sentence in, one home promised back.",
+          "refs": [
+            {
+              "ref": "JHN 14:22-23",
+              "label": "John 14:22–23"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "His question carries the group's shared blind spot — still expecting a public, political unveiling. He shares the garden flight with the rest. Nothing else is charged against him; there is nothing else at all.",
+        "refs": [
+          {
+            "ref": "MRK 14:50",
+            "label": "Mark 14:50"
+          }
+        ]
+      },
+      "after": {
+        "text": "At the upper-room roll call as 'Judas of James,' then gone from the New Testament. The letter of Jude introduces its author as brother of James, servant of Jesus — whether that is this man, the ancient church itself debated.",
+        "refs": [
+          {
+            "ref": "ACT 1:13",
+            "label": "Acts 1:13"
+          },
+          {
+            "ref": "JUD 1:1",
+            "label": "Jude 1"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Went east — Eusebius preserves the Edessa story of a Thaddaeus who healed king Abgar, though he calls that man one of the seventy, not the twelve. The two Thaddaei have been tangled ever since.",
+          "earliest": "Eusebius, Church History 1.13 (~320), from the Edessa archives",
+          "sourceUrl": "https://www.newadvent.org/fathers/250101.htm",
+          "weight": "early",
+          "note": "Early testimony, uncertain referent — the grade belongs to the story, not necessarily to this seat."
+        },
+        {
+          "claim": "Evangelized Armenia with Bartholomew; the monastery bearing his name in the Armenian highlands claims to stand on his grave, rebuilt over a shrine tradition dates to 68 AD.",
+          "earliest": "Armenian national histories (5th century); St. Thaddeus Monastery, a UNESCO World Heritage site",
+          "sourceUrl": "https://whc.unesco.org/en/list/1262/",
+          "weight": "late",
+          "note": "Late by this room's measure, and the founding memory of the Armenian Apostolic Church."
+        }
+      ],
+      "death": {
+        "claim": "Martyred in Armenia with an axe or arrows in the developed tradition; the instruments vary by the telling.",
+        "earliest": "Armenian martyrdom traditions, recorded from the 5th century",
+        "sourceUrl": "https://whc.unesco.org/en/list/1262/",
+        "weight": "late"
+      },
+      "seeAlso": {
+        "href": "/church/tree",
+        "label": "Where the Armenian branch grows"
+      }
+    },
+    {
+      "id": "simon-zealot",
+      "name": "Simon the Zealot",
+      "aka": "The Cananaean — Aramaic qan'ana, zealous one",
+      "meaning": "Shimon — he has heard; the epithet marks temperature, not a hometown",
+      "seat": 11,
+      "band": "Politics recorded, biography not: a man of the zealous, Rome-resisting temperament",
+      "glanceCall": "His label is his whole biography — and it seats the resistance at the same table as the collaborator.",
+      "glanceCost": "The later lists send him everywhere from Egypt to Persia and cannot agree; nothing early survives.",
+      "before": "'Cananaean' transliterates the Aramaic for zealous — Luke translates it outright as Zealot. Whether that marks membership in the armed resistance current or simply a burning temperament, the text does not say; the organized Zealot party of the war years came later, and this room does not backdate it.",
+      "call": {
+        "title": "No scene survives",
+        "note": "Another call attested only by the seat itself.",
+        "refs": [
+          {
+            "ref": "LUK 6:15",
+            "label": "Luke 6:15"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "The impossible table",
+          "note": "The lists seat Simon the Zealot at the same table as Matthew the tax collector — the man who bled revenue to Rome and a man whose party name meant burning against it. No gospel narrates a single word between them. The shared table is the sermon.",
+          "refs": [
+            {
+              "ref": "MAT 10:3-4",
+              "label": "Matthew 10:3–4"
+            },
+            {
+              "ref": "ACT 1:13",
+              "label": "Acts 1:13"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "If the label means what it appears to mean, his fault walked in the door with him: a politics of the sword, aimed at the empire his new master refused to fight. Whatever burned in him was not quenched but redirected. He shares the garden flight with the rest.",
+        "refs": [
+          {
+            "ref": "MRK 14:50",
+            "label": "Mark 14:50"
+          }
+        ]
+      },
+      "after": {
+        "text": "The upper-room roll call, and silence.",
+        "refs": [
+          {
+            "ref": "ACT 1:13",
+            "label": "Acts 1:13"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "The later lists scatter him — Egypt, north Africa, Persia with Thaddaeus, even Britain in the latest legends — and agree on nothing.",
+          "earliest": "No source before the late martyrologies and Pseudo-Abdias (~6th century)",
+          "sourceUrl": "https://www.newadvent.org/cathen/13796b.htm",
+          "weight": "late"
+        }
+      ],
+      "death": {
+        "claim": "Unknown. The famous sawing appears only in late accounts that contradict each other on country and century.",
+        "earliest": "Late martyrologies only",
+        "sourceUrl": "https://www.newadvent.org/cathen/13796b.htm",
+        "weight": "late"
+      }
+    },
+    {
+      "id": "judas-iscariot",
+      "name": "Judas Iscariot",
+      "aka": "Man of Kerioth, on the probable reading",
+      "meaning": "Yehuda — praise; the name of the tribe of kings, worn by the traitor",
+      "seat": 12,
+      "band": "If Kerioth is right, the band's only Judean among Galileans; its treasurer",
+      "glanceCall": "Trusted with the money bag; John's gospel says he was already helping himself to it.",
+      "glanceCost": "Thirty pieces of silver, a kiss, remorse without return — and a field named Blood in two different tellings.",
+      "before": "Called like the others, sent out like the others — Judas preached and healed in the mission of the twelve with no recorded asterisk. He kept the common purse. The fourth gospel, writing with hindsight, adds the ledger's secret: he was a thief who pilfered what was put in.",
+      "call": {
+        "title": "Chosen with open eyes",
+        "note": "The record insists Jesus knew: did I not choose you, the twelve — and one of you is a devil? Judas is not an infiltration; he is a choice the story refuses to explain away.",
+        "refs": [
+          {
+            "ref": "JHN 6:70-71",
+            "label": "John 6:70–71"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "The perfume and the purse",
+          "note": "When Mary pours out a year's wages in nard, Judas objects on behalf of the poor — and John states flatly that the poor were not his concern; the purse was. The last recorded words before the bargain are an accounting argument.",
+          "refs": [
+            {
+              "ref": "JHN 12:4-6",
+              "label": "John 12:4–6"
+            }
+          ]
+        },
+        {
+          "title": "Thirty pieces of silver",
+          "note": "He goes to the chief priests himself and asks what they will give. The price they weigh out is an old, bitter number — the prophet Zechariah's wage, thrown to the potter.",
+          "refs": [
+            {
+              "ref": "MAT 26:14-16",
+              "label": "Matthew 26:14–16"
+            },
+            {
+              "ref": "ZEC 11:12-13",
+              "label": "Zechariah 11:12–13"
+            }
+          ]
+        },
+        {
+          "title": "The sop, and the night",
+          "note": "At the table Jesus hands him the honored morsel — a host's gesture of friendship — and tells him, what you do, do quickly. The gospel closes the scene with four words that have never needed a commentary: and it was night.",
+          "refs": [
+            {
+              "ref": "JHN 13:21-30",
+              "label": "John 13:21–30"
+            }
+          ]
+        },
+        {
+          "title": "The kiss",
+          "note": "He marks his rabbi for the arrest squad with the disciple's greeting. Jesus' answer keeps the relationship open to the last: Friend, do what you came for. Luke's version asks the question outright — Judas, do you betray the Son of Man with a kiss?",
+          "refs": [
+            {
+              "ref": "MAT 26:47-50",
+              "label": "Matthew 26:47–50"
+            },
+            {
+              "ref": "LUK 22:47-48",
+              "label": "Luke 22:47–48"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "Remorse came at sunrise: he returned the silver, said 'I have sinned; I betrayed innocent blood,' and was told by the priests that his conscience was his own problem. The record's tragedy is precise — regret that went to the wrong address. Peter's failure that same night went back to Jesus; Judas's went to a rope.",
+        "refs": [
+          {
+            "ref": "MAT 27:3-5",
+            "label": "Matthew 27:3–5"
+          }
+        ]
+      },
+      "after": {
+        "text": "Two accounts of his end stand in the canon side by side, unharmonized: Matthew's hanging and the priests buying the potter's field with blood money; Acts' headlong fall in the field itself. Both agree on the field and its name — Akeldama, Field of Blood. This site shows both tellings and does not paper the seam.",
+        "refs": [
+          {
+            "ref": "MAT 27:6-10",
+            "label": "Matthew 27:6–10"
+          },
+          {
+            "ref": "ACT 1:18-19",
+            "label": "Acts 1:18–19"
+          }
+        ]
+      },
+      "sent": [],
+      "death": {
+        "claim": "Dead before Pentecost, by his own hand in Matthew's telling; the field bought with his price kept the name Blood in both accounts.",
+        "earliest": "Matthew 27:3–10; Acts 1:18–19",
+        "sourceUrl": "/scriptures/protestant/MAT/27#v3",
+        "weight": "scripture",
+        "note": "The two canonical accounts differ in mechanism and agree on the field. Recorded as written."
+      }
+    },
+    {
+      "id": "matthias",
+      "name": "Matthias",
+      "aka": "The thirteenth man in the twelfth seat",
+      "meaning": "Mattityahu — gift of the LORD, the same name as Matthew",
+      "seat": 12,
+      "band": "A follower since John's baptism — three years in the crowd, never in the lists",
+      "glanceCall": "Qualified by presence: he had simply been there the whole time, from the Jordan to the ascension.",
+      "glanceCost": "Chosen by prayer and lots to fill the empty seat — then never mentioned again anywhere in scripture.",
+      "before": "The replacement criteria are the best biography he gets: one of the men who had accompanied the group the entire time from John's baptism to the ascension. Three years of showing up with no seat, no title, and no line of dialogue.",
+      "call": {
+        "title": "The last lots in scripture",
+        "note": "Two names meet the bar — Joseph called Barsabbas, and Matthias. The hundred and twenty pray, cast lots as Israel had for a thousand years, and the lot falls to Matthias. It is the Bible's final decision by lot; Pentecost arrives in the next chapter, and the church never rolls dice again.",
+        "refs": [
+          {
+            "ref": "ACT 1:21-26",
+            "label": "Acts 1:21–26"
+          }
+        ]
+      },
+      "record": [
+        {
+          "title": "Numbered with the eleven",
+          "note": "His entire subsequent record is a headcount: he was numbered with the eleven apostles, and Peter stands up 'with the eleven' at Pentecost. The twelfth seat is full; the man in it is invisible. The office mattered; the résumé did not.",
+          "refs": [
+            {
+              "ref": "ACT 1:26",
+              "label": "Acts 1:26"
+            },
+            {
+              "ref": "ACT 2:14",
+              "label": "Acts 2:14"
+            }
+          ]
+        }
+      ],
+      "human": {
+        "text": "Nothing is recorded against him — or about him. If obscurity stung, the sting is not in the text. The man who lost the lot, Barsabbas, also stays in the story's background without complaint; the episode leaves no bitterness on either side of the coin.",
+        "refs": [
+          {
+            "ref": "ACT 1:23",
+            "label": "Acts 1:23"
+          }
+        ]
+      },
+      "after": {
+        "text": "Present, by definition, for everything in Acts that involves 'the apostles' — and never once named. The seat was restored so twelve witnesses could face Israel's twelve tribes at Pentecost; Matthias's work was to be the twelfth.",
+        "refs": [
+          {
+            "ref": "ACT 6:2",
+            "label": "Acts 6:2"
+          }
+        ]
+      },
+      "sent": [
+        {
+          "claim": "Later tradition sends him to 'Ethiopia' — by which the source means the Caucasus coast — or leaves him in Judea; the accounts conflict and confuse him with Matthew.",
+          "earliest": "Acts of Andrew and Matthias (~400s), a late legend",
+          "sourceUrl": "https://www.newadvent.org/cathen/10066a.htm",
+          "weight": "late"
+        }
+      ],
+      "death": {
+        "claim": "Unknown. The traditions disagree on stoning, axe, or old age — a man history could not see clearly enough to kill in one consistent way.",
+        "earliest": "No early source",
+        "sourceUrl": "https://www.newadvent.org/cathen/10066a.htm",
+        "weight": "late"
+      }
+    }
+  ],
+  "paul": {
+    "text": "And Paul? Not one of the twelve, and the first to say so — 'last of all, as to one born at the wrong time, he appeared also to me.' He never sat in these seats: the twelve were constituted witnesses of the whole road from the Jordan to the empty tomb, and Paul's apostleship ran on a different warrant, straight from the Damascus road. His trail — half the New Testament and most of the map — runs through the church world.",
+    "refs": [
+      {
+        "ref": "1CO 15:8-9",
+        "label": "1 Corinthians 15:8–9"
+      },
+      {
+        "ref": "GAL 1:1",
+        "label": "Galatians 1:1"
+      },
+      {
+        "ref": "ACT 9:1-19",
+        "label": "Acts 9:1–19"
+      }
+    ]
+  }
+}

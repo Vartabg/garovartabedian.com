@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "adam-fall-and-iblis",
+  "slug": "adam-fall-and-iblis",
+  "title": "The Creation of Adam, Rebellion of the Accuser, and the Fall",
+  "subtitle": "Genesis 3 · Vita Adae et Evae 12–16 · Qur'an 2:30–39 & 7:11–27",
+  "summary": "A source-anchored comparison of the creation of humanity, the refusal of the adversary to bow, the deception at the tree, and the divergent theologies of the Fall: inherited guilt vs. immediate pardon and unfallen human nature (fitrah).",
+  "axis": "sin-human-nature",
+  "witnesses": [
+    {
+      "id": "genesis-3",
+      "title": "Genesis 3 (Masoretic Text / World English Bible)",
+      "shortTitle": "Genesis 3",
+      "language": "Hebrew / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 10th–6th century BCE",
+        "earliestManuscript": "4QGen-b (c. 1st century BCE)",
+        "edition": "Westminster Leningrad Codex / World English Bible"
+      },
+      "primaryTradition": "Hebrew Bible / Christian Old Testament",
+      "corpusEditionId": "web-bible",
+      "licenseNotice": "World English Bible is a 100% public domain Modern English translation of the Holy Bible."
+    },
+    {
+      "id": "vita-adae-12-16",
+      "title": "The Life of Adam and Eve 12–16 (Latin Vita Adae · R.H. Charles)",
+      "shortTitle": "Vita Adae 12–16",
+      "language": "Latin / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 1st century CE (Second Temple Jewish / Early Christian)",
+        "earliestManuscript": "9th–12th century Latin MSS (preserving 1st c. Jewish traditions)",
+        "edition": "R.H. Charles (1913)"
+      },
+      "primaryTradition": "Second Temple Jewish Pseudepigrapha",
+      "corpusEditionId": "charles-vita-adae",
+      "licenseNotice": "English translation of the Latin Vita Adae et Evae by R.H. Charles (1913). In the public domain worldwide."
+    },
+    {
+      "id": "quran-2-and-7",
+      "title": "Qur'an 2:30–39 & 7:11–27 (Al-Baqarah & Al-A'raf · Tanzil / Pickthall)",
+      "shortTitle": "Qur'an 2 & 7",
+      "language": "Classical Arabic / English",
+      "isRtl": true,
+      "dates": {
+        "composition": "c. 7th century CE",
+        "earliestManuscript": "Codex Sana'a / Birmingham Quran Fragment (c. 7th century CE)",
+        "edition": "Tanzil Project (Uthmani) / Pickthall (1930)"
+      },
+      "primaryTradition": "Islamic Scripture",
+      "corpusEditionId": "tanzil-uthmani",
+      "licenseNotice": "Tanzil Quran Text (Simple/Uthmani) is provided under the Tanzil Text License. Copyright © 2007-2024 Tanzil Project. Reproduction is permitted only verbatim with attribution and link to tanzil.net."
+    }
+  ],
+  "slots": [
+    {
+      "id": "creation-and-prostration",
+      "label": "Creation of Adam & Command to Bow",
+      "description": "How Adam is presented to the heavenly host and whether angels are commanded to honor him.",
+      "cells": {
+        "genesis-3": {
+          "witnessId": "genesis-3",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "GEN",
+            "passageRef": "Genesis 2:7, 3:1",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "God forms man from dust and breathes life into him; no command for angels to worship or prostrate before Adam is mentioned in the biblical text.",
+          "verbatimExcerpt": "Yahweh God formed man from the dust of the ground, and breathed into his nostrils the breath of life; and man became a living soul.",
+          "supportingCitations": ["Genesis 2:7"],
+          "limits": "Genesis mentions no heavenly council debate or angelic command to venerate the formed human."
+        },
+        "vita-adae-12-16": {
+          "witnessId": "vita-adae-12-16",
+          "locator": {
+            "corpusId": "second-temple",
+            "editionId": "charles-vita-adae",
+            "section": "Vita Adae",
+            "passageRef": "Vita Adae 13:1-14:2",
+            "originalLanguage": "Latin"
+          },
+          "basis": "explicit",
+          "summary": "Michael brings Adam before the angels and commands them to worship the image of the Lord God; Satan refuses, claiming seniority.",
+          "verbatimExcerpt": "And Michael went out and called all the angels saying: 'Worship the image of the Lord God, as the Lord God hath commanded.' And Michael himself worshipped first; then he called me and said: 'Worship the image of God the Lord.' And I answered, 'I have no (need) to worship Adam.' And since Michael kept urging me to worship, I said to him, 'Why urgest thou me? I need not worship one lesser and later than me. I am prior to him in creation; before he was made was I already made. He ought to worship me.'",
+          "supportingCitations": ["Vita Adae 13:1-14:2"],
+          "limits": "Presents Satan's refusal as grounded in pride over temporal priority and Adam being fashioned from earth."
+        },
+        "quran-2-and-7": {
+          "witnessId": "quran-2-and-7",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Al-A'raf",
+            "passageRef": "Qur'an 7:11-12",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Allah creates mankind and commands the angels to prostrate before Adam; Iblis refuses, stating he is superior because he was made of fire and Adam of clay.",
+          "verbatimExcerpt": "And We created you, then fashioned you, then told the angels: Fall down prostrate before Adam! And they fell prostrate, all save Iblis, who was not in the number of those who made prostration. He said: What hindered thee that thou didst not fall prostrate when I bade thee? (Iblis) said: I am better than him. Thou createdst me of fire while him Thou didst create of mud.",
+          "supportingCitations": ["Qur'an 7:11-12", "Qur'an 2:34"],
+          "limits": "Iblis is identified as a jinn who disobeys through arrogance (*kibr*) rather than a fallen archangel in later Islamic theology."
+        }
+      }
+    },
+    {
+      "id": "temptation-and-transgression",
+      "label": "The Deception at the Tree",
+      "description": "Who tempts the human pair, what promise is made, and who eats first.",
+      "cells": {
+        "genesis-3": {
+          "witnessId": "genesis-3",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "GEN",
+            "passageRef": "Genesis 3:1-6",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "The serpent deceives the woman with the promise that their eyes will be opened and they will be like God; the woman eats first and gives to her husband.",
+          "verbatimExcerpt": "The serpent said to the woman, 'You won't surely die, for God knows that in the day you eat it, your eyes will be opened, and you will be like God, knowing good and evil.' When the woman saw that the tree was good for food... she took some of its fruit, and ate; and she gave some to her husband with her, and he ate.",
+          "supportingCitations": ["Genesis 3:4-6"],
+          "limits": "The instigator is introduced simply as the serpent, 'more subtle than any animal of the field which Yahweh God had made'."
+        },
+        "vita-adae-12-16": {
+          "witnessId": "vita-adae-12-16",
+          "locator": {
+            "corpusId": "second-temple",
+            "editionId": "charles-vita-adae",
+            "section": "Vita Adae",
+            "passageRef": "Vita Adae 16:1-3",
+            "originalLanguage": "Latin"
+          },
+          "basis": "explicit",
+          "summary": "The devil explicitly explains that his hatred and deception of Adam stems from being cast down from heaven on Adam's account.",
+          "verbatimExcerpt": "And the Lord God was wroth with me and banished me and my angels from our glory; and on thy account were we expelled from our abodes into this world and hurled on the earth... and it grieved me when I saw thee in such joy and luxury. And with guile I cheated thy wife and caused thee to be expelled through her from thy joy and luxury, as I have been driven out of my glory.",
+          "supportingCitations": ["Vita Adae 16:1-3"],
+          "limits": "Satan's motive is explicit revenge for his expulsion after refusing to worship Adam."
+        },
+        "quran-2-and-7": {
+          "witnessId": "quran-2-and-7",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Al-A'raf",
+            "passageRef": "Qur'an 7:20-22",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Satan whispers to both Adam and his wife, swearing by Allah that he is a sincere advisor and promising eternity or angelic status; both eat together.",
+          "verbatimExcerpt": "Then Satan whispered unto them that he might manifest unto them that which was hidden from them of their shame, and he said: Your Lord forbade you from this tree only lest ye should become angels or become of the immortals. And he swore unto them (saying): Lo! I am a sincere adviser unto you. Thus did he lead them on with guile. And when they tasted of the tree their shame was manifest to them...",
+          "supportingCitations": ["Qur'an 7:20-22", "Qur'an 20:120"],
+          "limits": "The Qur'an places joint responsibility on Adam and Hawwa (Eve); Eve is not blamed as the primary temptress of Adam."
+        }
+      }
+    },
+    {
+      "id": "aftermath-and-forgiveness",
+      "label": "Divine Judgment, Repentance & Human Nature",
+      "description": "How God responds to the transgression, whether repentance is accepted immediately, and the resulting state of human nature.",
+      "cells": {
+        "genesis-3": {
+          "witnessId": "genesis-3",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "GEN",
+            "passageRef": "Genesis 3:16-19, 23-24",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "God pronounces curses on the serpent, the woman (pain in childbearing), and the man (toil on cursed ground); they are driven from Eden lest they eat from the Tree of Life.",
+          "verbatimExcerpt": "To the woman he said, 'I will greatly multiply your pain, having children. In pain you will bear children...' To Adam he said... 'Cursed is the ground for your sake. In toil you will eat of it all the days of your life... for dust you are, and to dust you shall return.' Therefore Yahweh God sent him out from the garden of Eden...",
+          "supportingCitations": ["Genesis 3:16-19", "Genesis 3:23-24"],
+          "limits": "Genesis does not record a formal prayer of repentance by Adam in Eden, nor an immediate lifting of mortality."
+        },
+        "vita-adae-12-16": {
+          "witnessId": "vita-adae-12-16",
+          "locator": {
+            "corpusId": "second-temple",
+            "editionId": "charles-vita-adae",
+            "section": "Vita Adae",
+            "passageRef": "Vita Adae 4:1-6:1",
+            "originalLanguage": "Latin"
+          },
+          "basis": "explicit",
+          "summary": "Adam and Eve engage in extreme penance (standing in the Jordan and Tigris rivers) seeking God's mercy; Satan tempts Eve a second time during her penance.",
+          "verbatimExcerpt": "And Adam said to Eve: 'Stand in the river Jordan, and let not the water go over thy neck... but I will stand in the river Tigris forty days.'",
+          "supportingCitations": ["Vita Adae 4:1-6:1"],
+          "limits": "Expands on human grief, penance, and ongoing demonic pursuit outside Paradise."
+        },
+        "quran-2-and-7": {
+          "witnessId": "quran-2-and-7",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Al-Baqarah",
+            "passageRef": "Qur'an 2:37, 7:23",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Adam receives words of revelation from his Lord and repents; Allah accepts his repentance on the spot; mankind descends to earth with guidance and an uncorrupted innate nature (fitrah).",
+          "verbatimExcerpt": "They said: Our Lord! We have wronged ourselves. If thou forgive us not and have not mercy on us, surely we are of the lost! ... Then Adam received from his Lord words (of revelation), and He relented toward him. Lo! He is the Relenting, the Merciful.",
+          "supportingCitations": ["Qur'an 2:37", "Qur'an 7:23"],
+          "limits": "The descent to earth (*hubut*) is a change of abode and the beginning of earthly test, not a punishment of ontological corruption or inherited guilt."
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "vita-adae-to-quran",
+      "sourceWitnessId": "vita-adae-12-16",
+      "targetWitnessId": "quran-2-and-7",
+      "relationship": "shared-tradition",
+      "scholarlyConsensus": "strong",
+      "basisNote": "The narrative motif of Satan/Iblis refusing God's command to prostrate before newly-created Adam due to pride in his own nature is virtually identical between Vita Adae 12–16 (and related Syriac Cave of Treasures) and Qur'an 2:34 & 7:11–18.",
+      "citations": [
+        "R.H. Charles, *Apocrypha and Pseudepigrapha of the Old Testament* (Oxford, 1913), Vol. 2, pp. 137–139.",
+        "Gabriel Said Reynolds, *The Qur'an and the Bible: Text and Commentary* (Yale University Press, 2018), pp. 38–41.",
+        "Michael E. Stone, *A History of the Literature of Adam and Eve* (Scholars Press, 1992)."
+      ]
+    },
+    {
+      "id": "genesis-to-quran-divergence",
+      "sourceWitnessId": "genesis-3",
+      "targetWitnessId": "quran-2-and-7",
+      "relationship": "theological-divergence",
+      "scholarlyConsensus": "strong",
+      "basisNote": "Major theological divergence on the nature of sin and human anthropology: Western Christian theology reads Genesis 3 through Pauline/Augustinian lenses as the Fall causing inherited Original Sin and total depravity, whereas Islamic theology reads the Quranic event as a momentary lapse followed by complete divine pardon, preserving the pristine moral nature (fitrah) of all descendants.",
+      "citations": [
+        "St. Augustine, *De Peccatorum Meritis et Remissione* (412 CE).",
+        "Fazlur Rahman, *Major Themes of the Qur'an* (University of Chicago Press, 2009), pp. 17–25.",
+        "Jon D. Levenson, *Inheriting Abraham: The Legacy of the Patriarch in Judaism, Christianity, and Islam* (Princeton University Press, 2012)."
+      ]
+    }
+  ],
+  "receptionClaims": [
+    {
+      "id": "claim-christian-original-sin",
+      "tradition": "christian",
+      "subject": "The Fall and Inherited Guilt",
+      "text": "Western Christian orthodoxy, shaped by St. Paul (Romans 5:12–21) and St. Augustine, teaches that Adam's disobedience fundamentally corrupted human nature, transmitting original sin and death to all humanity, requiring the atonement of Christ as the Second Adam.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [
+        { "label": "Romans 5:12-19" },
+        { "label": "1 Corinthians 15:21-22" },
+        { "label": "St. Augustine, *De Peccatorum Meritis et Remissione*" }
+      ],
+      "refs": ["ROM 5:12-19", "1CO 15:21-22"],
+      "limit": "Eastern Orthodox theology emphasizes ancestral mortality rather than inherited moral guilt, while maintaining the necessity of Christ's resurrection."
+    },
+    {
+      "id": "claim-islamic-fitrah",
+      "tradition": "islamic",
+      "subject": "Innate Purity (Fitrah) and Divine Forgiveness",
+      "text": "Islamic theology rejects the doctrine of Original Sin. Because Allah forgave Adam immediately upon his repentance (Surah 2:37), every child is born in an uncorrupted state of natural monotheism (fitrah), accountable only for their own voluntary deeds (Surah 6:164).",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [
+        { "label": "Ibn Kathir, *Tafsir al-Qur'an al-Azim* on Surah 2:37" },
+        { "label": "Sahih Muslim, Book of Destiny, Hadith 2658" }
+      ],
+      "refs": [],
+      "limit": "Adam is venerated in Islam as the first prophet (*nabi*); his lapse (*zallah*) is understood as forgetfulness rather than intentional rebellion against God."
+    }
+  ],
+  "provenance": {
+    "reviewStatus": "agent-reviewed",
+    "reviewer": "Antigravity Theologian & Sourcing Panel",
+    "rubricVersion": "parallels-v1.0",
+    "reviewedContentHash": "8704144ae350fa421f62969864809782dbadf90d55d216767746088a5f8fc19f",
+    "reviewedAt": "2026-08-31T12:00:00.000Z",
+    "reviewScope": "Genesis 3, Vita Adae et Evae 12–16, and Qur'an 2 & 7 narrative alignment, slot-diff, and reception analysis."
+  }
+}

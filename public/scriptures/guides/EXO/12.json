@@ -1,0 +1,263 @@
+{
+  "book": "EXO",
+  "chapter": 12,
+  "bookName": "Exodus",
+  "summary": "Before the final plague, Israel receives a new calendar marker, a household lamb meal with blood on doorposts, and instructions to remember the night through Passover and unleavened bread. At midnight Egypt’s firstborn die, Pharaoh orders Israel out, and a large mixed company departs; the chapter closes with rules for participation in the meal and another statement that Israel went out.",
+  "whyItMatters": "Rescue is placed inside a practice families are to explain to children before the event occurs. The chapter also holds Israel’s protection beside the devastating death in Egyptian households and defines who may join the commemorative meal.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "Israelite and Egyptian households on the departure night, then the route from Rameses to Succoth.",
+    "literaryForm": "Passover and unleavened-bread instructions interwoven with the firstborn plague, departure report, and participation rules."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The final death of Egyptian firstborn has been announced, along with an expected expulsion. This chapter instructs Israel’s households before narrating the night.",
+      "verseRefs": [
+        "11:1-10",
+        "12:1-3"
+      ]
+    },
+    "here": {
+      "text": "The meal and its future remembrance frame the firstborn deaths, hurried departure, and a mixed company leaving Egypt.",
+      "verseRefs": [
+        "12:1-28",
+        "12:29-51"
+      ]
+    },
+    "after": {
+      "text": "The next chapter develops firstborn dedication, instructions to explain the departure to children, and the route guided by cloud and fire.",
+      "verseRefs": [
+        "13:1-22"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "The household Passover meal",
+      "verses": "1-14",
+      "note": "A lamb, marked doors, haste, and a recurring memorial are prescribed before the night."
+    },
+    {
+      "heading": "Seven days without leaven",
+      "verses": "15-20",
+      "note": "Unleavened bread, assemblies, and removal of yeast mark the feast."
+    },
+    {
+      "heading": "Moses instructs the elders",
+      "verses": "21-28",
+      "note": "Hyssop applies blood; children’s future questions are answered and Israel obeys."
+    },
+    {
+      "heading": "Deaths and a hurried expulsion",
+      "verses": "29-36",
+      "note": "The firstborn die, Pharaoh sends the people away, and valuables are requested from Egyptians."
+    },
+    {
+      "heading": "The company and the observed night",
+      "verses": "37-42",
+      "note": "The travelers, mixed multitude, unleavened dough, and duration in Egypt are recorded."
+    },
+    {
+      "heading": "Rules for eating Passover",
+      "verses": "43-49",
+      "note": "The text distinguishes outsiders, servants, and resident foreigners under circumcision terms."
+    },
+    {
+      "heading": "Obedience and departure restated",
+      "verses": "50-51",
+      "note": "Israel does as commanded, and Yahweh brings them out."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "12:13",
+      "text": "The blood shall be to you for a token on the houses where you are. When I see the blood, I will pass over you, and no plague will be on you to destroy you when I strike the land of Egypt.",
+      "why": "The marked blood and the promise to pass over define household protection in the announced judgment."
+    },
+    {
+      "ref": "12:29",
+      "text": "At midnight, Yahweh struck all the firstborn in the land of Egypt, from the firstborn of Pharaoh who sat on his throne to the firstborn of the captive who was in the dungeon, and all the firstborn of livestock.",
+      "why": "The midnight event names deaths across Egyptian social positions and livestock."
+    },
+    {
+      "ref": "12:37",
+      "text": "The children of Israel traveled from Rameses to Succoth, about six hundred thousand on foot who were men, in addition to children.",
+      "why": "The departure count is a major claim of this WEB narrative and raises interpretation questions."
+    }
+  ],
+  "themes": [
+    "household protection",
+    "Passover remembrance",
+    "unleavened bread",
+    "Egyptian mourning",
+    "hurried mixed-company departure",
+    "participation rules"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is “Passover” in the chapter’s own explanation?",
+      "answer": "It names Yahweh’s night of passing over marked Israelite houses while striking Egyptian firstborn. The meal is instituted as a recurring memorial, and children are to be told why the household observes it.",
+      "verseRefs": [
+        "12:11-14",
+        "12:21-27"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        11
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why are the doors marked with blood?",
+      "answer": "The blood is placed on the posts and lintel of houses eating the lamb; Yahweh says it will be a sign so the destructive plague does not enter those houses. Moses tells families to remain inside until morning.",
+      "verseRefs": [
+        "12:3-13",
+        "12:21-23"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Whose deaths does the narrator report at midnight?",
+      "answer": "It says Yahweh strikes firstborn from Pharaoh’s house to a captive’s dungeon, plus livestock, and Egypt cries because every house has a death. The narrative does not say each person killed was responsible for refusing Moses’ request.",
+      "verseRefs": [
+        "12:12",
+        "12:29-30"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        12
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Why is the bread unleavened?",
+      "answer": "The feast requires households to remove yeast for seven days, and the departure account says dough was carried before it could rise because Egypt sent the people out in haste. The ritual and the hurried event are linked within the chapter.",
+      "verseRefs": [
+        "12:15-20",
+        "12:33-39"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        15
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "How should “about six hundred thousand” men on foot be read?",
+      "answer": "The WEB reports about six hundred thousand men on foot, in addition to children and a mixed multitude. Proposed readings include a literal large population, taking the underlying “thousand” as a clan or military unit, or seeing the figure as literary exaggeration; the alternative readings also face counting difficulties. The chapter itself does not decide among them.",
+      "verseRefs": [
+        "12:37-42"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        37
+      ],
+      "evidenceSourceIds": [
+        "hosted-web",
+        "bas-exodus-numbers",
+        "torah-exodus-history"
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Who leaves Egypt besides the counted Israelite men?",
+      "answer": "The text explicitly adds children, a mixed multitude, flocks, herds, and much livestock. Those people and animals make the departing company broader than the reported count of men on foot.",
+      "verseRefs": [
+        "12:37-39"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        37
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Are resident foreigners automatically barred from the Passover?",
+      "answer": "The rules exclude an uncircumcised person and a hired or foreign outsider, but allow a resident foreigner to keep it after the household’s males are circumcised. The chapter combines a boundary with a stated path to participate under the same law.",
+      "verseRefs": [
+        "12:43-49"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        43
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "How is this night to be remembered by later children?",
+      "answer": "Moses says future children will ask what the service means, and parents are to tell of Yahweh sparing Israelite houses while striking Egypt. The command turns the event into a repeated explanation across generations.",
+      "verseRefs": [
+        "12:14",
+        "12:21-28"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        14
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "Why might another hosted edition count the 430 years differently?",
+      "answer": "The WEB says Israel lived in Egypt for 430 years. The hosted Brenton wording says the children of Israel sojourned in Egypt and Canaan for that period, so its span includes both places. The chapter does not resolve which textual tradition is earliest.",
+      "verseRefs": [
+        "12:40-42"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        40
+      ],
+      "evidenceSourceIds": [
+        "hosted-web",
+        "hosted-brenton",
+        "usccb-ex12"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Passover",
+      "def": "The named sacrifice and recurring memorial of the night Israel’s marked houses are passed over."
+    },
+    {
+      "term": "unleavened bread",
+      "def": "Bread without yeast, prescribed for the feast and baked from dough carried out before it rose."
+    },
+    {
+      "term": "hyssop",
+      "def": "The plant bunch used to apply blood from the basin to doorposts and lintel."
+    },
+    {
+      "term": "mixed multitude",
+      "def": "People traveling out of Egypt with Israel who are not individually identified in the count."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "513d63058d445823a3aacee6ae94298dd8fc78676a8875ae1699ea39271203b3",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

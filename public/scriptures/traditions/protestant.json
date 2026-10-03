@@ -1,0 +1,189 @@
+{
+  "tradition": "protestant",
+  "traditionName": "Protestant",
+  "oneLine": "This shelf represents the familiar 66-book Protestant Bible: thirty-nine Old Testament books and the shared twenty-seven-book New Testament.",
+  "orient": "“Protestant” names a family of churches, not one worldwide teaching office or one liturgy. The collection shown here is the broad publishing consensus familiar in modern Protestant Bibles; particular confessions explain its authority and its relationship to the Apocrypha differently.",
+  "keepInMind": "A 66-book binding does not mean every Protestant has treated every other ancient book as worthless. Article VI of the Church of England commends other books for life and moral instruction without using them to establish doctrine, while the Reformed Westminster Confession gives the Apocrypha no canonical authority. This page keeps both facts visible.",
+  "facts": [
+    {
+      "label": "Represented shelf",
+      "value": "66 books: 39 Old Testament and 27 New Testament.",
+      "sourceIds": ["westminster", "church-england"]
+    },
+    {
+      "label": "Old Testament boundary",
+      "value": "The same core writings as the Jewish Tanakh, divided and ordered as thirty-nine books in a Christian Old Testament.",
+      "sourceIds": ["american-bible-society"]
+    },
+    {
+      "label": "Confessional center",
+      "value": "Scripture is treated as the final written norm for doctrine; Protestant confessions differ in how they describe church authority beneath that norm.",
+      "sourceIds": ["westminster", "church-england"]
+    },
+    {
+      "label": "Hosted language layer",
+      "value": "This site serves public-domain English translations, primarily the World English Bible and King James Version—not a uniquely Protestant original-language edition.",
+      "sourceIds": ["site-text-sources"]
+    }
+  ],
+  "formation": [
+    {
+      "date": "First centuries",
+      "title": "Collections were received over time",
+      "text": "The Bible did not begin as one bound volume. Jewish and Christian communities received, copied, read, and debated collections of writings across centuries before later lists and codices made their edges increasingly explicit.",
+      "sourceIds": ["american-bible-society"]
+    },
+    {
+      "date": "Sixteenth century",
+      "title": "Reformation standards restated the boundary",
+      "text": "English Article VI lists the canonical books and places other ancient books in a reading category useful for conduct but not for establishing doctrine. That distinction is older and more textured than simply saying that Protestants ‘removed’ every such book from use.",
+      "sourceIds": ["church-england"]
+    },
+    {
+      "date": "1646–1647",
+      "title": "Westminster states the Reformed form sharply",
+      "text": "The Westminster Confession enumerates the thirty-nine Old Testament and twenty-seven New Testament books, rejects the Apocrypha as inspired canon, and names the Hebrew Old Testament and Greek New Testament as the textual courts of final appeal.",
+      "sourceIds": ["westminster"]
+    },
+    {
+      "date": "Modern print culture",
+      "title": "The 66-book binding becomes the default",
+      "text": "Bible societies and publishers made the compact 66-book table of contents familiar across many Protestant communities, even though Anglican and ecumenical editions may still print the Apocrypha in a separate section.",
+      "sourceIds": ["american-bible-society", "church-england"]
+    }
+  ],
+  "distinctives": [
+    {
+      "title": "A thirty-nine-book Old Testament",
+      "text": "The shelf follows the content of the Hebrew canon while dividing Samuel, Kings, Chronicles, and the Twelve in the familiar Christian way. A different count does not necessarily mean different underlying writings.",
+      "sourceIds": ["american-bible-society", "westminster"],
+      "bookIds": ["1SA", "1KI", "1CH", "HOS"]
+    },
+    {
+      "title": "The deuterocanon sits outside this canonical boundary",
+      "text": "Tobit, Judith, Wisdom, Sirach, Baruch, 1–2 Maccabees, and the Greek additions to Esther and Daniel are not counted as inspired canon on this shelf. Catholic and Orthodox churches receive many or all of them differently.",
+      "sourceIds": ["church-england", "westminster", "catholic-canon", "orthodox-canon"]
+    },
+    {
+      "title": "The twenty-seven-book New Testament is shared",
+      "text": "The Gospels, Acts, the apostolic letters, and Revelation on this shelf are the same twenty-seven New Testament writings received by Catholic and Eastern Orthodox churches.",
+      "sourceIds": ["westminster", "catholic-canon"],
+      "bookIds": ["MAT", "ACT", "ROM", "REV"]
+    }
+  ],
+  "reception": [
+    {
+      "title": "Sufficient for salvation and doctrine",
+      "text": "Article VI says that what cannot be read in or proved from Holy Scripture may not be required as an article of faith necessary to salvation. Reformed standards make a closely related sufficiency claim in a different confessional register.",
+      "sourceIds": ["church-england", "westminster"]
+    },
+    {
+      "title": "Authority is not created by the church",
+      "text": "The Westminster account says Scripture’s authority depends on God as its author rather than on the testimony of a person or church, while still recognizing the church’s witness and ministry as reasons Scripture is esteemed.",
+      "sourceIds": ["westminster"]
+    },
+    {
+      "title": "Translation returns to the source languages",
+      "text": "Classic Protestant standards point readers and translators toward the Hebrew and Aramaic Old Testament and Greek New Testament. English translations remain translations, with different textual and editorial decisions that should not be confused with the canon itself.",
+      "sourceIds": ["westminster", "site-text-sources"]
+    }
+  ],
+  "variations": [
+    {
+      "title": "Anglican and Reformed treatment of the Apocrypha is not identical",
+      "text": "The Church of England explicitly assigns selected other books a useful reading role; Westminster treats them like other human writings. Both distinguish them from canonical Scripture, but the practical posture is different.",
+      "sourceIds": ["church-england", "westminster"]
+    },
+    {
+      "title": "‘Sola Scriptura’ does not erase every subordinate authority",
+      "text": "Protestant churches still use creeds, confessions, teachers, councils, and inherited interpretation. The defining claim is about Scripture’s final normative authority, not that every reader begins without a community or history.",
+      "sourceIds": ["westminster", "church-england"]
+    },
+    {
+      "title": "This route is not a universal Protestant lectionary",
+      "text": "Church calendars, reading cycles, preferred translations, and even whether an Apocrypha section is printed vary across Anglican, Lutheran, Reformed, Methodist, Baptist, Pentecostal, and other Protestant bodies.",
+      "sourceIds": ["american-bible-society", "church-england"]
+    }
+  ],
+  "debates": [
+    {
+      "question": "What authority should the deuterocanonical books carry?",
+      "settled": "The books are ancient Jewish writings preserved and read in Christian history; the disagreement is their canonical status, not their existence.",
+      "positions": [
+        {
+          "view": "The common Protestant boundary does not receive them as inspired canon.",
+          "grounds": "Reformed confessions exclude them from canonical authority, while Anglican formularies permit reading them for life and conduct but not for establishing doctrine.",
+          "sourceIds": ["westminster", "church-england"]
+        },
+        {
+          "view": "Catholic and Orthodox churches receive a longer Old Testament.",
+          "grounds": "The Catholic Catechism lists the deuterocanonical books inside its Old Testament, and the Orthodox Church in America describes the longer Septuagint collection as genuine Old Testament Scripture.",
+          "sourceIds": ["catholic-canon", "orthodox-canon"]
+        }
+      ],
+      "soWhat": "A reader should not use the green-spine difference as a shortcut for deciding the theological question; the sources explain why communities draw the boundary differently."
+    },
+    {
+      "question": "Does a church recognize the canon, or authoritatively determine it?",
+      "settled": "Every present-day table of contents reaches readers through historical communities that copied, translated, listed, and published texts.",
+      "positions": [
+        {
+          "view": "A classic Protestant account says the church recognizes an authority Scripture already has from God.",
+          "grounds": "Westminster locates canonical authority in God the author, not in later institutional approval.",
+          "sourceIds": ["westminster"]
+        },
+        {
+          "view": "Catholic teaching gives apostolic Tradition an active discerning role.",
+          "grounds": "The Catholic Catechism says the Church discerned the list of sacred books through apostolic Tradition.",
+          "sourceIds": ["catholic-canon"]
+        }
+      ],
+      "soWhat": "The disagreement concerns the source and exercise of authority as much as it concerns seven Old Testament books."
+    }
+  ],
+  "hosting": {
+    "heading": "This is a complete 66-book hosted shelf, not every Protestant Bible edition",
+    "summary": "All sixty-six represented books have public-domain English text here. The route does not reproduce the notes, textual apparatus, confessional introductions, lectionaries, or translation choices of any one Protestant communion.",
+    "available": "The complete 39-book Old Testament and 27-book New Testament in the World English Bible, with King James coverage available throughout.",
+    "unavailable": "Modern copyrighted translations, denominational study notes, and separately printed Protestant Apocrypha editions.",
+    "sourceIds": ["site-text-sources"]
+  },
+  "sources": [
+    {
+      "id": "church-england",
+      "label": "Church of England, Article VI of the Thirty-nine Articles",
+      "says": "Lists the canonical books, states Scripture’s sufficiency for salvation, and assigns other books a non-doctrinal reading role.",
+      "url": "https://www.churchofengland.org/prayer-and-worship/worship-texts-and-resources/book-common-prayer/articles-religion"
+    },
+    {
+      "id": "westminster",
+      "label": "Westminster Confession of Faith, chapter 1",
+      "says": "Enumerates the Reformed 66-book canon, describes the Apocrypha as noncanonical, and identifies the Hebrew and Greek source texts.",
+      "url": "https://bpc.org/wcf"
+    },
+    {
+      "id": "american-bible-society",
+      "label": "American Bible Society, “What Books Belong in the Bible?”",
+      "says": "Explains canonization as a long process and compares the Hebrew, Protestant, Catholic, and Orthodox collections.",
+      "url": "https://www.americanbible.org/engage/bible-resources/articles/what-books-belong-in-the-bible/"
+    },
+    {
+      "id": "catholic-canon",
+      "label": "Catechism of the Catholic Church, section 120",
+      "says": "Names apostolic Tradition’s discerning role and lists the Catholic 46-book Old Testament and 27-book New Testament.",
+      "url": "https://www.vatican.va/content/catechism/en/part_one/section_one/chapter_two/article_3/iv_the_canon_of_scripture.html"
+    },
+    {
+      "id": "orthodox-canon",
+      "label": "Orthodox Church in America, “Canon of Scripture”",
+      "says": "Describes the longer Septuagint collection as part of the Orthodox Old Testament rather than as a Protestant-style Apocrypha.",
+      "url": "https://www.oca.org/questions/scripture/canon-of-scripture"
+    },
+    {
+      "id": "site-text-sources",
+      "label": "Hosted Scripture text sources and processing notes",
+      "says": "Identifies the public-domain editions this reader can legally reproduce and how their verse data is processed.",
+      "href": "/sources#scripture-texts"
+    }
+  ]
+}

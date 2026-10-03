@@ -1,0 +1,229 @@
+{
+  "book": "EXO",
+  "chapter": 3,
+  "bookName": "Exodus",
+  "summary": "While tending Jethro’s flock at Horeb, Moses sees a bush burning without being consumed and hears God call him on holy ground. Yahweh says he has seen Israel’s oppression, commissions Moses to confront Pharaoh, discloses the name Moses is to give the elders, and foretells resistance before a departure from Egypt.",
+  "whyItMatters": "The divine response to Israel’s cry becomes a specific commission to an uncertain messenger. God’s name, presence, and promise of deliverance frame both the coming confrontation and Israel’s worship beyond Egypt.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "The wilderness near Horeb and the proposed route from Egypt toward a land already inhabited by named peoples.",
+    "literaryForm": "Call narrative with a visible sign, holy-ground encounter, objections, disclosure of the divine name, and instructions for elders and Pharaoh."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The previous chapter ends with God hearing Israel’s groaning and remembering the ancestral covenant; Moses is living in Midian when the encounter begins.",
+      "verseRefs": [
+        "2:21-25",
+        "3:1"
+      ]
+    },
+    "here": {
+      "text": "At the bush God identifies with the ancestors, names Israel’s suffering, sends Moses, and gives him words for elders and Pharaoh.",
+      "verseRefs": [
+        "3:2-22"
+      ]
+    },
+    "after": {
+      "text": "Moses next questions whether Israel will believe him; signs and Aaron’s speaking role answer his reluctance before the elders respond.",
+      "verseRefs": [
+        "4:1-17",
+        "4:27-31"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "Fire, holy ground, and ancestral God",
+      "verses": "1-6",
+      "note": "Moses turns toward the unconsumed bush and is called to remove his sandals."
+    },
+    {
+      "heading": "Suffering seen and Moses sent",
+      "verses": "7-12",
+      "note": "God describes Israel’s affliction and commissions Moses with a promise of presence."
+    },
+    {
+      "heading": "The name for Israel",
+      "verses": "13-15",
+      "note": "God answers Moses’ question with “I AM” and the name Yahweh linked to the ancestors."
+    },
+    {
+      "heading": "Instructions for the elders and king",
+      "verses": "16-18",
+      "note": "Moses must gather elders and request a journey into the wilderness for sacrifice."
+    },
+    {
+      "heading": "Resistance and promised release",
+      "verses": "19-22",
+      "note": "God foretells refusal, wonders, favor, and goods carried out of Egypt."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "3:7",
+      "text": "Yahweh said, “I have surely seen the affliction of my people who are in Egypt, and have heard their cry because of their taskmasters, for I know their sorrows.",
+      "why": "God explicitly says Israel’s affliction and cry have been seen and heard."
+    },
+    {
+      "ref": "3:12",
+      "text": "He said, “Certainly I will be with you. This will be the token to you, that I have sent you: when you have brought the people out of Egypt, you shall serve God on this mountain.”",
+      "why": "The answer to Moses’ inadequacy is a promise of accompaniment and future worship at this mountain."
+    },
+    {
+      "ref": "3:15",
+      "text": "God said moreover to Moses, “You shall tell the children of Israel this, ‘Yahweh, the God of your fathers, the God of Abraham, the God of Isaac, and the God of Jacob, has sent me to you.’ This is my name forever, and this is my memorial to all generations.",
+      "why": "The name Yahweh is attached to the God of the ancestors and to future generations."
+    }
+  ],
+  "themes": [
+    "holy ground",
+    "suffering seen",
+    "divine commission",
+    "the divine name",
+    "promised presence",
+    "release after resistance"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is Horeb in this scene?",
+      "answer": "It is the mountain to which Moses leads Jethro’s flock and where God speaks from the bush. The chapter identifies it as God’s mountain and later points to worship there after Israel leaves Egypt.",
+      "verseRefs": [
+        "3:1",
+        "3:12"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why must Moses remove his sandals?",
+      "answer": "The voice tells him he is standing on holy ground and should not come closer. Moses then hides his face when the speaker identifies as the God of his ancestors, marking the encounter as both near and fearsome.",
+      "verseRefs": [
+        "3:4-6"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        4
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does God say he knows about Israel’s condition?",
+      "answer": "He says he has seen affliction, heard the cry under taskmasters, and knows the people’s sorrows. The planned rescue is thus introduced as a response to oppression already described in the opening chapters.",
+      "verseRefs": [
+        "3:7-10"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        7
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Does God’s promise of land describe it as unoccupied?",
+      "answer": "No. The promised destination is described as good and spacious, but the chapter also names several peoples living there. It does not explain their perspectives or settle the later conflicts that a move into that land would raise.",
+      "verseRefs": [
+        "3:8",
+        "3:17"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        8
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "How does God answer Moses’ “Who am I?”",
+      "answer": "The answer promises “I will be with you” and points to future worship at this same mountain as a confirming sign. Moses’ social standing or eloquence is not offered as the ground of the mission.",
+      "verseRefs": [
+        "3:10-12"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        10
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What should a reader hear in “I AM WHO I AM”?",
+      "answer": "The WEB gives God’s answer as “I AM WHO I AM” and then names Yahweh for Israel. Readers also render the compressed line “I will be what I will be”; the options connect it with God’s identity or continuing presence without settling every implication of the phrase.",
+      "verseRefs": [
+        "3:13-15"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        13
+      ],
+      "evidenceSourceIds": [
+        "hosted-web",
+        "hosted-oshb",
+        "usccb-ex3"
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Why ask Pharaoh for three days when the goal is lasting departure?",
+      "answer": "God directs Moses and the elders to request a three-day journey for sacrifice while also announcing that Israel will be brought out of Egypt. Both the limited request and the larger departure promise stand in the same speech without an explanation of their relationship.",
+      "verseRefs": [
+        "3:16-20"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        16
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What happens to Egyptian goods in the promised departure?",
+      "answer": "God says Israelite women will ask neighbors for jewelry and clothing so the people will not leave empty-handed; the speech calls the outcome plunder. The chapter presents this as part of the impending release without detailing each Egyptian neighbor’s later response.",
+      "verseRefs": [
+        "3:20-22"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        20
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Horeb",
+      "def": "The mountain near Moses’ wilderness grazing route where the burning-bush encounter occurs."
+    },
+    {
+      "term": "holy ground",
+      "def": "The place around the bush where Moses is told to remove his sandals."
+    },
+    {
+      "term": "elders",
+      "def": "Israelite leaders whom Moses is instructed to gather before approaching Egypt’s king."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "d87a98f2479df0bb4281d122e10b992809dd120cfc3c76375723cfb2f2d0103f",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

@@ -1,0 +1,1933 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-05T23:42:12.409Z",
+    "source": "public/scriptures/xref (curated cross references)",
+    "algorithms": {
+      "centrality": "weighted PageRank, damping 0.85, power iteration to 1e-10",
+      "flows": "directed book-to-book citation counts over all verse-level edges",
+      "threads": "breadth-first shortest paths between each book's most central verse, relayed only through the 1,000 most central verses, 3-5 hops"
+    },
+    "determinism": "no randomness; identical inputs produce identical outputs",
+    "stats": {
+      "verses": 31034,
+      "distinctEdges": 589398,
+      "edgeMass": 591597,
+      "discardedInvalidEdges": 2678,
+      "pageRankScoreSum": 1,
+      "connectedComponents": 1,
+      "threadCount": 913
+    }
+  },
+  "centrality": [
+    {
+      "rank": 1,
+      "id": "1PE.2.9",
+      "ref": "1 Peter 2:9",
+      "href": "/scriptures/protestant/1PE/2#v9",
+      "score": 0.000333,
+      "inDegree": 180,
+      "outDegree": 55
+    },
+    {
+      "rank": 2,
+      "id": "TIT.2.14",
+      "ref": "Titus 2:14",
+      "href": "/scriptures/protestant/TIT/2#v14",
+      "score": 0.000329,
+      "inDegree": 181,
+      "outDegree": 52
+    },
+    {
+      "rank": 3,
+      "id": "REV.5.9",
+      "ref": "Revelation 5:9",
+      "href": "/scriptures/protestant/REV/5#v9",
+      "score": 0.000317,
+      "inDegree": 175,
+      "outDegree": 43
+    },
+    {
+      "rank": 4,
+      "id": "2CO.5.21",
+      "ref": "2 Corinthians 5:21",
+      "href": "/scriptures/protestant/2CO/5#v21",
+      "score": 0.000277,
+      "inDegree": 150,
+      "outDegree": 45
+    },
+    {
+      "rank": 5,
+      "id": "MAT.28.20",
+      "ref": "Matthew 28:20",
+      "href": "/scriptures/protestant/MAT/28#v20",
+      "score": 0.000273,
+      "inDegree": 161,
+      "outDegree": 118
+    },
+    {
+      "rank": 6,
+      "id": "ISA.9.7",
+      "ref": "Isaiah 9:7",
+      "href": "/scriptures/protestant/ISA/9#v7",
+      "score": 0.000272,
+      "inDegree": 187,
+      "outDegree": 51
+    },
+    {
+      "rank": 7,
+      "id": "TIT.3.5",
+      "ref": "Titus 3:5",
+      "href": "/scriptures/protestant/TIT/3#v5",
+      "score": 0.000263,
+      "inDegree": 148,
+      "outDegree": 52
+    },
+    {
+      "rank": 8,
+      "id": "REV.19.20",
+      "ref": "Revelation 19:20",
+      "href": "/scriptures/protestant/REV/19#v20",
+      "score": 0.00026,
+      "inDegree": 163,
+      "outDegree": 67
+    },
+    {
+      "rank": 9,
+      "id": "REV.11.15",
+      "ref": "Revelation 11:15",
+      "href": "/scriptures/protestant/REV/11#v15",
+      "score": 0.000256,
+      "inDegree": 141,
+      "outDegree": 75
+    },
+    {
+      "rank": 10,
+      "id": "2TH.2.10",
+      "ref": "2 Thessalonians 2:10",
+      "href": "/scriptures/protestant/2TH/2#v10",
+      "score": 0.00025,
+      "inDegree": 144,
+      "outDegree": 41
+    },
+    {
+      "rank": 11,
+      "id": "2TH.1.8",
+      "ref": "2 Thessalonians 1:8",
+      "href": "/scriptures/protestant/2TH/1#v8",
+      "score": 0.000249,
+      "inDegree": 133,
+      "outDegree": 69
+    },
+    {
+      "rank": 12,
+      "id": "MAT.25.41",
+      "ref": "Matthew 25:41",
+      "href": "/scriptures/protestant/MAT/25#v41",
+      "score": 0.000236,
+      "inDegree": 112,
+      "outDegree": 106
+    },
+    {
+      "rank": 13,
+      "id": "ROM.2.5",
+      "ref": "Romans 2:5",
+      "href": "/scriptures/protestant/ROM/2#v5",
+      "score": 0.000233,
+      "inDegree": 126,
+      "outDegree": 31
+    },
+    {
+      "rank": 14,
+      "id": "ISA.9.6",
+      "ref": "Isaiah 9:6",
+      "href": "/scriptures/protestant/ISA/9#v6",
+      "score": 0.000233,
+      "inDegree": 168,
+      "outDegree": 99
+    },
+    {
+      "rank": 15,
+      "id": "HEB.12.2",
+      "ref": "Hebrews 12:2",
+      "href": "/scriptures/protestant/HEB/12#v2",
+      "score": 0.000233,
+      "inDegree": 122,
+      "outDegree": 143
+    },
+    {
+      "rank": 16,
+      "id": "REV.21.8",
+      "ref": "Revelation 21:8",
+      "href": "/scriptures/protestant/REV/21#v8",
+      "score": 0.000231,
+      "inDegree": 110,
+      "outDegree": 46
+    },
+    {
+      "rank": 17,
+      "id": "JHN.3.16",
+      "ref": "John 3:16",
+      "href": "/scriptures/protestant/JHN/3#v16",
+      "score": 0.000227,
+      "inDegree": 101,
+      "outDegree": 19
+    },
+    {
+      "rank": 18,
+      "id": "ACT.26.18",
+      "ref": "Acts 26:18",
+      "href": "/scriptures/protestant/ACT/26#v18",
+      "score": 0.000227,
+      "inDegree": 136,
+      "outDegree": 118
+    },
+    {
+      "rank": 19,
+      "id": "ROM.3.19",
+      "ref": "Romans 3:19",
+      "href": "/scriptures/protestant/ROM/3#v19",
+      "score": 0.000226,
+      "inDegree": 118,
+      "outDegree": 35
+    },
+    {
+      "rank": 20,
+      "id": "2CO.4.6",
+      "ref": "2 Corinthians 4:6",
+      "href": "/scriptures/protestant/2CO/4#v6",
+      "score": 0.000225,
+      "inDegree": 128,
+      "outDegree": 43
+    },
+    {
+      "rank": 21,
+      "id": "1PE.3.18",
+      "ref": "1 Peter 3:18",
+      "href": "/scriptures/protestant/1PE/3#v18",
+      "score": 0.000223,
+      "inDegree": 96,
+      "outDegree": 36
+    },
+    {
+      "rank": 22,
+      "id": "EPH.5.2",
+      "ref": "Ephesians 5:2",
+      "href": "/scriptures/protestant/EPH/5#v2",
+      "score": 0.000223,
+      "inDegree": 105,
+      "outDegree": 52
+    },
+    {
+      "rank": 23,
+      "id": "JHN.1.14",
+      "ref": "John 1:14",
+      "href": "/scriptures/protestant/JHN/1#v14",
+      "score": 0.000222,
+      "inDegree": 101,
+      "outDegree": 78
+    },
+    {
+      "rank": 24,
+      "id": "HEB.9.14",
+      "ref": "Hebrews 9:14",
+      "href": "/scriptures/protestant/HEB/9#v14",
+      "score": 0.000221,
+      "inDegree": 111,
+      "outDegree": 85
+    },
+    {
+      "rank": 25,
+      "id": "HEB.1.3",
+      "ref": "Hebrews 1:3",
+      "href": "/scriptures/protestant/HEB/1#v3",
+      "score": 0.000221,
+      "inDegree": 105,
+      "outDegree": 47
+    },
+    {
+      "rank": 26,
+      "id": "PHP.2.11",
+      "ref": "Philippians 2:11",
+      "href": "/scriptures/protestant/PHP/2#v11",
+      "score": 0.000221,
+      "inDegree": 119,
+      "outDegree": 35
+    },
+    {
+      "rank": 27,
+      "id": "REV.2.7",
+      "ref": "Revelation 2:7",
+      "href": "/scriptures/protestant/REV/2#v7",
+      "score": 0.00022,
+      "inDegree": 51,
+      "outDegree": 48
+    },
+    {
+      "rank": 28,
+      "id": "JHN.5.23",
+      "ref": "John 5:23",
+      "href": "/scriptures/protestant/JHN/5#v23",
+      "score": 0.00022,
+      "inDegree": 111,
+      "outDegree": 68
+    },
+    {
+      "rank": 29,
+      "id": "2TH.2.11",
+      "ref": "2 Thessalonians 2:11",
+      "href": "/scriptures/protestant/2TH/2#v11",
+      "score": 0.00022,
+      "inDegree": 131,
+      "outDegree": 40
+    },
+    {
+      "rank": 30,
+      "id": "ISA.57.15",
+      "ref": "Isaiah 57:15",
+      "href": "/scriptures/protestant/ISA/57#v15",
+      "score": 0.000217,
+      "inDegree": 122,
+      "outDegree": 67
+    },
+    {
+      "rank": 31,
+      "id": "HEB.6.18",
+      "ref": "Hebrews 6:18",
+      "href": "/scriptures/protestant/HEB/6#v18",
+      "score": 0.000216,
+      "inDegree": 119,
+      "outDegree": 57
+    },
+    {
+      "rank": 32,
+      "id": "PHP.2.10",
+      "ref": "Philippians 2:10",
+      "href": "/scriptures/protestant/PHP/2#v10",
+      "score": 0.000216,
+      "inDegree": 116,
+      "outDegree": 19
+    },
+    {
+      "rank": 33,
+      "id": "EPH.3.8",
+      "ref": "Ephesians 3:8",
+      "href": "/scriptures/protestant/EPH/3#v8",
+      "score": 0.000216,
+      "inDegree": 129,
+      "outDegree": 37
+    },
+    {
+      "rank": 34,
+      "id": "REV.12.9",
+      "ref": "Revelation 12:9",
+      "href": "/scriptures/protestant/REV/12#v9",
+      "score": 0.000215,
+      "inDegree": 105,
+      "outDegree": 81
+    },
+    {
+      "rank": 35,
+      "id": "1JN.5.20",
+      "ref": "1 John 5:20",
+      "href": "/scriptures/protestant/1JN/5#v20",
+      "score": 0.000215,
+      "inDegree": 111,
+      "outDegree": 64
+    },
+    {
+      "rank": 36,
+      "id": "2CO.4.4",
+      "ref": "2 Corinthians 4:4",
+      "href": "/scriptures/protestant/2CO/4#v4",
+      "score": 0.000213,
+      "inDegree": 111,
+      "outDegree": 40
+    },
+    {
+      "rank": 37,
+      "id": "REV.20.11",
+      "ref": "Revelation 20:11",
+      "href": "/scriptures/protestant/REV/20#v11",
+      "score": 0.000212,
+      "inDegree": 104,
+      "outDegree": 29
+    },
+    {
+      "rank": 38,
+      "id": "HEB.4.13",
+      "ref": "Hebrews 4:13",
+      "href": "/scriptures/protestant/HEB/4#v13",
+      "score": 0.000212,
+      "inDegree": 102,
+      "outDegree": 48
+    },
+    {
+      "rank": 39,
+      "id": "REV.15.4",
+      "ref": "Revelation 15:4",
+      "href": "/scriptures/protestant/REV/15#v4",
+      "score": 0.000208,
+      "inDegree": 105,
+      "outDegree": 52
+    },
+    {
+      "rank": 40,
+      "id": "REV.7.14",
+      "ref": "Revelation 7:14",
+      "href": "/scriptures/protestant/REV/7#v14",
+      "score": 0.000206,
+      "inDegree": 124,
+      "outDegree": 33
+    },
+    {
+      "rank": 41,
+      "id": "1PE.2.5",
+      "ref": "1 Peter 2:5",
+      "href": "/scriptures/protestant/1PE/2#v5",
+      "score": 0.000205,
+      "inDegree": 114,
+      "outDegree": 30
+    },
+    {
+      "rank": 42,
+      "id": "EPH.2.5",
+      "ref": "Ephesians 2:5",
+      "href": "/scriptures/protestant/EPH/2#v5",
+      "score": 0.000204,
+      "inDegree": 111,
+      "outDegree": 19
+    },
+    {
+      "rank": 43,
+      "id": "ISA.55.7",
+      "ref": "Isaiah 55:7",
+      "href": "/scriptures/protestant/ISA/55#v7",
+      "score": 0.000203,
+      "inDegree": 144,
+      "outDegree": 75
+    },
+    {
+      "rank": 44,
+      "id": "REV.1.18",
+      "ref": "Revelation 1:18",
+      "href": "/scriptures/protestant/REV/1#v18",
+      "score": 0.000203,
+      "inDegree": 98,
+      "outDegree": 25
+    },
+    {
+      "rank": 45,
+      "id": "EPH.1.6",
+      "ref": "Ephesians 1:6",
+      "href": "/scriptures/protestant/EPH/1#v6",
+      "score": 0.000203,
+      "inDegree": 109,
+      "outDegree": 58
+    },
+    {
+      "rank": 46,
+      "id": "REV.20.2",
+      "ref": "Revelation 20:2",
+      "href": "/scriptures/protestant/REV/20#v2",
+      "score": 0.000202,
+      "inDegree": 77,
+      "outDegree": 27
+    },
+    {
+      "rank": 47,
+      "id": "1CO.1.30",
+      "ref": "1 Corinthians 1:30",
+      "href": "/scriptures/protestant/1CO/1#v30",
+      "score": 0.000201,
+      "inDegree": 99,
+      "outDegree": 104
+    },
+    {
+      "rank": 48,
+      "id": "2PE.2.3",
+      "ref": "2 Peter 2:3",
+      "href": "/scriptures/protestant/2PE/2#v3",
+      "score": 0.000201,
+      "inDegree": 130,
+      "outDegree": 45
+    },
+    {
+      "rank": 49,
+      "id": "REV.1.5",
+      "ref": "Revelation 1:5",
+      "href": "/scriptures/protestant/REV/1#v5",
+      "score": 0.000199,
+      "inDegree": 110,
+      "outDegree": 58
+    },
+    {
+      "rank": 50,
+      "id": "1PE.2.24",
+      "ref": "1 Peter 2:24",
+      "href": "/scriptures/protestant/1PE/2#v24",
+      "score": 0.000199,
+      "inDegree": 98,
+      "outDegree": 47
+    },
+    {
+      "rank": 51,
+      "id": "LUK.12.20",
+      "ref": "Luke 12:20",
+      "href": "/scriptures/protestant/LUK/12#v20",
+      "score": 0.000198,
+      "inDegree": 122,
+      "outDegree": 63
+    },
+    {
+      "rank": 52,
+      "id": "1TH.5.3",
+      "ref": "1 Thessalonians 5:3",
+      "href": "/scriptures/protestant/1TH/5#v3",
+      "score": 0.000198,
+      "inDegree": 101,
+      "outDegree": 64
+    },
+    {
+      "rank": 53,
+      "id": "1CO.4.5",
+      "ref": "1 Corinthians 4:5",
+      "href": "/scriptures/protestant/1CO/4#v5",
+      "score": 0.000198,
+      "inDegree": 105,
+      "outDegree": 41
+    },
+    {
+      "rank": 54,
+      "id": "REV.5.13",
+      "ref": "Revelation 5:13",
+      "href": "/scriptures/protestant/REV/5#v13",
+      "score": 0.000198,
+      "inDegree": 106,
+      "outDegree": 41
+    },
+    {
+      "rank": 55,
+      "id": "EPH.1.7",
+      "ref": "Ephesians 1:7",
+      "href": "/scriptures/protestant/EPH/1#v7",
+      "score": 0.000198,
+      "inDegree": 104,
+      "outDegree": 90
+    },
+    {
+      "rank": 56,
+      "id": "JHN.10.28",
+      "ref": "John 10:28",
+      "href": "/scriptures/protestant/JHN/10#v28",
+      "score": 0.000197,
+      "inDegree": 104,
+      "outDegree": 78
+    },
+    {
+      "rank": 57,
+      "id": "GAL.5.22",
+      "ref": "Galatians 5:22",
+      "href": "/scriptures/protestant/GAL/5#v22",
+      "score": 0.000197,
+      "inDegree": 131,
+      "outDegree": 119
+    },
+    {
+      "rank": 58,
+      "id": "JHN.10.30",
+      "ref": "John 10:30",
+      "href": "/scriptures/protestant/JHN/10#v30",
+      "score": 0.000197,
+      "inDegree": 106,
+      "outDegree": 16
+    },
+    {
+      "rank": 59,
+      "id": "JAS.1.17",
+      "ref": "James 1:17",
+      "href": "/scriptures/protestant/JAS/1#v17",
+      "score": 0.000196,
+      "inDegree": 99,
+      "outDegree": 101
+    },
+    {
+      "rank": 60,
+      "id": "TIT.3.3",
+      "ref": "Titus 3:3",
+      "href": "/scriptures/protestant/TIT/3#v3",
+      "score": 0.000194,
+      "inDegree": 113,
+      "outDegree": 56
+    },
+    {
+      "rank": 61,
+      "id": "REV.7.17",
+      "ref": "Revelation 7:17",
+      "href": "/scriptures/protestant/REV/7#v17",
+      "score": 0.000194,
+      "inDegree": 108,
+      "outDegree": 41
+    },
+    {
+      "rank": 62,
+      "id": "1JN.4.10",
+      "ref": "1 John 4:10",
+      "href": "/scriptures/protestant/1JN/4#v10",
+      "score": 0.000194,
+      "inDegree": 91,
+      "outDegree": 26
+    },
+    {
+      "rank": 63,
+      "id": "2CO.12.9",
+      "ref": "2 Corinthians 12:9",
+      "href": "/scriptures/protestant/2CO/12#v9",
+      "score": 0.000193,
+      "inDegree": 111,
+      "outDegree": 61
+    },
+    {
+      "rank": 64,
+      "id": "JHN.5.24",
+      "ref": "John 5:24",
+      "href": "/scriptures/protestant/JHN/5#v24",
+      "score": 0.000193,
+      "inDegree": 99,
+      "outDegree": 35
+    },
+    {
+      "rank": 65,
+      "id": "DAN.9.24",
+      "ref": "Daniel 9:24",
+      "href": "/scriptures/protestant/DAN/9#v24",
+      "score": 0.000192,
+      "inDegree": 109,
+      "outDegree": 62
+    },
+    {
+      "rank": 66,
+      "id": "REV.19.2",
+      "ref": "Revelation 19:2",
+      "href": "/scriptures/protestant/REV/19#v2",
+      "score": 0.00019,
+      "inDegree": 123,
+      "outDegree": 20
+    },
+    {
+      "rank": 67,
+      "id": "MAT.6.13",
+      "ref": "Matthew 6:13",
+      "href": "/scriptures/protestant/MAT/6#v13",
+      "score": 0.000188,
+      "inDegree": 97,
+      "outDegree": 95
+    },
+    {
+      "rank": 68,
+      "id": "TIT.2.13",
+      "ref": "Titus 2:13",
+      "href": "/scriptures/protestant/TIT/2#v13",
+      "score": 0.000188,
+      "inDegree": 101,
+      "outDegree": 45
+    },
+    {
+      "rank": 69,
+      "id": "2CO.5.20",
+      "ref": "2 Corinthians 5:20",
+      "href": "/scriptures/protestant/2CO/5#v20",
+      "score": 0.000188,
+      "inDegree": 99,
+      "outDegree": 41
+    },
+    {
+      "rank": 70,
+      "id": "REV.20.12",
+      "ref": "Revelation 20:12",
+      "href": "/scriptures/protestant/REV/20#v12",
+      "score": 0.000188,
+      "inDegree": 93,
+      "outDegree": 40
+    },
+    {
+      "rank": 71,
+      "id": "REV.21.23",
+      "ref": "Revelation 21:23",
+      "href": "/scriptures/protestant/REV/21#v23",
+      "score": 0.000188,
+      "inDegree": 89,
+      "outDegree": 20
+    },
+    {
+      "rank": 72,
+      "id": "JHN.14.6",
+      "ref": "John 14:6",
+      "href": "/scriptures/protestant/JHN/14#v6",
+      "score": 0.000188,
+      "inDegree": 95,
+      "outDegree": 80
+    },
+    {
+      "rank": 73,
+      "id": "ISA.53.11",
+      "ref": "Isaiah 53:11",
+      "href": "/scriptures/protestant/ISA/53#v11",
+      "score": 0.000187,
+      "inDegree": 126,
+      "outDegree": 57
+    },
+    {
+      "rank": 74,
+      "id": "ISA.53.10",
+      "ref": "Isaiah 53:10",
+      "href": "/scriptures/protestant/ISA/53#v10",
+      "score": 0.000186,
+      "inDegree": 122,
+      "outDegree": 81
+    },
+    {
+      "rank": 75,
+      "id": "2PE.3.10",
+      "ref": "2 Peter 3:10",
+      "href": "/scriptures/protestant/2PE/3#v10",
+      "score": 0.000186,
+      "inDegree": 83,
+      "outDegree": 31
+    },
+    {
+      "rank": 76,
+      "id": "EPH.2.4",
+      "ref": "Ephesians 2:4",
+      "href": "/scriptures/protestant/EPH/2#v4",
+      "score": 0.000185,
+      "inDegree": 97,
+      "outDegree": 62
+    },
+    {
+      "rank": 77,
+      "id": "MAT.25.34",
+      "ref": "Matthew 25:34",
+      "href": "/scriptures/protestant/MAT/25#v34",
+      "score": 0.000185,
+      "inDegree": 107,
+      "outDegree": 92
+    },
+    {
+      "rank": 78,
+      "id": "HEB.10.29",
+      "ref": "Hebrews 10:29",
+      "href": "/scriptures/protestant/HEB/10#v29",
+      "score": 0.000184,
+      "inDegree": 99,
+      "outDegree": 30
+    },
+    {
+      "rank": 79,
+      "id": "ROM.5.20",
+      "ref": "Romans 5:20",
+      "href": "/scriptures/protestant/ROM/5#v20",
+      "score": 0.000183,
+      "inDegree": 95,
+      "outDegree": 84
+    },
+    {
+      "rank": 80,
+      "id": "REV.7.9",
+      "ref": "Revelation 7:9",
+      "href": "/scriptures/protestant/REV/7#v9",
+      "score": 0.000183,
+      "inDegree": 90,
+      "outDegree": 67
+    },
+    {
+      "rank": 81,
+      "id": "ROM.1.28",
+      "ref": "Romans 1:28",
+      "href": "/scriptures/protestant/ROM/1#v28",
+      "score": 0.000183,
+      "inDegree": 97,
+      "outDegree": 35
+    },
+    {
+      "rank": 82,
+      "id": "DAN.4.35",
+      "ref": "Daniel 4:35",
+      "href": "/scriptures/protestant/DAN/4#v35",
+      "score": 0.000182,
+      "inDegree": 109,
+      "outDegree": 65
+    },
+    {
+      "rank": 83,
+      "id": "TIT.3.4",
+      "ref": "Titus 3:4",
+      "href": "/scriptures/protestant/TIT/3#v4",
+      "score": 0.000182,
+      "inDegree": 101,
+      "outDegree": 17
+    },
+    {
+      "rank": 84,
+      "id": "GEN.49.10",
+      "ref": "Genesis 49:10",
+      "href": "/scriptures/protestant/GEN/49#v10",
+      "score": 0.000182,
+      "inDegree": 117,
+      "outDegree": 67
+    },
+    {
+      "rank": 85,
+      "id": "2TH.1.9",
+      "ref": "2 Thessalonians 1:9",
+      "href": "/scriptures/protestant/2TH/1#v9",
+      "score": 0.000182,
+      "inDegree": 96,
+      "outDegree": 44
+    },
+    {
+      "rank": 86,
+      "id": "JHN.21.17",
+      "ref": "John 21:17",
+      "href": "/scriptures/protestant/JHN/21#v17",
+      "score": 0.000182,
+      "inDegree": 115,
+      "outDegree": 62
+    },
+    {
+      "rank": 87,
+      "id": "2TH.1.7",
+      "ref": "2 Thessalonians 1:7",
+      "href": "/scriptures/protestant/2TH/1#v7",
+      "score": 0.000181,
+      "inDegree": 99,
+      "outDegree": 45
+    },
+    {
+      "rank": 88,
+      "id": "JER.31.33",
+      "ref": "Jeremiah 31:33",
+      "href": "/scriptures/protestant/JER/31#v33",
+      "score": 0.000181,
+      "inDegree": 118,
+      "outDegree": 36
+    },
+    {
+      "rank": 89,
+      "id": "GAL.3.13",
+      "ref": "Galatians 3:13",
+      "href": "/scriptures/protestant/GAL/3#v13",
+      "score": 0.000181,
+      "inDegree": 96,
+      "outDegree": 62
+    },
+    {
+      "rank": 90,
+      "id": "1JN.3.2",
+      "ref": "1 John 3:2",
+      "href": "/scriptures/protestant/1JN/3#v2",
+      "score": 0.000179,
+      "inDegree": 82,
+      "outDegree": 28
+    },
+    {
+      "rank": 91,
+      "id": "ROM.5.21",
+      "ref": "Romans 5:21",
+      "href": "/scriptures/protestant/ROM/5#v21",
+      "score": 0.000179,
+      "inDegree": 97,
+      "outDegree": 19
+    },
+    {
+      "rank": 92,
+      "id": "ISA.61.1",
+      "ref": "Isaiah 61:1",
+      "href": "/scriptures/protestant/ISA/61#v1",
+      "score": 0.000179,
+      "inDegree": 126,
+      "outDegree": 62
+    },
+    {
+      "rank": 93,
+      "id": "1CO.6.11",
+      "ref": "1 Corinthians 6:11",
+      "href": "/scriptures/protestant/1CO/6#v11",
+      "score": 0.000178,
+      "inDegree": 105,
+      "outDegree": 72
+    },
+    {
+      "rank": 94,
+      "id": "1PE.1.22",
+      "ref": "1 Peter 1:22",
+      "href": "/scriptures/protestant/1PE/1#v22",
+      "score": 0.000178,
+      "inDegree": 86,
+      "outDegree": 60
+    },
+    {
+      "rank": 95,
+      "id": "ROM.16.20",
+      "ref": "Romans 16:20",
+      "href": "/scriptures/protestant/ROM/16#v20",
+      "score": 0.000178,
+      "inDegree": 49,
+      "outDegree": 32
+    },
+    {
+      "rank": 96,
+      "id": "EZK.36.25",
+      "ref": "Ezekiel 36:25",
+      "href": "/scriptures/protestant/EZK/36#v25",
+      "score": 0.000178,
+      "inDegree": 118,
+      "outDegree": 49
+    },
+    {
+      "rank": 97,
+      "id": "REV.5.12",
+      "ref": "Revelation 5:12",
+      "href": "/scriptures/protestant/REV/5#v12",
+      "score": 0.000177,
+      "inDegree": 109,
+      "outDegree": 14
+    },
+    {
+      "rank": 98,
+      "id": "MAT.25.40",
+      "ref": "Matthew 25:40",
+      "href": "/scriptures/protestant/MAT/25#v40",
+      "score": 0.000177,
+      "inDegree": 126,
+      "outDegree": 62
+    },
+    {
+      "rank": 99,
+      "id": "JER.23.6",
+      "ref": "Jeremiah 23:6",
+      "href": "/scriptures/protestant/JER/23#v6",
+      "score": 0.000177,
+      "inDegree": 132,
+      "outDegree": 57
+    },
+    {
+      "rank": 100,
+      "id": "JHN.3.19",
+      "ref": "John 3:19",
+      "href": "/scriptures/protestant/JHN/3#v19",
+      "score": 0.000175,
+      "inDegree": 79,
+      "outDegree": 51
+    }
+  ],
+  "flows": [
+    {
+      "from": "PSA",
+      "fromName": "Psalms",
+      "to": "ISA",
+      "toName": "Isaiah",
+      "citations": 3953
+    },
+    {
+      "from": "JER",
+      "fromName": "Jeremiah",
+      "to": "EZK",
+      "toName": "Ezekiel",
+      "citations": 3829
+    },
+    {
+      "from": "ISA",
+      "fromName": "Isaiah",
+      "to": "PSA",
+      "toName": "Psalms",
+      "citations": 3756
+    },
+    {
+      "from": "JER",
+      "fromName": "Jeremiah",
+      "to": "ISA",
+      "toName": "Isaiah",
+      "citations": 3570
+    },
+    {
+      "from": "MAT",
+      "fromName": "Matthew",
+      "to": "LUK",
+      "toName": "Luke",
+      "citations": 3082
+    },
+    {
+      "from": "EZK",
+      "fromName": "Ezekiel",
+      "to": "JER",
+      "toName": "Jeremiah",
+      "citations": 2972
+    },
+    {
+      "from": "ISA",
+      "fromName": "Isaiah",
+      "to": "JER",
+      "toName": "Jeremiah",
+      "citations": 2890
+    },
+    {
+      "from": "LUK",
+      "fromName": "Luke",
+      "to": "MAT",
+      "toName": "Matthew",
+      "citations": 2883
+    },
+    {
+      "from": "ISA",
+      "fromName": "Isaiah",
+      "to": "EZK",
+      "toName": "Ezekiel",
+      "citations": 2286
+    },
+    {
+      "from": "JER",
+      "fromName": "Jeremiah",
+      "to": "PSA",
+      "toName": "Psalms",
+      "citations": 2275
+    },
+    {
+      "from": "JOB",
+      "fromName": "Job",
+      "to": "PSA",
+      "toName": "Psalms",
+      "citations": 2250
+    },
+    {
+      "from": "PSA",
+      "fromName": "Psalms",
+      "to": "JOB",
+      "toName": "Job",
+      "citations": 2046
+    },
+    {
+      "from": "MAT",
+      "fromName": "Matthew",
+      "to": "JHN",
+      "toName": "John",
+      "citations": 1986
+    },
+    {
+      "from": "MRK",
+      "fromName": "Mark",
+      "to": "MAT",
+      "toName": "Matthew",
+      "citations": 1960
+    },
+    {
+      "from": "LUK",
+      "fromName": "Luke",
+      "to": "PSA",
+      "toName": "Psalms",
+      "citations": 1924
+    },
+    {
+      "from": "EZK",
+      "fromName": "Ezekiel",
+      "to": "ISA",
+      "toName": "Isaiah",
+      "citations": 1916
+    },
+    {
+      "from": "LUK",
+      "fromName": "Luke",
+      "to": "JHN",
+      "toName": "John",
+      "citations": 1786
+    },
+    {
+      "from": "MAT",
+      "fromName": "Matthew",
+      "to": "MRK",
+      "toName": "Mark",
+      "citations": 1780
+    },
+    {
+      "from": "MRK",
+      "fromName": "Mark",
+      "to": "LUK",
+      "toName": "Luke",
+      "citations": 1683
+    },
+    {
+      "from": "GEN",
+      "fromName": "Genesis",
+      "to": "PSA",
+      "toName": "Psalms",
+      "citations": 1662
+    }
+  ],
+  "threads": [
+    {
+      "from": "1 Samuel 2:30",
+      "to": "Leviticus 26:33",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "1SA.2.30",
+          "ref": "1 Samuel 2:30",
+          "href": "/scriptures/protestant/1SA/2#v30"
+        },
+        {
+          "id": "1CO.4.5",
+          "ref": "1 Corinthians 4:5",
+          "href": "/scriptures/protestant/1CO/4#v5"
+        },
+        {
+          "id": "1PE.5.4",
+          "ref": "1 Peter 5:4",
+          "href": "/scriptures/protestant/1PE/5#v4"
+        },
+        {
+          "id": "MAT.25.41",
+          "ref": "Matthew 25:41",
+          "href": "/scriptures/protestant/MAT/25#v41"
+        },
+        {
+          "id": "DEU.28.64",
+          "ref": "Deuteronomy 28:64",
+          "href": "/scriptures/protestant/DEU/28#v64"
+        },
+        {
+          "id": "LEV.26.33",
+          "ref": "Leviticus 26:33",
+          "href": "/scriptures/protestant/LEV/26#v33"
+        }
+      ]
+    },
+    {
+      "from": "1 Samuel 2:30",
+      "to": "2 Kings 17:6",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "1SA.2.30",
+          "ref": "1 Samuel 2:30",
+          "href": "/scriptures/protestant/1SA/2#v30"
+        },
+        {
+          "id": "1CO.4.5",
+          "ref": "1 Corinthians 4:5",
+          "href": "/scriptures/protestant/1CO/4#v5"
+        },
+        {
+          "id": "1PE.5.4",
+          "ref": "1 Peter 5:4",
+          "href": "/scriptures/protestant/1PE/5#v4"
+        },
+        {
+          "id": "MAT.25.41",
+          "ref": "Matthew 25:41",
+          "href": "/scriptures/protestant/MAT/25#v41"
+        },
+        {
+          "id": "DEU.28.64",
+          "ref": "Deuteronomy 28:64",
+          "href": "/scriptures/protestant/DEU/28#v64"
+        },
+        {
+          "id": "2KI.17.6",
+          "ref": "2 Kings 17:6",
+          "href": "/scriptures/protestant/2KI/17#v6"
+        }
+      ]
+    },
+    {
+      "from": "1 Samuel 2:30",
+      "to": "Lamentations 4:6",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "1SA.2.30",
+          "ref": "1 Samuel 2:30",
+          "href": "/scriptures/protestant/1SA/2#v30"
+        },
+        {
+          "id": "1CO.4.5",
+          "ref": "1 Corinthians 4:5",
+          "href": "/scriptures/protestant/1CO/4#v5"
+        },
+        {
+          "id": "1PE.5.4",
+          "ref": "1 Peter 5:4",
+          "href": "/scriptures/protestant/1PE/5#v4"
+        },
+        {
+          "id": "MAT.25.41",
+          "ref": "Matthew 25:41",
+          "href": "/scriptures/protestant/MAT/25#v41"
+        },
+        {
+          "id": "JUD.1.7",
+          "ref": "Jude 1:7",
+          "href": "/scriptures/protestant/JUD/1#v7"
+        },
+        {
+          "id": "LAM.4.6",
+          "ref": "Lamentations 4:6",
+          "href": "/scriptures/protestant/LAM/4#v6"
+        }
+      ]
+    },
+    {
+      "from": "2 Samuel 12:9",
+      "to": "Lamentations 4:6",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "2SA.12.9",
+          "ref": "2 Samuel 12:9",
+          "href": "/scriptures/protestant/2SA/12#v9"
+        },
+        {
+          "id": "HEB.10.28",
+          "ref": "Hebrews 10:28",
+          "href": "/scriptures/protestant/HEB/10#v28"
+        },
+        {
+          "id": "JAS.2.13",
+          "ref": "James 2:13",
+          "href": "/scriptures/protestant/JAS/2#v13"
+        },
+        {
+          "id": "MAT.25.41",
+          "ref": "Matthew 25:41",
+          "href": "/scriptures/protestant/MAT/25#v41"
+        },
+        {
+          "id": "JUD.1.7",
+          "ref": "Jude 1:7",
+          "href": "/scriptures/protestant/JUD/1#v7"
+        },
+        {
+          "id": "LAM.4.6",
+          "ref": "Lamentations 4:6",
+          "href": "/scriptures/protestant/LAM/4#v6"
+        }
+      ]
+    },
+    {
+      "from": "Amos 9:3",
+      "to": "Lamentations 4:6",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "AMO.9.3",
+          "ref": "Amos 9:3",
+          "href": "/scriptures/protestant/AMO/9#v3"
+        },
+        {
+          "id": "GEN.3.15",
+          "ref": "Genesis 3:15",
+          "href": "/scriptures/protestant/GEN/3#v15"
+        },
+        {
+          "id": "HEB.2.14",
+          "ref": "Hebrews 2:14",
+          "href": "/scriptures/protestant/HEB/2#v14"
+        },
+        {
+          "id": "MAT.25.41",
+          "ref": "Matthew 25:41",
+          "href": "/scriptures/protestant/MAT/25#v41"
+        },
+        {
+          "id": "JUD.1.7",
+          "ref": "Jude 1:7",
+          "href": "/scriptures/protestant/JUD/1#v7"
+        },
+        {
+          "id": "LAM.4.6",
+          "ref": "Lamentations 4:6",
+          "href": "/scriptures/protestant/LAM/4#v6"
+        }
+      ]
+    },
+    {
+      "from": "Ecclesiastes 9:10",
+      "to": "Joshua 7:25",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "ECC.9.10",
+          "ref": "Ecclesiastes 9:10",
+          "href": "/scriptures/protestant/ECC/9#v10"
+        },
+        {
+          "id": "1CO.15.10",
+          "ref": "1 Corinthians 15:10",
+          "href": "/scriptures/protestant/1CO/15#v10"
+        },
+        {
+          "id": "1CO.4.7",
+          "ref": "1 Corinthians 4:7",
+          "href": "/scriptures/protestant/1CO/4#v7"
+        },
+        {
+          "id": "EPH.2.3",
+          "ref": "Ephesians 2:3",
+          "href": "/scriptures/protestant/EPH/2#v3"
+        },
+        {
+          "id": "1TI.6.9",
+          "ref": "1 Timothy 6:9",
+          "href": "/scriptures/protestant/1TI/6#v9"
+        },
+        {
+          "id": "JOS.7.25",
+          "ref": "Joshua 7:25",
+          "href": "/scriptures/protestant/JOS/7#v25"
+        }
+      ]
+    },
+    {
+      "from": "Ecclesiastes 9:10",
+      "to": "Lamentations 4:6",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "ECC.9.10",
+          "ref": "Ecclesiastes 9:10",
+          "href": "/scriptures/protestant/ECC/9#v10"
+        },
+        {
+          "id": "1CO.15.10",
+          "ref": "1 Corinthians 15:10",
+          "href": "/scriptures/protestant/1CO/15#v10"
+        },
+        {
+          "id": "1TI.1.15",
+          "ref": "1 Timothy 1:15",
+          "href": "/scriptures/protestant/1TI/1#v15"
+        },
+        {
+          "id": "1JN.1.9",
+          "ref": "1 John 1:9",
+          "href": "/scriptures/protestant/1JN/1#v9"
+        },
+        {
+          "id": "DAN.9.12",
+          "ref": "Daniel 9:12",
+          "href": "/scriptures/protestant/DAN/9#v12"
+        },
+        {
+          "id": "LAM.4.6",
+          "ref": "Lamentations 4:6",
+          "href": "/scriptures/protestant/LAM/4#v6"
+        }
+      ]
+    },
+    {
+      "from": "Habakkuk 3:8",
+      "to": "2 Kings 17:6",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "HAB.3.8",
+          "ref": "Habakkuk 3:8",
+          "href": "/scriptures/protestant/HAB/3#v8"
+        },
+        {
+          "id": "ISA.2.19",
+          "ref": "Isaiah 2:19",
+          "href": "/scriptures/protestant/ISA/2#v19"
+        },
+        {
+          "id": "2TH.1.9",
+          "ref": "2 Thessalonians 1:9",
+          "href": "/scriptures/protestant/2TH/1#v9"
+        },
+        {
+          "id": "MAT.25.41",
+          "ref": "Matthew 25:41",
+          "href": "/scriptures/protestant/MAT/25#v41"
+        },
+        {
+          "id": "DEU.28.64",
+          "ref": "Deuteronomy 28:64",
+          "href": "/scriptures/protestant/DEU/28#v64"
+        },
+        {
+          "id": "2KI.17.6",
+          "ref": "2 Kings 17:6",
+          "href": "/scriptures/protestant/2KI/17#v6"
+        }
+      ]
+    },
+    {
+      "from": "Habakkuk 3:8",
+      "to": "Lamentations 4:6",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "HAB.3.8",
+          "ref": "Habakkuk 3:8",
+          "href": "/scriptures/protestant/HAB/3#v8"
+        },
+        {
+          "id": "ISA.2.19",
+          "ref": "Isaiah 2:19",
+          "href": "/scriptures/protestant/ISA/2#v19"
+        },
+        {
+          "id": "2TH.1.9",
+          "ref": "2 Thessalonians 1:9",
+          "href": "/scriptures/protestant/2TH/1#v9"
+        },
+        {
+          "id": "MAT.25.41",
+          "ref": "Matthew 25:41",
+          "href": "/scriptures/protestant/MAT/25#v41"
+        },
+        {
+          "id": "JUD.1.7",
+          "ref": "Jude 1:7",
+          "href": "/scriptures/protestant/JUD/1#v7"
+        },
+        {
+          "id": "LAM.4.6",
+          "ref": "Lamentations 4:6",
+          "href": "/scriptures/protestant/LAM/4#v6"
+        }
+      ]
+    },
+    {
+      "from": "Joshua 7:25",
+      "to": "Zephaniah 3:17",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "JOS.7.25",
+          "ref": "Joshua 7:25",
+          "href": "/scriptures/protestant/JOS/7#v25"
+        },
+        {
+          "id": "1TI.6.9",
+          "ref": "1 Timothy 6:9",
+          "href": "/scriptures/protestant/1TI/6#v9"
+        },
+        {
+          "id": "EPH.2.3",
+          "ref": "Ephesians 2:3",
+          "href": "/scriptures/protestant/EPH/2#v3"
+        },
+        {
+          "id": "1JN.1.9",
+          "ref": "1 John 1:9",
+          "href": "/scriptures/protestant/1JN/1#v9"
+        },
+        {
+          "id": "ISA.45.21",
+          "ref": "Isaiah 45:21",
+          "href": "/scriptures/protestant/ISA/45#v21"
+        },
+        {
+          "id": "ZEP.3.17",
+          "ref": "Zephaniah 3:17",
+          "href": "/scriptures/protestant/ZEP/3#v17"
+        }
+      ]
+    },
+    {
+      "from": "Jude 1:24",
+      "to": "Lamentations 4:6",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "JUD.1.24",
+          "ref": "Jude 1:24",
+          "href": "/scriptures/protestant/JUD/1#v24"
+        },
+        {
+          "id": "1PE.1.5",
+          "ref": "1 Peter 1:5",
+          "href": "/scriptures/protestant/1PE/1#v5"
+        },
+        {
+          "id": "MAT.24.24",
+          "ref": "Matthew 24:24",
+          "href": "/scriptures/protestant/MAT/24#v24"
+        },
+        {
+          "id": "2PE.2.3",
+          "ref": "2 Peter 2:3",
+          "href": "/scriptures/protestant/2PE/2#v3"
+        },
+        {
+          "id": "JUD.1.7",
+          "ref": "Jude 1:7",
+          "href": "/scriptures/protestant/JUD/1#v7"
+        },
+        {
+          "id": "LAM.4.6",
+          "ref": "Lamentations 4:6",
+          "href": "/scriptures/protestant/LAM/4#v6"
+        }
+      ]
+    },
+    {
+      "from": "Leviticus 26:33",
+      "to": "Habakkuk 3:8",
+      "hops": 5,
+      "chain": [
+        {
+          "id": "LEV.26.33",
+          "ref": "Leviticus 26:33",
+          "href": "/scriptures/protestant/LEV/26#v33"
+        },
+        {
+          "id": "DAN.9.7",
+          "ref": "Daniel 9:7",
+          "href": "/scriptures/protestant/DAN/9#v7"
+        },
+        {
+          "id": "1JN.1.9",
+          "ref": "1 John 1:9",
+          "href": "/scriptures/protestant/1JN/1#v9"
+        },
+        {
+          "id": "EZK.36.25",
+          "ref": "Ezekiel 36:25",
+          "href": "/scriptures/protestant/EZK/36#v25"
+        },
+        {
+          "id": "ISA.2.19",
+          "ref": "Isaiah 2:19",
+          "href": "/scriptures/protestant/ISA/2#v19"
+        },
+        {
+          "id": "HAB.3.8",
+          "ref": "Habakkuk 3:8",
+          "href": "/scriptures/protestant/HAB/3#v8"
+        }
+      ]
+    }
+  ],
+  "iconicPaths": [
+    {
+      "id": "seed-to-crushed-serpent",
+      "title": "The Seed of the Woman to the Serpent Bound",
+      "theme": "Messianic Victory",
+      "from": "Genesis 3:15",
+      "to": "Revelation 20:2",
+      "fromId": "GEN.3.15",
+      "toId": "REV.20.2",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "GEN.3.15",
+          "ref": "Genesis 3:15",
+          "href": "/scriptures/protestant/GEN/3#v15",
+          "snippet": "I will put hostility between you and the woman, and between your offspring and her offspring. He will bruise your head, and you will bruise his heel.”"
+        },
+        {
+          "id": "REV.20.2",
+          "ref": "Revelation 20:2",
+          "href": "/scriptures/protestant/REV/20#v2",
+          "snippet": "He seized the dragon, the old serpent, who is the devil and Satan, who deceives the whole inhabited earth, and bound him for a thousand years,"
+        }
+      ]
+    },
+    {
+      "id": "creation-to-new-creation",
+      "title": "Creation to the New Heaven and New Earth",
+      "theme": "Cosmic Renewal",
+      "from": "Genesis 1:1",
+      "to": "Revelation 21:1",
+      "fromId": "GEN.1.1",
+      "toId": "REV.21.1",
+      "hops": 2,
+      "chain": [
+        {
+          "id": "GEN.1.1",
+          "ref": "Genesis 1:1",
+          "href": "/scriptures/protestant/GEN/1#v1",
+          "snippet": "In the beginning, God created the heavens and the earth."
+        },
+        {
+          "id": "ISA.65.17",
+          "ref": "Isaiah 65:17",
+          "href": "/scriptures/protestant/ISA/65#v17",
+          "snippet": "“For, behold, I create new heavens and a new earth; and the former things will not be remembered, nor come into mind."
+        },
+        {
+          "id": "REV.21.1",
+          "ref": "Revelation 21:1",
+          "href": "/scriptures/protestant/REV/21#v1",
+          "snippet": "I saw a new heaven and a new earth, for the first heaven and the first earth have passed away, and the sea is no more."
+        }
+      ]
+    },
+    {
+      "id": "suffering-servant",
+      "title": "The Suffering Servant to the Healing Wounds",
+      "theme": "Atonement",
+      "from": "Isaiah 53:5",
+      "to": "1 Peter 2:24",
+      "fromId": "ISA.53.5",
+      "toId": "1PE.2.24",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "ISA.53.5",
+          "ref": "Isaiah 53:5",
+          "href": "/scriptures/protestant/ISA/53#v5",
+          "snippet": "But he was pierced for our transgressions. He was crushed for our iniquities. The punishment that brought our peace was on him; and by his wounds w…"
+        },
+        {
+          "id": "1PE.2.24",
+          "ref": "1 Peter 2:24",
+          "href": "/scriptures/protestant/1PE/2#v24",
+          "snippet": "He himself bore our sins in his body on the tree, that we, having died to sins, might live to righteousness. You were healed by his wounds."
+        }
+      ]
+    },
+    {
+      "id": "good-shepherd",
+      "title": "The Lord is My Shepherd to The Good Shepherd",
+      "theme": "Pastoral Care",
+      "from": "Psalms 23:1",
+      "to": "John 10:11",
+      "fromId": "PSA.23.1",
+      "toId": "JHN.10.11",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "PSA.23.1",
+          "ref": "Psalms 23:1",
+          "href": "/scriptures/protestant/PSA/23#v1",
+          "snippet": "A Psalm by David. Yahweh is my shepherd; I shall lack nothing."
+        },
+        {
+          "id": "JHN.10.11",
+          "ref": "John 10:11",
+          "href": "/scriptures/protestant/JHN/10#v11",
+          "snippet": "“I am the good shepherd. The good shepherd lays down his life for the sheep."
+        }
+      ]
+    },
+    {
+      "id": "divine-name",
+      "title": "The Burning Bush I AM to Jesus: Before Abraham Was, I AM",
+      "theme": "Divine Identity",
+      "from": "Exodus 3:14",
+      "to": "John 8:58",
+      "fromId": "EXO.3.14",
+      "toId": "JHN.8.58",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "EXO.3.14",
+          "ref": "Exodus 3:14",
+          "href": "/scriptures/protestant/EXO/3#v14",
+          "snippet": "God said to Moses, “I AM WHO I AM,” and he said, “You shall tell the children of Israel this: ‘I AM has sent me to you.’”"
+        },
+        {
+          "id": "JHN.8.58",
+          "ref": "John 8:58",
+          "href": "/scriptures/protestant/JHN/8#v58",
+          "snippet": "Jesus said to them, “Most certainly, I tell you, before Abraham came into existence, I AM.”"
+        }
+      ]
+    },
+    {
+      "id": "dry-bones",
+      "title": "The Valley of Dry Bones to the Resurrection Trumpet",
+      "theme": "Resurrection",
+      "from": "Ezekiel 37:4",
+      "to": "1 Corinthians 15:52",
+      "fromId": "EZK.37.4",
+      "toId": "1CO.15.52",
+      "hops": 2,
+      "chain": [
+        {
+          "id": "EZK.37.4",
+          "ref": "Ezekiel 37:4",
+          "href": "/scriptures/protestant/EZK/37#v4",
+          "snippet": "Again he said to me, “Prophesy over these bones, and tell them, ‘You dry bones, hear Yahweh’s word."
+        },
+        {
+          "id": "DAN.12.2",
+          "ref": "Daniel 12:2",
+          "href": "/scriptures/protestant/DAN/12#v2",
+          "snippet": "Many of those who sleep in the dust of the earth will awake, some to everlasting life, and some to shame and everlasting contempt."
+        },
+        {
+          "id": "1CO.15.52",
+          "ref": "1 Corinthians 15:52",
+          "href": "/scriptures/protestant/1CO/15#v52",
+          "snippet": "in a moment, in the twinkling of an eye, at the last trumpet. For the trumpet will sound and the dead will be raised incorruptible, and we will be …"
+        }
+      ]
+    },
+    {
+      "id": "melchizedek",
+      "title": "Melchizedek with Bread and Wine to the Eternal Priest",
+      "theme": "Royal Priesthood",
+      "from": "Genesis 14:18",
+      "to": "Hebrews 7:17",
+      "fromId": "GEN.14.18",
+      "toId": "HEB.7.17",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "GEN.14.18",
+          "ref": "Genesis 14:18",
+          "href": "/scriptures/protestant/GEN/14#v18",
+          "snippet": "Melchizedek king of Salem brought out bread and wine. He was priest of God Most High."
+        },
+        {
+          "id": "HEB.7.17",
+          "ref": "Hebrews 7:17",
+          "href": "/scriptures/protestant/HEB/7#v17",
+          "snippet": "for it is testified, “You are a priest forever, according to the order of Melchizedek.”"
+        }
+      ]
+    },
+    {
+      "id": "passover-lamb",
+      "title": "The Unblemished Passover Lamb to the Lamb Slain",
+      "theme": "Redemption",
+      "from": "Exodus 12:5",
+      "to": "Revelation 5:6",
+      "fromId": "EXO.12.5",
+      "toId": "REV.5.6",
+      "hops": 2,
+      "chain": [
+        {
+          "id": "EXO.12.5",
+          "ref": "Exodus 12:5",
+          "href": "/scriptures/protestant/EXO/12#v5",
+          "snippet": "Your lamb shall be without defect, a male a year old. You shall take it from the sheep or from the goats."
+        },
+        {
+          "id": "1CO.5.7",
+          "ref": "1 Corinthians 5:7",
+          "href": "/scriptures/protestant/1CO/5#v7",
+          "snippet": "Purge out the old yeast, that you may be a new lump, even as you are unleavened. For indeed Christ, our Passover, has been sacrificed in our place."
+        },
+        {
+          "id": "REV.5.6",
+          "ref": "Revelation 5:6",
+          "href": "/scriptures/protestant/REV/5#v6",
+          "snippet": "I saw in the middle of the throne and of the four living creatures, and in the middle of the elders, a Lamb standing, as though it had been slain, …"
+        }
+      ]
+    },
+    {
+      "id": "scapegoat",
+      "title": "The Scapegoat Bearing Iniquity to Christ Bearing Sin",
+      "theme": "Day of Atonement",
+      "from": "Leviticus 16:22",
+      "to": "Hebrews 9:28",
+      "fromId": "LEV.16.22",
+      "toId": "HEB.9.28",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "LEV.16.22",
+          "ref": "Leviticus 16:22",
+          "href": "/scriptures/protestant/LEV/16#v22",
+          "snippet": "The goat shall carry all their iniquities on himself to a solitary land, and he shall release the goat in the wilderness."
+        },
+        {
+          "id": "HEB.9.28",
+          "ref": "Hebrews 9:28",
+          "href": "/scriptures/protestant/HEB/9#v28",
+          "snippet": "so Christ also, having been offered once to bear the sins of many, will appear a second time, not to deal with sin, but to save those who are eager…"
+        }
+      ]
+    },
+    {
+      "id": "forsaken-psalm",
+      "title": "Forsaken in the Psalms to Forsaken on the Cross",
+      "theme": "The Passion",
+      "from": "Psalms 22:1",
+      "to": "Matthew 27:46",
+      "fromId": "PSA.22.1",
+      "toId": "MAT.27.46",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "PSA.22.1",
+          "ref": "Psalms 22:1",
+          "href": "/scriptures/protestant/PSA/22#v1",
+          "snippet": "For the Chief Musician; set to “The Doe of the Morning.” A Psalm by David. My God, my God, why have you forsaken me? Why are you so far from helpin…"
+        },
+        {
+          "id": "MAT.27.46",
+          "ref": "Matthew 27:46",
+          "href": "/scriptures/protestant/MAT/27#v46",
+          "snippet": "About the ninth hour Jesus cried with a loud voice, saying, “Eli, Eli, lima sabachthani?” That is, “My God, my God, why have you forsaken me?”"
+        }
+      ]
+    },
+    {
+      "id": "prophet-like-moses",
+      "title": "A Prophet Like Moses to the Apostolic Witness",
+      "theme": "Prophecy",
+      "from": "Deuteronomy 18:15",
+      "to": "Acts 3:22",
+      "fromId": "DEU.18.15",
+      "toId": "ACT.3.22",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "DEU.18.15",
+          "ref": "Deuteronomy 18:15",
+          "href": "/scriptures/protestant/DEU/18#v15",
+          "snippet": "Yahweh your God will raise up to you a prophet from among you, of your brothers, like me. You shall listen to him."
+        },
+        {
+          "id": "ACT.3.22",
+          "ref": "Acts 3:22",
+          "href": "/scriptures/protestant/ACT/3#v22",
+          "snippet": "For Moses indeed said to the fathers, ‘The Lord God will raise up a prophet for you from among your brothers, like me. You shall listen to him in a…"
+        }
+      ]
+    },
+    {
+      "id": "sun-of-righteousness",
+      "title": "The Sun of Righteousness to the Dayspring from on High",
+      "theme": "The Advent",
+      "from": "Malachi 4:2",
+      "to": "Luke 1:78",
+      "fromId": "MAL.4.2",
+      "toId": "LUK.1.78",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "MAL.4.2",
+          "ref": "Malachi 4:2",
+          "href": "/scriptures/protestant/MAL/4#v2",
+          "snippet": "But to you who fear my name shall the sun of righteousness arise with healing in its wings. You will go out and leap like calves of the stall."
+        },
+        {
+          "id": "LUK.1.78",
+          "ref": "Luke 1:78",
+          "href": "/scriptures/protestant/LUK/1#v78",
+          "snippet": "because of the tender mercy of our God, by which the dawn from on high will visit us,"
+        }
+      ]
+    },
+    {
+      "id": "ruth-covenant",
+      "title": "Ruth (Thy people shall be my people) to Revelation (They shall be his people)",
+      "theme": "Covenant People",
+      "from": "Ruth 1:16",
+      "to": "Revelation 21:3",
+      "fromId": "RUT.1.16",
+      "toId": "REV.21.3",
+      "hops": 2,
+      "chain": [
+        {
+          "id": "RUT.1.16",
+          "ref": "Ruth 1:16",
+          "href": "/scriptures/protestant/RUT/1#v16",
+          "snippet": "Ruth said, “Don’t urge me to leave you, and to return from following you, for where you go, I will go; and where you stay, I will stay. Your people…"
+        },
+        {
+          "id": "2CO.6.16",
+          "ref": "2 Corinthians 6:16",
+          "href": "/scriptures/protestant/2CO/6#v16",
+          "snippet": "What agreement does a temple of God have with idols? For you are a temple of the living God. Even as God said, “I will dwell in them and walk in th…"
+        },
+        {
+          "id": "REV.21.3",
+          "ref": "Revelation 21:3",
+          "href": "/scriptures/protestant/REV/21#v3",
+          "snippet": "I heard a loud voice out of heaven saying, “Behold, God’s dwelling is with people; and he will dwell with them, and they will be his people, and Go…"
+        }
+      ]
+    },
+    {
+      "id": "times-and-seasons",
+      "title": "Ecclesiastes (A time for every purpose) to Acts (Times or seasons)",
+      "theme": "Sovereign Timing",
+      "from": "Ecclesiastes 3:1",
+      "to": "Acts 1:7",
+      "fromId": "ECC.3.1",
+      "toId": "ACT.1.7",
+      "hops": 2,
+      "chain": [
+        {
+          "id": "ECC.3.1",
+          "ref": "Ecclesiastes 3:1",
+          "href": "/scriptures/protestant/ECC/3#v1",
+          "snippet": "For everything there is a season, and a time for every purpose under heaven:"
+        },
+        {
+          "id": "DAN.2.21",
+          "ref": "Daniel 2:21",
+          "href": "/scriptures/protestant/DAN/2#v21",
+          "snippet": "He changes the times and the seasons. He removes kings and sets up kings. He gives wisdom to the wise, and knowledge to those who have understanding."
+        },
+        {
+          "id": "ACT.1.7",
+          "ref": "Acts 1:7",
+          "href": "/scriptures/protestant/ACT/1#v7",
+          "snippet": "He said to them, “It isn’t for you to know times or seasons which the Father has set within his own authority."
+        }
+      ]
+    },
+    {
+      "id": "love-strong-as-death",
+      "title": "Song of Solomon (Love is strong as death) to Romans (Who shall separate us)",
+      "theme": "Unfailing Love",
+      "from": "Song of Songs 8:6",
+      "to": "Romans 8:35",
+      "fromId": "SNG.8.6",
+      "toId": "ROM.8.35",
+      "hops": 2,
+      "chain": [
+        {
+          "id": "SNG.8.6",
+          "ref": "Song of Songs 8:6",
+          "href": "/scriptures/protestant/SNG/8#v6",
+          "snippet": "Set me as a seal on your heart, as a seal on your arm; for love is strong as death. Jealousy is as cruel as Sheol. Its flashes are flashes of fire,…"
+        },
+        {
+          "id": "2TI.2.19",
+          "ref": "2 Timothy 2:19",
+          "href": "/scriptures/protestant/2TI/2#v19",
+          "snippet": "However, God’s firm foundation stands, having this seal: “The Lord knows those who are his,” and, “Let every one who names the name of the Lord dep…"
+        },
+        {
+          "id": "ROM.8.35",
+          "ref": "Romans 8:35",
+          "href": "/scriptures/protestant/ROM/8#v35",
+          "snippet": "Who shall separate us from the love of Christ? Could oppression, or anguish, or persecution, or famine, or nakedness, or peril, or sword?"
+        }
+      ]
+    },
+    {
+      "id": "sign-of-jonah",
+      "title": "Jonah from Sheol to the Sign of the Son of Man",
+      "theme": "Three Days & Nights",
+      "from": "Jonah 2:2",
+      "to": "Matthew 12:40",
+      "fromId": "JON.2.2",
+      "toId": "MAT.12.40",
+      "hops": 1,
+      "chain": [
+        {
+          "id": "JON.2.2",
+          "ref": "Jonah 2:2",
+          "href": "/scriptures/protestant/JON/2#v2",
+          "snippet": "He said, “I called because of my affliction to Yahweh. He answered me. Out of the belly of Sheol I cried. You heard my voice."
+        },
+        {
+          "id": "MAT.12.40",
+          "ref": "Matthew 12:40",
+          "href": "/scriptures/protestant/MAT/12#v40",
+          "snippet": "For as Jonah was three days and three nights in the belly of the huge fish, so will the Son of Man be three days and three nights in the heart of t…"
+        }
+      ]
+    }
+  ]
+}

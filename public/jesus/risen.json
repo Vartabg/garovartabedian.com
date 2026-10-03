@@ -1,0 +1,670 @@
+{
+  "movements": [
+    {
+      "id": "death",
+      "name": "The death",
+      "window": "Friday, the third hour to sunset",
+      "question": "What do the sources actually report in those hours?",
+      "line": "Four accounts of the same afternoon. They agree on the execution and the burial; they diverge on the hour, the last words, and the centurion's verdict."
+    },
+    {
+      "id": "tomb",
+      "name": "The three days",
+      "window": "Friday evening to Sunday before dawn",
+      "question": "Where was he?",
+      "line": "No Gospel narrates the sabbath. The New Testament answers the question elsewhere, in scattered lines, and later writers filled the silence with more."
+    },
+    {
+      "id": "forty",
+      "name": "The forty days",
+      "window": "Sunday, and the weeks after",
+      "question": "Who saw him, and where?",
+      "line": "Reports begin on Sunday and continue through the weeks after. No single source carries the whole sequence, and Acts alone numbers the span as forty days."
+    },
+    {
+      "id": "ascension",
+      "name": "The ascension",
+      "window": "The fortieth day, and ten days after",
+      "question": "How did it end, and what began?",
+      "line": "Luke ends his Gospel with a departure near Bethany and begins Acts with the view from Olivet. The witnesses return to Jerusalem, and the story turns toward them."
+    }
+  ],
+  "moments": [
+    {
+      "id": "crucified",
+      "movement": "death",
+      "clock": "The third hour",
+      "title": "Crucified between two others",
+      "line": "Mark gives the hour. All four place two others beside him.",
+      "attestation": "All four Gospels",
+      "refs": [{ "ref": "MRK 15:25" }, { "ref": "MAT 27:38" }, { "ref": "LUK 23:33" }, { "ref": "JHN 19:18" }],
+      "tension": "Mark has him on the cross by the third hour; John still has Pilate giving sentence at about the sixth."
+    },
+    {
+      "id": "darkness",
+      "movement": "death",
+      "clock": "The sixth hour",
+      "title": "Darkness over the land",
+      "line": "Three hours of it, until the ninth hour.",
+      "attestation": "Matthew, Mark, and Luke",
+      "refs": [{ "ref": "MAT 27:45" }, { "ref": "MRK 15:33" }, { "ref": "LUK 23:44" }]
+    },
+    {
+      "id": "forsaken",
+      "movement": "death",
+      "clock": "The ninth hour",
+      "title": "“My God, my God, why have you forsaken me?”",
+      "line": "The opening line of Psalm 22, cried in Aramaic.",
+      "attestation": "Matthew and Mark",
+      "refs": [{ "ref": "MAT 27:46" }, { "ref": "MRK 15:34" }, { "ref": "PSA 22:1" }]
+    },
+    {
+      "id": "last-words",
+      "movement": "death",
+      "clock": "Across the hours",
+      "title": "Seven sayings from the cross",
+      "line": "Forgiveness, the promise to the criminal, his mother and the disciple, thirst, the cry of dereliction, “it is finished,” and the commending of his spirit.",
+      "attestation": "No single Gospel records all seven",
+      "refs": [
+        { "ref": "LUK 23:34" },
+        { "ref": "LUK 23:43" },
+        { "ref": "JHN 19:26-27" },
+        { "ref": "JHN 19:28" },
+        { "ref": "MAT 27:46" },
+        { "ref": "JHN 19:30" },
+        { "ref": "LUK 23:46" }
+      ],
+      "tension": "The traditional seven is a harmony, not a source. Luke carries three, John three, Matthew and Mark one — the same one."
+    },
+    {
+      "id": "veil",
+      "movement": "death",
+      "clock": "At the death",
+      "title": "The temple curtain torn",
+      "line": "Torn in two, from the top to the bottom.",
+      "attestation": "Matthew, Mark, and Luke",
+      "refs": [{ "ref": "MAT 27:51" }, { "ref": "MRK 15:38" }, { "ref": "LUK 23:45" }]
+    },
+    {
+      "id": "tombs-opened",
+      "movement": "death",
+      "clock": "At the death",
+      "title": "The earthquake and the opened tombs",
+      "line": "Rocks split, tombs opened, and bodies of the saints raised — appearing to many after his own resurrection.",
+      "attestation": "Matthew only",
+      "refs": [{ "ref": "MAT 27:51-53" }],
+      "tension": "No other source mentions it, inside the New Testament or outside it."
+    },
+    {
+      "id": "centurion",
+      "movement": "death",
+      "clock": "At the death",
+      "title": "The centurion's verdict",
+      "line": "The officer in charge of the execution says something. What he says depends on the source.",
+      "attestation": "Matthew, Mark, and Luke",
+      "refs": [{ "ref": "MAT 27:54" }, { "ref": "MRK 15:39" }, { "ref": "LUK 23:47" }],
+      "tension": "Matthew and Mark: “the Son of God.” Luke: “a righteous man.”"
+    },
+    {
+      "id": "spear",
+      "movement": "death",
+      "clock": "Before sundown",
+      "title": "The spear, the blood and water",
+      "line": "The soldiers break the legs of the other two, find him already dead, and pierce his side instead.",
+      "attestation": "John only",
+      "refs": [{ "ref": "JHN 19:33-34" }],
+      "tension": "John alone reports it, and stops the narrative to insist on an eyewitness for it."
+    },
+    {
+      "id": "burial",
+      "movement": "death",
+      "clock": "Before sundown",
+      "title": "Joseph of Arimathea asks for the body",
+      "line": "A member of the council takes the body, wraps it, and lays it in a tomb cut in rock.",
+      "attestation": "All four Gospels",
+      "refs": [{ "ref": "MAT 27:57-60" }, { "ref": "MRK 15:42-46" }, { "ref": "LUK 23:50-53" }, { "ref": "JHN 19:38-42" }]
+    },
+    {
+      "id": "women-watch",
+      "movement": "death",
+      "clock": "Before sundown",
+      "title": "The women see where he is laid",
+      "line": "Named women watch the burial and mark the place.",
+      "attestation": "Matthew, Mark, and Luke",
+      "refs": [{ "ref": "MAT 27:61" }, { "ref": "MRK 15:47" }, { "ref": "LUK 23:55" }]
+    },
+    {
+      "id": "guard",
+      "movement": "tomb",
+      "clock": "The next day",
+      "title": "The guard and the sealed stone",
+      "line": "The chief priests ask Pilate to secure the tomb until the third day.",
+      "attestation": "Matthew only",
+      "refs": [{ "ref": "MAT 27:62-66" }],
+      "tension": "Matthew is also the only Gospel that names the counter-story it answers — that the disciples stole the body."
+    },
+    {
+      "id": "sabbath-silence",
+      "movement": "tomb",
+      "clock": "The sabbath",
+      "title": "The day no Gospel narrates",
+      "line": "Luke says the women rested according to the commandment. Then the record goes quiet for a full day.",
+      "attestation": "No Gospel narrates the sabbath",
+      "refs": [{ "ref": "LUK 23:56" }]
+    },
+    {
+      "id": "paradise",
+      "movement": "tomb",
+      "clock": "Said from the cross",
+      "title": "“Today you will be with me in paradise”",
+      "line": "Said to the criminal beside him; later readers asked how “today” relates to the three-day interval.",
+      "attestation": "Luke only",
+      "refs": [{ "ref": "LUK 23:43" }]
+    },
+    {
+      "id": "jonah",
+      "movement": "tomb",
+      "clock": "Said in advance",
+      "title": "Three days and three nights in the heart of the earth",
+      "line": "The sign of Jonah, given before the fact.",
+      "attestation": "Matthew only",
+      "refs": [{ "ref": "MAT 12:40" }],
+      "tension": "Friday evening to Sunday dawn spans parts of three calendar days but two nights; readers usually appeal to inclusive Jewish day-counting."
+    },
+    {
+      "id": "spirits-in-prison",
+      "movement": "tomb",
+      "clock": "Read backwards",
+      "title": "“He went and preached to the spirits in prison”",
+      "line": "The clearest New Testament statement that something happened while he was dead — and the most argued over.",
+      "attestation": "1 Peter",
+      "refs": [{ "ref": "1PE 3:18-20" }, { "ref": "1PE 4:6" }]
+    },
+    {
+      "id": "descended",
+      "movement": "tomb",
+      "clock": "Read backwards",
+      "title": "“He also descended into the lower parts of the earth”",
+      "line": "Paul reads a psalm about ascent, and infers a descent behind it.",
+      "attestation": "Ephesians",
+      "refs": [{ "ref": "EPH 4:8-10" }],
+      "tension": "“The lower parts of the earth” has been read as the grave, as the underworld, and simply as the earth itself."
+    },
+    {
+      "id": "not-abandoned",
+      "movement": "tomb",
+      "clock": "Read backwards",
+      "title": "“Not abandoned to Hades”",
+      "line": "Peter's Pentecost sermon applies Psalm 16 to him: his soul was not left in Hades, nor his flesh left to decay.",
+      "attestation": "Acts, quoting Psalm 16",
+      "refs": [{ "ref": "ACT 2:24-31" }, { "ref": "PSA 16:8-11" }]
+    },
+    {
+      "id": "keys",
+      "movement": "tomb",
+      "clock": "Read backwards",
+      "title": "“I have the keys of Death and of Hades”",
+      "line": "Said by the risen Christ in the opening vision of Revelation.",
+      "attestation": "Revelation",
+      "refs": [{ "ref": "REV 1:18" }]
+    },
+    {
+      "id": "abyss",
+      "movement": "tomb",
+      "clock": "Read backwards",
+      "title": "“Who will descend into the abyss?”",
+      "line": "Paul's rhetorical question — that is, to bring Christ up from the dead.",
+      "attestation": "Romans",
+      "refs": [{ "ref": "ROM 10:6-7" }]
+    },
+    {
+      "id": "stone-already-moved",
+      "movement": "forty",
+      "clock": "Sunday, before dawn",
+      "title": "The stone is already moved",
+      "line": "Every account arrives at a tomb that is already open.",
+      "attestation": "All four Gospels",
+      "refs": [{ "ref": "MAT 28:2" }, { "ref": "MRK 16:4" }, { "ref": "LUK 24:2" }, { "ref": "JHN 20:1" }],
+      "tension": "No source in the New Testament describes the rising itself. Not one."
+    },
+    {
+      "id": "messengers",
+      "movement": "forty",
+      "clock": "Sunday, early",
+      "title": "Someone is waiting at the tomb",
+      "line": "A figure, or two, tells the women he is not there.",
+      "attestation": "All four Gospels",
+      "refs": [{ "ref": "MAT 28:5" }, { "ref": "MRK 16:5" }, { "ref": "LUK 24:4" }, { "ref": "JHN 20:12" }],
+      "tension": "Matthew has an angel and Mark a young man — one figure. Luke has two men, John two angels."
+    },
+    {
+      "id": "creed",
+      "movement": "forty",
+      "clock": "Written first",
+      "title": "The list Paul says he received",
+      "line": "Died, buried, raised on the third day, appeared — to Cephas, the twelve, five hundred, James, all the apostles, and last of all to Paul.",
+      "attestation": "1 Corinthians — the earliest written account",
+      "refs": [{ "ref": "1CO 15:3-8" }],
+      "tension": "Paul calls it handed-on material, which puts the formula earlier than the letter carrying it."
+    },
+    {
+      "id": "eating",
+      "movement": "forty",
+      "clock": "Across the weeks",
+      "title": "He eats with them",
+      "line": "Broiled fish in the room, bread and fish on the shore, and Peter later making a point of the shared meals.",
+      "attestation": "Luke, John, and Acts",
+      "refs": [{ "ref": "LUK 24:41-43" }, { "ref": "JHN 21:12-13" }, { "ref": "ACT 10:41" }]
+    },
+    {
+      "id": "still-doubting",
+      "movement": "forty",
+      "clock": "On the mountain",
+      "title": "Some of them still doubted",
+      "line": "Matthew puts it in the same sentence as the worship, and does not resolve it.",
+      "attestation": "Matthew only",
+      "refs": [{ "ref": "MAT 28:17" }]
+    },
+    {
+      "id": "forty-days",
+      "movement": "ascension",
+      "clock": "Forty days",
+      "title": "The number comes from one source",
+      "line": "Acts alone gives the span, and says he spoke of the kingdom of God through it.",
+      "attestation": "Acts only",
+      "refs": [{ "ref": "ACT 1:3" }]
+    },
+    {
+      "id": "led-out",
+      "movement": "ascension",
+      "clock": "The last day",
+      "title": "Led out as far as Bethany",
+      "line": "He lifts his hands, blesses them, and is parted from them.",
+      "attestation": "Luke only",
+      "refs": [{ "ref": "LUK 24:50-51" }]
+    },
+    {
+      "id": "taken-up",
+      "movement": "ascension",
+      "clock": "The last day",
+      "title": "Taken up, and a cloud received him",
+      "line": "They are still watching when the cloud takes him out of sight.",
+      "attestation": "Acts",
+      "refs": [{ "ref": "ACT 1:9" }]
+    },
+    {
+      "id": "two-men",
+      "movement": "ascension",
+      "clock": "The last day",
+      "title": "“Why do you stand looking into the sky?”",
+      "line": "Two men in white ask the question, and promise a return in the same manner.",
+      "attestation": "Acts",
+      "refs": [{ "ref": "ACT 1:10-11" }]
+    },
+    {
+      "id": "olivet",
+      "movement": "ascension",
+      "clock": "The last day",
+      "title": "They walk back from Olivet",
+      "line": "A sabbath day's journey from the city — the one geographic detail given.",
+      "attestation": "Acts",
+      "refs": [{ "ref": "ACT 1:12" }]
+    },
+    {
+      "id": "mark-summary",
+      "movement": "ascension",
+      "clock": "The last day",
+      "title": "Mark's one-line ascension",
+      "line": "Received up into heaven, and seated at the right hand of God.",
+      "attestation": "Mark's longer ending",
+      "refs": [{ "ref": "MRK 16:19" }],
+      "tension": "These verses are absent from the earliest complete manuscripts of Mark."
+    },
+    {
+      "id": "pentecost",
+      "movement": "ascension",
+      "clock": "Ten days later",
+      "title": "What starts next",
+      "line": "The record stops following him and starts following them.",
+      "attestation": "Acts",
+      "refs": [{ "ref": "ACT 2:1-4" }]
+    }
+  ],
+  "appearances": [
+    {
+      "id": "mary-magdalene",
+      "who": "Mary Magdalene",
+      "where": "The garden, at the tomb",
+      "when": "Sunday, early",
+      "line": "She takes him for the gardener until he says her name.",
+      "sources": [{ "book": "JHN", "ref": "JHN 20:11-18" }, { "book": "MRK", "ref": "MRK 16:9" }],
+      "note": "Mark's notice belongs to the longer ending."
+    },
+    {
+      "id": "the-women",
+      "who": "The women returning from the tomb",
+      "where": "On the road back to the city",
+      "when": "Sunday, early",
+      "line": "He meets them as they run to tell the others.",
+      "sources": [{ "book": "MAT", "ref": "MAT 28:9-10" }]
+    },
+    {
+      "id": "cephas",
+      "who": "Simon Peter",
+      "where": "Not stated",
+      "when": "Sunday",
+      "line": "Two sources report it. Neither narrates it.",
+      "sources": [{ "book": "LUK", "ref": "LUK 24:34" }, { "book": "1CO", "ref": "1CO 15:5" }],
+      "note": "Paul's list begins here."
+    },
+    {
+      "id": "emmaus",
+      "who": "Two disciples, one named Cleopas",
+      "where": "The road to Emmaus",
+      "when": "Sunday afternoon",
+      "line": "He walks with them unrecognized, and they know him when he breaks the bread.",
+      "sources": [{ "book": "LUK", "ref": "LUK 24:13-32" }, { "book": "MRK", "ref": "MRK 16:12-13" }]
+    },
+    {
+      "id": "eleven-jerusalem",
+      "who": "The eleven and those with them",
+      "where": "A locked room in Jerusalem",
+      "when": "Sunday evening",
+      "line": "He shows them his hands and side, and asks for something to eat.",
+      "sources": [
+        { "book": "LUK", "ref": "LUK 24:36-43" },
+        { "book": "JHN", "ref": "JHN 20:19-23" },
+        { "book": "MRK", "ref": "MRK 16:14" }
+      ]
+    },
+    {
+      "id": "thomas",
+      "who": "Thomas, with the rest",
+      "where": "The same room",
+      "when": "Eight days later",
+      "line": "He offers Thomas the evidence Thomas asked for.",
+      "sources": [{ "book": "JHN", "ref": "JHN 20:26-29" }]
+    },
+    {
+      "id": "tiberias",
+      "who": "Seven disciples",
+      "where": "The Sea of Tiberias",
+      "when": "Not stated",
+      "line": "A night of empty nets, then breakfast on the shore.",
+      "sources": [{ "book": "JHN", "ref": "JHN 21:1-14" }]
+    },
+    {
+      "id": "five-hundred",
+      "who": "More than five hundred at once",
+      "where": "Not stated",
+      "when": "Not stated",
+      "line": "The largest reported appearance, and the least described.",
+      "sources": [{ "book": "1CO", "ref": "1CO 15:6" }],
+      "note": "Paul adds that most were still alive when he wrote — an invitation to go and ask."
+    },
+    {
+      "id": "james",
+      "who": "James",
+      "where": "Not stated",
+      "when": "Not stated",
+      "line": "Named on his own in the earliest list, and nowhere else.",
+      "sources": [{ "book": "1CO", "ref": "1CO 15:7" }]
+    },
+    {
+      "id": "all-apostles",
+      "who": "All the apostles",
+      "where": "Not stated",
+      "when": "Not stated",
+      "line": "A second group sighting, distinct from the twelve.",
+      "sources": [{ "book": "1CO", "ref": "1CO 15:7" }]
+    },
+    {
+      "id": "mountain-galilee",
+      "who": "The eleven",
+      "where": "A mountain in Galilee",
+      "when": "Not stated",
+      "line": "The commission — and the note that some doubted.",
+      "sources": [{ "book": "MAT", "ref": "MAT 28:16-20" }]
+    },
+    {
+      "id": "forty-day-summary",
+      "who": "The apostles, over forty days",
+      "where": "Jerusalem and around it",
+      "when": "Up to the ascension",
+      "line": "Acts summarizes the whole span rather than listing sightings.",
+      "sources": [{ "book": "ACT", "ref": "ACT 1:3" }]
+    },
+    {
+      "id": "paul",
+      "who": "Paul",
+      "where": "The road to Damascus",
+      "when": "Years later",
+      "line": "He puts his own sighting on the same list, and calls it last of all.",
+      "sources": [{ "book": "1CO", "ref": "1CO 15:8" }, { "book": "ACT", "ref": "ACT 9:3-6" }],
+      "note": "Different in kind from the rest — after the ascension, and by his own account out of due time."
+    }
+  ],
+  "descent": [
+    {
+      "id": "ignatius-magnesians",
+      "name": "Ignatius, To the Magnesians",
+      "date": "c. AD 105–115",
+      "kind": "Early Christian letter",
+      "claim": "The prophets waited for him as their teacher, and when he came he raised them from the dead.",
+      "establishes": "A bishop writing within roughly eighty years of the crucifixion already assumes he did something for the righteous dead. It is the earliest surviving trace of the idea.",
+      "limits": "One clause inside a letter about church unity. It assumes the idea rather than reporting an event.",
+      "sourceUrl": "/early/ignatius-magnesians",
+      "sourceLabel": "Read the letter here"
+    },
+    {
+      "id": "odes-solomon",
+      "name": "Odes of Solomon 42",
+      "date": "Late 1st to 2nd century",
+      "kind": "Hymn",
+      "claim": "He goes down to Sheol; the dead run to him, ask to be led out, and he sets his name upon their heads.",
+      "establishes": "The oldest surviving collection of Christian hymns puts the descent in the first person and sings it as rescue.",
+      "limits": "Poetry, and its date, language of origin, and community are all disputed. It shows what was sung, not what was witnessed.",
+      "sourceUrl": "https://archive.org/details/odespsalmsofsolo01harruoft",
+      "sourceLabel": "Harris and Mingana edition"
+    },
+    {
+      "id": "ascension-isaiah",
+      "name": "The Ascension of Isaiah",
+      "date": "c. AD 70–150, composite",
+      "kind": "Vision",
+      "claim": "The Beloved descends through the seven heavens unrecognized, taking the form of each as he passes, and afterwards rises with every heaven watching.",
+      "establishes": "An early Christian picture in which the going-down and the going-up are one movement rather than two events.",
+      "limits": "A vision, not a report. Its Christian chapters are debated in date, and it was never received as scripture.",
+      "sourceUrl": "/early/ascension-isaiah",
+      "sourceLabel": "Read the text here"
+    },
+    {
+      "id": "gospel-peter",
+      "name": "The Gospel of Peter",
+      "date": "2nd century; surviving copy much later",
+      "kind": "Gospel outside the canon",
+      "claim": "Two figures whose heads reach heaven bring him out of the tomb, the cross follows them, and a voice from heaven asks whether he preached to those who sleep. The cross answers yes.",
+      "establishes": "That by the second century a Christian narrative already had him preaching to the dead — and that someone was willing to narrate the exit from the tomb.",
+      "limits": "A single fragment, recovered at Akhmim in 1886 in a copy centuries later than the text. It was not received as scripture, and its passion narrative departs from all four Gospels.",
+      "sourceUrl": "https://en.wikisource.org/wiki/Gospel_of_Peter",
+      "sourceLabel": "Ante-Nicene Fathers translation"
+    },
+    {
+      "id": "epistula-apostolorum",
+      "name": "Epistula Apostolorum",
+      "date": "2nd century (c. AD 120–170)",
+      "kind": "Dialogue outside the canon",
+      "claim": "The risen Christ answers the apostles' questions directly, including what he did for those who had already died.",
+      "establishes": "That the forty days were being filled in with dialogue within a century, by writers who felt the Gospels had left the period thin.",
+      "limits": "Written to teach, in the voice of the risen Christ. Read it as second-century theology, not as testimony to the forty days.",
+      "sourceUrl": "/early/epistula-apostolorum",
+      "sourceLabel": "Read the text here"
+    },
+    {
+      "id": "acts-of-pilate",
+      "name": "The Descent into Hell (Gospel of Nicodemus)",
+      "date": "Descent section: 4th century and later",
+      "kind": "Legend",
+      "claim": "Two sons of Simeon return from the dead to testify: the gates of Hades broken, Adam and the patriarchs led out, and Hades arguing with Satan over who let him in.",
+      "establishes": "The fullest developed form of the harrowing, and the direct source of most later art, drama, and hymnody about it.",
+      "limits": "Centuries after the events, with no independent witness behind it. It records what Christians came to picture, not what anyone reported.",
+      "sourceUrl": "https://en.wikisource.org/wiki/Gospel_of_Nicodemus",
+      "sourceLabel": "Acts of Pilate translation"
+    },
+    {
+      "id": "creed-clause",
+      "name": "The “descended” clause in the creed",
+      "date": "Latin creeds, from the 4th century",
+      "kind": "Confession",
+      "claim": "He descended to the dead.",
+      "establishes": "That by the late fourth century some Latin churches confessed a descent as part of the baptismal creed. Rufinus of Aquileia, writing around AD 404, notes the clause in his own church's creed and observes that the Roman form does not carry it.",
+      "limits": "A creed records what a church confessed, not a source for what happened. The clause is later than the New Testament lines it summarizes, and churches have never agreed on what it means.",
+      "sourceUrl": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers",
+      "sourceLabel": "Nicene and Post-Nicene Fathers"
+    }
+  ],
+  "outsideCanon": [
+    {
+      "id": "apocrypha-gospel-peter",
+      "group": "event-retellings",
+      "name": "The Gospel of Peter",
+      "date": "2nd century; exact date disputed",
+      "survives": "Fragmentary Greek witnesses. The principal passion-and-resurrection copy is centuries later than the proposed composition.",
+      "kind": "Passion and resurrection narrative",
+      "claim": "Soldiers guard the tomb and witness two immense figures bringing out a third, followed by a cross that answers a voice from heaven. The women arrive afterward and find the tomb open.",
+      "establishes": "By the second century, at least one Christian retelling made the resurrection itself visible and expanded the guarded-tomb tradition dramatically.",
+      "limits": "The work is fragmentary, later than the New Testament sources, and its literary relationship to the canonical Gospels is debated. It is not another eyewitness report.",
+      "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-peter/",
+      "sourceLabel": "NASSCAL scholarly catalog"
+    },
+    {
+      "id": "apocrypha-epistle-apostles",
+      "group": "risen-dialogues",
+      "name": "The Epistle of the Apostles",
+      "date": "2nd century, often placed in its later decades",
+      "survives": "A fragmentary Coptic codex from the 4th or 5th century, a Latin palimpsest, and a complete text in later Ethiopic manuscripts.",
+      "kind": "Revelatory dialogue and epistle",
+      "claim": "The eleven present an extended dialogue with the resurrected Christ about resurrection, judgment, Gentiles, false teaching, and Paul, continuing until a final ascension scene.",
+      "establishes": "A second-century writer used the forty-day gap as a setting for instruction and defended a particular version of apostolic teaching in the apostles' collective voice.",
+      "limits": "The work draws on earlier Jesus traditions and speaks pseudonymously. It records second-century theology and church conflict, not an additional first-generation appearance account.",
+      "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/epistle-of-the-apostles/",
+      "sourceLabel": "NASSCAL scholarly catalog"
+    },
+    {
+      "id": "apocrypha-james",
+      "group": "risen-dialogues",
+      "name": "The Apocryphon of James",
+      "date": "Later 2nd century, commonly proposed",
+      "survives": "One damaged Coptic copy in the 4th-century Nag Hammadi Codex I.",
+      "kind": "Secret-book dialogue",
+      "claim": "Jesus singles out James and Peter for private post-resurrection teaching about suffering, the kingdom, and understanding. His departure becomes an ascension sequence.",
+      "establishes": "Later Christians placed competing claims about authority and suffering into private conversations between the risen Jesus and favored disciples.",
+      "limits": "Its author is unknown, the identity of James is ambiguous, and only one later manuscript survives. It cannot supply an independent itinerary of appearances.",
+      "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/apocryphon-of-james/",
+      "sourceLabel": "NASSCAL scholarly catalog"
+    },
+    {
+      "id": "apocrypha-gospel-mary",
+      "group": "risen-dialogues",
+      "name": "The Gospel of Mary",
+      "date": "2nd century, commonly proposed",
+      "survives": "Two 3rd-century Greek fragments and a 4th- or 5th-century Coptic copy. Less than half of the work survives, and its opening is lost.",
+      "kind": "Post-resurrection dialogue gospel",
+      "claim": "The preserved text closes a dialogue with Jesus, then presents Mary's vision and her disputed teaching. Peter and Andrew challenge her; Levi defends her.",
+      "establishes": "The risen-Jesus setting could authorize Mary's teaching and expose arguments over who understood Jesus and who was permitted to speak for him.",
+      "limits": "The lost opening probably contained the appearance, but that scene is not preserved. The surviving work is theological dialogue, not a recoverable event sequence.",
+      "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-mary/",
+      "sourceLabel": "NASSCAL scholarly catalog"
+    },
+    {
+      "id": "apocrypha-wisdom-jesus",
+      "group": "risen-dialogues",
+      "name": "The Wisdom of Jesus Christ",
+      "date": "Date disputed: late 1st or early 2nd century to the 3rd",
+      "survives": "Greek and Coptic witnesses copied in the 4th and 5th centuries.",
+      "kind": "Revelatory dialogue",
+      "claim": "Disciples and women gather on a mountain in Galilee after the resurrection. The Savior appears and answers thirteen rounds of questions about the universe, divine powers, mortality, and salvation.",
+      "establishes": "Matthew's Galilean mountain became a reusable setting for later cosmological teaching delivered by an appearing Savior.",
+      "limits": "The work reshapes material from Eugnostos the Blessed, and its date is unusually disputed. Its scene functions as a literary frame for theology rather than an event report.",
+      "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/wisdom-of-jesus-christ/",
+      "sourceLabel": "NASSCAL scholarly catalog"
+    },
+    {
+      "id": "apocrypha-peter-philip",
+      "group": "risen-dialogues",
+      "name": "The Letter of Peter to Philip",
+      "date": "Late 2nd to early 3rd century, often proposed",
+      "survives": "Two broadly comparable 4th-century Coptic copies, in Nag Hammadi Codex VIII and Codex Tchacos.",
+      "kind": "Letter-framed revelatory dialogue",
+      "claim": "The reunited disciples gather on the Mount of Olives. Jesus appears as a great light and voice, answers questions, ascends, and commissions them before they return to Jerusalem.",
+      "establishes": "A later community rewrote the Olivet and Pentecost pattern around unity, persecution, cosmic powers, and Peter's leadership.",
+      "limits": "The scene echoes Acts while serving a distinct theological system. Its two later manuscripts preserve reception history, not independent evidence for the ascension.",
+      "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/epistle-of-peter-to-philip/",
+      "sourceLabel": "NASSCAL scholarly catalog"
+    },
+    {
+      "id": "apocrypha-questions-bartholomew",
+      "group": "expanded-worlds",
+      "name": "The Questions of Bartholomew",
+      "date": "2nd to 4th century; composition and development debated",
+      "survives": "Several divergent language versions. The principal Greek manuscripts are medieval, copied from the 13th to 15th centuries.",
+      "kind": "Apocalyptic question-and-answer dialogue",
+      "claim": "Bartholomew questions Jesus about the crucifixion, the descent to Hades, heaven, the abyss, and Satan. Some versions place the exchange after the resurrection; one places it before.",
+      "establishes": "The unanswered interval and the authority of Bartholomew became a framework for increasingly elaborate explanations of Hades and the unseen world.",
+      "limits": "Its versions disagree even about when the dialogue occurs, and the surviving copies are late. It is evidence for a developing tradition, not a stable early narrative.",
+      "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/questions-of-bartholomew/",
+      "sourceLabel": "NASSCAL scholarly catalog"
+    },
+    {
+      "id": "apocrypha-pistis-sophia",
+      "group": "expanded-worlds",
+      "name": "Pistis Sophia",
+      "date": "2nd- and 3rd-century layers have been proposed; composite",
+      "survives": "One Sahidic Coptic manuscript, the Askew Codex, copied around AD 250-300.",
+      "kind": "Extended revelatory dialogue",
+      "claim": "Its main frame says Jesus taught the disciples for eleven years after the resurrection before revealing higher mysteries. Another section returns to a Galilean mountain immediately after the resurrection.",
+      "establishes": "The post-resurrection period could be expanded almost without limit and used to authorize a large body of ritual, cosmological, and salvific teaching.",
+      "limits": "The work is internally inconsistent and appears to compile multiple texts. Its eleven-year setting belongs to a later theological world, not the chronology of Acts.",
+      "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/pistis-sophia/",
+      "sourceLabel": "NASSCAL scholarly catalog"
+    }
+  ],
+  "questions": [
+    {
+      "id": "mark-ending",
+      "question": "Does the earliest Gospel have a resurrection appearance?",
+      "answer": "As we have it in the oldest complete manuscripts, no. Mark ends at 16:8 with the women running from the tomb, afraid, saying nothing to anyone. The twelve verses that follow — the appearances, the ascension, the signs — are absent from Codex Sinaiticus and Codex Vaticanus, and read in a different style. Most printed Bibles carry them with a note. This room marks them wherever they are used.",
+      "refs": [{ "ref": "MRK 16:8" }, { "ref": "MRK 16:9-20" }]
+    },
+    {
+      "id": "galilee-or-jerusalem",
+      "question": "Galilee, or Jerusalem?",
+      "answer": "Matthew and Mark send the disciples north to Galilee, and Matthew's climax happens on a mountain there. Luke keeps them in and around Jerusalem and has them told to stay in the city. Both cannot be the whole picture; harmonies exist, but they are readings, not sources.",
+      "refs": [{ "ref": "MAT 28:7" }, { "ref": "MRK 16:7" }, { "ref": "LUK 24:49" }]
+    },
+    {
+      "id": "one-or-two",
+      "question": "One messenger at the tomb, or two?",
+      "answer": "Matthew has an angel and Mark a young man in white — one figure. Luke has two men in dazzling clothing, John two angels seated where the body had been. Some readers harmonize this by saying one writer mentions only the speaker; others treat it as variation in retelling. The sources themselves do not explain the difference.",
+      "refs": [{ "ref": "MAT 28:5" }, { "ref": "MRK 16:5" }, { "ref": "LUK 24:4" }, { "ref": "JHN 20:12" }]
+    },
+    {
+      "id": "same-day-or-forty",
+      "question": "The same day, or forty days later?",
+      "answer": "Luke 24 reads as one continuous day that ends with the ascension at Bethany. Acts 1 — the same author, writing to the same reader — gives forty days. Luke's Gospel compresses; Acts spells it out. The forty-day figure rests on that one verse.",
+      "refs": [{ "ref": "LUK 24:50-51" }, { "ref": "ACT 1:3" }]
+    },
+    {
+      "id": "where-are-the-women",
+      "question": "Why are the women missing from the earliest list?",
+      "answer": "Paul's list is the earliest written account of the appearances, and it begins with Cephas. The women, who come first in all four Gospels, are not in it. Readers have explained this by the conventions of a formal witness list; the plain fact is that the earliest source omits the first witnesses, and the later sources put them first anyway.",
+      "refs": [{ "ref": "1CO 15:3-8" }, { "ref": "MAT 28:9-10" }, { "ref": "JHN 20:14-18" }]
+    },
+    {
+      "id": "did-anyone-see-it",
+      "question": "Did anyone claim to see the rising itself?",
+      "answer": "No New Testament source does. Every account begins at a tomb that is already open. The first text to narrate the exit is the Gospel of Peter, in the second century, and it is not a witness — it is a story written later, by someone filling the same gap everyone else felt.",
+      "refs": [{ "ref": "MAT 28:2" }, { "ref": "MRK 16:4" }, { "ref": "LUK 24:2" }, { "ref": "JHN 20:1" }]
+    }
+  ]
+}

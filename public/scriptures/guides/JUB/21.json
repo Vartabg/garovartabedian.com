@@ -1,0 +1,227 @@
+{
+  "book": "JUB",
+  "chapter": 21,
+  "bookName": "Jubilees",
+  "summary": "Abraham calls Isaac and gives him detailed final instructions about worship, blood, offerings, approved altar wood, washing, and avoiding idols. He closes by warning against violent injustice and praying that Isaac's descendants will walk rightly and receive lasting blessing.",
+  "whyItMatters": "The chapter casts Isaac as the recipient of a transmitted rule of life, linking ancestral writings and ritual practice to the next generation.",
+  "context": {
+    "author": "Within the book, the angel of the presence dictates the account to Moses; the historical writer is unnamed.",
+    "audience": "Israel is addressed through Moses in the book’s frame; the specific first historical audience is not identified.",
+    "date": "The narrative places the revelation at Sinai; the historical Hebrew work is usually dated to the second century BCE, without an established exact year.",
+    "setting": "A late-life address from Abraham to Isaac, focused on altar practice and the future of Isaac's descendants.",
+    "literaryForm": "Father-to-son farewell instruction combining ritual details, moral warning, and blessing."
+  },
+  "contextSourceIds": [
+    "hosted-charles",
+    "oxford-endres"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Abraham has addressed his whole extended family and assigned Isaac the main inheritance.",
+      "verseRefs": [
+        "20:1-3",
+        "20:11-13"
+      ]
+    },
+    "here": {
+      "text": "He gives Isaac personal rules for offerings, blood, washing, justice, and upright living.",
+      "verseRefs": [
+        "21:1-26"
+      ]
+    },
+    "after": {
+      "text": "Isaac and Ishmael come to Abraham for a festival, and Abraham turns to bless Jacob at length.",
+      "verseRefs": [
+        "22:1-5",
+        "22:10-15"
+      ]
+    }
+  },
+  "outline": [
+    {
+      "heading": "Abraham urges fidelity and rejects idols",
+      "verses": "1-6",
+      "note": "The speech begins with memory of God and the blood prohibition."
+    },
+    {
+      "heading": "Offering procedure and its timing",
+      "verses": "7-11",
+      "note": "Fat, flour, drink offering, leftovers, and salt are specified."
+    },
+    {
+      "heading": "Approved wood and ritual washing",
+      "verses": "12-18",
+      "note": "The altar material, bodily washing, and covering blood are named."
+    },
+    {
+      "heading": "Bloodshed and moral warning",
+      "verses": "19-23",
+      "note": "Abraham warns against accepting gifts for human blood and copying corrupt conduct."
+    },
+    {
+      "heading": "Blessing and Isaac’s departure",
+      "verses": "24-26",
+      "note": "The charge ends with a prayer and Isaac leaves rejoicing."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "21:10",
+      "text": "And eat its meat on that day and on the second day, and let not the sun on the second day go down upon it till it is eaten, and let nothing be left over for the third day; for it is not acceptable [for it is not approved] and let it no longer be eaten, and all who eat thereof will bring sin upon themselves; for thus I have found it written in the books of my forefathers, and in the words of Enoch, and in the words of Noah.",
+      "why": "The time limit for eating an offering is grounded in books attributed to earlier ancestors."
+    },
+    {
+      "ref": "21:16",
+      "text": "And at all times be clean in thy body, and wash thyself with water before thou approachest to offer on the altar, and wash thy hands and thy feet before thou drawest near to the altar; and when thou art done sacrificing, wash again thy hands and thy feet.",
+      "why": "Washing before and after sacrifice makes bodily preparation part of the inherited instruction."
+    }
+  ],
+  "themes": [
+    "ancestral instruction",
+    "blood prohibition",
+    "offering details",
+    "cleanliness at the altar",
+    "Isaac’s future blessing"
+  ],
+  "questions": [
+    {
+      "category": "context",
+      "question": "Why does Abraham give Isaac such specific ritual instructions?",
+      "answer": "He says he is old and uncertain of his death, then passes on practices he says he has sought to follow. The detailed procedures make this a transmission scene, not simply a general farewell wish.",
+      "verseRefs": [
+        "21:1-10"
+      ],
+      "id": "q1",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What are “oblations” in this chapter?",
+      "answer": "They are offerings presented to God; Abraham says to add salt to all of them. The surrounding verses describe animal portions, grain mixed with oil, and drink offerings at the altar.",
+      "verseRefs": [
+        "21:7-11"
+      ],
+      "id": "q2",
+      "relatedVerses": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Why does the speech forbid eating an offering on the third day?",
+      "answer": "Abraham says the meat may be eaten on the first two days, but leftovers on the third are no longer acceptable. He attributes the rule to ancestral books and the words of Enoch and Noah, without explaining a modern food-safety rationale.",
+      "verseRefs": [
+        "21:7-10"
+      ],
+      "id": "q3",
+      "relatedVerses": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "category": "context",
+      "question": "Why list particular kinds of wood for the altar?",
+      "answer": "The speech specifies wood that is clean, sound, and fragrant, then excludes other kinds and old or damaged wood. These details show the text treating the material of an offering as part of its proper presentation.",
+      "verseRefs": [
+        "21:12-15"
+      ],
+      "id": "q4",
+      "relatedVerses": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What is “salt of the covenant”?",
+      "answer": "The phrase is used for salt required on offerings at the altar. The chapter calls it part of the covenant without giving a separate explanation of every symbolism attached to salt.",
+      "verseRefs": [
+        "21:10-11"
+      ],
+      "id": "q5",
+      "relatedVerses": [
+        10,
+        11
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "What does Abraham mean by “blood for blood”?",
+      "answer": "He forbids taking payment that would let a killer escape judgment and says the land cannot be cleansed of shed human blood except by the blood of the killer. The demand is explicitly lethal; it does not grant readers a private right to retaliate or carry out violence.",
+      "verseRefs": [
+        "21:17-20"
+      ],
+      "id": "q6",
+      "relatedVerses": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "category": "theology",
+      "question": "How does the speech end after so many restrictions?",
+      "answer": "Abraham turns to a hope that God will raise a righteous line from Isaac and bless his descendants. The final words send Isaac away in peace rather than ending with the warning alone.",
+      "verseRefs": [
+        "21:21-26"
+      ],
+      "id": "q7",
+      "relatedVerses": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "oblations",
+      "def": "Offerings presented at the altar, including the animal and accompanying portions described here."
+    },
+    {
+      "term": "covenant",
+      "def": "The binding relationship invoked in the rule about salt and in the promise to Isaac’s line."
+    }
+  ],
+  "readingContextSource": {
+    "translation": "charles",
+    "textHash": "c819c59f4b6b16a0782d2a6f7f4bdd574e018a3458282ebc59f3de8ed78f846c"
+  },
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "558c928118785246eced921ce16ba392f0c8e25e790b1e9507b5a5ca5ffc2adc",
+    "generatedAt": "2026-09-29T00:33:02.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent cross-review",
+  "sourceIds": [
+    "charles"
+  ]
+}

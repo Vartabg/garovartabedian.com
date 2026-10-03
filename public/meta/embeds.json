@@ -1,0 +1,22 @@
+{
+  "note": "Whether each demo framed by /labs still permits this site as a frame ancestor. framableFromWww records the same question for the www host, which is reported but never failed on — it is a hosting fix. Written by scripts/site/check-embeds.mjs; tests/labs-embeds.test.ts holds the page to it.",
+  "origin": "https://garovartabedian.com",
+  "embeds": {
+    "https://eye-code-visualizer.vercel.app": {
+      "status": 200,
+      "verdict": "framable",
+      "why": "no framing restriction",
+      "frameAncestors": null,
+      "checkedAt": "2026-08-31",
+      "framableFromWww": true
+    },
+    "https://www.atxbro.com": {
+      "status": 200,
+      "verdict": "framable",
+      "why": "named in frame-ancestors",
+      "frameAncestors": "frame-ancestors 'self' https://garovartabedian.com",
+      "checkedAt": "2026-08-31",
+      "framableFromWww": false
+    }
+  }
+}

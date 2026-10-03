@@ -1,0 +1,990 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/site/build-claims.mjs",
+  "generatedAt": "2026-09-01T23:53:54.000Z",
+  "claims": [
+    {
+      "id": "angels-fall-enoch-6-3-6",
+      "world": "angels",
+      "subject": "The oath on Mount Hermon",
+      "text": "1 Enoch expands Genesis 6: two hundred angels descend and bind themselves by oath on Hermon. It is not canonical scripture outside the Ethiopian Orthodox church. But Jude quotes it directly — JUD 1:14-15 (“About these also Enoch, the seventh from Adam, prophesied, saying, ‘Behold, the Lord came with ten thousands of his holy ones…’”) is a quotation of 1 Enoch 1:9. Verified in repo at JUD.json. The brackets ⌈ ⌉ are Charles's own marks for a reconstructed reading.",
+      "basis": {
+        "axis": "textual",
+        "grade": "extra-canonical"
+      },
+      "sources": [
+        {
+          "label": "1 Enoch 6:3-6 · Charles 1917",
+          "url": "https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)/Chapter_06"
+        }
+      ],
+      "refs": [
+        "ENO 6:3-6"
+      ],
+      "limit": "This account comes from 1 Enoch, canonical in the Ethiopian Orthodox tradition but outside most biblical canons; its relationship to Jude is stated separately.",
+      "href": "/angels/fall#enoch-6-3-6"
+    },
+    {
+      "id": "angels-fall-ezk-28-12-17",
+      "world": "angels",
+      "subject": "The lament over the king of Tyre",
+      "text": "Addressed by name to the king of Tyre, yet worded like Eden: an anointed cherub, in the garden of God, on the holy mountain, blameless until “unrighteousness was found in you.” Like Isaiah 14, the passage is a lament over a human ruler that the church has long read as also picturing an older angelic fall. The double reading is interpretive; the text names the king of Tyre.",
+      "basis": {
+        "axis": "textual",
+        "grade": "disputed"
+      },
+      "sources": [
+        {
+          "label": "Ezekiel 28:12-17 · WEB"
+        }
+      ],
+      "refs": [
+        "EZK 28:12-17"
+      ],
+      "limit": "Ezekiel names the king of Tyre while using Eden and cherub imagery. Applying the lament to Satan as a second referent is interpretive.",
+      "href": "/angels/fall#ezk-28-12-17"
+    },
+    {
+      "id": "angels-fall-gen-6-1-4",
+      "world": "angels",
+      "subject": "The sons of God and the daughters of men",
+      "text": "Where the fall of the watchers is anchored. Reading “God’s sons” (bene ha-elohim) as angelic beings is the oldest interpretation — it is how 1 Enoch tells it and how Jude 1:6 and 2 Peter 2:4 seem to read it. The “Sethite” reading (godly line of Seth marrying the ungodly line of Cain) is a later church interpretation. Both are interpretive; the text itself does not spell out which.",
+      "basis": {
+        "axis": "textual",
+        "grade": "disputed"
+      },
+      "sources": [
+        {
+          "label": "Genesis 6:1-4 · WEB"
+        }
+      ],
+      "refs": [
+        "GEN 6:1-4"
+      ],
+      "limit": "Genesis says “God’s sons” but does not identify them. Angelic, royal, and Sethite readings all supply an interpretation the passage itself leaves unstated.",
+      "href": "/angels/fall#gen-6-1-4"
+    },
+    {
+      "id": "angels-fall-isa-14-12-15",
+      "world": "angels",
+      "subject": "How you have fallen from heaven",
+      "text": "WEB renders the Hebrew helel ben-shachar as “shining one, son of the dawn.” The Latin Vulgate translated it “Lucifer” (light-bearer), and the Douay-Rheims kept that word — this single Latin word is the whole origin of the name “Lucifer.” In its own context the taunt is a funeral song sung over the king of Babylon (see 14:4). The church has long read a second, older fall behind the human king; that fuller reading is interpretive, not stated in the passage itself.",
+      "basis": {
+        "axis": "textual",
+        "grade": "disputed"
+      },
+      "sources": [
+        {
+          "label": "Isaiah 14:12-15 · WEB"
+        }
+      ],
+      "refs": [
+        "ISA 14:12-15",
+        "ISA 14:12"
+      ],
+      "limit": "The passage directly addresses the king of Babylon. Reading a prior angelic fall behind the royal taunt is a longstanding Christian interpretation, not its stated subject.",
+      "href": "/angels/fall#isa-14-12-15"
+    },
+    {
+      "id": "angels-fall-jhn-12-31",
+      "world": "angels",
+      "subject": "The prince of this world cast out",
+      "text": "Jesus speaking as the cross approaches. “The prince of this world” is his term for the adversary; here the casting out is tied to the judgment accomplished at the cross, not to a primeval event.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "John 12:31 · WEB"
+        }
+      ],
+      "refs": [
+        "JHN 12:31"
+      ],
+      "limit": "Jesus directly says the ruler of this world will be cast out and ties that judgment to his approaching crucifixion.",
+      "href": "/angels/fall#jhn-12-31"
+    },
+    {
+      "id": "angels-fall-job-1-6-12",
+      "world": "angels",
+      "subject": "The satan in the court of heaven",
+      "text": "In the Hebrew, “Satan” here is ha-satan — “the accuser” or “the adversary,” a title with the definite article. He walks to and fro in the earth and must ask leave; he acts only within limits God sets. This is the adversary as prosecuting figure in the heavenly court, not yet the fully drawn devil of the New Testament.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Job 1:6-12 · WEB"
+        }
+      ],
+      "refs": [
+        "JOB 1:6-12"
+      ],
+      "limit": "Job directly depicts the accuser in the heavenly court, speaking with God and acting only within limits; it does not narrate his origin or fall.",
+      "href": "/angels/fall#job-1-6-12"
+    },
+    {
+      "id": "angels-fall-jud-6-2pe-4",
+      "world": "angels",
+      "subject": "The angels who did not keep their first estate",
+      "text": "The two New Testament letters that most clearly read Genesis 6 as an angelic fall. WEB renders the Greek tartaroō (2 Peter 2:4) as “cast them down to Tartarus” — a term borrowed from Greek cosmology for the deepest prison. Both letters describe fallen angels already bound and held for a coming judgment.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [
+        {
+          "label": "Jude 1:6 · WEB"
+        }
+      ],
+      "refs": [
+        "JUD 1:6",
+        "2PE 2:4"
+      ],
+      "limit": "Jude and 2 Peter directly describe sinning angels kept for judgment; connecting their offense specifically to Genesis 6 is strongly contextual but not named in either sentence.",
+      "href": "/angels/fall#jud-6-2pe-4"
+    },
+    {
+      "id": "angels-fall-luk-10-18",
+      "world": "angels",
+      "subject": "I saw Satan fall",
+      "text": "Jesus' own sentence, spoken as the seventy return rejoicing that even demons submit to them. The oldest fall imagery — descent from heaven — placed on the lips of Christ himself.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Luke 10:18 · WEB"
+        }
+      ],
+      "refs": [
+        "LUK 10:18"
+      ],
+      "limit": "Jesus directly says he saw Satan fall from heaven; the immediate setting is the seventy reporting that demons submit in his name.",
+      "href": "/angels/fall#luk-10-18"
+    },
+    {
+      "id": "angels-fall-luk-22-31",
+      "world": "angels",
+      "subject": "Peter warned to watch Satan",
+      "text": "Jesus' warning to Peter after the Last Supper, before the crucifixion. Satan's role is explicitly described as sifting like wheat, and Jesus intercedes for Peter. This is the New Testament's clearest statement about Satan's purpose toward believers.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Luke 22:31-32 · WEB"
+        }
+      ],
+      "refs": [
+        "LUK 22:31-32"
+      ],
+      "limit": "Jesus directly tells Peter that Satan asked to sift the disciples and that he has prayed for Peter's faith.",
+      "href": "/angels/fall#luk-22-31"
+    },
+    {
+      "id": "angels-fall-rev-12-10-12",
+      "world": "angels",
+      "subject": "The accuser thrown down",
+      "text": "The accuser of Job's court is here named and cast out. The victory is not by force but “because of the Lamb’s blood, and because of the word of their testimony” — the enemy is overcome through the cross, and his time is declared short.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Revelation 12:10-12 · WEB"
+        }
+      ],
+      "refs": [
+        "REV 12:10-12"
+      ],
+      "limit": "The vision directly identifies the thrown-down figure as the accuser and attributes the saints' victory to the Lamb's blood and their testimony.",
+      "href": "/angels/fall#rev-12-10-12"
+    },
+    {
+      "id": "angels-fall-rev-12-7-9",
+      "world": "angels",
+      "subject": "War in heaven",
+      "text": "Revelation names the figure the earlier texts left as a title: “the dragon… the old serpent, he who is called the devil and Satan.” Michael and his angels cast him down. This is apocalyptic vision, gathering the strands — serpent, adversary, devil — into one enemy.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Revelation 12:7-9 · WEB"
+        }
+      ],
+      "refs": [
+        "REV 12:7-9"
+      ],
+      "limit": "Revelation's vision directly names the dragon as the devil and Satan and depicts Michael casting him down; the literary form is apocalyptic vision.",
+      "href": "/angels/fall#rev-12-7-9"
+    },
+    {
+      "id": "angels-fall-rev-20-abyss-end",
+      "world": "angels",
+      "subject": "The abyss, then the end of him",
+      "text": "Where scripture ends the story: the adversary bound in the abyss, and finally cast into the lake of fire. The descent that began with a fall from heaven ends in defeat. Stating that end is part of the record, not editorializing.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Revelation 20:1-3 · WEB"
+        }
+      ],
+      "refs": [
+        "REV 20:1-3",
+        "REV 20:10"
+      ],
+      "limit": "Revelation directly depicts the devil bound in the abyss and later thrown into the lake of fire; chronology beyond the passage's apocalyptic sequence is not supplied here.",
+      "href": "/angels/fall#rev-20-abyss-end"
+    },
+    {
+      "id": "angels-fall-sa-ch-census",
+      "world": "angels",
+      "subject": "The same census, two tellings",
+      "text": "One event, told twice. Samuel (earlier) says Yahweh’s anger moved David; Chronicles (written centuries later) names Satan as the mover. Set side by side, this is the clearest window in the Hebrew scriptures into how Israel’s picture of the adversary sharpened over time — the later writer attributes to Satan what the earlier one attributed to the LORD’s anger. Both verses verified verbatim in the repo.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [
+        {
+          "label": "2 Samuel 24:1 · WEB"
+        }
+      ],
+      "refs": [
+        "2SA 24:1",
+        "1CH 21:1"
+      ],
+      "limit": "Samuel and Chronicles directly attribute the same census differently. Reading that difference as a developing portrait of the adversary is the editorial inference.",
+      "href": "/angels/fall#sa-ch-census"
+    },
+    {
+      "id": "angels-fall-zec-3-1-2",
+      "world": "angels",
+      "subject": "Satan accusing Joshua",
+      "text": "The first post-exilic appearance of the adversary as a named figure. Satan (Hebrew ha-satan: \"the accuser\") stands at Joshua's right hand as his adversary, and the angel of Yahweh rebukes him. This is the clearest window into how Israel's picture of the adversary sharpened over time — from a heavenly court figure to a named enemy.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Zechariah 3:1-2 · WEB"
+        }
+      ],
+      "refs": [
+        "ZEC 3:1-2"
+      ],
+      "limit": "Zechariah directly places the accuser beside Joshua in a heavenly courtroom scene and records Yahweh's rebuke.",
+      "href": "/angels/fall#zec-3-1-2"
+    },
+    {
+      "id": "angels-order-abyss",
+      "world": "angels",
+      "subject": "The Abyss",
+      "text": "Demons beg Jesus not to send them into the abyss — a locked, smoking pit whose king angel is named Abaddon in Hebrew and Apollyon in Greek — and the angels who sinned were \"cast down to Tartarus\" (the WEB's rendering in 2 Peter), kept in everlasting bonds under darkness for the judgment of the great day.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [],
+      "refs": [
+        "LUK 8:31",
+        "REV 9:1-2",
+        "REV 9:11",
+        "2PE 2:4",
+        "JUD 1:6"
+      ],
+      "limit": "Each cited prison image is explicit, while arranging the abyss, Tartarus, and bonds under darkness as one band compares passages that use distinct language.",
+      "href": "/angels#band-abyss"
+    },
+    {
+      "id": "angels-order-archangel-chief-princes",
+      "world": "angels",
+      "subject": "The Archangel and the Chief Princes",
+      "text": "Scripture calls only Michael \"the archangel\" — \"one of the chief princes\" and \"the great prince who stands for the children of your people\" — and the Lord will descend with the voice of the archangel.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [],
+      "refs": [
+        "1TH 4:16",
+        "JUD 1:9",
+        "DAN 10:13",
+        "DAN 10:21",
+        "DAN 12:1"
+      ],
+      "limit": "Archangel and chief prince are direct scriptural terms; placing them together as one tier is an editorial connection rather than a hierarchy stated in one passage.",
+      "href": "/angels#band-archangel-chief-princes"
+    },
+    {
+      "id": "angels-order-cherubim",
+      "world": "angels",
+      "subject": "The Cherubim",
+      "text": "Cherubim bear God's throne — Ezekiel names his four living creatures as cherubim, David says God \"rode on a cherub, and flew\" — and they guard Eden's way with a flaming sword and overshadow the mercy seat with their wings.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [],
+      "refs": [
+        "EZK 1:5",
+        "EZK 10:20",
+        "GEN 3:24",
+        "PSA 18:10",
+        "EXO 25:20"
+      ],
+      "limit": "The cited passages directly name cherubim at Eden, above the mercy seat, and as the living creatures associated with the divine throne.",
+      "href": "/angels#band-cherubim"
+    },
+    {
+      "id": "angels-order-earth-between",
+      "world": "angels",
+      "subject": "The Earth Between",
+      "text": "The earth stands between the unseen armies: when the servant's eyes are opened the mountain is full of horses and chariots of fire, strangers may be angels unawares, and the adversary walks around like a roaring lion.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [],
+      "refs": [
+        "2KI 6:17",
+        "HEB 13:2",
+        "1PE 5:8"
+      ],
+      "limit": "The individual scenes are explicit; presenting earth as a middle realm between holy and hostile unseen activity is a visual and editorial synthesis.",
+      "href": "/angels#band-earth-between"
+    },
+    {
+      "id": "angels-order-lake-of-fire",
+      "world": "angels",
+      "subject": "The End: the Lake of Fire",
+      "text": "The eternal fire was \"prepared for the devil and his angels,\" and the devil who deceived the nations is thrown into the lake of fire and sulfur, tormented day and night forever and ever.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [],
+      "refs": [
+        "MAT 25:41",
+        "REV 20:10"
+      ],
+      "limit": "Jesus and Revelation directly connect the devil and his angels with final fire and state the deceiver's defeat; the passages remain apocalyptic judgment texts.",
+      "href": "/angels#band-lake-of-fire"
+    },
+    {
+      "id": "angels-order-messengers-hosts",
+      "world": "angels",
+      "subject": "The Messengers and the Hosts",
+      "text": "The angels are \"serving spirits, sent out to do service for the sake of those who will inherit salvation\" — mighty ones who fulfill his word, armies who do his pleasure, a multitude of the heavenly army, innumerable multitudes.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [],
+      "refs": [
+        "HEB 1:14",
+        "PSA 103:20-21",
+        "LUK 2:13",
+        "HEB 12:22"
+      ],
+      "limit": "Every description is direct, but gathering serving spirits, mighty ones, and the heavenly army into one functional band is this room's synthesis.",
+      "href": "/angels#band-messengers-hosts"
+    },
+    {
+      "id": "angels-order-principalities-powers",
+      "world": "angels",
+      "subject": "Principalities and Powers",
+      "text": "Our wrestling is not against flesh and blood but against principalities, powers, and the world's rulers of the darkness of this age — a \"prince of the power of the air,\" a \"god of this world\" who blinds minds, and in Daniel a \"prince of the kingdom of Persia\" who withstands God's messenger twenty-one days.",
+      "basis": {
+        "axis": "textual",
+        "grade": "disputed"
+      },
+      "sources": [],
+      "refs": [
+        "EPH 6:12",
+        "EPH 2:2",
+        "2CO 4:4",
+        "DAN 10:13"
+      ],
+      "limit": "The titles and hostile contexts are direct; treating every principality or national prince as the same fixed class of fallen angel goes beyond what the passages settle.",
+      "href": "/angels#band-principalities-powers"
+    },
+    {
+      "id": "angels-order-throne-seraphim",
+      "world": "angels",
+      "subject": "The Throne and the Seraphim",
+      "text": "Isaiah sees the Lord on a throne, high and lifted up, with six-winged seraphim above him crying \"Holy, holy, holy\" — the same unceasing cry John hears from the four living creatures around the throne.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [],
+      "refs": [
+        "ISA 6:1-3",
+        "REV 4:8"
+      ],
+      "limit": "Isaiah directly places seraphim above the throne; comparing their unceasing cry with Revelation is a textual parallel, not an identification.",
+      "href": "/angels#band-throne-seraphim"
+    },
+    {
+      "id": "angels-order-unclean-spirits",
+      "world": "angels",
+      "subject": "The Unclean Spirits",
+      "text": "The unclean spirits know who Jesus is and obey when he commands them out; a spirit gone out of a man passes through waterless places, and may return with seven others more evil than itself.",
+      "basis": {
+        "axis": "textual",
+        "grade": "explicit"
+      },
+      "sources": [],
+      "refs": [
+        "MRK 1:23-27",
+        "MAT 12:43-45"
+      ],
+      "limit": "The Gospel passages directly call them unclean spirits, report their recognition of Jesus, and describe their obedience when he commands them out.",
+      "href": "/angels#band-unclean-spirits"
+    },
+    {
+      "id": "apostles-death-andrew",
+      "world": "apostles",
+      "subject": "Andrew — how he died",
+      "text": "Crucified at Patras in Achaia, bound rather than nailed. The X-shaped cross of the flag traditions is a medieval addition.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Acts of Andrew (~200), an apocryphal romance",
+          "url": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)"
+        }
+      ],
+      "refs": [],
+      "limit": "The Patras death is old but stands on a legendary text; the saltire shape is centuries younger still.",
+      "href": "/apostles/twelve#andrew"
+    },
+    {
+      "id": "apostles-death-bartholomew",
+      "world": "apostles",
+      "subject": "Bartholomew — how he died",
+      "text": "Martyred in Armenia — at Albak in Vaspurakan by the Armenian tradition, at 'Albanopolis' in Caucasian Albania by the Western martyrology. The flaying that put the knife in his statues' hands — and his skin over Michelangelo's self-portrait — is the developed legend.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Late martyrologies",
+          "url": "https://www.newadvent.org/cathen/02313c.htm"
+        },
+        {
+          "label": "no early source names the manner"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#bartholomew"
+    },
+    {
+      "id": "apostles-death-james-alphaeus",
+      "world": "apostles",
+      "subject": "James of Alphaeus — how he died",
+      "text": "Unknown. Late accounts give him a martyrdom, but they cannot agree on where or how, and the earliest sources give nothing at all.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "No early source",
+          "url": "https://www.newadvent.org/cathen/08280a.htm"
+        }
+      ],
+      "refs": [],
+      "limit": "An honest blank. Ten thousand churches carry the name of a man about whom the record keeps four lines.",
+      "href": "/apostles/twelve#james-alphaeus"
+    },
+    {
+      "id": "apostles-death-james-zebedee",
+      "world": "apostles",
+      "subject": "James of Zebedee — how he died",
+      "text": "Beheaded in Jerusalem by order of Herod Agrippa I, around 44 AD — the only apostolic death the New Testament itself records.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "scripture"
+      },
+      "sources": [
+        {
+          "label": "Acts 12:1–2",
+          "url": "/scriptures/protestant/ACT/12#v1"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#james-zebedee"
+    },
+    {
+      "id": "apostles-death-john",
+      "world": "apostles",
+      "subject": "John — how he died",
+      "text": "Died of old age at Ephesus in the reign of Trajan — the one member of the twelve tradition does not kill. His own gospel records the rumor that he would never die, and corrects it.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Irenaeus, Against Heresies 2.22.5 (~180)",
+          "url": "https://www.newadvent.org/fathers/0103222.htm"
+        },
+        {
+          "label": "John 21:20–23 for the corrected rumor"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#john"
+    },
+    {
+      "id": "apostles-death-judas-iscariot",
+      "world": "apostles",
+      "subject": "Judas Iscariot — how he died",
+      "text": "Dead before Pentecost, by his own hand in Matthew's telling; the field bought with his price kept the name Blood in both accounts.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "scripture"
+      },
+      "sources": [
+        {
+          "label": "Matthew 27:3–10",
+          "url": "/scriptures/protestant/MAT/27#v3"
+        },
+        {
+          "label": "Acts 1:18–19"
+        }
+      ],
+      "refs": [],
+      "limit": "The two canonical accounts differ in mechanism and agree on the field. Recorded as written.",
+      "href": "/apostles/twelve#judas-iscariot"
+    },
+    {
+      "id": "apostles-death-matthew",
+      "world": "apostles",
+      "subject": "Matthew — how he died",
+      "text": "Disputed at the root: Clement of Alexandria preserves Heracleon's claim that Matthew died a natural death, while later tradition supplies a martyrdom. The oldest voice on record is the one that says no one killed him.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Heracleon via Clement of Alexandria, Stromata 4.9 (~180)",
+          "url": "https://www.newadvent.org/fathers/02104.htm"
+        }
+      ],
+      "refs": [],
+      "limit": "Graded by the earliest source — which, uncomfortably for the legends, reports no martyrdom.",
+      "href": "/apostles/twelve#matthew"
+    },
+    {
+      "id": "apostles-death-matthias",
+      "world": "apostles",
+      "subject": "Matthias — how he died",
+      "text": "Unknown. The traditions disagree on stoning, axe, or old age — a man history could not see clearly enough to kill in one consistent way.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "No early source",
+          "url": "https://www.newadvent.org/cathen/10066a.htm"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#matthias"
+    },
+    {
+      "id": "apostles-death-peter",
+      "world": "apostles",
+      "subject": "Peter — how he died",
+      "text": "Executed in Rome under Nero, by crucifixion. The famous head-downward detail arrives later, in the apocryphal Acts of Peter and in Origen.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "John 21:18–19 foretells it",
+          "url": "https://www.newadvent.org/fathers/250103.htm"
+        },
+        {
+          "label": "1 Clement 5 (~96) states it"
+        },
+        {
+          "label": "Eusebius, Church History 3.1 carries Origen's head-down detail"
+        }
+      ],
+      "refs": [],
+      "limit": "Death in Rome is among the best-attested apostle traditions. The upside-down cross is not in scripture and not in the first century.",
+      "href": "/apostles/twelve#peter"
+    },
+    {
+      "id": "apostles-death-philip",
+      "world": "apostles",
+      "subject": "Philip — how he died",
+      "text": "Martyred at Hierapolis — crucified upside down in the developed legend.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Acts of Philip (~350s), a late apocryphal text",
+          "url": "https://www.newadvent.org/cathen/11799a.htm"
+        }
+      ],
+      "refs": [],
+      "limit": "The grave at Hierapolis is early testimony; the manner of death is not.",
+      "href": "/apostles/twelve#philip"
+    },
+    {
+      "id": "apostles-death-simon-zealot",
+      "world": "apostles",
+      "subject": "Simon the Zealot — how he died",
+      "text": "Unknown. The famous sawing appears only in late accounts that contradict each other on country and century.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Late martyrologies only",
+          "url": "https://www.newadvent.org/cathen/13796b.htm"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#simon-zealot"
+    },
+    {
+      "id": "apostles-death-thaddaeus",
+      "world": "apostles",
+      "subject": "Thaddaeus — how he died",
+      "text": "Martyred in Armenia with an axe or arrows in the developed tradition; the instruments vary by the telling.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Armenian martyrdom traditions, recorded from the 5th century",
+          "url": "https://whc.unesco.org/en/list/1262/"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#thaddaeus"
+    },
+    {
+      "id": "apostles-death-thomas",
+      "world": "apostles",
+      "subject": "Thomas — how he died",
+      "text": "Speared on a hill at Mylapore, near modern Chennai, where the local church has kept the site continuously.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Acts of Thomas (~220)",
+          "url": "https://www.newadvent.org/cathen/14658b.htm"
+        },
+        {
+          "label": "Ephrem the Syrian (4th century) already knows the India martyrdom and the relics at Edessa"
+        }
+      ],
+      "refs": [],
+      "limit": "Early attestation in a legendary genre — graded early with that caveat stated.",
+      "href": "/apostles/twelve#thomas"
+    },
+    {
+      "id": "apostles-sent-andrew-0",
+      "world": "apostles",
+      "subject": "Andrew — where he was sent",
+      "text": "Assigned Scythia — the steppe country north of the Black Sea — in the earliest surviving mission list.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Origen, quoted in Eusebius, Church History 3.1 (~240)",
+          "url": "https://www.newadvent.org/fathers/250103.htm"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#andrew"
+    },
+    {
+      "id": "apostles-sent-bartholomew-0",
+      "world": "apostles",
+      "subject": "Bartholomew — where he was sent",
+      "text": "Reached 'India' — when the teacher Pantaenus traveled there a century on, believers showed him a Hebrew Matthew they said Bartholomew had left them.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Eusebius, Church History 5.10, on Pantaenus (~180s)",
+          "url": "https://www.newadvent.org/fathers/250105.htm"
+        }
+      ],
+      "refs": [],
+      "limit": "'India' in Roman mouths could stretch from Arabia to the subcontinent; the report is early, its geography loose.",
+      "href": "/apostles/twelve#bartholomew"
+    },
+    {
+      "id": "apostles-sent-bartholomew-1",
+      "world": "apostles",
+      "subject": "Bartholomew — where he was sent",
+      "text": "Evangelized Armenia with Thaddaeus — the founding claim of the Armenian Apostolic Church, which calls the pair its first illuminators.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Armenian national histories (Movses Khorenatsi, 5th century) carrying older tradition",
+          "url": "https://www.newadvent.org/cathen/02313c.htm"
+        }
+      ],
+      "refs": [],
+      "limit": "Late by the measure this room uses — and load-bearing for an entire nation's church, which made Christianity its state faith in 301.",
+      "href": "/apostles/twelve#bartholomew"
+    },
+    {
+      "id": "apostles-sent-james-alphaeus-0",
+      "world": "apostles",
+      "subject": "James of Alphaeus — where he was sent",
+      "text": "Later lists send him to Egypt; the claims are late, thin, and tangled with the other Jameses.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Late martyrologies only",
+          "url": "https://www.newadvent.org/cathen/08280a.htm"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#james-alphaeus"
+    },
+    {
+      "id": "apostles-sent-james-zebedee-0",
+      "world": "apostles",
+      "subject": "James of Zebedee — where he was sent",
+      "text": "Stayed with the Jerusalem church; the sword found him before any road did. The Spain mission behind Santiago de Compostela first appears in seventh-century lists.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "scripture"
+      },
+      "sources": [
+        {
+          "label": "Acts 12:1–2 for Jerusalem",
+          "url": "https://www.newadvent.org/cathen/08279b.htm"
+        },
+        {
+          "label": "the Breviarium Apostolorum (~600s) for Spain"
+        }
+      ],
+      "refs": [],
+      "limit": "The pilgrimage is real history; the mission it commemorates is late tradition, and the two are kept separate here.",
+      "href": "/apostles/twelve#james-zebedee"
+    },
+    {
+      "id": "apostles-sent-john-0",
+      "world": "apostles",
+      "subject": "John — where he was sent",
+      "text": "Settled at Ephesus and taught into extreme old age; Polycarp of Smyrna was remembered as his direct student.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Irenaeus, Against Heresies 3.1.1 and his letter to Florinus (~180)",
+          "url": "https://www.newadvent.org/fathers/0103301.htm"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#john"
+    },
+    {
+      "id": "apostles-sent-matthew-0",
+      "world": "apostles",
+      "subject": "Matthew — where he was sent",
+      "text": "Later lists scatter him — 'Ethiopia' in some, Persia in others. The traditions conflict and none is early.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Rufinus and Socrates Scholasticus (4th–5th century) for Ethiopia",
+          "url": "https://www.newadvent.org/cathen/10056b.htm"
+        }
+      ],
+      "refs": [],
+      "limit": "Where the sources disagree, this site shows the disagreement instead of picking a winner. And 'Ethiopia' is itself a loose toponym in these legends — the African kingdom, or the Caucasus coast the Matthias traditions mean by the same word.",
+      "href": "/apostles/twelve#matthew"
+    },
+    {
+      "id": "apostles-sent-matthias-0",
+      "world": "apostles",
+      "subject": "Matthias — where he was sent",
+      "text": "Later tradition sends him to 'Ethiopia' — by which the source means the Caucasus coast — or leaves him in Judea; the accounts conflict and confuse him with Matthew.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Acts of Andrew and Matthias (~400s), a late legend",
+          "url": "https://www.newadvent.org/cathen/10066a.htm"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#matthias"
+    },
+    {
+      "id": "apostles-sent-peter-0",
+      "world": "apostles",
+      "subject": "Peter — where he was sent",
+      "text": "Worked from Jerusalem outward through Judea, Samaria, and Antioch; his own letter writes from 'Babylon' — the early church's code for Rome.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "1 Peter 5:13",
+          "url": "https://www.newadvent.org/fathers/0107.htm"
+        },
+        {
+          "label": "Ignatius, To the Romans 4 (~110)"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#peter"
+    },
+    {
+      "id": "apostles-sent-philip-0",
+      "world": "apostles",
+      "subject": "Philip — where he was sent",
+      "text": "Ended at Hierapolis in Phrygia — one of the earliest hard geographic claims for any apostle, from a bishop writing within living memory of the region.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Polycrates of Ephesus (~190) and Papias' circle, both preserved in Eusebius, Church History 3.31 and 3.39",
+          "url": "https://www.newadvent.org/fathers/250103.htm"
+        }
+      ],
+      "refs": [],
+      "limit": "Even here the two-Philips problem shadows the sources, and honest readers keep it in view.",
+      "href": "/apostles/twelve#philip"
+    },
+    {
+      "id": "apostles-sent-simon-zealot-0",
+      "world": "apostles",
+      "subject": "Simon the Zealot — where he was sent",
+      "text": "The later lists scatter him — Egypt, north Africa, Persia with Thaddaeus, even Britain in the latest legends — and agree on nothing.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "No source before the late martyrologies and Pseudo-Abdias (~6th century)",
+          "url": "https://www.newadvent.org/cathen/13796b.htm"
+        }
+      ],
+      "refs": [],
+      "href": "/apostles/twelve#simon-zealot"
+    },
+    {
+      "id": "apostles-sent-thaddaeus-0",
+      "world": "apostles",
+      "subject": "Thaddaeus — where he was sent",
+      "text": "Went east — Eusebius preserves the Edessa story of a Thaddaeus who healed king Abgar, though he calls that man one of the seventy, not the twelve. The two Thaddaei have been tangled ever since.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Eusebius, Church History 1.13 (~320), from the Edessa archives",
+          "url": "https://www.newadvent.org/fathers/250101.htm"
+        }
+      ],
+      "refs": [],
+      "limit": "Early testimony, uncertain referent — the grade belongs to the story, not necessarily to this seat.",
+      "href": "/apostles/twelve#thaddaeus"
+    },
+    {
+      "id": "apostles-sent-thaddaeus-1",
+      "world": "apostles",
+      "subject": "Thaddaeus — where he was sent",
+      "text": "Evangelized Armenia with Bartholomew; the monastery bearing his name in the Armenian highlands claims to stand on his grave, rebuilt over a shrine tradition dates to 68 AD.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "late"
+      },
+      "sources": [
+        {
+          "label": "Armenian national histories (5th century)",
+          "url": "https://whc.unesco.org/en/list/1262/"
+        },
+        {
+          "label": "St. Thaddeus Monastery, a UNESCO World Heritage site"
+        }
+      ],
+      "refs": [],
+      "limit": "Late by this room's measure, and the founding memory of the Armenian Apostolic Church.",
+      "href": "/apostles/twelve#thaddaeus"
+    },
+    {
+      "id": "apostles-sent-thomas-0",
+      "world": "apostles",
+      "subject": "Thomas — where he was sent",
+      "text": "Assigned Parthia in the earliest mission list; the fuller tradition carries him to the Malabar coast of India, where the Mar Thoma churches have claimed him as founder for as long as records exist.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "early"
+      },
+      "sources": [
+        {
+          "label": "Origen via Eusebius, Church History 3.1 (Parthia)",
+          "url": "https://www.newadvent.org/fathers/250103.htm"
+        },
+        {
+          "label": "Acts of Thomas (~220) and the continuous Kerala tradition (India)"
+        }
+      ],
+      "refs": [],
+      "limit": "The Acts of Thomas is a novel, not a report — but it is an early novel, and first-century sea lanes to Kerala are documented trade routes. India's claim is the strongest eastern tradition any apostle has.",
+      "href": "/apostles/twelve#thomas"
+    }
+  ]
+}

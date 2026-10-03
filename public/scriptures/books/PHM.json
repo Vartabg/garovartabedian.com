@@ -1,0 +1,350 @@
+{
+  "book": "PHM",
+  "bookName": "Philemon",
+  "oneLine": "A masterwork of apostolic persuasion: Paul writes from prison to a slave owner, appealing for a runaway or estranged slave to be received as a beloved brother.",
+  "orient": "Philemon is the shortest of Paul's letters, spanning 25 verses and roughly 430 words in the English text hosted here. Unlike Paul's doctrinal treatises to broad civic congregations, this is an intensely personal yet publicly read letter written from prison. It concerns Onesimus, an enslaved man who had become separated from his master Philemon and, while with the imprisoned apostle, became a Christian believer. Paul sends Onesimus back, but not as an ordinary returning slave. With extraordinary rhetorical tact, Paul urges Philemon to receive Onesimus 'no longer as a slave, but more than a slave, a beloved brother' (v. 16), asking Philemon to welcome him as he would welcome Paul himself.",
+  "whereYouAre": "The setting is the mid-first-century Roman Empire (c. AD 55–62), where institutional slavery was legally absolute and socially ubiquitous. Slaves had no legal rights, and a master possessed full power of punishment, branding, or execution over an unauthorized absence or financial loss. Paul writes from chains (likely in Rome, Ephesus, or Caesarea) to Philemon, a wealthy Christian in Colossae whose household hosted a local assembly. By addressing the letter not just to Philemon privately but also to Apphia, Archippus, and the entire house church, Paul places a private domestic dispute within the moral gaze and accountability of the Christian community.",
+  "facts": {
+    "writtenBy": "The apostle Paul, explicitly named with his companion Timothy in verse 1, and verified by Paul's personal handwritten autograph in verse 19.",
+    "writtenWhen": "Generally dated to Paul's imprisonment in Rome (c. AD 60–62), though some scholars propose an earlier imprisonment in Ephesus (c. AD 53–55) or Caesarea (c. AD 57–59).",
+    "writtenFor": "Philemon, a Colossian Christian leader and slaveholder, along with Apphia, Archippus, and the house church meeting in Philemon's home.",
+    "place": "Written from Roman imprisonment (Rome, Ephesus, or Caesarea) and dispatched to Colossae in Asia Minor (modern Turkey).",
+    "covers": "A single epistolary appeal: opening thanksgiving for Philemon's love (vv. 1–7); the core plea for Onesimus's reception as a brother and Paul's pledge to cover any debt (vv. 8–20); and concluding personal plans, greetings from co-workers, and benediction (vv. 21–25).",
+    "size": "1 chapter, 25 verses, about 430 words in the hosted World English Bible text."
+  },
+  "language": {
+    "writtenIn": "Koine Greek. The letter is an elegant example of Hellenistic epistolary rhetoric, blending intimacy, diplomatic courtesy, wordplay, and persuasive social leverage.",
+    "register": "Private yet public deliberative rhetoric (*persuasio*). Paul deliberately foregoes authoritative apostolic commands in favor of an appeal based on Christian love and mutual partnership, while making his expectations transparently clear.",
+    "spokenWorld": "First-century Greco-Roman Asia Minor. Greek was the dominant language of commerce, literature, and urban Christian mission across the eastern Roman provinces, while Roman civil and property law governed household relations and slavery.",
+    "readerSignal": "Paul plays with words and names in Greek: the name Onesimus (*Onēsimos*, meaning 'useful' or 'profitable') becomes the pivot for a pun on formerly 'useless' (*achrēstos*) versus now 'useful' (*euchrēstos*) in verse 11, and the verb 'benefit/joy' (*onaimēn*) in verse 20.",
+    "englishLayer": "The World English Bible translates the Greek text into modern English. In verse 16, it renders *doulos* as 'slave'; in verses 7, 12, and 20, it translates the visceral Greek word *splanchna* (literally internal organs / bowels, meaning deep seat of emotion and affection) as 'hearts'.",
+    "textualHistory": [
+      {
+        "label": "The composed Greek epistle",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Composed in Koine Greek by Paul. Its inclusion in early collections of the Pauline corpus (such as Marcion's Apostolikon and the Muratorian Fragment) confirms its early circulation and canonical status despite its brief, personal scope.",
+        "sourceIds": [
+          "p87-manuscript",
+          "fitzmyer-philemon",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "Ancient manuscript witnesses",
+        "language": "Koine Greek",
+        "role": "transmission",
+        "description": "Preserved in the earliest extant papyrus witness $\\mathfrak{P}^{87}$ (late 2nd / early 3rd century) and major 4th-century uncial codices (Sinaiticus, Vaticanus, Alexandrinus), demonstrating exceptional textual stability across transmission.",
+        "sourceIds": [
+          "p87-manuscript",
+          "fitzmyer-philemon"
+        ]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The hosted text translates the Greek original directly, preserving the legal and relational vocabulary.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "ἐπιτάσσω vs. παρακαλῶ: Command versus voluntary love",
+        "original": "παρρησίαν ἔχων … ἐπιτάσσειν σοι … διὰ τὴν ἀγάπην μᾶλλον παρακαλῶ — parrēsian echōn … epitassein soi … dia tēn agapēn mallon parakalō — “though I have all boldness in Christ to command you … yet for love’s sake I rather appeal to you”",
+        "explanation": "Paul establishes a deliberate rhetorical contrast between apostolic authority (*epitassō*, to command or order) and pastoral persuasion (*parakalō*, to appeal or encourage). By explicitly renouncing coercion, Paul places the decision upon Philemon's conscience, arguing in verse 14 that goodness must not be forced by necessity (*anankē*) but generated by free will (*hekousion*).",
+        "translationNote": "The WEB accurately renders the shift from 'command you that which is appropriate' to 'for love’s sake I rather appeal to you.'",
+        "caution": "Paul's renunciation of apostolic command is a rhetorical choice, not a denial that he possessed authority. The subtlety of his appeal increases the moral obligation rather than lessening it.",
+        "refs": [
+          "1:8",
+          "1:9",
+          "1:14"
+        ],
+        "sourceIds": [
+          "fitzmyer-philemon",
+          "barth-blankenhorn-philemon",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "The triple pun on Onesimus: ἄχρηστος / εὔχρηστος / ὀναίμην",
+        "original": "Ὀνήσιμον, τὸν ποτέ σοι ἄχρηστον νυνὶ δὲ σοὶ καὶ ἐμοὶ εὔχρηστον — Onēsimon, ton pote soi achrēston nuni de soi kai emoi euchrēston — “Onesimus, who once was useless to you, but now is useful to you and to me”",
+        "explanation": "The slave's name Onesimus was a common slave name derived from the Greek word for 'profitable' or 'beneficial.' Paul exploits this meaning in verse 11: formerly 'useless' (*achrēstos*), Onesimus has become 'truly useful' (*euchrēstos*) in Christ. In verse 20, Paul reinforces the wordplay with the verb *onaimēn* ('let me have profit/joy from you in the Lord').",
+        "translationNote": "English translations can convey 'useless' and 'useful,' but the underlying link to the proper name Onesimus requires explanatory footnotes.",
+        "caution": "The wordplay is an ancient rhetorical device demonstrating literary skill; it is not flippancy regarding Onesimus's vulnerable legal standing.",
+        "refs": [
+          "1:10",
+          "1:11",
+          "1:20"
+        ],
+        "sourceIds": [
+          "fitzmyer-philemon",
+          "barclay-philemon",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Legal promissory formula: The handwritten bond",
+        "original": "ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ ἀποτίσω — egō Paulos egrapsa tē emē cheiri, egō apotisō — “I, Paul, write this with my own hand: I will repay it”",
+        "explanation": "In verse 19, Paul shifts from dictation to writing in his own hand, adopting the formal legal language of a Hellenistic promissory note (*cheirographon*). By writing 'I will repay it' (*egō apotisō*), Paul legally assumes any debt or property loss Onesimus caused, while immediately reminding Philemon of an unpayable spiritual debt: 'you owe to me even your own self besides.'",
+        "translationNote": "The parenthetical syntax in the WEB reproduces Paul's rapid rhetorical transition from legal guarantor to spiritual father.",
+        "caution": "Paul's financial guarantee does not mean Onesimus was legally guilty of theft; ancient runaway or displaced slaves routinely faced claims of lost labor and stolen travel funds.",
+        "refs": [
+          "1:18",
+          "1:19"
+        ],
+        "sourceIds": [
+          "fitzmyer-philemon",
+          "barth-blankenhorn-philemon",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Redefining status: From δοῦλος (slave) to ἀδελφὸς ἀγαπητός (beloved brother)",
+        "original": "οὐκέτι ὡς δοῦλον ἀλλὰ ὑπὲρ δοῦλον, ἀδελφὸν ἀγαπητόν — ouketi hōs doulon alla hyper doulon, adelphon agapēton — “no longer as a slave, but more than a slave, a beloved brother”",
+        "explanation": "Verse 16 contains the theological core of the letter. Paul does not merely request leniency; he introduces a new category that explodes the hierarchical assumptions of Roman slavery. Onesimus is to be received 'both in the flesh and in the Lord'—in concrete social reality as well as spiritual status—as a beloved brother.",
+        "translationNote": "The translation 'more than a slave' translates *hyper doulon* (above/beyond a slave).",
+        "caution": "The letter does not call for general societal abolition of Roman slavery; rather, it introduces a relational reality within the Christian community that undermined the moral legitimacy of human mastery over brothers.",
+        "refs": [
+          "1:15",
+          "1:16",
+          "1:17"
+        ],
+        "sourceIds": [
+          "glancy-slavery",
+          "barclay-philemon",
+          "fitzmyer-philemon",
+          "hosted-web"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek terms Philemon lets you hear",
+    "examples": [
+      {
+        "ref": "1:9",
+        "form": "parakalō",
+        "meaning": "“I appeal to you / I urge you”",
+        "why": "The central communicative stance of the letter, choosing persuasive relational appeal over authoritarian apostolic decree.",
+        "sourceIds": [
+          "fitzmyer-philemon",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:11",
+        "form": "achrēston / euchrēston",
+        "meaning": "“useless / useful”",
+        "why": "Paul's clever Greek paronomasia playing on the name Onesimus ('Profitable') to describe his spiritual transformation.",
+        "sourceIds": [
+          "barclay-philemon",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:16",
+        "form": "adelphon agapēton",
+        "meaning": "“a beloved brother”",
+        "why": "The new social and spiritual reality that redefines Onesimus's relationship to his former master.",
+        "sourceIds": [
+          "glancy-slavery",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:19",
+        "form": "egō Paulos egrapsa tē emē cheiri",
+        "meaning": "“I, Paul, write this with my own hand”",
+        "why": "Paul's handwritten signature and legally binding promissory formula guaranteeing any debt.",
+        "sourceIds": [
+          "fitzmyer-philemon",
+          "hosted-web"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Personal Apostolic Letter / Hellenistic Deliberative Letter of Recommendation",
+    "how": "Read Philemon as a carefully calibrated piece of ancient social diplomacy. Notice how Paul moves from personal affection to spiritual partnership, making an appeal that is almost impossible for Philemon to refuse while leaving the formal choice in Philemon's hands."
+  },
+  "cast": [
+    {
+      "name": "Paul",
+      "who": "The apostle to the Gentiles, writing as an aged prisoner in chains for Christ Jesus, mediating between an enslaved convert and his Christian master."
+    },
+    {
+      "name": "Philemon",
+      "who": "A wealthy Christian resident of Colossae, leader of a house church, and legal master of Onesimus."
+    },
+    {
+      "name": "Onesimus",
+      "who": "An enslaved man who departed from Philemon, encountered Paul in prison, became a Christian believer, and is sent back as a 'beloved brother.'"
+    },
+    {
+      "name": "Apphia and Archippus",
+      "who": "Colossian believers named alongside Philemon in the address; Apphia likely Philemon's wife or a prominent leader, and Archippus a fellow worker in ministry."
+    },
+    {
+      "name": "The House Assembly",
+      "who": "The local Christian community meeting in Philemon's home, who heard this letter read aloud."
+    },
+    {
+      "name": "Paul's Imprisonment Companions",
+      "who": "Timothy, Epaphras, Mark, Aristarchus, Demas, and Luke, who send greetings to the Colossian community."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "The Appeal for Onesimus and the Transformative Power of Christian Brotherhood",
+      "chapters": "1",
+      "precise": "1:1–25",
+      "note": "A 25-verse letter: greeting to the house church and thanksgiving for Philemon's faith (vv. 1–7); the tactful appeal to receive Onesimus not as a slave but as a beloved brother (vv. 8–16); Paul's handwritten debt guarantee (vv. 17–20); and closing requests, greetings, and blessing (vv. 21–25)."
+    }
+  ],
+  "purpose": "Philemon demonstrates how the gospel reshapes interpersonal relationships across rigid social hierarchies. Rather than using institutional power or issuing legal decrees, Paul models how Christian love transforms an enslaved runaway and a slaveholding master into equal brothers in Christ, creating a new family dynamic that fundamentally challenges the dehumanizing logic of Roman slavery.",
+  "snags": [
+    {
+      "snag": "Why doesn't Paul explicitly demand the abolition of slavery?",
+      "help": "First-century Christians were a tiny, politically powerless minority within the vast Roman Empire, lacking any mechanism to change imperial Roman law. Paul focuses on transforming the immediate relationships within the church community, demanding that Philemon treat Onesimus as a brother in Christ, which subverted the master-slave dynamic from within."
+    },
+    {
+      "snag": "Did Onesimus steal money before running away?",
+      "help": "Verse 18 mentions 'if he has wronged you at all or owes you anything,' which has led some commentators to assume Onesimus stole property. However, in Roman law, any enslaved person who departed without permission was considered to have deprived their master of labor value and generated expense, regardless of whether physical theft occurred."
+    },
+    {
+      "snag": "Was Onesimus a fugitive slave (*fugitivus*) or seeking mediation?",
+      "help": "Scholars debate whether Onesimus fled as a rebellious runaway or deliberately sought out Paul as a known friend of his master to act as a legal mediator (*amicus domini*), an established practice in Roman culture."
+    },
+    {
+      "snag": "What does Paul mean by 'knowing that you will do even beyond what I say' in verse 21?",
+      "help": "Readers debate whether Paul is subtly hinting that Philemon should legally emancipate Onesimus, or if he is asking Philemon to send Onesimus back to assist Paul's missionary work."
+    }
+  ],
+  "debates": [
+    {
+      "question": "What is the legal and social status of Onesimus in this letter?",
+      "settled": "Onesimus was legally an enslaved man belonging to Philemon who had become separated from his master's household.",
+      "positions": [
+        {
+          "view": "A runaway slave (fugitivus) who encountered Paul by circumstance",
+          "grounds": "The traditional view held since antiquity: Onesimus fled Philemon's home, possibly after a theft or grievance, made his way to a major urban center where Paul was imprisoned, and was converted."
+        },
+        {
+          "view": "A slave deliberately seeking an amicus domini (friend of the master) for mediation",
+          "grounds": "Under Roman legal custom, an enslaved person in dispute with a master could seek sanctuary with a friend or colleague of the master to negotiate reconciliation without being legally classified as a fugitive."
+        }
+      ],
+      "soWhat": "The mediation hypothesis highlights Paul's role within Roman social conventions, while the fugitive view emphasizes the dramatic conversion and return of a vulnerable runaway."
+    },
+    {
+      "question": "Does Paul implicitly ask for Onesimus's legal emancipation (manumission)?",
+      "settled": "Paul explicitly requests that Onesimus be received 'no longer as a slave, but more than a slave, a beloved brother' (v. 16) and expresses confidence that Philemon will do 'even beyond what I say' (v. 21).",
+      "positions": [
+        {
+          "view": "Paul is urging formal legal manumission",
+          "grounds": "Treating Onesimus as a brother 'both in the flesh and in the Lord' (v. 16) and doing 'beyond what I say' (v. 21) point toward legal freedom so Onesimus can serve in the gospel without enslavement."
+        },
+        {
+          "view": "Paul is asking for release to missionary service with Paul",
+          "grounds": "Verses 13–14 emphasize that Paul wanted to keep Onesimus to serve him on Philemon's behalf; the request is for permission to retain Onesimus as a ministry co-worker."
+        },
+        {
+          "view": "Paul is transforming social status within the household without demanding legal change",
+          "grounds": "The letter focuses on relational equality in the Christian house church, demonstrating how brotherly love transcends Roman legal categories without requiring formal imperial paperwork."
+        }
+      ],
+      "soWhat": "How one reads this text impacts historical understanding of early Christian ethics regarding Roman social institutions."
+    },
+    {
+      "question": "Where was Paul imprisoned when he wrote Philemon?",
+      "settled": "Paul was in chains (*en tois desmois*) accompanied by Timothy, Luke, Mark, Epaphras, and others.",
+      "positions": [
+        {
+          "view": "Rome (c. AD 60–62)",
+          "grounds": "The traditional view: fits the presence of the large circle of co-workers mentioned in Colossians and Acts 28 during Paul's Roman custody."
+        },
+        {
+          "view": "Ephesus (c. AD 53–55)",
+          "grounds": "Ephesus was geographically close to Colossae (about 100 miles), making travel for Onesimus and regular communication far more plausible than the 1,000-mile journey to Rome."
+        },
+        {
+          "view": "Caesarea (c. AD 57–59)",
+          "grounds": "Paul's two-year custody in Caesarea recorded in Acts 23–24 provided opportunity for letters and visitor access."
+        }
+      ],
+      "soWhat": "An Ephesian provenance places Philemon during Paul's active third missionary journey, while a Roman provenance places it near the end of his life."
+    }
+  ],
+  "sources": [
+    {
+      "id": "fitzmyer-philemon",
+      "label": "Joseph A. Fitzmyer, The Letter to Philemon (Anchor Yale Bible)",
+      "says": "A comprehensive commentary providing detailed Greek textual analysis, the history of Roman slavery and amicus domini custom, and the rhetorical structure of Paul's appeal.",
+      "url": "https://yalebooks.yale.edu/book/9780300140552/the-letter-to-philemon/"
+    },
+    {
+      "id": "barth-blankenhorn-philemon",
+      "label": "Markus Barth and Helmut Blankenhorn, The Letter to Philemon (Eerdmans)",
+      "says": "An extensive theological and historical study examining the social dynamics of the house church, Paul's promissory note, and the ethical implications for slavery.",
+      "url": "https://en.wikipedia.org/wiki/Epistle_to_Philemon"
+    },
+    {
+      "id": "barclay-philemon",
+      "label": "John M. G. Barclay, Colossians and Philemon (T&T Clark)",
+      "says": "Explores the social world of Asia Minor, Pauline theology of grace, and how the redefinition of Onesimus as brother destabilized the ancient master-slave hierarchy.",
+      "url": "https://www.bloomsbury.com/uk/colossians-and-philemon-9780567085603/"
+    },
+    {
+      "id": "glancy-slavery",
+      "label": "Jennifer A. Glancy, Slavery in Early Christianity (Oxford University Press)",
+      "says": "A seminal historical study examining the brutal physical and legal realities of Roman slavery and analyzing the complex stance of Pauline letters toward enslaved bodies.",
+      "url": "https://academic.oup.com/book/7238"
+    },
+    {
+      "id": "p87-manuscript",
+      "label": "Papyrus 87 (P87 / P.Colon. theol. 12)",
+      "says": "The earliest extant manuscript fragment containing text from Philemon (vv. 13–15, 24–25), dated to the late 2nd or early 3rd century.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_87"
+    },
+    {
+      "id": "hosted-web",
+      "label": "The text on this site",
+      "says": "Word counts, verse counts, Greek word studies, and all reference citations were checked directly against the World English Bible text hosted here."
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read the entire 25-verse letter in one sitting to appreciate Paul's delicate balance of warmth, humor, spiritual depth, and social pressure.",
+      "refs": [
+        "1:1",
+        "1:14",
+        "1:21"
+      ]
+    },
+    {
+      "tip": "Notice that Paul addresses the letter not only to Philemon privately, but to the entire church meeting in his house, making the response a matter of public community witness.",
+      "refs": [
+        "1:1",
+        "1:2"
+      ]
+    },
+    {
+      "tip": "Watch how Paul uses the name Onesimus ('Useful') to pivot from his past as a slave to his present as a Christian brother.",
+      "refs": [
+        "1:10",
+        "1:11",
+        "1:20"
+      ]
+    },
+    {
+      "tip": "Pay attention to verse 19, where Paul shifts to his own handwriting to offer a legal promissory guarantee for any debt Onesimus owes.",
+      "refs": [
+        "1:18",
+        "1:19"
+      ]
+    }
+  ],
+  "next": "Read Colossians next — which was carried alongside Philemon by Tychicus and Onesimus (Col 4:7–9) and names many of the same companions (Mark, Aristarchus, Demas, Luke, Archippus). Then read Galatians 3:26–29 and 1 Corinthians 7:20–24 to see how Paul addresses social status and spiritual identity across his letters.",
+  "traditionNote": "Philemon is placed last among the letters addressed to named individuals in the Pauline corpus across all Christian traditions (following 1–2 Timothy and Titus)."
+}

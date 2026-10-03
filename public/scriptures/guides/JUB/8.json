@@ -1,0 +1,238 @@
+{
+  "book": "JUB",
+  "chapter": 8,
+  "bookName": "Jubilees",
+  "summary": "Kainam discovers and secretly copies an omen text associated with the Watchers, while the genealogy moves toward Peleg. Noah then allots the earth among Shem, Ham, and Japheth; lengthy boundary descriptions give Shem the central sacred region and the other brothers their own portions.",
+  "whyItMatters": "The chapter links dangerous inherited knowledge, family descent, geography, and sacred places in the post-flood account.",
+  "context": {
+    "author": "Within the book, the angel of the presence dictates the account to Moses; the historical writer is unnamed.",
+    "audience": "Israel is addressed through Moses in the book’s frame; the specific first historical audience is not identified.",
+    "date": "The narrative places the revelation at Sinai; the historical Hebrew work is usually dated to the second century BCE, without an established exact year.",
+    "setting": "Generations after Noah, with a family genealogy and a staged division of lands around him.",
+    "literaryForm": "Genealogy followed by an ancient geographical allotment and sacred-place interpretation."
+  },
+  "contextSourceIds": [
+    "hosted-charles",
+    "oxford-endres"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Noah’s previous speech has warned his descendants to preserve righteousness and pass on the ancestral commands.",
+      "verseRefs": [
+        "7:20-39"
+      ]
+    },
+    "here": {
+      "text": "The descendants expand, a Watchers’ text resurfaces, and Noah assigns distinct lands to his three sons.",
+      "verseRefs": [
+        "8:1-30"
+      ]
+    },
+    "after": {
+      "text": "Each brother subdivides his portion among his sons, and Noah binds the families by an oath against taking another share.",
+      "verseRefs": [
+        "9:1-15"
+      ]
+    }
+  },
+  "outline": [
+    {
+      "heading": "Kainam and the Watchers’ writing",
+      "verses": "1-4",
+      "note": "A secret transcription introduces knowledge treated as sinful."
+    },
+    {
+      "heading": "Generations to Peleg",
+      "verses": "5-9",
+      "note": "Births and marriages lead to the division of the earth."
+    },
+    {
+      "heading": "Shem’s portion and holy places",
+      "verses": "10-21",
+      "note": "Noah draws lots, describes boundaries, and blesses Shem."
+    },
+    {
+      "heading": "Ham’s portion",
+      "verses": "22-24",
+      "note": "Southern boundaries define Ham’s inheritance."
+    },
+    {
+      "heading": "Japheth’s portion",
+      "verses": "25-30",
+      "note": "Northern boundaries and climate complete the division."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "8:3",
+      "text": "And he found a writing which former (generations) had carved on the rock, and he read what was thereon, and he transcribed it and sinned owing to it; for it contained the teaching of the Watchers in accordance with which they used to observe the omens of the sun and moon and stars in all the signs of heaven.",
+      "why": "The warning about a copied Watchers' text contrasts with the approved heavenly record that guides this book."
+    },
+    {
+      "ref": "8:19",
+      "text": "And he knew that the Garden of Eden is the holy of holies, and the dwelling of the Lord, and Mount Sinai the centre of the desert, and Mount Zion -the centre of the navel of the earth: these three were created as holy places facing each other.",
+      "why": "The sacred geography is made explicit by naming Eden, Sinai, and Zion together."
+    }
+  ],
+  "themes": [
+    "secret omen writing",
+    "Peleg and division",
+    "Noah’s land lots",
+    "Shem’s sacred center",
+    "three inherited regions"
+  ],
+  "questions": [
+    {
+      "category": "context",
+      "question": "Why does Kainam hide the writing he found?",
+      "answer": "The account says it contained Watchers’ teaching about omens of the heavenly lights and that copying it was a sin. He fears Noah’s anger, which shows the book treating this use of celestial signs differently from its own calendar instruction.",
+      "verseRefs": [
+        "8:1-4"
+      ],
+      "id": "q1",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What are “omens” in the copied text?",
+      "answer": "They are signs read from the sun, moon, and stars to interpret events. The chapter calls the teaching a Watchers’ practice; it does not reproduce a method for using those signs.",
+      "verseRefs": [
+        "8:2-4"
+      ],
+      "id": "q2",
+      "relatedVerses": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "category": "context",
+      "question": "Why is Peleg’s name linked to the earth’s division?",
+      "answer": "The narrator explains the name by placing his birth when Noah’s descendants began dividing lands. It is an internal word-story, not independent proof of where or when a historical border was drawn.",
+      "verseRefs": [
+        "8:7-10"
+      ],
+      "id": "q3",
+      "relatedVerses": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Are these boundary descriptions a modern map of the continents?",
+      "answer": "The passage uses inherited names, rivers, seas, and directions to mark the three sons’ portions. Several labels do not correspond neatly to modern boundaries, so the point is the book’s ancient land scheme rather than a precise current map.",
+      "verseRefs": [
+        "8:10-17",
+        "8:22-30"
+      ],
+      "id": "q4",
+      "relatedVerses": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "category": "theology",
+      "question": "Why is Shem’s share described as blessed?",
+      "answer": "Noah recalls his earlier blessing of Shem and identifies Eden, Sinai, and Zion within the sacred center of this account. The chapter presents the allotment as providential within its story, not as a license to seize another family’s land.",
+      "verseRefs": [
+        "8:17-21"
+      ],
+      "id": "q5",
+      "relatedVerses": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What does “lot” mean when the sons divide the earth?",
+      "answer": "It is an allotted share drawn from writings in Noah’s possession. The procedure gives each son a named inheritance and prepares for the oath about respecting those boundaries in the next chapter.",
+      "verseRefs": [
+        "8:10-12"
+      ],
+      "id": "q6",
+      "relatedVerses": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "category": "context",
+      "question": "Why does the chapter return to family names before its geography?",
+      "answer": "The genealogy carries the story from Arpachshad through Eber to Peleg, whose birth introduces division. The land catalogue is thus tied to descendants rather than appearing as an unrelated list of places.",
+      "verseRefs": [
+        "8:1-11"
+      ],
+      "id": "q7",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "omens",
+      "def": "Signs interpreted from heavenly bodies in the Watchers’ forbidden teaching as described here."
+    },
+    {
+      "term": "inheritance",
+      "def": "The territorial share assigned to a family line in Noah’s division of the earth."
+    }
+  ],
+  "readingContextSource": {
+    "translation": "charles",
+    "textHash": "c819c59f4b6b16a0782d2a6f7f4bdd574e018a3458282ebc59f3de8ed78f846c"
+  },
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "e131a270643e5d5f0c137f510f13c1ccf71dbfae3b369a9f32311197493b0d52",
+    "generatedAt": "2026-09-29T00:33:02.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent cross-review",
+  "sourceIds": [
+    "charles"
+  ]
+}

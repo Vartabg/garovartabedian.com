@@ -1,0 +1,86 @@
+.explorer { margin: 2.5rem 0; min-width: 0; }
+.heading { margin-bottom: 1.3rem; }
+.explorer .heading h2 { margin-top: 0.25rem; font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1.15; text-transform: none; letter-spacing: -0.035em; }
+.heading p:last-child { color: var(--muted); font-size: 0.9rem; max-width: 65ch; }
+.atlas { --map-bg: #11242b; --map-line: #34484e; --map-ink: #edf3ed; overflow: hidden; border: 1px solid #34484e; border-radius: 0.8rem; color: var(--map-ink); background: var(--map-bg); box-shadow: 0 14px 40px #0c1e2312; }
+.atlas [data-family="law"] { --family: #eaa78d; }
+.atlas [data-family="poetry"] { --family: #e9c276; }
+.atlas [data-family="prophets"] { --family: #88c9bf; }
+.atlas [data-family="gospels"] { --family: #b9b9ee; }
+.controls { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) auto; align-items: end; gap: 1rem; padding: 1.25rem; border-bottom: 1px solid var(--map-line); background: #172c33; }
+.controls label, .threadSearch { display: grid; gap: 0.4rem; font-size: 0.78rem; font-weight: 600; }
+.controls label { color: #c2d3d4; }
+.controls select, .resetMap { width: 100%; min-width: 0; min-height: 2.75rem; padding: 0.55rem 0.65rem; font: inherit; font-size: 0.78rem; color: var(--map-ink); background: #11242b; border: 1px solid #506369; border-radius: 0.3rem; cursor: pointer; }
+.controls select:disabled { opacity: 0.55; cursor: default; }
+.resetMap { display: flex; align-items: center; gap: 0.5rem; width: auto; background: transparent; border-color: transparent; text-align: left; }
+.resetMap:disabled { opacity: 0.55; cursor: default; }
+.resetMap:not(:disabled):hover { border-color: #81999b; }
+.atlas :is(button, select):focus-visible { outline: 3px solid #f3d38c; outline-offset: 4px; }
+.mapViewport { container-type: inline-size; scroll-margin-top: 6rem; }
+.networkCanvas { position: relative; aspect-ratio: 1200 / 620; isolation: isolate; background-image: radial-gradient(ellipse at 12% 42%, #bd9a4520, transparent 45%), radial-gradient(ellipse at 55% 42%, #6abbba12, transparent 40%), radial-gradient(ellipse at 88% 58%, #9799d81a, transparent 45%), linear-gradient(#b8d2d405 1px, transparent 1px), linear-gradient(90deg, #b8d2d405 1px, transparent 1px); background-size: auto, auto, auto, 32px 32px, 32px 32px; }
+.desktopDrawing, .mobileDrawing { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.mobileDrawing { display: none; }
+.connection { fill: none; stroke: var(--family); stroke-linecap: round; opacity: 0.66; transition: opacity 180ms ease, stroke 180ms ease; }
+.connection[data-state="muted"] { opacity: 0.22; }
+.connection[data-state="outgoing"] { stroke: #f6d17f; opacity: 1; }
+.connection[data-state="incoming"] { stroke: #96ded7; opacity: 1; }
+.bookNode { position: absolute; left: var(--node-x); top: var(--node-y); transform: translate(-50%, -50%); display: grid; grid-template-columns: 0.7rem auto; align-items: center; column-gap: 0.5rem; row-gap: 0.1rem; min-height: 3.15rem; padding: 0.4rem 0.6rem; border: 1px solid transparent; border-radius: 0.4rem; background: #11242bf5; color: #eff3ed; font: inherit; font-size: clamp(0.82rem, 1.15vw, 1rem); font-weight: 600; line-height: 1.2; cursor: pointer; text-align: left; box-shadow: 0 0 12px 3px #11242b; transition: border-color 180ms ease, background 180ms ease; }
+.bookNode small { grid-column: 2; font-size: 0.59rem; font-weight: 400; color: #b0c4c6; white-space: nowrap; }
+.nodePin { width: 0.65rem; height: 0.65rem; border-radius: 50%; border: 2px solid var(--family); background: var(--map-bg); }
+.bookNode:hover { border-color: var(--family); background: #243940; }
+.bookNode[aria-pressed="true"] { border-color: var(--family); background: #263b40; box-shadow: 0 0 0 3px #11242b, 0 0 0 4px var(--family); z-index: 1; }
+.bookNode[aria-pressed="true"] .nodePin { background: var(--family); }
+.bookNode[data-muted="true"] { color: #b7c6c5; }
+.bookNode[data-muted="true"] .nodePin { opacity: 0.5; }
+.mapKey { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; border-top: 1px solid var(--map-line); font-size: 0.65rem; color: #c2d3d4; }
+.familyKey, .directionKey { display: flex; flex-wrap: wrap; gap: 0.65rem 1rem; }
+.familyKey > span, .directionKey > span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.familyKey i { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--family); }
+.directionKey [data-direction]::before { content: "→"; font-size: 1rem; color: #f6d17f; }
+.directionKey [data-direction="incoming"]::before { color: #96ded7; }
+.mapCaption { color: var(--muted); font-size: 0.7rem; line-height: 1.6; max-width: 90ch; margin: 0.75rem 0 1.25rem; }
+.connectionDetails { padding: 0.3rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.connectionDetails summary { display: flex; justify-content: space-between; align-items: center; padding: 0.7rem 0; gap: 1rem; list-style: none; cursor: pointer; color: var(--ink); }
+.connectionDetails summary::-webkit-details-marker { display: none; }
+.connectionDetails summary > span:first-child { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.4rem 0.75rem; }
+.connectionDetails summary small { font-size: 0.72rem; color: var(--muted); }
+.connectionDetails summary > span:last-child { font-size: 1.4rem; }
+.connectionDetails[open] summary > span:last-child { transform: rotate(45deg); }
+.resultCount { color: var(--muted); font-size: 0.8rem; margin: 1rem 0; }
+.flowList { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2rem; }
+.flowList li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.3rem 0.8rem; align-items: center; font-size: 0.8rem; }
+.flowList strong { text-align: right; }
+.flowList small { display: block; font-size: 0.6rem; font-weight: 400; color: var(--muted); }
+.flowBar { grid-column: 1 / -1; height: 3px; background: var(--accent); opacity: 0.5; }
+.legend { font-size: 0.78rem; line-height: 1.6; color: var(--muted); }
+.threadSearch input { width: 100%; min-width: 0; min-height: 2.75rem; padding: 0.6rem; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 0.4rem; }
+@container (max-width: 600px) {
+  .networkCanvas { aspect-ratio: 480 / 1100; }
+  .desktopDrawing { display: none; }
+  .mobileDrawing { display: block; }
+  .bookNode { left: var(--portrait-x); top: var(--portrait-y); font-size: 0.9rem; }
+}
+@media (min-width: 1100px) {
+  .explorer { width: calc(100% + min(14vw, 13rem, max(0px, (100vw - (var(--maxw) + 16.75rem)) / 2))); }
+}
+@media (max-width: 700px) {
+  .controls { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 0.65rem; padding: 1rem; }
+  .resetMap { grid-column: 1 / -1; justify-self: end; padding: 0.4rem 0; min-height: 2.75rem; }
+  .mapKey { padding: 1rem; }
+  .flowList { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) { .connection, .bookNode { transition: none; } }
+.pathMap { margin-top: 1.5rem; }
+.pathStops { display: flex; flex-wrap: wrap; gap: 0.5rem 0; padding: 0; list-style: none; }
+.pathStops li { flex: 1 1 6rem; display: flex; align-items: center; }
+.pathStops li:not(:last-child)::after { content: ""; flex: 0 0 1rem; height: 2px; background: var(--line); }
+.pathStops button { width: 100%; min-height: 4.5rem; border: 1px solid var(--line); border-radius: 0.5rem; padding: 0.5rem; color: var(--ink); background: var(--surface); font: inherit; font-size: 0.75rem; cursor: pointer; }
+.pathStops button span { display: block; font-size: 0.65rem; color: var(--muted); margin-bottom: 0.3rem; }
+.pathStops button[aria-pressed="true"] { border: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
+.passage { padding: 1.25rem; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 0.5rem 0.5rem 0; }
+.passage h4 { margin: 0.3rem 0; font-size: 1.35rem; }
+.passage blockquote { margin: 1rem 0; font-size: 1.1rem; line-height: 1.8; }
+.passage a, .traceThread { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: 0.85rem; }
+.pagination { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1rem; }
+.pagination button { min-height: 2.75rem; padding: 0.6rem; border: 1px solid var(--line); border-radius: 0.5rem; background: var(--surface); color: var(--accent); font: inherit; cursor: pointer; }
+.pagination button:disabled { opacity: 0.45; cursor: default; }

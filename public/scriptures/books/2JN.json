@@ -1,0 +1,329 @@
+{
+  "book": "2JN",
+  "bookName": "2 John",
+  "oneLine": "A compact pastoral postcard from 'the elder' balancing the command to love with a strict warning against hosting teachers who deny the physical incarnation of Jesus Christ.",
+  "orient": "Second John is one of the shortest books in the New Testament, spanning just 13 verses and about 245 words in the English translation hosted here. Written on a single standard papyrus sheet, it is addressed by 'the elder' to 'the chosen lady and her children'—widely recognized as a personification for a local Christian house church and its members. The letter centers on the inseparable pairing of truth and love. While urging believers to love one another by walking in God's commandments, the elder issues an urgent warning against itinerant teachers who deny that Jesus Christ came in bodily flesh, instructing the congregation not to grant them hospitality or provide them a teaching platform.",
+  "whereYouAre": "The letter reflects the life of late first-century Christian house churches in the Roman province of Asia (traditionally associated with Ephesus, c. AD 85–95). Early Christian missions relied entirely on travelling evangelists and teachers who stayed in the private homes of believers. In a house church, providing lodging and a greeting (*chairein*) was not merely private courtesy; it served as public endorsement and financial sponsorship of the teacher's message. Second John addresses the crisis that arose when visiting teachers began propagating docetic teachings—the claim that Jesus only appeared to have a physical body.",
+  "facts": {
+    "writtenBy": "Identified simply as 'the elder' (*ho presbyteros* in verse 1). Early church tradition ascribed the letter to the apostle John; scholars debate whether this was the son of Zebedee or a distinct figure known as 'John the Elder' mentioned by Papias.",
+    "writtenWhen": "Generally dated to the late first century, roughly AD 85–95, contemporaneous with 1 John and 3 John.",
+    "writtenFor": "'The chosen lady and her children' (v. 1), understood as a metaphor for a local sister congregation and its members.",
+    "place": "Traditionally associated with Ephesus or its surrounding region in western Asia Minor (modern Turkey).",
+    "covers": "A single brief epistolary cycle: greeting and thanksgiving for members walking in truth (vv. 1–4); the command to love one another through obedience (vv. 5–6); the warning against deceivers denying the incarnation and rules on hospitality (vv. 7–11); and concluding desire for face-to-face fellowship (vv. 12–13).",
+    "size": "1 chapter, 13 verses, about 245 words in the hosted World English Bible text."
+  },
+  "language": {
+    "writtenIn": "Hellenistic Koine Greek. The style is simple, direct, and marked by characteristic Johannine vocabulary: truth, love, commandment, beginning, flesh, and abiding.",
+    "register": "Pastoral authority mixed with familial warmth. The language is unadorned and rhythmic, relying on repeating core terms rather than complex subordinate syntax.",
+    "spokenWorld": "Late first-century urban Greco-Roman Asia. Greek was the shared lingua franca of Christian community life, worship, and regional epistolary exchange.",
+    "readerSignal": "The pairing of 'truth' (*alētheia*) and 'love' (*agapē*) recurs five times in the opening three verses alone, establishing that in Johannine thought, Christian love cannot be separated from theological integrity, nor truth from mutual care.",
+    "englishLayer": "The World English Bible translates the Greek text into straightforward modern English prose. In verse 7, it renders *antichristos* as 'the Antichrist'; in verse 12, it renders the Greek idiom *stoma pros stoma* (mouth to mouth) as 'face to face'.",
+    "textualHistory": [
+      {
+        "label": "The composed Greek letter",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Composed in Koine Greek on a single papyrus sheet. Due to its brevity, it was less frequently quoted by early church fathers, leading to initial debates over its canonical status in some regions before universal acceptance in the 4th century.",
+        "sourceIds": [
+          "brown-john-epistles",
+          "lieu-john-epistles",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "Ancient manuscript witnesses",
+        "language": "Koine Greek",
+        "role": "transmission",
+        "description": "Preserved in major early uncial codices (Codex Sinaiticus, Vaticanus, Alexandrinus) and early papyri such as $\\mathfrak{P}^{74}$, exhibiting remarkably little textual divergence.",
+        "sourceIds": [
+          "p74-manuscript",
+          "brown-john-epistles"
+        ]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The hosted text translates the Greek text into modern English, retaining the epistolary structure and Johannine vocabulary.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "ἀλήθεια καὶ ἀγάπη: The mutual lock of truth and love",
+        "original": "ἐν ἀληθείᾳ καὶ ἀγάπῃ — en alētheia kai agapē — “in truth and love”",
+        "explanation": "Second John weaves truth (*alētheia*) and love (*agapē*) together continuously. Truth is not an abstract philosophical doctrine but a living reality that 'remains in us' (v. 2), while love is defined concretely as 'walking according to his commandments' (v. 6). The elder guards against two opposite distortions: love without truth (which degenerates into ungrounded sentiment) and truth without love (which becomes harsh legalism).",
+        "translationNote": "The WEB reproduces the repetitive drumbeat of 'truth' across verses 1–4 without substituting synonyms.",
+        "caution": "In the Johannine letters, 'truth' refers specifically to the apostolic testimony concerning Jesus Christ, not to a general storehouse of secular facts.",
+        "refs": [
+          "1:1",
+          "1:2",
+          "1:3",
+          "1:6"
+        ],
+        "sourceIds": [
+          "brown-john-epistles",
+          "marshall-john-epistles",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "ἐρχόμενον ἐν σαρκί: The bodily confession against Docetism",
+        "original": "Ἰησοῦν Χριστὸν ἐρχόμενον ἐν σαρκί — Iēsoun Christon erchomenon en sarki — “Jesus Christ coming in the flesh”",
+        "explanation": "Verse 7 identifies the specific doctrinal test dividing the community: confessing that Jesus Christ has come in real human flesh (*en sarki*). Early docetic teachers argued that the divine Christ could not genuinely suffer physical pain or material embodiment, reducing Jesus's physical life and crucifixion to an illusion. The elder identifies any denial of Christ's physical embodiment as the spirit of deception and antichrist.",
+        "translationNote": "The Greek participle *erchomenon* ('coming') emphasizes the ongoing significance of the incarnation, translated in the WEB as 'came in the flesh.'",
+        "caution": "The term 'Antichrist' in 2 John is a doctrinal category describing false teachers who deny the incarnation, not a political world dictator.",
+        "refs": [
+          "1:7"
+        ],
+        "sourceIds": [
+          "brown-john-epistles",
+          "smalley-john-epistles",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "House church hospitality as official endorsement",
+        "original": "μὴ λαμβάνετε αὐτὸν εἰς οἰκίαν καὶ χαίρειν αὐτῷ μὴ λέγετε — mē lambanete auton eis oikian kai chairein autō mē legete — “don’t receive him into your house, and don’t welcome him”",
+        "explanation": "In verses 10–11, the elder prohibits receiving unauthorized teachers into the house or extending the formal greeting (*chairein*). In the context of ancient house churches, welcoming an itinerant teacher into the home was tantamount to granting them the congregation's pulpit and financing their travel. To greet and host them was to participate (*koinōneō*) in their work.",
+        "translationNote": "The phrase 'don't welcome him' translates the formal Greek greeting *chairein*, the standard opening wish of well-being and blessing.",
+        "caution": "This instruction concerns the formal institutional hosting of itinerant false teachers within the house church; it is not a command to withhold basic civic kindness from non-believers.",
+        "refs": [
+          "1:10",
+          "1:11"
+        ],
+        "sourceIds": [
+          "brown-john-epistles",
+          "lieu-john-epistles",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "στόμα πρὸς στόμα: The limits of paper and ink",
+        "original": "διὰ χάρτου καὶ μέλανος … στόμα πρὸς στόμα λαλῆσαι — dia chartou kai melanos … stoma pros stoma lalēsai — “with paper and ink … to speak face to face”",
+        "explanation": "Verse 12 reflects the material reality of ancient letter writing. Papyrus sheets (*chartēs*) and ink (*melan*) were expensive and bounded by space (fitting about 200–250 words per standard sheet). The elder deliberately keeps the written message brief, preferring oral, in-person presence (*stoma pros stoma*, literally 'mouth to mouth') so that communal joy may be complete.",
+        "translationNote": "The WEB translates the Hebrew-influenced Greek idiom 'mouth to mouth' as 'face to face,' communicating the intimacy of direct conversation.",
+        "caution": "The preference for personal presence highlights the relational nature of early Christian leadership, not a rejection of written scriptures.",
+        "refs": [
+          "1:12"
+        ],
+        "sourceIds": [
+          "brown-john-epistles",
+          "smalley-john-epistles",
+          "hosted-web"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek terms 2 John lets you hear",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "ho presbyteros",
+        "meaning": "“The elder”",
+        "why": "The author's chosen title, denoting respected pastoral and apostolic seniority within the Johannine circle.",
+        "sourceIds": [
+          "brown-john-epistles",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:3",
+        "form": "en alētheia kai agapē",
+        "meaning": "“in truth and love”",
+        "why": "The defining theological signature of the letter, linking right confession with practical community care.",
+        "sourceIds": [
+          "marshall-john-epistles",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:7",
+        "form": "Iēsoun Christon erchomenon en sarki",
+        "meaning": "“Jesus Christ coming in the flesh”",
+        "why": "The non-negotiable christological boundary distinguishing genuine Christian teaching from docetic error.",
+        "sourceIds": [
+          "smalley-john-epistles",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:12",
+        "form": "stoma pros stoma",
+        "meaning": "“mouth to mouth / face to face”",
+        "why": "A vivid ancient idiom expressing the superiority of living bodily presence over written correspondence.",
+        "sourceIds": [
+          "lieu-john-epistles",
+          "hosted-web"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Pastoral Epistle / Hellenistic Papyrus Postcard",
+    "how": "Read 2 John as a single, cohesive emergency communication sized for a single sheet of papyrus. Notice how the elder moves smoothly from affirming love and obedience to establishing clear doctrinal boundaries against deceptive teachers."
+  },
+  "cast": [
+    {
+      "name": "The Elder",
+      "who": "The author and spiritual authority in the Johannine community, writing with deep pastoral concern for the house church."
+    },
+    {
+      "name": "The Chosen Lady and Her Children",
+      "who": "The recipient house church and its individual members, praised for walking in truth."
+    },
+    {
+      "name": "The Deceivers / Antichrists",
+      "who": "Itinerant teachers travelling through the region who deny the physical incarnation and bodily reality of Jesus Christ."
+    },
+    {
+      "name": "The Chosen Sister's Children",
+      "who": "Members of the elder's local congregation who send greetings to the recipient church in verse 13."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Walking in Truth and Love, Guarding the Incarnation, and Avoiding Deceivers",
+      "chapters": "1",
+      "precise": "1:1–13",
+      "note": "A 13-verse message: apostolic greeting and joy over members walking in truth (vv. 1–4); the command to love one another through obedience (vv. 5–6); warning against docetic deceivers who deny the flesh of Christ (vv. 7–9); instructions to withhold hospitality from false teachers (vv. 10–11); and concluding desire for personal fellowship (vv. 12–13)."
+    }
+  ],
+  "purpose": "Second John demonstrates that authentic Christian love is bound to theological truth. By urging a local congregation to remain rooted in the apostolic confession of the physical incarnation of Jesus Christ, the elder shows that true community love includes protecting vulnerable members from deceptive teachings that distort the nature of God's self-giving in Jesus.",
+  "snags": [
+    {
+      "snag": "Who is the 'chosen lady'?",
+      "help": "Almost all ancient and modern interpreters understand 'the chosen lady' as a respectful personification of a local Christian congregation (the church as the bride of Christ), and 'her children' as its individual members, confirmed by the closing greeting from 'the children of your chosen sister' (v. 13)."
+    },
+    {
+      "snag": "Does verse 10 command Christians to be rude or inhospitable to strangers?",
+      "help": "No. In the ancient world, hosting an itinerant religious teacher in a house church provided them with a formal platform, lodging, and public endorsement. The command is specifically about not sponsoring or platforming teachers whose message undermines the core confession of the community."
+    },
+    {
+      "snag": "What does it mean that deceivers 'don't confess that Jesus Christ came in the flesh'?",
+      "help": "In the late first century, some thinkers influenced by Greek dualism argued that physical matter was inherently corrupt and that a divine redeemer could not have had a genuine human body. The elder insists that the real, physical embodiment of Jesus is central to Christian faith."
+    },
+    {
+      "snag": "Why is this letter so brief compared to Paul's letters?",
+      "help": "Second John represents the size of an ordinary ancient personal letter written on a single standard papyrus sheet (about 9.5 by 3.5 inches). The elder intentionally kept it brief because he planned to visit in person soon (v. 12)."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Who was 'the elder' that wrote 2 John?",
+      "settled": "The author identifies himself simply by the title 'the elder' (*ho presbyteros*) in 2 John 1 and 3 John 1.",
+      "positions": [
+        {
+          "view": "The Apostle John (son of Zebedee)",
+          "grounds": "The traditional view attested by Irenaeus, Clement of Alexandria, and the majority of church fathers, citing strong stylistic and theological unity with the Gospel of John and 1 John."
+        },
+        {
+          "view": "John the Elder (a distinct disciple in Asia Minor)",
+          "grounds": "Based on a famous distinction recorded by Papias (quoted in Eusebius, Church History 3.39) between the apostles and 'the elder John,' suggesting a senior leader of the Johannine school in Ephesus."
+        }
+      ],
+      "soWhat": "Both views place the letter in the authoritative inner circle of first-century Johannine leadership in Asia Minor."
+    },
+    {
+      "question": "What was the exact nature of the false teaching addressed in verse 7?",
+      "settled": "The opponents are described as 'those who don't confess that Jesus Christ came in the flesh' (v. 7).",
+      "positions": [
+        {
+          "view": "Docetism (Jesus's physical body was an illusion)",
+          "grounds": "Matches early Hellenistic Docetic teachings (also opposed by Ignatius of Antioch) claiming that the divine Son only seemed (*dokein*) to have a material body and experience suffering."
+        },
+        {
+          "view": "Cerinthianism (the divine Christ descended upon the human Jesus at baptism and departed before the cross)",
+          "grounds": "Early Christian tradition records that John opposed Cerinthus in Ephesus, who separated the heavenly Christ from the earthly man Jesus."
+        }
+      ],
+      "soWhat": "Understanding the controversy highlights why early Christians defended the reality of Christ's physical humanity as essential for genuine salvation."
+    },
+    {
+      "question": "Is 'the chosen lady' an individual woman or a congregation?",
+      "settled": "The letter uses feminine singular forms in address alongside plural pronouns when speaking to the children.",
+      "positions": [
+        {
+          "view": "A metaphorical personification of a local church",
+          "grounds": "The overwhelming consensus in modern scholarship: fits the plural address in verses 6, 8, 10, 12 and the closing greeting from a 'chosen sister' (another church)."
+        },
+        {
+          "view": "An individual prominent Christian woman (named Kyria or Electa)",
+          "grounds": "A minority reading taking the greeting literally as an address to a wealthy Christian patroness whose household hosted a church."
+        }
+      ],
+      "soWhat": "Reading the address as a congregation frames the letter as guidance for collective church policy rather than private family correspondence."
+    }
+  ],
+  "sources": [
+    {
+      "id": "brown-john-epistles",
+      "label": "Raymond E. Brown, The Epistles of John (Anchor Yale Bible)",
+      "says": "The definitive critical commentary analyzing the Johannine school, the Greek vocabulary of truth and love, docetic controversies, and the social dynamics of house churches.",
+      "url": "https://yalebooks.yale.edu/book/9780300140316/the-epistles-of-john/"
+    },
+    {
+      "id": "marshall-john-epistles",
+      "label": "I. Howard Marshall, The Epistles of John (NICNT, Eerdmans)",
+      "says": "Examines the historical context, the relationship between truth, love, and obedience, and the theological significance of the elder's christological warnings.",
+      "url": "https://en.wikipedia.org/wiki/New_International_Commentary_on_the_New_Testament"
+    },
+    {
+      "id": "smalley-john-epistles",
+      "label": "Stephen S. Smalley, 1, 2, 3 John (Word Biblical Commentary)",
+      "says": "Provides exhaustive textual and grammatical analysis of the Greek text, the docetic background, and the epistolary structure.",
+      "url": "https://en.wikipedia.org/wiki/Word_Biblical_Commentary"
+    },
+    {
+      "id": "lieu-john-epistles",
+      "label": "Judith M. Lieu, I, II, & III John: A Commentary (Westminster John Knox)",
+      "says": "A leading social-historical commentary exploring identity formation, house-church networks, and the rhetoric of hospitality in the Johannine corpus.",
+      "url": "https://en.wikipedia.org/wiki/Judith_Lieu"
+    },
+    {
+      "id": "p74-manuscript",
+      "label": "Papyrus 74 (P74 / Bodmer XVII)",
+      "says": "A 7th-century Greek papyrus manuscript preserving substantial portions of the Catholic Epistles including 2 John.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_74"
+    },
+    {
+      "id": "hosted-web",
+      "label": "The text on this site",
+      "says": "Word counts, verse counts, Greek word studies, and all reference citations were checked directly against the World English Bible text hosted here."
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read the entire 13-verse letter in a single minute to grasp how tightly the elder connects community love with doctrinal truth.",
+      "refs": [
+        "1:1",
+        "1:3",
+        "1:6"
+      ]
+    },
+    {
+      "tip": "Notice how 'the chosen lady' represents a local church and her 'children' are its members.",
+      "refs": [
+        "1:1",
+        "1:4",
+        "1:13"
+      ]
+    },
+    {
+      "tip": "Pay close attention to verse 7 as the specific reason for the letter: guarding the reality of Jesus Christ's physical human embodiment.",
+      "refs": [
+        "1:7"
+      ]
+    },
+    {
+      "tip": "Read verses 10–11 in the context of ancient house-church hospitality rather than modern casual greetings.",
+      "refs": [
+        "1:10",
+        "1:11"
+      ]
+    }
+  ],
+  "next": "Read 3 John immediately next — which addresses the exact opposite hospitality problem (a church leader named Diotrephes who refused to show hospitality to genuine Christian teachers). Then read 1 John to explore the full theological depth of the Johannine message on light, love, and life.",
+  "traditionNote": "Second John is placed between 1 John and 3 John in the Catholic / General Epistles section across all major Christian canons."
+}

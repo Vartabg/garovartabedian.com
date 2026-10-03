@@ -1,0 +1,44 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://127.0.0.1:3000/",
+        "http://127.0.0.1:3000/jesus/life",
+        "http://127.0.0.1:3000/scriptures/protestant/JHN/3",
+        "http://127.0.0.1:3000/hire"
+      ],
+      "numberOfRuns": 3,
+      "startServerCommand": "npm run start",
+      "startServerReadyPattern": "Ready in",
+      "startServerReadyTimeout": 30000,
+      "settings": {
+        "formFactor": "desktop",
+        "chromeFlags": "--headless --no-sandbox --force-prefers-reduced-motion",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1366,
+          "height": 768,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      }
+    },
+    "upload": {
+      "target": "filesystem",
+      "outputDir": ".lighthouseci"
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.75, "aggregationMethod": "median" }],
+        "categories:accessibility": ["error", { "minScore": 0.95, "aggregationMethod": "median" }],
+        "categories:best-practices": ["error", { "minScore": 0.9, "aggregationMethod": "median" }],
+        "first-contentful-paint": ["error", { "maxNumericValue": 2000, "aggregationMethod": "median" }],
+        "largest-contentful-paint": ["error", { "maxNumericValue": 3000, "aggregationMethod": "median" }],
+        "total-blocking-time": ["error", { "maxNumericValue": 300, "aggregationMethod": "median" }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1, "aggregationMethod": "median" }],
+        "resource-summary:script:size": ["error", { "maxNumericValue": 500000, "aggregationMethod": "median" }],
+        "resource-summary:font:size": ["error", { "maxNumericValue": 500000, "aggregationMethod": "median" }]
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm ci --include=dev",
+  "git": {
+    "deploymentEnabled": false
+  },
+  "functions": {
+    "src/app/api/find/worker/route.ts": {
+      "experimentalTriggers": [{ "type": "queue/v2beta", "topic": "find-assessments" }]
+    }
+  }
+}

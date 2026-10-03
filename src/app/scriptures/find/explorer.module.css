@@ -1,0 +1,1072 @@
+.workspace {
+  --find-soft: color-mix(in srgb, var(--accent) 5%, var(--surface));
+  max-width: 1320px;
+  margin: 0 auto;
+  color: var(--ink);
+  line-height: 1.55;
+}
+.workspace :is(button, input, select, textarea) {
+  font: inherit;
+  color: inherit;
+}
+.workspace button {
+  cursor: pointer;
+  min-height: 44px;
+  padding: 0.55rem 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  line-height: 1.35;
+}
+.workspace button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.workspace :is(button, a, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.workspace :is(h1, h2, h3, h4, p) {
+  margin-top: 0;
+}
+.workspace :is(h1, h2, h3, h4) {
+  text-transform: none;
+  letter-spacing: -0.025em;
+}
+.workspace :is(pre, code, blockquote) {
+  overflow-wrap: anywhere;
+}
+.workspace fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.workspace .primary {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+  font-weight: 600;
+}
+.workspace summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+.workspace summary::after {
+  content: "+";
+  margin-left: auto;
+}
+.workspace details[open] > summary::after {
+  content: "−";
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+  line-height: 1;
+}
+.brandDot {
+  color: var(--accent);
+}
+.topbar nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+}
+.topbar nav > span {
+  border-bottom: 2px solid var(--accent);
+  padding-block: 0.5rem;
+}
+.topbar a {
+  color: inherit;
+}
+.history {
+  position: relative;
+  margin-left: auto;
+  z-index: 5;
+}
+.history > div {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: min(350px, 85vw);
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px #0002;
+}
+.history button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+}
+.history button:hover {
+  background: var(--find-soft);
+}
+.history button span {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.eyebrow {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: var(--muted);
+}
+.landing {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vh, 4rem) 0 3rem;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.intro h1 {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(2.5rem, 5.8vw, 4.6rem);
+  font-weight: 450;
+  line-height: 1.07;
+  margin: 1rem 0 1.2rem;
+}
+.intro > p:last-child {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+.mobileBreak {
+  display: none;
+}
+.searchArea {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--accent) 50%, var(--line));
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 20px #00000006;
+}
+.searchBox:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.searchIcon {
+  font-size: 2rem;
+  padding-left: 0.55rem;
+  line-height: 1;
+  color: var(--accent);
+}
+.searchBox input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  min-height: 48px;
+  background: transparent;
+  border: 0;
+  font-size: 1.1rem;
+}
+.searchBox input:focus-visible {
+  outline: 0;
+}
+.searchBox button {
+  flex-shrink: 0;
+  padding-inline: 1.2rem;
+}
+.searchBox button span {
+  margin-left: 0.6rem;
+}
+.searchOptions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  padding: 0.55rem 0.4rem 0;
+  font-size: 0.8rem;
+}
+.searchOptions label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+}
+.searchOptions select {
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  min-height: 44px;
+  max-width: 230px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.localStatus {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+.localStatus::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.suppliedText {
+  background: var(--surface);
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+.suppliedText p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.suppliedText label {
+  display: block;
+  font-size: 0.85rem;
+}
+.suppliedText :is(input, textarea) {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin-block: 0.4rem 0.8rem;
+}
+.suppliedText textarea {
+  resize: vertical;
+}
+.fileRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.examples {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.examples button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1.25rem;
+  border-radius: 8px;
+  background: transparent;
+  transition: background 0.15s;
+}
+.examples button:hover {
+  background: var(--surface);
+  border-color: var(--accent);
+}
+.exampleNumber {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-bottom: 1.4rem;
+}
+.examples strong {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+.examples button > span:not(.exampleNumber, .exampleArrow) {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.exampleArrow {
+  position: absolute;
+  right: 1.2rem;
+  top: 1rem;
+  color: var(--accent);
+}
+.landingNote {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 2rem 0 0;
+}
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 1rem;
+  background: var(--find-soft);
+}
+.progress p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+}
+.spinner {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--line);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.notice {
+  border-left: 3px solid var(--accent);
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.resultsHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1.5rem 0 1rem;
+}
+.resultsHeader h1 {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  overflow-wrap: anywhere;
+}
+.resultsHeader p {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  color: var(--muted);
+}
+.resultsHeader .eyebrow {
+  font-size: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+.coverage {
+  flex-shrink: 0;
+}
+.coverage > div {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 4;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: min(480px, 100%);
+  max-height: 60vh;
+  overflow: auto;
+  box-shadow: 0 12px 30px #0002;
+  box-sizing: border-box;
+}
+.coverage h2 {
+  font-size: 1.2rem;
+}
+.coverage p {
+  margin-bottom: 0.8rem;
+}
+.assessBar {
+  background: var(--find-soft);
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.assessBar div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.assessBar strong {
+  font-size: 0.85rem;
+}
+.assessBar div span {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.assessBar button {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+.workbench {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.25fr);
+  border: 1px solid var(--line);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  min-height: 620px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.resultPane {
+  border-right: 1px solid var(--line);
+  min-width: 0;
+}
+.listHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem 0.4rem;
+}
+.listHead h2 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+.listHead h2 span {
+  color: var(--muted);
+  margin-left: 0.25rem;
+  font-weight: 400;
+}
+.listHead select {
+  min-height: 44px;
+  font-size: 0.75rem;
+  border: 0;
+  background: transparent;
+  max-width: 55%;
+}
+.filters {
+  display: flex;
+  gap: 0.3rem;
+  padding: 0 1rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.filters button {
+  border: 0;
+  font-size: 0.73rem;
+  min-height: 38px;
+  padding: 0.4rem 0.65rem;
+  color: var(--muted);
+}
+.filters button[aria-pressed="true"] {
+  background: var(--find-soft);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.resultList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-y: auto;
+  max-height: 680px;
+  scrollbar-width: thin;
+}
+.resultList li {
+  margin: 0;
+}
+.workspace .resultButton {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.8rem;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: 1.1rem 1rem;
+  background: transparent;
+  position: relative;
+}
+.resultButton:hover {
+  background: var(--find-soft);
+}
+.workspace .resultButton[aria-pressed="true"] {
+  background: var(--find-soft);
+  box-shadow: inset 3px 0 var(--accent);
+}
+.resultButton:focus-visible {
+  outline-offset: -4px !important;
+}
+.resultNumber {
+  font-size: 0.65rem;
+  color: var(--muted);
+  padding-top: 0.25rem;
+  font-variant-numeric: tabular-nums;
+}
+.resultBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+  flex: 1;
+}
+.resultBody strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.excerpt {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.resultMeta {
+  font-size: 0.66rem;
+  color: var(--muted);
+  text-transform: capitalize;
+}
+.rowArrow {
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+.reader {
+  min-width: 0;
+  padding: 1.25rem clamp(1.25rem, 3vw, 2.75rem) 1.5rem;
+}
+.readerTools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.readerTools > span {
+  font-size: 0.7rem;
+  color: var(--muted);
+  max-width: 65%;
+}
+.readerTools button {
+  font-size: 0.75rem;
+  background: transparent;
+  border: 0;
+  flex-shrink: 0;
+}
+.readerTools button[aria-pressed="true"] {
+  color: var(--accent);
+  background: var(--find-soft);
+}
+.workspace .back {
+  display: none;
+}
+.workspace .passageTitle {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.75rem, 3vw, 2.65rem);
+  line-height: 1.16;
+  margin: 1.5rem 0;
+  scroll-margin-top: 8rem;
+}
+.tabs {
+  display: flex;
+  gap: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+.tabs button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 0.6rem 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  background: transparent;
+}
+.tabs button[aria-selected="true"] {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+.readingPanel {
+  padding-top: 1.75rem;
+  min-height: 360px;
+  outline-offset: -2px;
+}
+.readingPanel h3 {
+  font-size: 1.25rem;
+}
+.readingPanel > p {
+  font-size: 0.9rem;
+}
+.readingPanel .eyebrow {
+  font-size: 0.65rem;
+}
+.passageText {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  line-height: 1.75;
+  white-space: pre-wrap;
+  margin: 1.25rem 0 2rem;
+  padding: 0;
+  border: 0;
+}
+.context {
+  white-space: pre-wrap;
+  font: inherit;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+.readingActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.readingActions button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+}
+.quiet {
+  color: var(--muted);
+  font-size: 0.8rem !important;
+  line-height: 1.7;
+}
+.meta {
+  color: var(--muted);
+  font-size: 0.7rem !important;
+  overflow-wrap: anywhere;
+}
+.provenance {
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+.provenance :is(p, code) {
+  font-size: 0.72rem;
+}
+.connectionPrompt {
+  text-align: center;
+  background: var(--find-soft);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-block: 1.5rem;
+}
+.connectionPrompt > span {
+  font-size: 2rem;
+  color: var(--accent);
+}
+.connectionPrompt small {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+.connections {
+  list-style: none;
+  padding: 0 0 0 1rem;
+  border-left: 1px solid var(--accent);
+}
+.connections li {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--find-soft);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.connections li::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1px;
+  background: var(--accent);
+  left: -1rem;
+  top: 1.6rem;
+}
+.connectionLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.6rem;
+  color: var(--accent);
+}
+.connections h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.connections blockquote {
+  margin: 0.5rem 0;
+  font-family: var(--font-display, Georgia, serif);
+  white-space: pre-wrap;
+  font-size: 1rem;
+}
+.connections summary {
+  font-size: 0.72rem;
+}
+.reviewLink {
+  display: inline-block;
+  margin-block: 1rem;
+  font-size: 0.85rem;
+}
+.distribution {
+  margin: 1.5rem 0;
+}
+.distribution > div {
+  margin-bottom: 0.9rem;
+}
+.distribution dt {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+.distribution dd {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.3rem 0 0;
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+}
+.meter {
+  flex: 1;
+  height: 5px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+.empty {
+  padding: 2rem;
+  font-size: 0.85rem;
+}
+.empty h3 {
+  font-size: 1.1rem;
+}
+.readerEmpty {
+  text-align: center;
+  align-content: center;
+  color: var(--muted);
+}
+.readerEmpty > span {
+  font-size: 3rem;
+  color: var(--accent);
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.68rem;
+  padding: 1.5rem 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}
+@media (max-width: 1000px) {
+  .topbar {
+    gap: 1.5rem;
+  }
+  .workbench {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  }
+  .tabs {
+    gap: 0.9rem;
+  }
+  .readerTools {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding-block: 0.8rem;
+  }
+  .brand {
+    font-size: 1.8rem;
+  }
+  .topbar nav {
+    font-size: 0.73rem;
+    gap: 0.75rem;
+  }
+  .history {
+    margin-left: auto;
+  }
+  .history summary {
+    font-size: 0.7rem;
+  }
+  .landing {
+    padding: 2rem 0;
+  }
+  .intro h1 {
+    font-size: 2.8rem;
+  }
+  .intro > p:last-child {
+    font-size: 1rem;
+  }
+  .mobileBreak {
+    display: block;
+  }
+  .searchBox {
+    gap: 0.35rem;
+    flex-wrap: wrap;
+  }
+  .searchBox input {
+    font-size: 1rem;
+    width: calc(100% - 3rem);
+    flex-basis: calc(100% - 3rem);
+  }
+  .searchBox button {
+    width: 100%;
+  }
+  .searchOptions {
+    gap: 0 0.75rem;
+    padding-inline: 0;
+  }
+  .searchOptions label {
+    font-size: 0.72rem;
+    gap: 0.25rem;
+  }
+  .searchOptions select {
+    max-width: 190px;
+  }
+  .localStatus {
+    display: none;
+  }
+  .examples {
+    gap: 0.6rem;
+    grid-template-columns: 1fr;
+    margin-top: 1.2rem;
+  }
+  .examples button {
+    padding: 0.9rem 2.5rem 0.9rem 3rem;
+  }
+  .exampleNumber {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+  .examples strong {
+    font-size: 0.9rem;
+  }
+  .examples button > span:not(.exampleNumber, .exampleArrow) {
+    font-size: 0.75rem;
+  }
+  .landingNote {
+    font-size: 0.72rem;
+  }
+  .fileRow {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .resultsHeader {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 1.2rem;
+  }
+  .resultsHeader h1 {
+    font-size: 1.9rem;
+  }
+  .coverage {
+    width: 100%;
+  }
+  .coverage summary {
+    font-size: 0.75rem;
+    justify-content: flex-start;
+  }
+  .coverage summary::after {
+    margin-left: 0.5rem;
+  }
+  .assessBar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .assessBar button {
+    width: 100%;
+  }
+  .workbench {
+    display: block;
+    min-height: 300px;
+  }
+  .resultPane {
+    border-right: 0;
+  }
+  .resultList {
+    max-height: none;
+  }
+  .reader,
+  .readerEmpty {
+    display: none;
+  }
+  .workbench[data-mobile-reading="true"] .resultPane {
+    display: none;
+  }
+  .workbench[data-mobile-reading="true"] .reader {
+    display: block;
+  }
+  .workspace .back {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    color: var(--accent);
+  }
+  .reader {
+    padding: 0.5rem 1.1rem 1.5rem;
+  }
+  .readerTools {
+    gap: 0.25rem;
+  }
+  .workspace .passageTitle {
+    font-size: 2rem;
+    margin: 1.2rem 0;
+  }
+  .tabs {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .tabs button {
+    font-size: 0.72rem;
+  }
+  .passageText {
+    font-size: 1.35rem;
+  }
+  .filters button {
+    min-height: 44px;
+  }
+  .footer {
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+  }
+}
+/* Preserve a comfortable reading scale for the small source labels. */
+.resultMeta,
+.resultNumber,
+.readerTools > span,
+.connectionLabel {
+  font-size: 0.75rem;
+}
+.readerTools > span {
+  line-height: 1.6;
+}
+.landingNote {
+  margin-top: 2rem !important;
+}
+@media (max-width: 760px) {
+  .searchArea {
+    padding-block: 0.8rem;
+  }
+  .searchArea .searchBox {
+    flex-wrap: nowrap;
+  }
+  .searchArea .searchBox input {
+    flex-basis: 0;
+  }
+  .searchArea .searchBox button {
+    width: auto;
+    padding-inline: 0.8rem;
+  }
+  .searchArea .searchBox button::before {
+    content: "Find";
+  }
+  .searchArea .searchBox button > span {
+    display: none;
+  }
+  .searchArea .searchOptions {
+    gap: 0 0.5rem;
+  }
+  .searchArea .searchOptions label {
+    flex: 1;
+    font-size: 0;
+  }
+  .searchArea .searchOptions select {
+    font-size: 0.72rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  .assessBar {
+    flex-direction: row;
+    align-items: center;
+  }
+  .assessBar button {
+    width: 7rem;
+    min-height: 48px;
+    flex-shrink: 0;
+  }
+  .assessBar strong {
+    font-size: 0.8rem;
+  }
+  .assessBar div span {
+    font-size: 0.7rem;
+  }
+}
+.context > section {
+  padding-block: 0.2rem 0.8rem;
+}
+.contextLocator {
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+  color: var(--accent);
+}
+.contextLocator span {
+  font-weight: 400;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.reader {
+  scroll-margin-top: 5rem;
+}
+@media (max-width: 760px) {
+  .reader > .back {
+    position: sticky;
+    top: 4rem;
+    z-index: 3;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    margin-bottom: 0.6rem;
+  }
+}

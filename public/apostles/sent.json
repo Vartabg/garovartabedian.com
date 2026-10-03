@@ -1,0 +1,689 @@
+{
+  "intro": "One room, twelve men, and a commission with no geographic ceiling: witnesses in Jerusalem, in all Judea and Samaria, and to the uttermost parts of the earth. This map draws what the record can actually support — real coastlines, cities at true coordinates, each road running from Jerusalem along its claimed corridor to the place where the man's trail ends. The line itself tells you how much to trust it: solid where scripture speaks, dashed where an early source speaks, dotted where only later tradition does. Three seats get no road at all — two the record cannot honestly place, and one that was never sent; they are listed beneath the map. And the ring at the center is the seat scripture itself keeps in Jerusalem. That restraint is the point of this site.",
+  "rays": [
+    {
+      "apostleId": "peter",
+      "name": "Peter",
+      "to": "Rome",
+      "bearing": 299,
+      "reach": 0.72,
+      "weight": "early",
+      "claims": [
+        {
+          "claim": "Worked outward through Judea and Antioch to Rome; killed there under Nero.",
+          "earliest": "1 Clement 5 (~96); Ignatius, To the Romans 4 (~110)",
+          "sourceUrl": "https://www.newadvent.org/fathers/1010.htm",
+          "weight": "early"
+        }
+      ]
+    },
+    {
+      "apostleId": "andrew",
+      "name": "Andrew",
+      "to": "Scythia · Patras",
+      "bearing": 356,
+      "reach": 0.57,
+      "weight": "early",
+      "claims": [
+        {
+          "claim": "Assigned Scythia, north of the Black Sea, in the earliest mission list.",
+          "earliest": "Origen via Eusebius, Church History 3.1",
+          "sourceUrl": "https://www.newadvent.org/fathers/250103.htm",
+          "weight": "early",
+          "note": "Origen names only the region; the Crimea corridor drawn here is the later Andrew legend's routing of it."
+        },
+        {
+          "claim": "Died on a cross at Patras in Greece.",
+          "earliest": "Acts of Andrew (~200), apocryphal",
+          "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)",
+          "weight": "late"
+        }
+      ]
+    },
+    {
+      "apostleId": "james-zebedee",
+      "name": "James of Zebedee",
+      "to": "Jerusalem — he never left",
+      "bearing": 0,
+      "reach": 0,
+      "weight": "scripture",
+      "claims": [
+        {
+          "claim": "Herod Agrippa's sword found him in Jerusalem around 44 AD, before any road did.",
+          "earliest": "Acts 12:1–2",
+          "sourceUrl": "/scriptures/protestant/ACT/12#v1",
+          "weight": "scripture"
+        }
+      ]
+    },
+    {
+      "apostleId": "john",
+      "name": "John",
+      "to": "Ephesus · Patmos",
+      "bearing": 309,
+      "reach": 0.45,
+      "weight": "early",
+      "claims": [
+        {
+          "claim": "Exiled on Patmos 'because of the word of God' — the one apostolic address scripture itself gives outside the holy land.",
+          "earliest": "Revelation 1:9",
+          "sourceUrl": "/scriptures/protestant/REV/1#v9",
+          "weight": "scripture"
+        },
+        {
+          "claim": "Settled and died old at Ephesus, teacher of Polycarp.",
+          "earliest": "Irenaeus, Against Heresies 3.1.1 (~180)",
+          "sourceUrl": "https://www.newadvent.org/fathers/0103301.htm",
+          "weight": "early"
+        }
+      ]
+    },
+    {
+      "apostleId": "philip",
+      "name": "Philip",
+      "to": "Hierapolis",
+      "bearing": 325,
+      "reach": 0.42,
+      "weight": "early",
+      "claims": [
+        {
+          "claim": "Buried at Hierapolis in Phrygia, attested by a bishop of the region within living memory.",
+          "earliest": "Polycrates of Ephesus (~190) via Eusebius, Church History 3.31",
+          "sourceUrl": "https://www.newadvent.org/fathers/250103.htm",
+          "weight": "early"
+        }
+      ]
+    },
+    {
+      "apostleId": "bartholomew",
+      "name": "Bartholomew",
+      "to": "Armenia",
+      "bearing": 40,
+      "reach": 0.52,
+      "weight": "late",
+      "claims": [
+        {
+          "claim": "Left a Hebrew Matthew with believers in 'India' found there a century later.",
+          "earliest": "Pantaenus via Eusebius, Church History 5.10 (~180s)",
+          "sourceUrl": "https://www.newadvent.org/fathers/250105.htm",
+          "weight": "early"
+        },
+        {
+          "claim": "Evangelized Armenia with Thaddaeus and died there — the Armenian tradition points to Albak in Vaspurakan; the Western martyrology's 'Albanopolis' points to Caucasian Albania instead.",
+          "earliest": "Armenian national histories, 5th century",
+          "sourceUrl": "https://www.newadvent.org/cathen/02313c.htm",
+          "weight": "late",
+          "note": "Two traditions, two regions. The pin sits with the cited Armenian histories, hollow because the site is disputed either way."
+        }
+      ]
+    },
+    {
+      "apostleId": "thomas",
+      "name": "Thomas",
+      "to": "India — Mylapore",
+      "bearing": 114,
+      "reach": 1,
+      "weight": "early",
+      "claims": [
+        {
+          "claim": "Assigned Parthia in the earliest list; carried to the Malabar coast in the fuller tradition, with a continuous local church claiming him ever since.",
+          "earliest": "Origen via Eusebius, Church History 3.1; Acts of Thomas (~220)",
+          "sourceUrl": "https://www.newadvent.org/fathers/250103.htm",
+          "weight": "early"
+        },
+        {
+          "claim": "Speared on a hill at Mylapore near modern Chennai.",
+          "earliest": "Acts of Thomas (~220); Ephrem the Syrian knows the relics at Edessa by the 4th century",
+          "sourceUrl": "https://www.newadvent.org/cathen/14658b.htm",
+          "weight": "early"
+        }
+      ]
+    },
+    {
+      "apostleId": "matthew",
+      "name": "Matthew",
+      "to": "'Ethiopia' — disputed",
+      "bearing": 170,
+      "reach": 0.67,
+      "weight": "late",
+      "uncertain": true,
+      "claims": [
+        {
+          "claim": "Sent to 'Ethiopia' in some late lists, Persia in others; the earliest voice on his death reports no martyrdom at all.",
+          "earliest": "Heracleon via Clement of Alexandria (~180) for the natural death; Rufinus (4th–5th c.) for Ethiopia",
+          "sourceUrl": "https://www.newadvent.org/fathers/02104.htm",
+          "weight": "late",
+          "note": "'Ethiopia' is itself contested ground — the African kingdom of Aksum, or the Caucasus coast the same legends mean elsewhere (see Matthias). The pin is a question, not an answer."
+        }
+      ]
+    },
+    {
+      "apostleId": "thaddaeus",
+      "name": "Thaddaeus",
+      "to": "Armenia — Artaz",
+      "bearing": 50,
+      "reach": 0.48,
+      "weight": "late",
+      "claims": [
+        {
+          "claim": "The Edessa mission that healed king Abgar — told of a Thaddaeus Eusebius counts among the seventy, not the twelve.",
+          "earliest": "Eusebius, Church History 1.13, from the Edessa archives",
+          "sourceUrl": "https://www.newadvent.org/fathers/250101.htm",
+          "weight": "early"
+        },
+        {
+          "claim": "Evangelized Armenia with Bartholomew; the monastery carrying his name claims his grave, on a shrine tradition dated to 68 AD.",
+          "earliest": "Armenian national histories, 5th century; St. Thaddeus Monastery (UNESCO)",
+          "sourceUrl": "https://whc.unesco.org/en/list/1262/",
+          "weight": "late"
+        }
+      ]
+    },
+    {
+      "apostleId": "simon-zealot",
+      "name": "Simon the Zealot",
+      "to": "Persia — disputed",
+      "bearing": 81,
+      "reach": 0.43,
+      "weight": "late",
+      "uncertain": true,
+      "claims": [
+        {
+          "claim": "Egypt, north Africa, Persia, or Britain — the late lists send him everywhere and agree nowhere.",
+          "earliest": "Pseudo-Abdias and late martyrologies (~6th century)",
+          "sourceUrl": "https://www.newadvent.org/cathen/13796b.htm",
+          "weight": "late"
+        }
+      ]
+    }
+  ],
+  "unplaced": [
+    {
+      "apostleId": "james-alphaeus",
+      "name": "James of Alphaeus",
+      "note": "No early source records his road or his end. The chart leaves him in the upper room rather than invent a destination."
+    },
+    {
+      "apostleId": "matthias",
+      "name": "Matthias",
+      "note": "The twelfth seat's replacement — the late legends that move him confuse him with Matthew, so the chart declines to draw them."
+    },
+    {
+      "apostleId": "judas-iscariot",
+      "name": "Judas Iscariot",
+      "note": "Not sent. His road ended at a field outside the city wall before Pentecost — Akeldama, Field of Blood, in both canonical accounts."
+    }
+  ],
+  "armenia": {
+    "title": "Why Armenia keeps two of these names",
+    "text": "The Armenian Apostolic Church traces itself to Thaddaeus and Bartholomew and calls them its first illuminators — the claim in its name. The written sources are 5th-century national histories carrying older memory, and this site grades them accordingly: tradition, stated as tradition. What is plain history is what the tradition grew into — Gregory the Illuminator's mission, and in 301 the first kingdom on earth to make Christianity its state faith.",
+    "seeAlso": {
+      "href": "/church/faces",
+      "label": "Gregory the Illuminator, in the faces"
+    }
+  },
+  "cities": [
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.22,
+      "anchor": "end",
+      "dx": -12,
+      "dy": 6,
+      "hub": true
+    },
+    {
+      "id": "antioch",
+      "name": "Antioch",
+      "lat": 36.2,
+      "lng": 36.16,
+      "anchor": "start",
+      "dx": 5,
+      "dy": -18
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "lat": 41.89,
+      "lng": 12.49,
+      "anchor": "end",
+      "dx": -8,
+      "dy": -6
+    },
+    {
+      "id": "patras",
+      "name": "Patras",
+      "lat": 38.24,
+      "lng": 21.73,
+      "anchor": "end",
+      "dx": -16,
+      "dy": -14
+    },
+    {
+      "id": "chersonesus",
+      "name": "Scythia (Crimea)",
+      "lat": 44.61,
+      "lng": 33.53,
+      "anchor": "middle",
+      "dx": 0,
+      "dy": -12
+    },
+    {
+      "id": "ephesus",
+      "name": "Ephesus",
+      "lat": 37.94,
+      "lng": 27.34,
+      "anchor": "end",
+      "dx": -9,
+      "dy": -4
+    },
+    {
+      "id": "patmos",
+      "name": "Patmos",
+      "lat": 37.31,
+      "lng": 26.55,
+      "anchor": "end",
+      "dx": -12,
+      "dy": 22
+    },
+    {
+      "id": "hierapolis",
+      "name": "Hierapolis",
+      "lat": 37.93,
+      "lng": 29.13,
+      "anchor": "start",
+      "dx": 9,
+      "dy": 18
+    },
+    {
+      "id": "edessa",
+      "name": "Edessa",
+      "lat": 37.16,
+      "lng": 38.79,
+      "anchor": "start",
+      "dx": 8,
+      "dy": 14
+    },
+    {
+      "id": "artaz",
+      "name": "Artaz — St. Thaddeus",
+      "lat": 39.09,
+      "lng": 44.54,
+      "anchor": "end",
+      "dx": -9,
+      "dy": -16
+    },
+    {
+      "id": "albak",
+      "name": "Albak (Vaspurakan) — site disputed",
+      "lat": 38.15,
+      "lng": 44.0,
+      "anchor": "start",
+      "dx": 9,
+      "dy": 14,
+      "uncertainSite": true
+    },
+    {
+      "id": "muziris",
+      "name": "Muziris (Kerala)",
+      "lat": 10.22,
+      "lng": 76.2,
+      "anchor": "end",
+      "dx": -9,
+      "dy": 13
+    },
+    {
+      "id": "mylapore",
+      "name": "Mylapore",
+      "lat": 13.03,
+      "lng": 80.27,
+      "anchor": "end",
+      "dx": -9,
+      "dy": -6
+    },
+    {
+      "id": "aksum",
+      "name": "Aksum ('Ethiopia')",
+      "lat": 14.13,
+      "lng": 38.72,
+      "anchor": "start",
+      "dx": 9,
+      "dy": 4
+    },
+    {
+      "id": "ctesiphon",
+      "name": "Ctesiphon (Persia)",
+      "lat": 33.09,
+      "lng": 44.58,
+      "anchor": "start",
+      "dx": 9,
+      "dy": 12
+    }
+  ],
+  "routes": [
+    {
+      "apostleId": "peter",
+      "name": "Peter",
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "antioch",
+          "weight": "scripture",
+          "via": [
+            [
+              33.9,
+              35.4
+            ]
+          ]
+        },
+        {
+          "from": "antioch",
+          "to": "rome",
+          "weight": "early",
+          "via": [
+            [
+              35.6,
+              28.0
+            ],
+            [
+              35.2,
+              20.5
+            ],
+            [
+              38.2,
+              15.4
+            ]
+          ]
+        }
+      ],
+      "label": {
+        "at": "rome"
+      }
+    },
+    {
+      "apostleId": "andrew",
+      "name": "Andrew",
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "chersonesus",
+          "weight": "early",
+          "via": [
+            [
+              36.2,
+              35.0
+            ],
+            [
+              40.6,
+              34.2
+            ]
+          ]
+        },
+        {
+          "from": "chersonesus",
+          "to": "patras",
+          "weight": "late",
+          "via": [
+            [
+              42.6,
+              29.6
+            ],
+            [
+              39.4,
+              25.0
+            ]
+          ]
+        }
+      ],
+      "label": {
+        "at": "patras"
+      }
+    },
+    {
+      "apostleId": "john",
+      "name": "John",
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "ephesus",
+          "weight": "early",
+          "via": [
+            [
+              33.6,
+              31.4
+            ],
+            [
+              35.3,
+              28.2
+            ]
+          ]
+        },
+        {
+          "from": "ephesus",
+          "to": "patmos",
+          "weight": "scripture"
+        }
+      ],
+      "label": {
+        "at": "ephesus"
+      }
+    },
+    {
+      "apostleId": "philip",
+      "name": "Philip",
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "hierapolis",
+          "weight": "early",
+          "via": [
+            [
+              34.6,
+              32.2
+            ],
+            [
+              36.5,
+              30.4
+            ]
+          ]
+        }
+      ],
+      "label": {
+        "at": "hierapolis"
+      }
+    },
+    {
+      "apostleId": "bartholomew",
+      "name": "Bartholomew",
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "albak",
+          "weight": "late",
+          "via": [
+            [
+              34.8,
+              38.8
+            ],
+            [
+              37.2,
+              42.4
+            ]
+          ]
+        }
+      ],
+      "label": {
+        "at": "albak"
+      },
+      "stub": {
+        "toward": [
+          24.5,
+          46.5
+        ],
+        "note": "toward 'India'",
+        "weight": "early"
+      }
+    },
+    {
+      "apostleId": "thomas",
+      "name": "Thomas",
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "muziris",
+          "weight": "early",
+          "via": [
+            [
+              29.5,
+              34.9
+            ],
+            [
+              20.0,
+              38.6
+            ],
+            [
+              12.4,
+              43.6
+            ],
+            [
+              11.2,
+              60.0
+            ]
+          ]
+        },
+        {
+          "from": "muziris",
+          "to": "mylapore",
+          "weight": "early",
+          "via": [
+            [
+              7.5,
+              77.6
+            ]
+          ]
+        }
+      ],
+      "label": {
+        "at": "mylapore"
+      },
+      "stub": {
+        "toward": [
+          35.0,
+          55.5
+        ],
+        "note": "Parthia, in the earliest list",
+        "weight": "early"
+      }
+    },
+    {
+      "apostleId": "matthew",
+      "name": "Matthew",
+      "uncertain": true,
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "aksum",
+          "weight": "late",
+          "via": [
+            [
+              27.8,
+              35.4
+            ],
+            [
+              19.8,
+              38.8
+            ]
+          ]
+        },
+        {
+          "from": "jerusalem",
+          "to": "ctesiphon",
+          "weight": "late",
+          "via": [
+            [
+              33.9,
+              39.4
+            ]
+          ]
+        }
+      ],
+      "label": {
+        "at": "aksum",
+        "alsoAt": [
+          "ctesiphon"
+        ]
+      }
+    },
+    {
+      "apostleId": "thaddaeus",
+      "name": "Thaddaeus",
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "edessa",
+          "weight": "early",
+          "via": [
+            [
+              34.4,
+              37.2
+            ]
+          ],
+          "uncertain": true
+        },
+        {
+          "from": "edessa",
+          "to": "artaz",
+          "weight": "late",
+          "via": [
+            [
+              38.6,
+              41.6
+            ]
+          ]
+        }
+      ],
+      "label": {
+        "at": "artaz"
+      }
+    },
+    {
+      "apostleId": "simon-zealot",
+      "name": "Simon the Zealot",
+      "uncertain": true,
+      "legs": [
+        {
+          "from": "jerusalem",
+          "to": "ctesiphon",
+          "weight": "late",
+          "via": [
+            [
+              30.8,
+              41.2
+            ]
+          ]
+        }
+      ],
+      "label": {
+        "at": "ctesiphon"
+      }
+    }
+  ],
+  "seas": [
+    {
+      "name": "MARE NOSTRUM",
+      "lat": 34.2,
+      "lng": 18.5
+    },
+    {
+      "name": "PONTUS EUXINUS",
+      "lat": 43.2,
+      "lng": 37.5
+    },
+    {
+      "name": "MARE ERYTHRAEUM",
+      "lat": 8.5,
+      "lng": 55.0
+    }
+  ]
+}

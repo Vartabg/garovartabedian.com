@@ -1,0 +1,231 @@
+{
+  "book": "GEN",
+  "chapter": 10,
+  "bookName": "Genesis",
+  "summary": "The descendants of Noah’s sons are listed in three branches, with families, languages, lands, and nations attached to their lines. The chapter pauses over Nimrod’s kingdom and cities, traces Canaanite borders, and ends by saying the nations spread from these families after the flood.",
+  "whyItMatters": "The genealogy broadens the story from one surviving household to many peoples and places. Its ancient map gives narrative orientation but cannot be equated without evidence with modern ethnic identities or borders.",
+  "context": {
+    "author": "Genesis names no historical writer. Jewish and Christian tradition associates the Torah with Moses; the book briefing describes older traditions shaped into a final literary form, without a settled account of every stage.",
+    "audience": "The book addresses Israel through a story of shared human origins and the family from whom Israel traces its ancestry; no single first audience is named in this chapter.",
+    "date": "The narrated events belong to primeval or ancestral time, not to a securely dated writing event. Major stages of Genesis are often placed across the monarchic to Persian periods, with exact models and dates debated.",
+    "setting": "An ancient map of peoples and territories after the flood, including Shinar, Assyria, and Canaan.",
+    "literaryForm": "Table of nations with genealogical lists, geographical notices, and a short royal-city digression."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Noah’s three sons and their households emerge from the ship, and the previous chapter says the whole earth was populated from them.",
+      "verseRefs": [
+        "9:18-19"
+      ]
+    },
+    "here": {
+      "text": "Read the three family branches as an ancient narrative map, noting the repeated labels of families, languages, lands, and nations.",
+      "verseRefs": [
+        "10:1-5",
+        "10:20-32"
+      ]
+    },
+    "after": {
+      "text": "The next chapter tells a story of shared language and dispersal at Babel, then narrows the genealogy toward Terah and Abram.",
+      "verseRefs": [
+        "11:1-9",
+        "11:10-32"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Japheth’s lines and lands",
+      "verses": "1-5",
+      "note": "Named descendants lead to island nations arranged by language and family."
+    },
+    {
+      "heading": "Ham’s branches and Nimrod",
+      "verses": "6-12",
+      "note": "Cush and other sons are named; Nimrod’s kingdom and cities receive special attention."
+    },
+    {
+      "heading": "Mizraim and Canaan",
+      "verses": "13-20",
+      "note": "Further names and Canaanite borders fill out Ham’s branch."
+    },
+    {
+      "heading": "Shem and Eber’s line",
+      "verses": "21-30",
+      "note": "Shem’s descendants include Eber, Peleg, and Joktan’s many children."
+    },
+    {
+      "heading": "Nations after the flood",
+      "verses": "31-32",
+      "note": "The repeated family-language-land formula closes the table."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "10:5",
+      "text": "Of these were the islands of the nations divided in their lands, everyone after his language, after their families, in their nations.",
+      "why": "The first branch already combines family descent with languages, lands, and nations."
+    },
+    {
+      "ref": "10:10",
+      "text": "The beginning of his kingdom was Babel, Erech, Accad, and Calneh, in the land of Shinar.",
+      "why": "Nimrod’s kingdom introduces Babel and Shinar before chapter 11’s Babel story."
+    },
+    {
+      "ref": "10:32",
+      "text": "These are the families of the sons of Noah, by their generations, according to their nations. The nations divided from these on the earth after the flood.",
+      "why": "The ending states the table’s purpose as a map of nations after the flood."
+    }
+  ],
+  "themes": [
+    "descent from Noah",
+    "languages and lands",
+    "Nimrod’s cities",
+    "Canaanite borders",
+    "nations after the flood"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the “history of the generations” in the heading?",
+      "answer": "It introduces descendants of Noah’s sons after the flood, then organizes named family lines and places. The list is selective and works as an ancient map of peoples rather than a register of every individual born.",
+      "verseRefs": [
+        "10:1-5"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why does the chapter mention different languages before the Babel story?",
+      "answer": "The table describes the nations in their separated condition, including languages, while chapter 11 narrates a story about language and dispersal. The present arrangement need not be read as an uninterrupted minute-by-minute timeline.",
+      "verseRefs": [
+        "10:5",
+        "10:20",
+        "10:31-32"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        5,
+        20,
+        31
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Who is Nimrod here?",
+      "answer": "He is identified as a descendant of Cush, called mighty and a hunter, and linked to a kingdom beginning in Babel and other cities. The passage does not provide a full biography or explicitly name him as builder of Babel’s tower.",
+      "verseRefs": [
+        "10:7-12"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        7
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Can these names be mapped directly onto present-day nations?",
+      "answer": "The chapter’s labels belong to its ancient family-and-land account. Some names recur as places in later texts, but the list supplies no evidence for assigning modern peoples a single fixed ancestor or border.",
+      "verseRefs": [
+        "10:5-6",
+        "10:19-20",
+        "10:31-32"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        5,
+        19,
+        31
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What is Shinar in this list?",
+      "answer": "It is the land where the beginning of Nimrod’s kingdom includes Babel, Erech, Accad, and Calneh. Chapter 11 will also locate the settlement at Babel in Shinar.",
+      "verseRefs": [
+        "10:8-10"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        8
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Why give Canaan’s border in detail?",
+      "answer": "The list moves from Canaan’s named descendants to a directional boundary description using recognizable ancient towns. That notice helps orient the later ancestral narratives set in the same region, without establishing a modern territorial claim.",
+      "verseRefs": [
+        "10:15-20"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        15
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Does Peleg’s name explain exactly how the earth was divided?",
+      "answer": "The verse links his name to a division of the earth in his days but does not define whether that means language, peoples, territory, or another division. The surrounding table describes nations spreading; a more exact mechanism would be an inference.",
+      "verseRefs": [
+        "10:24-25"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        24
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What role does this long genealogy play after the flood?",
+      "answer": "It shows one surviving family branching into multiple nations, languages, and lands. The text broadens the human scene before the following chapter narrows from the dispersed nations to Abram’s family.",
+      "verseRefs": [
+        "10:1-5",
+        "10:20-32"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        1,
+        20
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Shinar",
+      "def": "The land where the first named cities of Nimrod’s kingdom stand, including Babel."
+    },
+    {
+      "term": "nations",
+      "def": "The family-and-land groupings used to describe peoples descended from Noah’s sons."
+    },
+    {
+      "term": "Peleg",
+      "def": "A descendant of Eber whose name is linked in the text with a division of the earth."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "4d32cb9b2847f1cc053bc636150aac03b441ccfafeb8a5d3f465ba20fa30a1d7",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

@@ -1,0 +1,1162 @@
+/* Auto-split from globals.css — edit carefully; keep selector ownership clear. */
+
+/* ── Word ownership world ────────────────────────────────────────
+   Cool vellum and ledger lapis: the legal record without sterile chrome. */
+.world-word {
+  --bg: #e6e9e7;
+  --surface: #f8f5ed;
+  --ink: #2b2c2d;
+  --muted: #5d6464;
+  --line: #c9cfca;
+  --accent: #24446b;
+  --accent-deep: #18324f;
+  --accent-ink: var(--folio);
+  /* Text tokens: used for badges, card rules, and prose, so they are held to
+     4.5:1 body-text contrast on both --surface and --bg. */
+  --fenced: #7a3328;
+  --free: #3f6658;
+  /* --fenced and --free are pigments, mixed for light paper. They are fine as
+     borders and fills, but anything that sets one as *text* needs it carried
+     into whichever ink the reader's theme is using — on the dark surface the
+     raw pigments fall to ~1.8:1 and ~2.3:1. Derived from --ink so they follow
+     every theme path (system dark and the explicit dark setting) without a
+     second hard-coded pair of colours. */
+  --fenced-ink: color-mix(in srgb, var(--fenced) 45%, var(--ink));
+  --free-ink: color-mix(in srgb, var(--free) 45%, var(--ink));
+  /* --muted is already theme-aware, but it is deliberately low-contrast: on a
+     tinted pill of itself it lands at 4.48:1, just under AA. Same treatment,
+     so the category chips stay grey without going under. */
+  --muted-ink: color-mix(in srgb, var(--muted) 70%, var(--ink));
+  /* Mark tokens: used only by chart marks, which answer to the 3:1 mark
+     threshold instead — which buys the chroma and the hue separation that
+     text contrast forbids. The text pair sits at ΔE 7.4 under deuteranopia,
+     inside the 6–8 band where color alone is not enough; this pair clears
+     the target at 10.4 (normal-vision 22.3). No single value satisfies both
+     jobs — a green dark enough for 4.5:1 text drops under the chroma floor
+     and reads gray. Verified with the dataviz palette validator; re-run it
+     before changing either value.
+     Unlike --fenced-ink/--free-ink above, these are static hex, not derived
+     from --ink, because a color-mix toward the dark ink drags the pair back
+     under the chroma floor before it clears 3:1 — so --fence-mark carries an
+     explicit --fence-mark-dark instead (consumed by the dark-theme override
+     in worlds-shared.css: html[data-a11y-theme="dark"] .world-word and its
+     prefers-color-scheme twin). --free-mark needs no dark variant — it
+     already clears 3:1 against both dark --bg and --surface unmodified. */
+  --fence-mark: #8a3a2a;
+  --fence-mark-dark: #d6481f;
+  --free-mark: #00836c;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+}
+.world-word main {
+  flex: 1;
+}
+
+.wd-collision {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 0.9rem;
+  margin: 1.75rem 0 2.25rem;
+}
+.wd-coll-side {
+  margin: 0;
+  border-radius: 12px;
+  padding: 1.3rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wd-coll-side p {
+  margin: 0 0 0.6rem;
+}
+.wd-coll-side footer {
+  font-size: 0.82rem;
+  opacity: 0.75;
+}
+.wd-coll-side.scripture {
+  background: #f8f2e4;
+  color: #3a3020;
+  border: 1px solid #e3d9c8;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.wd-coll-side.legal {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+.wd-coll-vs {
+  align-self: center;
+  font-style: italic;
+  color: var(--fenced-ink);
+  font-size: 0.85rem;
+}
+@media (max-width: 640px) {
+  .wd-collision {
+    grid-template-columns: 1fr;
+  }
+  .wd-coll-vs {
+    justify-self: center;
+  }
+}
+
+/* The fence, in practice */
+.wd-practice {
+  margin: 1rem 0 2rem;
+  padding: 0;
+  list-style: none;
+  max-width: 46rem;
+}
+.wd-practice li {
+  padding: 0.65rem 0 0.65rem 1.5rem;
+  position: relative;
+  border-bottom: 1px solid var(--line);
+}
+.wd-practice li::before {
+  content: "§";
+  position: absolute;
+  left: 0;
+  color: var(--fenced-ink);
+  font-weight: 700;
+}
+
+.wd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+.wd-card {
+  border: 1px solid color-mix(in oklab, var(--accent) 22%, var(--line));
+  border-radius: 3px;
+  background: var(--surface);
+  padding: 0.9rem 1.05rem 0.8rem;
+  border-top: 3px solid var(--line);
+}
+.wd-card.fenced {
+  border-top-color: var(--fenced);
+}
+.wd-card.free {
+  border-top-color: var(--free);
+}
+.wd-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.35rem;
+}
+.wd-abbr {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+.wd-badge {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+.wd-badge.fenced {
+  background: color-mix(in srgb, var(--fenced) 12%, transparent);
+  color: var(--fenced-ink);
+}
+.wd-badge.free {
+  background: color-mix(in srgb, var(--free) 14%, transparent);
+  color: var(--free-ink);
+}
+.wd-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.98rem;
+}
+.wd-policy {
+  font-size: 0.88rem;
+  margin: 0.4rem 0;
+}
+/* The life of every fence — copyright lifespans to scale. */
+.wd-fences {
+  margin: 1.25rem 0 2rem;
+}
+/* Scoped to the plot itself — the legend carries its own small swatch SVGs,
+   and an unscoped `.wd-fences svg` would stretch each of those to full width. */
+.wd-fences .responsive-svg-frame > svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.wd-fn-grid {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.wd-fn-tick {
+  fill: var(--muted);
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}
+.wd-fn-now {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+  opacity: 0.7;
+}
+.wd-fn-nowlabel {
+  fill: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.04em;
+}
+.wd-fn-abbr {
+  fill: var(--ink);
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.wd-fn-fenced {
+  stroke: var(--fence-mark);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.wd-fn-free {
+  stroke: var(--free-mark);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.wd-fn-fenced.projected,
+.wd-fn-free.projected {
+  stroke-width: 3;
+  stroke-dasharray: 3 3;
+  opacity: 0.65;
+}
+/* A 2px surface ring separates the transition marker from the runs it sits
+   between — a ring, not a border drawn around every mark. */
+.wd-fn-freed {
+  fill: var(--free-mark);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+.wd-fn-glyph rect {
+  fill: var(--surface);
+  stroke-width: 1.1;
+}
+.wd-fn-glyph path {
+  stroke-width: 1.1;
+}
+.wd-fn-glyph.is-fenced rect,
+.wd-fn-glyph.is-fenced path {
+  stroke: var(--fence-mark);
+}
+.wd-fn-glyph.is-free rect,
+.wd-fn-glyph.is-free path {
+  stroke: var(--free-mark);
+}
+/* A surface-colored halo under the glyphs keeps the year legible where it
+   passes over the "now" rule or a neighbouring run. */
+.wd-fn-falls {
+  fill: var(--ink);
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+  stroke: var(--surface);
+  stroke-width: 2.5;
+  paint-order: stroke fill;
+}
+/* The hit band is invisible until hovered; it exists so the target is the
+   row, not the 4px rule. */
+.wd-fn-hit {
+  fill: transparent;
+}
+.wd-fn-row:hover .wd-fn-hit {
+  fill: color-mix(in srgb, var(--ink) 5%, transparent);
+}
+
+.wd-fn-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin: 0 0 0.7rem;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.wd-fn-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.wd-fn-legend-swatch {
+  width: 1.1rem;
+  height: 0.7rem;
+  flex: none;
+}
+.wd-fn-legend-swatch line {
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.wd-fn-legend-swatch.is-fenced line {
+  stroke: var(--fence-mark);
+}
+.wd-fn-legend-swatch.is-free line {
+  stroke: var(--free-mark);
+}
+.wd-fn-legend-swatch.is-projected line {
+  stroke: var(--muted);
+  stroke-width: 3;
+  stroke-dasharray: 3 3;
+}
+
+.wd-fn-table {
+  margin-top: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.wd-fn-table > summary {
+  padding: 0.75rem 1rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.wd-fn-table-body {
+  overflow-x: auto;
+  padding: 0 1rem 1rem;
+  border-top: 1px solid var(--line);
+}
+.wd-fn-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.wd-fn-table th,
+.wd-fn-table td {
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+.wd-fn-table thead th {
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.wd-fn-table tbody th {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.wd-fn-table-name {
+  display: block;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.78rem;
+}
+
+.wd-story {
+  margin: 1.25rem 0 2rem;
+  border-left: 2px solid var(--line);
+  padding-left: 0;
+}
+.wd-beat {
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 0.75rem;
+  padding: 0.55rem 0 0.55rem 1rem;
+  position: relative;
+}
+.wd-beat::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 1.05rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.wd-year {
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.wd-beat p {
+  margin: 0.15rem 0 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+/* The cases room — when the fence gets tested */
+.wd-case {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem 1.4rem;
+  margin: 0 0 1.5rem;
+  scroll-margin-top: 1.5rem;
+}
+.wd-case-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0 0 0.3rem;
+}
+.wd-case-year {
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+}
+.wd-case-cat {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem;
+  border-radius: 99px;
+}
+.wd-case-cat-historical,
+.wd-case-cat-informal {
+  background: color-mix(in srgb, var(--muted) 16%, transparent);
+  color: var(--muted-ink);
+}
+.wd-case-cat-lawsuit,
+.wd-case-cat-licensing {
+  background: color-mix(in srgb, var(--fenced) 12%, transparent);
+  color: var(--fenced-ink);
+}
+.wd-case-cat-policy,
+.wd-case-cat-ai {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+}
+.wd-case-cat-explainer {
+  background: color-mix(in srgb, var(--free) 14%, transparent);
+  color: var(--free-ink);
+}
+.wd-case h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+.wd-case-outcome {
+  margin-top: 0.75rem;
+}
+
+/* How this text survived */
+
+
+.wd-case-map {
+  margin: 1.25rem 0 2rem;
+  max-width: 32rem;
+}
+.wd-case-map .scr-card-visual {
+  margin: 0;
+}
+.wd-case-rail {
+  display: flex;
+  align-items: end;
+  gap: 0.55rem;
+  min-height: 8.25rem;
+  margin: 0 0 2rem;
+  padding: 1rem 1.1rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.wd-case-rail-item {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 0;
+  height: 6.6rem;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.wd-case-rail-item:hover,
+.wd-case-rail-item:focus-visible {
+  background: color-mix(in srgb, currentColor 7%, transparent);
+  transform: translateY(-2px);
+}
+.wd-case-rail-bar {
+  align-self: end;
+  justify-self: center;
+  width: min(1.55rem, 62%);
+  border-radius: 999px 999px 4px 4px;
+  background: currentColor;
+  opacity: 0.65;
+}
+.wd-case-rail-label,
+.wd-case-rail-count {
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wd-case-rail-label {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+.wd-case-rail-count {
+  color: currentColor;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.wd-case-rail-item[class*="wd-case-cat-"] {
+  background: transparent;
+}
+@media (max-width: 560px) {
+  .wd-case-rail {
+    align-items: stretch;
+    min-height: 0;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 0.55rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .wd-case-rail-item {
+    flex: 0 0 5.25rem;
+    min-height: 5.5rem;
+  }
+  .wd-case-rail-label {
+    overflow: visible;
+    line-height: 1.2;
+    text-overflow: clip;
+    white-space: normal;
+  }
+}
+
+/* The searchable ownership ledger. The first pass keeps the legal record
+   dense, source-forward, and usable without a diagram or a horizontal scroll. */
+.word-ledger {
+  margin: clamp(3.5rem, 7vw, 6rem) auto 2rem;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  border: 1px solid color-mix(in oklab, var(--accent) 28%, var(--line));
+  background: color-mix(in oklab, var(--surface) 96%, var(--accent));
+  scroll-margin-top: 1.5rem;
+}
+.word-ledger-header,
+.word-section-heading,
+.word-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.word-ledger-header {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1.1rem;
+}
+.word-ledger-header h2,
+.word-section-heading h3,
+.word-detail-header h3 {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.word-ledger-header h2 {
+  font-size: clamp(1.6rem, 3.2vw, 2.35rem);
+}
+.word-ledger-header p:not(.word-section-kicker) {
+  max-width: 42rem;
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+.word-section-kicker {
+  margin: 0 0 0.45rem;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.word-ledger-count,
+.word-section-heading > span {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.word-ledger-search {
+  margin: 1.2rem 0 1rem;
+}
+.word-ledger-search label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+.word-search-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.word-search-control input {
+  width: 100%;
+  min-height: 3.25rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  padding: 0.7rem 5.6rem 0.7rem 0.9rem;
+}
+.word-search-control input::placeholder {
+  color: var(--muted);
+  opacity: 0.85;
+}
+.word-search-control input:focus {
+  border-color: var(--accent);
+}
+.word-search-clear {
+  position: absolute;
+  right: 0.45rem;
+  min-height: var(--control-target-min);
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.word-search-clear:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+.word-search-status {
+  min-height: 1.35rem;
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.word-ledger-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.7fr) minmax(0, 1.55fr);
+  gap: 1rem;
+  align-items: start;
+}
+.word-results,
+.word-entry-detail {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.word-results {
+  position: sticky;
+  top: 1rem;
+  max-height: min(46rem, calc(100dvh - 2rem));
+  overflow: auto;
+}
+.word-results-heading {
+  margin: 0;
+  padding: 0.75rem 0.85rem 0.55rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.word-results ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.word-results li + li {
+  border-top: 1px solid var(--line);
+}
+.word-results button {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  gap: 0.55rem;
+  width: 100%;
+  min-height: 4.6rem;
+  align-items: start;
+  padding: 0.75rem 0.7rem;
+  border: 0;
+  border-left: 3px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+.word-results button.is-active,
+.word-results button[aria-pressed="true"] {
+  border-left-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+.word-results button.is-active .word-result-copy strong,
+.word-results button[aria-pressed="true"] .word-result-copy strong {
+  color: var(--accent);
+}
+@media (hover: hover) and (pointer: fine) {
+  .word-results button:hover {
+    border-left-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+}
+.word-result-index {
+  padding-top: 0.08rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+.word-result-copy {
+  display: grid;
+  min-width: 0;
+  gap: 0.08rem;
+}
+.word-result-copy strong {
+  font-size: 0.98rem;
+  line-height: 1.2;
+}
+.word-result-copy span,
+.word-result-copy small {
+  overflow-wrap: anywhere;
+}
+.word-result-copy span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+.word-result-copy small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.3;
+}
+.word-status {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
+  border-radius: 999px;
+  padding: 0.17rem 0.45rem;
+  color: var(--accent);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.word-status--placeholder {
+  border-style: dashed;
+  color: var(--fenced-ink);
+}
+.word-entry-detail {
+  padding: clamp(1.1rem, 3vw, 1.8rem);
+  scroll-margin-top: 1.5rem;
+}
+.word-entry-detail:focus {
+  outline: 0;
+}
+.word-detail-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.word-detail-header h3 {
+  font-size: clamp(1.45rem, 3.5vw, 2.3rem);
+}
+.word-detail-header h3 span {
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.word-detail-facts {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.8fr) minmax(0, 1.2fr);
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.word-detail-facts > div {
+  padding: 0.75rem 0.85rem;
+  border-left: 2px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+}
+.word-detail-facts dt {
+  margin-bottom: 0.25rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.word-detail-facts dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.word-permission-note {
+  margin: 1rem 0 1.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--fenced) 30%, var(--line));
+  background: color-mix(in srgb, var(--fenced) 5%, var(--surface));
+}
+.word-permission-note .word-section-kicker {
+  color: var(--fenced-ink);
+}
+.word-permission-note p:last-child {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.93rem;
+}
+.word-provenance {
+  margin-top: 1.25rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+.word-section-heading h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+}
+.word-timeline {
+  display: grid;
+  gap: 0;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.word-timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.35rem minmax(0, 1fr);
+  gap: 0.65rem;
+  min-height: 6rem;
+}
+.word-timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 0.72rem;
+  bottom: 0;
+  left: 0.34rem;
+  width: 1px;
+  background: var(--line);
+}
+.word-timeline-marker {
+  position: relative;
+  z-index: 1;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-top: 0.45rem;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background: var(--surface);
+}
+.word-timeline-item.is-placeholder .word-timeline-marker {
+  border-style: dashed;
+  border-color: var(--fenced);
+}
+.word-timeline-copy {
+  padding-bottom: 1rem;
+}
+.word-timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+.word-timeline-meta time {
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+.word-timeline-copy h4 {
+  margin: 0.2rem 0 0.2rem;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+.word-timeline-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+.word-timeline-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.75rem;
+  margin-top: 0.35rem;
+}
+.word-timeline-sources a {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.word-source-section {
+  margin-top: 0.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+.word-source-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0.7rem;
+  margin-top: 0.85rem;
+}
+.word-source-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--accent);
+  background: color-mix(in srgb, var(--surface) 82%, var(--bg));
+  scroll-margin-top: 1.5rem;
+}
+.word-source-card.is-placeholder {
+  border-top-style: dashed;
+  border-top-color: var(--fenced);
+}
+.word-source-card header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+.word-source-kind,
+.word-source-org {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.word-source-card h4 {
+  margin: 0.7rem 0 0.15rem;
+  font-size: 0.98rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.word-source-org {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.68rem;
+}
+.word-source-card p:not(.word-source-org) {
+  margin: 0.55rem 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.word-source-link {
+  margin-top: auto;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+.word-no-results {
+  padding: 1rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.word-no-results p {
+  margin: 0 0 0.55rem;
+}
+.word-entry-detail--empty {
+  min-height: 14rem;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  text-align: center;
+}
+@media (max-width: 820px) {
+  .word-ledger-layout {
+    grid-template-columns: 1fr;
+  }
+  .word-results {
+    position: static;
+    max-height: none;
+  }
+  .word-results ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .word-results li:nth-child(2n) {
+    border-left: 1px solid var(--line);
+  }
+  .word-results li:nth-child(2) {
+    border-top: 0;
+  }
+}
+@media (max-width: 560px) {
+  .word-ledger {
+    margin-inline: -0.1rem;
+    padding: 0.85rem;
+  }
+  .word-ledger-header,
+  .word-detail-header,
+  .word-section-heading {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+  .word-ledger-count,
+  .word-section-heading > span {
+    white-space: normal;
+  }
+  .word-results ul,
+  .word-detail-facts {
+    grid-template-columns: 1fr;
+  }
+  .word-results li:nth-child(2n) {
+    border-left: 0;
+  }
+  .word-results li:nth-child(2) {
+    border-top: 1px solid var(--line);
+  }
+  .word-results button {
+    min-height: 4.2rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .word-results button,
+  .word-search-clear {
+    transition: none;
+  }
+}
+
+/* The free way, checked — one chain per hosted text, four numbered links each. */
+.wd-chain {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+@media (min-width: 900px) {
+  .wd-chain {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.wd-chain-card {
+  border: 1px solid color-mix(in oklab, var(--accent) 22%, var(--line));
+  border-top: 3px solid var(--free);
+  border-radius: 3px;
+  background: var(--surface);
+  padding: 0.9rem 1.05rem 0.95rem;
+}
+.wd-chain-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.wd-chain-card h3 {
+  margin: 0.15rem 0 0.1rem;
+  font-size: 1.02rem;
+}
+.wd-chain-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.65rem;
+}
+.wd-chain-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  counter-reset: chain;
+}
+.wd-chain-steps li {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 0.9rem;
+  counter-increment: chain;
+}
+.wd-chain-steps li::before {
+  content: counter(chain);
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--free) 14%, transparent);
+  color: var(--free-ink);
+}
+.wd-chain-steps strong {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.1rem;
+}
+.wd-chain-steps p {
+  margin: 0.15rem 0;
+}
+.wd-chain-shelves {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.8rem;
+}
+.wd-chain-shelves li {
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 0.1rem 0.55rem;
+}
+.wd-chain-apparatus {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+  display: grid;
+  gap: 0.85rem;
+}
+.wd-chain-apparatus li {
+  border-left: 3px solid var(--line);
+  padding: 0.1rem 0 0.1rem 0.9rem;
+  font-size: 0.9rem;
+}
+.wd-chain-apparatus strong {
+  display: block;
+}
+.wd-chain-basis {
+  display: inline-block;
+  margin: 0.1rem 0 0.2rem;
+  color: var(--free-ink);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.wd-chain-apparatus p {
+  margin: 0.2rem 0;
+}
+.wd-chain-shelves-lead {
+  border: 0;
+  padding: 0.1rem 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

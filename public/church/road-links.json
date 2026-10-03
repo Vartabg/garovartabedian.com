@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/church/build-road-links.mjs",
+  "method": "Scripture references parsed from each step's own wording and checked against the hosted canon; links to hosted writings are hand-checked, never matched by name",
+  "steps": [
+    {
+      "era": "upper-room",
+      "title": "Pentecost",
+      "refs": [
+        {
+          "label": "Acts 2",
+          "href": "/scriptures/protestant/ACT/2"
+        }
+      ],
+      "textIds": []
+    },
+    {
+      "era": "upper-room",
+      "title": "All things in common",
+      "refs": [
+        {
+          "label": "Acts 2:44",
+          "href": "/scriptures/protestant/ACT/2#v44"
+        }
+      ],
+      "textIds": []
+    },
+    {
+      "era": "upper-room",
+      "title": "The scattering that spread it",
+      "refs": [
+        {
+          "label": "Acts 8:1",
+          "href": "/scriptures/protestant/ACT/8#v1"
+        }
+      ],
+      "textIds": []
+    },
+    {
+      "era": "upper-room",
+      "title": "Antioch — first called Christians",
+      "refs": [
+        {
+          "label": "Acts 11:26",
+          "href": "/scriptures/protestant/ACT/11#v26"
+        }
+      ],
+      "textIds": []
+    },
+    {
+      "era": "apostles-scatter",
+      "title": "Church order emerges",
+      "refs": [
+        {
+          "label": "Philippians 1:1",
+          "href": "/scriptures/protestant/PHP/1#v1"
+        },
+        {
+          "label": "1 Timothy 3",
+          "href": "/scriptures/protestant/1TI/3"
+        }
+      ],
+      "textIds": []
+    },
+    {
+      "era": "apostles-scatter",
+      "title": "Rome writes to Corinth",
+      "refs": [],
+      "textIds": [
+        "1clement"
+      ]
+    },
+    {
+      "era": "under-the-sword",
+      "title": "Ignatius and the one bishop",
+      "refs": [],
+      "textIds": [
+        "ignatius-romans",
+        "ignatius-smyrnaeans",
+        "ignatius-magnesians"
+      ]
+    },
+    {
+      "era": "under-the-sword",
+      "title": "Polycarp burned at Smyrna",
+      "refs": [],
+      "textIds": [
+        "martyrdom-polycarp"
+      ]
+    }
+  ]
+}

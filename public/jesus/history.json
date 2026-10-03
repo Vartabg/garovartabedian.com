@@ -1,0 +1,221 @@
+[
+  {
+    "id": "josephus-testimonium",
+    "author": "Josephus",
+    "authorNote": "Jewish priest and historian, writing in Rome",
+    "work": "Antiquities of the Jews 18.3.3",
+    "date": "c. AD 93–94",
+    "excerpt": "Now there was about this time Jesus, a wise man, if it be lawful to call him a man; for he was a doer of wonderful works, a teacher of such men as receive the truth with pleasure. He drew over to him both many of the Jews and many of the Gentiles. He was [the] Christ. And when Pilate, at the suggestion of the principal men amongst us, had condemned him to the cross, those that loved him at the first did not forsake him; for he appeared to them alive again the third day; as the divine prophets had foretold these and ten thousand other wonderful things concerning him. And the tribe of Christians, so named from him, are not extinct at this day.",
+    "translator": "William Whiston (1737)",
+    "sourceUrl": "https://www.gutenberg.org/cache/epub/2848/pg2848.txt",
+    "note": "The Testimonium Flavianum. Most scholars regard the passage as partly authentic: a genuine Josephan notice of Jesus later expanded with Christian interpolations (notably “He was [the] Christ” and the resurrection sentence). Minorities argue for full authenticity or full interpolation.",
+    "claimsAttested": [
+      "Jesus lived in Judea in the time of Pilate",
+      "described as a wise man and teacher",
+      "attracted Jewish and Gentile followers",
+      "condemned to the cross by Pilate",
+      "movement of Christians, named from him, continued after his death"
+    ],
+    "lane": "Jewish",
+    "sourceYear": 94,
+    "distance": "about 60–65 years after the crucifixion",
+    "assessment": "Authentic core; surviving wording disputed",
+    "limits": "The received text cannot be treated as untouched Josephus. Its overt confession and resurrection sentence are widely judged later Christian additions, so only the probable core belongs in a historical minimum."
+  },
+  {
+    "id": "josephus-agapius",
+    "author": "Agapius of Hierapolis",
+    "authorNote": "Tenth-century Christian bishop transmitting an Arabic paraphrase of the Testimonium Flavianum",
+    "work": "Kitab al-Unwan (Universal History)",
+    "date": "c. AD 941",
+    "excerpt": "Agapius's version reports a virtuous wise man named Jesus, his condemnation by Pilate, his followers' report that he appeared alive, and a qualified claim that he may have been the Messiah.",
+    "translator": "Editorial summary of the Arabic reception witness discussed by Shlomo Pines (1971)",
+    "sourceUrl": "https://archive.org/details/arabicversionoft0000pine",
+    "note": "Agapius's Christian chronicle preserves a late Arabic form of the Testimonium. Its relationship to Josephus's original wording, a Syriac intermediary, and Eusebius is disputed; it cannot simply be used to strip interpolations from the received Greek text.",
+    "claimsAttested": [
+      "Agapius's version reports Jesus as a virtuous wise man",
+      "Agapius's version reports condemnation by Pilate",
+      "Agapius's version reports followers claiming an appearance after death",
+      "Agapius's version uses qualified Messiah language"
+    ],
+    "lane": "Jewish",
+    "sourceYear": null,
+    "distance": "roughly 845 years after Josephus; an indirect reception witness",
+    "assessment": "Late Arabic reception witness; relationship to Josephus's original disputed",
+    "limits": "Agapius is a tenth-century Christian chronicle, not an independent manuscript of Antiquities. Its paraphrastic wording and transmission history limit reconstruction of Josephus's original text.",
+    "excerptKind": "summary"
+  },
+  {
+    "id": "josephus-james",
+    "author": "Josephus",
+    "authorNote": "Jewish priest and historian, writing in Rome",
+    "work": "Antiquities of the Jews 20.9.1",
+    "date": "c. AD 93–94",
+    "excerpt": "Festus was now dead, and Albinus was but upon the road; so he assembled the sanhedrim of judges, and brought before them the brother of Jesus, who was called Christ, whose name was James, and some others, [or, some of his companions]; and when he had formed an accusation against them as breakers of the law, he delivered them to be stoned …",
+    "translator": "William Whiston (1737)",
+    "sourceUrl": "https://www.gutenberg.org/cache/epub/2848/pg2848.txt",
+    "note": "Unlike the Testimonium, this passage is accepted as authentic by almost all scholars. It refers to Jesus in passing to identify James, and dates James's execution by the high priest Ananus to c. AD 62.",
+    "claimsAttested": [
+      "Jesus was called Christ",
+      "Jesus had a brother named James",
+      "James was executed by stoning c. AD 62"
+    ],
+    "lane": "Jewish",
+    "sourceYear": 94,
+    "distance": "about 60–65 years after the crucifixion",
+    "assessment": "Broadly accepted as authentic",
+    "limits": "The passage mentions Jesus only to identify James. It supports a family relationship and the title used for Jesus, but gives no account of Jesus’s ministry or death."
+  },
+  {
+    "id": "talmud-sanhedrin",
+    "author": "Babylonian Talmud",
+    "authorNote": "Babylonian Talmud, compiled c. fifth–sixth century; the passage may preserve earlier material",
+    "work": "b. Sanhedrin 43a",
+    "date": "c. fifth–sixth century AD",
+    "excerpt": "Sanhedrin 43a depicts a Yeshu hanged on Passover eve after accusations involving sorcery and leading Israel astray, with a herald said to have sought a defense.",
+    "translator": "Editorial summary; consult the linked Sefaria edition",
+    "sourceUrl": "https://www.sefaria.org/Sanhedrin.43a",
+    "note": "Identification with Jesus of Nazareth and the passage's historical value are debated. The account cannot independently confirm Gospel chronology, miracles, crucifixion procedure, or a first-century legal process.",
+    "claimsAttested": [
+      "The late rabbinic passage depicts a Yeshu hanged on Passover eve",
+      "The narrative assigns sorcery and apostasy charges",
+      "The passage includes a forty-day herald motif"
+    ],
+    "lane": "Jewish",
+    "sourceYear": null,
+    "distance": "compiled roughly five centuries after the events; possible earlier material is debated",
+    "assessment": "Late rabbinic tradition; identification and historical value debated",
+    "limits": "The Talmudic redaction is late and polemical. 'Hanged' does not by itself establish crucifixion, and a sorcery charge does not independently acknowledge miracles.",
+    "excerptKind": "summary"
+  },
+  {
+    "id": "mara-bar-serapion",
+    "author": "Mara bar Serapion",
+    "authorNote": "Syriac moral-philosophical writer; identity and date uncertain",
+    "work": "Letter to Serapion (British Museum MS Add. 14658)",
+    "date": "After AD 72, perhaps late first to third century (disputed)",
+    "excerpt": "For what advantage did the Athenians gain by the murder of Socrates, the recompense of which they received in famine and pestilence? Or the people of Samos by the burning of Pythagoras, because in one hour their country was entirely covered with sand? Or the Jews by the death of their wise King, since from that very time their kingdom was taken away from them? For with justice did God make a recompense to the wisdom of all three of them... but the wise King lived on in the new laws which he had enacted.",
+    "translator": "William Cureton (1855), Spicilegium Syriacum",
+    "sourceUrl": "https://en.wikisource.org/wiki/Spicilegium_Syriacum/Mara_bar_Serapion",
+    "note": "The letter says Jews killed a wise king and that his laws endured. The identification of that unnamed figure with Jesus, the author's identity, and the letter's date remain disputed.",
+    "claimsAttested": [
+      "The letter says Jews killed an unnamed wise king",
+      "The letter says the wise king's laws endured",
+      "The author links the killing to later loss of the Jewish kingdom"
+    ],
+    "lane": "Roman",
+    "sourceYear": null,
+    "distance": "after AD 72 and possibly several centuries after Jesus; exact distance disputed",
+    "assessment": "Authentic Syriac letter; date and identification of the Wise King disputed",
+    "limits": "The letter never names Jesus or Christ and does not mention Roman rulers. Its date and the identification of the wise king are uncertain."
+  },
+  {
+    "id": "pliny-letters",
+    "author": "Pliny the Younger",
+    "authorNote": "Roman governor of Bithynia-Pontus",
+    "work": "Letters 10.96 (to Trajan)",
+    "date": "c. AD 112",
+    "excerpt": "Having never been present at any trials concerning those who profess Christianity, I am unacquainted not only with the nature of their crimes, or the measure of their punishment, but how far it is proper to enter into an examination concerning them. … the method I have observed towards those who have been brought before me as Christians is this: I asked them whether they were Christians; if they admitted it, I repeated the question twice, and threatened them with punishment; if they persisted, I ordered them to be at once punished … They affirmed the whole of their guilt, or their error, was, that they met on a stated day before it was light, and addressed a form of prayer to Christ, as to a divinity, binding themselves by a solemn oath, not for the purposes of any wicked design, but never to commit any fraud, theft, or adultery, never to falsify their word, nor deny a trust when they should be called upon to deliver it up; after which it was their custom to separate, and then reassemble, to eat in common a harmless meal.",
+    "translator": "William Melmoth (1746), rev. F. C. T. Bosanquet (1878)",
+    "sourceUrl": "https://www.gutenberg.org/cache/epub/2811/pg2811.txt",
+    "note": "Accepted as authentic; the earliest surviving pagan description of Christian worship. Numbered XCVII in this edition (10.96 in modern editions). Where many translations read “sang a hymn to Christ, as to a god,” Melmoth renders the Latin as “addressed a form of prayer to Christ, as to a divinity.”",
+    "claimsAttested": [
+      "Christians worshiped Christ as a divinity",
+      "met on a fixed day before dawn",
+      "bound themselves by oath against fraud, theft, and adultery",
+      "shared a common meal",
+      "movement had spread widely in Bithynia across ranks, ages, and sexes",
+      "some Christians were tried and punished for the name"
+    ],
+    "lane": "Roman",
+    "sourceYear": 112,
+    "distance": "about 80 years after the crucifixion",
+    "assessment": "Authentic official correspondence",
+    "limits": "Pliny reports Christian worship and Roman procedure in Bithynia. He claims no direct knowledge of Jesus and supplies no independent biography of him."
+  },
+  {
+    "id": "pliny-trajan-rescript",
+    "author": "Trajan",
+    "authorNote": "Roman emperor, replying to Pliny",
+    "work": "Letters 10.97 (rescript to Pliny)",
+    "date": "c. AD 112",
+    "excerpt": "You have adopted the right course … in investigating the charges against the Christians who were brought before you. It is not possible to lay down any general rule for all such cases. Do not go out of your way to look for them. If indeed they should be brought before you, and the crime is proved, they must be punished; with the restriction, however, that where the party denies he is a Christian, and shall make it evident that he is not, by invoking our gods, let him (notwithstanding any former suspicion) be pardoned upon his repentance. Anonymous informations ought not to be received in any sort of prosecution. It is introducing a very dangerous precedent, and is quite foreign to the spirit of our age.",
+    "translator": "William Melmoth (1746), rev. F. C. T. Bosanquet (1878)",
+    "sourceUrl": "https://www.gutenberg.org/cache/epub/2811/pg2811.txt",
+    "note": "Trajan's reply, accepted as authentic, set imperial policy toward Christians: they were not to be sought out, but were punished if accused and unrepentant, and anonymous accusations were disallowed. Numbered XCVIII in this edition (10.97 in modern editions).",
+    "claimsAttested": [
+      "Christians were a recognized legal category in the empire by c. AD 112",
+      "official policy: not sought out, punished if accused and unrepentant",
+      "pardon granted to those who recanted by invoking the Roman gods"
+    ],
+    "lane": "Roman",
+    "sourceYear": 112,
+    "distance": "about 80 years after the crucifixion",
+    "assessment": "Authentic imperial rescript",
+    "limits": "Trajan establishes Roman policy toward Christians, not facts about Jesus’s life. Christ is not named in the reply."
+  },
+  {
+    "id": "tacitus-annals",
+    "author": "Tacitus",
+    "authorNote": "Roman senator and historian",
+    "work": "Annals 15.44",
+    "date": "c. AD 116",
+    "excerpt": "But all human efforts, all the lavish gifts of the emperor, and the propitiations of the gods, did not banish the sinister belief that the conflagration was the result of an order. Consequently, to get rid of the report, Nero fastened the guilt and inflicted the most exquisite tortures on a class hated for their abominations, called Christians by the populace. Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus, and a most mischievous superstition, thus checked for the moment, again broke out not only in Judaea, the first source of the evil, but even in Rome, where all things hideous and shameful from every part of the world find their centre and become popular. Accordingly, an arrest was first made of all who pleaded guilty; then, upon their information, an immense multitude was convicted, not so much of the crime of firing the city, as of hatred against mankind.",
+    "translator": "Church & Brodribb (1876)",
+    "sourceUrl": "https://en.wikisource.org/wiki/The_Annals_(Tacitus)/Book_15",
+    "note": "Nearly all scholars accept this passage as authentic Tacitus and treat it as independent Roman testimony to Jesus' execution under Pontius Pilate in the reign of Tiberius. “Christus” is the Latin form of “Christ.”",
+    "claimsAttested": [
+      "Christus executed under Pontius Pilatus",
+      "execution took place in the reign of Tiberius",
+      "movement originated in Judaea",
+      "movement continued after his death and reached Rome",
+      "Christians blamed and punished by Nero after the fire of AD 64"
+    ],
+    "lane": "Roman",
+    "sourceYear": 116,
+    "distance": "about 85 years after the crucifixion",
+    "assessment": "Broadly accepted Roman testimony",
+    "limits": "Tacitus writes decades later and does not name his source. The passage supports the execution report and movement’s origin, not the details of Jesus’s teaching or resurrection."
+  },
+  {
+    "id": "suetonius-claudius",
+    "author": "Suetonius",
+    "authorNote": "Roman biographer and imperial secretary",
+    "work": "Life of Claudius 25",
+    "date": "c. AD 121",
+    "excerpt": "He banished from Rome all the Jews, who were continually making disturbances at the instigation of one Chrestus .",
+    "translator": "Alexander Thomson (1796), rev. T. Forester",
+    "sourceUrl": "https://www.gutenberg.org/cache/epub/6400/pg6400.txt",
+    "note": "The passage is accepted as authentic Suetonius. Most scholars read “Chrestus” as a garbled reference to Christus, linking Claudius's expulsion of Jews from Rome (c. AD 49; cf. Acts 18:2) to disputes over Christ; a minority hold it names an otherwise unknown agitator.",
+    "claimsAttested": [
+      "disturbances among the Jews of Rome connected to one “Chrestus”",
+      "Jews expelled from Rome under Claudius (c. AD 49)"
+    ],
+    "lane": "Roman",
+    "sourceYear": 121,
+    "distance": "about 90 years after the crucifixion",
+    "assessment": "Authentic text; Chrestus identification disputed",
+    "limits": "The text does not explain who Chrestus was. Linking the name to disputes about Christ is plausible, not certain, and it does not place Jesus in Rome."
+  },
+  {
+    "id": "suetonius-nero",
+    "author": "Suetonius",
+    "authorNote": "Roman biographer and imperial secretary",
+    "work": "Life of Nero 16",
+    "date": "c. AD 121",
+    "excerpt": "He likewise inflicted punishments on the Christians, a sort of people who held a new and impious superstition.",
+    "translator": "Alexander Thomson (1796), rev. T. Forester",
+    "sourceUrl": "https://www.gutenberg.org/cache/epub/6400/pg6400.txt",
+    "note": "Accepted as authentic; it independently corroborates Nero's punishment of Christians (c. AD 64), though unlike Tacitus, Suetonius does not name Christ or connect the punishments to the Great Fire.",
+    "claimsAttested": [
+      "Christians existed as an identifiable group in Rome under Nero",
+      "Christians were punished under Nero",
+      "Christianity described as a new superstition"
+    ],
+    "lane": "Roman",
+    "sourceYear": 121,
+    "distance": "about 90 years after the crucifixion",
+    "assessment": "Authentic notice of the movement",
+    "limits": "Suetonius confirms Christians and punishment under Nero, but he does not name Jesus, describe Christian beliefs, or connect the action to the fire."
+  }
+]

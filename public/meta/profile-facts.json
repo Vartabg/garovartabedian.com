@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/site/build-ai-legibility.ts",
+  "notice": "Public portfolio facts only. Never add private canonical-profile fields or import a private profile into this bank.",
+  "subject": {
+    "name": "Garo Vartabedian",
+    "location": "Austin, Texas",
+    "links": {
+      "site": "https://garovartabedian.com",
+      "services": "https://garovartabedian.com/services",
+      "work": "https://garovartabedian.com/work",
+      "contact": "https://garovartabedian.com/contact",
+      "hire": "https://garovartabedian.com/hire",
+      "resume": "https://garovartabedian.com/resume",
+      "linkedin": "https://www.linkedin.com/in/garovartabedian",
+      "github": "https://github.com/Vartabg"
+    }
+  },
+  "headline": "Software & Automation Developer · Customer-Facing Technical Delivery",
+  "facts": [
+    {
+      "id": "location",
+      "claim": "Garo Vartabedian is based in Austin, Texas.",
+      "evidence": [
+        "/hire",
+        "/contact"
+      ],
+      "basis": "Stated location in the public portfolio truth bank."
+    },
+    {
+      "id": "field-service",
+      "claim": "Field service engineer for enterprise hardware deployments at View, Inc., on customer sites from October 2016 to July 2020.",
+      "evidence": [
+        "/resume#experience",
+        "/hire"
+      ],
+      "basis": "Employment dates recorded in the public truth bank; the résumé page renders the same source."
+    },
+    {
+      "id": "navy",
+      "claim": "United States Navy Electronics Technician, February 2003 to August 2008.",
+      "evidence": [
+        "/resume#experience"
+      ],
+      "basis": "Public-record framing only: branch, rating, and dates. No further service detail of any kind is published anywhere on this site."
+    },
+    {
+      "id": "education",
+      "claim": "BA, Philosophy, Columbia University (2013); AS, Business Administration, Queensborough Community College (CUNY) (2011)",
+      "evidence": [
+        "/resume",
+        "/about"
+      ],
+      "basis": "Degrees recorded in the public truth bank."
+    },
+    {
+      "id": "independent-build",
+      "claim": "Independent software and web developer since May 2022; the shipped work is public and inspectable.",
+      "evidence": [
+        "/work/telemetry",
+        "/work/jobpilot",
+        "/work/accessibility",
+        "/work/garovartabedian",
+        "/work/eye"
+      ],
+      "basis": "Each linked case study describes a project whose source or live deployment is reachable from the page."
+    },
+    {
+      "id": "this-site",
+      "claim": "garovartabedian.com — a self-funded research platform",
+      "evidence": [
+        "/about",
+        "/work/garovartabedian",
+        "/labs",
+        "/meta/corpus-health.json"
+      ],
+      "basis": "garovartabedian.com is a self-funded passion project and was not commissioned by a client. Owner-attested by Garo Vartabedian on 2026-08-31; the linked pages separately expose the live artifact and its generated validation record."
+    },
+    {
+      "id": "jobpilot-human-in-the-loop",
+      "claim": "JobPilot prepares and scores application material for human review; it does not submit applications automatically.",
+      "evidence": [
+        "/work/jobpilot"
+      ],
+      "basis": "Recorded as a hard boundary in the truth bank and enforced by the voice check in the test suite."
+    },
+    {
+      "id": "proof-standard",
+      "claim": "No traffic, revenue, user-count, or enterprise-adoption claims are made anywhere on this site.",
+      "evidence": [
+        "/work/garovartabedian",
+        "/hire"
+      ],
+      "basis": "Enforced mechanically: scripts/check-voice.ts fails the build if such a claim appears in visitor-facing portfolio copy."
+    },
+    {
+      "id": "local-rag-document-count",
+      "claim": "1,200+ of my own documents",
+      "evidence": [
+        "/work/jobpilot"
+      ],
+      "basis": "The recorded Chroma RAG inventory contained 1,242 document stubs, so the public claim is a conservative lower bound."
+    }
+  ]
+}

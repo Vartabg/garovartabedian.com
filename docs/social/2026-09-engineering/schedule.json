@@ -1,0 +1,41 @@
+{
+  "profile": "https://www.linkedin.com/in/garovartabedian/",
+  "audience": "Anyone",
+  "timezone": "America/Chicago",
+  "posts": [
+    {
+      "file": "01-troubleshooting.txt",
+      "media": "01-troubleshooting.png",
+      "scheduled_for": "2026-09-08T09:15:00-05:00",
+      "status": "scheduled; LinkedIn success notification verified"
+    },
+    {
+      "file": "02-research-workflow.txt",
+      "media": "02-research-workflow.png",
+      "scheduled_for": "2026-09-10T09:15:00-05:00",
+      "status": "scheduled; LinkedIn success notification verified"
+    },
+    {
+      "file": "03-product-demo.txt",
+      "media": "03-product-demo.mp4",
+      "scheduled_for": "2026-09-15T09:15:00-05:00",
+      "status": "scheduled; LinkedIn Scheduled (3) count verified"
+    }
+  ],
+  "video": {
+    "duration_seconds": 55.888,
+    "width": 1200,
+    "height": 1500,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "narration": "macOS Alex; synthetic; labeled in video and post",
+    "captions": "Burned-in transcript and custom SRT uploaded to LinkedIn"
+  },
+  "validation": [
+    "All post bodies below 3000 characters",
+    "Both diagrams visually inspected",
+    "Video contact sheet and media metadata inspected",
+    "Downloaded John 1 dossier contains source boundary and research prompts",
+    "No website source changes"
+  ]
+}

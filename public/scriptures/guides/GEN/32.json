@@ -1,0 +1,236 @@
+{
+  "book": "GEN",
+  "chapter": 32,
+  "bookName": "Genesis",
+  "summary": "As Jacob approaches home, news that Esau is coming with four hundred men leads him to divide his company, pray for rescue, and send generous gifts ahead. Alone after crossing his household over the Jabbok, he wrestles through the night, receives the name Israel and a blessing, and leaves limping after calling the place Peniel.",
+  "whyItMatters": "The promised return brings Jacob face to face with the brother he wronged and with an encounter he cannot control. His new name and injury hold blessing and vulnerability together.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Jacob's route toward Seir, his camp near the Jabbok, and the solitary nighttime wrestling place.",
+    "literaryForm": "Journey and preparation narrative, prayer, staged gift messages, and a mysterious encounter with naming explanations."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Jacob and Laban have sworn not to cross their boundary to harm each other. That settled separation leaves Jacob to face the unresolved relationship with Esau.",
+      "verseRefs": [
+        "31:43-55"
+      ]
+    },
+    "here": {
+      "text": "Fear of Esau organizes the preparations before the nighttime struggle interrupts Jacob's movement toward the meeting.",
+      "verseRefs": [
+        "32:3-23",
+        "32:24-32"
+      ]
+    },
+    "after": {
+      "text": "Esau runs to embrace Jacob, and the brothers weep together; their eventual separate journeys are peaceful.",
+      "verseRefs": [
+        "33:1-17"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Angels and news of Esau",
+      "verses": "1-6",
+      "note": "Jacob names God’s camp and sends messengers, who report four hundred men."
+    },
+    {
+      "heading": "Fear, division, and prayer",
+      "verses": "7-12",
+      "note": "He prepares for possible attack and appeals to God’s command and promise."
+    },
+    {
+      "heading": "Gifts sent in successive droves",
+      "verses": "13-21",
+      "note": "Jacob hopes repeated gifts will make the meeting favorable."
+    },
+    {
+      "heading": "The household crosses the Jabbok",
+      "verses": "22-23",
+      "note": "He sends his family and possessions across the stream."
+    },
+    {
+      "heading": "Wrestling, blessing, and a wounded departure",
+      "verses": "24-32",
+      "note": "Jacob receives a new name, calls the place Peniel, and limps into the sunrise."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "32:10",
+      "text": "I am not worthy of the least of all the loving kindnesses, and of all the truth, which you have shown to your servant; for with just my staff I crossed over this Jordan; and now I have become two companies.",
+      "why": "Jacob compares his earlier solitary crossing with the wealth he now has and admits his unworthiness."
+    },
+    {
+      "ref": "32:28",
+      "text": "He said, “Your name will no longer be called Jacob, but Israel; for you have fought with God and with men, and have prevailed.”",
+      "why": "The new name is explained within the encounter through struggle with God and people."
+    },
+    {
+      "ref": "32:31",
+      "text": "The sun rose on him as he passed over Peniel, and he limped because of his thigh.",
+      "why": "The blessing does not remove the injury with which Jacob leaves."
+    }
+  ],
+  "themes": [
+    "fear and reconciliation",
+    "prayer from vulnerability",
+    "gifts and appeasement",
+    "struggle and blessing",
+    "a new name",
+    "lasting injury"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Does Esau’s company prove that he intends to attack?",
+      "answer": "The messengers report four hundred men, and Jacob interprets the news fearfully. The chapter does not disclose Esau's intention, so Jacob's preparations should be read as a response to uncertainty rather than confirmed knowledge of an assault.",
+      "verseRefs": [
+        "32:6-8"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does Jacob emphasize in his prayer?",
+      "answer": "He recalls God's command to return, confesses his small beginnings and unworthiness, asks protection for mothers and children, and repeats the promise of numerous descendants. His prayer joins gratitude with a very specific fear.",
+      "verseRefs": [
+        "32:9-12"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does Jacob hope the gifts will accomplish?",
+      "answer": "He spaces the animals into separate droves and repeats a respectful message naming Esau as lord and himself as servant. He hopes to appease Esau before meeting him, but says only that perhaps Esau will accept him.",
+      "verseRefs": [
+        "32:13-21"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Who is the nighttime wrestler?",
+      "answer": "The narrator initially calls him a man, while the new-name speech speaks of struggling with God and Jacob interprets the encounter as seeing God face to face. His opponent refuses to give a name, so the passage preserves mystery rather than supplying a complete identification.",
+      "verseRefs": [
+        "32:24-30"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What does the name “Israel” mean within this scene?",
+      "answer": "The speaker connects it with Jacob having fought with God and with people and having prevailed. That is the chapter's own explanation of the new name; it does not require reconstructing an unprovided source-language derivation.",
+      "verseRefs": [
+        "32:27-28"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        27,
+        28
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "How can Jacob prevail and still be injured?",
+      "answer": "He holds on and insists on a blessing, yet a touch to his thigh leaves him limping. The outcome resists a simple picture of mastery: Jacob receives what he seeks while carrying a visible sign of vulnerability.",
+      "verseRefs": [
+        "32:25-31"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Why mention a food custom at the end?",
+      "answer": "The narrator connects the avoidance of the sinew of the hip with the place where Jacob was struck. This closing explanation extends the significance of one ancestor's bodily experience to the children of Israel.",
+      "verseRefs": [
+        "32:31-32"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        31,
+        32
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "herd",
+      "def": "A separate group of livestock sent ahead as successive gifts to Esau."
+    },
+    {
+      "term": "Jabbok",
+      "def": "The stream Jacob crosses with his household before the nighttime struggle."
+    },
+    {
+      "term": "Peniel",
+      "def": "The name Jacob gives the encounter place because he says he saw God face to face and survived."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "ef999cb40cf1ae09629709ae1b7671059715e7d6cd40ec508228267baa2a2879",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

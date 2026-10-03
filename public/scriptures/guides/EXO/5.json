@@ -1,0 +1,208 @@
+{
+  "book": "EXO",
+  "chapter": 5,
+  "bookName": "Exodus",
+  "summary": "Moses and Aaron ask Pharaoh to let Israel hold a wilderness feast, but he refuses and calls the request an excuse for idleness. He withholds straw while keeping the brick quota, the Israelite officers are beaten and accuse Moses and Aaron of worsening their danger, and Moses brings the failed first encounter back to Yahweh.",
+  "whyItMatters": "The first audience with Pharaoh increases the people’s suffering instead of securing release. The officers’ protest and Moses’ direct complaint show the cost of a mission whose promised outcome has not yet arrived.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "Pharaoh’s court and Egypt’s brick-making labor system, including the route where beaten Israelite officers meet Moses and Aaron.",
+    "literaryForm": "Confrontation with Pharaoh followed by a labor decree, officials’ complaint, and Moses’ lament."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The elders have believed Moses and Aaron’s message and worshiped because God has seen their affliction. The two now take the request to Pharaoh.",
+      "verseRefs": [
+        "4:29-31",
+        "5:1"
+      ]
+    },
+    "here": {
+      "text": "Pharaoh turns the request into a heavier brick quota without straw, and the resulting injuries bring blame upon Moses and Aaron.",
+      "verseRefs": [
+        "5:1-21"
+      ]
+    },
+    "after": {
+      "text": "Yahweh answers Moses’ complaint by promising a strong-handed release and renewing the covenant language of rescue and land.",
+      "verseRefs": [
+        "6:1-8"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "A request refused",
+      "verses": "1-5",
+      "note": "Moses and Aaron ask for a wilderness feast; Pharaoh denies Yahweh’s authority and orders work."
+    },
+    {
+      "heading": "Straw removed, quota retained",
+      "verses": "6-9",
+      "note": "Pharaoh instructs supervisors to intensify brick making and dismisses the request as idleness."
+    },
+    {
+      "heading": "The officers beaten",
+      "verses": "10-14",
+      "note": "Workers gather stubble while the required daily output remains unchanged."
+    },
+    {
+      "heading": "An appeal to Pharaoh fails",
+      "verses": "15-19",
+      "note": "Israelite officers protest the impossible terms and receive another accusation of idleness."
+    },
+    {
+      "heading": "Blame and lament",
+      "verses": "20-23",
+      "note": "The officers confront Moses and Aaron; Moses asks why the mission has brought trouble."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "5:2",
+      "text": "Pharaoh said, “Who is Yahweh, that I should listen to his voice to let Israel go? I don’t know Yahweh, and moreover I will not let Israel go.”",
+      "why": "Pharaoh makes his refusal a challenge to Yahweh’s authority as well as to the request."
+    },
+    {
+      "ref": "5:14",
+      "text": "The officers of the children of Israel, whom Pharaoh’s taskmasters had set over them, were beaten, and were asked, “Why haven’t you fulfilled your quota both yesterday and today, in making brick as before?”",
+      "why": "The beating of Israelite officers makes the increased burden concrete in human bodies."
+    },
+    {
+      "ref": "5:23",
+      "text": "For since I came to Pharaoh to speak in your name, he has brought trouble on this people. You have not rescued your people at all!”",
+      "why": "Moses names the gap between the promised rescue and the harm that followed his arrival."
+    }
+  ],
+  "themes": [
+    "contested authority",
+    "straw and brick quotas",
+    "punishment of intermediaries",
+    "disillusionment",
+    "Moses’ protest"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What exactly do Moses and Aaron ask Pharaoh to allow?",
+      "answer": "They first announce a feast for Yahweh in the wilderness and then describe a three-day journey for sacrifice. Pharaoh answers that he does not know Yahweh and will not let Israel go.",
+      "verseRefs": [
+        "5:1-4"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why is straw important to the brick quota?",
+      "answer": "Pharaoh removes the supply of straw but demands the same number of bricks. Workers must now collect stubble across Egypt while meeting the old daily target, which the beaten officers describe as impossible under the new terms.",
+      "verseRefs": [
+        "5:6-14"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        6
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Does the chapter call the workers idle?",
+      "answer": "Pharaoh repeatedly uses that charge to dismiss their worship request and justify heavier labor. The narration instead shows people scattered to gather straw, pressed for the same output, and beaten when they cannot deliver it.",
+      "verseRefs": [
+        "5:5-19"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        5
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Who are the Israelite officers, and why are they exposed?",
+      "answer": "Pharaoh’s taskmasters have set them over the workers, so they are held responsible for unmet quotas. They appeal to Pharaoh as his servants but are blamed and beaten by the system they must administer.",
+      "verseRefs": [
+        "5:10-19"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        10
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why do the officers accuse Moses and Aaron?",
+      "answer": "They have just been beaten under a policy Pharaoh issued after the leaders’ request, and they fear the king’s servants now have reason to kill them. The accusation is a response to real worsening conditions, not proof that they desired bondage.",
+      "verseRefs": [
+        "5:14-21"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        14
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Is Moses allowed to question the result of his mission?",
+      "answer": "He returns to Yahweh and asks why trouble came on the people and why he was sent. His last line says no rescue has occurred at all, leaving his complaint open for the answer in the next chapter.",
+      "verseRefs": [
+        "5:20-23"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        20
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What difference is there between Pharaoh’s words and the people’s lived work?",
+      "answer": "Pharaoh calls the demand a distraction from labor; the officers say they receive no straw and are still ordered to make bricks. The chapter lets the ruler’s accusation and the workers’ material account be heard side by side.",
+      "verseRefs": [
+        "5:6-19"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        6
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "straw",
+      "def": "Material removed from the brick-making supply while Pharaoh keeps the same production quota."
+    },
+    {
+      "term": "taskmasters",
+      "def": "Pharaoh’s supervisors who enforce the work quota and beat Israelite officers."
+    },
+    {
+      "term": "officers",
+      "def": "Israelite intermediaries held accountable for the workers’ required brick output."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "154b20cf03b8398c919bd0091efc646780161da87e805ca38fd9ce6e38e9a045",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

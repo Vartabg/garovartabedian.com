@@ -1,0 +1,314 @@
+{
+  "book": "ENO",
+  "bookName": "1 Enoch",
+  "oneLine": "An ancient Jewish apocalyptic collection — five booklets bound as one — that retells the Watcher myth, unveils heavenly journeys, and gives its name to the Son of Man and the Elect One who judges the kings of the earth.",
+  "orient": "1 Enoch is not one continuous narrative but a library of five major booklets plus appendices, gathered under the name of the seventh patriarch. The Book of the Watchers (chapters 1–36) expands Genesis 6:1–4 into a descent of angelic Watchers, their illicit marriages, and Enoch's tour of the cosmos and places of punishment. The Parables or Similitudes (37–71) present the Head of Days, the Son of Man / Elect One seated on a throne to judge kings and the mighty. The Astronomical Book (72–82) charts the sun's gates and the moon's courses. The Book of Dream Visions (83–91) allegorizes history from Adam to the author's present as animals and shepherds. The Epistle (92–105) exhorts the righteous amid a wicked generation, and the final chapters (106–108) narrate Noah's birth and a closing blessing. Read it as apocalypse — revelation through otherworldly journeys and symbolic visions — not as a modern chronology.",
+  "whereYouAre": "The collection reaches its final Ge'ez form in Ethiopia, but its pieces come from Second Temple Judaism in Palestine, roughly the third century BC to the first century AD. Aramaic fragments of four of the five booklets were found among the Dead Sea Scrolls at Qumran (4Q201–212), showing Jewish circulation centuries before the surviving Ethiopic manuscripts. The complete text survives only in Ge'ez, translated from a Greek form that itself rendered a Semitic original. R. H. Charles's 1913 English translation, hosted here, works from Ethiopic manuscripts with comparison to Greek fragments and is the scholarly standard public-domain English.",
+  "facts": {
+    "writtenBy": "Pseudonymously attributed to Enoch (Genesis 5:21–24), who \"walked with God\" and was taken. Modern scholarship treats the work as composite, with distinct authors and redactors for the Watchers, Parables, Astronomical Book, Dream Visions, and Epistle.",
+    "writtenWhen": "The Astronomical Book and parts of the Watchers likely originated in the third century BC; the Dream Visions (notably the Apocalypse of Weeks and Animal Apocalypse) around the mid-second century BC; the Parables perhaps in the late first century BC or first century AD; the Epistle and appendices in the second to first centuries BC. The Ge'ez translation was produced after Christianity reached Aksum, and the complete codices date to the fifteenth century and later.",
+    "writtenFor": "Jewish readers confronting Hellenistic power, Hellenistic cultural pressure, and internal questions of theodicy and eschatology — who truly judges, whether the righteous will be vindicated, and how the heavens order time — later preserved and canonically received in the Ethiopian Orthodox Tewahedo Church.",
+    "place": "Composed in Judea and perhaps Galilee, preserved at Qumran, translated in Egypt or the Levant into Greek, and fully transmitted in Christian Ethiopia; the narrative world stretches from Eden and Mount Hermon to the ends of the earth and the chambers of the luminaries.",
+    "covers": "Heavenly watchers and giants (1–16), Enoch's cosmic journeys (17–36), three parables of judgment and the Son of Man (37–71), solar and lunar calendars and gates (72–82), animal-history visions (83–91), weeks-apocalypse and exhortation (92–105), and Noah's birth with final blessing (106–108).",
+    "size": "108 chapters, 1,588 verses, and about 58,000 words in the R. H. Charles English text hosted here."
+  },
+  "language": {
+    "writtenIn": "The collection grew in Aramaic and Hebrew, was rendered early into Koine Greek, and survives complete only in Ge'ez (Classical Ethiopic), with Greek fragments preserving two chapters of the Parables and portions of other booklets.",
+    "register": "Apocalyptic revelation: first-person heavenly tours, symbolic animal allegories, astronomical inventories, hortatory addresses, and courtroom visions of judgment. Extended blessing-and-curse, woe-oracle, and hymnic refrains punctuate the narrative.",
+    "spokenWorld": "Judea under Persian and then Hellenistic rule, with scribal circles conversant in Aramaic for literary composition, Hebrew for ancestral tradition, and Greek for wider Mediterranean transmission; Ge'ez later became the liturgical vehicle in Aksumite and medieval Ethiopia.",
+    "readerSignal": "Watch for titles that become figures: Watchers, Nephilim / giants, Head of Days, Son of Man / Elect One / Righteous One, the Lord of Spirits, angels of punishments. Calendar formulae (gates, windows, months) and animal symbols (bulls, sheep, wild beasts, shepherds) carry theological arguments, not merely data.",
+    "englishLayer": "R. H. Charles's 1913 English translates a critical Ge'ez text, keeping Semitic names and editorial marks (⌈⌉ for conjectured readings, [ ] for supplied words). The hosted chapter and verse divisions follow Charles's edition, which made the five-book work readable as 108 numbered chapters.",
+    "textualHistory": [
+      {
+        "label": "The Semitic booklets",
+        "language": "Aramaic and Hebrew",
+        "role": "composition",
+        "description": "The core booklets were composed in Aramaic, with some Hebrew, as confirmed by Qumran Aramaic fragments for the Watchers, Astronomical Book, Dream Visions, and Epistle, though not for the Parables, whose Semitic Vorlage is debated.",
+        "sourceIds": ["vanderkam-enoch", "nickelsburg-enoch", "hosted-charles"]
+      },
+      {
+        "label": "The Greek Enoch",
+        "language": "Koine Greek",
+        "role": "translation",
+        "description": "A Greek translation rendered the Semitic forms; fragments survive at Oxyrhynchus, in the Chester Beatty papyri, and notably Codex Panopolitanus which preserves 1:1–32:6, while the Parables survive in Greek only as a few small quotations.",
+        "sourceIds": ["charles-introduction", "vanderkam-enoch", "milk-enoch-greek"]
+      },
+      {
+        "label": "The complete Ethiopic Enoch",
+        "language": "Ge'ez (Classical Ethiopic)",
+        "role": "translation",
+        "description": "The full work survives only in Ge'ez, translated from Greek and transmitted in Ethiopian Christian manuscripts. The fifteenth-century and later codices preserve all five booklets and the Noah appendices, and became canonical in the Ethiopian Tewahedo tradition.",
+        "sourceIds": ["charles-introduction", "ethiopian-canon", "hosted-charles"]
+      },
+      {
+        "label": "The English book on this site",
+        "language": "Modern English from Ge'ez and Greek (R. H. Charles 1913)",
+        "role": "translation",
+        "description": "The hosted text is R. H. Charles's 1913 translation from Ge'ez, critically established from manuscripts at London, Paris, and Tana, with conjectural brackets and supplied words marked. It preserves Charles's chapterization into 108 chapters and his verse numbering.",
+        "sourceIds": ["hosted-charles", "charles-introduction"]
+      }
+    ],
+    "features": [
+      {
+        "title": "עִירִין / ἐγρήγοροι / Watchers: those who do not sleep",
+        "original": "Aram. עִירִין (ʿirin), Ge'ez ተኩላት (täkulat?) — ge'ez *täkula* renders Gk. ἐγρήγοροι (egrēgoroi) — “watchers / those who stay awake”",
+        "explanation": "In chapters 1–16 the Watchers are not merely fallen angels but a heavenly priesthood or guard whose job was to watch and therefore not to sleep or stray. Their descent on Hermon is told as a conscious boundary-crossing: they choose wives, beget giants, and teach forbidden arts (charms, metals, cosmetics). Charles's English often says Watchers, holy Watchers, or eternal Watchers, preserving the Aramaic sense of a class rather than a single figure.",
+        "translationNote": "Charles keeps Watchers as a technical class; some popular paraphrases flatten it to angels or fallen angels, losing the ‘wakefulness’ that makes their sleeping with women an inversion of vocation.",
+        "caution": "Not every later Christian reference to fallen angels means Enoch's Watcher story. The category is specifically apocalyptic and priestly; calling any rebellious angel a Watcher without that narrative overreads the term.",
+        "refs": ["1:5", "6:2", "10:9", "12:4", "15:3"],
+        "sourceIds": ["charles-introduction", "nickelsburg-enoch", "hosted-charles"]
+      },
+      {
+        "title": "Son of Man / Elect One / Righteous One: a figure with three names for one office",
+        "original": "Ge'ez walda sab'e — “Son of Man,” ḫəruy — “Elect One,” ṣādəq — “Righteous One” (rendering Gk. ὁ υἱὸς τοῦ ἀνθρώπου / ὁ ἐκλεκτός)",
+        "explanation": "Parables chapters 38–71 repeatedly introduce a single heavenly figure under alternating titles. The Head of Days invites the Son of Man / Elect One to sit on the throne; kings and the mighty then face him in judgment. The three names are not three characters but a titular cluster for one enthroned assessor. The chapter's ‘light of the Gentiles’ or ‘staff of the righteous’ language belongs to that same figure's described function.",
+        "translationNote": "Charles prints Son of Man, the Elect One, and the Righteous One with initial capitals, making the titular repetition visible; a lower-cased English equivalent hides that the book is building one office.",
+        "caution": "Whether this figure is messianic in a later Christian sense, an angelic vice-regent, or the exalted Enoch himself is not settled inside the text. The Parables show the function clearly and leave its ontology disputed.",
+        "refs": ["46:1", "48:2", "62:5", "71:14"],
+        "sourceIds": ["charles-introduction", "nickelsburg-enoch", "vanderkam-enoch", "hosted-charles"]
+      },
+      {
+        "title": "Head of Days and Lord of Spirits: throne language for the Most High",
+        "original": "Ge'ez rāʾsa mawāʿel — “Head / Ancient of Days,” ’əgzi’a manfasāt — “Lord of Spirits”",
+        "explanation": "The Parables calls God the Head of Days — white and ancient in the 2:13-free sense, enthroned before time — and far more often the Lord of Spirits, the book's distinctive divine name. The phrase multiplies where Daniel says Ancient of Days and where other Enoch booklets say the Most High or the Great One. It signals the book's courtroom cosmos: spirits crowd a throne room.",
+        "translationNote": "Head of Days preserves the Semitic idiom; Ancient of Days in some English Bibles already interprets it. Lord of Spirits is Charles's literal Ge'ez rendering and appears more than one hundred times only in the Parables.",
+        "caution": "Do not treat Lord of Spirits as a second deity because its frequency. It is the book's preferred proper name for the one God in that booklet, just as the Astronomical Book prefers other designations.",
+        "refs": ["46:1", "47:3", "55:1", "60:1", "71:10"],
+        "sourceIds": ["charles-introduction", "hosted-charles", "vanderkam-enoch"]
+      },
+      {
+        "title": "Gates, windows, and overplus days: how the Astronomical Book counts a year",
+        "original": "Ge'ez ḫawāḫət — “gates / windows” of heaven, plus ḍāppa — “excess / added days”",
+        "explanation": "Chapters 72–82 describe a solar year of 364 days reckoned by twelve thirty-day months plus four intercalary days, one added at each quarter, while the sun exits through six eastern gates and sets through six western windows. The moon's phases are then mapped against that solar frame. Charles marks the four added days as intercalary and keeps Ge'ez gate-language, so the hosted text's very vocabulary carries its calendar argument: a perfect, Sabbath-friendly year.",
+        "translationNote": "Charles prints gates and windows as technical calendar windows, not poetic metaphors. A translation that turns every gate into a season loses the text's architectonic claim that heaven itself is built like a timekeeping house.",
+        "caution": "The 364-day arithmetic is the book's ideal, not evidence that ordinary Jewish life used it. Qumran's calendar debate, Jubilees, and rabbinic reckoning show dispute, not universal practice.",
+        "refs": ["72:1", "75:1", "78:2", "82:4", "82:11"],
+        "sourceIds": ["charles-introduction", "vanderkam-enoch", "hosted-charles"]
+      }
+    ],
+    "examplesHeading": "Ge'ez–Greek–Aramaic words the English is translating",
+    "examples": [
+      {
+        "ref": "1:9",
+        "form": "baharḥā babbḥ … walda ṣādq — with ten thousands of holy ones",
+        "meaning": "Jude 14–15's famous quotation; the Parables repeats its Son of Man as judge",
+        "why": "The single verse with the largest reception history in the New Testament; Charles's 1:9 wording is what Jude quotes, and chapters 46–48 develop its coming-one as the Elect One.",
+        "sourceIds": ["charles-introduction", "hosted-charles"]
+      },
+      {
+        "ref": "10:4",
+        "form": "ʿAzāzēl — Azazel",
+        "meaning": "the Watcher-leader bound hand and foot and cast into darkness",
+        "why": "Leviticus 16's scapegoat-associated name becomes a narrative antagonist here; Azazel, not generic Satan, is the one the archangels bind and to whom all sin is ascribed in 10:8.",
+        "sourceIds": ["nickelsburg-enoch", "hosted-charles"]
+      },
+      {
+        "ref": "46:1",
+        "form": "walda sab'e — Son of Man",
+        "meaning": "the figure with a human face, accompanying the Head of Days",
+        "why": "First full presentation of the Parables' enthroned assessor — the book's most debated phrase, whose Daniel 7:13 background and later Christian adoption meet in this chapter.",
+        "sourceIds": ["vanderkam-enoch", "hosted-charles"]
+      },
+      {
+        "ref": "72:1",
+        "form": "maṣḥafa məs̱lālāt — Book of the courses of the luminaries",
+        "meaning": "the Astronomical Book's superscription introducing gates and days",
+        "why": "The booklet's opening formula names its own genre — not narrative but an ordered inventory of the heavens, whose gate-language must be read as calendar instruction.",
+        "sourceIds": ["charles-introduction", "hosted-charles"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Composite apocalypse — revelation by tour, parable, calendar, animal allegory, and epistle",
+    "how": "Read each booklet on its own terms and then as a stitched whole. The Watchers tells a descent-and-response myth and then walks through cosmic geography. The Parables stages courtroom revelations with shifting titles for one judged and one judging. The Astronomical Book reads like an inventory. The Dream Visions tell history as beast-and-shepherd allegory from a dreamer's couch. The Epistle addresses sons directly. Repetition across booklets is not confusion; it is anthology."
+  },
+  "cast": [
+    {
+      "name": "Enoch",
+      "who": "Seventh patriarch, taken by God, who becomes the scribe of judgment, recorder of heavenly secrets, and in chapter 71, one drawn near to the heavenly assessor."
+    },
+    {
+      "name": "The Watchers and their sons",
+      "who": "Angelic watchers led by Shemihazah and Azazel, and the giants / Nephilim born to them, who consume, corrupt, and teach forbidden arts until judgment removes them."
+    },
+    {
+      "name": "The Head of Days and the Lord of Spirits",
+      "who": "The God of the Parables, ancient and enthroned, who designates the Elect One. Other booklets call him the Most High, the Holy and Great One, the Lord of the whole earth."
+    },
+    {
+      "name": "The Son of Man / Elect One / Righteous One",
+      "who": "A single heavenly figure named variously in the Parables; chosen before the world, seated in judgment over kings, the mighty, and the oppressed, whose identity the book shows by function more than by prior biography."
+    },
+    {
+      "name": "The archangels and angels of punishments",
+      "who": "Michael, Raphael, Gabriel, Phanuel (and Uriel for the luminaries), who bind, heal, interpret, and prepare instruments of judgment."
+    },
+    {
+      "name": "Noah, Methuselah, and Lamech",
+      "who": "Late appendices turn to Noah's luminous birth and the flood as a prior judgment remembered while the present wickedness matures."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "The Watchers descend and Enoch journeys",
+      "chapters": "1-36",
+      "note": "Blessing and judgment prologue (1–5); the Watcher descent on Hermon, giants, and illicit arts (6–11); Enoch commissioned to announce judgment (12–16); tours of fire, darkness, the mountain of the dead, and the ends of the earth (17–36)."
+    },
+    {
+      "heading": "The Parables of judgment and the enthroned Elect One",
+      "chapters": "37-71",
+      "note": "Three parables (38–44, 45–57, 58–71) unveil the Head of Days, the Son of Man / Elect One, the weighing of kings, the flood and luminaries digression, and Enoch's approach to the heavenly figure."
+    },
+    {
+      "heading": "The Book of the Courses of the Luminaries",
+      "chapters": "72-82",
+      "note": "An inventory of the sun's six gates and twelve windows, the moon's phases, winds, and a 364-day solar year with four added days; Enoch is charged to preserve it for posterity."
+    },
+    {
+      "heading": "Dream visions: from bulls to shepherds",
+      "chapters": "83-91",
+      "note": "Two dreams: the flood vision of falling stars and drowning bulls (83–84), and the animal apocalypse retelling history from Adam through the Maccabean crisis as cattle, sheep, and predators and shepherds (85–90), followed by the early weeks (91)."
+    },
+    {
+      "heading": "The Epistle: exhortation to the righteous",
+      "chapters": "92-105",
+      "note": "The Apocalypse of Weeks resumed and completed (92–93), an extended epistle charging the righteous to walk straight, denouncing wealth and oppression, and promising vindication after judgment."
+    },
+    {
+      "heading": "The birth of Noah and the closing blessing",
+      "chapters": "106-108",
+      "note": "Lamech marvels at a radiant infant, Methuselah consults Enoch, who interprets the portent amid renewed Watcher transgression; a final blessing reassures the righteous."
+    }
+  ],
+  "purpose": "1 Enoch answers the questions Genesis 6:1–4 leaves open — who the sons of God were, what their offspring did, and who will judge such corruption — and extends them into a worldview in which history, the heavens, and the final courtroom cohere. The Watchers make hidden evil visible and punishable; the Parables assert that an enthroned Elect One, not the kings who feel secure, decides the nations; the Astronomical Book insists that the luminaries keep a law; the Dream Visions place the present persecution inside a controlled historical allegory; the Epistle turns that assurance into daily resistance for the righteous.",
+  "snags": [
+    {
+      "snag": "Is Enoch the author, and did Jude think so?",
+      "help": "The book presents itself as Enoch's own revelation, and Jude 14–15 quotes 1:9 as Enoch's prophecy. Most scholars see pseudonymous Jewish composition between the third century BC and first century AD, preserved at Qumran and cited as an authoritative ancestral voice. Jude's citation shows early Jewish-Christian esteem for the passage, not necessarily a modern claim about historical authorship of the whole 108-chapter corpus."
+    },
+    {
+      "snag": "Where does the Son of Man in Enoch meet the Son of Man in the Gospels?",
+      "help": "The overlap of phrasing is real and close — a human-like figure seated to judge, chosen and named before creation — and some see direct literary dependence. Others stress that Daniel 7 is the shared source and that Enoch and the Gospels apply son-of-man language differently. The responsible move is to compare the three points of the triangle — Daniel, Enoch, and the Gospels — without flattening one into another."
+    },
+    {
+      "snag": "Does the Astronomical Book teach science?",
+      "help": "It teaches an ideal, Sabbath-aligned 364-day calendar and a gate cosmology in which heavenly architecture regulates time. It is evidence for Second Temple calendar disputes (alongside Jubilees and Qumran), not for an empirical astronomy lesson. Read it as liturgical argument that creation obeys law rather than as observational report."
+    },
+    {
+      "snag": "Are giants and Watchers meant literally?",
+      "help": "The Watcher myth reads Genesis 6 as cosmic transgression and works out its moral logic: boundary-crossing begets consuming offspring and illicit instruction, which calls for binding and judgment. Reader traditions differ on historical referent — angelic rebellion, mythologized kings, or demon origins — but inside the text the story explains where evil and its arts come from before Noah's flood enters at all."
+    },
+    {
+      "snag": "Why is Enoch scripture for one church and not for others?",
+      "help": "The Ethiopian Orthodox Tewahedo Church receives the Ge'ez Enoch canonically, while most Jewish and other Christian canons do not, though Jude's citation and patristic awareness kept it in discussion. ‘Canonical’ therefore depends on which tradition you are asking. The site hosts the Charles text on the Ethiopian shelf precisely for that reason."
+    },
+    {
+      "snag": "The end moves from apocalyptic grandeur to agrarian calendar detail and household counsel.",
+      "help": "That is the anthology's design. The collection begins with cosmic transgression and climactic judgment, then deliberately steps down into how days are counted and how the righteous walk now — calendars and conduct are not afterthoughts but where apocalypse lands."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Is 1 Enoch one book or five, and does that matter for reading 55–72?",
+      "settled": "The work as canonized is a single Ge'ez book in 108 Charles chapters, but literary analysis distinguishes five major booklets and two Noah appendices, with Qumran confirming multiple Aramaic compositions.",
+      "positions": [
+        {
+          "view": "Read straight through as one eschatological narrative",
+          "grounds": "The Ge'ez and modern book form invite continuous reading, and some themes — judgment, the righteous versus the mighty, the Name — recur so deliberately that the whole reads as a formed apocalypse."
+        },
+        {
+          "view": "Read as an anthology whose booklets must first be understood separately",
+          "grounds": "Compositional seams, differing divine titles and worldviews, and the Astronomical Book's distinct genre suggest separate growth and circulation before a final editor gathered them. Respecting booklet boundaries avoids pressing the Astronomical Book's 364-day year into the Parables' courtroom theology."
+        },
+        {
+          "view": "Read as both — separate origins, canonical whole",
+          "grounds": "Historical-critical and canonical approaches are complementary: originate separately but mean together in the received Ethiopian book, where the juxtaposition of judgment oracles, calendar, and history produces a cumulative claim about law in heaven and on earth."
+        }
+      ],
+      "soWhat": "Decide which lens you are using at a given moment. Chapters 55–72 deliberately cross a seam — the end of the second Parable and the start of the Luminaries — so do not let the seam surprise you."
+    },
+    {
+      "question": "Is the Parables' Son of Man identifiable, and is he Enoch?",
+      "settled": "The Parables present the Elect One as a distinct figure welcomed to sit and judge, and in 71:14 Enoch is told “you are that Son of Man.” The chapter's grammar and its manuscript history are debated.",
+      "positions": [
+        {
+          "view": "The Elect One is the exalted Enoch",
+          "grounds": "71:14's identification, read straightforwardly, names Enoch as the Son of Man who was hidden and revealed; the book thus crowns its hero with the office it has described."
+        },
+        {
+          "view": "The Elect One is another figure whose office Enoch approaches but does not simply become",
+          "grounds": "The Parables carefully distinguishes Enoch the seer from the Elect One through most of chapters 38–71, and 71:14 can be read as association or delegation rather than strict identity, with Greek loss making certainty difficult."
+        },
+        {
+          "view": "A messianic figure distinct from Enoch whose later Christian reception overlapped",
+          "grounds": "The profile — pre-existent, chosen before the world, seated, judging kings — parallels messianic expectation rooted in Daniel 7, and early Christians applied similar titles to Jesus without requiring Enoch identity."
+        }
+      ],
+      "soWhat": "Name your reading of 71:14 explicitly when expounding chapters 55–71. Much of what looks like settled Christology in popular discussion is actually a judgment about that single late verse."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-charles",
+      "label": "The text on this site",
+      "says": "Chapter, verse, and word counts, every displayed reference, and the Charles 1913 wording were checked against the hosted Ge'ez–Greek English file public/scriptures/text/charles/ENO.json.",
+      "url": "https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)"
+    },
+    {
+      "id": "charles-introduction",
+      "label": "R. H. Charles, The Book of Enoch (SPCK, 1917) — Introduction by W. O. E. Oesterley",
+      "says": "Describes the five booklets, the Ge'ez–Greek–Aramaic transmission, the Astronomical Book's gates and 364-day year, the Parables' Son of Man / Elect One, and the Watcher myth's relation to Genesis 6:1–4.",
+      "url": "https://www.gutenberg.org/ebooks/77935"
+    },
+    {
+      "id": "nickelsburg-enoch",
+      "label": "George W. E. Nickelsburg, 1 Enoch 1 (Hermeneia)",
+      "says": "Standard critical commentary on chapters 1–36 and the Watcher myth's angelic and Enochic judgment logic.",
+      "url": "https://www.fortresspress.com/store/product/9780800660741/1-Enoch-1"
+    },
+    {
+      "id": "vanderkam-enoch",
+      "label": "James C. VanderKam, The Book of Enoch (Oxford Bibliographies)",
+      "says": "Surveys dating of the booklets (Watchers, Astronomical Book, Dream Visions, Epistle, Parables), Aramaic Qumran witnesses, and the lack of Parables fragments.",
+      "url": "https://www.oxfordbibliographies.com/display/document/obo-9780195393361/obo-9780195393361-0025.xml"
+    },
+    {
+      "id": "milk-enoch-greek",
+      "label": "Milik, ed., The Books of Enoch: Aramaic Fragments of Qumrân Cave 4 (Oxford)",
+      "says": "Publishes the Aramaic Enoch fragments and the Greek Codex Panopolitanus, establishing the Semitic–Greek–Ge'ez chain.",
+      "url": "https://global.oup.com/academic/product/the-books-of-enoch-9780198269377"
+    },
+    {
+      "id": "ethiopian-canon",
+      "label": "Edward Ullendorff, Ethiopia and the Bible (Oxford)",
+      "says": "Explains the Ethiopian Tewahedo canonical reception of 1 Enoch and the Ge'ez manuscript tradition.",
+      "url": "https://global.oup.com/academic/product/ethiopia-and-the-bible-9780198263257"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read booklet by booklet. Let the Watchers tell its myth, the Parables stage its courtroom, the Astronomical Book inventory its gates, and the Dream Visions run its animals before trying to harmonize them.",
+      "refs": ["1:1", "37:1", "72:1", "83:1"]
+    },
+    {
+      "tip": "Track names for God and the figure who judges: Most High / Great One / Head of Days / Lord of Spirits, and Son of Man / Elect One / Righteous One. Title shifts often mark a new source or chapter of the anthology."
+    },
+    {
+      "tip": "Keep the calendar in front of you. When the Astronomical Book speaks of gates and four intercalary days, sketch six eastern and six western openings rather than reducing gates to seasons.",
+      "refs": ["72:1", "75:1", "82:11"]
+    },
+    {
+      "tip": "Compare animal history to known history. The Dream Visions map cattle to the patriarchs, sheep to Israel, and wild beasts and shepherds to nations and rulers — the allegory's resolution at the present of the author is where its urgency lies.",
+      "refs": ["85:1", "89:1"]
+    },
+    {
+      "tip": "Let Jude 14–15 and Genesis 6:1–4 stay distinct from the Watcher myth. Note where Enoch interprets those verses and where it freely invents — illicit arts, the binding of Azazel, and the giants' size."
+    },
+    {
+      "tip": "When the text says 364, count it as theology: a year divisible by seven, hospitable to Sabbath, proclaimed as obedience in heaven before it is practiced on earth.",
+      "refs": ["72:11", "82:6"]
+    }
+  ],
+  "next": "From the Luminaries continue directly into the Dream Visions (chapters 83–91), where the same calendar-keeping God shows history as animal allegory. For comparison, read Daniel 7 alongside Parables chapters 37–71 and Genesis 6:1–4 alongside Watchers chapters 6–11 to see shared throne and Watcher material handled differently.",
+  "traditionNote": "1 Enoch is canonical in the Ethiopian Orthodox Tewahedo Church and hosted here on the Ethiopian English shelf via R. H. Charles's 1913 translation. It is outside the Jewish Tanakh and the Protestant and Catholic Old Testaments, though its influence on Jude and other early Christian writers kept it in continuous scholarly and ecclesial discussion."
+}

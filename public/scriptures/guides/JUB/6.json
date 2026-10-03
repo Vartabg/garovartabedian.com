@@ -1,0 +1,253 @@
+{
+  "book": "JUB",
+  "chapter": 6,
+  "bookName": "Jubilees",
+  "summary": "Noah leaves the ark, offers sacrifice, and receives a covenant marked by the bow in the cloud and by a prohibition on consuming blood. The angel links that covenant to Israel's feast of weeks and sets out a 364-day year with four seasonal memorial days, warning that a different reckoning will displace the festivals.",
+  "whyItMatters": "This is the book's central calendar statement: the flood story becomes a reason for annual covenant renewal and a precise schedule of holy days.",
+  "context": {
+    "author": "Within the book, the angel of the presence dictates the account to Moses; the historical writer is unnamed.",
+    "audience": "Israel is addressed through Moses in the book’s frame; the specific first historical audience is not identified.",
+    "date": "The narrative places the revelation at Sinai; the historical Hebrew work is usually dated to the second century BCE, without an established exact year.",
+    "setting": "Noah's altar after the flood and the Sinai address to Moses about how Israel should keep the covenant calendar.",
+    "literaryForm": "Covenant narrative followed by festival law and a calendar warning."
+  },
+  "contextSourceIds": [
+    "hosted-charles",
+    "oxford-endres"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The floodwaters have receded, the earth is dry, and Noah has opened the ark and released the animals.",
+      "verseRefs": [
+        "5:29-32"
+      ]
+    },
+    "here": {
+      "text": "Noah’s offering and covenant lead into blood rules, the feast of weeks, and the 364-day festival calendar.",
+      "verseRefs": [
+        "6:1-38"
+      ]
+    },
+    "after": {
+      "text": "Noah plants a vineyard, becomes drunk, and later instructs his sons about bloodshed, fruit, and inherited commands.",
+      "verseRefs": [
+        "7:1-10",
+        "7:20-39"
+      ]
+    }
+  },
+  "outline": [
+    {
+      "heading": "Noah’s offering and the covenant",
+      "verses": "1-9",
+      "note": "Sacrifice precedes promises of continuity and commands about blood."
+    },
+    {
+      "heading": "Blood rule and bow sign",
+      "verses": "10-16",
+      "note": "Noah’s oath is applied to Israel and a visible sign is given."
+    },
+    {
+      "heading": "The feast of weeks",
+      "verses": "17-22",
+      "note": "The angel traces and commands annual covenant renewal."
+    },
+    {
+      "heading": "Four memorial days and 364 days",
+      "verses": "23-32",
+      "note": "Flood dates organize quarters of thirteen weeks."
+    },
+    {
+      "heading": "Warning against losing the appointed times",
+      "verses": "33-38",
+      "note": "The speech opposes neglect and a moon-based reckoning."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "6:16",
+      "text": "He set His bow in the cloud for a sign of the eternal covenant that there should not again be a flood on the earth to destroy it all the days of the earth.",
+      "why": "The bow in the cloud is named as the sign of the promise not to destroy the whole earth again by flood."
+    },
+    {
+      "ref": "6:32",
+      "text": "And command thou the children of Israel that they observe the years according to this reckoning- three hundred and sixty-four days, and (these) will constitute a complete year, and they will not disturb its time from its days and from its feasts; for everything will fall out in them according to their testimony, and they will not leave out any day nor disturb any feasts.",
+      "why": "The verse states the 364-day calculation that drives the chapter's concern with stable festival dates."
+    }
+  ],
+  "themes": [
+    "Noah’s offering",
+    "covenant and blood",
+    "bow in the cloud",
+    "feast of weeks",
+    "364-day calendar"
+  ],
+  "questions": [
+    {
+      "category": "context",
+      "question": "Why does Noah sacrifice immediately after leaving the ark?",
+      "answer": "The chapter says he builds an altar and makes atonement for an earth where life outside the ark has been destroyed. The offering comes before the promise that seasonal rhythms will continue and there will be no comparable flood.",
+      "verseRefs": [
+        "6:1-4"
+      ],
+      "id": "q1",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What does “atonement for the earth” mean here?",
+      "answer": "Noah performs an offering described as addressing the earth’s guilt after the destruction. The chapter names the ritual and its setting but does not provide a full mechanism for how an animal’s blood effects that atonement.",
+      "verseRefs": [
+        "6:1-3"
+      ],
+      "id": "q2",
+      "relatedVerses": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Why is eating blood forbidden even though animals are given for food?",
+      "answer": "The speech says animal life is in the blood, then pairs the food permission with a blood prohibition. It treats life as something not to consume indiscriminately and repeats the rule for Noah’s descendants and Israel.",
+      "verseRefs": [
+        "6:5-14"
+      ],
+      "id": "q3",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "category": "theology",
+      "question": "What exactly does the bow in the cloud signify?",
+      "answer": "It is presented as the sign of God’s enduring covenant that another flood will not destroy the whole earth. The sign is about that stated promise, not a claim that no local flood or other disaster can ever occur.",
+      "verseRefs": [
+        "6:15-16"
+      ],
+      "id": "q4",
+      "relatedVerses": [
+        15,
+        16
+      ]
+    },
+    {
+      "category": "context",
+      "question": "Why does this chapter connect Noah with the feast of weeks?",
+      "answer": "The narrator says the feast renews the covenant each year, traces its observance from heaven through Noah and the ancestors, and instructs Moses to restore it for Israel. That sequence makes the annual festival older than Sinai within the book’s story.",
+      "verseRefs": [
+        "6:17-22"
+      ],
+      "id": "q5",
+      "relatedVerses": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What are the four “days of remembrance”?",
+      "answer": "They are the new moons of the first, fourth, seventh, and tenth months. The text links each to a stage in the flood and places thirteen weeks between successive memorials.",
+      "verseRefs": [
+        "6:23-30"
+      ],
+      "id": "q6",
+      "relatedVerses": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Does the 364-day year settle modern calendar or astronomy questions?",
+      "answer": "The chapter commands a 364-day ritual reckoning and argues that observing the moon will displace appointed feasts. That is its theological and calendrical claim; it does not by itself establish a modern astronomical calendar for every setting.",
+      "verseRefs": [
+        "6:29-38"
+      ],
+      "id": "q7",
+      "relatedVerses": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "category": "context",
+      "question": "What is at stake for the narrator if the dates shift?",
+      "answer": "The warning says misplaced months would confuse holy and ordinary days and obscure festivals and jubilees. The concern is not only arithmetic but keeping the covenant times the book says are written on heavenly tablets.",
+      "verseRefs": [
+        "6:31-38"
+      ],
+      "id": "q8",
+      "relatedVerses": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "covenant",
+      "def": "A binding relationship expressed here through a promise, commands, and a visible sign."
+    },
+    {
+      "term": "jubilees",
+      "def": "Recurring long units of years used by this book to organize sacred history."
+    }
+  ],
+  "readingContextSource": {
+    "translation": "charles",
+    "textHash": "c819c59f4b6b16a0782d2a6f7f4bdd574e018a3458282ebc59f3de8ed78f846c"
+  },
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "bb9b4217b8fd8787082ce73d378c5730b76bf80aeba64c90cd6321b0c12c24df",
+    "generatedAt": "2026-09-29T00:33:02.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent cross-review",
+  "sourceIds": [
+    "charles"
+  ]
+}

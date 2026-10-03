@@ -1,0 +1,332 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "son-of-man",
+  "slug": "son-of-man",
+  "title": "The Son of Man on the Throne",
+  "subtitle": "Daniel 7:13–14 · 1 Enoch 46–48 · Matthew 26:63–65",
+  "summary": "A source-anchored comparison of the cloud-riding figure in Daniel 7, the titled 'Son of Man' enthroned in 1 Enoch's Similitudes, and Jesus' self-designation before the high priest — with the dating dispute over the Similitudes kept explicit.",
+  "axis": "messianism",
+  "contextGuard": {
+    "requiresFullPericope": true,
+    "misuseNotice": "The Similitudes of Enoch (1 Enoch 37–71) are absent from the Qumran manuscripts, so their composition date — pre-Christian or late first century CE — is genuinely disputed. Every dependence claim in this matrix is graded accordingly; none is presented as settled."
+  },
+  "witnesses": [
+    {
+      "id": "daniel-7",
+      "title": "Daniel 7:13–14 (World English Bible)",
+      "shortTitle": "Daniel 7",
+      "language": "Hebrew / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 10th–6th century BCE",
+        "earliestManuscript": "4QGen-b (c. 1st century BCE)",
+        "edition": "Westminster Leningrad Codex / World English Bible"
+      },
+      "primaryTradition": "Hebrew Bible / Christian Old Testament",
+      "corpusEditionId": "web-bible",
+      "licenseNotice": "World English Bible is a 100% public domain Modern English translation of the Holy Bible."
+    },
+    {
+      "id": "enoch-46-48",
+      "title": "1 Enoch 46–48 (R.H. Charles)",
+      "shortTitle": "1 Enoch 46–48",
+      "language": "Ge'ez original / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 3rd century BCE (earliest sections; debated)",
+        "earliestManuscript": "Aramaic fragments from Qumran (4QEn, c. 2nd–1st century BCE); complete text in Ge'ez (15th century CE manuscripts)",
+        "edition": "R.H. Charles, The Apocrypha and Pseudepigrapha of the Old Testament, vol. 2 (1913)"
+      },
+      "primaryTradition": "Second Temple Judaism; canonical in the Ethiopian Tewahedo Church",
+      "corpusEditionId": "charles-enoch",
+      "licenseNotice": "R.H. Charles' 1913 translation of 1 Enoch (SPCK) is in the public domain. The Wikisource transcription is used verbatim; Charles' editorial marks (⌈⌉ conjectures, [ ] restorations) are preserved."
+    },
+    {
+      "id": "matthew-26",
+      "title": "Matthew 26:63–65 (World English Bible)",
+      "shortTitle": "Matthew 26",
+      "language": "Hebrew / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 10th–6th century BCE",
+        "earliestManuscript": "4QGen-b (c. 1st century BCE)",
+        "edition": "Westminster Leningrad Codex / World English Bible"
+      },
+      "primaryTradition": "Christian New Testament",
+      "corpusEditionId": "web-bible",
+      "licenseNotice": "World English Bible is a 100% public domain Modern English translation of the Holy Bible."
+    }
+  ],
+  "slots": [
+    {
+      "id": "the-figure",
+      "label": "The Cloud-Riding Figure",
+      "description": "How each text presents the figure who comes with the clouds.",
+      "cells": {
+        "daniel-7": {
+          "witnessId": "daniel-7",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "DAN",
+            "passageRef": "Daniel 7:13",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "'One like a son of man' comes with the clouds of the sky — a simile, not yet a title.",
+          "verbatimExcerpt": "“I saw in the night visions, and behold, there came with the clouds of the sky one like a son of man, and he came even to the Ancient of Days, and they brought him near before him.",
+          "supportingCitations": [
+            "Daniel 7:13"
+          ],
+          "limits": "Aramaic *kəḇar ʾĕnāš* — 'one like a human being'; the simile is explicit in the wording."
+        },
+        "enoch-46-48": {
+          "witnessId": "enoch-46-48",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 46:1–3",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "The 'Head of Days' is accompanied by 'that Son of Man,' whose face has graciousness like one of the holy angels.",
+          "verbatimExcerpt": "And there I saw One who had a head of days, And His head was white like wool, And with Him was another being whose countenance had the appearance of a man, And his face was full of graciousness, like one of the holy angels. And I asked the angel who went with me and showed me all the hidden things, concerning that Son of Man, who he was, and whence he was, (and) why he went with the Head of Days? And he answered and said unto me: This is the Son of Man who hath righteousness, With whom dwelleth righteousness, And who revealeth all the treasures of that which is hidden, Because the Lord of Spirits hath chosen him, And whose lot hath the pre-eminence before the Lord of Spirits in uprightness for ever.",
+          "supportingCitations": [
+            "1 Enoch 46:1–3 (Charles 1913)"
+          ]
+        },
+        "matthew-26": {
+          "witnessId": "matthew-26",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "MAT",
+            "passageRef": "Matthew 26:64",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Jesus answers the high priest: 'you will see the Son of Man sitting at the right hand of power, and coming with the clouds of the sky.'",
+          "verbatimExcerpt": "Jesus said to him, “You have said so. Nevertheless, I tell you, after this you will see the Son of Man sitting at the right hand of Power, and coming on the clouds of the sky.”",
+          "supportingCitations": [
+            "Matthew 26:64"
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-throne-and-judgment",
+      "label": "Throne, Dominion, Judgment",
+      "description": "The role each text assigns the figure.",
+      "cells": {
+        "daniel-7": {
+          "witnessId": "daniel-7",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "DAN",
+            "passageRef": "Daniel 7:14",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Dominion, glory, and a kingdom are given him; all peoples serve him — an everlasting dominion.",
+          "verbatimExcerpt": "Dominion was given him, and glory, and a kingdom, that all the peoples, nations, and languages should serve him. His dominion is an everlasting dominion, which will not pass away, and his kingdom one that will not be destroyed.",
+          "supportingCitations": [
+            "Daniel 7:14"
+          ]
+        },
+        "enoch-46-48": {
+          "witnessId": "enoch-46-48",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 48:2–7",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "Before the sun and signs were created, his name was named; he is the light of the Gentiles, the hope of the troubled; kings and landowners worship him.",
+          "verbatimExcerpt": "And at that hour that Son of Man was named In the presence of the Lord of Spirits, And his name before the Head of Days. Yea, before the sun and the signs were created, Before the stars of the heaven were made, His name was named before the Lord of Spirits. He shall be a staff to the righteous whereon to stay themselves and not fall, And he shall be the light of the Gentiles, And the hope of those who are troubled of heart. All who dwell on earth shall fall down and worship before him, And will praise and bless and celebrate with song the Lord of Spirits. And for this reason hath he been chosen and hidden before Him, Before the creation of the world and for evermore. And the wisdom of the Lord of Spirits hath revealed him to the holy and righteous; For he hath preserved the lot of the righteous, Because they have hated and despised this world of unrighteousness, And have hated all its works and ways in the name of the Lord of Spirits: For in his name they are saved, And according to his good pleasure hath it been in regard to their life.",
+          "supportingCitations": [
+            "1 Enoch 48:2–7 (Charles 1913)"
+          ]
+        },
+        "matthew-26": {
+          "witnessId": "matthew-26",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "MAT",
+            "passageRef": "Matthew 26:64",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Sitting at the right hand of power and coming with the clouds of the sky — throne language joined to Daniel's cloud language.",
+          "verbatimExcerpt": "Jesus said to him, “You have said so. Nevertheless, I tell you, after this you will see the Son of Man sitting at the right hand of Power, and coming on the clouds of the sky.”",
+          "supportingCitations": [
+            "Matthew 26:64; Psalm 110:1 (the 'right hand' phrase's direct background)"
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-naming",
+      "label": "Simile, Title, Self-Designation",
+      "description": "How the phrase functions in each text.",
+      "cells": {
+        "daniel-7": {
+          "witnessId": "daniel-7",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "DAN",
+            "passageRef": "Daniel 7:13",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "A simile: 'one like a son of man' contrasts the humanlike figure with the beastly kingdoms.",
+          "verbatimExcerpt": "“I saw in the night visions, and behold, there came with the clouds of the sky one like a son of man, and he came even to the Ancient of Days, and they brought him near before him.",
+          "supportingCitations": [
+            "Daniel 7:13"
+          ]
+        },
+        "enoch-46-48": {
+          "witnessId": "enoch-46-48",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 46:3",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "A title in use: 'that Son of Man' — the phrase has become a designation of a preexistent figure.",
+          "verbatimExcerpt": "And he answered and said unto me: This is the Son of Man who hath righteousness, With whom dwelleth righteousness, And who revealeth all the treasures of that which is hidden, Because the Lord of Spirits hath chosen him, And whose lot hath the pre-eminence before the Lord of Spirits in uprightness for ever.",
+          "supportingCitations": [
+            "1 Enoch 46:3 (Charles 1913)"
+          ]
+        },
+        "matthew-26": {
+          "witnessId": "matthew-26",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "MAT",
+            "passageRef": "Matthew 26:64",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Jesus' own self-designation under oath, joined to enthronement and cloud-coming language.",
+          "verbatimExcerpt": "Jesus said to him, “You have said so. Nevertheless, I tell you, after this you will see the Son of Man sitting at the right hand of Power, and coming on the clouds of the sky.”",
+          "supportingCitations": [
+            "Matthew 26:63–64"
+          ]
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "daniel-to-matthew",
+      "sourceWitnessId": "daniel-7",
+      "targetWitnessId": "matthew-26",
+      "relationship": "direct-citation",
+      "scholarlyConsensus": "strong",
+      "basisNote": "Matthew 26:64 combines Daniel 7:13's cloud-coming with Psalm 110:1's enthronement at the right hand. The verbal correspondence with Daniel 7:13 is direct and widely recognized.",
+      "citations": [
+        "W.D. Davies and Dale C. Allison, *A Critical and Exegetical Commentary on the Gospel According to Saint Matthew*, vol. 3 (ICC, 1997), on 26:64.",
+        "R.T. France, *The Gospel of Matthew* (NICNT, 2007), on 26:64."
+      ]
+    },
+    {
+      "id": "daniel-to-enoch",
+      "sourceWitnessId": "daniel-7",
+      "targetWitnessId": "enoch-46-48",
+      "relationship": "allusion",
+      "scholarlyConsensus": "disputed",
+      "basisNote": "The Similitudes develop Daniel 7's imagery into a titled, preexistent Son of Man. That the imagery is drawn from Daniel is widely held; the dating of the Similitudes — and therefore the direction and period of the development — is disputed, since no Similitudes fragments survive at Qumran.",
+      "citations": [
+        "J.T. Milik, *The Books of Enoch: Aramaic Fragments of Qumrân Cave 4* (1976) — argues a late, possibly Christian-era date.",
+        "David W. Suter, *Tradition and Composition in the Parables of Enoch* (1979).",
+        "George W.E. Nickelsburg and James C. VanderKam, *1 Enoch 2* (Hermeneia, 2012), pp. 47–58 (dating discussion)."
+      ]
+    },
+    {
+      "id": "enoch-to-matthew",
+      "sourceWitnessId": "enoch-46-48",
+      "targetWitnessId": "matthew-26",
+      "relationship": "allusion",
+      "scholarlyConsensus": "disputed",
+      "basisNote": "Whether Jesus' 'Son of Man' self-designation depends on the Similitudes' titled figure is a standing debate; it turns on the Similitudes' date. The direct textual background of Matthew 26:64 is Daniel 7 and Psalm 110; the Enochic role is interpretive, not verbatim.",
+      "citations": [
+        "M. Black, 'The Son of Man Problem in Recent Research and Debate,' *NTS* 45 (1999).",
+        "Gabriele Boccaccini, ed., *Enoch and the Messiah Son of Man* (2007).",
+        "Craig A. Evans, 'The Son of Man Trait and the Similitudes of Enoch,' in *Enoch and the Messiah Son of Man* (2007)."
+      ]
+    }
+  ],
+  "receptionClaims": [
+    {
+      "id": "claim-similitudes-dating",
+      "tradition": "academic",
+      "subject": "The Dating Dispute over the Similitudes",
+      "text": "No fragments of 1 Enoch 37–71 have been found at Qumran, unlike the Book of the Watchers and the Astronomical Book. Proposals range from a pre-Christian composition to a late first-century CE redaction; the dispute directly conditions any claim that the Gospels' Son of Man language depends on the Similitudes.",
+      "basis": {
+        "axis": "textual",
+        "grade": "disputed"
+      },
+      "sources": [
+        {
+          "label": "Milik, *The Books of Enoch* (1976)"
+        },
+        {
+          "label": "Nickelsburg & VanderKam, *1 Enoch 2* (Hermeneia, 2012)"
+        }
+      ],
+      "refs": [],
+      "limit": "This is a live scholarly dispute; the matrix grades every affected claim as disputed."
+    },
+    {
+      "id": "claim-ethiopian-canonical",
+      "tradition": "christian",
+      "subject": "The Similitudes as Canonical Scripture",
+      "text": "In the Tewahedo canon the Similitudes are part of canonical 1 Enoch; the titled Son of Man is read within scripture, not as an apocryphal parallel.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Ethiopian Orthodox Tewahedo Church canon (81 books)"
+        }
+      ],
+      "refs": [],
+      "limit": "Canonical status is a matter of church tradition; this claim records the Tewahedo position without ranking canons."
+    },
+    {
+      "id": "claim-rabbinic-daniel",
+      "tradition": "jewish",
+      "subject": "Daniel 7's Figure in Rabbinic Reading",
+      "text": "Rabbinic tradition reads Daniel 7's 'one like a son of man' variously — including as the Messiah (b. Sanhedrin 96b–97a, on 'bar nifle') and in connection with 'Anani' (b. Sanhedrin 38b) — without the Enochic title.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "b. Sanhedrin 38b, 96b–97a"
+        }
+      ],
+      "refs": [],
+      "limit": "Rabbinic readings are plural; this records the range, not a single view."
+    }
+  ],
+  "provenance": {
+    "reviewStatus": "agent-reviewed",
+    "reviewer": "Claude Sourcing & Review Pass (garovartabedian.com)",
+    "rubricVersion": "parallels-v1.0",
+    "reviewedContentHash": "9d59d8b2a07cffa6a5e6b976a737ab851a8ba08cd4cea060ad18bf55f72a768a",
+    "reviewedAt": "2026-09-01T01:34:50.687Z",
+    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "book": "GEN",
+  "chapter": 46,
+  "bookName": "Genesis",
+  "summary": "On the way to Egypt, Jacob receives God's assurance at Beersheba that the move will lead to a great nation and that God will accompany him. A genealogical roll gathers his household, Joseph and Jacob reunite with prolonged weeping in Goshen, and Joseph prepares the family to explain its shepherding occupation to Pharaoh.",
+  "whyItMatters": "The move out of Canaan is framed by a promise of divine presence and eventual return rather than abandonment of the ancestral land. The family list and the reunion link the household's larger future to particular people and their long grief.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Beersheba on the journey from Canaan, the household's migration to Egypt, and the reunion in Goshen.",
+    "literaryForm": "Night vision, migration account, grouped genealogy with totals, reunion, and preparation for a royal audience."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Joseph has invited the family to Egypt with Pharaoh's support, and Jacob has accepted that his son lives. The household now acts on that invitation.",
+      "verseRefs": [
+        "45:9-28"
+      ]
+    },
+    "here": {
+      "text": "God's reassurance introduces the migration, the genealogy identifies the household, and Joseph's reunion with Jacob leads to plans for settlement.",
+      "verseRefs": [
+        "46:1-27",
+        "46:28-34"
+      ]
+    },
+    "after": {
+      "text": "Pharaoh authorizes the family to live in Goshen, Jacob blesses him, and Joseph provides bread while administering the wider famine crisis.",
+      "verseRefs": [
+        "47:1-26"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Reassurance at Beersheba",
+      "verses": "1-4",
+      "note": "God promises presence in Egypt, growth into a nation, and return."
+    },
+    {
+      "heading": "The household travels",
+      "verses": "5-7",
+      "note": "The family carries its children, women, livestock, and goods into Egypt."
+    },
+    {
+      "heading": "Leah’s and Zilpah’s lines",
+      "verses": "8-18",
+      "note": "Sons and further descendants are grouped under the mothers."
+    },
+    {
+      "heading": "Rachel’s and Bilhah’s lines and totals",
+      "verses": "19-27",
+      "note": "Joseph’s Egyptian-born sons are included in the wider household count."
+    },
+    {
+      "heading": "Father and son reunited",
+      "verses": "28-30",
+      "note": "Judah guides the way, and Joseph meets Jacob with prolonged tears."
+    },
+    {
+      "heading": "Preparing to speak to Pharaoh",
+      "verses": "31-34",
+      "note": "Joseph instructs the family to explain its livestock work and seek Goshen."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "46:4",
+      "text": "I will go down with you into Egypt. I will also surely bring you up again. Joseph’s hand will close your eyes.”",
+      "why": "The promise of accompaniment and return is joined to the personal assurance of Joseph’s presence at Jacob’s death."
+    },
+    {
+      "ref": "46:27",
+      "text": "The sons of Joseph, who were born to him in Egypt, were two souls. All the souls of the house of Jacob, who came into Egypt, were seventy.",
+      "why": "The household total gathers people already in Egypt as well as those arriving."
+    },
+    {
+      "ref": "46:30",
+      "text": "Israel said to Joseph, “Now let me die, since I have seen your face, that you are still alive.”",
+      "why": "Jacob’s response makes the reunion the answer to his long fear of Joseph’s death."
+    }
+  ],
+  "themes": [
+    "migration and promise",
+    "divine companionship",
+    "family remembered by name",
+    "genealogical identity",
+    "reunion after grief",
+    "settlement as foreigners"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why stop at Beersheba before entering Egypt?",
+      "answer": "Jacob offers sacrifices to the God of Isaac, and the night vision answers his fear about going down. The move receives explicit reassurance that God will accompany the family and make it a great nation there.",
+      "verseRefs": [
+        "46:1-4"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Does the promise of return mean Jacob will resume ordinary life in Canaan?",
+      "answer": "The same speech promises return and says Joseph will close Jacob's eyes. The chapter thus keeps return linked with the ancestral hope while anticipating Jacob's death in Joseph's presence; it does not narrate a living return here.",
+      "verseRefs": [
+        "46:3-4"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why organize the names by mothers?",
+      "answer": "The genealogy groups descendants under Leah, Zilpah, Rachel, and Bilhah, retaining the household's maternal lines while collecting them as the children of Israel. The list is more than an undifferentiated tally of male names.",
+      "verseRefs": [
+        "46:8-25"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Are sixty-six and seventy counting exactly the same group?",
+      "answer": "Verse 26 counts the direct descendants who came with Jacob and excludes the sons' wives. Verse 27 gives the wider house of Jacob and explicitly mentions Joseph's two Egyptian-born sons, so the totals have different scopes rather than describing identical traveling parties.",
+      "verseRefs": [
+        "46:26-27"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        26,
+        27
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Does the list include only people physically walking into Egypt then?",
+      "answer": "It explicitly notes that Er and Onan died in Canaan and that Joseph's sons were born in Egypt. These qualifications show that the genealogical record describes family identity with explanatory notices, not simply a passenger manifest without exceptions.",
+      "verseRefs": [
+        "46:12",
+        "46:19-20",
+        "46:26-27"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        12,
+        19,
+        20,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What does “close your eyes” mean in God’s promise?",
+      "answer": "It pictures Joseph being present to attend Jacob at his death. The intimate assurance gives the promise a personal dimension alongside its larger claims about a nation and return.",
+      "verseRefs": [
+        "46:4"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        4
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Why does Joseph emphasize the family’s livestock work?",
+      "answer": "He prepares them to answer Pharaoh honestly about their occupation so they may live in Goshen. The explanation includes Egyptian disdain for shepherds as part of the narrative's social setting, not as a judgment that shepherds deserve contempt.",
+      "verseRefs": [
+        "46:31-34"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        31,
+        32,
+        33,
+        34
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Goshen",
+      "def": "The Egyptian region where the reunion occurs and the family hopes to settle."
+    },
+    {
+      "term": "souls",
+      "def": "The word used for persons in the chapter’s household counts."
+    },
+    {
+      "term": "close your eyes",
+      "def": "An image of Joseph attending his father at death."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "95949cb82ba66849b94f8ceb2bb2dbe1126dd9163982f5e3516efca0f21a0334",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

@@ -1,0 +1,192 @@
+.bethel-story {
+  --bethel-night: #11151f;
+  --bethel-blue: #191f2d;
+  --bethel-stone: #d5c6b5;
+  background: var(--bethel-night);
+  color: var(--story-ink);
+  overflow: clip;
+}
+
+.bethel-story a { color: inherit; }
+.bethel-story em { font-weight: inherit; }
+.bethel-story cite { display: block; color: var(--story-muted); font-family: var(--font-interface); font-size: 0.67rem; font-style: normal; letter-spacing: 0.075em; }
+.bethel-story .bethel-inset { width: min(100% - 8vw, 82rem); margin-inline: auto; }
+.bethel-story :is(section, header)[id] { scroll-margin-top: 2rem; }
+.bethel-story .bethel-eyebrow { color: var(--story-accent); font-size: 0.66rem; letter-spacing: 0.15em; text-transform: uppercase; }
+.bethel-story .bethel-beat { display: flex; align-items: center; gap: 1.1rem; color: var(--story-accent); font-family: var(--font-interface); font-size: 0.65rem; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; }
+.bethel-beat > span { font-size: 0.6rem; color: var(--story-muted); font-variant-numeric: tabular-nums; }
+
+.bethel-opening { position: relative; padding: 2rem 4vw 1.5rem; }
+.bethel-opening-topline, .bethel-opening-footnote { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.63rem; color: var(--story-muted); letter-spacing: 0.09em; }
+.bethel-opening-topline { text-transform: uppercase; }
+.bethel-opening-topline a { display: inline-flex; align-items: center; gap: 0.8rem; min-height: 2.75rem; text-decoration: none; }
+.bethel-opening-topline a:hover { color: var(--story-accent); }
+.bethel-opening-layout { display: grid; grid-template-columns: 1fr 1.08fr; gap: 5vw; align-items: center; min-height: min(48rem, calc(100svh - 12rem)); padding-block: 2rem 3rem; }
+.bethel-opening-copy { position: relative; z-index: 1; padding-block: 2rem; }
+.bethel-story .bethel-opening h1 { margin: 1.5rem 0 2rem; font-family: var(--story-serif); font-size: clamp(4.6rem, 8.3vw, 9rem); font-weight: 350; line-height: 0.95; letter-spacing: -0.065em; color: var(--story-ink); }
+.bethel-opening h1 em { color: #d7c7ae; }
+.bethel-story .bethel-opening-intro { font-family: var(--story-serif); font-size: clamp(1.1rem, 1.6vw, 1.4rem); line-height: 1.7; font-weight: 350; color: var(--story-muted); }
+.bethel-enter { display: inline-flex; align-items: center; justify-content: space-between; gap: 3rem; min-height: 3rem; border-bottom: 1px solid #9d8d75; margin-top: 2.5rem; padding-block: 0.6rem; font-size: 0.8rem; text-decoration: none; }
+.bethel-enter:hover { color: var(--story-accent); }
+.bethel-enter > span { font-size: 1.4rem; }
+.bethel-story .bethel-opening-plate { width: min(100%, 31rem); margin: 0; justify-self: end; }
+.bethel-opening-plate img { display: block; width: 100%; height: auto; }
+.bethel-opening-plate figcaption { margin-top: 0.9rem; color: #c9c5c6; font-size: 0.6rem; letter-spacing: 0.1em; line-height: 1.6; text-transform: uppercase; }
+.bethel-opening-footnote { border-top: 1px solid #4e5058; padding-top: 1.25rem; font-size: 0.6rem; }
+
+.bethel-nightfall { display: grid; grid-template-columns: 0.65fr 1.35fr; gap: 6vw; position: relative; padding-block: clamp(6rem, 11vw, 11rem) 6rem; }
+.bethel-margin { padding-top: 0.5rem; }
+.bethel-location { display: block; margin-top: 1.5rem; color: #aaafbb; font-size: 0.66rem; letter-spacing: 0.055em; }
+.bethel-story .bethel-narration { max-width: 28rem; color: var(--story-muted); font-size: 0.96rem; line-height: 1.85; }
+.bethel-story .bethel-nightfall-quote { margin-top: 2rem; }
+.bethel-nightfall-quote p { font-family: var(--story-serif); font-size: clamp(2.8rem, 5.3vw, 5.4rem); line-height: 1.13; font-weight: 350; letter-spacing: -0.045em; }
+.bethel-nightfall-quote em { color: var(--bethel-stone); }
+.bethel-nightfall-quote cite { margin-top: 1.75rem; }
+.bethel-story .bethel-nightfall-stone { margin-top: 3rem; font-family: var(--story-serif); font-size: 1.5rem; font-weight: 350; line-height: 1.8; color: #b3b7c3; }
+.bethel-nightfall-plate { grid-column: 1 / -1; min-width: 0; }
+.bethel-nightfall-plate img { display: block; width: 100%; height: auto; }
+.bethel-nightfall-plate figcaption { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1rem; color: var(--story-muted); font-size: 0.62rem; line-height: 1.7; }
+.bethel-nightfall-plate figcaption > span:first-child { color: var(--story-accent); letter-spacing: 0.07em; }
+.bethel-night-line { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; width: 100%; height: 6rem; padding-top: 2rem; }
+.bethel-night-line > span { display: block; width: 1px; height: 100%; background: linear-gradient(#887d6e, transparent); }
+
+.bethel-dream-section { display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr); gap: 3rem 7vw; align-items: start; padding-block: 2rem 4rem; }
+.bethel-dream-intro { position: sticky; top: 4rem; padding-top: 2.5rem; }
+.bethel-story .bethel-dream-heading { margin-top: 2rem; color: #ede5d8; font-family: var(--story-serif); font-size: clamp(2.6rem, 4.4vw, 4.75rem); font-weight: 350; line-height: 1.16; letter-spacing: -0.045em; }
+.bethel-dream-heading em { color: #b8c0d2; }
+.bethel-story .bethel-dream-reading { margin-top: 2.5rem; max-width: 22rem; color: var(--story-muted); font-size: 0.94rem; line-height: 1.85; }
+.bethel-dream-intro > cite { margin-top: 1.25rem; }
+.bethel-experience { min-width: 0; width: min(100%, max(16rem, calc((100svh - 17rem) * 0.666667))); max-width: 37rem; justify-self: center; }
+.bethel-story .bethel-camera { position: relative; isolation: isolate; overflow: hidden; width: 100%; aspect-ratio: 2 / 3; background: #202735; border: 1px solid #6b655d; }
+.bethel-camera[data-enhanced="true"] { touch-action: pan-y pinch-zoom; user-select: none; cursor: ew-resize; }
+.bethel-camera[data-enhanced="true"]:focus-visible { outline: 3px solid var(--story-accent); outline-offset: 5px; }
+.bethel-camera-art { position: absolute; inset: 0; transform: scale(var(--bethel-camera-scale, 1)); transform-origin: 60% 100%; }
+.bethel-camera-art img { object-fit: cover; }
+.bethel-camera[data-travel="true"] .bethel-camera-art { transition: transform 1600ms cubic-bezier(0.2, 0.6, 0.2, 1); }
+.bethel-camera-edges { position: absolute; inset: 0; pointer-events: none; border: 0.7rem solid rgb(20 22 29 / 12%); }
+.bethel-camera-label { position: absolute; bottom: 1.1rem; left: 1.1rem; right: 1.1rem; width: fit-content; padding: 0.45rem 0.65rem; background: rgb(14 18 29 / 80%); color: #eee7d9; font-size: 0.61rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.bethel-camera-controls { padding-top: 1.35rem; }
+.bethel-camera-control-title { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.bethel-camera-control-title label { color: var(--story-ink); font-size: 0.82rem; }
+.bethel-camera-control-title output { color: var(--story-muted); font-size: 0.66rem; font-variant-numeric: tabular-nums; }
+.bethel-camera-controls input { display: block; width: 100%; height: 2.75rem; margin: 0.35rem 0 0.4rem; padding: 0; accent-color: #ddc49a; cursor: ew-resize; }
+.bethel-camera-endpoints { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 1rem; }
+.bethel-camera-endpoints button { display: flex; align-items: center; justify-content: center; gap: 0.9rem; min-width: 0; min-height: 3rem; padding: 0.65rem 0.8rem; border: 1px solid #74716b; border-radius: 0; background: transparent; color: var(--story-ink); font-family: var(--font-interface); font-size: 0.72rem; line-height: 1.5; cursor: pointer; }
+.bethel-camera-endpoints button[aria-pressed="true"] { background: #d9c6a7; color: #1b202c; border-color: #d9c6a7; }
+.bethel-camera-endpoints button:hover { border-color: #eddec4; }
+.bethel-camera-endpoints button > span { flex-shrink: 0; }
+.bethel-story .bethel-camera-controls > p { margin-top: 0.9rem; color: #b4b8c2; font-size: 0.66rem; line-height: 1.7; }
+.bethel-story .bethel-static-caption { margin-top: 1.25rem; color: var(--story-muted); font-size: 0.84rem; line-height: 1.7; }
+.bethel-story .bethel-art-attribution { margin-top: 1rem; color: #aeb1bc; font-size: 0.59rem; line-height: 1.6; }
+.bethel-story .bethel-angels-reading { grid-column: 1 / -1; max-width: 44rem; justify-self: center; padding-top: 1rem; text-align: center; color: #c9ccda; font-family: var(--story-serif); font-size: clamp(1.25rem, 2vw, 1.9rem); font-weight: 350; line-height: 1.75; }
+.bethel-angels-reading cite { margin-top: 1.25rem; }
+
+.bethel-promise { position: relative; isolation: isolate; display: flex; align-items: center; flex-direction: column; text-align: center; padding: clamp(4rem, 6vw, 7rem) 1.5rem clamp(7rem, 12vw, 12rem); }
+.bethel-promise::before { position: absolute; content: ""; inset: 0; z-index: -1; background: radial-gradient(ellipse at 50% 53%, rgb(105 116 158 / 13%), transparent 67%); pointer-events: none; }
+.bethel-promise-thread { position: relative; width: 1px; height: 7rem; background: linear-gradient(transparent, #c5b49a); margin-bottom: 2.75rem; }
+.bethel-promise-thread > span { position: absolute; bottom: 0; left: -0.2rem; width: 0.45rem; height: 0.45rem; background: #d6c5a9; transform: rotate(45deg); }
+.bethel-story .bethel-promise-preface { margin-top: 2rem; color: var(--story-muted); font-size: 0.85rem; }
+.bethel-story .bethel-promise-words { width: 100%; margin-top: 2.75rem; }
+.bethel-promise-words > p:first-child { font-family: var(--story-serif); color: var(--story-ink); font-size: clamp(3.1rem, 7vw, 7.5rem); line-height: 1.12; font-weight: 350; letter-spacing: -0.045em; }
+.bethel-promise-words > p:first-child em { color: #ead5b2; }
+.bethel-promise-words > p + p { margin-top: 2rem; font-family: var(--story-serif); color: #c5c9d5; font-size: clamp(1.7rem, 3.2vw, 3.2rem); line-height: 1.55; font-weight: 350; letter-spacing: -0.025em; }
+.bethel-promise-words > cite { margin-top: 2rem; }
+.bethel-story .bethel-promise-afterword { margin-top: 4rem; color: #d3c7b6; font-family: var(--story-serif); font-size: 1.3rem; font-style: italic; }
+
+.bethel-waking { display: grid; grid-template-columns: minmax(0,0.85fr) minmax(0,1fr); align-items: center; gap: 7vw; padding-block: 2rem 4rem; }
+.bethel-waking-plate { width: 100%; min-width: 0; }
+.bethel-waking-plate img { display: block; width: 100%; height: auto; }
+.bethel-waking-plate figcaption { margin-top: 1rem; font-family: var(--story-serif); font-size: 1.2rem; line-height: 1.6; font-style: italic; color: #e2cfb3; }
+.bethel-story .bethel-waking-preface { margin-top: 1.5rem; font-size: 0.84rem; color: var(--story-muted); }
+.bethel-story .bethel-waking-words { margin-top: 2rem; }
+.bethel-waking-words p { font-family: var(--story-serif); color: #ede3d3; font-size: clamp(1.95rem, 3.3vw, 3.6rem); font-weight: 350; letter-spacing: -0.045em; line-height: 1.24; }
+.bethel-waking-words em { color: #c5bdc2; }
+.bethel-waking-words cite { margin-top: 1.65rem; }
+.bethel-waking-copy > .bethel-narration { margin-top: 2.75rem; }
+.bethel-waking-reference { display: block; margin-top: 1rem; color: var(--story-muted); font-size: 0.65rem; }
+.bethel-last-word { padding: 5rem 1.5rem 1rem; text-align: center; }
+.bethel-last-word > span { display: block; color: #c0ac8f; font-size: 1.2rem; margin-bottom: 1.75rem; }
+.bethel-last-word p { color: #b8bac7; font-family: var(--story-serif); font-weight: 350; font-size: clamp(1.15rem, 1.9vw, 1.8rem); line-height: 1.8; }
+.bethel-last-word em { color: #d0c1af; }
+.bethel-story .visual-story-source { margin-top: 3rem; border-top: 1px solid #4e5058; }
+
+@media (min-width: 1400px) {
+  .bethel-opening { padding-inline: max(4vw, calc((100vw - 82rem) / 2)); }
+}
+
+@media (max-width: 1000px) {
+  .bethel-opening-layout { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 3vw; }
+  .bethel-opening h1 { overflow-wrap: anywhere; }
+  .bethel-dream-section { gap: 2.5rem 5vw; }
+  .bethel-nightfall { grid-template-columns: 0.55fr 1.45fr; }
+  .bethel-waking { gap: 5vw; }
+}
+
+@media (max-width: 700px) {
+  .bethel-story .bethel-inset { width: calc(100% - 2.5rem); }
+  .bethel-opening { padding: 1rem 1.25rem 1.25rem; }
+  .bethel-opening-topline { font-size: 0.58rem; letter-spacing: 0.07em; }
+  .bethel-opening-layout { display: flex; flex-direction: column; align-items: stretch; gap: 2rem; padding-block: 2.5rem 1.75rem; }
+  .bethel-opening-copy { padding-block: 0; }
+  .bethel-story .bethel-opening h1 { font-size: clamp(3.8rem, 15.5vw, 6.5rem); margin-block: 1.25rem 1.6rem; letter-spacing: -0.055em; }
+  .bethel-story .bethel-opening-intro { font-size: 1.15rem; }
+  .bethel-enter { margin-top: 1.5rem; font-size: 0.76rem; }
+  .bethel-story .bethel-opening-plate { width: 100%; max-width: 31rem; align-self: center; }
+  .bethel-opening-footnote { font-size: 0.54rem; gap: 1rem; align-items: flex-start; line-height: 1.6; }
+  .bethel-opening-footnote > span:last-child { text-align: right; }
+  .bethel-nightfall { grid-template-columns: minmax(0,1fr); gap: 2.5rem; padding-block: 5rem 2.5rem; }
+  .bethel-margin { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .bethel-location { margin: 0; font-size: 0.6rem; }
+  .bethel-story .bethel-narration { font-size: 0.92rem; }
+  .bethel-nightfall-quote p { font-size: clamp(2.4rem, 9vw, 4rem); }
+  .bethel-story .bethel-nightfall-stone { font-size: 1.25rem; margin-top: 2rem; }
+  .bethel-nightfall-plate figcaption { font-size: 0.58rem; }
+  .bethel-night-line { height: 4rem; padding-top: 1rem; }
+  .bethel-dream-section { grid-template-columns: minmax(0,1fr); gap: 2rem; padding-top: 1rem; }
+  .bethel-dream-intro { position: static; padding-top: 0; }
+  .bethel-story .bethel-dream-heading { font-size: clamp(2.8rem, 10.5vw, 4.8rem); margin-top: 1.5rem; }
+  .bethel-story .bethel-dream-reading { margin-top: 1.7rem; font-size: 0.9rem; max-width: 30rem; }
+  .bethel-experience { max-width: 31rem; }
+  .bethel-camera-controls { padding-top: 1.25rem; }
+  .bethel-camera-control-title label { font-size: 0.79rem; }
+  .bethel-camera-endpoints { gap: 0.6rem; }
+  .bethel-camera-endpoints button { padding: 0.6rem 0.5rem; gap: 0.35rem; font-size: 0.68rem; }
+  .bethel-story .bethel-camera-controls > p { font-size: 0.65rem; }
+  .bethel-story .bethel-art-attribution { font-size: 0.57rem; }
+  .bethel-camera-label { font-size: 0.56rem; bottom: 0.75rem; left: 0.75rem; }
+  .bethel-story .bethel-angels-reading { padding-top: 0.5rem; font-size: 1.2rem; }
+  .bethel-wide-break { display: none; }
+  .bethel-promise { padding: 2.5rem 1.25rem 6rem; }
+  .bethel-promise-thread { height: 5rem; margin-bottom: 2rem; }
+  .bethel-promise-words > p:first-child { font-size: clamp(2.75rem, 11.2vw, 4.75rem); }
+  .bethel-promise-words > p + p { font-size: clamp(1.6rem, 6.8vw, 2.8rem); margin-top: 1.65rem; }
+  .bethel-story .bethel-promise-afterword { margin-top: 3rem; font-size: 1.15rem; }
+  .bethel-waking { grid-template-columns: minmax(0,1fr); gap: 2.5rem; padding-block: 0 2rem; }
+  .bethel-waking-words p { font-size: clamp(1.85rem, 7.2vw, 3rem); }
+  .bethel-waking-copy > .bethel-narration { margin-top: 2rem; }
+  .bethel-last-word { padding-top: 3rem; }
+  .bethel-story .visual-story-source { margin-top: 3rem; }
+}
+
+/* Respect chosen reading fonts without clipping the long lines or controls. */
+html[data-a11y-font="dyslexic"] .bethel-story :is(.bethel-opening h1, .bethel-promise-words > p:first-child) { letter-spacing: -0.025em; overflow-wrap: anywhere; }
+html[data-a11y-font="dyslexic"] .bethel-camera-endpoints { grid-template-columns: minmax(0,1fr); }
+
+@media (prefers-reduced-motion: reduce) {
+  .bethel-story *, .bethel-story *::before, .bethel-story *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+@media (forced-colors: active) {
+  .bethel-story :is(p, em, cite, span, h1, h2, label, output) { color: CanvasText; }
+  .bethel-camera-label, .bethel-opening-plate figcaption, .bethel-nightfall-plate figcaption, .bethel-waking-plate figcaption { color: CanvasText; background: Canvas; text-shadow: none; }
+  .bethel-camera, .bethel-camera-endpoints button { border-color: ButtonText; }
+  .bethel-camera-endpoints button { color: ButtonText; background: ButtonFace; }
+  .bethel-camera-endpoints button[aria-pressed="true"] { color: HighlightText; background: Highlight; }
+  .bethel-camera-endpoints button[aria-pressed="true"] > span { color: HighlightText; }
+}
+
+@media print {
+  .bethel-camera-controls, .bethel-enter { display: none; }
+  .bethel-camera-art { transform: none !important; }
+  .bethel-dream-intro { position: static; }
+}

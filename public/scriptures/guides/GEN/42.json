@@ -1,0 +1,241 @@
+{
+  "book": "GEN",
+  "chapter": 42,
+  "bookName": "Genesis",
+  "summary": "Famine sends Joseph's ten older brothers to Egypt, where he recognizes them but conceals himself and accuses them of spying. After detaining them, he keeps Simeon as security for Benjamin's arrival and sends the others home with grain and secretly restored money; their awakened guilt and Jacob's fear leave the family unable to resolve the demand.",
+  "whyItMatters": "The brothers now face the power of the sibling they once treated as disposable. Their remembered guilt, Joseph's concealed tears, and Jacob's refusal expose the emotional costs beneath the practical need for food.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "The grain-buying journey from famine-stricken Canaan to Joseph's administration in Egypt and back to Jacob.",
+    "literaryForm": "Recognition withheld, accusation and test, overheard confession, unsettling gifts, and a family argument."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Joseph has become Egypt's grain administrator as famine reaches surrounding lands. Jacob's household must now seek the food stored under his son's authority.",
+      "verseRefs": [
+        "41:53-57"
+      ]
+    },
+    "here": {
+      "text": "Joseph recognizes the brothers who bow before him, and his demand for Benjamin joins a test of their story to the family's old loss.",
+      "verseRefs": [
+        "42:6-24",
+        "42:29-38"
+      ]
+    },
+    "after": {
+      "text": "Continued famine eventually forces another journey, and Judah accepts responsibility for bringing Benjamin back.",
+      "verseRefs": [
+        "43:1-15"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Ten brothers go to buy food",
+      "verses": "1-5",
+      "note": "Jacob keeps Benjamin at home because he fears harm."
+    },
+    {
+      "heading": "Recognition hidden behind an accusation",
+      "verses": "6-17",
+      "note": "Joseph remembers his dreams, demands Benjamin, and detains the brothers."
+    },
+    {
+      "heading": "A revised test and remembered guilt",
+      "verses": "18-24",
+      "note": "One brother will remain; Joseph overhears their confession and weeps before binding Simeon."
+    },
+    {
+      "heading": "Grain and unsettling restored money",
+      "verses": "25-28",
+      "note": "The brothers leave and discover money placed in a sack."
+    },
+    {
+      "heading": "The report and Jacob’s refusal",
+      "verses": "29-38",
+      "note": "All the money is found, Reuben makes a rash offer, and Jacob refuses to send Benjamin."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "42:21",
+      "text": "They said to one another, “We are certainly guilty concerning our brother, in that we saw the distress of his soul, when he begged us, and we wouldn’t listen. Therefore this distress has come upon us.”",
+      "why": "The brothers remember the pleading distress they refused to hear when Joseph was in their power."
+    },
+    {
+      "ref": "42:24",
+      "text": "He turned himself away from them, and wept. Then he returned to them, and spoke to them, and took Simeon from among them, and bound him before their eyes.",
+      "why": "Joseph’s private tears coexist with his public detention of Simeon."
+    },
+    {
+      "ref": "42:38",
+      "text": "He said, “My son shall not go down with you; for his brother is dead, and he only is left. If harm happens to him along the way in which you go, then you will bring down my gray hairs with sorrow to Sheol.”",
+      "why": "Jacob’s refusal is governed by his belief that Joseph is dead and Benjamin is uniquely at risk."
+    }
+  ],
+  "themes": [
+    "concealed recognition",
+    "power reversed",
+    "remembered guilt",
+    "food and family risk",
+    "private grief",
+    "rash guarantees"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why do only ten brothers travel?",
+      "answer": "Jacob fears harm to Benjamin and keeps him at home while the other sons go for food. The decision shows that the perceived loss of Joseph continues to govern the household's treatment of Rachel's remaining son.",
+      "verseRefs": [
+        "42:1-5",
+        "42:38"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        38
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does Joseph recognize that the brothers do not?",
+      "answer": "He knows who they are and remembers his dreams as they bow before him, while they see only an Egyptian governor speaking through an interpreter. That unequal knowledge gives Joseph control over the encounter.",
+      "verseRefs": [
+        "42:6-9",
+        "42:23"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        6,
+        7,
+        8,
+        9,
+        23
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does “the nakedness of the land” mean in the accusation?",
+      "answer": "It means the land's exposed or vulnerable condition that spies might inspect. Joseph uses the phrase to turn grain buyers into alleged security threats, rather than speaking about literal unclothed bodies.",
+      "verseRefs": [
+        "42:9-14"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Does Joseph explain all his motives for treating them harshly?",
+      "answer": "He says their claim will be tested by bringing the youngest brother and modifies the confinement so they can carry food home. The narrator also records tears, but never provides a complete explanation that makes every threatening action transparent or harmless.",
+      "verseRefs": [
+        "42:15-24"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What do the brothers confess to each other?",
+      "answer": "They remember seeing Joseph's distress and hearing his pleas without listening. Their words add the victim's remembered suffering to the earlier sale account, while they interpret their current distress as connected with that guilt.",
+      "verseRefs": [
+        "42:21-22"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        21,
+        22
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Why does restored money frighten them?",
+      "answer": "Its unexplained presence follows detention and an accusation of spying, so they receive it as an alarming sign rather than simple good fortune. The reader knows Joseph ordered the restoration, but the brothers and Jacob do not.",
+      "verseRefs": [
+        "42:25-28",
+        "42:35"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        25,
+        26,
+        27,
+        28,
+        35
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Is Reuben’s offer to kill his sons a responsible guarantee?",
+      "answer": "He stakes the lives of his two sons on Benjamin's return, offering harm to children who have no role in the dispute. Jacob rejects the journey anyway, and the text reports no acceptance or fulfillment of this proposal.",
+      "verseRefs": [
+        "42:37-38"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        37,
+        38
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "governor",
+      "def": "Joseph’s position as the authority who sells grain and controls the brothers’ access."
+    },
+    {
+      "term": "interpreter",
+      "def": "The mediator whose presence helps conceal that Joseph understands his brothers’ speech."
+    },
+    {
+      "term": "Sheol",
+      "def": "The destination of death Jacob invokes when he imagines losing Benjamin."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "fd722c88b2e9720762a05d869eccf3fc972b8f738ee9bd32e1c47042a713c818",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

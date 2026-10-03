@@ -1,0 +1,264 @@
+{
+  "book": "LEV",
+  "chapter": 3,
+  "bookName": "Leviticus",
+  "summary": "The third offering is a peace offering from the herd or flock, and either a male or female animal may be brought if it is without defect. The offerer lays a hand on the animal and kills it, the priests apply its blood, and specified fat and organs are burned on the altar.",
+  "whyItMatters": "The chapter adds another kind of sacrifice to Leviticus's opening sequence and establishes its repeated pattern, its altar portions, and the prohibition on eating fat or blood.",
+  "context": {
+    "author": "The chapter continues the divine instructions mediated through Moses; it does not identify the book's narrator or final compiler.",
+    "audience": "Israelites bringing peace offerings and Aaron's sons, who handle the blood and burn the assigned portions.",
+    "date": "The narrative setting is Israel's time at Sinai; the chapter itself does not date its composition.",
+    "setting": "Before the Tent of Meeting and at its altar, following the burnt and meal offerings of chapters 1-2.",
+    "literaryForm": "Ritual case law arranged in parallel instructions for an animal from the herd, a lamb, or a goat."
+  },
+  "outline": [
+    {
+      "heading": "A peace offering from the herd",
+      "verses": "1-5",
+      "note": "The first case establishes the hand-laying, blood application, and selected portions burned on the altar."
+    },
+    {
+      "heading": "A peace offering of a lamb",
+      "verses": "6-11",
+      "note": "The flock case repeats the pattern and specifically includes the lamb's entire tail fat."
+    },
+    {
+      "heading": "A peace offering of a goat",
+      "verses": "12-16",
+      "note": "The goat procedure again assigns the internal fat and organs to the altar."
+    },
+    {
+      "heading": "The standing rule about fat and blood",
+      "verses": "17",
+      "note": "The chapter closes by extending the food prohibition through Israel's generations and dwellings."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "3:1",
+      "text": "“‘If his offering is a sacrifice of peace offerings, if he offers it from the herd, whether male or female, he shall offer it without defect before Yahweh.",
+      "why": "The opening identifies the offering and distinguishes its eligible herd animal as either male or female, provided it has no defect."
+    },
+    {
+      "ref": "3:11",
+      "text": "The priest shall burn it on the altar: it is the food of the offering made by fire to Yahweh.",
+      "why": "This compact line names the priest's action and uses the chapter's striking food language for the altar portion."
+    },
+    {
+      "ref": "3:17",
+      "text": "“‘It shall be a perpetual statute throughout your generations in all your dwellings, that you shall eat neither fat nor blood.’”",
+      "why": "The closing prohibition extends the reservation of fat and blood beyond the altar to Israel’s dwellings."
+    }
+  ],
+  "themes": [
+    "peace offerings",
+    "animals without defect",
+    "blood around the altar",
+    "fat assigned to Yahweh",
+    "a repeated herd-and-flock pattern"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is a peace offering in this chapter?",
+      "answer": "It is an animal sacrifice drawn from the herd or flock and presented before Yahweh. This chapter concentrates on its slaughter, blood, and altar portions; it gives the offering's name but does not yet explain the word “peace” or describe every use of the remaining meat.",
+      "verseRefs": [
+        "3:1-5",
+        "3:6-11",
+        "3:12-16"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        1,
+        5,
+        6,
+        11,
+        12,
+        16
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What features distinguish the peace offering within this chapter?",
+      "answer": "A male or female animal may be used if it is without defect, and only specified fat and organs are assigned to the altar in the procedures described here. The offerer lays a hand on the animal and kills it, while the priests apply its blood and burn the named portions.",
+      "verseRefs": [
+        "3:1-5",
+        "3:6-11"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why does the offerer lay a hand on the animal?",
+      "answer": "The gesture occurs at the start of each animal procedure, immediately before the offerer kills it. The chapter makes the action part of presentation but does not interpret it, so a more exact symbolic claim would have to come from evidence beyond these verses.",
+      "verseRefs": [
+        "3:2",
+        "3:7-8",
+        "3:12-13"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        2,
+        7,
+        8,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Which parts are burned on the altar?",
+      "answer": "Each case names the fat covering the innards, the fat on the innards, both kidneys with their fat, and the cover on the liver. The lamb case also specifies the entire tail fat, showing why the lists should be read rather than reduced to a generic reference to meat.",
+      "verseRefs": [
+        "3:3-4",
+        "3:9-10",
+        "3:14-15"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3,
+        4,
+        9,
+        10,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why does verse 11 call the altar portion “food” for Yahweh?",
+      "answer": "That is the chapter's own ritual description of what the priest burns, and verse 16 pairs it with “a pleasant aroma.” The text does not say that God needs nourishment, so the food language should not be expanded into a claim that the offering sustains God.",
+      "verseRefs": [
+        "3:11",
+        "3:16"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        11,
+        16
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What role does blood have in each case?",
+      "answer": "After the offerer kills the animal at the Tent of Meeting, Aaron's sons sprinkle its blood around the altar. The same action appears in the herd, lamb, and goat cases, marking blood handling as a stable priestly duty in this offering.",
+      "verseRefs": [
+        "3:2",
+        "3:8",
+        "3:13"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        2,
+        8,
+        13
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Does the ban on eating fat and blood amount to modern health advice?",
+      "answer": "The chapter presents it as a perpetual ritual statute tied to Yahweh's claim on the altar portions. It supplies no medical explanation, so turning the rule into a nutrition or public-health claim would add a rationale the text does not give.",
+      "verseRefs": [
+        "3:16-17"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        16,
+        17
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Why repeat nearly the same procedure for herd, lamb, and goat?",
+      "answer": "The repetition shows which elements remain constant across eligible animals: no defect, presentation before Yahweh, hand-laying, slaughter, priestly blood application, and the burning of designated fat and organs. It also records the details that vary, especially the lamb's tail fat.",
+      "verseRefs": [
+        "3:1-5",
+        "3:6-11",
+        "3:12-16"
+      ],
+      "category": "practical",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        16
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "peace offering",
+      "def": "The animal sacrifice regulated here for herd or flock, with selected portions burned on the altar."
+    },
+    {
+      "term": "without defect",
+      "def": "The chapter's required condition for an animal presented as a peace offering."
+    },
+    {
+      "term": "fat",
+      "def": "In these procedures, the designated internal fatty portions detailed in verses 3-4, 9-10, and 14-15."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "a39c7f9837afffd9fa87f75a54b42c71db12fcf127ecddccfb31ff4d21cbdb21",
+    "generatedAt": "2026-09-29T17:29:30.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ],
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-leviticus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The preceding chapter regulates grain offerings, including the memorial portion burned on the altar and the remainder given to priests.",
+      "verseRefs": [
+        "2:1-16"
+      ]
+    },
+    "here": {
+      "text": "Peace offerings may come from the herd, a lamb, or a goat. Each case assigns blood handling to the priests and selected fat to the altar, before the closing ban on eating fat and blood.",
+      "verseRefs": [
+        "3:1-17"
+      ]
+    },
+    "after": {
+      "text": "The following chapter changes the occasion: it prescribes offerings for unintentional prohibited acts by a priest, congregation, ruler, or ordinary person.",
+      "verseRefs": [
+        "4:1-35"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "da1628401efbed5d5af2eb750da0ba67d86d3d90aa459df5f6a4ee5367327c4e"
+  }
+}

@@ -1,0 +1,210 @@
+{
+ "steps": [
+  {
+   "id": "gen-6-1-4",
+   "evidence": {
+    "status": "disputed",
+    "note": "Genesis says “God’s sons” but does not identify them. Angelic, royal, and Sethite readings all supply an interpretation the passage itself leaves unstated."
+   },
+   "title": "The sons of God and the daughters of men",
+   "cite": "Genesis 6:1-4 · WEB",
+   "ref": "GEN 6:1-4",
+   "quote": "When men began to multiply on the surface of the ground, and daughters were born to them, God’s sons saw that men’s daughters were beautiful, and they took any that they wanted for themselves as wives. Yahweh said, “My Spirit will not strive with man forever, because he also is flesh; so his days will be one hundred twenty years.” The Nephilim were on the earth in those days, and also after that, when God’s sons came in to men’s daughters and had children with them. Those were the mighty men who were of old, men of renown.",
+   "note": "Where the fall of the watchers is anchored. Reading “God’s sons” (bene ha-elohim) as angelic beings is the oldest interpretation — it is how 1 Enoch tells it and how Jude 1:6 and 2 Peter 2:4 seem to read it. The “Sethite” reading (godly line of Seth marrying the ungodly line of Cain) is a later church interpretation. Both are interpretive; the text itself does not spell out which.",
+   "sourceUrl": ""
+  },
+  {
+   "id": "enoch-6-3-6",
+   "evidence": {
+    "status": "extra-canonical",
+    "note": "This account comes from 1 Enoch, canonical in the Ethiopian Orthodox tradition but outside most biblical canons; its relationship to Jude is stated separately."
+   },
+   "title": "The oath on Mount Hermon",
+   "cite": "1 Enoch 6:3-6 · Charles 1917",
+   "ref": "ENO 6:3-6",
+   "quote": "And Semjâzâ, who was their leader, said unto them: ‘I fear ye will not indeed agree to do this deed, and I alone shall have to pay the penalty of a great sin.’ And they all answered him and said: ‘Let us all swear an oath, and all bind ourselves by mutual imprecations not to abandon this plan but to do this thing.’ Then sware they all together and bound themselves by mutual imprecations upon it. And they were in all two hundred; who descended ⌈in the days⌉ of Jared on the summit of Mount Hermon, and they called it Mount Hermon, because they had sworn and bound themselves by mutual imprecations upon it.",
+   "note": "1 Enoch expands Genesis 6: two hundred angels descend and bind themselves by oath on Hermon. It is not canonical scripture outside the Ethiopian Orthodox church. But Jude quotes it directly — JUD 1:14-15 (“About these also Enoch, the seventh from Adam, prophesied, saying, ‘Behold, the Lord came with ten thousands of his holy ones…’”) is a quotation of 1 Enoch 1:9. Verified in repo at JUD.json. The brackets ⌈ ⌉ are Charles's own marks for a reconstructed reading.",
+   "sourceUrl": "https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)/Chapter_06",
+   "readMore": {
+    "label": "Read the whole book",
+    "href": "/early/enoch#chapter-6"
+   }
+  },
+  {
+   "id": "job-1-6-12",
+   "evidence": {
+    "status": "explicit",
+    "note": "Job directly depicts the accuser in the heavenly court, speaking with God and acting only within limits; it does not narrate his origin or fall."
+   },
+   "title": "The satan in the court of heaven",
+   "cite": "Job 1:6-12 · WEB",
+   "ref": "JOB 1:6-12",
+   "quote": "Now on the day when God’s sons came to present themselves before Yahweh, Satan also came among them. Yahweh said to Satan, “Where have you come from?” Then Satan answered Yahweh, and said, “From going back and forth on the earth, and from walking up and down in it.” Yahweh said to Satan, “Have you considered my servant, Job? For there is no one like him on the earth, a blameless and an upright man, one who fears God, and turns away from evil.” Then Satan answered Yahweh, and said, “Does Job fear God for nothing? Haven’t you made a hedge around him, and around his house, and around all that he has, on every side? You have blessed the work of his hands, and his substance is increased in the land. But stretch out your hand now, and touch all that he has, and he will renounce you to your face.” Yahweh said to Satan, “Behold, all that he has is in your power. Only on himself don’t stretch out your hand.” So Satan went out from the presence of Yahweh.",
+   "note": "In the Hebrew, “Satan” here is ha-satan — “the accuser” or “the adversary,” a title with the definite article. He walks to and fro in the earth and must ask leave; he acts only within limits God sets. This is the adversary as prosecuting figure in the heavenly court, not yet the fully drawn devil of the New Testament.",
+   "sourceUrl": ""
+  },
+  {
+   "id": "sa-ch-census",
+   "evidence": {
+    "status": "inferred",
+    "note": "Samuel and Chronicles directly attribute the same census differently. Reading that difference as a developing portrait of the adversary is the editorial inference."
+   },
+   "title": "The same census, two tellings",
+   "cite": "2 Samuel 24:1 · WEB",
+   "ref": "2SA 24:1",
+   "quote": "Again Yahweh’s anger burned against Israel, and he moved David against them, saying, “Go, count Israel and Judah.”",
+   "note": "One event, told twice. Samuel (earlier) says Yahweh’s anger moved David; Chronicles (written centuries later) names Satan as the mover. Set side by side, this is the clearest window in the Hebrew scriptures into how Israel’s picture of the adversary sharpened over time — the later writer attributes to Satan what the earlier one attributed to the LORD’s anger. Both verses verified verbatim in the repo.",
+   "sourceUrl": "",
+   "second": {
+    "cite": "1 Chronicles 21:1 · WEB",
+    "ref": "1CH 21:1",
+    "quote": "Satan stood up against Israel, and moved David to take a census of Israel."
+   }
+  },
+  {
+   "id": "isa-14-12-15",
+   "evidence": {
+    "status": "disputed",
+    "note": "The passage directly addresses the king of Babylon. Reading a prior angelic fall behind the royal taunt is a longstanding Christian interpretation, not its stated subject."
+   },
+   "title": "How you have fallen from heaven",
+   "cite": "Isaiah 14:12-15 · WEB",
+   "ref": "ISA 14:12-15",
+   "quote": "How you have fallen from heaven, shining one, son of the dawn! How you are cut down to the ground, who laid the nations low! You said in your heart, “I will ascend into heaven! I will exalt my throne above the stars of God! I will sit on the mountain of assembly, in the far north! I will ascend above the heights of the clouds! I will make myself like the Most High!” Yet you shall be brought down to Sheol, to the depths of the pit.",
+   "note": "WEB renders the Hebrew helel ben-shachar as “shining one, son of the dawn.” The Latin Vulgate translated it “Lucifer” (light-bearer), and the Douay-Rheims kept that word — this single Latin word is the whole origin of the name “Lucifer.” In its own context the taunt is a funeral song sung over the king of Babylon (see 14:4). The church has long read a second, older fall behind the human king; that fuller reading is interpretive, not stated in the passage itself.",
+   "sourceUrl": "",
+   "second": {
+    "cite": "Isaiah 14:12 · Douay-Rheims",
+    "ref": "ISA 14:12",
+    "quote": "How art thou fallen from heaven, O Lucifer, who didst rise in the morning? how art thou fallen to the earth, that didst wound the nations?"
+   }
+  },
+  {
+   "id": "ezk-28-12-17",
+   "evidence": {
+    "status": "disputed",
+    "note": "Ezekiel names the king of Tyre while using Eden and cherub imagery. Applying the lament to Satan as a second referent is interpretive."
+   },
+   "title": "The lament over the king of Tyre",
+   "cite": "Ezekiel 28:12-17 · WEB",
+   "ref": "EZK 28:12-17",
+   "quote": "“Son of man, take up a lamentation over the king of Tyre, and tell him, ‘The Lord Yahweh says: “You were the seal of full measure, full of wisdom, and perfect in beauty. You were in Eden, the garden of God. Every precious stone adorned you: ruby, topaz, emerald, chrysolite, onyx, jasper, sapphire, turquoise, and beryl. Gold work of tambourines and of pipes was in you. They were prepared in the day that you were created. You were the anointed cherub who covers. Then I set you up on the holy mountain of God. You have walked up and down in the middle of the stones of fire. You were perfect in your ways from the day that you were created, until unrighteousness was found in you. By the abundance of your commerce, your insides were filled with violence, and you have sinned. Therefore I have cast you as profane out of God’s mountain. I have destroyed you, covering cherub, from the middle of the stones of fire. Your heart was lifted up because of your beauty. You have corrupted your wisdom by reason of your splendor. I have cast you to the ground. I have laid you before kings, that they may see you.",
+   "note": "Addressed by name to the king of Tyre, yet worded like Eden: an anointed cherub, in the garden of God, on the holy mountain, blameless until “unrighteousness was found in you.” Like Isaiah 14, the passage is a lament over a human ruler that the church has long read as also picturing an older angelic fall. The double reading is interpretive; the text names the king of Tyre.",
+   "sourceUrl": ""
+  },
+  {
+   "id": "luk-10-18",
+   "evidence": {
+    "status": "explicit",
+    "note": "Jesus directly says he saw Satan fall from heaven; the immediate setting is the seventy reporting that demons submit in his name."
+   },
+   "title": "I saw Satan fall",
+   "cite": "Luke 10:18 · WEB",
+   "ref": "LUK 10:18",
+   "quote": "He said to them, “I saw Satan having fallen like lightning from heaven.",
+   "note": "Jesus' own sentence, spoken as the seventy return rejoicing that even demons submit to them. The oldest fall imagery — descent from heaven — placed on the lips of Christ himself.",
+   "sourceUrl": ""
+  },
+  {
+   "id": "jhn-12-31",
+   "evidence": {
+    "status": "explicit",
+    "note": "Jesus directly says the ruler of this world will be cast out and ties that judgment to his approaching crucifixion."
+   },
+   "title": "The prince of this world cast out",
+   "cite": "John 12:31 · WEB",
+   "ref": "JHN 12:31",
+   "quote": "Now is the judgment of this world. Now the prince of this world will be cast out.",
+   "note": "Jesus speaking as the cross approaches. “The prince of this world” is his term for the adversary; here the casting out is tied to the judgment accomplished at the cross, not to a primeval event.",
+   "sourceUrl": ""
+  },
+  {
+   "id": "jud-6-2pe-4",
+   "evidence": {
+    "status": "inferred",
+    "note": "Jude and 2 Peter directly describe sinning angels kept for judgment; connecting their offense specifically to Genesis 6 is strongly contextual but not named in either sentence."
+   },
+   "title": "The angels who did not keep their first estate",
+   "cite": "Jude 1:6 · WEB",
+   "ref": "JUD 1:6",
+   "quote": "Angels who didn’t keep their first domain, but deserted their own dwelling place, he has kept in everlasting bonds under darkness for the judgment of the great day.",
+   "note": "The two New Testament letters that most clearly read Genesis 6 as an angelic fall. WEB renders the Greek tartaroō (2 Peter 2:4) as “cast them down to Tartarus” — a term borrowed from Greek cosmology for the deepest prison. Both letters describe fallen angels already bound and held for a coming judgment.",
+   "sourceUrl": "",
+   "second": {
+    "cite": "2 Peter 2:4 · WEB",
+    "ref": "2PE 2:4",
+    "quote": "For if God didn’t spare angels when they sinned, but cast them down to Tartarus, and committed them to pits of darkness to be reserved for judgment;"
+   }
+  },
+  {
+   "id": "rev-12-7-9",
+   "evidence": {
+    "status": "explicit",
+    "note": "Revelation's vision directly names the dragon as the devil and Satan and depicts Michael casting him down; the literary form is apocalyptic vision."
+   },
+   "title": "War in heaven",
+   "cite": "Revelation 12:7-9 · WEB",
+   "ref": "REV 12:7-9",
+   "quote": "There was war in the sky. Michael and his angels made war on the dragon. The dragon and his angels made war. They didn’t prevail. No place was found for them any more in heaven. The great dragon was thrown down, the old serpent, he who is called the devil and Satan, the deceiver of the whole world. He was thrown down to the earth, and his angels were thrown down with him.",
+   "note": "Revelation names the figure the earlier texts left as a title: “the dragon… the old serpent, he who is called the devil and Satan.” Michael and his angels cast him down. This is apocalyptic vision, gathering the strands — serpent, adversary, devil — into one enemy.",
+   "sourceUrl": ""
+  },
+  {
+   "id": "rev-12-10-12",
+   "evidence": {
+    "status": "explicit",
+    "note": "The vision directly identifies the thrown-down figure as the accuser and attributes the saints' victory to the Lamb's blood and their testimony."
+   },
+   "title": "The accuser thrown down",
+   "cite": "Revelation 12:10-12 · WEB",
+   "ref": "REV 12:10-12",
+   "quote": "I heard a loud voice in heaven, saying, “Now the salvation, the power, and the Kingdom of our God, and the authority of his Christ has come; for the accuser of our brothers has been thrown down, who accuses them before our God day and night. They overcame him because of the Lamb’s blood, and because of the word of their testimony. They didn’t love their life, even to death. Therefore rejoice, heavens, and you who dwell in them. Woe to the earth and to the sea, because the devil has gone down to you, having great wrath, knowing that he has but a short time.”",
+   "note": "The accuser of Job's court is here named and cast out. The victory is not by force but “because of the Lamb’s blood, and because of the word of their testimony” — the enemy is overcome through the cross, and his time is declared short.",
+   "sourceUrl": ""
+  },
+  {
+   "id": "rev-20-abyss-end",
+   "evidence": {
+    "status": "explicit",
+    "note": "Revelation directly depicts the devil bound in the abyss and later thrown into the lake of fire; chronology beyond the passage's apocalyptic sequence is not supplied here."
+   },
+   "title": "The abyss, then the end of him",
+   "cite": "Revelation 20:1-3 · WEB",
+   "ref": "REV 20:1-3",
+   "quote": "I saw an angel coming down out of heaven, having the key of the abyss and a great chain in his hand. He seized the dragon, the old serpent, who is the devil and Satan, who deceives the whole inhabited earth, and bound him for a thousand years, and cast him into the abyss, and shut it and sealed it over him, that he should deceive the nations no more until the thousand years were finished. After this, he must be freed for a short time.",
+   "note": "Where scripture ends the story: the adversary bound in the abyss, and finally cast into the lake of fire. The descent that began with a fall from heaven ends in defeat. Stating that end is part of the record, not editorializing.",
+   "sourceUrl": "",
+   "second": {
+    "cite": "Revelation 20:10 · WEB",
+    "ref": "REV 20:10",
+    "quote": "The devil who deceived them was thrown into the lake of fire and sulfur, where the beast and the false prophet are also. They will be tormented day and night forever and ever."
+   }
+  },
+  {
+   "id": "zec-3-1-2",
+   "evidence": {
+    "status": "explicit",
+    "note": "Zechariah directly places the accuser beside Joshua in a heavenly courtroom scene and records Yahweh's rebuke."
+   },
+   "title": "Satan accusing Joshua",
+   "cite": "Zechariah 3:1-2 · WEB",
+   "ref": "ZEC 3:1-2",
+   "quote": "He showed me Joshua the high priest standing before Yahweh’s angel, and Satan standing at his right hand to be his adversary.",
+   "note": "The first post-exilic appearance of the adversary as a named figure. Satan (Hebrew ha-satan: \"the accuser\") stands at Joshua's right hand as his adversary, and the angel of Yahweh rebukes him. This is the clearest window into how Israel's picture of the adversary sharpened over time — from a heavenly court figure to a named enemy.",
+   "sourceUrl": ""
+  },
+  {
+   "id": "luk-22-31",
+   "evidence": {
+    "status": "explicit",
+    "note": "Jesus directly tells Peter that Satan asked to sift the disciples and that he has prayed for Peter's faith."
+   },
+   "title": "Peter warned to watch Satan",
+   "cite": "Luke 22:31-32 · WEB",
+   "ref": "LUK 22:31-32",
+   "quote": "Simon, Simon, behold, Satan asked to have all of you, that he might sift you as wheat, but I prayed for you, that your faith wouldn’t fail. You, when once you have turned again, establish your brothers.",
+   "note": "Jesus' warning to Peter after the Last Supper, before the crucifixion. Satan's role is explicitly described as sifting like wheat, and Jesus intercedes for Peter. This is the New Testament's clearest statement about Satan's purpose toward believers.",
+   "sourceUrl": ""
+  }
+ ]
+}

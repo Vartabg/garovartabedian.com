@@ -1,0 +1,244 @@
+{
+  "book": "GEN",
+  "chapter": 5,
+  "bookName": "Genesis",
+  "summary": "A genealogy traces Adam through Seth and later generations to Noah, repeating each ancestor’s age, offspring, and death. Enoch interrupts that pattern by walking with God and being taken, while Lamech names Noah in hope for relief from the cursed ground.",
+  "whyItMatters": "The list links the first humans with the family that will survive the flood. Its repetition keeps mortality in view, while Enoch and the hope attached to Noah prevent the genealogy from being only a set of ages.",
+  "context": {
+    "author": "Genesis names no historical writer. Jewish and Christian tradition associates the Torah with Moses; the book briefing describes older traditions shaped into a final literary form, without a settled account of every stage.",
+    "audience": "The book addresses Israel through a story of shared human origins and the family from whom Israel traces its ancestry; no single first audience is named in this chapter.",
+    "date": "The narrated events belong to primeval or ancestral time, not to a securely dated writing event. Major stages of Genesis are often placed across the monarchic to Persian periods, with exact models and dates debated.",
+    "setting": "Generations between Adam and Noah in the story’s primeval period, without a securely identified geography.",
+    "literaryForm": "Formulaic genealogy punctuated by Enoch’s exceptional ending and Lamech’s naming speech."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Seth is born after Abel’s killing and Enosh follows; people begin calling on Yahweh’s name. The genealogy now follows this branch of Adam’s descendants.",
+      "verseRefs": [
+        "4:25-26"
+      ]
+    },
+    "here": {
+      "text": "Notice the repeated movement from birth to further children to death, and the departures from the pattern at Enoch and Noah.",
+      "verseRefs": [
+        "5:1-5",
+        "5:21-32"
+      ]
+    },
+    "after": {
+      "text": "The next chapter describes corruption on earth and introduces Noah as the one who finds favor as judgment approaches.",
+      "verseRefs": [
+        "6:5-13"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Adam and the opening pattern",
+      "verses": "1-5",
+      "note": "The heading recalls the divine likeness and then gives Adam’s descendants and death."
+    },
+    {
+      "heading": "Seth through Jared",
+      "verses": "6-20",
+      "note": "Successive generations repeat birth ages, additional children, total years, and death."
+    },
+    {
+      "heading": "Enoch walks with God",
+      "verses": "21-24",
+      "note": "Enoch’s ending differs: God takes him rather than the text saying he died."
+    },
+    {
+      "heading": "Methuselah and Lamech",
+      "verses": "25-31",
+      "note": "The repeated pattern resumes, and Lamech names Noah with a hope for relief."
+    },
+    {
+      "heading": "Noah and his sons",
+      "verses": "32",
+      "note": "The line reaches Shem, Ham, and Japheth."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "5:1",
+      "text": "This is the book of the generations of Adam. In the day that God created man, he made him in God’s likeness.",
+      "why": "The heading and likeness language connect the genealogy to the creation account."
+    },
+    {
+      "ref": "5:24",
+      "text": "Enoch walked with God, and he was not found, for God took him.",
+      "why": "Enoch’s unusual ending interrupts the otherwise repeated death notices."
+    },
+    {
+      "ref": "5:29",
+      "text": "He named him Noah, saying, “This one will comfort us in our work and in the toil of our hands, caused by the ground which Yahweh has cursed.”",
+      "why": "Lamech links Noah’s name with hope amid difficult work on cursed ground."
+    }
+  ],
+  "themes": [
+    "descent from Adam",
+    "repeated mortality",
+    "Enoch’s exception",
+    "work on cursed ground",
+    "Noah’s family"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What does “generations” introduce here?",
+      "answer": "It is the heading for a line of descendants, beginning with Adam and moving through named fathers and sons. The list also mentions other sons and daughters, so it is selective rather than a record of every person born.",
+      "verseRefs": [
+        "5:1-5"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why repeat the age and death formula?",
+      "answer": "The repeated notices trace continuity across generations while ending nearly every lifespan with “then he died.” This pattern keeps the consequence of mortality visible even amid long lives and many children.",
+      "verseRefs": [
+        "5:3-20",
+        "5:25-31"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3,
+        25
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Can the ages be used to calculate an independently verified date for creation?",
+      "answer": "The chapter supplies ages within its genealogy, but it does not give a modern calendar anchor or independent evidence for the earliest events. Readers interpret the numbers differently; the text itself is building its ancestral sequence.",
+      "verseRefs": [
+        "5:3-20",
+        "5:25-32"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        3,
+        25
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How does the genealogy echo chapter 1?",
+      "answer": "It recalls that God made humankind in divine likeness, created male and female, and blessed them. Adam’s son is then described in Adam’s likeness, connecting the creation language to descent.",
+      "verseRefs": [
+        "5:1-3"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What is unusual about Enoch?",
+      "answer": "He walks with God, and instead of the usual “then he died,” the text says he was not found because God took him. It leaves the manner and destination of that taking unexplained.",
+      "verseRefs": [
+        "5:21-24"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        21
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Who is Noah at the end of the list?",
+      "answer": "He is Lamech’s son, named in hope of comfort from work on cursed ground. The final verse names his sons Shem, Ham, and Japheth, who become central in the coming flood account.",
+      "verseRefs": [
+        "5:28-32"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        28
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Does Lamech’s hope mean Noah has already reversed the ground’s curse?",
+      "answer": "The father expresses a hope that this son will comfort people in painful work. The chapter records that speech, but it does not narrate the curse being lifted or explain exactly how the hope will be fulfilled.",
+      "verseRefs": [
+        "5:28-31"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        28
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Why mention other sons and daughters without naming them?",
+      "answer": "The entries acknowledge broader families while preserving one line of descent toward Noah. Readers should not mistake the selected names for a claim that no one else existed in these generations.",
+      "verseRefs": [
+        "5:4",
+        "5:7",
+        "5:10-32"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "Why does another hosted edition give Adam a different age when Seth is born?",
+      "answer": "The WEB reads one hundred thirty years at 5:3, while the hosted Brenton English Septuagint translation reads two hundred and thirty. These English versions follow different textual traditions; comparing them does not establish which ancient reading is earliest.",
+      "verseRefs": [
+        "5:3"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        3
+      ],
+      "evidenceSourceIds": [
+        "hosted-web",
+        "hosted-brenton"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "generations",
+      "def": "A family line or sequence of descendants, the subject of this chapter’s heading."
+    },
+    {
+      "term": "likeness",
+      "def": "The resemblance language linking God’s creation of humankind with Adam’s son."
+    },
+    {
+      "term": "Methuselah",
+      "def": "The ancestor between Enoch and Lamech in the line that leads to Noah."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "ffa474120b152396709136a4901c11cbdfe086191ab75b615f55b22dc93b398b",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

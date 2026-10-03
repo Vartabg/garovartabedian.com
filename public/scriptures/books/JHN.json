@@ -1,0 +1,295 @@
+{
+  "book": "JHN",
+  "bookName": "John",
+  "oneLine": "A reflective Gospel in which signs, conversations, and layered words disclose who Jesus is — while characters repeatedly hear only the surface.",
+  "orient": "John tells the same central story as the other Gospels but rarely in the same way. It opens before creation with the Word, gives long conversations and discourses, organizes much of Jesus's public work around signs and Jewish festivals, and devotes chapters 13–17 to one final evening. The narrator often tells readers more than the characters know, so misunderstanding becomes a teaching device: temple, birth, water, bread, sight, freedom, sleep, and kingship all carry more than their first meaning. John states his purpose near the end — that readers may believe and have life — and shapes every episode toward that invitation.",
+  "whereYouAre": "Jesus's ministry occurs under Roman rule in Galilee, Samaria, and especially Jerusalem. The temple is standing within the narrated events, while several narrator comments look back from after Jesus's death and resurrection. John the Baptist is already testifying when the story begins; there is no birth narrative. Readers meet disciples through a chain of invitations — ‘come and see’ — before the first sign at Cana.",
+  "facts": {
+    "writtenBy": "The Gospel never gives its author a modern byline. Its closing testimony connects the book with ‘the disciple whom Jesus loved,’ while early church tradition identifies John son of Zebedee. Scholars debate direct authorship, a Johannine school, editorial stages, and the relation between eyewitness testimony and final writer.",
+    "writtenWhen": "Commonly dated around AD 90–100, with some proposing earlier stages or a broader late-first-century range. The book's developed reflection and its relationship to synagogue conflict enter the dating discussion.",
+    "writtenFor": "Readers invited to recognize Jesus as Messiah and Son of God and, through believing, to receive life. The Gospel translates Semitic terms and explains places or customs, suggesting readers at some distance from the narrated Judean world.",
+    "place": "Ephesus is the major early tradition; Syria and other eastern Mediterranean settings are also proposed. The text alone does not securely identify one city.",
+    "covers": "From the Word before creation and John the Baptist's witness through Jesus's signs, final meal, arrest, crucifixion, resurrection appearances, and a Galilee epilogue.",
+    "size": "21 chapters, 879 verses, and 18,693 words in the hosted World English Bible."
+  },
+  "language": {
+    "writtenIn": "Koine Greek. The Gospel's surviving textual tradition is Greek, while its story occurs in a Jewish world where Aramaic was prominent and Hebrew scriptural and religious language mattered.",
+    "register": "Grammatically accessible Greek with a deliberately restricted, repeated vocabulary: life, light, world, truth, witness, sign, glory, remain, know, believe, love. Simple clauses carry complex symbolic relations. Long speeches sound recognizably Johannine whether spoken by narrator, Baptist, Jesus, or another character, which makes shifts of voice sometimes hard to locate.",
+    "spokenWorld": "Jesus and many interlocutors likely used Aramaic in ordinary local speech, with Greek also present in the region. John does not provide transcripts whose historical language can be mechanically recovered; it composes Greek dialogues and selectively preserves or translates Hebrew and Aramaic terms.",
+    "readerSignal": "The narrator repeatedly glosses titles and place names — Rabbi, Messiah, Cephas, Siloam, Gabbatha, Golgotha — and pauses to explain customs. More subtly, characters seize one possible meaning of a Greek word while Jesus or the narrator works with another, training readers to reread.",
+    "englishLayer": "The World English Bible translates John's Greek but must choose one English wording where the Greek is intentionally double. Notes are indispensable in places such as ‘born again/from above’ and ‘wind/Spirit.’ English quotation marks and paragraph breaks also make editorial decisions that the earliest manuscripts did not supply.",
+    "textualHistory": [
+      {
+        "label": "The composed Gospel",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "John is a Greek literary work, not an English transcript of Aramaic conversations. Its Greek word choices, repetitions, ambiguities, and narrative comments belong to the Gospel's communicative design even where earlier memories may have circulated in another language.",
+        "sourceIds": ["usccb-john", "cambridge-double-meaning", "oxford-john"]
+      },
+      {
+        "label": "The story's Jewish language world",
+        "language": "Aramaic, Hebrew, and Greek",
+        "role": "section",
+        "description": "The Gospel embeds Semitic names and titles in Greek and frequently translates them for its reader. These glosses establish linguistic distance but do not prove that every member of the audience was Gentile or that every historical speech occurred in Aramaic.",
+        "sourceIds": ["usccb-john", "hosted-web"]
+      },
+      {
+        "label": "The earliest surviving windows are small but already recognizably John",
+        "language": "Greek papyrus codices",
+        "role": "earliest-extant",
+        "spans": ["18:31–18:33", "18:37–18:38"],
+        "description": "Rylands Greek Papyrus 457 (P52) preserves only parts of John 18 on both sides of one small leaf. Its handwriting has often been dated to the second century, but the holding library now emphasizes the uncertainty and notes research favoring a date nearer 200. P52 proves early Egyptian circulation of this portion of John; it cannot by itself date the Gospel precisely or reconstruct the whole book.",
+        "sourceIds": ["manchester-p52", "csntm-p52"]
+      },
+      {
+        "label": "Substantial early copies expose both continuity and scribal work",
+        "language": "Greek papyrus codices",
+        "role": "recension",
+        "description": "P66, a late-second- or early-third-century papyrus with much of John, contains visible corrections and does not include the adulteress passage. Third-century P75 preserves large portions of Luke and John and often agrees with the form later seen in Codex Vaticanus. These witnesses bring readers close to early transmission without turning any one copy into the autograph.",
+        "sourceIds": ["csntm-p66", "csntm-p75", "usccb-john8"]
+      },
+      {
+        "label": "Several visible seams require more than one footnote",
+        "language": "Greek manuscript tradition",
+        "role": "recension",
+        "spans": ["1:18", "5:3–5:4", "7:53–8:11", "20:31"],
+        "description": "At 1:18 early witnesses divide between forms represented in English as ‘only God’ and ‘only Son.’ The angel-and-water explanation at 5:4 is absent from the early Greek witnesses. The woman accused of adultery is ancient and influential but absent from the earliest Greek manuscripts of John and mobile in later copies. At 20:31 one letter distinguishes ‘that you may come to believe’ from ‘that you may continue believing.’ Each variation has its own evidence; none should be collapsed into a slogan that the entire Gospel is unstable.",
+        "sourceIds": ["usccb-john1", "usccb-john5", "usccb-john8", "usccb-john20", "csntm-p66", "csntm-p75"]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The hosted edition presents 21 chapters and includes John 7:53–8:11. Its English wording is a translation layer; the briefing flags Greek ambiguities that no single English phrase can fully preserve.",
+        "sourceIds": ["hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "λόγος (logos): ‘Word’ is already wider than one English noun",
+        "original": "Ἐν ἀρχῇ ἦν ὁ λόγος — en archē ēn ho logos — “In the beginning was the Word”",
+        "explanation": "Logos can mean word, speech, message, account, or reason. John's opening invokes Genesis while presenting the Logos as with God, as God, agent of creation, life and light, and finally flesh. English ‘Word’ is traditional and useful, but readers should not picture merely a printed vocabulary item; the prologue describes God's self-expression in personal and creative relation.",
+        "translationNote": "No one English substitute preserves the scriptural, communicative, and conceptual range. Keeping ‘Word’ and reading the whole prologue is safer than replacing it with one philosophical slogan.",
+        "caution": "Greek and Jewish contexts both matter. Declaring logos exclusively a Stoic technical term or exclusively a Hebrew concept collapses the prologue's deliberately broad field.",
+        "refs": ["1:1", "1:3", "1:4", "1:14", "1:18"],
+        "sourceIds": ["usccb-john1", "oxford-logos-pneuma", "hosted-web"]
+      },
+      {
+        "title": "Misunderstanding is the engine: one Greek word, two levels",
+        "original": "ἄνωθεν — anōthen — “from above” and “again”",
+        "explanation": "Jesus tells Nicodemus that one must be born anōthen; Nicodemus hears a second physical birth, while the discourse develops birth from above. The same scene uses pneuma for both wind and Spirit, and ‘lifted up’ elsewhere joins crucifixion with exaltation. John's characters are not merely foolish: their literal hearing lets the narrative unfold the larger sense.",
+        "translationNote": "An English body text must choose ‘again’ or ‘from above’ at 3:3 and ‘wind’ or ‘Spirit’ at 3:8, so a note must carry the meaning the sentence cannot display simultaneously.",
+        "caution": "Not every difficult saying is a pun, and a double meaning does not mean unlimited meaning. The subsequent dialogue constrains which senses John activates.",
+        "refs": ["2:19", "2:21", "3:3", "3:8", "4:10", "11:11", "12:32"],
+        "sourceIds": ["cambridge-double-meaning", "usccb-john3", "hosted-web"]
+      },
+      {
+        "title": "ἐγώ εἰμι (egō eimi): ordinary grammar made theologically charged",
+        "original": "ἐγώ εἰμι — egō eimi — “I am / I am he”",
+        "explanation": "John gives Jesus seven famous predicate images — bread, light, gate, shepherd, resurrection and life, way/truth/life, vine — and also absolute ‘I am’ sayings without a predicate. At 8:58, ‘before Abraham came to be, I am’ reaches beyond ordinary identification and evokes divine self-designation; in other scenes the same Greek words can simply mean ‘I am he.’ Context controls the force.",
+        "translationNote": "Capitalizing ‘I AM’ signals theological resonance but is an English editorial choice. Adding ‘he’ may be natural English while obscuring the absolute Greek form.",
+        "caution": "The phrase itself is common Greek. Its significance comes from grammar plus narrative setting, scriptural echoes, reaction, and repetition — not from treating two words as a magic code every time they occur.",
+        "refs": ["6:35", "8:12", "8:58", "10:9", "10:11", "11:25", "14:6", "15:1", "18:5"],
+        "sourceIds": ["usccb-john8", "oxford-john", "hosted-web"]
+      },
+      {
+        "title": "‘Amen, amen’: Jesus marks a disclosure before making it",
+        "original": "ἀμὴν ἀμὴν λέγω ὑμῖν — amēn amēn legō hymin — “Truly, truly, I tell you”",
+        "explanation": "Amen is a Semitic affirmation normally answering what has been said. In John, Jesus repeatedly places the doubled form before his own statement. The formula slows the discourse, claims authority, and often introduces a saying that exposes the gap between visible and heavenly understanding.",
+        "translationNote": "Versions render it ‘truly, truly,’ ‘very truly,’ or ‘I assure you.’ Smoother idiom can lose the repeated Semitic sound that links the sayings across the Gospel.",
+        "caution": "The formula signals emphasis and authority; it does not mean the unmarked sayings are less true.",
+        "refs": ["1:51", "3:3", "5:19", "6:26", "8:34", "13:16", "21:18"],
+        "sourceIds": ["usccb-john3", "usccb-john", "hosted-web"]
+      },
+      {
+        "title": "πιστεύω (pisteuō): John keeps ‘believing’ in motion",
+        "original": "ἵνα πιστεύητε … καὶ ἵνα πιστεύοντες ζωὴν ἔχητε — hina pisteuēte … kai hina pisteuontes zōēn echēte — ‘that you may believe … and believing may have life’",
+        "explanation": "The hosted SBLGNT/MorphGNT layer has 98 forms of the verb pisteuō in John and no occurrence of the noun pistis, ‘faith.’ People believe testimony, believe a word, believe that a claim is true, or ‘believe into’ Jesus. Some sign-based belief is incomplete; other belief remains through loss and grows into confession. John therefore narrates trust as an action and relation rather than defining an abstract substance called faith.",
+        "translationNote": "English often supplies ‘believe in,’ while John frequently writes pisteuein eis — literally ‘believe into.’ The unusual construction can suggest movement or personal entrustment, but it should not be made to carry more than its contexts show.",
+        "caution": "A verb count does not create a salvation formula, and Greek tense alone cannot prove whether one act or lifelong continuity is meant. Scenes such as 2:23–25, 6:60–71, 11:25–27, and 20:24–31 show John testing different kinds and objects of belief.",
+        "refs": ["1:12", "2:23", "2:24", "4:50", "6:29", "11:25", "20:29", "20:31"],
+        "sourceIds": ["usccb-john20", "morphgnt-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "μένω (menō): ‘remain’ turns encounter into durable communion",
+        "original": "μείνατε ἐν ἐμοί, κἀγὼ ἐν ὑμῖν — meinate en emoi, kagō en hymin — ‘remain in me, and I in you’",
+        "explanation": "John uses menō forty times in the hosted Greek layer. It can mean staying at a lodging, remaining in a condition, continuing in Jesus's word, or sharing the mutual indwelling pictured by vine and branches. The ordinary verb accumulates theological weight because disciples who first ask where Jesus is staying are later commanded to stay in him.",
+        "translationNote": "‘Abide,’ ‘remain,’ ‘stay,’ and ‘dwell’ often translate the same lemma. Switching English words can hide the narrative thread from 1:38–39 through the farewell discourse.",
+        "caution": "Remaining is not passive interior feeling. In chapters 14–15 it appears with words, commands, love, fruit, prayer, and costly witness; the surrounding verbs define what the relationship does.",
+        "refs": ["1:38", "1:39", "6:56", "8:31", "14:17", "15:4", "15:7", "15:10"],
+        "sourceIds": ["oxford-john", "morphgnt-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "Signs and witnesses form a trial that puts the reader in the jury box",
+        "original": "σημεῖον … μαρτυρία — sēmeion … martyria — ‘sign … testimony’",
+        "explanation": "John calls selected works signs because they point beyond wonder to identity and glory. Alongside them runs legal testimony: John the Baptist, the Samaritan woman, Jesus's works, the Father, Scripture, the Spirit, disciples, and the narrator testify. The hosted Greek layer contains 17 uses of sēmeion, 33 of martyreō, and 14 of martyria. Seeing can invite belief, but signs can also be misread, demanded, or followed for bread alone.",
+        "translationNote": "‘Miracle’ foregrounds extraordinary power; ‘sign’ foregrounds what an act signifies. ‘Witness’ may sound like a modern spectator, while John's word family carries courtroom testimony and public attestation.",
+        "caution": "John never gives a numbered official list of exactly seven signs, and counting schemes differ. His explicit purpose says the written selection is partial, so the literary function matters more than forcing every deed into one chart.",
+        "refs": ["1:7", "2:11", "2:23", "5:31", "5:36", "6:26", "12:37", "19:35", "20:30"],
+        "sourceIds": ["usccb-john1", "cambridge-ambiguous-signs", "morphgnt-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "κόσμος (kosmos): the same ‘world’ is created, loved, resistant, and sent to",
+        "original": "οὕτως γὰρ ἠγάπησεν ὁ θεὸς τὸν κόσμον — houtōs gar ēgapēsen ho theos ton kosmon — ‘for in this way God loved the world’",
+        "explanation": "Kosmos occurs 78 times in the hosted Greek layer. It can name creation, humanity, the public sphere, an order alienated from God, or the arena into which the Son and disciples are sent. John can say the world was made through the Word, God loves it, it does not know him, it hates disciples, and Jesus overcomes it. The word's referent and moral coloring change with the sentence.",
+        "translationNote": "English preserves ‘world’ but readers often unconsciously hold one definition throughout. At 3:16 houtōs most naturally points to the manner of love — ‘in this way,’ by giving the Son — not merely its emotional degree.",
+        "caution": "The hostile ‘world’ is not the planet, embodied life, or every non-Christian person. John 17 explicitly sends disciples into the world rather than teaching contempt for creation or social withdrawal.",
+        "refs": ["1:10", "3:16", "3:17", "7:7", "12:47", "15:18", "16:33", "17:18", "17:21"],
+        "sourceIds": ["usccb-john3", "oxford-john", "morphgnt-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "Ἰουδαῖοι (Ioudaioi): one repeated label, several scene-level referents",
+        "original": "οἱ Ἰουδαῖοι — hoi Ioudaioi — ‘the Jews’ or, in some contexts, ‘the Judeans’",
+        "explanation": "John uses forms of Ioudaios 71 times in the hosted Greek layer. The term may mark geography, shared customs or feasts, Judean crowds, mourners, ordinary interlocutors, or hostile authorities. John can distinguish a Jewish person or crowd from ‘the Jews’ within the same scene. Translation therefore requires local judgment rather than replacing every occurrence automatically with either ‘Jews’ or ‘Judeans.’",
+        "translationNote": "‘Jews’ preserves the traditional ethnic-religious term but can sound universal in modern ears. ‘Judeans’ clarifies geography or leadership in some scenes but becomes misleading elsewhere. Notes and specific nouns such as ‘authorities’ may sometimes communicate the implied group more honestly than a global substitution.",
+        "caution": "John's polemic is an argument within a Jewish story: Jesus, his mother, disciples, Scripture, feasts, and earliest witnesses are Jewish. The Gospel's harshest lines must never be turned into collective guilt, racial hostility, or Christian superiority.",
+        "refs": ["1:19", "4:9", "5:10", "7:1", "7:13", "9:22", "11:19", "11:31", "19:38", "20:19"],
+        "sourceIds": ["usccb-john", "cambridge-johannine-jews", "morphgnt-sblgnt", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Terms John translates inside the story",
+    "examples": [
+      {
+        "ref": "1:38",
+        "form": "Rabbi",
+        "meaning": "Teacher",
+        "why": "The narrator supplies the interpretation, marking a reader who may recognize the sound but should not be expected to know the title.",
+        "sourceIds": ["usccb-john1", "hosted-web"]
+      },
+      {
+        "ref": "1:41",
+        "form": "Messiah / Christos",
+        "meaning": "Anointed One / Christ",
+        "why": "John places the Semitic title beside its Greek equivalent. ‘Christ’ is therefore a translated title, not Jesus's surname.",
+        "sourceIds": ["usccb-john1", "hosted-web"]
+      },
+      {
+        "ref": "1:42",
+        "form": "Cephas / Petros",
+        "meaning": "Rock / Peter",
+        "why": "The Aramaic nickname and Greek rendering let a reader hear both the historical form and the name used throughout the Greek Gospel.",
+        "sourceIds": ["usccb-john1", "hosted-web"]
+      },
+      {
+        "ref": "9:7",
+        "form": "Siloam",
+        "meaning": "Sent",
+        "why": "The narrator interprets a place name at the climax of a Gospel saturated with Jesus as the one sent by the Father.",
+        "sourceIds": ["usccb-john", "hosted-web"]
+      },
+      {
+        "ref": "11:16",
+        "form": "Thomas / Didymus",
+        "meaning": "Twin",
+        "why": "John preserves the Aramaic name and gives its Greek equivalent. The repeated gloss marks Thomas across his movement from loyal pessimism to the Gospel's climactic confession.",
+        "sourceIds": ["usccb-john", "hosted-web"]
+      },
+      {
+        "ref": "19:13",
+        "form": "Gabbatha / Lithostrōtos",
+        "meaning": "Stone Pavement",
+        "why": "The narrator places an untranslated local name beside its Greek meaning at Pilate's judgment seat, keeping Judean place memory inside a Greek trial narrative.",
+        "sourceIds": ["usccb-john19", "hosted-web"]
+      },
+      {
+        "ref": "19:17",
+        "form": "Golgotha / Kraniou Topos",
+        "meaning": "Place of a Skull",
+        "why": "The Semitic place name and Greek interpretation locate the crucifixion for readers without turning ‘Calvary,’ derived later through Latin, into a different site.",
+        "sourceIds": ["usccb-john19", "hosted-web"]
+      },
+      {
+        "ref": "20:16",
+        "form": "Rabbouni",
+        "meaning": "Teacher",
+        "why": "Mary's Aramaic address is retained at the recognition moment and immediately interpreted, letting readers hear intimacy across the Gospel's Greek narration.",
+        "sourceIds": ["usccb-john20", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Gospel — ancient Jesus narrative shaped through signs, witness, symbolic dialogue, festival scenes, and farewell discourse",
+    "how": "Track what readers know that characters do not, and reread after the narrator explains a sign or saying. John's long discourses are not detachable lectures; each grows from a person, feast, action, objection, or misunderstanding. Note repeated words rather than rushing to replace them with synonyms, because the recurrence creates the book's network of meaning."
+  },
+  "cast": [
+    { "name": "Jesus, the Word made flesh", "who": "Revealer and Son sent by the Father; gives signs, speaks in images, lays down life, and returns to the Father through the very death that looks like defeat." },
+    { "name": "The Father", "who": "The one Jesus makes known. Sending, giving, loving, showing, glorifying, and mutual indwelling define the relationship." },
+    { "name": "The Spirit / Paraclete", "who": "Life-giving presence described as another advocate, teacher, witness, and guide who continues Jesus's work among disciples." },
+    { "name": "John the Baptist", "who": "A witness, explicitly not the light or Messiah; his task is to identify Jesus and then recede." },
+    { "name": "The disciples", "who": "A varied group who come, see, misunderstand, confess, abandon, return, and are sent. Thomas's doubt and confession form part of the purpose climax." },
+    { "name": "Women witnesses", "who": "Jesus's mother, the Samaritan woman, Martha and Mary, and Mary Magdalene each move scenes forward and speak or receive decisive recognition." },
+    { "name": "‘The Jews’", "who": "A context-sensitive phrase that may mean Judeans, festival crowds, local opponents, or authorities. It must not be flattened into every Jewish person; almost everyone in the narrative, including Jesus and his followers, is Jewish." },
+    { "name": "The beloved disciple", "who": "An unnamed witness close to Jesus in the final chapters and connected by the epilogue to the testimony behind the book." }
+  ],
+  "shape": [
+    { "heading": "Prologue and first witnesses", "chapters": "1", "note": "The Word, creation, incarnation, John the Baptist, the first disciples, and the vocabulary the whole Gospel will unfold." },
+    { "heading": "First signs and conversations", "chapters": "2–4", "note": "Cana, temple, Nicodemus, Samaritan woman, and an official's son: replacement, birth, water, worship, and believing without seeing." },
+    { "heading": "Public signs and mounting division", "chapters": "5–12", "note": "Festivals frame conflict over Jesus's identity; bread, light, shepherd, sight, life, and Lazarus lead to the decision to kill him." },
+    { "heading": "The final evening", "chapters": "13–17", "note": "Foot washing, betrayal, command to love, departure, Spirit, vine, hatred, joy, and Jesus's prayer for his followers." },
+    { "heading": "Glory through cross and resurrection", "chapters": "18–20", "note": "Arrest, trials, kingship, crucifixion, burial, empty tomb, Mary Magdalene, the disciples, Thomas, and the stated purpose." },
+    { "heading": "Epilogue in Galilee", "chapters": "21", "note": "A catch of fish, breakfast, Peter's threefold commission, and the beloved disciple's testimony." }
+  ],
+  "purpose": "John tells readers why he selected these signs: so that they may believe that Jesus is the Messiah, the Son of God, and have life in his name. ‘Believe’ in John is not bare agreement with information. It becomes coming, seeing, receiving, abiding, following, loving, and entrusting oneself to the one sent by the Father. The cross is not a detour from glory but the hour in which self-giving love, judgment, kingship, and return to the Father become visible at once.",
+  "snags": [
+    { "snag": "John's chronology and content differ from the Synoptic Gospels.", "help": "John places the temple action near the beginning, narrates several Jerusalem visits and Passovers, and omits many familiar parables and exorcisms. Ancient biography allowed selection and arrangement. Readers debate whether differences reflect separate memories, theological relocation, or both; do not silently force one sequence into another." },
+    { "snag": "‘The Jews’ is read as a racial verdict on all Jewish people.", "help": "That is historically and narratively false. Jesus, his family, disciples, crowds, and opponents are Jewish. Determine the referent scene by scene — often Judean authorities or a specific hostile group — and remember the Gospel emerged from an intra-Jewish conflict before later Christian anti-Judaism weaponized its language." },
+    { "snag": "Characters seem implausibly literal.", "help": "Their misunderstandings are literary staging. Nicodemus's second womb, the Samaritan woman's bucket, the disciples' bread, and Lazarus's sleep let John place surface and revealed meaning in dialogue. Ask what the mistaken reading makes Jesus explain." },
+    { "snag": "John 7:53–8:11 appears in brackets or a footnote.", "help": "The story is ancient and beloved but absent from the earliest Greek manuscripts of John and mobile in later witnesses. Read it with that textual history visible; neither suppress the passage nor pretend the manuscript question does not exist." },
+    { "snag": "Jesus's ‘I am’ sayings are all treated as identical claims.", "help": "Some have predicates, some are ordinary self-identification, and some are absolute forms charged by context and scriptural echo. Read grammar, scene, reaction, and the Gospel's whole pattern together." },
+    { "snag": "‘Believe’ is reduced to one past decision.", "help": "John uses the verb repeatedly and dynamically. Some belief is sign-based and fragile; disciples are called to remain, love, and bear fruit. The narrative tests kinds of believing rather than treating every occurrence as equally mature." }
+  ],
+  "debates": [
+    {
+      "question": "Who stands behind the Gospel?",
+      "settled": "The final text connects its testimony to the beloved disciple but never names that disciple or supplies a normal author signature.",
+      "positions": [
+        { "view": "John son of Zebedee as eyewitness author", "grounds": "Early church testimony identifies John; the Gospel contains detailed Judean geography and presents the beloved disciple as witness." },
+        { "view": "An eyewitness source shaped by a later writer or community", "grounds": "The ‘we know his testimony is true’ language at 21:24 can distinguish witness from validating editors, and chapter 21 reads like an epilogue attached to a prior purpose ending." },
+        { "view": "An anonymous late-first-century theologian using Johannine traditions", "grounds": "The beloved disciple functions as an ideal literary witness, the Gospel's voice is highly unified, and direct identification with a named apostle is external rather than explicit." }
+      ],
+      "soWhat": "The Gospel asks to be weighed as testimony. Authorship models change how that testimony's chain is reconstructed, but none removes the need to read the final work's explicit purpose."
+    },
+    {
+      "question": "Does John require a distinct ‘Johannine community’ behind every conflict?",
+      "settled": "The book reflects real tensions over Jesus, synagogue belonging, testimony, and identity, but gives no sociological report naming one community.",
+      "positions": [
+        { "view": "A two-level story", "grounds": "Scenes of expulsion and conflict are read as Jesus-era narratives that also mirror a later community's separation from synagogue life." },
+        { "view": "Narrative-first caution", "grounds": "Reconstructing a detailed community history from literary conflict can become circular; the Gospel addresses readers more broadly than one hypothetical local crisis." }
+      ],
+      "soWhat": "Historical reconstruction can illuminate pressure in the text, but it should remain an inference and not become a hidden second Gospel that overrides the one on the page."
+    }
+  ],
+  "sources": [
+    { "id": "usccb-john", "label": "USCCB, Introduction to John", "says": "Surveys John's symbolic and literary character, signs and glory sections, first-century dating, authorship questions, possible locations, and the chapter 21 epilogue.", "url": "https://bible.usccb.org/bible/john/0" },
+    { "id": "usccb-john1", "label": "USCCB, John 1 notes", "says": "Explains the prologue's staircase parallelism, Logos frame, translated Semitic titles, and witness sequence.", "url": "https://bible.usccb.org/bible/john/1" },
+    { "id": "usccb-john3", "label": "USCCB, John 3 notes", "says": "Documents the double meanings of anōthen (‘again/from above’), pneuma (‘wind/Spirit’), and lifting up as physical crucifixion and exaltation.", "url": "https://bible.usccb.org/bible/john/3" },
+    { "id": "usccb-john5", "label": "USCCB, John 5 notes", "says": "Documents the absent early attestation and non-Johannine vocabulary of the angel-and-water expansion at 5:4 and explains the Sabbath discourse.", "url": "https://bible.usccb.org/bible/john/5" },
+    { "id": "usccb-john7", "label": "USCCB, John 7 notes", "says": "Explains the Feast of Booths setting, the ‘not/not yet’ reading at 7:8, and the punctuation and referent questions around rivers of living water.", "url": "https://bible.usccb.org/bible/john/7" },
+    { "id": "usccb-john8", "label": "USCCB, John 8 notes", "says": "Flags the manuscript history of 7:53–8:11 and explains the divine resonance of John's absolute ‘I am’ language.", "url": "https://bible.usccb.org/bible/john/8" },
+    { "id": "usccb-john14", "label": "USCCB, John 14 notes", "says": "Surveys the range of paraklētos, the Spirit's personal grammar, mutual indwelling, peace, and ‘the Father is greater than I.’", "url": "https://bible.usccb.org/bible/john/14" },
+    { "id": "usccb-john19", "label": "USCCB, John 19 notes", "says": "Explains John's trial and crucifixion chronology, local names, royal irony, scriptural citations, and witness claims.", "url": "https://bible.usccb.org/bible/john/19" },
+    { "id": "usccb-john20", "label": "USCCB, John 20 notes", "says": "Explains Mary, the breathing of the Spirit, Thomas's confession, and the early ‘come to/continue to believe’ variation at 20:31.", "url": "https://bible.usccb.org/bible/john/20" },
+    { "id": "usccb-john21", "label": "USCCB, John 21 notes", "says": "Treats chapter 21 as an early epilogue, cautions against overreading its Greek love synonyms, and discusses the testimony formula.", "url": "https://bible.usccb.org/bible/john/21" },
+    { "id": "cambridge-double-meaning", "label": "E. Richard, “Expressions of Double Meaning and their Function in the Gospel of John” (Cambridge)", "says": "Studies John's extensive, purposeful use of ambiguous expressions and double meanings as a Gospel-wide literary method.", "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/expressions-of-double-meaning-and-their-function-in-the-gospel-of-john/8B13D128DED6C3F8AD22923CEF69952B" },
+    { "id": "cambridge-ambiguous-signs", "label": "Harold W. Attridge, “Ambiguous Signs, an Anonymous Character, Unanswerable Riddles” (New Testament Studies)", "says": "Shows how John's signs and withheld information make uncertainty part of the reader's movement toward knowledge rather than eliminating it mechanically.", "url": "https://doi.org/10.1017/S0028688519000031" },
+    { "id": "cambridge-johannine-jews", "label": "Urban C. von Wahlde, “The Johannine ‘Jews’: A Critical Survey” (New Testament Studies)", "says": "Surveys the competing authority, geographic, ethnic, and narrative explanations of Ioudaioi and argues for context-sensitive analysis of its uses.", "url": "https://doi.org/10.1017/S0028688500007244" },
+    { "id": "oxford-logos-pneuma", "label": "Troels Engberg-Pedersen, John and Philosophy (Oxford)", "says": "Analyzes John's uses of logos and pneuma beyond the prologue and their coordinated role in the Gospel's language about Jesus and readers.", "url": "https://academic.oup.com/book/2746/chapter-abstract/162416116" },
+    { "id": "oxford-john", "label": "Troels Engberg-Pedersen, John and Philosophy (Oxford overview)", "says": "Offers a narrative reading of John's coherent sections, repeated above/below language, signs, and post-resurrection understanding.", "url": "https://academic.oup.com/book/2746" },
+    { "id": "manchester-p52", "label": "University of Manchester Digital Collections, Rylands Greek Papyrus 457", "says": "Identifies the John 18 fragment, explains its codex form, and states both the traditional first-half-of-the-second-century estimate and current dating caution.", "url": "https://www.digitalcollections.manchester.ac.uk/view/MS-GREEK-P-00457/2" },
+    { "id": "csntm-p52", "label": "CSNTM digital manuscript collection, Papyrus 52", "says": "Provides catalog data and images for the Greek papyrus fragment containing portions of John 18.", "url": "https://manuscripts.csntm.org/manuscript/Group/GA_P52" },
+    { "id": "csntm-p66", "label": "CSNTM digital manuscript collection, Bodmer Papyrus 66", "says": "Catalogs and images the late-second- or early-third-century Greek papyrus with substantial portions of John.", "url": "https://manuscripts.csntm.org/manuscript/Group/GA_P66_Bodmer" },
+    { "id": "csntm-p75", "label": "CSNTM digital manuscript collection, Papyrus 75", "says": "Catalogs and images the third-century Greek papyrus preserving portions of Luke and John.", "url": "https://manuscripts.csntm.org/manuscript/View/GA_P75" },
+    { "id": "morphgnt-sblgnt", "label": "SBL Greek New Testament with MorphGNT data hosted on this site", "says": "Supplies the Greek forms, lemmas, morphology, and reproducible vocabulary counts exposed by the original-language reader.", "url": "https://github.com/morphgnt/sblgnt" },
+    { "id": "hosted-web", "label": "The World English Bible text on this site", "says": "Counts, references, quotations, translated glosses, and visible verse-number seams were checked against the hosted public-domain English text." }
+  ],
+  "howToRead": [
+    { "tip": "Read the prologue twice: before the narrative and after chapter 20. The Gospel keeps translating its claims into scenes.", "refs": ["1:1", "1:14", "1:18", "20:28", "20:31"] },
+    { "tip": "Make two columns whenever someone misunderstands: what the character hears and what the narrative reveals.", "refs": ["2:19", "3:4", "4:11", "6:34", "11:12"] },
+    { "tip": "Track sign, see, believe, and life. Notice that seeing a sign can begin belief without completing it.", "refs": ["2:11", "2:23", "4:48", "6:26", "20:29", "20:31"] },
+    { "tip": "Read chapters 13–17 in one sitting. Repeated love, remain, command, joy, world, and sending words form one farewell movement." },
+    { "tip": "At every occurrence of ‘the Jews,’ replace the reflex to generalize with a question: which people in this scene, and what role do they have?" },
+    { "tip": "Let Thomas finish his arc. His demand is not the last word; his confession and Jesus's address to later readers complete the scene.", "refs": ["20:25", "20:28", "20:29"] }
+  ],
+  "next": "Read Luke–Acts for a very different narrative voice and a continuous story from Jesus into the early mission, or read 1 John to hear John's vocabulary of life, light, love, truth, abiding, and witness applied to a community dispute. Then compare John 6 with Exodus 16 and John 10 with Ezekiel 34 to see how the Gospel's images inherit Scripture.",
+  "traditionNote": "John has 21 chapters across the traditions represented here. The major visible editorial issue is John 7:53–8:11: it is received and read in Christian tradition, but modern editions across Catholic, Orthodox, and Protestant contexts normally mark its absence from the earliest Greek witnesses. Lectionary use and placement may differ even when the passage is printed."
+}

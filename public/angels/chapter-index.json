@@ -1,0 +1,5984 @@
+{
+  "source": {
+    "records": [
+      "order.json",
+      "demons.json",
+      "fall.json",
+      "encounters.json",
+      "teaching.json"
+    ],
+    "lexicon": "lexicon.json"
+  },
+  "totals": {
+    "chapters": 373,
+    "withRecords": 131,
+    "withTerms": 340
+  },
+  "chapters": {
+    "GEN/3": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Cherubim",
+          "room": "The order",
+          "href": "/angels#band-cherubim"
+        }
+      ],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 5
+        },
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "GEN/6": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "The sons of God and the daughters of men",
+          "room": "The fall",
+          "href": "/angels/fall#gen-6-1-4"
+        }
+      ],
+      "terms": []
+    },
+    "GEN/16": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "The Angel of the LORD",
+          "room": "The named ones",
+          "href": "/angels#the-angel-of-the-lord"
+        },
+        {
+          "kind": "encounter",
+          "label": "Hagar in the wilderness",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-16-7-13"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 4
+        }
+      ]
+    },
+    "GEN/18": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Three visitors at the oaks of Mamre",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-18-1-8"
+        }
+      ],
+      "terms": []
+    },
+    "GEN/19": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The mob blinded at Lot's door",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-19-1-11"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "GEN/21": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Hagar and the boy in the wilderness",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-21-17-19"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "GEN/22": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The knife stayed on Moriah",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-22-11-12"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "GEN/24": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "GEN/28": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Jacob's stairway at Bethel",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-28-12"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "GEN/31": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Jacob's dream of the flock",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-31-11-13"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "GEN/32": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "God's army at Mahanaim",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-32-1-2"
+        },
+        {
+          "kind": "encounter",
+          "label": "The wrestling at Peniel",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-GEN-32-24-30"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "GEN/48": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "GEN/49": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EXO/3": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "The Angel of the LORD",
+          "room": "The named ones",
+          "href": "/angels#the-angel-of-the-lord"
+        },
+        {
+          "kind": "encounter",
+          "label": "The flame in the bush",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-EXO-3-2"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EXO/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EXO/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EXO/14": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Between Israel and Egypt at the sea",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-EXO-14-19-20"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EXO/23": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "EXO/25": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Cherubim",
+          "room": "The order",
+          "href": "/angels#band-cherubim"
+        }
+      ],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 7
+        }
+      ]
+    },
+    "EXO/26": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "EXO/32": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EXO/33": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EXO/36": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "EXO/37": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 6
+        }
+      ]
+    },
+    "LEV/16": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Azazel",
+          "room": "The demons",
+          "href": "/angels/demons#azazel"
+        }
+      ],
+      "terms": [
+        {
+          "id": "azazel",
+          "headword": "עֲזָאזֵל",
+          "lang": "hebrew",
+          "count": 4
+        }
+      ]
+    },
+    "LEV/17": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "sair",
+          "headword": "שָׂעִיר",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "NUM/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "NUM/20": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "NUM/21": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 5
+        },
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "NUM/22": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Balaam's donkey sees first",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-NUM-22-22-31"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 11
+        },
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "NUM/24": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "DEU/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "DEU/8": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "DEU/13": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Belial",
+          "room": "The demons",
+          "href": "/angels/demons#belial"
+        }
+      ],
+      "terms": []
+    },
+    "DEU/32": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "shed",
+          "headword": "שֵׁד",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JOS/5": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The commander before Jericho",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-JOS-5-13-15"
+        }
+      ],
+      "terms": []
+    },
+    "JOS/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "JOS/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JDG/2": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The rebuke at Bochim",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-JDG-2-1-5"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "JDG/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JDG/6": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "The Angel of the LORD",
+          "room": "The named ones",
+          "href": "/angels#the-angel-of-the-lord"
+        },
+        {
+          "kind": "encounter",
+          "label": "Fire from the rock for Gideon",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-JDG-6-11-22"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 9
+        }
+      ]
+    },
+    "JDG/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JDG/9": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "evil-spirit",
+          "headword": "רוּחַ רָעָה",
+          "lang": "hebrew",
+          "count": 1
+        },
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JDG/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 5
+        }
+      ]
+    },
+    "JDG/13": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "The Angel of the LORD",
+          "room": "The named ones",
+          "href": "/angels#the-angel-of-the-lord"
+        },
+        {
+          "kind": "encounter",
+          "label": "Samson's parents ask his name",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-JDG-13-17-20"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 12
+        }
+      ]
+    },
+    "1SA/2": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Belial",
+          "room": "The demons",
+          "href": "/angels/demons#belial"
+        }
+      ],
+      "terms": []
+    },
+    "1SA/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1SA/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1SA/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 5
+        }
+      ]
+    },
+    "1SA/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "evil-spirit",
+          "headword": "רוּחַ רָעָה",
+          "lang": "hebrew",
+          "count": 4
+        },
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1SA/18": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "evil-spirit",
+          "headword": "רוּחַ רָעָה",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1SA/19": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 8
+        },
+        {
+          "id": "evil-spirit",
+          "headword": "רוּחַ רָעָה",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1SA/23": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1SA/25": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "1SA/29": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        },
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2SA/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2SA/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "2SA/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2SA/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2SA/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 5
+        }
+      ]
+    },
+    "2SA/12": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2SA/14": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "2SA/19": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        },
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2SA/22": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2SA/24": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "The same census, two tellings",
+          "room": "The fall",
+          "href": "/angels/fall#sa-ch-census"
+        },
+        {
+          "kind": "encounter",
+          "label": "The plague stayed at the threshing floor",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-2SA-24-16-17"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 4
+        }
+      ]
+    },
+    "1KI/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1KI/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 15
+        }
+      ]
+    },
+    "1KI/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "1KI/8": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "1KI/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "1KI/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1KI/19": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Elijah fed in the desert",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-1KI-19-5-8"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "1KI/20": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 4
+        }
+      ]
+    },
+    "1KI/22": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/1": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Elijah sent to Ahaziah's messengers",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-2KI-1-3-4"
+        },
+        {
+          "kind": "demon",
+          "label": "Beelzebul",
+          "room": "The demons",
+          "href": "/angels/demons#beelzebul"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 6
+        }
+      ]
+    },
+    "2KI/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/6": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Earth Between",
+          "room": "The order",
+          "href": "/angels#band-earth-between"
+        },
+        {
+          "kind": "encounter",
+          "label": "The mountain full of fire at Dothan",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-2KI-6-17"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "2KI/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/9": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/10": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/14": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/17": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/18": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2KI/19": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The night the Assyrian army died",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-2KI-19-35"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 4
+        },
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1CH/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1CH/14": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1CH/19": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "1CH/21": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "The same census, two tellings",
+          "room": "The fall",
+          "href": "/angels/fall#sa-ch-census"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 9
+        },
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "1CH/28": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2CH/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 8
+        }
+      ]
+    },
+    "2CH/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "2CH/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "sair",
+          "headword": "שָׂעִיר",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2CH/18": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2CH/32": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2CH/35": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "2CH/36": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "NEH/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JOB/1": {
+      "entries": [
+        {
+          "kind": "title",
+          "label": "Satan",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        },
+        {
+          "kind": "fall",
+          "label": "The satan in the court of heaven",
+          "room": "The fall",
+          "href": "/angels/fall#job-1-6-12"
+        }
+      ],
+      "terms": [
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 7
+        },
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JOB/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 7
+        }
+      ]
+    },
+    "JOB/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JOB/26": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abaddon",
+          "headword": "אֲבַדּוֹן",
+          "lang": "hebrew",
+          "count": 1
+        },
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JOB/28": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abaddon",
+          "headword": "אֲבַדּוֹן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JOB/31": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abaddon",
+          "headword": "אֲבַדּוֹן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JOB/33": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/18": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Cherubim",
+          "room": "The order",
+          "href": "/angels#band-cherubim"
+        }
+      ],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/34": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Encamps around",
+          "room": "What the text teaches",
+          "href": "/angels#psa-34-7"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/35": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "PSA/58": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/78": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/80": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/82": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "God in the divine assembly",
+          "room": "What the text teaches",
+          "href": "/angels#psa-82-1"
+        }
+      ],
+      "terms": []
+    },
+    "PSA/88": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abaddon",
+          "headword": "אֲבַדּוֹן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/91": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Angels charged to keep you",
+          "room": "What the text teaches",
+          "href": "/angels#psa-91-11"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/99": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/103": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Messengers and the Hosts",
+          "room": "The order",
+          "href": "/angels#band-messengers-hosts"
+        },
+        {
+          "kind": "teaching",
+          "label": "Mighty in strength, obeying his word",
+          "room": "What the text teaches",
+          "href": "/angels#psa-103-20"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/104": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/106": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "shed",
+          "headword": "שֵׁד",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/109": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/140": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PSA/148": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PRO/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PRO/15": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abaddon",
+          "headword": "אֲבַדּוֹן",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PRO/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PRO/17": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PRO/23": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "PRO/30": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ECC/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ECC/10": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "ISA/6": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Throne and the Seraphim",
+          "room": "The order",
+          "href": "/angels#band-throne-seraphim"
+        },
+        {
+          "kind": "encounter",
+          "label": "The seraphim and the coal",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ISA-6-1-7"
+        }
+      ],
+      "terms": [
+        {
+          "id": "saraph",
+          "headword": "שָׂרָף",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "ISA/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "sair",
+          "headword": "שָׂעִיר",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/14": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "How you have fallen from heaven",
+          "room": "The fall",
+          "href": "/angels/fall#isa-14-12-15"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        },
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/18": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/27": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "ISA/30": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/33": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/34": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "lilith",
+          "headword": "לִילִית",
+          "lang": "hebrew",
+          "count": 1
+        },
+        {
+          "id": "sair",
+          "headword": "שָׂעִיר",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/37": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 3
+        },
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/42": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/44": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/63": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ISA/65": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JER/8": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JER/27": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "JER/46": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EZK/1": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Cherubim",
+          "room": "The order",
+          "href": "/angels#band-cherubim"
+        }
+      ],
+      "terms": []
+    },
+    "EZK/9": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The mark on the foreheads",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-EZK-9-1-6"
+        }
+      ],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EZK/10": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Cherubim",
+          "room": "The order",
+          "href": "/angels#band-cherubim"
+        }
+      ],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 21
+        }
+      ]
+    },
+    "EZK/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EZK/17": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EZK/23": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "EZK/28": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "The lament over the king of Tyre",
+          "room": "The fall",
+          "href": "/angels/fall#ezk-28-12-17"
+        }
+      ],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "EZK/30": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "EZK/41": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "kerub",
+          "headword": "כְּרוּב",
+          "lang": "hebrew",
+          "count": 6
+        }
+      ]
+    },
+    "DAN/3": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The fourth in the furnace",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-DAN-3-24-25"
+        }
+      ],
+      "terms": []
+    },
+    "DAN/6": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The lions' mouths shut",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-DAN-6-22"
+        }
+      ],
+      "terms": []
+    },
+    "DAN/8": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Gabriel",
+          "room": "The named ones",
+          "href": "/angels#gabriel"
+        },
+        {
+          "kind": "encounter",
+          "label": "Gabriel explains the ram and the goat",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-DAN-8-15-19"
+        }
+      ],
+      "terms": []
+    },
+    "DAN/9": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Gabriel",
+          "room": "The named ones",
+          "href": "/angels#gabriel"
+        },
+        {
+          "kind": "encounter",
+          "label": "Gabriel in swift flight",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-DAN-9-21"
+        }
+      ],
+      "terms": []
+    },
+    "DAN/10": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "Principalities and Powers",
+          "room": "The order",
+          "href": "/angels#band-principalities-powers"
+        },
+        {
+          "kind": "order",
+          "label": "The Archangel and the Chief Princes",
+          "room": "The order",
+          "href": "/angels#band-archangel-chief-princes"
+        },
+        {
+          "kind": "named",
+          "label": "Michael",
+          "room": "The named ones",
+          "href": "/angels#michael"
+        },
+        {
+          "kind": "encounter",
+          "label": "The man clothed in linen by the Hiddekel",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-DAN-10-4-14"
+        },
+        {
+          "kind": "demon",
+          "label": "The Princes of Persia and Greece",
+          "room": "The demons",
+          "href": "/angels/demons#princes-of-persia-and-greece"
+        }
+      ],
+      "terms": []
+    },
+    "DAN/12": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Archangel and the Chief Princes",
+          "room": "The order",
+          "href": "/angels#band-archangel-chief-princes"
+        },
+        {
+          "kind": "named",
+          "label": "Michael",
+          "room": "The named ones",
+          "href": "/angels#michael"
+        }
+      ],
+      "terms": []
+    },
+    "HOS/12": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "AMO/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "AMO/9": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "MIC/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "nachash",
+          "headword": "נָחָשׁ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "NAM/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "HAG/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "ZEC/1": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Among the myrtle trees",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ZEC-1-9-14"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 6
+        }
+      ]
+    },
+    "ZEC/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "ZEC/3": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "Satan accusing Joshua",
+          "room": "The fall",
+          "href": "/angels/fall#zec-3-1-2"
+        }
+      ],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 4
+        },
+        {
+          "id": "satan",
+          "headword": "שָׂטָן",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "ZEC/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 3
+        }
+      ]
+    },
+    "ZEC/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "ZEC/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "ZEC/12": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "MAL/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 1
+        }
+      ]
+    },
+    "MAL/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "malakh",
+          "headword": "מַלְאָךְ",
+          "lang": "hebrew",
+          "count": 2
+        }
+      ]
+    },
+    "MAT/1": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Joseph told not to be afraid",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-1-20-21"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "MAT/2": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Called home from Egypt",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-2-19-20"
+        },
+        {
+          "kind": "encounter",
+          "label": "The flight into Egypt",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-2-13"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "MAT/4": {
+      "entries": [
+        {
+          "kind": "title",
+          "label": "The devil",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        },
+        {
+          "kind": "encounter",
+          "label": "Served after the temptation",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-4-11"
+        }
+      ],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/8": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The Gerasene Legion",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-5-1-20"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The sunset crowds",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-4-40-41"
+        },
+        {
+          "kind": "demon",
+          "label": "Legion",
+          "room": "The demons",
+          "href": "/angels/demons#legion"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "daimon",
+          "headword": "δαίμων",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/9": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The mute man",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-9-32-34"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/10": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The Twelve commissioned",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-10-7-8"
+        }
+      ],
+      "terms": [
+        {
+          "id": "beelzeboul",
+          "headword": "Βεελζεβούλ",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/12": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Unclean Spirits",
+          "room": "The order",
+          "href": "/angels#band-unclean-spirits"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The blind and mute man, and the Beelzebul charge",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-12-22-29"
+        },
+        {
+          "kind": "demon",
+          "label": "Beelzebul",
+          "room": "The demons",
+          "href": "/angels/demons#beelzebul"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "beelzeboul",
+          "headword": "Βεελζεβούλ",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "evil-spirit-greek",
+          "headword": "πνεῦμα πονηρόν",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/15": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The Syrophoenician woman's daughter",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-7-24-30"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/17": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The boy the disciples could not deliver",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-9-14-29"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/18": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Guardian angels",
+          "room": "What the text teaches",
+          "href": "/angels#mat-18-10"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/22": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Like angels in the resurrection",
+          "room": "What the text teaches",
+          "href": "/angels#mat-22-30"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/23": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/24": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "MAT/25": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The End: the Lake of Fire",
+          "room": "The order",
+          "href": "/angels#band-lake-of-fire"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/26": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Twelve legions",
+          "room": "What the text teaches",
+          "href": "/angels#mat-26-53"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "legion",
+          "headword": "λεγιών",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MAT/28": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The stone rolled back",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-28-2-7"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "MRK/1": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Unclean Spirits",
+          "room": "The order",
+          "href": "/angels#band-unclean-spirits"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The Capernaum synagogue",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-1-23-27"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The sunset crowds",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-4-40-41"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MRK/3": {
+      "entries": [
+        {
+          "kind": "title",
+          "label": "Beelzebul",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The blind and mute man, and the Beelzebul charge",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-12-22-29"
+        },
+        {
+          "kind": "demon",
+          "label": "Beelzebul",
+          "room": "The demons",
+          "href": "/angels/demons#beelzebul"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "beelzeboul",
+          "headword": "Βεελζεβούλ",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MRK/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MRK/5": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The Gerasene Legion",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-5-1-20"
+        },
+        {
+          "kind": "demon",
+          "label": "Legion",
+          "room": "The demons",
+          "href": "/angels/demons#legion"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "legion",
+          "headword": "λεγιών",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "MRK/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MRK/7": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The Syrophoenician woman's daughter",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-7-24-30"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MRK/8": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MRK/9": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The boy the disciples could not deliver",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-9-14-29"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MRK/12": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "MRK/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "MRK/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/1": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Gabriel",
+          "room": "The named ones",
+          "href": "/angels#gabriel"
+        },
+        {
+          "kind": "encounter",
+          "label": "Gabriel at the altar of incense",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-1-11-20"
+        },
+        {
+          "kind": "encounter",
+          "label": "The Annunciation",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-1-26-38"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 9
+        }
+      ]
+    },
+    "LUK/2": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Messengers and the Hosts",
+          "room": "The order",
+          "href": "/angels#band-messengers-hosts"
+        },
+        {
+          "kind": "encounter",
+          "label": "The shepherds and the multitude",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-2-8-14"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 5
+        }
+      ]
+    },
+    "LUK/4": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The Capernaum synagogue",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-1-23-27"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The sunset crowds",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-4-40-41"
+        }
+      ],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "evil-spirit-greek",
+          "headword": "πνεῦμα πονηρόν",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/8": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Abyss",
+          "room": "The order",
+          "href": "/angels#band-abyss"
+        },
+        {
+          "kind": "exorcism",
+          "label": "Mary Magdalene's seven",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-8-2"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The Gerasene Legion",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-5-1-20"
+        },
+        {
+          "kind": "demon",
+          "label": "Legion",
+          "room": "The demons",
+          "href": "/angels/demons#legion"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 7
+        },
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "evil-spirit-greek",
+          "headword": "πνεῦμα πονηρόν",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "legion",
+          "headword": "λεγιών",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/9": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The boy the disciples could not deliver",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MRK-9-14-29"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/10": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "I saw Satan fall",
+          "room": "The fall",
+          "href": "/angels/fall#luk-10-18"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The seventy sent out",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-10-17-20"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/11": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The blind and mute man, and the Beelzebul charge",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-MAT-12-22-29"
+        },
+        {
+          "kind": "demon",
+          "label": "Beelzebul",
+          "room": "The demons",
+          "href": "/angels/demons#beelzebul"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 7
+        },
+        {
+          "id": "beelzeboul",
+          "headword": "Βεελζεβούλ",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "evil-spirit-greek",
+          "headword": "πνεῦμα πονηρόν",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/12": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "LUK/13": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The woman bent for eighteen years",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-13-10-16"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/15": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/22": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "Peter warned to watch Satan",
+          "room": "The fall",
+          "href": "/angels/fall#luk-22-31"
+        },
+        {
+          "kind": "encounter",
+          "label": "The strengthening angel in Gethsemane",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-LUK-22-43"
+        }
+      ],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "LUK/24": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/8": {
+      "entries": [
+        {
+          "kind": "title",
+          "label": "The father of lies",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/10": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonizomai",
+          "headword": "δαιμονίζομαι",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/12": {
+      "entries": [
+        {
+          "kind": "fall",
+          "label": "The prince of this world cast out",
+          "room": "The fall",
+          "href": "/angels/fall#jhn-12-31"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JHN/20": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "At the head and the feet",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-JHN-20-11-13"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/5": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "The prison doors at night",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-5-19-20"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 4
+        }
+      ]
+    },
+    "ACT/8": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "Philip in Samaria",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-8-7"
+        },
+        {
+          "kind": "encounter",
+          "label": "Philip sent to the desert road",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-8-26"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/10": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Cornelius told his prayers were heard",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-10-3-7"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/12": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "Herod struck",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-12-23"
+        },
+        {
+          "kind": "encounter",
+          "label": "Peter's chains fall off",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-12-7-10"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 7
+        }
+      ]
+    },
+    "ACT/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/16": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "The girl with a spirit of divination",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-16-16-18"
+        },
+        {
+          "kind": "demon",
+          "label": "The spirit of divination",
+          "room": "The demons",
+          "href": "/angels/demons#spirit-of-python"
+        }
+      ],
+      "terms": []
+    },
+    "ACT/17": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/19": {
+      "entries": [
+        {
+          "kind": "exorcism",
+          "label": "Paul's handkerchiefs and aprons",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-19-11-12"
+        },
+        {
+          "kind": "exorcism",
+          "label": "The sons of Sceva",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-19-13-16"
+        }
+      ],
+      "terms": [
+        {
+          "id": "evil-spirit-greek",
+          "headword": "πνεῦμα πονηρόν",
+          "lang": "greek",
+          "count": 4
+        }
+      ]
+    },
+    "ACT/23": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "ACT/26": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ACT/27": {
+      "entries": [
+        {
+          "kind": "encounter",
+          "label": "In the storm, before Caesar",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-ACT-27-23-24"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ROM/8": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ROM/10": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ROM/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1CO/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1CO/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1CO/6": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "We will judge angels",
+          "room": "What the text teaches",
+          "href": "/angels#1co-6-3"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1CO/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1CO/10": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Sacrifice to demons",
+          "room": "What the text teaches",
+          "href": "/angels#1co-10-20"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1CO/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1CO/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2CO/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2CO/4": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "Principalities and Powers",
+          "room": "The order",
+          "href": "/angels#band-principalities-powers"
+        },
+        {
+          "kind": "title",
+          "label": "The god of this world (WEB's phrase; often rendered \"god of this age\")",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        }
+      ],
+      "terms": []
+    },
+    "2CO/6": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Belial",
+          "room": "The demons",
+          "href": "/angels/demons#belial"
+        }
+      ],
+      "terms": [
+        {
+          "id": "beliar",
+          "headword": "Βελιάρ",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2CO/11": {
+      "entries": [
+        {
+          "kind": "title",
+          "label": "An angel of light (a masquerade, not a nature)",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2CO/12": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "GAL/1": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Even an angel preaching another gospel",
+          "room": "What the text teaches",
+          "href": "/angels#gal-1-8"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "GAL/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "GAL/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "EPH/2": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "Principalities and Powers",
+          "room": "The order",
+          "href": "/angels#band-principalities-powers"
+        },
+        {
+          "kind": "title",
+          "label": "The prince of the power of the air",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        }
+      ],
+      "terms": []
+    },
+    "EPH/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "EPH/6": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "Principalities and Powers",
+          "room": "The order",
+          "href": "/angels#band-principalities-powers"
+        },
+        {
+          "kind": "teaching",
+          "label": "Not against flesh and blood",
+          "room": "What the text teaches",
+          "href": "/angels#eph-6-12"
+        }
+      ],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "COL/1": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Created through him",
+          "room": "What the text teaches",
+          "href": "/angels#col-1-16"
+        }
+      ],
+      "terms": []
+    },
+    "COL/2": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Not to be worshiped",
+          "room": "What the text teaches",
+          "href": "/angels#col-2-18"
+        },
+        {
+          "kind": "teaching",
+          "label": "Triumph over the powers",
+          "room": "What the text teaches",
+          "href": "/angels#col-2-15"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1TH/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1TH/4": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Archangel and the Chief Princes",
+          "room": "The order",
+          "href": "/angels#band-archangel-chief-princes"
+        }
+      ],
+      "terms": [
+        {
+          "id": "archangelos",
+          "headword": "ἀρχάγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2TH/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2TH/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1TI/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1TI/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1TI/4": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Doctrines of demons",
+          "room": "What the text teaches",
+          "href": "/angels#1ti-4-1"
+        }
+      ],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1TI/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2TI/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2TI/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "TIT/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "HEB/1": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Messengers and the Hosts",
+          "room": "The order",
+          "href": "/angels#band-messengers-hosts"
+        },
+        {
+          "kind": "teaching",
+          "label": "Serving spirits",
+          "room": "What the text teaches",
+          "href": "/angels#heb-1-14"
+        },
+        {
+          "kind": "teaching",
+          "label": "The angels worship the Son",
+          "room": "What the text teaches",
+          "href": "/angels#heb-1-6"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 6
+        }
+      ]
+    },
+    "HEB/2": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Destroying the power of death",
+          "room": "What the text teaches",
+          "href": "/angels#heb-2-14"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 5
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "HEB/9": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "cheroub",
+          "headword": "Χερουβίν",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "HEB/12": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Messengers and the Hosts",
+          "room": "The order",
+          "href": "/angels#band-messengers-hosts"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "HEB/13": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Earth Between",
+          "room": "The order",
+          "href": "/angels#band-earth-between"
+        },
+        {
+          "kind": "teaching",
+          "label": "Entertaining angels unawares",
+          "room": "What the text teaches",
+          "href": "/angels#heb-13-2"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JAS/2": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "The demons also believe",
+          "room": "What the text teaches",
+          "href": "/angels#jas-2-19"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JAS/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1PE/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1PE/3": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Made subject to him",
+          "room": "What the text teaches",
+          "href": "/angels#1pe-3-22"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1PE/5": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Earth Between",
+          "room": "The order",
+          "href": "/angels#band-earth-between"
+        },
+        {
+          "kind": "title",
+          "label": "A roaring lion",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        }
+      ],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2PE/2": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Abyss",
+          "room": "The order",
+          "href": "/angels#band-abyss"
+        },
+        {
+          "kind": "fall",
+          "label": "The angels who did not keep their first estate",
+          "room": "The fall",
+          "href": "/angels/fall#jud-6-2pe-4"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "tartaroo",
+          "headword": "ταρταρόω",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1JN/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 4
+        }
+      ]
+    },
+    "1JN/4": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "Test the spirits",
+          "room": "What the text teaches",
+          "href": "/angels#1jn-4-1"
+        }
+      ],
+      "terms": []
+    },
+    "JUD/1": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Abyss",
+          "room": "The order",
+          "href": "/angels#band-abyss"
+        },
+        {
+          "kind": "order",
+          "label": "The Archangel and the Chief Princes",
+          "room": "The order",
+          "href": "/angels#band-archangel-chief-princes"
+        },
+        {
+          "kind": "named",
+          "label": "Michael",
+          "room": "The named ones",
+          "href": "/angels#michael"
+        },
+        {
+          "kind": "fall",
+          "label": "The angels who did not keep their first estate",
+          "room": "The fall",
+          "href": "/angels/fall#jud-6-2pe-4"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "archangelos",
+          "headword": "ἀρχάγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "REV/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/4": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Throne and the Seraphim",
+          "room": "The order",
+          "href": "/angels#band-throne-seraphim"
+        }
+      ],
+      "terms": []
+    },
+    "REV/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "REV/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 4
+        }
+      ]
+    },
+    "REV/8": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 9
+        }
+      ]
+    },
+    "REV/9": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The Abyss",
+          "room": "The order",
+          "href": "/angels#band-abyss"
+        },
+        {
+          "kind": "title",
+          "label": "Abaddon / Apollyon",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        },
+        {
+          "kind": "demon",
+          "label": "Abaddon / Apollyon",
+          "room": "The demons",
+          "href": "/angels/demons#abaddon-apollyon"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 6
+        },
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "abaddon-greek",
+          "headword": "Ἀβαδδών",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "apollyon",
+          "headword": "Ἀπολλύων",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/10": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 6
+        }
+      ]
+    },
+    "REV/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/12": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Michael",
+          "room": "The named ones",
+          "href": "/angels#michael"
+        },
+        {
+          "kind": "title",
+          "label": "The great dragon, the old serpent, the deceiver",
+          "room": "The names he goes by",
+          "href": "/angels#enemy-titles"
+        },
+        {
+          "kind": "fall",
+          "label": "The accuser thrown down",
+          "room": "The fall",
+          "href": "/angels/fall#rev-12-10-12"
+        },
+        {
+          "kind": "fall",
+          "label": "War in heaven",
+          "room": "The fall",
+          "href": "/angels/fall#rev-12-7-9"
+        }
+      ],
+      "terms": [
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 8
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 3
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/13": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 3
+        }
+      ]
+    },
+    "REV/14": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 8
+        }
+      ]
+    },
+    "REV/15": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 4
+        }
+      ]
+    },
+    "REV/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/17": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/18": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "unclean-spirit",
+          "headword": "πνεῦμα ἀκάθαρτον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/19": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/20": {
+      "entries": [
+        {
+          "kind": "order",
+          "label": "The End: the Lake of Fire",
+          "room": "The order",
+          "href": "/angels#band-lake-of-fire"
+        },
+        {
+          "kind": "fall",
+          "label": "The abyss, then the end of him",
+          "room": "The fall",
+          "href": "/angels/fall#rev-20-abyss-end"
+        }
+      ],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "REV/21": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 3
+        }
+      ]
+    },
+    "REV/22": {
+      "entries": [
+        {
+          "kind": "teaching",
+          "label": "A fellow servant",
+          "room": "What the text teaches",
+          "href": "/angels#rev-22-8-9"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 3
+        }
+      ]
+    },
+    "TOB/3": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Raphael",
+          "room": "The named ones",
+          "href": "/angels#raphael"
+        },
+        {
+          "kind": "demon",
+          "label": "Asmodaeus",
+          "room": "The demons",
+          "href": "/angels/demons#asmodaeus"
+        }
+      ],
+      "terms": [
+        {
+          "id": "asmodaios",
+          "headword": "Ἀσμοδαῖος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "TOB/5": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Raphael",
+          "room": "The named ones",
+          "href": "/angels#raphael"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 4
+        }
+      ]
+    },
+    "TOB/6": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Asmodaeus",
+          "room": "The demons",
+          "href": "/angels/demons#asmodaeus"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 7
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "evil-spirit-greek",
+          "headword": "πνεῦμα πονηρόν",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "TOB/8": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Asmodaeus",
+          "room": "The demons",
+          "href": "/angels/demons#asmodaeus"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        },
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "TOB/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "TOB/12": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Raphael",
+          "room": "The named ones",
+          "href": "/angels#raphael"
+        },
+        {
+          "kind": "encounter",
+          "label": "Raphael revealed",
+          "room": "The encounters",
+          "href": "/angels/encounters#enc-TOB-12-15"
+        }
+      ],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 3
+        }
+      ]
+    },
+    "JDT/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "JDT/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ESG/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ESG/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ESG/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ESG/8": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ESG/10": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "WIS/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "WIS/10": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "WIS/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SIR/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SIR/16": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SIR/21": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "satanas",
+          "headword": "Σατανᾶς",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SIR/24": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "SIR/25": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SIR/42": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SIR/43": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SIR/48": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SIR/49": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "cheroub",
+          "headword": "Χερουβίν",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "BAR/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "daimonion",
+          "headword": "δαιμόνιον",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "LJE/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "SUS/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 5
+        }
+      ]
+    },
+    "BEL/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "drakon",
+          "headword": "δράκων",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 3
+        }
+      ]
+    },
+    "1MA/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "diabolos",
+          "headword": "διάβολος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1MA/5": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "1MA/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "2MA/11": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2MA/15": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "1ES/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 2
+        }
+      ]
+    },
+    "MAN/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "PS2/1": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "3MA/6": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "2ES/4": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Uriel",
+          "room": "The named ones",
+          "href": "/angels#uriel"
+        }
+      ],
+      "terms": []
+    },
+    "2ES/5": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Uriel",
+          "room": "The named ones",
+          "href": "/angels#uriel"
+        }
+      ],
+      "terms": []
+    },
+    "4MA/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "4MA/7": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "4MA/18": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "ophis",
+          "headword": "ὄφις",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "DAG/2": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "DAG/3": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 4
+        },
+        {
+          "id": "abyssos",
+          "headword": "ἄβυσσος",
+          "lang": "greek",
+          "count": 1
+        },
+        {
+          "id": "cheroub",
+          "headword": "Χερουβίν",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "DAG/4": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 6
+        }
+      ]
+    },
+    "DAG/10": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "DAG/12": {
+      "entries": [],
+      "terms": [
+        {
+          "id": "angelos",
+          "headword": "ἄγγελος",
+          "lang": "greek",
+          "count": 1
+        }
+      ]
+    },
+    "ENO/6": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Remiel",
+          "room": "The named ones",
+          "href": "/angels#remiel"
+        },
+        {
+          "kind": "named",
+          "label": "Saraqâêl",
+          "room": "The named ones",
+          "href": "/angels#saraq-l"
+        },
+        {
+          "kind": "fall",
+          "label": "The oath on Mount Hermon",
+          "room": "The fall",
+          "href": "/angels/fall#enoch-6-3-6"
+        },
+        {
+          "kind": "demon",
+          "label": "Semjâzâ",
+          "room": "The demons",
+          "href": "/angels/demons#semjaza"
+        }
+      ],
+      "terms": []
+    },
+    "ENO/8": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Azazel",
+          "room": "The demons",
+          "href": "/angels/demons#azazel"
+        }
+      ],
+      "terms": []
+    },
+    "ENO/9": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Azazel",
+          "room": "The demons",
+          "href": "/angels/demons#azazel"
+        },
+        {
+          "kind": "demon",
+          "label": "Semjâzâ",
+          "room": "The demons",
+          "href": "/angels/demons#semjaza"
+        }
+      ],
+      "terms": []
+    },
+    "ENO/10": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Azazel",
+          "room": "The demons",
+          "href": "/angels/demons#azazel"
+        },
+        {
+          "kind": "demon",
+          "label": "Semjâzâ",
+          "room": "The demons",
+          "href": "/angels/demons#semjaza"
+        }
+      ],
+      "terms": []
+    },
+    "ENO/20": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Raguel",
+          "room": "The named ones",
+          "href": "/angels#raguel"
+        },
+        {
+          "kind": "named",
+          "label": "Remiel",
+          "room": "The named ones",
+          "href": "/angels#remiel"
+        },
+        {
+          "kind": "named",
+          "label": "Saraqâêl",
+          "room": "The named ones",
+          "href": "/angels#saraq-l"
+        }
+      ],
+      "terms": []
+    },
+    "ENO/23": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Raguel",
+          "room": "The named ones",
+          "href": "/angels#raguel"
+        }
+      ],
+      "terms": []
+    },
+    "ENO/40": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Phanuel",
+          "room": "The named ones",
+          "href": "/angels#phanuel"
+        }
+      ],
+      "terms": []
+    },
+    "ENO/54": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Phanuel",
+          "room": "The named ones",
+          "href": "/angels#phanuel"
+        }
+      ],
+      "terms": []
+    },
+    "ENO/71": {
+      "entries": [
+        {
+          "kind": "named",
+          "label": "Phanuel",
+          "room": "The named ones",
+          "href": "/angels#phanuel"
+        }
+      ],
+      "terms": []
+    },
+    "JUB/10": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Mastema",
+          "room": "The demons",
+          "href": "/angels/demons#mastema"
+        }
+      ],
+      "terms": []
+    },
+    "JUB/11": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Mastema",
+          "room": "The demons",
+          "href": "/angels/demons#mastema"
+        }
+      ],
+      "terms": []
+    },
+    "JUB/48": {
+      "entries": [
+        {
+          "kind": "demon",
+          "label": "Mastema",
+          "room": "The demons",
+          "href": "/angels/demons#mastema"
+        }
+      ],
+      "terms": []
+    }
+  }
+}

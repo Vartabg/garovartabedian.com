@@ -1,0 +1,295 @@
+{
+  "range": {
+    "start": -300,
+    "end": 400
+  },
+  "items": [
+    {
+      "id": "crucifixion",
+      "label": "Crucifixion of Jesus",
+      "lane": "event",
+      "start": 30,
+      "end": 33,
+      "note": "Jesus is crucified under Pontius Pilate; scholarship places the date in AD 30 or 33."
+    },
+    {
+      "id": "paul-conversion",
+      "label": "Paul's conversion",
+      "lane": "event",
+      "start": 33,
+      "end": 36,
+      "note": "Paul's Damascus-road experience, generally dated one to three years after the crucifixion."
+    },
+    {
+      "id": "council-jerusalem",
+      "label": "Council of Jerusalem",
+      "lane": "event",
+      "start": 48,
+      "end": 50,
+      "note": "Apostles and elders meet in Jerusalem over the terms of Gentile inclusion (Acts 15)."
+    },
+    {
+      "id": "fire-of-rome",
+      "label": "Great fire of Rome; Nero's persecution",
+      "lane": "event",
+      "start": 64,
+      "end": 64,
+      "note": "After the great fire, Tacitus reports that Nero punished Christians in the city of Rome.",
+      "short": "Great fire of Rome"
+    },
+    {
+      "id": "fall-jerusalem",
+      "label": "Fall of Jerusalem",
+      "lane": "event",
+      "start": 70,
+      "end": 70,
+      "note": "Roman forces under Titus take Jerusalem and destroy the temple."
+    },
+    {
+      "id": "domitian-reign",
+      "label": "Reign of Domitian (traditional persecution)",
+      "lane": "event",
+      "start": 81,
+      "end": 96,
+      "note": "Domitian's reign, traditionally associated with pressure on Christians toward its end.",
+      "short": "Domitian's reign"
+    },
+    {
+      "id": "pliny-trajan",
+      "label": "Pliny-Trajan correspondence",
+      "lane": "event",
+      "start": 112,
+      "end": 112,
+      "note": "Pliny, governing Bithynia, asks Trajan how to handle accused Christians, and Trajan replies."
+    },
+    {
+      "id": "bar-kokhba",
+      "label": "Bar Kokhba revolt",
+      "lane": "event",
+      "start": 132,
+      "end": 135,
+      "note": "The Bar Kokhba revolt in Judea ends with Jerusalem refounded as a Roman colony."
+    },
+    {
+      "id": "polycarp-martyrdom",
+      "label": "Martyrdom of Polycarp",
+      "lane": "event",
+      "start": 155,
+      "end": 160,
+      "note": "Polycarp, bishop of Smyrna, is executed in the city's stadium; the date is placed between 155 and 160."
+    },
+    {
+      "id": "justin-death",
+      "label": "Death of Justin Martyr",
+      "lane": "event",
+      "start": 165,
+      "end": 165,
+      "note": "Justin Martyr is executed in Rome under the prefect Junius Rusticus, c. 165."
+    },
+    {
+      "id": "paul-letters",
+      "label": "Paul's undisputed letters",
+      "lane": "nt",
+      "start": 50,
+      "end": 58,
+      "note": "The seven letters whose Pauline authorship is undisputed are dated to roughly 50-58."
+    },
+    {
+      "id": "mark",
+      "label": "Gospel of Mark",
+      "lane": "nt",
+      "start": 65,
+      "end": 75,
+      "note": "Most scholars date the earliest gospel to the years around the Jewish War, 65-75."
+    },
+    {
+      "id": "matthew-luke",
+      "label": "Gospels of Matthew & Luke",
+      "lane": "nt",
+      "start": 75,
+      "end": 95,
+      "note": "Matthew and Luke are generally dated after Mark, within the range 75-95."
+    },
+    {
+      "id": "john",
+      "label": "Gospel of John",
+      "lane": "nt",
+      "start": 90,
+      "end": 110,
+      "note": "The fourth gospel is commonly dated to the range 90-110."
+    },
+    {
+      "id": "revelation",
+      "label": "Revelation",
+      "lane": "nt",
+      "start": 95,
+      "end": 95,
+      "note": "Revelation is most often dated near the end of Domitian's reign, c. 95."
+    },
+    {
+      "id": "enoch",
+      "label": "The Book of Enoch (1 Enoch)",
+      "short": "1 Enoch",
+      "lane": "writing",
+      "start": -300,
+      "end": -100,
+      "note": "Composed in stages across the third–first centuries BC. Jude quotes it by name; the Ethiopian church receives it as scripture.",
+      "textId": "enoch"
+    },
+    {
+      "id": "didache",
+      "label": "The Didache",
+      "lane": "writing",
+      "start": 60,
+      "end": 120,
+      "note": "A church manual of the Two Ways, baptism, and eucharist, dated anywhere from the mid-first to the early second century.",
+      "textId": "didache"
+    },
+    {
+      "id": "gospel-thomas",
+      "label": "Gospel of Thomas sayings tradition",
+      "lane": "writing",
+      "start": 60,
+      "end": 140,
+      "note": "The sayings tradition behind Thomas is dated anywhere from c. 60 to 140, with the surviving form usually placed in the second century.",
+      "short": "Gospel of Thomas"
+    },
+    {
+      "id": "barnabas",
+      "label": "The Epistle of Barnabas",
+      "lane": "writing",
+      "start": 70,
+      "end": 132,
+      "note": "An anonymous letter reading the Jewish law as an allegory of Christ; dated between the fall of the Temple (70) and Hadrian's reign, with no consensus within that span.",
+      "textId": "barnabas"
+    },
+    {
+      "id": "ascension-isaiah",
+      "label": "Ascension of Isaiah",
+      "lane": "writing",
+      "start": 70,
+      "end": 150,
+      "note": "A composite apocalypse — the Martyrdom of Isaiah joined to the Vision of the Beloved's descent through seven heavens; its parts span the late first and early second centuries.",
+      "textId": "ascension-isaiah"
+    },
+    {
+      "id": "shepherd-hermas",
+      "label": "Shepherd of Hermas",
+      "lane": "writing",
+      "start": 90,
+      "end": 150,
+      "note": "An apocalyptic work of visions and parables from Rome, composed in stages between c. 90 and 150.",
+      "textId": "shepherd-hermas"
+    },
+    {
+      "id": "1clement",
+      "label": "1 Clement",
+      "lane": "writing",
+      "start": 95,
+      "end": 96,
+      "note": "The Roman church's letter to a divided Corinth, traditionally dated c. 95-96 near the end of Domitian's reign.",
+      "textId": "1clement"
+    },
+    {
+      "id": "ignatius",
+      "label": "Ignatius' seven letters",
+      "lane": "writing",
+      "start": 107,
+      "end": 110,
+      "note": "Seven letters written under guard on the road to martyrdom in Rome, traditionally dated c. 107-110 under Trajan.",
+      "textId": "ignatius-ephesians"
+    },
+    {
+      "id": "papias",
+      "label": "Fragments of Papias",
+      "lane": "writing",
+      "start": 110,
+      "end": 140,
+      "note": "Papias' five books on the sayings of the Lord, written in the early second century and now lost; the surviving fragments include the earliest account of how Mark and Matthew were composed.",
+      "textId": "papias"
+    },
+    {
+      "id": "polycarp-philippians",
+      "label": "Polycarp to the Philippians",
+      "lane": "writing",
+      "start": 110,
+      "end": 140,
+      "note": "Polycarp's letter to the church at Philippi; proposed dates run from shortly after Ignatius' journey to c. 140.",
+      "textId": "polycarp-philippians"
+    },
+    {
+      "id": "2clement",
+      "label": "2 Clement",
+      "lane": "writing",
+      "start": 120,
+      "end": 160,
+      "note": "The earliest surviving Christian sermon, wrongly ascribed to Clement; commonly dated to the mid-second century. Its ending was recovered only in 1873.",
+      "textId": "2clement"
+    },
+    {
+      "id": "epistula-apostolorum",
+      "label": "Epistula Apostolorum",
+      "lane": "writing",
+      "start": 120,
+      "end": 170,
+      "note": "A dialogue of the risen Christ with the apostles; scholars date it across the second century, c. 120–170.",
+      "textId": "epistula-apostolorum"
+    },
+    {
+      "id": "quadratus",
+      "label": "Fragment of Quadratus",
+      "lane": "writing",
+      "start": 124,
+      "end": 125,
+      "note": "The oldest Christian apology, presented to the emperor Hadrian around 124; a single sentence survives, quoted by Eusebius.",
+      "textId": "quadratus"
+    },
+    {
+      "id": "diognetus",
+      "label": "Epistle to Diognetus",
+      "lane": "writing",
+      "start": 130,
+      "end": 200,
+      "note": "An anonymous apology of uncertain date, estimates running from the early second century to c. 200; shown here at its earlier bound.",
+      "textId": "diognetus"
+    },
+    {
+      "id": "martyrdom-polycarp",
+      "label": "The Martyrdom of Polycarp",
+      "lane": "writing",
+      "start": 155,
+      "end": 160,
+      "note": "The Smyrnaean church's account of Polycarp's death, written soon after the events it describes.",
+      "textId": "martyrdom-polycarp"
+    },
+    {
+      "id": "3corinthians",
+      "label": "Third Corinthians",
+      "lane": "writing",
+      "start": 160,
+      "end": 190,
+      "note": "The apocryphal correspondence between the Corinthian church and Paul, part of the Acts of Paul; Paul's reply defends the resurrection of the flesh against teachers who denied it.",
+      "textId": "3corinthians"
+    },
+    {
+      "id": "abgar",
+      "label": "The Abgar Correspondence",
+      "lane": "writing",
+      "start": 300,
+      "end": 325,
+      "note": "Eusebius records a legendary exchange between King Abgar of Edessa and Jesus; the correspondence as we have it is generally dated to the early fourth century.",
+      "textId": "abgar",
+      "short": "Abgar correspondence"
+    },
+    {
+      "id": "apocalypse-paul",
+      "label": "The Apocalypse of Paul",
+      "short": "Apocalypse of Paul",
+      "lane": "writing",
+      "start": 380,
+      "end": 400,
+      "note": "Paul's tour of heaven and hell in a late-fourth-century apocalypse — a major source behind later visions of the afterlife, including Dante.",
+      "textId": "apocalypse-paul"
+    }
+  ]
+}

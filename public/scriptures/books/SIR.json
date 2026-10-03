@@ -1,0 +1,191 @@
+{
+  "book": "SIR",
+  "bookName": "Sirach",
+  "oneLine": "A Jerusalem teacher's wide-ranging handbook for forming a wise, faithful life — preserved through both recovered Hebrew and his grandson's ancient Greek translation.",
+  "orient": "Sirach, also called Ben Sira or Ecclesiasticus, is wisdom taught close to ordinary life. It discusses speech, friendship, money, shame, meals, physicians, grief, education, worship, sex, household power, public office, aging, and death, then retells Israel's history as a procession of exemplary ancestors. Unlike Proverbs, the author identifies himself near the end; unlike most biblical books, the translator also speaks in a foreword and apologizes for what translation cannot carry. That makes Sirach the ideal place to show readers that ‘the original language’ and ‘the canonical text’ are not always one simple layer.",
+  "whereYouAre": "Judea is under Hellenistic rule, after Alexander's conquests and before the Maccabean revolt. Jerusalem's temple and priesthood stand at the center of public worship. Jewish scribes study Torah, prophets, and other ancestral writings while living inside a Greek-speaking Mediterranean world. Ben Sira teaches students how to pursue wisdom without separating reverence for God, Israel's law, disciplined learning, and conduct in the marketplace or dining room.",
+  "facts": {
+    "writtenBy": "Yeshua (Jesus) son of Eleazar son of Sira, a Jerusalem teacher and scribe. His grandson, unnamed in the Greek foreword, translated the Hebrew book into Greek in Egypt and wrote the foreword.",
+    "writtenWhen": "The Hebrew work was composed in the early second century BC and was likely complete around 180–175. The grandson says he came to Egypt in the thirty-eighth year of King Euergetes, commonly understood as 132 BC; the Greek translation followed during his stay.",
+    "writtenFor": "Students seeking disciplined wisdom in Jerusalem, and through the grandson's translation, Greek-reading Jews in Egypt or the wider diaspora who wanted to live according to the law.",
+    "place": "Composed in Jerusalem; translated in Egypt.",
+    "covers": "Moral and religious instruction in chapters 1–43, praise of Israel's ancestors in 44–50, and concluding prayers and wisdom invitation in chapter 51.",
+    "size": "51 chapters. The hosted World English Bible has 1,359 numbered verses and 26,294 words; the Catholic Douay-Rheims has 1,591 numbered verses and 30,868 words because its received textual form includes additional lines and different verse division."
+  },
+  "language": {
+    "writtenIn": "Originally Hebrew, translated into Greek by the author's grandson. More than two thirds of a Hebrew form has been recovered from medieval Cairo Genizah manuscripts and ancient Judean Desert witnesses, while the complete book survived principally through Greek and translations made from it.",
+    "register": "A trained Jerusalem scribe using compact Hebrew wisdom poetry: paired lines, numerical sayings, vivid comparisons, repeated direct address (‘my child’), catalogues, hymns, prayer, and ancestral encomium. The Greek often follows its Hebrew source closely enough to sound less idiomatic than free Greek composition.",
+    "spokenWorld": "Ben Sira's educational world is multilingual and culturally mixed. Hebrew carries ancestral study and composition; Aramaic was common in Judean life; Greek served administration, trade, education, and the diaspora audience for the grandson's translation. The book resists a choice between ‘Jewish’ and ‘Hellenistic’ as though Jerusalem were outside the Hellenistic age.",
+    "readerSignal": "The grandson explicitly tells readers that Hebrew expressions do not have the same force in another language, extending the warning to the Law, Prophets, and other writings. Within the book, line pairs, alphabet-sized poems, repeated ‘fear of the Lord,’ and constant attention to the right time create a disciplined listening rhythm.",
+    "englishLayer": "No hosted English edition is simply ‘the Hebrew Sirach.’ Modern translators compare incomplete Hebrew witnesses, Greek forms, Syriac, and Latin. The World English Bible here primarily represents a shorter Greek form; the Douay-Rheims descends through Latin and often preserves a longer form. Brenton translates Greek but embeds the grandson's foreword unusually within its first displayed verse.",
+    "textualHistory": [
+      {
+        "label": "Ben Sira's book",
+        "language": "Hebrew",
+        "role": "composition",
+        "description": "A named Jerusalem scribe composed the work in Hebrew in the early second century BC. The Hebrew title and wording survive only in portions, but recovered manuscripts now preserve more than two thirds of the work and substantially agree with the ancient Greek while also revealing meaningful differences.",
+        "sourceIds": ["usccb-sirach", "oxford-ben-sira"]
+      },
+      {
+        "label": "The ancient translation that preserved the whole",
+        "language": "Koine Greek",
+        "role": "translation",
+        "description": "The author's grandson translated the book in Egypt and added a foreword explaining his aim and difficulty. This Greek form entered the Septuagintal and Christian scriptural tradition and became the chief complete witness when the Hebrew book was no longer continuously transmitted.",
+        "sourceIds": ["cambridge-grandson", "oxford-ben-sira", "usccb-sirach"]
+      },
+      {
+        "label": "Recovered Hebrew witnesses",
+        "language": "Hebrew manuscripts from Masada, Qumran, and the Cairo Genizah",
+        "role": "earliest-extant",
+        "description": "A pre-Christian Masada manuscript and other Judean Desert fragments confirm ancient Hebrew transmission; much larger medieval Genizah manuscripts expanded the recoverable text. These witnesses do not all reproduce one mechanically identical edition.",
+        "sourceIds": ["usccb-sirach", "oxford-ben-sira", "oxford-sirach51"]
+      },
+      {
+        "label": "Shorter and longer received forms",
+        "language": "Greek and Latin textual traditions",
+        "role": "translation",
+        "description": "A longer Greek recension contains additional lines, and the Latin tradition can preserve expansions or arrangements not visible in a shorter Greek-based English edition. Verse totals therefore differ substantially without implying that one file is corrupt.",
+        "sourceIds": ["jts-long-recension", "usccb-sirach", "hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "The translator tells you what every translation hides",
+        "original": "Hebrew words ‘do not have the same force’ when rendered into another language — Greek Foreword",
+        "explanation": "The grandson asks for patience because he has labored to translate learning and wisdom but knows force changes across languages. He says the same about the Law, Prophets, and other ancestral books. This is not a modern warning imposed on Scripture; it is an ancient biblical translator describing his own limits.",
+        "translationNote": "English stands one layer farther away: often Hebrew to Greek to English, or Hebrew to Greek to Latin to English. A smooth sentence can conceal where the Greek itself is already an interpretive rendering.",
+        "caution": "Translation difficulty does not make translation useless or meaning inaccessible — the grandson published precisely because readers could profit. It calls for humility, comparison, and notes rather than despair.",
+        "refs": ["1:1"],
+        "sourceIds": ["cambridge-force", "cambridge-grandson", "usccb-sirach"]
+      },
+      {
+        "title": "Parallel lines teach by variation",
+        "original": "‘The beginning of wisdom … / the fullness of wisdom … / the crown of wisdom … / the root of wisdom …’",
+        "explanation": "Sirach 1:11–30 uses 22 paired lines, corresponding to the Hebrew alphabet's letter count, and repeatedly joins wisdom with fear of the Lord. The lines are not interchangeable slogans: beginning, fullness, crown, and root accumulate a whole portrait of wisdom's origin, growth, fruit, and practiced religious life.",
+        "translationNote": "The alphabetic frame cannot be reproduced from Greek or English initial letters, while longer textual forms insert lines that change numbering and visual symmetry.",
+        "caution": "A 22-line design can allude to alphabetic completeness without proving that every recovered form was a perfect acrostic in the strict first-letter sense.",
+        "refs": ["1:11", "1:14", "1:16", "1:18", "1:20", "1:27"],
+        "sourceIds": ["usccb-sirach1", "wisdom-parallelism", "hosted-web"]
+      },
+      {
+        "title": "‘Fear of the Lord’ means practiced allegiance, not panic",
+        "original": "יִרְאַת אֲדֹנָי / φόβος κυρίου — yir'at Adonai / phobos Kyriou",
+        "explanation": "Chapter 1 repeats the phrase while linking it to wisdom, joy, patience, humility, commandment keeping, and the refusal of duplicity. ‘Fear’ includes awe and recognition of divine authority, but in wisdom usage it names a whole orientation of faithful conduct. Ben Sira can therefore speak of fear as gladness and a crown.",
+        "translationNote": "Modern English ‘fear’ defaults to fright. ‘Reverence’ can correct that but may sound too mild or purely emotional. The surrounding behaviors define the phrase better than either substitute alone.",
+        "caution": "The phrase should not be used to baptize terror, manipulation, or abuse by human authorities. Its object is the Lord, and its stated fruits include faithfulness, humility, wisdom, and turning from sin.",
+        "refs": ["1:11", "1:14", "1:16", "1:20", "1:26", "1:27"],
+        "sourceIds": ["usccb-sirach1", "usccb-sirach", "hosted-web"]
+      },
+      {
+        "title": "καιρός (kairos): wisdom knows the fitting moment",
+        "original": "καιρός — kairos — “right, appointed, or fitting time”",
+        "explanation": "Ben Sira returns constantly to timing: holding speech, answering, leaving a banquet, acting, grieving, correcting, and recognizing opportunity. Wisdom is not possession of universally deployable sayings; it is trained judgment about which word or action belongs now. Chapter 1 itself moves from patience ‘until the right time’ to speech that is finally welcomed.",
+        "translationNote": "English may alternate time, season, opportunity, occasion, and proper moment, hiding the recurrence of one Greek term across dozens of practical settings.",
+        "caution": "Appeal to timing can become an excuse for indefinite silence, especially under injustice. Ben Sira's point is disciplined appropriateness, which still requires the book's other demands for justice, truth, and care of the poor.",
+        "refs": ["1:23", "4:23", "6:8", "20:6", "32:4"],
+        "sourceIds": ["usccb-sirach1", "usccb-sirach", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Wisdom-school words crossing Hebrew, Greek, and English",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "chokhmah / sophia",
+        "meaning": "wisdom — skillful, God-given understanding for life",
+        "why": "Both Hebrew and Greek nouns are grammatically feminine, supporting the book's portrayal of Wisdom as ‘she’ without reducing wisdom to a merely abstract fact list.",
+        "sourceIds": ["usccb-sirach1", "oxford-ben-sira", "hosted-web"]
+      },
+      {
+        "ref": "1:11",
+        "form": "yir'ah / phobos",
+        "meaning": "fear, awe, reverent allegiance",
+        "why": "The repeated phrase receives meaning from its companions — joy, glory, faithfulness, humility, obedience — rather than from the English emotion word alone.",
+        "sourceIds": ["usccb-sirach1", "hosted-web"]
+      },
+      {
+        "ref": "6:18",
+        "form": "musar / paideia",
+        "meaning": "discipline, education, formative training",
+        "why": "The vocabulary belongs to becoming teachable through correction and practice. ‘Discipline’ here is broader than punishment and ‘education’ broader than classroom information.",
+        "sourceIds": ["usccb-sirach", "wisdom-parallelism", "hosted-web"]
+      },
+      {
+        "ref": "24:23",
+        "form": "nomos",
+        "meaning": "law or Torah",
+        "why": "Wisdom's self-praise is identified with the covenant law of Moses, joining cosmic wisdom, Israel's text, worship, and practiced instruction rather than opposing law to wisdom.",
+        "sourceIds": ["usccb-sirach", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Wisdom instruction — poetic teaching, maxims, essays, prayer, hymn, and praise of ancestors",
+    "how": "Read it as formation by a teacher, not as 1,500 free-floating promises. A saying is crafted for a social setting and may be balanced elsewhere by another saying. Ask who has power, what conduct is being formed, and how a maxim relates to Torah, worship, and the book's recurring fear-of-the-Lord frame. Compare editions when a verse is absent or longer."
+  },
+  "cast": [
+    { "name": "Jesus ben Sira", "who": "Jerusalem scribe, traveler, teacher, and named author who turns long study and experience into instruction for students." },
+    { "name": "The grandson translator", "who": "An unnamed Jewish translator in Egypt who gives rare first-person evidence about date, purpose, source language, and the unavoidable loss of force across languages." },
+    { "name": "Wisdom", "who": "God's created gift, teacher, mother, bride, and finally a figure identified with the Torah's dwelling in Israel." },
+    { "name": "The student — ‘my child’", "who": "A teachable but vulnerable learner being formed for speech, friendship, work, meals, worship, sexuality, authority, and mortality." },
+    { "name": "The poor, rich, friend, fool, elder, ruler, physician, merchant, and scribe", "who": "Recurring social types through whom wisdom is tested in unequal, ordinary relationships." },
+    { "name": "Israel's ancestors", "who": "Enoch through Simon the high priest, praised in chapters 44–50 so that moral instruction becomes collective memory and worship." }
+  ],
+  "shape": [
+    { "heading": "Formation in wisdom and ordinary life", "chapters": "1–23", "note": "Fear of the Lord, testing, parents, humility, almsgiving, friendship, speech, desire, discipline, worship, and social conduct." },
+    { "heading": "Wisdom, Torah, society, nature, and mortality", "chapters": "24–43", "note": "Wisdom's self-praise, family and economic counsel, physicians and grief, scribal vocation, creation hymn, and the difficulty of speaking adequately of God." },
+    { "heading": "Praise of the ancestors", "chapters": "44–50", "note": "A scriptural history from Enoch and Noah through patriarchs, Moses, judges, kings, prophets, and Simon the high priest." },
+    { "heading": "Prayer and invitation to the school of wisdom", "chapters": "51", "note": "Personal thanksgiving followed by a poem inviting the uneducated to take wisdom's yoke and acquire instruction." }
+  ],
+  "purpose": "Sirach aims to form people who can live Israel's covenant wisely inside a changing Hellenistic society. Wisdom comes from God and becomes concrete in teachability, guarded speech, loyal friendship, economic restraint, care for the vulnerable, reverent worship, memory of ancestors, and attention to the right time. The book insists that study and ordinary conduct belong together: the scribe's learning is proved at table, in grief, under authority, with money, and in how one speaks about another person.",
+  "snags": [
+    { "snag": "The same verse is missing, longer, or numbered differently in another Bible.", "help": "Sirach survives in incomplete Hebrew witnesses, shorter and longer Greek forms, Syriac, and Latin. Modern and confessional editions choose and combine evidence differently. Check the edition before accusing a tradition of deletion or addition." },
+    { "snag": "The foreword appears absent — or appears as Sirach 1:1.", "help": "The grandson's foreword is traditionally printed before chapter 1 and is not part of Ben Sira's Hebrew composition in the same way. This site's Brenton source embeds it in the first displayed verse, while other hosted forms begin directly with ‘All wisdom.’" },
+    { "snag": "Some counsel about women reflects patriarchal suspicion and double standards.", "help": "Do not disguise it as timeless neutral psychology. Read these statements within an ancient male teacher's household world, alongside the book's personified female Wisdom and its praise of capable wives, and evaluate application through the wider scriptural demands of justice, mutual dignity, and truth." },
+    { "snag": "Advice on enslaved people and corporal correction can be read as permission.", "help": "The book assumes ancient household slavery and harsh discipline rather than challenging them as modern readers must. Historical context explains the social world; it does not require reproducing its power arrangements. Description and inherited counsel must be weighed ethically, not pasted onto vulnerable people." },
+    { "snag": "‘Fear of the Lord’ sounds like religious terror.", "help": "Chapter 1 itself defines it through joy, wisdom, faithfulness, humility, patience, and keeping commandments. Let the repeated network interpret the phrase rather than one modern emotional reflex." },
+    { "snag": "The book feels disorganized after Proverbs-like sayings give way to hymns and history.", "help": "Its movement is pedagogical rather than a modern table of topics: wisdom is introduced, practiced across life, identified with Torah, contemplated in creation, embodied in the scribe, and remembered in Israel's ancestors." }
+  ],
+  "debates": [
+    {
+      "question": "Which textual form should a translation print?",
+      "settled": "No complete Hebrew manuscript survives; Greek, Syriac, Latin, Masada, Qumran, and Genizah witnesses overlap but are not identical.",
+      "positions": [
+        { "view": "Translate the shorter Greek form as the continuous base", "grounds": "It supplies a complete ancient text close to the grandson's translation and avoids constructing a synthetic book from witnesses of different dates." },
+        { "view": "Use Hebrew wherever recoverable, with other versions filling gaps", "grounds": "The Hebrew most directly witnesses Ben Sira's language and restores poetry, puns, and readings blurred by translation." },
+        { "view": "Receive a longer Greek or Latin ecclesial form", "grounds": "Some communities encountered and canonized Sirach through expanded Greek and Latin transmission; liturgical and doctrinal reception attaches to that received text, not to a modern critical reconstruction alone." }
+      ],
+      "soWhat": "Every edition is making a textual policy choice. Good presentation names its base, marks substantial additions, and avoids quoting a verse number as if all Sirachs were mechanically identical."
+    },
+    {
+      "question": "Why is Sirach canonical in some traditions and not others?",
+      "settled": "Sirach was not included in the later Jewish Tanakh but circulated widely, was quoted by early Christians, and was received in Greek and Latin church Bibles.",
+      "positions": [
+        { "view": "Catholic and Orthodox canonical reception", "grounds": "The book's long ecclesial use and presence in Septuagintal and Latin collections support its reception as Scripture, though exact textual form and placement vary." },
+        { "view": "Protestant Apocrypha or noncanonical wisdom", "grounds": "Reformation-era Protestant canons followed the scope of the Hebrew Jewish Bible for the Old Testament, while often preserving Sirach among useful Apocrypha." },
+        { "view": "Jewish Second Temple wisdom, outside the Tanakh", "grounds": "Ben Sira is a major witness to Jewish theology, ethics, scribal culture, and scriptural interpretation even though it did not enter the rabbinic canon." }
+      ],
+      "soWhat": "Canonical status affects liturgical authority, but historical and literary value does not disappear across the boundary. The site should state the tradition instead of calling the book ‘missing’ or ‘added’ without a frame."
+    }
+  ],
+  "sources": [
+    { "id": "usccb-sirach", "label": "USCCB, Introduction to Sirach", "says": "Identifies author, Jerusalem setting, early-second-century Hebrew composition, grandson's Greek translation, recovered Hebrew witnesses, structure, and Catholic canonical reception.", "url": "https://bible.usccb.org/bible/sirach/0" },
+    { "id": "usccb-sirach1", "label": "USCCB, Sirach 1 notes", "says": "Explains the 22 paired lines, repeated wisdom/fear-of-the-Lord vocabulary, kairos emphasis, and the relation of reverence to practiced obedience.", "url": "https://bible.usccb.org/bible/sirach/1" },
+    { "id": "oxford-ben-sira", "label": "Benjamin G. Wright III, “Ben Sira” (Oxford Classical Dictionary)", "says": "Surveys the early-second-century wisdom book, the grandson's Greek translation, Christian transmission, and Hebrew fragments from the Genizah and Dead Sea region.", "url": "https://academic.oup.com/edited-volume/61673/chapter/550533627" },
+    { "id": "cambridge-grandson", "label": "Henry J. Cadbury, “The Grandson of Ben Sira” (Harvard Theological Review)", "says": "Uses the foreword to place the translator in Egypt in the thirty-eighth year of Euergetes, probably 132 BC, and distinguishes Hebrew composition from Greek and later Christian reception.", "url": "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/grandson-of-ben-sira/6A428F574B08B7DC0133E5FAA8502B5E" },
+    { "id": "cambridge-force", "label": "Cambridge History of Biblical Interpretation excerpt", "says": "Highlights the grandson's own statement that Hebrew expressions and their translations do not carry the same force.", "url": "https://assets.cambridge.org/97805215/33898/excerpt/9780521533898_excerpt.pdf" },
+    { "id": "oxford-sirach51", "label": "Oxford Handbook of the Psalms, Sirach 51 manuscript discussion", "says": "Documents Hebrew Sirach 51 in the Great Psalms Scroll and the distinct history of the final wisdom poem across collections.", "url": "https://academic.oup.com/edited-volume/35006/chapter/298748176" },
+    { "id": "jts-long-recension", "label": "Journal of Theological Studies, Concordance du Siracide review", "says": "Documents 135 additional poetic lines associated with the longer Greek recension and the need to track Greek variants and Hebrew equivalents.", "url": "https://academic.oup.com/jts/article-pdf/57/1/213/4639713/flj001.pdf" },
+    { "id": "wisdom-parallelism", "label": "USCCB, Introduction to the Wisdom Books", "says": "Explains the wisdom tradition's use of skillful parallelism and social instruction, providing the literary frame shared by Proverbs and Sirach.", "url": "https://bible.usccb.org/bible/wisdombooks/0" },
+    { "id": "hosted-web", "label": "The texts on this site", "says": "Word and verse totals were measured separately in the World English Bible, Douay-Rheims, and Brenton files; reference existence and the Brenton foreword placement were checked directly." }
+  ],
+  "howToRead": [
+    { "tip": "Read the grandson's foreword before chapter 1, even if your edition hides it in a note or embeds it strangely. It is the book's own translation briefing." },
+    { "tip": "Keep a three-column notebook: the maxim, the social situation it assumes, and the wise habit it is trying to form." },
+    { "tip": "Track ‘my child,’ ‘wisdom,’ ‘fear of the Lord,’ ‘discipline,’ and ‘right time.’ Repetition supplies coherence where modern topical headings do not." },
+    { "tip": "Compare two translations at chapter 1 and chapter 24. Differences there quickly reveal shorter/longer text and translation philosophy." },
+    { "tip": "When counsel depends on ancient hierarchy — gender, slavery, class, patronage — name the power arrangement before applying anything." },
+    { "tip": "Read chapters 44–50 with the earlier biblical narratives open. Notice whom Ben Sira praises, omits, or reshapes, and how the sequence ends at the temple of his own day.", "refs": ["44:1", "45:6", "47:1", "48:1", "50:1"] }
+  ],
+  "next": "Read Proverbs for the older wisdom traditions Ben Sira extends, then Wisdom of Solomon for a Greek-composed Jewish wisdom book with a different voice and account of immortality. Read 1 Maccabees afterward to enter the political and religious crisis that followed Ben Sira's Jerusalem world by only a generation.",
+  "traditionNote": "Sirach is canonical in Catholic, Eastern Orthodox, Ethiopian, and Armenian traditions represented here. It is outside the Jewish Tanakh and the Protestant Old Testament, though historically printed in many Protestant Apocrypha. ‘Sirach,’ ‘Ben Sira,’ and ‘Ecclesiasticus’ name the same book, but its shorter Greek, longer Greek/Latin, and partially recovered Hebrew forms should not be treated as textually identical."
+}

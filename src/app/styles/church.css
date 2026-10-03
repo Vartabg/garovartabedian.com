@@ -1,0 +1,992 @@
+/* Auto-split from globals.css — edit carefully; keep selector ownership clear. */
+
+/* ============ The Church world ============ */
+.world-church {
+  --bg: #e9e2eb;
+  --surface: #f8f3ec;
+  --ink: var(--soot);
+  --muted: #665c69;
+  --line: #d1c4d3;
+  --accent: #5d3a7a;
+  --accent-deep: #432956;
+  --accent-ink: #f8f3ec;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+}
+.world-church main {
+  flex: 1;
+}
+
+/* Compact progress for the long road, council, face, and giant rooms. */
+.ch-section-nav {
+  position: sticky;
+  top: 0.65rem;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+  margin: 1.25rem 0 1.75rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--line) 85%, var(--accent));
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 8%, transparent);
+  backdrop-filter: blur(12px);
+}
+.ch-section-current {
+  flex: 0 0 auto;
+  display: grid;
+  min-width: 7.5rem;
+  max-width: 12rem;
+  padding-right: 0.7rem;
+  border-right: 1px solid var(--line);
+}
+.ch-section-current span {
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ch-section-current strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 0.82rem;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ch-section-links {
+  display: flex;
+  gap: 0.35rem;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.ch-section-links::-webkit-scrollbar {
+  display: none;
+}
+.ch-section-links a {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0.52rem 0.7rem;
+  white-space: nowrap;
+}
+.ch-section-links a:hover,
+.ch-section-links a[aria-current="location"] {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+.ch-section-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+/* The road — a continuous walk with a drawn line down the left */
+/* The era spine — the whole road drawn to scale as the wayfinding. */
+.ch-spine {
+  margin: 1.5rem 0 2rem;
+}
+.ch-spine svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ch-spine-band {
+  fill: var(--accent);
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+.ch-spine-band.alt {
+  opacity: 0.7;
+}
+.ch-spine a:hover .ch-spine-band {
+  opacity: 0.9;
+}
+.ch-spine a:focus-visible .ch-spine-band {
+  opacity: 1;
+  stroke: var(--accent);
+  stroke-width: 2;
+  paint-order: stroke;
+}
+.ch-spine a:focus-visible {
+  outline: none;
+}
+.ch-spine-tick {
+  stroke: var(--muted);
+  stroke-width: 1.1;
+  opacity: 0.55;
+}
+.ch-spine-fork path {
+  stroke: var(--accent);
+  stroke-width: 1.4;
+}
+.ch-spine-label {
+  fill: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+.ch-spine-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+}
+.ch-spine-links a {
+  align-items: flex-start;
+  border: 1px solid var(--line);
+  border-radius: 0.45rem;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.45rem 0.6rem;
+  text-decoration: none;
+}
+.ch-spine-links a:hover {
+  border-color: var(--accent);
+}
+.ch-spine-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.ch-spine-links small {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.ch-road {
+  margin-top: 1.5rem;
+}
+.ch-era {
+  border-left: 3px solid var(--accent);
+  padding: 0.2rem 0 1.4rem 1.4rem;
+  margin-bottom: 0.6rem;
+  position: relative;
+  scroll-margin-top: 5.5rem;
+}
+.ch-era::before {
+  content: "";
+  position: absolute;
+  left: -8.5px;
+  top: 0.35rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+}
+.ch-era-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.ch-era-head h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+.ch-era-years {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.95rem;
+}
+.ch-era-intro {
+  margin: 0.5rem 0 0.75rem;
+  max-width: 46rem;
+}
+.ch-power {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 10px 10px 0;
+  padding: 0.6rem 0.95rem;
+  margin: 0 0 1.1rem;
+  font-size: 0.93rem;
+  max-width: 46rem;
+}
+.ch-power span {
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.ch-step {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 0.9rem;
+  padding: 0.5rem 0;
+  max-width: 46rem;
+}
+.ch-step-year {
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.92rem;
+  padding-top: 0.15rem;
+  white-space: nowrap;
+}
+.ch-step-body h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.02rem;
+}
+.ch-step-body > p {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+}
+
+/* The tree */
+.ch-tree {
+  margin: 1.75rem 0;
+}
+.ch-tree-viewport {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain;
+}
+.ch-tree-swipe {
+  display: none;
+  margin: 0 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.ch-tree-picker {
+  display: grid;
+  max-width: 32rem;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+.ch-tree-picker select {
+  width: 100%;
+  min-height: var(--control-target-min);
+  padding: 0.55rem 2rem 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.ch-tree-viewport svg {
+  width: 100%;
+  min-width: 680px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.ch-tick {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.ch-tick-year {
+  fill: var(--muted);
+  font-size: 12px;
+}
+.ch-branch {
+  pointer-events: none;
+}
+/* Emphasis rides on stroke width, not opacity. At the old `opacity: 0.5` the
+   accent composited to #ab97b3 — 2.44:1 on this surface, under the 3:1 floor
+   for marks — and since only the hovered limb lifted to full strength, eleven
+   of the twelve branches failed at any moment. Full strength is 8.09:1. */
+.ch-limb {
+  stroke: var(--accent);
+  stroke-width: 2;
+  transition: stroke-width 0.15s ease;
+}
+.ch-branch.trunk .ch-limb {
+  stroke-width: 4.5;
+}
+.ch-branch.active .ch-limb {
+  stroke-width: 4;
+}
+/* When one limb is chosen the rest step back — but only to 0.65, which
+   composites to #937ba2, 3.40:1, still clear of the 3:1 mark floor. 0.5 is
+   2.44:1 and 0.55 is 2.73:1; both fail, so neither is available as a
+   "de-emphasised" state. */
+.ch-tree.has-selection .ch-branch:not(.active) .ch-limb {
+  opacity: 0.65;
+}
+/* Four of the twelve forks (1517, 1525, 1534, 1536) land within ~6px of each
+   other on the Catholic lane and merged into one black blob. The surface ring
+   is the prescribed separator for overlapping marks — it keeps them readable
+   as four events without moving any of them off its true date. */
+.ch-fork {
+  fill: var(--ink);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.ch-fork-year {
+  fill: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.ch-tree-table {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.ch-tree-table > summary {
+  padding: 0.75rem 1rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.ch-tree-table-body {
+  overflow-x: auto;
+  padding: 0 1rem 1rem;
+  border-top: 1px solid var(--line);
+}
+.ch-tree-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.ch-tree-table th,
+.ch-tree-table td {
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+.ch-tree-table thead th {
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.ch-tree-table tbody th {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.ch-tree-table td:nth-child(2),
+.ch-tree-table td:nth-child(3) {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+/* The trunk label sits directly on the 4.5px trunk; the surface halo keeps
+   both readable instead of letting the rule strike through the word. */
+.ch-limb-label {
+  fill: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  stroke: var(--surface);
+  stroke-width: 3;
+  paint-order: stroke fill;
+}
+.ch-branch.active .ch-limb-label {
+  fill: var(--accent);
+}
+
+/* The faces — a real person per culture, art alongside */
+.ch-face-map {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 16% 12%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 32%),
+    var(--surface);
+  padding: 1rem 1.1rem;
+  margin: 1.5rem 0 2rem;
+}
+.ch-face-nodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.55rem;
+}
+.ch-face-node {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.18rem 0.7rem;
+  align-items: start;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 0.7rem 0.8rem;
+  background: color-mix(in srgb, var(--bg) 42%, transparent);
+  color: var(--ink);
+  text-decoration: none;
+}
+.ch-face-node:hover {
+  border-color: var(--accent);
+}
+.ch-face-mark {
+  grid-row: 1 / 4;
+  width: 0.72rem;
+  height: 0.72rem;
+  margin-top: 0.24rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.ch-face-node strong {
+  color: var(--accent);
+}
+.ch-face-node span:not(.ch-face-mark),
+.ch-face-node em {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.ch-face-node em {
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+}
+.ch-face {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0 1.75rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 1.5rem;
+  align-items: start;
+  scroll-margin-top: 5.5rem;
+}
+.ch-face-culture {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.ch-face h2 {
+  margin: 0.15rem 0 0;
+  font-size: 1.3rem;
+}
+.ch-face-years {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.ch-face blockquote {
+  margin: 0.8rem 0;
+  padding: 0.7rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.98rem;
+}
+.ch-face-today {
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--line);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.ch-face-today strong {
+  color: var(--ink);
+}
+.ch-face-art {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+@media (max-width: 640px) {
+  .ch-face {
+    grid-template-columns: 1fr;
+  }
+  .ch-face-art {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .ch-face-art figure {
+    flex: 1 1 160px;
+  }
+}
+
+/* The councils on the map — emperors summoned in the east, then popes west. */
+.ch-cmap {
+  margin: 1.75rem 0 2rem;
+}
+.ch-cmap svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.ch-cmap-pin circle {
+  fill: #9a7b3f; /* imperial — Byzantine gold */
+  stroke: var(--surface);
+  stroke-width: 1.5;
+  transition: r 0.15s ease;
+}
+.ch-cmap-pin.papal circle {
+  fill: var(--accent); /* papal — the church's purple */
+}
+.ch-cmap a:hover .ch-cmap-pin circle {
+  r: 7;
+}
+.ch-cmap a:focus-visible .ch-cmap-pin circle {
+  r: 7;
+  stroke: var(--accent);
+  stroke-width: 3;
+  paint-order: stroke;
+}
+.ch-cmap a:focus-visible {
+  outline: none;
+}
+.ch-cmap-city {
+  fill: var(--ink);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+}
+.ch-cmap-years {
+  fill: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.ch-cmap-modern {
+  fill: var(--muted);
+  font-size: 9.5px;
+  opacity: 0.85;
+}
+.ch-cmap-key {
+  margin-top: 0.5rem;
+}
+.ch-cmap-dot {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  vertical-align: baseline;
+}
+.ch-cmap-dot.imperial {
+  background: #9a7b3f;
+}
+.ch-cmap-dot.papal {
+  background: var(--accent);
+}
+
+/* The councils — who called it, what it decided, what it cost */
+.ch-council {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0 1.75rem;
+  scroll-margin-top: 5.5rem;
+}
+.ch-council-meta {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.ch-council h2 {
+  margin: 0.15rem 0 0.5rem;
+  font-size: 1.3rem;
+}
+.ch-council-called {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.ch-council-called strong {
+  color: var(--ink);
+}
+.ch-council blockquote {
+  margin: 0.8rem 0;
+  padding: 0.7rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.98rem;
+}
+.ch-council blockquote footer {
+  margin-top: 0.3rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.ch-council-consequence {
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--line);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.ch-council-consequence strong {
+  color: var(--ink);
+}
+a.vsw-opt {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+/* The giants — the gift and the fault, side by side, both sourced */
+.ch-giant {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0 1.75rem;
+  scroll-margin-top: 5.5rem;
+}
+.ch-giant h2 {
+  margin: 0.15rem 0 0;
+  font-size: 1.3rem;
+}
+.ch-giant blockquote {
+  margin: 0.8rem 0;
+  padding: 0.7rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.98rem;
+}
+.ch-giant-precedent {
+  margin: 1.25rem 0 0;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 12px 12px 0;
+}
+.ch-giant-precedent p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.ch-giant-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  margin-top: 0.9rem;
+}
+.ch-giant-cols h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.ch-giant-gift {
+  border-left: 3px solid var(--accent);
+  padding-left: 0.9rem;
+}
+.ch-giant-gift h3 {
+  color: var(--accent);
+}
+.ch-giant-fault {
+  border-left: 3px solid var(--ink);
+  padding-left: 0.9rem;
+}
+.ch-giant-fault h3 {
+  color: var(--ink);
+}
+.ch-giant-cols p {
+  margin: 0;
+}
+.ch-giant-fault-sources {
+  margin-top: 0.55rem !important;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+@media (max-width: 640px) {
+  .world-church .site-header .wrap {
+    min-height: 3.5rem;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+  .world-church main {
+    padding-top: 2rem;
+  }
+  .world-church .world-guide {
+    margin-bottom: 0.65rem;
+  }
+  .ch-section-nav {
+    top: 0.4rem;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .ch-section-current {
+    min-width: 6.5rem;
+    max-width: 8.5rem;
+  }
+  .ch-tree-swipe {
+    display: block;
+  }
+  .ch-giant-cols {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* The map head — scriptures.css isn't loaded in this world, so style it here */
+.ch-face-map .scr-search-lens-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 0.85rem;
+}
+.ch-face-map .scr-search-lens-head strong {
+  color: var(--ink);
+}
+.ch-face-map .scr-search-lens-head span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  text-align: right;
+}
+
+/* Scan first, then choose the depth: native details retain the full record. */
+.ch-dive-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.25rem 0 0.75rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.ch-dive-controls p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.ch-dive-controls p strong {
+  color: var(--ink);
+}
+.ch-dive-controls > div {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.45rem;
+}
+.ch-dive-controls button {
+  min-width: var(--control-target-min);
+  min-height: var(--control-target-min);
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+@media (hover: hover) and (pointer: fine) {
+  .ch-dive-controls button:hover {
+    border-color: var(--accent);
+  }
+}
+.ch-dive-controls button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.ch-dive-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.ch-dive-list {
+  border-bottom: 1px solid var(--line);
+}
+.ch-dive.ch-council,
+.ch-dive.ch-face,
+.ch-dive.ch-giant {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+.ch-dive-summary {
+  position: relative;
+  display: block;
+  padding: 1.1rem 3.25rem 1.1rem 0.9rem;
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.15s ease;
+}
+.ch-dive-summary::-webkit-details-marker {
+  display: none;
+}
+.ch-dive-summary::after {
+  content: "+";
+  position: absolute;
+  top: 1.1rem;
+  right: 0.95rem;
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+.ch-dive[open] > .ch-dive-summary::after {
+  content: "–";
+}
+.ch-dive-summary:hover,
+.ch-dive[open] > .ch-dive-summary {
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+}
+.ch-dive-summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+.ch-dive-summary h2 {
+  margin: 0.18rem 0 0.2rem;
+}
+.ch-dive-subline {
+  display: block;
+  max-width: 44rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.ch-dive-subline strong {
+  color: var(--ink);
+}
+.ch-dive-prompt {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+.ch-dive-close-label {
+  display: none;
+}
+.ch-dive[open] .ch-dive-open-label {
+  display: none;
+}
+.ch-dive[open] .ch-dive-close-label {
+  display: inline;
+}
+.ch-dive-body {
+  padding: 0 0.9rem 1.4rem;
+  border-top: 1px dashed var(--line);
+}
+.ch-dive.ch-face > .ch-dive-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 1.5rem;
+  align-items: start;
+}
+.ch-giant-glance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+.ch-giant-glance > span {
+  padding: 0.65rem 0.75rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.ch-giant-glance > span:last-child {
+  border-left-color: var(--ink);
+}
+.ch-giant-glance strong {
+  display: block;
+  margin-bottom: 0.16rem;
+  color: var(--ink);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.ch-giant-glance > span:first-child strong {
+  color: var(--accent);
+}
+
+/* Giants are complete manuscript leaves. Preserve the 16:9 border and keep the
+   interpretive caption outside the artwork instead of laying UI over the page. */
+.ch-giant-plate .ew-section-plate {
+  margin: 1rem 0 1.4rem;
+}
+.ch-giant-plate .ew-section-plate-media {
+  aspect-ratio: 16 / 9;
+  border-color: color-mix(in oklab, var(--accent) 34%, var(--line));
+  background: #c9a86e;
+}
+.ch-giant-plate .ew-section-plate-media::after {
+  display: none;
+}
+.ch-giant-plate .ew-section-plate-media img {
+  object-fit: contain;
+  filter: none;
+}
+.ch-giant-plate .ew-section-plate figcaption {
+  position: static;
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-shadow: none;
+}
+
+@media (max-width: 640px) {
+  .ch-dive-controls {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .ch-dive-controls > div {
+    width: 100%;
+  }
+  .ch-dive-controls button {
+    flex: 1;
+  }
+  .ch-dive-summary {
+    padding-left: 0.75rem;
+  }
+  .ch-giant-glance,
+  .ch-dive.ch-face > .ch-dive-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* "Four ways in" — the room cards, surfaced on the home instead of hidden
+   behind a disclosure toggle so first-time visitors see the navigation. */
+
+/* Leader line tying a nudged council pin (the crowded Bosphorus cluster) back
+   to its true coastal point, so separating them for legibility stays honest. */
+.ch-cmap-leader {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+  opacity: 0.45;
+}
+
+/* Where a road step opens something else on this site — the hosted chapter it
+   cites, or the hosted writing it is about. Quiet, and placed above the source
+   line so the outward link stays last. */
+.ch-step-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin: 0.6rem 0 0;
+  font-size: 0.82rem;
+}
+.ch-step-links > span {
+  color: var(--muted);
+}
+.ch-step-links a {
+  border-bottom: 1px dotted currentcolor;
+  text-decoration: none;
+}
+.ch-step-links a:hover {
+  border-bottom-style: solid;
+}

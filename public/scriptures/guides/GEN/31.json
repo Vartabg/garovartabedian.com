@@ -1,0 +1,244 @@
+{
+  "book": "GEN",
+  "chapter": 31,
+  "bookName": "Genesis",
+  "summary": "God tells Jacob to return home as Laban's household grows hostile, and Rachel and Leah agree to leave after hearing Jacob's account of his labor and wages. Laban pursues the secret departure, searches unsuccessfully for the household gods Rachel has stolen, and hears Jacob's grievances before the two men establish a boundary covenant.",
+  "whyItMatters": "The return to the promised land involves contested labor, divided loyalties, and divine restraint of a powerful relative. The final covenant protects an uneasy separation without making either household's conduct uncomplicated.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Laban's flocks and household, followed by the pursuit into the hill country of Gilead.",
+    "literaryForm": "Departure and pursuit narrative, competing speeches about ownership and labor, and a boundary covenant."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Jacob has negotiated marked livestock as wages and amassed flocks. The resulting wealth now draws accusations from Laban's sons.",
+      "verseRefs": [
+        "30:25-43"
+      ]
+    },
+    "here": {
+      "text": "The disputed departure exposes different accounts of twenty years of work, while Rachel's concealed theft creates a danger Jacob does not know about.",
+      "verseRefs": [
+        "31:1-21",
+        "31:26-42"
+      ]
+    },
+    "after": {
+      "text": "Jacob proceeds toward home and learns that Esau is approaching with four hundred men, prompting prayer, gifts, and preparations for danger.",
+      "verseRefs": [
+        "32:1-21"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "The command to return and the wives’ decision",
+      "verses": "1-16",
+      "note": "Jacob recounts God’s protection and Rachel and Leah consent to departure."
+    },
+    {
+      "heading": "Secret flight and pursuit",
+      "verses": "17-25",
+      "note": "Rachel takes the household gods, Jacob leaves secretly, and God warns Laban."
+    },
+    {
+      "heading": "Accusations and an unsuccessful search",
+      "verses": "26-35",
+      "note": "Jacob unknowingly risks Rachel’s life while she conceals the stolen objects."
+    },
+    {
+      "heading": "Jacob’s account of costly service",
+      "verses": "36-42",
+      "note": "He describes changed wages, losses borne, and twenty years of labor."
+    },
+    {
+      "heading": "A covenant between separated households",
+      "verses": "43-55",
+      "note": "A stone heap witnesses limits on harm, treatment of the daughters, and the final farewell."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "31:16",
+      "text": "For all the riches which God has taken away from our father are ours and our children’s. Now then, whatever God has said to you, do.”",
+      "why": "Rachel and Leah give their own assessment of the household dispute and agree to leave."
+    },
+    {
+      "ref": "31:32",
+      "text": "Anyone you find your gods with shall not live. Before our relatives, discern what is yours with me, and take it.” For Jacob didn’t know that Rachel had stolen them.",
+      "why": "Jacob’s confident challenge endangers a person he does not know has stolen the gods."
+    },
+    {
+      "ref": "31:52",
+      "text": "May this heap be a witness, and the pillar be a witness, that I will not pass over this heap to you, and that you will not pass over this heap and this pillar to me, for harm.",
+      "why": "The agreement establishes a boundary against hostile crossing."
+    }
+  ],
+  "themes": [
+    "return and divine presence",
+    "contested labor",
+    "wives’ inheritance concerns",
+    "concealed theft",
+    "restraint and boundaries"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why do Rachel and Leah support leaving their father?",
+      "answer": "They say he has treated them as foreigners, sold them, and consumed their money. Their response gives them a speaking role in the departure and connects Jacob's dispute over wealth to their own and their children's interests.",
+      "verseRefs": [
+        "31:14-16"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How does Jacob explain his growing flocks?",
+      "answer": "He tells the women that God has prevented Laban from harming him and has transferred livestock despite changing wages. He also recounts a dream that connects the patterned animals with God's knowledge of Laban's conduct.",
+      "verseRefs": [
+        "31:6-13"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why is Jacob’s challenge during the search dangerous?",
+      "answer": "He declares that whoever has Laban's gods shall not live, without knowing Rachel has taken them. The narrator creates tension by giving the reader information Jacob lacks; it does not explain Rachel's motive for the theft.",
+      "verseRefs": [
+        "31:19",
+        "31:30-35"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        19,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Does the narrator say Rachel is actually menstruating?",
+      "answer": "Rachel tells her father she is having her period and cannot rise before him. She remains seated on the camel's saddle hiding the gods; the chapter does not independently confirm her explanation.",
+      "verseRefs": [
+        "31:33-35"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What does “teraphim” refer to here?",
+      "answer": "The WEB uses this term for the household objects Rachel steals and Laban calls his gods. Their precise appearance and Rachel's reason for taking them are not described in this chapter.",
+      "verseRefs": [
+        "31:19",
+        "31:30-35"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        19,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What costs does Jacob say he bore as a shepherd?",
+      "answer": "He describes replacing losses, suffering heat, cold, and sleeplessness, and enduring repeatedly altered wages over twenty years. His speech makes the economic conflict concrete rather than reducing it to a quarrel over personality.",
+      "verseRefs": [
+        "31:36-42"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Is the Mizpah statement simply a friendly blessing?",
+      "answer": "It belongs to a pact between men who distrust each other and will live apart. God is invoked as witness to the treatment of Laban's daughters and to the promise that neither man will cross the boundary to harm the other.",
+      "verseRefs": [
+        "31:48-53"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "teraphim",
+      "def": "The household gods Rachel steals and hides during Laban’s search."
+    },
+    {
+      "term": "heap",
+      "def": "The pile of stones set up as a visible witness to the covenant."
+    },
+    {
+      "term": "Fear of Isaac",
+      "def": "The designation for the God by whom Jacob swears, also used in his account of divine protection."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "b33dbc7220f279afe8c4aec9ddfe7ee01524c6517271299ba48d55ad56c20f4a",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

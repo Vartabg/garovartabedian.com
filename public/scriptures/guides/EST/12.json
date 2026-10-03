@@ -1,0 +1,140 @@
+{
+  "book": "EST",
+  "chapter": 12,
+  "bookName": "Esther",
+  "summary": "Mordecai, serving in the king's court, overhears two of the king's eunuchs — Bagatha and Thara — plotting to assassinate Artaxerxes. He investigates, reports, the men are executed after confession, and the king records the deed in the chronicles and rewards Mordecai. The chapter closes with the rise of Aman (Haman), who 'sought to hurt Mardochai and his people' over those same two dead eunuchs.",
+  "whyItMatters": "This short chapter plants the two seeds the whole story grows from: the recorded act of loyalty that will later save Mordecai's life, and Haman's grudge that will nearly destroy the Jews. It is a study in how small faithful acts and small resentments both compound.",
+  "context": {
+    "author": "The Greek addition to Esther (part of the prologue material)",
+    "audience": "Greek-speaking Jews",
+    "date": "Composed in the Greek period; set in Artaxerxes' reign",
+    "setting": "The Persian palace at Susa, at the gate and in the court",
+    "literaryForm": "Brief narrative"
+  },
+  "outline": [
+    {
+      "heading": "The plot overheard",
+      "verses": "1-2",
+      "note": "Two eunuch porters plan regicide; Mordecai 'diligently searched' before speaking"
+    },
+    {
+      "heading": "Justice and record",
+      "verses": "3-5",
+      "note": "Confession, execution, and — crucially — a written record"
+    },
+    {
+      "heading": "Aman's grudge",
+      "verses": "6",
+      "note": "Haman's honor grows, and with it his hatred"
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "12:2",
+      "text": "And when he understood their designs, and had diligently searched into their projects, he learned that they went about to lay violent hands on king Artaxerxes, and he told the king thereof.",
+      "why": "Mordecai verifies before he reports — loyalty with diligence, not rumor."
+    },
+    {
+      "ref": "12:4",
+      "text": "But the king made a record of what was done: and Mardochai also committed the memory of the thing to writing.",
+      "why": "Both the king and Mordecai write it down — and the chronicle is exactly what the king reads on his sleepless night later in the story."
+    },
+    {
+      "ref": "12:6",
+      "text": "But Aman the son of Amadathi the Bugite was in great honour with the king, and sought to hurt Mardochai and his people, because of the two eunuchs of the king who were put to death.",
+      "why": "The villain's motive stated plainly — a grudge over the executed plotters, grown in the soil of high honor."
+    }
+  ],
+  "themes": [
+    "Faithful service",
+    "Records and remembrance",
+    "The root of hatred",
+    "Providence in small acts"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why does this addition matter when the Hebrew story already has a plot discovery?",
+      "answer": "The Hebrew book mentions the plot in passing (Esther 2:21-23); this addition slows down and shows Mordecai investigating — 'diligently searched into their projects.' It also adds the detail that Haman's hatred predates the bowing incident: he resents Mordecai over the executed eunuchs. The addition turns coincidence into character.",
+      "verseRefs": [
+        "12:2",
+        "12:6"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        2,
+        6
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why emphasize that the deed was recorded?",
+      "answer": "Because the whole deliverance later hinges on it: on the sleepless night, the king has the chronicles read to him and learns Mordecai was never rewarded. Records are how providence hides — God works through a clerk who did his job years earlier.",
+      "verseRefs": [
+        "12:4"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        4
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Who is Aman (Haman)?",
+      "answer": "The book's villain, second only to the king. The Hebrew text calls him the Agagite — linking him to Israel's ancient Amalekite enemies; this Greek text calls him a Bugite, and later (chapter 16) a Macedonian 'in mind and country.' Each version loads him with the enemies of its own audience.",
+      "verseRefs": [
+        "12:6"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        6
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What are eunuchs doing as porters of the palace?",
+      "answer": "Castrated men served as royal officials across the ancient Near East — trusted with the king's household because they could found no rival dynasty. Bagatha and Thara held the palace gates, which gave them access for an assassination attempt — and made their betrayal shocking.",
+      "verseRefs": [
+        "12:1"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Were assassination plots in the Persian court realistic?",
+      "answer": "Very. Persian court history is full of them — Xerxes was murdered by his own minister Artabanus, and palace intrigue over succession was constant. The chapter's realism is part of its point: Mordecai's vigilance is not paranoia but the ordinary price of survival near a throne.",
+      "verseRefs": [
+        "12:1-3"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Bagatha and Thara",
+      "def": "The two eunuch porters who plotted against Artaxerxes."
+    },
+    {
+      "term": "Bugite",
+      "def": "Brenton's rendering of Haman's designation; the Hebrew calls him an Agagite."
+    },
+    {
+      "term": "Chronicles",
+      "def": "The official Persian court records — 'the book of the memory of the days' in later chapters."
+    }
+  ],
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-08-25",
+  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "sourceIds": [
+    "drb"
+  ]
+}

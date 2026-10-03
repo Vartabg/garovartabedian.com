@@ -1,0 +1,309 @@
+{
+  "book": "2PE",
+  "bookName": "2 Peter",
+  "oneLine": "An urgent appeal to grow in faithful conduct, resist destructive teachers, and live in hope of the Lord's promised coming.",
+  "orient": "Second Peter speaks in Peter's voice as he anticipates death and seeks to preserve what his readers have learned. It pairs God's gifts with a call to cultivate faith, self-control, perseverance, and love. Its severe accusations against teachers describe the threat as the writer sees it, while examples of judgment also include rescue. The answer to apparent delay in the Lord's coming leads back to repentance, patient hope, and the question of how to live now.",
+  "whereYouAre": "The readers already know the teaching the writer wants them to remember. They face warnings about people who promise freedom while promoting conduct he calls corrupt, and about scoffers who challenge the promise of the Lord's coming. The letter names no destination and gives little independent information about the people it condemns.",
+  "facts": {
+    "writtenBy": "The address names Simon Peter, a servant and apostle of Jesus Christ. Traditional attribution accepts Peter as the author; many modern critical scholars regard the work as a later writing in his name.",
+    "writtenWhen": "Disputed. Petrine authorship places it in the apostolic period; many scholars who favor a later author propose the early second century. No exact date is established.",
+    "writtenFor": "Believers described as sharing a faith of equal value with the writer's. A connection with the churches addressed in 1 Peter is possible, but the destination is not stated here.",
+    "place": "Neither the place of writing nor the readers' location is named.",
+    "covers": "Divine gifts, growth, and reliable witness (chapter 1); accusations against teachers and examples of judgment and rescue (chapter 2); the promised day, God's patience, and steadfast living (chapter 3).",
+    "size": "3 chapters, 61 verses, 1,516 words in the hosted World English Bible text."
+  },
+  "factSourceIds": {
+    "writtenBy": ["hosted-web", "usccb-2pe-intro"],
+    "writtenWhen": ["usccb-2pe-intro"],
+    "writtenFor": ["hosted-web", "usccb-2pe-intro"],
+    "place": ["hosted-web"],
+    "covers": ["hosted-web"],
+    "size": ["hosted-web"]
+  },
+  "language": {
+    "writtenIn": "Koine Greek. Its exhortations build through linked qualities, repeated reminders, long arguments, and vivid accusations.",
+    "register": "The opening is encouraging and insistent; the central warning becomes sharply polemical. The final chapter alternates a scoffing question, an answer about God's promises, and direct appeals to the beloved readers.",
+    "spokenWorld": "The Greek writing draws on Israel's scriptural stories and addresses believers familiar with apostolic teaching. It does not identify their community's full range of spoken languages or establish a Hebrew original.",
+    "readerSignal": "Track the links between knowing and doing, forgetting and remembering, promises and patience. The argument keeps returning from disputed teaching to the readers' conduct.",
+    "englishLayer": "The World English Bible is the English text followed here. Comparison with older translations and the SBL Greek New Testament reveals both different translation choices and different textual readings. Keep those two kinds of difference distinct, especially in the descriptions of judgment.",
+    "textualHistory": [
+      {
+        "label": "The Greek work and its literary connections",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The surviving Greek work presents itself as a letter from Peter and shares several examples and images with Jude. Their relationship is a question of literary history, not an explicit statement of either text. The SBL Greek New Testament is a modern edited comparison text, not an autograph or an automatic guide to the reading behind every WEB verse.",
+        "sourceIds": ["greek-2pe", "hosted-web", "hosted-jude"]
+      },
+      {
+        "label": "English translations and significant reading differences",
+        "language": "English and Greek comparison",
+        "role": "translation",
+        "description": "At 2:4, WEB has pits of darkness, while the King James and the SBL Greek text have chains. At 3:10, WEB, King James, and Douay–Rheims describe the earth and its works as burned up; SBLGNT has a verb meaning will be found. USCCB and NET discuss that latter reading in terms of disclosure or exposure. The textual problem remains disputed, and the surrounding fire imagery is present in either reading.",
+        "sourceIds": ["hosted-web", "hosted-editions", "greek-2pe", "usccb-2pe2", "usccb-2pe3", "net-2pe"]
+      }
+    ],
+    "features": [
+      {
+        "title": "Virtue grows through linked phrases",
+        "original": "ἐν δὲ … / ἐπιχορηγέω — en de … / epichorēgeō — and in … / supply",
+        "explanation": "In 1:5–7, each quality becomes the starting point for the next: faith leads into moral excellence, knowledge, self-control, perseverance, godliness, affection, and love. The command to supply these qualities uses the same verb that returns in the promise of a richly supplied entrance in 1:11. God's provision and the readers' effort both belong to the surrounding argument.",
+        "translationNote": "English can make the sequence sound like a list of separate items. Read the repeated links aloud and notice that WEB retains supply and supplied at the two ends of the appeal.",
+        "caution": "The sequence does not require completing one quality before beginning another. The repeated verb alone cannot settle wider debates about grace, effort, or salvation.",
+        "refs": ["1:3", "1:4", "1:5", "1:6", "1:7", "1:8", "1:11"],
+        "sourceIds": ["greek-2pe", "hosted-web", "usccb-2pe1"]
+      },
+      {
+        "title": "Reminder gives the farewell its purpose",
+        "original": "ὑπόμνησις / ἔξοδος — hypomnēsis / exodos — reminder / departure",
+        "explanation": "The remembering vocabulary of 1:12–15 returns in 3:1–2. The speaker wants known teaching to remain active in his readers after his departure. Between those reminders, the image of putting off his tent expresses the approach of death and explains the urgency of his appeal.",
+        "translationNote": "WEB retains tent and departure, while older English uses tabernacle and decease. The first pair makes the images easier to hear; the second makes the reference to death more explicit.",
+        "caution": "The tent is an image for bodily life here, not a named campsite or sanctuary. The farewell voice is part of the writing's presentation and does not independently resolve its authorship.",
+        "refs": ["1:12", "1:13", "1:14", "1:15", "3:1", "3:2"],
+        "sourceIds": ["greek-2pe", "hosted-web", "hosted-editions", "usccb-2pe1"]
+      },
+      {
+        "title": "Promised freedom becomes bondage to corruption",
+        "original": "ἐλευθερία / δοῦλος / φθορά — eleutheria / doulos / phthora — freedom / slave / corruption",
+        "explanation": "In 2:19, the writer exposes a contradiction between the freedom the teachers promise and the bondage he says rules their lives. Corruption is already what believers escape in 1:4; related wording also appears in the destructive outcome pictured in 2:12. The language connects the opening appeal to the warning about returning to what one has escaped.",
+        "translationNote": "WEB uses corruption in 1:4 and 2:19, but destroying and destroyed in 2:12. Those English choices express different contexts while making the related Greek word family less obvious.",
+        "caution": "Corruption does not have an identical sense in every sentence. The accusations also do not establish the name or complete beliefs of a historical sect whose own account we possess.",
+        "refs": ["1:4", "2:12", "2:18", "2:19", "2:20"],
+        "sourceIds": ["greek-2pe", "hosted-web"]
+      },
+      {
+        "title": "Waiting is repeated and made active",
+        "original": "παρουσία / προσδοκάω — parousia / prosdokaō — coming or presence / expect",
+        "explanation": "The scoffers question the promise of the coming in 3:4. The answer leads to repeated forms of expect or wait for in 3:12–14, followed by diligence and peace. Patience is associated with repentance in 3:9 and salvation in 3:15, so the apparent delay becomes an occasion for a different kind of life.",
+        "translationNote": "WEB repeats forms of look for. In 3:12 it also renders the accompanying verb as earnestly desiring, where King James and Douay–Rheims speak of hastening. USCCB notes both interpretations of that verb.",
+        "caution": "The day-and-thousand-years comparison answers the charge of delay; it supplies no calendar formula. The hastening language does not explain a mechanism by which readers can schedule the end.",
+        "refs": ["3:4", "3:8", "3:9", "3:12", "3:13", "3:14", "3:15"],
+        "sourceIds": ["greek-2pe", "hosted-web", "hosted-editions", "usccb-2pe3"]
+      }
+    ],
+    "examplesHeading": "Four phrases to notice beneath the English",
+    "examples": [
+      {
+        "ref": "1:5",
+        "form": "ἐπιχορηγήσατε — epichorēgēsate",
+        "meaning": "supply",
+        "why": "The command launches the linked qualities. The same verb returns in passive form at 1:11, where entrance into the kingdom is richly supplied.",
+        "sourceIds": ["greek-2pe", "hosted-web"]
+      },
+      {
+        "ref": "1:13",
+        "form": "σκηνώματι — skēnōmati, from skēnōma",
+        "meaning": "tent or dwelling",
+        "why": "The next verse speaks of putting this tent off. In context the image concerns bodily life and death; older English tabernacle need not mean a worship building.",
+        "sourceIds": ["greek-2pe", "hosted-web", "hosted-editions", "usccb-2pe1"]
+      },
+      {
+        "ref": "2:4",
+        "form": "ταρταρώσας — tartarōsas",
+        "meaning": "having cast into Tartarus",
+        "why": "WEB preserves Tartarus where King James uses hell. USCCB notes the word's background in Greek mythology; its use here does not import a complete account of that mythological world.",
+        "sourceIds": ["greek-2pe", "hosted-web", "hosted-editions", "usccb-2pe2"]
+      },
+      {
+        "ref": "3:12",
+        "form": "σπεύδοντας — speudontas",
+        "meaning": "hastening; also rendered eagerly desiring",
+        "why": "WEB chooses the language of eager desire, while King James and Douay–Rheims use hastening. Either way, the phrase belongs to the appeal for holy living while awaiting God's day.",
+        "sourceIds": ["greek-2pe", "hosted-web", "hosted-editions", "usccb-2pe3"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Exhortation framed as a letter and farewell reminder",
+    "how": "Follow the movement from divine gifts to growth, from warning to remembered examples, and from a question about the future to conduct in the present. The farewell in chapter 1 explains why remembering matters, while the final appeal returns to growth and stability."
+  },
+  "cast": [
+    {
+      "name": "The speaker named Peter",
+      "who": "The writing presents him as an apostle, an eyewitness of Jesus' majesty, and someone preparing his readers for his departure."
+    },
+    {
+      "name": "The addressed believers",
+      "who": "Readers urged to develop their shared faith, remember what they know, and resist error. Their location is unspecified."
+    },
+    {
+      "name": "The teachers and scoffers",
+      "who": "People portrayed as exploiting others, promising a freedom they do not possess, and challenging the promised coming. The letter gives the writer's accusations rather than their own account."
+    },
+    {
+      "name": "Jesus Christ",
+      "who": "Named as Lord and Savior, recalled in the testimony about the holy mountain, and central to the hope and knowledge the letter urges."
+    },
+    {
+      "name": "Noah, Lot, and Balaam",
+      "who": "Figures recalled in chapter 2 as examples of rescue or wrongdoing; they are not contemporaries in the letter's dispute."
+    },
+    {
+      "name": "Paul",
+      "who": "Described as a beloved brother whose letters contain wisdom and difficult passages that can be distorted."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Gifts, growth, and reliable witness",
+      "chapters": "1",
+      "precise": "1:1–21",
+      "note": "Greeting (1–2), divine provision and virtue (3–11), reminder before departure (12–15), and the eyewitness claim and prophetic word (16–21)."
+    },
+    {
+      "heading": "Destructive teaching and remembered judgment",
+      "chapters": "2",
+      "precise": "2:1–22",
+      "note": "Warning (1–3), judgment alongside rescue (4–9), accusations and Balaam (10–16), and empty promises followed by relapse (17–22)."
+    },
+    {
+      "heading": "The promised day and the life of waiting",
+      "chapters": "3",
+      "precise": "3:1–18",
+      "note": "Reminder (1–2), the scoffers' question and response (3–10), holy living and renewed creation (11–13), and diligence, Paul, and final growth (14–18)."
+    }
+  ],
+  "purpose": "The writing seeks growth and steadfastness through remembered testimony and divine promises. It warns against teaching the author considers destructive and makes hope for the future a reason for patient, holy conduct now.",
+  "snags": [
+    {
+      "snag": "What does sharing in the divine nature mean?",
+      "help": "Read 1:4 with God's promises, escape from corruption, and the qualities in 1:5–7. The phrase has a rich later theological history, but this immediate context should come before any detailed account of how human beings participate in God's life."
+    },
+    {
+      "snag": "Does private interpretation forbid individual reading?",
+      "help": "Read 1:20 together with 1:21 and the contrast with invented stories in 1:16. NET emphasizes the divine origin of prophecy; USCCB also places the passage against the challenge of false teaching. The disputed phrase should not bear an entire theory of biblical interpretation by itself."
+    },
+    {
+      "snag": "Is chapter 2 only a catalogue of punishments?",
+      "help": "Keep reading the long argument from 2:4 through 2:9. Noah and Lot are rescued within the remembered judgments; the conclusion speaks of deliverance for the godly as well as judgment for the unrighteous."
+    },
+    {
+      "snag": "Why does so much sound like Jude?",
+      "help": "Both writings invoke rebellious angels, Sodom and Gomorrah, Balaam, destructive speech, and failed water imagery. Many scholars, as summarized by USCCB's Jude introduction, judge that 2 Peter adapted Jude. That is an inference about literary history; neither writing identifies the other as its source."
+    },
+    {
+      "snag": "Can a thousand years be used to calculate the date of the coming?",
+      "help": "In 3:8 the comparison runs in both directions, and 3:9 explains the apparent delay through patience and repentance. Read it as an answer to the scoffers rather than a timetable conversion rule."
+    },
+    {
+      "snag": "Why does the Greek comparison differ from the English at 3:10?",
+      "help": "The editions reflect different readings. WEB describes the earth and its works as burned up; SBLGNT has will be found, understood by some translators as exposure. Keep that difference visible while following the shared question in 3:11 about how people should live."
+    },
+    {
+      "snag": "Does the mention of Paul's letters establish a complete New Testament collection?",
+      "help": "Second Peter 3:15–16 associates Paul's writings with other Scriptures and warns about distortion. It does not list the letters in view or define a complete, closed collection of New Testament books."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Does the apostle Peter himself stand behind this writing?",
+      "settled": "The address names Peter, and the speaker claims eyewitness experience and anticipates death. Those are the writing's own claims.",
+      "positions": [
+        {
+          "view": "Petrine authorship",
+          "grounds": "This reading accepts the named author. The NET note at 3:15 argues that the familiar reference to Paul as a brother complicates an automatic late date based on Paul's letters being called Scripture."
+        },
+        {
+          "view": "A later author writing in Peter's name",
+          "grounds": "USCCB summarizes the widespread critical judgment that style, literary relationships, and the circumstances reflected in chapter 3 point to a later setting. The weight assigned to these arguments affects the proposed date."
+        }
+      ],
+      "soWhat": "Distinguish the letter's authoritative voice from conclusions about its historical composition. Neither a single pronoun nor the mention of Paul's letters resolves the question alone."
+    },
+    {
+      "question": "How precisely can the connection with Jude be reconstructed?",
+      "settled": "The writings share numerous examples and images, with clear differences in selection and development.",
+      "positions": [
+        {
+          "view": "Second Peter adapts Jude",
+          "grounds": "This common scholarly proposal explains the extensive parallels as literary borrowing. USCCB's Jude introduction favors Jude's priority."
+        },
+        {
+          "view": "Leave the exact route of transmission open",
+          "grounds": "The parallels themselves do not state their direction. A different sequence or shared traditions remains a possibility to assess, rather than a conclusion the wording alone rules out."
+        }
+      ],
+      "soWhat": "Compare what each writing actually does with its examples. Second Peter's lack of Jude's explicit Enoch quotation does not by itself establish a policy of removing material considered noncanonical."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible: 2 Peter",
+      "says": "The complete English argument, named figures, verse divisions, and measured word count.",
+      "href": "/scriptures/text/web/2PE.json"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "Hosted King James and Douay–Rheims texts of 2 Peter",
+      "says": "Comparison of tent and departure language, Tartarus, and readings or renderings in chapter 3. English agreement alone does not establish a manuscript history."
+    },
+    {
+      "id": "hosted-jude",
+      "label": "World English Bible: Jude",
+      "says": "Direct comparison of the examples and images shared with 2 Peter, and of material each writing includes or omits.",
+      "href": "/scriptures/text/web/JUD.json"
+    },
+    {
+      "id": "greek-2pe",
+      "label": "MorphGNT / SBL Greek New Testament: 2 Peter",
+      "says": "Greek forms, morphology, repeated wording, and readings in the modern edited text available for comparison here.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/82-2Pe-morphgnt.txt"
+    },
+    {
+      "id": "usccb-2pe-intro",
+      "label": "USCCB: Introduction to 2 Peter",
+      "says": "The authorship debate, later dating proposals, and the uncertainty about the readers' identity.",
+      "url": "https://bible.usccb.org/bible/2peter/0"
+    },
+    {
+      "id": "usccb-2pe1",
+      "label": "USCCB: 2 Peter 1 and notes",
+      "says": "The linked qualities, the tent image, and the context of the discussion of prophecy.",
+      "url": "https://bible.usccb.org/bible/2peter/1"
+    },
+    {
+      "id": "usccb-2pe2",
+      "label": "USCCB: 2 Peter 2 and notes",
+      "says": "Tartarus terminology and the chains-or-pits reading difference, alongside judgment and rescue in the argument.",
+      "url": "https://bible.usccb.org/bible/2peter/2"
+    },
+    {
+      "id": "usccb-2pe3",
+      "label": "USCCB: 2 Peter 3 and notes",
+      "says": "The textual difficulty at 3:10 and the hastening or eager-desire interpretation at 3:12.",
+      "url": "https://bible.usccb.org/bible/2peter/3"
+    },
+    {
+      "id": "usccb-jude-intro",
+      "label": "USCCB: Introduction to Jude",
+      "says": "The common scholarly proposal that Jude preceded 2 Peter and supplied material adapted by it.",
+      "url": "https://bible.usccb.org/bible/jude/0"
+    },
+    {
+      "id": "net-2pe",
+      "label": "NET Bible: 2 Peter and translator notes",
+      "says": "Interpretive discussion of 1:20–21, textual discussion of 3:10, and an argument about authorship at 3:15. These notes present judgments that readers can distinguish from the wording of the letter.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/2pe.pdf"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Trace knowledge alongside conduct. Notice how the opening blessing, the qualities to cultivate, and the final instruction to grow belong together.",
+      "refs": ["1:2", "1:5", "1:8", "3:18"]
+    },
+    {
+      "tip": "Read the entire conditional argument about angels, Noah, and Lot before summarizing its point. Its conclusion holds rescue and judgment together.",
+      "refs": ["2:4", "2:5", "2:6", "2:7", "2:8", "2:9"]
+    },
+    {
+      "tip": "Follow the scoffers' question through the answer about patience to the ethical question and the appeal for peace. Hope is meant to shape a life.",
+      "refs": ["3:4", "3:9", "3:11", "3:14"]
+    },
+    {
+      "tip": "Read accusations as the writer's claims, and separate the remembered figures from the people he addresses or warns against.",
+      "refs": ["2:1", "2:3", "2:15", "2:19"]
+    }
+  ],
+  "next": "Read Jude beside chapter 2 to compare the shared images and the different uses made of them. Then read 1 Peter as another writing under Peter's name, leaving the precise relationship between their circumstances open.",
+  "traditionNote": "Second Peter is a New Testament letter whose attribution was debated in the early church and remains a subject of scholarship. Its literary voice, historical authorship, and later reception are related questions that should be kept distinct."
+}

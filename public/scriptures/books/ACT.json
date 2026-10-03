@@ -1,0 +1,295 @@
+{
+  "book": "ACT",
+  "bookName": "Acts",
+  "oneLine": "The second volume of Luke–Acts: the risen Jesus continues his work through the Holy Spirit as a Jewish witness movement crosses languages, peoples, and imperial space from Jerusalem toward Rome.",
+  "orient": "Acts is not a complete biography of every apostle or an uncomplicated blueprint for church life. It follows selected witnesses — first Peter and the Jerusalem community, then Stephen, Philip, Barnabas, and especially Paul — because their stories trace the word's movement across boundaries. Acts 1:8 supplies the program: Spirit-given power for witness in Jerusalem, Judea and Samaria, and to the earth's end. Repeated speeches interpret that movement through Israel's Scriptures; repeated conflicts show how difficult inclusion becomes; repeated summaries insist that neither prison, persecution, internal failure, magic, money, riot, storm, nor Rome can imprison the word.",
+  "whereYouAre": "The story begins among Jewish disciples praying in Jerusalem under Roman rule and ends with a Jewish prisoner teaching openly in the imperial capital. Between those points lie the temple, synagogues, households, roads, ports, courts, prisons, workshops, marketplaces, philosophical debate, civic assemblies, and a dangerous Mediterranean voyage. Aramaic and Hebrew belong to Jerusalem and scriptural memory; Greek connects diaspora synagogues, eastern Mediterranean cities, administration, and Luke's readers; Latin titles and citizenship mark Roman power; local languages surface in Lycaonia and at Pentecost. The movement remains internally Jewish while Samaritans and Gentiles enter it, and the arguments over table fellowship, circumcision, Torah, worship, and identity cannot be reduced to ‘Christianity versus Judaism.’",
+  "facts": {
+    "writtenBy": "Anonymous inside the work. Acts 1:1 addresses Theophilus and refers to the author's ‘first book,’ linking it directly to Luke. Late-second-century witnesses such as Irenaeus and the Muratorian Fragment identify the author as Luke, Paul's companion. The first-person-plural ‘we’ travel sections have often supported that tradition, but their literary and historical significance remains debated.",
+    "writtenWhen": "Acts is commonly dated with or shortly after Luke, often around AD 80–90. Dates in the 60s appeal to the ending before Paul's death; dates in the later first or early second century appeal to literary development, historical distance, and possible relationships to other texts. The ending tells where the narrative stops, not when the book was published.",
+    "writtenFor": "The named recipient is Theophilus, also addressed in Luke. The wider audience knows Israel's Greek Scriptures, needs assurance that Gentile inclusion belongs to God's purpose, and must learn how a marginal translocal movement relates to Jewish origins, civic order, and Roman power.",
+    "place": "Unknown. The narrative's detailed eastern Mediterranean geography and final focus on Rome do not locate the writing desk. Proposals include Rome, Achaia, Asia Minor, and Syria.",
+    "covers": "From the ascension and replacement of Judas through Pentecost, Jerusalem mission, persecution, Samaria, the Gentile breakthrough, Antioch, Paul's missions, the Jerusalem decision, arrest and hearings, shipwreck, and two years of unhindered witness in Rome.",
+    "size": "28 chapters, 1,007 numbered WEB verses, and about 23,100 English words in the edition hosted here. Several traditional verse numbers are blank because the WEB's base text omits later or disputed expansions."
+  },
+  "language": {
+    "writtenIn": "Educated Koine Greek continuous with Luke's Gospel. The narrator can move from scriptural cadence and public proclamation to legal defense, urban debate, administrative correspondence, and precise voyage vocabulary. The surviving work is a Greek composition even when it narrates speech in Aramaic, Hebrew, Latin-governed settings, or local languages.",
+    "register": "Acts alternates fast episodic narration with long speeches that occupy a substantial share of the book. Peter, Stephen, James, and Paul sound enough like Luke's narrative world to show authorial shaping, yet their addresses adapt to synagogue hearers, a Gentile household, Lycaonian villagers, Athenian philosophers, Jerusalem crowds, governors, a king, and frightened sailors. Scriptural quotations normally follow Greek Septuagintal forms, sometimes creating wording unlike familiar Hebrew-based English Old Testaments.",
+    "spokenWorld": "Jerusalem's ordinary speech included Aramaic, while Hebrew remained active in Scripture and learned or identity-marking use. Greek served many Judeans, diaspora Jews, urban populations, commerce, literature, and government across the eastern empire. Latin appears behind Roman names, military ranks, law, and citizenship. Acts explicitly names a Lycaonian outcry and Pentecost's many native dialects, then renders nearly everything for readers in Greek.",
+    "readerSignal": "Theophilus is expected to follow geography, public institutions, Scripture arguments, and shifts in rhetorical situation. Luke translates Akeldama and Tabitha, explains some titles and customs, and lets Paul switch from Greek to ‘the Hebrew dialect.’ Those explanations mark a cross-cultural readership without making Israel merely a discarded prologue to a Gentile church.",
+    "englishLayer": "This site displays the World English Bible beside an SBLGNT/MorphGNT Greek layer. English often turns one Greek word family into several phrases — witness, testify, solemnly testify; boldness, openly, boldly — and cannot reproduce every title, case relation, or scriptural echo. The WEB leaves 8:37 and 15:34 blank but includes longer material at 24:6–8 and 28:29. Those visible seams belong to Acts' unusually complex transmission history, not missing content caused by the reader.",
+    "textualHistory": [
+      {
+        "label": "Luke's second volume composed as Greek narrative",
+        "language": "Koine Greek shaped by the Septuagint, public rhetoric, travel narrative, and administrative settings",
+        "role": "composition",
+        "description": "Acts 1 resumes the ending of Luke and retells the ascension to create narrative continuity. The work arranges scenes, speeches, summaries, parallel careers, and geographical transitions into a theological history of witness rather than a diary or exhaustive apostolic archive.",
+        "sourceIds": ["usccb-acts", "secondary-prefaces", "genre-luke-acts", "keener-intro", "original-sblgnt"]
+      },
+      {
+        "label": "Acts circulated in strikingly different Greek and versional forms",
+        "language": "Greek manuscripts, Latin and Coptic witnesses, and other ancient translations",
+        "role": "section",
+        "description": "Third-century P45 preserves fragments and P74 preserves much of Acts in a later papyrus; fourth-century Sinaiticus carries a comparatively shorter form. The Greek–Latin Codex Bezae preserves a so-called Western form roughly eight percent longer, with additions, omissions, and rewritings distributed across the book. Scholars debate whether these readings reflect authorial revision, early expansion, marginal annotation, or several transmission processes.",
+        "sourceIds": ["p45", "p74", "sinaiticus", "bezae-cambridge", "hixson-bezae", "strange-text"]
+      },
+      {
+        "label": "The critical Greek and modern English layers on this site",
+        "language": "SBL Greek New Testament with MorphGNT data; World English Bible",
+        "role": "translation",
+        "description": "The word inspector exposes a modern critical Greek edition and morphology; the reader displays the WEB. Neither reproduces every line of Codex Bezae or the Textus Receptus. Verse-number gaps and footnote-worthy longer readings preserve the history of comparison between editions rather than proving that one community secretly removed Acts' theology.",
+        "sourceIds": ["original-sblgnt", "hosted-web", "usccb-acts8", "bezae-cambridge"]
+      }
+    ],
+    "features": [
+      {
+        "title": "πνεῦμα (pneuma): the Spirit is a speaking, sending actor",
+        "original": "πνεῦμα — pneuma — ‘spirit, breath, wind’",
+        "explanation": "The lemma occurs 70 times in the hosted Greek corpus; not every instance denotes the Holy Spirit, but the concentration is programmatic. The Spirit promises power, fills speakers, interrupts sermons, directs routes, sets apart missionaries, forbids travel, warns of suffering, and appoints overseers. Acts narrates mission as divine initiative before institutional strategy.",
+        "translationNote": "Capitalization in ‘Spirit’ is an English interpretive decision because ancient Greek letterforms do not supply a modern capital-letter theology. Context — ‘Holy,’ divine speech, agency, contrast with other spirits — identifies the referent.",
+        "caution": "Acts does not reduce the Spirit to dramatic manifestations. Wisdom, truthful community, endurance, discernment, ordinary guidance, and public witness also belong to Spirit-filled life; no single reception sequence becomes a complete formula for every chapter.",
+        "refs": ["1:2", "1:8", "2:4", "4:31", "8:29", "10:44", "13:2", "16:6", "20:23", "20:28"],
+        "sourceIds": ["usccb-acts", "usccb-acts2", "usccb-acts8", "usccb-acts10", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "The witness family turns testimony into the plot",
+        "original": "μάρτυς / μαρτυρέω / διαμαρτύρομαι — martys / martyreō / diamartyromai — ‘witness / testify / solemnly testify’",
+        "explanation": "Acts uses martys 13 times, martyreō 11 times, and diamartyromai 9 times in the hosted Greek data. Witness begins with testimony to Jesus's resurrection and expands through public preaching, courtroom defense, lived character, and suffering. The same vocabulary can carry legal, historical, and personal force.",
+        "translationNote": "The English word ‘martyr’ descends from martys, but in Acts the Greek word still normally means witness. Stephen can later be called Jesus's martys after his death, showing how costly testimony helped the term acquire its later specialized sense.",
+        "caution": "A witness is not licensed to exaggerate. Acts joins Spirit-given courage to what has been seen, received, and interpreted; suffering may result from testimony but is not pursued as proof of sincerity.",
+        "refs": ["1:8", "1:22", "2:32", "5:32", "10:39", "13:31", "20:21", "22:15", "22:20", "26:16"],
+        "sourceIds": ["usccb-acts", "holladay-kerygma", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "παρρησία (parrēsia): ‘boldness’ means free public speech",
+        "original": "παρρησία / παρρησιάζομαι — parrēsia / parrēsiazomai — ‘frankness, openness / speak freely or boldly’",
+        "explanation": "The noun and verb appear twelve times together in the local Greek text. Authorities recognize Peter and John's parrēsia; the community prays for it; Barnabas reports Saul's bold speech; Paul uses it in synagogues; and Acts ends with him teaching in Rome ‘with all boldness’ and without hindrance.",
+        "translationNote": "‘Boldness’ can sound like personality, volume, or aggression. Parrēsia carries the civic sense of open, unhidden, unrestrained speech — a freedom enacted under pressure rather than a license to bully.",
+        "caution": "The word never makes every tactic wise or every confident claim true. Acts pairs boldness with prayer, signs of service, reasoning, patient endurance, and accountability to the message.",
+        "refs": ["4:13", "4:29", "4:31", "9:27", "13:46", "14:3", "19:8", "26:26", "28:31"],
+        "sourceIds": ["holladay-kerygma", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "‘The word grew’ makes proclamation a narrative character",
+        "original": "ὁ λόγος τοῦ θεοῦ ηὔξανεν — ho logos tou theou ēuxanen — ‘the word of God was growing’",
+        "explanation": "At structural seams Luke reports that the word grows, multiplies, spreads, or prevails. The phrasing transfers biological and military momentum to a message: leaders are jailed or killed and missions change hands, yet the word itself keeps crossing the map.",
+        "translationNote": "English readers may hear ‘the Word’ as a title for Jesus from John. In these Acts summaries logos usually means the proclaimed message, though that message is inseparable from Jesus.",
+        "caution": "Growth is not a simple attendance metric. Acts also measures faithfulness through shared care, costly correction, cross-cultural inclusion, endurance, and truthful witness; numerical success alone can accompany manipulation elsewhere in the book.",
+        "refs": ["6:7", "12:24", "13:49", "19:20"],
+        "sourceIds": ["usccb-acts", "holladay-kerygma", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "ἡ ὁδός (hē hodos): believers belong to ‘the Way’",
+        "original": "ἡ ὁδός — hē hodos — ‘the way, road, manner of life’",
+        "explanation": "Six passages use ‘the Way’ as a recognizable designation for the Jesus movement, beginning with Saul's pursuit of its members and continuing through public disputes and Paul's defense. A common road word becomes an identity flexible enough to mean teaching, community, practice, and pilgrimage.",
+        "translationNote": "Capitalizing ‘Way’ is editorial; Greek articles do not function like English brand capitalization. The surrounding references to belonging, persecution, instruction, and controversy show when the phrase acts as a group name.",
+        "caution": "Acts also uses hodos for literal roads and metaphorical divine ways. Frequency counts must distinguish the title-like phrase from ordinary travel vocabulary.",
+        "refs": ["9:2", "19:9", "19:23", "22:4", "24:14", "24:22"],
+        "sourceIds": ["original-sblgnt", "hosted-web"]
+      },
+      {
+        "title": "The speeches repeat one message without sounding identical",
+        "original": "λαλεῖν τὸν λόγον — lalein ton logon — ‘to speak the word’",
+        "explanation": "Peter begins from Joel and David in Jerusalem, Stephen retells Israel's history, Paul starts with creation among Lycaonians, quotes poets in Athens, and narrates his calling before Jewish crowds and Roman rulers. Shared Lukan vocabulary and recurring claims show literary composition; audience-specific openings and arguments make rhetoric part of the meaning.",
+        "translationNote": "Quotation marks can make modern readers imagine transcripts. Ancient historians conventionally composed speeches appropriate to speaker, occasion, and remembered substance, and Acts never explains its note-taking process.",
+        "caution": "Calling the speeches shaped does not make them invented, and calling Acts historical does not make them recordings. Historical memory, source tradition, theological interpretation, and authorial rhetoric must be assessed together.",
+        "refs": ["2:14", "7:2", "10:34", "13:16", "14:15", "17:22", "22:1", "26:2"],
+        "sourceIds": ["keener-intro", "holladay-kerygma", "genre-luke-acts", "usccb-acts", "original-sblgnt"]
+      },
+      {
+        "title": "Geography carries theology from Jerusalem toward the earth's end",
+        "original": "ἕως ἐσχάτου τῆς γῆς — heōs eschatou tēs gēs — ‘to the end of the earth’",
+        "explanation": "Acts 1:8 maps Jerusalem, Judea, Samaria, and the earth's end. Persecution disperses witnesses, Antioch sends them, the Jerusalem decision protects Gentile inclusion, and Paul says he ‘must also see Rome.’ The final city is a strategic imperial horizon, while the unfinished phrase keeps the mission larger than Rome.",
+        "translationNote": "‘End’ can mean farthest limit, not the destruction of the planet. The singular phrase echoes Isaiah's servant mission in the Greek Scriptures and reorganizes the reader's world around witness flowing out from Jerusalem.",
+        "caution": "Rome is not explicitly equated with the earth's end, and the route is not a triumphalist replacement of Israel. Jerusalem remains origin, scriptural center, contested home, and object of continuing concern.",
+        "refs": ["1:8", "8:1", "11:19", "13:47", "15:14", "19:21", "23:11", "28:14"],
+        "sourceIds": ["smit-earth", "usccb-acts", "original-sblgnt", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Greek, Semitic, and civic expressions that reveal Acts' multilingual world",
+    "examples": [
+      {
+        "ref": "1:8",
+        "form": "ἕως ἐσχάτου τῆς γῆς — heōs eschatou tēs gēs",
+        "meaning": "‘to the farthest limit of the earth’",
+        "why": "The Isaiah-shaped phrase is a mission horizon, not a hidden code naming one final city. Jerusalem becomes the narrative center from which the message moves toward every periphery.",
+        "sourceIds": ["smit-earth", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "2:6",
+        "form": "γλώσσαις … διαλέκτῳ — glōssais … dialektō",
+        "meaning": "‘tongues/languages … native dialect’",
+        "why": "Luke uses glōssa for the Spirit-enabled speech and dialektos for what each hearer recognizes as native. The scene stresses intelligible multilingual praise here, even though later Christian traditions debate its relation to other kinds of tongues speech.",
+        "sourceIds": ["usccb-acts2", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "6:1",
+        "form": "Ἑλληνισταί … Ἑβραῖοι — Hellēnistai … Hebraioi",
+        "meaning": "Greek-speaking or Greek-cultured Jews … Hebrew/Aramaic-speaking Jews",
+        "why": "Both groups belong to the Jerusalem Jesus movement; the conflict is internal and concerns neglected widows. Translating them simply as Greeks and Hebrews can make a linguistic-cultural fault line look like Gentiles versus Jews.",
+        "sourceIds": ["usccb-acts6", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "9:36",
+        "form": "Ταβιθά … Δορκάς — Tabitha … Dorkas",
+        "meaning": "Aramaic and Greek names both meaning ‘gazelle’",
+        "why": "Luke translates the disciple's Semitic name for Greek readers. Her two names and the widows displaying her work locate multilingual mediation inside an ordinary community of material care.",
+        "sourceIds": ["original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "13:1",
+        "form": "Συμεὼν … Νίγερ — Symeōn … Niger",
+        "meaning": "Simeon called by the Latin surname ‘Niger,’ meaning black",
+        "why": "The Antioch leadership list mixes Semitic, Greek, and Latin naming worlds. The surname may concern complexion, ancestry, or another distinguishing feature, but the text does not supply a modern racial biography.",
+        "sourceIds": ["original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "17:22",
+        "form": "δεισιδαιμονεστέρους — deisidaimonesterous",
+        "meaning": "‘very religious’ or ‘rather superstitious’",
+        "why": "The comparative adjective can sound respectful or critical. Paul opens with diplomatic ambiguity, then challenges Athenian worship; translations that choose only praise or insult settle the rhetoric too early.",
+        "sourceIds": ["usccb-acts17", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "21:40",
+        "form": "τῇ Ἑβραΐδι διαλέκτῳ — tē Hebraidi dialektō",
+        "meaning": "‘in the Hebrew dialect/language,’ often understood here as Aramaic",
+        "why": "Ancient usage can label the Jewish Semitic language ‘Hebrew’ even when scholars infer Aramaic; others defend actual Hebrew. Luke first shows Paul speaking Greek to the commander, then switching linguistic register to address the Jerusalem crowd.",
+        "sourceIds": ["usccb-acts21", "original-sblgnt", "hosted-web"]
+      },
+      {
+        "ref": "28:31",
+        "form": "μετὰ πάσης παρρησίας ἀκωλύτως — meta pasēs parrēsias akōlytōs",
+        "meaning": "‘with all boldness, unhindered’",
+        "why": "Akōlytōs is the book's final word. Paul is chained and the narrative remains unresolved, yet the message is grammatically unchained; Acts ends by opening the mission beyond its last page.",
+        "sourceIds": ["usccb-acts28", "holladay-kerygma", "original-sblgnt", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Second volume of Luke–Acts; Scripture-shaped ancient historical narrative with collected lives, speeches, travel, and trial scenes",
+    "how": "Read Acts as a selective account of beginnings that argues through sequence. Parallel scenes connect Jesus, Peter, Stephen, Philip, and Paul; speeches interpret events; summary refrains mark expansion; geographic hinges turn the plot; trials convert accusation into testimony. It intends to speak about events and witnesses while arranging them theologically. It is neither a modern institutional minutes book nor fiction merely because its history is crafted."
+  },
+  "cast": [
+    {"name": "The Holy Spirit", "who": "Promise, gift, divine presence, speaker, sender, route-director, truth-exposer, boundary-crosser, and source of public witness."},
+    {"name": "Peter and the Twelve", "who": "Jerusalem witnesses who preach resurrection, heal, confront authorities, fail and learn across boundaries, receive Cornelius, and help discern Gentile inclusion."},
+    {"name": "Stephen and Philip", "who": "Greek-speaking Jewish leaders whose service expands into scriptural witness, martyrdom, Samaritan mission, and the baptism of an Ethiopian official."},
+    {"name": "Barnabas", "who": "Generous Joseph renamed ‘son of encouragement,’ trusted bridge-builder, advocate for Saul, Antioch emissary and missionary, later divided from Paul over Mark."},
+    {"name": "Paul / Saul", "who": "Diaspora Jew, Pharisee, persecutor turned commissioned witness, synagogue reasoner, Gentile apostle, worker, prisoner, Roman citizen, and central figure from chapter 13 onward."},
+    {"name": "Women witnesses, patrons, workers, and household leaders", "who": "Mary, Sapphira, neglected widows, Tabitha, Rhoda, Mary mother of Mark, Lydia, Damaris, Priscilla, Philip's prophetic daughters, and others shape communities despite uneven narrative attention."},
+    {"name": "James and the Jerusalem elders", "who": "Leaders of a Torah-observant Jewish Jesus movement who weigh Gentile inclusion, communal peace, and reports about Paul's relation to Moses."},
+    {"name": "Cornelius, the Ethiopian official, Lydia, the jailer, and other boundary figures", "who": "Households and individuals through whom God repeatedly outruns the witnesses' assumptions about who may receive the word and Spirit."},
+    {"name": "Roman officials and civic authorities", "who": "Herods, magistrates, commanders, governors, soldiers, and Caesar's system alternately kill, exploit, rescue, delay, protect, and confine; Acts neither calls empire innocent nor depicts every official identically."},
+    {"name": "Jewish crowds, synagogue communities, and Jesus-believing Jews", "who": "Diverse, overlapping groups who believe, debate, resist, protect tradition, suffer, lead, and remain central. ‘The Jews’ must be resolved scene by scene, never turned into collective blame."}
+  ],
+  "shape": [
+    {"chapters": "1", "heading": "Promise, ascension, and restored witness circle", "note": "Jesus promises Spirit power and worldwide witness, ascends, and the prayerful Jerusalem group replaces Judas."},
+    {"chapters": "2–5", "heading": "Spirit-created witness in Jerusalem", "note": "Pentecost, public speeches, temple healing, opposition, bold prayer, shared goods, internal judgment, signs, and testimony before authorities."},
+    {"chapters": "6–9", "heading": "Internal strain, Stephen, scattering, and Saul", "note": "Widows expose a language fault line, Stephen retells Israel's story and is killed, Philip crosses Samaritan and bodily-social boundaries, and Saul is stopped and commissioned."},
+    {"chapters": "10–12", "heading": "Gentile Pentecost, Antioch, and Herodian pressure", "note": "Peter and Cornelius receive coordinated visions, Jerusalem recognizes Gentile repentance, Antioch emerges, Peter escapes, Herod falls, and the word grows."},
+    {"chapters": "13–15", "heading": "Barnabas and Paul sent; Gentile inclusion discerned", "note": "Antioch sends a multilingual leadership team, mission crosses Cyprus and Asia Minor, and Jerusalem refuses to require Gentile circumcision while defining shared table obligations."},
+    {"chapters": "16–20", "heading": "The word enters Macedonia, Achaia, and Asia", "note": "Spirit-directed routes lead to Philippi, Thessalonica, Athens, Corinth, and Ephesus; households, workshops, prisons, philosophical debate, magic, economics, and pastoral farewell reveal the mission's urban texture."},
+    {"chapters": "21–26", "heading": "Jerusalem arrest becomes public testimony", "note": "Paul returns, honors Jewish practice, is falsely accused and rescued by Rome, then retells his hope and calling before crowds, councils, governors, Festus, and Agrippa."},
+    {"chapters": "27–28", "heading": "Through storm and shipwreck to unhindered Rome", "note": "A dangerous voyage turns the prisoner into a life-preserving witness; Malta receives the survivors, and Acts ends with Paul chained but the kingdom proclaimed without hindrance."}
+  ],
+  "purpose": "Acts argues that the worldwide, multiethnic Jesus movement is not an accidental betrayal of Israel's story but the Spirit-directed continuation of what God promised, accomplished in Jesus, and opened from Jerusalem. That claim is tested through resistant witnesses, contested Scripture, changing tables, suffering bodies, public law, and communities that repeatedly need correction. The book's final triumph is not Paul's freedom or Rome's conversion: it is an unhindered word spoken by a prisoner.",
+  "snags": [
+    {"snag": "Acts is not ‘the acts of every apostle,’ and the Holy Spirit is not missing from the title", "help": "The later title describes a recognizable subject, not the author's table of contents. Luke selects Peter and Paul especially because parallel careers carry the geographical and theological plot."},
+    {"snag": "Pentecost is not one language erasing all languages", "help": "The crowd hears God's mighty works in native dialects. The sign honors intelligibility across difference; later tongues scenes are related but not narrated with identical details."},
+    {"snag": "Communal sharing does not authorize coercive confiscation", "help": "Giving is voluntary and directed toward need. Peter tells Ananias the property remained his; the sin is a lethal lie performed for status, though the severity of the judgment remains a genuine hard text."},
+    {"snag": "Stephen's speech and later synagogue conflicts are intra-Jewish arguments", "help": "The speakers, Scriptures, first believers, many opponents, and many converts are Jewish. Anti-Judaism begins when readers transfer these local accusations into guilt for Jews as a people or make Christianity righteous by caricaturing Judaism."},
+    {"snag": "Acts' Spirit receptions do not occur in one fixed order", "help": "Jerusalem, Samaria, Cornelius's household, Saul, and Ephesus differ in hearing, faith, baptism, laying on hands, tongues, and timing. Traditions build coherent theologies from the whole canon, but no one episode contains every step."},
+    {"snag": "Saul was not renamed Paul at conversion", "help": "Acts uses Saul through 13:9, then introduces ‘Saul, who is also called Paul.’ A diaspora Jew could have Semitic and Roman names; the switch suits the narrative's Gentile-facing phase."},
+    {"snag": "The Jerusalem meeting does not say Jewish believers must abandon Torah", "help": "Its question is whether Gentiles must be circumcised and keep Moses to be saved. Acts 21 still portrays thousands of Jewish believers as Torah-zealous and Paul participating in purification."},
+    {"snag": "Paul's three calling accounts differ because they are retellings", "help": "Acts 9 narrates, Acts 22 addresses a Jerusalem crowd, and Acts 26 defends before a king. Details about companions hearing or seeing require semantic and rhetorical comparison, not forced word-for-word identity or instant contradiction."},
+    {"snag": "‘We’ does not settle authorship by itself", "help": "First-person voyage narration may preserve participant memory, a source, an authorial presence, or a literary convention. It is real internal evidence, but the anonymous text never says ‘I am Luke.’"},
+    {"snag": "Roman due process is not Roman innocence", "help": "Officials sometimes protect Paul from mobs and recognize weak charges, but Roman rulers execute James, kill guards, beat citizens, expect bribes, postpone justice, and keep Paul chained."},
+    {"snag": "Acts' ending is open, not accidentally unfinished by definition", "help": "The book says nothing about Paul's verdict or death. Its final adverb ‘unhindered’ completes the word's journey while leaving witness beyond Rome and beyond the page."},
+    {"snag": "Verse gaps and longer readings reflect an unusually fluid text", "help": "Acts 8:37 and 15:34 are absent from the critical base used here; 24:6–8 and 28:29 are present in the WEB though omitted by many critical editions. No single visible seam should be turned into a conspiracy theory."}
+  ],
+  "debates": [
+    {
+      "question": "Did Luke, Paul's companion, write Acts?",
+      "settled": "Acts and Luke explicitly belong together through Theophilus and the ‘first book,’ and ancient attribution consistently names Luke; Acts itself remains anonymous.",
+      "positions": [
+        {"view": "Luke the physician and sometime Pauline companion wrote both volumes", "grounds": "Irenaeus, the Muratorian Fragment, the ‘we’ passages, shared style, travel detail, and Pauline references to Luke are read as converging evidence."},
+        {"view": "An otherwise anonymous educated Christian wrote Luke–Acts", "grounds": "The narrator never self-identifies, the ‘we’ passages permit literary or source explanations, and Acts' portrait sometimes differs from Paul's undisputed letters."},
+        {"view": "A Lukan traveler source or author stands behind a later shaped edition", "grounds": "This retains participant material while explaining compositional stages, literary distance, and Acts' diverse textual history."}
+      ],
+      "soWhat": "Ancient attribution should be stated as evidence, not presented as a signed claim. The work's theological and historical arguments still require evaluation in their transmitted form."
+    },
+    {
+      "question": "When was Acts written?",
+      "settled": "It follows or completes Luke's first volume and narrates events into Paul's Roman custody around the early 60s; the work gives no publication date.",
+      "positions": [
+        {"view": "Early 60s", "grounds": "The narrative ends before Paul's verdict, death, Nero's persecution, and Jerusalem's destruction, which some read as signs of composition near the endpoint."},
+        {"view": "Around 80–90", "grounds": "The common view dates Luke after Mark and Jerusalem's destruction, treats the ending as literary, and allows time for sources and retrospective shaping."},
+        {"view": "Late first or early second century", "grounds": "Some argue from developed institutions, possible literary relationships, reception history, and historiographical distance, though proposed dependencies remain disputed."}
+      ],
+      "soWhat": "Date changes how much retrospective distance readers imagine, but no date makes Acts a camera transcript or makes historical inquiry irrelevant."
+    },
+    {
+      "question": "How historical are Acts' speeches and portraits?",
+      "settled": "Acts intends to narrate public events, named places and officials, remembered witnesses, and the movement's message; it also shapes scenes and speeches into a coherent theological plot.",
+      "positions": [
+        {"view": "Substantially reliable ancient historiography", "grounds": "Local knowledge, voyage detail, titles, legal procedure, named witnesses, and ancient conventions support a serious historical project whose speeches convey remembered substance."},
+        {"view": "Theological history assessed episode by episode", "grounds": "Strong parallels, composed speeches, differences from Paul's letters, chronology questions, and scriptural patterning require differentiated judgments."},
+        {"view": "Primarily an apologetic origins narrative", "grounds": "Literary aims, idealized unity, innocent heroes, and the movement from Jews to Gentiles are treated as more decisive than recoverable event sequence."}
+      ],
+      "soWhat": "The responsible alternative to naïve transcription is not automatic dismissal. Compare genre, sources, rhetoric, archaeology, Paul's letters, and each episode's claims."
+    },
+    {
+      "question": "Why does the text of Acts vary so much?",
+      "settled": "All major forms narrate the same broad movement from Jerusalem to Rome, but Codex Bezae and allied versional evidence contain many distributed differences and a substantially longer text.",
+      "positions": [
+        {"view": "The shorter form is earlier; the Western form expands and clarifies", "grounds": "Many additions smooth transitions, intensify details, or resemble marginal explanations entering the text."},
+        {"view": "Luke issued more than one edition", "grounds": "Coherent alternative readings and widespread early evidence are taken by some as signs of authorial revision rather than random scribal growth."},
+        {"view": "Several early transmission processes produced no single simple family tree", "grounds": "Mixed witnesses, omissions as well as additions, and local variation resist treating every longer reading as one editor's work."}
+      ],
+      "soWhat": "Readers should compare evidence passage by passage. ‘Longer’ is not automatically original or corrupt, and the book's central claims do not rest on one disputed verse."
+    }
+  ],
+  "howToRead": [
+    {"tip": "Keep Luke open. Compare Luke 24:44–53 with Acts 1:1–11, Jesus's Jerusalem journey with Paul's journey toward Rome, and Jesus's hearings with Paul's trials; repetition shows continuation and purposeful parallel.", "refs": ["1:1", "1:2", "1:8", "19:21", "23:11"]},
+    {"tip": "Mark every geographical hinge and word-growth summary. Ask who crosses the next boundary, what resistance appears, and what the narrator calls growth.", "refs": ["6:7", "8:1", "9:31", "12:24", "13:49", "16:5", "19:20"]},
+    {"tip": "Read speeches with their audiences. Compare Peter in Jerusalem, Stephen before the council, Peter at Cornelius's house, Paul in a synagogue, Paul in Athens, and Paul before Agrippa before harmonizing their vocabulary.", "refs": ["2:14", "7:2", "10:34", "13:16", "17:22", "26:2"]},
+    {"tip": "Track who initiates inclusion. Again and again visions, the Spirit, persecution, outsiders' questions, or unexpected reception move hesitant witnesses beyond their plans.", "refs": ["8:26", "8:29", "10:19", "10:44", "11:17", "16:6", "16:9"]},
+    {"tip": "Do not turn every Jewish opponent into ‘the Jews.’ Identify the city, subgroup, leaders, crowd, believers, and diaspora setting; notice how often Jewish people receive, defend, or lead the message.", "refs": ["2:5", "6:7", "13:43", "14:1", "17:11", "18:8", "21:20"]},
+    {"tip": "Compare Acts' Paul with his letters without forcing either to disappear. Shared locations, coworkers, conflicts, and convictions coexist with differences in chronology, emphasis, vocabulary, and self-presentation.", "refs": ["9:15", "15:2", "18:2", "20:24", "22:3", "26:12"]},
+    {"tip": "When doctrine is built from a narrative sequence, compare all the sequences. Spirit reception, baptism, communal goods, leadership appointment, and mission guidance vary across settings.", "refs": ["2:38", "8:16", "9:17", "10:44", "16:15", "19:5", "19:6"]},
+    {"tip": "Read through the final adverb. Paul remains confined, Israel's hope remains under debate, Rome remains Rome, and yet the word is ‘unhindered.’ The ending commissions rather than closes.", "refs": ["28:20", "28:23", "28:28", "28:30", "28:31"]}
+  ],
+  "next": "Return to Luke and read the two volumes as one movement from Jesus's Spirit-anointed ministry to Spirit-empowered witness. Then read Paul's undisputed letters — especially Galatians, 1 Thessalonians, 1–2 Corinthians, Romans, Philippians, and Philemon — beside Acts' mission sequence. Isaiah, Deuteronomy, Psalms, Joel, Amos, and the Elijah–Elisha narratives illuminate Acts' speeches, while Josephus and Roman civic history help test its public setting.",
+  "traditionNote": "Acts' 28 chapters are shared across the Catholic, Orthodox, and Protestant traditions represented here, but editions differ visibly. The hosted WEB leaves 8:37 and 15:34 blank, includes the longer accusers' wording at 24:6–8, and prints 28:29. The much longer D-text represented by Codex Bezae contains hundreds of smaller changes beyond those numbered seams. Modern critical editions weigh each reading separately; inherited liturgical and confessional use may preserve lines that are not printed in the critical main text.",
+  "sources": [
+    {"id":"usccb-acts","label":"USCCB, Introduction to Acts","says":"Surveys Acts as Luke's second volume, Spirit-guided witness from Israel to the nations, the selected roles of Peter and Paul, geographic expansion, and the prominence of Israel in the divine plan.","url":"https://bible.usccb.org/bible/acts/0"},
+    {"id":"usccb-acts1","label":"USCCB, Acts 1 notes","says":"Explains the bridge from Luke, ascension, Spirit promise, restoration question, witness program, Judas traditions, Akeldama, the Twelve, and Matthias.","url":"https://bible.usccb.org/bible/acts/1"},
+    {"id":"usccb-acts2","label":"USCCB, Acts 2 notes","says":"Addresses Pentecost, tongues and native languages, Joel and Psalm citations, Peter's proclamation, baptism, forgiveness, Spirit, and the Jerusalem community summary.","url":"https://bible.usccb.org/bible/acts/2"},
+    {"id":"usccb-acts6","label":"USCCB, Acts 6 notes","says":"Explains Hellenists and Hebrews as groups within the Jewish Christian community, neglected widows, the Seven, Stephen, and the charges concerning temple and law.","url":"https://bible.usccb.org/bible/acts/6"},
+    {"id":"usccb-acts8","label":"USCCB, Acts 8 notes","says":"Covers persecution, Samaria, Simon, varied Spirit reception, the Ethiopian official, the Septuagint quotation, and the early but secondary baptismal confession at 8:37.","url":"https://bible.usccb.org/bible/acts/8"},
+    {"id":"usccb-acts10","label":"USCCB, Acts 10 notes","says":"Covers Cornelius, Peter's vision, God-fearers, food and human inclusion, Peter's Gentile-directed speech, impartiality, witness, Spirit reception, and baptism.","url":"https://bible.usccb.org/bible/acts/10"},
+    {"id":"usccb-acts15","label":"USCCB, Acts 15 notes","says":"Explains the circumcision dispute, Peter and James, Amos in its Greek form, the Gentile decree, textual variation, letter, Judas and Silas, and the Paul–Barnabas division.","url":"https://bible.usccb.org/bible/acts/15"},
+    {"id":"usccb-acts16","label":"USCCB, Acts 16 notes","says":"Provides context for Timothy, Spirit-directed travel, the first ‘we’ passage, Lydia, the exploited divining slave, imprisonment, the jailer, households, and Roman citizenship.","url":"https://bible.usccb.org/bible/acts/16"},
+    {"id":"usccb-acts17","label":"USCCB, Acts 17 notes","says":"Provides context for Thessalonica, Berea, Athens, Epicureans and Stoics, the Areopagus address, the unknown god, Greek poets, repentance, judgment, and resurrection.","url":"https://bible.usccb.org/bible/acts/17"},
+    {"id":"usccb-acts20","label":"USCCB, Acts 20 notes","says":"Covers Eutychus, voyage sequence, the Miletus farewell, elders and overseers, ministry under pressure, textual variation at 20:28, work, and the saying about giving.","url":"https://bible.usccb.org/bible/acts/20"},
+    {"id":"usccb-acts21","label":"USCCB, Acts 21 notes","says":"Explains the ‘we’ voyage, Agabus, Jewish believers zealous for Torah, purification and vow, temple boundary accusation, Roman intervention, the Egyptian, and ‘Hebrew’ likely meaning Aramaic.","url":"https://bible.usccb.org/bible/acts/21"},
+    {"id":"usccb-acts24","label":"USCCB, Acts 24 notes","says":"Provides context for Tertullus's prosecution, the Nazorean ‘sect,’ Paul's Way and resurrection defense, Felix and Drusilla, justice and self-control, bribery, delay, and longer textual material.","url":"https://bible.usccb.org/bible/acts/24"},
+    {"id":"usccb-acts28","label":"USCCB, Acts 28 notes","says":"Covers Malta, non-Greek-speaking islanders, Paul in Rome, Jewish leaders, Israel's hope, Isaiah, Gentile hearing, and the deliberately open ending.","url":"https://bible.usccb.org/bible/acts/28"},
+    {"id":"oxford-acts","label":"Oxford Bibliographies, ‘Acts of the Apostles’","says":"Frames Acts as the anonymous second work of Luke's author and surveys disputed questions of authorship, date, genre, historical value, theology, literary structure, speeches, and relation to Paul.","url":"https://academic.oup.com/reference/62341/reference-article-abstract/554106063"},
+    {"id":"keener-intro","label":"Craig S. Keener, Introduction to Acts (New Cambridge Bible Commentary)","says":"Treats Acts as ancient historical monograph and surveys historical setting, speeches, miracles, date, authorship, audience, purposes, theology, unity with Luke, and comparison with Paul.","url":"https://doi.org/10.1017/9781108678377.001"},
+    {"id":"holladay-kerygma","label":"Carl R. Holladay, ‘Acts as Kerygma: λαλεῖν τὸν λόγον’ (New Testament Studies)","says":"Analyzes Acts' proclamation vocabulary, speeches, narrative voice, and repeated ‘word of God/Lord’ expressions as converging evidence of its literary purpose.","url":"https://doi.org/10.1017/S0028688516000412"},
+    {"id":"genre-luke-acts","label":"Daniel L. Smith and Zachary L. Kostopoulos, ‘Biography, History and the Genre of Luke-Acts’","says":"Argues that Luke–Acts is a unified narrative influenced by several kinds of Greek prose rather than a work that must fit one rigid ancient genre label.","url":"https://doi.org/10.1017/S0028688517000066"},
+    {"id":"smit-earth","label":"Peter-Ben Smit, ‘Negotiating a New World View in Acts 1.8?’","says":"Studies ‘to the end of the earth’ through Greco-Roman geography and argues that it re-centers the world on Jerusalem without naming one simple endpoint.","url":"https://doi.org/10.1017/S0028688516000370"},
+    {"id":"secondary-prefaces","label":"Sean A. Adams, ‘Secondary Prefaces and the Composition of Luke-Acts’ (New Testament Studies)","says":"Analyzes Acts 1 as a secondary preface that summarizes the former volume and retells Luke's ending to produce continuous narrative, while reopening questions about composition sequence and date.","url":"https://doi.org/10.1017/S0028688524000328"},
+    {"id":"irenaeus","label":"Irenaeus, Against Heresies 3.1.1 and 3.14","says":"Late-second-century testimony identifies Luke as Paul's companion and appeals to the first-person travel passages and other Acts material in support.","url":"https://www.newadvent.org/fathers/0103301.htm"},
+    {"id":"muratorian","label":"The Muratorian Fragment, lines on Luke and Acts","says":"An early canonical list names Luke as physician and Pauline companion, then says the Acts of all apostles were written in one book for Theophilus from events under Luke's own notice.","url":"https://earlychristianwritings.com/text/muratorian-metzger.html"},
+    {"id":"p45","label":"CSNTM digital collection, Papyrus 45","says":"Catalogues and images a third-century fragmentary Greek papyrus containing portions of the Gospels, Acts, and Catholic Epistles.","url":"https://manuscripts.csntm.org/manuscript/Group/GA_P45"},
+    {"id":"p74","label":"CSNTM digital collection, Papyrus 74","says":"Catalogues and images a papyrus preserving extensive portions of Acts and the Catholic Epistles, including text across Acts 4–28.","url":"https://manuscripts.csntm.org/manuscript/Group/GA_P74"},
+    {"id":"sinaiticus","label":"Codex Sinaiticus Project","says":"Provides images and transcription of a fourth-century Greek witness containing Acts within a complete New Testament.","url":"https://www.codexsinaiticus.org/en/manuscript.aspx"},
+    {"id":"bezae-cambridge","label":"Cambridge University Library, Codex Bezae","says":"Presents the digitized fourth- or fifth-century Greek–Latin manuscript whose form of Acts differs significantly and is roughly eight percent longer than the commonly printed critical form.","url":"https://exhibitions.lib.cam.ac.uk/linesofthought/artifacts/codex-bezae/"},
+    {"id":"hixson-bezae","label":"Elijah Hixson, ‘A Lost Page of Codex Bezae’ (New Testament Studies)","says":"Uses high-resolution imaging and manuscript autopsy to recover traces of lost Greek text at Acts 10, illustrating the material complexity of the Bezan witness.","url":"https://doi.org/10.1017/S0028688517000339"},
+    {"id":"strange-text","label":"W. A. Strange, The Problem of the Text of Acts","says":"Examines marginal annotation and other explanations for Western readings, including the early but secondary baptismal confession associated with Acts 8:37.","url":"https://doi.org/10.1017/CBO9780511555107.006"},
+    {"id":"original-sblgnt","label":"SBL Greek New Testament with MorphGNT data hosted on this site","says":"Greek forms, lemmas, morphology, family counts, and verse-level examples were checked against the locally hosted SBLGNT/MorphGNT Acts data.","url":"https://github.com/morphgnt/sblgnt"},
+    {"id":"hosted-web","label":"The World English Bible text on this site","says":"Chapter and verse totals, English word counts, repeated terms, quotations, numbering gaps, and visible longer readings were checked against the hosted edition."}
+  ]
+}

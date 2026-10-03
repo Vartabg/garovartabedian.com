@@ -1,0 +1,85 @@
+{
+  "life": {
+    "title": "彼の人生",
+    "lede": "ベツレヘムから昇天まで、それが起こった地図上で。福音書は日記ではありません — この順序は伝統的な調和に従い、すべてのイベントは独自のテキストに直接リンクしています。",
+    "language": {
+      "label": "ガイドの言語",
+      "scope": "インターフェースと地図案内が変わります。イベント名と聖書本文は英語のままです。"
+    },
+    "era": {
+      "birth": { "name": "誕生と幼少期", "title": "誕生と幼少期" },
+      "preparation": { "name": "洗礼と荒野", "title": "洗礼と荒野" },
+      "galilee": { "name": "ガリラヤの働き", "title": "ガリラヤの働き" },
+      "journey": { "name": "エルサレムへの道", "title": "エルサレムへの道" },
+      "passion": { "name": "受難の週", "title": "受難の週" },
+      "resurrection": { "name": "復活と昇天", "title": "復活と昇天" }
+    },
+    "rail": {
+      "label": "時代別イエスの人生",
+      "shapeOfLife": "人生の形",
+      "summary": "{eventCount} 個のイベント · {placeCount} 個の場所 · {refCount} 個の聖書参考",
+      "eraAriaLabel": "{eraName} 時代：{eventCount} 個のイベント、{refCount} 個の聖書参考"
+    },
+    "map": {
+      "note": "位置は実座標から; 旅は調和に従います。",
+      "noteHover": "イベントをマウスオーバーして地図をハイライト; クリックして福音のテキストを展開。",
+      "noteTap": "イベントをタップしてテキストを展開 — 地図は場所をフォローします。",
+      "placePickerLabel": "地図上の場所を選択",
+      "placePickerOverview": "地図の概要",
+      "keyboardShortcutsTitle": "キーボードショートカット",
+      "keyboardShortcutsText": "Tab キーを押してイベント間を移動。Enter / スペースを押してイベントのテキストを展開。場所選択メニューを使って地図上の場所をハイライトし、現在の立ち寄り先カードを更新します。",
+      "experienceKicker": "中へ入れる地図",
+      "experienceTitle": "この土地を歩く",
+      "experienceText": "見やすい地図帳から始めるか、立体地形に入り、高低差と距離を通して旅をたどります。",
+      "viewLabel": "地図表示",
+      "overview": "地図帳",
+      "terrain": "地形",
+      "modeLabel": "地形操作モード",
+      "storyMode": "物語",
+      "exploreMode": "探索",
+      "wholeRegion": "地域全体",
+      "loadingTerrain": "地形を立ち上げています…",
+      "terrainUnavailable": "地形表示を利用できません。地図帳に戻って続けてください。",
+      "previousStop": "前の旅程地点",
+      "nextStop": "次の旅程地点",
+      "pauseJourney": "旅を一時停止",
+      "playJourney": "旅を開始",
+      "ready": "開始できます",
+      "stopCount": "{total} 地点中 {current} 地点目",
+      "routeBoundary": "線は記録された地点を物語の順に結ぶもので、正確な古代道路を示すものではありません。",
+      "currentStop": "現在の地点",
+      "readEvent": "出来事を読む"
+    },
+    "narrative": {
+      "title": "テキストのみの旅のナレーション",
+      "sectionTitle": "イエスの人生を通じた旅：テキストナレーション",
+      "intro": "スクリーンリーダーユーザーまたはテキストベースのガイドを好む人のために、ここではイエスの人生を通じた時系列の旅があり、各場所の説明、現代の地名、地理的方向が含まれています。",
+      "travel": "旅：前の場所から、{direction} 方向に約 {distance} km（{distanceMiles} マイル）移動します。",
+      "location": "場所：",
+      "modernSite": "現代の場所：",
+      "coordinates": "座標：",
+      "scripture": "聖書：",
+      "geographicOverview": "地理的概要",
+      "geographicOverviewText": "イエスの働きはガリラヤ地方のナザレから北はカエサレア・フィリッピまで、南はサマリア、ヨルダン渓谷を通って、最終的にエルサレムとユダヤ地方まで広がっています。",
+      "narrativeNote": "ナレーションは福音書の記述に従い、ガリラヤをイエスの公的な働きの場所として、エルサレムを彼の受難と復活の場所として強調しています。現代の考古学的研究は、聖書の遺跡と現代の場所の識別を継続的に改善しています。"
+    },
+    "dataTable": {
+      "title": "イベントと場所の参考表",
+      "description": "すべての出来事を時代別に、すべての場所をアルファベット順にまとめた任意表示の表です。",
+      "descriptionHeader": "説明",
+      "byEra": "時代別のイベント",
+      "eventTable": "{eraName} のイベント",
+      "placeReference": "場所の参考",
+      "allPlaces": "イエスの人生で言及されたすべての場所、アルファベット順に整理：",
+      "biblicalName": "聖書の名前",
+      "modernLocation": "現代の場所",
+      "region": "地域",
+      "coordinatesHeader": "座標"
+    },
+    "sources": {
+      "title": "デューデリジェンス説明",
+      "description": "場所の識別に関する考古学的資料と参考文献",
+      "text": "これらの場所は、現代の考古学的合意と伝統的な巡礼地に従って識別されています。"
+    }
+  }
+}

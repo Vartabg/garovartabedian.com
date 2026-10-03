@@ -1,0 +1,862 @@
+[
+  {
+    "id": "perpetua-felicitas",
+    "sourceUrl": "https://ccel.org/ccel/s/schaff/anf03.xml",
+    "sourceSha256": "a6eee75d691b7a3dfe045bb2998ad01c7f1b5c17d46ec58606678e7aeea82a35",
+    "editionSha256": "e9969fb629562954f39cc3cb7aa2eb523f0db0e67fc0d2b7a3d0095b4401736e",
+    "blocks": 76,
+    "selectedXmlIds": [
+      "vi.vi.ii",
+      "vi.vi.iii",
+      "vi.vi.iv",
+      "vi.vi.v",
+      "vi.vi.vi",
+      "vi.vi.vii",
+      "vi.vi.viii"
+    ],
+    "notes": 43
+  },
+  {
+    "id": "athanasius-incarnation",
+    "sourceUrl": "https://ccel.org/ccel/s/schaff/npnf204.xml",
+    "sourceSha256": "bd625a0fa4f5ddd4b2fa13fcee753de8832ea4b316625e0e06454beb81cfa652",
+    "editionSha256": "eba8385f0a01e7a457ae616f1980eebb5c2e6c4f325cc7d5ff021cf5e9968f43",
+    "blocks": 337,
+    "selectedXmlIds": [
+      "vii.ii"
+    ],
+    "notes": 218
+  },
+  {
+    "id": "ephrem-hymns",
+    "sourceUrl": "https://ccel.org/ccel/s/schaff/npnf213.xml",
+    "sourceSha256": "323ecfb6470854de378fdf47375b2e15b108e72559bbe3167da9c37500bbf2ae",
+    "editionSha256": "c918719eaa4661c0257d209ea7e1e0a5c4db43926adf8e7bcbaf7a64f7e33bd4",
+    "blocks": 1867,
+    "selectedXmlIds": [
+      "iii.iv",
+      "iii.v",
+      "iii.vi",
+      "iii.vii"
+    ],
+    "notes": 290
+  },
+  {
+    "id": "aphrahat-demonstrations",
+    "sourceUrl": "https://ccel.org/ccel/s/schaff/npnf213.xml",
+    "sourceSha256": "323ecfb6470854de378fdf47375b2e15b108e72559bbe3167da9c37500bbf2ae",
+    "editionSha256": "95396d25891951d3d1be85ca51576bc97cadd7ad33c162c384a3b94c9a4909a9",
+    "blocks": 756,
+    "selectedXmlIds": [
+      "iii.ix"
+    ],
+    "notes": 577
+  },
+  {
+    "id": "cyril-catechetical-lectures",
+    "sourceUrl": "https://ccel.org/ccel/s/schaff/npnf207.xml",
+    "sourceSha256": "3ac73f4179c0b7d6e66e6fea04ae572e64c0e4a80e8fa38980b40366c8a13928",
+    "editionSha256": "ae80d40b486d2924437af1210c6f21fd80dc9397cab26e97cd01d0ca58586d7c",
+    "blocks": 2843,
+    "selectedXmlIds": [
+      "ii.iv",
+      "ii.v",
+      "ii.vi",
+      "ii.vii",
+      "ii.viii",
+      "ii.ix",
+      "ii.x",
+      "ii.xi",
+      "ii.xii",
+      "ii.xiii",
+      "ii.xiv",
+      "ii.xv",
+      "ii.xvi",
+      "ii.xvii",
+      "ii.xviii",
+      "ii.xix",
+      "ii.xx",
+      "ii.xxi",
+      "ii.xxii",
+      "ii.xxiii",
+      "ii.xxiv",
+      "ii.xxv",
+      "ii.xxvi",
+      "ii.xxvii"
+    ],
+    "notes": 2161
+  },
+  {
+    "id": "tatian-diatessaron",
+    "sourceUrl": "https://ccel.org/ccel/s/schaff/anf09.xml",
+    "sourceSha256": "6a3932956be998903672d451fc3a0901b5da8ebecce85273bb6513ae9d7df09f",
+    "editionSha256": "9745043a0a805ae9bc2150d38ea9158e0ec80bbf4d2e10bdc4f37c9c7a1953cd",
+    "blocks": 4434,
+    "selectedXmlIds": [
+      "iv.iii",
+      "iv.iv"
+    ],
+    "notes": 3801
+  },
+  {
+    "id": "clement-alexandria-instructor",
+    "sourceUrl": "https://ccel.org/ccel/s/schaff/anf02.xml",
+    "sourceSha256": "99cb6b19b1cf7df49546ea73e3b313807ac6d7d84702c1209675a7c34456318a",
+    "editionSha256": "74a9d7990d137f2f43eacb18c51bc2f799bcb1e69ad47c2011ae05c693a5d5ad",
+    "blocks": 1352,
+    "selectedXmlIds": [
+      "vi.iii.i",
+      "vi.iii.ii",
+      "vi.iii.iii"
+    ],
+    "notes": 763
+  },
+  {
+    "id": "athenagoras-plea",
+    "sourceUrl": "https://ccel.org/ccel/s/schaff/anf02.xml",
+    "sourceSha256": "99cb6b19b1cf7df49546ea73e3b313807ac6d7d84702c1209675a7c34456318a",
+    "editionSha256": "a0264a402c9bb42a5c6ea85e04955db9098128399204f255b2fecf99b2f3566d",
+    "blocks": 332,
+    "selectedXmlIds": [
+      "v.ii"
+    ],
+    "notes": 137
+  },
+  {
+    "id": "gospel-philip",
+    "sourceUrl": "https://www.gospels.net/philip",
+    "sourceSha256": "831bdf4ee06f85048bf5eafa6db0d5489cc221ca8a479f2f1e0192d8b1dbad92",
+    "editionSha256": "b6256b3ed61bf14e2001279c397ca1a5d648178b2387b60fa4d1a2f432872dda",
+    "blocks": 121,
+    "firstSourceChild": 7,
+    "excludedNotesFromChild": 147
+  },
+  {
+    "id": "gospel-truth",
+    "sourceUrl": "https://www.gospels.net/truth",
+    "sourceSha256": "d2452f9be8fabcb96b9482f837a0d999c1532f05784b6eff5e0e7d012803ec76",
+    "editionSha256": "86e19b159c1ba127824b91db42d957b2ef54b85cfb0e78d843b5bcc444843df4",
+    "blocks": 69,
+    "firstSourceChild": 7,
+    "excludedNotesFromChild": 92
+  },
+  {
+    "id": "secret-book-john",
+    "sourceUrl": "https://othergospels.com/john/zinner.json",
+    "sourceSha256": "792cedacf98abff3a3c5c07a895554766139111aca8447db6fc3ae22b800bed0",
+    "editionSha256": "40caf8559ca8597a5c54561ba44f43a002b08a26c18abee505afa6d9066f6e29",
+    "blocks": 987,
+    "chapterRows": [
+      {
+        "chapter": 1,
+        "witness": "Codex II & IV",
+        "sourceRows": 8,
+        "nonemptyRows": 8
+      },
+      {
+        "chapter": 1,
+        "witness": "Berlin Codex",
+        "sourceRows": 8,
+        "nonemptyRows": 7
+      },
+      {
+        "chapter": 1,
+        "witness": "Codex III",
+        "sourceRows": 8,
+        "nonemptyRows": 4
+      },
+      {
+        "chapter": 2,
+        "witness": "Codex II & Codex IV",
+        "sourceRows": 12,
+        "nonemptyRows": 12
+      },
+      {
+        "chapter": 2,
+        "witness": "Berlin Codex",
+        "sourceRows": 12,
+        "nonemptyRows": 12
+      },
+      {
+        "chapter": 2,
+        "witness": "Codex III",
+        "sourceRows": 12,
+        "nonemptyRows": 2
+      },
+      {
+        "chapter": 3,
+        "witness": "Codex II",
+        "sourceRows": 34,
+        "nonemptyRows": 34
+      },
+      {
+        "chapter": 3,
+        "witness": "Codex IV",
+        "sourceRows": 34,
+        "nonemptyRows": 34
+      },
+      {
+        "chapter": 3,
+        "witness": "Berlin Codex",
+        "sourceRows": 34,
+        "nonemptyRows": 32
+      },
+      {
+        "chapter": 3,
+        "witness": "Codex III",
+        "sourceRows": 34,
+        "nonemptyRows": 20
+      },
+      {
+        "chapter": 4,
+        "witness": "Codex II & IV",
+        "sourceRows": 7,
+        "nonemptyRows": 7
+      },
+      {
+        "chapter": 4,
+        "witness": "Berlin Codex",
+        "sourceRows": 7,
+        "nonemptyRows": 7
+      },
+      {
+        "chapter": 4,
+        "witness": "Codex III",
+        "sourceRows": 7,
+        "nonemptyRows": 7
+      },
+      {
+        "chapter": 5,
+        "witness": "Codex II",
+        "sourceRows": 14,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 5,
+        "witness": "Codex IV",
+        "sourceRows": 14,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 5,
+        "witness": "Berlin Codex",
+        "sourceRows": 14,
+        "nonemptyRows": 12
+      },
+      {
+        "chapter": 5,
+        "witness": "Codex III",
+        "sourceRows": 14,
+        "nonemptyRows": 12
+      },
+      {
+        "chapter": 6,
+        "witness": "Codex II",
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 6,
+        "witness": "Codex IV",
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 6,
+        "witness": "Berlin Codex",
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 6,
+        "witness": "Codex III",
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 7,
+        "witness": "Codex II",
+        "sourceRows": 16,
+        "nonemptyRows": 16
+      },
+      {
+        "chapter": 7,
+        "witness": "Codex IV",
+        "sourceRows": 16,
+        "nonemptyRows": 16
+      },
+      {
+        "chapter": 7,
+        "witness": "Berlin Codex",
+        "sourceRows": 16,
+        "nonemptyRows": 16
+      },
+      {
+        "chapter": 7,
+        "witness": "Codex III",
+        "sourceRows": 16,
+        "nonemptyRows": 15
+      },
+      {
+        "chapter": 8,
+        "witness": "Codex II & IV",
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 8,
+        "witness": "Berlin Codex",
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 8,
+        "witness": "Codex III",
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 9,
+        "witness": "Codex II & Codex IV",
+        "sourceRows": 10,
+        "nonemptyRows": 10
+      },
+      {
+        "chapter": 9,
+        "witness": "Berlin Codex",
+        "sourceRows": 10,
+        "nonemptyRows": 10
+      },
+      {
+        "chapter": 9,
+        "witness": "Codex III",
+        "sourceRows": 10,
+        "nonemptyRows": 10
+      },
+      {
+        "chapter": 10,
+        "witness": "Codex II & Codex IV",
+        "sourceRows": 20,
+        "nonemptyRows": 13
+      },
+      {
+        "chapter": 10,
+        "witness": "Berlin Codex",
+        "sourceRows": 20,
+        "nonemptyRows": 20
+      },
+      {
+        "chapter": 10,
+        "witness": "Codex II",
+        "sourceRows": 20,
+        "nonemptyRows": 20
+      },
+      {
+        "chapter": 11,
+        "witness": "Codex II",
+        "sourceRows": 18,
+        "nonemptyRows": 18
+      },
+      {
+        "chapter": 11,
+        "witness": "Codex IV",
+        "sourceRows": 18,
+        "nonemptyRows": 18
+      },
+      {
+        "chapter": 11,
+        "witness": "Berlin Codex",
+        "sourceRows": 18,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 11,
+        "witness": "Codex III",
+        "sourceRows": 18,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 12,
+        "witness": "Codex II",
+        "sourceRows": 10,
+        "nonemptyRows": 10
+      },
+      {
+        "chapter": 12,
+        "witness": "Codex IV",
+        "sourceRows": 10,
+        "nonemptyRows": 10
+      },
+      {
+        "chapter": 12,
+        "witness": "Berlin Codex",
+        "sourceRows": 10,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 12,
+        "witness": "Codex III",
+        "sourceRows": 10,
+        "nonemptyRows": 5
+      },
+      {
+        "chapter": 13,
+        "witness": "Codex II",
+        "sourceRows": 27,
+        "nonemptyRows": 27
+      },
+      {
+        "chapter": 13,
+        "witness": "Codex IV",
+        "sourceRows": 27,
+        "nonemptyRows": 27
+      },
+      {
+        "chapter": 13,
+        "witness": "Berlin Codex",
+        "sourceRows": 27,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 13,
+        "witness": "Codex III",
+        "sourceRows": 27,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 14,
+        "witness": "Codex II & IV",
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 14,
+        "witness": "Berlin Codex",
+        "sourceRows": 9,
+        "nonemptyRows": 8
+      },
+      {
+        "chapter": 14,
+        "witness": "Codex III",
+        "sourceRows": 9,
+        "nonemptyRows": 8
+      },
+      {
+        "chapter": 15,
+        "witness": "Codex II & Codex IV",
+        "sourceRows": 14,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 15,
+        "witness": "Berlin Codex",
+        "sourceRows": 14,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 15,
+        "witness": "Codex III",
+        "sourceRows": 14,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 16,
+        "witness": "Codex II",
+        "sourceRows": 4,
+        "nonemptyRows": 4
+      },
+      {
+        "chapter": 16,
+        "witness": "Codex IV",
+        "sourceRows": 4,
+        "nonemptyRows": 4
+      },
+      {
+        "chapter": 16,
+        "witness": "Berlin Codex",
+        "sourceRows": 4,
+        "nonemptyRows": 4
+      },
+      {
+        "chapter": 16,
+        "witness": "Codex III",
+        "sourceRows": 4,
+        "nonemptyRows": 4
+      },
+      {
+        "chapter": 17,
+        "witness": "Codex II",
+        "sourceRows": 15,
+        "nonemptyRows": 15
+      },
+      {
+        "chapter": 17,
+        "witness": "Codex IV",
+        "sourceRows": 15,
+        "nonemptyRows": 15
+      },
+      {
+        "chapter": 17,
+        "witness": "Berlin Codex",
+        "sourceRows": 15,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 17,
+        "witness": "Codex III",
+        "sourceRows": 15,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 18,
+        "witness": "Codex II",
+        "sourceRows": 19,
+        "nonemptyRows": 19
+      },
+      {
+        "chapter": 18,
+        "witness": "Codex IV",
+        "sourceRows": 19,
+        "nonemptyRows": 19
+      },
+      {
+        "chapter": 18,
+        "witness": "Berlin Codex",
+        "sourceRows": 19,
+        "nonemptyRows": 19
+      },
+      {
+        "chapter": 18,
+        "witness": "Codex III",
+        "sourceRows": 19,
+        "nonemptyRows": 19
+      },
+      {
+        "chapter": 19,
+        "witness": "Codex II & IV",
+        "sourceRows": 17,
+        "nonemptyRows": 17
+      },
+      {
+        "chapter": 19,
+        "witness": "Berlin Codex",
+        "sourceRows": 17,
+        "nonemptyRows": 13
+      },
+      {
+        "chapter": 19,
+        "witness": "Codex III",
+        "sourceRows": 17,
+        "nonemptyRows": 12
+      },
+      {
+        "chapter": 20,
+        "witness": "Codex II & Codex IV",
+        "sourceRows": 11,
+        "nonemptyRows": 11
+      },
+      {
+        "chapter": 20,
+        "witness": "Berlin Codex",
+        "sourceRows": 11,
+        "nonemptyRows": 1
+      },
+      {
+        "chapter": 20,
+        "witness": "Codex III",
+        "sourceRows": 11,
+        "nonemptyRows": 1
+      },
+      {
+        "chapter": 21,
+        "witness": "Codex II & Codex IV",
+        "sourceRows": 3,
+        "nonemptyRows": 3
+      },
+      {
+        "chapter": 21,
+        "witness": "Berlin Codex",
+        "sourceRows": 3,
+        "nonemptyRows": 3
+      },
+      {
+        "chapter": 21,
+        "witness": "Codex III",
+        "sourceRows": 3,
+        "nonemptyRows": 3
+      }
+    ]
+  },
+  {
+    "id": "hypostasis-archons",
+    "sourceUrl": "https://othergospels.com/archons/zinner.json",
+    "sourceSha256": "8dafd03ae58ce74f6c486b43c1fc5d23bb3e76acf00ebaf75c20096423b3d10b",
+    "editionSha256": "0560c20aff68b2bc1227a5d9d34a0e6632807e40af3b23aaffbc17bc00b99e62",
+    "blocks": 164,
+    "chapterRows": [
+      {
+        "chapter": 1,
+        "sourceRows": 13,
+        "nonemptyRows": 13
+      },
+      {
+        "chapter": 2,
+        "sourceRows": 14,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 3,
+        "sourceRows": 18,
+        "nonemptyRows": 18
+      },
+      {
+        "chapter": 4,
+        "sourceRows": 23,
+        "nonemptyRows": 23
+      },
+      {
+        "chapter": 5,
+        "sourceRows": 17,
+        "nonemptyRows": 17
+      },
+      {
+        "chapter": 6,
+        "sourceRows": 4,
+        "nonemptyRows": 4
+      },
+      {
+        "chapter": 7,
+        "sourceRows": 20,
+        "nonemptyRows": 20
+      },
+      {
+        "chapter": 8,
+        "sourceRows": 17,
+        "nonemptyRows": 17
+      },
+      {
+        "chapter": 9,
+        "sourceRows": 14,
+        "nonemptyRows": 14
+      },
+      {
+        "chapter": 10,
+        "sourceRows": 14,
+        "nonemptyRows": 14
+      }
+    ]
+  },
+  {
+    "id": "origin-world",
+    "sourceUrl": "https://othergospels.com/origin/zinner.json",
+    "sourceSha256": "6c114e8914ce513ed58c752fdf7f9d7c1c19476fc3739f66ca31680a553cd359",
+    "editionSha256": "8cd4ecfc6ae73194eafe3c786c69205f7cb801bc469e39c37ec98012e2297bc2",
+    "blocks": 339,
+    "chapterRows": [
+      {
+        "chapter": 1,
+        "sourceRows": 4,
+        "nonemptyRows": 4
+      },
+      {
+        "chapter": 2,
+        "sourceRows": 13,
+        "nonemptyRows": 13
+      },
+      {
+        "chapter": 3,
+        "sourceRows": 8,
+        "nonemptyRows": 8
+      },
+      {
+        "chapter": 4,
+        "sourceRows": 11,
+        "nonemptyRows": 11
+      },
+      {
+        "chapter": 5,
+        "sourceRows": 15,
+        "nonemptyRows": 15
+      },
+      {
+        "chapter": 6,
+        "sourceRows": 7,
+        "nonemptyRows": 7
+      },
+      {
+        "chapter": 7,
+        "sourceRows": 15,
+        "nonemptyRows": 15
+      },
+      {
+        "chapter": 8,
+        "sourceRows": 5,
+        "nonemptyRows": 5
+      },
+      {
+        "chapter": 9,
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 10,
+        "sourceRows": 6,
+        "nonemptyRows": 6
+      },
+      {
+        "chapter": 11,
+        "sourceRows": 9,
+        "nonemptyRows": 9
+      },
+      {
+        "chapter": 12,
+        "sourceRows": 11,
+        "nonemptyRows": 11
+      },
+      {
+        "chapter": 13,
+        "sourceRows": 11,
+        "nonemptyRows": 11
+      },
+      {
+        "chapter": 14,
+        "sourceRows": 5,
+        "nonemptyRows": 5
+      },
+      {
+        "chapter": 15,
+        "sourceRows": 4,
+        "nonemptyRows": 4
+      },
+      {
+        "chapter": 16,
+        "sourceRows": 19,
+        "nonemptyRows": 19
+      },
+      {
+        "chapter": 17,
+        "sourceRows": 11,
+        "nonemptyRows": 11
+      },
+      {
+        "chapter": 18,
+        "sourceRows": 16,
+        "nonemptyRows": 16
+      },
+      {
+        "chapter": 19,
+        "sourceRows": 5,
+        "nonemptyRows": 5
+      },
+      {
+        "chapter": 20,
+        "sourceRows": 17,
+        "nonemptyRows": 17
+      },
+      {
+        "chapter": 21,
+        "sourceRows": 5,
+        "nonemptyRows": 5
+      },
+      {
+        "chapter": 22,
+        "sourceRows": 18,
+        "nonemptyRows": 18
+      },
+      {
+        "chapter": 23,
+        "sourceRows": 31,
+        "nonemptyRows": 31
+      },
+      {
+        "chapter": 24,
+        "sourceRows": 11,
+        "nonemptyRows": 11
+      },
+      {
+        "chapter": 25,
+        "sourceRows": 5,
+        "nonemptyRows": 5
+      },
+      {
+        "chapter": 26,
+        "sourceRows": 16,
+        "nonemptyRows": 16
+      },
+      {
+        "chapter": 27,
+        "sourceRows": 5,
+        "nonemptyRows": 5
+      },
+      {
+        "chapter": 28,
+        "sourceRows": 19,
+        "nonemptyRows": 19
+      }
+    ]
+  },
+  {
+    "id": "treatise-resurrection",
+    "sourceUrl": "https://othergospels.com/resurrection/zinner.json",
+    "sourceSha256": "edfc09ea3c393724b4859077ef78f915f3e5c32294fe14c4ae4a92db8cda1cff",
+    "editionSha256": "952a268c7d105b19a857e5988f516f181e876bf0125840266bd5d336b59ae461",
+    "blocks": 93,
+    "chapterRows": [
+      {
+        "chapter": 1,
+        "sourceRows": 7,
+        "nonemptyRows": 7
+      },
+      {
+        "chapter": 2,
+        "sourceRows": 6,
+        "nonemptyRows": 6
+      },
+      {
+        "chapter": 3,
+        "sourceRows": 6,
+        "nonemptyRows": 6
+      },
+      {
+        "chapter": 4,
+        "sourceRows": 5,
+        "nonemptyRows": 5
+      },
+      {
+        "chapter": 5,
+        "sourceRows": 6,
+        "nonemptyRows": 6
+      },
+      {
+        "chapter": 6,
+        "sourceRows": 6,
+        "nonemptyRows": 6
+      },
+      {
+        "chapter": 7,
+        "sourceRows": 15,
+        "nonemptyRows": 15
+      },
+      {
+        "chapter": 8,
+        "sourceRows": 7,
+        "nonemptyRows": 7
+      },
+      {
+        "chapter": 9,
+        "sourceRows": 10,
+        "nonemptyRows": 10
+      },
+      {
+        "chapter": 10,
+        "sourceRows": 7,
+        "nonemptyRows": 7
+      },
+      {
+        "chapter": 11,
+        "sourceRows": 7,
+        "nonemptyRows": 7
+      }
+    ]
+  }
+]

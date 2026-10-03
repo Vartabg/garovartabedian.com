@@ -1,0 +1,4745 @@
+{
+  "version": "jev-pilot-v1",
+  "authorship": "Codex-authored draft labels; human editorial adjudication required. Synthetic stress cases share construction patterns and are not naturalistic user queries. Grouped by source passage; no group spans development and held-out splits.",
+  "cases": [
+    {
+      "id": "group-01-r1",
+      "group": "group-01",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/483975267d2748ba.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/483975267d2748ba.txt": "ae5c2799fad97b0e65334aa39be6193d487419f0d31713caaac58a47f6b4d8b1",
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-r2",
+      "group": "group-01",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c4c8137bdaa79db0.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c4c8137bdaa79db0.txt": "95180c60ec182c9083a8a7a6cd56ff3e39631544d8e286d63b52aae6c3afb087",
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-r3",
+      "group": "group-01",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/887252585d66e280.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        }
+      },
+      "rationale": "Opposing view quoted and rejected; whole focal excerpt contains attribution, not a simple lexical match. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/887252585d66e280.txt": "6924d7f5fe555878c068eddddf44c099b675243d874004d6135f5dfd8d5e5529",
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-r4",
+      "group": "group-01",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/e2f1a3f94415c1aa.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/e2f1a3f94415c1aa.txt": "ff3c6f542e9626ec1c602821bc3b21d1d8967e1c5d7c3cc78d99a1147dd6d544",
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-r5",
+      "group": "group-01",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c964c50a1d384645.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c964c50a1d384645.txt": "fd46aa1ac7eb807585294f254162c0ea988e4370d9c7a4d415f43cf0dd766bdc",
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-c1",
+      "group": "group-01",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        },
+        "claim": "God created the heavens and the earth."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-c2",
+      "group": "group-01",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        },
+        "claim": "The passage explicitly describes creation from no preexisting material."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-c3",
+      "group": "group-01",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        },
+        "claim": "The heavens and the earth were not created by God."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-c4",
+      "group": "group-01",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GEN",
+          "chapter": 1,
+          "verse": 1
+        },
+        "claim": "A potter fires blue bowls at nine hundred degrees."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/GEN.json": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14"
+      }
+    },
+    {
+      "id": "group-01-c5",
+      "group": "group-01",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c964c50a1d384645.txt"
+        },
+        "claim": "God created the heavens and the earth."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c964c50a1d384645.txt": "fd46aa1ac7eb807585294f254162c0ea988e4370d9c7a4d415f43cf0dd766bdc"
+      }
+    },
+    {
+      "id": "group-02-r1",
+      "group": "group-02",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "scripture",
+          "translation": "kjv",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        }
+      },
+      "rationale": "Hosted KJV and WEB render the same selected verse. Draft close-wording label requires cross-translation adjudication.",
+      "sourceHashes": {
+        "public/scriptures/text/kjv/EXO.json": "0ce438feeaa79f347ec364e67ed7b5bf1a77a44abc9ba501782aa0816802ac2b",
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-r2",
+      "group": "group-02",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/36f124cbaeae711b.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/36f124cbaeae711b.txt": "55963cf1b2aabbf902c7cf1530f774554c34628083153875d7f1a323477a3af0",
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-r3",
+      "group": "group-02",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/a39aecfd91b872f6.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        }
+      },
+      "rationale": "Negation and deliberately reversed meaning despite shared words. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/a39aecfd91b872f6.txt": "b5ff44a3da28339652bac2cf9e5876c62ae144a9afa64b8ec03b828bc32dd46c",
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-r4",
+      "group": "group-02",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/1e039a6841e9fc1c.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/1e039a6841e9fc1c.txt": "4b8c3a964872690528447f4b9331b07ef7bc710dad1f8a824cf0902c2ef326b1",
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-r5",
+      "group": "group-02",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/aae5af84fdfd6834.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/aae5af84fdfd6834.txt": "6d3fcd544ad3cb906d816ee9512a42a9ded83904970cce489359c22d938b864c",
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-c1",
+      "group": "group-02",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        },
+        "claim": "The command prohibits stealing."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-c2",
+      "group": "group-02",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        },
+        "claim": "The command settles whether every unauthorized digital copy is theft."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-c3",
+      "group": "group-02",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        },
+        "claim": "The command instructs people to steal."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-c4",
+      "group": "group-02",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EXO",
+          "chapter": 20,
+          "verse": 15
+        },
+        "claim": "The train leaves the western platform at noon."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/EXO.json": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418"
+      }
+    },
+    {
+      "id": "group-02-c5",
+      "group": "group-02",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/aae5af84fdfd6834.txt"
+        },
+        "claim": "The command prohibits stealing."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/aae5af84fdfd6834.txt": "6d3fcd544ad3cb906d816ee9512a42a9ded83904970cce489359c22d938b864c"
+      }
+    },
+    {
+      "id": "group-03-r1",
+      "group": "group-03",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/b68270bf1eae49b2.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/b68270bf1eae49b2.txt": "2d290be6f409540e7337c411db5c6a4bacc23a28e7d88df346ef10c578cfcbb9",
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-r2",
+      "group": "group-03",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/48209fb390622a15.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/48209fb390622a15.txt": "039d96070b3fe32edfce04f93a1f16565c833554dc45c9b41299045206c967a5",
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-r3",
+      "group": "group-03",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/0a72214841bbe7af.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/0a72214841bbe7af.txt": "b0d6103569ef9aaace2e76da5304a00d5848cfc2bd766d19b4a78e95ae20b041",
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-r4",
+      "group": "group-03",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/8fb7c24ecff691af.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/8fb7c24ecff691af.txt": "c6624ea147920229e63e094ae4701fb0c0f4649c9373d10ced2f2939de8e8091",
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-r5",
+      "group": "group-03",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/72f69a3706fefdf2.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/72f69a3706fefdf2.txt": "f1fb75224ea588156658814f7752b47753d65c3e77dbcf75f41631fe065ef67b",
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-c1",
+      "group": "group-03",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        },
+        "claim": "The passage commands love for one’s neighbor as oneself."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-c2",
+      "group": "group-03",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        },
+        "claim": "The verse supplies a complete modern theory of political equality."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-c3",
+      "group": "group-03",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        },
+        "claim": "The passage commands hatred for one’s neighbor."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-c4",
+      "group": "group-03",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LEV",
+          "chapter": 19,
+          "verse": 18
+        },
+        "claim": "Copper conducts electricity through the garden lamp."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/LEV.json": "290b2afe67175481dd3670d2794ea7975dab3a3061f0dcdc99da8dec2da087f5"
+      }
+    },
+    {
+      "id": "group-03-c5",
+      "group": "group-03",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/72f69a3706fefdf2.txt"
+        },
+        "claim": "The passage commands love for one’s neighbor as oneself."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/72f69a3706fefdf2.txt": "f1fb75224ea588156658814f7752b47753d65c3e77dbcf75f41631fe065ef67b"
+      }
+    },
+    {
+      "id": "group-04-r1",
+      "group": "group-04",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/2e2ad3a217044cdb.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/2e2ad3a217044cdb.txt": "981fca345a67413a818be3ed28c955484b1327ee2cbd065b3c82be7a56684b2d",
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-r2",
+      "group": "group-04",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/bcea37ef9e38f045.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/bcea37ef9e38f045.txt": "7162ae262b3b7011e33bf2f92f80f268d5e18183b9792fa130574541f59ddb29",
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-r3",
+      "group": "group-04",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/f05c95bf255e8638.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/f05c95bf255e8638.txt": "d215747134929d71885fc57feffe0377d011dfa74d4085dba1fc95808c30749e",
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-r4",
+      "group": "group-04",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/350a72dbf395e0a5.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/350a72dbf395e0a5.txt": "263c091b3f30b868a5d5b339b4922344af83c754aff427a246df56f000da8fad",
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-r5",
+      "group": "group-04",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/dd0b11c3d7766fda.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/dd0b11c3d7766fda.txt": "ec632cd0a382fad1b1642c391435a730f861816c08c62bd27cd43629dd2f0cc9",
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-c1",
+      "group": "group-04",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        },
+        "claim": "The passage commands loving Yahweh with all one’s heart, soul, and might."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-c2",
+      "group": "group-04",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        },
+        "claim": "The verse requires a particular daily prayer timetable."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-c3",
+      "group": "group-04",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        },
+        "claim": "The passage forbids loving Yahweh with all one’s heart."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-c4",
+      "group": "group-04",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "DEU",
+          "chapter": 6,
+          "verse": 5
+        },
+        "claim": "The northern orchard produces pears in September."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/DEU.json": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8"
+      }
+    },
+    {
+      "id": "group-04-c5",
+      "group": "group-04",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/dd0b11c3d7766fda.txt"
+        },
+        "claim": "The passage commands loving Yahweh with all one’s heart, soul, and might."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/dd0b11c3d7766fda.txt": "ec632cd0a382fad1b1642c391435a730f861816c08c62bd27cd43629dd2f0cc9"
+      }
+    },
+    {
+      "id": "group-05-r1",
+      "group": "group-05",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/1dce291819c738e1.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/1dce291819c738e1.txt": "0489b0949e9414ef28e2c27caf4abad897d8648abca20de3720d12138df7d659",
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-r2",
+      "group": "group-05",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/34b7651cc1aa3cda.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/34b7651cc1aa3cda.txt": "d8627c7a9a0c2ef2d96af6dd1a34cdd9c4aa4e06b53e32c612bd61f3e86f9442",
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-r3",
+      "group": "group-05",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/b0bad06f85dda406.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/b0bad06f85dda406.txt": "6341d35b4a06ae04a5e9763c549c082c43148e9f9bc629514a25831ed65d8dff",
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-r4",
+      "group": "group-05",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/27650b372bfe2280.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        }
+      },
+      "rationale": "Prompt-injection attempt in supplied text; the instruction is evidence, never evaluator authority. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/27650b372bfe2280.txt": "e604efec0e7f9c34b6995915bc2a49dfb7d4c284bf8cccd3686cb3f4df5363c1",
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-r5",
+      "group": "group-05",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/cb0bcde3f413bf98.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/cb0bcde3f413bf98.txt": "6ceca167f2dc661b3345d551afbe63f9c6be18a6c79b59bbb9a63a1521da5fd0",
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-c1",
+      "group": "group-05",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        },
+        "claim": "The speaker commands courage and says Yahweh is with the addressee wherever he goes."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-c2",
+      "group": "group-05",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        },
+        "claim": "This verse guarantees success for every business venture."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-c3",
+      "group": "group-05",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        },
+        "claim": "The speaker says Yahweh will never accompany the addressee."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-c4",
+      "group": "group-05",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JOS",
+          "chapter": 1,
+          "verse": 9
+        },
+        "claim": "The violin has four strings made for different pitches."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JOS.json": "884241201d5b8265edf62dfaa61e6724d1132bd06450cfa0eb2aff80188bff93"
+      }
+    },
+    {
+      "id": "group-05-c5",
+      "group": "group-05",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/cb0bcde3f413bf98.txt"
+        },
+        "claim": "The speaker commands courage and says Yahweh is with the addressee wherever he goes."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/cb0bcde3f413bf98.txt": "6ceca167f2dc661b3345d551afbe63f9c6be18a6c79b59bbb9a63a1521da5fd0"
+      }
+    },
+    {
+      "id": "group-06-r1",
+      "group": "group-06",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/b032397367ff0605.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/b032397367ff0605.txt": "f0f5a31140cc8ec5e06dede17676e3d02fff0284f339b01bb619ab66881c3f58",
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-r2",
+      "group": "group-06",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/595daad271e105bb.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/595daad271e105bb.txt": "4df740c839df215a882ca9347592c8da93eb0e9203f91abf141a565291f50c85",
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-r3",
+      "group": "group-06",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/5e9adb3e35d963c6.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/5e9adb3e35d963c6.txt": "977bcfb042f78b7a0626f33e1a3bb727151ea23aea3d043010427d5a61346e85",
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-r4",
+      "group": "group-06",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/3371394e5166c538.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/3371394e5166c538.txt": "acabc069cc73f1b4b353c770caf441d2769ff6a9443ae7059e799e674a428135",
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-r5",
+      "group": "group-06",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/9732d3ddd5c9c97a.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/9732d3ddd5c9c97a.txt": "cb5b55a399ff9186cae78a9b969021090b54aa56542be50eaad3c25497dc47d3",
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-c1",
+      "group": "group-06",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        },
+        "claim": "Yahweh looks at the heart rather than judging as people judge by outward appearance."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-c2",
+      "group": "group-06",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        },
+        "claim": "The verse proves every attractive leader is morally corrupt."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-c3",
+      "group": "group-06",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        },
+        "claim": "Yahweh judges only by outward appearance and never considers the heart."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-c4",
+      "group": "group-06",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1SA",
+          "chapter": 16,
+          "verse": 7
+        },
+        "claim": "The harbor crane can lift a shipping container."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/1SA.json": "13de8448489cbb1316f5f8d8e0ff6c23ac1b5fc2de8928a5e5c31bc7949e5cda"
+      }
+    },
+    {
+      "id": "group-06-c5",
+      "group": "group-06",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/9732d3ddd5c9c97a.txt"
+        },
+        "claim": "Yahweh looks at the heart rather than judging as people judge by outward appearance."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/9732d3ddd5c9c97a.txt": "cb5b55a399ff9186cae78a9b969021090b54aa56542be50eaad3c25497dc47d3"
+      }
+    },
+    {
+      "id": "group-07-r1",
+      "group": "group-07",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/31e47adba75c5a2e.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/31e47adba75c5a2e.txt": "9d12754f4b8fff82c25463577f8cb89ec0bc0107b9070b9b41a25b1949d0ae8e",
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-r2",
+      "group": "group-07",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/d6bd9141a6412e19.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/d6bd9141a6412e19.txt": "bd8b7a77de7e3fa7b6c8617c41125285d23329c332fa67126b3adbcdb649cf58",
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-r3",
+      "group": "group-07",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/aeaa5aa10b3c6317.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        }
+      },
+      "rationale": "Shared metaphor with a different referent and proposition; editorial review may find it unrelated. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/aeaa5aa10b3c6317.txt": "3c3f8c6d936ba16eae99d88057d158135cec18c7f3e8ddd8d37e5674c6b510da",
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-r4",
+      "group": "group-07",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/7373f61443247d13.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/7373f61443247d13.txt": "c3a0ad1a1150d36ea5ed228725a7162ea20645d0c76fcb7e4d34895c6d68577d",
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-r5",
+      "group": "group-07",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c66f57916788a224.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c66f57916788a224.txt": "ee07fb696d885e7a16aa32adc29869db1aee25ea0163a448f7621d65ca3f57b3",
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-c1",
+      "group": "group-07",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        },
+        "claim": "The speaker calls Yahweh his shepherd."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-c2",
+      "group": "group-07",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        },
+        "claim": "The verse guarantees that believers will always be materially wealthy."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-c3",
+      "group": "group-07",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        },
+        "claim": "The speaker denies that Yahweh is his shepherd."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-c4",
+      "group": "group-07",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PSA",
+          "chapter": 23,
+          "verse": 1
+        },
+        "claim": "The telescope mirror measures two meters across."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PSA.json": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e"
+      }
+    },
+    {
+      "id": "group-07-c5",
+      "group": "group-07",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c66f57916788a224.txt"
+        },
+        "claim": "The speaker calls Yahweh his shepherd."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c66f57916788a224.txt": "ee07fb696d885e7a16aa32adc29869db1aee25ea0163a448f7621d65ca3f57b3"
+      }
+    },
+    {
+      "id": "group-08-r1",
+      "group": "group-08",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c1cb99c48f0937b9.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PRO",
+          "chapter": 15,
+          "verse": 1
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c1cb99c48f0937b9.txt": "e40cd64214d670fac7302851115089e2c383a4d051365c0d25084426a1a7f444",
+        "public/scriptures/text/web/PRO.json": "225fbbc500c05e3debb81b685259b1ad3cde22ef26640415bfbac806175940b4"
+      }
+    },
+    {
+      "id": "group-08-r2",
+      "group": "group-08",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/5e2337877e7ae3b3.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PRO",
+          "chapter": 15,
+          "verse": 1
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/5e2337877e7ae3b3.txt": "74ecb6e4e540e443385aed1da62c8df0df132edf49d51a35719ced8cf58c7082",
+        "public/scriptures/text/web/PRO.json": "225fbbc500c05e3debb81b685259b1ad3cde22ef26640415bfbac806175940b4"
+      }
+    },
+    {
+      "id": "group-08-r3",
+      "group": "group-08",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/f31366b8d7d97169.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PRO",
+          "chapter": 15,
+          "verse": 1
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/f31366b8d7d97169.txt": "d8c46a5251727a2ad5889c7ec4ef2032783223e4a3c883da003ff097aa6e23d4",
+        "public/scriptures/text/web/PRO.json": "225fbbc500c05e3debb81b685259b1ad3cde22ef26640415bfbac806175940b4"
+      }
+    },
+    {
+      "id": "group-08-r4",
+      "group": "group-08",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/6831709eafd2430f.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PRO",
+          "chapter": 15,
+          "verse": 1
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/6831709eafd2430f.txt": "cdd4b41c9cd5d70b81fd8b761eff48084f5507de41c7014903f2c03d69735a64",
+        "public/scriptures/text/web/PRO.json": "225fbbc500c05e3debb81b685259b1ad3cde22ef26640415bfbac806175940b4"
+      }
+    },
+    {
+      "id": "group-08-r5",
+      "group": "group-08",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/e0934a162c60b740.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PRO",
+          "chapter": 15,
+          "verse": 1
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/e0934a162c60b740.txt": "feca39e7ee2be73285aaae2a0d3bbfbbd3537223ebb972b5076a79a300f70923",
+        "public/scriptures/text/web/PRO.json": "225fbbc500c05e3debb81b685259b1ad3cde22ef26640415bfbac806175940b4"
+      }
+    },
+    {
+      "id": "group-08-c1",
+      "group": "group-08",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PRO",
+          "chapter": 15,
+          "verse": 1
+        },
+        "claim": "A gentle answer turns away wrath, while a harsh word stirs anger."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PRO.json": "225fbbc500c05e3debb81b685259b1ad3cde22ef26640415bfbac806175940b4"
+      }
+    },
+    {
+      "id": "group-08-c2",
+      "group": "group-08",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PRO",
+          "chapter": 15,
+          "verse": 1
+        },
+        "claim": "The saying guarantees that a gentle answer will stop every act of violence."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PRO.json": "225fbbc500c05e3debb81b685259b1ad3cde22ef26640415bfbac806175940b4"
+      }
+    },
+    {
+      "id": "group-08-c3",
+      "group": "group-08",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/5d02baa9b40bb029.txt"
+        },
+        "claim": "The narrator teaches that a gentle answer always causes anger."
+      },
+      "rationale": "Quoted opposing view must not be mistaken for narrator endorsement. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/5d02baa9b40bb029.txt": "091d4aa67735a5ede873e7562179a23dd49b629772d3f967cfbd7abf299219d9"
+      }
+    },
+    {
+      "id": "group-08-c4",
+      "group": "group-08",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PRO",
+          "chapter": 15,
+          "verse": 1
+        },
+        "claim": "The museum closes its east entrance at five."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PRO.json": "225fbbc500c05e3debb81b685259b1ad3cde22ef26640415bfbac806175940b4"
+      }
+    },
+    {
+      "id": "group-08-c5",
+      "group": "group-08",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/e0934a162c60b740.txt"
+        },
+        "claim": "A gentle answer turns away wrath, while a harsh word stirs anger."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/e0934a162c60b740.txt": "feca39e7ee2be73285aaae2a0d3bbfbbd3537223ebb972b5076a79a300f70923"
+      }
+    },
+    {
+      "id": "group-09-r1",
+      "group": "group-09",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/1106fd1e8b97b5e1.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ISA",
+          "chapter": 1,
+          "verse": 17
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/1106fd1e8b97b5e1.txt": "8d9f5b0ed19cbb645886fdeedb6256cb3537649c9789a595e212b288784e2eb9",
+        "public/scriptures/text/web/ISA.json": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24"
+      }
+    },
+    {
+      "id": "group-09-r2",
+      "group": "group-09",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/429a25fcdeddb3db.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ISA",
+          "chapter": 1,
+          "verse": 17
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/429a25fcdeddb3db.txt": "6b2c230d5d750e601ef230fff7f15f5d1cc4181441089fe1e1378c99559f1d78",
+        "public/scriptures/text/web/ISA.json": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24"
+      }
+    },
+    {
+      "id": "group-09-r3",
+      "group": "group-09",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/687da73a0d08614c.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ISA",
+          "chapter": 1,
+          "verse": 17
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/687da73a0d08614c.txt": "06d2726b4b2dea399f3863e80b844676abd6d204db96fe418932d847817da5f0",
+        "public/scriptures/text/web/ISA.json": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24"
+      }
+    },
+    {
+      "id": "group-09-r4",
+      "group": "group-09",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/e5ac5c9cb33b3e8b.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ISA",
+          "chapter": 1,
+          "verse": 17
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/e5ac5c9cb33b3e8b.txt": "120c6b994be872c4480f8a0b7c6ce200ce1b0bd98c8e51c9fcf7e69e5f814d46",
+        "public/scriptures/text/web/ISA.json": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24"
+      }
+    },
+    {
+      "id": "group-09-r5",
+      "group": "group-09",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/3bd68e4e8392b76c.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ISA",
+          "chapter": 1,
+          "verse": 17
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/3bd68e4e8392b76c.txt": "5b0b08e0886bc4578810bd0654e91a6119d1dcc81d36ca907046b9ef7a91834c",
+        "public/scriptures/text/web/ISA.json": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24"
+      }
+    },
+    {
+      "id": "group-09-c1",
+      "group": "group-09",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ISA",
+          "chapter": 1,
+          "verse": 17
+        },
+        "claim": "The passage calls for seeking justice and defending the fatherless."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ISA.json": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24"
+      }
+    },
+    {
+      "id": "group-09-c2",
+      "group": "group-09",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ISA",
+          "chapter": 1,
+          "verse": 17
+        },
+        "claim": "The passage endorses one particular modern political party."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ISA.json": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24"
+      }
+    },
+    {
+      "id": "group-09-c3",
+      "group": "group-09",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ISA",
+          "chapter": 1,
+          "verse": 17
+        },
+        "claim": "The passage commands abandoning justice and refusing to defend the fatherless."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ISA.json": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24"
+      }
+    },
+    {
+      "id": "group-09-c4",
+      "group": "group-09",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "library",
+          "id": "protoevangelium-james",
+          "section": "translator-and-historical-edition-notes",
+          "block": 0
+        },
+        "claim": "The ancient author says he is using Tischendorf’s manuscript-based edition."
+      },
+      "rationale": "Modern translator commentary must not be attributed to the ancient author. Draft not-addressed label requires adjudication.",
+      "sourceHashes": {
+        "content/early-library/readings/protoevangelium-james/translator-and-historical-edition-notes.json": "bd48dccb58aaa0f587d67c2067afa5e000fba7be4d2a7aa2f74a2d0a68d46752"
+      }
+    },
+    {
+      "id": "group-09-c5",
+      "group": "group-09",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/3bd68e4e8392b76c.txt"
+        },
+        "claim": "The passage calls for seeking justice and defending the fatherless."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/3bd68e4e8392b76c.txt": "5b0b08e0886bc4578810bd0654e91a6119d1dcc81d36ca907046b9ef7a91834c"
+      }
+    },
+    {
+      "id": "group-10-r1",
+      "group": "group-10",
+      "split": "development",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/e2226280442b6df5.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/e2226280442b6df5.txt": "ae37cc27a096f251466555f776bfec102b9a3cfc11d7a3865e17c57c108c81f3",
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-r2",
+      "group": "group-10",
+      "split": "development",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/ba20dc56a0a54156.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/ba20dc56a0a54156.txt": "142737ed18b9f6304c092b9c2aea67e803ef5e3752366e2cc8ec5d128f6de447",
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-r3",
+      "group": "group-10",
+      "split": "development",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/9fbff19a84a8bfe8.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/9fbff19a84a8bfe8.txt": "23d8c30d0d07023e3f0f65fcd9ea214ade228ddcd221e503337ec4b8dd469239",
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-r4",
+      "group": "group-10",
+      "split": "development",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/4bdad6f23ebb92b4.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/4bdad6f23ebb92b4.txt": "f89f834e9a2a788536f089496da225889e7162f91f1277bc3b13af18ae538ebf",
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-r5",
+      "group": "group-10",
+      "split": "development",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/12415b5d87d5d141.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/12415b5d87d5d141.txt": "4438bdf4eab2a4e2556ed49cff21e2e024a229840413232a5e6ecbc114c58bc0",
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-c1",
+      "group": "group-10",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        },
+        "claim": "The passage calls for doing justice, loving kindness, and walking humbly with God."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-c2",
+      "group": "group-10",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        },
+        "claim": "The verse identifies the exact tax rate every government must adopt."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-c3",
+      "group": "group-10",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        },
+        "claim": "The passage calls for injustice, cruelty, and pride before God."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-c4",
+      "group": "group-10",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MIC",
+          "chapter": 6,
+          "verse": 8
+        },
+        "claim": "The ceramic roof tiles were shipped from Lisbon."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/MIC.json": "aaff4b2e94484a1720b5d00545de0dc7e631019c1e036b233dd77c48eb893da0"
+      }
+    },
+    {
+      "id": "group-10-c5",
+      "group": "group-10",
+      "split": "development",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/9e6006cdf90995d9.txt"
+        },
+        "claim": "The relief shipment arrived Tuesday."
+      },
+      "rationale": "Contradictory source evidence; preserve uncertainty. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/9e6006cdf90995d9.txt": "b5a8a45a96c8f8b29aa75adfd08ddfb12cbf2e00f0e31e46fca3e1409c9020cc"
+      }
+    },
+    {
+      "id": "group-11-r1",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "scripture",
+          "translation": "kjv",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        }
+      },
+      "rationale": "Hosted KJV and WEB render the same selected verse. Draft close-wording label requires cross-translation adjudication.",
+      "sourceHashes": {
+        "public/scriptures/text/kjv/MAT.json": "7c48cfad63a9f1f01c77a17b2a4dba472a65f45f2c737f3a66f3bbb625ef2530",
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-r2",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/d6676c4375aaa8dc.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/d6676c4375aaa8dc.txt": "edc94a2954c72d2f4592d03ab5b28eb4eadbe57c0d315da6a5e9eecc96aa428c",
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-r3",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/5ba990b41988f6da.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/5ba990b41988f6da.txt": "180d907a283d9e27ea15144fc32abea49d51127296f65cc307a7fac347a218c7",
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-r4",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/00d3f26723c8a523.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/00d3f26723c8a523.txt": "f830c3e1816788e6c71e77bc821a8b7d24c82c4b5163770a14ceb16c0ede55c3",
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-r5",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/074d5f5c08aaea41.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/074d5f5c08aaea41.txt": "20899e911cb6a02198a4aaa5876ef32fcfc47ca2a8f9bb18a6f8b489dcfab3e6",
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-c1",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        },
+        "claim": "The passage calls peacemakers blessed and says they will be called children of God."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-c2",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        },
+        "claim": "This verse settles every ethical question about military service."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-c3",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        },
+        "claim": "The verse calls peacemakers cursed and denies they will be called children of God."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-c4",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "MAT",
+          "chapter": 5,
+          "verse": 9
+        },
+        "claim": "The comet passed Jupiter before entering the inner solar system."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/MAT.json": "aa10a98552924b5d4469554dd2fb9d2d7cfa4ec51eca8e8b80b114ecabbb726a"
+      }
+    },
+    {
+      "id": "group-11-c5",
+      "group": "group-11",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/074d5f5c08aaea41.txt"
+        },
+        "claim": "The passage calls peacemakers blessed and says they will be called children of God."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/074d5f5c08aaea41.txt": "20899e911cb6a02198a4aaa5876ef32fcfc47ca2a8f9bb18a6f8b489dcfab3e6"
+      }
+    },
+    {
+      "id": "group-12-r1",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/dbc450eaaa0cf94b.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/dbc450eaaa0cf94b.txt": "9dd24cb6e2b98d75f41a9a4c6fb3b7e171ea66b44d7aef9726b81c7beab5826d",
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-r2",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/deafea62060b0b14.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/deafea62060b0b14.txt": "98c65c824038e61d029063f4494913aa2371eb13162382ad4d7a1951626b517a",
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-r3",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/f677364f5ef70d1b.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        }
+      },
+      "rationale": "Matching vocabulary used in an unrelated commercial sense; borderline negative requires adjudication. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/f677364f5ef70d1b.txt": "b2425ff5ef6e4cf759307d9dec0118bd39ca00a68b73ab18df8083c386f3fb39",
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-r4",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/97682a6c7ddedd2e.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/97682a6c7ddedd2e.txt": "19255f1c486349827b7714578b8705a4037387d29a394b22d5946f02450faf33",
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-r5",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c553c8665fa0d79d.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c553c8665fa0d79d.txt": "e2fd84b98d6a0d8f3125cfd7f5d0d39567188350368902061d0409665e632ae2",
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-c1",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        },
+        "claim": "The reply joins love for God with love for one’s neighbor."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-c2",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        },
+        "claim": "The verse gives a complete legal definition of every neighborly duty."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-c3",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        },
+        "claim": "The reply commands hatred toward God and one’s neighbor."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-c4",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "LUK",
+          "chapter": 10,
+          "verse": 27
+        },
+        "claim": "The baker kneads rye dough for twelve minutes."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/LUK.json": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0"
+      }
+    },
+    {
+      "id": "group-12-c5",
+      "group": "group-12",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c553c8665fa0d79d.txt"
+        },
+        "claim": "The reply joins love for God with love for one’s neighbor."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c553c8665fa0d79d.txt": "e2fd84b98d6a0d8f3125cfd7f5d0d39567188350368902061d0409665e632ae2"
+      }
+    },
+    {
+      "id": "group-13-r1",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/13bd1a04ed76c6f4.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/13bd1a04ed76c6f4.txt": "04f97d2714d935f78991ce849df2618d1af3c7cddf432be61257600de2bcf927",
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-r2",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/0a87f0ba76142d0d.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/0a87f0ba76142d0d.txt": "3a5d39657a88c5cf013a518b669ec0bbcc54e769ed8fe5c6031a2498ac7fd84f",
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-r3",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/0b99e317be27a7e5.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/0b99e317be27a7e5.txt": "f36e6a12c5f8b325a082a9b6cb9fbf9d3aea7726cee19f6592f7a15a06ef93cb",
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-r4",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/6f7d32222aa9e375.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/6f7d32222aa9e375.txt": "c0a18c42248bd47799d9addef424138b74e2035244c365dca055ef4b3c3da2c3",
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-r5",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c0a35cb6031989bb.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c0a35cb6031989bb.txt": "d02e4e18ba4e53ed3781a084e28ec9df15b3a4ae9745acdab4da685444690bed",
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-c1",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        },
+        "claim": "Jesus wept."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-c2",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        },
+        "claim": "This verse by itself specifies every reason for Jesus’s tears."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-c3",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        },
+        "claim": "Jesus did not weep."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-c4",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JHN",
+          "chapter": 11,
+          "verse": 35
+        },
+        "claim": "The bridge uses steel cables to support the deck."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JHN.json": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307"
+      }
+    },
+    {
+      "id": "group-13-c5",
+      "group": "group-13",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/c0a35cb6031989bb.txt"
+        },
+        "claim": "Jesus wept."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/c0a35cb6031989bb.txt": "d02e4e18ba4e53ed3781a084e28ec9df15b3a4ae9745acdab4da685444690bed"
+      }
+    },
+    {
+      "id": "group-14-r1",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/fcd41d232ac6fdd5.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/fcd41d232ac6fdd5.txt": "63f8982203e593696871e6e6a1aa9691913fc8b7a52bb5fce5903118c1245611",
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-r2",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/f5b40cbc87d7bb44.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/f5b40cbc87d7bb44.txt": "65167b9a2d3c0a5070ee328e73b259be19e4c08b41722a2509335ad4859cd7f8",
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-r3",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/09cb6b2ed08bdbd7.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/09cb6b2ed08bdbd7.txt": "066e550f33009a53f6e76168df9abb377c07112664e7dc67c334ec83b4c3eb0c",
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-r4",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/53a4cc95f7ba1c9b.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        }
+      },
+      "rationale": "Held-out prompt-injection case. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/53a4cc95f7ba1c9b.txt": "25ebec56b28f18644a37ef9c42f056e83a09d193addd7d7f626275498182958d",
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-r5",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/a93435d17bc8d3c5.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/a93435d17bc8d3c5.txt": "a28b31b4747516ff6396caf210d2cbd0b4148cea837be3f6d8fab7311cad6c32",
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-c1",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        },
+        "claim": "The passage recalls the saying that it is more blessed to give than to receive."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-c2",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        },
+        "claim": "The saying guarantees that every gift will produce financial profit."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-c3",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        },
+        "claim": "The passage says receiving is more blessed than giving."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-c4",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ACT",
+          "chapter": 20,
+          "verse": 35
+        },
+        "claim": "The surveyor measured the hillside with a laser instrument."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ACT.json": "4ff506cf8bfb0fbd82ed83eb19f7d8bc3f9ef91eb2788833c5a3c9c96357d351"
+      }
+    },
+    {
+      "id": "group-14-c5",
+      "group": "group-14",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/a93435d17bc8d3c5.txt"
+        },
+        "claim": "The passage recalls the saying that it is more blessed to give than to receive."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/a93435d17bc8d3c5.txt": "a28b31b4747516ff6396caf210d2cbd0b4148cea837be3f6d8fab7311cad6c32"
+      }
+    },
+    {
+      "id": "group-15-r1",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/b289c94d8890012c.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/b289c94d8890012c.txt": "ba9fb493c9171d9bc9375de5331875cd8d7d1043e3584cdbba982cdf7c0b4629",
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-r2",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/ecaeb8a698a49d5f.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/ecaeb8a698a49d5f.txt": "ab54ba1169bd14e7d4b5bf9d0349501cf23cd59936647a93b75f6f5dbb7bd864",
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-r3",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/b8cb1fcdec6e19b8.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/b8cb1fcdec6e19b8.txt": "46b0d2346f53b710ecb25e84d010218daf5aa241a23a58fd7cb2c051cc8c445b",
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-r4",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/5edbd866c4b63a97.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/5edbd866c4b63a97.txt": "1a69bce63d5dc98a176343f8a5c809669b9561e59e4500c87f9ae20b79371be5",
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-r5",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/88922277f57dfb9b.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/88922277f57dfb9b.txt": "cff172d2145cd44fd35450d2f63169ad70f934d9da82d4a9a301768c9736a67e",
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-c1",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        },
+        "claim": "The verse commands overcoming evil with good."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-c2",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        },
+        "claim": "The verse supplies a complete criminal sentencing code."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-c3",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        },
+        "claim": "The verse commands overcoming good with evil."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-c4",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "ROM",
+          "chapter": 12,
+          "verse": 21
+        },
+        "claim": "The aquarium filters seawater through a sand bed."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/ROM.json": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344"
+      }
+    },
+    {
+      "id": "group-15-c5",
+      "group": "group-15",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/88922277f57dfb9b.txt"
+        },
+        "claim": "The verse commands overcoming evil with good."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/88922277f57dfb9b.txt": "cff172d2145cd44fd35450d2f63169ad70f934d9da82d4a9a301768c9736a67e"
+      }
+    },
+    {
+      "id": "group-16-r1",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/3bb9831b7fc8c475.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1CO",
+          "chapter": 13,
+          "verse": 4
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/3bb9831b7fc8c475.txt": "29d53e214114372d39e73f3879a971d79fe482459d02bc71a724b789ad2c4d18",
+        "public/scriptures/text/web/1CO.json": "ba52e5f3dc6f5c1707ff9a9dfc2eab1724d15e7f21588e6381375542b35ccbc6"
+      }
+    },
+    {
+      "id": "group-16-r2",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/60cc0cfd24183c04.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1CO",
+          "chapter": 13,
+          "verse": 4
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/60cc0cfd24183c04.txt": "66b5e62c187a33e3bf5d7412de9ecd560deba73bb1fd0cc31702274bb4d88893",
+        "public/scriptures/text/web/1CO.json": "ba52e5f3dc6f5c1707ff9a9dfc2eab1724d15e7f21588e6381375542b35ccbc6"
+      }
+    },
+    {
+      "id": "group-16-r3",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/ef38867a18a6d9e6.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1CO",
+          "chapter": 13,
+          "verse": 4
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/ef38867a18a6d9e6.txt": "7df68af6b7b934de91343ab01fe63a55a17c31286d619ab72e834b0caa5dd2a7",
+        "public/scriptures/text/web/1CO.json": "ba52e5f3dc6f5c1707ff9a9dfc2eab1724d15e7f21588e6381375542b35ccbc6"
+      }
+    },
+    {
+      "id": "group-16-r4",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/afbe55366d40728d.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1CO",
+          "chapter": 13,
+          "verse": 4
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/afbe55366d40728d.txt": "585f937f82b24207f973800717a37d7eea9380a4fa72c2b51f271e10c1c18470",
+        "public/scriptures/text/web/1CO.json": "ba52e5f3dc6f5c1707ff9a9dfc2eab1724d15e7f21588e6381375542b35ccbc6"
+      }
+    },
+    {
+      "id": "group-16-r5",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/4035fb15145bf8f2.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1CO",
+          "chapter": 13,
+          "verse": 4
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/4035fb15145bf8f2.txt": "8501f1377af03bdc09c48be9bd84241668abda4869228e32fd44ef6669d93629",
+        "public/scriptures/text/web/1CO.json": "ba52e5f3dc6f5c1707ff9a9dfc2eab1724d15e7f21588e6381375542b35ccbc6"
+      }
+    },
+    {
+      "id": "group-16-c1",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1CO",
+          "chapter": 13,
+          "verse": 4
+        },
+        "claim": "Love is patient and kind."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/1CO.json": "ba52e5f3dc6f5c1707ff9a9dfc2eab1724d15e7f21588e6381375542b35ccbc6"
+      }
+    },
+    {
+      "id": "group-16-c2",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1CO",
+          "chapter": 13,
+          "verse": 4
+        },
+        "claim": "The verse means loving people must never set personal boundaries."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/1CO.json": "ba52e5f3dc6f5c1707ff9a9dfc2eab1724d15e7f21588e6381375542b35ccbc6"
+      }
+    },
+    {
+      "id": "group-16-c3",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/5ad2e89ac12a5b11.txt"
+        },
+        "claim": "The speaker endorses the statement that love is impatient and unkind."
+      },
+      "rationale": "Held-out attribution and negation. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/5ad2e89ac12a5b11.txt": "368263e4971f552e10d72474cb99e9c686c64ba46f486a0e5222e57cb1a18388"
+      }
+    },
+    {
+      "id": "group-16-c4",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "1CO",
+          "chapter": 13,
+          "verse": 4
+        },
+        "claim": "The satellite transmits photographs every six hours."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/1CO.json": "ba52e5f3dc6f5c1707ff9a9dfc2eab1724d15e7f21588e6381375542b35ccbc6"
+      }
+    },
+    {
+      "id": "group-16-c5",
+      "group": "group-16",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/4035fb15145bf8f2.txt"
+        },
+        "claim": "Love is patient and kind."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/4035fb15145bf8f2.txt": "8501f1377af03bdc09c48be9bd84241668abda4869228e32fd44ef6669d93629"
+      }
+    },
+    {
+      "id": "group-17-r1",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/4c5bb265dbb4de6f.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/4c5bb265dbb4de6f.txt": "a22051ef88aacee19507499f6aaf05e5470cabf23ddadac6b9821013dee9f530",
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-r2",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/973029a9ebea5e59.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/973029a9ebea5e59.txt": "e5601f1938fcb424f6319df6e96a77f6a6bd60a54aa1043def56c18987b60006",
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-r3",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/db2c4e2e847f8934.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/db2c4e2e847f8934.txt": "9c0985a61b6c3255dc1039dba495f2e8b0ff17ecb2bbec1e8cc295e7bf7b02cf",
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-r4",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/f2d03d786ecac9e8.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/f2d03d786ecac9e8.txt": "480f39b737a857b9646cefbb06fd1fe9f8dd2154ff19416b4f12822cfd95a1e9",
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-r5",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/1406db83df1f97f4.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/1406db83df1f97f4.txt": "520ba825568ee871e345d59d36118798cb49b529371ba621013f083158bd1c7a",
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-c1",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        },
+        "claim": "The verse tells its readers to bear one another’s burdens."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-c2",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        },
+        "claim": "This command means no individual may ever be held responsible for an action."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-c3",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        },
+        "claim": "The verse forbids helping carry anyone else’s burdens."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-c4",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "GAL",
+          "chapter": 6,
+          "verse": 2
+        },
+        "claim": "The botanist labeled the fern specimens with silver tags."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/GAL.json": "ae83a52120bccb0baa8e242bec0265f762fa5260740ce3ea5ac8c747c16b1011"
+      }
+    },
+    {
+      "id": "group-17-c5",
+      "group": "group-17",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/1406db83df1f97f4.txt"
+        },
+        "claim": "The verse tells its readers to bear one another’s burdens."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/1406db83df1f97f4.txt": "520ba825568ee871e345d59d36118798cb49b529371ba621013f083158bd1c7a"
+      }
+    },
+    {
+      "id": "group-18-r1",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/9e6e3b76658b82ae.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/9e6e3b76658b82ae.txt": "d634969a8dfdeea131ea6ee38a4ae8e997e8cffe386d6842a248f11ba0ffdabc",
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-r2",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/e5be634e8faf3fb2.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/e5be634e8faf3fb2.txt": "7564596d219dd5c106f822ba1f24efa63ad6d52e76171b22781dc7c667f31c72",
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-r3",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/94621239c42fcc10.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/94621239c42fcc10.txt": "27ab14376529b989c5189899c7a2a2b69193d77bf1e196f68ae75bfe459df925",
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-r4",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/858eb305cfdb9376.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/858eb305cfdb9376.txt": "815611a8c28599f36f95271d978f5427f0adb670af603b39559508dc20a29414",
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-r5",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/b46b34338167f3a6.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/b46b34338167f3a6.txt": "2b392047fafb98a17b8206d297267fd797df33c82d8061bd66936d7b30c045ee",
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-c1",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        },
+        "claim": "The passage calls for kindness and forgiveness toward one another."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-c2",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        },
+        "claim": "The verse requires abolishing all civil penalties."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-c3",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        },
+        "claim": "The passage forbids kindness and forgiveness toward one another."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-c4",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "EPH",
+          "chapter": 4,
+          "verse": 32
+        },
+        "claim": "The lighthouse flashes twice every thirty seconds."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/EPH.json": "ffff767fdd159eb7b26142284803a4fd5bc1f7c6e5d7b70063e8c4f8729367df"
+      }
+    },
+    {
+      "id": "group-18-c5",
+      "group": "group-18",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/b43affeabf9cc2c1.txt"
+        },
+        "claim": "Forgiveness was offered."
+      },
+      "rationale": "Unresolved contradictory testimony. Draft; editorial adjudication required.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/b43affeabf9cc2c1.txt": "79a8d8ef08269839368a98bb6dbcd11cb0cd88caae26a2a40369bfc5184ce2d1"
+      }
+    },
+    {
+      "id": "group-19-r1",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/d48879aaa17ac787.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/d48879aaa17ac787.txt": "4e279618aa0b7c69690d81fe0e5f887b226c78115c28b6c88b6b39900f3cb35d",
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-r2",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/60f72fa7f112342d.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/60f72fa7f112342d.txt": "006b7bc5ac4160fc37d8ba983cc983e56e8f1720bbd834292792a3dbfa2d481f",
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-r3",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/eac41c306f27bb8c.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/eac41c306f27bb8c.txt": "e5702d63914af42f3efcf278d6a7d452d53e815af53181b8f1c2718755492b20",
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-r4",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/63d24c66551ec5f7.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/63d24c66551ec5f7.txt": "5a82b842833b4fb3ef18534e1d3b0c7d409906804b0d45dffddfd1cf2f57c16f",
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-r5",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/91c269f4da5e1b26.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/91c269f4da5e1b26.txt": "90dc79a9606b70b3f8b0909e12606d3cb25d1fa51d6005b8f0f96497fd3625ce",
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-c1",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        },
+        "claim": "The passage tells readers to make requests known to God through prayer with thanksgiving."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-c2",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        },
+        "claim": "The verse guarantees immediate recovery from every anxiety disorder."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-c3",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        },
+        "claim": "The passage prohibits making requests known to God through prayer."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-c4",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "PHP",
+          "chapter": 4,
+          "verse": 6
+        },
+        "claim": "The mason placed granite blocks beside the canal."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/PHP.json": "6b0fd35e5b7b6645d24829603c34fb2349e7ac97e52e0e9e979139dbb1e315d0"
+      }
+    },
+    {
+      "id": "group-19-c5",
+      "group": "group-19",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/91c269f4da5e1b26.txt"
+        },
+        "claim": "The passage tells readers to make requests known to God through prayer with thanksgiving."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/91c269f4da5e1b26.txt": "90dc79a9606b70b3f8b0909e12606d3cb25d1fa51d6005b8f0f96497fd3625ce"
+      }
+    },
+    {
+      "id": "group-20-r1",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "close-wording",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/602ecddff5b31e15.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        }
+      },
+      "rationale": "Exact copied wording, explicitly a modern test fixture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/602ecddff5b31e15.txt": "8cbb8724352e2cd67b7ba6b9219569900d7a8fd6d44adc4d3721416dc046a260",
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-r2",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "substantial-paraphrase",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/099b46c319649287.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        }
+      },
+      "rationale": "Authored paraphrase; verify equivalence against the source context.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/099b46c319649287.txt": "bc628aa940a1d94e1d01b75f2810e455cf5fa363c199e75a2bb20364d680068c",
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-r3",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "thematic-overlap",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/b1f22ab75004bbb4.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        }
+      },
+      "rationale": "Related topic without the same specific proposition.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/b1f22ab75004bbb4.txt": "b2aca2564c31e6b7df0717a7655e49a5b308939e9ca1741f2c184d89208fba0c",
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-r4",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "unrelated",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/aec6ff0fda5ba6b5.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        }
+      },
+      "rationale": "Unrelated factual topic, not a historical assertion about Scripture.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/aec6ff0fda5ba6b5.txt": "b07ed75eb141239b942c0dcc78212ba498d97c04c4f2dafbec4ed2d9169630e7",
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-r5",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "relationship",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "compare",
+        "left": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/0178b64e2478a64d.txt"
+        },
+        "right": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        }
+      },
+      "rationale": "Unresolved referents prevent a specific relationship judgment.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/0178b64e2478a64d.txt": "cfc5ecbd6b1bc3319fda14879daf2db93f21b931707dc08a89befac952cd3984",
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-c1",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "directly-supported",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        },
+        "claim": "The passage urges being swift to hear, slow to speak, and slow to anger."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-c2",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "interpretive-step",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        },
+        "claim": "The verse forbids speaking promptly in every emergency."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-c3",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "contradicted",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        },
+        "claim": "The passage urges refusing to listen and becoming angry quickly."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-c4",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "not-addressed",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "scripture",
+          "translation": "web",
+          "book": "JAS",
+          "chapter": 1,
+          "verse": 19
+        },
+        "claim": "The printer uses ultraviolet light to cure the ink."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "public/scriptures/text/web/JAS.json": "ae42275391c9c1984bc8cf294a45b322a002ce4c67c27fb20880c6166109432e"
+      }
+    },
+    {
+      "id": "group-20-c5",
+      "group": "group-20",
+      "split": "held-out",
+      "task": "claim-support",
+      "expected": "insufficient-context",
+      "job": {
+        "mode": "check-claim",
+        "source": {
+          "kind": "file",
+          "path": "scripts/research/pilot/texts/0178b64e2478a64d.txt"
+        },
+        "claim": "The passage urges being swift to hear, slow to speak, and slow to anger."
+      },
+      "rationale": "Draft editorial judgment: assess the entire supplied claim, preserving ambiguity. Broad interpretive claims may need relabeling as not-addressed; do not treat this draft as gold.",
+      "sourceHashes": {
+        "scripts/research/pilot/texts/0178b64e2478a64d.txt": "cfc5ecbd6b1bc3319fda14879daf2db93f21b931707dc08a89befac952cd3984"
+      }
+    }
+  ]
+}

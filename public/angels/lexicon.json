@@ -1,0 +1,5119 @@
+{
+  "source": {
+    "originals": "public/scriptures/original",
+    "snapshot": "2026-08-27",
+    "editions": [
+      "lxx",
+      "oshb",
+      "sblgnt"
+    ],
+    "method": "Each term is a lemma exactly as the hosted morphology tags it; counts are token occurrences in the hosted text, read once at build. Phrases count a head lemma with its partner within two tokens."
+  },
+  "groups": [
+    {
+      "id": "messengers",
+      "title": "Messengers and holy ones",
+      "lane": "holy",
+      "note": "The words for the beings who stand before the throne and carry its word."
+    },
+    {
+      "id": "adversary",
+      "title": "The adversary",
+      "lane": "fallen",
+      "note": "Titles first, names later: the vocabulary of the accuser is mostly common nouns."
+    },
+    {
+      "id": "spirits",
+      "title": "Demons and unclean spirits",
+      "lane": "fallen",
+      "note": "What the Gospels cast out, and what the Law says Israel sacrificed to."
+    },
+    {
+      "id": "deep",
+      "title": "The deep",
+      "lane": "fallen",
+      "note": "Where the record puts the end of the story."
+    }
+  ],
+  "terms": [
+    {
+      "id": "malakh",
+      "group": "messengers",
+      "lang": "hebrew",
+      "lemmas": [
+        "4397"
+      ],
+      "headword": "מַלְאָךְ",
+      "transliteration": "mal’akh",
+      "gloss": "messenger; angel",
+      "note": "The ordinary word for a messenger, human or heavenly. The passage, not the word, tells you which is meant.",
+      "pair": "angelos",
+      "tokens": 213,
+      "books": 25,
+      "chapters": [
+        {
+          "book": "GEN",
+          "chapter": 16,
+          "edition": "oshb",
+          "verses": [
+            7,
+            9,
+            10,
+            11
+          ],
+          "count": 4
+        },
+        {
+          "book": "GEN",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            1,
+            15
+          ],
+          "count": 2
+        },
+        {
+          "book": "GEN",
+          "chapter": 21,
+          "edition": "oshb",
+          "verses": [
+            17
+          ],
+          "count": 1
+        },
+        {
+          "book": "GEN",
+          "chapter": 22,
+          "edition": "oshb",
+          "verses": [
+            11,
+            15
+          ],
+          "count": 2
+        },
+        {
+          "book": "GEN",
+          "chapter": 24,
+          "edition": "oshb",
+          "verses": [
+            7,
+            40
+          ],
+          "count": 2
+        },
+        {
+          "book": "GEN",
+          "chapter": 28,
+          "edition": "oshb",
+          "verses": [
+            12
+          ],
+          "count": 1
+        },
+        {
+          "book": "GEN",
+          "chapter": 31,
+          "edition": "oshb",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "GEN",
+          "chapter": 32,
+          "edition": "oshb",
+          "verses": [
+            1,
+            3,
+            6
+          ],
+          "count": 3
+        },
+        {
+          "book": "GEN",
+          "chapter": 48,
+          "edition": "oshb",
+          "verses": [
+            16
+          ],
+          "count": 1
+        },
+        {
+          "book": "EXO",
+          "chapter": 3,
+          "edition": "oshb",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "EXO",
+          "chapter": 14,
+          "edition": "oshb",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "EXO",
+          "chapter": 23,
+          "edition": "oshb",
+          "verses": [
+            20,
+            23
+          ],
+          "count": 2
+        },
+        {
+          "book": "EXO",
+          "chapter": 32,
+          "edition": "oshb",
+          "verses": [
+            34
+          ],
+          "count": 1
+        },
+        {
+          "book": "EXO",
+          "chapter": 33,
+          "edition": "oshb",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "NUM",
+          "chapter": 20,
+          "edition": "oshb",
+          "verses": [
+            14,
+            16
+          ],
+          "count": 2
+        },
+        {
+          "book": "NUM",
+          "chapter": 21,
+          "edition": "oshb",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "NUM",
+          "chapter": 22,
+          "edition": "oshb",
+          "verses": [
+            5,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            31,
+            32,
+            34,
+            35
+          ],
+          "count": 11
+        },
+        {
+          "book": "NUM",
+          "chapter": 24,
+          "edition": "oshb",
+          "verses": [
+            12
+          ],
+          "count": 1
+        },
+        {
+          "book": "DEU",
+          "chapter": 2,
+          "edition": "oshb",
+          "verses": [
+            26
+          ],
+          "count": 1
+        },
+        {
+          "book": "JOS",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            17,
+            25
+          ],
+          "count": 2
+        },
+        {
+          "book": "JOS",
+          "chapter": 7,
+          "edition": "oshb",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "JDG",
+          "chapter": 2,
+          "edition": "oshb",
+          "verses": [
+            1,
+            4
+          ],
+          "count": 2
+        },
+        {
+          "book": "JDG",
+          "chapter": 5,
+          "edition": "oshb",
+          "verses": [
+            23
+          ],
+          "count": 1
+        },
+        {
+          "book": "JDG",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            11,
+            12,
+            20,
+            21,
+            22,
+            35
+          ],
+          "count": 9
+        },
+        {
+          "book": "JDG",
+          "chapter": 7,
+          "edition": "oshb",
+          "verses": [
+            24
+          ],
+          "count": 1
+        },
+        {
+          "book": "JDG",
+          "chapter": 9,
+          "edition": "oshb",
+          "verses": [
+            31
+          ],
+          "count": 1
+        },
+        {
+          "book": "JDG",
+          "chapter": 11,
+          "edition": "oshb",
+          "verses": [
+            12,
+            13,
+            14,
+            17,
+            19
+          ],
+          "count": 5
+        },
+        {
+          "book": "JDG",
+          "chapter": 13,
+          "edition": "oshb",
+          "verses": [
+            3,
+            6,
+            9,
+            13,
+            15,
+            16,
+            17,
+            18,
+            20,
+            21
+          ],
+          "count": 12
+        },
+        {
+          "book": "1SA",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "1SA",
+          "chapter": 11,
+          "edition": "oshb",
+          "verses": [
+            3,
+            4,
+            7,
+            9
+          ],
+          "count": 5
+        },
+        {
+          "book": "1SA",
+          "chapter": 16,
+          "edition": "oshb",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "1SA",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            11,
+            14,
+            15,
+            16,
+            20,
+            21
+          ],
+          "count": 8
+        },
+        {
+          "book": "1SA",
+          "chapter": 23,
+          "edition": "oshb",
+          "verses": [
+            27
+          ],
+          "count": 1
+        },
+        {
+          "book": "1SA",
+          "chapter": 25,
+          "edition": "oshb",
+          "verses": [
+            14,
+            42
+          ],
+          "count": 2
+        },
+        {
+          "book": "1SA",
+          "chapter": 29,
+          "edition": "oshb",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "2SA",
+          "chapter": 2,
+          "edition": "oshb",
+          "verses": [
+            5
+          ],
+          "count": 1
+        },
+        {
+          "book": "2SA",
+          "chapter": 3,
+          "edition": "oshb",
+          "verses": [
+            12,
+            14,
+            26
+          ],
+          "count": 3
+        },
+        {
+          "book": "2SA",
+          "chapter": 5,
+          "edition": "oshb",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "2SA",
+          "chapter": 11,
+          "edition": "oshb",
+          "verses": [
+            4,
+            19,
+            22,
+            23,
+            25
+          ],
+          "count": 5
+        },
+        {
+          "book": "2SA",
+          "chapter": 12,
+          "edition": "oshb",
+          "verses": [
+            27
+          ],
+          "count": 1
+        },
+        {
+          "book": "2SA",
+          "chapter": 14,
+          "edition": "oshb",
+          "verses": [
+            17,
+            20
+          ],
+          "count": 2
+        },
+        {
+          "book": "2SA",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            27
+          ],
+          "count": 1
+        },
+        {
+          "book": "2SA",
+          "chapter": 24,
+          "edition": "oshb",
+          "verses": [
+            16,
+            17
+          ],
+          "count": 4
+        },
+        {
+          "book": "1KI",
+          "chapter": 13,
+          "edition": "oshb",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "1KI",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            2,
+            5,
+            7
+          ],
+          "count": 3
+        },
+        {
+          "book": "1KI",
+          "chapter": 20,
+          "edition": "oshb",
+          "verses": [
+            2,
+            5,
+            9
+          ],
+          "count": 4
+        },
+        {
+          "book": "1KI",
+          "chapter": 22,
+          "edition": "oshb",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 1,
+          "edition": "oshb",
+          "verses": [
+            2,
+            3,
+            5,
+            15,
+            16
+          ],
+          "count": 6
+        },
+        {
+          "book": "2KI",
+          "chapter": 5,
+          "edition": "oshb",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            32,
+            33
+          ],
+          "count": 3
+        },
+        {
+          "book": "2KI",
+          "chapter": 7,
+          "edition": "oshb",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 9,
+          "edition": "oshb",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 10,
+          "edition": "oshb",
+          "verses": [
+            8
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 14,
+          "edition": "oshb",
+          "verses": [
+            8
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 16,
+          "edition": "oshb",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 17,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            9,
+            14,
+            23,
+            35
+          ],
+          "count": 4
+        },
+        {
+          "book": "1CH",
+          "chapter": 14,
+          "edition": "oshb",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CH",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            2,
+            16
+          ],
+          "count": 2
+        },
+        {
+          "book": "1CH",
+          "chapter": 21,
+          "edition": "oshb",
+          "verses": [
+            12,
+            15,
+            16,
+            18,
+            20,
+            27,
+            30
+          ],
+          "count": 9
+        },
+        {
+          "book": "2CH",
+          "chapter": 18,
+          "edition": "oshb",
+          "verses": [
+            12
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CH",
+          "chapter": 32,
+          "edition": "oshb",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CH",
+          "chapter": 35,
+          "edition": "oshb",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CH",
+          "chapter": 36,
+          "edition": "oshb",
+          "verses": [
+            15,
+            16
+          ],
+          "count": 2
+        },
+        {
+          "book": "NEH",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "JOB",
+          "chapter": 1,
+          "edition": "oshb",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "JOB",
+          "chapter": 4,
+          "edition": "oshb",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "JOB",
+          "chapter": 33,
+          "edition": "oshb",
+          "verses": [
+            23
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 34,
+          "edition": "oshb",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 35,
+          "edition": "oshb",
+          "verses": [
+            5,
+            6
+          ],
+          "count": 2
+        },
+        {
+          "book": "PSA",
+          "chapter": 78,
+          "edition": "oshb",
+          "verses": [
+            49
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 91,
+          "edition": "oshb",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 103,
+          "edition": "oshb",
+          "verses": [
+            20
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 104,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 148,
+          "edition": "oshb",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "PRO",
+          "chapter": 13,
+          "edition": "oshb",
+          "verses": [
+            17
+          ],
+          "count": 1
+        },
+        {
+          "book": "PRO",
+          "chapter": 16,
+          "edition": "oshb",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "PRO",
+          "chapter": 17,
+          "edition": "oshb",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "ECC",
+          "chapter": 5,
+          "edition": "oshb",
+          "verses": [
+            6
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 14,
+          "edition": "oshb",
+          "verses": [
+            32
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 18,
+          "edition": "oshb",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 30,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 33,
+          "edition": "oshb",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 37,
+          "edition": "oshb",
+          "verses": [
+            9,
+            14,
+            36
+          ],
+          "count": 3
+        },
+        {
+          "book": "ISA",
+          "chapter": 42,
+          "edition": "oshb",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 44,
+          "edition": "oshb",
+          "verses": [
+            26
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 63,
+          "edition": "oshb",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "JER",
+          "chapter": 27,
+          "edition": "oshb",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "EZK",
+          "chapter": 17,
+          "edition": "oshb",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "EZK",
+          "chapter": 23,
+          "edition": "oshb",
+          "verses": [
+            16,
+            40
+          ],
+          "count": 2
+        },
+        {
+          "book": "EZK",
+          "chapter": 30,
+          "edition": "oshb",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "HOS",
+          "chapter": 12,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "NAM",
+          "chapter": 2,
+          "edition": "oshb",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "HAG",
+          "chapter": 1,
+          "edition": "oshb",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "ZEC",
+          "chapter": 1,
+          "edition": "oshb",
+          "verses": [
+            9,
+            11,
+            12,
+            13,
+            14,
+            19
+          ],
+          "count": 6
+        },
+        {
+          "book": "ZEC",
+          "chapter": 2,
+          "edition": "oshb",
+          "verses": [
+            3
+          ],
+          "count": 2
+        },
+        {
+          "book": "ZEC",
+          "chapter": 3,
+          "edition": "oshb",
+          "verses": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "count": 4
+        },
+        {
+          "book": "ZEC",
+          "chapter": 4,
+          "edition": "oshb",
+          "verses": [
+            1,
+            4,
+            5
+          ],
+          "count": 3
+        },
+        {
+          "book": "ZEC",
+          "chapter": 5,
+          "edition": "oshb",
+          "verses": [
+            5,
+            10
+          ],
+          "count": 2
+        },
+        {
+          "book": "ZEC",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            4,
+            5
+          ],
+          "count": 2
+        },
+        {
+          "book": "ZEC",
+          "chapter": 12,
+          "edition": "oshb",
+          "verses": [
+            8
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAL",
+          "chapter": 2,
+          "edition": "oshb",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAL",
+          "chapter": 3,
+          "edition": "oshb",
+          "verses": [
+            1
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "angelos",
+      "group": "messengers",
+      "lang": "greek",
+      "lemmas": [
+        "ἄγγελος"
+      ],
+      "headword": "ἄγγελος",
+      "transliteration": "ángelos",
+      "gloss": "messenger; angel",
+      "note": "Greek for messenger, used of heavenly and human messengers alike.",
+      "pair": "malakh",
+      "tokens": 233,
+      "books": 33,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            20,
+            24
+          ],
+          "count": 2
+        },
+        {
+          "book": "MAT",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            13,
+            19
+          ],
+          "count": 2
+        },
+        {
+          "book": "MAT",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            6,
+            11
+          ],
+          "count": 2
+        },
+        {
+          "book": "MAT",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            39,
+            41,
+            49
+          ],
+          "count": 3
+        },
+        {
+          "book": "MAT",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            27
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 18,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 22,
+          "edition": "sblgnt",
+          "verses": [
+            30
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 24,
+          "edition": "sblgnt",
+          "verses": [
+            31,
+            36
+          ],
+          "count": 2
+        },
+        {
+          "book": "MAT",
+          "chapter": 25,
+          "edition": "sblgnt",
+          "verses": [
+            31,
+            41
+          ],
+          "count": 2
+        },
+        {
+          "book": "MAT",
+          "chapter": 26,
+          "edition": "sblgnt",
+          "verses": [
+            53
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 28,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            5
+          ],
+          "count": 2
+        },
+        {
+          "book": "MRK",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            13
+          ],
+          "count": 2
+        },
+        {
+          "book": "MRK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            38
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            25
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            27,
+            32
+          ],
+          "count": 2
+        },
+        {
+          "book": "LUK",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            11,
+            13,
+            18,
+            19,
+            26,
+            30,
+            34,
+            35,
+            38
+          ],
+          "count": 9
+        },
+        {
+          "book": "LUK",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            9,
+            10,
+            13,
+            15,
+            21
+          ],
+          "count": 5
+        },
+        {
+          "book": "LUK",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            24,
+            27
+          ],
+          "count": 2
+        },
+        {
+          "book": "LUK",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            26,
+            52
+          ],
+          "count": 2
+        },
+        {
+          "book": "LUK",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            8,
+            9
+          ],
+          "count": 2
+        },
+        {
+          "book": "LUK",
+          "chapter": 15,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 22,
+          "edition": "sblgnt",
+          "verses": [
+            43
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 24,
+          "edition": "sblgnt",
+          "verses": [
+            23
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            51
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            29
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 20,
+          "edition": "sblgnt",
+          "verses": [
+            12
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 6,
+          "edition": "sblgnt",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            30,
+            35,
+            38,
+            53
+          ],
+          "count": 4
+        },
+        {
+          "book": "ACT",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            26
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            3,
+            7,
+            22
+          ],
+          "count": 3
+        },
+        {
+          "book": "ACT",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            15,
+            23
+          ],
+          "count": 7
+        },
+        {
+          "book": "ACT",
+          "chapter": 23,
+          "edition": "sblgnt",
+          "verses": [
+            8,
+            9
+          ],
+          "count": 2
+        },
+        {
+          "book": "ACT",
+          "chapter": 27,
+          "edition": "sblgnt",
+          "verses": [
+            23
+          ],
+          "count": 1
+        },
+        {
+          "book": "ROM",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            38
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CO",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CO",
+          "chapter": 6,
+          "edition": "sblgnt",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CO",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CO",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CO",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CO",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "GAL",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            8
+          ],
+          "count": 1
+        },
+        {
+          "book": "GAL",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "GAL",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "COL",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "2TH",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "1TI",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            16
+          ],
+          "count": 1
+        },
+        {
+          "book": "1TI",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "HEB",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            4,
+            5,
+            6,
+            7,
+            13
+          ],
+          "count": 6
+        },
+        {
+          "book": "HEB",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            5,
+            7,
+            9,
+            16
+          ],
+          "count": 5
+        },
+        {
+          "book": "HEB",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "HEB",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "JAS",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            25
+          ],
+          "count": 1
+        },
+        {
+          "book": "1PE",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            12
+          ],
+          "count": 1
+        },
+        {
+          "book": "1PE",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "2PE",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            4,
+            11
+          ],
+          "count": 2
+        },
+        {
+          "book": "JUD",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            6
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            20
+          ],
+          "count": 2
+        },
+        {
+          "book": "REV",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            8,
+            12,
+            18
+          ],
+          "count": 4
+        },
+        {
+          "book": "REV",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            5,
+            7,
+            14
+          ],
+          "count": 4
+        },
+        {
+          "book": "REV",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            11
+          ],
+          "count": 2
+        },
+        {
+          "book": "REV",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            2,
+            11
+          ],
+          "count": 4
+        },
+        {
+          "book": "REV",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "count": 9
+        },
+        {
+          "book": "REV",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            11,
+            13,
+            14,
+            15
+          ],
+          "count": 6
+        },
+        {
+          "book": "REV",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            5,
+            7,
+            8,
+            9,
+            10
+          ],
+          "count": 6
+        },
+        {
+          "book": "REV",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            7,
+            9
+          ],
+          "count": 3
+        },
+        {
+          "book": "REV",
+          "chapter": 14,
+          "edition": "sblgnt",
+          "verses": [
+            6,
+            8,
+            9,
+            10,
+            15,
+            17,
+            18,
+            19
+          ],
+          "count": 8
+        },
+        {
+          "book": "REV",
+          "chapter": 15,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            6,
+            7,
+            8
+          ],
+          "count": 4
+        },
+        {
+          "book": "REV",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            5
+          ],
+          "count": 2
+        },
+        {
+          "book": "REV",
+          "chapter": 17,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            7
+          ],
+          "count": 2
+        },
+        {
+          "book": "REV",
+          "chapter": 18,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            21
+          ],
+          "count": 2
+        },
+        {
+          "book": "REV",
+          "chapter": 19,
+          "edition": "sblgnt",
+          "verses": [
+            17
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 20,
+          "edition": "sblgnt",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 21,
+          "edition": "sblgnt",
+          "verses": [
+            9,
+            12,
+            17
+          ],
+          "count": 3
+        },
+        {
+          "book": "REV",
+          "chapter": 22,
+          "edition": "sblgnt",
+          "verses": [
+            6,
+            8,
+            16
+          ],
+          "count": 3
+        },
+        {
+          "book": "TOB",
+          "chapter": 5,
+          "edition": "lxx",
+          "verses": [
+            4,
+            6,
+            17,
+            22
+          ],
+          "count": 4
+        },
+        {
+          "book": "TOB",
+          "chapter": 6,
+          "edition": "lxx",
+          "verses": [
+            3,
+            4,
+            5,
+            7,
+            11,
+            14,
+            16
+          ],
+          "count": 7
+        },
+        {
+          "book": "TOB",
+          "chapter": 8,
+          "edition": "lxx",
+          "verses": [
+            3,
+            15
+          ],
+          "count": 2
+        },
+        {
+          "book": "TOB",
+          "chapter": 11,
+          "edition": "lxx",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "TOB",
+          "chapter": 12,
+          "edition": "lxx",
+          "verses": [
+            5,
+            15,
+            22
+          ],
+          "count": 3
+        },
+        {
+          "book": "JDT",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "JDT",
+          "chapter": 3,
+          "edition": "lxx",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "ESG",
+          "chapter": 5,
+          "edition": "lxx",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "WIS",
+          "chapter": 16,
+          "edition": "lxx",
+          "verses": [
+            20
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 43,
+          "edition": "lxx",
+          "verses": [
+            26
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 48,
+          "edition": "lxx",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "LJE",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            6
+          ],
+          "count": 1
+        },
+        {
+          "book": "SUS",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            24,
+            30,
+            34,
+            35
+          ],
+          "count": 5
+        },
+        {
+          "book": "BEL",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            28,
+            30,
+            33
+          ],
+          "count": 3
+        },
+        {
+          "book": "1MA",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            44
+          ],
+          "count": 1
+        },
+        {
+          "book": "1MA",
+          "chapter": 5,
+          "edition": "lxx",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "1MA",
+          "chapter": 7,
+          "edition": "lxx",
+          "verses": [
+            10,
+            41
+          ],
+          "count": 2
+        },
+        {
+          "book": "2MA",
+          "chapter": 11,
+          "edition": "lxx",
+          "verses": [
+            6
+          ],
+          "count": 1
+        },
+        {
+          "book": "2MA",
+          "chapter": 15,
+          "edition": "lxx",
+          "verses": [
+            22,
+            23
+          ],
+          "count": 2
+        },
+        {
+          "book": "1ES",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            48,
+            49
+          ],
+          "count": 2
+        },
+        {
+          "book": "PS2",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "3MA",
+          "chapter": 6,
+          "edition": "lxx",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "4MA",
+          "chapter": 4,
+          "edition": "lxx",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "4MA",
+          "chapter": 7,
+          "edition": "lxx",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "DAG",
+          "chapter": 2,
+          "edition": "lxx",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "DAG",
+          "chapter": 3,
+          "edition": "lxx",
+          "verses": [
+            49,
+            58,
+            92,
+            95
+          ],
+          "count": 4
+        },
+        {
+          "book": "DAG",
+          "chapter": 4,
+          "edition": "lxx",
+          "verses": [
+            6,
+            15,
+            16,
+            17,
+            25,
+            27
+          ],
+          "count": 6
+        },
+        {
+          "book": "DAG",
+          "chapter": 10,
+          "edition": "lxx",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "DAG",
+          "chapter": 12,
+          "edition": "lxx",
+          "verses": [
+            1
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "archangelos",
+      "group": "messengers",
+      "lang": "greek",
+      "lemmas": [
+        "ἀρχάγγελος"
+      ],
+      "headword": "ἀρχάγγελος",
+      "transliteration": "archángelos",
+      "gloss": "chief messenger; archangel",
+      "note": "Twice in the New Testament, and never in the plural.",
+      "tokens": 2,
+      "books": 2,
+      "chapters": [
+        {
+          "book": "1TH",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            16
+          ],
+          "count": 1
+        },
+        {
+          "book": "JUD",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            9
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "kerub",
+      "group": "messengers",
+      "lang": "hebrew",
+      "lemmas": [
+        "3742"
+      ],
+      "headword": "כְּרוּב",
+      "transliteration": "kerûb",
+      "gloss": "cherub",
+      "note": "The guardians at Eden's gate, the figures over the ark, and the living beings that carry the throne in Ezekiel.",
+      "pair": "cheroub",
+      "tokens": 91,
+      "books": 12,
+      "chapters": [
+        {
+          "book": "GEN",
+          "chapter": 3,
+          "edition": "oshb",
+          "verses": [
+            24
+          ],
+          "count": 1
+        },
+        {
+          "book": "EXO",
+          "chapter": 25,
+          "edition": "oshb",
+          "verses": [
+            18,
+            19,
+            20,
+            22
+          ],
+          "count": 7
+        },
+        {
+          "book": "EXO",
+          "chapter": 26,
+          "edition": "oshb",
+          "verses": [
+            1,
+            31
+          ],
+          "count": 2
+        },
+        {
+          "book": "EXO",
+          "chapter": 36,
+          "edition": "oshb",
+          "verses": [
+            8,
+            35
+          ],
+          "count": 2
+        },
+        {
+          "book": "EXO",
+          "chapter": 37,
+          "edition": "oshb",
+          "verses": [
+            7,
+            8,
+            9
+          ],
+          "count": 6
+        },
+        {
+          "book": "NUM",
+          "chapter": 7,
+          "edition": "oshb",
+          "verses": [
+            89
+          ],
+          "count": 1
+        },
+        {
+          "book": "1SA",
+          "chapter": 4,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "2SA",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "2SA",
+          "chapter": 22,
+          "edition": "oshb",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "1KI",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            32,
+            35
+          ],
+          "count": 15
+        },
+        {
+          "book": "1KI",
+          "chapter": 7,
+          "edition": "oshb",
+          "verses": [
+            29,
+            36
+          ],
+          "count": 2
+        },
+        {
+          "book": "1KI",
+          "chapter": 8,
+          "edition": "oshb",
+          "verses": [
+            6,
+            7
+          ],
+          "count": 3
+        },
+        {
+          "book": "2KI",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CH",
+          "chapter": 13,
+          "edition": "oshb",
+          "verses": [
+            6
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CH",
+          "chapter": 28,
+          "edition": "oshb",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CH",
+          "chapter": 3,
+          "edition": "oshb",
+          "verses": [
+            7,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "count": 8
+        },
+        {
+          "book": "2CH",
+          "chapter": 5,
+          "edition": "oshb",
+          "verses": [
+            7,
+            8
+          ],
+          "count": 3
+        },
+        {
+          "book": "PSA",
+          "chapter": 18,
+          "edition": "oshb",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 80,
+          "edition": "oshb",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 99,
+          "edition": "oshb",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 37,
+          "edition": "oshb",
+          "verses": [
+            16
+          ],
+          "count": 1
+        },
+        {
+          "book": "EZK",
+          "chapter": 9,
+          "edition": "oshb",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "EZK",
+          "chapter": 10,
+          "edition": "oshb",
+          "verses": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            14,
+            15,
+            16,
+            18,
+            19,
+            20
+          ],
+          "count": 21
+        },
+        {
+          "book": "EZK",
+          "chapter": 11,
+          "edition": "oshb",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "EZK",
+          "chapter": 28,
+          "edition": "oshb",
+          "verses": [
+            14,
+            16
+          ],
+          "count": 2
+        },
+        {
+          "book": "EZK",
+          "chapter": 41,
+          "edition": "oshb",
+          "verses": [
+            18,
+            20,
+            25
+          ],
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "cheroub",
+      "group": "messengers",
+      "lang": "greek",
+      "lemmas": [
+        "Χεροῦβ",
+        "χερουβιν",
+        "χερουβιμ"
+      ],
+      "headword": "Χερουβίν",
+      "transliteration": "cheroubín",
+      "gloss": "cherubim",
+      "note": "The Hebrew word carried into Greek letters.",
+      "pair": "kerub",
+      "tokens": 3,
+      "books": 3,
+      "chapters": [
+        {
+          "book": "HEB",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            5
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 49,
+          "edition": "lxx",
+          "verses": [
+            8
+          ],
+          "count": 1
+        },
+        {
+          "book": "DAG",
+          "chapter": 3,
+          "edition": "lxx",
+          "verses": [
+            55
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "saraph",
+      "group": "messengers",
+      "lang": "hebrew",
+      "lemmas": [
+        "8314 b"
+      ],
+      "headword": "שָׂרָף",
+      "transliteration": "sārāph",
+      "gloss": "seraph",
+      "note": "Twice, both in Isaiah's throne vision. The tagged Hebrew keeps it apart from the same letters used for the fiery serpents of the wilderness.",
+      "tokens": 2,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "ISA",
+          "chapter": 6,
+          "edition": "oshb",
+          "verses": [
+            2,
+            6
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "satan",
+      "group": "adversary",
+      "lang": "hebrew",
+      "lemmas": [
+        "7854"
+      ],
+      "headword": "שָׂטָן",
+      "transliteration": "śāṭān",
+      "gloss": "adversary; accuser",
+      "note": "A common noun: an adversary. Used of men, of the angel who blocks Balaam's road, and — with the definite article — of the accuser in Job and Zechariah.",
+      "pair": "satanas",
+      "tokens": 27,
+      "books": 8,
+      "chapters": [
+        {
+          "book": "NUM",
+          "chapter": 22,
+          "edition": "oshb",
+          "verses": [
+            22,
+            32
+          ],
+          "count": 2
+        },
+        {
+          "book": "1SA",
+          "chapter": 29,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "2SA",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "1KI",
+          "chapter": 5,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "1KI",
+          "chapter": 11,
+          "edition": "oshb",
+          "verses": [
+            14,
+            23,
+            25
+          ],
+          "count": 3
+        },
+        {
+          "book": "1CH",
+          "chapter": 21,
+          "edition": "oshb",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "JOB",
+          "chapter": 1,
+          "edition": "oshb",
+          "verses": [
+            6,
+            7,
+            8,
+            9,
+            12
+          ],
+          "count": 7
+        },
+        {
+          "book": "JOB",
+          "chapter": 2,
+          "edition": "oshb",
+          "verses": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "count": 7
+        },
+        {
+          "book": "PSA",
+          "chapter": 109,
+          "edition": "oshb",
+          "verses": [
+            6
+          ],
+          "count": 1
+        },
+        {
+          "book": "ZEC",
+          "chapter": 3,
+          "edition": "oshb",
+          "verses": [
+            1,
+            2
+          ],
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "satanas",
+      "group": "adversary",
+      "lang": "greek",
+      "lemmas": [
+        "Σατανᾶς",
+        "σατανᾶς"
+      ],
+      "headword": "Σατανᾶς",
+      "transliteration": "Satanâs",
+      "gloss": "Satan",
+      "note": "The Hebrew title carried into Greek as a name.",
+      "pair": "satan",
+      "tokens": 37,
+      "books": 13,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            26
+          ],
+          "count": 2
+        },
+        {
+          "book": "MAT",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            23
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            23,
+            26
+          ],
+          "count": 3
+        },
+        {
+          "book": "MRK",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            33
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            16
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 22,
+          "edition": "sblgnt",
+          "verses": [
+            3,
+            31
+          ],
+          "count": 2
+        },
+        {
+          "book": "JHN",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            27
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 26,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "ROM",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            20
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CO",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            5
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CO",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            5
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CO",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CO",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CO",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "1TH",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "2TH",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "1TI",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            20
+          ],
+          "count": 1
+        },
+        {
+          "book": "1TI",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            9,
+            13,
+            24
+          ],
+          "count": 4
+        },
+        {
+          "book": "REV",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 20,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            7
+          ],
+          "count": 2
+        },
+        {
+          "book": "SIR",
+          "chapter": 21,
+          "edition": "lxx",
+          "verses": [
+            27
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "diabolos",
+      "group": "adversary",
+      "lang": "greek",
+      "lemmas": [
+        "διάβολος",
+        "Διάβολος"
+      ],
+      "headword": "διάβολος",
+      "transliteration": "diábolos",
+      "gloss": "slanderer; the devil",
+      "note": "Literally a slanderer. In the letters it also describes people, not only the devil.",
+      "tokens": 41,
+      "books": 17,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            5,
+            8,
+            11
+          ],
+          "count": 4
+        },
+        {
+          "book": "MAT",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            39
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 25,
+          "edition": "sblgnt",
+          "verses": [
+            41
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            3,
+            6,
+            13
+          ],
+          "count": 4
+        },
+        {
+          "book": "LUK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            12
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 6,
+          "edition": "sblgnt",
+          "verses": [
+            70
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            33
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            38
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "EPH",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            27
+          ],
+          "count": 1
+        },
+        {
+          "book": "EPH",
+          "chapter": 6,
+          "edition": "sblgnt",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "1TI",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            6,
+            7,
+            11
+          ],
+          "count": 3
+        },
+        {
+          "book": "2TI",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            26
+          ],
+          "count": 1
+        },
+        {
+          "book": "2TI",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "TIT",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "HEB",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "JAS",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "1PE",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            8
+          ],
+          "count": 1
+        },
+        {
+          "book": "1JN",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            8,
+            10
+          ],
+          "count": 4
+        },
+        {
+          "book": "JUD",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            9,
+            12
+          ],
+          "count": 2
+        },
+        {
+          "book": "REV",
+          "chapter": 20,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            10
+          ],
+          "count": 2
+        },
+        {
+          "book": "ESG",
+          "chapter": 7,
+          "edition": "lxx",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "ESG",
+          "chapter": 8,
+          "edition": "lxx",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "WIS",
+          "chapter": 2,
+          "edition": "lxx",
+          "verses": [
+            24
+          ],
+          "count": 1
+        },
+        {
+          "book": "1MA",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            36
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "beelzeboul",
+      "group": "adversary",
+      "lang": "greek",
+      "lemmas": [
+        "Βεελζεβούλ"
+      ],
+      "headword": "Βεελζεβούλ",
+      "transliteration": "Beelzeboúl",
+      "gloss": "Beelzebul",
+      "note": "The name the Gospels record being thrown at Jesus. Only in Matthew, Mark, and Luke.",
+      "tokens": 7,
+      "books": 3,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            25
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            24,
+            27
+          ],
+          "count": 2
+        },
+        {
+          "book": "MRK",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            15,
+            18,
+            19
+          ],
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "beliar",
+      "group": "adversary",
+      "lang": "greek",
+      "lemmas": [
+        "Βελιάρ"
+      ],
+      "headword": "Βελιάρ",
+      "transliteration": "Beliár",
+      "gloss": "Beliar (Belial)",
+      "note": "Once in the New Testament, in Paul's question to Corinth.",
+      "tokens": 1,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "2CO",
+          "chapter": 6,
+          "edition": "sblgnt",
+          "verses": [
+            15
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "drakon",
+      "group": "adversary",
+      "lang": "greek",
+      "lemmas": [
+        "δράκων"
+      ],
+      "headword": "δράκων",
+      "transliteration": "drákōn",
+      "gloss": "dragon; serpent",
+      "note": "Revelation's word. Its twelfth chapter names the dragon as the old serpent, the devil, and Satan.",
+      "tokens": 21,
+      "books": 5,
+      "chapters": [
+        {
+          "book": "REV",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            3,
+            4,
+            7,
+            9,
+            13,
+            16,
+            17
+          ],
+          "count": 8
+        },
+        {
+          "book": "REV",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            4,
+            11
+          ],
+          "count": 3
+        },
+        {
+          "book": "REV",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 20,
+          "edition": "sblgnt",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "ESG",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "ESG",
+          "chapter": 10,
+          "edition": "lxx",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "WIS",
+          "chapter": 16,
+          "edition": "lxx",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 25,
+          "edition": "lxx",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "BEL",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            19,
+            21,
+            23,
+            24
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "nachash",
+      "group": "adversary",
+      "lang": "hebrew",
+      "lemmas": [
+        "5175"
+      ],
+      "headword": "נָחָשׁ",
+      "transliteration": "nāḥāš",
+      "gloss": "serpent",
+      "note": "The ordinary word for a snake, including the one in Eden.",
+      "pair": "ophis",
+      "tokens": 31,
+      "books": 13,
+      "chapters": [
+        {
+          "book": "GEN",
+          "chapter": 3,
+          "edition": "oshb",
+          "verses": [
+            1,
+            2,
+            4,
+            13,
+            14
+          ],
+          "count": 5
+        },
+        {
+          "book": "GEN",
+          "chapter": 49,
+          "edition": "oshb",
+          "verses": [
+            17
+          ],
+          "count": 1
+        },
+        {
+          "book": "EXO",
+          "chapter": 4,
+          "edition": "oshb",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "EXO",
+          "chapter": 7,
+          "edition": "oshb",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "NUM",
+          "chapter": 21,
+          "edition": "oshb",
+          "verses": [
+            6,
+            7,
+            9
+          ],
+          "count": 5
+        },
+        {
+          "book": "DEU",
+          "chapter": 8,
+          "edition": "oshb",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "2KI",
+          "chapter": 18,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "JOB",
+          "chapter": 26,
+          "edition": "oshb",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 58,
+          "edition": "oshb",
+          "verses": [
+            4
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 140,
+          "edition": "oshb",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "PRO",
+          "chapter": 23,
+          "edition": "oshb",
+          "verses": [
+            32
+          ],
+          "count": 1
+        },
+        {
+          "book": "PRO",
+          "chapter": 30,
+          "edition": "oshb",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "ECC",
+          "chapter": 10,
+          "edition": "oshb",
+          "verses": [
+            8,
+            11
+          ],
+          "count": 2
+        },
+        {
+          "book": "ISA",
+          "chapter": 14,
+          "edition": "oshb",
+          "verses": [
+            29
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 27,
+          "edition": "oshb",
+          "verses": [
+            1
+          ],
+          "count": 2
+        },
+        {
+          "book": "ISA",
+          "chapter": 65,
+          "edition": "oshb",
+          "verses": [
+            25
+          ],
+          "count": 1
+        },
+        {
+          "book": "JER",
+          "chapter": 8,
+          "edition": "oshb",
+          "verses": [
+            17
+          ],
+          "count": 1
+        },
+        {
+          "book": "JER",
+          "chapter": 46,
+          "edition": "oshb",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "AMO",
+          "chapter": 5,
+          "edition": "oshb",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "AMO",
+          "chapter": 9,
+          "edition": "oshb",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "MIC",
+          "chapter": 7,
+          "edition": "oshb",
+          "verses": [
+            17
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "ophis",
+      "group": "adversary",
+      "lang": "greek",
+      "lemmas": [
+        "ὄφις"
+      ],
+      "headword": "ὄφις",
+      "transliteration": "óphis",
+      "gloss": "serpent",
+      "note": "The ordinary word for a snake. Revelation applies it to the devil as the old serpent.",
+      "pair": "nachash",
+      "tokens": 18,
+      "books": 10,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            16
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 23,
+          "edition": "sblgnt",
+          "verses": [
+            32
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CO",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            9
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CO",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            9,
+            14,
+            15
+          ],
+          "count": 3
+        },
+        {
+          "book": "REV",
+          "chapter": 20,
+          "edition": "sblgnt",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "WIS",
+          "chapter": 16,
+          "edition": "lxx",
+          "verses": [
+            5
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 21,
+          "edition": "lxx",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 25,
+          "edition": "lxx",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "4MA",
+          "chapter": 18,
+          "edition": "lxx",
+          "verses": [
+            8
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "shed",
+      "group": "spirits",
+      "lang": "hebrew",
+      "lemmas": [
+        "7700"
+      ],
+      "headword": "שֵׁד",
+      "transliteration": "šēd",
+      "gloss": "demon",
+      "note": "Twice in the Hebrew Bible, both times of the gods to whom Israel sacrificed.",
+      "pair": "daimonion",
+      "tokens": 2,
+      "books": 2,
+      "chapters": [
+        {
+          "book": "DEU",
+          "chapter": 32,
+          "edition": "oshb",
+          "verses": [
+            17
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 106,
+          "edition": "oshb",
+          "verses": [
+            37
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "daimonion",
+      "group": "spirits",
+      "lang": "greek",
+      "lemmas": [
+        "δαιμόνιον"
+      ],
+      "headword": "δαιμόνιον",
+      "transliteration": "daimónion",
+      "gloss": "demon",
+      "note": "The New Testament's usual word. Paul uses it of the gods behind pagan sacrifice, as Deuteronomy does.",
+      "pair": "shed",
+      "tokens": 72,
+      "books": 11,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            33,
+            34
+          ],
+          "count": 3
+        },
+        {
+          "book": "MAT",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            8
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            24,
+            27,
+            28
+          ],
+          "count": 4
+        },
+        {
+          "book": "MAT",
+          "chapter": 17,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            34,
+            39
+          ],
+          "count": 3
+        },
+        {
+          "book": "MRK",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            15,
+            22
+          ],
+          "count": 3
+        },
+        {
+          "book": "MRK",
+          "chapter": 6,
+          "edition": "sblgnt",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            25,
+            28,
+            29
+          ],
+          "count": 3
+        },
+        {
+          "book": "MRK",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            38
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            9,
+            17
+          ],
+          "count": 2
+        },
+        {
+          "book": "LUK",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            33,
+            35,
+            41
+          ],
+          "count": 3
+        },
+        {
+          "book": "LUK",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            33
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            27,
+            29,
+            30,
+            33,
+            35,
+            38
+          ],
+          "count": 7
+        },
+        {
+          "book": "LUK",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            42,
+            49
+          ],
+          "count": 3
+        },
+        {
+          "book": "LUK",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            17
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            14,
+            15,
+            18,
+            19,
+            20
+          ],
+          "count": 7
+        },
+        {
+          "book": "LUK",
+          "chapter": 13,
+          "edition": "sblgnt",
+          "verses": [
+            32
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            20
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            37,
+            38,
+            41
+          ],
+          "count": 3
+        },
+        {
+          "book": "JHN",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            20,
+            21
+          ],
+          "count": 2
+        },
+        {
+          "book": "ACT",
+          "chapter": 17,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "1CO",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            20,
+            21
+          ],
+          "count": 4
+        },
+        {
+          "book": "1TI",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "JAS",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            20
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            14
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 18,
+          "edition": "sblgnt",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "TOB",
+          "chapter": 3,
+          "edition": "lxx",
+          "verses": [
+            8,
+            17
+          ],
+          "count": 2
+        },
+        {
+          "book": "TOB",
+          "chapter": 6,
+          "edition": "lxx",
+          "verses": [
+            8,
+            15,
+            16,
+            17
+          ],
+          "count": 4
+        },
+        {
+          "book": "TOB",
+          "chapter": 8,
+          "edition": "lxx",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "BAR",
+          "chapter": 4,
+          "edition": "lxx",
+          "verses": [
+            7,
+            35
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "daimon",
+      "group": "spirits",
+      "lang": "greek",
+      "lemmas": [
+        "δαίμων"
+      ],
+      "headword": "δαίμων",
+      "transliteration": "daímōn",
+      "gloss": "demon",
+      "note": "Once, in Matthew's telling of the swine.",
+      "tokens": 1,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            31
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "daimonizomai",
+      "group": "spirits",
+      "lang": "greek",
+      "lemmas": [
+        "δαιμονίζομαι"
+      ],
+      "headword": "δαιμονίζομαι",
+      "transliteration": "daimonízomai",
+      "gloss": "to be demon-possessed",
+      "note": "The verb behind “demon-possessed”. Gospels only.",
+      "tokens": 13,
+      "books": 4,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            24
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            16,
+            28,
+            33
+          ],
+          "count": 3
+        },
+        {
+          "book": "MAT",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            32
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 15,
+          "edition": "sblgnt",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            32
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            15,
+            16,
+            18
+          ],
+          "count": 3
+        },
+        {
+          "book": "LUK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            36
+          ],
+          "count": 1
+        },
+        {
+          "book": "JHN",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            21
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "unclean-spirit",
+      "group": "spirits",
+      "lang": "greek",
+      "phrase": [
+        "πνεῦμα",
+        "ἀκάθαρτος"
+      ],
+      "lemmas": [],
+      "headword": "πνεῦμα ἀκάθαρτον",
+      "transliteration": "pneûma akátharton",
+      "gloss": "unclean spirit",
+      "note": "The Gospels' phrase — Mark's especially — for what Jesus casts out.",
+      "tokens": 23,
+      "books": 5,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            1
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAT",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            43
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 1,
+          "edition": "sblgnt",
+          "verses": [
+            23,
+            26,
+            27
+          ],
+          "count": 3
+        },
+        {
+          "book": "MRK",
+          "chapter": 3,
+          "edition": "sblgnt",
+          "verses": [
+            11,
+            30
+          ],
+          "count": 2
+        },
+        {
+          "book": "MRK",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            2,
+            8,
+            13
+          ],
+          "count": 3
+        },
+        {
+          "book": "MRK",
+          "chapter": 6,
+          "edition": "sblgnt",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            24
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            25
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 4,
+          "edition": "sblgnt",
+          "verses": [
+            33,
+            36
+          ],
+          "count": 2
+        },
+        {
+          "book": "LUK",
+          "chapter": 6,
+          "edition": "sblgnt",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            29
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            42
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            24
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            16
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 16,
+          "edition": "sblgnt",
+          "verses": [
+            13
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 18,
+          "edition": "sblgnt",
+          "verses": [
+            2
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "evil-spirit",
+      "group": "spirits",
+      "lang": "hebrew",
+      "phrase": [
+        "7307",
+        "7451 a"
+      ],
+      "lemmas": [],
+      "headword": "רוּחַ רָעָה",
+      "transliteration": "rûaḥ rāʿâ",
+      "gloss": "evil spirit",
+      "note": "The spirit that troubled Saul, and the one sent between Abimelech and Shechem.",
+      "pair": "evil-spirit-greek",
+      "tokens": 7,
+      "books": 2,
+      "chapters": [
+        {
+          "book": "JDG",
+          "chapter": 9,
+          "edition": "oshb",
+          "verses": [
+            23
+          ],
+          "count": 1
+        },
+        {
+          "book": "1SA",
+          "chapter": 16,
+          "edition": "oshb",
+          "verses": [
+            14,
+            15,
+            16,
+            23
+          ],
+          "count": 4
+        },
+        {
+          "book": "1SA",
+          "chapter": 18,
+          "edition": "oshb",
+          "verses": [
+            10
+          ],
+          "count": 1
+        },
+        {
+          "book": "1SA",
+          "chapter": 19,
+          "edition": "oshb",
+          "verses": [
+            9
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "evil-spirit-greek",
+      "group": "spirits",
+      "lang": "greek",
+      "phrase": [
+        "πνεῦμα",
+        "πονηρός"
+      ],
+      "lemmas": [],
+      "headword": "πνεῦμα πονηρόν",
+      "transliteration": "pneûma ponērón",
+      "gloss": "evil spirit",
+      "note": "Mostly Luke's phrase, in his Gospel and in Acts.",
+      "pair": "evil-spirit",
+      "tokens": 9,
+      "books": 4,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 12,
+          "edition": "sblgnt",
+          "verses": [
+            45
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 7,
+          "edition": "sblgnt",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            2
+          ],
+          "count": 1
+        },
+        {
+          "book": "LUK",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            26
+          ],
+          "count": 1
+        },
+        {
+          "book": "ACT",
+          "chapter": 19,
+          "edition": "sblgnt",
+          "verses": [
+            12,
+            13,
+            15,
+            16
+          ],
+          "count": 4
+        },
+        {
+          "book": "TOB",
+          "chapter": 6,
+          "edition": "lxx",
+          "verses": [
+            8
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "sair",
+      "group": "spirits",
+      "lang": "hebrew",
+      "lemmas": [
+        "8163 c"
+      ],
+      "headword": "שָׂעִיר",
+      "transliteration": "śāʿîr",
+      "gloss": "goat-demon",
+      "note": "The tagged Hebrew separates this sense from the ordinary he-goat. Four times, in the Law, Chronicles, and Isaiah.",
+      "tokens": 4,
+      "books": 3,
+      "chapters": [
+        {
+          "book": "LEV",
+          "chapter": 17,
+          "edition": "oshb",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "2CH",
+          "chapter": 11,
+          "edition": "oshb",
+          "verses": [
+            15
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 13,
+          "edition": "oshb",
+          "verses": [
+            21
+          ],
+          "count": 1
+        },
+        {
+          "book": "ISA",
+          "chapter": 34,
+          "edition": "oshb",
+          "verses": [
+            14
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "lilith",
+      "group": "spirits",
+      "lang": "hebrew",
+      "lemmas": [
+        "3917"
+      ],
+      "headword": "לִילִית",
+      "transliteration": "lîlîṯ",
+      "gloss": "night creature",
+      "note": "Once, in Isaiah's picture of Edom laid waste. The WEB renders “night creature”; the demon Lilith of later Jewish tradition is not in the text.",
+      "tokens": 1,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "ISA",
+          "chapter": 34,
+          "edition": "oshb",
+          "verses": [
+            14
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "azazel",
+      "group": "spirits",
+      "lang": "hebrew",
+      "lemmas": [
+        "5799"
+      ],
+      "headword": "עֲזָאזֵל",
+      "transliteration": "ʿazāʾzēl",
+      "gloss": "Azazel; the scapegoat",
+      "note": "Only in the Day of Atonement law. Whether it names a place, the sent-away goat, or a desert spirit is disputed; 1 Enoch makes it a fallen angel.",
+      "tokens": 4,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "LEV",
+          "chapter": 16,
+          "edition": "oshb",
+          "verses": [
+            8,
+            10,
+            26
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "asmodaios",
+      "group": "spirits",
+      "lang": "greek",
+      "lemmas": [
+        "Ἀσμοδαῖος"
+      ],
+      "headword": "Ἀσμοδαῖος",
+      "transliteration": "Asmodaîos",
+      "gloss": "Asmodaeus",
+      "note": "Twice, both in Tobit.",
+      "tokens": 2,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "TOB",
+          "chapter": 3,
+          "edition": "lxx",
+          "verses": [
+            8,
+            17
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "legion",
+      "group": "spirits",
+      "lang": "greek",
+      "lemmas": [
+        "λεγιών"
+      ],
+      "headword": "λεγιών",
+      "transliteration": "legiṑn",
+      "gloss": "legion",
+      "note": "A Roman unit of thousands. Used of the demons at Gerasa and, in Jesus' own mouth, of angels.",
+      "tokens": 4,
+      "books": 3,
+      "chapters": [
+        {
+          "book": "MAT",
+          "chapter": 26,
+          "edition": "sblgnt",
+          "verses": [
+            53
+          ],
+          "count": 1
+        },
+        {
+          "book": "MRK",
+          "chapter": 5,
+          "edition": "sblgnt",
+          "verses": [
+            9,
+            15
+          ],
+          "count": 2
+        },
+        {
+          "book": "LUK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            30
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "abaddon",
+      "group": "deep",
+      "lang": "hebrew",
+      "lemmas": [
+        "11"
+      ],
+      "headword": "אֲבַדּוֹן",
+      "transliteration": "ʾăḇaddôn",
+      "gloss": "destruction; the place of ruin",
+      "note": "In Job, Psalms, and Proverbs a place, set beside Sheol and death. Revelation makes it a name.",
+      "pair": "abaddon-greek",
+      "tokens": 5,
+      "books": 3,
+      "chapters": [
+        {
+          "book": "JOB",
+          "chapter": 26,
+          "edition": "oshb",
+          "verses": [
+            6
+          ],
+          "count": 1
+        },
+        {
+          "book": "JOB",
+          "chapter": 28,
+          "edition": "oshb",
+          "verses": [
+            22
+          ],
+          "count": 1
+        },
+        {
+          "book": "JOB",
+          "chapter": 31,
+          "edition": "oshb",
+          "verses": [
+            12
+          ],
+          "count": 1
+        },
+        {
+          "book": "PSA",
+          "chapter": 88,
+          "edition": "oshb",
+          "verses": [
+            11
+          ],
+          "count": 1
+        },
+        {
+          "book": "PRO",
+          "chapter": 15,
+          "edition": "oshb",
+          "verses": [
+            11
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "abaddon-greek",
+      "group": "deep",
+      "lang": "greek",
+      "lemmas": [
+        "Ἀβαδδών"
+      ],
+      "headword": "Ἀβαδδών",
+      "transliteration": "Abaddṑn",
+      "gloss": "Abaddon",
+      "note": "Once, as the Hebrew name of the angel of the abyss.",
+      "pair": "abaddon",
+      "tokens": 1,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "REV",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            11
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "apollyon",
+      "group": "deep",
+      "lang": "greek",
+      "lemmas": [
+        "Ἀπολλύων"
+      ],
+      "headword": "Ἀπολλύων",
+      "transliteration": "Apollýōn",
+      "gloss": "Destroyer",
+      "note": "Once, as the Greek of the same name.",
+      "tokens": 1,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "REV",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            11
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "abyssos",
+      "group": "deep",
+      "lang": "greek",
+      "lemmas": [
+        "ἄβυσσος"
+      ],
+      "headword": "ἄβυσσος",
+      "transliteration": "ábyssos",
+      "gloss": "abyss; the deep",
+      "note": "In the Greek Old Testament, deep waters. In Revelation, the pit that is opened and shut.",
+      "tokens": 18,
+      "books": 7,
+      "chapters": [
+        {
+          "book": "LUK",
+          "chapter": 8,
+          "edition": "sblgnt",
+          "verses": [
+            31
+          ],
+          "count": 1
+        },
+        {
+          "book": "ROM",
+          "chapter": 10,
+          "edition": "sblgnt",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 9,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            2,
+            11
+          ],
+          "count": 3
+        },
+        {
+          "book": "REV",
+          "chapter": 11,
+          "edition": "sblgnt",
+          "verses": [
+            7
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 17,
+          "edition": "sblgnt",
+          "verses": [
+            8
+          ],
+          "count": 1
+        },
+        {
+          "book": "REV",
+          "chapter": 20,
+          "edition": "sblgnt",
+          "verses": [
+            1,
+            3
+          ],
+          "count": 2
+        },
+        {
+          "book": "WIS",
+          "chapter": 10,
+          "edition": "lxx",
+          "verses": [
+            19
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 16,
+          "edition": "lxx",
+          "verses": [
+            16
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 24,
+          "edition": "lxx",
+          "verses": [
+            5,
+            27
+          ],
+          "count": 2
+        },
+        {
+          "book": "SIR",
+          "chapter": 42,
+          "edition": "lxx",
+          "verses": [
+            18
+          ],
+          "count": 1
+        },
+        {
+          "book": "SIR",
+          "chapter": 43,
+          "edition": "lxx",
+          "verses": [
+            23
+          ],
+          "count": 1
+        },
+        {
+          "book": "MAN",
+          "chapter": 1,
+          "edition": "lxx",
+          "verses": [
+            3
+          ],
+          "count": 1
+        },
+        {
+          "book": "DAG",
+          "chapter": 3,
+          "edition": "lxx",
+          "verses": [
+            55
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "tartaroo",
+      "group": "deep",
+      "lang": "greek",
+      "lemmas": [
+        "ταρταρόω"
+      ],
+      "headword": "ταρταρόω",
+      "transliteration": "tartaróō",
+      "gloss": "to cast into Tartarus",
+      "note": "Once, in 2 Peter, of the angels who sinned — the only time the New Testament borrows the Greek name for the underworld.",
+      "tokens": 1,
+      "books": 1,
+      "chapters": [
+        {
+          "book": "2PE",
+          "chapter": 2,
+          "edition": "sblgnt",
+          "verses": [
+            4
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "terms": 31,
+    "tokens": 895,
+    "chapters": 340
+  }
+}

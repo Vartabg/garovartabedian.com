@@ -1,0 +1,892 @@
+[
+  {
+    "id": "egyptian-duat",
+    "name": "Egyptian Mythology (Duat)",
+    "description": "A perilous nighttime journey the soul takes alongside the sun god Ra, through twelve gates guarded by serpents and fire. At the Hall of Two Truths, Anubis weighs the heart against the feather of Ma'at — the justified pass on to the Field of Reeds; the heart that fails is devoured by Ammit, and the soul ceases to exist.",
+    "origin": "Ancient Egyptian Religion",
+    "antiquityAge": -2500,
+    "taxonomy": {
+      "family": "ancient-near-east",
+      "patterns": [
+        "judgment",
+        "underworld",
+        "paradise",
+        "annihilation"
+      ]
+    },
+    "searchText": "12 hours/gates corresponding to the sun's journey through the underworld. · Sunken golden sands, deep papyrus green reeds, mirror-flat water reflecting lapis lazuli · Pert em Hru (the so-called \"Book of the Dead\"), spell 125 — Negative Confessions and the Hall of Two Truths · Amduat (\"That Which is in the Duat\") — funerary text from the New Kingdom royal tombs · Lake of Fire · Hall of Two Truths · Field of Reeds (Aaru) · Scales of Justice · Solar Barque · Lapis scarabs · Papyrus columns · Osiris · Anubis · Ammit"
+  },
+  {
+    "id": "greek-hades",
+    "name": "Greek Mythology (Hades)",
+    "description": "A grey, misty realm beneath the earth where Charon ferries souls across the water for the price of a coin, and the dead persist as faint shades of their living selves. Later tradition sorts them: Elysium for the blessed, the Asphodel meadows for the many, Tartarus for the great transgressors.",
+    "origin": "Ancient Greek Religion",
+    "antiquityAge": -800,
+    "taxonomy": {
+      "family": "classical",
+      "patterns": [
+        "judgment",
+        "underworld",
+        "paradise"
+      ]
+    },
+    "searchText": "Three main regions: Elysium (heroes), Asphodel Meadows (ordinary), Tartarus (damned). · Misty, desolate, echoing, dominated by the River Styx and pale asphodel flowers · Homer, Odyssey, Book 11 (the Nekyia) — Odysseus consults the dead · Hesiod, Theogony, lines 720-819 — geography of Tartarus · River Styx · Asphodel Meadows · Elysium · Tartarus · Ferryman's coin · Pomegranate · Three-headed hound · Asphodel flowers · Hades · Charon · Minos"
+  },
+  {
+    "id": "christianity-purgatorio",
+    "name": "Dante's Purgatorio (Catholic Medieval Vision)",
+    "description": "Dante's vision of purgatory as a steep terraced mountain in the southern sea, where souls willingly climb through seven cornices — one for each deadly sin — toward the Earthly Paradise at the summit. The suffering purifies rather than punishes, and every soul on the mountain is certain of reaching God.",
+    "origin": "Medieval Christian Theology / Divine Comedy",
+    "antiquityAge": 1320,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "ascent",
+        "paradise"
+      ]
+    },
+    "searchText": "Seven terraces corresponding to the seven deadly sins. · Golden and harsh, steep rocky inclines, penitent isolation · Dante Alighieri, Purgatorio (c. 1320), Cantos I-XXXIII — literary vision · Thomas Aquinas, Summa Theologiae, Supplement Q.69-99 — normative theology of purgatory · Ante-Purgatory · Seven Terraces · Earthly Paradise · Wall of Fire · Seven carved 'P's · Whips · Heavy stones · Ascending spiral · Virgil · Beatrice · Cato"
+  },
+  {
+    "id": "buddhism-naraka",
+    "name": "Naraka (Buddhist Hell Realms)",
+    "description": "A vast subterranean system of eight hot and eight cold hells where beings burn off the residue of grave karma under Yama's oversight. No sentence is eternal: when the karmic debt is exhausted — even after ages — the being dies out of hell and is reborn on another turn of the wheel.",
+    "origin": "Mahayana and Theravada Buddhist Cosmology",
+    "antiquityAge": -400,
+    "taxonomy": {
+      "family": "dharmic",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "underworld",
+        "liberation"
+      ]
+    },
+    "searchText": "Eight cold and eight hot Narakas layered hierarchically. · Oppressive, infinite caverns of ice and iron, claustrophobic and visceral · Vasubandhu, Abhidharmakośa III.58-59 — the eight cold and hot Narakas · Devadūta Sutta, Majjhima Nikāya 130 — discourse of the Divine Messengers · Avici (Uninterrupted Hell) · Crimson Lotus Hell · Iron Cauldron · Forest of Swords · Mirror of Karma · Iron dog · Freezing lotus · Measuring scales · Yama · Ksitigarbha"
+  },
+  {
+    "id": "norse-valhalla",
+    "name": "Norse Mythology (Helheim & Valhalla)",
+    "description": "The dead are divided by manner of death and divine choice: valkyries carry half the battle-slain to Odin's golden Valhalla to feast and train for Ragnarök, Freyja claims the other half for Fólkvangr, and the rest descend to Hel's grey, quiet realm — with corpse-cold Náströnd reserved for oath-breakers.",
+    "origin": "Old Norse Religion",
+    "antiquityAge": 800,
+    "taxonomy": {
+      "family": "european-folk",
+      "patterns": [
+        "no-judgment",
+        "paradise",
+        "underworld"
+      ]
+    },
+    "searchText": "Divided primarily by merit of death (combat vs natural causes). · Frost-bitten mountain peaks, crackling blue fire, and mead-scented halls · Snorri Sturluson, Prose Edda, Gylfaginning chs. 34-35 (Hel) and 38-41 (Valhalla) · Poetic Edda — Vafþrúðnismál and Grímnismál · Gjöll Bridge · Naglfar Yard · Valhalla's Hall · Roots of Yggdrasil · Drinking horns · Raven shadows · Runestones · Interlocking shields · Odin · Hel · Valkyries"
+  },
+  {
+    "id": "aztec-mictlan",
+    "name": "Aztec Mythology (Mictlān)",
+    "description": "Destination follows manner of death: warriors and mothers lost in childbirth accompany the sun, the drowned go to Tlālōcān — and most souls walk a four-year, nine-level descent through clashing mountains, obsidian winds, and rivers, guided by a dog, to reach Mictlantecuhtli's still realm of Mictlān.",
+    "origin": "Nahuatl / Mexica Mythology",
+    "antiquityAge": 1400,
+    "taxonomy": {
+      "family": "indigenous-americas",
+      "patterns": [
+        "no-judgment",
+        "underworld",
+        "annihilation",
+        "paradise"
+      ]
+    },
+    "searchText": "Nine distinct levels of trial before total annihilation/rest. · Obsidian dust, volcanic orange glows, and bone-white architecture · Bernardino de Sahagún, Florentine Codex, Book 3 ch. 1 — the four-year Mictlan journey · Codex Vaticanus A (Vatican Library MS 3738) · The Nine Planes · Obsidian Mountains · River of the Dog · Field of Obsidian Blades · Marigolds · Skull icons · Obsidian blades · Feathered serpents · Mictlāntēcutli · Mictecacihuatl · Xolotl"
+  },
+  {
+    "id": "ainu-kamuy-realm",
+    "name": "Traditional Ainu Religion",
+    "description": "A mirrored existence where the human world and the world of the kamuy interact through constant reciprocity — gifts, ritual, and sending ceremonies. The dead continue village life in an inverted land where seasons run opposite, and the boundary stays open in both directions to those who keep the exchange.",
+    "origin": "Indigenous Ainu people of Hokkaido, Japan",
+    "antiquityAge": 1000,
+    "taxonomy": {
+      "family": "east-asian",
+      "patterns": [
+        "no-judgment",
+        "ancestral",
+        "rebirth",
+        "paradise"
+      ]
+    },
+    "searchText": "Horizontal parallel domains of humans and gods. · Mist-shrouded forests, smoke from hearth fires, and the presence of animal spirits · Donald L. Philippi, Songs of Gods, Songs of Humans (1979) — translated yukar epics · Bronisław Piłsudski, Materials for the Study of the Ainu Language and Folklore (1912) · World of Humans · World of the Gods · Sacred Mountains · Bear-sending (Iomante) · Inaw offerings · Woodcarving · Blakiston's fish-owl · Kamuy · Ancestors"
+  },
+  {
+    "id": "orphic-astral-immortality",
+    "name": "Orphic Astral Metaphysics",
+    "description": "Initiates buried with gold tablets carried instructions for the world below: refuse the spring of forgetting, drink from the lake of Memory, declare “I am a child of Earth and starry Heaven.” Through initiation and lives of purity the soul escapes the grievous circle of rebirth and rises to dwell among the stars.",
+    "origin": "Ancient Greek Orphic mysteries",
+    "antiquityAge": -500,
+    "taxonomy": {
+      "family": "classical",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "ascent",
+        "liberation",
+        "underworld"
+      ]
+    },
+    "searchText": "Vertical layering from the subterranean mire to the celestial aether. · Aetherial blue radiance, starry night skies, and cold subterranean springs · Derveni Papyrus, columns I-VI (4th c. BCE) — earliest Orphic theogony · Gold Tablets — Pelinna and Hipponion lamellae (4th-3rd c. BCE) · Orphic Rhapsodies (Hellenistic compilation) · Lake of Memory · The Milky Way · Isles of the Blessed · Tartaros · Gold tablets · Kid fallen into milk · White cypress · Constellation of Taurus · Dionysos · Persephone · Mnemosyne"
+  },
+  {
+    "id": "melanesian-cargo-myth-dream",
+    "name": "Melanesian Cargo Cult",
+    "description": "A millenarian vision recorded across post-contact Melanesia: the ancestors are not gone but withheld, and one day they return on ships and planes bearing the manufactured abundance the living were denied — overturning the colonial order and ushering in an age of plenty and total equality.",
+    "origin": "Post-contact Papua New Guinea/Melanesia",
+    "antiquityAge": 1900,
+    "taxonomy": {
+      "family": "oceania",
+      "patterns": [
+        "no-judgment",
+        "ancestral"
+      ]
+    },
+    "searchText": "Collapsing of the spirit world into the immediate physical present. · Liminal dawn light, the scent of sea salt, and the silhouette of distant steamships · Peter Worsley, The Trumpet Shall Sound (1957) — foundational ethnography · Lamont Lindstrom, Cargo Cult: Strange Stories of Desire from Melanesia and Beyond (1993) · Miraculous Harbors · Mt. Turu · Ancestral Gravesites · Steamships · Airplanes · The 'Book' (printed word) · White-skinned spirits · Mambu · Yali · The Ancestors"
+  },
+  {
+    "id": "islam-barzakh-sirat",
+    "name": "Islam (Akhira & Barzakh)",
+    "description": "The soul waits in Barzakh between death and resurrection. On the Day of Judgment, every deed is weighed; each soul crosses As-Sirāt, a bridge thinner than a hair over Jahannam, before entering Jannah’s gardens or falling to the fire.",
+    "origin": "Qur’anic Revelation / Hadith Tradition",
+    "antiquityAge": 632,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "paradise",
+        "underworld"
+      ]
+    },
+    "searchText": "Barzakh (intermediate) → Day of Judgment with weighing of deeds → bridge crossing → eternal Jannah or Jahannam. · Gardens, rivers, scales, and the bridge — gravitas balanced with divine mercy. · The Qur’an — esp. Sūra al-Wāqiʿa (56), Sūra ar-Raḥmān (55), Sūra al-Ghāshiya (88) · Ṣaḥīḥ al-Bukhārī and Ṣaḥīḥ Muslim — hadith on the grave, resurrection, and the bridge · Al-Ghazālī, Iḥyāʾ ʿUlūm al-Dīn, Kitāb Dhikr al-Mawt wa mā Baʿdahu — Book of the Remembrance of Death · Barzakh · As-Sirāṭ bridge · Mīzān (the scales) · Jannah (eight gates) · Jahannam (seven levels) · Al-Kawthar river · The hair-fine bridge · The scales of deeds · Rivers of Jannah · Seven levels of fire · Green gardens · Allāh · Izrāʼīl (Malak al-Mawt) · Munkar and Nakīr · Riḑwān · Mālik"
+  },
+  {
+    "id": "judaism-gehinnom",
+    "name": "Judaism (Sheol → Olam Ha-Ba)",
+    "description": "Understated by design. The Hebrew Bible names Sheol — a collective shadowy grave. Rabbinic tradition developed Gehinnom (purification, typically capped at twelve months) and Olam Ha-Ba, the World to Come. Emphasis remains on right action in Olam Ha-Zeh — this world.",
+    "origin": "Hebrew Bible / Rabbinic and Kabbalistic Tradition",
+    "antiquityAge": -500,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "underworld",
+        "paradise"
+      ]
+    },
+    "searchText": "Sheol (biblical collective grave) → Gehinnom (rabbinic purification, typically twelve months) → Olam Ha-Ba (World to Come), with T’chiyat ha-Metim (resurrection) at the Messianic age. · Textual, patient, this-world-first; a brief interval before the World to Come. · Tanakh — Job 10, Psalms 6 & 88 on Sheol; Isaiah 26; Daniel 12:2–3 on resurrection · Mishnah, Sanhedrin 10:1 — “All Israel have a share in the World to Come” · Mishnah Eduyot 2:10 — the twelve-month Gehinnom limit · Babylonian Talmud — Tractate Berakhot, Rosh Hashanah on afterlife themes · Maimonides, Mishneh Torah, Hilkhot Teshuvah 8–10 — philosophical systematization · Sheol (biblical) · Gehinnom (rabbinic) · Gan Eden · Olam Ha-Ba · T’chiyat ha-Metim — resurrection of the dead · The Messianic age · Scroll and book · Ascending ladder (Jacob’s ladder) · Kibbutz galuyot — the ingathering · Rising dust of resurrection · The Messianic dawn · HaShem / Adonai · The Mashiach (Messiah) · Tzaddikim · Samael"
+  },
+  {
+    "id": "hinduism-garuda-purana",
+    "name": "Hinduism (Samsara & Moksha)",
+    "description": "The ātman passes through countless births across fourteen lokas — worlds heavenly and hellish — according to karma. Every state is temporary; even the gods fall when their merit is spent. The cycle ends only in moksha — the ātman’s recognition of its identity with Brahman, the absolute.",
+    "origin": "Vedic and Post-Vedic Indian Religion",
+    "antiquityAge": -800,
+    "taxonomy": {
+      "family": "dharmic",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "underworld",
+        "paradise",
+        "liberation"
+      ]
+    },
+    "searchText": "Samsara (beginningless cycle of rebirth across fourteen lokas per karma) → interim states in svargas or narakas → moksha (liberation into union with Brahman) via one or more of the four classical paths. · Cyclical, layered, patient; cosmic wheels with liberation at the still center. · Upaniṣads — esp. Kaṭha (Nachiketa and Yama), Bṛhadāraṇyaka, Chāndogya · Bhagavad Gītā — chs. 2, 8, 15 on rebirth and moksha; ch. 18 on the four paths · Garuḍa Purāṇa — detailed descriptions of the postmortem journey · Manusmṛti, ch. 12 — karma and transmigration · Śaṅkara, Vivekacūḍāmaṇi — non-dual Vedanta on ātman–Brahman identity · Fourteen lokas · Yama’s court of judgment · Chitragupta’s ledger · Naraka realms · Svarga realms · The wheel of samsara · Moksha (liberation into Brahman) · The chakra (wheel) · Yama with buffalo and noose · Chitragupta’s scroll · Lotus rising from water · The dissolving boundary between ātman and Brahman · Yama · Chitragupta · Brahmā, Viṣṇu, Śiva · Kṛṣṇa · Nachiketa"
+  },
+  {
+    "id": "christianity-last-things",
+    "name": "Christianity (Last Things — Heaven, Hell, Judgment)",
+    "description": "At death, each soul faces particular judgment — the righteous enter the Beatific Vision of God, the impenitent enter separation from God. At the end of the age, the dead are bodily resurrected; Christ returns as judge; and creation is renewed as the New Heaven and New Earth. Catholic, Orthodox, and Protestant traditions diverge on details; the core shape is shared.",
+    "origin": "Biblical and Creedal Christian Tradition",
+    "antiquityAge": 33,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "paradise",
+        "underworld"
+      ]
+    },
+    "searchText": "Death → Particular Judgment → Intermediate State (Heaven / Hell / Purgatory) → Christ’s return → General Resurrection → General Judgment → New Heaven and New Earth or eternal separation. · Cross, resurrection, and renewed creation — the sweep of sin, judgment, mercy, and glory. · New Testament — Matthew 25 (sheep and goats), Luke 16 (Lazarus and the rich man), 1 Corinthians 15 (resurrection), Revelation 20–22 (final judgment, new creation) · Nicene Creed — “he shall come again in glory to judge the living and the dead… I look for the resurrection of the dead, and the life of the world to come” · Augustine, City of God, Books 20–22 — on the Last Things · Thomas Aquinas, Summa Theologiae, Supplement Q. 69–99 · Catechism of the Catholic Church, §§ 1020–1065 — Catholic systematic presentation · Particular Judgment at death · Intermediate State · Purgatory (Catholic) · General Resurrection · General Judgment · Heaven (Beatific Vision) · Hell (separation from God) · New Heaven and New Earth · The Cross and empty tomb · The risen Christ · The New Jerusalem descending · Sheep and goats separated · The lake of fire · The Beatific Vision · God (the Trinity) · Jesus Christ · The angels · Satan and the demons · The saints"
+  },
+  {
+    "id": "jainism-gatis",
+    "name": "Jainism (Four Gatis)",
+    "description": "The soul (jīva) is propelled through four gatis — heavenly (deva), human (manuṣya), animal/plant (tiryañca), and hellish (nāraka) — by karmic matter clinging to it. Liberation (mokṣa) comes through the Three Jewels and ascent through fourteen guṇasthānas to Siddhaloka at the universe’s apex.",
+    "origin": "Śramaṇa Tradition / Ancient Jain Philosophy",
+    "antiquityAge": -500,
+    "taxonomy": {
+      "family": "dharmic",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "ascent",
+        "liberation",
+        "underworld"
+      ]
+    },
+    "searchText": "Four gatis (deva, manuṣya, tiryañca, nāraka) driven by karmic accumulation → ascent through fourteen guṇasthānas → liberation to Siddhaloka. · Eternal cosmos shaped like a person; every action leaves residue; liberation rises to the crown. · Tattvārtha Sūtra (Umāsvāti, c. 2nd c. CE) — foundational Jain metaphysics · Ācārāṅga Sūtra — earliest Śvetāmbara canon; ascetic conduct · Samayasāra (Kundakunda) — the soul’s essential nature · Sūtrakṛtāṅga — cosmology and karmic doctrine · Four gatis · Seven narakas · Fourteen guṇasthānas · Siddhaloka · Three Jewels (Right Faith, Right Knowledge, Right Conduct) · The loka as cosmic person · Shedding karmic particles · The swastika of the four gatis · The siddha silhouette at the crown · Mahāvīra · Ṛṣabhanātha · The Tīrthaṅkaras · Indra"
+  },
+  {
+    "id": "sikhism-sach-khand",
+    "name": "Sikhism (Five Khands → Sach Khand)",
+    "description": "The soul’s ascent passes through five khands — Dharam, Gian, Saram, Karam, and finally Sach Khand, the realm of truth where the self dissolves into the formless Ik Oaṅkār. Karma shapes the journey; grace (naḍar) opens the final door.",
+    "origin": "Sikh Gurū Tradition / Guru Granth Sāhib",
+    "antiquityAge": 1499,
+    "taxonomy": {
+      "family": "dharmic",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "ascent",
+        "liberation"
+      ]
+    },
+    "searchText": "Rebirth driven by karma → human birth as the opportunity → ascent through Dharam, Gian, Saram, Karam, Sach khands → merging with Ik Oaṅkār. · Ascent through five realms of consciousness toward the formless One. · Guru Granth Sāhib — esp. Japji Sāhib, stanzas 34–37 on the five khands · Sukhmani Sāhib (Guru Arjan) — on meditation and liberation · Anand Sāhib (Guru Amar Das) — on bliss in divine union · Dasam Granth (Guru Gobind Singh; partial Sikh acceptance) — further cosmology · Dharam Khand (righteous action) · Gian Khand (knowledge) · Saram Khand (spiritual effort) · Karam Khand (grace) · Sach Khand (truth; merging with Ik Oaṅkār) · Naḍar — the Guru’s glance of grace · Rising dawn · The open hand of grace · Ik Oaṅkār glyph (ੴ) · The still lake of the Harmandir Sāhib · Nishan Sāhib banner · Ik Oaṅkār (Vāhigurū) · Guru Nānak · The Ten Gurus · Yamdoots"
+  },
+  {
+    "id": "taoism-grotto-heavens",
+    "name": "Taoism (Grotto Heavens & Xian)",
+    "description": "Within sacred mountains lie the Dongtian — ten major and thirty-six minor Grotto Heavens inhabited by the xian (transcendents). Through inner alchemy (neidan), breath, and harmony with the Tao, the adept transforms into a xian capable of dwelling in these hidden paradises; the unrighteous face Diyu, the Ten Courts of Hell, before rebirth.",
+    "origin": "Chinese Religious Taoism / Neidan Tradition",
+    "antiquityAge": 200,
+    "taxonomy": {
+      "family": "east-asian",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "underworld",
+        "paradise"
+      ]
+    },
+    "searchText": "Earthly life → death separating hun (ethereal) from po (corporeal) → cultivation toward xian status and the Grotto Heavens, or Diyu’s Ten Courts followed by rebirth. · Hidden caves beneath sacred mountains; breath become transcendence. · Daodejing (c. 4th c. BCE) — philosophical core · Zhuangzi — transformation and transcendence · Baopuzi (Ge Hong, 4th c. CE) — alchemy and xian lore · Lingbao corpus — liturgy for postmortem salvation · Yunji Qiqian (11th c.) — encyclopedic compendium of Daoist lore · Ten major Dongtian (Grotto Heavens) · Thirty-six minor Dongtian · Seventy-two blessed grounds · Three Heavens of the Pure Ones · Diyu (Ten Courts of Hell) · Xian status through internal alchemy (neidan) · Cave entrance beneath mountain · The pill of immortality · Crane and pine (longevity) · Taijitu (yin and yang) · The alchemical furnace · Laozi (deified as Taishang Laojun) · Yuanshi Tianzun · The Three Pure Ones (Sanqing) · The Eight Immortals (Baxian) · Yama (Yánluó Wáng)"
+  },
+  {
+    "id": "tibetan-buddhism-bardo",
+    "name": "Tibetan Buddhism (Six Bardos)",
+    "description": "The stream of consciousness passes through six bardos — transitional states. The three death bardos (chikhai, chönyid, sidpa) unfold across forty-nine days, during which peaceful and wrathful deities manifest. The Bardo Thödol guides the mindstream toward recognition of its own nature as luminous emptiness — and liberation or rebirth.",
+    "origin": "Vajrayāna / Nyingma Buddhism (Tibetan Synthesis)",
+    "antiquityAge": 800,
+    "taxonomy": {
+      "family": "dharmic",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "liberation"
+      ]
+    },
+    "searchText": "Death → chikhai (dying) → chönyid (luminosity, deity visions) → sidpa (becoming, toward rebirth) → one of the six realms of rebirth, unless liberation is recognized. · Forty-nine days of luminous and wrathful visions; your mind meeting itself. · Bardo Thödol / Liberation Through Hearing in the Intermediate State (Karma Lingpa, 14th c.) · Nyingma terma cycle — attributed to Padmasambhāva · Tsongkhapa, Lamrim Chenmo — the stages of the path · Vasubandhu, Abhidharmakośa — the Buddhist cosmology the bardo builds on · Six bardos · Three death bardos (chikhai, chönyid, sidpa) · Forty-nine-day passage · Peaceful and wrathful deities · Luminous emptiness (dharmakāya) · Six realms of rebirth · Thangka of the peaceful and wrathful deities · Mandala · The luminous void of the bardo · Prayer flags · The black hat (Karmapa) · Padmasambhāva (Guru Rinpoche) · Karma Lingpa · The 42 Peaceful Deities · The 58 Wrathful Deities (heruka-forms) · Yama (Shinje)"
+  },
+  {
+    "id": "shinto-yomi",
+    "name": "Shinto (Yomi no Kuni)",
+    "description": "Yomi no Kuni, the land of the dead, lies beneath the earth. Not a realm of judgment but of pollution (kegare) — the dead are impure, separated by the Great Stone Izanagi sealed behind him when he fled Yomi. Over time, through ancestral rites, the dead become kami — honored protective presences integrated back into the living community.",
+    "origin": "Indigenous Japanese Religion / Kami no Michi",
+    "antiquityAge": 712,
+    "taxonomy": {
+      "family": "east-asian",
+      "patterns": [
+        "no-judgment",
+        "underworld",
+        "ancestral"
+      ]
+    },
+    "searchText": "Death → pollution (kegare) → Yomi no Kuni for the defiled body and fleeing spirit → gradual purification through ancestral rite → integration as protective kami in the living community. · Not judgment but pollution and separation; ancestors becoming kami through time and rite. · Kojiki (712 CE) — oldest chronicle; the Izanagi–Izanami myth · Nihon Shoki (720 CE) — second chronicle; expanded mythology · Engishiki (927 CE) — ritual procedures and norito prayers · Man’yōshū — classical poetry with Yomi references · Yomi no Kuni · Yomotsu-hirasaka (the great stone) · Takamagahara (heavenly plain) · Sosen sūhai (ancestor veneration) · Kami transformation through rite · Torii gate at threshold · The great stone sealing Yomi · Rotting form of Izanami · Shimenawa rope binding the sacred · Moss on old shrines · Izanami · Izanagi · Amaterasu Ōmikami · Susanoo · The Yomotsu-shikome"
+  },
+  {
+    "id": "zoroastrian-chinvat",
+    "name": "Zoroastrianism (Chinvat Bridge)",
+    "description": "Three days after death, the soul reaches the Chinvat Peretum — the Bridge of the Separator. For the righteous, it widens into a welcoming road to the House of Song; for the wicked, it narrows to a razor’s edge, and they fall into the Pit of Druj. At the end of time comes frashokereti — the world’s renovation, molten metal, resurrection, and the universal defeat of the Lie.",
+    "origin": "Ancient Iranian Religion / Zarathushtrian Tradition",
+    "antiquityAge": -1500,
+    "taxonomy": {
+      "family": "ancient-near-east",
+      "patterns": [
+        "judgment",
+        "paradise",
+        "underworld"
+      ]
+    },
+    "searchText": "Death → three-day interval near the body → Chinvat Bridge judgment → House of Song or Pit of Druj → frashokereti (end-time renovation) → universal resurrection and eternal good. · A bridge, a river of fire, and the cosmic renovation that saves everyone in the end. · Gathas — the seventeen hymns attributed to Zarathushtra himself (c. 1500–1200 BCE) · Yasna — central liturgical text · Vendidad — laws of purity · Hadokht Nask — explicit account of the soul’s journey after death · Bundahishn (9th c. CE) — Middle Persian systematic cosmology · Chinvat Peretum (Bridge of the Separator) · Three-day interval near the body · Meeting with the daēnā · House of Song (Garō Demāna) · Pit of Druj · Frashokereti (world renovation) · Universal resurrection · The thin bridge over the pit · The daēnā — conscience personified · Molten metal of purification · Fire as symbol of truth · Towers of silence (dakhma) for the body · Ahura Mazdā · Angra Mainyu (Ahriman) · Mithra, Sraosha, Rashnu · The Daēnā · Saoshyant"
+  },
+  {
+    "id": "yoruba-orun-rere",
+    "name": "Yoruba (Orun Rere & Àtúnwá)",
+    "description": "The emi (breath-soul) returns to Orun, the spirit realm, at death. Orun Rere — the good heaven — welcomes those who lived with iwa pele (gentle character); Orun Apadi, the heaven of broken pots, holds the corrupt until they are purified. Rebirth within the lineage (àtúnwá) is common: ancestors return as grandchildren.",
+    "origin": "West African Yoruba Religion",
+    "antiquityAge": -1000,
+    "taxonomy": {
+      "family": "african",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "ancestral",
+        "paradise"
+      ]
+    },
+    "searchText": "Formation of ori in Orun → birth in aye → life assessed by iwa → return to Orun Rere (good) or Orun Apadi (corrupt, until purified) → àtúnwá, often into the same lineage. · Thin membrane between living and ancestral worlds; character weighed in calm light. · Ifá Corpus — 256 Odu; oral (increasingly written) divinatory literature · Odu Ifá Ogbè Òtúrá — ori mythology and the choosing of destiny · Wande Abimbola — scholarly recordings and interpretations of Ifá · J. D. Y. Peel, Religious Encounter and the Making of the Yoruba (2000) — historical contextualization · Oríkì — praise poetry linking the living to ancestral lines · Orun Rere (heaven of the good) · Orun Apadi (heaven of broken pots) · Olodumare’s throne · Àtúnwá — ancestral reincarnation · The market of the ori (where destinies are chosen) · Ori as a sculpted head · Egungun masquerade · The calabash of creation · Sixteen cowries of Ifá divination · The white cloth of Obatala · Olodumare · Obatala · Orunmila · Egungun · Èṣù"
+  },
+  {
+    "id": "wicca-summerland",
+    "name": "Wicca (Summerland)",
+    "description": "Between lives, the soul rests in the Summerland — an eternal late-afternoon meadow warmed by the Goddess’s presence. It reviews the life just lived and readies for rebirth. No hell, no external judgment; the Threefold Law echoes, and the wheel turns again.",
+    "origin": "Modern Western Neopaganism / Gardnerian Wicca",
+    "antiquityAge": 1954,
+    "taxonomy": {
+      "family": "modern",
+      "patterns": [
+        "no-judgment",
+        "rebirth",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → rest in the Summerland with the Goddess → reflection and reunion → rebirth into a new incarnation, shaped by Threefold-Law echoes. · Warm meadow at perpetual late afternoon; rest before the next turn of the wheel. · Gerald Gardner, Witchcraft Today (1954) and The Meaning of Witchcraft (1959) · Doreen Valiente, Witchcraft for Tomorrow (1978) · Charge of the Goddess (Valiente, liturgical) · Starhawk, The Spiral Dance (1979) — Reclaiming-tradition synthesis · The Summerland · The Threefold Law · Reincarnation · The Goddess’s presence · The Horned God as lord of the underworld-as-rest · Warm meadow at late afternoon · The pentacle · The moon’s phases · Wheel of the Year · The cauldron of rebirth · The Goddess · The Horned God · The Triple Goddess · Gerald Gardner · Doreen Valiente"
+  },
+  {
+    "id": "mesopotamian-kur",
+    "name": "Mesopotamian (Kur / Irkalla)",
+    "description": "All the dead descend — kings and paupers alike — to Kur (Sumerian) or Irkalla (Akkadian), the underworld ruled by Ereshkigal. Dusty and dim; the dead eat dust, drink muddy water, wear feathered garments. No moral judgment, no hope of return. The gift of the dead is memory: offerings from the living sustain them.",
+    "origin": "Sumerian and Akkadian Civilization",
+    "antiquityAge": -2100,
+    "taxonomy": {
+      "family": "ancient-near-east",
+      "patterns": [
+        "no-judgment",
+        "underworld",
+        "ancestral",
+        "annihilation"
+      ]
+    },
+    "searchText": "Death → inescapable descent through seven gates → ghostly existence in Kur / Irkalla, sustained (or not) by living memory → gradual fading if forgotten; no escape, no moral judgment. · Dust, feathered garments, and the fading of any who are not remembered. · Epic of Gilgamesh — esp. Tablets VII and XII: Enkidu’s death and the underworld’s grim testimony · Descent of Inanna / Ishtar to the Underworld — the canonical descent narrative · Enuma Elish — Babylonian creation; death and cosmic order · Atrahasis — flood epic; mortality established as divine decree · Seven gates of the underworld · Dust and feathered garments of the dead · Ereshkigal’s lapis palace · Offerings that sustain the dead (kispum) · Un-ranked descent — all go there · Cuneiform tablet · Ziggurat inverted into the earth · Ghostly forms in feathered garb · Seven-gate descent · Lapis and bitumen · Ereshkigal · Nergal · Neti · Geshtinanna · Namtar"
+  },
+  {
+    "id": "lakota-spirit-trail",
+    "name": "Lakota Spirit Trail (Wanáǧi Tȟačháŋku)",
+    "description": "A North American Plains tradition in which the released soul travels the Wanagi Tacanku — the spirit road seen in the sky as the Milky Way — from the living camp toward the camp of the ancestors. At a fork in the road an old woman examines each traveler for the marks given in life; the marked pass on, and the unmarked are turned back to wander the earth.",
+    "origin": "Lakota / Northern Plains oral tradition",
+    "antiquityAge": -1000,
+    "taxonomy": {
+      "family": "indigenous-americas",
+      "patterns": [
+        "judgment",
+        "ancestral",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → wanáǧi separates from body → spirit road / Milky Way path → reunion with ancestors and continued kinship. · Open prairie under a star road, Black Hills silhouettes, cool wind, silver-blue Milky Way light · Lakota oral traditions of Wanáǧi Tȟačháŋku — the spirit road associated with the Milky Way · Ethnographic and community accounts of Plains star knowledge and the journey of the dead · Prairie threshold · Black Hills horizon · Milky Way road · Ancestor camp · Milky Way path · Prairie grass · Black Hills · Ancestor fire · Wanáǧi · Ancestors · Star Road"
+  },
+  {
+    "id": "digital-afterlife",
+    "name": "Digital Afterlife (Mind Uploading & Memory Systems)",
+    "description": "A modern secular framework in which continuity after death is engineered rather than revealed: mind uploading and whole-brain emulation, cryonic preservation as a bridge, AI memorial agents trained on a person’s data, and the curated digital estate. Its central dispute is not geography but identity — whether the pattern that persists is the person, a copy, or a monument the living maintain.",
+    "origin": "Secular transhumanism / digital immortality",
+    "antiquityAge": 2020,
+    "taxonomy": {
+      "family": "modern",
+      "patterns": [
+        "no-judgment",
+        "rebirth",
+        "ancestral"
+      ]
+    },
+    "searchText": "Death → preservation or data capture → reconstruction / emulation → simulated continuity or memorial agent → unresolved identity question. · Black-glass server cathedrals, neural constellations, cryonic vaults, cold cloud light and archived memory traces · Robert Ettinger, The Prospect of Immortality (1962) — cryonics as technological survival · Hans Moravec, Mind Children (1988) — mind uploading and post-biological identity · Nick Bostrom, Are You Living in a Computer Simulation? (2003) — simulation argument · Cryonic vault · Data archive · Neural model · Cloud simulation · Servers · Neural networks · Cloud archive · Glass capsule · Mindfile · Emulation · Simulation Host"
+  },
+  {
+    "id": "enochian-watchers",
+    "name": "Enochian Cosmology (Watchers & Waiting Souls)",
+    "description": "The Second Temple apocalypse of 1 Enoch maps what earlier scripture left dark: rebel Watchers descend, teach forbidden arts, and are imprisoned awaiting judgment, while Enoch tours a hollow western mountain whose chambers hold the dead — separated by moral condition, some beside a spring of bright water, others in pain — all waiting for the final assize. Its fallen angels, sorted dead, and fiery valley seeded Jewish, Christian, and Islamic afterlife imagination.",
+    "origin": "Second Temple Jewish apocalyptic literature",
+    "antiquityAge": -250,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "underworld",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → souls held in separated chambers → cosmic rebellion judged → final apocalyptic judgment → vindication or punishment. · Judean desert, cosmic mountains, star courses, hollow chambers, severe gold-white judgment light · 1 Enoch 1-36 (Book of the Watchers) — descent, judgment, and cosmic tour · 1 Enoch 22 — separated hollow places for souls awaiting judgment · 1 Enoch 37-71 (Similitudes) — Son of Man and final judgment imagery · Four hollow places · Cosmic mountain · Star courses · Judgment throne · Hollow chambers · Fallen watchers · Star calendar · Apocalyptic court · Enoch · Watchers · Son of Man"
+  },
+  {
+    "id": "celtic-otherworld",
+    "name": "Celtic Otherworld (Tír na nÓg)",
+    "description": "The Celtic Otherworld — Tir na nOg, Mag Mell, the lands beneath the sidhe mounds and across the western sea — is a realm of youth, feasting, and abundance running on its own clock: a night there can be a century here. Reached through mist, mounds, or enchanted voyage rather than by dying, it is less a destination for the dead than a parallel country whose borders sometimes open — and whose returnees age all at once when their feet touch mortal soil.",
+    "origin": "Irish / Celtic mythic tradition",
+    "antiquityAge": 700,
+    "taxonomy": {
+      "family": "european-folk",
+      "patterns": [
+        "no-judgment",
+        "paradise",
+        "ancestral"
+      ]
+    },
+    "searchText": "Invitation or threshold → mist / mound / sea crossing → Otherworld abundance and altered time → return is dangerous or impossible. · Mist over green mounds, silver sea roads, standing stones, warm doorways under grass, islands glowing beyond rain · Immram Brain — voyage to the otherworldly island of women · Echtrae Chonnlai — Connla’s journey with an otherworldly woman · Oisín in Tír na nÓg — later Fenian cycle tradition of altered time · Sídhe mound · Mist threshold · Silver sea road · Island of youth · Burial mounds · Mist · Silver branch · Western island · Manannán mac Lir · Oisín · Sídhe"
+  },
+  {
+    "id": "maya-xibalba",
+    "name": "Maya Mythology (Xibalba)",
+    "description": "In the K’iche’ Maya Popol Vuh, Xibalba is an underworld court reached by dark rivers and a crossroads that tests travelers before they arrive. Its death lords rule through humiliating trials — houses of darkness, blades, cold, jaguars, and bats — until the Hero Twins outwit every test, rise from their own ashes, and strip the lords of their honored standing, breaking the court’s old claim on the dead.",
+    "origin": "K’iche’ Maya / Mesoamerican mythic tradition",
+    "antiquityAge": 250,
+    "taxonomy": {
+      "family": "indigenous-americas",
+      "patterns": [
+        "judgment",
+        "underworld",
+        "rebirth"
+      ]
+    },
+    "searchText": "Summons → cave descent → rivers and crossroads → houses of trial → death / transformation → return through cunning victory. · Limestone caves, cenote water, obsidian shadow, torchlight, jade reflections, underworld stone houses and courts · Popol Vuh — descent of Hun Hunahpu and Vucub Hunahpu into Xibalba · Popol Vuh — Hero Twins’ trials and defeat of the lords of death · Cave descent · Dark rivers · Crossroads · Trial houses · Cenote · Jade light · Jaguar shadow · Trial houses · Hun-Came · Vucub-Came · Hero Twins"
+  },
+  {
+    "id": "polynesian-hawaiki",
+    "name": "Polynesian / Māori Spirit Return (Hawaiki)",
+    "description": "In Maori tradition the spirit travels the length of the land northward to Te Rerenga Wairua, the leaping place at Cape Reinga, descends by the roots of the ancient pohutukawa, and turns for a last look back before crossing the sea toward Hawaiki, the homeland the ancestors sailed from. Death runs the great migration in reverse: a wayfinding voyage home, with the living lineage as the wake the traveler leaves behind.",
+    "origin": "Māori / Polynesian oral tradition",
+    "antiquityAge": 1250,
+    "taxonomy": {
+      "family": "oceania",
+      "patterns": [
+        "no-judgment",
+        "ancestral",
+        "underworld",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → wairua travels north → descent at Te Rerenga Wairua → ocean return → Hawaiki / ancestral continuity. · Wind at the northern headland, pōhutukawa roots, converging seas, volcanic rock and a gold horizon toward Hawaiki · Māori oral traditions of Te Rerenga Wairua — the leaping place of spirits · Accounts of Hawaiki as ancestral homeland and destination of returning spirits · Te Rerenga Wairua · Pōhutukawa roots · Meeting seas · Hawaiki horizon · Ocean path · Pōhutukawa roots · Cape Reinga · Ancestral horizon · Wairua · Hawaiki · Hine-nui-te-pō"
+  },
+  {
+    "id": "aboriginal-dreaming",
+    "name": "Aboriginal Australian Traditions (Return to Country)",
+    "description": "Across hundreds of Aboriginal nations, death is widely understood as a return: the spirit goes back to the Country, waterhole, or sky-camp it came from, rejoining the ancestral order laid down in the Dreaming. The living walk it home with smoke, song, and mourning law — and the land itself remains the ancestor, present tense.",
+    "origin": "Aboriginal Australian nations (many distinct traditions)",
+    "antiquityAge": -40000,
+    "taxonomy": {
+      "family": "oceania",
+      "patterns": [
+        "no-judgment",
+        "ancestral",
+        "rebirth"
+      ]
+    },
+    "searchText": "Death → mourning law (smoke, name-avoidance, sorry business) → the spirit released back to its Country, sky-camp, or island of the dead, by nation → continuity inside the ancestral order of the Dreaming; no universal judgment. · Red ochre, smoke from a cleansing fire, and the white river of stars over spinifex country. · Oral song cycles and mortuary law of many nations — held by custodians, largely unpublished by design · W.E.H. Stanner, \"The Dreaming\" (1953) — source of the standard English gloss · Howard Morphy, Ancestral Connections (1991) — Arnhem Land mortuary art and the routes home · Lake Mungo burial archaeology (c. 40,000 BP) — ochre burial as the oldest recorded rite on the continent · Conception sites and waterholes · The sky-camp along the Milky Way (in some nations) · Islands of the dead (in some coastal traditions) · Hollow-log coffins of Arnhem Land · Country itself as the ancestors' body · Red ochre · Smoke of the cleansing fire · The Milky Way as a river of campfires · Hollow-log coffin (larrakitj) · Songlines crossing the land · The Ancestral Beings · Rainbow Serpent (many names) · The spirit of the dead · The mourners"
+  },
+  {
+    "id": "naturalist-oblivion",
+    "name": "Naturalism (Mortal Oblivion)",
+    "description": "The oldest rival to every map in this atlas: death as the end of experience. Epicurus taught that where death is, we are not; Lucretius added the mirror of the time before birth. Nothing crosses over — what remains is matter returned to the world, and the difference a life made while it ran.",
+    "origin": "Epicurean philosophy → modern secular humanism",
+    "antiquityAge": -300,
+    "taxonomy": {
+      "family": "modern",
+      "patterns": [
+        "no-judgment",
+        "annihilation"
+      ]
+    },
+    "searchText": "Death → end of sensation and self → no journey, no judgment, no return → matter rejoins the world; memory, works, and consequences persist among the living. · Clear daylight in a walled garden; dust motes in a sunbeam; afterwards, unbroken quiet. · Epicurus, Letter to Menoeceus — \"death is nothing to us\" · Lucretius, De rerum natura, Book III — the symmetry argument against fearing death · Cārvāka fragments (via the Sarvadarśanasaṃgraha) — ancient Indian materialism · Corliss Lamont, The Illusion of Immortality (1935) — the modern humanist statement · The Garden of Epicurus, Athens · The time before birth — the mirror · The material cycle: soil, air, other lives · Memory and works as the surviving remainder · No gates, no road, no court · A walled garden in daylight · Dust motes in a sunbeam · The blank mirror of prenatal time · Atoms dispersing into the world · A finished book, closed · Epicurus · Lucretius · Democritus · The Cārvāka teachers"
+  },
+  {
+    "id": "gnostic-pleroma",
+    "name": "Gnosticism (Ascent Through the Archons)",
+    "description": "The soul is a spark of a higher world, held in matter by a lesser creator and his gate-keeping archons. At death the knower ascends, answering each archon with the words and seals learned in life, shedding the psyche's garments level by level, and rejoins the Pleroma — the fullness it fell from. Ignorance, not sin, is the enemy; gnosis is the road.",
+    "origin": "Second-to-fourth-century Gnostic movements (Sethian, Valentinian)",
+    "antiquityAge": 150,
+    "taxonomy": {
+      "family": "gnostic",
+      "patterns": [
+        "no-judgment",
+        "ascent",
+        "liberation",
+        "rebirth"
+      ]
+    },
+    "searchText": "Death → ascent through seven archon gates, each demanding the right names and seals → garments of psyche shed level by level → the knowers rejoin the Pleroma; the unknowing are turned back toward matter until they learn. · Seven nested spheres of watchful gatekeepers, and above them, light upon light of the fullness. · Apocryphon of John — the Sethian master narrative (Nag Hammadi) · First Apocalypse of James — the archon-gate passwords, spelled out · Gospel of Truth — Valentinian; error, forgetting, and awakening · Pistis Sophia — late, elaborate ascent cosmology · Seven archon-ruled spheres · The Ogdoad above the seven · The Pleroma — the fullness · Passwords, names, and seals at each gate · Garments of psyche shed level by level · Nested concentric spheres · A spark rising through checkpoints · The lion-faced demiurge · The five seals · Light beyond the last gate · Sophia · Yaldabaoth · The Archons · The Revealer"
+  },
+  {
+    "id": "chinese-ten-kings",
+    "name": "Chinese Ancestral Religion (Courts of the Ten Kings)",
+    "description": "The most administered afterlife on record: the hun and po souls part at death, and the person passes through ten magistrate courts where deeds are read from ledgers and purgations served — while the living file appeals in the currency the courts recognize: offerings, spirit money, and the rites of a filial family. Lady Meng's broth of forgetting waits at the exit before rebirth.",
+    "origin": "Chinese popular religion (Confucian–Buddhist–Taoist synthesis)",
+    "antiquityAge": -1200,
+    "taxonomy": {
+      "family": "east-asian",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "underworld",
+        "ancestral"
+      ]
+    },
+    "searchText": "Death → the hun and po part; the person enters the ten courts → deeds audited court by court, purgation served, family offerings credited → Meng Po's broth erases memory → rebirth; in parallel, the ancestral tablet keeps the dead present to the family. · Yamen halls in lamplight, ledgers and vermilion seals, incense smoke carrying the family's petitions downward. · Shang oracle-bone inscriptions (c. 1200 BCE) — the oldest layer of ancestor cult · Scripture on the Ten Kings (Shiwang jing, Tang dynasty) — the courts codified · Mulian Rescues His Mother (Yulanpen tradition) — the merit-transfer charter narrative · The Jade Record (Yuli Baochao) — late imperial illustrated tour of the courts · Ten courts in sequence · Karmic ledgers and vermilion seals · Mount Tai, the older gathering-place · Meng Po's pavilion and the bridge to rebirth · The family altar with ancestral tablets · Magistrate's bench and ledger · Spirit money in flame · Ancestral tablets in rows · The mirror that shows deeds · Incense smoke descending · Yanluo Wang · Meng Po · Mulian · The Ancestors"
+  },
+  {
+    "id": "inca-hanan-pacha",
+    "name": "Inca (The Three Pachas)",
+    "description": "The Inca cosmos stacks three worlds: Hanan Pacha above, where the Sun receives the honored dead into warmth and plenty; Kay Pacha, this world; and Ukhu Pacha below, a cold inner country for the wicked. But the great dead never fully left — preserved as mallki, they kept their households, attended festivals, and were fed and consulted as seated members of the family.",
+    "origin": "Inca Empire and Andean highlands (15th–16th century, on far older Andean foundations)",
+    "antiquityAge": 1400,
+    "taxonomy": {
+      "family": "indigenous-americas",
+      "patterns": [
+        "judgment",
+        "paradise",
+        "underworld",
+        "ancestral"
+      ]
+    },
+    "searchText": "Death → the honored rise to Hanan Pacha's warmth while the wicked descend to Ukhu Pacha's cold → the road crosses a hair-thin bridge with a dog's help → the preserved mallki keep their seats in Kay Pacha, fed and consulted as long as the lineage holds. · Thin mountain sunlight on gold and woven cloth, and below the fields, the cold breath of the inner earth. · Huarochirí Manuscript (c. 1608) — Andean testimony in Quechua · Garcilaso de la Vega, Comentarios Reales de los Incas (1609) · Guaman Poma de Ayala, El primer nueva corónica (c. 1615) · Bernabé Cobo, Historia del Nuevo Mundo (1653) · Hanan Pacha — the upper world of the Sun · Kay Pacha — this world, where the mallki remain · Ukhu Pacha — the cold country inside the earth · A river crossed on a bridge the width of a hair · The black dog that carries the traveler over · Gold sun disks · Seated mummy bundles in fine cloth · A hair-thin bridge over dark water · A black dog at the crossing · Terraced mountains under stars · Inti · Supay · The Mallki · The Black Dog"
+  },
+  {
+    "id": "swedenborg-heavens",
+    "name": "Swedenborg (Heaven and Hell)",
+    "description": "Emanuel Swedenborg's 1758 report from the other world: the newly dead wake in a middle country within days, met by angels, and nothing is sentenced — the externals worn in life fall away until the ruling love stands exposed, and each spirit migrates freely to the heaven or hell that matches it. Heaven is societies of similar loves, employed in useful work; every angel was once a person.",
+    "origin": "Emanuel Swedenborg, Stockholm and London (1758)",
+    "antiquityAge": 1758,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "paradise",
+        "underworld"
+      ]
+    },
+    "searchText": "Death → waking in the World of Spirits within days → externals fall away until the ruling love stands exposed → each spirit migrates freely to the heaven or hell that matches it — judgment as self-sorting, with no sentence pronounced. · Even daylight over orderly communities, where no one is sent anywhere — everyone goes home. · Heaven and Hell (De Caelo et de Inferno, 1758) · Arcana Caelestia (1749–1756) · The Last Judgment (1758) · Conjugial Love (1768) · The World of Spirits — the sorting middle · Heavenly societies in the form of the Grand Man · Hells entered by preference, not sentence · Landscapes that mirror their people's inner states · Occupations — heaven as usefulness, not rest · Even daylight with no visible sun · Cities of the like-minded · Masks thinning until faces show · Two roads and no judge · Gardens shaped by thought · Emanuel Swedenborg · The newly dead · The angels · The ruling love"
+  },
+  {
+    "id": "manichaean-light",
+    "name": "Manichaeism (The Return of the Light)",
+    "description": "Mani taught that every living thing holds particles of stolen Light trapped in Darkness, and that salvation is a salvage operation. At death the Column of Glory lifts the freed light to the moon and sun, which ferry it home. Three roads open at the end of a life: the Elect go straight to the Light, the Hearers return to a body for another attempt, and those who refused go to the darkness. When the last particle is recovered, the cosmos burns and the Last Statue rises from what was saved.",
+    "origin": "Mani in Sasanian Babylonia (c. 240 CE), spreading from North Africa to China",
+    "antiquityAge": 240,
+    "taxonomy": {
+      "family": "gnostic",
+      "patterns": [
+        "judgment",
+        "ascent",
+        "rebirth",
+        "liberation",
+        "underworld"
+      ]
+    },
+    "searchText": "Death → three roads by manner of life → the Elect ascend the Column of Glory to the moon and sun ships and the Realm of Light; the Hearers return to a body for another attempt; the refusers descend → cosmic fire dismantles the mixture → the Last Statue rises from the light recovered and the Darkness is sealed. · A vertical column of recovered light rising out of a dark, mixed world toward two waiting ships. · Kephalaia of the Teacher (Coptic, 4th–5th c.) · The Living Gospel and the Šābuhragān (fragments) · Manichaean Psalm-Book (Coptic) · Turfan fragments (Middle Persian, Parthian, Sogdian, Uyghur) · Augustine's anti-Manichaean works (hostile witness) · The Column of Glory — the Milky Way as an ascending road · The moon, ship of living water · The sun, ship of living fire · The Realm of Light beyond both · The sealed pit for the unrecoverable · A vertical band of light climbing out of a dark plain · Two luminous vessels waiting in orbit · Light bleeding out of ordinary matter · Three roads dividing at the moment of death · A figure assembled entirely from what was saved · Mani · The Column of Glory · The Elect · The Hearers · The Last Statue"
+  },
+  {
+    "id": "mandaean-world-of-light",
+    "name": "Mandaeism (The World of Light)",
+    "description": "The last surviving Gnostic religion, still practiced by Mandaeans of southern Iraq and Iran and their diaspora. The soul is a stranger here, and death is the return trip. Three days after death it begins an ascent through the maṭarta — watch-stations where it is examined, detained, and cleaned of what it picked up in the world — a passage of some forty-five days that the living assist with the masiqta rite. At the threshold Abatur weighs it. There is no eternal hell: the stations purify rather than condemn.",
+    "origin": "Mandaean communities of southern Mesopotamia and Khuzestan (formative 1st–3rd c. CE)",
+    "antiquityAge": 100,
+    "taxonomy": {
+      "family": "gnostic",
+      "patterns": [
+        "judgment",
+        "ascent",
+        "liberation",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → three days near the body → ascent through the maṭarta watch-stations, examined and purified over roughly forty-five days, assisted from below by the masiqta rite → weighed by Abatur at the threshold → admitted to the World of Light, the soul rejoining its dmuta; the stations detain but there is no eternal hell. · Cool river light and white cloth; a patient ascent through stations that detain but do not damn. · Ginza Rabba (The Great Treasure) · The Book of John (Draša d-Yahia) · Qolasta (canonical prayerbook) · The 1012 Questions · The World of Light and the Great Life · The maṭarta — watch-stations on the way up · Abatur's scales at the threshold · Yardna — flowing water, the medium of every rite · Tibil, the flawed middle world · White ritual cloth against dark water · A river running through a reed landscape · Graded stations of light climbing away from earth · A balance held at a doorway · Two identical figures meeting at the top · Hayyi Rabbi · Abatur · The maṭarta · Ptahil · The dmuta"
+  },
+  {
+    "id": "latter-day-saints-glories",
+    "name": "Latter-day Saints (Degrees of Glory)",
+    "description": "Joseph Smith's 1832 vision replaced heaven and hell with a graded architecture in which nearly everyone is saved to some degree of glory. The dead wait in the spirit world — paradise or prison, with missionary work running between them — until the resurrection sorts them into three kingdoms named for the sun, moon, and stars. Only a handful, who knew and refused outright, go to outer darkness. Because the dead can still accept the gospel, the living perform baptisms on their behalf, which is why Latter-day Saints keep the world's largest genealogical archive.",
+    "origin": "Joseph Smith, Hiram, Ohio (1832); the Church of Jesus Christ of Latter-day Saints",
+    "antiquityAge": 1832,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "paradise",
+        "ancestral"
+      ]
+    },
+    "searchText": "Death → spirit world, paradise or prison, with the gospel preached between them and proxy ordinances performed by the living → resurrection → assignment to the celestial, terrestrial, or telestial kingdom, each a real glory → exaltation and continued family life in the celestial; outer darkness for the few who knowingly refused. · Three tiers of glory graded like sun, moon, and stars — abundance sorted by degree rather than by verdict. · Doctrine and Covenants 76 (the Vision, 1832) · Doctrine and Covenants 128 (baptism for the dead) · Doctrine and Covenants 137 and 138 · Alma 40 (Book of Mormon) on the state of the soul between death and resurrection · The King Follett discourse (1844) · The spirit world — paradise and prison, porous between · Temples where the living stand in for the dead · The celestial kingdom — the glory of the sun · The terrestrial kingdom — the glory of the moon · The telestial kingdom — the glory of the stars · Outer darkness, deliberately unmeasured · Three graded intensities of light in one frame · A font surrounded by names · Family lines drawn upward instead of backward · A boundary with teaching passing through it · Sun, moon, and stars used as units of glory · Joseph Smith · Sidney Rigdon · The spirits in prison · Proxies for the dead"
+  },
+  {
+    "id": "bahai-worlds-of-god",
+    "name": "Bahá'í (The Worlds of God)",
+    "description": "The Bahá'í afterlife has no geography at all. Heaven and hell are not places but conditions — nearness to God and remoteness from God — and the soul, which comes into being at conception and does not return to earth, continues after death to progress through what Bahá'u'lláh calls the worlds of God, forever. The soul's state is compared to a bird released from a cage and to a child born out of the womb: the world it leaves was only the place it grew the faculties it will now need.",
+    "origin": "Bahá'u'lláh, Baghdad and Ottoman exile (from 1863)",
+    "antiquityAge": 1863,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "ascent",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → the soul, unbound by the body, enters the worlds of God → endless progression toward nearness, or the suffering of remoteness → no reincarnation, no bodily resurrection, no final destination; assistance from the prayers of the living remains possible throughout. · Open luminous distance with no architecture in it — nearness and remoteness rendered as light, not as rooms. · Gleanings from the Writings of Bahá’u’lláh · Kitáb-i-Íqán (The Book of Certitude) · The Seven Valleys · Some Answered Questions ('Abdu'l-Bahá) · Nearness to God — heaven as a condition · Remoteness from God — hell as a condition · The worlds of God, unnumbered and successive · No return path to earth · Prayers of the living, crossing · A cage left open with nothing in it · Light graded by distance rather than by boundary · An unbroken upward path with no visible end · Architecture dissolving into open sky · A threshold with no door in it · Bahá'u'lláh · 'Abdu'l-Bahá · The progressing soul · The praying living"
+  },
+  {
+    "id": "christian-universalism",
+    "name": "Apokatastasis (Universal Restoration)",
+    "description": "The minority Christian tradition holding that hell is remedial and finite, and that God finally restores every rational creature. Origen argued in third-century Alexandria that punishment is corrective rather than retributive; Gregory of Nyssa held the same hope while abandoning Origen’s speculative machinery. The position was condemned in the sixth century — though scholars still dispute exactly what was condemned and by whose authority — and it has resurfaced in every century since.",
+    "origin": "Origen of Alexandria (c. 230 CE) and the Greek and Syriac Fathers after him",
+    "antiquityAge": 230,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "liberation",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → particular judgment → purgative punishment proportioned to what must be removed, measured in ages rather than in perpetuity → evil exhausted rather than the creature destroyed → universal restoration, God all in all, with no permanent lower region remaining. · Refining fire rather than punishing fire — a furnace whose far side is open, and light coming back through it. · Origen, De Principiis (On First Principles) · Gregory of Nyssa, On the Soul and the Resurrection; Catechetical Oration · Isaac of Nineveh, Ascetical Homilies (Second Part) · Acts 3:21; 1 Corinthians 15:28 · David Bentley Hart, That All Shall Be Saved (2019) · Purgative fire with a far side · A sentence measured in ages, not in forever · No permanent lower region in the final state · The restored creation — God all in all · A condemnation whose own paperwork is disputed · A furnace open at both ends · Fire that refines rather than consumes · A door that had been drawn as a wall · Ash resolving back into metal · A conciliar anathema with its margins in dispute · Origen of Alexandria · Gregory of Nyssa · Isaac of Nineveh · Justinian"
+  },
+  {
+    "id": "kongo-kalunga",
+    "name": "BaKongo (Kalunga and the Turning)",
+    "description": "In BaKongo thought the cosmos is a circle cut by a line of water. Above the Kalunga line is the world of the living; below it, reversed as in a mirror, the world of the dead. The sun does not stop at sunset — it crosses and goes on shining underneath, and a human life follows the same circuit through four moments: musoni, kala, tukula, luvemba. Death is not an exit but the far quarter of the turn, and the ancestors, the bakulu, remain in working relation with the village that keeps them.",
+    "origin": "Kingdom of Kongo and BaKongo peoples of Central Africa (c. 1400 CE onward)",
+    "antiquityAge": 1400,
+    "taxonomy": {
+      "family": "african",
+      "patterns": [
+        "no-judgment",
+        "ancestral",
+        "rebirth",
+        "underworld"
+      ]
+    },
+    "searchText": "Life as one turn of the sun through four moments — musoni, kala, tukula, luvemba → death as the crossing of the Kalunga water-line into Ku Mpemba, the mirrored world → continued existence as bakulu in working relation with the lineage → return into the turning, so long as the living keep the circuit intact. · A still water-line dividing a lit world from its exact reflection — sunset as a crossing, not an ending. · Oral cosmology and ritual practice (dikenga dia Kongo) · Wyatt MacGaffey, Religion and Society in Central Africa · Robert Farris Thompson, Flash of the Spirit · Kikongo-language mission and ethnographic records, 17th–20th c. · The Kalunga line — water as the border · Ku Nseke, the world of the living · Ku Mpemba, the mirrored world of the dead · The four moments: musoni, kala, tukula, luvemba · Graves marked with white shells and inverted vessels · A perfect reflection across still water · A cross inside a circle · White shells laid on dark earth · Vessels deliberately inverted or broken · A sun continuing below the horizon line · The bakulu · Kalunga · The nganga · The simbi"
+  },
+  {
+    "id": "haitian-vodou-ginen",
+    "name": "Haitian Vodou (Ginen and Anba Dlo)",
+    "description": "A person is made of parts, and death takes them apart. The gwo bonanj and ti bonanj are separated from the body in the desounen rite, and the spirit goes anba dlo — under the water — where it waits a year and a day. Then the family performs wete mò nan dlo, taking the dead out of the water, and the spirit is drawn into a govi jar, brought back into the household, and set on the road to Ginen: Africa, the ancestral country beneath the sea. The dead who are served well may in time be raised among the lwa.",
+    "origin": "Saint-Domingue and Haiti, from Fon, Yoruba, Kongo, and Catholic sources (from 1791)",
+    "antiquityAge": 1791,
+    "taxonomy": {
+      "family": "african",
+      "patterns": [
+        "no-judgment",
+        "ancestral",
+        "underworld",
+        "rebirth"
+      ]
+    },
+    "searchText": "Death → desounen separates the spirit from the body → anba dlo, under the water, for a year and a day → wete mò nan dlo, the family retrieving the dead → housed in a govi and consulted → sent on to Ginen; over generations, possible elevation among the lwa. Capture as a zombi, not punishment, is the feared outcome. · Warm lamplight over a dark sea — the dead held underwater for a year and a day until the family comes for them. · Oral liturgy, song, and rite (Rada and Petwo) · Maya Deren, Divine Horsemen · Karen McCarthy Brown, Mama Lola · Alfred Métraux, Voodoo in Haiti · Anba dlo — under the water, a year and a day · Ginen — the ancestral country beneath the sea · The govi jars in the sanctuary · The cemetery and its Gede · The crossroads, where roads are opened · Lamplight on black water · A clay jar set on cloth · A crossroads marked in cornmeal · Drums and white headwraps at night · A road running out to sea and down · The gwo bonanj · The ti bonanj · Baron Samedi and the Gede · The manbo or oungan · The govi"
+  },
+  {
+    "id": "navajo-chindi",
+    "name": "Diné (The Chindi and the Turned Face)",
+    "description": "The Diné account of death is a refusal of the whole genre. There is no reward, no paradise, and no realm anyone hopes to reach. What matters is the chindi — the residue left behind at the last breath, everything in a person that was out of harmony, which lingers and can sicken the living. The response is avoidance and containment: death outdoors where the chindi disperses, a dwelling abandoned if someone dies inside, the name unspoken. The work is not to secure a destination but to restore hózhó among the living.",
+    "origin": "Diné (Navajo) of the American Southwest; documented traditional practice",
+    "antiquityAge": 1500,
+    "taxonomy": {
+      "family": "indigenous-americas",
+      "patterns": [
+        "no-judgment",
+        "underworld",
+        "annihilation"
+      ]
+    },
+    "searchText": "Death → the chindi released with the last breath, carrying everything that was out of harmony → containment: dispersal outdoors, the dwelling abandoned, the name unspoken, contact avoided and purified → what was good returns to universal harmony without narrative → the ceremonial work turns to the living, restoring hózhó. No judgment, no reward, no destination. · High desert cold at first light, a doorway left open and unentered — attention turned away from the dead on purpose. · Oral tradition; the Blessingway and healing ceremonial cycles · Clyde Kluckhohn and Dorothea Leighton, The Navaho · Leland C. Wyman, Blessingway · Gladys Reichard, Navaho Religion · The chindi hogan, abandoned and opened · Open ground where the chindi can disperse · The underworld below — an origin, not a goal · Ceremonial space for restoring hózhó · A name deliberately left out of the air · A doorway standing open with nothing entering it · A structure left to weather on empty ground · Distance kept as an act of care · First light on cold red rock · An absence where a name would be · The chindi · The hataałii · The abandoned hogan · The unspoken name"
+  },
+  {
+    "id": "slavic-nav-vyraj",
+    "name": "Slavic (Nav and the Bird-Country)",
+    "description": "Reconstructed from folklore, funerary practice, and language rather than from scripture, the pre-Christian Slavic dead go to Nav — the realm of the dead — while Vyraj or Iriy, the warm country beyond the sea or in the crown of the world tree, is where birds and souls winter. Souls linger forty days; birds carry and announce them; the drowned and the wronged stay behind as navki and rusalki. Grave-feasts kept the dead fed. The tidy three-realm cosmos often presented as Slavic is a twentieth-century invention.",
+    "origin": "Pre-Christian Slavic Europe; reconstructed from folklore and language (c. 900 CE)",
+    "antiquityAge": 900,
+    "taxonomy": {
+      "family": "european-folk",
+      "patterns": [
+        "no-judgment",
+        "ancestral",
+        "paradise",
+        "underworld"
+      ]
+    },
+    "searchText": "Death → the soul remains near the house forty days, the window left open → departure toward Vyraj, the warm bird-country beyond the sea or in the world tree, travelling as or with birds → existence in Nav, associated with Veles’s wet pasture → sustained by grave-feasts shared with the living; the wrongly dead never leave, staying as navki and rusalki at water and field edges. · A damp lowland meadow at dusk with birds going over — a country reachable only the way migration is. · Primary Chronicle and other hostile Christian sources · East and West Slavic funerary folklore (Radunitsa, the fortieth day) · Comparative linguistic reconstruction of Navь and Vyraj · Note: the Book of Veles is a 20th-century forgery and is not a source · Vyraj — the warm bird-country beyond the sea · Nav — the domain of the dead · The world tree connecting them · Wet lowland pasture under Veles · Water margins held by the navki and rusalki · The forty days beside the house · Migrating birds high over a flooded meadow · A window left open in an occupied house · Bread and eggs set on a grave · Mist standing on a river at dusk · A great tree with light in its upper branches · Veles · The bird-souls · The navki and rusalki · The forty days"
+  },
+  {
+    "id": "finnic-tuonela",
+    "name": "Finnic (Tuonela Across the Black River)",
+    "description": "Tuonela — also Manala — lies across a black river, and Tuoni’s daughter rows the dead over it. What waits is not fire and not reward: the good and the wicked arrive at the same grey place and continue as shadows, sleeping in Tuoni’s beds. Tuonetar meets the newcomer with a drink that takes the living world away. A black swan circles the water. The living stay in contact through lament — the itkuvirsi, sung by women, which guides the dead across and carries messages both ways.",
+    "origin": "Finnish and Karelian oral tradition; compiled in the Kalevala (1835, 1849)",
+    "antiquityAge": 1000,
+    "taxonomy": {
+      "family": "european-folk",
+      "patterns": [
+        "no-judgment",
+        "underworld",
+        "ancestral"
+      ]
+    },
+    "searchText": "Death → the road to the shore of the black river → ferried across by Tuoni’s daughter, iron nets closing behind → received by Tuonetar with a drink that takes the living world away → continuation as a shadow in a grey country, sleeping in Tuoni’s beds. No judgment, no reward, no punishment; contact maintained by the lamenters singing across. · A black river under a colourless sky, a small boat working across it, and one pale bird circling. · Kalevala (Elias Lönnrot, 1835 and 1849) · Kanteletar · Karelian lament poetry (itkuvirsi) collections · Finnish Literature Society folklore archives · The black river of Tuoni · Tuonen tytti’s ferry · Iron nets stretched against return · Tuoni’s beds, where the dead sleep · The Swan of Tuonela on the water · A small boat crossing black water · A single pale swan circling · Nets drawn across a current · Grey figures with no colour left in them · A cup offered on arrival · Tuoni · Tuonetar · Tuonen tytti · The Swan of Tuonela · The lamenter"
+  },
+  {
+    "id": "etruscan-charun",
+    "name": "Etruscan (Charun and the Banquet)",
+    "description": "The Etruscans painted their tombs as dining rooms. The dead recline at a banquet with the family who went before them, wreathed and served, while at the doorway stands Charun — blue-skinned, hook-nosed, tusked, holding a hammer — and Vanth, winged, carrying a torch and a scroll. There is no weighing and no sentence: the demons are escorts and doorkeepers, not judges. Later tombs darken, and the road to Aita and Phersipnai fills with things that were not there before.",
+    "origin": "Etruscan cities of central Italy, especially Tarquinia and Cerveteri (c. 600 BCE onward)",
+    "antiquityAge": -600,
+    "taxonomy": {
+      "family": "classical",
+      "patterns": [
+        "no-judgment",
+        "underworld",
+        "ancestral"
+      ]
+    },
+    "searchText": "Death → Charun at the threshold with the mallet and Vanth with torch and scroll → the road to the realm of Aita and Phersipnai → continuation at the family banquet with those who went before. No weighing, no verdict; the scroll arrives already written. · Ochre and red fresco warmth — a family dinner going on indefinitely, with a blue doorkeeper who never sits down. · Painted tombs of Tarquinia (Leopards, Blue Demons, Orcus, Shields) · Funerary inscriptions and sarcophagus reliefs · The Liber Linteus (Zagreb mummy wrapping) · Roman testimony on the Etrusca disciplina (secondhand) · The tomb as a furnished dining room · The painted door where Charun waits · Vanth’s torch and her written scroll · The road to Aita and Phersipnai · Late tombs where the road fills with demons · Ochre and red fresco on plaster · Couples reclining on banquet couches · A blue-fleshed figure holding a mallet · A winged woman with a torch · A painted doorway that is also a real one · Charun · Vanth · Aita and Phersipnai · The reclining dead"
+  },
+  {
+    "id": "plato-myth-of-er",
+    "name": "Plato (The Myth of Er)",
+    "description": "At the end of the Republic, a soldier named Er dies, lies twelve days on the pyre, and revives to report what he saw. Souls are judged and sent up or down for a thousand years — tenfold repayment either way — then gather at a shaft of light where the spindle of Necessity turns. There the Fates set out lots and lives, and each soul chooses its own next life. Most choose badly, out of habit. Then all drink from the river of Forgetting and are shot out like stars into birth.",
+    "origin": "Plato, Republic Book X, Athens (c. 380 BCE)",
+    "antiquityAge": -380,
+    "taxonomy": {
+      "family": "classical",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "ascent",
+        "underworld"
+      ]
+    },
+    "searchText": "Death → judgment in the meadow → a thousand years above or below, repaid tenfold → return, and the journey to the spindle of Necessity → lots drawn, lives chosen by the souls themselves, responsibility resting on the chooser → the plain of Forgetting and the river Ameles → rebirth. · A cold shaft of light binding earth to sky, a spindle turning in it, and lives laid out on the ground like lots. · Plato, Republic X (614a–621d) · Plato, Phaedo · Plato, Gorgias (the judgment myth) · Plato, Phaedrus (the soul’s chariot) · The meadow of judgment and its four openings · A thousand years above or below, repaid tenfold · The shaft of light and the spindle of Necessity · The lots and the pattern-lives laid on the ground · The plain of Forgetting and the river Ameles · Four openings in a bare meadow · A column of light binding sky to earth · A great spindle turning on a woman’s knees · Lives laid out on the ground like tokens · Souls carried upward like shooting stars · Er · The judges of the meadow · Necessity and the three Fates · The first chooser · Odysseus"
+  },
+  {
+    "id": "orthodox-toll-houses",
+    "name": "Orthodox Toll-Houses (Telonia)",
+    "description": "In an account held by many Orthodox Christians and disputed by others, the soul spends three days near the earth, then ascends through the air past a series of toll-houses — telonia — where demons produce the record of a particular sin and the escorting angels answer with the good the soul did. What is not covered is seized. The soul is shown heaven and hell over forty days and receives a provisional verdict awaiting the general resurrection. The Church has never dogmatized it, and prominent hierarchs call it false.",
+    "origin": "Byzantine and Egyptian ascetic tradition; formative from c. 400 CE",
+    "antiquityAge": 400,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "ascent",
+        "paradise",
+        "underworld"
+      ]
+    },
+    "searchText": "Death → three days near the earth → aerial ascent halted at successive toll-houses, demons presenting the ledger for each sin and angels answering with repentance, good works, and the prayers of the living → ninth to fortieth day, shown both destinations → provisional verdict on the fortieth day → the general resurrection and last judgment, where alone anything is final. · Candle-gold rising through dark air past station after station, each one asking for an account. · The Life of St Basil the Younger (10th c.), with the vision of Theodora · Ignatius Brianchaninov, collected works on the soul after death · Seraphim Rose, The Soul After Death (1980) · Lazar Puhalo, The Soul, the Body and Death (opposing) · Orthodox memorial services for the 3rd, 9th and 40th days · Three days near the earth · Toll-houses in the air, one sin each · Angelic escort answering the ledger · The ninth-to-fortieth-day tour of both destinations · A provisional verdict awaiting the resurrection · A vertical ascent through dark air · Ledgers and scrolls produced at each stop · Candlelight standing in for prayer · Stations without walls, hanging in the sky · A verdict written in pencil, not ink · The escorting angels · The toll-house spirits · The praying living · Seraphim Rose · Archbishop Lazar Puhalo"
+  },
+  {
+    "id": "conditionalism-soul-sleep",
+    "name": "Conditional Immortality (Soul Sleep)",
+    "description": "A Protestant minority position, held by Seventh-day Adventists, Jehovah’s Witnesses, Christadelphians and a growing number of evangelical theologians: the soul is not naturally immortal. The dead are unconscious — asleep, knowing nothing — until the resurrection. Immortality is a gift given only to the saved. The wicked are not tormented forever but destroyed: the second death is annihilation. And the reward is not a disembodied heaven but a renewed earth, physical and populated.",
+    "origin": "Reformation-era conditionalism; formalized among Adventists and others from 1863",
+    "antiquityAge": 1863,
+    "taxonomy": {
+      "family": "abrahamic",
+      "patterns": [
+        "judgment",
+        "annihilation",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → unconsciousness, the sleep of death, with no experienced interval and no communication either way → resurrection → judgment → immortality conferred as a gift on the saved, who are raised bodily onto a renewed earth; the wicked destroyed in the second death rather than tormented endlessly. · Deep unlit rest with no interval in it, opening directly onto morning over an ordinary inhabited landscape. · Ecclesiastes 9:5; Psalm 146:4; 1 Timothy 6:16 · Edward Fudge, The Fire That Consumes (1982) · Seventh-day Adventist Fundamental Beliefs (25–28) · Rethinking Hell (contemporary evangelical conditionalism) · No conscious interval — the dead are nowhere · The resurrection as the next subjective moment · A renewed and physical earth · The second death, leaving nothing behind · No hell to be located · An unbroken dark with no duration in it · Ordinary morning light on farmland · A fire that goes out when it is done · Empty ground where a place would be · Houses built to be lived in · The sleeping dead · Edward Fudge · John Stott · The renewed earth"
+  },
+  {
+    "id": "kardec-spiritism",
+    "name": "Spiritism (Kardec)",
+    "description": "Allan Kardec organized the seance-room material of 1850s Paris into a system and published it as doctrine. Spirits are immortal, they reincarnate as many times as it takes, and the point of every life is moral progress — never punishment. Between lives comes erraticity, a wandering state in which the spirit reviews what it did and helps plan the next attempt. There is no hell and no eternal damnation; suffering is remedial and self-inflicted. Brazil took it seriously, and it is now a mass religion there.",
+    "origin": "Allan Kardec, Paris (1857); mass following in Brazil",
+    "antiquityAge": 1857,
+    "taxonomy": {
+      "family": "modern",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "ascent"
+      ]
+    },
+    "searchText": "Death → erraticity, a wandering discarnate state in contact with the living → review of the life just ended and participation in planning the next → reincarnation into chosen trials → indefinite moral progress, with no hell, no damnation, and no final state. · Plain lamplit rooms and an open sky above them — an afterlife with no floor beneath it and no gate at the top. · Le Livre des Esprits (The Spirits’ Book, 1857) · Le Livre des Médiums (1861) · L’Évangile selon le Spiritisme (1864) · Le Ciel et l’Enfer (Heaven and Hell, 1865) · Erraticity — the wandering state between lives · Degrees of advancement rather than places · Continued contact with the living · Trials chosen in advance, not imposed · No hell and no permanent condition · A plain room with a table and a lamp · Handwriting appearing on a page · Figures standing just outside the light · An open stair with no landing · A meal being served after the message · Allan Kardec · Spirits in erraticity · The medium · Chico Xavier"
+  },
+  {
+    "id": "theosophy-devachan",
+    "name": "Theosophy (Kama-loka and Devachan)",
+    "description": "Blavatsky’s system divides the human being into seven principles and death into stages. The body goes; the lower vehicles disintegrate in kama-loka, an astral zone where the desire-nature burns itself out and where, Theosophists argued, seance-room \"spirits\" are usually only the discarded shell. What survives passes into devachan — a long, blissful, essentially subjective rest in which every unfulfilled aspiration is realized — before the ego returns to another incarnation to continue the work.",
+    "origin": "Blavatsky and the Theosophical Society, New York, London and Adyar (from 1875)",
+    "antiquityAge": 1888,
+    "taxonomy": {
+      "family": "modern",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "ascent",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → separation of the seven principles → kama-loka, where the desire-nature burns down and the shed kama-rupa lingers and decays → devachan, a sealed subjective dream of fulfilled aspiration lasting centuries in proportion to what the life produced → exhaustion of that store → reincarnation carrying the karmic account forward. · A murky astral shallows giving way to an enclosed luminous dream that nothing outside can enter. · H. P. Blavatsky, The Secret Doctrine (1888) · H. P. Blavatsky, The Key to Theosophy (1889) · A. P. Sinnett, Esoteric Buddhism (1883) · The Mahatma Letters · Kama-loka — the astral shallows where desire burns off · The kama-rupa, decaying and still articulate · Devachan — a sealed, subjective, centuries-long dream · Duration set by what the life produced · Descent into a new incarnation · Murky shallows with shapes dissolving in them · A shed husk still holding a shape · An enclosed sphere of light with someone asleep inside · Planes stacked like layers of glass · A thread running down from the light into matter · H. P. Blavatsky · The kama-rupa · The ego in devachan · A. P. Sinnett"
+  },
+  {
+    "id": "akan-asamando",
+    "name": "Akan (Asamando and the Nsamanfo)",
+    "description": "The Akan dead cross water to Asamando, the ancestral country — a shadowed mirror of this one — where an old woman, Amokye, receives them at the bank and takes their beads as the toll. Whether they arrive at all depends on the living: the funeral rites are what get a person through, which is why Akan funerals are the largest events a community holds. Those who arrive and are remembered become nsamanfo, ancestors honoured at blackened stools. The okra, the divine spark, returns to Nyame and often comes back into the same matrilineage.",
+    "origin": "Akan peoples of Ghana and Côte d’Ivoire, especially the Asante (c. 1600 CE onward)",
+    "antiquityAge": 1600,
+    "taxonomy": {
+      "family": "african",
+      "patterns": [
+        "judgment",
+        "rebirth",
+        "ancestral",
+        "underworld"
+      ]
+    },
+    "searchText": "Death → the okra returns to Nyame and reincarnates, often into the same matrilineage → the saman travels to the water and is received by Amokye, who takes the beads → arrival in Asamando depends on the funeral the living perform → reception among the nsamanfo, honoured at blackened stools and consulted → persistence for as long as the living keep naming and feeding them. · Gold and black cloth against a wide dark river — a crossing the living pay for and the dead cannot make alone. · Oral tradition; funerary rite (ayie) and stool ritual · R. S. Rattray, Ashanti and Religion and Art in Ashanti · Kwame Gyekye, An Essay on African Philosophical Thought · Akan proverb and drum literature · The water crossing and Amokye at the bank · Beads paid as the toll of entry · Asamando, a mirror town with the same ranks · Blackened stools holding the ancestors here · Libation poured onto the ground · Black and red mourning cloth in crowds · A wide dark river with a far bank barely visible · Strings of beads laid out on cloth · A carved stool blackened with age · Liquid poured onto dry ground · Amokye · The nsamanfo · Nyame · The blackened stool · Asase Yaa"
+  },
+  {
+    "id": "haudenosaunee-sky-world",
+    "name": "Haudenosaunee (The Sky World Road)",
+    "description": "For ten days after a death the spirit is still present, and the community behaves accordingly: the dead are spoken to, given a portion of the food, and formally released at the Ten Day Feast. Then the spirit travels the Milky Way — the Path of Souls — back to the Sky World the first woman fell from, a journey with ordeals along it and strawberries, sweet water and light at the end. The Condolence, performed by the opposite moiety, is directed at the grieving rather than the dead: it lifts the mourner’s mind so the nation can function again.",
+    "origin": "Haudenosaunee (Iroquois) Confederacy, northeastern woodlands (c. 1450 CE onward)",
+    "antiquityAge": 1450,
+    "taxonomy": {
+      "family": "indigenous-americas",
+      "patterns": [
+        "no-judgment",
+        "paradise",
+        "ancestral"
+      ]
+    },
+    "searchText": "Death → ten days in which the spirit is present, addressed and fed → the Ten Day Feast, releasing it and distributing belongings → travel along the Milky Way, the Path of Souls, with ordeals and with strawberries and good water, roughly a year → arrival in the Sky World. In parallel, the Condolence performed by the opposite moiety restores the mourner’s faculties so the council can function. · A clear northern night with the whole Milky Way out over open country — a road home rather than a descent. · Oral tradition; the Sky Woman narrative · The Condolence Ceremony and Requickening Address · The Great Law of Peace (Kaianere’kó:wa) · The Code of Handsome Lake (Gaiwiio, 1799 onward) · The Sky World, the origin and destination · The Milky Way as the Path of Souls · Strawberries and springs along the road · Ten days in which the dead are still present · The longhouse, where the Condolence restores the living · The full Milky Way over open farmland · A plate set at the end of a table · Wild strawberries at the edge of a path · A turtle’s back carrying land · Wampum held during a long address · Sky Woman · The spirit in the ten days · The opposite moiety · The Requickening"
+  },
+  {
+    "id": "sami-saivo",
+    "name": "Sámi (Saivo Beneath the Mountain)",
+    "description": "The Sámi dead live in saivo — a world inside the sacred mountains, or beneath the false bottom of certain double-bottomed lakes, entered through a small hole. It is not a reward and not a punishment: the saivo-people keep tents, herd, hunt and fish exactly as here, and families continue. Alongside it lies Jábmiidáibmu, the realm of the death-goddess Jábmiidáhkku, generally reckoned the bleaker option. The noaidi reaches both by drum, and negotiates with the dead on behalf of the living.",
+    "origin": "Sámi of Sápmi — northern Norway, Sweden, Finland and the Kola Peninsula",
+    "antiquityAge": 1000,
+    "taxonomy": {
+      "family": "european-folk",
+      "patterns": [
+        "no-judgment",
+        "underworld",
+        "ancestral",
+        "paradise"
+      ]
+    },
+    "searchText": "Death → passage into saivo, inside the sacred mountains or beneath a double-bottomed lake → continuation of ordinary life there with one’s own family, neither rewarded nor punished → remaining reachable, and able to call the living, with the noaidi travelling by drum to negotiate. Jábmiidáibmu, ruled by the death-mother, stands alongside as the bleaker alternative. · A very clear cold lake with another country visible through it — the dead living an ordinary life a short way under. · Missionary accounts (Isaac Olsen, Thomas von Westen, Knud Leem) · Johannes Schefferus, Lapponia (1673) · Surviving runebomme drums and their painted cosmologies · Joik and oral tradition · Saivo inside the sacred mountains · Double-bottomed lakes with a hole through · Tents, herds and families continuing below · Jábmiidáibmu and the death-mother · The drum, painted as a map of the worlds · An extremely clear lake with land visible under it · A mountain with a small dark opening · A painted frame drum · Tents pitched where they should not be · Reindeer moving under the surface · The saivo-people · The noaidi · Jábmiidáhkku · Saivo helping-spirits"
+  },
+  {
+    "id": "carvaka-lokayata",
+    "name": "Cārvāka (Lokāyata)",
+    "description": "India’s materialist school denied the whole apparatus from inside the Indian conversation: no soul separable from the body, no karma, no rebirth, no heaven, no hell, no liberation. Consciousness arises from the elements as intoxication arises from mixed ingredients, and ends when they disperse. Its most quoted line advises borrowing to drink ghee, since the body once burned does not return. Almost nothing of its literature survives — it is known mostly through opponents quoting it in order to refute it.",
+    "origin": "Indian materialist school (Cārvāka / Lokāyata), attested from c. 600 BCE",
+    "antiquityAge": -600,
+    "taxonomy": {
+      "family": "dharmic",
+      "patterns": [
+        "no-judgment",
+        "annihilation"
+      ]
+    },
+    "searchText": "Death → the elemental combination dissolves → consciousness, being a property of that combination, ends with it → no soul departs, no karma carries forward, no realm receives anything, and no liberation is required because no bondage was ever demonstrated. · Plain daylight over an ordinary river bank — a cremation ground with nothing above it and nothing under it. · Bṛhaspati Sūtra (lost; fragments in hostile quotation) · Mādhava, Sarvadarśanasaṃgraha, chapter 1 (14th c.) · Jayarāśi Bhaṭṭa, Tattvopaplavasiṃha · Refutations in Nyāya, Buddhist and Jain sources · The four elements and nothing besides · Consciousness as a by-product of combination · No loka, no svarga, no naraka · No karmic ledger to carry forward · The cremation ground as the end of the account · Plain daylight with no sky-realm in it · A river bank and the ordinary ground · Smoke dispersing and not gathering · An empty debating hall · Palm-leaf pages surviving only as quotations · Bṛhaspati · The Naiyāyika opponent · Mādhava · The four elements"
+  }
+]

@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "the-watchers",
+  "slug": "the-watchers",
+  "title": "The Watchers: Genesis 6 Expanded",
+  "subtitle": "Genesis 6:1–4 · 1 Enoch 6–16",
+  "summary": "A source-anchored comparison of the terse Genesis notice about the 'sons of God' and the Nephilim with the expansive Second Temple retelling in 1 Enoch 6–16, where the descent is named, taught, judged, and bound.",
+  "axis": "primeval-history",
+  "contextGuard": {
+    "requiresFullPericope": true,
+    "misuseNotice": "The identity of the 'sons of God' in Genesis 6 is an open interpretive question (divine beings, Sethite line, rulers). This matrix maps what each text says; it does not rule on which interpretation Genesis 'means.'"
+  },
+  "witnesses": [
+    {
+      "id": "genesis-6",
+      "title": "Genesis 6:1–4 (World English Bible)",
+      "shortTitle": "Genesis 6",
+      "language": "Hebrew / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 10th–6th century BCE",
+        "earliestManuscript": "4QGen-b (c. 1st century BCE)",
+        "edition": "Westminster Leningrad Codex / World English Bible"
+      },
+      "primaryTradition": "Hebrew Bible / Christian Old Testament",
+      "corpusEditionId": "web-bible",
+      "licenseNotice": "World English Bible is a 100% public domain Modern English translation of the Holy Bible."
+    },
+    {
+      "id": "enoch-6-16",
+      "title": "1 Enoch 6–16 (R.H. Charles)",
+      "shortTitle": "1 Enoch 6–16",
+      "language": "Ge'ez original / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 3rd century BCE (earliest sections; debated)",
+        "earliestManuscript": "Aramaic fragments from Qumran (4QEn, c. 2nd–1st century BCE); complete text in Ge'ez (15th century CE manuscripts)",
+        "edition": "R.H. Charles, The Apocrypha and Pseudepigrapha of the Old Testament, vol. 2 (1913)"
+      },
+      "primaryTradition": "Second Temple Judaism; canonical in the Ethiopian Tewahedo Church",
+      "corpusEditionId": "charles-enoch",
+      "licenseNotice": "R.H. Charles' 1913 translation of 1 Enoch (SPCK) is in the public domain. The Wikisource transcription is used verbatim; Charles' editorial marks (⌈⌉ conjectures, [ ] restorations) are preserved."
+    }
+  ],
+  "slots": [
+    {
+      "id": "the-descent",
+      "label": "The Descent and the Union",
+      "description": "How each text describes the 'sons of God' taking wives from the daughters of men.",
+      "cells": {
+        "genesis-6": {
+          "witnessId": "genesis-6",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "GEN",
+            "passageRef": "Genesis 6:1–2",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "The sons of God see the daughters of men are beautiful and take wives for themselves.",
+          "verbatimExcerpt": "When men began to multiply on the surface of the ground, and daughters were born to them, God’s sons saw that men’s daughters were beautiful, and they took any that they wanted for themselves as wives.",
+          "supportingCitations": [
+            "Genesis 6:1–2"
+          ],
+          "limits": "Genesis names no actors and gives no motive beyond desire for beauty."
+        },
+        "enoch-6-16": {
+          "witnessId": "enoch-6-16",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 6:1–7",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "Two hundred Watchers descend under Shemihazah's oath sworn on Mount Hermon; their chiefs are named.",
+          "verbatimExcerpt": "And it came to pass when the children of men had multiplied that in those days were born unto them beautiful and comely daughters. And the angels, the children of the heaven, saw and lusted after them, and said to one another: ‘Come, let us choose us wives from among the children of men and beget us children.’ And these are the names of their leaders: Samîazâz, their leader, Arâkîba, Râmêêl, Kôkabîêl, Tâmîêl, Râmîêl, Dânêl, Êzêqêêl, Barâqîjâl, Asâêl, Armârôs, Batârêl, Anânêl, Zaqîêl, Samsâpêêl, Satarêl, Tûrêl, Jômjâêl, Sariêl.",
+          "supportingCitations": [
+            "1 Enoch 6:1–7 (Charles 1913)"
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-offspring",
+      "label": "The Offspring",
+      "description": "Genesis' Nephilim notice against Enoch's giants.",
+      "cells": {
+        "genesis-6": {
+          "witnessId": "genesis-6",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "GEN",
+            "passageRef": "Genesis 6:4",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "The Nephilim were on the earth in those days; the sons of God came in to the daughters of men, and they bore children to them — the mighty men of old, men of renown.",
+          "verbatimExcerpt": "The Nephilim were on the earth in those days, and also after that, when God’s sons came in to men’s daughters and had children with them. Those were the mighty men who were of old, men of renown.",
+          "supportingCitations": [
+            "Genesis 6:4"
+          ]
+        },
+        "enoch-6-16": {
+          "witnessId": "enoch-6-16",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 7:1–6",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "The women conceive giants three thousand cubits tall who consume the produce of men and turn against them.",
+          "verbatimExcerpt": "And they became pregnant, and they bare great giants, whose height was three thousand ells: Who consumed all the acquisitions of men. And when men could no longer sustain them, the giants turned against them and devoured mankind. And they began to sin against birds, and beasts, and reptiles, and fish, and to devour one another's flesh, and drink the blood.",
+          "supportingCitations": [
+            "1 Enoch 7:1–6 (Charles 1913)"
+          ],
+          "limits": "Charles' text reads 'three thousand cubits'; the Ethiopic measure is debated in the editions."
+        }
+      }
+    },
+    {
+      "id": "the-teaching",
+      "label": "Forbidden Knowledge",
+      "description": "Genesis is silent on what the unions produced besides offspring; 1 Enoch adds taught arts.",
+      "cells": {
+        "genesis-6": {
+          "witnessId": "genesis-6",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "GEN",
+            "passageRef": "Genesis 6:1–4",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Genesis records no teaching motif; the passage moves from union to offspring to renown.",
+          "verbatimExcerpt": "When men began to multiply on the surface of the ground, and daughters were born to them, The Nephilim were on the earth in those days, and also after that, when God’s sons came in to men’s daughters and had children with them. Those were the mighty men who were of old, men of renown.",
+          "supportingCitations": [
+            "Genesis 6:1–4"
+          ],
+          "limits": "The silence is explicit: no instruction, sorcery, or metallurgy appears in Genesis 6:1–4."
+        },
+        "enoch-6-16": {
+          "witnessId": "enoch-6-16",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 7–8 (summarized at 7:1; 8:1–3 outside this shard)",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "inferred",
+          "summary": "The Watchers teach metallurgy, weapons, sorcery, astrology, and the cutting of roots; the earth is filled with violence and lawlessness.",
+          "verbatimExcerpt": "And all the others together with them took unto themselves wives, and each chose for himself one, and they began to go in unto them and to defile themselves with them, and they taught them charms and enchantments, and the cutting of roots, and made them acquainted with plants. And they began to sin against birds, and beasts, and reptiles, and fish, and to devour one another's flesh, and drink the blood. Then the earth laid accusation against the lawless ones.",
+          "supportingCitations": [
+            "1 Enoch 7:1–6 (Charles 1913); the teaching catalogue stands at 8:1–3"
+          ],
+          "limits": "The shard carries 7:1–6; the full teaching list (8:1–3) is summarized here and marked inferred for that reason."
+        }
+      }
+    },
+    {
+      "id": "the-judgment",
+      "label": "Judgment and Binding",
+      "description": "Genesis' flood decree against Enoch's named binding of Azazel and the healing of the earth.",
+      "cells": {
+        "genesis-6": {
+          "witnessId": "genesis-6",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "GEN",
+            "passageRef": "Genesis 6:3",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Yahweh's spirit will not strive with man forever; his days will be one hundred twenty years.",
+          "verbatimExcerpt": "Yahweh said, “My Spirit will not strive with man forever, because he also is flesh; so his days will be one hundred twenty years.”",
+          "supportingCitations": [
+            "Genesis 6:3"
+          ],
+          "limits": "The flood decree itself stands at 6:5–7, outside this shard; the shard carries the 120-years decree."
+        },
+        "enoch-6-16": {
+          "witnessId": "enoch-6-16",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 10:4–6, 11–13",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "Raphael binds Azazel hand and foot, casts him into darkness in the desert of Dudael; the earth is healed of corruption; Shemihazah and his associates are bound for seventy generations.",
+          "verbatimExcerpt": "And again the Lord said to Raphael: ‘Bind Azâzêl hand and foot, and cast him into the darkness: and make an opening in the desert, which is in Dûdâêl, and cast him therein. And place upon him rough and jagged rocks, and cover him with darkness, and let him abide there for ever, and cover his face that he may not see light. And on the day of the great judgement he shall be cast into the fire. And the Lord said unto Michael: ‘Go, bind Semjâzâ and his associates who have united themselves with women so as to have defiled themselves with them in all their uncleanness. And when their sons have slain one another, and they have seen the destruction of their beloved ones, bind them fast for seventy generations in the valleys of the earth, till the day of their judgement and of their consummation, till the judgement that is for ever and ever is consummated. In those days they shall be led off to the abyss of fire: 〈and〉 to the torment and the prison in which they shall be confined for ever.",
+          "supportingCitations": [
+            "1 Enoch 10:4–13 (Charles 1913)"
+          ]
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "enoch-expands-genesis",
+      "sourceWitnessId": "enoch-6-16",
+      "targetWitnessId": "genesis-6",
+      "relationship": "shared-tradition",
+      "scholarlyConsensus": "strong",
+      "basisNote": "1 Enoch 6–16 is an expansive retelling of the Genesis 6:1–4 notice: the same descent-union-offspring-judgment arc, elaborated with names, oaths, taught arts, and a mediation scene. Consensus treats the Enochic Book of the Watchers as a Second Temple development of the Genesis material.",
+      "citations": [
+        "George W.E. Nickelsburg, *1 Enoch 1* (Hermeneia, 2001), pp. 165–262.",
+        "James C. VanderKam, *Enoch and the Growth of an Apocalyptic Tradition* (CBQMS 16, 1984).",
+        "R.H. Charles, *The Apocrypha and Pseudepigrapha of the Old Testament*, vol. 2 (1913)."
+      ]
+    },
+    {
+      "id": "sons-of-god-interpretive-divergence",
+      "sourceWitnessId": "genesis-6",
+      "targetWitnessId": "enoch-6-16",
+      "relationship": "theological-divergence",
+      "scholarlyConsensus": "disputed",
+      "basisNote": "Genesis 6:2 does not identify the 'sons of God.' 1 Enoch reads them as angelic beings (the Watchers). Later Jewish and Christian interpretation divided between the angelic reading, a Sethite-lineage reading, and human-ruler readings; the divergence is interpretive, not textual.",
+      "citations": [
+        "George W.E. Nickelsburg, *1 Enoch 1* (Hermeneia, 2001), pp. 165–171.",
+        "Ronald S. Hendel, 'Of Demigods and the Deluge: Toward an Interpretation of Genesis 6:1–4,' *JBL* 106 (1987).",
+        "B. Yoma 67b; Targum Neofiti on Genesis 6:2 (rabbinic and targumic readings)."
+      ]
+    }
+  ],
+  "receptionClaims": [
+    {
+      "id": "claim-nt-echo",
+      "tradition": "christian",
+      "subject": "The Watchers' Imprisonment in the New Testament",
+      "text": "2 Peter 2:4 and Jude 6 speak of angels who sinned and are held in chains for judgment — language that runs alongside the Enochic binding scene rather than anything explicit in Genesis 6.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "2 Peter 2:4; Jude 6; Bauckham, *Jude, 2 Peter* (1983)"
+        }
+      ],
+      "refs": [],
+      "limit": "The NT passages do not name 1 Enoch here; the correspondence is with the Enochic tradition."
+    },
+    {
+      "id": "claim-ethiopian-canonical",
+      "tradition": "christian",
+      "subject": "Canonical Status of the Book of the Watchers",
+      "text": "In the Tewahedo canon, 1 Enoch is scripture; the Watchers narrative is read as inspired text, not as apocryphal elaboration.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Ethiopian Orthodox Tewahedo Church canon (81 books)"
+        }
+      ],
+      "refs": [],
+      "limit": "Canonical status is a matter of church tradition; this claim records the Tewahedo position without ranking canons."
+    },
+    {
+      "id": "claim-qumran-aramaic",
+      "tradition": "jewish",
+      "subject": "Aramaic Watchers Manuscripts at Qumran",
+      "text": "The Book of the Watchers is the best-attested Enochic work at Qumran, with multiple Aramaic manuscripts (4QEn a–g) dating from the third to first centuries BCE.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "4QEn a–g (DJD 36); Milik, *The Books of Enoch* (1976)"
+        }
+      ],
+      "refs": [],
+      "limit": "Canonical status is a matter of church tradition; this claim records the Tewahedo position without ranking canons."
+    }
+  ],
+  "provenance": {
+    "reviewStatus": "agent-reviewed",
+    "reviewer": "Claude Sourcing & Review Pass (garovartabedian.com)",
+    "rubricVersion": "parallels-v1.0",
+    "reviewedContentHash": "404411aed251757ae231d3e77c8feaa791880be544cd2efb2e654f7aa9b3ef30",
+    "reviewedAt": "2026-09-01T01:34:50.686Z",
+    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation"
+  }
+}

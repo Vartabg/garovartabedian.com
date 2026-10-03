@@ -1,0 +1,103 @@
+{
+  "life": {
+    "title": "Sa vie",
+    "lede": "De Bethléem à l'Ascension, sur la carte où cela s'est produit. Les Évangiles ne sont pas des journaux intimes — cet ordre suit une harmonie traditionnelle, et chaque événement renvoie directement à son propre texte.",
+    "language": {
+      "label": "Langue du guide",
+      "scope": "Modifie l’interface et les indications de la carte ; les titres des événements et le texte biblique restent en anglais."
+    },
+    "era": {
+      "birth": {
+        "name": "Naissance et enfance",
+        "title": "Naissance et enfance"
+      },
+      "preparation": {
+        "name": "Baptême et désert",
+        "title": "Baptême et désert"
+      },
+      "galilee": {
+        "name": "Ministère galiléen",
+        "title": "Ministère galiléen"
+      },
+      "journey": {
+        "name": "La route vers Jérusalem",
+        "title": "La route vers Jérusalem"
+      },
+      "passion": {
+        "name": "Semaine de la Passion",
+        "title": "Semaine de la Passion"
+      },
+      "resurrection": {
+        "name": "Résurrection et Ascension",
+        "title": "Résurrection et Ascension"
+      }
+    },
+    "rail": {
+      "label": "Vie de Jésus par ère",
+      "shapeOfLife": "La forme de la vie",
+      "summary": "{eventCount} événements · {placeCount} lieux · {refCount} références bibliques",
+      "eraAriaLabel": "Ère {eraName}: {eventCount} événements, {refCount} références bibliques"
+    },
+    "map": {
+      "note": "Les positions proviennent de coordonnées réelles ; le voyage suit l'harmonie.",
+      "noteHover": "Survolez un événement pour mettre en évidence la carte ; cliquez pour développer son texte évangélique.",
+      "noteTap": "Appuyez sur un événement pour développer le texte — la carte suit le lieu.",
+      "placePickerLabel": "Choisissez un lieu sur la carte",
+      "placePickerOverview": "Vue d’ensemble de la carte",
+      "keyboardShortcutsTitle": "Raccourcis clavier",
+      "keyboardShortcutsText": "Appuyez sur Tab pour vous déplacer entre les événements. Appuyez sur Entrée / Espace pour développer le texte d'un événement. Utilisez le sélecteur de lieux pour mettre un lieu en évidence sur la carte et mettre à jour la fiche de l'étape actuelle.",
+      "experienceKicker": "Une carte à parcourir",
+      "experienceTitle": "Traversez le paysage",
+      "experienceText": "Commencez par l'atlas lisible ou entrez dans le relief pour suivre le voyage à travers l'altitude et la distance.",
+      "viewLabel": "Vue de la carte",
+      "overview": "Atlas",
+      "terrain": "Relief",
+      "modeLabel": "Mode d'interaction avec le relief",
+      "storyMode": "Récit",
+      "exploreMode": "Explorer",
+      "wholeRegion": "Région entière",
+      "loadingTerrain": "Le relief se dessine…",
+      "terrainUnavailable": "La vue du relief est indisponible. Revenez à l'atlas pour continuer.",
+      "previousStop": "Étape précédente",
+      "nextStop": "Étape suivante",
+      "pauseJourney": "Suspendre le voyage",
+      "playJourney": "Lancer le voyage",
+      "ready": "Prêt à commencer",
+      "stopCount": "Étape {current} sur {total}",
+      "routeBoundary": "La ligne relie les étapes documentées dans l'ordre du récit ; elle ne prétend pas restituer une route antique précise.",
+      "currentStop": "Étape actuelle",
+      "readEvent": "Lire l'événement"
+    },
+    "narrative": {
+      "title": "Narration de voyage en texte uniquement",
+      "sectionTitle": "Voyage à travers la vie de Jésus : Une narration textuelle",
+      "intro": "Pour les utilisateurs de lecteurs d'écran ou ceux qui préfèrent un guide basé sur le texte, voici un voyage chronologique à travers la vie de Jésus avec des descriptions de chaque lieu, des noms de lieux modernes et des directions géographiques. Chaque événement est situé dans son contexte biblique et archéologique.",
+      "travel": "Voyage : À partir du lieu précédent, voyagez {direction} environ {distance} km ({distanceMiles} mi).",
+      "location": "Lieu :",
+      "modernSite": "Site moderne :",
+      "coordinates": "Coordonnées :",
+      "scripture": "Écriture :",
+      "geographicOverview": "Aperçu géographique",
+      "geographicOverviewText": "Le ministère de Jésus s'étend de Nazareth dans la région de Galilée vers le nord jusqu'à Césarée de Philippe, et vers le sud à travers la Samarie, la vallée du Jourdain, et enfin à Jérusalem et aux régions de Judée. La fenêtre de la carte couvre la région du littoral du Liban et de la Méditerranée à l'ouest aux Hauteurs du Golan et Transjordanie à l'est, et de la Galilée du sud aux collines de Judée.",
+      "narrativeNote": "Le récit suit les récits évangéliques, qui mettent l'accent sur la Galilée comme lieu du ministère public de Jésus et Jérusalem comme lieu de sa Passion et de sa Résurrection. La recherche archéologique moderne continue à affiner l'identification des sites bibliques avec les lieux contemporains."
+    },
+    "dataTable": {
+      "title": "Tableau de référence des événements et lieux",
+      "description": "Tableau facultatif de tous les événements classés par époque et de tous les lieux classés par ordre alphabétique.",
+      "descriptionHeader": "Description",
+      "byEra": "Événements par ère",
+      "eventTable": "Événements dans {eraName}",
+      "placeReference": "Référence des lieux",
+      "allPlaces": "Tous les lieux mentionnés dans la vie de Jésus, organisés alphabétiquement :",
+      "biblicalName": "Nom biblique",
+      "modernLocation": "Lieu moderne",
+      "region": "Région",
+      "coordinatesHeader": "Coordonnées"
+    },
+    "sources": {
+      "title": "Notes de diligence raisonnable",
+      "description": "Sources archéologiques et références pour l'identification des lieux",
+      "text": "Ces lieux sont identifiés selon le consensus archéologique moderne et les sites traditionnels de pèlerinage. Les sources clés comprennent :"
+    }
+  }
+}

@@ -1,0 +1,1926 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-05T22:48:44.965Z",
+  "suiteVersion": "known-target-v1",
+  "authorship": "Codex-authored from hosted sources before any ranking runs; human relevance review pending.",
+  "limitations": [
+    "Single known target per query; alternative relevant results are not judged.",
+    "Source-selected paraphrases are development checks, not held-out user queries.",
+    "Exact-tail probes deterministically select the twelve longest early sections and approximately their final 180 characters; they diagnose truncation, not general relevance.",
+    "The longest sections include a Latin appendix and editorial commentary; labels do not assert that all indexed text is ancient narrative.",
+    "Human relevance review remains pending for this development set; implementation review does not validate relevance judgments.",
+    "CPU timings are observations from one local run; rankingMs for WEB includes an exhaustive scan used to compare candidate strategies, not production funnel latency.",
+    "Known-target hit rates and MRR are not precision, recall, theological correctness, or evidence of historical influence."
+  ],
+  "provenance": {
+    "casesSha256": "303a8bbe7c224be7c20eac306280070fd224e0e9a46eda9f9537456e87e3a514",
+    "corpusRelease": "fe977081d9371daa0765a6d89d3ff1e997e6793b8617914ded2819cd1ab97bf4",
+    "scriptureRelease": "ac0b8bce50b1ae9a937997b351be3fd06915e2a4bfe6663102e9b7a100e6c3c4",
+    "baselineRowsSha256": "a554ac7dd86a0d3eaeba54714f3db8a0dfd835f74b5ac1ed0747b16559233661",
+    "baselineFingerprint": "1f18b983142200e72e284a005a4cfc0e670dbbf2e0b4529b59e9faf4a982c69b",
+    "encoder": {
+      "model": "Xenova/all-MiniLM-L6-v2",
+      "dims": 384,
+      "dtype": "q8",
+      "pooling": "mean",
+      "normalize": true,
+      "transformers": "4.2.0",
+      "modelFiles": [
+        {
+          "path": "config.json",
+          "sha256": "7135149f7cffa1a573466c6e4d8423ed73b62fd2332c575bf738a0d033f70df7"
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "sha256": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3"
+        },
+        {
+          "path": "onnx/model_quantized.onnx",
+          "sha256": "afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1"
+        }
+      ]
+    },
+    "runnerSha256": "581f05f1e904f8ced633c4217b2c3ea3e67b036a3f89daa2e8bebb03815b23ce",
+    "implementationSources": [
+      {
+        "path": "src/lib/scriptures/semantic.ts",
+        "sha256": "9c6d8e4ca58fc2d105bb47757af09066b4ccaa22f7220a8543f2501a05a7cc4b"
+      },
+      {
+        "path": "src/lib/semantic-corpus.ts",
+        "sha256": "40dde75316d9c9efab9c32a912c203ad8c74a7a9c809c3c947cf2422f754afef"
+      },
+      {
+        "path": "scripts/site/corpus-sources.mjs",
+        "sha256": "3f2acc92de357f975007f2f656a82f024831c8e4249ff636a8ad3069e4f5d016"
+      },
+      {
+        "path": "scripts/site/token-chunks.mjs",
+        "sha256": "fa35e2d99dd583367bfdda60e07084d0923a93e43637c00a22e75d11fa25986d"
+      },
+      {
+        "path": "scripts/site/build-corpus-embeddings.mjs",
+        "sha256": "6df22ae9e92186521274e58e8e23eb21422ccc3ef43e619f73fa5d4af677946e"
+      },
+      {
+        "path": "scripts/scriptures/index-publication.mjs",
+        "sha256": "bfe22bfd3b5011a69f5a619ab758b7206ecfee9dad3232718d700c532a672e1a"
+      }
+    ],
+    "baseCommit": "bf6283f7cc5c6e46c98b5af2c48dcec85ecd7014"
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "osRelease": "25.6.0",
+    "cpu": "Apple M2 Max",
+    "inference": "q8 CPU",
+    "modelLoadMs": 306.91416599999997,
+    "baselineMs": 1.2000410000000556,
+    "baselineCacheHit": true
+  },
+  "coverage": {
+    "early": {
+      "fingerprint": "140b4695e0813bee9e3b1dc4ae3ac870021c90ee8be495c51bfb15e37b51f30c",
+      "rows": {
+        "path": "objects/8c73e1f1f106d19250255be4818e6e8eb92968a3e5655fbd46718b6d394533a6.bin",
+        "sha256": "8c73e1f1f106d19250255be4818e6e8eb92968a3e5655fbd46718b6d394533a6",
+        "bytes": 340608
+      },
+      "index": {
+        "path": "objects/bff29f90640e03d22fa17a64fa25776a5770e6a6cfa2d8087fbc651dfef7b067.json",
+        "sha256": "bff29f90640e03d22fa17a64fa25776a5770e6a6cfa2d8087fbc651dfef7b067",
+        "bytes": 484849
+      },
+      "parents": 614,
+      "chunks": 887,
+      "oversizedParents": 105,
+      "maxParentTokens": 3627,
+      "maxChunkTokens": 384
+    },
+    "words": {
+      "fingerprint": "b74d034788dca048f9b87722dfde1a81c138040ad73e7cadb32c6af1d3b8fac8",
+      "rows": {
+        "path": "objects/8ac20b6716e18ff1e628422f8011039301cef4131598b5964f050b240f9a740c.bin",
+        "sha256": "8ac20b6716e18ff1e628422f8011039301cef4131598b5964f050b240f9a740c",
+        "bytes": 790656
+      },
+      "index": {
+        "path": "objects/503eb002352b7722dface26eef29985a131dad9635e0ab6014d00a7042ae0088.json",
+        "sha256": "503eb002352b7722dface26eef29985a131dad9635e0ab6014d00a7042ae0088",
+        "bytes": 932869
+      },
+      "parents": 2059,
+      "chunks": 2059,
+      "oversizedParents": 0,
+      "maxParentTokens": 83,
+      "maxChunkTokens": 83
+    },
+    "afterlife": {
+      "fingerprint": "a3062d23683b89962cc88ac6d5a32ba8dae26766572cd6968dc0e46176366813",
+      "rows": {
+        "path": "objects/22f48264253637f1b740f03b39c8d54d4717797bb55cdca513a5fe9d55357e9c.bin",
+        "sha256": "22f48264253637f1b740f03b39c8d54d4717797bb55cdca513a5fe9d55357e9c",
+        "bytes": 35712
+      },
+      "index": {
+        "path": "objects/aa354260335b7fc22ad039275b79958381997697612b8292a7e1689253ee08ff.json",
+        "sha256": "aa354260335b7fc22ad039275b79958381997697612b8292a7e1689253ee08ff",
+        "bytes": 173331
+      },
+      "parents": 54,
+      "chunks": 93,
+      "oversizedParents": 35,
+      "maxParentTokens": 685,
+      "maxChunkTokens": 384
+    },
+    "scriptureBooks": 81,
+    "scriptureVerses": 38029,
+    "exhaustiveArtifactBytes": 14882645
+  },
+  "groups": {
+    "earlyParaphrase": {
+      "wholeSection": {
+        "cases": 12,
+        "hitAt1": 3,
+        "hitAt5": 6,
+        "hitAt10": 8,
+        "mrrAt10": 0.3590277777777778
+      },
+      "chunked": {
+        "cases": 12,
+        "hitAt1": 8,
+        "hitAt5": 11,
+        "hitAt10": 12,
+        "mrrAt10": 0.7896825396825397
+      }
+    },
+    "earlyExactTail": {
+      "wholeSection": {
+        "cases": 12,
+        "hitAt1": 1,
+        "hitAt5": 3,
+        "hitAt10": 4,
+        "mrrAt10": 0.15079365079365079
+      },
+      "chunked": {
+        "cases": 12,
+        "hitAt1": 9,
+        "hitAt5": 10,
+        "hitAt10": 11,
+        "mrrAt10": 0.7800925925925926
+      }
+    },
+    "webParaphrase": {
+      "funnel": {
+        "cases": 12,
+        "hitAt1": 7,
+        "hitAt5": 9,
+        "hitAt10": 10,
+        "mrrAt10": 0.6666666666666666
+      },
+      "exhaustive": {
+        "cases": 12,
+        "hitAt1": 7,
+        "hitAt5": 10,
+        "hitAt10": 11,
+        "mrrAt10": 0.6909722222222222
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "early-paraphrase-01",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "What should someone do for baptism when flowing water is unavailable?",
+      "target": "didache#7",
+      "source": {
+        "path": "public/early/texts/didache.json",
+        "sha256": "ea4ad87a3da542e5408f3fad0f2b0c41f6ed3044ff4a9f282866e151585c5689",
+        "normalizedSha256": "d475e27a6090d73122e87906218049e1b7699d7d64328f6b465f752df6d0cf2a",
+        "quote": "But if thou have not living water, baptize into other water;",
+        "start": 210,
+        "end": 270
+      },
+      "targetTokens": 147,
+      "ranks": {
+        "wholeSection": 1,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "didache#7",
+          "barnabas#10",
+          "ignatius-smyrnaeans#8",
+          "ignatius-polycarp#6",
+          "ignatius-ephesians#18"
+        ],
+        "chunked": [
+          "didache#7",
+          "barnabas#10",
+          "ignatius-smyrnaeans#8",
+          "ignatius-ephesians#18",
+          "ignatius-polycarp#6"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 0,
+        "count": 1,
+        "start": 0,
+        "end": 585,
+        "tokens": 147,
+        "sha256": "d475e27a6090d73122e87906218049e1b7699d7d64328f6b465f752df6d0cf2a"
+      },
+      "queryMs": 5.377207999999996,
+      "rankingMs": 2.828125
+    },
+    {
+      "id": "early-paraphrase-02",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Which sacrificed food should a Christian be particularly careful to avoid?",
+      "target": "didache#6",
+      "source": {
+        "path": "public/early/texts/didache.json",
+        "sha256": "ea4ad87a3da542e5408f3fad0f2b0c41f6ed3044ff4a9f282866e151585c5689",
+        "normalizedSha256": "4e626ecc82c5b497cf4d23242a6d060a72d8031e4addedc8d260dbefabd74048",
+        "quote": "but against that which is sacrificed to idols be exceedingly on thy guard;",
+        "start": 353,
+        "end": 427
+      },
+      "targetTokens": 116,
+      "ranks": {
+        "wholeSection": 2,
+        "chunked": 7
+      },
+      "top5": {
+        "wholeSection": [
+          "diognetus#2",
+          "didache#6",
+          "barnabas#1",
+          "barnabas#6",
+          "didache#14"
+        ],
+        "chunked": [
+          "shepherd-hermas#57",
+          "barnabas#1",
+          "barnabas#6",
+          "shepherd-hermas#17",
+          "barnabas#9"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 0,
+        "count": 1,
+        "start": 0,
+        "end": 463,
+        "tokens": 116,
+        "sha256": "4e626ecc82c5b497cf4d23242a6d060a72d8031e4addedc8d260dbefabd74048"
+      },
+      "queryMs": 2.550542000000064,
+      "rankingMs": 1.1792500000000246
+    },
+    {
+      "id": "early-paraphrase-03",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "How does the suffering of Christ teach his followers to be humble?",
+      "target": "1clement#15",
+      "source": {
+        "path": "public/early/texts/1clement.json",
+        "sha256": "36721482f5884c549b30c676dec02f84c2141b1ed506533eedca02d90228e28b",
+        "normalizedSha256": "9054cab776ce60fede1523cfe3254291a029faed9d6a0acbb0ca3b9d768afbb9",
+        "quote": "what is the example which has been given us; for if the Lord thus humbled Himself, what shall we do",
+        "start": 2714,
+        "end": 2813
+      },
+      "targetTokens": 713,
+      "ranks": {
+        "wholeSection": 26,
+        "chunked": 2
+      },
+      "top5": {
+        "wholeSection": [
+          "1clement#12",
+          "ignatius-smyrnaeans#2",
+          "1clement#37",
+          "ignatius-trallians#4",
+          "epistula-apostolorum#37"
+        ],
+        "chunked": [
+          "1clement#12",
+          "1clement#15",
+          "apocalypse-paul#14",
+          "ignatius-smyrnaeans#2",
+          "1clement#37"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 0,
+        "count": 2,
+        "start": 0,
+        "end": 1517,
+        "tokens": 384,
+        "sha256": "644fae4e92d30fb356d93e08e72bd667f2344dd79ea6f42d5b67893467a08628"
+      },
+      "queryMs": 2.9337920000000395,
+      "rankingMs": 1.3415840000000117
+    },
+    {
+      "id": "early-paraphrase-04",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "A prisoner asks fellow believers to let wild animals kill him, comparing himself to grain made into bread.",
+      "target": "ignatius-romans#4",
+      "source": {
+        "path": "public/early/texts/ignatius-romans.json",
+        "sha256": "0463573b60c36c3d9addd73a82dcffb378082106fc5b546fba9157cb590ff2b5",
+        "normalizedSha256": "67f01b8ee1c68fb68c5c76f6acdaf7d07817f181dfb5a43c166b1dd52c2cd66a",
+        "quote": "I am the wheat of God, and let me be ground by the teeth of the wild beasts",
+        "start": 346,
+        "end": 421
+      },
+      "targetTokens": 292,
+      "ranks": {
+        "wholeSection": 1,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "ignatius-romans#4",
+          "1clement#16",
+          "barnabas#6",
+          "barnabas#9",
+          "ignatius-romans#5"
+        ],
+        "chunked": [
+          "ignatius-romans#4",
+          "1clement#16",
+          "barnabas#6",
+          "1clement#15",
+          "shepherd-hermas#63"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 0,
+        "count": 1,
+        "start": 0,
+        "end": 1149,
+        "tokens": 292,
+        "sha256": "67f01b8ee1c68fb68c5c76f6acdaf7d07817f181dfb5a43c166b1dd52c2cd66a"
+      },
+      "queryMs": 2.2745840000000044,
+      "rankingMs": 1.2407499999999345
+    },
+    {
+      "id": "early-paraphrase-05",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "What qualities should deacons have regarding speech, money, and compassion?",
+      "target": "polycarp-philippians#5",
+      "source": {
+        "path": "public/early/texts/polycarp-philippians.json",
+        "sha256": "cc4a003a8555d2452925eadebc34c59943d5410589367f2058db211ffa6172f3",
+        "normalizedSha256": "82005e2661597d91d3f615b466b6c29fb136271c340624305890c6dee7da4d6d",
+        "quote": "They must not be slanderers, double-tongued, or lovers of money, but temperate in all things, compassionate, industrious",
+        "start": 292,
+        "end": 412
+      },
+      "targetTokens": 338,
+      "ranks": {
+        "wholeSection": 3,
+        "chunked": 3
+      },
+      "top5": {
+        "wholeSection": [
+          "ignatius-trallians#2",
+          "ignatius-trallians#3",
+          "polycarp-philippians#5",
+          "didache#15",
+          "ignatius-polycarp#6"
+        ],
+        "chunked": [
+          "ignatius-trallians#2",
+          "ignatius-trallians#3",
+          "polycarp-philippians#5",
+          "didache#15",
+          "ignatius-polycarp#6"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 0,
+        "count": 1,
+        "start": 0,
+        "end": 1418,
+        "tokens": 338,
+        "sha256": "82005e2661597d91d3f615b466b6c29fb136271c340624305890c6dee7da4d6d"
+      },
+      "queryMs": 1.5485829999998941,
+      "rankingMs": 1.5992499999999836
+    },
+    {
+      "id": "early-paraphrase-06",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Christians live among their neighbors and follow local customs while considering themselves citizens of heaven.",
+      "target": "diognetus#4",
+      "source": {
+        "path": "public/early/texts/diognetus.json",
+        "sha256": "c544aa9f0a801d8e2f44d57e945441bd1f52941054b719defd4b55b9ae65e3b9",
+        "normalizedSha256": "d0f7a6b6c9ee3c8da1d43f5b6bed070e1d4117cc4ec173b26dd7f56df931cfd5",
+        "quote": "They pass their days on earth, but they are citizens of heaven.",
+        "start": 1268,
+        "end": 1331
+      },
+      "targetTokens": 466,
+      "ranks": {
+        "wholeSection": 1,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "diognetus#4",
+          "ignatius-magnesians#10",
+          "didache#12",
+          "apocalypse-paul#17",
+          "ignatius-smyrnaeans#7"
+        ],
+        "chunked": [
+          "diognetus#4",
+          "shepherd-hermas#51",
+          "barnabas#3",
+          "apocalypse-paul#17",
+          "ignatius-smyrnaeans#7"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 0,
+        "count": 2,
+        "start": 0,
+        "end": 1728,
+        "tokens": 384,
+        "sha256": "6a55d5c1055800a506494cbbfd63897256bd84f6cfd9bc03a196a6dc65fc9767"
+      },
+      "queryMs": 2.4771670000000086,
+      "rankingMs": 1.401207999999997
+    },
+    {
+      "id": "early-paraphrase-07",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Someone records the shepherds’ destructive behavior and presents written testimony to the Lord of the sheep.",
+      "target": "enoch#92",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "6d7d1e0ea94682470ef10951e4db2800a6107c3aac813c4bfc917cab139383e7",
+        "quote": "gave testimony before Him against all the shepherds.",
+        "start": 15613,
+        "end": 15665
+      },
+      "targetTokens": 3627,
+      "ranks": {
+        "wholeSection": 569,
+        "chunked": 2
+      },
+      "top5": {
+        "wholeSection": [
+          "shepherd-hermas#63",
+          "ignatius-philadelphians#2",
+          "shepherd-hermas#109",
+          "1clement#37",
+          "shepherd-hermas#0"
+        ],
+        "chunked": [
+          "shepherd-hermas#109",
+          "enoch#92",
+          "shepherd-hermas#63",
+          "shepherd-hermas#62",
+          "ignatius-philadelphians#2"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 8,
+        "count": 11,
+        "start": 11557,
+        "end": 13309,
+        "tokens": 384,
+        "sha256": "b6f6d2edf0f5e866945e1dc6cd2dd52fcf5b5e4bd9f31f9e8545ff1586b7ae26"
+      },
+      "queryMs": 2.6300830000000133,
+      "rankingMs": 1.735834000000068
+    },
+    {
+      "id": "early-paraphrase-08",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "As the prophet ascends, the angels in the fifth heaven offer more glorious praise than those in the fourth.",
+      "target": "ascension-isaiah#6",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "88b3b0eb6ebff249feb8e285430007a4a9adc0d8afd4434e589b851de46711d0",
+        "quote": "And their praise was more glorious than that of the fourth heaven.",
+        "start": 5947,
+        "end": 6013
+      },
+      "targetTokens": 1553,
+      "ranks": {
+        "wholeSection": 57,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "ascension-isaiah#7",
+          "ascension-isaiah#9",
+          "1clement#35",
+          "enoch#41",
+          "enoch#52"
+        ],
+        "chunked": [
+          "ascension-isaiah#6",
+          "ascension-isaiah#9",
+          "ascension-isaiah#8",
+          "ascension-isaiah#7",
+          "ascension-isaiah#10"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 4,
+        "count": 5,
+        "start": 5386,
+        "end": 6304,
+        "tokens": 216,
+        "sha256": "b7239ea5aa3633ef3a51ac51c1bbc27c56b67a0944de16a09a15f8a3738c7a52"
+      },
+      "queryMs": 2.8750840000000153,
+      "rankingMs": 1.3207079999999678
+    },
+    {
+      "id": "early-paraphrase-09",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "An account compares the brightness and size of the sun and the moon.",
+      "target": "enoch#74",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "8de36fb19713d0735d3a32a5a28253c8c3ebd1c3b7b02da2d751a48a366da52d",
+        "quote": "his light is sevenfold brighter than that of the moon; but as regards size they are both equal.",
+        "start": 6577,
+        "end": 6672
+      },
+      "targetTokens": 1521,
+      "ranks": {
+        "wholeSection": 4,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "enoch#80",
+          "enoch#75",
+          "enoch#73",
+          "enoch#74",
+          "enoch#76"
+        ],
+        "chunked": [
+          "enoch#74",
+          "enoch#80",
+          "enoch#75",
+          "enoch#76",
+          "enoch#73"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 4,
+        "count": 5,
+        "start": 5921,
+        "end": 6672,
+        "tokens": 184,
+        "sha256": "de4008d22985bb6ba20905526c97de1b91e275d7cbc311c7eea2becbc28a8876"
+      },
+      "queryMs": 1.5883340000000317,
+      "rankingMs": 1.4298750000000382
+    },
+    {
+      "id": "early-paraphrase-10",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Small hailstones and drops that hollow stone illustrate the power of the Spirit from above.",
+      "target": "shepherd-hermas#43",
+      "source": {
+        "path": "public/early/texts/shepherd-hermas.json",
+        "sha256": "d2a99ec0f25a8b77c02fb19730519348dd1727431f19f3decb9a90d34d25011a",
+        "normalizedSha256": "a01e6ac72fff83ad26a0db125f54f38b7499c93e8aecad67042ac63671b53b0d",
+        "quote": "the smallest things coming from above have great power when they fall upon the earth.",
+        "start": 5556,
+        "end": 5641
+      },
+      "targetTokens": 1335,
+      "ranks": {
+        "wholeSection": 293,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "enoch#44",
+          "shepherd-hermas#94",
+          "shepherd-hermas#12",
+          "enoch#60",
+          "shepherd-hermas#81"
+        ],
+        "chunked": [
+          "shepherd-hermas#43",
+          "shepherd-hermas#93",
+          "enoch#40",
+          "shepherd-hermas#94",
+          "enoch#44"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 3,
+        "count": 4,
+        "start": 4413,
+        "end": 5772,
+        "tokens": 334,
+        "sha256": "01bba95db34c1790925969cbc28b82e60dbe431db45c430a60c67090542968e3"
+      },
+      "queryMs": 2.321916999999985,
+      "rankingMs": 1.2789169999999785
+    },
+    {
+      "id": "early-paraphrase-11",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Manasseh has Isaiah killed by sawing him apart after the prophet’s visions.",
+      "target": "ascension-isaiah#10",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "5a9a678e7496ecec44d3a2babc6fb77af1e780ca940a23e0b83a162ac199334d",
+        "quote": "Sammael Satan sawed in sunder Isaiah the son of Amoz, the prophet, by the hand of Manasseh.",
+        "start": 5004,
+        "end": 5095
+      },
+      "targetTokens": 1311,
+      "ranks": {
+        "wholeSection": 10,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "ascension-isaiah#4",
+          "ascension-isaiah#0",
+          "ascension-isaiah#1",
+          "ascension-isaiah#5",
+          "ascension-isaiah#2"
+        ],
+        "chunked": [
+          "ascension-isaiah#10",
+          "ascension-isaiah#0",
+          "ascension-isaiah#4",
+          "ascension-isaiah#1",
+          "ascension-isaiah#2"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 3,
+        "count": 4,
+        "start": 4139,
+        "end": 5370,
+        "tokens": 307,
+        "sha256": "8b95e67aa60925a641ff08ecf9c03902392a6af9bac60405e0b63bcb92618e8a"
+      },
+      "queryMs": 1.8289590000000544,
+      "rankingMs": 1.2068749999999682
+    },
+    {
+      "id": "early-paraphrase-12",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Michael the angel of the covenant is instructed to lead a merciful soul into paradise.",
+      "target": "apocalypse-paul#5",
+      "source": {
+        "path": "public/early/texts/apocalypse-paul.json",
+        "sha256": "13d4004ee482c8926485a919e19bd0ef4ae139682282023b3ea68bb2be164154",
+        "normalizedSha256": "49154e7d5c79bce72bbfceb1cabe4e4fc15eaa737a412aff541e9eed36befe15",
+        "quote": "Let it be delivered therefore unto Michael the angel of the covenant, and let him lead it into the paradise of rejoicing",
+        "start": 4686,
+        "end": 4806
+      },
+      "targetTokens": 1287,
+      "ranks": {
+        "wholeSection": 8,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "apocalypse-paul#15",
+          "apocalypse-paul#17",
+          "enoch#69",
+          "1clement#35",
+          "apocalypse-paul#7"
+        ],
+        "chunked": [
+          "apocalypse-paul#5",
+          "apocalypse-paul#15",
+          "enoch#61",
+          "apocalypse-paul#17",
+          "shepherd-hermas#6"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 3,
+        "count": 4,
+        "start": 4168,
+        "end": 5381,
+        "tokens": 285,
+        "sha256": "bed1d5cb5b9d0703cb5f04108fd6ed0b80656357530ae9e2ada5153fe69c571b"
+      },
+      "queryMs": 1.624958000000106,
+      "rankingMs": 1.4031250000000455
+    },
+    {
+      "id": "early-exact-tail-01",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "as he showed Him all the doings of the shepherds, and gave testimony before Him against all the shepherds. 77. And he took the actual book and laid it down beside Him and departed.",
+      "target": "enoch#92",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "6d7d1e0ea94682470ef10951e4db2800a6107c3aac813c4bfc917cab139383e7",
+        "quote": "as he showed Him all the doings of the shepherds, and gave testimony before Him against all the shepherds. 77. And he took the actual book and laid it down beside Him and departed.",
+        "start": 15559,
+        "end": 15739
+      },
+      "targetTokens": 3627,
+      "ranks": {
+        "wholeSection": 177,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "shepherd-hermas#88",
+          "shepherd-hermas#79",
+          "shepherd-hermas#102",
+          "barnabas#4",
+          "papias#3"
+        ],
+        "chunked": [
+          "enoch#92",
+          "enoch#93",
+          "shepherd-hermas#88",
+          "shepherd-hermas#79",
+          "shepherd-hermas#102"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 10,
+        "count": 11,
+        "start": 14540,
+        "end": 15739,
+        "tokens": 286,
+        "sha256": "4935f05dbe8263f0551f29d70ab765eae9794c4c37aa5196d1c221ba0031860c"
+      },
+      "queryMs": 2.6361670000000004,
+      "rankingMs": 1.8174169999999776
+    },
+    {
+      "id": "early-exact-tail-02",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "and all the deeds of men in their order were shown to me. 42. On that night I remembered the first dream, and because of it I wept and was troubled—because I had seen that vision.",
+      "target": "enoch#93",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "cb4d0e295831de44fc150ed03af05bbe28a3ce1c5cc5b541ca7584d6e2bd9efe",
+        "quote": "and all the deeds of men in their order were shown to me. 42. On that night I remembered the first dream, and because of it I wept and was troubled—because I had seen that vision.",
+        "start": 8268,
+        "end": 8447
+      },
+      "targetTokens": 1986,
+      "ranks": {
+        "wholeSection": 207,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "enoch#90",
+          "enoch#60",
+          "enoch#33",
+          "enoch#85",
+          "enoch#19"
+        ],
+        "chunked": [
+          "enoch#93",
+          "enoch#13",
+          "apocalypse-paul#28",
+          "enoch#90",
+          "enoch#60"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 5,
+        "count": 6,
+        "start": 7120,
+        "end": 8447,
+        "tokens": 314,
+        "sha256": "d6ce3ad1d95f2579733c0a43fc61ae344fa4b65597e4525776050f5393864ab0"
+      },
+      "queryMs": 2.852999999999952,
+      "rankingMs": 1.8477079999998978
+    },
+    {
+      "id": "early-exact-tail-03",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "known to any flesh, who hath bestowed such glory on the several heavens, and who maketh great the glory of the angels, and more excellent the glory of Him who sitteth on the throne.",
+      "target": "ascension-isaiah#6",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "88b3b0eb6ebff249feb8e285430007a4a9adc0d8afd4434e589b851de46711d0",
+        "quote": "known to any flesh, who hath bestowed such glory on the several heavens, and who maketh great the glory of the angels, and more excellent the glory of Him who sitteth on the throne.",
+        "start": 6123,
+        "end": 6304
+      },
+      "targetTokens": 1553,
+      "ranks": {
+        "wholeSection": 7,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "enoch#47",
+          "1clement#57",
+          "ascension-isaiah#7",
+          "1clement#35",
+          "enoch#49"
+        ],
+        "chunked": [
+          "ascension-isaiah#6",
+          "ascension-isaiah#7",
+          "enoch#62",
+          "1clement#57",
+          "enoch#47"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 4,
+        "count": 5,
+        "start": 5386,
+        "end": 6304,
+        "tokens": 216,
+        "sha256": "b7239ea5aa3633ef3a51ac51c1bbc27c56b67a0944de16a09a15f8a3738c7a52"
+      },
+      "queryMs": 2.4616250000000264,
+      "rankingMs": 1.3290000000000646
+    },
+    {
+      "id": "early-exact-tail-04",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "As he rises, so he sets and decreases not, and rests not, but runs day and night, and his light is sevenfold brighter than that of the moon; but as regards size they are both equal.",
+      "target": "enoch#74",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "8de36fb19713d0735d3a32a5a28253c8c3ebd1c3b7b02da2d751a48a366da52d",
+        "quote": "As he rises, so he sets and decreases not, and rests not, but runs day and night, and his light is sevenfold brighter than that of the moon; but as regards size they are both equal.",
+        "start": 6491,
+        "end": 6672
+      },
+      "targetTokens": 1521,
+      "ranks": {
+        "wholeSection": 3,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "enoch#75",
+          "enoch#80",
+          "enoch#74",
+          "enoch#76",
+          "enoch#77"
+        ],
+        "chunked": [
+          "enoch#74",
+          "enoch#75",
+          "enoch#80",
+          "enoch#76",
+          "enoch#61"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 4,
+        "count": 5,
+        "start": 5921,
+        "end": 6672,
+        "tokens": 184,
+        "sha256": "de4008d22985bb6ba20905526c97de1b91e275d7cbc311c7eea2becbc28a8876"
+      },
+      "queryMs": 3.900416000000064,
+      "rankingMs": 1.3247499999999945
+    },
+    {
+      "id": "early-exact-tail-05",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "oculis nostris. 16 et erunt illi • III • filii [et erunt nomina filiorum cius • Sem • Cham • Iafeth] 18 et ipse uocabitur Noe qui interpretatur requies quia requiem prestabit in archam.",
+      "target": "enoch#110",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "50ea428e106833139d68a03318a5a6ccf3a76dc0b82334315668c6ea7a3929d1",
+        "quote": "oculis nostris. 16 et erunt illi • III • filii [et erunt nomina filiorum cius • Sem • Cham • Iafeth] 18 et ipse uocabitur Noe qui interpretatur requies quia requiem prestabit in archam.",
+        "start": 5088,
+        "end": 5273
+      },
+      "targetTokens": 1463,
+      "ranks": {
+        "wholeSection": 527,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "diognetus#6",
+          "ignatius-romans#0",
+          "papias#8",
+          "diognetus#0",
+          "papias#5"
+        ],
+        "chunked": [
+          "enoch#110",
+          "papias#5",
+          "enoch#53",
+          "ignatius-romans#0",
+          "papias#8"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 4,
+        "count": 5,
+        "start": 4951,
+        "end": 5273,
+        "tokens": 121,
+        "sha256": "64b4a62d7e25feb9c10ed250c98018375ab8f71992cfcbdff67841e0940455c1"
+      },
+      "queryMs": 3.440249999999992,
+      "rankingMs": 1.270208000000025
+    },
+    {
+      "id": "early-exact-tail-06",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "worshipped, and they both together praised God. 41. And thereupon all the righteous drew near and worshipped. 42. And the angels drew near and worshipped and all the angels praised.",
+      "target": "ascension-isaiah#8",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "40d81c3e2f90440dbb2cb5e5aa7d9dc0c295599ac06e744302b2354d12638b5d",
+        "quote": "worshipped, and they both together praised God. 41. And thereupon all the righteous drew near and worshipped. 42. And the angels drew near and worshipped and all the angels praised.",
+        "start": 5520,
+        "end": 5701
+      },
+      "targetTokens": 1408,
+      "ranks": {
+        "wholeSection": 27,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "apocalypse-paul#18",
+          "shepherd-hermas#103",
+          "enoch#72",
+          "enoch#33",
+          "apocalypse-paul#15"
+        ],
+        "chunked": [
+          "ascension-isaiah#8",
+          "ascension-isaiah#6",
+          "enoch#72",
+          "ascension-isaiah#9",
+          "apocalypse-paul#18"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 4,
+        "count": 5,
+        "start": 5400,
+        "end": 5701,
+        "tokens": 70,
+        "sha256": "2cfbef9ff7130f78c97f4f2dd3ee8b4119863d282fad48c83c2c2dba509258bd"
+      },
+      "queryMs": 3.5737080000000105,
+      "rankingMs": 1.2765829999999596
+    },
+    {
+      "id": "early-exact-tail-07",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "his glory, And all evil shall pass away before his face, And the word of that Son of Man shall go forth And be strong before the Lord of Spirits. This is the third Parable of Enoch.",
+      "target": "enoch#70",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "6a03b6a26eba58e2ef54a048191280d6485e827cbc577ec4706d8324c686d1c0",
+        "quote": "his glory, And all evil shall pass away before his face, And the word of that Son of Man shall go forth And be strong before the Lord of Spirits. This is the third Parable of Enoch.",
+        "start": 5543,
+        "end": 5724
+      },
+      "targetTokens": 1371,
+      "ranks": {
+        "wholeSection": 135,
+        "chunked": 9
+      },
+      "top5": {
+        "wholeSection": [
+          "enoch#96",
+          "enoch#71",
+          "enoch#38",
+          "enoch#12",
+          "enoch#34"
+        ],
+        "chunked": [
+          "enoch#96",
+          "enoch#71",
+          "enoch#1",
+          "enoch#112",
+          "enoch#97"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 3,
+        "count": 4,
+        "start": 4157,
+        "end": 5724,
+        "tokens": 366,
+        "sha256": "0aeac3f98ad20bcbe7b7901853a1cc8f6f8546991502414b7d695a7f34a8eb82"
+      },
+      "queryMs": 2.8421670000000177,
+      "rankingMs": 1.3212499999999636
+    },
+    {
+      "id": "early-exact-tail-08",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "above have great power when they fall upon the earth. Thus also is the Divine Spirit, which comes from above, powerful. Trust, then, that Spirit, but have nothing to do with the other.",
+      "target": "shepherd-hermas#43",
+      "source": {
+        "path": "public/early/texts/shepherd-hermas.json",
+        "sha256": "d2a99ec0f25a8b77c02fb19730519348dd1727431f19f3decb9a90d34d25011a",
+        "normalizedSha256": "a01e6ac72fff83ad26a0db125f54f38b7499c93e8aecad67042ac63671b53b0d",
+        "quote": "above have great power when they fall upon the earth. Thus also is the Divine Spirit, which comes from above, powerful. Trust, then, that Spirit, but have nothing to do with the other.",
+        "start": 5588,
+        "end": 5772
+      },
+      "targetTokens": 1335,
+      "ranks": {
+        "wholeSection": 33,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "1clement#36",
+          "1clement#35",
+          "epistula-apostolorum#15",
+          "ignatius-smyrnaeans#6",
+          "1clement#57"
+        ],
+        "chunked": [
+          "shepherd-hermas#43",
+          "enoch#62",
+          "enoch#40",
+          "epistula-apostolorum#15",
+          "1clement#36"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 3,
+        "count": 4,
+        "start": 4413,
+        "end": 5772,
+        "tokens": 334,
+        "sha256": "01bba95db34c1790925969cbc28b82e60dbe431db45c430a60c67090542968e3"
+      },
+      "queryMs": 3.843499999999949,
+      "rankingMs": 1.549959000000058
+    },
+    {
+      "id": "early-exact-tail-09",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "recensions there is no trace of anything after ch. 44: but this does not furnish a conclusive argument. More to the point would be the discovery of a copy of the full text ending with 44.",
+      "target": "apocalypse-paul#38",
+      "source": {
+        "path": "public/early/texts/apocalypse-paul.json",
+        "sha256": "13d4004ee482c8926485a919e19bd0ef4ae139682282023b3ea68bb2be164154",
+        "normalizedSha256": "8825e9098f87a8d6543bbb8bbef26b0033d5e0bce92804740fdbaf5839e3676c",
+        "quote": "recensions there is no trace of anything after ch. 44: but this does not furnish a conclusive argument. More to the point would be the discovery of a copy of the full text ending with 44.",
+        "start": 5570,
+        "end": 5757
+      },
+      "targetTokens": 1321,
+      "ranks": {
+        "wholeSection": 1,
+        "chunked": 4
+      },
+      "top5": {
+        "wholeSection": [
+          "apocalypse-paul#38",
+          "shepherd-hermas#70",
+          "barnabas#14",
+          "shepherd-hermas#74",
+          "enoch#23"
+        ],
+        "chunked": [
+          "shepherd-hermas#70",
+          "barnabas#14",
+          "enoch#84",
+          "apocalypse-paul#38",
+          "barnabas#16"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 3,
+        "count": 4,
+        "start": 4361,
+        "end": 5757,
+        "tokens": 319,
+        "sha256": "4f5292c54bf9ce716612134b2f78d0e26ce2d8c60b55772602aca0c9e11c2ab2"
+      },
+      "queryMs": 3.8472090000000208,
+      "rankingMs": 1.9318329999999833
+    },
+    {
+      "id": "early-exact-tail-10",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "Manasseh did not remember them nor place these things in his heart, but becoming the servant of Satan he was destroyed. Here endeth the vision of Isaiah the prophet with his ascension.",
+      "target": "ascension-isaiah#10",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "5a9a678e7496ecec44d3a2babc6fb77af1e780ca940a23e0b83a162ac199334d",
+        "quote": "Manasseh did not remember them nor place these things in his heart, but becoming the servant of Satan he was destroyed. Here endeth the vision of Isaiah the prophet with his ascension.",
+        "start": 5186,
+        "end": 5370
+      },
+      "targetTokens": 1311,
+      "ranks": {
+        "wholeSection": 31,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "ascension-isaiah#1",
+          "ascension-isaiah#0",
+          "ascension-isaiah#4",
+          "ascension-isaiah#5",
+          "ascension-isaiah#2"
+        ],
+        "chunked": [
+          "ascension-isaiah#10",
+          "ascension-isaiah#1",
+          "ascension-isaiah#0",
+          "ascension-isaiah#4",
+          "ascension-isaiah#5"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 3,
+        "count": 4,
+        "start": 4139,
+        "end": 5370,
+        "tokens": 307,
+        "sha256": "8b95e67aa60925a641ff08ecf9c03902392a6af9bac60405e0b63bcb92618e8a"
+      },
+      "queryMs": 2.542083000000048,
+      "rankingMs": 1.4731250000000955
+    },
+    {
+      "id": "early-exact-tail-11",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "And the angel answered and said unto me: Hast thou believed and known that whatsoever every one of you hath done, he beholdeth it at the hour of his necessity? And I said: Yea, Lord.",
+      "target": "apocalypse-paul#5",
+      "source": {
+        "path": "public/early/texts/apocalypse-paul.json",
+        "sha256": "13d4004ee482c8926485a919e19bd0ef4ae139682282023b3ea68bb2be164154",
+        "normalizedSha256": "49154e7d5c79bce72bbfceb1cabe4e4fc15eaa737a412aff541e9eed36befe15",
+        "quote": "And the angel answered and said unto me: Hast thou believed and known that whatsoever every one of you hath done, he beholdeth it at the hour of his necessity? And I said: Yea, Lord.",
+        "start": 5199,
+        "end": 5381
+      },
+      "targetTokens": 1287,
+      "ranks": {
+        "wholeSection": 3,
+        "chunked": 1
+      },
+      "top5": {
+        "wholeSection": [
+          "epistula-apostolorum#50",
+          "apocalypse-paul#4",
+          "apocalypse-paul#5",
+          "apocalypse-paul#35",
+          "epistula-apostolorum#15"
+        ],
+        "chunked": [
+          "apocalypse-paul#5",
+          "apocalypse-paul#28",
+          "apocalypse-paul#7",
+          "apocalypse-paul#4",
+          "shepherd-hermas#58"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 3,
+        "count": 4,
+        "start": 4168,
+        "end": 5381,
+        "tokens": 285,
+        "sha256": "bed1d5cb5b9d0703cb5f04108fd6ed0b80656357530ae9e2ada5153fe69c571b"
+      },
+      "queryMs": 3.421583999999939,
+      "rankingMs": 1.4404590000000326
+    },
+    {
+      "id": "early-exact-tail-12",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "saw towards the Garden of the Righteous. 24. And the angel of peace who was with me said to me: ‘These two monsters, prepared conformably to the greatness of God, shall feed . . .",
+      "target": "enoch#61",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "304da4d53dd0980b49e1923e70fa1167ad098555c52182f4ccf8f68e0fefd7ca",
+        "quote": "saw towards the Garden of the Righteous. 24. And the angel of peace who was with me said to me: ‘These two monsters, prepared conformably to the greatness of God, shall feed . . .",
+        "start": 5275,
+        "end": 5454
+      },
+      "targetTokens": 1283,
+      "ranks": {
+        "wholeSection": 11,
+        "chunked": 24
+      },
+      "top5": {
+        "wholeSection": [
+          "apocalypse-paul#4",
+          "apocalypse-paul#9",
+          "1clement#35",
+          "apocalypse-paul#18",
+          "apocalypse-paul#35"
+        ],
+        "chunked": [
+          "apocalypse-paul#4",
+          "apocalypse-paul#5",
+          "apocalypse-paul#2",
+          "enoch#72",
+          "apocalypse-paul#9"
+        ]
+      },
+      "targetWinningChunk": {
+        "index": 0,
+        "count": 4,
+        "start": 0,
+        "end": 1633,
+        "tokens": 384,
+        "sha256": "a1563d0bd8e2594c0247d842c77f7361c45a9bddffe3e70d436db654ebe942dc"
+      },
+      "queryMs": 3.0454999999999472,
+      "rankingMs": 1.2982919999999467
+    },
+    {
+      "id": "web-paraphrase-01",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "God speaks and light begins to exist.",
+      "target": "GEN 1:3",
+      "source": {
+        "path": "public/scriptures/text/web/GEN.json",
+        "sha256": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14",
+        "quote": "God said, “Let there be light,” and there was light."
+      },
+      "ranks": {
+        "exhaustive": 1,
+        "funnel": 1
+      },
+      "top5": {
+        "exhaustive": [
+          "GEN 1:3",
+          "1JN 1:5",
+          "2CO 4:6",
+          "GEN 1:4",
+          "PSA 62:11"
+        ],
+        "funnel": [
+          "GEN 1:3",
+          "1JN 1:5",
+          "2CO 4:6",
+          "GEN 1:4",
+          "JHN 1:1"
+        ]
+      },
+      "candidateBooks": [
+        "GEN",
+        "1JN",
+        "2CO",
+        "SIR",
+        "2PE",
+        "2ES",
+        "MRK",
+        "ECC",
+        "1CO",
+        "JOB",
+        "REV",
+        "JHN",
+        "WIS",
+        "MAT"
+      ],
+      "candidateArtifactBytes": 3700928,
+      "targetBookScanned": true,
+      "queryMs": 2.4400419999999485,
+      "rankingMs": 35.52929199999994
+    },
+    {
+      "id": "web-paraphrase-02",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "God tells Moses his name as the one who is.",
+      "target": "EXO 3:14",
+      "source": {
+        "path": "public/scriptures/text/web/EXO.json",
+        "sha256": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418",
+        "quote": "God said to Moses, “I AM WHO I AM,” and he said, “You shall tell the children of Israel this: ‘I AM has sent me to you.’”"
+      },
+      "ranks": {
+        "exhaustive": 3,
+        "funnel": 3
+      },
+      "top5": {
+        "exhaustive": [
+          "EXO 3:13",
+          "1CH 23:14",
+          "EXO 3:14",
+          "JHN 9:29",
+          "EXO 6:2"
+        ],
+        "funnel": [
+          "EXO 3:13",
+          "1CH 23:14",
+          "EXO 3:14",
+          "JHN 9:29",
+          "EXO 6:2"
+        ]
+      },
+      "candidateBooks": [
+        "EXO",
+        "NUM",
+        "JOS",
+        "DEU",
+        "ACT",
+        "ISA",
+        "ROM",
+        "LEV",
+        "JHN",
+        "PSA",
+        "GEN",
+        "1KI",
+        "1CH",
+        "LUK"
+      ],
+      "candidateArtifactBytes": 6063058,
+      "targetBookScanned": true,
+      "queryMs": 8.516665999999987,
+      "rankingMs": 36.89224999999999
+    },
+    {
+      "id": "web-paraphrase-03",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Israel is called to hear that the Lord is one.",
+      "target": "DEU 6:4",
+      "source": {
+        "path": "public/scriptures/text/web/DEU.json",
+        "sha256": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8",
+        "quote": "Hear, Israel: Yahweh is our God. Yahweh is one."
+      },
+      "ranks": {
+        "exhaustive": 3,
+        "funnel": 1
+      },
+      "top5": {
+        "exhaustive": [
+          "MRK 12:29",
+          "SIR 17:17",
+          "DEU 6:4",
+          "ROM 9:6",
+          "2ES 7:10"
+        ],
+        "funnel": [
+          "DEU 6:4",
+          "ROM 9:6",
+          "DEU 27:9",
+          "BAR 2:15",
+          "ISA 55:5"
+        ]
+      },
+      "candidateBooks": [
+        "ROM",
+        "BAR",
+        "2CH",
+        "PSA",
+        "1KI",
+        "HEB",
+        "ISA",
+        "DEU",
+        "MIC",
+        "ACT",
+        "1CH",
+        "TIT",
+        "JHN",
+        "HOS"
+      ],
+      "candidateArtifactBytes": 4099192,
+      "targetBookScanned": true,
+      "queryMs": 3.0594579999999496,
+      "rankingMs": 29.804791999999907
+    },
+    {
+      "id": "web-paraphrase-04",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "The Lord cares for me like a shepherd so I lack nothing.",
+      "target": "PSA 23:1",
+      "source": {
+        "path": "public/scriptures/text/web/PSA.json",
+        "sha256": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e",
+        "quote": "A Psalm by David. Yahweh is my shepherd; I shall lack nothing."
+      },
+      "ranks": {
+        "exhaustive": 1,
+        "funnel": 1
+      },
+      "top5": {
+        "exhaustive": [
+          "PSA 23:1",
+          "JER 3:15",
+          "JER 17:16",
+          "SIR 35:4",
+          "2ES 2:34"
+        ],
+        "funnel": [
+          "PSA 23:1",
+          "2ES 2:34",
+          "JHN 10:14",
+          "PSA 28:9",
+          "EZK 34:8"
+        ]
+      },
+      "candidateBooks": [
+        "PSA",
+        "PHP",
+        "1PE",
+        "1CO",
+        "COL",
+        "PHM",
+        "EZK",
+        "2CO",
+        "2ES",
+        "GAL",
+        "ROM",
+        "EPH",
+        "JAS",
+        "JHN"
+      ],
+      "candidateArtifactBytes": 2906632,
+      "targetBookScanned": true,
+      "queryMs": 2.493832999999995,
+      "rankingMs": 30.568417000000068
+    },
+    {
+      "id": "web-paraphrase-05",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Our peace and healing come through the wounds of a suffering servant.",
+      "target": "ISA 53:5",
+      "source": {
+        "path": "public/scriptures/text/web/ISA.json",
+        "sha256": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24",
+        "quote": "But he was pierced for our transgressions. He was crushed for our iniquities. The punishment that brought our peace was on him; and by his wounds we are healed."
+      },
+      "ranks": {
+        "exhaustive": 114,
+        "funnel": null
+      },
+      "top5": {
+        "exhaustive": [
+          "LUK 2:29",
+          "2CO 6:4",
+          "HEB 13:20",
+          "PSA 143:12",
+          "2CH 6:19"
+        ],
+        "funnel": [
+          "2CO 6:4",
+          "HEB 13:20",
+          "ROM 5:3",
+          "ROM 5:2",
+          "2TI 2:24"
+        ]
+      },
+      "candidateBooks": [
+        "2CO",
+        "COL",
+        "ROM",
+        "SIR",
+        "EPH",
+        "PHP",
+        "ECC",
+        "HEB",
+        "TIT",
+        "2JN",
+        "1PE",
+        "BAR",
+        "2TH",
+        "2TI"
+      ],
+      "candidateArtifactBytes": 1343725,
+      "targetBookScanned": false,
+      "queryMs": 3.76400000000001,
+      "rankingMs": 29.222458999999958
+    },
+    {
+      "id": "web-paraphrase-06",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "The divine Word becomes human and lives among us.",
+      "target": "JHN 1:14",
+      "source": {
+        "path": "public/scriptures/text/web/JHN.json",
+        "sha256": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307",
+        "quote": "The Word became flesh and lived among us. We saw his glory, such glory as of the only born Son of the Father, full of grace and truth."
+      },
+      "ranks": {
+        "exhaustive": 1,
+        "funnel": null
+      },
+      "top5": {
+        "exhaustive": [
+          "JHN 1:14",
+          "2PE 1:3",
+          "2CO 2:15",
+          "TIT 3:4",
+          "4MA 17:18"
+        ],
+        "funnel": [
+          "2PE 1:3",
+          "2CO 2:15",
+          "TIT 3:4",
+          "1JN 4:9",
+          "1TH 4:17"
+        ]
+      },
+      "candidateBooks": [
+        "2CO",
+        "ROM",
+        "2PE",
+        "EPH",
+        "1JN",
+        "1PE",
+        "1CO",
+        "WIS",
+        "COL",
+        "HEB",
+        "1TI",
+        "TIT",
+        "1TH",
+        "DEU"
+      ],
+      "candidateArtifactBytes": 1405790,
+      "targetBookScanned": false,
+      "queryMs": 2.022207999999978,
+      "rankingMs": 30.95054099999993
+    },
+    {
+      "id": "web-paraphrase-07",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Jesus offers water that becomes an inner spring leading to eternal life.",
+      "target": "JHN 4:14",
+      "source": {
+        "path": "public/scriptures/text/web/JHN.json",
+        "sha256": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307",
+        "quote": "but whoever drinks of the water that I will give him will never thirst again; but the water that I will give him will become in him a well of water springing up to eternal life.”"
+      },
+      "ranks": {
+        "exhaustive": 1,
+        "funnel": 1
+      },
+      "top5": {
+        "exhaustive": [
+          "JHN 4:14",
+          "ISA 12:3",
+          "JHN 19:28",
+          "PSA 107:33",
+          "JHN 4:13"
+        ],
+        "funnel": [
+          "JHN 4:14",
+          "JHN 19:28",
+          "JHN 4:13",
+          "JHN 3:5",
+          "JHN 2:7"
+        ]
+      },
+      "candidateBooks": [
+        "JHN",
+        "MAT",
+        "2PE",
+        "SIR",
+        "1PE",
+        "1CO",
+        "HEB",
+        "1JN",
+        "ROM",
+        "LUK",
+        "EPH",
+        "REV",
+        "2CO",
+        "GEN"
+      ],
+      "candidateArtifactBytes": 3229632,
+      "targetBookScanned": true,
+      "queryMs": 4.687124999999924,
+      "rankingMs": 28.245542
+    },
+    {
+      "id": "web-paraphrase-08",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "A Samaritan feels compassion for the injured traveler.",
+      "target": "LUK 10:33",
+      "source": {
+        "path": "public/scriptures/text/web/LUK.json",
+        "sha256": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0",
+        "quote": "But a certain Samaritan, as he traveled, came where he was. When he saw him, he was moved with compassion,"
+      },
+      "ranks": {
+        "exhaustive": 1,
+        "funnel": 1
+      },
+      "top5": {
+        "exhaustive": [
+          "LUK 10:33",
+          "PRO 13:17",
+          "JHN 4:40",
+          "LUK 17:16",
+          "PSA 82:4"
+        ],
+        "funnel": [
+          "LUK 10:33",
+          "PRO 13:17",
+          "LUK 17:16",
+          "PSA 82:4",
+          "SIR 8:15"
+        ]
+      },
+      "candidateBooks": [
+        "SIR",
+        "LUK",
+        "JAS",
+        "PSA",
+        "TOB",
+        "2CO",
+        "4MA",
+        "PHP",
+        "HEB",
+        "BAR",
+        "ROM",
+        "PRO",
+        "1PE",
+        "TIT"
+      ],
+      "candidateArtifactBytes": 3202933,
+      "targetBookScanned": true,
+      "queryMs": 1.4774999999999636,
+      "rankingMs": 29.351167000000032
+    },
+    {
+      "id": "web-paraphrase-09",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Nothing anywhere in creation can separate us from God’s love in Christ.",
+      "target": "ROM 8:39",
+      "source": {
+        "path": "public/scriptures/text/web/ROM.json",
+        "sha256": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344",
+        "quote": "nor height, nor depth, nor any other created thing will be able to separate us from God’s love which is in Christ Jesus our Lord."
+      },
+      "ranks": {
+        "exhaustive": 2,
+        "funnel": 2
+      },
+      "top5": {
+        "exhaustive": [
+          "ROM 8:35",
+          "ROM 8:39",
+          "MRK 10:9",
+          "1JN 4:10",
+          "1JN 4:16"
+        ],
+        "funnel": [
+          "ROM 8:35",
+          "ROM 8:39",
+          "1JN 4:10",
+          "1JN 4:16",
+          "1JN 4:9"
+        ]
+      },
+      "candidateBooks": [
+        "1JN",
+        "EPH",
+        "ROM",
+        "2CO",
+        "1PE",
+        "COL",
+        "1CO",
+        "1TH",
+        "PHP",
+        "2JN",
+        "HEB",
+        "2PE",
+        "1TI",
+        "GAL"
+      ],
+      "candidateArtifactBytes": 945865,
+      "targetBookScanned": true,
+      "queryMs": 1.8385000000000673,
+      "rankingMs": 32.26099999999997
+    },
+    {
+      "id": "web-paraphrase-10",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "The righteous souls are held by God and cannot be touched by torment.",
+      "target": "WIS 3:1",
+      "source": {
+        "path": "public/scriptures/text/web/WIS.json",
+        "sha256": "1ce669d4b865f998224e53137f02ff8f3a02acadfb659fd034770d2e56f523c5",
+        "quote": "But the souls of the righteous are in the hand of God, and no torment will touch them."
+      },
+      "ranks": {
+        "exhaustive": 1,
+        "funnel": 1
+      },
+      "top5": {
+        "exhaustive": [
+          "WIS 3:1",
+          "2ES 7:67",
+          "2ES 9:12",
+          "4MA 11:6",
+          "2ES 7:66"
+        ],
+        "funnel": [
+          "WIS 3:1",
+          "2ES 7:67",
+          "2ES 9:12",
+          "2ES 7:66",
+          "2ES 9:9"
+        ]
+      },
+      "candidateBooks": [
+        "ROM",
+        "1PE",
+        "WIS",
+        "1CO",
+        "HEB",
+        "2ES",
+        "JUD",
+        "2PE",
+        "MAN",
+        "SIR",
+        "2CO",
+        "ISA",
+        "PRO",
+        "2TH"
+      ],
+      "candidateArtifactBytes": 2594202,
+      "targetBookScanned": true,
+      "queryMs": 1.7356660000000375,
+      "rankingMs": 49.536749999999984
+    },
+    {
+      "id": "web-paraphrase-11",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "A person who comes to serve the Lord should prepare for trials.",
+      "target": "SIR 2:1",
+      "source": {
+        "path": "public/scriptures/text/web/SIR.json",
+        "sha256": "d6d5320134bb20214788a636dee6dd21bab6035970a4c3ce97b2aaa25aba2f17",
+        "quote": "My son, if you come to serve the Lord, prepare your soul for temptation."
+      },
+      "ranks": {
+        "exhaustive": 8,
+        "funnel": 6
+      },
+      "top5": {
+        "exhaustive": [
+          "PSA 22:30",
+          "SIR 32:24",
+          "LUK 12:47",
+          "SIR 35:1",
+          "1TI 3:1"
+        ],
+        "funnel": [
+          "SIR 32:24",
+          "LUK 12:47",
+          "SIR 35:1",
+          "1TI 3:1",
+          "SIR 21:11"
+        ]
+      },
+      "candidateBooks": [
+        "1TI",
+        "1PE",
+        "2TI",
+        "SIR",
+        "DEU",
+        "TIT",
+        "EPH",
+        "JAS",
+        "MAT",
+        "HEB",
+        "ROM",
+        "EZK",
+        "LUK",
+        "PRO"
+      ],
+      "candidateArtifactBytes": 3159763,
+      "targetBookScanned": true,
+      "queryMs": 1.856999999999971,
+      "rankingMs": 30.44049999999993
+    },
+    {
+      "id": "web-paraphrase-12",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Giving alms rescues from death and cleanses sin.",
+      "target": "TOB 12:9",
+      "source": {
+        "path": "public/scriptures/text/web/TOB.json",
+        "sha256": "a06294be023863611f034e5a8d837406d36f6fea857b6630bc5344ac62318467",
+        "quote": "Alms delivers from death, and it purges away all sin. Those who give alms and do righteousness will be filled with life;"
+      },
+      "ranks": {
+        "exhaustive": 1,
+        "funnel": 1
+      },
+      "top5": {
+        "exhaustive": [
+          "TOB 12:9",
+          "TOB 4:7",
+          "TOB 4:10",
+          "TOB 4:16",
+          "SIR 7:10"
+        ],
+        "funnel": [
+          "TOB 12:9",
+          "TOB 4:7",
+          "TOB 4:10",
+          "TOB 4:16",
+          "SIR 7:10"
+        ]
+      },
+      "candidateBooks": [
+        "TOB",
+        "WIS",
+        "SIR",
+        "HEB",
+        "PSA",
+        "2PE",
+        "LEV",
+        "ROM",
+        "JUD",
+        "ECC",
+        "HOS",
+        "1PE",
+        "2MA",
+        "1CO"
+      ],
+      "candidateArtifactBytes": 3013073,
+      "targetBookScanned": true,
+      "queryMs": 3.3686250000000655,
+      "rankingMs": 30.48412499999995
+    }
+  ]
+}

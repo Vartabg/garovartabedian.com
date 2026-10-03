@@ -1,0 +1,185 @@
+{
+  "book": "PSA",
+  "bookName": "Psalms",
+  "oneLine": "Israel's many-voiced prayer book — praise, protest, confession, memory, rage, trust, royal hope, and wisdom arranged as a five-book journey.",
+  "orient": "Psalms is not one argument by one author. It is an anthology formed over centuries, containing songs for public worship, private pleas, royal ceremonies, instruction, thanksgiving, and historical remembrance. The collection teaches prayer by refusing to limit prayer to calm or respectable emotions: speakers accuse enemies, question God, confess guilt, celebrate creation, remember rescue, and sometimes end without relief. Its final editors arranged these distinct poems into five books, so individual psalms and the movement of the whole collection both matter.",
+  "whereYouAre": "The poems presuppose much of Israel's story — creation, exodus, Torah, Davidic kingship, temple worship, Jerusalem's destruction, exile, and return — but do not retell it in chronological order. You can begin here without reading every earlier narrative, though names and images deepen when recognized. The first two psalms function like a double doorway: Psalm 1 commends Torah-shaped life, and Psalm 2 announces God's king amid rebellious nations.",
+  "facts": {
+    "writtenBy": "Many writers and collections. Superscriptions associate 73 Hebrew psalms with David and others with Asaph, the Korahites, Solomon, Moses, Heman, and Ethan. The Hebrew preposition can express authorship, association, dedication, or belonging, and the headings' historical origin is debated.",
+    "writtenWhen": "Individual poems may preserve material from the monarchy through the postexilic period. The five-book Psalter is a later anthology; assigning one date to all 150 Hebrew psalms would be misleading.",
+    "writtenFor": "Israel's worshiping and instructed community, then Jewish and Christian communities that adopted these words for public prayer and private life.",
+    "place": "Many poems are oriented toward Jerusalem and its temple; others speak from battle, illness, estrangement, exile, pilgrimage, or an unnamed interior crisis.",
+    "covers": "Not a continuous span of events. It repeatedly reinterprets Israel's past and present before God.",
+    "size": "The Hebrew-based World English Bible has 150 psalms, 2,461 numbered verses, and 41,312 words here. The hosted Brenton Septuagint has 151 psalms; Psalm 151 also has its own site book entry for traditions that place it separately."
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew, with a small amount of Aramaic influence or material proposed in individual passages. The ancient Greek Psalter is a distinct translation tradition with different numbering in the middle of the book and an additional Psalm 151.",
+    "register": "Highly compressed poetry. Meaning is carried by paired lines, images, shifts of speaker, sound, rhythm, repetition, and strategic gaps more than by the explicit connective prose readers expect. A second line can restate, sharpen, reverse, complete, or destabilize the first.",
+    "spokenWorld": "These are words intended to be voiced — by individuals, choirs, leaders, assemblies, and later liturgical communities. Musical directions are preserved, but the ancient melodies and the exact force of several performance terms are lost.",
+    "readerSignal": "Headings name tunes, occasions, performers, genres, and instruments; refrains invite communal response; selah interrupts some poems; alphabetic acrostics order lines by Hebrew letters. English communicates some of those signals and cannot reproduce others without notes or visible layout.",
+    "englishLayer": "The main text here translates the Hebrew Psalter into modern English. In Orthodox routes the Brenton translation follows the Greek Psalter, so a familiar psalm may carry a number one lower than in a Hebrew-based Bible after Psalms 9–10, and verse numbering may also differ.",
+    "textualHistory": [
+      {
+        "label": "The five-book collection",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The received Hebrew Psalter contains 150 poems arranged in five books, each closed by a doxology or final burst of praise. It preserves smaller collections and headings from different periods rather than a single moment of composition.",
+        "sourceIds": ["usccb-psalms", "cambridge-brown", "cambridge-brueggemann"]
+      },
+      {
+        "label": "The Greek Psalter",
+        "language": "Koine Greek (Septuagint)",
+        "role": "translation",
+        "description": "The Greek collection has 151 psalms and combines or divides several poems differently, producing a shifted numbering system. It became the Psalter of much early Christianity and remains central in Eastern Christian worship.",
+        "sourceIds": ["cambridge-brown", "cambridge-numbering", "oxford-psalm151"]
+      },
+      {
+        "label": "The editions on this site",
+        "language": "Modern English from Hebrew or Greek",
+        "role": "translation",
+        "description": "World English Bible routes translate the Hebrew form; Brenton routes translate the Greek. A displayed difference may therefore come from poetic judgment, an underlying Hebrew–Greek difference, numbering, or nineteenth- versus twenty-first-century English.",
+        "sourceIds": ["hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "Parallelism: the second line is not an echo button",
+        "original": "יְהוָה רֹעִי / לֹא אֶחְסָר — “The LORD is my shepherd / I shall not lack”",
+        "explanation": "Hebrew poetic lines work in relation. A second colon may restate with a new image, specify a consequence, contrast the first, or complete a grammatical thought. In Psalm 23:1 the shepherd metaphor is interpreted by ‘I shall not lack’; in Psalm 1:6 knowing the righteous way is set against the wicked way perishing. Read across the slash, asking what changed.",
+        "translationNote": "When English formats poetry as prose or varies repeated terms for style, the relation between lines becomes harder to see. Line breaks are interpretive aids, not decoration.",
+        "caution": "‘Synonymous, antithetic, synthetic’ can be useful classroom labels, but real lines often do more than one thing and do not fit three rigid boxes.",
+        "refs": ["1:6", "19:1", "23:1", "103:10"],
+        "sourceIds": ["cambridge-brown", "cambridge-brueggemann", "hosted-web"]
+      },
+      {
+        "title": "Acrostic: an invisible Hebrew alphabet",
+        "original": "א … ב … ג … — aleph … bet … gimel …",
+        "explanation": "Several psalms arrange lines or stanzas through successive Hebrew letters. Psalm 119 gives eight lines to each of the 22 letters; Psalms 111 and 112 advance almost line by line. The device can suggest completeness, aid memory, or hold a meditation together while its subject ranges widely.",
+        "translationNote": "The alphabet disappears in ordinary English because translated lines begin with different letters. Without a heading or note, a major piece of the poem's craft becomes undetectable.",
+        "caution": "Not every acrostic is perfectly preserved, and alphabetic order alone does not supply a secret code. It is an organizing constraint, not a substitute for reading the lines.",
+        "refs": ["25:1", "34:1", "111:1", "112:1", "119:1", "145:1"],
+        "sourceIds": ["usccb-111", "oxford-poetry", "cambridge-brown"]
+      },
+      {
+        "title": "Refrain and accumulation make a congregation possible",
+        "original": "כִּי לְעוֹלָם חַסְדּוֹ — ki le-olam chasdo — “for his steadfast love endures forever”",
+        "explanation": "Psalm 136 repeats the same response in every verse while the leading line moves from creation through exodus to present provision. The theology is created by accumulation: each act is answered by the same communal claim. Other psalms return to a refrain at emotional turns, as in Psalms 42–43.",
+        "translationNote": "Versions render chesed as loving kindness, steadfast love, mercy, or covenant loyalty. Repetition within one translation matters, but comparing versions reveals the larger Hebrew range.",
+        "caution": "Refrains suggest performance but rarely let us reconstruct one exact ancient liturgy or assign every speaking part with certainty.",
+        "refs": ["42:5", "42:11", "43:5", "136:1", "136:26"],
+        "sourceIds": ["cambridge-acclamation", "cambridge-brown", "hosted-web"]
+      },
+      {
+        "title": "Headings guide the reader, but their grammar leaves room",
+        "original": "לְדָוִד — le-David — “of/for/belonging to David”",
+        "explanation": "A superscription can identify a collection, performer, genre, tune, dedication, or remembered event. ‘Of David’ is often read as authorship, and sometimes may mean exactly that, but the Hebrew construction has a broader range. The headings are ancient parts of the transmitted Psalter even when their relation to a poem's first performance cannot be proved.",
+        "translationNote": "Some traditions count a heading as verse 1 while many English Bibles leave it unnumbered, creating verse-number differences even within the same psalm.",
+        "caution": "It is equally flattening to treat every heading as a modern byline or to dismiss every heading as worthless late fiction.",
+        "refs": ["3:1", "51:1", "90:1", "120:1"],
+        "sourceIds": ["usccb-psalms", "cambridge-brueggemann", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Hebrew prayer words with more than one English face",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "ashrei",
+        "meaning": "happy, flourishing, blessed",
+        "why": "The opening is an exclamation about a life going well under God's instruction, not merely a formal blessing pronounced by a speaker.",
+        "sourceIds": ["cambridge-brown", "hosted-web"]
+      },
+      {
+        "ref": "3:2",
+        "form": "selah",
+        "meaning": "an uncertain musical or performance marker",
+        "why": "Translations often preserve the Hebrew sound because its exact instruction is no longer known. It is evidence of performance history and a reminder not to pretend certainty.",
+        "sourceIds": ["usccb-psalms", "hosted-web"]
+      },
+      {
+        "ref": "42:5",
+        "form": "nephesh",
+        "meaning": "self, life, throat, living being; often ‘soul’",
+        "why": "The poet addresses the whole needy self. Reading the English ‘soul’ as a separable ghost can narrow the Hebrew body's emotional and living sense.",
+        "sourceIds": ["cambridge-brown", "hosted-web"]
+      },
+      {
+        "ref": "104:35",
+        "form": "hallelu-yah",
+        "meaning": "praise Yah — a plural command",
+        "why": "‘Hallelujah’ is not originally mood music; it tells a group to praise the LORD and carries a shortened form of the divine name.",
+        "sourceIds": ["usccb-psalms", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "A curated anthology of Hebrew poetry and prayer",
+    "how": "Read a psalm aloud, respecting its line breaks and changes of voice. Identify who speaks, to whom, in what pressure, and what changes between beginning and end. Images are not decorative synonyms for propositions; they are how the poem thinks. Then locate the poem inside its five-book collection and ask what neighboring psalms add."
+  },
+  "cast": [
+    { "name": "The LORD", "who": "Creator, covenant God, king, judge, shepherd, refuge, healer, sometimes experienced as near and sometimes accused of hiding." },
+    { "name": "The psalmist", "who": "Not one stable personality. The ‘I’ may be a king, worshiper, sufferer, teacher, representative voice, or later community adopting the prayer." },
+    { "name": "The congregation", "who": "Often summoned to answer, remember, praise, lament, or witness. Many private-sounding poems became communal speech." },
+    { "name": "The king / anointed one", "who": "A historical Davidic ruler in royal psalms, an idealized bearer of God's rule, and in later Jewish and Christian reading a horizon for messianic hope." },
+    { "name": "Enemies and the wicked", "who": "Sometimes concrete persecutors, sometimes conventional poetic types. Their threat may be physical, legal, military, social, or moral." },
+    { "name": "Creation", "who": "Seas, mountains, weather, animals, sun, moon, and stars become witnesses and participants in praise rather than inert scenery." }
+  ],
+  "shape": [
+    { "heading": "Book I — Davidic crisis and trust", "chapters": "1–41", "note": "Framed by Psalms 1–2 and a closing doxology at 41:13; dominated by David-associated prayers of distress and confidence." },
+    { "heading": "Book II — expanding voices and royal hope", "chapters": "42–72", "note": "Korahite, Asaphite, and Davidic material; ends with a royal prayer and the notice that David's prayers are ended." },
+    { "heading": "Book III — sanctuary, collapse, and the failed throne", "chapters": "73–89", "note": "The collection's darkest turn, ending with Psalm 89 asking what became of the promise to David." },
+    { "heading": "Book IV — the LORD reigns", "chapters": "90–106", "note": "Begins with Moses and relocates security from a vulnerable human dynasty to God's kingship, creation, and enduring mercy." },
+    { "heading": "Book V — return, Torah, pilgrimage, and total praise", "chapters": "107–150", "note": "Thanksgiving, Hallel, Psalm 119, songs of ascents, and a closing cascade in which every final psalm begins and ends with Hallelujah." },
+    { "heading": "Psalm 151 — Greek and wider-canon coda", "chapters": "151", "note": "Present in the Greek Psalter and several wider canons, absent from the 150-psalm Hebrew Masoretic collection. This site also exposes it separately as Psalm 151 where a tradition does not fold it into Psalms." }
+  ],
+  "purpose": "Psalms gives a community truthful speech before God and trains desire through repeated prayer. It does not promise that faithful people feel certain, safe, or cheerful at every moment. It teaches them to bring fear, injustice, guilt, gratitude, memory, bodily pain, national catastrophe, and delight into relation with the LORD — and it gradually places those voices inside a larger claim that God's rule and steadfast love outlast failed kings and present disorder.",
+  "snags": [
+    { "snag": "A psalm says ‘I,’ so readers assume every line is David's private diary.", "help": "Check the heading, genre, and voice, but keep several levels distinct: possible originating speaker, literary speaker, later temple or synagogue use, and the reader who adopts the words. A poem can become true prayer for many people without every biographical detail belonging to each of them." },
+    { "snag": "The imprecations ask for horrifying judgment.", "help": "Do not sanitize them or copy them straight into private revenge. They voice the powerless person's refusal to call evil harmless and hand judgment to God rather than executing it. Psalm 137:9 remains morally shocking; its location after national trauma explains the cry without turning the cry into a universal command." },
+    { "snag": "Promises of protection seem contradicted by suffering psalms.", "help": "The Psalter itself places Psalm 91 beside prayers where faithful speakers are not rescued on schedule. Read confident generalization, lament, testimony, and wisdom together rather than making one genre cancel the others." },
+    { "snag": "Different Bibles give different psalm numbers and verses.", "help": "The Hebrew and Greek traditions combine and divide certain poems differently. From Psalms 10–147 the Greek/Latin number is often one lower, then converges near the end. Headings may also be counted as verses. Compare opening words, not number alone." },
+    { "snag": "‘Praise’ is mistaken for pretending everything is fine.", "help": "The final praise is reached through protest, confession, exile, and unanswered questions. Biblical praise remembers specific acts and often occurs in defiance of present circumstances." },
+    { "snag": "Readers extract a messianic line and ignore its first royal setting.", "help": "Begin with the historical and literary role of the king in the poem, then trace how later Jewish and Christian readers extended the text. Reception can add a horizon without erasing the earlier one." }
+  ],
+  "debates": [
+    {
+      "question": "What do the Davidic superscriptions establish?",
+      "settled": "The headings are ancient features of the received Psalter, and David is the dominant named figure in them.",
+      "positions": [
+        { "view": "They normally identify David as author", "grounds": "The traditional reading takes le-David as a byline, and some headings connect a psalm to a specific episode in David's life." },
+        { "view": "They mark association, collection, style, dedication, or reception", "grounds": "The Hebrew preposition has a wider range than English ‘by,’ some historical notices appear later than the poems, and many poems resist secure placement in David's biography." },
+        { "view": "They preserve mixed kinds of information", "grounds": "Some may carry old authorial memory, others collection ownership or later liturgical interpretation; one rule need not explain every heading." }
+      ],
+      "soWhat": "Treat the heading as evidence, not as either an infallible modern citation or disposable clutter. Then read the poem's own voice and setting."
+    },
+    {
+      "question": "Is the Psalter a random hymnbook or a shaped book?",
+      "settled": "It contains smaller collections, five books, repeated doxologies, and meaningful opening and closing sequences.",
+      "positions": [
+        { "view": "Individual-psalm priority", "grounds": "Each poem had its own genre and history; large claims about the final arrangement can become speculative and should not overrule local evidence." },
+        { "view": "Editorial or canonical shape", "grounds": "The placement of Psalms 1–2, the crisis at 89, God's kingship in Book IV, and the ascent toward Hallelujah in 146–150 form a readable theological movement." }
+      ],
+      "soWhat": "Use both lenses. First understand the poem; then notice what changes when the collection places this poem here."
+    }
+  ],
+  "sources": [
+    { "id": "usccb-psalms", "label": "USCCB, Introduction to Psalms", "says": "Surveys the five books, major genres, liturgical use, Davidic superscriptions, Hebrew–Greek numbering, and the collection's long formation.", "url": "https://bible.usccb.org/bible/psalms/0" },
+    { "id": "cambridge-brown", "label": "William P. Brown, “The Psalms and Hebrew poetry” (Cambridge)", "says": "Describes the Psalter's many literary forms, the poetic line as a basic unit, and the 150-psalm Hebrew versus 151-psalm Greek collections.", "url": "https://www.cambridge.org/core/books/abs/cambridge-companion-to-the-hebrew-bibleold-testament/psalms-and-hebrew-poetry/81FCC073A125886751CF2864A4D63186" },
+    { "id": "cambridge-brueggemann", "label": "Walter Brueggemann and William Bellinger, Psalms (Cambridge excerpt)", "says": "Explains Hebrew parallel lines, imagery, the anthology's collections, and why superscriptions require careful rather than automatic historical use.", "url": "https://assets.cambridge.org/97805218/40927/excerpt/9780521840927_excerpt.pdf" },
+    { "id": "usccb-111", "label": "USCCB, Psalm 111 notes", "says": "Identifies the psalm's successive-letter Hebrew acrostic and its temple voice.", "url": "https://bible.usccb.org/bible/psalms/111" },
+    { "id": "oxford-poetry", "label": "Elaine T. James, An Invitation to Biblical Poetry (Oxford)", "says": "Treats biblical poetry as fluid, musical, figurative, aphoristic speech and explains acrostic convention, especially Psalm 119.", "url": "https://academic.oup.com/book/38970/chapter-abstract/338204208" },
+    { "id": "cambridge-acclamation", "label": "Laura S. Lieber, “With One Voice” (Harvard Theological Review)", "says": "Shows how refrains and fixed repetition support collective participation while cautioning that exact ancient performance roles are difficult to reconstruct.", "url": "https://www.cambridge.org/core/journals/harvard-theological-review/article/with-one-voice-elements-of-acclamation-in-early-jewish-liturgical-poetry/FA43EC98E631CCD578D1DF42B81C631C" },
+    { "id": "cambridge-numbering", "label": "Cambridge, development of the Latin liturgical Psalter", "says": "Explains that Greek and Latin psalters adopted Greek numbering and derive through a Greek translation of a Hebrew form that sometimes differed from the later Masoretic text.", "url": "https://www.cambridge.org/core/books/abs/music-and-instruments-of-the-middle-ages/development-of-the-latin-liturgical-psalter-in-england/9D76FF54CCCCF3552C927E6498E2D93A" },
+    { "id": "oxford-psalm151", "label": "Oxford Handbook of the Psalms, Psalms beyond 150", "says": "Documents Hebrew and Greek forms of Psalm 151 and its place in ancient Jewish psalm collections.", "url": "https://academic.oup.com/edited-volume/35006/chapter/298748176" },
+    { "id": "hosted-web", "label": "The texts on this site", "says": "Counts and references were checked against the hosted World English Bible and Brenton Psalters; their 150- and 151-psalm scope is reported separately rather than blended." }
+  ],
+  "howToRead": [
+    { "tip": "Read aloud and pause at line breaks. After each pair, ask whether the second line repeats, narrows, contrasts, completes, or intensifies the first.", "refs": ["1:1", "1:2", "1:3", "1:4"] },
+    { "tip": "Name the movement: complaint to trust, danger to rescue, guilt to forgiveness, memory to praise — or no resolution at all. Psalm 88 is allowed to end in darkness.", "refs": ["13:1", "13:5", "22:1", "22:22", "88:18"] },
+    { "tip": "Read Psalms 1–2, 89–90, and 145–150 as editorial seams. They reveal the book's larger direction.", "refs": ["1:1", "2:1", "89:49", "90:1", "145:1", "150:6"] },
+    { "tip": "When a number differs across traditions, match the opening line before concluding that one Bible omitted a psalm." },
+    { "tip": "Keep lament and praise together. A spirituality built only from one of them is narrower than the Psalter." },
+    { "tip": "For a first pass, sample one genre each: wisdom (1), royal (2), lament (13), trust (23), confession (51), historical memory (78), Torah (119), thanksgiving (136), and praise (150)." }
+  ],
+  "next": "Read Proverbs next to continue wisdom instruction in short, social observations, or read 1–2 Samuel to encounter the Davidic story behind many superscriptions and royal hopes. For the New Testament reception of the Psalms, read Hebrews and watch how it builds arguments by hearing psalmic voices anew.",
+  "traditionNote": "The Hebrew-based Psalter contains 150 poems; the Greek Septuagint contains 151 and uses a different numbering system through much of the book. Catholic liturgy often cites the Hebrew number with the older Greek/Latin number in parentheses. Eastern Orthodox readers normally inherit the Greek numbering and Psalm 151. This site represents the superset without pretending the numbering systems are identical."
+}

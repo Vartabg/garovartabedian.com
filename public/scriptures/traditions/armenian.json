@@ -1,0 +1,195 @@
+{
+  "tradition": "armenian",
+  "traditionName": "Armenian Apostolic",
+  "oneLine": "This shelf follows the Armenian Apostolic Church’s current 48-book Old Testament and shared 27-book New Testament, represented here in public-domain English rather than Armenian.",
+  "orient": "Armenian Scripture is a translation tradition as well as a canon. The fifth-century Armenian Bible was formed through Syriac and especially Greek sources after the creation of the Armenian alphabet, and modern church-linked editions still preserve both a Septuagint-shaped 48-book Old Testament and a Hebrew-based 39-book alternative.",
+  "keepInMind": "Historical Armenian manuscripts transmitted works such as Third Corinthians and the Testaments of the Twelve Patriarchs, but manuscript presence, liturgical reading, appendix status, and present canonical status are not the same thing. This page uses the current 48-plus-27 church presentation and treats older Armenian witnesses as part of the history, not as automatic additions to today’s shelf.",
+  "facts": [
+    {
+      "label": "Represented canon",
+      "value": "48 Old Testament books and 27 New Testament books in the current church-linked Echmiadzin presentation.",
+      "sourceIds": ["bible-society-armenia", "museum-armenian-bible"]
+    },
+    {
+      "label": "Classical language",
+      "value": "The foundational Bible is in Classical Armenian (Grabar), translated in the fifth century through Syriac and predominantly Greek Septuagint sources.",
+      "sourceIds": ["bible-society-armenia"]
+    },
+    {
+      "label": "Distinctive modern edge",
+      "value": "The 48-book Old Testament includes nine books beyond the 39-book Hebrew-based Armenian Ararat edition, with Greek additions integrated into Esther and Daniel.",
+      "sourceIds": ["bible-society-armenia", "st-garabed-list"]
+    },
+    {
+      "label": "Hosted representation",
+      "value": "The page supplies matching public-domain English texts; it does not claim to host the Classical Armenian Zohrab text or the New Echmiadzin translation.",
+      "sourceIds": ["site-text-sources"]
+    }
+  ],
+  "formation": [
+    {
+      "date": "Early fifth century",
+      "title": "An alphabet and a Bible grow together",
+      "text": "The creation of the Armenian alphabet made a full Armenian scriptural culture possible. The Classical Armenian translation drew first on Syriac and was extensively shaped by Greek Septuagint and New Testament sources.",
+      "sourceIds": ["bible-society-armenia", "mother-see"]
+    },
+    {
+      "date": "Manuscript centuries",
+      "title": "The Armenian version preserves a wider literary memory",
+      "text": "Armenian biblical manuscripts and canon lists sometimes carried Joseph and Asenath, the Testaments of the Twelve Patriarchs, and the correspondence known as Third Corinthians. Their locations and status changed across manuscripts and centuries.",
+      "sourceIds": ["oxford-armenian-version", "nasscal-third-corinthians"]
+    },
+    {
+      "date": "1666–1805",
+      "title": "Printed editions stabilize—and edit—the inheritance",
+      "text": "The first printed Armenian Bible appeared in Amsterdam in the seventeenth century. Zohrab’s 1805 critical edition later became an important textual reference and placed Third Corinthians in an appendix rather than silently equating every manuscript witness with the main New Testament.",
+      "sourceIds": ["museum-armenian-bible", "nasscal-third-corinthians"]
+    },
+    {
+      "date": "2017–2018",
+      "title": "Two modern Armenian editions make the live choice visible",
+      "text": "The New Echmiadzin revision, guaranteed by a commission of the Armenian Church’s Supreme Spiritual Council, presents 48 Old Testament books from the Grabar tradition. The New Ararat, translated from Hebrew and Greek source texts, presents 39 Old Testament books; the Bible Society of Armenia says Armenian Apostolic readers prefer the former without rejecting the latter.",
+      "sourceIds": ["bible-society-armenia"]
+    }
+  ],
+  "distinctives": [
+    {
+      "title": "A 48-book Old Testament",
+      "text": "The current church list contains the Hebrew-shaped thirty-nine plus 1 Esdras, Judith, Tobit, 1–3 Maccabees, Wisdom, Sirach, and Baruch. Greek material in Esther and Daniel is received within those books rather than counted as additional standalone titles.",
+      "sourceIds": ["st-garabed-list", "bible-society-armenia"],
+      "bookIds": ["1ES", "JDT", "TOB", "1MA", "2MA", "3MA", "WIS", "SIR", "BAR"]
+    },
+    {
+      "title": "Third Maccabees belongs; Fourth does not define this shelf",
+      "text": "The Armenian canon list represented here includes 1–3 Maccabees and explicitly distinguishes the absent Fourth Maccabees. That boundary differs from both the Roman Catholic list and some Greek Orthodox appendix practices.",
+      "sourceIds": ["st-garabed-list"],
+      "bookIds": ["1MA", "2MA", "3MA"]
+    },
+    {
+      "title": "Third Corinthians is a historical witness, not a twenty-eighth modern New Testament book",
+      "text": "Armenian Bibles preserved the apocryphal Corinthian correspondence, sometimes with canonical weight, but later critical presentation moved it to an appendix and the current church-linked Bible retains the familiar twenty-seven-book New Testament.",
+      "sourceIds": ["oxford-armenian-version", "nasscal-third-corinthians", "museum-armenian-bible"]
+    }
+  ],
+  "reception": [
+    {
+      "title": "Translation is part of Armenian Christian identity",
+      "text": "The Church commemorates the holy translators, and its biblical tradition is inseparable from the literary culture created around Grabar. Reading the Armenian Bible is therefore also participation in a language, worship, and memory shaped by the fifth-century translation movement.",
+      "sourceIds": ["mother-see", "bible-society-armenia"]
+    },
+    {
+      "title": "Church reception and textual scholarship work together",
+      "text": "The modern Echmiadzin revision involved language specialists and a commission established by the Supreme Spiritual Council. Ecclesial approval did not eliminate revision, comparison, or the work of translators.",
+      "sourceIds": ["bible-society-armenia"]
+    },
+    {
+      "title": "Greek, Syriac, Armenian, Hebrew, and modern Armenian layers must stay distinct",
+      "text": "The first Armenian Bible’s source history differs from that of a current edition translated directly from Hebrew and Greek. ‘The Armenian text’ can therefore refer to a classical version, its manuscript recensions, or one of several modern translations.",
+      "sourceIds": ["bible-society-armenia", "oxford-armenian-version"]
+    }
+  ],
+  "variations": [
+    {
+      "title": "New Echmiadzin and New Ararat have different Old Testament boundaries",
+      "text": "The former carries 48 Old Testament books through the Grabar and Septuagint-shaped inheritance; the latter has 39 because it translates the Old Testament from the Hebrew collection. The Bible Society of Armenia publishes both and does not tell readers to treat the 39-book edition as illegitimate.",
+      "sourceIds": ["bible-society-armenia"]
+    },
+    {
+      "title": "Older canon lists and manuscripts have wider edges than current editions",
+      "text": "Third Corinthians, Joseph and Asenath, and the Testaments of the Twelve Patriarchs demonstrate a rich transmission history. They should be studied as real Armenian biblical and para-biblical witnesses without being inserted unannounced into the present canon.",
+      "sourceIds": ["oxford-armenian-version", "nasscal-third-corinthians"]
+    },
+    {
+      "title": "Counting follows editorial integration",
+      "text": "Greek Esther and Daniel additions, Psalm material, and the grouping of Samuel and Kings can change visible totals and labels. The represented 48-book list follows current Armenian Church presentation rather than the site’s older 83-link approximation.",
+      "sourceIds": ["st-garabed-list", "bible-society-armenia"]
+    }
+  ],
+  "debates": [
+    {
+      "question": "Which modern Armenian Bible best represents Armenian Apostolic use?",
+      "settled": "Both major modern editions are Armenian-language Bibles published by the Bible Society of Armenia, and both contain the shared twenty-seven-book New Testament.",
+      "positions": [
+        {
+          "view": "New Echmiadzin most directly carries the church’s classical and wider Old Testament inheritance.",
+          "grounds": "It revises the Grabar-based Echmiadzin tradition, includes 48 Old Testament books, and received the guarantee of a commission established by the Armenian Church’s Supreme Spiritual Council.",
+          "sourceIds": ["bible-society-armenia"]
+        },
+        {
+          "view": "New Ararat offers a legitimate source-language alternative.",
+          "grounds": "It translates the Old Testament from Hebrew and the New Testament from Greek, contains the 39-book Old Testament, and is explicitly described by the Bible Society as not to be rejected.",
+          "sourceIds": ["bible-society-armenia"]
+        }
+      ],
+      "soWhat": "This site uses the 48-book church shelf for canonical navigation but should explain the 39-book Armenian edition rather than hiding it."
+    },
+    {
+      "question": "What authority should historical Armenian extras carry today?",
+      "settled": "Texts such as Third Corinthians are genuinely attested in Armenian biblical transmission and matter for the history of Armenian Christianity and the wider apocryphal tradition.",
+      "positions": [
+        {
+          "view": "Historical inclusion can reflect substantial ecclesial authority in a particular era.",
+          "grounds": "Third Corinthians circulated in Armenian Bibles and, in some settings, was treated as canonical or read liturgically.",
+          "sourceIds": ["oxford-armenian-version", "nasscal-third-corinthians"]
+        },
+        {
+          "view": "Current canon navigation should follow current church-linked editions.",
+          "grounds": "The modern 48-plus-27 presentation and later appendix treatment distinguish historical witness from the main present-day New Testament.",
+          "sourceIds": ["museum-armenian-bible", "bible-society-armenia", "nasscal-third-corinthians"]
+        }
+      ],
+      "soWhat": "The right treatment is a sourced historical section—not silently adding or erasing the texts."
+    }
+  ],
+  "hosting": {
+    "heading": "The current canon shape is represented; the Armenian text is not hosted",
+    "summary": "The shelf now follows the 48-book Old Testament and 27-book New Testament documented by current Armenian church-linked sources. Its readable text comes from public-domain English editions selected book by book.",
+    "available": "English text for all represented books, including 1 Esdras, 3 Maccabees, Wisdom, Sirach, Baruch, and the Greek additions within Esther and Daniel.",
+    "unavailable": "The licensed New Echmiadzin and New Ararat translations, a complete rehostable Zohrab edition, Armenian lectionary structure, and historical extras such as Third Corinthians inside this Scripture reader.",
+    "sourceIds": ["site-text-sources", "bible-society-armenia", "museum-armenian-bible"]
+  },
+  "sources": [
+    {
+      "id": "bible-society-armenia",
+      "label": "Bible Society of Armenia, “The Bible”",
+      "says": "Explains the fifth-century translation layers and compares the 48-book New Echmiadzin Old Testament with the 39-book New Ararat edition.",
+      "url": "https://www.biblesociety.am/eng/146/Bible"
+    },
+    {
+      "id": "museum-armenian-bible",
+      "label": "Museum of the Bible, Armenian Apostolic Bible printed in 2001",
+      "says": "Catalogs a Bible printed by the Armenian Apostolic Church and Bible Society of Armenia as 48 Old Testament and 27 New Testament books and summarizes Armenian print history.",
+      "url": "https://collections.museumofthebible.org/artifacts/33039-the-bible-in-armenian"
+    },
+    {
+      "id": "st-garabed-list",
+      "label": "St. Garabed Armenian Apostolic Church, canonical book list",
+      "says": "Names the present Armenian Church Old and New Testament books, including 1 Esdras and 1–3 Maccabees and the additions to Esther and Daniel.",
+      "url": "https://www.saintgarabed.org/spiritual-resources/qa"
+    },
+    {
+      "id": "mother-see",
+      "label": "Mother See of Holy Etchmiadzin, Feast of the Holy Translators",
+      "says": "Shows the Armenian Church’s continuing liturgical commemoration of Sahak, Mesrop, and the translation movement.",
+      "url": "https://www.armenianchurch.org/en/videos/the-feast-of-the-holy-translators/2636"
+    },
+    {
+      "id": "oxford-armenian-version",
+      "label": "Bruce M. Metzger, “The Armenian Version,” Oxford Academic",
+      "says": "Surveys the Armenian biblical version and its historical transmission of Joseph and Asenath, the Testaments of the Twelve Patriarchs, and the Corinthian correspondence.",
+      "url": "https://academic.oup.com/book/26742/chapter-abstract/195617046"
+    },
+    {
+      "id": "nasscal-third-corinthians",
+      "label": "North American Society for the Study of Christian Apocryphal Literature, 3 Corinthians",
+      "says": "Catalogs Armenian manuscript and printed witnesses, including the Oskan Bible and Zohrab’s 1805 appendix.",
+      "url": "https://www.nasscal.com/e-clavis-christian-apocrypha/3-corinthians/"
+    },
+    {
+      "id": "site-text-sources",
+      "label": "Hosted Scripture text sources and processing notes",
+      "says": "Defines the public-domain English source corpus used for the readable Armenian canon-shaped shelf.",
+      "href": "/sources#scripture-texts"
+    }
+  ]
+}

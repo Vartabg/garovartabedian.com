@@ -1,0 +1,90 @@
+.investigation {
+  max-width: 74rem;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.investigation h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.investigation h2 {
+  margin-top: 2.5rem;
+}
+
+.question {
+  font-size: 1.3rem;
+  max-width: 50rem;
+}
+
+.status {
+  font-weight: 700;
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-block: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  scroll-margin-top: 6rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+  font-size: 1.1rem;
+}
+
+.investigation details {
+  margin-block: 1rem;
+}
+
+.investigation summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.investigation code {
+  overflow-wrap: anywhere;
+}
+
+.investigation dt {
+  font-weight: 600;
+}
+
+.investigation dd {
+  margin: 0 0 0.75rem;
+}
+
+.finding {
+  border-bottom: 1px solid var(--line);
+  padding-block: 1rem;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

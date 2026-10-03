@@ -1,0 +1,242 @@
+{
+  "book": "GEN",
+  "chapter": 44,
+  "bookName": "Genesis",
+  "summary": "Joseph has his silver cup secretly placed in Benjamin's sack and sends his steward to accuse the brothers of theft. When Joseph insists Benjamin must remain enslaved, Judah recounts Jacob's fear and his own guarantee, then offers to take Benjamin's place so that their father will not be devastated again.",
+  "whyItMatters": "The staged accusation brings the brothers back to a choice about abandoning a favored younger sibling. Judah's willingness to become the slave reverses the direction of his earlier proposal to sell Joseph, while the pain imposed by the test remains real.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "The departure road from Egypt and Joseph's house after the brothers are forced to return.",
+    "literaryForm": "A planted-evidence test followed by a long plea that retells family history and offers substitution."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The brothers have dined with Joseph, Simeon is restored to them, and Benjamin has received special attention. They are about to leave with food for their household.",
+      "verseRefs": [
+        "43:23-34"
+      ]
+    },
+    "here": {
+      "text": "The hidden cup creates a crisis around Benjamin, and Judah responds by moving from shared submission to a personal offer of substitution.",
+      "verseRefs": [
+        "44:1-17",
+        "44:18-34"
+      ]
+    },
+    "after": {
+      "text": "Joseph can no longer contain himself after Judah's plea and reveals his identity, interpreting his position in Egypt as a means of preserving life.",
+      "verseRefs": [
+        "45:1-15"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "The cup planted and the accusation sent",
+      "verses": "1-6",
+      "note": "Joseph controls both the concealed evidence and the pursuit."
+    },
+    {
+      "heading": "A confident denial overturned",
+      "verses": "7-13",
+      "note": "The brothers propose harsh penalties before the search finds the cup with Benjamin."
+    },
+    {
+      "heading": "Benjamin singled out",
+      "verses": "14-17",
+      "note": "Judah offers shared slavery, but Joseph says only the apparent thief must remain."
+    },
+    {
+      "heading": "Judah retells the family’s predicament",
+      "verses": "18-29",
+      "note": "He recounts the demand for Benjamin and Jacob’s fear of another loss."
+    },
+    {
+      "heading": "Judah offers himself instead",
+      "verses": "30-34",
+      "note": "His father’s attachment and his own pledge lead him to request substitution."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "44:2",
+      "text": "Put my cup, the silver cup, in the sack’s mouth of the youngest, with his grain money.” He did according to the word that Joseph had spoken.",
+      "why": "The reader knows the evidence has been planted and that Benjamin has not stolen the cup."
+    },
+    {
+      "ref": "44:17",
+      "text": "He said, “Far be it from me that I should do so. The man in whose hand the cup is found, he will be my slave; but as for you, go up in peace to your father.”",
+      "why": "Joseph gives the others an opportunity to leave Benjamin behind and return home."
+    },
+    {
+      "ref": "44:33",
+      "text": "Now therefore, please let your servant stay instead of the boy, my lord’s slave; and let the boy go up with his brothers.",
+      "why": "Judah asks to bear the threatened enslavement personally in Benjamin’s place."
+    }
+  ],
+  "themes": [
+    "planted evidence",
+    "power and testing",
+    "collective responsibility",
+    "a father’s grief",
+    "Judah’s transformation",
+    "costly substitution"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Is Benjamin guilty of stealing the cup?",
+      "answer": "No. The opening instructions tell the reader that Joseph orders the cup placed in his sack. The brothers' discovery is therefore an engineered crisis, not reliable evidence of theft.",
+      "verseRefs": [
+        "44:1-6",
+        "44:11-12"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why is the brothers’ proposed penalty rash?",
+      "answer": "Confident of innocence, they propose death for whoever has the cup and slavery for the rest. They do not know that evidence has been planted, and the steward changes the terms to slavery for the one with the cup alone.",
+      "verseRefs": [
+        "44:7-10"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Does the chapter show Joseph actually performing divination?",
+      "answer": "The steward's accusation describes the cup as used for divination, and Joseph claims an ability to divine. The narrated mechanism here is the planting and discovery of a cup; no divinatory procedure is shown, and the dialogue alone cannot establish how he ordinarily uses it.",
+      "verseRefs": [
+        "44:4-5",
+        "44:15"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        4,
+        5,
+        15
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What does “collateral” mean in Judah’s appeal?",
+      "answer": "Judah repeats the responsibility he accepted before his father for Benjamin's safe return. That promise now becomes a personal obligation he is willing to fulfill by remaining enslaved instead of Benjamin.",
+      "verseRefs": [
+        "44:32-33"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        32,
+        33
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Is Judah confessing that the brothers stole the cup?",
+      "answer": "He says God has exposed their iniquity and that they cannot clear themselves, but the reader knows the cup was planted. His general acknowledgment of guilt should not be turned into proof that he performed the theft alleged in this scene.",
+      "verseRefs": [
+        "44:14-17"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Why does Judah tell Joseph so much about Jacob?",
+      "answer": "He wants the ruler to understand that Jacob's life is bound up with Benjamin's and that returning without him would bring fatal grief. The appeal asks the powerful listener to consider the suffering his decision would cause beyond the person detained.",
+      "verseRefs": [
+        "44:18-31"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What makes Judah’s final offer a decisive change?",
+      "answer": "He does not merely offer words or allow the favored brother to be taken away: he asks to remain as the slave himself. The proposed substitution binds his earlier guarantee to a concrete willingness to protect Benjamin and their father at personal cost.",
+      "verseRefs": [
+        "44:32-34"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        32,
+        33,
+        34
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "divination",
+      "def": "A claimed means of discerning hidden things, invoked in the accusation and Joseph’s speech about the cup."
+    },
+    {
+      "term": "collateral",
+      "def": "Judah’s pledge to answer personally for Benjamin’s safe return."
+    },
+    {
+      "term": "iniquity",
+      "def": "Wrongdoing that Judah acknowledges God has found out, without the narrative making the planted theft genuine."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "d0b714f63463f781ea3c29e08dadf343129f9cbd9c5fd563802d16f207fdb79b",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

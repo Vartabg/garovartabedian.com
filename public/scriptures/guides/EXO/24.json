@@ -1,0 +1,229 @@
+{
+  "book": "EXO",
+  "chapter": 24,
+  "bookName": "Exodus",
+  "summary": "Moses reports and writes the covenant words, and the people twice promise obedience as sacrifices and sprinkled blood mark the agreement. Moses and a group of leaders then see the God of Israel and share a meal, after which Moses enters the mountain cloud for forty days to receive the tablets.",
+  "whyItMatters": "Spoken laws become a publicly accepted covenant through writing, hearing, sacrifice, and ritual blood. The unequal levels of access to the mountain also establish the long absence that will test the people and their leaders.",
+  "context": {
+    "author": "Exodus does not name its final author. It records Moses writing particular covenant material; traditional Mosaic attribution and modern accounts of composition are distinguished in the book briefing.",
+    "audience": "Israel remembering its rescue from Egypt and its obligations as a covenant community. The chapter does not identify an individual dedicatee.",
+    "date": "The narrative places these events at Sinai after the departure from Egypt. The date of the events and the history of the book’s composition are separate, debated questions.",
+    "setting": "The foot and slopes of Mount Sinai, followed by Moses' entry into the cloud on the summit.",
+    "literaryForm": "Covenant ratification narrative, a vision and meal, and an ascent into divine presence."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The covenant ordinances have concluded with promises of guidance and demands for exclusive loyalty. Moses now brings the words before the people for their answer.",
+      "verseRefs": [
+        "23:20-33",
+        "24:3"
+      ]
+    },
+    "here": {
+      "text": "Watch the repeated commitment to obey, the movement of blood between altar and people, and the successive levels of access to the mountain.",
+      "verseRefs": [
+        "24:1-18"
+      ]
+    },
+    "after": {
+      "text": "From the mountain God asks for willing contributions and gives Moses the pattern for a sanctuary and its furnishings.",
+      "verseRefs": [
+        "25:1-40"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "Different levels of approach",
+      "verses": "1-2",
+      "note": "Moses, selected leaders, and the people receive different boundaries."
+    },
+    {
+      "heading": "The covenant reported, written, and enacted",
+      "verses": "3-8",
+      "note": "The people pledge obedience and Moses applies sacrificial blood to altar and people."
+    },
+    {
+      "heading": "The leaders’ vision and meal",
+      "verses": "9-11",
+      "note": "They see God, remain unharmed, and eat and drink."
+    },
+    {
+      "heading": "The summons for tablets and interim leadership",
+      "verses": "12-14",
+      "note": "Moses rises with Joshua and leaves Aaron and Hur to hear disputes."
+    },
+    {
+      "heading": "Cloud, glory, and forty days",
+      "verses": "15-18",
+      "note": "After six days God calls Moses into the cloud, where he remains."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "24:7",
+      "text": "He took the book of the covenant and read it in the hearing of the people, and they said, “We will do all that Yahweh has said, and be obedient.”",
+      "why": "The people hear the written covenant read and explicitly promise obedience."
+    },
+    {
+      "ref": "24:8",
+      "text": "Moses took the blood, and sprinkled it on the people, and said, “Look, this is the blood of the covenant, which Yahweh has made with you concerning all these words.”",
+      "why": "Moses identifies the sprinkled sacrificial blood with the covenant concerning the spoken words."
+    },
+    {
+      "ref": "24:11",
+      "text": "He didn’t lay his hand on the nobles of the children of Israel. They saw God, and ate and drank.",
+      "why": "The leaders’ survival and shared meal make their approach a scene of permitted fellowship."
+    }
+  ],
+  "themes": [
+    "public assent and writing",
+    "sacrificial blood",
+    "restricted access",
+    "vision and shared meal",
+    "delegated leadership",
+    "waiting in the cloud"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Does every Israelite approach equally close?",
+      "answer": "No. The people remain below, the named leaders worship from a distance, and Moses alone is directed to come near. These distinctions are part of the chapter's account of access, not an incidental detail of the climb.",
+      "verseRefs": [
+        "24:1-2"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does Moses write and read?",
+      "answer": "He writes all God's words, then reads the book of the covenant in the people's hearing. This is an explicit writing notice for covenant material; it does not by itself state that Moses wrote every part of the completed book of Exodus.",
+      "verseRefs": [
+        "24:3-7"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Where does the blood come from and where does it go?",
+      "answer": "Young men bring burnt offerings and sacrifice cattle as peace offerings. Moses puts half the blood in basins, sprinkles half on the altar, and then sprinkles the people while identifying it as the blood of the covenant; the ceremony entails animal killing and real blood, not merely a verbal symbol.",
+      "verseRefs": [
+        "24:5-8"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What does “covenant” mean in this ceremony?",
+      "answer": "It is the binding relationship and set of obligations God makes with the people concerning these words. Their repeated pledge to obey, the written reading, and the blood ceremony publicly establish their participation.",
+      "verseRefs": [
+        "24:3-8"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "How much does the account describe of the vision?",
+      "answer": "It says the leaders saw the God of Israel but concentrates its visual detail on what was under his feet, like sapphire pavement and clear sky. It supplies no full description of God’s appearance.",
+      "verseRefs": [
+        "24:9-11"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What arrangements are made while Moses is away?",
+      "answer": "Joshua accompanies his ascent, while Aaron and Hur remain available for disputes among the people. Moses tells the elders to wait until they return, giving his absence a stated expectation and a leadership arrangement.",
+      "verseRefs": [
+        "24:12-14"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How are the six days, seventh day, and forty days related?",
+      "answer": "The cloud covers the mountain for six days before God calls to Moses on the seventh. Moses then enters the cloud, and the account states that he is on the mountain forty days and nights, emphasizing prolonged absence rather than an instant meeting.",
+      "verseRefs": [
+        "24:15-18"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        15,
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "ordinances",
+      "def": "The covenant rulings Moses reports to the assembled people."
+    },
+    {
+      "term": "basins",
+      "def": "The containers holding half the sacrificial blood before its application in the ceremony."
+    },
+    {
+      "term": "glory",
+      "def": "The divine manifestation described to the people as devouring fire on the mountain."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "10c281410d26facaa976643939d1d396514a3ab374c6c2f3f325e2c013a805d0",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

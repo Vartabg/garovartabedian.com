@@ -1,0 +1,233 @@
+{
+  "book": "JUB",
+  "chapter": 18,
+  "bookName": "Jubilees",
+  "summary": "Abraham takes Isaac toward a mountain for an offering, and Isaac asks where the sheep is. At the altar an angel stops Abraham before he kills Isaac; a ram is offered instead, a blessing is renewed, and the safe return becomes the basis of a seven-day festival.",
+  "whyItMatters": "The narrative tests Abraham’s obedience while making the prohibition on harming Isaac and the substitute offering decisive parts of the scene.",
+  "context": {
+    "author": "Within the book, the angel of the presence dictates the account to Moses; the historical writer is unnamed.",
+    "audience": "Israel is addressed through Moses in the book’s frame; the specific first historical audience is not identified.",
+    "date": "The narrative places the revelation at Sinai; the historical Hebrew work is usually dated to the second century BCE, without an established exact year.",
+    "setting": "The journey from Abraham's home to the mountain identified as Zion and back to Beersheba.",
+    "literaryForm": "Test narrative with angelic intervention, renewed blessing, and festival explanation."
+  },
+  "contextSourceIds": [
+    "hosted-charles",
+    "oxford-endres"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Mastêmâ has asked for a test of Abraham’s love for Isaac, and previous trials of Abraham are recalled.",
+      "verseRefs": [
+        "17:15-18"
+      ]
+    },
+    "here": {
+      "text": "Abraham reaches the altar, but the angel stops him and a ram is offered in Isaac’s place.",
+      "verseRefs": [
+        "18:1-19"
+      ]
+    },
+    "after": {
+      "text": "The family story moves to Sarah’s death and burial, which the narrator calls another test of Abraham’s patience.",
+      "verseRefs": [
+        "19:1-9"
+      ]
+    }
+  },
+  "outline": [
+    {
+      "heading": "The command and three-day journey",
+      "verses": "1-4",
+      "note": "Abraham takes Isaac and servants toward the appointed mountain."
+    },
+    {
+      "heading": "Isaac’s question and the prepared altar",
+      "verses": "5-8",
+      "note": "Isaac carries wood and asks about the missing animal."
+    },
+    {
+      "heading": "The angel stops Abraham and a ram is offered",
+      "verses": "9-13",
+      "note": "The killing is forbidden and another animal takes Isaac’s place."
+    },
+    {
+      "heading": "Blessing and peaceful return",
+      "verses": "14-17",
+      "note": "The promise of many descendants and blessing is repeated."
+    },
+    {
+      "heading": "Annual festival from the journey",
+      "verses": "18-19",
+      "note": "Seven days of safe travel become an Israelite observance."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "18:11",
+      "text": "And I said unto him: 'Lay not thy hand upon the lad, neither do thou anything to him; for now I have shown that thou fearest the Lord, and hast not withheld thy son, thy first-born son, from me.'",
+      "why": "The angel's explicit prohibition on touching Isaac is the turning point of the test."
+    },
+    {
+      "ref": "18:12",
+      "text": "And the prince Mastêmâ was put to shame; and Abraham lifted up his eyes and looked, and, behold a ram caught . . . by his horns, and Abraham went and took the ram and offered it for a burnt-offering in the stead of his son.",
+      "why": "The ram is offered in Isaac’s place, making substitution part of the narrated outcome."
+    }
+  ],
+  "themes": [
+    "Abraham’s test",
+    "Isaac’s question",
+    "angelic prohibition",
+    "ram instead of son",
+    "renewed blessing"
+  ],
+  "questions": [
+    {
+      "category": "context",
+      "question": "How does this chapter pick up the heavenly proposal at the end of chapter 17?",
+      "answer": "There Mastêmâ requested a test concerning Isaac; here Abraham receives the command and travels to the mountain. The chapter does not repeat the whole heavenly exchange, so the prior scene helps explain the setup.",
+      "verseRefs": [
+        "18:1-4"
+      ],
+      "id": "q1",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Does the story present killing a child as an acceptable offering?",
+      "answer": "God commands Abraham to offer his beloved son, and the later speech praises his willingness not to withhold Isaac. The angel nevertheless forbids harming the child, and a ram is killed instead. Both the command and the intervention belong to the story; the spared child does not remove the ethical difficulty of the test.",
+      "verseRefs": [
+        "18:1-2",
+        "18:8-16"
+      ],
+      "id": "q2",
+      "relatedVerses": [
+        1,
+        2,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What is a “burnt-offering” in Isaac’s question?",
+      "answer": "It is the offering for which they carry wood, fire, and a knife; Isaac notices that the animal is missing. Abraham answers that God will provide, and the later ram becomes the offered animal.",
+      "verseRefs": [
+        "18:5-12"
+      ],
+      "id": "q3",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "category": "context",
+      "question": "What is Isaac told during the walk?",
+      "answer": "Isaac asks where the sheep is, and Abraham answers that God will provide one. The chapter does not give Isaac’s inner thoughts after he is bound, so his feelings at that point should not be invented.",
+      "verseRefs": [
+        "18:5-8"
+      ],
+      "id": "q4",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "category": "theology",
+      "question": "What does the angel say the stopped act has shown?",
+      "answer": "The angel says Abraham fears the Lord and has not withheld his son, while forbidding any harm to Isaac. The following blessing repeats the promises of many descendants and blessing for nations.",
+      "verseRefs": [
+        "18:9-16"
+      ],
+      "id": "q5",
+      "relatedVerses": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "What role does Mastêmâ have at the mountain?",
+      "answer": "The angelic narrator says he stood before Abraham and Mastêmâ, who is then put to shame when Abraham is stopped. The passage gives this role in the test but does not tell readers to treat Mastêmâ as the source of every human trial.",
+      "verseRefs": [
+        "18:9-12"
+      ],
+      "id": "q6",
+      "relatedVerses": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "category": "context",
+      "question": "Why does a seven-day festival appear at the end?",
+      "answer": "Abraham names the festival for the seven days of his going and returning safely. The angel says its observance is written for Israel, extending this family event into a recurring practice.",
+      "verseRefs": [
+        "18:17-19"
+      ],
+      "id": "q7",
+      "relatedVerses": [
+        17,
+        18,
+        19
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "burnt-offering",
+      "def": "An animal offering burned on an altar; a ram is offered here instead of Isaac."
+    },
+    {
+      "term": "ram",
+      "def": "The male sheep caught by its horns and offered after Isaac is spared."
+    }
+  ],
+  "readingContextSource": {
+    "translation": "charles",
+    "textHash": "c819c59f4b6b16a0782d2a6f7f4bdd574e018a3458282ebc59f3de8ed78f846c"
+  },
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "b05412a7ce0fd10188d9555dff02d6975ee1bb476d7f14637250905c8af606a0",
+    "generatedAt": "2026-09-29T00:33:02.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent cross-review",
+  "sourceIds": [
+    "charles"
+  ]
+}

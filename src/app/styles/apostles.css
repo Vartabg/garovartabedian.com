@@ -1,0 +1,888 @@
+/* Owned by apostles/layout — keep selector ownership clear (see README). */
+
+/* ============ The Apostles world ============ */
+/* Ember on parchment: men set on fire and scattered. */
+.world-apostles {
+  --bg: #f1e3d2;
+  --surface: var(--folio);
+  --ink: var(--soot);
+  --muted: #665448;
+  --line: #d9c1a7;
+  --accent: #8d3e1f;
+  --accent-deep: #6a2e17;
+  --accent-ink: var(--folio);
+  --ap-sea: #e9e3d1;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+}
+.world-apostles main {
+  flex: 1;
+}
+
+/* ---- Precedent + Paul asides ---- */
+.ap-precedent,
+.ap-paul {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.15rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  background: var(--surface);
+}
+.ap-precedent > p,
+.ap-paul > p {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.ap-cite {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ---- The four roll-calls ---- */
+.ap-lists {
+  margin: 2rem 0;
+}
+.ap-lists > p {
+  max-width: 46rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+/* The point of the section is scanning one seat across all four sources, so
+   the grid holds the four lists side by side wherever they can fit. */
+.ap-lists-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+@media (min-width: 560px) {
+  .ap-lists-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1000px) {
+  .ap-lists-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+  .ap-lists-grid .ap-list > li {
+    font-size: 0.8rem;
+  }
+}
+.ap-list {
+  margin: 0;
+  padding: 0.75rem 0.85rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  list-style: none;
+  counter-reset: seat;
+}
+.ap-list > li {
+  padding: 0.14rem 0;
+  font-size: 0.86rem;
+}
+.ap-list > li:not(.ap-list-head):not(.ap-list-empty) {
+  counter-increment: seat;
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px dashed color-mix(in srgb, var(--line) 70%, transparent);
+}
+.ap-list > li:not(.ap-list-head):not(.ap-list-empty)::before {
+  content: counter(seat);
+  flex: 0 0 1.1rem;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.ap-list > li:nth-of-type(5),
+.ap-list > li:nth-of-type(9) {
+  border-bottom-color: var(--accent);
+}
+.ap-list-head {
+  display: grid;
+  gap: 0.12rem;
+  margin-bottom: 0.45rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--line);
+}
+.ap-list-head span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.ap-list-empty {
+  margin-top: 0.2rem;
+  padding-top: 0.3rem;
+  border-top: 1px dashed var(--accent);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* ---- The shape of the band ---- */
+.ap-shape {
+  margin: 2rem 0;
+}
+.ap-shape-rows {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.ap-shape-rows li {
+  display: grid;
+  grid-template-columns: minmax(11rem, 15rem) 1fr;
+  gap: 0.35rem 1rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.ap-shape-rows strong {
+  color: var(--accent);
+}
+.ap-shape-rows span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+@media (max-width: 640px) {
+  .ap-shape-rows li {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Record map (the thirteen nodes) ---- */
+.ap-map {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 16% 12%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 32%),
+    var(--surface);
+  padding: 1rem 1.1rem;
+  margin: 1.5rem 0 2rem;
+}
+/* scriptures.css isn't loaded in this world, so the lens head is styled here. */
+.ap-map .scr-search-lens-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  margin-bottom: 0.8rem;
+}
+.ap-map .scr-search-lens-head strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+.ap-map .scr-search-lens-head span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.ap-map-nodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.55rem;
+}
+.ap-map-node {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.18rem 0.7rem;
+  align-items: start;
+  min-height: 5.4rem;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 0.7rem 0.8rem;
+  background: color-mix(in srgb, var(--bg) 42%, transparent);
+  color: var(--ink);
+  text-decoration: none;
+}
+.ap-map-node:hover {
+  border-color: var(--accent);
+}
+.ap-map-node:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.ap-map-mark {
+  grid-row: 1 / 4;
+  width: 0.72rem;
+  height: 0.72rem;
+  margin-top: 0.24rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.ap-map-node strong {
+  color: var(--accent);
+}
+.ap-map-node span:not(.ap-map-mark) {
+  /* Two-line clamp: bynames like "Man of Kerioth…" must not cut mid-word. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.ap-map-node em {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ap-map-node em {
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Sticky progress nav ---- */
+.ap-section-nav {
+  position: sticky;
+  top: 0.65rem;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+  margin: 1.25rem 0 1.75rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--line) 85%, var(--accent));
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 8%, transparent);
+  backdrop-filter: blur(12px);
+}
+.ap-section-current {
+  flex: 0 0 auto;
+  display: grid;
+  min-width: 7.5rem;
+  max-width: 12rem;
+  padding-right: 0.7rem;
+  border-right: 1px solid var(--line);
+}
+.ap-section-current span {
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ap-section-current strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 0.82rem;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ap-section-links {
+  display: flex;
+  gap: 0.35rem;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  /* Same edge-fade affordance as the map scroller: 13 names don't all fit. */
+  background:
+    linear-gradient(90deg, var(--surface) 30%, transparent) left / 34px 100%,
+    linear-gradient(270deg, var(--surface) 30%, transparent) right / 34px 100%,
+    radial-gradient(farthest-side at 0 50%, color-mix(in srgb, var(--ink) 20%, transparent), transparent) left / 12px 100%,
+    radial-gradient(farthest-side at 100% 50%, color-mix(in srgb, var(--ink) 20%, transparent), transparent) right / 12px 100%;
+  background-repeat: no-repeat;
+  background-attachment: local, local, scroll, scroll;
+}
+.ap-section-links::-webkit-scrollbar {
+  display: none;
+}
+.ap-section-links a {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.55rem 0.7rem;
+  text-decoration: none;
+}
+.ap-section-links a:hover {
+  color: var(--accent);
+}
+.ap-section-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+.ap-section-links a[aria-current="location"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* ---- Dive records ---- */
+.ap-dive-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.25rem 0 0.75rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.ap-dive-controls p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.ap-dive-controls p strong {
+  color: var(--ink);
+}
+.ap-dive-controls > div {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.45rem;
+}
+.ap-dive-controls button {
+  min-width: var(--control-target-min);
+  min-height: var(--control-target-min);
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+@media (hover: hover) and (pointer: fine) {
+  .ap-dive-controls button:hover {
+    border-color: var(--accent);
+  }
+}
+.ap-dive-controls button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.ap-dive-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.ap-dive-list {
+  border-bottom: 1px solid var(--line);
+}
+.ap-dive {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  scroll-margin-top: 5.5rem;
+}
+.ap-dive-summary {
+  position: relative;
+  display: block;
+  padding: 1.1rem 3.25rem 1.1rem 0.9rem;
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.15s ease;
+}
+.ap-dive-summary::-webkit-details-marker {
+  display: none;
+}
+.ap-dive-summary::after {
+  content: "+";
+  position: absolute;
+  top: 1.1rem;
+  right: 0.95rem;
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+.ap-dive[open] > .ap-dive-summary::after {
+  content: "–";
+}
+.ap-dive-summary:hover,
+.ap-dive[open] > .ap-dive-summary {
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+}
+.ap-dive-summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+.ap-dive-summary h2 {
+  margin: 0.18rem 0 0.2rem;
+}
+.ap-seat {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.ap-aka {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.ap-aka em {
+  font-style: italic;
+}
+.ap-glance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+.ap-glance > span {
+  padding: 0.65rem 0.75rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.ap-glance > span:last-child {
+  border-left-color: var(--ink);
+}
+.ap-glance strong {
+  display: block;
+  margin-bottom: 0.16rem;
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+@media (max-width: 560px) {
+  .ap-glance {
+    grid-template-columns: 1fr;
+  }
+}
+.ap-dive-prompt {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+.ap-dive-close-label {
+  display: none;
+}
+.ap-dive[open] .ap-dive-open-label {
+  display: none;
+}
+.ap-dive[open] .ap-dive-close-label {
+  display: inline;
+}
+.ap-dive-body {
+  padding: 0 0.9rem 1.4rem;
+  border-top: 1px dashed var(--line);
+}
+.ap-band {
+  margin-top: 0.9rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+/* ---- Manuscript story plates ---- */
+.ap-story-plate {
+  width: 100%;
+  max-width: 44rem;
+  margin: 1.25rem auto 2rem;
+}
+.ap-story-plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--line));
+  border-radius: 3px;
+  background: #d7c29e;
+}
+.ap-story-plate figcaption {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* ---- Manuscript record plates ---- */
+.ap-record-plate .ew-section-plate,
+.ap-paul-plate .ew-section-plate {
+  margin: 0.9rem 0 1.25rem;
+}
+.ap-record-plate .ew-section-plate-media,
+.ap-paul-plate .ew-section-plate-media {
+  aspect-ratio: 16 / 9;
+  border-color: color-mix(in srgb, var(--accent) 38%, var(--line));
+  border-radius: 3px;
+  background: #d7c29e;
+}
+.ap-record-plate .ew-section-plate-media::after,
+.ap-paul-plate .ew-section-plate-media::after {
+  content: none;
+}
+.ap-record-plate .ew-section-plate-media img,
+.ap-paul-plate .ew-section-plate-media img {
+  object-fit: contain;
+  filter: none;
+}
+.ap-record-plate .ew-section-plate figcaption,
+.ap-paul-plate .ew-section-plate figcaption {
+  position: static;
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-shadow: none;
+}
+.ap-paul-plate {
+  margin: 0.1rem 0 0.9rem;
+}
+
+/* ---- Record parts ---- */
+.ap-part {
+  margin-top: 1.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--line) 75%, transparent);
+}
+.ap-part h3 {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.ap-part h4 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1rem;
+}
+.ap-part p {
+  margin: 0.25rem 0 0.4rem;
+}
+.ap-scene + .ap-scene {
+  margin-top: 0.75rem;
+}
+.ap-human {
+  padding: 0.75rem 0.9rem;
+  border-left: 3px solid var(--ink);
+  border-radius: 0 8px 8px 0;
+  background: var(--surface);
+}
+.ap-refs {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+/* Citations are secondary inside a record: ember stays for headings and
+   grade pills; refs and source links read muted until pointed at. */
+.ap-dive-body .ap-refs .textlink,
+.ap-dive-body .ap-earliest .textlink {
+  color: var(--muted);
+}
+.ap-dive-body .ap-refs .textlink:hover,
+.ap-dive-body .ap-earliest .textlink:hover,
+.ap-dive-body .ap-refs .textlink:focus-visible,
+.ap-dive-body .ap-earliest .textlink:focus-visible {
+  color: var(--accent);
+}
+.ap-claim {
+  margin-top: 0.55rem;
+}
+.ap-claim p {
+  margin: 0 0 0.25rem;
+}
+.ap-claim-note {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.ap-earliest {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* ---- Honesty grade pills ---- */
+.ap-weight {
+  display: inline-block;
+  margin-right: 0.15rem;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: 0.08em;
+}
+.ap-weight-scripture {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.ap-weight-early {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.ap-weight-late {
+  border-style: dashed;
+  color: var(--muted);
+}
+
+/* ---- The sending map ---- */
+.ap-smap {
+  margin: 1.75rem 0;
+}
+.ap-smap-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  /* Scroll shadows: edge fades appear only while there is more map that way. */
+  background:
+    linear-gradient(90deg, var(--surface) 30%, transparent) left / 44px 100%,
+    linear-gradient(270deg, var(--surface) 30%, transparent) right / 44px 100%,
+    radial-gradient(farthest-side at 0 50%, color-mix(in srgb, var(--ink) 22%, transparent), transparent) left / 18px 100%,
+    radial-gradient(farthest-side at 100% 50%, color-mix(in srgb, var(--ink) 22%, transparent), transparent) right / 18px 100%,
+    var(--surface);
+  background-repeat: no-repeat;
+  background-attachment: local, local, scroll, scroll, scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.ap-smap-scroll:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.ap-smap svg {
+  display: block;
+  width: 100%;
+  min-width: 720px;
+  height: auto;
+}
+/* Desktop column is ~688px: the tightened 844-unit plate fits without scroll. */
+@media (min-width: 1100px) {
+  .ap-smap svg {
+    min-width: 0;
+  }
+}
+.ap-smap figcaption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.ap-smap-graticule path {
+  fill: none;
+  stroke: color-mix(in srgb, var(--ink) 13%, transparent);
+  stroke-width: 0.8;
+  stroke-dasharray: 1 6;
+}
+.ap-smap-lake {
+  fill: var(--ap-sea, #e6e2d2);
+  stroke: color-mix(in srgb, var(--ink) 26%, transparent);
+  stroke-width: 0.5;
+}
+.world-apostles .ew-map-sea {
+  fill: var(--ap-sea, #e6e2d2);
+}
+.world-apostles .ew-map-land {
+  fill: color-mix(in srgb, var(--surface) 72%, var(--accent) 5%);
+  stroke: color-mix(in srgb, var(--ink) 32%, transparent);
+  stroke-width: 0.7;
+}
+.ap-smap-roadlink {
+  text-decoration: none;
+}
+.ap-smap-leg {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ap-smap-scripture {
+  stroke-width: 2.7;
+}
+.ap-smap-early {
+  stroke-dasharray: 8 5;
+}
+.ap-smap-late {
+  stroke-width: 2.2;
+  stroke-dasharray: 1.5 5;
+}
+.ap-smap-uncertain {
+  opacity: 0.55;
+}
+/* One faded leg inside an otherwise-owned road (the seventy-vs-twelve seam). */
+.ap-smap-leg-uncertain {
+  opacity: 0.45;
+}
+.ap-smap-stub {
+  opacity: 0.7;
+}
+.ap-smap-stubnote,
+.ap-smap-city,
+.ap-smap-name {
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+.ap-smap-stubnote {
+  fill: var(--muted);
+  font-size: 0.72rem;
+  font-style: italic;
+}
+.ap-smap-roadlink:hover .ap-smap-leg,
+.ap-smap-roadlink:focus-visible .ap-smap-leg {
+  stroke: var(--ink);
+}
+.ap-smap-roadlink:hover .ap-smap-road,
+.ap-smap-roadlink:focus-visible .ap-smap-road {
+  opacity: 1;
+}
+.ap-smap-roadlink:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.ap-smap-dot {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 1.2;
+}
+.ap-smap-dot-uncertain {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-dasharray: 2 2;
+  stroke-width: 1.4;
+}
+.ap-smap-hub {
+  fill: var(--ink);
+}
+.ap-smap-stayed {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.4;
+}
+.ap-smap-city {
+  /* Darker than --muted: 4.5:1+ against the sea without leaning on the halo. */
+  fill: #665648;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.ap-smap-name {
+  /* Deeper ember than --accent for the same contrast reason. */
+  fill: #99451f;
+  font-size: 0.9rem;
+  font-weight: 750;
+}
+.world-apostles .ew-map-region {
+  fill: color-mix(in srgb, var(--muted) 55%, transparent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+/* ---- Chart legend ---- */
+.ap-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin: 1rem 0 0;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.ap-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+/* Swatches reuse the map's own stroke classes, so the key cannot drift. */
+.ap-legend-swatch {
+  width: 2.1rem;
+  height: 0.45rem;
+  overflow: visible;
+}
+
+/* ---- Roads, claim by claim ---- */
+.ap-roads {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.ap-road {
+  padding: 0.85rem 1rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  scroll-margin-top: 5.5rem;
+}
+.ap-road h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+.ap-road-to {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+.ap-unplaced {
+  margin: 2rem 0;
+}
+.ap-unplaced ul {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.ap-unplaced li {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  scroll-margin-top: 5.5rem;
+}
+.ap-unplaced li span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.ap-armenia {
+  margin: 2rem 0;
+}
+.ap-armenia h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 640px) {
+  .ap-dive-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

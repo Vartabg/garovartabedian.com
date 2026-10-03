@@ -1,0 +1,231 @@
+{
+  "book": "GEN",
+  "chapter": 38,
+  "bookName": "Genesis",
+  "summary": "Judah's sons Er and Onan die under divine judgment, and Tamar remains a widow after Judah withholds his surviving son Shelah from her. She conceals her identity, conceives by Judah, and uses his pledged belongings to expose his responsibility when he orders her burned; Judah acknowledges her greater righteousness, and she bears Perez and Zerah.",
+  "whyItMatters": "The interruption of Joseph's story exposes Judah's failures within his own household and Tamar's precarious position. Recognition through personal objects brings a threatened woman vindication and confronts a powerful man's unequal judgment.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Judah's household among Canaanites, Tamar's father's home, and the road to the sheep shearing at Timnah.",
+    "literaryForm": "Family succession narrative with death notices, withheld obligation, disguise, pledged objects, recognition, and a twin-birth reversal."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Judah has proposed selling Joseph, and a bloodied garment has misled Jacob. The story now follows Judah into a crisis where identifying objects will expose his own conduct.",
+      "verseRefs": [
+        "37:26-35"
+      ]
+    },
+    "here": {
+      "text": "Tamar's exclusion from the promised marriage leads to a concealed encounter and then public exposure of Judah's responsibility.",
+      "verseRefs": [
+        "38:6-26"
+      ]
+    },
+    "after": {
+      "text": "The narrative returns to Joseph in Egypt, where another garment will be used as misleading evidence after he refuses his master's wife.",
+      "verseRefs": [
+        "39:1-20"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Judah’s household and the first two sons’ deaths",
+      "verses": "1-11",
+      "note": "Er and Onan die, and Tamar is sent to wait for Shelah."
+    },
+    {
+      "heading": "Tamar’s disguise and Judah’s pledge",
+      "verses": "12-19",
+      "note": "After Shelah has grown without being given to her, Tamar conceives by Judah."
+    },
+    {
+      "heading": "An unsuccessful search",
+      "verses": "20-23",
+      "note": "Judah’s friend cannot find the woman to redeem the pledged objects."
+    },
+    {
+      "heading": "Condemnation reversed by recognition",
+      "verses": "24-26",
+      "note": "Tamar identifies the father, and Judah acknowledges his failure."
+    },
+    {
+      "heading": "The birth of Perez and Zerah",
+      "verses": "27-30",
+      "note": "The twins’ birth reverses the expected order marked by a scarlet thread."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "38:11",
+      "text": "Then Judah said to Tamar, his daughter-in-law, “Remain a widow in your father’s house, until Shelah, my son, is grown up;” for he said, “Lest he also die, like his brothers.” Tamar went and lived in her father’s house.",
+      "why": "Judah sends Tamar away under a promise that the later narrative shows him withholding."
+    },
+    {
+      "ref": "38:25",
+      "text": "When she was brought out, she sent to her father-in-law, saying, “I am with child by the man who owns these.” She also said, “Please discern whose these are—the signet, and the cords, and the staff.”",
+      "why": "Tamar confronts her accuser with his own identifying property."
+    },
+    {
+      "ref": "38:26",
+      "text": "Judah acknowledged them, and said, “She is more righteous than I, because I didn’t give her to Shelah, my son.” He knew her again no more.",
+      "why": "Judah explicitly locates his failure in not giving Tamar to Shelah."
+    }
+  ],
+  "themes": [
+    "widowhood and obligation",
+    "withheld succession",
+    "sexual double standards",
+    "disguise and recognition",
+    "Tamar’s agency",
+    "birth-order reversal"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What duty does Judah assign to Onan?",
+      "answer": "He tells Onan to act as a husband's brother to Tamar and produce offspring for his dead brother. The instruction concerns the continuation of that brother's line, which explains the motive the narrator gives for Onan's refusal.",
+      "verseRefs": [
+        "38:6-9"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Is Onan’s offense described simply as masturbation?",
+      "answer": "No. The passage describes intercourse with Tamar followed by deliberately spilling semen so that he will not give offspring to his brother. The narrative identifies a refusal of the stated family obligation and does not present an isolated discussion of solitary sexual activity.",
+      "verseRefs": [
+        "38:8-10"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What can be said about the deaths of Er and Onan?",
+      "answer": "The narrator attributes both deaths to Yahweh's judgment, but gives no specific offense for Er and explains Onan's conduct more fully. These claims belong to this narrative; they are not grounds for interpreting a modern bereavement as proof of divine punishment.",
+      "verseRefs": [
+        "38:7-10"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Why does Tamar take the initiative?",
+      "answer": "She sees that Shelah is grown and she has not been given to him, despite Judah's earlier instruction to wait. Her actions respond to that exclusion, and her later evidence forces Judah to recognize the obligation he withheld.",
+      "verseRefs": [
+        "38:11",
+        "38:14",
+        "38:25-26"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        11,
+        14,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What is a “pledge” in the encounter?",
+      "answer": "It is property left as security until the promised goat is sent. Tamar requests Judah's signet, cord, and staff, making the security recognizable enough to identify him later as the child's father.",
+      "verseRefs": [
+        "38:17-18",
+        "38:25-26"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        17,
+        18,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What is troubling about Judah’s sentence against Tamar?",
+      "answer": "He orders her burned for the reported pregnancy despite his own sexual encounter and his failure to provide the promised marriage. The narrative reverses his condemnation through her evidence and his admission; it does not report the sentence being carried out.",
+      "verseRefs": [
+        "38:23-26"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How does the twin birth repeat an issue found elsewhere in the family?",
+      "answer": "A hand appears first and receives a scarlet marker, but the other child is born first and named Perez. The scene again makes the priority of elder and younger less straightforward than an initial expectation suggests.",
+      "verseRefs": [
+        "38:27-30"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "signet",
+      "def": "Judah’s identifying seal, left with Tamar as part of the pledge."
+    },
+    {
+      "term": "widowhood garments",
+      "def": "The clothing Tamar removes for the encounter and puts back on afterward."
+    },
+    {
+      "term": "scarlet thread",
+      "def": "The marker the midwife ties to the first emerging hand before the other twin is born."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "fa578cc39e2e8b7729cf98d428fa2b83a8c1538496a1e9f4b4aa02e76264faa2",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

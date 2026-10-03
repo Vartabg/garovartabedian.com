@@ -1,0 +1,237 @@
+{
+  "book": "MAT",
+  "bookName": "Matthew",
+  "oneLine": "A carefully arranged account of Jesus as Israel's Messiah and Emmanuel, moving between deeds and five great teaching blocks before sending disciples to every nation.",
+  "orient": "Matthew contains some of Christianity's most familiar words — the Beatitudes, the Lord's Prayer, the golden rule, and the Great Commission — but it is not merely a collection of quotations. The book alternates concentrated teaching with narrative and repeatedly asks what it means for Jesus to fulfill Israel's Scriptures. It opens with Abraham and David, moves through a new-exodus childhood, presents Jesus teaching from a mountain, and closes with worship and mission. Its governing promise is presence: ‘God with us’ near the beginning and ‘I am with you always’ at the end.",
+  "whereYouAre": "Rome controls Judea and Galilee through governors, client rulers, soldiers, taxation, and local elites. The Jerusalem temple is still the center of Jewish worship in the story. Jewish communities share Scripture, Sabbath, festivals, and hope in God's rule, while disagreeing about law, purity, leadership, and how deliverance will come. Matthew begins much earlier on the page: a genealogy carries the reader from Abraham through David and the Babylonian exile to Jesus before the action enters the world of Herod the Great.",
+  "facts": {
+    "writtenBy": "Anonymous within the narrative. The ancient title ‘According to Matthew’ and early church testimony connect it with Matthew the tax collector and apostle; the text itself never names its writer.",
+    "writtenWhen": "Most current scholarship places the finished Gospel after Mark and after Jerusalem's destruction in AD 70, often in the 80s or 90s. Earlier dates remain defended, so the range is an argument rather than a timestamp supplied by the book.",
+    "writtenFor": "Greek-speaking readers deeply familiar with Jewish Scripture and debate, probably a community containing Jewish and Gentile followers of Jesus. Matthew's Jewish texture and its mission to ‘all nations’ belong together; neither justifies reducing the audience to one ethnicity.",
+    "place": "Syria, especially Antioch, is a common proposal because a large Greek-speaking Jewish and Gentile population fits the Gospel's tensions and mission. The book never identifies its place, and Palestine or another eastern Mediterranean setting remains possible.",
+    "covers": "From a genealogy beginning with Abraham to Jesus's birth, Galilean ministry, journey to Jerusalem, death, resurrection, and commission in Galilee. The narrative supplies no modern year-by-year chronology.",
+    "size": "28 chapters, 1,071 verses, and about 22,800 words in the World English Bible hosted here."
+  },
+  "language": {
+    "writtenIn": "Koine Greek. The canonical Gospel is a sustained Greek composition and its earliest surviving witnesses are Greek. Its close verbal relationship with Greek Mark is difficult to explain as a simple translation of a lost Hebrew or Aramaic edition.",
+    "register": "Orderly narrative Koine with long, memorable teaching sequences. Matthew usually smooths Mark's rougher transitions, groups sayings by topic, and signals structure through repeated formulas. At the same time, scriptural turns of phrase, Semitic names, parallel lines, and abundant quotations give the Greek a strongly Jewish and Septuagint-shaped texture.",
+    "spokenWorld": "Jesus's Galilee and Judea were multilingual. Aramaic was a major daily language, Hebrew remained important in Scripture and religious life, and Greek was widely used in administration, trade, cities, and some Jewish communities. Matthew normally gives speeches in Greek; the exact spoken language behind an individual scene cannot be recovered merely by translating that Greek backward.",
+    "readerSignal": "The writer expects readers to follow dense scriptural arguments, yet sometimes interprets Semitic names and preserves foreign-sounding words. That combination suggests cultural proximity to Judaism without assuming that every reader knew Hebrew or Aramaic.",
+    "englishLayer": "This site displays the World English Bible, a modern translation of the Greek textual tradition. Counts such as 32 occurrences of ‘Kingdom of Heaven’ or 66 of ‘behold’ describe this English edition unless checked against Greek; capitalization, punctuation, paragraphing, and quotation marks are editorial aids, not features of the earliest manuscripts.",
+    "textualHistory": [
+      {
+        "label": "The canonical composition",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The recoverable Gospel is Greek, and its narrative, source editing, wordplay, and discourse seams operate in Greek. Papias's report about Matthew arranging ‘sayings’ in a Hebrew dialect is important early testimony, but scholars dispute whether it describes this Gospel, a source behind it, Hebrew or Aramaic language, or a Semitic mode of expression.",
+        "sourceIds": ["usccb-matthew", "eusebius-papias", "sinaiticus"]
+      },
+      {
+        "label": "Scripture inside Matthew",
+        "language": "Greek Jewish Scripture in dialogue with Hebrew forms",
+        "role": "section",
+        "description": "Many quotations follow the Septuagint closely, while some fulfillment citations agree more closely with Hebrew or present mixed wording. ‘Matthew quotes the Greek Old Testament’ is therefore a useful starting point, not a rule that explains every citation.",
+        "sourceIds": ["usccb-matthew", "iida-isaiah", "hosted-web"]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The displayed English translates a critically edited Greek text. It lets readers trace the book's argument, while language notes preserve places where one English choice cannot carry a Greek repetition, ambiguity, or Semitic resonance.",
+        "sourceIds": ["hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "βασιλεία τῶν οὐρανῶν (basileia tōn ouranōn): Matthew's ‘kingdom of heaven’",
+        "original": "ἡ βασιλεία τῶν οὐρανῶν — hē basileia tōn ouranōn — literally ‘the kingdom/reign of the heavens’",
+        "explanation": "The phrase occurs 32 times in the hosted English and is characteristic of Matthew. ‘Kingdom’ names God's active rule as well as the realm and people shaped by it; ‘heavens’ can reverently point to God, but it also belongs to Matthew's larger contrast between heavenly authority and merely earthly status.",
+        "translationNote": "English singular ‘heaven’ sounds primarily like a destination after death. The Greek plural is a Jewish idiom, and the stories describe God's rule arriving, being sought, resisted, embodied, and finally disclosed — not only a place souls go later.",
+        "caution": "Matthew also writes ‘kingdom of God’ and other kingdom phrases. Avoid claiming that ‘heaven’ is only a device for refusing to say God's name; scholars debate why Matthew prefers it, and the Gospel's wider heaven-and-earth language matters.",
+        "refs": ["3:2", "4:17", "5:3", "6:10", "12:28", "13:11", "19:24", "28:18"],
+        "sourceIds": ["foster-kingdom", "usccb-matthew", "hosted-web"]
+      },
+      {
+        "title": "Fulfillment is a repeated narrative verb, not a prediction checklist",
+        "original": "ἵνα πληρωθῇ τὸ ῥηθέν — hina plērōthē to rhēthen — ‘so that what was spoken might be fulfilled’",
+        "explanation": "Matthew repeatedly pauses the story to say that an event ‘fulfilled’ Scripture. The Greek verb plēroō means fill or bring to fullness. Some citations concern direct expectation; others hear Israel's earlier people, places, griefs, and deliverances reaching a fuller pattern in Jesus.",
+        "translationNote": "English ‘fulfill’ can sound as though each source verse was exclusively a coded forecast. Reading the cited passage in its own context — Hosea's exodus, Jeremiah's Rachel, Isaiah's sign — reveals the figural and typological connections Matthew is making.",
+        "caution": "The quotation formulas are not uniform, and Matthew's wording can resemble the Septuagint, Hebrew, or a mixed form. Do not invent one lost source to solve every difference or assume that ‘fulfilled’ always means ‘a prediction came true in only one possible way.’",
+        "refs": ["1:22", "2:15", "2:17", "2:23", "4:14", "8:17", "12:17", "13:35", "21:4", "27:9"],
+        "sourceIds": ["usccb-matthew", "iida-isaiah", "hosted-web"]
+      },
+      {
+        "title": "Five discourse endings make the architecture audible",
+        "original": "καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς — kai egeneto hote etelesen ho Iēsous — ‘when Jesus finished …’",
+        "explanation": "A closely related formula closes the Sermon on the Mount, the mission instructions, the parables, the community teaching, and the final temple discourse. These seams alternate sustained words with deeds and help a listener hold a long book together.",
+        "translationNote": "Modern headings make the five blocks visually obvious; the earliest manuscripts did not supply those headings. The repeated Greek sentence itself did the structural work for readers and hearers.",
+        "caution": "The five-discourse pattern is strong, but claims that Matthew deliberately created five new books of Moses go beyond what the text states. It is a plausible theological analogy, not a labeled table of contents.",
+        "refs": ["7:28", "11:1", "13:53", "19:1", "26:1"],
+        "sourceIds": ["usccb-matthew", "hosted-web"]
+      },
+      {
+        "title": "δικαιοσύνη (dikaiosynē): ‘righteousness’ as lived alignment with God's will",
+        "original": "δικαιοσύνη — dikaiosynē — ‘righteousness, justice, right conduct’",
+        "explanation": "Matthew concentrates the noun in Jesus's teaching: hunger for righteousness, persecution because of it, a righteousness exceeding that of scribes and Pharisees, practices done without performance, and seeking God's kingdom and righteousness. The word joins inward allegiance, concrete conduct, justice, and covenant faithfulness more tightly than one English gloss suggests.",
+        "translationNote": "‘Righteousness’ can sound private or self-congratulatory; ‘justice’ can sound only institutional. Matthew's usage ranges across devotion, mercy, fidelity, and behavior shaped by God's will.",
+        "caution": "Do not import every later Pauline debate into Matthew's noun, or reduce it to earning divine approval. Its force must be read from Matthew's own scenes and scriptural vocabulary.",
+        "refs": ["3:15", "5:6", "5:10", "5:20", "6:1", "6:33", "21:32"],
+        "sourceIds": ["przybylski-righteousness", "usccb-matthew5", "hosted-web"]
+      },
+      {
+        "title": "ὀλιγόπιστος (oligopistos): disciples addressed as ‘little-faith’",
+        "original": "ὀλιγόπιστοι — oligopistoi — ‘you of little faith / little-faith ones’",
+        "explanation": "Matthew repeatedly uses this compact description when disciples are anxious, afraid, sinking, or misunderstanding provision. It describes inadequate trust within discipleship, not complete unbelief outside it. The recurrence creates a compassionate but unsparing portrait: followers can obey and still see too little.",
+        "translationNote": "English turns the adjective into a phrase and can make separate incidents sound like generic scolding. Hearing the same unusual label recur links worry about clothing, terror in a storm, Peter on the water, and anxiety over bread.",
+        "caution": "The noun ‘faith’ in modern religious English can mean agreement with doctrines. In these scenes the problem is practical trust under pressure; context, not the word alone, supplies the object and failure.",
+        "refs": ["6:30", "8:26", "14:31", "16:8"],
+        "sourceIds": ["little-faith-study", "hosted-web"]
+      },
+      {
+        "title": "τότε and ἰδού: ‘then’ and ‘look’ stage an ordered, visible story",
+        "original": "τότε — tote — ‘then’; ἰδού — idou — ‘look!, behold!’",
+        "explanation": "Matthew often marks the next move with ‘then’ and repeatedly pulls the audience's attention with ‘behold.’ The pair fits a storyteller who orders episodes carefully and cues hearers when a person, reversal, dream, or divine act enters view.",
+        "translationNote": "The hosted English retains ‘behold’ 66 times, which can sound archaic. Its function is closer to ‘look’ or ‘pay attention.’ Translations that omit it read more smoothly but remove Matthew's repeated pointing gesture.",
+        "caution": "Frequency does not make either word a secret theological code. They are ordinary Greek discourse tools whose concentration and placement contribute to Matthew's voice.",
+        "refs": ["1:20", "2:1", "3:16", "4:11", "8:2", "17:3", "27:51", "28:2"],
+        "sourceIds": ["usccb-matthew", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Semitic names and sounds Matthew carries into Greek",
+    "examples": [
+      {
+        "ref": "1:21",
+        "form": "Ἰησοῦς — Iēsous — Jesus / Joshua",
+        "meaning": "Associated in the story with ‘the Lord saves’",
+        "why": "The angel links the child's ordinary Jewish name with his vocation: ‘he will save his people from their sins.’ The wordplay is clearer in Hebrew or Aramaic than in Greek or English, so Matthew explains it.",
+        "sourceIds": ["usccb-matthew1", "hosted-web"]
+      },
+      {
+        "ref": "1:23",
+        "form": "Ἐμμανουήλ — Emmanouēl — Immanuel",
+        "meaning": "‘God with us’",
+        "why": "Matthew quotes the name in Greek letters and immediately interprets it, then echoes its meaning in Jesus's final promise of presence at 28:20.",
+        "sourceIds": ["usccb-matthew1", "hosted-web"]
+      },
+      {
+        "ref": "5:22",
+        "form": "ῥακά — rhaka — Raca",
+        "meaning": "An Aramaic insult, approximately ‘empty-head’",
+        "why": "The foreign-sounding insult remains inside Greek teaching about contempt. Its exact social force matters more than treating it as a magical forbidden syllable.",
+        "sourceIds": ["usccb-matthew5", "hosted-web"]
+      },
+      {
+        "ref": "6:24",
+        "form": "μαμωνᾶς — mamōnas — Mammon",
+        "meaning": "Wealth or property treated as a master",
+        "why": "A Semitic term for possessions is personified beside God. English readers sometimes mistake it for the proper name of a separate deity; the saying's force is that wealth itself can demand service.",
+        "sourceIds": ["usccb-matthew6", "hosted-web"]
+      },
+      {
+        "ref": "21:9",
+        "form": "ὡσαννά — hōsanna — Hosanna",
+        "meaning": "Originally ‘save, please,’ functioning also as a liturgical acclamation",
+        "why": "The crowd's Psalm 118 cry can sound in English like generic praise. Its Semitic history carries a plea for deliverance into a royal welcome.",
+        "sourceIds": ["usccb-matthew21", "hosted-web"]
+      },
+      {
+        "ref": "27:46",
+        "form": "Ἠλί, Ἠλί, λεμὰ σαβαχθανί — Ēli, Ēli, lema sabachthani",
+        "meaning": "‘My God, my God, why have you forsaken me?’",
+        "why": "Matthew preserves the sound of Jesus's Psalm 22 cry before translating it, allowing the scene to hold anguish and scriptural prayer together.",
+        "sourceIds": ["usccb-matthew27", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Gospel — an ancient life-of-a-person arranged as scriptural narrative, teaching, controversy, passion, and commission",
+    "how": "Read Matthew's arrangement as part of its claim. Narrative sections show authority in action; discourse sections teach a community how to live under that authority. Quotations do more than supply proof texts: they place Jesus within Israel's long story. Repetition, paired scenes, mountains, dreams, ‘with you’ language, and the five closing formulas reward reading whole sections rather than isolated sayings."
+  },
+  "cast": [
+    { "name": "Jesus", "who": "Son of David, Son of Abraham, Messiah, Son of God, Son of Man, teacher, healer, judge, and Emmanuel. Matthew binds royal authority to obedient suffering and presence." },
+    { "name": "Joseph and Mary", "who": "Joseph receives dreams and names the child; Mary bears Jesus by the Spirit. The infancy story is mostly seen through Joseph rather than through Mary as in Luke." },
+    { "name": "John the Baptist", "who": "Announces the kingdom, confronts rulers, questions Jesus from prison, and is executed. His path anticipates the rejection of Jesus." },
+    { "name": "Peter and the Twelve", "who": "Authorized and sent, often ‘little-faith,’ sometimes perceptive, sometimes disastrous. Peter receives a leading role without being spared correction or failure." },
+    { "name": "Scribes, Pharisees, Sadducees, and chief priests", "who": "Different Jewish groups and leaders, not one interchangeable enemy. Matthew stages serious intra-Jewish arguments over authority, interpretation, purity, temple, and leadership." },
+    { "name": "Women and outsiders", "who": "Tamar, Rahab, Ruth, Uriah's wife, the Canaanite woman, the anointing woman, Pilate's wife, and the women at the tomb expose faith, danger, and recognition across expected boundaries." },
+    { "name": "Gentiles", "who": "Magi worship at the beginning, a centurion trusts, nations appear in judgment, and all nations receive the final mission. Gentile inclusion does not erase Israel's story; it grows through it." },
+    { "name": "The crowds", "who": "They hear, marvel, need healing, hail Jesus, and can be moved against him. ‘Crowd’ never means every Jewish person, and its composition changes by scene." }
+  ],
+  "shape": [
+    { "heading": "Origins and preparation", "chapters": "1–4", "note": "Genealogy, birth, Herod, Egypt, Nazareth, John, baptism, testing, and the opening announcement in Galilee." },
+    { "heading": "The kingdom taught", "chapters": "5–7", "note": "The Sermon on the Mount: beatitudes, Torah, prayer, possessions, judgment, discernment, and two foundations." },
+    { "heading": "Authority enacted and shared", "chapters": "8–10", "note": "Healings, storms, exorcisms, forgiveness, calling, compassion, the Twelve named, and mission instructions." },
+    { "heading": "Responses and hidden growth", "chapters": "11–13", "note": "John's question, contested wisdom, Sabbath conflict, signs, parables, understanding, judgment, and rejection at Nazareth." },
+    { "heading": "Recognition and a community of little-faith", "chapters": "14–18", "note": "Bread, water, purity, a Canaanite woman's persistence, Peter's confession, cross prediction, transfiguration, and community restoration." },
+    { "heading": "Road to Jerusalem, confrontation, and waiting", "chapters": "19–25", "note": "Marriage, wealth, service, entry into Jerusalem, temple disputes, woes, destruction, coming, vigilance, stewardship, and judgment." },
+    { "heading": "Passion, resurrection, and mission", "chapters": "26–28", "note": "Passover, Gethsemane, arrest, trials, crucifixion, burial, guarded tomb, risen Jesus, worship, doubt, and commission." }
+  ],
+  "purpose": "Matthew presents Jesus as the one in whom Israel's Scriptures and vocation reach their intended fullness: royal Son of David, faithful Son tested in the wilderness, authoritative teacher, servant who gives his life, risen Lord, and Emmanuel. The response is not admiration alone. Disciples are to hear and do his words, embody a righteousness of mercy and fidelity, forgive and restore one another, resist status, remain watchful, and make disciples among all nations. Heaven-and-earth authority culminates in a community sent under the promise of Jesus's continuing presence.",
+  "snags": [
+    { "snag": "The genealogy does not match Luke's and does not list every generation.", "help": "Ancient genealogies could be selective and rhetorical. Matthew openly arranges three groups of fourteen around Abraham, David, exile, and Messiah; Luke traces a different line in reverse to Adam. Neither writer explains the differences, so proposed harmonizations should be labeled as proposals." },
+    { "snag": "‘Fulfilled’ is treated as if every quoted verse was an obvious standalone prediction of Jesus.", "help": "Read the whole earlier passage. Matthew often sees Israel's story repeating and reaching fullness — exodus, exile, lament, sonship, light — rather than merely matching a sentence to an event." },
+    { "snag": "The Sermon on the Mount is reduced either to impossible perfection or to inspirational ideals.", "help": "Matthew frames it as teaching to be heard and done. Its hyperbole, wisdom forms, prophetic warnings, and concrete community practices need genre-sensitive reading; difficulty does not make it unreal, and literalism without context can miss its force." },
+    { "snag": "The harsh language about scribes, Pharisees, and ‘his blood … on us’ is used against Jewish people.", "help": "Jesus, the disciples, crowds, and opponents are all within a Jewish world. Matthew's polemic reflects fierce disputes over leadership and identity. Antisemitism is a historical and moral corruption of the text: an intra-Jewish conflict or one crowd scene cannot create collective guilt across peoples and centuries." },
+    { "snag": "‘Church’ in 16:18 and 18:17 is imagined as a later building or denomination.", "help": "Greek ekklēsia means an assembly or gathered community. Matthew is the only Gospel to use it, and chapter 18 shows its work through care for the vulnerable, pursuit of the wandering, accountable speech, restoration, and forgiveness." },
+    { "snag": "Chapter 24 is forced into a single modern end-times schedule.", "help": "The discourse interweaves the temple's destruction, suffering, deceptive claims, cosmic prophetic imagery, the Son of Man's coming, and the call to watch. Readers debate which sayings refer to AD 70, final consummation, or patterned crises. Jesus refuses to give the date readers keep trying to extract." },
+    { "snag": "The final commission is heard as cultural conquest.", "help": "The command is to make disciples, baptize, and teach obedience to Jesus, whose authority has just been revealed through crucifixion and resurrection. ‘All nations’ removes ethnic monopoly; it does not authorize coercion or national domination." }
+  ],
+  "debates": [
+    {
+      "question": "Who wrote Matthew, and what did Papias mean?",
+      "settled": "The Gospel does not name its author. Its canonical form is Greek, and ancient external testimony associates it with Matthew.",
+      "positions": [
+        { "view": "Matthew the apostle composed the Gospel or stands directly behind it", "grounds": "The stable ancient title and early church testimony are taken as historical memory; an eyewitness could arrange earlier written and oral sources." },
+        { "view": "An anonymous Greek-speaking Jewish-Christian writer used Mark and other traditions", "grounds": "The Gospel reproduces and edits Greek Mark extensively, does not claim eyewitness status, and speaks of Matthew the tax collector in the third person." },
+        { "view": "Papias described a sayings collection or Semitic source connected with Matthew", "grounds": "His wording refers to logia arranged in a Hebrew dialect and to people interpreting them, which may not describe the narrative Gospel now called Matthew." }
+      ],
+      "soWhat": "The distinction keeps ancient testimony visible without claiming more certainty than either the text or the surviving report supplies."
+    },
+    {
+      "question": "How should Matthew's relationship to Judaism be described?",
+      "settled": "The Gospel is saturated with Israel's Scripture, law, practices, hopes, and internal debates, while explicitly extending mission to all nations.",
+      "positions": [
+        { "view": "A Jewish follower-of-Jesus community disputing leadership from within", "grounds": "Torah observance, synagogue language, scribal expertise, and Jesus's Jewish authority remain central even amid sharp polemic." },
+        { "view": "A mixed community separating from rival synagogue authorities", "grounds": "Repeated conflict, disciplinary language, and Gentile mission are read against a painful late-first-century boundary formation." },
+        { "view": "A predominantly Gentile church preserving Jewish-Christian tradition", "grounds": "Explanations, universal mission, criticism of leaders, and editorial distance are taken as signs that most implied readers are no longer Jewish." }
+      ],
+      "soWhat": "Every model is a reconstruction. None licenses reading ‘Jewish’ as the opposite of ‘Christian’ inside Jesus's lifetime or turning narrative opponents into an ethnic verdict."
+    },
+    {
+      "question": "How does Matthew use Mark and other sources?",
+      "settled": "Matthew shares extensive wording and order with Mark and shares substantial sayings material with Luke; Matthew also contains distinctive material.",
+      "positions": [
+        { "view": "Mark plus a sayings source conventionally called Q, along with special Matthew material", "grounds": "This two-source model explains much triple-tradition order and the Matthew–Luke sayings overlap without requiring either later Gospel to copy the other." },
+        { "view": "Matthew used Mark, and Luke later used both", "grounds": "The Farrer-type model removes the hypothetical Q source and explains Matthew–Luke agreements through Luke's direct knowledge of Matthew." },
+        { "view": "Other oral and written source relationships", "grounds": "Ancient tradition transmission may not fit one clean literary family tree, and minority models reverse or complicate priority." }
+      ],
+      "soWhat": "Source theories explain how inherited material may have reached the author. The final arrangement and wording still belong to the Gospel the reader actually has."
+    }
+  ],
+  "howToRead": [
+    { "tip": "Read chapters 1–4 as one preparation movement. Track son, Egypt, wilderness, testing, and mountain language before deciding that the parallels with Israel or Moses are accidental.", "refs": ["1:1", "2:15", "3:17", "4:1", "4:17"] },
+    { "tip": "Read each major discourse through its closing formula. The five seams at 7:28, 11:1, 13:53, 19:1, and 26:1 reveal the architecture without relying on modern headings.", "refs": ["7:28", "11:1", "13:53", "19:1", "26:1"] },
+    { "tip": "Whenever Matthew says ‘fulfilled,’ open the cited passage and read around it. Ask what earlier pattern — not only what isolated prediction — is being brought forward." },
+    { "tip": "Track ‘righteousness,’ ‘mercy,’ and ‘do.’ Matthew tests confession by enacted fidelity, especially in the Sermon, chapter 18, and chapters 23–25.", "refs": ["5:20", "6:1", "7:21", "9:13", "12:7", "23:23", "25:40"] },
+    { "tip": "Do not flatten Jewish groups into one bloc. Mark who is speaking: a Pharisee, Sadducee, scribe, chief priest, disciple, Galilean crowd, Jerusalem crowd, or Roman official." },
+    { "tip": "Compare parallel scenes with Mark after reading Matthew on its own. Notice what Matthew condenses, clarifies, adds, or groups; those differences expose his voice." },
+    { "tip": "Hold worship and doubt together at 28:17. Matthew ends with imperfect disciples receiving a worldwide task under a promise of presence, not with heroes who have finally become flawless.", "refs": ["28:17", "28:18", "28:19", "28:20"] }
+  ],
+  "next": "Read Mark to feel the faster, rougher narrative Matthew often expands and orders, then Luke–Acts for a different infancy story and a continuous account of mission. Compare Matthew's major scriptural citations with their contexts in Isaiah, Hosea, Jeremiah, Micah, the Psalms, and Daniel, and read James alongside the Sermon on the Mount for closely related ethical vocabulary.",
+  "traditionNote": "Matthew's 28 chapters are shared across the Catholic, Orthodox, and Protestant traditions represented here. Visible verse-number differences occur where later manuscripts expanded the text: for example, some editions include 17:21, 18:11, and 23:14 in the body while many modern critical-text translations place them in notes. The teachings themselves often have parallels elsewhere; the numbering issue concerns Matthew's manuscript transmission, not whether prayer, seeking the lost, or warnings against exploitation belong to Christian Scripture.",
+  "sources": [
+    { "id": "usccb-matthew", "label": "USCCB, Introduction to Matthew", "says": "Surveys the Gospel's five-discourse structure, use of Mark, setting and dating arguments, Jewish and Gentile audience signals, major sections, and theological aims.", "url": "https://bible.usccb.org/bible/matthew/0" },
+    { "id": "usccb-matthew1", "label": "USCCB, Matthew 1 notes", "says": "Explains the infancy prologue, selective genealogy, names Jesus and Emmanuel, betrothal, Joseph's role, Isaiah 7:14, and the opening/closing presence frame.", "url": "https://bible.usccb.org/bible/matthew/1" },
+    { "id": "usccb-matthew5", "label": "USCCB, Matthew 5 notes", "says": "Documents the Sermon's arrangement, beatitude form, Matthew's righteousness vocabulary, Semitic Raqa, Torah argument, and translation-sensitive sayings.", "url": "https://bible.usccb.org/bible/matthew/5" },
+    { "id": "usccb-matthew6", "label": "USCCB, Matthew 6 notes", "says": "Explains the triad of almsgiving, prayer, and fasting, the Lord's Prayer, Mammon, and Matthew's teaching on righteousness and trust.", "url": "https://bible.usccb.org/bible/matthew/6" },
+    { "id": "usccb-matthew21", "label": "USCCB, Matthew 21 notes", "says": "Provides the Jewish scriptural and liturgical setting for the entry, Hosanna, temple action, controversies, and Psalm and prophetic citations.", "url": "https://bible.usccb.org/bible/matthew/21" },
+    { "id": "usccb-matthew27", "label": "USCCB, Matthew 27 notes", "says": "Addresses the passion narrative's scriptural language, Psalm 22 cry, responsibility, distinctive Matthean signs, burial, and guard story.", "url": "https://bible.usccb.org/bible/matthew/27" },
+    { "id": "foster-kingdom", "label": "Robert Foster, ‘Why on Earth Use Kingdom of Heaven?’ (New Testament Studies)", "says": "Challenges the claim that Matthew's phrase is merely avoidance of the divine name and relates it to the Gospel's wider heaven, earth, identity, and authority language.", "url": "https://doi.org/10.1017/S0028688502000292" },
+    { "id": "przybylski-righteousness", "label": "Benno Przybylski, Righteousness in Matthew and his World of Thought (Cambridge)", "says": "Studies dikaiosynē, eleēmosynē, and dikaios in Matthew against Hebrew, Jewish, and Septuagintal usage.", "url": "https://doi.org/10.1017/CBO9780511585746.005" },
+    { "id": "little-faith-study", "label": "D. J. van der Merwe, ‘Little faith: A pragmatic-linguistic perspective’", "says": "Examines Matthew's clustered ‘little faith’ vocabulary as part of the Gospel's portrayal of disciples in context.", "url": "https://www.scielo.org.za/scielo.php?pid=S2305-08532015000100021&script=sci_arttext" },
+    { "id": "iida-isaiah", "label": "Takashi Iida, ‘The Interpretation of the Fulfillment Quotation on Matthew 4:12–17’", "says": "Shows one fulfillment quotation drawing expressions from the Septuagint while also engaging Hebrew wording, illustrating why Matthew's citation practice cannot be reduced to one text form.", "url": "https://doi.org/10.24758/jsnts.53.0_7" },
+    { "id": "eusebius-papias", "label": "Eusebius, Church History 3.39, preserving Papias", "says": "Preserves the early report that Matthew arranged logia in a Hebrew dialect and that each interpreted them as able; the brief wording leaves its referent and sense debated.", "url": "https://www.newadvent.org/fathers/250103.htm" },
+    { "id": "sinaiticus", "label": "Codex Sinaiticus Project", "says": "Provides images and transcription of a fourth-century Greek witness containing the complete New Testament, including Matthew.", "url": "https://www.codexsinaiticus.org/en/manuscript.aspx" },
+    { "id": "hosted-web", "label": "The text on this site", "says": "Chapter and verse totals, English word counts, repeated phrases, references, quotation wording, and visible verse numbering were checked against the hosted World English Bible." }
+  ]
+}

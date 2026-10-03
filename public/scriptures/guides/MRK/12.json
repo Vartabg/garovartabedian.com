@@ -1,0 +1,310 @@
+{
+  "book": "MRK",
+  "chapter": 12,
+  "bookName": "Mark",
+  "summary": "A day of public interrogation in the temple. Jesus tells a parable about tenants who kill the owner's son, and the authorities know exactly who it is about. Then three groups take turns trying to trap him: Pharisees and Herodians on Roman taxes, Sadducees on the resurrection with an absurd hypothetical, and a scribe who asks — apparently sincerely — which commandment is greatest. Jesus answers each, poses a puzzle of his own about David, warns against scribes who exploit widows, and then watches a widow put two of the smallest coins into the treasury.",
+  "whyItMatters": "This is Jesus under cross-examination by every faction that mattered, and he handles all of them. It is also where he states, without hedging, what the whole law comes down to — and then ends the day by pointing at the poorest person in the building as the one who got it right.",
+  "context": {
+    "author": "Anonymous; early tradition names Mark, recording Peter's preaching",
+    "audience": "Greek-speaking readers outside Judea — Mark prices the widow's coins in a Roman quadrans so they can picture the amount",
+    "date": "Somewhere in the AD 50s–70s",
+    "setting": "The temple courts in Jerusalem, midweek of Passover, in public, with crowds listening",
+    "literaryForm": "A parable followed by a set of controversy dialogues — challenge and reply — closing with two contrasting scenes about money"
+  },
+  "outline": [
+    {
+      "heading": "The tenants and the son",
+      "verses": "1-12",
+      "note": "They understood it was aimed at them, and wanted to arrest him on the spot"
+    },
+    {
+      "heading": "Taxes to Caesar",
+      "verses": "13-17",
+      "note": "A trap with no safe answer; he asks to see a coin"
+    },
+    {
+      "heading": "Whose wife will she be?",
+      "verses": "18-27",
+      "note": "The Sadducees' hypothetical, answered from a passage they accepted"
+    },
+    {
+      "heading": "The greatest commandment",
+      "verses": "28-34",
+      "note": "The one friendly question of the day, and the one man told he is near the kingdom"
+    },
+    {
+      "heading": "David's son or David's Lord?",
+      "verses": "35-37",
+      "note": "Jesus asks his own question and nobody answers it"
+    },
+    {
+      "heading": "Beware the scribes",
+      "verses": "38-40",
+      "note": "Long robes, best seats, and widows' houses devoured"
+    },
+    {
+      "heading": "The widow's two coins",
+      "verses": "41-44",
+      "note": "He sits down opposite the treasury and watches"
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "12:10",
+      "text": "The stone which the builders rejected was made the head of the corner.",
+      "why": "Psalm 118 again — the same psalm the crowd shouted at the entry, now turned toward rejection."
+    },
+    {
+      "ref": "12:17",
+      "text": "Give to Caesar the things that are Caesar’s, and to God the things that are God’s.",
+      "why": "An answer that escapes the trap and leaves the harder question open: what exactly belongs to God?"
+    },
+    {
+      "ref": "12:30",
+      "text": "You shall love the Lord your God with all your heart, with all your soul, with all your mind, and with all your strength.",
+      "why": "The Shema — the prayer devout Jews said daily — given as the first commandment."
+    },
+    {
+      "ref": "12:44",
+      "text": "for they all gave out of their abundance, but she, out of her poverty, gave all that she had to live on.",
+      "why": "The last thing Jesus does in the temple before leaving it for good is notice her."
+    }
+  ],
+  "themes": [
+    "authority rejected",
+    "loyalty divided",
+    "resurrection",
+    "love as the whole law",
+    "true and false devotion"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Is the vineyard parable really about the people listening?",
+      "answer": "Verse 12 says so outright — they perceived he spoke the parable against them. The imagery was unmistakable to anyone raised on the scriptures: Isaiah 5 describes Israel as a vineyard God planted, using almost the same details of hedge, winepress, and tower. So the owner is God, the vineyard is Israel, the tenants are its current leadership, the beaten servants are the prophets, and the son is unmistakable. It is a prediction of his own murder told to the men about to arrange it.",
+      "verseRefs": [
+        "12:1",
+        "12:6",
+        "12:7",
+        "12:12"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why is the tax question a trap?",
+      "answer": "Because both answers were fatal. The tax was a Roman head tax paid by subject peoples, and it was hated as a badge of occupation — saying yes would discredit him with the crowd, and a revolt had been raised over this very tax within living memory. Saying no was sedition, reportable to the governor, and the exact charge they later bring to Pilate. Note who is sent: Pharisees and Herodians together again, the religious and the political, as in 3:6.",
+      "verseRefs": [
+        "12:13",
+        "12:14",
+        "12:15"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does the coin have to do with his answer?",
+      "answer": "More than it looks. He asks them to produce a denarius — and they do, in the temple, which is itself telling. The coin carried Caesar's portrait and an inscription naming him son of the divine Augustus, which made it offensive on two counts under Jewish law. So when Jesus asks whose image is on it, he is using the word that appears in Genesis 1:27: humans are made in God's image. The coin bears Caesar's image, so give it back to him. What bears God's image is the person holding it.",
+      "verseRefs": [
+        "12:15",
+        "12:16",
+        "12:17"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Who were the Sadducees, and why don't they believe in resurrection?",
+      "answer": "The temple aristocracy — wealthy, priestly, politically pragmatic, and cooperative with Rome. They accepted the authority of the five books of Moses above the rest, and since resurrection is not taught explicitly there, they rejected it. That is why Jesus answers them from Exodus rather than from Daniel or Isaiah, which would have carried less weight with them. He argues on their own ground, which is why the reply lands.",
+      "verseRefs": [
+        "12:18",
+        "12:26",
+        "12:27"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        18,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Seven brothers marrying the same woman — is that a real law or just a silly hypothetical?",
+      "answer": "The law is real. Deuteronomy 25:5-6 required a man to marry his brother's childless widow so the dead brother would have an heir — it protected both the family line and the widow, who otherwise had nothing. The seven-brother version is a deliberately extreme test case designed to make resurrection look absurd. Jesus does not dispute the law; he says the question assumes the next life is a continuation of this one's arrangements, and it is not.",
+      "verseRefs": [
+        "12:19",
+        "12:20",
+        "12:23",
+        "12:25"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        19,
+        20,
+        23,
+        25
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Does 'like angels in heaven' mean marriage doesn't matter?",
+      "answer": "The statement is narrower than it is often taken to be. It says that in the resurrection people neither marry nor are given in marriage — the institution as it functions here, including producing heirs to carry a name past death, is not needed where death is not. It does not say relationships are erased or that marriage is unimportant now; two chapters earlier he raised the standard for it considerably. His actual target is the assumption behind the question.",
+      "verseRefs": [
+        "12:24",
+        "12:25"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        24,
+        25
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How does 'I am the God of Abraham' prove resurrection?",
+      "answer": "The argument turns on the tense. God says this to Moses at the burning bush, long after all three men had died — and says 'I am,' not 'I was.' Jesus's inference is that God does not describe himself as belonging to people who have simply ceased. It is a compressed rabbinic-style argument from a single word, and it works precisely because the Sadducees granted the authority of that passage.",
+      "verseRefs": [
+        "12:26",
+        "12:27"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        26,
+        27
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Is the scribe in verse 28 another opponent?",
+      "answer": "He appears not to be, and Mark handles him differently from everyone else in the chapter. He has been listening, notices that Jesus answered well, and asks a real question. Then he repeats the answer back approvingly and adds his own conclusion — that loving God and neighbour outranks the whole sacrificial system — which is a striking thing to say standing in the temple. Jesus tells him he is not far from the kingdom. It is worth noticing in a chapter this combative that Mark includes one opponent's colleague who is simply honest.",
+      "verseRefs": [
+        "12:28",
+        "12:32",
+        "12:33",
+        "12:34"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        28,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "What is the Shema?",
+      "answer": "The opening words of verse 29 — 'Hear, Israel, the Lord our God, the Lord is one' — from Deuteronomy 6:4, followed by the command to love God with everything. Devout Jews recited it twice daily; it is the closest thing to a creed in Judaism. Asked to name the greatest commandment, Jesus answers with the sentence everyone in the room had said that morning, then joins it to Leviticus 19:18 about the neighbour. The originality is not in either half. It is in welding them together and refusing to separate them.",
+      "verseRefs": [
+        "12:29",
+        "12:30",
+        "12:31"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What is the point of the David riddle? It seems like a technicality.",
+      "answer": "He quotes Psalm 110, where David writes 'The Lord said to my Lord.' In that world descendants honoured ancestors, not the reverse — so if David calls this figure his Lord, the Messiah cannot be merely David's descendant. Jesus does not supply the answer. The riddle exposes that the popular expectation — a son of David who restores the national kingdom — is too small for what the scriptures themselves say, which is the same correction he has been making since chapter 8.",
+      "verseRefs": [
+        "12:35",
+        "12:36",
+        "12:37"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "What does 'devour widows' houses' mean?",
+      "answer": "Widows in that society had no independent income and depended on the goodwill of others, and religious figures often managed their affairs or received their support. The charge is that some scribes used that trust to strip them, while keeping up long public prayers. Verse 40 is the last thing Jesus says before he sits down to watch the treasury — and the next person through the door is a widow putting in everything she has.",
+      "verseRefs": [
+        "12:38",
+        "12:39",
+        "12:40"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "Is the widow's offering praised, or is it a tragedy?",
+      "answer": "Traditionally it has been read as commendation, and the comparison Jesus draws is genuine — proportion, not amount, is what he measures. But some readers hear the placement differently: it comes directly after the accusation that scribes devour widows' houses, and directly before Jesus walks out and predicts the whole building will be torn down. On that reading, her gift is real devotion being consumed by an institution about to fall, and the note is grief rather than approval. Mark records the scene without telling you which. Both readings take the same fact seriously: she gave everything she had to live on.",
+      "verseRefs": [
+        "12:41",
+        "12:42",
+        "12:43",
+        "12:44"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        41,
+        42,
+        43,
+        44
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sadducees",
+      "def": "The priestly and aristocratic party centred on the temple. They rejected the resurrection and gave primary authority to the five books of Moses. They disappear from history after the temple's destruction in AD 70."
+    },
+    {
+      "term": "Head of the corner",
+      "def": "The stone that sets the position of a whole structure — either the cornerstone at the foundation or the capstone at the top. The image is of the piece the builders discarded turning out to be the one everything depends on."
+    },
+    {
+      "term": "Denarius",
+      "def": "A Roman silver coin, roughly a day's wage, carrying the emperor's portrait and a title claiming divine descent."
+    },
+    {
+      "term": "Shema",
+      "def": "Deuteronomy 6:4-5, recited daily by devout Jews — 'Hear, Israel, the Lord our God, the Lord is one.' Named for its first Hebrew word, 'hear.'"
+    },
+    {
+      "term": "Quadrans",
+      "def": "The smallest Roman coin. Mark converts the widow's two lepta into it so readers using Roman money understand how little it was."
+    },
+    {
+      "term": "The treasury",
+      "def": "Collection receptacles in the temple's Court of the Women, where offerings were deposited publicly — which is why Jesus could sit and watch amounts being given."
+    }
+  ],
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-08-25",
+  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "sourceIds": [
+    "web"
+  ]
+}

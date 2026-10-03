@@ -1,0 +1,435 @@
+{
+  "book": "TIT",
+  "bookName": "Titus",
+  "oneLine": "A letter to Titus about trustworthy leaders and a community whose conduct makes its teaching credible.",
+  "orient": "The opening names Paul and addresses Titus as a partner in a shared faith. Titus is to organize local leadership on Crete and confront teaching that disrupts households. Instructions for different groups lead into two concentrated accounts of God's saving grace and mercy. Read the practical directions beside those passages: the letter repeatedly connects belief with beneficial work, care for others, and public credibility.",
+  "whereYouAre": "The letter presents Titus as a delegate left on Crete to complete unfinished work and appoint elders. Paul and Titus also appear together in Galatians and 2 Corinthians. Acts describes a Cretan stop during Paul's voyage to Rome, but does not narrate the organizing mission presupposed here. This represented mission and the historical circumstances of the letter's composition are separate questions.",
+  "facts": {
+    "writtenBy": "The opening names Paul. Traditional Pauline authorship remains defended, while many scholars understand the letter as later writing within the Pauline tradition.",
+    "writtenWhen": "The 60s CE in a reconstruction of direct Pauline authorship; later first-century or early second-century dates are proposed for later composition. No year is secure.",
+    "writtenFor": "Titus, with instructions concerning the Christian communities on Crete. The final greeting addresses more than one person.",
+    "place": "Crete is Titus's assignment. The sender plans to winter at Nicopolis, but does not explicitly name the place of writing.",
+    "covers": "Leadership and disputed teaching; household and community conduct; grace, mercy, and useful work; closing travel arrangements.",
+    "size": "Three chapters, 46 verses, and 904 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "usccb-pastorals"
+    ],
+    "writtenWhen": [
+      "usccb-pastorals"
+    ],
+    "writtenFor": [
+      "hosted-web"
+    ],
+    "place": [
+      "hosted-web"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "A letter of instruction that moves between formal qualifications, direct commands, sharp criticism, and extended statements of salvation. Lists of virtues and faults organize much of the practical counsel; repeated words connect that counsel to the theological passages.",
+    "spokenWorld": "The letter addresses Christian communities on Crete and recalls Jewish traditions within its disputes. Its Greek belongs to the letter as composed; the text does not establish one everyday language spoken by every person it describes.",
+    "readerSignal": "Watch how sound teaching becomes a pattern of conduct. The instructions repeatedly turn toward what other people see, what benefits them, and what meets their needs. Grace and mercy supply the grounds for that changed life.",
+    "englishLayer": "The World English Bible, King James Version, and Douay-Rheims sometimes use different words for the same Greek expression, such as overseer and bishop. Other differences reflect variant readings: WEB and KJV include mercy in the greeting at 1:4, while Douay-Rheims and the SBL Greek text do not. The Greek examples follow the SBL Greek New Testament, a modern critical edition whose readings are not always those reflected in WEB.",
+    "textualHistory": [
+      {
+        "label": "A Greek letter of community instruction",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Repeated Greek vocabulary connects qualifications, exhortations, and statements about salvation. The letter's language and its represented setting on Crete should be distinguished from the debated date and circumstances of composition.",
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web",
+          "usccb-pastorals"
+        ]
+      },
+      {
+        "label": "Translation choices and variant readings",
+        "language": "English translations of the New Testament",
+        "role": "translation",
+        "description": "The English versions sometimes choose different senses of the same Greek word, as with faithful or believing at 1:6. At 1:4, the inclusion of mercy reflects a textual reading difference. The SBL Greek text is a modern edited comparison, not a claim about the immediate textual base of every English edition.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-titus",
+          "net-titus"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Healthy teaching and a healthy community",
+        "original": "ὑγιαίνω / ὑγιής — hygiainō / hygiēs — be healthy or sound / healthy or sound",
+        "explanation": "Health language describes teaching, faith, love, endurance, and speech. Its recurrence joins the message being taught with the kind of community that message is meant to form. Soundness is therefore more than an isolated label attached to a set of ideas.",
+        "translationNote": "English sound can hide the shared health metaphor. The verb appears in descriptions of teaching and faith; a related adjective describes speech at 2:8. Notice both the repeated language and the different things it qualifies.",
+        "caution": "This is a metaphor for reliable teaching and conduct, not a promise of bodily health. The letter's description of opponents also belongs to its argument, rather than an independent diagnosis.",
+        "refs": [
+          "1:9",
+          "1:13",
+          "2:1",
+          "2:2",
+          "2:8"
+        ],
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Self-control across the community",
+        "original": "σώφρων / σωφρονίζω / σωφρονέω / σωφρόνως — sōphrōn / sōphronizō / sōphroneō / sōphronōs",
+        "explanation": "A related family of words expresses sensible judgment, self-control, and training toward those habits. It appears in instructions for leaders, older people, younger people, and the life shaped by grace. The recurrence makes self-control a shared expectation across the groups.",
+        "translationNote": "Sober-minded, sensible, discreet, and training can conceal this connection in English. At 2:4, the older women are to train the younger women; at 2:6, younger men are urged to exercise self-control. The word family joins practical judgment to teaching and example.",
+        "caution": "These words do not mean only abstaining from alcohol. Wine receives separate warnings, and the different forms should not be treated as one verb repeated with identical grammar.",
+        "refs": [
+          "1:8",
+          "2:2",
+          "2:4",
+          "2:5",
+          "2:6",
+          "2:12"
+        ],
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Grace appears and trains",
+        "original": "ἐπεφάνη / ἐπιφάνεια / παιδεύουσα — epephanē / epiphaneia / paideuousa — appeared / appearing / training",
+        "explanation": "The appearance of grace leads into its training of a people who await the appearance of glory. Chapter 3 again speaks of God's kindness and love appearing. Past manifestation, present formation, and future hope give movement to these passages rather than leaving salvation as an abstract topic.",
+        "translationNote": "At 2:12, the Greek training form continues the sentence about grace in the previous verse. English may begin another sentence, but the connection remains: grace is doing the instructing. The training concerns the life to be lived in the present age.",
+        "caution": "The related appearance words have different grammatical forms and referents. Their recurrence does not provide a date for the awaited appearing or make every use describe the same event.",
+        "refs": [
+          "2:11",
+          "2:12",
+          "2:13",
+          "3:4"
+        ],
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Good works, mercy, and pressing needs",
+        "original": "καλῶν ἔργων — kalōn ergōn — of good or noble works",
+        "explanation": "The repeated phrase links Titus's example, the purpose of Christ's self-giving, the conduct urged on believers, and practical help at the letter's end. Works make professed allegiance visible; chapter 3 directs attention to what benefits people and supplies necessary needs.",
+        "translationNote": "The letter also uses a different adjective, agathos, for good at 1:16 and 3:1. Do not count every English occurrence as the same Greek phrase. Read 3:5 beside 3:8: mercy is the ground of salvation, while useful action is urged upon those who believe.",
+        "caution": "The insistence on action does not make it a purchase price for salvation, and the appeal to mercy does not remove the letter's demand for changed conduct. The concluding needs give good works a concrete setting.",
+        "refs": [
+          "1:16",
+          "2:7",
+          "2:14",
+          "3:1",
+          "3:5",
+          "3:8",
+          "3:14"
+        ],
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Elders and an overseer in one argument",
+        "original": "πρεσβυτέρους / ἐπίσκοπον — presbyterous / episkopon — elders / overseer",
+        "explanation": "The charge to appoint elders leads directly into qualifications for an overseer as God's steward. The change of term continues the discussion of local leadership; the passage does not lay out a clear hierarchy of two separate offices.",
+        "translationNote": "WEB has elders and overseer; KJV has elders and bishop; Douay-Rheims has priests and bishop. These English words carry associations from later church history that should be distinguished from the qualifications being argued here.",
+        "caution": "The relationship between these terms matters, but this short passage does not by itself settle every later form of church government. Pay equal attention to hospitality, restraint, integrity, and the ability to teach.",
+        "refs": [
+          "1:5",
+          "1:6",
+          "1:7",
+          "1:8",
+          "1:9"
+        ],
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web",
+          "hosted-editions",
+          "usccb-titus-intro"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words connecting teaching, conduct, and renewal",
+    "examples": [
+      {
+        "ref": "1:9",
+        "form": "ὑγιαινούσῃ — hygiainousē",
+        "meaning": "being healthy or sound; here describing teaching",
+        "why": "The English sound doctrine belongs to the same health vocabulary used for faith, love, endurance, and speech elsewhere in the letter.",
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "2:6",
+        "form": "σωφρονεῖν — sōphronein",
+        "meaning": "to exercise sound judgment or self-control",
+        "why": "The instruction to younger men belongs to a word family used across the community, rather than introducing a virtue expected of this group alone.",
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "2:12",
+        "form": "παιδεύουσα — paideuousa",
+        "meaning": "training or instructing",
+        "why": "Grace, mentioned in the preceding verse, performs the training. The word connects salvation with learning to reject one way of life and practice another.",
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "3:5",
+        "form": "παλιγγενεσίας — palingenesias",
+        "meaning": "of rebirth or regeneration",
+        "why": "The word qualifies washing and stands beside renewal by the Holy Spirit. The imagery is commonly read in connection with baptism; the word itself does not define a complete later doctrine of the sacrament.",
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web",
+          "usccb-titus-3"
+        ]
+      },
+      {
+        "ref": "3:10",
+        "form": "αἱρετικὸν — hairetikon",
+        "meaning": "factious or divisive in this context",
+        "why": "WEB says factious, while KJV and Douay-Rheims use heretic. The immediate context concerns quarrels and repeated warnings; a later technical classification of heresy should not replace that setting.",
+        "sourceIds": [
+          "greek-titus",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A letter of delegated instruction",
+    "how": "Follow the movement from leadership and disputed teaching into community conduct, then public life and practical needs. Read each command with the reason attached to it. The accounts of grace and mercy explain why the conduct matters; the closing arrangements show how it takes practical form."
+  },
+  "cast": [
+    {
+      "name": "Paul",
+      "who": "The named sender, presenting himself as God's servant and Jesus Christ's apostle. Whether Paul directly composed the letter is debated."
+    },
+    {
+      "name": "Titus",
+      "who": "The addressee, charged with completing work on Crete and appointing local elders; elsewhere Paul calls him a partner and fellow worker."
+    },
+    {
+      "name": "Local leaders and community members",
+      "who": "Elders or overseers, older and younger people, and enslaved people addressed through expectations for their conduct and relationships."
+    },
+    {
+      "name": "The rival teachers",
+      "who": "People accused of disrupting households, pursuing gain, and promoting misguided teaching. Their own account is not preserved in the letter."
+    },
+    {
+      "name": "Artemas, Tychicus, Zenas, and Apollos",
+      "who": "People named in the closing travel arrangements, where plans for Titus and support for travelers become immediate concerns."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Leaders and disputed teaching",
+      "chapters": "1",
+      "precise": "1:1–16",
+      "note": "The greeting and commission lead into leadership qualifications and a rebuke of disruptive teachers."
+    },
+    {
+      "heading": "Community conduct shaped by grace",
+      "chapters": "2",
+      "precise": "2:1–15",
+      "note": "Instructions for different groups lead to grace's training, future hope, and Christ's self-giving."
+    },
+    {
+      "heading": "Mercy, useful work, and final arrangements",
+      "chapters": "3",
+      "precise": "3:1–15",
+      "note": "Public conduct and merciful renewal frame the call to useful work instead of quarrels; practical arrangements close the letter."
+    }
+  ],
+  "purpose": "Titus connects trustworthy teaching with a community whose conduct benefits others. Leaders must embody the message they teach, believers must put mercy into useful action, and disruptive argument must give way to the practical work that grace is said to make possible.",
+  "snags": [
+    {
+      "snag": "The quotation about Cretans sounds like a description the reader is expected to accept.",
+      "help": "At 1:12 the writer quotes a hostile ethnic stereotype traditionally associated with Epimenides, then endorses it at 1:13 as part of the rebuke. Both moves belong to the letter's polemic. They are not independent evidence about the character of an entire population or a warrant for prejudice."
+    },
+    {
+      "snag": "Household language can conceal unequal power.",
+      "help": "The servants of 2:9 are enslaved people, not ordinary paid employees. Older women are given a teaching role, while younger wives are directed toward household duties and subjection to husbands. Read these instructions within the social hierarchy the letter assumes, and notice its concern for the community's public reputation. Explaining that setting does not settle every later dispute about applying the instructions."
+    },
+    {
+      "snag": "References to Jewish fables and circumcision can turn a local dispute into a blanket judgment.",
+      "help": "The letter criticizes particular teachers and quarrels. Their precise identity and teaching remain partly reconstructed. These charges do not describe Judaism or Jewish people as a whole, and a confident later sect label would claim more than the letter establishes."
+    },
+    {
+      "snag": "Mercy and good works can seem to compete.",
+      "help": "At 3:5, salvation rests on God's mercy rather than prior righteous deeds. At 3:8 and 3:14, believers are urged toward work that benefits people and meets needs. The passage gives mercy and action different roles rather than treating conduct as either irrelevant or the price of salvation."
+    },
+    {
+      "snag": "Different translations can make a qualification or title look unambiguous.",
+      "help": "At 1:6, WEB reads children who believe, while KJV and Douay-Rheims say faithful children; the Greek can bear either reading. At 2:13, WEB applies great God and Savior to Jesus Christ; that interpretation follows the linked Greek titles, while another rendering distinguishes the references. At 1:4, the presence or absence of mercy is instead a difference in the textual reading."
+    },
+    {
+      "snag": "The travel references can seem to fix a complete chronology.",
+      "help": "Crete is the assignment described in 1:5; Nicopolis is the planned winter destination in 3:12. Acts does describe a stop at Crete, but not this organizing mission. The letter's stated plans do not independently establish its date or place of composition."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Did Paul directly compose Titus?",
+      "settled": "The letter names Paul and Titus, who is also known from Galatians and 2 Corinthians.",
+      "positions": [
+        {
+          "view": "Direct Pauline authorship",
+          "grounds": "Defenders argue that differences in vocabulary and style need not exclude Paul, and that the organization and theology can fit his lifetime. This reading commonly places Titus in the 60s CE."
+        },
+        {
+          "view": "Later composition in the Pauline tradition",
+          "grounds": "Many scholars find the combined evidence of style, vocabulary, theology, and community organization more consistent with a later setting. Secretarial involvement or compilation incorporating Pauline material are further proposals."
+        }
+      ],
+      "soWhat": "Authorship affects dating and historical reconstruction. Keep the letter's represented mission distinct from conclusions about when its wording took shape."
+    },
+    {
+      "question": "What does the washing of regeneration describe?",
+      "settled": "At 3:5 the saving action is attributed to mercy, with washing, rebirth, and renewal by the Holy Spirit closely connected.",
+      "positions": [
+        {
+          "view": "Baptismal language",
+          "grounds": "The washing and new-life imagery are commonly read as an allusion to baptism, as in the USCCB notes."
+        },
+        {
+          "view": "Different accounts of baptism and spiritual renewal",
+          "grounds": "Christian traditions differ over how the rite relates to the renewal described. The phrase itself does not supply all the distinctions found in those later accounts."
+        }
+      ],
+      "soWhat": "Explain the washing image and its baptismal association while preserving the passage's emphasis on mercy and the Spirit, without making one short phrase settle every later disagreement."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, Titus",
+      "says": "Provides the wording, sequence, instructions, travel references, and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/TIT/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "Titus in the World English Bible, King James Version, and Douay-Rheims",
+      "says": "Shows differences in the greeting, leadership terms, family qualifications, titles in 2:13, washing imagery, and the description of division in 3:10."
+    },
+    {
+      "id": "greek-titus",
+      "label": "SBL Greek New Testament, Titus, with MorphGNT analysis",
+      "says": "Provides the Greek forms, repeated vocabulary, clause connections, and readings used in the language discussion; it is a modern edited Greek text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/77-Tit-morphgnt.txt"
+    },
+    {
+      "id": "usccb-pastorals",
+      "label": "USCCB, Introduction to 1 Timothy and the Pastoral Letters",
+      "says": "Discusses disputed Pauline authorship, alternative accounts of composition, and the dependence of proposed dates on those judgments.",
+      "url": "https://bible.usccb.org/bible/1timothy/0"
+    },
+    {
+      "id": "usccb-titus-intro",
+      "label": "USCCB, Introduction to Titus",
+      "says": "Places Titus among the Pastoral Letters and explains the connected leadership terminology in 1:5–9.",
+      "url": "https://bible.usccb.org/bible/titus/0"
+    },
+    {
+      "id": "net-titus",
+      "label": "NET Bible, Titus: text and translator notes",
+      "says": "Discusses faithful or believing children in 1:6, the traditional attribution of 1:12 to Epimenides, and the grammatical reading of the titles in 2:13.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/tit.pdf"
+    },
+    {
+      "id": "usccb-titus-2",
+      "label": "USCCB, Titus 2: text and notes",
+      "says": "Records an alternative translation of the divine titles in 2:13.",
+      "url": "https://bible.usccb.org/bible/titus/2"
+    },
+    {
+      "id": "usccb-titus-3",
+      "label": "USCCB, Titus 3: text and notes",
+      "says": "Reads the washing and renewal passage in connection with baptism.",
+      "url": "https://bible.usccb.org/bible/titus/3"
+    },
+    {
+      "id": "scriptural-parallels",
+      "label": "Galatians 2; 2 Corinthians 8; Acts 27, World English Bible",
+      "says": "Galatians and 2 Corinthians identify Titus as Paul's companion and fellow worker; Acts describes the voyage's stop at Crete, not the mission presupposed in Titus.",
+      "href": "/scriptures/protestant/GAL/2"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Compare the leader's qualifications with the accusations against the teachers. Ask how conduct supports or contradicts a profession of knowing God.",
+      "refs": [
+        "1:7",
+        "1:8",
+        "1:9",
+        "1:11",
+        "1:16"
+      ]
+    },
+    {
+      "tip": "Notice who teaches whom and whose reputation is at stake. Keep the ancient household hierarchy visible as you follow the instructions.",
+      "refs": [
+        "2:3",
+        "2:4",
+        "2:5",
+        "2:8",
+        "2:9",
+        "2:10"
+      ]
+    },
+    {
+      "tip": "Read grace's appearance, its present training, and the awaited glory as one connected movement.",
+      "refs": [
+        "2:11",
+        "2:12",
+        "2:13",
+        "2:14"
+      ]
+    },
+    {
+      "tip": "Read the account of mercy before the renewed demand for useful work. The final arrangements show what meeting needs can look like.",
+      "refs": [
+        "3:4",
+        "3:5",
+        "3:6",
+        "3:7",
+        "3:8",
+        "3:13",
+        "3:14"
+      ]
+    },
+    {
+      "tip": "Distinguish the instruction to avoid divisive quarrels from the broader demand for gentleness toward everyone.",
+      "refs": [
+        "3:1",
+        "3:2",
+        "3:9",
+        "3:10",
+        "3:11"
+      ]
+    }
+  ],
+  "next": "Read 1 Timothy for related community instructions. Turn to Galatians 2 and 2 Corinthians 8 to meet Titus in other letters, while keeping those passages distinct from disputed reconstructions of this letter's composition.",
+  "traditionNote": "Titus belongs to the New Testament and is conventionally grouped with 1 and 2 Timothy as the Pastoral Letters. That grouping describes their shared concerns; it does not settle their authorship."
+}

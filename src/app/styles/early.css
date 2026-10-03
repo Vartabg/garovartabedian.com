@@ -1,0 +1,815 @@
+/* Auto-split from globals.css — edit carefully; keep selector ownership clear. */
+
+/* ── Early Writings world ────────────────────────────────────────
+   Aged papyrus, sepia ink, verdigris — the scriptorium's light.
+   Same component vocabulary, re-scoped tokens. */
+.world-early {
+  --bg: #e8e1cf;
+  --surface: #f8f2e5;
+  --ink: var(--soot);
+  --muted: #625a48;
+  --line: #cfc5a9;
+  --accent: #3f6658;
+  --accent-deep: #2d4c41;
+  --accent-ink: #f8f2e5;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+}
+.world-early main {
+  flex: 1;
+}
+
+/* Hosted books shift from the world's exhibition layout into a quieter
+   reading room. Maps and source records can remain wide; the prose itself
+   keeps a stable measure that follows the site-wide appearance controls. */
+.wrap:has(.ew-reading-page) .world-guide {
+  display: none;
+}
+
+main:has(.ew-reading-page) {
+  padding-top: 1.5rem;
+}
+
+.ew-reading-page {
+  padding-bottom: 2rem;
+}
+
+.ew-reading-page > :where(.kicker, h1, .lede, .world-cite, .gloss-hint),
+.ew-reading-page > .ew-section,
+.ew-reading-page > .ew-density-shell > .ew-section,
+.ew-reading-page > .ew-density-shell > .ew-plate-density {
+  max-width: 38rem;
+  margin-inline: auto;
+}
+
+.ew-reading-page > .ew-section p,
+.ew-reading-page > .ew-density-shell > .ew-section p {
+  font-size: 1.08rem;
+  line-height: 1.78;
+  text-wrap: pretty;
+}
+
+.ew-reading-page > .ew-section + .ew-section,
+.ew-reading-page > .ew-density-shell > .ew-section + .ew-section {
+  margin-top: 2.25rem;
+}
+
+.ew-reading-page .ew-book-divider {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+/* Full catalog block on the world home (always visible — not collapsed). */
+.ew-catalog-section {
+  scroll-margin-top: 1.5rem;
+  margin-top: 2.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.ew-catalog-section > .jsu-chapter {
+  margin-bottom: 0.35rem;
+}
+
+/* Catalog filter toolbar (home shelf). */
+.ew-catalog-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0.25rem 0 0.5rem;
+}
+.ew-catalog-search input {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 2px;
+  padding: 0.65rem 0.9rem;
+  font: inherit;
+}
+.ew-catalog-search input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.ew-catalog-eras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.ew-catalog-eras button {
+  min-width: var(--control-target-min);
+  min-height: var(--control-target-min);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  border-radius: 2px;
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .ew-catalog-eras button:hover {
+    border-color: var(--accent);
+    color: var(--ink);
+  }
+}
+.ew-catalog-eras button.is-active,
+.ew-catalog-eras button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.ew-catalog-eras button:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+.ew-catalog-count {
+  margin: 0.35rem 0 1rem;
+}
+
+/* Dense SVGs remain visualizations. Their native selector is the equivalent,
+   non-overlapping action surface required by the target-size exception. */
+.ew-visual-picker {
+  display: grid;
+  max-width: 32rem;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+.ew-visual-picker select {
+  width: 100%;
+  min-height: var(--control-target-min);
+  padding: 0.55rem 2rem 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+/* Era page sticky orientation header. */
+.ew-era-header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  margin: 0 0 0.75rem;
+  padding: 0.65rem 0 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--bg) 96%, transparent) 0%,
+      color-mix(in oklab, var(--bg) 92%, transparent) 70%,
+      transparent 100%
+    );
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid color-mix(in oklab, var(--accent) 28%, var(--line));
+}
+.ew-era-header h1 {
+  margin: 0.15rem 0 0.2rem;
+  padding-bottom: 0;
+}
+.ew-era-header h1::after {
+  display: none;
+}
+.ew-era-header .jsu-cite {
+  margin: 0;
+}
+.ew-era-badge {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Era grouping — the four timeline lanes on the writings shelf. */
+.ew-era-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.1rem 0 1.6rem;
+}
+.ew-era-nav a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.ew-era-nav a:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.ew-era-nav a strong {
+  font-weight: 600;
+}
+.ew-era-nav a span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.ew-era {
+  scroll-margin-top: 1.5rem;
+  margin-top: 2rem;
+}
+.ew-era-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  padding-top: 1.1rem;
+}
+.ew-era-head h2 {
+  margin: 0;
+}
+.ew-era-range {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+.ew-era-blurb {
+  color: var(--muted);
+  max-width: 60ch;
+  margin: 0.4rem 0 1.1rem;
+}
+.ew-era-open {
+  margin-left: auto;
+  align-self: center;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ew-era-open:hover {
+  text-decoration: underline;
+}
+/* Prev / all / next pager on a single era page. */
+.ew-era-pager {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+.ew-era-pager > a {
+  text-decoration: none;
+  color: var(--ink);
+}
+.ew-era-pager > a:last-child {
+  text-align: right;
+}
+.ew-era-pager > a span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.ew-era-pager > a strong {
+  font-weight: 600;
+}
+.ew-era-pager > a:hover strong {
+  color: var(--accent);
+}
+.ew-era-pager-all {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+}
+.ew-section {
+  scroll-margin-top: 1.5rem;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+.ew-section p {
+  margin: 0 0 0.9rem;
+}
+/* .ew-section-plate* lives in worlds-shared.css (used by Jesus/angels/councils too). */
+.ew-plate-density {
+  margin: 0.35rem 0 1.1rem;
+}
+.ew-plate-density-btn {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.ew-density-shell[data-density="sparse"] .ew-density-plate.is-optional {
+  display: none;
+}
+.ew-text-map {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--accent) 10%, transparent), transparent 64%),
+    var(--surface);
+  padding: 1rem 1.1rem;
+  margin: 1.35rem 0 1.75rem;
+}
+.ew-text-bars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6px, 1fr));
+  gap: 3px;
+  align-items: end;
+  min-height: 5.5rem;
+}
+.ew-text-bars a {
+  display: flex;
+  align-items: end;
+  min-width: 0;
+  height: 5.5rem;
+  text-decoration: none;
+}
+.ew-text-bars a span {
+  display: block;
+  width: 100%;
+  height: var(--h, 18%);
+  min-height: 0.9rem;
+  border-radius: 999px 999px 4px 4px;
+  background: color-mix(in srgb, var(--accent) 62%, var(--line));
+  opacity: 0.68;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.ew-text-bars a.is-book span {
+  background: var(--accent);
+  opacity: 0.92;
+}
+.ew-text-bars a:hover span,
+.ew-text-bars a:focus-visible span {
+  opacity: 1;
+  transform: translateY(-3px);
+  box-shadow: 0 0 0 3px var(--accent), 0 0 6px var(--ink);
+}
+.ew-text-bars a:focus-visible {
+  outline: none;
+}
+@media (max-width: 560px) {
+  .ew-text-bars {
+    display: flex;
+    min-height: 4.25rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: 0.35rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .ew-text-bars a {
+    flex: 0 0 1.75rem;
+    min-height: 2.75rem;
+    height: 4.25rem;
+  }
+}
+
+/* Book spine — a long text's named books, sized to their chapters, with the
+   Dead Sea Scrolls witness stripe. */
+.ew-spine {
+  margin: 1.1rem 0 1.75rem;
+}
+.ew-spine svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ew-spine-seg {
+  fill: var(--accent);
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+.ew-spine a:hover .ew-spine-seg,
+.ew-spine a:focus-visible .ew-spine-seg {
+  opacity: 0.85;
+}
+.ew-spine a:focus-visible {
+  outline: none;
+}
+.ew-spine-name {
+  fill: var(--ink);
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+}
+.ew-spine-range {
+  fill: var(--muted);
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}
+.ew-spine-stem {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.ew-spine-witness {
+  stroke: var(--free, #3f7d52);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.ew-spine-witness.none {
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 2 3;
+  opacity: 0.7;
+}
+.ew-spine-key {
+  fill: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.02em;
+}
+/* Book-boundary headings read as dividers, not just another chapter. */
+.ew-book-divider {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--accent);
+  font-size: 1.5rem;
+}
+
+/* A dense jump-nav for texts long enough to need one */
+.ew-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 1.1rem 0 1.6rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.ew-jump a {
+  font-size: 0.78rem;
+  color: var(--muted);
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  text-decoration: none;
+}
+.ew-jump a:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+/* Timeline */
+.ew-timeline {
+  margin: 2rem 0 1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Edge fade hints horizontal scroll on narrow viewports. */
+  background:
+    linear-gradient(90deg, var(--bg) 0%, transparent 1.25rem) left center / 1.5rem 100% no-repeat,
+    linear-gradient(270deg, var(--bg) 0%, transparent 1.25rem) right center / 1.5rem 100% no-repeat;
+  background-attachment: local, local;
+}
+.ew-timeline svg {
+  width: 100%;
+  min-width: 660px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.ew-tl-tick {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.ew-tl-year {
+  fill: var(--muted);
+  font-size: 10px;
+}
+.ew-tl-lane {
+  fill: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.ew-tl-item {
+  pointer-events: none;
+}
+.ew-tl-bar {
+  fill: var(--accent);
+  opacity: 0.58;
+  transition: opacity 0.15s ease;
+}
+.ew-tl-dot {
+  fill: var(--muted);
+}
+.ew-tl-item.active .ew-tl-bar {
+  opacity: 0.9;
+}
+.ew-tl-item.active .ew-tl-dot,
+.ew-tl-item[aria-pressed="true"] .ew-tl-dot {
+  fill: var(--accent);
+}
+.ew-tl-label {
+  fill: var(--ink);
+  font-size: 10px;
+  opacity: 0.92;
+}
+.ew-tl-item.active .ew-tl-label {
+  font-weight: 700;
+  opacity: 1;
+}
+.ew-tl-detail {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 0.8rem 1.1rem;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+.ew-tl-detail p {
+  margin: 0.25rem 0 0.4rem;
+}
+
+/* Ignatius road map */
+.ew-map-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1.5rem;
+}
+.ew-map {
+  width: 100%;
+  min-width: 640px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #a4bfbb;
+}
+.ew-map-sea {
+  fill: #a4bfbb;
+}
+.ew-map-land {
+  fill: #f1e8d6;
+  stroke: #cbb68d;
+  stroke-width: 1.25;
+}
+.ew-map-region {
+  fill: #6f9591;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  font-weight: 600;
+  opacity: 0.85;
+}
+/* The escorted road — his one journey, drawn whole (solid land, dashed sea). */
+.ew-map-route {
+  stroke: #6d5a3d;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  opacity: 0.75;
+}
+.ew-map-route.sea {
+  stroke-dasharray: 6 5;
+  opacity: 0.5;
+}
+/* A letter flies only when it is chosen. */
+.ew-map-letter {
+  stroke: var(--accent);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  opacity: 0;
+  transition: opacity 0.25s ease, stroke-width 0.2s ease;
+}
+.ew-map-letter.active {
+  opacity: 0.95;
+  stroke-width: 2.6;
+}
+.ew-map-place {
+  cursor: default;
+}
+.ew-map-dot {
+  fill: #927c5c;
+}
+.ew-map-dot.route {
+  fill: #6d5a3d;
+}
+.ew-map-label {
+  fill: var(--ink);
+  font-size: 11px;
+  opacity: 0;
+  paint-order: stroke;
+  stroke: #f1e8d6;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+.ew-map-place.is-anchor .ew-map-label {
+  opacity: 0.6;
+}
+@media (hover: hover) and (pointer: fine) {
+  .ew-map-place:hover .ew-map-label {
+    opacity: 1;
+  }
+}
+.ew-map-place.active .ew-map-dot,
+.ew-map-place[aria-pressed="true"] .ew-map-dot {
+  fill: var(--accent);
+}
+.ew-map-place.active .ew-map-label,
+.ew-map-place[aria-pressed="true"] .ew-map-label {
+  fill: var(--accent);
+  font-weight: 700;
+  opacity: 1;
+}
+.ew-map-ring {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  opacity: 0.5;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: jsuHalo 2.4s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ew-map-ring { animation: none; }
+}
+.ew-map-note {
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+/* Two ways */
+.ew-twoways {
+  width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+}
+.ew-tw-road {
+  stroke: var(--muted);
+  stroke-width: 3;
+  opacity: 0.7;
+}
+.ew-tw-road.life {
+  stroke: var(--accent);
+  opacity: 0.9;
+}
+.ew-tw-road.death {
+  stroke: #8a4a33;
+  stroke-dasharray: 7 6;
+  opacity: 0.8;
+}
+.ew-tw-fork {
+  fill: var(--ink);
+}
+.ew-tw-label {
+  fill: var(--muted);
+  font-size: 12px;
+  font-style: italic;
+}
+.ew-tw-label.life {
+  fill: var(--accent);
+}
+.ew-tw-label.death {
+  fill: #8a4a33;
+}
+
+/* Seven heavens (Ascension of Isaiah) */
+.ew-sh-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.25rem 0;
+}
+.ew-sevenheavens {
+  width: 100%;
+  min-width: 620px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.ew-sh-band.heaven {
+  fill: var(--accent);
+}
+.ew-sh-band.firmament {
+  fill: #8a4a33;
+  fill-opacity: 0.12;
+}
+.ew-sh-band.earth {
+  fill: var(--ink);
+  fill-opacity: 0.09;
+}
+.ew-sh-line {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.ew-sh-label {
+  fill: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.ew-sh-note {
+  fill: var(--muted);
+  font-size: 10.5px;
+  font-style: italic;
+}
+.ew-sh-desc {
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+  opacity: 0.75;
+}
+.ew-sh-asc {
+  stroke: var(--accent);
+  stroke-width: 3;
+  opacity: 0.85;
+}
+.ew-sh-asc-head {
+  fill: var(--accent);
+}
+.ew-sh-node.desc {
+  fill: var(--muted);
+}
+.ew-sh-node.asc {
+  fill: var(--accent);
+}
+.ew-sh-cap {
+  fill: var(--muted);
+  font-size: 11px;
+  font-style: italic;
+}
+.ew-sh-cap.asc {
+  fill: var(--accent);
+}
+
+/* Positional section anchor — a scroll target only, with the sticky header's
+   height as scroll margin so a linked section lands below the chrome. */
+.ew-section-anchor {
+  display: block;
+  height: 0;
+  scroll-margin-top: 5rem;
+}
+
+/* Scripture quoted in a paragraph — the reference the translator's quotation
+   marks do not supply. Set in the margin on wide screens so the prose keeps
+   its measure, and folded underneath on narrow ones. Deliberately quiet: it is
+   a route, not a gloss. */
+.ew-para {
+  position: relative;
+}
+.ew-allusion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: -0.4rem 0 1.1rem;
+  font-size: 0.78rem;
+}
+.ew-allusion a {
+  border-bottom: 1px dotted currentcolor;
+  color: var(--muted);
+  text-decoration: none;
+}
+.ew-allusion a:hover {
+  color: var(--ink);
+  border-bottom-style: solid;
+}
+@media (min-width: 1100px) {
+  .ew-allusion {
+    position: absolute;
+    inset-inline-start: calc(100% + 1.5rem);
+    top: 0;
+    width: 9rem;
+    margin: 0;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+/* Edition library: the same paper, ink, type scale and focus treatment as the reader. */
+.ew-library-nav { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; margin: 1rem 0 2rem; }
+.ew-library-form { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; margin: 2rem 0; }
+.ew-library-form label { display: grid; grid-template-columns: minmax(0, 1fr); gap: .45rem; flex: 1 1 16rem; min-width: 0; }
+.ew-library-form input, .ew-library-form select { width: 100%; min-width: 0; }
+.ew-library-form input, .ew-library-form select, .ew-library-form button,
+.ew-reading-page button { font: inherit; padding: .65rem .8rem; border: 1px solid currentColor; border-radius: .3rem; background: var(--paper); color: inherit; min-height: 44px; max-width: 100%; }
+.ew-library-status { display: block; font-size: .78rem; letter-spacing: .05em; margin-bottom: .5rem; }
+.ew-library-metadata { display: grid; grid-template-columns: minmax(9rem, 1fr) 3fr; gap: .7rem 1.2rem; }
+.ew-library-metadata dt { font-weight: 700; }
+.ew-library-metadata dd { margin: 0; }
+.ew-library-contents { margin: 1rem 0; }
+.ew-library-contents summary, .world-survival summary { cursor: pointer; padding: .75rem 0; min-height: 44px; }
+.ew-library-contents li { padding: .35rem 0; }
+.ew-library-pager > * { min-width: 0; overflow-wrap: anywhere; }
+.ew-library-pager span { display: block; font-size: .78rem; margin-top: .4rem; }
+.ew-edition-note { border-inline-start: 3px solid currentColor; padding-inline-start: 1rem; margin: 1.3rem 0; font-size: .92em; }
+.ew-source-hash, .ew-library-metadata dd, .ew-library-results li, .ew-library-contents a { overflow-wrap: anywhere; }
+.ew-library-results { padding: 0; list-style: none; }
+.ew-library-results li { border-bottom: 1px solid currentColor; padding: 1.5rem 0; }
+.ew-library-results h2 { font-size: 1.2rem; }
+.ew-section sup a { padding: .2rem; }
+@media (max-width: 600px) {
+  .ew-library-metadata { grid-template-columns: 1fr; gap: .35rem; }
+  .ew-library-metadata dd { margin-bottom: .8rem; }
+  .ew-library-pager { gap: .75rem; }
+  .ew-library-pager span { max-height: 5.5rem; overflow: auto; }
+}

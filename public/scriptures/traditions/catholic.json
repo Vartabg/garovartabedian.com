@@ -1,0 +1,208 @@
+{
+  "tradition": "catholic",
+  "traditionName": "Catholic",
+  "oneLine": "This shelf follows the Catholic canon: forty-six Old Testament books and the shared twenty-seven-book New Testament, traditionally counted as seventy-three in all.",
+  "orient": "The Catholic difference is not merely seven extra titles at the end of a Protestant Bible. The deuterocanonical books and the Greek portions of Esther and Daniel belong inside the received Old Testament, and Scripture is read within the Church’s living apostolic Tradition and liturgy.",
+  "keepInMind": "Book totals depend on how combined works are counted. The Catholic Catechism itself says forty-six Old Testament books—or forty-five when Jeremiah and Lamentations are counted together. The important comparison is which writings and portions are received, not which arithmetic convention produces the headline number.",
+  "facts": [
+    {
+      "label": "Received canon",
+      "value": "46 Old Testament books and 27 New Testament books; 73 by the common modern count.",
+      "sourceIds": ["catechism-canon", "usccb-faq"]
+    },
+    {
+      "label": "Wider Old Testament",
+      "value": "Tobit, Judith, Wisdom, Sirach, Baruch, 1–2 Maccabees, and Greek portions of Esther and Daniel are received as inspired Scripture.",
+      "sourceIds": ["catechism-canon", "usccb-faq"]
+    },
+    {
+      "label": "Authority frame",
+      "value": "Sacred Scripture and Sacred Tradition are distinct but bound together in one transmission of revelation, interpreted within the Church.",
+      "sourceIds": ["catechism-tradition"]
+    },
+    {
+      "label": "Hosted textual layer",
+      "value": "The shelf prefers the public-domain Douay-Rheims where available and falls back to other hosted public-domain English texts; it is not a modern Catholic lectionary.",
+      "sourceIds": ["site-text-sources"]
+    }
+  ],
+  "formation": [
+    {
+      "date": "Ancient church",
+      "title": "The Greek Scriptures remain part of the inheritance",
+      "text": "Catholic teaching remembers the early Church’s reception of the Septuagint while also honoring other Eastern versions and the Latin Vulgate. The longer Old Testament therefore belongs to a history of worship and transmission, not to a late appendix added to a settled Protestant list.",
+      "sourceIds": ["dei-verbum"]
+    },
+    {
+      "date": "Fifteenth–sixteenth centuries",
+      "title": "Councils state the received list explicitly",
+      "text": "The Catechism’s canon paragraph points to the Council of Florence and the Council of Trent among the formal witnesses to the complete list, in continuity with earlier local lists and church use.",
+      "sourceIds": ["catechism-canon"]
+    },
+    {
+      "date": "1965",
+      "title": "Vatican II joins reception to renewed textual work",
+      "text": "Dei Verbum affirms the inspired books with all their parts, honors the Septuagint and Vulgate, and asks for suitable translations made especially from the original texts. Catholic reception of a longer canon is therefore not a rule that every translation must simply reproduce the Vulgate wording.",
+      "sourceIds": ["dei-verbum"]
+    },
+    {
+      "date": "Present practice",
+      "title": "The canon is heard in the liturgy",
+      "text": "Catholic worship places Scripture readings in every Mass through the Lectionary, with a Gospel reading holding a privileged place. The bound Bible and the liturgical reading cycle are related but not identical objects.",
+      "sourceIds": ["usccb-faq"]
+    }
+  ],
+  "distinctives": [
+    {
+      "title": "Seven deuterocanonical books",
+      "text": "Tobit, Judith, Wisdom, Sirach, Baruch, and 1–2 Maccabees are integral Old Testament books, not a noncanonical appendix. ‘Deuterocanonical’ marks a history of disputed reception; it does not mean second-class inspiration in Catholic teaching.",
+      "sourceIds": ["catechism-canon", "usccb-faq"],
+      "bookIds": ["TOB", "JDT", "WIS", "SIR", "BAR", "1MA", "2MA"]
+    },
+    {
+      "title": "Longer Esther and Daniel",
+      "text": "The Catholic Old Testament includes Greek material absent from the shorter Protestant forms of Esther and Daniel. In Catholic editions these portions belong to those books rather than functioning as unrelated bonus stories.",
+      "sourceIds": ["usccb-faq", "catechism-canon"],
+      "bookIds": ["EST", "DAN"]
+    },
+    {
+      "title": "A shared New Testament",
+      "text": "The Catholic New Testament contains the same twenty-seven writings represented on the Protestant and Eastern Orthodox shelves; the principal canonical difference lies in the Old Testament.",
+      "sourceIds": ["catechism-canon", "usccb-faq"],
+      "bookIds": ["MAT", "ACT", "ROM", "REV"]
+    }
+  ],
+  "reception": [
+    {
+      "title": "Scripture within apostolic Tradition",
+      "text": "Catholic teaching describes Scripture as the Word of God put into writing under the Holy Spirit and Tradition as the handing-on of the same apostolic deposit. It does not treat them as two unrelated piles of information.",
+      "sourceIds": ["catechism-tradition"]
+    },
+    {
+      "title": "Literal sense, literary form, and the unity of the whole",
+      "text": "The Catechism asks interpreters to attend to human authors, historical setting, literary genres, the unity of Scripture, the Church’s living Tradition, and the coherence of the faith. A ‘Catholic reading’ is not permission to ignore the literal or historical sense.",
+      "sourceIds": ["catechism-interpretation"]
+    },
+    {
+      "title": "Read, proclaimed, and prayed",
+      "text": "Scripture is encountered privately and academically, but also publicly in the Liturgy of the Word. The canon’s life in preaching, prayer, sacraments, and theology is part of how the collection is received.",
+      "sourceIds": ["usccb-faq", "dei-verbum"]
+    }
+  ],
+  "variations": [
+    {
+      "title": "Forty-five, forty-six, and seventy-three can all describe the same received contents",
+      "text": "Jeremiah and Lamentations may be counted together or separately, and additions may be counted as portions rather than standalone books. The Catholic Catechism flags its own counting convention instead of pretending that one number explains the canon.",
+      "sourceIds": ["catechism-canon"]
+    },
+    {
+      "title": "Approved Catholic translations do not all sound or order material alike",
+      "text": "Translations may work from Hebrew, Aramaic, and Greek textual witnesses while honoring the Church’s received canon. Chapter and verse numbering in Esther, Daniel, and the Psalms can therefore differ across editions.",
+      "sourceIds": ["dei-verbum", "usccb-books"]
+    },
+    {
+      "title": "This route uses a Latin-rite-friendly English presentation",
+      "text": "The Douay-Rheims preference and familiar seventy-three-book order make the page legible to English readers, but they do not reproduce every Eastern Catholic liturgical ordering, translation, or local presentation.",
+      "sourceIds": ["dei-verbum", "site-text-sources"]
+    }
+  ],
+  "debates": [
+    {
+      "question": "Are the deuterocanonical books fully inspired Scripture?",
+      "settled": "The books and additions are ancient and have a long history of Jewish and Christian transmission; their ecclesial authority is the disputed point.",
+      "positions": [
+        {
+          "view": "Catholic teaching receives them with the rest of the Old Testament.",
+          "grounds": "The Catechism includes them in the complete canon, and the USCCB explicitly describes them as inspired by the Holy Spirit.",
+          "sourceIds": ["catechism-canon", "usccb-faq"]
+        },
+        {
+          "view": "Classic Protestant confessions place them outside inspired canon.",
+          "grounds": "Reformation-era standards either assign them a subordinate reading role or treat them as other human writings rather than a basis for doctrine.",
+          "sourceIds": ["protestant-article", "protestant-westminster"]
+        }
+      ],
+      "soWhat": "The Catholic shelf integrates these texts because its claim is canonical, not merely historical or devotional."
+    },
+    {
+      "question": "How are Scripture, Tradition, and teaching authority related?",
+      "settled": "Catholic teaching gives Scripture a unique inspired status and also insists that the apostolic faith was handed on before the New Testament existed as a completed collection.",
+      "positions": [
+        {
+          "view": "Catholic teaching reads Scripture and Tradition as one sacred deposit served by the Church’s teaching office.",
+          "grounds": "The Catechism describes two distinct modes of transmission flowing from one source and moving toward one goal.",
+          "sourceIds": ["catechism-tradition"]
+        },
+        {
+          "view": "Protestant standards subordinate every later authority to Scripture as the final written norm.",
+          "grounds": "Article VI and Westminster make Scripture’s sufficiency and final authority decisive for binding doctrine.",
+          "sourceIds": ["protestant-article", "protestant-westminster"]
+        }
+      ],
+      "soWhat": "The canon question cannot be separated from the larger question of how a community knows and interprets the apostolic faith."
+    }
+  ],
+  "hosting": {
+    "heading": "The received contents are here; a Catholic edition is not",
+    "summary": "This shelf can host all seventy-three commonly counted books in public-domain English, including the longer Esther and Daniel. It does not reproduce an approved modern Catholic Bible’s introductions, notes, lectionary divisions, textual apparatus, or ecclesiastical approval.",
+    "available": "The complete represented canon, with the Douay-Rheims preferred where it contains the book and public-domain fallbacks for comparison.",
+    "unavailable": "Modern copyrighted Catholic translations, Mass lectionary cycles, study notes, and local Eastern Catholic textual or liturgical arrangements.",
+    "sourceIds": ["site-text-sources", "usccb-books"]
+  },
+  "sources": [
+    {
+      "id": "catechism-canon",
+      "label": "Catechism of the Catholic Church, sections 120–130",
+      "says": "Explains the Church’s discernment of the canon, lists its contents, and describes the unity of the two Testaments.",
+      "url": "https://www.vatican.va/content/catechism/en/part_one/section_one/chapter_two/article_3/iv_the_canon_of_scripture.html"
+    },
+    {
+      "id": "catechism-tradition",
+      "label": "Catechism of the Catholic Church, sections 80–83",
+      "says": "Defines the relationship between Sacred Scripture and Sacred Tradition as distinct modes of transmitting one apostolic deposit.",
+      "url": "https://www.vatican.va/content/catechism/en/part_one/section_one/chapter_two/artcile_2/ii_the_relationship_between_tradition_and_sacred_scripture.html"
+    },
+    {
+      "id": "catechism-interpretation",
+      "label": "Catechism of the Catholic Church, sections 101–119",
+      "says": "Sets out Catholic principles for inspiration and interpretation, including human authorship, literary genres, literal sense, and ecclesial context.",
+      "url": "https://www.vatican.va/archive/ENG0015/__PP.HTM"
+    },
+    {
+      "id": "dei-verbum",
+      "label": "Second Vatican Council, Dei Verbum",
+      "says": "Treats inspiration, interpretation, the Septuagint and Vulgate, translation from original texts, and Scripture’s place in the Church’s life.",
+      "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651118_dei-verbum_en.html"
+    },
+    {
+      "id": "usccb-faq",
+      "label": "United States Conference of Catholic Bishops, Bible FAQ",
+      "says": "Compares Catholic and Protestant Old Testament contents and explains the place of Scripture readings in the Mass.",
+      "url": "https://www.usccb.org/faq"
+    },
+    {
+      "id": "usccb-books",
+      "label": "United States Conference of Catholic Bishops, canonical book order",
+      "says": "Shows the books and groupings used in the USCCB’s Catholic Bible presentation.",
+      "url": "https://bible.usccb.org/bible"
+    },
+    {
+      "id": "protestant-article",
+      "label": "Church of England, Article VI",
+      "says": "Provides a historic Protestant distinction between canonical books and other books read for life and instruction.",
+      "url": "https://www.churchofengland.org/prayer-and-worship/worship-texts-and-resources/book-common-prayer/articles-religion"
+    },
+    {
+      "id": "protestant-westminster",
+      "label": "Westminster Confession of Faith, chapter 1",
+      "says": "Provides the classic Reformed 66-book boundary and account of Scripture’s final authority.",
+      "url": "https://bpc.org/wcf"
+    },
+    {
+      "id": "site-text-sources",
+      "label": "Hosted Scripture text sources and processing notes",
+      "says": "Identifies the public-domain translations available in this reader and their provenance.",
+      "href": "/sources#scripture-texts"
+    }
+  ]
+}

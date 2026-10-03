@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "the-golden-calf-and-samiri",
+  "slug": "the-golden-calf-and-samiri",
+  "title": "The Golden Calf Apostasy: Aaron and Al-Samiri",
+  "subtitle": "Exodus 32 · Qur'an 20:83–98",
+  "summary": "A source-anchored comparison of Israel's worship of the golden calf at Sinai: Aaron's direct casting of the idol under popular pressure in Exodus versus the Quranic intervention of Al-Samiri, preserving Aaron's prophetic infallibility ('ismah).",
+  "axis": "prophethood",
+  "witnesses": [
+    {
+      "id": "exodus-32",
+      "title": "Exodus 32 (Masoretic Text / World English Bible)",
+      "shortTitle": "Exodus 32",
+      "language": "Hebrew / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 10th–6th century BCE",
+        "earliestManuscript": "4QExod-a (c. 1st century BCE)",
+        "edition": "Westminster Leningrad Codex / World English Bible"
+      },
+      "primaryTradition": "Hebrew Bible / Christian Old Testament",
+      "corpusEditionId": "web-bible",
+      "licenseNotice": "World English Bible is a 100% public domain Modern English translation of the Holy Bible."
+    },
+    {
+      "id": "quran-20",
+      "title": "Qur'an 20:83–98 (Ta-Ha · Tanzil / Pickthall)",
+      "shortTitle": "Qur'an 20 (Ta-Ha)",
+      "language": "Classical Arabic / English",
+      "isRtl": true,
+      "dates": {
+        "composition": "c. 7th century CE",
+        "earliestManuscript": "Codex Sana'a / Birmingham Quran Fragment (c. 7th century CE)",
+        "edition": "Tanzil Project (Uthmani) / Pickthall (1930)"
+      },
+      "primaryTradition": "Islamic Scripture",
+      "corpusEditionId": "tanzil-uthmani",
+      "licenseNotice": "Tanzil Quran Text (Simple/Uthmani) is provided under the Tanzil Text License. Copyright © 2007-2024 Tanzil Project. Reproduction is permitted only verbatim with attribution and link to tanzil.net."
+    }
+  ],
+  "slots": [
+    {
+      "id": "instigation-and-fashioning",
+      "label": "The Instigator & Fashioning of the Calf",
+      "description": "Who initiates the creation of the idol and how it is cast from gold.",
+      "cells": {
+        "exodus-32": {
+          "witnessId": "exodus-32",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "EXO",
+            "passageRef": "Exodus 32:1-4",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "When the people see that Moses delays on the mountain, they gather around Aaron; Aaron instructs them to bring gold earrings, takes the gold, and fashions it with a graving tool into a molten calf.",
+          "verbatimExcerpt": "When the people saw that Moses delayed coming down from the mountain, the people gathered themselves together to Aaron, and said to him, 'Come, make us gods, which shall go before us; for as for this Moses... we don't know what has become of him.' Aaron said to them, 'Take off the golden rings, which are in the ears of your wives, of your sons, and of your daughters, and bring them to me.' All the people took off the golden rings... and brought them to Aaron. He received what they handed him, and fashioned it with an engraving tool, and made it a molded calf; and they said, 'These are your gods, Israel, which brought you up out of the land of Egypt.'",
+          "supportingCitations": ["Exodus 32:1-4"],
+          "limits": "Aaron personally receives the gold, tools it, and builds an altar before it proclaiming a feast to Yahweh."
+        },
+        "quran-20": {
+          "witnessId": "quran-20",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Ta-Ha",
+            "passageRef": "Qur'an 20:85-88",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Allah informs Moses that his people have been tempted in his absence by a man called Al-Samiri, who gathered the ornaments, threw dust from the messenger's footprint, and produced an image of a calf that lowed.",
+          "verbatimExcerpt": "He said: Lo! We have tried thy folk in thine absence, and As-Samiri hath misled them... They said: We broke not tryst with thee of our own will, but we were laden with burdens of ornaments of the folk, then cast them (in the fire), for thus As-Samiri proposed. Then he produced for them a calf, of saffron hue, which gave forth a lowing sound. And they cried: This is your god and the god of Moses, but he hath forgotten.",
+          "supportingCitations": ["Qur'an 20:85-88"],
+          "limits": "The creation of the calf and the deception of the people is attributed entirely to Al-Samiri, not Aaron."
+        }
+      }
+    },
+    {
+      "id": "aaron-role-and-culpability",
+      "label": "Aaron's Stance & Confrontation with Moses",
+      "description": "How Aaron responds during the crisis and how he explains his actions to Moses.",
+      "cells": {
+        "exodus-32": {
+          "witnessId": "exodus-32",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "EXO",
+            "passageRef": "Exodus 32:21-24",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Moses asks Aaron what the people did to him to bring such great sin upon them; Aaron tells Moses not to let his anger burn, blames the people's evil nature, and claims he threw gold into the fire and 'out came this calf.'",
+          "verbatimExcerpt": "Moses said to Aaron, 'What did these people do to you, that you have brought a great sin on them?' Aaron said, 'Don't let the anger of my lord grow hot. You know the people, that they are set on evil... I said to them, 'Whoever has any gold, let them take it off.' So they gave it to me; and I threw it into the fire, and out came this calf.'",
+          "supportingCitations": ["Exodus 32:21-24"],
+          "limits": "Moses sees that Aaron had let the people run wild to their shame before their enemies (Exodus 32:25)."
+        },
+        "quran-20": {
+          "witnessId": "quran-20",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Ta-Ha",
+            "passageRef": "Qur'an 20:90-94",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Aaron had explicitly warned the people beforehand that the Lord is the Beneficent and to obey him; when Moses seizes Aaron by the beard, Aaron explains he feared causing division among the Children of Israel before Moses returned.",
+          "verbatimExcerpt": "And Aaron indeed had told them beforehand: O my people! Ye are but being seduced therewith, for lo! your Lord is the Beneficent, so follow me and obey my order. They said: We shall by no means cease to be its votaries till Moses return unto us. (Moses) said: O Aaron! What held thee back... That thou followedst me not? Hast thou then disobeyed my order? He said: O son of my mother! Clutch not my beard nor my head! I feared lest thou shouldst say: Thou hast caused division among the Children of Israel, and hast not waited for my word.",
+          "supportingCitations": ["Qur'an 20:90-94", "Qur'an 7:150"],
+          "limits": "Aaron is completely exonerated from participating in idolatry, having vigorously opposed the people until threatened with violence."
+        }
+      }
+    },
+    {
+      "id": "destruction-of-idol-and-fate-of-culprit",
+      "label": "Destruction of the Idol & Punishment",
+      "description": "How the idol is destroyed and the judgment pronounced upon the perpetrator.",
+      "cells": {
+        "exodus-32": {
+          "witnessId": "exodus-32",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "EXO",
+            "passageRef": "Exodus 32:20, 26-28",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Moses burns the calf in fire, grinds it to powder, scatters it on water, and makes Israel drink it; the Levites rally to Moses and slay about 3,000 men.",
+          "verbatimExcerpt": "He took the calf which they had made, and burned it with fire, ground it to powder, and scattered it on the water, and made the children of Israel drink it... and there fell of the people that day about three thousand men.",
+          "supportingCitations": ["Exodus 32:20", "Exodus 32:28"],
+          "limits": "A severe physical penalty executed by the sons of Levi."
+        },
+        "quran-20": {
+          "witnessId": "quran-20",
+          "locator": {
+            "corpusId": "quran",
+            "editionId": "tanzil-uthmani",
+            "section": "Ta-Ha",
+            "passageRef": "Qur'an 20:97-98",
+            "originalLanguage": "Arabic"
+          },
+          "basis": "explicit",
+          "summary": "Moses confronts As-Samiri, banishes him with the curse that in this life he must cry 'Touch me not!' (La misas), and burns the calf, scattering its dust into the sea.",
+          "verbatimExcerpt": "(Moses) said: Then go! And lo! in this life it is for thee to say: Touch me not! and lo! there is for thee a tryst thou canst not break. Now look upon thy god of which thou hast remained a votary. Verily we will burn it and will scatter its dust over the sea! Your god is only Allah, than Whom there is no other God. He embraceth all things in His knowledge.",
+          "supportingCitations": ["Qur'an 20:97-98"],
+          "limits": "As-Samiri receives a distinct social and physical banishment ('Touch me not'), while the calf is burned and scattered into the sea."
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "exodus-to-quran-prophetic-impeccability",
+      "sourceWitnessId": "exodus-32",
+      "targetWitnessId": "quran-20",
+      "relationship": "theological-divergence",
+      "scholarlyConsensus": "strong",
+      "basisNote": "Major theological shift centered on the doctrine of prophetic impeccability ('Ismah). In the Hebrew Bible, biblical heroes and high priests (including Aaron and David) are portrayed realistically with profound moral failures. In Islamic theology, major prophets like Harun (Aaron) are protected by God from major sins and polytheism (shirk); hence the Quranic narrative explicitly exonerates Aaron by introducing Al-Samiri as the instigator.",
+      "citations": [
+        "Gabriel Said Reynolds, *The Qur'an and the Bible: Text and Commentary* (Yale University Press, 2018), pp. 503–508.",
+        "W. Montgomery Watt, *Bell's Introduction to the Qur'an* (Edinburgh University Press, 1970).",
+        "Reuven Firestone, *Journeys in Holy Lands: The Evolution of the Abraham-Ishmael Legends in Islamic Exegesis* (SUNY Press, 1990)."
+      ]
+    }
+  ],
+  "receptionClaims": [
+    {
+      "id": "claim-jewish-aaron-frailty",
+      "tradition": "jewish",
+      "subject": "Aaron's Human Frailty and Atonement",
+      "text": "Rabbinic and Christian exegesis recognizes Aaron's grave error in yielding to mob pressure, while noting his subsequent repentance and God's merciful establishment of the Aaronic priesthood to offer daily sacrifices for Israel's atonement.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [
+        { "label": "Talmud Bavli, Sanhedrin 102a" },
+        { "label": "Midrash Tanchuma, Ki Tisa" }
+      ],
+      "refs": ["EXO 32:21", "DEU 9:20"],
+      "limit": "Deuteronomy 9:20 records that Yahweh was angry enough with Aaron to destroy him, but Moses interceded for Aaron as well."
+    },
+    {
+      "id": "claim-islamic-harun-ismah",
+      "tradition": "islamic",
+      "subject": "Prophetic Infallibility ('Ismah) of Harun",
+      "text": "Islamic theology holds that Harun (Aaron) as a designated prophet (Nabi) could never have committed idolatry or aided polytheism. Surah 20 and Surah 7:150 demonstrate that Harun opposed the rebellion and was preserved blameless, with full blame placed on As-Samiri.",
+      "basis": {
+        "axis": "textual",
+        "grade": "inferred"
+      },
+      "sources": [
+        { "label": "Abu Hayyan al-Gharnati, *Al-Bahr al-Muhit*" },
+        { "label": "Allamah Tabataba'i, *Tafsir al-Mizan* on Surah 20:90" }
+      ],
+      "refs": [],
+      "limit": "Scholars debate the exact historical identity of 'As-Samiri' (whether a reference to a Samaritan, a person from Samaria, or a proper name Zimri)."
+    }
+  ],
+  "provenance": {
+    "reviewStatus": "agent-reviewed",
+    "reviewer": "Antigravity Theologian & Sourcing Panel",
+    "rubricVersion": "parallels-v1.0",
+    "reviewedContentHash": "d6898915ccbaf90340a1522cfcac5d09e2ccf0a89283f3493f3fb16735f2a218",
+    "reviewedAt": "2026-08-31T12:00:00.000Z",
+    "reviewScope": "Exodus 32 and Qur'an 20 (Ta-Ha) comparative analysis on the Golden Calf, Aaron, and Al-Samiri."
+  }
+}

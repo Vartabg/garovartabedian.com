@@ -1,0 +1,145 @@
+{
+  "book": "PSA",
+  "chapter": 151,
+  "bookName": "Psalms",
+  "summary": "Seven verses in David's own voice — the youngest son, small among his brothers, tending sheep and making music with his hands, taken by God's angel from the flock and anointed. His tall, handsome brothers pass; the Lord does not take pleasure in them. David goes out to meet the Philistine who cursed Israel's God by his idols, draws Goliath's own sword, and removes the reproach from Israel.",
+  "whyItMatters": "This psalm is the story of 1 Samuel 16-17 compressed into a first-person poem — and its recovery history is remarkable: known for centuries only in Greek and Syriac, it was found in Hebrew in the Psalms scroll at Qumran (11QPs-a) in 1956, proving it circulated in Hebrew in antiquity. The little psalm at the end of the Psalter is older than anyone guessed.",
+  "context": {
+    "author": "David (by attribution); the Greek title-note is the translator's",
+    "audience": "Worshippers using the Greek Psalter",
+    "date": "Attributed to David's youth (c. 1025 BC); in Greek use by the 2nd century BC; Hebrew text found at Qumran",
+    "setting": "Bethlehem's fields and the valley of Elah",
+    "literaryForm": "Autobiographical psalm of thanksgiving"
+  },
+  "outline": [
+    {
+      "heading": "The youngest son",
+      "verses": "1-2",
+      "note": "Small among the brethren; hands that formed an instrument"
+    },
+    {
+      "heading": "The calling",
+      "verses": "3-4",
+      "note": "'Who shall tell my Lord? the Lord himself hears' — the angel takes him from the sheep"
+    },
+    {
+      "heading": "The brothers passed over",
+      "verses": "5",
+      "note": "Handsome and tall — but the Lord took no pleasure in them"
+    },
+    {
+      "heading": "The giant",
+      "verses": "6-7",
+      "note": "Cursed by idols; beheaded with his own sword"
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "151:1",
+      "text": "I was small among my brethren, and youngest in my father's house: I tended my father's sheep.",
+      "why": "The psalm opens where God's choices always begin — with the small and overlooked."
+    },
+    {
+      "ref": "151:3",
+      "text": "And who shall tell my Lord? the Lord himself, he himself hears.",
+      "why": "No messenger needed — the psalm's confidence that God hears directly, from the sheepfold."
+    },
+    {
+      "ref": "151:7",
+      "text": "But I drew his own sword, and beheaded him, and removed reproach from the children of Israel.",
+      "why": "The giant falls by his own weapon — the psalm's terse version of the sling, the stone, and the sword of 1 Samuel 17."
+    }
+  ],
+  "themes": [
+    "God chooses the small",
+    "Anointing over appearance",
+    "Reproach removed",
+    "Music before battle"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why isn't this psalm in my Bible?",
+      "answer": "The Hebrew Psalter has 150 psalms, and your Bible follows that count. Psalm 151 circulated in Greek (Septuagint) and Syriac Bibles as a supplement — the Vulgate prints it as an appendix 'in an appendix, that it may not be numbered among the prophets with the rest.' In 1956 a Hebrew copy was discovered in Qumran's Psalms scroll, showing the psalm existed in Hebrew in antiquity.",
+      "verseRefs": [
+        "151:1"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What is the note at the start of verse 1?",
+      "answer": "'This Psalm is a genuine one of David, though supernumerary, composed when he fought in single combat with Goliad' — that heading is the Greek translator's, not part of the poem. It defends the psalm's authenticity while admitting it stands outside the 150. 'Goliad' is Brenton's spelling of Goliath.",
+      "verseRefs": [
+        "151:1"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How does it relate to 1 Samuel 16-17?",
+      "answer": "It is the same story in David's voice: the youngest son shepherding (1 Samuel 16:11), chosen and anointed over his brothers (16:13), the brothers' appearance noted and passed over (16:7), and the Philistine cursed by his idols (17:43) beheaded with his own sword (17:51). The psalm is a worshipper's retelling — the memoir behind the narrative.",
+      "verseRefs": [
+        "151:1",
+        "151:5",
+        "151:7"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Why does the psalm stress that his hands made music?",
+      "answer": "Before David fought the giant, he tuned a psaltery — the shepherd-poet's hands are introduced first. The detail prepares the reader for the whole Psalter: the king who faces Goliath is the same man who plays for Saul and writes the church's songbook. Worship and warfare come from the same hands.",
+      "verseRefs": [
+        "151:2"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        2
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What does 'removed reproach' mean?",
+      "answer": "Goliath's daily challenge was a standing humiliation for Israel — and for Israel's God, whose armies the giant mocked. 'Removed reproach' means the shame was lifted; the same verb-family appears in the stories of Rachel and Hannah, where God takes away the disgrace of the defeated.",
+      "verseRefs": [
+        "151:7"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        7
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Psautery (psaltery)",
+      "def": "A stringed instrument played with the fingers — David's harp-like instrument."
+    },
+    {
+      "term": "Supernumerary",
+      "def": "Extra, beyond the numbered count — the 151st psalm outside the 150."
+    },
+    {
+      "term": "Qumran",
+      "def": "The Dead Sea site where Hebrew scrolls, including a Psalms scroll containing this psalm, were found from 1947 on."
+    }
+  ],
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-08-25",
+  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "sourceIds": [
+    "brenton"
+  ]
+}

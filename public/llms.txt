@@ -1,0 +1,89 @@
+# garovartabedian.com
+
+> A reading site for the Christian record: hosted public-domain Scripture in
+> 5 translations, the earliest Christian writings outside the New
+> Testament, and evidence-graded research rooms. Built and maintained by
+> Garo Vartabedian in Austin, Texas; the same site carries his portfolio and
+> ways to work with him.
+
+## What is actually here
+
+- **Scripture** — 86 books across 5 canon traditions (Protestant, Catholic, Eastern Orthodox, Ethiopian Tewahedo, Armenian Apostolic).
+  Translations: World English Bible (web, 2020, Public domain); King James Version (kjv, 1769, Public domain); Douay-Rheims (Challoner) (drb, 1899, Public domain); Brenton Septuagint (brenton, 1851, Public domain); R. H. Charles translations (charles, 1913, Public domain). Every chapter is a page; the text is served as
+  static JSON with no runtime API.
+- **Chapter guides** — orientation for a reader with no assumed background.
+  These are AI-authored at build against the hosted text and machine-checked
+  for verbatim quotation and reference resolution. They carry a review tier:
+  `agent-reviewed` means an automated editorial panel examined the prose;
+  `human-reviewed` means a named person signed off. Do not treat a guide as a
+  human-approved statement unless it says human-reviewed.
+- **Early Christian writings** — 23 texts in verbatim public-domain
+  translations, each with its translator and source URL. Plain-markdown
+  mirrors are listed below and are the preferred thing to quote.
+- **Research worlds** — Jesus, The Apostles, The Church, Angels & Demons, Who
+  Owns the Word?, How We Know. Claims in these rooms carry visible evidence
+  grades; where scholars disagree the pages name the disagreement rather than
+  choosing for the reader.
+- **Abrahamic parallel claim matrices** — 5 source-anchored comparative matrices
+  (Sacrifice of the Son, Creation & The Fall, Infancy & Childhood Signs, Golden Calf & Al-Samiri,
+  Sanctity of Human Life) comparing biblical, Second Temple Jewish, rabbinic, and Islamic textual
+  witnesses via deterministic slot-diffing.
+- **Cross-reference graph** — PageRank centrality, book-to-book citation flow, and hub-relayed
+  canonical path threads computed over 31k+ verses and 340k citations.
+- **Computed layers** — semantic search and chapter-neighbour links are
+  arithmetic over embeddings, labelled as computed rather than curated. They
+  indicate where to look; they are not claims about meaning.
+
+## Provenance and honesty posture
+
+- Machine-readable corpus health, including counts, review tiers, and every
+  validation gate: https://garovartabedian.com/meta/corpus-health.json
+- Source records for the hosted texts and research: https://garovartabedian.com/sources
+- Nothing on this site is generated at request time. Every dataset is built
+  ahead of time and committed, so what a crawler reads is what a visitor reads.
+
+## Early Christian writings — markdown mirrors
+
+- [The Didache](https://garovartabedian.com/early/md/didache.md) — c. AD 50–120. The church's oldest manual — the Two Ways, baptism, the meal, the traveling prophets.
+- [1 Clement](https://garovartabedian.com/early/md/1clement.md) — c. AD 95–96. Rome writes to a divided Corinth, within living memory of the apostles.
+- [2 Clement](https://garovartabedian.com/early/md/2clement.md) — c. AD 120–160. The earliest surviving Christian sermon — its lost ending recovered from a Constantinople library in 1873.
+- [The Epistle of Barnabas](https://garovartabedian.com/early/md/barnabas.md) — c. AD 70–132. An anonymous letter reading all of Hebrew Scripture as a cipher for Christ — bound with the New Testament in Codex Sinaiticus.
+- [Ignatius — To the Ephesians](https://garovartabedian.com/early/md/ignatius-ephesians.md) — c. AD 105–115. Written under guard on the road to martyrdom.
+- [Ignatius — To the Magnesians](https://garovartabedian.com/early/md/ignatius-magnesians.md) — c. AD 105–115. Urges unity under a bishop young enough that some doubted him.
+- [Ignatius — To the Trallians](https://garovartabedian.com/early/md/ignatius-trallians.md) — c. AD 105–115. Warns against the teaching that Christ only seemed to suffer.
+- [Ignatius — To the Romans](https://garovartabedian.com/early/md/ignatius-romans.md) — c. AD 105–115. The letter that begs Rome not to save him.
+- [Ignatius — To the Philadelphians](https://garovartabedian.com/early/md/ignatius-philadelphians.md) — c. AD 105–115. A plea against schism, written from personal experience of one.
+- [Ignatius — To the Smyrnaeans](https://garovartabedian.com/early/md/ignatius-smyrnaeans.md) — c. AD 105–115. The first time anyone wrote the words "the catholic Church."
+- [Ignatius — To Polycarp](https://garovartabedian.com/early/md/ignatius-polycarp.md) — c. AD 105–115. One bishop to another, weeks from death.
+- [Polycarp — To the Philippians](https://garovartabedian.com/early/md/polycarp-philippians.md) — c. AD 110–140. The disciple of John writes to Paul's church.
+- [The Fragments of Papias](https://garovartabedian.com/early/md/papias.md) — c. AD 95–140 (as quoted by later writers). The lost work of a bishop who knew the apostles' hearers — surviving as quotations, including the earliest account of how Mark and Matthew were written.
+- [The Martyrdom of Polycarp](https://garovartabedian.com/early/md/martyrdom-polycarp.md) — c. AD 155–160. The earliest martyrdom account outside the New Testament.
+- [The Fragment of Quadratus](https://garovartabedian.com/early/md/quadratus.md) — c. AD 124–125. The oldest Christian apology, to the emperor Hadrian — one sentence, saved by Eusebius.
+- [The Epistle to Diognetus](https://garovartabedian.com/early/md/diognetus.md) — c. AD 130–200. An anonymous apology to a curious pagan — Christians in the world as the soul in the body — from a manuscript that burned in 1870.
+- [Epistula Apostolorum](https://garovartabedian.com/early/md/epistula-apostolorum.md) — 2nd century (c. AD 120–170). The risen Christ in dialogue with the apostles — with the manuscript's own wounds left visible.
+- [Third Epistle to the Corinthians](https://garovartabedian.com/early/md/3corinthians.md) — c. AD 160–190. The apocryphal exchange between the Corinthian elders and Paul — their alarm at teachers who denied the resurrection, and Paul's reply defending the resurrection of the flesh. Part of the Acts of Paul.
+- [The Abgar Correspondence](https://garovartabedian.com/early/md/abgar.md) — c. AD 300–325 (as recorded by Eusebius). A king's letter to Jesus, and the reply tradition preserved — cherished in Syriac and Armenian memory.
+- [The Ascension of Isaiah](https://garovartabedian.com/early/md/ascension-isaiah.md) — c. AD 70–150 (composite, assembled by the 2nd century). The prophet sees the Beloved descend through seven heavens in disguise — and rise again with every heaven watching.
+- [The Book of Enoch (1 Enoch)](https://garovartabedian.com/early/md/enoch.md) — Composed in stages, c. 300–100 BC. The oldest book in this room — fallen angels, the Son of Man, and the verse Jude quotes by name.
+- [The Shepherd of Hermas](https://garovartabedian.com/early/md/shepherd-hermas.md) — c. AD 90–150 (composed in stages). A Roman book of visions and parables — the Church as an aging woman, one more repentance for the baptized, and an incomplete place in Codex Sinaiticus just after the New Testament.
+- [The Apocalypse of Paul](https://garovartabedian.com/early/md/apocalypse-paul.md) — c. AD 380–400. Paul's tour of heaven and hell — the text behind Dante's Inferno.
+
+## About the author
+
+- Machine-readable claims with evidence links: https://garovartabedian.com/meta/profile-facts.json
+- Work with Garo: https://garovartabedian.com/services
+- Discuss a project: https://garovartabedian.com/contact
+- Work: Merge Monitor (https://www.linkedin.com/feed/update/urn:li:activity:7504288421956247552/), Agent Telemetry & Memory (https://garovartabedian.com/work/telemetry), JobPilot (https://garovartabedian.com/work/jobpilot), Accessibility is a product feature (https://garovartabedian.com/work/accessibility), garovartabedian.com (https://garovartabedian.com/work/garovartabedian), EYE (https://garovartabedian.com/work/eye), atxbro.com (https://www.atxbro.com)
+- Full-time employment profile: https://garovartabedian.com/hire
+- Résumé: https://garovartabedian.com/resume · PDF: https://garovartabedian.com/Garo-Vartabedian-Resume.pdf
+
+## Reading this site programmatically
+
+- Sitemap: https://garovartabedian.com/sitemap.xml
+- Scripture chapter route: https://garovartabedian.com/scriptures/{tradition}/{BOOK}/{chapter}
+- Scripture text as JSON: https://garovartabedian.com/scriptures/text/{translation}/{BOOK}.json
+- Chapter guide as JSON: https://garovartabedian.com/scriptures/guides/{BOOK}/{chapter}.json
+- Early text as JSON: https://garovartabedian.com/early/texts/{id}.json
+- Abrahamic parallel matrix as JSON: https://garovartabedian.com/parallels/{id}.json
+- Parallel rights manifest as JSON: https://garovartabedian.com/parallels/rights-manifest.json
+- Cross-reference graph as JSON: https://garovartabedian.com/scriptures/graph/graph.json

@@ -1,0 +1,525 @@
+@import "tailwindcss";
+
+/* Core: tokens, layout, portfolio skins, wayfinding, glossary, and the
+   accessible-type/paper-texture rules shared with the clean pages.
+   World-only CSS (worlds-shared.css + each world's own stylesheet) loads
+   from that world's layout instead, so /hire, /about, /resume, /work,
+   /services, and /contact skip it entirely. */
+@import "./styles/core.css";
+/* The shared control skin — every .ui-button on the site takes its surface,
+   focus ring, and hit target from here, so it has to load globally rather than
+   per-world. The 39-branch auto-merge in f72f5cc resolved this file without it,
+   which left every button on the site painted with nothing; typecheck, lint and
+   build all pass in that state, and only tests/e2e/buttons.spec.ts noticed. */
+@import "./styles/controls.css";
+@import "./styles/find.css";
+@import "./styles/reading.css";
+
+:root {
+  color-scheme: light;
+  --font-reading: var(--font-atkinson), Verdana, Arial, sans-serif;
+  --font-interface: var(--font-atkinson), Verdana, Arial, sans-serif;
+  --font-display: var(--font-atkinson), Verdana, Arial, sans-serif;
+  --font-mono: var(--font-atkinson-mono), ui-monospace, monospace;
+  --font-sans: var(--font-reading);
+}
+
+html[data-a11y-theme="system"] {
+  color-scheme: light dark;
+}
+
+html[data-a11y-theme="dark"] {
+  color-scheme: dark;
+  --vellum: #17110c;
+  --folio: #211912;
+  --soot: #eedfc2;
+  --muted-ink: #b5a68a;
+  --lapis: #93b3e6;
+  --night-lapis: #b9cdf0;
+  --rubric: #e2684e;
+  --antique-gold: #d8b45c;
+  --deep-gold: #e3c77a;
+  --plate-filter: grayscale(1) sepia(0.45) contrast(1.05) brightness(0.82);
+  --plate-blend: screen;
+  --bg: var(--vellum);
+  --paper: var(--vellum);
+  --surface: var(--folio);
+  --ink: var(--soot);
+  --muted: var(--muted-ink);
+  --line: #4a3b2b;
+  --accent: var(--lapis);
+  --accent-deep: var(--night-lapis);
+  --accent-ink: #17110c;
+  --night: var(--night-lapis);
+  --gold: var(--antique-gold);
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-a11y-theme="system"] {
+    --vellum: #17110c;
+    --folio: #211912;
+    --soot: #eedfc2;
+    --muted-ink: #b5a68a;
+    --lapis: #93b3e6;
+    --night-lapis: #b9cdf0;
+    --rubric: #e2684e;
+    --antique-gold: #d8b45c;
+    --deep-gold: #e3c77a;
+    --plate-filter: grayscale(1) sepia(0.45) contrast(1.05) brightness(0.82);
+    --plate-blend: screen;
+    --bg: var(--vellum);
+    --paper: var(--vellum);
+    --surface: var(--folio);
+    --ink: var(--soot);
+    --muted: var(--muted-ink);
+    --line: #4a3b2b;
+    --accent: var(--lapis);
+    --accent-deep: var(--night-lapis);
+    --accent-ink: #17110c;
+    --night: var(--night-lapis);
+    --gold: var(--antique-gold);
+  }
+}
+
+html[data-a11y-font="dyslexic"] {
+  --font-reading: var(--font-open-dyslexic), Verdana, Arial, sans-serif;
+  --font-interface: var(--font-open-dyslexic), Verdana, Arial, sans-serif;
+  --font-display: var(--font-open-dyslexic), Verdana, Arial, sans-serif;
+}
+
+html[data-a11y-font="system"] {
+  --font-reading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-interface: var(--font-reading);
+  --font-display: var(--font-reading);
+}
+
+html[data-a11y-size="large"] {
+  font-size: 112.5%;
+}
+
+html[data-a11y-size="largest"] {
+  font-size: 125%;
+}
+
+html,
+body {
+  font-family: var(--font-reading);
+}
+
+body :where(code, pre, kbd, samp) {
+  font-family: var(--font-mono);
+  font-variant-ligatures: none;
+}
+
+body :where(h1, h2, h3, blockquote) {
+  font-family: var(--font-display);
+}
+
+body :where(nav, nav *, button, button *, input, select, textarea, label, label *, summary, summary *, .kicker, .st-label) {
+  font-family: var(--font-interface);
+}
+
+html[data-a11y-spacing="spacious"]
+  body
+  :where(p, li, dd, dt, blockquote, figcaption) {
+  line-height: var(--reading-leading, 1.85) !important;
+  letter-spacing: 0.04em !important;
+  word-spacing: 0.08em !important;
+}
+
+html[data-a11y-spacing="spacious"] body :where(p + p) {
+  margin-top: 1.5em;
+}
+
+html[data-a11y-contrast="high"] body {
+  --muted: var(--ink);
+  --muted-ink: var(--soot);
+  --line: color-mix(in srgb, var(--ink) 58%, transparent);
+}
+
+html[data-a11y-contrast="high"]
+  body
+  :where(.scr-meta, .world-cite, small, figcaption) {
+  opacity: 1;
+}
+
+html[data-a11y-links="underline"]
+  body
+  :where(p, li, dd, blockquote, figcaption)
+  a,
+html[data-a11y-links="underline"] body a.textlink {
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.18em;
+}
+
+html[data-a11y-motion="reduce"] {
+  scroll-behavior: auto !important;
+}
+
+html[data-a11y-motion="reduce"] *,
+html[data-a11y-motion="reduce"] *::before,
+html[data-a11y-motion="reduce"] *::after {
+  scroll-behavior: auto !important;
+  animation-delay: 0ms !important;
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-delay: 0ms !important;
+  transition-duration: 0.01ms !important;
+}
+
+/* Site-wide reading controls remain outside each world's visual skin so the
+   panel stays predictable while the surrounding palette changes. */
+.a11y-menu {
+  position: relative;
+  z-index: 220;
+}
+
+.a11y-trigger {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 221;
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0;
+  border: 1px solid var(--night-lapis);
+  border-radius: 50%;
+  background: var(--folio);
+  color: var(--night-lapis);
+  box-shadow: 0 10px 30px rgb(24 50 79 / 24%);
+  cursor: pointer;
+}
+
+.a11y-trigger:hover,
+.a11y-trigger[aria-expanded="true"] {
+  background: var(--night-lapis);
+  color: var(--folio);
+}
+
+.a11y-trigger span {
+  font-family: var(--font-atkinson), Verdana, Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.a11y-panel {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: calc(5rem + env(safe-area-inset-bottom));
+  z-index: 220;
+  display: grid;
+  width: min(26rem, calc(100vw - 2rem));
+  max-height: min(44rem, calc(100dvh - 7rem));
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--lapis);
+  background: var(--folio);
+  color: var(--soot);
+  box-shadow: 0 20px 60px rgb(24 32 40 / 28%);
+  overscroll-behavior: contain;
+}
+
+.a11y-panel[hidden] {
+  display: none;
+}
+
+.a11y-panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.a11y-panel-head p {
+  margin: 0 0 0.15rem;
+  color: var(--lapis);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.a11y-panel-head h2 {
+  margin: 0;
+  color: var(--soot);
+  font-family: var(--font-atkinson), Verdana, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.a11y-close {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--soot);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.a11y-intro {
+  margin: 0.7rem 0 1rem;
+  color: var(--muted-ink);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.a11y-group {
+  min-width: 0;
+  margin: 0;
+  padding: 0.9rem 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.a11y-group legend {
+  padding: 0 0.35rem 0 0;
+  color: var(--soot);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.a11y-theme-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+.a11y-theme-option {
+  display: grid;
+  grid-template-columns: 1.35rem minmax(0, 1fr);
+  gap: 0.45rem;
+  align-items: center;
+  min-width: 0;
+  min-height: 4rem;
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  text-align: start;
+  cursor: pointer;
+}
+
+.a11y-theme-option[aria-pressed="true"] {
+  border-color: var(--lapis);
+  box-shadow: inset 0 0 0 1px var(--lapis);
+}
+
+.a11y-theme-option > span:last-child {
+  display: grid;
+  min-width: 0;
+}
+
+.a11y-theme-option strong {
+  font-size: 0.82rem;
+  line-height: 1.2;
+}
+
+.a11y-theme-option small {
+  margin-top: 0.15rem;
+  color: var(--muted-ink);
+  font-size: 0.65rem;
+  line-height: 1.25;
+}
+
+.a11y-theme-swatch {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #74787c;
+  border-radius: 50%;
+}
+
+.a11y-theme-option--system .a11y-theme-swatch {
+  background: linear-gradient(90deg, #e9d9b4 0 50%, #17110c 50%);
+}
+
+.a11y-theme-option--light .a11y-theme-swatch {
+  background: #e9d9b4;
+}
+
+.a11y-theme-option--dark .a11y-theme-swatch {
+  background: #17110c;
+}
+
+.a11y-font-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+.a11y-font-option {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.a11y-font-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.a11y-font-option > span {
+  display: grid;
+  align-content: center;
+  min-height: 4.4rem;
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.a11y-font-option input:checked + span {
+  border-color: var(--lapis);
+  box-shadow: inset 0 0 0 1px var(--lapis);
+}
+
+.a11y-font-option input:focus-visible + span {
+  outline: 3px solid var(--lapis);
+  outline-offset: 2px;
+}
+
+.a11y-font-option strong,
+.a11y-font-option small {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.a11y-font-option strong {
+  color: var(--soot);
+  font-size: 0.86rem;
+  line-height: 1.2;
+}
+
+.a11y-font-option small {
+  margin-top: 0.18rem;
+  color: var(--muted-ink);
+  font-size: 0.65rem;
+  line-height: 1.25;
+}
+
+.a11y-font-option--readable > span {
+  font-family: var(--font-atkinson), Verdana, Arial, sans-serif;
+}
+
+.a11y-font-option--dyslexic > span {
+  font-family: var(--font-open-dyslexic), Verdana, Arial, sans-serif;
+}
+
+.a11y-font-option--system > span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.a11y-size-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.a11y-size-options button,
+.a11y-reset {
+  min-height: 2.75rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--soot);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.a11y-size-options button[aria-pressed="true"] {
+  border-color: var(--lapis);
+  background: var(--lapis);
+  color: var(--folio);
+}
+
+.a11y-toggles {
+  display: grid;
+  margin-top: 0.9rem;
+  border-top: 1px solid var(--line);
+}
+
+.a11y-toggles label {
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  gap: 0.7rem;
+  align-items: start;
+  min-height: 3.5rem;
+  padding: 0.65rem 0.15rem;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.a11y-toggles input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.15rem 0 0;
+  accent-color: var(--lapis);
+}
+
+.a11y-toggles span {
+  display: grid;
+}
+
+.a11y-toggles strong {
+  color: var(--soot);
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.a11y-toggles small {
+  color: var(--muted-ink);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.a11y-reset {
+  justify-self: start;
+  margin-top: 0.9rem;
+  padding: 0.55rem 0.8rem;
+  background: transparent;
+  color: var(--lapis);
+}
+
+.a11y-reset:hover {
+  background: color-mix(in srgb, var(--lapis) 7%, transparent);
+}
+
+@media (max-width: 520px) {
+  .a11y-panel {
+    right: 0.75rem;
+    bottom: calc(4.75rem + env(safe-area-inset-bottom));
+    width: calc(100vw - 1.5rem);
+    max-height: calc(100dvh - 6rem);
+  }
+
+  .a11y-trigger {
+    right: 0.75rem;
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* The Scripture chapter reader has its own thumb bar. Lift the site-wide
+   control above it so neither touch target overlaps the other. */
+body:has(.scr-bar) .a11y-trigger {
+  bottom: calc(4rem + env(safe-area-inset-bottom));
+}
+
+body:has(.scr-bar) .a11y-panel {
+  bottom: calc(8rem + env(safe-area-inset-bottom));
+  max-height: calc(100dvh - 9rem);
+}

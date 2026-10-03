@@ -1,0 +1,239 @@
+{
+  "book": "GEN",
+  "chapter": 24,
+  "bookName": "Genesis",
+  "summary": "Abraham sends his senior servant to his relatives to seek a wife for Isaac, while explicitly allowing the woman to refuse the journey. At a well the servant meets Rebekah, whose offer to water his camels matches his prayer; he recounts the episode to her family, they consent, Rebekah herself says she will go, and she travels to become Isaac’s wife.",
+  "whyItMatters": "The long repetition makes the servant’s interpretation of events visible while also preserving Rebekah’s direct answer at the decisive departure. The match transfers the family story after Sarah’s death without reducing Rebekah to an unnamed prize.",
+  "context": {
+    "author": "Genesis names no historical writer. Jewish and Christian tradition associates the Torah with Moses; the book briefing describes older traditions shaped into a final literary form, without a settled account of every stage.",
+    "audience": "The book addresses Israel through a story of shared human origins and the family from whom Israel traces its ancestry; no single first audience is named in this chapter.",
+    "date": "The narrated events belong to primeval or ancestral time, not to a securely dated writing event. Major stages of Genesis are often placed across the monarchic to Persian periods, with exact models and dates debated.",
+    "setting": "Abraham’s household, the city of Nahor in Mesopotamia, its well and family home, and Isaac’s field in the South.",
+    "literaryForm": "Marriage-journey narrative with oath, prayer, well encounter, repeated report, household negotiation, and meeting."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Sarah has died and been buried in a purchased cave. Abraham’s concern now turns to the future of Isaac’s household.",
+      "verseRefs": [
+        "23:19-20",
+        "24:1-4"
+      ]
+    },
+    "here": {
+      "text": "Watch the servant’s prayer and its fulfillment, then compare his retelling with the earlier scene and attend to Rebekah’s own answer.",
+      "verseRefs": [
+        "24:10-27",
+        "24:33-58"
+      ]
+    },
+    "after": {
+      "text": "Abraham’s death and Ishmael’s line are recorded before the account turns to Isaac, Rebekah, and their twins.",
+      "verseRefs": [
+        "25:1-26"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Oath and limits of the mission",
+      "verses": "1-9",
+      "note": "Abraham asks for a relative as Isaac’s wife but releases the servant if she will not come."
+    },
+    {
+      "heading": "Prayer and encounter at the well",
+      "verses": "10-21",
+      "note": "The servant seeks a sign of hospitality; Rebekah gives water to him and his camels."
+    },
+    {
+      "heading": "Identity, lodging, and welcome",
+      "verses": "22-33",
+      "note": "Gifts and family identification lead to hospitality, but the servant insists on speaking first."
+    },
+    {
+      "heading": "Servant retells the mission",
+      "verses": "34-49",
+      "note": "He recounts Abraham’s wealth, oath, prayer, and Rebekah’s response to her family."
+    },
+    {
+      "heading": "Family agrees and gifts are given",
+      "verses": "50-54",
+      "note": "Laban and Bethuel consent, and gifts accompany the agreement."
+    },
+    {
+      "heading": "Rebekah decides to go",
+      "verses": "55-61",
+      "note": "Her family asks her directly; she answers yes and departs with a blessing and attendants."
+    },
+    {
+      "heading": "Meeting Isaac",
+      "verses": "62-67",
+      "note": "Rebekah sees Isaac, the servant reports, and Isaac marries and loves her."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "24:8",
+      "text": "If the woman isn’t willing to follow you, then you shall be clear from this oath to me. Only you shall not bring my son there again.”",
+      "why": "The servant’s oath is explicitly limited by the woman’s willingness to travel."
+    },
+    {
+      "ref": "24:19",
+      "text": "When she had finished giving him a drink, she said, “I will also draw for your camels, until they have finished drinking.”",
+      "why": "Rebekah’s offer to water the camels becomes the decisive sign in the well scene."
+    },
+    {
+      "ref": "24:58",
+      "text": "They called Rebekah, and said to her, “Will you go with this man?” She said, “I will go.”",
+      "why": "Rebekah’s own “I will go” is the clearest direct answer to the proposed journey."
+    }
+  ],
+  "themes": [
+    "oath and willingness",
+    "hospitality at the well",
+    "Rebekah’s action",
+    "servant’s retelling",
+    "marriage after mourning"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What exactly is the servant asked to do?",
+      "answer": "Abraham tells his senior servant to find Isaac a wife among his relatives rather than nearby Canaanite families. He forbids taking Isaac back to the old land and says the servant is released if the woman will not follow.",
+      "verseRefs": [
+        "24:1-9"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Does the story leave Rebekah without any choice?",
+      "answer": "The mission is arranged by Abraham, his servant, and Rebekah’s family, and gifts are exchanged. Yet Abraham anticipates her refusal and, when departure is disputed, her family asks her directly; she says she will go. Her stated choice matters without erasing the social pressures around it.",
+      "verseRefs": [
+        "24:5-8",
+        "24:50-61"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        5,
+        50
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does putting a hand under the thigh mark?",
+      "answer": "It is the bodily gesture Abraham requires as the servant swears by Yahweh concerning the marriage mission. The chapter reports the act but does not explain a further symbolic meaning for the gesture.",
+      "verseRefs": [
+        "24:2-9"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        2
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Why does the servant watch Rebekah silently?",
+      "answer": "She has offered water to him and all the camels, matching his prayer, but he waits to learn whether his journey has truly succeeded. He then asks her family identity and whether there is lodging.",
+      "verseRefs": [
+        "24:12-27"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        12
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "How does the servant interpret the meeting?",
+      "answer": "He prays for success and later worships Yahweh, saying he has been led to Abraham’s relatives. That is his expressed interpretation of the encounter, which the narrative presents through both action and repeated testimony.",
+      "verseRefs": [
+        "24:12-15",
+        "24:22-27",
+        "24:42-48"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        12,
+        22,
+        42
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Why tell the well story a second time?",
+      "answer": "The servant retells Abraham’s oath and the encounter so Rebekah’s family can respond to the proposed marriage. His report is part of the negotiation rather than an entirely new trip or a separate woman at a second well.",
+      "verseRefs": [
+        "24:33-51"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        33
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Is the servant named Eliezer in this chapter?",
+      "answer": "No. Genesis 15 names an Eliezer in Abram’s household, but this chapter calls its traveler Abraham’s senior servant without giving his personal name. Equating them is possible speculation, not a fact stated here.",
+      "verseRefs": [
+        "24:1-10",
+        "24:34"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1,
+        34
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What is Beer Lahai Roi in Isaac’s arrival?",
+      "answer": "It is the named place from whose direction Isaac comes before he meets Rebekah. The well appeared earlier in Hagar’s story, but this chapter does not explain Isaac’s reason for being there.",
+      "verseRefs": [
+        "24:62-67"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        62
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "oath",
+      "def": "The binding pledge the senior servant makes to Abraham about the marriage mission."
+    },
+    {
+      "term": "pitcher",
+      "def": "Rebekah’s water vessel, which she lowers to give the servant a drink and uses while drawing for the camels."
+    },
+    {
+      "term": "veil",
+      "def": "The covering Rebekah takes when she learns the approaching man is Isaac."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "911ab830af242bde50a144998a1bc520dd0e6512aef81182e3f3d2df2ec37d5e",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

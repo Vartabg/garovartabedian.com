@@ -1,0 +1,381 @@
+{
+  "book": "JUD",
+  "bookName": "Jude",
+  "oneLine": "An urgent warning about people who misuse grace, ending with a call to perseverance, mercy, and confidence in God's keeping power.",
+  "orient": "Jude says a planned letter about shared salvation has become an urgent appeal to defend the faith. The writer accuses people within the community of corrupt conduct, destructive speech, and self-interest, then places them alongside remembered examples of judgment. The accusations are forceful, but they do not give a detached account of an identifiable sect. Read through to the final instructions: the beloved readers are to build one another up, pray, remain in God's love, and show discerning mercy.",
+  "whereYouAre": "The letter addresses Christians who are expected to recognize Israel's scriptures and other Jewish traditions. The disputed people share the community's love feasts, so the danger is portrayed as present within its life. No city or congregation is named, and familiarity with these stories does not establish the readers' ethnic background.",
+  "facts": {
+    "writtenBy": "The writer names himself Jude, servant of Jesus Christ and brother of James. Tradition connects him with Jesus's family; composition by a later writer in his name is also proposed.",
+    "writtenWhen": "Often dated to the later first century, with some proposals extending into the early second; the date remains uncertain and tied to authorship.",
+    "writtenFor": "Believers addressed as called and kept for Jesus Christ, facing the people denounced in verse 4. Their community or communities are not named.",
+    "place": "Neither the place of writing nor the destination is identified.",
+    "covers": "Greeting and occasion; examples of judgment and accusations; remembrance, perseverance, and mercy; a closing declaration of praise.",
+    "size": "One chapter, 25 verses, and 604 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "usccb-jude-intro",
+      "scriptural-parallels"
+    ],
+    "writtenWhen": [
+      "usccb-jude-intro"
+    ],
+    "writtenFor": [
+      "hosted-web"
+    ],
+    "place": [
+      "hosted-web",
+      "usccb-jude-intro"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "Concentrated exhortation: an affectionate address frames sharp accusations, remembered examples, repeated descriptions, and vivid images. The formal closing praise broadens the ending beyond the immediate conflict.",
+    "spokenWorld": "The readers inhabit a Christian community whose teaching draws on Jewish scripture and traditions about angels, Moses, and Enoch. Those inherited stories help explain the letter's Greek argument; they do not establish a Hebrew original or one language spoken by every reader.",
+    "readerSignal": "Listen for the repeated descriptions of these people, then for the turn to you, beloved in verses 17 and 20. The shift identifies what the audience is actually asked to do after hearing the accusations.",
+    "englishLayer": "The World English Bible reads the Lord in verse 5, where the Douay-Rheims reads Jesus. In verses 22–23, WEB distinguishes two groups receiving help, while Douay-Rheims has three. These differences include variant readings, not just older and newer English. The Greek examples follow the SBL Greek New Testament, a modern critical edition whose readings sometimes differ from those reflected in WEB.",
+    "textualHistory": [
+      {
+        "label": "A Greek letter drawing on Jewish traditions",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Greek verbal echoes, repeated addresses, and linked clauses organize the letter. Its argument recalls scriptural figures and also invokes traditions associated with Enoch and Moses. The language of the letter and the earlier histories of those traditions are distinct questions.",
+        "sourceIds": [
+          "greek-jude",
+          "hosted-web",
+          "usccb-jude-notes"
+        ]
+      },
+      {
+        "label": "Variant readings in English comparison",
+        "language": "English translations of the New Testament",
+        "role": "translation",
+        "description": "The World English Bible, King James Version, and Douay-Rheims preserve differences in wording and sentence structure. Verse 5 varies in the name of the one who saved Israel from Egypt, and verses 22–23 vary in the instructions to help others. A comparison must first establish which reading each edition translates.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-jude",
+          "usccb-jude-notes"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Keeping, abandoning, and being kept",
+        "original": "τηρέω — tēreō — keep, preserve, reserve",
+        "explanation": "The letter opens with believers kept for Jesus Christ. Angels who failed to keep their own domain are themselves kept for judgment; darkness is reserved for the wandering stars; the readers must keep themselves in God's love. The repeated verb connects protection, failure, judgment, and responsibility without making those uses identical.",
+        "translationNote": "English can alternate between keep, preserve, and reserve where Greek repeats the same verb. Verse 6 makes the reversal especially audible: they did not keep, and he has kept. The closing promise to guard against stumbling belongs to the same theme but uses another verb.",
+        "caution": "The safeguarding verb in verse 24 is phylassō, not tēreō. WEB's keep building in verse 20 also should not be counted as another occurrence of tēreō simply because English uses keep.",
+        "refs": [
+          "1:1",
+          "1:6",
+          "1:13",
+          "1:20",
+          "1:21",
+          "1:24"
+        ],
+        "sourceIds": [
+          "greek-jude",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Clusters of examples, then a rush of images",
+        "original": "Κάϊν / Βαλαὰμ / Κόρε — Cain / Balaam / Korah; οὗτοι — these people",
+        "explanation": "The warnings first move through Israel after the exodus, the angels, and Sodom, Gomorrah, and their neighboring cities. Cain, Balaam, and Korah later form another compact group. Waterless clouds, fruitless trees, wild waves, and wandering stars then accumulate around the writer's opponents. The repeated these people repeatedly brings earlier examples back into the present dispute.",
+        "translationNote": "Read the successive clauses aloud. English paragraphing can make the passage look like a series of unrelated observations, while the repeated constructions and piling images press one sustained accusation. Each image contributes something: frustrated promise, barrenness, shame, or an ominous destination.",
+        "caution": "These are comparisons within a polemic, not episodes in a single chronology or independent proof of every accusation. Several groups have three members, but the imagery should not be forced into a universal pattern of threes.",
+        "refs": [
+          "1:5",
+          "1:6",
+          "1:7",
+          "1:8",
+          "1:11",
+          "1:12",
+          "1:13",
+          "1:16",
+          "1:19"
+        ],
+        "sourceIds": [
+          "greek-jude",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "The urgent appeal to contend for the faith",
+        "original": "ἐπαγωνίζεσθαι … τῇ ἅπαξ παραδοθείσῃ … πίστει — epagōnizesthai … tē hapax paradotheisē … pistei — contend for the faith once handed on",
+        "explanation": "Verse 3 joins an emphatic appeal to struggle with something received: the faith handed to the holy ones. The writer presents the current misuse of grace as a threat to that inheritance. The opening change of purpose gives urgency to everything that follows, but the concrete response emerges most fully in the closing instructions.",
+        "translationNote": "WEB's contend earnestly conveys the force of the Greek verb. Once for all gives weight to the handing-on of faith. Later commands to build up, pray, keep, wait, have compassion, and rescue show how the letter directs that urgency into the community's conduct.",
+        "caution": "The struggle metaphor does not itself command physical force. Nor does once for all date the completion of a biblical canon: its grammatical focus here is the faith that was handed on.",
+        "refs": [
+          "1:3",
+          "1:4",
+          "1:20",
+          "1:21",
+          "1:22",
+          "1:23"
+        ],
+        "sourceIds": [
+          "greek-jude",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Beloved readers and the work of mercy",
+        "original": "ἀγαπητοί / ἔλεος — agapētoi / eleos — beloved / mercy",
+        "explanation": "Beloved marks the appeal in verse 3 and the direct turns to the readers in verses 17 and 20. Mercy appears in the opening blessing, the expectation of Jesus's mercy, and the help readers are to give others. In Greek verses 20–21, building, praying, and waiting cluster around the command to keep yourselves in God's love. Perseverance is expressed through these connected practices.",
+        "translationNote": "An English version may give these actions separate commands or retain participial wording. In verses 22–23, textual differences also affect who is to receive mercy, correction, or rescue and where with fear belongs. Read the actual sentence before assigning each action to a fixed class of people.",
+        "caution": "WEB has two groups in verses 22–23; the SBL Greek text and Douay-Rheims distinguish three, with additional differences in the verbs. The letter's severity toward its opponents should not eclipse the mercy required of its readers.",
+        "refs": [
+          "1:2",
+          "1:3",
+          "1:17",
+          "1:20",
+          "1:21",
+          "1:22",
+          "1:23"
+        ],
+        "sourceIds": [
+          "greek-jude",
+          "hosted-web",
+          "hosted-editions",
+          "usccb-jude-notes"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words that connect the warning and the appeal",
+    "examples": [
+      {
+        "ref": "1:3",
+        "form": "ἐπαγωνίζεσθαι — epagōnizesthai",
+        "meaning": "contend or struggle for",
+        "why": "The appeal concerns the received faith. Its force must be read alongside the later instructions for prayer, perseverance, compassion, and rescue rather than supplied with an unspecified method of combat.",
+        "sourceIds": [
+          "greek-jude",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:6",
+        "form": "τηρήσαντας / τετήρηκεν — tērēsantas / tetērēken",
+        "meaning": "having kept / has kept",
+        "why": "The first form is negated: the angels did not keep their domain. The second describes God's keeping them for judgment. Repetition turns their failure to keep into the condition of being kept.",
+        "sourceIds": [
+          "greek-jude",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:12",
+        "form": "σπιλάδες — spilades",
+        "meaning": "reefs; rendered spots or blemishes in other versions",
+        "why": "WEB pictures dangerous hidden reefs at the love feasts, while KJV and Douay-Rheims have spots. This lexical difference changes the immediate picture; the surrounding accusations of self-serving participation remain central in either rendering.",
+        "sourceIds": [
+          "greek-jude",
+          "hosted-editions",
+          "usccb-jude-notes"
+        ]
+      },
+      {
+        "ref": "1:24",
+        "form": "φυλάξαι — phylaxai",
+        "meaning": "to guard or keep safe",
+        "why": "The closing praise credits God with guarding against stumbling and presenting people faultless with joy. This safeguarding word is related in meaning to the earlier keeping motif, but it is a different Greek verb. WEB says keep them here; KJV and the SBL Greek reading address you.",
+        "sourceIds": [
+          "greek-jude",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A letter opening into warning and exhortation, ending in praise",
+    "how": "Follow the movement from the reason for writing to remembered examples, accusations, direct counsel, and doxology. Distinguish what Jude says about his opponents from what he commands the readers to do. The final praise answers the preceding danger with confidence in God's ability to guard."
+  },
+  "cast": [
+    {
+      "name": "Jude",
+      "who": "The named writer, identifying himself through service to Jesus Christ and kinship with James."
+    },
+    {
+      "name": "The beloved readers",
+      "who": "Believers addressed as called and kept, urged to remain faithful and help others."
+    },
+    {
+      "name": "The people denounced",
+      "who": "Participants in the community's meals whom Jude accuses of misusing grace, rejecting authority, causing divisions, and pursuing gain. Their own account is not preserved in the letter."
+    },
+    {
+      "name": "Michael and the devil",
+      "who": "Figures in the remembered dispute over Moses's body, used to contrast Michael's restraint with abusive speech."
+    },
+    {
+      "name": "Cain, Balaam, Korah, and Enoch",
+      "who": "Figures invoked as examples or witnesses in the argument, not participants in one continuous narrative."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Warning, mercy, and the God who keeps",
+      "chapters": "1",
+      "precise": "1:1–25",
+      "note": "Greeting and occasion in verses 1–4 lead into examples, accusations, and vivid images in 5–16. Verses 17–23 turn to remembrance, perseverance, and help for others; verses 24–25 conclude with praise."
+    }
+  ],
+  "purpose": "Jude defends the community's received faith against a misuse of grace and urges readers to persevere through prayer, mutual care, and discerning mercy. The warning culminates in confidence that God can guard and present the faithful with joy.",
+  "snags": [
+    {
+      "snag": "The familiar names do not all come from familiar biblical stories.",
+      "help": "Jude 14–15 quotes 1 Enoch 1:9. The dispute over Moses's body in verse 9 belongs to a tradition commonly associated with the Assumption of Moses, rather than an episode narrated in Deuteronomy. Jude uses these traditions to support his argument; citing them does not by itself settle the status of an entire work."
+    },
+    {
+      "snag": "Two English Bibles can give different instructions in the same verse.",
+      "help": "At verse 5, WEB and KJV read the Lord, while Douay-Rheims and the SBL Greek text read Jesus. Verses 22–23 vary in both verbs and the division into two or three groups. Other differences include sanctified or beloved in verse 1, them or you in verse 24, and clauses in the final praise. Some differences reflect variant readings; others involve translation choices."
+    },
+    {
+      "snag": "The opponent descriptions can sound like a complete history of a sect.",
+      "help": "They are Jude's accusations. He gives no group name and no statement written by the opponents themselves. Terms such as dreamers and the charge that they lack the Spirit should be read within his argument before being used to reconstruct their beliefs."
+    },
+    {
+      "snag": "The denunciation can drown out the letter's instructions to its readers.",
+      "help": "Mark the turn to the beloved in verses 17 and 20. The readers are told to remember, build up, pray, keep themselves in love, await mercy, and help others. Contending for the faith must be read together with that practical response."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Did the historical Jude write the letter?",
+      "settled": "The opening names Jude and identifies him as James's brother, without calling him an apostle.",
+      "positions": [
+        {
+          "view": "The Jude associated with Jesus's family",
+          "grounds": "The traditional identification connects the opening with the brothers named in Matthew 13:55 and Mark 6:3."
+        },
+        {
+          "view": "A later writer using Jude's name",
+          "grounds": "The polished Greek and retrospective appeal to apostolic teaching support this proposal, though neither observation settles authorship."
+        }
+      ],
+      "soWhat": "The uncertainty affects dating and historical reconstruction. It does not change the letter's stated appeal to preserve the received faith."
+    },
+    {
+      "question": "Which came first, Jude or 2 Peter?",
+      "settled": "Jude and 2 Peter 2 share striking sequences of examples, accusations, and images.",
+      "positions": [
+        {
+          "view": "Jude came first, the common scholarly view",
+          "grounds": "Its compact argument includes traditions about Moses and Enoch that the parallel material in 2 Peter does not name."
+        },
+        {
+          "view": "The direction remains open to dispute",
+          "grounds": "The similarities establish a close relationship more securely than they establish the order of composition; neither letter names the other as its source."
+        }
+      ],
+      "soWhat": "Compare the actual wording and omissions before treating either letter as a simple copy of the other."
+    },
+    {
+      "question": "Can the opponents be identified with a named movement?",
+      "settled": "Jude accuses them of turning grace into indecency, rejecting authority, and dividing the community, but does not name a sect.",
+      "positions": [
+        {
+          "view": "A movement that rejected moral restraint",
+          "grounds": "Reconstructions sometimes connect the charges with early tendencies later called Gnostic. This goes beyond the names and claims explicitly given in the letter."
+        },
+        {
+          "view": "No secure sect identification",
+          "grounds": "The accusations are selective and polemical; they do not supply the opponents' own teaching or self-description."
+        }
+      ],
+      "soWhat": "Read the concrete charges without letting a later label decide in advance what every image means."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, Jude",
+      "says": "Provides the wording, sequence, examples, instructions, and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/JUD/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "Jude in the World English Bible, King James Version, and Douay-Rheims",
+      "says": "The compared editions differ at verses 1, 5, 12, 22–23, and 24–25; English agreement alone does not establish a manuscript genealogy."
+    },
+    {
+      "id": "greek-jude",
+      "label": "SBL Greek New Testament, Jude, with MorphGNT analysis",
+      "says": "Supplies the Greek forms, repeated verbs, clause patterns, and readings used in the language discussion; it is a modern edited Greek text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/86-Jud-morphgnt.txt"
+    },
+    {
+      "id": "usccb-jude-intro",
+      "label": "USCCB, Introduction to Jude",
+      "says": "Discusses authorship, dating, unknown recipients, and the relationship to 2 Peter. Its proposed identification of the opponents is a reconstruction.",
+      "url": "https://bible.usccb.org/bible/jude/0"
+    },
+    {
+      "id": "usccb-jude-notes",
+      "label": "USCCB, Jude: text and notes",
+      "says": "Identifies the Enoch quotation and Moses tradition and documents variants in verses 5 and 22–23, alongside the alternative imagery in verse 12.",
+      "url": "https://bible.usccb.org/bible/jude/1"
+    },
+    {
+      "id": "scriptural-parallels",
+      "label": "Matthew 13:55; Mark 6:3; 2 Peter 2–3, World English Bible",
+      "says": "The Gospel passages name James and Jude among Jesus's relatives; 2 Peter supplies the parallel warning material compared with Jude.",
+      "href": "/scriptures/protestant/2PE/2"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Start with the changed purpose of the letter and the actual charges in verse 4. Keep those charges distinct from the later comparisons.",
+      "refs": [
+        "1:3",
+        "1:4"
+      ]
+    },
+    {
+      "tip": "Track the keeping motif: who fails to keep, who is kept, and what the readers must keep. Notice the related but different safeguarding verb at the end.",
+      "refs": [
+        "1:1",
+        "1:6",
+        "1:13",
+        "1:21",
+        "1:24"
+      ]
+    },
+    {
+      "tip": "Read the images as a sequence. Ask what waterless clouds, fruitless trees, waves, and stars each add to the accusation.",
+      "refs": [
+        "1:12",
+        "1:13"
+      ]
+    },
+    {
+      "tip": "Read the final appeal before deciding what contending requires. Note the repeated beloved address and the actions directed toward other people.",
+      "refs": [
+        "1:17",
+        "1:20",
+        "1:21",
+        "1:22",
+        "1:23"
+      ]
+    },
+    {
+      "tip": "Compare versions of verses 5 and 22–23 closely, then return to the wording of the edition you are reading.",
+      "refs": [
+        "1:5",
+        "1:22",
+        "1:23"
+      ]
+    }
+  ],
+  "next": "Read 2 Peter 2–3 alongside Jude to compare their examples, images, and appeals. Where available, read 1 Enoch 1 to see the setting of the quotation in Jude 14–15.",
+  "traditionNote": "Jude is a New Testament letter. Its use of Enoch and a Moses tradition should be distinguished from the separate question of which writings a Christian community recognizes as scripture."
+}

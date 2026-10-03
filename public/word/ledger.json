@@ -1,0 +1,423 @@
+{
+  "title": "Search the ownership ledger",
+  "intro": "Search the translation records by name, abbreviation, owner, or permission status. Each result keeps its claim, provenance, and source trail together. The research queue is visible so an unfinished record cannot masquerade as a settled one.",
+  "entries": [
+    {
+      "id": "niv",
+      "abbr": "NIV",
+      "name": "New International Version",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "Biblica, Inc.",
+      "summary": "A modern English translation with a public quotation allowance and a permission boundary beyond it.",
+      "permission": "Quote up to 500 verses without asking, provided the use is not a complete book and is not 25% or more of the larger work. Beyond that, written permission is required.",
+      "sourceIds": ["niv-permissions","biblica-permissions","biblica-ai-policy"],
+      "timeline": [
+        { "id": "niv-publication", "year": "1978", "title": "Complete translation record", "note": "The ownership record dates the complete NIV to 1978. A fuller publication bibliography remains outside this first pass.", "sourceIds": ["niv-permissions"], "status": "researched" },
+        { "id": "niv-policy", "year": "Today", "title": "Quotation policy", "note": "Biblica's public permission page defines a free quotation allowance and the point at which written permission is needed.", "sourceIds": ["niv-permissions"], "status": "researched" },
+        { "id": "niv-ai", "year": "2026", "title": "AI and machine-learning use", "note": "Biblica's permissions page now states that any use of its content with AI, machine learning, large language models, or chatbots requires a license expressly permitting it, under a Publisher AI Policy effective June 1, 2026.", "sourceIds": ["biblica-permissions","biblica-ai-policy"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "esv",
+      "abbr": "ESV",
+      "name": "English Standard Version",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "Crossway (Good News Publishers)",
+      "summary": "A copyrighted translation whose permissions page grants limited quotation rights but keeps the text behind a licensing boundary.",
+      "permission": "Quote up to 500 verses without a license, subject to limits on a single book and on the proportion of the larger work. The permissions page also rules out publishing the ESV under a Creative Commons license.",
+      "sourceIds": ["esv-permissions"],
+      "timeline": [
+        { "id": "esv-publication", "year": "2001", "title": "Translation record", "note": "The ownership record dates the ESV to 2001; the detailed editorial history is not expanded in this first pass.", "sourceIds": ["esv-permissions"], "status": "researched" },
+        { "id": "esv-policy", "year": "Today", "title": "Quotation policy", "note": "Crossway's permissions page states the free quotation allowance and the license boundary.", "sourceIds": ["esv-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "nrsv",
+      "abbr": "NRSV",
+      "name": "New Revised Standard Version (and NRSVue)",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "National Council of Churches",
+      "summary": "A church-owned translation record administered through a licensing publisher, with a defined quotation allowance.",
+      "permission": "Quote up to 500 verses free when the quoted text stays under the stated proportion of the work, remains unaltered, and carries the required notice. Larger uses need approval.",
+      "sourceIds": ["nrsv-permissions"],
+      "timeline": [
+        { "id": "nrsv-publication", "year": "1989", "title": "NRSV published", "note": "The ownership record dates the NRSV to 1989. The later NRSVue is kept in the same record because the permissions source presents them together.", "sourceIds": ["nrsv-permissions"], "status": "researched" },
+        { "id": "nrsv-policy", "year": "Today", "title": "Quotation policy", "note": "Friendship Press publishes the current quick FAQ for NRSV and NRSVue permissions.", "sourceIds": ["nrsv-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "nasb",
+      "abbr": "NASB",
+      "name": "New American Standard Bible",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "The Lockman Foundation",
+      "summary": "A Lockman Foundation translation whose public policy allows substantial quotation but does not release a complete book for unrestricted reuse.",
+      "permission": "Quote up to 1,000 verses without permission, provided the use is not a complete book and does not make up more than half of the larger work.",
+      "sourceIds": ["nasb-permissions"],
+      "timeline": [
+        { "id": "nasb-publication", "year": "1971", "title": "Translation record", "note": "The ownership record dates the NASB to 1971; this first pass does not expand its revision history.", "sourceIds": ["nasb-permissions"], "status": "researched" },
+        { "id": "nasb-policy", "year": "Today", "title": "Quotation policy", "note": "Lockman's public permissions page defines the verse and proportion limits.", "sourceIds": ["nasb-permissions"], "status": "researched" },
+        { "id": "nasb-ai", "year": "Today", "title": "AI quotation clause", "note": "The same permissions page lets named AI systems quote up to 1,000 verses in a single response for dynamic user queries, and says that does not authorize bulk downloading, scraping, or the creation of standalone datasets for redistribution.", "sourceIds": ["nasb-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "nlt",
+      "abbr": "NLT",
+      "name": "New Living Translation",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "Tyndale House Foundation",
+      "summary": "A copyrighted translation administered through Tyndale House Publishers, with a free quotation allowance and a larger-use boundary.",
+      "permission": "Quote up to 500 verses without permission, provided the use is not a complete book and does not exceed the stated proportion of the larger work.",
+      "sourceIds": ["nlt-permissions"],
+      "timeline": [
+        { "id": "nlt-publication", "year": "1996", "title": "Translation record", "note": "The ownership record dates the NLT to 1996; the detailed revision history is not expanded here.", "sourceIds": ["nlt-permissions"], "status": "researched" },
+        { "id": "nlt-policy", "year": "Today", "title": "Quotation policy", "note": "Tyndale's permissions page states the free quotation allowance and the boundary for larger uses.", "sourceIds": ["nlt-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "csb",
+      "abbr": "CSB",
+      "name": "Christian Standard Bible",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "Holman Bible Publishers",
+      "summary": "A modern translation with a public quotation allowance documented by its publisher.",
+      "permission": "Quote up to 1,000 verses without permission, subject to the stated complete-book and proportion limits.",
+      "sourceIds": ["csb-permissions"],
+      "timeline": [
+        { "id": "csb-publication", "year": "2017", "title": "Translation record", "note": "The ownership record dates the CSB to 2017; this first pass does not expand its editorial history.", "sourceIds": ["csb-permissions"], "status": "researched" },
+        { "id": "csb-policy", "year": "Today", "title": "Quotation policy", "note": "The publisher's FAQ provides the current quotation allowance.", "sourceIds": ["csb-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "rsv",
+      "abbr": "RSV",
+      "name": "Revised Standard Version",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "National Council of Churches",
+      "summary": "A mid-century translation that remains an actively licensed record rather than an unrestricted public-domain text in the site's stated US-term projection.",
+      "permission": "The record treats the RSV as still under copyright and actively licensed. The detailed rights history needs to be read from the current publisher record.",
+      "sourceIds": ["rsv-record"],
+      "timeline": [
+        { "id": "rsv-publication", "year": "1952", "title": "RSV published", "note": "The Revised Standard Version enters the record in 1952 under the National Council of Churches.", "sourceIds": ["rsv-record"], "status": "researched" },
+        { "id": "rsv-projection", "year": "2048", "title": "Projected US public-domain date", "note": "This is the site's stated projection under a 95-year US term, not a legal opinion for every jurisdiction.", "sourceIds": ["rsv-record"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "nkjv",
+      "abbr": "NKJV",
+      "name": "New King James Version",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "Thomas Nelson (HarperCollins Christian Publishing)",
+      "summary": "A copyrighted revision of the King James text whose publisher grants a public quotation allowance under written gratis-use guidelines.",
+      "permission": "Up to 500 verses may be quoted without written permission, provided they are not more than 25% of the work, not more than 50% of any one book of the Bible, and not quoted in a commentary or other Bible reference work. Beyond that, a formal request is required.",
+      "sourceIds": ["nkjv-permissions"],
+      "timeline": [
+        { "id": "nkjv-copyright", "year": "1982", "title": "Copyright record", "note": "The publisher's required notice dates the NKJV copyright to 1982 and names Thomas Nelson as the holder.", "sourceIds": ["nkjv-permissions"], "status": "researched" },
+        { "id": "nkjv-policy", "year": "Today", "title": "Gratis-use guidelines", "note": "HarperCollins Christian Publishing's permissions page allows up to 500 verses without written permission, capped at 25% of the work and 50% of any one book, and excludes commentaries and reference works.", "sourceIds": ["nkjv-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "gnt",
+      "abbr": "GNT",
+      "name": "Good News Translation",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "American Bible Society",
+      "summary": "A common-language translation owned by the American Bible Society, with a public quotation allowance shared with the Contemporary English Version.",
+      "permission": "Up to 500 verses may be quoted without written permission, provided they do not amount to 50% of a complete book of the Bible or 25% or more of the total text of the work. The notice names Today's English Version, Second Edition, copyright 1992.",
+      "sourceIds": ["gnt-permissions"],
+      "timeline": [
+        { "id": "gnt-copyright", "year": "1992", "title": "Copyright record", "note": "The Society's required notice reads Good News Translation in Today's English Version, Second Edition, copyright 1992 by American Bible Society.", "sourceIds": ["gnt-permissions"], "status": "researched" },
+        { "id": "gnt-policy", "year": "Today", "title": "Quotation allowance", "note": "The rights-and-permissions page allows up to 500 verses without written permission, not 50% of a complete book and not 25% or more of the work; the same guideline covers the Contemporary English Version.", "sourceIds": ["gnt-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "msg",
+      "abbr": "MSG",
+      "name": "The Message",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "Eugene H. Peterson; published by NavPress",
+      "summary": "A paraphrase whose copyright sits with its author, published by NavPress with permissions administered by Tyndale House.",
+      "permission": "Up to 500 verses may be quoted without written permission, provided they are not a complete book of the Bible and not 25% or more of the work. The required notice carries the years 1993, 2002, and 2018.",
+      "sourceIds": ["msg-permissions"],
+      "timeline": [
+        { "id": "msg-copyright", "year": "2002", "title": "Copyright record", "note": "NavPress's notice reads copyright 1993, 2002, 2018 by Eugene H. Peterson, used by permission of NavPress and represented by Tyndale House Publishers.", "sourceIds": ["msg-permissions"], "status": "researched" },
+        { "id": "msg-policy", "year": "Today", "title": "Quotation allowance", "note": "The permissions page allows up to 500 verses without written permission, not a complete book and not 25% or more of the work; larger uses go through Tyndale's permissions desk.", "sourceIds": ["msg-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "nabre",
+      "abbr": "NABRE",
+      "name": "New American Bible, Revised Edition",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "Confraternity of Christian Doctrine",
+      "summary": "The Bible of the Catholic lectionary in the United States, owned by the Confraternity of Christian Doctrine and licensed through the bishops' conference.",
+      "permission": "Fewer than 5,000 words may be quoted without permission in print, sound, or eBook form, provided they are under 40% of a single book of the Bible and under 40% of the work. Complete books may not be podcast, and digital applications, paid or free, need a license.",
+      "sourceIds": ["nabre-permissions"],
+      "timeline": [
+        { "id": "nabre-copyright", "year": "2010", "title": "Copyright record", "note": "The permissions page's required notice carries the years 2010, 1991, 1986, and 1970 and names the Confraternity of Christian Doctrine, Washington, D.C., as owner.", "sourceIds": ["nabre-permissions"], "status": "researched" },
+        { "id": "nabre-policy", "year": "Today", "title": "Word-count allowance", "note": "The page counts words rather than verses: fewer than 5,000 without permission, under 40% of a single book and of the work, with podcasts of complete books refused and apps licensed.", "sourceIds": ["nabre-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "ceb",
+      "abbr": "CEB",
+      "name": "Common English Bible",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "Common English Bible; published by The United Methodist Publishing House",
+      "summary": "An ecumenical translation whose rights holder publishes a fair-use guideline and charges a fee past it.",
+      "permission": "Under 500 verses may be quoted without permission, provided they are not an entire book of the Bible and not 25% or more of the total content of the work. Uses beyond that need formal permission and a fee.",
+      "sourceIds": ["ceb-permissions"],
+      "timeline": [
+        { "id": "ceb-copyright", "year": "2011", "title": "Copyright record", "note": "The permissions page's required notice reads copyright 2011 Common English Bible, all rights reserved.", "sourceIds": ["ceb-permissions"], "status": "researched" },
+        { "id": "ceb-policy", "year": "Today", "title": "Fair-use guideline", "note": "The page allows under 500 verses, not an entire book, and under 25% of the work without permission; past that a fee is assessed on the share used and the copies distributed.", "sourceIds": ["ceb-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "lsb",
+      "abbr": "LSB",
+      "name": "Legacy Standard Bible",
+      "category": "fenced",
+      "status": "researched",
+      "owner": "The Lockman Foundation; managed with Three Sixteen Publishing",
+      "summary": "A 2021 revision in the NASB line whose permissions page publishes a 1,000-verse allowance and an explicit clause for AI systems.",
+      "permission": "Up to 1,000 verses may be quoted without written permission, provided they are not a complete book of the Bible, not more than 50% of the work, and no more than 1,000 verses are stored in an electronic retrieval system. Named AI systems may quote up to 1,000 verses in a single response.",
+      "sourceIds": ["lsb-permissions"],
+      "timeline": [
+        { "id": "lsb-copyright", "year": "2021", "title": "Copyright record", "note": "The required notice reads copyright 2021 by The Lockman Foundation, used by permission, managed in partnership with Three Sixteen Publishing.", "sourceIds": ["lsb-permissions"], "status": "researched" },
+        { "id": "lsb-policy", "year": "Today", "title": "Quotation and AI allowance", "note": "The permissions page allows up to 1,000 verses, not a complete book and not more than 50% of the work, and permits named AI systems to quote up to 1,000 verses per response with attribution.", "sourceIds": ["lsb-permissions"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "kjv",
+      "abbr": "KJV",
+      "name": "King James Version",
+      "category": "free",
+      "status": "researched",
+      "owner": "Public domain in the United States; Crown privilege in the United Kingdom",
+      "summary": "An old translation that is free in the United States while retaining a regional printing restriction under the UK's Crown privilege system.",
+      "permission": "The text is public domain in the United States. The UK printing position is regional and historical, so the record keeps the jurisdictions separate.",
+      "sourceIds": ["kjv-rights"],
+      "timeline": [
+        { "id": "kjv-publication", "year": "1611", "title": "Royal privilege", "note": "The Authorized Version was printed under royal privilege; the Crown's regional printing position is part of the ownership story.", "sourceIds": ["kjv-rights"], "status": "researched" },
+        { "id": "kjv-status", "year": "Today", "title": "Different by jurisdiction", "note": "The source record used here distinguishes US public-domain status from the UK's Crown printing position.", "sourceIds": ["kjv-rights"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "asv",
+      "abbr": "ASV",
+      "name": "American Standard Version",
+      "category": "free",
+      "status": "researched",
+      "owner": "Public domain",
+      "summary": "A formerly copyrighted English Bible whose copyright expired, leaving the text free to use.",
+      "permission": "The record identifies the ASV as public domain since 1957. The original title page is retained as the source for the historical copyright notice.",
+      "sourceIds": ["asv-record"],
+      "timeline": [
+        { "id": "asv-publication", "year": "1901", "title": "Copyright notice", "note": "The title page records copyright by Thomas Nelson & Sons and gives 'to insure purity of text' as the stated reason.", "sourceIds": ["asv-record"], "status": "researched" },
+        { "id": "asv-public-domain", "year": "1957", "title": "Copyright expired", "note": "The record identifies the ASV as free from 1957 onward.", "sourceIds": ["asv-record"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "web",
+      "abbr": "WEB",
+      "name": "World English Bible",
+      "category": "free",
+      "status": "researched",
+      "owner": "Public domain dedication",
+      "summary": "A modern English Bible whose text is dedicated to the public domain and is hosted in the site's Scripture reader.",
+      "permission": "The source record dedicates the text to the public domain. The name remains trademarked, which is a separate issue from the text's reuse status.",
+      "sourceIds": ["web-license"],
+      "timeline": [
+        { "id": "web-complete", "year": "2020", "title": "Modern text completed", "note": "The existing record dates the completed World English Bible to 2020.", "sourceIds": ["web-license"], "status": "researched" },
+        { "id": "web-dedication", "year": "Today", "title": "Public-domain dedication", "note": "The copyright statement dedicates the text to the public domain; this is the translation most quoted by the site's Scripture reader.", "sourceIds": ["web-license"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "bsb",
+      "abbr": "BSB",
+      "name": "Berean Standard Bible",
+      "category": "free",
+      "status": "researched",
+      "owner": "Public domain",
+      "summary": "A complete modern translation released into the public domain, making the whole text available for reuse.",
+      "permission": "The source record states that the complete translation entered the public domain on April 30, 2023.",
+      "sourceIds": ["bsb-license"],
+      "timeline": [
+        { "id": "bsb-development", "year": "2016–2023", "title": "Translation released", "note": "The record dates the BSB release window to 2016–2023.", "sourceIds": ["bsb-license"], "status": "researched" },
+        { "id": "bsb-public-domain", "year": "2023", "title": "Given away whole", "note": "The licensing page identifies April 30, 2023 as the public-domain release date.", "sourceIds": ["bsb-license"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "oeb",
+      "abbr": "OEB",
+      "name": "Open English Bible",
+      "category": "free",
+      "status": "researched",
+      "owner": "CC0 dedication",
+      "summary": "An ongoing translation project presented under a Creative Commons Zero dedication, so the project asks readers to treat the text as public domain.",
+      "permission": "The project describes the OEB as CC0. Its ongoing status means the source should be checked again when a new edition is used.",
+      "sourceIds": ["oeb-license"],
+      "timeline": [
+        { "id": "oeb-project", "year": "Ongoing", "title": "Open translation project", "note": "The project's own landing page is the source for its current status and licensing posture.", "sourceIds": ["oeb-license"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "net",
+      "abbr": "NET",
+      "name": "NET Bible",
+      "category": "free",
+      "status": "researched",
+      "owner": "Biblical Studies Press",
+      "summary": "A copyrighted translation with a deliberately open non-commercial use policy and a free full-text download.",
+      "permission": "The source record describes broad non-commercial use without asking, while retaining copyright and its own conditions.",
+      "sourceIds": ["net-license"],
+      "timeline": [
+        { "id": "net-record", "year": "1996–2019", "title": "Translation record", "note": "The existing record dates the NET Bible record from 1996–2019.", "sourceIds": ["net-license"], "status": "researched" },
+        { "id": "net-policy", "year": "Today", "title": "Free-to-use policy", "note": "The copyright page describes an open policy while keeping the translation copyrighted.", "sourceIds": ["net-license"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "dra",
+      "abbr": "DRA",
+      "name": "Douay-Rheims (Challoner)",
+      "category": "free",
+      "status": "researched",
+      "owner": "Public domain",
+      "summary": "A historic English Bible in the public domain, included in the site's hosted Scripture options.",
+      "permission": "The source record presents the Challoner revision as public domain; the detailed edition history is not expanded in this first pass.",
+      "sourceIds": ["dra-record"],
+      "timeline": [
+        { "id": "dra-record", "year": "1752", "title": "Challoner revision", "note": "The ownership record dates the Challoner revision to 1752.", "sourceIds": ["dra-record"], "status": "researched" },
+        { "id": "dra-status", "year": "Today", "title": "Public-domain text", "note": "The hosted source presents the text as public domain.", "sourceIds": ["dra-record"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "brenton",
+      "abbr": "Brenton",
+      "name": "Brenton's English Septuagint",
+      "category": "free",
+      "status": "researched",
+      "owner": "Public domain",
+      "summary": "Sir Lancelot Brenton's English translation of the Greek Old Testament, published in 1851 and hosted in the site's Scripture reader as its Septuagint witness.",
+      "permission": "The hosting source states the translation was published in 1851 and is now in the public domain. No permission is needed to quote or reproduce the text.",
+      "sourceIds": ["brenton-record"],
+      "timeline": [
+        { "id": "brenton-publication", "year": "1851", "title": "First published", "note": "eBible.org's record credits the translation to Sir Lancelot Charles Lee Brenton and dates its publication to 1851.", "sourceIds": ["brenton-record"], "status": "researched" },
+        { "id": "brenton-status", "year": "Today", "title": "Public domain by age", "note": "The same record states the text is now in the public domain. It is the English Septuagint column in this site's polyglot and reader.", "sourceIds": ["brenton-record"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "charles",
+      "abbr": "Charles",
+      "name": "R. H. Charles: 1 Enoch and Jubilees",
+      "category": "free",
+      "status": "researched",
+      "owner": "Public domain",
+      "summary": "R. H. Charles's English translations of 1 Enoch and the Book of Jubilees, which the site hosts beside the biblical books in its Scripture reader.",
+      "permission": "Both translations were published before 1931, and Charles died in 1931, so the texts are public domain in the United States and in countries whose term is the author's life plus 94 years or less. No permission is needed.",
+      "sourceIds": ["charles-jubilees-1913","charles-enoch-wikisource"],
+      "timeline": [
+        { "id": "charles-1913", "year": "1913", "title": "The Oxford pseudepigrapha volume", "note": "Jubilees appears in The Apocrypha and Pseudepigrapha of the Old Testament, volume II (Oxford: Clarendon Press, 1913), edited by Charles. The Internet Archive holds a scan of the printed volume.", "sourceIds": ["charles-jubilees-1913"], "status": "researched" },
+        { "id": "charles-status", "year": "Today", "title": "Public domain by age", "note": "Wikisource's copy of Charles's Book of Enoch, the transcription this site's 1 Enoch text was taken from, carries the notice that the work was published before January 1, 1931, and that its translator died in 1931.", "sourceIds": ["charles-enoch-wikisource"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "leb",
+      "abbr": "LEB",
+      "name": "Lexham English Bible",
+      "category": "free",
+      "status": "researched",
+      "owner": "Lexham Press (Faithlife); free to give away",
+      "summary": "A copyrighted translation released under a give-away license: anyone may distribute it at no cost, but not sell it on its own.",
+      "permission": "The license allows free distribution but not standalone sale; the text may be sold inside a larger work only if it is under 25% of the content. Quotations under 100 verses carry a plain (LEB) tag, longer ones the full credit line, and works past 1,000 verses report their distribution yearly.",
+      "sourceIds": ["leb-license"],
+      "timeline": [
+        { "id": "leb-copyright", "year": "2012", "title": "Copyright record", "note": "The front matter reads copyright 2010, 2012, 2013 Lexham Press; the publisher's catalogue lists the complete Bible as published in 2012.", "sourceIds": ["leb-license"], "status": "researched" },
+        { "id": "leb-policy", "year": "Today", "title": "Give-away license", "note": "The license lets anyone give the LEB away but not sell it alone, allows sale inside a larger work under 25% of the content, and requires attribution always and reporting past 1,000 verses.", "sourceIds": ["leb-license"], "status": "researched" }
+      ]
+    },
+    {
+      "id": "njb",
+      "abbr": "NJB",
+      "name": "New Jerusalem Bible",
+      "category": "placeholder",
+      "status": "placeholder",
+      "owner": "Not yet checked",
+      "summary": "Named for the next research pass. No ownership or permission claim is made until the rights holder's own page has been checked.",
+      "permission": "Not stated until verified.",
+      "sourceIds": ["research-queue"],
+      "timeline": [
+        { "id": "njb-queued", "year": "2026", "title": "Queued for the next pass", "note": "Queued as the English Bible of many Catholic lectionaries outside the United States. Expected rights holder: Darton, Longman & Todd. Owner and allowance stay unstated until its permissions page is checked.", "sourceIds": ["research-queue"], "status": "placeholder" }
+      ]
+    },
+    {
+      "id": "geneva",
+      "abbr": "Geneva",
+      "name": "Geneva Bible",
+      "category": "placeholder",
+      "status": "placeholder",
+      "owner": "Not yet checked",
+      "summary": "Named for the next research pass. No ownership or permission claim is made until the rights holder's own page has been checked.",
+      "permission": "Not stated until verified.",
+      "sourceIds": ["research-queue"],
+      "timeline": [
+        { "id": "geneva-queued", "year": "2026", "title": "Queued for the next pass", "note": "Queued as the Bible of the Pilgrims and of Shakespeare's England, older than the King James. Expected status: public domain by age, but the record needs a named edition and a hosting source before it can say so.", "sourceIds": ["research-queue"], "status": "placeholder" }
+      ]
+    },
+    {
+      "id": "lsv",
+      "abbr": "LSV",
+      "name": "Literal Standard Version",
+      "category": "placeholder",
+      "status": "placeholder",
+      "owner": "Not yet checked",
+      "summary": "Named for the next research pass. No ownership or permission claim is made until the rights holder's own page has been checked.",
+      "permission": "Not stated until verified.",
+      "sourceIds": ["research-queue"],
+      "timeline": [
+        { "id": "lsv-queued", "year": "2026", "title": "Queued for the next pass", "note": "Queued as a recent literal translation released for free reading online. Expected rights holder: Covenant Press. Nothing is stated until its license page is checked.", "sourceIds": ["research-queue"], "status": "placeholder" }
+      ]
+    }
+  ],
+  "sources": [
+    { "id": "niv-permissions", "label": "NIV permissions", "organization": "Biblica", "kind": "rights-holder", "href": "https://www.biblica.com/resources/bible-faqs/do-i-have-to-notify-biblica-to-use-a-bible-verse-from-the-niv/", "note": "Rights-holder policy used for the NIV quotation allowance.", "status": "researched" },
+    { "id": "esv-permissions", "label": "ESV permissions", "organization": "Crossway", "kind": "rights-holder", "href": "https://www.crossway.org/permissions/", "note": "Rights-holder policy used for the ESV quotation allowance and licensing boundary.", "status": "researched" },
+    { "id": "nrsv-permissions", "label": "NRSV / NRSVue quick FAQ", "organization": "Friendship Press", "kind": "license", "href": "https://www.friendshippress.org/pages/nrsvue-quick-faq", "note": "Publisher licensing page used for the NRSV record.", "status": "researched" },
+    { "id": "nasb-permissions", "label": "NASB permissions and trademark information", "organization": "The Lockman Foundation", "kind": "rights-holder", "href": "https://www.lockman.org/permission-to-quote-copyright-trademark-information/", "note": "Rights-holder policy used for the NASB quotation allowance.", "status": "researched" },
+    { "id": "nlt-permissions", "label": "Tyndale permissions", "organization": "Tyndale House Publishers", "kind": "rights-holder", "href": "https://www.tyndale.com/permissions", "note": "Publisher policy used for the NLT quotation allowance.", "status": "researched" },
+    { "id": "csb-permissions", "label": "CSB FAQ", "organization": "Holman Bible Publishers", "kind": "rights-holder", "href": "https://csbible.com/about-the-csb/faqs/", "note": "Publisher FAQ used for the CSB quotation allowance.", "status": "researched" },
+    { "id": "rsv-record", "label": "RSV rights record", "organization": "Scribenet", "kind": "license", "href": "https://rsv.scribenet.com/", "note": "Current public rights record used for the RSV status and the site's stated US-term projection.", "status": "researched" },
+    { "id": "kjv-rights", "label": "Cambridge and the Coronation", "organization": "Cambridge University Press", "kind": "archive", "href": "https://www.cambridge.org/news-and-insights/cambridge-and-the-coronation", "note": "Historical source used to keep US public-domain status distinct from the UK's Crown printing position.", "status": "researched" },
+    { "id": "asv-record", "label": "American Standard Version title page", "organization": "eBible.org", "kind": "public-domain", "href": "https://ebible.org/eng-asv/FRT01.htm", "note": "Public-domain scan used for the 1901 copyright notice and the stated reason for it.", "status": "researched" },
+    { "id": "web-license", "label": "World English Bible copyright statement", "organization": "eBible.org", "kind": "public-domain", "href": "https://ebible.org/web/copyright.htm", "note": "License statement used for the WEB public-domain dedication.", "status": "researched" },
+    { "id": "bsb-license", "label": "Berean Bible licensing", "organization": "Berean Bible", "kind": "public-domain", "href": "https://berean.bible/licensing.htm", "note": "Licensing page used for the 2023 public-domain release.", "status": "researched" },
+    { "id": "oeb-license", "label": "Open English Bible", "organization": "Open English Bible", "kind": "public-domain", "href": "https://openenglishbible.org/", "note": "Project landing page used for the ongoing CC0 record.", "status": "researched" },
+    { "id": "net-license", "label": "NET Bible copyright", "organization": "Biblical Studies Press", "kind": "license", "href": "https://netbible.com/copyright/", "note": "Copyright page used for the NET Bible's open non-commercial policy.", "status": "researched" },
+    { "id": "dra-record", "label": "Douay-Rheims (Challoner)", "organization": "eBible.org", "kind": "public-domain", "href": "https://ebible.org/engDRA/", "note": "Public-domain text record used for the historic DRA entry.", "status": "researched" },
+    { "id": "brenton-record", "label": "Brenton Septuagint Translation copyright page", "organization": "eBible.org", "kind": "public-domain", "href": "https://ebible.org/eng-Brenton/copyright.htm", "note": "States the translation was published in 1851 and is now in the public domain. The site's Brenton text comes from this edition.", "status": "researched" },
+    { "id": "charles-jubilees-1913", "label": "The Apocrypha and Pseudepigrapha of the Old Testament, vol. II (1913)", "organization": "Internet Archive", "kind": "archive", "href": "https://archive.org/details/apocryphapseudep02char", "note": "Scan of the Clarendon Press volume that carries Charles's Jubilees translation. The publication date is the basis of its public-domain status.", "status": "researched" },
+    { "id": "charles-enoch-wikisource", "label": "The Book of Enoch (Charles) public-domain notice", "organization": "Wikisource", "kind": "public-domain", "href": "https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)", "note": "Transcription the site's 1 Enoch text was taken from. Its notice states the work is public domain in the United States because it was published before 1931.", "status": "researched" },
+    { "id": "nkjv-permissions", "label": "HarperCollins Christian Publishing Bible quotation policy", "organization": "HarperCollins Christian Publishing", "kind": "rights-holder", "href": "https://www.harpercollinschristian.com/sales-and-rights/permissions/", "note": "Publisher's gratis-use guidelines and copyright notice for the NKJV. The Thomas Nelson site refuses scripted requests, so the parent company's page is the copy checked.", "status": "researched" },
+    { "id": "gnt-permissions", "label": "American Bible Society rights and permissions", "organization": "American Bible Society", "kind": "rights-holder", "href": "https://www.americanbible.org/rights-and-permissions/", "note": "Rights holder's page with the GNT and CEV quotation allowance and copyright notices.", "status": "researched" },
+    { "id": "msg-permissions", "label": "NavPress permissions", "organization": "NavPress", "kind": "rights-holder", "href": "https://www.navpress.com/permissions", "note": "Publisher's permissions page for The Message, with the copyright notice and the 500-verse allowance.", "status": "researched" },
+    { "id": "nabre-permissions", "label": "New American Bible permissions", "organization": "United States Conference of Catholic Bishops", "kind": "rights-holder", "href": "https://www.usccb.org/offices/new-american-bible/permissions", "note": "Permissions page for the NABRE, carrying the Confraternity of Christian Doctrine copyright notice and the word-count allowance.", "status": "researched" },
+    { "id": "ceb-permissions", "label": "Common English Bible permissions", "organization": "Common English Bible", "kind": "rights-holder", "href": "https://www.commonenglishbible.com/permissions", "note": "Rights holder's permissions page with the copyright notice and the fair-use guideline.", "status": "researched" },
+    { "id": "lsb-permissions", "label": "Permission to quote the LSB", "organization": "Three Sixteen Publishing / The Lockman Foundation", "kind": "rights-holder", "href": "https://lsbible.org/permission-to-quote-the-lsb/", "note": "Official LSB permissions page with the 1,000-verse allowance, the copyright notice, and the AI clause.", "status": "researched" },
+    { "id": "leb-license", "label": "Lexham English Bible front matter and license", "organization": "Lexham Press, via Biblia.com", "kind": "license", "href": "https://biblia.com/books/leb/article/TITLE?ssi=0", "note": "The license as printed in the publisher's own online edition. The standalone license page at lexhamenglishbible.com redirected to a bookstore search when checked in September 2026.", "status": "researched" },
+    { "id": "biblica-permissions", "label": "Biblica permissions", "organization": "Biblica", "kind": "rights-holder", "href": "https://www.biblica.com/permissions/", "note": "Rights holder's permissions hub, including the AI and machine-learning clause.", "status": "researched" },
+    { "id": "biblica-ai-policy", "label": "Biblica Publisher AI Policy (v1.2, effective June 1, 2026)", "organization": "Biblica", "kind": "license", "href": "https://www.biblica.com/publisher-ai-policy/", "note": "The policy incorporated into every Biblica license for digital and AI use.", "status": "researched" },
+    { "id": "research-queue", "label": "Research queue", "organization": "This site", "kind": "research-placeholder", "href": "/sources#word-ownership", "note": "No external source has been accepted for this record yet. The entry stays in the queue until a rights-holder page, license, archive, or court record is checked.", "status": "placeholder" }
+  ]
+}

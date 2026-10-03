@@ -1,0 +1,22 @@
+I’ve rebuilt Find on garovartabedian.com to help readers explore connections between Scripture and early Christian writings—and stay close to the actual text.
+
+Search a phrase. Open the passage in its named edition. Follow a source note, compare the wording, and return to the place you were reading.
+
+The part I’m especially interested in sharing is how I’ve used Jev from TypeSafe AI.
+
+Search retrieves the passages first. When a reader chooses a relevance check or a supported passage comparison, Jev evaluates the selected text and its surrounding context through narrowly defined questions: Does this passage address the question? Is the connection close wording, paraphrase, or only a shared theme?
+
+The original passages stay visible. AI assessments are labeled Unreviewed, and model uncertainty stays visible too. Similarity alone does not establish historical borrowing, agreement, or proof.
+
+Around that, I’ve built a calmer reading experience: clear paragraphs, adjustable typography and page themes, edition-aware links, and source notes that bring you back to your place.
+
+Visitors can try the optional AI checks without their own API key, with a daily browser allowance and shared service limits. Ordinary reading and word search don’t call Jev.
+
+This is an experimental research aid. Independent evaluation of its relevance judgments is still in progress.
+
+Try Find with “light of the world” or “love your enemies”:
+https://garovartabedian.com/scriptures/search
+
+I’d love to hear which connections you explore—and where the search still misses what you expected.
+
+#Jev #TypeSafeAI #DigitalHumanities #WebDevelopment

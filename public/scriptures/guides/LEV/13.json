@@ -1,0 +1,370 @@
+{
+  "book": "LEV",
+  "chapter": 13,
+  "bookName": "Leviticus",
+  "summary": "Leviticus 13 directs priests to examine visible changes in skin, scalp, and hair, often isolating a person and examining the condition again before declaring clean or unclean. It distinguishes spreading or raw conditions from scars, harmless spots, and ordinary baldness. The final section applies a related inspection process to greenish or reddish damage in wool, linen, or leather.",
+  "whyItMatters": "The chapter gives Israel a careful classification process rather than permission for instant assumptions. Its translated category “leprosy” does not correspond neatly to a single modern diagnosis, and a clean or unclean ruling concerns ritual status rather than personal guilt.",
+  "context": {
+    "author": "The text presents these instructions as Yahweh’s words through Moses and Aaron; authorship and final composition are debated",
+    "audience": "The children of Israel and the priests responsible for examination and ritual rulings",
+    "date": "The procedures are framed in Israel’s wilderness camp; the date of final composition is debated",
+    "setting": "Israel’s camp, with access to the community and sanctuary affected by priestly declarations",
+    "literaryForm": "Priestly case law for skin, hair, and fabric conditions"
+  },
+  "outline": [
+    {
+      "heading": "Initial skin signs and repeated examination",
+      "verses": "1-8",
+      "note": "The priest distinguishes a deep, spreading condition from a fading scab through two seven-day periods when needed."
+    },
+    {
+      "heading": "Chronic, widespread, and raw skin conditions",
+      "verses": "9-17",
+      "note": "White coverage and raw flesh receive counterintuitive but explicit clean and unclean rulings."
+    },
+    {
+      "heading": "Marks arising in a boil or burn",
+      "verses": "18-28",
+      "note": "Depth, hair color, fading, and spread guide examination of a healed boil or burn site."
+    },
+    {
+      "heading": "Scalp, beard, spots, and baldness",
+      "verses": "29-44",
+      "note": "The law separates spreading itch or reddish-white plague from harmless spots and ordinary hair loss."
+    },
+    {
+      "heading": "Life outside the camp",
+      "verses": "45-46",
+      "note": "A person pronounced unclean wears visible signs, announces the status, and lives apart."
+    },
+    {
+      "heading": "Damage in garments and leather",
+      "verses": "47-59",
+      "note": "The priest isolates, washes, tears out, or burns material according to whether the discoloration spreads, persists, fades, or returns."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "13:6",
+      "text": "The priest shall examine him again on the seventh day. Behold, if the plague has faded and the plague hasn’t spread in the skin, then the priest shall pronounce him clean. It is a scab. He shall wash his clothes, and be clean.",
+      "why": "A second examination and observed change, rather than the first appearance alone, can lead to a clean ruling."
+    },
+    {
+      "ref": "13:39",
+      "text": "then the priest shall examine them. Behold, if the bright spots on the skin of their body are a dull white, it is a harmless rash. It has broken out in the skin. He is clean.",
+      "why": "The chapter does not treat every visible skin difference as defiling."
+    },
+    {
+      "ref": "13:46",
+      "text": "All the days in which the plague is in him he shall be unclean. He is unclean. He shall dwell alone. His dwelling shall be outside of the camp.",
+      "why": "The ruling imposes living alone outside the camp for as long as the condition remains."
+    },
+    {
+      "ref": "13:59",
+      "text": "This is the law of the plague of mildew in a garment of wool or linen, either in the warp, or the woof, or in anything of skin, to pronounce it clean, or to pronounce it unclean.",
+      "why": "The conclusion identifies classification—clean or unclean—as the procedure’s stated purpose."
+    }
+  ],
+  "themes": [
+    "patient examination",
+    "clean and unclean",
+    "isolation and community",
+    "skin and hair conditions",
+    "damage in cloth and leather"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Does the WEB word “leprosy” here mean only modern Hansen’s disease?",
+      "answer": "It should not be assumed. The same translated plague category includes multiple skin appearances, scalp and beard conditions, and even destructive mildew in cloth or leather. The chapter supplies observable ritual criteria, not a modern laboratory diagnosis.",
+      "verseRefs": [
+        "13:2-8",
+        "13:29-37",
+        "13:47-59"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "evidenceSourceIds": [
+        "hosted-web",
+        "usccb-lev13"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What is the priest actually responsible for doing?",
+      "answer": "The priest examines the named features, may isolate the affected person or material, then examines again after the stated interval and pronounces clean or unclean. The chapter assigns him a ritual ruling after observation; it prescribes no medical treatment.",
+      "verseRefs": [
+        "13:2-8",
+        "13:50-58"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why are some uncertain cases isolated for one or two seven-day periods?",
+      "answer": "The waiting periods allow the priest to observe whether a mark spreads, fades, or remains stable before ruling. That is the reason visible in the procedure; the text does not give a theory of contagion, incubation, or other medical mechanism.",
+      "verseRefs": [
+        "13:4-8",
+        "13:31-37"
+      ],
+      "category": "practical",
+      "relatedVerses": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How can fully white skin be called clean while raw flesh is unclean?",
+      "answer": "Verses 12-17 make that distinction explicitly: complete whitening receives a clean ruling, but the appearance of raw flesh changes the ruling to unclean until it turns white again. The counterintuitive result warns readers not to force these ritual criteria into a simple modern disease scale.",
+      "verseRefs": [
+        "13:12-17"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Are every scar, pale spot, or bald head treated as unclean?",
+      "answer": "No. A stable mark after a boil or burn can be pronounced a scar, dull white spots can be called a harmless rash, and ordinary baldness is explicitly clean. Only a condition matching the further stated signs receives an unclean ruling.",
+      "verseRefs": [
+        "13:18-28",
+        "13:38-44"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Does an unclean ruling mean the affected person committed a moral wrong?",
+      "answer": "The chapter bases the ruling on visible changes such as depth, hair color, raw flesh, fading, and spread, not on an accusation of misconduct. “Unclean” governs ritual and communal status here; it should not be converted into a claim of guilt or divine punishment for the individual.",
+      "verseRefs": [
+        "13:2-8",
+        "13:18-28"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "evidenceSourceIds": [
+        "hosted-web"
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How should readers face the command that the affected person live alone outside the camp?",
+      "answer": "The text plainly imposes separation and public identification for as long as the person remains unclean, a heavy social cost that should not be softened. It gives no permission to despise the person, and it does not say that uncleanness makes someone morally inferior.",
+      "verseRefs": [
+        "13:45-46"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        45,
+        46
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What happens when a greenish or reddish mark appears in a garment?",
+      "answer": "The priest isolates it for seven days. Spreading destructive mildew is burned; a stable mark is washed and rechecked; faded damage is torn out; a returning mark is burned; and material from which the mark departs is washed again and declared clean.",
+      "verseRefs": [
+        "13:47-59"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "What goal does the chapter itself give for all these cases?",
+      "answer": "Its final sentence says the law exists to pronounce a condition clean or unclean. The repeated examinations restrain snap judgments, while the rulings maintain the ritual boundaries of Israel’s camp; neither purpose supplies a modern medical explanation.",
+      "verseRefs": [
+        "13:50-59"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "leprosy",
+      "def": "The WEB’s broad label in this chapter for certain skin, scalp, and material plagues; it should not be equated automatically with one modern disease."
+    },
+    {
+      "term": "pronounce",
+      "def": "To issue the priestly ruling that the examined person or material is clean or unclean."
+    },
+    {
+      "term": "warp and woof",
+      "def": "The lengthwise and crosswise threads that make woven cloth."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "4cf3d24ae806beef084cdea716d0a91ab3728885e828e9aa17a40d7bddf09ff4",
+    "generatedAt": "2026-09-29T17:29:30.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ],
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-leviticus",
+    "usccb-pentateuch",
+    "cambridge-purity"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Chapter 12 gives a timed route back to clean status and holy access after childbirth, with offerings at the end.",
+      "verseRefs": [
+        "12:1-8"
+      ]
+    },
+    "here": {
+      "text": "Priests classify a wide range of skin and hair conditions, sometimes after repeated seven-day observation. The chapter also names the social cost of an unclean ruling and extends examination to damaged cloth and leather.",
+      "verseRefs": [
+        "13:1-59"
+      ]
+    },
+    "after": {
+      "text": "If a skin condition is healed, chapter 14 gives staged cleansing and return to camp; it later addresses a spreading mark in a house when Israel enters Canaan.",
+      "verseRefs": [
+        "14:1-57"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "da1628401efbed5d5af2eb750da0ba67d86d3d90aa459df5f6a4ee5367327c4e"
+  }
+}

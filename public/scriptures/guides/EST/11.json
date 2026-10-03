@@ -1,0 +1,153 @@
+{
+  "book": "EST",
+  "chapter": 11,
+  "bookName": "Esther",
+  "summary": "A prologue in two parts: first a note about how this Greek text of Esther reached Egypt, then Mordecai's dream — tumults and thunders, two great dragons ready to fight, the nations stirred against 'the nation of the just,' and then a little fountain growing into a river, the sun rising, and the humble devouring the glorious. Mordecai wakes and keeps the dream in mind, 'desirous to know what the dream should signify.'",
+  "whyItMatters": "The Hebrew Esther never mentions God and reads like pure coincidence; this Greek opening reframes the whole book as prophecy — the dream is the plot in code, and by chapter 21 the text will tell you exactly what it meant. The additions turn a court story into a theology of providence.",
+  "context": {
+    "author": "Unknown Jewish author writing in Greek; the prologue names Dositheus and Ptolemy as its Egyptian carriers",
+    "audience": "Greek-speaking Jews, especially in Egypt",
+    "date": "The translation note points to the late 2nd century BC (Ptolemy and Cleopatra)",
+    "setting": "Susa (Susan), the Persian capital, in the days of Artaxerxes",
+    "literaryForm": "Prophetic dream narrative (apocalyptic style)"
+  },
+  "outline": [
+    {
+      "heading": "The translator's note",
+      "verses": "1",
+      "note": "How this epistle of Purim came to Egypt — a date marker and a claim of Jerusalem origin"
+    },
+    {
+      "heading": "Mordecai introduced",
+      "verses": "2-4",
+      "note": "A great man of the king's court, of the captives carried away with Jechonias"
+    },
+    {
+      "heading": "The dream",
+      "verses": "5-11",
+      "note": "Dragons, nations, the just prepared for death — then the fountain, the river, the light"
+    },
+    {
+      "heading": "Waking",
+      "verses": "12",
+      "note": "He kept it fixed in his mind, waiting for the meaning"
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "11:6-7",
+      "text": "And behold two great dragons came forth ready to fight one against another. And at their cry all nations were stirred up to fight against the nation of the just.",
+      "why": "The dream's central image — by chapter 21 the text decodes it: the dragons are Mardochai and Aman."
+    },
+    {
+      "ref": "11:10",
+      "text": "And they cried to God: and as they were crying, a little fountain grew into a very great river, and abounded into many waters.",
+      "why": "Deliverance begins as something small — a fountain — while the just are still crying out. The image carries the book's theology of providence."
+    },
+    {
+      "ref": "11:12",
+      "text": "And when Mardochai had seen this, and arose out of his bed, he was thinking what God would do: and he kept it fixed in his mind, desirous to know what the dream should signify.",
+      "why": "Note the word 'God' — the Hebrew book never uses it. The additions exist, in large part, to say this word."
+    }
+  ],
+  "themes": [
+    "Providence behind history",
+    "Dream and interpretation",
+    "The just under threat",
+    "God named where he was hidden"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why doesn't my Bible have this chapter?",
+      "answer": "The Hebrew book of Esther has ten chapters and never mentions God. Greek-speaking Jews added six chapters (prologue, prayers, and letters) in their Septuagint translation. Catholic and Orthodox Bibles keep them; Protestant Bibles follow the shorter Hebrew text. In this 16-chapter arrangement they are chapters 11-16.",
+      "verseRefs": [
+        "11:1"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What do the two dragons mean?",
+      "answer": "The text itself interprets later: chapter 21 says the dream showed 'two great dragons' — 'thy servant Mardochai' and 'this wicked Aman.' The nations stirred up are the empire's peoples under the decree; the little fountain is Israel's cry for help becoming a river of deliverance.",
+      "verseRefs": [
+        "11:6",
+        "11:10"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        6,
+        10
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Who are Ptolemy and Cleopatra in verse 1?",
+      "answer": "The Ptolemies ruled Egypt after Alexander's empire split; the pairing points to the late second century BC. The note is the Greek translator's way of certifying his source — a letter of Purim brought from Jerusalem, interpreted by Lysimachus. It is a claim: this text comes from the holy city, not from Alexandria's imagination.",
+      "verseRefs": [
+        "11:1"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Why frame the story as a dream at all?",
+      "answer": "Dreams in Scripture announce what God is about to do — Joseph, Daniel, the Magi. By opening with one, the Greek Esther tells you before the plot starts: the coincidences ahead are not coincidences. The Hebrew book makes you feel God's hiddenness; the Greek book makes you see his hand.",
+      "verseRefs": [
+        "11:5-11"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Who is Jechonias in verse 4?",
+      "answer": "Jehoiachin, the king of Judah exiled to Babylon in 597 BC. Mordecai's family went into that early deportation — meaning Mordecai belongs to a family nearly 120 years in exile, a courtier whose loyalty to Jerusalem survived four generations of Babylon and Persia.",
+      "verseRefs": [
+        "11:4"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        4
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Mardochai",
+      "def": "Brenton's spelling of Mordecai, Esther's cousin and guardian."
+    },
+    {
+      "term": "Phurim (Purim)",
+      "def": "The feast the book of Esther establishes; the 'epistle of Phurim' is the story behind it."
+    },
+    {
+      "term": "Jechonias",
+      "def": "Jehoiachin, king of Judah, deported to Babylon in 597 BC."
+    },
+    {
+      "term": "Susan (Susa)",
+      "def": "The Persian capital where the story is set."
+    }
+  ],
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-08-25",
+  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "sourceIds": [
+    "drb"
+  ]
+}

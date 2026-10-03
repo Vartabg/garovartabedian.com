@@ -1,0 +1,247 @@
+{
+  "book": "GEN",
+  "chapter": 37,
+  "bookName": "Genesis",
+  "summary": "Joseph's favored place in Jacob's household and his dreams of family members bowing to him intensify his brothers' hatred. They strip him, throw him into a dry pit, and he is sold into the trade that carries him to Egypt; a bloodied tunic leads Jacob to believe his son has been killed, while Joseph is sold to Potiphar.",
+  "whyItMatters": "The family's conflict becomes enslavement, deception, and prolonged grief. Dreams of a future place for Joseph remain unresolved while clothing is used to manipulate recognition and conceal what happened.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Jacob's household in Canaan, the grazing grounds near Shechem and Dothan, and the trading route to Egypt.",
+    "literaryForm": "Family conflict and dream narrative, an interrupted murder plot, sale into slavery, and a deceptive death report."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Esau's family and rulers have received their own record. The narrative returns to Jacob in Canaan and introduces his generations through Joseph.",
+      "verseRefs": [
+        "36:40-43",
+        "37:1-2"
+      ]
+    },
+    "here": {
+      "text": "Favoritism and dreams lead to escalating hatred, a threatened killing, Joseph's sale, and Jacob's grief over misleading evidence.",
+      "verseRefs": [
+        "37:3-11",
+        "37:18-36"
+      ]
+    },
+    "after": {
+      "text": "The narrative first turns to Judah and Tamar before returning to Joseph's service in Potiphar's household in Egypt.",
+      "verseRefs": [
+        "38:1-30",
+        "39:1-6"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Favoritism and two dreams",
+      "verses": "1-11",
+      "note": "Joseph’s report, tunic, and dreams deepen the brothers’ hostility."
+    },
+    {
+      "heading": "Sent to find the brothers",
+      "verses": "12-17",
+      "note": "Jacob sends Joseph, who follows their route from Shechem to Dothan."
+    },
+    {
+      "heading": "A murder plot interrupted",
+      "verses": "18-24",
+      "note": "Reuben persuades them to use a pit, intending to rescue Joseph."
+    },
+    {
+      "heading": "A sale and Reuben’s alarm",
+      "verses": "25-30",
+      "note": "Judah proposes sale and Joseph is taken toward Egypt; Reuben returns to an empty pit."
+    },
+    {
+      "heading": "A bloodied tunic and a grieving father",
+      "verses": "31-35",
+      "note": "The brothers create misleading evidence and Jacob refuses comfort."
+    },
+    {
+      "heading": "Joseph sold in Egypt",
+      "verses": "36",
+      "note": "The chapter closes with his entry into Potiphar’s ownership."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "37:4",
+      "text": "His brothers saw that their father loved him more than all his brothers, and they hated him, and couldn’t speak peaceably to him.",
+      "why": "The household’s unequal affection has already destroyed peaceful speech between the brothers."
+    },
+    {
+      "ref": "37:27",
+      "text": "Come, and let’s sell him to the Ishmaelites, and not let our hand be on him; for he is our brother, our flesh.” His brothers listened to him.",
+      "why": "Judah’s appeal to kinship accompanies a proposal to profit from Joseph’s sale."
+    },
+    {
+      "ref": "37:35",
+      "text": "All his sons and all his daughters rose up to comfort him, but he refused to be comforted. He said, “For I will go down to Sheol to my son, mourning.” His father wept for him.",
+      "why": "Jacob’s refusal of comfort shows the human cost of the fabricated death."
+    }
+  ],
+  "themes": [
+    "favoritism and hatred",
+    "dreams of reversal",
+    "failed rescue",
+    "enslavement for profit",
+    "clothing and recognition",
+    "parental grief"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What makes Joseph a target before the dreams?",
+      "answer": "He brings his father an evil report about his brothers, and Jacob openly loves him more than the other sons and gives him a distinctive tunic. The text reports these tensions without making them justification for what the brothers do.",
+      "verseRefs": [
+        "37:2-4"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How do the two dreams intensify the conflict?",
+      "answer": "The sheaves and then the sun, moon, and stars bow to Joseph's corresponding position. His brothers hear claims to rule, while Jacob rebukes him yet keeps the saying in mind; the future meaning remains open within this chapter.",
+      "verseRefs": [
+        "37:5-11"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does Reuben intend by the pit proposal?",
+      "answer": "He urges the brothers not to shed blood and proposes leaving Joseph in a pit. The narrator explicitly says his purpose is to rescue Joseph and restore him to his father, although the plan fails before he returns.",
+      "verseRefs": [
+        "37:21-24",
+        "37:29-30"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        21,
+        22,
+        23,
+        24,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Is Judah’s proposal an adequate act of mercy?",
+      "answer": "It averts the proposed killing but turns a brother into a source of profit and an enslaved person. Judah's statement that Joseph is their flesh makes the decision morally sharper rather than making the sale harmless.",
+      "verseRefs": [
+        "37:26-28"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Who takes Joseph from the pit?",
+      "answer": "Verse 28 introduces Midianite traders and then says they draw Joseph up and sell him to the Ishmaelites. The surrounding scene implicates the brothers in the sale, but the shifting group names and pronouns should not be smoothed into more precise staging than this chapter supplies.",
+      "verseRefs": [
+        "37:25-30",
+        "37:36"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        36
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What does “Sheol” convey in Jacob’s lament?",
+      "answer": "In his speech it is the destination of death to which he expects to go mourning for his son. The lament expresses the depth and expected duration of his grief; it does not provide a detailed map of the afterlife.",
+      "verseRefs": [
+        "37:33-35"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How does the tunic function twice?",
+      "answer": "Its initial gift displays Jacob's preference, and its later coating in goat's blood becomes misleading evidence. The brothers ask Jacob to identify it, allowing him to supply the false conclusion that a wild animal killed Joseph.",
+      "verseRefs": [
+        "37:3",
+        "37:23",
+        "37:31-33"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3,
+        23,
+        31,
+        32,
+        33
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "tunic",
+      "def": "Joseph’s distinctive garment, first a sign of favoritism and then the object used to mislead Jacob."
+    },
+    {
+      "term": "pit",
+      "def": "The empty, waterless hollow where the brothers put Joseph."
+    },
+    {
+      "term": "Sheol",
+      "def": "The realm of death named in Jacob’s grief for the son he believes lost."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "e16d28a630bd92dbedc07fadb7181241f66009bf7502b589d707b9205acf2f7b",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

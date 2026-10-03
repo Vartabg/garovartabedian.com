@@ -1,0 +1,230 @@
+{
+  "book": "GEN",
+  "chapter": 50,
+  "bookName": "Genesis",
+  "summary": "Joseph and an Egyptian escort mourn Jacob and carry him to the ancestral cave in Canaan before returning to Egypt. When the brothers fear revenge, Joseph names their evil intent yet promises provision in light of God's life-preserving purpose; at his own death he requires an oath that his bones will accompany the family's future departure from Egypt.",
+  "whyItMatters": "Genesis closes with remembered wrongdoing, a refusal of retaliation, and concrete care for vulnerable relatives. Jacob is buried in the promised land, but Joseph's coffin remains in Egypt as a sign that the family's return is still unfinished.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Egypt during mourning, the funeral journey to Canaan and back, and Joseph's final years and death in Egypt.",
+    "literaryForm": "Funeral narrative, renewed reconciliation dialogue, theological reflection on evil and preservation, and a final oath and death notice."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Jacob has delivered his final sayings, specified burial at Machpelah, and died. Joseph and his brothers must now fulfill the charge and live without their father's presence.",
+      "verseRefs": [
+        "49:28-33"
+      ]
+    },
+    "here": {
+      "text": "The burial journey fulfills Jacob's request, Joseph reassures his frightened brothers, and the final oath leaves the family awaiting a future return.",
+      "verseRefs": [
+        "50:1-21",
+        "50:22-26"
+      ]
+    },
+    "after": {
+      "text": "This is Genesis's conclusion. Joseph's promise that God will bring the family to the land sworn to the ancestors, and his request about his bones, leave departure from Egypt as the book's forward-looking prospect.",
+      "verseRefs": [
+        "50:24-26"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Mourning and permission to bury Jacob",
+      "verses": "1-6",
+      "note": "Embalming and Egyptian mourning precede Pharaoh’s consent to the sworn journey."
+    },
+    {
+      "heading": "The funeral journey and return",
+      "verses": "7-14",
+      "note": "A large company mourns and the sons bury Jacob at Machpelah before returning."
+    },
+    {
+      "heading": "The brothers’ renewed fear",
+      "verses": "15-18",
+      "note": "They request forgiveness and offer themselves as servants after Jacob’s death."
+    },
+    {
+      "heading": "Joseph refuses revenge and promises care",
+      "verses": "19-21",
+      "note": "He distinguishes their evil intent from God’s purpose to preserve life."
+    },
+    {
+      "heading": "Joseph’s last years, oath, and death",
+      "verses": "22-26",
+      "note": "He sees further generations, promises God’s visitation, and leaves instructions about his bones."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "50:20",
+      "text": "As for you, you meant evil against me, but God meant it for good, to save many people alive, as is happening today.",
+      "why": "Joseph distinguishes harmful human intention from the good he sees God bringing through the events."
+    },
+    {
+      "ref": "50:21",
+      "text": "Now therefore don’t be afraid. I will provide for you and your little ones.” He comforted them, and spoke kindly to them.",
+      "why": "Reassurance becomes an explicit promise to provide for the brothers and their children."
+    },
+    {
+      "ref": "50:25",
+      "text": "Joseph took an oath from the children of Israel, saying, “God will surely visit you, and you shall carry up my bones from here.”",
+      "why": "The oath about Joseph’s bones binds the ending in Egypt to a hoped-for future departure."
+    }
+  ],
+  "themes": [
+    "mourning and burial duty",
+    "fear after a parent’s death",
+    "forgiveness and provision",
+    "evil intent and providence",
+    "generations beyond Joseph",
+    "unfinished return"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why is Jacob embalmed before burial in Canaan?",
+      "answer": "Joseph commands the physicians to embalm him, and the account gives a period for that work and a longer period of Egyptian mourning before the journey. The chapter reports these preparations but does not provide a full explanation of Egyptian beliefs or embalming technique.",
+      "verseRefs": [
+        "50:1-6"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Does the whole household permanently leave Egypt for the funeral?",
+      "answer": "The little ones and livestock remain in Goshen, and Joseph, his brothers, and the escort return after the burial. This journey fulfills Jacob's burial request rather than completing the household's eventual departure from Egypt.",
+      "verseRefs": [
+        "50:7-14"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Is the brothers’ report of Jacob’s forgiveness command independently confirmed?",
+      "answer": "They send Joseph a message saying their father commanded it, but this chapter does not separately narrate Jacob giving that instruction. The reader can state what the brothers claim without deciding that the claim is certainly either fabricated or independently verified.",
+      "verseRefs": [
+        "50:15-17"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What does Joseph mean by asking whether he is in God’s place?",
+      "answer": "He uses the question to reassure the brothers when they fear repayment for their evil. In the following speech he refuses to turn his power into revenge and instead promises care for them and their children.",
+      "verseRefs": [
+        "50:18-21"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Does bringing good from the events make the brothers’ intention good?",
+      "answer": "Joseph explicitly calls their intention evil while saying God intended good through the same history to preserve many lives. The distinction should not be collapsed into praise for selling him or a rule that victims must describe their suffering as beneficial.",
+      "verseRefs": [
+        "50:20-21"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        20,
+        21
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What does “visit” mean in Joseph’s final promise?",
+      "answer": "It means God's future intervention on the family's behalf, explained immediately as bringing them out of Egypt to the land sworn to Abraham, Isaac, and Jacob. The term is given that specific direction by the sentence itself.",
+      "verseRefs": [
+        "50:24-25"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        24,
+        25
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Why does the book end with Joseph’s coffin still in Egypt?",
+      "answer": "Joseph dies before the promised departure, but obtains an oath that his bones will be carried up when God acts. The final coffin closes his life while leaving the ancestral land promise and the family's return awaiting fulfillment beyond Genesis.",
+      "verseRefs": [
+        "50:24-26"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        24,
+        25,
+        26
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "embalm",
+      "def": "The preservation of a body performed by physicians for Jacob and later reported for Joseph."
+    },
+    {
+      "term": "Machpelah",
+      "def": "The ancestral burial cave in Canaan where Jacob’s sons carry out his command."
+    },
+    {
+      "term": "visit",
+      "def": "God’s anticipated action to bring the family out of Egypt to the promised land."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "3c22877c8f3bfc5915b5031fae984065c4efc99a0f74632c80b79225801a012c",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

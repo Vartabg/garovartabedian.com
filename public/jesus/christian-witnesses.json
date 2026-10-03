@@ -1,0 +1,66 @@
+[
+  {
+    "id": "paul-undisputed",
+    "name": "Paul's undisputed letters",
+    "date": "c. AD 50–60",
+    "sourceYear": 55,
+    "distance": "about 20–30 years after the crucifixion",
+    "assessment": "Earliest surviving Christian writings",
+    "summary": "Seven letters are widely accepted as Paul's own. They predate the written Gospels and preserve earlier formulas about Jesus' death, burial, resurrection appearances, followers, and brother James.",
+    "establishes": [
+      "Jesus was remembered as a recent Jewish man who was crucified",
+      "Peter, James, the Twelve, and other followers were known by name",
+      "resurrection appearances were being proclaimed before Paul's letters"
+    ],
+    "limits": "Paul writes as a committed apostle, not a detached biographer. His letters establish early belief and named relationships; they do not independently verify a miracle.",
+    "sourceUrl": "/scriptures/protestant/1CO/15#v3"
+  },
+  {
+    "id": "mark-gospel",
+    "name": "The Gospel of Mark",
+    "date": "c. AD 65–75",
+    "sourceYear": 70,
+    "distance": "about 35–45 years after the crucifixion",
+    "assessment": "Earliest surviving narrative Gospel",
+    "summary": "Mark is generally dated around AD 70 and is the earliest complete Gospel that survives. It gathers earlier oral and written traditions into a continuous account of Jesus' ministry and death.",
+    "establishes": [
+      "a developed Jesus tradition existed by the first Jewish–Roman war",
+      "Jesus was placed firmly in Galilee, Judea, and the rule of Pilate",
+      "the crucifixion stood at the center of the earliest surviving narrative"
+    ],
+    "limits": "Mark is anonymous in the text and written to form faith as well as preserve memory. Individual episodes still require source criticism rather than automatic acceptance.",
+    "sourceUrl": "/scriptures/protestant/MRK/1"
+  },
+  {
+    "id": "synoptic-gospels",
+    "name": "Matthew and Luke",
+    "date": "c. AD 80–90",
+    "sourceYear": 85,
+    "distance": "about 50–60 years after the crucifixion",
+    "assessment": "Later Synoptic witnesses using earlier material",
+    "summary": "Matthew and Luke both use Mark while adding other sayings, stories, genealogies, and community memories. Their agreements can reflect shared dependence; their differences reveal distinct sources and theological aims.",
+    "establishes": [
+      "multiple streams of Jesus tradition circulated beyond Mark",
+      "communities preserved overlapping sayings and episodes",
+      "the movement interpreted Jesus within different Jewish and Gentile settings"
+    ],
+    "limits": "Three Gospels are not three independent witnesses at every point. Dependence on Mark must be separated from genuinely distinct material.",
+    "sourceUrl": "https://oyc.yale.edu/religious-studies/rlst-152/lecture-2"
+  },
+  {
+    "id": "john-gospel",
+    "name": "The Gospel of John",
+    "date": "c. AD 90–100",
+    "sourceYear": 95,
+    "distance": "about 60–70 years after the crucifixion",
+    "assessment": "Distinct later Gospel tradition",
+    "summary": "John presents a markedly different chronology, voice, and theological portrait while retaining the same broad setting: a Jewish Jesus, followers, conflict in Judea, and death under Pilate.",
+    "establishes": [
+      "a distinct stream of Jesus memory circulated by the late first century",
+      "core people and the execution setting overlap with the Synoptic tradition",
+      "claims about Jesus' identity developed in explicit theological language"
+    ],
+    "limits": "John's long speeches and chronology cannot simply be harmonized with the Synoptics. Historical use requires attention to the Gospel's later theological form.",
+    "sourceUrl": "/scriptures/protestant/JHN/1"
+  }
+]

@@ -1,0 +1,19 @@
+A translation switch exposed a data-integrity bug in my offline reader.
+
+On garovartabedian.com, switching from the World English Bible to the King James Version could update the selected edition before the replacement text finished loading. During that gap, saving a chapter could pair the previous wording with the new translation's label.
+
+The fix:
+• Clear stale text as soon as the translation changes.
+• Keep saving unavailable until the selected text is ready.
+• Ignore responses from superseded requests.
+• Show an explicit error when loading fails.
+
+The regression tests cover delayed requests, failed requests, shared links, and reopening the saved chapter offline. They check the actual wording and edition together.
+
+This is the kind of troubleshooting I enjoy: reproduce the failure, understand the state transition, repair it, and verify what the person using the product actually receives.
+
+My background includes customer-facing field service and enterprise hardware deployments. Today I also build software in Python and TypeScript, and I'm looking for Solutions Engineering, Implementation Engineering, and Technical Support opportunities.
+
+Try the reader: https://garovartabedian.com/scriptures/protestant/JHN/3
+
+#TechnicalSupport #ImplementationEngineer #TypeScript

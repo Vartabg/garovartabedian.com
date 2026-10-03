@@ -1,0 +1,227 @@
+{
+  "book": "EXO",
+  "chapter": 13,
+  "bookName": "Exodus",
+  "summary": "Moses commands Israel to remember the departure with unleavened bread, explain it to children, set apart firstborn animals, and redeem firstborn sons. God then leads the travelers by a longer wilderness route rather than the nearer Philistine road; Moses carries Joseph’s bones, and a cloud by day and fire by night guide the camp.",
+  "whyItMatters": "The departure immediately becomes an annual family memory and a claim on firstborn life. The travel notice links Joseph’s old request to the present journey and presents guidance as part of the still-uncertain road ahead.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "Israel on the way out of Egypt toward the wilderness, with the route by the Red Sea and the camp at Etham.",
+    "literaryForm": "Instruction on remembrance and firstborn dedication followed by a narrative of route, ancestral remains, and divine guidance."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "After the firstborn deaths, Pharaoh has expelled Israel, and the Passover meal has been instituted for later generations. This chapter continues the memory and firstborn instructions while the journey begins.",
+      "verseRefs": [
+        "12:29-51",
+        "13:1-3"
+      ]
+    },
+    "here": {
+      "text": "Family teaching and firstborn dedication give the departure lasting practices; the travelers then take a guarded wilderness route with Joseph’s bones and visible guidance.",
+      "verseRefs": [
+        "13:1-16",
+        "13:17-22"
+      ]
+    },
+    "after": {
+      "text": "Israel next camps by the sea, Pharaoh pursues with chariots, and the pillar moves behind the camp before the crossing.",
+      "verseRefs": [
+        "14:1-22"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "Firstborn claimed",
+      "verses": "1-2",
+      "note": "Yahweh declares Israel’s firstborn people and animals his."
+    },
+    {
+      "heading": "Remembering with unleavened bread",
+      "verses": "3-10",
+      "note": "Moses ties a yearly meal and children’s explanation to the strong-handed departure."
+    },
+    {
+      "heading": "Dedicating and redeeming firstborn",
+      "verses": "11-16",
+      "note": "The practice covers animals and sons, with a future answer to children’s questions."
+    },
+    {
+      "heading": "A longer road and Joseph’s bones",
+      "verses": "17-19",
+      "note": "God avoids the nearer Philistine route; Moses carries the remains named in Joseph’s oath."
+    },
+    {
+      "heading": "Cloud and fire lead the camp",
+      "verses": "20-22",
+      "note": "From Etham, visible pillars guide travel by day and night."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "13:8",
+      "text": "You shall tell your son in that day, saying, ‘It is because of that which Yahweh did for me when I came out of Egypt.’",
+      "why": "The rite is explicitly linked to a parent telling a child what Yahweh did in the departure."
+    },
+    {
+      "ref": "13:17",
+      "text": "When Pharaoh had let the people go, God didn’t lead them by the way of the land of the Philistines, although that was near; for God said, “Lest perhaps the people change their minds when they see war, and they return to Egypt”;",
+      "why": "The indirect route is explained by concern that war might make the people return to Egypt."
+    },
+    {
+      "ref": "13:19",
+      "text": "Moses took the bones of Joseph with him, for he had made the children of Israel swear, saying, “God will surely visit you, and you shall carry up my bones away from here with you.”",
+      "why": "Joseph’s bones connect the departure with his earlier oath and expectation of divine visitation."
+    }
+  ],
+  "themes": [
+    "firstborn dedication",
+    "yearly remembrance",
+    "teaching children",
+    "route away from war",
+    "Joseph’s bones",
+    "cloud and fire"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "How do families keep the departure in memory?",
+      "answer": "They eat unleavened bread for seven days in its season and tell a son why the service is observed. Moses links the repeated practice with Yahweh’s strong-handed action in bringing them out of bondage.",
+      "verseRefs": [
+        "13:3-10"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What is Abib in the instruction?",
+      "answer": "It is the month in which Moses says Israel is leaving Egypt and in which the yearly service is to be kept. The chapter gives that calendar setting without asking readers to convert it to a modern date.",
+      "verseRefs": [
+        "13:3-5",
+        "13:10"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        3
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does redeeming the firstborn involve here?",
+      "answer": "Firstborn male animals are set apart; a firstborn donkey is redeemed with a lamb or its neck is broken, and firstborn sons are to be redeemed. The text does not give every procedural detail for redeeming sons in these verses.",
+      "verseRefs": [
+        "13:11-16"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        11
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Why does the practice recall Egyptian firstborn deaths?",
+      "answer": "The explanation to children says Pharaoh’s stubborn refusal preceded the killing of Egypt’s firstborn, so Israel dedicates or redeems its own firstborn. The memory connects protected Israelite households with real deaths in Egypt rather than treating the event as costless.",
+      "verseRefs": [
+        "13:14-16"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        14
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why not take the shortest road toward the land?",
+      "answer": "The narrator says God avoids the nearer Philistine route because encountering war might make the people change their minds and return to Egypt. The longer wilderness path is explained by the travelers’ vulnerability to fear, even though they leave armed.",
+      "verseRefs": [
+        "13:17-18"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        17
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What does the WEB’s “Red Sea” name here?",
+      "answer": "The WEB uses “Red Sea” for the route through the wilderness. The hosted Hebrew has a term often rendered “Sea of Reeds”; the chapter does not settle which modern body of water is meant.",
+      "verseRefs": [
+        "13:17-18"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        17
+      ],
+      "evidenceSourceIds": [
+        "hosted-web",
+        "hosted-oshb"
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Why does Moses take Joseph’s bones?",
+      "answer": "Joseph had made Israel’s descendants swear they would carry his bones when God visited them. Moses’ action during departure answers that older request and connects the family’s Egyptian years to this journey.",
+      "verseRefs": [
+        "13:19"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        19
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What do cloud and fire do for the travelers?",
+      "answer": "Yahweh goes ahead in a cloud by day and fire by night to lead and give light, allowing movement in both periods. The passage emphasizes continuing guidance, not merely a sign seen once.",
+      "verseRefs": [
+        "13:20-22"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        20
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Abib",
+      "def": "The named month of the departure and of the yearly remembrance Moses commands."
+    },
+    {
+      "term": "redeem",
+      "def": "A firstborn donkey is exchanged for a lamb; firstborn sons are also to be redeemed, though this chapter does not give their procedure."
+    },
+    {
+      "term": "pillar",
+      "def": "The cloud or fire form in which Yahweh goes before the traveling camp."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "264d9149178c3cf6216ca09391be0ce389576ca155f316d7e35e029694aebeae",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

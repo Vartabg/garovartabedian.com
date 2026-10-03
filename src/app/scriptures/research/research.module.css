@@ -1,0 +1,45 @@
+.workspace { max-width: 76rem; margin: 2rem auto 5rem; line-height: 1.65; }
+.workspace h1 { max-width: 18ch; font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.1; margin-block: 1rem; }
+.lede { max-width: 55rem; font-size: 1.25rem; }
+.statusBar, .findingHead, .actions { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem 1.5rem; }
+.statusBar { justify-content: space-between; padding: .8rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: .5rem; }
+.disclosure, .meta { color: var(--muted-ink); font-size: .95rem; }
+.controls, .editorial { padding: clamp(1rem, 3vw, 2rem); margin-block: 2rem; border: 1px solid var(--line); background: var(--surface); border-radius: .5rem; }
+.controls h2 { margin-top: 0; }
+.presets { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.workspace button { padding: .65rem 1rem; min-height: 44px; border: 1px solid var(--line); border-radius: .3rem; background: var(--paper); color: var(--ink); cursor: pointer; font: inherit; }
+.workspace button:disabled { opacity: .55; cursor: not-allowed; }
+.workspace button.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.workspace :is(input, select, textarea) { display: block; width: 100%; box-sizing: border-box; padding: .65rem; border: 1px solid var(--line); border-radius: .3rem; color: var(--ink); background: var(--paper); font: inherit; min-height: 44px; margin-top: .3rem; }
+.workspace textarea { resize: vertical; }
+.workspace :is(input, select, textarea, button, summary):focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.workspace label { display: block; font-weight: 600; margin-bottom: 1rem; }
+.workspace label small, .sourceInput small { font-weight: normal; overflow-wrap: anywhere; }
+.workspace fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-block: 1.25rem; }
+.sourceInput, .passage { min-width: 0; }
+.passage { border: 1px solid var(--line); background: var(--surface); padding: clamp(1rem, 3vw, 1.5rem); border-radius: .4rem; }
+.passage h4 { font-size: 1.15rem; margin-top: 0; }
+.passage blockquote { white-space: pre-wrap; margin: 1rem 0; padding-left: 1rem; border-left: 3px solid var(--accent); }
+.workspace :is(pre, code, blockquote) { overflow-wrap: anywhere; }
+.workspace pre { white-space: pre-wrap; font: inherit; font-size: .95rem; }
+.workspace details { margin-block: 1rem; }
+.workspace summary { font-weight: 600; cursor: pointer; }
+.workspace .check { display: flex; gap: .65rem; align-items: center; font-weight: normal; }
+.workspace .check input { width: 1.15rem; height: 1.15rem; min-height: 0; margin: 0; }
+.history { margin-top: 1.5rem; }
+.progress, .notice, .error { padding: 1rem; border-left: 4px solid var(--accent); background: var(--surface); overflow-wrap: anywhere; }
+.error { border-left-color: #a93429; }
+.results { scroll-margin-top: 6rem; }
+.finding { padding-block: 1.5rem; border-top: 2px solid var(--line); }
+.findingHead { justify-content: space-between; }
+.findingHead h3 { margin: 0; text-transform: capitalize; }
+.badge { font-size: .85rem; padding: .25rem .7rem; border: 1px solid var(--line); border-radius: 2rem; }
+.probabilities { max-width: 38rem; }
+.probabilities > div { display: grid; grid-template-columns: minmax(9rem, 1fr) minmax(10rem, 1.2fr); gap: .75rem; margin-block: .5rem; }
+.probabilities dd { margin: 0; }
+.probabilities meter { width: 60%; vertical-align: middle; }
+.reviewForm { max-width: 42rem; padding-block: 1rem; }
+.reviewNote { background: var(--surface); padding: 1rem; border-left: 3px solid var(--accent); }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 720px) { .pair { grid-template-columns: 1fr; } .workspace h1 { font-size: 2.5rem; } .probabilities > div { grid-template-columns: 1fr; gap: 0; } .probabilities meter { width: 65%; } .actions { align-items: stretch; flex-direction: column; } }

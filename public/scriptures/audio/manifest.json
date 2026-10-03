@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "narrator": {
+    "id": "smooth-baritone-v2",
+    "name": "The Elder",
+    "description": "A smooth, grounded baritone reading with warmth and reverence."
+  },
+  "chapters": [
+    {
+      "translation": "web",
+      "book": "PSA",
+      "chapter": 23,
+      "src": "/scriptures/audio/web/PSA/23.m4a"
+    },
+    {
+      "translation": "web",
+      "book": "GEN",
+      "chapter": 1,
+      "src": "/scriptures/audio/web/GEN/1.m4a"
+    },
+    {
+      "translation": "web",
+      "book": "MAT",
+      "chapter": 1,
+      "src": "/scriptures/audio/web/MAT/1.m4a"
+    },
+    {
+      "translation": "web",
+      "book": "ROM",
+      "chapter": 8,
+      "src": "/scriptures/audio/web/ROM/8.m4a"
+    },
+    {
+      "translation": "web",
+      "book": "PRO",
+      "chapter": 1,
+      "src": "/scriptures/audio/web/PRO/1.m4a"
+    },
+    {
+      "translation": "kjv",
+      "book": "PSA",
+      "chapter": 23,
+      "src": "/scriptures/audio/kjv/PSA/23.m4a"
+    }
+  ]
+}

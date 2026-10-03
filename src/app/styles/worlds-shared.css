@@ -1,0 +1,1904 @@
+/* Auto-split from globals.css — edit carefully; keep selector ownership clear.
+   World-only: imported by each of the 8 world layouts (jesus/apostles/early/
+   church/angels/word/scriptures/evidence), never from globals.css, so /hire, /about,
+   /resume, /work, /services, and /contact don't pay for it. Rules shared with
+   the clean pages (the accessible type system, the story/clean paper texture)
+   live in core.css instead — see "Accessible display type" and "Paper, not
+   flat hex" there. */
+
+/* Cross-world semantic primitives. World components use these names instead
+   of depending on a different world's route-local stylesheet. */
+.world-tool-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  margin-bottom: 0.85rem;
+}
+.world-tool-head strong {
+  color: var(--ink);
+}
+.world-tool-head span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  text-align: right;
+}
+.world-cite {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.world-quote {
+  margin: 1rem 0 0.5rem;
+  padding: 0.85rem 1.15rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  font-size: 1.02rem;
+}
+.world-lane {
+  margin: 2.4rem 0 0.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 450;
+  font-variation-settings: var(--display-tune);
+  font-size: 1.05rem;
+  letter-spacing: 0;
+}
+.world-see-also {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.82rem;
+}
+.world-see-also a {
+  color: var(--accent);
+  font-weight: 600;
+}
+.world-see-also a:hover {
+  text-decoration: underline;
+}
+.world-close,
+.world-detail,
+.world-survival,
+.world-witness,
+.world-pair-head,
+.world-panel {
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.world-close {
+  margin: 2rem 0;
+  padding: 1.1rem 1.3rem;
+  font-size: 1.05rem;
+}
+.world-detail {
+  margin-top: 0.75rem;
+  padding: 0.8rem 1.1rem;
+  font-size: 0.95rem;
+}
+.world-detail p {
+  margin: 0.25rem 0 0.4rem;
+}
+.world-note {
+  margin: 1.25rem 0 0;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.world-survival {
+  margin: 1.5rem 0 2rem;
+  padding: 1.1rem 1.3rem 1rem;
+}
+.world-survival > p {
+  margin: 0.4rem 0 0.9rem;
+}
+.world-survival-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+.world-witness {
+  padding: 0.7rem 0.85rem;
+  background: var(--bg);
+}
+.world-witness strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--accent);
+}
+.world-witness p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.world-pair-block {
+  margin: 0 0 0.9rem;
+}
+.world-pair-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+.world-pair-head:hover,
+.world-pair-head[aria-expanded="true"] {
+  border-color: var(--accent);
+}
+.world-pair-refs {
+  margin: 0;
+}
+.world-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+.world-panel {
+  padding: 0.9rem 1.1rem;
+  font-size: 0.97rem;
+}
+.world-panel p {
+  margin: 0.25rem 0 0.75rem;
+}
+.world-map-sea {
+  fill: color-mix(in srgb, #a4bfbb 88%, var(--accent));
+}
+.world-map-land {
+  fill: color-mix(in srgb, var(--surface) 92%, var(--accent));
+  stroke: color-mix(in srgb, var(--line) 82%, var(--ink));
+  stroke-width: 1.25;
+}
+.world-map-region {
+  fill: color-mix(in srgb, var(--muted) 72%, transparent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+}
+.world-vnum {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72em;
+  font-weight: 700;
+  padding: 0 0.3rem 0 0;
+  vertical-align: super;
+}
+.world-vnum:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+@media (max-width: 640px) {
+  .world-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Detailed diagrams keep a readable intrinsic scale on phones instead of
+   shrinking 9–13px SVG labels into illegible specks. */
+.responsive-svg-frame {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  background:
+    linear-gradient(90deg, var(--surface) 30%, transparent) left / 42px 100%,
+    linear-gradient(270deg, var(--surface) 30%, transparent) right / 42px 100%,
+    radial-gradient(farthest-side at 0 50%, color-mix(in srgb, var(--ink) 20%, transparent), transparent) left / 16px 100%,
+    radial-gradient(farthest-side at 100% 50%, color-mix(in srgb, var(--ink) 20%, transparent), transparent) right / 16px 100%;
+  background-attachment: local, local, scroll, scroll;
+  background-repeat: no-repeat;
+  -webkit-overflow-scrolling: touch;
+}
+.responsive-svg-frame:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.responsive-svg-frame > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.responsive-svg-hint {
+  display: none;
+}
+@media (max-width: 760px) {
+  .responsive-svg-frame > svg {
+    width: 44rem;
+    max-width: none;
+    min-width: 44rem;
+  }
+  .responsive-svg-hint {
+    display: block;
+    margin: 0.45rem 0 0;
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+}
+
+/* Inline reading-unit plates (Jesus life, councils, angels, early sections).
+   Lives in shared CSS so every world layout gets the frame — not only /early. */
+.ew-section-plate {
+  margin: 1rem 0 1.5rem;
+  border: 1px solid color-mix(in oklab, var(--accent) 34%, var(--line));
+  border-radius: 2px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.ew-section-plate-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-bottom: 1px solid color-mix(in oklab, var(--accent) 34%, var(--line));
+  background: var(--surface);
+}
+.ew-section-plate-media-noscript {
+  display: none;
+}
+.ew-section-plate > .ew-section-plate-media:empty + noscript .ew-section-plate-media-noscript {
+  display: block;
+}
+.ew-section-plate-media img {
+  object-fit: cover;
+  filter: var(--plate-filter);
+  mix-blend-mode: var(--plate-blend);
+}
+.ew-section-plate figcaption {
+  margin: 0;
+  padding: 0.72rem 0.9rem 0.78rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+/* Generated world image plates — one raster identity per world landing page. */
+.world-image-plate {
+  margin: clamp(1.15rem, 2.6vw, 1.75rem) 0 clamp(1.35rem, 3vw, 1.95rem);
+  border: 1px solid color-mix(in oklab, var(--accent) 38%, var(--line));
+  border-radius: 2px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.world-image-plate-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-bottom: 1px solid color-mix(in oklab, var(--accent) 38%, var(--line));
+  background: var(--surface);
+}
+.world-image-plate-media img {
+  object-fit: cover;
+  filter: var(--plate-filter);
+  mix-blend-mode: var(--plate-blend);
+}
+.world-image-plate figcaption {
+  margin: 0;
+  padding: 0.76rem clamp(0.85rem, 2vw, 1.15rem) 0.84rem;
+  color: var(--muted);
+  font-size: clamp(0.78rem, 1.8vw, 0.88rem);
+  font-weight: 650;
+  line-height: 1.5;
+}
+@media (min-width: 760px) {
+  .world-image-plate {
+    margin-top: 1.85rem;
+  }
+}
+
+/* Tradition cards */
+.scr-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 2.25rem;
+}
+.scr-card {
+  display: block;
+  border: 1px solid color-mix(in oklab, var(--accent) 28%, var(--line));
+  border-top: 2px solid var(--accent);
+  background: var(--surface);
+  border-radius: 3px;
+  padding: 1.1rem 1.25rem;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+.scr-card:hover {
+  border-color: var(--accent);
+  background-color: color-mix(in oklab, var(--accent) 5%, var(--surface));
+}
+.scr-card h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.15rem;
+}
+.scr-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.scr-section-cards {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.scr-card-visual {
+  display: block;
+  overflow: hidden;
+  margin: -0.2rem 0 0.9rem;
+  border: 1px solid color-mix(in oklab, var(--accent) 18%, var(--line));
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--accent) 8%, transparent), transparent 55%),
+    color-mix(in oklab, var(--surface) 92%, var(--accent));
+}
+.scr-card-visual svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ew-card-plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: saturate(0.96) contrast(1.03);
+}
+.scr-card:hover .scr-card-visual,
+.scr-card:focus-visible .scr-card-visual {
+  border-color: color-mix(in oklab, var(--accent) 54%, var(--line));
+}
+.vp-line,
+.vp-thread,
+.vp-letter,
+.vp-branch,
+.vp-river,
+.vp-fence-post,
+.vp-fenced,
+.vp-free,
+.vp-fill-stroke {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.vp-line {
+  stroke: var(--muted);
+  stroke-width: 2;
+  opacity: 0.65;
+}
+.vp-line.strong {
+  stroke: var(--ink);
+  stroke-width: 2.4;
+  opacity: 0.75;
+}
+.vp-line.ember {
+  stroke: var(--fenced, #9c4126);
+}
+.vp-thread,
+.vp-fill-stroke {
+  stroke: var(--accent);
+  stroke-width: 2.3;
+  opacity: 0.82;
+}
+.vp-letter {
+  stroke: var(--accent);
+  stroke-width: 1.7;
+  stroke-dasharray: 5 5;
+  opacity: 0.45;
+}
+.vp-branch {
+  stroke: var(--accent);
+  stroke-width: 2.6;
+  opacity: 0.58;
+}
+.vp-branch.trunk {
+  stroke-width: 4;
+  opacity: 0.78;
+}
+.vp-panel {
+  fill: color-mix(in oklab, var(--surface) 86%, var(--accent));
+  stroke: var(--line);
+  stroke-width: 1.3;
+}
+.vp-panel.dark {
+  fill: color-mix(in oklab, #0f1320 82%, var(--accent));
+}
+.vp-ring {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.2;
+  opacity: 0.72;
+}
+.vp-fill,
+.vp-dot {
+  fill: var(--accent);
+  opacity: 0.7;
+}
+.vp-fill.alt,
+.vp-dot.alt {
+  fill: color-mix(in oklab, var(--accent) 58%, var(--ink));
+}
+.vp-fill.ember,
+.vp-dot.ember {
+  fill: var(--fenced, #9c4126);
+}
+.vp-grid {
+  stroke: var(--line);
+  stroke-width: 1;
+  opacity: 0.8;
+}
+.vp-label {
+  fill: var(--accent);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+}
+.vp-land {
+  fill: color-mix(in oklab, var(--surface) 80%, var(--accent));
+  stroke: var(--line);
+  stroke-width: 1.1;
+}
+.vp-water {
+  fill: color-mix(in oklab, #d5e4e2 82%, var(--accent));
+}
+.vp-river {
+  stroke: color-mix(in oklab, #9fbfbc 78%, var(--accent));
+  stroke-width: 3;
+}
+.vp-fence-post,
+.vp-fenced {
+  stroke: var(--fenced, #9c4126);
+  stroke-width: 3;
+  opacity: 0.72;
+}
+.vp-free {
+  stroke: var(--free, #3f7d52);
+  stroke-width: 3;
+  opacity: 0.78;
+}
+.scr-card .scr-count {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.scr-toolbar select,
+.scr-btn {
+  min-block-size: var(--control-target-min);
+  border: 1px solid var(--line);
+  background: color-mix(in oklab, var(--surface) 70%, transparent);
+  color: var(--muted);
+  border-radius: 8px;
+  padding: 0.4rem 0.65rem;
+  font: inherit;
+  font-size: 0.86rem;
+}
+.scr-btn {
+  display: inline-flex;
+  min-inline-size: var(--control-target-min);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  transition:
+    color var(--control-motion-duration) var(--control-motion-ease),
+    background-color var(--control-motion-duration) var(--control-motion-ease),
+    border-color var(--control-motion-duration) var(--control-motion-ease),
+    transform 100ms var(--control-motion-ease);
+}
+.scr-toolbar select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 1.5rem;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: right 0.65rem center, right 0.5rem center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.scr-btn:is(:disabled, [aria-disabled="true"]) {
+  border-color: var(--button-disabled-border);
+  background: var(--button-disabled-bg);
+  color: var(--button-disabled-fg);
+  opacity: 1;
+  pointer-events: none;
+}
+.scr-btn:not(:disabled, [aria-disabled="true"]):active {
+  transform: translateY(1px) scale(0.985);
+}
+.scr-btn:is(.scr-btn-active, [aria-pressed="true"]) {
+  --_button-state-ring: inset 0 0 0 2px currentColor;
+  box-shadow: var(--_button-state-ring);
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-toolbar select:hover,
+  .scr-btn:not(:disabled, [aria-disabled="true"]):hover {
+    border-color: var(--accent);
+    background: color-mix(in oklab, var(--accent) 8%, var(--surface));
+    color: var(--ink);
+  }
+}
+
+/* Search results */
+.scr-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+.scr-hit {
+  margin: 0 0 1.15rem;
+}
+.scr-hit .scr-ref {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+.scr-hit-preview {
+  margin-top: 0.35rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.scr-hit-preview summary {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.7rem;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.scr-hit-preview > span {
+  display: block;
+  padding: 0 0.7rem 0.75rem;
+  color: var(--ink);
+  line-height: 1.55;
+}
+mark.scr-hl {
+  background: #f0dda6;
+  color: #17140c;
+  border-radius: 3px;
+  padding: 0 0.12em;
+}
+.scr-empty {
+  color: var(--muted);
+}
+
+/* The canon strip — the page's fingerprint on the whole Bible. */
+.scr-canonstrip {
+  margin: 1.25rem 0 1.75rem;
+}
+.scr-canonstrip svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.scr-cs-book {
+  fill: var(--line);
+  opacity: 0.5;
+}
+.scr-cs-book.alt {
+  opacity: 0.85;
+}
+.scr-cs-tick {
+  stroke: var(--accent);
+  stroke-width: 1.3;
+}
+.scr-cs-label {
+  fill: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+.scr-canonstrip .scr-meta {
+  margin-top: 0.15rem;
+}
+
+/* Topics (Nave's Topical Bible) */
+.scr-topics-search {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  margin-top: 1.5rem;
+}
+.scr-topics-search:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.scr-topic-bars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42px, 1fr));
+  gap: 0.35rem;
+  align-items: end;
+  min-height: 8.2rem;
+}
+.scr-topic-bars button {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 0.22rem;
+  min-width: var(--control-target-min);
+  min-height: 7.5rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.scr-topic-bars button.is-active,
+.scr-topic-bars button[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-topic-bars button:hover {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+}
+.scr-topic-bar {
+  align-self: end;
+  display: block;
+  min-height: var(--h, 18%);
+  border-radius: 7px 7px 3px 3px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 78%, white), var(--accent));
+}
+.scr-topic-letter {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+.scr-topic-count {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+}
+.scr-topics-az {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 1rem 0 1.5rem;
+}
+.scr-topics-az button {
+  min-width: var(--control-target-min);
+  min-height: var(--control-target-min);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 0.25rem 0.55rem;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-topics-az button:hover {
+    border-color: var(--accent);
+    color: var(--ink);
+  }
+}
+.scr-topics-az button.is-active,
+.scr-topics-az button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.scr-topics-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  columns: 15rem 3;
+  column-gap: 2.25rem;
+}
+.scr-topics-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0;
+  break-inside: avoid;
+}
+.scr-topics-list a {
+  color: var(--ink);
+  font-weight: 600;
+}
+.scr-topics-list a:hover {
+  color: var(--accent);
+}
+.scr-topics-list span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+.scr-topic-items {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  max-width: 100%;
+}
+.scr-topic-items li {
+  border-top: 1px solid var(--line);
+  padding: 0.75rem 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 80px;
+}
+.scr-topic-items li.is-sub {
+  padding-left: 1.3rem;
+  border-top: none;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.scr-topic-items .an-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.6rem;
+  margin-top: 0.35rem;
+}
+.scr-topic-items .an-refs a {
+  color: var(--accent);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* ── Paper, not flat hex — grain and light ──────────────────────────
+   A few hundred bytes of SVG noise and one radial wash of each room's
+   own accent behind its hero: enough that the parchment reads as
+   material, never enough to be noticed as an effect. Sits after every
+   world block because their `background: var(--bg)` shorthand would
+   otherwise clear these layers. */
+.world-scr,
+.world-jesus,
+.world-apostles,
+.world-early,
+.world-word,
+.world-church {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(72rem 34rem at 18% 0, color-mix(in oklab, var(--accent) 6%, transparent), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+}
+.world-angels {
+  --plate-filter: grayscale(1) sepia(0.45) contrast(1.05) brightness(0.82);
+  --plate-blend: screen;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(72rem 40rem at 50% -8rem, color-mix(in oklab, var(--accent) 8%, transparent), transparent 72%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+}
+
+/* ── Living manuscript system ────────────────────────────────────
+   Shared across all seven worlds: ruled folios, marginal wayfinding,
+   pigment hierarchy, and square archival controls instead of app chrome. */
+.world-shell {
+  --paper: var(--surface);
+  padding-bottom: calc(3.4rem + env(safe-area-inset-bottom));
+}
+
+.world-shell .site-header {
+  position: relative;
+  z-index: 100;
+  border-bottom: 3px double color-mix(in oklab, var(--accent) 38%, var(--line));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.world-shell .brand {
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+
+.world-shell main > .wrap > :is(h1, .kicker + h1) {
+  text-wrap: balance;
+}
+
+.world-shell main > .wrap > h1 {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.world-shell main > .wrap > h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: min(9rem, 42%);
+  height: 3px;
+  border-block: 1px solid var(--accent);
+}
+
+.world-shell :where(.kicker, h2, .world-next-label, .source-basis-kicker, .source-group-kicker) {
+  color: var(--accent);
+}
+
+.world-shell :where(.lede, p, li, dd, figcaption) {
+  text-wrap: pretty;
+}
+
+.world-shell :where(blockquote) {
+  border-left: 3px solid var(--accent);
+  border-radius: 0;
+  background: var(--surface);
+  padding: 1rem 1.2rem;
+}
+
+.world-shell .world-guide {
+  border: 1px solid color-mix(in oklab, var(--accent) 38%, var(--line));
+  border-left: 4px solid var(--accent);
+  border-radius: 2px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 3px color-mix(in oklab, var(--accent) 4%, transparent);
+}
+
+.world-shell .wg-nav {
+  gap: 0.25rem 0.45rem;
+}
+
+.world-shell .wg-nav a {
+  border-color: transparent;
+  border-bottom-color: var(--line);
+  border-radius: 0;
+  padding-block: 0.28rem;
+  padding-inline: 0.45rem;
+}
+
+.world-shell .wg-nav a:hover,
+.world-shell .wg-nav a[aria-current="page"] {
+  border-color: transparent;
+  border-bottom-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 7%, var(--surface));
+}
+
+.world-shell {
+  --control-radius: 2px;
+  --button-shadow: none;
+  --button-shadow-hover: none;
+  --button-primary-bg: var(--accent);
+  --button-primary-fg: var(--accent-ink);
+  --button-primary-border: var(--accent);
+  --button-primary-hover: var(--accent-deep);
+  --button-secondary-bg: color-mix(in oklab, var(--surface) 94%, var(--accent));
+  --button-secondary-fg: var(--ink);
+  --button-secondary-border: color-mix(in oklab, var(--ink) 55%, var(--surface));
+  --button-secondary-hover: color-mix(in oklab, var(--surface) 88%, var(--accent));
+  --button-ghost-bg: transparent;
+  --button-ghost-fg: var(--ink);
+  --button-ghost-border: color-mix(in oklab, var(--ink) 55%, var(--surface));
+  --button-ghost-hover: color-mix(in oklab, var(--accent) 9%, transparent);
+  --button-danger-bg: var(--rubric);
+  --button-danger-fg: var(--folio);
+  --button-danger-border: var(--rubric);
+  --button-danger-hover: color-mix(in oklab, var(--rubric) 84%, black);
+  --button-disabled-bg: color-mix(in oklab, var(--surface) 84%, var(--line));
+  --button-disabled-fg: color-mix(in oklab, var(--muted) 72%, var(--surface));
+  --button-disabled-border: color-mix(in oklab, var(--line) 78%, transparent);
+}
+
+.world-shell :where(
+  .world-disclosure,
+  .world-next-grid a,
+  .source-basis,
+  .source-group,
+  .scr-card,
+  .scr-card-visual,
+  .card,
+  .tag,
+  .source-basis-link,
+  .source-index a,
+  .source-pill,
+  .scr-toolbar select,
+  .scr-btn,
+  .scr-topics-search,
+  .artplate-frame
+) {
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.world-shell .scr-btn:focus-visible {
+  outline: 2px solid var(--control-focus-inner);
+  outline-offset: 0;
+  box-shadow: 0 0 0 4px var(--control-focus-outer);
+}
+/* World-specific learning tools inherit the same archival edge treatment.
+   Rounded bars inside charts stay rounded because they encode magnitude, not UI. */
+.world-shell :where(
+  [class$="-map"],
+  [class$="-panel"],
+  [class$="-card"],
+  [class$="-rail"],
+  [class$="-ribbon"],
+  [class$="-archive"],
+  [class$="-close"],
+  [class$="-case"],
+  [class$="-survival"],
+  [class$="-witness"],
+  [class$="-scroll"],
+  [class$="-note"],
+  [class$="-nav"],
+  [class$="-controls"],
+  [class$="-side"]
+) {
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.world-shell :where(
+  .ch-section-links a,
+  .ap-section-links a,
+  [class*="-chips"] span,
+  [class*="-facts"] span,
+  [class*="-themes"] button,
+  [class*="-controls"] button
+) {
+  border-radius: 2px;
+}
+
+.world-shell :where(.world-disclosure, .source-basis) {
+  background: var(--surface);
+}
+
+.world-shell .world-disclosure--deep {
+  border-color: color-mix(in srgb, var(--accent) 46%, var(--line));
+  background: var(--surface);
+}
+
+.world-shell .world-next {
+  border-top: 3px double color-mix(in oklab, var(--accent) 32%, var(--line));
+}
+
+.world-shell .world-next-grid a {
+  border-left: 3px solid color-mix(in oklab, var(--accent) 70%, var(--line));
+}
+
+.world-shell .site-footer {
+  border-top: 3px double color-mix(in oklab, var(--accent) 34%, var(--line));
+  background: color-mix(in oklab, var(--surface) 74%, transparent);
+}
+
+@media (min-width: 1100px) {
+  .world-shell main > .wrap:has(> .world-guide) .wg-nav a {
+    border: 0;
+    border-left: 2px solid transparent;
+    border-radius: 0;
+    padding: 0.42rem 0.65rem;
+  }
+
+  .world-shell main > .wrap:has(> .world-guide) .wg-nav a:hover,
+  .world-shell main > .wrap:has(> .world-guide) .wg-nav a[aria-current="page"] {
+    border-left-color: var(--accent);
+  }
+}
+
+/* ── World thresholds ─────────────────────────────────────────────
+   The front door established a cinematic visual language. Each world home
+   now opens with the same confidence while retaining its own image, pigment,
+   copy, and investigation paths. Deep rooms keep the quieter manuscript
+   layout and pinned orientation rail above. */
+.world-brand-lockup {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.world-home-seal {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 48%, var(--line));
+  border-radius: 50%;
+  color: var(--accent);
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.world-home-seal:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  color: var(--accent-deep);
+  transform: translateY(-1px);
+}
+
+.world-home-seal .st-cross-mark {
+  width: 1.05rem;
+  height: 1.45rem;
+}
+
+.world-home-seal .st-cross-mark::after {
+  top: 0.46rem;
+}
+
+/* ── World thresholds: the leaf ──────────────────────────────────
+   A world opens the way a chapter does: copy on the world's own ground, the
+   image beside it as a framed plate with its caption, the orientation rail
+   above in normal flow. No full-screen render, no shade, no glass. */
+.world-shell:has(.world-home-hero) {
+  --world-home-width: 82rem;
+}
+
+.world-shell main > .wrap:has(> .world-home-hero) {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+.world-shell main > .wrap:has(> .world-home-hero) > :not(.world-guide, .world-home-hero) {
+  width: min(calc(100% - 3rem), var(--maxw));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.world-shell main > .wrap:has(> .world-home-hero) > .world-guide {
+  width: min(calc(100% - 3rem), var(--world-home-width));
+  margin: 0 auto;
+}
+
+/* On a world home the orientation rail runs across the top as one row; the
+   deep-page sidebar rules (core.css, 1100px and up) would stack it. */
+.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-grid {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+}
+
+.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.5rem;
+}
+
+.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-nav a {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 0.4rem 0.55rem;
+  background: transparent;
+}
+
+.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-nav a:hover,
+.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-nav a[aria-current="page"] {
+  border-color: transparent;
+  border-bottom-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 7%, transparent);
+}
+
+.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-source-disclosure {
+  border-top: 0;
+  border-left: 1px solid var(--line);
+  padding-top: 0;
+  padding-left: 0.75rem;
+}
+
+.world-home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 30rem);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  width: min(calc(100% - 3rem), var(--world-home-width));
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--ink);
+}
+
+.world-home-hero-copy {
+  min-width: 0;
+}
+
+.world-home-hero-eyebrow {
+  margin: 0 0 0.6rem;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 450;
+  font-variation-settings: var(--display-tune);
+  font-size: 1.05rem;
+  letter-spacing: 0;
+}
+
+.world-home-hero h1 {
+  max-width: 12ch;
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  font-size: clamp(2.6rem, 5.4vw, 4.8rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+  text-wrap: balance;
+  /* The old threshold clipped its title; the leaf cannot. Under enlarged or
+     dyslexic type a single word can outgrow a phone column, so it may break
+     rather than widen the page. */
+  overflow-wrap: anywhere;
+}
+
+.world-home-hero h1::after {
+  display: none;
+}
+
+.world-home-hero-lede {
+  max-width: 36rem;
+  margin-top: 1.1rem;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.world-home-hero-facets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.6rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.world-home-hero-facets li + li::before {
+  content: "·";
+  margin-right: 0.6rem;
+  color: var(--accent);
+}
+
+.world-home-hero-plate {
+  --plate-ar: 3 / 2;
+  align-self: center;
+}
+
+.world-home-hero-art {
+  object-position: center;
+}
+
+.world-home-hero[data-world="scriptures"] .world-home-hero-art {
+  object-position: center 58%;
+}
+
+.world-home-hero[data-world="jesus"] .world-home-hero-art {
+  object-position: center 54%;
+}
+
+.world-home-hero[data-world="church"] .world-home-hero-art,
+.world-home-hero[data-world="word"] .world-home-hero-art {
+  object-position: center 48%;
+}
+
+@media (max-width: 899px) {
+  .world-home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .world-home-hero h1 {
+    font-size: clamp(2.1rem, 9vw, 3.6rem);
+  }
+
+  .world-home-hero-plate {
+    max-width: 34rem;
+  }
+}
+
+/* The route chooser becomes the second major composition: a dark editorial
+   lead beside numbered, scan-friendly alternatives. */
+.world-shell .world-entry {
+  grid-template-columns: minmax(18rem, 0.82fr) minmax(0, 1.18fr);
+  width: min(calc(100% - 3rem), 68rem);
+  /* Tight desk rhythm: the entry card is the first useful action below the
+     capped hero, so its top margin stays small at every viewport. */
+  margin: clamp(2rem, 4vw, 3rem) auto;
+  overflow: hidden;
+  border: 0;
+  border-top: 3px solid var(--accent);
+  background: var(--surface);
+  box-shadow: 0 24px 64px color-mix(in srgb, var(--ink) 14%, transparent);
+}
+
+.world-shell .world-entry-lead {
+  justify-content: center;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  background:
+    radial-gradient(
+      34rem 24rem at 18% 8%,
+      color-mix(in srgb, var(--accent) 24%, transparent),
+      transparent 68%
+    ),
+    color-mix(in oklab, var(--accent-deep) 58%, #091018);
+  color: #fff;
+}
+
+.world-shell .world-entry-eyebrow {
+  color: color-mix(in srgb, var(--accent) 30%, #fff);
+  letter-spacing: 0.18em;
+}
+
+.world-shell .world-entry-lead h2 {
+  max-width: 13ch;
+  border-bottom: 0;
+  color: #fff;
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  letter-spacing: -0.035em;
+  line-height: 1;
+  text-transform: none;
+  overflow-wrap: break-word;
+}
+
+.world-shell .world-entry-note {
+  max-width: 29rem;
+  margin: 0.75rem 0 1rem;
+  color: rgb(255 255 255 / 70%);
+  font-size: 0.96rem;
+}
+
+.world-shell .world-entry-primary {
+  --control-radius: 999px;
+  --button-primary-bg: #fff;
+  --button-primary-fg: #091018;
+  --button-primary-border: #fff;
+  --button-primary-hover: #fff;
+  min-width: 0;
+  min-height: 3.15rem;
+  border-color: #fff;
+  border-radius: 2px;
+  background: #fff;
+  color: #091018;
+  padding-inline: 1.05rem;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.world-shell .world-entry-paths {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 0;
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+  background: var(--surface);
+}
+
+.world-shell .world-entry-paths > p {
+  margin-bottom: 0.75rem;
+}
+
+.world-shell .world-entry-paths li + li {
+  border-color: color-mix(in srgb, var(--accent) 18%, var(--line));
+}
+
+.world-shell .world-entry-path {
+  grid-template-columns: minmax(0, 1fr) auto;
+  min-height: 5rem;
+  gap: 0.4rem 0.8rem;
+  margin-inline: -0.7rem;
+  padding: 0.8rem 0.7rem;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.world-shell .world-entry-path:hover {
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+  transform: translateX(3px);
+}
+
+
+.world-entry-path-end {
+  display: flex;
+  min-width: 4.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  color: var(--accent);
+}
+
+.world-entry-path-end > span {
+  font-size: 1rem;
+  transition: transform 160ms ease;
+}
+
+.world-entry-path:hover .world-entry-path-end > span {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 759px) {
+  .world-shell:has(.world-home-hero) > .site-header .wrap {
+    padding-inline: 1rem;
+  }
+
+  .world-shell
+    main
+    > .wrap:has(> .world-home-hero)
+    > .world-guide
+    .wg-source-disclosure {
+    border-top: 1px solid rgb(255 255 255 / 18%);
+    border-left: 0;
+    padding-top: 0.5rem;
+    padding-left: 0;
+  }
+
+  .world-shell .world-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .world-shell .world-entry-paths {
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 560px) {
+  .world-shell:has(.world-home-hero) > .site-header .brand {
+    font-size: 0.9rem;
+  }
+
+  .world-shell
+    main
+    > .wrap:has(> .world-home-hero)
+    > .world-guide
+    .wg-mobile-menu
+    summary {
+    border-color: rgb(255 255 255 / 24%);
+    background: rgb(255 255 255 / 7%);
+  }
+
+  .world-shell
+    main
+    > .wrap:has(> .world-home-hero)
+    > .world-guide
+    .wg-mobile-menu
+    summary
+    :is(span, strong) {
+    color: #fff;
+  }
+
+  .world-home-hero h1 {
+    font-size: clamp(2.75rem, 15vw, 4.25rem);
+  }
+
+  .world-home-hero-facets {
+    margin-top: 1.75rem;
+    /* .a11y-trigger is fixed at bottom-right (3.25rem circle, up to 1rem
+       offset here). A long lede centers this list low enough on some
+       worlds (e.g. Apostles) that its last pill would render underneath
+       the button; reserve that corner so no facet ever lands there. */
+    padding-right: calc(3.25rem + 1rem + 0.5rem);
+  }
+
+  .world-home-hero-facets li {
+    min-height: 2.75rem;
+  }
+
+  .world-shell main > .wrap:has(> .world-home-hero) > :not(.world-guide, .world-home-hero),
+  .world-shell .world-entry {
+    width: calc(100% - 2rem);
+  }
+
+  .world-shell .world-entry {
+    margin-block: 3rem;
+  }
+
+  .world-shell .world-entry-lead {
+    padding: 2rem 1.25rem;
+  }
+
+  .world-shell .world-entry-paths {
+    padding: 1.15rem;
+  }
+
+  .world-shell .world-entry-path {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .world-entry-path-end {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+}
+
+html[data-a11y-size="largest"] .world-home-hero,
+html[data-a11y-spacing="spacious"] .world-home-hero {
+  min-height: 52rem;
+}
+
+/* Art plate — a reserved, parchment-grounded frame for a PD artwork,
+   shared by the lens gallery and the church faces. */
+.artplate {
+  margin: 0;
+}
+.artplate-frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.artplate-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: var(--plate-filter);
+  mix-blend-mode: var(--plate-blend);
+  transition: filter 240ms ease;
+}
+/* The work itself is evidence: its colour is one hover or focus away, and
+   stays in view on devices with no hover to reveal it. */
+.artplate:hover .artplate-frame img,
+.artplate:focus-within .artplate-frame img {
+  filter: none;
+  mix-blend-mode: normal;
+}
+/* The glass: a loupe that follows a fine pointer over the plate (ArtPlate.tsx
+   positions it and sets its background). Hidden wherever there is no hover. */
+.artplate-loupe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  outline: 1px solid var(--deep-gold);
+  background-repeat: no-repeat;
+  background-color: var(--surface);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease;
+}
+@media (hover: none) {
+  .artplate-loupe {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .artplate-loupe {
+    transition: none;
+  }
+}
+@media (hover: none) {
+  .artplate-frame img {
+    filter: none;
+    mix-blend-mode: normal;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .artplate-frame img {
+    transition: none;
+  }
+}
+.artplate-missing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.artplate-missing-title {
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+.artplate-missing-cta {
+  color: var(--accent);
+  font-size: 0.78rem;
+}
+.artplate figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.4rem 0.1rem 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.artplate figcaption strong {
+  color: var(--ink);
+  font-size: 0.88rem;
+  line-height: 1.3;
+}
+/* Appearance is a reading preference, not a new identity for every world.
+   Pigments stay world-specific; paper, ink, and boundaries move together.
+   The cinematic entrance art is untouched because these tokens govern the
+   content surface and chrome around it. */
+.world-scr {
+  --reading-accent-dark: #d6b66f;
+  --reading-accent-deep-dark: #c5a356;
+}
+
+.world-jesus {
+  --reading-accent-dark: #e8a69a;
+  --reading-accent-deep-dark: #d99084;
+}
+
+.world-apostles {
+  --reading-accent-dark: #eca783;
+  --reading-accent-deep-dark: #d9916e;
+}
+
+.world-early {
+  --reading-accent-dark: #9ccab7;
+  --reading-accent-deep-dark: #82b9a3;
+}
+
+.world-church {
+  --reading-accent-dark: #c8a8df;
+  --reading-accent-deep-dark: #b893d2;
+}
+
+.world-word {
+  --reading-accent-dark: #9dbfe4;
+  --reading-accent-deep-dark: #82abd7;
+}
+
+.world-evidence {
+  --reading-accent-dark: #8ccdd6;
+  --reading-accent-deep-dark: #6fb9c4;
+}
+
+html[data-a11y-theme="dark"]
+  :is(
+    .world-scr,
+    .world-jesus,
+    .world-apostles,
+    .world-early,
+    .world-church,
+    .world-word,
+    .world-evidence
+  ) {
+  --bg: #17110c;
+  --surface: #211912;
+  --ink: #eedfc2;
+  --muted: #b5a68a;
+  --line: #4a3b2b;
+  --accent: var(--reading-accent-dark);
+  --accent-deep: var(--reading-accent-deep-dark);
+  --accent-ink: #17110c;
+}
+
+/* .wd-fn-* chart marks (see word.css) answer to the 3:1 mark threshold, not
+   the 4.5:1 text threshold --fenced-ink/--free-ink already carry into dark
+   mode above. --free-mark clears 3:1 against this world's dark --bg/--surface
+   unmodified; --fence-mark does not (falls to ~2.1:1–2.4:1), so it swaps to
+   --fence-mark-dark here — chosen to hold the same ΔE 10.4 deuteranopia
+   separation from --free-mark that word.css's mark pair targets. Re-run the
+   dataviz palette validator before changing either value. */
+html[data-a11y-theme="dark"] .world-word {
+  --fence-mark: var(--fence-mark-dark);
+}
+
+/* Evidence lens pigments (see evidence.css) are text colors answering to the
+   4.5:1 text threshold. The raw pigments fall to ~2:1 on the shared dark
+   surface, so they swap to lightened values here — each borrowed from the
+   sibling world that already validates that hue in dark mode (teal/brass/
+   violet/ember). Verified locally at 7.3:1–9.8:1 on the dark ramp. */
+html[data-a11y-theme="dark"] .world-evidence {
+  --observed: #7fc9d4;
+  --inferred: #d6b66f;
+  --interpreted: #c8a8df;
+  --limit: #e8a69a;
+}
+
+html[data-a11y-theme="light"] .world-angels {
+  --plate-filter: grayscale(1) sepia(0.6) contrast(1.06) brightness(1.06);
+  --plate-blend: multiply;
+  --bg: #e8e6df;
+  --surface: #f8f5ed;
+  --ink: #292a2e;
+  --muted: #62656d;
+  --line: #c9c9c4;
+  --accent: #765416;
+  --accent-deep: #593d0e;
+  --accent-ink: #fbf6ea;
+  --holy: #765416;
+  --fallen: #8d3e1f;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-a11y-theme="system"]
+    :is(
+      .world-scr,
+      .world-jesus,
+      .world-apostles,
+      .world-early,
+      .world-church,
+      .world-word,
+      .world-evidence
+    ) {
+    --bg: #17110c;
+    --surface: #211912;
+    --ink: #eedfc2;
+    --muted: #b5a68a;
+    --line: #4a3b2b;
+    --accent: var(--reading-accent-dark);
+    --accent-deep: var(--reading-accent-deep-dark);
+    --accent-ink: #17110c;
+  }
+
+  html[data-a11y-theme="system"] .world-word {
+    --fence-mark: var(--fence-mark-dark);
+  }
+
+  html[data-a11y-theme="system"] .world-evidence {
+    --observed: #7fc9d4;
+    --inferred: #d6b66f;
+    --interpreted: #c8a8df;
+    --limit: #e8a69a;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html[data-a11y-theme="system"] .world-angels {
+    --bg: #e8e6df;
+    --plate-filter: grayscale(1) sepia(0.6) contrast(1.06) brightness(1.06);
+    --plate-blend: multiply;
+    --surface: #f8f5ed;
+    --ink: #292a2e;
+    --muted: #62656d;
+    --line: #c9c9c4;
+    --accent: #765416;
+    --accent-deep: #593d0e;
+    --accent-ink: #fbf6ea;
+    --holy: #765416;
+    --fallen: #8d3e1f;
+  }
+}
+
+/* Meaning rail — the in-browser "ask in your own words" search shared by the
+   Words room and the Writings shelf. Neutral tokens only, so each world's own
+   palette carries through without a per-world override. */
+.meaning-rail {
+  margin: 0 0 1.6rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  min-width: 0;
+  max-width: 100%;
+}
+.meaning-rail-h {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.meaning-rail-note {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.meaning-rail-form {
+  margin-top: 0.8rem;
+}
+.meaning-rail-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.meaning-rail-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.meaning-rail-input {
+  flex: 1 1 12rem;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+}
+.meaning-rail-status {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.meaning-rail-list {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.meaning-rail-list li {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  min-height: 1.9rem;
+}
+.meaning-rail-score {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Original-language line beneath a verse and its word inspector */
+.orig-line {
+  display: block;
+  margin-top: 0.35rem;
+}
+.orig-line-toggle {
+  margin-inline-start: 0.45rem;
+  min-height: var(--control-target-min);
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  vertical-align: middle;
+}
+@media (hover: hover) and (pointer: fine) {
+  .orig-line-toggle:hover {
+    border-color: var(--accent);
+    color: var(--ink);
+  }
+}
+.orig-line .scr-original {
+  display: block;
+  margin-top: 0.5rem;
+}
+.orig-line .scr-meta {
+  display: block;
+  margin-top: 0.4rem;
+}
+.scr-original-line {
+  font-size: clamp(1.12rem, 2.1vw, 1.34rem);
+  line-height: 1.8;
+}
+.scr-original-token {
+  display: inline;
+  margin-inline-end: 0.34em;
+}
+.scr-original-token.is-joined {
+  margin-inline-end: 0;
+}
+.scr-original-token button {
+  min-height: var(--control-target-min);
+  padding: 0.08em 0.12em;
+  border: 0;
+  border-bottom: 1px dotted color-mix(in srgb, var(--accent) 60%, transparent);
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+.scr-original-token button.is-selected {
+  background: color-mix(in oklab, var(--accent) 15%, transparent);
+  color: var(--accent-deep);
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-original-token button:hover {
+    background: color-mix(in oklab, var(--accent) 15%, transparent);
+    color: var(--accent-deep);
+  }
+}
+.scr-original-token button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.scr-word-inspector {
+  margin-top: 0.35rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-reading);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.scr-word-inspector-head {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--line);
+}
+.scr-word-inspector-head strong {
+  font-family: "Palatino Linotype", "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+.scr-word-inspector-head span {
+  color: var(--muted);
+}
+.scr-word-inspector-head button {
+  min-height: var(--control-target-min);
+  margin-inline-start: auto;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.scr-word-inspector dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 1rem;
+  margin: 0.75rem 0;
+}
+.scr-word-inspector dl > div {
+  min-width: 0;
+}
+.scr-word-inspector dt {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.scr-word-inspector dd {
+  margin: 0.1rem 0 0;
+  overflow-wrap: anywhere;
+}
+.scr-word-inspector p {
+  margin: 0;
+}
+.scr-word-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+}
+.scr-original-refnote {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+@media (max-width: 560px) {
+  .scr-word-inspector dl {
+    grid-template-columns: 1fr;
+  }
+}

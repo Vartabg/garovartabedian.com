@@ -1,0 +1,85 @@
+{
+  "life": {
+    "title": "他的生命",
+    "lede": "从伯利恒到升天，在发生的地方的地图上。福音书不是日记——这个顺序遵循传统和谐，每个事件直接链接到自己的文本。",
+    "language": {
+      "label": "导览语言",
+      "scope": "更改界面和地图说明；事件标题和经文仍为英文。"
+    },
+    "era": {
+      "birth": { "name": "诞生与童年", "title": "诞生与童年" },
+      "preparation": { "name": "受洗与旷野", "title": "受洗与旷野" },
+      "galilee": { "name": "加利利事工", "title": "加利利事工" },
+      "journey": { "name": "前往耶路撒冷", "title": "前往耶路撒冷" },
+      "passion": { "name": "受难周", "title": "受难周" },
+      "resurrection": { "name": "复活与升天", "title": "复活与升天" }
+    },
+    "rail": {
+      "label": "按时代分类的耶稣生命",
+      "shapeOfLife": "生命的形状",
+      "summary": "{eventCount} 个事件 · {placeCount} 个地点 · {refCount} 个圣经参考",
+      "eraAriaLabel": "{eraName} 时代：{eventCount} 个事件，{refCount} 个圣经参考"
+    },
+    "map": {
+      "note": "位置来自真实坐标；旅程遵循和谐。",
+      "noteHover": "将鼠标悬停在事件上以突出显示地图；单击以展开其福音文本。",
+      "noteTap": "轻击事件以展开文本——地图跟随该地点。",
+      "placePickerLabel": "在地图上选择地点",
+      "placePickerOverview": "地图概览",
+      "keyboardShortcutsTitle": "键盘快捷键",
+      "keyboardShortcutsText": "按 Tab 在事件之间移动。按 Enter / 空格展开事件文本。使用地点选择器在地图上突出显示一个地点，并更新当前站点卡片。",
+      "experienceKicker": "一张可以走进的地图",
+      "experienceTitle": "行走于这片大地",
+      "experienceText": "从清晰的地图集开始，或进入立体地形，在高低起伏与距离中跟随旅程。",
+      "viewLabel": "地图视图",
+      "overview": "地图集",
+      "terrain": "地形",
+      "modeLabel": "地形交互模式",
+      "storyMode": "故事",
+      "exploreMode": "探索",
+      "wholeRegion": "完整区域",
+      "loadingTerrain": "正在构建立体地形…",
+      "terrainUnavailable": "地形视图暂不可用。请返回地图集继续。",
+      "previousStop": "上一站",
+      "nextStop": "下一站",
+      "pauseJourney": "暂停旅程",
+      "playJourney": "开始旅程",
+      "ready": "准备开始",
+      "stopCount": "第 {current} 站，共 {total} 站",
+      "routeBoundary": "这条线按叙事顺序连接有记载的地点，并不代表一条精确的古代道路。",
+      "currentStop": "当前地点",
+      "readEvent": "阅读事件"
+    },
+    "narrative": {
+      "title": "纯文本旅程叙事",
+      "sectionTitle": "耶稣生命之旅：文本叙事",
+      "intro": "对于屏幕阅读器用户或更喜欢基于文本指南的用户，这是一个通过耶稣生命的按时间顺序的旅程，包括每个地点的描述、现代地点名称和地理方向。",
+      "travel": "旅程：从前一个位置出发，向 {direction} 行进约 {distance} 公里（{distanceMiles} 英里）。",
+      "location": "位置：",
+      "modernSite": "现代地点：",
+      "coordinates": "坐标：",
+      "scripture": "圣经：",
+      "geographicOverview": "地理概览",
+      "geographicOverviewText": "耶稣的事工从加利利地区的拿撒勒北端延伸到腓力比的凯撒利亚，向南经过撒玛利亚、约旦河谷，最终到达耶路撒冷和犹大地区。",
+      "narrativeNote": "叙事遵循福音记载，强调加利利是耶稣公开事工的地点，耶路撒冷是他受难和复活的地点。现代考古研究继续改进圣经遗址与当代地点的识别。"
+    },
+    "dataTable": {
+      "title": "事件和地点参考表",
+      "description": "可选表格：所有事件按时期整理，所有地点按字母顺序整理。",
+      "descriptionHeader": "描述",
+      "byEra": "按时代分类的事件",
+      "eventTable": "{eraName} 中的事件",
+      "placeReference": "地点参考",
+      "allPlaces": "耶稣生命中提到的所有地点，按字母顺序组织：",
+      "biblicalName": "圣经名称",
+      "modernLocation": "现代地点",
+      "region": "地区",
+      "coordinatesHeader": "坐标"
+    },
+    "sources": {
+      "title": "尽职调查说明",
+      "description": "地点识别的考古来源和参考",
+      "text": "这些地点按照现代考古共识和传统朝圣地进行识别。"
+    }
+  }
+}

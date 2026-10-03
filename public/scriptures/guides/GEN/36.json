@@ -1,0 +1,279 @@
+{
+  "book": "GEN",
+  "chapter": 36,
+  "bookName": "Genesis",
+  "summary": "The chapter traces Esau's family, his move away from Jacob to Seir because their possessions cannot be supported together, and the descendants identified with Edom. It also records the Horite inhabitants of Seir, Edom's kings before Israel had a king, and chiefs associated with their territories.",
+  "whyItMatters": "Genesis gives substantial space to the people related to Israel through Esau. Family names, land, and political succession broaden the ancestral story beyond the line the narrative will follow through Joseph.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Canaan and Seir, with genealogical and royal notices reaching beyond Esau's immediate household.",
+    "literaryForm": "Layered genealogies, migration notice, lists of chiefs, and a succession list of Edomite kings."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Esau and Jacob have buried Isaac together. The account now follows Esau's descendants before resuming Jacob's household.",
+      "verseRefs": [
+        "35:27-29"
+      ]
+    },
+    "here": {
+      "text": "Repeated notices that Esau is Edom connect family ancestry, settlement in Seir, chiefs, and kings into a picture of a neighboring people.",
+      "verseRefs": [
+        "36:1-9",
+        "36:31-43"
+      ]
+    },
+    "after": {
+      "text": "The next chapter introduces Jacob's generations through Joseph, whose dreams and sale into Egypt begin a new family crisis.",
+      "verseRefs": [
+        "37:1-36"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Esau’s household and move to Seir",
+      "verses": "1-8",
+      "note": "Wives and children are named before wealth and livestock require separation from Jacob."
+    },
+    {
+      "heading": "Esau’s descendants in Seir",
+      "verses": "9-14",
+      "note": "The genealogy expands through the sons and grandsons."
+    },
+    {
+      "heading": "Chiefs descended from Esau",
+      "verses": "15-19",
+      "note": "Family lines are also presented through their chiefs."
+    },
+    {
+      "heading": "Seir’s Horite families and chiefs",
+      "verses": "20-30",
+      "note": "The inhabitants of the land receive a separate genealogy and leadership list."
+    },
+    {
+      "heading": "Kings before Israel’s monarchy",
+      "verses": "31-39",
+      "note": "Successive kings are named with fathers, places, or other identifying details."
+    },
+    {
+      "heading": "Territorial chiefs of Edom",
+      "verses": "40-43",
+      "note": "The closing list relates chiefs to families, places, and possessions."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "36:7",
+      "text": "For their substance was too great for them to dwell together, and the land of their travels couldn’t bear them because of their livestock.",
+      "why": "The stated reason for the brothers’ separation is the land’s inability to support both households’ livestock."
+    },
+    {
+      "ref": "36:31",
+      "text": "These are the kings who reigned in the land of Edom, before any king reigned over the children of Israel.",
+      "why": "The royal list explicitly looks back from knowledge of Israelite kingship."
+    },
+    {
+      "ref": "36:43",
+      "text": "chief Magdiel, and chief Iram. These are the chiefs of Edom, according to their habitations in the land of their possession. This is Esau, the father of the Edomites.",
+      "why": "The final identification joins Esau, Edom, land, and settled leadership."
+    }
+  ],
+  "themes": [
+    "kinship beyond Israel",
+    "land and livestock limits",
+    "family and political identity",
+    "Seir’s inhabitants",
+    "royal succession"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why does Genesis pause for Esau’s family?",
+      "answer": "The opening and repeated identifications link Esau with Edom and give his descendants their own developed record. The pause shows that the ancestral world includes a related people with households, territory, and rulers before the story returns to Jacob.",
+      "verseRefs": [
+        "36:1-9",
+        "36:40-43"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why do Esau and Jacob separate?",
+      "answer": "Their possessions are too numerous and the land cannot support their combined livestock. The chapter gives a material reason for the move to Seir rather than narrating a new battle between the brothers.",
+      "verseRefs": [
+        "36:6-8"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does “chief” mean in these lists?",
+      "answer": "It labels leaders associated with named family groups and, in the closing list, their places and possessions. The passage does not provide a detailed constitution or explain how each chief obtained authority.",
+      "verseRefs": [
+        "36:15-19",
+        "36:40-43"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How are the women part of the genealogical record?",
+      "answer": "The wives organize Esau's sons into family lines, and Timna is named as Eliphaz's concubine and Amalek's mother. Other women also appear in the Horite and royal notices, even though the lists largely emphasize male descendants and leaders.",
+      "verseRefs": [
+        "36:2-5",
+        "36:12",
+        "36:22",
+        "36:39"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        12,
+        22,
+        39
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Are all the people listed descendants of Esau?",
+      "answer": "No. The chapter separately introduces the sons of Seir the Horite as inhabitants of the land and lists their families and chiefs. Keeping that section distinct prevents the whole chapter from being flattened into one simple line of descent.",
+      "verseRefs": [
+        "36:20-30"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What can be inferred from the list of kings?",
+      "answer": "The text gives a succession of rulers and identifying places or relatives before Israel had a king. It does not say every king was the preceding king's son, and it supplies no reign lengths from which to construct a complete calendar.",
+      "verseRefs": [
+        "36:31-39"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Do names in this genealogy prove later descendants share ancestral guilt?",
+      "answer": "The lists identify relatives, leaders, and places without assigning inherited moral character to all their descendants. Even a name that becomes important in later conflicts is introduced here as part of ancestry, not as permission to condemn a people collectively.",
+      "verseRefs": [
+        "36:9-19",
+        "36:40-43"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        40,
+        41,
+        42,
+        43
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Edom",
+      "def": "The people and territory repeatedly identified with Esau in this chapter."
+    },
+    {
+      "term": "Seir",
+      "def": "The region where Esau settles and where Horite families are also listed."
+    },
+    {
+      "term": "generations",
+      "def": "A heading introducing an account of a person’s descendants and the people associated with them."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "2681b8adbb2833c13b6982936fc7f46d4a495d6931d8c8adb93e815b1ea3bd00",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

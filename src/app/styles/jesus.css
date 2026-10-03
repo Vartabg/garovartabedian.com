@@ -1,0 +1,4882 @@
+/* Auto-split from globals.css — edit carefully; keep selector ownership clear. */
+
+/* ── Jesus world ─────────────────────────────────────────────────
+   Ivory, deep slate, wine — where faith meets the historical record.
+   Reuses the shared component vocabulary under its own tokens. */
+.world-jesus {
+  --bg: #f2e2d6;
+  --surface: var(--folio);
+  --ink: var(--soot);
+  --muted: var(--muted-ink);
+  --line: #d8c0ad;
+  --accent: #7a3328;
+  --accent-deep: #5d261f;
+  --accent-ink: var(--folio);
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+}
+.world-jesus main {
+  flex: 1;
+}
+.world-jesus .wg-source-disclosure {
+  border-top: 1px solid var(--line);
+  padding-top: 0.65rem;
+}
+.world-jesus .wg-source-disclosure summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+.world-jesus .wg-source-disclosure .wg-source {
+  margin-top: 0.55rem;
+}
+/* The Jesus landing keeps world navigation in normal flow after the footer. */
+.world-jesus:has(.vsw[data-world-switcher="true"]) {
+  --world-dock-clearance: 0rem;
+}
+.world-jesus:has(.vsw[data-world-switcher="true"]) main {
+  padding-bottom: 4rem;
+}
+.world-jesus:has(.vsw[data-world-switcher="true"]) .site-footer .wrap {
+  padding-bottom: 2rem;
+}
+.world-jesus .vsw[data-world-switcher="true"] {
+  position: relative;
+  inset: auto;
+  left: auto;
+  bottom: auto;
+  transform: none;
+  width: max-content;
+  margin: 1rem auto;
+  animation: none;
+}
+
+/* Red-letter text */
+.jsu-red {
+  color: var(--accent);
+}
+.scr-verse.is-study-target {
+  border-radius: 6px;
+  background: color-mix(in oklab, var(--accent) 9%, transparent);
+  box-shadow: 0 0 0 0.35rem color-mix(in oklab, var(--accent) 9%, transparent);
+  outline: none;
+}
+.jsu-word-tools {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 0.75rem;
+  align-items: end;
+  margin: 1.5rem 0 0.75rem;
+}
+.jsu-word-search input,
+.jsu-word-tools select {
+  width: 100%;
+  min-width: 0;
+  min-height: 3rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  padding: 0.62rem 0.75rem;
+}
+.jsu-word-search input:focus,
+.jsu-word-tools select:focus {
+  border-color: var(--accent);
+  outline: 2px solid color-mix(in srgb, var(--accent) 18%, transparent);
+}
+.jsu-book-select,
+.jsu-chapter-select,
+.jsu-word-search {
+  display: grid;
+  gap: 0.35rem;
+  min-width: 0;
+}
+.jsu-book-select > span,
+.jsu-chapter-select > span,
+.jsu-word-search > span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.jsu-word-results {
+  margin: 0.65rem 0 1.5rem;
+}
+.jsu-word-page {
+  padding: clamp(1rem, 4vw, 2.5rem);
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.3rem 1.2rem 1.2rem 0.3rem;
+  background: var(--surface);
+  box-shadow: -4px 0 0 color-mix(in srgb, var(--accent) 35%, var(--surface));
+}
+.jsu-word-page-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+.jsu-word-page .jsu-chapter {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+}
+.jsu-word-context { font-size: 0.85rem; }
+.jsu-word-page .scr-verse-text { line-height: 1.85; }
+.jsu-word-pagination {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.jsu-word-pagination button {
+  min-height: 3rem;
+  padding: 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.jsu-word-pagination button:disabled { opacity: 0.45; cursor: default; }
+.jsu-word-pagination > span { text-align: center; font-size: 0.85rem; }
+.jsu-word-pagination small { display: block; max-width: 12ch; color: var(--muted); font-size: 0.7rem; }
+.jsu-word-results button {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.jsu-word-reader,
+.jsu-word-secondary {
+  scroll-margin-top: 6rem;
+}
+.jsu-word-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0 1rem;
+  font-size: 0.85rem;
+}
+.jsu-word-shortcuts > a,
+.jsu-word-filter > summary {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+.jsu-word-filter[open] {
+  flex-basis: 100%;
+}
+.jsu-word-filter > summary {
+  display: list-item;
+  align-content: center;
+}
+.jsu-word-search {
+  margin-bottom: 0.5rem;
+}
+.jsu-word-secondary {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.jsu-word-secondary > details {
+  margin: 0;
+}
+.jsu-word-disclosure > .meaning-rail,
+.jsu-word-disclosure > .jsu-visual-panel {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+}
+.jsu-word-disclosure > summary::after {
+  content: "+";
+  flex: none;
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+.jsu-word-disclosure[open] > summary::after {
+  content: "−";
+}
+.jsu-inline-error {
+  border: 1px solid color-mix(in srgb, var(--accent) 52%, var(--line));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+  padding: 0.85rem 1rem;
+}
+.jsu-inline-error p {
+  margin: 0 0 0.65rem;
+}
+.jsu-visual-panel {
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--accent) 8%, transparent), transparent 62%),
+    var(--surface);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  margin: 1.5rem 0 1.75rem;
+}
+.jsu-visual-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 0.8rem;
+}
+.jsu-visual-head strong {
+  color: var(--ink);
+}
+.jsu-visual-head span {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+.jsu-word-bars {
+  display: grid;
+  gap: 0.4rem;
+}
+.jsu-word-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 7.5rem) minmax(0, 1fr) 3ch;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 2.75rem;
+  padding: 0.42rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.jsu-word-bar:hover,
+.jsu-word-bar.is-active,
+.jsu-word-bar[aria-pressed="true"] {
+  border-color: color-mix(in oklab, var(--accent) 42%, var(--line));
+  background: color-mix(in oklab, var(--accent) 5%, transparent);
+}
+.jsu-word-fill {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  width: var(--bar);
+  height: 0.52rem;
+  border-radius: 999px;
+  background: var(--accent);
+  opacity: 0.76;
+}
+.jsu-word-book,
+.jsu-word-count {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.jsu-word-book {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+  color: var(--ink);
+  font-weight: 650;
+  line-height: 1.1;
+  overflow-wrap: normal;
+}
+.jsu-word-count {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: right;
+}
+.jsu-study-guide,
+.jsu-word-disclosure {
+  margin: -0.5rem 0 2rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--surface) 94%, var(--accent));
+  overflow: clip;
+}
+.jsu-study-guide > summary,
+.jsu-word-disclosure > summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.jsu-study-guide > summary::-webkit-details-marker,
+.jsu-word-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+.jsu-study-guide > summary > span:first-child,
+.jsu-word-disclosure > summary > span:first-child {
+  display: grid;
+  gap: 0.2rem;
+}
+.jsu-study-guide > summary strong,
+.jsu-word-disclosure > summary strong {
+  color: var(--ink);
+}
+.jsu-study-guide > summary small,
+.jsu-word-disclosure > summary small {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 450;
+}
+.jsu-study-summary-action {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.jsu-study-guide > summary:focus-visible,
+.jsu-word-disclosure > summary:focus-visible,
+.jsu-study-themes button:focus-visible,
+.jsu-study-card footer button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -3px;
+}
+.jsu-study-body {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 1.1rem 1.1rem;
+}
+.jsu-study-intro {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.8fr) minmax(18rem, 1.2fr);
+  gap: 1.5rem;
+  align-items: end;
+}
+.jsu-study-intro h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+}
+.jsu-study-intro > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.jsu-study-eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.jsu-study-themes {
+  display: flex;
+  gap: 0.4rem;
+  margin: 1.1rem -0.2rem 1rem;
+  padding: 0.2rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.jsu-study-themes button {
+  flex: none;
+  min-height: var(--control-target-min);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.48rem 0.72rem;
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+.jsu-study-themes button[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+@media (hover: hover) and (pointer: fine) {
+  .jsu-study-themes button:hover {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+}
+.jsu-study-card {
+  border: 1px solid color-mix(in oklab, var(--accent) 22%, var(--line));
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 1.15rem;
+}
+.jsu-study-card > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+.jsu-study-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.jsu-study-context-link {
+  flex: none;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.jsu-study-card blockquote {
+  margin: 1rem 0 1.2rem;
+  border-left: 3px solid var(--accent);
+  padding: 0.2rem 0 0.2rem 0.85rem;
+  color: var(--accent);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
+  line-height: 1.4;
+}
+.jsu-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.jsu-study-grid section {
+  min-width: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0.9rem;
+}
+.jsu-study-card h4 {
+  margin: 0 0 0.45rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.jsu-study-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+.jsu-study-grid a {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+.jsu-study-grid ul {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.jsu-study-grid li {
+  display: grid;
+  gap: 0.14rem;
+}
+.jsu-study-grid li span {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+.jsu-study-grid .jsu-study-term {
+  margin-bottom: 0.35rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+.jsu-study-grid section > a {
+  display: inline-block;
+  margin-top: 0.55rem;
+}
+.jsu-study-thread {
+  padding: 1rem 0 0;
+}
+.jsu-study-thread > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.jsu-study-thread a {
+  display: grid;
+  gap: 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.65rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.jsu-study-thread a:hover {
+  border-color: var(--accent);
+}
+.jsu-study-thread a span {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+.jsu-study-card > footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+.jsu-study-card > footer p {
+  margin: 0;
+  max-width: 42rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+.jsu-study-card > footer button {
+  flex: none;
+  min-height: var(--control-target-min);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  padding: 0.58rem 0.8rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .jsu-study-card > footer button:hover {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+}
+@media (max-width: 680px) {
+  .jsu-study-intro,
+  .jsu-study-grid {
+    grid-template-columns: 1fr;
+  }
+  .jsu-study-card > header,
+  .jsu-study-card > footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .jsu-study-context-link {
+    align-self: start;
+  }
+  .jsu-study-thread > div {
+    grid-template-columns: 1fr;
+  }
+  .jsu-study-card > footer button {
+    width: 100%;
+  }
+}
+.jsu-theme-bars {
+  display: grid;
+  gap: 0.55rem;
+}
+.jsu-theme-bar {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.75fr) minmax(7rem, 1.25fr) 2ch;
+  gap: 0.7rem;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.jsu-theme-name {
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.jsu-theme-track {
+  height: 0.58rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--accent) 10%, var(--line));
+  overflow: hidden;
+}
+.jsu-theme-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  opacity: 0.72;
+}
+.jsu-theme-count {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-align: right;
+}
+@media (max-width: 520px) {
+  .jsu-visual-head,
+  .wd-case-rail {
+    align-items: stretch;
+  }
+  .jsu-theme-bar {
+    grid-template-columns: 1fr 2ch;
+  }
+  .jsu-theme-track {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+.jsu-chapter {
+  font-size: 1.05rem;
+  margin: 2.25rem 0 0.9rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Prophecy pairs */
+.jsu-pair-block {
+  margin: 0 0 0.9rem;
+}
+.jsu-pair-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.jsu-pair-head:hover,
+.jsu-pair-head[aria-expanded="true"] {
+  border-color: var(--accent);
+}
+.jsu-pair-refs {
+  margin: 0;
+}
+.jsu-life-stop {
+  scroll-margin-block: 4rem;
+}
+.jsu-life-stop .jsu-pair-head {
+  position: relative;
+  overflow: hidden;
+}
+.jsu-life-stop .jsu-pair-head::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--accent);
+  content: "";
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.jsu-life-stop.is-map-active .jsu-pair-head {
+  border-color: color-mix(in oklab, var(--accent) 68%, var(--line));
+  background: color-mix(in oklab, var(--surface) 94%, var(--accent));
+  box-shadow: 0 8px 24px color-mix(in oklab, var(--accent) 8%, transparent);
+}
+.jsu-life-stop.is-map-active .jsu-pair-head::before {
+  opacity: 1;
+}
+.jsu-life-stop-meta {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.jsu-life-stop .jsu-pair-head strong {
+  font-size: 0.94rem;
+  line-height: 1.25;
+}
+.jsu-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+@media (max-width: 640px) {
+  .jsu-pair {
+    grid-template-columns: 1fr;
+  }
+}
+.jsu-panel {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.97rem;
+}
+.jsu-panel p {
+  margin: 0.25rem 0 0.75rem;
+}
+.jsu-connection-key {
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr);
+  gap: 0.65rem 1rem;
+  align-items: start;
+  border-block: 1px solid var(--line);
+  padding: 0.85rem 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.jsu-connection-key strong,
+.jsu-connection-key b {
+  color: var(--ink);
+}
+.jsu-connection {
+  align-self: flex-start;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 8%, var(--bg));
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.12rem 0.55rem;
+}
+.jsu-connection.is-echo {
+  color: #365f59;
+  background: #e5efec;
+}
+.jsu-connection.is-typology {
+  color: #69502a;
+  background: #f1e8d5;
+}
+
+/* Historical sources */
+.jsu-lens-map {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 8%, transparent), transparent 62%),
+    var(--surface);
+  padding: 1rem 1.1rem;
+  margin: 1.5rem 0 2rem;
+}
+.jsu-lens-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  margin-bottom: 0.75rem;
+}
+.jsu-lens-head span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.jsu-lens-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.55rem;
+}
+.jsu-lens-tile {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  color: var(--ink);
+  text-decoration: none;
+  background: color-mix(in srgb, var(--bg) 42%, transparent);
+}
+.jsu-lens-tile {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.7rem 0.8rem;
+}
+.jsu-lens-tile strong {
+  color: var(--accent);
+}
+.jsu-lens-tile span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.jsu-lens-tile:hover {
+  border-color: var(--accent);
+}
+.jsu-lens-secondary-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  margin-top: 0.65rem;
+}
+.jsu-lens-secondary-links a {
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-underline-offset: 0.18em;
+}
+.jsu-source {
+  margin: 0 0 2.5rem;
+  scroll-margin-top: 1.5rem;
+}
+
+/* History investigation */
+.jsu-history-answer,
+.jsu-history-verdict {
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, transparent), transparent 62%),
+    var(--surface);
+  padding: 1.1rem;
+  margin: 1.5rem 0;
+}
+.jsu-history-answer-kicker {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 0 0 0.35rem;
+}
+.jsu-history-answer h2,
+.jsu-history-verdict h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+  line-height: 1.2;
+  margin: 0;
+}
+.jsu-history-answer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+.jsu-history-answer-grid > div {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0.35rem;
+  padding-top: 0.7rem;
+}
+.jsu-history-answer-grid strong {
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+.jsu-history-answer-grid span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.jsu-history-jumps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem;
+}
+.jsu-history-jumps a {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 0.7rem;
+  text-decoration: none;
+}
+.jsu-history-jumps a:hover,
+.jsu-history-jumps a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.jsu-history-shelf {
+  scroll-margin-top: 1.5rem;
+  margin-top: 2.25rem;
+}
+.jsu-evidence-list {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.9rem;
+}
+.jsu-evidence-record {
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface);
+  scroll-margin-top: 1.5rem;
+}
+.jsu-evidence-record summary {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.25rem 0.8rem;
+  list-style: none;
+  padding: 0.85rem 1rem;
+}
+.jsu-evidence-record summary::-webkit-details-marker {
+  display: none;
+}
+.jsu-evidence-record summary::after {
+  align-self: center;
+  color: var(--accent);
+  content: "+";
+  font-size: 1.35rem;
+  grid-column: 2;
+  grid-row: 1 / span 4;
+}
+.jsu-evidence-record[open] summary::after {
+  content: "−";
+}
+.jsu-evidence-record summary > * {
+  grid-column: 1;
+}
+.jsu-evidence-record summary strong {
+  font-size: 1.05rem;
+}
+.jsu-evidence-record summary > span:not(.jsu-evidence-assessment) {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.jsu-evidence-assessment {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.jsu-evidence-distance {
+  font-variant-numeric: tabular-nums;
+}
+.jsu-evidence-body {
+  border-top: 1px solid var(--line);
+  padding: 0.25rem 1rem 1rem;
+}
+.jsu-evidence-boundary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+.jsu-evidence-boundary > div {
+  border-left: 3px solid #4f6f61;
+  background: color-mix(in srgb, #4f6f61 7%, var(--bg));
+  padding: 0.7rem 0.8rem;
+}
+.jsu-evidence-boundary > .is-limit {
+  border-left-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, var(--bg));
+}
+.jsu-evidence-boundary strong {
+  display: block;
+  font-size: 0.78rem;
+  margin-bottom: 0.35rem;
+}
+.jsu-evidence-boundary ul,
+.jsu-evidence-boundary p {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  margin: 0;
+}
+.jsu-evidence-boundary ul {
+  display: grid;
+  gap: 0.25rem;
+  padding-left: 1rem;
+}
+.jsu-history-verdict {
+  margin-top: 2.5rem;
+}
+.jsu-history-verdict > p:last-child {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Ink and stone — how close the record sits to the events. */
+.jsu-inkstone {
+  margin: 1.5rem 0 2.25rem;
+}
+.jsu-inkstone svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.jsu-evidence-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.55rem;
+}
+.jsu-evidence-legend span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.jsu-evidence-legend span::before {
+  background: currentColor;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 0.55rem;
+  margin-right: 0.35rem;
+  width: 0.55rem;
+}
+.jsu-evidence-legend .is-christian { color: var(--accent); }
+.jsu-evidence-legend .is-jewish { color: #516a86; }
+.jsu-evidence-legend .is-roman { color: #8a623d; }
+.jsu-evidence-legend .is-stone { color: #7a6a52; }
+.jsu-is-crux {
+  fill: var(--accent);
+  opacity: 0.16;
+}
+.jsu-is-cruxlabel {
+  fill: var(--accent);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}
+.jsu-is-axis {
+  stroke: var(--muted);
+  stroke-width: 1;
+  opacity: 0.5;
+}
+.jsu-is-tick {
+  fill: var(--muted);
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}
+.jsu-is-ink line {
+  stroke: var(--accent);
+  stroke-width: 1;
+  opacity: 0.68;
+}
+.jsu-is-ink circle {
+  fill: var(--accent);
+}
+.jsu-is-ink.is-jewish line { stroke: #516a86; }
+.jsu-is-ink.is-jewish circle { fill: #516a86; }
+.jsu-is-ink.is-roman line { stroke: #8a623d; }
+.jsu-is-ink.is-roman circle { fill: #8a623d; }
+.jsu-is-inklabel {
+  fill: var(--ink);
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+}
+.jsu-is-stone line {
+  stroke: #7a6a52;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  opacity: 0.75;
+}
+.jsu-is-stonelabel {
+  fill: var(--muted);
+  font-size: 9.5px;
+}
+.jsu-inkstone a:hover .jsu-is-ink circle,
+.jsu-inkstone a:focus-visible .jsu-is-ink circle {
+  r: 5;
+}
+.jsu-inkstone a:hover .jsu-is-stone line,
+.jsu-inkstone a:focus-visible .jsu-is-stone line {
+  opacity: 1;
+  stroke: var(--ink);
+}
+.jsu-inkstone a:hover .jsu-is-stonelabel,
+.jsu-inkstone a:focus-visible .jsu-is-stonelabel {
+  fill: var(--ink);
+}
+.jsu-inkstone a:focus-visible {
+  outline: none;
+}
+@media (max-width: 720px) {
+  .jsu-history-answer-grid,
+  .jsu-evidence-boundary {
+    grid-template-columns: 1fr;
+  }
+  .jsu-history-jumps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.jsu-quote {
+  margin: 1rem 0 0.5rem;
+  padding: 0.85rem 1.15rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 10px 10px 0;
+  font-size: 1.02rem;
+}
+.jsu-cite {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0 0 0.75rem;
+}
+
+/* His life — timeline + storyteller's map */
+.jsu-life-rail {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--accent) 8%, transparent), transparent 62%),
+    var(--surface);
+  padding: 1rem 1.1rem;
+  margin: 1.4rem 0 1.75rem;
+}
+.jsu-life-rail-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 0.55rem;
+  align-items: stretch;
+}
+.jsu-life-era {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 0.35rem;
+  min-height: 7.1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem 0.6rem;
+  color: var(--ink);
+  text-decoration: none;
+  background: color-mix(in srgb, var(--bg) 42%, transparent);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.jsu-life-era:hover,
+.jsu-life-era:focus-visible,
+.jsu-life-era.is-active {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.jsu-life-era-bar {
+  align-self: end;
+  display: block;
+  width: 100%;
+  height: var(--h, 22%);
+  min-height: 1.35rem;
+  border-radius: 999px 999px 4px 4px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent) 52%, white),
+    var(--accent)
+  );
+  opacity: 0.72;
+}
+.jsu-life-era.is-active .jsu-life-era-bar {
+  opacity: 1;
+}
+.jsu-life-era strong {
+  color: var(--ink);
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+.jsu-life-era span:not(.jsu-life-era-bar) {
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.25;
+}
+@media (min-width: 760px) {
+  .jsu-life-rail-track {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* Life progress rail — gold → stone, IntersectionObserver like fall cooler */
+.jsu-life-rail-wrap {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+.jsu-life-progress {
+  position: sticky;
+  top: 84px;
+  align-self: start;
+  display: grid;
+  gap: 0.55rem;
+  justify-items: center;
+  padding: 0.6rem 0;
+}
+.jsu-life-progress-track {
+  position: relative;
+  width: 2px;
+  height: clamp(14rem, 42vh, 26rem);
+  border-radius: 1px;
+  background: color-mix(in srgb, var(--line) 70%, transparent);
+  overflow: visible;
+}
+.jsu-life-progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #d2a94f, #7a6a52);
+  transition: height 0.18s linear;
+}
+.jsu-life-progress-dot {
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--node, var(--line));
+  border: 2px solid var(--bg);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--node, var(--line)) 22%, transparent);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.jsu-life-progress-dot.active {
+  transform: translate(-50%, -50%) scale(1.45);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 12px 1px color-mix(in srgb, var(--node, #d2a94f) 55%, transparent);
+}
+.jsu-life-progress-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .jsu-life-progress-fill { transition: none; }
+  .jsu-life-rail-wrap { gap: 0.6rem; }
+}
+@media (max-width: 720px) {
+  .jsu-life-rail-wrap { grid-template-columns: 1fr; }
+  .jsu-life-progress { display: none; }
+}
+/* Life archive — the cinematic map leads; events become a browsable gallery. */
+.jsu-life {
+  min-width: 0;
+}
+.jsu-life-guide-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  align-items: center;
+  margin: 2rem 0 1rem;
+}
+.jsu-life-guide-intro .lede,
+.jsu-life-guide-intro .jsu-language-selector {
+  margin: 0;
+}
+.jsu-life-guide-intro .jsu-language-selector {
+  justify-self: end;
+}
+.jsu-life-era-section {
+  scroll-margin-top: 1.5rem;
+}
+.jsu-life-era-events {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+.jsu-life-era-events .jsu-pair-block {
+  margin: 0;
+}
+.jsu-life-era-events .jsu-life-stop.is-open {
+  grid-column: 1 / -1;
+}
+.jsu-map-note {
+  margin: 0.4rem 0 0;
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+/* Desktop/trackpad copy vs touch — “hover” is wrong on phones. */
+.jsu-map-note-coarse {
+  display: inline;
+}
+.jsu-map-note-fine {
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .jsu-map-note-coarse {
+    display: none;
+  }
+  .jsu-map-note-fine {
+    display: inline;
+  }
+}
+.jsu-map-thennow {
+  display: grid;
+  grid-template-columns: minmax(18rem, 1.6fr) repeat(3, minmax(8rem, 0.55fr));
+  gap: 0.7rem 1rem;
+  align-items: start;
+  margin-top: 0.85rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: color-mix(in oklab, var(--surface) 88%, var(--accent) 4%);
+}
+.jsu-map-context {
+  display: grid;
+  gap: 0.18rem;
+  margin: 0;
+  padding-right: 1rem;
+  border-right: 1px solid color-mix(in oklab, var(--line) 72%, transparent);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+.jsu-map-context strong {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.jsu-map-context span {
+  color: var(--muted);
+}
+.jsu-map-thennow-ancient,
+.jsu-map-thennow-modern,
+.jsu-map-thennow-coords {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.jsu-map-thennow-coords {
+  margin-bottom: 0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+.jsu-map-thennow-kicker {
+  display: inline-block;
+  min-width: 2.6rem;
+  margin-right: 0.35rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.jsu-map-thennow-region {
+  color: var(--muted);
+}
+.jsu-map-thennow-hint {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.jsu-map-guide {
+  grid-column: 1 / -1;
+  margin-top: 0.75rem;
+  font-size: 0.86rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.jsu-map-guide summary {
+  display: flex;
+  min-height: var(--control-target-min);
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+}
+.jsu-map-guide p {
+  margin: 0.55rem 0 0;
+}
+
+.jsu-map-help {
+  margin-top: 0.75rem;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.jsu-map-help summary {
+  display: flex;
+  min-height: var(--control-target-min);
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.jsu-map-help p {
+  margin: 0.55rem 0 0;
+}
+
+.jsu-life-data-table {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  margin-top: 1.5rem;
+}
+.jsu-life-data-table > summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.9rem 1rem;
+}
+.jsu-life-data-table-body {
+  border-top: 1px solid var(--line);
+  overflow-x: auto;
+  padding: 0.25rem 1rem 1rem;
+}
+.jsu-life-data-table-body h2 {
+  font-size: 1.1rem;
+}
+.jsu-life-data-table-body table {
+  min-width: 48rem;
+}
+
+@media (max-width: 860px) {
+  .jsu-life-guide-intro {
+    grid-template-columns: 1fr;
+  }
+  .jsu-life-guide-intro .jsu-language-selector {
+    justify-self: stretch;
+  }
+  .jsu-map-thennow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .jsu-map-context {
+    grid-column: 1 / -1;
+    padding: 0 0 0.65rem;
+    border-right: 0;
+    border-bottom: 1px solid color-mix(in oklab, var(--line) 72%, transparent);
+  }
+}
+@media (max-width: 480px) {
+  .jsu-life-era-events,
+  .jsu-map-thennow {
+    grid-template-columns: 1fr;
+  }
+  .jsu-map-context,
+  .jsu-map-guide {
+    grid-column: 1;
+  }
+  .jsu-life-rail-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .jsu-life-era {
+    min-height: 5.6rem;
+  }
+}
+/* ── Storyteller's map ────────────────────────────────────────────
+   A quiet antique basemap: parchment land against a dusty sea, with a
+   defined coast. Only the active era's road is drawn (the whole journey
+   at once is a tangle), and names surface by relevance — anchors always,
+   the active stretch on selection, any place on hover — so eighteen
+   labels never collide. */
+.jsu-map {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #a4bfbb;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.jsu-map-grid {
+  stroke-width: 0.6;
+  stroke-dasharray: 2 6;
+  pointer-events: none;
+}
+.jsu-map-grid-label {
+  fill: #6d7d73;
+  font-size: 7px;
+  letter-spacing: 0.08em;
+  opacity: 0.58;
+  pointer-events: none;
+}
+.jsu-map-sea {
+  pointer-events: none;
+}
+.jsu-map-land {
+  pointer-events: none;
+}
+.jsu-map-water {
+  pointer-events: none;
+}
+.jsu-map-river {
+  stroke-linecap: round;
+  pointer-events: none;
+}
+.jsu-map-modern-boundary {
+  stroke: #738a73;
+  stroke-width: 0.9;
+  stroke-dasharray: 4 4;
+  pointer-events: none;
+}
+.jsu-map-modern-boundary.is-territory {
+  fill: rgba(115, 138, 115, 0.08);
+}
+.jsu-map-modern-boundary.is-border {
+  fill: none;
+}
+.jsu-map-modern-label {
+  fill: #6d7d73;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  opacity: 0.42;
+  pointer-events: none;
+}
+.jsu-map-reference-city {
+  opacity: 0.72;
+  pointer-events: none;
+}
+.jsu-map-reference-city-dot {
+  fill: #6d7d73;
+}
+.jsu-map-reference-city-label {
+  fill: #5f6f66;
+  font-size: 7.5px;
+  paint-order: stroke;
+  stroke: #f1e8d6;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+}
+.jsu-map-region {
+  font-size: 10.5px;
+  letter-spacing: 0.2em;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.jsu-map-sea-label {
+  opacity: 0.8;
+}
+.jsu-map-compass,
+.jsu-map-scale {
+  fill: #5f6f66;
+  stroke: #5f6f66;
+  opacity: 0.72;
+  pointer-events: none;
+}
+.jsu-map-compass text,
+.jsu-map-scale text {
+  stroke: none;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.jsu-map-compass-line,
+.jsu-map-scale-line,
+.jsu-map-scale-tick {
+  fill: none;
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+.jsu-map-compass-arrow {
+  stroke: none;
+}
+
+/* The active era's road — a quiet thread through the stops, in story
+   order. Thin and soft so a busy era reads as a journey, not a knot. */
+.jsu-route {
+  fill: none;
+  stroke: #8f7958;
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 2.5 4;
+  opacity: 0.36;
+  pointer-events: none;
+}
+.jsu-route.is-travelled {
+  stroke: var(--accent);
+  stroke-width: 1.8;
+  stroke-dasharray: none;
+  opacity: 0.72;
+}
+.jsu-route.is-current {
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-dasharray: none;
+  opacity: 0.95;
+}
+
+/* Map marks are a visualization, not overlapping pseudo-buttons. The native
+   place selector above the map provides the equivalent 44/48px action. */
+.jsu-map-place {
+  pointer-events: none;
+}
+.jsu-map-dot {
+  fill: #6d5a3d;
+  stroke: rgba(0, 0, 0, 0.15);
+  stroke-width: 0.8;
+  transition: fill 0.15s ease, r 0.15s ease, stroke-width 0.15s ease;
+}
+.jsu-map-label {
+  fill: var(--ink);
+  font-size: 11px;
+  opacity: 0;
+  paint-order: stroke;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+/* Always-labelled orientation points, kept faint. */
+/* Stops on the active era's road: emphasised dots on the drawn path.
+   Their names stay quiet until hovered, so a busy era never crowds the
+   frame — the route carries the journey, the label answers "which one?" */
+.jsu-map-place.is-era .jsu-map-dot {
+  fill: #4a3d2a;
+  stroke-width: 1.2;
+}
+/* The active place: a haloed focal point. */
+.jsu-map-place.is-active .jsu-map-dot {
+  fill: var(--accent);
+  stroke-width: 1.4;
+}
+.jsu-map-place.is-active .jsu-map-label {
+  fill: var(--accent);
+  font-weight: 700;
+  opacity: 1;
+}
+.jsu-map-label-modern {
+  fill: var(--muted);
+  font-size: 9.5px;
+  opacity: 1;
+  paint-order: stroke;
+  stroke-width: 2.5px;
+  pointer-events: none;
+}
+.jsu-map-halo {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  opacity: 0.5;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: jsuHalo 2.4s ease-in-out infinite;
+}
+.jsu-map-halo.inner {
+  fill: var(--accent);
+  stroke: none;
+  opacity: 0.14;
+  animation: none;
+}
+@keyframes jsuHalo {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.12; transform: scale(1.35); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jsu-map-halo { animation: none; }
+}
+
+/* ── Immersive terrain atlas ──────────────────────────────────────
+   Terrain is the front door; the coordinate atlas remains the analytical
+   alternate. Both use the same coordinates, route, and event state. */
+.jsu-map-experience {
+  min-width: 0;
+  margin: clamp(1.35rem, 3vw, 2.25rem) 0 2rem;
+}
+/* The map bleeds past the reading column into the page's right gutter — but
+   never past it. The gutter is half of what the viewport has left over after
+   the widened wrap (core.css: `calc(var(--maxw) + 16.75rem)` at >=1100px); the
+   wrap's own padding is deliberately left out of the sum so the margin absorbs
+   the scrollbar 100vw doesn't account for. Without the cap the full 14vw bleed
+   overruns the viewport from ~1100px to ~1400px and the document scrolls
+   sideways — the laptop band, and what worlds-responsive.spec.ts guards. */
+@media (min-width: 1100px) {
+  .jsu-map-experience {
+    width: calc(
+      100% +
+        min(14vw, 13rem, max(0px, (100vw - (var(--maxw) + 16.75rem)) / 2))
+    );
+  }
+}
+.jsu-map-experience-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.42fr);
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+.jsu-map-experience-head h2 {
+  margin: 0.12rem 0 0.3rem;
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+.jsu-map-experience-head p {
+  max-width: 56ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.jsu-map-experience-kicker {
+  color: var(--accent) !important;
+  font-size: 0.66rem !important;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.jsu-map-view-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.22rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--surface) 88%, var(--ink) 4%);
+}
+.jsu-map-view-switch button {
+  display: inline-flex;
+  min-height: var(--control-target-min);
+  align-items: center;
+  justify-content: center;
+  gap: 0.42rem;
+  padding: 0.48rem 0.78rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 750;
+}
+.jsu-map-view-switch button.is-active,
+.jsu-map-view-switch button[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 2px 12px color-mix(in oklab, var(--ink) 10%, transparent);
+}
+.jsu-map-view-switch button:last-child.is-active,
+.jsu-map-view-switch button:last-child[aria-pressed="true"] {
+  background: #201a17;
+  color: #f0d69f;
+}
+.jsu-map-place-picker {
+  display: grid;
+  grid-template-columns: auto minmax(14rem, 24rem);
+  align-items: center;
+  justify-content: end;
+  gap: 0.55rem;
+  margin: 0 0 0.8rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+.jsu-map-place-picker select {
+  width: 100%;
+  min-height: var(--control-target-min);
+  padding: 0.55rem 2rem 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+@media (max-width: 600px) {
+  .jsu-map-place-picker {
+    grid-template-columns: minmax(0, 1fr);
+    justify-content: stretch;
+  }
+}
+.jsu-map-panel {
+  min-width: 0;
+}
+.jsu-map-panel.is-overview {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    linear-gradient(120deg, color-mix(in oklab, var(--accent) 6%, transparent), transparent 52%),
+    var(--surface);
+  box-shadow: 0 22px 60px color-mix(in oklab, var(--ink) 9%, transparent);
+}
+.jsu-atlas-frame {
+  display: grid;
+  grid-template-columns: minmax(22rem, 0.8fr) minmax(23rem, 1.2fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  align-items: center;
+  padding: clamp(1rem, 2.6vw, 2rem);
+}
+.jsu-atlas-map {
+  width: min(100%, 31rem);
+  justify-self: center;
+}
+.jsu-atlas-map .jsu-map {
+  display: block;
+  max-height: 72vh;
+}
+.jsu-atlas-dossier {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.jsu-map-panel.is-terrain {
+  overflow: hidden;
+  border: 1px solid color-mix(in oklab, var(--accent) 42%, #31241d);
+}
+.jsu-terrain-frame {
+  position: relative;
+  min-height: clamp(40rem, 76vh, 54rem);
+  isolation: isolate;
+}
+.jsu-terrain-toolbar {
+  position: absolute;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+  padding: 0.32rem;
+  border: 1px solid rgba(239, 215, 169, 0.22);
+}
+.jsu-terrain-modes {
+  display: flex;
+  gap: 0.2rem;
+}
+.jsu-terrain-modes button,
+.jsu-terrain-reset {
+  min-height: var(--control-target-min);
+  padding: 0.48rem 0.75rem;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+.jsu-terrain-reset {
+  margin-left: 0.2rem;
+}
+.jsu-terrain-stage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  isolation: isolate;
+}
+.jsu-terrain-map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.jsu-terrain-map .maplibregl-canvas {
+  outline: none;
+}
+.jsu-terrain-map .maplibregl-canvas:focus-visible {
+  outline: 3px solid #f0c36b;
+  outline-offset: -4px;
+}
+.jsu-terrain-map .maplibregl-ctrl-group {
+  overflow: hidden;
+}
+.jsu-terrain-map .maplibregl-ctrl-group button {
+  width: var(--control-target-min);
+  height: var(--control-target-min);
+}
+.jsu-terrain-map .maplibregl-ctrl-attrib-button {
+  width: var(--control-target-min);
+  height: var(--control-target-min);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.jsu-terrain-map .maplibregl-ctrl-attrib.maplibregl-compact {
+  display: flex;
+  align-items: center;
+  min-height: var(--control-target-min);
+  padding: 4px calc(var(--control-target-min) + 4px) 4px 8px;
+  border-radius: 4px;
+}
+.jsu-terrain-status {
+  position: absolute;
+  z-index: 5;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 0.8rem;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.86rem;
+}
+.jsu-terrain-status.is-error {
+  color: #923e30;
+}
+.jsu-terrain-spinner {
+  width: 2.2rem;
+  aspect-ratio: 1;
+  border: 2px solid rgba(238, 210, 154, 0.2);
+  border-radius: 50%;
+  animation: jsuTerrainSpin 0.9s linear infinite;
+}
+@keyframes jsuTerrainSpin {
+  to { transform: rotate(1turn); }
+}
+.jsu-terrain-shell-loading {
+  height: 34rem;
+}
+.jsu-terrain-marker {
+  position: relative;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  pointer-events: auto;
+}
+.jsu-terrain-marker:focus-visible { outline: 3px solid #fff; outline-offset: 1px; }
+.jsu-terrain-marker:focus-visible > span { opacity: 1; }
+.jsu-terrain-marker::before {
+  border-radius: 50%;
+  content: "";
+}
+.jsu-terrain-marker > span {
+  position: absolute;
+  width: max-content;
+  font-weight: 700;
+  transform: translateX(-50%);
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+.jsu-terrain-marker:hover > span,
+.jsu-terrain-marker.is-active > span {
+  opacity: 1;
+}
+.jsu-terrain-era-nav {
+  display: grid;
+  gap: 0.28rem;
+}
+.jsu-terrain-era-nav.is-terrain {
+  position: absolute;
+  z-index: 8;
+  top: 1rem;
+  left: 1rem;
+  width: min(15rem, 24vw);
+  padding: 0.42rem;
+  border: 1px solid rgba(239, 215, 169, 0.2);
+  border-radius: 15px;
+  background: rgba(19, 16, 14, 0.78);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(14px);
+}
+.jsu-terrain-era-nav button {
+  display: grid;
+  grid-template-columns: 1.6rem minmax(0, 1fr) auto;
+  gap: 0.45rem;
+  align-items: center;
+  min-height: var(--control-target-min);
+  padding: 0.35rem 0.48rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+.jsu-terrain-era-nav button > span,
+.jsu-terrain-era-nav button > small {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+}
+.jsu-terrain-era-nav button > strong {
+  overflow: hidden;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.jsu-terrain-era-nav button.is-active {
+  border-color: color-mix(in oklab, var(--accent) 50%, transparent);
+  background: color-mix(in oklab, var(--accent) 17%, transparent);
+  color: var(--ink);
+}
+.jsu-terrain-era-nav.is-terrain button {
+  color: #a99a83;
+}
+.jsu-terrain-era-nav.is-terrain button.is-active {
+  border-color: rgba(239, 194, 104, 0.34);
+  background: rgba(239, 194, 104, 0.14);
+  color: #f1d69e;
+}
+.jsu-terrain-era-nav.is-overview {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.jsu-terrain-era-nav.is-overview button {
+  border-color: var(--line);
+  background: color-mix(in oklab, var(--bg) 45%, transparent);
+}
+.jsu-journey-console {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns:
+    var(--tap-target, var(--control-target-min))
+    minmax(0, 1fr)
+    var(--tap-target, var(--control-target-min));
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.65rem;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--surface) 94%, var(--accent));
+  color: var(--ink);
+}
+.jsu-journey-console.is-terrain {
+  border-color: rgba(231, 201, 143, 0.2);
+  background: rgba(21, 17, 15, 0.86);
+  color: #d9c9aa;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(16px);
+}
+.jsu-journey-picker {
+  display: grid;
+  min-width: 0;
+  gap: 0.22rem;
+}
+.jsu-journey-picker > span {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.jsu-journey-console.is-terrain .jsu-journey-picker > span {
+  color: #a99a83;
+}
+.jsu-journey-picker select {
+  width: 100%;
+  min-width: 0;
+  min-height: var(--control-target-min);
+  padding: 0 1.8rem 0 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 720;
+  text-overflow: ellipsis;
+}
+.jsu-journey-console.is-terrain .jsu-journey-picker select {
+  border-color: rgba(239, 215, 169, 0.18);
+  background: #15110f;
+  color: #f0d69f;
+}
+.jsu-journey-console button {
+  min-inline-size: var(--control-target-min);
+  min-height: var(--control-target-min);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 760;
+}
+.jsu-journey-console.is-terrain button {
+  border-color: rgba(239, 215, 169, 0.18);
+  background: rgba(255, 255, 255, 0.035);
+  color: #f0d69f;
+}
+.jsu-journey-console button:disabled {
+  cursor: not-allowed;
+  opacity: 0.28;
+}
+.jsu-journey-console .jsu-journey-play {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.42rem;
+  padding-inline: 0.8rem;
+  border-color: color-mix(in oklab, var(--accent) 42%, var(--line));
+  background: color-mix(in oklab, var(--accent) 10%, var(--surface));
+}
+.jsu-journey-console.is-terrain .jsu-journey-play {
+  border-color: rgba(238, 188, 92, 0.38);
+  background: rgba(238, 188, 92, 0.12);
+}
+.jsu-journey-progress {
+  color: inherit;
+}
+.jsu-terrain-boundary {
+  margin: 0;
+  text-align: center;
+}
+.jsu-map-event-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.75rem;
+  padding: 0.72rem 0.8rem;
+  border: 1px solid color-mix(in oklab, var(--accent) 35%, var(--line));
+  border-radius: 10px;
+  background: color-mix(in oklab, var(--surface) 88%, var(--accent) 4%);
+}
+.jsu-map-event-number {
+  display: grid;
+  width: 2.15rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid color-mix(in oklab, var(--accent) 55%, var(--line));
+  border-radius: 50%;
+  color: var(--accent) !important;
+  font-family: var(--font-mono);
+  font-size: 0.68rem !important;
+  font-weight: 800;
+}
+.jsu-map-event-copy {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
+}
+.jsu-map-event-card span,
+.jsu-map-event-card small {
+  color: var(--muted);
+  font-size: 0.66rem;
+}
+.jsu-map-event-card strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 0.84rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.jsu-map-event-place {
+  margin-top: 0.35rem;
+  color: #586653 !important;
+  font-family: var(--font-mono);
+  font-size: 0.61rem !important;
+}
+.jsu-map-event-card small {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.35;
+}
+.jsu-map-event-card button {
+  flex: none;
+  min-height: var(--control-target-min);
+  padding: 0.45rem 0.72rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--surface);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+@media (max-width: 860px) {
+  .jsu-map-experience-head,
+  .jsu-atlas-frame {
+    grid-template-columns: 1fr;
+  }
+  .jsu-atlas-map {
+    width: min(100%, 25rem);
+  }
+  .jsu-terrain-frame {
+    min-height: 46rem;
+  }
+  .jsu-terrain-era-nav.is-terrain {
+    top: 4.7rem;
+    right: 1rem;
+    width: auto;
+    grid-template-columns: repeat(6, minmax(7rem, 1fr));
+    overflow-x: auto;
+  }
+  .jsu-terrain-era-nav.is-terrain button {
+    grid-template-columns: 1.4rem minmax(0, 1fr);
+  }
+  .jsu-terrain-era-nav.is-terrain button > small {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .jsu-map-experience-head {
+    gap: 0.6rem;
+    margin-bottom: 0.65rem;
+    padding-inline: 0.15rem;
+  }
+  .jsu-map-experience-head h2 {
+    font-size: 2rem;
+  }
+  .jsu-map-experience-head > div:first-child > p:last-child {
+    display: none;
+  }
+  .jsu-map-view-switch {
+    width: 100%;
+  }
+  .jsu-terrain-frame {
+    min-height: 42rem;
+  }
+  .jsu-terrain-toolbar,
+  .jsu-terrain-modes {
+    justify-content: space-between;
+  }
+  .jsu-terrain-era-nav.is-terrain {
+    top: 4.5rem;
+    right: 0.65rem;
+    left: 0.65rem;
+    grid-template-columns: repeat(6, minmax(6.4rem, 1fr));
+    padding: 0.3rem;
+  }
+  .jsu-terrain-era-nav.is-terrain button {
+    min-height: var(--control-target-min);
+    padding: 0.28rem 0.38rem;
+  }
+  .jsu-terrain-toolbar,
+  .jsu-journey-console {
+    padding-inline: 0.48rem;
+  }
+  .jsu-terrain-reset {
+    padding-inline: 0.55rem;
+  }
+  .jsu-journey-console {
+    grid-template-columns:
+      var(--tap-target, var(--control-target-min))
+      minmax(0, 1fr)
+      var(--tap-target, var(--control-target-min));
+    gap: 0.28rem;
+  }
+  .jsu-journey-play {
+    padding-inline: 0.52rem !important;
+  }
+  .jsu-map-event-card {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+  }
+  .jsu-map-event-card button {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jsu-terrain-spinner {
+    animation: none;
+  }
+}
+
+.jsu-life-panel {
+  margin-top: 0.75rem;
+  /* Let gospel text stay the hero; plate is a header strip, not a billboard. */
+  padding-top: 0.75rem;
+}
+.jsu-life-panel .ew-section-plate {
+  margin: 0 0 0.75rem;
+}
+.jsu-life-panel .ew-section-plate-media {
+  /* Always wider than tall so open events don’t shove the map off-screen. */
+  aspect-ratio: 2.2 / 1;
+  max-height: 200px;
+}
+.jsu-life-panel .ew-section-plate figcaption {
+  font-size: 0.74rem;
+  right: 0.55rem;
+  bottom: 0.45rem;
+  left: 0.55rem;
+  line-height: 1.28;
+  /* Long captions: clamp so they don’t cover the whole image on small widths. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+@media (max-width: 560px) {
+  .jsu-life-panel {
+    padding: 0.7rem 0.8rem;
+  }
+  .jsu-life-panel .ew-section-plate-media {
+    max-height: 140px;
+    aspect-ratio: 2.4 / 1;
+  }
+  .jsu-life-panel .scr-ref {
+    font-size: 0.88rem;
+  }
+  .jsu-life-panel p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+}
+/* When the map is sticky, keep the open panel from fighting it for attention. */
+@media (min-width: 861px) {
+  .jsu-life-panel .ew-section-plate-media {
+    max-height: 180px;
+  }
+}
+
+/* Beyond the Western lens */
+.jsu-perspective-section,
+.jsu-text-shelf,
+.jsu-art-archive {
+  scroll-margin-top: 1.5rem;
+}
+.jsu-lens-h {
+  font-size: 1.02rem;
+  margin: 0 0 0.4rem;
+}
+.jsu-lane {
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-top: 1px solid var(--line);
+  padding-top: 1.6rem;
+  margin: 2.4rem 0 0.6rem;
+}
+.jsu-perspective-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+.jsu-perspective-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 1rem;
+}
+.jsu-perspective-name {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.35rem;
+}
+.jsu-perspective-card h3 {
+  font-size: 1.08rem;
+  line-height: 1.25;
+  margin: 0 0 0.65rem;
+}
+.jsu-perspective-card > p:not(.jsu-perspective-name) {
+  margin: 0 0 0.85rem;
+}
+.jsu-perspective-boundary {
+  border-left: 3px solid color-mix(in srgb, var(--accent) 48%, var(--line));
+  background: color-mix(in srgb, var(--accent) 5%, var(--bg));
+  padding: 0.7rem 0.8rem;
+  margin-top: auto;
+}
+.jsu-perspective-boundary strong {
+  display: block;
+  font-size: 0.76rem;
+  margin-bottom: 0.25rem;
+}
+.jsu-perspective-boundary p {
+  color: var(--muted);
+  font-size: 0.86rem;
+  margin: 0;
+}
+.jsu-perspective-sources {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin: 0.8rem 0 0;
+  padding-left: 1rem;
+}
+.jsu-perspective-sources a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
+}
+.jsu-text-shelf {
+  margin-top: 2.6rem;
+}
+.jsu-text-list {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+.jsu-text-list .jsu-source {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  margin: 0;
+}
+.jsu-text-list .jsu-source summary,
+.jsu-art-archive > summary {
+  cursor: pointer;
+  list-style: none;
+}
+.jsu-text-list .jsu-source summary::-webkit-details-marker,
+.jsu-art-archive > summary::-webkit-details-marker {
+  display: none;
+}
+.jsu-text-list .jsu-source summary {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.85rem 1rem;
+}
+.jsu-text-list .jsu-source summary::after,
+.jsu-art-archive > summary::after {
+  color: var(--accent);
+  content: "+";
+  font-size: 1.25rem;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+.jsu-text-list .jsu-source[open] summary::after,
+.jsu-art-archive[open] > summary::after {
+  content: "−";
+}
+.jsu-text-list .jsu-source summary strong {
+  color: var(--accent);
+}
+.jsu-text-list .jsu-source summary span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+.jsu-source-body {
+  border-top: 1px solid var(--line);
+  padding: 0.2rem 1rem 1rem;
+}
+.jsu-art-archive {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--surface) 75%, transparent);
+  margin-top: 2rem;
+}
+.jsu-art-archive > summary {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.3rem 1rem;
+  padding: 1rem;
+}
+.jsu-art-archive > summary strong,
+.jsu-art-archive > summary span {
+  grid-column: 1;
+}
+.jsu-art-archive > summary span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.jsu-art-archive .jsu-gallery {
+  border-top: 1px solid var(--line);
+  margin: 0;
+  padding: 1rem;
+}
+@media (max-width: 720px) {
+  .jsu-perspective-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.jsu-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.1rem;
+  margin-top: 1.25rem;
+}
+
+/* Jesus landing: the source method in one compact, scannable band. */
+/* .artplate* lives in worlds-shared.css (shared by the Jesus lens gallery and the church faces). */
+
+/* Journey narrative — text-only guide through Jesus's life */
+.jsu-journey-narrative {
+  margin-top: 3rem;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+.jsu-journey-narrative h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.jsu-journey-intro {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  max-width: 65ch;
+}
+.jsu-narrative-era {
+  margin-top: 2.5rem;
+}
+.jsu-narrative-era h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--line);
+}
+.jsu-narrative-events {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.jsu-narrative-event {
+  padding: 1.25rem;
+  background: var(--bg);
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+}
+.jsu-narrative-event h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+.jsu-narrative-journey {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.jsu-narrative-place {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+.jsu-narrative-place p {
+  margin: 0;
+}
+.jsu-narrative-place strong {
+  color: var(--ink);
+}
+.jsu-narrative-description {
+  color: var(--ink);
+  font-size: 0.95rem;
+  margin: 0.75rem 0;
+  line-height: 1.7;
+}
+.jsu-narrative-refs {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+.jsu-narrative-refs strong {
+  color: var(--ink);
+}
+.jsu-narrative-summary {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: var(--bg);
+  border-radius: 4px;
+}
+.jsu-narrative-summary h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.jsu-narrative-summary p {
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+.jsu-narrative-summary p:last-child {
+  margin-bottom: 0;
+}
+
+/* Toggle for expanding narrative section */
+.jsu-narrative-toggle {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.jsu-narrative-toggle summary {
+  display: flex;
+  min-height: var(--control-target-min);
+  align-items: center;
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.05rem;
+  cursor: pointer;
+  user-select: none;
+}
+.jsu-narrative-toggle summary:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .world-jesus main {
+    padding-top: 2rem;
+  }
+  .world-jesus .world-guide {
+    margin-bottom: 1.5rem;
+  }
+  .world-jesus .wg-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+    scrollbar-width: thin;
+  }
+  .world-jesus .wg-nav a {
+    flex: none;
+  }
+  .jsu-connection-key {
+    grid-template-columns: 1fr;
+  }
+  .world-jesus .vsw[data-world-switcher="true"] {
+    width: calc(100vw - 1rem);
+  }
+}
+
+/* Language selector */
+.jsu-language-selector {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) minmax(8rem, 12rem);
+  align-items: end;
+  gap: 0.75rem 1rem;
+  margin: 0.9rem 0 1.5rem;
+  max-width: 36rem;
+}
+
+.jsu-language-copy {
+  display: grid;
+  gap: 0.2rem;
+}
+.jsu-language-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.jsu-language-copy small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.jsu-language-select {
+  padding: 0.5rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.jsu-language-select:hover {
+  border-color: var(--muted);
+}
+
+.jsu-language-select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.jsu-language-select option {
+  color: var(--ink);
+  background: var(--surface);
+}
+
+@media (max-width: 520px) {
+  .jsu-lens-head {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .jsu-language-selector {
+    grid-template-columns: 1fr;
+  }
+  .jsu-language-select {
+    width: 100%;
+  }
+}
+
+/* ── Cross to ascension ──────────────────────────────────────────
+   The death, the three days, the forty days, the ascension. A clock
+   spine, an attestation grid, and the differences left visible. */
+.jsu-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.jsu-risen-jumps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem;
+}
+.jsu-risen-jumps a {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+}
+.jsu-risen-jumps a:hover,
+.jsu-risen-jumps a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.jsu-risen-method,
+.jsu-risen-disclosure,
+.jsu-risen-question-disclosure {
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface);
+}
+.jsu-risen-method {
+  margin: 0 0 2.25rem;
+}
+.jsu-risen-disclosure {
+  margin-top: 1.5rem;
+}
+.jsu-risen-method > summary,
+.jsu-risen-disclosure > summary {
+  cursor: pointer;
+  display: grid;
+  gap: 0.2rem 1rem;
+  grid-template-columns: 1fr auto;
+  list-style: none;
+  padding: 0.8rem 1rem;
+}
+.jsu-risen-method > summary::-webkit-details-marker,
+.jsu-risen-disclosure > summary::-webkit-details-marker,
+.jsu-risen-question-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+.jsu-risen-method > summary::after,
+.jsu-risen-disclosure > summary::after,
+.jsu-risen-question-disclosure > summary::after {
+  align-self: center;
+  color: var(--accent);
+  content: "+";
+  font-size: 1.2rem;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.jsu-risen-method[open] > summary::after,
+.jsu-risen-disclosure[open] > summary::after,
+.jsu-risen-question-disclosure[open] > summary::after {
+  content: "−";
+}
+.jsu-risen-method > summary span,
+.jsu-risen-disclosure > summary span {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.jsu-risen-method > summary strong,
+.jsu-risen-disclosure > summary strong {
+  font-size: 0.94rem;
+  line-height: 1.35;
+}
+.jsu-risen-method > summary span,
+.jsu-risen-method > summary strong,
+.jsu-risen-disclosure > summary span,
+.jsu-risen-disclosure > summary strong {
+  grid-column: 1;
+}
+.jsu-risen-method .source-basis {
+  border: 0;
+  border-radius: 0;
+  border-top: 1px solid var(--line);
+  margin: 0;
+  box-shadow: none;
+}
+.jsu-risen-disclosure-body {
+  border-top: 1px solid var(--line);
+  padding: 1rem;
+}
+.jsu-risen-disclosure-body > .scr-meta:first-child {
+  margin-top: 0;
+}
+.jsu-risen-evidence-items {
+  display: grid;
+  margin-top: 0.9rem;
+}
+.jsu-risen-evidence-item {
+  border-top: 1px solid var(--line);
+  padding: 0.9rem 0;
+}
+.jsu-risen-evidence-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.jsu-risen-evidence-item:last-child {
+  padding-bottom: 0;
+}
+.jsu-risen-evidence-item h4 {
+  font-size: 1.02rem;
+  line-height: 1.3;
+  margin: 0.2rem 0 0.3rem;
+}
+.jsu-risen-evidence-item > p:not([class]) {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0;
+}
+.jsu-risen-plate {
+  border: 1px solid color-mix(in srgb, var(--accent) 36%, var(--line));
+  border-radius: 3px;
+  background: var(--surface);
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--ink) 7%, transparent);
+  margin: 1.6rem 0 2.1rem;
+  overflow: hidden;
+}
+.jsu-risen-plate-media {
+  aspect-ratio: 2.2 / 1;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.jsu-risen-plate.is-hero {
+  margin: 1.75rem 0 1.65rem;
+}
+.jsu-risen-plate.is-hero .jsu-risen-plate-media {
+  aspect-ratio: 2.3 / 1;
+}
+.jsu-risen-plate-media img {
+  filter: saturate(0.94) contrast(1.025);
+  object-fit: cover;
+}
+.jsu-risen-plate figcaption {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.65rem;
+  line-height: 1.45;
+  padding: 0.7rem 0.85rem 0.75rem;
+}
+.jsu-risen-plate figcaption strong {
+  color: var(--accent);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.jsu-risen-plate figcaption span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.jsu-risen-movement {
+  margin-top: 2.75rem;
+  scroll-margin-top: 1.5rem;
+}
+.jsu-risen-movement-head h2 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.15;
+  margin: 0;
+}
+.jsu-risen-movement-question {
+  color: var(--accent);
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 0.4rem 0 0.3rem;
+}
+.jsu-risen-movement-head .scr-meta {
+  margin: 0;
+  max-width: 62ch;
+}
+.jsu-risen-clock {
+  border-left: 2px solid var(--line);
+  display: grid;
+  gap: 1.35rem;
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0 0 0 1.4rem;
+}
+.jsu-risen-moment {
+  position: relative;
+  scroll-margin-top: 1.5rem;
+}
+.jsu-risen-moment::before {
+  background: var(--accent);
+  border-radius: 50%;
+  content: "";
+  height: 9px;
+  left: calc(-1.4rem - 5.5px);
+  position: absolute;
+  top: 0.45rem;
+  width: 9px;
+}
+.jsu-risen-moment-clock {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  margin: 0;
+  text-transform: uppercase;
+}
+.jsu-risen-moment h3 {
+  font-size: 1.08rem;
+  line-height: 1.3;
+  margin: 0.2rem 0 0.3rem;
+}
+.jsu-risen-moment-line {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 66ch;
+}
+.jsu-risen-attest {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0.5rem 0 0;
+  text-transform: uppercase;
+}
+.jsu-risen-tension {
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 9px 9px 0;
+  display: grid;
+  gap: 0.2rem;
+  margin: 0.6rem 0 0;
+  max-width: 66ch;
+  padding: 0.6rem 0.85rem;
+}
+.jsu-risen-tension strong {
+  color: var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.jsu-risen-tension span {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.jsu-risen-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.7rem;
+  list-style: none;
+  margin: 0.55rem 0 0;
+  padding: 0;
+}
+.jsu-risen-refs li {
+  font-size: 0.84rem;
+  font-variant-numeric: tabular-nums;
+}
+.jsu-risen-grid-wrap {
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  margin-top: 0.9rem;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  /* Contains the visually-hidden cell labels. Without it they resolve against
+     the viewport, escape this scroller's clip, and widen the document. */
+  position: relative;
+}
+.jsu-risen-grid {
+  border-collapse: collapse;
+  min-width: 40rem;
+  width: 100%;
+}
+.jsu-risen-grid th,
+.jsu-risen-grid td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.6rem 0.7rem;
+  text-align: left;
+}
+.jsu-risen-grid thead th {
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.jsu-risen-grid tbody tr:last-child th,
+.jsu-risen-grid tbody tr:last-child td {
+  border-bottom: 0;
+}
+/* The row label stays put while the source columns scroll under it. */
+.jsu-risen-grid thead th:first-child,
+.jsu-risen-grid tbody th {
+  left: 0;
+  position: sticky;
+  z-index: 1;
+}
+.jsu-risen-grid tbody th {
+  background: var(--bg);
+  border-right: 1px solid var(--line);
+  display: table-cell;
+  min-width: 14rem;
+}
+.jsu-risen-grid thead th:first-child {
+  border-right: 1px solid var(--line);
+}
+.jsu-risen-grid tbody th strong {
+  display: block;
+  font-size: 0.95rem;
+}
+.jsu-risen-grid tbody th span {
+  color: var(--muted);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+.jsu-risen-grid td {
+  color: var(--line);
+  font-size: 0.84rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+.jsu-risen-grid td.is-reported {
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+  color: var(--ink);
+}
+.jsu-risen-appearance-notes {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding-left: 1.15rem;
+}
+.jsu-risen-appearance-notes li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.jsu-risen-appearance-notes strong {
+  margin-right: 0.35rem;
+}
+.jsu-risen-appearance-notes span {
+  color: var(--muted);
+}
+.jsu-risen-appearance-notes em {
+  color: var(--muted);
+  display: block;
+  font-size: 0.84rem;
+}
+.jsu-risen-appearance-story {
+  margin-top: 2.25rem;
+}
+.jsu-risen-appearance-story h3,
+.jsu-risen-source-note h3,
+.jsu-risen-later h3 {
+  font-size: 1.18rem;
+  line-height: 1.25;
+  margin: 0;
+}
+.jsu-risen-appearance-story > .scr-meta {
+  margin: 0.45rem 0 0;
+  max-width: 66ch;
+}
+.jsu-risen-appearance-story ol {
+  border-left: 2px solid var(--line);
+  display: grid;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 1.3rem 0 0;
+  padding: 0 0 0 1.4rem;
+}
+.jsu-risen-appearance-story li {
+  position: relative;
+}
+.jsu-risen-appearance-story li::before {
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  content: "";
+  height: 9px;
+  left: calc(-1.4rem - 5.5px);
+  position: absolute;
+  top: 0.35rem;
+  width: 9px;
+}
+.jsu-risen-appearance-story h4 {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0.2rem 0 0.25rem;
+}
+.jsu-risen-appearance-story li > p:not([class]) {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 66ch;
+}
+.jsu-risen-source-note,
+.jsu-risen-later {
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
+  border-radius: 0 10px 10px 0;
+  margin-top: 2rem;
+  padding: 0.9rem 1rem;
+}
+.jsu-risen-source-note > p:not([class]),
+.jsu-risen-later > p:not([class]) {
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin: 0.45rem 0 0;
+  max-width: 66ch;
+}
+.jsu-risen-source-note > .scr-meta,
+.jsu-risen-later > .scr-meta {
+  margin: 0.45rem 0 0;
+}
+.jsu-risen-transition {
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.65;
+  margin: 2.4rem 0 0;
+  max-width: 68ch;
+  padding: 1rem 0;
+}
+.jsu-risen-apocrypha {
+  border-top: 2px solid color-mix(in srgb, var(--accent) 36%, var(--line));
+  margin: 3rem 0 1.5rem;
+  padding-top: 1.4rem;
+  scroll-margin-top: 1.5rem;
+}
+.jsu-risen-apocrypha h2 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.15;
+  margin: 0;
+  max-width: 24ch;
+}
+.jsu-risen-apocrypha > .scr-meta {
+  margin: 0.6rem 0 0;
+  max-width: 66ch;
+}
+.jsu-risen-apocrypha-archive {
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  border-radius: 12px;
+  background: var(--surface);
+  margin-top: 1.25rem;
+}
+.jsu-risen-apocrypha-archive > summary,
+.jsu-risen-apocrypha-card > summary {
+  cursor: pointer;
+  display: grid;
+  gap: 0.2rem 1rem;
+  grid-template-columns: 1fr auto;
+  list-style: none;
+}
+.jsu-risen-apocrypha-archive > summary {
+  padding: 0.9rem 1rem;
+}
+.jsu-risen-apocrypha-archive > summary::-webkit-details-marker,
+.jsu-risen-apocrypha-card > summary::-webkit-details-marker {
+  display: none;
+}
+.jsu-risen-apocrypha-archive > summary::after,
+.jsu-risen-apocrypha-card > summary::after {
+  align-self: center;
+  color: var(--accent);
+  content: "+";
+  font-size: 1.2rem;
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+.jsu-risen-apocrypha-archive[open] > summary::after,
+.jsu-risen-apocrypha-card[open] > summary::after {
+  content: "−";
+}
+.jsu-risen-apocrypha-archive > summary span,
+.jsu-risen-apocrypha-card > summary span {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.jsu-risen-apocrypha-archive > summary strong,
+.jsu-risen-apocrypha-card > summary strong,
+.jsu-risen-apocrypha-card > summary em,
+.jsu-risen-apocrypha-archive > summary span,
+.jsu-risen-apocrypha-card > summary span {
+  grid-column: 1;
+}
+.jsu-risen-apocrypha-archive > summary strong {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.jsu-risen-apocrypha-groups {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+.jsu-risen-apocrypha-group h3 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin: 0;
+}
+.jsu-risen-apocrypha-group > p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0.35rem 0 0;
+  max-width: 66ch;
+}
+.jsu-risen-apocrypha-list {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.8rem;
+}
+.jsu-risen-apocrypha-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--bg) 35%, var(--surface));
+  scroll-margin-top: 1.5rem;
+}
+.jsu-risen-apocrypha-card > summary {
+  padding: 0.8rem 0.9rem;
+}
+.jsu-risen-apocrypha-card > summary strong {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.jsu-risen-apocrypha-card > summary em {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-style: normal;
+  line-height: 1.4;
+}
+.jsu-risen-apocrypha-card-body {
+  border-top: 1px solid var(--line);
+  padding: 0.9rem;
+}
+.jsu-risen-apocrypha-card-body dl {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 1rem;
+}
+.jsu-risen-apocrypha-card-body dl > div {
+  border-top: 1px solid var(--line);
+  padding-top: 0.6rem;
+}
+.jsu-risen-apocrypha-card-body dt {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.jsu-risen-apocrypha-card-body dd {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0.3rem 0 0;
+}
+.jsu-risen-apocrypha-source {
+  color: var(--accent);
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-underline-offset: 0.18em;
+}
+.jsu-risen-claim {
+  border-left: 3px solid var(--accent);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0 0 0.85rem;
+  padding: 0.2rem 0 0.2rem 0.9rem;
+}
+.jsu-risen-boundary {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.jsu-risen-boundary > div {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0.3rem;
+  padding-top: 0.6rem;
+}
+.jsu-risen-boundary strong {
+  color: var(--accent);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.jsu-risen-boundary span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.jsu-risen-questions {
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  border-radius: 14px;
+  background: var(--surface);
+  margin: 2.75rem 0 1.5rem;
+  padding: 1.1rem;
+  scroll-margin-top: 1.5rem;
+}
+.jsu-risen-questions h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+.jsu-risen-questions > .scr-meta {
+  margin: 0;
+  max-width: 66ch;
+}
+.jsu-risen-question-disclosure {
+  margin-top: 1rem;
+}
+.jsu-risen-question-disclosure > summary {
+  cursor: pointer;
+  display: grid;
+  font-size: 0.92rem;
+  font-weight: 700;
+  gap: 1rem;
+  grid-template-columns: 1fr auto;
+  list-style: none;
+  padding: 0.85rem 1rem;
+}
+.jsu-risen-question-disclosure > summary::after {
+  grid-row: 1;
+}
+.jsu-risen-question-list {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 0;
+  padding: 0 1rem 1rem;
+}
+.jsu-risen-question {
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+}
+.jsu-risen-question h3 {
+  color: var(--accent);
+  font-size: 1.02rem;
+  margin: 0 0 0.35rem;
+}
+.jsu-risen-question p {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 70ch;
+}
+@media (max-width: 720px) {
+  .jsu-risen-jumps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .jsu-risen-plate-media,
+  .jsu-risen-plate.is-hero .jsu-risen-plate-media {
+    aspect-ratio: 1.65 / 1;
+  }
+  .jsu-risen-boundary {
+    grid-template-columns: 1fr;
+  }
+  .jsu-risen-apocrypha-card-body dl {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .jsu-risen-grid {
+    min-width: 34rem;
+  }
+  .jsu-risen-grid tbody th {
+    min-width: 9.5rem;
+  }
+  .jsu-risen-grid th,
+  .jsu-risen-grid td {
+    padding: 0.55rem 0.5rem;
+  }
+  .jsu-risen-grid tbody th strong {
+    font-size: 0.88rem;
+  }
+  .jsu-risen-grid tbody th span {
+    font-size: 0.72rem;
+  }
+}
+
+/* The original-language line beneath a verse — a quiet inline affordance, not
+   a second column. The toggle sits at the end of the verse so the English
+   still reads as one line, and the original unrolls below it when asked for.
+   Shared by the Words room and the prophecy pairs. */
+.orig-line {
+  display: block;
+  margin-top: 0.35rem;
+}
+.orig-line-toggle {
+  margin-inline-start: 0.45rem;
+  min-height: var(--control-target-min);
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  vertical-align: middle;
+}
+@media (hover: hover) and (pointer: fine) {
+  .orig-line-toggle:hover {
+    border-color: var(--accent);
+    color: var(--ink);
+  }
+}
+.orig-line .scr-original {
+  display: block;
+  margin-top: 0.5rem;
+}
+.orig-line .scr-meta {
+  display: block;
+  margin-top: 0.4rem;
+}
+
+/* The verse line inside a words-room verse block. The block wrapper exists so
+   the original-language line can sit beside the sentence rather than inside
+   its paragraph; the paragraph keeps the reading rhythm it had. */
+.scr-verse-text {
+  margin: 0;
+}
+
+/* Gospel attestation — which of the four carry a moment on the life map.
+   Present and absent are both marked: a blank column reads as an oversight,
+   a struck one reads as the record actually being silent there. */
+.jsu-attest {
+  margin-top: 0.6rem;
+}
+.jsu-attest-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jsu-attest-row li {
+  min-width: 3.4rem;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.74rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.jsu-attest-row li.is-present {
+  border-color: var(--accent);
+  color: var(--ink);
+  font-weight: 600;
+}
+.jsu-attest-row li.is-absent {
+  color: var(--muted);
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+.jsu-attest-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.jsu-attest-summary {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.jsu-attest-ordering {
+  margin-top: 0.5rem;
+  font-size: 0.84rem;
+}
+.jsu-attest-ordering summary {
+  cursor: pointer;
+  color: var(--muted);
+}
+.jsu-attest-ordering p {
+  margin: 0.45rem 0 0;
+  line-height: 1.55;
+}
+.jsu-attest-ordering-refs {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* Synthesis Essays */
+.jsu-essays-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.jsu-essay-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.jsu-essay-media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #0d1117;
+  overflow: hidden;
+}
+
+.jsu-essay-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.jsu-essay-card:hover .jsu-essay-img {
+  transform: scale(1.03);
+}
+
+.jsu-essay-kicker {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+.jsu-essay-header {
+  padding: 1.15rem 1.25rem 0.75rem;
+  flex-grow: 1;
+}
+
+.jsu-essay-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.jsu-essay-summary {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.jsu-essay-details {
+  border-top: 1px solid var(--line);
+}
+
+.jsu-essay-summary-btn {
+  cursor: pointer;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.jsu-essay-summary-btn::-webkit-details-marker {
+  display: none;
+}
+
+.jsu-essay-summary-btn::after {
+  content: "+";
+  font-size: 1.25rem;
+}
+
+.jsu-essay-details[open] .jsu-essay-summary-btn::after {
+  content: "−";
+}
+
+.jsu-essay-content {
+  padding: 1rem 1.25rem 1.75rem;
+  border-top: 1px dashed var(--line);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  background: color-mix(in srgb, var(--surface) 90%, var(--bg));
+}
+
+.jsu-essay-h1 {
+  font-size: 1.35rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.jsu-essay-h2 {
+  font-size: 1.15rem;
+  margin: 1.2rem 0 0.45rem;
+  color: var(--accent);
+}
+
+.jsu-essay-h3 {
+  font-size: 1rem;
+  margin: 1rem 0 0.35rem;
+}
+
+.jsu-essay-p {
+  margin: 0 0 0.85rem;
+}
+
+.jsu-essay-quote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.jsu-essay-pre {
+  background: #11141a;
+  color: #e6edf3;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.jsu-essay-inline-code {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.jsu-essay-hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 1.5rem 0;
+}
+
+.jsu-essay-li {
+  margin-left: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Extended Research Corpus */
+.jsu-sources-container {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  min-width: 0;
+}
+
+.jsu-sources-category-block {
+  min-width: 0;
+}
+
+.jsu-sources-category-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.jsu-sources-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.65rem;
+}
+
+.jsu-source-item {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+
+.jsu-source-main {
+  min-width: 0;
+}
+
+.jsu-source-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  font-size: 0.72rem;
+}
+
+.jsu-source-tier {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+}
+
+.jsu-tier-a {
+  background: #238636;
+  color: #fff;
+}
+
+.jsu-tier-b {
+  background: #1f6feb;
+  color: #fff;
+}
+
+.jsu-tier-c {
+  background: #6e7681;
+  color: #fff;
+}
+
+.jsu-source-type {
+  color: var(--muted);
+}
+
+.jsu-source-year {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.jsu-source-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.4;
+}
+
+.jsu-source-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.jsu-source-title a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.jsu-source-ext {
+  font-size: 0.8em;
+  opacity: 0.75;
+}
+
+.jsu-source-author {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 0 0.2rem;
+}
+
+.jsu-source-rationale {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── Jesus home — the guided path ──────────────────────────────
+   Wayfinding panel, station rail, threshold, and full-map nav.
+   Scroll reveals are CSS-only, gated behind @supports + motion
+   preference; the page is fully readable without them. */
+
+.jsu-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Wayfinding — what this page is and how to walk it */
+.jsu-wayfinding {
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, transparent), transparent 62%),
+    var(--surface);
+  margin: 2rem 0 0;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+}
+.jsu-wayfinding header {
+  max-width: 52rem;
+}
+.jsu-wayfinding-kicker,
+.jsu-threshold-kicker,
+.jsu-all-paths-kicker {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.jsu-wayfinding h2 {
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  line-height: 1.15;
+  margin: 0.3rem 0 0;
+}
+.jsu-wayfinding-lede {
+  color: var(--ink);
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  line-height: 1.6;
+  margin: 0.75rem 0 0;
+  max-width: 52rem;
+}
+.jsu-wayfinding-rules {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.1rem;
+}
+.jsu-wayfinding-rules > div {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0.35rem;
+  padding-top: 0.75rem;
+}
+.jsu-wayfinding-rules strong {
+  color: var(--accent);
+  font-size: 0.82rem;
+}
+.jsu-wayfinding-rules span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.jsu-wayfinding-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  margin: 1rem 0 0;
+}
+.jsu-wayfinding-links a {
+  color: var(--accent);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+.jsu-wayfinding-cue {
+  margin: 1.35rem 0 0;
+}
+.jsu-wayfinding-cue a {
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  color: var(--accent-deep);
+  font-weight: 700;
+  padding-bottom: 0.15rem;
+  text-decoration: none;
+}
+.jsu-wayfinding-cue a:hover {
+  border-bottom-color: var(--accent-deep);
+}
+
+/* Station rail — one numbered path with bridges between stops */
+.jsu-journey {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+.jsu-stations {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.jsu-stations::before {
+  content: "";
+  position: absolute;
+  left: 1.55rem;
+  top: 0.8rem;
+  bottom: 0.8rem;
+  width: 2px;
+  background: color-mix(in srgb, var(--accent) 32%, var(--line));
+}
+.jsu-station {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  gap: clamp(0.9rem, 2.5vw, 1.4rem);
+  padding: clamp(1.1rem, 3vw, 1.6rem) 0;
+  position: relative;
+  scroll-margin-top: 5rem;
+}
+.jsu-station + .jsu-station {
+  border-top: 1px dashed color-mix(in srgb, var(--accent) 22%, var(--line));
+}
+.jsu-station-index {
+  align-items: center;
+  background: var(--accent);
+  border-radius: 999px;
+  color: var(--accent-ink);
+  display: flex;
+  font-size: 0.95rem;
+  font-weight: 700;
+  height: 3.1rem;
+  justify-content: center;
+  position: relative;
+  width: 3.1rem;
+  z-index: 1;
+}
+.jsu-station-body {
+  max-width: 46rem;
+}
+.jsu-station-connector {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 0.55rem;
+}
+.jsu-station-connector span {
+  color: var(--accent);
+}
+.jsu-station-role {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+.jsu-station h3 {
+  font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+  line-height: 1.2;
+  margin: 0.3rem 0 0;
+}
+.jsu-station-invite {
+  color: var(--ink);
+  font-size: 0.97rem;
+  line-height: 1.6;
+  margin: 0.55rem 0 0;
+}
+.jsu-station-meta {
+  color: var(--muted);
+  font-size: 0.84rem;
+  margin: 0.5rem 0 0;
+}
+.jsu-station-cta {
+  margin-top: 0.85rem;
+}
+
+/* Threshold — where the path lands */
+.jsu-threshold {
+  border: 2px solid color-mix(in srgb, var(--accent) 55%, var(--line));
+  border-radius: 16px;
+  background:
+    radial-gradient(120% 140% at 12% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 55%),
+    var(--surface);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding: clamp(1.35rem, 3.5vw, 2.1rem);
+  max-width: 56rem;
+}
+.jsu-threshold h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  line-height: 1.12;
+  margin: 0.35rem 0 0;
+}
+.jsu-threshold p {
+  color: var(--ink);
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  line-height: 1.65;
+  margin: 0.85rem 0 0;
+  max-width: 52rem;
+}
+.jsu-threshold-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.3rem;
+}
+.jsu-threshold-standard {
+  margin-top: 1rem;
+}
+.jsu-threshold-standard a {
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+/* Full map — every room for non-linear visitors */
+.jsu-all-paths {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+.jsu-all-paths h2 {
+  font-size: clamp(1.35rem, 2.8vw, 1.9rem);
+  line-height: 1.2;
+  margin: 0.3rem 0 1rem;
+}
+.jsu-all-paths ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jsu-all-paths-card {
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: inherit;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  min-height: 100%;
+  padding: 0.95rem 1.05rem;
+  text-decoration: none;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+.jsu-all-paths-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+  transform: translateY(-1px);
+}
+.jsu-all-paths-card strong {
+  display: block;
+  font-size: 0.98rem;
+}
+.jsu-all-paths-card small {
+  color: var(--muted);
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  margin-top: 0.2rem;
+}
+.jsu-all-paths-end {
+  align-items: baseline;
+  display: flex;
+  flex: none;
+  gap: 0.5rem;
+}
+.jsu-all-paths-end em {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* Scroll-driven reveal — progressive enhancement only */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .jsu-station,
+    .jsu-threshold,
+    .jsu-all-paths {
+      animation: jsu-path-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 42%;
+    }
+  }
+}
+@keyframes jsu-path-in {
+  from {
+    opacity: 0.2;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .jsu-wayfinding-rules {
+    grid-template-columns: 1fr;
+  }
+  .jsu-all-paths ul {
+    grid-template-columns: 1fr;
+  }
+  .jsu-stations::before {
+    left: 1.3rem;
+  }
+  .jsu-station {
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+  }
+  .jsu-station-index {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+  .jsu-all-paths-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ── Jesus NotebookLM Research Dossier Engine ───────────────────────
+   Sandstone, warm ivory, deep slate, crimson wine, and gold accents. */
+
+.jsu-dossier-wrap {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.jsu-dossier-root {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.jsu-dossier-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.jsu-dossier-cat-pill {
+  min-height: var(--control-target-min);
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.jsu-dossier-cat-pill:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+.jsu-dossier-cat-pill.is-active {
+  background: var(--accent);
+  color: var(--accent-ink, #ffffff);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.jsu-dossier-presets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.1rem;
+}
+
+.jsu-dossier-preset-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: var(--control-target-min);
+  text-align: left;
+  padding: 1.25rem;
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.jsu-dossier-preset-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(93, 38, 31, 0.12);
+}
+
+.jsu-dossier-preset-card.is-selected {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  box-shadow: 0 0 0 1px var(--accent), 0 8px 24px rgba(93, 38, 31, 0.16);
+}
+
+.jsu-dossier-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.jsu-dossier-card-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.jsu-dossier-card-query {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.jsu-dossier-card-title {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.jsu-dossier-card-desc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.jsu-dossier-inquiry-bar {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.jsu-dossier-form {
+  display: flex;
+  min-width: 0;
+  gap: 0.75rem;
+}
+
+.jsu-dossier-input {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--control-target-min);
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.jsu-dossier-input:focus-visible {
+  border-color: var(--accent);
+  outline: 2px solid var(--control-focus-inner);
+  outline-offset: 0;
+  box-shadow: 0 0 0 4px var(--control-focus-outer);
+}
+
+.jsu-dossier-submit-btn {
+  min-height: var(--control-target-min);
+  padding: 0.65rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--accent-ink, #ffffff);
+  border: 1px solid var(--accent-deep);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.jsu-dossier-submit-btn:hover:not(:disabled) {
+  background: var(--accent-deep);
+}
+
+.jsu-dossier-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.jsu-dossier-source-error {
+  margin: 0.65rem 0 0;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.jsu-dossier-workspace {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.jsu-dossier-header {
+  padding: 1.5rem 1.75rem;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.jsu-dossier-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.jsu-dossier-active-title {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 1.4rem;
+  margin: 0;
+  color: var(--ink);
+}
+
+.jsu-dossier-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.jsu-dossier-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--control-target-min);
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.jsu-dossier-btn:hover {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.jsu-dossier-btn.is-primary {
+  background: var(--accent);
+  color: var(--accent-ink, #ffffff);
+  border-color: var(--accent-deep);
+  font-weight: 600;
+}
+
+.jsu-dossier-btn.is-primary:hover {
+  background: var(--accent-deep);
+}
+
+.jsu-dossier-btn.is-accent {
+  background: color-mix(in srgb, #b48a3c 22%, var(--surface));
+  color: var(--ink);
+  border-color: #b48a3c;
+  font-weight: 600;
+}
+
+.jsu-dossier-btn.is-accent:hover {
+  background: color-mix(in srgb, #b48a3c 35%, var(--surface));
+}
+
+.jsu-dossier-btn.is-sm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+.jsu-dossier-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 65%, var(--bg));
+  overflow-x: auto;
+}
+
+.jsu-dossier-tab-btn {
+  min-height: var(--control-target-min);
+  padding: 0.85rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.jsu-dossier-tab-btn:hover {
+  color: var(--ink);
+}
+
+.jsu-dossier-tab-btn.is-active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+  background: var(--surface);
+}
+
+.jsu-dossier-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.jsu-dossier-summary-block {
+  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
+  border-left: 4px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.jsu-dossier-summary-block h3 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin: 0 0 0.6rem;
+}
+
+.jsu-dossier-summary-block h4 {
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin: 1.2rem 0 0.4rem;
+}
+
+.jsu-dossier-summary-block p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0;
+}
+
+.jsu-dossier-divergence-block {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.jsu-dossier-divergence-block h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+}
+
+.jsu-dossier-divergence-key {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+.jsu-dossier-divergence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.jsu-dossier-divergence-block,
+.jsu-dossier-diff-item,
+.jsu-dossier-witness-entry,
+.jsu-dossier-prompt-box {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.jsu-dossier-diff-item {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.jsu-dossier-diff-witness {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.jsu-dossier-diff-reading {
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.45;
+  margin: 0 0 0.6rem;
+  color: var(--ink);
+  border-left: 2px solid var(--accent);
+  padding-left: 0.6rem;
+}
+
+.jsu-dossier-diff-expl {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+.jsu-dossier-witnesses-block h3 {
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.jsu-dossier-witness-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.jsu-dossier-witness-entry {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.2rem;
+}
+
+.jsu-dossier-witness-head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.jsu-dossier-witness-head strong {
+  color: var(--ink);
+}
+
+.jsu-dossier-witness-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.jsu-dossier-witness-quote {
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0 0 0.6rem;
+  color: var(--ink);
+  border-left: 3px solid #b48a3c;
+  padding-left: 0.85rem;
+}
+
+.jsu-dossier-witness-analysis {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+.jsu-dossier-prompts-block {
+  background: color-mix(in srgb, #b48a3c 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, #b48a3c 30%, var(--line));
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.jsu-dossier-prompts-block h3 {
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin: 0 0 0.85rem;
+}
+
+.jsu-dossier-prompts-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.jsu-dossier-prompts-list li {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.jsu-dossier-prose-pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.jsu-dossier-markdown-tab {
+  padding: 1.5rem;
+}
+
+.jsu-dossier-md-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.jsu-dossier-md-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.jsu-dossier-raw-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  resize: vertical;
+}
+
+.jsu-dossier-prompt-tab {
+  padding: 1.75rem;
+}
+
+.jsu-dossier-prompt-box {
+  background: color-mix(in srgb, #b48a3c 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, #b48a3c 30%, var(--line));
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.jsu-dossier-prompt-box h3 {
+  margin: 0.5rem 0 0.5rem;
+  color: var(--ink);
+}
+
+.jsu-dossier-prompt-box p {
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.jsu-dossier-prompt-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.jsu-dossier-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.jsu-dossier-grounding-notice {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.jsu-dossier-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.jsu-dossier-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.jsu-dossier-link:hover {
+  color: var(--accent-deep);
+}
+
+@media (max-width: 768px) {
+  .jsu-dossier-wrap {
+    padding-inline: 1rem;
+  }
+  .jsu-dossier-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .jsu-dossier-presets-grid {
+    grid-template-columns: 1fr;
+  }
+  .jsu-dossier-form,
+  .jsu-dossier-actions,
+  .jsu-dossier-md-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .jsu-dossier-actions,
+  .jsu-dossier-actions .jsu-dossier-btn,
+  .jsu-dossier-submit-btn {
+    width: 100%;
+  }
+  .jsu-dossier-tabs {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+  .jsu-dossier-tab-btn {
+    flex: 1 1 14rem;
+    white-space: normal;
+  }
+  .jsu-dossier-content,
+  .jsu-dossier-markdown-tab,
+  .jsu-dossier-prompt-tab {
+    padding: 1rem;
+  }
+  .jsu-dossier-summary-block,
+  .jsu-dossier-divergence-block,
+  .jsu-dossier-prompts-block,
+  .jsu-dossier-prompt-box {
+    padding: 1rem;
+  }
+  .jsu-dossier-divergence-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 390px) {
+  .jsu-dossier-wrap {
+    padding-inline: 0.75rem;
+  }
+}
+
+/* Keep the terrain visible while the selected stop and controls stay in flow. */
+.jsu-terrain-workspace { display: grid; }
+.jsu-terrain-dossier { min-width: 0; align-content: start; display: grid; }
+.jsu-terrain-dossier > .jsu-terrain-era-nav { position: static; display: grid; width: auto; padding: 0; }
+.jsu-terrain-dossier > .jsu-map-event-card { position: static; grid-template-columns: auto minmax(0, 1fr); width: auto; margin: 0; box-shadow: none; }
+.jsu-terrain-dossier .jsu-terrain-era-nav strong { white-space: normal; overflow: visible; line-height: 1.4; }
+.jsu-terrain-dossier > .jsu-map-event-card button { grid-column: 1 / -1; }
+.jsu-terrain-dossier > .jsu-map-event-card small { display: block; overflow: visible; }
+.jsu-terrain-dossier > .jsu-map-event-card strong { font-size: 1.5rem; line-height: 1.2; }
+.jsu-terrain-dossier > .jsu-journey-console { margin: 0; box-shadow: none; }
+.jsu-journey-scrubber { grid-column: 1 / -1; display: grid; font-size: 0.72rem; gap: 0.15rem; }
+.jsu-journey-scrubber input { width: 100%; min-height: 2.75rem; margin: 0; accent-color: var(--accent); cursor: pointer; }
+
+/* Gospel atlas: measured coastlines, quiet relief, ink-red journey overlay. */
+.jsu-map-panel.is-terrain {
+  border-color: #c9c9b9;
+  border-radius: 12px;
+  background: #f4f2e8;
+  box-shadow: 0 16px 45px rgba(50, 56, 40, 0.12);
+}
+.jsu-terrain-workspace {
+  grid-template-columns: minmax(0, 1fr);
+  background: #f4f2e8;
+}
+.jsu-terrain-workspace > .jsu-terrain-frame { min-height: 41rem; }
+.jsu-terrain-stage, .jsu-terrain-shell-loading { background: #e9e9da; }
+.jsu-terrain-status { background: #e9e9da; color: #40573f; }
+.jsu-terrain-spinner { border-color: #c4ceba; border-top-color: #647e56; }
+.jsu-cartography-title {
+  position: absolute;
+  z-index: 4;
+  top: 1.3rem;
+  left: 1.3rem;
+  display: grid;
+  gap: 0.3rem;
+  color: #293e36;
+  pointer-events: none;
+  text-shadow: 0 1px 4px #f6f5e9, 0 0 12px #f6f5e9;
+}
+.jsu-cartography-title > span { font-size: 0.58rem; font-weight: 800; letter-spacing: 0.2em; }
+.jsu-cartography-title > strong { font-family: var(--font-display); font-size: clamp(1.15rem, 1.7vw, 1.6rem); font-weight: 500; }
+.jsu-terrain-toolbar {
+  top: auto;
+  bottom: 3.5rem;
+  left: 0.8rem;
+  right: auto;
+  border-color: #c9c9b9;
+  border-radius: 8px;
+  background: rgba(250, 249, 240, 0.96);
+  color: #31433a;
+  box-shadow: 0 3px 14px rgba(41, 55, 45, 0.1);
+  backdrop-filter: none;
+}
+.jsu-terrain-modes button, .jsu-terrain-reset { color: #4c5b50; border-radius: 4px; }
+.jsu-terrain-modes button.is-active, .jsu-terrain-modes button[aria-pressed="true"] { background: #e2e7d8; color: #263d32; border-color: #b8c3ad; }
+.jsu-terrain-reset { border-color: #d1d4c5; color: #293e36; }
+.jsu-terrain-map .maplibregl-ctrl-group { border: 1px solid #bcc8b7; border-radius: 6px; background: #faf9f0; box-shadow: 0 3px 12px rgba(40, 59, 46, 0.12); }
+.jsu-terrain-map .maplibregl-ctrl-group button { filter: none; }
+.jsu-terrain-map .maplibregl-ctrl-attrib { background: rgba(250, 249, 240, 0.95); color: #34473f; font-size: 0.65rem; }
+.jsu-terrain-map .maplibregl-ctrl-attrib a { color: #34473f; }
+.jsu-terrain-map .maplibregl-ctrl-scale { background: rgba(250, 249, 240, 0.85); color: #34473f; border-color: #566e60; font-size: 0.65rem; }
+.jsu-terrain-map .maplibregl-canvas:focus-visible { outline-color: #a34836; }
+.jsu-terrain-marker { color: #293e36; }
+.jsu-terrain-marker::before { width: 0.6rem; height: 0.6rem; background: #765443; border: 2px solid #fffbed; box-shadow: 0 1px 3px rgba(32, 47, 37, 0.25); }
+.jsu-terrain-marker.is-anchor::before { width: 0.75rem; height: 0.75rem; background: #765443; }
+.jsu-terrain-marker > span {
+  bottom: 2.25rem;
+  left: 50%;
+  max-width: 10rem;
+  padding: 0.23rem 0.4rem;
+  border: 1px solid rgba(93, 105, 83, 0.25);
+  border-radius: 3px;
+  background: rgba(253, 251, 240, 0.95);
+  color: #35443b;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  text-shadow: none;
+  box-shadow: 0 1px 3px rgba(32, 47, 37, 0.07);
+  opacity: 1;
+}
+.jsu-terrain-marker.is-anchor > span { opacity: 1; }
+.jsu-terrain-marker.is-active > span { background: #923e30; border-color: #923e30; color: #fffaf0; z-index: 2; }
+.jsu-terrain-marker.is-active::before { background: #a34836; box-shadow: 0 0 0 5px rgba(163, 72, 54, 0.15), 0 1px 4px rgba(32, 47, 37, 0.25); }
+.jsu-terrain-marker:focus-visible { outline-color: #923e30; }
+/* The atlas dossier keeps a pale surface in every reading theme. */
+.jsu-terrain-dossier { --ink: #293e36; --accent: #a34836; padding: 1.2rem; border-top: 1px solid #d5d7c8; color: #37453a; gap: 1.2rem 2rem; grid-template-columns: 1fr 1fr; }
+.jsu-terrain-dossier > .jsu-terrain-era-nav { grid-column: 1 / -1; grid-template-columns: repeat(3, minmax(0, 1fr)); background: none; border: 0; box-shadow: none; backdrop-filter: none; }
+.jsu-terrain-dossier .jsu-terrain-era-nav button { background: transparent; color: #52634f; border-color: #d8dbce; border-radius: 4px; }
+.jsu-terrain-dossier .jsu-terrain-era-nav button.is-active { background: #e2e7d8; border-color: #aebca2; color: #293e36; }
+.jsu-terrain-dossier > .jsu-map-event-card { align-self: start; padding: 0; color: #293e36; background: transparent; border: none; border-radius: 0; }
+.jsu-terrain-dossier .jsu-map-event-copy > span, .jsu-terrain-dossier .jsu-map-event-copy > small { color: #586653; }
+.jsu-terrain-dossier .jsu-map-event-number { color: #a34836; }
+.jsu-terrain-dossier .jsu-map-event-card button { color: #fffaf0; background: #923e30; border-color: #923e30; }
+.jsu-terrain-dossier > .jsu-journey-console { padding: 0; background: transparent; color: #3c503f; border: 0; }
+.jsu-terrain-dossier .jsu-journey-picker > span { color: #586653; }
+.jsu-terrain-dossier .jsu-journey-console.is-terrain .jsu-journey-picker select { color: #293e36; background: #fffdf5; border-color: #c5cbbd; }
+.jsu-terrain-dossier .jsu-journey-console.is-terrain .jsu-journey-picker > span { color: #586653; }
+.jsu-terrain-dossier .jsu-journey-console button { background: #fdfcf5; color: #3a503f; border-color: #c6cdbd; border-radius: 5px; }
+.jsu-terrain-dossier .jsu-journey-console .jsu-journey-play { background: #e2e7d8; color: #293e36; }
+.is-terrain .jsu-journey-scrubber input { accent-color: #923e30; }
+.jsu-terrain-boundary { color: #53634f; background: #f4f2e8; border-top: 1px solid #d5d7c8; padding: 0.9rem 1.2rem; font-size: 0.72rem; line-height: 1.6; }
+.jsu-cartography-key { display: inline-flex; align-items: center; gap: 0.45rem; margin-right: 0.7rem; font-weight: 750; color: #923e30; }
+.jsu-cartography-key > i { width: 1.5rem; border-top: 2px solid currentColor; }
+.jsu-map-sea { fill: #a9ccce; }
+.jsu-map-land { fill: #e9e9da; stroke: #95b2a7; stroke-width: 0.6; }
+.jsu-map-water { fill: #97c1c5; }
+.jsu-map-river { stroke: #76a7aa; stroke-width: 1.2; }
+.jsu-map-grid { stroke: #718d83; opacity: 0.13; }
+.jsu-map-modern-boundary { opacity: 0.28; }
+.jsu-map-region { fill: #75745b; font-weight: 500; }
+.jsu-map-sea-label { fill: #427a81; }
+.jsu-map-label, .jsu-map-label-modern { stroke: #ececdf; }
+.jsu-map-place.is-anchor .jsu-map-label { opacity: 0.9; }
+@media (max-width: 1050px) {
+  .jsu-terrain-workspace > .jsu-terrain-frame { min-height: 38rem; }
+  .jsu-terrain-dossier { border-left: 0; border-top: 1px solid #d5d7c8; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; }
+}
+@media (max-width: 600px) {
+  .jsu-terrain-workspace > .jsu-terrain-frame { min-height: 35rem; }
+  .jsu-cartography-title { top: 1rem; left: 0.8rem; }
+  .jsu-terrain-toolbar { left: 0.5rem; right: auto; bottom: 3.5rem; padding: 0.2rem; }
+  .jsu-terrain-modes button, .jsu-terrain-reset { font-size: 0.68rem; padding-inline: 0.5rem; }
+  .jsu-terrain-dossier { grid-template-columns: minmax(0, 1fr); padding: 1rem; }
+  .jsu-terrain-marker > span { font-size: 0.68rem; max-width: 8rem; }
+}

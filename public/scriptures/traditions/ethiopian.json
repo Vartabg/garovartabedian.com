@@ -1,0 +1,187 @@
+{
+  "tradition": "ethiopian",
+  "traditionName": "Ethiopian Tewahedo",
+  "oneLine": "This page introduces the Ethiopian Orthodox Tewahedo tradition’s famously broad scriptural world, conventionally named as eighty-one books but not reducible to one Western-style contents page.",
+  "orient": "The Tewahedo corpus preserves writings, especially in Geʿez, that disappeared or never became canonical in most other churches. Its familiar ‘81 books’ formula can group texts differently, include books of church order in the New Testament count, and coexist with differing manuscript and printed lists.",
+  "keepInMind": "This English shelf includes the shared biblical books, 1 Enoch, and Jubilees. The three Meqabyan, the broader books of church order, and a complete ecclesially received Geʿez edition remain outside its hosted source set. Its book list follows the English editions available here; the Ethiopian tradition’s arrangements and canonical boundaries need their own account.",
+  "facts": [
+    {
+      "label": "Traditional formula",
+      "value": "81 books, described by an official church summary as 46 Old Testament and 35 New Testament books.",
+      "sourceIds": ["eotc-canon"]
+    },
+    {
+      "label": "Distinctive witnesses",
+      "value": "The corpus is known especially for preserving 1 Enoch and Jubilees in complete Geʿez forms, alongside other uniquely received works.",
+      "sourceIds": ["eotc-canon", "asale-canon"]
+    },
+    {
+      "label": "Canonical texture",
+      "value": "Scholarly study finds multiple lists, narrower and broader classifications, and a concept of canon shaped by rule of faith as much as by a fixed modern index.",
+      "sourceIds": ["asale-canon"]
+    },
+    {
+      "label": "Hosted representation",
+      "value": "Public-domain English texts shared with other traditions, all 108 chapters of 1 Enoch, and all 50 chapters of Jubilees are readable on this shelf.",
+      "sourceIds": ["site-text-sources", "site-enoch", "site-jubilees"]
+    }
+  ],
+  "formation": [
+    {
+      "date": "Late antiquity onward",
+      "title": "Scripture takes root in Geʿez",
+      "text": "The Ethiopian Church received and translated biblical literature into Geʿez through a long transmission history. Church summaries foreground the Septuagint, while current scholarship also traces Syriac, Arabic, Hebrew, and later editorial influence in parts of the corpus.",
+      "sourceIds": ["eotc-canon", "asale-canon"]
+    },
+    {
+      "date": "Manuscript centuries",
+      "title": "Books survive because Ethiopian communities keep copying them",
+      "text": "The complete survival of 1 Enoch and Jubilees in Ethiopic is not an abstract canon-chart fact; it is the result of sustained manuscript reception. Their preservation gives modern readers access to major Second Temple works otherwise known only in fragments or other partial witnesses.",
+      "sourceIds": ["eotc-canon", "asale-canon"]
+    },
+    {
+      "date": "Medieval–modern lists",
+      "title": "Eighty-one can be reached by different counting paths",
+      "text": "Collections and church-order materials may be grouped, split, or classified differently. Published lists can disagree in detail while continuing to call the received whole ‘the 81 books.’",
+      "sourceIds": ["asale-canon"]
+    },
+    {
+      "date": "Twentieth–twenty-first centuries",
+      "title": "Printed Bibles make the fluidity newly visible",
+      "text": "Modern Amharic editions do not all contain identical lists, and the bulky broader New Testament materials are not normally printed inside one ordinary Bible volume. Print format can therefore look narrower than the church’s wider scriptural and canonical literature.",
+      "sourceIds": ["asale-canon"]
+    }
+  ],
+  "distinctives": [
+    {
+      "title": "Enoch and Jubilees remain inside the scriptural world",
+      "text": "Ethiopian reception preserved these works as authoritative sacred literature rather than only as historical background to Jude, apocalyptic language, calendars, and early Jewish interpretation.",
+      "sourceIds": ["eotc-canon", "asale-canon"]
+    },
+    {
+      "title": "Meqabyan is not Greek Maccabees under another cover",
+      "text": "The three Ethiopic books commonly rendered ‘Maccabees’ in English are distinct works from the Greek 1–4 Maccabees found on Catholic and Eastern Orthodox shelves. Shared numbering labels must not be used to substitute one corpus for the other.",
+      "sourceIds": ["ethiopian-bible-guide"]
+    },
+    {
+      "title": "The broader New Testament includes church-order books",
+      "text": "Beyond the familiar twenty-seven books, lists name Sinodos materials, books of the Covenant or Dominos, Clement, and the Ethiopic Didascalia. These texts make the Tewahedo difference a New Testament and ecclesial-order difference too—not merely a larger Old Testament.",
+      "sourceIds": ["eotc-canon", "asale-canon"]
+    }
+  ],
+  "reception": [
+    {
+      "title": "Written Scripture and apostolic tradition belong together",
+      "text": "The Ethiopian Orthodox Church’s own summary presents Scripture as the written Word of God and apostolic tradition as an unwritten transmission received with equal veneration.",
+      "sourceIds": ["eotc-canon"]
+    },
+    {
+      "title": "Canon can mean a rule of faith before it means a sealed list",
+      "text": "Reception-historical research argues that the church has often assessed sacred books through their conformity to the apostolic faith and ecclesial use rather than through one definitive act closing a Western-style table of contents.",
+      "sourceIds": ["asale-canon"]
+    },
+    {
+      "title": "Language and liturgy carry authority",
+      "text": "Geʿez manuscripts, lectionaries, commentary, chant, and church schools are part of the life in which these texts are received. An English list detached from that ecosystem can show titles but cannot reproduce the tradition’s actual reading practice.",
+      "sourceIds": ["eotc-canon", "asale-canon"]
+    }
+  ],
+  "variations": [
+    {
+      "title": "‘Narrower’ and ‘broader’ do not simply mean less and more content",
+      "text": "Some scholarly descriptions use the terms for different ways of grouping substantially overlapping material, especially eight additional church-order books attached to the twenty-seven-book New Testament. Counting and physical publication are part of the problem.",
+      "sourceIds": ["asale-canon"]
+    },
+    {
+      "title": "Published lists differ while the number eighty-one persists",
+      "text": "The official church webpage gives one 46-plus-35 list; twentieth-century Amharic editions and other church sources organize parts of the corpus differently. The traditional number is stable at a symbolic and ecclesial level even when the arithmetic beneath it shifts.",
+      "sourceIds": ["eotc-canon", "asale-canon"]
+    },
+    {
+      "title": "Ethiopian and Eritrean Tewahedo life is larger than this route label",
+      "text": "This page is named for the Ethiopian Orthodox Tewahedo Church and its sources. Closely related Eritrean Tewahedo reception and diaspora practice deserve attention without being silently treated as identical in every modern institutional detail.",
+      "sourceIds": ["asale-canon"]
+    }
+  ],
+  "debates": [
+    {
+      "question": "Is the Tewahedo canon a closed list of exactly eighty-one books?",
+      "settled": "The number eighty-one is the church’s dominant traditional formula, and a recognizable core of distinctive texts is repeatedly named.",
+      "positions": [
+        {
+          "view": "Official summaries present a definite 46-book Old Testament and 35-book New Testament.",
+          "grounds": "The Ethiopian Orthodox Church’s English teaching page explicitly lists and totals the books this way.",
+          "sourceIds": ["eotc-canon"]
+        },
+        {
+          "view": "Reception history shows a canon that is neither simply open nor simply closed.",
+          "grounds": "Bruk A. Asale documents divergent lists, counting conventions, printed editions, and an older rule-of-faith concept that does not map neatly to a sealed modern index.",
+          "sourceIds": ["asale-canon"]
+        }
+      ],
+      "soWhat": "The page should teach the eighty-one-book tradition while also showing why an apparently exact number cannot carry the whole historical claim."
+    },
+    {
+      "question": "What does it mean for a book to be canonical when it is rarely printed in one-volume Bibles?",
+      "settled": "Availability, physical binding, liturgical use, educational use, and doctrinal authority are related but not interchangeable categories.",
+      "positions": [
+        {
+          "view": "The broader corpus remains part of the church’s canonical and legal inheritance.",
+          "grounds": "Official lists include church-order works beyond the familiar twenty-seven, and the church describes Sinodos and Didascalia as closely associated with its New Testament and canon law.",
+          "sourceIds": ["eotc-canon"]
+        },
+        {
+          "view": "Ordinary printed editions often instantiate a narrower practical collection.",
+          "grounds": "The broader materials are bulky, differently grouped, and absent from many one-volume printed editions even when they remain authoritative in the larger tradition.",
+          "sourceIds": ["asale-canon"]
+        }
+      ],
+      "soWhat": "A digital reader must label what it actually hosts instead of using a famous canon number as marketing for missing texts."
+    }
+  ],
+  "hosting": {
+    "heading": "This is overlap, not an English Ethiopian Bible",
+    "summary": "The shelf below gathers public-domain English books that overlap the Tewahedo textual world. Its entries are an artifact of this site’s available source files, not the church’s traditional eighty-one-book count.",
+    "available": "The shared biblical books, many wider-canon books available through public-domain English editions, all 108 chapters of 1 Enoch, and all 50 chapters of Jubilees in R. H. Charles’s 1913 translations.",
+    "unavailable": "1–3 Meqabyan, the complete broader church-order collection, several other distinctly Ethiopic works, and a complete approved Geʿez or Amharic edition with its own structure.",
+    "sourceIds": ["site-text-sources", "site-enoch", "site-jubilees", "eotc-canon"]
+  },
+  "sources": [
+    {
+      "id": "eotc-canon",
+      "label": "Ethiopian Orthodox Tewahedo Church, “The Bible” and canonical books",
+      "says": "Presents the church’s 46-book Old Testament and 35-book New Testament list, discusses Geʿez preservation, and relates Scripture to tradition and canon law.",
+      "url": "https://ethiopianorthodox.org/english/canonical/books.html"
+    },
+    {
+      "id": "asale-canon",
+      "label": "Bruk A. Asale, “The Ethiopian Orthodox Tewahedo Church Canon of the Scriptures: Neither Open nor Closed”",
+      "says": "Uses Ethiopian sources and interviews to document divergent lists, narrower and broader classifications, translation history, and a rule-of-faith understanding of canon.",
+      "url": "https://translation.bible/wp-content/uploads/2024/07/asale-2016-the-ethiopian-orthodox-tewahedo-church-canon-of-the-scriptures-neither-open-nor-closed.pdf"
+    },
+    {
+      "id": "ethiopian-bible-guide",
+      "label": "Bible Gateway, “The Ethiopian Bible Explained”",
+      "says": "Provides an English-language overview of distinctive Tewahedo books and explicitly distinguishes the three Meqabyan from Greek Maccabees.",
+      "url": "https://www.biblegateway.com/learn/bible-101/about-the-bible/ethiopian-bible-explained/"
+    },
+    {
+      "id": "site-enoch",
+      "label": "Hosted 1 Enoch reader",
+      "says": "Hosts all 108 chapters in R. H. Charles’s English translation on this Ethiopian shelf.",
+      "href": "/scriptures/ethiopian/ENO"
+    },
+    {
+      "id": "site-jubilees",
+      "label": "Hosted Jubilees reader",
+      "says": "Hosts all 50 chapters in R. H. Charles’s 1913 English edition on this Ethiopian shelf.",
+      "href": "/scriptures/ethiopian/JUB"
+    },
+    {
+      "id": "site-text-sources",
+      "label": "Hosted Scripture text sources and processing notes",
+      "says": "Defines the limited public-domain English corpus from which this site can build a Tewahedo overlap shelf.",
+      "href": "/sources#scripture-texts"
+    }
+  ]
+}

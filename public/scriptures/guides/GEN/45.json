@@ -1,0 +1,236 @@
+{
+  "book": "GEN",
+  "chapter": 45,
+  "bookName": "Genesis",
+  "summary": "Joseph reveals himself to his terrified brothers, names their sale of him, and interprets his rise in Egypt as God's means of preserving the family through famine. He promises support in Goshen, Pharaoh supplies transport and welcomes the household, and Jacob's disbelief gives way to renewed life and a decision to see his son.",
+  "whyItMatters": "Recognition opens the possibility of restored speech after years of deception and loss. Joseph's interpretation of providence seeks to sustain the family without changing the fact that his brothers sold him.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Joseph's house and Pharaoh's court in Egypt during the second year of famine, followed by the brothers' return to Jacob in Canaan.",
+    "literaryForm": "Emotional recognition scene, theological interpretation of events, royal invitation, provisions, and a revived father's response."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Judah has offered to remain enslaved in Benjamin's place rather than return and witness Jacob's devastation. Joseph's concealed identity can no longer be maintained.",
+      "verseRefs": [
+        "44:30-34"
+      ]
+    },
+    "here": {
+      "text": "Joseph joins self-disclosure and tears with an explanation of survival, then turns the reunion into a plan to move the whole household to safety.",
+      "verseRefs": [
+        "45:1-15",
+        "45:16-28"
+      ]
+    },
+    "after": {
+      "text": "Jacob travels toward Egypt, receives reassurance at Beersheba, and is reunited with Joseph in Goshen.",
+      "verseRefs": [
+        "46:1-7",
+        "46:28-30"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Identity revealed and events interpreted",
+      "verses": "1-8",
+      "note": "The terrified brothers hear Joseph name the sale and God’s life-preserving purpose."
+    },
+    {
+      "heading": "A summons for Jacob and a promise of provision",
+      "verses": "9-13",
+      "note": "Joseph directs the household toward nearby Goshen before five further years of famine."
+    },
+    {
+      "heading": "Tears and restored conversation",
+      "verses": "14-15",
+      "note": "He embraces Benjamin and all the brothers, who can finally talk with him."
+    },
+    {
+      "heading": "Pharaoh’s welcome and the brothers’ departure",
+      "verses": "16-24",
+      "note": "Transport, clothing, food, and instructions accompany the return journey."
+    },
+    {
+      "heading": "Jacob hears and revives",
+      "verses": "25-28",
+      "note": "The report and wagons overcome disbelief and move him to travel."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "45:4",
+      "text": "Joseph said to his brothers, “Come near to me, please.” They came near. He said, “I am Joseph, your brother, whom you sold into Egypt.",
+      "why": "Joseph identifies himself through kinship and explicitly names the brothers’ sale of him."
+    },
+    {
+      "ref": "45:7",
+      "text": "God sent me before you to preserve for you a remnant on the earth, and to save you alive by a great deliverance.",
+      "why": "His account of divine purpose centers on preserving a remnant alive."
+    },
+    {
+      "ref": "45:15",
+      "text": "He kissed all his brothers, and wept on them. After that his brothers talked with him.",
+      "why": "The restoration of conversation follows the disclosure and embraces."
+    }
+  ],
+  "themes": [
+    "recognition and tears",
+    "providence and human wrongdoing",
+    "preservation through famine",
+    "household migration",
+    "unequal gifts",
+    "revived hope"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why are the brothers unable to answer at first?",
+      "answer": "The powerful ruler unexpectedly identifies himself as the brother they sold, and the narrator says they are terrified. Joseph then invites them nearer, explaining and embracing before conversation resumes.",
+      "verseRefs": [
+        "45:1-5",
+        "45:14-15"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Does Joseph deny that his brothers sold him?",
+      "answer": "He explicitly says they did, twice, before interpreting his arrival in Egypt as God's action to preserve life. His later statement that God sent him emphasizes that providential reading without erasing the human act he has just named.",
+      "verseRefs": [
+        "45:4-8"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does “remnant” mean in Joseph’s speech?",
+      "answer": "It is the surviving family or continuing group that God has sent him ahead to preserve through famine. Here the word focuses on people kept alive, not a separately identified party or a complete later theological system.",
+      "verseRefs": [
+        "45:6-7"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Is the remaining famine brief?",
+      "answer": "Joseph says two years have passed and five remain without normal plowing and harvest. Moving near him is presented as a practical response to a prolonged crisis, not simply a celebratory family visit.",
+      "verseRefs": [
+        "45:6",
+        "45:9-11"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        6,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What does Pharaoh contribute to the plan?",
+      "answer": "He welcomes the father and households, promises the good of Egypt, and authorizes wagons for the children, women, and Jacob. Joseph's provision is therefore supported by royal permission and resources.",
+      "verseRefs": [
+        "45:16-21"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Has unequal treatment disappeared from the family?",
+      "answer": "Joseph gives every brother clothing but gives Benjamin much more clothing and a large gift of silver. The reunion does not erase visible preference, though the chapter records no renewed jealous attack and Joseph warns them not to quarrel on the road.",
+      "verseRefs": [
+        "45:22-24"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What persuades Jacob to believe the news?",
+      "answer": "He initially cannot believe the report, but the brothers repeat Joseph's words and show the wagons sent to carry him. The combination of testimony and tangible provision revives him, and he resolves to see Joseph before dying.",
+      "verseRefs": [
+        "45:25-28"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Goshen",
+      "def": "The area Joseph offers the family as a place to live near him and receive support."
+    },
+    {
+      "term": "remnant",
+      "def": "The continuing family Joseph says he has been sent ahead to preserve alive."
+    },
+    {
+      "term": "father to Pharaoh",
+      "def": "Joseph’s image for his influential position in relation to Pharaoh, not a claim of biological parenthood."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "b95fd533b8ffd07d1b5c15f36af7eb9c354dfac7f27d4e4ae2995b068dae7270",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

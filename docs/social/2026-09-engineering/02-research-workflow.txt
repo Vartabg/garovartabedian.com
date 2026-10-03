@@ -1,0 +1,19 @@
+One of my recent upgrades packages curated research topics into source-attributed worksheets for NotebookLM.
+
+I built it for my Scripture and history research site. Choose a curated research preset, inspect the named editions and comparison notes, then download a structured Markdown dossier.
+
+The handoff is a file you upload to Google NotebookLM. It includes source notes and prompts that ask the model to distinguish supplied text from interpretation.
+
+The engineering work behind that workflow includes:
+• Organizing different source formats into consistent records.
+• Preserving edition identity and attribution.
+• Separating source material from editorial notes.
+• Making the output inspectable before someone uses it with AI.
+
+This is a self-funded project. It gives me a concrete way to demonstrate data preparation, workflow design, and practical AI tooling.
+
+Those are skills I want to bring to a Solutions Engineering or Implementation Engineering team: understand the information people work with, build a usable handoff, and explain the decisions clearly.
+
+Try a preset: https://garovartabedian.com/scriptures/dossier
+
+#SolutionsEngineering #DataPipelines #NotebookLM

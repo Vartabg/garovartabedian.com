@@ -1,0 +1,1984 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/scriptures/check-source-urls.mjs",
+  "generatedAt": "2026-10-03T19:30:39.000Z",
+  "maxAgeDays": 180,
+  "note": "'blocked' means the publisher refuses scripted requests, not that the page is missing. 'dead' is a hard failure and fails the test suite.",
+  "urls": {
+    "https://aabner.org/ojs/index.php/beabs/article/view/1031": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:aabner-tabernacle"
+      ]
+    },
+    "https://academic.oup.com/book/10720/chapter/158790933": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:oxford-exodus-memory"
+      ]
+    },
+    "https://academic.oup.com/book/10720/chapter/158793545": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "GEN:oxford-toledot"
+      ]
+    },
+    "https://academic.oup.com/book/25374": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:oxford-israel-egypt"
+      ]
+    },
+    "https://academic.oup.com/book/2746": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:oxford-john"
+      ]
+    },
+    "https://academic.oup.com/book/2746/chapter-abstract/162416116": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:oxford-logos-pneuma"
+      ]
+    },
+    "https://academic.oup.com/book/38970/chapter-abstract/338204208": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "PSA:oxford-poetry"
+      ]
+    },
+    "https://academic.oup.com/book/55923/chapter-abstract/439351525": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "DAN:oxford-additions"
+      ]
+    },
+    "https://academic.oup.com/book/7238": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "PHM:glancy-slavery"
+      ]
+    },
+    "https://academic.oup.com/book/7335/chapter-abstract/152103348": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:oxford-pistis"
+      ]
+    },
+    "https://academic.oup.com/edited-volume/34227/chapter-abstract/290227444": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T02:08:20.517Z",
+      "citedBy": [
+        "GEN:oxford-septuagint"
+      ]
+    },
+    "https://academic.oup.com/edited-volume/35006/chapter/298748176": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "PSA:oxford-psalm151",
+        "SIR:oxford-sirach51"
+      ]
+    },
+    "https://academic.oup.com/edited-volume/45762/chapter-abstract/398729013": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:oxford-diatribe"
+      ]
+    },
+    "https://academic.oup.com/edited-volume/61673/chapter/550533627": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "SIR:oxford-ben-sira"
+      ]
+    },
+    "https://academic.oup.com/edited-volume/62249/chapter-abstract/551358644": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "DAN:oxford-daniel"
+      ]
+    },
+    "https://academic.oup.com/jts/article-pdf/57/1/213/4639713/flj001.pdf": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "SIR:jts-long-recension"
+      ]
+    },
+    "https://academic.oup.com/reference/62341/reference-article-abstract/554100877": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:oxford-mark"
+      ]
+    },
+    "https://academic.oup.com/reference/62341/reference-article-abstract/554103345": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:oxford-endres"
+      ]
+    },
+    "https://academic.oup.com/reference/62341/reference-article-abstract/554106063": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:oxford-acts"
+      ]
+    },
+    "https://academic.oup.com/reference/62341/reference-article-abstract/561720572": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T02:08:20.517Z",
+      "citedBy": [
+        "GEN:oxford-lxx-bibliography"
+      ]
+    },
+    "https://archive.org/details/apocryphapseudep02char": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:charles-1913"
+      ]
+    },
+    "https://assets.cambridge.org/97805210/00673/excerpt/9780521000673_excerpt.pdf": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "GEN:arnold-genesis"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://assets.cambridge.org/97805214/34805/sample/9780521434805ws.pdf": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:cambridge-theology-romans"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://assets.cambridge.org/97805215/33898/excerpt/9780521533898_excerpt.pdf": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "SIR:cambridge-force"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://assets.cambridge.org/97805218/25979/excerpt/9780521825979_excerpt.pdf": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "GEN:cambridge-adam"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://assets.cambridge.org/97805218/40927/excerpt/9780521840927_excerpt.pdf": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "PSA:cambridge-brueggemann"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://assets.cambridge.org/97805218/46479/excerpt/9780521846479_excerpt.htm": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:chancey-galilee"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://assets.cambridge.org/97805218/59387/excerpt/9780521859387_excerpt.pdf": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "DAN:cambridge-language-spans"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/2pe.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "2PE:net-2pe"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/hag.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "HAG:net-haggai"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/nah.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "NAM:net-nahum"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/tit.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "TIT:net-titus"
+      ]
+    },
+    "https://bible.usccb.org/bible/1thessalonians/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-03T01:40:44.451Z",
+      "citedBy": [
+        "1TH:usccb-1thessalonians"
+      ]
+    },
+    "https://bible.usccb.org/bible/1timothy/0": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "TIT:usccb-pastorals"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://bible.usccb.org/bible/2corinthians/10": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:usccb-sarx"
+      ]
+    },
+    "https://bible.usccb.org/bible/2john/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "3JN:usccb-john-letters"
+      ]
+    },
+    "https://bible.usccb.org/bible/2peter/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "2PE:usccb-2pe-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/2peter/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "2PE:usccb-2pe1"
+      ]
+    },
+    "https://bible.usccb.org/bible/2peter/2": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "2PE:usccb-2pe2"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://bible.usccb.org/bible/2peter/3": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "2PE:usccb-2pe3"
+      ]
+    },
+    "https://bible.usccb.org/bible/2thessalonians/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-03T01:41:22.513Z",
+      "citedBy": [
+        "2TH:usccb-2thessalonians"
+      ]
+    },
+    "https://bible.usccb.org/bible/3john/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "3JN:usccb-3jn-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/3john/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "3JN:usccb-3jn-notes"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts1"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/10": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts10"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/15": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts15"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/16": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts16"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/17": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts17"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/2": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts2"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/20": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts20"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/21": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts21"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/24": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts24"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/28": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts28"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/6": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts6"
+      ]
+    },
+    "https://bible.usccb.org/bible/acts/8": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:usccb-acts8"
+      ]
+    },
+    "https://bible.usccb.org/bible/colossians/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-03T00:47:51.134Z",
+      "citedBy": [
+        "COL:usccb-colossians"
+      ]
+    },
+    "https://bible.usccb.org/bible/daniel/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "DAN:usccb-daniel"
+      ]
+    },
+    "https://bible.usccb.org/bible/daniel/3": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "DAN:usccb-dan3"
+      ]
+    },
+    "https://bible.usccb.org/bible/ephesians/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-03T00:20:47.523Z",
+      "citedBy": [
+        "EPH:usccb-ephesians"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-31T16:46:25.272Z",
+      "citedBy": [
+        "EXO:usccb-exodus"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/12": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:usccb-ex12"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/16": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:usccb-ex16"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/2": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:usccb-ex2"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/21": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:usccb-ex21"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/3": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:usccb-ex3"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/33": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:usccb-ex33"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/4": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:usccb-ex4"
+      ]
+    },
+    "https://bible.usccb.org/bible/exodus/6": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:usccb-ex6"
+      ]
+    },
+    "https://bible.usccb.org/bible/galatians/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-03T00:06:53.851Z",
+      "citedBy": [
+        "GAL:usccb-galatians"
+      ]
+    },
+    "https://bible.usccb.org/bible/genesis/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "GEN:usccb-genesis"
+      ]
+    },
+    "https://bible.usccb.org/bible/genesis/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "GEN:usccb-gen1"
+      ]
+    },
+    "https://bible.usccb.org/bible/genesis/21": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T02:08:20.517Z",
+      "citedBy": [
+        "GEN:usccb-gen21"
+      ]
+    },
+    "https://bible.usccb.org/bible/genesis/3": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T02:08:20.517Z",
+      "citedBy": [
+        "GEN:usccb-gen3"
+      ]
+    },
+    "https://bible.usccb.org/bible/genesis/31": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T02:08:20.517Z",
+      "citedBy": [
+        "GEN:usccb-gen31"
+      ]
+    },
+    "https://bible.usccb.org/bible/genesis/6": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T02:08:20.517Z",
+      "citedBy": [
+        "GEN:usccb-gen6"
+      ]
+    },
+    "https://bible.usccb.org/bible/haggai/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "HAG:usccb-haggai-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/haggai/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "HAG:usccb-haggai-1"
+      ]
+    },
+    "https://bible.usccb.org/bible/haggai/2": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "HAG:usccb-haggai-2"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john1"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/14": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john14"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/19": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john19"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/20": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john20"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/21": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john21"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/3": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john3"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/5": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john5"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/7": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john7"
+      ]
+    },
+    "https://bible.usccb.org/bible/john/8": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:usccb-john8"
+      ]
+    },
+    "https://bible.usccb.org/bible/jude/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "2PE:usccb-jude-intro",
+        "JUD:usccb-jude-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/jude/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "JUD:usccb-jude-notes"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:usccb-leviticus"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:usccb-lev1"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/13": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:usccb-lev13"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/16": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:usccb-lev16"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/17": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:usccb-lev17"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/18": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:usccb-lev18"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/20": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:usccb-lev20"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/25": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:usccb-lev25"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/3": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:usccb-lev3"
+      ]
+    },
+    "https://bible.usccb.org/bible/leviticus/4": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:usccb-lev4"
+      ]
+    },
+    "https://bible.usccb.org/bible/luke/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:usccb-luke"
+      ]
+    },
+    "https://bible.usccb.org/bible/luke/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:usccb-luke1"
+      ]
+    },
+    "https://bible.usccb.org/bible/luke/16": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:usccb-luke16"
+      ]
+    },
+    "https://bible.usccb.org/bible/luke/2": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:usccb-luke2"
+      ]
+    },
+    "https://bible.usccb.org/bible/luke/22": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:usccb-luke22"
+      ]
+    },
+    "https://bible.usccb.org/bible/luke/23": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:usccb-luke23"
+      ]
+    },
+    "https://bible.usccb.org/bible/luke/4": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:usccb-luke4"
+      ]
+    },
+    "https://bible.usccb.org/bible/luke/9": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:usccb-luke9"
+      ]
+    },
+    "https://bible.usccb.org/bible/mark/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:usccb-mark"
+      ]
+    },
+    "https://bible.usccb.org/bible/matthew/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:usccb-matthew"
+      ]
+    },
+    "https://bible.usccb.org/bible/matthew/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:usccb-matthew1"
+      ]
+    },
+    "https://bible.usccb.org/bible/matthew/21": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:usccb-matthew21"
+      ]
+    },
+    "https://bible.usccb.org/bible/matthew/27": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:usccb-matthew27"
+      ]
+    },
+    "https://bible.usccb.org/bible/matthew/5": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:usccb-matthew5"
+      ]
+    },
+    "https://bible.usccb.org/bible/matthew/6": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:usccb-matthew6"
+      ]
+    },
+    "https://bible.usccb.org/bible/nahum/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "NAM:usccb-nahum-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/nahum/3": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "NAM:usccb-nahum-3"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://bible.usccb.org/bible/obadiah/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "OBA:usccb-obadiah"
+      ]
+    },
+    "https://bible.usccb.org/bible/philippians/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-03T00:41:57.194Z",
+      "citedBy": [
+        "PHP:usccb-philippians"
+      ]
+    },
+    "https://bible.usccb.org/bible/psalms/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "PSA:usccb-psalms"
+      ]
+    },
+    "https://bible.usccb.org/bible/psalms/111": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "PSA:usccb-111"
+      ]
+    },
+    "https://bible.usccb.org/bible/romans/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:usccb-romans"
+      ]
+    },
+    "https://bible.usccb.org/bible/romans/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:usccb-romans1"
+      ]
+    },
+    "https://bible.usccb.org/bible/romans/3": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:usccb-romans3"
+      ]
+    },
+    "https://bible.usccb.org/bible/sirach/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "SIR:usccb-sirach"
+      ]
+    },
+    "https://bible.usccb.org/bible/sirach/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "SIR:usccb-sirach1"
+      ]
+    },
+    "https://bible.usccb.org/bible/thepentateuch/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T02:11:35.801Z",
+      "citedBy": [
+        "EXO:usccb-pentateuch",
+        "GEN:usccb-pentateuch",
+        "LEV:usccb-pentateuch"
+      ]
+    },
+    "https://bible.usccb.org/bible/titus/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "TIT:usccb-titus-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/titus/2": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "TIT:usccb-titus-2"
+      ]
+    },
+    "https://bible.usccb.org/bible/titus/3": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "TIT:usccb-titus-3"
+      ]
+    },
+    "https://bible.usccb.org/bible/wisdombooks/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "SIR:wisdom-parallelism"
+      ]
+    },
+    "https://biblia.com/books/lbd/offset/9484882": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:lexham-glory"
+      ]
+    },
+    "https://cojs.org/jubilees-_book_of-_james_vanderkam-_anchor_bible_dictionary_-ed-_david_noel_freedman-_doubleday-_new_york_1992/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:vanderkam-abd"
+      ]
+    },
+    "https://digi.vatlib.it/view/MSS_Vat.gr.1209": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:vaticanus"
+      ]
+    },
+    "https://doi.org/10.1017/9781108678377.001": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:keener-intro"
+      ]
+    },
+    "https://doi.org/10.1017/CBO9780511555107.006": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:strange-text"
+      ]
+    },
+    "https://doi.org/10.1017/CBO9780511585746.005": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:przybylski-righteousness"
+      ]
+    },
+    "https://doi.org/10.1017/S0017816000020964": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:chadwick-22"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688500007244": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:cambridge-johannine-jews"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688502000292": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:foster-kingdom"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688506000117": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:whitlark-23-34"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688516000370": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:smit-earth"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688516000412": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:holladay-kerygma"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688517000066": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:genre-luke-acts"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688517000339": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:hixson-bezae"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688519000031": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:cambridge-ambiguous-signs"
+      ]
+    },
+    "https://doi.org/10.1017/S002868851900016X": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:adams-preface"
+      ]
+    },
+    "https://doi.org/10.1017/S0028688524000328": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:secondary-prefaces"
+      ]
+    },
+    "https://doi.org/10.1628/978-3-16-155337-0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:hogeterp-denaux"
+      ]
+    },
+    "https://doi.org/10.24758/jsnts.53.0_7": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:iida-isaiah"
+      ]
+    },
+    "https://earlychristianwritings.com/text/muratorian-metzger.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:muratorian",
+        "LUK:muratorian"
+      ]
+    },
+    "https://ebible.org/eng-Brenton/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "HAG:brenton-edition"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Epistle_to_Philemon": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T22:17:14.084Z",
+      "citedBy": [
+        "PHM:barth-blankenhorn-philemon"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Judith_Lieu": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T22:17:14.084Z",
+      "citedBy": [
+        "2JN:lieu-john-epistles"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/New_International_Commentary_on_the_New_Testament": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T22:17:14.084Z",
+      "citedBy": [
+        "2JN:marshall-john-epistles"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/New_International_Commentary_on_the_Old_Testament": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T22:17:14.084Z",
+      "citedBy": [
+        "OBA:allen-obadiah"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_74": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "2JN:p74-manuscript"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_87": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "PHM:p87-manuscript"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Septuagint": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T22:17:14.084Z",
+      "citedBy": [
+        "OBA:rahlfs-lxx-obadiah"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Word_Biblical_Commentary": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T22:17:14.084Z",
+      "citedBy": [
+        "2JN:smalley-john-epistles"
+      ]
+    },
+    "https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_III": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:irenaeus"
+      ]
+    },
+    "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_I/Church_History_of_Eusebius/Book_VI/Chapter_14": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:clement"
+      ]
+    },
+    "https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T23:08:20.262Z",
+      "citedBy": [
+        "ENO:hosted-charles"
+      ]
+    },
+    "https://enterthebible.org/courses/nahum/lessons/bible-in-the-world-nahum/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "NAM:luther-nahum-reception"
+      ]
+    },
+    "https://ethiopianorthodox.org/english/canonical/books.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:eotc-canon"
+      ]
+    },
+    "https://exhibitions.lib.cam.ac.uk/linesofthought/artifacts/codex-bezae/": {
+      "verdict": "error",
+      "status": 0,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:bezae-cambridge"
+      ],
+      "note": "TypeError: fetch failed"
+    },
+    "https://github.com/morphgnt/sblgnt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:original-sblgnt",
+        "JHN:morphgnt-sblgnt",
+        "LUK:original-sblgnt"
+      ]
+    },
+    "https://global.oup.com/academic/product/ethiopia-and-the-bible-9780198263257": {
+      "verdict": "ok",
+      "status": 202,
+      "checkedAt": "2026-09-01T23:08:20.262Z",
+      "citedBy": [
+        "ENO:ethiopian-canon"
+      ]
+    },
+    "https://global.oup.com/academic/product/the-books-of-enoch-9780198269377": {
+      "verdict": "ok",
+      "status": 202,
+      "checkedAt": "2026-09-01T23:08:20.262Z",
+      "citedBy": [
+        "ENO:milk-enoch-greek"
+      ]
+    },
+    "https://journals.sagepub.com/doi/abs/10.1177/0142064X19890487": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:delgado-socioling"
+      ]
+    },
+    "https://library.biblicalarchaeology.org/footnote/footnote-4-what-we-dont-know-about-moses-and-the-exodus/": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:bas-exodus-numbers"
+      ]
+    },
+    "https://library.biblicalarchaeology.org/sidebar/dating-the-exodus/": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:bas-dating-exodus"
+      ]
+    },
+    "https://manuscripts.csntm.org/manuscript/Group/GA_P45": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:p45"
+      ]
+    },
+    "https://manuscripts.csntm.org/manuscript/Group/GA_P52": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:csntm-p52"
+      ]
+    },
+    "https://manuscripts.csntm.org/manuscript/Group/GA_P66_Bodmer": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:csntm-p66"
+      ]
+    },
+    "https://manuscripts.csntm.org/manuscript/Group/GA_P74": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:p74"
+      ]
+    },
+    "https://manuscripts.csntm.org/manuscript/Group/GA_P75": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LUK:p75"
+      ]
+    },
+    "https://manuscripts.csntm.org/manuscript/View/GA_P75": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:csntm-p75"
+      ]
+    },
+    "https://oyc.yale.edu/religious-studies/rlst-152/lecture-12": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "3JN:yale-johannine"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/77-Tit-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "TIT:greek-titus"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/82-2Pe-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "2PE:greek-2pe"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/85-3Jn-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "3JN:greek-3jn"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/86-Jud-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "JUD:greek-jude"
+      ]
+    },
+    "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hag.xml": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "HAG:hebrew-haggai"
+      ]
+    },
+    "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Nah.xml": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "NAM:hebrew-nahum"
+      ]
+    },
+    "https://resolve.cambridge.org/core/product/57CC9DC468A990956AC6AE1EAE7679FB/core-reader": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:cambridge-rereading-sacrifice"
+      ]
+    },
+    "https://septuaginta.uni-goettingen.de/ioscs/editions/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:ioscs-greek-leviticus"
+      ]
+    },
+    "https://tips.translation.bible/tip_term/translation-commentary-on-haggai-27/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T10:39:53.151Z",
+      "citedBy": [
+        "HAG:ubs-haggai-2-7"
+      ]
+    },
+    "https://www.bloomsbury.com/uk/colossians-and-philemon-9780567085603/": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "PHM:barclay-philemon"
+      ]
+    },
+    "https://www.bloomsbury.com/uk/edom-and-the-edomites-9781850752059/": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "OBA:bartlett-edom"
+      ]
+    },
+    "https://www.brepolsonline.net/content/journals/10.1484/J.LA.5.105494": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:geiger-syntax"
+      ]
+    },
+    "https://www.britishmuseum.org/exhibitions/i-am-ashurbanipal-king-world-king-assyria": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T19:30:39.856Z",
+      "citedBy": [
+        "NAM:bm-nineveh-fall"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/aramaic-sources-of-marks-gospel/state-of-play/A01576E7E24CD8176E5FB2E7D55B67A0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:casey-aramaic"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/cambridge-companion-to-st-paul/romans/60378648E0BAF85335296996F0B353C3": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:cambridge-romans"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/cambridge-companion-to-the-hebrew-bibleold-testament/psalms-and-hebrew-poetry/81FCC073A125886751CF2864A4D63186": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "PSA:cambridge-brown"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/music-and-instruments-of-the-middle-ages/development-of-the-latin-liturgical-psalter-in-england/9D76FF54CCCCF3552C927E6498E2D93A": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "PSA:cambridge-numbering"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/new-cambridge-history-of-the-bible/apocryphal-old-testament/BA748C701E87424228C1E1E56FE4A08D": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:cambridge-collins"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/new-cambridge-history-of-the-bible/languages-of-the-old-testament/E04B54E7DB694A8ADFBB0C5CB381A83D": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "GEN:cambridge-languages"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/outside-the-old-testament/book-of-jubilees/3770C6D45B63CAA5E65C6BCE3F74AF92": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:cambridge-vanderkam"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/ritual-and-rhetoric-in-leviticus/rhetoric-of-sin-guilt-and-ritual-offerings/5555D1366C3C37D074A052E04500FA37": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:watts-offerings"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/theology-of-the-book-of-leviticus/love-your-neighbor-leviticus-1722/FF74D455542EFDBD7807675917F1EB90": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:cambridge-neighbor"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/theology-of-the-book-of-leviticus/purity-and-impurity-leviticus-1115/700E757AA30B2C1E75AFAC401F556FBD": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:cambridge-purity"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/theology-of-the-book-of-leviticus/sacred-world/A71A8A592969739C8BFCA131251BF047": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:cambridge-sacred-world"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/theology-of-the-book-of-leviticus/sin-sacrifice-and-atonement-leviticus-17-16/FC506DD2B8E1F4DE9D210A447D313569": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:cambridge-atonement"
+      ]
+    },
+    "https://www.cambridge.org/core/books/abs/written-gospel/how-mark-writes/7539C3903D989397B11340FC6C2FAF2C": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:evans-style"
+      ]
+    },
+    "https://www.cambridge.org/core/books/old-testament-in-greek/26DEFD1C7D7BBFD4F88BD4FE27E6A592": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T02:08:20.517Z",
+      "citedBy": [
+        "GEN:cambridge-greek-ot",
+        "LEV:cambridge-greek-ot"
+      ]
+    },
+    "https://www.cambridge.org/core/books/sarcasm-in-pauls-letters/sarcasm-in-romans-with-special-reference-to-diatribe-and-voice/75B3A5E5755144752436DE0FF3C7FC10": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:cambridge-diatribe"
+      ]
+    },
+    "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/calendar-and-dates-in-jubilees-garden-of-eden-story/5B9726D14F0127A0ACB692A0809A371D": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:cambridge-calendar"
+      ]
+    },
+    "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/grandson-of-ben-sira/6A428F574B08B7DC0133E5FAA8502B5E": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "SIR:cambridge-grandson"
+      ]
+    },
+    "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/jubilees-30-building-a-paradigm-for-the-ban-on-intermarriage/AA6BA9D0CAE193E9DF9BF2599201669C": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:cambridge-heavenly-tablets"
+      ]
+    },
+    "https://www.cambridge.org/core/journals/harvard-theological-review/article/with-one-voice-elements-of-acclamation-in-early-jewish-liturgical-poetry/FA43EC98E631CCD578D1DF42B81C631C": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "PSA:cambridge-acclamation"
+      ]
+    },
+    "https://www.cambridge.org/core/journals/new-testament-studies/article/expressions-of-double-meaning-and-their-function-in-the-gospel-of-john/8B13D128DED6C3F8AD22923CEF69952B": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:cambridge-double-meaning"
+      ]
+    },
+    "https://www.cambridge.org/core/journals/new-testament-studies/article/paul-and-some-comments-on-grammar-and-style/439E4E08F957867FAABB8B7B35DB9AD7": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ROM:cambridge-ego"
+      ]
+    },
+    "https://www.cambridge.org/core/journals/scottish-journal-of-theology/article/shape-of-soteriology-and-the-pistis-christou-debate/205628FE0A64940AC2BF4C3FDC8EC31A": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "GAL:cambridge-pistis",
+        "ROM:cambridge-pistis"
+      ]
+    },
+    "https://www.codexsinaiticus.org/en/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MRK:sinaiticus"
+      ]
+    },
+    "https://www.codexsinaiticus.org/en/manuscript.aspx": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:sinaiticus",
+        "LUK:sinaiticus",
+        "MAT:sinaiticus"
+      ]
+    },
+    "https://www.deadseascrolls.org.il/explore-the-archive": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-31T16:46:25.272Z",
+      "citedBy": [
+        "EXO:dss-library"
+      ]
+    },
+    "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/Mur88-1": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "OBA:mur88-dss"
+      ]
+    },
+    "https://www.degruyter.com/document/doi/10.1515/9783110811902/html": {
+      "verdict": "ok",
+      "status": 202,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "OBA:ben-zvi-obadiah"
+      ]
+    },
+    "https://www.digitalcollections.manchester.ac.uk/view/MS-GREEK-P-00457/2": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "JHN:manchester-p52"
+      ]
+    },
+    "https://www.fortresspress.com/store/product/9780800660741/1-Enoch-1": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T23:35:33.994Z",
+      "citedBy": [
+        "ENO:nickelsburg-enoch"
+      ]
+    },
+    "https://www.gutenberg.org/ebooks/77935": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-01T23:35:33.994Z",
+      "citedBy": [
+        "ENO:charles-introduction"
+      ]
+    },
+    "https://www.jstor.org/stable/j.ctv11cvxnk": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T00:17:43.025Z",
+      "citedBy": [
+        "JUB:vanderkam-hermeneia"
+      ]
+    },
+    "https://www.loc.gov/exhibits/scrolls/libr.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:loc-leviticus-scroll"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0103301.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "ACT:irenaeus",
+        "LUK:irenaeus"
+      ]
+    },
+    "https://www.newadvent.org/fathers/120115.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T02:08:20.517Z",
+      "citedBy": [
+        "GEN:augustine-city-god-15"
+      ]
+    },
+    "https://www.newadvent.org/fathers/250103.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:eusebius-papias"
+      ]
+    },
+    "https://www.openbible.com/strongs/hebrew/4908.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:bdb-mishkan"
+      ]
+    },
+    "https://www.oxfordbibliographies.com/display/document/obo-9780195393361/obo-9780195393361-0025.xml": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-09-01T23:08:20.262Z",
+      "citedBy": [
+        "ENO:vanderkam-enoch"
+      ]
+    },
+    "https://www.peeters-leuven.be/pdf/9789042943452.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T17:27:22.544Z",
+      "citedBy": [
+        "LEV:peeters-leviticus-text"
+      ]
+    },
+    "https://www.sbl-site.org/wp-content/uploads/2024/11/Boer_Bakhtin.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "DAN:sbl-heteroglossia"
+      ]
+    },
+    "https://www.scielo.org.za/scielo.php?pid=S2305-08532015000100021&script=sci_arttext": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "MAT:little-faith-study"
+      ]
+    },
+    "https://www.thetorah.com/article/is-azazel-a-goat-place-demon-or-deity": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:thetorah-azazel"
+      ]
+    },
+    "https://www.thetorah.com/article/language-is-baffling-the-story-of-the-tower-of-babel": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "GEN:babel-wordplay"
+      ]
+    },
+    "https://www.thetorah.com/article/leviticus-more-priestly-version-of-the-dietary-laws": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T17:24:07.957Z",
+      "citedBy": [
+        "LEV:thetorah-dietary"
+      ]
+    },
+    "https://www.thetorah.com/article/love-your-neighbor-how-it-became-the-golden-rule": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:thetorah-neighbor"
+      ]
+    },
+    "https://www.thetorah.com/article/the-torahs-exodus": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-09-29T16:20:18.742Z",
+      "citedBy": [
+        "EXO:torah-exodus-history"
+      ]
+    },
+    "https://www.thetorah.com/article/you-shall-be-holy-israels-formative-and-core-revelation": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:thetorah-holiness"
+      ]
+    },
+    "https://yalebiblestudy.org/courses/leviticus-numbers-and-deuteronomy/lessons/leviticus-part-2-study-guide/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:yale-leviticus-two"
+      ]
+    },
+    "https://yalebiblestudy.org/wp-content/uploads/2023/05/Week-2-Leviticus-Part-1.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-29T23:21:09.551Z",
+      "citedBy": [
+        "LEV:yale-leviticus-one"
+      ]
+    },
+    "https://yalebooks.yale.edu/book/9780300139716/obadiah/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "OBA:raabe-obadiah"
+      ]
+    },
+    "https://yalebooks.yale.edu/book/9780300140316/the-epistles-of-john/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "2JN:brown-john-epistles"
+      ]
+    },
+    "https://yalebooks.yale.edu/book/9780300140552/the-letter-to-philemon/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-08-30T02:08:40.069Z",
+      "citedBy": [
+        "PHM:fitzmyer-philemon"
+      ]
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "jude-enoch-quotation",
+  "slug": "jude-enoch-quotation",
+  "title": "The Prophecy Jude Quoted",
+  "subtitle": "Jude 14–15 · 1 Enoch 1:9",
+  "summary": "A source-anchored comparison of the one place the New Testament quotes 1 Enoch: Jude attributes a judgment prophecy to 'Enoch, the seventh from Adam,' and the wording runs alongside 1 Enoch 1:9 in Charles' translation.",
+  "axis": "canon-reception",
+  "contextGuard": {
+    "requiresFullPericope": true,
+    "misuseNotice": "Jude's citation of 1 Enoch is often used as a polemical weapon in canon debates — in both directions. This matrix maps the textual relationship and the distinct reception histories; it does not adjudicate which canon is correct."
+  },
+  "witnesses": [
+    {
+      "id": "jude-14-15",
+      "title": "Jude 14–15 (World English Bible)",
+      "shortTitle": "Jude 14–15",
+      "language": "Hebrew / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 10th–6th century BCE",
+        "earliestManuscript": "4QGen-b (c. 1st century BCE)",
+        "edition": "Westminster Leningrad Codex / World English Bible"
+      },
+      "primaryTradition": "Christian New Testament",
+      "corpusEditionId": "web-bible",
+      "licenseNotice": "World English Bible is a 100% public domain Modern English translation of the Holy Bible."
+    },
+    {
+      "id": "enoch-1",
+      "title": "1 Enoch 1:1–9 (R.H. Charles)",
+      "shortTitle": "1 Enoch 1",
+      "language": "Ge'ez original / English",
+      "isRtl": false,
+      "dates": {
+        "composition": "c. 3rd century BCE (earliest sections; debated)",
+        "earliestManuscript": "Aramaic fragments from Qumran (4QEn, c. 2nd–1st century BCE); complete text in Ge'ez (15th century CE manuscripts)",
+        "edition": "R.H. Charles, The Apocrypha and Pseudepigrapha of the Old Testament, vol. 2 (1913)"
+      },
+      "primaryTradition": "Second Temple Judaism; canonical in the Ethiopian Tewahedo Church",
+      "corpusEditionId": "charles-enoch",
+      "licenseNotice": "R.H. Charles' 1913 translation of 1 Enoch (SPCK) is in the public domain. The Wikisource transcription is used verbatim; Charles' editorial marks (⌈⌉ conjectures, [ ] restorations) are preserved."
+    }
+  ],
+  "slots": [
+    {
+      "id": "the-coming-with-holy-ones",
+      "label": "The Lord Comes with Ten Thousands of Holy Ones",
+      "description": "The shared scene: the Lord arrives accompanied by a vast host of holy ones.",
+      "cells": {
+        "jude-14-15": {
+          "witnessId": "jude-14-15",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "JUD",
+            "passageRef": "Jude 14",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Jude quotes Enoch's prophecy: the Lord comes with ten thousands of his holy ones.",
+          "verbatimExcerpt": "About these also Enoch, the seventh from Adam, prophesied, saying, “Behold, the Lord came with ten thousands of his holy ones,",
+          "supportingCitations": [
+            "Jude 14"
+          ]
+        },
+        "enoch-1": {
+          "witnessId": "enoch-1",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 1:9",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "1 Enoch 1:9: He comes with ten thousands of His holy ones to execute judgement.",
+          "verbatimExcerpt": "And behold! He cometh with ten thousands of ⌈His⌉ holy ones To execute judgement upon all, And to destroy ⌈all⌉ the ungodly: And to convict all flesh Of all the works ⌈of their ungodliness⌉ which they have ungodly committed, ⌈And of all the hard things which⌉ ungodly sinners ⌈have spoken⌉ against Him.",
+          "supportingCitations": [
+            "1 Enoch 1:9 (Charles 1913)"
+          ],
+          "limits": "Charles' ⌈⌉ marks conjectural readings of the Ethiopic; the correspondence with Jude holds across the textual variants."
+        }
+      }
+    },
+    {
+      "id": "the-judgment-purpose",
+      "label": "Judgment and Conviction of the Ungodly",
+      "description": "Both texts state the purpose: judgment executed and the ungodly convicted of their deeds and words.",
+      "cells": {
+        "jude-14-15": {
+          "witnessId": "jude-14-15",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "JUD",
+            "passageRef": "Jude 15",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "To execute judgment on all and convict all the ungodly of their works and hard words.",
+          "verbatimExcerpt": "to execute judgment on all, and to convict all the ungodly of all their works of ungodliness which they have done in an ungodly way, and of all the hard things which ungodly sinners have spoken against him.”",
+          "supportingCitations": [
+            "Jude 15"
+          ]
+        },
+        "enoch-1": {
+          "witnessId": "enoch-1",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 1:9",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "To execute judgement upon all, destroy the ungodly, and convict all flesh of ungodly works and hard words.",
+          "verbatimExcerpt": "And behold! He cometh with ten thousands of ⌈His⌉ holy ones To execute judgement upon all, And to destroy ⌈all⌉ the ungodly: And to convict all flesh Of all the works ⌈of their ungodliness⌉ which they have ungodly committed, ⌈And of all the hard things which⌉ ungodly sinners ⌈have spoken⌉ against Him.",
+          "supportingCitations": [
+            "1 Enoch 1:9 (Charles 1913)"
+          ]
+        }
+      }
+    },
+    {
+      "id": "attribution-to-enoch",
+      "label": "Enoch as the Attributed Speaker",
+      "description": "Jude names the speaker; 1 Enoch frames the vision as Enoch's own.",
+      "cells": {
+        "jude-14-15": {
+          "witnessId": "jude-14-15",
+          "locator": {
+            "corpusId": "hebrew-bible",
+            "editionId": "web-bible",
+            "section": "JUD",
+            "passageRef": "Jude 14",
+            "originalLanguage": "Hebrew"
+          },
+          "basis": "explicit",
+          "summary": "Jude attributes the prophecy to 'Enoch, the seventh from Adam.'",
+          "verbatimExcerpt": "About these also Enoch, the seventh from Adam, prophesied, saying, “Behold, the Lord came with ten thousands of his holy ones,",
+          "supportingCitations": [
+            "Jude 14"
+          ]
+        },
+        "enoch-1": {
+          "witnessId": "enoch-1",
+          "locator": {
+            "corpusId": "second-temple-pseudepigrapha",
+            "editionId": "charles-enoch",
+            "section": "ENO",
+            "passageRef": "1 Enoch 1:1–2",
+            "originalLanguage": "Ge'ez (Aramaic original lost except in Qumran fragments)"
+          },
+          "basis": "explicit",
+          "summary": "The book opens as 'the words of the blessing of Enoch,' a righteous man whose eyes God opened.",
+          "verbatimExcerpt": "The words of the blessing of Enoch, wherewith he blessed the elect ⌈⌈and⌉⌉ righteous, who will be living in the day of tribulation, when all the wicked ⌈⌈and godless⌉⌉ are to be removed.",
+          "supportingCitations": [
+            "1 Enoch 1:1–2 (Charles 1913)"
+          ]
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "jude-quotes-enoch",
+      "sourceWitnessId": "jude-14-15",
+      "targetWitnessId": "enoch-1",
+      "relationship": "direct-citation",
+      "scholarlyConsensus": "strong",
+      "basisNote": "Scholarly consensus holds that Jude 14–15 quotes 1 Enoch 1:9 (in the Ethiopic numbering; the passage also stands in the Greek Enoch tradition Jude's readers knew). The correspondence in wording — the coming with ten thousands of holy ones, judgment, conviction of the ungodly in deed and word — is too close to be independent.",
+      "citations": [
+        "Richard Bauckham, *Jude, 2 Peter* (Word Biblical Commentary 50, 1983), pp. 65–76.",
+        "George W.E. Nickelsburg, *1 Enoch 1* (Hermeneia, 2001), pp. 137–145.",
+        "R.H. Charles, *The Apocrypha and Pseudepigrapha of the Old Testament*, vol. 2 (Oxford: Clarendon, 1913), introduction to 1 Enoch."
+      ]
+    }
+  ],
+  "receptionClaims": [
+    {
+      "id": "claim-ethiopian-canonical",
+      "tradition": "christian",
+      "subject": "1 Enoch as Canonical Scripture",
+      "text": "The Ethiopian Orthodox Tewahedo Church includes 1 Enoch in its Old Testament canon; it is the only church to preserve the complete text, in Ge'ez. For Tewahedo readers, Jude's citation is canon quoting canon.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "Ethiopian Orthodox Tewahedo Church canon (81 books)"
+        }
+      ],
+      "refs": [],
+      "limit": "The narrower and broader Tewahedo canon lists differ in count; 1 Enoch belongs to both."
+    },
+    {
+      "id": "claim-western-noncanonical",
+      "tradition": "christian",
+      "subject": "Quoted but Not Canonical in Most Western Churches",
+      "text": "Most Western churches do not include 1 Enoch in their canon, yet the New Testament quotes it. Interpretations range from reading Jude as endorsing Enochic prophecy to reading the citation as use of a known, authoritative-in-part Second Temple work without full canonical endorsement.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "disputed"
+      },
+      "sources": [
+        {
+          "label": "Bauckham, *Jude, 2 Peter* (1983)"
+        },
+        {
+          "label": "Carson & Moo, *An Introduction to the New Testament* (2005)"
+        }
+      ],
+      "refs": [],
+      "limit": "The range of positions is genuine; this matrix does not adjudicate them."
+    },
+    {
+      "id": "claim-jewish-second-temple",
+      "tradition": "jewish",
+      "subject": "Enochic Literature in Second Temple Judaism",
+      "text": "Multiple Aramaic manuscripts of 1 Enoch were copied at Qumran, showing the work's authority in at least one Second Temple Jewish community; the rabbinic canon does not include it.",
+      "basis": {
+        "axis": "attestation",
+        "grade": "explicit"
+      },
+      "sources": [
+        {
+          "label": "4QEn a–g (DJD 36); Milik, *The Books of Enoch* (1976)"
+        }
+      ],
+      "refs": [],
+      "limit": "Qumran's practice does not generalize to all Second Temple Judaism."
+    }
+  ],
+  "provenance": {
+    "reviewStatus": "agent-reviewed",
+    "reviewer": "Claude Sourcing & Review Pass (garovartabedian.com)",
+    "rubricVersion": "parallels-v1.0",
+    "reviewedContentHash": "8254aacfdb5d65fc84aff65ec16718602d5f15962a8f2101bb392066537528d5",
+    "reviewedAt": "2026-09-01T01:34:50.684Z",
+    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation"
+  }
+}

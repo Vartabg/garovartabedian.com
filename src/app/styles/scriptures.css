@@ -1,0 +1,5794 @@
+/* Auto-split from globals.css — edit carefully; keep selector ownership clear. */
+
+/* ── Scriptures world ────────────────────────────────────────────
+   Parchment, deep ink, illuminated gold. The world re-themes the
+   shared chrome vocabulary (.site-header/.wrap/.kicker) by scoping
+   the same tokens — one vocabulary, another light. */
+.world-scr {
+  --bg: #f0e2c5;
+  --surface: var(--folio);
+  --ink: var(--soot);
+  --muted: var(--muted-ink);
+  --line: #d5c29c;
+  --accent: #765416;
+  --accent-deep: #593d0e;
+  --accent-ink: var(--folio);
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+}
+.world-scr main {
+  flex: 1;
+  /* The header, an empty band, and the room tabs once pushed a page's title a
+     third of the way down a narrow screen. Scripture pages start sooner. */
+  padding-top: 1.75rem;
+}
+.world-scr .world-guide {
+  margin-bottom: 1.25rem;
+}
+/* Where the room tabs sit on top of the page (between the phone bar and the
+   desktop rail), they keep to one row and Sources tucks in beside them. */
+@media (min-width: 760px) and (max-width: 1099px) {
+  .world-scr .wg-grid {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+  .world-scr .wg-source-disclosure:not([open]) {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .world-scr .wg-source-disclosure[open] {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 640px) {
+  .world-scr main {
+    padding-top: 1rem;
+  }
+}
+
+/* The landing page is a working reader's desk, not a catalog. The shared
+   threshold + desk cap in worlds-shared.css governs the hero height; the
+   intent index below brings the first useful choices into view. */
+
+/* An intent index gives first-time readers a plain-language way in. It sits
+   between the cinematic threshold and the working desk like a library
+   directory: purpose first, information architecture second. */
+.scr-intent-index {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.55fr) minmax(0, 1.45fr);
+  margin-block: clamp(2rem, 5vw, 3.5rem);
+  border-block: 1px solid var(--line);
+  scroll-margin-top: 1.5rem;
+}
+
+.scr-intent-index-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem clamp(1rem, 3vw, 2rem) 1.25rem 0;
+}
+
+.scr-intent-index-head .kicker {
+  margin: 0 0 0.25rem;
+  color: var(--accent);
+}
+
+.scr-intent-index-head h2 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  letter-spacing: -0.03em;
+}
+
+.scr-intent-index-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.scr-intent-index-links a {
+  display: grid;
+  min-width: 0;
+  min-height: 9.5rem;
+  align-content: center;
+  gap: 0.25rem;
+  border-left: 1px solid var(--line);
+  padding: 1rem;
+  color: var(--ink);
+  text-decoration: none;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.scr-intent-index-links a:hover,
+.scr-intent-index-links a:focus-visible {
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.scr-intent-index-links a > span {
+  color: var(--accent);
+  font-size: 0.66rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.scr-intent-index-links strong {
+  font-size: 1.05rem;
+}
+
+.scr-intent-index-links small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.scr-home-start,
+.scr-find,
+.scr-browse-section {
+  margin-block: clamp(3rem, 7vw, 5.5rem);
+  scroll-margin-top: 1.5rem;
+}
+
+.scr-home-section-head {
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+}
+
+.scr-home-section-head .kicker {
+  margin: 0 0 0.45rem;
+  color: var(--accent);
+}
+
+.scr-home-section-head h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.scr-home-section-head > p:last-child {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  line-height: 1.65;
+}
+
+.scr-home-start-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  background: var(--surface);
+}
+
+.scr-home-action {
+  display: flex;
+  min-width: 0;
+  min-height: 31rem;
+  flex-direction: column;
+  padding: clamp(1.4rem, 3.5vw, 2.5rem);
+}
+
+.scr-home-action + .scr-home-action {
+  border-left: 1px solid var(--line);
+}
+
+.scr-home-action-kicker {
+  margin: 0 0 0.55rem;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.scr-home-action h3 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  letter-spacing: -0.02em;
+}
+
+.scr-home-action > div > p:last-child {
+  max-width: 32rem;
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.scr-home-primary {
+  display: inline-flex;
+  min-height: 3.3rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  padding: 0.75rem 1rem;
+  color: var(--accent-ink);
+  font-weight: 800;
+  transition: filter 160ms ease, transform 160ms ease;
+}
+
+.scr-home-primary:hover,
+.scr-home-primary:focus-visible {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.scr-home-reading-paths,
+.scr-home-tool-links {
+  display: grid;
+  gap: 0;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.scr-home-reading-paths a,
+.scr-home-tool-links a {
+  display: flex;
+  min-height: 3.65rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid var(--line);
+  padding: 0.7rem 0;
+  color: var(--ink);
+  transition: color 160ms ease, padding 160ms ease;
+}
+
+.scr-home-reading-paths a:hover,
+.scr-home-reading-paths a:focus-visible,
+.scr-home-tool-links a:hover,
+.scr-home-tool-links a:focus-visible {
+  padding-inline: 0.45rem;
+  color: var(--accent);
+}
+
+.scr-home-reading-paths span,
+.scr-home-tool-links span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-align: right;
+}
+
+.scr-home-search .scr-ask {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 1.75rem;
+}
+
+.scr-home-search .scr-ask-field {
+  min-width: 0;
+}
+
+.scr-home-search .scr-ask-field input,
+.scr-home-search .scr-ask button[type="submit"] {
+  min-height: 3.3rem;
+  border-radius: 2px;
+}
+
+.scr-home-search .scr-ask button[type="submit"] {
+  width: 100%;
+}
+
+.scr-find {
+  padding-block: clamp(2rem, 4vw, 3.25rem);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-book-browser {
+  margin-top: 0.8rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.scr-book-browser > summary {
+  display: flex;
+  min-height: 4.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  list-style: none;
+}
+
+.scr-book-browser > summary::-webkit-details-marker {
+  display: none;
+}
+
+.scr-book-browser > summary > span:first-child {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.scr-book-browser > summary small,
+.scr-book-browser-action,
+.scr-find-results-status {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.scr-book-browser-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.scr-book-browser-action::after {
+  content: "+";
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.scr-book-browser[open] .scr-book-browser-action::after {
+  content: "−";
+}
+
+.scr-book-browser[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-book-browser > .scr-find-results {
+  padding: 0 1rem 1rem;
+}
+
+.scr-find-results-status {
+  margin: 0.8rem 0 0;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.scr-tradition-cards {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  margin-top: 0;
+}
+
+.scr-tradition-card {
+  display: grid;
+  min-height: 14rem;
+  grid-template-rows: auto auto 1fr auto;
+  align-content: start;
+  gap: 0.6rem;
+}
+
+.scr-tradition-card-index {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.scr-tradition-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.15;
+}
+
+.scr-tradition-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.75rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+@media (max-width: 759px) {
+  .scr-intent-index {
+    grid-template-columns: 1fr;
+  }
+
+  .scr-intent-index-head {
+    padding: 1rem 0;
+  }
+
+  .scr-intent-index-links {
+    border-top: 1px solid var(--line);
+  }
+
+  .scr-intent-index-links a:first-child {
+    border-left: 0;
+  }
+
+  .scr-home-start-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scr-home-action {
+    min-height: 0;
+  }
+
+  .scr-home-action + .scr-home-action {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .scr-home-reading-paths,
+  .scr-home-tool-links {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .world-home-hero[data-world="scriptures"] {
+    min-height: 34rem;
+  }
+
+  .scr-home-start,
+  .scr-find,
+  .scr-browse-section {
+    margin-block: 3rem;
+  }
+
+  .scr-intent-index-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .scr-intent-index-links a {
+    min-height: 7.5rem;
+  }
+
+  .scr-intent-index-links a:nth-child(3) {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .scr-intent-index-links a:nth-child(4) {
+    border-top: 1px solid var(--line);
+  }
+
+  .scr-home-section-head h2 {
+    font-size: clamp(1.85rem, 10vw, 2.6rem);
+  }
+
+  .scr-home-action {
+    padding: 1.35rem 1rem;
+  }
+
+  .scr-book-browser > summary {
+    align-items: flex-start;
+  }
+
+  .scr-book-browser-action {
+    min-width: 5.75rem;
+    justify-content: flex-end;
+  }
+
+  .scr-tradition-card {
+    min-height: 0;
+  }
+}
+
+.wd-case-map {
+  margin: 1.25rem 0 2rem;
+  max-width: 32rem;
+}
+.wd-case-map .scr-card-visual {
+  margin: 0;
+}
+.wd-case-rail {
+  display: flex;
+  align-items: end;
+  gap: 0.55rem;
+  min-height: 8.25rem;
+  margin: 0 0 2rem;
+  padding: 1rem 1.1rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.wd-case-rail-item {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 0;
+  height: 6.6rem;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.wd-case-rail-item:hover,
+.wd-case-rail-item:focus-visible {
+  background: color-mix(in srgb, currentColor 7%, transparent);
+  transform: translateY(-2px);
+}
+.wd-case-rail-bar {
+  align-self: end;
+  justify-self: center;
+  width: min(1.55rem, 62%);
+  border-radius: 999px 999px 4px 4px;
+  background: currentColor;
+  opacity: 0.65;
+}
+.wd-case-rail-label,
+.wd-case-rail-count {
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wd-case-rail-label {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+.wd-case-rail-count {
+  color: currentColor;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.wd-case-rail-item[class*="wd-case-cat-"] {
+  background: transparent;
+}
+/* Editorial honesty notes (Ethiopian gaps, Armenian link-out) */
+.scr-note {
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+  padding: 0.6rem 1rem;
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.scr-tradition-nav > span:first-child {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Read-first entry: fast choices on a phone, generous cards on wider screens. */
+.scr-continue {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.12rem 1rem;
+  align-items: center;
+  min-height: 4.25rem;
+  margin: 1.2rem 0 1.5rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-left-width: 4px;
+  background: color-mix(in oklab, var(--accent) 7%, var(--surface));
+}
+
+/* Recent study is deliberately local and small: useful continuity without an
+   account, a profile, or implying that private reading history left the device. */
+.scr-trail {
+  margin: 1.2rem 0 1.5rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  background: color-mix(in oklab, var(--accent) 4%, var(--surface));
+}
+
+.scr-trail-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-trail-head h3 {
+  margin: 0.15rem 0 0;
+  font-size: 1rem;
+}
+
+.scr-trail-head > span {
+  color: var(--muted);
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.scr-trail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(12rem, 0.85fr);
+}
+
+.scr-trail .scr-continue {
+  min-height: 6.5rem;
+  margin: 0;
+  border: 0;
+  border-left: 4px solid var(--accent);
+  background: transparent;
+}
+
+.scr-trail-recent {
+  display: grid;
+  align-content: center;
+  border-left: 1px solid var(--line);
+  padding: 0.4rem 1rem;
+}
+
+.scr-trail-recent a {
+  display: flex;
+  min-height: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--line) 70%, transparent);
+  color: var(--ink);
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+
+.scr-trail-recent a:last-child {
+  border-bottom: 0;
+}
+
+.scr-trail-recent a:hover,
+.scr-trail-recent a:focus-visible {
+  color: var(--accent);
+}
+
+@media (max-width: 620px) {
+  .scr-trail-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .scr-trail-head > span {
+    white-space: normal;
+  }
+
+  .scr-trail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scr-trail-recent {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+}
+.scr-continue-kicker {
+  grid-column: 1 / -1;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.scr-continue strong {
+  color: var(--ink);
+  font-size: 1rem;
+}
+.scr-continue-cta {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+.scr-book-list a:hover,
+.scr-book-list a:focus-visible,
+.scr-chapter-cell:hover,
+.scr-chapter-cell:focus-visible {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 7%, var(--surface));
+}
+.scr-find-field {
+  display: block;
+}
+.scr-find-field input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.scr-find-field input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.scr-find-section {
+  margin-top: 1.25rem;
+}
+.scr-find-section > h3 {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.scr-book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr));
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scr-book-list a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 3.1rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.scr-book-list-name {
+  color: var(--ink);
+  font-weight: 750;
+}
+.scr-book-list-meta {
+  flex: 0 0 auto;
+  max-width: 100%;
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.76rem;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+.scr-chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+  gap: 0.45rem;
+  margin: 1.4rem 0;
+}
+.scr-chapter-cell {
+  display: grid;
+  place-items: center;
+  min-height: 3rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.scr-view-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0;
+}
+/* Inside the book list the shared find block drops its section spacing and
+   rules, so the books follow the List / Shelf switch directly. */
+.scr-book-nav .scr-find {
+  margin-block: 0;
+  padding-block: 0;
+  border: 0;
+}
+.scr-book-nav .scr-find-section:first-child {
+  margin-top: 0;
+}
+.scr-book-nav .scr-find-section:first-child .scr-shelf-label {
+  margin-top: 1rem;
+}
+@media (max-width: 560px) {
+  .scr-book-list {
+    grid-template-columns: 1fr;
+  }
+}
+.scr-browse-section {
+  scroll-margin-top: 1.5rem;
+}
+
+.scr-tradition-nav,
+.scr-book-neighbors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 1rem 0 1.25rem;
+}
+.scr-tradition-nav a,
+.scr-tradition-nav span[aria-current="page"],
+.scr-book-neighbors a {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  padding: 0.34rem 0.7rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+.scr-tradition-nav span[aria-current="page"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.scr-tradition-nav a:hover,
+.scr-book-neighbors a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Book grid */
+
+/* Reader: compare mode */
+.scr-btn-active,
+.scr-btn[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+.scr-cmp-legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  margin: 1rem 0 0.4rem 2.1rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+.scr-cmp-cells {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+.scr-cmp-cells > span:last-child {
+  color: var(--muted);
+}
+@media (max-width: 640px) {
+  .scr-cmp-cells {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .scr-cmp-legend {
+    grid-template-columns: 1fr;
+  }
+  .scr-cmp-legend span:last-child {
+    display: none;
+  }
+}
+
+/* The Threads — cross-references drawn */
+.scr-threads {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 0.9rem 0.9rem 0.2rem;
+  margin: 0.5rem 0 1.25rem;
+}
+.scr-threads svg {
+  width: 100%;
+  height: auto;
+}
+.scr-thread {
+  stroke: var(--accent);
+  stroke-width: 1;
+  opacity: 0.16;
+}
+.scr-strip {
+  fill: var(--accent);
+  opacity: 0.22;
+}
+.scr-strip.alt {
+  opacity: 0.34;
+}
+.scr-strip.origin {
+  fill: #a02b2b;
+  opacity: 0.85;
+}
+.scr-thread-origin {
+  fill: #a02b2b;
+}
+.scr-thread-label {
+  fill: var(--muted);
+  font-size: 9.5px;
+}
+.scr-thread-label.origin {
+  fill: #a02b2b;
+  font-weight: 700;
+}
+
+/* Reader: words of Jesus.
+   The drop cap that used to open verse 1 is gone: it forced the reader to
+   split the first word into a decorative letter plus a screen-reader
+   fallback plus a "rest" span, and on a phone it collided with the verse
+   number. A chapter does not need an illuminated capital more than it needs
+   its first sentence to be readable. */
+.scr-red {
+  color: #a02b2b;
+}
+
+/* The Shelf — the canon drawn to scale */
+.scr-shelves {
+  margin-top: 1.5rem;
+}
+.scr-shelf-label {
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 1.9rem 0 0.7rem;
+}
+.scr-shelf-label span {
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+.scr-shelf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  column-gap: 3px;
+  row-gap: 12px;
+  padding: 0 6px 12px;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 140px,
+    #b99a6b 140px,
+    #a5854f 149px,
+    transparent 149px,
+    transparent 152px
+  );
+}
+.scr-spine {
+  height: 140px;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+  text-decoration: none;
+  box-shadow: inset -3px 0 5px rgba(0, 0, 0, 0.18), inset 2px 0 3px rgba(255, 255, 255, 0.12);
+  transition: transform 0.15s ease, filter 0.15s ease;
+  overflow: hidden;
+}
+.scr-spine:hover {
+  transform: translateY(-6px);
+  filter: brightness(1.08);
+}
+.scr-spine span {
+  writing-mode: vertical-rl;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(250, 245, 231, 0.92);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 122px;
+}
+.scr-spine.t0 { background: #8a5a13; }
+.scr-spine.t1 { background: #7d5a35; }
+.scr-spine.t2 { background: #9a6a2a; }
+.scr-spine.t3 { background: #6b4a2a; }
+.scr-spine.t4 { background: #8f6d3f; }
+.scr-spine.beyond.t0,
+.scr-spine.beyond.t1,
+.scr-spine.beyond.t2,
+.scr-spine.beyond.t3,
+.scr-spine.beyond.t4 {
+  background: #56705b;
+}
+.scr-spine.beyond span {
+  color: rgba(240, 248, 240, 0.92);
+}
+
+/* Reader: the five stacked navigators are gone.
+   Removed with the 2026-07-25 rebuild: .scr-toolbar / .scr-control (two rows
+   of selects above the text, whose buttons wrapped and overlapped the card
+   below them), .scr-reader-ribbon / .scr-reader-track / .scr-reader-step (a
+   decorative dot strip that rendered one 3px unlabelled link per chapter —
+   150 of them for Psalms), and the reader's copy of .scr-book-neighbors.
+   All of it now lives in one bottom bar and one "Go to" sheet. */
+
+/* The old `.scr-sheet` chapter card is gone. On a 390px phone its 1.15rem
+   side padding plus the page wrap left a 303px measure: about 26 characters
+   per line at the default size. Reading wants 45-75. The chapter now uses the
+   full page width on phones and takes its own centred measure on desktop —
+   see .scr-read-text below. */
+
+/* Verses */
+.scr-verse {
+  margin: 0 0 0.65rem;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 4rem;
+  scroll-margin-top: 2rem;
+}
+.scr-verse:target {
+  background: #f1e7c8;
+  border-radius: 6px;
+  padding: 0.15rem 0.35rem;
+}
+
+.scr-vnum {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-size: 0.72em;
+  font-weight: 700;
+  vertical-align: super;
+  padding: 0 0.3rem 0 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+.scr-vnum:hover {
+  text-decoration: underline;
+}
+
+
+/* Ask */
+.scr-ask {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+.scr-ask-field {
+  position: relative;
+  flex: 1;
+  min-width: 14rem;
+  display: flex;
+}
+.scr-ask-field input {
+  flex: 1;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 0.7rem 3.25rem 0.7rem 1rem;
+  font: inherit;
+  width: 100%;
+}
+.scr-ask-field input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.scr-ask-clear {
+  position: absolute;
+  right: 0.15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: var(--line);
+  color: var(--muted);
+  width: var(--control-target-min);
+  height: var(--control-target-min);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-ask-clear:hover {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+}
+.scr-ask button[type="submit"] {
+  border: 0;
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-radius: 10px;
+  padding: 0.7rem 1.2rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.scr-ask button[type="submit"]:hover {
+  filter: brightness(1.08);
+}
+.scr-ask-hint {
+  flex: 1 1 100%;
+  margin: 0.1rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.scr-search-stage {
+  margin-top: 0.75rem;
+  min-height: 16rem;
+}
+.scr-search-stage.is-loading {
+  min-height: 60vh;
+}
+.scr-search-start {
+  margin-top: 1.15rem;
+}
+.scr-search-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.scr-search-examples a {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--surface);
+  color: var(--accent);
+  padding: 0.35rem 0.7rem;
+  text-decoration: none;
+  font-size: 0.86rem;
+}
+.scr-search-examples a:hover {
+  border-color: var(--accent);
+}
+.scr-hits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.scr-hits .scr-hit {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 8rem;
+}
+.scr-hit-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.scr-hit-head .scr-ref {
+  margin-bottom: 0;
+}
+.scr-hit-match {
+  color: var(--muted);
+  flex: none;
+  font-size: 0.76rem;
+}
+.scr-direct-hit {
+  max-width: 46rem;
+}
+
+.scr-search-lens,
+.scr-topic-atlas {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 8%, transparent), transparent 62%),
+    var(--surface);
+  padding: 1rem 1.1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+.scr-search-lens-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 0.85rem;
+}
+.scr-search-lens-head strong {
+  color: var(--ink);
+}
+.scr-search-lens-head span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  text-align: right;
+}
+.scr-search-bars {
+  display: grid;
+  gap: 0.45rem;
+}
+.scr-search-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.48rem 0.65rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.scr-search-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--w, 0%);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+}
+.scr-search-bar span,
+.scr-search-bar b {
+  position: relative;
+  z-index: 1;
+}
+.scr-search-bar span {
+  overflow-wrap: anywhere;
+}
+.scr-search-bar b {
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.scr-search-bar:hover {
+  border-color: var(--accent);
+}
+.scr-search-tokens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.scr-search-section-title {
+  margin: 1.5rem 0 0.35rem;
+  font-size: clamp(1.15rem, 3vw, 1.4rem);
+}
+.scr-trans-picker select {
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--surface);
+  color: inherit;
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.15rem 0.4rem;
+}
+.scr-trans-picker select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.scr-related {
+  margin: 2rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.scr-relevance-heading,
+.scr-relevance-result-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.8rem;
+}
+.scr-relevance-heading h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.scr-relevance-heading > span,
+.scr-relevance-allowance,
+.scr-relevance-about {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+.scr-relevance-heading > span {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+}
+.scr-relevance > p {
+  margin: 0.65rem 0;
+}
+.scr-relevance > [role="status"]:empty {
+  margin: 0;
+}
+.scr-relevance-about {
+  margin-top: 0.8rem;
+}
+.scr-relevance summary {
+  cursor: pointer;
+}
+.scr-relevance summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.scr-relevance-results {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.scr-relevance-results > li {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.scr-relevance-result-head > span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.scr-relevance-review {
+  border: 1px dashed currentColor;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.scr-relevance-results details {
+  margin-top: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.scr-related-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.9fr);
+  gap: 1rem;
+  align-items: end;
+}
+.scr-related-head h2 {
+  margin: 0.15rem 0 0;
+  font-size: clamp(1.35rem, 4vw, 1.75rem);
+}
+.scr-related-head > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+.scr-related-kicker {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.scr-related-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0;
+}
+.scr-related-topics a {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.28rem 0.65rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.scr-related-topics a:hover {
+  border-color: var(--accent);
+}
+.scr-related-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+.scr-related-hit {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 7%, transparent),
+      transparent 68%
+    ),
+    var(--surface);
+  padding: 0.9rem 1rem;
+}
+.scr-related-via {
+  color: var(--accent);
+  flex: none;
+  font-size: 0.74rem;
+}
+.scr-related-context {
+  min-height: 2.7em;
+  margin: 0.35rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+.scr-search-more {
+  margin: 1.25rem 0;
+  display: flex;
+  justify-content: center;
+}
+.scr-search-guides-hint {
+  margin-top: 2rem;
+  padding: 1rem 1.1rem;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 560px) {
+  .scr-related-head {
+    grid-template-columns: 1fr;
+  }
+  .scr-related-list {
+    grid-template-columns: 1fr;
+  }
+  .scr-hit-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .scr-hit-match {
+    padding-inline: 0.7rem;
+  }
+}
+
+/* Brief editorial orientation before the chapter; detail stays expandable. */
+.scr-reading-context {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.15rem;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--surface);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.scr-reading-context h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.1rem;
+}
+.scr-reading-context h3 {
+  margin: 0.9rem 0 0.3rem;
+  font-size: 0.95rem;
+}
+.scr-reading-context p {
+  margin: 0.4rem 0;
+}
+.scr-reading-context summary {
+  cursor: pointer;
+  padding-block: 0.4rem;
+  font-weight: 600;
+}
+.scr-context-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.8rem;
+  font-size: 0.85rem;
+}
+.scr-context-footer,
+.scr-guide-evidence {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.scr-guide-evidence {
+  margin-block: 0.6rem;
+  overflow-wrap: anywhere;
+}
+
+/* ── Chapter Cheat Sheet / Deep Dive ── */
+.scr-guide {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.scr-guide--empty {
+  padding: 0 1.1rem 1.1rem;
+}
+.scr-guide-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 3rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.scr-guide-head strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.scr-guide-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  white-space: nowrap;
+}
+.scr-guide-empty {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 1rem 0 0;
+}
+.scr-guide-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  width: 100%;
+  min-height: 3rem;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  color: var(--ink);
+  font: inherit;
+}
+.scr-guide-toggle:hover {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+.scr-guide-toggle-icon {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  font-weight: 700;
+}
+.scr-guide-toggle strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.scr-guide-toggle-hint {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+.scr-guide-panel {
+  padding: 0 1.25rem 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.scr-guide-section {
+  margin-top: 1.75rem;
+}
+.scr-guide-section h3,
+.scr-guide-questions h3 {
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--rubric);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 450;
+  font-variation-settings: var(--display-tune);
+  font-size: 1.05rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+.scr-guide-summary {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+.scr-guide-why {
+  margin-top: 1rem;
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 0.9rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.scr-guide-why strong {
+  display: block;
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.scr-guide-why p {
+  margin: 0;
+}
+.scr-guide-themes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+}
+.scr-guide-themes-label {
+  font-size: 0.8rem;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-inline-end: 0.25rem;
+}
+.scr-guide-theme {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+}
+.scr-guide-context {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.4rem 1.25rem;
+  margin: 1.75rem 0 0;
+}
+.scr-guide-context dt {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+.scr-guide-context dd {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.scr-guide-outline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: scr-guide-outline;
+  display: grid;
+  gap: 0.9rem;
+}
+.scr-guide-outline li {
+  counter-increment: scr-guide-outline;
+  position: relative;
+  padding-inline-start: 2.2rem;
+}
+.scr-guide-outline li::before {
+  content: counter(scr-guide-outline);
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.1rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.scr-guide-outline-link,
+.scr-guide-outline-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+.scr-guide-outline-heading {
+  font-weight: 600;
+}
+.scr-guide-outline-link:hover .scr-guide-outline-heading {
+  color: var(--accent);
+}
+.scr-guide-outline-verses {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.scr-guide-outline-note {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.scr-guide-keyverses {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.scr-guide-keyverses li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.scr-guide-keyverses li:first-child {
+  padding-top: 0;
+}
+.scr-guide-keyverses li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.scr-guide-kv-ref {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+.scr-guide-kv-ref:hover {
+  text-decoration: underline;
+}
+.scr-guide-kv-text {
+  margin: 0;
+  font-family: var(--font-reading);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.scr-guide-kv-why {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.scr-guide-questions {
+  margin-top: 1.75rem;
+}
+.scr-guide-questions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.scr-guide-q {
+  border-bottom: 1px solid var(--line);
+}
+.scr-guide-q.is-open {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+.scr-guide-q-btn {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-template-areas: "text cat icon";
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 0.9rem 0;
+  cursor: pointer;
+  font: inherit;
+  color: var(--ink);
+}
+.scr-guide-q-cat {
+  grid-area: cat;
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.scr-guide-q-text {
+  grid-area: text;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.scr-guide-q-icon {
+  grid-area: icon;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  font-weight: 700;
+}
+.scr-guide-q-body {
+  padding: 0 0 1rem;
+}
+.scr-guide-q-body p {
+  margin: 0.7rem 0 0;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.scr-guide-q-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+.scr-guide-q-ref {
+  font-size: 0.85rem;
+  color: var(--accent);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  text-decoration: none;
+}
+.scr-guide-q-ref:hover {
+  border-color: var(--accent);
+}
+.scr-guide-gloss {
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.scr-guide-gloss > div {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 0.75rem;
+}
+.scr-guide-gloss dt {
+  font-weight: 600;
+}
+.scr-guide-gloss dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.scr-guide-source {
+  margin: 1.75rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.scr-guide-source p {
+  margin: 0;
+}
+.scr-guide-source p + p {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 560px) {
+  .scr-guide-toggle {
+    gap: 0.6rem;
+    padding: 0.8rem 0.9rem;
+  }
+  .scr-guide-toggle-hint {
+    font-size: 0.8rem;
+  }
+  .scr-guide-panel {
+    padding: 0 0.95rem 1.25rem;
+  }
+  .scr-guide-context {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .scr-guide-q-btn {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "text icon"
+      "cat icon";
+    gap: 0.25rem 0.6rem;
+  }
+  .scr-guide-q-cat {
+    grid-area: cat;
+  }
+  .scr-guide-q-text {
+    grid-area: text;
+  }
+  .scr-guide-q-icon {
+    grid-area: icon;
+  }
+  .scr-guide-gloss > div {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .scr-guide-outline-link,
+  .scr-guide-outline-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scr-guide,
+  .scr-guide * {
+    transition: none;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   THE READER  (rebuilt 2026-07-25)
+
+   One rule: the text is the interface. Everything here serves getting a
+   phone reader to the first word fast, keeping the words legible, and
+   putting depth exactly one deliberate tap away — never over the words.
+
+   What this replaced, and why:
+   · `inset-x: 0` — not a real CSS property. It was the only thing meant to
+     pin the mobile verse sheet to both edges, so the sheet took `width:100%`
+     from wherever it happened to sit and ran off the right of the screen with
+     its close button unreachable.
+   · Five stacked navigators and a "More" accordion above verse 1, which put
+     the first word of John 3 at y=1068 on a 390x390px-wide phone.
+   · A per-word `<span>` on every word in the chapter (2,334 in Psalm 119)
+     so any tap could open an occurrence-count card. It broke text selection.
+   ══════════════════════════════════════════════════════════════════════ */
+
+.scr-read {
+  /* Clearance so the last verse is never trapped under the fixed bar. */
+  --scr-bar-h: 3.5rem;
+  padding-bottom: calc(var(--scr-bar-h) + 1.5rem + env(safe-area-inset-bottom));
+}
+
+/* The world's orientation card is a fine front door and pure noise on a
+   reading page — it cost ~380px above the text. The breadcrumb covers it. */
+.wrap:has(.scr-read) .world-guide {
+  display: none;
+}
+/* The same holds for the two pages that lead to a chapter. The header already
+   links Home and Scriptures, each page carries its own trail in the kicker,
+   and the room tabs have nothing to do with choosing a book or a chapter. */
+.wrap:has(> .scr-tradition-nav) > .world-guide,
+.wrap:has(> .scr-book-neighbors) > .world-guide {
+  display: none;
+}
+/* With no rail to hold, the wide layout gives the column back to the page. */
+@media (min-width: 1100px) {
+  .world-scr main > .wrap:has(> .scr-tradition-nav),
+  .world-scr main > .wrap:has(> .scr-book-neighbors) {
+    display: block;
+    max-width: var(--maxw);
+  }
+}
+/* The world's generous 4rem top padding is right for a landing page and is
+   dead space on a page whose job is to show you a sentence. */
+main:has(.scr-read) {
+  padding-top: 1.5rem;
+}
+
+/* ── The leaf ─────────────────────────────────────────────────────────
+   A chapter is one leaf of an open codex: a running head across the top,
+   the text in its block, and the study notes in the margin beside it — the
+   way a glossed Bible has always been laid out. On a phone the leaf is the
+   whole screen; from 1000px it takes a framed spread. */
+.scr-read {
+  --scr-spread: 58rem;
+  --scr-gutter: 2.6rem; /* room for the hanging verse numbers */
+}
+.scr-leaf {
+  width: 100%;
+  max-width: var(--scr-spread);
+  margin-inline: auto;
+}
+.scr-cmp-legend {
+  max-width: 34rem;
+  margin-inline: auto;
+}
+
+/* Running head: book and chapter as a scribe wrote them at the top of the
+   page, provenance in one quiet line, the way back on the right. */
+.scr-rh {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1.5rem;
+  padding-bottom: 0.65rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.scr-rh-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 1.9rem);
+  line-height: 1.1;
+}
+.scr-rh-ch {
+  margin-inline-start: 0.1em;
+  color: var(--rubric);
+  font-style: italic;
+  font-weight: 450;
+}
+.scr-read-meta {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+/* Underlined, not just tinted: this link sits inside a run of text, so colour
+   alone would fail WCAG 1.4.1 (axe `link-in-text-block`). */
+.scr-read-meta a {
+  color: var(--accent);
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+.scr-rh-crumbs {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.scr-rh-crumbs a {
+  color: var(--muted);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.scr-rh-crumbs a:hover {
+  color: var(--accent);
+}
+.scr-rh-tools {
+  margin: 0 0 1.25rem;
+}
+
+/* ── The margin ──────────────────────────────────────────────────────
+   The study notes. On a phone: a compact strip of four ways into the
+   chapter above the text, plus one provenance line. From 1000px: a sticky
+   gloss margin beside the text with rubric headings — Understand, Connect,
+   Source — and the Connect gloss follows whichever verse is open. */
+.scr-study-layout {
+  position: relative;
+  width: 100%;
+}
+/* Threads from the open verse to its glosses (GlossThreads.tsx). */
+.gloss-threads {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.gloss-threads path {
+  fill: none;
+  stroke: var(--rubric);
+  stroke-width: 1.1;
+  opacity: 0.85;
+}
+.gloss-threads circle {
+  fill: var(--gold);
+  stroke: var(--deep-gold);
+  stroke-width: 0.6;
+}
+.gloss-threads .gloss-thread-knot {
+  fill: var(--rubric);
+  stroke: none;
+}
+@media (max-width: 999px) {
+  .gloss-threads {
+    display: none;
+  }
+}
+/* The versal's vines grow past the first verse's box; that block alone gives
+   up its containment so nothing clips them. */
+.scr-read-text .scr-v:first-child {
+  content-visibility: visible;
+  contain: none;
+}
+
+.scr-study-reading {
+  min-width: 0;
+}
+
+.scr-gloss {
+  width: 100%;
+  margin: 0 0 1.25rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-gloss-head {
+  display: none;
+}
+
+/* A rubric: the scribe's red heading — Fraunces italic in vermilion. */
+.scr-rubric {
+  margin: 0;
+  color: var(--rubric);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 450;
+  font-variation-settings: var(--display-tune);
+  font-size: 1.05rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.scr-gloss-intents {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.scr-gloss-intents button {
+  display: grid;
+  min-width: 0;
+  min-height: 3.25rem;
+  align-content: center;
+  border: 0;
+  border-left: 1px solid var(--line);
+  background: transparent;
+  padding: 0.4rem 0.35rem;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.scr-gloss-intents button:first-child {
+  border-left: 0;
+}
+
+.scr-gloss-intents button.is-active,
+.scr-gloss-intents button[aria-pressed="true"] {
+  color: var(--rubric);
+  box-shadow: inset 0 -2px 0 var(--rubric);
+}
+
+.scr-gloss-intents button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.scr-gloss-intents small {
+  display: none;
+}
+
+.scr-gloss-mobile-trust {
+  margin: 0;
+  border-top: 1px solid var(--line);
+  padding: 0.45rem 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.scr-gloss-body {
+  display: none;
+}
+
+#chapter-text,
+#study,
+#connections,
+#original-language {
+  scroll-margin-top: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .scr-leaf {
+    padding: clamp(1.25rem, 3vw, 2rem) clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.5rem);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    outline: 1px solid color-mix(in oklab, var(--line) 60%, transparent);
+    outline-offset: 4px;
+  }
+
+  .scr-study-layout {
+    display: grid;
+    grid-template-areas: "reading gloss";
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, 17rem);
+    align-items: start;
+    gap: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  .scr-study-reading {
+    grid-area: reading;
+  }
+
+  .scr-gloss {
+    grid-area: gloss;
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100svh - var(--scr-bar-h) - 2rem);
+    margin: 0;
+    overflow: auto;
+    border: 0;
+    scrollbar-width: thin;
+  }
+
+  .scr-gloss-head {
+    display: block;
+    padding-bottom: 0.75rem;
+  }
+
+  .scr-gloss-where {
+    margin: 0.3rem 0 0;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .scr-gloss-track {
+    display: block;
+    height: 2px;
+    margin-top: 0.55rem;
+    overflow: hidden;
+    background: var(--line);
+  }
+
+  .scr-gloss-track > span {
+    display: block;
+    height: 100%;
+    background: var(--rubric);
+  }
+
+  .scr-gloss-intents,
+  .scr-gloss-mobile-trust {
+    display: none;
+  }
+
+  .scr-gloss-body {
+    display: grid;
+  }
+
+  .scr-gloss-body > section {
+    padding: 0.85rem 0 1rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .scr-gloss-body p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  .scr-gloss-body h3 + p,
+  .scr-gloss-body h3 + div {
+    margin-top: 0.4rem;
+  }
+
+  .scr-gloss-body p strong {
+    color: var(--ink);
+  }
+
+  .scr-gloss-themes {
+    margin-top: 0.45rem;
+    font-size: 0.78rem;
+  }
+
+  .scr-gloss-themes span {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .scr-gloss-refs {
+    display: grid;
+    gap: 0.2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .scr-gloss-refs a {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: color-mix(in oklab, var(--accent) 45%, transparent);
+    text-underline-offset: 2px;
+  }
+
+  .scr-gloss-refs a:hover {
+    text-decoration-color: var(--accent);
+  }
+
+  .scr-gloss-more {
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+
+  .scr-gloss-act {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--control-target-min, 2.75rem);
+    margin-top: 0.45rem;
+    padding: 0.2rem 0;
+    border: 0;
+    background: transparent;
+    color: var(--accent-deep);
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-align: start;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    cursor: pointer;
+  }
+
+  .scr-gloss-act:hover {
+    color: var(--accent);
+  }
+
+  .scr-gloss-act:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .scr-gloss-dl {
+    margin: 0.45rem 0 0;
+  }
+
+  .scr-gloss-dl > div {
+    display: grid;
+    grid-template-columns: 3.4rem minmax(0, 1fr);
+    gap: 0.5rem;
+    padding-block: 0.3rem;
+    border-top: 1px solid color-mix(in oklab, var(--line) 70%, transparent);
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .scr-gloss-dl > div:first-child {
+    border-top: 0;
+  }
+
+  .scr-gloss-dl dt {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .scr-gloss-dl dd {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .scr-gloss-dl dd a,
+  .scr-gloss-parallel a {
+    color: var(--accent-deep);
+    font-weight: 600;
+  }
+
+  .scr-gloss-parallel a {
+    font-size: 0.82rem;
+  }
+
+  .scr-gloss-source > a {
+    display: inline-block;
+    margin-top: 0.55rem;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+/* ── The reading surface ───────────────────────────────────────────────
+   Measure first. On a phone the chapter uses the whole wrap; on wider
+   screens it takes a centred 34rem column, which lands in the 45-75
+   character band at every size step. */
+.scr-read-text {
+  --scr-fs: 1.125rem;
+  --scr-lead: 1.7;
+  max-width: 34rem;
+  margin: 0 auto;
+  font-size: var(--scr-fs);
+  line-height: var(--scr-lead);
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-wrap: pretty;
+}
+
+.scr-size-0 { --scr-fs: 1rem; }
+.scr-size-1 { --scr-fs: 1.125rem; }
+.scr-size-2 { --scr-fs: 1.3125rem; }
+.scr-size-3 { --scr-fs: 1.5rem; }
+
+.scr-lead-0 { --scr-lead: 1.45; }
+.scr-lead-1 { --scr-lead: 1.7; }
+.scr-lead-2 { --scr-lead: 2; }
+
+/* The default reader follows the site-wide Aa menu. Explicit reader choices
+   stay local to the Scripture surface. */
+.scr-face-site,
+.scr-face-site * {
+  font-family: var(--font-reading);
+}
+.scr-face-dyslexic,
+.scr-face-dyslexic * {
+  font-family: var(--font-open-dyslexic), Verdana, Arial, sans-serif;
+}
+.scr-face-serif,
+.scr-face-serif * {
+  font-family: ui-serif, "Iowan Old Style", Georgia, "Times New Roman", serif;
+}
+.scr-face-sans,
+.scr-face-sans * {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.scr-contrast {
+  color: #16110a;
+  background: #fffdf7;
+  padding: 0.75rem 0.85rem;
+  border-radius: 10px;
+}
+.scr-contrast .scr-vnum {
+  color: #7a4a05;
+}
+
+/* ── A verse ───────────────────────────────────────────────────────────
+   Each verse is its own block with a hanging number, so the left edge of
+   the prose stays straight and the eye can fall down it. */
+.scr-v {
+  scroll-margin-top: 1rem;
+  /* Long chapters (Psalm 119 = 176 verses) stay cheap to lay out. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 4.5rem;
+}
+.scr-v:target .scr-verse,
+.scr-v.is-open .scr-verse {
+  background: color-mix(in oklab, var(--rubric) 8%, transparent);
+  border-radius: 2px;
+  box-shadow: 0 0 0 0.35rem color-mix(in oklab, var(--rubric) 8%, transparent);
+}
+.scr-v.is-picked .scr-verse {
+  background: color-mix(in oklab, var(--rubric) 13%, transparent);
+  border-radius: 2px;
+  box-shadow: 0 0 0 0.35rem color-mix(in oklab, var(--rubric) 13%, transparent);
+}
+/* The number hangs in the gutter, in the rubricator's red, so the text's left
+   edge stays straight and the eye can fall down it. */
+.scr-read-text {
+  max-width: calc(34rem + var(--scr-gutter));
+}
+/* The gutter lives on the verse block, not the article: .scr-v uses
+   content-visibility, whose paint containment clips anything positioned
+   outside its box — a number hung in the article's padding vanished and
+   could not be tapped. The number positions against the paragraph (the base
+   .scr-verse rule is position: relative), so it is offset back by the gutter
+   width into the block's padding, where it stays inside the clip. */
+.scr-read-text .scr-v {
+  position: relative;
+  padding-inline-start: var(--scr-gutter);
+}
+.scr-read-text .scr-verse {
+  position: relative;
+  margin: 0 0 0.75em;
+  padding-inline-start: 0;
+  text-indent: 0;
+  /* The base .scr-verse rule adds its own content-visibility, whose paint
+     containment would clip the number hung outside the paragraph. The .scr-v
+     wrapper already skips off-screen verses, so the paragraph can let go. */
+  content-visibility: visible;
+  contain-intrinsic-size: none;
+}
+.scr-read-text .scr-vnum {
+  position: absolute;
+  inset-inline-start: calc(-1 * var(--scr-gutter));
+  top: 0.38em;
+  width: calc(var(--scr-gutter) - 0.6rem);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--rubric);
+  font-family: var(--font-display);
+  font-variation-settings: var(--text-tune);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.72em;
+  line-height: 1;
+  font-variant-numeric: oldstyle-nums;
+  text-align: end;
+  text-indent: 0;
+  cursor: pointer;
+}
+/* The versal: the chapter's first letter set in gold leaf, bounded by an ink
+   line the way a scribe bounded the gold. High-contrast and flowing modes
+   set it as plain ink. */
+.scr-versal {
+  float: left;
+  margin: 0.08em 0.07em 0 0;
+  font-family: var(--font-display);
+  font-variation-settings: var(--display-tune);
+  font-weight: 600;
+  font-size: 3.1em;
+  line-height: 0.78;
+  background: linear-gradient(160deg, #f2dc8e 0%, var(--gold) 52%, #8f6d22 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--deep-gold);
+}
+.scr-contrast .scr-versal,
+html[data-a11y-contrast="high"] .scr-versal,
+.scr-flow .scr-versal {
+  float: none;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  background: none;
+  color: inherit;
+  -webkit-text-stroke: 0;
+}
+/* Documented WCAG 2.5.8 inline-text exception: a verse number is embedded in
+   the reading line and its left edge can sit at the viewport gutter. The
+   pseudo-element still expands the practical hit box to roughly 44x44 where
+   layout permits, without overlapping the adjacent verse text. Insets are in
+   rem so smaller reading text does not also shrink the available hit area. */
+.scr-read-text .scr-vnum::after {
+  content: "";
+  position: absolute;
+  inset: -0.75rem -0.4rem -0.75rem -0.9rem;
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-read-text .scr-vnum:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+.scr-read-text .scr-vnum:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.scr-gap {
+  color: var(--muted);
+}
+
+/* Flowing paragraphs: the same verses, read as prose. The verse being
+   studied becomes its own block so its panel has somewhere to live. */
+.scr-flow .scr-v {
+  display: inline;
+  content-visibility: visible;
+}
+.scr-flow .scr-verse {
+  display: inline;
+  padding-inline-start: 0;
+  text-indent: 0;
+}
+.scr-flow .scr-verse::after {
+  content: " ";
+}
+.scr-read-text.scr-flow {
+  max-width: 34rem;
+}
+.scr-read-text.scr-flow .scr-v {
+  padding-inline-start: 0;
+}
+.scr-flow .scr-vnum {
+  position: static;
+  inset-inline-start: auto;
+  top: auto;
+  width: auto;
+  margin-inline-end: 0.3em;
+  vertical-align: super;
+  font-size: 0.62em;
+  text-align: start;
+}
+.scr-flow .scr-v.is-open,
+.scr-flow .scr-v:target {
+  display: block;
+  margin: 0.75em 0;
+}
+
+/* On a phone the reading claims the page's side padding back. `.wrap` gives
+   every page 1.5rem of gutter, which is right for cards and wrong for a
+   column of prose — it cost 48px of an already tight measure. 0.75rem still
+   keeps the text off the bezel. Verified: 342px -> 366px, and one more word
+   per line in the widest offered reading face. */
+@media (max-width: 560px) {
+  .scr-read {
+    --scr-gutter: 2.2rem;
+  }
+  .scr-read-text {
+    margin-inline: -1.5rem;
+    padding-inline: 0.75rem;
+  }
+}
+
+.scr-read-hint {
+  max-width: 34rem;
+  margin: 1.25rem auto 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* ── Source-language layer ────────────────────────────────────────────
+   Loaded only when the reader asks for it. The English remains ordinary
+   selectable text; source words become generous, keyboard-visible targets
+   because each one opens real lexical and morphology data. */
+.scr-original-legend {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.2rem 1rem;
+  max-width: 44rem;
+  margin: 0 auto 1.25rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 8px;
+  background: color-mix(in oklab, var(--accent) 5%, var(--surface));
+  font-size: 0.84rem;
+}
+.scr-original-legend strong {
+  color: var(--ink);
+}
+.scr-original-legend span {
+  grid-column: 1;
+  color: var(--muted);
+}
+.scr-original-legend a {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: var(--accent);
+  font-weight: 750;
+  white-space: nowrap;
+}
+.scr-original {
+  max-width: 44rem;
+  margin: -0.25em auto 1.15em;
+}
+.scr-original-line {
+  padding: 0.5rem 0.7rem;
+  border-inline-start: 3px solid var(--accent);
+  background: color-mix(in oklab, var(--accent) 5%, transparent);
+  color: var(--ink);
+  font-family: "Times New Roman", "Noto Serif Hebrew", "SBL Hebrew", serif;
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  line-height: 1.9;
+  text-align: start;
+}
+.scr-original-line[lang="grc"] {
+  font-family: "Palatino Linotype", "Noto Serif", Georgia, serif;
+  font-size: clamp(1.12rem, 2.1vw, 1.34rem);
+}
+.scr-original-token {
+  display: inline;
+  margin-inline-end: 0.34em;
+}
+.scr-original-token.is-joined {
+  margin-inline-end: 0;
+}
+.scr-original-token button {
+  min-height: var(--control-target-min);
+  padding: 0.08em 0.12em;
+  border: 0;
+  border-bottom: 1px dotted color-mix(in srgb, var(--accent) 60%, transparent);
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+.scr-original-token button.is-selected {
+  background: color-mix(in oklab, var(--accent) 15%, transparent);
+  color: var(--accent-deep);
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-original-token button:hover {
+    background: color-mix(in oklab, var(--accent) 15%, transparent);
+    color: var(--accent-deep);
+  }
+}
+.scr-original-token button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.scr-word-inspector {
+  margin-top: 0.35rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-reading);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.scr-word-inspector-head {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--line);
+}
+.scr-word-inspector-head strong {
+  font-family: "Palatino Linotype", "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+.scr-word-inspector-head span {
+  color: var(--muted);
+}
+.scr-word-inspector-head button {
+  min-height: var(--control-target-min);
+  margin-inline-start: auto;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.scr-word-inspector dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 1rem;
+  margin: 0.75rem 0;
+}
+.scr-word-inspector dl > div {
+  min-width: 0;
+}
+.scr-word-inspector dt {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.scr-word-inspector dd {
+  margin: 0.1rem 0 0;
+  overflow-wrap: anywhere;
+}
+.scr-word-inspector p {
+  margin: 0;
+}
+.scr-word-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+}
+.scr-original-refnote {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-align: end;
+}
+.scr-original-setting-hint {
+  margin-top: -0.8rem;
+}
+
+/* Source-language lines are verse-aligned. If paragraph flow was previously
+   selected, keep that preference but temporarily restore verse blocks. */
+.scr-flow.scr-has-original .scr-v,
+.scr-flow.scr-has-original .scr-verse {
+  display: block;
+}
+.scr-flow.scr-has-original .scr-verse {
+  margin-bottom: 0.75em;
+  padding-inline-start: 1.85em;
+  text-indent: -1.85em;
+}
+
+@media (max-width: 560px) {
+  .scr-original-legend {
+    grid-template-columns: 1fr;
+  }
+  .scr-original-legend span,
+  .scr-original-legend a {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .scr-original-legend a {
+    min-height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    white-space: normal;
+  }
+  .scr-original {
+    margin-inline: -0.75rem;
+  }
+  .scr-word-inspector dl {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── The verse panel: inline, beneath its verse, never over it ──────── */
+.scr-vpanel {
+  margin: 0.35rem 0 1.1rem;
+  padding: 0.75rem 0.85rem 0.85rem;
+  border: 1px solid var(--line);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  text-indent: 0;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+}
+.scr-vpanel-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.scr-vpanel-tools .scr-btn {
+  min-height: 2.75rem;
+  padding-inline: 0.85rem;
+}
+.scr-refs-more {
+  margin-top: 0.5rem;
+  min-height: var(--control-target-min);
+  padding: 0.3rem 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.scr-vpanel-note {
+  margin: 0.4rem 0 0;
+  min-height: 1.2em;
+  font-size: 0.82rem;
+  color: var(--accent);
+}
+.scr-vpanel-heading,
+.scr-vpanel-empty {
+  margin: 0.5rem 0 0.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.scr-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scr-ref {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--control-target-min);
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+.scr-ref:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.scr-ref.is-open {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.scr-ref-plain {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--control-target-min);
+  padding: 0.3rem 0.7rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.scr-refquote {
+  margin: 0.6rem 0 0;
+  padding: 0.7rem 0.85rem;
+  border-inline-start: 3px solid var(--line);
+  background: color-mix(in oklab, var(--accent) 5%, transparent);
+  border-radius: 0 8px 8px 0;
+}
+.scr-refquote p {
+  margin: 0;
+}
+.scr-refquote footer {
+  margin-top: 0.45rem;
+  font-size: 0.85rem;
+}
+
+/* ── Below the reading: cheat sheet, map, onward ────────────────────── */
+.scr-read-after {
+  max-width: 40rem;
+  margin: 2.5rem auto 0;
+  padding-top: 0.5rem;
+}
+.scr-read-after-h {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+  color: var(--rubric);
+  font-style: italic;
+  font-weight: 450;
+  font-size: 1.15rem;
+  letter-spacing: 0;
+}
+.scr-read-after-h::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rubric);
+  opacity: 0.7;
+}
+.scr-threads-block {
+  margin: 1rem 0;
+}
+.scr-wide-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+.scr-wide-toggle:hover {
+  border-color: var(--accent);
+}
+.scr-wide-toggle small {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+/* Chapters that carry this idea — the computed counterpart to the curated
+   cross-reference map above it. Deliberately quieter than the guide: it is a
+   place to look, not a claim, and the styling should not argue otherwise.
+   Every colour is a shared token, so light and dark both inherit the reader's
+   own palette. */
+.scr-neighbours {
+  margin: 1rem 0;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.scr-neighbours-h {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+.scr-neighbour-list {
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.scr-neighbour-list li {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-height: 1.9rem;
+}
+.scr-neighbour-list a {
+  font-weight: 600;
+}
+.scr-neighbour-score {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.scr-neighbour-xref {
+  font-size: 0.78rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.05rem 0.5rem;
+}
+/* "In the unseen record": the words row keeps original script readable and
+   the count beside it, so a reader sees what the chapter's own text says
+   before following the link. */
+.scr-unseen-terms {
+  margin: 0.7rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+.scr-unseen-terms a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.scr-unseen-terms a:hover,
+.scr-unseen-terms a:focus-visible {
+  text-decoration: underline;
+}
+.scr-unseen-terms [lang="he"] {
+  font-size: 1.1em;
+}
+
+.scr-read-onward {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.scr-read-onward a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.scr-read-onward a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── The reading bar: the whole control surface, at the thumb ───────── */
+.scr-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  align-items: stretch;
+  gap: 0.3rem;
+  padding: 0.3rem 0.5rem calc(0.3rem + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+  /* Opaque, not translucent. A blurred bar with scripture ghosting through it
+     reads as a rendering fault; a solid bar reads as chrome. */
+  background: var(--paper);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.06);
+}
+.scr-bar-btn,
+.scr-bar-where {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.scr-bar-where {
+  flex: 1 1 auto;
+  gap: 0.3rem;
+  min-width: 0;
+  border-color: var(--line);
+  background: var(--surface);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-bar-btn:hover,
+  .scr-bar-where:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+.scr-bar-btn.is-on,
+.scr-bar-btn[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.scr-bar-btn.is-off {
+  color: var(--muted);
+  opacity: 0.4;
+}
+.scr-bar-aa {
+  font-weight: 700;
+}
+.scr-bar-worlds {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.scr-bar-caret {
+  font-size: 0.7em;
+  color: var(--muted);
+}
+
+@media (max-width: 360px) {
+  .scr-bar {
+    gap: 0.15rem;
+    padding-inline: 0.25rem;
+  }
+  .scr-bar-btn,
+  .scr-bar-where {
+    padding-inline: 0.35rem;
+  }
+  .scr-bar-worlds {
+    font-size: 0.68rem;
+  }
+}
+
+/* ── Sheets: navigation and settings only, never scripture ─────────── */
+.scr-sheet-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.scr-sheet-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  padding: 0;
+  background: rgba(20, 14, 4, 0.45);
+  cursor: pointer;
+}
+.scr-sheet-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(34rem, 100%);
+  max-height: min(82vh, 40rem);
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: 14px 14px 0 0;
+  background: var(--paper);
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.25);
+}
+.scr-sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.scr-sheet-head h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.scr-sheet-x {
+  min-height: 2.75rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.scr-sheet-x:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.scr-sheet-body {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem calc(1rem + env(safe-area-inset-right)) calc(1.25rem + env(safe-area-inset-bottom))
+    calc(1rem + env(safe-area-inset-left));
+}
+
+/* ── Settings widgets ──────────────────────────────────────────────── */
+.scr-set-row {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.scr-set-row legend {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.scr-seg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  width: 100%;
+}
+.scr-seg-btn {
+  flex: 1 1 auto;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-seg-btn:hover {
+    border-color: var(--accent);
+  }
+}
+.scr-seg-btn.is-on,
+.scr-seg-btn[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+.scr-set-faces {
+  display: grid;
+  gap: 0.4rem;
+}
+.scr-face-opt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-height: 3.25rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  text-align: start;
+  cursor: pointer;
+}
+.scr-face-opt.is-on,
+.scr-face-opt[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+/* Each option previews the face it selects before it is chosen. Targeting the
+   sample itself overrides the interface face inherited from its button. */
+.scr-face-sample-site {
+  font-family: var(--font-reading);
+}
+.scr-face-sample-dyslexic {
+  font-family: var(--font-open-dyslexic), Verdana, Arial, sans-serif;
+}
+.scr-face-sample-serif {
+  font-family: ui-serif, "Iowan Old Style", Georgia, "Times New Roman", serif;
+}
+.scr-face-sample-sans {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+.scr-face-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.scr-face-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.scr-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+}
+.scr-switch input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--accent);
+}
+.scr-field {
+  display: grid;
+  gap: 0.25rem;
+  flex: 1 1 12rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.scr-field select {
+  min-height: 2.75rem;
+}
+.scr-voice-controls {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  width: 100%;
+}
+.scr-narrator-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  color: var(--ink);
+}
+.scr-narrator-card strong {
+  font-size: 0.95rem;
+}
+.scr-narrator-card span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+.scr-voice-controls .scr-field {
+  min-width: 0;
+}
+.scr-voice-preview {
+  flex: 0 0 auto;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .scr-voice-preview:hover {
+    border-color: var(--accent);
+  }
+}
+.scr-voice-preview.is-on,
+.scr-voice-preview[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.scr-set-hint,
+.scr-set-foot {
+  width: 100%;
+  margin: 0.25rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+@media (max-width: 420px) {
+  .scr-voice-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .scr-voice-preview {
+    width: 100%;
+  }
+}
+
+/* ── Go-to sheet ───────────────────────────────────────────────────── */
+.scr-pick-h {
+  margin: 0 0 0.6rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.scr-pick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2.75rem, 1fr));
+  gap: 0.35rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+.scr-pick-ch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+.scr-pick-ch:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.scr-pick-ch.is-here {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+}
+.scr-pick-books {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scr-pick-book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.scr-pick-book:hover {
+  background: var(--surface);
+  color: var(--accent);
+}
+.scr-pick-book small {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.scr-pick-book.is-here {
+  background: color-mix(in oklab, var(--accent) 12%, transparent);
+  font-weight: 600;
+}
+
+/* ── Multi-verse selection bar, docked above the reading bar ────────── */
+.scr-selbar {
+  position: fixed;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: calc(3.5rem + 0.4rem + env(safe-area-inset-bottom));
+  z-index: 45;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  background: var(--paper);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  font-size: 0.88rem;
+}
+.scr-selbar-ref {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.scr-selbar .scr-btn {
+  min-height: 2.5rem;
+}
+.scr-selbar-note {
+  color: var(--accent);
+  min-height: 1em;
+}
+
+/* ── Wider screens ──────────────────────────────────────────────────────
+   The bar stays a full-width bottom bar rather than becoming a floating
+   pill. A pill parked at bottom-right sits *on top of* the centred reading
+   column at every window width between 900px and about 1500px — it cut the
+   line "That which is born of the flesh is flesh" in half. A bordered bar at
+   the foot of the window is understood as chrome; a solid slab dropped over a
+   sentence is understood as a bug. Its contents align to the reading measure
+   so the controls sit under the column they control. */
+@media (min-width: 900px) {
+  .scr-bar {
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.4rem 1.5rem;
+  }
+  .scr-bar-where {
+    flex: 0 1 14rem;
+  }
+  .scr-bar-btn {
+    flex: 0 0 auto;
+    padding-inline: 1rem;
+  }
+  .scr-sheet-layer {
+    align-items: center;
+  }
+  .scr-sheet-panel {
+    border-bottom: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .scr-selbar {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: calc(100vw - 3rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scr-bar,
+  .scr-sheet-panel,
+  .scr-vpanel {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* ── Tradition briefing ──────────────────────────────────────────
+   A canon is a received reading practice, not just a larger or
+   smaller book count. These pages keep formation, use, variation,
+   and hosted-text limits visible around the shelf itself. */
+.scr-trad-oneline {
+  max-width: 52rem;
+  margin-bottom: 0.9rem;
+}
+.scr-trad-orient {
+  max-width: 48rem;
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.scr-trad-caution {
+  max-width: 50rem;
+  margin: 1.5rem 0;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: color-mix(in srgb, var(--surface) 76%, transparent);
+}
+.scr-trad-caution h2,
+.scr-trad-section-head > p,
+.scr-trad-hosting-kicker {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.scr-trad-caution p {
+  margin: 0;
+  line-height: 1.65;
+}
+.scr-trad-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+  gap: 0;
+  margin: 1.75rem 0 2.25rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.scr-trad-facts > div {
+  min-width: 0;
+  padding: 1rem 1.1rem;
+  border-right: 1px solid var(--line);
+}
+.scr-trad-facts > div:last-child {
+  border-right: 0;
+}
+.scr-trad-facts dt {
+  margin-bottom: 0.25rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.scr-trad-facts dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.scr-trad-evidence {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+.scr-trad-evidence strong {
+  color: var(--ink);
+  font-weight: 650;
+}
+.scr-trad-evidence a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+.scr-trad-formation {
+  max-width: 58rem;
+  margin: 2.25rem 0;
+}
+.scr-trad-formation > h2,
+.scr-trad-section-head h2,
+.scr-trad-hosting h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 3.5vw, 1.65rem);
+}
+.scr-trad-formation > ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0;
+  margin: 1rem 0 0;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  list-style: none;
+  overflow: hidden;
+  counter-reset: tradition-moment;
+}
+.scr-trad-formation > ol > li {
+  position: relative;
+  min-width: 0;
+  padding: 1.05rem 1.1rem 1.15rem;
+  border-right: 1px solid var(--line);
+  counter-increment: tradition-moment;
+}
+.scr-trad-formation > ol > li:last-child {
+  border-right: 0;
+}
+.scr-trad-formation > ol > li::before {
+  content: counter(tradition-moment, decimal-leading-zero);
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  color: color-mix(in srgb, var(--accent) 42%, transparent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.scr-trad-date {
+  margin: 0 1.8rem 0.55rem 0;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.scr-trad-formation h3,
+.scr-trad-card-grid h3,
+.scr-trad-reception-grid h3,
+.scr-trad-detail-list h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+.scr-trad-formation li > p:not(.scr-trad-date, .scr-trad-evidence),
+.scr-trad-card-grid li > p:not(.scr-trad-evidence, .scr-trad-books),
+.scr-trad-reception-grid li > p:not(.scr-trad-evidence, .scr-trad-books),
+.scr-trad-detail-list li > p:not(.scr-trad-evidence, .scr-trad-books) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.91rem;
+  line-height: 1.58;
+}
+.scr-trad-section {
+  max-width: 58rem;
+  margin: 2.5rem 0;
+}
+.scr-trad-section-head {
+  margin-bottom: 0.9rem;
+}
+.scr-trad-card-grid,
+.scr-trad-reception-grid,
+.scr-trad-detail-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scr-trad-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.7rem;
+}
+.scr-trad-card-grid > li,
+.scr-trad-reception-grid > li {
+  min-width: 0;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.scr-trad-card-grid > li:first-child {
+  border-top: 3px solid var(--accent);
+}
+.scr-trad-reception-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.scr-trad-reception-grid > li {
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-radius: 0;
+}
+.scr-trad-reception-grid > li:last-child {
+  border-right: 0;
+}
+.scr-trad-books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.75rem 0 0;
+}
+.scr-trad-books a,
+.scr-trad-books span {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.15rem 0.55rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+  text-decoration: none;
+}
+.scr-trad-books a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+/* The briefing follows the shelf; a rule marks where the book list ends. */
+.scr-book-nav + .scr-trad-brief {
+  margin-top: 3rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+.scr-trad-deep {
+  max-width: 54rem;
+  margin: 2.5rem 0;
+}
+.scr-trad-detail-list {
+  padding: 0.2rem 1.1rem 1rem;
+}
+.scr-trad-detail-list > li {
+  padding: 0.9rem 0;
+}
+.scr-trad-detail-list > li + li {
+  border-top: 1px solid color-mix(in srgb, var(--line) 62%, transparent);
+}
+.scr-trad-deep .scr-brief-positions .scr-trad-evidence {
+  margin-top: 0.45rem;
+}
+.scr-trad-hosting {
+  margin: 1rem 0;
+  padding: 1.15rem 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 62%, var(--line));
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+}
+.scr-trad-hosting > p:not(.scr-trad-hosting-kicker, .scr-trad-evidence) {
+  max-width: 47rem;
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.scr-trad-hosting dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+.scr-trad-hosting dl > div {
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+}
+.scr-trad-hosting dt {
+  margin-bottom: 0.25rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.scr-trad-hosting dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .scr-trad-facts,
+  .scr-trad-formation > ol,
+  .scr-trad-reception-grid {
+    grid-template-columns: 1fr;
+  }
+  .scr-trad-facts > div,
+  .scr-trad-formation > ol > li,
+  .scr-trad-reception-grid > li {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .scr-trad-facts > div:last-child,
+  .scr-trad-formation > ol > li:last-child,
+  .scr-trad-reception-grid > li:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* ── Book briefing ───────────────────────────────────────────────
+   The context before verse 1: what this book is, who is in it, what
+   kind of writing it is, and where honest readers disagree. */
+.scr-brief-oneline {
+  margin-bottom: 1rem;
+}
+.scr-brief-orient {
+  max-width: 46rem;
+  margin: 0 0 1.5rem;
+}
+.scr-brief-where {
+  max-width: 46rem;
+  margin: 1.5rem 0;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  border-radius: 0 8px 8px 0;
+}
+.scr-brief-where h2 {
+  margin: 0 0 0.45rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.scr-brief-where p {
+  margin: 0;
+}
+.scr-brief-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.85rem 1.5rem;
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.scr-brief-facts dt {
+  font-size: 0.74rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+.scr-brief-facts dd {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+.scr-brief-language {
+  max-width: 52rem;
+  margin: 1.75rem 0 2rem;
+  padding: 1.2rem 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+}
+.scr-brief-language > h2 {
+  margin: 0 0 1rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.scr-brief-language-layers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem 1.5rem;
+  margin: 0;
+}
+.scr-brief-language-layers dt {
+  margin-bottom: 0.2rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.scr-brief-language-layers dd {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+.scr-brief-language-features,
+.scr-brief-language-history {
+  margin-top: 1.2rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+}
+.scr-brief-language-features > h3,
+.scr-brief-language-history > h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+.scr-brief-language-features > ul,
+.scr-brief-language-history > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scr-brief-language-features > ul > li,
+.scr-brief-language-history > ul > li {
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+}
+.scr-brief-language-features > ul > li:first-child {
+  grid-column: 1 / -1;
+  border-color: color-mix(in srgb, var(--accent) 58%, var(--line));
+}
+.scr-brief-language-features h4,
+.scr-brief-language-history h4 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+.scr-brief-language-features p,
+.scr-brief-language-history p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.scr-brief-language-features p + p,
+.scr-brief-language-history p + p {
+  margin-top: 0.55rem;
+}
+.scr-brief-language-features strong,
+.scr-brief-language-history strong {
+  color: var(--ink);
+}
+.scr-brief-language-features .scr-brief-language-original,
+.scr-brief-language-history .scr-brief-language-original {
+  color: var(--ink);
+  font-weight: 650;
+}
+.scr-brief-language-features .scr-brief-language-caution {
+  padding-top: 0.55rem;
+  border-top: 1px solid color-mix(in srgb, var(--line) 65%, transparent);
+}
+.scr-brief-language-features .scr-brief-refs {
+  margin-top: 0.7rem !important;
+}
+.scr-brief-language-examples {
+  margin-top: 1.2rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+}
+.scr-brief-language-examples h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+.scr-brief-language-examples ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scr-brief-language-examples li {
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+}
+.scr-brief-language-examples p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.scr-brief-language-examples .scr-brief-language-word {
+  margin-bottom: 0.35rem;
+  color: var(--ink);
+  font-weight: 650;
+}
+.scr-brief-language-word a {
+  font-variant-numeric: tabular-nums;
+}
+.scr-brief-language .scr-brief-evidence {
+  margin-top: 0.65rem;
+  font-size: 0.78rem;
+}
+.scr-brief-evidence a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+.scr-brief-form,
+.scr-brief-purpose {
+  max-width: 46rem;
+  margin: 1.5rem 0 2rem;
+}
+.scr-brief-form h2,
+.scr-brief-purpose h2,
+.scr-brief-next h2 {
+  margin: 0 0 0.45rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.scr-brief-form-name {
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+}
+.scr-brief-purpose p {
+  margin: 0;
+}
+
+/* Chapter grid grouped by the book's own structure. */
+.scr-shape {
+  margin: 2rem 0;
+}
+.scr-shape-head {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.9rem;
+}
+.scr-shape-part + .scr-shape-part {
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+.scr-shape-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.8rem;
+}
+.scr-shape-label h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.scr-shape-range {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+.scr-shape-note {
+  max-width: 46rem;
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+.scr-shape .scr-chapter-grid {
+  margin: 0.85rem 0 0;
+}
+/* The briefing follows the chapters; a rule marks where the grid ends. */
+.scr-shape + .scr-brief,
+.scr-chapter-grid + .scr-brief {
+  margin-top: 3rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+
+/* Deep sections — plain <details>, no JavaScript. */
+.scr-brief-deep {
+  margin: 2rem 0;
+  max-width: 52rem;
+}
+.scr-brief-block {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  margin-bottom: 0.6rem;
+}
+.scr-brief-block > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.85rem 1.1rem;
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+.scr-brief-block > summary::-webkit-details-marker {
+  display: none;
+}
+.scr-brief-block > summary::after {
+  content: "+";
+  color: var(--accent);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+.scr-brief-block[open] > summary::after {
+  content: "–";
+}
+.scr-brief-block > summary:hover {
+  color: var(--accent);
+}
+.scr-brief-count {
+  margin-left: auto;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.1rem 0.55rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+.scr-brief-block[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+.scr-brief-cast,
+.scr-brief-snags,
+.scr-brief-how,
+.scr-brief-sources {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  list-style: none;
+}
+.scr-brief-cast > div + div,
+.scr-brief-snags > li + li,
+.scr-brief-how > li + li,
+.scr-brief-sources > li + li {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+}
+.scr-brief-cast dt {
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+.scr-brief-cast dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+.scr-brief-snag {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+}
+.scr-brief-help,
+.scr-brief-grounds,
+.scr-brief-source-says {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+.scr-brief-how p {
+  margin: 0;
+}
+.scr-brief-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.5rem !important;
+}
+.scr-brief-ref {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.1rem 0.55rem;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  text-decoration: none;
+}
+a.scr-brief-ref:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.scr-brief-source-label {
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+}
+
+/* The honesty layer. */
+.scr-brief-debate-note {
+  margin: 0;
+  padding: 0.9rem 1.1rem 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+.scr-brief-debate {
+  padding: 1rem 1.1rem;
+}
+.scr-brief-debate + .scr-brief-debate {
+  border-top: 1px solid var(--line);
+}
+.scr-brief-debate h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.02rem;
+}
+.scr-brief-settled,
+.scr-brief-sowhat {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.scr-brief-sowhat {
+  margin: 0.85rem 0 0;
+}
+.scr-brief-positions {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.85rem;
+}
+.scr-brief-view {
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+}
+.scr-brief-next {
+  max-width: 46rem;
+  margin: 2rem 0 1rem;
+}
+.scr-brief-next p {
+  margin: 0;
+}
+.scr-brief-tradition {
+  max-width: 46rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 560px) {
+  .scr-brief-facts {
+    grid-template-columns: 1fr;
+    padding: 0.9rem 1rem;
+  }
+  .scr-brief-block > summary {
+    padding: 0.75rem 0.9rem;
+  }
+}
+
+/* Print / reader-mode: just the scripture. */
+@media print {
+  .scr-bar,
+  .scr-selbar,
+  .scr-sheet-layer,
+  .scr-gloss,
+  .scr-rh-crumbs,
+  .scr-rh-tools,
+  .scr-read-hint,
+  .scr-vpanel,
+  .scr-threads-block {
+    display: none !important;
+  }
+  .scr-read {
+    padding-bottom: 0;
+  }
+  .scr-read-text {
+    max-width: none;
+    font-size: 11pt;
+  }
+}
+
+/* ── Cross-reference graph page (/scriptures/graph) ──────────────────────
+   Algorithm output rendered with the shared theme vocabulary: every color
+   comes from the site variables, so light, dark, and high-contrast a11y
+   themes all apply without per-page overrides. */
+.scr-graph {
+  max-width: 46rem;
+}
+.scr-graph-method {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+.scr-graph-method-item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 0.85rem 1rem;
+}
+.scr-graph-method-item dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+.scr-graph-method-item dd {
+  margin: 0.3rem 0 0;
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+.scr-graph-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.scr-graph table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.scr-graph th,
+.scr-graph td {
+  padding: 0.5rem 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+.scr-graph thead th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  background: var(--surface);
+}
+.scr-graph tbody tr:last-child td {
+  border-bottom: none;
+}
+.scr-graph tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--surface) 55%, transparent);
+}
+.scr-graph .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+.scr-graph td a {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+.scr-graph-threads {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+.scr-graph-threads li {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 0.85rem 1rem;
+}
+.scr-graph-thread-meta {
+  margin: 0 0 0.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.scr-graph-thread-chain {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+.scr-graph-thread-chain a {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+.scr-graph-footer {
+  border-top: 1px solid var(--line);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.scr-graph-footer code {
+  font-size: 0.78rem;
+}
+
+/* Scripture Path Tracer */
+.scr-path-tracer {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin: 2rem 0 3rem;
+}
+.scr-path-tracer-head {
+  margin-bottom: 1.25rem;
+}
+.scr-path-tracer-sub {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0.4rem 0 0;
+}
+.scr-path-presets {
+  margin: 1.25rem 0;
+}
+.scr-path-presets-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.scr-path-presets-scroll {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+.scr-path-preset-chip {
+  min-height: 44px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.scr-path-preset-chip:hover {
+  border-color: var(--accent);
+}
+.scr-path-preset-chip.is-active {
+  border-color: var(--accent-deep);
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+}
+.scr-path-preset-title {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.scr-path-preset-refs {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.scr-path-form {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.scr-path-input-group {
+  flex: 1 1 12rem;
+  min-width: min(12rem, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.scr-path-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.scr-path-input {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  font: inherit;
+  font-size: 0.92rem;
+}
+.scr-path-input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+.scr-path-swap-btn {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  color: var(--ink);
+}
+.scr-path-swap-btn:hover {
+  border-color: var(--accent);
+}
+.scr-path-submit-btn {
+  min-height: 44px;
+  background: var(--accent-deep);
+  color: var(--accent-ink);
+  border: none;
+  border-radius: 8px;
+  padding: 0.68rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: opacity 0.15s;
+}
+.scr-path-submit-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+.scr-path-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.scr-path-error {
+  background: color-mix(in srgb, var(--rubric) 12%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--rubric) 45%, var(--line));
+  color: var(--ink);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.88rem;
+}
+.scr-path-error p {
+  margin: 0;
+}
+.scr-path-error-retry {
+  min-height: 44px;
+  margin-top: 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 0.5rem 0.8rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.scr-path-result {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.scr-path-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.scr-path-theme-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-deep);
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.35rem;
+}
+.scr-path-result-title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--ink);
+}
+.scr-path-result-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.scr-path-hops-pill {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--ink) 12%, var(--surface));
+  padding: 0.3rem 0.65rem;
+  border-radius: 2px;
+}
+.scr-path-copy-btn {
+  min-height: 44px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 6px;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+}
+.scr-path-copy-btn:hover {
+  border-color: var(--accent);
+}
+.scr-path-preset-chip:focus-visible,
+.scr-path-input:focus-visible,
+.scr-path-swap-btn:focus-visible,
+.scr-path-submit-btn:focus-visible,
+.scr-path-copy-btn:focus-visible,
+.scr-path-error-retry:focus-visible,
+.scr-path-step-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+.scr-path-chain {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.scr-path-step {
+  display: flex;
+  flex-direction: column;
+}
+.scr-path-step-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  padding: 1rem 1.25rem;
+}
+.scr-path-step-badge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.scr-path-step-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: var(--line);
+  color: var(--muted);
+}
+.scr-path-step-badge.origin {
+  background: color-mix(in srgb, var(--accent) 16%, var(--surface));
+  color: var(--ink);
+}
+.scr-path-step-badge.destination {
+  background: color-mix(in srgb, var(--accent) 24%, var(--surface));
+  color: var(--ink);
+}
+.scr-path-step-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  text-decoration: none;
+}
+.scr-path-step-link:hover {
+  text-decoration: underline;
+}
+.scr-path-step-snippet {
+  margin: 0;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.6;
+  border-left: 3px solid var(--accent);
+  padding-left: 0.75rem;
+}
+.scr-path-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0;
+}
+.scr-path-connector-line {
+  width: 2px;
+  height: 12px;
+  background: var(--line);
+}
+.scr-path-connector-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 0.1rem 0.5rem;
+  border-radius: 2px;
+  margin: 0.15rem 0;
+}
+
+@media (max-width: 30rem) {
+  .scr-path-tracer {
+    padding: 1rem;
+  }
+  .scr-path-input-group,
+  .scr-path-submit-btn {
+    flex-basis: 100%;
+  }
+  .scr-path-submit-btn {
+    width: 100%;
+  }
+  .scr-path-step-badge-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+  }
+}
+
+/* =========================================================================
+   Omni-Corpus Conceptual Resonance Matrix (7-Horizon Radar)
+   ========================================================================= */
+
+.scr-resonance-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.scr-resonance-matrix {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.scr-resonance-standalone {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.scr-resonance-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.scr-resonance-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.scr-resonance-kicker {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.scr-resonance-title {
+  margin: 0;
+  font-size: clamp(1.4rem, 4vw, 1.85rem);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.scr-resonance-lead {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+.scr-resonance-form {
+  margin-top: 0.5rem;
+}
+
+.scr-resonance-input-wrap {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.scr-resonance-input {
+  flex: 1 1 320px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.scr-resonance-input:focus {
+  border-color: var(--accent);
+}
+
+.scr-resonance-submit {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.scr-resonance-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.scr-resonance-sparks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.scr-resonance-sparks-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.scr-resonance-spark-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.scr-spark-chip {
+  appearance: none;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.65rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.scr-spark-chip:hover,
+.scr-spark-chip:focus-visible {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.scr-spark-chip.is-active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.scr-resonance-status {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: var(--bg);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+
+.scr-resonance-spinner {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid var(--line);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: scr-spin 0.8s linear infinite;
+}
+
+@keyframes scr-spin {
+  to { transform: rotate(360deg); }
+}
+
+.scr-resonance-meta-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+
+.scr-resonance-epicenter {
+  color: var(--muted);
+}
+
+/* 7-Horizon Chronological Radar Spectrum */
+.scr-radar-spectrum {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.scr-radar-bars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .scr-radar-bars-grid {
+    grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  }
+}
+
+.scr-radar-col {
+  appearance: none;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.65rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  min-height: 190px;
+  justify-content: flex-end;
+}
+
+.scr-radar-col:hover,
+.scr-radar-col:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.scr-radar-col.is-selected {
+  border-color: var(--accent);
+  background: var(--surface);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.scr-radar-col.is-peak {
+  border-color: var(--accent);
+}
+
+.scr-radar-meter-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.scr-radar-meter-bar {
+  width: 22px;
+  background: var(--line);
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+}
+
+.scr-radar-col.is-selected .scr-radar-meter-bar,
+.scr-radar-col.is-peak .scr-radar-meter-bar {
+  background: var(--accent);
+}
+
+.scr-radar-meter-val {
+  position: absolute;
+  top: -1.3rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.scr-radar-col-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.15rem;
+  width: 100%;
+}
+
+.scr-radar-col-name {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.scr-radar-col-era {
+  font-size: 0.65rem;
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+.scr-horizon-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.scr-horizon-btn {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 2px;
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.scr-horizon-btn.is-active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.scr-horizon-detail {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.scr-horizon-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-horizon-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.scr-horizon-heading {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 1.3rem;
+  color: var(--ink);
+}
+
+.scr-horizon-desc {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.scr-horizon-score-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.scr-horizon-score-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.scr-horizon-score-pct {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.scr-horizon-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.scr-evidence-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+  transition: border-color 0.15s ease;
+}
+
+.scr-evidence-card:hover {
+  border-color: var(--accent);
+}
+
+.scr-evidence-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.scr-evidence-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.scr-evidence-horizon-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--line);
+  color: var(--ink);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.scr-evidence-sub {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.scr-evidence-link {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.scr-evidence-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.scr-evidence-preview {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.scr-evidence-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+}
+
+.scr-evidence-score {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.scr-evidence-action {
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.scr-evidence-action:hover {
+  text-decoration: underline;
+}
+
+.scr-horizon-all-view {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* =========================================================================
+   Multi-Canonicity & Tradition Matrix Explorer
+   ========================================================================= */
+
+.scr-canons-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.scr-matrix-section {
+  margin: 3rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.scr-matrix-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.scr-matrix-lead {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+.scr-matrix-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.scr-matrix-toggle-btn {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.scr-matrix-toggle-btn.is-active,
+.scr-matrix-toggle-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+/* Comparator Panel */
+.scr-comparator-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  animation: scr-fade-in 0.25s ease-out;
+}
+
+@keyframes scr-fade-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scr-comparator-head h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.25rem;
+}
+
+.scr-comparator-head p {
+  margin: 0 0 1.25rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.scr-comparator-selectors {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.scr-comparator-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.scr-comparator-col label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.scr-comparator-select {
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-width: 220px;
+}
+
+.scr-comparator-vs {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding-top: 1rem;
+}
+
+.scr-comparator-presets {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--line);
+}
+
+.scr-comparator-preset-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 0.25rem;
+}
+
+.scr-comparator-diff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.scr-diff-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.scr-diff-card h4 {
+  margin: 0 0 0.75rem;
+  font-size: 0.98rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+
+.scr-diff-empty {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.scr-diff-note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.scr-diff-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.scr-diff-book-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.88rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.scr-diff-book-link:hover {
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.scr-diff-book-link span {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Toolbar Filters */
+.scr-matrix-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.scr-matrix-trad-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.scr-filter-pill {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 2px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.scr-filter-pill.is-active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.scr-matrix-status-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.scr-status-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.scr-status-chip {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.78rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.scr-status-chip:hover,
+.scr-status-chip.is-active {
+  color: var(--ink);
+  border-color: var(--ink);
+  background: var(--surface);
+}
+
+.scr-matrix-search-box {
+  flex: 1 1 240px;
+  max-width: 340px;
+}
+
+.scr-matrix-search-input {
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  outline: none;
+}
+
+.scr-matrix-search-input:focus {
+  border-color: var(--accent);
+}
+
+/* Comparative Matrix Table */
+.scr-matrix-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  margin-bottom: 2rem;
+}
+
+.scr-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.scr-matrix-table th {
+  background: var(--surface);
+  padding: 0.75rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-matrix-table td {
+  padding: 0.75rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+.scr-matrix-row {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.scr-matrix-row:hover {
+  background: var(--surface);
+}
+
+.scr-matrix-row.is-selected {
+  background: var(--surface);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.scr-col-book {
+  min-width: 200px;
+}
+
+.scr-book-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.scr-book-name {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.scr-book-cat-tag {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.scr-col-trad {
+  text-align: center;
+  font-weight: 700;
+  min-width: 55px;
+}
+
+.scr-check-yes {
+  color: #10b981;
+  font-size: 1.05rem;
+}
+
+.scr-check-no {
+  color: var(--muted);
+  font-size: 0.9rem;
+  opacity: 0.4;
+}
+
+.scr-col-witness {
+  min-width: 150px;
+}
+
+.scr-witness-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.scr-witness-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.scr-witness-dss {
+  border-color: #b45309;
+  color: #92400e;
+}
+
+.scr-witness-lxx {
+  border-color: #3b82f6;
+  color: #1d4ed8; /* 5.4:1 on the leaf surface; blue-600 fell to 4.2:1 */
+}
+
+.scr-witness-mt {
+  border-color: #8b5cf6;
+  color: #6d28d9; /* 5.7:1 on the leaf surface */
+}
+
+html[data-a11y-theme="dark"] .scr-witness-dss {
+  color: #fbbf24;
+}
+
+html[data-a11y-theme="dark"] .scr-witness-lxx {
+  color: #93c5fd;
+}
+
+html[data-a11y-theme="dark"] .scr-witness-mt {
+  color: #c4b5fd;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-a11y-theme="system"] .scr-witness-dss {
+    color: #fbbf24;
+  }
+
+  html[data-a11y-theme="system"] .scr-witness-lxx {
+    color: #93c5fd;
+  }
+
+  html[data-a11y-theme="system"] .scr-witness-mt {
+    color: #c4b5fd;
+  }
+}
+
+.scr-col-action {
+  text-align: right;
+  min-width: 80px;
+}
+
+.scr-read-btn {
+  font-size: 0.78rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.scr-read-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Detail Drawer */
+.scr-book-detail-drawer {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  animation: scr-fade-in 0.2s ease-out;
+}
+
+.scr-drawer-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-drawer-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.scr-drawer-head h3 {
+  margin: 0.2rem 0 0;
+  font-size: 1.35rem;
+}
+
+.scr-drawer-close {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.scr-drawer-close:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.scr-drawer-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.scr-drawer-section h4 {
+  margin: 0 0 0.25rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.scr-drawer-section p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.scr-drawer-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.scr-primary-btn {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Historical Milestones Accordion */
+.scr-milestones-accordion {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 2rem;
+}
+
+.scr-milestones-accordion summary {
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.scr-milestones-hint {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.scr-milestones-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.scr-milestone-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .scr-milestone-item {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+}
+
+.scr-milestone-date-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+}
+
+.scr-milestone-date {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.scr-milestone-trad {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.scr-milestone-content h4 {
+  margin: 0 0 0.25rem;
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+
+.scr-milestone-content p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+/* Find is a reading workspace, with its own source and research navigation. */
+.world-scr main:has([data-find-workspace]) { padding-top: 0; }
+.world-scr main > .wrap:has(> [data-find-workspace]) { display: block; max-width: 1400px; padding-inline: clamp(1rem,3vw,2.5rem); }
+.world-scr main > .wrap:has(> [data-find-workspace]) > :is(.world-guide,.world-next,.local-research-shortcut) { display: none; }

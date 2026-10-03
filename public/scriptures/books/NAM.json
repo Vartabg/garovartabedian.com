@@ -1,0 +1,439 @@
+{
+  "book": "NAM",
+  "bookName": "Nahum",
+  "oneLine": "Prophetic poetry portrays Nineveh’s downfall as the end of a violent imperial power and a promise of relief for Judah.",
+  "orient": "Nahum moves from a terrifying portrait of divine power to the siege and humiliation of Nineveh. Its poems alternate between threats to the city and hope for those under its domination. Battle sounds, sudden commands, animal images, and changes of addressee make the scenes move quickly. The relief at oppression ending sits beside disturbing depictions of violence, and reading the book means attending to both.",
+  "whereYouAre": "The setting is the seventh-century BCE world of Assyria and Judah. Nineveh is the Assyrian imperial capital in northern Mesopotamia, in present-day Iraq; Assyria is the larger kingdom and empire. The poems address a city, its ruler, and the people threatened by its power, rather than treating every inhabitant as the same figure. Judah is named as a recipient of good news in 1:15, and the king of Assyria is addressed at the close in 3:18.",
+  "facts": {
+    "writtenBy": "The heading attributes the vision to Nahum the Elkoshite. It gives no biography of the prophet and does not identify who arranged the book in its final form.",
+    "writtenWhen": "The conventional setting is between the Assyrian sack of Thebes in 663 BCE, recalled as a past catastrophe, and the fall of Nineveh in 612 BCE, announced in the poetry. This interval is inferred from the historical allusions and a reading of the poems as anticipating Nineveh’s fall. The book has no dated superscription establishing an exact year or the date of its final arrangement.",
+    "writtenFor": "Judah is directly addressed with news of relief. Nineveh and Assyrian power are the main targets of the poems; these literary addresses do not establish that Nahum delivered them in person in Nineveh.",
+    "place": "The poems concern Judah and the Assyrian capital Nineveh, with No-Amon in Egypt recalled as a comparison. The book does not identify its place of composition.",
+    "covers": "Divine power and refuge; threats and release from oppression; Nineveh’s siege, flight, and plunder; accusations against the city; Thebes as a warning; failed defenses; and a final address to Assyria’s king.",
+    "size": "3 chapters and 47 verses, with 1,188 words in the World English Bible. Brenton places the chapter boundary differently while retaining the same total verse count."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "web-nahum"
+    ],
+    "writtenWhen": [
+      "web-nahum",
+      "usccb-nahum-intro",
+      "usccb-nahum-3",
+      "bm-nineveh-fall"
+    ],
+    "writtenFor": [
+      "web-nahum"
+    ],
+    "place": [
+      "web-nahum",
+      "usccb-nahum-intro",
+      "usccb-nahum-3"
+    ],
+    "covers": [
+      "web-nahum"
+    ],
+    "size": [
+      "web-nahum",
+      "english-nahum"
+    ]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew, predominantly prophetic poetry. The book combines a heading, a hymn-like opening, rapid battle scenes, taunts, and speeches presented as God’s words.",
+    "register": "Urgent, accusatory, and vivid. Repeated words intensify the opening; short phrases accelerate the siege; questions and mocking commands undermine the city’s confidence.",
+    "spokenWorld": "Judah and Assyria form the political world of the poem. Its literary Hebrew does not establish which languages every inhabitant of either country used in daily life.",
+    "readerSignal": "Follow names, commands, pronouns, and the formulas introducing divine speech. Identify who is speaking and who is being addressed before treating a threat or assurance as continuous with the previous line.",
+    "englishLayer": "WEB, KJV, and Douay-Rheims divide Nahum into chapters of 15, 13, and 19 verses. Brenton, an English translation of the Greek Septuagint, divides them 14, 14, and 19. Most of WEB 1:15 appears at Brenton 2:1, while its concluding thought is represented at the beginning of Brenton 2:2. In most of chapter 2, Brenton’s verse numbers are one higher than WEB’s, but some phrases cross those boundaries. References here follow WEB numbering.",
+    "textualHistory": [
+      {
+        "label": "The Hebrew poetic book",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The heading presents a vision attributed to Nahum, and the Hebrew book develops its argument through sound, repetition, direct address, and imagery. Its historical allusions place the poetry in relation to Assyrian power; they do not provide a colophon dating its final arrangement.",
+        "sourceIds": [
+          "web-nahum",
+          "hebrew-nahum"
+        ]
+      },
+      {
+        "label": "The Greek tradition in Brenton’s English",
+        "language": "Greek Septuagint, represented in English translation",
+        "role": "translation",
+        "description": "Brenton preserves another form of the text in English. Its chapter boundary differs from WEB’s, and differences also occur within verses: Brenton 2:8 speaks of an exposed foundation where WEB 2:7 begins with a decree and a female figure being carried away. The wording needs comparison as well as the numbers.",
+        "sourceIds": [
+          "english-nahum"
+        ]
+      },
+      {
+        "label": "Difficult readings in English editions",
+        "language": "World English Bible, King James Version, Douay-Rheims, and Brenton",
+        "role": "translation",
+        "description": "At 2:7, KJV prints Huzzab, while WEB begins “It is decreed”; the underlying expression has competing interpretations. At 3:8, WEB names No-Amon, KJV has No, Douay-Rheims names Alexandria, and Brenton mentions Ammon within different wording. These are meaningful differences, not merely changes of English spelling.",
+        "sourceIds": [
+          "english-nahum",
+          "net-nahum",
+          "usccb-nahum-3"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Repetition holds wrath, patience, and refuge together",
+        "original": "נֹקֵם — noqem — avenging",
+        "explanation": "The form occurs three times in 1:2, making vengeance an insistent opening claim. The next verse speaks of being slow to anger, and 1:7 names goodness and refuge. These statements are placed together deliberately as the poem introduces its portrait of divine power.",
+        "translationNote": "WEB repeats the language of avenging and vengeance. Reading the repeated words before moving to the assurance of refuge preserves the force of the sequence.",
+        "caution": "The opening cannot be reduced to a general promise that everyone is safe. Its language distinguishes those taking refuge from the adversaries threatened with judgment.",
+        "refs": [
+          "1:2",
+          "1:3",
+          "1:7"
+        ],
+        "sourceIds": [
+          "web-nahum",
+          "hebrew-nahum"
+        ]
+      },
+      {
+        "title": "Destruction is audible in the sound pattern",
+        "original": "בּוּקָה וּמְבוּקָה וּמְבֻלָּקָה — buqah u-mevuqah u-mevullaqah — emptiness, devastation, desolation",
+        "explanation": "Three similar-sounding words of increasing length intensify the emptied-city scene in 2:10. They follow the invitation to seize the city’s silver and gold, turning abundant treasure into a picture of desolation.",
+        "translationNote": "WEB’s “empty, void, and waste” preserves the accumulation of terms, although the English cannot reproduce every Hebrew echo.",
+        "caution": "This is poetic concentration. The three terms do not establish three separately timed stages of the siege.",
+        "refs": [
+          "2:9",
+          "2:10"
+        ],
+        "sourceIds": [
+          "web-nahum",
+          "hebrew-nahum",
+          "net-nahum"
+        ]
+      },
+      {
+        "title": "Sound and motion compress the battle",
+        "original": "קוֹל שׁוֹט — qol shot — sound of a whip",
+        "explanation": "The repeated sound-word in 3:2 and the stacked horses, chariots, weapons, and bodies in 3:2–3 create a rush of scenes. Hebrew 3:2 uses compressed phrases rather than a sequence of fully explained narrative sentences.",
+        "translationNote": "WEB begins with the noise of the whip and wheels before moving to the horses and chariots. Reading the phrases aloud makes the rapid changes easier to hear.",
+        "caution": "The vividness does not make the passage an eyewitness report with a recoverable tactical timetable. The poem leaves many actors unnamed.",
+        "refs": [
+          "3:2",
+          "3:3"
+        ],
+        "sourceIds": [
+          "web-nahum",
+          "hebrew-nahum"
+        ]
+      },
+      {
+        "title": "A repeated formula changes the voice",
+        "original": "הִנְנִי אֵלַיִךְ — hinneni elayikh — behold, I am against you",
+        "explanation": "At 2:13 and 3:5, the divine first person interrupts the descriptions. The second-person feminine form addresses the personified city. Elsewhere the addressee changes: Judah is named in 1:15, and the king of Assyria is explicitly addressed in 3:18.",
+        "translationNote": "English “you” conceals distinctions of gender and number. The formula introducing Yahweh’s speech helps readers distinguish the divine voice from descriptions and quoted reactions.",
+        "caution": "Not every unnamed pronoun has an equally certain referent. A single identification of “you” should not be carried through all the threats and assurances in chapter 1.",
+        "refs": [
+          "1:12",
+          "1:15",
+          "2:13",
+          "3:5",
+          "3:18"
+        ],
+        "sourceIds": [
+          "web-nahum",
+          "hebrew-nahum"
+        ]
+      },
+      {
+        "title": "Prey and animal images reverse power",
+        "original": "טֶרֶף — teref — prey",
+        "explanation": "Prey fills the lion’s den in 2:12, is threatened with removal in 2:13, and becomes part of the accusation against the city in 3:1. Later, merchants and officials resemble locusts that disappear. The images connect accumulated wealth, predation, and sudden loss of security.",
+        "translationNote": "WEB repeats prey across the lion scene and the accusation against the city. Keeping that word in view helps connect the metaphor with the book’s account of violence and plunder.",
+        "caution": "The lions and locusts carry an argument about imperial power. The poetry does not give every animal a securely identified historical counterpart.",
+        "refs": [
+          "2:11",
+          "2:12",
+          "2:13",
+          "3:1",
+          "3:16",
+          "3:17"
+        ],
+        "sourceIds": [
+          "web-nahum",
+          "hebrew-nahum"
+        ]
+      }
+    ],
+    "examplesHeading": "Hebrew expressions that shape the poetry",
+    "examples": [
+      {
+        "ref": "1:3",
+        "form": "אֶרֶךְ אַפַּיִם — erekh appayim",
+        "meaning": "Slow to anger.",
+        "why": "The idiom places patience next to great power and refusal to acquit. Those neighboring claims shape the force of the description.",
+        "sourceIds": [
+          "hebrew-nahum",
+          "web-nahum",
+          "net-nahum"
+        ]
+      },
+      {
+        "ref": "2:10",
+        "form": "buqah u-mevuqah u-mevullaqah",
+        "meaning": "Emptiness, devastation, desolation.",
+        "why": "The expanding sound pattern gives force to the city’s collapse before the poem describes its inhabitants’ fear.",
+        "sourceIds": [
+          "hebrew-nahum",
+          "web-nahum",
+          "net-nahum"
+        ]
+      },
+      {
+        "ref": "3:1",
+        "form": "הוֹי עִיר דָּמִים — hoy ir damim",
+        "meaning": "Woe, city of bloodshed.",
+        "why": "The cry addresses the city and introduces accusations of lies and plunder. It characterizes conduct rather than assigning an inherited ethnic trait.",
+        "sourceIds": [
+          "hebrew-nahum",
+          "web-nahum"
+        ]
+      },
+      {
+        "ref": "3:5",
+        "form": "hinneni elayikh",
+        "meaning": "Behold, I am against you.",
+        "why": "The same formula heard in 2:13 introduces divine speech to the city before the threat of violent exposure.",
+        "sourceIds": [
+          "hebrew-nahum",
+          "web-nahum"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Prophetic poetry: hymn, siege scenes, taunts, and judgment speeches",
+    "how": "Track changes of speaker and addressee, follow recurring images, and listen to rhetorical questions and commands. Distinguish the poem’s portrayal of a siege from a dated historical report."
+  },
+  "cast": [
+    {
+      "name": "Nahum the Elkoshite",
+      "who": "The figure to whom the heading attributes the vision; the book gives no developed biography."
+    },
+    {
+      "name": "Yahweh",
+      "who": "Described in the opening and presented as speaking directly in threats and assurances."
+    },
+    {
+      "name": "Nineveh",
+      "who": "The Assyrian capital, frequently personified as a woman and portrayed through the imagery of a predator’s den."
+    },
+    {
+      "name": "Judah",
+      "who": "Addressed with news of peace and an invitation to keep festivals and vows in 1:15."
+    },
+    {
+      "name": "The king of Assyria",
+      "who": "The unnamed ruler addressed in 3:18 as his leaders fail and his people scatter."
+    },
+    {
+      "name": "No-Amon, or Thebes",
+      "who": "The Egyptian city whose defeat supplies a warning to Nineveh in 3:8–10."
+    },
+    {
+      "name": "Attackers, defenders, and the city’s population",
+      "who": "Troops, captives, merchants, officials, and fleeing people appear in the scenes, often without individual names."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Power, refuge, and release from oppression",
+      "chapters": "1",
+      "precise": "1:1–15",
+      "note": "The heading introduces the vision (1); the opening depicts divine power and refuge (2–8); threats and assurances change direction (9–14); Judah receives news of peace (15)."
+    },
+    {
+      "heading": "Siege, plunder, and the emptied lion’s den",
+      "chapters": "2",
+      "precise": "2:1–13",
+      "note": "Defensive commands and a statement about Jacob and Israel introduce the scene (1–2). Fighting, collapse, flight, and plunder follow (3–10). A lion image ends in a direct divine threat (11–13)."
+    },
+    {
+      "heading": "Accusation and the failure of Nineveh’s defenses",
+      "chapters": "3",
+      "precise": "3:1–19",
+      "note": "Battle and humiliation imagery expose the city (1–7); Thebes supplies a warning (8–11); defenses and leaders fail (12–17); the king and scattered people face the final verdict (18–19)."
+    }
+  ],
+  "purpose": "Nahum declares that a power enriched by violence will not endure before God. Its promise of relief for Judah is voiced through scenes of Nineveh’s defeat, leaving readers to reckon with both the longing for oppression to end and the violence of the imagined reversal.",
+  "snags": [
+    {
+      "snag": "Who is being addressed as you?",
+      "help": "Threats and assurances change direction, especially in 1:9–14. Judah is explicit in 1:15, Nineveh is named in 2:8 and 3:7, and Assyria’s king is addressed in 3:18. Use those anchors without assuming that every nearby pronoun has an equally certain referent."
+    },
+    {
+      "snag": "How should the sexual humiliation imagery be read?",
+      "help": "In 3:4 the city is portrayed as a prostitute whose power ensnares nations. Verses 3:5–6 threaten forced exposure and public degradation of that personified female body. Naming the metaphor’s political function should not hide its sexual violence or turn it into a model for treating women, captives, or enemies."
+    },
+    {
+      "snag": "Why are the troops compared to women?",
+      "help": "Verse 3:13 uses a gendered taunt about military vulnerability. Its force depends on an ancient association of women with weakness in battle; explaining that rhetoric does not endorse a claim that women are inferior."
+    },
+    {
+      "snag": "What are the deaths of children doing in the comparison?",
+      "help": "Verse 3:10 recalls the catastrophe at Thebes, including the killing of children and the captivity of its leaders. The horror supplies a warning to Nineveh. These deaths are part of the depicted atrocity, not instructions for the reader to imitate."
+    },
+    {
+      "snag": "Why do chapter numbers shift in Brenton?",
+      "help": "Most of WEB 1:15 appears at Brenton 2:1, with its concluding thought at the start of Brenton 2:2. WEB 2:1 then broadly corresponds to the rest of Brenton 2:2. Most later chapter-2 references differ by one verse, but some phrases also cross boundaries. Compare the wording rather than applying an automatic offset; chapter 3 returns to matching numbers."
+    },
+    {
+      "snag": "Is No-Amon the same as the Alexandria named in Douay-Rheims?",
+      "help": "The historical comparison at WEB 3:8 concerns No-Amon, identified as Thebes, whose Assyrian sack in 663 BCE is recalled in the following verses. Douay-Rheims names Alexandria at this point. That edition difference should be acknowledged rather than relocating the event or treating the two place-names as interchangeable."
+    },
+    {
+      "snag": "Who is Huzzab in the King James Version?",
+      "help": "KJV’s Huzzab in 2:7 represents a disputed Hebrew expression. WEB begins with a decree and an unnamed feminine subject; Douay-Rheims introduces a soldier, and Brenton 2:8 speaks of an exposed foundation before feminine captivity imagery. A securely identified queen’s biography cannot be inferred from the capitalized name."
+    },
+    {
+      "snag": "Does the opening form a complete alphabet poem?",
+      "help": "An incomplete alphabetic pattern can be traced in 1:2–8, but the sequence has gaps and irregularities. The whole chapter should not be described as a complete acrostic, nor should missing letters be filled in as if the text supplied them."
+    },
+    {
+      "snag": "Do the flood images explain exactly how the siege succeeded?",
+      "help": "The overflowing flood in 1:8 and the river gates in 2:6 contribute to the portrayal of overwhelming collapse. These lines alone do not establish a particular engineering operation or reconstruct the historical siege."
+    },
+    {
+      "snag": "Does Nahum tell what happened after Jonah’s mission?",
+      "help": "Nahum does not narrate a relapse following Jonah’s mission. Reading the two books as successive episodes is a later way of reconciling their different portrayals of Nineveh; it should be distinguished from what Nahum actually says."
+    },
+    {
+      "snag": "Why does Jacob’s situation sound different in another translation?",
+      "help": "WEB 2:2 says Yahweh restores Jacob’s excellency, whereas KJV uses turned-away wording and Brenton 2:3 says turned aside. The difference affects how the statement relates to the surrounding destruction. Keep the wording of the edition in view instead of silently reversing it."
+    }
+  ],
+  "debates": [
+    {
+      "question": "How precisely can the poetry and the book be dated?",
+      "settled": "Thebes’ catastrophe is recalled, Assyrian power is named, and Nineveh’s destruction is portrayed. The heading supplies no regnal year.",
+      "positions": [
+        {
+          "view": "A prophecy shortly before Nineveh’s fall",
+          "grounds": "The USCCB introduction reads the book as anticipating the destruction of Nineveh in 612 BCE. The reference to Thebes’ earlier fall provides a historical point of comparison."
+        },
+        {
+          "view": "Greater caution about the final literary arrangement",
+          "grounds": "The historical allusions locate the subject of the poems more securely than they date the collection of those poems. The text does not name or date the work of arranging the book."
+        }
+      ],
+      "soWhat": "The conventional 663–612 BCE setting is useful orientation. It should not become an exact composition date or a claim that every line was written at one moment."
+    },
+    {
+      "question": "How does opposition to imperial violence relate to the book’s own violent images?",
+      "settled": "The poems condemn the city’s bloodshed and plunder while depicting its destruction and humiliation.",
+      "positions": [
+        {
+          "view": "A voice of relief for the oppressed",
+          "grounds": "The USCCB introduction emphasizes judgment on abusive imperial power. The news of peace for Judah and the closing reaction to Assyria’s cruelty support that emphasis."
+        },
+        {
+          "view": "A critique of the reversal’s methods",
+          "grounds": "Anna Marsh’s feminist and postcolonial discussion asks whether the humiliating imagery repeats the violent patterns it opposes, especially when the city is depicted through a female body."
+        }
+      ],
+      "soWhat": "Attention to oppression and attention to the language’s victims can belong in the same reading. The ancient empire’s conduct does not define modern Assyrians or make harm to civilians a model to follow."
+    }
+  ],
+  "sources": [
+    {
+      "id": "web-nahum",
+      "label": "Nahum in the World English Bible",
+      "says": "The wording, speaker cues, sequence of scenes, chapter shape, and measured English size of the book.",
+      "href": "/scriptures/text/web/NAM.json"
+    },
+    {
+      "id": "english-nahum",
+      "label": "Nahum in WEB, KJV, Douay-Rheims, and Brenton",
+      "says": "Comparison shows the different chapter boundaries and the distinct renderings of the restoration statement, Huzzab passage, and No-Amon comparison."
+    },
+    {
+      "id": "hebrew-nahum",
+      "label": "Open Scriptures Hebrew Bible: Nahum",
+      "says": "The Hebrew forms and morphology behind the repetitions, word sounds, compressed phrases, and changing forms of address.",
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Nah.xml"
+    },
+    {
+      "id": "usccb-nahum-intro",
+      "label": "USCCB, Introduction to Nahum",
+      "says": "Places the prophecy shortly before Nineveh’s fall in 612 BCE and reads its judgment in the context of Assyrian oppression and promised relief.",
+      "url": "https://bible.usccb.org/bible/nahum/0"
+    },
+    {
+      "id": "usccb-nahum-3",
+      "label": "USCCB, Nahum 3 notes",
+      "says": "Identifies No-Amon with Thebes, recalls its destruction by Assyria in 663 BCE, and discusses the ironic commands to prepare defenses.",
+      "url": "https://bible.usccb.org/bible/nahum/3"
+    },
+    {
+      "id": "net-nahum",
+      "label": "NET Bible, Nahum translator notes",
+      "says": "Discusses the anger idiom, the incomplete opening acrostic, the disputed expression rendered Huzzab, and the sound pattern in 2:10.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/nah.pdf"
+    },
+    {
+      "id": "luther-nahum-reception",
+      "label": "Anna Marsh, Bible in the World—Nahum, Luther Seminary",
+      "says": "Examines later readings of Nahum, including its relationship to Jonah and feminist and postcolonial questions about violent city imagery.",
+      "url": "https://enterthebible.org/courses/nahum/lessons/bible-in-the-world-nahum/"
+    },
+    {
+      "id": "bm-nineveh-fall",
+      "label": "British Museum, I am Ashurbanipal exhibition",
+      "says": "Identifies 612 BCE as the year of Nineveh’s destruction.",
+      "url": "https://www.britishmuseum.org/exhibitions/i-am-ashurbanipal-king-world-king-assyria"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Mark each clear addressee and each transition into divine speech before assigning every pronoun.",
+      "refs": [
+        "1:12",
+        "1:15",
+        "2:13",
+        "3:5",
+        "3:18"
+      ]
+    },
+    {
+      "tip": "Read the claims about vengeance, patience, and refuge together rather than isolating one line.",
+      "refs": [
+        "1:2",
+        "1:3",
+        "1:7"
+      ]
+    },
+    {
+      "tip": "Read the short phrases aloud and hear how their accumulation changes the pace.",
+      "refs": [
+        "2:10",
+        "3:2",
+        "3:3"
+      ]
+    },
+    {
+      "tip": "Name what the violent images depict, including sexual humiliation and harm to children, before considering their role in the poem’s argument.",
+      "refs": [
+        "3:4",
+        "3:5",
+        "3:10",
+        "3:13"
+      ]
+    },
+    {
+      "tip": "Read the final address to the king alongside the scattered people and the reaction to Assyria’s cruelty.",
+      "refs": [
+        "3:18",
+        "3:19"
+      ]
+    }
+  ],
+  "next": "Read Jonah for another portrayal of Nineveh, then Habakkuk for a different engagement with violence and imperial power. Compare their questions without turning the books into a single uninterrupted narrative.",
+  "traditionNote": "Nahum has three chapters and 47 verses in each of these English editions. WEB, KJV, and Douay-Rheims divide them 15/13/19; Brenton divides them 14/14/19, with the peace announcement moving to the start of chapter 2 and some phrases crossing verse boundaries."
+}

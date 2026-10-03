@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-08-28",
+  "publicOnlyNotice": "Public portfolio facts only. Never add private canonical-profile fields or import a private profile into this bank.",
+  "voice": {
+    "hardBannedPhrases": [
+      "throughline",
+      "range is an asset",
+      "end to end",
+      "an eye on",
+      "the glue between them"
+    ]
+  },
+  "identity": {
+    "name": "Garo Vartabedian",
+    "role": "Solutions Engineer",
+    "location": "Austin, Texas",
+    "contact": {
+      "email": "garo.vartabed@gmail.com",
+      "phone": "718-872-8578",
+      "linkedin": "https://www.linkedin.com/in/garovartabedian",
+      "github": "https://github.com/Vartabg"
+    }
+  },
+  "ownerAttestations": {
+    "siteFunding": {
+      "claim": "garovartabedian.com is a self-funded passion project and was not commissioned by a client.",
+      "attestedBy": "Garo Vartabedian",
+      "attestedAt": "2026-08-31"
+    }
+  },
+  "resume": {
+    "experience": [
+      {
+        "id": "independent-developer",
+        "period": "May 2022 - Present",
+        "role": "Independent Software & Web Developer",
+        "organization": "Self-Employed"
+      },
+      {
+        "id": "overnight-valet",
+        "period": "Jul 2026 - Present",
+        "role": "Overnight Valet Attendant",
+        "organization": "Evolution Parking & Guest Services"
+      },
+      {
+        "id": "independent-freelance",
+        "period": "2020 - 2022",
+        "role": "Career Transition",
+        "organization": "Independent"
+      },
+      {
+        "id": "field-service",
+        "period": "Oct 2016 - Jul 2020",
+        "role": "Field Service Engineer",
+        "organization": "View, Inc."
+      },
+      {
+        "id": "sales-business-development",
+        "period": "2013 - 2016",
+        "role": "Sales & Business Development",
+        "organization": "TrimTabs Investment Research \u00b7 GigaOM \u00b7 Westgate \u00b7 Monitronics"
+      },
+      {
+        "id": "full-time-student",
+        "period": "2009 - 2013",
+        "role": "Full-Time Student",
+        "organization": "Queensborough Community College to Columbia University"
+      },
+      {
+        "id": "customer-service",
+        "period": "Nov 2008 - Jun 2009",
+        "role": "Customer Service Engineer",
+        "organization": "Christie Digital"
+      },
+      {
+        "id": "navy-electronics",
+        "period": "Feb 2003 - Aug 2008",
+        "role": "Electronics Technician",
+        "organization": "U.S. Navy"
+      }
+    ],
+    "education": [
+      {
+        "id": "columbia-ba",
+        "school": "Columbia University",
+        "credential": "BA, Philosophy",
+        "year": "2013"
+      },
+      {
+        "id": "queensborough-as",
+        "school": "Queensborough Community College (CUNY)",
+        "credential": "AS, Business Administration",
+        "year": "2011"
+      }
+    ]
+  },
+  "jobPilot": {
+    "name": "JobPilot",
+    "status": "open-source",
+    "humanReviewRequired": true,
+    "humanSubmissionRequired": true,
+    "automaticSubmission": false
+  },
+  "reviewedMetrics": [
+    {
+      "id": "local-rag-document-count",
+      "claim": "1,200+ of my own documents",
+      "basis": "The recorded Chroma RAG inventory contained 1,242 document stubs, so the public claim is a conservative lower bound.",
+      "observedCount": 1242,
+      "evidencePath": "~/AI_Workspace/session-logs/_archive/2026-05-29.md",
+      "evidenceDate": "2026-05-29"
+    }
+  ]
+}

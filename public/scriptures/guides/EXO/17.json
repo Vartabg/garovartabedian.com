@@ -1,0 +1,221 @@
+{
+  "book": "EXO",
+  "chapter": 17,
+  "bookName": "Exodus",
+  "summary": "At Rephidim the people have no water, fear for children and livestock, and quarrel with Moses; Yahweh directs him to strike a rock at Horeb before the elders, and water comes out. Amalek then attacks, Joshua leads fighters while Aaron and Hur support Moses’ raised hands, and after the victory Moses is commanded to record a memorial and builds an altar amid a declaration of continuing war.",
+  "whyItMatters": "Thirst and attack make the newly freed people’s vulnerability concrete even after manna begins. The chapter also joins a specific battlefield victory to severe language about Amalek that needs to be read as this narrative’s claim, not a transferable command.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "Rephidim and the rock at Horeb, followed by a battle near Israel’s camp.",
+    "literaryForm": "Water crisis and naming explanation followed by a battle account, memorial command, and altar name."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Israel has received quail, daily manna, and Sabbath rest in the wilderness of Sin. The next camp at Rephidim lacks drinking water.",
+      "verseRefs": [
+        "16:1-36",
+        "17:1-3"
+      ]
+    },
+    "here": {
+      "text": "Moses strikes the rock for water before elders, then Joshua fights Amalek while Moses’ raised hands are supported through sunset.",
+      "verseRefs": [
+        "17:1-16"
+      ]
+    },
+    "after": {
+      "text": "Jethro hears of Israel’s deliverance and brings Moses’ family to the mountain, where he advises a shared system for judging disputes.",
+      "verseRefs": [
+        "18:1-27"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "No water and mounting fear",
+      "verses": "1-4",
+      "note": "The people protest thirst, and Moses fears they may stone him."
+    },
+    {
+      "heading": "Water from the rock",
+      "verses": "5-7",
+      "note": "Before elders Moses strikes the rock at Horeb, then names the place for the quarrel and test."
+    },
+    {
+      "heading": "Amalek attacks and Joshua fights",
+      "verses": "8-10",
+      "note": "Joshua selects fighters; Moses, Aaron, and Hur go up the hill."
+    },
+    {
+      "heading": "Hands supported until victory",
+      "verses": "11-13",
+      "note": "Israel’s advantage follows Moses’ raised hands, which Aaron and Hur steady."
+    },
+    {
+      "heading": "A memorial and an altar",
+      "verses": "14-16",
+      "note": "Moses is told to record the event and names an altar as war with Amalek is declared."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "17:3",
+      "text": "The people were thirsty for water there; so the people murmured against Moses, and said, “Why have you brought us up out of Egypt, to kill us, our children, and our livestock with thirst?”",
+      "why": "The people explicitly fear that thirst will kill children and livestock as well as adults."
+    },
+    {
+      "ref": "17:12",
+      "text": "But Moses’ hands were heavy; so they took a stone, and put it under him, and he sat on it. Aaron and Hur held up his hands, the one on the one side, and the other on the other side. His hands were steady until sunset.",
+      "why": "Aaron and Hur’s support is part of the battle outcome, not incidental scenery."
+    },
+    {
+      "ref": "17:14",
+      "text": "Yahweh said to Moses, “Write this for a memorial in a book, and rehearse it in the ears of Joshua: that I will utterly blot out the memory of Amalek from under the sky.”",
+      "why": "The victory leads to a command to write a memorial with severe language about Amalek."
+    }
+  ],
+  "themes": [
+    "thirst after rescue",
+    "water from the rock",
+    "leaders’ dependence on others",
+    "Amalekite attack",
+    "battle and memorial",
+    "difficult war language"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Is the request for water a trivial complaint?",
+      "answer": "The camp has no water, and the people say children and livestock face death from thirst. The narrator calls their confrontation with Moses quarreling and testing, while still making the immediate need unmistakable.",
+      "verseRefs": [
+        "17:1-4"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why are the names Massah and Meribah used?",
+      "answer": "Moses gives the place these names because Israel quarrels and tests Yahweh by asking whether he is among them. The names preserve the dispute at the same location where water is provided.",
+      "verseRefs": [
+        "17:5-7"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        5
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Who sees the water come from the rock?",
+      "answer": "Yahweh tells Moses to take Israel’s elders and the rod used at the Nile, and Moses strikes the rock before them. Their presence gives the act public witnesses inside the community.",
+      "verseRefs": [
+        "17:5-6"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        5
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What does the chapter say about Amalek’s attack?",
+      "answer": "It states that Amalek came and fought Israel at Rephidim, and Joshua responds with selected men. It does not describe each combatant or provide a fuller history of why Amalek attacked.",
+      "verseRefs": [
+        "17:8-13"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        8
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why do Aaron and Hur hold up Moses’ hands?",
+      "answer": "When his hand is raised Israel prevails, but his arms grow heavy. They seat him on a stone and steady his hands until sunset while Joshua fights below.",
+      "verseRefs": [
+        "17:9-13"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        9
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What is the “memorial” Moses is commanded to write?",
+      "answer": "Yahweh directs Moses to put the declaration about Amalek in a written record and repeat it to Joshua. The instruction turns the battle’s outcome into remembered testimony for Israel’s leader.",
+      "verseRefs": [
+        "17:14-16"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        14
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Does the threat against Amalek authorize violence against descendants or present peoples?",
+      "answer": "The text announces that Yahweh will blot out Amalek’s memory and declares war across generations after this attack. It gives no general command to later readers to identify and attack modern peoples, and it does not narrate individual guilt for later generations.",
+      "verseRefs": [
+        "17:8-16"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        8
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Why name the altar “Yahweh our Banner”?",
+      "answer": "Moses builds it after Joshua’s victory and gives it a name that associates Israel’s defense with Yahweh. The altar and the accompanying saying keep the battle in communal memory.",
+      "verseRefs": [
+        "17:13-16"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        13
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Rephidim",
+      "def": "The camp where Israel lacks water and where Amalek attacks."
+    },
+    {
+      "term": "Massah",
+      "def": "One of the names Moses gives the water-crisis place because Israel tested Yahweh."
+    },
+    {
+      "term": "Banner",
+      "def": "The image used in Moses’ altar name after the battle with Amalek."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "df555ff215270e34e6bff79867fe450df4bd1f742f57f33946a93105a579d55d",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

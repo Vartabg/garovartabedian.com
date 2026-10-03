@@ -1,0 +1,205 @@
+{
+  "book": "GEN",
+  "bookName": "Genesis",
+  "oneLine": "A book of beginnings that moves from the whole human world to one fractured family through whom God promises blessing to every family of the earth.",
+  "orient": "Genesis opens with creation, the first humans, violence, the flood, nations, and languages. Terah's family enters at 11:27, and Abraham and Sarah's call in chapter 12 focuses the story on their descendants, then Isaac and Rebekah, Jacob's household, and Joseph in Egypt. Follow how the promises to this family respond to the spreading disorder of chapters 3–11, and how each generation places those promises under pressure.",
+  "whereYouAre": "There is no earlier biblical book. The world in the opening chapters is primeval rather than securely datable; from Abraham onward the setting resembles the ancient Near East of clans, herds, towns, treaties, famine, and migration. Israel does not yet exist as a nation, the law has not been given at Sinai, and Jerusalem's temple belongs to a later part of the biblical story. The book ends with Jacob's family living in Egypt, which is the problem Exodus will inherit.",
+  "facts": {
+    "writtenBy": "The book itself names no narrator or final compiler. Jewish and Christian tradition associates the Torah with Moses; modern source and composition theories see older traditions brought into a final literary form. The evidence supports a long history more securely than one universally agreed reconstruction of it.",
+    "writtenWhen": "The ancestral stories are set far earlier than the book's final literary form. Many scholars place major stages of composition and editing in the monarchic through Persian periods, with substantial shaping in the sixth or fifth century BC; exact models and dates remain debated.",
+    "writtenFor": "Israelite and Judean communities preserving and interpreting their ancestral story. One influential reconstruction places substantial editing among people marked by exile in the sixth or fifth century BC; the book itself does not name an original dedicatee.",
+    "place": "Its stories range from an undelimited first world through Mesopotamia, Canaan, and Egypt. The location of final composition cannot be established from the narrative voice alone.",
+    "covers": "Creation through the death of Joseph: a primeval sequence in chapters 1–11 and the ancestral family of Abraham, Isaac, and Jacob in chapters 12–50.",
+    "size": "50 chapters, 1,533 verse slots, and 35,623 whitespace-separated words in the World English Bible text hosted here."
+  },
+  "factSourceIds": {
+    "writtenBy": ["usccb-pentateuch", "usccb-genesis", "arnold-genesis"],
+    "writtenWhen": ["usccb-genesis", "arnold-genesis"],
+    "writtenFor": ["usccb-genesis"],
+    "place": ["usccb-genesis", "hosted-web"],
+    "covers": ["usccb-genesis", "hosted-web"],
+    "size": ["hosted-web"]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew. Its ancient Greek translation is a distinct textual witness and a major scriptural form for Greek-speaking Jewish and Christian readers; neither it nor the hosted English is the language in which the Hebrew book was composed.",
+    "register": "Mostly economical Hebrew narrative, interrupted by genealogies, blessings, etiologies, treaty formulas, and compact poems. Repeated words and scenes do structural work: creation by ordered speech, sibling rivalry, endangered promises, younger children displacing older ones, deception returning upon the deceiver, and journeys out and back.",
+    "spokenWorld": "The characters inhabit an ancient Near Eastern world of several peoples, but the narrator renders nearly all dialogue in Hebrew. Genesis marks a language difference when Laban and Jacob give one memorial Aramaic and Hebrew names (31:47). That literary detail does not establish which languages their historical counterparts spoke or settle the episode's date.",
+    "readerSignal": "Names are repeatedly interpreted as part of the story. Some are genuine sound associations rather than scientific etymologies. The Hebrew reader hears links among human and soil, woman and man, Isaac and laughter, Jacob and heel, Babel and confusion, while an English translation has to explain or lose the sound.",
+    "englishLayer": "The default World English Bible here follows the traditional Hebrew textual line. The hosted Brenton edition translates Greek Genesis. They differ beyond English style: Adam is 130 at Seth's birth in WEB 5:3 but 230 in Brenton, and Brenton's 11:12 includes Cainan where WEB names Shelah. Do not harmonize their genealogical numbers or names without stating which edition you are reading.",
+    "textualHistory": [
+      {
+        "label": "The book's literary language",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "Genesis is a Hebrew composition whose repeated toledot headings organize creation and family history into linked generations. Its final form draws together materials with real differences in vocabulary, divine naming, and presentation, but no proposed source can simply be peeled out without scholarly judgment. The site's Hebrew word layer is a much later pointed Masoretic witness, not an authorial manuscript.",
+        "sourceIds": ["cambridge-languages", "arnold-genesis", "usccb-genesis", "hosted-oshb"]
+      },
+      {
+        "label": "An ancient scriptural translation",
+        "language": "Koine Greek (Septuagint)",
+        "role": "translation",
+        "description": "The Torah was translated into Greek in the early history of the Septuagint, beginning in the third century BC. That Greek Genesis is not merely a modern aid: it became a formative Bible text in Greek-speaking Judaism and Christianity and remains central in Orthodox reception.",
+        "sourceIds": ["oxford-septuagint", "oxford-lxx-bibliography", "cambridge-greek-ot", "hosted-brenton"]
+      },
+      {
+        "label": "The default English edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The default World English Bible translates Hebrew prose into modern English sentences. It can carry meaning and repetition, but not every pun, sound pattern, ambiguous pronoun, or difference between Hebrew and Greek textual traditions.",
+        "sourceIds": ["hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "תּוֹלְדוֹת (toledot): the book's hidden table of contents",
+        "original": "אֵלֶּה תוֹלְדוֹת — elleh toledot — “these are the generations/descendants/history of …”",
+        "explanation": "The formula appears at major turns, first for heaven and earth and then for Adam, Noah, Noah's sons, Shem, Terah, Ishmael, Isaac, Esau, and Jacob; Esau's heading is repeated at 36:9. English ‘history’ or ‘generations’ can sound like a label pasted onto what follows; in Hebrew the word is related to begetting. Genesis presents time as branching descent, and the heading often introduces what came from the named figure rather than a biography of that figure.",
+        "translationNote": "English versions vary among ‘history,’ ‘generations,’ ‘account,’ and ‘family records.’ Searching one English phrase will therefore miss the architecture.",
+        "caution": "The headings reveal the final book's organization; they do not by themselves settle how many earlier sources existed or when each passage was composed.",
+        "refs": ["2:4", "5:1", "6:9", "10:1", "11:10", "11:27", "25:12", "25:19", "36:1", "36:9", "37:2"],
+        "sourceIds": ["arnold-genesis", "oxford-toledot", "usccb-genesis", "hosted-web"]
+      },
+      {
+        "title": "אָדָם / אֲדָמָה (adam / adamah): human from humus",
+        "original": "הָאָדָם … מִן־הָאֲדָמָה — ha-adam … min-ha-adamah — “the human … from the ground”",
+        "explanation": "In 2:7 the figure is initially ha-adam, ‘the human,’ formed from adamah, ‘ground’ or ‘soil.’ The story makes mortality, vocation, and earthiness audible in one word-family. Treating every early occurrence as the personal name ‘Adam’ hides the generic force and the pun.",
+        "translationNote": "English cannot preserve both the ordinary words and their sound. A note such as ‘human from humus’ approximates the effect better than silently turning the first word into a modern first name.",
+        "caution": "A wordplay explains the story's literary relation between human and soil; it is not a technical statement about biological material or a complete anthropology.",
+        "refs": ["2:7", "2:15", "3:17", "3:19"],
+        "sourceIds": ["usccb-gen3", "cambridge-adam", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "title": "Narrative repetition is argument, not padding",
+        "original": "וַיֹּאמֶר אֱלֹהִים … וַיְהִי־כֵן — “God said … and it was so”",
+        "explanation": "Biblical Hebrew narrative often advances by coordinated clauses, while Genesis builds whole scenes through patterned recurrence. Genesis 1 cycles through command, fulfillment, evaluation, and numbered day. The servant's retelling in chapter 24 repeats a long scene but changes emphasis for Rebekah's family. The repeated dream, deception, barren matriarch, and sibling conflict invite comparison across generations.",
+        "translationNote": "Editors may vary repeated connectors or compress formulas to avoid monotonous English. That can make a carefully repeated Hebrew sequence feel less deliberate.",
+        "caution": "Not every duplicate is explained the same way. Repetition may mark oral style, literary design, preserved parallel traditions, or several of these together.",
+        "refs": ["1:3", "1:6", "1:9", "24:34", "24:66"],
+        "sourceIds": ["usccb-gen1", "usccb-genesis", "hosted-web"]
+      },
+      {
+        "title": "Names turn plot into sound",
+        "original": "יִצְחָק / צָחַק — yitschaq / tsachaq — “Isaac / he laughs”",
+        "explanation": "Laughter surrounds Isaac before and after his birth; Jacob's name is heard beside heel-grabbing and supplanting; Babel is linked by sound with balal, ‘confuse.’ These associations make a name remember the tension of its story. They can be playful, ironic, or accusatory.",
+        "translationNote": "An English name usually remains fixed while the related verb changes completely, so the narrative's echo has to be supplied in a note.",
+        "caution": "Ancient narrative wordplay can associate similar sounds without offering the historical derivation a modern linguist would require.",
+        "refs": ["17:17", "18:12", "21:6", "25:26", "27:36", "11:9"],
+        "sourceIds": ["usccb-gen21", "usccb-genesis", "babel-wordplay", "hosted-oshb", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Hebrew links English cannot keep in one word",
+    "examples": [
+      {
+        "ref": "2:7",
+        "form": "adam / adamah",
+        "meaning": "human / ground",
+        "why": "The human creature's name and material belong to one Hebrew sound-pattern; the verse makes earthiness audible.",
+        "sourceIds": ["usccb-gen3", "cambridge-adam", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "ref": "2:23",
+        "form": "ish / ishah",
+        "meaning": "man / woman",
+        "why": "The speech hears relationship in the two Hebrew words. English preserves neither their sound nor the verse's proposed association.",
+        "sourceIds": ["cambridge-adam", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "ref": "11:9",
+        "form": "Bavel / balal",
+        "meaning": "Babel / confuse",
+        "why": "The city's name is drawn into a Hebrew sound-play about confused speech even though its Mesopotamian name has a different historical derivation.",
+        "sourceIds": ["babel-wordplay", "hosted-oshb", "hosted-web"]
+      },
+      {
+        "ref": "31:47",
+        "form": "Jegar Sahadutha / Galeed",
+        "meaning": "heap of witness in Aramaic / Hebrew",
+        "why": "Laban and Jacob give the same boundary marker names from two languages, one of the rare moments when Genesis marks its characters' linguistic difference inside the dialogue.",
+        "sourceIds": ["usccb-gen31", "cambridge-languages", "hosted-oshb", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Primeval and ancestral narrative — theology carried by family story, genealogy, blessing, and remembered origins",
+    "how": "Read scenes in sequence and also in parallel. Genesis rarely stops to state a moral; it lets repeated choices produce consequences across generations. Narrator comments, divine speeches, genealogies, name explanations, and poems tell you how to weigh the action. Description is not automatic approval: the book can report polygamy, enslavement, deception, sexual violence, and vengeance without recommending them."
+  },
+  "cast": [
+    { "name": "God", "who": "Creator, judge, rescuer, and covenant maker; repeatedly commits to preserve and bless a world whose people damage it." },
+    { "name": "The first humans", "who": "The human and the woman in Eden, then parents of a family in which distrust, blame, labor, birth, and death enter the story." },
+    { "name": "Noah", "who": "Preserved through the flood and given a covenant for all living creatures; his rescue does not erase human violence." },
+    { "name": "Abraham and Sarah", "who": "Called away from kin and land toward a promised country and child; they believe, fear, improvise, fail, and receive promises they do not fully see fulfilled." },
+    { "name": "Hagar and Ishmael", "who": "An enslaved Egyptian woman and Abraham's first son. God sees Hagar and promises Ishmael a future even as the chosen line runs through Isaac." },
+    { "name": "Isaac and Rebekah", "who": "The promised son and the woman who chooses to leave home; their household repeats and intensifies the previous generation's rivalry." },
+    { "name": "Jacob, Leah, and Rachel", "who": "A deceiver renamed Israel, and two sisters caught in marriage rivalry. Their children become the ancestors of Israel's tribes." },
+    { "name": "Joseph and his brothers", "who": "A favored son sold into Egypt and the brothers who must finally face him; their reconciliation gets the family into the place where Exodus begins." }
+  ],
+  "shape": [
+    { "heading": "The shared human world", "chapters": "1–11", "note": "Creation, human rupture, Cain, flood, nations, and Babel. Each attempted restart preserves life but does not cure the human problem." },
+    { "heading": "Abraham and Sarah", "chapters": "12–25", "precise": "11:27–25:18", "note": "The promise of land, descendants, and worldwide blessing is repeatedly threatened by age, famine, fear, conflict, and the family's own schemes." },
+    { "heading": "Isaac's household and Jacob's formation", "chapters": "26–36", "precise": "25:19–36:43", "note": "Sibling rivalry, stolen blessing, exile, marriage conflict, return, wrestling, and the name Israel." },
+    { "heading": "Joseph and the descent to Egypt", "chapters": "37–50", "precise": "37:2–50:26", "note": "Family betrayal becomes survival in famine, but the rescue places the whole household under Egyptian power." }
+  ],
+  "purpose": "Genesis explains Israel's particular calling inside God's concern for all creation. The world is declared good, humans bear God's image, and yet mistrust becomes blame, murder, violence, and scattered nations. God's answer begins with a promise to Abraham: land, descendants, and blessing for all families. The rest of the book tests whether that promise can survive infertility, moral failure, sibling hatred, displacement, and death — and repeatedly answers that human action can endanger it but cannot make God abandon it.",
+  "snags": [
+    { "snag": "Genesis 1 and 2 do not read like one continuous camera angle.", "help": "Genesis 1:1–2:3 is a patterned cosmic week; 2:4 onward is a ground-level garden story. Their sequence gives two perspectives with different vocabulary and order of presentation. Readers disagree about source history and scientific implications, but flattening them into a modern laboratory report misses what each account is doing." },
+    { "snag": "Long genealogies feel disposable.", "help": "They are the book's connective tissue. They move time, map nations and kinship, preserve both chosen and non-chosen lines, and show that the promise travels through births. Notice where a genealogy slows for a story or branches before returning to the main line." },
+    { "snag": "The patriarchs behave badly and still receive promises.", "help": "Election in Genesis is not a prize for spotless conduct. Abraham endangers Sarah, Jacob deceives, and the brothers sell Joseph. The narrative regularly exposes consequences. The controlling claim is God's fidelity working through compromised people, not divine endorsement of everything they do." },
+    { "snag": "The flood and conquest-like violence raise moral questions.", "help": "Do not rush past them or solve them with one sentence. The flood is presented as judgment on a world filled with violence, yet its aftermath shows the judgment did not remove the human inclination toward evil. The covenant with all flesh and God's promise not to repeat the destruction are part of the text's own response." },
+    { "snag": "‘All the earth’ can sound like modern scientific geography.", "help": "Ancient universal language often speaks from the narrated world's horizon. Ask first how the phrase works inside the story — especially its claims about all humanity — before importing a modern map or technical category." },
+    { "snag": "Chapter divisions can hide the toledot structure.", "help": "The book's own recurring headings cross some modern chapter boundaries. Treat ‘these are the generations of …’ as a navigation signal stronger than the number at the top of the page." },
+    { "snag": "Who are the ‘sons of God’ in 6:2?", "help": "The passage does not identify them further. The USCCB's Genesis 6 notes read them as heavenly beings; Augustine later read them as Seth's descendants joining Cain's line. Those are two documented interpretations, not a settled identity. Genesis 6:1–4 is brief, so keep later elaborations distinct from what this chapter says." }
+  ],
+  "debates": [
+    {
+      "question": "Who composed Genesis, and from what materials?",
+      "settled": "Genesis does not identify its narrator. It contains repeated scenes, differing divine names and styles, and an integrated final structure.",
+      "positions": [
+        { "view": "Mosaic authorship in substantial or final form", "grounds": "Jewish and Christian tradition treats the Torah as the book of Moses, and later biblical texts associate Torah with him. Defenders may allow sources, scribes, or later updating while retaining Moses as originating authority." },
+        { "view": "A documentary or supplementary growth process", "grounds": "Differences in vocabulary, divine names, duplicate episodes, legal and priestly interests are read as signs of multiple literary strands or successive supplements joined over time. Scholars disagree sharply over the number, date, and boundaries of those layers." },
+        { "view": "Final-form emphasis", "grounds": "Whatever its prehistory, the received book deliberately coordinates its materials through toledot headings, repeated promises, genealogies, and narrative echoes. This approach treats source reconstruction as secondary to the literary work readers actually have." }
+      ],
+      "soWhat": "Source theories can explain real seams, but a reader should not let a hypothetical label replace close reading. Compare the accounts, then ask what their placement together makes possible."
+    },
+    {
+      "question": "How should the opening chapters relate to modern history and science?",
+      "settled": "Genesis 1–11 makes claims about God, creation, humanity, moral rupture, violence, judgment, mercy, nations, and language in ancient literary forms.",
+      "positions": [
+        { "view": "A largely chronological account of material origins", "grounds": "Readers take the days, genealogies, flood, and dispersal as reporting a connected sequence, though they differ over the length of the days and age of the earth." },
+        { "view": "Ancient theological cosmology using figurative or archetypal narration", "grounds": "The patterned days, symbolic geography, representative humans, and parallels with ancient Near Eastern origin traditions are read as theological claims expressed without modern scientific intent." },
+        { "view": "A both-and family of readings", "grounds": "Many readers affirm real divine action and human beginnings while allowing literary shaping, telescoped genealogy, non-technical description, and varying degrees of archetype." }
+      ],
+      "soWhat": "State which question you are asking. A text can make historical and theological claims without using the explanatory categories of a modern scientific paper."
+    }
+  ],
+  "sources": [
+    { "id": "usccb-genesis", "label": "USCCB, Introduction to Genesis", "says": "Outlines the primeval and ancestral halves, the toledot structure, ancient traditions, debated composition, and the book's compressed literary craft.", "url": "https://bible.usccb.org/bible/genesis/0" },
+    { "id": "usccb-pentateuch", "label": "USCCB, Introduction to the Pentateuch", "says": "Identifies traditional attribution of the Torah to Moses and explains why historical criticism considers multiple traditions and later editing; its reconstruction is a model, not a recovered author's name.", "url": "https://bible.usccb.org/bible/thepentateuch/0" },
+    { "id": "usccb-gen1", "label": "USCCB, Genesis 1 notes", "says": "Explains the literary pairing of creation days and the generic force of adam as humankind rather than initially a simple personal name.", "url": "https://bible.usccb.org/bible/genesis/1" },
+    { "id": "usccb-gen3", "label": "USCCB, Genesis 3 notes", "says": "Identifies the adam/adamah association in the ground curse and its connection with human mortality.", "url": "https://bible.usccb.org/bible/genesis/3" },
+    { "id": "usccb-gen6", "label": "USCCB, Genesis 6 notes", "says": "Describes Genesis 6:1–4 as enigmatic and interprets the sons of God as heavenly beings; this is an interpretation of the short biblical passage.", "url": "https://bible.usccb.org/bible/genesis/6" },
+    { "id": "usccb-gen21", "label": "USCCB, Genesis 21 notes", "says": "Identifies the repeated laughter before and after Isaac's birth as Hebrew name-play.", "url": "https://bible.usccb.org/bible/genesis/21" },
+    { "id": "usccb-gen31", "label": "USCCB, Genesis 31 notes", "says": "Identifies Jegar-sahadutha and Galeed as Aramaic and Hebrew names for the witness mound, while cautioning that the Aramaic detail may be anachronistic in a patriarchal setting.", "url": "https://bible.usccb.org/bible/genesis/31" },
+    { "id": "arnold-genesis", "label": "Bill T. Arnold, Genesis (Cambridge University Press)", "says": "Maps the ten toledot panels, plus the creation overture, and shows how genealogical and narrative headings organize the book.", "url": "https://assets.cambridge.org/97805210/00673/excerpt/9780521000673_excerpt.pdf" },
+    { "id": "oxford-toledot", "label": "Ronald Hendel, Remembering Abraham (Oxford University Press)", "says": "Explains toledot as begettings or lineage and Genesis's presentation of the past as branching genealogical narrative.", "url": "https://academic.oup.com/book/10720/chapter/158793545" },
+    { "id": "cambridge-languages", "label": "Geoffrey Khan, “The languages of the Old Testament” (Cambridge)", "says": "Surveys Biblical Hebrew and the smaller Aramaic portions of the Hebrew Bible, providing the linguistic frame for Genesis and later multilingual books.", "url": "https://www.cambridge.org/core/books/abs/new-cambridge-history-of-the-bible/languages-of-the-old-testament/E04B54E7DB694A8ADFBB0C5CB381A83D" },
+    { "id": "oxford-septuagint", "label": "Cécile Dogniez, “The Greek Translation of the Pentateuch” (Oxford)", "says": "The published abstract describes the Greek Pentateuch as an early translation and interpretation and notes differences among its books and from the Hebrew texts.", "url": "https://academic.oup.com/edited-volume/34227/chapter-abstract/290227444" },
+    { "id": "oxford-lxx-bibliography", "label": "Greenspoon and Ross, “Septuagint” (Oxford Bibliographies)", "says": "The public introduction dates the Greek Pentateuch to mid- or late third-century BC Egypt and surveys later Jewish and Christian transmission and study; the full bibliography is access limited.", "url": "https://academic.oup.com/reference/62341/reference-article-abstract/561720572" },
+    { "id": "cambridge-greek-ot", "label": "The Old Testament in Greek (Cambridge)", "says": "The publisher description dates the origins of the Greek Hebrew Scriptures to the third century BC; volume 1 contains Genesis, Exodus, and Leviticus.", "url": "https://www.cambridge.org/core/books/old-testament-in-greek/26DEFD1C7D7BBFD4F88BD4FE27E6A592" },
+    { "id": "cambridge-adam", "label": "Cambridge Dictionary of Judaism, “Adam”", "says": "Distinguishes collective adam, ‘human being,’ from the later unambiguous proper name and notes the ish/ishah word association.", "url": "https://assets.cambridge.org/97805218/25979/excerpt/9780521825979_excerpt.pdf" },
+    { "id": "babel-wordplay", "label": "TheTorah.com, “Language Is Baffling — The Story of the Tower of Babel”", "says": "Explains how Genesis links Babel with the Hebrew sound-play on balal, ‘confuse,’ while telling its language story.", "url": "https://www.thetorah.com/article/language-is-baffling-the-story-of-the-tower-of-babel" },
+    { "id": "augustine-city-god-15", "label": "Augustine, City of God XV.23 (New Advent translation)", "says": "A primary witness to later Christian reception: Augustine identifies the sons of God in Genesis 6 as Seth's descendants and contrasts that reading with an angelic one.", "url": "https://www.newadvent.org/fathers/120115.htm" },
+    { "id": "hosted-web", "label": "Hosted World English Bible and source notes", "says": "Genesis has 50 chapters, 1,533 verse slots, and 35,623 whitespace-separated words in this site's WEB file; briefing references were checked against that file. The public source notes identify the upstream eBible edition.", "href": "/scriptures/SOURCES.md" },
+    { "id": "hosted-brenton", "label": "Hosted Brenton Septuagint and source notes", "says": "The site's public source notes identify the 1851 Brenton English edition. The hosted Genesis text was checked directly at 5:3 and 11:12 against WEB; those are comparisons between hosted translations, not a new collation of ancient manuscripts.", "href": "/scriptures/SOURCES.md" },
+    { "id": "hosted-oshb", "label": "Hosted Open Scriptures Hebrew Bible and source notes", "says": "The word-level Genesis files use a pinned Westminster Leningrad Codex text with Open Scriptures lemma and morphology data. The public original-language source notes identify the witness and revision; this is a medieval Masoretic witness, not an authorial autograph.", "href": "/scriptures/original/SOURCES.md" }
+  ],
+  "howToRead": [
+    { "tip": "Read chapters 1–11 as a sequence of widening consequences and incomplete restarts: creation, rupture, murder, flood, renewed violence, nations, Babel.", "refs": ["1:31", "3:23", "4:8", "6:11", "8:21", "9:11", "11:9"] },
+    { "tip": "Notice each ‘generations’ heading. The English wording varies, and Esau's heading recurs at 36:9; together these headings mark the book's family lines and major turns.", "refs": ["2:4", "5:1", "6:9", "10:1", "11:10", "11:27", "25:12", "25:19", "36:1", "36:9", "37:2"] },
+    { "tip": "Track the three-part promise — land, descendants, blessing — and note which piece is endangered in each episode.", "refs": ["12:1", "12:2", "12:3", "15:5", "17:8", "22:17"] },
+    { "tip": "When a scene resembles an earlier one, compare rather than dismiss it: spouse-sister episodes, wells, barren women, younger and older siblings, exile and return." },
+    { "tip": "Do not turn narrative description into permission. Watch what the narrator, consequences, later repetitions, and divine speech say about a character's choice." },
+    { "tip": "Read chapters 37–50 twice: once as Joseph's rise and once as Judah's change. The reconciliation depends on both.", "refs": ["37:26", "44:18", "44:33", "45:4", "50:20"] }
+  ],
+  "next": "Continue directly into Exodus: Genesis ends with a family preserved in Egypt, while Exodus opens after that protection has become enslavement. For a close literary comparison, return to Genesis 1–3 after reading Exodus 19–40 and notice how creation, sacred space, divine presence, human failure, and mediated access echo one another.",
+  "traditionNote": "Genesis has 50 chapters in every tradition here, but traditions do not always begin from the same base text. Protestant and most modern Western readings here default to a Hebrew-based English translation; the Eastern Orthodox route prefers Brenton's English translation of the Greek Septuagint. Differences between those routes may reflect Hebrew–Greek textual history as well as English style."
+}

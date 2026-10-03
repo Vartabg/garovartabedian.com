@@ -1,0 +1,422 @@
+{
+  "book": "EXO",
+  "bookName": "Exodus",
+  "oneLine": "Israel's release from slavery in Egypt, covenant at Sinai, and construction of the sanctuary where God will dwell among the people.",
+  "orient": "Exodus starts with a family under forced labor and ends with a community gathered around a newly built sanctuary. Read its three main movements together: oppression and departure from Egypt (1–15), provision and conflict on the wilderness road (16–18), and covenant, law, breach, renewal, and tabernacle at Sinai (19–40). The detailed building instructions in 25–31 return as a construction report in 35–40, with the golden calf and Moses' intercession between them. The final scene places the cloud and divine glory in the completed tent (40:34–38).",
+  "whereYouAre": "Genesis ends with Joseph's death and his family in Egypt (50:26). Exodus opens after an unspecified span of time, with a king who does not know Joseph (1:8). The descendants have multiplied, but they now face forced labor and an order to kill their sons. God's promises to Abraham, Isaac, and Jacob remain part of the story, and Exodus 2:24 explicitly recalls that covenant as the people cry out.",
+  "facts": {
+    "writtenBy": "The final narrator is unnamed. Exodus speaks of Moses in the third person and depicts Moses writing or receiving commands to write particular material (17:14; 24:4; 34:27). Jewish and Christian tradition attributed the Torah to Moses; historical-critical scholarship studies the book as a collection of traditions and literary layers whose precise formation remains debated.",
+    "writtenWhen": "The final form cannot be assigned a secure year. One influential source model places major Priestly shaping during or after the Babylonian exile; other models dispute the sequence and dates. Those proposals concern the writing and editing of the book, not a demonstrated date for the events it narrates.",
+    "writtenFor": "The book does not name an original dedicatee. In its finished form it addresses Israel's communal identity: Passover and unleavened bread are to be remembered and explained to children (12:14, 12:26–27; 13:8, 13:14), while the covenant and sanctuary organize life together.",
+    "place": "The narrative begins in Egypt (1–12), follows the route through the wilderness (13–18), and remains at the mountain called Sinai or Horeb from chapter 19 through chapter 40. These are settings in the story, not a proven location of composition.",
+    "covers": "From the oppression after Joseph's lifetime to the raising of the tabernacle. The book's own calendar places that final scene on the first day of the first month of the second year after departure (40:17); this is narrated time, not an independently established historical date.",
+    "size": "40 chapters and 1,213 verses in the hosted World English Bible, with about 30,500 English words."
+  },
+  "factSourceIds": {
+    "writtenBy": ["hosted-web", "usccb-pentateuch"],
+    "writtenWhen": ["usccb-pentateuch", "hosted-web"],
+    "writtenFor": ["hosted-web", "usccb-pentateuch"],
+    "place": ["hosted-web", "usccb-exodus"],
+    "covers": ["hosted-web"],
+    "size": ["hosted-web"]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew. The hosted original-language text is the Westminster Leningrad Codex via the Open Scriptures Hebrew Bible, with word-level morphology.",
+    "register": "Narrative prose carries the movement from Egypt to Sinai. It includes a victory poem (15:1–18), case laws and covenant commands (20–23), and detailed instructions and reports about a sanctuary (25–31; 35–40). The changes of form matter: the laws follow the rescue, and the construction follows a crisis and covenant renewal.",
+    "spokenWorld": "The story is set in Egypt and the wilderness. Its narrator and recorded dialogue are presented in Hebrew, including an explanation of the name Moses spoken by Pharaoh's daughter (2:10). That Hebrew wordplay does not establish the historical origin of his name or preserve an Egyptian utterance.",
+    "readerSignal": "The narrative explains or associates names as it goes: Moses and drawing from water (2:10), Passover and passing over marked houses (12:11–13, 12:27), and manna and the people's question (16:15, 16:31). Read these as explanations within the story; their historical etymologies may be more complicated.",
+    "englishLayer": "This briefing and its English counts use the hosted World English Bible (WEB); the reader can select other editions, and a tradition may open with another English edition. WEB prints \"Yahweh\" 397 times in Exodus, while the USCCB's English edition often prints \"the LORD.\" These English counts are not Hebrew counts.",
+    "textualHistory": [
+      {
+        "label": "The composed book",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "Exodus belongs to the Hebrew Pentateuch. The site provides the pointed medieval Westminster Leningrad Codex text through Open Scriptures, with word-level data. That witness allows readers to check the Hebrew wording; it is not a manuscript from the book's original composition or proof of one date for its final form.",
+        "sourceIds": ["hosted-oshb", "usccb-pentateuch"]
+      },
+      {
+        "label": "The earliest surviving witnesses",
+        "language": "Hebrew (fragments)",
+        "role": "earliest-extant",
+        "description": "Exodus also survives in earlier fragmentary scrolls. One scholarly study examines 4Q22, whose preserved text reaches Exodus 37:16, and compares the tabernacle account's distinct Hebrew, Greek, and Old Latin forms. Such fragments do not supply a complete earlier Exodus for this site's chapter-by-chapter reading.",
+        "sourceIds": ["aabner-tabernacle", "dss-library"]
+      },
+      {
+        "label": "The Greek translation",
+        "language": "Koine Greek (Septuagint)",
+        "role": "translation",
+        "description": "The Greek Pentateuch is an ancient translation tradition. This site hosts Brenton's English translation of the Septuagint. In the hosted editions, the construction account in chapters 35–39 differs substantially in order and verse alignment: WEB 38:1 begins the burnt-offering altar, while Brenton 38:1 begins the ark. The English comparison alone cannot decide which ancient Hebrew or Greek wording is earliest.",
+        "sourceIds": ["hosted-brenton", "hosted-web", "aabner-tabernacle"]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The displayed WEB English includes \"Yahweh\" for the divine name and \"Red Sea\" at 13:18. Those are this edition's choices. The hosted Hebrew reads yam suf at 13:18; linguistic claims are checked against the Hebrew layer separately.",
+        "sourceIds": ["hosted-web", "hosted-oshb"]
+      }
+    ],
+    "features": [
+      {
+        "title": "The divine name: יהוה, rendered \"Yahweh\" in this English",
+        "original": "יהוה — YHWH, the four-letter name",
+        "explanation": "At the burning bush, God answers Moses' question about the divine name with the Hebrew ehyeh asher ehyeh (3:14), a word association with the verb 'to be,' then gives YHWH as the name to speak to Israel (3:15). Exodus 6:3 says God was not known to the ancestors by this name, even though Genesis uses it in stories about them. The hosted WEB prints 'Yahweh' 397 times in Exodus.",
+        "translationNote": "WEB prints 'Yahweh'; the USCCB English Bible prints 'the LORD.' At 3:14 WEB says 'I AM WHO I AM,' while 'I will be' is also possible for ehyeh, as the USCCB note explains.",
+        "caution": "The pointed Hebrew witness is medieval, and 'Yahweh' is a reconstructed pronunciation. The link between ehyeh and YHWH is a word association in the passage, not a certain historical etymology of the divine name. Exodus 6:3 remains open to more than one reading in context.",
+        "refs": ["3:14", "3:15", "6:2", "6:3", "34:6"],
+        "sourceIds": ["hosted-web", "hosted-oshb", "usccb-ex3", "usccb-ex6"]
+      },
+      {
+        "title": "Three Hebrew verbs behind one English 'harden'",
+        "original": "חזק (chazaq, 'strengthen'), כבד (kaved, 'be heavy'), קשׁה (qashah, 'be hard')",
+        "explanation": "The hosted Hebrew uses forms of chazaq at 4:21, qashah at 7:3, and kaved at 7:14 and 8:15 for Pharaoh's heart. WEB often renders these with 'harden' or 'stubborn,' so the three roots are less visible in English. The subjects also change: Pharaoh makes his heart heavy at 8:15 and 9:34; Yahweh hardens it at 9:12.",
+        "translationNote": "The same English word can represent different Hebrew roots. Comparing the repeated scenes helps readers see both the vocabulary and the changing subject.",
+        "caution": "The vocabulary and narrative alternation do not by themselves settle how divine action and Pharaoh's responsibility fit together. The USCCB 4:21 note gives one theological reading, while the text should be read in its full sequence.",
+        "refs": ["4:21", "7:3", "7:14", "8:15", "9:12"],
+        "sourceIds": ["hosted-oshb", "hosted-web", "usccb-ex4"]
+      },
+      {
+        "title": "'Let my people go, that they may serve me' — one verb for serve and worship",
+        "original": "עבד — 'avad — 'serve, work, worship'",
+        "explanation": "Exodus 1:14 uses the Hebrew 'avad word family for Israel's labor under Pharaoh. At 3:12 God promises that the people will serve or worship God at the mountain; Pharaoh then hears the demand to release them for that service (7:16; 8:1; 9:1). The shared root links forced work and worship of God without making them equivalent.",
+        "translationNote": "English can say 'labor,' 'serve,' or 'worship' for forms of this root. The echo is clearer in the hosted Hebrew than in a single English rendering.",
+        "caution": "WEB has seven case-sensitive occurrences of 'Let my people go' (5:1; 7:16; 8:1; 8:20; 9:1; 9:13; 10:3). That is an English string count; the wording and purpose clauses vary across the passages.",
+        "refs": ["5:1", "7:16", "8:1", "9:1", "10:3"],
+        "sourceIds": ["hosted-web", "hosted-oshb", "usccb-ex3"]
+      },
+      {
+        "title": "Command and completion in the tabernacle account",
+        "original": "כַּאֲשֶׁר צִוָּה יְהוָה אֶת מֹשֶׁה — 'as Yahweh commanded Moses'",
+        "explanation": "Instructions for making the sanctuary fill 25–31; 35–40 reports the work. In WEB chapters 39–40, the exact English phrase 'as Yahweh commanded Moses' appears 14 times, seven in each chapter. The repeated formula lets readers compare command with completed work after the golden calf crisis and covenant renewal.",
+        "translationNote": "The hosted Hebrew has the corresponding formula at 39:1, 39:5, and 40:19; the English count is edition-specific. Brenton's English order for the construction report is substantially different in chapters 35–39, so corresponding verse numbers cannot be assumed.",
+        "caution": "Repetition is a visible feature of the finished WEB/Hebrew account. Its literary effect is an interpretation; neither the count nor an English comparison establishes the earliest ancient ordering.",
+        "refs": ["39:1", "39:5", "39:7", "40:19", "40:21"],
+        "sourceIds": ["hosted-web", "hosted-oshb", "hosted-brenton", "aabner-tabernacle"]
+      }
+    ],
+    "examplesHeading": "Words Exodus stops to explain",
+    "examples": [
+      {
+        "ref": "3:14",
+        "form": "אֶהְיֶה אֲשֶׁר אֶהְיֶה — ehyeh asher ehyeh",
+        "meaning": "\"I AM WHO I AM\"",
+        "why": "God's answer to Moses' question about the divine name associates ehyeh with YHWH in the following verse. 'I will be' is also a possible rendering, so the English line should not be treated as a complete etymology.",
+        "sourceIds": ["hosted-oshb", "hosted-web", "usccb-ex3"]
+      },
+      {
+        "ref": "2:10",
+        "form": "מֹשֶׁה — Mosheh (Moses)",
+        "meaning": "linked by the story to Hebrew meshithihu, 'I drew him out'",
+        "why": "Pharaoh's daughter names the child while the Hebrew narrator supplies a sound association. The USCCB note cautions that the name itself is probably Egyptian in origin; the narrative wordplay is not a proven historical derivation.",
+        "sourceIds": ["hosted-web", "hosted-oshb", "usccb-ex2"]
+      },
+      {
+        "ref": "16:15",
+        "form": "מָן הוּא — man hu",
+        "meaning": "usually rendered 'What is it?' in this verse",
+        "why": "The people's question is linked to the name manna in 16:31. Ancient versions and WEB read the phrase as a question; the USCCB note records an alternate 'This is manna' reading.",
+        "sourceIds": ["hosted-oshb", "hosted-web", "usccb-ex16"]
+      },
+      {
+        "ref": "12:11",
+        "form": "פֶּסַח — pesach",
+        "meaning": "\"Passover\" — \"it is Yahweh's Passover\"",
+        "why": "The account links the meal's name with Yahweh passing over marked houses (12:13, 12:27). The chapter also commands later generations to explain the rite to children.",
+        "sourceIds": ["hosted-web", "hosted-oshb", "usccb-ex12"]
+      },
+      {
+        "ref": "25:9",
+        "form": "מִשְׁכָּן — mishkan",
+        "meaning": "\"tabernacle\" — literally \"dwelling place\"",
+        "why": "The word for the tent belongs to the Hebrew dwelling word family. Compare God's stated purpose in 25:8, 'that I may dwell among them.' This links the detailed specifications to the book's ending.",
+        "sourceIds": ["hosted-oshb", "hosted-web", "bdb-mishkan"]
+      },
+      {
+        "ref": "33:18",
+        "form": "כְבֹדֶךָ — kevodekha, 'your glory' (from כָּבוֹד, kavod)",
+        "meaning": "'glory'; associated with the Hebrew root for weight or heaviness",
+        "why": "Moses asks to see God's glory in 33:18, and the glory fills the completed tabernacle in 40:34. The consonantal root also appears in descriptions of Pharaoh's heavy heart; these uses have different meanings in context.",
+        "sourceIds": ["hosted-oshb", "hosted-web", "lexham-glory"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Narrative, covenant law, and sanctuary instruction",
+    "how": "Follow the changes of form. The story moves through oppression, departure, and wilderness travel; Sinai brings covenant words and case laws; sanctuary instructions are followed by a construction account. Exodus 20:2 recalls the release from Egypt before giving commands. Chapters 32–34 place the golden calf, Moses' intercession, and renewed covenant between the instructions and the building report."
+  },
+  "cast": [
+    { "name": "Yahweh", "who": "The God of Abraham, Isaac, and Jacob, who hears Israel's cry (2:23–25), commissions Moses (3–4), confronts Pharaoh (7–12), makes and renews the covenant (19–24; 34), and fills the finished tabernacle (40:34–38)." },
+    { "name": "Moses", "who": "Raised in Pharaoh's household, then a fugitive in Midian, he is called to lead Israel. He speaks to Pharaoh, mediates the covenant and law, and intercedes after the golden calf (32:11–14, 32:30–32)." },
+    { "name": "Aaron", "who": "Moses' brother and spokesman (4:14–16), appointed with his sons for priestly service (28:1). He also makes the golden calf and then gives a self-excusing account of it (32:2–5, 32:21–24)." },
+    { "name": "Pharaoh", "who": "A title used for Egypt's unnamed ruler or rulers. The king who threatens Hebrew boys dies in 2:23; the narrative does not identify the later ruler by name. At 5:2 Pharaoh asks why he should heed Yahweh." },
+    { "name": "Miriam", "who": "Named in 15:20 as a prophetess and Aaron's sister, she leads women in song and dance after the sea crossing. The watcher at Moses' basket in 2:4 is called his sister but is not named in that scene." },
+    { "name": "The midwives, Shiphrah and Puah", "who": "Named women who refuse Pharaoh's order to kill Hebrew boys and answer him when challenged (1:15–21)." },
+    { "name": "Jethro", "who": "A Midianite priest and Moses' father-in-law. He welcomes Moses' family, blesses Yahweh for the rescue, and advises Moses to delegate judging cases (18:1–27)." },
+    { "name": "The people of Israel", "who": "People suffering forced labor, then leaving Egypt with others in a 'mixed multitude' (12:38). The narrative shows complaint, covenant assent, calf worship, intercession, willing gifts, and skilled work." },
+    { "name": "Bezalel and Oholiab", "who": "Appointed artisans for the sanctuary (31:1–6; 35:30–35). Bezalel is said to be filled with God's Spirit for skilled work; Oholiab and others receive wisdom and teach or make the furnishings." }
+  ],
+  "shape": [
+    {
+      "heading": "Slavery, a baby, a bush — and a demand refused",
+      "chapters": "1–6",
+      "note": "Israel enslaved; Moses born, exiled, and called at the burning bush; the name revealed; the first audience with Pharaoh makes everything worse."
+    },
+    {
+      "heading": "The plagues — whose word rules Egypt?",
+      "chapters": "7–11",
+      "note": "Nine plagues in escalating waves, Pharaoh's heart hardening — his own doing and God's, alternating — and the announcement of the last, worst blow."
+    },
+    {
+      "heading": "Passover, exodus, and the sea",
+      "chapters": "12–15",
+      "note": "Passover instructions, the death of Egypt's firstborn, departure, pursuit and sea crossing, then the victory song. Chapter 15 ends with a water shortage on the road."
+    },
+    {
+      "heading": "The wilderness road",
+      "chapters": "16–18",
+      "note": "Hunger and thirst prompt complaints and divine provision; the people receive manna and sabbath instructions, face an attack by Amalek, and hear Jethro's advice on judging disputes."
+    },
+    {
+      "heading": "Sinai: covenant and law",
+      "chapters": "19–24",
+      "note": "The meeting at the mountain. The Ten Commandments, the covenant code of case law, and a sealing ceremony in blood: \"We will do all that Yahweh has said\" (24:7)."
+    },
+    {
+      "heading": "The tabernacle, as commanded",
+      "chapters": "25–31",
+      "note": "Seven chapters of instruction for the sanctuary and its service — furnishings, tent, altar, priestly garments and rites, artisans — ending with the sabbath command and two stone tablets."
+    },
+    {
+      "heading": "The calf, the crisis, the name",
+      "chapters": "32–34",
+      "note": "Israel makes the calf before Moses descends. Moses breaks the tablets and intercedes; judgment follows, then renewed covenant words and the divine self-description in 34:6–7."
+    },
+    {
+      "heading": "The tabernacle, built — and filled",
+      "chapters": "35–40",
+      "note": "Gifts and skilled labor produce the sanctuary, which Moses inspects and erects. The cloud covers the tent and the glory fills it; Moses cannot enter at that moment (40:34–35). In the hosted Brenton translation, the construction material is ordered differently."
+    }
+  ],
+  "purpose": "In the finished book, release from Egypt grounds Israel's covenant identity (20:2), and prescribed remembrance carries the departure story to later generations (12:14, 12:26–27; 13:8, 13:14). The sanctuary instructions and final cloud scene develop the question of God's presence among this community (25:8; 40:34–38). This describes the book's stated themes, not a recoverable intention of one named author.",
+  "snags": [
+    {
+      "snag": "God hardens Pharaoh's heart — so how is Pharaoh responsible?",
+      "help": "Read the whole sequence. Pharaoh makes his heart heavy or hardens it (8:15, 8:32, 9:34), and Yahweh hardens it (9:12; 10:20), after earlier announcements (4:21; 7:3). The USCCB note on 4:21 reads divine sovereignty and Pharaoh's responsibility together. Other theological accounts differ. The briefing tracks the subjects and verbs without claiming that the moral tension disappears."
+    },
+    {
+      "snag": "WEB says 'Red Sea' at 13:18; what is yam suf?",
+      "help": "The hosted Hebrew reads yam suf, often rendered 'Sea of Reeds,' while WEB uses 'Red Sea.' The USCCB note at Exodus 2:3 connects the Hebrew word suf with reeds and notes the traditional English rendering. The phrase alone does not locate a specific modern body of water; avoid turning a translation choice into a settled route."
+    },
+    {
+      "snag": "WEB says about six hundred thousand men left on foot (12:37). How should the number be read?",
+      "help": "WEB's figure excludes children, and 38:26 gives a more exact count of 603,550 males for a later levy. A literal reading implies a population much larger than the men counted. Some interpreters propose that Hebrew eleph denotes a clan or military unit here; others see literary magnification or a smaller historical core. The unit proposal has difficulties when applied to 38:26 and the census lists. These are readings of the ancient numbers, not measured population data."
+    },
+    {
+      "snag": "Yahweh met Moses and wanted to kill him (4:24-26).",
+      "help": "WEB names Moses as the threatened person in 4:24; Zipporah circumcises her son and the threat ends. The Hebrew wording leaves some pronoun referents and the phrase 'bridegroom of blood' difficult. The USCCB note favors a connection to the neglected circumcision command in Genesis 17, while noting the passage's unresolved details. Name the WEB wording before discussing another translation's ambiguity."
+    },
+    {
+      "snag": "Chapter 21 regulates slavery after a story of rescue from slavery.",
+      "help": "The law releases a male Hebrew servant after six years (21:2), yet it also lets a master keep a wife and children assigned during service (21:4–6), permits a father to sell a daughter (21:7–11), and says a master is not punished if a beaten servant gets up after a day or two (21:20–21). Other rules penalize kidnapping and require release for permanent bodily injury (21:16, 21:26–27). These limits coexist with ownership and violence; they do not abolish slavery."
+    },
+    {
+      "snag": "The tabernacle chapters repeat almost everything twice.",
+      "help": "Chapters 25–31 give instructions; 35–40 report gifts, artisans, construction, inspection, and erection. The WEB construction report repeats 'as Yahweh commanded Moses' 14 times in chapters 39–40. Compare the two sections to see what was made and how the intervening calf episode changes the stakes. When using Brenton's English Septuagint, follow its own 35–39 order and verse numbers."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Who wrote Exodus, and how did it reach this form?",
+      "settled": "The book does not name its final narrator. It speaks of Moses in the third person and reports him writing particular material (17:14; 24:4; 34:27–28). Those notices do not say how every chapter of the final book was composed.",
+      "positions": [
+        {
+          "view": "Mosaic authorship",
+          "grounds": "A longstanding Jewish and Christian attribution of the Torah to Moses. Its readers connect the book's writing notices and later scriptural references to Mosaic law with his authority; some allow scribal work or later updating. The attribution is a tradition, not an explicit signature on this book."
+        },
+        {
+          "view": "Multiple traditions and later literary shaping",
+          "grounds": "Historical-critical readers compare scenes such as the name revelations (3:13–15; 6:2–3), changes of style, repeated material, and the tabernacle accounts as evidence of literary growth. The USCCB Pentateuch introduction presents a classic source model with Priestly editing during or after the Babylonian exile and also notes major challenges to that reconstruction. No single sequence or date is established by the seams alone."
+        }
+      ],
+      "soWhat": "The source question changes what a reader infers from repetitions and tensions. Start with the finished text and distinguish its explicit writing notices from later claims about its formation."
+    },
+    {
+      "question": "Can the departure from Egypt be dated or reconstructed historically?",
+      "settled": "Exodus names a store-city Raamses (1:11) but gives no personal name for the departure-era Pharaoh. A later biblical chronology gives 480 years between the exodus and Solomon's temple (1 Kings 6:1). Neither line supplies an independently verified date or a direct Egyptian record of the narrated departure.",
+      "positions": [
+        {
+          "view": "An early, fifteenth-century BCE chronology",
+          "grounds": "This reconstruction treats the 480 years of 1 Kings 6:1 arithmetically; using a conventional date for Solomon's fourth year yields roughly 1446 BCE. It then has to explain why Exodus 1:11 uses the place name Raamses, often associated with a later Egyptian era."
+        },
+        {
+          "view": "A later, thirteenth-century BCE chronology",
+          "grounds": "This reconstruction gives weight to the place name Raamses and the Egyptian setting of the eastern Delta. It treats the 480 years differently, for example as schematic chronology. The place name does not identify the unnamed Pharaoh of the story or prove a departure at the narrated scale."
+        },
+        {
+          "view": "A cultural-memory account without one datable mass departure",
+          "grounds": "Ronald Hendel reads Exodus as collective memory shaped from historical experiences, story, and identity. On such a reading, some people's escape from Egyptian bondage is possible without equating the remembered tradition with a single departure of the size narrated. Other scholars, including James Hoffmeier, argue that Egyptian context supports more of the tradition; the available publisher abstract does not itself demonstrate every episode."
+        }
+      ],
+      "soWhat": "Read the biblical numbers and place names as claims in the text, and keep the question of external corroboration separate. The narrated events, the growth of the tradition, and the date of the book's final form are three different questions."
+    },
+    {
+      "question": "Did the patriarchs know the name Yahweh?",
+      "settled": "Exodus 6:3 says God was not known to Abraham, Isaac, and Jacob by the name Yahweh, while the narrator of Genesis uses that name in ancestral scenes. The relation between these statements invites interpretation.",
+      "positions": [
+        {
+          "view": "The name was newly revealed to Moses",
+          "grounds": "This reads 6:3 as a first disclosure in Moses' generation and treats Genesis's uses as its narrator's vocabulary. Source-critical scholars may also attribute the difference to distinct literary traditions, as the USCCB 6:3 note explains."
+        },
+        {
+          "view": "The ancestors had not yet known what the name would mean in action",
+          "grounds": "This reads 'known' in relation to the deliverance promised in Exodus 6:4–8. The USCCB note says the immediate context emphasizes the new understanding of God that comes with the name, even while the wording of 6:3 implies the name had previously been unknown."
+        }
+      ],
+      "soWhat": "Keep the wording of 6:3 and the Genesis usage visible. The proposals explain the tension differently; neither should be presented as a plain paraphrase of both texts."
+    }
+  ],
+  "sources": [
+    {
+      "id": "usccb-exodus",
+      "label": "USCCB, Introduction to the Book of Exodus",
+      "says": "Outlines the narrative's principal sections from Egyptian oppression through the completed tabernacle and explains the Greek and Hebrew book titles. This introduction does not date the composition or name the exodus Pharaoh.",
+      "url": "https://bible.usccb.org/bible/exodus/0"
+    },
+    {
+      "id": "usccb-pentateuch",
+      "label": "USCCB, Introduction to the Pentateuch",
+      "says": "Documents traditional Mosaic attribution, a classic source-critical model, and later challenges to that model; separates the finished Pentateuch from uncertain source reconstruction.",
+      "url": "https://bible.usccb.org/bible/thepentateuch/0"
+    },
+    {
+      "id": "usccb-ex2",
+      "label": "USCCB, Exodus 2 notes",
+      "says": "Distinguishes the story's Hebrew play on Moses' name from its probable Egyptian origin; notes that the basket watcher is unnamed here and connects suf with reeds.",
+      "url": "https://bible.usccb.org/bible/exodus/2"
+    },
+    {
+      "id": "usccb-ex3",
+      "label": "USCCB, Exodus 3 notes",
+      "says": "Explains the ehyeh/YHWH word association and the 'serve/work/worship' range of the Hebrew 'avad root, while marking the divine-name explanation as interpretive.",
+      "url": "https://bible.usccb.org/bible/exodus/3"
+    },
+    {
+      "id": "usccb-ex4",
+      "label": "USCCB, Exodus 4 notes",
+      "says": "Discusses Pharaoh's hardening at 4:21 and the difficult Zipporah circumcision scene at 4:24–26, including ambiguous addressees and the uncertain 'bridegroom of blood' phrase.",
+      "url": "https://bible.usccb.org/bible/exodus/4"
+    },
+    {
+      "id": "usccb-ex6",
+      "label": "USCCB, Exodus 6 notes",
+      "says": "Identifies the implication of 6:3 that the divine name was previously unknown while also explaining the passage's emphasis on new knowledge through deliverance; describes the source-critical proposal as a model.",
+      "url": "https://bible.usccb.org/bible/exodus/6"
+    },
+    {
+      "id": "usccb-ex12",
+      "label": "USCCB, Exodus 12 notes",
+      "says": "Records Passover's instructions for later generations, the deaths including prisoners' firstborn, the mixed departing company, and the Greek/Samaritan variant in 12:40.",
+      "url": "https://bible.usccb.org/bible/exodus/12"
+    },
+    {
+      "id": "usccb-ex16",
+      "label": "USCCB, Exodus 16 notes",
+      "says": "Reports the ancient-version reading of man hu as 'What is this?' and an alternate 'This is manna' reading at 16:15.",
+      "url": "https://bible.usccb.org/bible/exodus/16"
+    },
+    {
+      "id": "usccb-ex21",
+      "label": "USCCB, Exodus 21 notes",
+      "says": "Describes the ancient legal setting and the chapter's slavery provisions without claiming abolition; its rendering of 21:22 as miscarriage differs from the hosted WEB's 'gives birth prematurely.'",
+      "url": "https://bible.usccb.org/bible/exodus/21"
+    },
+    {
+      "id": "usccb-ex33",
+      "label": "USCCB, Exodus 33 notes",
+      "says": "Sets 'face to face' at 33:11 beside 33:20's prohibition on seeing God's face and discusses the face/presence wording.",
+      "url": "https://bible.usccb.org/bible/exodus/33"
+    },
+    {
+      "id": "oxford-exodus-memory",
+      "label": "Ronald Hendel, 'The Exodus in Biblical Memory' (Oxford)",
+      "says": "The accessible chapter studies Exodus as collective memory and specifically notes the unnamed Pharaoh, possible Egyptian bondage among some early Israelites, and limits of direct historical reconstruction.",
+      "url": "https://academic.oup.com/book/10720/chapter/158790933"
+    },
+    {
+      "id": "oxford-israel-egypt",
+      "label": "James K. Hoffmeier, Israel in Egypt (Oxford)",
+      "says": "The accessible publisher abstract presents an Egyptological defense of substantial historical context for Israel-in-Egypt traditions; the full book's argument was not treated as read here.",
+      "url": "https://academic.oup.com/book/25374"
+    },
+    {
+      "id": "bas-dating-exodus",
+      "label": "Biblical Archaeology Society, 'Dating the Exodus'",
+      "says": "A public sidebar describing early, late, and no-date approaches and the problems each faces. It is an overview of positions, not independent proof of an event or named Pharaoh.",
+      "url": "https://library.biblicalarchaeology.org/sidebar/dating-the-exodus/"
+    },
+    {
+      "id": "bas-exodus-numbers",
+      "label": "Biblical Archaeology Society, note on Exodus numbers",
+      "says": "Summarizes proposals to read eleph as a family or military unit and explicitly says those proposals do not solve all the census difficulties.",
+      "url": "https://library.biblicalarchaeology.org/footnote/footnote-4-what-we-dont-know-about-moses-and-the-exodus/"
+    },
+    {
+      "id": "torah-exodus-history",
+      "label": "TheTorah.com, 'The Torah's Exodus'",
+      "says": "An authored critical reading of Exodus's numbers: treats a literal total as a very large population, records and critiques the eleph-as-clan proposal by comparison with 38:26, and discusses literary enlargement or a smaller possible historical core. Its historical conclusions remain the author's argument.",
+      "url": "https://www.thetorah.com/article/the-torahs-exodus"
+    },
+    {
+      "id": "aabner-tabernacle",
+      "label": "Hila Dayfani, 'Material Reconstruction of 4Q22' (AABNER)",
+      "says": "The accessible research abstract identifies four discrete forms of Exodus 35–40, says extant 4Q22 reaches 37:16, and presents the author's reconstruction as a proposal rather than a settled text history.",
+      "url": "https://aabner.org/ojs/index.php/beabs/article/view/1031"
+    },
+    {
+      "id": "dss-library",
+      "label": "The Leon Levy Dead Sea Scrolls Digital Library",
+      "says": "The Israel Antiquities Authority's public image archive provides context for fragmentary Dead Sea Scroll witnesses; the specific 4Q22 tabernacle claim is grounded in Dayfani's article abstract.",
+      "url": "https://www.deadseascrolls.org.il/explore-the-archive"
+    },
+    {
+      "id": "bdb-mishkan",
+      "label": "Brown–Driver–Briggs lexicon, mishkan entry (OpenBible)",
+      "says": "The accessible public-domain lexicon entry derives mishkan from shakan and identifies its dwelling-place and Exodus tabernacle uses.",
+      "url": "https://www.openbible.com/strongs/hebrew/4908.htm"
+    },
+    {
+      "id": "lexham-glory",
+      "label": "Lexham Bible Dictionary, 'Glory' excerpt",
+      "says": "The accessible excerpt relates Hebrew kavod to weight and to the contextual meanings honor and glory; the full dictionary article was not read.",
+      "url": "https://biblia.com/books/lbd/offset/9484882"
+    },
+    {
+      "id": "hosted-oshb",
+      "label": "Hosted Open Scriptures Hebrew Bible and source notes",
+      "says": "This site's word-level Exodus Hebrew is the Westminster Leningrad Codex through Open Scriptures. Forms at the cited verses, including the three hardening roots and 'avad word family, were checked against the hosted chapter files.",
+      "href": "/scriptures/original/SOURCES.md"
+    },
+    {
+      "id": "hosted-brenton",
+      "label": "Hosted Brenton English Septuagint and source notes",
+      "says": "This site's public notes identify the Brenton English Septuagint edition. Its Exodus 35–39 order and verse slots were compared directly with the hosted WEB; this is an English-edition comparison, not a new collation of ancient manuscripts.",
+      "href": "/scriptures/SOURCES.md"
+    },
+    {
+      "id": "hosted-web",
+      "label": "Hosted World English Bible and source notes",
+      "says": "The hosted Exodus file has 40 chapters, 1,213 nonempty verse slots, and 30,520 whitespace-separated words. The 397 instances of 'Yahweh,' seven case-sensitive 'Let my people go' strings, and 14 case-sensitive 'as Yahweh commanded Moses' strings were measured against this file; quotations and references were also checked there.",
+      "href": "/scriptures/SOURCES.md"
+    }
+  ],
+  "howToRead": [
+    { "tip": "Read 1–15 as a continuous story, but notice that Passover instructions arrive before the departure and that the sea song is followed by a water crisis.", "refs": ["12:1", "14:21", "15:22"] },
+    { "tip": "At the burning bush, follow Moses' questions and objections alongside God's promises. At 4:24–26, stay close to the hosted wording and consult the note before identifying every pronoun or motive.", "refs": ["3:12", "3:14", "4:1", "4:10", "4:24"] },
+    { "tip": "Track the subject and verb when Pharaoh's heart hardens. The story sometimes names Pharaoh and sometimes Yahweh; let the sequence stand before choosing an explanation.", "refs": ["4:21", "8:15", "8:32", "9:12", "10:20"] },
+    { "tip": "Start the covenant commands at 20:2, where God recalls the rescue from Egypt. In the following case laws, read both the protections and the rules that still permit owning and beating servants.", "refs": ["20:2", "21:4", "21:20", "21:26"] },
+    { "tip": "Read 24–40 in sequence: covenant assent, sanctuary instructions, calf and intercession, construction, and the final cloud. The earlier instructions help explain the later work report.", "refs": ["24:7", "25:8", "32:1", "40:34"] },
+    { "tip": "For chapters 35–39, verify the displayed edition before following a verse reference. WEB 38:1 describes an altar; Brenton 38:1 describes the ark, so identical chapter and verse labels do not point to the same object.", "refs": ["35:20", "37:1", "38:1", "39:1"] }
+  ],
+  "next": "Leviticus begins with Yahweh calling to Moses from the newly completed Tent of Meeting (Leviticus 1:1) and develops the offerings and holiness instructions. Numbers later resumes the journey from Sinai. Psalms 78, 105, and 106 retell the departure and wilderness experience as poetry.",
+  "traditionNote": "Exodus is the second Torah book. Its Hebrew title Shemot ('Names') comes from its opening words; the Greek title behind English 'Exodus' means departure. The hosted WEB and Brenton English Septuagint both divide it into 40 chapters, but chapter and verse boundaries do not always align. The construction report is especially different: WEB 37:1 begins the ark and 38:1 the burnt-offering altar, while Brenton 37:1 begins the curtains and 38:1 the ark. These are observations about the hosted English editions, not a determination of the earliest Hebrew or Greek text."
+  }

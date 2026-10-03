@@ -1,0 +1,227 @@
+{
+  "book": "GEN",
+  "chapter": 6,
+  "bookName": "Genesis",
+  "summary": "Human violence and corruption grieve God, while a brief opening describes “God’s sons,” human daughters, and renowned figures without fully identifying them. God announces destruction by flood, but favors Noah and commands him to build a ship, gather his household and living creatures, and store food.",
+  "whyItMatters": "The judgment is explicitly tied to violence, yet it also threatens animals and nearly all human life. Noah’s instructions set up both the loss and the preservation narrated in the flood chapters.",
+  "context": {
+    "author": "Genesis names no historical writer. Jewish and Christian tradition associates the Torah with Moses; the book briefing describes older traditions shaped into a final literary form, without a settled account of every stage.",
+    "audience": "The book addresses Israel through a story of shared human origins and the family from whom Israel traces its ancestry; no single first audience is named in this chapter.",
+    "date": "The narrated events belong to primeval or ancestral time, not to a securely dated writing event. Major stages of Genesis are often placed across the monarchic to Persian periods, with exact models and dates debated.",
+    "setting": "The earth before the flood and the ship Noah is instructed to build.",
+    "literaryForm": "Enigmatic opening about ancient figures, divine assessment of corruption, and detailed rescue instructions."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "The genealogy reaches Noah and names his sons Shem, Ham, and Japheth. The next passage shifts from descent to the condition of the wider earth.",
+      "verseRefs": [
+        "5:28-32"
+      ]
+    },
+    "here": {
+      "text": "Read the severe diagnosis of human violence alongside the practical command that preserves Noah’s household and other living creatures.",
+      "verseRefs": [
+        "6:5-22"
+      ]
+    },
+    "after": {
+      "text": "Noah enters the ship, the waters rise, and the next chapter says life outside it perishes.",
+      "verseRefs": [
+        "7:1-24"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "God’s sons and human daughters",
+      "verses": "1-4",
+      "note": "An unexplained group takes wives, and the text remembers mighty figures."
+    },
+    {
+      "heading": "Grief, destruction, and Noah’s favor",
+      "verses": "5-10",
+      "note": "God sees pervasive evil and announces destruction, while Noah is described as righteous."
+    },
+    {
+      "heading": "A violent earth and divine decision",
+      "verses": "11-13",
+      "note": "Corruption and violence are repeated as grounds for ending living flesh."
+    },
+    {
+      "heading": "Ship design",
+      "verses": "14-16",
+      "note": "Noah receives building materials, dimensions, rooms, levels, and a door."
+    },
+    {
+      "heading": "Flood, covenant, and survival plan",
+      "verses": "17-22",
+      "note": "The coming flood is named, but family, paired creatures, and food are to be taken aboard."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "6:5",
+      "text": "Yahweh saw that the wickedness of man was great on the earth, and that every imagination of the thoughts of man’s heart was continually only evil.",
+      "why": "The judgment is grounded in the narrator’s bleak assessment of human thoughts."
+    },
+    {
+      "ref": "6:11",
+      "text": "The earth was corrupt before God, and the earth was filled with violence.",
+      "why": "Violence is explicitly named as a defining condition of the earth."
+    },
+    {
+      "ref": "6:18",
+      "text": "But I will establish my covenant with you. You shall come into the ship, you, your sons, your wife, and your sons’ wives with you.",
+      "why": "The first covenant promise to Noah appears within the survival instructions."
+    }
+  ],
+  "themes": [
+    "human violence",
+    "divine grief",
+    "Noah’s favor",
+    "flood judgment",
+    "preservation of living creatures"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Who are “God’s sons” and the Nephilim?",
+      "answer": "Genesis names God’s sons, human daughters, and Nephilim without defining the groups. One reading takes the sons as heavenly beings; a later Christian interpretation represented by Augustine takes them as descendants of Seth. Those are interpretations of the brief passage, which itself gives the Nephilim no biography beyond calling them ancient mighty people of renown.",
+      "verseRefs": [
+        "6:1-4"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1
+      ],
+      "evidenceSourceIds": [
+        "usccb-gen6",
+        "augustine-city-god-15"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What is a “cubit” in the ship dimensions?",
+      "answer": "It is the length unit used to give the ship’s length, width, and height. The text supplies proportional dimensions, but it does not define a precise modern measurement for its cubit.",
+      "verseRefs": [
+        "6:14-16"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        14
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What reason does the chapter give for the flood?",
+      "answer": "God sees great wickedness and a corrupt earth filled with violence. The decision is narrated as a response to that condition; the chapter does not reduce it to a single forbidden act or the obscure marriages in its opening.",
+      "verseRefs": [
+        "6:5-13"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        5
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Why are animals included in the destruction when human violence is the stated problem?",
+      "answer": "God’s announcement includes animals, creeping things, and birds, while the diagnosis chiefly names human thoughts and violence. That difference is a hard feature of the story, not something the chapter itself explains away.",
+      "verseRefs": [
+        "6:5-7",
+        "6:11-13"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Does God’s grief mean the text says God lacked information?",
+      "answer": "The narrative says God saw evil, was sorry, and grieved in his heart. It depicts a responsive divine judgment, but it does not offer a philosophical account of foreknowledge or change in God.",
+      "verseRefs": [
+        "6:5-7"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        5
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "How is Noah distinguished from his generation?",
+      "answer": "Noah finds favor, is called righteous and blameless among his contemporaries, and walks with God. The chapter then reports his obedience to all the ship instructions, contrasting him with the violent world described around him.",
+      "verseRefs": [
+        "6:8-10",
+        "6:22"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        8,
+        22
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What does “covenant” first mean for Noah here?",
+      "answer": "God says he will establish it with Noah while announcing that Noah and his household will enter the ship. More of its terms come after the flood, so verse 18 is an opening promise rather than a full list of obligations.",
+      "verseRefs": [
+        "6:17-21"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        17
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Why gather food as well as paired animals?",
+      "answer": "The survival plan includes Noah’s family, representative living creatures, and provisions for both. The instructions make preservation a sustained task during the flood rather than a single moment of escape.",
+      "verseRefs": [
+        "6:18-22"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        18
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Nephilim",
+      "def": "The ancient figures named in verse 4, whose identity and origin are not fully explained in this chapter."
+    },
+    {
+      "term": "cubit",
+      "def": "The length unit used to state the ship’s dimensions."
+    },
+    {
+      "term": "pitch",
+      "def": "The coating Noah is told to apply inside and outside the ship."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "6d0fbac381aed6e0f8771ab58536b3fcb0349602798840ce8585a5244ec1cf03",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

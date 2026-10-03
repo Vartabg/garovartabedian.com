@@ -1,0 +1,191 @@
+{
+  "book": "ROM",
+  "bookName": "Romans",
+  "oneLine": "Paul's sustained letter about God's faithfulness and a new, Spirit-formed people in which Jew and Gentile receive mercy without boasting over one another.",
+  "orient": "Romans is often treated like a theology textbook, but it is a real letter preparing for a real visit. Paul writes to assemblies he did not found, introduces the gospel he proclaims, addresses tensions between Jewish and Gentile believers, explains his anguish and hope for Israel, asks for support on a mission toward Spain, and names a dense network of coworkers at the end. Its argument circles through accusation, objection, Scripture, example, lament, praise, and practical appeal. The center is not an abstract mechanism detached from community: God's righteous action in Christ creates one body whose members owe one another love.",
+  "whereYouAre": "Paul is near the end of his eastern Mediterranean mission, probably in Corinth or nearby, preparing to carry a collection to Jerusalem and then travel west through Rome toward Spain. Claudius had expelled Jews from Rome in AD 49; after his death some returned to house churches that had continued with more Gentile membership. The letter never narrates that background directly, but its repeated Jew/Gentile address, disputes over food and days, and warnings against Gentile arrogance fit a community renegotiating life together.",
+  "facts": {
+    "writtenBy": "Paul, who names himself in 1:1, with Tertius identifying himself in 16:22 as the person who wrote the letter — probably the scribe taking Paul's dictation or preparing the physical copy.",
+    "writtenWhen": "Usually AD 56–58, during Paul's stay in Greece before the Jerusalem journey described in Romans 15:25–28 and Acts 20–21.",
+    "writtenFor": "Several Christian assemblies in Rome, including Jewish and Gentile believers. Paul did not establish them and writes with both confidence and diplomatic care.",
+    "place": "Probably Corinth or its vicinity. Phoebe is commended from Cenchreae, Corinth's eastern port, and Gaius hosts Paul and a church.",
+    "covers": "Not a narrative span. It presents Paul's gospel from universal human disorder through Abraham, Christ, baptism, Spirit, Israel's future, shared ethics, travel plans, and greetings.",
+    "size": "16 chapters, 433 verses, and 9,433 words in the hosted World English Bible."
+  },
+  "language": {
+    "writtenIn": "Koine Greek, in the form of an ancient letter meant to be carried and read aloud. Paul's scriptural arguments mostly engage Greek forms of Israel's Scriptures, though he interprets a Jewish textual and theological inheritance.",
+    "register": "Dense argumentative prose that repeatedly becomes oral dialogue. Paul asks an imagined interlocutor's questions, answers with sharp denials, chains quotations, shifts between ‘I,’ ‘you,’ ‘we,’ and ‘they,’ and can suspend a sentence through multiple clauses. The rhetoric is pastoral and diplomatic as well as analytical.",
+    "spokenWorld": "Latin governed Rome, but Greek circulated broadly and was the normal language of Paul's surviving letters. The named Roman house churches include people with Greek, Latin, and Jewish names; language alone does not divide them neatly into ethnic groups.",
+    "readerSignal": "The letter announces sender, addressees, and greeting, then thanksgiving, argument, appeal, travel plans, commendation, and greetings. Rhetorical questions signal an anticipated objection, not necessarily the actual belief of every Roman reader. The final greetings reveal that the argument was addressed to socially connected households, not to an imaginary seminar.",
+    "englishLayer": "The World English Bible breaks Paul's Greek into English sentences and paragraphs and must choose among contested senses for law, flesh, righteousness, faith, and justification. Ancient manuscripts did not provide modern quotation marks, so English typography can make debated speakers look settled.",
+    "textualHistory": [
+      {
+        "label": "Paul's dictated or scribally produced letter",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Romans identifies Paul as sender and Tertius as the writer of the physical letter. That distinction fits ancient letter production: authors could dictate, collaborate with a secretary, and add personal marks while remaining responsible for the message.",
+        "sourceIds": ["usccb-romans", "cambridge-romans", "hosted-web"]
+      },
+      {
+        "label": "Scripture inside the letter",
+        "language": "Greek Jewish Scriptures with Hebrew inheritance",
+        "role": "section",
+        "spans": ["1:17", "3:10–18", "4", "9–11", "15:3–12"],
+        "description": "Paul's quotations and verbal links often follow the Septuagint or another Greek form. He does more than decorate a conclusion with proof texts: Abraham, Adam, Moses, prophetic remnant, and promised restoration structure the argument.",
+        "sourceIds": ["usccb-romans3", "usccb-romans", "hosted-web"]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The English is readable prose, but its chosen sentence boundaries and theological vocabulary should not be mistaken for neutral one-to-one equivalents. The briefing flags places where a responsible translation must interpret.",
+        "sourceIds": ["hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "Diatribe: Paul argues with a voice he creates",
+        "original": "Τί οὖν ἐροῦμεν; μὴ γένοιτο — Ti oun eroumen? mē genoito — “What then shall we say? May it never be!”",
+        "explanation": "Romans repeatedly raises an objection in question form and answers it. ‘Should we continue in sin so grace may increase?’ is not Paul's proposal; it is the inference he rejects before clarifying his claim. The technique creates a live classroom or street-philosophy feel and lets Paul anticipate how different hearers may resist him.",
+        "translationNote": "Versions render mē genoito as ‘God forbid,’ ‘by no means,’ ‘absolutely not,’ or ‘may it never be.’ The Greek does not contain the noun ‘God’; older English supplied an idiomatic force, not a word-for-word rendering.",
+        "caution": "Scholars use ‘diatribe’ for a family of dialogical practices, not one rigid ancient genre. Identifying an interlocutor does not prove which real Roman subgroup, if any, held every objection.",
+        "refs": ["3:1", "3:4", "3:5", "6:1", "6:2", "6:15", "7:7", "9:14", "11:1"],
+        "sourceIds": ["usccb-romans3", "cambridge-diatribe", "oxford-diatribe", "hosted-web"]
+      },
+      {
+        "title": "δικαιοσύνη θεοῦ (dikaiosynē theou): righteousness, justice, and God's setting-right action",
+        "original": "δικαιοσύνη γὰρ θεοῦ … ἀποκαλύπτεται — “for the righteousness of God is revealed”",
+        "explanation": "The phrase can point to God's own justice or faithfulness, the saving activity by which God puts people in right relation, and the right status received as gift. Romans activates more than the English moral quality ‘being righteous.’ The same word-family supplies righteous, justify, justice, and justification, while English changes roots and hides their recurrence.",
+        "translationNote": "An English version that chooses ‘righteousness’ may sound private and moral; ‘justice’ may sound only social or punitive. Follow the whole word-family through 1:17, 3:21–26, and 10:3 before defining it.",
+        "caution": "No one gloss resolves every occurrence. Grammar, agent, object, covenant argument, courtroom metaphor, and transformative context all matter.",
+        "refs": ["1:17", "3:21", "3:22", "3:25", "3:26", "10:3"],
+        "sourceIds": ["usccb-romans1", "cambridge-theology-romans", "oxford-pistis", "hosted-web"]
+      },
+      {
+        "title": "πίστις Χριστοῦ (pistis Christou): faith in Christ or Christ's faithfulness?",
+        "original": "διὰ πίστεως Ἰησοῦ Χριστοῦ — dia pisteōs Iēsou Christou",
+        "explanation": "At 3:22 the Greek genitive can be read objectively, ‘faith in Jesus Christ,’ or subjectively, ‘the faithfulness of Jesus Christ.’ Pistis itself spans faith, trust, fidelity, and reliability. The next phrase, ‘for all who believe,’ clearly speaks of human response, but that does not by itself settle the first construction.",
+        "translationNote": "Most traditional English versions print ‘faith in Jesus Christ’; some print or footnote ‘faithfulness of Jesus Christ.’ Readers deserve to know that theology follows a real grammatical and semantic question.",
+        "caution": "The options need not be enemies. Paul's account can center Christ's faithful action and the trusting response it creates even when an interpreter decides how to translate the phrase.",
+        "refs": ["3:22", "3:26", "5:19", "10:17"],
+        "sourceIds": ["oxford-pistis", "cambridge-pistis", "usccb-romans3"]
+      },
+      {
+        "title": "Pronouns and voices are arguments, not filler",
+        "original": "ἐγώ — egō — “I”",
+        "explanation": "Greek verbs usually identify person without a separate pronoun, so an explicit egō can add contrast or rhythm. Romans 7 intensifies ‘I’ through a staged first-person struggle, while Romans 9–11 moves among I, they, you, and all to address grief for Israel and warn Gentile hearers. Deciding who a voice represents is interpretation.",
+        "translationNote": "English requires a subject pronoun where Greek often does not, so a translation cannot display every emphatic versus merely grammatical ‘I.’ Quotation marks around a proposed interlocutor are likewise editorial.",
+        "caution": "An explicit Greek ‘I’ is not automatically Paul's autobiography, a Freudian ego, or a universal self. Genre and argumentative role must be established from context.",
+        "refs": ["7:7", "7:15", "7:20", "9:1", "11:13", "11:25"],
+        "sourceIds": ["cambridge-ego", "cambridge-diatribe", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Pauline terms English can make too narrow",
+    "examples": [
+      {
+        "ref": "3:4",
+        "form": "mē genoito",
+        "meaning": "may it never be; absolutely not",
+        "why": "The repeated rejection punctuates Paul's imagined dialogue. ‘God forbid’ conveys force but adds a word not present in the Greek phrase.",
+        "sourceIds": ["cambridge-diatribe", "hosted-web"]
+      },
+      {
+        "ref": "3:25",
+        "form": "hilastērion",
+        "meaning": "place or means of atonement; expiation/propitiation; mercy seat",
+        "why": "The rare word can evoke the ark's atonement cover as well as sacrificial dealing with sin. One English theological term cannot make every association explicit.",
+        "sourceIds": ["usccb-romans3", "hosted-web"]
+      },
+      {
+        "ref": "7:18",
+        "form": "sarx",
+        "meaning": "flesh — bodily creatureliness or human life under sin's power, depending on context",
+        "why": "Paul does not simply equate the physical body with evil. Romans 8 can speak of the mortal body being given life even while ‘flesh’ names a hostile mode of existence.",
+        "sourceIds": ["usccb-sarx", "usccb-romans", "hosted-web"]
+      },
+      {
+        "ref": "12:1",
+        "form": "logikē latreia",
+        "meaning": "reasonable, rational, or spiritual service/worship",
+        "why": "The phrase joins embodied self-offering with thoughtful worship; translations divide because logikos does not map neatly onto one English adjective.",
+        "sourceIds": ["usccb-romans", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Ancient pastoral and ambassadorial letter — a sustained theological argument meant for communal hearing",
+    "how": "Read from greeting through greetings, not as a bag of isolated verses. Mark every ‘therefore,’ ‘for,’ ‘but now,’ ‘what then,’ and scriptural quotation. Ask who ‘you’ and ‘we’ include at each turn. Argument in Romans is cumulative: chapter 9 cannot be detached from 11, and the communal practices of 12–15 are not an optional appendix to 1–11."
+  },
+  "cast": [
+    { "name": "Paul", "who": "Jewish apostle to Gentiles, introducing his gospel and seeking partnership while defending God's faithfulness to Israel." },
+    { "name": "Tertius", "who": "The named writer of the physical letter, a rare window into ancient authorship and scribal practice." },
+    { "name": "Phoebe", "who": "A deacon or minister of the church at Cenchreae and Paul's commended patron/helper; likely carrier and first public representative of the letter." },
+    { "name": "The Roman assemblies", "who": "Jewish and Gentile believers meeting in several households, not one centralized congregation." },
+    { "name": "Abraham and Adam", "who": "Scriptural figures through whom Paul narrates promise, faith, human solidarity, sin, death, and the larger scope of Christ's obedience." },
+    { "name": "The ‘I’ and imagined ‘you’", "who": "Rhetorical voices whose identity changes across the argument; they should not be assumed to equal Paul privately or one fixed opponent." },
+    { "name": "Israel and the nations", "who": "Not abstract topics but the people whose relation drives Paul's grief, mission, warning against boasting, and hope for mercy." },
+    { "name": "Prisca, Aquila, Junia, and the chapter 16 network", "who": "Coworkers, hosts, prisoners, apostles or notable mission figures, households, siblings, and laborers who reveal the social body receiving the letter." }
+  ],
+  "shape": [
+    { "heading": "God's faithfulness and one human plight", "chapters": "1–4", "note": "Greeting and thesis; Gentile and Jewish accountability; God's righteous action in Christ; Abraham before circumcision as father of a multiethnic family." },
+    { "heading": "From Adam's death to life in the Spirit", "chapters": "5–8", "note": "Peace, two humanities, baptism, slavery and freedom, law and divided self, Spirit, adoption, suffering, hope, and inseparable love." },
+    { "heading": "Israel, Gentiles, and the mercy of God", "chapters": "9–11", "note": "Paul's grief, scriptural election, human responsibility, remnant, Gentile grafting, warning against arrogance, and hope for all Israel." },
+    { "heading": "A shared life and Paul's westward mission", "chapters": "12–16", "note": "Embodied worship, diverse gifts, enemy-love, government, disputed practices, mutual welcome, Spain plans, Phoebe's commendation, greetings, and final praise." }
+  ],
+  "purpose": "Romans announces that God's saving justice and faithfulness are revealed in Jesus Christ for Jew and Gentile alike, excluding human boasting while confirming God's promises. The gospel liberates people from sin and death into baptismal participation, Spirit-led life, and a body whose strong and weak members welcome one another. Paul's mission and theology meet at the same point: the one God shows mercy to all, so Gentile believers must never turn grace into superiority over Israel or freedom into contempt for a sibling.",
+  "snags": [
+    { "snag": "Romans 1 is used as a verdict before Paul's trap closes in chapters 2–3.", "help": "Paul begins with recognizable Jewish-Hellenistic critique of Gentile idolatry, then turns on the judging listener: ‘you are without excuse.’ His conclusion is that all are under sin and no group can boast. Whatever ethical questions are discussed, preserve the rhetorical reversal." },
+    { "snag": "‘Works of the law’ is heard as every human effort or every good act.", "help": "The phrase belongs to a Jewish covenant argument involving circumcision, Torah, and Gentile inclusion. Broader human boasting is also excluded, but Paul's target should not be reduced to generic niceness or turned into a caricature of Judaism as merit-earning legalism." },
+    { "snag": "Chapter 7's ‘I’ is assumed to be Paul's diary after conversion.", "help": "Major readings identify the voice as Paul autobiographically, Adam or Israel under command, an unredeemed person, or a rhetorical speech-in-character. The passage's function in the movement from law and death to Spirit in chapter 8 is clearer than one universally settled biography." },
+    { "snag": "Chapters 9–11 are skipped as a detour.", "help": "They answer a central challenge: if Israel's response is divided, has God's word failed? Paul's conclusion warns Gentile branches against boasting and ends in mercy and doxology. Removing these chapters distorts both justification and the church." },
+    { "snag": "Romans 13 is treated as unlimited obedience to any state.", "help": "The paragraph commends public order and paying what is owed, inside a letter that calls Jesus Lord, commands nonconformity, forbids vengeance, and names love as the law's fulfillment. Readers disagree about limits and resistance, but no ruler is called morally infallible." },
+    { "snag": "Chapter 16 is treated as disposable names.", "help": "The names disclose house churches, women and men in ministry, migrant networks, risk, imprisonment, patronage, and Paul's astonishing social reach in a city he had not visited. The greetings are evidence for what the theology looks like embodied." }
+  ],
+  "debates": [
+    {
+      "question": "What is Paul's central problem: individual guilt, covenant membership, enslaving powers, or all of these?",
+      "settled": "Romans speaks of accountable acts, universal sin, law, Jewish and Gentile belonging, Adamic solidarity, sin and death as ruling powers, and new communal life.",
+      "positions": [
+        { "view": "Classical Protestant justification emphasis", "grounds": "The core problem is guilty humanity before God; justification is God's declaration received through faith apart from works, grounding assurance and transformed life." },
+        { "view": "New Perspective and covenant emphasis", "grounds": "Paul's question concerns how Gentiles enter God's covenant family and whether boundary-defining works of Torah can exclude them; justification identifies the one people of God." },
+        { "view": "Apocalyptic and participation emphasis", "grounds": "Sin and death enslave humanity as powers; Christ's faithful death and resurrection transfer people into a new creation, with justification one metaphor inside liberation and participation." },
+        { "view": "Integrated readings", "grounds": "Forensic, covenantal, participatory, and transformative language address different dimensions of one argument and should not be forced to compete for every verse." }
+      ],
+      "soWhat": "Test a framework against all four movements of the letter, especially Israel in 9–11 and shared practice in 12–15. A center that makes large portions incidental is probably too small."
+    },
+    {
+      "question": "Who speaks as ‘I’ in Romans 7:7–25?",
+      "settled": "The passage dramatizes command, desire, sin, death, divided action, and the need for rescue immediately before the Spirit-filled contrast of chapter 8.",
+      "positions": [
+        { "view": "Paul or the believer's continuing struggle", "grounds": "The present tense and intensely personal language fit lived conflict even after receiving the law or knowing what is good." },
+        { "view": "Unredeemed humanity or Israel under Torah", "grounds": "The speaker is captive to sin and lacks the Spirit language that defines believers in chapter 8; echoes of Adam and Israel make the ‘I’ representative." },
+        { "view": "Speech-in-character", "grounds": "Ancient rhetoric allowed an author to embody another voice. The emphatic pronouns and dialogical context make the passage a performance rather than transparent autobiography." }
+      ],
+      "soWhat": "Do not isolate ‘I can’t do what I want’ from 7:25–8:4. Every major reading must explain the argumentative transition into Spirit, adoption, and hope."
+    }
+  ],
+  "sources": [
+    { "id": "usccb-romans", "label": "USCCB, Introduction to Romans", "says": "Provides the Corinth/Greece setting, AD 56–58 range, Spain mission, Jew–Gentile audience, Israel problem, and full-letter outline.", "url": "https://bible.usccb.org/bible/romans/0" },
+    { "id": "usccb-romans1", "label": "USCCB, Romans 1 notes", "says": "Explains ancient letter opening conventions and ‘righteousness of God’ as God's saving presence and gift of renewed relationship.", "url": "https://bible.usccb.org/bible/romans/1" },
+    { "id": "usccb-romans3", "label": "USCCB, Romans 3 notes", "says": "Identifies Paul's dialogical diatribe, chain of Greek scriptural quotations, law's semantic range, and the concentrated gospel statement in 3:21–31.", "url": "https://bible.usccb.org/bible/romans/3" },
+    { "id": "cambridge-romans", "label": "Robert Jewett, “Romans” in The Cambridge Companion to St Paul", "says": "Reads Romans as an ambassadorial message connected to Paul's Spain mission and maps its careful rhetorical organization across all sixteen chapters.", "url": "https://www.cambridge.org/core/books/abs/cambridge-companion-to-st-paul/romans/60378648E0BAF85335296996F0B353C3" },
+    { "id": "cambridge-diatribe", "label": "Matthew Pawlak, Sarcasm in Romans (Cambridge)", "says": "Analyzes Romans's diatribe-like rhetorical questions, hypothetical interlocutor, voice, and forceful denials in chapters 2, 3, 6, and 11.", "url": "https://www.cambridge.org/core/books/sarcasm-in-pauls-letters/sarcasm-in-romans-with-special-reference-to-diatribe-and-voice/75B3A5E5755144752436DE0FF3C7FC10" },
+    { "id": "oxford-diatribe", "label": "Oxford Handbook of Roman Philosophy, “Parrhēsia, Dio, Diatribe”", "says": "Cautions that ‘diatribe’ names a modern scholarly category for varied philosophical and pedagogical speech rather than one fixed ancient subtype.", "url": "https://academic.oup.com/edited-volume/45762/chapter-abstract/398729013" },
+    { "id": "cambridge-theology-romans", "label": "Klaus Haacker, The Theology of Paul's Letter to the Romans (Cambridge)", "says": "Tracks the letter's language and rhetoric, including the striking concentration of the dikaiosynē word-family in Romans.", "url": "https://assets.cambridge.org/97805214/34805/sample/9780521434805ws.pdf" },
+    { "id": "oxford-pistis", "label": "Teresa Morgan, Roman Faith and Christian Faith (Oxford)", "says": "Studies pistis as trust, faithfulness, reliability, and relationship and argues that pistis Christou cannot be reduced without remainder to one side of a modern faith/faithfulness opposition.", "url": "https://academic.oup.com/book/7335/chapter-abstract/152103348" },
+    { "id": "cambridge-pistis", "label": "David L. Stubbs, “The shape of soteriology and the pistis Christou debate” (Cambridge)", "says": "Frames the grammatical and theological debate between ‘faith in Christ’ and ‘faith/faithfulness of Christ’ in Romans and Galatians.", "url": "https://www.cambridge.org/core/journals/scottish-journal-of-theology/article/shape-of-soteriology-and-the-pistis-christou-debate/205628FE0A64940AC2BF4C3FDC8EC31A" },
+    { "id": "cambridge-ego", "label": "Michael Winger, “Paul and egō: Some Comments on Grammar and Style” (Cambridge)", "says": "Explains why explicit Greek egō is not normally required, analyzes its emphasis and rhythm, and uses Romans 7 as a central test case.", "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/paul-and-some-comments-on-grammar-and-style/439E4E08F957867FAABB8B7B35DB9AD7" },
+    { "id": "usccb-sarx", "label": "USCCB note on Paul's sarx vocabulary", "says": "Distinguishes neutral bodily creatureliness from human existence marked by weakness or opposition to the Spirit, guarding against a simple body-equals-evil equation.", "url": "https://bible.usccb.org/bible/2corinthians/10" },
+    { "id": "hosted-web", "label": "The text on this site", "says": "Counts, references, Tertius's self-identification, Greek-derived transliterations, and the English edition's renderings were checked against the hosted World English Bible." }
+  ],
+  "howToRead": [
+    { "tip": "Read 1:18–3:20 as one trap closing. Mark every shift from ‘they’ to ‘you’ to ‘all.’", "refs": ["1:18", "2:1", "3:9", "3:19"] },
+    { "tip": "Whenever Paul asks ‘What then?’ write the rejected inference in your own words before reading his answer.", "refs": ["3:1", "6:1", "6:15", "7:7", "9:14", "11:1"] },
+    { "tip": "Track the righteousness word-family rather than only the noun ‘justification.’ English hides Greek connections by changing roots." },
+    { "tip": "Read chapters 9–11 straight through and do not stop at a hardening or election verse before the warning against Gentile boasting and the mercy conclusion.", "refs": ["9:1", "11:18", "11:25", "11:32"] },
+    { "tip": "Treat 12:1 as the turn from argument to embodied appeal, not from theology to miscellaneous advice.", "refs": ["12:1", "12:4", "13:8", "14:1", "15:7"] },
+    { "tip": "Read every name in chapter 16 and mark host, coworker, laborer, prisoner, apostle, household, sibling, and patron language. That network is the social result of Romans." }
+  ],
+  "next": "Read Galatians to hear Paul make related claims under sharper conflict and in one-third the space, then Acts 20–28 for the Jerusalem journey and eventual arrival in Rome. For the Scripture beneath Romans, reread Genesis 15–17, Deuteronomy 30–32, Isaiah 40–55, and the Elijah remnant story in 1 Kings 19.",
+  "traditionNote": "Romans has 16 chapters across Catholic, Orthodox, Protestant, Ethiopian, and Armenian collections here. Traditions disagree less over its scope than over how its Greek terms and argument should be translated and synthesized. Historic debates about justification, faith and works, Israel, and grace should therefore be presented as readings of shared text, not as different books."
+}

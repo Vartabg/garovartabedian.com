@@ -1,0 +1,240 @@
+{
+  "book": "JUB",
+  "chapter": 13,
+  "bookName": "Jubilees",
+  "summary": "Abram enters Canaan with Sarai and Lot, receives a land promise, and builds altars; famine then takes him to Egypt, where Pharaoh seizes Sarai before returning her. Back in Canaan, Lot separates from Abram and is captured in war, while the hosted text has a visible break before its discussion of tithes and Abram's refusal of Sodom's goods.",
+  "whyItMatters": "The chapter joins the promise of land to threatened family relationships, travel, rescue, and the book's explanation of a tenth given to priests.",
+  "context": {
+    "author": "Within the book, the angel of the presence dictates the account to Moses; the historical writer is unnamed.",
+    "audience": "Israel is addressed through Moses in the book’s frame; the specific first historical audience is not identified.",
+    "date": "The narrative places the revelation at Sinai; the historical Hebrew work is usually dated to the second century BCE, without an established exact year.",
+    "setting": "Abram's route through Canaan and Egypt, then return to Bethel, Hebron, and the war involving Sodom.",
+    "literaryForm": "Ancestral travel narrative with promise, altar scenes, war, and a damaged or abbreviated transition in the hosted edition."
+  },
+  "contextSourceIds": [
+    "hosted-charles",
+    "oxford-endres"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Abram has received a command to leave kin and country, and Terah has blessed his plan to visit Canaan.",
+      "verseRefs": [
+        "12:22-24",
+        "12:28-31"
+      ]
+    },
+    "here": {
+      "text": "The journey reaches the promised land but includes famine, Sarai’s seizure, Lot’s departure, and a war with a textual gap.",
+      "verseRefs": [
+        "13:1-29"
+      ]
+    },
+    "after": {
+      "text": "Abram raises the question of an heir, receives a covenant promise, and Ishmael is born through Hagar.",
+      "verseRefs": [
+        "14:1-8",
+        "14:17-24"
+      ]
+    }
+  },
+  "outline": [
+    {
+      "heading": "Entry into Canaan and first altars",
+      "verses": "1-9",
+      "note": "Abram sees the land, hears a promise, and worships."
+    },
+    {
+      "heading": "Famine, Sarai in Egypt, and return",
+      "verses": "10-16",
+      "note": "Pharaoh takes Sarai before Abram returns to his earlier altar."
+    },
+    {
+      "heading": "Lot separates and the land promise is repeated",
+      "verses": "17-21",
+      "note": "Lot’s move saddens childless Abram and the promise is enlarged."
+    },
+    {
+      "heading": "War and Lot’s capture",
+      "verses": "22-24",
+      "note": "Kings attack the cities and Abram prepares a response."
+    },
+    {
+      "heading": "Tenth and refusal of Sodom’s goods",
+      "verses": "25-29",
+      "note": "The surviving text resumes with tithe law and Abram’s oath about the booty."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "13:3",
+      "text": "And the Lord said to him: 'To thee and to thy seed will I give this land.'",
+      "why": "The first land promise sets the destination and stakes of Abram's journey."
+    },
+    {
+      "ref": "13:29",
+      "text": "And Abram said unto him: 'I lift up my hands to the Most High God, that from a thread to a shoe-latchet I shall not take aught that is thine lest thou shouldst say, I have made Abram rich; save only what the young men have eaten, and the portion of the men who went with me -Aner, Eschol, and Mamre. These shall take their portion.'",
+      "why": "Abram’s refusal prevents the king of Sodom from claiming credit for his wealth."
+    }
+  ],
+  "themes": [
+    "journey into Canaan",
+    "altars and promise",
+    "Sarai in Egypt",
+    "Lot’s separation and capture",
+    "tenth and booty"
+  ],
+  "questions": [
+    {
+      "category": "context",
+      "question": "What does Abram do when he reaches Canaan?",
+      "answer": "He travels with Sarai and Lot, sees the land, hears a promise for his descendants, and builds an altar. The promise is repeated after Lot separates, keeping land and future offspring together.",
+      "verseRefs": [
+        "13:1-9",
+        "13:17-21"
+      ],
+      "id": "q1",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "What happens to Sarai in Egypt?",
+      "answer": "The text says Pharaoh seizes her and is plagued because of her; he later returns her to Abram. It does not narrate Sarai’s own words or experience here, so a guide should not invent her consent, motives, or feelings.",
+      "verseRefs": [
+        "13:10-15"
+      ],
+      "id": "q2",
+      "relatedVerses": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "category": "context",
+      "question": "Why does Lot’s departure trouble Abram?",
+      "answer": "Lot moves to Sodom, and Abram is saddened because he has no children. The divine promise of innumerable descendants follows in the same episode, addressing the lack he feels without erasing the separation.",
+      "verseRefs": [
+        "13:17-21"
+      ],
+      "id": "q3",
+      "relatedVerses": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "category": "word",
+      "question": "What is a “tenth” in the passage after the war?",
+      "answer": "It means one part in ten of produce or livestock, assigned here to the priests. The surviving text links it to first fruits but has a break before verse 25, so some immediate narrative context is missing in this hosted edition.",
+      "verseRefs": [
+        "13:24-27"
+      ],
+      "id": "q4",
+      "relatedVerses": [
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "category": "hard_verse",
+      "question": "Why does the story jump between Abram arming servants and a rule about tithes?",
+      "answer": "Verse 24 trails off and verse 25 begins after a marked gap, so the hosted Charles text does not preserve a complete transition. The reader can identify the topics on either side, but should not pretend the missing action is actually printed here.",
+      "verseRefs": [
+        "13:22-27"
+      ],
+      "id": "q5",
+      "relatedVerses": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "category": "context",
+      "question": "What does Abram say to the king of Sodom?",
+      "answer": "The king asks for rescued people while offering Abram the goods. Abram refuses even a small personal gain so the king cannot claim to have made him rich, though he allows portions for his companions.",
+      "verseRefs": [
+        "13:28-29"
+      ],
+      "id": "q6",
+      "relatedVerses": [
+        28,
+        29
+      ]
+    },
+    {
+      "category": "theology",
+      "question": "How do the altars function in Abram’s travels?",
+      "answer": "He builds and revisits altars when receiving the land promise and after returning safely from Egypt. In this chapter, worship marks places in the journey and accompanies his appeal for God’s presence.",
+      "verseRefs": [
+        "13:3-9",
+        "13:15-16"
+      ],
+      "id": "q7",
+      "relatedVerses": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        15,
+        16
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "altar",
+      "def": "A place Abram builds for offerings and calling on God during his travels."
+    },
+    {
+      "term": "first fruits",
+      "def": "Initial produce associated here with the offering of a tenth."
+    }
+  ],
+  "readingContextSource": {
+    "translation": "charles",
+    "textHash": "c819c59f4b6b16a0782d2a6f7f4bdd574e018a3458282ebc59f3de8ed78f846c"
+  },
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "ad540c9c2528cd668795feb0d105600a6dc9716c0674c79a50bb0743a2814d8b",
+    "generatedAt": "2026-09-29T00:33:02.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent cross-review",
+  "sourceIds": [
+    "charles"
+  ]
+}

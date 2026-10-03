@@ -1,0 +1,47 @@
+[
+  {
+    "id": "existing-01",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 7,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "ISA",
+      "chapter": 1,
+      "verse": 18,
+      "endVerse": 18
+    }
+  },
+  {
+    "id": "isaiah-clement",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "chapter": 16
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "ISA",
+      "chapter": 53,
+      "verse": 4,
+      "endVerse": 6
+    }
+  },
+  {
+    "mode": "check-claim",
+    "source": {
+      "kind": "scripture",
+      "book": "JHN",
+      "chapter": 11,
+      "verse": 35
+    },
+    "claim": "Jesus wept."
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "life": {
+    "title": "His life",
+    "lede": "From Bethlehem to the ascension, on the map where it happened. The gospels are not diaries — this ordering follows a traditional harmony, and every event links straight to its own text.",
+    "language": {
+      "label": "Guide language",
+      "scope": "Changes the interface and map guidance; event titles and Scripture text remain in English."
+    },
+    "era": {
+      "birth": {
+        "name": "Birth & childhood",
+        "title": "Birth & childhood"
+      },
+      "preparation": {
+        "name": "Baptism & wilderness",
+        "title": "Baptism & wilderness"
+      },
+      "galilee": {
+        "name": "Galilean ministry",
+        "title": "Galilean ministry"
+      },
+      "journey": {
+        "name": "The road to Jerusalem",
+        "title": "The road to Jerusalem"
+      },
+      "passion": {
+        "name": "Passion week",
+        "title": "Passion week"
+      },
+      "resurrection": {
+        "name": "Resurrection & ascension",
+        "title": "Resurrection & ascension"
+      }
+    },
+    "rail": {
+      "label": "Life of Jesus by era",
+      "shapeOfLife": "The shape of the life",
+      "summary": "{eventCount} events · {placeCount} places · {refCount} source refs",
+      "eraAriaLabel": "{eraName} era: {eventCount} events, {refCount} source references"
+    },
+    "map": {
+      "note": "Positions from real coordinates; the journey follows the harmony.",
+      "noteHover": "Hover an event to highlight the map; click to expand its gospel text.",
+      "noteTap": "Tap an event to expand the text — the map follows the place.",
+      "placePickerLabel": "Choose a place on the map",
+      "placePickerOverview": "Map overview",
+      "keyboardShortcutsTitle": "Keyboard shortcuts",
+      "keyboardShortcutsText": "Tab to move between events. Enter / Space to expand an event's text. Use the place selector to highlight a place on the map and update the current-stop card.",
+      "experienceKicker": "A map you can enter",
+      "experienceTitle": "Walk the landscape",
+      "experienceText": "Begin with the clear atlas, or enter the terrain to follow the journey through elevation and distance.",
+      "viewLabel": "Map view",
+      "overview": "Atlas",
+      "terrain": "Terrain",
+      "modeLabel": "Terrain interaction mode",
+      "storyMode": "Story",
+      "exploreMode": "Explore",
+      "wholeRegion": "Whole region",
+      "loadingTerrain": "Raising the terrain…",
+      "terrainUnavailable": "The terrain view is unavailable. Return to the atlas to continue.",
+      "previousStop": "Previous journey stop",
+      "nextStop": "Next journey stop",
+      "pauseJourney": "Pause journey",
+      "playJourney": "Play journey",
+      "ready": "Ready to begin",
+      "stopCount": "Stop {current} of {total}",
+      "routeBoundary": "The line connects documented stops in narrative order; it does not claim a precise ancient road.",
+      "currentStop": "Current stop",
+      "readEvent": "Read event"
+    },
+    "narrative": {
+      "title": "Text-only journey narrative",
+      "sectionTitle": "Journey through the life of Jesus: A text narrative",
+      "intro": "For screen reader users or those preferring a text-based guide, here is a chronological journey through Jesus' life with descriptions of each location, modern place names, and geographic directions. Each event is placed in its biblical and archaeological context.",
+      "travel": "Travel: From the previous location, travel {direction} approximately {distance} km ({distanceMiles} mi).",
+      "location": "Location:",
+      "modernSite": "Modern site:",
+      "coordinates": "Coordinates:",
+      "scripture": "Scripture:",
+      "geographicOverview": "Geographic overview",
+      "geographicOverviewText": "Jesus' ministry spans from Nazareth in the Galilee region northward to Caesarea Philippi, and southward through Samaria, the Jordan valley, and finally to Jerusalem and the Judean regions. The map window covers the area from the coast of Lebanon and the Mediterranean Sea in the west to the Golan Heights and Transjordan in the east, and from the southern Galilee to the Judean hills.",
+      "narrativeNote": "The narrative follows the Gospel accounts, which emphasize Galilee as the site of Jesus' public ministry and Jerusalem as the place of his passion and resurrection. Modern archaeological research continues to refine the identification of biblical sites with contemporary locations."
+    },
+    "dataTable": {
+      "title": "Event and place reference table",
+      "description": "Optional table of all events organized by era and all places organized alphabetically.",
+      "descriptionHeader": "Description",
+      "byEra": "Events by era",
+      "eventTable": "Events in {eraName}",
+      "placeReference": "Place Reference",
+      "allPlaces": "All places mentioned in Jesus's life, organized alphabetically:",
+      "biblicalName": "Biblical Name",
+      "modernLocation": "Modern Location",
+      "region": "Region",
+      "coordinatesHeader": "Coordinates"
+    },
+    "sources": {
+      "title": "Due-diligence notes",
+      "description": "Archaeological sources and references for place identification",
+      "text": "These places are identified according to modern archaeological consensus and traditional pilgrimage sites. Key sources include:"
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "book": "EST",
+  "chapter": 16,
+  "bookName": "Esther",
+  "summary": "The counter-decree, in the king's own voice — and this time the truth: Aman 'a Macedonian both in mind and country,' a stranger 'with his cruelty staining our goodness,' who plotted against Mordecai the savior of the king's life and against Esther 'the partner of our kingdom.' The letters in his name are void; he and his family hang on gibbets; 'not we, but God repaying him as he deserved.' The Jews may defend themselves on the appointed day, and the day becomes a feast — 'the almighty God hath turned this day of sadness and mourning into joy.'",
+  "whyItMatters": "The Hebrew book's second decree is terse; this one is a full vindication — and it names God where the Hebrew never does. It is also a study in how empires rewrite themselves: the same king who signed the first decree now signs its reversal, and credits God.",
+  "context": {
+    "author": "The Greek addition to Esther",
+    "audience": "The 127 provinces — and Greek-speaking Jews reading their own vindication",
+    "date": "Set after Haman's fall; composed in the Greek period",
+    "setting": "Susa; the decree dispatched across the empire",
+    "literaryForm": "An official royal letter quoted in full"
+  },
+  "outline": [
+    {
+      "heading": "On the abuse of royal favor",
+      "verses": "1-9",
+      "note": "A meditation on courtiers corrupted by pride — 'they think they can escape the justice of God who seeth all things'"
+    },
+    {
+      "heading": "Aman exposed",
+      "verses": "10-14",
+      "note": "Macedonian in mind and country; plotter against king, queen, and nation"
+    },
+    {
+      "heading": "The Jews vindicated",
+      "verses": "15-17",
+      "note": "'The children of the highest and the greatest, and the ever living God'"
+    },
+    {
+      "heading": "The reversal and the feast",
+      "verses": "18-24",
+      "note": "Gibbets, self-defense on Adar 13, and a festival forever"
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "16:10-11",
+      "text": "I Aman the son of Amadathi, a Macedonian both in mind and country, and having nothing of the Persian blood, but with his cruelty staining our goodness, was received being a stranger by us.",
+      "why": "The decree puts the confession in Haman's own mouth — the foreigner who rose by the king's kindness and turned to treason."
+    },
+    {
+      "ref": "16:16",
+      "text": "And are the children of the highest and the greatest, and the ever living God, by whose benefit the kingdom was given both to our fathers and to us, and is kept unto this day.",
+      "why": "A Persian king, in an official letter, calls the God of Israel 'the ever living God' — the addition's boldest theological stroke."
+    },
+    {
+      "ref": "16:18",
+      "text": "For which crime both he himself that devised it, and all his kindred hang on gibbets, before the gates of this city Susan: not we, but God repaying him as he deserved.",
+      "why": "The theology of the reversal in five words: 'not we, but God.' The empire executes; the text insists on the deeper agency."
+    },
+    {
+      "ref": "16:21",
+      "text": "For the almighty God hath turned this day of sadness and mourning into joy to them.",
+      "why": "Purim's charter verse — the feast exists to remember that God flips the calendar of grief."
+    }
+  ],
+  "themes": [
+    "Vindication",
+    "God named by the nations",
+    "The reversal of decrees",
+    "Memory institutionalized in feasts"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why does this version call Haman a Macedonian?",
+      "answer": "The Hebrew calls him an Agagite (linking him to Amalek, Israel's ancient enemy); this Greek decree calls him 'a Macedonian in mind and country' plotting to transfer the kingdom 'to the Macedonians' (16:14). Written after Alexander's conquests, the addition recasts the villain as the enemy its own audience knew best — and explains his hatred as foreign treachery.",
+      "verseRefs": [
+        "16:10",
+        "16:14"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        10,
+        14
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Does this decree contradict the Hebrew book's second decree?",
+      "answer": "They are parallel, not contradictory: Hebrew Esther 8 gives the reversal in a few verses; this is the Greek version's full text of a similar edict, with different rhetoric and added theology. The two traditions preserved their own forms of the same royal act.",
+      "verseRefs": [
+        "16:1-24"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why does the king credit God?",
+      "answer": "The additions' consistent theme: where the Hebrew book hides God behind coincidence, the Greek text makes even the empire's paperwork confess him — 'not we, but God repaying him as he deserved' (16:18). For persecuted readers, the comfort is that vindication is written into the records of the nations themselves.",
+      "verseRefs": [
+        "16:18",
+        "16:16"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        16,
+        18
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What does the decree authorize on the 13th of Adar?",
+      "answer": "Self-defense: 'you shall aid them that they may kill those who had prepared themselves to kill them' (16:20). The reversal does not license aggression — it cancels the genocide and arms its intended victims for one day. Hebrew Esther 9 records that no one took the spoil; the point was survival, not plunder.",
+      "verseRefs": [
+        "16:20"
+      ],
+      "category": "practical",
+      "relatedVerses": [
+        20
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why threaten provinces that refuse to celebrate (16:24)?",
+      "answer": "The harshest verse in the additions — sword and fire for any city that will not keep the feast. It reads as the Greek author's zeal outrunning the story's own theology: the God who turned mourning to joy is honored here with coercion. It is a reminder that vindication narratives can themselves turn harsh, and the church reads them with that caution.",
+      "verseRefs": [
+        "16:24"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        24
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Gibbets",
+      "def": "Gallows — the same structure Haman built for Mordecai, now used for him and his family."
+    },
+    {
+      "term": "Susan (Susa)",
+      "def": "The Persian capital; the gibbets stand 'before the gates of this city.'"
+    },
+    {
+      "term": "Adar",
+      "def": "The twelfth month; the 13th was the appointed day of destruction turned to deliverance."
+    }
+  ],
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-08-25",
+  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "sourceIds": [
+    "drb"
+  ]
+}

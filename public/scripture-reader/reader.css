@@ -1,0 +1,37 @@
+:root { color-scheme: light dark; --paper: #faf8f2; --ink: #202b29; --quiet: #4e5c56; --line: #89958a; --accent: #183e38; --reading-size: 1.2rem; }
+* { box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+.shell { width: min(46rem, 100% - 2rem); margin: auto; }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+.masthead a { text-decoration: none; font-weight: 700; }
+.masthead span { display: block; font-size: 0.75rem; color: var(--quiet); font-weight: 400; }
+main { padding: 2.5rem 0; }
+h1 { font: 500 clamp(2rem, 7vw, 3.25rem)/1.15 Georgia, serif; margin: 0.5rem 0; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.17em; font-size: 0.75rem; color: var(--quiet); }
+.edition { color: var(--quiet); margin: 0.75rem 0; }
+#status { font-size: 0.9rem; color: var(--quiet); min-height: 1.6em; }
+.tools { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 1rem; padding: 1.25rem 0 1.75rem; border-bottom: 1px solid var(--line); }
+label { display: grid; gap: 0.4rem; max-width: 100%; font-size: 0.85rem; font-weight: 600; }
+select, button, .button { min-height: 44px; max-width: 100%; font: inherit; border: 1px solid var(--line); border-radius: 0.35rem; color: var(--ink); background: var(--paper); padding: 0.5rem 0.75rem; }
+select { width: min(25rem, 100%); }
+button { cursor: pointer; }
+button:disabled { cursor: default; opacity: 0.5; }
+.button { display: inline-block; }
+a { color: var(--accent); text-underline-offset: 0.2em; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.sizes { display: flex; gap: 0.5rem; align-items: center; }
+#size { min-width: 3.5em; text-align: center; }
+#reading { font-family: Georgia, "Times New Roman", serif; font-size: var(--reading-size); line-height: 1.8; overflow-wrap: anywhere; }
+.verse { margin: 1.25em 0; scroll-margin-top: 1.5rem; }
+.verse-number { font: 0.7em system-ui, sans-serif; color: var(--quiet); padding-right: 0.65em; vertical-align: 0.15em; }
+#chapter-footer { border-top: 1px solid var(--line); padding-top: 1.5rem; font-size: 0.9rem; }
+details { margin: 1.5rem 0; }
+summary { cursor: pointer; min-height: 44px; padding: 0.6rem 0; color: var(--accent); }
+.closing { padding: 1.5rem 0 2.5rem; border-top: 1px solid var(--line); font-size: 0.8rem; color: var(--quiet); }
+.closing a { display: block; }
+.skip { position: fixed; z-index: 10; padding: 1rem; background: var(--paper); transform: translateY(-150%); }
+.skip:focus { transform: none; }
+[hidden] { display: none !important; }
+@media (prefers-color-scheme: dark) { :root { --paper: #151d1b; --ink: #f3f0e6; --quiet: #bec8bf; --line: #76877b; --accent: #bfdccb; } }
+@media (forced-colors: active) { :root { --paper: Canvas; --ink: CanvasText; --quiet: CanvasText; --line: ButtonText; --accent: LinkText; } }

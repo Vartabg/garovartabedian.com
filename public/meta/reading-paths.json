@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/site/build-reading-paths.mjs",
+  "generatedAt": "2026-08-30T16:15:27.000Z",
+  "paths": [
+    {
+      "id": "last-week",
+      "title": "The last week",
+      "line": "Mark's account of the final days, then the same events on the map and the record of what followed.",
+      "steps": [
+        {
+          "href": "/scriptures/protestant/MRK/11",
+          "label": "Mark 11-13",
+          "note": "He enters Jerusalem and clears the temple."
+        },
+        {
+          "href": "/scriptures/protestant/MRK/14",
+          "label": "Mark 14",
+          "note": "The supper, the arrest, the trial by night."
+        },
+        {
+          "href": "/scriptures/protestant/MRK/15",
+          "label": "Mark 15",
+          "note": "The crucifixion, told with almost no commentary."
+        },
+        {
+          "href": "/scriptures/protestant/MRK/16",
+          "label": "Mark 16",
+          "note": "The empty tomb — and an ending the manuscripts disagree about."
+        },
+        {
+          "href": "/jesus/life",
+          "label": "The life map",
+          "note": "The same week, placed where it happened."
+        },
+        {
+          "href": "/jesus/risen",
+          "label": "After the cross",
+          "note": "Every resurrection appearance, and where the accounts differ."
+        }
+      ]
+    },
+    {
+      "id": "his-own-words",
+      "title": "In his own words",
+      "line": "Start with what he actually said, then follow one saying down to the Greek and out to its parallels.",
+      "steps": [
+        {
+          "href": "/jesus/words",
+          "label": "His words",
+          "note": "Every verse in which he speaks, book by book."
+        },
+        {
+          "href": "/scriptures/protestant/MAT/5",
+          "label": "Matthew 5-7",
+          "note": "The Sermon on the Mount opens."
+        },
+        {
+          "href": "/scriptures/protestant/LUK/15",
+          "label": "Luke 15",
+          "note": "Three parables about what was lost."
+        },
+        {
+          "href": "/scriptures/protestant/JHN/14",
+          "label": "John 14-17",
+          "note": "The last long conversation before the arrest."
+        },
+        {
+          "href": "/scriptures/topics",
+          "label": "Follow a subject",
+          "note": "Where a theme runs through the rest of the text."
+        }
+      ]
+    },
+    {
+      "id": "first-generation",
+      "title": "The first generation after",
+      "line": "What the people who came immediately next actually wrote, in their own words.",
+      "steps": [
+        {
+          "href": "/early/didache",
+          "label": "The Didache",
+          "note": "The oldest church manual: baptism, the meal, how to spot a fraud."
+        },
+        {
+          "href": "/early/1clement",
+          "label": "1 Clement",
+          "note": "Rome writes to a divided Corinth, within living memory of the apostles."
+        },
+        {
+          "href": "/early/ignatius-romans",
+          "label": "Ignatius — To the Romans",
+          "note": "A bishop on the road to execution, begging Rome not to save him."
+        },
+        {
+          "href": "/early/martyrdom-polycarp",
+          "label": "The Martyrdom of Polycarp",
+          "note": "The earliest martyrdom account outside the New Testament."
+        },
+        {
+          "href": "/early",
+          "label": "The whole shelf",
+          "note": "Twenty-three texts, dated and sourced."
+        },
+        {
+          "href": "/church/tree",
+          "label": "What became of the church",
+          "note": "How one movement became many."
+        }
+      ]
+    },
+    {
+      "id": "how-we-know",
+      "title": "How we know any of it",
+      "line": "The evidence and its limits — what the sources support, what they don't, and where scholars disagree.",
+      "steps": [
+        {
+          "href": "/evidence",
+          "label": "How we know",
+          "note": "The method, and every graded claim on the site."
+        },
+        {
+          "href": "/jesus/history",
+          "label": "Outside the Gospels",
+          "note": "What non-Christian writers recorded, and how early."
+        },
+        {
+          "href": "/apostles/twelve",
+          "label": "The twelve",
+          "note": "What is known about each, weighted by how early the source is."
+        },
+        {
+          "href": "/word",
+          "label": "Who owns the word",
+          "note": "Who holds the rights to the translations you read."
+        }
+      ]
+    },
+    {
+      "id": "where-it-starts",
+      "title": "Where the story starts",
+      "line": "The beginning the rest of the record keeps returning to, and the passage the first Christians read as a description of the cross.",
+      "steps": [
+        {
+          "href": "/scriptures/protestant/GEN/1",
+          "label": "Genesis 1-2",
+          "note": "The world made, and called good."
+        },
+        {
+          "href": "/scriptures/protestant/GEN/3",
+          "label": "Genesis 3",
+          "note": "What went wrong, and the first promise after it."
+        },
+        {
+          "href": "/angels/fall",
+          "label": "The fall",
+          "note": "Every text the tradition assembles into that story, graded."
+        },
+        {
+          "href": "/scriptures/protestant/ISA/53",
+          "label": "Isaiah 53",
+          "note": "The suffering servant — quoted more than almost any other passage."
+        },
+        {
+          "href": "/jesus/prophecy",
+          "label": "Prophecy and fulfilment",
+          "note": "The pairs, with the wording on both sides."
+        }
+      ]
+    }
+  ]
+}

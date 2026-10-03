@@ -1,0 +1,21 @@
+# Private research inputs, credentials and local verification never deploy.
+/.research/
+.env*
+*.pem
+/.git/
+/.next/
+/node_modules/
+/.vercel/
+/.cache/
+/out/
+/build/
+/test-results/
+/playwright-report/
+/blob-report/
+/.lighthouseci/
+/.claude/
+/.abacusai/
+/.opencode/
+*.log
+*.tsbuildinfo
+.DS_Store

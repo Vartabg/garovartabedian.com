@@ -1,0 +1,192 @@
+{
+  "book": "DAN",
+  "bookName": "Daniel",
+  "oneLine": "Stories and visions of faithful people living under empires that claim too much — written in Hebrew and Aramaic, and expanded in the ancient Greek tradition.",
+  "orient": "Daniel begins as court narrative: Judean exiles are renamed, retrained, tested by royal food, impossible demands, an image, a furnace, madness, a feast, and a lions' den. At chapter 7 the view turns inward and upward: Daniel himself sees beasts, heavenly judgment, a humanlike figure, persecuting rulers, and timed catastrophes. The two halves interpret each other. The kings who look magnificent in court become predatory animals in vision, while apparently powerless faithful people receive a kingdom no empire can keep.",
+  "whereYouAre": "Babylon has conquered Jerusalem and deported members of Judah's elite. The stories place Daniel from Nebuchadnezzar's Babylonian court into the early Persian period. The visions reach toward the violent policies of Antiochus IV Epiphanes in the second century BC, when Jewish worship and law were attacked. That double horizon — remembered exile and present persecution — is essential to how the book gives courage.",
+  "facts": {
+    "writtenBy": "The visions speak in Daniel's first-person voice, while the court stories often narrate him in the third person. The book does not name a final editor. Traditional readings identify the sixth-century Daniel as author; most critical scholarship sees an anonymous second-century final composition using older Daniel traditions.",
+    "writtenWhen": "The narrative setting runs from the sixth-century BC Babylonian exile into Persian rule. Most scholars date the book's final Hebrew-Aramaic form to the crisis under Antiochus IV, about 167–164 BC; earlier court tales may predate that compilation.",
+    "writtenFor": "Jews pressured to surrender worship, practice, identity, or hope under imperial power — first narrated through exile, then addressed through apocalyptic vision.",
+    "place": "The stories are set in Babylonian and Persian courts. The final form is commonly located in Judea during Seleucid persecution, though precise provenance remains debated.",
+    "covers": "From Nebuchadnezzar's first conquest of Jerusalem to visions extending through successive empires, the persecution associated with Antiochus IV, resurrection, and final deliverance.",
+    "size": "The Hebrew-Aramaic form has 12 chapters, 357 verses, and 11,270 words in the hosted World English Bible. The Catholic Douay-Rheims form has 14 chapters, 531 verses, and 15,725 words because it includes the Greek additions."
+  },
+  "language": {
+    "writtenIn": "A deliberately bilingual book: Hebrew in 1:1–2:4a and 8:1–12:13; Aramaic in 2:4b–7:28. Ancient Greek Daniel preserves translated forms plus the Prayer of Azariah, Song of the Three, Susanna, and Bel and the Dragon.",
+    "register": "Court tales use repeated titles, catalogues, decrees, comic overstatement, and set speeches. The visions compress interpretation into symbolic beasts, horns, numbers, heavenly speakers, and formulaic disclosures. The language boundary does not match the genre boundary: chapter 7 begins the visions but remains Aramaic.",
+    "spokenWorld": "The setting itself is multilingual. Judean captives are educated in Babylonian scribal culture, receive Akkadian-derived court names, and serve rulers whose empire uses Aramaic widely. Hebrew functions as inherited sacred and communal language; Aramaic can address the international imperial world while also turning its claims against it.",
+    "readerSignal": "Daniel announces its own language switch at 2:4: the Chaldeans speak ‘in Aramaic,’ and the book stays in that language through chapter 7. Name pairs, translated riddles, and interpretation scenes repeatedly ask who can truly read the empire's words and images.",
+    "englishLayer": "English removes the most obvious language switch: chapter 2 verse 4 reads like the same prose before and after the midpoint. Tradition also changes what appears under the title Daniel. On this site Protestant routes default to 12-chapter Hebrew-Aramaic Daniel; Catholic routes can display the 14-chapter form; Orthodox routes place Greek Daniel under its own book entry.",
+    "textualHistory": [
+      {
+        "label": "Hebrew frame and later visions",
+        "language": "Biblical Hebrew",
+        "role": "section",
+        "spans": ["1:1–2:4a", "8:1–12:13"],
+        "description": "Hebrew opens the exile story, yields to Aramaic in the middle of 2:4, and returns at chapter 8 for visions focused increasingly on Jerusalem, desecrated worship, persecution, resurrection, and sealed revelation.",
+        "sourceIds": ["cambridge-language-spans", "oxford-daniel"]
+      },
+      {
+        "label": "Aramaic court tales and first vision",
+        "language": "Biblical Aramaic",
+        "role": "section",
+        "spans": ["2:4b–7:28"],
+        "description": "The Aramaic block begins inside a sentence and includes the public court tales plus Daniel's first beast vision. Because it extends across the story/vision boundary, ‘Aramaic equals court story’ is not an adequate explanation of the design.",
+        "sourceIds": ["cambridge-language-spans", "sbl-heteroglossia", "oxford-daniel"]
+      },
+      {
+        "label": "Greek Daniel and its additions",
+        "language": "Koine Greek",
+        "role": "translation",
+        "spans": ["3:24–90 in Catholic numbering", "13–14", "separate Susanna and Bel in some editions"],
+        "description": "Ancient Greek forms translated the Hebrew-Aramaic book and transmitted additional narratives and prayers. These additions are fully present in the earliest Greek, Latin, and Syriac biblical manuscripts; their canonical placement differs by tradition.",
+        "sourceIds": ["usccb-daniel", "usccb-dan3", "oxford-additions"]
+      },
+      {
+        "label": "The English editions here",
+        "language": "Modern English from Hebrew-Aramaic or Greek/Latin traditions",
+        "role": "translation",
+        "description": "The site preserves several received scopes rather than manufacturing one harmonized Daniel. Chapter and word counts therefore identify the edition being measured.",
+        "sourceIds": ["hosted-web"]
+      }
+    ],
+    "features": [
+      {
+        "title": "The switch happens mid-verse — and English makes it disappear",
+        "original": "וַיְדַבְּרוּ הַכַּשְׂדִּים לַמֶּלֶךְ אֲרָמִית — “the Chaldeans spoke to the king in Aramaic”",
+        "explanation": "Daniel 2:4a is Hebrew through the narrator's phrase ‘in Aramaic’; the courtiers' address begins the Aramaic block. It is a visible textual hinge, not a theory inferred from vocabulary. Aramaic then carries five court narratives and the chapter 7 vision before Hebrew resumes at 8:1.",
+        "translationNote": "An English page has no automatic way to show that the source language changed after two words of dialogue. A heading or briefing must restore the information.",
+        "caution": "The language distribution is certain; its one intended meaning is not. Audience, source history, literary symmetry, imperial setting, and genre all enter competing explanations.",
+        "refs": ["2:4", "7:28", "8:1"],
+        "sourceIds": ["cambridge-language-spans", "sbl-heteroglossia", "hosted-web"]
+      },
+      {
+        "title": "Imperial lists sound powerful until repetition makes them absurd",
+        "original": "peoples, nations, and languages … horn, flute, zither, lyre, harp, pipe …",
+        "explanation": "The Aramaic tales pile up offices, ethnic groups, instruments, and legal formulas. In chapter 3 the long musical catalogue returns each time everyone must fall before the image. The exact repetition performs total administration — and gradually exposes a regime that can command bodies on cue but cannot control God or faithful conscience.",
+        "translationNote": "English editions differ on ancient instrument names, some of which are uncertain or borrowed. The stable feature is the accumulating official list, not confidence about the modern identity of every instrument.",
+        "caution": "Comic and satirical effects do not make the threat unreal. The furnace and lions' den stories use humor as resistance from within lethal power.",
+        "refs": ["3:4", "3:5", "3:7", "3:10", "3:15", "6:7"],
+        "sourceIds": ["sbl-heteroglossia", "usccb-daniel", "hosted-web"]
+      },
+      {
+        "title": "MENE, TEKEL, PERES: a ledger becomes a sentence",
+        "original": "מְנֵא מְנֵא תְקֵל וּפַרְסִין — mene, mene, teqel, u-pharsin",
+        "explanation": "The wall inscription consists of Aramaic terms associated with weights or monetary units and with verbal roots Daniel interprets: numbered, weighed, divided. The plural parsin also invites a sound association with Persia. Daniel does not merely translate the nouns; he turns their sounds and roots into judgment on the king.",
+        "translationNote": "Leaving the forms untranslated preserves the riddle but hides the weight vocabulary; translating only ‘numbered, weighed, divided’ loses why interpretation was required. Both layers are needed.",
+        "caution": "The wordplay supports Daniel's interpretation inside the story. Reconstructions of the inscription's exact script, spacing, or why every court expert failed go beyond what the narrative specifies.",
+        "refs": ["5:25", "5:26", "5:27", "5:28"],
+        "sourceIds": ["usccb-daniel", "oxford-daniel", "hosted-web"]
+      },
+      {
+        "title": "כְּבַר אֱנָשׁ (kevar enash): ‘like a son of man’ means a humanlike figure",
+        "original": "וַאֲרוּ עִם־עֲנָנֵי שְׁמַיָּא כְּבַר אֱנָשׁ אָתֵה — “with the clouds of heaven, one like a human being was coming”",
+        "explanation": "In Aramaic, bar enash can mean a human being; here the figure is ‘like’ one, contrasted with kingdoms portrayed as beasts. The vision later speaks of the holy ones receiving the kingdom, creating an interpretive relation between the individual figure and a persecuted people. Later Jewish and Christian readings developed the figure messianically, and the Gospels repeatedly use ‘Son of Man’ language.",
+        "translationNote": "Capitalizing ‘Son of Man’ can make the later title arrive before the reader has seen the vision's human-versus-beast contrast. Lowercase can hide the passage's reception. A note is better than pretending English typography settles it.",
+        "caution": "Daniel 7 supplies the source image, but it does not make every later use of ‘son of man’ mean one identical thing without context.",
+        "refs": ["7:3", "7:13", "7:18", "7:27"],
+        "sourceIds": ["oxford-daniel", "usccb-daniel", "hosted-web"]
+      }
+    ],
+    "examplesHeading": "Names and riddles that cross Daniel's languages",
+    "examples": [
+      {
+        "ref": "1:7",
+        "form": "Daniel / Belteshazzar",
+        "meaning": "a Judean theophoric name / a Babylonian court name",
+        "why": "Renaming is imperial formation: the court assigns new identities while the narrator keeps using Daniel, allowing the reader to hear the contested self.",
+        "sourceIds": ["usccb-daniel", "hosted-web"]
+      },
+      {
+        "ref": "5:25",
+        "form": "Mene, Mene, Tekel, Upharsin",
+        "meaning": "weight terms heard as numbered, weighed, and divided",
+        "why": "The judgment depends on roots and sound, not on replacing four mysterious words with one flat English sentence.",
+        "sourceIds": ["oxford-daniel", "hosted-web"]
+      },
+      {
+        "ref": "7:13",
+        "form": "kevar enash",
+        "meaning": "one like a human being / son of man",
+        "why": "The humanlike figure arrives after four beastlike kingdoms, so the ordinary Aramaic humanity of the phrase is part of the contrast.",
+        "sourceIds": ["oxford-daniel", "hosted-web"]
+      },
+      {
+        "ref": "12:3",
+        "form": "maskilim",
+        "meaning": "the wise, discerning, or those who give insight",
+        "why": "Daniel's final heroes are not only survivors; they understand and help many toward righteousness under pressure.",
+        "sourceIds": ["usccb-daniel", "hosted-web"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Court tale and apocalypse — resistance stories followed by symbolic visions with angelic interpretation",
+    "how": "In chapters 1–6, watch repeated imperial commands meet faithful counterpractice. In chapters 7–12, do not decode each symbol from current headlines; use the interpretations the book itself provides, its sequence of ancient kingdoms, and its Antiochene crisis. Apocalypse unveils the moral character and heavenly limit of earthly power through images, not through a plain chronological memo."
+  },
+  "cast": [
+    { "name": "Daniel / Belteshazzar", "who": "A Judean exile trained for imperial service, able to interpret what kings and experts cannot, and later overwhelmed by visions he does not fully understand." },
+    { "name": "Hananiah, Mishael, Azariah", "who": "Daniel's companions, renamed Shadrach, Meshach, and Abednego; they refuse the image even without a guarantee of rescue." },
+    { "name": "Nebuchadnezzar", "who": "Conqueror, dreamer, image maker, witness to deliverance, and object lesson in how royal pride can become beastlike." },
+    { "name": "Belshazzar", "who": "The feast king who turns plundered temple vessels into party ware and learns too late how the writing judges him." },
+    { "name": "Darius and Cyrus", "who": "Persian-period rulers in the book's closing court framework; historical identification of ‘Darius the Mede’ remains difficult." },
+    { "name": "Gabriel and other heavenly figures", "who": "Interpreters who explain symbols without removing every mystery; the visions repeatedly exceed Daniel's strength." },
+    { "name": "The four beasts and the little horn", "who": "Symbolic empires and a persecuting ruler. The final visions focus the pattern on Antiochus IV while also making a larger claim about beastly power." },
+    { "name": "The holy ones and the wise", "who": "A persecuted people pictured as receiving the kingdom and shining after suffering rather than winning by imperial force." }
+  ],
+  "shape": [
+    { "heading": "Faithful life inside empire", "chapters": "1–6", "note": "Court stories in which food, knowledge, worship, decrees, and interpretation become sites of negotiation or refusal." },
+    { "heading": "Four visions and their interpretations", "chapters": "7–12", "note": "Beasts and the humanlike figure; ram and goat; seventy weeks; and a final disclosure of conflict, persecution, resurrection, and waiting." },
+    { "heading": "Greek additions in Catholic Daniel", "chapters": "13–14", "note": "Susanna and Bel and the Dragon. The Prayer of Azariah and Song of the Three are inserted inside chapter 3 rather than assigned a new chapter. Other traditions print these additions as separate books or omit them from Daniel." }
+  ],
+  "purpose": "Daniel trains persecuted readers to see empire from two angles. From the floor of the court, rulers look absolute and faithful minorities look exposed. From the heavenly courtroom, empires are temporary beasts, judgment is already seated, and enduring rule belongs to God and the holy ones. Faithfulness therefore includes skilled service, dietary boundary, prayer, refusal of idolatry, honest interpretation, repentance, wisdom, and endurance — not one simple posture toward political power.",
+  "snags": [
+    { "snag": "The book changes language without warning in English.", "help": "Mark 2:4b and 8:1. The Aramaic block bridges the court tales and the first vision, which means the book's language architecture is part of its argument and composition history." },
+    { "snag": "Daniel is treated as a codebook for identifying today's governments.", "help": "Begin with the book's own interpreted sequence: Babylon, Medo-Persia, Greece, and the persecution that climaxes under a contemptible king recognizable as Antiochus IV. Later application should preserve that historical anchor and the broad theological pattern rather than replace them with date arithmetic." },
+    { "snag": "The kings, dates, and sequences do not all align easily with external chronology.", "help": "Belshazzar was historically a crown prince acting for Nabonidus, while ‘Darius the Mede’ has no uncontested external identification. Traditional and critical readers explain these differently. State the difficulty rather than inventing certainty." },
+    { "snag": "The seventy weeks look like straightforward calendar math.", "help": "They reinterpret Jeremiah's seventy years as seventy ‘sevens.’ Competing starting points and identifications produce different totals. The symbolic theological claim — a bounded period before wrong is dealt with — is clearer than one universally agreed conversion to modern dates." },
+    { "snag": "Catholic, Orthodox, and Protestant Daniels appear to contain different material.", "help": "They do. The ancient Greek tradition includes prayers and stories absent from the Hebrew-Aramaic form. Traditions receive and arrange those writings differently; this is a textual and canonical fact, not a display glitch." },
+    { "snag": "The furnace story is reduced to ‘God will always keep faithful people physically safe.’", "help": "The three Judeans explicitly deny that bargain: God can rescue, but even if not, they will not worship the image. The story's center is noncompliance without guaranteed outcome, followed here by deliverance." }
+  ],
+  "debates": [
+    {
+      "question": "When did Daniel reach its final form?",
+      "settled": "The book sets its stories and visions in the sixth century BC and describes the Antiochus IV crisis of 167–164 BC with increasing specificity.",
+      "positions": [
+        { "view": "Sixth-century authorship by Daniel, with predictive prophecy", "grounds": "The first-person visions are received as Daniel's own disclosures; detailed later events demonstrate divine foreknowledge, while linguistic and historical difficulties are addressed through minority identifications or gaps in evidence." },
+        { "view": "Second-century final composition using older traditions", "grounds": "The descriptions remain precise through Antiochus's persecution and then become difficult to align with his actual death; apocalypse commonly uses an ancient seer persona, and Hebrew-Aramaic features fit a long transmission history. Court tales may be older than the final visions." }
+      ],
+      "soWhat": "The date affects how prediction and pseudonymous apocalypse are understood. Both readings should still reckon with the text's actual Antiochene horizon and its claim that persecution has a limit."
+    },
+    {
+      "question": "Who is the ‘one like a son of man’ in chapter 7?",
+      "settled": "The figure is humanlike in contrast to beasts, comes with heaven's clouds, receives enduring rule, and is interpreted in relation to ‘the holy ones.’",
+      "positions": [
+        { "view": "A corporate symbol for the holy people", "grounds": "The interpretation says the holy ones receive the kingdom, matching the beasts as collective empires." },
+        { "view": "An angelic or messianic individual representing the people", "grounds": "The vision presents one distinguishable figure before the heavenly court; later Jewish and Christian interpretation developed personal and messianic readings." },
+        { "view": "Corporate and representative together", "grounds": "Apocalyptic symbolism can portray a people through one representative, allowing the figure and holy ones to share the same vindication without becoming identical in every respect." }
+      ],
+      "soWhat": "Keep the chapter's first contrast — human rule versus beastly empire — visible before tracing the phrase into the Gospels."
+    }
+  ],
+  "sources": [
+    { "id": "usccb-daniel", "label": "USCCB, Introduction to Daniel", "says": "Outlines the court-tale and vision halves, the Antiochus IV setting, apocalyptic purpose, and the Greek additions received in Catholic Daniel.", "url": "https://bible.usccb.org/bible/daniel/0" },
+    { "id": "usccb-dan3", "label": "USCCB, Daniel 3 notes", "says": "Identifies the Prayer of Azariah and Song of the Three as material transmitted in Greek and inserted into the furnace account.", "url": "https://bible.usccb.org/bible/daniel/3" },
+    { "id": "oxford-daniel", "label": "Oxford Research Encyclopedia, “The Book of Daniel”", "says": "Surveys Daniel's Hebrew and Aramaic, Greek additions, court-tale and apocalyptic forms, Antiochene resistance setting, and Qumran manuscript evidence.", "url": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551358644" },
+    { "id": "cambridge-language-spans", "label": "The New Cambridge History of the Bible, language excerpt", "says": "Gives the exact Daniel language spans: Aramaic 2:4b–7:28, with the remainder of the Hebrew-Aramaic book in Hebrew.", "url": "https://assets.cambridge.org/97805218/59387/excerpt/9780521859387_excerpt.pdf" },
+    { "id": "oxford-additions", "label": "Oxford, material history of the Greek additions to Daniel", "says": "Documents that the additions appear fully in the earliest Greek, Latin, and Syriac biblical manuscripts and traces their reception.", "url": "https://academic.oup.com/book/55923/chapter-abstract/439351525" },
+    { "id": "sbl-heteroglossia", "label": "Roland Boer, “Bakhtin and genre theory” (Society of Biblical Literature)", "says": "Analyzes Daniel's multilingual design, court humor, repeated imperial language, and the one-Aramaic-plus-five-Hebrew vision pattern.", "url": "https://www.sbl-site.org/wp-content/uploads/2024/11/Boer_Bakhtin.pdf" },
+    { "id": "hosted-web", "label": "The texts on this site", "says": "Counts and references were verified independently in the 12-chapter World English Bible and 14-chapter Douay-Rheims Daniel files rather than blended." }
+  ],
+  "howToRead": [
+    { "tip": "Read chapters 1–6 as variations on one question: what can faithful people accept, negotiate, reinterpret, or refuse while serving a foreign state?", "refs": ["1:8", "2:27", "3:16", "4:27", "5:17", "6:10"] },
+    { "tip": "Pair each court story with the beast vision. The human-looking kings repeatedly become irrational or animal-like; the persecuted receive genuinely human rule.", "refs": ["4:16", "5:21", "7:3", "7:13"] },
+    { "tip": "Underline every interpretation supplied by an angel before consulting a modern symbolic chart. The book gives anchors for its own imagery.", "refs": ["7:17", "8:20", "9:23", "10:14"] },
+    { "tip": "Notice Daniel's bodily reactions. Apocalypse is not effortless secret knowledge; he becomes afraid, sick, speechless, and confused.", "refs": ["7:15", "8:27", "10:8", "12:8"] },
+    { "tip": "At chapter 3, verify which tradition and edition you are reading. The same chapter number can contain substantially more material." },
+    { "tip": "Hold together the final commands to understand, act wisely, and wait. The book closes without giving Daniel mastery of every detail.", "refs": ["12:3", "12:8", "12:9", "12:13"] }
+  ],
+  "next": "Read 1 Maccabees 1–4 for a prose account of the Antiochus IV crisis that Daniel addresses through symbol, or Revelation to see Christian apocalypse reuse Daniel's beasts, heavenly court, time periods, and humanlike figure under Roman power. Read Mark 13 afterward to watch Jesus invoke Daniel's desecration language in a new crisis.",
+  "traditionNote": "Protestant Daniel normally contains the 12-chapter Hebrew-Aramaic form. Catholic Daniel includes the Prayer of Azariah and Song of the Three inside chapter 3 and Susanna and Bel and the Dragon as chapters 13–14. Eastern Orthodox collections receive the additions through Greek Daniel and may arrange them separately. This site exposes those forms distinctly, so chapter counts and verse numbers must name the tradition."
+}

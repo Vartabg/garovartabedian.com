@@ -1,0 +1,223 @@
+{
+  "book": "EXO",
+  "chapter": 14,
+  "bookName": "Exodus",
+  "summary": "After Israel turns back to camp by the sea, Pharaoh regrets losing their service and pursues with chariots, leaving the people terrified. Moses tells them Yahweh will fight for them; the pillar separates the camps, an east wind opens dry ground for Israel, and returning waters cover the pursuing Egyptian army while Israel reaches the far shore.",
+  "whyItMatters": "The escape from Egypt becomes a deliverance when the former masters try to recover the people by force. The narrative also makes the cost visible in the drowned soldiers whom Israel sees on the shore.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "The encampment beside the sea, the route through its divided waters, and the Egyptian pursuing army.",
+    "literaryForm": "Pursuit-and-rescue narrative with frightened protest, divine instructions, night crossing, and the army’s destruction."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Israel has been guided by cloud and fire along a wilderness route rather than the nearer road. The next encampment places them beside the sea as Pharaoh changes course.",
+      "verseRefs": [
+        "13:17-22",
+        "14:1-5"
+      ]
+    },
+    "here": {
+      "text": "Fear of capture meets a command to move forward, while cloud, wind, and divided waters separate Israel’s escape from the army’s pursuit.",
+      "verseRefs": [
+        "14:5-31"
+      ]
+    },
+    "after": {
+      "text": "Moses, Israel, and Miriam sing of the sea victory before the travelers face a shortage of drinkable water in the wilderness.",
+      "verseRefs": [
+        "15:1-27"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "Pharaoh pursues the returned camp",
+      "verses": "1-9",
+      "note": "The location appears trapped, and Pharaoh comes with chariots and horses."
+    },
+    {
+      "heading": "Israel protests; Moses promises rescue",
+      "verses": "10-14",
+      "note": "The people fear death, while Moses says Yahweh will fight for them."
+    },
+    {
+      "heading": "Forward movement and night separation",
+      "verses": "15-20",
+      "note": "God commands a path through the sea, and the pillar stands between the camps."
+    },
+    {
+      "heading": "The sea opens; Egypt follows",
+      "verses": "21-25",
+      "note": "An east wind makes dry ground, Israel crosses, and the pursuers’ chariots are thrown into confusion."
+    },
+    {
+      "heading": "The waters return and Israel survives",
+      "verses": "26-31",
+      "note": "The army is covered, Israel sees the dead, and the people fear Yahweh and believe."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "14:13",
+      "text": "Moses said to the people, “Don’t be afraid. Stand still, and see the salvation of Yahweh, which he will work for you today; for you will never again see the Egyptians whom you have seen today.",
+      "why": "Moses answers Israel’s fear with a promise of rescue before the sea opens."
+    },
+    {
+      "ref": "14:21",
+      "text": "Moses stretched out his hand over the sea, and Yahweh caused the sea to go back by a strong east wind all night, and made the sea dry land, and the waters were divided.",
+      "why": "The narrated crossing involves Moses’ action and a strong east wind throughout the night."
+    },
+    {
+      "ref": "14:30",
+      "text": "Thus Yahweh saved Israel that day out of the hand of the Egyptians; and Israel saw the Egyptians dead on the seashore.",
+      "why": "The verse joins Israel’s deliverance with the sight of Egyptian dead on the shore."
+    }
+  ],
+  "themes": [
+    "fear of recapture",
+    "divine guidance in darkness",
+    "passage through the sea",
+    "pursuing chariots",
+    "army drowned",
+    "trust after rescue"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why does Pharaoh pursue after sending Israel away?",
+      "answer": "When told the people have fled, Pharaoh and his servants regret letting Israel stop serving them. He takes chosen chariots and the wider Egyptian force after a camp he expects to be trapped.",
+      "verseRefs": [
+        "14:1-9"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Are the Israelites’ fears imaginary?",
+      "answer": "They see the Egyptian army close behind them with the sea ahead and say they expect to die. The narrative reports a real threat of recapture and then records Moses’ call to trust a deliverance not yet visible.",
+      "verseRefs": [
+        "14:9-14"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        9
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What is a chariot in this pursuit?",
+      "answer": "It is part of Pharaoh’s mounted military force, led by captains and accompanied by horses and horsemen. The account uses the chariots as the means of pursuit that later becomes disabled in the sea.",
+      "verseRefs": [
+        "14:6-9",
+        "14:23-28"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        6
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How can Moses say “stand still” while God says “go forward”?",
+      "answer": "Moses tells the people not to panic and to see Yahweh’s rescue; the next speech tells Moses to command them to advance through an opened path. The two instructions occur at successive moments in the same crisis.",
+      "verseRefs": [
+        "14:13-16"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        13
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What does the pillar do at the sea?",
+      "answer": "The angel and cloud move from the front to the rear of Israel’s camp, standing between the two groups through the night. This protects the people while the sea is made passable.",
+      "verseRefs": [
+        "14:19-22"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        19
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What is said about the pursuing Egyptians’ deaths?",
+      "answer": "The waters return over the chariots and horsemen who enter after Israel, and the text says none of that army remains. Israel sees bodies on the shore; the chapter presents liberation alongside mass death and gives no individual biographies of the soldiers.",
+      "verseRefs": [
+        "14:23-30"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        23
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How is Pharaoh’s choice described alongside divine hardening?",
+      "answer": "The narrator says Pharaoh and his servants change their minds about losing Israel’s service, and also says Yahweh hardens Pharaoh’s heart and the pursuers’ hearts. It gives both claims in the pursuit account without resolving their relationship.",
+      "verseRefs": [
+        "14:4-8",
+        "14:17-18"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        4
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What response follows the crossing?",
+      "answer": "The closing lines say Israel sees Yahweh’s great work, fears him, and believes in him and Moses. The chapter records that response after the people reach dry land and see the fate of the army.",
+      "verseRefs": [
+        "14:29-31"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        29
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pihahiroth",
+      "def": "One of the named locations beside the sea where Israel is told to camp."
+    },
+    {
+      "term": "chariots",
+      "def": "Horse-drawn military vehicles used in Pharaoh’s pursuit and disabled in the sea."
+    },
+    {
+      "term": "east wind",
+      "def": "The strong wind Yahweh uses through the night as the sea becomes dry ground."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "7655fd55faf8ef88eb11b2b9440c9f2e29f0a048bd5223aa8741458e4d7b7ea0",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

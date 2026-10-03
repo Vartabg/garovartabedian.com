@@ -1,0 +1,333 @@
+{
+  "book": "PHP",
+  "bookName": "Philippians",
+  "oneLine": "Paul's most affectionate letter — written from prison to his most generous assembly, thanking them, urging their unity, and telling them to rejoice while he does.",
+  "orient": "Philippians is a thank-you letter that keeps breaking into song and keeps circling back to joy. In the hosted World English Bible it runs about 2,200 words — the shortest of Paul's letters to this point — and the word 'rejoice' appears ten times, 'joy' five, in four tight chapters. Paul writes as a prisoner, expecting either release or execution, to the one assembly we know sent him money more than once (4:15-16). He thanks them, reports that his chains advanced the Good News through the palace guard, settles into the letter's heart — a poem about Christ emptying himself — then turns his resume into refuse, warns against the dogs, and closes with the lines most quoted from any letter he wrote: 'in nothing be anxious,' 'I can do all things through Christ,' 'my God will supply every need.' The letter's warmth never drops, and neither does its edge.",
+  "whereYouAre": "Philippi was a Roman colony in Macedonia — a piece of Rome transplanted to Greece, proud of its Italian ties, full of veterans, with the emperor's cult in the city's temples. The assembly there began, by Acts 16's account, with a businesswoman named Lydia at a riverside and an earthquake in a jail. Paul writes years later from confinement — most readers say Rome, some Caesarea — where 'the whole palace guard' has heard why he is chained (1:13). Two women in the assembly, Euodia and Syntyche, are at odds (4:2-3), opponents are pushing circumcision on Gentile believers (3:2-3), and the congregation that funded Paul is now learning to suffer well: 'to you it has been granted on behalf of Christ, not only to believe in him, but also to suffer for his sake' (1:29).",
+  "facts": {
+    "writtenBy": "Paul, with Timothy named alongside him in the first line ('Paul and Timothy, servants of Jesus Christ') — and Paul's voice runs alone through the letter, including its handwritten close.",
+    "writtenWhen": "Most readings place it in the early 60s during an imprisonment — traditionally Rome (the palace guard and Caesar's household, 1:13; 4:22), with Caesarea defended by some. The letter expects a verdict soon: 'whether I come to see you or am absent' (1:27), 'I trust... shortly' (2:24).",
+    "writtenFor": "The assembly at Philippi — 'all the saints in Christ Jesus who are at Philippi, with the overseers and servants' (1:1). Founded by Paul on his second journey (Acts 16); his only assembly in the letter record that supported him financially more than once (4:15-16).",
+    "place": "Written from prison. The letter names neither city nor cell — the evidence for a location is internal: the praetorian guard (1:13) and 'Caesar's household' (4:22) point most readers to Rome; Caesarea remains a minority reading.",
+    "covers": "Not a narrative span. A thanksgiving for partnership in the Good News; a report that chains furthered the message; the Christ poem and its working-out; a resume counted as loss; two women urged to agree; a trusted carrier commended; a final note on contentment and the gift that provoked the letter.",
+    "size": "4 chapters, 104 verses, about 2,200 words in the hosted World English Bible. The letter of a prisoner expecting to die, and the word he uses most is 'rejoice.'"
+  },
+  "language": {
+    "writtenIn": "Koine Greek with two distinct temperatures: warm, personal prose that keeps turning to address people by name — and, at the letter's center, one of the earliest and most-quoted poems in the New Testament (2:6-11).",
+    "register": "Companionable and unhurried where Galatians is urgent. Paul calls the readers his 'beloved,' jokes gently about 'sacrifice and service' (2:17, 2:30), and lets his affection show in asides ('my beloved, whom I long to see, my joy and crown,' 4:1). Underneath runs a leader's realism: two women need a peacemaker (4:2-3), opponents need naming (3:2), and suffering needs teaching (1:29-30).",
+    "spokenWorld": "The first audience was tiny by Roman standards — a handful of households in a colony proud of Rome, some of whose members were 'of Caesar's household' themselves (4:22). The letter's civic vocabulary is deliberate: 'citizenship in heaven' (3:20) lands differently in a city full of Roman citizens, and 'lord' (kyrios) was an emperor's title before the letter gave it back to Christ.",
+    "readerSignal": "The letter quotes Scripture sparingly and echoes it densely: the Christ poem's 'form of a servant' and 'highly exalted' work over Isaiah's servant songs and 'every knee shall bow' (Isaiah 45:23, quoted at 2:10-11). A reader who knows Isaiah hears the poem's final stanza as Scripture's own promise arriving.",
+    "englishLayer": "This site hosts the World English Bible, a modern English translation of the Greek text. It renders euangelion as 'Good News' (nine times here), uses 'assembly' where older Bibles say 'church,' and renders Paul's rude word for garbage as 'refuse' (3:8). Word counts in this briefing describe the hosted English.",
+    "textualHistory": [
+      {
+        "label": "The letter as sent",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Philippians names Paul (with Timothy) as sender, describes his imprisonment, and names its people — Timothy and Epaphroditus as carriers, Euodia, Syntyche, and Clement in the greetings. The earliest complete manuscripts are Greek.",
+        "sourceIds": [
+          "usccb-philippians",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "One letter or a composite?",
+        "language": "Koine Greek, in a debated arrangement",
+        "role": "section",
+        "description": "The letter's abrupt transitions — especially 3:1's 'finally' followed by two more chapters — have led a line of scholars to propose that two or three short notes were joined into one letter by Paul or a later editor. The majority reading treats it as a single letter with a writer who changes subjects hard, as he does elsewhere. The debate is live and worth naming.",
+        "sourceIds": [
+          "usccb-philippians"
+        ]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The displayed English is a translation of the Greek. Its renderings — 'palace guard' for praetōrion, 'citizenship in heaven' for politeuma, 'refuse' for the garbage word — are this edition's choices, noted where they matter.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "'Rejoice' — the letter's stubborn refrain",
+        "original": "χαίρω / χαρά — chairō / chara — 'rejoice / joy'",
+        "explanation": "Ten times the hosted text says 'rejoice' and five times 'joy,' in a prison letter expecting a possible execution. The command at 4:4 is doubled: 'Rejoice in the Lord always! Again I will say, Rejoice!' The rejoicing is not mood-suggestion; it is the letter's argument in imperative form — because the Lord is near (4:5), because names are in the book of life (4:3), because the peace that guards hearts is available (4:7), joy is possible in chains and conflict.",
+        "translationNote": "The same Greek verb family gives English 'grace' and 'greeting' — the letter's opening 'grace to you' and its 'rejoice' are word-cousins in Greek, a resonance the English mostly loses.",
+        "caution": "The letter never commands the readers to feel happy; it commands a practice — rejoicing in the Lord, which the same letter can hold alongside 'I was sorry to send Epaphroditus' (2:26-27) and tears over enemies of the cross (3:18). Rejoicing here is defiant, not naive.",
+        "refs": [
+          "1:18",
+          "2:17",
+          "2:28",
+          "3:1",
+          "4:4",
+          "4:10"
+        ],
+        "sourceIds": [
+          "usccb-philippians",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "'Good News' — partnership in a prisoner's message",
+        "original": "εὐαγγέλιον — euangelion — 'good news / gospel'",
+        "explanation": "Nine times in four chapters — and the letter's innovation is what attaches to it: 'fellowship in furtherance of the Good News' (1:5), 'partakers with me of grace' in its defense (1:7), 'the things which happened to me have turned out rather to the progress of the Good News' (1:12), 'conduct yourselves worthily of the Good News' (1:27), 'labor with me in the Good News' (4:3). The Philippians are not the audience of Paul's mission; they are its shareholders — the letter thanks them as partners.",
+        "translationNote": "Where the hosted text says 'Good News,' older Bibles say 'gospel,' and the reader comparing translations should expect the swap.",
+        "caution": "In a Roman colony, 'good news' was also the empire's word for announcements about the emperor — a reader in Philippi would hear the collision. The letter never says this aloud; treat it as the setting's pressure, not a claim the text makes.",
+        "refs": [
+          "1:5",
+          "1:7",
+          "1:12",
+          "1:27",
+          "4:3"
+        ],
+        "sourceIds": [
+          "usccb-philippians",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "The Christ poem (2:6-11) — the letter's center",
+        "original": "μορφή / ἐκένωσεν / ὑπερύψωσεν — morphē / ekenōsen / hyperypsōsen — 'form / emptied / super-exalted'",
+        "explanation": "At the letter's heart stands a six-line piece most readers think Paul is quoting — an early hymn: Christ, existing in God's form, did not grasp at equality, emptied himself, took a servant's form, was made in human likeness, obedient to death — therefore God super-exalted him, the name above every name, and every knee will bow and every tongue confess. The poem's shape is the letter's ethic: descent before exaltation, humility before honor, and the pattern Paul explicitly tells them to 'have in your mind' (2:5).",
+        "translationNote": "'Emptied himself' (ekenōsen) is where the famous debates live: emptied of what? The letter does not say — the verb describes what he did (poured himself out, taking servant-form), not an inventory of what was subtracted. Translations that fill in the blank go beyond the poem's own words.",
+        "caution": "The poem's 'therefore' matters: super-exaltation is God's answer to self-emptying, which is why the letter can turn the poem directly into instructions ('work out your own salvation... for it is God who works in you,' 2:12-13) and why reading it as abstract theology alone misses its job in the argument.",
+        "refs": [
+          "2:6",
+          "2:7",
+          "2:8",
+          "2:9",
+          "2:10",
+          "2:11"
+        ],
+        "sourceIds": [
+          "usccb-philippians",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "'Citizenship in heaven' — a colony's word",
+        "original": "πολίτευμα — politeuma — 'commonwealth / citizenship'",
+        "explanation": "Paul tells a Roman colony — a city whose proudest possession was Roman citizenship — 'our citizenship is in heaven' (3:20). The word is the Greek for the rights and standing of a citizen-body, and the verse flips the colony's pride: Philippi holds its charter from Rome, but the assembly's charter is elsewhere, 'from where we also wait for a Savior, the Lord Jesus Christ.' The verb in 1:27 is cousin to it: 'conduct yourselves' is literally 'live as citizens.'",
+        "translationNote": "The hosted WEB keeps 'citizenship'; some translations say 'commonwealth' or 'homeland.' All preserve the political flavor — the word was not a mystic's term but a colonist's.",
+        "caution": "'Citizenship in heaven' does not mean the assembly waits to escape earth: the same sentence says the Savior comes 'from where we wait,' and the poem at the letter's center has Christ descending. The verse relocates allegiance, not residence.",
+        "refs": [
+          "1:27",
+          "3:20"
+        ],
+        "sourceIds": [
+          "usccb-philippians",
+          "hosted-web"
+        ]
+      }
+    ],
+    "examplesHeading": "Lines where the hosted English is doing quiet work",
+    "examples": [
+      {
+        "ref": "1:21",
+        "form": "emoi gar to zēn Christos",
+        "meaning": "'For to me to live is Christ, and to die is gain'",
+        "why": "The sentence is balanced like a scale — living is Christ, dying is gain — and it comes from a man who genuinely cannot decide which he prefers (1:23: 'having the desire to depart and be with Christ, which is far better'). The verse is usually quoted as triumph; in context it is the prisoner's honest math, followed by 'yet to remain in the flesh is more needful for you.'",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "2:12",
+        "form": "ten heautōn sōtērian katergazesthe",
+        "meaning": "'work out your own salvation with fear and trembling'",
+        "why": "The verb means to work something to completion — and the verse immediately following supplies the engine: 'for it is God who works in you both to will and to work, for his good pleasure' (2:13). Read alone the line sounds like self-salvation; read in its own sentence pair, it is the Christ-poem's logic applied: what God works in, the assembly works out.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "3:8",
+        "form": "skybala",
+        "meaning": "'refuse' — the garbage word",
+        "why": "The Greek word is coarser than the English suggests — refuse, dung, what the street-sweeper takes away. Paul aims it at his own religious resume: pedigree, education, zeal, righteousness under law, all counted as loss 'for the excellency of the knowledge of Christ Jesus, my Lord.' The hosted text's mild 'refuse' keeps the sentence printable; the reader should hear the smell in it.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "4:13",
+        "form": "panta ischyō en tō endynamounti me",
+        "meaning": "'I can do all things through Christ who strengthens me'",
+        "why": "The most-quoted verse of the letter — and the sentence before it is its own footnote: 'I have learned... both to be filled and to be hungry... everywhere and in all things' (4:12). The 'all things' Paul means are abundance and want, plenty and scarcity — contentment in every condition — not achievement in every project. The verse is about a prisoner learning to be satisfied, which the popular use mostly is not.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A thank-you letter with a hymn at its heart — friendship, warning, and joy in one envelope",
+    "how": "Follow the letter's own movements rather than a doctrine outline: gratitude for partnership (1:3-11), chains and the court verdict (1:12-26), a community told to stand together (1:27-2:18), friends commended by name (2:19-30), a warning delivered through Paul's own resume (3:1-21), two women reconciled, contentment learned, and the gift that prompted the letter (4:2-20). The Christ poem (2:6-11) is the letter's engine room; every instruction before and after runs on it — and the letter says so explicitly: 'Have this in your mind.'"
+  },
+  "cast": [
+    {
+      "name": "Paul and Timothy",
+      "who": "The senders — 'servants of Jesus Christ.' Paul writes as a prisoner expecting a verdict; Timothy is the junior partner he hopes to send soon (2:19-23), commended as one of proven worth who 'served with me in furtherance of the Good News.'"
+    },
+    {
+      "name": "The Philippians",
+      "who": "The letter's 'you' — the assembly Paul can safely call 'my beloved, whom I long to see, my joy and crown' (4:1): his first supporters, the only assembly that sent money more than once (4:15-16), and the church founded in a jail's earthquake (Acts 16)."
+    },
+    {
+      "name": "Epaphroditus",
+      "who": "Their own messenger — the man who carried the gift to Paul, nearly died doing it, and returns as the letter's carrier: 'your apostle and servant of my need... brother, fellow worker, fellow soldier' (2:25). The letter spends five verses protecting him from the shame of a failed mission."
+    },
+    {
+      "name": "Euodia and Syntyche",
+      "who": "Two women who 'labored with me in the Good News' (4:2-3), now at odds — the letter asks them publicly to 'be of the same mind in the Lord,' and asks the 'true partner' to help. Named, honored, and reconciled in one paragraph."
+    },
+    {
+      "name": "The opponents",
+      "who": "'The dogs... the evil workers... the false circumcision' (3:2) — teachers demanding Gentile circumcision (the same fight as Galatians, arrive late) — plus 'enemies of the cross of Christ' (3:18) whose god is the belly. The letter names them harshly and refuses to elaborate."
+    },
+    {
+      "name": "The palace guard and Caesar's household",
+      "who": "The unexpected audience: 'the whole palace guard' knows Paul's chains are in Christ (1:13), and 'especially those who are of Caesar's household' send greetings (4:22). The prisoner's message has reached the emperor's own staff."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Thanks, chains, and a verdict pending",
+      "chapters": "1",
+      "note": "Gratitude for partnership from the first day; chains that advanced the Good News through the palace guard; to live is Christ, to die is gain — released or executed, Christ is magnified; standing together in one spirit."
+    },
+    {
+      "heading": "The poem and its working-out",
+      "chapters": "2",
+      "note": "The Christ hymn — emptied, obedient, super-exalted; 'have this mind in you'; work out what God works in; shine as lights in a crooked generation; then Timothy and Epaphroditus, two living exhibits of the poem's pattern."
+    },
+    {
+      "heading": "The resume counted as refuse",
+      "chapters": "3",
+      "note": "The dogs named; Paul's pedigree and righteousness under law counted loss; righteousness through faith in Christ; the prize ahead — forgetting what is behind, citizenship in heaven, a body conformed to his glory."
+    },
+    {
+      "heading": "Reconciliation, contentment, and the gift",
+      "chapters": "4",
+      "note": "Euodia and Syntyche urged to agree; rejoice in the Lord always; anxious for nothing, prayer with thanksgiving, the guarding peace; contentment learned in every state — thanks for the gift that bloomed again; the God who supplies every need; greetings from Caesar's household."
+    }
+  ],
+  "purpose": "Philippians exists because a gift arrived — money the assembly sent Paul by Epaphroditus — and because the assembly needed what the letter carries: a thank-you (4:10-20), a report that imprisonment served the Good News (1:12-18), the pattern for their unity in the Christ poem (2:1-18), a warning against the circumcision party in time (3:2-21), and a practical peacemaking request for two women by name (4:2-3). The letter does all of it while teaching its signature lesson — joy is compatible with chains, conflict, poverty, and a death sentence, because the Lord is near. Its summary is its most-repeated command: 'Rejoice in the Lord always! Again I will say, Rejoice!'",
+  "snags": [
+    {
+      "snag": "'To die is gain' — is Paul talking about heaven when you die?",
+      "help": "The verse says 'to depart and be with Christ, which is far better' (1:23) — the word for 'depart' was used for a ship loosed from moorings or an army breaking camp. What 'with Christ' consists of and its timing have been read more than one way across traditions (some hold a conscious interim presence, some a sleep until resurrection); the letter's own confidence is stated without a map. State the confidence; carry the debate as a debate."
+    },
+    {
+      "snag": "'Work out your own salvation' sounds like salvation by effort.",
+      "help": "The very next verse supplies the engine: 'for it is God who works in you both to will and to work, for his good pleasure' (2:13). 'Work out' (katergazesthe) means bringing to completion what is already there — the way a farmer works a field that is already his. The instruction follows the Christ poem deliberately: the self-emptying pattern is God's own work first, and the assembly's 'therefore' is a worked-out life. Read the verse with 2:13 or not at all."
+    },
+    {
+      "snag": "The Christ poem says Jesus 'emptied himself' — of what?",
+      "help": "The letter does not say — the verb describes the act, not the inventory: he 'emptied himself, taking the form of a servant.' Theories abound (divine attributes, prerogatives, glory), but every theory fills a blank the poem leaves open. The safest reading stays with the poem's own parallel: 'didn't consider equality with God a thing to be grasped' — he did not cling to status; he took servant-form instead. The kenōsis debate is real; the text's own words are the boundary."
+    },
+    {
+      "snag": "'Beware of the dogs' — why is Paul so harsh?",
+      "help": "The word reverses an insult: teachers who called Gentiles dogs get the name back (3:2-3). The letter is defending the same line Galatians drew — Gentile believers need circumcision — but here the assembly is not falling for it; Paul warns them ahead of it. The heat is the point: this is the letter that says 'rejoice' ten times and still calls opponents 'evil workers.' Kindness and sharp edges are not opposites in Paul."
+    },
+    {
+      "snag": "'I can do all things through Christ' is quoted for everything.",
+      "help": "Read one verse up: 'I know how to be humbled, and I know also how to abound... both to be filled and to be hungry' (4:12). The 'all things' is every economic condition — plenty and want — and the strength is contentment-strength, learned over years. The verse is a prisoner's secret to satisfaction, not a promise of achievement; quoting it for success inverts it."
+    },
+    {
+      "snag": "Why does Paul call Euodia and Syntyche out in a public letter?",
+      "help": "Two named women who had 'labored with me in the Good News' are asked, 'be of the same mind in the Lord' — with a named third party asked to 'help these women' (4:2-3). The letter honors their service first, treats the conflict as fixable, and refuses to take a side. Public letters to public assemblies were how reconciliation happened; the letter puts no one's business on a street corner that the letter itself is not also healing."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Is Philippians one letter or a patchwork of two or three?",
+      "settled": "The letter we have is what the earliest manuscripts contain — a single Philippians of four chapters, and every existing copy is this letter.",
+      "positions": [
+        {
+          "view": "One letter, written straight through",
+          "grounds": "The letter's themes recur so steadily (joy, partnership, unity, the Good News) that a single composition explains it; the hard turn at 3:1 ('finally, my brothers, rejoice') is Paul changing course mid-letter, as he demonstrably does elsewhere (2 Corinthians, Galatians)."
+        },
+        {
+          "view": "A composite of two or three shorter notes",
+          "grounds": "3:1 reads like a real ending followed by an entirely new subject; 4:10-20's thanks reads like a separate short note acknowledging a gift long-delayed; some propose a letter-of-thanks (4:10-20) joined to a larger letter, or three fragments stitched by Paul or an editor."
+        }
+      ],
+      "note": "The partition theory has been argued for over a century without producing a manuscript that actually splits the letter — every copy we have is the four-chapter text. Present both readings honestly; the composite theory is a reconstruction, and the single-letter reading remains the majority."
+    },
+    {
+      "question": "Where was Paul imprisoned when he wrote?",
+      "settled": "The letter says a prisoner wrote it; the praetorian guard heard his chains (1:13) and Caesar's household greets the readers (4:22).",
+      "positions": [
+        {
+          "view": "Rome — the traditional reading",
+          "grounds": "'The palace guard' is most naturally the praetorian cohort in Rome; 'Caesar's household' points to Rome; the letter's expectation of a life-or-death verdict (1:20) fits a trial before the emperor's court under Acts 28's custody."
+        },
+        {
+          "view": "Caesarea — the earlier imprisonment",
+          "grounds": "Acts 24-26 records a two-year Caesarean custody with a real trial and a Herod's praetorium in the city (Acts 23:35); a Caesarean date in the late 50s makes Philippians an earlier letter than the Rome theory requires, and some find the timetable of visits (2:24's planned trip through Macedonia) easier to fit."
+        }
+      ],
+      "note": "Both cities explain the letter's evidence — that is the problem. The traditional reading is Rome; the honest answer is that the letter itself names neither, and the reader should know both defensible options before meeting the claims in commentaries."
+    }
+  ],
+  "sources": [
+    {
+      "id": "usccb-philippians",
+      "label": "USCCB, Introduction to Philippians",
+      "says": "Provides the letter's setting, the imprisonment context, the unity/composition question, the outline, and the occasion used in this briefing.",
+      "url": "https://bible.usccb.org/bible/philippians/0"
+    },
+    {
+      "id": "hosted-web",
+      "label": "The text on this site",
+      "says": "Word counts, verse references, quoted lines, and the English edition's renderings ('Good News,' 'palace guard,' 'refuse,' 'citizenship in heaven') were checked against the hosted World English Bible."
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Count the 'rejoice' commands as you read — ten occurrences — and notice every one arrives next to something hard: chains, a verdict, conflict, enemies, want. The letter is teaching a pattern, not a mood.",
+      "refs": [
+        "1:18",
+        "2:17",
+        "3:1",
+        "4:4"
+      ]
+    },
+    {
+      "tip": "Read 2:6-11 aloud, as the hymn it likely was — descent, death, 'therefore,' exaltation, every knee. Then read 2:12-13 immediately: the poem is not a doctrine-stop but the pattern the whole community is told to work out.",
+      "refs": [
+        "2:6",
+        "2:9",
+        "2:12"
+      ]
+    },
+    {
+      "tip": "Watch who is named: Timothy, Epaphroditus, Euodia, Syntyche, Clement, 'the true partner,' Caesar's household. The letter's affection is personal, and its peacemaking is done with names, not principles.",
+      "refs": [
+        "2:25",
+        "4:2",
+        "4:22"
+      ]
+    },
+    {
+      "tip": "Read chapter 3 as a biography with a verdict: every line of Paul's resume (circumcision, tribe, zeal, righteousness) is stated, then counted 'loss' and 'refuse.' Ask what your own equivalent list would be, and where the counting changes.",
+      "refs": [
+        "3:4",
+        "3:7",
+        "3:8"
+      ]
+    },
+    {
+      "tip": "Read 4:10-13 before quoting 4:13 — the 'all things' is abundance and want, and the strength is contentment-strength. The letter's most famous verse sits inside its most practical paragraph: how a prisoner stays satisfied.",
+      "refs": [
+        "4:10",
+        "4:12",
+        "4:13"
+      ]
+    }
+  ],
+  "next": "For the other imprisonment letters, read Philemon — one page, the same carrier (Tychicus-era, with Onesimus's story) — then Colossians and Ephesians for the wider companions. For the founding of the assembly, read Acts 16 — Lydia, the slave girl, the Philippian jailer, the earthquake. For the Scripture under the letter's joy, read Isaiah 45 (every knee, every tongue) and Habakkuk 3 (rejoicing in want).",
+  "traditionNote": "Philippians has 4 chapters across every tradition's collection here — Catholic, Orthodox, Protestant, Ethiopian, Armenian. The traditions read the same text and cherish the same verses; their differences concern how the Christ poem's 'emptied' and chapter 3's righteousness-language synthesize with James and Romans — interpretive questions over shared scripture, not different books."
+}

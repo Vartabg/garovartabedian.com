@@ -1,0 +1,243 @@
+{
+  "book": "GEN",
+  "chapter": 40,
+  "bookName": "Genesis",
+  "summary": "Pharaoh's imprisoned cup bearer and baker each have a troubling dream, and Joseph interprets one as restoration and the other as death within three days. He asks the cup bearer to remember his unjust captivity, and both interpretations come true at Pharaoh's birthday feast, but the restored officer forgets him.",
+  "whyItMatters": "Joseph notices the distress of others while seeking justice for himself. Accurate interpretation opens a possible route out of prison without ending his dependence on an official who fails to act.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "The prison associated with the captain of the guard and, at the fulfillment, Pharaoh's birthday feast.",
+    "literaryForm": "Paired dream reports and interpretations, a personal appeal, and contrasting fulfillments followed by a delayed-resolution ending."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Joseph has been imprisoned after a false accusation yet entrusted with responsibility for the other prisoners. Two newly confined royal officers now come under his care.",
+      "verseRefs": [
+        "39:19-23"
+      ]
+    },
+    "here": {
+      "text": "The officers' parallel dreams receive opposite outcomes, while Joseph's request for remembrance becomes the unresolved thread.",
+      "verseRefs": [
+        "40:5-23"
+      ]
+    },
+    "after": {
+      "text": "After two full years, Pharaoh's own dreams cause the cup bearer to recall Joseph, who is finally summoned from prison.",
+      "verseRefs": [
+        "41:1-16"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Royal officers placed in Joseph’s care",
+      "verses": "1-4",
+      "note": "The cup bearer and baker are confined after offending Pharaoh."
+    },
+    {
+      "heading": "Troubled dreams and Joseph’s response",
+      "verses": "5-8",
+      "note": "Joseph notices their sadness and attributes interpretation to God."
+    },
+    {
+      "heading": "The cup bearer’s dream and Joseph’s appeal",
+      "verses": "9-15",
+      "note": "Restoration is predicted, and Joseph asks to be remembered."
+    },
+    {
+      "heading": "The baker’s dream and death prediction",
+      "verses": "16-19",
+      "note": "Similar numbered imagery receives a grim interpretation."
+    },
+    {
+      "heading": "Fulfillment and forgotten help",
+      "verses": "20-23",
+      "note": "Both outcomes occur, but the cup bearer does not mention Joseph."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "40:8",
+      "text": "They said to him, “We have dreamed a dream, and there is no one who can interpret it.” Joseph said to them, “Don’t interpretations belong to God? Please tell it to me.”",
+      "why": "Joseph credits God with interpretation while inviting the officers to tell their dreams."
+    },
+    {
+      "ref": "40:15",
+      "text": "For indeed, I was stolen away out of the land of the Hebrews, and here also I have done nothing that they should put me into the dungeon.”",
+      "why": "Joseph names both his removal from his homeland and his present imprisonment as unjust."
+    },
+    {
+      "ref": "40:23",
+      "text": "Yet the chief cup bearer didn’t remember Joseph, but forgot him.",
+      "why": "The restored officer’s forgetfulness postpones Joseph’s release."
+    }
+  ],
+  "themes": [
+    "attention to others’ distress",
+    "dreams and divine interpretation",
+    "opposite outcomes",
+    "unjust captivity",
+    "remembrance and neglect"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Does the chapter explain what crimes the officers committed?",
+      "answer": "It says they offended Pharaoh and that he became angry, but it does not identify their acts. The reader therefore cannot reconstruct their guilt or the fairness of their later different punishments.",
+      "verseRefs": [
+        "40:1-4",
+        "40:20-22"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What prompts Joseph to ask about the dreams?",
+      "answer": "He notices that the officers look sad and asks why. The exchange begins with attention to their distress, before either man requests an interpretation.",
+      "verseRefs": [
+        "40:5-8"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why say that interpretations belong to God?",
+      "answer": "Joseph locates the source of insight in God rather than treating it as his autonomous power. He nevertheless asks them to relate the dreams and gives specific interpretations, so attribution and active service work together.",
+      "verseRefs": [
+        "40:8-13"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What is a “cup bearer”?",
+      "answer": "The officer serves Pharaoh his cup, as both the dream and the promised restoration describe. The chapter also calls him a butler, but his action in the narrative makes the role concrete.",
+      "verseRefs": [
+        "40:1-2",
+        "40:9-13"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        1,
+        2,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "How are the two dreams alike and different?",
+      "answer": "Both use three items connected with the man's work and lead to an outcome after three days. The cup bearer places the cup in Pharaoh's hand, while birds consume the baker's food, corresponding to restoration for one and execution for the other.",
+      "verseRefs": [
+        "40:9-13",
+        "40:16-19"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What does Joseph ask the cup bearer to do?",
+      "answer": "He asks for kindness, remembrance, and a mention before Pharaoh so that he can leave prison. He says he was stolen from his homeland and has done nothing warranting his confinement, making this a plea for release from injustice.",
+      "verseRefs": [
+        "40:14-15"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        14,
+        15
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Does the baker’s execution come as a command from Joseph?",
+      "answer": "No. Joseph interprets a dream as predicting Pharaoh's action, and Pharaoh later has the baker hanged. The narrative's account of accurate prediction does not by itself supply a moral defense of the execution.",
+      "verseRefs": [
+        "40:18-22"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "cup bearer",
+      "def": "The royal officer whose service involves placing Pharaoh’s cup in his hand."
+    },
+    {
+      "term": "lift up your head",
+      "def": "Language used in the interpretations for the officers’ contrasting outcomes, with the baker’s head lifted off him."
+    },
+    {
+      "term": "dungeon",
+      "def": "Joseph’s description of the confinement from which he asks to be released."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "85d94e03e9d21c475cbe214c27908b644b3b6e05dac4c20fc6a2aeaaafcdae55",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

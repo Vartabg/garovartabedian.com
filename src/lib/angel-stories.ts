@@ -1,0 +1,40 @@
+export const angelStories = [
+  {
+    slug: "open-his-eyes",
+    number: "01",
+    title: "Open his eyes",
+    reference: "2 Kings 6:14–17",
+    place: "Dothan",
+    invitation: "A surrounded city. A prayer for sight.",
+    movement: "Fear gives way to assurance.",
+    image: "/angels/stories/dothan-unseen.jpg",
+    alt: "Two figures look toward Dothan and the mountain beyond it.",
+    tone: "dothan",
+  },
+  {
+    slug: "i-am-with-you",
+    number: "02",
+    title: "I am with you",
+    reference: "Genesis 28:10–19",
+    place: "Bethel",
+    invitation: "A stone for a pillow. A sky he had not imagined.",
+    movement: "An ordinary place becomes a place of promise.",
+    image: "/angels/stories/bethel-dream.jpg",
+    alt: "A sleeping traveler beneath a vast night sky and a luminous stairway.",
+    tone: "bethel",
+  },
+  {
+    slug: "the-gate-opened",
+    number: "03",
+    title: "The gate opened",
+    reference: "Acts 12:5–11",
+    place: "Jerusalem",
+    invitation: "Two chains. A sleeping prisoner. A way into the night.",
+    movement: "Confinement gives way to freedom.",
+    image: "/angels/stories/peter-night.jpg",
+    alt: "A solitary figure in an open Jerusalem street under the night sky.",
+    tone: "peter",
+  },
+] as const;
+
+export type AngelStorySlug = (typeof angelStories)[number]["slug"];

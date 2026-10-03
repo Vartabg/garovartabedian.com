@@ -1,0 +1,85 @@
+{
+  "life": {
+    "title": "Sua vida",
+    "lede": "De Belém à Ascensão, no mapa onde tudo aconteceu. Os Evangelhos não são diários — esta ordenação segue uma harmonia tradicional, e cada evento vincula-se diretamente ao seu próprio texto.",
+    "language": {
+      "label": "Idioma do guia",
+      "scope": "Altera a interface e as orientações do mapa; os títulos dos eventos e o texto bíblico permanecem em inglês."
+    },
+    "era": {
+      "birth": { "name": "Nascimento e infância", "title": "Nascimento e infância" },
+      "preparation": { "name": "Batismo e deserto", "title": "Batismo e deserto" },
+      "galilee": { "name": "Ministério galileu", "title": "Ministério galileu" },
+      "journey": { "name": "O caminho para Jerusalém", "title": "O caminho para Jerusalém" },
+      "passion": { "name": "Semana da Paixão", "title": "Semana da Paixão" },
+      "resurrection": { "name": "Ressurreição e Ascensão", "title": "Ressurreição e Ascensão" }
+    },
+    "rail": {
+      "label": "Vida de Jesus por era",
+      "shapeOfLife": "A forma da vida",
+      "summary": "{eventCount} eventos · {placeCount} lugares · {refCount} referências bíblicas",
+      "eraAriaLabel": "Era {eraName}: {eventCount} eventos, {refCount} referências bíblicas"
+    },
+    "map": {
+      "note": "Posições de coordenadas reais; a jornada segue a harmonia.",
+      "noteHover": "Passe o mouse sobre um evento para destacar o mapa; clique para expandir seu texto evangélico.",
+      "noteTap": "Toque um evento para expandir o texto — o mapa segue o lugar.",
+      "placePickerLabel": "Escolha um lugar no mapa",
+      "placePickerOverview": "Visão geral do mapa",
+      "keyboardShortcutsTitle": "Atalhos de teclado",
+      "keyboardShortcutsText": "Pressione Tab para mover entre eventos. Pressione Enter / Espaço para expandir o texto de um evento. Use o seletor de lugares para destacar um lugar no mapa e atualizar o cartão da parada atual.",
+      "experienceKicker": "Um mapa para percorrer",
+      "experienceTitle": "Caminhe pela paisagem",
+      "experienceText": "Comece pelo atlas claro ou entre no relevo para acompanhar a jornada por elevação e distância.",
+      "viewLabel": "Vista do mapa",
+      "overview": "Atlas",
+      "terrain": "Relevo",
+      "modeLabel": "Modo de interação com o relevo",
+      "storyMode": "Narrativa",
+      "exploreMode": "Explorar",
+      "wholeRegion": "Região inteira",
+      "loadingTerrain": "Erguendo o relevo…",
+      "terrainUnavailable": "A vista do relevo não está disponível. Volte ao atlas para continuar.",
+      "previousStop": "Parada anterior da jornada",
+      "nextStop": "Próxima parada da jornada",
+      "pauseJourney": "Pausar jornada",
+      "playJourney": "Iniciar jornada",
+      "ready": "Pronto para começar",
+      "stopCount": "Parada {current} de {total}",
+      "routeBoundary": "A linha conecta paradas documentadas em ordem narrativa; não afirma uma rota antiga exata.",
+      "currentStop": "Parada atual",
+      "readEvent": "Ler evento"
+    },
+    "narrative": {
+      "title": "Narrativa de jornada apenas em texto",
+      "sectionTitle": "Jornada através da vida de Jesus: Uma narrativa textual",
+      "intro": "Para usuários de leitores de tela ou aqueles que preferem um guia baseado em texto, aqui está uma jornada cronológica através da vida de Jesus com descrições de cada local, nomes de lugares modernos e direções geográficas.",
+      "travel": "Jornada: A partir do local anterior, viaje {direction} aproximadamente {distance} km ({distanceMiles} mi).",
+      "location": "Local:",
+      "modernSite": "Local moderno:",
+      "coordinates": "Coordenadas:",
+      "scripture": "Escritura:",
+      "geographicOverview": "Visão geral geográfica",
+      "geographicOverviewText": "O ministério de Jesus se estende de Nazaré na região da Galileia ao norte até Cesareia de Filipe, e ao sul através da Samaria, vale do Jordão, e finalmente a Jerusalém e regiões de Judeia.",
+      "narrativeNote": "A narrativa segue os relatos evangélicos, que enfatizam a Galileia como o local do ministério público de Jesus e Jerusalém como o local de sua Paixão e Ressurreição."
+    },
+    "dataTable": {
+      "title": "Tabela de referência de eventos e lugares",
+      "description": "Tabela opcional de todos os eventos por era e de todos os lugares em ordem alfabética.",
+      "descriptionHeader": "Descrição",
+      "byEra": "Eventos por era",
+      "eventTable": "Eventos em {eraName}",
+      "placeReference": "Referência de lugares",
+      "allPlaces": "Todos os lugares mencionados na vida de Jesus, organizados alfabeticamente:",
+      "biblicalName": "Nome Bíblico",
+      "modernLocation": "Local Moderno",
+      "region": "Região",
+      "coordinatesHeader": "Coordenadas"
+    },
+    "sources": {
+      "title": "Notas de diligência devida",
+      "description": "Fontes arqueológicas e referências para identificação de locais",
+      "text": "Estes locais são identificados de acordo com o consenso arqueológico moderno e locais tradicionais de peregrinação."
+    }
+  }
+}

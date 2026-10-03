@@ -1,0 +1,367 @@
+{
+  "book": "OBA",
+  "bookName": "Obadiah",
+  "oneLine": "The shortest book in the Hebrew Bible — a single, impassioned oracle confronting Edom over its betrayal of Jerusalem and announcing the day of universal reckoning on Mount Zion.",
+  "orient": "Obadiah is the shortest book in the Old Testament, spanning just 21 verses and roughly 600 words in the English translation hosted here. It is an unsparing prophetic poem directed against Edom, Israel's southeastern neighbor and traditional sibling nation descended from Esau. When Jerusalem fell to the Babylonians in 586 BC, Edom did not merely watch; according to biblical witnesses, they rejoiced, plundered the city's wealth, and intercepted fleeing Judean refugees at mountain crossroads. Obadiah answers that historical betrayal not with tribal gloating, but by framing Edom's downfall as a case study in divine justice: the principle that what a nation does to others will return upon its own head.",
+  "whereYouAre": "Geographically, Edom occupied the rugged, mountainous plateau south and east of the Dead Sea, centered around Mount Seir and fortified strongholds like Sela and Bozrah. Historically, the narrative setting reflects the catastrophic destruction of Jerusalem and the temple by the Neo-Babylonian empire under Nebuchadnezzar II (586 BC). The kingdom of Judah has been crushed, its survivors scattered or exiled, while Edom appears to profit from Judah's ruin. Obadiah speaks into that bleak aftermath to declare that human arrogance and mountain defenses cannot withstand the Day of Yahweh.",
+  "facts": {
+    "writtenBy": "Attributed to the prophet Obadiah (Hebrew: Ōḇaḏyāh, meaning 'Servant of Yahweh' or 'Worshiper of Yahweh'). The text provides no patronymic, hometown, or biographical information.",
+    "writtenWhen": "Most historical-critical scholars date the core of the prophecy to the sixth century BC, shortly after the Babylonian sack of Jerusalem in 586 BC. An earlier minority view places it in the ninth century BC during the reign of King Jehoram of Judah (c. 845 BC).",
+    "writtenFor": "The devastated survivors of Judah, both in the ruined land and in Babylonian exile, offering theological assurance of God's sovereign justice, the reversal of fortunes, and the ultimate restoration of Mount Zion.",
+    "place": "Most likely composed in Judah among the remaining community or in the Babylonian diaspora.",
+    "covers": "A single visionary oracle moving from Edom's imminent humiliation (vv. 1–9), through the specific charges of fraternal betrayal during Jerusalem's fall (vv. 10–14), to the universal Day of Yahweh and the restoration of Israel (vv. 15–21).",
+    "size": "1 chapter, 21 verses, about 602 words in the hosted World English Bible text."
+  },
+  "language": {
+    "writtenIn": "Classical Biblical Hebrew. The poem exhibits high poetic density, vivid apostrophe (direct address to Edom), rhythmic parallelisms, rhetorical questions, and stinging irony.",
+    "register": "Prophetic judgment oracle and victory song: impassioned, elevated, and direct. The author uses rapid shifts in address (from third-person description to second-person confrontation) and intense verbal repetition to evoke the urgency of an international summons.",
+    "spokenWorld": "Iron Age II Levant. Hebrew and Edomite were closely related Northwest Semitic Canaanite dialects, sharing near-identical grammar, vocabulary, and phonetic systems, rendering spoken exchanges between Israelites and Edomites mutually intelligible. Official correspondence across the region was increasingly mediated by Imperial Aramaic.",
+    "readerSignal": "The book relies heavily on ancestral 'brother' vocabulary ('your brother Jacob', 'house of Esau', 'house of Joseph') drawn from the patriarchal narratives of Genesis 25–36. The moral gravity of the indictment rests on the breach of this ancient kinship covenant.",
+    "englishLayer": "The World English Bible translates the traditional Hebrew Masoretic Text. In verse 1, it renders the divine name as 'Lord Yahweh' (Adonai YHWH); in verses 12–14, it translates eight consecutive Hebrew negative prohibition particles ('al) as 'Don't...'.",
+    "textualHistory": [
+      {
+        "label": "The composed Hebrew text",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "Obadiah was preserved in the Hebrew Masoretic textual tradition and among the Dead Sea Scrolls (notably the Minor Prophets scroll from Wadi Murabba'at, Mur88). The Hebrew text is exceptionally well-preserved with minimal significant textual variants.",
+        "sourceIds": [
+          "mur88-dss",
+          "raabe-obadiah",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "Ancient Greek translation",
+        "language": "Koine Greek (Septuagint)",
+        "role": "translation",
+        "description": "Translated into Greek as part of the Twelve Prophets (Dodekapropheton) in the 2nd century BC. The Septuagint (titled Obadiou / Abdias) closely mirrors the Hebrew Vorlage while reflecting Hellenistic translation choices.",
+        "sourceIds": [
+          "rahlfs-lxx-obadiah",
+          "allen-obadiah"
+        ]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The hosted Protestant text translates the Hebrew Masoretic Text into clear, modern English prose while retaining the poetic layout and divine name Yahweh.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "יוֹם־יְהוָה (yôm YHWH): The Day of Yahweh as universal equalizer",
+        "original": "כִּי־קָרוֹב יוֹם־יְהוָה עַל־כָּל־הַגּוֹיִם — ki-qarov yom-YHWH ‘al-kol-haggoyim — “For the day of Yahweh is near all the nations”",
+        "explanation": "Obadiah hinges at verse 15, where the specific dispute with Edom expands into a cosmic 'Day of Yahweh' upon all nations. The prophetic concept of the Day of the Lord is not merely a date on a calendar, but a decisive intervention where divine order overcomes human oppression.",
+        "translationNote": "The World English Bible renders the phrase as 'the day of Yahweh.' Other translations use 'the day of the LORD.'",
+        "caution": "The Day of Yahweh in the prophets is an act of sovereign divine judgment, not a prediction of the chronological end of the physical universe.",
+        "refs": [
+          "1:15",
+          "1:16"
+        ],
+        "sourceIds": [
+          "raabe-obadiah",
+          "allen-obadiah",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Topographical wordplay: Sela, Teman, and the rocky heights",
+        "original": "בְּחַגְוֵי־סֶּלַע — bə-ḥagwê-sela‘ — “in the clefts of the rock”",
+        "explanation": "Verses 3–9 mock Edom's geographical pride. Built atop sheer sandstone cliffs in the Seir mountains (near the site of Petra / Sela), Edom considered itself impregnable ('Who will bring me down to the ground?'). Obadiah plays on 'sela' (rock/cliff and the city Sela) and names Teman, known for its traditional wisdom schools and warriors, declaring that rock fortresses and renowned sages will alike fail.",
+        "translationNote": "The WEB translates 'clefts of the rock' rather than treating Sela as a proper noun in verse 3, capturing the descriptive nature of the cliff fortifications.",
+        "caution": "Poetic irony about mountain eagles and nesting among stars is theological metaphor for hybris, not a literal astronomical statement.",
+        "refs": [
+          "1:3",
+          "1:4",
+          "1:8",
+          "1:9"
+        ],
+        "sourceIds": [
+          "raabe-obadiah",
+          "bartlett-edom",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "The drumbeat of eight prohibitions: אַל־ (’al)",
+        "original": "אַל־תֵּרֶא … וְאַל־תִּשְׂמַח … וְאַל־תַּגְדֵּל — ’al-tere’ … wə-’al-tismaḥ … wə-’al-tagdel — “Don’t look down … don’t rejoice … don’t speak proudly”",
+        "explanation": "In verses 12–14, Obadiah constructs a relentless rhetorical barrage of eight consecutive negative prohibitions with the particle ’al followed by jussive/imperfect verbs. Looking back on the tragedy of Jerusalem's fall, the prophet dramatizes the crime step-by-step: looking with pleasure on disaster, gloating, speaking arrogantly, looting property, blocking escape routes, and handing over fugitive survivors.",
+        "translationNote": "The WEB captures this rhythmic staccato with eight lines starting with 'Don't...'. Some translations render these as past conditional statements ('You should not have looked...'), which smooths the Hebrew dramatic present.",
+        "caution": "These prohibitions are retrospective prophetic poetry exposing Edom's actual past actions; they are not real-time warnings giving Edom a chance to reconsider during the battle.",
+        "refs": [
+          "1:12",
+          "1:13",
+          "1:14"
+        ],
+        "sourceIds": [
+          "raabe-obadiah",
+          "allen-obadiah",
+          "ben-zvi-obadiah",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Lex Talionis: The boomerang of deeds returning upon the head",
+        "original": "כַּאֲשֶׁר עָשִׂיתָ יֵעָשֶׂה לָּךְ גְּמֻלְךָ יָשׁוּב בְּרֹאשֶׁךָ — ka’asher ‘asita ye‘aseh lak gəmulkha yashuv bə-ro’shekha — “As you have done, it will be done to you. Your deeds will return upon your own head.”",
+        "explanation": "Verse 15 articulates the biblical principle of strict retributive justice (measure for measure / lex talionis). The word gəmul denotes recompense, dessert, or the full harvest of one's actions. Edom, which plundered its brother and drank in revelry over ruined Zion, will find its cup filled with divine wrath, and its former allies will plunder its own borders (v. 7).",
+        "translationNote": "The WEB's 'Your deeds will return upon your own head' directly renders the vivid Hebrew bodily idiom.",
+        "caution": "Biblical lex talionis in prophecy is a theological declaration of cosmic justice governed by God, not a mandate for personal vigilante revenge.",
+        "refs": [
+          "1:7",
+          "1:15",
+          "1:16"
+        ],
+        "sourceIds": [
+          "raabe-obadiah",
+          "allen-obadiah",
+          "hosted-web"
+        ]
+      }
+    ],
+    "examplesHeading": "Hebrew moments Obadiah lets you hear",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "ḥăzôn ‘Ōḇaḏyāh",
+        "meaning": "“The vision of Obadiah”",
+        "why": "The standard prophetic superscription designating the text as an authorized divine disclosure rather than human political speculation.",
+        "sourceIds": [
+          "raabe-obadiah",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:3",
+        "form": "bə-ḥaḡwê-sela‘",
+        "meaning": "“in the clefts of the rock”",
+        "why": "Evokes the inaccessible red sandstone cliffs of Edom, establishing the contrast between earthly security and divine sovereign reach.",
+        "sourceIds": [
+          "bartlett-edom",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:10",
+        "form": "mē-ḥămas ’āḥîḵā ya‘ăqōḇ",
+        "meaning": "“For the violence done to your brother Jacob”",
+        "why": "Anchors the theological indictment in Genesis kinship theology: Edom's crime was not ordinary warfare, but fraternal treachery.",
+        "sourceIds": [
+          "raabe-obadiah",
+          "ben-zvi-obadiah",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "1:21",
+        "form": "wə-hāyəṯāh l-YHWH ham-məlûḵāh",
+        "meaning": "“and the kingdom will be Yahweh's”",
+        "why": "The climactic concluding line of the book, shifting focus from regional borders and historical rivalries to the universal reign of God.",
+        "sourceIds": [
+          "allen-obadiah",
+          "hosted-web"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Prophetic Oracle against a Foreign Nation (OAN) / Oracular Poem",
+    "how": "Read Obadiah as a single, unified dramatic speech in two balanced movements. Verses 1–14 focus on the particular historical judgment of Edom for its crimes against Judah. At verse 15, the lens widens to the universal judgment of all predatory nations ('the Day of Yahweh is near all the nations') and concludes with the theological vindication and restoration of God's people on Mount Zion."
+  },
+  "cast": [
+    {
+      "name": "Yahweh",
+      "who": "The covenant God of Israel, sovereign judge of all nations, who executes retributive justice against oppressors and establishes his ultimate kingdom."
+    },
+    {
+      "name": "Obadiah",
+      "who": "The visionary messenger who receives and delivers the divine oracle; an otherwise anonymous prophetic voice."
+    },
+    {
+      "name": "Edom / Esau / Teman",
+      "who": "The mountain kingdom southeast of the Dead Sea, descended from Jacob's twin brother Esau; indicted for pride, plundering, and betraying Judean refugees."
+    },
+    {
+      "name": "Judah / Jacob / Joseph",
+      "who": "The people of God who suffered the catastrophe of Jerusalem's fall in 586 BC; promised deliverance, holiness, and inheritance on Mount Zion."
+    },
+    {
+      "name": "The Nations / Foreign Invaders",
+      "who": "The international powers (such as the Babylonians) who destroyed Jerusalem, alongside former allies of Edom who will ultimately turn and plunder Edom."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Edom's Humbling, the Sibling Indictment, and the Kingdom of Yahweh",
+      "chapters": "1",
+      "precise": "1:1–21",
+      "note": "A concise 21-verse sequence: Edom's proud mountain fortress stripped by allies (vv. 1–9); the specific charges of betrayal and looting during Jerusalem's disaster (vv. 10–14); the Day of Yahweh falling on all nations according to lex talionis (vv. 15–16); and the holy remnant on Mount Zion inheriting the land under Yahweh's reign (vv. 17–21)."
+    }
+  ],
+  "purpose": "Obadiah proclaims that no human fortress, political alliance, or geographic barrier is immune to divine justice. By condemning Edom's opportunistic cruelty during Jerusalem's darkest hour, the book affirms to crushed and traumatized survivors that God sees fraternal betrayal, that unchecked violence will reap its own consequence, and that history culminates not in the victory of predatory empires, but in the sovereign, righteous reign of Yahweh.",
+  "snags": [
+    {
+      "snag": "The hostility toward Edom sounds harsh and vengeful to modern ears.",
+      "help": "Ancient prophetic judgment oracles use forceful, hyperbolic war imagery to articulate divine justice for real atrocities. Edom was not an innocent bystander: in the ancient Near East, blocking escape routes and selling fleeing refugees into slavery were grave war crimes. The book's target is unprovoked violence against vulnerable kin, not ethnic malice."
+    },
+    {
+      "snag": "Who was Esau and why are they called 'brothers'?",
+      "help": "In Genesis 25–36, Esau and Jacob were twin sons of Isaac and Rebekah. Israel traced its lineage to Jacob, while Edom traced its lineage to Esau. Throughout Deuteronomy and the prophetic literature, Israel and Edom were recognized as sibling nations bound by ancestral ties, which made Edom's participation in Jerusalem's sack uniquely heinous."
+    },
+    {
+      "snag": "Did Edom's destruction actually take place?",
+      "help": "Yes, though not all at once. Within a few decades of Jerusalem's fall, the Neo-Babylonian king Nabonidus campaigned against Edom (c. 553 BC), breaking its political power. Later, Arab and Nabataean migrations pushed the surviving Edomites westward into the southern Judean Negev (which became known as Idumea), fulfilling the loss of their historic mountain homeland."
+    },
+    {
+      "snag": "Who are the 'saviors' or 'deliverers' going up on Mount Zion in verse 21?",
+      "help": "The Hebrew term moshi'im refers to champions or deliverers (similar to the 'judges' in the Book of Judges) through whom God brings rescue and administers justice, rather than modern theological saviors."
+    },
+    {
+      "snag": "Why does Obadiah share verses almost verbatim with Jeremiah 49?",
+      "help": "Obadiah 1:1–9 and Jeremiah 49:7–22 share striking verbal parallels regarding Edom's destruction. Scholars debate whether one author quoted the other or both drew upon a shared, earlier oral or liturgical oracle against Edom."
+    }
+  ],
+  "debates": [
+    {
+      "question": "What is the historical date and occasion of Obadiah's prophecy?",
+      "settled": "The text depicts a devastating conquest of Jerusalem where foreigners entered the gates, looted substance, and cast lots for the city (v. 11).",
+      "positions": [
+        {
+          "view": "Sixth-century BC (post-586 BC Babylonian destruction)",
+          "grounds": "The vast majority of modern commentators conclude that verses 11–14 describe the catastrophe of the Babylonian destruction of Jerusalem in 586 BC, matching the laments found in Psalm 137:7 and Lamentations 4:21–22 regarding Edom's conduct."
+        },
+        {
+          "view": "Ninth-century BC (reign of King Jehoram)",
+          "grounds": "A traditional conservative view places the book around 845 BC, identifying the crisis with the Philistine and Arabian raid on Jerusalem recorded in 2 Chronicles 21:16–17, noting that Babylon and the destruction of the temple are not explicitly named."
+        }
+      ],
+      "soWhat": "A 586 BC date frames Obadiah as a companion voice to Lamentations and Ezekiel 35, addressing the trauma of exile; an earlier date makes Obadiah one of the earliest writing prophets."
+    },
+    {
+      "question": "What is the literary relationship between Obadiah 1–9 and Jeremiah 49:7–22?",
+      "settled": "Obadiah 1–6 and Jeremiah 49:9, 14–16 share extensive, near-verbatim Hebrew wording describing Edom's plunder and false security.",
+      "positions": [
+        {
+          "view": "Both drew on an earlier common prophetic oracle",
+          "grounds": "Differences in arrangement, vocabulary, and poetic flow suggest that neither text simply copied the other, but that both adapted an existing, well-known anti-Edom oracle circulating in Jerusalem."
+        },
+        {
+          "view": "Obadiah is the original source used by Jeremiah",
+          "grounds": "Obadiah presents the material in a tighter, more cohesive poetic structure, whereas Jeremiah 49 appears to expand and integrate various prophetic fragments."
+        },
+        {
+          "view": "Obadiah borrowed from Jeremiah",
+          "grounds": "Some scholars argue a post-exilic author of Obadiah drew upon the Jeremiah scroll along with other prophetic collections to construct a focused indictment of Edom."
+        }
+      ],
+      "soWhat": "Recognizing shared prophetic material reveals how ancient Israelite prophets engaged common traditions and reshaped them to speak into fresh historical crises."
+    },
+    {
+      "question": "Is the restoration in verses 19–21 literal territorial expansion or eschatological symbol?",
+      "settled": "The closing verses depict Israel possessing territory across the Negev, Shephelah, Ephraim, Samaria, and Gilead, culminating in the declaration that 'the kingdom will be Yahweh's.'",
+      "positions": [
+        {
+          "view": "A historical hope for post-exilic territorial recovery",
+          "grounds": "The geographic list specifically names the border areas lost during the exile and envisions the return of displaced communities to their ancestral lands."
+        },
+        {
+          "view": "An idealized eschatological vision of universal divine rule",
+          "grounds": "The sweeping symmetry of the borders, the appearance of deliverers on Zion judging Esau, and the final focus on Yahweh's universal kingdom transcend local political geography into a vision of cosmic redemption."
+        }
+      ],
+      "soWhat": "Readers can appreciate the concrete historical grounding of biblical hope without reducing the text's ultimate theological horizon to mere real estate."
+    }
+  ],
+  "sources": [
+    {
+      "id": "raabe-obadiah",
+      "label": "Paul R. Raabe, Obadiah: A New Translation with Introduction and Commentary (Anchor Yale Bible)",
+      "says": "An exhaustive linguistic and literary commentary analyzing Obadiah's poetic structure, Hebrew syntax, historical setting in the aftermath of 586 BC, and theological themes.",
+      "url": "https://yalebooks.yale.edu/book/9780300139716/obadiah/"
+    },
+    {
+      "id": "allen-obadiah",
+      "label": "Leslie C. Allen, The Books of Joel, Obadiah, Jonah, and Micah (NICOT, Eerdmans)",
+      "says": "Examines the composition history, the relationship with Jeremiah 49, the Day of Yahweh motif, and the rhetorical function of the prohibitions in verses 12–14.",
+      "url": "https://en.wikipedia.org/wiki/New_International_Commentary_on_the_Old_Testament"
+    },
+    {
+      "id": "ben-zvi-obadiah",
+      "label": "Ehud Ben Zvi, A Historical-Critical Study of the Book of Obadiah (de Gruyter)",
+      "says": "Analyzes Obadiah within the reading and compositional practices of the Persian-period Yehud literati and the Book of the Twelve.",
+      "url": "https://www.degruyter.com/document/doi/10.1515/9783110811902/html"
+    },
+    {
+      "id": "bartlett-edom",
+      "label": "J. R. Bartlett, Edom and the Edomites (JSOT Press / Sheffield)",
+      "says": "The standard archaeological and historical study of Iron Age Edom, its settlements at Sela and Bozrah, its relations with Judah, and its eventual displacement by Arab groups.",
+      "url": "https://www.bloomsbury.com/uk/edom-and-the-edomites-9781850752059/"
+    },
+    {
+      "id": "mur88-dss",
+      "label": "Wadi Murabba'at Minor Prophets Scroll (Mur88)",
+      "says": "A 2nd-century AD Hebrew manuscript discovered in the Judean desert containing the text of Obadiah virtually identical to the Masoretic Text.",
+      "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/Mur88-1"
+    },
+    {
+      "id": "rahlfs-lxx-obadiah",
+      "label": "Alfred Rahlfs, Septuaginta: Dodekapropheton (Obadias)",
+      "says": "The standard critical edition of the ancient Greek Septuagint translation of the Minor Prophets.",
+      "url": "https://en.wikipedia.org/wiki/Septuagint"
+    },
+    {
+      "id": "usccb-obadiah",
+      "label": "USCCB, Introduction to Obadiah",
+      "says": "A concise overview explaining the historical setting in the aftermath of Jerusalem's fall to Babylon and the theological themes of pride and divine judgment.",
+      "url": "https://bible.usccb.org/bible/obadiah/0"
+    },
+    {
+      "id": "hosted-web",
+      "label": "The text on this site",
+      "says": "Word counts, verse counts, Hebrew names, the eight prohibition lines, and all reference citations were checked directly against the World English Bible text hosted here."
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read the entire 21-verse poem in one sitting to experience its building momentum from local dispute to universal divine rule.",
+      "refs": [
+        "1:1",
+        "1:15",
+        "1:21"
+      ]
+    },
+    {
+      "tip": "Notice how the poem shifts at verse 15 from the specific indictment of Edom to 'all the nations,' turning a local grievance into a cosmic theological principle.",
+      "refs": [
+        "1:15"
+      ]
+    },
+    {
+      "tip": "Read verses 12–14 aloud to hear the rhythmic staccato of the eight 'Don't...' prohibitions describing the unfolding horror of Jerusalem's fall.",
+      "refs": [
+        "1:12",
+        "1:13",
+        "1:14"
+      ]
+    },
+    {
+      "tip": "Compare Obadiah 1:1–9 with Jeremiah 49:7–22 to see how two biblical prophets share common language to address the problem of national arrogance.",
+      "refs": [
+        "1:1",
+        "1:3",
+        "1:5"
+      ]
+    },
+    {
+      "tip": "Keep Genesis 25–36 in mind as the family background for the names Esau, Jacob, and Teman, which give the book its emotional weight.",
+      "refs": [
+        "1:10",
+        "1:18"
+      ]
+    }
+  ],
+  "next": "Read Jonah next for a completely different prophetic perspective on foreign nations — where Obadiah announces unsparing judgment on Edom, Jonah depicts God extending mercy to the repentance of Nineveh. Then read Lamentations and Psalm 137 to understand the raw grief of Jerusalem's destruction that forms Obadiah's immediate background.",
+  "traditionNote": "Obadiah is the fourth book of the Minor Prophets in Protestant, Catholic, and Jewish arrangements (Trei Asar / The Twelve). In the Orthodox Septuagint order, it is placed fifth, following Joel and Amos."
+}

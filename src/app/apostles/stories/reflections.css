@@ -1,0 +1,199 @@
+.as-reflect {
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.as-reflect h2,
+.as-reflect h3 {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.as-reflect p,
+.as-reflect blockquote,
+.as-reflect cite {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.as-reflect a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.as-reflect a:focus-visible,
+.as-reflect button:focus-visible,
+.as-reflect input[type="range"]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.as-reflect-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block: 0.75rem;
+}
+
+.as-reflect-controls button {
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.6rem 1rem;
+  font: inherit;
+  color: var(--ink);
+  background: transparent;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.as-reflect-controls button:disabled {
+  cursor: default;
+}
+
+.as-reflect-controls button[data-selected="true"] {
+  border-color: var(--accent);
+  border-left: 0.5rem solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, var(--surface));
+}
+
+.as-reflect-status {
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding-top: 0.5rem;
+  min-width: 0;
+}
+
+.as-reflect-note,
+.as-reflect-verse {
+  color: var(--muted);
+  min-width: 0;
+}
+
+.as-reflect-stack,
+.as-reflect-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-block: 0.75rem;
+}
+
+.as-reflect-card {
+  min-width: 0;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-inline-start: 4px solid var(--line);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.as-reflect-card[data-selected="true"] {
+  border-inline-start: 0.5rem solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, var(--surface));
+}
+
+.as-reflect label {
+  display: block;
+  margin-block: 0.5rem;
+  color: var(--ink);
+}
+
+.as-reflect input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  accent-color: var(--accent);
+}
+
+.as-reflect-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-items: stretch;
+  background: linear-gradient(to right, transparent 49.4%, var(--line) 49.4%, var(--line) 50.6%, transparent 50.6%);
+}
+
+.as-reflect-middle {
+  grid-column: 1 / -1;
+  order: 3;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.as-reflect-saying {
+  margin: 0;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.as-reflect-saying[data-side="demand"] {
+  font-weight: calc(800 - var(--as-t, 0) * 300);
+  word-spacing: calc(0.28em - var(--as-t, 0) * 0.18em);
+  border-inline-start: calc(4px + (1 - var(--as-t, 0)) * 6px) solid var(--accent);
+}
+
+.as-reflect-saying[data-side="confession"] {
+  font-weight: calc(500 + var(--as-t, 0) * 300);
+  word-spacing: calc(0.1em + var(--as-t, 0) * 0.18em);
+  border-inline-start: calc(4px + var(--as-t, 0) * 6px) solid var(--accent);
+}
+
+.as-reflect-saying[data-active="true"] {
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+}
+
+@media (max-width: 560px) {
+  .as-reflect-pair {
+    grid-template-columns: 1fr;
+    background: linear-gradient(to bottom, transparent 49.4%, var(--line) 49.4%, var(--line) 50.6%, transparent 50.6%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .as-reflect *,
+  .as-reflect *::before,
+  .as-reflect *::after {
+    transition: none;
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .as-reflect-controls button:focus-visible,
+  .as-reflect a:focus-visible,
+  .as-reflect input[type="range"]:focus-visible {
+    outline: 3px double Highlight;
+  }
+
+  .as-reflect-controls button[data-selected="true"],
+  .as-reflect-card[data-selected="true"],
+  .as-reflect-saying[data-active="true"] {
+    outline: 3px double Highlight;
+    outline-offset: 2px;
+  }
+}
+
+/* Keep reflection typography measured within the story reset. */
+.as-reflect { border-radius: 0; padding: clamp(1rem,4vw,3rem); }
+.as-reflect h2 { font-size: clamp(1.8rem,3vw,2.6rem); line-height: 1.2; font-weight: 500; margin-bottom: 1.3rem; }
+.as-reflect h3 { font-size: 1.2rem; margin-bottom: .8rem; }
+.as-reflect p { line-height: 1.8; margin-block: .8rem; }
+.as-reflect-card { border-radius: 0; padding: 1.2rem; }
+.as-reflect-saying { border-radius: 0; }
+.as-reflect-saying p { font-size: clamp(1.6rem,3vw,2.8rem); line-height: 1.3; }
+.as-reflect-saying cite { font-size: .9rem; }
+.as-reflect-middle { border-radius: 0; }
+@media(min-width: 700px) { .as-reflect-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }

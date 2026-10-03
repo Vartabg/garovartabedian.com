@@ -1,0 +1,249 @@
+{
+  "intro": "The home page says every word of Scripture on this site is public domain. That is a claim, so here is the chain behind it. For each hosted text: the file the site ingested, the rights record that says it is free, what the processing did to it, and where it serves in the reader. Nothing here is copied from a modern copyrighted translation.",
+  "texts": [
+    {
+      "id": "web",
+      "recordId": "web",
+      "abbr": "WEB",
+      "name": "World English Bible",
+      "edition": "eBible verse-per-line edition, with Apocrypha and Deuterocanon",
+      "year": "completed 2020",
+      "basis": "Dedicated to the public domain by its makers. The name is a trademark of eBible.org, which may be used here because the text is reproduced unmodified.",
+      "sources": [
+        {
+          "label": "eng-web_vpl.zip",
+          "href": "https://ebible.org/Scriptures/eng-web_vpl.zip",
+          "note": "The verse-per-line archive the site ingested."
+        }
+      ],
+      "license": {
+        "label": "World English Bible copyright statement",
+        "href": "https://ebible.org/web/copyright.htm",
+        "note": "The public-domain dedication and the trademark terms."
+      },
+      "retrieved": "2026-07-01",
+      "processing": "Verse-per-line source file with pilcrows and extra whitespace removed; legacy book codes normalized to standard USFM ids; bridged verse numbers kept as empty slots so numbering matches the printed edition. No words added, removed, or changed.",
+      "sample": {
+        "label": "Read John 1 on the Protestant shelf",
+        "href": "/scriptures/protestant/JHN/1"
+      }
+    },
+    {
+      "id": "kjv",
+      "recordId": "kjv",
+      "abbr": "KJV",
+      "name": "King James Version",
+      "edition": "1769 Blayney standardized text, eBible 2006 edition",
+      "year": "1611; 1769 text",
+      "basis": "Public domain by age in the United States and nearly everywhere else. In the United Kingdom the text is still printed under Crown letters patent, which the rights page notes.",
+      "sources": [
+        {
+          "label": "eng-kjv2006_vpl.zip",
+          "href": "https://ebible.org/Scriptures/eng-kjv2006_vpl.zip",
+          "note": "The verse-per-line archive the site ingested."
+        }
+      ],
+      "license": {
+        "label": "KJV (eBible 2006 edition) copyright page",
+        "href": "https://ebible.org/eng-kjv2006/copyright.htm",
+        "note": "States public domain, with the UK letters-patent exception."
+      },
+      "retrieved": "2026-07-01",
+      "processing": "Verse-per-line source file with pilcrows and extra whitespace removed; legacy book codes normalized to standard USFM ids; bridged verse numbers kept as empty slots so numbering matches the printed edition. No words added, removed, or changed. Bracketed translator-supplied words are kept as printed.",
+      "sample": {
+        "label": "Read John 1, then switch the reader to KJV",
+        "href": "/scriptures/protestant/JHN/1"
+      }
+    },
+    {
+      "id": "drb",
+      "recordId": "dra",
+      "abbr": "DRA",
+      "name": "Douay-Rheims (Challoner)",
+      "edition": "1899 American edition, translated from the Latin Vulgate",
+      "year": "1752 revision; 1899 edition",
+      "basis": "Public domain by age, as the hosting record states.",
+      "sources": [
+        {
+          "label": "engDRA_vpl.zip",
+          "href": "https://ebible.org/Scriptures/engDRA_vpl.zip",
+          "note": "The verse-per-line archive the site ingested."
+        }
+      ],
+      "license": {
+        "label": "Douay-Rheims 1899 copyright page",
+        "href": "https://ebible.org/engDRA/copyright.htm",
+        "note": "States public domain and names the 1899 American edition."
+      },
+      "retrieved": "2026-07-01",
+      "processing": "Verse-per-line source file with pilcrows and extra whitespace removed; legacy book codes normalized to standard USFM ids; bridged verse numbers kept as empty slots so numbering matches the printed edition. No words added, removed, or changed.",
+      "sample": {
+        "label": "Read Tobit 1 on the Catholic shelf",
+        "href": "/scriptures/catholic/TOB/1"
+      }
+    },
+    {
+      "id": "brenton",
+      "recordId": "brenton",
+      "abbr": "Brenton",
+      "name": "Brenton's English Septuagint",
+      "edition": "eBible edition of the 1851 translation",
+      "year": "1851",
+      "basis": "Published in 1851 and now in the public domain, as the hosting record states.",
+      "sources": [
+        {
+          "label": "eng-Brenton_vpl.zip",
+          "href": "https://ebible.org/Scriptures/eng-Brenton_vpl.zip",
+          "note": "The verse-per-line archive the site ingested."
+        }
+      ],
+      "license": {
+        "label": "Brenton Septuagint Translation copyright page",
+        "href": "https://ebible.org/eng-Brenton/copyright.htm",
+        "note": "Credits Sir Lancelot Charles Lee Brenton, dates the translation to 1851, and states public domain."
+      },
+      "retrieved": "2026-07-01",
+      "processing": "Verse-per-line source file with pilcrows and extra whitespace removed; legacy book codes normalized to standard USFM ids; bridged verse numbers kept as empty slots so numbering matches the printed edition. No words added, removed, or changed. Bracketed translator-supplied words are kept as printed.",
+      "sample": {
+        "label": "Read Genesis 1 on the Orthodox shelf",
+        "href": "/scriptures/orthodox/GEN/1"
+      }
+    },
+    {
+      "id": "charles",
+      "recordId": "charles",
+      "abbr": "Charles",
+      "name": "1 Enoch and Jubilees, R. H. Charles",
+      "edition": "Charles's translations from The Apocrypha and Pseudepigrapha of the Old Testament (Oxford: Clarendon Press, 1913)",
+      "year": "1913",
+      "basis": "Published before 1931, and the translator died in 1931, so public domain in the United States and in countries whose term is the author's life plus 94 years or less.",
+      "sources": [
+        {
+          "label": "The Book of Enoch (Charles) on Wikisource",
+          "href": "https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)",
+          "note": "The transcription used for 1 Enoch; its notice states the public-domain basis."
+        },
+        {
+          "label": "The Book of Jubilees on CCEL",
+          "href": "https://www.ccel.org/c/charles/otpseudepig/jubilee/index.htm",
+          "note": "The transcription used for Jubilees, scanned and edited by Joshua Williams, Northwest Nazarene College."
+        }
+      ],
+      "license": {
+        "label": "Charles, Apocrypha and Pseudepigrapha, vol. II (1913)",
+        "href": "https://archive.org/details/apocryphapseudep02char",
+        "note": "Scan of the printed Clarendon Press volume. The 1913 publication date is the basis of the public-domain status."
+      },
+      "processing": "Jubilees keeps CCEL's wording and editorial dates; a source review against the 1913 marginal numbering and the 1917 edition restored 34 verse boundaries and two missing verse markers. 1 Enoch is retained as ingested, with its attribution unchanged.",
+      "review": {
+        "label": "Jubilees source review",
+        "href": "https://github.com/Vartabg/garovartabedian/blob/master/docs/jubilees-source-review.md",
+        "note": "The evidence and the boundary repairs, with a link to the pinned source manifest."
+      },
+      "sample": {
+        "label": "Read 1 Enoch 1 on the Ethiopian shelf",
+        "href": "/scriptures/ethiopian/ENO/1"
+      }
+    }
+  ],
+  "apparatus": [
+    {
+      "id": "tsk",
+      "name": "Treasury of Scripture Knowledge cross-references",
+      "basis": "Public domain",
+      "note": "Parsed into local reader links, so every cross-reference resolves inside the hosted texts.",
+      "links": [
+        {
+          "label": "tskxref.txt",
+          "href": "https://raw.githubusercontent.com/ariseshinestudio/TSK/master/tskxref.txt"
+        }
+      ]
+    },
+    {
+      "id": "nave",
+      "name": "Nave's Topical Bible (Orville J. Nave, 1897)",
+      "basis": "Public domain",
+      "note": "Parsed and verified against the hosted WEB text; references that did not resolve were dropped rather than left pointing nowhere.",
+      "links": [
+        {
+          "label": "NavesTopicalDictionary.csv",
+          "href": "https://raw.githubusercontent.com/BradyStephenson/bible-data/main/NavesTopicalDictionary.csv"
+        }
+      ]
+    },
+    {
+      "id": "oshb",
+      "name": "Open Scriptures Hebrew Bible",
+      "basis": "Public-domain text; CC BY 4.0 data",
+      "note": "Westminster Leningrad Codex text with Hebrew and Aramaic lemma and morphology data. The data is openly licensed, not public domain, so attribution is kept.",
+      "links": [
+        {
+          "label": "openscriptures/morphhb",
+          "href": "https://github.com/openscriptures/morphhb"
+        }
+      ]
+    },
+    {
+      "id": "sblgnt",
+      "name": "SBL Greek New Testament + MorphGNT",
+      "basis": "CC BY 4.0 text; CC BY-SA 3.0 parsing",
+      "note": "The New Testament source-text layer and the parsing behind the word inspector. Openly licensed, not public domain.",
+      "links": [
+        {
+          "label": "SBL Greek New Testament",
+          "href": "https://www.sblgnt.com/"
+        },
+        {
+          "label": "morphgnt/sblgnt",
+          "href": "https://github.com/morphgnt/sblgnt"
+        }
+      ]
+    },
+    {
+      "id": "lxx",
+      "name": "Rahlfs Septuagint (1935) + lxx-morph",
+      "basis": "Public-domain text; CC BY 4.0 morphology",
+      "note": "This site adapts and filters the morphology into chapter records and says so, as the license requires; the full data stays at the pinned revision.",
+      "links": [
+        {
+          "label": "lxx-morph",
+          "href": "https://git.sr.ht/~sethkush/lxx-morph"
+        },
+        {
+          "label": "CC BY 4.0",
+          "href": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "id": "semantic",
+      "name": "Semantic search index",
+      "basis": "Computed here from the WEB text",
+      "note": "Verse embeddings built locally from the hosted World English Bible. Nothing is fetched from a copyrighted translation at search time.",
+      "links": [
+        {
+          "label": "How the site is built",
+          "href": "/labs"
+        }
+      ]
+    },
+    {
+      "id": "narration",
+      "name": "Chapter narration",
+      "basis": "Generated here from the hosted text",
+      "note": "Audio read from WEB and KJV chapters by a locally generated voice and served as static files; no text-to-speech service is called when a reader presses Listen.",
+      "links": [
+        {
+          "label": "Narration notes",
+          "href": "https://github.com/Vartabg/garovartabedian/blob/master/public/scriptures/audio/README.md"
+        }
+      ]
+    }
+  ],
+  "boundary": [
+    "Modern copyrighted translations are discussed in the ledger and the cases. They are never hosted as text.",
+    "The original-language editions and their morphology are openly licensed, not public domain. Their attribution and change notices travel with the data.",
+    "Wikisource and CCEL are transcriptions of public-domain works. A transcription adds no new copyright to the words, which is why the chain ends at the 1913 volume rather than at a website.",
+    "Chapter guides, book briefings, and the search indexes are this site's own work built on the hosted texts. They are not Scripture text and make no claim to be."
+  ]
+}

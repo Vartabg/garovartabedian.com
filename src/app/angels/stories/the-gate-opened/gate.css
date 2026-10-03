@@ -1,0 +1,181 @@
+/* Light changes what can be seen; the street remains an open composition. */
+.gate-story { --story-accent: #dcc89c; --story-rule: #555449; --gate-night: #111518; background: var(--gate-night); }
+.gate-story .gate-inset { width: min(100% - 8vw, 82rem); margin-inline: auto; }
+.gate-story :is(h1, .gate-display, blockquote p) { overflow-wrap: anywhere; }
+.gate-section { scroll-margin-top: 2rem; }
+.gate-eyebrow { color: var(--story-accent); font-size: .66rem; letter-spacing: .17em; text-transform: uppercase; }
+.gate-story .gate-chapter-heading { display: flex; align-items: baseline; gap: 1.1rem; color: var(--story-accent); font-family: var(--font-interface); font-size: .67rem; font-weight: 400; letter-spacing: .15em; line-height: 1.7; text-transform: uppercase; }
+.gate-chapter-heading > span { color: #aaa99d; font-size: .6rem; letter-spacing: .02em; font-variant-numeric: tabular-nums; }
+.gate-display { color: var(--story-ink); font-family: var(--story-serif); font-size: clamp(2.7rem, 5.1vw, 5.4rem); font-weight: 350; line-height: 1.06; letter-spacing: -.055em; }
+.gate-display em { color: var(--story-accent); font-weight: inherit; }
+.gate-story .gate-chapter-heading + .gate-display { margin-top: 1.7rem; }
+.gate-story cite { display: block; margin-top: 1.65rem; color: var(--story-muted); font-family: var(--font-interface); font-size: .67rem; font-style: normal; letter-spacing: .08em; }
+.gate-prose { color: var(--story-muted); font-size: 1rem; line-height: 1.85; }
+.gate-quiet-link { display: inline-flex; align-items: center; gap: 2rem; min-height: 3rem; color: var(--story-accent); font-size: .76rem; text-decoration: none; }
+.gate-quiet-link:hover { color: #fff0ce; }
+
+.gate-cover { position: relative; isolation: isolate; padding: 1.8rem 4vw 1.3rem; background: #0c1013; }
+.gate-cover-topline, .gate-cover-bottom { display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: #c0c0b5; font-size: .62rem; line-height: 1.6; letter-spacing: .11em; text-transform: uppercase; }
+.gate-cover-topline { position: relative; z-index: 1; }
+.gate-cover-topline a { text-decoration: none; }
+.gate-cover-topline a:hover { color: #f4e8ce; }
+.gate-cover-topline a span { color: var(--story-accent); margin-inline: .8rem; }
+.gate-cover-grid { display: grid; grid-template-columns: 1fr 1.2fr; min-height: min(49rem, 84svh); }
+.gate-cover-copy { position: relative; z-index: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 4.8rem 0 5.5rem; }
+.gate-cover h1 { color: #eee8dd; font-family: var(--story-serif); font-size: clamp(4.4rem, 7.8vw, 9rem); font-weight: 350; letter-spacing: -.065em; line-height: .99; margin-top: 1.7rem; }
+.gate-cover h1 em { color: #decca6; font-weight: inherit; }
+.gate-story .gate-cover-intro { margin-top: 2.1rem; color: #bebfb4; font-size: 1.05rem; line-height: 1.75; }
+.gate-begin-link { display: flex; align-items: center; justify-content: space-between; gap: 3rem; min-height: 3rem; margin-top: 2rem; padding-block: .9rem; border-bottom: 1px solid #a99b7a; color: #ece0c4; font-size: .82rem; text-decoration: none; }
+.gate-begin-link:hover { color: #fff6df; border-color: #efe0be; }
+.gate-cover-window { position: relative; min-width: 0; aspect-ratio: 3 / 2; align-self: center; margin-block: 2rem; overflow: hidden; background: #181d1e; }
+.gate-cover-window img { object-fit: cover; object-position: 49% center; }
+.gate-cover-window-shade { position: absolute; inset: 0; background: linear-gradient(90deg, #0c1013 0%, rgb(12 16 19 / 45%) 18%, transparent 52%), linear-gradient(0deg, #0c1013, transparent 30%, transparent 70%, rgb(12 16 19 / 25%)); }
+.gate-cover-window-rule { position: absolute; left: 0; top: 13%; bottom: 13%; width: 1px; background: linear-gradient(transparent, #776e58, transparent); }
+.gate-cover-bottom { padding-top: .5rem; }
+
+.gate-kept { padding-top: clamp(4.5rem, 9vw, 9rem); }
+.gate-kept-heading { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 7vw; }
+.gate-kept-heading > .gate-prose { max-width: 27rem; padding-bottom: .4rem; }
+.gate-story .gate-praying { margin-top: 3rem; }
+.gate-praying-frame { position: relative; width: min(100%, 70rem); margin-inline: auto; padding: .65rem; border: 1px solid #42463f; background: #0a0e10; }
+.gate-praying-frame img { display: block; width: 100%; height: auto; }
+.gate-praying figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; color: var(--story-muted); font-size: .62rem; line-height: 1.6; }
+.gate-praying figcaption { width: min(100%, 70rem); margin: 1rem auto 0; }
+.gate-praying figcaption > span:first-child { color: var(--story-accent); text-transform: uppercase; letter-spacing: .09em; }
+
+.gate-follow { position: relative; padding-block: clamp(3.5rem, 6vw, 6rem); }
+.gate-follow-inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .85fr); gap: 1.7rem 5vw; align-items: center; }
+.gate-follow-inner > .gate-chapter-heading { grid-column: 1 / -1; }
+.gate-story .gate-light-heading { grid-column: 1 / -1; color: var(--story-ink); font-family: var(--story-serif); font-size: clamp(2.7rem, 4.8vw, 5rem); font-weight: 350; line-height: 1.1; letter-spacing: -.05em; }
+.gate-light-heading em { color: var(--story-accent); font-weight: inherit; }
+.gate-recognition-art figcaption { margin-top: .8rem; color: var(--story-muted); font-size: .59rem; line-height: 1.65; }
+.gate-follow-copy { grid-column: 1 / -1; min-width: 0; max-width: 50rem; justify-self: center; padding-block: 2rem .5rem; text-align: center; }
+.gate-story .gate-follow-preface { color: var(--story-muted); font-size: .98rem; line-height: 1.85; }
+.gate-story .gate-follow blockquote { margin-top: 1.8rem; }
+.gate-follow blockquote p { color: #ebe2cf; font-family: var(--story-serif); font-size: clamp(2rem, 3vw, 3.2rem); font-weight: 350; line-height: 1.17; letter-spacing: -.055em; }
+.gate-follow blockquote p em { color: var(--story-accent); font-weight: inherit; }
+.gate-follow cite { margin-top: 1.1rem; }
+.gate-story .gate-follow-after { margin-top: 1.8rem; font-size: 1rem; line-height: 1.8; }
+.gate-follow-after > span { color: var(--story-muted); }
+.gate-follow .gate-quiet-link { margin-top: .9rem; }
+
+.gate-threshold { padding-top: 1rem; }
+.gate-threshold-heading { text-align: center; padding-bottom: 3rem; }
+.gate-threshold-heading .gate-chapter-heading { justify-content: center; }
+.gate-story .gate-threshold-reference { margin-top: 1.7rem; color: var(--story-muted); font-size: .7rem; letter-spacing: .04em; }
+.gate-open-street img { display: block; width: 100%; height: auto; }
+.gate-open-street figcaption { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1rem; color: var(--story-muted); font-size: .62rem; line-height: 1.7; }
+.gate-open-street figcaption > span:first-child { color: var(--story-accent); }
+
+.cell-light { grid-column: 1 / -1; min-width: 0; width: min(100%, max(22rem, calc((100svh - 18rem) * 1.77683))); max-width: 74rem; justify-self: center; }
+.cell-light-frame { position: relative; background: #11171a; }
+.cell-light-frame[data-enhanced="true"] { isolation: isolate; touch-action: pan-y pinch-zoom; user-select: none; cursor: crosshair; }
+.cell-light-frame:focus-visible { outline: 3px solid var(--story-accent); outline-offset: 5px; }
+.cell-light-frame img { display: block; width: 100%; height: auto; }
+.cell-light-frame figcaption { padding: .9rem 1rem; color: var(--story-muted); font-size: .73rem; line-height: 1.7; }
+.cell-light-frame[data-enhanced="true"] figcaption { display: none; }
+.cell-light-frame[data-enhanced="true"] .cell-light-after { position: absolute; inset: 0; pointer-events: none; }
+.cell-light-frame[data-view="before"] .cell-light-after { opacity: 0; }
+.cell-light-frame[data-view="spot"] .cell-light-after { mask-image: radial-gradient(circle clamp(4rem, 18vw, 16rem) at var(--cell-light-x) var(--cell-light-y), #000 0%, #000 46%, rgb(0 0 0 / 85%) 62%, transparent 100%); }
+.cell-light-controls { padding: 1.5rem 0 1rem; border-bottom: 1px solid var(--story-rule); }
+.cell-light-control-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.2rem 2rem; }
+.gate-story .cell-light-status { color: var(--story-accent); font-family: var(--story-serif); font-size: 1.25rem; font-style: italic; line-height: 1.5; }
+.cell-light-buttons { display: flex; flex-wrap: wrap; gap: .65rem; }
+.cell-light-buttons button { min-width: 0; min-height: 3rem; padding: .65rem 1rem; border: 1px solid #83785e; border-radius: 0; background: transparent; color: var(--story-ink); font-family: var(--font-interface); font-size: .74rem; line-height: 1.6; cursor: pointer; }
+.cell-light-buttons button[aria-pressed="true"] { color: #1b2223; background: #d8c196; border-color: #d8c196; }
+.cell-light-buttons button:hover { border-color: #f3dcae; }
+.cell-light-ranges { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2.5rem; margin-top: 1.5rem; }
+.cell-light-ranges label { min-width: 0; color: var(--story-muted); font-size: .72rem; line-height: 1.7; }
+.cell-light-ranges input { display: block; width: 100%; height: 2.75rem; margin: .3rem 0 0; padding: 0; accent-color: #d8c196; cursor: ew-resize; }
+.gate-story .cell-light-controls > p { margin-top: .85rem; color: var(--story-muted); font-size: .68rem; line-height: 1.8; }
+.gate-story .cell-light-art-note { margin-top: 1rem; color: var(--story-muted); font-size: .62rem; line-height: 1.75; }
+.gate-story .cell-light-static-note { margin-top: 1rem; color: var(--story-muted); font-size: .85rem; line-height: 1.8; }
+
+.gate-recognition { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .8fr); gap: 2rem 7vw; align-items: center; padding-block: clamp(4.5rem, 7vw, 7rem) 4rem; }
+.gate-recognition > .gate-chapter-heading { grid-column: 1 / -1; }
+.gate-recognition-art { grid-column: 2; grid-row: 2; width: 100%; max-width: 29rem; justify-self: end; }
+.gate-recognition-art img { display: block; width: 100%; height: auto; }
+.gate-recognition-copy { grid-column: 1; grid-row: 2; min-width: 0; }
+.gate-story .gate-recognition-preface { color: var(--story-muted); font-size: .95rem; line-height: 1.8; }
+.gate-story .gate-recognition blockquote { margin-top: 2.1rem; }
+.gate-recognition blockquote p { color: #ece8dc; font-family: var(--story-serif); font-size: clamp(2rem, 3.3vw, 3.5rem); font-weight: 350; line-height: 1.27; letter-spacing: -.055em; }
+.gate-recognition blockquote p em { color: var(--story-accent); font-weight: inherit; }
+.gate-story .gate-recognition-after { margin-top: 2rem; font-size: 1rem; line-height: 1.85; }
+.gate-recognition .gate-quiet-link { margin-top: 1.2rem; }
+.gate-story .visual-story-source { border-top: 1px solid var(--story-rule); }
+
+@media (max-width: 950px) {
+  .gate-cover-grid { grid-template-columns: 1fr 1fr; }
+  .gate-cover h1 { font-size: clamp(3.7rem, 8.1vw, 6rem); }
+  .gate-cover-window { margin-left: -10%; }
+  .gate-follow-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.5rem 4vw; }
+  .gate-follow blockquote p { font-size: clamp(1.85rem, 3.2vw, 2.75rem); }
+  .gate-recognition { gap: 1.75rem 5vw; }
+}
+
+@media (max-width: 700px) {
+  .gate-story .gate-inset { width: calc(100% - 2.5rem); }
+  .gate-cover { padding: 1.3rem 1.25rem; }
+  .gate-cover-topline, .gate-cover-bottom { font-size: .54rem; letter-spacing: .07em; }
+  .gate-cover-topline a span { margin-inline: .4rem; }
+  .gate-cover-grid { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .gate-cover-copy { padding: 4.2rem 0 3rem; }
+  .gate-cover h1 { font-size: clamp(3.5rem, 17vw, 7.5rem); margin-top: 1.3rem; line-height: 1.02; }
+  .gate-cover-window { margin: 0 -.5rem 1.4rem; }
+  .gate-cover-window img { object-position: 50% 47%; }
+  .gate-cover-window-shade { background: linear-gradient(180deg, #0c1013, transparent 30%, transparent 70%, #0c1013); }
+  .gate-cover-window-rule { display: none; }
+  .gate-story .gate-cover-intro { margin-top: 1.5rem; font-size: .96rem; }
+  .gate-begin-link { font-size: .78rem; margin-top: 1.4rem; }
+  .gate-display { font-size: clamp(2.4rem, 10vw, 4rem); }
+  .gate-story .gate-chapter-heading { font-size: .61rem; gap: .9rem; }
+  .gate-story .gate-chapter-heading + .gate-display { margin-top: 1.35rem; }
+  .gate-kept-heading { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+  .gate-prose { font-size: .95rem; }
+  .gate-story .gate-praying { width: 100%; margin-top: 2rem; }
+  .gate-praying-frame { padding: .35rem; }
+  .gate-praying figcaption { padding-inline: 1.25rem; font-size: .55rem; }
+  .gate-praying figcaption > span:last-child { text-align: right; }
+  .gate-follow { padding-block: 3.25rem; }
+  .gate-follow-inner { grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
+  .gate-follow-copy { padding: 0; }
+  .gate-story .gate-light-heading { font-size: clamp(2.4rem, 9vw, 4rem); }
+  .cell-light-control-heading { gap: 1rem; }
+  .cell-light-buttons { width: 100%; }
+  .cell-light-buttons button { flex: 1 1 4rem; padding-inline: .75rem; }
+  .cell-light-buttons button:first-child { flex-basis: 10rem; }
+  .cell-light-ranges { gap: 1rem; }
+  .cell-light-ranges label { font-size: .68rem; }
+  .cell-light-controls { padding-top: 1.25rem; }
+  .gate-recognition-art figcaption { font-size: .56rem; margin-top: .65rem; }
+  .gate-story .gate-follow-preface { font-size: .92rem; }
+  .gate-follow blockquote p { font-size: clamp(2.05rem, 7.5vw, 3.2rem); }
+  .gate-story .gate-follow blockquote { margin-top: 1.65rem; }
+  .gate-story .gate-follow-after { font-size: .94rem; }
+  .gate-threshold-heading { padding-bottom: 2.3rem; }
+  .gate-threshold-heading .gate-display { font-size: clamp(2.25rem, 9.2vw, 4rem); }
+  .gate-story .gate-threshold-reference { font-size: .65rem; }
+  .gate-recognition { grid-template-columns: minmax(0, 1fr); gap: 1.7rem; padding-block: 4rem 3rem; }
+  .gate-recognition-art, .gate-recognition-copy { grid-column: auto; grid-row: auto; }
+  .gate-recognition-art { max-width: 25rem; justify-self: start; }
+  .gate-recognition blockquote p { font-size: clamp(1.95rem, 7.3vw, 3rem); line-height: 1.3; }
+  .gate-story .gate-recognition blockquote { margin-top: 2.3rem; }
+  .gate-recognition .gate-quiet-link { font-size: .7rem; }
+}
+
+@media (forced-colors: active) {
+  .gate-story { --story-accent: LinkText; --story-rule: CanvasText; --gate-night: Canvas; }
+  .gate-cover-window-shade { display: none; }
+  .gate-story :is(button, a, input):focus-visible { outline-color: Highlight; }
+  .cell-light-frame:focus-visible { outline-color: Highlight; }
+  .cell-light-buttons button { color: ButtonText; background: ButtonFace; border-color: ButtonText; }
+  .cell-light-buttons button[aria-pressed="true"] { color: HighlightText; background: Highlight; border-color: Highlight; }
+}
+
+@media print {
+  .gate-cover-window, .cell-light-controls, .gate-cover-bottom, .gate-begin-link, .gate-quiet-link { display: none; }
+  .gate-cover-grid { display: block; min-height: 0; }
+  .gate-cover-copy { padding-block: 3rem; }
+  .cell-light-frame[data-enhanced="true"] .cell-light-after { position: static; mask-image: none; opacity: 1; }
+  .cell-light-frame[data-enhanced="true"] figcaption { display: block; }
+}

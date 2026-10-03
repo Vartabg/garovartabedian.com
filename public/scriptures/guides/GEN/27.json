@@ -1,0 +1,251 @@
+{
+  "book": "GEN",
+  "chapter": 27,
+  "bookName": "Genesis",
+  "summary": "Rebekah disguises Jacob as Esau so that he receives the blessing Isaac planned to give his elder son. When Esau returns, Isaac confirms the blessing already given, Esau weeps and plans revenge, and Rebekah arranges Jacob's escape while raising the question of his marriage.",
+  "whyItMatters": "The transfer of blessing deepens the family's fracture rather than resolving it. Deception, parental favoritism, and Esau's loss prepare the exile through which Jacob's story continues.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Isaac and Rebekah's household as the aging, visually impaired Isaac prepares what he expects to be a final blessing.",
+    "literaryForm": "Family dialogue, deception and recognition narrative, poetic blessings, and a flight plan."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Esau has sold his birthright, and his marriages have distressed both parents. Isaac now intends to give him a solemn blessing.",
+      "verseRefs": [
+        "25:29-34",
+        "26:34-35"
+      ]
+    },
+    "here": {
+      "text": "The disguise succeeds despite Isaac's doubts, and the scene then makes Esau's grief and the threat against Jacob visible.",
+      "verseRefs": [
+        "27:11-29",
+        "27:30-45"
+      ]
+    },
+    "after": {
+      "text": "Isaac sends Jacob to Rebekah's relatives with Abraham's blessing, and Jacob receives a divine promise during his journey.",
+      "verseRefs": [
+        "28:1-5",
+        "28:10-22"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "Isaac sends Esau hunting",
+      "verses": "1-5",
+      "note": "The desired meal is to precede Isaac’s blessing."
+    },
+    {
+      "heading": "Rebekah prepares Jacob’s disguise",
+      "verses": "6-17",
+      "note": "She supplies food, Esau’s clothing, and goat skins despite Jacob’s fear of a curse."
+    },
+    {
+      "heading": "Jacob lies and receives the blessing",
+      "verses": "18-29",
+      "note": "Isaac tests voice, touch, and smell before pronouncing abundance and rule."
+    },
+    {
+      "heading": "Esau discovers what happened",
+      "verses": "30-40",
+      "note": "Isaac trembles, Esau begs and weeps, and a different future is pronounced over him."
+    },
+    {
+      "heading": "A threat and a plan to leave",
+      "verses": "41-46",
+      "note": "Esau plans murder and Rebekah seeks to send Jacob away."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "27:19",
+      "text": "Jacob said to his father, “I am Esau your firstborn. I have done what you asked me to do. Please arise, sit and eat of my venison, that your soul may bless me.”",
+      "why": "Jacob explicitly claims to be Esau, keeping the deception clear rather than minimizing its wording."
+    },
+    {
+      "ref": "27:34",
+      "text": "When Esau heard the words of his father, he cried with an exceedingly great and bitter cry, and said to his father, “Bless me, even me also, my father.”",
+      "why": "Esau’s bitter appeal forces attention to the cost of the blessing’s transfer."
+    },
+    {
+      "ref": "27:40",
+      "text": "You will live by your sword, and you will serve your brother. It will happen, when you will break loose, that you will shake his yoke from off your neck.”",
+      "why": "Esau’s future includes both subordination and the prospect of breaking his brother’s yoke."
+    }
+  ],
+  "themes": [
+    "deception and recognition",
+    "parental favoritism",
+    "irreversible blessing",
+    "Esau’s grief",
+    "threatened fratricide"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is Jacob afraid of when Rebekah proposes the disguise?",
+      "answer": "He worries that Isaac will feel his smooth skin, identify him as a deceiver, and curse him. Rebekah takes the threatened curse upon herself and prepares a disguise that exploits Isaac's poor sight.",
+      "verseRefs": [
+        "27:11-17"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Does Jacob actually lie about his identity?",
+      "answer": "Yes. He says he is Esau the firstborn and later confirms the claim when Isaac asks again. He also invokes God's help to explain the unexpectedly quick arrival of the food.",
+      "verseRefs": [
+        "27:18-24"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why does Isaac still bless him after noticing Jacob’s voice?",
+      "answer": "The goat skins make Jacob’s hands feel hairy, and Esau’s clothes supply the expected smell, even though his voice raises Isaac’s doubts. Isaac proceeds with the blessing after these checks fail to expose the disguise.",
+      "verseRefs": [
+        "27:21-29"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What does “blessing” mean in this scene?",
+      "answer": "It is a solemn pronouncement of agricultural plenty, authority, and the response of others to the recipient. Isaac treats the completed blessing as effective even after discovering that he gave it to the wrong son.",
+      "verseRefs": [
+        "27:27-29",
+        "27:33-37"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        27,
+        28,
+        29,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "How are birthright and blessing distinguished?",
+      "answer": "Esau names two losses: the earlier birthright and the blessing just received by Jacob. His accusation links them emotionally while the narrative presents them as separate transactions.",
+      "verseRefs": [
+        "27:35-37"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Does the chapter treat Esau’s pain as trivial?",
+      "answer": "No. It records his bitter cry, repeated plea, and tears before reporting his murderous intention. Acknowledging his loss does not make the planned killing acceptable.",
+      "verseRefs": [
+        "27:34-41"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Why does Rebekah expect Jacob’s absence to be brief?",
+      "answer": "She hopes Esau's anger will turn away and that she can send for Jacob after he forgets the injury. Those are her expectations within the conversation, not a narrator's guarantee about how long the separation will last.",
+      "verseRefs": [
+        "27:42-46"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "birthright",
+      "def": "The elder son’s privilege that Esau distinguishes from the blessing lost in this chapter."
+    },
+    {
+      "term": "yoke",
+      "def": "An image for the subordination to his brother that Esau is told he will eventually shake off."
+    },
+    {
+      "term": "quiver",
+      "def": "The holder for arrows in the hunting equipment Isaac tells Esau to take."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "927df12f2ea4f46c54e563c237984d2170c4358734fc100c09bbf8e69065c7f3",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

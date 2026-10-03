@@ -1,0 +1,294 @@
+{
+  "book": "GEN",
+  "chapter": 49,
+  "bookName": "Genesis",
+  "summary": "Jacob gathers his sons and speaks poetic declarations over them as the twelve tribes of Israel, condemning Reuben's offense and Simeon and Levi's violence while giving extended promises to Judah and Joseph. After the tribal sayings, he specifies burial in the ancestral cave at Machpelah and dies.",
+  "whyItMatters": "The family story opens into a larger portrait of peoples, territories, conflict, and abundance. These final words include judgment as well as blessing, so tribal identity is not presented as an endorsement of every ancestor's conduct.",
+  "context": {
+    "author": "Genesis names no narrator or final compiler. Tradition associates the Torah with Moses; the history of its composition remains debated.",
+    "audience": "Israel reflecting on its ancestral promises, family relationships, and arrival in Egypt. The chapter does not identify a more specific original audience.",
+    "date": "The ancestral story is set earlier than the book’s final literary form. Its composition and editing developed over time, with exact dates and models debated.",
+    "setting": "Jacob's final gathering with his sons in Egypt, with the poetry looking toward their future as Israel's tribes and the burial instruction toward Canaan.",
+    "literaryForm": "Poetic tribal sayings framed as a father's final speech, followed by burial instructions and a death notice."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-genesis",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Jacob has blessed Joseph's two sons and promised God's presence and return to the ancestral land. He now calls the whole group of sons to hear their futures.",
+      "verseRefs": [
+        "48:15-22"
+      ]
+    },
+    "here": {
+      "text": "The sayings use animals, landscape, and royal imagery to distinguish the tribes, while explicit condemnation recalls wrongdoing within the family.",
+      "verseRefs": [
+        "49:1-28"
+      ]
+    },
+    "after": {
+      "text": "Joseph mourns and fulfills the burial oath with a journey to Canaan, then addresses his brothers' renewed fear of revenge after their father's death.",
+      "verseRefs": [
+        "50:1-21"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "02c2e06bbe84a48b635e9a9f8c37a4a42a0f3e62346e8841e0bccfc08d1711c5"
+  },
+  "outline": [
+    {
+      "heading": "The summons and Reuben’s lost preeminence",
+      "verses": "1-4",
+      "note": "Jacob announces future sayings and confronts the firstborn’s offense."
+    },
+    {
+      "heading": "Simeon and Levi’s violence condemned",
+      "verses": "5-7",
+      "note": "Cruel anger brings a declaration of division and scattering."
+    },
+    {
+      "heading": "Judah’s rule and abundance",
+      "verses": "8-12",
+      "note": "Lion and scepter imagery accompany praise, authority, and rich produce."
+    },
+    {
+      "heading": "Six shorter sayings and a plea for rescue",
+      "verses": "13-21",
+      "note": "Zebulun through Naphtali receive varied images of work, land, battle, and plenty."
+    },
+    {
+      "heading": "Joseph’s blessing and Benjamin’s image",
+      "verses": "22-27",
+      "note": "Divine strength and fertility surround Joseph; Benjamin is pictured as a wolf."
+    },
+    {
+      "heading": "The tribes and the burial charge",
+      "verses": "28-32",
+      "note": "The narrator identifies the twelve tribes and Jacob names the ancestral grave."
+    },
+    {
+      "heading": "Jacob dies",
+      "verses": "33",
+      "note": "He finishes the charge and breathes his last."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "49:7",
+      "text": "Cursed be their anger, for it was fierce; and their wrath, for it was cruel. I will divide them in Jacob, and scatter them in Israel.",
+      "why": "Jacob condemns the fierce and cruel anger of Simeon and Levi instead of celebrating it."
+    },
+    {
+      "ref": "49:10",
+      "text": "The scepter will not depart from Judah, nor the ruler’s staff from between his feet, until he comes to whom it belongs. The obedience of the peoples will be to him.",
+      "why": "The royal imagery gives Judah a distinctive place, while the coming figure is not personally named here."
+    },
+    {
+      "ref": "49:29",
+      "text": "He instructed them, and said to them, “I am to be gathered to my people. Bury me with my fathers in the cave that is in the field of Ephron the Hittite,",
+      "why": "The final practical charge returns the family to the ancestral burial place in Canaan."
+    }
+  ],
+  "themes": [
+    "tribal futures",
+    "accountability for wrongdoing",
+    "royal and animal imagery",
+    "divine help and fertility",
+    "blessing amid conflict",
+    "ancestral burial"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Are these sayings only about the individual sons?",
+      "answer": "Jacob addresses his sons, but the narrator identifies them as the twelve tribes of Israel, and the sayings describe territories, rule, and groups in conflict. The poetry moves between ancestral persons and the peoples associated with them.",
+      "verseRefs": [
+        "49:1-2",
+        "49:13-28"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1,
+        2,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Why does Reuben lose the firstborn’s expected excellence?",
+      "answer": "Jacob first acknowledges his initial strength and status, then names his violation of his father's bed as the reason he will not excel. The saying connects standing in the family with conduct rather than treating birth order as an unconditional guarantee.",
+      "verseRefs": [
+        "49:3-4"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Does Jacob praise Simeon and Levi’s violence?",
+      "answer": "He rejects identification with their council, calls their weapons violent, and curses their fierce anger and cruel wrath. Their killing and harm to cattle lead to a declaration of scattering, providing an explicit condemnation rather than a celebration of revenge.",
+      "verseRefs": [
+        "49:5-7"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What is a “scepter” in Judah’s saying?",
+      "answer": "It is an emblem of ruling authority, paired with the ruler's staff and the obedience of peoples. The image makes Judah's future leadership central to this part of the poem.",
+      "verseRefs": [
+        "49:8-10"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Does the chapter name the figure who comes in verse 10?",
+      "answer": "The hosted WEB says he comes to whom it belongs but supplies no personal name in the verse. Readers should distinguish that wording and its royal setting from later interpretations rather than presenting one later identification as something the chapter explicitly states.",
+      "verseRefs": [
+        "49:8-12"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Should the animal images be read as literal descriptions?",
+      "answer": "Judah is a lion, Issachar a donkey, Dan a serpent, Naphtali a doe, and Benjamin a wolf within the poem. These comparisons characterize strength, work, danger, or movement; they are not claims that the sons cease to be human.",
+      "verseRefs": [
+        "49:9",
+        "49:14-17",
+        "49:21",
+        "49:27"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        9,
+        14,
+        15,
+        16,
+        17,
+        21,
+        27
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How does Joseph’s saying combine suffering and blessing?",
+      "answer": "Archers grieve and attack him, but his strength is attributed to the Mighty One of Jacob. The following lines invoke help and abundant blessings from heaven, the deep, and human fertility, placing endurance beside flourishing.",
+      "verseRefs": [
+        "49:22-26"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Do the martial images authorize modern collective violence?",
+      "answer": "The sayings depict struggle, enemies, and plunder within the poetic futures of the tribes. They do not issue a general command to readers to attack peoples, and the same speech explicitly condemns cruel anger and killing.",
+      "verseRefs": [
+        "49:5-7",
+        "49:17",
+        "49:19",
+        "49:27"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        5,
+        6,
+        7,
+        17,
+        19,
+        27
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "Why name the cave’s occupants and purchase before dying?",
+      "answer": "Jacob locates his burial beside Abraham, Sarah, Isaac, Rebekah, and Leah in the purchased field and cave. The detail gives his sons a specific obligation and roots his final request in the family's established connection with Canaan.",
+      "verseRefs": [
+        "49:29-33"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "scepter",
+      "def": "An emblem of rule used in the declaration over Judah."
+    },
+    {
+      "term": "hamstrung",
+      "def": "Disabled by cutting the leg tendons; the harm to cattle is included in Jacob’s condemnation of violence."
+    },
+    {
+      "term": "Machpelah",
+      "def": "The cave and field in Canaan where Jacob directs his sons to bury him with his ancestors."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "4e7cfdc9e3751452cc595845b53e9da5110488528d366ab25078117981f35eda",
+    "generatedAt": "2026-09-29T02:26:56.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

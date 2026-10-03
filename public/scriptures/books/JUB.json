@@ -1,0 +1,245 @@
+{
+  "book": "JUB",
+  "bookName": "Jubilees",
+  "oneLine": "A Second Temple Jewish retelling of creation, the ancestors, and the exodus that orders history by sacred time and places many covenant laws before Sinai.",
+  "orient": "Jubilees opens on Mount Sinai, where God tells Moses to write a history that an angel of the presence will recount. The angel then retells material familiar from Genesis and the opening of Exodus, adding dates, speeches, angels, festivals, and laws. Creation, Noah, Abraham, Jacob, and the departure from Egypt all become part of one account of how Israel should keep covenant, especially its Sabbath and appointed times. The book's ancient narrator treats this as heavenly revelation; a reader can recognize that literary claim without confusing it with evidence that the historical Moses composed the surviving work.",
+  "whereYouAre": "The story opens during Moses' stay on Sinai, after Israel has left Egypt. The angel then returns to creation and follows the sequence forward through Noah, the ancestors, and the exodus. The real-world work belongs to Jewish interpretation in the Second Temple period, many centuries later than its narrated events. Read its additions beside Genesis and Exodus rather than assuming that every detail appears in those books or that the book's internal dates are independently verified historical dates.",
+  "facts": {
+    "writtenBy": "The historical writer or writers are unnamed. Moses is the recipient and commanded writer inside the book's Sinai frame; the angel of the presence supplies most of the narrated account. That literary presentation does not identify a Second Temple writer or prove a particular priestly or Qumran author.",
+    "writtenWhen": "Usually placed in the second century BCE. Hebrew copies among the Dead Sea Scrolls show that the work existed in antiquity, but neither those copies nor the narrated chronology fix an exact year of composition.",
+    "writtenFor": "Jewish readers concerned with the inherited stories of Israel, covenant fidelity, festivals, Sabbath, marriage boundaries, and the proper calendar. A specific first audience or named community cannot be demonstrated from the text alone.",
+    "place": "The narrative travels from the first world through ancestral Canaan and Egypt to Sinai. A precise place where the historical author wrote is not established; the work's interests fit a Second Temple Jewish setting, but its later circulation at Qumran does not locate its composition there.",
+    "covers": "Creation through Israel's exodus and the commands given to Moses at Sinai, chiefly by retelling Genesis and the early chapters of Exodus. Chapter 23 briefly looks ahead to later distress and restoration within the angel's account.",
+    "size": "50 chapters and 1,307 verse slots in the hosted R. H. Charles 1913 English transcription."
+  },
+  "factSourceIds": {
+    "writtenBy": ["hosted-charles", "oxford-endres", "cambridge-vanderkam"],
+    "writtenWhen": ["oxford-endres", "cambridge-collins", "vanderkam-hermeneia"],
+    "writtenFor": ["hosted-charles", "oxford-endres", "cambridge-heavenly-tablets"],
+    "place": ["hosted-charles", "cambridge-collins", "vanderkam-abd"],
+    "covers": ["hosted-charles", "oxford-endres", "cambridge-vanderkam"],
+    "size": ["source-archive", "hosted-charles"]
+  },
+  "language": {
+    "writtenIn": "Composed in Hebrew, as fragmentary Hebrew copies from Qumran confirm. No complete Hebrew manuscript survives. The complete text was preserved in Geʿez, probably through an intervening Greek translation; the English hosted here is Charles's 1913 rendering of that later textual tradition, not a direct translation of an intact Hebrew original.",
+    "register": "A sustained retelling of Torah narrative, mixed with exacting chronological notices, family speeches and blessings, covenant warnings, festival explanations, and direct legal commands. Its repeated dates and 'heavenly tablets' formulas are part of the argument: they place remembered events and obligations inside an ordered account of time.",
+    "spokenWorld": "The narrated speakers range from Adam and Noah to Abraham's household and Moses. Their dialogue reaches us as part of an ancient Hebrew literary composition transmitted through later languages; it is not a transcript from the eras it describes. The angel's address to Moses is a narrative voice, not evidence that the stories were dictated at Sinai.",
+    "readerSignal": "At 1:27–29 God commissions the angel, and 2:1 marks the angel's speech to Moses. First-person 'we' and 'I' can then refer to that angel and other heavenly messengers, while 'thou' may address Moses directly, especially near the exodus. An added explanation beginning 'for this reason' often connects an ancestral event to a continuing law.",
+    "englishLayer": "The hosted edition is R. H. Charles's English in a CCEL transcription of his 1913 volume. Its archaic diction, bracketed Anno Mundi dates, parentheses, supplied words, and editorial marks belong to this edition and must not be silently treated as recoverable Hebrew wording. The site checks the transcription and verse boundaries against the recorded 1913 source; the translation predates discovery of the Qumran Hebrew fragments and is not a modern critical reconstruction from all witnesses.",
+    "textualHistory": [
+      {
+        "label": "The ancient literary composition",
+        "language": "Hebrew",
+        "role": "composition",
+        "description": "The Jewish work took literary shape in Hebrew, usually dated to the second century BCE. The book's attribution of the account to a Sinai revelation is its literary frame, not a secure statement of an individual writer's name or date; scholars also discuss whether the received text was shaped in stages.",
+        "sourceIds": ["oxford-endres", "cambridge-vanderkam", "cambridge-collins", "cambridge-calendar"]
+      },
+      {
+        "label": "Qumran copies",
+        "language": "Hebrew",
+        "role": "earliest-extant",
+        "description": "Fragmentary Hebrew manuscripts among the Dead Sea Scrolls attest the work's antiquity and language. They do not supply a complete Hebrew text and their presence at Qumran does not by itself identify the author or prove that the work was composed there.",
+        "sourceIds": ["cambridge-collins", "vanderkam-hermeneia"]
+      },
+      {
+        "label": "Ancient Greek transmission",
+        "language": "Greek",
+        "role": "translation",
+        "description": "The usual reconstruction has a Greek translation between the Hebrew work and the Geʿez text. Greek survives only in limited witness material, so the complete ancient Greek wording cannot be displayed as though it were extant.",
+        "sourceIds": ["oxford-endres", "cambridge-calendar"]
+      },
+      {
+        "label": "Complete surviving version",
+        "language": "Geʿez (classical Ethiopic)",
+        "role": "translation",
+        "description": "Ethiopian manuscript transmission preserved the only complete ancient-language form now available. The Ethiopian Orthodox Tewahedo Church also names Jubilees among its holy books; this reception is distinct from the work's earlier Jewish composition.",
+        "sourceIds": ["cambridge-collins", "eotc-canon", "oxford-endres"]
+      },
+      {
+        "label": "The English edition hosted here",
+        "language": "English",
+        "role": "translation",
+        "description": "R. H. Charles's 1913 translation is hosted from a pinned CCEL transcription with reviewed verse boundaries. It predates the Qumran discoveries, and its bracketed chronology and reconstruction marks are editorial features readers should retain when quoting it.",
+        "sourceIds": ["charles-1913", "source-archive", "hosted-charles"]
+      }
+    ],
+    "features": [
+      {
+        "title": "The Sinai frame changes the speaker",
+        "explanation": "The first chapter places Moses on Sinai and says God commands an angel of the presence to set down the divisions of time. At 2:1 that angel begins the long account. Later first-person plural scenes and second-person reminders to Moses make better sense when the reader remembers who is supposed to be speaking.",
+        "translationNote": "Charles's English 'I,' 'we,' and 'thou' can look like abrupt changes of human narrator. Follow the frame across chapters rather than assigning every first-person line to Moses or to the historical author.",
+        "caution": "A narrative assertion of heavenly dictation is a claim made within the work. It does not establish Mosaic authorship or identify the ancient Hebrew writer.",
+        "refs": ["1:27", "1:29", "2:1", "16:1", "47:1"],
+        "sourceIds": ["hosted-charles", "oxford-endres", "cambridge-vanderkam"]
+      },
+      {
+        "title": "Weeks of years and jubilees turn chronology into an argument",
+        "explanation": "Events are placed in seven-year 'weeks' and forty-nine-year jubilees; chapter 6 also insists on a 364-day year. Dates are more than decoration: they make festivals and Sabbath recur in a stable order and make the angel's retelling appear to measure the whole story from creation to Sinai.",
+        "translationNote": "A 'week' can mean seven years in these notices, and a jubilee in this work is seven such weeks. Charles's square-bracketed Anno Mundi figures are editorial aids in this English edition, not independently verified event dates.",
+        "caution": "The 364-day scheme is the book's own calendrical program. Do not equate it automatically with every Second Temple Jewish calendar, today's Ethiopian liturgical calendar, or the calendar presupposed by Genesis and Exodus.",
+        "refs": ["6:30", "6:32", "6:38", "11:1", "50:4"],
+        "sourceIds": ["hosted-charles", "cambridge-vanderkam", "cambridge-calendar", "source-archive"]
+      },
+      {
+        "title": "Heavenly tablets make ancestral events carry laws",
+        "explanation": "The retelling repeatedly says an act or rule is written or ordained on heavenly tablets. Cain's death, Noah's festival, Abraham's circumcision, and later Sabbath commands become parts of an enduring order. This is how the book argues that commands associated with Sinai are rooted before Moses.",
+        "translationNote": "The repeated English phrase 'heavenly tablets' names a claim about divine record and authority inside the story. It should not be confused with the stone tablets Moses is promised in 1:1.",
+        "caution": "A rule attributed to ancestral practice in Jubilees is not automatically present in the same form in Genesis. Compare the two narratives before saying the older biblical text teaches the detail.",
+        "refs": ["1:1", "4:32", "6:17", "15:25", "16:29", "50:13"],
+        "sourceIds": ["hosted-charles", "oxford-endres", "cambridge-heavenly-tablets"]
+      },
+      {
+        "title": "Festivals are placed inside family history",
+        "explanation": "Noah's covenant is tied to the Festival of Weeks, Abraham celebrates Tabernacles, and the Isaac trial is followed by festival language. The book is not merely inserting a list of holidays between stories; it narrates the ancestors as participants in an order later given to Israel.",
+        "translationNote": "Charles's festival names use the English religious vocabulary of his edition. Read the event and the stated command together, and do not assume the later English name exhausts the ancient rite's meaning.",
+        "caution": "These are interpretive additions in Jubilees' retelling. They should not be quoted as if the same details stood in Genesis, nor should every later community's practice be inferred from this one text.",
+        "refs": ["6:17", "14:1", "16:29", "18:19", "49:1"],
+        "sourceIds": ["hosted-charles", "oxford-endres", "cambridge-heavenly-tablets"]
+      },
+      {
+        "title": "Warnings and blessings make the family story instructive",
+        "explanation": "Noah, Abraham, Isaac, and Rebekah speak at length to descendants. The speeches keep covenant, marriage, worship, and inherited land in view while characters hand responsibility to the next generation. They often tell the reader what the retelling wants an episode to mean rather than simply repeating its plot.",
+        "translationNote": "The long speeches are rendered in Charles's formal English. Their repeated imperatives and blessings are a literary feature of this version of the ancestral story, not recorded conversations available independently from the narrated period.",
+        "caution": "A character's warning in the work need not be flattened into an endorsement of every action that follows; identify who speaks and whether the narrator confirms, questions, or merely reports the act.",
+        "refs": ["7:20", "20:2", "21:1", "22:1", "25:1"],
+        "sourceIds": ["hosted-charles", "oxford-endres"]
+      },
+      {
+        "title": "Angels and Mastema explain opposition within this retelling",
+        "explanation": "Angels do more than deliver the opening revelation: the account places them at creation and in ancestral scenes. Chapter 10 tells of harmful spirits after the flood; Mastema appears around Abraham's trial and Moses' conflict with Pharaoh. These characters give the book's account a heavenly dimension alongside human choices.",
+        "translationNote": "Charles's 'prince Mastema' and 'angel of the presence' are names or titles in this English tradition. A sound-alike name in another ancient work does not make every scene or being identical.",
+        "caution": "Describe what Jubilees actually narrates before importing a complete demonology from 1 Enoch, later Christian writing, or modern popular accounts. The presence of these beings does not remove human responsibility in the book.",
+        "refs": ["2:2", "10:1", "10:8", "17:16", "18:9", "48:2"],
+        "sourceIds": ["hosted-charles", "oxford-endres", "cambridge-vanderkam"]
+      },
+      {
+        "title": "Family lists and land allotments carry an ancient map of belonging",
+        "explanation": "After Noah, the book spends time naming descendants, dividing territories, and binding families by oath. Near the move to Egypt it counts Jacob's household again. These lists link peoples and places to the covenant story and explain boundaries that later matter to the author.",
+        "translationNote": "Charles preserves many ancient personal and place names in spellings familiar to his edition. A reader should not turn a similar modern name into a certain geographic identification without separate evidence.",
+        "caution": "Genealogical and territorial claims in the narrative are not modern ethnography, and the book's map should not be used to assign present-day peoples a fixed ancestry or claim of ownership.",
+        "refs": ["8:11", "9:14", "10:34", "44:33"],
+        "sourceIds": ["hosted-charles", "cambridge-vanderkam"]
+      }
+    ],
+    "examplesHeading": "Expressions that make the book's argument visible in this English edition",
+    "examples": [
+      {
+        "ref": "2:1",
+        "form": "angel of the presence",
+        "meaning": "the heavenly speaker commissioned to recount the history to Moses",
+        "why": "This verse changes the reader's understanding of the first-person and second-person narration that follows. It is a story-world identity, not a signature of the historical author.",
+        "sourceIds": ["hosted-charles", "oxford-endres", "cambridge-vanderkam"]
+      },
+      {
+        "ref": "6:17",
+        "form": "heavenly tablets",
+        "meaning": "the enduring divine record appealed to for festivals, laws, and remembered actions",
+        "why": "The phrase gives the festival rule authority within the retelling and helps explain why the book places later commands among early ancestors.",
+        "sourceIds": ["hosted-charles", "cambridge-heavenly-tablets"]
+      },
+      {
+        "ref": "6:38",
+        "form": "three hundred and sixty-four days",
+        "meaning": "the annual count the angel insists Israel should preserve",
+        "why": "The calendar is a central argument about the timing of Sabbaths and festivals, not a stray date tucked into Noah's story.",
+        "sourceIds": ["hosted-charles", "cambridge-calendar", "cambridge-vanderkam"]
+      },
+      {
+        "ref": "17:16",
+        "form": "prince Mastema",
+        "meaning": "the adversarial figure who proposes a test of Abraham in this account",
+        "why": "The speaker and motive are explicit here before the retelling of Isaac's near-sacrifice in chapter 18; Genesis 22 does not name Mastema.",
+        "sourceIds": ["hosted-charles", "cambridge-vanderkam"]
+      },
+      {
+        "ref": "50:4",
+        "form": "year-weeks and the years and the jubilees",
+        "meaning": "seven-year units and forty-nine-year cycles used to arrange history",
+        "why": "The closing explanation returns to the counted-time structure announced in chapter 1 and clarifies why the English title is 'Jubilees.'",
+        "sourceIds": ["hosted-charles", "cambridge-vanderkam"]
+      }
+    ]
+  },
+  "form": {
+    "name": "Second Temple Jewish retelling of Torah narrative, framed as an angel's Sinai revelation",
+    "how": "Read alongside Genesis and Exodus, noticing what the book preserves, omits, expands, dates, or redirects. Follow who is speaking, especially after the angel begins in chapter 2; mark every move from an event to a command introduced as written on heavenly tablets. Treat the calendar, ancestral laws, and heavenly agents as the author's sustained interpretation, not as details silently recoverable from the biblical source narratives. The work also has its own reception: Ethiopian Christians receive it within Scripture, while other Jewish and Christian collections do not place it on the same shelf."
+  },
+  "cast": [
+    { "name": "God", "who": "Commands Moses to write at Sinai, orders the angel's account, makes and renews covenant, and is said to have ordered times and laws from the beginning." },
+    { "name": "Moses", "who": "The recipient addressed at Sinai and the commanded writer within the literary frame, then the child, fugitive, and exodus leader recalled near the end." },
+    { "name": "The angel of the presence", "who": "The commissioned narrator who speaks to Moses, sometimes using 'I' or 'we' while recounting heavenly participation in earlier events." },
+    { "name": "Noah and his descendants", "who": "Survivors and heirs of the flood who receive covenant instruction, divide lands, and become the setting for calendar and spirit narratives." },
+    { "name": "Abraham and Sarah", "who": "The ancestral couple whose household, covenant, festivals, and promised son receive extended treatment." },
+    { "name": "Rebekah, Isaac, Jacob, and Esau", "who": "A family whose blessings, rivalry, marriages, and inheritance claims shape the middle of the book; Rebekah speaks with unusual prominence." },
+    { "name": "Levi and Judah", "who": "Sons of Jacob whose actions and blessings are tied to priestly and royal hopes in the retelling." },
+    { "name": "Joseph and Pharaoh", "who": "Joseph's rise brings the family into Egypt; later Pharaohs turn that refuge into a place of oppression." },
+    { "name": "Mastema and the harmful spirits", "who": "Opposing beings who appear in particular episodes, including the post-flood world, Abraham's trial, and the exodus." }
+  ],
+  "shape": [
+    { "heading": "Sinai: Moses receives a larger written history", "chapters": "1", "note": "God announces the book's purpose, predicts covenant failure and restoration, and commissions the angel of the presence to recount the divisions of time." },
+    { "heading": "Creation, Eden, first generations, and Enoch", "chapters": "2–4", "note": "Creation is ordered toward Sabbath; Adam and Eve, Cain and Abel, early generations, and Enoch receive added dates and explanations." },
+    { "heading": "Flood, Noah's covenant, calendar, nations, and spirits", "chapters": "5–10", "note": "Judgment and the flood lead to Noah's offerings, the Festival of Weeks, the 364-day year, the division of lands, Babel, and harmful spirits after the flood." },
+    { "heading": "Abraham leaves idols and receives covenant promises", "chapters": "11–16", "note": "Abram rejects idols, journeys to Canaan, receives promises and circumcision, and celebrates festivals before Isaac's birth." },
+    { "heading": "Isaac's trial and Abraham's final instruction", "chapters": "17–23", "note": "Mastema proposes the test, Abraham and Isaac survive it, ancestral blessings and commands continue, and Abraham's death opens a vision of later trouble and healing." },
+    { "heading": "Isaac, Rebekah, Jacob, Esau, and Laban", "chapters": "24–29", "note": "Blessings, rivalry, flight, marriages, labor, and Jacob's return reshape the inheritance story." },
+    { "heading": "Dinah, Levi, the sons of Jacob, and the conflict with Esau", "chapters": "30–38", "note": "The Shechem episode receives severe legal interpretation; Levi's priestly role, family blessings, Joseph's sale, and Jacob's conflict with Esau follow." },
+    { "heading": "Joseph and the family's move to Egypt", "chapters": "39–45", "note": "Joseph's servitude and rise, Judah and Tamar, famine, reconciliation, migration, and Jacob's death carry the family into Egypt." },
+    { "heading": "Oppression, Moses, and the exodus", "chapters": "46–48", "note": "Israel grows after Joseph, is enslaved, and leaves Egypt amid the plague narrative and Mastema's opposition." },
+    { "heading": "Passover and Sabbath close the account", "chapters": "49–50", "note": "The angel gives detailed festival and Sabbath instructions and returns to the divisions of years and jubilees announced at Sinai." }
+  ],
+  "purpose": "Jubilees argues that the covenantal life of Israel is woven into the world's history from creation onward. Its repeated cycles of seven, festival dates, ancestral obedience, and heavenly tablets make the calendar and many laws appear older than the Sinai event in which the book is framed. The retelling gives readers a way to understand their inherited stories as one ordered testimony and to guard communal boundaries, worship, and Sabbath. It also warns that neglect of that order brings disorder and exile, while envisioning restoration. These are the work's claims, written from a Second Temple Jewish perspective; the book's placement in an Ethiopian Christian canon and this site's Charles edition are later stages of its history.",
+  "snags": [
+    { "snag": "Moses seems to be named as author on the first page.", "help": "Within the story God tells Moses to write, then directs an angel to recount the history. The anonymous historical writer used that Sinai frame to give the retelling authority. The frame and historical authorship are different questions." },
+    { "snag": "The many bracketed dates look like independently known history.", "help": "The book arranges events in weeks of years, jubilees, and a 364-day year. The bracketed Anno Mundi labels belong to the hosted Charles edition's presentation. Read the dates as part of the book's interpretation, not as measurements confirmed by surviving records of the events." },
+    { "snag": "It sounds so close to Genesis and Exodus that an addition can pass unnoticed.", "help": "Keep both narratives open. Jubilees gives names, dates, angelic roles, festival origins, and speeches not stated in the same way in Genesis or Exodus. A difference is useful evidence of this book's interpretation; do not silently harmonize it away or attribute it to the older narrative." },
+    { "snag": "A law practiced by an ancestor is assumed to come from the Genesis text.", "help": "The heavenly-tablets formula deliberately places many commands before Sinai. That is the book's theological and legal argument. Check whether the ancestral action is present in Genesis, expanded here, or newly supplied by this retelling." },
+    { "snag": "The 364-day calendar is mistaken for a universal ancient Jewish practice.", "help": "Jubilees argues forcefully for that count and warns against other reckoning in chapter 6. Ancient Jewish calendars varied, and the book's polemic itself shows that timekeeping was contested. Its program should be named as its own position." },
+    { "snag": "Angels and Mastema are imported wholesale from another ancient book.", "help": "These beings occur in specific scenes here. Compare 1 Enoch only after establishing what Jubilees itself says; shared topics do not make the works' storylines or their beings identical." },
+    { "snag": "Violent or exclusionary scenes are read as direct modern instructions.", "help": "Chapter 30, for example, reworks Dinah's story into a severe argument about marriage boundaries and Levi. Describe the act, narrator's judgment, and ancient communal concern before discussing later ethical or theological reception; narrative advocacy is not a warrant to impose violence today." },
+    { "snag": "The English text is treated as an intact Hebrew manuscript.", "help": "The complete work survived in Geʿez; the Hebrew finds are fragments. Charles's 1913 English predates those discoveries and includes editorial marks. Cite the hosted wording as Charles, not as a direct reading of every Hebrew witness." },
+    { "snag": "One canon label is assumed to describe everyone's Scripture.", "help": "The Ethiopian Orthodox Tewahedo Church lists Jubilees among its holy books. Its presence on that shelf should be stated plainly, as should its different status in most other Jewish and Christian collections. This site's English shelf represents only the editions it hosts." }
+  ],
+  "debates": [
+    {
+      "question": "Can the writer be tied to a particular Second Temple Jewish group?",
+      "settled": "The work is an ancient Jewish composition in Hebrew, and Hebrew copies circulated at Qumran. The text's Sinai narrator does not name its historical writer.",
+      "positions": [
+        { "view": "A writer close to priestly circles", "grounds": "The strong attention to priests, Levi, sacrifice, purity, Sabbath, and exact festival time has encouraged this inference; it remains an inference about a social setting, not a recovered author name." },
+        { "view": "A wider Jewish scribal setting left open", "grounds": "Those concerns were not exclusive to one named community. Copies at Qumran establish use there, but copying and valuing a text do not establish where it was first composed." }
+      ],
+      "soWhat": "Read its legal emphases seriously while keeping a clear line between what the book says and a proposed identity for its author."
+    },
+    {
+      "question": "Was the surviving book written as one continuous work or shaped in stages?",
+      "settled": "The transmitted book has a sustained Sinai frame and a recurring calendar and covenant argument.",
+      "positions": [
+        { "view": "Substantially unified composition", "grounds": "Scholars point to the careful coordination of dates, narrative frame, and legal themes, including the Eden chronology, as evidence of a deliberate whole." },
+        { "view": "Composition with later shaping", "grounds": "Other analyses identify tensions or passages of intensified warning as possible additions or redaction; the limited early witnesses do not give a complete authorial draft against which every proposal can be tested." }
+      ],
+      "soWhat": "The reader can follow the book's present argument while treating a precise history of every paragraph as a research question."
+    }
+  ],
+  "sources": [
+    { "id": "hosted-charles", "label": "Jubilees, R. H. Charles (1913), text hosted on this site", "says": "The actual chapter and verse wording used for descriptions, examples, reading routes, and the count of the hosted book.", "href": "/scriptures/ethiopian/JUB/1" },
+    { "id": "source-archive", "label": "Source notes for the hosted Charles transcription", "says": "Identifies the CCEL transcription of Charles's 1913 edition and summarizes the hosted text's wording and verse-boundary review.", "href": "/scriptures/SOURCES.md" },
+    { "id": "charles-1913", "label": "R. H. Charles, The Apocrypha and Pseudepigrapha of the Old Testament, volume II (1913)", "says": "The historical printed edition underlying the CCEL English transcription; it predates the Qumran discoveries.", "url": "https://archive.org/details/apocryphapseudep02char" },
+    { "id": "oxford-endres", "label": "John C. Endres, “Book of Jubilees,” Oxford Bibliographies in Biblical Studies", "says": "Places the Jewish work in the second century BCE, outlines the Hebrew-to-Greek-to-Ethiopic transmission, and explains its Sinai frame and the early placement of laws.", "url": "https://academic.oup.com/reference/62341/reference-article-abstract/554103345" },
+    { "id": "cambridge-vanderkam", "label": "James C. VanderKam, “The Book of Jubilees,” in Outside the Old Testament (Cambridge)", "says": "Describes the angelic revelation frame, alternative titles, forty-nine-year jubilee unit, and relation to the Genesis–Exodus narrative.", "url": "https://www.cambridge.org/core/books/abs/outside-the-old-testament/book-of-jubilees/3770C6D45B63CAA5E65C6BCE3F74AF92" },
+    { "id": "cambridge-collins", "label": "John J. Collins, “The ‘apocryphal’ Old Testament,” New Cambridge History of the Bible", "says": "Identifies Jubilees as rewritten scripture, preserved complete in Ethiopic, with Hebrew fragments at Qumran and ancient authoritative reception by some groups.", "url": "https://www.cambridge.org/core/books/abs/new-cambridge-history-of-the-bible/apocryphal-old-testament/BA748C701E87424228C1E1E56FE4A08D" },
+    { "id": "vanderkam-hermeneia", "label": "James C. VanderKam, Jubilees: The Hermeneia Translation (Fortress Press, 2020)", "says": "Summarizes second-century BCE Jewish authorship and explains that Qumran fragments inform and sometimes correct later witnesses.", "url": "https://www.jstor.org/stable/j.ctv11cvxnk" },
+    { "id": "cambridge-calendar", "label": "Walter D. Ray, “Calendar and Dates in Jubilees’ Garden of Eden Story,” Harvard Theological Review (2021)", "says": "Studies the book's calibrated Eden dates and 364-day calendar while discussing Hebrew, Greek, and Ethiopic transmission and disputes over redaction.", "url": "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/calendar-and-dates-in-jubilees-garden-of-eden-story/5B9726D14F0127A0ACB692A0809A371D" },
+    { "id": "cambridge-heavenly-tablets", "label": "Cana Werman, “Jubilees 30: Building a Paradigm for the Ban on Intermarriage,” Harvard Theological Review", "says": "Shows how the heavenly-tablets formula connects ancestral events and laws and examines the severe legal retelling of Dinah and Shechem.", "url": "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/jubilees-30-building-a-paradigm-for-the-ban-on-intermarriage/AA6BA9D0CAE193E9DF9BF2599201669C" },
+    { "id": "eotc-canon", "label": "Ethiopian Orthodox Tewahedo Church, “The Canonical Books of the Bible”", "says": "The church's own English list names Jubilees among its Old Testament holy books and notes complete Ethiopic preservation.", "url": "https://ethiopianorthodox.org/english/canonical/books.html" },
+    { "id": "vanderkam-abd", "label": "James C. VanderKam, “Jubilees, Book of,” Anchor Bible Dictionary, hosted by the Center for Online Judaic Studies", "says": "Treats a priestly background as a scholarly inference from the book's concerns, rather than a named authorship proven by the text.", "url": "https://cojs.org/jubilees-_book_of-_james_vanderkam-_anchor_bible_dictionary_-ed-_david_noel_freedman-_doubleday-_new_york_1992/" }
+  ],
+  "howToRead": [
+    { "tip": "Begin with 1:27 and 2:1. Name the angelic speaker before following the retelling, and distinguish that frame from a claim about who historically wrote the book.", "refs": ["1:27", "2:1"] },
+    { "tip": "Read chapter 6 in one sitting. Mark the covenant, Festival of Weeks, seasonal markers, and 364-day warning before treating any later date as neutral chronology.", "refs": ["6:17", "6:30", "6:38"] },
+    { "tip": "Compare one scene closely: Genesis 22 with Jubilees 17–18. Notice Mastema's proposal, the angel's role, and the festival conclusion without transferring them back into Genesis.", "refs": ["17:16", "18:9", "18:19"] },
+    { "tip": "At each heavenly-tablets formula, ask which event is being made a lasting rule and whether the source narrative expresses that rule in the same way.", "refs": ["4:32", "15:25", "16:29", "50:13"] },
+    { "tip": "Read the Dinah episode in chapter 30 with Genesis 34 nearby. Keep the violence, the book's approval, Jacob's objection, and the modern ethical question distinct.", "refs": ["30:2", "30:4", "30:25"] },
+    { "tip": "Return to chapters 49–50 after the exodus narrative. Their Passover and Sabbath instructions show why the whole book has counted time from its opening.", "refs": ["49:1", "50:4", "50:13"] }
+  ],
+  "next": "Read Genesis 1–11 and 12–50 beside Jubilees 2–45, then Exodus 1–20 beside Jubilees 46–50. For another Second Temple Jewish work that treats angels and ordered time, open 1 Enoch on this site, while keeping its separate composition and textual history in view. Return to Leviticus 23–25 for the Torah's festival, sabbatical-year, and jubilee laws, and compare rather than merge their wording with Jubilees' program.",
+  "traditionNote": "Jubilees is named among the Ethiopian Orthodox Tewahedo Church's holy books and survives complete in Geʿez through that tradition. It was also valued by some ancient Jewish readers, as its Qumran copies and related reception show. It is not part of most other modern Jewish or Christian biblical collections. This site's Ethiopian shelf supplies Charles's public-domain 1913 English, not the church's Geʿez text or a complete Ethiopian Bible; its chapter numbering follows that hosted edition."
+}

@@ -1,0 +1,164 @@
+{
+  "book": "EZR",
+  "chapter": 17,
+  "bookName": "Ezra",
+  "summary": "The wall is up; now the city must live. Gates stay shut till sunrise, watches are posted — and God puts it into Nehemiah's heart to find the register of the first returnees. The chapter then prints it: families, towns, priests, Levites, temple servants, and the total — about forty-two thousand three hundred and sixty — with a note on priests who lost their pedigree and were suspended from the priesthood.",
+  "whyItMatters": "A wall protects a people; this chapter asks who the people are. The register ties the new community to the first return under Zerubbabel generations earlier — identity by record. And the suspended priests show that belonging was verified, not assumed.",
+  "context": {
+    "author": "Nehemiah, first-person memoir (the register itself is an older civic document)",
+    "audience": "The returned community",
+    "date": "After the wall's completion, 445/444 BC",
+    "setting": "Jerusalem — 'wide and large,' but with few people and unbuilt houses",
+    "literaryForm": "Narrative followed by an official census list"
+  },
+  "outline": [
+    {
+      "heading": "Security arrangements",
+      "verses": "1-4",
+      "note": "Gates shut till sunrise; watches set; the city still underpopulated"
+    },
+    {
+      "heading": "The register found",
+      "verses": "5-7",
+      "note": "The roll of the first company that came up with Zerubbabel"
+    },
+    {
+      "heading": "The census by towns and families",
+      "verses": "8-43",
+      "note": "Laypeople, then priests, Levites, singers, porters"
+    },
+    {
+      "heading": "Temple servants and the unresolved",
+      "verses": "46-65",
+      "note": "Families who could not prove Israelite descent; priests removed till a priest stands 'to give light'"
+    },
+    {
+      "heading": "The total and the gifts",
+      "verses": "66-73",
+      "note": "42,360 people; heads of families fund the work"
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "17:2",
+      "text": "For he was a true man, and one that feared God beyond many.",
+      "why": "Nehemiah's job description for the man left in charge of Jerusalem — character first."
+    },
+    {
+      "ref": "17:4",
+      "text": "Now the city was wide and large; and the people were few in it, and the houses were not built.",
+      "why": "The problem the next chapters solve: a defended city still needs inhabitants."
+    },
+    {
+      "ref": "17:64-65",
+      "text": "These sought the pedigree of their company, and it was not found, and they were removed as polluted from the priesthood. And the Athersastha said, that they should not eat of the most holy things, until a priest should stand up to give light.",
+      "why": "Unverifiable priests were suspended — not excommunicated — pending a decision by Urim, the sacred oracle."
+    },
+    {
+      "ref": "17:66",
+      "text": "And all the congregation was about forty-two thousand three hundred and sixty.",
+      "why": "The whole assembly — a small nation, which is why every family record mattered."
+    }
+  ],
+  "themes": [
+    "Identity and records",
+    "Continuity with the first return",
+    "Verified ministry",
+    "Generosity for the work"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why print this whole list? It repeats Ezra chapter 2.",
+      "answer": "Nearly — with small variations in numbers and names, which suggests two related records. Nehemiah finds the register of the first return and cites it to root the new community in that continuity: the wall-builders are the heirs of Zerubbabel's company. Lists are how a covenant people remembers who it is.",
+      "verseRefs": [
+        "17:5-7"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What was wrong with the priests who 'could not declare their houses'?",
+      "answer": "Priesthood ran by family line from Aaron. After the exile some men claimed priestly descent but had no document — and some had eaten forbidden food that hinted at mixed or invented lineage. They were barred from the most holy things until a priest could 'stand up to give light' — most readers understand this as a decision by Urim and Thummim, the oracle of the high priest.",
+      "verseRefs": [
+        "17:63-65"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why does a wall need gatekeepers and shut gates?",
+      "answer": "Two reasons the book makes explicit: security (the gates stayed shut till the sun was up, 17:3) and Sabbath-keeping — chapter 23 will use those same gates to stop market traffic on the seventh day. Infrastructure serves holiness here.",
+      "verseRefs": [
+        "17:3"
+      ],
+      "category": "practical",
+      "relatedVerses": [
+        3
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Who were 'the servants of Solomon' in the list?",
+      "answer": "A hereditary class of temple workmen going back to Solomon's era — listed alongside the Nathinim (temple servants). Their inclusion shows how deep the community's institutional memory ran: some families had served the temple for four centuries.",
+      "verseRefs": [
+        "17:57-60"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What happened to the gifts at the end?",
+      "answer": "Heads of families put gold, silver bowls, and priestly garments into the treasury 'for the work' (17:70-72) — the same pattern as the tabernacle's freewill offerings. The census ends in generosity: knowing who they are, the people fund what they are for.",
+      "verseRefs": [
+        "17:70-72"
+      ],
+      "category": "practical",
+      "relatedVerses": [
+        70,
+        71,
+        72
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Athersastha",
+      "def": "Brenton's rendering of a Persian royal title (the king) in this list."
+    },
+    {
+      "term": "Nathinim",
+      "def": "Hereditary temple servants (see chapter 13)."
+    },
+    {
+      "term": "Urim",
+      "def": "The sacred oracle by which Israel's high priest sought God's decision; 'a priest to stand up to give light' is usually read as referring to it."
+    },
+    {
+      "term": "Porters",
+      "def": "Gatekeepers."
+    }
+  ],
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-08-25",
+  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "sourceIds": [
+    "brenton"
+  ]
+}

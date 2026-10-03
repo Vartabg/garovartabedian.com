@@ -1,0 +1,488 @@
+[
+  {
+    "id": "existing-01",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 7,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "ISA",
+      "chapter": 1,
+      "verse": 18,
+      "endVerse": 18
+    }
+  },
+  {
+    "id": "existing-02",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 9,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "GEN",
+      "chapter": 12,
+      "verse": 3,
+      "endVerse": 3
+    }
+  },
+  {
+    "id": "existing-03",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 14,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "PSA",
+      "chapter": 12,
+      "verse": 5,
+      "endVerse": 5
+    }
+  },
+  {
+    "id": "existing-04",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 15,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "PSA",
+      "chapter": 22,
+      "verse": 6,
+      "endVerse": 6
+    }
+  },
+  {
+    "id": "existing-05",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 27,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "PSA",
+      "chapter": 139,
+      "verse": 8,
+      "endVerse": 8
+    }
+  },
+  {
+    "id": "existing-06",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 29,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "JAS",
+      "chapter": 4,
+      "verse": 6,
+      "endVerse": 6
+    }
+  },
+  {
+    "id": "existing-07",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 32,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "GEN",
+      "chapter": 1,
+      "verse": 27,
+      "endVerse": 27
+    }
+  },
+  {
+    "id": "existing-08",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 35,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "PSA",
+      "chapter": 2,
+      "verse": 8,
+      "endVerse": 8
+    }
+  },
+  {
+    "id": "existing-09",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 51,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "PSA",
+      "chapter": 50,
+      "verse": 14,
+      "endVerse": 14
+    }
+  },
+  {
+    "id": "existing-10",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "1clement",
+      "section": 52,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "DEU",
+      "chapter": 9,
+      "verse": 12,
+      "endVerse": 12
+    }
+  },
+  {
+    "id": "existing-11",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "2clement",
+      "section": 1,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "GAL",
+      "chapter": 4,
+      "verse": 27,
+      "endVerse": 27
+    }
+  },
+  {
+    "id": "existing-12",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "2clement",
+      "section": 5,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "EZK",
+      "chapter": 14,
+      "verse": 14,
+      "endVerse": 14
+    }
+  },
+  {
+    "id": "existing-13",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "2clement",
+      "section": 6,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "MRK",
+      "chapter": 9,
+      "verse": 44,
+      "endVerse": 44
+    }
+  },
+  {
+    "id": "existing-14",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "2clement",
+      "section": 12,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "ROM",
+      "chapter": 2,
+      "verse": 24,
+      "endVerse": 24
+    }
+  },
+  {
+    "id": "existing-15",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 1,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "ISA",
+      "chapter": 1,
+      "verse": 13,
+      "endVerse": 13
+    }
+  },
+  {
+    "id": "existing-16",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 2,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "ISA",
+      "chapter": 58,
+      "verse": 5,
+      "endVerse": 5
+    }
+  },
+  {
+    "id": "existing-17",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 3,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "EXO",
+      "chapter": 31,
+      "verse": 18,
+      "endVerse": 18
+    }
+  },
+  {
+    "id": "existing-18",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 3,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "ISA",
+      "chapter": 5,
+      "verse": 21,
+      "endVerse": 21
+    }
+  },
+  {
+    "id": "existing-19",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 4,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "LUK",
+      "chapter": 5,
+      "verse": 32,
+      "endVerse": 32
+    }
+  },
+  {
+    "id": "existing-20",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 5,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "GEN",
+      "chapter": 1,
+      "verse": 26,
+      "endVerse": 26
+    }
+  },
+  {
+    "id": "existing-21",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 9,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "LEV",
+      "chapter": 11,
+      "verse": 3,
+      "endVerse": 3
+    }
+  },
+  {
+    "id": "existing-22",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 10,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "JER",
+      "chapter": 2,
+      "verse": 13,
+      "endVerse": 13
+    }
+  },
+  {
+    "id": "existing-23",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 10,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "PSA",
+      "chapter": 1,
+      "verse": 3,
+      "endVerse": 3
+    }
+  },
+  {
+    "id": "existing-24",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "barnabas",
+      "section": 13,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "ISA",
+      "chapter": 42,
+      "verse": 7,
+      "endVerse": 7
+    }
+  },
+  {
+    "id": "existing-25",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "ignatius-polycarp",
+      "section": 2,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "MAT",
+      "chapter": 10,
+      "verse": 16,
+      "endVerse": 16
+    }
+  },
+  {
+    "id": "existing-26",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "polycarp-philippians",
+      "section": 1,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "1PE",
+      "chapter": 1,
+      "verse": 8,
+      "endVerse": 8
+    }
+  },
+  {
+    "id": "existing-27",
+    "mode": "compare",
+    "left": {
+      "kind": "early",
+      "id": "polycarp-philippians",
+      "section": 2,
+      "paragraph": 0
+    },
+    "right": {
+      "kind": "scripture",
+      "translation": "web",
+      "book": "MAT",
+      "chapter": 7,
+      "verse": 2,
+      "endVerse": 2
+    }
+  }
+]

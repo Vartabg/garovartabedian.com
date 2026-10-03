@@ -1,0 +1,420 @@
+{
+  "book": "HAG",
+  "bookName": "Haggai",
+  "oneLine": "Dated prophetic messages urge Judah’s leaders and people to rebuild the temple and link that work with renewed hope.",
+  "orient": "Haggai is a short prophetic book about a community whose temple remains unfinished while ordinary work brings disappointing returns. Its addresses move from a challenge about priorities to a report of obedience, then to encouragement, questions for the priests, and promises of blessing. Building the temple matters here as a response to God and a shared undertaking by leaders and people. Follow the dates, the people addressed, and the recurring assurance that God is with them.",
+  "whereYouAre": "The setting is Judah under Persian rule in 520 BCE, during the reign of Darius I. Babylonian destruction and exile lie behind the community’s situation; Judah is now governed as a province rather than ruled by its own king. Zerubbabel is governor, Joshua is high priest, and Haggai speaks to them and the people about the neglected temple in Jerusalem.",
+  "facts": {
+    "writtenBy": "The messages are attributed to the prophet Haggai. The book does not identify the person who arranged its messages and reports into their final form.",
+    "writtenWhen": "The book dates its messages between August and December 520 BCE, in the second year of Darius I. Those dates locate the prophetic activity; they do not establish the date of the final arrangement of the book.",
+    "writtenFor": "Zerubbabel, Joshua, and the people of Judah, called to resume the temple work and sustain it through discouragement.",
+    "place": "Jerusalem and Judah within the Persian Empire.",
+    "covers": "A call to rebuild and a report of work beginning; encouragement about the temple’s future; a priestly ruling followed by a promise of blessing; and a final promise to Zerubbabel.",
+    "size": "2 chapters and 38 verses, with 1,015 words in the World English Bible edition. Douay-Rheims has the same total verse count but divides the chapters differently."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "web-haggai"
+    ],
+    "writtenWhen": [
+      "usccb-haggai-intro",
+      "web-haggai"
+    ],
+    "writtenFor": [
+      "web-haggai"
+    ],
+    "place": [
+      "usccb-haggai-intro"
+    ],
+    "covers": [
+      "web-haggai"
+    ],
+    "size": [
+      "web-haggai",
+      "english-editions"
+    ]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew. The book combines dated narrative frames with prophetic speech, repeated commands, promises, and a dialogue with priests.",
+    "register": "Direct and insistent: questions expose a contradiction, repeated words connect private life with public worship, and short assurances encourage action. The dates interrupt the speeches to locate successive occasions.",
+    "spokenWorld": "Persian-period Judah, with a governor, a high priest, and a community addressed together. The literary Hebrew preserves these messages; it does not establish that every person used only Hebrew in every part of daily life.",
+    "readerSignal": "Listen for the commands to consider, the repeated word house, and the threefold encouragement to be strong. Notice when the speaker changes from Haggai reporting a message to God addressing the people within that message.",
+    "englishLayer": "The World English Bible uses modern English for the Hebrew text, including “Yahweh of Armies” where the King James Version has “LORD of hosts.” Brenton represents the Greek Septuagint in English and sometimes differs in wording as well as style. Douay-Rheims places the date printed as WEB 1:15 at 2:1, so WEB 2:1–23 corresponds to Douay-Rheims 2:2–24. References in this briefing follow WEB numbering.",
+    "textualHistory": [
+      {
+        "label": "The Hebrew prophetic collection",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The Hebrew book preserves messages attributed to Haggai, framed by dates and accounts of the people’s response. Its dated speeches and its final literary arrangement are different historical questions: the messages refer to 520 BCE, while the book leaves its compiler unnamed.",
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai",
+          "usccb-haggai-intro"
+        ]
+      },
+      {
+        "label": "The Greek translation tradition",
+        "language": "Greek Septuagint, represented in Brenton’s English",
+        "role": "translation",
+        "description": "Brenton’s Septuagint translation offers another form of the book. For example, 1:11 has a sword where WEB has drought, 2:5 lacks WEB’s clause about the covenant at the departure from Egypt, and 2:9 contains a longer promise of peace. These differences call for comparison of the actual passage, not an assumption that every English edition contains identical wording.",
+        "sourceIds": [
+          "english-editions",
+          "brenton-edition"
+        ]
+      },
+      {
+        "label": "English wording and chapter divisions",
+        "language": "World English Bible, King James Version, Douay-Rheims, and Brenton",
+        "role": "translation",
+        "description": "All four English editions contain two chapters. WEB, KJV, and Brenton divide the verses 15 and 23; Douay-Rheims divides them 14 and 24. The date at the close of WEB chapter 1 begins Douay-Rheims chapter 2. Douay-Rheims and Brenton also call Joshua “Jesus,” the name form used by these translations; the person here is the high priest of Haggai’s time.",
+        "sourceIds": [
+          "english-editions"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Set your heart on your ways",
+        "original": "שִׂימוּ לְבַבְכֶם — śîmû ləvavkhem — set your heart",
+        "explanation": "The same call to attend to their ways appears in 1:5 and 1:7, surrounding the description of hard work with little return. Related heart-language returns in 2:15 and 2:18, asking the people to weigh their experience around the temple work. Reflection leads toward a response; it is not simply a request to feel differently.",
+        "translationNote": "WEB’s “Consider your ways” conveys the idiom naturally. Douay-Rheims retains the heart image with “Set your hearts to consider your ways” in 1:5. The object of the command changes in chapter 2, so these are related appeals rather than one identical sentence repeated throughout.",
+        "caution": "The English word heart can suggest emotion alone. Here the appeal concerns attention, judgment, and conduct in the situation the prophet describes.",
+        "refs": [
+          "1:5",
+          "1:7",
+          "2:15",
+          "2:18"
+        ],
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai",
+          "english-editions",
+          "net-haggai"
+        ]
+      },
+      {
+        "title": "Your houses and God’s house",
+        "original": "בַּיִת — bayit — house",
+        "explanation": "The repeated noun makes the priority dispute audible. In 1:4 the people’s houses stand beside the neglected house of God; in 1:9 the same contrast returns as God explains the disappointing harvest. In chapter 2, this house becomes the subject of comparison between remembered and promised glory.",
+        "translationNote": "English “temple” can clarify which house is meant, but it can also hide the connection with ordinary houses. WEB keeps “house” in the central contrasts, allowing the reader to hear one word move between domestic and sacred space.",
+        "caution": "The criticism concerns this community’s neglected undertaking. It does not establish a general rule that building or maintaining a private home is wrong.",
+        "refs": [
+          "1:4",
+          "1:8",
+          "1:9",
+          "2:3",
+          "2:9"
+        ],
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai"
+        ]
+      },
+      {
+        "title": "A message carried by a prophet",
+        "original": "בְּיַד — bəyad — by the hand of; נְאֻם — nəʾum — declaration or oracle",
+        "explanation": "The opening says the divine word comes through Haggai, and recurring speech formulas mark the claims that follow as God’s message. Verse 1:13 intensifies the connection by naming Haggai as messenger and his speech as the message of Yahweh. The repetition keeps the speaker’s claimed authority in view as the book moves from rebuke to encouragement.",
+        "translationNote": "The Hebrew image “by the hand of” is often rendered simply “by” or “through.” WEB’s recurring “says Yahweh” also carries speech formulas that English readers may pass over as verbal padding. Reading them aloud makes the changes of voice easier to follow.",
+        "caution": "A prophetic speech formula identifies how the book presents a message. It does not independently establish when every framing sentence was written.",
+        "refs": [
+          "1:1",
+          "1:3",
+          "1:9",
+          "1:13",
+          "2:1",
+          "2:23"
+        ],
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai",
+          "net-haggai",
+          "usccb-haggai-1"
+        ]
+      },
+      {
+        "title": "Three calls to be strong, then work",
+        "original": "חֲזַק — ḥazaq — be strong",
+        "explanation": "In 2:4 the command is addressed first to Zerubbabel, then to Joshua, then to all the people of the land. The sequence distributes encouragement across political leadership, priestly leadership, and the community. It culminates in a command to work and an assurance of divine presence, answering the discouragement voiced in 2:3.",
+        "translationNote": "WEB repeats “Be strong” three times. Reading the repeated words with each addressee preserves the deliberate rhythm; reducing the verse to a general encouragement would lose the inclusion of all three groups.",
+        "caution": "The message encourages this temple project. It does not promise that every undertaking will succeed whenever its leaders feel determined.",
+        "refs": [
+          "2:3",
+          "2:4",
+          "2:5"
+        ],
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai"
+        ]
+      },
+      {
+        "title": "Treasure, desire, and what the grammar allows",
+        "original": "וּבָאוּ — uvaʾu — they will come; חֶמְדַּת — ḥemdat — treasure of",
+        "explanation": "The noun in 2:7 has a singular form, but its verb is plural. The UBS translator handbook therefore favors a collective sense, valuable things or treasures, rather than a single person arriving. The next verse’s silver and gold supports that reading.",
+        "translationNote": "WEB has “The treasure of all nations”; KJV has “the desire of all nations”; Brenton has “the choice [portions] of all the nations.” Douay-Rheims 2:8 uses the personal-sounding “THE DESIRED OF ALL NATIONS.” These English expressions do not all make the same interpretation equally visible.",
+        "caution": "Later Christian readers have connected the promise with Christ. That reception should be distinguished from the grammatical case for a collective noun in the Hebrew sentence; English “desire” alone cannot establish a personal referent.",
+        "refs": [
+          "2:7",
+          "2:8"
+        ],
+        "sourceIds": [
+          "hebrew-haggai",
+          "english-editions",
+          "ubs-haggai-2-7"
+        ]
+      }
+    ],
+    "examplesHeading": "Hebrew expressions that carry the argument",
+    "examples": [
+      {
+        "ref": "1:5",
+        "form": "śîmû ləvavkhem ʿal darkheikhem",
+        "meaning": "Set your heart on your ways.",
+        "why": "The idiom asks the community to attend to its conduct and experience; WEB translates it as “Consider your ways.”",
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai",
+          "net-haggai"
+        ]
+      },
+      {
+        "ref": "1:13",
+        "form": "ʾani ʾittekhem",
+        "meaning": "I am with you.",
+        "why": "The brief assurance follows the people’s obedience and precedes the report of work. The same presence language strengthens the later encouragement in 2:4.",
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai"
+        ]
+      },
+      {
+        "ref": "2:4",
+        "form": "ḥazaq",
+        "meaning": "Be strong.",
+        "why": "The repeated command reaches governor, high priest, and people before they are told to work. The repetition makes shared participation audible.",
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai"
+        ]
+      },
+      {
+        "ref": "2:23",
+        "form": "ḥotam",
+        "meaning": "Seal or signet.",
+        "why": "A signet marks authorization or ownership. The comparison presents Zerubbabel as chosen to represent God; it is a promise, not a report that he has been crowned king.",
+        "sourceIds": [
+          "hebrew-haggai",
+          "web-haggai",
+          "usccb-haggai-2"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Dated prophetic messages with reports and dialogue",
+    "how": "Follow each dated address and identify its audience before extracting a promise. Questions challenge the delay, a narrative reports the response, and later speeches encourage the workers, question the priests, and address Zerubbabel. The short book combines correction and hope."
+  },
+  "cast": [
+    {
+      "name": "Haggai",
+      "who": "The prophet and messenger through whom the book presents these addresses."
+    },
+    {
+      "name": "Zerubbabel son of Shealtiel",
+      "who": "Governor of Judah, addressed with the people and singled out in the final signet promise."
+    },
+    {
+      "name": "Joshua son of Jehozadak",
+      "who": "The high priest. Douay-Rheims and Brenton call him Jesus; the name here refers to this Persian-period priest, not Jesus of Nazareth."
+    },
+    {
+      "name": "The people and the priests",
+      "who": "The community is called to work; priests answer the questions about holiness and impurity in chapter 2."
+    },
+    {
+      "name": "Darius I",
+      "who": "The Persian king whose regnal year dates the messages; he is not a speaker in the book."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Consider your ways and begin the work",
+      "chapters": "1",
+      "precise": "1:1–15",
+      "note": "The first address challenges the neglect of God’s house and connects it with poor returns from work (1–11). Leaders and people respond, hear an assurance of God’s presence, and begin work (12–15)."
+    },
+    {
+      "heading": "Courage, blessing, and the chosen signet",
+      "chapters": "2",
+      "precise": "2:1–23",
+      "note": "Encouragement answers disappointment about the temple (1–9). A dialogue with priests leads into reflection on past scarcity and a promise of blessing (10–19). The last message addresses Zerubbabel with the image of a chosen signet (20–23). These boundaries follow WEB; Douay-Rheims chapter 2 starts one verse earlier."
+    }
+  ],
+  "purpose": "Haggai calls the community to respond to the neglected temple with shared work, and sustains that work with an assurance of God’s presence. The book joins questions of priority and worship to the people’s material life, while its future promises keep discouragement from having the final word.",
+  "snags": [
+    {
+      "snag": "Do the dates tell us exactly when the whole book was written?",
+      "help": "They date the occasions on which the book places its messages and the beginning of work. The final arrangement could preserve those reports without having been completed on one of the dated days. Keep the events of 520 BCE distinct from the unnamed work of collecting them."
+    },
+    {
+      "snag": "Does holiness never pass through contact?",
+      "help": "The first question, in 2:12, concerns indirect contact: a fold carrying holy meat touches another food. The priests deny that the food thereby becomes holy. In 2:13, a person made unclean through a corpse touches food, and the answer is different. Preserve those different cases rather than turning the exchange into an unrestricted rule about all contact or a lesson about germs."
+    },
+    {
+      "snag": "Does a bad harvest prove that someone neglected God?",
+      "help": "Haggai makes that connection in his address to this community about this neglected temple. The book does not provide a universal method for diagnosing another person’s poverty, crop failure, or suffering."
+    },
+    {
+      "snag": "Why does one Bible seem to have an extra verse in chapter 2?",
+      "help": "Douay-Rheims moves the date at WEB 1:15 to 2:1. After that, WEB 2:1–23 corresponds to Douay-Rheims 2:2–24. Compare the words as well as the numbers; the two editions both have 38 verses in Haggai."
+    },
+    {
+      "snag": "Why do older editions mention Jesus here?",
+      "help": "In Douay-Rheims and Brenton, Jesus is the name used for Joshua son of Jehozadak, Haggai’s contemporary and the high priest. The office, father’s name, and narrative setting identify the same person called Joshua in WEB."
+    },
+    {
+      "snag": "Does the last verse say Zerubbabel became king?",
+      "help": "No coronation is narrated. The book calls Zerubbabel governor and promises that God will make him like a signet. That image expresses chosen authority; the promise and its later interpretation should not be confused with a reported accession."
+    }
+  ],
+  "debates": [
+    {
+      "question": "How should the promises of greater glory and the signet be understood?",
+      "settled": "The speeches concern the temple and name Zerubbabel directly. The book ends with promises rather than an account of their complete fulfillment.",
+      "positions": [
+        {
+          "view": "Hope addressed to the rebuilding community",
+          "grounds": "The temple’s present appearance, the command to work, and the named governor anchor the promises in the community’s immediate situation."
+        },
+        {
+          "view": "A wider future and messianic horizon",
+          "grounds": "The language of shaken kingdoms, divine choice, and a servant associated with Davidic hope has encouraged readings beyond the immediate building project. Christian interpretations can connect this hope with the Messiah while acknowledging the address to Zerubbabel."
+        }
+      ],
+      "soWhat": "Begin with the named people and the work before them. Then distinguish a later interpretation of the promise from an event the book actually narrates."
+    },
+    {
+      "question": "What precisely is wrong with the people’s offerings in 2:14?",
+      "settled": "After the priests’ answers, Haggai declares the people, their work, and their offerings unclean. The surrounding speeches connect the community’s conduct and work with its relation to God.",
+      "positions": [
+        {
+          "view": "A critique of worship alongside a tainted way of life",
+          "grounds": "The application reaches beyond one food or garment to the people and the work of their hands; acceptable worship cannot be assumed merely because an offering is made."
+        },
+        {
+          "view": "An application tied specifically to the neglected rebuilding",
+          "grounds": "The dialogue stands amid messages about the temple, poor harvests, and the change announced with promised blessing. This context makes the building work central to the warning."
+        }
+      ],
+      "soWhat": "These emphases can overlap. The passage does not identify a particular group of foreign neighbors as the cause, so avoid supplying that explanation as though it were stated."
+    }
+  ],
+  "sources": [
+    {
+      "id": "web-haggai",
+      "label": "Haggai in the World English Bible",
+      "says": "The wording, sequence of addresses, cast, chapter shape, and measured English size of the book.",
+      "href": "/scriptures/text/web/HAG.json"
+    },
+    {
+      "id": "english-editions",
+      "label": "Haggai in WEB, KJV, Douay-Rheims, and Brenton",
+      "says": "Direct comparison establishes the chapter division, the Joshua/Jesus name forms, and the different renderings at 1:11, 2:5, 2:7, and 2:9."
+    },
+    {
+      "id": "hebrew-haggai",
+      "label": "Open Scriptures Hebrew Bible: Haggai",
+      "says": "The Hebrew wording and morphology behind the repeated commands, house vocabulary, messenger expressions, plural verb in 2:7, and signet image.",
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hag.xml"
+    },
+    {
+      "id": "usccb-haggai-intro",
+      "label": "USCCB, Introduction to Haggai",
+      "says": "Places the messages in Persian Judah under Darius I and identifies the recorded period of activity as August–December 520 BCE.",
+      "url": "https://bible.usccb.org/bible/haggai/0"
+    },
+    {
+      "id": "usccb-haggai-1",
+      "label": "USCCB, Haggai 1 notes",
+      "says": "Explains the prophetic speech formula and the contrast between the people’s houses and the unfinished temple.",
+      "url": "https://bible.usccb.org/bible/haggai/1"
+    },
+    {
+      "id": "usccb-haggai-2",
+      "label": "USCCB, Haggai 2 notes",
+      "says": "Discusses the priestly dialogue, the offerings, future hope, and the signet as a mark of delegated authority.",
+      "url": "https://bible.usccb.org/bible/haggai/2"
+    },
+    {
+      "id": "net-haggai",
+      "label": "NET Bible, Haggai translator notes",
+      "says": "Explains the heart idiom and the repeated messenger language; its final note also illustrates a Christian messianic reading of the signet promise.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/hag.pdf"
+    },
+    {
+      "id": "ubs-haggai-2-7",
+      "label": "David J. Clark and Howard A. Hatton, A Handbook on Haggai, note on 2:7",
+      "says": "Explains why the Hebrew plural verb favors a collective treasure reading and distinguishes it from a personal reading of desire. Published by UBS; excerpt reproduced by the American Bible Society.",
+      "url": "https://tips.translation.bible/tip_term/translation-commentary-on-haggai-27/"
+    },
+    {
+      "id": "brenton-edition",
+      "label": "Brenton Septuagint Translation, eBible edition",
+      "says": "Identifies the English Septuagint edition used for comparison.",
+      "url": "https://ebible.org/eng-Brenton/"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Mark the dates and identify each audience. Distinguish the report of work beginning from the later messages of encouragement.",
+      "refs": [
+        "1:1",
+        "1:12",
+        "1:15",
+        "2:1",
+        "2:10",
+        "2:20"
+      ]
+    },
+    {
+      "tip": "Read the contrast between your houses and God’s house aloud, then notice the response and the assurance of presence.",
+      "refs": [
+        "1:4",
+        "1:9",
+        "1:12",
+        "1:13",
+        "1:14"
+      ]
+    },
+    {
+      "tip": "Hear the command to be strong addressed separately to Zerubbabel, Joshua, and the people before they are told to work.",
+      "refs": [
+        "2:3",
+        "2:4",
+        "2:5"
+      ]
+    },
+    {
+      "tip": "Keep the two priestly questions distinct: the first involves a garment carrying holy meat; the second involves a person made unclean through contact with a corpse.",
+      "refs": [
+        "2:11",
+        "2:12",
+        "2:13",
+        "2:14"
+      ]
+    },
+    {
+      "tip": "Read the final promises as promises. Notice what the book says will happen and what it does not narrate as already accomplished.",
+      "refs": [
+        "2:7",
+        "2:9",
+        "2:19",
+        "2:21",
+        "2:22",
+        "2:23"
+      ]
+    }
+  ],
+  "next": "Read Zechariah for another prophetic voice concerned with restoration, then Ezra 5–6 for a narrative account of the temple work. Compare their emphases without treating every detail from one book as if Haggai itself states it.",
+  "traditionNote": "Haggai has two chapters in each of these English editions. The principal chapter-number difference is Douay-Rheims’ placement of WEB 1:15 at 2:1; differences in Greek and Hebrew wording also remain visible when comparing Brenton with WEB."
+}

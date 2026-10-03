@@ -1,0 +1,392 @@
+/*
+ * Global action-control contract.
+ *
+ * The visual skin is token-driven so clean pages, the home threshold, and
+ * each content world can keep their own voice. The interaction contract does
+ * not change: native semantics, resilient text layout, explicit state, and
+ * input-aware motion on every device.
+ */
+
+:root {
+  --control-target-min: 2.75rem;
+  --control-target-coarse: 3rem;
+  --control-gap: 0.5rem;
+  --control-radius: 0.625rem;
+  --control-border: var(--line);
+  --control-focus-inner: #fff;
+  --control-focus-outer: #000;
+  --control-motion-duration: 140ms;
+  --control-motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --button-height-sm: 2.75rem;
+  --button-height-md: 3rem;
+  --button-height-lg: 3.5rem;
+  --button-padding-sm: 0.5rem 0.8rem;
+  --button-padding-md: 0.7rem 1.1rem;
+  --button-padding-lg: 0.85rem 1.35rem;
+  --button-shadow:
+    0 1px 0 color-mix(in oklab, var(--ink) 16%, transparent),
+    0 8px 24px color-mix(in oklab, var(--ink) 10%, transparent);
+  --button-shadow-hover:
+    0 1px 0 color-mix(in oklab, var(--ink) 18%, transparent),
+    0 12px 30px color-mix(in oklab, var(--ink) 14%, transparent);
+
+  --button-primary-bg: var(--accent);
+  --button-primary-fg: var(--accent-ink);
+  --button-primary-border: var(--accent);
+  --button-primary-hover: var(--accent-deep);
+
+  --button-secondary-bg: color-mix(in oklab, var(--surface) 94%, var(--accent));
+  --button-secondary-fg: var(--ink);
+  --button-secondary-border: color-mix(in oklab, var(--ink) 55%, var(--surface));
+  --button-secondary-hover: color-mix(in oklab, var(--surface) 88%, var(--accent));
+
+  --button-ghost-bg: transparent;
+  --button-ghost-fg: var(--ink);
+  --button-ghost-border: color-mix(in oklab, var(--ink) 55%, var(--surface));
+  --button-ghost-hover: color-mix(in oklab, var(--accent) 9%, transparent);
+
+  --button-danger-bg: var(--rubric);
+  --button-danger-fg: var(--folio);
+  --button-danger-border: var(--rubric);
+  --button-danger-hover: color-mix(in oklab, var(--rubric) 84%, black);
+
+  --button-disabled-bg: color-mix(in oklab, var(--surface) 84%, var(--line));
+  --button-disabled-fg: color-mix(in oklab, var(--muted) 72%, var(--surface));
+  --button-disabled-border: color-mix(in oklab, var(--line) 78%, transparent);
+}
+
+/* Hybrid hardware can change input mode mid-session. Keep the base behavior
+   device-neutral and add hover only when a precise hovering pointer exists. */
+:where(button, [role="button"], .ui-button, .btn, .scr-btn) {
+  touch-action: manipulation;
+}
+
+:where(.ui-button, .btn, .scr-btn) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(button, .ui-button, .btn, .scr-btn) {
+  font-family: var(--font-interface);
+}
+
+:where(button:disabled, [aria-disabled="true"]) {
+  cursor: not-allowed;
+}
+
+/* Shared component plus temporary aliases for the legacy .btn family. */
+:is(.ui-button, .btn) {
+  --_button-bg: var(--button-secondary-bg);
+  --_button-fg: var(--button-secondary-fg);
+  --_button-border: var(--button-secondary-border);
+  --_button-hover: var(--button-secondary-hover);
+  --_button-min-block: var(--button-height-md);
+  --_button-padding: var(--button-padding-md);
+
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  max-inline-size: 100%;
+  min-inline-size: var(--control-target-min);
+  min-block-size: var(--_button-min-block);
+  align-items: center;
+  justify-content: center;
+  gap: var(--control-gap);
+  padding: var(--_button-padding);
+  border: 1px solid var(--_button-border);
+  border-radius: var(--control-radius);
+  background: var(--_button-bg);
+  box-shadow:
+    var(--_button-state-ring, 0 0 #0000),
+    var(--button-shadow);
+  color: var(--_button-fg);
+  font: inherit;
+  font-family: var(--font-interface);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-wrap: pretty;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    color var(--control-motion-duration) var(--control-motion-ease),
+    background-color var(--control-motion-duration) var(--control-motion-ease),
+    border-color var(--control-motion-duration) var(--control-motion-ease),
+    box-shadow var(--control-motion-duration) var(--control-motion-ease),
+    transform 100ms var(--control-motion-ease);
+}
+
+:where(.ui-button, .btn) > :where(svg, .ui-button__icon) {
+  flex: 0 0 auto;
+  inline-size: 1.15em;
+  block-size: 1.15em;
+  color: currentColor;
+  pointer-events: none;
+}
+
+.ui-button__icon {
+  display: inline-grid;
+  place-items: center;
+}
+
+.ui-button__icon > svg {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.ui-button__label {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+:is(.ui-button--primary, .btn-primary) {
+  --_button-bg: var(--button-primary-bg);
+  --_button-fg: var(--button-primary-fg);
+  --_button-border: var(--button-primary-border);
+  --_button-hover: var(--button-primary-hover);
+}
+
+.ui-button--secondary {
+  --_button-bg: var(--button-secondary-bg);
+  --_button-fg: var(--button-secondary-fg);
+  --_button-border: var(--button-secondary-border);
+  --_button-hover: var(--button-secondary-hover);
+}
+
+:is(.ui-button--ghost, .btn-ghost) {
+  --_button-bg: var(--button-ghost-bg);
+  --_button-fg: var(--button-ghost-fg);
+  --_button-border: var(--button-ghost-border);
+  --_button-hover: var(--button-ghost-hover);
+  box-shadow: var(--_button-state-ring, 0 0 #0000);
+}
+
+.ui-button--destructive {
+  --_button-bg: var(--button-danger-bg);
+  --_button-fg: var(--button-danger-fg);
+  --_button-border: var(--button-danger-border);
+  --_button-hover: var(--button-danger-hover);
+}
+
+.ui-button--sm {
+  --_button-min-block: var(--button-height-sm);
+  --_button-padding: var(--button-padding-sm);
+  font-size: 0.875rem;
+}
+
+.ui-button--md {
+  --_button-min-block: var(--button-height-md);
+  --_button-padding: var(--button-padding-md);
+}
+
+.ui-button--lg {
+  --_button-min-block: var(--button-height-lg);
+  --_button-padding: var(--button-padding-lg);
+  font-size: 1rem;
+}
+
+.ui-button--icon {
+  --_button-min-block: var(--button-height-md);
+  --_button-padding: 0;
+  flex: 0 0 auto;
+  inline-size: var(--button-height-md);
+  min-inline-size: var(--button-height-md);
+  aspect-ratio: 1;
+}
+
+.ui-button--full {
+  inline-size: 100%;
+}
+
+:where(.ui-button)[aria-pressed="true"] {
+  --_button-state-ring: inset 0 0 0 2px currentColor;
+}
+
+:where(.scr-btn)[aria-pressed="true"] {
+  --_button-state-ring: inset 0 0 0 2px currentColor;
+  box-shadow: var(--_button-state-ring);
+}
+
+:where(.ui-button, .btn):is(:disabled, [aria-disabled="true"]) {
+  --_button-bg: var(--button-disabled-bg);
+  --_button-fg: var(--button-disabled-fg);
+  --_button-border: var(--button-disabled-border);
+  box-shadow: none;
+  opacity: 1;
+  filter: saturate(0.55);
+  transform: none;
+}
+
+.ui-button[data-loading="true"] {
+  cursor: progress;
+}
+
+.ui-button[data-loading="true"] .ui-button__label {
+  opacity: 0.32;
+}
+
+.ui-button[data-loading="true"] .ui-button__icon--only {
+  opacity: 0.18;
+}
+
+.ui-button__spinner {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  inline-size: 1.1rem;
+  block-size: 1.1rem;
+  margin: -0.55rem 0 0 -0.55rem;
+  border: 2px solid color-mix(in oklab, currentColor 32%, transparent);
+  border-block-start-color: currentColor;
+  border-radius: 50%;
+  animation: ui-button-spin 700ms linear infinite;
+  pointer-events: none;
+}
+
+.ui-button__status {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
+@keyframes ui-button-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :where(.ui-button, .btn):not(:disabled, [aria-disabled="true"]):hover {
+    border-color: color-mix(in oklab, var(--_button-border) 68%, var(--ink));
+    background: var(--_button-hover);
+    color: var(--_button-fg);
+    box-shadow:
+      var(--_button-state-ring, 0 0 #0000),
+      var(--button-shadow-hover);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+
+  :where(.ui-button--ghost, .btn-ghost):not(:disabled, [aria-disabled="true"]):hover {
+    border-color: color-mix(in oklab, var(--accent) 52%, var(--line));
+    box-shadow: var(--_button-state-ring, 0 0 #0000);
+  }
+}
+
+/* Active follows hover so a mouse press cannot retain the lifted hover pose. */
+:where(.ui-button, .btn):not(:disabled, [aria-disabled="true"]):active {
+  box-shadow:
+    var(--_button-state-ring, 0 0 #0000),
+    0 1px 0 color-mix(in oklab, var(--ink) 12%, transparent);
+  transform: translateY(1px) scale(0.985);
+}
+
+/* Focus comes after rest, pressed, disabled, and hover declarations so those
+   states cannot erase either contrast band on links or native buttons. */
+button:focus-visible,
+:is(.ui-button, .btn, .scr-btn):focus-visible {
+  outline: 2px solid var(--control-focus-inner);
+  outline-offset: 0;
+  box-shadow:
+    var(--_button-state-ring, 0 0 #0000),
+    0 0 0 4px var(--control-focus-outer);
+}
+
+/* Route styles historically customized native-button focus. The accessibility
+   perimeter is a non-negotiable floor, so it deliberately outranks those
+   skins while leaving their color, shape, and selected-state styling intact. */
+button:focus-visible {
+  outline: 2px solid var(--control-focus-inner) !important;
+  outline-offset: 0 !important;
+  box-shadow:
+    var(--_button-state-ring, 0 0 #0000),
+    0 0 0 4px var(--control-focus-outer) !important;
+}
+
+@media (any-pointer: coarse) {
+  :where(.ui-button, .btn, .scr-btn, [data-ui-target="standard"]) {
+    min-inline-size: var(--control-target-coarse) !important;
+    min-block-size: max(
+      var(--_button-min-block, 0px),
+      var(--control-target-coarse)
+    ) !important;
+  }
+
+  .ui-button--icon {
+    inline-size: var(--control-target-coarse);
+    min-inline-size: var(--control-target-coarse);
+  }
+}
+
+@media (prefers-contrast: more) {
+  :where(.ui-button, .btn, .scr-btn) {
+    border-width: 2px;
+    box-shadow: none;
+  }
+}
+
+@media (forced-colors: active) {
+  :where(.ui-button, .btn, .scr-btn) {
+    border: 2px solid ButtonText !important;
+    background: ButtonFace !important;
+    box-shadow: none !important;
+    color: ButtonText !important;
+    forced-color-adjust: auto;
+  }
+
+  button:focus-visible,
+  :is(.ui-button, .btn, .scr-btn):focus-visible {
+    outline: 3px solid Highlight !important;
+    outline-offset: 2px !important;
+    box-shadow: none !important;
+  }
+
+  :where(.ui-button, .scr-btn)[aria-pressed="true"] {
+    border-color: Highlight !important;
+    background: Highlight !important;
+    color: HighlightText !important;
+  }
+
+  :where(.ui-button, .btn, .scr-btn):is(:disabled, [aria-disabled="true"]) {
+    border-color: GrayText !important;
+    background: ButtonFace !important;
+    color: GrayText !important;
+    filter: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.ui-button, .btn, .scr-btn) {
+    transition: none !important;
+  }
+
+  :where(.ui-button, .btn, .scr-btn):active {
+    transform: none !important;
+  }
+
+  .ui-button__spinner {
+    animation: none !important;
+    border-style: dotted !important;
+  }
+}
+
+html[data-a11y-motion="reduce"] :where(.ui-button, .btn, .scr-btn) {
+  transition: none !important;
+}
+
+html[data-a11y-motion="reduce"] :where(.ui-button, .btn, .scr-btn):active {
+  transform: none !important;
+}
+
+html[data-a11y-motion="reduce"] .ui-button__spinner {
+  animation: none !important;
+  border-style: dotted !important;
+}

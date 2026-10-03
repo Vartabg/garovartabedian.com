@@ -1,0 +1,227 @@
+{
+  "book": "EXO",
+  "chapter": 6,
+  "bookName": "Exodus",
+  "summary": "Yahweh answers Moses’ complaint with promises to bring Israel out of bondage, take them as his people, and bring them into the ancestral land. The people cannot listen because of anguish and cruel labor; a genealogy then traces the families of Reuben, Simeon, and especially Levi to identify Moses and Aaron, before Moses again objects that Pharaoh will not heed his speech.",
+  "whyItMatters": "The promised rescue is restated amid conditions that make hope hard to hear. The family register anchors the two messengers in Israel, while the repeated objection carries the tension directly into the next confrontation.",
+  "context": {
+    "author": "Exodus names no writer of the finished book, though it depicts Moses writing particular words. Later tradition ascribes the Torah to him; its composition remains debated.",
+    "audience": "Israel is addressed through its story of rescue, covenant, and worship; this chapter names no narrower first audience.",
+    "date": "The book gives a relative story sequence but no secure external year for the events. The dating and formation of its finished text remain debated.",
+    "setting": "Israel under Egyptian bondage and the genealogy of Reuben, Simeon, and Levi preceding renewed speech to Pharaoh.",
+    "literaryForm": "Divine promise and failed reception, genealogical identification of the leaders, and a resumed commission."
+  },
+  "contextSourceIds": [
+    "hosted-web",
+    "usccb-exodus",
+    "usccb-pentateuch"
+  ],
+  "readingContext": {
+    "before": {
+      "text": "Moses has complained that speaking to Pharaoh only increased Israel’s suffering. Yahweh’s answer begins with a promised strong-handed release.",
+      "verseRefs": [
+        "5:22-23",
+        "6:1"
+      ]
+    },
+    "here": {
+      "text": "God links rescue to the ancestral covenant; the oppressed people cannot take in the message, and a family register locates Aaron and Moses before the commission resumes.",
+      "verseRefs": [
+        "6:2-13",
+        "6:14-30"
+      ]
+    },
+    "after": {
+      "text": "The next chapter assigns Aaron to speak for Moses before Pharaoh and begins a sequence of signs and judgments.",
+      "verseRefs": [
+        "7:1-25"
+      ]
+    }
+  },
+  "readingContextSource": {
+    "translation": "web",
+    "textHash": "612ecc5bf062b428e3b3bd2108ad4134c830a78067056c1be2e580170b239798"
+  },
+  "outline": [
+    {
+      "heading": "Covenant and rescue promised again",
+      "verses": "1-8",
+      "note": "Yahweh names himself, recalls the ancestors, and promises release, relationship, and land."
+    },
+    {
+      "heading": "Anguish and a renewed commission",
+      "verses": "9-13",
+      "note": "Israel cannot listen under bondage, and Moses doubts Pharaoh will listen."
+    },
+    {
+      "heading": "Families of Reuben, Simeon, and Levi",
+      "verses": "14-19",
+      "note": "The list narrows toward the Levite line from which the two messengers come."
+    },
+    {
+      "heading": "Moses and Aaron’s family connections",
+      "verses": "20-25",
+      "note": "Parents, spouses, sons, and related Levite households are named."
+    },
+    {
+      "heading": "The messengers identified and objection repeated",
+      "verses": "26-30",
+      "note": "The genealogy points back to Aaron and Moses before Moses again cites his lips."
+    }
+  ],
+  "keyVerses": [
+    {
+      "ref": "6:6",
+      "text": "Therefore tell the children of Israel, ‘I am Yahweh, and I will bring you out from under the burdens of the Egyptians, and I will rid you out of their bondage, and I will redeem you with an outstretched arm, and with great judgments.",
+      "why": "Release from Egyptian burdens is stated as the beginning of Yahweh’s promised action."
+    },
+    {
+      "ref": "6:9",
+      "text": "Moses spoke so to the children of Israel, but they didn’t listen to Moses for anguish of spirit, and for cruel bondage.",
+      "why": "The narration explains the people’s failure to listen through anguish and cruel bondage."
+    },
+    {
+      "ref": "6:26",
+      "text": "These are that Aaron and Moses to whom Yahweh said, “Bring out the children of Israel from the land of Egypt according to their armies.”",
+      "why": "The genealogy explicitly identifies the Aaron and Moses commanded to bring Israel out."
+    }
+  ],
+  "themes": [
+    "covenant remembered",
+    "rescue from bondage",
+    "belonging to God",
+    "hope under anguish",
+    "Levite family record",
+    "Moses’ speech objection"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "How does Yahweh answer the complaint that no rescue has happened?",
+      "answer": "He promises that Pharaoh will eventually drive Israel out and restates the covenant with the ancestors. The speech then moves through release from burdens, a new people-God relationship, and inheritance of the promised land.",
+      "verseRefs": [
+        "6:1-8"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        1
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How can 6:3 say the ancestors did not know the name Yahweh?",
+      "answer": "The verse contrasts earlier appearance as God Almighty with a claim about the name Yahweh. Readers differ on whether it describes the first disclosure of the name or a new experience of what that name means; this chapter does not explain the tension with earlier uses of the name in Genesis.",
+      "verseRefs": [
+        "6:2-4"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        2
+      ],
+      "evidenceSourceIds": [
+        "hosted-web",
+        "usccb-exodus"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does “redeem” mean in this promise?",
+      "answer": "It stands among actions by which Yahweh will remove Israel from Egyptian burdens and bondage, described with an outstretched arm and judgments. The chapter uses it for deliverance of an enslaved people, not for a specified cash payment to Pharaoh.",
+      "verseRefs": [
+        "6:5-7"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        5
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Why do the Israelites not listen to a hopeful message?",
+      "answer": "The narrator gives anguish of spirit and cruel bondage as the reasons. Their inability to receive the promise is tied to their present suffering.",
+      "verseRefs": [
+        "6:6-9"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        6
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why interrupt the action with a genealogy?",
+      "answer": "The register begins with older brothers Reuben and Simeon but expands the Levite line that leads to Moses and Aaron. Its closing verses identify these named men as the ones commanded to lead Israel out and address Pharaoh.",
+      "verseRefs": [
+        "6:14-27"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        14
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "What does the genealogy tell us about Aaron’s household?",
+      "answer": "It names his wife Elisheba and four sons, and it extends the line through Eleazar to Phinehas. Those details locate Aaron within family relationships before his public role in the coming confrontations.",
+      "verseRefs": [
+        "6:20-25"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        20
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What are “uncircumcised lips” in Moses’ objection?",
+      "answer": "Moses uses the phrase about his own speech after saying Israel has not listened; he repeats it when told to address Pharaoh. It conveys his sense of unfitness to speak effectively rather than reporting a physical procedure on his mouth.",
+      "verseRefs": [
+        "6:10-12",
+        "6:28-30"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        10
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What does “I will take you to myself for a people” promise?",
+      "answer": "Yahweh promises to claim Israel as his people and to be their God, so that they will know who brought them out from Egypt’s burdens. Relationship and recognition are named alongside rescue and land in the same speech.",
+      "verseRefs": [
+        "6:6-8"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        6
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "redeem",
+      "def": "Yahweh’s promised act of bringing Israel out from under Egyptian bondage."
+    },
+    {
+      "term": "bondage",
+      "def": "The oppressive condition in Egypt that prevents the people from receiving Moses’ message easily."
+    },
+    {
+      "term": "uncircumcised lips",
+      "def": "Moses’ image for his perceived inability to speak persuasively before Pharaoh."
+    }
+  ],
+  "generation": {
+    "attributedModel": "Codex agents (model not measured)",
+    "promptHash": "71f1b17cee29aa67edb9638f154a3ecd29e4a259ea018f2e50d18df5874cd2f3",
+    "generatedAt": "2026-09-29T16:26:09.000Z",
+    "rubricVersion": "guide-v2",
+    "method": "review-bound"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-09-29",
+  "reviewer": "Codex editorial agents; independent chapter review",
+  "sourceIds": [
+    "web"
+  ]
+}

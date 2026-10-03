@@ -1,0 +1,2006 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-25T20:10:31.931Z",
+  "baselineRevision": "7d0877c2475e37d158c9f1e1bd7941c93625e0c8",
+  "baselineImplementationHash": null,
+  "afterImplementationHash": "d8b38819c9ee25423e6070362a67b6096df0edf5677ce9260adc656109f0da26",
+  "caseManifestHash": "a0166db574b61a640cf26ea44a813df043051cdf894e23f34f23f82a2cbf94d9",
+  "semanticRelease": "ac0b8bce50b1ae9a937997b351be3fd06915e2a4bfe6663102e9b7a100e6c3c4",
+  "providerOperations": 0,
+  "acceptedLabels": 0,
+  "qualityEstablished": false,
+  "exposedHeldOutGroups": [
+    "lookup-02"
+  ],
+  "coverageDiagnostics": {
+    "legacyNarrow": {
+      "top20OverlapWithFullVectorRanking": 546,
+      "denominator": 760,
+      "averageBooks": 13.61,
+      "averageIndexBytes": 3839995
+    },
+    "diverse28": {
+      "top20OverlapWithFullVectorRanking": 666,
+      "denominator": 760,
+      "averageBooks": 28,
+      "averageIndexBytes": 6745696
+    },
+    "full": {
+      "top20OverlapWithFullVectorRanking": 760,
+      "denominator": 760,
+      "averageBooks": 81,
+      "averageIndexBytes": 14882645
+    }
+  },
+  "cases": [
+    {
+      "id": "lookup-01-1",
+      "query": "Jesus wept",
+      "origin": "development",
+      "family": "lookup",
+      "wordTop5Before": [
+        "MAT 26:75",
+        "MRK 14:72",
+        "JHN 11:35",
+        "GEN 21:16",
+        "GEN 27:38"
+      ],
+      "wordTop5After": [
+        "JHN 11:35",
+        "MAT 26:75",
+        "MRK 14:72",
+        "GEN 21:16",
+        "GEN 27:38"
+      ],
+      "wordLabelsAfter": [
+        "phrase",
+        "all-words",
+        "all-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "JESUS, THE CHRIST",
+        "BAR-JESUS",
+        "JESUI"
+      ],
+      "topicsAfter": [
+        "JESUS, THE CHRIST",
+        "BAR-JESUS"
+      ],
+      "meaningTop5Legacy": [
+        "JHN 11:35",
+        "LUK 22:62",
+        "MAT 27:50",
+        "MRK 15:37",
+        "JHN 7:37"
+      ],
+      "meaningTop5Full": [
+        "JHN 11:35",
+        "LUK 22:62",
+        "1ES 9:50",
+        "MAT 27:50",
+        "TOB 2:7"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "lookup-01-2",
+      "query": "the shortest account of Jesus crying",
+      "origin": "development",
+      "family": "lookup",
+      "wordTop5Before": [
+        "MRK 5:7",
+        "LUK 23:46",
+        "JHN 12:11",
+        "GEN 21:11",
+        "1SA 4:14"
+      ],
+      "wordTop5After": [
+        "MRK 5:7",
+        "LUK 23:46",
+        "JHN 12:11",
+        "1SA 4:14",
+        "1SA 7:8"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "JESUS, THE CHRIST",
+        "BAR-JESUS",
+        "JESUI"
+      ],
+      "topicsAfter": [
+        "JESUS, THE CHRIST",
+        "BAR-JESUS"
+      ],
+      "meaningTop5Legacy": [
+        "JHN 11:35",
+        "JHN 7:37",
+        "LUK 8:28",
+        "MAT 27:46",
+        "LUK 19:3"
+      ],
+      "meaningTop5Full": [
+        "JHN 11:35",
+        "JHN 7:37",
+        "LUK 8:28",
+        "MAT 27:46",
+        "PSA 106:44"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "lookup-03-1",
+      "query": "the Lord is my shepherd",
+      "origin": "development",
+      "family": "lookup",
+      "wordTop5Before": [
+        "EZK 34:8",
+        "EZK 34:15",
+        "ACT 20:28",
+        "HEB 13:20",
+        "SIR 18:13"
+      ],
+      "wordTop5After": [
+        "SIR 18:13",
+        "EZK 34:8",
+        "EZK 34:15",
+        "ACT 20:28",
+        "HEB 13:20"
+      ],
+      "wordLabelsAfter": [
+        "all-words",
+        "all-words",
+        "all-words",
+        "all-words",
+        "all-words"
+      ],
+      "topicsBefore": [
+        "SHEPHERD",
+        "EUCHARIST (THE LORD'S SUPPER)",
+        "LORD",
+        "LORD'S PRAYER"
+      ],
+      "topicsAfter": [
+        "SHEPHERD",
+        "LORD",
+        "EUCHARIST (THE LORD'S SUPPER)",
+        "LORD'S PRAYER"
+      ],
+      "meaningTop5Legacy": [
+        "JHN 10:14",
+        "JHN 10:11",
+        "PSA 23:1",
+        "EZK 34:15",
+        "EZK 37:24"
+      ],
+      "meaningTop5Full": [
+        "HEB 13:20",
+        "JHN 10:14",
+        "JHN 10:11",
+        "JER 3:15",
+        "PSA 23:1"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "lookup-03-2",
+      "query": "I shall lack nothing",
+      "origin": "development",
+      "family": "lookup",
+      "wordTop5Before": [
+        "EXO 16:18",
+        "PSA 23:1",
+        "LUK 22:35",
+        "2CO 8:15",
+        "GEN 11:6"
+      ],
+      "wordTop5After": [
+        "PSA 23:1",
+        "LUK 22:35",
+        "EXO 16:18",
+        "2CO 8:15",
+        "GEN 18:28"
+      ],
+      "wordLabelsAfter": [
+        "phrase",
+        "all-words",
+        "all-words",
+        "all-words",
+        "some-words"
+      ],
+      "topicsBefore": [],
+      "topicsAfter": [],
+      "meaningTop5Legacy": [
+        "SIR 35:4",
+        "PSA 23:1",
+        "DEU 14:21",
+        "EXO 23:3",
+        "DEU 15:8"
+      ],
+      "meaningTop5Full": [
+        "SIR 35:4",
+        "PSA 23:1",
+        "DEU 14:21",
+        "EXO 23:3",
+        "DEU 15:8"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "lookup-05-1",
+      "query": "faith without works",
+      "origin": "development",
+      "family": "lookup",
+      "wordTop5Before": [
+        "JAS 2:18",
+        "ROM 3:3",
+        "ROM 3:27",
+        "ROM 3:28",
+        "ROM 4:19"
+      ],
+      "wordTop5After": [
+        "JAS 2:18",
+        "JAS 2:20",
+        "JAS 2:26",
+        "ROM 3:28",
+        "JAS 2:14"
+      ],
+      "wordLabelsAfter": [
+        "phrase",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "FAITH",
+        "WORKS",
+        "FAITHFULNESS",
+        "MASTER WORKMAN"
+      ],
+      "topicsAfter": [
+        "FAITH",
+        "WORKS",
+        "FIGHT OF FAITH",
+        "FAITHFULNESS"
+      ],
+      "meaningTop5Legacy": [
+        "JAS 2:17",
+        "JAS 2:14",
+        "HEB 11:1",
+        "JAS 2:22",
+        "JAS 2:18"
+      ],
+      "meaningTop5Full": [
+        "JAS 2:17",
+        "JAS 2:14",
+        "HEB 11:1",
+        "JAS 2:22",
+        "JAS 2:18"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "lookup-05-2",
+      "query": "show me your faith by your works",
+      "origin": "development",
+      "family": "lookup",
+      "wordTop5Before": [
+        "ROM 3:27",
+        "ROM 3:28",
+        "ROM 9:32",
+        "GAL 2:16",
+        "GAL 3:2"
+      ],
+      "wordTop5After": [
+        "JAS 2:18",
+        "JAS 2:20",
+        "JAS 2:26",
+        "ROM 3:28",
+        "JAS 2:14"
+      ],
+      "wordLabelsAfter": [
+        "all-words",
+        "all-words",
+        "all-words",
+        "all-words",
+        "all-words"
+      ],
+      "topicsBefore": [
+        "FAITH",
+        "WORKS",
+        "FAITHFULNESS",
+        "MASTER WORKMAN"
+      ],
+      "topicsAfter": [
+        "FAITH",
+        "WORKS",
+        "FIGHT OF FAITH",
+        "FAITHFULNESS"
+      ],
+      "meaningTop5Legacy": [
+        "JAS 2:18",
+        "JAS 2:22",
+        "JAS 2:20",
+        "PSA 73:28",
+        "ROM 4:5"
+      ],
+      "meaningTop5Full": [
+        "JAS 2:18",
+        "JAS 2:22",
+        "HEB 13:7",
+        "JAS 2:20",
+        "HEB 11:1"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "lookup-07-1",
+      "query": "the good Samaritan",
+      "origin": "development",
+      "family": "lookup",
+      "wordTop5Before": [
+        "GEN 1:4",
+        "GEN 1:10",
+        "GEN 1:12",
+        "GEN 1:18",
+        "GEN 1:21"
+      ],
+      "wordTop5After": [
+        "LUK 10:33",
+        "LUK 17:16",
+        "JHN 4:9",
+        "JHN 8:48",
+        "GEN 1:4"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "EVIL FOR GOOD",
+        "GOOD FOR EVIL",
+        "GOOD AND EVIL",
+        "GOOD NEWS"
+      ],
+      "topicsAfter": [
+        "EVIL FOR GOOD",
+        "GOOD FOR EVIL",
+        "GOOD AND EVIL",
+        "GOOD NEWS"
+      ],
+      "meaningTop5Legacy": [
+        "LUK 10:33",
+        "LUK 17:16",
+        "LUK 9:52",
+        "TOB 12:8",
+        "LUK 18:19"
+      ],
+      "meaningTop5Full": [
+        "JHN 4:9",
+        "LUK 10:33",
+        "LUK 17:16",
+        "JHN 4:40",
+        "JHN 4:39"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "lookup-07-2",
+      "query": "who is my neighbor",
+      "origin": "development",
+      "family": "lookup",
+      "wordTop5Before": [
+        "EXO 3:22",
+        "EXO 11:2",
+        "EXO 12:4",
+        "EXO 18:16",
+        "EXO 20:16"
+      ],
+      "wordTop5After": [
+        "LUK 10:29",
+        "EXO 3:22",
+        "EXO 11:2",
+        "EXO 12:4",
+        "EXO 18:16"
+      ],
+      "wordLabelsAfter": [
+        "phrase",
+        "all-words",
+        "all-words",
+        "all-words",
+        "all-words"
+      ],
+      "topicsBefore": [
+        "NEIGHBOR"
+      ],
+      "topicsAfter": [
+        "NEIGHBOR"
+      ],
+      "meaningTop5Legacy": [
+        "PRO 6:3",
+        "SIR 29:20",
+        "PRO 3:29",
+        "PRO 25:9",
+        "SIR 29:2"
+      ],
+      "meaningTop5Full": [
+        "PRO 6:3",
+        "SIR 29:20",
+        "PRO 3:29",
+        "MAT 22:39",
+        "PRO 25:9"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "feelings-01-1",
+      "query": "loneliness",
+      "origin": "development",
+      "family": "feelings",
+      "wordTop5Before": [],
+      "wordTop5After": [],
+      "wordLabelsAfter": [],
+      "topicsBefore": [],
+      "topicsAfter": [
+        "FRIENDSHIP"
+      ],
+      "meaningTop5Legacy": [
+        "SIR 31:4",
+        "JOB 7:16",
+        "2TI 3:3",
+        "PRO 19:4",
+        "PRO 5:17"
+      ],
+      "meaningTop5Full": [
+        "DEU 1:12",
+        "SIR 31:4",
+        "JOB 7:16",
+        "ESG 4:42",
+        "2MA 9:22"
+      ],
+      "experimentalExpansion": "loneliness. Related wording: alone, forsaken, friend, companionship.",
+      "meaningTop5Expanded": [
+        "2TI 3:3",
+        "SIR 31:4",
+        "SIR 6:16",
+        "PRO 27:6",
+        "ROM 1:31"
+      ]
+    },
+    {
+      "id": "feelings-01-2",
+      "query": "feeling abandoned by everyone",
+      "origin": "development",
+      "family": "feelings",
+      "wordTop5Before": [
+        "GEN 10:5",
+        "GEN 21:6",
+        "GEN 27:29",
+        "GEN 45:1",
+        "GEN 49:28"
+      ],
+      "wordTop5After": [
+        "HEB 4:15",
+        "ESG 5:1",
+        "SIR 22:19",
+        "3MA 3:3",
+        "3MA 4:4"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [],
+      "topicsAfter": [
+        "FRIENDSHIP"
+      ],
+      "meaningTop5Legacy": [
+        "JOB 19:14",
+        "PRO 13:19",
+        "ISA 1:7",
+        "SIR 31:4",
+        "2ES 9:18"
+      ],
+      "meaningTop5Full": [
+        "JOB 19:14",
+        "2MA 9:22",
+        "MAT 23:38",
+        "PRO 13:19",
+        "ISA 1:7"
+      ],
+      "experimentalExpansion": "feeling abandoned by everyone. Related wording: forsaken, comfort, friend.",
+      "meaningTop5Expanded": [
+        "1TH 4:18",
+        "1TH 5:14",
+        "2TI 3:3",
+        "SIR 31:4",
+        "JOB 6:14"
+      ]
+    },
+    {
+      "id": "feelings-03-1",
+      "query": "hope when afraid",
+      "origin": "development",
+      "family": "feelings",
+      "wordTop5Before": [
+        "SIR 34:14",
+        "GEN 3:10",
+        "GEN 15:1",
+        "GEN 18:15",
+        "GEN 19:30"
+      ],
+      "wordTop5After": [
+        "SIR 34:14",
+        "RUT 1:12",
+        "EZR 10:2",
+        "JOB 4:6",
+        "JOB 5:16"
+      ],
+      "wordLabelsAfter": [
+        "all-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "HOPE"
+      ],
+      "topicsAfter": [
+        "HOPE",
+        "FEAR",
+        "COURAGE"
+      ],
+      "meaningTop5Legacy": [
+        "SIR 34:14",
+        "PRO 3:25",
+        "PSA 56:3",
+        "PRO 23:18",
+        "PSA 119:74"
+      ],
+      "meaningTop5Full": [
+        "SIR 34:14",
+        "PRO 3:25",
+        "PSA 56:3",
+        "PRO 23:18",
+        "PSA 119:74"
+      ],
+      "experimentalExpansion": "hope when afraid. Related wording: fear, courage, trust.",
+      "meaningTop5Expanded": [
+        "SIR 34:14",
+        "WIS 17:12",
+        "PSA 119:74",
+        "SIR 34:13",
+        "SIR 40:2"
+      ]
+    },
+    {
+      "id": "feelings-03-2",
+      "query": "trust while feeling frightened",
+      "origin": "development",
+      "family": "feelings",
+      "wordTop5Before": [
+        "PSA 22:9",
+        "WIS 13:7",
+        "2ES 7:94",
+        "GEN 4:8",
+        "GEN 8:22"
+      ],
+      "wordTop5After": [
+        "PSA 22:9",
+        "WIS 13:7",
+        "2ES 7:94",
+        "JOB 18:20",
+        "ISA 21:4"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "TRUSTEE"
+      ],
+      "topicsAfter": [
+        "FEAR",
+        "COURAGE"
+      ],
+      "meaningTop5Legacy": [
+        "PSA 56:3",
+        "1PE 3:2",
+        "PSA 56:11",
+        "PRO 28:26",
+        "PSA 56:4"
+      ],
+      "meaningTop5Full": [
+        "PSA 56:3",
+        "1PE 3:2",
+        "PSA 56:11",
+        "PRO 28:26",
+        "2ES 12:5"
+      ],
+      "experimentalExpansion": "trust while feeling frightened. Related wording: fear, courage.",
+      "meaningTop5Expanded": [
+        "1PE 3:2",
+        "PSA 56:3",
+        "2ES 12:5",
+        "WIS 17:12",
+        "PRO 28:26"
+      ]
+    },
+    {
+      "id": "feelings-05-1",
+      "query": "anger at injustice",
+      "origin": "development",
+      "family": "feelings",
+      "wordTop5Before": [
+        "GEN 27:45",
+        "GEN 30:2",
+        "GEN 44:18",
+        "GEN 49:6",
+        "GEN 49:7"
+      ],
+      "wordTop5After": [
+        "LEV 19:15",
+        "JOB 5:16",
+        "JOB 6:29",
+        "JOB 6:30",
+        "PSA 58:2"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "ANGER",
+        "INJUSTICE"
+      ],
+      "topicsAfter": [
+        "ANGER",
+        "INJUSTICE",
+        "PATIENCE",
+        "JUSTICE"
+      ],
+      "meaningTop5Legacy": [
+        "PSA 58:2",
+        "PRO 13:23",
+        "JOB 5:16",
+        "JOB 6:30",
+        "ISA 57:17"
+      ],
+      "meaningTop5Full": [
+        "PSA 58:2",
+        "PRO 13:23",
+        "JOB 5:16",
+        "JOB 6:30",
+        "ISA 57:17"
+      ],
+      "experimentalExpansion": "anger at injustice. Related wording: wrath, patience, justice, oppression, judgment.",
+      "meaningTop5Expanded": [
+        "PSA 90:11",
+        "PRO 18:3",
+        "PRO 27:4",
+        "PRO 15:1",
+        "GAL 5:20"
+      ]
+    },
+    {
+      "id": "feelings-05-2",
+      "query": "frustration when the wicked prosper",
+      "origin": "development",
+      "family": "feelings",
+      "wordTop5Before": [
+        "JER 12:1",
+        "GEN 13:13",
+        "GEN 18:23",
+        "GEN 18:25",
+        "GEN 24:40"
+      ],
+      "wordTop5After": [
+        "JER 12:1",
+        "GEN 24:40",
+        "GEN 24:42",
+        "GEN 39:3",
+        "GEN 39:23"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "WICKED (PEOPLE)",
+        "PROSPERITY"
+      ],
+      "topicsAfter": [
+        "WICKED (PEOPLE)",
+        "ANGER",
+        "PATIENCE"
+      ],
+      "meaningTop5Legacy": [
+        "PRO 10:28",
+        "PRO 21:18",
+        "PSA 73:3",
+        "PRO 15:6",
+        "JOB 21:7"
+      ],
+      "meaningTop5Full": [
+        "PRO 10:28",
+        "PRO 21:18",
+        "PSA 73:3",
+        "PRO 15:6",
+        "2CO 8:2"
+      ],
+      "experimentalExpansion": "frustration when the wicked prosper. Related wording: wrath, patience, injustice.",
+      "meaningTop5Expanded": [
+        "PRO 11:23",
+        "PRO 21:18",
+        "PRO 10:28",
+        "PRO 27:4",
+        "PRO 18:3"
+      ]
+    },
+    {
+      "id": "paraphrase-01-1",
+      "query": "care for strangers",
+      "origin": "development",
+      "family": "paraphrase",
+      "wordTop5Before": [
+        "GEN 40:4",
+        "GEN 42:37",
+        "LEV 17:8",
+        "LEV 17:10",
+        "LEV 17:13"
+      ],
+      "wordTop5After": [
+        "GEN 40:4",
+        "GEN 42:37",
+        "NUM 1:50",
+        "1SA 19:2",
+        "2SA 18:3"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "STRANGERS",
+        "CARE",
+        "STRANGLED",
+        "BETH-CAR"
+      ],
+      "topicsAfter": [
+        "STRANGERS",
+        "CARE",
+        "BETH-CAR",
+        "HOSPITALITY"
+      ],
+      "meaningTop5Legacy": [
+        "PRO 5:17",
+        "SIR 8:18",
+        "PSA 44:26",
+        "JHN 10:5",
+        "HEB 13:2"
+      ],
+      "meaningTop5Full": [
+        "PRO 5:17",
+        "JOB 19:15",
+        "SIR 8:18",
+        "NUM 18:4",
+        "PSA 44:26"
+      ],
+      "experimentalExpansion": "care for strangers. Related wording: stranger, hospitality, welcome.",
+      "meaningTop5Expanded": [
+        "HEB 13:2",
+        "JOB 19:15",
+        "NUM 18:4",
+        "3JN 1:5",
+        "WIS 19:14"
+      ]
+    },
+    {
+      "id": "paraphrase-01-2",
+      "query": "welcoming unfamiliar guests",
+      "origin": "development",
+      "family": "paraphrase",
+      "wordTop5Before": [
+        "1KI 1:41",
+        "1KI 1:49",
+        "PRO 9:18",
+        "ZEP 1:7",
+        "MAT 22:10"
+      ],
+      "wordTop5After": [
+        "2MA 6:19",
+        "3MA 1:8",
+        "1KI 1:41",
+        "1KI 1:49",
+        "PRO 9:18"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "GUEST"
+      ],
+      "topicsAfter": [
+        "GUEST",
+        "HOSPITALITY",
+        "STRANGERS"
+      ],
+      "meaningTop5Legacy": [
+        "LUK 14:10",
+        "LUK 14:8",
+        "SIR 29:24",
+        "SIR 29:27",
+        "2JN 1:10"
+      ],
+      "meaningTop5Full": [
+        "HEB 13:2",
+        "NUM 18:4",
+        "WIS 19:14",
+        "MAT 10:12",
+        "NUM 4:39"
+      ],
+      "experimentalExpansion": "welcoming unfamiliar guests. Related wording: stranger, hospitality, welcome.",
+      "meaningTop5Expanded": [
+        "JOB 19:15",
+        "HEB 13:2",
+        "WIS 19:14",
+        "NUM 18:4",
+        "MAT 10:12"
+      ]
+    },
+    {
+      "id": "paraphrase-03-1",
+      "query": "do not worry about tomorrow",
+      "origin": "development",
+      "family": "paraphrase",
+      "wordTop5Before": [
+        "EXO 8:10",
+        "EXO 8:23",
+        "EXO 8:29",
+        "EXO 9:5",
+        "EXO 9:18"
+      ],
+      "wordTop5After": [
+        "EXO 8:29",
+        "EXO 9:18",
+        "1SA 20:5",
+        "2CH 20:17",
+        "1CO 15:32"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "CARE"
+      ],
+      "topicsAfter": [],
+      "meaningTop5Legacy": [
+        "MAT 6:34",
+        "PRO 27:1",
+        "DEU 28:66",
+        "MRK 13:33",
+        "PSA 4:8"
+      ],
+      "meaningTop5Full": [
+        "MAT 6:34",
+        "PRO 27:1",
+        "2ES 10:58",
+        "JAS 4:14",
+        "DEU 28:66"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "paraphrase-03-2",
+      "query": "anxiety about what the next day brings",
+      "origin": "development",
+      "family": "paraphrase",
+      "wordTop5Before": [
+        "GEN 19:34",
+        "EXO 9:6",
+        "EXO 18:13",
+        "EXO 32:6",
+        "EXO 32:30"
+      ],
+      "wordTop5After": [
+        "SIR 30:24",
+        "GEN 19:34",
+        "EXO 9:6",
+        "EXO 18:13",
+        "EXO 32:6"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "DAY",
+        "PREPARATION DAY",
+        "SABBATH DAY' S JOURNEY",
+        "CARE"
+      ],
+      "topicsAfter": [
+        "DAY",
+        "PREPARATION DAY",
+        "SABBATH DAY' S JOURNEY",
+        "CARE"
+      ],
+      "meaningTop5Legacy": [
+        "MAT 6:34",
+        "SIR 31:2",
+        "LUK 12:26",
+        "MAT 6:27",
+        "2ES 2:27"
+      ],
+      "meaningTop5Full": [
+        "MAT 6:34",
+        "2CO 11:28",
+        "SIR 31:2",
+        "LUK 12:26",
+        "MAT 6:27"
+      ],
+      "experimentalExpansion": "anxiety about what the next day brings. Related wording: worry, care, fear, trust.",
+      "meaningTop5Expanded": [
+        "MAT 6:34",
+        "SIR 40:2",
+        "SIR 1:12",
+        "2ES 2:27",
+        "2CO 11:28"
+      ]
+    },
+    {
+      "id": "competing-01-1",
+      "query": "Does faith guarantee an easy life?",
+      "origin": "development",
+      "family": "competing",
+      "wordTop5Before": [
+        "GAL 2:20",
+        "PHP 1:27",
+        "1TI 4:12",
+        "1TI 6:12",
+        "GEN 1:30"
+      ],
+      "wordTop5After": [
+        "GAL 2:20",
+        "PHP 1:27",
+        "1TI 4:12",
+        "1TI 6:12",
+        "HEB 7:22"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "FAITH",
+        "LIFE",
+        "FAITHFULNESS",
+        "SURETY (GUARANTEE)"
+      ],
+      "topicsAfter": [
+        "FAITH",
+        "LIFE",
+        "SURETY (GUARANTEE)",
+        "FIGHT OF FAITH"
+      ],
+      "meaningTop5Legacy": [
+        "JAS 2:14",
+        "HEB 11:1",
+        "JAS 2:17",
+        "ROM 10:17",
+        "JAS 2:22"
+      ],
+      "meaningTop5Full": [
+        "JAS 2:14",
+        "HEB 11:1",
+        "JAS 2:17",
+        "ROM 10:17",
+        "JAS 2:22"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "competing-01-2",
+      "query": "passages that challenge the claim that believers never suffer",
+      "origin": "development",
+      "family": "competing",
+      "wordTop5Before": [
+        "GEN 8:21",
+        "GEN 9:11",
+        "GEN 41:19",
+        "EXO 14:13",
+        "NUM 19:2"
+      ],
+      "wordTop5After": [
+        "ACT 5:14",
+        "1PE 1:21",
+        "JER 51:32",
+        "JDT 5:1",
+        "JDT 7:22"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "SUFFERING"
+      ],
+      "topicsAfter": [
+        "SUFFERING"
+      ],
+      "meaningTop5Legacy": [
+        "ACT 3:18",
+        "2ES 7:18",
+        "2CO 5:19",
+        "1TI 1:4",
+        "2TI 3:11"
+      ],
+      "meaningTop5Full": [
+        "ACT 3:18",
+        "2ES 7:18",
+        "2CO 5:19",
+        "1TI 1:4",
+        "2TI 3:11"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "competing-03-1",
+      "query": "Is wealth always a sign of righteousness?",
+      "origin": "development",
+      "family": "competing",
+      "wordTop5Before": [
+        "PSA 112:3",
+        "ROM 4:11",
+        "GEN 4:15",
+        "GEN 7:1",
+        "GEN 9:13"
+      ],
+      "wordTop5After": [
+        "PSA 112:3",
+        "ROM 4:11",
+        "GEN 15:14",
+        "GEN 31:1",
+        "GEN 34:29"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "RIGHTEOUS",
+        "RIGHTEOUSNESS",
+        "SELF-RIGHTEOUSNESS",
+        "SIGN"
+      ],
+      "topicsAfter": [
+        "RIGHTEOUSNESS",
+        "SELF-RIGHTEOUSNESS",
+        "SIGN",
+        "RIGHTEOUS"
+      ],
+      "meaningTop5Legacy": [
+        "PRO 11:4",
+        "SIR 13:24",
+        "WIS 8:5",
+        "PRO 13:22",
+        "SIR 30:16"
+      ],
+      "meaningTop5Full": [
+        "PRO 11:4",
+        "LUK 12:21",
+        "SIR 13:24",
+        "2CO 8:9",
+        "WIS 8:5"
+      ],
+      "experimentalExpansion": "Is wealth always a sign of righteousness?. Related wording: riches, possessions.",
+      "meaningTop5Expanded": [
+        "PRO 11:4",
+        "WIS 8:5",
+        "SIR 13:24",
+        "LUK 12:21",
+        "SIR 30:16"
+      ]
+    },
+    {
+      "id": "competing-03-2",
+      "query": "prosperity alongside warnings about riches",
+      "origin": "development",
+      "family": "competing",
+      "wordTop5Before": [
+        "PRO 8:18",
+        "GEN 31:16",
+        "EXO 20:23",
+        "DEU 23:6",
+        "DEU 28:11"
+      ],
+      "wordTop5After": [
+        "PRO 8:18",
+        "EZK 33:7",
+        "EXO 20:23",
+        "EZK 48:13",
+        "EZK 48:18"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "RICHES",
+        "RICH, THE",
+        "PROSPERITY"
+      ],
+      "topicsAfter": [
+        "RICHES",
+        "PROSPERITY",
+        "RICH, THE"
+      ],
+      "meaningTop5Legacy": [
+        "WIS 5:8",
+        "PSA 49:6",
+        "WIS 8:5",
+        "EZK 28:5",
+        "PRO 10:15"
+      ],
+      "meaningTop5Full": [
+        "WIS 5:8",
+        "PSA 49:6",
+        "WIS 8:5",
+        "EZK 28:5",
+        "PRO 10:15"
+      ],
+      "experimentalExpansion": "prosperity alongside warnings about riches. Related wording: wealth, possessions.",
+      "meaningTop5Expanded": [
+        "WIS 8:5",
+        "JOB 36:19",
+        "PSA 49:6",
+        "WIS 5:8",
+        "SIR 30:16"
+      ]
+    },
+    {
+      "id": "competing-05-1",
+      "query": "Should every instruction in a quoted speech be followed?",
+      "origin": "development",
+      "family": "competing",
+      "wordTop5Before": [
+        "DEU 11:6",
+        "1SA 25:13",
+        "2KI 17:15",
+        "2CH 13:11",
+        "EST 1:8"
+      ],
+      "wordTop5After": [
+        "SIR 4:24",
+        "SIR 33:4",
+        "2CH 13:11",
+        "2TI 3:16",
+        "3MA 2:17"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "INSTRUCTION",
+        "MILITARY INSTRUCTION",
+        "QUOTATIONS AND ALLUSIONS"
+      ],
+      "topicsAfter": [
+        "INSTRUCTION",
+        "MILITARY INSTRUCTION"
+      ],
+      "meaningTop5Legacy": [
+        "JOB 11:2",
+        "JOB 33:1",
+        "PSA 50:17",
+        "PRO 5:12",
+        "JOB 21:2"
+      ],
+      "meaningTop5Full": [
+        "JOB 11:2",
+        "JOB 33:1",
+        "PSA 50:17",
+        "PRO 5:12",
+        "JOB 21:2"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "competing-05-2",
+      "query": "distinguish an opponent speaking from the author teaching",
+      "origin": "development",
+      "family": "competing",
+      "wordTop5Before": [
+        "JHN 7:17",
+        "ACT 17:19",
+        "1CO 14:6",
+        "GEN 24:15",
+        "GEN 24:45"
+      ],
+      "wordTop5After": [
+        "JHN 7:17",
+        "ACT 17:19",
+        "1CO 14:6",
+        "2SA 2:16",
+        "HEB 2:10"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "SPEAKING",
+        "FALSE TEACHERS",
+        "TEACHERS"
+      ],
+      "topicsAfter": [
+        "SPEAKING",
+        "FALSE TEACHERS",
+        "TEACHERS"
+      ],
+      "meaningTop5Legacy": [
+        "SIR 37:19",
+        "LUK 11:45",
+        "TIT 1:9",
+        "MRK 12:32",
+        "LUK 20:39"
+      ],
+      "meaningTop5Full": [
+        "SIR 37:19",
+        "LUK 11:45",
+        "TIT 1:9",
+        "MAT 5:2",
+        "MRK 12:32"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "difficult-01-1",
+      "query": "compare love and fear",
+      "origin": "development",
+      "family": "difficult",
+      "wordTop5Before": [
+        "DEU 10:12",
+        "2TI 1:7",
+        "1PE 2:17",
+        "1JN 4:18",
+        "JUD 1:12"
+      ],
+      "wordTop5After": [
+        "DEU 10:12",
+        "2TI 1:7",
+        "1PE 2:17",
+        "1JN 4:18",
+        "JUD 1:12"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "LOVE",
+        "FEAR"
+      ],
+      "topicsAfter": [
+        "LOVE",
+        "FEAR"
+      ],
+      "meaningTop5Legacy": [
+        "1JN 4:18",
+        "SIR 40:27",
+        "2TI 1:7",
+        "WIS 17:12",
+        "SIR 25:11"
+      ],
+      "meaningTop5Full": [
+        "1JN 4:18",
+        "SIR 40:27",
+        "2TI 1:7",
+        "WIS 17:12",
+        "SIR 25:11"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "difficult-01-2",
+      "query": "root of all evil",
+      "origin": "development",
+      "family": "difficult",
+      "wordTop5Before": [
+        "PRO 12:12",
+        "1TI 6:10",
+        "2ES 8:53",
+        "GEN 2:9",
+        "GEN 2:17"
+      ],
+      "wordTop5After": [
+        "2ES 8:53",
+        "1TI 6:10",
+        "PRO 12:12",
+        "DEU 29:18",
+        "JDG 5:14"
+      ],
+      "wordLabelsAfter": [
+        "all-words",
+        "all-words",
+        "all-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "EVIL FOR GOOD",
+        "GOOD FOR EVIL",
+        "EVIL",
+        "GOOD AND EVIL"
+      ],
+      "topicsAfter": [
+        "EVIL FOR GOOD",
+        "GOOD FOR EVIL",
+        "EVIL",
+        "GOOD AND EVIL"
+      ],
+      "meaningTop5Legacy": [
+        "2ES 8:53",
+        "PRO 12:12",
+        "PRO 2:14",
+        "SIR 39:27",
+        "PRO 14:19"
+      ],
+      "meaningTop5Full": [
+        "2ES 8:53",
+        "PRO 12:12",
+        "PRO 2:14",
+        "1TH 5:22",
+        "1TH 5:15"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "difficult-03-1",
+      "query": "Does a verse diagnose clinical depression?",
+      "origin": "development",
+      "family": "difficult",
+      "wordTop5Before": [],
+      "wordTop5After": [],
+      "wordLabelsAfter": [],
+      "topicsBefore": [],
+      "topicsAfter": [],
+      "meaningTop5Legacy": [
+        "PSA 88:1",
+        "1TH 3:4",
+        "4MA 18:15",
+        "JHN 16:20",
+        "PSA 32:1"
+      ],
+      "meaningTop5Full": [
+        "PSA 88:1",
+        "2ES 9:41",
+        "PRO 15:22",
+        "1TH 3:4",
+        "4MA 18:15"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "difficult-03-2",
+      "query": "distinguish ancient lament from a modern clinical diagnosis",
+      "origin": "development",
+      "family": "difficult",
+      "wordTop5Before": [
+        "GEN 49:26",
+        "DEU 33:15",
+        "JDG 5:21",
+        "2KI 19:25",
+        "1CH 4:22"
+      ],
+      "wordTop5After": [
+        "SIR 38:14",
+        "ISA 3:26",
+        "ISA 19:8",
+        "JER 4:8",
+        "JER 9:10"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "ANCIENT OF DAYS",
+        "LAMENTATIONS"
+      ],
+      "topicsAfter": [
+        "ANCIENT OF DAYS"
+      ],
+      "meaningTop5Legacy": [
+        "PRO 26:7",
+        "LEV 21:18",
+        "LEV 13:20",
+        "SIR 10:10",
+        "LEV 13:11"
+      ],
+      "meaningTop5Full": [
+        "PRO 26:7",
+        "LEV 21:18",
+        "LEV 13:20",
+        "SIR 10:10",
+        "ACT 8:7"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "difficult-05-1",
+      "query": "water",
+      "origin": "development",
+      "family": "difficult",
+      "wordTop5Before": [
+        "GEN 2:10",
+        "GEN 16:7",
+        "GEN 18:4",
+        "GEN 21:14",
+        "GEN 21:15"
+      ],
+      "wordTop5After": [
+        "GEN 2:10",
+        "GEN 16:7",
+        "GEN 18:4",
+        "GEN 21:14",
+        "GEN 21:15"
+      ],
+      "wordLabelsAfter": [
+        "all-words",
+        "all-words",
+        "all-words",
+        "all-words",
+        "all-words"
+      ],
+      "topicsBefore": [
+        "WATER",
+        "BITTER WATER"
+      ],
+      "topicsAfter": [
+        "WATER",
+        "BITTER WATER"
+      ],
+      "meaningTop5Legacy": [
+        "SIR 39:17",
+        "EZK 32:6",
+        "JOB 36:27",
+        "ISA 37:25",
+        "JOB 5:10"
+      ],
+      "meaningTop5Full": [
+        "LAM 5:4",
+        "JHN 4:11",
+        "SIR 39:17",
+        "JHN 4:14",
+        "EZK 32:6"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "difficult-05-2",
+      "query": "literal water and water used as a metaphor",
+      "origin": "development",
+      "family": "difficult",
+      "wordTop5Before": [
+        "JDT 10:3",
+        "GEN 2:10",
+        "GEN 11:3",
+        "GEN 16:7",
+        "GEN 18:4"
+      ],
+      "wordTop5After": [
+        "JDT 10:3",
+        "GEN 11:3",
+        "GEN 31:15",
+        "GEN 50:3",
+        "EXO 33:7"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "WATER",
+        "BITTER WATER",
+        "METAPHOR"
+      ],
+      "topicsAfter": [
+        "WATER",
+        "BITTER WATER",
+        "METAPHOR"
+      ],
+      "meaningTop5Legacy": [
+        "SIR 24:31",
+        "SIR 39:17",
+        "2ES 6:48",
+        "GEN 24:43",
+        "GEN 1:6"
+      ],
+      "meaningTop5Full": [
+        "SIR 24:31",
+        "SIR 39:17",
+        "PSA 77:16",
+        "JHN 4:14",
+        "ISA 44:27"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "reported-1",
+      "query": "light of the world",
+      "origin": "reported",
+      "family": "reported diagnostic",
+      "wordTop5Before": [
+        "JOB 18:18",
+        "MAT 5:14",
+        "LUK 16:8",
+        "JHN 1:9",
+        "JHN 3:19"
+      ],
+      "wordTop5After": [
+        "JHN 9:5",
+        "MAT 5:14",
+        "JHN 8:12",
+        "JHN 11:9",
+        "JHN 12:46"
+      ],
+      "wordLabelsAfter": [
+        "phrase",
+        "phrase",
+        "phrase",
+        "all-words",
+        "all-words"
+      ],
+      "topicsBefore": [
+        "WORLDLINESS",
+        "LIGHT",
+        "AMUSEMENTS AND WORLDLY PLEASURES",
+        "LIGHTNING"
+      ],
+      "topicsAfter": [
+        "LIGHT"
+      ],
+      "meaningTop5Legacy": [
+        "JHN 9:5",
+        "JHN 1:9",
+        "2CO 4:6",
+        "PSA 36:9",
+        "WIS 17:20"
+      ],
+      "meaningTop5Full": [
+        "JHN 9:5",
+        "JHN 1:9",
+        "2CO 4:6",
+        "PSA 36:9",
+        "WIS 17:20"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "reported-2",
+      "query": "love your enemies",
+      "origin": "reported",
+      "family": "reported diagnostic",
+      "wordTop5Before": [
+        "JDG 5:31",
+        "PSA 18:1",
+        "MAT 5:44",
+        "LUK 6:27",
+        "LUK 6:35"
+      ],
+      "wordTop5After": [
+        "LUK 6:27",
+        "MAT 5:44",
+        "LUK 6:35",
+        "JDG 5:31",
+        "PSA 18:1"
+      ],
+      "wordLabelsAfter": [
+        "phrase",
+        "phrase",
+        "phrase",
+        "all-words",
+        "all-words"
+      ],
+      "topicsBefore": [
+        "LOVE",
+        "ENEMY"
+      ],
+      "topicsAfter": [
+        "LOVE",
+        "ENEMY"
+      ],
+      "meaningTop5Legacy": [
+        "PSA 25:19",
+        "PSA 38:19",
+        "PSA 139:22",
+        "PSA 66:3",
+        "SIR 6:13"
+      ],
+      "meaningTop5Full": [
+        "LUK 6:27",
+        "PSA 25:19",
+        "PSA 38:19",
+        "PSA 139:22",
+        "PSA 66:3"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "reported-3",
+      "query": "do not be afraid",
+      "origin": "reported",
+      "family": "reported diagnostic",
+      "wordTop5Before": [
+        "GEN 3:10",
+        "GEN 15:1",
+        "GEN 18:15",
+        "GEN 19:30",
+        "GEN 21:17"
+      ],
+      "wordTop5After": [
+        "JDG 6:23",
+        "MAT 10:26",
+        "DEU 31:8",
+        "DEU 31:6",
+        "MAT 10:28"
+      ],
+      "wordLabelsAfter": [
+        "phrase-form",
+        "phrase-form",
+        "phrase-form",
+        "phrase-form",
+        "phrase-form"
+      ],
+      "topicsBefore": [],
+      "topicsAfter": [],
+      "meaningTop5Legacy": [
+        "PRO 3:25",
+        "SIR 41:3",
+        "ISA 44:8",
+        "2ES 16:75",
+        "PSA 3:6"
+      ],
+      "meaningTop5Full": [
+        "DEU 1:29",
+        "PRO 3:25",
+        "LAM 3:57",
+        "DEU 7:21",
+        "SIR 41:3"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "reported-4",
+      "query": "God will not abandon me",
+      "origin": "reported",
+      "family": "reported diagnostic",
+      "wordTop5Before": [
+        "PSA 27:9",
+        "GEN 1:1",
+        "GEN 1:3",
+        "GEN 1:4",
+        "GEN 1:5"
+      ],
+      "wordTop5After": [
+        "PSA 27:9",
+        "GEN 2:5",
+        "GEN 2:18",
+        "GEN 3:1",
+        "GEN 3:3"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "GOD",
+        "WORD OF GOD",
+        "GRACE OF GOD",
+        "GLORIFYING GOD"
+      ],
+      "topicsAfter": [
+        "GOD",
+        "WORD OF GOD",
+        "GRACE OF GOD",
+        "GLORIFYING GOD"
+      ],
+      "meaningTop5Legacy": [
+        "PSA 52:5",
+        "HEB 3:12",
+        "PSA 71:11",
+        "PSA 18:32",
+        "PSA 27:9"
+      ],
+      "meaningTop5Full": [
+        "PSA 52:5",
+        "GEN 31:42",
+        "HEB 3:12",
+        "PSA 71:11",
+        "JDG 10:13"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "reported-5",
+      "query": "not peace but a sword",
+      "origin": "reported",
+      "family": "reported diagnostic",
+      "wordTop5Before": [
+        "LEV 26:6",
+        "JER 4:10",
+        "JER 12:12",
+        "JER 14:13",
+        "MAT 10:34"
+      ],
+      "wordTop5After": [
+        "MAT 10:34",
+        "JER 14:13",
+        "JER 4:10",
+        "REV 6:4",
+        "LEV 26:6"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "all-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "PEACE",
+        "SWORD",
+        "PEACE OFFERINGS",
+        "PEACOCK"
+      ],
+      "topicsAfter": [
+        "PEACE",
+        "SWORD",
+        "PEACE OFFERINGS"
+      ],
+      "meaningTop5Legacy": [
+        "ISA 57:21",
+        "PSA 120:7",
+        "DEU 20:12",
+        "JAS 3:18",
+        "EPH 6:23"
+      ],
+      "meaningTop5Full": [
+        "MAT 10:34",
+        "REV 6:4",
+        "ISA 57:21",
+        "PSA 120:7",
+        "DEU 20:12"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "reported-6",
+      "query": "Should I hate my enemies?",
+      "origin": "reported",
+      "family": "reported diagnostic",
+      "wordTop5Before": [
+        "LEV 26:17",
+        "NUM 10:35",
+        "DEU 30:7",
+        "JDG 14:16",
+        "2SA 22:41"
+      ],
+      "wordTop5After": [
+        "LEV 26:17",
+        "NUM 10:35",
+        "DEU 30:7",
+        "2SA 22:41",
+        "PSA 18:40"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "ENEMY"
+      ],
+      "topicsAfter": [
+        "ENEMY"
+      ],
+      "meaningTop5Legacy": [
+        "PSA 38:19",
+        "PSA 139:22",
+        "PSA 25:19",
+        "PSA 69:4",
+        "PSA 18:40"
+      ],
+      "meaningTop5Full": [
+        "PSA 38:19",
+        "PSA 139:22",
+        "PSA 25:19",
+        "PSA 69:4",
+        "PSA 18:40"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "reported-7",
+      "query": "quantum computing",
+      "origin": "reported",
+      "family": "reported diagnostic",
+      "wordTop5Before": [],
+      "wordTop5After": [],
+      "wordLabelsAfter": [],
+      "topicsBefore": [],
+      "topicsAfter": [],
+      "meaningTop5Legacy": [
+        "1CH 28:19",
+        "PSA 26:1",
+        "JOB 37:16",
+        "2SA 24:12",
+        "1CH 21:10"
+      ],
+      "meaningTop5Full": [
+        "WIS 7:19",
+        "1CH 28:19",
+        "ACT 18:4",
+        "PSA 26:1",
+        "JOB 37:16"
+      ],
+      "experimentalExpansion": null,
+      "meaningTop5Expanded": []
+    },
+    {
+      "id": "reported-8",
+      "query": "I feel isolated and need a friend",
+      "origin": "reported",
+      "family": "reported diagnostic",
+      "wordTop5Before": [
+        "GEN 26:26",
+        "GEN 27:21",
+        "GEN 38:12",
+        "GEN 38:20",
+        "EXO 33:11"
+      ],
+      "wordTop5After": [
+        "1MA 12:36",
+        "GEN 27:21",
+        "JDG 16:26",
+        "PSA 58:9",
+        "PSA 115:7"
+      ],
+      "wordLabelsAfter": [
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words",
+        "some-words"
+      ],
+      "topicsBefore": [
+        "FRIENDSHIP",
+        "FRIENDS",
+        "NEEDLE"
+      ],
+      "topicsAfter": [
+        "FRIENDS",
+        "FRIENDSHIP"
+      ],
+      "meaningTop5Legacy": [
+        "PRO 5:17",
+        "SIR 6:13",
+        "SIR 6:7",
+        "JOB 19:14",
+        "PSA 86:10"
+      ],
+      "meaningTop5Full": [
+        "PRO 5:17",
+        "DEU 1:12",
+        "SIR 6:13",
+        "SIR 6:7",
+        "JOB 19:14"
+      ],
+      "experimentalExpansion": "I feel isolated and need a friend. Related wording: alone, forsaken, companionship.",
+      "meaningTop5Expanded": [
+        "DEU 1:12",
+        "PRO 5:17",
+        "ESG 4:42",
+        "SIR 40:23",
+        "PSA 86:10"
+      ]
+    }
+  ]
+}

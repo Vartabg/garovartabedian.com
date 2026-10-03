@@ -1,0 +1,344 @@
+{
+  "book": "GAL",
+  "bookName": "Galatians",
+  "oneLine": "Paul's angriest letter — written to assemblies he planted, defending one gospel against a rival message that told Gentile believers they needed more than Christ.",
+  "orient": "Galatians is a real letter written under real conflict, and it does not warm up slowly. Paul skips the thanksgiving ancient letters usually carried, calls the readers deserters in the first paragraph, and spends most of the letter arguing that Gentiles who belong to Christ need nothing added — not circumcision, not the law of Moses, nothing. The argument runs through Paul's own story, the promise to Abraham, and the work of the Spirit, and it closes with the most sustained writing on freedom in the letters. In the hosted World English Bible it runs about 3,100 words — a half hour of reading — and the temperature never fully drops.",
+  "whereYouAre": "Paul writes to assemblies in Galatia that he visited on his first journey recorded in Acts, though which Galatia is a live question (see the debates below). Gentiles there had come to Christ through his message. After he left, other teachers arrived with a different message: believing in Jesus is right, but to belong fully to God's people you must also keep the law — starting with circumcision. Paul hears they have also pointed at his authority: he is not one of the original apostles, so his gospel is secondhand and watered down. That is the situation the letter answers. The assembly met in the Roman province of Galatia in the middle of the first century, in a world where the Jerusalem assembly led by James, Peter, and John was the obvious center of gravity for anyone claiming to preach the God of Israel.",
+  "facts": {
+    "writtenBy": "Paul, who names himself in the first line and stakes the whole letter on his authority — 'not from men, nor through man, but through Jesus Christ, and God the Father, who raised him from the dead' (1:1). Unlike Romans, no scribe is named, and the letter ends with Paul's own handwriting (6:11).",
+    "writtenWhen": "Most scholarship places it in the middle of the first century, roughly AD 48–55. The exact year depends on which Galatia it was sent to and which visit to Jerusalem Paul describes in chapter 2 — the two questions are linked (see the debates below).",
+    "writtenFor": "The assemblies of Galatia — Gentile believers in Christ, the very people the rival teachers were telling to add circumcision and law-keeping to what Paul had preached to them.",
+    "place": "Sent to Galatia, probably written from somewhere on Paul's travels. The letter itself does not name a city of writing.",
+    "covers": "Not a narrative span. It opens with the claim that there is one gospel and a curse on any other; rehearses Paul's commission and the Jerusalem meetings; retells the Antioch confrontation with Peter; argues from Abraham and the promise what the law was for and when it ends; then turns to freedom, the Spirit, and each other's burdens.",
+    "size": "6 chapters, 149 verses, about 3,100 words in the hosted World English Bible. The shortest sustained argument Paul made about the law, and about a third the length of Romans, which returns to the same questions with more room."
+  },
+  "language": {
+    "writtenIn": "Koine Greek, dictated or written at speed by a man reacting to news he considered an emergency. The Greek is forceful, compressed, and at points unpolished — the sentences pile up and some long stretches (2:15-21, 3:6-14) read like arguments made in person, flattened onto papyrus.",
+    "register": "Compared with Romans, Galatians is speech transcribed under strain. Paul interrupts his own sentences, asks questions the readers must answer, and uses the rhetorical questions and direct address of a person standing in front of people he loves and is losing. The tone is the meaning: an apostle using every instrument of persuasion on assemblies being persuaded away.",
+    "spokenWorld": "The first audiences heard this letter read aloud in Greek, in assembly. It is written for communal hearing — 'O foolish Galatians' (3:1) is said to a room, not to a private reader — and several of its moves only land at full volume, the way an argument among the assembly would.",
+    "readerSignal": "Paul quotes the Greek Old Testament repeatedly as the voice that settles things — 'The righteous will live by faith' (3:11, from Habakkuk 2:4), 'Rejoice, you barren who don't give birth' (4:27, from Isaiah 54:1). Scripture is not decoration here; it is the argument. That tells you the letter assumes hearers who will accept the Scriptures as shared ground, even though most of them were Gentiles new to them.",
+    "englishLayer": "This site hosts the World English Bible, a modern English translation of the Greek text. Where English says 'gospel,' the hosted WEB says 'Good News' — the same Greek word (euangelion) behind both. Word counts in this briefing describe the hosted English unless the Greek is checked: one English word can stand for several Greek words and one Greek word can come out several ways in English.",
+    "textualHistory": [
+      {
+        "label": "The letter Paul sent",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Galatians identifies Paul as its author in 1:1 and adds a closing in his own hand (6:11), the mark of an ancient author authenticating a dictated letter.",
+        "sourceIds": [
+          "usccb-galatians",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "The narrated world of the letter",
+        "language": "Greek in a multilingual province",
+        "role": "section",
+        "description": "The events Paul retells — Damascus, Arabia, Jerusalem, Antioch — happened in an Aramaic- and Greek-speaking world, but the letter gives them only in Greek. The language of each original conversation cannot be recovered from the translation.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "The edition on this site",
+        "language": "Modern English (World English Bible)",
+        "role": "translation",
+        "description": "The displayed English is a translation of the Greek. Its renderings — 'Good News' for euangelion, 'tutor' for paidagōgos, 'faith in Jesus Christ' for pistis Christou — are choices this edition made where the Greek allows discussion.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "euangelion: the 'Good News' under attack",
+        "original": "εὐαγγέλιον — euangelion — 'good news, gospel'",
+        "explanation": "The hosted WEB renders euangelion as 'Good News,' and it appears 13 times in this short letter — the word Paul's whole defense hangs on. In 1:6-9 a 'different good news' is not a second message but a distortion: any version of the message that adds requirements to Christ is, for Paul, no good news at all, and the one announcing it is 'cursed.' The repetition in chapters 1–2 is a claim about the word itself: there is one, it was given once, and it does not have editions.",
+        "translationNote": "English Bibles variously render euangelion as 'gospel,' 'good news,' or leave it as 'gospel' in titles. The meaning does not shift, but the count does: where the hosted text says 'Good News,' other English editions will say 'gospel,' and a reader comparing translations should expect that.",
+        "caution": "The word euangelion had public uses in Paul's world — announcements of an emperor's accession were called 'good news' — and some readers hear deliberate anti-imperial contrast in Paul's usage. That is an available resonance, not something the letter states, so treat it as an interpretation rather than a fact.",
+        "refs": [
+          "1:6",
+          "1:7",
+          "1:8",
+          "1:9",
+          "1:11",
+          "2:2",
+          "2:7",
+          "2:14"
+        ],
+        "sourceIds": [
+          "usccb-galatians",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "'Works of the law' — Paul's repeated target",
+        "original": "ἔργων νόμου — ergōn nomou — 'works of law'",
+        "explanation": "Six times the letter contrasts being justified 'through faith in Christ' with being justified by 'works of the law' (2:16; 3:2, 5, 10). In the letter's own definition, the phrase circles circumcision and the law of Moses as the boundary markers being demanded of Gentiles. Paul's argument is not that doing right is worthless — chapter 5 and 6 are full of commands — but that no keeping of the law puts a person right with God, and that demanding law-keeping as the entry price tells Christ's death was not enough.",
+        "translationNote": "The hosted WEB keeps the phrase consistent as 'works of the law,' which lets a reader see it is one repeated idea. Translations that vary the wording lose the drumbeat.",
+        "caution": "What Paul includes under 'works of the law' is argued over. Older readings took it broadly as human moral effort in general; newer readings take it more specifically as the boundary markers — circumcision, food laws, calendar — that marked out Jews as God's people. The letter supports both the boundary-marker usage (2:3-14, 4:10) and the wider claim that no law-keeping justifies (3:21), so state the disagreement rather than flattening it.",
+        "refs": [
+          "2:16",
+          "3:2",
+          "3:5",
+          "3:10",
+          "3:21"
+        ],
+        "sourceIds": [
+          "usccb-galatians",
+          "cambridge-pistis"
+        ]
+      },
+      {
+        "title": "pistis Christou: 'faith in Christ' or the faith(fulness) of Christ?",
+        "original": "πίστις Χριστοῦ — pistis Christou — 'faith of/in Christ'",
+        "explanation": "At 2:16 and 3:22 the Greek says pistis Christou — a possessive form scholars have argued over for a generation. The hosted WEB translates it 'faith in Jesus Christ,' taking the Greek as faith directed toward Christ. Many scholars take it instead as Christ's own faith or faithfulness — the faithfulness of Christ is what justifies. The letter works either way at the surface, but the choice decides whether the emphasis falls on the believer's act of trusting or on Christ's act of remaining faithful.",
+        "translationNote": "This is a real translation choice the reader can see: the English 'faith in Christ' is one option among two live scholarly readings of the same two Greek words. Other English editions make the same choice the hosted WEB does; some annotations present both.",
+        "caution": "The debate is grammatical as much as theological, and it is not settled. Present both readings when the phrase comes up; do not let the English settle the question by itself.",
+        "refs": [
+          "2:16",
+          "3:22"
+        ],
+        "sourceIds": [
+          "cambridge-pistis",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "paidagōgos: the 'tutor' in 3:24",
+        "original": "παιδαγωγός — paidagōgos — 'attendant, guide, custodian'",
+        "explanation": "Paul says the law 'has become our tutor to bring us to Christ' (3:24). The paidagōgos in a Greek household was not a schoolteacher but the slave who walked a boy to school and watched him — discipline and escort, not instruction. The image is of a temporary custodian with authority over a minor until the heir comes of age, which is exactly the argument of 3:23–4:7.",
+        "translationNote": "The hosted WEB's 'tutor' is one traditional English choice; other translations say 'guardian,' 'custodian,' or 'disciplinarian,' and newer translations tend toward 'guardian' precisely because 'tutor' suggests school-teaching to modern ears.",
+        "caution": "Do not read 3:24 as the law being bad in itself. The point of the image is duration: the custodian was for the period of childhood, honored and obeyed until the appointed time, and set aside by the coming of age — and Paul applies that to the law's period before Christ.",
+        "refs": [
+          "3:24",
+          "3:25",
+          "4:1",
+          "4:2"
+        ],
+        "sourceIds": [
+          "usccb-galatians",
+          "hosted-web"
+        ]
+      }
+    ],
+    "examplesHeading": "Lines where the hosted English is doing quiet work",
+    "examples": [
+      {
+        "ref": "3:1",
+        "form": "ō anoētoi Galatai",
+        "meaning": "'O foolish Galatians' — the bluntest opening of a section in Paul's letters",
+        "why": "Paul says their desertion has a bewitcher to blame ('who has bewitched you'), but the address itself is not insult for its own sake: the next sentence says Christ was 'openly portrayed' before their eyes as crucified. They saw the message's content; the foolishness is turning from what they saw.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "2:20",
+        "form": "Christō synestaurōmai",
+        "meaning": "'I have been crucified with Christ' — the letter's most personal line",
+        "why": "In the middle of the public rebuke of Peter, Paul suddenly speaks of himself: crucified with Christ, no longer he who lives, Christ living in him. The hosted English 'faith in the Son of God, who loved me and gave himself up for me' carries the same pistis Christou choice noted above — and the sudden 'me' explains why this verse became one of the most-quoted lines in the letter: the argument about law and standing collapses into a person.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "6:11",
+        "form": "ide posō hymin grammasin egrapsa tē emē cheiri",
+        "meaning": "'See with what large letters I write to you with my own hand'",
+        "why": "Paul takes the pen from the scribe for the letter's close. Whether 'large letters' points to bold capitals, poor eyesight (see 4:15, 'you would have plucked out your eyes and given them to me'), or emphasis is argued; what is not argued is the function — the author's own hand authenticates everything above it.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "5:12",
+        "form": "opheleon kai apokopsontai",
+        "meaning": "'I wish that those who disturb you would even cut themselves off'",
+        "why": "A line translators have handled with care for centuries. Paul makes a sharp pun on circumcision; the hosted WEB carries it with the verb 'cut off,' and the edge of the sarcasm is the point — the agitation is serious enough that the rhetoric turns bitter.",
+        "sourceIds": [
+          "hosted-web"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Ancient letter written as a courtroom of one — rebuke, defense, appeal, warning, appeal",
+    "how": "Read it as one argument in motion, not as a theology in chapters. Watch for the ancient letter parts used with intent: the thanksgiving Paul skips (the silence is the signal), the narrative where Paul tells his own story as evidence (1–2), the Scripture argument where Abraham settles it (3–4), the exhortation where freedom becomes practice (5–6). Notice how many sentences are questions — Paul argues by cross-examination, and the reader is the one on the stand."
+  },
+  "cast": [
+    {
+      "name": "Paul",
+      "who": "Apostle 'not from men, nor through man' (1:1) — the letter's author, prosecutor, and chief witness, telling his own story as the argument."
+    },
+    {
+      "name": "The agitators",
+      "who": "Unnamed teachers who arrived after Paul — the 'some who trouble you' (1:7; 5:10, 12). They preach Christ plus circumcision plus calendar (4:10). The letter never lets them speak, so their message has to be reconstructed from Paul's answers to it."
+    },
+    {
+      "name": "Peter / Cephas",
+      "who": "The apostle Paul confronts 'before them all' at Antioch (2:11-14) for withdrawing from eating with Gentiles when 'certain ones from James' arrived. The story is Paul's exhibit A that even an apostle can be pressured into acting against the gospel."
+    },
+    {
+      "name": "Barnabas",
+      "who": "Paul's fellow missionary, caught up in the withdrawal at Antioch (2:13). Named without blame; the sting is that even he 'was carried away.'"
+    },
+    {
+      "name": "Titus",
+      "who": "The Greek believer Paul took to Jerusalem (2:1-3) as a test case — and who was not compelled to be circumcised. A person carrying the whole argument in a single fact."
+    },
+    {
+      "name": "James, Peter, and John",
+      "who": "The 'pillars' in Jerusalem (2:9) who gave Paul and Barnabas the right hand of fellowship — the acknowledged leaders whose reception Paul reports as evidence, not permission."
+    },
+    {
+      "name": "Abraham",
+      "who": "The argument's patriarch. Both sides claimed him; Paul rereads Genesis to show the promise came before circumcision and law, and includes Gentiles by promise (3:6-9, 16-18)."
+    },
+    {
+      "name": "Hagar and Sarah",
+      "who": "The two women of Genesis Paul reads 'by way of allegory' (4:21-31) as two covenants — slavery and freedom. The boldest interpretive move in the letter, and a place to read slowly rather than literally."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "No other gospel — Paul's commission",
+      "chapters": "1",
+      "note": "The greeting with no thanksgiving; the curse on other gospels (1:6-9); then Paul's own story — persecutor, called by revelation, unknown to the Jerusalem apostles for years (1:11-24)."
+    },
+    {
+      "heading": "Two meetings and one confrontation",
+      "chapters": "2",
+      "note": "Jerusalem fourteen years later with Titus uncircumcised as the case in point (2:1-10); then the Antioch incident — Peter's withdrawal, and Paul's public rebuke that turns into the letter's thesis (2:14-21): 'if righteousness is through the law, then Christ died for nothing.'"
+    },
+    {
+      "heading": "The promise before the law — Abraham, faith, and what the law was for",
+      "chapters": "3–4",
+      "note": "The Scripture argument: Abraham believed before circumcision (3:6-9); those of faith are his children; the law came 430 years after the promise and cannot annul it (3:17); the law was the custodian until Christ (3:24-29); the heir comes of age (4:1-7); a warning about turning back to 'weak and miserable elements' (4:8-11); the Hagar-Sarah allegory (4:21-31)."
+    },
+    {
+      "heading": "Freedom in practice — the Spirit against the flesh",
+      "chapters": "5–6",
+      "note": "Freedom proclaimed and guarded (5:1-12); the Spirit's lead against the flesh's works (5:13-26) — the fruit list a reader can recite; then the letter's close: bear each other's burdens, sow to the Spirit, boast only in the cross, and Paul's own hand (6:11-18)."
+    }
+  ],
+  "purpose": "Galatians exists because a message had reached Paul that Christ is not enough. The letter's claim is the reverse: anything added to Christ for standing before God subtracts from Christ's death (2:21). Paul defends his commission to prove the gospel is God's and not his own editing (1), then argues from Abraham that God's promise made one mixed family by faith long before the law marked boundaries (3–4), then turns belief into practice — freedom led by the Spirit, not license and not law (5–6). It is the letter most single-mindedly about one question: what makes a Gentile right with God.",
+  "snags": [
+    {
+      "snag": "The letter sounds angry from the first paragraph — where is the love?",
+      "help": "It is there, just wearing work clothes. Paul skips the thanksgiving and calls the readers deserters precisely because the stakes are, in his view, the gospel itself. The same letter says 'you are all children of God, through faith' (3:26), calls them 'little children, of whom I am again in labor until Christ is formed in you' (4:19), and closes 'my family' (6:10) — the warmth is real; the emergency is more real."
+    },
+    {
+      "snag": "'Cursed' — did Paul just curse people?",
+      "help": "The word at 1:8-9 is anathema — devoted to destruction. Paul applies it to 'we, or an angel from heaven' preaching another gospel, himself included. It is a deliberately extreme boundary marker: the message matters more than the messenger, whoever the messenger is. Readers differ on how literally to weigh the word today; the letter's own point is the seriousness of altering the message."
+    },
+    {
+      "snag": "Does Galatians say the law was bad?",
+      "help": "No — and this is worth getting exactly right. Paul asks 'Is the law against the promises of God? Certainly not!' (3:21). The law was 'holy and just' in Paul's words elsewhere; here it is the custodian (3:24) that watched Israel until the heir came of age. Its problem is capacity, not character: it cannot justify (2:16), and it cannot outrun the promise that came first (3:17)."
+    },
+    {
+      "snag": "3:28 — 'neither Jew nor Greek... male and female' — what does that cover?",
+      "help": "In the letter's own flow, 3:28 is about who belongs to Abraham's family by promise: 'you are all one in Christ Jesus.' The three pairs name real divisions of the ancient world. Readers differ on how far to carry the principle into social arrangements beyond the letter's argument — the letter itself is arguing standing before God, and later readers have carried it further, in more than one direction. State the argument's own scope first; treat extensions as extensions."
+    },
+    {
+      "snag": "The allegory of Hagar and Sarah is confusing.",
+      "help": "Paul says he is using the Genesis story 'by way of allegory' (4:24) — he announces the move, which is the reader's caution light. The two women stand for two covenants: Hagar the covenant from Mount Sinai (law, slavery, present Jerusalem), Sarah the promise (freedom, the Jerusalem above). The argument is not about the historical women — it is a first-century Jewish reading technique applied to make one point: the readers are children of promise, not slaves. Read it as argument-by-allegory, not as a code for everything."
+    },
+    {
+      "snag": "5:12 — 'cut themselves off' — did Paul write something crude?",
+      "help": "Yes, deliberately. Paul wishes the agitators — who are urging circumcision — would go the whole way and castrate themselves. It is the sharpest sentence in the letter and translators have softened it in English for centuries; the hosted WEB carries it plainly ('even cut themselves off'). The sarcasm is the argument's temperature showing: this is not polite disagreement."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Which Galatia — and therefore when was the letter written?",
+      "settled": "Paul wrote to assemblies in Galatia; the letter itself names no towns.",
+      "positions": [
+        {
+          "view": "South Galatia — the towns of Paul's first journey",
+          "grounds": "Acts 13–14 records Paul preaching in the southern part of the Roman province (Pisidian Antioch, Iconium, Lystra, Derbe), where he planted assemblies of Gentiles; the letter's situation — Gentile believers being told to take on circumcision — matches a young mission field naturally. On this reading the letter is very early, possibly the earliest of Paul's surviving letters, around AD 48–49, before the council of Acts 15."
+        },
+        {
+          "view": "North Galatia — ethnic Galatians further in",
+          "grounds": "'Galatia' was also the name for the older northern region settled by Gauls, and Paul's 'because of physical illness' (4:13) plus 'you would have plucked out your eyes and given them to me' (4:15) is read by some as a northern detour recorded in Acts 16:6. On this reading the letter is later, in the mid-50s, and Galatians 2 describes the same visit as Acts 15's council."
+        }
+      ],
+      "note": "The letter cannot settle it, and the date of the letter swings several years between the readings. Present the question as open. What either reading must account for: Paul's 'previous visit' to Jerusalem in 2:1 and his 'first' preaching to them (4:13) — the sequence is the evidence being argued over."
+    },
+    {
+      "question": "Is Galatians 2 the same event as Acts 15?",
+      "settled": "Both Galatians 2:1-10 and Acts 15 describe a Jerusalem meeting about Gentiles and the law; both cannot be simply the same event without cost.",
+      "positions": [
+        {
+          "view": "Same event — the 'Jerusalem Council' of Acts 15",
+          "grounds": "The subject is identical: whether Gentiles need circumcision. If Galatians is late (North Galatia view), the natural fit is the council around AD 49, and Paul's 'we did not yield in subjection... for an hour' (2:5) is the public debate of Acts 15."
+        },
+        {
+          "view": "Different events — the famine-relief visit of Acts 11:30",
+          "grounds": "Galatians 2's meeting is private — Paul met with 'those who were reputed to be something' (2:2) — while Acts 15's council is public and official; Galatians 2 mentions no decree or official letter, which is hard to omit if the council had already happened; and Galatians says the pillars asked only one thing, 'remember the poor' (2:10), while Acts 15's letter carries four requirements. On this reading Galatians is early (South Galatia view), written before the council — which would make the Antioch incident of Galatians 2:11-14 a cause of the council, not a footnote to it."
+        }
+      ],
+      "note": "The answer is tied to the which-Galatia question above, and honest readers hold both options without forcing one. What is not in dispute: Paul went to Jerusalem more than once, and the letter counts 'then after three years' and 'then after fourteen years' (1:18, 2:1) — its own clock, which any reconstruction must respect."
+    }
+  ],
+  "sources": [
+    {
+      "id": "usccb-galatians",
+      "label": "USCCB, Introduction to Galatians",
+      "says": "Provides the letter's setting, date range, the rival-teachers situation, and the outline of the argument used in this briefing.",
+      "url": "https://bible.usccb.org/bible/galatians/0"
+    },
+    {
+      "id": "cambridge-pistis",
+      "label": "David L. Stubbs, 'The shape of soteriology and the pistis Christou debate' (Cambridge)",
+      "says": "Frames the grammatical and theological debate between 'faith in Christ' and 'faith/faithfulness of Christ' in Romans and Galatians.",
+      "url": "https://www.cambridge.org/core/journals/scottish-journal-of-theology/article/shape-of-soteriology-and-the-pistis-christou-debate/205628FE0A64940AC2BF4C3FDC8EC31A"
+    },
+    {
+      "id": "hosted-web",
+      "label": "The text on this site",
+      "says": "Word counts, verse references, quoted lines, and the English edition's renderings ('Good News,' 'tutor,' 'faith in Jesus Christ,' 'cut themselves off') were checked against the hosted World English Bible."
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read chapters 1–2 as Paul telling his own story on the witness stand. Count the years with him — 'after three years' (1:18), 'after fourteen years' (2:1) — and notice each time he says his commission did not come from or through Jerusalem.",
+      "refs": [
+        "1:11",
+        "1:18",
+        "2:1"
+      ]
+    },
+    {
+      "tip": "Watch what is missing: no thanksgiving after the greeting (1:1-5 goes straight to alarm), and no 'Paul and Silvanus and Timothy' — one author, alone, on an emergency.",
+      "refs": [
+        "1:1",
+        "1:6"
+      ]
+    },
+    {
+      "tip": "In chapters 3–4, mark every time Paul quotes Genesis and Habakkuk. Scripture is the courtroom, Abraham is the exhibit, and the promise — not circumcision — is the inheritance.",
+      "refs": [
+        "3:6",
+        "3:11",
+        "3:16",
+        "4:27"
+      ]
+    },
+    {
+      "tip": "Read 5:13-6:10 as freedom's instructions. 'You were called to freedom' is immediately fenced — 'only not opportunity for the flesh' — and the fruit list (5:22-23) is what Spirit-led freedom looks like in a person.",
+      "refs": [
+        "5:13",
+        "5:22",
+        "6:2"
+      ]
+    },
+    {
+      "tip": "Notice the ending: 'See with what large letters I write to you with my own hand' (6:11). Paul picks up the pen himself — the argument closes with his own signature on it.",
+      "refs": [
+        "6:11"
+      ]
+    }
+  ],
+  "next": "Romans returns to the same questions — faith, law, Abraham, Spirit — with more room and less heat, and it is the natural next read; Acts 13–15 records the journeys and the Jerusalem meeting the dating debates turn on; for the Scripture beneath the letter, reread Genesis 12, 15, 17 (Abraham and the promise) and Isaiah 54 (the barren woman who rejoices).",
+  "traditionNote": "Galatians has 6 chapters across every tradition's collection here — Catholic, Orthodox, Protestant, Ethiopian, Armenian. The traditions disagree less about its scope than about how its teaching on law and freedom should be synthesized with James, with Romans, and with later councils; present those as readings of shared text, not as different books."
+}

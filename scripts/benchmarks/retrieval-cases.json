@@ -1,0 +1,541 @@
+{
+  "schemaVersion": 1,
+  "version": "known-target-v1",
+  "authorship": "Codex-authored from hosted sources before any ranking runs; human relevance review pending.",
+  "limitations": [
+    "Single known target per query; alternative relevant results are not judged.",
+    "Source-selected paraphrases are development checks, not held-out user queries.",
+    "Exact-tail probes deterministically select the twelve longest early sections and approximately their final 180 characters; they diagnose truncation, not general relevance.",
+    "The longest sections include a Latin appendix and editorial commentary; labels do not assert that all indexed text is ancient narrative."
+  ],
+  "cases": [
+    {
+      "id": "early-paraphrase-01",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "What should someone do for baptism when flowing water is unavailable?",
+      "target": "didache#7",
+      "source": {
+        "path": "public/early/texts/didache.json",
+        "sha256": "ea4ad87a3da542e5408f3fad0f2b0c41f6ed3044ff4a9f282866e151585c5689",
+        "normalizedSha256": "d475e27a6090d73122e87906218049e1b7699d7d64328f6b465f752df6d0cf2a",
+        "quote": "But if thou have not living water, baptize into other water;",
+        "start": 210,
+        "end": 270
+      },
+      "targetTokens": 147
+    },
+    {
+      "id": "early-paraphrase-02",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Which sacrificed food should a Christian be particularly careful to avoid?",
+      "target": "didache#6",
+      "source": {
+        "path": "public/early/texts/didache.json",
+        "sha256": "ea4ad87a3da542e5408f3fad0f2b0c41f6ed3044ff4a9f282866e151585c5689",
+        "normalizedSha256": "4e626ecc82c5b497cf4d23242a6d060a72d8031e4addedc8d260dbefabd74048",
+        "quote": "but against that which is sacrificed to idols be exceedingly on thy guard;",
+        "start": 353,
+        "end": 427
+      },
+      "targetTokens": 116
+    },
+    {
+      "id": "early-paraphrase-03",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "How does the suffering of Christ teach his followers to be humble?",
+      "target": "1clement#15",
+      "source": {
+        "path": "public/early/texts/1clement.json",
+        "sha256": "36721482f5884c549b30c676dec02f84c2141b1ed506533eedca02d90228e28b",
+        "normalizedSha256": "9054cab776ce60fede1523cfe3254291a029faed9d6a0acbb0ca3b9d768afbb9",
+        "quote": "what is the example which has been given us; for if the Lord thus humbled Himself, what shall we do",
+        "start": 2714,
+        "end": 2813
+      },
+      "targetTokens": 713
+    },
+    {
+      "id": "early-paraphrase-04",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "A prisoner asks fellow believers to let wild animals kill him, comparing himself to grain made into bread.",
+      "target": "ignatius-romans#4",
+      "source": {
+        "path": "public/early/texts/ignatius-romans.json",
+        "sha256": "0463573b60c36c3d9addd73a82dcffb378082106fc5b546fba9157cb590ff2b5",
+        "normalizedSha256": "67f01b8ee1c68fb68c5c76f6acdaf7d07817f181dfb5a43c166b1dd52c2cd66a",
+        "quote": "I am the wheat of God, and let me be ground by the teeth of the wild beasts",
+        "start": 346,
+        "end": 421
+      },
+      "targetTokens": 292
+    },
+    {
+      "id": "early-paraphrase-05",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "What qualities should deacons have regarding speech, money, and compassion?",
+      "target": "polycarp-philippians#5",
+      "source": {
+        "path": "public/early/texts/polycarp-philippians.json",
+        "sha256": "cc4a003a8555d2452925eadebc34c59943d5410589367f2058db211ffa6172f3",
+        "normalizedSha256": "82005e2661597d91d3f615b466b6c29fb136271c340624305890c6dee7da4d6d",
+        "quote": "They must not be slanderers, double-tongued, or lovers of money, but temperate in all things, compassionate, industrious",
+        "start": 292,
+        "end": 412
+      },
+      "targetTokens": 338
+    },
+    {
+      "id": "early-paraphrase-06",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Christians live among their neighbors and follow local customs while considering themselves citizens of heaven.",
+      "target": "diognetus#4",
+      "source": {
+        "path": "public/early/texts/diognetus.json",
+        "sha256": "c544aa9f0a801d8e2f44d57e945441bd1f52941054b719defd4b55b9ae65e3b9",
+        "normalizedSha256": "d0f7a6b6c9ee3c8da1d43f5b6bed070e1d4117cc4ec173b26dd7f56df931cfd5",
+        "quote": "They pass their days on earth, but they are citizens of heaven.",
+        "start": 1268,
+        "end": 1331
+      },
+      "targetTokens": 466
+    },
+    {
+      "id": "early-paraphrase-07",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Someone records the shepherds’ destructive behavior and presents written testimony to the Lord of the sheep.",
+      "target": "enoch#92",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "6d7d1e0ea94682470ef10951e4db2800a6107c3aac813c4bfc917cab139383e7",
+        "quote": "gave testimony before Him against all the shepherds.",
+        "start": 15613,
+        "end": 15665
+      },
+      "targetTokens": 3627
+    },
+    {
+      "id": "early-paraphrase-08",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "As the prophet ascends, the angels in the fifth heaven offer more glorious praise than those in the fourth.",
+      "target": "ascension-isaiah#6",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "88b3b0eb6ebff249feb8e285430007a4a9adc0d8afd4434e589b851de46711d0",
+        "quote": "And their praise was more glorious than that of the fourth heaven.",
+        "start": 5947,
+        "end": 6013
+      },
+      "targetTokens": 1553
+    },
+    {
+      "id": "early-paraphrase-09",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "An account compares the brightness and size of the sun and the moon.",
+      "target": "enoch#74",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "8de36fb19713d0735d3a32a5a28253c8c3ebd1c3b7b02da2d751a48a366da52d",
+        "quote": "his light is sevenfold brighter than that of the moon; but as regards size they are both equal.",
+        "start": 6577,
+        "end": 6672
+      },
+      "targetTokens": 1521
+    },
+    {
+      "id": "early-paraphrase-10",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Small hailstones and drops that hollow stone illustrate the power of the Spirit from above.",
+      "target": "shepherd-hermas#43",
+      "source": {
+        "path": "public/early/texts/shepherd-hermas.json",
+        "sha256": "d2a99ec0f25a8b77c02fb19730519348dd1727431f19f3decb9a90d34d25011a",
+        "normalizedSha256": "a01e6ac72fff83ad26a0db125f54f38b7499c93e8aecad67042ac63671b53b0d",
+        "quote": "the smallest things coming from above have great power when they fall upon the earth.",
+        "start": 5556,
+        "end": 5641
+      },
+      "targetTokens": 1335
+    },
+    {
+      "id": "early-paraphrase-11",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Manasseh has Isaiah killed by sawing him apart after the prophet’s visions.",
+      "target": "ascension-isaiah#10",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "5a9a678e7496ecec44d3a2babc6fb77af1e780ca940a23e0b83a162ac199334d",
+        "quote": "Sammael Satan sawed in sunder Isaiah the son of Amoz, the prophet, by the hand of Manasseh.",
+        "start": 5004,
+        "end": 5095
+      },
+      "targetTokens": 1311
+    },
+    {
+      "id": "early-paraphrase-12",
+      "corpus": "early",
+      "kind": "paraphrase",
+      "query": "Michael the angel of the covenant is instructed to lead a merciful soul into paradise.",
+      "target": "apocalypse-paul#5",
+      "source": {
+        "path": "public/early/texts/apocalypse-paul.json",
+        "sha256": "13d4004ee482c8926485a919e19bd0ef4ae139682282023b3ea68bb2be164154",
+        "normalizedSha256": "49154e7d5c79bce72bbfceb1cabe4e4fc15eaa737a412aff541e9eed36befe15",
+        "quote": "Let it be delivered therefore unto Michael the angel of the covenant, and let him lead it into the paradise of rejoicing",
+        "start": 4686,
+        "end": 4806
+      },
+      "targetTokens": 1287
+    },
+    {
+      "id": "early-exact-tail-01",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "as he showed Him all the doings of the shepherds, and gave testimony before Him against all the shepherds. 77. And he took the actual book and laid it down beside Him and departed.",
+      "target": "enoch#92",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "6d7d1e0ea94682470ef10951e4db2800a6107c3aac813c4bfc917cab139383e7",
+        "quote": "as he showed Him all the doings of the shepherds, and gave testimony before Him against all the shepherds. 77. And he took the actual book and laid it down beside Him and departed.",
+        "start": 15559,
+        "end": 15739
+      },
+      "targetTokens": 3627
+    },
+    {
+      "id": "early-exact-tail-02",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "and all the deeds of men in their order were shown to me. 42. On that night I remembered the first dream, and because of it I wept and was troubled—because I had seen that vision.",
+      "target": "enoch#93",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "cb4d0e295831de44fc150ed03af05bbe28a3ce1c5cc5b541ca7584d6e2bd9efe",
+        "quote": "and all the deeds of men in their order were shown to me. 42. On that night I remembered the first dream, and because of it I wept and was troubled—because I had seen that vision.",
+        "start": 8268,
+        "end": 8447
+      },
+      "targetTokens": 1986
+    },
+    {
+      "id": "early-exact-tail-03",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "known to any flesh, who hath bestowed such glory on the several heavens, and who maketh great the glory of the angels, and more excellent the glory of Him who sitteth on the throne.",
+      "target": "ascension-isaiah#6",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "88b3b0eb6ebff249feb8e285430007a4a9adc0d8afd4434e589b851de46711d0",
+        "quote": "known to any flesh, who hath bestowed such glory on the several heavens, and who maketh great the glory of the angels, and more excellent the glory of Him who sitteth on the throne.",
+        "start": 6123,
+        "end": 6304
+      },
+      "targetTokens": 1553
+    },
+    {
+      "id": "early-exact-tail-04",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "As he rises, so he sets and decreases not, and rests not, but runs day and night, and his light is sevenfold brighter than that of the moon; but as regards size they are both equal.",
+      "target": "enoch#74",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "8de36fb19713d0735d3a32a5a28253c8c3ebd1c3b7b02da2d751a48a366da52d",
+        "quote": "As he rises, so he sets and decreases not, and rests not, but runs day and night, and his light is sevenfold brighter than that of the moon; but as regards size they are both equal.",
+        "start": 6491,
+        "end": 6672
+      },
+      "targetTokens": 1521
+    },
+    {
+      "id": "early-exact-tail-05",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "oculis nostris. 16 et erunt illi • III • filii [et erunt nomina filiorum cius • Sem • Cham • Iafeth] 18 et ipse uocabitur Noe qui interpretatur requies quia requiem prestabit in archam.",
+      "target": "enoch#110",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "50ea428e106833139d68a03318a5a6ccf3a76dc0b82334315668c6ea7a3929d1",
+        "quote": "oculis nostris. 16 et erunt illi • III • filii [et erunt nomina filiorum cius • Sem • Cham • Iafeth] 18 et ipse uocabitur Noe qui interpretatur requies quia requiem prestabit in archam.",
+        "start": 5088,
+        "end": 5273
+      },
+      "targetTokens": 1463
+    },
+    {
+      "id": "early-exact-tail-06",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "worshipped, and they both together praised God. 41. And thereupon all the righteous drew near and worshipped. 42. And the angels drew near and worshipped and all the angels praised.",
+      "target": "ascension-isaiah#8",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "40d81c3e2f90440dbb2cb5e5aa7d9dc0c295599ac06e744302b2354d12638b5d",
+        "quote": "worshipped, and they both together praised God. 41. And thereupon all the righteous drew near and worshipped. 42. And the angels drew near and worshipped and all the angels praised.",
+        "start": 5520,
+        "end": 5701
+      },
+      "targetTokens": 1408
+    },
+    {
+      "id": "early-exact-tail-07",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "his glory, And all evil shall pass away before his face, And the word of that Son of Man shall go forth And be strong before the Lord of Spirits. This is the third Parable of Enoch.",
+      "target": "enoch#70",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "6a03b6a26eba58e2ef54a048191280d6485e827cbc577ec4706d8324c686d1c0",
+        "quote": "his glory, And all evil shall pass away before his face, And the word of that Son of Man shall go forth And be strong before the Lord of Spirits. This is the third Parable of Enoch.",
+        "start": 5543,
+        "end": 5724
+      },
+      "targetTokens": 1371
+    },
+    {
+      "id": "early-exact-tail-08",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "above have great power when they fall upon the earth. Thus also is the Divine Spirit, which comes from above, powerful. Trust, then, that Spirit, but have nothing to do with the other.",
+      "target": "shepherd-hermas#43",
+      "source": {
+        "path": "public/early/texts/shepherd-hermas.json",
+        "sha256": "d2a99ec0f25a8b77c02fb19730519348dd1727431f19f3decb9a90d34d25011a",
+        "normalizedSha256": "a01e6ac72fff83ad26a0db125f54f38b7499c93e8aecad67042ac63671b53b0d",
+        "quote": "above have great power when they fall upon the earth. Thus also is the Divine Spirit, which comes from above, powerful. Trust, then, that Spirit, but have nothing to do with the other.",
+        "start": 5588,
+        "end": 5772
+      },
+      "targetTokens": 1335
+    },
+    {
+      "id": "early-exact-tail-09",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "recensions there is no trace of anything after ch. 44: but this does not furnish a conclusive argument. More to the point would be the discovery of a copy of the full text ending with 44.",
+      "target": "apocalypse-paul#38",
+      "source": {
+        "path": "public/early/texts/apocalypse-paul.json",
+        "sha256": "13d4004ee482c8926485a919e19bd0ef4ae139682282023b3ea68bb2be164154",
+        "normalizedSha256": "8825e9098f87a8d6543bbb8bbef26b0033d5e0bce92804740fdbaf5839e3676c",
+        "quote": "recensions there is no trace of anything after ch. 44: but this does not furnish a conclusive argument. More to the point would be the discovery of a copy of the full text ending with 44.",
+        "start": 5570,
+        "end": 5757
+      },
+      "targetTokens": 1321
+    },
+    {
+      "id": "early-exact-tail-10",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "Manasseh did not remember them nor place these things in his heart, but becoming the servant of Satan he was destroyed. Here endeth the vision of Isaiah the prophet with his ascension.",
+      "target": "ascension-isaiah#10",
+      "source": {
+        "path": "public/early/texts/ascension-isaiah.json",
+        "sha256": "2abbd3d886cb1d6ded4272e009fbf13941652a0e82a382ad2f3abc31eac0cbac",
+        "normalizedSha256": "5a9a678e7496ecec44d3a2babc6fb77af1e780ca940a23e0b83a162ac199334d",
+        "quote": "Manasseh did not remember them nor place these things in his heart, but becoming the servant of Satan he was destroyed. Here endeth the vision of Isaiah the prophet with his ascension.",
+        "start": 5186,
+        "end": 5370
+      },
+      "targetTokens": 1311
+    },
+    {
+      "id": "early-exact-tail-11",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "And the angel answered and said unto me: Hast thou believed and known that whatsoever every one of you hath done, he beholdeth it at the hour of his necessity? And I said: Yea, Lord.",
+      "target": "apocalypse-paul#5",
+      "source": {
+        "path": "public/early/texts/apocalypse-paul.json",
+        "sha256": "13d4004ee482c8926485a919e19bd0ef4ae139682282023b3ea68bb2be164154",
+        "normalizedSha256": "49154e7d5c79bce72bbfceb1cabe4e4fc15eaa737a412aff541e9eed36befe15",
+        "quote": "And the angel answered and said unto me: Hast thou believed and known that whatsoever every one of you hath done, he beholdeth it at the hour of his necessity? And I said: Yea, Lord.",
+        "start": 5199,
+        "end": 5381
+      },
+      "targetTokens": 1287
+    },
+    {
+      "id": "early-exact-tail-12",
+      "corpus": "early",
+      "kind": "exact-tail",
+      "query": "saw towards the Garden of the Righteous. 24. And the angel of peace who was with me said to me: ‘These two monsters, prepared conformably to the greatness of God, shall feed . . .",
+      "target": "enoch#61",
+      "source": {
+        "path": "public/early/texts/enoch.json",
+        "sha256": "911b14c4da010e3c737842793fa998b2d7ce2d7368c3781682d012d25b6d7772",
+        "normalizedSha256": "304da4d53dd0980b49e1923e70fa1167ad098555c52182f4ccf8f68e0fefd7ca",
+        "quote": "saw towards the Garden of the Righteous. 24. And the angel of peace who was with me said to me: ‘These two monsters, prepared conformably to the greatness of God, shall feed . . .",
+        "start": 5275,
+        "end": 5454
+      },
+      "targetTokens": 1283
+    },
+    {
+      "id": "web-paraphrase-01",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "God speaks and light begins to exist.",
+      "target": "GEN 1:3",
+      "source": {
+        "path": "public/scriptures/text/web/GEN.json",
+        "sha256": "8c03236a4f66fedc1c96118ed9bf067d9e78adea5c1963d63122f078644c4d14",
+        "quote": "God said, “Let there be light,” and there was light."
+      }
+    },
+    {
+      "id": "web-paraphrase-02",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "God tells Moses his name as the one who is.",
+      "target": "EXO 3:14",
+      "source": {
+        "path": "public/scriptures/text/web/EXO.json",
+        "sha256": "6efdf54615b302df6da39bf57d75a4cea1f786f7572996fd1d9d7707b6f85418",
+        "quote": "God said to Moses, “I AM WHO I AM,” and he said, “You shall tell the children of Israel this: ‘I AM has sent me to you.’”"
+      }
+    },
+    {
+      "id": "web-paraphrase-03",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Israel is called to hear that the Lord is one.",
+      "target": "DEU 6:4",
+      "source": {
+        "path": "public/scriptures/text/web/DEU.json",
+        "sha256": "90d93d903890da0c4d222859e2f7e6cc20c57d1c05805f8a95d1b48230a7c9c8",
+        "quote": "Hear, Israel: Yahweh is our God. Yahweh is one."
+      }
+    },
+    {
+      "id": "web-paraphrase-04",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "The Lord cares for me like a shepherd so I lack nothing.",
+      "target": "PSA 23:1",
+      "source": {
+        "path": "public/scriptures/text/web/PSA.json",
+        "sha256": "45a6758968b47916b269cba888163eeb1989bbcf0e3b893333b9b492a141f89e",
+        "quote": "A Psalm by David. Yahweh is my shepherd; I shall lack nothing."
+      }
+    },
+    {
+      "id": "web-paraphrase-05",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Our peace and healing come through the wounds of a suffering servant.",
+      "target": "ISA 53:5",
+      "source": {
+        "path": "public/scriptures/text/web/ISA.json",
+        "sha256": "6d1c086b1ba125123443511c7d8ee4709a02136ee1161e81bbb314f329c4cf24",
+        "quote": "But he was pierced for our transgressions. He was crushed for our iniquities. The punishment that brought our peace was on him; and by his wounds we are healed."
+      }
+    },
+    {
+      "id": "web-paraphrase-06",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "The divine Word becomes human and lives among us.",
+      "target": "JHN 1:14",
+      "source": {
+        "path": "public/scriptures/text/web/JHN.json",
+        "sha256": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307",
+        "quote": "The Word became flesh and lived among us. We saw his glory, such glory as of the only born Son of the Father, full of grace and truth."
+      }
+    },
+    {
+      "id": "web-paraphrase-07",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Jesus offers water that becomes an inner spring leading to eternal life.",
+      "target": "JHN 4:14",
+      "source": {
+        "path": "public/scriptures/text/web/JHN.json",
+        "sha256": "f1782d2822ef2527a3846b7d0f3eb67f334f44bdd982fe3dfd0dee9044af8307",
+        "quote": "but whoever drinks of the water that I will give him will never thirst again; but the water that I will give him will become in him a well of water springing up to eternal life.”"
+      }
+    },
+    {
+      "id": "web-paraphrase-08",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "A Samaritan feels compassion for the injured traveler.",
+      "target": "LUK 10:33",
+      "source": {
+        "path": "public/scriptures/text/web/LUK.json",
+        "sha256": "e79ba4e955a221676c5bd2239916163948f1373674d47ba801017466835f46c0",
+        "quote": "But a certain Samaritan, as he traveled, came where he was. When he saw him, he was moved with compassion,"
+      }
+    },
+    {
+      "id": "web-paraphrase-09",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Nothing anywhere in creation can separate us from God’s love in Christ.",
+      "target": "ROM 8:39",
+      "source": {
+        "path": "public/scriptures/text/web/ROM.json",
+        "sha256": "e7e4fd70cae4aa25ea4fc9146bf18d579e8a2e66ef822c134f86f08cb06e2344",
+        "quote": "nor height, nor depth, nor any other created thing will be able to separate us from God’s love which is in Christ Jesus our Lord."
+      }
+    },
+    {
+      "id": "web-paraphrase-10",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "The righteous souls are held by God and cannot be touched by torment.",
+      "target": "WIS 3:1",
+      "source": {
+        "path": "public/scriptures/text/web/WIS.json",
+        "sha256": "1ce669d4b865f998224e53137f02ff8f3a02acadfb659fd034770d2e56f523c5",
+        "quote": "But the souls of the righteous are in the hand of God, and no torment will touch them."
+      }
+    },
+    {
+      "id": "web-paraphrase-11",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "A person who comes to serve the Lord should prepare for trials.",
+      "target": "SIR 2:1",
+      "source": {
+        "path": "public/scriptures/text/web/SIR.json",
+        "sha256": "d6d5320134bb20214788a636dee6dd21bab6035970a4c3ce97b2aaa25aba2f17",
+        "quote": "My son, if you come to serve the Lord, prepare your soul for temptation."
+      }
+    },
+    {
+      "id": "web-paraphrase-12",
+      "corpus": "web",
+      "kind": "paraphrase",
+      "query": "Giving alms rescues from death and cleanses sin.",
+      "target": "TOB 12:9",
+      "source": {
+        "path": "public/scriptures/text/web/TOB.json",
+        "sha256": "a06294be023863611f034e5a8d837406d36f6fea857b6630bc5344ac62318467",
+        "quote": "Alms delivers from death, and it purges away all sin. Those who give alms and do righteousness will be filled with life;"
+      }
+    }
+  ]
+}
