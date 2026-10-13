@@ -1,6 +1,11 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 
+// The first writings result waits on the library search index, which can
+// outlast the default expect timeout while other workers load the server.
+test.describe.configure({ mode: "serial" });
+const searched = { timeout: 20_000 };
+
 for (const width of [320, 1280]) test(`Find reaches real writing paragraphs and returns to its selected search at ${width}px`, async ({ page, context }) => {
   await context.addCookies([{ name: "preview_access", value: "test-only", url: `http://127.0.0.1:${process.env.PORT ?? 3000}` }]);
   const authHeaders: string[] = [];
@@ -16,7 +21,7 @@ for (const width of [320, 1280]) test(`Find reaches real writing paragraphs and 
   await dialog.getByRole("button", { name: "Passages & writings", exact: true }).click();
   await dialog.getByRole("searchbox", { name: "Find", exact: true }).fill("love your enemies");
   const writing = dialog.locator(".find-group").filter({ has: page.getByRole("heading", { name: "Words in the writings" }) }).getByRole("option").first();
-  await expect(writing).toContainText("Complete phrase");
+  await expect(writing).toContainText("Complete phrase", searched);
   await expect(writing).toContainText("Translated text");
   const target = new URL(await writing.getAttribute("href") as string, "http://local");
   expect(target.pathname).toMatch(/^\/early\/library\//); expect(target.hash).toMatch(/^#p\d+/);

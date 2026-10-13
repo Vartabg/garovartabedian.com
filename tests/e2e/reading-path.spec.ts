@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, type Page } from "@playwright/test";
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
@@ -6,6 +6,18 @@ import { loadReadingJourney } from "../../src/lib/evidence/reading-journey-serve
 
 const route = "/scriptures/read/isaiah-53-clement-16";
 const moduleRequire = createRequire(path.resolve("package.json"));
+
+// The page is prerendered, so FIND_PUBLIC_ENABLED is read at build time: the
+// build under test decides whether the AI check exists, not this process's env.
+// Release builds pull it from production config; a plain local build has none.
+async function openComparison(page: Page) {
+  await page.getByRole("link", { name: "Compare these passages", exact: false }).first().click();
+  await expect(page.getByRole("dialog")).toBeVisible();
+  const check = page.getByRole("button", { name: "Check this connection" });
+  await expect(check.or(page.getByText("AI connection checks are unavailable here.", { exact: false }))).toBeVisible();
+  return check.isVisible();
+}
+const assessmentsOff = "AI connection checks are disabled in this build (FIND_PUBLIC_ENABLED was not set when it was built).";
 
 test("Find leads to the reading path; reading and Trace make no assessment requests", async ({ page }) => {
   const requests: string[] = [];
@@ -22,9 +34,8 @@ test("Find leads to the reading path; reading and Trace make no assessment reque
   // the unique comparison module, not copy also present in the search bundle.
   const comparisonMarker = "The AI checks Isaiah 53:5 against the complete first paragraph";
   expect((await Promise.all(scripts)).some(text => text.includes(comparisonMarker))).toBe(false);
-  await page.getByRole("link", { name: "Compare these passages", exact: false }).first().click();
-  await expect(page.getByRole("dialog")).toBeVisible();
-  await expect(page.getByRole("button", { name: "Check this connection" })).toBeVisible();
+  // Either state proves the comparison module loaded; neither may call the API.
+  await openComparison(page);
   expect((await Promise.all(scripts)).some(text => text.includes(comparisonMarker))).toBe(true);
   expect(requests.some(url => /\/api\/find/.test(url))).toBe(false);
   await page.getByRole("button", { name: "Return to reading" }).click();
@@ -103,7 +114,7 @@ test("AI suggestions stay unreviewed, resume privately, and preserve reading on 
   };
   await page.route("**/api/find/jobs/*", r => r.fulfill({ json: job }));
   await page.goto(route);
-  await page.getByRole("link", { name: "Compare these passages", exact: false }).first().click();
+  test.skip(!(await openComparison(page)), assessmentsOff);
   await page.getByRole("button", { name: "Check this connection" }).click();
   await expect(page.getByRole("dialog").getByText("Unreviewed", { exact: true })).toBeVisible();
   await expect(page.getByRole("dialog").getByText("Close wording", { exact: true })).toBeVisible();

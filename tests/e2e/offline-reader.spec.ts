@@ -1,5 +1,11 @@
 import { test, expect } from "@playwright/test";
 
+// Saving registers the offline shell and fills Cache Storage, which can outlast
+// the default expect timeout while other workers load the server. Serial mode
+// keeps this file's saves from competing with each other.
+test.describe.configure({ mode: "serial" });
+const saved = { timeout: 20_000 };
+
 for (const reducedMotion of ["reduce", "no-preference"] as const) {
   test(`a saved chapter and translation reopen offline with ${reducedMotion} motion`, async ({ page, context }) => {
     const errors: string[] = [];
@@ -7,7 +13,7 @@ for (const reducedMotion of ["reduce", "no-preference"] as const) {
     await page.emulateMedia({ reducedMotion });
     await page.goto("/scriptures/protestant/JHN/3");
     await page.getByRole("button", { name: "Save chapter offline" }).click();
-    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible();
+    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
     await page.bringToFront();
     await page.getByRole("link", { name: "Open saved chapters" }).click();
     await expect(page).toHaveURL(/\/scripture-reader\/index\.html$/);
@@ -44,7 +50,7 @@ test("translation identity, reading preferences and removal persist across offli
   for (const translation of ["web", "kjv"]) {
     await page.goto(`/scriptures/protestant/JHN/3?t=${translation}`);
     await page.getByRole("button", { name: "Save chapter offline" }).click();
-    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible();
+    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
   }
   await page.goto("/scripture-reader/index.html");
   const chapters = page.getByLabel("Saved chapter");
@@ -96,7 +102,7 @@ for (const entry of ["shared link", "in-page switch"]) {
     await expect(page.getByRole("button", { name: "Save chapter offline" })).toBeEnabled();
     await expect(page.locator("#chapter-text")).toContainText("whosoever believeth in him");
     await page.getByRole("button", { name: "Save chapter offline" }).click();
-    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible();
+    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
     await page.getByRole("link", { name: "Open saved chapters" }).click();
     await expect(page.getByRole("heading", { name: "John 3", exact: true })).toBeVisible();
     await context.setOffline(true);
@@ -131,7 +137,7 @@ test("a failed comparison leaves the primary translation readable and saveable",
   await expect(page.getByRole("alert").filter({ hasText: "Could not load King James Version comparison text" })).toBeVisible();
   await expect(page.locator("#chapter-text")).toContainText("whoever believes in him");
   await page.getByRole("button", { name: "Save chapter offline" }).click();
-  await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible();
+  await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
   await page.getByRole("link", { name: "Open saved chapters" }).click();
   await expect(page.getByRole("heading", { name: "John 3", exact: true })).toBeVisible();
   await context.setOffline(true);
