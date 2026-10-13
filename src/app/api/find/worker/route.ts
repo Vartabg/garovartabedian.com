@@ -1,10 +1,10 @@
-import { handleCallback } from "@vercel/queue";
+import { queue } from "@/lib/find-server/queue";
 import { getFindStore } from "@/lib/find-server/store";
 import { workOne } from "@/lib/find-server/worker";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 // vercel.json registers this as a private queue consumer, not a public API.
-const callback = handleCallback<{ id: string }>(
+const callback = queue.handleCallback<{ id: string }>(
   async ({ id }) => {
     if (!/^[a-f0-9-]{36}$/.test(id)) return;
     if (

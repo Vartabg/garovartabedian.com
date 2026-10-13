@@ -34,7 +34,7 @@ studies for JobPilot, garovartabedian.com, and EYE), `/hire`, `/resume`,
 
 ## Stack
 
-- **Next.js 16** (App Router) + **React 19**, TypeScript
+- **Next.js 15** (App Router) + **React 19**, TypeScript
 - **Generated JSON data** in `public/` (scripture text, canons, cross-refs,
   search shards, Nave topics, early writings, church road, angels, word
   studies, evidence cases, source records) — static-friendly and inspectable
@@ -47,9 +47,11 @@ studies for JobPilot, garovartabedian.com, and EYE), `/hire`, `/resume`,
 - **Strict CSP** in production: `default-src 'self'`, `object-src 'none'`,
   `frame-ancestors 'none'`, HSTS preload, nosniff, referrer-policy,
   permissions-policy (FLoC off) · deployed on Vercel
-- **No client dependencies** beyond React/Next — tilt, geo, WebGL, speech are
-  platform APIs; the only iframe origins are two of Garo's own live demos (EYE,
-  atxbro.com), and each demo deploy must allow `frame-ancestors` for the embed
+- **Two client libraries** beyond React/Next: `maplibre-gl` (the `/jesus/life`
+  map) and `@huggingface/transformers` (in-browser semantic search). Tilt,
+  geo, WebGL and speech are platform APIs; the only iframe origins are two of
+  Garo's own live demos (EYE, atxbro.com), and each demo deploy must allow
+  `frame-ancestors` for the embed
 
 ## Develop
 
@@ -65,9 +67,16 @@ npm run build    # production build
 npm run check    # the full gate, including E2E and a11y
 ```
 
-The site has no server secrets and no public text inputs. The `/scriptures`
-per-chapter reader is server-rendered on demand (every other route is
-prerendered as static or SSG). The `/scriptures` and `/jesus` traditions use
+Two server routes take visitor text. `/api/library-search` is a GET search of
+the early writings index and needs no secrets. The optional AI relevance checks
+(`/api/find/*`) accept POST input and need `FIND_PUBLIC_ENABLED=1`,
+`FIND_PUBLIC_ORIGIN`, `FIND_SESSION_SECRET`, `FIND_DATABASE_URL` (Postgres) and
+`TYPESAFE_API_KEY`, with work dispatched through a Vercel queue; the API answers
+503 unless every value is set. Without `FIND_PUBLIC_ENABLED=1` the reading path
+and search show no AI check, and because those pages read it when they are
+prerendered, it must be set at build time. The `/scriptures` per-chapter
+reader is server-rendered on demand (every other route is prerendered as static
+or SSG). The `/scriptures` and `/jesus` traditions use
 public-domain texts (World English Bible, etc.); modern copyrighted
 translations are analyzed in `/word` but never hosted as scripture.
 
@@ -84,7 +93,7 @@ checks with a Vercel production build:
 - `npm run test:e2e` — Playwright browser checks
 - `npm run test:a11y` — **axe** (WCAG 2a/2aa/2.1a/2.1aa/2.2aa), run under both
   light and dark `prefers-color-scheme`, + **Lighthouse accessibility ≥ 0.95**
-  on 31 routes across every world, including `/jesus/words`. Two isolated Node
+  on 44 routes across every world, including `/jesus/words`. Two isolated Node
   workers share the route list; each reuses Chrome with fresh page storage.
   Per-route timings and the temporary Lighthouse report directory are logged.
   Use `A11Y_WORKERS=1 npm run test:a11y` to diagnose resource contention on a
@@ -130,9 +139,6 @@ independently (currently Pro plan, unchanged).
 
 ## Assets & data
 
-- `scripts/build-cross.py` — regenerates the Spatial world's Armenian flared-cross
-  geometry in Blender headless:
-  `Blender --background --python scripts/build-cross.py`
 - `scripts/media/audit.mjs` — the smoke media audit (referenced by
   `npm run test:smoke`)
 - `scripts/media/compress-jpgs.py` — one-shot JPG compression pass

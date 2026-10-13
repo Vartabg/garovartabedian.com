@@ -1,5 +1,10 @@
-import { send } from "@vercel/queue";
+import { QueueClient, type VercelRegion } from "@vercel/queue";
 import { getFindStore, type FindStore } from "./store";
+// Vercel sets VERCEL_REGION in functions. Builds and local servers use the
+// library's own default region instead of warning that none was detected.
+export const queue = new QueueClient({
+  region: (process.env.VERCEL_REGION || "iad1") as VercelRegion,
+});
 export async function scheduleFind(
   id: string,
   options: {
@@ -14,7 +19,7 @@ export async function scheduleFind(
   const ticket = await store.dispatchDue(id);
   if (!ticket) return;
   try {
-    await (options.enqueue ?? send)(
+    await (options.enqueue ?? queue.send)(
       "find-assessments",
       { id },
       {
