@@ -186,7 +186,7 @@ function EarliestAppearanceList({ moment }: { moment: RisenMoment | null }) {
           className="textlink"
           style={{ fontSize: "0.85rem", fontWeight: 600 }}
         >
-          Analyze the 1 Corinthians 15 creed in the NotebookLM Research Dossier Engine →
+          Analyze the 1 Corinthians 15 creed in a research worksheet →
         </Link>
       </p>
     </section>
@@ -516,7 +516,7 @@ export default function RisenRoom({ data }: { data: RisenData }) {
               textDecoration: "none",
             }}
           >
-            <span>Early Resurrection Tradition Dossier</span>
+            <span>Early resurrection tradition worksheet</span>
             <span aria-hidden="true">→</span>
           </Link>
           <Link
@@ -535,7 +535,7 @@ export default function RisenRoom({ data }: { data: RisenData }) {
               textDecoration: "none",
             }}
           >
-            <span>Seven Last Sayings from the Cross Dossier</span>
+            <span>Seven last sayings from the cross worksheet</span>
             <span aria-hidden="true">→</span>
           </Link>
         </div>

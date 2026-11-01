@@ -15,12 +15,12 @@
       "id": "daniel-7",
       "title": "Daniel 7:13–14 (World English Bible)",
       "shortTitle": "Daniel 7",
-      "language": "Hebrew / English",
+      "language": "Aramaic / English",
       "isRtl": false,
       "dates": {
-        "composition": "c. 10th–6th century BCE",
-        "earliestManuscript": "4QGen-b (c. 1st century BCE)",
-        "edition": "Westminster Leningrad Codex / World English Bible"
+        "composition": "Not assessed in this comparison",
+        "earliestManuscript": "Not assessed in this comparison",
+        "edition": "World English Bible; source-language reference: Open Scriptures Hebrew Bible"
       },
       "primaryTradition": "Hebrew Bible / Christian Old Testament",
       "corpusEditionId": "web-bible",
@@ -45,12 +45,12 @@
       "id": "matthew-26",
       "title": "Matthew 26:63–65 (World English Bible)",
       "shortTitle": "Matthew 26",
-      "language": "Hebrew / English",
+      "language": "Greek / English",
       "isRtl": false,
       "dates": {
-        "composition": "c. 10th–6th century BCE",
-        "earliestManuscript": "4QGen-b (c. 1st century BCE)",
-        "edition": "Westminster Leningrad Codex / World English Bible"
+        "composition": "Not assessed in this comparison",
+        "earliestManuscript": "Not assessed in this comparison",
+        "edition": "World English Bible; source-language reference: SBL Greek New Testament + MorphGNT"
       },
       "primaryTradition": "Christian New Testament",
       "corpusEditionId": "web-bible",
@@ -70,7 +70,7 @@
             "editionId": "web-bible",
             "section": "DAN",
             "passageRef": "Daniel 7:13",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Aramaic"
           },
           "basis": "explicit",
           "summary": "'One like a son of man' comes with the clouds of the sky — a simile, not yet a title.",
@@ -99,11 +99,11 @@
         "matthew-26": {
           "witnessId": "matthew-26",
           "locator": {
-            "corpusId": "hebrew-bible",
+            "corpusId": "new-testament",
             "editionId": "web-bible",
             "section": "MAT",
             "passageRef": "Matthew 26:64",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Greek"
           },
           "basis": "explicit",
           "summary": "Jesus answers the high priest: 'you will see the Son of Man sitting at the right hand of power, and coming with the clouds of the sky.'",
@@ -126,7 +126,7 @@
             "editionId": "web-bible",
             "section": "DAN",
             "passageRef": "Daniel 7:14",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Aramaic"
           },
           "basis": "explicit",
           "summary": "Dominion, glory, and a kingdom are given him; all peoples serve him — an everlasting dominion.",
@@ -154,11 +154,11 @@
         "matthew-26": {
           "witnessId": "matthew-26",
           "locator": {
-            "corpusId": "hebrew-bible",
+            "corpusId": "new-testament",
             "editionId": "web-bible",
             "section": "MAT",
             "passageRef": "Matthew 26:64",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Greek"
           },
           "basis": "explicit",
           "summary": "Sitting at the right hand of power and coming with the clouds of the sky — throne language joined to Daniel's cloud language.",
@@ -181,7 +181,7 @@
             "editionId": "web-bible",
             "section": "DAN",
             "passageRef": "Daniel 7:13",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Aramaic"
           },
           "basis": "explicit",
           "summary": "A simile: 'one like a son of man' contrasts the humanlike figure with the beastly kingdoms.",
@@ -209,11 +209,11 @@
         "matthew-26": {
           "witnessId": "matthew-26",
           "locator": {
-            "corpusId": "hebrew-bible",
+            "corpusId": "new-testament",
             "editionId": "web-bible",
             "section": "MAT",
             "passageRef": "Matthew 26:64",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Greek"
           },
           "basis": "explicit",
           "summary": "Jesus' own self-designation under oath, joined to enthronement and cloud-coming language.",
@@ -325,8 +325,9 @@
     "reviewStatus": "agent-reviewed",
     "reviewer": "Claude Sourcing & Review Pass (garovartabedian.com)",
     "rubricVersion": "parallels-v1.0",
-    "reviewedContentHash": "9d59d8b2a07cffa6a5e6b976a737ab851a8ba08cd4cea060ad18bf55f72a768a",
+    "reviewedContentHash": "fb7c91a8f50cfef3944173b6d72dbc18cba742d03702f56b8a3128165e600de0",
     "reviewedAt": "2026-09-01T01:34:50.687Z",
-    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation"
+    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation",
+    "contentHashScope": "witnesses-slots-edges-reception-v1"
   }
 }

@@ -1,3 +1,4 @@
+import ResearchAudio from "../_components/ResearchAudio";
 import Image from "next/image";
 import Link from "next/link";
 import { APOSTLE_PLATES } from "@/lib/apostles/plates";
@@ -20,7 +21,7 @@ export default function ApostlesHome({
       <header className="ap-home-hero">
         <div className="ap-home-hero-copy">
           <p className="ap-home-eyebrow">The Apostles · Witnesses of Jesus</p>
-          <h1 className="ap-home-title">Called. Changed. Sent.</h1>
+          <h1 className="ap-home-title" data-hand="capitals">Called. Changed. Sent.</h1>
           <p className="ap-home-lede">
             They walked with Jesus. Their questions and failures remain on the
             page. Their witness carries the story onward.
@@ -55,6 +56,8 @@ export default function ApostlesHome({
           </figcaption>
         </figure>
       </header>
+
+      <ResearchAudio id="apostolic-witness" />
 
       <section id="visual-stories" className="ap-home-stories" aria-labelledby="ap-home-stories-h">
         <h2 id="ap-home-stories-h">Three encounters</h2>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useTransition } from "react";
+import { useState, useCallback, useTransition, useEffect, useRef } from "react";
 import Link from "next/link";
 import {
   HEXAPLA_WITNESSES,
@@ -14,9 +14,17 @@ import {
 import type { BookMeta, OriginalEditionId, OriginalWord } from "@/lib/scriptures/types";
 import { loadBook, loadOriginalChapter } from "@/lib/scriptures/client";
 import { describeOriginalWord } from "@/lib/scriptures/morphology";
+import StudyContextBanner from "../_components/StudyContextBanner";
+import { parseStudyContext, studyContextLabel, type StudyContext } from "@/lib/scriptures/study-context";
+import { selectHistoricPsalmVerses, hasUnverifiedStudyNumbering, hasVerifiedHistoricPsalmNumbering, UNVERIFIED_NUMBERING_NOTE } from "@/lib/scriptures/study-passage";
+export { selectHistoricPsalmVerses } from "@/lib/scriptures/study-passage";
 
 type Props = {
-  initialPreset: HexaplaPreset;
+  initialPreset: HexaplaPreset | null;
+  initialSelection?: { book: string; chapter: number };
+  initialContext?: StudyContext | null;
+  initialSourceText?: string | null;
+  contextNote?: string;
   initialAligned: PolyglotAlignedVerse[];
   bookOrder: string[];
   booksMeta: Record<string, BookMeta>;
@@ -28,48 +36,27 @@ const LANGUAGE_NAMES: Record<string, string> = {
   greek: "Greek",
 };
 
-type HistoricPsalmLocation = {
-  chapter: number;
-  leadingItems: number;
-};
-
-// This mirrors the server loader. Only passages verified against the hosted
-// Brenton and Douay-Rheims files belong here; the combined and divided Psalms
-// cannot be represented by a universal minus-one rule.
-const HISTORIC_PSALM_LOCATIONS: Partial<Record<number, HistoricPsalmLocation>> = {
-  22: { chapter: 21, leadingItems: 1 },
-  110: { chapter: 109, leadingItems: 0 },
-};
-
-export function selectHistoricPsalmVerses(
-  chapters: string[][] | undefined,
-  book: string,
-  hebrewChapter: number,
-): string[] | null {
-  const location = book === "PSA" ? HISTORIC_PSALM_LOCATIONS[hebrewChapter] : undefined;
-  const verses = chapters?.[(location?.chapter ?? hebrewChapter) - 1] ?? null;
-
-  return verses && location?.leadingItems
-    ? verses.slice(location.leadingItems)
-    : verses;
-}
-
 export default function PolyglotClient({
   initialPreset,
+  initialSelection,
+  initialContext,
+  initialSourceText,
+  contextNote,
   initialAligned,
   bookOrder,
   booksMeta,
 }: Props) {
-  const [selectedPresetId, setSelectedPresetId] = useState<string>(initialPreset.id);
-  const [currentBook, setCurrentBook] = useState<string>(initialPreset.book);
-  const [currentChapter, setCurrentChapter] = useState<number>(initialPreset.chapter);
+  const selection = initialSelection ?? initialPreset!;
+  const [selectedPresetId, setSelectedPresetId] = useState<string>(initialPreset?.id ?? "custom");
+  const [currentBook, setCurrentBook] = useState<string>(selection.book);
+  const [currentChapter, setCurrentChapter] = useState<number>(selection.chapter);
   const [alignedVerses, setAlignedVerses] = useState<PolyglotAlignedVerse[]>(initialAligned);
   const [layoutMode, setLayoutMode] = useState<"interlinear" | "columns">("interlinear");
   const [visibleWitnesses, setVisibleWitnesses] = useState<Set<PolyglotWitnessId>>(
     new Set(["original", "brenton", "drb", "kjv", "web"]),
   );
   const [activeDivergence, setActiveDivergence] = useState<HexaplaPreset["textualDivergence"] | null>(
-    initialPreset.textualDivergence,
+    initialPreset?.textualDivergence ?? null,
   );
   const [selectedWord, setSelectedWord] = useState<{
     word: OriginalWord;
@@ -78,6 +65,15 @@ export default function PolyglotClient({
   } | null>(null);
   const [copiedDossier, setCopiedDossier] = useState(false);
   const [isPending, startTransition] = useTransition();
+  const [selectionNote, setSelectionNote] = useState<string | null>(null);
+  const [showingStartingPassage, setShowingStartingPassage] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const generation = useRef(0);
+  const mounted = useRef(false);
+  useEffect(() => {
+    mounted.current = true;
+    return () => { mounted.current = false; generation.current += 1; };
+  }, []);
 
   const toggleWitness = (id: PolyglotWitnessId) => {
     const next = new Set(visibleWitnesses);
@@ -97,51 +93,60 @@ export default function PolyglotClient({
       end: number,
       divergence: HexaplaPreset["textualDivergence"] | null,
     ) => {
+      const request = ++generation.current;
+      const current = () => mounted.current && generation.current === request;
+      setLoadError(null);
       startTransition(async () => {
         setSelectedWord(null);
         try {
-          const [orig, brentonBook, drbBook, kjvBook, webBook] = await Promise.all([
-            loadOriginalChapter(bookId, chapNum),
-            loadBook("brenton", bookId).catch(() => null),
-            loadBook("drb", bookId).catch(() => null),
-            loadBook("kjv", bookId).catch(() => null),
-            loadBook("web", bookId).catch(() => null),
-          ]);
-
-          const brentonVerses = selectHistoricPsalmVerses(
-            brentonBook?.chapters,
-            bookId,
-            chapNum,
-          );
-          const drbVerses = selectHistoricPsalmVerses(
-            drbBook?.chapters,
-            bookId,
-            chapNum,
-          );
-          const kjvVerses = kjvBook?.chapters[chapNum - 1] ?? null;
-          const webVerses = webBook?.chapters[chapNum - 1] ?? null;
-
-          const aligned = alignPolyglotVerses({
-            originalChapter: orig,
-            brentonVerses,
-            drbVerses,
-            kjvVerses,
-            webVerses,
-            startVerse: start,
-            endVerse: end,
-            presetDivergence: divergence,
-          });
-
+          let aligned: PolyglotAlignedVerse[], note: string | null = null;
+          if (hasUnverifiedStudyNumbering(bookId)) {
+            const context = parseStudyContext({ book: bookId, chapter: String(chapNum), verse: String(start),
+              translation: initialContext?.bookId === bookId ? initialContext.translation : undefined }).context;
+            if (!context) throw new Error("Selected edition has no hosted passage");
+            const selected = await loadBook(context.translation, bookId);
+            const verses = selected?.chapters[chapNum - 1];
+            if (!verses?.some((text) => text.trim())) throw new Error("Selected edition has no hosted passage");
+            aligned = alignPolyglotVerses({ originalChapter: null,
+              brentonVerses: context.translation === "brenton" ? verses : null,
+              drbVerses: context.translation === "drb" ? verses : null,
+              kjvVerses: context.translation === "kjv" ? verses : null,
+              webVerses: context.translation === "web" ? verses : null,
+              startVerse: start, endVerse: end });
+            note = `${studyContextLabel(context)}. ${UNVERIFIED_NUMBERING_NOTE}`;
+          } else {
+            const [orig, brentonBook, drbBook, kjvBook, webBook] = await Promise.all([
+              loadOriginalChapter(bookId, chapNum),
+              loadBook("brenton", bookId).catch(() => null),
+              loadBook("drb", bookId).catch(() => null),
+              loadBook("kjv", bookId).catch(() => null),
+              loadBook("web", bookId).catch(() => null),
+            ]);
+            const hideHistoric = bookId === "PSA" && !hasVerifiedHistoricPsalmNumbering(chapNum);
+            if (hideHistoric) note = "This selection uses Hebrew Psalm numbering. Brenton and Douay-Rheims are omitted because the corresponding passage has not been verified.";
+            aligned = alignPolyglotVerses({
+              originalChapter: orig,
+              brentonVerses: hideHistoric ? null : selectHistoricPsalmVerses(brentonBook?.chapters, bookId, chapNum),
+              drbVerses: hideHistoric ? null : selectHistoricPsalmVerses(drbBook?.chapters, bookId, chapNum),
+              kjvVerses: kjvBook?.chapters[chapNum - 1] ?? null,
+              webVerses: webBook?.chapters[chapNum - 1] ?? null,
+              startVerse: start, endVerse: end, presetDivergence: divergence,
+            });
+          }
+          if (!aligned.length) throw new Error("No comparison text is available");
+          if (!current()) return;
           setAlignedVerses(aligned);
           setCurrentBook(bookId);
           setCurrentChapter(chapNum);
           setActiveDivergence(divergence);
+          setSelectionNote(note);
+          setShowingStartingPassage(false);
         } catch {
-          // Keep current view on error
+          if (current()) setLoadError("This selection has no hosted text in the selected edition. The previous comparison is still shown. Choose a passage in the reader to select another edition.");
         }
       });
     },
-    [],
+    [initialContext],
   );
 
   const handleSelectPreset = (preset: HexaplaPreset) => {
@@ -187,6 +192,10 @@ export default function PolyglotClient({
 
   return (
     <section className="scr-polyglot" aria-label="Digital Polyglot Apparatus">
+      <StudyContextBanner context={initialContext ?? null} sourceText={initialSourceText}
+        note={showingStartingPassage ? contextNote : "The passage above is your starting point. The controls below show your current selection; the study links retain your starting passage."} currentTool="polyglot" />
+      {loadError && <p role="status">{loadError}</p>}
+      {selectionNote && <p role="status">{selectionNote}</p>}
       {/* 1. Landmark Theological Presets */}
       <div
         style={{
@@ -236,6 +245,7 @@ export default function PolyglotClient({
 
       {/* 2. Controls & Apparatus Bar */}
       <div
+        className="scr-polyglot-controls"
         style={{
           display: "flex",
           flexWrap: "wrap",
@@ -300,7 +310,7 @@ export default function PolyglotClient({
 
         {/* View Mode & NotebookLM Export */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}>
-          <div style={{ display: "inline-flex", border: "1px solid var(--line)", borderRadius: "0.25rem", overflow: "hidden" }}>
+          <div className="scr-polyglot-layout-options" style={{ display: "inline-flex", border: "1px solid var(--line)", borderRadius: "0.25rem", overflow: "hidden" }}>
             <button
               type="button"
               onClick={() => setLayoutMode("interlinear")}
@@ -424,7 +434,7 @@ export default function PolyglotClient({
           <p style={{ margin: "0 0 1rem", fontSize: "0.88rem", fontStyle: "italic", color: "var(--muted-ink)" }}>
             {currentPreset.theologicalSignificance}
           </p>
-          <div style={{ display: "grid", gap: "0.5rem", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
+          <div style={{ display: "grid", gap: "0.5rem", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))" }}>
             {activeDivergence.readingDifferences.map((diff, idx) => (
               <div
                 key={idx}

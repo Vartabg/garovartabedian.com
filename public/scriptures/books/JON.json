@@ -1,0 +1,524 @@
+{
+  "book": "JON",
+  "bookName": "Jonah",
+  "oneLine": "A fleeing prophet receives mercy, announces judgment, and then objects when an enemy city receives mercy too.",
+  "orient": "Jonah is sent to Nineveh but boards a ship for Tarshish. A storm, the sailors’ response, and a great fish lead into his prayer of thanksgiving. A second commission brings him to Nineveh, whose people turn from violence and are spared. The final scene turns the question toward Jonah himself: why welcome the plant’s shade while resisting concern for a city and its animals?",
+  "whereYouAre": "The story names Jonah son of Amittai, the same name and parentage as the prophet associated with Jeroboam II in 2 Kings 14:25. That connection supplies an eighth-century BCE horizon for the character, not a date for the book’s composition. Nineveh is an Assyrian city; the story names neither its king nor the year of Jonah’s journey.",
+  "facts": {
+    "writtenBy": "The book narrates events about Jonah son of Amittai without identifying its author. Naming the prophet does not establish that he wrote the account.",
+    "writtenWhen": "The narrated prophet is linked with the eighth century BCE through 2 Kings. Composition is disputed and is often placed after the Babylonian exile; USCCB favors that later setting but notes the difficulty of dating the book. No exact year is secure.",
+    "writtenFor": "No audience is named in a dedication. The story challenges readers familiar with Israel’s God to consider mercy, wrongdoing, and the lives of people beyond their own community.",
+    "place": "The action moves from Joppa and the sea to Nineveh and a place east of the city. Tarshish is the intended destination of Jonah’s flight; its precise identification is disputed. The place of composition is unknown.",
+    "covers": "Two commissions, a sea rescue and prayer, Nineveh’s changed conduct, and a dispute over divine compassion.",
+    "size": "4 chapters, 48 verses, and 1,250 words in the World English Bible. WEB and KJV divide the verses 17/10/10/11; Douay-Rheims and Brenton divide them 16/11/10/11."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "web-jon"
+    ],
+    "writtenWhen": [
+      "kings-jonah",
+      "usccb-jon-intro",
+      "usccb-jon-1"
+    ],
+    "writtenFor": [
+      "web-jon"
+    ],
+    "place": [
+      "web-jon",
+      "usccb-jon-1"
+    ],
+    "covers": [
+      "web-jon"
+    ],
+    "size": [
+      "web-jon",
+      "english-editions"
+    ]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew, mainly narrative and dialogue, with a poetic prayer in chapter 2.",
+    "register": "Short speeches, repeated commands, large emotions, and reversals carry the story. A prophet who knows the language of divine mercy resists its consequences, while sailors and Ninevites respond to danger with prayer and changed actions.",
+    "spokenWorld": "Jonah identifies himself as a Hebrew. The sailors initially call on their several gods, and the Ninevites later believe God. Their speeches are presented in Hebrew; the narrative does not supply separate transcripts in the languages those people might have spoken.",
+    "readerSignal": "Compare what characters say with what they do. Jonah professes fear of the maker of sea and dry land while fleeing by sea; the sailors try to preserve his life. His explanation for fleeing is delayed until 4:2, so do not supply fear of the journey as his stated motive in chapter 1.",
+    "englishLayer": "References follow WEB. Its fish-swallowing verse, 1:17, is 2:1 in Douay-Rheims, Brenton, and the upstream Hebrew edition. WEB 2:1–10 then corresponds to their 2:2–11. At 3:4, WEB, KJV, Douay-Rheims, and the Hebrew say forty days, while Brenton says three.",
+    "textualHistory": [
+      {
+        "label": "The Hebrew narrative and its named prophet",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The narrative concerns Jonah son of Amittai but gives no author’s signature or composition date. Its relationship to the prophet in 2 Kings is evidence about the character’s identity; it does not settle how or when this story took written form.",
+        "sourceIds": [
+          "web-jon",
+          "kings-jonah"
+        ]
+      },
+      {
+        "label": "Thanksgiving within the sea story",
+        "language": "Hebrew poetry",
+        "role": "section",
+        "spans": [
+          "2:2–9"
+        ],
+        "description": "Jonah’s prayer recalls distress and rescue, looks toward the temple, and promises thanksgiving. USCCB notes that an earlier independent song may have been incorporated here. That is a proposal about composition; in the received story Jonah prays from the fish before it releases him.",
+        "sourceIds": [
+          "web-jon",
+          "usccb-jon-2"
+        ]
+      },
+      {
+        "label": "Hebrew text and verse boundaries",
+        "language": "Masoretic Hebrew, represented by OSHB/WLC",
+        "role": "translation",
+        "description": "The Hebrew edition places the swallowing at 2:1 and ends that chapter at 2:11. The Hebrew text displayed alongside WEB uses WEB’s reference numbers. A difference in numbering does not mean that either edition lacks the verse.",
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon"
+        ]
+      },
+      {
+        "label": "Greek and Latin traditions in English",
+        "language": "Greek Septuagint and Latin Vulgate, represented by Brenton and Douay-Rheims",
+        "role": "translation",
+        "description": "These editions begin chapter 2 with the swallowing. Their wording also differs: Brenton gives three days in the Nineveh announcement and calls the sea creature a whale; Douay-Rheims calls Jonah’s shade plant ivy. These are differences to compare, not reasons to silently replace WEB wording.",
+        "sourceIds": [
+          "english-editions"
+        ]
+      },
+      {
+        "label": "Jonah in the Gospels",
+        "language": "Greek New Testament, read here in English",
+        "role": "translation",
+        "description": "Matthew 12:39–41 connects Jonah’s three days with the Son of Man and contrasts Nineveh’s response with its audience. Luke 11:29–32 emphasizes Jonah as a sign and the Ninevites’ response. These are later Christian readings, distinct from claiming that Jonah’s narrative itself names Jesus.",
+        "sourceIds": [
+          "gospel-reception"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Arising can lead into flight, and descent keeps recurring",
+        "original": "קוּם — qum — arise; וַיֵּרֶד — vayyēred — and he went down",
+        "explanation": "God commands Jonah to arise and go; Jonah arises to flee instead. His movement goes down to Joppa, into the ship, and into its inner parts. In the prayer he recalls going down to the roots of the mountains, then credits God with bringing his life up. The second commission repeats the call, and this time he goes to Nineveh.",
+        "translationNote": "WEB preserves several of the down/up movements. The captain’s call to arise also echoes the opening command, creating a contrast between Jonah’s commission and his sleeping.",
+        "caution": "This is a pattern in the telling, not a license to give every geographical descent a fixed moral meaning.",
+        "refs": [
+          "1:2",
+          "1:3",
+          "1:5",
+          "1:6",
+          "2:6",
+          "3:2",
+          "3:3"
+        ],
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon"
+        ]
+      },
+      {
+        "title": "Greatness links cities, weather, fear, and emotion",
+        "original": "גָּדוֹל / גְּדוֹלָה — gadol / gedolah — great",
+        "explanation": "The recurring adjective connects the great city with a great wind, storm, fish, and fear. It also intensifies Jonah’s displeasure and his joy over the plant. The size of his reactions becomes part of the irony: mercy for many people angers him, while shade for himself delights him.",
+        "translationNote": "English uses great, huge, mighty, exceedingly, and similar expressions, so the Hebrew recurrence is less visible. Its force depends on the noun or emotion it qualifies.",
+        "caution": "Repeated greatness is a literary signal; it does not turn the city’s three-day description into a precise archaeological measurement.",
+        "refs": [
+          "1:2",
+          "1:4",
+          "1:10",
+          "1:17",
+          "3:3",
+          "4:1",
+          "4:6"
+        ],
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon"
+        ]
+      },
+      {
+        "title": "Evil, disaster, and displeasure share a word family",
+        "original": "רָעָה — raʿah — evil, harm, or trouble",
+        "explanation": "Related Hebrew forms describe Nineveh’s wrongdoing, the sailors’ calamity, the disaster God does not bring, and Jonah’s reaction to that mercy. The recurrence draws together moral evil and experienced harm without making them identical: the city turns from its evil, God withholds disaster, and Jonah regards the outcome as intolerable.",
+        "translationNote": "WEB uses wickedness, evil, disaster, displeased, and discomfort across these contexts. A single English gloss would hide important differences in meaning.",
+        "caution": "God’s relenting from disaster is not described as God repenting of moral wrongdoing. Jonah’s displeasure is the character’s response, not the narrator’s approval.",
+        "refs": [
+          "1:2",
+          "1:7",
+          "3:8",
+          "3:10",
+          "4:1",
+          "4:6"
+        ],
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon",
+          "usccb-jon-4"
+        ]
+      },
+      {
+        "title": "The same verb introduces a fish, a plant, a worm, and a wind",
+        "original": "וַיְמַן — vayman — and he appointed or prepared",
+        "explanation": "The verb recurs when God provides the fish and later the plant, worm, and east wind. These very different agents shape Jonah’s experience: rescue and relief are followed by loss and exposure. The final lesson grows through this sequence rather than through a new sermon to Nineveh.",
+        "translationNote": "WEB repeats prepared in all four places; Brenton uses commanded. The repeated Hebrew verb is a stronger link than any attempt to identify a fish species or plant variety.",
+        "caution": "The appointments belong to this narrative. They do not establish that every misfortune in a reader’s life is a coded divine lesson.",
+        "refs": [
+          "1:17",
+          "4:6",
+          "4:7",
+          "4:8"
+        ],
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon",
+          "english-editions",
+          "net-jon"
+        ]
+      },
+      {
+        "title": "Turning from violence meets the possibility of relenting",
+        "original": "שׁוּב — shuv — turn or return; נָחַם — naḥam — relent or change one’s intention in this context",
+        "explanation": "The king calls for people to turn from evil and violence, then asks whether God might turn and relent. The narrator says God sees their changed conduct and does not carry out the announced disaster. The king’s question leaves room for hope without claiming control over the outcome.",
+        "translationNote": "WEB’s turn and relent distinguish the human response from the divine decision. Older repent wording for God concerns the threatened action, not a confession of sin.",
+        "caution": "The account links mercy with changed conduct, not merely with wearing sackcloth or following a technique that guarantees safety.",
+        "refs": [
+          "3:8",
+          "3:9",
+          "3:10",
+          "4:2"
+        ],
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon",
+          "english-editions",
+          "net-jon"
+        ]
+      },
+      {
+        "title": "The closing question turns Jonah’s concern outward",
+        "original": "חַסְתָּ / אָחוּס — ḥasta / aḥus — you cared or pitied / I should care or spare",
+        "explanation": "The same verb family describes Jonah’s concern for the plant and God’s concern for Nineveh. The contrast moves from an unearned source of shade to a large population and many animals. The book supplies no reply from Jonah, leaving the question before the reader.",
+        "translationNote": "WEB repeats concerned, while other editions use pity and spare. The contrast includes the emphatic you and I in the final exchange.",
+        "caution": "The people and animals are part of the stated concern. Do not reduce them to background props in a lesson about the prophet alone.",
+        "refs": [
+          "4:10",
+          "4:11"
+        ],
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon",
+          "english-editions",
+          "usccb-jon-4"
+        ]
+      }
+    ],
+    "examplesHeading": "Hebrew expressions to notice",
+    "examples": [
+      {
+        "ref": "1:3",
+        "form": "וַיֵּרֶד — vayyēred",
+        "meaning": "And he went down.",
+        "why": "The repeated descent into Joppa and the ship continues in the story and is answered by the upward rescue recalled in the prayer.",
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon"
+        ]
+      },
+      {
+        "ref": "1:17",
+        "form": "דָּג גָּדוֹל — dag gadol",
+        "meaning": "A great fish.",
+        "why": "The Hebrew does not specify a modern biological species. Compare Brenton’s whale at its 2:1 without changing the WEB reference.",
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon",
+          "english-editions"
+        ]
+      },
+      {
+        "ref": "3:9",
+        "form": "מִי יוֹדֵעַ — mi yodeaʿ",
+        "meaning": "Who knows?",
+        "why": "The king voices a possibility that God might relent; he does not announce that the fast guarantees the city’s survival.",
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon"
+        ]
+      },
+      {
+        "ref": "3:10",
+        "form": "וַיִּנָּחֶם — vayyinnaḥem",
+        "meaning": "And he relented.",
+        "why": "The following clause specifies the action withheld: God does not bring the disaster he had announced.",
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon"
+        ]
+      },
+      {
+        "ref": "4:1",
+        "form": "רָעָה גְדוֹלָה — raʿah gedolah",
+        "meaning": "Great evil or trouble, here expressing Jonah’s intense displeasure.",
+        "why": "The word family used for the city’s evil and its threatened disaster now exposes Jonah’s reaction when the city is spared.",
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon"
+        ]
+      },
+      {
+        "ref": "4:11",
+        "form": "אָחוּס — aḥus",
+        "meaning": "I should care, pity, or spare.",
+        "why": "God’s question takes up the verb used for Jonah’s concern over the plant in the preceding verse and extends the comparison to Nineveh.",
+        "sourceIds": [
+          "hebrew-jon",
+          "web-jon"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A prophetic story with a thanksgiving prayer",
+    "how": "Follow the two commissions, the responses of the outsiders, and Jonah’s delayed explanation. Read the prayer as poetry within the story. Irony and theological argument matter whether one understands the narrative as a teaching story or as a literary account of events."
+  },
+  "cast": [
+    {
+      "name": "Jonah",
+      "who": "The prophet sent to Nineveh, rescued at sea, and challenged about his anger."
+    },
+    {
+      "name": "Yahweh / God",
+      "who": "The one who commands, rescues, responds to changed conduct, and questions Jonah."
+    },
+    {
+      "name": "The sailors and captain",
+      "who": "People who initially call on several gods, try to save Jonah, and finally pray and make vows to Yahweh."
+    },
+    {
+      "name": "The Ninevites, king, and nobles",
+      "who": "The city’s people respond to the warning; its unnamed ruler orders fasting and a turn from violence."
+    },
+    {
+      "name": "Fish, plant, worm, wind, and animals",
+      "who": "Nonhuman life and forces are active in the narrative, and animals are explicitly included in the final concern."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Flight, storm, and rescue",
+      "chapters": "1",
+      "precise": "1:1–17",
+      "note": "A commission leads to flight; the sailors respond to danger, Jonah is thrown into the sea, and the fish swallows him. The last verse bridges into the prayer."
+    },
+    {
+      "heading": "Thanksgiving from the depths",
+      "chapters": "2",
+      "precise": "2:1–10",
+      "note": "The narrative introduces a prayer of distress and deliverance, then returns to the fish releasing Jonah on dry land."
+    },
+    {
+      "heading": "A second commission and a spared city",
+      "chapters": "3",
+      "precise": "3:1–10",
+      "note": "Jonah goes to Nineveh, announces overthrow, and sees a response extending from the people to their ruler. God sees their changed conduct and withholds disaster."
+    },
+    {
+      "heading": "Anger, shade, and the unanswered question",
+      "chapters": "4",
+      "precise": "4:1–11",
+      "note": "Jonah explains his flight, objects to mercy, and experiences the gift and loss of shade. God ends by comparing concern for a plant with concern for the city."
+    }
+  ],
+  "purpose": "The narrative tests the limits people place on compassion. It takes violence and changed conduct seriously while challenging a prophet who celebrates rescue for himself but resents the sparing of others.",
+  "snags": [
+    {
+      "snag": "Does the prophet’s name settle the book’s author or date?",
+      "help": "Jonah son of Amittai also appears in 2 Kings 14:25, but the book does not say that he wrote it. Keep that biblical identification separate from disputed composition history and from the unnamed king in Nineveh."
+    },
+    {
+      "snag": "Why does chapter 2 begin in different places?",
+      "help": "WEB and KJV put the swallowing at 1:17; Douay-Rheims, Brenton, and the upstream Hebrew text put it at 2:1. Their 2:2–11 corresponds to WEB 2:1–10. The Hebrew panel here follows WEB references. Check the words as well as the numbers: Brenton’s clause at 2:6 runs into 2:7."
+    },
+    {
+      "snag": "Was the creature definitely a whale?",
+      "help": "WEB says a huge fish and the Hebrew says a great fish. Brenton uses whale. The narrative identifies its role and the time Jonah spends inside it, but gives no biological description that establishes a species."
+    },
+    {
+      "snag": "Is the prayer a complete confession of Jonah’s refusal?",
+      "help": "The prayer thanks God for deliverance and promises sacrifice and vows. It does not explicitly confess the refusal to go to Nineveh. It remembers rescue while Jonah is still in the fish; the narrative reports his release afterward. His later anger prevents a simple claim that every aspect of his attitude has changed."
+    },
+    {
+      "snag": "Does Sheol mean that the book plainly reports Jonah’s death?",
+      "help": "In WEB 2:2 the prayer speaks from the belly of Sheol, the realm of the dead. The surrounding language portrays overwhelming danger and rescue from the pit. The narrative does not separately report Jonah dying and being raised; later Christian comparisons should be distinguished from that claim."
+    },
+    {
+      "snag": "How many days does Nineveh have?",
+      "help": "WEB, KJV, Douay-Rheims, and the Hebrew give forty at 3:4. Brenton gives three. Preserve that real textual difference rather than confusing either number with the city’s three-day journey or Jonah’s three days in the fish."
+    },
+    {
+      "snag": "Can the city’s size or its unnamed king supply a firm historical reconstruction?",
+      "help": "The story calls Nineveh exceedingly great and describes a three-day journey. Its king is unnamed. These details do not establish a particular ruler, a measured city perimeter, or a documented Assyrian conversion event."
+    },
+    {
+      "snag": "Does God’s relenting mean a moral failure by God?",
+      "help": "At 3:10 the narrator says God does not carry out the threatened disaster after seeing the people turn from evil. The vocabulary describes a changed course of action. The text does not present God as confessing wrongdoing."
+    },
+    {
+      "snag": "What kind of plant shelters Jonah?",
+      "help": "WEB calls it a vine, KJV and Brenton a gourd, and Douay-Rheims ivy. The Hebrew qiqayon has prompted different botanical identifications. Its clear role is to provide shade, then wither; a precise species is not needed to follow the argument."
+    },
+    {
+      "snag": "Are the more than 120,000 people in the last verse all infants?",
+      "help": "The text calls them people who cannot distinguish right from left. Whether that describes children or a broader lack of discernment is debated; do not present an infant count as an established census or multiply it into a confidently reconstructed population."
+    },
+    {
+      "snag": "Does Jonah eventually accept the lesson?",
+      "help": "The book ends with God’s question and gives no final answer from Jonah. His wishes to die in chapter 4 are part of his distress and anger, not instructions or a medical diagnosis. Leave the ending’s challenge open."
+    },
+    {
+      "snag": "Should Jonah be treated as a portrait of an entire people?",
+      "help": "The narrative contrasts a named prophet with sailors and Ninevites, while insisting that Nineveh turn from evil and violence. Its critique of Jonah does not license claims that Jews, Israelites, Assyrians, or any modern people all share one moral character."
+    }
+  ],
+  "debates": [
+    {
+      "question": "How should the narrative’s relation to history be understood?",
+      "settled": "The book tells a carefully shaped story about a prophet known from 2 Kings and ends by challenging his response to mercy.",
+      "positions": [
+        {
+          "view": "A teaching story, often read as satire or parable",
+          "grounds": "USCCB highlights irony, exaggeration, and the story’s theological challenge, and lists these genre descriptions."
+        },
+        {
+          "view": "A teaching narrative intended as an account of events",
+          "grounds": "T. Desmond Alexander argues that the opening resembles historical prophetic narratives and that literary design alone cannot prove fiction."
+        }
+      ],
+      "soWhat": "Genre remains disputed. Neither a confident date for every episode nor dismissal of the story’s literary force follows simply from the prophet’s name."
+    },
+    {
+      "question": "Was the prayer written for this story?",
+      "settled": "The received book places a poetic thanksgiving in Jonah’s mouth between the swallowing and his release.",
+      "positions": [
+        {
+          "view": "A poem shaped for its narrative setting",
+          "grounds": "Its sea, descent, rescue, sacrifice, and vow language connects with the surrounding story."
+        },
+        {
+          "view": "An earlier thanksgiving incorporated into the narrative",
+          "grounds": "USCCB notes this possibility because the passage resembles an independent song of thanksgiving."
+        }
+      ],
+      "soWhat": "Read its present role closely without treating a possible earlier stage as a recovered manuscript history."
+    }
+  ],
+  "sources": [
+    {
+      "id": "web-jon",
+      "label": "Jonah in the World English Bible",
+      "says": "Primary narrative, prayer, voices, exact references, and measured size.",
+      "href": "/scriptures/text/web/JON.json"
+    },
+    {
+      "id": "english-editions",
+      "label": "Jonah in WEB, KJV, Douay-Rheims, and Brenton",
+      "says": "Direct comparison shows the fish/prayer boundary, local clause differences, forty versus three days, and fish and plant wording."
+    },
+    {
+      "id": "hebrew-jon",
+      "label": "Open Scriptures Hebrew Bible: Jonah",
+      "says": "Pinned Hebrew text and morphology for repeated words, exact examples, and original verse numbering. OSHB morphology is CC BY 4.0; the WLC text is public domain.",
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Jonah.xml"
+    },
+    {
+      "id": "kings-jonah",
+      "label": "2 Kings 14:23–25 in WEB",
+      "says": "Places Jonah son of Amittai of Gath Hepher in the account of Jeroboam son of Joash.",
+      "href": "/scriptures/text/web/2KI.json"
+    },
+    {
+      "id": "gospel-reception",
+      "label": "Matthew 12:39–41 and Luke 11:29–32 in WEB",
+      "says": "Primary evidence for the differing emphases of the sign of Jonah in later Christian interpretation."
+    },
+    {
+      "id": "usccb-jon-intro",
+      "label": "USCCB, Introduction to Jonah",
+      "says": "Qualified postexilic dating and literary readings focused on irony, mercy, and the prophet’s response.",
+      "url": "https://bible.usccb.org/bible/jonah/0"
+    },
+    {
+      "id": "usccb-jon-1",
+      "label": "USCCB, Jonah 1 notes",
+      "says": "The connection with the eighth-century prophet and uncertainty about Tarshish’s precise location.",
+      "url": "https://bible.usccb.org/bible/jonah/1"
+    },
+    {
+      "id": "usccb-jon-2",
+      "label": "USCCB, Jonah 2 notes",
+      "says": "The prayer as thanksgiving and the possibility of an earlier independent composition; this edition uses Hebrew chapter boundaries.",
+      "url": "https://bible.usccb.org/bible/jonah/2"
+    },
+    {
+      "id": "usccb-jon-4",
+      "label": "USCCB, Jonah 4 notes",
+      "says": "The range of evil/harm language, the shade plant, and the repeated verb of concern in the ending.",
+      "url": "https://bible.usccb.org/bible/jonah/4"
+    },
+    {
+      "id": "net-jon",
+      "label": "NET Bible, Jonah translation notes",
+      "says": "Checks the appointment verb, turning and relenting, and uncertainty over the right/left expression.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/jon.pdf"
+    },
+    {
+      "id": "alexander-genre",
+      "label": "T. Desmond Alexander, Jonah and Genre, Tyndale Bulletin 36 (1985)",
+      "says": "A scholarly argument for a historical teaching narrative and a caution against treating literary design as proof of fiction.",
+      "url": "https://www.tyndalebulletin.org/article/30568-jonah-and-genre.pdf"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Compare the first and second commissions, then wait for Jonah’s own explanation of his flight.",
+      "refs": [
+        "1:2",
+        "1:3",
+        "3:2",
+        "3:3",
+        "4:2"
+      ]
+    },
+    {
+      "tip": "Compare the sailors’ prayers and vows with Jonah’s profession and thanksgiving.",
+      "refs": [
+        "1:6",
+        "1:9",
+        "1:14",
+        "1:16",
+        "2:9"
+      ]
+    },
+    {
+      "tip": "Read the king’s uncertainty and the narrator’s description of changed conduct together.",
+      "refs": [
+        "3:8",
+        "3:9",
+        "3:10"
+      ]
+    },
+    {
+      "tip": "Follow the appointed fish, plant, worm, and wind, then leave the final question unanswered as the book does.",
+      "refs": [
+        "1:17",
+        "4:6",
+        "4:7",
+        "4:8",
+        "4:10",
+        "4:11"
+      ]
+    }
+  ],
+  "next": "Compare Nahum’s judgment on Nineveh with Jonah’s spared city, and Matthew 12 with Luke 11 for later readings of Jonah. These different settings and arguments should remain visible rather than being flattened into a single account.",
+  "traditionNote": "Jonah belongs to the Twelve Prophets in the Hebrew Bible and Christian Old Testaments. References here follow WEB; the fish/prayer chapter boundary differs in Hebrew, Douay-Rheims, and Brenton, while all four English editions contain 48 verses."
+}

@@ -2,7 +2,7 @@
 
 import { SEMANTIC_DOWNLOAD_NOTICE } from "@/lib/scriptures/semantic-model";
 
-import { useState, useCallback, useEffect, useId } from "react";
+import { useState, useCallback, useEffect, useId, useRef } from "react";
 import { useSemanticRequest } from "@/lib/use-semantic-request";
 import { isAbortError } from "@/lib/scriptures/cancellation";
 import Link from "next/link";
@@ -36,6 +36,7 @@ export default function ResonanceRadar({
   const [result, setResult] = useState<OmniResonanceResult | null>(null);
   const [selectedHorizon, setSelectedHorizon] = useState<HorizonId | "all">("all");
   const inputId = useId();
+  const inputRef = useRef<HTMLInputElement>(null);
   const { begin, cancel } = useSemanticRequest();
 
   const runSearch = useCallback((q: string, explicit = true) => {
@@ -44,7 +45,7 @@ export default function ResonanceRadar({
     const request = begin();
     if (explicit) rememberMeaningSearchOptIn();
     setPhase("loading");
-    setStatus("Preparing semantic vector engine…");
+    setStatus("Preparing the search on your device…");
     setActiveQuery(trimmed);
 
     search(trimmed, {
@@ -84,12 +85,12 @@ export default function ResonanceRadar({
   return (
     <section
       className={`scr-resonance-matrix ${standalone ? "scr-resonance-standalone" : ""}`}
-      aria-label="Omni-Corpus Conceptual Resonance Matrix"
+      aria-label="Find similar passages"
     >
       <div className="scr-resonance-header">
         <div className="scr-resonance-titles">
-          <span className="scr-resonance-kicker">Corpus Comparison Radar</span>
-          <h2 className="scr-resonance-title">Omni-Corpus Conceptual Resonance</h2>
+          <span className="scr-resonance-kicker">Search by meaning</span>
+          <h2 className="scr-resonance-title">Find similar passages</h2>
           <p className="scr-resonance-lead">
             Explore similar wording across {HORIZON_ORDER.length} corpus groups, including
             complete Gospel chapters, additional Scripture books, early texts, and
@@ -111,6 +112,7 @@ export default function ResonanceRadar({
           <div className="scr-resonance-input-wrap">
             <input
               id={inputId}
+              ref={inputRef}
               type="text"
               className="scr-resonance-input"
               value={query}
@@ -122,14 +124,14 @@ export default function ResonanceRadar({
               className="scr-btn scr-resonance-submit"
               disabled={phase === "loading"}
             >
-              {phase === "loading" ? "Tracing…" : "Compute Resonance"}
+              {phase === "loading" ? "Searching…" : "Find similar passages"}
             </button>
           </div>
         </form>
 
         {/* Curated Sparks */}
         <div className="scr-resonance-sparks" aria-label="Conceptual spark presets">
-          <span className="scr-resonance-sparks-label">Iconic Concepts:</span>
+          <span className="scr-resonance-sparks-label">Try a theme:</span>
           <div className="scr-resonance-spark-chips">
             {RESONANCE_SPARKS.map((spark) => (
               <button
@@ -150,20 +152,29 @@ export default function ResonanceRadar({
       {phase === "loading" && (
         <div className="scr-resonance-status" role="status" aria-live="polite">
           <div className="scr-resonance-spinner" aria-hidden="true" />
-          <p>{status || "Computing cross-horizon resonance…"}</p>
+          <p>{status || "Comparing passages…"}</p>
+          <button type="button" className="scr-btn" onClick={() => {
+            cancel();
+            setPhase("idle");
+            setStatus("Search stopped. You can change the question and try again.");
+            inputRef.current?.focus();
+          }}>Stop search</button>
         </div>
       )}
 
       {phase === "error" && (
         <div className="scr-resonance-error" role="alert">
           <p>
-            Unable to compute resonance. Please check your connection or try again.
+            The search could not finish. Check your connection, then try again. You can also use exact-word search without downloading the meaning-search model.
           </p>
+          <button type="button" className="scr-btn" onClick={() => { runSearch(activeQuery); inputRef.current?.focus(); }}>Try again</button>
+          <Link href="/scriptures/search">Search the text</Link>
         </div>
       )}
 
       {phase === "idle" && (
         <div className="scr-resonance-empty-state">
+          {status && <p role="status">{status}</p>}
           <p>
             Select one of the iconic concepts above or enter any biblical, theological,
             or classical theme to compare the indexed corpus groups. {SEMANTIC_DOWNLOAD_NOTICE}

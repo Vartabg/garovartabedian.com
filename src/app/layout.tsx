@@ -8,6 +8,7 @@ import AccessibilityMenu from "./_components/AccessibilityMenu";
 import FindOverlay from "./_components/FindOverlay";
 import DocumentPolicyBoundary from "./_components/DocumentPolicyBoundary";
 import PenWrites from "./_components/PenWrites";
+import DiscoveryLens from "./_components/DiscoveryLens";
 import IlluminatedEffects from "./_components/IlluminatedEffects";
 
 const atkinson = localFont({
@@ -119,16 +120,90 @@ const fraunces = localFont({
   variable: "--font-fraunces",
 });
 
+// The hands of the record (Garo picked "Titulus Type", 2026-10-16). Headlines
+// take the letterform of the era their words come from: Roman inscriptional
+// capitals, the uncial book hand, blackletter, Renaissance print, and today's
+// Fraunces. All are open-license (OFL) designs drawn after those hands.
+const cinzel = localFont({
+  src: [
+    {
+      path: "../../node_modules/@fontsource-variable/cinzel/files/cinzel-latin-wght-normal.woff2",
+      weight: "400 900",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
+  fallback: ["Times New Roman", "serif"],
+  variable: "--font-cinzel",
+});
+
+const uncial = localFont({
+  src: [
+    {
+      path: "../../node_modules/@fontsource/uncial-antiqua/files/uncial-antiqua-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
+  fallback: ["Georgia", "serif"],
+  preload: false,
+  variable: "--font-uncial",
+});
+
+const fraktur = localFont({
+  src: [
+    {
+      path: "../../node_modules/@fontsource/unifrakturmaguntia/files/unifrakturmaguntia-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
+  fallback: ["Georgia", "serif"],
+  preload: false,
+  variable: "--font-fraktur",
+});
+
+const garamond = localFont({
+  src: [
+    {
+      path: "../../node_modules/@fontsource-variable/eb-garamond/files/eb-garamond-latin-wght-normal.woff2",
+      weight: "400 800",
+      style: "normal",
+    },
+    {
+      path: "../../node_modules/@fontsource-variable/eb-garamond/files/eb-garamond-latin-wght-italic.woff2",
+      weight: "400 800",
+      style: "italic",
+    },
+  ],
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
+  fallback: ["Georgia", "serif"],
+  preload: false,
+  variable: "--font-garamond",
+});
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#e9d9b4" },
-    { media: "(prefers-color-scheme: dark)", color: "#17110c" },
+    { media: "(prefers-color-scheme: light)", color: "#ece4d0" },
+    { media: "(prefers-color-scheme: dark)", color: "#120f1c" },
   ],
 };
 import { PROFILE } from "@/lib/portfolio-content";
+// Cardo sets Scripture: one family for Latin, Greek, and pointed Hebrew, made
+// for scholars of biblical texts. Fontsource's CSS keeps the per-script
+// unicode-range subsets, so a page downloads only the scripts it shows.
+import "@fontsource/cardo/400.css";
+import "@fontsource/cardo/400-italic.css";
+import "@fontsource/cardo/700.css";
 import "./globals.css";
 
 /** schema.org Person — feeds the Google knowledge panel and name searches. */
@@ -206,11 +281,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
+      data-scroll-behavior="smooth"
       lang="en"
       dir="ltr"
       data-a11y-theme="system"
       data-a11y-font="book"
-      className={`${atkinson.variable} ${atkinsonMono.variable} ${openDyslexic.variable} ${fraunces.variable}`}
+      className={`${atkinson.variable} ${atkinsonMono.variable} ${openDyslexic.variable} ${fraunces.variable} ${cinzel.variable} ${uncial.variable} ${fraktur.variable} ${garamond.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -221,7 +297,7 @@ export default function RootLayout({
         />
         {/* Without JS the IntersectionObserver never fires — keep .reveal content visible. */}
         <noscript>
-          <style>{`.reveal{opacity:1;transform:none}`}</style>
+          <style>{`.reveal{opacity:1;transform:none}.discovery-lens{display:none}`}</style>
         </noscript>
         <script
           type="application/ld+json"
@@ -237,6 +313,7 @@ export default function RootLayout({
         <a className="skip-link" href="#main">
           Skip to content
         </a>
+        <DiscoveryLens />
         {children}
         {/* The nav's Find button only flips a bridge flag; this is what listens
             for it and renders the dialog. The same 39-branch auto-merge that

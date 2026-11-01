@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { WordData } from "@/lib/word/types";
 import GlossText from "../_components/GlossText";
 import WorldDisclosure from "../_components/WorldDisclosure";
@@ -13,7 +14,7 @@ import WordLedger from "./WordLedger";
 const COUNT_WORDS = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 
 /** Interactive body for the Word world home — data from the server. */
-export default function WordHome({ data }: { data: WordData }) {
+export default function WordHome({ data, audioOverview }: { data: WordData; audioOverview: ReactNode }) {
   // Glossary: dot a foreign term once per page visit.
   const glossSeen = new Map<string, string>();
   // The reader's own hosted-text count, so this sentence cannot go stale.
@@ -71,6 +72,8 @@ export default function WordHome({ data }: { data: WordData }) {
           },
         ]}
       />
+
+      {audioOverview}
 
       <WordLedger ledger={data.ledger} />
       <SourceBasis id="word-ledger" />

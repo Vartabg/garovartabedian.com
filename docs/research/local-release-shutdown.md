@@ -34,3 +34,25 @@ well-behaved worker runs under deadlines it must never reach: its test proves
 the protocol, not latency, and a loaded machine can take several hundred
 milliseconds to fork a child, exchange two messages and reap it. Separate tests
 cover open inherited browser pipes and the parent's missing shutdown events.
+
+The production release bounds each tool command to 30 minutes, with 90 minutes
+for staging the verified artifact. The previous large-site upload took longer
+than 45 minutes. Both limits use the same owned-process
+termination and cleanup, and a timeout still fails the release. Verification,
+deployment identity checks and promotion remain required.
+
+The pinned Vercel CLI is 65.0.0. Its native uploader retries nested transient
+socket errors and HTTP 5xx responses even when the error body is not JSON.
+Archive size and upload concurrency remain the CLI defaults; this does not
+guarantee a successful upload on a slow or interrupted connection.
+
+The Lighthouse accessibility pass disables its optional full-page screenshot
+artifact. Two October 21 reports spent about 299 seconds collecting that image
+after navigation and accessibility collection had completed normally. The
+image does not contribute to an accessibility audit or score. All accessibility
+audits, the 95% threshold, 47-route coverage and both Axe color schemes remain
+required. A Lighthouse warning that page-load evidence may be incomplete now
+triggers the existing fresh-Chrome retry, up to three attempts; three incomplete
+attempts still fail without publishing a report. Other informational warnings
+do not invalidate a completed report. The existing 15-minute worker deadline
+and owned-browser shutdown bounds remain in force.

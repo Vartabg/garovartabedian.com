@@ -13,7 +13,7 @@ test("resonance preserves download choice, searches every group, and opens the i
   await expect(input).toHaveValue("word made flesh logos wisdom");
   await expect(page.getByText(/first meaning search downloads about 47 MB/)).toBeVisible();
   expect(modelRequests).toHaveLength(0);
-  await page.getByRole("button", { name: "Compute Resonance", exact: true }).click();
+  await page.getByRole("button", { name: "Find similar passages", exact: true }).click();
   const coverage = page.getByText("Index coverage: 1402 of 1402 indexed Scripture chapters assigned", { exact: true });
   await expect(coverage).toBeVisible({ timeout: 90_000 });
   await expect(page.getByRole("region", { name: "Relative similarity across corpus groups" }).getByRole("button")).toHaveCount(9);
@@ -32,6 +32,6 @@ test("resonance preserves download choice, searches every group, and opens the i
   await expect(link).toHaveAttribute("href", /\?t=web$/);
   await link.click();
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-  await expect(page.getByText(/World English Bible · \d+ verses/)).toBeVisible();
+  await expect(page.locator(".scr-rh .scr-read-meta")).toContainText("World English Bible");
   expect(errors).toEqual([]);
 });

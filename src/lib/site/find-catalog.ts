@@ -1,3 +1,5 @@
+import { SYNOPTIC_FIGURES } from "@/lib/jesus/synoptic-figures";
+import { JOHN_FIGURES } from "@/lib/jesus/john-figures";
 /**
  * Every place Find can jump to without asking a model or a server.
  *
@@ -12,6 +14,10 @@ import giantsJson from "../../../public/church/giants.json";
 import readingPathsJson from "../../../public/meta/reading-paths.json";
 import councilsJson from "../../../public/church/councils.json";
 import propheciesJson from "../../../public/jesus/prophecies.json";
+import parablesJson from "../../../public/jesus/parables.json";
+import { THOMAS_PARABLES } from "@/lib/jesus/thomas-parables";
+import { JAMES_PARABLES } from "@/lib/jesus/james-parables";
+import { EARLY_FIGURES } from "@/lib/jesus/early-figures";
 import casesJson from "../../../public/word/cases.json";
 import lifeJson from "../../../public/jesus/life.json";
 import type { Apostle, TwelveData } from "@/lib/apostles/types";
@@ -20,6 +26,7 @@ import earlySectionsJson from "../../../public/early/catalog.json";
 import { EARLY_TEXTS, TEXT_ERA, eraById } from "@/lib/early/client";
 import { WORLD_GUIDES, type WorldId } from "@/lib/world-guidance";
 import { WORLD_REGISTRY } from "@/lib/world-registry";
+import { getWorldRoutes } from "@/lib/site-navigation";
 
 export type FindKind =
   | "world"
@@ -32,6 +39,7 @@ export type FindKind =
   | "council"
   | "case"
   | "prophecy"
+  | "parable"
   | "event"
   | "action";
 
@@ -66,6 +74,7 @@ const WORLD_ALIASES: Record<WorldId, string[]> = {
 
 const ROOM_ALIASES: Record<string, string[]> = {
   "/scriptures/search": ["ask", "concordance", "find verse"],
+  "/scriptures/word-bridge": ["wordbridge", "word bridge", "original words", "strongs", "grammar", "hebrew", "greek"],
   "/scriptures/topics": ["nave", "subjects"],
   "/scriptures/graph": ["path", "graph", "pagerank", "shortest path", "threads", "citation path", "six degrees"],
   "/scriptures/polyglot": ["hexapla", "polyglot", "interlinear", "brenton", "vulgate", "masoretic", "apparatus", "divergence", "witnesses", "origen"],
@@ -127,9 +136,9 @@ const PAGES: Array<{ href: string; title: string; note: string; keywords: string
   },
   {
     href: "/jesus/dossier",
-    title: "Jesus Christ NotebookLM Research Dossier Engine",
+    title: "Jesus research worksheets",
     note: "Synthesize source-grounded research dossiers on the Historical Jesus, Messianic Prophecy, and Roman/Jewish historiography for Google NotebookLM.",
-    keywords: ["jesus", "christ", "dossier", "notebooklm", "audio overview", "testimonium", "josephus", "isaiah 53", "son of man", "tacitus", "minimal facts", "seven sayings"],
+    keywords: ["jesus", "christ", "dossier", "worksheet", "notebooklm", "audio overview", "testimonium", "josephus", "isaiah 53", "son of man", "tacitus", "minimal facts", "seven sayings"],
   },
   {
     href: "/scriptures/diachronic",
@@ -163,9 +172,9 @@ const PAGES: Array<{ href: string; title: string; note: string; keywords: string
   },
   {
     href: "/jesus/harmony",
-    title: "Synoptic Harmony & Pericope Diffing",
+    title: "Gospels word by word",
     note: "Side-by-side multi-gospel alignment with mathematical word-level diffing (Triple Tradition, Q-material, Sondergut).",
-    keywords: ["harmony", "synoptic", "diff", "pericope", "gospels", "sondergut", "triple", "tradition"],
+    keywords: ["harmony", "synoptic", "synoptic harmony", "word by word", "diff", "pericope", "gospels", "sondergut", "triple", "tradition"],
   },
   {
     href: "/hire",
@@ -236,11 +245,14 @@ export const READING_PATHS: ReadingPath[] = (
 function buildCatalog(): FindPlace[] {
   const places: FindPlace[] = [];
   const seen = new Set<string>();
+  const scriptureRoutes = new Map(getWorldRoutes("scriptures").filter(route => route.href !== "/scriptures").map(route => [route.href, route]));
 
   const add = (place: FindPlace) => {
     if (seen.has(place.href)) return;
     seen.add(place.href);
-    places.push(place);
+    const canonical = scriptureRoutes.get(place.href);
+    places.push(canonical ? { ...place, title: canonical.label, note: canonical.note ?? place.note,
+      keywords: tokens(...place.keywords, canonical.label, canonical.note) } : place);
   };
 
   for (const world of WORLD_REGISTRY) {
@@ -476,6 +488,95 @@ function buildCatalog(): FindPlace[] {
     });
   }
 
+  const parables = parablesJson as unknown as Array<{
+    id: string;
+    title: string;
+    snodgrass: string | null;
+    trench: string[];
+    accounts: Array<{ ref: string }>;
+  }>;
+  for (const p of parables) {
+    add({
+      id: `parable-${p.id}`,
+      href: `/jesus/parables#parable-${p.id}`,
+      title: `Parable: ${p.title}`,
+      note: p.accounts.map((a) => a.ref).join(", "),
+      kind: "parable",
+      world: "jesus",
+      keywords: tokens(
+        p.id,
+        p.title,
+        p.snodgrass ?? undefined,
+        ...p.trench,
+        ...p.accounts.map((a) => a.ref),
+        "parable",
+        "parables",
+      ),
+    });
+  }
+
+  for (const figure of SYNOPTIC_FIGURES) {
+    const refs = figure.accounts.map((account) => account.ref);
+    add({
+      id: `parable-${figure.id}`,
+      href: `/jesus/parables#parable-${figure.id}`,
+      title: `Figure: ${figure.title}`,
+      note: `${refs.join(", ")} · parable or figure of speech`,
+      kind: "parable",
+      world: "jesus",
+      keywords: tokens(figure.id, figure.title, ...refs, "Matthew", "Mark", "Luke", "figure of speech", "parable", "parables", ...(figure.thomas ?? []).map((entry) => `Thomas ${entry.saying}`)),
+    });
+  }
+
+  for (const figure of JOHN_FIGURES) {
+    const refs = figure.accounts.map((account) => account.ref);
+    add({
+      id: `parable-${figure.id}`,
+      href: `/jesus/parables#parable-${figure.id}`,
+      title: `John: ${figure.title}`,
+      note: `${refs.join(", ")}${figure.speaker ? ` · ${figure.speaker}` : ""} · figure of speech`,
+      kind: "parable",
+      world: "jesus",
+      keywords: tokens(figure.id, figure.title, ...refs, "John", "Gospel of John", "figure of speech", "parable", "parables"),
+    });
+  }
+
+  for (const story of THOMAS_PARABLES) {
+    add({
+      id: `parable-${story.id}`,
+      href: `/jesus/parables#parable-${story.id}`,
+      title: `Parable: ${story.title}`,
+      note: `Gospel of Thomas, saying ${story.saying} · outside the canon`,
+      kind: "parable",
+      world: "jesus",
+      keywords: tokens(story.id, story.title, "Gospel of Thomas", `Thomas ${story.saying}`, `saying ${story.saying}`, "parable", "parables"),
+    });
+  }
+
+  for (const story of JAMES_PARABLES) {
+    add({
+      id: `parable-${story.id}`,
+      href: `/jesus/parables#parable-${story.id}`,
+      title: `${story.kind === "figure" ? "Figure" : "Parable"}: ${story.title}`,
+      note: `Secret Book of James ${story.locator} · outside the canon`,
+      kind: "parable",
+      world: "jesus",
+      keywords: tokens(story.id, story.title, "Secret Book of James", "Apocryphon of James", story.locator, "parable", "parables"),
+    });
+  }
+
+  for (const figure of EARLY_FIGURES) {
+    add({
+      id: `parable-${figure.id}`,
+      href: `/jesus/parables#parable-${figure.id}`,
+      title: `Figure: ${figure.title}`,
+      note: `${figure.work} · ${figure.speaker} · outside the canon`,
+      kind: "parable",
+      world: "jesus",
+      keywords: tokens(figure.id, figure.title, figure.work, figure.locator, "parable", "figures of speech", ...(figure.thomas ?? []).map(item => `Thomas ${item.saying}`)),
+    });
+  }
+
   const cases = (
     casesJson as {
       cases: Array<{
@@ -563,6 +664,10 @@ function buildCatalog(): FindPlace[] {
     });
   }
 
+  for (const route of scriptureRoutes.values()) {
+    add({ id: `page-${route.href}`, href: route.href, title: route.label, note: route.note ?? "",
+      kind: "page", world: "scriptures", keywords: tokens(route.label, route.note, ...(ROOM_ALIASES[route.href] ?? [])) });
+  }
   return places;
 }
 

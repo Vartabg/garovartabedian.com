@@ -140,7 +140,7 @@ test("every afterlife entry points at a real belief system in the atlas", () => 
 test("every library entry points at translated text in an expanded edition", () => {
   const index = corpusIndex("library");
   const parents = new Set(index.entries.map((entry) => (entry as { parentId: string }).parentId));
-  assert.equal(parents.size, 4773);
+  assert.equal(parents.size, 4785);
   for (const entry of index.entries as { href: string; recordId: string; sectionId: string; source: { path: string } }[]) {
     assert.equal(entry.href, `/early/library/${entry.recordId}/${entry.sectionId}`);
     assert.equal(existsSync(path.join(ROOT, entry.source.path)), true);

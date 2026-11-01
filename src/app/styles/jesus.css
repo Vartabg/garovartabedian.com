@@ -639,6 +639,7 @@
 /* Prophecy pairs */
 .jsu-pair-block {
   margin: 0 0 0.9rem;
+  scroll-margin-top: 6rem;
 }
 .jsu-pair-head {
   display: flex;
@@ -718,6 +719,85 @@
 }
 .jsu-panel p {
   margin: 0.25rem 0 0.75rem;
+}
+/* Parables: one panel per Gospel that tells it */
+.jsu-parable-accounts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+.jsu-panel .jsu-parable-gospel {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+.jsu-panel .jsu-parable-label {
+  margin: 0.7rem 0 0.15rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.jsu-parable-setting p:not(.jsu-parable-label) {
+  color: var(--muted);
+}
+.jsu-parable-vn {
+  margin-right: 0.15em;
+  color: var(--muted);
+  font-size: 0.68em;
+}
+.jsu-parable-sources {
+  margin: 0.6rem 0 0;
+}
+.jsu-parable-method {
+  margin-top: 2.5rem;
+}
+/* Parables: the early writings, each parable's early parallels, and the
+   method note wait behind folds so the Gospel text comes first. */
+.jsu-parable-fold > summary {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 0.15rem 0.75rem;
+  cursor: pointer;
+  list-style: none;
+}
+.jsu-parable-fold > summary::-webkit-details-marker {
+  display: none;
+}
+.jsu-parable-fold > summary::after {
+  grid-row: 1;
+  grid-column: 2;
+  content: "+";
+  color: var(--accent);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.jsu-parable-fold[open] > summary::after {
+  content: "−";
+}
+.jsu-parable-fold > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+/* The summary draws the section rule; the heading keeps its type. */
+.jsu-parable-fold > summary > h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+}
+.jsu-parable-fold > summary > small {
+  grid-column: 1;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.jsu-parable-also {
+  margin-top: 0.75rem;
+}
+.jsu-parable-also > summary {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 0.7rem 1rem;
 }
 .jsu-connection-key {
   display: grid;
@@ -1017,9 +1097,16 @@
   width: 0.55rem;
 }
 .jsu-evidence-legend .is-christian { color: var(--accent); }
-.jsu-evidence-legend .is-jewish { color: #516a86; }
-.jsu-evidence-legend .is-roman { color: #8a623d; }
-.jsu-evidence-legend .is-stone { color: #7a6a52; }
+/* Lane colours; worlds-shared.css lightens them for the dark theme, where the
+   ivory-theme values fell to about 3:1 against the dark surface. */
+.world-jesus {
+  --lane-jewish: #516a86;
+  --lane-roman: #8a623d;
+  --lane-stone: #7a6a52;
+}
+.jsu-evidence-legend .is-jewish { color: var(--lane-jewish); }
+.jsu-evidence-legend .is-roman { color: var(--lane-roman); }
+.jsu-evidence-legend .is-stone { color: var(--lane-stone); }
 .jsu-is-crux {
   fill: var(--accent);
   opacity: 0.16;
@@ -1047,17 +1134,17 @@
 .jsu-is-ink circle {
   fill: var(--accent);
 }
-.jsu-is-ink.is-jewish line { stroke: #516a86; }
-.jsu-is-ink.is-jewish circle { fill: #516a86; }
-.jsu-is-ink.is-roman line { stroke: #8a623d; }
-.jsu-is-ink.is-roman circle { fill: #8a623d; }
+.jsu-is-ink.is-jewish line { stroke: var(--lane-jewish); }
+.jsu-is-ink.is-jewish circle { fill: var(--lane-jewish); }
+.jsu-is-ink.is-roman line { stroke: var(--lane-roman); }
+.jsu-is-ink.is-roman circle { fill: var(--lane-roman); }
 .jsu-is-inklabel {
   fill: var(--ink);
   font-size: 9.5px;
   font-variant-numeric: tabular-nums;
 }
 .jsu-is-stone line {
-  stroke: #7a6a52;
+  stroke: var(--lane-stone);
   stroke-width: 3.5;
   stroke-linecap: round;
   opacity: 0.75;
@@ -3785,11 +3872,9 @@
   font-style: italic;
 }
 
-/* ── Jesus home — the guided path ──────────────────────────────
-   Wayfinding panel, station rail, threshold, and full-map nav.
-   Scroll reveals are CSS-only, gated behind @supports + motion
-   preference; the page is fully readable without them. */
-
+/* ── Two helpers left from the old guided path ───────────────────
+   The home page's path was replaced on 2026-10-04; the dossier and three
+   rooms still use these. */
 .jsu-visually-hidden {
   position: absolute;
   width: 1px;
@@ -3801,315 +3886,8 @@
   white-space: nowrap;
   border: 0;
 }
-
-/* Wayfinding — what this page is and how to walk it */
-.jsu-wayfinding {
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
-  border-radius: 14px;
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, transparent), transparent 62%),
-    var(--surface);
-  margin: 2rem 0 0;
-  padding: clamp(1rem, 2.5vw, 1.5rem);
-}
-.jsu-wayfinding header {
-  max-width: 52rem;
-}
-.jsu-wayfinding-kicker,
-.jsu-threshold-kicker,
-.jsu-all-paths-kicker {
-  color: var(--accent);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin: 0;
-}
-.jsu-wayfinding h2 {
-  font-size: clamp(1.4rem, 3vw, 2.1rem);
-  line-height: 1.15;
-  margin: 0.3rem 0 0;
-}
-.jsu-wayfinding-lede {
-  color: var(--ink);
-  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
-  line-height: 1.6;
-  margin: 0.75rem 0 0;
-  max-width: 52rem;
-}
-.jsu-wayfinding-rules {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin-top: 1.1rem;
-}
-.jsu-wayfinding-rules > div {
-  border-top: 1px solid var(--line);
-  display: grid;
-  gap: 0.35rem;
-  padding-top: 0.75rem;
-}
-.jsu-wayfinding-rules strong {
-  color: var(--accent);
-  font-size: 0.82rem;
-}
-.jsu-wayfinding-rules span {
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-.jsu-wayfinding-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.1rem;
-  margin: 1rem 0 0;
-}
-.jsu-wayfinding-links a {
-  color: var(--accent);
-  font-size: 0.84rem;
-  font-weight: 700;
-  text-underline-offset: 0.2em;
-}
-.jsu-wayfinding-cue {
-  margin: 1.35rem 0 0;
-}
-.jsu-wayfinding-cue a {
-  border-bottom: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
-  color: var(--accent-deep);
-  font-weight: 700;
-  padding-bottom: 0.15rem;
-  text-decoration: none;
-}
-.jsu-wayfinding-cue a:hover {
-  border-bottom-color: var(--accent-deep);
-}
-
-/* Station rail — one numbered path with bridges between stops */
-.jsu-journey {
-  margin-top: clamp(2.5rem, 6vw, 4rem);
-}
-.jsu-stations {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.jsu-stations::before {
-  content: "";
-  position: absolute;
-  left: 1.55rem;
-  top: 0.8rem;
-  bottom: 0.8rem;
-  width: 2px;
-  background: color-mix(in srgb, var(--accent) 32%, var(--line));
-}
-.jsu-station {
-  display: grid;
-  grid-template-columns: 3.25rem minmax(0, 1fr);
-  gap: clamp(0.9rem, 2.5vw, 1.4rem);
-  padding: clamp(1.1rem, 3vw, 1.6rem) 0;
-  position: relative;
-  scroll-margin-top: 5rem;
-}
-.jsu-station + .jsu-station {
-  border-top: 1px dashed color-mix(in srgb, var(--accent) 22%, var(--line));
-}
-.jsu-station-index {
-  align-items: center;
-  background: var(--accent);
-  border-radius: 999px;
-  color: var(--accent-ink);
-  display: flex;
-  font-size: 0.95rem;
-  font-weight: 700;
-  height: 3.1rem;
-  justify-content: center;
-  position: relative;
-  width: 3.1rem;
-  z-index: 1;
-}
-.jsu-station-body {
-  max-width: 46rem;
-}
-.jsu-station-connector {
-  color: var(--muted);
-  font-size: 0.86rem;
-  line-height: 1.5;
-  margin: 0 0 0.55rem;
-}
-.jsu-station-connector span {
-  color: var(--accent);
-}
-.jsu-station-role {
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  margin: 0;
-  text-transform: uppercase;
-}
-.jsu-station h3 {
-  font-size: clamp(1.35rem, 2.8vw, 1.85rem);
-  line-height: 1.2;
-  margin: 0.3rem 0 0;
-}
-.jsu-station-invite {
-  color: var(--ink);
-  font-size: 0.97rem;
-  line-height: 1.6;
-  margin: 0.55rem 0 0;
-}
-.jsu-station-meta {
-  color: var(--muted);
-  font-size: 0.84rem;
-  margin: 0.5rem 0 0;
-}
 .jsu-station-cta {
   margin-top: 0.85rem;
-}
-
-/* Threshold — where the path lands */
-.jsu-threshold {
-  border: 2px solid color-mix(in srgb, var(--accent) 55%, var(--line));
-  border-radius: 16px;
-  background:
-    radial-gradient(120% 140% at 12% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 55%),
-    var(--surface);
-  margin-top: clamp(2.5rem, 6vw, 4rem);
-  padding: clamp(1.35rem, 3.5vw, 2.1rem);
-  max-width: 56rem;
-}
-.jsu-threshold h2 {
-  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
-  line-height: 1.12;
-  margin: 0.35rem 0 0;
-}
-.jsu-threshold p {
-  color: var(--ink);
-  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
-  line-height: 1.65;
-  margin: 0.85rem 0 0;
-  max-width: 52rem;
-}
-.jsu-threshold-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.3rem;
-}
-.jsu-threshold-standard {
-  margin-top: 1rem;
-}
-.jsu-threshold-standard a {
-  color: var(--accent);
-  font-size: 0.86rem;
-  font-weight: 700;
-  text-underline-offset: 0.2em;
-}
-
-/* Full map — every room for non-linear visitors */
-.jsu-all-paths {
-  margin-top: clamp(2.5rem, 6vw, 4rem);
-}
-.jsu-all-paths h2 {
-  font-size: clamp(1.35rem, 2.8vw, 1.9rem);
-  line-height: 1.2;
-  margin: 0.3rem 0 1rem;
-}
-.jsu-all-paths ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.jsu-all-paths-card {
-  align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface);
-  color: inherit;
-  display: flex;
-  gap: 0.75rem;
-  justify-content: space-between;
-  min-height: 100%;
-  padding: 0.95rem 1.05rem;
-  text-decoration: none;
-  transition: border-color 120ms ease, transform 120ms ease;
-}
-.jsu-all-paths-card:hover {
-  border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
-  transform: translateY(-1px);
-}
-.jsu-all-paths-card strong {
-  display: block;
-  font-size: 0.98rem;
-}
-.jsu-all-paths-card small {
-  color: var(--muted);
-  display: block;
-  font-size: 0.85rem;
-  line-height: 1.45;
-  margin-top: 0.2rem;
-}
-.jsu-all-paths-end {
-  align-items: baseline;
-  display: flex;
-  flex: none;
-  gap: 0.5rem;
-}
-.jsu-all-paths-end em {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-style: normal;
-  white-space: nowrap;
-}
-
-/* Scroll-driven reveal — progressive enhancement only */
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: view()) {
-    .jsu-station,
-    .jsu-threshold,
-    .jsu-all-paths {
-      animation: jsu-path-in linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 42%;
-    }
-  }
-}
-@keyframes jsu-path-in {
-  from {
-    opacity: 0.2;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@media (max-width: 720px) {
-  .jsu-wayfinding-rules {
-    grid-template-columns: 1fr;
-  }
-  .jsu-all-paths ul {
-    grid-template-columns: 1fr;
-  }
-  .jsu-stations::before {
-    left: 1.3rem;
-  }
-  .jsu-station {
-    grid-template-columns: 2.75rem minmax(0, 1fr);
-  }
-  .jsu-station-index {
-    height: 2.6rem;
-    width: 2.6rem;
-  }
-  .jsu-all-paths-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 
 /* ── Jesus NotebookLM Research Dossier Engine ───────────────────────
@@ -4880,3 +4658,155 @@
   .jsu-terrain-dossier { grid-template-columns: minmax(0, 1fr); padding: 1rem; }
   .jsu-terrain-marker > span { font-size: 0.68rem; max-width: 8rem; }
 }
+
+/* ── The landing: his life, every lens ────────────────────────────────
+   Forty moments on a line, the map beside the moment, and three lenses
+   (his words, the Gospels, prophecy) that stay on whatever is chosen.
+   The page is the picker, so the room box and the path list step aside. */
+.world-jesus:has(.jl-home) { --maxw: 74rem; }
+.world-jesus main > .wrap:has(> .jl-home) { display: block; max-width: var(--maxw); }
+/* Start just under the header, as the Scripture pages do. */
+.world-jesus main:has(> .wrap > .jl-home) { padding-top: clamp(1rem, 2.5vw, 1.75rem); }
+
+.jl-home { display: grid; gap: 1.4rem; padding-bottom: 1rem; }
+.jl-head { display: grid; gap: 0.3rem; }
+.jl-eyebrow { margin: 0; color: var(--accent); font-family: var(--font-display); font-style: italic; font-size: 1.1rem; }
+.jl-head h1 { margin: 0; font-family: var(--font-display); font-size: clamp(2.4rem, 5.5vw, 3.8rem); font-weight: 500; line-height: 1; letter-spacing: -0.02em; text-wrap: balance; }
+.jl { display: grid; gap: 1rem; }
+
+/* Find */
+.jl-find { display: flex; flex-wrap: wrap; gap: 0.5rem 0.75rem; align-items: center; }
+.jl-find label { color: var(--muted); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.jl-find-field { position: relative; flex: 1 1 18rem; min-width: 0; }
+.jl-find input { width: 100%; height: var(--tap-target, var(--control-target-min)); padding: 0 0.8rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; }
+.jl-find-list { position: absolute; z-index: 20; top: calc(100% + 4px); left: 0; right: 0; margin: 0; padding: 4px; list-style: none; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: 0 12px 28px rgb(0 0 0 / 18%); }
+.jl-find-list li { display: flex; justify-content: space-between; gap: 1rem; padding: 0.55rem 0.65rem; border-radius: 6px; cursor: pointer; }
+.jl-find-list li[aria-selected="true"] { background: color-mix(in oklab, var(--accent) 14%, var(--surface)); }
+.jl-find-list small { color: var(--muted); white-space: nowrap; }
+
+.jl-starts { padding-bottom: 0.75rem; border-bottom: 1px solid var(--line); }
+.jl-starts p { margin: 0 0 0.3rem; color: var(--muted); font-size: 0.95rem; }
+.jl-starts ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin: 0; padding: 0; list-style: none; }
+.jl-starts button, .jl-starts a { display: inline-flex; align-items: center; min-height: var(--tap-target, var(--control-target-min)); padding: 0.2rem 0; border: 0; background: none; color: var(--accent); font: inherit; font-weight: 700; text-align: left; text-decoration: underline; text-underline-offset: 0.2em; cursor: pointer; }
+.jl-starts button:hover, .jl-starts a:hover { color: var(--ink); }
+
+/* The line: 26px per moment, so every dot clears the 24px target minimum. */
+.jl-line { overflow-x: auto; scrollbar-width: thin; }
+.jl-track { display: flex; min-width: calc(40 * 26px + 6 * 0.7rem + 6px); }
+.jl-era { flex: var(--n) 1 0; min-width: 4.6rem; padding: 0.45rem 0.35rem 0.25rem; border-right: 1px solid var(--line); background: color-mix(in oklab, var(--ink) 4%, var(--surface)); }
+.jl-era:nth-child(even) { background: color-mix(in oklab, var(--ink) 8%, var(--surface)); }
+.jl-era:first-child { border-radius: 10px 0 0 10px; }
+.jl-era:last-child { border-right: 0; border-radius: 0 10px 10px 0; }
+.jl-era-name { display: block; overflow: hidden; color: var(--muted); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; }
+.jl-dots { display: flex; justify-content: space-around; }
+.jl-dot { display: grid; place-items: center; width: 100%; min-width: 24px; max-width: 44px; height: var(--tap-target, var(--control-target-min)); }
+.jl-dot i { display: block; width: 12px; height: 12px; border: 2px solid var(--accent); border-radius: 50%; background: var(--surface); transition: transform 0.15s ease; }
+.jl-dot.has-words i { background: color-mix(in oklab, var(--accent) 30%, var(--surface)); }
+.jl-dot:hover i { transform: scale(1.35); }
+.jl-dot[aria-current="true"] i { width: 18px; height: 18px; background: var(--accent); }
+.jl-now { display: flex; align-items: center; gap: 0.5rem; }
+.jl-now p { flex: 1; margin: 0; color: var(--muted); font-size: 0.92rem; text-align: center; }
+.jl-now strong { color: var(--ink); }
+.jl-now button { min-width: var(--tap-target, var(--control-target-min)); min-height: var(--tap-target, var(--control-target-min)); border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; cursor: pointer; }
+.jl-now button:disabled { opacity: 0.4; cursor: default; }
+.jl-legend { display: inline-flex; align-items: center; gap: 0.35rem; }
+.jl-legend i { display: inline-block; width: 10px; height: 10px; border: 2px solid var(--accent); border-radius: 50%; background: color-mix(in oklab, var(--accent) 30%, var(--surface)); }
+
+/* Stage: the map beside the moment */
+.jl-stage { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+.jl-map { --jl-sea: color-mix(in oklab, #6f9aa6 34%, var(--surface)); --jl-land: color-mix(in oklab, var(--ink) 7%, var(--surface)); --jl-water: color-mix(in oklab, #6f9aa6 58%, var(--surface)); position: sticky; top: 1rem; margin: 0; padding: 0.6rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.jl-map svg { display: block; width: 100%; height: auto; }
+.jl-sea { fill: var(--jl-sea); }
+.jl-land { fill: var(--jl-land); }
+.jl-water { fill: var(--jl-water); }
+.jl-river { fill: none; stroke: var(--jl-water); stroke-width: 2.4; }
+.jl-leg { stroke: var(--accent); stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 5 4; }
+.jl-place { cursor: pointer; }
+.jl-place circle { fill: var(--surface); stroke: var(--accent); stroke-width: 1.6; }
+.jl-place.is-visited circle { fill: color-mix(in oklab, var(--accent) 30%, var(--surface)); }
+.jl-place.is-here circle { fill: var(--accent); stroke-width: 3; }
+.jl-place circle.jl-hit { fill: transparent; stroke: none; }
+.jl-label { fill: var(--ink); font: 700 12px var(--font-interface); paint-order: stroke; stroke: var(--jl-land); stroke-width: 4px; pointer-events: none; }
+.jl-map figcaption { padding: 0.5rem 0.25rem 0.1rem; color: var(--muted); font-size: 0.9rem; }
+.jl-map figcaption strong { color: var(--ink); }
+.jl-here { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.45rem 0 0; padding: 0; list-style: none; }
+.jl-here button { min-height: var(--tap-target, var(--control-target-min)); padding: 0.2rem 0.75rem; border: 1px solid var(--line); border-radius: 999px; background: none; color: var(--ink); font: inherit; font-size: 0.86rem; cursor: pointer; }
+.jl-here button[aria-current="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
+
+/* The moment */
+.jl-moment { min-width: 0; padding: 1.25rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.jl-moment.is-rest h2 { margin: 0 0 0.6rem; font-family: var(--font-display); font-size: 1.6rem; font-weight: 500; line-height: 1.2; }
+.jl-moment.is-rest p { margin: 0.3rem 0; max-width: 62ch; color: var(--muted); }
+.jl-where { margin: 0; color: var(--muted); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.jl-title { margin: 0.2rem 0 0.4rem; font-family: var(--font-display); font-size: clamp(1.7rem, 3.4vw, 2.3rem); font-weight: 600; line-height: 1.1; text-wrap: balance; }
+.jl-summary { margin: 0 0 0.8rem; max-width: 62ch; font-size: 1.05rem; }
+.jl-told { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin: 0 0 1rem; color: var(--muted); font-size: 0.85rem; }
+.jl-told span { padding: 0.15rem 0.55rem; border: 1px solid var(--line); border-radius: 999px; }
+.jl-told .is-on { border-color: var(--accent); color: var(--ink); font-weight: 700; }
+.jl-told .is-off { opacity: 0.55; }
+.jl-lenses { display: flex; gap: 2px; overflow-x: auto; border-bottom: 1px solid var(--line); }
+.jl-lens { flex: none; display: inline-flex; align-items: center; gap: 0.45rem; min-width: var(--tap-target, var(--control-target-min)); min-height: var(--tap-target, var(--control-target-min)); padding: 0.4rem 0.9rem; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--muted); font-family: var(--font-display); font-size: 1.05rem; white-space: nowrap; cursor: pointer; }
+.jl-lens b { min-width: 1.6em; padding: 0 0.35em; border-radius: 999px; background: color-mix(in oklab, var(--accent) 18%, var(--surface)); color: var(--ink); font: 700 0.75rem/1.6 var(--font-interface); text-align: center; }
+.jl-lens.is-zero b { background: none; color: var(--muted); }
+.jl-lens[aria-selected="true"] { border-bottom-color: var(--accent); color: var(--ink); }
+.jl-panel { padding-top: 1rem; }
+.jl-empty { margin: 0; color: var(--muted); }
+.jl-retry { min-height: var(--tap-target, var(--control-target-min)); padding: 0 0.8rem; border: 1px solid var(--line); border-radius: 8px; background: none; color: var(--ink); font: inherit; cursor: pointer; }
+.jl-words { display: grid; gap: 0.9rem; margin: 0; padding: 0; list-style: none; }
+.jl-words blockquote { margin: 0; padding-left: 0.9rem; border-left: 3px solid currentColor; font-family: var(--font-display); font-size: 1.15rem; line-height: 1.5; }
+.jl-words cite { display: block; margin-top: 0.2rem; color: var(--muted); font: 700 0.8rem var(--font-interface); }
+.jl-gospels { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.9rem; }
+.jl-gospel { min-width: 0; margin: 0; padding: 0.7rem 0.8rem; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+.jl-gospel.is-silent { display: grid; place-items: center; min-height: 4rem; border-style: dashed; background: none; color: var(--muted); font-size: 0.9rem; }
+.jl-gospel h3 { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 0.75rem; margin: 0 0 0.4rem; font-family: var(--font-display); font-size: 1rem; font-weight: 600; }
+.jl-gospel h3 a { font: 700 0.8rem var(--font-interface); }
+.jl-gospel-text { max-height: 340px; margin: 0; overflow-y: auto; font-family: var(--font-display); font-size: 0.98rem; line-height: 1.6; }
+.jl-gospel-text sup { margin-right: 0.15rem; color: var(--muted); font: 700 0.65rem var(--font-interface); }
+.jl-prophecy { display: grid; gap: 0.9rem; margin: 0; padding: 0; list-style: none; }
+.jl-pair { padding: 0.8rem 0.9rem; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+.jl-pair-kind { margin: 0 0 0.3rem; color: var(--accent); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.jl-pair-text { margin: 0; font-family: var(--font-display); font-size: 1.05rem; line-height: 1.5; }
+.jl-pair-text span, .jl-pair-refs { color: var(--muted); font-family: var(--font-interface); font-size: 0.85rem; }
+.jl-pair-refs { margin: 0.4rem 0 0; }
+.jl-deeper { display: flex; flex-wrap: wrap; gap: 0.25rem 1.2rem; margin: 1.1rem 0 0; padding: 0.6rem 0 0; border-top: 1px solid var(--line); list-style: none; }
+.jl-deeper a { display: inline-flex; align-items: center; min-height: var(--tap-target, var(--control-target-min)); font-weight: 700; }
+.jl-steps { display: flex; justify-content: space-between; gap: 0.5rem; margin-top: 1rem; }
+.jl-steps button { min-height: var(--tap-target, var(--control-target-min)); padding: 0.3rem 0.8rem; border: 1px solid var(--line); border-radius: 8px; background: none; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.jl-steps button + button, .jl-steps span + button { text-align: right; }
+.jl-steps small { display: block; color: var(--muted); font-size: 0.75rem; }
+
+.jl-more { padding-top: 1rem; border-top: 1px solid var(--line); }
+.jl-more h2 { margin: 0 0 0.5rem; font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; }
+.jl-more ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.4rem; margin: 0; padding: 0; list-style: none; }
+.jl-more a { display: inline-flex; align-items: center; min-height: var(--tap-target, var(--control-target-min)); }
+
+@media (max-width: 860px) {
+  .jl-stage { grid-template-columns: minmax(0, 1fr); }
+  /* On a narrow screen the moment comes first; the map follows it. */
+  .jl-moment { order: -1; padding: 1rem; }
+  .jl-map { position: static; justify-self: center; width: min(100%, 26rem); }
+  /* Three equal tabs, each count under its label, so all three always show. */
+  .jl-lenses { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; }
+  .jl-lens { flex-direction: column; gap: 0.15rem; padding: 0.35rem 0.2rem; font-size: 0.98rem; white-space: normal; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jl-dot i { transition: none; }
+}
+
+/* Gospels word by word: the comparator is drawn on its own dark panel, so the
+   world's heading colour (wine on the ivory theme) must not reach its headings. */
+.world-jesus .synoptic-comparator :is(h2, h3, h4) {
+  color: #fff;
+}
+
+/* Related Thomas sayings are separate from the canonical Gospel accounts. */
+.jsu-parable-thomas {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.jsu-thomas-link,
+.jsu-thomas-source-list a { text-decoration: underline; text-underline-offset: 0.15em; }
+.jsu-parable-thomas ul { margin-bottom: 0; }
+.jsu-parable-thomas li { margin: .4rem 0; }

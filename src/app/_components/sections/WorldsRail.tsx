@@ -1,5 +1,6 @@
 import Wheel from "../Wheel";
 import Link from "next/link";
+import Image from "next/image";
 import type { CSSProperties } from "react";
 import { HOME, WORLDS } from "@/lib/portfolio-content";
 
@@ -8,8 +9,7 @@ import { HOME, WORLDS } from "@/lib/portfolio-content";
  *
  * A walk is a sequence: the eight worlds in walk order, one row at a time.
  * Each row carries only its world's accent (mixed toward white for the dark
- * panel); nothing else is tinted, so palettes never collide. Mirrors the
- * numbered-list vocabulary of the reading-paths section above it.
+ * panel); nothing else is tinted, so palettes never collide.
  */
 const RAIL_ORDER = [
   "jesus",
@@ -48,6 +48,7 @@ export default function WorldsRail() {
             <span className="st-rail-num" aria-hidden="true">
               {String(index + 1).padStart(2, "0")}
             </span>
+            <span className="st-rail-thumb" aria-hidden="true"><Image src={d.image} alt="" fill sizes="72px" /></span>
             <span className="st-rail-copy">
               <Link href={d.href} className="st-rail-title">
                 {d.title}

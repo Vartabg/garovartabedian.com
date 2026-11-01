@@ -1,14 +1,19 @@
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import type { LibraryPage, LibraryRecord, LibrarySearchRow } from "./library";
+import { createLibraryServerCache } from "./library-server-cache";
 
 const directory = path.join(process.cwd(), "content/early-library");
-let catalog: Promise<LibraryRecord[]> | undefined;
-
+const cache = createLibraryServerCache({
+  production: process.env.NODE_ENV === "production",
+  directory,
+  // Bump when catalog/index shape or construction semantics change.
+  schema: "catalog-and-wording-index-v1",
+});
 
 /** Server-only disk reads: neither catalog section maps nor corpus text enter client bundles. */
 export function getLibrary(): Promise<LibraryRecord[]> {
-  return catalog ??= readFile(path.join(directory, "catalog.json"), "utf8").then(JSON.parse);
+  return cache.get<LibraryRecord[]>("catalog", () => readFile(path.join(directory, "catalog.json"), "utf8").then(JSON.parse));
 }
 export async function getLibraryRecord(id: string) {
   return (await getLibrary()).find(record => record.id === id) ?? null;
@@ -21,7 +26,6 @@ export async function getLibraryPage(recordId: string, sectionId: string): Promi
 
 // Source-backed paragraph index lives only in the Node process. A bounded
 // number of file reads run at a time, and the successful index is reused.
-let search: Promise<ReturnType<typeof buildLibrarySearchIndex>> | undefined;
 import { buildLibrarySearchIndex } from "./library-search";
 import type { EarlyText } from "./types";
 
@@ -62,6 +66,6 @@ export async function searchLibrary(query: string, kind = "all", recordId = "", 
   if (query.trim().length < 2) return buildLibrarySearchIndex([])(query, [], [], page, pageSize);
   const record = recordId ? await getLibraryRecord(recordId) : null;
   const records = recordId ? [recordId, ...(record?.reuseExistingText ? [`legacy:${record.existingTextId}`] : [])] : [];
-  search ??= getLibrarySearchRows().then(buildLibrarySearchIndex).catch(error => { search = undefined; throw error; });
+  const search = cache.get("search", () => getLibrarySearchRows().then(buildLibrarySearchIndex));
   return (await search)(query, kind === "all" ? [] : [kind], records, page, pageSize);
 }

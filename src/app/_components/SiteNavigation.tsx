@@ -1,25 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useId, useRef, useState } from "react";
 import { setFindOpen, subscribeFind } from "@/lib/site/find-bridge";
+import { subscribeFromHere, type FromHere } from "@/lib/site/from-here";
+import { getNavigationCurrent, type SiteLink } from "@/lib/site-navigation";
 import { WORLD_REGISTRY } from "@/lib/world-registry";
 
-type NavigationLink = {
-  href: string;
-  label: string;
-  note?: string;
-};
-
-const DIRECT_LINKS: NavigationLink[] = [
+const DIRECT_LINKS: SiteLink[] = [
   { href: "/", label: "Home" },
-  { href: "/scriptures", label: "Scripture" },
+  { href: "/scriptures", label: "Scriptures" },
   { href: "/jesus", label: "Jesus" },
 ];
 
 const MENU_GROUPS: Array<{
   label: string;
-  links: NavigationLink[];
+  links: SiteLink[];
 }> = [
   {
     label: "Explore the record",
@@ -32,11 +29,6 @@ const MENU_GROUPS: Array<{
   {
     label: "Use Scripture",
     links: [
-      {
-        href: "/scriptures",
-        label: "Read the Bible",
-        note: "Browse books and traditions",
-      },
       {
         href: "/scriptures/search",
         label: "Search Scripture",
@@ -52,11 +44,6 @@ const MENU_GROUPS: Array<{
   {
     label: "Understand the work",
     links: [
-      {
-        href: "/evidence",
-        label: "How We Know",
-        note: "See how claims are tested",
-      },
       {
         href: "/sources",
         label: "Sources & method",
@@ -97,14 +84,6 @@ const MENU_GROUPS: Array<{
   },
 ];
 
-function linkPath(href: string) {
-  return href.split("#")[0].split("?")[0] || "/";
-}
-
-function isCurrent(activeHref: string | undefined, href: string) {
-  return activeHref === linkPath(href);
-}
-
 export default function SiteNavigation({
   activeHref,
   className = "",
@@ -112,18 +91,22 @@ export default function SiteNavigation({
   activeHref?: string;
   className?: string;
 }) {
+  const pathname = usePathname() ?? activeHref ?? "/";
+  const groupId = useId();
   const detailsRef = useRef<HTMLDetailsElement | null>(null);
   const summaryRef = useRef<HTMLElement | null>(null);
   const [findOpen, setFindOpenState] = useState(false);
+  const [fromHere, setFromHereState] = useState<FromHere | null>(null);
 
   useEffect(() => subscribeFind(setFindOpenState), []);
+  useEffect(() => subscribeFromHere(setFromHereState), []);
   const directIsActive = DIRECT_LINKS.some((link) =>
-    isCurrent(activeHref, link.href),
+    getNavigationCurrent(pathname, link.href),
   );
   const menuIsActive =
     !directIsActive &&
     MENU_GROUPS.some((group) =>
-      group.links.some((link) => isCurrent(activeHref, link.href)),
+      group.links.some((link) => getNavigationCurrent(pathname, link.href)),
     );
 
   const closeMenu = () => {
@@ -131,13 +114,46 @@ export default function SiteNavigation({
   };
 
   useEffect(() => {
-    const closeFromOutside = (event: PointerEvent) => {
+    if (detailsRef.current) detailsRef.current.open = false;
+  }, [pathname]);
+
+  useEffect(() => {
+    const closeFromOutside = (event: Event) => {
       if (!detailsRef.current?.contains(event.target as Node)) closeMenu();
     };
 
     document.addEventListener("pointerdown", closeFromOutside);
-    return () => document.removeEventListener("pointerdown", closeFromOutside);
+    document.addEventListener("focusin", closeFromOutside);
+    return () => {
+      document.removeEventListener("pointerdown", closeFromOutside);
+      document.removeEventListener("focusin", closeFromOutside);
+    };
   }, []);
+
+  // Under "Everything else" the groups sit beneath the From-here heading,
+  // so they step down a level for screen-reader heading lists.
+  const siteGroups = (Heading: "h2" | "h3") => MENU_GROUPS.map((group, index) => (
+    <section
+      key={group.label}
+      className={index === 0 ? "site-nav-group site-nav-group--worlds" : "site-nav-group"}
+      aria-labelledby={`${groupId}-group-${index}`}
+    >
+      <Heading id={`${groupId}-group-${index}`}>{group.label}</Heading>
+      <div className="site-nav-group-links">
+        {group.links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            aria-current={getNavigationCurrent(pathname, link.href)}
+            onClick={closeMenu}
+          >
+            <strong>{link.label}</strong>
+            {link.note ? <span>{link.note}</span> : null}
+          </Link>
+        ))}
+      </div>
+    </section>
+  ));
 
   return (
     <nav
@@ -155,7 +171,8 @@ export default function SiteNavigation({
           <Link
             key={link.href}
             href={link.href}
-            aria-current={isCurrent(activeHref, link.href) ? "page" : undefined}
+            aria-current={getNavigationCurrent(pathname, link.href)}
+            onClick={closeMenu}
           >
             {link.label}
           </Link>
@@ -187,34 +204,36 @@ export default function SiteNavigation({
           <span className="site-nav-summary-mobile">Menu</span>
           <span className="site-nav-chevron" aria-hidden="true" />
         </summary>
-        <div className="site-nav-panel">
-          <div className="site-nav-panel-head">
-            <strong>Explore the whole site</strong>
-            <span>Choose a world, use the Bible tools, or learn about the work.</span>
-          </div>
-          {MENU_GROUPS.map((group, index) => (
-            <section
-              key={group.label}
-              className={index === 0 ? "site-nav-group site-nav-group--worlds" : "site-nav-group"}
-              aria-labelledby={`site-nav-group-${index}`}
-            >
-              <h2 id={`site-nav-group-${index}`}>{group.label}</h2>
+        {fromHere ? (
+          // A reading page opens the menu on what connects to it; the whole
+          // site folds below. People move in small steps from where they
+          // are (Teevan et al., CHI 2004), and most arrive deep, from search.
+          <div className="site-nav-panel site-nav-panel--here">
+            <section className="site-nav-here" aria-labelledby={`${groupId}-here`}>
+              <h2 id={`${groupId}-here`}>From {fromHere.label}</h2>
               <div className="site-nav-group-links">
-                {group.links.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    aria-current={isCurrent(activeHref, link.href) ? "page" : undefined}
-                    onClick={closeMenu}
-                  >
+                {fromHere.links.map((link) => (
+                  <Link key={link.href} href={link.href} onClick={closeMenu}>
+                    <span>{link.kind}</span>
                     <strong>{link.label}</strong>
-                    {link.note ? <span>{link.note}</span> : null}
                   </Link>
                 ))}
               </div>
             </section>
-          ))}
-        </div>
+            <details className="site-nav-everything">
+              <summary>Everything else</summary>
+              <div className="site-nav-everything-groups">{siteGroups("h3")}</div>
+            </details>
+          </div>
+        ) : (
+          <div className="site-nav-panel">
+            <div className="site-nav-panel-head">
+              <strong>Explore the whole site</strong>
+              <span>Choose a world, use the Bible tools, or learn about the work.</span>
+            </div>
+            {siteGroups("h2")}
+          </div>
+        )}
       </details>
     </nav>
   );

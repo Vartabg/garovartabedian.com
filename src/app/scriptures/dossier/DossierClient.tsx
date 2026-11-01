@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useTransition } from "react";
+import { useState, useCallback, useTransition, useEffect, useRef } from "react";
 import Link from "next/link";
 import {
   buildNotebookLMDossier,
@@ -11,17 +11,26 @@ import {
 import type { Canons } from "@/lib/scriptures/types";
 import { parseScriptureQueryRef } from "@/lib/scriptures/refs";
 import { loadBook, loadOriginalChapter } from "@/lib/scriptures/client";
+import StudyContextBanner from "../_components/StudyContextBanner";
+import { parseStudyContext, type StudyContext } from "@/lib/scriptures/study-context";
+import { loadStudyPassage } from "@/lib/scriptures/study-passage";
 
 type Props = {
   canons: Canons;
   initialDossier: NotebookLMDossier;
   initialTarget: string;
+  initialContext?: StudyContext | null;
+  initialSourceText?: string | null;
+  contextNote?: string;
 };
 
 export default function DossierClient({
   canons,
   initialDossier,
   initialTarget,
+  initialContext,
+  initialSourceText,
+  contextNote,
 }: Props) {
   const [target, setTarget] = useState(initialTarget);
   const [dossier, setDossier] = useState<NotebookLMDossier>(initialDossier);
@@ -30,134 +39,50 @@ export default function DossierClient({
   const [copiedPrompt, setCopiedPrompt] = useState(false);
   const [isPending, startTransition] = useTransition();
   const canExport = dossier.sourceWitnessCount > 0;
+  const generation = useRef(0);
+  const mounted = useRef(false);
+  useEffect(() => {
+    mounted.current = true;
+    return () => { mounted.current = false; generation.current += 1; };
+  }, []);
 
-  const handleSelectPreset = useCallback(
-    (preset: DossierPreset) => {
-      setTarget(preset.query);
-      startTransition(async () => {
-        // Check if query is a scripture reference
-        const parsed = parseScriptureQueryRef(preset.query, canons);
-        const primaryVerses: {
-          ref: string;
-          original?: string;
-          brenton?: string;
-          drb?: string;
-          kjv?: string;
-          web?: string;
-        }[] = [];
-
-        if (parsed) {
-          try {
-            const [origChap, brentonBook, drbBook, kjvBook, webBook] = await Promise.all([
-              loadOriginalChapter(parsed.book, parsed.chapter),
-              loadBook("brenton", parsed.book).catch(() => null),
-              loadBook("drb", parsed.book).catch(() => null),
-              loadBook("kjv", parsed.book).catch(() => null),
-              loadBook("web", parsed.book).catch(() => null),
-            ]);
-
-            const vStart = parsed.verse || 1;
-            const vEnd = parsed.endVerse || (parsed.verse ? parsed.verse : 5);
-
-            for (let v = vStart; v <= Math.min(vEnd, vStart + 6); v++) {
-              const brentonText = brentonBook?.chapters[parsed.chapter - 1]?.[v - 1];
-              const drbText = drbBook?.chapters[parsed.chapter - 1]?.[v - 1];
-              const kjvText = kjvBook?.chapters[parsed.chapter - 1]?.[v - 1];
-              const webText = webBook?.chapters[parsed.chapter - 1]?.[v - 1];
-              const origVerse = origChap?.verses.find((ov) => ov.number === v);
-              const origText = origVerse?.words.map((w) => w.text).join(" ");
-
-              if (brentonText || drbText || kjvText || webText || origText) {
-                primaryVerses.push({
-                  ref: `${canons.books[parsed.book]?.name || parsed.book} ${parsed.chapter}:${v}`,
-                  original: origText,
-                  brenton: brentonText,
-                  drb: drbText,
-                  kjv: kjvText,
-                  web: webText,
-                });
-              }
-            }
-          } catch {
-            // Graceful fallback to static collation
-          }
-        }
-
-        const newDossier = buildNotebookLMDossier({
-          target: preset.query,
-          canons,
-          primaryVerses,
-        });
-        setDossier(newDossier);
-      });
-    },
-    [canons],
-  );
-
-  const handleSearchSubmit = useCallback(
-    async (e: React.FormEvent) => {
-      e.preventDefault();
-      const clean = target.trim();
-      if (!clean) return;
-
-      startTransition(async () => {
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const generateForTarget = useCallback((clean: string) => {
+    const request = ++generation.current;
+    const current = () => mounted.current && generation.current === request;
+    setTarget(clean);
+    setLoadError(null);
+    startTransition(async () => {
+      try {
         const parsed = parseScriptureQueryRef(clean, canons);
-        const primaryVerses: {
-          ref: string;
-          original?: string;
-          brenton?: string;
-          drb?: string;
-          kjv?: string;
-          web?: string;
-        }[] = [];
-
-        if (parsed) {
-          try {
-            const [origChap, brentonBook, drbBook, kjvBook, webBook] = await Promise.all([
-              loadOriginalChapter(parsed.book, parsed.chapter),
-              loadBook("brenton", parsed.book).catch(() => null),
-              loadBook("drb", parsed.book).catch(() => null),
-              loadBook("kjv", parsed.book).catch(() => null),
-              loadBook("web", parsed.book).catch(() => null),
-            ]);
-
-            const vStart = parsed.verse || 1;
-            const vEnd = parsed.endVerse || (parsed.verse ? parsed.verse : 5);
-
-            for (let v = vStart; v <= Math.min(vEnd, vStart + 6); v++) {
-              const brentonText = brentonBook?.chapters[parsed.chapter - 1]?.[v - 1];
-              const drbText = drbBook?.chapters[parsed.chapter - 1]?.[v - 1];
-              const kjvText = kjvBook?.chapters[parsed.chapter - 1]?.[v - 1];
-              const webText = webBook?.chapters[parsed.chapter - 1]?.[v - 1];
-              const origVerse = origChap?.verses.find((ov) => ov.number === v);
-              const origText = origVerse?.words.map((w) => w.text).join(" ");
-
-              if (brentonText || drbText || kjvText || webText || origText) {
-                primaryVerses.push({
-                  ref: `${canons.books[parsed.book]?.name || parsed.book} ${parsed.chapter}:${v}`,
-                  original: origText,
-                  brenton: brentonText,
-                  drb: drbText,
-                  kjv: kjvText,
-                  web: webText,
-                });
-              }
-            }
-          } catch {
-            // Graceful fallback
-          }
+        if (!parsed) {
+          if (current()) setDossier(buildNotebookLMDossier({ target: clean, canons }));
+          return;
         }
+        const returningToContext = clean === initialTarget && initialContext != null;
+        const context = returningToContext ? initialContext : parseStudyContext({
+          book: parsed.book, chapter: String(parsed.chapter), verse: String(parsed.verse ?? 1),
+        }).context;
+        if (!context) throw new Error("This passage is unavailable in the hosted editions.");
+        const loaded = await loadStudyPassage(context, { book: loadBook, original: loadOriginalChapter },
+          returningToContext ? context.verse ?? 1 : parsed.endVerse ?? (parsed.verse ? parsed.verse : 5));
+        if (!current()) return;
+        setDossier(buildNotebookLMDossier({
+          target: parsed.verse ? loaded.target : clean, canons,
+          primaryVerses: loaded.primaryVerses, theologicalContext: loaded.note,
+          includeReception: loaded.includeReception,
+        }));
+      } catch {
+        if (current()) setLoadError("Could not load that passage. The previous dossier is still shown; check the reference and try again.");
+      }
+    });
+  }, [canons, initialContext, initialTarget]);
 
-        const newDossier = buildNotebookLMDossier({
-          target: clean,
-          canons,
-          primaryVerses,
-        });
-        setDossier(newDossier);
-      });
-    },
-    [target, canons],
-  );
+  const handleSelectPreset = useCallback((preset: DossierPreset) => generateForTarget(preset.query), [generateForTarget]);
+  const handleSearchSubmit = useCallback((event: React.FormEvent) => {
+    event.preventDefault();
+    if (target.trim()) generateForTarget(target.trim());
+  }, [target, generateForTarget]);
 
   const handleCopyDossier = () => {
     navigator.clipboard.writeText(dossier.markdown).then(() => {
@@ -191,6 +116,8 @@ export default function DossierClient({
 
   return (
     <section className="scr-dossier" aria-label="Universal NotebookLM Research Dossier Engine">
+      <StudyContextBanner context={initialContext ?? null} sourceText={initialSourceText} note={contextNote} currentTool="dossier" />
+      {loadError && <p role="status">{loadError}</p>}
       {/* 1. Search & Target Input */}
       <div
         style={{

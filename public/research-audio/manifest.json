@@ -1,0 +1,242 @@
+{
+  "nicaea": {
+    "src": "/research-audio/nicaea.m4a",
+    "durationSeconds": 367.988667,
+    "sha256": "2aea049338127dd687ac73b60a5bcc5352985c931cabafb3468b668b4e1aef0d",
+    "scriptSha256": "fe7f03d947d60b13da9f1ab6150a27bbf27f7ae32d1068bc1402926c03bdbd43",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+    "voiceReferenceSha256": "cd710a8729e6ccdac357695fc031c1899c5c849965d13a77b25aa5106ea974b0",
+    "chapters": [
+      {
+        "startSeconds": 0.0,
+        "durationSeconds": 79.239
+      },
+      {
+        "startSeconds": 79.239,
+        "durationSeconds": 74.4
+      },
+      {
+        "startSeconds": 153.639,
+        "durationSeconds": 73.475
+      },
+      {
+        "startSeconds": 227.114,
+        "durationSeconds": 74.637
+      },
+      {
+        "startSeconds": 301.751,
+        "durationSeconds": 66.237
+      }
+    ]
+  },
+  "watchers": {
+    "src": "/research-audio/watchers.m4a",
+    "durationSeconds": 370.670042,
+    "sha256": "841fcc9ab56e395b2324806d983e0c6f3dc7a346bc68df390f9b716a4fc476c4",
+    "scriptSha256": "118ebccf81a014fa39bf810a298d31ab093d02af51b89ce6dff0779ba1d08ea5",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+    "voiceReferenceSha256": "cd710a8729e6ccdac357695fc031c1899c5c849965d13a77b25aa5106ea974b0",
+    "chapters": [
+      {
+        "startSeconds": 0.0,
+        "durationSeconds": 80.2
+      },
+      {
+        "startSeconds": 80.2,
+        "durationSeconds": 72.437
+      },
+      {
+        "startSeconds": 152.637,
+        "durationSeconds": 70.3
+      },
+      {
+        "startSeconds": 222.937,
+        "durationSeconds": 77.053
+      },
+      {
+        "startSeconds": 299.99,
+        "durationSeconds": 70.637
+      }
+    ]
+  },
+  "historical-jesus": {
+    "src": "/research-audio/historical-jesus.m4a",
+    "durationSeconds": 370.607333,
+    "sha256": "c6976bf791a7b2ed87a8e9268f51358d0be20170970a24ad9d0dd3670c6f6165",
+    "scriptSha256": "cc8f0317e1a605dba9c40e46880e47140f4e003215cbac446b93d211d56d5e61",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+    "voiceReferenceSha256": "cd710a8729e6ccdac357695fc031c1899c5c849965d13a77b25aa5106ea974b0",
+    "chapters": [
+      {
+        "startSeconds": 0.0,
+        "durationSeconds": 80.5
+      },
+      {
+        "startSeconds": 80.5,
+        "durationSeconds": 73.832
+      },
+      {
+        "startSeconds": 154.332,
+        "durationSeconds": 65.433
+      },
+      {
+        "startSeconds": 219.765,
+        "durationSeconds": 76.3
+      },
+      {
+        "startSeconds": 296.065,
+        "durationSeconds": 74.5
+      }
+    ]
+  },
+  "scripture-reading": {
+    "src": "/research-audio/scripture-reading.m4a",
+    "scriptSha256": "5bebec199b132a395c773dec44349b98a36605a1fa24641a109efd18e55332b2",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+    "voiceReferenceSha256": "cd710a8729e6ccdac357695fc031c1899c5c849965d13a77b25aa5106ea974b0",
+    "sha256": "07f460b08f32cd4c97c3e9d18ab5349e53009a08c999ae47ee949e6f19b3ab89",
+    "durationSeconds": 349.342667,
+    "chapters": [
+      {
+        "startSeconds": 0.0,
+        "durationSeconds": 75.2
+      },
+      {
+        "startSeconds": 75.2,
+        "durationSeconds": 65.7
+      },
+      {
+        "startSeconds": 140.9,
+        "durationSeconds": 71.0
+      },
+      {
+        "startSeconds": 211.9,
+        "durationSeconds": 67.8
+      },
+      {
+        "startSeconds": 279.7,
+        "durationSeconds": 69.6
+      }
+    ]
+  },
+  "apostolic-witness": {
+    "src": "/research-audio/apostolic-witness.m4a",
+    "scriptSha256": "d620d4655ada0d19005e42e18ba737a87d6dc9073c25170e9bc2fb394ed07c5a",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+    "voiceReferenceSha256": "cd710a8729e6ccdac357695fc031c1899c5c849965d13a77b25aa5106ea974b0",
+    "sha256": "9e83ed54fbd410767418e76bb039af1beb6be77f4a69d8795e86e0f921933273",
+    "durationSeconds": 332.842667,
+    "chapters": [
+      {
+        "startSeconds": 0.0,
+        "durationSeconds": 69.3
+      },
+      {
+        "startSeconds": 69.3,
+        "durationSeconds": 62.1
+      },
+      {
+        "startSeconds": 131.4,
+        "durationSeconds": 62.4
+      },
+      {
+        "startSeconds": 193.8,
+        "durationSeconds": 71.8
+      },
+      {
+        "startSeconds": 265.6,
+        "durationSeconds": 67.2
+      }
+    ]
+  },
+  "early-writings": {
+    "src": "/research-audio/early-writings.m4a",
+    "scriptSha256": "c6f1caac7b1774a824117afa36ca544d77f56c9982d94b2795ccae57c175edb1",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+    "voiceReferenceSha256": "cd710a8729e6ccdac357695fc031c1899c5c849965d13a77b25aa5106ea974b0",
+    "sha256": "92c0e651013af7c5f92879082298655c9f65957522e1e10165ff8c7584cf56ce",
+    "durationSeconds": 344.142667,
+    "chapters": [
+      {
+        "startSeconds": 0.0,
+        "durationSeconds": 67.5
+      },
+      {
+        "startSeconds": 67.5,
+        "durationSeconds": 65.3
+      },
+      {
+        "startSeconds": 132.8,
+        "durationSeconds": 74.9
+      },
+      {
+        "startSeconds": 207.7,
+        "durationSeconds": 62.6
+      },
+      {
+        "startSeconds": 270.3,
+        "durationSeconds": 73.8
+      }
+    ]
+  },
+  "bible-ownership": {
+    "src": "/research-audio/bible-ownership.m4a",
+    "scriptSha256": "c436de780853fff32f2965fe98e7672f4b0e1693f02d37d6fe9f18186e29907a",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+    "voiceReferenceSha256": "cd710a8729e6ccdac357695fc031c1899c5c849965d13a77b25aa5106ea974b0",
+    "sha256": "29db849febc839c509d7c422e14df4384d566d423405571a3b305a34c08c5ade",
+    "durationSeconds": 347.642667,
+    "chapters": [
+      {
+        "startSeconds": 0.0,
+        "durationSeconds": 72.4
+      },
+      {
+        "startSeconds": 72.4,
+        "durationSeconds": 73.6
+      },
+      {
+        "startSeconds": 146.0,
+        "durationSeconds": 65.9
+      },
+      {
+        "startSeconds": 211.9,
+        "durationSeconds": 67.1
+      },
+      {
+        "startSeconds": 279.0,
+        "durationSeconds": 68.6
+      }
+    ]
+  },
+  "evidence-method": {
+    "src": "/research-audio/evidence-method.m4a",
+    "scriptSha256": "6107c6fa7d4e05cfd7bd03b4d97125bf459dd8b77184e2c0da171eb369d1f6ad",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+    "voiceReferenceSha256": "cd710a8729e6ccdac357695fc031c1899c5c849965d13a77b25aa5106ea974b0",
+    "sha256": "258935cf27f6483ba56d697b9539e678c892d25b0db6ddfec6884be39d159ef4",
+    "durationSeconds": 345.242667,
+    "chapters": [
+      {
+        "startSeconds": 0.0,
+        "durationSeconds": 70.5
+      },
+      {
+        "startSeconds": 70.5,
+        "durationSeconds": 67.3
+      },
+      {
+        "startSeconds": 137.8,
+        "durationSeconds": 68.4
+      },
+      {
+        "startSeconds": 206.2,
+        "durationSeconds": 71.4
+      },
+      {
+        "startSeconds": 277.6,
+        "durationSeconds": 67.6
+      }
+    ]
+  }
+}

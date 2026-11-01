@@ -1,14 +1,13 @@
-import Wheel from "./Wheel";
 import Link from "next/link";
 import Image from "next/image";
 import { HOME, PROFILE } from "@/lib/portfolio-content";
 import Reveal from "./Reveal";
 import SiteNavigation from "./SiteNavigation";
-import ReadingPaths from "./sections/ReadingPaths";
 import WorldsRail from "./sections/WorldsRail";
 import { ButtonLink } from "./Button";
-import Breathe from "./Breathe";
-import Versal from "./Versal";
+import SunlitLeaf from "./SunlitLeaf";
+import DiscoveryDesk from "./DiscoveryDesk";
+import SiteFooterLinks from "./SiteFooterLinks";
 
 /**
  * The site's front door: Jesus first, Scripture immediately usable, and the
@@ -18,6 +17,9 @@ import Versal from "./Versal";
 export default function StoryHome() {
   return (
     <Reveal>
+      {/* The top of the page is a leaf lit by the sun over Jerusalem right
+          now (Garo picked "Tabernacle Light", 2026-10-16). */}
+      <SunlitLeaf lead={HOME.skyLead} nightLead={HOME.skyNightLead} dayLead={HOME.skyDayLead} />
       <header className="st-nav" style={{ viewTransitionName: "st-nav" }}>
         {/* The same cross WorldHeader carries. 4754d98 swapped it here for a
             G-V lettermark whose cross was ~5px tall at render size — it read as
@@ -51,9 +53,8 @@ export default function StoryHome() {
               detail the source still has. */}
           <div className="st-front" style={{ viewTransitionName: "front" }}>
             <p className="st-label">{HOME.worldsLabel}</p>
-            <h1 className="st-front-title" id="home-purpose">
-              <Versal letter={HOME.worldsHeading.slice(0, 1)} />
-              <Breathe text={HOME.worldsHeading.slice(1)} />
+            <h1 className="st-front-title" id="home-purpose" data-hand="capitals">
+              {HOME.worldsHeading}
             </h1>
             <p className="st-front-text">{HOME.heroText}</p>
             <div className="st-front-actions">
@@ -72,10 +73,16 @@ export default function StoryHome() {
                 {HOME.scriptureLabel}
               </ButtonLink>
             </div>
+            <a href="#discover" className="st-front-tool-link">{HOME.discoveryLinkLabel} <span aria-hidden="true">↓</span></a>
             <a href={HOME.worldsHref} className="st-front-explore">
               {HOME.worldsLinkLabel}
               <span aria-hidden="true">↓</span>
             </a>
+            {/* Filled in by SunlitLeaf with the time and the sun's place;
+                hidden unless the light is actually drawn. */}
+            <p className="st-sky" data-sky-readout>
+              {`${HOME.skyLead}.`}
+            </p>
           </div>
           {/* The same photograph the front door always carried, set as a
               plate: one frame, one tone, a caption that says what it is. The
@@ -97,35 +104,7 @@ export default function StoryHome() {
           </figure>
         </section>
 
-        {/* Garo, 2026-10-03: the front door's problem was "all the fluff."
-            Each section is a heading and its links. No kicker above the
-            heading, no paragraph introducing the links, no blurb under them. */}
-        <section className="st-scripture reveal" id="scripture">
-          <div className="st-scripture-heading">
-            <Wheel />
-            <h2>{HOME.scriptureHeading}</h2>
-          </div>
-          <div className="st-scripture-actions">
-            <Link
-              href="/scriptures/protestant/JHN/1"
-              className="st-scripture-action st-scripture-action--lead"
-            >
-              <strong>Begin with John 1</strong>
-            </Link>
-            <Link href="/scriptures" className="st-scripture-action">
-              <strong>Find a book</strong>
-            </Link>
-            <Link href="/scriptures/search" className="st-scripture-action">
-              <strong>Search Scripture</strong>
-            </Link>
-            <Link href="/scriptures/topics" className="st-scripture-action">
-              <strong>Explore topics</strong>
-            </Link>
-          </div>
-        </section>
-
-        <ReadingPaths />
-
+        <DiscoveryDesk />
         <WorldsRail />
       </main>
 
@@ -136,11 +115,7 @@ export default function StoryHome() {
           </span>
           <p>{HOME.webNote}</p>
         </div>
-        <nav aria-label="About this work">
-          <Link href="/sources">Sources &amp; method</Link>
-          <Link href="/about">About this work</Link>
-          <Link href="/services">Work with Garo</Link>
-        </nav>
+        <SiteFooterLinks />
         <p className="st-foot-author">
           Created and maintained by {PROFILE.name} · {PROFILE.location}
         </p>

@@ -1,5 +1,5 @@
 {
-  "intro": "The home page says every word of Scripture on this site is public domain. That is a claim, so here is the chain behind it. For each hosted text: the file the site ingested, the rights record that says it is free, what the processing did to it, and where it serves in the reader. Nothing here is copied from a modern copyrighted translation.",
+  "intro": "The reader hosts public-domain translations alongside openly licensed source-language editions. Here is the provenance behind those texts. For each hosted text: the file the site ingested, the rights record that says it is free, what the processing did to it, and where it serves in the reader. Nothing here is copied from a modern copyrighted translation.",
   "texts": [
     {
       "id": "web",
@@ -18,7 +18,7 @@
       ],
       "license": {
         "label": "World English Bible copyright statement",
-        "href": "https://ebible.org/web/copyright.htm",
+        "href": "https://ebible.org/eng-web/copyright.htm",
         "note": "The public-domain dedication and the trademark terms."
       },
       "retrieved": "2026-07-01",

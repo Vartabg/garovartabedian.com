@@ -1,6 +1,9 @@
 "use client";
 
 import { useMemo } from "react";
+import Link from "next/link";
+import type { StudyContext } from "@/lib/scriptures/study-context";
+import { parallelComparisonHref } from "@/lib/scriptures/parallel-study-url";
 
 export type FilterCategory =
   | "all"
@@ -67,7 +70,7 @@ const TRADITIONS: TraditionMeta[] = [
 ];
 
 const FILTER_BUTTONS: { id: FilterCategory; label: string; count: number }[] = [
-  { id: "all", label: "All 8 Matrices", count: 8 },
+  { id: "all", label: "All comparisons", count: 8 },
   { id: "quranic", label: "Biblical ↔ Qur'anic Bridges", count: 5 },
   { id: "enochic", label: "Enochic & Second Temple", count: 3 },
   { id: "christological", label: "Christology & Nativity", count: 2 },
@@ -180,12 +183,12 @@ export default function ParallelsTopologyMap({
   activeFilter,
   onFilterChange,
   highlightedMatrixId,
-  onSelectMatrix,
+  context,
 }: {
   activeFilter: FilterCategory;
   onFilterChange: (cat: FilterCategory) => void;
   highlightedMatrixId?: string | null;
-  onSelectMatrix?: (slug: string) => void;
+  context?: StudyContext | null;
 }) {
   const visibleBridges = useMemo(() => {
     if (activeFilter === "all") return BRIDGES;
@@ -194,22 +197,22 @@ export default function ParallelsTopologyMap({
 
   return (
     <section
-      className="mb-16 rounded-3xl bg-neutral-950 border border-neutral-800/90 p-6 sm:p-8 shadow-2xl overflow-hidden"
+      className="mb-16 rounded-3xl parallel-panel border parallel-rule p-6 sm:p-8 shadow-2xl overflow-hidden"
       aria-label="Comparative Abrahamic tradition flow and network topology"
     >
       {/* Top Controls Header */}
-      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-neutral-800">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b parallel-rule">
         <div>
-          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[11px] font-mono bg-neutral-900 border border-neutral-700 text-amber-300 mb-2">
-            <span>MULTI-TRADITION TOPOLOGY</span>
+          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[.8rem] font-mono parallel-panel border parallel-rule parallel-accent mb-2">
+            <span>COMPARE THE SOURCES</span>
             <span>·</span>
-            <span>Transmission Web</span>
+            <span>Themes and texts</span>
           </div>
-          <h2 className="text-xl sm:text-2xl font-serif font-medium text-white">
-            Comparative Lineage &amp; Literary Flow
+          <h2 className="text-xl sm:text-2xl font-serif font-medium parallel-ink">
+            Follow a theme across the records
           </h2>
-          <p className="text-xs sm:text-sm text-neutral-400 mt-1 max-w-2xl">
-            Explore how key theological themes, narratives, and prophetic motifs traveled across ancient Near Eastern, Second Temple, Christian, and Islamic textual witnesses.
+          <p className="text-xs sm:text-sm parallel-muted mt-1 max-w-2xl">
+            Choose a theme to compare its appearances in different sources. The relationship and any proposed transmission need to be judged from the cited evidence.
           </p>
         </div>
 
@@ -222,16 +225,17 @@ export default function ParallelsTopologyMap({
                 key={btn.id}
                 type="button"
                 onClick={() => onFilterChange(btn.id)}
+                aria-pressed={isActive}
                 className={`px-3 py-1.5 rounded-lg text-xs font-mono transition flex items-center gap-2 border ${
                   isActive
-                    ? "bg-amber-500/20 border-amber-500 text-amber-200 shadow-sm"
-                    : "bg-neutral-900/60 border-neutral-800 text-neutral-400 hover:border-neutral-700 hover:text-neutral-200"
+                    ? "parallel-surface parallel-rule parallel-accent shadow-sm"
+                    : "parallel-panel parallel-rule parallel-muted  "
                 }`}
               >
                 <span>{btn.label}</span>
                 <span
-                  className={`text-[10px] px-1.5 py-0.2 rounded-full ${
-                    isActive ? "bg-amber-400 text-neutral-950 font-bold" : "bg-neutral-800 text-neutral-400"
+                  className={`text-[.75rem] px-1.5 py-0.2 rounded-full ${
+                    isActive ? "parallel-surface parallel-muted font-bold" : "parallel-surface parallel-muted"
                   }`}
                 >
                   {btn.count}
@@ -247,21 +251,20 @@ export default function ParallelsTopologyMap({
         {TRADITIONS.map((trad) => (
           <div
             key={trad.id}
-            className="p-4 rounded-xl border flex flex-col justify-between transition"
+            className="p-4 rounded-xl border parallel-surface flex flex-col justify-between transition"
             style={{
               borderColor: trad.borderColor,
-              backgroundColor: trad.bg,
             }}
           >
             <div>
               <div className="flex items-center justify-between gap-2 mb-1">
-                <span className="text-xs font-mono font-bold tracking-wide" style={{ color: trad.color }}>
+                <span className="text-xs font-mono font-bold tracking-wide" >
                   {trad.short}
                 </span>
-                <span className="text-[10px] font-mono text-neutral-400">{trad.era}</span>
+                <span className="text-[.75rem] font-mono parallel-muted">{trad.era}</span>
               </div>
-              <h3 className="text-sm font-serif font-medium text-white mb-2">{trad.name}</h3>
-              <p className="text-[11px] text-neutral-300 leading-snug">{trad.description}</p>
+              <h3 className="text-sm font-serif font-medium parallel-ink mb-2">{trad.name}</h3>
+              <p className="text-[.8rem] parallel-muted leading-snug">{trad.description}</p>
             </div>
           </div>
         ))}
@@ -269,54 +272,54 @@ export default function ParallelsTopologyMap({
 
       {/* Transmission Bridges Grid */}
       <div className="space-y-4">
-        <div className="flex items-center justify-between text-xs font-mono text-neutral-500 uppercase tracking-wider pb-1">
+        <div className="parallel-controls flex flex-wrap gap-3 items-center justify-between text-xs font-mono parallel-muted uppercase tracking-wider pb-1">
           <span>Active Textual &amp; Doctrinal Bridges ({visibleBridges.length})</span>
-          <span>Click bridge to view slot-diff matrix</span>
+          <span>Open a comparison to inspect its sources</span>
         </div>
 
         <div className="grid grid-cols-1 gap-3.5">
           {visibleBridges.map((bridge) => {
             const isHighlighted = highlightedMatrixId === bridge.slug;
             return (
-              <div
+              <Link
                 key={bridge.id}
-                onClick={() => onSelectMatrix?.(bridge.slug)}
+                href={parallelComparisonHref(bridge.slug, context)}
                 className={`p-4 sm:p-5 rounded-2xl border transition cursor-pointer ${
                   isHighlighted
-                    ? "bg-amber-950/40 border-amber-500 shadow-md ring-1 ring-amber-500"
-                    : "bg-neutral-900/40 border-neutral-800/80 hover:border-neutral-700 hover:bg-neutral-900/70"
+                    ? "parallel-surface parallel-rule shadow-md ring-1 ring-amber-500"
+                    : "parallel-panel parallel-rule  "
                 }`}
               >
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                   <div className="flex items-center gap-2.5">
-                    <span className="w-2 h-2 rounded-full bg-amber-400" />
-                    <h4 className="text-base font-serif font-medium text-white">{bridge.title}</h4>
+                    <span className="w-2 h-2 rounded-full parallel-surface" />
+                    <h4 className="text-base font-serif font-medium parallel-ink">{bridge.title}</h4>
                   </div>
-                  <span className="text-xs font-mono text-amber-300 hover:underline inline-flex items-center gap-1">
-                    Open Matrix View →
+                  <span className="text-xs font-mono parallel-accent hover:underline inline-flex items-center gap-1">
+                    Open comparison →
                   </span>
                 </div>
 
                 {/* 3-Step Flow Diagram */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 p-3 rounded-xl bg-black/50 border border-neutral-800/60 mb-3">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 p-3 rounded-xl parallel-surface border parallel-rule mb-3">
                   <div className="flex flex-col text-xs">
-                    <span className="text-[10px] font-mono text-blue-400 mb-0.5">Origin / Primary Anchor</span>
-                    <span className="text-neutral-200 font-medium">{bridge.fromLabel}</span>
+                    <span className="text-[.75rem] font-mono parallel-accent mb-0.5">Origin / Primary Anchor</span>
+                    <span className="parallel-muted font-medium">{bridge.fromLabel}</span>
                   </div>
 
                   <div className="flex flex-col text-xs md:border-l md:border-neutral-800/80 md:pl-3">
-                    <span className="text-[10px] font-mono text-purple-400 mb-0.5">Transmission / Exegetical Bridge</span>
-                    <span className="text-neutral-200 font-medium">{bridge.bridgeLabel}</span>
+                    <span className="text-[.75rem] font-mono parallel-accent mb-0.5">Transmission / Exegetical Bridge</span>
+                    <span className="parallel-muted font-medium">{bridge.bridgeLabel}</span>
                   </div>
 
                   <div className="flex flex-col text-xs md:border-l md:border-neutral-800/80 md:pl-3">
-                    <span className="text-[10px] font-mono text-emerald-400 mb-0.5">Comparative Reception</span>
-                    <span className="text-neutral-200 font-medium">{bridge.toLabel}</span>
+                    <span className="text-[.75rem] font-mono parallel-accent mb-0.5">Comparative Reception</span>
+                    <span className="parallel-muted font-medium">{bridge.toLabel}</span>
                   </div>
                 </div>
 
-                <p className="text-xs text-neutral-400 leading-relaxed">{bridge.flowDescription}</p>
-              </div>
+                <p className="text-xs parallel-muted leading-relaxed">{bridge.flowDescription}</p>
+              </Link>
             );
           })}
         </div>

@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 test("Genesis context names its source edition when another edition is being read", async ({ page }) => {
   await page.goto("/scriptures/orthodox/GEN/1?t=brenton");
   await expect(page.locator(".scr-rh .scr-read-meta")).toContainText("Brenton Septuagint");
-  const context = page.getByRole("complementary", { name: "Before you read" });
+  const context = page.getByRole("complementary", { name: "Chapter context" });
   await expect(context).toContainText("References use World English Bible.");
   await context.getByText("Where this chapter fits", { exact: true }).click();
   const nextReference = context.locator('a[href^="/scriptures/orthodox/GEN/2?t=web#v"]').first();
@@ -32,7 +32,7 @@ test("Genesis context names its source edition when another edition is being rea
 test("Genesis context remains usable on mobile at the book's conclusion", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/scriptures/protestant/GEN/50");
-  const context = page.getByRole("complementary", { name: "Before you read" });
+  const context = page.getByRole("complementary", { name: "Chapter context" });
   await context.getByText("Where this chapter fits", { exact: true }).click();
   await expect(context.getByRole("heading", { name: "Where the book goes from here" })).toBeVisible();
   await expect(context.locator('a[href*="/GEN/51"]')).toHaveCount(0);

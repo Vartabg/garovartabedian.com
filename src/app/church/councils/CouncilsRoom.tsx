@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { CouncilPlateMeta } from "@/lib/church/media-plates";
 import type { CouncilsData } from "@/lib/church/types";
 import GlossText from "../../_components/GlossText";
@@ -12,9 +13,11 @@ import CouncilMap from "./CouncilMap";
 export default function CouncilsRoom({
   data,
   plates,
+  audioOverview,
 }: {
   data: CouncilsData;
   plates: Record<string, CouncilPlateMeta>;
+  audioOverview?: ReactNode;
 }) {
   // Glossary: dot a foreign term once per page visit.
   const glossSeen = new Map<string, string>();
@@ -33,6 +36,7 @@ export default function CouncilsRoom({
         <GlossText text={data.intro} seen={glossSeen} />
       </p>
 
+      {audioOverview}
       <CouncilMap data={data} />
       <ChurchSectionNav
         label="Councils on this page"

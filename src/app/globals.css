@@ -14,6 +14,7 @@
 @import "./styles/controls.css";
 @import "./styles/find.css";
 @import "./styles/reading.css";
+@import "./styles/discovery.css";
 
 :root {
   color-scheme: light;
@@ -30,15 +31,16 @@ html[data-a11y-theme="system"] {
 
 html[data-a11y-theme="dark"] {
   color-scheme: dark;
-  --vellum: #17110c;
-  --folio: #211912;
-  --soot: #eedfc2;
-  --muted-ink: #b5a68a;
-  --lapis: #93b3e6;
-  --night-lapis: #b9cdf0;
-  --rubric: #e2684e;
-  --antique-gold: #d8b45c;
-  --deep-gold: #e3c77a;
+  --vellum: #120f1c;
+  --folio: #1b1729;
+  --soot: #ece4d0;
+  --muted-ink: #b3a9a6;
+  --lapis: #9db8ee;
+  --night-lapis: #c3d3f3;
+  --argaman: #d9a2c6;
+  --rubric: #ee7a72;
+  --antique-gold: #d9b65e;
+  --deep-gold: #e2c06a;
   --plate-filter: grayscale(1) sepia(0.45) contrast(1.05) brightness(0.82);
   --plate-blend: screen;
   --bg: var(--vellum);
@@ -46,25 +48,26 @@ html[data-a11y-theme="dark"] {
   --surface: var(--folio);
   --ink: var(--soot);
   --muted: var(--muted-ink);
-  --line: #4a3b2b;
+  --line: #3a3350;
   --accent: var(--lapis);
   --accent-deep: var(--night-lapis);
-  --accent-ink: #17110c;
+  --accent-ink: #120f1c;
   --night: var(--night-lapis);
   --gold: var(--antique-gold);
 }
 
 @media (prefers-color-scheme: dark) {
   html[data-a11y-theme="system"] {
-    --vellum: #17110c;
-    --folio: #211912;
-    --soot: #eedfc2;
-    --muted-ink: #b5a68a;
-    --lapis: #93b3e6;
-    --night-lapis: #b9cdf0;
-    --rubric: #e2684e;
-    --antique-gold: #d8b45c;
-    --deep-gold: #e3c77a;
+    --vellum: #120f1c;
+    --folio: #1b1729;
+    --soot: #ece4d0;
+    --muted-ink: #b3a9a6;
+    --lapis: #9db8ee;
+    --night-lapis: #c3d3f3;
+    --argaman: #d9a2c6;
+    --rubric: #ee7a72;
+    --antique-gold: #d9b65e;
+    --deep-gold: #e2c06a;
     --plate-filter: grayscale(1) sepia(0.45) contrast(1.05) brightness(0.82);
     --plate-blend: screen;
     --bg: var(--vellum);
@@ -72,10 +75,10 @@ html[data-a11y-theme="dark"] {
     --surface: var(--folio);
     --ink: var(--soot);
     --muted: var(--muted-ink);
-    --line: #4a3b2b;
+    --line: #3a3350;
     --accent: var(--lapis);
     --accent-deep: var(--night-lapis);
-    --accent-ink: #17110c;
+    --accent-ink: #120f1c;
     --night: var(--night-lapis);
     --gold: var(--antique-gold);
   }
@@ -92,6 +95,21 @@ html[data-a11y-font="system"] {
     "Helvetica Neue", Arial, sans-serif;
   --font-interface: var(--font-reading);
   --font-display: var(--font-reading);
+}
+
+/* A reading-font choice wins over the era hands and the Scripture face, the
+   same way it already wins over the display face. */
+html:is([data-a11y-font="dyslexic"], [data-a11y-font="system"]) {
+  --hand-capitals: var(--font-reading);
+  --hand-uncial: var(--font-reading);
+  --hand-blackletter: var(--font-reading);
+  --hand-print: var(--font-reading);
+  --hand-today: var(--font-reading);
+  --font-scripture: var(--font-reading);
+}
+
+html[data-a11y-font="readable"] {
+  --font-scripture: var(--font-atkinson), Verdana, Arial, sans-serif;
 }
 
 html[data-a11y-size="large"] {
@@ -342,15 +360,15 @@ html[data-a11y-motion="reduce"] *::after {
 }
 
 .a11y-theme-option--system .a11y-theme-swatch {
-  background: linear-gradient(90deg, #e9d9b4 0 50%, #17110c 50%);
+  background: linear-gradient(90deg, #ece4d0 0 50%, #120f1c 50%);
 }
 
 .a11y-theme-option--light .a11y-theme-swatch {
-  background: #e9d9b4;
+  background: #ece4d0;
 }
 
 .a11y-theme-option--dark .a11y-theme-swatch {
-  background: #17110c;
+  background: #120f1c;
 }
 
 .a11y-font-options {
@@ -513,13 +531,9 @@ html[data-a11y-motion="reduce"] *::after {
   }
 }
 
-/* The Scripture chapter reader has its own thumb bar. Lift the site-wide
-   control above it so neither touch target overlaps the other. */
-body:has(.scr-bar) .a11y-trigger {
-  bottom: calc(4rem + env(safe-area-inset-bottom));
-}
-
-body:has(.scr-bar) .a11y-panel {
-  bottom: calc(8rem + env(safe-area-inset-bottom));
-  max-height: calc(100dvh - 9rem);
+/* The Scripture chapter reader has its own thumb bar, and its Aa opens the
+   same ReadingAppearance panel plus version and audio choices. A second Aa
+   floating above it was a duplicate control on the same screen. */
+body:has(.scr-bar) .a11y-menu {
+  display: none;
 }

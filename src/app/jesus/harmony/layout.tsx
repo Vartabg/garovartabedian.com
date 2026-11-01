@@ -4,7 +4,7 @@ const DESCRIPTION =
   "Interactive side-by-side synoptic harmony and word-level pericope diffing across Matthew, Mark, Luke, and John in English (WEB) and Greek (SBLGNT), revealing Triple Tradition, Q-Source agreements, and Sondergut.";
 
 export const metadata = createJesusRoomMetadata({
-  title: "Synoptic Harmony & Pericope Diffing",
+  title: "Gospels word by word",
   description: DESCRIPTION,
   path: "/jesus/harmony",
 });

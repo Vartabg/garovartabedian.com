@@ -8,6 +8,7 @@ import {
 } from "@/lib/maps/med-geo";
 import { MAP_PLACES, ROUTE } from "./places";
 import type { IgnatiusData } from "@/lib/early/types";
+import MapGuide from "@/app/_components/MapGuide";
 
 const place = (id: string) => MAP_PLACES.find((p) => p.id === id);
 const mareLabel = medProject(38.2, 18.5);
@@ -29,10 +30,9 @@ function curve(fromId: string, toId: string, lift = 0.18): string {
 /**
  * A storyteller's map of Ignatius' road from Antioch to Rome. His one
  * escorted journey is drawn whole (that's the story); the seven letters
- * stay quiet until chosen, then the one arc flies from where it was written
- * to who received it. Names surface by relevance — the journey's ends and
- * main writing-stops always, the rest on hover. A native place picker supplies
- * the non-overlapping keyboard and touch target for this dense geography.
+ * stay quiet until chosen, then one arc connects where it was written to
+ * who received it. A native letter picker makes every letter reachable on
+ * the dense geography, including those that share a writing place.
  */
 export default function RoadMap({
   data,
@@ -45,32 +45,31 @@ export default function RoadMap({
 }) {
   const letter = data.letters.find((l) => l.textId === activeLetter) ?? null;
   const activePlaces = letter ? new Set([letter.writtenAt, letter.to]) : new Set<string>();
-  // First letter written at each place — clicking the place selects it.
-  const letterAt = new Map<string, string>();
-  for (const l of data.letters) {
-    if (!letterAt.has(l.writtenAt)) letterAt.set(l.writtenAt, l.textId);
-  }
 
   return (
     <>
-      <label className="ew-visual-picker">
-        <span>Choose a place on Ignatius&apos; road</span>
-        <select
-          data-ui-target="standard"
-          value={letter?.writtenAt ?? ""}
-          onChange={(event) => {
-            onSelect?.(letterAt.get(event.currentTarget.value) ?? null);
-          }}
-        >
-          <option value="">Road overview</option>
-          {MAP_PLACES.map((mapPlace) => (
-            <option key={mapPlace.id} value={mapPlace.id}>
-              {mapPlace.name}
-            </option>
-          ))}
-        </select>
-      </label>
-      <div className="ew-map-scroll">
+      <MapGuide title="Follow a letter" description="Choose a letter to connect its writing place with its recipient and open its passage below.">
+        <label className="map-picker">
+          <span>Letter</span>
+          <select
+            data-ui-target="standard"
+            value={letter?.textId ?? ""}
+            disabled={!onSelect}
+            onChange={(event) => onSelect?.(event.currentTarget.value || null)}
+          >
+            <option value="">Road overview</option>
+            {data.letters.map((item) => (
+              <option key={item.textId} value={item.textId}>
+                {item.title} · from {place(item.writtenAt)?.name ?? item.writtenAt}
+              </option>
+            ))}
+          </select>
+        </label>
+      </MapGuide>
+      <p className="map-status" role="status">
+        {letter ? <><strong>{letter.title}</strong>{" · "}{place(letter.writtenAt)?.name ?? letter.writtenAt} → {place(letter.to)?.name ?? letter.to}</> : `Road overview · choose one of the ${data.letters.length} letters to follow its connection.`}
+      </p>
+      <div className="ew-map-scroll" role="group" aria-label="Ignatius’ road. Scrolls sideways on narrow screens." tabIndex={0}>
         <svg
         viewBox="0 0 720 420"
         className="ew-map"

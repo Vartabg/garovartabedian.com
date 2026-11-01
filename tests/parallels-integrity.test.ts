@@ -10,6 +10,8 @@ import {
   digestFor,
   FAILING_STATUS,
 } from "../scripts/parallels/build-rights-manifest.mjs";
+import { CONTENT_HASH_SCOPE, matrixContentHash } from "../scripts/parallels/provenance.mjs";
+import { validateScriptureWitnessMetadata } from "../scripts/parallels/witness-metadata.mjs";
 
 const ROOT = path.join(import.meta.dirname, "..");
 const PARALLELS_DIR = path.join(ROOT, "public/parallels");
@@ -198,18 +200,20 @@ test("reception claims follow evidence claim schema with valid sources and bound
   }
 });
 
-test("reviewed content hash matches cryptographic digest over slots, edges, and reception claims", () => {
+test("versioned content digest includes witnesses as well as comparison content", () => {
   for (const file of matrixFiles) {
     const matrix = JSON.parse(
       readFileSync(path.join(PARALLELS_DIR, file), "utf8"),
     ) as ParallelMatrix;
 
     const contentToHash = JSON.stringify({
+      witnesses: matrix.witnesses,
       slots: matrix.slots,
       edges: matrix.edges,
       receptionClaims: matrix.receptionClaims,
     });
     const computedHash = crypto.createHash("sha256").update(contentToHash).digest("hex");
+    assert.equal(matrix.provenance.contentHashScope, CONTENT_HASH_SCOPE);
 
     assert.equal(
       matrix.provenance.reviewedContentHash,
@@ -218,5 +222,61 @@ test("reviewed content hash matches cryptographic digest over slots, edges, and 
     );
     assert.ok(["agent-reviewed", "human-approved"].includes(matrix.provenance.reviewStatus));
     assert.ok(matrix.provenance.reviewer.length > 3);
+
+    // A correct excerpt hash used to survive arbitrary changes to its claimed
+    // language, composition date and manuscript. Every matrix now binds these.
+    for (const field of ["language", "composition", "earliestManuscript", "edition"] as const) {
+      const altered = structuredClone(matrix);
+      if (field === "language") altered.witnesses[0].language = "Unrelated language";
+      else altered.witnesses[0].dates[field] = "Unrelated source";
+      assert.notEqual(matrixContentHash(altered), computedHash, `${file}: ${field} escaped the digest`);
+    }
+  }
+});
+
+test("Jude, Matthew and Daniel witness identities match their hosted original passages", () => {
+  const cases = [
+    { matrix: "jude-enoch-quotation", id: "jude-14-15", book: "JUD", chapter: 1,
+      language: "Greek", edition: "sblgnt", editionName: "SBL Greek New Testament + MorphGNT", corpus: "new-testament" },
+    { matrix: "son-of-man", id: "matthew-26", book: "MAT", chapter: 26,
+      language: "Greek", edition: "sblgnt", editionName: "SBL Greek New Testament + MorphGNT", corpus: "new-testament" },
+    { matrix: "son-of-man", id: "daniel-7", book: "DAN", chapter: 7,
+      language: "Aramaic", edition: "oshb", editionName: "Open Scriptures Hebrew Bible", corpus: "hebrew-bible" },
+  ];
+  for (const expected of cases) {
+    const matrix = JSON.parse(readFileSync(path.join(PARALLELS_DIR, `${expected.matrix}.json`), "utf8")) as ParallelMatrix;
+    const original = JSON.parse(readFileSync(path.join(ROOT,
+      `public/scriptures/original/${expected.book}/${expected.chapter}.json`), "utf8"));
+    assert.equal(original.edition, expected.edition);
+    assert.deepEqual([...new Set(original.verses.flatMap((verse: { languages: string[] }) => verse.languages))],
+      [expected.language.toLowerCase()]);
+    const witness = matrix.witnesses.find((item) => item.id === expected.id)!;
+    assert.equal(witness.language, `${expected.language} / English`);
+    assert.equal(witness.corpusEditionId, "web-bible");
+    assert.equal(witness.dates.composition, "Not assessed in this comparison");
+    assert.equal(witness.dates.earliestManuscript, "Not assessed in this comparison");
+    assert.equal(witness.dates.edition, `World English Bible; source-language reference: ${expected.editionName}`);
+    for (const slot of matrix.slots) {
+      assert.deepEqual(slot.cells[expected.id].locator, {
+        corpusId: expected.corpus, editionId: "web-bible", section: expected.book,
+        passageRef: slot.cells[expected.id].locator.passageRef, originalLanguage: expected.language,
+      });
+    }
+    assert.deepEqual(validateScriptureWitnessMetadata(matrix, ROOT), []);
+
+    // Recreate the actual bad Genesis defaults. Merely rehashing the data must
+    // not make a passage-specific provenance error pass validation again.
+    const wrong = structuredClone(matrix);
+    const wrongWitness = wrong.witnesses.find((item) => item.id === expected.id)!;
+    wrongWitness.language = "Hebrew / English";
+    wrongWitness.dates = { composition: "c. 10th–6th century BCE",
+      earliestManuscript: "4QGen-b (c. 1st century BCE)",
+      edition: "Westminster Leningrad Codex / World English Bible" };
+    for (const slot of wrong.slots) {
+      slot.cells[expected.id].locator.corpusId = "hebrew-bible";
+      slot.cells[expected.id].locator.originalLanguage = "Hebrew";
+    }
+    wrong.provenance.reviewedContentHash = matrixContentHash(wrong);
+    assert.ok(validateScriptureWitnessMetadata(wrong, ROOT).length > 0, expected.id);
   }
 });

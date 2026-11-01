@@ -1,0 +1,15 @@
+# Independent review: Thomas-only parables
+
+Reviewer: fresh-context Codex agent Carson. Completed read-only review of plan SHA-256 11b016b4de38dbd088b0f640baa411c817adfd83d43f1992e427eb6b533f3197 at baseline 1c06180f, the specified sources, local text, room, resolver, Find, trace, release, accessibility and Playwright config. No tests were run by the reviewer.
+
+Accepted corrections: narrow the unqualified no-parallel claim to the Synoptics and distinguish the three stories from all of saying 21; require disclosure of the thief and reaper; define fail-closed validation of exactly three ID/number pairs and negative tests for missing 97, duplicate IDs, malformed metadata and missing source/trace; add initial and changed hash, keyboard, no canonical fetch, source-order, fallback, all no-JS links and actual Find navigation tests; include phone in release browser coverage and check both color schemes. The staged probe checks only source-derived prefixes, not full fidelity. In the actual release pipeline `production.mjs` sets CI=1, and the base Playwright config then refuses to reuse an existing server; this existing behavior addresses the reviewer's server-identity concern without changing the pipeline. Local targeted checks will use an owned production server.
+
+The public text will attribute the classification to Gathercole and Van Eck; it will not claim that all of Thomas 21 lacks Gospel parallels. Pavelčík separately finds 98 has no New Testament Gospel parallel while noting thematic similarities. The reviewer did not independently verify John, and the public scope is therefore deliberately limited to the Synoptics. Source numbering and scholarly parable definitions can vary; the three entries are a named-source selection, not a claim to enumerate every possible parabolic saying.
+
+A targeted follow-up reviewed the corrections and found no remaining blockers. The reviewer confirmed the release uses an owned server because CI is set, and verified the Pavelčík publisher abstract; the reviewer could not independently open Coogan, so the public claim remains limited to the Synoptics.
+
+Implementation review identified that same-room Find navigation may not emit `hashchange`, and that the responsive test checked only one story. The implementation now emits and handles a scoped open event for same-room parable Find destinations and adds a real same-room Find test. The browser matrix now checks all three full ordered texts at phone/desktop widths in light/dark.
+
+The reviewer rechecked the scoped event and expanded matrix and found no remaining code-review blockers. Browser verification remains necessary for real router, focus, scrolling and rendering; no productivity claim is made.
+
+The first production-build browser run reproduced the same-room issue for mouse selection: Find's ordinary links do not call its keyboard navigation function. The correction notifies the room for both ordinary unmodified link clicks and keyboard navigation, while preserving modified-click behavior. The reviewer checked the correction and reported no further blocker; both paths are covered by the browser test.

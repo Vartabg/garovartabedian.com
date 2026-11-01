@@ -1,0 +1,19 @@
+/* Scripture study controls reflow at narrow widths and enlarged reading sizes. */
+.scr-polyglot-controls :is(div, label, select, button) { min-width: 0; max-width: 100%; }
+.scr-polyglot-controls > div { flex: 1 1 16rem; }
+.scr-polyglot-controls label { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; }
+.scr-polyglot-layout-options { flex-wrap: wrap; }
+.scr-polyglot-layout-options > button { flex: 1 1 7rem; }
+.world-scr :is(.scr-polyglot, .scr-diachronic, .scr-disputation) { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .world-scr > .world-header > .wrap { flex-wrap: wrap; }
+  .world-scr .world-brand-lockup { flex: 1 0 100%; max-width: 100%; flex-wrap: wrap; }
+  .world-scr .world-header .brand { max-width: 100%; overflow: visible; white-space: normal; }
+  .world-scr .site-navigation { flex: 1 1 100%; min-width: 0; max-width: 100%; flex-wrap: wrap; }
+  .world-scr :is(.site-nav-menu, .site-nav-find) { max-width: 100%; }
+  .world-scr .site-nav-menu > summary { white-space: normal; }
+  .world-scr main > .wrap > .world-guide:not(.world-guide--reader) { display: flex; flex-wrap: wrap; gap: .45rem; }
+  .world-scr .wg-mobile-menu { flex: 1 1 7rem; min-width: 0; max-width: 100%; }
+  .world-scr .wg-worlds-link { flex: 1 1 5.5rem; max-width: 100%; }
+  .world-scr .dw-goto-field { flex-basis: 8rem; }
+}

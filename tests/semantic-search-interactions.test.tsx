@@ -96,6 +96,26 @@ test("ResonanceRadar preset replacement keeps the newest result after older work
   assert.equal(calls[2].signal?.aborted, true);
 });
 
+test("ResonanceRadar stops pending work and ignores late results before a new search", async () => {
+  const calls: Call<OmniResonanceResult>[] = [];
+  const search: typeof searchOmniResonance = (_query, options) => {
+    const call = {...pending<OmniResonanceResult>(), signal:options?.signal, progress:options?.onProgress};
+    calls.push(call); return call.promise;
+  };
+  await render(<ResonanceRadar search={search}/>);
+  await click(button(RESONANCE_SPARKS[0].label));
+  await click(button("Stop search"));
+  assert.equal(calls[0].signal?.aborted, true);
+  assert.match(host.querySelector('[role="status"]')!.textContent!, /Search stopped/);
+  assert.equal(dom.window.document.activeElement, host.querySelector("input"));
+  await act(async () => { calls[0].progress?.("stale progress"); calls[0].resolve({query:"stale", model:"fixture", horizons:[], peakHorizon:null, highestScore:0, allByRelevance:[], coverage:{indexedChapters:0, assignedChapters:0, excludedChapters:[], unindexedBooks:[]}}); });
+  assert.equal(host.querySelector(".scr-resonance-content"), null);
+  assert.doesNotMatch(host.textContent!, /stale progress/);
+  await click(button("Find similar passages"));
+  assert.equal(calls.length, 2);
+  assert.equal(calls[1].signal?.aborted, false);
+});
+
 test("AfterlifeExplorer reset and clearing the query cancel pending work without late reentry", async () => {
   const calls: Call<{model:string; hits:[]}>[] = [];
   const search: typeof searchCorpus<AfterlifeEntry> = (_corpus, _query, options) => {

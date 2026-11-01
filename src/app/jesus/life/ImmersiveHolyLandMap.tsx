@@ -7,10 +7,12 @@ import {
   Marker,
   NavigationControl,
   ScaleControl,
+  setWorkerUrl,
   type GeoJSONSource,
   type StyleSpecification,
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
+import mapWorker from "@/lib/jesus/maplibre-worker.json";
 import type { RoutePoint } from "./GalileeMap";
 import {
   BOUNDS,
@@ -231,6 +233,9 @@ export default function ImmersiveHolyLandMap({
 
     let map: MapLibreMap;
     try {
+      // Configure before the worker pool starts. The bundled library's
+      // import.meta.url points at the build machine, not its split ESM worker.
+      setWorkerUrl(mapWorker.workerUrl);
       map = new MapLibreMap({
         container: mapNodeRef.current,
         style: buildStyle(route),

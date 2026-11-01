@@ -81,6 +81,12 @@
         "https://othergospels.com/origin/?a=zinner",
         "https://othergospels.com/resurrection/?a=zinner"
       ]
+    },
+    "mattison-secret-james": {
+      "decision": "Translator explicitly dedicates this translation for unrestricted copying, modification and use for any purpose.",
+      "evidence": [
+        "https://www.gospels.net/james"
+      ]
     }
   },
   "legacyHashes": [
@@ -5326,6 +5332,7 @@
       "existingTextId": null,
       "group": "apocrypha",
       "title": "The Gospel of Peter",
+      "canonStatus": "Outside the canon. The Gospel of Peter is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourcePath": "2_Individual_Books/Christian_Apocrypha/gospel-peter.md",
       "sourceSha256": "3ef2241195990d3cf9f6a9b84de229252ea0ababdef3fa10a2c7f29e94e9b78a",
       "sourceWords": 1901,
@@ -5340,7 +5347,9 @@
       "publicationReason": "Historical public-domain translation; source attribution retained. Modern website content is excluded.",
       "caution": "",
       "witnesses": [],
-      "provenance": [],
+      "provenance": [
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
+      ],
       "sourcePdfSha256": null,
       "sourcePdfPages": null,
       "parser": "structured",
@@ -5360,6 +5369,7 @@
       "existingTextId": null,
       "group": "apocrypha",
       "title": "The Apocalypse of Peter: Greek Text and Collected Fragments",
+      "canonStatus": "Outside the canon. This Apocalypse of Peter is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourcePath": "2_Individual_Books/Christian_Apocrypha/apocalypse-peter.md",
       "sourceSha256": "96acd4fe2a51cc1e4288a57a1179a1bed548086f98ed96f46c58d5afadd8eec5",
       "sourceWords": 2059,
@@ -5374,7 +5384,10 @@
       "publicationReason": "Historical public-domain translation; source attribution retained. Modern website content is excluded.",
       "caution": "",
       "witnesses": [],
-      "provenance": [],
+      "provenance": [
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist).",
+        "The Ethiopian broader canon includes a book called Clement (Qälëmentos), communicated by Peter to Clement (Cowley 1974). It overlaps a different and later work, the Arabic Apocalypse of Peter or Book of the Rolls, dated after the late ninth century (B. Roggema and T. Burke, “Book of the Rolls,” e-Clavis: Christian Apocrypha, NASSCAL, ECCA 950). It is not this early Apocalypse of Peter."
+      ],
       "sourcePdfSha256": null,
       "sourcePdfPages": null,
       "parser": "structured",
@@ -5394,6 +5407,7 @@
       "existingTextId": null,
       "group": "apocrypha",
       "title": "The Protoevangelium of James",
+      "canonStatus": "Outside the canon. The Protoevangelium of James is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourcePath": "2_Individual_Books/Christian_Apocrypha/protoevangelium-james.md",
       "sourceSha256": "be88f33119a88b74c05da35056364f44afa3e16c26a7f78ad72785012bb4c923",
       "sourceWords": 6636,
@@ -5408,7 +5422,9 @@
       "publicationReason": "Historical public-domain translation; source attribution retained. Modern website content is excluded.",
       "caution": "",
       "witnesses": [],
-      "provenance": [],
+      "provenance": [
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
+      ],
       "sourcePdfSha256": null,
       "sourcePdfPages": null,
       "parser": "structured",
@@ -5428,6 +5444,7 @@
       "existingTextId": null,
       "group": "apocrypha",
       "title": "Acts of Paul and Thecla",
+      "canonStatus": "Outside the canon. The Acts of Paul and Thecla is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourcePath": "2_Individual_Books/Christian_Apocrypha/acts-paul-thecla.md",
       "sourceSha256": "38c30893db0c7b7f675caf7118b697f01882b3d303bb48e7eb99d3ab28f521dc",
       "sourceWords": 5766,
@@ -5442,7 +5459,9 @@
       "publicationReason": "Historical public-domain translation; source attribution retained. Modern website content is excluded.",
       "caution": "",
       "witnesses": [],
-      "provenance": [],
+      "provenance": [
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
+      ],
       "sourcePdfSha256": null,
       "sourcePdfPages": null,
       "parser": "structured",
@@ -5462,6 +5481,7 @@
       "existingTextId": "ascension-isaiah",
       "group": "apocrypha",
       "title": "The Ascension of Isaiah",
+      "canonStatus": "Outside the canon. The Ascension of Isaiah is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourcePath": "2_Individual_Books/Christian_Apocrypha/ascension-isaiah.md",
       "sourceSha256": "7f063d109fc05c1bd1e8b8211b84182b997ad55f941e13d62eae0b56e0b588e2",
       "sourceWords": 8919,
@@ -5477,7 +5497,9 @@
       "caution": "Reformatted from the existing local source transcription. Manuscript gaps, brackets and source-editor comments are retained; the modern website introduction is omitted.",
       "witnesses": [],
       "provenance": [
-        "Overlap audit: this is the same translation already hosted. Reuse the existing primary reader; only separately acquired edition commentary is added. The Ascension text is whitespace-equivalent, the Epistula text is equivalent including its introductory observation, and Papias differs only in two punctuation readings and a residual reference heading. Existing wording is preserved."
+        "Overlap audit: this is the same translation already hosted. Reuse the existing primary reader; only separately acquired edition commentary is added. The Ascension text is whitespace-equivalent, the Epistula text is equivalent including its introductory observation, and Papias differs only in two punctuation readings and a residual reference heading. Existing wording is preserved.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist).",
+        "Some European writers once described the Ascension of Isaiah as canonical in Ethiopia; Cowley (1974) did not find it so “at the present”, and it is not in the Church’s own list. Its complete text survives in Ethiopic."
       ],
       "sourcePdfSha256": null,
       "sourcePdfPages": null,
@@ -5498,6 +5520,7 @@
       "existingTextId": "epistula-apostolorum",
       "group": "apocrypha",
       "title": "The Epistula Apostolorum (Epistle of the Apostles)",
+      "canonStatus": "Outside the canon. The Epistula Apostolorum is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourcePath": "2_Individual_Books/Christian_Apocrypha/epistula-apostolorum.md",
       "sourceSha256": "99dc7ef1383e3b0cf374442e93299f40f952343bb03d65e2a389510edb45fcfa",
       "sourceWords": 9813,
@@ -5513,7 +5536,8 @@
       "caution": "Reformatted from the existing local source transcription. Manuscript gaps, brackets and source-editor comments are retained; the modern website introduction is omitted.",
       "witnesses": [],
       "provenance": [
-        "Overlap audit: this is the same translation already hosted. Reuse the existing primary reader; only separately acquired edition commentary is added. The Ascension text is whitespace-equivalent, the Epistula text is equivalent including its introductory observation, and Papias differs only in two punctuation readings and a residual reference heading. Existing wording is preserved."
+        "Overlap audit: this is the same translation already hosted. Reuse the existing primary reader; only separately acquired edition commentary is added. The Ascension text is whitespace-equivalent, the Epistula text is equivalent including its introductory observation, and Papias differs only in two punctuation readings and a residual reference heading. Existing wording is preserved.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
       ],
       "sourcePdfSha256": null,
       "sourcePdfPages": null,
@@ -5868,11 +5892,12 @@
       "editionLabel": "Mark M. Mattison",
       "edition": "Mark M. Mattison, public-domain translation from Coptic, as retrieved 2026-09-14.",
       "editionDate": "Not specified on source page; retrieved 2026-09-14",
-      "compositionDate": null,
+      "compositionDate": "Debated. Proposals range from a mid-first-century core to the late second century (Gathercole, 2012).",
       "compositionNote": "No new ancient composition date asserted by this import. Edition dates describe translations or printings, not ancient composition.",
       "existingTextId": null,
       "group": "apocrypha",
       "title": "The Gospel of Thomas",
+      "canonStatus": "Outside the canon. The Gospel of Thomas is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourcePath": "2_Individual_Books/Christian_Apocrypha/gospel-thomas.md",
       "sourceSha256": "52da8675ec5d94a4dd868bddf86ae44c1d83e871a5e3f5cccb7b9d4d477d2ddc",
       "sourceWords": 5607,
@@ -5881,15 +5906,22 @@
       ],
       "language": "English",
       "coverage": "114 sayings and prologue (Nag Hammadi Codex II,2)",
-      "sourceRights": "Translator explicitly dedicates this translation to the public domain on the source page.",
+      "sourceRights": "Source page https://www.gospels.net/thomas, checked 2026-10-24: “The following translation has been committed to the public domain and may be freely copied and used, changed or unchanged, for any purpose.”",
       "rightsProfile": "mattison",
       "publicationStatus": "published",
       "publicationReason": "Historical public-domain translation; source attribution retained. Modern website content is excluded.",
-      "caution": "Section subtitles and the list of textual symbols are the translator’s aids. Modern reflections and post-text commentary are omitted. Greek fragments are not supplied as additional witnesses.",
+      "caution": "Section subtitles and the list of textual symbols are the translator’s aids. Modern reflections and post-text commentary are omitted. The Greek fragments are listed as witnesses; their text is not reproduced here.",
       "witnesses": [
-        "Nag Hammadi Codex II,2"
+        "Nag Hammadi Codex II,2 — Coptic, papyrus codex, 4th/5th century; preserves essentially the complete text. This translation follows it.",
+        "P.Oxy. 1 — Greek, papyrus codex, late 2nd/early 3rd century; parts of sayings 26–33 and 77.",
+        "P.Oxy. 654 — Greek, papyrus roll, middle/late 3rd century; parts of the prologue and sayings 1–7.",
+        "P.Oxy. 655 — Greek, papyrus roll, 3rd century; fragments of sayings 24 and 36–39."
       ],
-      "provenance": [],
+      "provenance": [
+        "Manuscript dates and contents follow the translator’s Manuscript Information page, https://www.gospels.net/manuscript (checked 2026-10-24).",
+        "Date of composition: Simon Gathercole, The Composition of the Gospel of Thomas (Cambridge University Press, 2012; SNTS Monograph Series 151), introduction. He describes Thomas’s place in Christian origins as one of the most debated questions in early Christian studies, and cites proposals from a mid-first-century Aramaic core (A. D. DeConick, 2006) to a late-second-century date after Tatian’s Diatessaron (N. Perrin, 2002).",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
+      ],
       "sourcePdfSha256": null,
       "sourcePdfPages": null,
       "parser": "structured",
@@ -5909,6 +5941,7 @@
       "existingTextId": null,
       "group": "apocrypha",
       "title": "The Gospel of Mary",
+      "canonStatus": "Outside the canon. The Gospel of Mary is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourcePath": "2_Individual_Books/Christian_Apocrypha/gospel-mary.md",
       "sourceSha256": "8a2bae6a03b085d6f97171b9e44860e833425287bb87435a49a46e5f0eea7780",
       "sourceWords": 1252,
@@ -5925,7 +5958,9 @@
       "witnesses": [
         "Berlin Codex 8502,1; pages 1–6 and 11–14 missing"
       ],
-      "provenance": [],
+      "provenance": [
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
+      ],
       "sourcePdfSha256": null,
       "sourcePdfPages": null,
       "parser": "structured",
@@ -6675,6 +6710,7 @@
       "existingTextId": null,
       "group": "gnostic",
       "title": "The Gospel of Philip",
+      "canonStatus": "Outside the canon. The Gospel of Philip is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourceUrls": [
         "https://www.gospels.net/philip"
       ],
@@ -6689,7 +6725,8 @@
         "Nag Hammadi Codex II,3"
       ],
       "provenance": [
-        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json."
+        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
       ],
       "parser": "structured",
       "reuseExistingText": false,
@@ -6710,6 +6747,7 @@
       "existingTextId": null,
       "group": "gnostic",
       "title": "The Gospel of Truth",
+      "canonStatus": "Outside the canon. The Gospel of Truth is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourceUrls": [
         "https://www.gospels.net/truth"
       ],
@@ -6724,7 +6762,8 @@
         "Nag Hammadi Codex I,3"
       ],
       "provenance": [
-        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json."
+        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
       ],
       "parser": "structured",
       "reuseExistingText": false,
@@ -6745,6 +6784,7 @@
       "existingTextId": null,
       "group": "gnostic",
       "title": "The Secret Book of John",
+      "canonStatus": "Outside the canon. The Secret Book of John is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourceUrls": [
         "https://othergospels.com/john/?a=zinner",
         "https://othergospels.com/john/zinner.json"
@@ -6761,7 +6801,8 @@
         "Berlin Codex 8502,2"
       ],
       "provenance": [
-        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json."
+        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
       ],
       "parser": "synoptic",
       "reuseExistingText": false,
@@ -6782,6 +6823,7 @@
       "existingTextId": null,
       "group": "gnostic",
       "title": "Hypostasis of the Archons",
+      "canonStatus": "Outside the canon. The Hypostasis of the Archons is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourceUrls": [
         "https://othergospels.com/archons/?a=zinner",
         "https://othergospels.com/archons/zinner.json"
@@ -6797,7 +6839,8 @@
         "Nag Hammadi Codex II,4"
       ],
       "provenance": [
-        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json."
+        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
       ],
       "parser": "structured",
       "reuseExistingText": false,
@@ -6818,6 +6861,7 @@
       "existingTextId": null,
       "group": "gnostic",
       "title": "On the Origin of the World",
+      "canonStatus": "Outside the canon. The work On the Origin of the World is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourceUrls": [
         "https://othergospels.com/origin/?a=zinner",
         "https://othergospels.com/origin/zinner.json"
@@ -6833,7 +6877,8 @@
         "Nag Hammadi Codex II,5"
       ],
       "provenance": [
-        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json."
+        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
       ],
       "parser": "structured",
       "reuseExistingText": false,
@@ -6854,6 +6899,7 @@
       "existingTextId": null,
       "group": "gnostic",
       "title": "Treatise on the Resurrection",
+      "canonStatus": "Outside the canon. The Treatise on the Resurrection is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
       "sourceUrls": [
         "https://othergospels.com/resurrection/?a=zinner",
         "https://othergospels.com/resurrection/zinner.json"
@@ -6869,7 +6915,8 @@
         "Nag Hammadi Codex I,4"
       ],
       "provenance": [
-        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json."
+        "Acquired 2026-09-26; raw response hash and extraction scope recorded in scripts/early/sources/acquisitions.json.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
       ],
       "parser": "structured",
       "reuseExistingText": false,
@@ -6877,6 +6924,45 @@
       "sourceRepositoryPath": "scripts/early/sources/treatise-resurrection.md",
       "sourceSha256": "952a268c7d105b19a857e5988f516f181e876bf0125840266bd5d336b59ae461",
       "sourceWords": 1507
+    },
+    {
+      "id": "secret-book-james",
+      "workId": "secret-book-james",
+      "editionId": "secret-book-james-mattison",
+      "editionLabel": "Mark M. Mattison",
+      "edition": "Mark M. Mattison, public-domain translation from Coptic; retrieved 2026-10-27.",
+      "editionDate": "Not specified on source page; retrieved 2026-10-27",
+      "compositionDate": "Debated; NASSCAL describes proposals as tending toward the later second century.",
+      "compositionNote": "Composition date is distinct from the date of the surviving copy.",
+      "existingTextId": null,
+      "group": "apocrypha",
+      "title": "The Secret Book of James",
+      "canonStatus": "Outside the canon. The Secret Book of James is not in the Bible of any tradition on the Scriptures shelf. It is hosted here as a historical record.",
+      "sourceRepositoryPath": "scripts/early/sources/secret-book-james.md",
+      "sourceSha256": "79c189d435a1017986f18052a370c3f3e20c633a2a7ed41e74d9b72a20760ed6",
+      "sourceWords": 3148,
+      "sourceUrls": [
+        "https://www.gospels.net/james"
+      ],
+      "language": "English",
+      "coverage": "Salutation through conclusion in the Coptic Nag Hammadi Codex I,2; manuscript page markers and gaps retained.",
+      "sourceRights": "Source page https://www.gospels.net/james, checked 2026-10-27: “The following translation has been committed to the public domain and may be freely copied and used, changed or unchanged, for any purpose.”",
+      "rightsProfile": "mattison-secret-james",
+      "publicationStatus": "published",
+      "publicationReason": "Historical public-domain translation; attribution retained.",
+      "caution": "The work is presented as a historical record. Its named author and attribution of speech are part of the text, not verified authorship. Translator subtitles, page numbers and uncertainty marks are retained; modern website reflections and translation notes are excluded.",
+      "witnesses": [
+        "Nag Hammadi Codex I,2 — Coptic papyrus codex, fourth/fifth century; preserves essentially the complete work, with gaps. This translation follows it."
+      ],
+      "provenance": [
+        "Manuscript information follows Mark M. Mattison, https://www.gospels.net/manuscript (checked 2026-10-27). NASSCAL describes Codex I as fourth century: https://www.nasscal.com/e-clavis-christian-apocrypha/apocryphon-of-james/.",
+        "Composition dating is debated; NASSCAL describes proposals as tending toward the late second century: https://www.nasscal.com/e-clavis-christian-apocrypha/apocryphon-of-james/.",
+        "Acquired 2026-10-27 from https://www.gospels.net/james; full HTML response SHA-256 e4a0f2c4fd88250feab50f9d53023b0acab37b1baff359c5db63b5683f859d02. The pinned Salutation–Conclusion HTML snapshot has SHA-256 1afd3abd5d79bd5ff63e88e4583c57b5ec9172ac92b75e26168b37ea9b06f458; the extraction script preserves paragraph order and folds whitespace.",
+        "Canon check, 2026-10-26: not in the Protestant, Catholic or Eastern Orthodox lists on the Scriptures shelf; not in the Ethiopian Orthodox Tewahedo Church’s 81-book list (https://ethiopianorthodox.org/english/canonical/books.html) or in R. W. Cowley, “The Biblical Canon of the Ethiopian Orthodox Church Today,” Ostkirchliche Studien 23 (1974) 318–323; and not among the additional books in the Armenian canon lists tabulated from M. E. Stone’s Harvard Theological Review studies (https://islamic-awareness.org/bible/text/canon/armenianlist)."
+      ],
+      "parser": "structured",
+      "reuseExistingText": false,
+      "editionRelation": "new-work-or-witness"
     }
   ]
 }

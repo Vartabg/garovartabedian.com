@@ -43,7 +43,7 @@ export default defineConfig({
     },
     {
       name: "phone",
-      testMatch: /worlds-responsive\.spec\.ts|find-overlay\.spec\.ts/,
+      testMatch: /worlds-responsive\.spec\.ts|find-overlay\.spec\.ts|job-report\.spec\.ts|work-demos\.spec\.ts|thomas-parables\.spec\.ts/,
       use: { ...devices["iPhone 13"], browserName: "chromium", channel: "chrome" },
     },
     {

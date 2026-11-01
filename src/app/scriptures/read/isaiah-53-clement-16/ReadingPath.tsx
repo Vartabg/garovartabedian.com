@@ -5,9 +5,9 @@ import Link from "next/link";
 import { passageSegments } from "@/lib/evidence/reading-journey";
 import type { ConnectionPanelProps } from "./ConnectionPanel";
 import styles from "./reading.module.css";
-import ReadingAppearance from "@/app/_components/reading/ReadingAppearance";
 import SourceNoteDialog from "@/app/_components/reading/SourceNoteDialog";
 import FormattedText, { ReadingLayoutNote } from "@/app/_components/reading/FormattedText";
+import FromHere from "@/app/_components/FromHere";
 
 type Note = { id: string; kind: "source" | "interpretation" | "question"; title: string; quote: string; explanation: string; sourceIds: string[]; excerptId?: string };
 const roleNames = { source: "Source", interpretation: "Editorial interpretation", question: "Open question" };
@@ -73,12 +73,16 @@ export default function ReadingPath({ journey, assessmentsEnabled }: ConnectionP
   }
 
   return <article className={styles.reader} data-reading-surface data-mode={mode}>
+    <FromHere label="Wounds, healing, and humility" links={[
+      { href: packet.excerpts[0].href, label: packet.excerpts[0].label.split(" · ")[0], kind: "In the full reader" },
+      { href: packet.excerpts[1].href, label: packet.excerpts[1].label.split(" · ")[0], kind: "In the full writing" },
+      { href: `/scriptures/investigations/${packet.id}`, label: "Source investigation", kind: "The evidence behind it" },
+    ]} />
     <div className={styles.column}>
       <nav className={styles.breadcrumbs} aria-label="Reading path navigation"><Link href="/scriptures/search" prefetch={false}>Find</Link><span aria-hidden="true">/</span><span>Reading path · Preview</span></nav>
       <header className={styles.header}>
         <p className={styles.eyebrow}>Isaiah 53 → 1 Clement 16</p>
         <h1>Wounds, healing,<br />and humility</h1>
-        <p className={styles.intro}>Read the passages. Follow a phrase. Keep the sources close.</p>
         <p className={styles.muted}>Two hosted English translations · Editorial reading: unreviewed draft</p>
       </header>
 
@@ -87,19 +91,19 @@ export default function ReadingPath({ journey, assessmentsEnabled }: ConnectionP
           <button type="button" disabled={!interactive} aria-pressed={mode === "read"} onClick={() => setMode("read")}>Read</button>
           <button type="button" disabled={!interactive} aria-pressed={mode === "trace"} onClick={() => setMode("trace")}>Trace connections</button>
         </div>
-        <p className={styles.modeHelp} role="status">{mode === "read" ? "Quiet reading. Source notes stay within reach." : "Marked phrases lead to source notes. Compare only when you choose."}</p>
-        <details className={styles.options}>
-          <summary>Reading appearance</summary>
-          <ReadingAppearance />
-        </details>
-        <div className={styles.legend} aria-label="Passage roles">
-          <span data-kind="source">Source · solid</span>
-          <span data-kind="interpretation">Interpretation · dashed</span>
-          <span data-kind="question">Open question · dotted</span>
-        </div>
-        <p className={styles.muted}>The marks describe a passage’s role, not its certainty.</p>
+        {/* Size, theme and typeface sit behind the site-wide Aa. The help
+            line stays mounted as a live region; it and the legend only
+            take room once Trace is on. */}
+        <p className={styles.modeHelp} role="status">{mode === "trace" ? "Marked phrases lead to source notes. Compare only when you choose." : ""}</p>
+        {mode === "trace" && <>
+          <div className={styles.legend} aria-label="Passage roles">
+            <span data-kind="source">Source · solid</span>
+            <span data-kind="interpretation">Interpretation · dashed</span>
+            <span data-kind="question">Open question · dotted</span>
+          </div>
+          <p className={styles.muted}>The marks describe a passage’s role, not its certainty.</p>
+        </>}
       </div>
-      <ReadingLayoutNote />
 
       <section className={styles.chapter} aria-labelledby="isaiah-heading">
         <p className={styles.eyebrow}>01 / Read the Scripture</p>
@@ -143,6 +147,8 @@ export default function ReadingPath({ journey, assessmentsEnabled }: ConnectionP
         <p>{packet.openQuestions[0]}</p>
         {noteLink(notes[5])}
       </section>
+
+      <ReadingLayoutNote />
 
       <footer className={styles.notes}>
         <h2>Notes and editions</h2>

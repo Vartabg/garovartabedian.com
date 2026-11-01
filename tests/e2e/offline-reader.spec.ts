@@ -1,10 +1,5 @@
 import { test, expect } from "@playwright/test";
-
-// Saving registers the offline shell and fills Cache Storage, which can outlast
-// the default expect timeout while other workers load the server. Serial mode
-// keeps this file's saves from competing with each other.
-test.describe.configure({ mode: "serial" });
-const saved = { timeout: 20_000 };
+import { expectOfflineSave } from "./helpers/offline";
 
 for (const reducedMotion of ["reduce", "no-preference"] as const) {
   test(`a saved chapter and translation reopen offline with ${reducedMotion} motion`, async ({ page, context }) => {
@@ -13,7 +8,20 @@ for (const reducedMotion of ["reduce", "no-preference"] as const) {
     await page.emulateMedia({ reducedMotion });
     await page.goto("/scriptures/protestant/JHN/3");
     await page.getByRole("button", { name: "Save chapter offline" }).click();
-    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
+    try {
+      await expectOfflineSave(page, "John 3");
+    } catch (error) {
+      const state = await page.evaluate(async () => ({
+        status: document.querySelector(".scr-offline-save [role=status]")?.textContent,
+        busy: document.querySelector(".scr-offline-save button")?.getAttribute("aria-busy"),
+        workers: (await navigator.serviceWorker.getRegistrations()).map(registration => ({
+          active: registration.active?.state, installing: registration.installing?.state, waiting: registration.waiting?.state,
+        })),
+      }));
+      await test.info().attach("offline-save-state", { body: JSON.stringify(state), contentType: "application/json" });
+      console.log("Offline save failure state:", JSON.stringify(state));
+      throw error;
+    }
     await page.bringToFront();
     await page.getByRole("link", { name: "Open saved chapters" }).click();
     await expect(page).toHaveURL(/\/scripture-reader\/index\.html$/);
@@ -46,11 +54,31 @@ test("an unavailable offline shell cannot produce a saved confirmation", async (
   await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toHaveCount(0);
 });
 
+test("a slow registration stays pending until the reader and chapter are ready", async ({ page, context }) => {
+  await page.addInitScript(() => {
+    const register = navigator.serviceWorker.register.bind(navigator.serviceWorker);
+    navigator.serviceWorker.register = async (...args) => {
+      await new Promise(resolve => setTimeout(resolve, 6_000));
+      return register(...args);
+    };
+  });
+  await page.goto("/scriptures/protestant/JHN/3");
+  const save = page.getByRole("button", { name: "Save chapter offline" });
+  await save.click();
+  await expect(save).toBeDisabled();
+  await expect(page.getByText("Preparing the offline reader and saving this chapter…", { exact: true })).toBeVisible();
+  await expectOfflineSave(page, "John 3");
+  await page.getByRole("link", { name: "Open saved chapters" }).click();
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator("#reading")).toContainText("For God so loved the world");
+});
+
 test("translation identity, reading preferences and removal persist across offline reloads", async ({ page, context }) => {
   for (const translation of ["web", "kjv"]) {
     await page.goto(`/scriptures/protestant/JHN/3?t=${translation}`);
     await page.getByRole("button", { name: "Save chapter offline" }).click();
-    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
+    await expectOfflineSave(page, "John 3");
   }
   await page.goto("/scripture-reader/index.html");
   const chapters = page.getByLabel("Saved chapter");
@@ -86,7 +114,7 @@ for (const entry of ["shared link", "in-page switch"]) {
         await page.goto("/scriptures/protestant/JHN/3?t=kjv");
       } else {
         await page.goto("/scriptures/protestant/JHN/3");
-        await page.getByRole("button", { name: /Reading settings/ }).click();
+        await page.getByRole("button", { name: /Reading and accessibility settings/ }).click();
         const settings = page.getByRole("dialog", { name: "Reading", exact: true });
         await settings.getByRole("combobox", { name: "Version", exact: true }).selectOption("kjv");
         await expect(settings).toBeHidden();
@@ -102,7 +130,7 @@ for (const entry of ["shared link", "in-page switch"]) {
     await expect(page.getByRole("button", { name: "Save chapter offline" })).toBeEnabled();
     await expect(page.locator("#chapter-text")).toContainText("whosoever believeth in him");
     await page.getByRole("button", { name: "Save chapter offline" }).click();
-    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
+    await expectOfflineSave(page, "John 3");
     await page.getByRole("link", { name: "Open saved chapters" }).click();
     await expect(page.getByRole("heading", { name: "John 3", exact: true })).toBeVisible();
     await context.setOffline(true);
@@ -137,7 +165,7 @@ test("a failed comparison leaves the primary translation readable and saveable",
   await expect(page.getByRole("alert").filter({ hasText: "Could not load King James Version comparison text" })).toBeVisible();
   await expect(page.locator("#chapter-text")).toContainText("whoever believes in him");
   await page.getByRole("button", { name: "Save chapter offline" }).click();
-  await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
+  await expectOfflineSave(page, "John 3");
   await page.getByRole("link", { name: "Open saved chapters" }).click();
   await expect(page.getByRole("heading", { name: "John 3", exact: true })).toBeVisible();
   await context.setOffline(true);
@@ -161,10 +189,23 @@ test("a missing primary chapter stays unavailable when the comparison also fails
 });
 
 test("a storage write failure cannot claim that the chapter was saved", async ({ page }) => {
-  await page.addInitScript(() => {
-    Cache.prototype.put = () => Promise.reject(new DOMException("Storage full", "QuotaExceededError"));
-  });
+  // Install the real shell before injecting a chapter-write failure, so the
+  // assertion cannot pass because worker registration or installation failed.
   await page.goto("/scriptures/protestant/JHN/3");
   await page.getByRole("button", { name: "Save chapter offline" }).click();
+  await expectOfflineSave(page, "John 3");
+  await page.goto("/scriptures/protestant/JHN/4");
+  await page.evaluate(() => {
+    Cache.prototype.put = () => {
+      document.documentElement.dataset.offlineWriteAttempted = "true";
+      return Promise.reject(new DOMException("Storage full", "QuotaExceededError"));
+    };
+  });
+  await page.getByRole("button", { name: "Save chapter offline" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-offline-write-attempted", "true", { timeout: 25_000 });
   await expect(page.getByText(/Could not save this chapter/)).toBeVisible();
+  await expect(page.getByText("John 4 saved for offline reading.", { exact: true })).toHaveCount(0);
+  await page.getByRole("link", { name: "Open saved chapters" }).click();
+  await expect(page.getByRole("heading", { name: "John 3", exact: true })).toBeVisible();
+  await expect(page.getByLabel("Saved chapter").locator("option")).toHaveCount(1);
 });

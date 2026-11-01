@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react";
 import {
   angelFallPlateId,
   type AngelsPlateMeta,
@@ -207,12 +208,14 @@ export default function FallRoom({
   canons,
   plates,
   originalEditions,
+  audioOverview,
 }: {
   data: FallData;
   canons: Canons;
   plates: Record<string, AngelsPlateMeta>;
   /** Book id to hosted edition id, from the server manifest. */
   originalEditions: Record<string, string>;
+  audioOverview?: ReactNode;
 }) {
   useHashScroll(true);
 
@@ -265,6 +268,7 @@ export default function FallRoom({
         exactly that.
       </p>
 
+      {audioOverview}
       <section className="an-fall-method" aria-labelledby="fall-method-heading">
         <div>
           <p className="an-section-kicker">Read the label before the connection</p>

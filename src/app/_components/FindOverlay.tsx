@@ -312,6 +312,14 @@ export default function FindOverlay({
     lastFocus.current?.focus();
   }, []);
 
+  const openSameRoomParable = useCallback((href: string) => {
+    if (window.location.pathname !== "/jesus/parables") return false;
+    const destination = new URL(href, window.location.href);
+    if (destination.pathname !== "/jesus/parables" || !destination.hash.startsWith("#parable-")) return false;
+    window.dispatchEvent(new CustomEvent("parables:open", { detail: destination.hash.slice("#parable-".length) }));
+    return true;
+  }, []);
+
   const go = useCallback(
     (item: FindItem | undefined) => {
       if (!item) return;
@@ -331,9 +339,13 @@ export default function FindOverlay({
       recordRecentFindItem(item);
       setFindOpen(false);
       router.push(item.href);
-      lastFocus.current?.focus();
+      if (openSameRoomParable(item.href)) {
+        lastFocus.current?.focus({ preventScroll: true });
+      } else {
+        lastFocus.current?.focus();
+      }
     },
-    [router],
+    [router, openSameRoomParable],
   );
 
   useEffect(() => {
@@ -750,6 +762,7 @@ export default function FindOverlay({
                             } else {
                               recordRecentFindItem(item);
                               setFindOpen(false);
+                              if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && event.button === 0) openSameRoomParable(item.href);
                             }
                           }}
                         >

@@ -1,0 +1,75 @@
+.intro { max-width: 52rem; margin-bottom: 1.5rem; }
+.intro h1 { max-width: 16ch; }
+.privacy { font-size: .94rem; max-width: 65ch; color: var(--muted-ink); }
+.demo { margin: 2rem 0 3rem; }
+.eyebrow { margin: 0 0 .5rem; font-size: .75rem; letter-spacing: .13em; text-transform: uppercase; font-weight: 700; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; padding: 1.25rem; border: 1px solid color-mix(in srgb, currentColor 24%, transparent); border-radius: .7rem; background: var(--surface); }
+.toolbar p { margin: 0; }
+.toolbar .eyebrow { margin-bottom: .4rem; }
+.toolbarButtons { display: flex; gap: .6rem; flex-wrap: wrap; }
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1rem, 4vw, 3rem); align-items: start; }
+.workspace > *, .photoInputs > *, .offer > * { min-width: 0; }
+.editor { border: 0; margin: 0; padding: 0; min-width: 0; }
+.step { padding: 1.35rem 0; border-bottom: 1px solid color-mix(in srgb, currentColor 23%, transparent); }
+.step h2 { margin: 0 0 1.25rem; font-size: 1.4rem; }
+.step h2 > span { color: var(--muted-ink); font-size: .8rem; margin-right: .55rem; font-family: var(--font-mono); }
+.editor label { display: block; font-weight: 700; font-size: .95rem; margin: .85rem 0 .35rem; }
+.editor label > span:not(.checklist span) { font-weight: 400; }
+.editor input:not([type=checkbox]), .editor textarea { width: 100%; min-width: 0; box-sizing: border-box; min-height: 48px; padding: .7rem .8rem; border: 1px solid color-mix(in srgb, currentColor 45%, transparent); border-radius: .35rem; background: var(--surface); color: inherit; font: inherit; font-size: 1rem; }
+.editor textarea { resize: vertical; }
+.editor input:focus-visible, .editor textarea:focus-visible, .saveButton:focus-visible { outline: 3px solid var(--lapis, currentColor); outline-offset: 3px; }
+.editor input[type=file] { padding: .5rem; font-size: .8rem; }
+.editor input::file-selector-button { min-height: 44px; padding: .5rem .65rem; margin-right: .5rem; border: 1px solid currentColor; border-radius: .25rem; background: var(--surface); color: inherit; font: inherit; font-weight: 700; cursor: pointer; }
+.editor:disabled { opacity: .75; }
+.photoInputs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.photoField { min-width: 0; }
+.photoThumb { width: 100%; height: auto; max-height: 11rem; object-fit: contain; border-radius: .35rem; margin: .3rem 0; }
+.photoField button { margin-top: .5rem; min-height: 44px; white-space: normal; }
+.photoButtons { display: flex; gap: .4rem; flex-wrap: wrap; }
+.checklist { display: grid; gap: .35rem; margin: 1rem 0; }
+.checklist label { display: flex; align-items: center; gap: .7rem; margin: 0; min-height: 48px; border: 1px solid color-mix(in srgb, currentColor 23%, transparent); padding: .5rem .75rem; border-radius: .35rem; cursor: pointer; }
+.checklist input { flex: 0 0 auto; width: 1.35rem; height: 1.35rem; accent-color: var(--lapis); }
+.checklist label span { font-weight: 400; }
+.createAction { display: grid; gap: .65rem; padding: 1.25rem 0; text-align: center; }
+.createAction > a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; }
+.preview { padding-top: 1.4rem; scroll-margin-top: 1rem; }
+.previewHeading h2 { margin: .25rem 0 1.25rem; font-size: 1.4rem; }
+.previewHeading h2:focus { outline: 2px solid var(--lapis); outline-offset: 5px; }
+.paper { padding: clamp(1rem, 3vw, 1.75rem); border: 1px solid color-mix(in srgb, currentColor 30%, transparent); border-top: 5px solid currentColor; border-radius: .15rem; background: var(--surface); overflow-wrap: anywhere; }
+.paper p { font-size: .94rem; }
+.paper .eyebrow { font-size: .7rem; }
+.business { margin: .5rem 0; font-size: 1rem; font-weight: 700; }
+.paper h3 { font-size: 1.7rem; line-height: 1.2; margin: .35rem 0 1rem; }
+.paper h4 { font-size: 1rem; margin: 1.5rem 0 .7rem; }
+.reportFacts { display: grid; gap: .65rem; padding-bottom: 1rem; border-bottom: 1px solid color-mix(in srgb, currentColor 23%, transparent); }
+.reportFacts dt { font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; }
+.reportFacts dd { font-size: .92rem; margin: .2rem 0 0; }
+.photoPair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; margin-top: 1rem; }
+.photoPair figure { min-width: 0; margin: 0; }
+.photoPair figcaption { font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; margin-bottom: .4rem; }
+.photoPair img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: color-mix(in srgb, currentColor 6%, var(--surface)); border-radius: .2rem; }
+.photoPlaceholder { aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; font-size: .8rem; border: 1px dashed color-mix(in srgb, currentColor 35%, transparent); border-radius: .2rem; color: var(--muted-ink); text-align: center; padding: .5rem; }
+.reportChecks { padding: 0; margin: 0; list-style: none; display: grid; gap: .65rem; }
+.reportChecks li { display: flex; align-items: baseline; gap: .6rem; font-size: .9rem; }
+.reportChecks small { display: block; font-size: .75rem; color: var(--muted-ink); }
+.reportNotes { white-space: pre-wrap; }
+.paperFooter { margin: 1.75rem 0 0; padding-top: .75rem; border-top: 1px solid color-mix(in srgb, currentColor 23%, transparent); color: var(--muted-ink); font-size: .75rem !important; }
+.exportActions { display: flex; flex-wrap: wrap; gap: .65rem; margin: 0 0 1rem; align-items: center; padding: 1rem; border: 1px solid currentColor; border-radius: .4rem; }
+.exportActions p { flex-basis: 100%; margin: 0; }
+.saveButton { display: inline-flex; align-items: center; justify-content: center; padding: .7rem 1rem; min-height: 48px; box-sizing: border-box; background: var(--soot); color: var(--vellum); border: 1px solid currentColor; border-radius: .35rem; font-weight: 700; text-decoration: none; }
+.status { min-height: 1.5rem; margin: .75rem 0 0; font-size: .9rem; overflow-wrap: anywhere; }
+.message, .exampleNote { padding: .85rem 1rem; border: 1px solid currentColor; border-radius: .35rem; font-size: .9rem; margin: 1rem 0 .5rem; }
+.message { border-width: 2px; }
+.offer { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2rem; padding: clamp(1.1rem, 4vw, 2.2rem); margin: 2rem 0 3rem; border: 1px solid color-mix(in srgb, currentColor 35%, transparent); border-radius: .7rem; background: color-mix(in srgb, var(--surface) 94%, var(--lapis) 6%); }
+.offer h2 { font-size: clamp(1.65rem, 3.5vw, 2.3rem); line-height: 1.15; margin: .6rem 0 1rem; max-width: 20ch; }
+.offerActions { display: grid; align-content: center; gap: .7rem; }
+.offerActions > a { white-space: normal; text-align: center; }
+.price { margin: 0 0 .5rem; font-size: 1.8rem; line-height: 1.2; font-weight: 700; }
+.price span { display: block; font-size: .9rem; font-weight: 400; margin-top: .35rem; }
+.miniSteps { display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: .85rem; padding-left: 1.3rem; margin-top: 1.5rem; }
+.scope { padding-left: 1.2rem; display: grid; gap: .5rem; }
+.small { font-size: .85rem; color: var(--muted-ink); line-height: 1.5; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+@media (max-width: 760px) { .workspace, .offer { grid-template-columns: minmax(0, 1fr); } .offer { gap: 1rem; } .intro h1 { font-size: 2.15rem; } .preview { padding-top: .75rem; } }
+@media (max-width: 430px) { .photoInputs { grid-template-columns: minmax(0, 1fr); } .toolbarButtons { width: 100%; } .toolbarButtons button { flex: 1 1 auto; } .paper { padding: 1rem; } }
+@media (forced-colors: active) { .saveButton { background: ButtonFace; color: ButtonText; border: 2px solid ButtonText; } .paper, .offer, .toolbar, .step { border-color: CanvasText; } }

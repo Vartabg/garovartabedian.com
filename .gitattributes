@@ -1,3 +1,6 @@
 # Preserve the checksummed upstream HTML bytes, including CRLF and padding.
 # Code and generated reader data retain the normal whitespace checks.
 scripts/scriptures/sources/charles-jubilees-1913/*.html -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+# Pinned Word Bridge dictionaries (hashes in their manifest.json): keep the upstream bytes.
+scripts/scriptures/sources/word-bridge-lexicons/*.xml -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+scripts/scriptures/sources/word-bridge-lexicons/*.csv -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

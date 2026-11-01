@@ -44,7 +44,7 @@ test("long-paragraph excerpts show the actual complete phrase rather than an ear
 
 test("every hosted block and original-shelf paragraph has one edition-pinned indexed anchor", async () => {
   const rows = await getLibrarySearchRows();
-  assert.equal(rows.length, 45649 + 778 + 122);
+  assert.equal(rows.length, 45708 + 778 + 123);
   assert.equal(new Set(rows.map(row => row.id)).size, rows.length);
   assert.equal(rows.filter(row => row.kind === "reference-only").length, 19);
   assert.equal(rows.filter(row => row.kind === "legacy-edition").length, 778);

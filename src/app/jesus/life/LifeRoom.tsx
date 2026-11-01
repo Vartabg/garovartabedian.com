@@ -14,7 +14,6 @@ import { LifeEraRail } from "./LifeEraRail";
 import LifeMapExperience from "./LifeMapExperience";
 import { JourneyNarrative } from "./JourneyNarrative";
 import LanguageSelector from "./LanguageSelector";
-import MapThenNow from "./MapThenNow";
 import { PLACE_BY_ID } from "./geo";
 
 /** Gold → stone: the incarnation's light settling into the dust of history. */
@@ -117,13 +116,47 @@ export default function LifeRoom({
   plates: Record<string, LifePlateMeta>;
 }) {
   const { t } = useTranslation();
-  /** Map highlight / journey step — may change on hover without opening text. */
-  const [focus, setFocus] = useState<LifeEvent | null>(
-    () => data.events[0] ?? null,
-  );
-  /** Expanded event whose gospel text is open. */
-  const [openId, setOpenId] = useState<string | null>(null);
+  // Keep map focus and the expanded event in one queue: a replayed hover during
+  // hydration must check the restored selection, not a stale render's openId.
+  const [{ focus, openId }, setSelection] = useState<{
+    focus: LifeEvent | null;
+    openId: string | null;
+  }>(() => ({ focus: data.events[0] ?? null, openId: null }));
+  const setFocus = (event: LifeEvent) => {
+    setSelection((current) => ({ ...current, focus: event }));
+  };
   const [passages, setPassages] = useState<Record<string, Passage[] | "error">>({});
+  const [scrollRequest, setScrollRequest] = useState<{ id: string } | null>(null);
+
+  useEffect(() => {
+    const restoreEvent = () => {
+      let hash: string;
+      try {
+        hash = decodeURIComponent(window.location.hash.slice(1));
+      } catch {
+        return;
+      }
+      const match = /^life-(?:event|stop)-(.+)$/.exec(hash);
+      const event = match && data.events.find((item) => item.id === match[1]);
+      if (!event) return;
+      setSelection({ focus: event, openId: event.id });
+      setScrollRequest({ id: event.id });
+    };
+    restoreEvent();
+    window.addEventListener("hashchange", restoreEvent);
+    return () => window.removeEventListener("hashchange", restoreEvent);
+  }, [data.events]);
+
+  // The target article always exists. Wait for its panel to open, then consume
+  // this request; later passage arrivals must never pull the reader back.
+  useEffect(() => {
+    if (!scrollRequest) return;
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(`life-stop-${scrollRequest.id}`)?.scrollIntoView({ block: "start", behavior: "instant" });
+      setScrollRequest(null);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [scrollRequest]);
 
   // The journey, place to place in the harmony's order — consecutive
   // events at the same place collapse into one stop. `stepOf` maps each
@@ -142,28 +175,30 @@ export default function LifeRoom({
     return { route: pts, stepOf, eventIndex };
   }, [data]);
 
-  const loadPassages = async (event: LifeEvent) => {
-    // Already loaded (including a finished empty/error attempt).
-    if (passages[event.id] !== undefined) return;
-    try {
-      const loaded = (
-        await Promise.all(event.refs.map((r) => getPassage(r.ref)))
-      ).filter((p): p is Passage => p !== null);
-      setPassages((prev) => ({ ...prev, [event.id]: loaded }));
-    } catch {
-      setPassages((prev) => ({ ...prev, [event.id]: "error" }));
-    }
-  };
+  // Both a shared URL and a direct click use this same loading path.
+  useEffect(() => {
+    if (!openId || passages[openId] !== undefined) return;
+    const event = data.events.find((item) => item.id === openId);
+    if (!event) return;
+    let active = true;
+    Promise.all(event.refs.map((r) => getPassage(r.ref)))
+      .then((loaded) => {
+        if (active) setPassages((prev) => ({ ...prev, [event.id]: loaded.filter((p): p is Passage => p !== null) }));
+      })
+      .catch(() => {
+        if (active) setPassages((prev) => ({ ...prev, [event.id]: "error" }));
+      });
+    return () => { active = false; };
+  }, [openId, data.events, passages]);
 
   const openEvent = (event: LifeEvent) => {
-    setFocus(event);
-    setOpenId(event.id);
-    void loadPassages(event);
+    setScrollRequest(null);
+    setSelection({ focus: event, openId: event.id });
   };
 
   const toggle = (event: LifeEvent) => {
     if (openId === event.id) {
-      setOpenId(null);
+      setSelection((current) => ({ ...current, openId: null }));
       return;
     }
     openEvent(event);
@@ -228,8 +263,6 @@ export default function LifeRoom({
         }}
       />
 
-      <MapThenNow placeId={mapEvent?.place ?? null} />
-
       <div className="jsu-life-guide-intro">
         <p className="lede">
           {t("life.lede")}
@@ -271,7 +304,13 @@ export default function LifeRoom({
                             type="button"
                             className="jsu-pair-head"
                             onClick={() => toggle(event)}
-                            onMouseEnter={() => setFocus(event)}
+                            onMouseEnter={() => {
+                              // Scrolling an opened event beneath a stationary
+                              // pointer must not replace the reader's selection.
+                              setSelection((current) => current.openId === null
+                                ? { ...current, focus: event }
+                                : current);
+                            }}
                             onFocus={() => setFocus(event)}
                             aria-expanded={isOpen}
                             aria-controls={`life-event-${event.id}`}

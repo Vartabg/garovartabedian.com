@@ -7,12 +7,13 @@
  *
  * Every verbatimExcerpt is verified against the source shards written by
  * build-enoch-sources.mjs (which themselves were extracted from the hosted
- * corpus texts). The content hash follows the parallels-v1.0 rubric.
+ * corpus texts). The versioned integrity hash also covers witness metadata.
  */
 
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
+import { CONTENT_HASH_SCOPE, matrixContentHash } from "./provenance.mjs";
+import { scriptureLocator, scriptureWitnessMetadata } from "./witness-metadata.mjs";
 
 const ROOT = path.join(import.meta.dirname, "../..");
 const SOURCES_DIR = path.join(ROOT, "public/parallels/sources");
@@ -27,21 +28,18 @@ const section = (id, key) => {
   return text;
 };
 
-const webWitness = (id, title, shortTitle, tradition) => ({
-  id,
-  title,
-  shortTitle,
-  language: "Hebrew / English",
-  isRtl: false,
-  dates: {
-    composition: "c. 10th–6th century BCE",
-    earliestManuscript: "4QGen-b (c. 1st century BCE)",
-    edition: "Westminster Leningrad Codex / World English Bible",
-  },
-  primaryTradition: tradition,
-  corpusEditionId: "web-bible",
-  licenseNotice: rights.corpora["web-bible"].notice,
-});
+const webWitness = (id, title, shortTitle, tradition) => {
+  const metadata = scriptureWitnessMetadata(ROOT, id);
+  return {
+    id, title, shortTitle,
+    language: metadata.language,
+    isRtl: false,
+    dates: metadata.dates,
+    primaryTradition: tradition,
+    corpusEditionId: "web-bible",
+    licenseNotice: rights.corpora["web-bible"].notice,
+  };
+};
 
 const enochWitness = (id, title, shortTitle) => ({
   id,
@@ -69,13 +67,7 @@ const cell = (witnessId, locator, basis, summary, excerpt, citations, limits) =>
   ...(limits ? { limits } : {}),
 });
 
-const bibleLocator = (section, passageRef) => ({
-  corpusId: "hebrew-bible",
-  editionId: "web-bible",
-  section,
-  passageRef,
-  originalLanguage: "Hebrew",
-});
+const bibleLocator = (section, passageRef) => scriptureLocator(ROOT, section, passageRef);
 const enochLocator = (passageRef) => ({
   corpusId: "second-temple-pseudepigrapha",
   editionId: "charles-enoch",
@@ -607,28 +599,16 @@ const sonOfMan = {
 };
 
 // ── Hash + write ───────────────────────────────────────────────────────────
-const hashOf = (matrix) =>
-  crypto
-    .createHash("sha256")
-    .update(
-      JSON.stringify({
-        slots: matrix.slots,
-        edges: matrix.edges,
-        receptionClaims: matrix.receptionClaims,
-      }),
-    )
-    .digest("hex");
-
 for (const matrix of [judeEnoch, watchers, sonOfMan]) {
-  matrix.provenance = {
-    reviewStatus: "agent-reviewed",
-    reviewer: "Claude Sourcing & Review Pass (garovartabedian.com)",
-    rubricVersion: "parallels-v1.0",
-    reviewedContentHash: hashOf(matrix),
-    reviewedAt: new Date().toISOString(),
-    reviewScope: "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation",
-  };
   const target = path.join(OUT_DIR, `${matrix.id}.json`);
+  // Regeneration changes the integrity digest; it does not manufacture a new
+  // reviewer, review date or review authority for the existing editorial work.
+  const previous = JSON.parse(readFileSync(target, "utf8"));
+  matrix.provenance = {
+    ...previous.provenance,
+    contentHashScope: CONTENT_HASH_SCOPE,
+    reviewedContentHash: matrixContentHash(matrix),
+  };
   writeFileSync(target, JSON.stringify(matrix, null, 2) + "\n");
   console.log(`built ${matrix.id} (hash ${matrix.provenance.reviewedContentHash.slice(0, 12)}…)`);
 }

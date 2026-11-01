@@ -1,21 +1,29 @@
+@import "./continuity.css";
+@import "./map-controls.css";
+
 /* Auto-split from globals.css — edit carefully; keep selector ownership clear. */
 
 /* ── Design tokens ───────────────────────────────────────────────
-   Vellum, soot, lapis and rubric. Gold is reserved for rules and ornament;
-   deep gold is the readable text value. Each world keeps one restrained accent.
+   The tabernacle's colors (Exodus 25:3–4): fine linen for the page, blue
+   (tekhelet) for links and actions, purple (argaman) for page titles,
+   scarlet (tola'at shani) for rubrics, gold for ornament. The token
+   names keep their manuscript roots (vellum, lapis, rubric) so every world's
+   var() wiring stays put. Gold is reserved for rules and ornament; deep gold
+   is the readable text value. Each world keeps one restrained accent.
    Shared neutral ramp: --folio/--soot/--muted-ink below are the single source
    for --surface/--ink/--muted. Worlds set only their --bg tint, --line tint,
    and --accent family, and inherit the rest via var() — so nav, cards, and
    footer stop shifting hue on every hop. Dark mode re-maps the same roles in
    globals.css + worlds-shared.css; see the appearance comment there. */
 :root {
-  --vellum: #e9d9b4;
-  --folio: #f3e8cf;
-  --soot: #221a12;
-  --muted-ink: #5c4e3e;
-  --lapis: #1e3e72;
-  --night-lapis: #172f5a;
-  --rubric: #a6301c;
+  --vellum: #ece4d0; /* fine linen */
+  --folio: #f4eee0;
+  --soot: #211a20; /* reading ink — not a tabernacle color */
+  --muted-ink: #5e5459;
+  --lapis: #2a4f8f; /* tekhelet */
+  --night-lapis: #1d3a6e;
+  --argaman: #6b1f4a; /* purple */
+  --rubric: #a8232e; /* scarlet */
   --antique-gold: #c9a24a;
   --deep-gold: #6b4c12;
   --bg: var(--vellum);
@@ -23,7 +31,7 @@
   --surface: var(--folio);
   --ink: var(--soot);
   --muted: var(--muted-ink);
-  --line: #c9b48a;
+  --line: #cfc2a4;
   --accent: var(--lapis);
   --accent-deep: var(--night-lapis);
   --accent-ink: var(--folio);
@@ -44,6 +52,16 @@
      one width so chrome edges line up everywhere. Prose keeps --maxw;
      the world-entry feature card keeps its own 68rem. */
   --pagew: 82rem;
+  /* The hands of the record: each headline takes the letterform of the era
+     its words come from (layout.tsx loads the faces). Scripture and the old
+     texts read in Cardo, one family for Latin, Greek, and pointed Hebrew.
+     A reading-font choice in the menu replaces all of these (globals.css). */
+  --hand-capitals: var(--font-cinzel), var(--font-reading);
+  --hand-uncial: var(--font-uncial), var(--font-reading);
+  --hand-blackletter: var(--font-fraktur), var(--font-reading);
+  --hand-print: var(--font-garamond), var(--font-reading);
+  --hand-today: var(--font-fraunces), var(--font-reading);
+  --font-scripture: "Cardo", var(--font-fraunces), Georgia, serif;
 }
 
 * {
@@ -487,7 +505,8 @@ main {
   text-align: right;
 }
 
-.site-nav-group h2 {
+.site-nav-group :is(h2, h3),
+.site-nav-here h2 {
   margin: 0 0 0.65rem;
   padding: 0;
   border: 0;
@@ -508,7 +527,8 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.site-nav-group a {
+.site-nav-group a,
+.site-nav-here a {
   display: flex;
   min-height: 2.75rem;
   flex-direction: column;
@@ -521,6 +541,7 @@ main {
 }
 
 .site-nav-group a:hover,
+.site-nav-here a:hover,
 .site-nav-group a[aria-current="page"] {
   background: color-mix(in srgb, var(--site-nav-active) 10%, transparent);
   color: var(--site-nav-active);
@@ -530,14 +551,51 @@ main {
   box-shadow: inset 3px 0 var(--site-nav-active);
 }
 
-.site-nav-group a strong {
+.site-nav-group a strong,
+.site-nav-here a strong {
   font-size: 0.88rem;
 }
 
-.site-nav-group a span {
+.site-nav-group a span,
+.site-nav-here a span {
   color: var(--site-menu-muted);
   font-size: 0.7rem;
   font-weight: 400;
+}
+
+/* From here: on a reading page the menu opens on what connects to the page
+   (next chapter, quoted passage, era), one column, with the whole site
+   folded under "Everything else". */
+.site-nav-panel.site-nav-panel--here {
+  grid-template-columns: minmax(0, 1fr);
+  width: min(30rem, calc(100vw - 2rem));
+}
+
+.site-nav-everything {
+  border-top: 1px solid var(--site-menu-line);
+}
+
+.site-nav-everything > summary {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--site-menu-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.site-nav-everything-groups {
+  display: grid;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+/* The menu now carries this page's next steps, so the world's generic
+   "Continue exploring" links and the worlds strip below the footer repeat
+   it (and the 8 worlds already in the menu). "More research tools" beside
+   them is not in the menu and stays. */
+body:has([data-from-here]) :is(.world-continuation .world-next, .vsw) {
+  display: none;
 }
 
 @media (min-width: 761px) {
@@ -751,6 +809,122 @@ p {
 }
 .case-cards {
   margin: 1.5rem 0 0;
+}
+
+/* Release record on the site case study. Each teal/coral pair passes the
+   colour-blind and 3:1 checks against its own page; height and the table
+   carry the result too. */
+.release-record {
+  --rr-live: #14866a;
+  --rr-stopped: #c8532c;
+  margin: 1rem 0 0;
+}
+html[data-a11y-theme="dark"] .release-record {
+  --rr-live: #1d9e75;
+  --rr-stopped: #d85a30;
+}
+@media (prefers-color-scheme: dark) {
+  html[data-a11y-theme="system"] .release-record {
+    --rr-live: #1d9e75;
+    --rr-stopped: #d85a30;
+  }
+}
+.release-record-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.release-record-legend i {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 2px;
+  margin-right: 0.35rem;
+  vertical-align: -0.05rem;
+}
+.release-record-legend .is-live,
+.release-record-chart .is-live { background: var(--rr-live); fill: var(--rr-live); }
+.release-record-legend .is-stopped,
+.release-record-chart .is-stopped { background: var(--rr-stopped); fill: var(--rr-stopped); }
+.release-record-chart {
+  margin-top: 0.5rem;
+  border-radius: 4px;
+}
+.release-record-chart:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.release-record-chart svg {
+  display: block;
+  width: 100%;
+  height: 8.75rem;
+  overflow: visible;
+}
+.release-record-axis {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.release-record-base {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.release-record-chart svg {
+  cursor: pointer;
+}
+.release-record-chart rect.is-selected {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.release-record-detail {
+  margin-top: 0.75rem;
+}
+.release-record-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.release-record-steps li {
+  font-size: 0.78rem;
+  line-height: 1.3;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  background: #0f6e56;
+  color: #fff;
+}
+.release-record-steps li.is-stop {
+  background: #993c1d;
+}
+@media (max-width: 40rem) {
+  .release-record-steps li {
+    font-size: 0.72rem;
+  }
+}
+.release-record-table {
+  margin-top: 1rem;
+}
+.release-record-table summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+.release-record-table table {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.release-record-table :is(th, td) {
+  text-align: left;
+  padding: 0.3rem 0.5rem 0.3rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
 }
 .work-links {
   color: var(--accent) !important;
@@ -1325,16 +1499,16 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
      column keeps its reading width. Browsers without :has() keep the
      stacked layout. ─────────────────────────────────────────────── */
 @media (min-width: 1100px) {
-  main > .wrap:has(> .world-guide) {
+  main > .wrap:has(> .world-guide--room) {
     max-width: calc(var(--maxw) + 16.75rem);
     display: grid;
     grid-template-columns: 14rem minmax(0, 1fr);
     column-gap: 2.75rem;
   }
-  main > .wrap:has(> .world-guide) > * {
+  main > .wrap:has(> .world-guide--room) > * {
     grid-column: 2;
   }
-  main > .wrap:has(> .world-guide) > .world-guide {
+  main > .wrap:has(> .world-guide--room) > .world-guide {
     grid-column: 1;
     grid-row: 1 / span 40;
     align-self: start;
@@ -1345,15 +1519,15 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
     overflow-y: auto;
     scrollbar-width: thin;
   }
-  main > .wrap:has(> .world-guide) .wg-grid {
+  main > .wrap:has(> .world-guide--room) .wg-grid {
     grid-template-columns: 1fr;
   }
-  main > .wrap:has(> .world-guide) .wg-nav {
+  main > .wrap:has(> .world-guide--room) .wg-nav {
     flex-direction: column;
     align-items: stretch;
     gap: 0.3rem;
   }
-  main > .wrap:has(> .world-guide) .wg-nav a {
+  main > .wrap:has(> .world-guide--room) .wg-nav a {
     border-color: transparent;
     border-radius: 0.4rem;
     padding: 0.34rem 0.6rem;
@@ -1769,17 +1943,17 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
    A cross-led threshold: Christ, Scripture, the record, investigations.
    ═══════════════════════════════════════════════════════════════ */
 .v-root.v-story {
-  --home-night: #14100b;
+  --home-night: #110d1a;
   --home-night-soft: #111b25;
   --home-ink: var(--ink);
   --home-muted: var(--muted);
   --home-cloud: var(--folio);
-  --home-white: #eedfc2;
+  --home-white: #ece4d0;
   --home-gold: #cda652;
   --home-line: var(--line);
   --home-width: 82rem;
   padding-bottom: 0;
-  /* The page is vellum; the walks and the worlds paint their own night panels. */
+  /* The page is vellum; the worlds rail paints its own night panel. */
   background: var(--bg);
 }
 
@@ -2076,27 +2250,179 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   transform: translateY(3px);
 }
 
-.st-scripture {
-  display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(30rem, 1.2fr);
-  align-items: center;
-  gap: clamp(2rem, 5vw, 5rem);
-  width: min(100%, var(--home-width));
-  margin: 0 auto;
-  padding: clamp(2.5rem, 5vw, 4rem) 2rem;
-  background: var(--home-cloud);
-  color: var(--home-ink);
+/* ── The sunlit leaf (SunlitLeaf.tsx) ──────────────────────────────
+   The top of the front door is vellum lit by the sun over Jerusalem right
+   now. The canvas sits behind the header, builder line and frontispiece.
+   While the sky is known, those three take the sky's ink (light ink by night,
+   dark ink by day), whatever the page theme; an explicit theme choice in the
+   reading menu clamps the sky instead (see the component). */
+.story {
+  position: relative;
+  isolation: isolate;
+}
+
+.st-sunlit-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 320ms ease;
+}
+
+.story.is-lit > .st-sunlit-canvas {
+  opacity: 1;
+}
+
+.story[data-sky="light"] {
+  --sky-ground: #d9cfb8;
+}
+
+.story[data-sky="dark"] {
+  --sky-ground: #1a1520;
+}
+
+.story[data-sky] {
+  background-image: linear-gradient(var(--sky-ground) 0 var(--sky-h, 0px), transparent var(--sky-h, 0px));
+}
+
+.story[data-sky="light"] :is(.st-nav, .st-builder, .st-frontispiece) {
+  color-scheme: light;
+  --bg: transparent;
+  --ink: #1c151b;
+  --muted: #3a3036;
+  --rubric: #861a23;
+  --line: rgba(33, 26, 32, 0.28);
+  --accent: #2a4f8f;
+  --accent-deep: #1d3a6e;
+  --accent-ink: #f4eee0;
+  --surface: #f4eee0;
+  --gold: #7a5812;
+  --deep-gold: #6b4c12;
+  --home-ink: #1c151b;
+  --home-muted: #3a3036;
+  --home-line: rgba(33, 26, 32, 0.28);
+  --home-gold: #7a5812;
+  --sky-halo: rgba(236, 228, 208, 0.55);
+  --plate-filter: grayscale(1) sepia(0.6) contrast(1.06) brightness(1.06);
+  --plate-blend: multiply;
+  /* Button and control tokens resolve where they are declared, so they are
+     re-declared here to pick up the sky's ink. */
+  --control-border: var(--line);
+  --button-primary-bg: var(--accent);
+  --button-primary-fg: var(--accent-ink);
+  --button-primary-border: var(--accent);
+  --button-primary-hover: var(--accent-deep);
+  --button-secondary-bg: color-mix(in oklab, var(--surface) 94%, var(--accent));
+  --button-secondary-fg: var(--ink);
+  --button-secondary-border: color-mix(in oklab, var(--ink) 55%, var(--surface));
+  --button-secondary-hover: color-mix(in oklab, var(--surface) 88%, var(--accent));
+  --button-ghost-bg: var(--sky-halo);
+  --button-ghost-fg: var(--ink);
+  --button-ghost-border: color-mix(in oklab, var(--ink) 55%, var(--surface));
+  --button-ghost-hover: color-mix(in oklab, var(--accent) 12%, var(--sky-halo));
+}
+
+.story[data-sky="dark"] :is(.st-nav, .st-builder, .st-frontispiece) {
+  color-scheme: dark;
+  --bg: transparent;
+  --ink: #f1e9d6;
+  --muted: #cfc4b4;
+  --rubric: #f08a80;
+  --line: rgba(241, 233, 214, 0.3);
+  --accent: #a9c2f2;
+  --accent-deep: #c3d3f3;
+  --accent-ink: #120f1c;
+  --surface: #1b1729;
+  --gold: #e2c06a;
+  --deep-gold: #e2c06a;
+  --home-ink: #f1e9d6;
+  --home-muted: #cfc4b4;
+  --home-line: rgba(241, 233, 214, 0.3);
+  --home-gold: #e2c06a;
+  --sky-halo: rgba(14, 11, 20, 0.55);
+  --plate-filter: grayscale(1) sepia(0.45) contrast(1.05) brightness(0.82);
+  --plate-blend: screen;
+  /* Button and control tokens resolve where they are declared, so they are
+     re-declared here to pick up the sky's ink. */
+  --control-border: var(--line);
+  --button-primary-bg: var(--accent);
+  --button-primary-fg: var(--accent-ink);
+  --button-primary-border: var(--accent);
+  --button-primary-hover: var(--accent-deep);
+  --button-secondary-bg: color-mix(in oklab, var(--surface) 94%, var(--accent));
+  --button-secondary-fg: var(--ink);
+  --button-secondary-border: color-mix(in oklab, var(--ink) 55%, var(--surface));
+  --button-secondary-hover: color-mix(in oklab, var(--surface) 88%, var(--accent));
+  --button-ghost-bg: var(--sky-halo);
+  --button-ghost-fg: var(--ink);
+  --button-ghost-border: color-mix(in oklab, var(--ink) 55%, var(--surface));
+  --button-ghost-hover: color-mix(in oklab, var(--accent) 12%, var(--sky-halo));
+}
+
+.story[data-sky] .st-frontispiece {
+  background: transparent;
+}
+
+/* The canvas draws the headline from the default instance of the face, so
+   the live text uses it too and the glyph positions match. */
+.v-root.v-story .story[data-sky] .st-front-title {
+  font-variation-settings: normal;
+  font-optical-sizing: none;
+}
+
+.v-root.v-story .story.is-lit .st-front-title {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.story.is-lit .st-front-title::selection {
+  -webkit-text-fill-color: var(--ink);
+  background: var(--sky-halo);
+}
+
+.story.is-lit :is(.st-front-text, .st-builder, .st-label, .st-sky, .st-front-explore, .st-nav-links a) {
+  text-shadow:
+    0 0 12px var(--sky-halo),
+    0 0 2px var(--sky-halo);
+}
+
+.story.is-lit .st-frontispiece-plate .plate-frame::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: var(--sky-tint, transparent);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.st-sky {
+  display: none;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.story.is-lit .st-sky {
+  display: block;
+}
+
+@media (forced-colors: active) {
+  .st-sunlit-canvas {
+    display: none;
+  }
 }
 
 /* No backdrop gradient here: a %-stop gradient moves with total page height,
    so any shorter/taller section above once dropped white-on-night text onto
-   the cloud half (invisible headings and links in the walks). Every home
-   section paints its own panel; the story backdrop stays solid night. */
+   the cloud half. Every home section paints its own panel; the story
+   backdrop stays solid night. */
 
-/* The three section headings share one display size. The walks heading was
-   left out of this list once and rendered at 13.6px. */
-.st-scripture-heading h2,
-.st-paths-heading h2,
 .st-worlds-heading h2 {
   margin: 0;
   font-family: var(--font-display);
@@ -2104,67 +2430,6 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 0.98;
-}
-
-/* This panel is always light, so its heading must take the panel's ink rather
-   than the theme-aware `--muted` the bare `h2` rule hands down — that token
-   flips to the dark-theme value and drops the headline to 1.8:1 on a white
-   card for every visitor whose OS is set to dark. `.st-worlds-heading h2`
-   pins its own color the same way below. */
-.st-scripture-heading h2 {
-  color: var(--home-ink);
-}
-
-.st-scripture-actions {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid var(--home-line);
-  border-left: 1px solid var(--home-line);
-}
-
-.st-scripture-action {
-  position: relative;
-  display: flex;
-  min-height: 5.5rem;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.25rem 3rem 1.25rem 1.5rem;
-  border-right: 1px solid var(--home-line);
-  border-bottom: 1px solid var(--home-line);
-  color: var(--home-ink);
-  text-decoration: none;
-  transition:
-    background 180ms ease,
-    color 180ms ease;
-}
-
-.st-scripture-action::after {
-  position: absolute;
-  top: 50%;
-  right: 1.35rem;
-  margin-top: -0.7rem;
-  content: "↗";
-  color: #805e1f;
-  font-size: 1.05rem;
-  transition: transform 180ms ease;
-}
-
-.st-scripture-action strong {
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
-  font-weight: 650;
-  line-height: 1.15;
-}
-
-.st-scripture-action:hover {
-  background: var(--home-ink);
-  color: var(--home-white);
-}
-
-.st-scripture-action:hover::after,
-.st-scripture-action:focus-visible::after {
-  color: var(--home-gold);
-  transform: translate(3px, -3px);
 }
 
 .st-worlds {
@@ -2223,7 +2488,7 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
 /* Ordered rail — the eight worlds as one walk, not card grids. One row at a
    time: the row's only tint is its world's accent mixed toward white (the
    dark panel needs the lift; same trick as the hero index), so palettes
-   never collide. Vocabulary mirrors .st-path-steps. */
+   never collide. */
 .st-rail {
   list-style: none;
   margin: 0;
@@ -2370,11 +2635,6 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
 }
 
 @media (max-width: 900px) {
-  .st-scripture {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
-  }
-
   .st-worlds-heading > h2 {
     overflow-wrap: anywhere;
   }
@@ -2423,28 +2683,12 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
     margin-top: 1.6rem;
   }
 
-  .st-scripture {
-    gap: 1.5rem;
-    padding: 2.5rem 1rem;
-  }
-
-  .st-scripture-heading h2,
-  .st-paths-heading h2,
   .st-worlds-heading h2 {
     font-size: clamp(2.5rem, 12vw, 3.6rem);
   }
 
   .st-worlds-heading h2 {
     font-size: clamp(2.35rem, 10vw, 3.4rem);
-  }
-
-  .st-scripture-actions {
-    grid-template-columns: 1fr;
-  }
-
-  .st-scripture-action {
-    min-height: 4rem;
-    padding: 1rem 3rem 1rem 1.25rem;
   }
 
   .st-worlds {
@@ -2474,8 +2718,6 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   .st-intro-primary,
   .st-intro-secondary,
   .st-front-explore span,
-  .st-scripture-action,
-  .st-scripture-action::after,
   .st-rail-go {
     transition: none;
   }
@@ -2484,8 +2726,6 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   .st-intro-primary:hover,
   .st-intro-secondary:hover,
   .st-front-explore:hover span,
-  .st-scripture-action:hover::after,
-  .st-scripture-action:focus-visible::after,
   .st-rail-row:hover .st-rail-go {
     transform: none;
   }
@@ -2527,7 +2767,7 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   --surface: var(--folio);
   --ink: var(--soot);
   --muted: var(--muted-ink);
-  --line: #c9b48a;
+  --line: #cfc2a4;
   --accent: var(--lapis);
   --accent-deep: var(--night-lapis);
   --accent-ink: var(--folio);
@@ -3004,6 +3244,11 @@ html[data-a11y-font="system"] :is(.world-scr, .world-jesus, .world-apostles, .wo
   font-weight: 500;
   letter-spacing: -0.01em;
 }
+/* Page titles on the clean pages (about, work, resume, contact) take the
+   tabernacle purple; everything else on the page stays in reading ink. */
+.clean h1 {
+  color: var(--argaman);
+}
 /* Rubrics: on the clean pages the section h2 is the scribe's red heading —
    Fraunces italic in vermilion, sentence case, no tracking. */
 .clean h2 {
@@ -3013,12 +3258,74 @@ html[data-a11y-font="system"] :is(.world-scr, .world-jesus, .world-apostles, .wo
   letter-spacing: 0;
   color: var(--rubric);
 }
-/* The ancient voice: scripture and the first-century texts read in the
-   serif at text optical size — you can see where the old words begin. */
+/* The ancient voice: scripture and the old texts read in Cardo, the
+   Scripture face — you can see where the old words begin. */
 :is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels)
   :is(.scr-verse, .ew-section p, .jsu-quote, blockquote) {
-  font-family: var(--font-display);
-  font-variation-settings: var(--text-tune);
+  font-family: var(--font-scripture);
+  font-variation-settings: normal;
+}
+
+/* ── The hands of the record ──────────────────────────────────────
+   A headline with data-hand is set in the letterform of its era:
+   capitals (1st century stone), uncial (the early books), blackletter
+   (the high medieval church to Gutenberg), print (the Renaissance on), and
+   today (Fraunces). `:root:root` lifts these above the story theme's
+   `.v-root.v-story :is(h1, …)` tune so the era wins wherever it is set. */
+:root:root :is(h1, h2)[data-hand] {
+  text-transform: none;
+}
+/* Hebrew, Aramaic, and Greek anywhere on the site read in the Scripture face
+   instead of whatever the device has. Zero specificity: a page's own rule
+   still wins. */
+:where([lang="he"], [lang="arc"], [lang="grc"]) {
+  font-family: var(--font-scripture), "Noto Serif Hebrew", "SBL Hebrew", "Noto Serif", serif;
+}
+:root:root :is(h1, h2)[data-hand="capitals"] {
+  font-family: var(--hand-capitals);
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
+  letter-spacing: 0.04em;
+}
+:root:root :is(h1, h2)[data-hand="uncial"] {
+  font-family: var(--hand-uncial);
+  font-weight: 400;
+  font-variation-settings: normal;
+  letter-spacing: 0;
+}
+:root:root :is(h1, h2)[data-hand="blackletter"] {
+  font-family: var(--hand-blackletter);
+  font-weight: 400;
+  font-variation-settings: normal;
+  letter-spacing: 0.01em;
+}
+:root:root :is(h1, h2)[data-hand="print"] {
+  font-family: var(--hand-print);
+  font-weight: 500;
+  font-variation-settings: "wght" 500;
+  letter-spacing: -0.005em;
+}
+:root:root :is(h1, h2)[data-hand="today"] {
+  font-family: var(--hand-today);
+  font-weight: 500;
+  font-variation-settings: var(--display-tune);
+}
+/* While a heading changes hands (HandChange.tsx) the drawn letters stand in
+   for the text; the text itself stays in place for readers and selection. */
+:is(h1, h2)[data-hand].is-changing {
+  position: relative;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.hand-change {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+.hand-change path {
+  fill: var(--hand-ink, currentColor);
+  fill-rule: evenodd;
 }
 /* Ledger numerals: the years are part of the record. */
 .world-word :is(.wd-year, .wd-case-year, .wd-abbr),
@@ -3037,80 +3344,4 @@ html[data-a11y-font="system"] :is(.world-scr, .world-jesus, .world-apostles, .wo
     radial-gradient(64rem 30rem at 18% 0, color-mix(in oklab, var(--accent) 5%, transparent), transparent 72%),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat: no-repeat, repeat;
-}
-
-/* Walks through the record — the front door's second section. Numbered lists
-   rather than cards: a walk is a sequence, and the shape should say so before
-   the words do. Plain links throughout; nothing here runs in the browser. */
-.st-paths {
-  padding: clamp(2.5rem, 5vw, 4rem) clamp(1.1rem, 5vw, 4rem);
-  /* Explicit night panel: the walks are white-on-night by design and must
-     never inherit the page backdrop, whatever sits above or below them. */
-  background: var(--home-night);
-  color: var(--home-white);
-  /* Night muted (9.4:1 on the panel): the shared --muted serves light paper
-     and lands at 2.9:1 here, so notes, numbers, and lines re-scope it. */
-  --muted: #bbb5aa;
-}
-#paths-h {
-  color: var(--home-white);
-}
-.st-paths-heading {
-  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
-}
-.st-paths-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* One row per walk: the title, then its steps left to right. A walk is a
-   sequence, so it reads as one. */
-.st-path {
-  display: grid;
-  grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr);
-  gap: 0.35rem 2rem;
-  align-items: baseline;
-  padding: 0.85rem 0;
-  border-top: 1px solid var(--line);
-}
-.st-path:last-child {
-  border-bottom: 1px solid var(--line);
-}
-.st-path h3 {
-  margin: 0;
-  font-size: 1.12rem;
-}
-.st-path-steps {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.2rem 0;
-}
-.st-path-steps li {
-  display: inline-flex;
-  align-items: baseline;
-}
-.st-path-steps a {
-  padding-block: 0.25rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px solid var(--line);
-}
-.st-path-steps a:hover {
-  border-bottom-color: var(--accent);
-}
-.st-path-arrow {
-  margin: 0 0.65rem;
-  /* Scheme-independent: the section never leaves the night background, so
-     warm-light text can't depend on the reader's color scheme. #b9b3a8 on
-     #091018 ≈ 8.6:1. */
-  color: #b9b3a8;
-}
-@media (max-width: 640px) {
-  .st-path {
-    grid-template-columns: 1fr;
-  }
 }

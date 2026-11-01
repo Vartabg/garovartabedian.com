@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
+import { JSDOM } from "jsdom";
 import BookChaptersPage from "../src/app/scriptures/[tradition]/[book]/page";
 import TraditionBooks from "../src/app/scriptures/[tradition]/page";
 
@@ -64,6 +65,27 @@ test("a tradition page puts its books above its briefing", async () => {
     assert.ok(
       lastBook < position(markup, heading),
       `every book comes before “${heading}”`,
+    );
+  }
+});
+
+test("Joel's chapter grid follows the tradition's default edition", async () => {
+  for (const [tradition, count] of [["protestant", 3], ["catholic", 3], ["orthodox", 4]] as const) {
+    const markup = renderToStaticMarkup(
+      await BookChaptersPage({
+        params: Promise.resolve({ tradition, book: "JOL" }),
+      }),
+    );
+    const document = JSDOM.fragment(markup);
+    const links = [...document.querySelectorAll(".scr-chapter-cell")];
+    assert.deepEqual(
+      links.map((link) => link.getAttribute("href")),
+      Array.from({ length: count }, (_, index) => `/scriptures/${tradition}/JOL/${index + 1}`),
+    );
+    assert.equal(
+      Boolean(document.querySelector(".scr-shape")),
+      count === 3,
+      "the WEB briefing groups only the matching three-chapter grid",
     );
   }
 });

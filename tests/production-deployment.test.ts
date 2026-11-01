@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { deploymentUrl, domains, orgId, projectId, releasePipeline, repository, verifyDeployment, verifyMergedPull } from "../scripts/release/production.mjs";
+import { commandDeadlineMinutes, deploymentUrl, domains, orgId, projectId, releasePipeline, repository, verifyDeployment, verifyMergedPull } from "../scripts/release/production.mjs";
 
 const sha = "a".repeat(40);
 const url = "https://portfolio-abc123-example.vercel.app";
@@ -17,6 +17,7 @@ function harness(options: { fail?: string; drift?: string; advanceAt?: number; s
     if (name === "Check current master") return `${++masterChecks === options.advanceAt ? "b".repeat(40) : sha}\trefs/heads/master\n`;
     if (name === "Stage verified artifact") return options.url ?? url;
     if (name === "Inspect release identity") return JSON.stringify(options.staged ?? deployment);
+    if (name === "Verify staged Thomas reader") return "";
     if (name.startsWith("Verify ")) return JSON.stringify(options.live ?? deployment);
     return "";
   };
@@ -42,13 +43,57 @@ test("release completes every local gate before staging and verifies every produ
   }
   const stage = h.calls[upload];
   for (const flag of ["--prebuilt", "--prod", "--skip-domain", "--json", `githubCommitSha=${sha}`]) assert.ok(stage.args.includes(flag));
-  assert.ok(stage.args.includes("vercel@59.9.1"));
+  assert.ok(stage.args.includes("vercel@65.0.0"));
   assert.equal(h.calls.filter((call) => call.name === "Build production locally").length, 1);
   assert.deepEqual(h.calls.find((call) => call.name === "Browser tests")!.args, ["scripts/release/browser.mjs"]);
   const promote = h.calls.find((call) => call.name === "Promote verified artifact")!;
+  const reader = h.calls.find((call) => call.name === "Verify staged Thomas reader")!;
+  assert.equal(reader.command, "node");
+  assert.ok(reader.args.includes("scripts/release/check-staged-thomas.mjs"));
+  assert.ok(reader.args.includes(url));
+  assert.ok(reader.args.includes(sha));
+  assert.ok(h.calls.indexOf(reader) < h.calls.indexOf(promote));
   assert.ok(promote.args.includes(url));
   assert.ok(promote.args.includes(orgId));
   for (const domain of domains) assert.ok(h.has(`Verify ${domain}`));
+});
+
+test("a failed or incomplete staged Thomas reader prevents promotion", async () => {
+  const h = harness({ fail: "Verify staged Thomas reader" });
+  await assert.rejects(releasePipeline(h.run, sha), /failure:/);
+  assert.equal(h.has("Promote verified artifact"), false);
+});
+
+test("the release writes earlier attempts into the build and proves the built page shows them", async () => {
+  const record = { reports: "/state/releases", exclude: "/state/releases/current.json" };
+  const h = harness();
+  await releasePipeline(h.run, sha, () => {}, record);
+  const names = h.calls.map((call) => call.name);
+  const write = names.indexOf("Write release record");
+  assert.equal(write, names.indexOf("Unit and smoke tests") + 1);
+  assert.equal(names[write + 1], "Pull production configuration");
+  assert.deepEqual(h.calls[write].args, [
+    "scripts/release/release-record.mjs", "--reports", record.reports, "--exclude", record.exclude, "--out", ".release-record/record.json",
+  ]);
+  const verify = names.indexOf("Verify release record");
+  assert.equal(verify, names.indexOf("Build production locally") + 1);
+  assert.deepEqual(h.calls[verify].args, ["scripts/release/check-release-record.mjs"]);
+  assert.ok(verify < names.indexOf("Stage verified artifact"));
+
+  const failed = harness({ fail: "Verify release record" });
+  await assert.rejects(releasePipeline(failed.run, sha, () => {}, record), /failure:/);
+  assert.equal(failed.has("Stage verified artifact"), false);
+
+  const without = harness();
+  await releasePipeline(without.run, sha);
+  assert.equal(without.has("Write release record") || without.has("Verify release record"), false);
+});
+
+test("large artifact staging has a bounded upload window without extending verification steps", () => {
+  assert.equal(commandDeadlineMinutes("Stage verified artifact"), 90);
+  for (const name of [...requiredGates, "Promote verified artifact", "unknown"]) {
+    assert.equal(commandDeadlineMinutes(name), 30);
+  }
 });
 
 test("a failed gate or generated-source drift prevents all deployment writes", async () => {

@@ -1,3 +1,4 @@
+import ResearchAudio from "../_components/ResearchAudio";
 import { EARLY_TEXTS } from "@/lib/early/client";
 import { getEarlyTimeline } from "@/lib/public-json";
 import Timeline from "./Timeline";
@@ -42,6 +43,8 @@ export default function WritingsHome() {
           },
         ]}
       />
+
+      <ResearchAudio id="early-writings" />
 
       <aside className="world-survival" aria-label="Expanded scripture and early-writings library">
         <h2 className="jsu-chapter">The expanded library</h2>

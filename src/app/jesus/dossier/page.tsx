@@ -1,6 +1,4 @@
-import { Suspense } from "react";
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   canons,
   getBookText,
@@ -18,12 +16,12 @@ import JesusDossierClient from "./JesusDossierClient";
 const MAX_DOSSIER_VERSES_PER_REFERENCE = 200;
 
 export const metadata: Metadata = {
-  title: "Jesus Christ NotebookLM Research Dossier Builder",
+  title: "Research worksheets",
   description:
     "Build research worksheets from hosted Scripture and curated notes keyed to named Jewish, Roman, and early Christian sources for NotebookLM study.",
   alternates: { canonical: "/jesus/dossier" },
   openGraph: {
-    title: "Jesus Christ NotebookLM Research Dossier Engine",
+    title: "Research worksheets — Jesus Christ",
     description:
       "Collate hosted Scripture and curated historical source notes into structured NotebookLM research worksheets about Jesus.",
     url: "/jesus/dossier",
@@ -129,26 +127,10 @@ export default async function JesusDossierPage({
 
   return (
     <article className="prose-wrap jsu-dossier-wrap">
-      <nav className="breadcrumbs" aria-label="Breadcrumbs">
-        <Link href="/" className="crumb">
-          Home
-        </Link>
-        <span className="crumb-sep" aria-hidden="true">
-          /
-        </span>
-        <Link href="/jesus" className="crumb">
-          Jesus Christ
-        </Link>
-        <span className="crumb-sep" aria-hidden="true">
-          /
-        </span>
-        <span className="crumb is-current">NotebookLM Dossier Engine</span>
-      </nav>
-
       <header className="page-header" style={{ marginBottom: "2rem" }}>
         <p className="kicker">HOSTED SCRIPTURE · CURATED SOURCE NOTES</p>
         <h1 style={{ fontFamily: "Cinzel, serif", fontSize: "clamp(2rem, 5vw, 3rem)", margin: "0.5rem 0 1rem" }}>
-          Historical Jesus Research Dossier Engine
+          Research worksheets
         </h1>
         <p style={{ fontSize: "1.125rem", lineHeight: 1.6, color: "var(--muted-ink)", maxWidth: "56rem" }}>
           Build a structured Markdown worksheet from hosted Hebrew or Greek text, public-domain translations,
@@ -158,15 +140,16 @@ export default async function JesusDossierPage({
         </p>
       </header>
 
-      <Suspense fallback={<div className="scr-loading">Loading research dossier engine...</div>}>
-        <JesusDossierClient
-          key={initialTarget}
-          canons={canons}
-          initialDossier={initialDossier}
-          initialPresetId={resolvedPreset?.id ?? ""}
-          initialTarget={initialTarget}
-        />
-      </Suspense>
+      {/* No Suspense here: everything is read on the server, and a boundary
+          only delayed hydration until after the reader had tagged its
+          paragraphs, which React then reported as a mismatch. */}
+      <JesusDossierClient
+        key={initialTarget}
+        canons={canons}
+        initialDossier={initialDossier}
+        initialPresetId={resolvedPreset?.id ?? ""}
+        initialTarget={initialTarget}
+      />
     </article>
   );
 }

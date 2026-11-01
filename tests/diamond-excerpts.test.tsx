@@ -4,8 +4,6 @@ import React, { act } from "react";
 import { createRoot } from "react-dom/client";
 import { renderToStaticMarkup } from "react-dom/server";
 import { JSDOM } from "jsdom";
-import { NextRequest } from "next/server";
-import { middleware } from "../middleware";
 import nextConfig from "../next.config";
 import { DIAMOND_ESSAY_SECTIONS } from "../src/lib/jesus/diamond-excerpts";
 import { CHRISTIANITY_ESSAY_PATH, EXCERPT_FRAME_ORIGIN, excerptEmbedUrl, excerptWatchUrl } from "../src/lib/site/excerpt-video";
@@ -65,16 +63,20 @@ test("opening, switching, replaying, and closing excerpts keeps only one player 
   }
 });
 
-test("YouTube framing and its isolation exception are limited to the essay, including fallback headers", async () => {
-  for (const route of [CHRISTIANITY_ESSAY_PATH, "/jesus/history", "/scriptures/search", `${CHRISTIANITY_ESSAY_PATH}/other`]) {
-    const response = middleware(new NextRequest(`https://garovartabedian.com${route}`));
-    const isEssay = route === CHRISTIANITY_ESSAY_PATH;
-    assert.equal(response.headers.get("content-security-policy")?.includes(EXCERPT_FRAME_ORIGIN), isEssay);
-    assert.equal(response.headers.get("cross-origin-embedder-policy"), isEssay ? "unsafe-none" : "credentialless");
-    assert.match(response.headers.get("content-security-policy")!, /object-src 'none'/);
-  }
+test("configured security headers limit YouTube framing and its isolation exception to the essay", async () => {
   const rules = await nextConfig.headers!();
-  const essay = rules.find((rule) => rule.source === CHRISTIANITY_ESSAY_PATH)!;
-  assert.ok(essay.headers.find((header) => header.key === "Content-Security-Policy")?.value.includes(EXCERPT_FRAME_ORIGIN));
-  assert.equal(essay.headers.find((header) => header.key === "Cross-Origin-Embedder-Policy")?.value, "unsafe-none");
+  const general = rules.find((rule) => rule.source === "/:path*")!;
+  for (const route of [CHRISTIANITY_ESSAY_PATH, "/jesus/history", "/scriptures/search", `${CHRISTIANITY_ESSAY_PATH}/other`]) {
+    const effective = new Map(general.headers.map(({ key, value }) => [key.toLowerCase(), value]));
+    for (const rule of rules.filter((rule) => rule.source === route)) {
+      for (const { key, value } of rule.headers) effective.set(key.toLowerCase(), value);
+    }
+    const isEssay = route === CHRISTIANITY_ESSAY_PATH;
+    const csp = effective.get("content-security-policy")!;
+    assert.equal(csp.includes(EXCERPT_FRAME_ORIGIN), isEssay);
+    assert.equal(effective.get("cross-origin-embedder-policy"), isEssay ? "unsafe-none" : "credentialless");
+    assert.match(csp, /object-src 'none'/);
+    assert.match(csp, /frame-ancestors 'none'/);
+    assert.match(csp, /form-action 'self'/);
+  }
 });

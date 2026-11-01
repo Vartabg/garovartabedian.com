@@ -34,11 +34,14 @@ export default function OriginalLine({
   book,
   chapter,
   verse,
+  endVerse,
   edition,
 }: {
   book: string;
   chapter: number;
   verse: number;
+  /** Last verse of a passage; the toggle then opens every line from verse to here. */
+  endVerse?: number;
   /** The hosted edition for this book, so the toggle names the language. */
   edition?: string;
 }) {
@@ -47,25 +50,29 @@ export default function OriginalLine({
   const [state, setState] = useState<
     | { phase: "idle" | "loading" }
     | { phase: "error" }
-    | { phase: "ready"; chapter: OriginalChapter | null; verse: OriginalVerse | null }
+    | { phase: "ready"; chapter: OriginalChapter | null; verses: OriginalVerse[] }
   >({ phase: "idle" });
 
   const load = useCallback(() => {
     setState({ phase: "loading" });
     loadOriginalChapter(book, chapter)
       .then((original) => {
+        const last = endVerse ?? verse;
         setState({
           phase: "ready",
           chapter: original,
-          verse: original?.verses.find((item) => item.number === verse) ?? null,
+          verses: original?.verses.filter((item) => item.number >= verse && item.number <= last) ?? [],
         });
       })
       .catch(() => setState({ phase: "error" }));
-  }, [book, chapter, verse]);
+  }, [book, chapter, verse, endVerse]);
 
   useEffect(() => {
     if (open && state.phase === "idle") load();
   }, [open, state.phase, load]);
+
+  const readyChapter = state.phase === "ready" ? state.chapter : null;
+  const readyVerses = state.phase === "ready" ? state.verses : [];
 
   return (
     // A block element, not a span: the verse renderer emits a <div>, and an
@@ -92,10 +99,11 @@ export default function OriginalLine({
           The original text couldn&rsquo;t load. Check the connection and try again.
         </p>
       )}
-      {open && state.phase === "ready" && state.verse && state.chapter && (
-        <OriginalVerseLine chapter={state.chapter} verse={state.verse} />
-      )}
-      {open && state.phase === "ready" && !state.verse && (
+      {open && readyChapter &&
+        readyVerses.map((item) => (
+          <OriginalVerseLine key={item.number} chapter={readyChapter} verse={item} />
+        ))}
+      {open && state.phase === "ready" && state.verses.length === 0 && (
         <p className="scr-meta">
           {state.chapter
             ? `The hosted critical edition prints no text at this verse number. Verse divisions and the passages an edition includes differ between the English translation and the Greek, so there is no line to show here.`

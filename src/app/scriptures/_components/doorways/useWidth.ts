@@ -1,0 +1,18 @@
+"use client";
+
+import { useEffect, useState, type RefObject } from "react";
+
+/** The element's inline size, kept current as the page resizes. 0 until measured. */
+export function useWidth(ref: RefObject<HTMLElement | null>): number {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+    const observer = new ResizeObserver(() => setWidth(element.clientWidth));
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [ref]);
+
+  return width;
+}

@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { scriptureCanonicalPath, ssgBookParams } from "@/lib/scriptures/canonical";
 import { getBookBriefing } from "@/lib/scriptures/server/book-briefings";
-import { canons } from "@/lib/scriptures/server/canons";
+import { getBookText } from "@/lib/scriptures/server/book-text";
+import { canons, pickTranslation } from "@/lib/scriptures/server/canons";
+import { hostedBookEdition } from "@/lib/scriptures/edition-counts";
 import BookBriefingView, { BookBriefingDeep, BookBriefingLead } from "./BookBriefing";
 
 type PageProps = {
@@ -22,9 +24,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Book" };
   }
   const briefing = await getBookBriefing(bookId);
+  const edition = hostedBookEdition(bookId, tradition.transPreference);
   const description =
     briefing?.oneLine ??
-    `Choose a chapter of ${meta.name} in the ${tradition.name} collection (${meta.chapters} chapters).`;
+    `Choose a chapter of ${meta.name} in the ${tradition.name} collection${edition ? ` (${edition.chapters} chapters in ${edition.name})` : ""}.`;
   const url = `/scriptures/${tradition.id}/${bookId}`;
   return {
     title: meta.name,
@@ -65,10 +68,18 @@ export default async function BookChaptersPage({ params }: PageProps) {
   const meta = canons.books[bookId];
   if (!meta) notFound();
 
-  const chapters = meta.chapters;
   const bookIndex = tradition.books.indexOf(bookId);
   const baseHref = `/scriptures/${tradition.id}/${bookId}`;
-  const briefing = await getBookBriefing(bookId);
+  const translation = pickTranslation(tradition.transPreference, bookId);
+  if (!translation) notFound();
+  const [text, briefing] = await Promise.all([
+    getBookText(translation, bookId),
+    getBookBriefing(bookId),
+  ]);
+  if (!text) notFound();
+  // Canon metadata is the maximum across editions. The grid must match the
+  // edition opened by its chapter links (Joel has three or four chapters).
+  const chapters = text.chapters.length;
 
   // Group only when the shape covers every chapter exactly once; a partial or
   // overlapping shape would silently hide or duplicate chapters.

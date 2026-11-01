@@ -1,0 +1,24 @@
+.research-audio { margin: 2rem 0; padding: clamp(1rem, 3vw, 1.8rem); border: 1px solid var(--line); border-top: 2px solid var(--accent); border-radius: .6rem; background: var(--surface); color: var(--ink); overflow-wrap: anywhere; }
+.research-audio-heading .research-audio-kicker { margin: 0 0 .6rem; font: .72rem/1.6 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted-ink); }
+.research-audio-kicker span { white-space: nowrap; }
+.research-audio h2 { margin: 0 0 .6rem; font-size: clamp(1.3rem, 3vw, 1.8rem); line-height: 1.25; color: inherit; scroll-margin-top: 8rem; }
+.research-audio-heading > p:last-child { margin: 0 0 1rem; font-size: .95rem; line-height: 1.65; }
+.research-audio-controls { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.research-audio audio { flex: 1 1 16rem; width: 100%; min-width: 0; max-width: 100%; height: 54px; }
+.research-audio-speed { display: flex; align-items: center; gap: .5rem; font-size: .8rem; }
+.research-audio-speed select { padding: .6rem; min-height: 44px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: .3rem; font: inherit; }
+.research-audio-chapters { flex: 1 0 100%; list-style: none; margin: .25rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: .15rem 1rem; }
+.research-audio-chapters button { width: 100%; min-height: 44px; padding: .5rem .2rem; display: flex; gap: .65rem; align-items: baseline; text-align: start; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); font: .82rem/1.5 var(--font-interface); cursor: pointer; }
+.research-audio-chapters button:hover { text-decoration: underline; text-underline-offset: .2em; }
+.research-audio-chapters button:disabled, .research-audio-speed select:disabled { opacity: .65; cursor: default; }
+.research-audio-chapters span, .research-audio-transcript h3 > span { flex-shrink: 0; font: .72rem/1.6 var(--font-mono); color: var(--muted-ink); }
+.research-audio .research-audio-provenance { margin: 1rem 0 .4rem; color: var(--muted-ink); font-size: .72rem; line-height: 1.7; }
+.research-audio-transcript summary { cursor: pointer; padding: .6rem 0; min-height: 44px; font-size: .85rem; text-decoration: underline; text-underline-offset: .25em; }
+.research-audio-transcript[open] summary { margin-bottom: 1rem; }
+.research-audio-transcript { font-size: .95rem; line-height: 1.8; }
+.research-audio-transcript section { border-top: 1px solid var(--line); margin-top: 1.4rem; padding-top: .5rem; }
+.research-audio-transcript h3 { font-size: 1.1rem; color: inherit; }
+.research-audio-transcript section ul { font-size: .8rem; }
+.research-audio-transcript ul a { display: inline-block; min-height: 2rem; padding-block: .25rem; }
+.research-audio-transcript li p { margin-top: .2rem; font-size: .85rem; }
+.research-audio-error { flex-basis: 100%; }

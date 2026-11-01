@@ -76,7 +76,7 @@ test("reading context exposes focus, adjacent verse links, and editorial labelin
   const fragment = JSDOM.fragment(renderToStaticMarkup(
     <ChapterContext guide={guide} bookName="Jubilees" baseHref="/scriptures/ethiopian/JUB" sources={briefing.sources} editionName="R. H. Charles translations" />,
   ));
-  assert.equal(fragment.querySelector("h2")?.textContent, "Before you read");
+  assert.equal(fragment.querySelector("h2")?.textContent, "Chapter context");
   assert.ok(fragment.textContent?.includes(guide.readingContext!.here.text));
   assert.ok(fragment.textContent?.includes("Editorial context"));
   assert.ok(fragment.textContent?.includes("References use R. H. Charles translations."));

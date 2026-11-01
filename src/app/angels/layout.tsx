@@ -4,6 +4,7 @@ import Link from "next/link";
 import WorldSwitcher from "../_components/WorldSwitcher";
 import { WorldGuide, WorldNextSteps } from "../_components/WorldGuide";
 import WorldHeader from "../_components/WorldHeader";
+import SiteFooterLinks from "../_components/SiteFooterLinks";
 import Sky from "./Sky";
 import "../styles/worlds-shared.css";
 import "../styles/angels.css";
@@ -89,6 +90,7 @@ export default function AngelsLayout({ children }: { children: React.ReactNode }
               Sources
             </Link>
           </span>
+          <SiteFooterLinks />
         </div>
       </footer>
       <WorldSwitcher />

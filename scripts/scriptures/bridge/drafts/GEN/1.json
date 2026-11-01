@@ -1,0 +1,146 @@
+{
+ "book": "GEN",
+ "chapter": 1,
+ "model": "claude-opus-5-5",
+ "promptVersion": 1,
+ "chunks": [
+  {
+   "customId": "GEN_1_1-1",
+   "source": "seed: drafted by Claude in a Claude Code session for the Word Bridge preview",
+   "collectedAt": "2026-10-16"
+  }
+ ],
+ "verses": [
+  {
+   "n": 1,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "0.0"
+     ],
+     "kind": "link",
+     "note": "“In” is a one-letter prefix on the Hebrew word.",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [],
+     "kind": "supplied",
+     "note": "The Hebrew has no “the” here.",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "0.1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "2.0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "1.0"
+     ],
+     "kind": "link",
+     "note": "Hebrew puts the verb first: “created God.”",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "3.0"
+     ],
+     "kind": "untranslated",
+     "note": "אֵת marks what was created. English shows it by word order instead.",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "4.0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "4.1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "5.0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "5.1"
+     ],
+     "kind": "untranslated",
+     "note": "A second אֵת marks the second thing created.",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "6.0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "6.1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  }
+ ]
+}

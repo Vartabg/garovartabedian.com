@@ -4,6 +4,7 @@ import Link from "next/link";
 import WorldSwitcher from "../_components/WorldSwitcher";
 import { WorldGuide, WorldNextSteps } from "../_components/WorldGuide";
 import WorldHeader from "../_components/WorldHeader";
+import SiteFooterLinks from "../_components/SiteFooterLinks";
 import "../styles/worlds-shared.css";
 import "../styles/apostles.css";
 import "../styles/apostles-home.css";
@@ -84,6 +85,7 @@ export default function ApostlesLayout({ children }: { children: React.ReactNode
               tradition never dressed as scripture
             </Link>
           </span>
+          <SiteFooterLinks />
         </div>
       </footer>
       <WorldSwitcher />

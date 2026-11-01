@@ -1,16 +1,12 @@
 import { test, expect, chromium } from "@playwright/test";
 import path from "node:path";
-
-// See offline-reader.spec.ts: saves run serially and get a longer confirmation
-// timeout because the offline shell is slow to install under parallel load.
-test.describe.configure({ mode: "serial" });
-const saved = { timeout: 20_000 };
+import { expectOfflineSave } from "./helpers/offline";
 
 for (const width of [1280, 390, 320]) test(`saved reader has accessible reflow at ${width}px`, async ({ page }) => {
   await page.setViewportSize({ width, height: 900 });
   await page.goto("/scriptures/protestant/JHN/3");
   await page.getByRole("button", { name: "Save chapter offline" }).click();
-  await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
+  await expectOfflineSave(page, "John 3");
   await page.goto("/scripture-reader/index.html");
   await expect(page.locator(".verse")).not.toHaveCount(0);
   await page.getByRole("button", { name: "Larger text" }).click();
@@ -32,7 +28,7 @@ test("saved chapter survives a complete browser restart offline", async ({ baseU
     const page = await first.newPage();
     await page.goto("/scriptures/protestant/JHN/3");
     await page.getByRole("button", { name: "Save chapter offline" }).click();
-    await expect(page.getByText("John 3 saved for offline reading.", { exact: true })).toBeVisible(saved);
+    await expectOfflineSave(page, "John 3");
     await page.goto("/scripture-reader/index.html");
     await expect(page.locator("#reading")).toContainText("For God so loved the world");
   } finally { await first.close(); }

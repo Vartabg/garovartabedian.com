@@ -59,6 +59,16 @@ describe("world registry", () => {
         // all-record discovery contracts are exercised in apostles-stories.spec.ts.
         assert.match(source, /APOSTLE_STORIES/);
         assert.equal((source.match(/<h1\b/g) ?? []).length, 1);
+      } else if (world === "scriptures") {
+        // This world opens straight on the picker, with no plate above it;
+        // its contracts are exercised in scripture-doorways.test.tsx.
+        assert.match(source, /<Doorways\b/);
+        assert.equal((source.match(/<h1\b/g) ?? []).length, 1);
+      } else if (world === "jesus") {
+        // This world opens on his life, forty moments to choose from; its
+        // contracts are exercised in jesus-life-lenses.test.tsx.
+        assert.match(source, /<LifeLenses\b/);
+        assert.equal((source.match(/<h1\b/g) ?? []).length, 1);
       } else {
         assert.match(source, /<WorldHomeHero/);
       }

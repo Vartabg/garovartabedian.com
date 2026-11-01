@@ -80,6 +80,8 @@ export type MatrixProvenance = {
   reviewStatus: "draft" | "machine-checked" | "agent-reviewed" | "human-approved";
   reviewer: string;
   rubricVersion: string;
+  /** Versioned structural integrity boundary; does not add factual review. */
+  contentHashScope: "witnesses-slots-edges-reception-v1";
   reviewedContentHash: string;
   reviewedAt: string;
   reviewScope: string;

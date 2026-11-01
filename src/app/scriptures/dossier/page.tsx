@@ -1,60 +1,56 @@
 import { Suspense } from "react";
+import StudyPageHeader from "@/app/_components/StudyPageHeader";
 import type { Metadata } from "next";
-import Link from "next/link";
-import { canons } from "@/lib/scriptures/server";
+import { canons, getBookText, getOriginalChapter } from "@/lib/scriptures/server";
 import { buildNotebookLMDossier, DOSSIER_PRESETS } from "@/lib/site/notebooklm";
 import DossierClient from "./DossierClient";
+import StudyContextBanner from "../_components/StudyContextBanner";
+import { resolveStudyContext } from "@/lib/scriptures/server/study-context";
+import { loadStudyPassage } from "@/lib/scriptures/study-passage";
+import type { StudySearchParams } from "@/lib/scriptures/study-context";
 
 export const metadata: Metadata = {
-  title: "Universal NotebookLM Research Dossier Engine — Grounded Classical Synthesis",
+  title: "Build a research dossier",
   description:
-    "Compile named original-language editions, public-domain English translations, and source-attributed early Christian reception notes into research worksheets for Google NotebookLM.",
+    "Gather named editions, English translations, and early Christian reception notes into research worksheets for NotebookLM.",
   alternates: { canonical: "/scriptures/dossier" },
   openGraph: {
-    title: "Universal NotebookLM Research Dossier Engine — Grounded Classical Synthesis",
+    title: "Build a research dossier",
     description:
-      "Bridge ancient scholarship and modern AI: collate multi-witness textual divergence and patristic reception into NotebookLM dossiers.",
+    "Gather named editions, English translations, and early Christian reception notes into research worksheets for NotebookLM.",
     url: "/scriptures/dossier",
   },
 };
 
-export default function DossierPage() {
+export default async function DossierPage({ searchParams }: { searchParams: Promise<StudySearchParams> }) {
+  const resolved = await resolveStudyContext(await searchParams);
+  if (resolved.error) return <article className="prose-wrap"><StudyPageHeader path="/scriptures/dossier" action="Build a research worksheet for your passage." /><StudyContextBanner context={null} error={resolved.error} /></article>;
+  const contextual = resolved.context ? await loadStudyPassage(resolved.context, { book: getBookText, original: getOriginalChapter }) : null;
   const initialPreset = DOSSIER_PRESETS[0]; // Isaiah 53
   const initialDossier = buildNotebookLMDossier({
-    target: initialPreset.query,
+    target: contextual?.target ?? initialPreset.query,
     canons,
+    primaryVerses: contextual?.primaryVerses,
+    theologicalContext: contextual?.note,
+    includeReception: contextual?.includeReception,
   });
 
   return (
     <article className="prose-wrap">
-      <nav className="breadcrumbs" aria-label="Breadcrumbs">
-        <Link href="/scriptures" className="crumb">
-          Scriptures
-        </Link>
-        <span className="crumb-sep" aria-hidden="true">
-          /
-        </span>
-        <span className="crumb is-current">NotebookLM Dossier Engine</span>
-      </nav>
+      <StudyPageHeader
+        path="/scriptures/dossier"
+        action="Choose a preset or enter a passage, inspect the gathered sources, then copy or download a Markdown worksheet for further study in NotebookLM."
+      />
 
-      <header className="page-header" style={{ marginBottom: "2rem" }}>
-        <p className="kicker">SOURCE-ATTRIBUTED TEXTS · EDITORIAL NOTES LABELED</p>
-        <h1 style={{ fontFamily: "Cinzel, serif", fontSize: "clamp(2rem, 5vw, 3rem)", margin: "0.5rem 0 1rem" }}>
-          Universal NotebookLM Research Dossier Engine
-        </h1>
-        <p style={{ fontSize: "1.125rem", lineHeight: 1.6, color: "var(--muted-ink)", maxWidth: "56rem" }}>
-          Google NotebookLM is a breakthrough in grounded synthetic research, but gathering and translating ancient
-          multilingual editions alongside early Christian reception material can require extensive manual archival work.
-          This engine compiles hosted Hebrew or Greek morphology, public-domain English translations, and source-attributed
-          reception notes into structured Markdown worksheets, with prompts that ask NotebookLM to distinguish text from interpretation.
-        </p>
-      </header>
-
-      <Suspense fallback={<div className="scr-loading">Loading research dossier engine...</div>}>
+      <Suspense fallback={<div className="scr-loading">Loading the research worksheet…</div>}>
         <DossierClient
+          key={contextual ? `${contextual.context.bookId}/${contextual.context.chapter}/${contextual.context.verse}/${contextual.context.translation}` : initialPreset.id}
           canons={canons}
           initialDossier={initialDossier}
-          initialTarget={initialPreset.query}
+          initialTarget={contextual?.target ?? initialPreset.query}
+          initialContext={resolved.context}
+          initialSourceText={contextual?.sourceText}
+          contextNote={contextual?.note}
         />
       </Suspense>
     </article>

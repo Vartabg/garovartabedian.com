@@ -30,6 +30,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# release record, written from local release reports during each release
+/.release-record/
+
 # local editor / agent config
 .claude/
 .abacusai/

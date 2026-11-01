@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
+import { CONTENT_HASH_SCOPE, matrixContentHash } from "./provenance.mjs";
 
 const ROOT = path.join(import.meta.dirname, "../..");
 const SOURCES_DIR = path.join(ROOT, "public/parallels/sources");
@@ -446,17 +446,13 @@ const matrix = {
 };
 
 // Compute canonical SHA-256 content hash
-const contentToHash = JSON.stringify({
-  slots: matrix.slots,
-  edges: matrix.edges,
-  receptionClaims: matrix.receptionClaims,
-});
-const reviewedContentHash = crypto.createHash("sha256").update(contentToHash).digest("hex");
+const reviewedContentHash = matrixContentHash(matrix);
 
 matrix.provenance = {
   reviewStatus: "agent-reviewed",
   reviewer: "Codex",
   rubricVersion: "parallels-v1.0",
+  contentHashScope: CONTENT_HASH_SCOPE,
   reviewedContentHash,
   reviewedAt: "2026-09-04T15:12:28.000Z",
   reviewScope: "Jubilees quotations and the ram-offering summary corrected against the 1913 printed text; existing narrative alignment, rights, and reception separation retained. See docs/jubilees-source-review.md.",

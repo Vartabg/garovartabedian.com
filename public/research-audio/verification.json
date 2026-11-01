@@ -1,0 +1,298 @@
+{
+  "nicaea": {
+    "sha256": "2aea049338127dd687ac73b60a5bcc5352985c931cabafb3468b668b4e1aef0d",
+    "scriptSha256": "fe7f03d947d60b13da9f1ab6150a27bbf27f7ae32d1068bc1402926c03bdbd43",
+    "asrModel": "mlx-community/whisper-small-asr-fp16",
+    "checks": [
+      {
+        "section": 1,
+        "wordErrorRate": 0.0118,
+        "transcript": "A question worth slowing down for. Nicaea, the words that mattered. A source grounded overview. Imagine being asked to sign a sentence about God and discovering that the disagreement turns on what a single word permits you to mean. That is a useful way into the Council of Nicaea. We will listen to three kinds of evidence. The Council's creed. A participant's explanation of his signature, and a later defense of the wording. This overview is editorial synthesis with a synthetic narrator. It does not recreate a conversation in the council chamber. The documents do different jobs. A creed states a boundary. A letter explains a decision to a community. A defense argues that a disputed decision was right. Keeping those purposes apart helps us hear. hear each source more clearly. As you listen, ask two questions. What claim is actually being made, and what would count as evidence for the explanation? Those questions are more useful than imagining that every voice in the room meant exactly the same thing. . .",
+        "passed": true
+      },
+      {
+        "section": 2,
+        "wordErrorRate": 0.025,
+        "transcript": "What the Creed says, start with the Creed associated with the Council of 325. Its central contrast is between the Sun being begotten and being made. It identifies the Sun with the Father's substance and rejects descriptions that place him among creatures, or make his existence begin after a time when he did not exist. This is more precise than saying that the Council simply The Council. voted on whether Jesus mattered or whether Christians should honor him. The document is drawing a particular theological boundary. Notice the method. First read the positive statements, then read the rejected alternatives. A boundary becomes easier to understand when you can see what it excludes. The same collection preserves practical canons and a synodal letter. Their presence also warns us against reducing the entire gathering to a single abstract slogan. But a short overview cannot make every council document carry the weight of every later dispute. Follow the particular claim back to its particular text.",
+        "passed": true
+      },
+      {
+        "section": 3,
+        "wordErrorRate": 0.0189,
+        "transcript": "A signature needs explaining. Now turned to Eusebius of Caesarea, in his letter home, he sets out a confession he presented, and then the formula adopted with additional language. He describes how the expression usually translated as one in essence was explained and why he could accept it. He rejects the idea that divine generation should be pictured as a bodily division. Here, the same word comes with interpretive instructions. His letter lets us watch a scent being explained rather than merely counted. It also gives us a reason to be careful. Eusebius is addressing his own church and accounting for his conduct. That makes him valuable, but it does not make his account a neutral recording. Read a participant sympathetically enough to understand his explanation. and critically enough to remember its audience. You do not have to choose between treating him as useless and treating him as the whole story. His letter is one witness with a specific purpose.",
+        "passed": true
+      },
+      {
+        "section": 4,
+        "wordErrorRate": 0.0241,
+        "transcript": "Why use a word outside the biblical text? Athanasius, in his later work defending the decrees, addresses an objection to the Council's use of language outside the wording of Scripture. His argument is that familiar biblical expressions could be accepted while being interpreted in ways the bishop supposed. More exact language was therefore needed to make the intended meaning harder to evade. That is his defense. this, and we should label it as such. It is evidence for how a committed defender understood the council's task. It is not independent proof that every opponent was dishonest or that every historical detail in his polemic is beyond dispute.\" The question remains fascinating. When does an explanatory term preserve the meaning of a text, and when does it import an extra assumption? Athanasius offers an answer from within his theological commitments. Reading him closely gives you an argument to examine, rather than a slogan to repeat. You can compare the reasoning with the creed and Eusebius' explanation for yourself.",
+        "passed": true
+      },
+      {
+        "section": 5,
+        "wordErrorRate": 0.021,
+        "transcript": "Return to the documents. Here is a practical next step. Open the creed and mark its positive claims. In a second pass, mark its exclusions. Then read Eusebius' account of ascent beside Athanasius' explanation of precision. Write down where their purposes differ before deciding where they agree. That is the reading method proposed by this overview. not an additional ancient claim. The transcript below links each part to its evidence, so you can pause the narration and inspect the passage. An overview should give you a route into the sources, with enough orientation to ask a better question when you arrive. It should leave you able to distinguish a document, a participant's account, and a later theological argument. Nicaea becomes more interesting when the words are allowed to retain their difficulty. Begin there with the words and let the judgment follow the evidence. .",
+        "passed": true
+      }
+    ]
+  },
+  "watchers": {
+    "sha256": "841fcc9ab56e395b2324806d983e0c6f3dc7a346bc68df390f9b716a4fc476c4",
+    "scriptSha256": "118ebccf81a014fa39bf810a298d31ab093d02af51b89ce6dff0779ba1d08ea5",
+    "asrModel": "mlx-community/whisper-small-asr-fp16",
+    "checks": [
+      {
+        "section": 1,
+        "wordErrorRate": 0.0063,
+        "transcript": "Keep the seams visible. The watchers read the seams. A source-grounded overview. It is easy to tell a single dramatic story about fallen angels, giants, imprisoned spirits, and the origin of evil. It is harder and more rewarding to notice where that story has been stitched together. This overview compares four texts. It does not treat them as four! changeable versions of one complete account. The narration is synthetic, and the connections are editorial judgments you can inspect in the linked transcript. Our question is modest, which details can we point to in each passage and which details arrive through comparison? Try keeping a small mental ledger as we go, in one column place, explicit statements. In another place, possible . connections. Leave room for questions that neither column answers. That simple discipline lets a mysterious subject remain fascinating without turning every resemblance into proof. We will begin with the shortest passage, then see what changes when the story expands.",
+        "passed": true
+      },
+      {
+        "section": 2,
+        "wordErrorRate": 0.0063,
+        "transcript": "Genesis is brief. Genesis chapter 6 describes the sons of God taking human women, mentions the Nephilim and the renowned mighty men, and moves toward the account of human wickedness and the flood. The passage leaves much unsaid. It does not provide the detailed roster, oath, and sequence of forbidden teachings that readers may remember from Enoch. Even the identification of the sons of God is an interpretive question rather than an explanation spelled out in these verses. An angelic reading is one way of understanding the phrase, we should name it as a reading instead of silently expanding the translation. Notice how this changes the task. We can ask whether another ancient narrative illuminates Genesis without pretending that its additional details were already on the page. reading the short passage first gives you a baseline. Return to that baseline whenever the larger story begins to feel so familiar that you can no longer remember which texts supplied a detail.",
+        "passed": true
+      },
+      {
+        "section": 3,
+        "wordErrorRate": 0.013,
+        "transcript": "Enoch supplies a larger narrative. In the Book of the Watchers within first Enoch, the descent becomes explicit. Heavenly beings take wives, an oath binds the group. Their actions bring corruption and violence. Chapters 6 through 11 develop the crisis and judgment. Chapters 15 and 16 explain the destructive earthly spirits in relation to the dead giants. That last distinction matters. within this narrative, the spirits of the giants and the offending heavenly beings are related. But they are not simply the same category. These are statements about Enoch's story. Moving from them to a claim about every demon in every later text requires another argument. The book offers a rich account of the disorder of the world, and careful reading gives that account its own shape. Resist the temptation to reduce it to a list of supernatures. natural names. Ask how violence, illicit knowledge, human suffering, and judgment work together within this particular narrative.",
+        "passed": true
+      },
+      {
+        "section": 4,
+        "wordErrorRate": 0.0196,
+        "transcript": "Read Jude and Peter separately. Jude offers two different points of comparison. Verse 6 describes angels who abandon their proper dwelling and are kept for judgment. Later, verses 14 and 15 introduce a prophecy of Enoch about the Lord's coming in judgment. Those should not be collapsed into one quotation. The explicit Enoch citation and the earlier angelic example do different work in the letter. 2 Peter 2 also describes sinning angels held for judgment, followed by the ancient world and Noah. Its sequence invites comparison with traditions of angelic transgression and the flood, but an invitation to compare is not permission to transfer every detail from one book into another. Read the warning in each letters' own argument. Ask what example the writer needs at that moment, which details are actually named, and what remains unstated. Shared imagery can be real, even where a complete shared narrative has not been demonstrated.",
+        "passed": true
+      },
+      {
+        "section": 5,
+        "wordErrorRate": 0.0064,
+        "transcript": "A reading exercise. Try this after listening. Open the linked passages and choose one detail, such as the oath, the prison, or the origin of hostile spirits. Write down exactly where you find it. Then write a second sentence describing the connection you think it supports. Keep those sentences separate, the first record's evidence. The second states your interpretation of that evidence. . . . This exercise is a proposed reading method, rather than a conclusion the ancient authors all announce. It can also improve a research dossier. Instead of asking a tool to explain the whole mystery at once, supply the passages, and ask it to compare one claim at a time. The Watchers remain a compelling subject precisely because the texts have texture silences and different emphases. A good overview. you preserves that texture and sends you back to read. The next step is to open a source, pause at a seam, and examine the connection for yourself.",
+        "passed": true
+      }
+    ]
+  },
+  "historical-jesus": {
+    "sha256": "c6976bf791a7b2ed87a8e9268f51358d0be20170970a24ad9d0dd3670c6f6165",
+    "scriptSha256": "cc8f0317e1a605dba9c40e46880e47140f4e003215cbac446b93d211d56d5e61",
+    "asrModel": "mlx-community/whisper-small-asr-fp16",
+    "checks": [
+      {
+        "section": 1,
+        "wordErrorRate": 0.0132,
+        "transcript": "Give each witness a specific question. Jesus, in history, testimony and its limits. A source-grounded overview. A collection of ancient witnesses becomes useful when we stop asking every witness the same oversized question. Instead of asking whether one passage proves Christianity, ask what particular claim it can support. Does it report a death? death, identify a person, describe a community, or transmit a proclamation. This overview follows Paul Josephus and Tacitus. It is editorial synthesis read by a synthetic narrator with sources linked in the transcript. These witnesses have different interests and stand in different relationships to what they describe. Keeping those differences visible does not weaken inquiry. It makes inquiry possible. As you listen, separate the existence of a report from the truth of every explanation attached to that report. Then ask how other evidence might help you judge the explanation. That distinction will guide our route through the text.",
+        "passed": true
+      },
+      {
+        "section": 2,
+        "wordErrorRate": 0.0197,
+        "transcript": "Paul reports a proclamation. In 1 Corinthians 15, Paul reminds his audience of a message he says he received and handed on. It includes Christ's death, burial, resurrection, and appearances. He names recipients of appearances and places his own experience in the sequence. The passage is direct evidence for the proclamation Paul communicates. A historical judgment about the experiences behind it involves further reasoning. Do not move silently from Paul reports an appearance to every proposed explanation of an appearance has been settled. Equally, do not erase the testimony simply because it comes from someone committed to the message. A committed source can preserve valuable information while still requiring scrutiny. Begin with what the passage claims. No Notice how Paul presents his relation to it and identify the question you want to investigate next. The text gives you material for an inquiry. It does not remove the need to make an argument.",
+        "passed": true
+      },
+      {
+        "section": 3,
+        "wordErrorRate": 0.0,
+        "transcript": "A reported meeting. Galatians chapter 1 supplies another kind of claim. Paul describes going to Jerusalem, staying with Cephas and seeing James, whom he identifies as the Lord's brother. Here we are reading a reported personal encounter within Paul's explanation of his own career and message. It is not a modern interview transcript, and the passage does not tell us everything discussed during the visit. That limitation matters whenever we try to use the meeting to reconstruct a detailed conversation. We can take seriously the contact Paul reports while remaining precise about what the account actually contains. A useful follow-up is to list what is explicit, then list what you would need to know before drawing a larger conclusion. This keeps a real piece of testimony from being expanded into a scene the source never describes. It also keeps the source available for comparison with other evidence.",
+        "passed": true
+      },
+      {
+        "section": 4,
+        "wordErrorRate": 0.013,
+        "transcript": "Josephus, two passages, different problems. Josephus' antiquities contains a notice about James in Book 20 and the more famous passage about Jesus in Book 18. The James notice identifies him by reference to Jesus who was called Christ. The received wording of the Book 18 passage includes overtly Christian statements, including resurrection language, whose relationship to Josephus' original text is disputed. These two passages should therefore remain separate entries in our reasoning. You cannot solve the textual problem in one passage merely by pointing to the existence of the other. When a translation presents the received text, reading the words on the screen is only the first step. The next question concerns transmission and authorship. On this page, the source notes identify that difficulty rather than quietly treating every received sentence as untouched Josephus. That is a limit to carry into a conclusion and a reason to read the passage's assessment alongside its excerpt.",
+        "passed": true
+      },
+      {
+        "section": 5,
+        "wordErrorRate": 0.0194,
+        "transcript": "Tacitus and a Careful Conclusion In Annals 15, Tacitus describes Nero's treatment of Christians and connects their name to Christus, whose execution he places under Pontius Pilate in the reign of Tiberius. His hostile tone differs sharply from Paul's proclamation. The report is valuable, but it does not make Tacitus an eyewitness to the execution or tell us exactly how he obtained a that information. His account should be used for the claims it addresses. Here is a reading method for the whole collection. Make one row for each witness, with columns for the passage, its purpose, its specific claim, and its limits. Compare the rows before combining them. That is an editorial exercise you can repeat with the records on this page. Historical testimony deserves! . automatic dismissal nor unlimited credit. It deserves a question proportion to what the source can tell us. Open the transcript, follow a source, and make the next inference explicit.",
+        "passed": true
+      }
+    ]
+  },
+  "scripture-reading": {
+    "sha256": "07f460b08f32cd4c97c3e9d18ab5349e53009a08c999ae47ee949e6f19b3ab89",
+    "scriptSha256": "5bebec199b132a395c773dec44349b98a36605a1fa24641a109efd18e55332b2",
+    "asrModel": "mlx-community/whisper-small-asr-fp16",
+    "checks": [
+      {
+        "section": 1,
+        "wordErrorRate": 0.021,
+        "transcript": "One word, several questions, reading Scripture, three questions before you compare, a source grounded overview with a synthetic narrator. Two readers can open books, called the Bible, and discover different tables of contents, different English wording, and a different notes beside the same passage. Before deciding that one reader has changed the text, separate three questions, which collection is being received as scripture, which edition or translation supplies these words, and what interpretation is being offered. This overview uses two historical canon statements and the site's edition records to keep those questions apart. It offers a reading method, not a ruling over the traditions represented here. A collection's boundaries. A Translator. reader's choices and a reader's conclusions belong in the same conversation, but they are different kinds of evidence. Keeping them visible makes comparison more useful than simply counting books or noticing a surprising phrase.",
+        "passed": true
+      },
+      {
+        "section": 2,
+        "wordErrorRate": 0.0147,
+        "transcript": "A list with more than one category. Start with the linked letter of Athanasius. In the letter for the year 367, the bishop names books he receives as canonical. He then makes another category. Books appointed for people beginning their instruction. Wisdom, Sourash, Esther, Judith, Tobit, the teaching of the apostles, and the shepherd appear in that second group. . Notice what the distinction allows us to ask. Being read for instruction and being included in this author's canon are not identical. His treatment of Esther is especially useful when a familiar title tempts us to assume a familiar classification. This is a particular bishop explaining boundaries in a particular document. We should read its categories before turning it into a slogan about what every Christian everywhere accepted. The letter itself is more precise than that slogan. you",
+        "passed": true
+      },
+      {
+        "section": 3,
+        "wordErrorRate": 0.0405,
+        "transcript": "Compare the later statement on its own terms. Now place the fourth session of the Council of Trent beside that letter. The Council's decree receives a named collection of sacred books, including Tobit, Judith, Wisdom, and Sirash. Those names let us make a specific comparison with the earlier letter, rather than treating every difference as a missing or added Bible. The documents speak from different moments and institutional setting. Their lists and their categories are evidence for those settings. A comparison does not make either document a survey of every community between them. Ask what each statement is doing. Is it distinguishing reading categories, defining a received collection, or addressing a contemporary controversy? That question keeps a historical comparison from becoming a controversial one. an accusation before the evidence has been read. You can describe a real difference without pretending that one short list explains the entire history of the canon. The",
+        "passed": true
+      },
+      {
+        "section": 4,
+        "wordErrorRate": 0.0,
+        "transcript": "Identify the words on the screen. A Canon record still does not tell you which English wording is on your screen. For that, inspect the translation and its source record. This site identifies the translations and source files behind its hosted texts. A shelf label describes a tradition. It does not mean that every work associated with that tradition is available in a complete hosted edition. Read the coverage notes as well as the title. Then open Luke's first chapter. Its prologue describes an ordered account drawn from earlier testimony. That statement invites questions about testimony, ordering, and purpose. It does not identify a modern English edition or settle a canon list. The example shows why the three questions matter. The collection tells you where you are reading. The edition tells you which words you are comparing. Interpretation explains the claim you are making from them. .",
+        "passed": true
+      },
+      {
+        "section": 5,
+        "wordErrorRate": 0.021,
+        "transcript": "Make the comparison inspectable. Here is a small exercise. Choose one passage and write down its collection, translation, and chapter reference. Open a second edition and record one difference you can actually point to. Leave space beside it for an explanation rather than treating your first explanation as part of the wording itself. Next, compare one title in the the two historical canon documents. Copy the category each document gives it with a section reference. These are suggested study steps, not additional claims about the ancient writers. The transcript links the evidence so that you can repeat the comparison. When something is unavailable in the hosted reader, follow the source record instead of assuming the work never existed. Good comparison Good Comparison keeps its boundaries legible. It leaves the next reader able to see the same words, the same classification, and the reasoning that connects them.",
+        "passed": true
+      }
+    ]
+  },
+  "apostolic-witness": {
+    "sha256": "9e83ed54fbd410767418e76bb039af1beb6be77f4a69d8795e86e0f921933273",
+    "scriptSha256": "d620d4655ada0d19005e42e18ba737a87d6dc9073c25170e9bc2fb394ed07c5a",
+    "asrModel": "mlx-community/whisper-small-asr-fp16",
+    "checks": [
+      {
+        "section": 1,
+        "wordErrorRate": 0.1946,
+        "transcript": "Let the road keep its sources, the apostles, witness road and tradition, a source-grounded overview with a synthetic narrator. A map can put a name beside a distant city in an instant. Establishing the connection may require several texts written for very different purposes. In this overview, we will separate a named witness, a journey narrated in a text, and a tradition preserved by the Lord. a later writer. These are different levels of description, not a ranking that makes everything outside a gospel worthless. Luke gives us a list, Acts gives us selected episodes, a latter uses remembered suffering to instruct a church. A historian preserves traditions about where the apostles went, each source opens a useful question, and each leaves others unanswered. . The aim is to keep the source attached to the road, so the confidence of a line on a map never outruns the evidence behind it. The aim is to keep the source attached to the road, so the confidence of a line on a map never outruns the evidence behind it.",
+        "passed": true
+      },
+      {
+        "section": 2,
+        "wordErrorRate": 0.0069,
+        "transcript": "A list begins the inquiry. Luke's sixth chapter names the twelve after describing Jesus going out to pray. The list includes relationships and identifying details. Brothers, another James and Judas who became a traitor. It is an introduction to people in a narrative, not a later register of every place they visited. Start there before filling the names with everything you have heard about them. . . . . . . Ask which identifying words are present and which parts of your mental biography came from somewhere else. Even a familiar name needs a reference. A list can tell you that this writer places someone among the twelve, it cannot by itself establish a mission in a distant country or the manner of that person's death. That limit does not diminish the list. It gives the list a clear job. . . . leaves the next source to answer the next question. .",
+        "passed": true
+      },
+      {
+        "section": 3,
+        "wordErrorRate": 0.0352,
+        "transcript": "Axe gives two different outcomes. Axe twelve places James and Peter in the same account of persecution, but it does not give them the same outcome. James, the brother of John, is killed with the sword. Peter is imprisoned and escapes in the narrative that follows. Read the contrast before reaching for a tidy summary of how every apostle died. This chapter explicitly narrates a one killing and one deliverance, it does not narrate Peter's eventual death. A later account of Peter's death therefore needs its own citation. The distinction is simple, but it changes how we read. A source can be quite direct about one person while leaving another person's later life open. We should not fill that opening silently. Keep a note of what the chapter states and a separate note of what you will see. have to learn from another witness.",
+        "passed": true
+      },
+      {
+        "section": 4,
+        "wordErrorRate": 0.0203,
+        "transcript": "Remembered suffering is not a travel diary. The letter known as First Clement brings Peter and Paul into an argument about jealousy, suffering, and endurance. Their examples serve an appeal to the Corinthian community. It is valuable testimony, but its purpose is not to provide a complete itinerary. Later, Eusebius opens the third book of his church history with traditions a assigning regions to apostles, Parthea to Thomas, Scythia to Andrew, and Asia to John. Later in the same chapter he explicitly cites origin. Notice the change of source and distance. A later historian can preserve earlier material without becoming an eyewitness to the journeys. These records deserve to be read with their attributions intact. They do not authorize us to turn a broad regional assignment into a precise sequence of modern map pins. The distinction between reported tradition and a directly narrated episode should travel with the story.",
+        "passed": true
+      },
+      {
+        "section": 5,
+        "wordErrorRate": 0.0132,
+        "transcript": "Read a map as an invitation. Choose one apostle and trace just one claim about his road. Begin with the earliest source linked for that claim. Record what it says, what kind of document it is and whether it names an earlier authority. Then compare the later account. Does it add a region, an event, or a death tradition? Mark those additions instead of merging all the accounts into one unbridled. broken voice. That is the study exercise proposed here. It does not decide every disputed tradition in advance. A map is useful when it opens the dossier behind a location. It becomes misleading when a clean line makes uncertain steps look measured. The apostles remain people to read about closely, named, remembered, interpreted, and sometimes difficult to place. Follow the roads, but take the references with you. They are what let the next reader test how far the evidence actually reaches.",
+        "passed": true
+      }
+    ]
+  },
+  "early-writings": {
+    "sha256": "92c0e651013af7c5f92879082298655c9f65957522e1e10165ff8c7584cf56ce",
+    "scriptSha256": "c6f1caac7b1774a824117afa36ca544d77f56c9982d94b2795ccae57c175edb1",
+    "asrModel": "mlx-community/whisper-small-asr-fp16",
+    "checks": [
+      {
+        "section": 1,
+        "wordErrorRate": 0.0068,
+        "transcript": "The shelf contains different voices, early Christian writings, listen for the kind of text, a source grounded overview with a synthetic narrator. A shelf of ancient Christian works can look like one continuous conversation, open the books, and the differences become much more interesting. One text answers a dispute. Another gives instructions for worship. and conduct. A third urges a community to remain united around its leaders, reading them all as the same kind of evidence would flatten the very details that make them useful. This overview introduces three examples and a later statement about reading. It is a route into the documents, not a claim that these texts represent every early Christian. Keep four questions nearby. Who is speaking? To whom? For what purpose? and through which addition. They help us hear the voices without making any one of them speak for the entire shelf.",
+        "passed": true
+      },
+      {
+        "section": 2,
+        "wordErrorRate": 0.0067,
+        "transcript": "A letter has a situation. The work called First Clement begins as a letter from the Church at Rome to the Church at Corinth. Its opening acknowledges delay and describes a destructive division. Later chapters discuss the removal of ministers and appeal to the community to reconsider its conduct. Those details tell us to read an intervention in a dispute. The traditional title is useful. But the . . . Opening is part of the evidence too. Ask what the authors want their readers to do, and notice how examples from Scripture and remembered figures support that appeal. A forceful rebuke should not be mistaken for a complete detached report from all sides, nor does its rhetorical purpose make it useless. It gives us a situated voice, an argument, and a set of concerns we can inspect. Begin with the situation before extracting a sentence as a timeless description of every church.",
+        "passed": true
+      },
+      {
+        "section": 3,
+        "wordErrorRate": 0.035,
+        "transcript": "Instructions are evidence of instructions. The diddikshe or teaching moves from a contrast between two ways of life to practical directions. In its baptism instructions, the preferred form is followed by alternatives when the preferred conditions are unavailable. Other chapters address fasting, prayer, thanksgiving, and the appointment of local officers. That is rich evidence for what this text recommends. men's. It is not, by itself, proof that every Christian community followed every direction in exactly the same way. Prescriptions and observed practice are different questions. The alternatives are especially revealing because they show the writer allowing for circumstances rather than presenting only an ideal scene. Read the sequence and conditions not just an isolated command. A manual can teach us about priorities, expectations, and adaptation. To establish how widely those instructions were followed, we would need additional witnesses and arguments beyond the manual itself. www.mooji.org",
+        "passed": true
+      },
+      {
+        "section": 4,
+        "wordErrorRate": 0.0205,
+        "transcript": "An appeal for unity has a point of view. In the letter to the Smyrnians, Ignatius connects worship and community life with the bishop and other recognized ministers. The passage is emphatic. It asks its audience to act in a particular way within an argument about belief and belonging. We should hear that force without treating the letter as an administrative survey of every church in the period. A demand for unity may reveal a conviction, a controversy, or both. The existence of the demand is not a count of how completely it was obeyed. Read the surrounding discussion before turning one's sentence into an account of an entire century. That is an interpretive caution proposed by this overview. The author's actual words remain available below. They let you examine both the claim he makes and the reasoning he uses to press it on his reader.",
+        "passed": true
+      },
+      {
+        "section": 5,
+        "wordErrorRate": 0.0134,
+        "transcript": "Reception is another history. A later reader can add another kind of evidence. Athanasius distinguishes his canonical list from books appointed for people beginning their instruction, including the teaching of the apostles and the shepherd. That distinction shows why being read and being classified as canonical should not be collapsed into one question. For your next step, choose a paragraph from a letter, and a paragraph from the manual. Write one sentence describing the situation or instruction each actually presents. Add the addition and section reference. Then, ask what broader claim would require more evidence. This exercise is meant to keep an ancient text from becoming a convenient slogan. The expanded library gives you works and addition records. Its coverage notes matter. as much as its titles. Read beyond the canon with attention to genre, attribution, reception, and limits. The shelf becomes more fascinating when its voices remain distinct.",
+        "passed": true
+      }
+    ]
+  },
+  "bible-ownership": {
+    "sha256": "29db849febc839c509d7c422e14df4384d566d423405571a3b305a34c08c5ade",
+    "scriptSha256": "c436de780853fff32f2965fe98e7672f4b0e1693f02d37d6fe9f18186e29907a",
+    "asrModel": "mlx-community/whisper-small-asr-fp16",
+    "checks": [
+      {
+        "section": 1,
+        "wordErrorRate": 0.0131,
+        "transcript": "Ask which layer is being claimed, who owns a translation, read the rites record, a source grounded overview with a synthetic narrator. An ancient work, a recent translation, a recording, and a set of study notes can appear on the same screen. Their rites records may be different. That is the first distinction to make when a Bible carries a copyright notice. We will look at a United States Copyright Office explanation, a publisher's permissions page, and the World English Bible's public domain statement. These sources answer different questions. One explains a legal category in a particular jurisdiction. One states a publisher's policy. One describes a translation offered for reuse. The aim is to learn how to read the record carefully. This overview does not grant permission for a new project or decide how the law applies in every country. The linked documents, the text you choose, and your proposed use all matter.",
+        "passed": true
+      },
+      {
+        "section": 2,
+        "wordErrorRate": 0.0067,
+        "transcript": "New authorship does not own the ancient source. The United States Copyright Office's Circular 14 identifies translations as one kind of derivative work. It explains that protection for a derivative work concerns the new authorship rather than extending protection to underlying public domain material. That distinction helps us avoid two opposite mistakes. An ancient source does not make every modern translation of it free to copy, and a new edition's copyright notice does not mean the editor has acquired ownership of the underlying public domain work. A page may also contain original notes or other editions whose status differs from the base text. The practical question is which material you intend to use. Name that layer before evaluating the notice. . ! This is an orientation to the office's explanation of United States copyright. Other jurisdictions and specific projects may require different analysis. The circular is not a universal permission slip.",
+        "passed": true
+      },
+      {
+        "section": 3,
+        "wordErrorRate": 0.0068,
+        "transcript": "A quotation policy has conditions. Crossway's permissions page offers an example of why the headline number is not the whole policy. Its standard guidelines for the English standard version include a verse limit, limits on the share of a biblical book and of the new work, notice requirements and exclusions. The page has separate sections for different uses, including audio. Read the applicable section and its current wording rather than carrying a remembered allowance from one project into another. Those conditions describe the publisher's stated policy. They are not a complete account of every possible legal basis for use, nor does discussing the policy here authorize a new recording or publication. The study habit is straightforward. Record the addition, the intended format, the relevant policy section, and the date you checked it. . A remembered number becomes useful only when the conditions attached to it remain visible.",
+        "passed": true
+      },
+      {
+        "section": 4,
+        "wordErrorRate": 0.0201,
+        "transcript": "Public domain text and a protected name. The World English Bible's own statement takes a different approach. It dedicates the translation to the public domain. The statement separately identifies the translation's name as a trademark and sets a naming condition. Changed text is not to be called the World English Bible. Read those two points together. Freedom to reuse the text and the way a name is used. identifies a faithful copy are different questions. The statement belongs to this translation. It should not be transferred automatically to a different edition commentary, image, or recording. On this site, the hosted edition records connect a source file with a write statement and explain the processing. Following that chain is more useful than assuming that every file on a free website has the same status. Begin with the exact material and its own record, then consider what you plan to do with it. .",
+        "passed": true
+      },
+      {
+        "section": 5,
+        "wordErrorRate": 0.0131,
+        "transcript": "Keep a small provenance note. Here is the exercise proposed by this overview. Choose one edition and save a short provenance note for your study. Its exact name, its source, the rights page, and the date of review. In another line, describe your proposed use. Are you reading privately, quoting a passage, publishing a study, or making a new audio recording? Those are questions to investigate, not a promise that the answers will be identical. Keep publisher policy separate from your understanding of the law, and keep the text separate from additions around it. If a source page has moved or changed, return to the publisher's current record instead of treating an old summary as final. The transcript links all the documents discussed. A Good Right's record leaves the next reader able to inspect the same document. evidence, identify the same addition, and see where further permission or jurisdiction specific advice may be needed.",
+        "passed": true
+      }
+    ]
+  },
+  "evidence-method": {
+    "sha256": "258935cf27f6483ba56d697b9539e678c892d25b0db6ddfec6884be39d159ef4",
+    "scriptSha256": "6107c6fa7d4e05cfd7bd03b4d97125bf459dd8b77184e2c0da171eb369d1f6ad",
+    "asrModel": "mlx-community/whisper-small-asr-fp16",
+    "checks": [
+      {
+        "section": 1,
+        "wordErrorRate": 0.0067,
+        "transcript": "Begin with a claim small enough to inspect. How we know, follow a claim to its limit, a source grounded overview with a synthetic narrator. A striking artifact, an ancient witness, and a modern experiment can all be called evidence. The interesting question is what each can establish. This overview proposes a simple habit. Name the source. Describe the observation. State the inference and leave the limit visible. Those categories are a reading framework, not a machine that produces certainty. We will use a museum record, Luke's Prologue, and a scientific committee's definitions as examples. They belong to different kinds of inquiry. Putting them beside each other is usefully only if we resist making them do the same job. Start with a claim, small, enough that another reader can point to the evidence with you. Then make the reasoning larger only as far as the evidence and the argument permit.",
+        "passed": true
+      },
+      {
+        "section": 2,
+        "wordErrorRate": 0.0068,
+        "transcript": "An inscription carries a bounded claim. The Israel Museum's record of its cradle of Christianity exhibition identifies an inscription bearing the name of Pontius Pilate. That gives us a concrete example to inspect, an object, a recorded name, and a museum's description. It does not give us a transcript of a trial or a proof of every event in a gospel. A larger claim would require additional evidence and reasoning. The difference matters because an impressive object can tempt us to skip those steps. Ask exactly which part of your conclusion depends on the name, which part depends on identifying the object and its context, and which part comes from another text. These are questions proposed by this overview. They keep the artifact useful without making it carry an entire historical or theological meaning. argument. An honest limit belongs beside the observation where the next reader can see both.",
+        "passed": true
+      },
+      {
+        "section": 3,
+        "wordErrorRate": 0.0,
+        "transcript": "A witness tells us what kind of account this is. Luke's opening says that earlier accounts and transmitted testimony lie behind the narrator's undertaking. It presents an ordered account for a reader and states a purpose for writing. Those are things the prologue tells us about its own project. They invite investigation into sources, arrangement, and audience. They do not simply by being stated independently verify every event that follows. Nor should we dismiss a text merely because its author has a purpose. The useful question is how that purpose shapes the evidence we have, compare what the writer claims to know, what the passage actually narrates, and what another witness could check. If two accounts agree, ask whether their relationship is understood before calling the agreement independent confirmation. That is a methodological question, not a verdict about every pair of ancient accounts. Let the specific comparison carry the argument.",
+        "passed": true
+      },
+      {
+        "section": 4,
+        "wordErrorRate": 0.0467,
+        "transcript": "Rechecking a result is a different task. The National Academy's report on reproducibility and replicability gives us a careful distinction for another kind of inquiry. In its terminology, computational reproducibility concerns obtaining consistent results with the same input data and computational procedures. Replication concerns studies addressing the same scientific question with their own data. The difference shows why access to a result is not the same as access to the process behind it. Keep those definitions within their stated scope. Repeating a calculation is not repeating an ancient event, and collecting new experimental data is not identical to reading a witness again. The comparison offered here is about making methods inspectible, not about importing a scientific label as an automatic verdict on history. So, what is the difference? Ask what someone else could actually repeat, inspect, or challenge in the inquiry before you decide what kind of confirmation the word repeat is supposed to mean.",
+        "passed": true
+      },
+      {
+        "section": 5,
+        "wordErrorRate": 0.0,
+        "transcript": "Leave a trail another reader can follow. Try the claim lab with one sentence you want to investigate. Record the source and the exact passage or object description. In a second line, write what is directly available to inspect. In a third, write the inference you are proposing with any assumptions it needs. Finish with one question the evidence does not settle. These are the study steps proposed here, not new historical findings. Then ask a second reader to follow the trail without your narration. If a step cannot be located, add the missing reference. If a conclusion needs a different kind of evidence, name that need rather than concealing it inside a confident adjective, an overview should make a claim easier to examine, not harder to question. Keep Source, Observation, Inference, and Limit together, and let the strength of the conclusion remain open to the work that supports it.",
+        "passed": true
+      }
+    ]
+  }
+}

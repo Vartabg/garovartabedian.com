@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedBy": "scripts/scriptures/check-source-urls.mjs",
-  "generatedAt": "2026-10-03T19:30:39.000Z",
+  "generatedAt": "2026-10-04T00:12:34.000Z",
   "maxAgeDays": 180,
   "note": "'blocked' means the publisher refuses scripted requests, not that the page is missing. 'dead' is a hard failure and fails the test suite.",
   "urls": {
@@ -237,6 +237,14 @@
       ],
       "note": "TypeError: fetch failed"
     },
+    "https://bible.org/download/netbible/ondemand/bybook/joe.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JOL:net-jol"
+      ]
+    },
     "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/2pe.pdf": {
       "verdict": "ok",
       "status": 200,
@@ -253,6 +261,30 @@
         "HAG:net-haggai"
       ]
     },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/jon.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JON:net-jon"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/mal.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "MAL:net-malachi"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/mic.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "MIC:net-mic"
+      ]
+    },
     "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/nah.pdf": {
       "verdict": "ok",
       "status": 200,
@@ -267,6 +299,14 @@
       "checkedAt": "2026-10-03T19:30:39.856Z",
       "citedBy": [
         "TIT:net-titus"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/zep.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "ZEP:net-zephaniah"
       ]
     },
     "https://bible.usccb.org/bible/1thessalonians/0": {
@@ -623,6 +663,30 @@
         "GEN:usccb-gen6"
       ]
     },
+    "https://bible.usccb.org/bible/habakkuk/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "HAB:usccb-hab-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/habakkuk/2": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "HAB:usccb-hab-2"
+      ]
+    },
+    "https://bible.usccb.org/bible/habakkuk/3": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "HAB:usccb-hab-3"
+      ]
+    },
     "https://bible.usccb.org/bible/haggai/0": {
       "verdict": "blocked",
       "status": 403,
@@ -645,6 +709,38 @@
       "checkedAt": "2026-10-03T10:39:53.151Z",
       "citedBy": [
         "HAG:usccb-haggai-2"
+      ]
+    },
+    "https://bible.usccb.org/bible/joel/0": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JOL:usccb-jol-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/joel/2": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JOL:usccb-jol-2"
+      ]
+    },
+    "https://bible.usccb.org/bible/joel/3": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JOL:usccb-jol-3"
+      ]
+    },
+    "https://bible.usccb.org/bible/joel/4": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JOL:usccb-jol-4"
       ]
     },
     "https://bible.usccb.org/bible/john/0": {
@@ -725,6 +821,38 @@
       "checkedAt": "2026-08-29T23:21:09.551Z",
       "citedBy": [
         "JHN:usccb-john8"
+      ]
+    },
+    "https://bible.usccb.org/bible/jonah/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JON:usccb-jon-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/jonah/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JON:usccb-jon-1"
+      ]
+    },
+    "https://bible.usccb.org/bible/jonah/2": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JON:usccb-jon-2"
+      ]
+    },
+    "https://bible.usccb.org/bible/jonah/4": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JON:usccb-jon-4"
       ]
     },
     "https://bible.usccb.org/bible/jude/0": {
@@ -888,6 +1016,14 @@
         "LUK:usccb-luke9"
       ]
     },
+    "https://bible.usccb.org/bible/malachi/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "MAL:usccb-malachi-intro"
+      ]
+    },
     "https://bible.usccb.org/bible/mark/0": {
       "verdict": "blocked",
       "status": 403,
@@ -942,6 +1078,22 @@
       "checkedAt": "2026-08-29T23:21:09.551Z",
       "citedBy": [
         "MAT:usccb-matthew6"
+      ]
+    },
+    "https://bible.usccb.org/bible/micah/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "MIC:usccb-mic-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/micah/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "MIC:usccb-mic-1"
       ]
     },
     "https://bible.usccb.org/bible/nahum/0": {
@@ -1075,12 +1227,44 @@
         "SIR:wisdom-parallelism"
       ]
     },
+    "https://bible.usccb.org/bible/zephaniah/0": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "ZEP:usccb-zephaniah-intro"
+      ]
+    },
+    "https://bible.usccb.org/bible/zephaniah/1": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "ZEP:usccb-zephaniah-1"
+      ]
+    },
+    "https://bible.usccb.org/bible/zephaniah/2": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "ZEP:usccb-zephaniah-2"
+      ]
+    },
     "https://biblia.com/books/lbd/offset/9484882": {
       "verdict": "ok",
       "status": 200,
       "checkedAt": "2026-09-29T16:20:18.742Z",
       "citedBy": [
         "EXO:lexham-glory"
+      ]
+    },
+    "https://classic.net.bible.org/passage.php?passage=Hab+2:4": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "HAB:net-hab-2-4"
       ]
     },
     "https://cojs.org/jubilees-_book_of-_james_vanderkam-_anchor_bible_dictionary_-ed-_david_noel_freedman-_doubleday-_new_york_1992/": {
@@ -1241,7 +1425,10 @@
       "status": 200,
       "checkedAt": "2026-10-03T10:39:53.151Z",
       "citedBy": [
-        "HAG:brenton-edition"
+        "HAB:brenton-edition",
+        "HAG:brenton-edition",
+        "JOL:brenton-edition",
+        "MIC:brenton-edition"
       ]
     },
     "https://en.wikipedia.org/wiki/Epistle_to_Philemon": {
@@ -1338,6 +1525,14 @@
       "checkedAt": "2026-10-03T19:30:39.856Z",
       "citedBy": [
         "NAM:luther-nahum-reception"
+      ]
+    },
+    "https://enterthebible.org/courses/zephaniah/lessons/bible-in-the-world-zephaniah/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "ZEP:luther-zephaniah-reception"
       ]
     },
     "https://ethiopianorthodox.org/english/canonical/books.html": {
@@ -1455,6 +1650,22 @@
         "JHN:csntm-p75"
       ]
     },
+    "https://museum.imj.org.il/pdf/dss-english.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "HAB:imj-hab"
+      ]
+    },
+    "https://new.bible.org/article/introduction-book-malachi": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "MAL:malick-malachi-intro"
+      ]
+    },
     "https://oyc.yale.edu/religious-studies/rlst-152/lecture-12": {
       "verdict": "ok",
       "status": 200,
@@ -1495,6 +1706,14 @@
         "JUD:greek-jude"
       ]
     },
+    "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hab.xml": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "HAB:hebrew-hab"
+      ]
+    },
     "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hag.xml": {
       "verdict": "ok",
       "status": 200,
@@ -1503,12 +1722,52 @@
         "HAG:hebrew-haggai"
       ]
     },
+    "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Joel.xml": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JOL:hebrew-jol"
+      ]
+    },
+    "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Jonah.xml": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JON:hebrew-jon"
+      ]
+    },
+    "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Mal.xml": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "MAL:hebrew-malachi"
+      ]
+    },
+    "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Mic.xml": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "MIC:hebrew-mic"
+      ]
+    },
     "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Nah.xml": {
       "verdict": "ok",
       "status": 200,
       "checkedAt": "2026-10-03T19:30:39.856Z",
       "citedBy": [
         "NAM:hebrew-nahum"
+      ]
+    },
+    "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Zeph.xml": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "ZEP:hebrew-zephaniah"
       ]
     },
     "https://resolve.cambridge.org/core/product/57CC9DC468A990956AC6AE1EAE7679FB/core-reader": {
@@ -1557,6 +1816,14 @@
       "checkedAt": "2026-08-29T23:21:09.551Z",
       "citedBy": [
         "MRK:geiger-syntax"
+      ]
+    },
+    "https://www.britishmuseum.org/collection/galleries/sudan-egypt-and-nubia": {
+      "verdict": "blocked",
+      "status": 403,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "ZEP:bm-kush"
       ]
     },
     "https://www.britishmuseum.org/exhibitions/i-am-ashurbanipal-king-world-king-assyria": {
@@ -1795,6 +2062,14 @@
         "JHN:manchester-p52"
       ]
     },
+    "https://www.esv.org/resources/esv-global-study-bible/introduction-to-joel/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JOL:esv-jol-intro"
+      ]
+    },
     "https://www.fortresspress.com/store/product/9780800660741/1-Enoch-1": {
       "verdict": "ok",
       "status": 200,
@@ -1924,6 +2199,14 @@
         "LEV:thetorah-neighbor"
       ]
     },
+    "https://www.thetorah.com/article/memories-evoked-by-yom-shoah-umeshoah": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-03T23:09:18.413Z",
+      "citedBy": [
+        "ZEP:ben-zvi-zephaniah"
+      ]
+    },
     "https://www.thetorah.com/article/the-torahs-exodus": {
       "verdict": "ok",
       "status": 200,
@@ -1938,6 +2221,14 @@
       "checkedAt": "2026-08-29T23:21:09.551Z",
       "citedBy": [
         "LEV:thetorah-holiness"
+      ]
+    },
+    "https://www.tyndalebulletin.org/article/30568-jonah-and-genre.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-10-04T00:12:34.082Z",
+      "citedBy": [
+        "JON:alexander-genre"
       ]
     },
     "https://yalebiblestudy.org/courses/leviticus-numbers-and-deuteronomy/lessons/leviticus-part-2-study-guide/": {

@@ -6,7 +6,7 @@ test("Jubilees context connects the book briefing, chapter movement, and Charles
   await expect(page.getByRole("heading", { name: "How the text reached you" })).toBeVisible();
 
   await page.goto("/scriptures/ethiopian/JUB/1");
-  const context = page.getByRole("complementary", { name: "Before you read" });
+  const context = page.getByRole("complementary", { name: "Chapter context" });
   await expect(context).toBeVisible();
   await expect(context).toContainText("Editorial context");
   await context.getByText("Where this chapter fits", { exact: true }).click();
@@ -76,9 +76,12 @@ test("the Jubilees chapter picker reaches chapter 50 and stops at the book bound
 
   const picker = page.getByRole("dialog", { name: "Go to", exact: true });
   await expect(
-    picker.getByRole("link", { name: /^Jubilees chapter \d+$/ }),
+    picker.getByRole("link", { name: /^Jubilees \d+, \d+ verses?$/ }),
   ).toHaveCount(50);
-  await picker.getByRole("link", { name: "Jubilees chapter 50", exact: true }).click();
+  await expect(
+    picker.getByRole("link", { name: /^Jubilees 18, \d+ verses?$/ }),
+  ).toHaveAttribute("aria-current", "page");
+  await picker.getByRole("link", { name: /^Jubilees 50, \d+ verses?$/ }).click();
 
   await expect(page).toHaveURL(/\/scriptures\/ethiopian\/JUB\/50(?:\?t=charles)?$/);
   const chapter = page.getByRole("article", { name: "Jubilees chapter 50" });

@@ -4,6 +4,7 @@ import Link from "next/link";
 import WorldSwitcher from "../_components/WorldSwitcher";
 import { WorldGuide, WorldNextSteps } from "../_components/WorldGuide";
 import WorldHeader from "../_components/WorldHeader";
+import SiteFooterLinks from "../_components/SiteFooterLinks";
 import "../styles/worlds-shared.css";
 import "../styles/church.css";
 
@@ -83,6 +84,7 @@ export default function ChurchLayout({ children }: { children: React.ReactNode }
               dark chapters stated as plainly as bright ones
             </Link>
           </span>
+          <SiteFooterLinks />
         </div>
       </footer>
       <WorldSwitcher />

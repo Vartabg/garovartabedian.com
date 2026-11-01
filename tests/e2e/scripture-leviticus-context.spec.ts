@@ -6,7 +6,7 @@ test("Leviticus context preserves its checked edition across the chapter five/si
   await page.goto("/scriptures/orthodox/LEV/6?t=brenton");
   await expect(page.locator(".scr-rh .scr-read-meta")).toContainText("Brenton Septuagint");
   await expect(page.locator("#chapter-text")).toContainText(brenton.chapters[5][1]);
-  const context = page.getByRole("complementary", { name: "Before you read" });
+  const context = page.getByRole("complementary", { name: "Chapter context" });
   await expect(context).toContainText("References use World English Bible.");
   await context.locator('a[href^="/scriptures/orthodox/LEV/6?t=web#v"]').first().click();
   await expect(page).toHaveURL(/\/LEV\/6\?t=web#v\d+/);
@@ -25,7 +25,7 @@ test("Leviticus context preserves its checked edition across the chapter five/si
 test("Leviticus closing context connects to Numbers and stays usable on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/scriptures/protestant/LEV/27");
-  const context = page.getByRole("complementary", { name: "Before you read" });
+  const context = page.getByRole("complementary", { name: "Chapter context" });
   await context.getByText("Where this chapter fits", { exact: true }).click();
   await expect(context).toContainText("Numbers");
   await expect(context.locator('a[href*="/LEV/28"]')).toHaveCount(0);

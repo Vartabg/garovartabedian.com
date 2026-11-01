@@ -5,6 +5,7 @@ import { EARLY_TEXTS, ERAS } from "../src/lib/early/client";
 import canons from "../public/scriptures/canons.json";
 import { PREVIEW_TOPIC_LIMIT, ssgBookParams, ssgTopicIds, topicCanonicalPath } from "../src/lib/scriptures/canonical";
 import { WORLD_GUIDES } from "../src/lib/world-guidance";
+import { SITE_ROUTES } from "../src/lib/site-navigation";
 
 describe("sitemap", () => {
   const entries = sitemap();
@@ -23,6 +24,21 @@ describe("sitemap", () => {
     assert.ok(paths.has("/scriptures/topics"));
     assert.ok(paths.has("/scriptures/graph"));
     assert.ok(paths.has("/scriptures/parallels"));
+  });
+
+  it("includes the complete public Scripture catalog once, without local workspaces", () => {
+    for (const route of SITE_ROUTES.filter((entry) => entry.href.startsWith("/scriptures/"))) {
+      assert.ok(paths.has(route.href), `missing public study destination ${route.href}`);
+    }
+    assert.equal(new Set(entries.map((entry) => entry.url)).size, entries.length);
+    assert.ok(!paths.has("/scriptures/find"));
+    assert.ok(!paths.has("/scriptures/research"));
+    // Adding canonical destinations must preserve the existing child records.
+    for (const id of ["sacrifice-of-the-son", "adam-fall-and-iblis", "jude-enoch-quotation", "son-of-man"]) {
+      assert.ok(paths.has(`/scriptures/parallels/${id}`));
+    }
+    const graph = entries.find((entry) => entry.url.endsWith("/scriptures/graph"));
+    assert.equal(graph?.priority, 0.8, "de-duplication retains the existing route priority");
   });
 
   it("includes every Writings era landing", () => {

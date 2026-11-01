@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { StonePlateMeta } from "@/lib/jesus/stone-plates";
 import type {
   ChristianWitness,
@@ -42,6 +43,7 @@ export default function HistoryRoom({
   plates,
   essays = [],
   sources = [],
+  audioOverview,
 }: {
   christianWitnesses: ChristianWitness[];
   items: HistoryItem[];
@@ -49,6 +51,7 @@ export default function HistoryRoom({
   plates: Record<string, StonePlateMeta>;
   essays?: JesusEssay[];
   sources?: JesusHistorySource[];
+  audioOverview?: ReactNode;
 }) {
   const glossSeen = new Map<string, string>();
   const jewish = items.filter((item) => item.lane === "Jewish");
@@ -75,6 +78,7 @@ export default function HistoryRoom({
         </div>
       </section>
 
+      {audioOverview}
       <SourceBasis id="jesus-history" />
       <InkAndStone christianWitnesses={christianWitnesses} items={items} stones={stones} />
 
@@ -180,7 +184,7 @@ export default function HistoryRoom({
               textDecoration: "none",
             }}
           >
-            <span>Open Jesus Research Dossier Engine</span>
+            <span>Open the research worksheets</span>
             <span aria-hidden="true">→</span>
           </Link>
         </div>

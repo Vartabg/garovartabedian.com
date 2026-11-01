@@ -1,0 +1,18 @@
+.demo { margin: 2.5rem 0; padding: clamp(1rem, 3vw, 2rem); border: 1px solid currentColor; border-radius: .6rem; scroll-margin-top: 6rem; }
+.demo h2 { margin-top: .5rem; }
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); list-style: none; padding: 0; gap: .5rem; margin: 1.5rem 0; }
+.steps li { min-width: 0; padding: .6rem .3rem; border-bottom: 2px solid currentColor; opacity: .6; overflow-wrap: anywhere; }
+.steps li[aria-current] { opacity: 1; font-weight: 700; border-bottom-width: 4px; }
+.steps span { display: block; font-size: .8em; }
+.panels { display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.25rem; }
+.message, .explanation { min-width: 0; padding: 1rem; border: 1px solid currentColor; border-radius: .35rem; }
+.message h3 { margin-top: .5rem; }
+.status { font-weight: 700; }
+.controls { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.25rem; }
+.controls button { white-space: normal; min-height: 44px; }
+.controls button:disabled { cursor: default; opacity: .45; }
+.fields { display: grid; gap: .75rem; }
+.fields > div { padding: 1rem 0; border-bottom: 1px solid currentColor; }
+.fields dt { font-weight: 700; }
+.fields dd { margin: .35rem 0 0; }
+@media (max-width: 700px) { .panels { grid-template-columns: 1fr; } .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

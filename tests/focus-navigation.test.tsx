@@ -57,7 +57,7 @@ test("site navigation keeps direct links minimal and houses About and Work with 
 
   assert.deepEqual(directLinks, [
     { href: "/", text: "Home" },
-    { href: "/scriptures", text: "Scripture" },
+    { href: "/scriptures", text: "Scriptures" },
     { href: "/jesus", text: "Jesus" },
   ]);
 
@@ -124,7 +124,10 @@ test("the homepage leads with Jesus, Scripture, and the shape of the record", ()
     markup,
     /class="[^"]*\bst-intro-primary\b[^"]*"[^>]*href="\/jesus\/words"/,
   );
-  assert.match(markup, /<h2[^>]*>The text itself\.<\/h2>/);
+  // Garo, 2026-10-15: "keep the top screen and one directory." The Scripture
+  // links and the reading walks repeated the hero buttons and the doors.
+  assert.doesNotMatch(markup, /The text itself\./);
+  assert.doesNotMatch(markup, /id="paths"/);
   // The worlds heading names what the hero's "Explore the whole record" link
   // jumps to, so the link and the place it lands read the same.
   assert.match(markup, /<h2[^>]*id="rail-h"[^>]*>The whole record\.<\/h2>/);
@@ -160,29 +163,25 @@ test("the homepage leads with Jesus, Scripture, and the shape of the record", ()
   assert.doesNotMatch(markup, /Garo Vartabedian<\/a>/);
 });
 
-test("the homepage stays a page of headings and links", () => {
-  // Garo, 2026-10-03: "its all the fluff." The front door was 759 words; the
-  // walks alone carried 312 in lines and notes nobody had asked for. A section
-  // opens on its heading — no kicker above it, no paragraph introducing it —
-  // and neither the Scripture links nor the walk steps carry a blurb.
+test("the homepage keeps discovery concise and the eight worlds scannable", () => {
+  // The approved discovery release adds four real tool entrances and an
+  // engineer lens. Keep a bounded copy budget rather than restoring long walks.
   const markup = renderToStaticMarkup(<StoryHome />);
   const main = markup.match(/<main[\s\S]*<\/main>/);
   assert.ok(main, "the front door has its main landmark");
 
-  for (const heading of ["st-scripture-heading", "st-paths-heading", "st-worlds-heading"]) {
+  for (const heading of ["st-worlds-heading"]) {
     const block = main[0].match(
       new RegExp(`class="${heading}"[^>]*>([\\s\\S]*?)</(?:div|header)>`),
     );
     assert.ok(block, `${heading} is on the page`);
     assert.doesNotMatch(block[1], /<p\b/, `${heading} carries no kicker or intro paragraph`);
   }
-  assert.doesNotMatch(main[0], /st-path-line/, "a walk is its title and its steps");
   assert.doesNotMatch(main[0], /<small>/, "links carry no blurb beneath them");
 
-  // The page is 355 words as rendered. The budget leaves room to say plainly
-  // what the site is, and not much else.
+  // Includes both lenses in the server markup; only one is visible at a time.
   const words = main[0].replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
-  assert.ok(words <= 400, `the front door grew to ${words} words (budget 400)`);
+  assert.ok(words <= 520, `the front door grew to ${words} words (budget 520)`);
 });
 
 test("centering a world changes only the switcher's horizontal track", () => {

@@ -1,0 +1,9 @@
+# John’s figures in the Parables room
+
+Baseline: origin/master 8fdb5e70. Goal: make a sourced selection of John’s parables and figures available to read in the existing room, without treating them as direct parallels to other Gospel accounts.
+
+Use A. M. Hunter’s 12 passages as reproduced in https://archive.gci.org/articles/what-jesus-parables-reveal/ : John 3:8, 3:29, 4:35–38, 5:19–20, 8:35, 10:1–5, 11:9–10, 12:24, 12:35, 14:2–4, 15:1–8, and 16:20–24. Extend the sheepfold selection to John 10:1–18 to include the door and good shepherd images named in https://www.scielo.org.za/scielo.php?lng=en&nrm=iso&pid=S2305-08532019000100042&script=sci_arttext&tlng=en. Label John 3:29 as John the Baptist’s words. State that this list is based on the 12 passages attributed to Hunter by GCI; separately identify the John 10 extension and its source. State that classifications vary and John uses the term paroimia rather than parabolē. Do not claim these passages exhaust John’s figurative language.
+
+Use a separate typed JSON-backed list, and adapt the existing Parable entry rendering and passage loader to reuse scripture panels, Greek text, loading and retry handling. Provide a separate section with a source note; preserve existing categories, direct hash links and Thomas labeling. Add the figures to Find using the same stable #parable-ID contract; ensure links open on arrival and Find events. Include the John entries in the introductory count without calling all of them Gospel parables. Names and reference boundaries must match the text.
+
+Checks: validate every reference resolves at both ends, all IDs are unique across lists, Find links resolve and hash navigation opens the right entry, correct speaker and scholarly scope visible, loading and retry work, and no false Snodgrass/Trench source attribution. Run repository checks, browser sanity, accessibility gate, and normal security/push/release workflow.

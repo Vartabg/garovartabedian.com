@@ -180,7 +180,7 @@ test("the world entrance leads to the collection and all three complete story ro
   for (const story of [{ slug: "open-his-eyes", title: "Open his eyes." }, ...stories]) {
     await expect(page.getByRole("heading", { level: 1, name: "Visual stories.", exact: true })).toBeVisible();
     const route = `${COLLECTION}/${story.slug}`;
-    const card = page.locator(`a[href="${route}"]`);
+    const card = page.locator(`.story-collection-story[href="${route}"]`);
     await expect(card).toHaveAccessibleName(new RegExp(story.title.replace(/\.$/, "")));
     await card.focus();
     await card.press("Enter");

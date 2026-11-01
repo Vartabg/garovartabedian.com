@@ -5,8 +5,10 @@ Route-level styles so the homepage does not pay for world-room CSS.
 | File | Loaded from | Owns |
 |------|-------------|------|
 | `../globals.css` | root layout | Tailwind entry + imports below |
+| `continuity.css` | core | Shared breadcrumbs, section guides, onward paths, and footer links; explicit entrance/room layouts |
+| `map-controls.css` | core | Map instructions, native pickers, record links, and selection status |
 | `core.css` | globals | Tokens, layout, portfolio skins (Story/Lab/Terminal/…), glossary, wayfinding, Fraunces world type (shared with `.clean`) |
-| `worlds-shared.css` | globals | Cards, inline plates (`.ew-section-plate`), WorldPreview, shared scr-* chrome, paper grain |
+| `worlds-shared.css` | world layouts | Cards, inline plates (`.ew-section-plate`), WorldPreview, shared scr-* chrome, paper grain |
 | `scriptures.css` | `scriptures/layout` | `.world-scr` + reader / search / shelf |
 | `jesus.css` | `jesus/layout` | `.world-jesus`, life map, red-letter UI |
 | `apostles.css` | `apostles/layout` | `.world-apostles`, records / sending chart |

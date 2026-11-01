@@ -6,8 +6,11 @@ for (const route of ["/early/1clement", "/jesus/history/belief-and-growth", "/ap
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto(route);
     await page.addScriptTag({ path: path.resolve("node_modules/axe-core/axe.min.js") });
-    await page.getByRole("button", { name: "Open reading and accessibility settings" }).click();
-    const settings = page.getByRole("dialog", { name: "Reading & accessibility" });
+    // The chapter reader's own Aa opens the same appearance panel in its
+    // Reading sheet; the floating site-wide Aa is not repeated there.
+    const chapter = route.startsWith("/scriptures/");
+    await page.getByRole("button", { name: chapter ? "Aa — Reading and accessibility settings: size, spacing, face, version" : "Open reading and accessibility settings" }).click();
+    const settings = page.getByRole("dialog", { name: chapter ? "Reading" : "Reading & accessibility" });
     for (const theme of ["system", "light", "warm", "dark"]) {
       await settings.getByLabel("Page theme", { exact: true }).selectOption(theme);
       const violations = await page.evaluate(async () => {
@@ -20,7 +23,7 @@ for (const route of ["/early/1clement", "/jesus/history/belief-and-growth", "/ap
     await settings.getByText("Accessibility options", { exact: true }).click();
     await settings.getByLabel("Higher contrast", { exact: true }).check();
     await settings.getByLabel("Reduce motion", { exact: true }).check();
-    await settings.getByRole("button", { name: "Close accessibility settings" }).click();
+    await settings.getByRole("button", { name: chapter ? "Close Reading" : "Close accessibility settings" }).click();
     await page.emulateMedia({ forcedColors: "active" });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
     await expect(page.getByRole("heading", { level: 1 }).first()).toBeVisible();

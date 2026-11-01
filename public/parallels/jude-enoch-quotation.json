@@ -15,12 +15,12 @@
       "id": "jude-14-15",
       "title": "Jude 14–15 (World English Bible)",
       "shortTitle": "Jude 14–15",
-      "language": "Hebrew / English",
+      "language": "Greek / English",
       "isRtl": false,
       "dates": {
-        "composition": "c. 10th–6th century BCE",
-        "earliestManuscript": "4QGen-b (c. 1st century BCE)",
-        "edition": "Westminster Leningrad Codex / World English Bible"
+        "composition": "Not assessed in this comparison",
+        "earliestManuscript": "Not assessed in this comparison",
+        "edition": "World English Bible; source-language reference: SBL Greek New Testament + MorphGNT"
       },
       "primaryTradition": "Christian New Testament",
       "corpusEditionId": "web-bible",
@@ -51,11 +51,11 @@
         "jude-14-15": {
           "witnessId": "jude-14-15",
           "locator": {
-            "corpusId": "hebrew-bible",
+            "corpusId": "new-testament",
             "editionId": "web-bible",
             "section": "JUD",
             "passageRef": "Jude 14",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Greek"
           },
           "basis": "explicit",
           "summary": "Jude quotes Enoch's prophecy: the Lord comes with ten thousands of his holy ones.",
@@ -91,11 +91,11 @@
         "jude-14-15": {
           "witnessId": "jude-14-15",
           "locator": {
-            "corpusId": "hebrew-bible",
+            "corpusId": "new-testament",
             "editionId": "web-bible",
             "section": "JUD",
             "passageRef": "Jude 15",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Greek"
           },
           "basis": "explicit",
           "summary": "To execute judgment on all and convict all the ungodly of their works and hard words.",
@@ -130,11 +130,11 @@
         "jude-14-15": {
           "witnessId": "jude-14-15",
           "locator": {
-            "corpusId": "hebrew-bible",
+            "corpusId": "new-testament",
             "editionId": "web-bible",
             "section": "JUD",
             "passageRef": "Jude 14",
-            "originalLanguage": "Hebrew"
+            "originalLanguage": "Greek"
           },
           "basis": "explicit",
           "summary": "Jude attributes the prophecy to 'Enoch, the seventh from Adam.'",
@@ -237,8 +237,9 @@
     "reviewStatus": "agent-reviewed",
     "reviewer": "Claude Sourcing & Review Pass (garovartabedian.com)",
     "rubricVersion": "parallels-v1.0",
-    "reviewedContentHash": "8254aacfdb5d65fc84aff65ec16718602d5f15962a8f2101bb392066537528d5",
+    "reviewedContentHash": "c70fba30e9d7db03b42c3ee74f5388d5c82665b46f96477e7769d8ab0368bc29",
     "reviewedAt": "2026-09-01T01:34:50.684Z",
-    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation"
+    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation",
+    "contentHashScope": "witnesses-slots-edges-reception-v1"
   }
 }

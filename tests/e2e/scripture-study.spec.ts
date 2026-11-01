@@ -1,43 +1,61 @@
 import { expect, test, type Page } from "@playwright/test";
 
-test("the chapter margin turns reading intent into the right depth", async ({
+test("the chapter text comes first and the study tools follow it", async ({
   page,
 }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.goto("/scriptures/protestant/LEV/16");
+
+  // Leviticus 16 carries a chapter context, the longest stack that used to
+  // sit above verse 1. Only the title, edition and breadcrumb may now.
+  const verseOne = await page.locator("#v1").boundingBox();
+  expect(verseOne?.y).toBeLessThan(812 * 0.75);
+  const textEnd = await page.locator("#chapter-text").evaluate(
+    (el) => el.getBoundingClientRect().bottom + scrollY,
+  );
+  for (const tool of [
+    page.getByRole("complementary", { name: "Chapter context" }),
+    page.getByRole("button", { name: "Save chapter offline" }),
+    page.getByRole("navigation", { name: "Chapter study tools" }),
+    page.getByRole("button", { name: /Cheat Sheet — Leviticus 16/ }),
+  ]) {
+    const top = await tool.evaluate((el) => el.getBoundingClientRect().top + scrollY);
+    expect(top).toBeGreaterThan(textEnd);
+  }
+
+  // The next chapter is the first thing after the last verse.
+  const onward = page.getByRole("navigation", { name: "Continue reading" });
+  await expect(onward.getByRole("link", { name: "Leviticus 17 →" })).toBeVisible();
+  const onwardTop = await onward.evaluate((el) => el.getBoundingClientRect().top + scrollY);
+  expect(onwardTop - textEnd).toBeLessThan(120);
+});
+
+test("study tools below the text open their depth in place", async ({ page }) => {
   await page.goto("/scriptures/protestant/JHN/3");
 
-  const margin = page.getByRole("complementary", {
-    name: "John 3 study notes",
-  });
-  await expect(margin).toBeVisible();
-
-  // Wide screens show the glosses with their actions; phones show the
-  // four-way strip. Either way the same handlers run.
-  const wide = await margin.locator(".scr-gloss-body").isVisible();
-  const understand = wide
-    ? margin.getByRole("button", { name: /cheat sheet/i })
-    : margin.getByRole("button", { name: /Understand/ });
-  const connect = wide
-    ? margin.getByRole("button", { name: /cross-reference map/i })
-    : margin.getByRole("button", { name: /Trace connections/ });
-  const source = wide
-    ? margin.getByRole("button", { name: /original language/i })
-    : margin.getByRole("button", { name: /Source/ });
-
-  await understand.click();
+  await page.getByRole("button", { name: /Cheat Sheet — John 3/ }).click();
   await expect(
     page.getByRole("button", { name: /Cheat Sheet — John 3/ }),
   ).toHaveAttribute("aria-expanded", "true");
   await expect(page.locator(".scr-guide-panel")).toBeVisible();
 
-  await connect.click();
+  await page.getByRole("button", { name: /Cross-reference map/ }).click();
   await expect(page.locator(".scr-wide-toggle")).toHaveAttribute("aria-expanded", "true");
   await expect(page.locator(".scr-threads")).toBeVisible();
 
-  await source.click();
+  await page.getByRole("button", { name: "Show the original language" }).click();
   await expect(page).toHaveURL(/\/scriptures\/protestant\/JHN\/3\?t=web&o=1$/);
   await expect(
     page.getByRole("complementary", { name: "Original-language edition" }),
   ).toBeVisible();
+});
+
+test("paging runs across a book boundary in the same version", async ({ page }) => {
+  await page.goto("/scriptures/protestant/MAL/4?t=kjv");
+  await expect(page.locator(".scr-rh .scr-read-meta")).toContainText("King James Version");
+  await page.getByRole("link", { name: "Next book — Matthew 1" }).click();
+  await expect(page).toHaveURL(/\/scriptures\/protestant\/MAT\/1\?t=kjv$/);
+  await expect(page.getByRole("link", { name: "Previous book — Malachi 4" })).toBeVisible();
 });
 
 /** ReaderClient writes scr:trail:v1 in an effect; don't leave until it lands. */

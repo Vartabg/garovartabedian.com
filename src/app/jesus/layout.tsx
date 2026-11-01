@@ -4,6 +4,7 @@ import Link from "next/link";
 import WorldSwitcher from "../_components/WorldSwitcher";
 import { WorldGuide, WorldNextSteps } from "../_components/WorldGuide";
 import WorldHeader from "../_components/WorldHeader";
+import SiteFooterLinks from "../_components/SiteFooterLinks";
 import "../styles/worlds-shared.css";
 import "../styles/jesus.css";
 
@@ -50,7 +51,8 @@ const STRUCTURED_DATA = {
   hasPart: [
     { "@type": "Article", name: "Overview", url: "https://garovartabedian.com/jesus" },
     { "@type": "Article", name: "His words", url: "https://garovartabedian.com/jesus/words" },
-    { "@type": "Article", name: "Synoptic harmony", url: "https://garovartabedian.com/jesus/harmony" },
+    { "@type": "Article", name: "Parables", url: "https://garovartabedian.com/jesus/parables" },
+    { "@type": "Article", name: "Gospels word by word", url: "https://garovartabedian.com/jesus/harmony" },
     { "@type": "Article", name: "His life", url: "https://garovartabedian.com/jesus/life" },
     {
       "@type": "Article",
@@ -59,10 +61,10 @@ const STRUCTURED_DATA = {
     },
     { "@type": "Article", name: "Prophecy", url: "https://garovartabedian.com/jesus/prophecy" },
     { "@type": "Article", name: "History", url: "https://garovartabedian.com/jesus/history" },
-    { "@type": "Article", name: "World views", url: "https://garovartabedian.com/jesus/lens" },
+    { "@type": "Article", name: "How the world sees him", url: "https://garovartabedian.com/jesus/lens" },
     {
       "@type": "Article",
-      name: "NotebookLM Research Dossier Engine",
+      name: "Research worksheets",
       url: "https://garovartabedian.com/jesus/dossier",
     },
   ],
@@ -93,6 +95,7 @@ export default function JesusLayout({ children }: { children: React.ReactNode })
               Sources
             </Link>
           </span>
+          <SiteFooterLinks />
         </div>
       </footer>
       <WorldSwitcher />

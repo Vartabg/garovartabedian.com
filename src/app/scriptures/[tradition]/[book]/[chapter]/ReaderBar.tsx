@@ -16,8 +16,11 @@ import Link from "next/link";
 export default function ReaderBar({
   label,
   prevHref,
+  prevLabel = "Previous chapter",
   nextHref,
+  nextLabel = "Next chapter",
   onPick,
+  onPickIntent,
   onSettings,
   onListen,
   listening,
@@ -28,8 +31,13 @@ export default function ReaderBar({
   /** Short current position, e.g. "John 3". */
   label: string;
   prevHref: string | null;
+  /** Accessible name for the back arrow; it names the book when it crosses one. */
+  prevLabel?: string;
   nextHref: string | null;
+  nextLabel?: string;
   onPick: () => void;
+  /** A pointer or focus heading for the picker: load it before the tap lands. */
+  onPickIntent?: () => void;
   onSettings: () => void;
   onListen: () => void;
   listening: boolean;
@@ -40,7 +48,7 @@ export default function ReaderBar({
   return (
     <nav className="scr-bar" aria-label="Reading controls">
       {prevHref ? (
-        <Link className="scr-bar-btn" href={prevHref} rel="prev" aria-label="Previous chapter">
+        <Link className="scr-bar-btn" href={prevHref} rel="prev" aria-label={prevLabel}>
           <span aria-hidden="true">&larr;</span>
         </Link>
       ) : (
@@ -53,6 +61,9 @@ export default function ReaderBar({
         type="button"
         className="scr-bar-where"
         onClick={onPick}
+        onPointerEnter={onPickIntent}
+        onFocus={onPickIntent}
+        onTouchStart={onPickIntent}
         aria-expanded={pickOpen}
         aria-label={`${label} — go to another chapter or book`}
       >
@@ -63,7 +74,7 @@ export default function ReaderBar({
       </button>
 
       {nextHref ? (
-        <Link className="scr-bar-btn" href={nextHref} rel="next" aria-label="Next chapter">
+        <Link className="scr-bar-btn" href={nextHref} rel="next" aria-label={nextLabel}>
           <span aria-hidden="true">&rarr;</span>
         </Link>
       ) : (
@@ -90,18 +101,10 @@ export default function ReaderBar({
         className="scr-bar-btn scr-bar-aa"
         onClick={onSettings}
         aria-expanded={settingsOpen}
-        aria-label="Aa — Reading settings: size, spacing, face, version"
+        aria-label="Aa — Reading and accessibility settings: size, spacing, face, version"
       >
         Aa
       </button>
-
-      <Link
-        className="scr-bar-btn scr-bar-worlds"
-        href="/#worlds"
-        aria-label="Open all eight worlds"
-      >
-        Worlds
-      </Link>
     </nav>
   );
 }

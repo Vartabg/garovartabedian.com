@@ -16,23 +16,30 @@ export type OfflineChapter = {
 };
 
 async function installReader() {
-  const registration = await navigator.serviceWorker.register("/scripture-sw.js", { scope: "/scripture-reader/" });
-  if (registration.active?.state === "activated") return;
-  const worker = registration.installing ?? registration.waiting ?? registration.active;
-  if (!worker) throw new Error("Reader installation did not start");
   await new Promise<void>((resolve, reject) => {
+    let settled = false;
+    let worker: ServiceWorker | null = null;
     const finish = (error?: Error) => {
+      if (settled) return;
+      settled = true;
       clearTimeout(timer);
-      worker.removeEventListener("statechange", changed);
+      worker?.removeEventListener("statechange", changed);
       if (error) reject(error); else resolve();
     };
     const changed = () => {
-      if (worker.state === "activated") finish();
-      if (worker.state === "redundant") finish(new Error("Reader installation failed"));
+      if (worker?.state === "activated") finish();
+      if (worker?.state === "redundant") finish(new Error("Reader installation failed"));
     };
+    // Registration can stall before there is an installing worker to observe.
     const timer = setTimeout(() => finish(new Error("Reader installation timed out")), 20_000);
-    worker.addEventListener("statechange", changed);
-    changed();
+    void Promise.resolve().then(() => navigator.serviceWorker.register("/scripture-sw.js", { scope: "/scripture-reader/" })).then(registration => {
+      if (settled) return;
+      if (registration.active?.state === "activated") { finish(); return; }
+      worker = registration.installing ?? registration.waiting ?? registration.active;
+      if (!worker) { finish(new Error("Reader installation did not start")); return; }
+      worker.addEventListener("statechange", changed);
+      changed();
+    }).catch(error => finish(error instanceof Error ? error : new Error("Reader installation failed")));
   });
 }
 

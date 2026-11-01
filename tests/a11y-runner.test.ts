@@ -4,6 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
 import { desktopConfig } from "lighthouse";
+import { initializeConfig } from "lighthouse/core/config/config.js";
 import { routes } from "../scripts/a11y/config.mjs";
 import { createLighthouseAuditor, validateLighthouseResult } from "../scripts/a11y/lighthouse.mjs";
 import { partitionRoutes, startAuditWorker, validateWorkerResult } from "../scripts/a11y/pool.mjs";
@@ -43,13 +44,38 @@ function mockAuditor(outcomes: unknown[]) {
 }
 
 test("one or two workers audit every route exactly once, including the visual story and source tools", () => {
-  assert.equal(routes.length, 44);
+  assert.equal(routes.length, 72);
+  assert.ok(routes.includes("/scriptures/word-bridge"));
+  assert.ok(routes.includes("/scriptures/protestant/JHN/3?t=web&study=word-bridge#v16"));
   for (const slug of ["come-and-eat", "peace-be-with-you", "every-language"]) {
     assert.ok(routes.includes(`/apostles/stories/${slug}`));
   }
+  assert.ok(routes.includes("/early/library/gospel-thomas/saying-64"));
+  assert.ok(routes.includes("/early/library/secret-book-james/prophecies-and-parables#p10"));
+  assert.ok(routes.includes("/jesus/parables#parable-james-grain-wheat"));
+  assert.ok(routes.includes("/jesus/parables#parable-james-foreigners"));
+  assert.ok(routes.includes("/jesus/parables#parable-hermas-elm-vine"));
+  assert.ok(routes.includes("/jesus/parables#parable-clement-two-one"));
+  assert.ok(routes.includes("/jesus/parables#parable-didache-two-ways"));
+  assert.ok(routes.includes("/jesus/parables#parable-acts-thomas-prayer"));
+  assert.ok(routes.includes("/jesus/parables#parable-synoptic-yoke"));
+  assert.ok(routes.includes("/jesus/parables#parable-acts-thomas-tower"));
+  assert.ok(routes.includes("/jesus/parables#parable-synoptic-physician-sick"));
+  assert.ok(routes.includes("/jesus/parables#parable-barnabas-cornerstone"));
+  assert.ok(routes.includes("/jesus/parables#parable-wicked-tenants"));
+  assert.ok(routes.includes("/jesus/parables#parable-thomas-empty-jar"));
+  assert.ok(routes.includes("/jesus/parables#parable-john-vine-branches"));
+  assert.ok(routes.includes("/jesus/parables#parable-john-bread-of-life"));
+  assert.ok(routes.includes("/jesus/parables#parable-synoptic-lamp"));
   assert.ok(routes.includes("/work/accessibility"));
+  assert.ok(routes.includes("/work/job-report"));
+  assert.ok(routes.includes("/work/landing-page"));
+  assert.ok(routes.includes("/work/excel-handler"));
   assert.ok(routes.includes("/word/free"));
   assert.ok(routes.includes("/jesus/words"));
+  for (const room of ["harmony", "prophecy", "history", "lens", "parables"]) {
+    assert.ok(routes.includes(`/jesus/${room}`));
+  }
   assert.ok(routes.includes("/scriptures/ethiopian/JUB/18"));
   assert.ok(routes.includes("/angels/stories/open-his-eyes"));
   assert.ok(routes.includes("/angels/stories/i-am-with-you"));
@@ -92,6 +118,20 @@ test("Lighthouse fails closed on absent, malformed, or runtime-error reports", (
   assert.deepEqual(validateLighthouseResult(resultWithScore(0.94)), { score: 0.94, passed: false });
 });
 
+test("disabling the report screenshot preserves every Lighthouse accessibility audit", async () => {
+  const flags = { onlyCategories: ["accessibility"] };
+  const { resolvedConfig: standard } = await initializeConfig("navigation", desktopConfig, flags);
+  const { resolvedConfig: withoutScreenshot } = await initializeConfig("navigation", desktopConfig, {
+    ...flags, disableFullPageScreenshot: true,
+  });
+  assert.deepEqual(withoutScreenshot.categories, standard.categories);
+  assert.deepEqual(withoutScreenshot.audits?.map((audit) => audit.implementation.meta.id),
+    standard.audits?.map((audit) => audit.implementation.meta.id));
+  assert.ok(standard.artifacts?.some((artifact) => artifact.id === "FullPageScreenshot"));
+  assert.deepEqual(withoutScreenshot.artifacts?.map((artifact) => artifact.id),
+    standard.artifacts?.filter((artifact) => artifact.id !== "FullPageScreenshot").map((artifact) => artifact.id));
+});
+
 test("successful routes reuse Chrome while retaining desktop and fresh-origin audits", async () => {
   const first = resultWithScore(1);
   const second = resultWithScore(0.94);
@@ -109,6 +149,7 @@ test("successful routes reuse Chrome while retaining desktop and fresh-origin au
       assert.deepEqual(flags?.clearStorageTypes, ["all"]);
       assert.equal(flags?.disableStorageReset, false);
       assert.equal(flags?.maxWaitForLoad, 60_000);
+      assert.equal(flags?.disableFullPageScreenshot, true);
       assert.equal(config, desktopConfig);
     }
     assert.deepEqual(state.reports, [
@@ -122,6 +163,42 @@ test("successful routes reuse Chrome while retaining desktop and fresh-origin au
   assert.deepEqual(state.killed, [1]);
   await state.auditor.close();
   assert.deepEqual(state.killed, [1], "cleanup is idempotent");
+});
+
+test("incomplete navigation evidence is rejected without rejecting unrelated warnings", async () => {
+  const incomplete = {
+    lhr: { ...resultWithScore(1).lhr, runWarnings: [
+      "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
+    ] },
+  };
+  assert.throws(() => validateLighthouseResult(incomplete), /incomplete page-load evidence/);
+  const complete = {
+    lhr: { ...resultWithScore(1).lhr, runWarnings: ["An unrelated informational warning"] },
+  };
+  assert.deepEqual(validateLighthouseResult(complete), { score: 1, passed: true });
+  const state = mockAuditor([incomplete, complete]);
+  try {
+    assert.deepEqual(await state.auditor.audit("https://example.test/", "home.json"), { score: 1, passed: true });
+    assert.equal(state.launches.length, 2);
+    assert.deepEqual(state.killed, [1], "incomplete evidence recycles Chrome before its retry");
+    assert.deepEqual(state.reports, [{ path: "home.json", report: complete.lhr }]);
+  } finally {
+    await state.auditor.close();
+  }
+});
+
+test("three incomplete Lighthouse attempts remain a failure and never publish a report", async () => {
+  const incomplete = {
+    lhr: { ...resultWithScore(1).lhr, runWarnings: [
+      "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
+    ] },
+  };
+  const state = mockAuditor([incomplete, incomplete, incomplete]);
+  await assert.rejects(state.auditor.audit("https://example.test/", "home.json"), /incomplete page-load evidence/);
+  assert.equal(state.launches.length, 3);
+  assert.deepEqual(state.killed, [1, 2, 3]);
+  assert.deepEqual(state.reports, []);
+  await state.auditor.close();
 });
 
 test("thrown navigation and runtime errors recycle Chrome before retrying", async () => {

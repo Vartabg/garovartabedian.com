@@ -5,7 +5,7 @@
     "books": {
       "hostedIds": 86,
       "unionChapterSlots": 1586,
-      "sourceBackedBriefings": 29
+      "sourceBackedBriefings": 35
     },
     "traditions": {
       "count": 5,
@@ -44,20 +44,20 @@
     },
     "guides": {
       "files": 1586,
-      "questions": 10904,
-      "questionsWithVerseRefs": 9010,
-      "questionsWithoutVerseRefs": 1894,
-      "batchTemplateGuides": 851,
-      "customStructuredGuides": 735,
+      "questions": 10970,
+      "questionsWithVerseRefs": 9122,
+      "questionsWithoutVerseRefs": 1848,
+      "batchTemplateGuides": 829,
+      "customStructuredGuides": 757,
       "review": {
-        "agentReviewed": 715,
+        "agentReviewed": 737,
         "humanReviewed": 0,
-        "untracked": 871
+        "untracked": 849
       },
       "v2": {
         "rubricVersion": "guide-v2",
-        "provenance": 538,
-        "passing": 538,
+        "provenance": 560,
+        "passing": 560,
         "failing": 0,
         "rebound": 108
       }
@@ -100,16 +100,16 @@
         "schemaVersion": 1,
         "reviewedAt": "2026-09-26",
         "sourceManifestSha256": "927438ea9bcd53c2dad8d40d3ea9b351169bd9194a2063ca7b99fff56ee7083a",
-        "importManifestSha256": "6cfd704ba92ff011954c46b7efc87260ffd504c04445829f8f5a0690c5b28b0a",
-        "acquiredEntries": 117,
-        "publishedEntries": 103,
+        "importManifestSha256": "3ede1698ad70fc4558d446e3432f9d0203e9e970206bb7100c22550c740a244b",
+        "acquiredEntries": 118,
+        "publishedEntries": 104,
         "referenceOnlyEntries": 14,
         "deferredEntries": 5,
-        "works": 111,
-        "newPrimaryEntries": 100,
+        "works": 112,
+        "newPrimaryEntries": 101,
         "reusedPrimaryEntries": 3,
-        "readingSections": 5099,
-        "primaryCharacters": 18163661,
+        "readingSections": 5111,
+        "primaryCharacters": 18179911,
         "commentaryCharacters": 3784092,
         "exactSearch": "All published sections, edition commentary and reference metadata; legacy editions separately labelled. Server-side excerpts only.",
         "semanticSearch": "Expanded editions: translated text is embedded for meaning search. Commentary, reference records, and editions that reuse the original shelf are not embedded again. Similarity is not evidence of historical dependence.",
@@ -135,8 +135,8 @@
       "v2Rubric": {
         "status": "passing",
         "rubricVersion": "guide-v2",
-        "guidesWithProvenance": 538,
-        "passing": 538,
+        "guidesWithProvenance": 560,
+        "passing": 560,
         "failing": 0,
         "rebound": 108,
         "scope": "template rejection, chapter coverage, exact hosted-edition quotations, cited questions, category depth, glossary, and current-grounding provenance",
@@ -144,9 +144,9 @@
       },
       "editorialReview": {
         "status": "in-progress",
-        "agentReviewed": 715,
+        "agentReviewed": 737,
         "humanReviewed": 0,
-        "untracked": 871,
+        "untracked": 849,
         "note": "reviewStatus tiers: agent-reviewed (multi-pass automated-agent editorial panel; quotations and references also machine-verified) and human-reviewed (a named person signed off). Only human-reviewed implies personal approval."
       }
     }

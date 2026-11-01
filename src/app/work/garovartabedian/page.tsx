@@ -5,8 +5,11 @@ import {
   ACTION_LABELS,
   PROFILE,
   SITE_CASE_STUDY,
+  SITE_SOURCE_URL,
   type CaseStudyItem,
 } from "@/lib/portfolio-content";
+import { readReleaseRecord } from "./release-record-data";
+import ReleaseRecordSection from "./ReleaseRecordSection";
 
 const SITE_URL = "https://garovartabedian.com";
 
@@ -96,6 +99,15 @@ export default function WorkGaroVartabedian() {
         >
           Open the live site
         </ButtonAnchor>
+        {/* "Code", not "source": the next button is the research source trail. */}
+        <ButtonAnchor
+          variant="ghost"
+          href={SITE_SOURCE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View the code on GitHub
+        </ButtonAnchor>
         <ButtonLink variant="ghost" href="/sources">
           View the source trail
         </ButtonLink>
@@ -103,6 +115,8 @@ export default function WorkGaroVartabedian() {
           {ACTION_LABELS.workWithGaro}
         </ButtonLink>
       </p>
+
+      <ReleaseRecordSection record={readReleaseRecord()} />
 
       <h2>What it proves</h2>
       <DetailList items={SITE_CASE_STUDY.facts} />
@@ -123,40 +137,6 @@ export default function WorkGaroVartabedian() {
         with smaller domain datasets.
       </p>
       <DetailList items={SITE_CASE_STUDY.dataPipeline} />
-
-      <h2>Computational Research &amp; AI Dossier Suite</h2>
-      <p>
-        To demonstrate what happens when deep domain scholarship meets modern data
-        engineering, the platform features five production-grade research
-        engines — including one-click dossier generation optimized for Google
-        NotebookLM™ and enterprise LLMs.
-      </p>
-      <CardGrid items={SITE_CASE_STUDY.scholarshipSuite} />
-      <p className="cta-row">
-        <ButtonLink variant="primary" href="/scriptures/dossier">
-          Dossier Engine
-        </ButtonLink>
-        <ButtonLink variant="ghost" href="/scriptures/polyglot">
-          Digital Hexapla
-        </ButtonLink>
-        <ButtonLink variant="ghost" href="/scriptures/catena">
-          Catena Aurea
-        </ButtonLink>
-        <ButtonLink variant="ghost" href="/scriptures/diachronic">
-          Semantic Evolution
-        </ButtonLink>
-        <ButtonLink variant="ghost" href="/scriptures/disputation">
-          Disputation Engine
-        </ButtonLink>
-      </p>
-
-      <h2>From Ancient Manuscripts to Enterprise Knowledge</h2>
-      <p>
-        The technical challenges of classical scholarship — multilingual variants,
-        dense commentary graphs, and multi-era provenance — mirror the exact
-        friction modern companies face when preparing internal knowledge for AI.
-      </p>
-      <DetailList items={SITE_CASE_STUDY.enterpriseBridge} />
 
       <h2>Credibility layer</h2>
       <p>

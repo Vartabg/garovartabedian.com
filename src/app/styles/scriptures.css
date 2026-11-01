@@ -1421,7 +1421,7 @@
   }
 }
 
-/* Brief editorial orientation before the chapter; detail stays expandable. */
+/* Brief editorial orientation, below the chapter with the other study tools; detail stays expandable. */
 .scr-reading-context {
   margin: 0 0 1.5rem;
   padding: 1rem 1.15rem;
@@ -1992,71 +1992,6 @@ main:has(.scr-read) {
 .scr-rh-crumbs a:hover {
   color: var(--accent);
 }
-.scr-rh-tools {
-  margin: 0 0 1.25rem;
-}
-
-/* ── The margin ──────────────────────────────────────────────────────
-   The study notes. On a phone: a compact strip of four ways into the
-   chapter above the text, plus one provenance line. From 1000px: a sticky
-   gloss margin beside the text with rubric headings — Understand, Connect,
-   Source — and the Connect gloss follows whichever verse is open. */
-.scr-study-layout {
-  position: relative;
-  width: 100%;
-}
-/* Threads from the open verse to its glosses (GlossThreads.tsx). */
-.gloss-threads {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  pointer-events: none;
-}
-.gloss-threads path {
-  fill: none;
-  stroke: var(--rubric);
-  stroke-width: 1.1;
-  opacity: 0.85;
-}
-.gloss-threads circle {
-  fill: var(--gold);
-  stroke: var(--deep-gold);
-  stroke-width: 0.6;
-}
-.gloss-threads .gloss-thread-knot {
-  fill: var(--rubric);
-  stroke: none;
-}
-@media (max-width: 999px) {
-  .gloss-threads {
-    display: none;
-  }
-}
-/* The versal's vines grow past the first verse's box; that block alone gives
-   up its containment so nothing clips them. */
-.scr-read-text .scr-v:first-child {
-  content-visibility: visible;
-  contain: none;
-}
-
-.scr-study-reading {
-  min-width: 0;
-}
-
-.scr-gloss {
-  width: 100%;
-  margin: 0 0 1.25rem;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.scr-gloss-head {
-  display: none;
-}
-
 /* A rubric: the scribe's red heading — Fraunces italic in vermilion. */
 .scr-rubric {
   margin: 0;
@@ -2070,58 +2005,11 @@ main:has(.scr-read) {
   letter-spacing: 0;
 }
 
-.scr-gloss-intents {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.scr-gloss-intents button {
-  display: grid;
-  min-width: 0;
-  min-height: 3.25rem;
-  align-content: center;
-  border: 0;
-  border-left: 1px solid var(--line);
-  background: transparent;
-  padding: 0.4rem 0.35rem;
-  color: var(--ink);
-  font: inherit;
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-align: center;
-  cursor: pointer;
-}
-
-.scr-gloss-intents button:first-child {
-  border-left: 0;
-}
-
-.scr-gloss-intents button.is-active,
-.scr-gloss-intents button[aria-pressed="true"] {
-  color: var(--rubric);
-  box-shadow: inset 0 -2px 0 var(--rubric);
-}
-
-.scr-gloss-intents button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: -2px;
-}
-
-.scr-gloss-intents small {
-  display: none;
-}
-
-.scr-gloss-mobile-trust {
-  margin: 0;
-  border-top: 1px solid var(--line);
-  padding: 0.45rem 0;
-  color: var(--muted);
-  font-size: 0.72rem;
-  line-height: 1.4;
-}
-
-.scr-gloss-body {
-  display: none;
+/* The versal's vines grow past the first verse's box; that block alone gives
+   up its containment so nothing clips them. */
+.scr-read-text .scr-v:first-child {
+  content-visibility: visible;
+  contain: none;
 }
 
 #chapter-text,
@@ -2138,198 +2026,6 @@ main:has(.scr-read) {
     border: 1px solid var(--line);
     outline: 1px solid color-mix(in oklab, var(--line) 60%, transparent);
     outline-offset: 4px;
-  }
-
-  .scr-study-layout {
-    display: grid;
-    grid-template-areas: "reading gloss";
-    grid-template-columns: minmax(0, 1fr) minmax(15rem, 17rem);
-    align-items: start;
-    gap: clamp(2rem, 4vw, 3.5rem);
-  }
-
-  .scr-study-reading {
-    grid-area: reading;
-  }
-
-  .scr-gloss {
-    grid-area: gloss;
-    position: sticky;
-    top: 1rem;
-    max-height: calc(100svh - var(--scr-bar-h) - 2rem);
-    margin: 0;
-    overflow: auto;
-    border: 0;
-    scrollbar-width: thin;
-  }
-
-  .scr-gloss-head {
-    display: block;
-    padding-bottom: 0.75rem;
-  }
-
-  .scr-gloss-where {
-    margin: 0.3rem 0 0;
-    color: var(--muted);
-    font-size: 0.78rem;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .scr-gloss-track {
-    display: block;
-    height: 2px;
-    margin-top: 0.55rem;
-    overflow: hidden;
-    background: var(--line);
-  }
-
-  .scr-gloss-track > span {
-    display: block;
-    height: 100%;
-    background: var(--rubric);
-  }
-
-  .scr-gloss-intents,
-  .scr-gloss-mobile-trust {
-    display: none;
-  }
-
-  .scr-gloss-body {
-    display: grid;
-  }
-
-  .scr-gloss-body > section {
-    padding: 0.85rem 0 1rem;
-    border-top: 1px solid var(--line);
-  }
-
-  .scr-gloss-body p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.82rem;
-    line-height: 1.5;
-  }
-
-  .scr-gloss-body h3 + p,
-  .scr-gloss-body h3 + div {
-    margin-top: 0.4rem;
-  }
-
-  .scr-gloss-body p strong {
-    color: var(--ink);
-  }
-
-  .scr-gloss-themes {
-    margin-top: 0.45rem;
-    font-size: 0.78rem;
-  }
-
-  .scr-gloss-themes span {
-    color: var(--ink);
-    font-weight: 700;
-  }
-
-  .scr-gloss-refs {
-    display: grid;
-    gap: 0.2rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .scr-gloss-refs a {
-    color: var(--accent);
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: color-mix(in oklab, var(--accent) 45%, transparent);
-    text-underline-offset: 2px;
-  }
-
-  .scr-gloss-refs a:hover {
-    text-decoration-color: var(--accent);
-  }
-
-  .scr-gloss-more {
-    color: var(--muted);
-    font-size: 0.78rem;
-  }
-
-  .scr-gloss-act {
-    display: inline-flex;
-    align-items: center;
-    min-height: var(--control-target-min, 2.75rem);
-    margin-top: 0.45rem;
-    padding: 0.2rem 0;
-    border: 0;
-    background: transparent;
-    color: var(--accent-deep);
-    font: inherit;
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-align: start;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-    cursor: pointer;
-  }
-
-  .scr-gloss-act:hover {
-    color: var(--accent);
-  }
-
-  .scr-gloss-act:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  .scr-gloss-dl {
-    margin: 0.45rem 0 0;
-  }
-
-  .scr-gloss-dl > div {
-    display: grid;
-    grid-template-columns: 3.4rem minmax(0, 1fr);
-    gap: 0.5rem;
-    padding-block: 0.3rem;
-    border-top: 1px solid color-mix(in oklab, var(--line) 70%, transparent);
-    font-size: 0.78rem;
-    line-height: 1.45;
-  }
-
-  .scr-gloss-dl > div:first-child {
-    border-top: 0;
-  }
-
-  .scr-gloss-dl dt {
-    color: var(--ink);
-    font-weight: 700;
-  }
-
-  .scr-gloss-dl dd {
-    margin: 0;
-    color: var(--muted);
-  }
-
-  .scr-gloss-dl dd a,
-  .scr-gloss-parallel a {
-    color: var(--accent-deep);
-    font-weight: 600;
-  }
-
-  .scr-gloss-parallel a {
-    font-size: 0.82rem;
-  }
-
-  .scr-gloss-source > a {
-    display: inline-block;
-    margin-top: 0.55rem;
-    color: var(--accent);
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-decoration: underline;
-    text-underline-offset: 2px;
   }
 }
 
@@ -2559,14 +2255,6 @@ html[data-a11y-contrast="high"] .scr-versal,
   }
 }
 
-.scr-read-hint {
-  max-width: 34rem;
-  margin: 1.25rem auto 0;
-  font-size: 0.82rem;
-  line-height: 1.55;
-  color: var(--muted);
-}
-
 /* ── Source-language layer ────────────────────────────────────────────
    Loaded only when the reader asks for it. The English remains ordinary
    selectable text; source words become generous, keyboard-visible targets
@@ -2608,13 +2296,13 @@ html[data-a11y-contrast="high"] .scr-versal,
   border-inline-start: 3px solid var(--accent);
   background: color-mix(in oklab, var(--accent) 5%, transparent);
   color: var(--ink);
-  font-family: "Times New Roman", "Noto Serif Hebrew", "SBL Hebrew", serif;
+  font-family: var(--font-scripture), "Noto Serif Hebrew", "SBL Hebrew", serif;
   font-size: clamp(1.25rem, 2.4vw, 1.55rem);
   line-height: 1.9;
   text-align: start;
 }
 .scr-original-line[lang="grc"] {
-  font-family: "Palatino Linotype", "Noto Serif", Georgia, serif;
+  font-family: var(--font-scripture), "Noto Serif", Georgia, serif;
   font-size: clamp(1.12rem, 2.1vw, 1.34rem);
 }
 .scr-original-token {
@@ -3035,6 +2723,10 @@ html[data-a11y-contrast="high"] .scr-versal,
   text-decoration: none;
   cursor: pointer;
 }
+.scr-bar-btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
 .scr-bar-where {
   flex: 1 1 auto;
   gap: 0.3rem;
@@ -3066,11 +2758,6 @@ html[data-a11y-contrast="high"] .scr-versal,
 .scr-bar-aa {
   font-weight: 700;
 }
-.scr-bar-worlds {
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 800;
-}
 .scr-bar-caret {
   font-size: 0.7em;
   color: var(--muted);
@@ -3084,9 +2771,6 @@ html[data-a11y-contrast="high"] .scr-versal,
   .scr-bar-btn,
   .scr-bar-where {
     padding-inline: 0.35rem;
-  }
-  .scr-bar-worlds {
-    font-size: 0.68rem;
   }
 }
 
@@ -3337,75 +3021,6 @@ html[data-a11y-contrast="high"] .scr-versal,
   .scr-voice-preview {
     width: 100%;
   }
-}
-
-/* ── Go-to sheet ───────────────────────────────────────────────────── */
-.scr-pick-h {
-  margin: 0 0 0.6rem;
-  font-size: 0.82rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.scr-pick-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(2.75rem, 1fr));
-  gap: 0.35rem;
-  margin: 0 0 1.5rem;
-  padding: 0;
-  list-style: none;
-}
-.scr-pick-ch {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.75rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--ink);
-  text-decoration: none;
-  font-variant-numeric: tabular-nums;
-}
-.scr-pick-ch:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-.scr-pick-ch.is-here {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 700;
-}
-.scr-pick-books {
-  display: grid;
-  gap: 0.2rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.scr-pick-book {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  min-height: 2.75rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: 8px;
-  color: var(--ink);
-  text-decoration: none;
-}
-.scr-pick-book:hover {
-  background: var(--surface);
-  color: var(--accent);
-}
-.scr-pick-book small {
-  color: var(--muted);
-  font-size: 0.78rem;
-}
-.scr-pick-book.is-here {
-  background: color-mix(in oklab, var(--accent) 12%, transparent);
-  font-weight: 600;
 }
 
 /* ── Multi-verse selection bar, docked above the reading bar ────────── */
@@ -4216,10 +3831,7 @@ a.scr-brief-ref:hover {
   .scr-bar,
   .scr-selbar,
   .scr-sheet-layer,
-  .scr-gloss,
   .scr-rh-crumbs,
-  .scr-rh-tools,
-  .scr-read-hint,
   .scr-vpanel,
   .scr-threads-block {
     display: none !important;
@@ -5791,4 +5403,602 @@ html[data-a11y-theme="dark"] .scr-witness-mt {
 /* Find is a reading workspace, with its own source and research navigation. */
 .world-scr main:has([data-find-workspace]) { padding-top: 0; }
 .world-scr main > .wrap:has(> [data-find-workspace]) { display: block; max-width: 1400px; padding-inline: clamp(1rem,3vw,2.5rem); }
-.world-scr main > .wrap:has(> [data-find-workspace]) > :is(.world-guide,.world-next,.local-research-shortcut) { display: none; }
+.world-scr main > .wrap:has(> [data-find-workspace]) > :is(.world-guide,.world-next,.world-continuation,.local-research-shortcut) { display: none; }
+
+/* ── Scripture picker (the Scripture page's front door) ──────────────
+   The reader chooses everything: the way to browse, the tradition, the
+   translation, the book and the chapter. Spines and map tiles are leather
+   tones, the same in both themes; everything else takes the world's tokens. */
+.world-scr {
+  --dw-law: #6b3f1d; --dw-history: #7a5020; --dw-wisdom: #6e5317; --dw-prophets: #7b2e22;
+  --dw-twelve: #8c4027; --dw-gospels: #23406e; --dw-acts: #1f5560; --dw-letters: #3b4a68;
+  --dw-revelation: #4a3566; --dw-extra: #4f6b4c; --dw-spine-ink: #f4e7c9; --dw-gilt: #d8b45c;
+}
+.dw-sec-law { background: var(--dw-law); } .dw-sec-history { background: var(--dw-history); }
+.dw-sec-wisdom { background: var(--dw-wisdom); } .dw-sec-prophets { background: var(--dw-prophets); }
+.dw-sec-twelve { background: var(--dw-twelve); } .dw-sec-gospels { background: var(--dw-gospels); }
+.dw-sec-acts { background: var(--dw-acts); } .dw-sec-letters { background: var(--dw-letters); }
+.dw-sec-revelation { background: var(--dw-revelation); } .dw-sec-extra, .dw-sec-enoch { background: var(--dw-extra); }
+
+/* The hub is the picker: the world's room box steps aside, as on book pages. */
+@media (min-width: 1100px) {
+  .world-scr main > .wrap:has(> .scr-hub) { display: block; max-width: var(--maxw); }
+}
+.scr-hub-title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  line-height: 1;
+  text-wrap: balance;
+}
+.scr-hub .scr-trail { margin-bottom: 1.25rem; }
+
+.dw-controls {
+  display: grid;
+  /* minmax(0, …): the one-row tradition scroller must not widen the box. */
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.dw-goto { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+.dw-goto-label,
+.dw-translation > span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.dw-goto-label { min-width: 4.5rem; }
+.dw-goto-field { position: relative; flex: 1 1 16rem; min-width: 0; }
+/* Every control takes the site's target: 44px, 48px under touch. */
+.dw-goto-field input,
+.dw-translation select {
+  height: var(--tap-target, var(--control-target-min));
+  padding: 0 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+}
+.dw-goto-field input { width: 100%; }
+.dw-goto-go {
+  min-width: var(--tap-target, var(--control-target-min));
+  min-height: var(--tap-target, var(--control-target-min));
+  padding: 0 1.1rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--bg);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.dw-sug {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgb(0 0 0 / 18%);
+}
+.dw-sug li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.dw-sug li[aria-selected="true"] { background: color-mix(in oklab, var(--accent) 14%, var(--surface)); }
+.dw-sug small { color: var(--muted); white-space: nowrap; }
+.dw-choices { display: flex; flex-wrap: wrap; gap: 0.6rem 1.25rem; align-items: center; }
+.dw-traditions { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.dw-chip {
+  min-width: var(--tap-target, var(--control-target-min));
+  min-height: var(--tap-target, var(--control-target-min));
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.dw-chip small { opacity: 0.75; font-variant-numeric: tabular-nums; }
+.dw-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.dw-translation { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+
+.dw-tabs { display: flex; gap: 2px; margin-top: 1.1rem; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.dw-tab {
+  min-width: var(--tap-target, var(--control-target-min));
+  min-height: var(--tap-target, var(--control-target-min));
+  padding: 0.55rem 1rem;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: none;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dw-tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.dw-note { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.9rem; }
+.dw-panel { padding-top: 1rem; }
+.dw-hint { margin: 0.5rem 0 0; color: var(--muted); font-size: 0.9rem; }
+
+/* Shelf: spine width is the book's verses at 1/150 of a container unit,
+   so the server-drawn shelf is already to scale. The 24px floor keeps short
+   books tappable (WCAG 2.5.8). */
+.dw-shelf { container-type: inline-size; }
+.dw-case { margin-bottom: 1.1rem; }
+.dw-case-h { margin: 0 0 0.4rem; font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; }
+.dw-shelf-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.1rem;
+  align-items: flex-end;
+  padding: 0.75rem 0 0.4rem;
+  border-bottom: 7px solid var(--line);
+}
+.dw-sgroup { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+.dw-sg-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); }
+.dw-spines { display: flex; flex-wrap: wrap; gap: 2px; align-items: flex-end; }
+.dw-spine {
+  position: relative;
+  display: block;
+  width: max(24px, calc(var(--v) * 1cqi / 150));
+  height: 124px;
+  border-radius: 3px 3px 1px 1px;
+  color: var(--dw-spine-ink);
+  box-shadow: inset -3px 0 0 rgb(0 0 0 / 18%);
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+.dw-spine::before,
+.dw-spine::after { content: ""; position: absolute; left: 3px; right: 3px; height: 2px; background: var(--dw-gilt); opacity: 0.8; }
+.dw-spine::before { top: 11px; }
+.dw-spine::after { bottom: 11px; }
+.dw-spine > span {
+  position: absolute;
+  inset: 19px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.dw-spine:hover { transform: translateY(-4px); }
+.dw-spine[aria-current="true"] { transform: translateY(-13px); outline: 3px solid var(--accent); outline-offset: 2px; }
+.dw-tray { margin-top: 0.75rem; padding: 0.9rem; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); scroll-margin-bottom: 1rem; }
+.dw-tray-h { margin: 0 0 0.6rem; }
+
+/* Chapter bars, shared by the shelf tray and the strip's close-up. */
+.dw-bars { display: flex; flex-wrap: wrap; gap: 4px; align-items: flex-end; }
+.dw-bar-slot { display: inline-flex; align-items: stretch; }
+.dw-bar-book {
+  padding: 0 4px 0 2px;
+  border-left: 2px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+}
+.dw-bar {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  width: 28px;
+  min-height: 44px;
+  color: var(--muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+}
+.dw-bar i { display: block; width: 18px; height: var(--h); border-radius: 2px 2px 0 0; background: var(--muted); opacity: 0.5; }
+.dw-bar:hover i, .dw-bar:focus-visible i { opacity: 0.9; }
+.dw-bar.is-current i { background: var(--accent); opacity: 1; }
+.dw-bar.is-current { color: var(--ink); font-weight: 700; }
+/* The chapter being read, when the picker opens from the reader. In the
+   strip the accent bar is the place being scrubbed, so there it keeps a ring. */
+.dw-bar.is-here { color: var(--ink); font-weight: 700; }
+.dw-bar.is-here i { background: var(--accent); opacity: 1; }
+.dw-strip-close .dw-bar.is-here:not(.is-current) i { background: transparent; box-shadow: inset 0 0 0 2px var(--accent); }
+
+/* Contents: a contents page with edge tabs. */
+.dw-contents {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.dw-ct-list { position: relative; height: min(560px, 68vh); overflow-y: auto; padding: 0.25rem 1.1rem 1.5rem; }
+.dw-ct-h { margin: 0.9rem 0 0.1rem; padding-top: 0.5rem; border-top: 1px solid var(--line); font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; }
+.dw-ct-list section:first-child .dw-ct-h { border-top: 0; }
+.dw-ct-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.45rem 0.2rem;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.dw-ct-name { white-space: nowrap; }
+.dw-ct-row.is-extra .dw-ct-name::after { content: " ◆"; color: var(--dw-extra); font-size: 0.7em; }
+.dw-ct-lead { flex: 1; min-width: 12px; border-bottom: 1px dotted var(--line); transform: translateY(-4px); }
+.dw-ct-n { color: var(--muted); font-variant-numeric: tabular-nums; }
+.dw-ct-row[aria-expanded="true"] .dw-ct-name { font-weight: 700; }
+.dw-ct-chs { display: flex; flex-wrap: wrap; gap: 6px; padding: 0.2rem 0 0.9rem; }
+.dw-num {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+}
+.dw-num:hover { border-color: var(--accent); }
+.dw-num.is-here { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 700; }
+.dw-thumbs { display: flex; flex-direction: column; gap: 3px; padding: 0.5rem 0 0.5rem 0.4rem; overflow-y: auto; border-left: 1px solid var(--line); background: var(--bg); }
+.dw-thumb {
+  width: 30px;
+  min-height: 44px;
+  padding: 0.6rem 0.4rem;
+  border: 0;
+  border-radius: 7px 0 0 7px;
+  color: var(--dw-spine-ink);
+  font: 700 11px/1 var(--font-body, inherit);
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+  cursor: pointer;
+}
+.dw-thumb:hover { filter: brightness(1.15); }
+
+/* Map: an ordered treemap, zoomed by section, book and chapter. */
+.dw-crumbs { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; min-height: var(--tap-target, var(--control-target-min)); margin-bottom: 0.5rem; color: var(--muted); }
+.dw-crumbs button { min-height: var(--tap-target, var(--control-target-min)); padding: 0.35rem 0; border: 0; background: none; color: var(--accent); font: inherit; text-decoration: underline; cursor: pointer; }
+.dw-map-box { position: relative; min-height: 280px; overflow: hidden; border-radius: 8px; background: var(--line); }
+.dw-map-sec { position: absolute; background: var(--surface); }
+.dw-map-sec-h {
+  position: absolute;
+  z-index: 2;
+  height: 24px;
+  padding: 0 6px;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 700 11px/24px var(--font-body, inherit);
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dw-tile {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 4px 5px;
+  border: 1px solid var(--surface);
+  color: var(--dw-spine-ink);
+  font: 700 12px/1.15 var(--font-body, inherit);
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dw-tile > span { overflow: hidden; text-overflow: ellipsis; }
+.dw-tile:hover, .dw-tile:focus-visible { z-index: 3; filter: brightness(1.18); }
+.dw-tile.is-chapter { align-items: center; justify-content: center; padding: 0; font-variant-numeric: tabular-nums; }
+.dw-tile.is-here { z-index: 2; box-shadow: inset 0 0 0 3px var(--dw-spine-ink); font-weight: 800; }
+
+/* Strip: every chapter as one bar. */
+.dw-strip-canvas { display: block; width: 100%; height: 140px; border-radius: 6px; background: var(--surface); cursor: crosshair; touch-action: none; }
+.dw-strip-label { margin: 0.6rem 0 0.1rem; min-height: 1.7em; font-family: var(--font-display); font-size: 1.25rem; }
+.dw-strip-label small { color: var(--muted); font-family: inherit; font-size: 0.85rem; }
+.dw-strip-close { overflow-x: auto; padding: 0.4rem 2px; }
+.dw-strip-close .dw-bars { flex-wrap: nowrap; }
+
+/* The reader's Go to sheet holds the whole picker. It opens at the chapter
+   being read, so the view tabs stay in reach while the sheet is scrolled. */
+.scr-sheet-panel.is-wide { width: min(64rem, 100%); max-height: min(82vh, 52rem); }
+.scr-sheet-body .dw-tabs {
+  position: sticky;
+  /* Pinned flush under the sheet's title, across the body's 1rem top padding. */
+  top: -1rem;
+  z-index: 5;
+  margin-top: 0.1rem;
+  padding-top: 1rem;
+  background: var(--paper);
+}
+.scr-sheet-body .dw-ct-list { height: min(440px, 52vh); }
+/* A sheet is modal: the site's floating Aa button would sit on its targets. */
+body:has(.scr-sheet-layer) .a11y-trigger { visibility: hidden; }
+
+.scr-more { margin-top: 2.2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.scr-more h2 { margin: 0 0 0.5rem; font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; }
+.scr-more ul { display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; margin: 0; padding: 0; list-style: none; }
+.scr-more a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); }
+
+/* Named study entrances stay visible without putting tools over the reading. */
+.scr-hub-study-link, .scr-reader-study-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin: 0.75rem 0 1.25rem; }
+.scr-hub-study-link a { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 44px; color: var(--accent); font-weight: 700; }
+.scr-hub-study-link > span, .scr-reader-study-actions > span { color: var(--muted); font-size: 0.9rem; }
+.scr-bridge-entry-form { padding: clamp(1rem, 3vw, 1.75rem); border: 1px solid var(--line); background: var(--surface); }
+.scr-bridge-entry-form h2 { margin-top: 0; }
+.scr-bridge-entry-form label { display: block; margin-bottom: 0.5rem; font-weight: 700; }
+.scr-bridge-entry-controls { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.scr-bridge-entry-controls input { flex: 1 1 15rem; min-width: 0; min-height: 44px; padding: 0.65rem; border: 1px solid var(--line); color: var(--ink); background: var(--paper); font: inherit; }
+.scr-bridge-entry-controls button, .scr-reader-study-actions button { min-height: 44px; white-space: normal; }
+.scr-bridge-entry-form [role="status"] { min-height: 1.5em; }
+.scr-bridge-examples { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; margin-top: 1rem; }
+.scr-bridge-examples p { flex: 1 0 100%; margin: 0; }
+.scr-bridge-examples a { display: inline-flex; gap: 0.5rem; align-items: center; min-height: 44px; color: var(--accent); }
+.scr-bridge-method { margin-top: 1.5rem; }
+.scr-bridge-method summary { min-height: 44px; cursor: pointer; color: var(--accent); }
+.scr-vpanel:focus { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+@media (max-width: 600px) {
+  .dw-spine { height: 104px; }
+  /* On a phone the choices take four short rows, so the shelf starts on the first screen. */
+  .dw-controls { gap: 0.6rem; padding: 0.75rem; }
+  .dw-goto-label { min-width: 100%; }
+  .dw-goto-field { flex: 1 1 0; }
+  .dw-choices { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.6rem; }
+  .dw-traditions {
+    flex-wrap: nowrap;
+    margin-inline: -0.75rem;
+    padding-inline: 0.75rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .dw-traditions::-webkit-scrollbar { display: none; }
+  .dw-chip { flex: none; }
+  .dw-translation { flex-wrap: nowrap; }
+  .dw-translation select { flex: 1 1 0; min-width: 0; }
+  .dw-ct-list { padding-inline: 0.75rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dw-spine { transition: none; }
+}
+
+/* ── Word by word (WordBridge.tsx) ───────────────────────────────────
+   The verse above, the original below, a thread between each English word
+   and the word it translates. Thread and word colors carry the checker's
+   verdict: accent for supported, rubric dashed for "needs review", a dotted
+   underline for words the translator added or the English leaves out. */
+.scr-bridge {
+  margin: 1rem 0 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+.scr-bridge-h {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.scr-bridge-stage {
+  position: relative;
+  padding: 0.85rem 0.75rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.scr-bridge-threads {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.scr-bridge-thread {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.2;
+  opacity: 0.22;
+}
+.scr-bridge-thread.is-flag {
+  stroke: var(--rubric);
+  stroke-dasharray: 4 4;
+}
+.scr-bridge-thread.is-on {
+  stroke-width: 2.4;
+  opacity: 1;
+}
+.scr-bridge-stage.has-focus .scr-bridge-thread:not(.is-on) {
+  opacity: 0.07;
+}
+.scr-bridge-label {
+  position: relative;
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.scr-bridge-label--original {
+  margin-top: clamp(3.25rem, 9vw, 5rem);
+}
+.scr-bridge-row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 0.15rem;
+}
+.scr-bridge-word {
+  min-height: var(--control-target-min, 2.75rem);
+  padding: 0.05rem 0.3rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-scripture);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.scr-bridge-row[lang] .scr-bridge-word {
+  font-size: 1.4rem;
+}
+.scr-bridge-word:disabled {
+  cursor: default;
+}
+.scr-bridge-word.is-supplied {
+  border-bottom: 2px dotted var(--muted);
+  color: var(--muted);
+}
+.scr-bridge-word.is-on {
+  border-bottom-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 14%, transparent);
+  color: var(--ink);
+}
+.scr-bridge-word.is-on.is-flag {
+  border-bottom-color: var(--rubric);
+}
+/* Dimmed, not faded out: 0.65 keeps the other words at about 5:1 contrast. */
+.scr-bridge-stage.has-focus .scr-bridge-word:not(.is-on) {
+  opacity: 0.65;
+}
+.scr-bridge-word:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.scr-bridge-tally {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+.scr-bridge-detail {
+  margin-top: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--surface);
+}
+.scr-bridge-detail.is-flag {
+  border-inline-start-color: var(--rubric);
+}
+.scr-bridge-detail dl {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 0.3rem 0.85rem;
+  margin: 0;
+}
+.scr-bridge-entry {
+  display: contents;
+}
+.scr-bridge-detail dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.scr-bridge-detail dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.scr-bridge-pair {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-scripture);
+  font-size: 1.2rem;
+}
+.scr-bridge-lemma {
+  font-family: var(--font-scripture);
+  font-size: 1.1rem;
+}
+.scr-bridge-status {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 2px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.scr-bridge-status.is-ok {
+  background: color-mix(in oklab, var(--accent) 14%, transparent);
+  color: var(--ink);
+}
+.scr-bridge-status.is-flag {
+  background: color-mix(in oklab, var(--rubric) 14%, transparent);
+  color: var(--ink);
+}
+.scr-bridge-status.is-plain {
+  background: color-mix(in oklab, var(--muted) 14%, transparent);
+  color: var(--ink);
+}
+.scr-bridge-hint,
+.scr-bridge-source {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.scr-bridge-source {
+  margin-top: 0.6rem;
+}
+.scr-bridge-source a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+@media (max-width: 560px) {
+  .scr-bridge-detail dl {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .scr-bridge-thread:not(.is-on) {
+    opacity: 0;
+  }
+}
+/* Words whose link is unproven read like untagged words until the reader
+   asks to see the links that need review. */
+.scr-bridge-word.is-unlinked {
+  border-bottom: 2px dotted color-mix(in oklab, var(--muted) 70%, transparent);
+}
+.scr-bridge-toggle {
+  min-height: var(--control-target-min, 2.75rem);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}

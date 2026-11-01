@@ -1,0 +1,476 @@
+{
+  "book": "HAB",
+  "bookName": "Habakkuk",
+  "oneLine": "A prophet questions violence and divine justice, hears a promise of the oppressor’s downfall, and prays through fear toward trust.",
+  "orient": "Habakkuk begins by asking why Yahweh does not stop violence and distorted justice. The announcement of a Chaldean invasion creates a sharper question: how can a more ruthless power be the instrument of judgment? A written vision calls for waiting, and five woes imagine the plunderer’s reversal. The final prayer pictures God arriving in terrifying power, then voices resolve even when crops and livestock fail.",
+  "whereYouAre": "The Chaldeans named in 1:6 are the Babylonians. Their advance places the book against Judah’s experience of imperial pressure around the end of the seventh and beginning of the sixth century BCE. This is the historical setting inferred from the book’s concerns; the heading gives no king’s reign or date of composition.",
+  "facts": {
+    "writtenBy": "The headings attribute the vision and prayer to Habakkuk the prophet. They give no parentage, hometown, or account of the book’s final arrangement.",
+    "writtenWhen": "The Babylonian crisis provides the setting. USCCB relates it to the period between Carchemish in 605 BCE and Jerusalem’s destruction in 587 BCE; the final composition and arrangement remain undated.",
+    "writtenFor": "People confronting injustice and imperial violence in a Judean setting, inferred from the complaints rather than named in a dedication.",
+    "place": "Judah is the historical setting; the place where the book was composed is unspecified.",
+    "covers": "Two complaints and responses, a taunt against oppressive power, and a prayer that ends in trust amid threatened deprivation.",
+    "size": "3 chapters and 56 verses in each of WEB, KJV, Douay-Rheims, and Brenton: 17 verses in chapter 1, 20 in chapter 2, and 19 in chapter 3."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "web-hab"
+    ],
+    "writtenWhen": [
+      "web-hab",
+      "usccb-hab-intro"
+    ],
+    "writtenFor": [
+      "web-hab",
+      "usccb-hab-intro"
+    ],
+    "place": [
+      "usccb-hab-intro"
+    ],
+    "covers": [
+      "web-hab"
+    ],
+    "size": [
+      "english-editions"
+    ]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew, chiefly poetry organized by headings, complaints, a divine answer, and a prayer.",
+    "register": "Urgent questions give way to a watchman’s waiting, mocking accusations, and a hymn. Parallel clauses, repeated cries, predatory images, and speaking objects make the argument audible.",
+    "spokenWorld": "A speaker in Judah addresses Yahweh and describes Chaldean forces. The book presents this world in Hebrew; it contains no separate Chaldean-language dialogue.",
+    "readerSignal": "Keep track of who is asking, answering, or being addressed. The complaint crosses from chapter 1 into 2:1, and the conquered peoples are imagined speaking the taunt introduced in 2:6. Modern quotation marks help organize the voices but do not settle every boundary.",
+    "englishLayer": "References here follow the World English Bible. The four English editions share chapter and verse counts, but clauses do not always align: Brenton places the praise sentence at the end of WEB 3:3 at the beginning of its 3:4. At 2:4 WEB and KJV say “his faith,” while Brenton says “my faith.” Compare wording as well as verse numbers.",
+    "textualHistory": [
+      {
+        "label": "The Hebrew literary work",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The headings name Habakkuk, and the book combines prophetic dialogue with a prayer marked for performance. Its Hebrew wording and the historical crisis it evokes are evidence of different kinds: neither supplies a date for every stage of its arrangement.",
+        "sourceIds": [
+          "hebrew-hab",
+          "web-hab",
+          "usccb-hab-intro"
+        ]
+      },
+      {
+        "label": "An early commentary witness",
+        "language": "Hebrew",
+        "role": "earliest-extant",
+        "description": "The Israel Museum dates the Habakkuk commentary, 1QpHab, to about 50 BCE. It interprets the first two chapters. It is a witness to ancient reading, not the prophet’s manuscript; its selection of those chapters alone does not prove that chapter 3 was absent from the biblical book it interpreted.",
+        "sourceIds": [
+          "imj-hab"
+        ]
+      },
+      {
+        "label": "The prayer’s distinct frame",
+        "language": "Hebrew",
+        "role": "section",
+        "spans": [
+          "3:1–19"
+        ],
+        "description": "Chapter 3 has its own heading, repeated Selah markers, and a closing musical direction. It can be read as the response to the earlier dialogue, while scholars also consider whether a hymn was joined to that dialogue. The received book places them together.",
+        "sourceIds": [
+          "web-hab",
+          "hebrew-hab",
+          "usccb-hab-intro"
+        ]
+      },
+      {
+        "label": "Greek translation and English comparison",
+        "language": "Greek Septuagint, represented in Brenton’s English",
+        "role": "translation",
+        "description": "Brenton preserves a Greek-based form of Habakkuk with differences beyond English style. Its 1:5 addresses despisers rather than the nations of WEB, and its 2:4 changes both the opening clause and the pronoun attached to faith. An English comparison identifies differences without establishing why each ancient reading arose.",
+        "sourceIds": [
+          "english-editions",
+          "brenton-edition"
+        ]
+      },
+      {
+        "label": "English wording and reception",
+        "language": "WEB, KJV, Douay-Rheims, and Brenton",
+        "role": "translation",
+        "description": "Douay-Rheims says “thy Christ” at 3:13 and “God my Jesus” at 3:18, where WEB has “your anointed” and “the God of my salvation.” The Hebrew expressions concern an anointed figure and the speaker’s salvation. Distinguish these translation choices and Christian reception from a claim that the Hebrew verses name Jesus personally.",
+        "sourceIds": [
+          "hebrew-hab",
+          "english-editions"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "The complaint keeps asking why",
+        "original": "עַד־אָנָה — ʿad ʾanah — how long; חָמָס — ḥamas — violence",
+        "explanation": "The opening pairs a cry with no hearing and a plea against violence with no rescue. The question returns when the invading force devours people more righteous than itself. Repeated violence-language connects the initial complaint, the invader’s conduct, and the later indictment.",
+        "translationNote": "WEB preserves the recurring word violence. Synonyms in other translations can make the links less obvious; follow the recurrence rather than isolating the first cry.",
+        "caution": "These are questions voiced within a sustained dialogue. The book gives suffering people language for protest; its ending does not erase the questions.",
+        "refs": [
+          "1:2",
+          "1:3",
+          "1:9",
+          "1:13",
+          "2:8",
+          "2:17"
+        ],
+        "sourceIds": [
+          "hebrew-hab",
+          "web-hab"
+        ]
+      },
+      {
+        "title": "An assured arrival still calls for waiting",
+        "original": "חָזוֹן — ḥazon — vision; בֹא יָבֹא — boʾ yavoʾ — it will surely come",
+        "explanation": "The instruction to write the vision is followed by an emphatic repeated verbal form promising arrival. Yet the hearer is also told to wait. Assurance and delay stand together instead of canceling one another.",
+        "translationNote": "WEB conveys the doubled Hebrew form with “surely.” In 2:2, translations differ in how they connect running and reading. A reader carrying the message is a plausible interpretation, not a recovered description of the delivery system.",
+        "caution": "An appointed time does not give the reader a date to calculate. Nor does the writing command establish a general promise that any written personal goal will come true.",
+        "refs": [
+          "2:2",
+          "2:3"
+        ],
+        "sourceIds": [
+          "hebrew-hab",
+          "web-hab",
+          "english-editions",
+          "usccb-hab-2"
+        ]
+      },
+      {
+        "title": "Faith and faithfulness under pressure",
+        "original": "בֶּאֱמוּנָתוֹ — beʾemunato — by or in his faithfulness or faith",
+        "explanation": "The righteous person’s life is contrasted with the distorted self described before it. The Hebrew noun can express reliability or fidelity; the surrounding call to wait keeps trust in divine justice in view. The NET translators favor the righteous person’s faithfulness but discuss other possible referents for the possessive suffix.",
+        "translationNote": "WEB’s “his faith” and Brenton’s “my faith” differ in person as well as interpretive emphasis. The opening clause is also difficult: WEB’s “puffed up” is one rendering of disputed Hebrew wording.",
+        "caution": "Do not turn the choice of English noun into a simple opposition between Hebrew conduct and Greek belief. Later Christian quotations give the line additional settings; begin with Habakkuk’s argument about oppression and waiting.",
+        "refs": [
+          "2:3",
+          "2:4",
+          "2:5"
+        ],
+        "sourceIds": [
+          "hebrew-hab",
+          "english-editions",
+          "net-hab-2-4",
+          "usccb-hab-2"
+        ]
+      },
+      {
+        "title": "Five woes reverse the conqueror’s claims",
+        "original": "הוֹי — hoy — woe or alas",
+        "explanation": "Five cries introduce accusations about acquisition, household security, blood-built cities, humiliating intoxication, and appeals to lifeless objects. The plunderer will be plundered; the one who humiliates others with drink must drink in turn. The taunt introduced in 2:6 gives the subjected peoples a voice.",
+        "translationNote": "WEB repeats “Woe” at 2:6, 2:9, 2:12, 2:15, and 2:19. Reading those openings aloud reveals the sequence even where the individual sayings differ in length.",
+        "caution": "The reversal is expressed through judgment and retaliation. Describing this rhetoric does not make its humiliating acts a pattern for readers to imitate.",
+        "refs": [
+          "2:6",
+          "2:8",
+          "2:9",
+          "2:12",
+          "2:15",
+          "2:16",
+          "2:19"
+        ],
+        "sourceIds": [
+          "hebrew-hab",
+          "web-hab"
+        ]
+      },
+      {
+        "title": "Speaking stones and silent idols",
+        "original": "אֱלִילִים אִלְּמִים — ʾelilim ʾillemim — mute idols; הַס — has — hush",
+        "explanation": "A wall’s stone cries and its beam answers in 2:11, while people later ask a lifeless object to awaken and teach. Similar sounds link the Hebrew words for idols and muteness. The chapter closes by calling the earth to silence before Yahweh, reversing the contrast between those who can and cannot answer.",
+        "translationNote": "English conveys the irony but loses much of the sound resemblance. The relation to the book’s repeated requests for an answer becomes clearer when these passages are read together.",
+        "caution": "Sound resemblance is not proof that the words have one etymology. The speaking materials are poetic witnesses to injustice, not a report of a literal conversation.",
+        "refs": [
+          "2:11",
+          "2:18",
+          "2:19",
+          "2:20"
+        ],
+        "sourceIds": [
+          "hebrew-hab",
+          "web-hab"
+        ]
+      },
+      {
+        "title": "A prayer with performance directions",
+        "original": "שִׁגְיֹנוֹת — shigyonot; סֶלָה — selah; לַמְנַצֵּחַ — lamnatseaḥ — for the director",
+        "explanation": "Chapter 3 opens with a prayer heading, places Selah at three points, and closes with a director and stringed instruments. The speaker moves from describing God to addressing God and finally to personal trembling and resolve. The frame invites hearing the passage as a performed prayer.",
+        "translationNote": "The meaning of shigyonot is uncertain. WEB interprets it as “victorious music”; KJV retains “Shigionoth”; Douay-Rheims has “FOR IGNORANCES.” Brenton’s “Pause” likewise interprets Selah rather than restoring a known performance instruction.",
+        "caution": "These markers do not recover the original tune or prove when the prayer was composed. Keep the uncertainty visible instead of treating one English heading as a settled Hebrew definition.",
+        "refs": [
+          "3:1",
+          "3:3",
+          "3:8",
+          "3:9",
+          "3:13",
+          "3:16",
+          "3:19"
+        ],
+        "sourceIds": [
+          "hebrew-hab",
+          "english-editions",
+          "usccb-hab-3"
+        ]
+      }
+    ],
+    "examplesHeading": "Hebrew expressions to notice",
+    "examples": [
+      {
+        "ref": "1:2",
+        "form": "חָמָס — ḥamas",
+        "meaning": "Violence.",
+        "why": "The opening cry names the wrong that returns in the description of the Chaldean advance at 1:9.",
+        "sourceIds": [
+          "hebrew-hab",
+          "web-hab"
+        ]
+      },
+      {
+        "ref": "2:3",
+        "form": "בֹא יָבֹא — boʾ yavoʾ",
+        "meaning": "It will surely come.",
+        "why": "An infinitive absolute followed by a finite verb reinforces the assurance; the same verse still tells the hearer to wait.",
+        "sourceIds": [
+          "hebrew-hab",
+          "web-hab"
+        ]
+      },
+      {
+        "ref": "2:4",
+        "form": "בֶּאֱמוּנָתוֹ — beʾemunato",
+        "meaning": "By or in his faithfulness or faith.",
+        "why": "The suffix and the noun both matter. WEB has “his faith,” while Brenton has “my faith”; neither English phrase eliminates the interpretive questions.",
+        "sourceIds": [
+          "hebrew-hab",
+          "english-editions",
+          "net-hab-2-4"
+        ]
+      },
+      {
+        "ref": "2:18",
+        "form": "אֱלִילִים אִלְּמִים — ʾelilim ʾillemim",
+        "meaning": "Mute idols.",
+        "why": "The audible resemblance reinforces the inability to answer that the following verse dramatizes.",
+        "sourceIds": [
+          "hebrew-hab",
+          "web-hab"
+        ]
+      },
+      {
+        "ref": "3:1",
+        "form": "שִׁגְיֹנוֹת — shigyonot",
+        "meaning": "An uncertain designation, probably connected with performance.",
+        "why": "WEB’s “victorious music” interprets the term; KJV leaves a transliterated form for readers to see.",
+        "sourceIds": [
+          "hebrew-hab",
+          "english-editions",
+          "usccb-hab-3"
+        ]
+      },
+      {
+        "ref": "3:13",
+        "form": "מְשִׁיחֶךָ — meshiḥekha",
+        "meaning": "Your anointed.",
+        "why": "The expression designates an anointed figure. Douay-Rheims’ “thy Christ” and later Christian interpretations should be distinguished from treating the Hebrew expression as a personal name.",
+        "sourceIds": [
+          "hebrew-hab",
+          "english-editions"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Prophetic dialogue, taunt, and prayer",
+    "how": "Follow the complaint and answer across the chapter break, then hear the five woes as an indictment of oppressive power. Read the prayer’s cosmic and military images as poetry before asking which historical event each might evoke."
+  },
+  "cast": [
+    {
+      "name": "Habakkuk",
+      "who": "The prophet named in the headings, presented as questioning, waiting, and praying."
+    },
+    {
+      "name": "Yahweh",
+      "who": "The God addressed by the prophet, answering the complaint and appearing as deliverer in the prayer."
+    },
+    {
+      "name": "The Chaldeans",
+      "who": "The Babylonian imperial force whose violence sharpens the prophet’s question. No Babylonian king is named."
+    },
+    {
+      "name": "The subjected peoples",
+      "who": "People gathered and plundered by the oppressor, imagined taking up the taunt against him in 2:6."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Violence and a troubling answer",
+      "chapters": "1",
+      "precise": "1:1–17",
+      "note": "The heading is followed by complaint (1:2–4), an announcement of the Chaldean advance (1:5–11), and renewed protest (1:12–17), which continues into 2:1."
+    },
+    {
+      "heading": "Waiting and the oppressor’s reversal",
+      "chapters": "2",
+      "precise": "2:1–20",
+      "note": "The watch-post concludes the complaint. The answer starts at 2:2; a portrait of greed leads to the peoples’ taunt and five woes. The chapter closes with silence before Yahweh."
+    },
+    {
+      "heading": "Prayer through terror and loss",
+      "chapters": "3",
+      "precise": "3:1–19",
+      "note": "A performance heading and plea introduce God’s terrifying appearance. The speaker then voices trembling, the prospect of failed food supplies, and a resolve to rejoice, before the closing musical direction."
+    }
+  ],
+  "purpose": "Habakkuk presses the problem of justice when both local wrongdoing and imperial power seem unchecked. It imagines the oppressor’s downfall and sustains a posture of trust, while keeping complaint, fear, and threatened loss within the book’s own voice.",
+  "snags": [
+    {
+      "snag": "Does the book endorse the invading empire?",
+      "help": "The announced invasion provokes another complaint. In 1:11 the force is guilty, and in 1:13 the speaker challenges the swallowing of people more righteous than their conqueror. The later woes condemn the oppressor. These tensions matter more than taking the first answer as the book’s last word."
+    },
+    {
+      "snag": "What should a reader do with the humiliating and violent images?",
+      "help": "At 2:15 forced intoxication and exposure are condemned; 2:16 turns shame back on the perpetrator. Chapter 3 pictures deliverance through crushing and piercing. Acknowledge both the protest against abuse and the retaliatory rhetoric without treating either as permission to harm or humiliate people."
+    },
+    {
+      "snag": "Do identical verse counts mean every sentence aligns?",
+      "help": "All four English editions have 17, 20, and 19 verses. Yet the praise clause ending WEB 3:3 begins Brenton 3:4. Brenton’s 3:5 also runs syntactically into 3:6. These are local clause differences, not a uniform shift to apply to the entire book."
+    },
+    {
+      "snag": "Why are parts of the prayer so different across translations?",
+      "help": "The Hebrew poetry is compressed and sometimes obscure, especially in 3:9 and 3:14. At 3:4 WEB has rays where KJV has horns; at 3:5 WEB has pestilence where Douay-Rheims has “the devil.” Compare the particular wording without reconstructing a precise weapon, supernatural figure, or battle sequence from one translation alone."
+    },
+    {
+      "snag": "Why does Douay-Rheims say “God my Jesus”?",
+      "help": "At 3:18 WEB reads “the God of my salvation,” and the Hebrew yishʿi means my salvation. Douay-Rheims’ wording belongs to its translation and reception history; the Hebrew sentence does not introduce Jesus as a named character."
+    },
+    {
+      "snag": "Does the ending promise immediate recovery?",
+      "help": "The failed crops and absent livestock in 3:17 remain in view when the speaker resolves to rejoice. No recovery is narrated afterward. The poem’s trust does not require its fear or deprivation to be omitted from the reading."
+    }
+  ],
+  "debates": [
+    {
+      "question": "How does the prayer relate to the dialogue?",
+      "settled": "Chapter 3 names Habakkuk and has a distinct prayer and performance frame; the received book places it after the dialogue and woes.",
+      "positions": [
+        {
+          "view": "A prayer answering the earlier exchange",
+          "grounds": "The movement from complaint and waiting toward trust gives the whole book a coherent literary course."
+        },
+        {
+          "view": "A hymn joined to the prophetic dialogue",
+          "grounds": "Its separate heading and musical framing allow a history in which editors brought an existing prayer into the book, a possibility discussed in the USCCB introduction."
+        }
+      ],
+      "soWhat": "Read the three chapters together without claiming that literary coherence proves a single act of composition. The first-century BCE commentary on chapters 1–2 does not by itself settle the question."
+    },
+    {
+      "question": "How should “faith” in 2:4 be explained?",
+      "settled": "The line stands between the call to wait for the vision and the portrait of insatiable greed.",
+      "positions": [
+        {
+          "view": "The righteous person’s steadfast trust and fidelity",
+          "grounds": "This reading connects the possessive suffix with the righteous person and hears the noun in relation to patient, reliable conduct."
+        },
+        {
+          "view": "Greater emphasis on the reliability of God or the vision",
+          "grounds": "Other readings attach the expression’s force to what is trusted. NET notes discuss alternative antecedents, and Brenton’s “my faith” makes the difference in pronoun especially visible."
+        }
+      ],
+      "soWhat": "These emphases need not create a simple split between belief and behavior. Later Christian citations in Romans, Galatians, and Hebrews should be read in their own arguments as well as compared with Habakkuk."
+    }
+  ],
+  "sources": [
+    {
+      "id": "web-hab",
+      "label": "Habakkuk in the World English Bible",
+      "says": "Primary wording, voices, images, chapter shape, and verse count.",
+      "href": "/scriptures/text/web/HAB.json"
+    },
+    {
+      "id": "english-editions",
+      "label": "Habakkuk in WEB, KJV, Douay-Rheims, and Brenton",
+      "says": "Direct comparison establishes the 17/20/19 verse counts, differences in 2:4, musical headings, and the clause division at 3:3–4."
+    },
+    {
+      "id": "hebrew-hab",
+      "label": "Open Scriptures Hebrew Bible: Habakkuk",
+      "says": "Hebrew wording and morphology, including the emphatic verb pair, possessive suffix, repeated woes, sound resemblance, and musical markers. OSHB morphology is CC BY 4.0; the WLC text is public domain.",
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hab.xml"
+    },
+    {
+      "id": "usccb-hab-intro",
+      "label": "USCCB, Introduction to Habakkuk",
+      "says": "Places the crisis in the Babylonian period and discusses whether chapter 3 answers the dialogue or was joined to it.",
+      "url": "https://bible.usccb.org/bible/habakkuk/0"
+    },
+    {
+      "id": "usccb-hab-2",
+      "label": "USCCB, Habakkuk 2 notes",
+      "says": "Discusses proclamation of the vision, patient trust, the reversal of oppression, and New Testament uses of 2:4.",
+      "url": "https://bible.usccb.org/bible/habakkuk/2"
+    },
+    {
+      "id": "usccb-hab-3",
+      "label": "USCCB, Habakkuk 3 notes",
+      "says": "Marks the uncertainty of Shigyonot, the performance setting, and the difficult wording of 3:14.",
+      "url": "https://bible.usccb.org/bible/habakkuk/3"
+    },
+    {
+      "id": "net-hab-2-4",
+      "label": "NET Bible, translators’ notes on Habakkuk 2:4",
+      "says": "Explains disputed wording in the first clause and alternative meanings and referents for the expression rendered faith or faithfulness.",
+      "url": "https://classic.net.bible.org/passage.php?passage=Hab+2:4"
+    },
+    {
+      "id": "imj-hab",
+      "label": "Israel Museum, The Faces behind the Scrolls, Habakkuk commentary entry",
+      "says": "Dates the Hebrew commentary to about 50 BCE and identifies its coverage as Habakkuk’s first two chapters.",
+      "url": "https://museum.imj.org.il/pdf/dss-english.pdf"
+    },
+    {
+      "id": "brenton-edition",
+      "label": "Brenton Septuagint Translation, eBible edition",
+      "says": "Identifies the English Septuagint edition used for comparison.",
+      "url": "https://ebible.org/eng-Brenton/"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Follow the complaint across the first chapter break before treating the watch-post as a new subject.",
+      "refs": [
+        "1:13",
+        "1:17",
+        "2:1"
+      ]
+    },
+    {
+      "tip": "Read the assurance and the command to wait together; then compare the two halves of the statement about righteous life.",
+      "refs": [
+        "2:2",
+        "2:3",
+        "2:4"
+      ]
+    },
+    {
+      "tip": "Mark the five woes and notice how the oppressor’s own actions become the pattern of his downfall.",
+      "refs": [
+        "2:6",
+        "2:9",
+        "2:12",
+        "2:15",
+        "2:19"
+      ]
+    },
+    {
+      "tip": "Hear the prayer’s changes of address and retain the speaker’s fear alongside the final joy.",
+      "refs": [
+        "3:3",
+        "3:8",
+        "3:16",
+        "3:17",
+        "3:18",
+        "3:19"
+      ]
+    }
+  ],
+  "next": "Read Jeremiah for another response to Babylonian power, or the Psalms for complaint and the poetry of God’s appearance. Compare the themes without assuming identical authorship or a demonstrable direction of borrowing.",
+  "traditionNote": "Habakkuk is one of the Twelve Prophets. The English editions compared here retain three chapters and the same verse counts. References follow WEB; Greek-based and Latin-based English wording can differ substantially even where the printed numbers agree."
+}

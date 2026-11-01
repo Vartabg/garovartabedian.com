@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { Canons, Tradition } from "@/lib/scriptures/types";
+import { hostedBookEdition } from "@/lib/scriptures/edition-counts";
 import Shelf from "../[tradition]/Shelf";
 
 /**
@@ -58,6 +59,7 @@ export default function BookList({
               <ul className="scr-book-list">
                 {sec.books.map((id) => {
                   const meta = canons.books[id];
+                  const edition = hostedBookEdition(id, tradition.transPreference);
                   return (
                     <li key={id}>
                       <Link href={`/scriptures/${tradition.id}/${id}`}>
@@ -65,7 +67,7 @@ export default function BookList({
                           {meta?.name ?? id}
                         </span>
                         <span className="scr-book-list-meta">
-                          {meta?.chapters ?? "?"} chapters
+                          {edition ? `${edition.chapters} chapter${edition.chapters === 1 ? "" : "s"} · ${edition.name}` : "Hosted edition unavailable"}
                         </span>
                       </Link>
                     </li>

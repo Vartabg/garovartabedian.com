@@ -1,0 +1,5 @@
+# Independent review: five early writings
+
+Reviewer Maxwell (native Codex fresh context, no conversation history), completed against baseline 7bb6335612d0eb0c973865378c92488a70e97127 and plan revision SHA-256 24ec87a13b173f57155c89096e563e11eac59ec81d3ab561ad26dac6e1ee5d30. The reviewer reported reading the plan, project instructions, all stated code/config sources, selected hosted texts, and adjacent Epistula chapters. No edits or application/tests were run.
+
+Four findings accepted: distinguish the selected Epistula chapter from its continuing context; identify the Hermas vision speaker separately from the Shepherd; specify the legacy published-record and source validation contract; and verify library reader anchors from its route. Additional test and hash-contract clarifications accepted. Resolutions are recorded in the plan's review corrections. No design blockers remain; rendered reader links and source rights are still subject to implementation verification. The review caught meaningful attribution and boundary issues; review time and effect on rework were not measured.

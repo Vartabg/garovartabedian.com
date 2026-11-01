@@ -78,7 +78,7 @@ export default function Versal({
     defs.append(gradient);
     svg.append(defs);
 
-    const berryColor = getComputedStyle(document.documentElement).getPropertyValue("--rubric").trim() || "#a6301c";
+    const berryColor = getComputedStyle(document.documentElement).getPropertyValue("--rubric").trim() || "#a8232e";
     const rx = box.width * 0.5;
     const ry = box.height * 0.42;
     const count = 8;

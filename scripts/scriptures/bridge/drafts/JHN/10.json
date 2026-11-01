@@ -1,0 +1,6348 @@
+{
+ "book": "JHN",
+ "chapter": 10,
+ "model": "gpt-6.1-sol",
+ "promptVersion": 1,
+ "chunks": [
+  {
+   "customId": "JHN_10_1-12",
+   "source": "Drafted by gpt-6.1-sol (Codex) in a Codex session",
+   "collectedAt": "2026-10-16"
+  },
+  {
+   "customId": "JHN_10_14-21",
+   "source": "Drafted by gpt-6.1-sol (Codex) in a Codex session",
+   "collectedAt": "2026-10-16"
+  },
+  {
+   "customId": "JHN_10_24-25",
+   "source": "Drafted by gpt-6.1-sol (Codex) in a Codex session",
+   "collectedAt": "2026-10-16"
+  },
+  {
+   "customId": "JHN_10_27-28",
+   "source": "Drafted by gpt-6.1-sol (Codex) in a Codex session",
+   "collectedAt": "2026-10-16"
+  },
+  {
+   "customId": "JHN_10_30-37",
+   "source": "Drafted by gpt-6.1-sol (Codex) in a Codex session",
+   "collectedAt": "2026-10-16"
+  },
+  {
+   "customId": "JHN_10_39-42",
+   "source": "Drafted by gpt-6.1-sol (Codex) in a Codex session",
+   "collectedAt": "2026-10-16"
+  }
+ ],
+ "verses": [
+  {
+   "n": 1,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0",
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2,
+      3
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5,
+      6
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "13",
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17,
+      18
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19,
+      20,
+      21
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      22
+     ],
+     "og": [
+      "18",
+      "20"
+     ],
+     "kind": "link",
+     "note": "Greek resumes the subject with “that one” before “is.”",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      23,
+      24
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      25
+     ],
+     "og": [
+      "21"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      26,
+      27
+     ],
+     "og": [
+      "22"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1,
+      2
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9,
+      10
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11,
+      12,
+      13
+     ],
+     "og": [
+      "8",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4
+     ],
+     "og": [],
+     "kind": "supplied",
+     "note": "English supplies the understood object of “opens.”",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5,
+      6
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10,
+      11
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "7",
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14,
+      15
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16,
+      17
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18
+     ],
+     "og": [
+      "12",
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      20
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21
+     ],
+     "og": [
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      22,
+      24
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      23
+     ],
+     "og": [
+      "20"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "11"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1,
+      2,
+      3
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4,
+      5,
+      6
+     ],
+     "og": [
+      "1",
+      "2",
+      "3"
+     ],
+     "kind": "link",
+     "note": "Greek says “all his own” with “sheep” understood.",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7,
+      8
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17,
+      18
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      20
+     ],
+     "og": [
+      "15",
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "links": [
+    {
+     "en": [
+      0,
+      1,
+      5
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2,
+      3,
+      4
+     ],
+     "og": [
+      "2",
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6,
+      7
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9,
+      10
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14,
+      16
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19,
+      20
+     ],
+     "og": [
+      "12",
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "1"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "5",
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "0",
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4,
+      5
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7,
+      9
+     ],
+     "og": [
+      "7",
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "11",
+      "12",
+      "13"
+     ],
+     "kind": "link",
+     "note": "English compresses “what were the things which” into “what.”",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11,
+      12,
+      13
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "4",
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6,
+      7
+     ],
+     "og": [
+      "6",
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8,
+      9
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11,
+      12
+     ],
+     "og": [
+      "11",
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "15",
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "10"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14,
+      15
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0",
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6,
+      7
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15,
+      16,
+      17
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19,
+      20
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      22,
+      23
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      24
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "2",
+      "4",
+      "5"
+     ],
+     "kind": "link",
+     "note": "Greek “does not ... except” becomes English “only.”",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9,
+      10
+     ],
+     "og": [
+      "12",
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12,
+      13,
+      14
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17,
+      18
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [],
+     "kind": "supplied",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      20
+     ],
+     "og": [
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "8"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0",
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "4",
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "8",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8,
+      9
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "10",
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4,
+      5
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8,
+      9
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "8",
+      "11"
+     ],
+     "kind": "link",
+     "note": "Greek says the sheep “are not his own.”",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      20
+     ],
+     "og": [
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      22
+     ],
+     "og": [
+      "20"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      23
+     ],
+     "og": [
+      "21"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      24
+     ],
+     "og": [
+      "23"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      25
+     ],
+     "og": [
+      "24"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      26
+     ],
+     "og": [
+      "25"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      27,
+      28
+     ],
+     "og": [
+      "26"
+     ],
+     "kind": "link",
+     "note": "English names the sheep where Greek uses “them.”",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      29
+     ],
+     "og": [
+      "27"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      30
+     ],
+     "og": [
+      "28"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      31
+     ],
+     "og": [],
+     "kind": "supplied",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "16",
+      "22"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0",
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "4",
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5,
+      6
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7,
+      8
+     ],
+     "og": [
+      "8",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10,
+      11
+     ],
+     "og": [
+      "11",
+      "12"
+     ],
+     "kind": "link",
+     "note": "Greek says “my own know me” while English uses passive voice.",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12,
+      13,
+      14
+     ],
+     "og": [
+      "13",
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "6"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7,
+      8
+     ],
+     "og": [
+      "5",
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11,
+      12,
+      13
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "10",
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "9"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "8",
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16,
+      17,
+      18
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      20
+     ],
+     "og": [
+      "16",
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21,
+      22,
+      23
+     ],
+     "og": [
+      "21"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      24
+     ],
+     "og": [
+      "22"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      25
+     ],
+     "og": [
+      "23"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      26
+     ],
+     "og": [],
+     "kind": "supplied",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      27
+     ],
+     "og": [
+      "24"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      28
+     ],
+     "og": [
+      "25"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "0",
+      "20"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "0",
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6,
+      7,
+      8
+     ],
+     "og": [
+      "7",
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "9",
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12,
+      13,
+      14
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2,
+      4
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8,
+      9,
+      11
+     ],
+     "og": [
+      "6",
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14,
+      15
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17,
+      18,
+      20
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      22,
+      23
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      24
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      25,
+      26
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      27
+     ],
+     "og": [
+      "20"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      28
+     ],
+     "og": [
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      29,
+      30
+     ],
+     "og": [
+      "24"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      31
+     ],
+     "og": [
+      "21",
+      "22"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      32
+     ],
+     "og": [
+      "23"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      33
+     ],
+     "og": [
+      "25"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      34
+     ],
+     "og": [
+      "28"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      35
+     ],
+     "og": [
+      "26",
+      "27"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [],
+     "kind": "supplied",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1,
+      2
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8,
+      9
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "7",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4,
+      5
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6,
+      7
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9,
+      10
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12,
+      13,
+      14
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15,
+      16
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "1"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "The participle means a person possessed by a demon.",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13,
+      14,
+      15
+     ],
+     "og": [
+      "8",
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16,
+      17,
+      18
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19,
+      20
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21,
+      22
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      23,
+      24,
+      25
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      26,
+      27
+     ],
+     "og": [],
+     "kind": "supplied",
+     "note": "English adds a confirming question tag.",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8,
+      9
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10,
+      11
+     ],
+     "og": [
+      "8",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ],
+     "og": [
+      "10",
+      "11",
+      "12",
+      "13"
+     ],
+     "kind": "link",
+     "note": "Greek asks literally how long they will “lift our soul,” meaning keep them in suspense.",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19,
+      20
+     ],
+     "og": [
+      "15",
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      22
+     ],
+     "og": [
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      23
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      24
+     ],
+     "og": [
+      "20"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      25
+     ],
+     "og": [
+      "21"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "2",
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7,
+      9
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13,
+      14
+     ],
+     "og": [
+      "12",
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17
+     ],
+     "og": [
+      "17",
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18
+     ],
+     "og": [
+      "15",
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "20"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      20
+     ],
+     "og": [
+      "21"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21
+     ],
+     "og": [
+      "22"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      22
+     ],
+     "og": [
+      "23"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "2",
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "0",
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "4",
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6,
+      7
+     ],
+     "og": [
+      "8",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10,
+      11
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0",
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4,
+      5
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6,
+      7,
+      9
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "6",
+      "7",
+      "9",
+      "10",
+      "11"
+     ],
+     "kind": "link",
+     "note": "Greek combines double negation with “for the age” to express “never.”",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11,
+      12
+     ],
+     "og": [
+      "13",
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13,
+      14
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16,
+      17
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18
+     ],
+     "og": [
+      "20"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "18",
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "5"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "links": [
+    {
+     "en": [
+      0,
+      4
+     ],
+     "og": [
+      "0",
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "2",
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4,
+      5
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "English uses a possessive where Greek has “the Father.”",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15,
+      16
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18,
+      19,
+      20
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4,
+      6
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9,
+      11
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16,
+      20
+     ],
+     "og": [
+      "15",
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      18,
+      19
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      22
+     ],
+     "og": [
+      "20"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "13"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "2",
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4
+     ],
+     "og": [
+      "4",
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "8",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9,
+      10
+     ],
+     "og": [
+      "12",
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11,
+      12
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "11"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1,
+      2
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9,
+      10
+     ],
+     "og": [
+      "8",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "12",
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16,
+      17
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "links": [
+    {
+     "en": [
+      0,
+      1,
+      2
+     ],
+     "og": [
+      "9",
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4,
+      5
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14,
+      15
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17,
+      18
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19,
+      20
+     ],
+     "og": [
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      21,
+      22
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      23,
+      24
+     ],
+     "og": [
+      "16",
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "11"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1,
+      3
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6,
+      8
+     ],
+     "og": [
+      "5",
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "links": [
+    {
+     "en": [
+      0,
+      1
+     ],
+     "og": [
+      "0"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3,
+      4
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7,
+      8,
+      9
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "8",
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "1"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "links": [
+    {
+     "en": [
+      0,
+      1,
+      2
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      5
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "7"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14,
+      15
+     ],
+     "og": [
+      "12",
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17,
+      18
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "0"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 41,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4,
+      5
+     ],
+     "og": [
+      "6"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      6
+     ],
+     "og": [
+      "8"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      7
+     ],
+     "og": [
+      "9"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      8
+     ],
+     "og": [
+      "11"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      9
+     ],
+     "og": [
+      "12"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      10
+     ],
+     "og": [
+      "10"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      11
+     ],
+     "og": [
+      "14"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      12
+     ],
+     "og": [
+      "13"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      13
+     ],
+     "og": [
+      "15"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      14
+     ],
+     "og": [
+      "17"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      15
+     ],
+     "og": [
+      "16"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      16
+     ],
+     "og": [
+      "18"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      17,
+      18
+     ],
+     "og": [
+      "19"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      19
+     ],
+     "og": [
+      "21"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      20
+     ],
+     "og": [
+      "20"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "0",
+      "5",
+      "7"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "links": [
+    {
+     "en": [
+      0
+     ],
+     "og": [
+      "1"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      1
+     ],
+     "og": [
+      "2"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      2
+     ],
+     "og": [
+      "3"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      3
+     ],
+     "og": [
+      "4"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [
+      4
+     ],
+     "og": [
+      "5"
+     ],
+     "kind": "link",
+     "note": "",
+     "confidence": "high"
+    },
+    {
+     "en": [],
+     "og": [
+      "0"
+     ],
+     "kind": "untranslated",
+     "note": "",
+     "confidence": "high"
+    }
+   ]
+  }
+ ]
+}

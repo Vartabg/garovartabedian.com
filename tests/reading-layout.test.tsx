@@ -14,9 +14,9 @@ const parts = (text: string) => formatReadingText(text).flatMap(b => b.fragments
 test("all downloaded hosted prose round-trips, keeps note markers and preserves contiguous source offsets", () => {
   const audit = auditReadingLayout();
   assert.equal(audit.early.works, 23);
-  assert.equal(audit.library.editions, 102);
-  assert.equal(audit.library.sections, 5099);
-  assert.equal(audit.library.sourceBlocks, 45649);
+  assert.equal(audit.library.editions, 103);
+  assert.equal(audit.library.sections, 5111);
+  assert.equal(audit.library.sourceBlocks, 45708);
   assert.equal(audit.scripture.verses, 136321);
   assert.ok(audit.early.editorialBreaks > 100);
   assert.ok(audit.library.editorialBreaks > 1000);

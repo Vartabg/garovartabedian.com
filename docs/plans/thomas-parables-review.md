@@ -1,0 +1,5 @@
+# Independent review: Thomas parallels
+
+Reviewer: fresh-context Codex subagent Gibbs (`01a17aaf-7f2d-7a20-8114-3b8af8061ce2`), reading the plan and named source files. Initial review identified three material gaps: absent mapping evidence, unspecified no-JavaScript access, and incomplete loading/error/destination checks. Accepted all three and amended `thomas-parables.md` with a source-to-entry table, a server-rendered no-script link index, and explicit checks. The same reviewer re-read the revised plan and found no remaining material design blocker, checking sample citations; the implementer remains responsible for verifying every mapping and target. No review claim is made about unreviewed evidence. This review added planning time; no productivity comparison is available.
+
+Implementation review (same reviewer): P2, keyboard test activated the saying with a mouse click. Accepted: test now tabs to the link and presses Enter. Targeted parables unit tests passed in review; browser verification remains with the implementer.

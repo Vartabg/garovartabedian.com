@@ -7,6 +7,7 @@
 
 import canonsData from "../../../public/scriptures/canons.json";
 import type { Canons } from "./types";
+import { hostedEditions, type HostedEditionCount } from "./edition-counts";
 
 export const canons = canonsData as Canons;
 
@@ -40,6 +41,7 @@ export type CanonicalBook = {
   categoryName: string;
   testament: "OT" | "NT" | "Deutero" | "Pseudepigrapha";
   chapters: number;
+  hostedEditions: HostedEditionCount[];
   originalLanguage: "Hebrew" | "Aramaic" | "Hebrew/Aramaic" | "Greek" | "Ge'ez";
   manuscripts: ManuscriptWitness[];
   inTraditions: Record<TraditionKey, boolean>;
@@ -255,6 +257,7 @@ function buildBookList(): CanonicalBook[] {
 
   return canons.bookOrder.map((id) => {
     const bookData = canons.books[id];
+    const editions = hostedEditions(id);
     const { cat, name: catName, test } = getCategory(id);
     const inProt = traditionsMap.get("protestant")?.has(id) ?? false;
     const inCath = traditionsMap.get("catholic")?.has(id) ?? false;
@@ -271,7 +274,8 @@ function buildBookList(): CanonicalBook[] {
       category: cat,
       categoryName: catName,
       testament: test,
-      chapters: bookData?.chapters ?? 1,
+      chapters: editions.length ? Math.max(...editions.map(edition => edition.chapters)) : 0,
+      hostedEditions: editions,
       originalLanguage: getLanguage(id),
       manuscripts: getWitnesses(id),
       inTraditions: {
@@ -290,6 +294,11 @@ function buildBookList(): CanonicalBook[] {
 }
 
 export const CANONICAL_BOOKS: CanonicalBook[] = buildBookList();
+
+/** Matrix rows are hosted records; traditional canons may group them differently. */
+export function hostedTraditionCount(tradition: TraditionKey): number {
+  return CANONICAL_BOOKS.filter(book => book.inTraditions[tradition]).length;
+}
 
 export const TRADITION_METADATA: Record<
   TraditionKey,
@@ -368,13 +377,13 @@ export function compareTwoTraditions(
 
   let summary = "";
   if (onlyInA.length === 0 && onlyInB.length === 0) {
-    summary = `${nameA} and ${nameB} share identical hosted books in this matrix.`;
+    summary = `${nameA} and ${nameB} share identical hosted entries in this matrix.`;
   } else if (onlyInA.length > 0 && onlyInB.length === 0) {
-    summary = `${nameA} includes ${onlyInA.length} additional book(s) not received in ${nameB}.`;
+    summary = `This matrix lists ${onlyInA.length} additional hosted entries under ${nameA} that are not listed under ${nameB}.`;
   } else if (onlyInA.length === 0 && onlyInB.length > 0) {
-    summary = `${nameB} includes ${onlyInB.length} additional book(s) not received in ${nameA}.`;
+    summary = `This matrix lists ${onlyInB.length} additional hosted entries under ${nameB} that are not listed under ${nameA}.`;
   } else {
-    summary = `${nameA} includes ${onlyInA.length} book(s) absent in ${nameB}, while ${nameB} includes ${onlyInB.length} book(s) absent in ${nameA}.`;
+    summary = `This matrix lists ${onlyInA.length} hosted entries only under ${nameA} and ${onlyInB.length} only under ${nameB}.`;
   }
 
   return {

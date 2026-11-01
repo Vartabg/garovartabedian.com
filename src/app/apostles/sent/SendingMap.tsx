@@ -1,5 +1,6 @@
 import mapLand from "@/lib/apostles/map-land.json";
 import type { MapCity, SentData, SentRoute } from "@/lib/apostles/types";
+import MapGuide, { MapDestinations } from "@/app/_components/MapGuide";
 
 const GEO = mapLand as {
   bounds: { west: number; east: number; south: number; north: number };
@@ -97,18 +98,23 @@ export default function SendingMap({ data }: { data: SentData }) {
 
   return (
     <figure className="ap-smap">
+      <MapGuide title="Follow a road to its evidence" description="Choose an apostle to reach the claims below. Line styles grade the sources; illustrated corridors do not establish an exact itinerary.">
+        <MapDestinations
+          label="Apostles on the sending map"
+          items={data.rays.map((ray) => ({ href: `#sent-${ray.apostleId}`, label: ray.name }))}
+        />
+      </MapGuide>
       <div
         className="ap-smap-scroll"
         tabIndex={0}
         role="group"
         aria-label="Sending map — scrolls sideways on narrow screens"
       >
-        {/* role="img": the in-map links are sighted-keyboard redundancy; the
-            same #sent-* targets exist as real HTML links in the list below. */}
         <svg
           viewBox={`0 0 ${GEO.view.w} ${GEO.view.h}`}
-          role="img"
-          aria-labelledby="sending-map-title sending-map-desc"
+          role="group"
+          aria-labelledby="sending-map-title"
+          aria-describedby="sending-map-desc"
         >
           <title id="sending-map-title">
             The sending of the twelve, from Jerusalem, on the map of the known world
@@ -154,7 +160,7 @@ export default function SendingMap({ data }: { data: SentData }) {
 
           {/* Roads under pins, each linked to its record below. */}
           {data.routes.map((route) => (
-            <a key={route.apostleId} href={`#sent-${route.apostleId}`} className="ap-smap-roadlink">
+            <a key={route.apostleId} href={`#sent-${route.apostleId}`} className="ap-smap-roadlink" aria-label={`${route.name}: read the graded claims${route.uncertain ? "; destination disputed" : ""}`}>
               <title>{`${route.name} — open the graded claims`}</title>
               <g className={`ap-smap-road${route.uncertain ? " ap-smap-uncertain" : ""}`}>
                 {routePath(route).map(
@@ -198,7 +204,7 @@ export default function SendingMap({ data }: { data: SentData }) {
                 {city.hub ? (
                   stayed.length > 0 ? (
                     // Dot and ring share the link so the whole hub is a target.
-                    <a href={`#sent-${stayed[0].apostleId}`} className="ap-smap-roadlink">
+                    <a href={`#sent-${stayed[0].apostleId}`} className="ap-smap-roadlink" aria-label={`${stayed[0].name}: read the Jerusalem record`}>
                       <title>{stayed.map((s) => `${s.name} — ${s.to}`).join("; ")}</title>
                       <circle cx={p.x} cy={p.y} r={4.4} className="ap-smap-dot ap-smap-hub" />
                       {stayed.map((s, i) => (
