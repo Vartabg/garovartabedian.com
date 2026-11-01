@@ -1,5 +1,7 @@
 import { WORLD_REGISTRY } from "./world-registry";
+export { DISCOVERY, RESEARCH_TOOLS } from "./discovery-content";
 export { ACCESSIBILITY_CASE_STUDY } from "./accessibility-case-study";
+export { MERGE_MONITOR_CASE_STUDY } from "./merge-monitor-case-study";
 
 /**
  * Shared, structured portfolio content — the single substance spine every
@@ -7,9 +9,9 @@ export { ACCESSIBILITY_CASE_STUDY } from "./accessibility-case-study";
  * (no invented metrics/users/revenue; JobPilot = human-in-the-loop; View = first
  * responder + primary contact, not team lead; Navy = veteran only, no specifics).
  *
- * There is exactly ONE prose source (this file). No version may author copy of
- * its own — that's what keeps every "version" truthful no matter how the
- * presentation changes.
+ * Shared prose lives here and in the content modules re-exported above.
+ * Presentations consume that same copy so claims stay consistent as the
+ * interface changes.
  */
 
 export const PROFILE = {
@@ -105,6 +107,9 @@ export const ACTION_LABELS = {
   liveSite: "Visit live site",
 } as const;
 
+/** The public copy of this site's code (a snapshot of the private working repository). */
+export const SITE_SOURCE_URL = "https://github.com/Vartabg/garovartabedian.com";
+
 export type Project = {
   name: string;
   tagline: string;
@@ -144,8 +149,8 @@ export const PROJECTS: Project[] = [
     tagline: "A local coordination board for AI coding agents.",
     desc: "Keeps shared goals, decisions, questions, and handoffs in one local workspace. MCP and terminal clients exchange context and record acknowledgment separately from resolution. A real pilot demonstrated a request, verification, and completed handoff between agents.",
     stack: ["React", "TypeScript", "Node.js", "MCP", "Git"],
-    href: "https://www.linkedin.com/feed/update/urn:li:activity:7504288421956247552/",
-    hrefLabel: "Watch walkthrough",
+    href: "/work/merge-monitor",
+    hrefLabel: "Explore the handoff demo",
     status: "working-local",
   },
   {
@@ -185,6 +190,8 @@ export const PROJECTS: Project[] = [
     stack: ["Next.js", "TypeScript", "Knowledge Pipelines", "NotebookLM Dossiers", "Vercel"],
     href: "/work/garovartabedian",
     hrefLabel: ACTION_LABELS.caseStudy,
+    sourceHref: SITE_SOURCE_URL,
+    sourceLabel: ACTION_LABELS.source,
     status: "shipped-live",
     demoUrl: "https://garovartabedian.com",
   },
@@ -356,11 +363,88 @@ export const RESUME: ResumeContent = {
 
 export const WORK_PAGE = {
   kicker: "Work",
-  headline: "Systems you can inspect.",
+  headline: "A small project. A useful result.",
   lede:
-    "Case studies showing how I turn ambiguous workflows, dense information, and difficult interfaces into tools people can use — with source, live demos, and honest boundaries where each project supports them.",
+    "A landing page for your business, a handler for a recurring spreadsheet task, and a job report you can make on your phone. Three focused tools, customized together for your business.",
   proofLine:
     "Start with JobPilot for workflow automation and human-review boundaries; then open this research platform for product architecture, data discipline, source provenance, and verified shipping.",
+};
+
+/** A working demo and a bounded customization offer, not a client case study. */
+export const JOB_REPORT_OFFER = {
+  id: "job-report",
+  name: "Job report tool",
+  deviceLabel: "Made for your phone",
+  href: "/work/job-report",
+  headline: "Finish the job. Hand over the report.",
+  description:
+    "Take before-and-after photos, record the work, and make a report to share with your customer. Try the mobile demo, then have one tailored to your business.",
+  demoLabel: "Try the job report demo",
+  scope: [
+    "Your business name and branding",
+    "One checklist tailored to your work",
+    "One report layout with before-and-after photos",
+    "One revision and a short handoff guide",
+  ],
+  boundary:
+    "For one business and one workflow. Team accounts, shared job history, cloud photo storage, scheduling and payments need a separate scope.",
+};
+
+export const LANDING_PAGE_OFFER = {
+  id: "landing-page",
+  name: "Simple landing page",
+  deviceLabel: "Phone + desktop visitors",
+  href: "/work/landing-page",
+  demoLabel: "Try the landing page demo",
+  description:
+    "Give your business one clear page people can open on their phone and use to contact you.",
+  scope: [
+    "One responsive page with up to five sections",
+    "Your copy, logo and images, with one main contact action",
+    "Source files and a publishing handoff",
+    "One revision and a short handoff guide",
+  ],
+  boundary:
+    "You provide the copy and assets. Domain and hosting arrangements are agreed separately; their fees are not included. Stores, accounts and custom integrations need a separate scope.",
+};
+
+export const EXCEL_HANDLER_OFFER = {
+  id: "excel-handler",
+  name: "Excel document handler",
+  deviceLabel: "Excel on a computer",
+  href: "/work/excel-handler",
+  demoLabel: "Try the Excel handler demo",
+  description:
+    "Turn one repetitive spreadsheet task into a reusable workbook that cleans up your data or produces a useful summary.",
+  scope: [
+    "One agreed cleanup or summary task",
+    "One consistent Excel or CSV input layout",
+    "A reusable workbook checked with an anonymized sample",
+    "One revision and a short handoff guide",
+  ],
+  boundary:
+    "Built for your agreed desktop Excel version. Additional file layouts, macros, connected systems and ongoing data entry need a separate scope.",
+};
+
+export const STARTER_OFFERS = [
+  LANDING_PAGE_OFFER,
+  EXCEL_HANDLER_OFFER,
+  JOB_REPORT_OFFER,
+];
+
+export const STARTER_MENU = {
+  headline: "All three. $100 total.",
+  socialLine: "Landing page + Excel handler + Mobile job report · $100 total",
+  price: 100,
+  currency: "USD",
+  priceLabel: "$100 one-time",
+  href: "/work#starter-menu",
+  inquiryLabel: "Ask for the $100 package",
+  inquiryHref: `${CONTACT_METHOD_BY_ID.email.href}?subject=${encodeURIComponent("$100 three-item business package")}&body=${encodeURIComponent("Hi Garo, I’m interested in the $100 total package: a landing page, an Excel document handler and a customized job report tool for my business.\n\nMy business:\nLanding page — what I want visitors to do, and my copy/logo/images:\nMy domain or hosting, if any:\nExcel — my recurring task, input file layout (.xlsx or .csv) and desired output:\nMy computer and Excel version:\nJob report — the work I want to record and the phone/browser I use:\n\nPlease confirm the scope and timing for all three together at $100 USD total before starting. I can provide an anonymized spreadsheet sample after we agree on what is needed.")}`,
+  description:
+    "One landing page, one Excel document handler and one customized job report tool for your business. All three together for $100 USD, paid once.",
+  nextStep:
+    "The button opens an email inquiry. Tell me about your business and I’ll confirm the scope and timing for the whole $100 package before work starts. One revision and a short handoff guide for each deliverable are included.",
 };
 
 export const SITE_CASE_STUDY = {
@@ -385,7 +469,7 @@ export const SITE_CASE_STUDY = {
     },
     {
       name: "Proof standard",
-      note: "No traffic, revenue, adoption, or public-source claims. The visible proof is the live site, the source trail, the route behavior, and the verification record.",
+      note: "No traffic, revenue, or adoption claims. The visible proof is the live site, the public code, the source trail, the route behavior, and the verification record.",
     },
   ] satisfies CaseStudyItem[],
   architecture: [
@@ -452,49 +536,9 @@ export const SITE_CASE_STUDY = {
       note: "Completed passes are staged deliberately, committed with a scoped message, pushed to the upstream branch, and checked for a clean worktree.",
     },
   ] satisfies CaseStudyItem[],
-  scholarshipSuite: [
-    {
-      name: "Universal NotebookLM Dossier Engine",
-      note: "Generates structured, multi-source Markdown research worksheets with YAML frontmatter, named source notes, and thematic prompts for Google NotebookLM source ingestion and Audio Overviews.",
-    },
-    {
-      name: "The Living Digital Hexapla",
-      note: "A parallel textual alignment engine synchronizing named Hebrew or Greek editions with Brenton, Douay-Rheims, King James, and World English Bible translations, with zero runtime database dependencies.",
-    },
-    {
-      name: "Computational Catena Aurea",
-      note: "A dense commentary graph linking scripture verses directly to patristic and classical witnesses, parsed into structured static JSON.",
-    },
-    {
-      name: "Diachronic Semantic Evolution",
-      note: "Interactive tracking of lexical drift and conceptual shifts across millennia of textual history, tracing how root meanings evolved through cultural eras.",
-    },
-    {
-      name: "Polyphonic Disputation Engine",
-      note: "A structured dialectical debate model rendering classical theological disputes as navigable argument-rebuttal trees with cited historical positions.",
-    },
-  ] satisfies CaseStudyItem[],
-  enterpriseBridge: [
-    {
-      name: "Solving the 'Garbage In, Garbage Out' barrier",
-      note: "Google NotebookLM and enterprise LLMs can produce errors when source material is messy or incomplete. The pipeline patterns developed here for ancient multilingual texts translate to corporate data: OCR cleanup, structured chunking, provenance notes, and reviewable dossier synthesis.",
-    },
-    {
-      name: "Complex multi-source reconciliation",
-      note: "Just as ancient polyglots align contradictory variants across Hebrew, Greek, and Latin, enterprise operations require reconciling disparate data models across ERPs, CRM tickets, SOP manuals, and vendor contracts.",
-    },
-    {
-      name: "Audit-grade provenance and claim locality",
-      note: "The research worksheets name their hosted editions and cited works, label editorial notes, and ask readers to verify interpretive claims against the cited source before reuse.",
-    },
-    {
-      name: "Zero-dependency static architectures",
-      note: "Complex knowledge systems do not always require brittle, expensive vector databases. High-density, pre-compiled static indexes deliver instant, serverless, and recruiter-safe reliability.",
-    },
-  ] satisfies CaseStudyItem[],
   boundaries: [
     "I fund and maintain this passion project myself; it was not commissioned by a client.",
-    "The repository is private, so this case study does not present a public source-code link.",
+    "The working repository is private. The GitHub link is a public copy of the code, which can lag behind the live site.",
     "The site is a live product artifact, not evidence of traffic, revenue, customers, or adoption.",
     "Hosted Scripture uses public-domain translations and attributed original-language editions under their recorded licenses; copyrighted modern translations are analyzed but not reproduced as hosted Scripture.",
     "Generated imagery and visual systems support the experience, but factual claims must still sit beside source links.",
@@ -607,14 +651,14 @@ export const ABOUT_PAGE = {
 export const HOME = {
   worldsLabel: "Scripture · History · Witness",
   worldsHeading: "Jesus Christ.",
-  // Says what the site is. Garo's own sentence from the About page, trimmed of
-  // its first-person opening with his approval (2026-10-03).
+  // The opening now introduces the reading library and its research tools.
   heroText:
-    "One place to read his words, walk through his life, examine the witnesses, and open the Scriptures that tell the story — without needing to know where to begin.",
+    "Read his words. Compare the texts. Follow the witnesses. An open research library where one passage can lead you into a whole world.",
   primaryHref: "/jesus/words",
   primaryLabel: "Read his words",
   scriptureHref: "/scriptures",
   scriptureLabel: "Open the Scriptures",
+  discoveryLinkLabel: "Try the research tools",
   worldsHref: "#worlds",
   worldsLinkLabel: "Explore the whole record",
   // The builder's line above the headline — Garo's spot and words (2026-10-03),
@@ -622,6 +666,11 @@ export const HOME = {
   builderLead: "A portfolio project by",
   builderLinkLabel: "How it's built",
   builderHref: "/work/garovartabedian",
+  // The small line under the front door's links, completed in the browser
+  // with Jerusalem's time and the sun's place (2026-10-16).
+  skyLead: "Lit by the sun over Jerusalem",
+  skyNightLead: "Shown at night for the dark theme · Jerusalem",
+  skyDayLead: "Shown by day for the light theme · Jerusalem",
   scriptureHeading: "The text itself.",
   // The heading over all eight worlds. It is where "Explore the whole record"
   // on the first screen lands, so the two read the same (2026-10-03).

@@ -88,7 +88,7 @@ export default function InkAndStone({
       <ResponsiveSvgFrame label="Evidence timeline from 50 BC to AD 125">
         <svg
           viewBox={`0 0 ${W} ${H}`}
-          role="img"
+          role="group"
           aria-label="Evidence timeline from 50 BC to AD 125 showing early Christian, Jewish, Roman, and archaeological records by date"
         >
         <rect x={cruxL} y={6} width={Math.max(cruxR - cruxL, 2)} height={H - 30} className="jsu-is-crux" />

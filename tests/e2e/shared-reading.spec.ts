@@ -2,6 +2,22 @@ import { test, expect } from "@playwright/test";
 const preview = "/scriptures/read/isaiah-53-clement-16";
 const early = "/early/1clement#chapter-16";
 
+test("reading pages open on the text; appearance lives behind Aa and notes follow the text", async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  for (const route of ["/early/1clement", "/early/library/1-clement/1-clem-prologue", "/jesus/history/belief-and-growth", "/apostles/stories/come-and-eat", preview]) {
+    await page.goto(route);
+    const surface = page.locator("[data-reading-surface]");
+    await expect(surface.locator("summary", { hasText: "Reading appearance" }), route).toHaveCount(0);
+    await expect(surface.getByText("Quiet reading.", { exact: false }), route).toHaveCount(0);
+    const note = surface.locator(".reading-layout-note");
+    if (await note.count()) {
+      const firstText = await surface.locator("[data-reading-fragment], [data-source-segment]").first().evaluate(el => el.getBoundingClientRect().top + scrollY);
+      const noteTop = await note.evaluate(el => el.getBoundingClientRect().top + scrollY);
+      expect(noteTop, route).toBeGreaterThan(firstText);
+    }
+  }
+});
+
 test("inline essay and edition notes hydrate without resetting saved appearance", async ({ page }) => {
   const errors: string[] = [];
   page.on("pageerror", error => errors.push(error.message));
@@ -40,8 +56,9 @@ test("shared controls migrate once, synchronize, and never multiply reading size
   await panel.getByLabel("Text size", { exact: true }).selectOption("large");
   await panel.getByLabel("Page theme", { exact: true }).selectOption("warm");
   await page.getByRole("button", { name: "Close accessibility settings" }).click();
-  await page.getByText("Reading appearance", { exact: true }).click();
-  await expect(page.locator("article").getByLabel("Text size", { exact: true })).toHaveValue("large");
+  await page.getByRole("button", { name: "Open reading and accessibility settings" }).click();
+  await expect(page.getByRole("dialog", { name: "Reading & accessibility" }).getByLabel("Text size", { exact: true })).toHaveValue("large");
+  await page.getByRole("button", { name: "Close accessibility settings" }).click();
   await page.goto("/scriptures/protestant/ISA/53?t=kjv#v5");
   await expect(page.locator("[data-reading-edition]")).toHaveAttribute("data-reading-edition", "kjv");
   expect(await page.locator(".scr-read-text").evaluate(el => parseFloat(getComputedStyle(el).fontSize))).toBeCloseTo(22, 1);
@@ -95,8 +112,9 @@ for (const width of [320, 390, 768, 1440]) test(`shared reading reflows across c
 test("reading and edition references remain usable with storage disabled and without JavaScript", async ({ browser, page }) => {
   await page.addInitScript(() => { for (const key of ["localStorage", "sessionStorage"]) Object.defineProperty(window, key, { get() { throw new DOMException("Blocked", "SecurityError"); } }); });
   await page.goto(preview);
-  await page.getByText("Reading appearance", { exact: true }).click();
-  await page.locator("article").getByLabel("Page theme", { exact: true }).selectOption("warm");
+  await page.getByRole("button", { name: "Open reading and accessibility settings" }).click();
+  await page.getByRole("dialog", { name: "Reading & accessibility" }).getByLabel("Page theme", { exact: true }).selectOption("warm");
+  await page.getByRole("button", { name: "Close accessibility settings" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-a11y-theme", "warm");
   const context = await browser.newContext({ javaScriptEnabled: false });
   const nojs = await context.newPage();
@@ -121,8 +139,9 @@ test("returning after a text-size change restores the same stable paragraph", as
   });
   await page.getByRole("dialog").getByRole("link", { name: "Open the full source" }).click();
   await expect(page).toHaveURL(/\/scriptures\/.*\?t=web#v/);
-  await page.getByRole("button", { name: "Open reading and accessibility settings" }).click();
-  await page.getByRole("dialog", { name: "Reading & accessibility" }).getByLabel("Text size", { exact: true }).selectOption("largest");
+  // The chapter reader's own Aa holds the same appearance controls.
+  await page.getByRole("button", { name: /Reading and accessibility settings/ }).click();
+  await page.getByRole("dialog", { name: "Reading", exact: true }).getByLabel("Text size", { exact: true }).selectOption("largest");
   await page.goBack();
   await expect(paragraph).toBeVisible();
   await expect.poll(() => page.locator(`[id="${place.id}"]`).evaluate((el, top) => Math.abs(el.getBoundingClientRect().top - top), place.top)).toBeLessThan(3);
@@ -140,7 +159,9 @@ test("reference previews open the exact edition they display", async ({ page }) 
 
 test("saved appearance and citation placement work before application hydration", async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem("garovartabedian:reading:v2", JSON.stringify({ size: "largest", theme: "dark", font: "book" })));
-  await page.route("**/_next/static/chunks/**", route => route.abort());
+  // Turbopack emits stylesheets beside scripts in this directory. Block only
+  // application JavaScript so the before-hydration reading CSS still applies.
+  await page.route("**/_next/static/chunks/**", route => route.request().resourceType() === "script" ? route.abort() : route.continue());
   await page.goto(early);
   await expect(page.locator("html")).toHaveAttribute("data-a11y-theme", "dark");
   await expect(page.locator("html")).toHaveAttribute("data-a11y-size", "largest");

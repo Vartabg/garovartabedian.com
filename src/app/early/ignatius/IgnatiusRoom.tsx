@@ -46,7 +46,6 @@ export default function IgnatiusRoom({ data }: { data: IgnatiusData }) {
         <article
           className="world-pair-block"
           key={l.textId}
-          onMouseEnter={() => setActive(l.textId)}
         >
           <button
             type="button"

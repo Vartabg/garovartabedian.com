@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import canonsData from "../public/scriptures/canons.json";
 import { FIND_CATALOG } from "../src/lib/site/find-catalog";
+import { SYNOPTIC_FIGURES } from "../src/lib/jesus/synoptic-figures";
+import { JOHN_FIGURES } from "../src/lib/jesus/john-figures";
 import type { RelatedSearchResult } from "../src/lib/scriptures/related";
 import type { SearchResult } from "../src/lib/scriptures/search";
 import {
@@ -72,10 +74,58 @@ describe("parseFindRef", () => {
 });
 
 describe("rankPlaces", () => {
+  it("indexes each new Synoptic figure and finds the lamp", () => {
+    for (const figure of SYNOPTIC_FIGURES) assert.ok(FIND_CATALOG.some(place => place.href === `/jesus/parables#parable-${figure.id}`), figure.id);
+    assert.ok(rankPlaces(FIND_CATALOG, "lamp on a stand", 100).some(place => place.href === "/jesus/parables#parable-synoptic-lamp"));
+  });
+  it("indexes every John figure and finds the vine by name", () => {
+    for (const figure of JOHN_FIGURES) {
+      const place = FIND_CATALOG.find(item => item.href === `/jesus/parables#parable-${figure.id}`);
+      assert.ok(place, figure.id);
+      assert.match(place.note, /figure of speech/);
+    }
+    assert.ok(rankPlaces(FIND_CATALOG, "vine and branches", 100).some(item => item.href === "/jesus/parables#parable-john-vine-branches"));
+    const bread = FIND_CATALOG.find(item => item.href === "/jesus/parables#parable-john-bread-of-life")!;
+    assert.match(bread.note, /JHN 6:32-40/);
+    assert.match(bread.note, /JHN 6:48-51/);
+    assert.ok(rankPlaces(FIND_CATALOG, "bread of life", 100).some(item => item.href === bread.href));
+  });
+  it("finds each Thomas-only story by title and saying number", () => {
+    const stories = [
+      ["children in the field", "21", "thomas-children-in-field"],
+      ["empty jar", "97", "thomas-empty-jar"],
+      ["assassin", "98", "thomas-assassin"],
+    ];
+    for (const [title, number, id] of stories) {
+      const href = `/jesus/parables#parable-${id}`;
+      const entry = FIND_CATALOG.find(place => place.href === href);
+      assert.ok(entry);
+      assert.match(entry.note, /outside the canon/i);
+      assert.ok(rankPlaces(FIND_CATALOG, title, 100).some(result => result.href === href));
+      assert.ok(rankPlaces(FIND_CATALOG, `Thomas ${number}`, 100).some(result => result.href === href));
+    }
+  });
+  it("finds the Secret Book of James and its parable images", () => {
+    assert.ok(rankFindQuery("secret book of james", [], null).some(group => group.id === "library" && group.items.some(place => place.href === "/early/library/secret-book-james")));
+    for (const [query, id] of [["date palm shoot", "james-date-palm"], ["ear of grain", "james-ear-grain"], ["being like foreigners", "james-foreigners"]]) {
+      const place = FIND_CATALOG.find(item => item.href === `/jesus/parables#parable-${id}`);
+      assert.ok(place);
+      assert.match(place.note, /outside the canon/i);
+      assert.ok(rankPlaces(FIND_CATALOG, query, 100).some(item => item.href === place.href));
+    }
+  });
   it("finds an early text by its common name", () => {
     const hits = rankPlaces(FIND_CATALOG, "Didache");
     assert.ok(hits.some((hit) => hit.href === "/early/didache"));
     assert.equal(hits[0]?.href, "/early/didache");
+  });
+
+  it("finds Word Bridge by its public name or compact spelling", () => {
+    for (const query of ["Word Bridge", "wordbridge"]) {
+      const hits = rankPlaces(FIND_CATALOG, query);
+      assert.equal(hits[0]?.href, "/scriptures/word-bridge");
+      assert.equal(hits[0]?.title, "Word Bridge");
+    }
   });
 
   it("finds Peter among the twelve", () => {

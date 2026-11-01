@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { CSSProperties } from "react";
-import { EARLY_TEXTS } from "@/lib/early/client";
+import { EARLY_TEXTS, TEXT_ERA, eraById, textsForEra } from "@/lib/early/client";
+import { getLibrary } from "@/lib/early/library-server";
+import { recordHref } from "@/lib/early/library";
+import type { FromHereLink } from "@/lib/site/from-here";
+import FromHere from "../../_components/FromHere";
 import { getAllusions, getEarlyText } from "@/lib/early/server";
 import { chapterAnchors } from "@/lib/early/citations";
 import type { EarlyText } from "@/lib/early/types";
@@ -18,6 +22,7 @@ import BookSpine from "./BookSpine";
 import EarlyTextBody, { type EarlySectionView } from "../EarlyTextBody";
 import ReadingSurface, { ReadingTools } from "../../_components/reading/ReadingSurface";
 import LibraryLinks from "../library/LibraryLinks";
+import { ShelfCanonStatus } from "../library/CanonStatus";
 import { ReadingLayoutNote } from "../../_components/reading/FormattedText";
 
 type PageProps = {
@@ -94,14 +99,36 @@ export default async function EarlyTextPage({ params }: PageProps) {
   const sectionPlates = await loadSectionPlates(text.id);
   const introSeen = new Map<string, string>();
 
+  // The menu's "From here": the passages this writing quotes most, the next
+  // writing of its era, another edition, and the era itself.
+  const era = eraById(TEXT_ERA[text.id] ?? "");
+  const eraTexts = era ? textsForEra(era.id) : [];
+  const nextText = eraTexts[eraTexts.findIndex((item) => item.id === text.id) + 1];
+  const quotedCounts = new Map<string, number>();
+  for (const allusion of allusionFile?.allusions ?? []) {
+    const key = `${allusion.book}:${allusion.chapter}`;
+    quotedCounts.set(key, (quotedCounts.get(key) ?? 0) + 1);
+  }
+  const edition = (await getLibrary()).find((record) => record.existingTextId === text.id);
+  const fromHere: FromHereLink[] = [
+    ...[...quotedCounts].sort((a, b) => b[1] - a[1]).slice(0, 2).map(([key]) => {
+      const [book, chapter] = key.split(":");
+      return { href: `/scriptures/${traditionFor(book)}/${book}/${chapter}?t=web`, label: `${canons.books[book]?.name ?? book} ${chapter}`, kind: "Quoted here" };
+    }),
+    ...(nextText && era ? [{ href: `/early/${nextText.id}`, label: nextText.title, kind: `Next in ${era.label}` }] : []),
+    ...(edition ? [{ href: recordHref(edition), label: edition.editionLabel, kind: "Another edition" }] : []),
+    ...(era ? [{ href: `/early/era/${era.id}`, label: era.label, kind: "Writings from this era" }] : []),
+  ];
+
   return (
     <ReadingSurface className="world-reading-page ew-reading-page" hasTrace={!!allusionFile?.allusions.length}>
       <p className="kicker">
         <Link href="/early">The Writings</Link>
       </p>
       <h1>{text.title}</h1>
+      <FromHere label={EARLY_TEXTS.find((item) => item.id === text.id)?.title ?? text.title} links={fromHere} />
+      <ShelfCanonStatus textId={text.id} />
       <ReadingTools />
-      <ReadingLayoutNote />
       <details className="reading-background"><summary>About this writing, artwork and sources</summary>
       <p className="lede">
         <GlossSegments segments={segmentText(text.intro, introSeen)} />
@@ -194,7 +221,9 @@ export default async function EarlyTextPage({ params }: PageProps) {
       {text.sections.some((section) => isBookHeading(section.heading)) ? (
         <BookSpine sections={text.sections} qumran={text.id === "enoch"} />
       ) : (
-        text.sections.length > 20 && (
+        // Only numbered headings ("Chapter 12") make jump links; a text headed
+        // "Chapter I.—" has none, and an empty bordered bar read as broken.
+        text.sections.length > 20 && text.sections.some((section) => isChapterHeading(section.heading)) && (
           <nav className="ew-jump" aria-label="Jump to a chapter">
             {text.sections
               .filter((section) => isChapterHeading(section.heading))
@@ -249,6 +278,7 @@ export default async function EarlyTextPage({ params }: PageProps) {
           };
         })}
       />
+      <ReadingLayoutNote />
     </ReadingSurface>
   );
 }

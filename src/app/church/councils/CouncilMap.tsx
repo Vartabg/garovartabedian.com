@@ -1,5 +1,6 @@
 import type { CouncilsData } from "@/lib/church/types";
 import ResponsiveSvgFrame from "../../_components/ResponsiveSvgFrame";
+import MapGuide, { MapDestinations } from "@/app/_components/MapGuide";
 import {
   ANATOLIA_LAND,
   GREECE_LAND,
@@ -76,6 +77,16 @@ export default function CouncilMap({ data }: { data: CouncilsData }) {
 
   return (
     <div className="ch-cmap">
+      <MapGuide title="Explore councils by city" description="Choose a city to reach its first council below. Open each council for its decision, primary text, and consequence.">
+        <MapDestinations
+          label="Council cities"
+          items={[...cities.entries()].map(([key, info]) => ({
+            href: `#${info.firstId}`,
+            label: MED_CITIES[key as CouncilCityId].name,
+            detail: info.years.join(" · "),
+          }))}
+        />
+      </MapGuide>
       <ResponsiveSvgFrame label="Map of the ecumenical councils">
         <svg
           viewBox="0 0 720 420"
@@ -137,8 +148,8 @@ export default function CouncilMap({ data }: { data: CouncilsData }) {
         </svg>
       </ResponsiveSvgFrame>
       <p className="scr-meta ch-cmap-key">
-        <span className="ch-cmap-dot imperial" /> summoned by emperors &nbsp;·&nbsp;
-        <span className="ch-cmap-dot papal" /> summoned by popes. Tap a city to reach its
+        <span className="ch-cmap-dot imperial" aria-hidden="true" /> summoned by emperors &nbsp;·&nbsp;
+        <span className="ch-cmap-dot papal" aria-hidden="true" /> summoned by popes. Choose a city to reach its
         councils. Pins from real latitude and longitude; modern cities in small type.
       </p>
     </div>

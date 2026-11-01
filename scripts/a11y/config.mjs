@@ -6,6 +6,30 @@ export const routes = [
   // The appearance grid is the densest table on the site — gated so the
   // sticky row headers and cell links can't regress out of reach.
   "/jesus/risen",
+  // These four rooms carry their own hard-coded colours and drawings; Gospels
+  // word by word lost its title on the ivory theme while none of them was audited.
+  "/jesus/harmony",
+  "/jesus/prophecy",
+  "/jesus/history",
+  "/jesus/lens",
+  // Expandable passages with per-Gospel panels and Greek toggles.
+  "/jesus/parables",
+  // Open a comparison to audit its noncanonical Thomas links and label.
+  "/jesus/parables#parable-wicked-tenants",
+  "/jesus/parables#parable-thomas-empty-jar",
+  "/jesus/parables#parable-john-vine-branches",
+  "/jesus/parables#parable-john-bread-of-life",
+  "/jesus/parables#parable-synoptic-lamp",
+  "/jesus/parables#parable-james-grain-wheat",
+  "/jesus/parables#parable-james-foreigners",
+  "/jesus/parables#parable-hermas-elm-vine",
+  "/jesus/parables#parable-clement-two-one",
+  "/jesus/parables#parable-didache-two-ways",
+  "/jesus/parables#parable-acts-thomas-prayer",
+  "/jesus/parables#parable-synoptic-yoke",
+  "/jesus/parables#parable-acts-thomas-tower",
+  "/jesus/parables#parable-synoptic-physician-sick",
+  "/jesus/parables#parable-barnabas-cornerstone",
   "/apostles",
   "/apostles/stories/come-and-eat",
   "/apostles/stories/peace-be-with-you",
@@ -14,6 +38,9 @@ export const routes = [
   // Dense visualizations use adjacent native selectors instead of overlapping
   // pseudo-buttons inside the drawing; audit both equivalent-control routes.
   "/early/ignatius",
+  // A library reading page with the canon label: the parables room links into these one saying at a time.
+  "/early/library/gospel-thomas/saying-64",
+  "/early/library/secret-book-james/prophecies-and-parables#p10",
   "/church",
   "/church/councils",
   "/church/tree",
@@ -44,6 +71,8 @@ export const routes = [
   "/word/free",
   "/evidence",
   "/scriptures",
+  "/scriptures/word-bridge",
+  "/scriptures/protestant/JHN/3?t=web&study=word-bridge#v16",
   "/scriptures/search",
   "/scriptures/topics",
   // The graph page renders algorithm output as tables and link chains —
@@ -65,6 +94,10 @@ export const routes = [
   // Professional paths — independent work first, employment retained.
   "/services",
   "/work",
+  "/work/garovartabedian",
+  "/work/job-report",
+  "/work/landing-page",
+  "/work/excel-handler",
   "/work/accessibility",
   "/contact",
   "/hire",

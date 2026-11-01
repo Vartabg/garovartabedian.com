@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import kings from "../../../../../public/scriptures/text/web/2KI.json";
 import { ChapterNavigation, Revelation } from "./StoryControls";
+import { StoryFromHere } from "../StoryFrame";
 import "../../../styles/angels-story.css";
 
 const SOURCE = "/scriptures/protestant/2KI/6?t=web#v14";
@@ -66,6 +67,7 @@ export default function OpenHisEyesPage() {
       </header>
 
       <ReadingTools />
+      <StoryFromHere current="open-his-eyes" />
       <ChapterNavigation />
 
       <section className="dothan-chapter dothan-surrounded" id="surrounded" aria-labelledby="surrounded-title" data-story-chapter>

@@ -1,55 +1,32 @@
 import { expect, test } from "@playwright/test";
 
-test("the Scriptures landing page keeps reading and discovery within reach", async ({
+test("the Scriptures page opens on a picker where the reader chooses", async ({
   page,
 }) => {
   await page.goto("/scriptures");
 
   await expect(
-    page.getByRole("heading", { name: "Start with the text." }),
+    page.getByRole("heading", { level: 1, name: "Read the Bible." }),
   ).toBeVisible();
-  const intentIndex = page.getByRole("navigation", {
-    name: "Choose how to enter Scripture",
-  });
-  await expect(intentIndex).toBeVisible();
-  await expect(intentIndex.getByRole("link")).toHaveCount(4);
-  await expect(
-    intentIndex.getByRole("link", { name: /Understand/ }),
-  ).toHaveAttribute("href", "/scriptures/protestant/JHN/1#study");
-  await expect(
-    page.getByRole("link", { name: "Begin with John 1" }),
-  ).toBeVisible();
-  const scriptureSearch = page.getByRole("search", {
-    name: "Search Scriptures",
-  });
-  await expect(scriptureSearch).toBeVisible();
-  await expect(scriptureSearch).toHaveAttribute("data-enhanced", "true");
-  await scriptureSearch.getByRole("searchbox").fill("John 3:16");
-  await scriptureSearch.getByRole("searchbox").press("Enter");
-  await expect(page).toHaveURL(/\/scriptures\/search\?q=John%203%3A16$/);
+  const ways = page.getByRole("tablist", { name: "Ways to browse" });
+  await expect(ways.getByRole("tab")).toHaveText(["Shelf", "Contents", "Map", "Strip"]);
+  await expect(ways.getByRole("tab", { name: "Shelf" })).toHaveAttribute("aria-selected", "true");
+  await expect(page.getByText("Begin with John 1")).toHaveCount(0);
 
+  // The shelf: choose a book, then a chapter.
+  await page.getByRole("link", { name: "John, 21 chapters" }).click();
+  await page.getByRole("link", { name: "John 3, 36 verses" }).click();
+  await expect(page).toHaveURL(/\/scriptures\/protestant\/JHN\/3\?t=web$/);
   await page.goBack();
 
-  const shelf = page.locator("details.scr-book-browser");
-  await expect(shelf).not.toHaveAttribute("open", "");
-
-  const bookSearch = page.getByRole("searchbox", { name: "Search books" });
-  await bookSearch.fill("John");
-  await expect(page.getByText("4 matches")).toBeVisible();
-  await expect(shelf).toHaveCount(0);
-  await expect(
-    page.getByRole("link", { name: "John 21 chapters" }),
-  ).toBeVisible();
-
-  await page.reload();
-  await page.locator("details.scr-book-browser > summary").click();
-  await expect(page.locator("details.scr-book-browser")).toHaveAttribute(
-    "open",
-    "",
-  );
-  await expect(
-    page.getByRole("link", { name: "Genesis 50 chapters" }),
-  ).toBeVisible();
+  // One box: a reference jumps to the chapter, words search the text.
+  await page.getByRole("combobox", { name: "Go to" }).fill("John 3:16");
+  await page.getByRole("combobox", { name: "Go to" }).press("Enter");
+  await expect(page).toHaveURL(/\/scriptures\/protestant\/JHN\/3\?t=web#v16$/);
+  await page.goBack();
+  await page.getByRole("combobox", { name: "Go to" }).fill("love your enemies");
+  await page.getByRole("combobox", { name: "Go to" }).press("Enter");
+  await expect(page).toHaveURL(/\/scriptures\/search\?q=love%20your%20enemies$/);
 });
 
 test("scripture search recognizes a human-entered passage reference", async ({

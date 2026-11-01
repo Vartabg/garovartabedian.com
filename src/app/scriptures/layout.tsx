@@ -3,8 +3,12 @@ import Link from "next/link";
 import WorldSwitcher from "../_components/WorldSwitcher";
 import { WorldGuide, WorldNextSteps } from "../_components/WorldGuide";
 import WorldHeader from "../_components/WorldHeader";
+import SiteFooterLinks from "../_components/SiteFooterLinks";
+import { getWorldRoutes } from "@/lib/site-navigation";
 import "../styles/worlds-shared.css";
 import "../styles/scriptures.css";
+import "../styles/scriptures-hub.css";
+import "../styles/scriptures-study.css";
 
 const DESCRIPTION =
   "Five Christian Scripture traditions compared with sourced canon histories, public-domain hosted texts, cross-references, search, and topics.";
@@ -46,11 +50,13 @@ const STRUCTURED_DATA = {
   name: "Scriptures",
   url: "https://garovartabedian.com/scriptures",
   description: DESCRIPTION,
-  hasPart: [
-    { "@type": "Article", name: "Traditions", url: "https://garovartabedian.com/scriptures" },
-    { "@type": "Article", name: "Ask", url: "https://garovartabedian.com/scriptures/search" },
-    { "@type": "Article", name: "Topics", url: "https://garovartabedian.com/scriptures/topics" },
-  ],
+  hasPart: getWorldRoutes("scriptures")
+    .filter((route) => route.href !== "/scriptures")
+    .map((route) => ({
+      "@type": "WebPage",
+      name: route.label,
+      url: `https://garovartabedian.com${route.href}`,
+    })),
 };
 
 /** The Scriptures world: its own light, its own pace. */
@@ -79,6 +85,7 @@ export default function ScripturesLayout({ children }: { children: React.ReactNo
               Sources
             </Link>
           </span>
+          <SiteFooterLinks />
         </div>
       </footer>
       <WorldSwitcher />

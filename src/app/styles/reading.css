@@ -8,7 +8,8 @@
   --reading-source: light-dark(#056568, #81d3d2);
   --reading-interpretation: light-dark(#984322, #f1b48e);
   --reading-question: light-dark(#6a469a, #cdb0ee);
-  --reading-face: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  /* Cardo is the Scripture face (layout.tsx); the device serifs are fallbacks. */
+  --reading-face: "Cardo", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --reading-size: 1.1875rem;
   --reading-leading: 1.8;
   --reading-measure: 65ch;
@@ -49,7 +50,8 @@ body [data-reading-surface] [id] { scroll-margin-top: 5rem; }
 
 body [data-reading-surface] a { text-underline-offset: .22em; }
 .reading-tools { border-block: 1px solid var(--reading-line); margin-block: 1.25rem 2rem; padding-block: .5rem; font: .875rem/1.6 var(--font-interface); }
-.reading-tools details > summary { padding-block: .75rem; cursor: pointer; min-height: 44px; }
+/* The help line is a live region: it stays mounted, and takes no room until Trace fills it. */
+.reading-tools .reading-help:empty { margin: 0; }
 .reading-modes { display: flex; flex-wrap: wrap; gap: 1.5rem; }
 .reading-modes button { border: 0; border-bottom: 3px solid transparent; background: none; color: inherit; font: inherit; min-height: 44px; cursor: pointer; }
 .reading-modes button[aria-pressed="true"] { border-bottom-color: currentColor; }
@@ -89,19 +91,11 @@ html[data-reading-ready="true"] [data-reading-mode="read"] .reading-trace-only {
 @media(max-width:600px) { .reading-pair { grid-template-columns: minmax(0,1fr); } .reading-note { margin-bottom: max(.75rem,env(safe-area-inset-bottom)); padding-inline: 1rem; } }
 @media(forced-colors:active) { :root { --reading-paper: Canvas; --reading-surface: Canvas; --reading-ink: CanvasText; --reading-line: CanvasText; --reading-source: CanvasText; --reading-interpretation: CanvasText; --reading-question: CanvasText; } }
 @media print { .reading-tools,.reading-note { display:none !important; } body [data-reading-surface] { background:white; color:black; } [data-reading-mode="read"] .reading-trace-only { display:block; } }
-/* Read keeps the chapter central. Study tools remain deliberate actions at every width. */
-body [data-reading-surface] .scr-gloss-intents { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
-body [data-reading-surface] .scr-study-layout { display: block; }
-body [data-reading-surface] .scr-gloss { position: static; max-height: none; border-block: 1px solid var(--reading-line); margin-bottom: 1.5rem; }
-body [data-reading-surface] .scr-gloss-head { display: none; }
-body [data-reading-mode="read"] :is(.scr-gloss-body,.gloss-threads) { display: none; }
-body [data-reading-mode="trace"] .scr-gloss-body { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap: 1rem; padding: 1rem; }
 body [data-reading-surface] .scr-read-text { margin-inline: auto; }
 body [data-reading-surface] .ew-allusion { position: static; width: auto; margin-block: .25rem 1.25rem; padding-inline-start: .75rem; border-inline-start: 2px solid var(--reading-source); }
 body [data-reading-surface] .ew-allusion .reading-help { display: block; }
 body [data-reading-surface] .ew-edition-note { border-inline-start: 2px dashed var(--reading-interpretation); padding-inline-start: 1rem; }
 body [data-reading-surface] .ew-edition-note > p { font: var(--reading-size)/var(--reading-leading) var(--reading-face); }
-@media(max-width:380px) { body [data-reading-surface] .scr-gloss-intents { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 /* The manuscript's accent remains in navigation; a reader's paper is consistent across worlds. */
 html body .world-shell:has([data-reading-surface]) {
   --bg: var(--reading-paper); --paper: var(--reading-paper); --folio: var(--reading-paper);
@@ -134,7 +128,7 @@ body [data-reading-surface] :is(.dothan-prose,.dothan-source,.visual-story-sourc
   --dothan-bone: var(--reading-ink); --dothan-muted: var(--reading-muted); --dothan-gold: var(--reading-source);
 }
 body :is(.visual-story,.dothan-story) > .reading-tools { padding: 1rem; color: var(--reading-ink); background: var(--reading-paper); }
-html[data-reading-monochrome="true"] [data-reading-surface] :is(.reading-tools,.ew-allusion,.scr-gloss) { --accent: var(--reading-ink); --rubric: var(--reading-ink); }
+html[data-reading-monochrome="true"] [data-reading-surface] :is(.reading-tools,.ew-allusion) { --accent: var(--reading-ink); --rubric: var(--reading-ink); }
 body [data-reading-surface].ew-reading-page .ew-section .ew-para > p {
   font: var(--reading-size)/var(--reading-leading) var(--reading-face); margin-block: 1.25em;
 }

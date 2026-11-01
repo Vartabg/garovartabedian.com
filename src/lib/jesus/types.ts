@@ -69,6 +69,53 @@ export type ProphecyPair = {
   fulfillment: { ref: string }[];
 };
 
+/** One Gospel's telling of a parable. Every field is a reference into the hosted text. */
+export type ParableAccount = {
+  /** The parable itself. */
+  ref: string;
+  /** The verses that say where and to whom it was told, when the Gospel gives them. */
+  setting?: string;
+  /** His own explanation, where the Gospel records one. */
+  explanation?: string;
+  /** A verse in which the Gospel calls this passage a parable (Greek parabolē). */
+  called?: string;
+};
+
+export type Parable = {
+  id: string;
+  title: string;
+  /** "story": in Snodgrass or Trench. "saying": in neither, but the Gospel calls it a parable. */
+  kind: "story" | "saying";
+  /** Its title in Snodgrass, Stories with Intent (2008), or null when he does not treat it. */
+  snodgrass: string | null;
+  /** Its title or titles in Trench, Notes on the Parables of Our Lord (1882). */
+  trench: string[];
+  /** Sourced parallels in the noncanonical Gospel of Thomas. */
+  thomas?: { saying: number; note?: string }[];
+  accounts: ParableAccount[];
+};
+
+/** A story in Thomas, kept separate from the canonical Gospel accounts. */
+export type ThomasParable = {
+  id: string;
+  title: string;
+  saying: number;
+  note?: string;
+};
+
+/** A figure selected separately from the original parable lists. */
+export type ScriptureFigure = {
+  id: string;
+  title: string;
+  kind: "figure";
+  speaker?: string;
+  note?: string;
+  thomas?: { saying: number; note?: string }[];
+  accounts: ParableAccount[];
+};
+
+export type JohnFigure = ScriptureFigure;
+
 export type LifeEvent = {
   id: string;
   era: string;

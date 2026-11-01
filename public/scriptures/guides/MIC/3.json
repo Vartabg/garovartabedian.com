@@ -2,127 +2,230 @@
   "book": "MIC",
   "chapter": 3,
   "bookName": "Micah",
-  "summary": "Micah 3 (12 verses) continues the story of justice, mercy, humility. Starting with 'I said, “Please listen, you heads of Jacob, and rulers of the house of Israel: Isn’t it for you to know justice?', it moves through themes of justice, mercy, humility and calls readers toward justice, mercy, humility.",
-  "whyItMatters": "This chapter matters because it shows justice, mercy, humility lived out in before exile. For a first-time reader, it answers: who is God in this moment, what does he ask, and how do people respond.",
+  "summary": "Micah 3 addresses the leaders of Jacob and Israel, accusing rulers of hating good and loving evil, then picturing their treatment of the people as butchery. The chapter turns to prophets who speak peace when fed and war when unpaid, contrasts them with Micah’s Spirit-empowered declaration, and ends with Jerusalem and Zion threatened because leadership, priestly teaching, and prophecy have been bought.",
+  "whyItMatters": "This chapter brings Micah’s charges against corrupt leadership to their sharpest point. It also supplies the warning about Zion being plowed like a field, a line later remembered in Jeremiah’s account of Micah under Hezekiah.",
   "context": {
-    "author": "Micah",
-    "audience": "Judah",
-    "date": "~700 BC",
-    "setting": "Before exile",
-    "literaryForm": "prophecy"
+    "author": "The heading attributes the word to Micah of Moresheth; the book does not identify everyone involved in its later arrangement.",
+    "audience": "The speeches address rulers, prophets, priests, Jerusalem, Judah’s towns, and the people of Israel and Judah.",
+    "date": "Micah’s attributed prophetic activity belongs to the eighth century BCE under Jotham, Ahaz, and Hezekiah; the date and extent of later collection are disputed.",
+    "setting": "The book centers on Israel and Judah, especially Jerusalem and the Judean countryside, during a world of courts, farms, worship, and imperial pressure.",
+    "literaryForm": "Prophetic poetry with summonses to listen, accusations, vivid images, and announced consequences."
   },
   "outline": [
     {
-      "heading": "Opening",
-      "verses": "1-4"
+      "heading": "Rulers Who Should Know Justice",
+      "verses": "1-4",
+      "note": "Micah summons the heads and rulers, says they should know justice, accuses them with violent food imagery, and says Yahweh will not answer them when they cry."
     },
     {
-      "heading": "Middle",
-      "verses": "5-8"
+      "heading": "Prophets Who Sell Reassurance",
+      "verses": "5-7",
+      "note": "Yahweh speaks against prophets who announce peace when supplied and hostility when not; their visions and divination will end in darkness and shame."
     },
     {
-      "heading": "Closing",
-      "verses": "9-12"
+      "heading": "Micah’s Contrary Commission",
+      "verses": "8",
+      "note": "Micah distinguishes his message from theirs, saying he is filled with power by Yahweh’s Spirit to declare Jacob’s disobedience and Israel’s sin."
+    },
+    {
+      "heading": "Jerusalem Built with Blood",
+      "verses": "9-12",
+      "note": "The final summons returns to rulers who pervert justice, names bribery and paid religious speech, exposes false confidence in Yahweh’s presence, and announces the ruin of Zion, Jerusalem, and the temple mountain."
     }
   ],
   "keyVerses": [
     {
       "ref": "3:1",
       "text": "I said, “Please listen, you heads of Jacob, and rulers of the house of Israel: Isn’t it for you to know justice?",
-      "why": "Opening sets context"
+      "why": "The opening question states the standard for leadership: rulers are expected to know justice."
     },
     {
-      "ref": "3:7",
-      "text": "The seers shall be disappointed, and the diviners confounded. Yes, they shall all cover their lips, for there is no answer from God.”",
-      "why": "Central turn"
+      "ref": "3:5",
+      "text": "Yahweh says concerning the prophets who lead my people astray—for those who feed their teeth, they proclaim, “Peace!” and whoever doesn’t provide for their mouths, they prepare war against him:",
+      "why": "This verse identifies the corruption of the prophets as paid reassurance and retaliation."
+    },
+    {
+      "ref": "3:8",
+      "text": "But as for me, I am full of power by Yahweh’s Spirit, and of judgment, and of might, to declare to Jacob his disobedience, and to Israel his sin.",
+      "why": "Micah’s role is set against the prophets just accused: he declares wrongdoing rather than selling comfort."
     },
     {
       "ref": "3:12",
       "text": "Therefore Zion for your sake will be plowed like a field, and Jerusalem will become heaps of rubble, and the mountain of the temple like the high places of a forest.",
-      "why": "Closing"
+      "why": "The chapter culminates in a threat against the city and temple mountain, not only against individual leaders."
     }
   ],
   "themes": [
-    "justice, mercy, humility"
+    "leadership accountable to justice",
+    "violence against the people",
+    "paid prophecy and false peace",
+    "God’s silence in judgment",
+    "Spirit-empowered accusation",
+    "Zion’s threatened ruin"
   ],
   "questions": [
     {
       "id": "q1",
-      "question": "What is happening in Micah 3?",
-      "answer": "In 12 verses, this chapter micah 3 (12 verses) continues the story of justice, mercy, humility. starting with 'i said, “please listen, you heads of jacob, and rulers of the house of israel: isn’t it for you to know justice?', it moves through themes of justice, mercy, humility and calls readers toward justice, mercy, humility. The setting is before exile, written to judah. Look for who speaks, who listens, and what changes by the end.",
+      "question": "Who is Micah talking to at the start of the chapter?",
+      "answer": "He addresses “heads of Jacob” and “rulers of the house of Israel.” In this chapter they are public leaders who should know justice but are accused of hating good, loving evil, and harming the people they should protect.",
       "verseRefs": [
-        "3:1"
+        "3:1",
+        "3:2",
+        "3:3"
       ],
       "category": "context",
       "relatedVerses": [
-        1
+        1,
+        2,
+        3
       ]
     },
     {
       "id": "q2",
-      "question": "Who wrote Micah and why 3 matters in the bigger story?",
-      "answer": "Traditionally micah, addressed to judah around ~700 bc. This chapter fits the book's purpose as prophecy — its themes of justice, mercy, humility build on what came before.",
-      "verseRefs": [],
-      "category": "history",
-      "relatedVerses": []
+      "question": "Does the chapter say the rulers literally eat people?",
+      "answer": "The chapter uses shocking images of tearing skin, breaking bones, and cooking flesh to portray exploitation. The rulers who should protect the people instead consume their lives and resources. This is a sustained accusation about destructive leadership, not a report that the rulers practiced literal cannibalism.",
+      "verseRefs": [
+        "3:2",
+        "3:3"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        2,
+        3
+      ]
     },
     {
       "id": "q3",
-      "question": "What does 'prophet' mean in this chapter?",
-      "answer": "Messenger speaking for God. In this chapter, it appears in context of justice, mercy, humility. For a first-time reader: think of it as messenger speaking for god, not just religious jargon.",
+      "question": "Why will Yahweh not answer when these leaders cry out?",
+      "answer": "Verse 4 gives the reason inside the chapter: “because they made their deeds evil.” The refusal to answer matches the earlier accusation that the leaders have harmed the people and rejected justice.",
       "verseRefs": [
-        "3:1"
+        "3:1",
+        "3:2",
+        "3:3",
+        "3:4"
       ],
-      "category": "word",
+      "category": "theology",
       "relatedVerses": [
-        1
+        1,
+        2,
+        3,
+        4
       ]
     },
     {
       "id": "q4",
-      "question": "What does this chapter teach about God or people?",
-      "answer": "Through justice, mercy, humility and faith, it shows God's character (faithful, just, merciful) and human tendency (need, failure, hope). Notice how verses move from problem to provision.",
+      "question": "What kind of prophets are criticized in verses 5-7?",
+      "answer": "They are prophets who lead the people astray by adjusting their message according to what they receive. If they are fed, they proclaim “Peace”; if someone does not provide for them, they prepare war against that person.",
       "verseRefs": [
+        "3:5",
+        "3:6",
         "3:7"
       ],
-      "category": "theology",
+      "category": "context",
       "relatedVerses": [
+        5,
+        6,
         7
       ]
     },
     {
       "id": "q5",
-      "question": "Verse 11 is long — what is it saying in plain English?",
-      "answer": "The verse says: 'Her leaders judge for bribes, and her priests teach for a price, and her prophets of it tell fortunes for money; yet they lean on Yahweh, and say, “Isn’t Yahweh among us? No disast...' In plain terms: it is making a key point about justice, mercy, humility. Break it into two halves — what is described, and what is promised or commanded.",
+      "question": "What does “Peace” mean in verse 5?",
+      "answer": "In this verse, “Peace” is the reassuring message given by prophets who are being provided for. The chapter does not define the word as a full doctrine of peace; it uses it as an example of a favorable announcement that has been compromised by payment.",
       "verseRefs": [
-        "3:11"
+        "3:5"
       ],
-      "category": "hard_verse",
+      "category": "word",
       "relatedVerses": [
-        11
+        5
       ]
     },
     {
       "id": "q6",
-      "question": "How could this chapter apply today without forcing modern ideas onto it?",
-      "answer": "Ask: what was original audience supposed to do with this? Then ask: what similar situation exists today? For example, if chapter warns about idols, today that might be money or status; if it celebrates deliverance, where do people need deliverance today?",
-      "verseRefs": [],
-      "category": "practical",
-      "relatedVerses": []
+      "question": "What happens to the seers and diviners?",
+      "answer": "Their darkness is described as loss of vision, failed divination, disappointment, and shame. Verse 7 says there is “no answer from God,” so the chapter depicts their religious claims collapsing.",
+      "verseRefs": [
+        "3:6",
+        "3:7"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How does Micah describe his own speaking in verse 8?",
+      "answer": "Micah says he is full of power by Yahweh’s Spirit, and of judgment and might. The purpose he names is specific: to declare Jacob’s disobedience and Israel’s sin.",
+      "verseRefs": [
+        "3:8"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        8
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Why is Jerusalem included in the accusation?",
+      "answer": "The final section names Zion and Jerusalem directly. It says leaders judge for bribes, priests teach for a price, and prophets tell fortunes for money, while still claiming that Yahweh is among them and no disaster will come.",
+      "verseRefs": [
+        "3:9",
+        "3:10",
+        "3:11"
+      ],
+      "category": "context",
+      "relatedVerses": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "What makes verse 12 such a severe ending?",
+      "answer": "The judgment reaches the central places named in the leaders’ confidence: Zion, Jerusalem, and the mountain of the temple. The chapter says these places will become a plowed field, rubble, and forested high places because of the leaders’ wrongdoing.",
+      "verseRefs": [
+        "3:11",
+        "3:12"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        11,
+        12
+      ]
     }
   ],
   "glossary": [
     {
-      "term": "prophet",
-      "def": "Messenger speaking for God"
+      "term": "justice",
+      "def": "The public rightness the rulers are expected to know; the chapter says they instead abhor justice and pervert equity."
     },
     {
-      "term": "temple",
-      "def": "House of God's presence"
+      "term": "prophets",
+      "def": "Religious speakers in this chapter who are accused of leading the people astray when their messages depend on being fed or paid."
     },
     {
-      "term": "priest",
-      "def": "Mediates between God and people"
+      "term": "seers",
+      "def": "A term for figures associated with vision; here they are disappointed when no answer from God comes."
+    },
+    {
+      "term": "bribes",
+      "def": "Payments that corrupt judgment; verse 11 says Jerusalem’s leaders judge for bribes."
     }
+  ],
+  "generation": {
+    "model": "gpt-5.5",
+    "promptHash": "54e1c76af61b12be45c5f4bb26108639bb3f397710ef53d6b74cf6d0990babc0",
+    "generatedAt": "2026-10-04T00:15:54.718Z",
+    "rubricVersion": "guide-v2",
+    "method": "direct-generation"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-10-03",
+  "reviewer": "Codex agent editorial panel",
+  "sourceIds": [
+    "web"
   ]
 }

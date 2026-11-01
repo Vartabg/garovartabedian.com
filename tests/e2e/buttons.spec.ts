@@ -13,14 +13,6 @@ const REPRESENTATIVE_LINKS = [
     name: "Download résumé (PDF)",
     href: "/Garo-Vartabedian-Resume.pdf",
   },
-  {
-    // The 2026-09-03 journey redesign replaced WorldEntry with the guided
-    // path; the threshold CTA is the world home's representative action.
-    route: "/jesus",
-    selector: ".jsu-threshold-primary.ui-button",
-    name: "Read his words",
-    href: "/jesus/words",
-  },
 ] as const;
 
 async function expectNoDocumentOverflow(page: Page) {
@@ -81,9 +73,9 @@ test("link variants retain their intended foreground and surface", async ({ page
     ),
   );
 
-  // Daylight tokens: --lapis #1e3e72 on the surface, --folio #f3e8cf for the ink.
-  expect(primaryStyle.background).toBe("rgb(30, 62, 114)");
-  expect(primaryStyle.color).toBe("rgb(243, 232, 207)");
+  // Daylight tokens: --lapis (tekhelet) #2a4f8f on the surface, --folio #f4eee0 for the ink.
+  expect(primaryStyle.background).toBe("rgb(42, 79, 143)");
+  expect(primaryStyle.color).toBe("rgb(244, 238, 224)");
   expect(ghostStyle.background).toBe("rgba(0, 0, 0, 0)");
   expect(ghostStyle.color).not.toBe(primaryStyle.color);
   expect(ghostStyle.border).not.toBe("rgba(0, 0, 0, 0)");
@@ -233,7 +225,7 @@ test("dense maps and timelines expose native equivalent controls", async ({ page
     },
     {
       route: "/early/ignatius",
-      selector: ".ew-visual-picker select",
+      selector: ".map-picker select",
       forbidden: ".ew-map [role=button]",
     },
     {

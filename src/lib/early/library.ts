@@ -25,6 +25,8 @@ export type LibraryRecord = {
   compositionNote: string; existingTextId: string | null;
   reuseExistingText: boolean; editionRelation: string;
   group: typeof LIBRARY_GROUPS[number]["id"]; title: string;
+  /** Plain label for a work outside every canon on the Scriptures shelf; shown wherever its text is read. */
+  canonStatus?: string;
   sourceSha256: string | null; sourceWords: number; sourceUrls: string[];
   language: string; coverage: string; sourceRights: string; rightsProfile: string;
   publicationStatus: "published" | "reference-only" | "deferred";

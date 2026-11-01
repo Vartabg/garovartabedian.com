@@ -9,6 +9,13 @@ export function validateLighthouseResult(result) {
   if (report.runtimeError) {
     throw new Error(`Lighthouse runtime error: ${report.runtimeError.message ?? report.runtimeError.code}`);
   }
+  // Lighthouse can still return a perfect score after an incomplete navigation.
+  // This specific warning says that its evidence may be incomplete; unrelated
+  // informational warnings do not invalidate an otherwise complete audit.
+  if (report.runWarnings?.some((warning) => typeof warning === "string" &&
+      warning.includes("The page loaded too slowly to finish within the time limit. Results may be incomplete."))) {
+    throw new Error("Lighthouse returned incomplete page-load evidence");
+  }
   const score = report.categories?.accessibility?.score;
   if (!Number.isFinite(score) || score < 0 || score > 1) {
     throw new Error(`Lighthouse returned an invalid accessibility score: ${score}`);
@@ -57,6 +64,9 @@ export function createLighthouseAuditor({
             output: "json",
             onlyCategories: ["accessibility"],
             maxWaitForLoad: 60_000,
+            // The report's optional image does not contribute to any a11y
+            // audit, and resizing dense pages for it can stall Chrome.
+            disableFullPageScreenshot: true,
             // Preserve the fresh-Chrome isolation of the old CLI runner.
             clearStorageTypes: ["all"],
             disableStorageReset: false,

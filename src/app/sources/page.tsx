@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ButtonLink } from "@/app/_components/Button";
 import CleanChrome from "../_components/CleanChrome";
 import { SOURCE_GROUPS } from "@/lib/source-guidance";
+import { WORLD_GUIDES } from "@/lib/world-guidance";
 
 const DESCRIPTION =
   "A human-readable source map for the Scripture, Jesus, Apostles, Writings, Church, Angels, Bible-ownership, and How We Know worlds on garovartabedian.com.";
@@ -62,37 +64,49 @@ export default function SourcesPage() {
       </nav>
 
       <div className="source-page-grid">
-        {SOURCE_GROUPS.map((group) => (
-          <section className="source-group" id={group.id} key={group.id}>
-            <p className="source-group-kicker">Source group</p>
-            <h2>{group.title}</h2>
-            <p>{group.summary}</p>
+        {SOURCE_GROUPS.map((group) => {
+          const world = Object.values(WORLD_GUIDES).find(
+            (guide) => guide.source.href === `/sources#${group.id}`,
+          );
+          return (
+            <section className="source-group" id={group.id} key={group.id}>
+              <p className="source-group-kicker">Source group</p>
+              <h2>{group.title}</h2>
+              <p>{group.summary}</p>
+              {world && (
+                <p className="source-world-link">
+                  <Link href={world.base} className="textlink">
+                    Explore {world.label} <span aria-hidden="true">→</span>
+                  </Link>
+                </p>
+              )}
 
-            <h3>Method</h3>
-            <ul className="source-method">
-              {group.method.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+              <h3>Method</h3>
+              <ul className="source-method">
+                {group.method.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
 
-            <h3>Representative records</h3>
-            <ul className="source-links">
-              {group.links.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    target={link.href.startsWith("/") ? undefined : "_blank"}
-                    rel={link.href.startsWith("/") ? undefined : "noopener noreferrer"}
-                  >
-                    {link.label}
-                  </a>
-                  <span className="source-pill">{link.kind}</span>
-                  <p>{link.note}</p>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+              <h3>Representative records</h3>
+              <ul className="source-links">
+                {group.links.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      target={link.href.startsWith("/") ? undefined : "_blank"}
+                      rel={link.href.startsWith("/") ? undefined : "noopener noreferrer"}
+                    >
+                      {link.label}
+                    </a>
+                    <span className="source-pill">{link.kind}</span>
+                    <p>{link.note}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })}
       </div>
 
       <section className="card source-build-card" aria-labelledby="source-build-title">

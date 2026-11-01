@@ -39,7 +39,7 @@ export default function ChapterContext({
 
   return (
     <aside className="scr-reading-context" aria-labelledby="chapter-context-heading">
-      <h2 id="chapter-context-heading">Before you read</h2>
+      <h2 id="chapter-context-heading">Chapter context</h2>
       {paragraph(here)}
       <details>
         <summary>Where this chapter fits</summary>
@@ -50,8 +50,6 @@ export default function ChapterContext({
       </details>
       <p className="scr-context-footer">
         <Link href={baseHref}>About {bookName}</Link>
-        <span aria-hidden="true"> · </span>
-        <a href="#study">Chapter study guide</a>
         <span aria-hidden="true"> · </span>
         <span>Editorial context</span>
         {edition && <span> · References use {editionName ?? edition.toUpperCase()}.</span>}

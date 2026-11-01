@@ -38,10 +38,11 @@ export const WORLD_GUIDES: Record<WorldId, WorldGuideConfig> = {
     },
     nav: [
       { href: "/scriptures", label: "Overview" },
-      { href: "/scriptures/polyglot", label: "Polyglot" },
-      { href: "/scriptures/catena", label: "Catena" },
-      { href: "/scriptures/search", label: "Ask" },
+      { href: "/scriptures/search", label: "Search the text" },
       { href: "/scriptures/topics", label: "Topics" },
+      { href: "/scriptures/polyglot", label: "Compare translations" },
+      { href: "/scriptures/catena", label: "Early commentary" },
+      { href: "/scriptures/graph", label: "Cross-references" },
     ],
     journey: [
       {
@@ -76,13 +77,14 @@ export const WORLD_GUIDES: Record<WorldId, WorldGuideConfig> = {
     nav: [
       { href: "/jesus", label: "Overview" },
       { href: "/jesus/words", label: "His words" },
-      { href: "/jesus/harmony", label: "Synoptic Harmony" },
+      { href: "/jesus/parables", label: "Parables" },
+      { href: "/jesus/harmony", label: "Gospels word by word" },
       { href: "/jesus/life", label: "His life" },
       { href: "/jesus/risen", label: "Cross to ascension" },
       { href: "/jesus/prophecy", label: "Prophecy" },
       { href: "/jesus/history", label: "History" },
-      { href: "/jesus/lens", label: "World views" },
-      { href: "/jesus/dossier", label: "NotebookLM Dossiers" },
+      { href: "/jesus/lens", label: "How the world sees him" },
+      { href: "/jesus/dossier", label: "Research worksheets" },
     ],
     journey: [
       {
@@ -161,6 +163,8 @@ export const WORLD_GUIDES: Record<WorldId, WorldGuideConfig> = {
     },
     nav: [
       { href: "/early", label: "Overview" },
+      { href: "/early/library", label: "Works and editions" },
+      { href: "/early/search", label: "Search the library" },
       { href: "/early/era/jewish", label: "Jewish apocalyptic" },
       { href: "/early/era/fathers", label: "Apostolic Fathers" },
       { href: "/early/era/apologists", label: "Apologists" },
@@ -245,6 +249,8 @@ export const WORLD_GUIDES: Record<WorldId, WorldGuideConfig> = {
       { href: "/angels/encounters", label: "The encounters" },
       { href: "/angels/demons", label: "The demons" },
       { href: "/angels/vocabulary", label: "The vocabulary" },
+      { href: "/angels/stories", label: "Illustrated encounters" },
+      { href: "/angels/dossier", label: "Research worksheets" },
     ],
     journey: [
       {
@@ -319,11 +325,8 @@ export const WORLD_GUIDES: Record<WorldId, WorldGuideConfig> = {
     },
     nav: [
       { href: "/evidence", label: "Overview" },
-      { href: "/evidence#claim-lab", label: "Claim Lab" },
-      { href: "/evidence#method", label: "The method" },
-      { href: "/evidence#rooms", label: "Eight lenses" },
-      { href: "/evidence#source-map", label: "Source map" },
-      { href: "/evidence#faith-science", label: "Faith & Science" },
+      { href: "/evidence/frameworks", label: "Belief frameworks" },
+      { href: "/evidence/frameworks/compare", label: "Compare frameworks" },
     ],
     journey: [
       {

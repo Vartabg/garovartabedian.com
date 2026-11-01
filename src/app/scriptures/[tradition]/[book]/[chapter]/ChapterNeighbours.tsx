@@ -2,6 +2,14 @@ import { pickTranslation, traditionFor } from "@/lib/scriptures/client";
 import Link from "next/link";
 import type { Canons, ChapterNeighbours as ChapterNeighboursData, TranslationId } from "@/lib/scriptures/types";
 
+/** A neighbour chapter's link: this canon when it holds the book, and the reader's version when the book has it. */
+export function neighbourHref(canons: Canons, traditionId: string, book: string, chapter: number, translation?: TranslationId) {
+  const tradition = canons.traditions.find(t => t.id === traditionId);
+  const targetTradition = tradition?.books.includes(book) ? traditionId : traditionFor(canons, book);
+  const edition = translation && canons.books[book]?.trans.includes(translation) ? translation : pickTranslation(canons, canons.traditions.find(t => t.id === targetTradition)?.transPreference ?? [], book);
+  return `/scriptures/${targetTradition}/${book}/${chapter}${edition ? `?t=${edition}` : ""}`;
+}
+
 /**
  * "Chapters that carry this idea" — the computed counterpart to the curated
  * cross-references above it. Every row is a chapter whose wording sits nearest
@@ -45,12 +53,9 @@ export default function ChapterNeighbours({
       <ol className="scr-neighbour-list">
         {data.neighbours.map((neighbour) => {
           const name = canons.books[neighbour.book]?.name ?? neighbour.book;
-          const tradition = canons.traditions.find(t => t.id === traditionId);
-          const targetTradition = tradition?.books.includes(neighbour.book) ? traditionId : traditionFor(canons, neighbour.book);
-          const edition = translation && canons.books[neighbour.book]?.trans.includes(translation) ? translation : pickTranslation(canons, canons.traditions.find(t => t.id === targetTradition)?.transPreference ?? [], neighbour.book);
           return (
             <li key={`${neighbour.book}-${neighbour.chapter}`}>
-              <Link href={`/scriptures/${targetTradition}/${neighbour.book}/${neighbour.chapter}${edition ? `?t=${edition}` : ""}`}>
+              <Link href={neighbourHref(canons, traditionId, neighbour.book, neighbour.chapter, translation)}>
                 {name} {neighbour.chapter}
               </Link>
               <span className="scr-neighbour-score" aria-label={`similarity ${neighbour.score}`}>

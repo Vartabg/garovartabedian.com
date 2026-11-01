@@ -1,0 +1,36 @@
+# Further early figures and Gospel comparisons
+
+Baseline 872f9c1d223d66766c98a49146871629da128f53. Add the prior audit's missing figures, including the two short optional examples the user explicitly included. Reuse the existing early-figure loader, one-block Acts excerpts, hash-verified source mappings and comparison panels; no new reader or external text endpoint.
+
+## Inventory and comparisons
+
+- Acts of Thomas 10, 28, 36, 53, 95, 143, 156: one bounded James 1924 excerpt per selection. Thomas speaks/prays or quotes sayings attributed to Jesus; in 95 Mygdonia calls Thomas a physician. Identify variant/supplied wording (especially 143). Compare 28 with new birds MAT 6:25–34/LUK 12:22–31 and the existing yoke MAT 11:28–30; 36 with existing camel/needle, extending its accounts to MAT 19:23–24/MRK 10:23–25/LUK 18:24–25, and new fine clothing MAT 11:8/LUK 7:25; 53 with new ask/seek/knock MAT 7:7–8/LUK 11:9–10; 10/95/143/156 with new physician MAT 9:12–13/MRK 2:17/LUK 5:31–32. Clearly state shared imagery and distinct referents where comparisons are not direct.
+- 1 Clement 34:1–4 (good and careless workers) compare thematically to talents/pounds and unprofitable servants; 36:1–2 (mirror and light), standalone. Author speaks.
+- Barnabas 6:1–19 (cornerstone; full ANF legacy chapter, including 6:2–4) compare wicked tenants Gospel accounts and Thomas 66 as a shared quotation of Psalm 118, not the tenants story; 6:8–17 (milk and honey) and 7:6–11 (goats and thorns) standalone as the author's scriptural interpretations, not medical or ritual claims.
+- Diognetus 10:4–6 (bearing a neighbor's burden) standalone, author speaks; no claim of a direct Gospel parallel.
+
+Use public-domain historical text already hosted in `content/early-library/readings/` (Lightfoot), except Barnabas 6 cornerstone: the hosted Lightfoot digital text says “fountains” in 6:2, while ANF says “foundations”; use the existing ANF legacy reader chapter 6 in full with a heading-checked `barnabas/s5` mapping; confirm every exact chapter and passage block and check source for transcription errors, moving to an existing alternate edition only when warranted. Acts passages from M. R. James 1924 edition, checked against printed PDF https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf; preserve all relevant editorial text and bracketed supplements; each excerpt one primary-text block, explicit PDF link and SHA-256. Verify opening and ending, speaker and manuscript notes. Use only literal excerpts; distinguish narrative attribution from historically authentic quotation.
+
+Add exactly 13 figures (7 Acts, 2 Clement, 3 Barnabas, 1 Diognetus); new canonical figure count +4. Preserve previous figures and comparisons. Fix independent staged-comparison fixture when existing Gospel ranges are deliberately extended; add fixed expectations for every new target and all Gospel verses, early panels, speakers, sources and limits. Explicit allowlists and tracing must include all added files and exclude unrelated ones. Source failures preserve link/note and fail closed individually; shared catalog failure remains global. Check Find, no-JS, browser in light/dark and phone/desktop, and a11y. Full lint, typecheck, test, build, `test:a11y`, secret/history audit and agent-task finish, merge verified PR and normal production release.
+
+Review reading list: AGENTS.md; this plan; docs/plans/early-figures-round3.md; public/jesus/{early-figures,synoptic-figures,parables}.json; src/lib/jesus/early-figures{,-server}.ts; src/app/jesus/parables/ParablesRoom.tsx; scripts/release/check-staged-thomas.mjs; scripts/release/early-round3-comparisons.json; scripts/site/check-thomas-parables-trace.mjs; and source content/early-library/readings/{1-clement,barnabas,diognetus}. Compare Acts source https://www.earlychristianwritings.com/text/actsthomas.html. Assess scope, mapping, speaker and source boundaries, partial comparisons, old fixture regressions, and meaningful validation. Do not consult conversation history or memory.
+
+## Fixed source and failure contracts
+
+James excerpts are whole numbered sections with opening and ending boundaries, speaker and targets:
+
+- `acts-thomas-physician-10`: starts “10 And the apostle stood”, ends “left them in that place and departed”; Thomas prays, physician target.
+- `acts-thomas-birds`: 28 “And the apostle ceased” through “implant his sign in your souls”; Thomas quotes sayings attributed to the Saviour; birds and yoke targets.
+- `acts-thomas-wealth`: 36 “And when the apostle had said this” through “he permitteth thee not to turn thyself away”; Thomas; camel, clothing and birds targets, the last limited to the prayer against anxiety.
+- `acts-thomas-ask`: 53 “And the apostle said to him” through “the glory and faith of them that stand by”; Thomas prays and quotes words attributed to Jesus; ask/seek target.
+- `acts-thomas-physician-95`: 95 “But Charisius” through “she would not come”; Mygdonia and Charisius; physician target, referring to Thomas.
+- `acts-thomas-physician-143`: 143 “And as the apostle spake thus” through “they should not use them”; narrator, Thomas; physician target, referring to Jesus; preserve editorial marks and variants.
+- `acts-thomas-physician-156`: 156 “And then Judas began to pray” through “let thine holy spirit dwell in them”; Thomas; physician target, referring to Jesus.
+
+The printed 1924 PDF scan page 427 (PDF page 458) visibly prints angle brackets around `<diseases>` and `<son>` in Acts 143, not parentheses; use printed editorial marks, note supplied wording. Thomas 10, 28, 36, 53, 95, 143 and 156 use one nonempty primary-text block each and fixed SHA. Verse/sentence starts and ends above are independently asserted in tests alongside comparison targets and displayed source links.
+
+Hosted selection ranges (inclusive primary-text blocks) are `1-clem-34` 1–4, `1-clem-36` 1–2, `barn-6` 8–17, `barn-7` 6–11, `diogn-10` 4–6. The full ANF legacy `barnabas/s5` is heading `Chapter VI.` and exactly one paragraph; `edition` remains `barnabas`, translator Alexander Roberts and James Donaldson, source link `/early/barnabas#s5`, stable SHA. This full chapter intentionally overlaps the standalone milk-and-honey selection. Add `public/early/texts/barnabas.json` to the review list, and extend both the server loader and staged validator with a fixed s5 heading and section index, preserving s9 checks.
+
+Test every new figure and target against a fixed independent inventory, exact source bytes, source href and canon/speaker/note. Test s5 wrong heading, missing and malformed source and changed digest, and ensure only the affected selection fails; test missing/invalid shared catalog hides all early text but preserves links and notes, including no-JavaScript fallback. Maintain the existing prior 17 staged expectations and verify each added Gospel verse against WEB. Mark every image comparison as partial when it is not a direct parallel.
+
+For the new Acts excerpts and Lightfoot sections as well as Barnabas s5, exercise missing, malformed and digest-mismatched sources; assert the affected figure alone is withheld, its link and note remain visible, and the no-JavaScript fallback retains access. Independently exercise missing and invalid shared catalogs, which withhold all early texts while preserving links and notes.

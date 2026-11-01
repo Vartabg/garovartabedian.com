@@ -1,47 +1,32 @@
+import StudyPassageNotice from "../_components/StudyPassageNotice";
+import type { StudySearchParams } from "@/lib/scriptures/study-context";
 import { Suspense } from "react";
+import StudyPageHeader from "@/app/_components/StudyPageHeader";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CATENA_RECEPTION } from "@/lib/scriptures/catena";
 import CatenaClient from "./CatenaClient";
 
 export const metadata: Metadata = {
-  title: "The Computational Catena Aurea — Patristic Reception Chain",
+  title: "Catena · early readers",
   description:
-    "A source-attributed index linking selected Scripture verses with hosted passages from Clement, Ignatius, Polycarp, the Didache, and Barnabas, with editorial notes and NotebookLM export.",
+    "Follow selected Scripture passages into early Christian writings, with named sources, dates, source-attributed excerpts, and editorial notes.",
   alternates: { canonical: "/scriptures/catena" },
   openGraph: {
-    title: "The Computational Catena Aurea — Patristic Reception Chain",
+    title: "Catena · early readers",
     description:
-      "Trace selected early Christian uses of biblical passages with hosted excerpts, dates, links, and clearly labeled editorial notes.",
+    "Follow selected Scripture passages into early Christian writings, with named sources, dates, source-attributed excerpts, and editorial notes.",
     url: "/scriptures/catena",
   },
 };
 
-export default function CatenaPage() {
+export default function CatenaPage({ searchParams }: { searchParams: Promise<StudySearchParams> }) {
   return (
     <article className="prose-wrap">
-      <nav className="breadcrumbs" aria-label="Breadcrumbs">
-        <Link href="/scriptures" className="crumb">
-          Scriptures
-        </Link>
-        <span className="crumb-sep" aria-hidden="true">
-          /
-        </span>
-        <span className="crumb is-current">Catena Aurea</span>
-      </nav>
-
-      <header className="page-header" style={{ marginBottom: "2rem" }}>
-        <p className="kicker">HISTORICAL RECEPTION · SOURCE-ATTRIBUTED LINKS</p>
-        <h1 style={{ fontFamily: "Cinzel, serif", fontSize: "clamp(2rem, 5vw, 3rem)", margin: "0.5rem 0 1rem" }}>
-          The Computational Catena Aurea
-        </h1>
-        <p style={{ fontSize: "1.125rem", lineHeight: 1.6, color: "var(--muted-ink)", maxWidth: "56rem" }}>
-          Thomas Aquinas&apos;s medieval <em>Catena Aurea</em> arranged earlier commentary alongside the Gospels. This digital
-          index borrows that organizing idea for a smaller, selected set of hosted early Christian passages. Each card
-          names its work, section, approximate date, and linked Scripture; the connecting commentary is editorial and
-          should be checked against the cited text before reuse. The selection can be exported to Google NotebookLM.
-        </p>
-      </header>
+      <StudyPageHeader
+        path="/scriptures/catena"
+        action="Choose a passage or an early writer. Each result names the writing, its date, and the source text. Editorial connections remain separate from the quoted passages."
+      />
 
       <aside className="world-survival" aria-label="Featured source investigation">
         <h2>Isaiah 53 in 1 Clement 16</h2>
@@ -51,7 +36,9 @@ export default function CatenaPage() {
         </Link>
       </aside>
 
-      <Suspense fallback={<div className="scr-loading">Loading patristic reception chain...</div>}>
+      <StudyPassageNotice searchParams={searchParams} note="These early readings cover selected passages. Your starting verse is kept above; choose an entry below or return to reading." />
+
+      <Suspense fallback={<div className="scr-loading">Loading early readings…</div>}>
         <CatenaClient initialEntries={CATENA_RECEPTION} />
       </Suspense>
     </article>

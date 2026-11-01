@@ -10,37 +10,37 @@ const BASIS_BADGES: Record<
 > = {
   explicit: {
     label: "Explicit in text",
-    bg: "bg-emerald-900/40 border-emerald-600/50",
-    text: "text-emerald-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
     description: "Stated directly in the primary text of this witness.",
   },
   inferred: {
     label: "Direct inference",
-    bg: "bg-blue-900/40 border-blue-600/50",
-    text: "text-blue-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
     description: "Follows directly from the narrative sequence or language.",
   },
   disputed: {
     label: "Disputed reading",
-    bg: "bg-amber-900/40 border-amber-600/50",
-    text: "text-amber-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
     description: "Plausible reading, but other interpretations or manuscript variants exist.",
   },
   reception: {
     label: "Later reception",
-    bg: "bg-purple-900/40 border-purple-600/50",
-    text: "text-purple-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
     description: "Derived from subsequent liturgical or commentary tradition.",
   },
 };
 
 const CONSENSUS_BADGES: Record<WitnessEdge["scholarlyConsensus"], string> = {
-  strong: "bg-emerald-950 text-emerald-300 border-emerald-700/60",
-  debated: "bg-amber-950 text-amber-300 border-amber-700/60",
-  "minority-view": "bg-neutral-900 text-neutral-300 border-neutral-700",
+  strong: "parallel-surface parallel-accent parallel-rule",
+  debated: "parallel-surface parallel-accent parallel-rule",
+  "minority-view": "parallel-panel parallel-muted parallel-rule",
 };
 
-export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
+export default function MatrixView({ matrix, returnHref = "/scriptures/parallels" }: { matrix: ParallelMatrix; returnHref?: string }) {
   const [selectedEdgeId, setSelectedEdgeId] = useState<string | null>(
     matrix.edges[0]?.id ?? null,
   );
@@ -79,55 +79,55 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
       : matrix.receptionClaims.filter((c) => c.tradition === activeReception);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-neutral-200">
+    <div className="scr-parallels-detail py-8 parallel-ink">
       {/* Top Header */}
-      <header className="border-b border-neutral-800 pb-8 mb-10">
+      <header className="border-b parallel-rule pb-8 mb-10">
         <div className="flex items-center mb-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-wide bg-neutral-900 border border-neutral-700 text-neutral-300">
-            <span>PARALLEL CLAIM MATRIX</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-wide parallel-panel border parallel-rule parallel-muted">
+            <span>SOURCE COMPARISON</span>
             <span>·</span>
-            <span className="text-emerald-400 capitalize">{matrix.provenance.reviewStatus.replace("-", " ")}</span>
+            <span className="parallel-accent capitalize">{matrix.provenance.reviewStatus.replace("-", " ")}</span>
           </div>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl font-serif font-medium tracking-tight text-white mb-2">
+        <h1 data-hand="capitals" className="text-3xl sm:text-4xl font-serif font-medium tracking-tight parallel-ink mb-2">
           {matrix.title}
         </h1>
-        <p className="text-lg text-amber-200/80 font-serif mb-4">{matrix.subtitle}</p>
-        <p className="text-neutral-300 text-base max-w-3xl leading-relaxed">{matrix.summary}</p>
+        <p className="text-lg parallel-accent font-serif mb-4">{matrix.subtitle}</p>
+        <p className="parallel-muted text-base max-w-3xl leading-relaxed">{matrix.summary}</p>
 
         {/* Provenance & Verification Card */}
-        <details className="mt-6 group rounded-xl bg-neutral-900/40 border border-neutral-800 text-xs text-neutral-400 overflow-hidden transition">
-          <summary className="px-4 py-3 cursor-pointer flex items-center justify-between hover:text-neutral-200 select-none">
+        <details className="mt-6 group rounded-xl parallel-panel border parallel-rule text-xs parallel-muted overflow-hidden transition">
+          <summary className="px-4 py-3 cursor-pointer flex items-center justify-between  select-none">
             <div className="flex items-center gap-2">
-              <span className="text-neutral-500 group-open:rotate-90 transition-transform font-mono">›</span>
-              <span className="text-neutral-300 font-medium font-mono text-[11px] uppercase tracking-wider">
-                Provenance & Machine Verification
+              <span className="parallel-muted group-open:rotate-90 transition-transform font-mono">›</span>
+              <span className="parallel-muted font-medium font-mono text-[.8rem] uppercase tracking-wider">
+                Sources and review history
               </span>
             </div>
-            <span className="text-neutral-500 font-mono text-[11px]">
+            <span className="parallel-muted font-mono text-[.8rem]">
               {matrix.provenance.rubricVersion} · {matrix.provenance.reviewedAt.slice(0, 10)}
             </span>
           </summary>
-          <div className="px-4 pb-4 pt-2 border-t border-neutral-800/60 space-y-2 text-xs">
+          <div className="px-4 pb-4 pt-2 border-t parallel-rule space-y-2 text-xs">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
-                <span className="text-neutral-300 font-medium">Review Authority: </span>
+                <span className="parallel-muted font-medium">Reviewed by: </span>
                 <span>{matrix.provenance.reviewer}</span>
               </div>
               <div>
-                <span className="text-neutral-300 font-medium">Rubric: </span>
+                <span className="parallel-muted font-medium">Rubric: </span>
                 <span className="font-mono">{matrix.provenance.rubricVersion}</span>
               </div>
             </div>
             <div>
-              <span className="text-neutral-300 font-medium">Review Scope: </span>
+              <span className="parallel-muted font-medium">Review Scope: </span>
               <span>{matrix.provenance.reviewScope}</span>
             </div>
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-2 border-t border-neutral-800/40 font-mono text-[11px] text-neutral-500">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-2 border-t parallel-rule font-mono text-[.8rem] parallel-muted">
               <div className="truncate max-w-xl">
-                <span className="text-neutral-400 font-sans">Content Digest (SHA-256): </span>
-                <code className="text-neutral-300 bg-black/40 px-1.5 py-0.5 rounded border border-neutral-800">
+                <span className="parallel-muted font-sans">Content Digest (SHA-256): </span>
+                <code className="parallel-muted parallel-surface px-1.5 py-0.5 rounded border parallel-rule">
                   {matrix.provenance.reviewedContentHash}
                 </code>
               </div>
@@ -135,16 +135,16 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
                 <button
                   type="button"
                   onClick={handleCopyCitation}
-                  className="text-amber-300 hover:text-amber-200 transition font-sans underline underline-offset-2 flex-shrink-0"
+                  className="parallel-accent  transition font-sans underline underline-offset-2 flex-shrink-0"
                 >
-                  {citationCopied ? "✓ SBL Citation Copied" : "Copy Academic Citation"}
+                  {citationCopied ? "Citation copied" : "Copy citation"}
                 </button>
                 <span>·</span>
                 <a
                   href={`/parallels/${matrix.slug}.json`}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-neutral-400 hover:text-neutral-200 transition underline underline-offset-2 flex-shrink-0"
+                  className="parallel-muted  transition underline underline-offset-2 flex-shrink-0"
                 >
                   JSON Record ↗
                 </a>
@@ -156,34 +156,34 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
 
       {/* Witnesses Grid */}
       <section className="mb-12" aria-labelledby="witnesses-heading">
-        <h2 id="witnesses-heading" className="text-xs uppercase tracking-widest font-mono text-neutral-400 mb-4">
+        <h2 id="witnesses-heading" className="text-xs uppercase tracking-widest font-mono parallel-muted mb-4">
           The Compared Witnesses
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {matrix.witnesses.map((w) => (
             <div
               key={w.id}
-              className="p-5 rounded-xl bg-neutral-900/40 border border-neutral-800 hover:border-neutral-700 transition flex flex-col justify-between"
+              className="p-5 rounded-xl parallel-panel border parallel-rule  transition flex flex-col justify-between"
             >
               <div>
-                <span className="text-xs font-mono text-amber-400/90 tracking-wide">{w.primaryTradition}</span>
-                <h3 className="text-lg font-serif font-medium text-white mt-1 mb-2">{w.title}</h3>
-                <dl className="text-xs space-y-1.5 text-neutral-400">
+                <span className="text-xs font-mono parallel-accent tracking-wide">{w.primaryTradition}</span>
+                <h3 className="text-lg font-serif font-medium parallel-ink mt-1 mb-2">{w.title}</h3>
+                <dl className="text-xs space-y-1.5 parallel-muted">
                   <div>
-                    <dt className="inline text-neutral-500">Language: </dt>
-                    <dd className="inline text-neutral-300">{w.language}</dd>
+                    <dt className="inline parallel-muted">Language: </dt>
+                    <dd className="inline parallel-muted">{w.language}</dd>
                   </div>
                   <div>
-                    <dt className="inline text-neutral-500">Composition: </dt>
-                    <dd className="inline text-neutral-300">{w.dates.composition}</dd>
+                    <dt className="inline parallel-muted">Composition: </dt>
+                    <dd className="inline parallel-muted">{w.dates.composition}</dd>
                   </div>
                   <div>
-                    <dt className="inline text-neutral-500">Earliest Witness: </dt>
-                    <dd className="inline text-neutral-300">{w.dates.earliestManuscript}</dd>
+                    <dt className="inline parallel-muted">Earliest Witness: </dt>
+                    <dd className="inline parallel-muted">{w.dates.earliestManuscript}</dd>
                   </div>
                 </dl>
               </div>
-              <div className="mt-4 pt-3 border-t border-neutral-800/80 text-[11px] text-neutral-500 leading-snug">
+              <div className="mt-4 pt-3 border-t parallel-rule text-[.8rem] parallel-muted leading-snug">
                 {w.licenseNotice}
               </div>
             </div>
@@ -194,11 +194,11 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
       {/* Slot Comparison Matrix */}
       <section className="mb-16" aria-labelledby="slots-heading">
         <div className="flex items-center justify-between mb-6">
-          <h2 id="slots-heading" className="text-xs uppercase tracking-widest font-mono text-neutral-400">
-            Source-Anchored Slot Comparison
+          <h2 id="slots-heading" className="text-xs uppercase tracking-widest font-mono parallel-muted">
+            Compare the passages
           </h2>
-          <span className="text-xs text-neutral-500 font-mono">
-            {matrix.slots.length} thematic slots · deterministic verbatim quotes
+          <span className="text-xs parallel-muted font-mono">
+            {matrix.slots.length} themes · cited excerpts
           </span>
         </div>
 
@@ -206,18 +206,18 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
           {matrix.slots.map((slot, sIdx) => (
             <article
               key={slot.id}
-              className="p-6 rounded-2xl bg-neutral-950 border border-neutral-800/90 shadow-sm"
+              className="p-6 rounded-2xl parallel-panel border parallel-rule shadow-sm"
               aria-labelledby={`slot-title-${slot.id}`}
             >
-              <div className="flex items-start gap-4 mb-6 border-b border-neutral-800/70 pb-4">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-neutral-900 border border-neutral-700 flex items-center justify-center font-mono text-sm text-neutral-300">
+              <div className="flex items-start gap-4 mb-6 border-b parallel-rule pb-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full parallel-panel border parallel-rule flex items-center justify-center font-mono text-sm parallel-muted">
                   {sIdx + 1}
                 </span>
                 <div>
-                  <h3 id={`slot-title-${slot.id}`} className="text-xl font-serif text-white font-medium">
+                  <h3 id={`slot-title-${slot.id}`} className="text-xl font-serif parallel-ink font-medium">
                     {slot.label}
                   </h3>
-                  <p className="text-sm text-neutral-400 mt-0.5">{slot.description}</p>
+                  <p className="text-sm parallel-muted mt-0.5">{slot.description}</p>
                 </div>
               </div>
 
@@ -233,19 +233,19 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
                   return (
                     <div
                       key={w.id}
-                      className="flex flex-col justify-between p-4 rounded-xl bg-neutral-900/50 border border-neutral-800"
+                      className="flex flex-col justify-between p-4 rounded-xl parallel-panel border parallel-rule"
                     >
                       <div>
                         <div className="flex items-center justify-between gap-2 mb-3">
-                          <span className="text-xs font-mono font-medium text-neutral-300">{w.shortTitle}</span>
+                          <span className="text-xs font-mono font-medium parallel-muted">{w.shortTitle}</span>
                           <div className="flex items-center gap-1.5">
                             {cell.locator.originalLanguage && (
-                              <span className="px-1.5 py-0.5 rounded text-[10px] font-mono bg-neutral-950 border border-neutral-800 text-neutral-400">
+                              <span className="px-1.5 py-0.5 rounded text-[.75rem] font-mono parallel-panel border parallel-rule parallel-muted">
                                 {cell.locator.originalLanguage}
                               </span>
                             )}
                             <span
-                              className={`px-2 py-0.5 rounded text-[11px] font-mono border ${badge.bg} ${badge.text}`}
+                              className={`px-2 py-0.5 rounded text-[.8rem] font-mono border ${badge.bg} ${badge.text}`}
                               title={badge.description}
                             >
                               {badge.label}
@@ -253,11 +253,11 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
                           </div>
                         </div>
 
-                        <p className="text-sm font-medium text-neutral-200 mb-3 leading-snug">{cell.summary}</p>
+                        <p className="text-sm font-medium parallel-muted mb-3 leading-snug">{cell.summary}</p>
 
                         {/* Verbatim Quote */}
                         <blockquote
-                          className={`p-3 rounded-lg bg-black/40 border border-neutral-800 text-xs leading-relaxed text-neutral-300 mb-3 ${
+                          className={`p-3 rounded-lg parallel-surface border parallel-rule text-xs leading-relaxed parallel-muted mb-3 ${
                             w.isRtl ? "font-serif text-right" : ""
                           }`}
                           dir={w.isRtl ? "rtl" : "ltr"}
@@ -267,15 +267,15 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
 
                         {/* Limits / Boundaries */}
                         {cell.limits && (
-                          <div className="text-[11px] text-neutral-400 bg-neutral-900/80 p-2.5 rounded border border-neutral-800 mb-3">
-                            <span className="text-amber-400/90 font-mono">Bound: </span>
+                          <div className="text-[.8rem] parallel-muted parallel-panel p-2.5 rounded border parallel-rule mb-3">
+                            <span className="parallel-accent font-mono">Bound: </span>
                             {cell.limits}
                           </div>
                         )}
                       </div>
 
                       {/* Footer Citation & Copy */}
-                      <div className="pt-2 border-t border-neutral-800/80 flex items-center justify-between text-xs text-neutral-500 font-mono">
+                      <div className="pt-2 border-t parallel-rule flex items-center justify-between text-xs parallel-muted font-mono">
                         <span>{cell.locator.passageRef}</span>
                         <button
                           type="button"
@@ -288,7 +288,7 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
                               w.licenseNotice,
                             )
                           }
-                          className="px-2 py-1 rounded bg-neutral-800 hover:bg-neutral-700 text-neutral-300 transition text-[11px]"
+                          className="px-2 py-1 rounded parallel-surface  parallel-muted transition text-[.8rem]"
                           aria-label={`Copy citation and quote for ${w.shortTitle}`}
                         >
                           {isCopied ? "✓ Copied" : "Copy Quote"}
@@ -304,12 +304,12 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
       </section>
 
       {/* Pairwise Relationship Graph Section */}
-      <section className="mb-16 border-t border-neutral-800 pt-10" aria-labelledby="edges-heading">
+      <section className="mb-16 border-t parallel-rule pt-10" aria-labelledby="edges-heading">
         <div className="max-w-3xl mb-6">
-          <h2 id="edges-heading" className="text-xs uppercase tracking-widest font-mono text-neutral-400 mb-2">
-            Pairwise Textual & Literary Relationships
+          <h2 id="edges-heading" className="text-xs uppercase tracking-widest font-mono parallel-muted mb-2">
+            How the sources relate
           </h2>
-          <p className="text-sm text-neutral-400">
+          <p className="text-sm parallel-muted">
             Rather than assigning a single broad label to multi-tradition corpora, relationships are evaluated as
             pairwise edges with explicit scholarly consensus ratings and citations.
           </p>
@@ -326,10 +326,11 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
                 key={edge.id}
                 type="button"
                 onClick={() => setSelectedEdgeId(edge.id)}
+                aria-pressed={isSelected}
                 className={`px-4 py-2 rounded-lg text-xs font-mono transition border ${
                   isSelected
-                    ? "bg-amber-950/60 border-amber-500 text-amber-200"
-                    : "bg-neutral-900/60 border-neutral-800 text-neutral-400 hover:border-neutral-700"
+                    ? "parallel-surface parallel-rule parallel-accent"
+                    : "parallel-panel parallel-rule parallel-muted "
                 }`}
               >
                 {src} ↔ {tgt}
@@ -339,10 +340,10 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
         </div>
 
         {selectedEdge && (
-          <div className="p-6 rounded-2xl bg-neutral-950 border border-neutral-800 max-w-4xl">
+          <div className="p-6 rounded-2xl parallel-panel border parallel-rule max-w-4xl">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
-              <span className="text-sm font-mono text-white font-medium uppercase tracking-wider">
-                Relationship: <span className="text-amber-400">{selectedEdge.relationship}</span>
+              <span className="text-sm font-mono parallel-ink font-medium uppercase tracking-wider">
+                Relationship: <span className="parallel-accent">{selectedEdge.relationship}</span>
               </span>
               <span
                 className={`px-2.5 py-0.5 rounded-full text-xs font-mono border ${
@@ -353,13 +354,13 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
               </span>
             </div>
 
-            <p className="text-sm text-neutral-200 leading-relaxed mb-4">{selectedEdge.basisNote}</p>
+            <p className="text-sm parallel-muted leading-relaxed mb-4">{selectedEdge.basisNote}</p>
 
             <div>
-              <h4 className="text-xs font-mono uppercase text-neutral-500 tracking-wider mb-2">
+              <h4 className="text-xs font-mono uppercase parallel-muted tracking-wider mb-2">
                 Scholarly Citations & References
               </h4>
-              <ul className="list-disc list-inside space-y-1 text-xs text-neutral-400">
+              <ul className="list-disc list-inside space-y-1 text-xs parallel-muted">
                 {selectedEdge.citations.map((c, i) => (
                   <li key={i}>{c}</li>
                 ))}
@@ -370,28 +371,29 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
       </section>
 
       {/* Sourced Reception History Claims */}
-      <section className="border-t border-neutral-800 pt-10" aria-labelledby="reception-heading">
+      <section className="border-t parallel-rule pt-10" aria-labelledby="reception-heading">
         <div className="max-w-3xl mb-6">
-          <h2 id="reception-heading" className="text-xs uppercase tracking-widest font-mono text-neutral-400 mb-2">
+          <h2 id="reception-heading" className="text-xs uppercase tracking-widest font-mono parallel-muted mb-2">
             Sourced Reception History
           </h2>
-          <p className="text-sm text-neutral-400">
+          <p className="text-sm parallel-muted">
             Theological typologies, midrashic developments, and liturgical commemorations separated from the textual
             diff and grounded in their own historic reception sources.
           </p>
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex gap-2 mb-6 text-xs font-mono">
+        <div className="parallel-controls flex gap-2 mb-6 text-xs font-mono">
           {(["all", "jewish", "christian", "islamic"] as const).map((trad) => (
             <button
               key={trad}
               type="button"
               onClick={() => setActiveReception(trad)}
+              aria-pressed={activeReception === trad}
               className={`px-3 py-1.5 rounded-lg border transition capitalize ${
                 activeReception === trad
-                  ? "bg-neutral-800 border-neutral-600 text-white"
-                  : "bg-neutral-900/40 border-neutral-800 text-neutral-400 hover:border-neutral-700"
+                  ? "parallel-surface parallel-rule parallel-ink"
+                  : "parallel-panel parallel-rule parallel-muted "
               }`}
             >
               {trad === "all" ? "All Traditions" : trad}
@@ -403,32 +405,32 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
           {filteredClaims.map((claim) => (
             <div
               key={claim.id}
-              className="p-5 rounded-xl bg-neutral-900/40 border border-neutral-800 flex flex-col justify-between"
+              className="p-5 rounded-xl parallel-panel border parallel-rule flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-2">
-                  <span className="text-xs font-mono uppercase text-amber-400/90">{claim.tradition}</span>
-                  <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-neutral-800 text-neutral-300">
+                  <span className="text-xs font-mono uppercase parallel-accent">{claim.tradition}</span>
+                  <span className="text-[.8rem] font-mono px-2 py-0.5 rounded parallel-surface parallel-muted">
                     {claim.basis.grade}
                   </span>
                 </div>
-                <h3 className="text-base font-serif font-medium text-white mb-2">{claim.subject}</h3>
-                <p className="text-xs text-neutral-300 leading-relaxed mb-4">{claim.text}</p>
+                <h3 className="text-base font-serif font-medium parallel-ink mb-2">{claim.subject}</h3>
+                <p className="text-xs parallel-muted leading-relaxed mb-4">{claim.text}</p>
                 {claim.limit && (
-                  <p className="text-[11px] text-neutral-400 italic bg-black/30 p-2.5 rounded border border-neutral-800/80 mb-4">
+                  <p className="text-[.8rem] parallel-muted italic parallel-surface p-2.5 rounded border parallel-rule mb-4">
                     Boundary: {claim.limit}
                   </p>
                 )}
               </div>
 
-              <div className="pt-3 border-t border-neutral-800/80">
-                <h4 className="text-[11px] font-mono text-neutral-500 uppercase tracking-wider mb-1.5">
+              <div className="pt-3 border-t parallel-rule">
+                <h4 className="text-[.8rem] font-mono parallel-muted uppercase tracking-wider mb-1.5">
                   Sources Cited
                 </h4>
-                <ul className="text-xs text-neutral-400 space-y-1">
+                <ul className="text-xs parallel-muted space-y-1">
                   {claim.sources.map((s, idx) => (
                     <li key={idx} className="flex items-center gap-1.5">
-                      <span className="text-neutral-600">›</span>
+                      <span className="parallel-muted">›</span>
                       <span>{s.label}</span>
                     </li>
                   ))}
@@ -440,19 +442,19 @@ export default function MatrixView({ matrix }: { matrix: ParallelMatrix }) {
       </section>
 
       {/* Bottom Navigation & Index Link */}
-      <nav className="mt-16 pt-8 border-t border-neutral-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono" aria-label="Matrix navigation">
+      <nav className="mt-16 pt-8 border-t parallel-rule flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono" aria-label="Matrix navigation">
         <Link
-          href="/scriptures/parallels"
-          className="inline-flex items-center gap-2 text-amber-300 hover:text-amber-200 transition"
+          href={returnHref}
+          className="inline-flex items-center gap-2 parallel-accent  transition"
         >
           <span aria-hidden="true">←</span>
-          <span>All Abrahamic Parallel Matrices</span>
+          <span>All parallel claims</span>
         </Link>
-        <div className="flex items-center gap-4 text-neutral-500">
-          <Link href="/scriptures/graph" className="hover:text-neutral-300 transition">
+        <div className="flex items-center gap-4 parallel-muted">
+          <Link href="/scriptures/graph" className=" transition">
             Cross-Reference Graph →
           </Link>
-          <Link href="/sources" className="hover:text-neutral-300 transition">
+          <Link href="/sources" className=" transition">
             Source Records →
           </Link>
         </div>

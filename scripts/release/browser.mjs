@@ -18,7 +18,10 @@ process.once("SIGTERM", stop);
 try {
   server = await chromium.launchServer({
     channel: "chrome", headless: true, host: "127.0.0.1",
-    args: ["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"],
+    // Let Chrome select its graphics backend; forcing CPU rendering can starve
+    // terrain frames. Keep software fallback available when Chrome needs it.
+    // Replace only the final audio output stream, preserving real media decoding.
+    args: ["--enable-unsafe-swiftshader", "--disable-audio-output"],
   });
   if (interrupted) throw new Error("Browser tests interrupted.");
   child = spawn(process.execPath, [

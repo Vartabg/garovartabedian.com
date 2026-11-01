@@ -435,6 +435,14 @@ main:has(.ew-reading-page) {
   font-size: 1.5rem;
 }
 
+/* Canon label for writings outside every canon on the shelf: visible before the text, not tucked away. */
+.ew-canon-status {
+  margin: 0.4rem 0 1rem;
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--accent);
+  color: var(--ink);
+}
+
 /* A dense jump-nav for texts long enough to need one */
 .ew-jump {
   display: flex;

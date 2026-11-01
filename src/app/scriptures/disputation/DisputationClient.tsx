@@ -168,7 +168,7 @@ export default function DisputationClient({ initialDisputations }: Props) {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(19rem, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 19rem), 1fr))",
             gap: "0.5rem",
           }}
         >

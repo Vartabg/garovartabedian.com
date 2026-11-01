@@ -2,54 +2,88 @@
   "book": "MAL",
   "chapter": 4,
   "bookName": "Malachi",
-  "summary": "Malachi 4 (6 verses) continues the story of covenant faithfulness. Starting with '“For behold, the day comes, burning like a furnace, when all the proud and all who work wickedness will be stubble. The day that comes will burn them up,” says ', it moves through themes of covenant faithfulness and calls readers toward covenant faithfulness.",
-  "whyItMatters": "This chapter matters because it shows covenant faithfulness lived out in disillusioned community. For a first-time reader, it answers: who is God in this moment, what does he ask, and how do people respond.",
+  "summary": "Malachi 4 brings the book to its final contrast: the coming day will burn up the proud and wicked, but those who fear God's name will receive healing and freedom. The chapter then turns from the coming day to a closing command to remember the law given through Moses and a promise that Elijah will come before Yahweh's great and terrible day. Its last line holds together restored relationships and the threat of a curse.",
+  "whyItMatters": "This chapter gives Malachi's disputes their final horizon: judgment is not only demanded by the people but directed toward the proud and wicked, while healing is promised to those who fear God's name. It also closes the book by joining Moses, Elijah, memory, and changed hearts.",
   "context": {
-    "author": "Malachi",
-    "audience": "Post-exile",
-    "date": "~450 BC",
-    "setting": "Disillusioned community",
-    "literaryForm": "disputations"
+    "author": "Attributed to Malachi in the Hebrew heading and the World English Bible; readers debate whether the Hebrew form is a personal name or means “my messenger.”",
+    "audience": "Priests and the wider covenant community addressed as Israel and Judah, whose worship, teaching, relationships, and public life are under scrutiny.",
+    "date": "Usually placed in Persian-period Judah, often the fifth century BCE, though the book gives no exact date.",
+    "setting": "Judah and Jerusalem after the Babylonian exile, with temple worship established and a governor in office.",
+    "literaryForm": "Prophetic disputes, commands, and promises, ending here with judgment, healing, Moses, and Elijah."
   },
   "outline": [
     {
-      "heading": "Opening",
-      "verses": "1-2"
+      "heading": "The burning day",
+      "verses": "1",
+      "note": "The coming day is pictured as a furnace that consumes the proud and those who work wickedness."
     },
     {
-      "heading": "Middle",
-      "verses": "3-4"
+      "heading": "Healing for those who fear God's name",
+      "verses": "2-3",
+      "note": "Those who fear God's name are promised the sun of righteousness, healing, freedom, and victory over the wicked."
     },
     {
-      "heading": "Closing",
-      "verses": "5-6"
+      "heading": "Remember Moses' law",
+      "verses": "4",
+      "note": "The chapter commands Israel to remember the law, statutes, and ordinances given through Moses at Horeb."
+    },
+    {
+      "heading": "Elijah before the day",
+      "verses": "5-6",
+      "note": "Yahweh promises to send Elijah before the great and terrible day, with a mission of turning hearts before judgment falls."
     }
   ],
   "keyVerses": [
     {
       "ref": "4:1",
-      "text": "“For behold, the day comes, burning like a furnace, when all the proud and all who work wickedness will be stubble. The day that comes will burn them up,” says Yahweh of Armies, “so that it will leave",
-      "why": "Opening sets context"
+      "text": "“For behold, the day comes, burning like a furnace, when all the proud and all who work wickedness will be stubble. The day that comes will burn them up,” says Yahweh of Armies, “so that it will leave them neither root nor branch.",
+      "why": "This verse states the chapter's severe warning: the coming day exposes and consumes pride and wickedness."
+    },
+    {
+      "ref": "4:2",
+      "text": "But to you who fear my name shall the sun of righteousness arise with healing in its wings. You will go out and leap like calves of the stall.",
+      "why": "This is the chapter's matching promise, replacing the image of burning judgment with healing sunlight and released joy."
     },
     {
       "ref": "4:4",
       "text": "“Remember the law of Moses my servant, which I commanded to him in Horeb for all Israel, even statutes and ordinances.",
-      "why": "Central turn"
+      "why": "The closing appeal does not introduce a new program; it calls the community back to the law already given through Moses."
     },
     {
-      "ref": "4:6",
-      "text": "He will turn the hearts of the fathers to the children and the hearts of the children to their fathers, lest I come and strike the earth with a curse.”",
-      "why": "Closing"
+      "ref": "4:5",
+      "text": "Behold, I will send you Elijah the prophet before the great and terrible day of Yahweh comes.",
+      "why": "This verse introduces the final promised figure and connects Elijah with the coming day of Yahweh."
     }
   ],
   "themes": [
-    "covenant faithfulness"
+    "the coming day of Yahweh",
+    "judgment on pride and wickedness",
+    "healing for those who fear God's name",
+    "remembering Moses' law",
+    "Elijah and turned hearts",
+    "curse or restoration"
   ],
   "questions": [
     {
       "id": "q1",
-      "question": "What is happening in Malachi 4?",
-      "answer": "In 6 verses, this chapter malachi 4 (6 verses) continues the story of covenant faithfulness. starting with '“for behold, the day comes, burning like a furnace, when all the proud and all who work wickedness will be stubble. the day that comes will burn them up,” says ', it moves through themes of covenant faithfulness and calls readers toward covenant faithfulness. The setting is disillusioned community, written to post-exile. Look for who speaks, who listens, and what changes by the end.",
+      "question": "What is “the day” in this chapter?",
+      "answer": "The chapter describes it as a coming day from Yahweh that brings judgment and healing. For the proud and those who work wickedness, it is “burning like a furnace”; for those who fear God's name, it brings the sun of righteousness and healing. The chapter does not give a calendar date for this day.",
+      "verseRefs": [
+        "4:1",
+        "4:2",
+        "4:5"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Who are “the proud” and “all who work wickedness”?",
+      "answer": "Verse 1 names them as the people burned up in the coming day, but it does not give a list of individuals. In the book as a whole, Malachi has challenged corrupt worship, failed teaching, betrayal, injustice, and the claim that serving God is pointless. This verse should be read as the chapter's final judgment language, not as permission for readers to label enemies casually.",
       "verseRefs": [
         "4:1"
       ],
@@ -59,17 +93,9 @@
       ]
     },
     {
-      "id": "q2",
-      "question": "Who wrote Malachi and why 4 matters in the bigger story?",
-      "answer": "Traditionally malachi, addressed to post-exile around ~450 bc. This chapter fits the book's purpose as disputations — its themes of covenant faithfulness build on what came before.",
-      "verseRefs": [],
-      "category": "history",
-      "relatedVerses": []
-    },
-    {
       "id": "q3",
-      "question": "What does 'righteousness' mean in this chapter?",
-      "answer": "Being in right standing, doing what is right. In this chapter, it appears in context of covenant faithfulness. For a first-time reader: think of it as being in right standing, doing what is right, not just religious jargon.",
+      "question": "What does “stubble” mean here?",
+      "answer": "“Stubble” is dry leftover plant material, easily burned. The image makes the judgment sound total and irreversible, especially when the verse adds that neither root nor branch will remain. It is a metaphor in the chapter's fire imagery.",
       "verseRefs": [
         "4:1"
       ],
@@ -80,45 +106,112 @@
     },
     {
       "id": "q4",
-      "question": "What does this chapter teach about God or people?",
-      "answer": "Through covenant faithfulness and faith, it shows God's character (faithful, just, merciful) and human tendency (need, failure, hope). Notice how verses move from problem to provision.",
+      "question": "Who are the people who “fear my name”?",
+      "answer": "In this chapter they are the group contrasted with the proud and wicked. “Fear” here means reverent regard for God's name, not panic. The verse promises them healing and release, pictured as calves leaping from a stall.",
+      "verseRefs": [
+        "4:2"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        2
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What is “the sun of righteousness”?",
+      "answer": "The phrase promises those who fear God’s name righteousness or justice rising with healing, set against the furnace of judgment. The Hebrew expression, shemesh tsedaqah, means sun of righteousness or justice. A later Christian application to Christ is distinct from that lexical meaning: the English resemblance between “sun” and “son” is not Hebrew wordplay.",
+      "verseRefs": [
+        "4:2"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        2
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Does verse 3 celebrate violence?",
+      "answer": "Verse 3 says the wicked will be ashes under the soles of the feet of those addressed. The image belongs to the chapter's judgment scene, where Yahweh says he will make that day. It depicts reversal and victory over wickedness; it should not be turned into a general permission for human revenge.",
+      "verseRefs": [
+        "4:3"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        3
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "Why does the chapter suddenly mention Moses and Horeb?",
+      "answer": "The command tells Israel to remember the law of Moses, including the statutes and ordinances commanded at Horeb. It anchors the closing warning and promise in instruction already given. These six WEB verses are Hebrew 3:19–24. Brenton arranges the final three differently: Elijah and turned hearts appear at 3:22–23, and the Moses reminder comes last at 3:24, corresponding to WEB 4:4.",
       "verseRefs": [
         "4:4"
       ],
-      "category": "theology",
+      "category": "history",
       "relatedVerses": [
         4
       ]
     },
     {
-      "id": "q5",
-      "question": "Verse 1 is long — what is it saying in plain English?",
-      "answer": "The verse says: '“For behold, the day comes, burning like a furnace, when all the proud and all who work wickedness will be stubble. The day that comes will burn them up,” says Yahweh of Armies, “s...' In plain terms: it is making a key point about covenant faithfulness. Break it into two halves — what is described, and what is promised or commanded.",
+      "id": "q8",
+      "question": "Who is Elijah in verses 5-6?",
+      "answer": "Elijah the prophet is promised before Yahweh’s great and terrible day, with a task of turning hearts between fathers and children. Brenton’s corresponding verse, 3:23, speaks of a father turning toward a son and a man toward his neighbor, so the wording differs as well as the numbering. Later Christian texts connect Elijah language with John the Baptizer; that identification does not describe every Jewish reading of the promise.",
       "verseRefs": [
-        "4:1"
+        "4:5",
+        "4:6"
       ],
-      "category": "hard_verse",
+      "category": "context",
       "relatedVerses": [
-        1
+        5,
+        6
       ]
     },
     {
-      "id": "q6",
-      "question": "How could this chapter apply today without forcing modern ideas onto it?",
-      "answer": "Ask: what was original audience supposed to do with this? Then ask: what similar situation exists today? For example, if chapter warns about idols, today that might be money or status; if it celebrates deliverance, where do people need deliverance today?",
-      "verseRefs": [],
-      "category": "practical",
-      "relatedVerses": []
+      "id": "q9",
+      "question": "Why does the book end with “a curse”?",
+      "answer": "The turning of hearts is meant to avert the threatened judgment. The Hebrew word behind “curse,” herem, carries the force of a destructive ban. Restored relationships therefore stand beside a severe warning, and the ending leaves the response open rather than simply announcing a happy resolution.",
+      "verseRefs": [
+        "4:6"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        6
+      ]
     }
   ],
   "glossary": [
     {
-      "term": "righteousness",
-      "def": "Being in right standing, doing what is right"
+      "term": "furnace",
+      "def": "A place of intense heat; in verse 1 it pictures the severity of the coming day."
     },
     {
-      "term": "prophet",
-      "def": "Messenger speaking for God"
+      "term": "stubble",
+      "def": "Dry leftover plant material that burns easily; in verse 1 it describes the fate of the proud and wicked."
+    },
+    {
+      "term": "Horeb",
+      "def": "The mountain setting named in verse 4, where the law of Moses is said to have been commanded for Israel."
+    },
+    {
+      "term": "ordinances",
+      "def": "Commands or rulings included with the law of Moses in verse 4."
+    },
+    {
+      "term": "curse",
+      "def": "The final threatened judgment in verse 6 if the promised turning of hearts does not happen."
     }
+  ],
+  "generation": {
+    "model": "gpt-5.5",
+    "promptHash": "b4c86058ee1ead2cf771ebf26749b61928428ce88b634eb532a0c74d84468151",
+    "generatedAt": "2026-10-03T23:16:27.502Z",
+    "rubricVersion": "guide-v2",
+    "method": "direct-generation"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-10-03",
+  "reviewer": "Codex agent editorial panel",
+  "sourceIds": [
+    "web"
   ]
 }

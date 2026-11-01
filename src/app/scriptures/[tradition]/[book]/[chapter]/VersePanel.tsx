@@ -11,6 +11,12 @@ import {
   type SpeechPlayback,
 } from "@/lib/scriptures/speech";
 import type { Canons, Tradition, TranslationId } from "@/lib/scriptures/types";
+import dynamic from "next/dynamic";
+import { wordBridgeHref } from "@/lib/scriptures/word-bridge-url";
+import StudyPassageLinks from "../../../_components/StudyPassageLinks";
+
+// Loaded when a verse panel opens; other editions explain availability.
+const WordBridge = dynamic(() => import("./WordBridge"));
 
 type Preview = {
   key: string;
@@ -40,6 +46,7 @@ export default function VersePanel({
   tradition,
   trans,
   transLabel,
+  bookId,
   bookName,
   chapter,
   chapterHref,
@@ -59,6 +66,8 @@ export default function VersePanel({
   trans: TranslationId;
   /** Short version label for share copy — "WEB". */
   transLabel: string;
+  /** Book code ("JHN"), for loading this verse's word bridge. */
+  bookId: string;
   bookName: string;
   chapter: number;
   /** Chapter URL with query, for building links (".../JHN/3?t=web"). */
@@ -177,7 +186,7 @@ export default function VersePanel({
   };
 
   return (
-    <div className="scr-vpanel" id={id} ref={rootRef}>
+    <div className="scr-vpanel" id={id} ref={rootRef} tabIndex={-1}>
       <div className="scr-vpanel-tools" role="group" aria-label={`${refLabel} tools`}>
         {canSpeak && (
           <button
@@ -236,6 +245,12 @@ export default function VersePanel({
       <p className="scr-vpanel-note" role="status">
         {note ?? ""}
       </p>
+
+      {/* The word bridge links World English Bible words to the original. */}
+      <WordBridge bookId={bookId} chapter={chapter} n={n} translation={trans}
+        webHref={wordBridgeHref(tradition.id, bookId, chapter, n)} webAvailable={canons.books[bookId].trans.includes("web")} />
+
+      <StudyPassageLinks context={{ traditionId: tradition.id, bookId, chapter, verse: n, translation: trans }} />
 
       {refs.length > 0 ? (
         <div className="scr-vpanel-refs">

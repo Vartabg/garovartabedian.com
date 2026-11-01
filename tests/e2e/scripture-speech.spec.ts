@@ -111,7 +111,7 @@ test("offers free device narration with voice selection and preview", async ({
     page.getByRole("button", { name: "Stop reading aloud" }),
   ).toBeVisible();
 
-  await page.getByRole("button", { name: /Reading settings/ }).click();
+  await page.getByRole("button", { name: /Reading and accessibility settings/ }).click();
   await expect(page.getByText("Narrator", { exact: true })).toBeVisible();
 
   const voice = page.getByLabel("Voice");
@@ -160,7 +160,7 @@ test("prefers authored elder narration when the chapter has it", async ({
       playbackRate: 1,
     });
 
-  await page.getByRole("button", { name: /Reading settings/ }).click();
+  await page.getByRole("button", { name: /Reading and accessibility settings/ }).click();
   await expect(page.getByText("The Elder", { exact: true })).toBeVisible();
   await expect(
     page.getByText("Authored narration is available for this translation and chapter."),

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useMemo } from "react";
 import type { RoadData } from "@/lib/church/types";
 import { EARLY_TEXTS } from "@/lib/early/client";
+import { firstYear, handForYear, type Hand } from "@/lib/hands";
+import HandChange from "../_components/HandChange";
 import GlossText from "../_components/GlossText";
 import WorldDisclosure from "../_components/WorldDisclosure";
 import WorldEntry from "../_components/WorldEntry";
@@ -36,6 +38,12 @@ export default function ChurchHome({
     () => data.eras.map((era) => ({ id: era.id, label: era.name })),
     [data.eras],
   );
+  // Each era's heading is set in the hand of its time; where the hand turns,
+  // the heading changes hands as it scrolls in (HandChange).
+  const eraHands = useMemo(() => {
+    const hands: Hand[] = data.eras.map((era) => handForYear(firstYear(era.years) ?? 30));
+    return hands.map((hand, i) => ({ hand, from: i > 0 ? hands[i - 1] : undefined }));
+  }, [data.eras]);
 
   return (
     <>
@@ -97,11 +105,14 @@ export default function ChurchHome({
           items={eraLinks}
         />
 
+        <HandChange />
         <div className="ch-road">
-          {data.eras.map((era) => (
+          {data.eras.map((era, eraIndex) => (
             <section className="ch-era" key={era.id} id={era.id}>
               <header className="ch-era-head">
-                <h2>{era.name}</h2>
+                <h2 data-hand={eraHands[eraIndex].hand} data-hand-from={eraHands[eraIndex].from}>
+                  {era.name}
+                </h2>
                 <span className="ch-era-years">{era.years}</span>
               </header>
               <p className="ch-era-intro">

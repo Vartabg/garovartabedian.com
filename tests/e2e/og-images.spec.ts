@@ -119,11 +119,16 @@ const CORPUS_ROUTES_WITH_OWN_OG_IMAGE = [
   "/scriptures/protestant/LEV/11",
   "/early/didache",
   "/scriptures/topics/FAITH",
+  // These less common topics exercise runtime generation beyond the popular
+  // prerendered set, including the AENON route that failed in production.
+  "/scriptures/topics/AENON",
+  "/scriptures/topics/ZAANAIM",
 ];
 
 for (const route of CORPUS_ROUTES_WITH_OWN_OG_IMAGE) {
   test(`${route} unfurls as itself, not as the generic card`, async ({ page, request }) => {
-    await page.goto(route);
+    const pageResponse = await page.goto(route);
+    expect(pageResponse?.status(), `${route} should be an existing corpus page`).toBe(200);
     const content = await page
       .locator('meta[property="og:image"]')
       .getAttribute("content");
@@ -136,6 +141,16 @@ for (const route of CORPUS_ROUTES_WITH_OWN_OG_IMAGE) {
     expect(response.headers()["content-type"]).toContain("image/");
   });
 }
+
+test("a runtime topic preview decodes as a full-size image", async ({ page }) => {
+  const response = await page.goto("/scriptures/topics/AENON/opengraph-image");
+  expect(response?.status()).toBe(200);
+  const image = page.locator("img");
+  await expect(image).toBeVisible();
+  await expect.poll(() => image.evaluate((node: HTMLImageElement) => ({
+    width: node.naturalWidth, height: node.naturalHeight,
+  }))).toEqual({ width: 1200, height: 630 });
+});
 
 test("llms.txt is served and names the corpora and their review tiers", async ({ request }) => {
   const response = await request.get("/llms.txt");

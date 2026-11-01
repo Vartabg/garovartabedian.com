@@ -1,0 +1,463 @@
+{
+  "book": "ZEP",
+  "bookName": "Zephaniah",
+  "oneLine": "A short prophetic book announces judgment on Judah and surrounding nations, then imagines a humble, truthful people living without fear in God's presence.",
+  "orient": "Zephaniah opens with sweeping destruction and brings the threat into Jerusalem's streets, households, worship, and leadership. Appeals to seek righteousness stand beside accusations against neighboring peoples and imperial power. The final chapter returns to Jerusalem before turning toward purified worship, refuge, gathering, and joy. Follow the changing speakers and addressees: the closing hope includes a transformation of the community's conduct.",
+  "whereYouAre": "The heading locates Zephaniah's message in the reign of Josiah of Judah, within the world of Assyrian power. Jerusalem's districts make the warnings local, while the coastlands, eastern neighbors, Cush, and Nineveh widen their reach. The speeches move between accusation, appeal, and promise without supplying a continuous history of military campaigns.",
+  "facts": {
+    "writtenBy": "The heading names Zephaniah son of Cushi and traces four generations to Hezekiah. A connection to King Hezekiah is possible but unproved. Cushi has prompted proposals of African ancestry; the name alone does not establish a biography. The heading does not explain the book's final preparation.",
+    "writtenWhen": "The stated setting is Josiah's reign, conventionally 640–609 BCE. A date before his religious reforms is an inference from the accusations. The setting of the preaching and the formation of the whole book are separate questions; some scholars place its final form in the early Second Temple period.",
+    "writtenFor": "Judah and Jerusalem are repeatedly addressed. Neighboring peoples and Assyria receive threats, while the closing horizon also includes the nations' worship. These literary addresses do not establish that the prophet personally visited each place.",
+    "place": "Judah and Jerusalem anchor the book. Chapter 2 moves from Philistine cities on the Mediterranean coast to Moab and Ammon east of the Jordan, Cush south of Egypt, and Assyria and Nineveh to the north. Cush belongs to the ancient Nubian world, especially present-day Sudan; older English Ethiopia is not a precise reference to the modern state.",
+    "covers": "The approaching day of Yahweh; compromised worship, complacency, and abusive leadership; a call to righteousness and humility; judgment on neighboring peoples and Assyria; Jerusalem's refusal of correction; changed worship, a truthful remnant, and gathering in joy.",
+    "size": "3 chapters, 53 verses, and 1,520 words in the World English Bible text. WEB, King James, Douay–Rheims, and Brenton all have 18, 15, and 20 verses in their three chapters."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "web-zephaniah",
+      "usccb-zephaniah-1",
+      "luther-zephaniah-reception"
+    ],
+    "writtenWhen": [
+      "web-zephaniah",
+      "usccb-zephaniah-intro",
+      "ben-zvi-zephaniah"
+    ],
+    "writtenFor": [
+      "web-zephaniah"
+    ],
+    "place": [
+      "web-zephaniah",
+      "usccb-zephaniah-2",
+      "bm-kush",
+      "net-zephaniah"
+    ],
+    "covers": [
+      "web-zephaniah"
+    ],
+    "size": [
+      "web-zephaniah",
+      "english-zephaniah"
+    ]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew, chiefly prophetic poetry.",
+    "register": "Compressed accusations, commands, repeated warnings, taunts, and city personification give way to an ending full of celebration and assurance.",
+    "spokenWorld": "The book addresses Judah within a region of different peoples and languages. Its literary Hebrew does not identify every language spoken by the people it names.",
+    "readerSignal": "Listen for repeated words and changes from description to divine first-person speech or commands to the audience. Notice when the same image returns with a different force.",
+    "englishLayer": "The World English Bible and King James give Hebrew-based readings; Douay–Rheims represents the Latin Vulgate tradition, and Brenton translates the Greek Septuagint. Differences can involve interpretation or underlying readings as well as English vocabulary. Their identical verse counts sometimes conceal a clause placed in the neighboring verse.",
+    "textualHistory": [
+      {
+        "label": "Hebrew prophetic poetry and its formation",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The heading places the message in Josiah's reign, while the poems move from judgment through appeals to a vision of restoration. Dating the book's final form remains distinct from dating its named setting. The Hebrew displayed here follows the Westminster Leningrad Codex through the Open Scriptures Hebrew Bible; it is a transmitted text with reading traditions, not the prophet's original manuscript.",
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah",
+          "ben-zvi-zephaniah"
+        ]
+      },
+      {
+        "label": "Four English witnesses with shared verse counts",
+        "language": "English, through Hebrew, Latin, and Greek traditions",
+        "role": "translation",
+        "description": "All four English texts have three chapters and 53 verses. Brenton places the dove image at 3:2 rather than 3:1, and the name-of-the-Lord clause corresponding to WEB 3:12 at 3:13. References in this briefing follow the WEB. Comparing wording as well as numbers helps distinguish a shifted clause from missing material.",
+        "sourceIds": [
+          "web-zephaniah",
+          "english-zephaniah"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Repeated day language builds urgency",
+        "original": "יוֹם — yom — day",
+        "explanation": "The repeated noun in 1:14–16 gathers wrath, distress, darkness, clouds, and battle alarm into an accumulating description. The day formula returns in 3:11 and 3:16 as arrogance is removed and Jerusalem is told not to fear. Repetition holds the warning and the changed future together.",
+        "translationNote": "English preserves much of the repetition. Reading the paired phrases aloud makes their pace more noticeable than treating them as a list of separate events.",
+        "caution": "These formulas organize prophetic expectation; they do not supply an hour-by-hour timetable or a date on a modern calendar.",
+        "refs": [
+          "1:7",
+          "1:14",
+          "1:15",
+          "1:16",
+          "3:11",
+          "3:16"
+        ],
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah"
+        ]
+      },
+      {
+        "title": "Three commands answer a refusal to seek",
+        "original": "בַּקְּשׁוּ — baqqeshu — seek; אוּלַי — ulay — perhaps",
+        "explanation": "In 2:3, seek occurs three times, directing the audience toward Yahweh, righteousness, and humility. This answers the failure to seek in 1:6. The appeal joins worship with conduct and an attitude toward others, rather than offering escape through a single ritual action.",
+        "translationNote": "The WEB's It may be preserves the qualification before the promise of shelter. Its repeated Seek also lets readers hear the Hebrew commands.",
+        "caution": "The verse urges a response without describing shelter as an automatic reward. Humility and righteousness remain part of the appeal.",
+        "refs": [
+          "1:6",
+          "2:3"
+        ],
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah",
+          "english-zephaniah"
+        ]
+      },
+      {
+        "title": "Divine attention can punish or restore",
+        "original": "פקד — p-q-d — a root for attending to, visiting, or taking account of",
+        "explanation": "Forms of this verb mark punishment in 1:8, 1:9, and 1:12. In 2:7 the same root accompanies God's care for Judah's remnant and their restoration. Its repetition joins the two kinds of intervention, while the surrounding actions establish their different effects.",
+        "translationNote": "WEB uses punish in chapter 1 and visit in 2:7. These English choices make the context clear but hide the recurring Hebrew root.",
+        "caution": "Root notation is a way to compare related forms. It does not mean that every occurrence should receive one fixed English translation.",
+        "refs": [
+          "1:8",
+          "1:9",
+          "1:12",
+          "2:7"
+        ],
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah"
+        ]
+      },
+      {
+        "title": "City names echo their announced fate",
+        "original": "עַזָּה / עֲזוּבָה — Azzah / azuvah — Gaza / forsaken; עֶקְרוֹן / תֵּעָקֵר — Eqron / te'aqer — Ekron / be uprooted",
+        "explanation": "At 2:4, Gaza sounds like the word describing abandonment, while Ekron echoes the verb for uprooting. The sound of each name becomes part of the threat. Between those pairs, Ashkelon and Ashdod complete the sequence of coastal cities.",
+        "translationNote": "WEB communicates forsaking and uprooting, but English place-names do not reproduce all the Hebrew echoes.",
+        "caution": "These are poetic associations in a warning about ancient cities. They neither establish the names' historical origins nor authorize violence against modern populations.",
+        "refs": [
+          "2:4"
+        ],
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah",
+          "net-zephaniah"
+        ]
+      },
+      {
+        "title": "Lips and shoulders picture shared worship",
+        "original": "שָׂפָה בְרוּרָה — safah verurah — a purified lip; שְׁכֶם אֶחָד — shekhem ehad — one shoulder",
+        "explanation": "In 3:9, images of mouth and body join invoking Yahweh's name with serving together. The rejection of lies and a deceitful tongue in 3:13 carries attention to speech into the description of the restored remnant. Worship and truthfulness become visible changes in communal life.",
+        "translationNote": "WEB keeps lips and shoulder to shoulder; KJV uses pure language and one consent. The latter expresses the sense of unity while making the bodily image less visible.",
+        "caution": "The passage describes changed speech and shared service. It does not explicitly announce the invention of one new language for humanity.",
+        "refs": [
+          "3:9",
+          "3:13"
+        ],
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah",
+          "english-zephaniah"
+        ]
+      },
+      {
+        "title": "What is within the city changes",
+        "original": "בְקִרְבָּהּ / בְּקִרְבֵּך — beqirbah / beqirbekh — within her / within you",
+        "explanation": "Predatory princes are within the city in 3:3; the righteous Yahweh is within her in 3:5. Arrogant people are removed, an afflicted and poor people remain, and the closing assurance again places Yahweh among them. Repeated location language connects the indictment of leadership with renewed security.",
+        "translationNote": "English within her, among you, and in your midst can render related Hebrew expressions. The feminine singular forms follow Jerusalem's personification as a woman.",
+        "caution": "The city language addresses a community. It does not identify an otherwise unnamed individual woman, and poor people should not disappear into a purely abstract account of humility.",
+        "refs": [
+          "3:3",
+          "3:5",
+          "3:11",
+          "3:12",
+          "3:15",
+          "3:17"
+        ],
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah"
+        ]
+      }
+    ],
+    "examplesHeading": "Five phrases to hear beneath the English",
+    "examples": [
+      {
+        "ref": "1:15",
+        "form": "יוֹם שֹׁאָה וּמְשׁוֹאָה — yom shoah u-meshoah",
+        "meaning": "A day of devastation and desolation.",
+        "why": "The similar sounds intensify an accumulating description. The surrounding pairs add distress, darkness, and clouds rather than outlining separately timed disasters.",
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah"
+        ]
+      },
+      {
+        "ref": "2:3",
+        "form": "בַּקְּשׁוּ — baqqeshu",
+        "meaning": "Seek, a plural command.",
+        "why": "Three occurrences call the audience toward Yahweh, righteousness, and humility. The verse retains a perhaps before the prospect of being hidden.",
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah"
+        ]
+      },
+      {
+        "ref": "2:7",
+        "form": "יִפְקְדֵם — yifqedem",
+        "meaning": "He will visit or attend to them.",
+        "why": "Here divine attention accompanies restoration. Comparing chapter 1 shows how the same verb family can announce punishment when the context changes.",
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah"
+        ]
+      },
+      {
+        "ref": "3:9",
+        "form": "שְׁכֶם אֶחָד — shekhem ehad",
+        "meaning": "One shoulder.",
+        "why": "The bodily image expresses united service. WEB's shoulder to shoulder and KJV's one consent make different aspects of the phrase audible.",
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah",
+          "english-zephaniah"
+        ]
+      },
+      {
+        "ref": "3:17",
+        "form": "בְּקִרְבֵּך — beqirbekh",
+        "meaning": "In your midst.",
+        "why": "The feminine singular addressee is Jerusalem, the city and its people. Yahweh is the subject of the saving and rejoicing that follow.",
+        "sourceIds": [
+          "web-zephaniah",
+          "hebrew-zephaniah"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Prophetic poetry: warning, appeal, accusation, and restoration",
+    "how": "Track changes of voice and audience, then follow repeated images across them. Read the accusations against worship and leadership alongside the call to seek righteousness. Let the closing joy answer the earlier fear without erasing the disturbing language of destruction."
+  },
+  "cast": [
+    {
+      "name": "Zephaniah and his named ancestors",
+      "who": "The heading names the prophet, Cushi, Gedaliah, Amariah, and Hezekiah. It gives no narrative of Zephaniah's career."
+    },
+    {
+      "name": "Josiah",
+      "who": "The king of Judah whose reign supplies the heading's setting."
+    },
+    {
+      "name": "Yahweh",
+      "who": "Described by the prophetic voice and speaking directly in threats and promises; explicitly called the King of Israel at 3:15."
+    },
+    {
+      "name": "Judah and Jerusalem",
+      "who": "The central community and personified city, including officials, judges, prophets, priests, wealthy residents, humble people, and a remnant."
+    },
+    {
+      "name": "The neighboring peoples and Assyria",
+      "who": "Philistine coastal cities, Moab, Ammon, Cush, and Assyria appear in chapter 2. Nineveh is the proud city facing desolation."
+    },
+    {
+      "name": "The restored community and worshiping peoples",
+      "who": "The ending describes truthful survivors, peoples calling on Yahweh, and vulnerable or displaced people being gathered."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "The approaching day reaches Jerusalem",
+      "chapters": "1",
+      "precise": "1:1–18",
+      "note": "The heading introduces threats to living things, Judah's worship and conduct, Jerusalem's neighborhoods, and wealth that cannot save. The appeal answering this warning continues into 2:1–3."
+    },
+    {
+      "heading": "Seek humility; judgment surrounds Judah",
+      "chapters": "2",
+      "precise": "2:1–15",
+      "note": "The appeal at 1–3 precedes the coast at 4–7, Moab and Ammon at 8–11, Cush at 12, and Assyria and Nineveh at 13–15."
+    },
+    {
+      "heading": "Jerusalem confronted, then gathered in joy",
+      "chapters": "3",
+      "precise": "3:1–20",
+      "note": "The city and its leaders are confronted at 1–7; assembled nations and changed worship follow at 8–10; a truthful remnant appears at 11–13; rejoicing and gathering close the book at 14–20."
+    }
+  ],
+  "purpose": "Zephaniah challenges complacency, compromised worship, arrogance, and corrupt power. Judgment reaches Judah and surrounding nations, while the closing vision locates hope in truthful conduct, humility, God's presence, and the gathering of vulnerable and displaced people. Its promise of restored community stands beside, rather than removing, the force of its violent warnings.",
+  "snags": [
+    {
+      "snag": "The threats include sweeping violence.",
+      "help": "The opening includes animals in the destruction; 1:17 describes bodily devastation, and 2:9 imagines dispossession. These are forceful prophetic portrayals of judgment. Concern for the end of abusive power does not require celebrating every form of reversal, or applying the threats to modern peoples."
+    },
+    {
+      "snag": "The judgment of foreign peoples can distract from Jerusalem's own conduct.",
+      "help": "After chapter 2, the criticism returns to Jerusalem's princes, judges, prophets, and priests. Judah is also accountable. The nations' worship at 2:11 and 3:9 further complicates a simple division into a good homeland and inherently wicked outsiders."
+    },
+    {
+      "snag": "Names and practices in chapter 1 are not equally clear.",
+      "help": "WEB's Malcam at 1:5 is commonly connected with the Ammonite deity Milcom; Brenton instead has their king. A particular ritual behind threshold-leaping at 1:9 remains uncertain, though violence and deceit are explicit. At 1:11, WEB's Canaan contrasts with KJV's merchant people in a passage about silver. Dregs or lees in 1:12 evokes settled wine sediment and complacency, not a ban on drinking wine."
+    },
+    {
+      "snag": "Comparison editions can change the apparent geography and creatures.",
+      "help": "Brenton names Cretans and Crete at 2:5–6 and Damascus at 2:9 where WEB has different wording. These are edition differences, not extra places named in WEB. At 2:14, translations variously name birds, porcupines, hedgehogs, and other animals. The shared scene is life among ruined buildings; precise species identification is less secure."
+    },
+    {
+      "snag": "Chapter 3 begins with a city described very differently across editions.",
+      "help": "WEB's rebellious, polluted, oppressing city contrasts with Douay–Rheims's redeemed city and dove, and Brenton's glorious, ransomed city followed by the dove at 3:2. The following accusations concern Jerusalem. The change of chapter also changes the city in view from Nineveh."
+    },
+    {
+      "snag": "The rising at 3:8 has several readings.",
+      "help": "WEB and KJV speak of rising to the prey, Brenton of rising as a witness, and Douay–Rheims uses resurrection. The scene announces divine judgment. The English word resurrection alone does not settle a later Christian interpretation of this Hebrew passage."
+    },
+    {
+      "snag": "The closing reassurance includes difficult lines.",
+      "help": "At 3:17, WEB has calm, KJV rest, Douay–Rheims silence, and Brenton refresh. The Hebrew displayed here has a verb of silence; renewal is an alternative reading. Verse 3:18 differs even more: WEB removes festival mourners, while other editions gather people described in different ways. Its precise meaning remains uncertain. The rescue and gathering at 3:19–20 are explicit."
+    },
+    {
+      "snag": "The restored people should retain their social and physical vulnerability.",
+      "help": "WEB 3:12 describes afflicted and poor people, alongside the book's call to humility. At 3:19 God saves those who are lame and gathers the displaced. These descriptions should not vanish into abstract attitudes. The blindness image at 1:17 expresses distress without establishing that disabled people are morally deficient."
+    },
+    {
+      "snag": "The final promises change voice and widen their audience.",
+      "help": "The command to rejoice at 3:14 leads into statements about Yahweh at 3:15–17 and divine first-person promises at 3:18–20. Yahweh is the named king at 3:15. The worshipers at 3:10 are difficult to identify more precisely as foreign peoples or dispersed Judeans; the larger movement embraces worship, truthful conduct, and gathering."
+    }
+  ],
+  "debates": [
+    {
+      "question": "How closely can the book's formation be tied to Josiah's reign?",
+      "settled": "The heading names Josiah, and the accusations concern Judah and Jerusalem. The date of that setting does not by itself date every stage of the book.",
+      "positions": [
+        {
+          "view": "An early Josianic setting for the preaching",
+          "grounds": "USCCB relates the accusations against other worship and foreign practices to a possible period before Josiah's reforms. This is a contextual proposal, not a year supplied by the text."
+        },
+        {
+          "view": "Later formation and rereading of the prophetic book",
+          "grounds": "Ehud Ben Zvi discusses the book's present form in an early Second Temple setting, where memories of catastrophe and hopes for restoration could be read together. This places the final literary work later than its named setting."
+        }
+      ],
+      "soWhat": "Read the heading's historical claim carefully while allowing a distinction between a prophet's message, its collection, and later audiences. Neither approach proves royal ancestry or supplies a complete biography."
+    },
+    {
+      "question": "How does the hope at the end relate to the earlier destruction?",
+      "settled": "The book contains sweeping threats, calls to righteousness and humility, judgment of Jerusalem's leaders, and a final vision of worship and security.",
+      "positions": [
+        {
+          "view": "Emphasize the transformation of the community",
+          "grounds": "The sequence removes arrogance, describes a truthful remnant, and gives way to rejoicing and gathering. Earlier accusation and later hope are connected by changed conduct."
+        },
+        {
+          "view": "Keep the costs and tensions of the rhetoric visible",
+          "grounds": "The earlier threats encompass bodies, creatures, cities, and dispossession. The closing joy does not explain every threatened person's fate or cancel the difficulty of that language."
+        }
+      ],
+      "soWhat": "Both the violence and the restoration belong to the reading. A summary should leave space to examine their relationship instead of turning the whole book into either undifferentiated terror or uncomplicated reassurance."
+    }
+  ],
+  "sources": [
+    {
+      "id": "web-zephaniah",
+      "label": "World English Bible — Zephaniah",
+      "says": "The primary English text supplies the sequence, named setting, speakers, repeated images, and wording discussed here.",
+      "href": "/scriptures/text/web/ZEP.json"
+    },
+    {
+      "id": "english-zephaniah",
+      "label": "WEB, King James, Douay–Rheims, and Brenton — Zephaniah",
+      "says": "The four English texts share 18, 15, and 20 verses per chapter but differ in wording and some clause placement, especially in chapter 3."
+    },
+    {
+      "id": "hebrew-zephaniah",
+      "label": "Open Scriptures Hebrew Bible — Zephaniah",
+      "says": "The Westminster Leningrad text and OSHB morphology show the Hebrew repetitions, related verb forms, sound patterns, and gendered address. Text is public domain; morphology is credited to the Open Scriptures Hebrew Bible Project under CC BY 4.0.",
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Zeph.xml"
+    },
+    {
+      "id": "usccb-zephaniah-intro",
+      "label": "USCCB — Introduction to Zephaniah",
+      "says": "Places the named setting in Josiah's reign, 640–609 BCE, and offers a qualified proposal that the preaching preceded his reforms.",
+      "url": "https://bible.usccb.org/bible/zephaniah/0"
+    },
+    {
+      "id": "usccb-zephaniah-1",
+      "label": "USCCB — Zephaniah 1 notes",
+      "says": "Treats royal ancestry as uncertain and explains Milcom, Jerusalem's districts, the dregs image, and a possible background for threshold-leaping.",
+      "url": "https://bible.usccb.org/bible/zephaniah/1"
+    },
+    {
+      "id": "usccb-zephaniah-2",
+      "label": "USCCB — Zephaniah 2 notes",
+      "says": "Identifies the Philistine coastal cities, Moab and Ammon east of the Jordan, and Nineveh as the city at the chapter's close.",
+      "url": "https://bible.usccb.org/bible/zephaniah/2"
+    },
+    {
+      "id": "net-zephaniah",
+      "label": "NET Bible — Zephaniah translation notes",
+      "says": "Discusses city-name wordplay, Cush's geography, and difficult alternatives in 3:8, 3:10, and 3:17–18. These notes distinguish translation choices from secure wording.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/zep.pdf"
+    },
+    {
+      "id": "luther-zephaniah-reception",
+      "label": "Richard W. Nysse, revised by Anna Marsh — Zephaniah in reception",
+      "says": "Discusses proposed African ancestry as an interpretive perspective and examines the book's disability imagery. These discussions do not turn a possible social location into a recovered biography.",
+      "url": "https://enterthebible.org/courses/zephaniah/lessons/bible-in-the-world-zephaniah/"
+    },
+    {
+      "id": "bm-kush",
+      "label": "British Museum — Sudan, Egypt and Nubia",
+      "says": "Locates ancient Nubia in the Nile region of present-day Sudan and Upper Egypt and describes the kingdom of Kush.",
+      "url": "https://www.britishmuseum.org/collection/galleries/sudan-egypt-and-nubia"
+    },
+    {
+      "id": "ben-zvi-zephaniah",
+      "label": "Ehud Ben Zvi — Memories Evoked by Yom Shoah uMeshoah",
+      "says": "Distinguishes the book's Josianic setting from an early Second Temple understanding of its present form and discusses catastrophe and hope in readers' communal memory.",
+      "url": "https://www.thetorah.com/article/memories-evoked-by-yom-shoah-umeshoah"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Follow the warning from complacency and wealth to the sound and darkness of the approaching day.",
+      "refs": [
+        "1:12",
+        "1:14",
+        "1:15",
+        "1:18"
+      ]
+    },
+    {
+      "tip": "Compare the refusal to seek with the three commands to seek; retain the qualification about shelter.",
+      "refs": [
+        "1:6",
+        "2:3"
+      ]
+    },
+    {
+      "tip": "Locate each named people before treating the foreign oracles as one continuous scene.",
+      "refs": [
+        "2:4",
+        "2:8",
+        "2:12",
+        "2:13"
+      ]
+    },
+    {
+      "tip": "Track who is within the city: corrupt leaders, the righteous God, the remaining poor, and the saving king.",
+      "refs": [
+        "3:3",
+        "3:4",
+        "3:5",
+        "3:12",
+        "3:15"
+      ]
+    },
+    {
+      "tip": "Read changed speech, divine joy, and gathering together, while comparing editions at the difficult closing lines.",
+      "refs": [
+        "3:9",
+        "3:13",
+        "3:17",
+        "3:18",
+        "3:19",
+        "3:20"
+      ]
+    }
+  ],
+  "next": "Compare Habakkuk's questions about violence and imperial power, then Nahum's focus on Nineveh. Attend to their distinct arguments before trying to combine their settings into one timeline.",
+  "traditionNote": "The four English editions here share three chapters and 53 verses, with some clauses divided differently. Sophonias in Douay–Rheims and Brenton is another form of Zephaniah's name."
+}

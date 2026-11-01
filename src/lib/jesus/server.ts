@@ -18,6 +18,7 @@ import wordsJson from "../../../public/jesus/words.json";
 import essaysJson from "../../../public/jesus/essays.json";
 import historySourcesJson from "../../../public/jesus/history-sources.json";
 import synopticPericopesJson from "../../../public/jesus/synoptic-pericopes.json";
+import parablesJson from "../../../public/jesus/parables.json";
 import type { SynopticPericope } from "./synoptic-diff";
 import type {
   ArtWork,
@@ -28,6 +29,7 @@ import type {
   JesusPerspective,
   LensEntry,
   LifeData,
+  Parable,
   ProphecyPair,
   RisenData,
   StoneItem,
@@ -61,6 +63,20 @@ export const getWordCounts = (): Record<string, number> =>
   (wordsJson as WordsData).counts;
 export const getProphecies = (): ProphecyPair[] => propheciesJson as ProphecyPair[];
 export const getRisen = (): RisenData => risenJson as RisenData;
+
+const PARABLE_BOOKS = ["MAT", "MRK", "LUK", "JHN"];
+const refKey = (ref: string) => {
+  const [book, cv] = ref.split(" ");
+  const [chapter, verse] = cv.split(":").map((part) => Number.parseInt(part, 10));
+  return [PARABLE_BOOKS.indexOf(book), chapter, verse];
+};
+
+/** Parables in the order they first appear, reading Matthew, Mark, Luke, then John. */
+export const getParables = (): Parable[] =>
+  [...(parablesJson as Parable[])].sort((a, b) => {
+    const [x, y] = [refKey(a.accounts[0].ref), refKey(b.accounts[0].ref)];
+    return x[0] - y[0] || x[1] - y[1] || x[2] - y[2];
+  });
 export const getLensTexts = (): LensEntry[] => lensJson as LensEntry[];
 export const getPerspectives = (): JesusPerspective[] =>
   perspectivesJson as JesusPerspective[];

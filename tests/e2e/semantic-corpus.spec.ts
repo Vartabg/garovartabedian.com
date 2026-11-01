@@ -1,5 +1,7 @@
 import {expect,test} from '@playwright/test';
 
+const PIXEL_PNG=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=','base64');
+
 test('framework meaning search joins chunk results to framework cards',async({page})=>{
   test.setTimeout(120_000);
   const errors:string[]=[];
@@ -65,6 +67,14 @@ test('early search retries corrupt artifacts and returns one linked section per 
     if(request.url().includes('/models/'))modelRequests.push(request.url());
     if(request.url().includes('/semantic-corpora/'))indexRequests.push(request.url());
   });
+  // The click scrolls the catalog's lazy next/image plates into view. Under
+  // `next start` (local and release runs), Next's own image optimizer can leave a
+  // transform pending until restart once an earlier test closes its page
+  // mid-request (vercel/next.js#98168, unreleased as of Next 16.3.8). Six hung
+  // plates take all of Chrome's connections to the server, so the corpus index
+  // request waits forever and the rail stays on "Preparing the model…". Vercel
+  // serves /_next/image itself, so visitors never meet this; stub the plates here.
+  await page.route('**/_next/image?**',route=>route.fulfill({contentType:'image/png',body:PIXEL_PNG}));
   await page.goto(`/early?ask=${encodeURIComponent(query)}`);
   const rail=page.getByRole('region',{name:'Ask the writings'});
   await expect(rail.getByRole('searchbox',{name:'Ask in your own words'})).toHaveValue(query);

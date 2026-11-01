@@ -1,85 +1,68 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useRef } from "react";
-import type { Canons, Tradition } from "@/lib/scriptures/types";
+import { useEffect, useState, type ComponentType } from "react";
+import type { DoorwaysStart } from "../../../_components/doorways/Doorways";
 import ReaderSheet from "./ReaderSheet";
 
+type PickerBody = ComponentType<{ start: DoorwaysStart; onNavigate: () => void }>;
+
+let loaded: PickerBody | null = null;
+let loading: Promise<PickerBody> | null = null;
+
+function loadPicker(): Promise<PickerBody> {
+  loading ??= import("../../../_components/doorways/ReaderDoorways").then(
+    (module) => (loaded = module.default),
+    (error: unknown) => {
+      loading = null; // the next open tries again
+      throw error;
+    },
+  );
+  return loading;
+}
+
+/** Fetch the picker and its book data ahead of the tap, so the sheet opens full. */
+export function preloadChapterPicker() {
+  loadPicker().catch(() => {
+    // A failed preload is retried when the sheet opens.
+  });
+}
+
 /**
- * Go anywhere, in one sheet: a numbered grid for this book's chapters and a
- * plain list of the tradition's books.
+ * Go anywhere, in one sheet: the same picker as the Scripture page, opened
+ * at the chapter being read, in the view the reader last used.
  *
- * This replaces four separate navigators that used to stack above the text —
- * a chapter `<select>`, a decorative dot "ribbon" (which rendered 150
- * unlabelled 3px targets for Psalms), a "Wander" random-jump button with a
- * session trail, and a neighbouring-books strip. One deliberate way to move,
- * with real 44px targets and readable labels.
+ * It replaces a chapter grid and a plain book list, which had replaced four
+ * navigators stacked above the text.
+ *
+ * Once loaded, the picker renders directly rather than through Suspense.
+ * React holds a just-shown fallback for 300ms (FALLBACK_THROTTLE_MS), which
+ * made a preloaded sheet take about 300ms to fill instead of one frame.
  */
-export default function ChapterPicker({
-  canons,
-  tradition,
-  bookId,
-  bookName,
-  chapter,
-  chapterCount,
-  hrefFor,
-  onClose,
-}: {
-  canons: Canons;
-  tradition: Tradition;
-  bookId: string;
-  bookName: string;
-  chapter: number;
-  chapterCount: number;
-  hrefFor: (chapter: number) => string;
-  onClose: () => void;
-}) {
-  const currentRef = useRef<HTMLAnchorElement>(null);
+export default function ChapterPicker({ start, onClose }: { start: DoorwaysStart; onClose: () => void }) {
+  const [Body, setBody] = useState<PickerBody | null>(() => loaded);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    currentRef.current?.scrollIntoView({ block: "center" });
-  }, []);
+    if (Body) return;
+    let live = true;
+    loadPicker().then(
+      (component) => live && setBody(() => component),
+      () => live && setFailed(true),
+    );
+    return () => {
+      live = false;
+    };
+  }, [Body]);
 
   return (
-    <ReaderSheet title="Go to" onClose={onClose}>
-      <h3 className="scr-pick-h">{bookName} &mdash; {chapterCount} chapters</h3>
-      <ul className="scr-pick-grid">
-        {Array.from({ length: chapterCount }, (_, i) => {
-          const n = i + 1;
-          const here = n === chapter;
-          return (
-            <li key={n}>
-              <Link
-                href={hrefFor(n)}
-                className={`scr-pick-ch${here ? " is-here" : ""}`}
-                aria-label={`${bookName} chapter ${n}`}
-                aria-current={here ? "page" : undefined}
-                ref={here ? currentRef : undefined}
-                onClick={onClose}
-              >
-                {n}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-
-      <h3 className="scr-pick-h">Books</h3>
-      <ul className="scr-pick-books">
-        {tradition.books.map((id) => (
-          <li key={id}>
-            <Link
-              href={`/scriptures/${tradition.id}/${id}`}
-              className={`scr-pick-book${id === bookId ? " is-here" : ""}`}
-              aria-current={id === bookId ? "page" : undefined}
-              onClick={onClose}
-            >
-              <span>{canons.books[id]?.name ?? id}</span>
-              <small>{canons.books[id]?.chapters ?? "?"} ch</small>
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <ReaderSheet title="Go to" wide onClose={onClose}>
+      {Body ? (
+        <Body start={start} onNavigate={onClose} />
+      ) : (
+        <p className="dw-hint" role="status">
+          {failed ? "The book list didn’t load. Close this and try again." : "Loading the books…"}
+        </p>
+      )}
     </ReaderSheet>
   );
 }

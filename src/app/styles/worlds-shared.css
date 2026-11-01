@@ -1,3 +1,5 @@
+@import "./research-audio.css";
+
 /* Auto-split from globals.css — edit carefully; keep selector ownership clear.
    World-only: imported by each of the 8 world layouts (jesus/apostles/early/
    church/angels/word/scriptures/evidence), never from globals.css, so /hire, /about,
@@ -1042,12 +1044,15 @@ mark.scr-hl {
 /* ── World thresholds: the leaf ──────────────────────────────────
    A world opens the way a chapter does: copy on the world's own ground, the
    image beside it as a framed plate with its caption, the orientation rail
-   above in normal flow. No full-screen render, no shade, no glass. */
+   above in normal flow. No full-screen render, no shade, no glass.
+   Most worlds wrap their pages in ReadingNarrative (display: contents), so
+   each rule also matches the hero one level down; without that, the 1100px
+   sidebar grid in core.css squeezed the title to about 140px. */
 .world-shell:has(.world-home-hero) {
   --world-home-width: 82rem;
 }
 
-.world-shell main > .wrap:has(> .world-home-hero) {
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) {
   position: relative;
   display: block;
   width: 100%;
@@ -1055,33 +1060,34 @@ mark.scr-hl {
   padding: 0;
 }
 
-.world-shell main > .wrap:has(> .world-home-hero) > :not(.world-guide, .world-home-hero) {
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > :not(.world-guide, .world-home-hero, .reading-narrative),
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .reading-narrative > :not(.world-home-hero) {
   width: min(calc(100% - 3rem), var(--maxw));
   margin-right: auto;
   margin-left: auto;
 }
 
-.world-shell main > .wrap:has(> .world-home-hero) > .world-guide {
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .world-guide {
   width: min(calc(100% - 3rem), var(--world-home-width));
   margin: 0 auto;
 }
 
 /* On a world home the orientation rail runs across the top as one row; the
    deep-page sidebar rules (core.css, 1100px and up) would stack it. */
-.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-grid {
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .world-guide .wg-grid {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 0.75rem 1.25rem;
 }
 
-.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-nav {
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .world-guide .wg-nav {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.3rem 0.5rem;
 }
 
-.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-nav a {
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .world-guide .wg-nav a {
   border: 0;
   border-bottom: 2px solid transparent;
   border-radius: 0;
@@ -1089,14 +1095,14 @@ mark.scr-hl {
   background: transparent;
 }
 
-.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-nav a:hover,
-.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-nav a[aria-current="page"] {
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .world-guide .wg-nav a:hover,
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .world-guide .wg-nav a[aria-current="page"] {
   border-color: transparent;
   border-bottom-color: var(--accent);
   background: color-mix(in oklab, var(--accent) 7%, transparent);
 }
 
-.world-shell main > .wrap:has(> .world-home-hero) > .world-guide .wg-source-disclosure {
+.world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .world-guide .wg-source-disclosure {
   border-top: 0;
   border-left: 1px solid var(--line);
   padding-top: 0;
@@ -1340,10 +1346,10 @@ mark.scr-hl {
 
   .world-shell
     main
-    > .wrap:has(> .world-home-hero)
+    > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero)
     > .world-guide
     .wg-source-disclosure {
-    border-top: 1px solid rgb(255 255 255 / 18%);
+    border-top: 1px solid var(--line);
     border-left: 0;
     padding-top: 0.5rem;
     padding-left: 0;
@@ -1363,26 +1369,6 @@ mark.scr-hl {
     font-size: 0.9rem;
   }
 
-  .world-shell
-    main
-    > .wrap:has(> .world-home-hero)
-    > .world-guide
-    .wg-mobile-menu
-    summary {
-    border-color: rgb(255 255 255 / 24%);
-    background: rgb(255 255 255 / 7%);
-  }
-
-  .world-shell
-    main
-    > .wrap:has(> .world-home-hero)
-    > .world-guide
-    .wg-mobile-menu
-    summary
-    :is(span, strong) {
-    color: #fff;
-  }
-
   .world-home-hero h1 {
     font-size: clamp(2.75rem, 15vw, 4.25rem);
   }
@@ -1400,7 +1386,8 @@ mark.scr-hl {
     min-height: 2.75rem;
   }
 
-  .world-shell main > .wrap:has(> .world-home-hero) > :not(.world-guide, .world-home-hero),
+  .world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > :not(.world-guide, .world-home-hero, .reading-narrative),
+  .world-shell main > .wrap:has(> .world-home-hero, > .reading-narrative > .world-home-hero) > .reading-narrative > :not(.world-home-hero),
   .world-shell .world-entry {
     width: calc(100% - 2rem);
   }
@@ -1586,14 +1573,14 @@ html[data-a11y-theme="dark"]
     .world-word,
     .world-evidence
   ) {
-  --bg: #17110c;
-  --surface: #211912;
-  --ink: #eedfc2;
-  --muted: #b5a68a;
-  --line: #4a3b2b;
+  --bg: #120f1c;
+  --surface: #1b1729;
+  --ink: #ece4d0;
+  --muted: #b3a9a6;
+  --line: #3a3350;
   --accent: var(--reading-accent-dark);
   --accent-deep: var(--reading-accent-deep-dark);
-  --accent-ink: #17110c;
+  --accent-ink: #120f1c;
 }
 
 /* .wd-fn-* chart marks (see word.css) answer to the 3:1 mark threshold, not
@@ -1612,6 +1599,15 @@ html[data-a11y-theme="dark"] .world-word {
    surface, so they swap to lightened values here — each borrowed from the
    sibling world that already validates that hue in dark mode (teal/brass/
    violet/ember). Verified locally at 7.3:1–9.8:1 on the dark ramp. */
+/* Jesus history lanes (see jesus.css) are legend text and timeline marks.
+   The ivory-theme values fall to ~3:1 on the dark surface; these clear
+   6.6:1 on #120f1c, #1b1729 and #181b1b. */
+html[data-a11y-theme="dark"] .world-jesus {
+  --lane-jewish: #8fa9c6;
+  --lane-roman: #c9965f;
+  --lane-stone: #b8a689;
+}
+
 html[data-a11y-theme="dark"] .world-evidence {
   --observed: #7fc9d4;
   --inferred: #d6b66f;
@@ -1645,18 +1641,24 @@ html[data-a11y-theme="light"] .world-angels {
       .world-word,
       .world-evidence
     ) {
-    --bg: #17110c;
-    --surface: #211912;
-    --ink: #eedfc2;
-    --muted: #b5a68a;
-    --line: #4a3b2b;
+    --bg: #120f1c;
+    --surface: #1b1729;
+    --ink: #ece4d0;
+    --muted: #b3a9a6;
+    --line: #3a3350;
     --accent: var(--reading-accent-dark);
     --accent-deep: var(--reading-accent-deep-dark);
-    --accent-ink: #17110c;
+    --accent-ink: #120f1c;
   }
 
   html[data-a11y-theme="system"] .world-word {
     --fence-mark: var(--fence-mark-dark);
+  }
+
+  html[data-a11y-theme="system"] .world-jesus {
+    --lane-jewish: #8fa9c6;
+    --lane-roman: #c9965f;
+    --lane-stone: #b8a689;
   }
 
   html[data-a11y-theme="system"] .world-evidence {
@@ -1794,6 +1796,7 @@ html[data-a11y-theme="light"] .world-angels {
   margin-top: 0.4rem;
 }
 .scr-original-line {
+  font-family: var(--font-scripture), "Noto Serif Hebrew", "SBL Hebrew", "Noto Serif", serif;
   font-size: clamp(1.12rem, 2.1vw, 1.34rem);
   line-height: 1.8;
 }

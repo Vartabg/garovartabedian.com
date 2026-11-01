@@ -9,19 +9,21 @@ import {
   PROJECTS,
   PROJECT_STATUS_LABEL,
   WORK_PAGE,
+  JOB_REPORT_OFFER,
 } from "@/lib/portfolio-content";
+import StarterMenu from "./StarterMenu";
 
 const SITE_URL = "https://garovartabedian.com";
 
 const description =
-  "Inspectable case studies showing how Garo Vartabedian builds workflow tools, research systems, integrations, and practical interfaces.";
+  "Get a landing page, Excel document handler and customized mobile job report tool together for $100 USD total. Explore Garo Vartabedian’s demos and case studies.";
 
 function absoluteUrl(href: string) {
   return href.startsWith("http") ? href : `${SITE_URL}${href}`;
 }
 
 export const metadata: Metadata = {
-  title: "Work - case studies",
+  title: "Work - $100 business package and case studies",
   description,
   alternates: { canonical: "/work" },
   openGraph: {
@@ -75,13 +77,21 @@ export default function Work() {
       <h1>{WORK_PAGE.headline}</h1>
       <p className="lede">{WORK_PAGE.lede}</p>
       <p className="cta-row">
-        <ButtonLink variant="primary" href="/services">
+        <ButtonLink variant="primary" href="#starter-menu">
+          See the $100 package
+        </ButtonLink>
+        <ButtonLink variant="ghost" href={JOB_REPORT_OFFER.href}>
+          {JOB_REPORT_OFFER.demoLabel}
+        </ButtonLink>
+        <ButtonLink variant="ghost" href="/services">
           {ACTION_LABELS.workWithGaro}
         </ButtonLink>
         <ButtonLink variant="ghost" href="/contact">
           {ACTION_LABELS.discussProject}
         </ButtonLink>
       </p>
+
+      <StarterMenu />
 
       <section aria-labelledby="proof-index-title">
         <h2 id="proof-index-title">Featured proof</h2>

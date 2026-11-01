@@ -1,0 +1,505 @@
+{
+  "book": "MIC",
+  "bookName": "Micah",
+  "oneLine": "Micah exposes the taking of land, corrupt leadership, and false security, then imagines a restored people learning peace and receiving mercy.",
+  "orient": "The book opens with judgment against Samaria and Jerusalem and a lament through the towns of Judah. Powerful people seize homes and fields, rulers turn justice into violence, and religious leaders give reassurance for payment. Promises of gathering, a ruler from Bethlehem, and nations learning peace interrupt and answer these accusations. The closing movement brings a case against the people, a lament over broken trust, and a prayer for pardon.",
+  "whereYouAre": "The heading places Micah of Moresheth in the reigns of Jotham, Ahaz, and Hezekiah, kings of Judah. His countryside setting lies southwest of Jerusalem. Assyrian pressure belongs to this eighth-century BCE horizon: Samaria fell in 722/721, and the identifiable towns mourned in chapter 1 lie in territory devastated by Sennacherib in 701. The book also looks toward Babylonian exile and restoration; its literary sequence is not a year-by-year account.",
+  "facts": {
+    "writtenBy": "The heading attributes the word to Micah of Moresheth. Jeremiah 26:18 also remembers Micah under Hezekiah and quotes the warning now found at Micah 3:12. Neither passage identifies everyone involved in arranging the book.",
+    "writtenWhen": "The attributed prophetic activity belongs to the eighth century BCE. The extent of later collection and expansion is disputed; some scholars identify exilic and later perspectives, especially in chapter 7. No date for the finished book is supplied.",
+    "writtenFor": "The speeches address Samaria, Jerusalem, Judah’s towns, rulers, prophets, and the people. Wider peoples and nations are also summoned or pictured as future learners at Zion.",
+    "place": "The concerns center on Israel and Judah, especially Jerusalem and the Judean countryside. The place of final composition is not stated.",
+    "covers": "Land seizure, bought religious authority, siege and exile, the gathering of a remnant, just conduct, and renewed divine compassion.",
+    "size": "7 chapters and 105 verses in WEB and KJV, with 2,919 whitespace-separated words in WEB. Brenton also has 105 verses but divides chapters 4–5 differently. Douay-Rheims has 104 numbered verses because its 5:11 joins material numbered as two verses in WEB."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "web-mic",
+      "web-jer-26"
+    ],
+    "writtenWhen": [
+      "web-mic",
+      "usccb-mic-intro"
+    ],
+    "writtenFor": [
+      "web-mic"
+    ],
+    "place": [
+      "web-mic",
+      "usccb-mic-intro"
+    ],
+    "covers": [
+      "web-mic"
+    ],
+    "size": [
+      "english-editions"
+    ]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew, predominantly prophetic poetry with a prose heading.",
+    "register": "Commands to hear, questions, accusations, laments, and promises move quickly between speakers. Repeated words and parallel clauses link social wrongs to their consequences; place-name soundplay turns a geographical list into a lament.",
+    "spokenWorld": "The speakers inhabit an Israelite and Judean world of towns, farms, courts, worship, and invading armies. Assyria and Babylon are named, but the book does not present separate Assyrian- or Babylonian-language conversations.",
+    "readerSignal": "Notice changes between I, we, you, and she. Zion and other towns can speak or be addressed as women, while a first-person voice can express a community’s experience. Modern punctuation helps identify speeches without settling every speaker or quotation boundary.",
+    "englishLayer": "References follow WEB. Hebrew and Brenton number WEB 5:1 as 4:14, then WEB 5:2–15 as 5:1–14; chapter 6 realigns. Douay-Rheims agrees with WEB through 5:10, joins WEB 5:11–12 in its 5:11, and numbers WEB 5:13–15 as 5:12–14. At WEB 5:2, WEB’s ancient times contrasts with KJV’s everlasting and the eternity wording of Douay-Rheims and Brenton 5:1. Compare actual clauses before drawing conclusions from a verse number or one English word.",
+    "textualHistory": [
+      {
+        "label": "Hebrew prophetic collection",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The heading names Micah; the finished work sets judgment, restoration, accusation, and prayer beside one another. Scholars differ over how much derives directly from the named prophet and how much reflects later shaping. A change of tone alone does not date a passage. The Hebrew comparison comes from the Open Scriptures Hebrew Bible in the Masoretic tradition. Its written and read forms occasionally differ, as at 1:10; the surviving transmitted text is not Micah’s autograph.",
+        "sourceIds": [
+          "web-mic",
+          "usccb-mic-intro",
+          "hebrew-mic",
+          "net-mic"
+        ]
+      },
+      {
+        "label": "Greek-based English comparison",
+        "language": "Greek Septuagint represented in Brenton’s English",
+        "role": "translation",
+        "description": "Brenton follows the Hebrew-style numbering across chapters 4–5 but also differs in wording. At 4:5 it says the nations walk in their own way, where WEB refers to the names of their gods. At 7:19 its closing clause speaks of our sins, where WEB has their sins. Brenton’s English does not by itself establish which Hebrew reading lay behind every difference.",
+        "sourceIds": [
+          "english-editions",
+          "brenton-edition"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Repeated summonses make the audience answerable",
+        "original": "שִׁמְעוּ — shimʿu — hear; רִיב — riv — dispute or case",
+        "explanation": "The command summons peoples, challenges rulers who should know justice, and summons the mountains to hear Yahweh’s case. The opening witness scene and the later dispute make wrongdoing public rather than merely private dissatisfaction.",
+        "translationNote": "WEB uses both hear and listen for the repeated summons. The legal imagery in chapter 6 includes an accusation, a demand for an answer, and a recollection of rescue.",
+        "caution": "The mountains are poetic witnesses. The imagery does not reconstruct a complete historical courtroom procedure.",
+        "refs": [
+          "1:2",
+          "3:1",
+          "3:9",
+          "6:1",
+          "6:2",
+          "6:3",
+          "6:4",
+          "6:5"
+        ],
+        "sourceIds": [
+          "web-mic",
+          "hebrew-mic"
+        ]
+      },
+      {
+        "title": "Town names become sounds of loss",
+        "original": "אַכְזִיב / אַכְזָב — ʾAkhziv / ʾakhzav — Achzib / disappointment",
+        "explanation": "The Achzib name echoes the word applied to its houses. Earlier, the dust of Beth Ophrah is matched by rolling in dust, and Zaanan is paired with not coming out. These sound links bind the towns to the grief surrounding them.",
+        "translationNote": "English retains the names and much of the imagery but usually loses the audible resemblance. Several clauses in this town lament are difficult, so translations can differ beyond spelling.",
+        "caution": "The names are woven into a lament, not a joke. Soundplay does not locate every town with certainty or establish the exact route of an invading army.",
+        "refs": [
+          "1:8",
+          "1:10",
+          "1:11",
+          "1:14",
+          "1:16"
+        ],
+        "sourceIds": [
+          "hebrew-mic",
+          "web-mic",
+          "usccb-mic-1",
+          "net-mic"
+        ]
+      },
+      {
+        "title": "The planners face a plan against them",
+        "original": "חֹשְׁבֵי / חֹשֵׁב — ḥoshvei / ḥoshev — planning",
+        "explanation": "The same Hebrew verb describes people devising wrongdoing in bed and Yahweh devising disaster against their family. The next verse makes the human wrong concrete: fields, houses, and inheritance are taken. The answer reverses the powerful people’s assumed control.",
+        "translationNote": "WEB’s devise and planning render forms of the same verb. Its iniquity and disaster language should be read in context: the victims’ loss and the judgment answering the perpetrators are distinct parts of the argument.",
+        "caution": "The announced disaster is a judgment within the poem. It does not authorize readers to dispossess others.",
+        "refs": [
+          "2:1",
+          "2:2",
+          "2:3",
+          "2:4",
+          "2:5"
+        ],
+        "sourceIds": [
+          "web-mic",
+          "hebrew-mic"
+        ]
+      },
+      {
+        "title": "Justice and mercy connect the accusations to the prayer",
+        "original": "מִשְׁפָּט — mishpat — justice; חֶסֶד — ḥesed — mercy or faithful kindness",
+        "explanation": "Rulers are expected to know justice but instead distort it. The demand to act justly in 6:8 returns that public obligation to the reader’s view. The mercy loved there shares its Hebrew noun with the loving kindness in which God delights at 7:18 and the mercy promised to Abraham at 7:20.",
+        "translationNote": "WEB varies the English wording, so the repeated Hebrew noun is easier to miss. Walking with God also echoes the language of paths and allegiance in chapter 4; it pictures a continuing way of life.",
+        "caution": "The familiar sentence at 6:8 belongs beside the book’s concrete charges about land, bribery, false weights, and violence. It does not reduce justice to a private feeling.",
+        "refs": [
+          "3:1",
+          "3:9",
+          "4:2",
+          "4:5",
+          "6:8",
+          "6:10",
+          "6:11",
+          "6:12",
+          "7:18",
+          "7:20"
+        ],
+        "sourceIds": [
+          "web-mic",
+          "hebrew-mic"
+        ]
+      },
+      {
+        "title": "A remnant can be a flock, dew, or a lion",
+        "original": "שְׁאֵרִית — sheʾerit — remnant",
+        "explanation": "The gathered remnant is pictured as a flock. The lame and displaced are made into a people under Yahweh’s rule. Later the remnant among nations is compared first to dew and then to a lion, while the closing prayer asks God to shepherd the people.",
+        "translationNote": "WEB’s recurring remnant keeps the scattered scenes connected. The dew and lion similes stand next to one another; the second is explicitly forceful.",
+        "caution": "These images hold vulnerability, gathering, and victory together. Calling people a remnant neither proves their moral superiority nor turns every surrounding nation into one undifferentiated enemy.",
+        "refs": [
+          "2:12",
+          "2:13",
+          "4:6",
+          "4:7",
+          "5:7",
+          "5:8",
+          "7:14",
+          "7:18"
+        ],
+        "sourceIds": [
+          "web-mic",
+          "hebrew-mic"
+        ]
+      },
+      {
+        "title": "Pardon is pictured through a sequence of actions",
+        "original": "מִי אֵל כָּמוֹךָ — mi ʾel kamokha — who is a God like you?",
+        "explanation": "The final question praises a God who forgives and passes over rebellion. The following verse imagines iniquities trampled and sins cast into deep water. The book ends by joining compassion to the promise remembered for Jacob and Abraham.",
+        "translationNote": "WEB moves from speaking about God to addressing God and retains the shift from our iniquities to their sins. Douay-Rheims and Brenton phrase the final sins clause differently.",
+        "caution": "The movements of address and person belong to a prayer. Do not silently replace the wording when quoting it, or turn its poetic images into a mechanical account of forgiveness.",
+        "refs": [
+          "7:18",
+          "7:19",
+          "7:20"
+        ],
+        "sourceIds": [
+          "web-mic",
+          "hebrew-mic",
+          "english-editions"
+        ]
+      }
+    ],
+    "examplesHeading": "Hebrew expressions to notice",
+    "examples": [
+      {
+        "ref": "1:14",
+        "form": "אַכְזִיב — ʾAkhziv",
+        "meaning": "The town name Achzib.",
+        "why": "The neighboring word leʾakhzav sounds like the name and makes its houses a disappointment to Israel’s kings.",
+        "sourceIds": [
+          "hebrew-mic",
+          "web-mic",
+          "usccb-mic-1"
+        ]
+      },
+      {
+        "ref": "2:3",
+        "form": "חֹשֵׁב — ḥoshev",
+        "meaning": "Planning or devising.",
+        "why": "Yahweh’s announced plan answers the same verb used of the powerful plotters in 2:1.",
+        "sourceIds": [
+          "hebrew-mic",
+          "web-mic"
+        ]
+      },
+      {
+        "ref": "3:1",
+        "form": "הַמִּשְׁפָּט — hammishpat",
+        "meaning": "Justice.",
+        "why": "The question presumes that rulers should know justice; the following violent images expose their betrayal of that responsibility.",
+        "sourceIds": [
+          "hebrew-mic",
+          "web-mic"
+        ]
+      },
+      {
+        "ref": "4:2",
+        "form": "תוֹרָה — torah",
+        "meaning": "Instruction or law.",
+        "why": "The nations seek to learn God’s ways, and instruction goes out from Zion. This context concerns taught conduct; the noun alone does not identify a completed collection of biblical books.",
+        "sourceIds": [
+          "hebrew-mic",
+          "web-mic"
+        ]
+      },
+      {
+        "ref": "5:2",
+        "form": "מִימֵי עוֹלָם — mime ʿolam",
+        "meaning": "From ancient days.",
+        "why": "WEB uses ancient times; other English editions use everlasting or eternity. Micah 7:14 also uses days-of-old language. The phrase’s antiquity sense is supported by the NET notes; a theological claim about the ruler requires more than this noun alone.",
+        "sourceIds": [
+          "hebrew-mic",
+          "english-editions",
+          "net-mic"
+        ]
+      },
+      {
+        "ref": "6:8",
+        "form": "חֶסֶד — ḥesed",
+        "meaning": "Mercy or faithful kindness.",
+        "why": "The call to love mercy anticipates the closing description of God delighting in loving kindness and showing mercy to Abraham.",
+        "sourceIds": [
+          "hebrew-mic",
+          "web-mic"
+        ]
+      },
+      {
+        "ref": "7:18",
+        "form": "מִי אֵל כָּמוֹךָ — mi ʾel kamokha",
+        "meaning": "Who is a God like you?",
+        "why": "The question is answered by the actions of pardon and compassion, rather than by a catalogue of military achievements.",
+        "sourceIds": [
+          "hebrew-mic",
+          "web-mic"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Prophetic speeches, laments, disputes, and promises",
+    "how": "Follow an accusation into its stated consequences, then notice when the voice changes toward gathering or prayer. The turns are not all aligned with chapter breaks. Chapter 2 ends in hope before chapter 3 renews the charges; chapter 7 turns from lament to expectation at verse 7."
+  },
+  "cast": [
+    {
+      "name": "Micah",
+      "who": "The prophet named in the heading, associated with Moresheth and remembered in Jeremiah as warning Judah under Hezekiah."
+    },
+    {
+      "name": "Yahweh",
+      "who": "The speaker of judgment and gathering promises, the accuser who recalls rescue from Egypt, and the God addressed for pardon."
+    },
+    {
+      "name": "Samaria, Jerusalem, and Judah’s towns",
+      "who": "Communities addressed through their cities; Zion can be pictured as a woman in distress or labor."
+    },
+    {
+      "name": "Rulers, wealthy landholders, priests, and prophets",
+      "who": "Groups challenged for taking property, distorting justice, teaching for payment, or assuring security while doing wrong."
+    },
+    {
+      "name": "The remnant and the nations",
+      "who": "Survivors are gathered and restored; nations appear as learners, besiegers, and recipients of judgment in different passages."
+    },
+    {
+      "name": "The ruler from Bethlehem",
+      "who": "A promised ruler who will shepherd in Yahweh’s strength. The passage became central to Christian interpretation of Jesus’ birth."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Judgment and a town-by-town lament",
+      "chapters": "1",
+      "precise": "1:1–16",
+      "note": "The heading and divine arrival lead to Samaria’s ruin and mourning that reaches Jerusalem and the countryside."
+    },
+    {
+      "heading": "Taking land, resisting the word, gathering the flock",
+      "chapters": "2",
+      "precise": "2:1–13",
+      "note": "Property seizure and disputed prophecy dominate 2:1–11; a gathering promise closes the chapter in 2:12–13."
+    },
+    {
+      "heading": "Leadership that consumes its own people",
+      "chapters": "3",
+      "precise": "3:1–12",
+      "note": "Rulers, prophets, and religious authorities face charges that culminate in Zion’s threatened destruction."
+    },
+    {
+      "heading": "Peace at Zion, exile, and rescue",
+      "chapters": "4",
+      "precise": "4:1–13",
+      "note": "Nations learn peace, the displaced are gathered, and Zion passes through labor, Babylon, and conflict. This is not an uninterrupted idyll."
+    },
+    {
+      "heading": "A ruler, a remnant, and stripped-away defenses",
+      "chapters": "5",
+      "precise": "5:1–15",
+      "note": "Siege precedes Bethlehem’s promise; shepherding and remnant images lead to the removal of military and cultic supports. WEB 5:1 is Hebrew and Brenton 4:14."
+    },
+    {
+      "heading": "The case for justice in ordinary conduct",
+      "chapters": "6",
+      "precise": "6:1–16",
+      "note": "Remembered rescue and questions about offerings lead to 6:8, then charges concerning commerce, wealth, violence, and inherited royal practices."
+    },
+    {
+      "heading": "Broken trust and renewed compassion",
+      "chapters": "7",
+      "precise": "7:1–20",
+      "note": "The opening lament reaches expectation at 7:7. Restoration, a shepherd prayer, and pardon close the book."
+    }
+  ],
+  "purpose": "To expose the distance between claims of divine security and the treatment of neighbors, while holding out gathering, just rule, and mercy after judgment. The promised peace involves nations ceasing to learn war, and the final hope rests on God’s compassion and remembered promise.",
+  "snags": [
+    {
+      "snag": "The imagery of leaders eating people is shocking.",
+      "help": "Chapter 3 portrays exploitation as butchery and cooking. It is a sustained accusation about destructive leadership, not evidence that the rulers literally practiced cannibalism."
+    },
+    {
+      "snag": "A firstborn child appears among the proposed offerings.",
+      "help": "The speaker in 6:6–7 escalates questions about what could secure acceptance. The answer in 6:8 directs attention to justice, mercy, and walking with God; the question is not an instruction to sacrifice a child."
+    },
+    {
+      "snag": "Peace and victory through force appear beside each other.",
+      "help": "The vision of unlearned warfare at 4:3 stands in the same book as siege, threshing, and lion imagery. Let those different promises and threats remain audible instead of treating every passage as the same kind of peace scene."
+    },
+    {
+      "snag": "The Bethlehem verse seems to change when an edition is switched.",
+      "help": "Locate the content first: WEB 5:2 is Brenton and Hebrew 5:1. The contrast between ancient times and eternity also concerns translation and interpretation, not just numbering."
+    },
+    {
+      "snag": "Walking humbly looks like a simple dictionary equation.",
+      "help": "At 6:8 Douay-Rheims has walking solicitously, while Brenton emphasizes readiness to walk. NET notes that the Hebrew may convey carefulness. The instruction concerns conduct with God; one English adjective does not exhaust the expression."
+    },
+    {
+      "snag": "The Zion passage is familiar from Isaiah.",
+      "help": "Compare Micah 4:1–3 with Isaiah 2:2–4. The shared wording does not itself establish which book borrowed from the other or whether both used a shared tradition. Micah continues with its own vine-and-fig-tree and allegiance lines."
+    }
+  ],
+  "debates": [
+    {
+      "question": "How much belongs directly to the eighth-century prophet?",
+      "settled": "The heading attributes the word to Micah and places him under three Judean kings. Jeremiah remembers him under Hezekiah.",
+      "positions": [
+        {
+          "view": "Substantial unity under the named prophet.",
+          "grounds": "Traditional attribution treats the speeches as Micah’s, a position some modern commentators retain."
+        },
+        {
+          "view": "A collection shaped across later periods.",
+          "grounds": "Other scholars identify exilic and later perspectives within the received collection. The proposed extent and dates of additions vary."
+        }
+      ],
+      "soWhat": "Read the finished sequence closely while distinguishing the named prophet’s setting from an asserted date for every passage."
+    },
+    {
+      "question": "What do Bethlehem and the ruler’s ancient origins imply?",
+      "settled": "The poem promises a ruler from Bethlehem who will shepherd in Yahweh’s strength.",
+      "positions": [
+        {
+          "view": "A renewed Davidic ruler within Israel’s hopes.",
+          "grounds": "Bethlehem and the language of ancient origins connect the expectation with the royal past; the NET notes read it in relation to David."
+        },
+        {
+          "view": "A prophecy received in Christian claims about Jesus.",
+          "grounds": "Matthew 2:5–6 uses Bethlehem’s promise in its birth narrative. That reception supplies a further interpretive setting; it is not identical to a lexical definition of the Hebrew for ancient days."
+        }
+      ],
+      "soWhat": "Historical and Christian readings can overlap. Neither the ancient-days phrase alone nor an English eternity rendering settles every claim about the ruler."
+    }
+  ],
+  "sources": [
+    {
+      "id": "web-mic",
+      "label": "Micah in the World English Bible",
+      "says": "Primary wording, speakers, images, chapter movement, and individual verse references.",
+      "href": "/scriptures/text/web/MIC.json"
+    },
+    {
+      "id": "english-editions",
+      "label": "Micah in WEB, KJV, Douay-Rheims, and Brenton",
+      "says": "Direct comparison establishes counts, chapter 5 mappings, wording at the Bethlehem promise and 6:8, and differences at 4:5 and 7:19."
+    },
+    {
+      "id": "hebrew-mic",
+      "label": "Open Scriptures Hebrew Bible: Micah",
+      "says": "Hebrew wording, grammar, read forms, and verse numbering. OSHB morphology is CC BY 4.0; the underlying WLC text is public domain.",
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Mic.xml"
+    },
+    {
+      "id": "usccb-mic-intro",
+      "label": "USCCB, Introduction to Micah",
+      "says": "Historical setting and competing accounts of the collection’s growth.",
+      "url": "https://bible.usccb.org/bible/micah/0"
+    },
+    {
+      "id": "usccb-mic-1",
+      "label": "USCCB, Micah 1 notes",
+      "says": "Samaria’s fall, the Judean towns, and soundplay in the lament.",
+      "url": "https://bible.usccb.org/bible/micah/1"
+    },
+    {
+      "id": "net-mic",
+      "label": "NET Bible, Micah translation and notes",
+      "says": "Discusses difficult clauses, read forms, ancient-days language at 5:2, and the expression for walking in 6:8.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/mic.pdf"
+    },
+    {
+      "id": "web-jer-26",
+      "label": "Jeremiah 26 in the World English Bible",
+      "says": "Verses 17–19 remember Micah’s warning under Hezekiah and the response to it.",
+      "href": "/scriptures/text/web/JER.json"
+    },
+    {
+      "id": "web-isa-2",
+      "label": "Isaiah 2 in the World English Bible",
+      "says": "Verses 2–4 closely parallel Micah 4:1–3; the following verses differ.",
+      "href": "/scriptures/text/web/ISA.json"
+    },
+    {
+      "id": "web-mat-2",
+      "label": "Matthew 2 in the World English Bible",
+      "says": "Verses 5–6 use the Bethlehem ruler passage within the account of Jesus’ birth.",
+      "href": "/scriptures/text/web/MAT.json"
+    },
+    {
+      "id": "brenton-edition",
+      "label": "Brenton Septuagint Translation, eBible edition",
+      "says": "Identifies the Greek-based English edition used for comparison.",
+      "url": "https://ebible.org/eng-Brenton/"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Start with the property and leadership charges before isolating the familiar sayings about peace or justice.",
+      "refs": [
+        "2:1",
+        "2:2",
+        "3:9",
+        "3:10",
+        "3:11",
+        "3:12"
+      ]
+    },
+    {
+      "tip": "Track the reversals in a pair: Zion plowed like a field, then Zion as the place from which instruction goes out.",
+      "refs": [
+        "3:12",
+        "4:1",
+        "4:2"
+      ]
+    },
+    {
+      "tip": "Read the offering questions, the answer, and the dishonest commerce in one sitting.",
+      "refs": [
+        "6:6",
+        "6:7",
+        "6:8",
+        "6:10",
+        "6:11",
+        "6:12"
+      ]
+    },
+    {
+      "tip": "Follow the closing turn from distrust and waiting into a prayer for shepherding and pardon.",
+      "refs": [
+        "7:5",
+        "7:6",
+        "7:7",
+        "7:14",
+        "7:18",
+        "7:19",
+        "7:20"
+      ]
+    }
+  ],
+  "next": "Read Isaiah 2 beside Micah 4 for the shared peace vision, Jeremiah 26 for the remembered warning about Zion, and Matthew 2 for Christian reception of the Bethlehem promise."
+}

@@ -216,14 +216,4 @@ export function writeEasyPrefs(prefs: EasyPrefs): void {
   }
 }
 
-/** Popular start-here destinations (Protestant WEB). */
-export const START_HERE: { bookId: string; label: string; chapter?: number }[] = [
-  { bookId: "JHN", label: "John", chapter: 1 },
-  { bookId: "PSA", label: "Psalms", chapter: 23 },
-  { bookId: "GEN", label: "Genesis", chapter: 1 },
-  { bookId: "MAT", label: "Matthew", chapter: 1 },
-  { bookId: "ROM", label: "Romans", chapter: 8 },
-  { bookId: "PRO", label: "Proverbs", chapter: 1 },
-];
-
 export const DEFAULT_TRADITION = "protestant";

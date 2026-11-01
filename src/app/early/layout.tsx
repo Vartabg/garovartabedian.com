@@ -3,6 +3,7 @@ import Link from "next/link";
 import WorldSwitcher from "../_components/WorldSwitcher";
 import { WorldGuide, WorldNextSteps } from "../_components/WorldGuide";
 import WorldHeader from "../_components/WorldHeader";
+import SiteFooterLinks from "../_components/SiteFooterLinks";
 import "../styles/worlds-shared.css";
 import "../styles/early.css";
 
@@ -68,11 +69,6 @@ export default function EarlyLayout({ children }: { children: React.ReactNode })
       <main id="main">
         <div className="wrap">
           <WorldGuide world="early" />
-          <nav className="ew-library-nav" aria-label="Writings library">
-            <Link href="/early">Original shelf</Link>
-            <Link href="/early/library">Works and editions</Link>
-            <Link href="/early/search">Search the library</Link>
-          </nav>
           {children}
           <WorldNextSteps world="early" />
         </div>
@@ -86,6 +82,7 @@ export default function EarlyLayout({ children }: { children: React.ReactNode })
               sources cited on each page
             </Link>
           </span>
+          <SiteFooterLinks />
         </div>
       </footer>
       <WorldSwitcher />

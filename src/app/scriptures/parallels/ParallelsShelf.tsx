@@ -2,35 +2,36 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import type { ParallelMatrix } from "@/lib/parallels/types";
+import type { StudyContext } from "@/lib/scriptures/study-context";
+import { parallelComparisonHref } from "@/lib/scriptures/parallel-study-url";
 import ParallelsTopologyMap, { type FilterCategory } from "./ParallelsTopologyMap";
 
 const AXIS_LABELS: Record<string, { label: string; bg: string; text: string }> = {
   "christology": {
     label: "Christology & Incarnation",
-    bg: "bg-blue-950/60 border-blue-800/60",
-    text: "text-blue-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
   },
   "atonement": {
     label: "Atonement & Trial",
-    bg: "bg-amber-950/60 border-amber-800/60",
-    text: "text-amber-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
   },
   "sin-human-nature": {
     label: "Sin & Human Anthropology",
-    bg: "bg-purple-950/60 border-purple-800/60",
-    text: "text-purple-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
   },
   "prophethood": {
     label: "Prophethood & Impeccability",
-    bg: "bg-emerald-950/60 border-emerald-800/60",
-    text: "text-emerald-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
   },
   "law-sanctity": {
     label: "Sanctity of Life & Law",
-    bg: "bg-rose-950/60 border-rose-800/60",
-    text: "text-rose-300",
+    bg: "parallel-surface parallel-rule",
+    text: "parallel-accent",
   },
 };
 
@@ -47,10 +48,11 @@ const CATEGORY_MAP: Record<string, FilterCategory[]> = {
 
 export default function ParallelsShelf({
   matrices,
+  context,
 }: {
   matrices: ParallelMatrix[];
+  context?: StudyContext | null;
 }) {
-  const router = useRouter();
   const [filter, setFilter] = useState<FilterCategory>("all");
   const [highlightedSlug, setHighlightedSlug] = useState<string | null>(null);
 
@@ -62,10 +64,6 @@ export default function ParallelsShelf({
     });
   }, [matrices, filter]);
 
-  const handleSelectFromMap = (slug: string) => {
-    router.push(`/scriptures/parallels/${slug}`);
-  };
-
   return (
     <div>
       {/* Interactive Tradition & Literary Flow Topology Map */}
@@ -73,26 +71,26 @@ export default function ParallelsShelf({
         activeFilter={filter}
         onFilterChange={setFilter}
         highlightedMatrixId={highlightedSlug}
-        onSelectMatrix={handleSelectFromMap}
+        context={context}
       />
 
       {/* Grid of Comparative Matrix Cards */}
-      <div className="flex items-center justify-between mb-8 pb-4 border-b border-neutral-800/80">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b parallel-rule">
         <div>
-          <h2 className="text-xl sm:text-2xl font-serif font-medium text-white">
-            Comparative Matrix Catalog
+          <h2 className="text-xl sm:text-2xl font-serif font-medium parallel-ink">
+            Choose a comparison
           </h2>
-          <p className="text-xs text-neutral-400 mt-0.5">
-            Showing {filteredMatrices.length} of {matrices.length} peer-reviewed Abrahamic matrices
+          <p className="text-xs parallel-muted mt-0.5">
+            Showing {filteredMatrices.length} of {matrices.length} source comparisons
           </p>
         </div>
         {filter !== "all" && (
           <button
             type="button"
             onClick={() => setFilter("all")}
-            className="text-xs font-mono text-amber-400 hover:text-amber-300 transition underline underline-offset-2"
+            className="text-xs font-mono parallel-accent  transition underline underline-offset-2"
           >
-            Reset to All 8 Matrices
+            Show all comparisons
           </button>
         )}
       </div>
@@ -101,8 +99,8 @@ export default function ParallelsShelf({
         {filteredMatrices.map((matrix) => {
           const axisMeta = (matrix.axis && AXIS_LABELS[matrix.axis]) || {
             label: "Theological Matrix",
-            bg: "bg-neutral-900 border-neutral-700",
-            text: "text-neutral-300",
+            bg: "parallel-panel parallel-rule",
+            text: "parallel-muted",
           };
 
           return (
@@ -111,45 +109,45 @@ export default function ParallelsShelf({
               id={`matrix-card-${matrix.slug}`}
               onMouseEnter={() => setHighlightedSlug(matrix.slug)}
               onMouseLeave={() => setHighlightedSlug(null)}
-              className="flex flex-col justify-between rounded-2xl bg-neutral-900/50 border border-neutral-800 hover:border-neutral-700 transition p-6 sm:p-8"
+              className="flex flex-col justify-between rounded-2xl parallel-panel border parallel-rule  transition p-6 sm:p-8"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-4">
                   <span
-                    className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono border ${axisMeta.bg} ${axisMeta.text}`}
+                    className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[.8rem] font-mono border ${axisMeta.bg} ${axisMeta.text}`}
                   >
                     {axisMeta.label}
                   </span>
-                  <span className="text-[11px] font-mono text-neutral-500">
+                  <span className="text-[.8rem] font-mono parallel-muted">
                     {matrix.slots.length} slots · {matrix.witnesses.length} witnesses
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-serif font-medium text-white mb-2">
+                <h3 className="text-2xl font-serif font-medium parallel-ink mb-2">
                   <Link
-                    href={`/scriptures/parallels/${matrix.slug}`}
-                    className="hover:text-amber-200 transition focus:outline-none focus:underline"
+                    href={parallelComparisonHref(matrix.slug, context)}
+                    className=" transition focus:outline-none focus:underline"
                   >
                     {matrix.title}
                   </Link>
                 </h3>
-                <p className="text-sm font-serif text-amber-200/70 mb-4">{matrix.subtitle}</p>
-                <p className="text-sm text-neutral-400 leading-relaxed mb-6">{matrix.summary}</p>
+                <p className="text-sm font-serif parallel-accent mb-4">{matrix.subtitle}</p>
+                <p className="text-sm parallel-muted leading-relaxed mb-6">{matrix.summary}</p>
 
                 {/* Witnesses Pill Row */}
                 <div className="space-y-2 mb-6">
-                  <p className="text-[11px] font-mono text-neutral-500 uppercase tracking-wider">
+                  <p className="text-[.8rem] font-mono parallel-muted uppercase tracking-wider">
                     Textual Witnesses
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {matrix.witnesses.map((w) => (
                       <span
                         key={w.id}
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-neutral-950 border border-neutral-800 text-xs text-neutral-300"
+                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg parallel-panel border parallel-rule text-xs parallel-muted"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                        <span className="w-1.5 h-1.5 rounded-full parallel-surface" />
                         <strong>{w.shortTitle}</strong>
-                        <span className="text-neutral-500 text-[10px]">
+                        <span className="parallel-muted text-[.75rem]">
                           ({w.dates.composition?.split("(")[0].trim()})
                         </span>
                       </span>
@@ -158,15 +156,15 @@ export default function ParallelsShelf({
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-neutral-800/80 flex items-center justify-between">
-                <span className="text-xs font-mono text-neutral-500">
-                  SHA: {matrix.provenance.reviewedContentHash.slice(0, 8)}…
+              <div className="pt-6 border-t parallel-rule flex items-center justify-between">
+                <span className="text-xs font-mono parallel-muted">
+                  Review: {matrix.provenance.reviewStatus.replaceAll("-", " ")}
                 </span>
                 <Link
-                  href={`/scriptures/parallels/${matrix.slug}`}
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-300 text-xs font-mono font-medium transition"
+                  href={parallelComparisonHref(matrix.slug, context)}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl parallel-surface  border parallel-rule parallel-accent text-xs font-mono font-medium transition"
                 >
-                  <span>Explore Slot-Diff</span>
+                  <span>Open comparison</span>
                   <span>→</span>
                 </Link>
               </div>

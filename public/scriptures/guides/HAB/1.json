@@ -2,74 +2,95 @@
   "book": "HAB",
   "chapter": 1,
   "bookName": "Habakkuk",
-  "summary": "Habakkuk 1 (17 verses) continues the story of faith, why evil prospers. Starting with 'The revelation which Habakkuk the prophet saw.', it moves through themes of faith, why evil prospers and calls readers toward faith, why evil prospers.",
-  "whyItMatters": "This chapter matters because it shows faith, why evil prospers lived out in questioning god. For a first-time reader, it answers: who is God in this moment, what does he ask, and how do people respond.",
+  "summary": "Habakkuk opens with the prophet asking why Yahweh lets violence, strife, and distorted justice continue. Yahweh answers that he is raising up the Chaldeans, a terrifying conquering people, but that answer creates a deeper protest: how can a holy God tolerate a ruthless power that devours nations like fish in a net?",
+  "whyItMatters": "This chapter sets up the book’s central tension: local injustice is real, but the announced instrument of judgment is itself violent and guilty. The unresolved question carries the reader into the waiting and answer of chapter 2.",
   "context": {
-    "author": "Habakkuk",
-    "audience": "Judah",
-    "date": "~600 BC",
-    "setting": "Questioning God",
-    "literaryForm": "dialogue + vision"
+    "author": "The heading attributes the revelation to Habakkuk the prophet, but gives no parentage, hometown, or account of the book’s final arrangement.",
+    "audience": "People confronting injustice and imperial violence in a Judean setting, inferred from the complaints rather than named in a dedication.",
+    "date": "The Chaldean, or Babylonian, crisis places the book around the end of the seventh and beginning of the sixth century BCE; the heading itself gives no king or exact date.",
+    "setting": "Judah under pressure from Babylonian power; the chapter names the Chaldeans but no Babylonian king.",
+    "literaryForm": "Prophetic dialogue in Hebrew poetry: a heading, a complaint, a divine answer, and a renewed complaint."
   },
   "outline": [
     {
-      "heading": "Opening",
-      "verses": "1-5"
+      "heading": "The heading",
+      "verses": "1",
+      "note": "The book begins by identifying the message as a revelation seen by Habakkuk the prophet."
     },
     {
-      "heading": "Middle",
-      "verses": "6-10"
+      "heading": "The first complaint",
+      "verses": "2-4",
+      "note": "Habakkuk asks how long he must cry out about violence while law is paralyzed and justice comes out perverted."
     },
     {
-      "heading": "Closing",
-      "verses": "11-17"
+      "heading": "The announced work among the nations",
+      "verses": "5-6",
+      "note": "Yahweh answers that a shocking work is underway: the Chaldeans are being raised up to seize dwelling places not their own."
+    },
+    {
+      "heading": "The Chaldeans described",
+      "verses": "7-11",
+      "note": "The invading force is swift, proud, feared, and violent; it takes prisoners, mocks rulers, captures strongholds, and is guilty because its strength is its god."
+    },
+    {
+      "heading": "The renewed protest",
+      "verses": "12-17",
+      "note": "Habakkuk appeals to Yahweh’s everlasting holiness and asks why the treacherous are allowed to swallow those more righteous, comparing the nations to fish caught and emptied from a net."
     }
   ],
   "keyVerses": [
     {
-      "ref": "1:1",
-      "text": "The revelation which Habakkuk the prophet saw.",
-      "why": "Opening sets context"
+      "ref": "1:2",
+      "text": "Yahweh, how long will I cry, and you will not hear? I cry out to you “Violence!” and will you not save?",
+      "why": "This verse states the opening problem directly: the prophet has cried out about violence and experiences God’s saving action as delayed."
     },
     {
-      "ref": "1:9",
-      "text": "All of them come for violence. Their hordes face forward. They gather prisoners like sand.",
-      "why": "Central turn"
+      "ref": "1:4",
+      "text": "Therefore the law is paralyzed, and justice never prevails; for the wicked surround the righteous; therefore justice comes out perverted.",
+      "why": "The complaint is not vague frustration; it names a public breakdown of law and justice."
     },
     {
-      "ref": "1:17",
-      "text": "Will he therefore continually empty his net, and kill the nations without mercy?",
-      "why": "Closing"
+      "ref": "1:6",
+      "text": "For, behold, I am raising up the Chaldeans, that bitter and hasty nation who march through the width of the earth, to possess dwelling places that are not theirs.",
+      "why": "This is the surprising answer that drives the rest of the chapter: judgment will come through the Chaldeans."
+    },
+    {
+      "ref": "1:13",
+      "text": "You who have purer eyes than to see evil, and who cannot look on perversity, why do you tolerate those who deal treacherously and keep silent when the wicked swallows up the man who is more righteous than he,",
+      "why": "The prophet’s second question presses the moral difficulty created by the first answer: the instrument of judgment is itself wicked."
     }
   ],
   "themes": [
-    "faith, why evil prospers"
+    "Violence and unanswered prayer",
+    "Paralyzed law and perverted justice",
+    "The Chaldeans as a terrifying instrument",
+    "The guilt of self-made power",
+    "God’s holiness and human protest",
+    "Nations pictured as fish in a net"
   ],
   "questions": [
     {
       "id": "q1",
-      "question": "What is happening in Habakkuk 1?",
-      "answer": "In 17 verses, this chapter habakkuk 1 (17 verses) continues the story of faith, why evil prospers. starting with 'the revelation which habakkuk the prophet saw.', it moves through themes of faith, why evil prospers and calls readers toward faith, why evil prospers. The setting is questioning god, written to judah. Look for who speaks, who listens, and what changes by the end.",
+      "question": "Who is Habakkuk in this chapter?",
+      "answer": "The chapter identifies him only as “Habakkuk the prophet.” It does not give his family, hometown, or a king’s reign. The reader meets him through his questions to Yahweh and his struggle with violence and justice.",
       "verseRefs": [
-        "1:1"
+        "1:1",
+        "1:2",
+        "1:3",
+        "1:4"
       ],
       "category": "context",
       "relatedVerses": [
-        1
+        1,
+        2,
+        3,
+        4
       ]
     },
     {
       "id": "q2",
-      "question": "Who wrote Habakkuk and why 1 matters in the bigger story?",
-      "answer": "Traditionally habakkuk, addressed to judah around ~600 bc. This chapter fits the book's purpose as dialogue + vision — its themes of faith, why evil prospers build on what came before.",
-      "verseRefs": [],
-      "category": "history",
-      "relatedVerses": []
-    },
-    {
-      "id": "q3",
-      "question": "What does 'prophet' mean in this chapter?",
-      "answer": "Messenger speaking for God. In this chapter, it appears in context of faith, why evil prospers. For a first-time reader: think of it as messenger speaking for god, not just religious jargon.",
+      "question": "What does “revelation” mean here?",
+      "answer": "In this chapter, “revelation” names what Habakkuk the prophet saw. The verse introduces the material as a prophetic message rather than as ordinary private reflection. The chapter then unfolds that revelation through complaint and response.",
       "verseRefs": [
         "1:1"
       ],
@@ -79,21 +100,79 @@
       ]
     },
     {
-      "id": "q4",
-      "question": "What does this chapter teach about God or people?",
-      "answer": "Through faith, why evil prospers and faith, it shows God's character (faithful, just, merciful) and human tendency (need, failure, hope). Notice how verses move from problem to provision.",
+      "id": "q3",
+      "question": "What is Habakkuk upset about at the beginning?",
+      "answer": "He says he cries to Yahweh about “Violence” and is not heard or saved. He also sees iniquity, perversity, destruction, strife, and contention. Verse 4 focuses the complaint on public justice: law is paralyzed and justice comes out perverted.",
       "verseRefs": [
-        "1:9"
+        "1:2",
+        "1:3",
+        "1:4"
       ],
-      "category": "theology",
+      "category": "practical",
       "relatedVerses": [
-        9
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Who are the Chaldeans?",
+      "answer": "The Chaldeans here are the Babylonians. Habakkuk describes them as a bitter and hasty nation that marches widely and takes dwelling places that are not theirs. Their rapid conquests create the moral problem at the heart of his renewed complaint: Yahweh’s announced instrument of judgment is itself guilty of violence.",
+      "verseRefs": [
+        "1:6",
+        "1:7",
+        "1:8",
+        "1:9",
+        "1:10",
+        "1:11"
+      ],
+      "category": "history",
+      "relatedVerses": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
       ]
     },
     {
       "id": "q5",
-      "question": "Verse 13 is long — what is it saying in plain English?",
-      "answer": "The verse says: 'You who have purer eyes than to see evil, and who cannot look on perversity, why do you tolerate those who deal treacherously and keep silent when the wicked swallows up the man wh...' In plain terms: it is making a key point about faith, why evil prospers. Break it into two halves — what is described, and what is promised or commanded.",
+      "question": "Does the chapter approve of the Chaldeans because Yahweh says he is raising them up?",
+      "answer": "No simple approval is given. The chapter says Yahweh is raising them up, but it also says they come for violence and are “indeed guilty.” Habakkuk’s renewed protest in verses 12-17 shows that the announced answer creates a serious moral problem inside the chapter itself.",
+      "verseRefs": [
+        "1:6",
+        "1:9",
+        "1:11",
+        "1:12",
+        "1:13"
+      ],
+      "category": "hard_verse",
+      "relatedVerses": [
+        6,
+        9,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Why does Habakkuk call Yahweh “Rock”?",
+      "answer": "The title appears in a question that appeals to Yahweh as everlasting, holy, and the one who has appointed judgment. In this setting it emphasizes stability and authority while Habakkuk is trying to understand the use of a violent power. The chapter does not pause to define the title beyond its role in the address to God.",
+      "verseRefs": [
+        "1:12"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        12
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What is difficult about verse 13?",
+      "answer": "Habakkuk says Yahweh has purer eyes than to see evil and cannot look on perversity, yet asks why Yahweh tolerates treachery and silence when the wicked swallow someone more righteous. The difficulty is not whether evil exists in the abstract, but how a holy God can allow a worse power to consume others. Readers differ over how to frame the implied comparison, but the chapter itself voices the tension rather than solving it here.",
       "verseRefs": [
         "1:13"
       ],
@@ -103,26 +182,73 @@
       ]
     },
     {
-      "id": "q6",
-      "question": "How could this chapter apply today without forcing modern ideas onto it?",
-      "answer": "Ask: what was original audience supposed to do with this? Then ask: what similar situation exists today? For example, if chapter warns about idols, today that might be money or status; if it celebrates deliverance, where do people need deliverance today?",
-      "verseRefs": [],
-      "category": "practical",
-      "relatedVerses": []
+      "id": "q8",
+      "question": "Why does the chapter compare people to fish and creeping things?",
+      "answer": "Habakkuk pictures conquered people as vulnerable creatures with no ruler over them. The image continues with hooks, nets, and a dragnet, showing the conqueror gathering people as easily as a fisherman gathers a catch. The point is the helplessness of the nations before predatory power.",
+      "verseRefs": [
+        "1:14",
+        "1:15",
+        "1:16",
+        "1:17"
+      ],
+      "category": "word",
+      "relatedVerses": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "What does it mean that the conqueror sacrifices to his net?",
+      "answer": "The image says the conqueror treats the tools of conquest as the source of luxury and good food. It matches verse 11, where the guilty power’s strength is called its god. The chapter criticizes self-reliant power that celebrates its own means of domination.",
+      "verseRefs": [
+        "1:11",
+        "1:15",
+        "1:16"
+      ],
+      "category": "theology",
+      "relatedVerses": [
+        11,
+        15,
+        16
+      ]
     }
   ],
   "glossary": [
     {
-      "term": "prophet",
-      "def": "Messenger speaking for God"
+      "term": "revelation",
+      "def": "The message Habakkuk is said to have seen; it introduces the chapter as prophetic disclosure."
     },
     {
-      "term": "mercy",
-      "def": "Compassionate kindness to those in need"
+      "term": "Violence",
+      "def": "The wrong Habakkuk cries out about at the start, and the same word used to describe what the Chaldeans come for."
     },
     {
-      "term": "sacrifice",
-      "def": "Offering given to God, often substitutionary"
+      "term": "Chaldeans",
+      "def": "The Babylonians, the conquering people Yahweh says he is raising up in verse 6."
+    },
+    {
+      "term": "dragnet",
+      "def": "A large net in the fishing image used for the conqueror’s capture of peoples."
+    },
+    {
+      "term": "Rock",
+      "def": "A title Habakkuk uses for Yahweh while appealing to God’s enduring authority and judgment."
     }
+  ],
+  "generation": {
+    "model": "gpt-5.5",
+    "promptHash": "e55264537472b12bd14c18004358dfd83a890113928770e7e6babe6d551f573a",
+    "generatedAt": "2026-10-03T23:16:27.496Z",
+    "rubricVersion": "guide-v2",
+    "method": "direct-generation"
+  },
+  "reviewStatus": "agent-reviewed",
+  "reviewedAt": "2026-10-03",
+  "reviewer": "Codex agent editorial panel",
+  "sourceIds": [
+    "web"
   ]
 }

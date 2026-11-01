@@ -401,9 +401,48 @@ export const SOURCE_GROUPS: SourceGroup[] = [
       },
       {
         label: "World English Bible copyright statement",
-        href: "https://ebible.org/web/copyright.htm",
-        note: "Public-domain license basis for one hosted free translation.",
+        href: "https://ebible.org/eng-web/copyright.htm",
+        note: "The publisher’s public-domain dedication and separate trademark naming condition.",
         kind: "primary text",
+      },
+    ],
+  },
+  {
+    id: "word-bridge",
+    title: "Word by word",
+    summary:
+      "In the Bible reader, a verse's study panel can show which Hebrew or Greek word stands behind each World English Bible word. The links start from free word tags published with that translation, with AI drafts where those fall short; code checks every one against public-domain dictionaries before it is shown.",
+    method: [
+      "Every verse starts from the free Strong's word tags eBible.org publishes with the World English Bible. Those tags are machine alignments and are often wrong, so they are treated only as drafts.",
+      "Where the free tags are missing or wrong, an AI model (Claude) can draft the links instead, verse by verse, given the English words, the original words, and each original word's dictionary gloss.",
+      "A checker with no AI in it then tests each link: the English word must appear in the original word's dictionary meaning, or be carried by the original's grammar (a Greek verb's ending carries its subject; a Hebrew pronoun suffix carries 'my' or 'his'; a genitive noun carries 'of').",
+      "Links the checker cannot support are hidden behind a \"need review\" switch, shown in red when opened, and stay that way until a person looks. Words the translator added, and words the English leaves out, are labeled instead of being forced into a link.",
+      "The drafts, the dictionaries, and the checker are all kept in the site's repository, so every published link can be rebuilt and re-checked without calling the model again.",
+    ],
+    links: [
+      {
+        label: "World English Bible with Strong's tags (eBible.org)",
+        href: "https://ebible.org/find/details.php?id=eng-web",
+        note: "Public-domain World English Bible USFM whose word tags give every verse its free starting links. Pinned copy and hash in the site's repository.",
+        kind: "dataset",
+      },
+      {
+        label: "Dodson Greek–English Lexicon",
+        href: "https://github.com/biblicalhumanities/Dodson-Greek-Lexicon",
+        note: "Public-domain Greek lexicon the checker compares Greek links against, matched to SBLGNT lemmas.",
+        kind: "dataset",
+      },
+      {
+        label: "Strong's Hebrew Dictionary, Open Scriptures edition",
+        href: "https://github.com/openscriptures/HebrewLexicon",
+        note: "Strong's Hebrew Dictionary (1890, public domain) in XML by the Open Scriptures Hebrew Bible Project, CC BY 4.0. Used unchanged to check Hebrew links.",
+        kind: "dataset",
+      },
+      {
+        label: "Creative Commons Attribution 4.0",
+        href: "https://creativecommons.org/licenses/by/4.0/",
+        note: "License for the Open Scriptures XML markup; credit: the Open Scriptures Hebrew Bible Project.",
+        kind: "reference",
       },
     ],
   },

@@ -109,7 +109,7 @@ async function loadPrimaryVerses(
 }
 
 const CATEGORIES: { id: "all" | JesusDossierCategory; label: string }[] = [
-  { id: "all", label: "All Dossiers" },
+  { id: "all", label: "All worksheets" },
   { id: "historical-attestation", label: "Historical Attestation" },
   { id: "messianic-prophecy", label: "Messianic Prophecy" },
   { id: "synoptic-problem", label: "Synoptic Problem" },
@@ -292,7 +292,7 @@ export default function JesusDossierClient({
             onClick={() => handleSelectPreset(p)}
           >
             <div className="jsu-dossier-card-top">
-              <span className="jsu-dossier-card-tag">{p.category.replace(/-/g, " ")}</span>
+              <span className="jsu-dossier-card-tag">{CATEGORIES.find((c) => c.id === p.category)?.label ?? p.category}</span>
               <span className="jsu-dossier-card-query">{p.query}</span>
             </div>
             <h3 className="jsu-dossier-card-title">{p.title}</h3>

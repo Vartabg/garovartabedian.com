@@ -1,65 +1,34 @@
+import StudyContextBanner from "../_components/StudyContextBanner";
+import { resolveStudyContext } from "@/lib/scriptures/server/study-context";
+import type { StudySearchParams } from "@/lib/scriptures/study-context";
 import type { Metadata } from "next";
 import Link from "next/link";
+import StudyPageHeader from "@/app/_components/StudyPageHeader";
 import { listParallelMatrices } from "@/lib/parallels/server";
 import ParallelsShelf from "./ParallelsShelf";
 
 export const metadata: Metadata = {
-  title: "Comparative Abrahamic Matrices · Parallel Claims",
-  description:
-    "Source-anchored comparative analysis of narrative, legal, and theological passages across biblical, Second Temple Jewish, rabbinic, and Islamic textual witnesses.",
-  openGraph: {
-    title: "Comparative Abrahamic Matrices · Parallel Claims",
-    description:
-      "Source-anchored comparative analysis of narrative, legal, and theological passages across biblical, Second Temple Jewish, rabbinic, and Islamic textual witnesses.",
-  },
+  title: "Parallel claims",
+  description: "Compare cited passages across Jewish, Christian, and Islamic sources, with differences, source editions, and later interpretations kept in view.",
+  alternates: { canonical: "/scriptures/parallels" },
+  openGraph: { title: "Parallel claims", url: "/scriptures/parallels", images: ["/worlds/scriptures.jpg"] },
 };
 
-export default async function ParallelsIndexPage() {
-  const matrices = await listParallelMatrices();
-
+export default async function ParallelsIndexPage({ searchParams }: { searchParams: Promise<StudySearchParams> }) {
+  const [matrices, params] = await Promise.all([listParallelMatrices(), searchParams ?? {}]);
+  const study = await resolveStudyContext(params);
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-neutral-200">
-      {/* Header */}
-      <header className="border-b border-neutral-800 pb-8 mb-12">
-        <div className="flex flex-wrap items-center gap-3 mb-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-wide bg-neutral-900 border border-neutral-700 text-neutral-300">
-            <span>ABRAHAMIC PARALLEL MATRICES</span>
-            <span>·</span>
-            <span className="text-emerald-400">Slot-Diff Engine</span>
-          </div>
-          <Link
-            href="/jesus/harmony"
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-wide bg-neutral-900 border border-neutral-700 text-amber-300 hover:border-amber-500/50 transition-colors"
-          >
-            <span className="text-cyan-400">Gospel Synoptics</span>
-            <span>·</span>
-            <span>Pericope Diff Engine &rarr;</span>
-          </Link>
-        </div>
+    <div className="scr-parallels">
+      <StudyPageHeader path="/scriptures/parallels" action="Choose a comparison below. Read the passages side by side, then inspect the sources and interpretations behind each claim." />
+      <p className="scr-parallels-related">Looking for the four Gospels? <Link href="/jesus/harmony">Compare Gospel accounts<span aria-hidden="true"> →</span></Link></p>
+      <StudyContextBanner {...study} note="These comparisons use selected passages and themes. Your starting verse is kept above; choose a comparison below or return to reading." />
 
-        <h1 className="text-3xl sm:text-5xl font-serif font-medium tracking-tight text-white mb-4">
-          Comparative Abrahamic Claims
-        </h1>
-        <p className="text-lg text-amber-200/90 font-serif max-w-3xl mb-4">
-          Verbatim text comparisons, transmission bridges, and precise theological divergences across Jewish, Christian, and Islamic records.
-        </p>
-        <p className="text-neutral-400 text-sm max-w-3xl leading-relaxed">
-          This research matrix refuses both false syncretism (&ldquo;all traditions say the exact same thing&rdquo;) and polemical distortion. Every pericope is structured as a deterministic slot diff with verified verbatim citations, original language witnesses, and distinct reception histories.
-        </p>
-      </header>
-
-      {/* Main Interactive Shelf with Topology Map */}
-      <ParallelsShelf matrices={matrices} />
-
-      {/* Methodological Integrity Note */}
-      <footer className="mt-16 pt-8 border-t border-neutral-800/80 text-xs text-neutral-500 max-w-3xl leading-relaxed">
-        <p className="font-mono uppercase tracking-wider text-neutral-400 mb-2">
-          Methodological Standard: Slot-Diff, Not Vector Distance
-        </p>
-        <p>
-          Vector proximity measurements (cosine distance) detect shared vocabulary but are structurally blind to theological pivots (e.g. &ldquo;God provides the ram&rdquo; vs &ldquo;God has no son&rdquo;). This matrix extracts structured comparative slots to expose authentic doctrinal and narrative agreements and deviations with cryptographic hash verification and full rights provenance.
-        </p>
-      </footer>
-    </main>
+      <ParallelsShelf matrices={matrices} context={study.context} />
+      <details className="scr-parallels-method">
+        <summary>How these comparisons work</summary>
+        <p>Each comparison groups cited excerpts by a shared theme. Similar language does not by itself establish literary dependence or agreement in belief. Read each relationship claim alongside its citations, evidence label, and stated limits.</p>
+        <p>Source editions, rights notices, review history, and downloadable records are available inside each comparison. The recorded content digest checks file integrity; it does not establish scholarly agreement.</p>
+      </details>
+    </div>
   );
 }

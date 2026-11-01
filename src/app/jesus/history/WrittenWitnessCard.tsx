@@ -49,7 +49,7 @@ export default function WrittenWitnessCard({ item, seen }: { item: HistoryItem; 
               className="textlink"
               style={{ fontWeight: 600 }}
             >
-              Analyze this witness in the NotebookLM Research Dossier Engine →
+              Analyze this witness in a research worksheet →
             </Link>
           </p>
         ) : isRomanOrPagan ? (
@@ -59,7 +59,7 @@ export default function WrittenWitnessCard({ item, seen }: { item: HistoryItem; 
               className="textlink"
               style={{ fontWeight: 600 }}
             >
-              Analyze Roman and other non-Christian witnesses in the NotebookLM Research Dossier Engine →
+              Analyze Roman and other non-Christian witnesses in a research worksheet →
             </Link>
           </p>
         ) : null}

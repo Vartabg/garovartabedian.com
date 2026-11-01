@@ -29,6 +29,16 @@ export type DossierPreset = {
   description: string;
 };
 
+export type DossierPrimaryVerse = {
+  ref: string;
+  original?: string;
+  brenton?: string;
+  drb?: string;
+  kjv?: string;
+  web?: string;
+  additional?: { label: string; text: string }[];
+};
+
 export const DOSSIER_PRESETS: DossierPreset[] = [
   {
     id: "isaiah-53",
@@ -115,17 +125,11 @@ export const DOSSIER_PRESETS: DossierPreset[] = [
 export function buildNotebookLMDossier(args: {
   target: string;
   canons?: Canons;
-  primaryVerses?: {
-    ref: string;
-    original?: string;
-    brenton?: string;
-    drb?: string;
-    kjv?: string;
-    web?: string;
-  }[];
+  primaryVerses?: DossierPrimaryVerse[];
   theologicalContext?: string;
+  includeReception?: boolean;
 }): NotebookLMDossier {
-  const { target, canons, primaryVerses = [], theologicalContext } = args;
+  const { target, canons, primaryVerses = [], theologicalContext, includeReception = true } = args;
   const lines: string[] = [];
 
   const cleanTarget = target.trim();
@@ -217,19 +221,22 @@ export function buildNotebookLMDossier(args: {
       if (pv.drb?.trim()) lines.push(`- **Douay-Rheims (Challoner revision; hosted 1899 edition)**: ${pv.drb}`);
       if (pv.kjv?.trim()) lines.push(`- **King James Version (1769 text)**: ${pv.kjv}`);
       if (pv.web?.trim()) lines.push(`- **World English Bible (2020)**: ${pv.web}`);
+      for (const witness of pv.additional ?? []) {
+        if (witness.text.trim()) lines.push(`- **${witness.label}**: ${witness.text}`);
+      }
       lines.push("");
     }
   }
 
   // Catena Aurea Patristic Reception Section
   let catenaEntries: CatenaEntry[] = [];
-  if (parsedRef) {
+  if (includeReception && parsedRef) {
     catenaEntries = parsedRef.verse
       ? getCatenaEntriesForVerse(`${parsedRef.book}.${parsedRef.chapter}.${parsedRef.verse}`)
       : getCatenaEntriesForBook(parsedRef.book).filter((e) => e.chapter === parsedRef.chapter);
   }
 
-  if (catenaEntries.length === 0 && cleanTarget) {
+  if (includeReception && catenaEntries.length === 0 && cleanTarget) {
     catenaEntries = searchCatena(cleanTarget);
   }
 
@@ -296,7 +303,7 @@ export function buildNotebookLMDossier(args: {
       count +
       [verse.original, verse.brenton, verse.drb, verse.kjv, verse.web].filter(
         (value) => typeof value === "string" && value.trim().length > 0,
-      ).length,
+      ).length + (verse.additional ?? []).filter((witness) => witness.text.trim()).length,
     0,
   );
 

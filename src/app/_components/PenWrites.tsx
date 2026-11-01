@@ -6,9 +6,7 @@ import { usePathname } from "next/navigation";
 /** Headings that write themselves in as they come into view. */
 const TARGETS = [
   ".st-front-title",
-  ".st-scripture-heading h2",
   ".st-worlds-heading h2",
-  "#paths-h",
   ".world-home-hero h1",
   ".world-home-hero-eyebrow",
   ".scr-rubric",

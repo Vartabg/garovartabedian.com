@@ -8,6 +8,8 @@ import GalileeMap from "../src/app/jesus/life/GalileeMap";
 import ProphecyRoom from "../src/app/jesus/prophecy/ProphecyRoom";
 import WordsRoom from "../src/app/jesus/words/WordsRoom";
 import type { Passage } from "../src/lib/jesus/client";
+import type { ProphecyPair } from "../src/lib/jesus/types";
+import prophecies from "../public/jesus/prophecies.json" with { type: "json" };
 import type { Canons } from "../src/lib/scriptures/types";
 
 const CANONS: Canons = {
@@ -162,6 +164,41 @@ describe("Jesus room interactions", () => {
     await click(opener);
     assert.match(document.body.textContent ?? "", /couldn.t load/i);
     assert.ok([...document.querySelectorAll("button")].some((button) => /try again/i.test(button.textContent ?? "")));
+  });
+
+  it("draws the prophecy graph from the room's own pairs and opens the one chosen", async () => {
+    // The graph once carried six hand-typed pairs whose labels and verses had
+    // drifted from the list below it. Each line must name a real pair and its
+    // real connection, two of each kind.
+    const pairs = prophecies as ProphecyPair[];
+    dom.window.HTMLElement.prototype.scrollIntoView = () => {};
+    await render(
+      <ProphecyRoom
+        pairs={pairs}
+        canons={CANONS}
+        originalEditions={{}}
+        passageLoader={async () => null}
+      />,
+    );
+
+    const lines = [...document.querySelectorAll('g[role="button"]')];
+    const kinds = new Map<string, number>();
+    for (const line of lines) {
+      const label = line.getAttribute("aria-label") ?? "";
+      const pair = pairs.find((p) => label.startsWith(`${p.line}:`));
+      assert.ok(pair, `graph line names a pair in the data: ${label}`);
+      assert.ok(label.includes(`, ${pair.connection}.`), `graph line keeps the pair's connection: ${label}`);
+      kinds.set(pair.connection, (kinds.get(pair.connection) ?? 0) + 1);
+    }
+    assert.deepEqual(Object.fromEntries(kinds), { typology: 2, explicit: 2, echo: 2 });
+
+    const jonah = lines.find((line) => line.getAttribute("aria-label")?.startsWith("Three days and three nights"));
+    assert.ok(jonah);
+    await click(jonah);
+    assert.equal(
+      document.querySelector("#prophecy-pair-sign-of-jonah button")?.getAttribute("aria-expanded"),
+      "true",
+    );
   });
 
   it("exposes the map as a described image with noninteractive place marks", async () => {

@@ -1,0 +1,122 @@
+/* Shared wayfinding owns the same layout contract on entrances and in rooms.
+   World styles still supply their own paper, ink, and accent tokens. */
+.site-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.site-breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.site-breadcrumbs li + li::before { content: "/"; color: var(--muted); }
+.site-breadcrumbs a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.site-breadcrumbs a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; }
+.site-breadcrumbs [aria-current] { color: var(--ink); font-weight: 700; }
+.clean-location { padding-top: 0.75rem; }
+.clean:has(.clean-location) main { padding-top: 1.5rem; }
+
+.world-shell main > .wrap > .world-guide--compact {
+  position: relative;
+  top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 0.65rem 0.85rem;
+  border: 0;
+  border-block: 1px solid var(--line);
+  background: transparent;
+  box-shadow: none;
+}
+.world-shell .world-guide--compact > .wg-breadcrumb { flex: 1 1 auto; }
+.world-shell .world-guide--compact .wg-grid { display: block; order: 3; margin: 0; }
+.world-shell .world-guide--compact .wg-grid .wg-nav { display: none; }
+.world-shell .world-guide--compact .wg-nav { flex: 1 1 auto; flex-direction: row; flex-wrap: wrap; gap: 0.2rem; }
+.world-shell .world-guide--compact .wg-nav a { padding: 0.4rem 0.65rem; border: 0; border-bottom: 2px solid transparent; }
+.world-shell .world-guide--compact .wg-nav a[aria-current],
+.world-shell .world-guide--compact .wg-nav a:hover { border-bottom-color: var(--accent); background: color-mix(in srgb, var(--accent) 7%, transparent); }
+.world-shell .world-guide--compact .wg-source-disclosure { border: 0; padding: 0; }
+.world-shell .world-guide--reader { display: none; }
+.world-shell .wg-nav a { min-height: 2.75rem; }
+.world-shell .wg-nav a[aria-current="location"] { color: var(--accent); border-color: var(--accent); }
+.world-shell .wg-source-disclosure > summary { min-height: 2.75rem; align-content: center; }
+.wg-browse { margin-top: 0.5rem; border-top: 1px solid var(--line); }
+.wg-browse > summary,
+.world-related-tools > summary { min-height: 2.75rem; padding: 0.65rem 0.15rem; color: var(--accent); font-size: 0.85rem; font-weight: 700; cursor: pointer; }
+.wg-browse > summary > span { margin-left: 0.35rem; color: var(--muted); font-weight: 400; }
+.wg-browse nav { display: grid; gap: 0.25rem; max-height: 28rem; overflow-y: auto; overscroll-behavior: contain; padding: 0.25rem 0 0.75rem; }
+.wg-browse a { display: grid; gap: 0.2rem; min-height: 2.75rem; padding: 0.6rem; border-left: 2px solid transparent; }
+.wg-browse a:hover,
+.wg-browse a[aria-current] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 7%, var(--surface)); }
+.wg-browse strong { color: var(--ink); font-size: 0.88rem; line-height: 1.35; }
+.wg-browse a > span { color: var(--muted); font-size: 0.78rem; line-height: 1.45; }
+.world-guide--compact .wg-browse nav { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.world-shell .world-guide--compact > .wg-browse { order: 2; margin: 0; border: 0; }
+.world-shell .world-guide--compact > .wg-browse[open] { order: 4; flex: 1 0 100%; border-top: 1px solid var(--line); }
+.world-shell .world-continuation { min-width: 0; margin-top: 3rem; }
+.world-shell:has(.visual-story, .dothan-story) .world-continuation { display: none; }
+.world-shell .world-continuation .world-next { margin-top: 0; }
+.world-shell .world-next-label { font-family: var(--font-interface); color: var(--ink); font-size: 1.25rem; letter-spacing: 0; line-height: 1.3; border: 0; }
+.world-shell .world-next-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.world-shell .world-next-grid a { min-width: 0; padding: 1rem; }
+.world-shell .world-next-grid small { display: block; margin-bottom: 0.6rem; color: var(--accent); font-size: 0.7rem; font-weight: 700; }
+.world-shell .world-next-grid strong > span { display: inline; color: var(--accent); }
+.world-related-tools { margin-top: 0.9rem; border-block: 1px solid var(--line); }
+.world-related-tools .curiosity-compass { margin-top: 0; border-top: 0; }
+.site-footer .wrap:has(.site-footer-links) { flex-wrap: wrap; }
+.site-footer-links { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; align-items: center; }
+.site-footer .site-footer-links { flex: 1 0 100%; border-top: 1px solid var(--line); padding-top: 0.75rem; margin-top: 0.25rem; }
+.site-footer-links a { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--muted); font-size: 0.85rem; }
+.site-footer-links a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; }
+.source-world-link { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--accent); font-weight: 700; }
+.site-nav-direct > a[aria-current="location"],
+.site-nav-group a[aria-current="location"] { color: var(--site-nav-active); box-shadow: inset 0 -2px var(--site-nav-active); }
+
+@media (min-width: 1100px) {
+  .world-shell main > .wrap:has(> .world-guide--room) > .world-guide { max-height: calc(100dvh - 2.5rem); }
+}
+@media (max-width: 700px) {
+  .world-shell .world-next-grid { grid-template-columns: 1fr; }
+  .world-shell .world-next-grid a { padding: 0.85rem; }
+}
+@media (max-width: 560px) {
+  .world-shell main > .wrap > .world-guide--compact,
+  .world-shell main > .wrap > .world-guide--room {
+    position: sticky;
+    top: max(0.45rem, env(safe-area-inset-top));
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    z-index: 35;
+  }
+  .world-shell .world-guide .wg-grid,
+  .world-shell .world-guide .wg-breadcrumb,
+  .world-shell .world-guide .wg-browse { display: none; }
+  .world-shell .world-guide .wg-mobile-menu > summary { border: 1px solid var(--line); background: color-mix(in srgb, var(--accent) 6%, var(--surface)); }
+  .world-shell .world-guide .wg-mobile-menu > summary :is(span, strong) { color: var(--ink); }
+  .world-shell .world-guide .wg-mobile-menu summary strong { white-space: normal; overflow-wrap: anywhere; }
+  .world-shell .world-guide .wg-worlds-link { padding-inline: 0.65rem; font-size: 0.72rem; }
+}
+
+
+.study-page-header { margin-bottom: 2rem; }
+.study-page-header h1 { margin: 0.5rem 0 1rem; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; text-wrap: balance; overflow-wrap: anywhere; }
+.study-page-header .lede { max-width: 42rem; }
+.study-page-hint { max-width: 42rem; color: var(--muted); font-size: 0.95rem; line-height: 1.6; }

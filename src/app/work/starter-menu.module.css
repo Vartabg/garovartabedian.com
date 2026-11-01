@@ -1,0 +1,25 @@
+.menu { margin: 2.5rem 0 3.5rem; scroll-margin-top: 5rem; }
+.menu h2 { margin-bottom: .75rem; }
+.intro { max-width: 58ch; color: var(--muted-ink); }
+.offers { display: grid; gap: 1rem; margin: 1.5rem 0; }
+.card { min-width: 0; padding: 1.3rem 1.5rem; border: 1px solid var(--line); border-radius: .7rem; background: var(--surface); scroll-margin-top: 5rem; }
+.card h3 { margin: .4rem 0 .65rem; font-size: 1.5rem; line-height: 1.2; }
+.description { font-size: .95rem; margin-bottom: .5rem; }
+.device { margin: 0; color: var(--muted-ink); font-size: .75rem; font-weight: 700; letter-spacing: .025em; }
+.card > a, .packageActions > a { min-height: 44px; white-space: normal; text-align: center; }
+.card > a { margin-top: .5rem; }
+.packageActions { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.25rem 0; }
+.price { margin: 0; font-size: 1.6rem; font-weight: 700; line-height: 1.2; }
+.price span { display: block; margin-top: .35rem; font-size: .8rem; font-weight: 400; color: var(--muted-ink); }
+.details { font-size: .85rem; }
+.details summary { cursor: pointer; min-height: 44px; display: list-item; align-content: center; width: fit-content; padding: .5rem .25rem; font-weight: 600; }
+.details summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.details ul { padding-left: 1.2rem; margin: .5rem 0 .75rem; }
+.details li { margin-bottom: .35rem; }
+.details p { color: var(--muted-ink); margin: 0; }
+.nextStep { font-size: .9rem; color: var(--muted-ink); }
+@media (max-width: 600px) {
+  .card { padding: 1.15rem; }
+  .packageActions { align-items: stretch; flex-direction: column; }
+}
+@media (forced-colors: active) { .card { border-color: CanvasText; } }

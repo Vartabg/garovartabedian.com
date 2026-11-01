@@ -160,7 +160,7 @@ export function rankPlaces(catalog: FindPlace[], query: string, limit = PLACE_CA
     .filter((row) => row.score > 0)
     .sort(
       (a, b) =>
-        b.score - a.score || a.place.title.localeCompare(b.place.title),
+        b.score - a.score || Number(b.place.kind === "text") - Number(a.place.kind === "text") || a.place.title.localeCompare(b.place.title),
     )
     .slice(0, limit)
     .map(({ place, score }) => ({
@@ -588,7 +588,7 @@ export function parseHarmonyQuery(
   const rawTarget = match[1]?.trim().toLowerCase();
   if (!rawTarget) {
     return {
-      title: "Open Synoptic Harmony & Pericope Diffing Engine",
+      title: "Open Gospels word by word",
       href: "/jesus/harmony",
       note: "Multi-gospel alignment highlighting Triple Tradition, Q-material, and Sondergut.",
     };
@@ -637,7 +637,7 @@ export function parseHarmonyQuery(
   }
 
   return {
-    title: `Search Synoptic Harmony for “${rawTarget}”`,
+    title: `Search Gospels word by word for “${rawTarget}”`,
     href: `/jesus/harmony`,
     note: `Explore gospel pericopes and parallel accounts.`,
   };

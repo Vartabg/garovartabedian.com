@@ -1,27 +1,22 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import Link from "next/link";
+import StudyPageHeader from "@/app/_components/StudyPageHeader";
 import ResonanceClient from "./ResonanceClient";
 
 export const metadata: Metadata = {
-  title: "Conceptual Resonance Matrix · Scriptures",
+  title: "Conceptual resonance",
   description:
     "Compare similar wording across Scripture chapters, sayings of Jesus, early texts, and editorial frameworks, with explicit index coverage.",
+  alternates: { canonical: "/scriptures/resonance" },
+  openGraph: { title: "Conceptual resonance", url: "/scriptures/resonance", images: ["/worlds/scriptures.jpg"] },
 };
 
 export default function ResonancePage() {
   return (
     <div className="scr-resonance-page">
-      <p className="kicker">
-        <Link href="/scriptures">Scriptures</Link> · <Link href="/scriptures/search">Search</Link>
-      </p>
-      <h1>Conceptual Resonance Matrix</h1>
-      <p className="lede">
-        Explore theological and philosophical themes across the indexed collections.
-        Search runs on your device and returns links to the hosted sources for examination.
-      </p>
+      <StudyPageHeader path="/scriptures/resonance" action="Enter a theme or try an example. Search runs on your device; open a result to read its source and judge the connection." />
 
-      <Suspense fallback={<p className="scr-empty">Loading Resonance Matrix…</p>}>
+      <Suspense fallback={<p className="scr-empty">Loading search…</p>}>
         <ResonanceClient />
       </Suspense>
     </div>

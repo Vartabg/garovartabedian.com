@@ -464,7 +464,8 @@
     "reviewStatus": "agent-reviewed",
     "reviewer": "Codex",
     "rubricVersion": "parallels-v1.0",
-    "reviewedContentHash": "bd915ad7581008468e3301aa9eafd61c97bd8cbf204a1cdcb9eb7283d98df1e6",
+    "contentHashScope": "witnesses-slots-edges-reception-v1",
+    "reviewedContentHash": "9c182b0a939c4995469587f7bd80243a422d83545c59eac8b647bb65401ea27a",
     "reviewedAt": "2026-09-04T15:12:28.000Z",
     "reviewScope": "Jubilees quotations and the ram-offering summary corrected against the 1913 printed text; existing narrative alignment, rights, and reception separation retained. See docs/jubilees-source-review.md."
   }

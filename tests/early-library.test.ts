@@ -24,7 +24,7 @@ test("unknown sections, path traversal and reference editions cannot expose data
 });
 
 test("Find can discover editions without adding corpus text to its catalog", () => {
-  assert.equal(LIBRARY_FIND.length, 122);
+  assert.equal(LIBRARY_FIND.length, 123);
   const groups = rankFindQuery("Philo", [], null);
   assert.ok(groups.some(group => group.id === "library" && group.items.some(item => item.href.startsWith("/early/library/philo-"))));
 });

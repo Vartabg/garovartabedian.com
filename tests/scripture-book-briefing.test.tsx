@@ -134,13 +134,32 @@ test("every briefing has resolvable sources, verse references, and complete chap
       item.snags.every((snag) => snag.snag?.trim() && snag.help?.trim()),
       `${item.book} reading snags need visible labels and help`,
     );
-    const maxChapters = meta.chapters;
-    assert.equal(covered.length, maxChapters, `${item.book} shape should cover all chapters`);
-    assert.equal(new Set(covered).size, maxChapters, `${item.book} shape should not overlap`);
+    // A complete edition can differ from both the canon maximum and the first
+    // hosted text: Joel follows WEB's three chapters; Daniel covers DRB's fourteen.
+    const editionCounts = textFilesFor(item.book).map((text) => text.chapters.length);
+    const chapterCount = covered.length;
+    assert.ok(
+      editionCounts.includes(chapterCount),
+      `${item.book} shape should cover a complete hosted edition (${editionCounts.join(", ")})`,
+    );
+    assert.equal(new Set(covered).size, chapterCount, `${item.book} shape should not overlap`);
     assert.deepEqual(
       [...covered].sort((a, b) => a - b),
-      Array.from({ length: maxChapters }, (_, index) => index + 1),
+      Array.from({ length: chapterCount }, (_, index) => index + 1),
       `${item.book} shape should not skip chapters`,
+    );
+  }
+});
+
+test("briefing shapes retain documented edition boundaries", () => {
+  for (const [book, translation, chapters] of [["JOL", "web", 3], ["DAN", "drb", 14], ["PSA", "brenton", 151]] as const) {
+    const item = briefings.find((candidate) => candidate.book === book);
+    assert.ok(item, `${book} needs its edition-aware briefing`);
+    const text = readJson<BookText>(`public/scriptures/text/${translation}/${book}.json`);
+    assert.equal(text.chapters.length, chapters);
+    assert.deepEqual(
+      item.shape.flatMap((part) => chaptersIn(part.chapters)),
+      Array.from({ length: chapters }, (_, index) => index + 1),
     );
   }
 });

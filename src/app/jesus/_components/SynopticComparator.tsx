@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   type SynopticPericope,
@@ -38,6 +38,19 @@ export default function SynopticComparator({
   const [dimStopwords, setDimStopwords] = useState<boolean>(true);
   const [hoveredStem, setHoveredStem] = useState<string | null>(null);
   const [inspectedToken, setInspectedToken] = useState<DiffToken | null>(null);
+  // ?passage=<id> opens that passage, so other pages can link straight to it,
+  // and choosing another keeps the address in step for sharing and reloads.
+  useEffect(() => {
+    const wanted = new URLSearchParams(window.location.search).get("passage");
+    if (wanted && pericopes.some((p) => p.id === wanted)) setSelectedId(wanted);
+  }, [pericopes]);
+  const choosePericope = (id: string) => {
+    setInspectedToken(null);
+    setSelectedId(id);
+    const url = new URL(window.location.href);
+    url.searchParams.set("passage", id);
+    window.history.replaceState(window.history.state, "", url);
+  };
 
   const currentPericope = useMemo(() => {
     return pericopes.find((p) => p.id === selectedId) || pericopes[0];
@@ -69,7 +82,9 @@ export default function SynopticComparator({
       : "grid-cols-1 md:grid-cols-2";
 
   return (
-    <div className="synoptic-comparator my-8">
+    // The comparator is drawn in dark ink throughout, so it sits on its own
+    // dark panel and stays legible when the page around it is ivory.
+    <div className="synoptic-comparator my-8 rounded-xl bg-neutral-950 p-4 sm:p-6 text-neutral-200">
       {/* Category selector pills */}
       <nav
         aria-label="Synoptic pericope category filter"
@@ -85,7 +100,7 @@ export default function SynopticComparator({
                 cat === "All"
                   ? pericopes[0]
                   : pericopes.find((p) => p.category === cat);
-              if (firstInCat) setSelectedId(firstInCat.id);
+              if (firstInCat) choosePericope(firstInCat.id);
             }}
             className={`px-3 py-1.5 rounded text-xs font-mono tracking-wide transition-colors ${
               categoryFilter === cat
@@ -102,7 +117,7 @@ export default function SynopticComparator({
       <header className="bg-neutral-900/80 border border-neutral-800 rounded-xl p-5 sm:p-6 mb-6">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-4">
           <div className="flex-1">
-            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded text-xs font-mono font-medium tracking-wide bg-amber-950/40 border border-amber-800/50 text-amber-300 mb-2">
+            <div className="inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-0.5 px-2.5 py-0.5 rounded text-xs font-mono font-medium tracking-wide bg-amber-950/40 border border-amber-800/50 text-amber-300 mb-2">
               <span>{currentPericope.category}</span>
               <span>·</span>
               <span className="text-emerald-400">
@@ -114,19 +129,19 @@ export default function SynopticComparator({
             </h2>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex w-full flex-wrap items-center gap-3 lg:w-auto">
             <label htmlFor="pericope-select" className="sr-only">
               Choose parallel pericope
             </label>
             <select
               id="pericope-select"
               value={selectedId}
-              onChange={(e) => setSelectedId(e.target.value)}
-              className="bg-neutral-950 border border-neutral-700 text-neutral-200 rounded-lg px-3 py-2 text-sm font-serif focus:outline-none focus:border-amber-500"
+              onChange={(e) => choosePericope(e.target.value)}
+              className="w-full max-w-full lg:w-72 bg-neutral-950 border border-neutral-700 text-neutral-200 rounded-lg px-3 py-2 text-sm font-serif focus:outline-none focus:border-amber-500"
             >
               {filteredPericopes.map((p) => (
                 <option key={p.id} value={p.id}>
-                  {p.title} ({p.traditionLabel.split("(")[0].trim()})
+                  {p.title}
                 </option>
               ))}
             </select>
@@ -137,16 +152,19 @@ export default function SynopticComparator({
         <p className="text-neutral-300 text-sm leading-relaxed max-w-4xl font-serif italic border-l-2 border-amber-500/50 pl-4 py-1">
           {currentPericope.synopsis}
         </p>
+        <p className="mt-2 text-xs font-mono text-neutral-400">
+          Selected passage {pericopes.findIndex((p) => p.id === currentPericope.id) + 1} of {pericopes.length}.
+        </p>
 
         {/* Control toolbar */}
         <div className="mt-6 pt-4 border-t border-neutral-800/80 flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
           {/* Language toggle */}
           <div className="flex items-center gap-2">
-            <span className="text-neutral-500 uppercase">Text:</span>
-            <div className="inline-flex rounded-lg bg-neutral-950 p-0.5 border border-neutral-800">
+            <span className="shrink-0 whitespace-nowrap text-neutral-400 uppercase">Text:</span>
+            <div className="inline-flex flex-wrap rounded-lg bg-neutral-950 p-0.5 border border-neutral-800">
               <button
                 type="button"
-                onClick={() => setLanguage("en")}
+                onClick={() => { setInspectedToken(null); setLanguage("en"); }}
                 className={`px-3 py-1 rounded text-xs transition-colors ${
                   language === "en"
                     ? "bg-neutral-800 text-amber-200 font-medium"
@@ -157,7 +175,7 @@ export default function SynopticComparator({
               </button>
               <button
                 type="button"
-                onClick={() => setLanguage("el")}
+                onClick={() => { setInspectedToken(null); setLanguage("el"); }}
                 className={`px-3 py-1 rounded text-xs transition-colors ${
                   language === "el"
                     ? "bg-neutral-800 text-amber-200 font-medium"
@@ -171,8 +189,8 @@ export default function SynopticComparator({
 
           {/* View mode toggle */}
           <div className="flex items-center gap-2">
-            <span className="text-neutral-500 uppercase">Diff Mode:</span>
-            <div className="inline-flex rounded-lg bg-neutral-950 p-0.5 border border-neutral-800">
+            <span className="shrink-0 whitespace-nowrap text-neutral-400 uppercase">View:</span>
+            <div className="inline-flex flex-wrap rounded-lg bg-neutral-950 p-0.5 border border-neutral-800">
               <button
                 type="button"
                 onClick={() => setViewMode("diff")}
@@ -182,7 +200,7 @@ export default function SynopticComparator({
                     : "text-neutral-400 hover:text-white"
                 }`}
               >
-                Full Synoptic Diff
+                Word comparison
               </button>
               <button
                 type="button"
@@ -193,7 +211,7 @@ export default function SynopticComparator({
                     : "text-neutral-400 hover:text-white"
                 }`}
               >
-                Verbatim Runs Only
+                Matching sequences only
               </button>
               <button
                 type="button"
@@ -204,7 +222,7 @@ export default function SynopticComparator({
                     : "text-neutral-400 hover:text-white"
                 }`}
               >
-                Clean Text
+                Clean text
               </button>
             </div>
           </div>
@@ -215,10 +233,12 @@ export default function SynopticComparator({
               <input
                 type="checkbox"
                 checked={dimStopwords}
-                onChange={(e) => setDimStopwords(e.target.checked)}
+                onChange={(e) => { setInspectedToken(null); setDimStopwords(e.target.checked); }}
                 className="rounded border-neutral-700 bg-neutral-900 text-amber-500 focus:ring-amber-500"
               />
-              <span>Dim function words</span>
+              <span title="Dimmed function words are left out of the vocabulary percentages and Jaccard scores, but still count toward matching sequences.">
+                Dim function words
+              </span>
             </label>
           </div>
         </div>
@@ -226,28 +246,28 @@ export default function SynopticComparator({
         {/* Legend */}
         {viewMode !== "clean" && (
           <div className="mt-4 pt-3 border-t border-neutral-800/50 flex flex-wrap items-center gap-4 text-xs font-mono text-neutral-400">
-            <span className="text-neutral-500 uppercase tracking-wider">
+            <span className="text-neutral-400 uppercase tracking-wider">
               Legend:
             </span>
             <span className="inline-flex items-center gap-1.5">
               <span className="w-3 h-3 rounded bg-emerald-500/20 border border-emerald-500/50" />
-              <span className="text-emerald-300">
-                Triple / All Tradition ({diffResult.sharedAllVocabulary.length} stems)
+              <span className="text-emerald-300 break-words">
+                In all displayed accounts ({diffResult.sharedAllVocabulary.length} {language === "el" ? "lemmas" : "stems"})
               </span>
             </span>
             <span className="inline-flex items-center gap-1.5">
               <span className="w-3 h-3 rounded bg-sky-500/20 border border-sky-500/50" />
-              <span className="text-sky-300">Double / Shared Pair (Q)</span>
+              <span className="text-sky-300 break-words">In some displayed accounts</span>
             </span>
             <span className="inline-flex items-center gap-1.5">
               <span className="w-3 h-3 rounded bg-amber-500/20 border border-amber-500/50" />
-              <span className="text-amber-300">Sondergut (Unique to Gospel)</span>
+              <span className="text-amber-300 break-words">Only in this account</span>
             </span>
             {viewMode === "runs" && (
               <span className="inline-flex items-center gap-1.5">
                 <span className="w-3 h-3 rounded bg-cyan-500/40 border border-cyan-400 underline decoration-cyan-400" />
-                <span className="text-cyan-200 font-semibold">
-                  Multi-word Verbatim Run
+                <span className="text-cyan-200 font-semibold break-words">
+                  Matching sequence (2+ tokens)
                 </span>
               </span>
             )}
@@ -256,6 +276,9 @@ export default function SynopticComparator({
       </header>
 
       {/* Statistical Dashboard Cards */}
+      <p className="text-xs font-mono text-neutral-400 mb-2">
+        Percentages apply within the current passage only.
+      </p>
       <section
         aria-label="Synoptic statistical metrics"
         className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 font-mono text-xs"
@@ -274,25 +297,25 @@ export default function SynopticComparator({
                 <span className="text-neutral-300 font-semibold text-sm font-serif">
                   {GOSPEL_NAMES[code]}
                 </span>
-                <span className="text-neutral-500 text-[11px]">{w.totalWords} wds</span>
+                <span className="text-neutral-400 text-[11px]">{w.totalWords} wds</span>
               </div>
               <div className="space-y-1 text-neutral-400">
-                <div className="flex justify-between">
-                  <span>Universal:</span>
+                <div className="flex flex-wrap justify-between gap-x-2">
+                  <span>All accounts:</span>
                   <span className="text-emerald-400 font-medium">
                     {universalPct}%
                   </span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Sondergut:</span>
+                <div className="flex flex-wrap justify-between gap-x-2">
+                  <span>Only here:</span>
                   <span className="text-amber-400 font-medium">
                     {sondergutPct}%
                   </span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Verbatim run:</span>
+                <div className="flex flex-wrap justify-between gap-x-2">
+                  <span>In sequences:</span>
                   <span className="text-cyan-400 font-medium">
-                    {w.verbatimRunCount} wds
+                    {w.verbatimRunCount} words
                   </span>
                 </div>
               </div>
@@ -307,8 +330,8 @@ export default function SynopticComparator({
           aria-label="Pairwise vocabulary similarity"
           className="bg-neutral-950/70 border border-neutral-800/80 rounded-lg px-4 py-2.5 mb-6 flex flex-wrap items-center gap-4 text-xs font-mono"
         >
-          <span className="text-neutral-500 uppercase">
-            Pairwise Jaccard Overlap:
+          <span className="text-neutral-400 uppercase">
+            Pairwise shared vocabulary (Jaccard, this passage):
           </span>
           {Object.entries(diffResult.pairwiseOverlap).map(([pair, score]) => (
             <span key={pair} className="text-neutral-300">
@@ -344,21 +367,21 @@ export default function SynopticComparator({
                 }`}
               >
                 {inspectedToken.classification === "all"
-                  ? "Universal Agreement"
+                  ? "In all displayed accounts"
                   : inspectedToken.classification === "shared"
-                  ? `Shared with ${inspectedToken.sharedWith.join(", ")}`
+                  ? `In some displayed accounts (${inspectedToken.sharedWith.join(", ")})`
                   : inspectedToken.classification === "unique"
-                  ? "Unique Sondergut"
-                  : "Function Word"}
+                  ? "Only in this account"
+                  : "Function word"}
               </span>
               {inspectedToken.isVerbatimRun && (
                 <span className="px-2 py-0.5 rounded text-[10px] uppercase font-bold bg-cyan-950 text-cyan-300 border border-cyan-500/50">
-                  Verbatim Run
+                  Matching sequence
                 </span>
               )}
             </div>
             <div className="text-xs text-neutral-400 flex flex-wrap gap-x-4 gap-y-1">
-              <span>Stem: <span className="text-neutral-200">{inspectedToken.stem || "—"}</span></span>
+              <span>{language === "el" ? "Stem (normalized Greek lemma)" : "Stem (normalized English)"}: <span className="text-neutral-200">{inspectedToken.stem || "—"}</span></span>
               {inspectedToken.lemma && (
                 <span>Lemma: <span className="text-amber-300 font-serif">{inspectedToken.lemma}</span></span>
               )}
@@ -415,10 +438,17 @@ export default function SynopticComparator({
               </header>
 
               {/* Column Verses Content */}
-              <div className="p-4 space-y-3 font-serif text-sm leading-relaxed overflow-y-auto max-h-[680px] flex-1">
+              {/* Focusable so a keyboard can scroll a long passage. */}
+              <div
+                className="p-4 space-y-3 font-serif text-sm leading-relaxed overflow-y-auto max-h-[680px] flex-1"
+                tabIndex={0}
+                role="region"
+                aria-label={`${GOSPEL_NAMES[code]}, ${w.ref}`}
+              >
                 {renderWitnessTokens(
                   w.tokens,
                   viewMode,
+                  language,
                   hoveredStem,
                   setHoveredStem,
                   setInspectedToken,
@@ -432,13 +462,20 @@ export default function SynopticComparator({
       {/* Academic Explanatory Note */}
       <footer className="mt-12 pt-6 border-t border-neutral-800/80 text-xs text-neutral-400 leading-relaxed font-serif">
         <h4 className="font-mono uppercase tracking-wider text-neutral-300 text-[11px] mb-2">
-          Methodological Framework: The Synoptic Problem & Literary Dependence
+          What this comparison shows
         </h4>
         <p className="mb-2">
-          The Synoptic Problem examines why Matthew, Mark, and Luke share extensive verbatim agreements in Greek (often word-for-word in identical order), while diverging in structure and carrying independent material (<em>Sondergut</em>).
+          This tool compares {pericopes.length} selected passages. Highlights mark normalized vocabulary shared across all displayed accounts, shared by some accounts, or found only in one account within this comparison.
+        </p>
+        <p className="mb-2">
+          A matching sequence contains at least two consecutive words with matching normalized forms. English comparison ignores case and punctuation and removes some final “s” endings. Greek comparison uses lemmas (dictionary forms), falling back to the written word if a lemma is absent, and ignores accents and case. Different word forms can therefore match. The sequence count is the number of words belonging to these runs, including function words. Percentages and Jaccard scores cover only the witnesses displayed in the current passage; dimmed function words are left out of those scores but still count toward matching sequences.
         </p>
         <p>
-          The prevailing scholarly consensus (the Two-Source Hypothesis) posits that Mark was the earliest Gospel used as a narrative blueprint by Matthew and Luke (accounting for <strong>Triple Tradition</strong>), while Matthew and Luke independently drew upon a lost sayings collection termed <strong>Q</strong> (accounting for <strong>Double Tradition</strong>). This engine verifies these literary relationships mathematically through deterministic word-level alignment across the entire canonical text.
+          These textual measures alone cannot establish literary dependence, chronological order, or the existence of Q. For hypotheses about how the Gospels relate, see the{" "}
+          <Link href="/jesus/dossier?preset=synoptic-problem-q" className="text-amber-300 hover:underline">
+            synoptic problem research worksheet
+          </Link>
+          .
         </p>
       </footer>
     </div>
@@ -449,6 +486,7 @@ export default function SynopticComparator({
 function renderWitnessTokens(
   tokens: DiffToken[],
   viewMode: ViewMode,
+  language: "en" | "el",
   hoveredStem: string | null,
   setHoveredStem: (stem: string | null) => void,
   setInspectedToken: (token: DiffToken) => void,
@@ -485,7 +523,7 @@ function renderWitnessTokens(
               styleClass =
                 "bg-amber-950/50 text-amber-200 border-b border-amber-600/50";
             } else if (t.classification === "stopword") {
-              styleClass = "text-neutral-500";
+              styleClass = "text-neutral-400";
             }
           } else if (viewMode === "runs") {
             if (t.isVerbatimRun) {
@@ -509,12 +547,12 @@ function renderWitnessTokens(
               className={`inline-block mx-0.5 px-0.5 rounded cursor-pointer transition-colors ${styleClass}`}
               title={
                 t.classification === "all"
-                  ? "Triple / All Tradition"
+                  ? `Word shared across all displayed accounts (normalized ${language === "el" ? "Greek lemma" : "English stem"}: ${t.stem || "—"})`
                   : t.classification === "shared"
-                  ? `Shared with ${t.sharedWith.join(", ")}`
+                  ? `Word shared with ${t.sharedWith.join(", ")} in this passage`
                   : t.classification === "unique"
-                  ? "Unique Sondergut"
-                  : undefined
+                  ? "Word found only in this account in this passage"
+                  : "Function word: left out of vocabulary scores, still counts toward matching sequences"
               }
             >
               {t.raw}{" "}

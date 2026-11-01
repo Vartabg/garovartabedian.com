@@ -1,3 +1,4 @@
+import ResearchAudio from "../_components/ResearchAudio";
 import Link from "next/link";
 import type { EvidenceData, EvidenceLayerId } from "@/lib/evidence/types";
 import type { Claim } from "@/lib/evidence/claims";
@@ -68,6 +69,8 @@ export default function EvidenceHome({
           },
         ]}
       />
+
+      <ResearchAudio id="evidence-method" />
 
       <section
         className="hw-claim-lab"

@@ -41,7 +41,13 @@ test("Find leads to the reading path; reading and Trace make no assessment reque
   await page.getByRole("button", { name: "Return to reading" }).click();
   await page.getByRole("button", { name: "Find", exact: true }).click();
   await page.getByRole("searchbox", { name: "Find", exact: true }).fill("Isaiah Clement");
-  await expect(page.getByText("Isaiah and 1 Clement — Reading path", { exact: true })).toBeVisible();
+  const readingPath = page.getByRole("option").filter({ hasText: "Wounds, healing, and humility" });
+  await expect(readingPath).toBeVisible();
+  await expect(readingPath).toHaveAttribute("href", route);
+  await readingPath.click();
+  await expect(page.getByRole("dialog", { name: "Find", exact: true })).toBeHidden();
+  await expect(page).toHaveURL(new RegExp(`${route}$`));
+  await expect(page.getByRole("heading", { name: "Wounds, healing, and humility", exact: true })).toBeVisible();
 });
 
 for (const width of [320, 390, 1440]) test(`source notes restore the exact reading position at ${width}px`, async ({ page }) => {
@@ -73,10 +79,12 @@ test("hosted text is unchanged; preferences persist while Read remains the defau
   await expect(page.locator("#isaiah-5 [data-source-segment]")).toHaveText(journey.scripture[4]);
   await page.getByText("Read all of Isaiah 53 · World English Bible", { exact: true }).click();
   expect(await page.locator("[data-context-verse]").allTextContents()).toEqual(journey.scripture);
-  await page.getByText("Reading appearance", { exact: true }).click();
-  await page.locator("article").getByLabel("Text size", { exact: true }).selectOption("largest");
-  await page.locator("article").getByLabel("Page theme", { exact: true }).selectOption("dark");
-  await page.locator("article").getByLabel("Monochrome", { exact: true }).check();
+  await page.getByRole("button", { name: "Open reading and accessibility settings" }).click();
+  const panel = page.getByRole("dialog", { name: "Reading & accessibility" });
+  await panel.getByLabel("Text size", { exact: true }).selectOption("largest");
+  await panel.getByLabel("Page theme", { exact: true }).selectOption("dark");
+  await panel.getByLabel("Monochrome", { exact: true }).check();
+  await page.getByRole("button", { name: "Close accessibility settings" }).click();
   await page.getByRole("button", { name: "Trace connections" }).click();
   const before = await page.locator('[data-source-segment]').first().evaluate(el => getComputedStyle(el.parentElement!).fontSize);
   expect(parseFloat(before)).toBeGreaterThanOrEqual(26);
@@ -150,16 +158,20 @@ test("themes, monochrome and the open note have no automated WCAG A/AA violation
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(route);
   await page.addScriptTag({ path: moduleRequire.resolve("axe-core/axe.min.js") });
-  await page.getByText("Reading appearance", { exact: true }).click();
+  const appearance = async (choose: (panel: ReturnType<typeof page.getByRole>) => Promise<unknown>) => {
+    await page.getByRole("button", { name: "Open reading and accessibility settings" }).click();
+    await choose(page.getByRole("dialog", { name: "Reading & accessibility" }));
+    await page.getByRole("button", { name: "Close accessibility settings" }).click();
+  };
   for (const theme of ["light", "warm", "dark"]) {
-    await page.locator("article").getByLabel("Page theme", { exact: true }).selectOption(theme);
+    await appearance(panel => panel.getByLabel("Page theme", { exact: true }).selectOption(theme));
     const violations = await page.evaluate(async () => {
       const axe = (window as unknown as { axe: { run: (target: string, options: unknown) => Promise<{ violations: { id: string; nodes: unknown[] }[] }> } }).axe;
       return (await axe.run("article[data-mode]", { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] } })).violations;
     });
     expect(violations).toEqual([]);
   }
-  await page.locator("article").getByLabel("Monochrome", { exact: true }).check();
+  await appearance(panel => panel.getByLabel("Monochrome", { exact: true }).check());
   await page.getByRole("link", { name: "Source note: Isaiah 53:5 · World English Bible", exact: true }).click();
   const violations = await page.evaluate(async () => (await (window as unknown as { axe: { run: (target: string, options: unknown) => Promise<{ violations: unknown[] }> } }).axe.run("dialog", { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] } })).violations);
   expect(violations).toEqual([]);

@@ -1,0 +1,424 @@
+[
+  {
+    "id": "two-builders",
+    "title": "The two builders",
+    "kind": "story",
+    "snodgrass": "The Two Builders",
+    "trench": [],
+    "accounts": [
+      { "setting": "MAT 5:1-2", "ref": "MAT 7:24-27" },
+      { "setting": "LUK 6:17-20", "ref": "LUK 6:47-49" }
+    ]
+  },
+  {
+    "id": "new-patch-new-wine",
+    "title": "New patch and new wine",
+    "kind": "saying",
+    "snodgrass": null,
+    "trench": [],
+    "thomas": [{"saying": 47, "note": "Wine and patch"}],
+    "accounts": [
+      { "setting": "MAT 9:14-15", "ref": "MAT 9:16-17" },
+      { "setting": "MRK 2:18-20", "ref": "MRK 2:21-22" },
+      { "setting": "LUK 5:33-35", "ref": "LUK 5:36-39", "called": "LUK 5:36" }
+    ]
+  },
+  {
+    "id": "divided-house",
+    "title": "A divided house and the strong man",
+    "kind": "saying",
+    "snodgrass": null,
+    "trench": [],
+    "thomas": [{"saying": 35, "note": "The strong man"}],
+    "accounts": [
+      { "setting": "MAT 12:22-24", "ref": "MAT 12:25-29" },
+      { "setting": "MRK 3:22", "ref": "MRK 3:23-27", "called": "MRK 3:23" },
+      { "setting": "LUK 11:14-16", "ref": "LUK 11:17-22" }
+    ]
+  },
+  {
+    "id": "sower",
+    "title": "The sower",
+    "kind": "story",
+    "snodgrass": "The Parable of the Sower and the Purpose of Parables",
+    "trench": ["The Sower"],
+    "thomas": [{"saying": 9}],
+    "accounts": [
+      { "setting": "MAT 13:1-2", "ref": "MAT 13:3-9", "explanation": "MAT 13:18-23", "called": "MAT 13:3" },
+      { "setting": "MRK 4:1-2", "ref": "MRK 4:3-9", "explanation": "MRK 4:13-20", "called": "MRK 4:2" },
+      { "setting": "LUK 8:4", "ref": "LUK 8:5-8", "explanation": "LUK 8:11-15", "called": "LUK 8:4" }
+    ]
+  },
+  {
+    "id": "weeds-among-wheat",
+    "title": "The weeds among the wheat",
+    "kind": "story",
+    "snodgrass": "The Wheat and the Weeds",
+    "trench": ["The Tares"],
+    "thomas": [{"saying": 57}],
+    "accounts": [
+      { "ref": "MAT 13:24-30", "explanation": "MAT 13:36-43", "called": "MAT 13:24" }
+    ]
+  },
+  {
+    "id": "mustard-seed",
+    "title": "The mustard seed",
+    "kind": "story",
+    "snodgrass": "The Mustard Seed",
+    "trench": ["The Mustard-Seed"],
+    "thomas": [{"saying": 20}],
+    "accounts": [
+      { "ref": "MAT 13:31-32", "called": "MAT 13:31" },
+      { "ref": "MRK 4:30-32", "called": "MRK 4:30" },
+      { "ref": "LUK 13:18-19" }
+    ]
+  },
+  {
+    "id": "leaven",
+    "title": "The leaven",
+    "kind": "story",
+    "snodgrass": "The Leaven",
+    "trench": ["The Leaven"],
+    "thomas": [{"saying": 96}],
+    "accounts": [
+      { "ref": "MAT 13:33", "called": "MAT 13:33" },
+      { "ref": "LUK 13:20-21" }
+    ]
+  },
+  {
+    "id": "hidden-treasure",
+    "title": "The hidden treasure",
+    "kind": "story",
+    "snodgrass": "The Treasure",
+    "trench": ["The Hid Treasure"],
+    "thomas": [{"saying": 109}],
+    "accounts": [
+      { "ref": "MAT 13:44", "called": "MAT 13:53" }
+    ]
+  },
+  {
+    "id": "pearl",
+    "title": "The pearl",
+    "kind": "story",
+    "snodgrass": "The Pearl",
+    "trench": ["The Pearl of Great Price"],
+    "thomas": [{"saying": 76}],
+    "accounts": [
+      { "ref": "MAT 13:45-46", "called": "MAT 13:53" }
+    ]
+  },
+  {
+    "id": "net",
+    "title": "The net",
+    "kind": "story",
+    "snodgrass": "The Net",
+    "trench": ["The Draw-Net"],
+    "thomas": [{"saying": 8, "note": "Fisherman and net"}],
+    "accounts": [
+      { "ref": "MAT 13:47-48", "explanation": "MAT 13:49-50", "called": "MAT 13:53" }
+    ]
+  },
+  {
+    "id": "blind-guide",
+    "title": "The blind guiding the blind",
+    "kind": "saying",
+    "snodgrass": null,
+    "trench": [],
+    "thomas": [{"saying": 34}],
+    "accounts": [
+      { "setting": "MAT 15:12", "ref": "MAT 15:14" },
+      { "ref": "LUK 6:39", "called": "LUK 6:39" }
+    ]
+  },
+  {
+    "id": "what-defiles",
+    "title": "What makes a person unclean",
+    "kind": "saying",
+    "snodgrass": null,
+    "trench": [],
+    "thomas": [{"saying": 14, "note": "What enters and leaves the mouth"}],
+    "accounts": [
+      { "setting": "MAT 15:1-2", "ref": "MAT 15:10-11", "explanation": "MAT 15:15-20", "called": "MAT 15:15" },
+      { "setting": "MRK 7:1-5", "ref": "MRK 7:14-15", "explanation": "MRK 7:17-23", "called": "MRK 7:17" }
+    ]
+  },
+  {
+    "id": "lost-sheep",
+    "title": "The lost sheep",
+    "kind": "story",
+    "snodgrass": "The Lost Sheep",
+    "trench": ["The Lost Sheep"],
+    "thomas": [{"saying": 107}],
+    "accounts": [
+      { "setting": "MAT 18:1", "ref": "MAT 18:12-14" },
+      { "setting": "LUK 15:1-3", "ref": "LUK 15:4-7", "called": "LUK 15:3" }
+    ]
+  },
+  {
+    "id": "unforgiving-servant",
+    "title": "The unforgiving servant",
+    "kind": "story",
+    "snodgrass": "The Unforgiving Servant",
+    "trench": ["The Unmerciful Servant"],
+    "accounts": [
+      { "setting": "MAT 18:21-22", "ref": "MAT 18:23-35" }
+    ]
+  },
+  {
+    "id": "workers-in-vineyard",
+    "title": "The workers in the vineyard",
+    "kind": "story",
+    "snodgrass": "The Workers in the Vineyard",
+    "trench": ["The Labourers in the Vineyard"],
+    "thomas": [{"saying": 4, "note": "Related saying: the first becoming last, Matthew 20:16"}],
+    "accounts": [
+      { "ref": "MAT 20:1-16" }
+    ]
+  },
+  {
+    "id": "two-sons",
+    "title": "The two sons",
+    "kind": "story",
+    "snodgrass": "The Two Sons",
+    "trench": ["The Two Sons"],
+    "accounts": [
+      { "setting": "MAT 21:23", "ref": "MAT 21:28-32" }
+    ]
+  },
+  {
+    "id": "wicked-tenants",
+    "title": "The wicked tenants",
+    "kind": "story",
+    "snodgrass": "The Wicked Tenants",
+    "trench": ["The Wicked Husbandmen"],
+    "thomas": [{"saying": 65, "note": "The tenants"}, {"saying": 66, "note": "The rejected stone that follows: Matthew 21:42, Mark 12:10–11, Luke 20:17"}],
+    "accounts": [
+      { "setting": "MAT 21:23", "ref": "MAT 21:33-46", "called": "MAT 21:33" },
+      { "setting": "MRK 11:27", "ref": "MRK 12:1-12", "called": "MRK 12:1" },
+      { "setting": "LUK 20:1", "ref": "LUK 20:9-19", "called": "LUK 20:9" }
+    ]
+  },
+  {
+    "id": "wedding-banquet",
+    "title": "The wedding banquet and the great supper",
+    "kind": "story",
+    "snodgrass": "The Wedding Banquet and the Feast",
+    "trench": ["The Marriage of the King's Son", "The Great Supper"],
+    "thomas": [{"saying": 64, "note": "The dinner invitation"}, {"saying": 75, "note": "Related saying: a contrast involving the many, Matthew 22:14"}],
+    "accounts": [
+      { "setting": "MAT 21:23", "ref": "MAT 22:1-14", "called": "MAT 22:1" },
+      { "setting": "LUK 14:1", "ref": "LUK 14:15-24" }
+    ]
+  },
+  {
+    "id": "budding-fig-tree",
+    "title": "The budding fig tree",
+    "kind": "saying",
+    "snodgrass": null,
+    "trench": [],
+    "accounts": [
+      { "setting": "MAT 24:3", "ref": "MAT 24:32-35", "called": "MAT 24:32" },
+      { "setting": "MRK 13:3-4", "ref": "MRK 13:28-31", "called": "MRK 13:28" },
+      { "setting": "LUK 21:5-7", "ref": "LUK 21:29-33", "called": "LUK 21:29" }
+    ]
+  },
+  {
+    "id": "watchful-servants",
+    "title": "The watchful servants",
+    "kind": "saying",
+    "snodgrass": null,
+    "trench": [],
+    "thomas": [{"saying": 21, "note": "Related saying: the thief, Matthew 24:43 and Luke 12:39"}, {"saying": 103, "note": "Related saying: the thief, Matthew 24:43 and Luke 12:39"}],
+    "accounts": [
+      { "setting": "MAT 24:3", "ref": "MAT 24:42-51" },
+      { "ref": "LUK 12:35-48", "called": "LUK 12:41" }
+    ]
+  },
+  {
+    "id": "ten-virgins",
+    "title": "The ten virgins",
+    "kind": "story",
+    "snodgrass": "The Ten Virgins",
+    "trench": ["The Ten Virgins"],
+    "thomas": [{"saying": 75, "note": "Related image: the door and wedding, Matthew 25:10"}],
+    "accounts": [
+      { "setting": "MAT 24:3", "ref": "MAT 25:1-13" }
+    ]
+  },
+  {
+    "id": "talents-and-pounds",
+    "title": "The talents and the pounds",
+    "kind": "story",
+    "snodgrass": "The Talents and the Minas",
+    "trench": ["The Talents", "The Pounds"],
+    "thomas": [{"saying": 41, "note": "Related saying: having and receiving, Matthew 25:29 and Luke 19:26"}],
+    "accounts": [
+      { "setting": "MAT 24:3", "ref": "MAT 25:14-30" },
+      { "ref": "LUK 19:11-27", "called": "LUK 19:11" }
+    ]
+  },
+  {
+    "id": "sheep-and-goats",
+    "title": "The sheep and the goats",
+    "kind": "story",
+    "snodgrass": "The Sheep and the Goats",
+    "trench": [],
+    "accounts": [
+      { "setting": "MAT 24:3", "ref": "MAT 25:31-46" }
+    ]
+  },
+  {
+    "id": "seed-growing",
+    "title": "The seed growing by itself",
+    "kind": "story",
+    "snodgrass": "The Growing Seed",
+    "trench": ["The Seed Growing Secretly"],
+    "thomas": [{"saying": 21, "note": "Related image: harvest, Mark 4:29"}],
+    "accounts": [
+      { "ref": "MRK 4:26-29", "called": "MRK 4:33" }
+    ]
+  },
+  {
+    "id": "two-debtors",
+    "title": "The two debtors",
+    "kind": "story",
+    "snodgrass": "The Two Debtors",
+    "trench": ["The Two Debtors"],
+    "accounts": [
+      { "setting": "LUK 7:36-40", "ref": "LUK 7:41-43" }
+    ]
+  },
+  {
+    "id": "good-samaritan",
+    "title": "The good Samaritan",
+    "kind": "story",
+    "snodgrass": "The Good Samaritan",
+    "trench": ["The Good Samaritan"],
+    "accounts": [
+      { "setting": "LUK 10:25-29", "ref": "LUK 10:30-37" }
+    ]
+  },
+  {
+    "id": "friend-at-midnight",
+    "title": "The friend at midnight",
+    "kind": "story",
+    "snodgrass": "The Friend at Midnight",
+    "trench": ["The Friend at Midnight"],
+    "accounts": [
+      { "setting": "LUK 11:1", "ref": "LUK 11:5-8" }
+    ]
+  },
+  {
+    "id": "rich-fool",
+    "title": "The rich fool",
+    "kind": "story",
+    "snodgrass": "The Rich Fool",
+    "trench": ["The Rich Fool"],
+    "thomas": [{"saying": 63}],
+    "accounts": [
+      { "setting": "LUK 12:13-15", "ref": "LUK 12:16-21", "called": "LUK 12:16" }
+    ]
+  },
+  {
+    "id": "barren-fig-tree",
+    "title": "The barren fig tree",
+    "kind": "story",
+    "snodgrass": "The Barren Fig Tree",
+    "trench": ["The Barren Fig-Tree"],
+    "accounts": [
+      { "setting": "LUK 13:1", "ref": "LUK 13:6-9", "called": "LUK 13:6" }
+    ]
+  },
+  {
+    "id": "places-at-table",
+    "title": "Places at the table",
+    "kind": "saying",
+    "snodgrass": null,
+    "trench": [],
+    "accounts": [
+      { "setting": "LUK 14:1", "ref": "LUK 14:7-11", "called": "LUK 14:7" }
+    ]
+  },
+  {
+    "id": "tower-and-king",
+    "title": "The tower builder and the warring king",
+    "kind": "story",
+    "snodgrass": "The Tower Builder and the Warring King",
+    "trench": [],
+    "thomas": [{"saying": 98, "note": "Related story: testing one’s ability, Luke 14:28–32"}],
+    "accounts": [
+      { "setting": "LUK 14:25", "ref": "LUK 14:28-32" }
+    ]
+  },
+  {
+    "id": "lost-coin",
+    "title": "The lost coin",
+    "kind": "story",
+    "snodgrass": "The Lost Coin",
+    "trench": ["The Lost Piece of Money"],
+    "accounts": [
+      { "setting": "LUK 15:1-3", "ref": "LUK 15:8-10", "called": "LUK 15:3" }
+    ]
+  },
+  {
+    "id": "prodigal-son",
+    "title": "The prodigal son",
+    "kind": "story",
+    "snodgrass": "The Compassionate Father and His Two Lost Sons",
+    "trench": ["The Prodigal Son"],
+    "accounts": [
+      { "setting": "LUK 15:1-3", "ref": "LUK 15:11-32", "called": "LUK 15:3" }
+    ]
+  },
+  {
+    "id": "unjust-steward",
+    "title": "The unjust steward",
+    "kind": "story",
+    "snodgrass": "The Unjust Steward",
+    "trench": ["The Unjust Steward"],
+    "thomas": [{"saying": 47, "note": "Related saying: two masters, Luke 16:13"}],
+    "accounts": [
+      { "ref": "LUK 16:1-13" }
+    ]
+  },
+  {
+    "id": "rich-man-and-lazarus",
+    "title": "The rich man and Lazarus",
+    "kind": "story",
+    "snodgrass": "The Rich Man and Lazarus",
+    "trench": ["The Rich Man and Lazarus"],
+    "accounts": [
+      { "setting": "LUK 16:14-15", "ref": "LUK 16:19-31" }
+    ]
+  },
+  {
+    "id": "unprofitable-servants",
+    "title": "The unprofitable servants",
+    "kind": "story",
+    "snodgrass": null,
+    "trench": ["Unprofitable Servants"],
+    "accounts": [
+      { "setting": "LUK 17:5", "ref": "LUK 17:7-10" }
+    ]
+  },
+  {
+    "id": "unjust-judge",
+    "title": "The unjust judge",
+    "kind": "story",
+    "snodgrass": "The Unjust Judge",
+    "trench": ["The Unjust Judge"],
+    "accounts": [
+      { "ref": "LUK 18:1-8", "called": "LUK 18:1" }
+    ]
+  },
+  {
+    "id": "pharisee-and-tax-collector",
+    "title": "The Pharisee and the tax collector",
+    "kind": "story",
+    "snodgrass": "The Pharisee and the Tax Collector",
+    "trench": ["The Pharisee and the Publican"],
+    "accounts": [
+      { "ref": "LUK 18:9-14", "called": "LUK 18:9" }
+    ]
+  }
+]

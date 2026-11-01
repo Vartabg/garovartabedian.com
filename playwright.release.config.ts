@@ -5,6 +5,8 @@ import base from "./playwright.config";
 // project without waiting for a local browser process to exit.
 export default defineConfig({
   ...base,
+  // Keep failure evidence outside disposable release checkouts when requested.
+  outputDir: process.env.RELEASE_TEST_OUTPUT_DIR ?? "test-results",
   globalTimeout: 20 * 60 * 1000,
   use: {
     ...base.use,

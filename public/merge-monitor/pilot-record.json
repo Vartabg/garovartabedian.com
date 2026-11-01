@@ -1,0 +1,15 @@
+{
+  "kind": "curated-pilot-summary",
+  "project": "Merge Monitor",
+  "date": "2026-09-11",
+  "provenance": "Summary of docs/pilot/board-handoff.md and the original local board records. This is not a raw transcript or a new run.",
+  "walkthrough": "https://www.linkedin.com/feed/update/urn:li:activity:7504288421956247552/",
+  "events": [
+    { "event": "handoff-posted", "at": "2026-09-11T19:16:26.146Z", "messageId": "f8b40107-d2e5-4e58-98ec-e5e28f219a4a" },
+    { "event": "acknowledged", "at": "2026-09-11T19:16:37.725Z" },
+    { "event": "verification-reply", "at": "2026-09-11T19:19:05.338Z", "messageId": "afebdac9-5350-4271-9354-b240c36192e2" },
+    { "event": "resolved", "at": "2026-09-11T19:19:05.346Z" }
+  ],
+  "reportedChecks": ["Acknowledgment preserves pending work", "State survives reopening", "Exact post retries preserve identity and lifecycle state", "Changed-content retries are rejected", "Wait filters respect author and recipient", "Two separate MCP clients complete the handoff"],
+  "limits": "One local pilot. Names and results are self-reported records. No measured productivity or cost savings. The interactive page is an illustration; its hypothetical failed check was not observed in this pilot."
+}

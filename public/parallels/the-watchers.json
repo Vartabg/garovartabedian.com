@@ -290,8 +290,9 @@
     "reviewStatus": "agent-reviewed",
     "reviewer": "Claude Sourcing & Review Pass (garovartabedian.com)",
     "rubricVersion": "parallels-v1.0",
-    "reviewedContentHash": "404411aed251757ae231d3e77c8feaa791880be544cd2efb2e654f7aa9b3ef30",
+    "reviewedContentHash": "8c85a51ddf8ca76e97cf26a933e1f1531ba157a4e1962098c0f9a3a8d086ef67",
     "reviewedAt": "2026-09-01T01:34:50.686Z",
-    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation"
+    "reviewScope": "Verbatim excerpt verification against hosted corpus texts, relationship grading, and reception separation",
+    "contentHashScope": "witnesses-slots-edges-reception-v1"
   }
 }

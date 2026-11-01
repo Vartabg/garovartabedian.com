@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { loadShelf } from "@/lib/scriptures/client";
+import { hostedBookEdition } from "@/lib/scriptures/edition-counts";
 import type { Canons, Tradition } from "@/lib/scriptures/types";
 
 const TONES = 5;
@@ -13,8 +12,8 @@ const tone = (id: string) =>
 const spineWidth = (verses: number) => Math.round(14 + Math.sqrt(verses) * 1.7);
 
 /**
- * The canon as a bookshelf: every spine drawn to scale, width = the book's
- * true length in verses. Switch traditions and the shelf itself grows.
+ * The hosted collection as a bookshelf. Each spine follows the edition its
+ * reader link opens, including that edition's numbered verse positions.
  */
 export default function Shelf({
   tradition,
@@ -23,14 +22,6 @@ export default function Shelf({
   tradition: Tradition;
   canons: Canons;
 }) {
-  const [verses, setVerses] = useState<Record<string, number> | null>(null);
-
-  useEffect(() => {
-    loadShelf().then(setVerses, () => setVerses({}));
-  }, []);
-
-  if (!verses) return <p className="scr-empty">Shelving the books…</p>;
-
   const protestant = new Set(
     canons.traditions.find((t) => t.id === "protestant")?.books ?? [],
   );
@@ -53,7 +44,8 @@ export default function Shelf({
           <div className="scr-shelf">
             {shelf.books.map((id) => {
               const meta = canons.books[id];
-              const n = verses[id] ?? 200;
+              const edition = hostedBookEdition(id, tradition.transPreference);
+              const n = edition?.versePositions ?? 0;
               const beyond = !protestant.has(id);
               return (
                 <Link
@@ -61,8 +53,8 @@ export default function Shelf({
                   href={`/scriptures/${tradition.id}/${id}`}
                   className={`scr-spine t${tone(id)}${beyond ? " beyond" : ""}`}
                   style={{ width: spineWidth(n) }}
-                  title={`${meta?.name ?? id} — ${n} verses${beyond ? " · beyond the Protestant 66" : ""}`}
-                  aria-label={`${meta?.name ?? id}, ${n} verses — choose chapter`}
+                  title={`${meta?.name ?? id} — ${edition ? `${edition.chapters} chapter${edition.chapters === 1 ? "" : "s"} · ${edition.name} · ${n} numbered verse positions` : "hosted edition unavailable"}${beyond ? " · beyond the Protestant 66" : ""}`}
+                  aria-label={`${meta?.name ?? id}, ${edition ? `${edition.chapters} chapter${edition.chapters === 1 ? "" : "s"} in ${edition.name}` : "hosted edition unavailable"} — choose chapter`}
                 >
                   <span>{meta?.name ?? id}</span>
                 </Link>
@@ -72,8 +64,9 @@ export default function Shelf({
         </section>
       ))}
       <p className="scr-meta">
-        Every spine is to scale — its width is the book&rsquo;s real length in
-        verses. Psalms is the giant; 2 John is thirteen verses wide.
+        Spine widths follow numbered verse positions in each book&rsquo;s hosted
+        edition. Chapter counts and numbering can differ between editions;
+        an omitted verse may retain an empty numbered position.
         {shelves.some((s) => s.books.some((b) => !protestant.has(b))) &&
           " Green spines are books beyond the Protestant 66 — switch traditions and watch the shelf grow."}
       </p>

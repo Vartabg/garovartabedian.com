@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Dictionaries the Word Bridge checker compares drafted English↔Hebrew/Greek links against.",
+  "retrievedAt": "2026-10-16",
+  "files": [
+    {
+      "file": "dodson.csv",
+      "work": "Dodson Greek–English Lexicon (John Jeffrey Dodson)",
+      "url": "https://raw.githubusercontent.com/biblicalhumanities/Dodson-Greek-Lexicon/master/dodson.csv",
+      "license": "Public domain (\"This lexicon, in all of its forms, is in the public domain.\")",
+      "sha256": "46951bf82c40ed35caa8557db190a828b744e305e9619d9451ea5690a90d7101"
+    },
+    {
+      "file": "HebrewStrong.xml",
+      "work": "Strong's Hebrew Dictionary (1890), XML by the Open Scriptures Hebrew Bible Project",
+      "url": "https://raw.githubusercontent.com/openscriptures/HebrewLexicon/master/HebrewStrong.xml",
+      "license": "Dictionary text public domain; XML markup CC BY 4.0 — credit the Open Scriptures Hebrew Bible Project",
+      "sha256": "a628f4f89f8bdaf2483fd3faf1abc8653cc6717758dfc9f24beb7571d9bdd0c4"
+    }
+  ]
+}

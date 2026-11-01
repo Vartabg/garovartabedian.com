@@ -1,7 +1,8 @@
+import ResearchAudio from "../_components/ResearchAudio";
 import { getWordData } from "@/lib/public-json";
 import WordHome from "./WordHome";
 
 /** World home — ownership ledger resolved on the server. */
 export default function WordPage() {
-  return <WordHome data={getWordData()} />;
+  return <WordHome data={getWordData()} audioOverview={<ResearchAudio id="bible-ownership" />} />;
 }

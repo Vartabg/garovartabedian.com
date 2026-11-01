@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
+import { CONTENT_HASH_SCOPE, matrixContentHash } from "./provenance.mjs";
+import { validateScriptureWitnessMetadata } from "./witness-metadata.mjs";
 
 const ROOT = path.join(import.meta.dirname, "../..");
 const PARALLELS_DIR = path.join(ROOT, "public/parallels");
@@ -39,6 +40,10 @@ for (const file of files) {
   const matrix = JSON.parse(readFileSync(filePath, "utf8"));
 
   console.log(`Checking ${file} (${matrix.title})...`);
+  for (const error of validateScriptureWitnessMetadata(matrix, ROOT)) {
+    console.error(`  [FAIL] ${file}: ${error}`);
+    errors++;
+  }
 
   if (matrix.schemaVersion !== "1.0.0") {
     console.error(`  [FAIL] ${file}: Invalid schemaVersion ${matrix.schemaVersion}`);
@@ -100,12 +105,11 @@ for (const file of files) {
   }
 
   // Check hash
-  const contentToHash = JSON.stringify({
-    slots: matrix.slots,
-    edges: matrix.edges,
-    receptionClaims: matrix.receptionClaims,
-  });
-  const computedHash = crypto.createHash("sha256").update(contentToHash).digest("hex");
+  if (matrix.provenance?.contentHashScope !== CONTENT_HASH_SCOPE) {
+    console.error(`  [FAIL] ${file}: Missing or unsupported contentHashScope`);
+    errors++;
+  }
+  const computedHash = matrixContentHash(matrix);
   if (matrix.provenance?.reviewedContentHash !== computedHash) {
     console.error(
       `  [FAIL] ${file}: Content hash mismatch (recorded: ${matrix.provenance?.reviewedContentHash}, computed: ${computedHash})`,

@@ -1,15 +1,17 @@
 "use client";
 
-import { useState, useMemo, useId } from "react";
+import { useState, useMemo, useId, useRef, useEffect } from "react";
 import Link from "next/link";
 import {
   CANONICAL_BOOKS,
   HISTORICAL_MILESTONES,
   TRADITION_METADATA,
   compareTwoTraditions,
+  hostedTraditionCount,
   type CanonicalBook,
   type TraditionKey,
 } from "@/lib/scriptures/canons-matrix";
+import { hostedChapterSummary } from "@/lib/scriptures/edition-counts";
 
 const TRADITION_KEYS: TraditionKey[] = [
   "protestant",
@@ -27,6 +29,13 @@ export default function CanonsMatrix() {
   >("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedBook, setSelectedBook] = useState<CanonicalBook | null>(null);
+  const dossierRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!selectedBook) return;
+    dossierRef.current?.focus({ preventScroll: true });
+    dossierRef.current?.scrollIntoView({ block: "nearest" });
+  }, [selectedBook]);
 
   // Comparator State
   const [comparatorOpen, setComparatorOpen] = useState(false);
@@ -90,6 +99,11 @@ export default function CanonsMatrix() {
             traditions. Explore manuscript witnesses from the Dead Sea Scrolls, Septuagint,
             and Masoretic Text, with direct links into the hosted record.
           </p>
+          <p className="scr-matrix-lead">
+            Traditional book totals use each tradition&rsquo;s enumeration. This matrix
+            counts hosted entries, which can list additions or parts separately.
+            Chapter counts describe the hosted editions; they do not define a tradition&rsquo;s canon.
+          </p>
         </div>
 
         {/* Action controls */}
@@ -118,40 +132,52 @@ export default function CanonsMatrix() {
           </div>
 
           <div className="scr-comparator-selectors">
-            <div className="scr-comparator-col">
+            <div className="scr-comparator-col" style={{ flex: "1 1 14rem", minWidth: 0, maxWidth: "100%" }}>
               <label htmlFor="comp-trad-a">Tradition A:</label>
               <select
                 id="comp-trad-a"
                 value={compareA}
                 onChange={(e) => setCompareA(e.target.value as TraditionKey)}
                 className="scr-comparator-select"
+                style={{ width: "100%", minWidth: 0, maxWidth: "100%" }}
+                aria-describedby="comp-trad-a-counts"
               >
                 {TRADITION_KEYS.map((k) => (
                   <option key={k} value={k}>
-                    {TRADITION_METADATA[k].name} ({TRADITION_METADATA[k].bookCount} books)
+                    {TRADITION_METADATA[k].name}
                   </option>
                 ))}
               </select>
+              <p id="comp-trad-a-counts" style={{ overflowWrap: "anywhere" }}>
+                Traditional enumeration: {TRADITION_METADATA[compareA].canonLabel}.{" "}
+                Hosted entries in this matrix: {hostedTraditionCount(compareA)}.
+              </p>
             </div>
 
             <span className="scr-comparator-vs" aria-hidden="true">
               vs.
             </span>
 
-            <div className="scr-comparator-col">
+            <div className="scr-comparator-col" style={{ flex: "1 1 14rem", minWidth: 0, maxWidth: "100%" }}>
               <label htmlFor="comp-trad-b">Tradition B:</label>
               <select
                 id="comp-trad-b"
                 value={compareB}
                 onChange={(e) => setCompareB(e.target.value as TraditionKey)}
                 className="scr-comparator-select"
+                style={{ width: "100%", minWidth: 0, maxWidth: "100%" }}
+                aria-describedby="comp-trad-b-counts"
               >
                 {TRADITION_KEYS.map((k) => (
                   <option key={k} value={k}>
-                    {TRADITION_METADATA[k].name} ({TRADITION_METADATA[k].bookCount} books)
+                    {TRADITION_METADATA[k].name}
                   </option>
                 ))}
               </select>
+              <p id="comp-trad-b-counts" style={{ overflowWrap: "anywhere" }}>
+                Traditional enumeration: {TRADITION_METADATA[compareB].canonLabel}.{" "}
+                Hosted entries in this matrix: {hostedTraditionCount(compareB)}.
+              </p>
             </div>
           </div>
 
@@ -266,7 +292,7 @@ export default function CanonsMatrix() {
             className={`scr-btn scr-filter-pill ${activeTradition === "all" ? "is-active" : ""}`}
             onClick={() => setActiveTradition("all")}
           >
-            All Traditions (86)
+            All Traditions ({CANONICAL_BOOKS.length} hosted entries)
           </button>
           {TRADITION_KEYS.map((k) => (
             <button
@@ -275,7 +301,7 @@ export default function CanonsMatrix() {
               className={`scr-btn scr-filter-pill ${activeTradition === k ? "is-active" : ""}`}
               onClick={() => setActiveTradition(k)}
             >
-              {TRADITION_METADATA[k].name} ({TRADITION_METADATA[k].bookCount})
+              {TRADITION_METADATA[k].name} ({hostedTraditionCount(k)} hosted entries)
             </button>
           ))}
         </div>
@@ -386,9 +412,16 @@ export default function CanonsMatrix() {
                 >
                   <td className="scr-col-book">
                     <div className="scr-book-identity">
-                      <strong className="scr-book-name">{book.name}</strong>
+                      <button type="button" className="scr-book-name" id={`book-counts-${book.id}`}
+                        style={{ background: "none", border: 0, padding: 0, color: "inherit", fontFamily: "inherit", fontWeight: 700, textAlign: "left", cursor: "pointer", minHeight: "2.75rem", minWidth: "2.75rem" }}
+                        aria-expanded={isSelected}
+                        aria-controls={isSelected ? `book-dossier-${book.id}` : undefined}
+                        aria-label={`${book.name} — hosted editions and details`}
+                        onClick={event => { event.stopPropagation(); setSelectedBook(isSelected ? null : book); }}>
+                        {book.name}
+                      </button>
                       <span className="scr-book-cat-tag">
-                        {book.categoryName} · {book.chapters} ch
+                        {book.categoryName} · {hostedChapterSummary(book.hostedEditions)}
                       </span>
                     </div>
                   </td>
@@ -490,7 +523,7 @@ export default function CanonsMatrix() {
 
       {/* Selected Book Detail Drawer */}
       {selectedBook && (
-        <div className="scr-book-detail-drawer" role="region" aria-label="Book dossier">
+        <div ref={dossierRef} tabIndex={-1} className="scr-book-detail-drawer" id={`book-dossier-${selectedBook.id}`} role="region" aria-label="Book dossier">
           <div className="scr-drawer-head">
             <div>
               <span className="scr-drawer-kicker">
@@ -501,7 +534,10 @@ export default function CanonsMatrix() {
             <button
               type="button"
               className="scr-btn scr-drawer-close"
-              onClick={() => setSelectedBook(null)}
+              onClick={() => {
+                document.getElementById(`book-counts-${selectedBook.id}`)?.focus();
+                setSelectedBook(null);
+              }}
               aria-label="Close dossier"
             >
               ✕
@@ -509,6 +545,13 @@ export default function CanonsMatrix() {
           </div>
 
           <div className="scr-drawer-body">
+            <div className="scr-drawer-section">
+              <h4>Hosted chapter counts</h4>
+              <p>These are the chapter divisions in this site&rsquo;s named editions, not a traditional book enumeration.</p>
+              <ul>{selectedBook.hostedEditions.map(edition => <li key={edition.translation}>
+                {edition.name}: {edition.chapters} chapter{edition.chapters === 1 ? "" : "s"}
+              </li>)}</ul>
+            </div>
             <div className="scr-drawer-section">
               <h4>Manuscript Witnesses</h4>
               <p>

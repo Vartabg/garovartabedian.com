@@ -12,11 +12,11 @@ const report = read("content/early-library/report.json");
 const manifest = readManifest();
 
 test("every acquired entry has one reviewed disposition; packs and unacquired texts are never ingested", () => {
-  assert.equal(manifest.records.length, 122);
-  assert.equal(manifest.records.filter(r => r.sourcePath || r.sourceRepositoryPath).length, 117);
-  assert.equal(new Set(manifest.records.map(r => r.id)).size, 122);
-  assert.equal(report.acquiredEntries, 117);
-  assert.deepEqual([report.publishedEntries, report.newPrimaryEntries, report.reusedPrimaryEntries, report.referenceOnlyEntries, report.deferredEntries], [103, 100, 3, 14, 5]);
+  assert.equal(manifest.records.length, 123);
+  assert.equal(manifest.records.filter(r => r.sourcePath || r.sourceRepositoryPath).length, 118);
+  assert.equal(new Set(manifest.records.map(r => r.id)).size, 123);
+  assert.equal(report.acquiredEntries, 118);
+  assert.deepEqual([report.publishedEntries, report.newPrimaryEntries, report.reusedPrimaryEntries, report.referenceOnlyEntries, report.deferredEntries], [104, 101, 3, 14, 5]);
   for (const r of manifest.records) {
     assert.ok(manifest.rightsProfiles[r.rightsProfile]?.evidence.length);
     assert.equal(catalog.find(c => c.id === r.id)?.publicationStatus, r.publicationStatus);
@@ -82,7 +82,7 @@ test("published output hashes, complete accounting and all legacy content stay i
   assert.equal(report.importManifestSha256, hash(fs.readFileSync(path.join(ROOT, "scripts/early/library-import-manifest.json"))));
   for (const { path: file, sha256: digest } of report.outputs) assert.equal(hash(fs.readFileSync(path.join(ROOT, "content/early-library", file))), digest, file);
   for (const { path: file, sha256: digest } of manifest.legacyHashes) assert.equal(hash(fs.readFileSync(path.join(ROOT, file))), digest, file);
-  assert.equal(report.audits.length, 103);
+  assert.equal(report.audits.length, 104);
   for (const audit of report.audits) assert.equal(audit.bodySha256, audit.accountedSha256, audit.id);
 });
 
@@ -142,7 +142,7 @@ test("search covers each text/commentary page separately and never includes rest
 test("meaning entries cover new translated sections and skip commentary-only pages", () => {
   const entries = collectLibrary(ROOT).entries;
   const reused = new Set(catalog.filter(r => r.publicationStatus !== "published" || r.reuseExistingText).map(r => r.id));
-  assert.equal(entries.length, 4773);
+  assert.equal(entries.length, 4785);
   const ids = new Set();
   for (const entry of entries) {
     assert.equal(ids.has(entry.id), false);

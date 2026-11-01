@@ -128,3 +128,11 @@ test("history room renders synthesis essays and extended research corpus", () =>
   assert.match(markup, /Test Academic Paper/);
   assert.match(markup, /Tier A/);
 });
+
+test("the room's description counts the records it shows", async () => {
+  const { metadata } = await import("../src/app/jesus/history/layout");
+  const { getChristianWitnesses, getHistory, getStones } = await import("../src/lib/jesus/server");
+  const shown = getChristianWitnesses().length + getHistory().length + getStones().length;
+  assert.equal(shown, 20);
+  assert.match(String(metadata.description), new RegExp(`^${shown} early Christian, Jewish, Roman, and archaeological records`));
+});

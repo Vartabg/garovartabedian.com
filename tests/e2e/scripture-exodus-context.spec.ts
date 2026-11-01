@@ -6,7 +6,7 @@ test("Exodus tabernacle context opens its checked edition despite different chap
   await page.goto("/scriptures/orthodox/EXO/38?t=brenton");
   await expect(page.locator(".scr-rh .scr-read-meta")).toContainText("Brenton Septuagint");
   await expect(page.locator("#chapter-text")).toContainText(brenton.chapters[37][0]);
-  const context = page.getByRole("complementary", { name: "Before you read" });
+  const context = page.getByRole("complementary", { name: "Chapter context" });
   await expect(context).toContainText("References use World English Bible.");
   const chapterReference = context.locator('a[href^="/scriptures/orthodox/EXO/38?t=web#v"]').first();
   await expect(chapterReference).toBeVisible();
@@ -27,7 +27,7 @@ test("Exodus tabernacle context opens its checked edition despite different chap
 test("Exodus closes with usable mobile context and no invented forty-first chapter", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/scriptures/protestant/EXO/40");
-  const context = page.getByRole("complementary", { name: "Before you read" });
+  const context = page.getByRole("complementary", { name: "Chapter context" });
   await context.getByText("Where this chapter fits", { exact: true }).click();
   await expect(context.getByRole("heading", { name: "Where the book goes from here" })).toBeVisible();
   await expect(context.locator('a[href*="/EXO/41"]')).toHaveCount(0);

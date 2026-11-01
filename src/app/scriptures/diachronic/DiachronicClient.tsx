@@ -125,7 +125,7 @@ export default function DiachronicClient({ initialConcepts }: Props) {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(18rem, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 18rem), 1fr))",
             gap: "0.5rem",
           }}
         >

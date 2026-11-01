@@ -4,6 +4,8 @@ import {
   CANONICAL_BOOKS,
   HISTORICAL_MILESTONES,
   compareTwoTraditions,
+  hostedTraditionCount,
+  TRADITION_METADATA,
 } from "@/lib/scriptures/canons-matrix";
 import { parseCanonQuery, assembleFindGroups } from "@/lib/site/find-query";
 import { FIND_CATALOG } from "@/lib/site/find-catalog";
@@ -41,6 +43,16 @@ test("Multi-Canonicity & Tradition Matrix", async (t) => {
     assert.equal(tanakhBooks.length, 39, "Tanakh covers the 39 Hebrew books");
   });
 
+  await t.test("traditional enumeration stays separate from hosted matrix records", () => {
+    assert.equal(TRADITION_METADATA.tanakh.bookCount, 24);
+    assert.equal(hostedTraditionCount("tanakh"), 39);
+    assert.equal(TRADITION_METADATA.ethiopian.bookCount, 81);
+    assert.equal(hostedTraditionCount("ethiopian"), 82);
+    const ezra = CANONICAL_BOOKS.find(book => book.id === "EZR")!;
+    assert.equal(ezra.hostedEditions.find(edition => edition.translation === "web")?.chapters, 10);
+    assert.equal(ezra.hostedEditions.find(edition => edition.translation === "brenton")?.chapters, 23);
+  });
+
   await t.test("verifies key deuterocanonical and pseudepigraphal books", () => {
     const enoch = CANONICAL_BOOKS.find((b) => b.id === "ENO");
     assert.ok(enoch, "1 Enoch is present in matrix");
@@ -73,6 +85,8 @@ test("Multi-Canonicity & Tradition Matrix", async (t) => {
     assert.equal(diffCP.shared.length, 66, "Catholic and Protestant share 66 books");
     assert.ok(diffCP.onlyInA.length >= 7, "Catholic has deuterocanon not in Protestant");
     assert.equal(diffCP.onlyInB.length, 0, "Protestant has 0 books absent in Catholic");
+    assert.match(diffCP.summary, /additional hosted entries/);
+    assert.doesNotMatch(diffCP.summary, /not received/);
     const catholicOnlyIds = diffCP.onlyInA.map((b) => b.id);
     assert.ok(catholicOnlyIds.includes("TOB"));
     assert.ok(catholicOnlyIds.includes("JDT"));

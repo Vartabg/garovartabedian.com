@@ -1,6 +1,7 @@
 "use client";
 
 import { preserveFindContext } from "@/lib/scriptures/search-url";
+import { preserveWordBridge, wordBridgeTarget, WORD_BRIDGE_STUDY } from "@/lib/scriptures/word-bridge-url";
 import { chapterReadingGroups, VERSE_LINED_BOOKS } from "@/lib/scriptures/reading-layout";
 import ReadingSearchReturn from "@/app/_components/reading/ReadingSearchReturn";
 
@@ -55,18 +56,19 @@ import {
 import Threads from "./Threads";
 import ChapterGuide from "./ChapterGuide";
 import ChapterContext from "./ChapterContext";
-import ChapterNeighbours from "./ChapterNeighbours";
+import ChapterNeighbours, { neighbourHref } from "./ChapterNeighbours";
+import FromHere from "@/app/_components/FromHere";
+import type { FromHereLink } from "@/lib/site/from-here";
 import UnseenRecord from "./UnseenRecord";
 import VerseText from "./VerseText";
 import VersePanel from "./VersePanel";
 import ReaderBar from "./ReaderBar";
 import ReaderSettings from "./ReaderSettings";
 import SaveOffline from "./SaveOffline";
-import ChapterPicker from "./ChapterPicker";
-import StudyTable, { type StudyIntent } from "./StudyTable";
+import ChapterPicker, { preloadChapterPicker } from "./ChapterPicker";
 import Wheel from "@/app/_components/Wheel";
 import Versal from "@/app/_components/Versal";
-import GlossThreads from "./GlossThreads";
+import { getParallelForChapter } from "@/lib/parallels/lookup";
 
 const OriginalVerseLine = dynamic(() => import("./OriginalVerseLine"));
 
@@ -157,6 +159,11 @@ type ReaderClientProps = {
  * depth is one deliberate tap away — the verse number opens that verse's tools
  * inline beneath it, and the chapter's cheat sheet and cross-reference map sit
  * below the reading, where they belong.
+ *
+ * 2026-10-29: the rule had drifted — save-offline, Word Bridge, four study
+ * tabs and a "Before you read" box had put verse 1 of Leviticus 16 at 1,035px
+ * on a 375x812 phone. Only the title, edition and breadcrumb stay above the
+ * text; the next chapter follows the last verse; everything else is below.
  */
 export default function ReaderClient({
   canons,
@@ -175,6 +182,7 @@ export default function ReaderClient({
   const router = useRouter();
   const [xref, setXref] = useState<XrefFile | null>(null);
   const [openVerse, setOpenVerse] = useState<number | null>(null);
+  const [bridgeRequested, setBridgeRequested] = useState(false);
   const [selVerses, setSelVerses] = useState<number[]>([]);
   const [selNote, setSelNote] = useState<string | null>(null);
   const [words, setWords] = useState<WordsData | null>(null);
@@ -183,7 +191,6 @@ export default function ReaderClient({
   const [guide, setGuide] = useState<ChapterGuideData | null>(initialGuide);
   const [guideTried, setGuideTried] = useState(!!initialGuide);
   const [guideOpen, setGuideOpen] = useState(false);
-  const [studyIntent, setStudyIntent] = useState<StudyIntent>("read");
   const [pickOpen, setPickOpen] = useState(false);
   const [setsOpen, setSetsOpen] = useState(false);
   const [easy, setEasy] = useState<EasyPrefs>(defaultEasyPrefs);
@@ -214,11 +221,53 @@ export default function ReaderClient({
   const tradition = canons.traditions.find((t) => t.id === traditionId)!;
   const base = `/scriptures/${tradition.id}/${bookId}`;
   const currentBookIndex = tradition.books.indexOf(bookId);
+  const prevBookId = currentBookIndex > 0 ? tradition.books[currentBookIndex - 1] : null;
+  const nextBookId =
+    currentBookIndex >= 0 && currentBookIndex < tradition.books.length - 1
+      ? tradition.books[currentBookIndex + 1]
+      : null;
+  const parallel = getParallelForChapter(bookId, chapter);
   const originalAvailable = originalTranslations.includes(trans) &&
     (!compare || originalTranslations.includes(compare));
-  const q = readerQuery(trans, compare, showOriginal);
+  const q = readerQuery(trans, compare, showOriginal) + (bridgeRequested ? `&study=${WORD_BRIDGE_STUDY}` : "");
   const selecting = selVerses.length > 0;
   const canListen = Boolean(narration) || canUseDeviceSpeech;
+
+  // Paging runs straight through the canon: the arrow past a book's last
+  // chapter opens the next book's first, in the same version when it has one.
+  const bookStep = (id: string | null, which: "first" | "last") => {
+    if (!id) return null;
+    const book = canons.books[id];
+    const n = which === "first" ? 1 : book.chapters;
+    return {
+      href: `/scriptures/${tradition.id}/${id}/${n}${book.trans.includes(trans) ? `?t=${trans}` : ""}`,
+      label: `${book.name} ${n}`,
+      aria: `${which === "first" ? "Next" : "Previous"} book — ${book.name} ${n}`,
+    };
+  };
+  const prevStep = chapter > 1
+    ? { href: `${base}/${chapter - 1}${q}`, label: `${meta.name} ${chapter - 1}`, aria: "Previous chapter" }
+    : bookStep(prevBookId, "last");
+  const nextStep = chapter < chapterCount
+    ? { href: `${base}/${chapter + 1}${q}`, label: `${meta.name} ${chapter + 1}`, aria: "Next chapter" }
+    : bookStep(nextBookId, "first");
+  const prevHref = prevStep?.href ?? null;
+  const nextHref = nextStep?.href ?? null;
+
+  // The menu's "From here": the connections from "Go deeper", reachable while
+  // reading. Paging and the book are always on screen (the bar's arrows and
+  // picker, the breadcrumb), so the menu does not repeat them.
+  const fromHere: FromHereLink[] = [
+    ...(neighbours?.neighbours.slice(0, 3).map((n) => ({
+      href: neighbourHref(canons, tradition.id, n.book, n.chapter, trans),
+      label: `${canons.books[n.book]?.name ?? n.book} ${n.chapter}`,
+      // Chosen by similar wording (computed, not curated); the count says
+      // when the cross-references also join the two chapters.
+      kind: n.xrefLinks > 0 ? `Similar wording · cross-referenced ${n.xrefLinks}×` : "Similar wording",
+    })) ?? []),
+    ...(unseen?.entries[0] ? [{ href: unseen.entries[0].href, label: unseen.entries[0].label, kind: "In Angels & Demons" }] : []),
+    ...(parallel ? [{ href: parallel.href, label: parallel.title, kind: "Parallel accounts" }] : []),
+  ];
 
   // URL is read once on mount (shared links with ?t/?c/?o keep working), then
   // state owns the URL. This is the App-Router-sanctioned way to vary a static
@@ -267,7 +316,7 @@ export default function ReaderClient({
         history.replaceState(
           history.state,
           "",
-          preserveFindContext(`${base}/${chapter}${readerQuery(next.trans, next.compare, nextOriginal)}${location.hash}`, new URLSearchParams(location.search)),
+          preserveWordBridge(preserveFindContext(`${base}/${chapter}${readerQuery(next.trans, next.compare, nextOriginal)}${location.hash}`, new URLSearchParams(location.search)), new URLSearchParams(location.search)),
         );
       } catch {
         if (ticket !== variantRequest.current) return; // superseded by a newer tap
@@ -291,6 +340,18 @@ export default function ReaderClient({
     // Runs exactly once per page (tradition/book/chapter); the URL cannot
     // change under the component without a navigation that remounts it.
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Load the Go to sheet's picker once the page is idle, so the sheet opens
+  // full on the first tap. It is one cached download for every chapter.
+  useEffect(() => {
+    const idle = window.requestIdleCallback
+      ? window.requestIdleCallback(preloadChapterPicker, { timeout: 4000 })
+      : window.setTimeout(preloadChapterPicker, 2500);
+    return () => {
+      if (window.cancelIdleCallback) window.cancelIdleCallback(idle);
+      else window.clearTimeout(idle);
+    };
+  }, []);
 
   useEffect(() => {
     setEasy(readEasyPrefs());
@@ -318,7 +379,6 @@ export default function ReaderClient({
     setGuide(initialGuide);
     setGuideTried(!!initialGuide);
     setGuideOpen(false);
-    setStudyIntent("read");
     setPickOpen(false);
     setSetsOpen(false);
   }, [bookId, chapter, trans, compare, initialGuide]);
@@ -360,9 +420,49 @@ export default function ReaderClient({
   }, [wantXref, bookId]);
 
   useEffect(() => {
-    if (verses && location.hash)
-      document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: "center" });
+    if (!verses) return;
+    const target = wordBridgeTarget(location.search, location.hash, verses.length);
+    if (target !== null) {
+      setBridgeRequested(true);
+      setOpenVerse(target);
+    }
+    else if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: "center" });
   }, [verses]);
+
+  useEffect(() => {
+    if (!openVerse || new URLSearchParams(location.search).get("study") !== WORD_BRIDGE_STUDY) return;
+    const panel = document.getElementById(`vp${openVerse}`);
+    panel?.focus({ preventScroll: true });
+    panel?.scrollIntoView({ block: "start" });
+  }, [openVerse, verses]);
+
+  const changeOpenVerse = useCallback((next: number | null) => {
+    if (next === null && openVerse !== null) {
+      document.querySelector<HTMLButtonElement>(`#v${openVerse} .scr-vnum`)?.focus({ preventScroll: true });
+    }
+    setOpenVerse(next);
+    if (next === null) setBridgeRequested(false);
+    const url = new URL(location.href);
+    if (url.searchParams.get("study") !== WORD_BRIDGE_STUDY) return;
+    if (next === null) url.searchParams.delete("study");
+    else url.hash = `v${next}`;
+    history.replaceState(history.state, "", url.pathname + url.search + url.hash);
+  }, [openVerse]);
+
+  const revealWordBridge = () => {
+    if (!verses) return;
+    const target = openVerse ?? wordBridgeTarget(`?study=${WORD_BRIDGE_STUDY}`, location.hash, verses.length) ?? 1;
+    const url = new URL(location.href);
+    url.searchParams.set("study", WORD_BRIDGE_STUDY);
+    url.hash = `v${target}`;
+    history.replaceState(history.state, "", url.pathname + url.search + url.hash);
+    setBridgeRequested(true);
+    setOpenVerse(target);
+    // An already open verse does not trigger the openVerse effect again.
+    const panel = document.getElementById(`vp${target}`);
+    panel?.focus({ preventScroll: true });
+    panel?.scrollIntoView({ block: "start" });
+  };
 
   useEffect(() => {
     if (!selNote) return;
@@ -471,24 +571,22 @@ export default function ReaderClient({
       if (el && el.closest("input, select, textarea, [contenteditable]")) return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       if (e.key === "Escape") {
-        if (openVerse !== null) setOpenVerse(null);
+        if (openVerse !== null) changeOpenVerse(null);
         else if (selecting) setSelVerses([]);
         return;
       }
       if (pickOpen || setsOpen) return;
-      if (e.key === "ArrowLeft" && chapter > 1) router.push(`${base}/${chapter - 1}${q}`);
-      if (e.key === "ArrowRight" && chapter < chapterCount)
-        router.push(`${base}/${chapter + 1}${q}`);
+      if (e.key === "ArrowLeft" && prevHref) router.push(prevHref);
+      if (e.key === "ArrowRight" && nextHref) router.push(nextHref);
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, [
-    base,
-    chapter,
-    chapterCount,
+    changeOpenVerse,
+    nextHref,
     openVerse,
     pickOpen,
-    q,
+    prevHref,
     router,
     selecting,
     setsOpen,
@@ -528,14 +626,6 @@ export default function ReaderClient({
     });
   };
 
-  const scrollToStudyTarget = (id: string) => {
-    window.requestAnimationFrame(() => {
-      window.requestAnimationFrame(() => {
-        document.getElementById(id)?.scrollIntoView({ block: "start" });
-      });
-    });
-  };
-
   const setChapterGuideOpen = async (next: boolean) => {
     if (next && !guide && !guideTried) {
       setGuideTried(true);
@@ -545,28 +635,15 @@ export default function ReaderClient({
     setGuideOpen(next);
   };
 
-  const chooseStudyIntent = (intent: StudyIntent) => {
-    setStudyIntent(intent);
-    if (intent === "read") {
-      scrollToStudyTarget("chapter-text");
-      return;
-    }
-    if (intent === "understand") {
-      void setChapterGuideOpen(true).then(() => scrollToStudyTarget("study"));
-      return;
-    }
-    if (intent === "connect") {
-      setShowThreads(true);
-      scrollToStudyTarget("connections");
-      return;
-    }
-    if (showOriginal) {
-      scrollToStudyTarget("original-language");
-    } else if (originalAvailable) {
-      void applyVariant({ trans, compare, original: true });
-    } else {
-      setSetsOpen(true);
-    }
+  // The original-language layer renders above, beside each verse; take the
+  // reader there once it has loaded.
+  const showOriginalText = async () => {
+    await applyVariant({ trans, compare, original: true });
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        document.getElementById("original-language")?.scrollIntoView({ block: "start" });
+      });
+    });
   };
 
   // ── Verse rendering ────────────────────────────────────────────────────
@@ -612,11 +689,12 @@ export default function ReaderClient({
   const readingGroups = useMemo(() => chapterReadingGroups(verses ?? [], bookId), [verses, bookId]);
 
   return (
-    <div className="scr-read" data-reading-surface data-reading-mode={studyIntent === "read" ? "read" : "trace"} data-reading-edition={trans}>
+    <div className="scr-read" data-reading-surface data-reading-mode="read" data-reading-edition={trans}>
       <ReadingSearchReturn />
+      <FromHere label={`${meta.name} ${chapter}`} links={fromHere} />
       <div className="scr-leaf">
-      {/* The running head: book and chapter at the top of the leaf, one
-          quiet provenance line, and the way back on the right. */}
+      {/* The running head: book and chapter, the edition, and the way back.
+          Nothing else sits between the reader and verse 1. */}
       <header className="scr-rh">
         <div>
             <h1 className="scr-rh-title">
@@ -624,308 +702,299 @@ export default function ReaderClient({
             </h1>
             <p className="scr-read-meta">
               {transName}
-              {verses ? ` · ${verses.filter(Boolean).length} verses` : ""}
               {compare
                 ? ` · compared with ${canons.translations[compare]?.name}`
                 : ""}
               {originalEdition
                 ? ` · ${originalEdition.language} source text`
                 : ""}
-              {" · "}
-              <a href="#study">
-                {guide ? `${guide.questions.length} questions below` : "Study below"}
-              </a>
             </p>
         </div>
+        {/* "Scriptures" is already the header's world name and nav link
+            directly above, so the trail starts at the canon. */}
         <nav className="scr-rh-crumbs" aria-label="Breadcrumb">
-          <Link href="/scriptures">Scriptures</Link>{" "}
-          <span aria-hidden="true">/</span>{" "}
           <Link href={`/scriptures/${tradition.id}`}>{tradition.name}</Link>{" "}
           <span aria-hidden="true">/</span>{" "}
           <Link href={`/scriptures/${tradition.id}/${bookId}`}>{meta.name}</Link>
         </nav>
       </header>
-      <div className="scr-rh-tools">
-        <SaveOffline key={`${bookId}/${chapter}/${trans}`} bookId={bookId} bookName={meta.name}
-          chapter={chapter} translation={trans} translationName={transName} license={transLicense}
-          sourcePath={`${base}/${chapter}?t=${trans}`} verses={verses} />
-      </div>
 
-      <div className="scr-study-layout">
-        <GlossThreads openVerse={openVerse} refs={openVerse !== null ? refsFor(openVerse) : []} />
-        <StudyTable
-          bookId={bookId}
-          bookName={meta.name}
-          chapter={chapter}
-          chapterCount={chapterCount}
-          verseCount={verses?.filter(Boolean).length ?? 0}
-          traditionName={tradition.name}
-          translationName={transName}
-          translation={trans}
-          translationLicense={transLicense}
+      {!verses && requestStatus === "loading" && (
+        <p className="scr-empty" role="status">
+          Loading {transName} text…
+        </p>
+      )}
+      {!verses && requestStatus === "error" && (
+        <p className="scr-empty" role="alert">
+          Could not load {transName} text. Check your connection and try again.
+        </p>
+      )}
+      {!verses && requestStatus === "ready" && (
+        <p className="scr-empty">
+          This chapter isn&rsquo;t in {transName} — pick another version with
+          <strong> Aa</strong> in the bar below.
+        </p>
+      )}
+
+      {compare && requestStatus === "comparison-error" && (
+        <p className="scr-empty" role="alert">
+          Could not load {canons.translations[compare]?.name ?? compare} comparison text.
+          {" "}{transName} is still available to read and save.
+        </p>
+      )}
+
+      {compare && compareVerses && verses && (
+        <p className="scr-cmp-legend">
+          <span>{transName}</span>
+          <span>{canons.translations[compare]?.name ?? compare}</span>
+        </p>
+      )}
+
+      {originalEdition && (
+        <aside
+          id="original-language"
+          className="scr-original-legend"
+          aria-label="Original-language edition"
+        >
+          <strong>
+            {originalEdition.language} · {originalEdition.short}
+          </strong>
+          <span>Tap a source word for its lemma or lexical ID and grammatical parsing.</span>
+          <a href="/sources#scripture-texts">Edition and license</a>
+        </aside>
+      )}
+
+      {verses && (
+        <article
+          id="chapter-text"
+          className={readingClass}
+          aria-label={`${meta.name} chapter ${chapter}`}
+        >
+          {readingGroups.map(group => <div className="scr-reading-paragraph" key={group[0]} data-reading-group={group[0] + 1}>
+          {group.map(i => {
+            const v = verses[i];
+            const n = i + 1;
+            const cv =
+              compare && compareVerses ? (compareVerses[i] ?? "") : null;
+            const picked = selVerses.includes(n);
+            const open = openVerse === n;
+            const panelId = `vp${n}`;
+            const refs = refsFor(n);
+            const originalVerse = originalByVerse.get(n);
+            return (
+              <div
+                className={`scr-v${/[\r\n]/.test(v) ? " scr-lined-verse" : ""}${picked ? " is-picked" : ""}${open ? " is-open" : ""}`}
+                key={n}
+                id={`v${n}`}
+              >
+                <p className={`scr-verse${cv !== null ? " scr-cmp" : ""}`}>
+                  <button
+                    type="button"
+                    className="scr-vnum"
+                    onClick={() => {
+                      if (selecting) toggleSelect(n);
+                      else changeOpenVerse(open ? null : n);
+                    }}
+                    aria-expanded={selecting ? undefined : open}
+                    aria-controls={open ? panelId : undefined}
+                    aria-pressed={selecting ? picked : undefined}
+                    aria-label={
+                      selecting
+                        ? `Verse ${n}, ${picked ? "selected" : "not selected"}`
+                        : `Verse ${n} — open study tools`
+                    }
+                  >
+                    {n}
+                  </button>
+                  {cv !== null ? (
+                    <span className="scr-cmp-cells">
+                      <span>
+                        {v ? verseBody(v, n) : <span className="scr-gap">—</span>}
+                      </span>
+                      <span>
+                        {cv ? (
+                          <VerseText text={cv} seen={glossSeen} />
+                        ) : (
+                          <span className="scr-gap">—</span>
+                        )}
+                      </span>
+                    </span>
+                  ) : v ? (
+                    // The versal: the chapter's first letter in gold leaf.
+                    // Skipped when the first character is punctuation or
+                    // when the red-letter layer claims the opening verse.
+                    n === 1 && !(redLetter && redFor(1)) && /^[A-Za-z\u00C0-\u024F]/.test(v) ? (
+                      <>
+                        <Versal letter={v[0]} className="scr-versal" />
+                        <VerseText text={v.slice(1)} seen={glossSeen} />
+                      </>
+                    ) : (
+                      verseBody(v, n)
+                    )
+                  ) : (
+                    <span className="scr-gap">—</span>
+                  )}
+                </p>
+                {original && originalVerse && (
+                  <OriginalVerseLine chapter={original} verse={originalVerse} />
+                )}
+                {open && v && (
+                  <VersePanel
+                    id={panelId}
+                    n={n}
+                    text={v}
+                    refs={refs}
+                    canons={canons}
+                    tradition={tradition}
+                    trans={trans}
+                    transLabel={TRANS_ABBR[trans]}
+                    bookId={bookId}
+                    bookName={meta.name}
+                    chapter={chapter}
+                    chapterHref={`${base}/${chapter}${q}`}
+                    selected={picked}
+                    speechVoice={easy.speechVoice}
+                    speechRate={easy.speechRate}
+                    onToggleSelect={() => toggleSelect(n)}
+                    onClose={() => changeOpenVerse(null)}
+                  />
+                )}
+                {open && !v && (
+                  <div id={panelId} className="scr-vpanel" tabIndex={-1}>
+                    <section className="scr-bridge" aria-labelledby={`bridge-gap-${n}`}>
+                      <h3 id={`bridge-gap-${n}`}>Word Bridge</h3>
+                      <p>{meta.name} {chapter}:{n} is not included in the {transName} edition. Word Bridge needs a verse in WEB to connect its English words with the source text.</p>
+                      <p>Choose another verse or use <Link href="/scriptures/polyglot">Compare translations</Link> to explore differences between editions.</p>
+                    </section>
+                    <button type="button" className="scr-btn" onClick={() => changeOpenVerse(null)}>Close study tools</button>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+          </div>)}
+        </article>
+      )}
+
+      {(prevStep || nextStep) && (
+        <nav className="scr-read-onward" aria-label="Continue reading">
+          {prevStep && (
+            <Link href={prevStep.href} rel="prev">
+              ← {prevStep.label}
+            </Link>
+          )}
+          {nextStep && (
+            <Link href={nextStep.href} rel="next">
+              {nextStep.label} →
+            </Link>
+          )}
+        </nav>
+      )}
+
+      <section id="study" className="scr-read-after" aria-labelledby="study-h">
+        <h2 id="study-h" className="scr-read-after-h">
+          <Wheel />
+          Go deeper — {meta.name} {chapter}
+        </h2>
+
+        <ChapterContext
           guide={guide}
-          originalAvailable={originalAvailable}
-          showOriginal={showOriginal}
-          compareName={compare ? (canons.translations[compare]?.name ?? compare) : null}
-          hasConnections={Object.keys(xref?.refs ?? {}).some(key => key.startsWith(`${chapter}:`)) || !!neighbours?.neighbours.length}
-          activeIntent={studyIntent}
-          onIntent={chooseStudyIntent}
-          canons={canons}
-          tradition={tradition}
-          openVerse={openVerse}
-          openRefs={openVerse !== null ? refsFor(openVerse) : []}
+          bookName={meta.name}
+          baseHref={base}
+          sources={guideSources}
+          editionName={guide?.readingContextSource && canons.translations[guide.readingContextSource.translation]?.name}
         />
 
-        <div className="scr-study-reading">
-          <ChapterContext
-            guide={guide}
-            bookName={meta.name}
-            baseHref={base}
-            sources={guideSources}
-            editionName={guide?.readingContextSource && canons.translations[guide.readingContextSource.translation]?.name}
-          />
-          {!verses && requestStatus === "loading" && (
-            <p className="scr-empty" role="status">
-              Loading {transName} text…
-            </p>
-          )}
-          {!verses && requestStatus === "error" && (
-            <p className="scr-empty" role="alert">
-              Could not load {transName} text. Check your connection and try again.
-            </p>
-          )}
-          {!verses && requestStatus === "ready" && (
-            <p className="scr-empty">
-              This chapter isn&rsquo;t in {transName} — pick another version with
-              <strong> Aa</strong> in the bar below.
-            </p>
-          )}
+        <ChapterGuide
+          guide={guide}
+          bookName={meta.name}
+          chapter={chapter}
+          baseHref={base}
+          sources={guideSources}
+          open={guideOpen}
+          onToggle={setChapterGuideOpen}
+        />
 
-          {compare && requestStatus === "comparison-error" && (
-            <p className="scr-empty" role="alert">
-              Could not load {canons.translations[compare]?.name ?? compare} comparison text.
-              {" "}{transName} is still available to read and save.
-            </p>
-          )}
-
-          {compare && compareVerses && verses && (
-            <p className="scr-cmp-legend">
-              <span>{transName}</span>
-              <span>{canons.translations[compare]?.name ?? compare}</span>
-            </p>
-          )}
-
-          {originalEdition && (
-            <aside
-              id="original-language"
-              className="scr-original-legend"
-              aria-label="Original-language edition"
-            >
-              <strong>
-                {originalEdition.language} · {originalEdition.short}
-              </strong>
-              <span>Tap a source word for its lemma or lexical ID and grammatical parsing.</span>
-              <a href="/sources#scripture-texts">Edition and license</a>
-            </aside>
-          )}
-
-          {verses && (
-            <article
-              id="chapter-text"
-              className={readingClass}
-              aria-label={`${meta.name} chapter ${chapter}`}
-            >
-              {readingGroups.map(group => <div className="scr-reading-paragraph" key={group[0]} data-reading-group={group[0] + 1}>
-              {group.map(i => {
-                const v = verses[i];
-                const n = i + 1;
-                const cv =
-                  compare && compareVerses ? (compareVerses[i] ?? "") : null;
-                const picked = selVerses.includes(n);
-                const open = openVerse === n;
-                const panelId = `vp${n}`;
-                const refs = refsFor(n);
-                const originalVerse = originalByVerse.get(n);
-                return (
-                  <div
-                    className={`scr-v${/[\r\n]/.test(v) ? " scr-lined-verse" : ""}${picked ? " is-picked" : ""}${open ? " is-open" : ""}`}
-                    key={n}
-                    id={`v${n}`}
-                  >
-                    <p className={`scr-verse${cv !== null ? " scr-cmp" : ""}`}>
-                      <button
-                        type="button"
-                        className="scr-vnum"
-                        onClick={() => {
-                          if (selecting) toggleSelect(n);
-                          else setOpenVerse(open ? null : n);
-                        }}
-                        aria-expanded={selecting ? undefined : open}
-                        aria-controls={open ? panelId : undefined}
-                        aria-pressed={selecting ? picked : undefined}
-                        aria-label={
-                          selecting
-                            ? `Verse ${n}, ${picked ? "selected" : "not selected"}`
-                            : `Verse ${n} — open study tools`
-                        }
-                      >
-                        {n}
-                      </button>
-                      {cv !== null ? (
-                        <span className="scr-cmp-cells">
-                          <span>
-                            {v ? verseBody(v, n) : <span className="scr-gap">—</span>}
-                          </span>
-                          <span>
-                            {cv ? (
-                              <VerseText text={cv} seen={glossSeen} />
-                            ) : (
-                              <span className="scr-gap">—</span>
-                            )}
-                          </span>
-                        </span>
-                      ) : v ? (
-                        // The versal: the chapter's first letter in gold leaf.
-                        // Skipped when the first character is punctuation or
-                        // when the red-letter layer claims the opening verse.
-                        n === 1 && !(redLetter && redFor(1)) && /^[A-Za-z\u00C0-\u024F]/.test(v) ? (
-                          <>
-                            <Versal letter={v[0]} className="scr-versal" />
-                            <VerseText text={v.slice(1)} seen={glossSeen} />
-                          </>
-                        ) : (
-                          verseBody(v, n)
-                        )
-                      ) : (
-                        <span className="scr-gap">—</span>
-                      )}
-                    </p>
-                    {original && originalVerse && (
-                      <OriginalVerseLine chapter={original} verse={originalVerse} />
-                    )}
-                    {open && v && (
-                      <VersePanel
-                        id={panelId}
-                        n={n}
-                        text={v}
-                        refs={refs}
-                        canons={canons}
-                        tradition={tradition}
-                        trans={trans}
-                        transLabel={TRANS_ABBR[trans]}
-                        bookName={meta.name}
-                        chapter={chapter}
-                        chapterHref={`${base}/${chapter}${q}`}
-                        selected={picked}
-                        speechVoice={easy.speechVoice}
-                        speechRate={easy.speechRate}
-                        onToggleSelect={() => toggleSelect(n)}
-                        onClose={() => setOpenVerse(null)}
-                      />
-                    )}
-                  </div>
-                );
-              })}
-              </div>)}
-            </article>
-          )}
-
-          <details className="reading-layout-note">
-            <summary>About this reading layout</summary>
-            <p>Reading paragraphs add editorial spacing between unchanged verses. They do not reconstruct the original manuscript’s paragraphs. Verse numbers, supplied line breaks and citation links are retained. Books such as Psalms and Proverbs keep verses on separate lines; original-language and comparison views stay aligned by verse. Choose One verse per line in Reading settings whenever you prefer.</p>
-          </details>
-          <p className="scr-read-hint">
-            Tap any verse number for its cross-references, audio, and share links.
-            Dotted words have a plain-language definition.
-          </p>
-
-          <section id="study" className="scr-read-after" aria-labelledby="study-h">
-            <h2 id="study-h" className="scr-read-after-h">
-              <Wheel />
-              Go deeper — {meta.name} {chapter}
-            </h2>
-
-            <ChapterGuide
-              guide={guide}
-              bookName={meta.name}
-              chapter={chapter}
-              baseHref={base}
-              sources={guideSources}
-              open={guideOpen}
-              onToggle={setChapterGuideOpen}
-            />
-
-            <div id="connections" className="scr-threads-block">
-              <button
-                type="button"
-                className="scr-wide-toggle"
-                aria-expanded={showThreads}
-                onClick={() => setShowThreads((s) => !s)}
-              >
-                <span>
-                  <strong>Cross-reference map</strong>
-                  <small>Every thread leaving this chapter, drawn across the canon</small>
-                </span>
-                <span aria-hidden="true">{showThreads ? "–" : "+"}</span>
-              </button>
-              {showThreads && (
-                <Threads
-                  canons={canons}
-                  tradition={tradition}
-                  bookId={bookId}
-                  chapter={chapter}
-                  xref={xref}
-                />
-              )}
-            </div>
-
-            <ChapterNeighbours
-              data={neighbours}
-              translation={trans}
+        <div id="connections" className="scr-threads-block">
+          <button
+            type="button"
+            className="scr-wide-toggle"
+            aria-expanded={showThreads}
+            onClick={() => setShowThreads((s) => !s)}
+          >
+            <span>
+              <strong>Cross-reference map</strong>
+              <small>Every thread leaving this chapter, drawn across the canon</small>
+            </span>
+            <span aria-hidden="true">{showThreads ? "–" : "+"}</span>
+          </button>
+          {showThreads && (
+            <Threads
               canons={canons}
-              traditionId={tradition.id}
-              bookName={meta.name}
+              tradition={tradition}
+              bookId={bookId}
               chapter={chapter}
+              xref={xref}
             />
-
-            <UnseenRecord data={unseen} bookName={meta.name} chapter={chapter} />
-
-            <nav className="scr-read-onward" aria-label="Continue reading">
-              {chapter > 1 && (
-                <Link href={`${base}/${chapter - 1}${q}`} rel="prev">
-                  ← {meta.name} {chapter - 1}
-                </Link>
-              )}
-              {chapter < chapterCount && (
-                <Link href={`${base}/${chapter + 1}${q}`} rel="next">
-                  {meta.name} {chapter + 1} →
-                </Link>
-              )}
-              {currentBookIndex > 0 && (
-                <Link
-                  href={`/scriptures/${tradition.id}/${tradition.books[currentBookIndex - 1]}`}
-                >
-                  ← {canons.books[tradition.books[currentBookIndex - 1]]?.name}
-                </Link>
-              )}
-              {currentBookIndex >= 0 && currentBookIndex < tradition.books.length - 1 && (
-                <Link
-                  href={`/scriptures/${tradition.id}/${tradition.books[currentBookIndex + 1]}`}
-                >
-                  {canons.books[tradition.books[currentBookIndex + 1]]?.name} →
-                </Link>
-              )}
-            </nav>
-          </section>
+          )}
         </div>
-      </div>
+
+        <nav className="scr-reader-study-actions" aria-label="Chapter study tools">
+          <button type="button" className="scr-btn" onClick={revealWordBridge} disabled={!verses}>Word Bridge</button>
+          <span>Connect English words with Hebrew and Greek.</span>
+        </nav>
+
+        <ChapterNeighbours
+          data={neighbours}
+          translation={trans}
+          canons={canons}
+          traditionId={tradition.id}
+          bookName={meta.name}
+          chapter={chapter}
+        />
+
+        <UnseenRecord data={unseen} bookName={meta.name} chapter={chapter} />
+
+        {parallel && (
+          <div className="scr-neighbours">
+            <h3 className="scr-neighbours-h">Parallels</h3>
+            <p className="scr-meta">
+              <Link href={parallel.href}>{parallel.title}</Link> · {parallel.subtitle}
+            </p>
+          </div>
+        )}
+
+        <div className="scr-neighbours scr-chapter-source">
+          <h3 className="scr-neighbours-h">Source</h3>
+          <p className="scr-meta">
+            {transName} · {transLicense} · {tradition.name} canon ·{" "}
+            <a href="/sources#scripture-texts">Editions and licenses</a>
+          </p>
+          {originalAvailable && !showOriginal && (
+            <button type="button" className="scr-btn" onClick={() => void showOriginalText()}>
+              Show the original language
+            </button>
+          )}
+          <SaveOffline key={`${bookId}/${chapter}/${trans}`} bookId={bookId} bookName={meta.name}
+            chapter={chapter} translation={trans} translationName={transName} license={transLicense}
+            sourcePath={`${base}/${chapter}?t=${trans}`} verses={verses} />
+        </div>
+
+        <details className="reading-layout-note">
+          <summary>About this reading layout</summary>
+          <p>Reading paragraphs add editorial spacing between unchanged verses. They do not reconstruct the original manuscript’s paragraphs. Verse numbers, supplied line breaks and citation links are retained. Books such as Psalms and Proverbs keep verses on separate lines; original-language and comparison views stay aligned by verse. Choose One verse per line in Reading settings whenever you prefer.</p>
+        </details>
+      </section>
       </div>
 
       <ReaderBar
         label={`${meta.name} ${chapter}`}
-        prevHref={chapter > 1 ? `${base}/${chapter - 1}${q}` : null}
-        nextHref={chapter < chapterCount ? `${base}/${chapter + 1}${q}` : null}
+        prevHref={prevHref}
+        prevLabel={prevStep?.aria}
+        nextHref={nextHref}
+        nextLabel={nextStep?.aria}
         onPick={() => setPickOpen(true)}
+        onPickIntent={preloadChapterPicker}
         onSettings={() => setSetsOpen(true)}
         onListen={toggleListen}
         listening={speechMode === "chapter"}
@@ -936,13 +1005,13 @@ export default function ReaderClient({
 
       {pickOpen && (
         <ChapterPicker
-          canons={canons}
-          tradition={tradition}
-          bookId={bookId}
-          bookName={meta.name}
-          chapter={chapter}
-          chapterCount={chapterCount}
-          hrefFor={(n) => `${base}/${n}${q}`}
+          start={{
+            tradition: tradition.id,
+            translation: trans,
+            book: bookId,
+            chapter,
+            chapterHref: (n) => `${base}/${n}${q}`,
+          }}
           onClose={() => setPickOpen(false)}
         />
       )}

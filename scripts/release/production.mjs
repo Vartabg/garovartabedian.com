@@ -10,7 +10,11 @@ export const repository = "Vartabg/garovartabedian";
 export const projectId = "prj_WV5e91cgAUVe3PlVNFXUwuJonqDL";
 export const orgId = "team_mmxvo8Upj7qpyLgCOmxS8Rv1";
 export const domains = ["www.garovartabedian.com", "garovartabedian.com", "garovartabedian.vercel.app"];
-const cli = ["--yes", "vercel@59.9.1"];
+const cli = ["--yes", "vercel@65.0.0"];
+
+export function commandDeadlineMinutes(name) {
+  return name === "Stage verified artifact" ? 90 : 30;
+}
 
 export function deploymentUrl(value) {
   let url = value.trim();
@@ -45,8 +49,12 @@ export function verifyMergedPull(pulls, sha) {
   }
 }
 
-/** All gates finish before upload; promotion uses only the inspected artifact. */
-export async function releasePipeline(run, sha, onStaged = () => {}) {
+/**
+ * All gates finish before upload; promotion uses only the inspected artifact.
+ * With `record`, earlier attempts are written into the build and checked on the built page.
+ * @param {{ reports: string, exclude: string } | null} [record]
+ */
+export async function releasePipeline(run, sha, onStaged = () => {}, record = null) {
   const vercel = (name, args, capture = false) => run(name, "npx", [...cli, ...args, "--scope", orgId], capture);
   const current = async () => {
     const ref = await run("Check current master", "git", ["ls-remote", "origin", "refs/heads/master"], true);
@@ -58,8 +66,14 @@ export async function releasePipeline(run, sha, onStaged = () => {}) {
   await run("Lint", "npm", ["run", "lint"]);
   await run("Typecheck", "npm", ["run", "typecheck"]);
   await run("Unit and smoke tests", "npm", ["run", "test"]);
+  if (record) {
+    await run("Write release record", "node", [
+      "scripts/release/release-record.mjs", "--reports", record.reports, "--exclude", record.exclude, "--out", ".release-record/record.json",
+    ]);
+  }
   await vercel("Pull production configuration", ["pull", "--yes", "--environment=production"]);
   await vercel("Build production locally", ["build", "--prod"]);
+  if (record) await run("Verify release record", "node", ["scripts/release/check-release-record.mjs"]);
   await run("Browser tests", "node", ["scripts/release/browser.mjs"]);
   await run("Accessibility tests", "npm", ["run", "test:a11y"]);
   const drift = await run("Check generated source", "git", ["status", "--porcelain", "--untracked-files=all"], true);
@@ -73,6 +87,7 @@ export async function releasePipeline(run, sha, onStaged = () => {}) {
   await vercel("Wait for staged deployment", ["inspect", url, "--wait", "--timeout=10m"], true);
   const staged = JSON.parse(await vercel("Inspect release identity", ["api", `/v13/deployments/${new URL(url).hostname}`, "--raw"], true));
   verifyDeployment(staged, sha, url);
+  await run("Verify staged Thomas reader", "node", ["scripts/release/check-staged-thomas.mjs", url, sha]);
   await current();
   await vercel("Promote verified artifact", ["promote", url, "--yes", "--timeout=5m"]);
   for (const domain of domains) {
@@ -103,8 +118,9 @@ function executor(cwd, env, report, save) {
         };
         process.once("SIGINT", stop);
         process.once("SIGTERM", stop);
-        // Bound tools that can stall during browser or server cleanup, too.
-        const deadline = setTimeout(() => { timedOut = true; stop(); }, 30 * 60 * 1000);
+        // Large verified archives need a longer upload window; every step stays bounded.
+        const deadlineMinutes = commandDeadlineMinutes(name);
+        const deadline = setTimeout(() => { timedOut = true; stop(); }, deadlineMinutes * 60 * 1000);
         deadline.unref();
         child.stdout?.on("data", (chunk) => { stdout += chunk; });
         const cleanup = () => {
@@ -116,7 +132,7 @@ function executor(cwd, env, report, save) {
         child.once("error", (error) => { cleanup(); reject(error); });
         child.once("close", (code, signal) => {
           cleanup();
-          if (timedOut) reject(new Error(`${name} exceeded its 30-minute deadline.`));
+          if (timedOut) reject(new Error(`${name} exceeded its ${deadlineMinutes}-minute deadline.`));
           else if (interrupted || code !== 0) reject(new Error(`${name} failed (${signal ?? code}).`));
           else resolve(stdout);
         });
@@ -178,7 +194,7 @@ async function main() {
     const port = await unusedPort();
     const env = { ...process.env, CI: "1", PORT: port, A11Y_BASE_URL: `http://127.0.0.1:${port}`, VERCEL_PROJECT_ID: projectId, VERCEL_ORG_ID: orgId };
     const releaseRun = executor(checkout, env, report, save);
-    Object.assign(report, await releasePipeline(releaseRun, sha, (url) => { report.stagedUrl = url; }));
+    Object.assign(report, await releasePipeline(releaseRun, sha, (url) => { report.stagedUrl = url; }, { reports, exclude: reportFile }));
     report.status = "complete";
     console.log(`\n[release] Live: https://${domains[0]}\n[release] Commit: ${sha}`);
   } catch (error) {

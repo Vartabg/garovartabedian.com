@@ -1,0 +1,501 @@
+{
+  "book": "JOL",
+  "bookName": "Joel",
+  "oneLine": "A ruined harvest becomes a summons to communal repentance, a promise of renewed life and divine spirit, and a vision of judgment on the nations.",
+  "orient": "Joel begins with crops stripped bare, offerings interrupted, and animals struggling for food and water. The prophet gathers the whole community to lament as the day of Yahweh approaches. A terrifying army scene gives way to a call to return, then to promises of harvest, divine presence, and the outpouring of the Spirit. The final chapter brings the nations to judgment for their treatment of Judah and imagines a watered, secure Jerusalem.",
+  "whereYouAre": "Judah and Jerusalem are the center of the book’s world. Priests serve at Yahweh’s house, but the agricultural disaster has stopped the grain and drink offerings. The heading names Joel and his father, Pethuel, without naming a king or dating the crisis. A date after the Babylonian exile is a substantial scholarly proposal, not a date supplied by the text.",
+  "facts": {
+    "writtenBy": "The heading identifies Joel son of Pethuel as the recipient of Yahweh’s word. It supplies no further biography or account of the book’s final arrangement.",
+    "writtenWhen": "Undated in its heading. USCCB proposes about 450–400 BCE, after the exile, while the NET notes survey earlier and later proposals. A precise year or reign cannot be established from this evidence.",
+    "writtenFor": "The inhabitants of Judah and Jerusalem, addressed through elders, farmers, wine drinkers, priests, and the assembled community.",
+    "place": "Judah, Jerusalem, and Zion provide the setting. The place of composition is not identified.",
+    "covers": "Agricultural devastation, communal lament and return, promised renewal, the Spirit’s outpouring, and judgment on nations that scattered and exploited Judah’s people.",
+    "size": "73 verses: WEB, KJV, and Douay-Rheims have 3 chapters of 20, 32, and 21 verses; Brenton has 4 chapters of 20, 27, 5, and 21 verses."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "web-jol"
+    ],
+    "writtenWhen": [
+      "web-jol",
+      "usccb-jol-intro",
+      "net-jol"
+    ],
+    "writtenFor": [
+      "web-jol"
+    ],
+    "place": [
+      "web-jol"
+    ],
+    "covers": [
+      "web-jol"
+    ],
+    "size": [
+      "english-editions"
+    ]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew, chiefly prophetic poetry, with headings, instructions for public lament, divine speeches, and a judgment scene.",
+    "register": "Repeated commands, parallel clauses, changing addressees, and images drawn from farming and war make the book urgent and communal. The sound of lament gives way to invitations to rejoice.",
+    "spokenWorld": "The prophet addresses a Judean community and its God. Neighboring peoples and distant buyers of captives appear in the final chapter, but the book does not preserve dialogue in their languages.",
+    "readerSignal": "Notice every change of audience: elders, drinkers, farmers, priests, land, animals, Zion’s children, and nations. The same trumpet command first announces danger and then gathers a fast. WEB 2:18 marks a major turn toward divine compassion; the Spirit promise begins at 2:28, within the same English chapter.",
+    "englishLayer": "References here follow WEB. Hebrew editions and the hosted Brenton divide the book into four chapters: WEB 2:28–32 corresponds to their 3:1–5, and WEB 3:1–21 to their 4:1–21. WEB 1 and 2:1–27 retain the same numbers. Matching a reference still requires comparing wording, especially at 1:17, 2:23, and the final verse.",
+    "textualHistory": [
+      {
+        "label": "The Hebrew work and its uncertain date",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The name in the heading and the scenes of worship and disaster belong to the received Hebrew work. They do not establish the date of every passage. A postexilic setting is favored by the USCCB and ESV introductions, but the book names no reigning king or contemporary imperial ruler.",
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol",
+          "usccb-jol-intro",
+          "esv-jol-intro"
+        ]
+      },
+      {
+        "label": "One passage, two chapter divisions",
+        "language": "Hebrew and English",
+        "role": "section",
+        "spans": [
+          "2:28–32"
+        ],
+        "description": "The promise of the Spirit and escape occupies Hebrew chapter 3, five verses long. It closes chapter 2 in WEB, KJV, and Douay-Rheims. The hosted Hebrew display follows WEB’s numbers, while the linked Hebrew source retains the four-chapter division. No passage is missing because the chapter totals differ.",
+        "sourceIds": [
+          "hebrew-jol",
+          "english-editions"
+        ]
+      },
+      {
+        "label": "Greek-based English comparison",
+        "language": "Greek Septuagint, represented by Brenton’s English",
+        "role": "translation",
+        "description": "Brenton retains four chapters. Its 1:17 describes heifers at mangers where WEB describes seeds under clods; its 2:23 begins with food rather than early rain or a teacher. Such differences involve textual and translation history, not merely modern English style. Brenton’s English alone cannot settle the underlying Hebrew reading.",
+        "sourceIds": [
+          "english-editions",
+          "brenton-edition"
+        ]
+      },
+      {
+        "label": "Joel in the Pentecost speech",
+        "language": "Greek New Testament, read here in English",
+        "role": "translation",
+        "description": "Acts 2:16–21 explicitly names Joel and quotes the Spirit passage. Its opening places the promise in the last days, where WEB Joel says afterward. Read this as a later Christian use of Joel alongside the passage’s own setting of Judah’s renewal, cosmic signs, and escape in Zion.",
+        "sourceIds": [
+          "web-acts",
+          "web-jol",
+          "usccb-jol-3"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Eating that leaves nothing behind",
+        "original": "יֶתֶר — yeter — what remains; אָכַל — ʾakhal — ate",
+        "explanation": "In 1:4 each remnant becomes food for the next destroyer. The repeated verb ate makes the loss cumulative. The four insect terms return in a different order in 2:25, where the destroyed years are promised restoration.",
+        "translationNote": "WEB uses swarming locust, great locust, grasshopper, and caterpillar in 1:4; other editions choose different labels. NET notes that their exact distinctions are uncertain.",
+        "caution": "Do not present the four terms as an established biological life cycle or a code for four named empires. The explicit literary effect is repeated, overwhelming consumption.",
+        "refs": [
+          "1:4",
+          "1:6",
+          "1:7",
+          "2:25"
+        ],
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol",
+          "english-editions",
+          "net-jol"
+        ]
+      },
+      {
+        "title": "The land shares the people’s lament",
+        "original": "שֻׁדַּד שָׂדֶה — shuddad sadeh — the field is devastated; אָבְלָה אֲדָמָה — ʾavlah ʾadamah — the ground mourns",
+        "explanation": "The paired phrases at 1:10 echo in sound as they join ruined fields and mourning ground. The chapter moves outward from people’s losses to groaning herds and thirsty animals. At 2:21–22 the land and animals are addressed again, now with reassurance.",
+        "translationNote": "English preserves the personification of the ground but less of the repeated sounds. Reading the Hebrew phrases aloud makes their pairing easier to hear.",
+        "caution": "This is poetic participation in disaster and renewal. It does not turn every image into a literal report about the land speaking.",
+        "refs": [
+          "1:10",
+          "1:18",
+          "1:20",
+          "2:21",
+          "2:22"
+        ],
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol"
+        ]
+      },
+      {
+        "title": "The same horn calls for alarm and assembly",
+        "original": "תִּקְעוּ שׁוֹפָר בְּצִיּוֹן — tiqʿu shofar betsiyyon — blow a horn in Zion",
+        "explanation": "The exact command opens 2:1 and 2:15. The first occurrence introduces the approaching danger; the second calls the people to a fast. Repeated imperatives in 2:15–17 gather even nursing children and newlyweds into the public response.",
+        "translationNote": "WEB’s trumpet renders shofar, a horn. The repeated wording ties the alarm and the assembly together rather than beginning unrelated episodes.",
+        "caution": "The call to involve the entire community does not supply a detailed historical account of how the gathering was carried out.",
+        "refs": [
+          "1:14",
+          "2:1",
+          "2:15",
+          "2:16",
+          "2:17"
+        ],
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol"
+        ]
+      },
+      {
+        "title": "Return reaches beyond the torn garment",
+        "original": "שֻׁבוּ — shuvu — return; לְבַבְכֶם — levavkhem — your heart",
+        "explanation": "The command to return in 2:12–13 is followed by hope that God may turn and relent in 2:14. Tearing the heart intensifies the call beyond an outward sign of mourning. Yet the same passage continues to ask for a fast, an assembly, and priestly prayer.",
+        "translationNote": "Both Hebrew and WEB use a singular heart. The Hebrew possessive suffix addresses a group: your is plural. The appeal is both inward and communal.",
+        "caution": "The question in 2:14 leaves the blessing in God’s hands. Repentance is not described as a technique that guarantees a result, and heartfelt response does not abolish the surrounding public practices.",
+        "refs": [
+          "2:12",
+          "2:13",
+          "2:14",
+          "2:15",
+          "2:17"
+        ],
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol",
+          "esv-jol-intro"
+        ]
+      },
+      {
+        "title": "Pouring out the Spirit across social divisions",
+        "original": "אֶשְׁפּוֹךְ אֶת־רוּחִי — ʾeshpokh ʾet-ruḥi — I will pour out my spirit; כָּל־בָּשָׂר — kol-basar — all flesh",
+        "explanation": "The promise names daughters and sons, old and young, and then male and female servants. The repeated pouring language joins the groups in the same divine gift. In 2:32, people call on Yahweh’s name while the closing clause speaks of those whom Yahweh calls.",
+        "translationNote": "These are WEB 2:28–32, Hebrew and Brenton 3:1–5. Ruḥi means my spirit; the broader word ruaḥ can also mean wind or breath, but neither alternative cancels the prophetic activity described here.",
+        "caution": "Begin with the groups the text actually names and its setting in Judah. Distinguish the widened participation within this passage from later arguments about its full reach and fulfillment.",
+        "refs": [
+          "2:28",
+          "2:29",
+          "2:32"
+        ],
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol",
+          "usccb-jol-3"
+        ]
+      },
+      {
+        "title": "A harvest becomes a judgment scene",
+        "original": "עֵמֶק יְהוֹשָׁפָט — ʿemeq yehoshafat — valley of Jehoshaphat; לִשְׁפֹּט — lishpot — to judge",
+        "explanation": "The valley’s name evokes Yahweh’s judgment, and the verbs in 3:2 and 3:12 state that judgment directly. Agricultural implements become weapons, then the full winepress and ripe harvest picture the nations’ wrongdoing reaching judgment. The fertile ending reuses farm and water images for Judah’s restoration.",
+        "translationNote": "At 3:14 WEB has valley of decision, Douay-Rheims valley of destruction, and Brenton 4:14 valley of judgment. The context concerns the divine verdict on the gathered nations.",
+        "caution": "The passage does not depict a crowd deciding whether to believe. Nor does the symbolic valley name securely identify a modern battle site.",
+        "refs": [
+          "3:2",
+          "3:10",
+          "3:12",
+          "3:13",
+          "3:14",
+          "3:18"
+        ],
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol",
+          "english-editions",
+          "usccb-jol-4"
+        ]
+      }
+    ],
+    "examplesHeading": "Hebrew expressions to notice",
+    "examples": [
+      {
+        "ref": "1:4",
+        "form": "אָכַל — ʾakhal",
+        "meaning": "Ate.",
+        "why": "The same verb occurs three times as each remaining portion is consumed.",
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol"
+        ]
+      },
+      {
+        "ref": "1:10",
+        "form": "אָבְלָה אֲדָמָה — ʾavlah ʾadamah",
+        "meaning": "The ground mourns.",
+        "why": "The similar sounds make the personified ground part of the chapter’s lament.",
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol"
+        ]
+      },
+      {
+        "ref": "2:12",
+        "form": "שֻׁבוּ — shuvu",
+        "meaning": "Return, addressed to a group.",
+        "why": "A plural command calls the community back; the same root describes the hoped-for divine turning in 2:14.",
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol"
+        ]
+      },
+      {
+        "ref": "2:23",
+        "form": "הַמּוֹרֶה לִצְדָקָה — hammoreh litsdaqah",
+        "meaning": "The phrase WEB renders as early rain in just measure.",
+        "why": "Douay-Rheims has a teacher of justice, while Brenton has food fully. The word moreh can bear the rain or teacher sense; surrounding rain and harvest language is essential to interpretation.",
+        "sourceIds": [
+          "hebrew-jol",
+          "english-editions",
+          "usccb-jol-2"
+        ]
+      },
+      {
+        "ref": "2:28",
+        "form": "רוּחִי — ruḥi",
+        "meaning": "My spirit.",
+        "why": "The first-person suffix identifies the gift as God’s, while the following groups show its spread through the community. Hebrew and Brenton number the verse 3:1.",
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol"
+        ]
+      },
+      {
+        "ref": "3:12",
+        "form": "לִשְׁפֹּט — lishpot",
+        "meaning": "To judge.",
+        "why": "The verb states the purpose of the divine session in the valley and guides the reading of decision two verses later. Hebrew and Brenton number it 4:12.",
+        "sourceIds": [
+          "hebrew-jol",
+          "web-jol"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Prophetic lament, summons, promise, and judgment vision",
+    "how": "Follow the changing audiences and the repeated images of grain, wine, land, and water. Read the locust and battle language together before deciding how the images relate to a historical invasion. Keep the call to return and the promise of renewal within the same unfolding argument."
+  },
+  "cast": [
+    {
+      "name": "Joel son of Pethuel",
+      "who": "The speaker named in the heading; his family background, office, and personal history are otherwise unspecified."
+    },
+    {
+      "name": "Yahweh",
+      "who": "The God whose approaching day brings terror, whose compassion renews the land, and whose presence in Zion closes the book."
+    },
+    {
+      "name": "The community of Judah",
+      "who": "Elders, drinkers, farmers, priests, children, newlyweds, and servants appear as participants in the disaster, appeal, and promise."
+    },
+    {
+      "name": "The locusts and the approaching army",
+      "who": "Destructive swarms and military images overlap. The army in chapter 2 is commanded by Yahweh; no human commander is named."
+    },
+    {
+      "name": "The nations",
+      "who": "Peoples brought to judgment for scattering Judahites, dividing the land, and trading captives. Tyre, Sidon, Philistia, Egypt, and Edom receive particular attention."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "A harvest lost and a community summoned",
+      "chapters": "1",
+      "precise": "1:1–20",
+      "note": "After the heading, the loss is told through successive groups and through the land and animals. Calls to mourn and assemble culminate in an appeal to Yahweh."
+    },
+    {
+      "heading": "Alarm, return, and widening promise",
+      "chapters": "2",
+      "precise": "2:1–32",
+      "note": "An overwhelming advance fills 2:1–11; the call to return and assemble follows in 2:12–17. Divine compassion turns the movement toward renewal in 2:18–27. The Spirit and escape passage in 2:28–32 is chapter 3 in Hebrew and Brenton."
+    },
+    {
+      "heading": "The nations judged and Zion renewed",
+      "chapters": "3",
+      "precise": "3:1–21",
+      "note": "The charges and threatened reversal occupy 3:1–8. The nations are summoned to judgment in 3:9–16, and 3:17–21 pictures Judah’s future with Yahweh dwelling in Zion. This is chapter 4 in Hebrew and Brenton."
+    }
+  ],
+  "purpose": "Joel draws a devastated community into lament and return, then imagines renewed sustenance, participation in the Spirit, and security through God’s presence. The harvest images connect human need, worship, judgment, and hope without allowing the final abundance to erase the opening loss.",
+  "snags": [
+    {
+      "snag": "Is this three chapters or four?",
+      "help": "Both arrangements contain 73 verses. WEB 2:28–32 is Hebrew and Brenton 3:1–5; WEB chapter 3 is their chapter 4. Match the actual passage when comparing a commentary or translation. The Hebrew panel on this site has been aligned to WEB’s numbers."
+    },
+    {
+      "snag": "Are the locusts literal insects or a human army?",
+      "help": "Chapter 1 describes crop consumption in terms of an invading nation. Chapter 2 develops warriors, horses, and cosmic disturbance, while 2:25 explicitly calls the crop-devouring creatures God’s army. Readers differ over how far the battle scene reaches beyond the plague. The text does not name Assyria, Babylon, or a modern army."
+    },
+    {
+      "snag": "Does the book identify the people’s specific offense?",
+      "help": "Joel demands wholehearted return but gives no detailed catalogue of Judah’s sins. The later accusations against the nations are explicit: scattering people, taking property, trading captives, and shedding innocent blood. Avoid filling the earlier silence with a particular offense or assigning blame to people suffering a present-day disaster."
+    },
+    {
+      "snag": "Why does 1:17 differ so much across translations?",
+      "help": "WEB describes seeds rotting under clods; Douay-Rheims describes beasts rotting in dung; Brenton has heifers starting at mangers. The NET notes mark the Hebrew line as unusually difficult. Its contribution to the scene of agricultural collapse is clearer than the exact objects and actions in every clause."
+    },
+    {
+      "snag": "Did the people actually carry out the fast before God answered?",
+      "help": "The book moves from instructions and a model prayer to the divine response in 2:18–19 without narrating the assembly itself. WEB uses past verbs for God’s pity and answer, while KJV presents them as future. The turn toward compassion is clear; the implied sequence should not be expanded into an invented historical scene."
+    },
+    {
+      "snag": "Why does a teacher appear where another translation has rain?",
+      "help": "At 2:23 WEB has early rain in just measure, KJV former rain moderately, Douay-Rheims a teacher of justice, and Brenton food fully. USCCB notes the rain and teacher senses of moreh. Compare the surrounding harvest language before identifying a particular teacher or messianic figure."
+    },
+    {
+      "snag": "Does restored harvest guarantee repayment of every personal loss?",
+      "help": "In 2:19–27 grain, wine, oil, rain, and food reverse the losses described earlier. The promise addresses this community and its land. Turning it into a guaranteed timetable for an individual’s wealth or recovery goes beyond what the passage says."
+    },
+    {
+      "snag": "How should the retaliation against traffickers be read?",
+      "help": "The protest against selling Judean children is followed by a threat to sell the perpetrators’ children in 3:8. Name both the condemnation and the disturbing reversal. The vision is not an instruction for readers to enslave people or punish children for another person’s actions."
+    },
+    {
+      "snag": "Is the final verse about cleansing or vengeance?",
+      "help": "WEB, KJV, and Douay-Rheims speak of cleansing blood; Brenton 4:21 emphasizes investigating and avenging it. NET’s vengeance rendering adopts a different Hebrew reading. The relation to innocent blood in 3:19 matters, but the wording should remain visible as a textual question. All these editions end with Yahweh dwelling in Zion."
+    }
+  ],
+  "debates": [
+    {
+      "question": "When was Joel composed?",
+      "settled": "The heading gives a prophet and patronymic but no reign or date. A functioning sanctuary and a devastated agricultural community are central.",
+      "positions": [
+        {
+          "view": "A date after the Babylonian exile",
+          "grounds": "USCCB proposes 450–400 BCE, citing the priestly setting, lack of a king, literary relationships, and vocabulary. The ESV introduction also favors a setting after the exile."
+        },
+        {
+          "view": "An earlier crisis in Judah’s history",
+          "grounds": "NET reviews proposals reaching back to the ninth century BCE and others near the Babylonian crisis. Arguments from unnamed enemies, canonical position, or presumed directions of literary borrowing do not supply a firm date."
+        }
+      ],
+      "soWhat": "Use the book’s actual scene as the starting point. Neither the mention of Greek buyers nor a choice about the army image justifies naming an exact year or a final editor."
+    },
+    {
+      "question": "How far does the army image extend beyond the locust crisis?",
+      "settled": "Locust devastation and warfare share the book’s vocabulary, and 2:25 calls the insects God’s army.",
+      "positions": [
+        {
+          "view": "The plague described through military and cosmic poetry",
+          "grounds": "The locusts consume the crops, enter houses, and are removed before the renewed harvest. USCCB reads the warning through locust imagery and the tradition of divine battle."
+        },
+        {
+          "view": "The plague anticipates a further invasion or final conflict",
+          "grounds": "The escalating language of the approaching day and the later gathering of nations leads some interpreters, surveyed in NET, to distinguish a further army from the initial swarm."
+        }
+      ],
+      "soWhat": "Keep the analogy and its limits in view. Neither position authorizes decoding the horses, weapons, or heavenly signs into modern military equipment or a dated prediction."
+    }
+  ],
+  "sources": [
+    {
+      "id": "web-jol",
+      "label": "Joel in the World English Bible",
+      "says": "Primary wording, audiences, images, structure, and the three-chapter reference scheme.",
+      "href": "/scriptures/text/web/JOL.json"
+    },
+    {
+      "id": "english-editions",
+      "label": "Joel in WEB, KJV, Douay-Rheims, and Brenton",
+      "says": "Direct comparison establishes chapter and verse counts and the differences at 1:17, 2:18, 2:23, 2:28–32, and the ending."
+    },
+    {
+      "id": "hebrew-jol",
+      "label": "Open Scriptures Hebrew Bible: Joel",
+      "says": "Hebrew wording and morphology, with the upstream four-chapter numbering. The site aligns these words to WEB. OSHB morphology is CC BY 4.0; the WLC text is public domain.",
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Joel.xml"
+    },
+    {
+      "id": "usccb-jol-intro",
+      "label": "USCCB, Introduction to Joel",
+      "says": "Presents a postexilic dating proposal and outlines the movement from agricultural crisis toward judgment and renewal.",
+      "url": "https://bible.usccb.org/bible/joel/0"
+    },
+    {
+      "id": "usccb-jol-2",
+      "label": "USCCB, Joel 2 notes",
+      "says": "Discusses the combined locust and battle imagery and the rain/teacher senses of moreh.",
+      "url": "https://bible.usccb.org/bible/joel/2"
+    },
+    {
+      "id": "usccb-jol-3",
+      "label": "USCCB, Joel 3 notes",
+      "says": "Discusses the Spirit passage, corresponding to WEB 2:28–32, and its use in Acts.",
+      "url": "https://bible.usccb.org/bible/joel/3"
+    },
+    {
+      "id": "usccb-jol-4",
+      "label": "USCCB, Joel 4 notes",
+      "says": "Explains the symbolic valley name and the judgment scene, corresponding to WEB chapter 3.",
+      "url": "https://bible.usccb.org/bible/joel/4"
+    },
+    {
+      "id": "net-jol",
+      "label": "NET Bible, Joel with translators’ notes",
+      "says": "Surveys competing dates and army interpretations, uncertainty about insect terms and 1:17, and the variant reading behind the final vengeance rendering.",
+      "url": "https://bible.org/download/netbible/ondemand/bybook/joe.pdf"
+    },
+    {
+      "id": "esv-jol-intro",
+      "label": "Crossway, ESV Global Study Bible introduction to Joel",
+      "says": "Favors a postexilic setting and stresses that the communal call to return does not bind God to a required response.",
+      "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-joel/"
+    },
+    {
+      "id": "brenton-edition",
+      "label": "Brenton Septuagint Translation, eBible edition",
+      "says": "Identifies the Greek-based English edition used for comparison.",
+      "url": "https://ebible.org/eng-Brenton/"
+    },
+    {
+      "id": "web-acts",
+      "label": "Acts in the World English Bible",
+      "says": "Acts 2:16–21 names Joel and quotes the Spirit passage in the Pentecost speech.",
+      "href": "/scriptures/text/web/ACT.json"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Follow the same losses from crops to offerings, livelihoods, joy, and animals rather than separating worship from daily sustenance.",
+      "refs": [
+        "1:9",
+        "1:10",
+        "1:12",
+        "1:16",
+        "1:18",
+        "1:20"
+      ]
+    },
+    {
+      "tip": "Compare the two trumpet commands, then notice who is called into the assembly and what the priests are asked to say.",
+      "refs": [
+        "2:1",
+        "2:15",
+        "2:16",
+        "2:17"
+      ]
+    },
+    {
+      "tip": "Read the promise of abundance as a reversal of the opening chapter, and continue past it to the Spirit and the call for escape.",
+      "refs": [
+        "2:21",
+        "2:22",
+        "2:25",
+        "2:28",
+        "2:29",
+        "2:32"
+      ]
+    },
+    {
+      "tip": "Keep the accusations against the nations beside the judgment images. Notice how the final water and fertility answer the earlier drought.",
+      "refs": [
+        "3:2",
+        "3:3",
+        "3:6",
+        "3:8",
+        "3:13",
+        "3:18",
+        "3:19"
+      ]
+    }
+  ],
+  "next": "Read Acts 2 for an explicit Christian use of Joel’s Spirit passage. Compare the conversion of farm tools into weapons in Joel 3:10 with the reversed image in Isaiah 2:4 and Micah 4:3; the contrast is visible even without deciding which passage borrowed from another.",
+  "traditionNote": "Joel belongs to the Twelve Prophets. This briefing uses the three-chapter WEB arrangement, also found in KJV and Douay-Rheims. The Hebrew source and hosted Brenton use four chapters, with the same 73 verses overall; chapter count alone is not a difference in the amount of text."
+}

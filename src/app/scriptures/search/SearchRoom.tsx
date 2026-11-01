@@ -42,6 +42,7 @@ import CanonStrip from "../_components/CanonStrip";
 import ResonanceRadar from "@/app/_components/ResonanceRadar";
 import { useSemanticRequest } from "@/lib/use-semantic-request";
 import { isAbortError } from "@/lib/scriptures/cancellation";
+import { getSiteLocation } from "@/lib/site-navigation";
 
 const SHOWN = 40;
 const OPEN_PREVIEWS = 5;
@@ -58,7 +59,7 @@ export default function SearchRoom({
       <p className="kicker">
         <Link href="/scriptures">Scriptures</Link>
       </p>
-      <h1>Ask the text</h1>
+      <h1 data-hand="capitals">{getSiteLocation("/scriptures/search").label}</h1>
       <p className="lede">
         Enter a reference, search words and phrases, or describe an idea. Word
         matches stay separate from related passages, and every result opens

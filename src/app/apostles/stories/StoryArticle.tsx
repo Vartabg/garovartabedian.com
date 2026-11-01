@@ -5,6 +5,7 @@ import john from "../../../../public/scriptures/text/web/JHN.json";
 import acts from "../../../../public/scriptures/text/web/ACT.json";
 import { APOSTLE_STORIES, type ApostleStory } from "@/lib/apostles/stories";
 import StoryReflections from "./StoryReflections";
+import FromHere from "../../_components/FromHere";
 import "./story.css";
 
 export default function StoryArticle({ story }: { story: ApostleStory }) {
@@ -32,6 +33,13 @@ export default function StoryArticle({ story }: { story: ApostleStory }) {
       </header>
 
       <ReadingTools />
+      <FromHere label={story.title.replace(/\.$/, "")} links={[
+        { href: chapterHref, label: story.reference, kind: "The passage" },
+        { href: story.recordHref, label: story.person, kind: story.kind === "pentecost" ? "The record" : "The apostle" },
+        ...APOSTLE_STORIES.filter((other) => other.slug !== story.slug).map((other) => ({
+          href: `/apostles/stories/${other.slug}`, label: other.title.replace(/\.$/, ""), kind: "Another story",
+        })),
+      ]} />
       <section className="as-beat as-opening" id="the-story" aria-labelledby="as-opening-title">
         <p className="as-number" aria-hidden="true">01</p>
         <div><p className="as-eyebrow">{story.opening.reference}</p><h2 id="as-opening-title">{story.opening.title}</h2><p>{story.opening.text}</p></div>

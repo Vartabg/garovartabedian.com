@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getPassage, type Passage } from "@/lib/jesus/client";
 import { parseRef } from "@/lib/scriptures/refs";
 import type { ProphecyPair } from "@/lib/jesus/types";
@@ -14,6 +14,20 @@ import ProphecyThemeGraph from "./ProphecyThemeGraph";
 type Resolved = { prophecyText: Passage | null; fulfillmentTexts: Passage[] };
 type Result = Resolved | "error";
 type PassageLoader = (ref: string) => Promise<Passage | null>;
+
+/**
+ * The graph above the list draws two pairs of each connection type, in the
+ * order of the story. They are picked by id so their labels and references
+ * always come from the same pairs the list shows.
+ */
+const FEATURED_PAIRS = [
+  "seed-of-woman",
+  "bethlehem",
+  "healing-signs",
+  "cry-of-forsakenness",
+  "pierced-hands-feet",
+  "sign-of-jonah",
+];
 
 const CONNECTION_LABEL: Record<ProphecyPair["connection"], string> = {
   explicit: "Explicit New Testament claim",
@@ -106,6 +120,32 @@ export default function ProphecyRoom({
     );
   };
 
+  /** Opens a pair from the graph and brings it into view. */
+  const openPair = (id: string) => {
+    const pair = pairs.find((p) => p.id === id);
+    if (!pair) return;
+    setOpen(pair.id);
+    if (!resolved.has(pair.id)) resolvePair(pair);
+    document
+      .getElementById(`prophecy-pair-${pair.id}`)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  // The hub and Find link to /jesus/prophecy#prophecy-pair-<id>; open that
+  // pair on arrival, and again if the address changes while the room is open.
+  useEffect(() => {
+    const openFromHash = () => {
+      const match = /^#prophecy-pair-(.+)$/.exec(window.location.hash);
+      if (match) openPair(match[1]);
+    };
+    openFromHash();
+    window.addEventListener("hashchange", openFromHash);
+    return () => window.removeEventListener("hashchange", openFromHash);
+    // One listener for the room's life. Its openPair may see an old cache and
+    // fetch a pair again, which is harmless; resolvePair skips in-flight pairs.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const toggle = (pair: ProphecyPair) => {
     if (open === pair.id) {
       setOpen(null);
@@ -116,6 +156,19 @@ export default function ProphecyRoom({
   };
 
   const themes = [...new Set(pairs.map((p) => p.theme))];
+  const featured = FEATURED_PAIRS.flatMap((id) => {
+    const pair = pairs.find((p) => p.id === id);
+    return pair
+      ? [{
+          id: pair.id,
+          theme: pair.theme,
+          line: pair.line,
+          weight: pair.connection,
+          source: label(pair.prophecy.ref),
+          target: label(pair.fulfillment[0].ref),
+        }]
+      : [];
+  });
   const themeCounts = new Map(themes.map((t) => [t, pairs.filter((p) => p.theme === t).length]));
   // Glossary: dot a foreign term once per page render.
   const glossSeen = new Map<string, string>();
@@ -139,7 +192,7 @@ export default function ProphecyRoom({
         <span><b>Typology</b> names a later Christian reading rather than a direct claim.</span>
       </aside>
 
-      <ProphecyThemeGraph className="my-8" />
+      <ProphecyThemeGraph className="my-8" connections={featured} onSelect={openPair} />
 
       <ProphecyThemeMap themes={themes} counts={themeCounts} />
 
@@ -158,13 +211,13 @@ export default function ProphecyRoom({
                 p.id === "grave-with-the-rich";
 
               return (
-                <article className="jsu-pair-block" key={p.id}>
+                <article className="jsu-pair-block" key={p.id} id={`prophecy-pair-${p.id}`}>
                   <button
                     type="button"
                     className="jsu-pair-head"
                     onClick={() => toggle(p)}
                     aria-expanded={open === p.id}
-                    aria-controls={`prophecy-pair-${p.id}`}
+                    aria-controls={`prophecy-pair-${p.id}-text`}
                   >
                     <span>{p.line}</span>
                     <span className={`jsu-connection is-${p.connection}`}>
@@ -176,7 +229,7 @@ export default function ProphecyRoom({
                     </span>
                   </button>
                   {open === p.id && (
-                    <div id={`prophecy-pair-${p.id}`}>
+                    <div id={`prophecy-pair-${p.id}-text`}>
                       {r === "error" ? (
                         <div className="jsu-inline-error" role="alert">
                           <p>
@@ -244,12 +297,12 @@ export default function ProphecyRoom({
                       {isSufferingServant && (
                         <div className="scr-hit" style={{ marginTop: "1rem", borderLeft: "3px solid var(--accent)", padding: "0.75rem 1rem", background: "var(--surface)" }}>
                           <span style={{ fontSize: "0.75rem", color: "var(--accent)", fontFamily: "monospace", display: "block", marginBottom: "0.25rem", fontWeight: 700 }}>
-                            NotebookLM Textual Critical Dossier
+                            Textual research worksheet
                           </span>
                           <p style={{ fontSize: "0.8125rem", color: "var(--ink)", margin: 0 }}>
                             Collate the Dead Sea Scroll readings (1QIsaᵃ, 5/6HevPs), Septuagint LXX, and patristic citations for this passage in the{" "}
                             <Link href="/jesus/dossier?preset=messianic-servant-isaiah53" style={{ color: "var(--accent)", fontWeight: 600 }}>
-                              Suffering Servant &amp; Pierced One Research Dossier →
+                              Suffering Servant &amp; Pierced One research worksheet →
                             </Link>
                           </p>
                         </div>
@@ -258,7 +311,7 @@ export default function ProphecyRoom({
                       {p.id === "son-of-man" && (
                         <div className="scr-hit" style={{ marginTop: "1rem", borderLeft: "3px solid var(--accent)", padding: "0.75rem 1rem" }}>
                           <span style={{ fontSize: "0.75rem", color: "var(--ink)", fontFamily: "monospace", display: "block", marginBottom: "0.25rem", fontWeight: 700 }}>
-                            Second Temple Apocalyptic &amp; NotebookLM Dossier
+                            Second Temple apocalyptic &amp; research worksheet
                           </span>
                           <p style={{ fontSize: "0.8125rem", color: "var(--ink)", margin: 0 }}>
                             Examine how Daniel 7, the Similitudes of 1 Enoch (chapters 46 &amp; 71), and Jesus’ confession before the Sanhedrin align in the{" "}
@@ -267,7 +320,7 @@ export default function ProphecyRoom({
                             </Link>
                             {" "}or synthesize into an AI podcast in the{" "}
                             <Link href="/jesus/dossier?preset=son-of-man-daniel7" style={{ color: "var(--accent)", fontWeight: 600 }}>
-                              Son of Man Research Dossier →
+                              Son of Man research worksheet →
                             </Link>
                           </p>
                         </div>
@@ -311,7 +364,7 @@ export default function ProphecyRoom({
           Synthesize Messianic Prophecy in Google NotebookLM
         </h3>
         <p style={{ margin: "0 0 1rem", color: "var(--muted)", lineHeight: 1.6, fontSize: "0.95rem" }}>
-          Generate multi-witness dossiers comparing hosted Isaiah, Psalm, Daniel, and Gospel passages with curated source notes,
+          Generate multi-witness worksheets comparing hosted Isaiah, Psalm, Daniel, and Gospel passages with curated source notes,
           Septuagint Greek vs Masoretic Hebrew variants, and early sub-apostolic patristic interpretations
           formatted for dialectical AI podcast hosts.
         </p>
@@ -331,7 +384,7 @@ export default function ProphecyRoom({
               textDecoration: "none",
             }}
           >
-            <span>Open Messianic Prophecy Research Dossiers</span>
+            <span>Open the messianic prophecy worksheets</span>
             <span aria-hidden="true">→</span>
           </Link>
         </div>

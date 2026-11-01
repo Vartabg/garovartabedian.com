@@ -34,7 +34,7 @@ studies for JobPilot, garovartabedian.com, and EYE), `/hire`, `/resume`,
 
 ## Stack
 
-- **Next.js 15** (App Router) + **React 19**, TypeScript
+- **Next.js 16.4.2** (App Router, Turbopack) + **React 19.3.1**, TypeScript
 - **Generated JSON data** in `public/` (scripture text, canons, cross-refs,
   search shards, Nave topics, early writings, church road, angels, word
   studies, evidence cases, source records) — static-friendly and inspectable
@@ -47,11 +47,10 @@ studies for JobPilot, garovartabedian.com, and EYE), `/hire`, `/resume`,
 - **Strict CSP** in production: `default-src 'self'`, `object-src 'none'`,
   `frame-ancestors 'none'`, HSTS preload, nosniff, referrer-policy,
   permissions-policy (FLoC off) · deployed on Vercel
-- **Two client libraries** beyond React/Next: `maplibre-gl` (the `/jesus/life`
-  map) and `@huggingface/transformers` (in-browser semantic search). Tilt,
-  geo, WebGL and speech are platform APIs; the only iframe origins are two of
-  Garo's own live demos (EYE, atxbro.com), and each demo deploy must allow
-  `frame-ancestors` for the embed
+- **Browser-local tools**: the Excel demo lazy-loads SheetJS CE 0.20.3 and
+  fflate in a dedicated worker; the job report creates local PDFs with pdf-lib.
+  Maps and semantic search use route-specific libraries. No spreadsheet or
+  report contents are uploaded by these demos.
 
 ## Develop
 
@@ -64,19 +63,23 @@ nvm use          # or activate Node 24 with your version manager
 npm install
 npm run dev      # http://localhost:3000
 npm run build    # production build
-npm run check    # the full gate, including E2E and a11y
+FIND_PUBLIC_ENABLED=1 npm run check  # full gate with mocked enabled-research UI fixtures
 ```
+
+Public demos include local form fields and file inputs. See
+[the three-demo implementation notes](docs/work-demos.md) for their boundaries.
 
 Two server routes take visitor text. `/api/library-search` is a GET search of
 the early writings index and needs no secrets. The optional AI relevance checks
 (`/api/find/*`) accept POST input and need `FIND_PUBLIC_ENABLED=1`,
-`FIND_PUBLIC_ORIGIN`, `FIND_SESSION_SECRET`, `FIND_DATABASE_URL` (Postgres) and
-`TYPESAFE_API_KEY`, with work dispatched through a Vercel queue; the API answers
-503 unless every value is set. Without `FIND_PUBLIC_ENABLED=1` the reading path
-and search show no AI check, and because those pages read it when they are
-prerendered, it must be set at build time. The `/scriptures` per-chapter
-reader is server-rendered on demand (every other route is prerendered as static
-or SSG). The `/scriptures` and `/jesus` traditions use
+`FIND_PUBLIC_ORIGIN` (preview deployments fall back to their own URL),
+`FIND_SESSION_SECRET`, `FIND_DATABASE_URL` (Postgres) and `TYPESAFE_API_KEY`,
+with work dispatched through a Vercel queue; the API answers 503 unless every
+value is set. Without `FIND_PUBLIC_ENABLED=1` the reading path and search show
+no AI check, and because those pages read it when they are prerendered, it must
+be set at build time. The `/scriptures`
+per-chapter reader is server-rendered on demand (every other route is
+prerendered as static or SSG). The `/scriptures` and `/jesus` traditions use
 public-domain texts (World English Bible, etc.); modern copyrighted
 translations are analyzed in `/word` but never hosted as scripture.
 
@@ -93,7 +96,7 @@ checks with a Vercel production build:
 - `npm run test:e2e` — Playwright browser checks
 - `npm run test:a11y` — **axe** (WCAG 2a/2aa/2.1a/2.1aa/2.2aa), run under both
   light and dark `prefers-color-scheme`, + **Lighthouse accessibility ≥ 0.95**
-  on 44 routes across every world, including `/jesus/words`. Two isolated Node
+  on 72 routes across every world and all three business demos. Two isolated Node
   workers share the route list; each reuses Chrome with fresh page storage.
   Per-route timings and the temporary Lighthouse report directory are logged.
   Use `A11Y_WORKERS=1 npm run test:a11y` to diagnose resource contention on a

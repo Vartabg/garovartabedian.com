@@ -17,10 +17,13 @@ const FOCUSABLE =
  */
 export default function ReaderSheet({
   title,
+  wide = false,
   onClose,
   children,
 }: {
   title: string;
+  /** Room for the full picker on wide screens. */
+  wide?: boolean;
   onClose: () => void;
   children: React.ReactNode;
 }) {
@@ -73,7 +76,7 @@ export default function ReaderSheet({
         aria-hidden="true"
       />
       <div
-        className="scr-sheet-panel"
+        className={`scr-sheet-panel${wide ? " is-wide" : ""}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}

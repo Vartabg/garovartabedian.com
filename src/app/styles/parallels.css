@@ -1,0 +1,22 @@
+.scr-parallels-theme { color: var(--ink); min-width: 0; overflow-wrap: anywhere; }
+.scr-parallels-theme .parallel-ink { color: var(--ink); }
+.scr-parallels-theme .parallel-muted { color: var(--muted); }
+.scr-parallels-theme .parallel-accent { color: var(--accent); }
+.scr-parallels-theme .parallel-surface { background: var(--surface); }
+.scr-parallels-theme .parallel-panel { background: var(--surface); }
+.scr-parallels-theme .parallel-rule { border-color: var(--line); }
+.scr-parallels-theme :is(button, summary, a) { touch-action: manipulation; }
+.scr-parallels-theme :is(button, summary) { min-height: 2.75rem; }
+.scr-parallels-theme :is(button, summary, a):focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.scr-parallels-theme button[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+.scr-parallels-theme .parallel-controls { flex-wrap: wrap; }
+.scr-parallels-theme .justify-between { flex-wrap: wrap; gap: .75rem; }
+.scr-parallels-theme .flex > * { min-width: 0; }
+.scr-parallels-related { margin: 0 0 2rem; color: var(--muted); line-height: 1.6; }
+.scr-parallels-related a { display: inline-flex; min-height: 2.75rem; align-items: center; color: var(--ink); text-underline-offset: .2em; }
+.scr-parallels-method { margin-top: 2.5rem; padding: 1rem 0; border-top: 1px solid var(--line); color: var(--muted); max-width: 50rem; line-height: 1.7; }
+.scr-parallels-method summary { color: var(--ink); cursor: pointer; }
+.scr-parallels-theme .parallel-citation { min-width: 0; overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) {
+  .scr-parallels-theme .transition { transition: none; }
+}

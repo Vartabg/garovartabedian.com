@@ -1,5 +1,4 @@
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
+import { readInvestigationArtifact } from "./investigation-artifacts-server";
 import { loadIsaiahClementInvestigation } from "./investigation-server";
 import { sha256 } from "./verify-investigation";
 import { resolveEarlyChapter } from "../early/citations";
@@ -9,7 +8,7 @@ import type { ReadingJourney } from "./reading-journey";
 
 export async function loadReadingJourney(): Promise<ReadingJourney> {
   const packet = await loadIsaiahClementInvestigation();
-  const bytes = await Promise.all(packet.sources.map(source => readFile(join(process.cwd(), source.artifact))));
+  const bytes = await Promise.all(packet.sources.map(source => readInvestigationArtifact(source.artifact)));
   bytes.forEach((value, i) => {
     if (sha256(value) !== packet.sources[i].sha256) throw new Error("Reading source changed after verification.");
   });

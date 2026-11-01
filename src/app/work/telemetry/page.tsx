@@ -112,6 +112,9 @@ export default function WorkAgentTelemetry() {
         <ButtonAnchor variant="ghost" href={mailtoHref}>
           Discuss Agent Governance
         </ButtonAnchor>
+        <ButtonLink variant="ghost" href="/work/merge-monitor">
+          Explore the agent handoff demo
+        </ButtonLink>
       </p>
 
       <h2>The numbers across 4 ecosystems</h2>

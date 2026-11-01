@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import StudyPageHeader from "@/app/_components/StudyPageHeader";
 import graph from "../../../../public/scriptures/graph/graph.json";
 import canonsData from "../../../../public/scriptures/canons.json";
 import type { Canons } from "@/lib/scriptures/types";
@@ -45,9 +46,11 @@ const data = graph as GraphData;
 const canons = canonsData as Canons;
 
 export const metadata: Metadata = {
-  title: "The cross-reference graph",
+  title: "Cross-reference graph",
   description:
-    "Explore PageRank centrality, book-to-book reference flows, and bounded paths computed over the site's curated cross-reference graph.",
+    "Explore connections between Scripture books and trace cited paths from one verse to another.",
+  alternates: { canonical: "/scriptures/graph" },
+  openGraph: { title: "Cross-reference graph", url: "/scriptures/graph", images: ["/worlds/scriptures.jpg"] },
 };
 
 const fmt = (n: number) => n.toLocaleString("en-US");
@@ -58,11 +61,8 @@ export default function GraphPage() {
 
   return (
     <div className="scr-graph">
-      <p className="kicker">Scriptures · computed, not generated</p>
-      <h1>The cross-reference graph</h1>
-      <p className="lede">
-        Explore the connections between books, then follow a path from one verse
-        to another. Built from {fmt(meta.stats.verses)} indexed verses and{" "}
+      <StudyPageHeader path="/scriptures/graph" action="Choose two verses to trace a path, or start with a book connection below. Open each passage to judge the connection in context." />
+      <p className="scr-meta">Built from {fmt(meta.stats.verses)} indexed verses and{" "}
         {fmt(meta.stats.distinctEdges)} distinct cross-reference links. Open the
         passages to judge each connection in context.
       </p>

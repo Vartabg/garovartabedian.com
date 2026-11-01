@@ -1,0 +1,462 @@
+{
+  "book": "MAL",
+  "bookName": "Malachi",
+  "oneLine": "A prophetic voice challenges a disillusioned community to make its worship, teaching, relationships, and public life answer to its covenant.",
+  "orient": "Temple offerings continue, but the book depicts familiarity turning into contempt. Priests and people answer accusations with questions, and the replies expose damaged relationships as well as defective offerings. The promised arrival of justice will judge the community that demands it. The ending joins a coming day of judgment and healing to remembering Moses and the promise of Elijah.",
+  "whereYouAre": "The book is usually situated in Judah after the Babylonian exile, with temple worship established and a governor in office. Jerusalem, priests, agricultural offerings, and disputes within the community form its immediate world. The speeches give no regnal date, so their precise relationship to the work of Ezra and Nehemiah remains uncertain.",
+  "facts": {
+    "writtenBy": "Attributed to Malachi in the Hebrew heading and the World English Bible. The Hebrew form also means “my messenger,” so readers debate whether it is a personal name or a descriptive designation. The book provides no secure biography of its speaker.",
+    "writtenWhen": "Commonly placed in Persian-period Judah, often the fifth century BCE. An operating temple and a governor fit that setting, but the book gives no exact date. Dating its speeches does not establish when their final arrangement was completed.",
+    "writtenFor": "Priests and the wider covenant community addressed as Israel and Judah. Their worship, instruction, relationships, and treatment of vulnerable people come under scrutiny.",
+    "place": "Judah and Jerusalem, with the temple at the center of the argument. The book does not identify a separate place where its writer composed it.",
+    "covers": "A sequence of disputes about divine love, worship, priestly teaching, fidelity, justice, and return, ending with judgment, healing, Moses, and Elijah.",
+    "size": "4 chapters, 55 verses, and 1,663 words in the World English Bible edition. The Hebrew text and Brenton have three chapters, with differences in the order of the ending."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "web-malachi",
+      "hebrew-malachi",
+      "usccb-malachi-intro",
+      "brenton-malachi"
+    ],
+    "writtenWhen": [
+      "web-malachi",
+      "usccb-malachi-intro",
+      "malick-malachi-intro"
+    ],
+    "writtenFor": [
+      "web-malachi"
+    ],
+    "place": [
+      "web-malachi",
+      "usccb-malachi-intro"
+    ],
+    "covers": [
+      "web-malachi"
+    ],
+    "size": [
+      "web-malachi",
+      "hebrew-malachi",
+      "brenton-malachi"
+    ]
+  },
+  "language": {
+    "writtenIn": "Biblical Hebrew, arranged as prophetic speech, objections, replies, commands, and promises.",
+    "register": "Compact and confrontational. Repeated questions make resistance audible; covenant language connects worship with ordinary relationships; fire, cleansing, sunlight, and growth give the promises physical force.",
+    "readerSignal": "Follow the changing voices. A claim is often met by a question about how it could be true, and the answer supplies the charge or evidence. Pay attention to repeated words for honor, instruction, betrayal, and return.",
+    "englishLayer": "The World English Bible has four chapters, as do KJV and Douay-Rheims. Hebrew 3:19–24 corresponds in order to WEB 4:1–6. Brenton has three chapters but reorders the ending: its 3:19–21 corresponds to WEB 4:1–3, its 3:22 to WEB 4:5, its 3:23 to WEB 4:6, and its 3:24 to WEB 4:4. References in this briefing follow WEB numbering; matching a number alone will not always locate the same words in another edition.",
+    "textualHistory": [
+      {
+        "label": "The Hebrew prophetic book",
+        "language": "Biblical Hebrew",
+        "role": "composition",
+        "description": "The book is preserved in Hebrew in the Masoretic tradition. Open Scriptures supplies the Hebrew comparison text from the Westminster Leningrad transcription, with word-level morphology. That modern digital edition helps readers inspect the wording; it does not identify the original author or settle the date of every part of the book. Its final six verses belong to Hebrew chapter 3.",
+        "sourceIds": [
+          "hebrew-malachi",
+          "usccb-malachi-intro"
+        ]
+      },
+      {
+        "label": "The Greek translation tradition",
+        "language": "Greek Septuagint, represented by Brenton’s English translation",
+        "role": "translation",
+        "description": "Brenton renders the heading’s agent as “his messenger” and places the reminder about Moses after the promise of Elijah. Its Elijah passage also speaks of a man turning toward his neighbor where WEB speaks of children turning toward their fathers. These differences concern wording and arrangement as well as English style. Brenton is an English witness to the Greek translation tradition, while the Hebrew text remains a separate comparison.",
+        "sourceIds": [
+          "brenton-malachi",
+          "web-malachi"
+        ]
+      },
+      {
+        "label": "English translations and verse boundaries",
+        "language": "World English Bible, King James Version, and Douay-Rheims",
+        "role": "translation",
+        "description": "The three editions have four chapters with 14, 17, 18, and 6 verses. Douay-Rheims nevertheless places part of WEB 1:6’s priestly address and question in 1:7, and WEB 3:13’s question in 3:14. Its Latin translation tradition also gives some passages different wording. At 2:16 the editions make different choices about the subject and syntax of a difficult Hebrew sentence.",
+        "sourceIds": [
+          "web-malachi",
+          "kjv-malachi",
+          "drb-malachi",
+          "net-malachi"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "The objection is part of the argument",
+        "original": "וַאֲמַרְתֶּם — waʾamartem — and you say; בַּמָּה — bammāh — in what way?",
+        "explanation": "Repeated objections let the community challenge claims about God’s love and its own failures. The reply then makes the accusation concrete: dishonored worship, wearying speech, or withheld offerings. Reading only the reply loses the resistance that gives the dispute its force.",
+        "translationNote": "WEB repeatedly uses “You say” or “Yet you say,” followed by questions beginning with “How.” The Hebrew formulas recur, but not every objection uses exactly the same words.",
+        "caution": "The arranged exchanges are a literary form. They need not be verbatim transcripts of separate public meetings.",
+        "refs": [
+          "1:2",
+          "1:6",
+          "1:7",
+          "2:17",
+          "3:7",
+          "3:8"
+        ],
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi"
+        ]
+      },
+      {
+        "title": "Messenger can name a person or describe a task",
+        "original": "מַלְאָכִי — malʾākhî — Malachi / my messenger; מַלְאַךְ — malʾākh — messenger",
+        "explanation": "The heading’s Malachi has the same Hebrew form as “my messenger” in 3:1. The related noun also describes the priest in 2:7, where his task is to preserve knowledge and teach. Messenger language thus runs through the book without establishing that every occurrence refers to one person.",
+        "translationNote": "WEB prints Malachi in the heading, while Brenton has “his messenger.” Douay-Rheims calls the priest an “angel” in 2:7; here that word describes the human priest’s role as a bearer of God’s instruction.",
+        "caution": "Etymology raises the name-versus-designation question but cannot recover an otherwise unknown biography.",
+        "refs": [
+          "1:1",
+          "2:7",
+          "3:1"
+        ],
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi",
+          "brenton-malachi",
+          "drb-malachi",
+          "usccb-malachi-intro"
+        ]
+      },
+      {
+        "title": "Instruction belongs on the priest’s lips",
+        "original": "תּוֹרָה — torah — instruction or law",
+        "explanation": "Teaching is part of the priestly responsibility under examination. True instruction turns people away from wrongdoing, while corrupt or partial instruction makes them stumble. At the end, the explicit appeal to Moses’ law links the conduct of the community with obligations it is told to remember.",
+        "translationNote": "WEB often uses “law.” The surrounding references to lips, mouth, knowledge, and partiality also make the activity of giving instruction visible.",
+        "caution": "The word alone does not establish a particular historical stage in the collection or closure of the biblical canon.",
+        "refs": [
+          "2:6",
+          "2:7",
+          "2:8",
+          "2:9",
+          "4:4"
+        ],
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi"
+        ]
+      },
+      {
+        "title": "Betrayal connects public and intimate life",
+        "original": "בגד — b-g-d — deal treacherously; בְּרִית — berit — covenant",
+        "explanation": "The betrayal root recurs in the accusations against the community and in the address to a man concerning his wife. Covenant language connects obligations involving Levi, the ancestors, and marriage. Broken trust becomes a central problem across these relationships, although their particular responsibilities differ.",
+        "translationNote": "WEB uses “treacherously” in 2:10–15 and “unfaithful” in 2:16. The change in English expression can obscure the recurring Hebrew root as the passage moves from the community to a wife.",
+        "caution": "Shared vocabulary connects the arguments without making the priestly covenant and a marriage covenant identical.",
+        "refs": [
+          "2:4",
+          "2:8",
+          "2:10",
+          "2:11",
+          "2:14",
+          "2:16"
+        ],
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi"
+        ]
+      },
+      {
+        "title": "Return changes the direction of relationships",
+        "original": "שׁוּבוּ — shuvu — return!; וְהֵשִׁיב — weheshib — and he will turn",
+        "explanation": "In 3:7 a plural command to return is met by God’s promise to return and the people’s question about how to do so. A causative form of the same root describes turning many away from wrongdoing in 2:6 and turning hearts between generations in 4:6. The movement concerns conduct and relationships as well as direction.",
+        "translationNote": "WEB’s “return” and “turn” preserve much of the connection. The forms differ because some passages describe returning and others describe causing a change of direction.",
+        "caution": "The root does not always mean repentance: Edom’s proposed return to rebuilding in 1:4 has another context.",
+        "refs": [
+          "1:4",
+          "2:6",
+          "3:7",
+          "4:6"
+        ],
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi"
+        ]
+      }
+    ],
+    "examplesHeading": "Hebrew expressions that carry the disputes",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "מַלְאָכִי — malʾākhî",
+        "meaning": "Malachi / my messenger.",
+        "why": "The heading makes the name-versus-designation question visible. The same form appears with the ordinary meaning “my messenger” in 3:1, without proving that the two passages identify the same person.",
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi",
+          "brenton-malachi"
+        ]
+      },
+      {
+        "ref": "2:7",
+        "form": "וְתוֹרָה — wetorah",
+        "meaning": "And instruction / law.",
+        "why": "The prefixed conjunction joins the noun to the description of priestly speech. People are to seek instruction from the priest’s mouth, so responsibility for teaching stands alongside responsibility for offerings.",
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi"
+        ]
+      },
+      {
+        "ref": "2:14",
+        "form": "בָּגַדְתָּה — bagadta",
+        "meaning": "You have dealt treacherously.",
+        "why": "The second-person accusation concerns a companion and covenant partner. It repeats the betrayal vocabulary already used of the wider community.",
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi"
+        ]
+      },
+      {
+        "ref": "3:7",
+        "form": "שׁוּבוּ — shuvu",
+        "meaning": "Return!",
+        "why": "This plural command is answered by a divine promise to return and then by the people’s question. The next dispute gives their response a concrete setting in withheld tithes and offerings.",
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi"
+        ]
+      },
+      {
+        "ref": "4:2",
+        "form": "שֶׁמֶשׁ צְדָקָה — shemesh tsedaqah",
+        "meaning": "Sun of righteousness / justice.",
+        "why": "Healing sunlight answers the burning judgment image. The English words sun and son are not a Hebrew wordplay; a later Christian application should be distinguished from the expression’s lexical meaning.",
+        "sourceIds": [
+          "hebrew-malachi",
+          "web-malachi",
+          "drb-malachi"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "Prophetic disputes, commands, and promises",
+    "how": "Listen for a claim, an objection, and the answer that follows. The disputes often cross chapter boundaries: the priestly indictment continues from chapter 1 into chapter 2, the question about justice leads from 2:17 into chapter 3, and the complaint about serving God leads into chapter 4. The closing appeal to Moses and Elijah gives the exchanges a final horizon."
+  },
+  "cast": [
+    {
+      "name": "Malachi",
+      "who": "The prophetic figure named in WEB’s heading; the Hebrew expression may instead function as the designation “my messenger.”"
+    },
+    {
+      "name": "Priests and the wider community",
+      "who": "The people addressed and represented as answering back. Priests face charges concerning offerings and instruction; the wider community’s fidelity and justice are also examined."
+    },
+    {
+      "name": "Levi",
+      "who": "The ancestral figure associated with a covenant and an ideal of faithful priestly teaching in chapter 2."
+    },
+    {
+      "name": "Jacob, Esau, and Edom",
+      "who": "The ancestral brothers and the people associated with Esau enter the opening argument about divine love, election, and judgment."
+    },
+    {
+      "name": "Moses and Elijah",
+      "who": "The closing figures: Moses is associated with the law to remember, and Elijah with the promised turning of hearts before the coming day."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Love claimed, honor withheld",
+      "chapters": "1",
+      "precise": "1:1–14",
+      "note": "The heading and dispute over love lead to contemptuous offerings. The priestly dispute continues into chapter 2."
+    },
+    {
+      "heading": "Instruction and covenant betrayal",
+      "chapters": "2",
+      "precise": "2:1–17",
+      "note": "Failed priestly teaching, disloyalty, and the wife of one’s youth lead to a question about divine justice."
+    },
+    {
+      "heading": "Justice approaches; return remains possible",
+      "chapters": "3",
+      "precise": "3:1–18",
+      "note": "Messenger, purification, judgment, tithes, and remembered fidelity answer the community’s questions. The last dispute continues into chapter 4."
+    },
+    {
+      "heading": "The coming day, Moses, and Elijah",
+      "chapters": "4",
+      "precise": "4:1–6",
+      "note": "Judgment and healing lead to the closing summons and promise. These verses are Hebrew 3:19–24; Brenton places the Moses reminder after the Elijah promise."
+    }
+  ],
+  "purpose": "To call the community back to covenant fidelity by confronting worship that coexists with betrayal, partiality, exploitation, and the claim that serving God is pointless. Purified offerings and justice for vulnerable people belong within the same promised reckoning.",
+  "snags": [
+    {
+      "snag": "Divorce in a difficult Hebrew sentence",
+      "help": "The syntax of 2:15–16 is difficult, and translations assign the opening action of 2:16 differently. WEB begins with a person who hates and divorces, while KJV attributes hatred of putting away to God. Read the sentence with the surrounding language of companionship, covenant, betrayal, and violence. Its warning against harm should not become advice to remain in abuse."
+    },
+    {
+      "snag": "Foreign god and foreigner",
+      "help": "The marriage language of 2:11 challenges fidelity to the community’s God, but it does not supply a full history of the marriages involved. The same book condemns depriving a foreigner of justice in 3:5. Attend to both passages before turning the dispute into a claim about ethnicity."
+    },
+    {
+      "snag": "Love for Jacob and hatred for Esau",
+      "help": "Chapter 1 moves from ancestral brothers to Edom and Israel. Its charged language belongs to the book’s argument about election and judgment. Preserve its severity without treating it as a verdict about modern ethnic groups."
+    },
+    {
+      "snag": "Tithes and promised blessing",
+      "help": "The passage addresses a whole community and speaks of food in a storehouse, crops, vines, and agricultural loss. Its promises in 3:10–12 should be read in that setting before being applied to modern giving or personal wealth."
+    },
+    {
+      "snag": "Several messenger descriptions",
+      "help": "The messenger preparing a way, the arriving Lord, and the messenger of the covenant occur together in 3:1. Their relationship is debated. The priest is also called a messenger elsewhere, so the repeated noun does not by itself make all these descriptions identical."
+    },
+    {
+      "snag": "A final curse",
+      "help": "The Hebrew word behind the final “curse,” ḥerem, carries the force of a destructive ban. The promise of turning hearts stands beside this threat of judgment. The ending is more severe than a prohibition on swearing, and it gives no calendar for the coming day."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Is Malachi a personal name or a designation?",
+      "settled": "The Hebrew heading contains malʾākhî, the same form used for “my messenger” in 3:1. The book offers no developed biography.",
+      "positions": [
+        {
+          "view": "A prophet’s personal name",
+          "grounds": "This is the traditional reading of the heading, retained by WEB, KJV, and Douay-Rheims. Naming a prophetic speaker suits the form of the superscription."
+        },
+        {
+          "view": "A designation meaning my messenger",
+          "grounds": "The ordinary meaning of the Hebrew expression, its recurrence in 3:1, and Brenton’s rendering as a messenger support reading it as a role rather than a recoverable personal name."
+        }
+      ],
+      "soWhat": "Either reading leaves the book’s attributed message and argument available to the reader. Neither establishes a detailed life of its author."
+    },
+    {
+      "question": "Who is the subject at the opening of 2:16?",
+      "settled": "The passage warns against betrayal and connects its divorce language with violence. Its Hebrew syntax has produced differing translations.",
+      "positions": [
+        {
+          "view": "The person who hates and divorces",
+          "grounds": "WEB places the action with that person. This reading reflects one approach to the difficult third-person form and the following divorce expression."
+        },
+        {
+          "view": "God declares hatred of divorce",
+          "grounds": "KJV and other translations understand a divine statement. The NET translator note discusses this alongside alternatives, including proposed repairs to the Hebrew text."
+        }
+      ],
+      "soWhat": "Compare the complete sentences and the surrounding argument. A familiar English slogan cannot settle the grammar or replace the passage’s concern for a betrayed spouse."
+    }
+  ],
+  "sources": [
+    {
+      "id": "web-malachi",
+      "label": "Malachi in the World English Bible",
+      "says": "The wording, sequence of disputes, cast, four-chapter shape, and measured English size of the book.",
+      "href": "/scriptures/text/web/MAL.json"
+    },
+    {
+      "id": "hebrew-malachi",
+      "label": "Open Scriptures Hebrew Bible: Malachi",
+      "says": "The Hebrew forms and morphology behind messenger, instruction, betrayal, covenant, and return; the three-chapter Hebrew text ends at 3:24.",
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Mal.xml"
+    },
+    {
+      "id": "kjv-malachi",
+      "label": "Malachi in the King James Version",
+      "says": "A four-chapter English comparison, including the assignment of the action in 2:16.",
+      "href": "/scriptures/text/kjv/MAL.json"
+    },
+    {
+      "id": "drb-malachi",
+      "label": "Malachi in Douay-Rheims",
+      "says": "The Latin tradition in English, including the priest called an angel, the wording of 2:16, and smaller verse-boundary differences.",
+      "href": "/scriptures/text/drb/MAL.json"
+    },
+    {
+      "id": "brenton-malachi",
+      "label": "Malachi in Brenton’s Septuagint translation",
+      "says": "An English witness to the Greek translation tradition, with messenger in the heading and the Moses reminder after the Elijah promise at the end of chapter 3.",
+      "href": "/scriptures/text/brenton/MAL.json"
+    },
+    {
+      "id": "usccb-malachi-intro",
+      "label": "USCCB introduction to Malachi",
+      "says": "Discusses the possible messenger designation and leaves open the book’s precise relationship to Nehemiah.",
+      "url": "https://bible.usccb.org/bible/malachi/0"
+    },
+    {
+      "id": "malick-malachi-intro",
+      "label": "David Malick: Introduction to Malachi",
+      "says": "Explains the temple and governor evidence for a Persian-period setting while acknowledging that a precise date cannot be identified.",
+      "url": "https://new.bible.org/article/introduction-book-malachi"
+    },
+    {
+      "id": "net-malachi",
+      "label": "NET Bible: Malachi translator notes",
+      "says": "Documents competing grammatical and textual proposals at 2:16, alternative relationships among the descriptions in 3:1, and the Hebrew chapter division and final judgment term.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/mal.pdf"
+    },
+    {
+      "id": "sirach-elijah",
+      "label": "Sirach’s portrait of Elijah",
+      "says": "Sirach 48:10 connects Elijah with turning a father’s heart toward a son and restoring the tribes of Jacob.",
+      "href": "/scriptures/text/web/SIR.json"
+    },
+    {
+      "id": "matthew-elijah",
+      "label": "Matthew on the messenger and Elijah",
+      "says": "Matthew 11:10, 11:14, and 17:11–13 applies messenger and Elijah language to John the Baptizer.",
+      "href": "/scriptures/text/web/MAT.json"
+    },
+    {
+      "id": "luke-elijah",
+      "label": "Luke on Elijah’s spirit and power",
+      "says": "Luke 1:17 describes John’s anticipated work with Elijah language and the turning of fathers’ hearts toward children.",
+      "href": "/scriptures/text/web/LUK.json"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Keep each objection with the answer it receives. Notice whether the speakers question love, deny dishonor, or ask what returning would involve.",
+      "refs": [
+        "1:2",
+        "1:6",
+        "2:17",
+        "3:7"
+      ]
+    },
+    {
+      "tip": "Read the priestly indictment across the chapter break. Defective offerings and partial instruction are connected failures of responsibility.",
+      "refs": [
+        "1:8",
+        "1:14",
+        "2:6",
+        "2:8",
+        "2:9"
+      ]
+    },
+    {
+      "tip": "Hold worship and justice together. The purification of offerings is followed by judgment against those who exploit workers and vulnerable neighbors.",
+      "refs": [
+        "3:3",
+        "3:4",
+        "3:5"
+      ]
+    },
+    {
+      "tip": "Compare the wife and covenant language with the difficult divorce sentence before drawing a conclusion from one translation.",
+      "refs": [
+        "2:14",
+        "2:15",
+        "2:16"
+      ]
+    },
+    {
+      "tip": "Continue from the complaint about serving God into the coming day. Remembered fidelity, judgment, healing, law, and changed hearts complete the book’s answer.",
+      "refs": [
+        "3:14",
+        "3:16",
+        "4:1",
+        "4:2",
+        "4:4",
+        "4:5",
+        "4:6"
+      ]
+    }
+  ],
+  "next": "Read Haggai for an earlier temple-centered prophetic setting. Then compare Sirach 48:10 with Matthew 11:10–14, Matthew 17:11–13, and Luke 1:17 to see how later readers connect Elijah, restoration, and John the Baptizer. Those reception texts should be heard in their own settings as well as beside Malachi.",
+  "traditionNote": "The Hebrew book has three chapters; WEB, KJV, and Douay-Rheims place Hebrew 3:19–24 in chapter 4. Brenton also has three chapters, but its last three verses run Elijah, turning hearts, then Moses. Later Christian readings connect the messenger and Elijah promises with John the Baptizer; that identification should not be assumed to describe every Jewish reading."
+}

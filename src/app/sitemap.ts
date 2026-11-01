@@ -8,6 +8,7 @@ import {
   topicCanonicalPath,
 } from "@/lib/scriptures/canonical";
 import { WORLD_GUIDES } from "@/lib/world-guidance";
+import { SITE_ROUTES } from "@/lib/site-navigation";
 import canons from "../../public/scriptures/canons.json";
 
 const BASE = "https://garovartabedian.com";
@@ -47,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/scriptures/parallels/son-of-man", priority: 0.7, changeFrequency: "monthly" },
     { path: "/jesus", priority: 0.9, changeFrequency: "monthly" },
     { path: "/jesus/words", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/jesus/parables", priority: 0.7, changeFrequency: "monthly" },
     { path: "/jesus/life", priority: 0.7, changeFrequency: "monthly" },
     { path: "/jesus/risen", priority: 0.7, changeFrequency: "monthly" },
     { path: "/jesus/prophecy", priority: 0.7, changeFrequency: "monthly" },
@@ -83,6 +85,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/work", priority: 0.8, changeFrequency: "monthly" },
     { path: "/contact", priority: 0.7, changeFrequency: "yearly" },
     { path: "/work/jobpilot", priority: 0.6, changeFrequency: "monthly" },
+    { path: "/work/job-report", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/work/landing-page", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/work/excel-handler", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/work/merge-monitor", priority: 0.6, changeFrequency: "monthly" },
     { path: "/work/accessibility", priority: 0.6, changeFrequency: "monthly" },
     { path: "/work/garovartabedian", priority: 0.6, changeFrequency: "monthly" },
     { path: "/work/eye", priority: 0.6, changeFrequency: "monthly" },
@@ -90,6 +96,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/labs", priority: 0.5, changeFrequency: "monthly" },
     { path: "/resume", priority: 0.5, changeFrequency: "monthly" },
   ];
+
+  // Study tools share the public navigation index. Existing entries keep their
+  // priority and position; the stable de-duplication below retains the first.
+  entries.push(...SITE_ROUTES
+    .filter((route) => route.href.startsWith("/scriptures/"))
+    .map((route) => ({ path: route.href, priority: 0.7, changeFrequency: "monthly" as const })));
 
   // Each canon's landing page, straight from the data the shelves read.
   for (const t of canons.traditions) {
@@ -145,7 +157,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  return entries.map((e) => ({
+  const seen = new Set<string>();
+  return entries.filter((entry) => {
+    if (seen.has(entry.path)) return false;
+    seen.add(entry.path);
+    return true;
+  }).map((e) => ({
     url: `${BASE}${e.path}`,
     lastModified,
     changeFrequency: e.changeFrequency,

@@ -42,13 +42,16 @@ test("shared buttons keep device-appropriate targets without overflow", async ({
   const surfaces = [
     { route: "/", selector: ".ui-button" },
     { route: "/hire", selector: ".ui-button" },
-    { route: "/jesus", selector: ".ui-button" },
-    { route: "/scriptures", selector: ".scr-btn" },
+    { route: "/jesus", selector: ".jl-now button" },
+    {
+      route: "/scriptures",
+      selector: ".dw-chip, .dw-tab, .dw-goto-go, .dw-translation select",
+    },
     {
       route: "/early",
       selector: ".ew-catalog-eras button, .ew-visual-picker select",
     },
-    { route: "/early/ignatius", selector: ".ew-visual-picker select" },
+    { route: "/early/ignatius", selector: ".map-picker select" },
     { route: "/church/tree", selector: ".ch-tree-picker select" },
     {
       route: "/jesus/life",
@@ -111,7 +114,7 @@ test("the compact accessibility trigger never covers a live target", async ({
   test.skip(testInfo.project.name !== "phone", "compact touch layout only");
 
   const surfaces = [
-    { route: "/early/ignatius", selector: ".ew-visual-picker select" },
+    { route: "/early/ignatius", selector: ".map-picker select" },
     { route: "/scriptures/topics", selector: ".scr-topics-az button" },
   ] as const;
 
@@ -149,6 +152,21 @@ test("the compact accessibility trigger never covers a live target", async ({
   }
 });
 
+test("world home titles keep a readable measure beside the plate", async ({
+  page,
+}, testInfo) => {
+  test.skip(testInfo.project.name !== "chromium", "the sidebar grid starts at 1100px");
+  // ReadingNarrative sits between .wrap and the hero on most worlds. When the
+  // home rules missed it, the 1100px sidebar grid squeezed these titles to
+  // about 140px, one or two syllables a line.
+  for (const route of ["/church", "/word", "/evidence", "/early"]) {
+    expect((await page.goto(route))?.status(), `${route} should load`).toBe(200);
+    const title = await page.locator(".world-home-hero h1").boundingBox();
+    expect(title?.width, `${route} title width`).toBeGreaterThanOrEqual(320);
+    await expect(page.locator(".world-guide .wg-nav")).toHaveCSS("flex-direction", "row");
+  }
+});
+
 test("all eight world entrances adapt without document overflow", async ({
   page,
 }, testInfo) => {
@@ -158,6 +176,23 @@ test("all eight world entrances adapt without document overflow", async ({
     const response = await page.goto(route);
     expect(response?.status(), `${route} should load`).toBe(200);
     await expect(page.getByRole("heading", { level: 1 }).first()).toBeVisible();
+    if (route === "/scriptures") {
+      // The picker retains its direct tools, with a compact shared section menu.
+      await expect(page.locator(".dw")).toBeVisible();
+      await expect(page.locator(".world-guide")).toBeVisible();
+      await expect(page.getByRole("navigation", { name: "Start studying" }).getByRole("link")).toHaveCount(4);
+      await expect(page.getByRole("region", { name: "Find a way into your question." })).toBeVisible();
+      await expectNoDocumentOverflow(page);
+      continue;
+    }
+    if (route === "/jesus") {
+      // His life remains the page, with the same compact section menu as the other worlds.
+      await expect(page.locator(".jl")).toBeVisible();
+      await expect(page.locator(".world-guide")).toBeVisible();
+      await expect(page.locator(".jl-more a")).toHaveCount(9);
+      await expectNoDocumentOverflow(page);
+      continue;
+    }
     await expect(page.locator(".world-guide")).toBeVisible();
     await expectNoDocumentOverflow(page);
 
@@ -342,42 +377,27 @@ test("homepage and dense world tools remain readable at this viewport", async ({
   }
 
   await page.goto("/scriptures");
-  await expect(page.locator(".scr-home-start-grid")).toBeVisible();
-  await expect(page.locator(".scr-find")).toBeVisible();
-  await expect(page.locator("details.scr-book-browser")).not.toHaveAttribute(
-    "open",
-    "",
-  );
+  await expect(page.locator(".dw")).toBeVisible();
+  await expect(page.locator(".dw-spine")).toHaveCount(66);
   await expectNoDocumentOverflow(page);
 
   await page.goto("/scriptures/protestant/JHN/3");
-  const margin = page.getByRole("complementary", {
-    name: "John 3 study notes",
-  });
-  await expect(margin).toBeVisible();
-  // Below 1000px (phone and tablet) the margin is a strip of four ways into
-  // the chapter above the text; from 1000px it is the gloss margin beside it.
-  if (await margin.locator(".scr-gloss-body").isVisible()) {
-    await expect(margin.getByRole("heading", { name: "In the margin" })).toBeVisible();
-  } else {
-    await expect(margin.getByRole("button")).toHaveCount(4);
-  }
-  if (isPhone) {
-    const marginBox = await margin.boundingBox();
-    expect(marginBox?.width).toBeLessThanOrEqual(390);
-  }
-  await expect(page.locator(".scr-bar-worlds")).toBeVisible();
-  await expect(page.locator(".scr-bar-worlds")).toHaveAttribute("href", "/#worlds");
-  const accessibilityBox = await page.locator(".a11y-trigger").boundingBox();
-  const worldsBox = await page.locator(".scr-bar-worlds").boundingBox();
-  expect(accessibilityBox).not.toBeNull();
-  expect(worldsBox).not.toBeNull();
-  if (!accessibilityBox || !worldsBox) {
-    throw new Error("Reader controls must have measurable touch targets.");
-  }
-  expect(accessibilityBox.y + accessibilityBox.height).toBeLessThanOrEqual(
-    worldsBox.y,
+  // Verse 1 is on the first screen at every width; the bar holds paging,
+  // the chapter picker, Listen and Aa on one line.
+  const verseOne = await page.locator("#v1").boundingBox();
+  const viewport = page.viewportSize();
+  expect(verseOne && viewport && verseOne.y + verseOne.height).toBeLessThan(
+    viewport?.height ?? 0,
   );
+  const bar = page.getByRole("navigation", { name: "Reading controls" });
+  for (const control of await bar.locator(".scr-bar-btn").all()) {
+    const box = await control.boundingBox();
+    expect(box?.height).toBeLessThanOrEqual(56);
+  }
+  // One Aa on the reader: the bar's. The floating site-wide control would
+  // open the same appearance panel.
+  await expect(bar.getByRole("button", { name: /^Aa — Reading and accessibility settings/ })).toBeVisible();
+  await expect(page.locator(".a11y-trigger")).toBeHidden();
   await expectNoDocumentOverflow(page);
 
   for (const route of ["/word#fences", "/church/councils"]) {
