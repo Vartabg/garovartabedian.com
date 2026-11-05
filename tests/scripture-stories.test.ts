@@ -28,5 +28,12 @@ describe("scripture stories", () => {
     const meant = readSpan(joseph.book, { chapter: 50, start: 20, end: 20 })[0];
     assert.match(meant.text, /you meant evil against me, but God meant it for good/);
     assert.deepEqual(joseph.moves.map((move) => move.label), ["Down", "Up", "Face to face"]);
+    const forgotten = stops.find((stop) => stop.id === "forgotten");
+    const egypt = stops.find((stop) => stop.id === "egypt");
+    const tunic = stops.find((stop) => stop.id === "tunic");
+    assert.ok(forgotten && egypt && tunic);
+    assert.ok(forgotten.place.y > tunic.place.y, "the pit sits lower than the tunic");
+    assert.ok(egypt.place.y < forgotten.place.y, "Egypt rises above the pit");
+    assert.ok(stops.every((stop) => stop.mark.length > 0 && stop.mark.length <= 12));
   });
 });

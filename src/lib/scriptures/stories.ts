@@ -3,12 +3,23 @@ export type StoryCite = {
   verse: number;
 };
 
+export type StoryPlace = {
+  /** Percent across the picture. */
+  x: number;
+  /** Percent down the picture. Larger means lower, the pit. */
+  y: number;
+  side: "left" | "right";
+};
+
 export type StoryStop = {
   id: string;
   title: string;
+  /** Short name drawn on the picture. */
+  mark: string;
   /** One short guide line. The verse itself stays on the cite. */
   line: string;
   cites: readonly StoryCite[];
+  place: StoryPlace;
   /** Show the hosted words of the first cite on the path. */
   words?: boolean;
 };
@@ -43,7 +54,7 @@ export const SCRIPTURE_STORIES: readonly ScriptureStory[] = [
     book: "GEN",
     fromChapter: 37,
     toChapter: 50,
-    summary: "Eight short stops. The verses stay one tap away.",
+    summary: "Tap a point. One stop at a time.",
     moves: [
       {
         id: "down",
@@ -52,26 +63,34 @@ export const SCRIPTURE_STORIES: readonly ScriptureStory[] = [
           {
             id: "tunic",
             title: "The tunic",
+            mark: "Tunic",
             line: "His father loved him more. His brothers hated him.",
             cites: [{ chapter: 37, verse: 3 }],
+            place: { x: 4, y: 20, side: "left" },
           },
           {
             id: "sold",
             title: "Sold",
+            mark: "Sold",
             line: "They sold him for twenty pieces of silver.",
             cites: [{ chapter: 37, verse: 28 }],
+            place: { x: 4, y: 42, side: "left" },
           },
           {
             id: "prison",
             title: "Prison",
+            mark: "Prison",
             line: "He refused Potiphar's wife. He was put in prison.",
             cites: [{ chapter: 39, verse: 20 }],
+            place: { x: 4, y: 64, side: "left" },
           },
           {
             id: "forgotten",
             title: "Forgotten",
+            mark: "Forgotten",
             line: "The cupbearer forgot him.",
             cites: [{ chapter: 40, verse: 23 }],
+            place: { x: 4, y: 86, side: "left" },
           },
         ],
       },
@@ -82,8 +101,10 @@ export const SCRIPTURE_STORIES: readonly ScriptureStory[] = [
           {
             id: "egypt",
             title: "Over Egypt",
+            mark: "Egypt",
             line: "Pharaoh set him over all of Egypt.",
             cites: [{ chapter: 41, verse: 41 }],
+            place: { x: 52, y: 20, side: "right" },
           },
         ],
       },
@@ -94,20 +115,26 @@ export const SCRIPTURE_STORIES: readonly ScriptureStory[] = [
           {
             id: "bow",
             title: "They bowed",
+            mark: "Bowed",
             line: "His brothers bowed down. They did not know him.",
             cites: [{ chapter: 42, verse: 6 }],
+            place: { x: 52, y: 42, side: "right" },
           },
           {
             id: "name",
             title: "I am Joseph",
+            mark: "Joseph",
             line: "He told them who he was.",
             cites: [{ chapter: 45, verse: 4 }],
+            place: { x: 52, y: 62, side: "right" },
           },
           {
             id: "good",
             title: "What he said",
+            mark: "His words",
             line: "Then he said this.",
             cites: [{ chapter: 50, verse: 20 }],
+            place: { x: 52, y: 82, side: "right" },
             words: true,
           },
         ],
