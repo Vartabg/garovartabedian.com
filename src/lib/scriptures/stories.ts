@@ -1,51 +1,39 @@
-export type VerseSpan = {
+export type StoryCite = {
   chapter: number;
-  start: number;
-  end: number;
+  verse: number;
 };
 
-export type VersePart = {
+export type StoryStop = {
   id: string;
   title: string;
-  kind: "verses";
-  spans: readonly VerseSpan[];
-  /** Verses omitted between spans, still available in the chapter. */
-  between?: { text: string; chapter: number; verse: number };
+  /** One short guide line. The verse itself stays on the cite. */
+  line: string;
+  cites: readonly StoryCite[];
+  /** Show the hosted words of the first cite on the path. */
+  words?: boolean;
 };
 
-export type BridgePart = {
+export type StoryMove = {
   id: string;
-  title: string;
-  kind: "bridge";
-  text: string;
-  href: string;
   label: string;
+  stops: readonly StoryStop[];
 };
-
-export type StoryPart = VersePart | BridgePart;
 
 export type ScriptureStory = {
   slug: string;
   title: string;
   reference: string;
   book: "GEN";
-  /** First and last chapter of the account, including bridges. */
   fromChapter: number;
   toChapter: number;
   summary: string;
-  parts: readonly StoryPart[];
+  moves: readonly StoryMove[];
 };
 
-const chapter = (id: string, title: string, n: number, end: number): VersePart => ({
-  id,
-  title,
-  kind: "verses",
-  spans: [{ chapter: n, start: 1, end }],
-});
-
 /**
- * Joseph, told in the hosted World English Bible. Chapter 38 and the
- * household list in Genesis 46 stay linked rather than pasted into his story.
+ * Joseph as a short path. Each stop is one plain line. The cites point at
+ * the hosted World English Bible. Only the last stop prints the verse,
+ * because that sentence is the message of the story.
  */
 export const SCRIPTURE_STORIES: readonly ScriptureStory[] = [
   {
@@ -55,43 +43,75 @@ export const SCRIPTURE_STORIES: readonly ScriptureStory[] = [
     book: "GEN",
     fromChapter: 37,
     toChapter: 50,
-    summary:
-      "From the tunic his father made him, through Egypt, to the words he spoke to his brothers after Jacob died.",
-    parts: [
-      chapter("coat", "A tunic of many colors", 37, 36),
+    summary: "Eight short stops. The verses stay one tap away.",
+    moves: [
       {
-        id: "judah",
-        title: "Judah went down from his brothers",
-        kind: "bridge",
-        text: "The book follows Judah before it returns to Joseph in Egypt.",
-        href: "/scriptures/protestant/GEN/38?t=web#v1",
-        label: "Read Genesis 38",
-      },
-      chapter("potiphar", "Yahweh was with Joseph", 39, 23),
-      chapter("prison", "The cupbearer and the baker", 40, 23),
-      chapter("pharaoh", "God will give Pharaoh an answer", 41, 57),
-      chapter("brothers", "They bowed themselves down", 42, 38),
-      chapter("benjamin", "Is this your youngest brother", 43, 34),
-      chapter("cup", "The cup was found in Benjamin's sack", 44, 34),
-      chapter("reveal", "I am Joseph", 45, 28),
-      {
-        id: "goshen",
-        title: "Joseph is still alive",
-        kind: "verses",
-        spans: [
-          { chapter: 46, start: 1, end: 7 },
-          { chapter: 46, start: 28, end: 34 },
+        id: "down",
+        label: "Down",
+        stops: [
+          {
+            id: "tunic",
+            title: "The tunic",
+            line: "His father loved him more. His brothers hated him.",
+            cites: [{ chapter: 37, verse: 3 }],
+          },
+          {
+            id: "sold",
+            title: "Sold",
+            line: "They sold him for twenty pieces of silver.",
+            cites: [{ chapter: 37, verse: 28 }],
+          },
+          {
+            id: "prison",
+            title: "Prison",
+            line: "He refused Potiphar's wife. He was put in prison.",
+            cites: [{ chapter: 39, verse: 20 }],
+          },
+          {
+            id: "forgotten",
+            title: "Forgotten",
+            line: "The cupbearer forgot him.",
+            cites: [{ chapter: 40, verse: 23 }],
+          },
         ],
-        between: {
-          text: "The names of the household who went into Egypt are listed between these passages.",
-          chapter: 46,
-          verse: 8,
-        },
       },
-      chapter("settled", "A possession in the land of Egypt", 47, 31),
-      chapter("hands", "Ephraim and Manasseh", 48, 22),
-      chapter("blessing", "Listen to Israel your father", 49, 33),
-      chapter("good", "God meant it for good", 50, 26),
+      {
+        id: "up",
+        label: "Up",
+        stops: [
+          {
+            id: "egypt",
+            title: "Over Egypt",
+            line: "Pharaoh set him over all of Egypt.",
+            cites: [{ chapter: 41, verse: 41 }],
+          },
+        ],
+      },
+      {
+        id: "meeting",
+        label: "Face to face",
+        stops: [
+          {
+            id: "bow",
+            title: "They bowed",
+            line: "His brothers bowed down. They did not know him.",
+            cites: [{ chapter: 42, verse: 6 }],
+          },
+          {
+            id: "name",
+            title: "I am Joseph",
+            line: "He told them who he was.",
+            cites: [{ chapter: 45, verse: 4 }],
+          },
+          {
+            id: "good",
+            title: "What he said",
+            line: "Then he said this.",
+            cites: [{ chapter: 50, verse: 20 }],
+            words: true,
+          },
+        ],
+      },
     ],
   },
 ];
@@ -102,4 +122,8 @@ export function getScriptureStory(slug: string): ScriptureStory | undefined {
 
 export function scriptureStoryPath(slug: string): string {
   return `/scriptures/stories/${slug}`;
+}
+
+export function storyStops(story: ScriptureStory): StoryStop[] {
+  return story.moves.flatMap((move) => [...move.stops]);
 }

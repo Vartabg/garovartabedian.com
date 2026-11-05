@@ -1,5 +1,11 @@
 import genesis from "../../../public/scriptures/text/web/GEN.json";
-import type { ScriptureStory, VerseSpan } from "./stories";
+import type { ScriptureStory } from "./stories";
+
+export type VerseSpan = {
+  chapter: number;
+  start: number;
+  end: number;
+};
 
 type HostedBook = { chapters: string[][] };
 

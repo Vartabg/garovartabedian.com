@@ -27,7 +27,7 @@ export default function ScripturesHome() {
       <section className="scr-hub-stories" aria-labelledby="scr-hub-stories-title">
         <div className="scr-hub-section-head">
           <h2 id="scr-hub-stories-title">Begin with a story</h2>
-          <p>Some accounts run through many chapters. Read the turns together, in the words of the text.</p>
+          <p>A short path. The verse is one tap away.</p>
         </div>
         <nav className="scr-hub-group" aria-label="Stories">
           <ul>

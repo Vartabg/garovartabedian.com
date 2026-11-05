@@ -1,114 +1,133 @@
 .scr-story {
-  --scr-gutter: 2.6rem;
-  max-width: 42rem;
+  max-width: 38rem;
   margin-inline: auto;
   padding-bottom: 3rem;
 }
 
-.scr-story-kicker,
-.scr-story-ref {
+.scr-story-kicker {
   margin: 0;
   color: var(--accent);
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
+  font-size: 0.8rem;
 }
 
-.scr-story h1 {
-  margin: 0.4rem 0 0.8rem;
+.scr-story-head h1 {
+  margin: 0.35rem 0 0.45rem;
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
   font-weight: 500;
   letter-spacing: -0.03em;
-  line-height: 1.05;
+  line-height: 1;
 }
 
-.scr-story-deck {
-  margin: 0 0 1.25rem;
+.scr-story-deck,
+.scr-story-count {
+  margin: 0;
   color: var(--muted);
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
-.scr-story-parts {
-  margin: 0 0 2rem;
+.scr-path {
+  margin-top: 1.75rem;
 }
 
-.scr-story-parts summary {
-  cursor: pointer;
-  color: var(--ink);
-  font-weight: 600;
+.scr-move h2 {
+  margin: 1.75rem 0 0.35rem;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: none;
 }
 
-.scr-story-parts ol {
-  margin: 0.8rem 0 0;
-  padding-left: 1.25rem;
+.scr-move ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 3px solid var(--accent);
 }
 
-.scr-story-parts a {
-  color: var(--ink);
+.scr-move li {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 0.35rem 0.8rem;
+  padding: 0.85rem 0 0.85rem 0.9rem;
 }
 
-.scr-story-part {
-  margin: 2.5rem 0;
-}
-
-.scr-story-part h2 {
-  margin: 0 0 0.35rem;
+.scr-step {
+  margin: 0.15rem 0 0 -1.55rem;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  background: var(--surface, var(--bg, Canvas));
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: 1rem;
+  line-height: 1.55rem;
+  text-align: center;
+}
+
+.scr-move h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3vw, 1.8rem);
   font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
-.scr-story-part .scr-story-ref {
-  margin-bottom: 1rem;
+.scr-move li p {
+  margin: 0.3rem 0 0;
+  color: var(--ink);
+  font-size: 1.15rem;
+  line-height: 1.4;
 }
 
-.scr-story-part .scr-story-ref a,
-.scr-story-between a,
-.scr-story-chapters a,
-.scr-story-back a {
+.scr-move blockquote {
+  margin: 0.7rem 0 0;
+  color: var(--ink);
+  font-family: var(--reading-face, var(--font-display));
+  font-size: clamp(1.35rem, 3vw, 1.7rem);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.scr-cites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+}
+
+.scr-cites a,
+.scr-story-chapters a {
   color: var(--accent);
+  font-size: 1rem;
 }
 
-.scr-story-between,
-.scr-story-bridge p {
-  margin: 1.25rem 0;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.scr-story .scr-read-text {
-  max-width: none;
-}
-
-.scr-story .scr-vnum {
-  color: var(--rubric, var(--accent));
-  text-decoration: none;
+.scr-story-count {
+  margin-top: 1.5rem;
 }
 
 .scr-story-chapters {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
+  margin-top: 1rem;
 }
 
-.scr-story-chapters h2 {
-  margin: 0 0 0.8rem;
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 500;
+.scr-story-chapters summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-size: 1.05rem;
 }
 
 .scr-story-chapters ol {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem 0.9rem;
-  margin: 0;
+  gap: 0.45rem 0.9rem;
+  margin: 0.8rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -135,14 +154,20 @@
   font-weight: 500;
 }
 
-.scr-story-list p {
+.scr-story-list p,
+.scr-story-ref {
   margin: 0.35rem 0 0;
   color: var(--muted);
-  line-height: 1.55;
+  line-height: 1.45;
 }
 
 @media (max-width: 700px) {
-  .scr-story {
-    --scr-gutter: 2.2rem;
+  .scr-move li {
+    grid-template-columns: 2.2rem minmax(0, 1fr);
+    padding-left: 0.7rem;
+  }
+
+  .scr-step {
+    margin-left: -1.4rem;
   }
 }
