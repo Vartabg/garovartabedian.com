@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { passageHref, readSpan } from "@/lib/scriptures/story-text";
+import { bookName, passageHref, readSpan } from "@/lib/scriptures/story-text";
 import { storyStops, type ScriptureStory, type StoryStop } from "@/lib/scriptures/stories";
 import ReadingSurface from "../../_components/reading/ReadingSurface";
 
-function citeLabel(chapter: number, verse: number) {
-  return `Genesis ${chapter}:${verse}`;
+function citeLabel(name: string, chapter: number, verse: number) {
+  return `${name} ${chapter}:${verse}`;
 }
 
-function stopId(id: string) {
-  return `joseph-${id}`;
+function stopId(slug: string, id: string) {
+  return `${slug}-${id}`;
 }
 
 export default function StoryReading({ story }: { story: ScriptureStory }) {
@@ -19,7 +19,8 @@ export default function StoryReading({ story }: { story: ScriptureStory }) {
   const placed = story.moves.flatMap((move) => move.stops.map((stop) => ({ move, stop })));
   const stops = storyStops(story);
   const points = stops.map((stop) => `${stop.place.x},${stop.place.y}`).join(" ");
-  const rules = stops.map((stop) => `.scr-walk:has(#${stopId(stop.id)}:checked) .scr-stop--${stop.id}{display:block}`).join("");
+  const name = bookName(story.book);
+  const rules = stops.map((stop) => `.scr-walk:has(#${stopId(story.slug, stop.id)}:checked) .scr-stop--${stop.id}{display:block}`).join("");
 
   return (
     <ReadingSurface className="scr-story" aria-labelledby="scripture-story-title">
@@ -45,12 +46,12 @@ export default function StoryReading({ story }: { story: ScriptureStory }) {
               <input
                 className="scr-radio"
                 type="radio"
-                name="joseph-stop"
-                id={stopId(stop.id)}
+                name={`${story.slug}-stop`}
+                id={stopId(story.slug, stop.id)}
                 aria-label={stop.mark}
                 defaultChecked={index === 0}
               />
-              <label className={`scr-node scr-node--${stop.place.side}`} htmlFor={stopId(stop.id)} style={{ left: `${stop.place.x}%`, top: `${stop.place.y}%` }}>
+              <label className={`scr-node scr-node--${stop.place.side}`} htmlFor={stopId(story.slug, stop.id)} style={{ left: `${stop.place.x}%`, top: `${stop.place.y}%` }}>
                 {stop.mark}
               </label>
             </span>
@@ -69,7 +70,7 @@ export default function StoryReading({ story }: { story: ScriptureStory }) {
         <ol>
           {chapters.map((chapter) => (
             <li key={chapter}>
-              <Link href={passageHref(story.book, chapter, 1)}>Genesis {chapter}</Link>
+              <Link href={passageHref(story.book, chapter, 1)}>{name} {chapter}</Link>
             </li>
           ))}
         </ol>
@@ -106,14 +107,14 @@ function StopPanel({
       {words ? <blockquote>{words.text}</blockquote> : null}
       <p className="scr-cites">
         {stop.cites.map((cite) => (
-          <Link key={`${cite.chapter}-${cite.verse}`} href={passageHref(story.book, cite.chapter, cite.verse)}>
-            {citeLabel(cite.chapter, cite.verse)}
-          </Link>
+            <Link key={`${cite.chapter}-${cite.verse}`} href={passageHref(story.book, cite.chapter, cite.verse)}>
+              {citeLabel(bookName(story.book), cite.chapter, cite.verse)}
+            </Link>
         ))}
       </p>
       <p className="scr-step-nav">
-        {previous ? <label htmlFor={stopId(previous.id)}>Back</label> : <span />}
-        {next ? <label htmlFor={stopId(next.id)}>Next</label> : <span />}
+        {previous ? <label htmlFor={stopId(story.slug, previous.id)}>Back</label> : <span />}
+        {next ? <label htmlFor={stopId(story.slug, next.id)}>Next</label> : <span />}
       </p>
     </article>
   );

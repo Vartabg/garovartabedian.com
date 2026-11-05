@@ -8,8 +8,24 @@ describe("scripture stories", () => {
 
   it("keeps Joseph to a short path whose lines point at the hosted text", () => {
     assert.ok(joseph);
-    assert.equal(SCRIPTURE_STORIES.length, 1);
+    assert.equal(SCRIPTURE_STORIES.length, 14);
     assert.equal(getScriptureStory("missing"), undefined);
+    for (const story of SCRIPTURE_STORIES) {
+      const path = storyStops(story);
+      assert.ok(path.length >= 5 && path.length <= 8, story.slug);
+      assert.equal(path.filter((stop) => stop.words).length, 1, story.slug);
+      const lowest = Math.max(...path.filter((stop) => stop.place.side === "left").map((stop) => stop.place.y));
+      const highest = Math.min(...path.filter((stop) => stop.place.side === "right").map((stop) => stop.place.y));
+      assert.ok(highest < lowest, story.slug);
+      for (const stop of path) {
+        assert.ok(stop.line.split(/\s+/).length <= 16, `${story.slug}:${stop.id}`);
+        assert.ok(stop.mark.length > 0 && stop.mark.length <= 12, `${story.slug}:${stop.id}`);
+        for (const cite of stop.cites) {
+          const verse = readSpan(story.book, { chapter: cite.chapter, start: cite.verse, end: cite.verse })[0];
+          assert.ok(verse.text.length > 0, `${story.slug}:${stop.id}`);
+        }
+      }
+    }
     const stops = storyStops(joseph);
     assert.equal(stops.length, 8);
     for (const stop of stops) {
