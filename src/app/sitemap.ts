@@ -9,6 +9,7 @@ import {
 } from "@/lib/scriptures/canonical";
 import { WORLD_GUIDES } from "@/lib/world-guidance";
 import { SITE_ROUTES } from "@/lib/site-navigation";
+import { SCRIPTURE_STORIES, scriptureStoryPath } from "@/lib/scriptures/stories";
 import canons from "../../public/scriptures/canons.json";
 
 const BASE = "https://garovartabedian.com";
@@ -102,6 +103,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   entries.push(...SITE_ROUTES
     .filter((route) => route.href.startsWith("/scriptures/"))
     .map((route) => ({ path: route.href, priority: 0.7, changeFrequency: "monthly" as const })));
+  entries.push(...SCRIPTURE_STORIES.map((story) => ({
+    path: scriptureStoryPath(story.slug),
+    priority: 0.8,
+    changeFrequency: "monthly" as const,
+  })));
 
   // Each canon's landing page, straight from the data the shelves read.
   for (const t of canons.traditions) {

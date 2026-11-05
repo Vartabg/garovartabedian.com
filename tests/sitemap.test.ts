@@ -22,6 +22,8 @@ describe("sitemap", () => {
   it("includes search and topics index", () => {
     assert.ok(paths.has("/scriptures/search"));
     assert.ok(paths.has("/scriptures/topics"));
+    assert.ok(paths.has("/scriptures/stories"));
+    assert.ok(paths.has("/scriptures/stories/joseph"));
     assert.ok(paths.has("/scriptures/graph"));
     assert.ok(paths.has("/scriptures/parallels"));
   });

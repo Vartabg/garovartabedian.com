@@ -71,6 +71,8 @@ export const routes = [
   "/word/free",
   "/evidence",
   "/scriptures",
+  "/scriptures/stories",
+  "/scriptures/stories/joseph",
   "/scriptures/word-bridge",
   "/scriptures/protestant/JHN/3?t=web&study=word-bridge#v16",
   "/scriptures/search",

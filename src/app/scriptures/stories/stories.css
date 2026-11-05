@@ -1,0 +1,148 @@
+.scr-story {
+  --scr-gutter: 2.6rem;
+  max-width: 42rem;
+  margin-inline: auto;
+  padding-bottom: 3rem;
+}
+
+.scr-story-kicker,
+.scr-story-ref {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.scr-story h1 {
+  margin: 0.4rem 0 0.8rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.scr-story-deck {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.scr-story-parts {
+  margin: 0 0 2rem;
+}
+
+.scr-story-parts summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.scr-story-parts ol {
+  margin: 0.8rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.scr-story-parts a {
+  color: var(--ink);
+}
+
+.scr-story-part {
+  margin: 2.5rem 0;
+}
+
+.scr-story-part h2 {
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.scr-story-part .scr-story-ref {
+  margin-bottom: 1rem;
+}
+
+.scr-story-part .scr-story-ref a,
+.scr-story-between a,
+.scr-story-chapters a,
+.scr-story-back a {
+  color: var(--accent);
+}
+
+.scr-story-between,
+.scr-story-bridge p {
+  margin: 1.25rem 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.scr-story .scr-read-text {
+  max-width: none;
+}
+
+.scr-story .scr-vnum {
+  color: var(--rubric, var(--accent));
+  text-decoration: none;
+}
+
+.scr-story-chapters {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.scr-story-chapters h2 {
+  margin: 0 0 0.8rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.scr-story-chapters ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.scr-story-list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.scr-story-list a {
+  display: block;
+  padding: 1rem 0;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-story-list h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.scr-story-list p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+  .scr-story {
+    --scr-gutter: 2.2rem;
+  }
+}

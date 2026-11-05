@@ -4,6 +4,13 @@
 .scr-hub .scr-hub-eyebrow { margin: 0 0 .75rem; font-family: var(--font-mono); font-size: .7rem; letter-spacing: .13em; text-transform: uppercase; color: var(--accent); }
 .scr-hub .scr-hub-title { margin-bottom: .85rem; font-size: clamp(2.5rem, 6vw, 4.6rem); font-weight: 500; letter-spacing: -.035em; line-height: 1.06; }
 .scr-hub-lede { max-width: 40rem; margin: 0; color: var(--muted); font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.6; }
+.scr-hub-stories { margin: 1.5rem 0 2.5rem; }
+.scr-hub-stories .scr-hub-section-head { align-items: start; }
+.scr-hub-stories .scr-hub-group { max-width: 42rem; }
+@media (max-width: 700px) {
+  .scr-hub-stories .scr-hub-section-head { display: block; }
+  .scr-hub-stories .scr-hub-section-head > p { margin-top: .45rem; }
+}
 .scr-hub-start { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0 0 2rem; border: 1px solid var(--line); background: var(--surface); }
 .scr-hub-start > a { display: flex; min-width: 0; align-items: flex-start; gap: .7rem; padding: 1.1rem; color: var(--ink); text-decoration: none; }
 .scr-hub-start > a + a { border-inline-start: 1px solid var(--line); }
