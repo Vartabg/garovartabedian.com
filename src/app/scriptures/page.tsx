@@ -3,6 +3,7 @@ import Link from "next/link";
 import doorwaysData from "../../../public/scriptures/doorways.json";
 import type { DoorwaysData } from "@/lib/scriptures/doorways";
 import { scriptureDestination, scriptureStudyCatalog } from "@/lib/scriptures/study-catalog";
+import { SCRIPTURE_STORIES, scriptureStoryPath } from "@/lib/scriptures/stories";
 import ContinueCard from "./_components/ContinueCard";
 import Doorways from "./_components/doorways/Doorways";
 
@@ -22,6 +23,25 @@ export default function ScripturesHome() {
         <h1 className="scr-hub-title" data-hand="capitals">Read the Bible.</h1>
         <p className="scr-hub-lede">Choose a passage. Look closely at its words. Follow the questions it opens.</p>
       </header>
+
+      <section className="scr-hub-stories" aria-labelledby="scr-hub-stories-title">
+        <div className="scr-hub-section-head">
+          <h2 id="scr-hub-stories-title">Begin with a story</h2>
+          <p>A picture of the story. One stop at a time.</p>
+        </div>
+        <nav className="scr-hub-group" aria-label="Stories">
+          <ul>
+            {SCRIPTURE_STORIES.map((story) => (
+              <li key={story.slug}>
+                <Link href={scriptureStoryPath(story.slug)}>
+                  <span><strong>{story.title}</strong><span>{story.reference}. {story.summary}</span></span>
+                  <span aria-hidden="true">↗</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </section>
 
       <nav className="scr-hub-start" aria-label="Start studying">
         <a href="#read">

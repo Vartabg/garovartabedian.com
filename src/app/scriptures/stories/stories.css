@@ -1,0 +1,227 @@
+.scr-story {
+  max-width: 40rem;
+  margin-inline: auto;
+  padding-bottom: 3rem;
+}
+
+.scr-story-kicker {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.scr-story-head h1 {
+  margin: 0.2rem 0 0.25rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.scr-story-deck {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.scr-walk {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-inline-size: 0;
+}
+
+.scr-map {
+  position: relative;
+  height: 12.5rem;
+  margin-top: 0.35rem;
+}
+
+.scr-map svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--accent);
+  pointer-events: none;
+}
+
+.scr-map polyline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.scr-zone {
+  position: absolute;
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.scr-zone--down { left: 4%; top: 0; }
+.scr-zone--up { left: 52%; top: 0; }
+
+.scr-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.scr-node {
+  position: absolute;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.25rem;
+  max-width: 46%;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.scr-node::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  background: var(--bg, Canvas);
+}
+
+.scr-radio:checked + .scr-node {
+  font-weight: 650;
+}
+
+.scr-radio:checked + .scr-node::before {
+  background: var(--accent);
+}
+
+.scr-radio:focus-visible + .scr-node {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.scr-stop { display: none; }
+
+.scr-stop h2 {
+  margin: 0.1rem 0 0.2rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3.5vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.scr-where {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.scr-stop > p,
+.scr-stop blockquote {
+  margin: 0.45rem 0 0;
+  color: var(--ink);
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.scr-stop blockquote {
+  font-family: var(--reading-face, var(--font-display));
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.scr-cites a,
+.scr-story-chapters a,
+.scr-step-nav label {
+  color: var(--accent);
+}
+
+.scr-step-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  padding-inline-end: 4.75rem;
+}
+
+.scr-step-nav label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  min-width: 5.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.scr-step-nav label:last-child { justify-content: flex-end; }
+
+.scr-story-chapters { margin-top: 1.5rem; }
+
+.scr-story-chapters summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.scr-story-chapters ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.scr-story-list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.scr-story-list a {
+  display: block;
+  padding: 1rem 0;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.scr-story-list h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.scr-story-list p,
+.scr-story-ref {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+@media (max-width: 700px) {
+  .scr-node { font-size: 1rem; max-width: 46%; }
+  .scr-zone { font-size: 1rem; }
+}

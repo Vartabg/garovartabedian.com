@@ -44,7 +44,7 @@ function mockAuditor(outcomes: unknown[]) {
 }
 
 test("one or two workers audit every route exactly once, including the visual story and source tools", () => {
-  assert.equal(routes.length, 72);
+  assert.equal(routes.length, 87);
   assert.ok(routes.includes("/scriptures/word-bridge"));
   assert.ok(routes.includes("/scriptures/protestant/JHN/3?t=web&study=word-bridge#v16"));
   for (const slug of ["come-and-eat", "peace-be-with-you", "every-language"]) {

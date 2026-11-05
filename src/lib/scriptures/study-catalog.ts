@@ -33,6 +33,12 @@ const STUDY_GROUPS: readonly StudyGroupSpec[] = [
     question: "See how a reading becomes a source-backed investigation.",
     paths: ["/scriptures/read/isaiah-53-clement-16", "/scriptures/investigations/isaiah-53-clement-16"],
   },
+  {
+    id: "stories",
+    title: "Read a story",
+    question: "Where does this story go, without hunting chapter by chapter?",
+    paths: ["/scriptures/stories"],
+  },
 ];
 
 export type ScriptureStudyGroup = Omit<StudyGroupSpec, "paths"> & { tools: SiteLink[] };

@@ -38,6 +38,7 @@ export const WORLD_GUIDES: Record<WorldId, WorldGuideConfig> = {
     },
     nav: [
       { href: "/scriptures", label: "Overview" },
+      { href: "/scriptures/stories", label: "Stories" },
       { href: "/scriptures/search", label: "Search the text" },
       { href: "/scriptures/topics", label: "Topics" },
       { href: "/scriptures/polyglot", label: "Compare translations" },
