@@ -175,6 +175,14 @@
 
 .scr-step-nav label:last-child { justify-content: flex-end; }
 
+.scr-stop-illustration {
+  display: block;
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  margin-top: 0.9rem;
+}
+
 .scr-story-chapters { margin-top: 1.5rem; }
 
 .scr-story-chapters summary {

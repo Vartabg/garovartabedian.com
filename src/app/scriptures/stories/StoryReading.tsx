@@ -2,6 +2,7 @@ import Link from "next/link";
 import { bookName, passageHref, readSpan } from "@/lib/scriptures/story-text";
 import { storyStops, type ScriptureStory, type StoryStop } from "@/lib/scriptures/stories";
 import ReadingSurface from "../../_components/reading/ReadingSurface";
+import { STORY_ILLUSTRATION_ALTS } from "./story-illustrations";
 
 function citeLabel(name: string, chapter: number, verse: number) {
   return `${name} ${chapter}:${verse}`;
@@ -99,6 +100,7 @@ function StopPanel({
     : null;
   const previous = stops[index - 1];
   const next = stops[index + 1];
+  const illustrationAlt = STORY_ILLUSTRATION_ALTS[story.slug]?.[stop.id];
   return (
     <article className={`scr-stop scr-stop--${stop.id}`} aria-labelledby={`${stop.id}-title`}>
       <p className="scr-where">{move} · {index + 1} of {total}</p>
@@ -116,6 +118,19 @@ function StopPanel({
         {previous ? <label htmlFor={stopId(story.slug, previous.id)}>Back</label> : <span />}
         {next ? <label htmlFor={stopId(story.slug, next.id)}>Next</label> : <span />}
       </p>
+      {illustrationAlt ? (
+        // A native image keeps the panel independent of client JavaScript.
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className="scr-stop-illustration"
+          src={`/scriptures/stories/${story.slug}/${stop.id}.jpg`}
+          alt={`${illustrationAlt} Interpretive illustration.`}
+          width={880}
+          height={660}
+          loading="lazy"
+          decoding="async"
+        />
+      ) : null}
     </article>
   );
 }
