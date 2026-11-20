@@ -12,7 +12,7 @@ export type ReleaseAttempt = {
 export type ReleaseRecordData = { schemaVersion: 1; steps: string[]; attempts: ReleaseAttempt[] };
 
 const W = 680, H = 140, TOP = 4, BASE = H;
-const dateLabel = (date: string | null) =>
+export const dateLabel = (date: string | null) =>
   date ? new Date(`${date}T12:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : "date not recorded";
 const stopName = (record: ReleaseRecordData, attempt: ReleaseAttempt) =>
   attempt.stop === null ? "" : record.steps[attempt.ran[attempt.stop]];

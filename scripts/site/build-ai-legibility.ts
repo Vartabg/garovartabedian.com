@@ -166,6 +166,9 @@ export function renderLlmsTxt(): string {
 
 - Machine-readable corpus health, including counts, review tiers, and every
   validation gate: ${BASE}/meta/corpus-health.json
+- The same checks chapter by chapter, one row per hosted chapter: which checks
+  its guide passed, who or what reviewed it, and what drafted it:
+  ${BASE}/meta/guide-record.json
 - Source records for the hosted texts and research: ${BASE}/sources
 - Nothing on this site is generated at request time. Every dataset is built
   ahead of time and committed, so what a crawler reads is what a visitor reads.
