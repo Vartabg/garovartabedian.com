@@ -31,11 +31,14 @@ import {
   searchSemantic,
   type SemanticResult,
 } from "@/lib/scriptures/semantic";
+import { topicTitle } from "@/lib/scriptures/topic-title";
 import type { Canons, TranslationId } from "@/lib/scriptures/types";
 import { wordingLabel } from "@/lib/scriptures/search-wording";
 import { searchExpansion } from "@/lib/scriptures/search-expansion";
 import { scriptureSearchHref, withFindContext } from "@/lib/scriptures/search-url";
 import { findMatchingParallels } from "@/lib/parallels/search-match";
+import { FIND_CATALOG } from "@/lib/site/find-catalog";
+import { rankPlaces } from "@/lib/site/find-query";
 import WritingsMatches from "./WritingsMatches";
 import AskBox from "../_components/AskBox";
 import CanonStrip from "../_components/CanonStrip";
@@ -56,10 +59,7 @@ export default function SearchRoom({
 }) {
   return (
     <PublicAssessmentEnabled.Provider value={publicAssessments}>
-      <p className="kicker">
-        <Link href="/scriptures">Scriptures</Link>
-      </p>
-      <h1 data-hand="capitals">{getSiteLocation("/scriptures/search").label}</h1>
+      <h1>{getSiteLocation("/scriptures/search").label}</h1>
       <p className="lede">
         Enter a reference, search words and phrases, or describe an idea. Word
         matches stay separate from related passages, and every result opens
@@ -172,12 +172,6 @@ function SearchLens({ result, canons, q, scope }: { result: SearchResult; canons
   );
 }
 
-function topicLabel(topicId: string): string {
-  return topicId
-    .toLowerCase()
-    .replace(/\b\w/g, (letter) => letter.toUpperCase());
-}
-
 function RelatedPassages({
   q,
   scope,
@@ -225,7 +219,7 @@ function RelatedPassages({
             href={`/scriptures/topics/${encodeURIComponent(topic.id)}`}
             prefetch={false}
           >
-            {topicLabel(topic.id)}
+            {topicTitle(topic.id)}
           </Link>
         ))}
       </nav>
@@ -247,7 +241,7 @@ function RelatedPassages({
                   {label}
                 </Link>
                 <span className="scr-related-via">
-                  via {topicLabel(hit.topicId)}
+                  via {topicTitle(hit.topicId)}
                 </span>
               </div>
               {hit.context && (
@@ -307,6 +301,65 @@ function ParallelMatches({ q }: { q: string }) {
           </article>
         ))}
       </div>
+    </section>
+  );
+}
+
+function CrossWorldPlaces({
+  q,
+  trans,
+  scope,
+}: {
+  q: string;
+  trans: TranslationId;
+  scope?: string;
+}) {
+  const places = useMemo(
+    () =>
+      scope === "texts"
+        ? []
+        : rankPlaces(FIND_CATALOG, q, 8)
+            .filter(
+              (item) =>
+                (item.score ?? 0) >= 60 &&
+                item.kind !== "book" &&
+                !item.href.startsWith("/scriptures/search") &&
+                !item.href.startsWith("/scriptures/parallels"),
+            )
+            .slice(0, 6),
+    [q, scope],
+  );
+  if (places.length === 0) return null;
+
+  return (
+    <section className="scr-related" aria-labelledby="scr-places-heading">
+      <div className="scr-related-head">
+        <div>
+          <p className="scr-related-kicker">Across the worlds</p>
+          <h2 id="scr-places-heading">Places in the record</h2>
+        </div>
+        <p>
+          Matching rooms, writings, artifacts, stories, councils, frameworks, and
+          case studies elsewhere on this site.
+        </p>
+      </div>
+      <ol className="scr-related-list">
+        {places.map((place) => (
+          <li className="scr-hit scr-related-hit" key={place.id}>
+            <div className="scr-hit-head">
+              <Link
+                className="scr-ref"
+                href={withFindContext(place.href, q, trans, scope)}
+                prefetch={false}
+              >
+                {place.title}
+              </Link>
+              <span className="scr-related-via">{place.kind}</span>
+            </div>
+            <p className="scr-related-context">{place.note}</p>
+          </li>
+        ))}
+      </ol>
     </section>
   );
 }
@@ -581,7 +634,6 @@ function Results({
   const indexedBooks = canons.bookOrder.filter((book) =>
     canons.books[book]?.trans.includes(trans),
   ).length;
-  const hostedBooks = canons.bookOrder.length;
   const loading = Boolean(q && !directRef && !error && !result);
   const directName = directRef
     ? (canons.books[directRef.book]?.name ?? directRef.book)
@@ -610,18 +662,18 @@ function Results({
         {!q && (
           <div className="scr-search-start">
             <p className="scr-empty" role="status">
-              Search {indexedBooks} books in {canons.translations[trans].name}, or open a reference
-              from any of {hostedBooks} hosted books.
+              Start from the hosted words, such as “faith without works,” or open a reference
+              across {indexedBooks} books in {canons.translations[trans].name}.
             </p>
             <nav className="scr-search-examples" aria-label="Example scripture searches">
-              <Link href={scriptureSearchHref("John 3:16", trans)} prefetch={false}>
-                John 3:16
-              </Link>
               <Link
                 href={scriptureSearchHref("faith without works", trans)}
                 prefetch={false}
               >
                 faith without works
+              </Link>
+              <Link href={scriptureSearchHref("John 3:16", trans)} prefetch={false}>
+                John 3:16
               </Link>
               <Link
                 href={scriptureSearchHref("how can I forgive someone who hurt me", trans)}
@@ -655,6 +707,7 @@ function Results({
         )}
 
         {q && <ParallelMatches q={q} />}
+        {q && <CrossWorldPlaces q={q} trans={trans} scope={scope} />}
 
         {error && (
           <p className="scr-empty" role="alert">

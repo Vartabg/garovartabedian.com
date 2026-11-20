@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 export default function MergeMonitorCaseStudy() {
   return (
     <CleanChrome activeHref="/work" showWorldSwitcher={false}>
-      <p className="kicker">Work / Agent coordination</p>
       <h1>{study.title}</h1>
       <p className="lede">{study.lede}</p>
       <p className="cta-row">

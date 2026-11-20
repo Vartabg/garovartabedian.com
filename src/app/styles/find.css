@@ -1,34 +1,32 @@
-/* Global Find: a quick source search and a doorway into the record. */
-.find-root {
+/* Global Find: a compact cross-world source palette and doorway into the record. */
+.find-dialog {
   position: fixed;
   inset: 0;
-  z-index: 300;
-  display: grid;
-  place-items: center;
-  padding: 1.5rem;
-}
-.find-scrim {
-  position: absolute;
-  inset: 0;
-  border: 0;
-  background: color-mix(in srgb, var(--ink) 42%, transparent);
-  backdrop-filter: blur(5px);
-  cursor: pointer;
-}
-.find-dialog {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: min(960px, calc(100vw - 3rem));
-  height: min(760px, calc(100dvh - 3rem));
-  max-height: min(820px, calc(100dvh - 3rem));
-  min-height: min(620px, calc(100dvh - 3rem));
+  padding: 0;
+  max-width: none;
+  max-height: none;
+  margin: clamp(1.75rem, 5.5vh, 4rem) auto auto;
+  width: min(940px, calc(100vw - 2rem));
+  height: min(680px, calc(100dvh - 4rem));
   overflow: hidden;
   background: var(--surface);
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: 14px;
   box-shadow: 0 24px 80px #0004;
+}
+.find-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+.find-dialog:modal {
+  overscroll-behavior: contain;
+}
+.find-dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background: color-mix(in srgb, var(--ink) 44%, transparent);
+  backdrop-filter: blur(5px);
 }
 .find-dialog :is(button, input, select) {
   font: inherit;
@@ -37,36 +35,29 @@
 .find-dialog button {
   cursor: pointer;
 }
-.find-dialog :is(button, a, input, select, summary):focus-visible {
+.find-dialog :is(a, select, summary):focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
-.find-head {
+.find-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  padding: 1.2rem 1.5rem 0.6rem;
+  gap: 0.65rem;
+  padding: 0.65rem 1rem 0.45rem;
+  flex-shrink: 0;
 }
-.find-kicker {
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  margin: 0 0 0.2rem;
-  color: var(--muted);
-}
-.find-head h2 {
+.find-brand {
   margin: 0;
   font-family: var(--font-display, Georgia, serif);
-  font-size: 2.25rem;
-  line-height: 1.1;
+  font-size: 1.25rem;
+  line-height: 1;
   font-weight: 550;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   text-transform: none;
   border: 0;
+  flex-shrink: 0;
 }
-.find-head h2 span {
+.find-brand span {
   color: var(--accent);
 }
 .find-close,
@@ -75,11 +66,13 @@
   place-items: center;
   width: 44px;
   height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   padding: 0;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 7px;
   background: transparent;
-  font-size: 1.4rem !important;
+  font-size: 1.3rem !important;
   flex-shrink: 0;
 }
 .find-close:hover,
@@ -87,11 +80,13 @@
   background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
 .find-bar {
+  flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  margin: 0.65rem 1.5rem 0.8rem;
-  padding: 0.4rem 0.7rem;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0.1rem 0.5rem;
   border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line));
   border-radius: 8px;
   background: var(--paper);
@@ -102,8 +97,9 @@
 }
 .find-search-icon {
   color: var(--accent);
-  font-size: 2rem;
+  font-size: 1.35rem;
   line-height: 1;
+  flex-shrink: 0;
 }
 .find-label {
   position: absolute;
@@ -117,10 +113,10 @@
   width: 0;
   flex: 1;
   min-width: 0;
-  min-height: 44px;
+  min-height: 42px;
   background: transparent;
-  font-size: 1.05rem !important;
-  padding: 0.25rem;
+  font-size: 1rem !important;
+  padding: 0.2rem;
 }
 .find-input:focus-visible {
   outline: 0;
@@ -130,6 +126,10 @@
 }
 .find-clear {
   border: 0;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  min-height: 38px;
 }
 .find-shortcut {
   font-size: 0.7rem;
@@ -137,27 +137,41 @@
   border: 1px solid var(--line);
   border-radius: 4px;
   color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .find-toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 0 1.5rem 0.8rem;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  padding: 0 1rem 0.5rem;
   border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
 }
 .find-scopes {
   display: flex;
-  gap: 0.3rem;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  min-width: 0;
+}
+.find-toolbar-end {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  min-width: 0;
+  margin-left: auto;
 }
 .find-scopes button,
 .find-commands {
   border: 0;
   border-radius: 5px;
-  padding: 0.5rem 0.65rem;
-  min-height: 40px;
+  padding: 0.35rem 0.6rem;
+  min-height: 36px;
   background: transparent;
-  font-size: 0.78rem !important;
+  font-size: 0.76rem !important;
 }
 .find-scopes button[aria-pressed="true"] {
   background: var(--ink);
@@ -167,6 +181,18 @@
   color: var(--muted) !important;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+.find-edition-select {
+  min-height: 36px;
+  max-width: 12.5rem;
+  min-width: 0;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: inherit;
+  background: var(--paper);
+  font-size: 0.75rem;
+  text-overflow: ellipsis;
 }
 .find-content {
   min-height: 0;
@@ -179,25 +205,24 @@
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-width: thin;
-  padding: 1rem;
+  padding: 0.75rem 0.9rem;
 }
 .find-start {
-  padding: 0.1rem 0.35rem 0.8rem;
-}
-.find-start p {
-  font-family: var(--font-display, Georgia, serif);
-  font-size: 1.3rem;
-  margin: 0 0 0.75rem;
-}
-.find-start > div {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.35rem;
+  padding: 0 0.25rem 0.65rem;
+}
+.find-start-lead {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-right: 0.15rem;
 }
 .find-start button {
-  min-height: 40px;
-  font-size: 0.75rem;
-  padding: 0.45rem 0.65rem;
+  min-height: 34px;
+  font-size: 0.74rem;
+  padding: 0.3rem 0.55rem;
   border: 1px solid var(--line);
   border-radius: 5px;
   background: transparent;
@@ -208,48 +233,76 @@
 .find-start button span {
   color: var(--accent);
 }
-.find-search-action {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.75rem;
-  width: 100%;
-  min-height: 64px;
-  padding: 0.9rem;
-  background: color-mix(in srgb, var(--accent) 9%, var(--surface));
-  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
-  border-radius: 7px;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-.find-search-action strong {
-  display: block;
-  font-size: 0.95rem;
-}
-.find-search-action small {
-  display: block;
-  font-size: 0.75rem;
-  color: var(--muted);
-  overflow-wrap: anywhere;
-  margin-top: 0.25rem;
-}
-.find-search-action > span:last-child {
-  color: var(--accent);
-}
 .find-status {
-  margin: 0 0.35rem 0.75rem;
+  margin: 0 0.35rem 0.65rem;
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+.find-inline-btn {
+  min-height: 32px;
+  min-width: 24px;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper);
+  font-size: 0.74rem;
+}
+.find-bridge-note {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--accent) 4%, var(--paper));
+  display: grid;
+  gap: 0.45rem;
+}
+.find-bridge-note p {
+  margin: 0;
   font-size: 0.78rem;
   color: var(--muted);
+  line-height: 1.45;
+}
+.find-bridge-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.find-chip {
+  min-height: 32px;
+  min-width: 24px;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--line));
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+.find-chip:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+}
+.find-hl {
+  color: inherit;
+  background: color-mix(in srgb, var(--gold, var(--accent)) 20%, transparent);
+  border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  border-radius: 2px;
+  padding-inline: 0.06em;
+}
+@media (forced-colors: active) {
+  .find-hl {
+    background: Mark;
+    color: MarkText;
+    border-bottom-color: MarkText;
+  }
 }
 .find-results {
   display: grid;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 .find-group h3 {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-  margin: 0 0.35rem 0.35rem;
+  margin: 0 0.35rem 0.3rem;
   font-family: inherit;
   font-size: 0.65rem;
   text-transform: uppercase;
@@ -262,21 +315,21 @@
   font-variant-numeric: tabular-nums;
 }
 .find-group-note {
-  margin: 0 0.35rem 0.5rem;
+  margin: 0 0.35rem 0.45rem;
   font-size: 0.7rem;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.45;
 }
 .find-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.65rem;
+  gap: 0.6rem;
   min-height: 44px;
-  padding: 0.65rem 0.45rem;
+  padding: 0.55rem 0.45rem;
   border-radius: 5px;
   text-decoration: none;
   color: var(--ink);
-  line-height: 1.45;
+  line-height: 1.42;
 }
 .find-item:hover,
 .find-item.is-active {
@@ -297,7 +350,7 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  gap: 0.2rem;
+  gap: 0.18rem;
   overflow-wrap: anywhere;
 }
 .find-item strong {
@@ -314,15 +367,15 @@
 }
 .find-item-snippet {
   font-family: var(--font-display, Georgia, serif);
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 0.88rem;
+  line-height: 1.55;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 .find-empty {
-  padding: 1rem 0.5rem;
+  padding: 0.85rem 0.5rem;
   font-size: 0.85rem;
 }
 .find-empty p {
@@ -332,7 +385,7 @@
 .find-preview {
   border-left: 1px solid var(--line);
   background: color-mix(in srgb, var(--accent) 3%, var(--surface));
-  padding: 2rem;
+  padding: 1.65rem 1.75rem;
   min-width: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
@@ -344,56 +397,56 @@
   font-size: 0.65rem;
   font-weight: 700;
   color: var(--muted);
-  margin: 0 0 0.8rem;
+  margin: 0 0 0.65rem;
 }
 .find-preview h3 {
   font-family: var(--font-display, Georgia, serif);
-  font-size: 1.8rem;
+  font-size: 1.65rem;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  margin: 0 0 1rem;
+  margin: 0 0 0.85rem;
   border: 0;
   text-transform: none;
   overflow-wrap: anywhere;
 }
 .find-preview blockquote {
   font-family: var(--font-display, Georgia, serif);
-  font-size: 1.25rem;
-  line-height: 1.75;
-  margin: 1.25rem 0;
+  font-size: 1.18rem;
+  line-height: 1.72;
+  margin: 1rem 0;
   padding: 0;
   border: 0;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 .find-preview-note {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.75;
 }
 .find-preview-edition,
 .find-preview-footnote,
 .find-preview-path {
   font-size: 0.72rem;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.65;
   overflow-wrap: anywhere;
 }
 .find-preview-mark {
   display: block;
   font-family: Georgia, serif;
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: var(--accent);
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 .find-preview-footnote {
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 0.85rem;
   border-top: 1px solid var(--line);
 }
 .find-preview details {
-  margin-block: 1rem;
+  margin-block: 0.85rem;
 }
 .find-preview summary {
   cursor: pointer;
@@ -411,8 +464,8 @@
 }
 .find-preview details p {
   font-family: var(--font-display, Georgia, serif);
-  font-size: 0.95rem;
-  line-height: 1.8;
+  font-size: 0.94rem;
+  line-height: 1.75;
   white-space: pre-wrap;
 }
 .find-preview-open {
@@ -427,16 +480,16 @@
   min-height: 44px;
   width: 100%;
   font-size: 0.8rem !important;
-  padding: 0.75rem 1rem;
-  margin: 1.5rem 0 0.5rem;
+  padding: 0.7rem 1rem;
+  margin: 1.25rem 0 0.45rem;
 }
 .find-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
   border-top: 1px solid var(--line);
-  padding: 0.6rem 1.5rem;
+  padding: 0.45rem 1rem;
   flex-shrink: 0;
   min-height: 48px;
 }
@@ -444,22 +497,52 @@
   color: var(--muted);
   font-size: 0.7rem;
 }
-.find-workspace-link {
-  display: flex;
+.find-search-cta {
+  display: inline-flex;
   align-items: center;
-  min-height: 44px;
+  gap: 0.5rem;
+  min-height: 38px;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--accent) 10%, var(--paper));
+  font-size: 0.78rem !important;
+  font-weight: 600;
+  margin-left: auto;
+}
+.find-search-cta:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 16%, var(--paper));
+}
+.find-search-cta > span:first-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.find-search-cta-query {
+  font-weight: 400;
+  color: var(--muted);
+}
+.find-workspace-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
   color: var(--ink);
   text-decoration: none;
   font-size: 0.75rem;
+  margin-left: auto;
 }
 .find-workspace-link:hover {
   text-decoration: underline;
 }
 .find-copied {
   position: absolute;
-  bottom: 4rem;
-  left: 1.5rem;
-  right: 1.5rem;
+  bottom: 3.6rem;
+  left: 1rem;
+  right: 1rem;
   padding: 0.6rem 1rem;
   background: var(--ink);
   color: var(--paper);
@@ -467,40 +550,43 @@
   border-radius: 5px;
   pointer-events: none;
 }
-html[data-find-open="true"] {
-  overflow: hidden;
-}
+
 @media (max-width: 760px) {
-  .find-root {
-    padding: 0;
-    place-items: end stretch;
-  }
   .find-dialog {
-    width: 100%;
+    margin: 0.5rem auto auto;
+    width: calc(100vw - 1rem);
     min-height: 0;
-    height: min(90dvh, 760px);
-    max-height: 90dvh;
-    border-radius: 14px 14px 0 0;
+    height: min(86dvh, 720px);
+    max-height: calc(100dvh - 1rem);
+    border-radius: 14px;
   }
-  .find-head {
-    padding: 1rem 1rem 0.35rem;
+  .find-top {
+    padding: 0.5rem 0.65rem 0.35rem;
+    gap: 0.45rem;
   }
-  .find-head h2 {
-    font-size: 1.8rem;
+  .find-brand {
+    font-size: 1.05rem;
   }
   .find-bar {
-    margin: 0.6rem 1rem;
-    gap: 0.35rem;
+    gap: 0.3rem;
+    padding: 0.05rem 0.4rem;
   }
   .find-input {
     font-size: 1rem !important;
+    min-height: 44px;
   }
   .find-input::placeholder {
-    font-size: 0.85rem;
+    font-size: 0.84rem;
+  }
+  .find-clear {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
   .find-toolbar {
-    padding: 0 0.7rem 0.5rem;
-    gap: 0.25rem;
+    padding: 0 0.65rem 0.45rem;
+    gap: 0.25rem 0.4rem;
   }
   .find-scopes {
     gap: 0.1rem;
@@ -509,7 +595,12 @@ html[data-find-open="true"] {
   .find-commands {
     font-size: 0.68rem !important;
     min-height: 44px;
-    padding-inline: 0.5rem;
+    padding-inline: 0.45rem;
+  }
+  .find-edition-select {
+    min-height: 44px;
+    max-width: 10.5rem;
+    font-size: 0.72rem;
   }
   .find-content {
     display: block;
@@ -518,37 +609,66 @@ html[data-find-open="true"] {
   .find-discovery {
     height: 100%;
     box-sizing: border-box;
-    padding: 0.75rem;
+    padding: 0.6rem 0.65rem;
   }
   .find-preview {
     display: none;
   }
+  .find-start {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    max-width: 100%;
+    padding-bottom: 0.45rem;
+  }
+  .find-start::-webkit-scrollbar {
+    display: none;
+  }
+  .find-start button {
+    flex-shrink: 0;
+  }
+  .find-start button,
+  .find-chip,
+  .find-inline-btn,
+  .find-search-cta,
+  .find-workspace-link {
+    min-height: 44px;
+  }
   .find-item {
     min-height: 48px;
-    padding-block: 0.8rem;
+    padding-block: 0.65rem;
   }
   .find-item-snippet {
     -webkit-line-clamp: 3;
   }
-  .find-start button {
-    min-height: 44px;
-  }
   .find-footer {
-    padding: 0.4rem 1rem calc(0.4rem + env(safe-area-inset-bottom));
+    padding: 0.35rem 0.65rem calc(0.35rem + env(safe-area-inset-bottom));
     justify-content: flex-end;
   }
+  .find-shortcut,
   .find-footer-hints {
     display: none;
   }
 }
+
+@media (max-width: 380px) {
+  .find-search-icon {
+    display: none;
+  }
+}
+
+@media (any-pointer: coarse) {
+  .find-shortcut,
+  .find-footer-hints {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .find-scrim {
+  .find-dialog::backdrop {
     backdrop-filter: none;
   }
 }
-html[data-a11y-motion="reduce"] .find-scrim {
+html[data-a11y-motion="reduce"] .find-dialog::backdrop {
   backdrop-filter: none;
 }
-
-.find-edition { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; padding: .5rem 1.25rem; font-size: .8rem; }
-.find-edition select { max-width: 100%; min-width: 0; padding: .4rem; color: inherit; background: var(--surface); }

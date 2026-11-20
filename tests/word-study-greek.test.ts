@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 
 import canonsData from "../public/scriptures/canons.json" with { type: "json" };
-import { WORD_STUDIES } from "../src/lib/jesus/word-studies";
+import { WORD_STUDIES, wordStudyFromQuery } from "../src/lib/jesus/word-studies";
 import type { OriginalChapter } from "../src/lib/scriptures/types";
 
 const ROOT = path.join(import.meta.dirname, "..");
@@ -65,6 +65,20 @@ test("no study sends a reader off the site to see a word", () => {
   const source = readFileSync(path.join(ROOT, "src/lib/jesus/word-studies.ts"), "utf8");
   assert.ok(!/stepbible/i.test(source), "a STEP Bible link-out came back");
   assert.ok(!/sourceUrl/.test(source), "the language lens should not carry an external URL");
+});
+
+test("every saying picture is a local file, and an unknown address opens nothing", () => {
+  assert.equal(wordStudyFromQuery(undefined), null);
+  assert.equal(wordStudyFromQuery("not-a-saying"), null);
+  assert.equal(wordStudyFromQuery(["lords-prayer"])?.id, "lords-prayer");
+  for (const study of WORD_STUDIES) {
+    assert.match(study.picture.src, /^\/jesus\/words\/[a-z0-9-]+\.jpg$/);
+    assert.equal(study.picture.alt.includes("Interpretive illustration"), false);
+    assert.ok(
+      existsSync(path.join(ROOT, "public", study.picture.src.slice(1))),
+      `${study.id} picture is missing`,
+    );
+  }
 });
 
 test("every study reference resolves to a real chapter", () => {

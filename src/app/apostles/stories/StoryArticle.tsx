@@ -6,6 +6,8 @@ import acts from "../../../../public/scriptures/text/web/ACT.json";
 import { APOSTLE_STORIES, type ApostleStory } from "@/lib/apostles/stories";
 import StoryReflections from "./StoryReflections";
 import FromHere from "../../_components/FromHere";
+import PassageStudyLinks from "../../_components/PassageStudyLinks";
+import { verseStudyLinks } from "@/lib/scriptures/verse-study-links";
 import "./story.css";
 
 export default function StoryArticle({ story }: { story: ApostleStory }) {
@@ -70,6 +72,7 @@ export default function StoryArticle({ story }: { story: ApostleStory }) {
           <div className="as-source-verses"><p className="as-eyebrow">World English Bible (WEB)</p>
             {verses.map((verse, i) => <p key={i + story.start}><span aria-label={`Verse ${i + story.start}`} className="as-verse">{i + story.start}</span>{verse}</p>)}
             <Link href={chapterHref}>Read the full chapter <span aria-hidden="true">↗</span></Link>
+            <PassageStudyLinks links={verseStudyLinks({ book: story.book, chapter: story.chapter, verse: story.titleVerse })} />
           </div>
         </details>
       </section>

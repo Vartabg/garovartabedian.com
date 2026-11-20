@@ -19,3 +19,8 @@
 *.log
 *.tsbuildinfo
 .DS_Store
+
+/games/hermon/node_modules/
+/games/hermon/.next/
+/games/hermon/out/
+/public/play/.hermon-backup-*/

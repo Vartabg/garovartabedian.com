@@ -35,7 +35,21 @@
     "section": "being-filled",
     "paragraph": 1,
     "endParagraph": 5,
-    "sha256": "b4ba27e7fffaea4419608366719c171e0bbf8a9029c05578513a208d06081c6d"
+    "sha256": "b4ba27e7fffaea4419608366719c171e0bbf8a9029c05578513a208d06081c6d",
+    "thomas": [
+      {
+        "saying": 13,
+        "note": "Thomas uses drinking and intoxication in a different dialogue; the comparison is thematic."
+      },
+      {
+        "saying": 28,
+        "note": "Thomas uses drunkenness and sobriety in a different setting; the comparison is thematic."
+      }
+    ],
+    "earlyComparisons": [
+      "truth-awakening-drunkenness"
+    ],
+    "note": "The Gospel of Truth also uses an image of drunkenness; the settings and applications differ."
   },
   {
     "id": "james-spirit-wall-lifetime",
@@ -118,5 +132,15 @@
     "section": "final-words",
     "paragraph": 5,
     "sha256": "b40b317fb2a5e930f4c252aba82faed73c2053db5b64470aa03539cfde36c51c"
+  },
+  {
+    "id": "james-named-parables",
+    "title": "A list of named parables",
+    "kind": "figure",
+    "locator": "Prophecies and Parables · paragraph 8",
+    "section": "prophecies-and-parables",
+    "paragraph": 8,
+    "sha256": "c3e296fa9f29c9d44f8ce0843852a38b592e332ff9652580b2c50f36bc56805c",
+    "note": "The text’s risen Jesus names six parables; this is a list of titles, not six retellings."
   }
 ]

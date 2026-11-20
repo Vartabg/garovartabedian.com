@@ -11,7 +11,7 @@ test("the mapped comparison texts preserve every hosted primary paragraph", asyn
   const parables = getParables();
   const texts = await getThomasTexts(parables);
   const numbers = [...new Set(parables.flatMap(p => (p.thomas ?? []).map(t => t.saying)))];
-  assert.equal(numbers.length, 22);
+  assert.equal(numbers.length, 23);
   for (const number of numbers) {
     const source = await getLibraryPage("gospel-thomas", `saying-${number}`);
     assert.ok(source);
@@ -51,7 +51,7 @@ test("a repeated saying is read only once", async () => {
     calls.push(`${record}/${section}`);
     return { ...valid, id: section };
   }, () => {});
-  assert.equal(calls.length, 22);
+  assert.equal(calls.length, 23);
   assert.equal(calls.filter(call => call.endsWith("saying-21")).length, 1);
 });
 
@@ -91,7 +91,7 @@ test("invalid or duplicate catalog entries do not hide other sayings", async () 
 test("Thomas-only stories load each source exactly and deduplicate shared sayings", async () => {
   const entries = [...getParables(), ...THOMAS_PARABLES.map(story => ({ thomas: [{ saying: story.saying }] }))];
   const texts = await getThomasTexts(entries);
-  assert.equal(Object.keys(texts).length, 23);
+  assert.equal(Object.keys(texts).length, 38);
   for (const story of THOMAS_PARABLES) {
     const source = await getLibraryPage("gospel-thomas", `saying-${story.saying}`);
     assert.ok(source);

@@ -70,13 +70,6 @@ html[data-a11y-theme="light"] .world-angels {
 .world-angels .an-sky { opacity: 0.15; }
 .world-angels .an-sky-comet { display: none; }
 .world-angels .site-header { border-bottom: 1px solid var(--line); }
-.world-angels .world-guide {
-  border-left-width: 1px;
-  border-block-color: color-mix(in srgb, var(--accent) 35%, var(--line));
-  box-shadow: none;
-  padding-block: 0.9rem;
-}
-.world-angels .wg-nav a { font-size: 0.79rem; }
 .world-angels :is(.an-section-kicker, .kicker) {
   font-size: 0.7rem;
   font-weight: 700;
@@ -114,7 +107,7 @@ html[data-a11y-theme="light"] .world-angels {
   box-shadow: none;
   background: var(--an-panel);
 }
-.world-angels .world-disclosure > summary { padding: 1.3rem 1.5rem; }
+.world-angels .world-disclosure > summary { padding: 1.3rem 3rem 1.3rem 1.5rem; }
 .world-angels .world-disclosure > summary strong {
   font-family: var(--font-display);
   font-size: 1.5rem;
@@ -141,5 +134,5 @@ html[data-a11y-theme="light"] .world-angels {
 }
 @media (max-width: 640px) {
   .world-angels main > .wrap > h1 { font-size: 3rem; }
-  .world-angels .world-disclosure > summary { padding: 1.1rem; }
+  .world-angels .world-disclosure > summary { padding: 1.1rem 3rem 1.1rem 1.1rem; }
 }

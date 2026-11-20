@@ -27,16 +27,21 @@ export default async function AfterlifeAtlasPage({
     : undefined;
 
   return (
-    <div className="hw-atlas-container" style={{ maxWidth: "78rem", margin: "0 auto", padding: "2rem 1.5rem 5rem" }}>
+    <div className="hw-atlas-container" style={{ maxWidth: "78rem", margin: "0 auto", padding: "0 1.5rem 5rem" }}>
       <header className="hw-atlas-header">
         <p className="hw-kicker">
           <Link href="/evidence">← How We Know</Link> · Comparative Inquiry
         </p>
-        <h1 style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.5rem)", letterSpacing: "-0.03em" }}>
+        <h1 style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.5rem)", letterSpacing: "-0.03em", margin: "0 0 1rem" }}>
           The Afterlife Atlas
         </h1>
         <p className="hw-lede" style={{ fontSize: "1.15rem", color: "var(--muted)", maxWidth: "52rem", lineHeight: 1.6 }}>
           54 world traditions mapped across four millennia. Each dossier documents primary texts, funerary archaeology, and ritual practices before separating what adherents observed from what their theology inferred.
+        </p>
+        <p style={{ margin: "1.25rem 0 0", fontSize: "0.9rem" }}>
+          <Link href="/evidence/frameworks/essays" className="textlink">
+            Long-form essays from the atlas →
+          </Link>
         </p>
       </header>
 

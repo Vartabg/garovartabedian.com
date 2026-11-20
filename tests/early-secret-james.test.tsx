@@ -59,8 +59,8 @@ test("every pinned source heading and paragraph survives the independent import"
 
 test("all mapped source paragraphs, locators and reader anchors agree", async () => {
   const texts = await getJamesTexts();
-  assert.equal(JAMES_PARABLES.length, 13);
-  assert.equal(JAMES_PARABLES.filter(story => story.kind === 'figure').length, 10);
+  assert.equal(JAMES_PARABLES.length, 14);
+  assert.equal(JAMES_PARABLES.filter(story => story.kind === 'figure').length, 11);
   for (const story of JAMES_PARABLES) {
     const page = (await getLibraryPage('secret-book-james', story.section))!;
     const blocks = page.blocks.slice(story.paragraph - 1, story.endParagraph ?? story.paragraph);

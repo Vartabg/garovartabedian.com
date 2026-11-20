@@ -172,7 +172,9 @@ export async function searchRelatedPassagesFrom(
 ): Promise<RelatedSearchResult> {
   const queryTokens = meaningfulQueryTokens(query, source.stopwords);
   const directRoots = rootsFor(queryTokens);
-  const aliasTopicIds = new Set(searchExpansion(query).topics);
+  const expansion = searchExpansion(query);
+  const expansionRoots = rootsFor(expansion.terms);
+  const aliasTopicIds = new Set(expansion.topics);
   if (directRoots.length === 0 && aliasTopicIds.size === 0) {
     return { hits: [], topics: [] };
   }
@@ -195,23 +197,32 @@ export async function searchRelatedPassagesFrom(
     const topic = topicsById.get(candidate.id);
     if (!topic) return { candidate, hits: [] as RelatedPassageHit[] };
 
+    const headingTrail: string[] = [];
     const items = topic.items
-      .map((item, position) => ({
-        item,
-        position,
-        score: overlapScore(directRoots, item.label),
-      }))
+      .map((item, position) => {
+        headingTrail[item.depth] = item.label;
+        headingTrail.length = item.depth + 1;
+        const fullLabel = headingTrail.filter(Boolean).join(" — ");
+        return {
+          item,
+          fullLabel,
+          position,
+          score:
+            overlapScore(directRoots, fullLabel) * 4 +
+            overlapScore(expansionRoots, fullLabel) * 2,
+        };
+      })
       .filter(({ item }) => item.refs.length > 0)
       .sort(
         (left, right) =>
-          left.item.depth - right.item.depth ||
           right.score - left.score ||
+          left.item.depth - right.item.depth ||
           left.position - right.position,
       );
 
     const seen = new Set<string>();
     const hits: RelatedPassageHit[] = [];
-    for (const { item, score } of items) {
+    for (const { item, fullLabel, score } of items) {
       for (const rawRef of item.refs) {
         const ref = parseRef(rawRef);
         if (
@@ -226,7 +237,7 @@ export async function searchRelatedPassagesFrom(
         hits.push({
           ...ref,
           topicId: candidate.id,
-          context: item.label,
+          context: fullLabel || item.label,
           score: candidate.score + score,
         });
         if (hits.length >= MAX_PASSAGES_PER_TOPIC) break;

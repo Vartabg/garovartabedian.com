@@ -12,13 +12,14 @@ import { parseScriptureQueryRef } from "@/lib/scriptures/refs";
 import type { RelatedSearchResult } from "@/lib/scriptures/related";
 import type { SearchResult } from "@/lib/scriptures/search";
 import { wordingLabel } from "@/lib/scriptures/search-wording";
+import { topicTitle } from "@/lib/scriptures/topic-title";
 import type { Canons, TranslationId } from "@/lib/scriptures/types";
 import { earlyAllusionsForVerse } from "@/lib/early/allusions-lookup";
 import { WORD_STUDIES } from "@/lib/jesus/word-studies";
 import { HEXAPLA_PRESETS } from "@/lib/scriptures/polyglot";
 import { findAngelsDossierPreset } from "@/lib/angels/notebooklm";
 import { findJesusDossierPreset } from "@/lib/jesus/notebooklm";
-import type { FindKind, FindPlace } from "./find-catalog";
+import { foldFindText, type FindKind, type FindPlace } from "./find-catalog";
 import { rankActions } from "./find-actions";
 import { LIBRARY_FIND } from "../early/library-find";
 
@@ -117,40 +118,127 @@ export function parseFindRef(query: string, canons: Canons, preferredTranslation
   };
 }
 
+const PLACE_CONNECTORS = new Set([
+  "a",
+  "an",
+  "and",
+  "at",
+  "by",
+  "for",
+  "from",
+  "in",
+  "into",
+  "of",
+  "on",
+  "or",
+  "the",
+  "to",
+  "vs",
+  "with",
+]);
+
+const PRIMARY_PLACE_RANK: Partial<Record<FindKind, number>> = {
+  world: 3,
+  room: 3,
+  book: 3,
+  text: 3,
+  person: 3,
+  artifact: 3,
+  story: 2,
+  framework: 2,
+  council: 2,
+  parable: 2,
+  prophecy: 2,
+  case: 2,
+  page: 2,
+  event: 1,
+  path: 1,
+  section: 0,
+};
+
+function normPhrase(value: string): string {
+  return foldFindText(value).replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function hasWholePhrase(haystack: string, needle: string): boolean {
+  if (!haystack || !needle) return false;
+  return ` ${haystack} `.includes(` ${needle} `);
+}
+
 export function scorePlace(place: FindPlace, query: string): number {
-  const q = query
-    .trim()
-    .toLowerCase()
-    .replace(/œ/g, "oe")
-    .replace(/æ/g, "ae");
-  if (!q) return 0;
+  const qNorm = normPhrase(query);
+  if (!qNorm) return 0;
 
-  const title = place.title
-    .toLowerCase()
-    .replace(/œ/g, "oe")
-    .replace(/æ/g, "ae");
-  const note = place.note
-    .toLowerCase()
-    .replace(/œ/g, "oe")
-    .replace(/æ/g, "ae");
-  const keys = place.keywords.map((key) =>
-    key
-      .toLowerCase()
-      .replace(/œ/g, "oe")
-      .replace(/æ/g, "ae"),
-  );
-  const hay = `${title} ${note} ${keys.join(" ")}`;
+  const titleNorm = normPhrase(place.title);
+  const titleStripped = titleNorm.replace(/^the\s+/, "");
+  const noteNorm = normPhrase(place.note);
+  const aliasNorms = (place.aliases ?? []).map(normPhrase).filter(Boolean);
+  const keys = place.keywords.map((key) => foldFindText(key).trim()).filter(Boolean);
 
-  if (title === q) return 100;
-  if (keys.includes(q)) return 90;
-  if (title.startsWith(q)) return 80;
-  if (title.includes(q)) return 60;
-  if (keys.some((key) => key.startsWith(q))) return 50;
-  if (keys.some((key) => key.includes(q))) return 40;
+  if (titleNorm === qNorm) return 100;
+  if (qNorm.length >= 3 && titleStripped === qNorm) return 98;
+  if (aliasNorms.includes(qNorm)) return 95;
+  if (aliasNorms.some((a) => qNorm.length >= 3 && a.replace(/^the\s+/, "") === qNorm)) return 93;
 
-  const tokens = q.split(/\s+/).filter((token) => token.length > 0);
-  if (tokens.length > 1 && tokens.every((token) => hay.includes(token))) return 35;
-  if (note.includes(q)) return 20;
+  const qWords = qNorm.split(" ").filter(Boolean);
+  const titleWords = titleNorm.split(" ").filter(Boolean);
+  const aliasWords = aliasNorms.flatMap((a) => a.split(" ")).filter(Boolean);
+  const noteWords = noteNorm.split(" ").filter(Boolean);
+
+  if (
+    titleNorm.startsWith(`${qNorm} `) ||
+    (qWords.length === 1 && qNorm.length >= 3 && titleWords[0]?.startsWith(qNorm))
+  ) {
+    return 85;
+  }
+  if (hasWholePhrase(titleNorm, qNorm)) return 78;
+  if (aliasNorms.some((a) => hasWholePhrase(a, qNorm))) return 74;
+  if (
+    qWords.length === 1 &&
+    qNorm.length >= 3 &&
+    (titleWords.some((w) => w.startsWith(qNorm)) || aliasWords.some((w) => w.startsWith(qNorm)))
+  ) {
+    return 70;
+  }
+
+  const coreWords = qWords.filter((w) => !PLACE_CONNECTORS.has(w));
+  const targetWords = coreWords.length > 0 ? coreWords : qWords;
+
+  if (qWords.length > 1) {
+    const primarySet = new Set([...titleWords, ...aliasWords]);
+    if (
+      targetWords.every(
+        (tw) =>
+          primarySet.has(tw) ||
+          (tw.length >= 4 && [...primarySet].some((w) => w.startsWith(tw))),
+      )
+    ) {
+      return 68;
+    }
+  }
+
+  if (keys.includes(qNorm)) return 60;
+  if (qWords.length === 1 && qNorm.length >= 4 && keys.some((k) => k.startsWith(qNorm))) {
+    return 45;
+  }
+
+  if (qWords.length > 1) {
+    const structuredWords = new Set([...titleWords, ...aliasWords, ...keys]);
+    if (
+      targetWords.every(
+        (tw) =>
+          structuredWords.has(tw) ||
+          (tw.length >= 4 && [...structuredWords].some((w) => w.startsWith(tw))),
+      )
+    ) {
+      return 35;
+    }
+  }
+
+  if (hasWholePhrase(noteNorm, qNorm)) return 20;
+  if (qWords.length === 1 && qNorm.length >= 5 && noteWords.some((w) => w.startsWith(qNorm))) {
+    return 18;
+  }
   return 0;
 }
 
@@ -160,7 +248,9 @@ export function rankPlaces(catalog: FindPlace[], query: string, limit = PLACE_CA
     .filter((row) => row.score > 0)
     .sort(
       (a, b) =>
-        b.score - a.score || Number(b.place.kind === "text") - Number(a.place.kind === "text") || a.place.title.localeCompare(b.place.title),
+        b.score - a.score ||
+        (PRIMARY_PLACE_RANK[b.place.kind] ?? 1) - (PRIMARY_PLACE_RANK[a.place.kind] ?? 1) ||
+        a.place.title.localeCompare(b.place.title),
     )
     .slice(0, limit)
     .map(({ place, score }) => ({
@@ -236,10 +326,9 @@ export function rankFindQuery(
   return groups;
 }
 
+/** One title for a topic everywhere: the topics page, a topic page, Find and search. */
 export function topicLabel(topicId: string): string {
-  return topicId
-    .toLowerCase()
-    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+  return topicTitle(topicId);
 }
 
 export function actionGroup(query: string): FindGroup | null {
@@ -290,11 +379,25 @@ export function exactWordGroup(
   };
 }
 
+function cleanNaveContext(raw: string | undefined): string | null {
+  if (!raw) return null;
+  // Strip any inline USFM citation dump (e.g. "PRAYER IN GEN 32:11; ...").
+  const withoutRefs = raw.replace(/\s+[1-4]?[A-Z]{2,3}\s+\d+:\d+[\s\S]*$/, "").trim();
+  const cleaned = withoutRefs.replace(/:+\s*$/, "").trim();
+  if (!cleaned || cleaned.length > 72) return null;
+  if (/^(general|unclassified)\s+scriptures|^(instances|miscellany)\b/i.test(cleaned)) {
+    return null;
+  }
+  const lower = cleaned.toLowerCase();
+  return lower.charAt(0).toUpperCase() + lower.slice(1);
+}
+
 export function relatedTopicGroup(
   result: RelatedSearchResult,
   canons: Canons,
   exactKeys: Set<string>,
   trans = "web",
+  snippets?: Record<string, string>,
 ): FindGroup | null {
   const items: FindItem[] = [];
 
@@ -315,15 +418,18 @@ export function relatedTopicGroup(
     const key = `${hit.book}:${hit.chapter}:${hit.verse}`;
     if (trans === "kjv" && exactKeys.has(key)) continue;
     const name = bookDisplayName(canons, hit.book);
+    const context = cleanNaveContext(hit.context);
+    const snippetKey = `kjv:${hit.book}:${hit.chapter}:${hit.verse}`;
     items.push({
       id: `related-${hit.book}-${hit.chapter}-${hit.verse}`,
       href: passageHref(canons, hit.book, hit.chapter, hit.verse).replace("#", "?t=kjv#"),
       title: `${name} ${hit.chapter}:${hit.verse}${
         hit.endVerse ? `–${hit.endVerse}` : ""
       }`,
-      note: `Via ${topicLabel(hit.topicId)} — KJV source reference; an index connection, not a generated answer.`,
+      note: `Via ${topicLabel(hit.topicId)}${context ? ` · ${context}` : ""} — KJV source reference; an index connection, not a generated answer.`,
       kind: "verse",
       score: hit.score,
+      snippet: snippets?.[snippetKey],
     });
     passages += 1;
   }
@@ -1172,7 +1278,13 @@ export function assembleFindGroups({
     const exactKeys = new Set(
       (exact?.hits ?? []).map((hit) => `${hit.book}:${hit.chapter}:${hit.verse}`),
     );
-    const group = relatedTopicGroup(related, canons, exactKeys, exact?.translation ?? parseTranslationPrefix(trimmed, translation).translation);
+    const group = relatedTopicGroup(
+      related,
+      canons,
+      exactKeys,
+      exact?.translation ?? parseTranslationPrefix(trimmed, translation).translation,
+      snippets,
+    );
     if (group) groups.push(group);
   }
 

@@ -48,9 +48,6 @@ export default async function TraditionBooks({ params }: PageProps) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/scriptures">Scriptures</Link>
-      </p>
       <h1>{tradition.name}</h1>
       {!briefing && <p className="lede">{tradition.blurb}</p>}
 

@@ -36,6 +36,7 @@ export function AfterlifeExplorer({
     "all",
   );
   const [sortOrder, setSortOrder] = useState<"antiquity" | "name">("antiquity");
+  const [expandAllFamilies, setExpandAllFamilies] = useState(false);
   const [semanticActive, setSemanticActive] = useState(false);
   const [semanticLoading, setSemanticLoading] = useState(false);
   const [semanticStatus, setSemanticStatus] = useState("");
@@ -292,24 +293,15 @@ export function AfterlifeExplorer({
       </nav>
 
       {/* Results Count & Semantic Status */}
-      <div style={{ margin: "1rem 0", fontSize: "0.85rem", color: "var(--muted)" }}>
-        {semanticLoading ? (
-          <span style={{ color: "var(--accent)" }}>{semanticStatus || "Ranking 54 traditions in vector space…"}</span>
-        ) : (
-          <>
-            Showing <strong>{filteredBeliefs.length}</strong> of {initialBeliefs.length} traditions
-            {semanticActive
-              ? ` ranked by vector similarity to "${query}"`
-              : query
-                ? ` matching "${query}"`
-                : ""}
-          </>
-        )}
-      </div>
+      {(() => {
+        const isDefaultBrowse =
+          !query.trim() &&
+          !semanticActive &&
+          selectedFamily === "all" &&
+          selectedPattern === "all" &&
+          sortOrder === "antiquity";
 
-      {/* Grid */}
-      <div className="hw-atlas-grid">
-        {filteredBeliefs.map((belief) => {
+        const renderBeliefCard = (belief: AfterlifeCardSummary) => {
           const familyLabel = TRADITION_FAMILY_LABELS[belief.family] || belief.family;
           const ageLabel = formatAntiquityAge(belief.antiquityAge);
           const score = semanticScores[belief.id];
@@ -359,8 +351,73 @@ export function AfterlifeExplorer({
               </div>
             </article>
           );
-        })}
-      </div>
+        };
+
+        const familyGroups = isDefaultBrowse
+          ? TRADITION_FAMILIES.map((fam) => ({
+              fam,
+              group: filteredBeliefs.filter((b) => b.family === fam),
+            })).filter((entry) => entry.group.length > 0)
+          : [];
+
+        return (
+          <>
+            <div className="hw-atlas-results-bar">
+              <div>
+                {semanticLoading ? (
+                  <span style={{ color: "var(--accent)" }}>
+                    {semanticStatus || "Ranking 54 traditions in vector space…"}
+                  </span>
+                ) : (
+                  <>
+                    Showing <strong>{filteredBeliefs.length}</strong> of {initialBeliefs.length} traditions
+                    {semanticActive
+                      ? ` ranked by vector similarity to "${query}"`
+                      : query
+                        ? ` matching "${query}"`
+                        : ""}
+                  </>
+                )}
+              </div>
+              {isDefaultBrowse && familyGroups.length > 1 ? (
+                <button
+                  type="button"
+                  className="hw-atlas-expand-btn"
+                  onClick={() => setExpandAllFamilies((prev) => !prev)}
+                >
+                  {expandAllFamilies ? "Collapse families" : "Expand all families"}
+                </button>
+              ) : null}
+            </div>
+
+            {isDefaultBrowse ? (
+              <div className="hw-atlas-family-list">
+                {familyGroups.map(({ fam, group }, famIndex) => (
+                  <details
+                    key={`${fam}-${expandAllFamilies ? "open" : "default"}`}
+                    className="hw-atlas-family-disclosure"
+                    open={famIndex === 0 || expandAllFamilies || undefined}
+                  >
+                    <summary className="hw-atlas-family-summary">
+                      <strong>{TRADITION_FAMILY_LABELS[fam]}</strong>
+                      <span>
+                        {group.length} {group.length === 1 ? "tradition" : "traditions"}
+                      </span>
+                    </summary>
+                    <div className="hw-atlas-family-body">
+                      <div className="hw-atlas-grid">{group.map(renderBeliefCard)}</div>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            ) : (
+              <div className="hw-atlas-grid">
+                {filteredBeliefs.map(renderBeliefCard)}
+              </div>
+            )}
+          </>
+        );
+      })()}
     </div>
   );
 }

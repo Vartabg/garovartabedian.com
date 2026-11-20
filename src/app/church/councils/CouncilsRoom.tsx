@@ -28,9 +28,6 @@ export default function CouncilsRoom({
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/church">The Church</Link>
-      </p>
       <h1>The councils.</h1>
       <p className="lede">
         <GlossText text={data.intro} seen={glossSeen} />

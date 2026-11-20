@@ -1,0 +1,507 @@
+{
+  "baseline": "265eab56958b77db0a23a3ab65829fc5ad0f0e7b",
+  "scope": "Philip, Truth, Epistula Apostolorum and Secret Book of James",
+  "selections": [
+    {
+      "id": "philip-glass-pottery",
+      "source": "content/early-library/readings/gospel-philip/becoming-christians.json",
+      "edition": "gospel-philip",
+      "section": "becoming-christians",
+      "start": 8,
+      "end": 8,
+      "speaker": "The author",
+      "sha256": "9ae9dfed85974772c72fe02b04d96432d0149e6c5e488adbd75a743a45196366",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [
+        "clement-potter",
+        "truth-jars"
+      ],
+      "note": "The comparisons with 2 Clement’s potter and Truth’s jars share vessel imagery; their applications differ.",
+      "proposals": [
+        "Compare vessel imagery with clement-potter and truth-jars; do not treat as equivalent accounts."
+      ]
+    },
+    {
+      "id": "philip-donkey-millstone",
+      "source": "content/early-library/readings/gospel-philip/becoming-christians.json",
+      "edition": "gospel-philip",
+      "section": "becoming-christians",
+      "start": 9,
+      "end": 9,
+      "speaker": "The author",
+      "sha256": "8e750c214d61a548408041b6a722f6d3aa23427a344913af6bd507ebdb49cf2a",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author compares the donkey’s circular labor with travel that achieves nothing; it differs from the Gospel millstone warning.",
+      "proposals": []
+    },
+    {
+      "id": "philip-faith-hope-growth",
+      "source": "content/early-library/readings/gospel-philip/spiritual-growth.json",
+      "edition": "gospel-philip",
+      "section": "spiritual-growth",
+      "start": 1,
+      "end": 1,
+      "speaker": "The author",
+      "sha256": "f9e278b80eb74d528b5ff34770ad97bb95098c12613cae2b956f29b2d16c137c",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author interprets four elements of cultivation as faith, hope, love and knowledge; the complete hosted paragraph includes further discussion.",
+      "proposals": []
+    },
+    {
+      "id": "philip-samaritan-ointment",
+      "source": "content/early-library/readings/gospel-philip/baptism-chrism-eucharist-bridal-chamber.json",
+      "edition": "gospel-philip",
+      "section": "baptism-chrism-eucharist-bridal-chamber",
+      "start": 15,
+      "end": 15,
+      "speaker": "The author",
+      "sha256": "5bec2887f6fa146223deec469c043db31bae67c3b41186a1e023e867caf63770",
+      "related": "good-samaritan",
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author interprets the Samaritan’s wine and oil as an image of love, rather than retelling the whole story in Luke 10:30–37. The full hosted paragraph includes other discussion.",
+      "proposals": []
+    },
+    {
+      "id": "philip-bridal-crumbs",
+      "source": "content/early-library/readings/gospel-philip/spiritual-growth.json",
+      "edition": "gospel-philip",
+      "section": "spiritual-growth",
+      "start": 4,
+      "end": 4,
+      "speaker": "The author",
+      "sha256": "9e62c00afdd157524f0e7f3d4c4fc027ef2061e6e44a9bd4f6a2c543bbe7f07b",
+      "related": "synoptic-children-dogs-crumbs",
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "Only the image of dogs eating crumbs resembles Matthew 15:26–27 and Mark 7:27–28; Philip applies it within a different bridal-chamber comparison.",
+      "proposals": []
+    },
+    {
+      "id": "philip-unplanted-plant",
+      "source": "content/early-library/readings/gospel-philip/uprooting-evil.json",
+      "edition": "gospel-philip",
+      "section": "uprooting-evil",
+      "start": 5,
+      "end": 5,
+      "speaker": "The author quotes a saying",
+      "sha256": "672d7308c516f1a5c639ac349332531079dc477863396042b472065421304dbd",
+      "related": "synoptic-uprooted-plant",
+      "relatedAlso": [],
+      "thomas": [
+        {
+          "saying": 40,
+          "note": "Thomas 40 also speaks of an unrooted vine being uprooted; the wording and context differ."
+        }
+      ],
+      "earlyComparisons": [],
+      "note": "The author quotes a saying resembling Matthew 15:13, in a different discussion of evil; the brackets preserve gaps and editorial restorations.",
+      "proposals": [
+        "Related Gospel ID synoptic-uprooted-plant is planned and must be confirmed by the integrating agent."
+      ]
+    },
+    {
+      "id": "philip-wedding-lamps",
+      "source": "content/early-library/readings/gospel-philip/conclusion.json",
+      "edition": "gospel-philip",
+      "section": "conclusion",
+      "start": 1,
+      "end": 1,
+      "speaker": "The author",
+      "sha256": "b41920ba46f31bd624e8ebe5c386ef8c4238d6b67d54ebfbeae8729b0c17f770",
+      "related": "ten-virgins",
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "Lamp and marriage imagery partially resembles Matthew 25:1–13. The fragmentary passage does not retell the story.",
+      "proposals": []
+    },
+    {
+      "id": "philip-bread-heaven",
+      "source": "content/early-library/readings/gospel-philip/the-rulers.json",
+      "edition": "gospel-philip",
+      "section": "the-rulers",
+      "start": 2,
+      "end": 2,
+      "speaker": "The author",
+      "sha256": "ad3124be628037803ed936ad3905fbf31dcc004ceb0166f49988f4ded4462414",
+      "related": "john-bread-of-life",
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author’s analogy shares bread-from-heaven imagery with John 6:32–35; the contexts and applications differ.",
+      "proposals": []
+    },
+    {
+      "id": "philip-truth-sown",
+      "source": "content/early-library/readings/gospel-philip/the-rulers.json",
+      "edition": "gospel-philip",
+      "section": "the-rulers",
+      "start": 3,
+      "end": 3,
+      "speaker": "The author",
+      "sha256": "722b67aa70f49e92a87087abbbb509c852320342528629583a8bd21018898e0d",
+      "related": "sower",
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "Truth being sown is a thematic seed image; this is not a retelling of the Gospel sower.",
+      "proposals": []
+    },
+    {
+      "id": "philip-treasure-body",
+      "source": "content/early-library/readings/gospel-philip/the-resurrection.json",
+      "edition": "gospel-philip",
+      "section": "the-resurrection",
+      "start": 2,
+      "end": 2,
+      "speaker": "The author",
+      "sha256": "3560a31c78aeaf847c1ba654b303a8bea156f32669c074d72a377f6e6fee391d",
+      "related": "hidden-treasure",
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author compares the soul in the body to a valuable thing in a cheap container; this is not Matthew’s hidden-treasure story.",
+      "proposals": []
+    },
+    {
+      "id": "philip-name-gift-loan",
+      "source": "content/early-library/readings/gospel-philip/becoming-christians.json",
+      "edition": "gospel-philip",
+      "section": "becoming-christians",
+      "start": 15,
+      "end": 15,
+      "speaker": "The author",
+      "sha256": "ecb893e71aa2d7745a093528a5feb12f41c22df77f4fbcdadfbe04fa3123d4ee",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author compares borrowing a name at interest with receiving it as a gift.",
+      "proposals": []
+    },
+    {
+      "id": "philip-child-inheritance",
+      "source": "content/early-library/readings/gospel-philip/father-son-and-holy-spirit.json",
+      "edition": "gospel-philip",
+      "section": "father-son-and-holy-spirit",
+      "start": 7,
+      "end": 7,
+      "speaker": "The author",
+      "sha256": "d7336bd3c509aa8b243360fc26f69990241f08266699048197e0515379ea6fc1",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author compares a child’s inheritance before and after adulthood.",
+      "proposals": []
+    },
+    {
+      "id": "philip-ploughing-powers",
+      "source": "content/early-library/readings/gospel-philip/humans-and-animals.json",
+      "edition": "gospel-philip",
+      "section": "humans-and-animals",
+      "start": 1,
+      "end": 1,
+      "speaker": "The author",
+      "sha256": "24903fe2e059bc02b93ba7e8633f50bff930dc487f4750615c442fada5b52e39",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author compares cultivation with animals to the perfect human working with powers; the final lines are fragmentary.",
+      "proposals": []
+    },
+    {
+      "id": "philip-mirror-water-light",
+      "source": "content/early-library/readings/gospel-philip/adam-eve-and-the-bridal-chamber.json",
+      "edition": "gospel-philip",
+      "section": "adam-eve-and-the-bridal-chamber",
+      "start": 5,
+      "end": 5,
+      "speaker": "The author",
+      "sha256": "ef1b1e2ed53e7df779559e29cc07b01b8062d10c4e21ec8d5fa0bf55a2acfcc6",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author applies the image of seeing in light and water to baptism and anointing.",
+      "proposals": []
+    },
+    {
+      "id": "philip-inside-outside",
+      "source": "content/early-library/readings/gospel-philip/overcoming-the-world.json",
+      "edition": "gospel-philip",
+      "section": "overcoming-the-world",
+      "start": 7,
+      "end": 7,
+      "speaker": "The author quotes the Lord and comments",
+      "sha256": "e6c6de2661436e0b57c5d8c71a2689856c6283a7a8d641e6fb5c5eb018fa6a72",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [
+        {
+          "saying": 22,
+          "note": "Thomas 22 shares inside/outside imagery; neither the wording nor the surrounding discussion is identical."
+        }
+      ],
+      "earlyComparisons": [
+        "clement-two-one"
+      ],
+      "note": "The fragmentary quotation shares inside/outside language with Thomas 22 and 2 Clement 12; the wording and interpretations differ.",
+      "proposals": [
+        "The Thomas and 2 Clement relationships are partial; retain manuscript gaps."
+      ]
+    },
+    {
+      "id": "philip-lamb-door",
+      "source": "content/early-library/readings/gospel-philip/seeing-jesus.json",
+      "edition": "gospel-philip",
+      "section": "seeing-jesus",
+      "start": 3,
+      "end": 3,
+      "speaker": "The author",
+      "sha256": "085bfc65a3ab8bdcfb906883b8b922fa383eca4975e8f9c919f3c6dbfa8c2a07",
+      "related": "john-sheepfold-shepherd",
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "Lamb and door are images in the author’s saying. John 10 uses a different sheepfold and door comparison; this is a partial image comparison.",
+      "proposals": []
+    },
+    {
+      "id": "philip-marriage-pair",
+      "source": "content/early-library/readings/gospel-philip/the-mystery-of-marriage.json",
+      "edition": "gospel-philip",
+      "section": "the-mystery-of-marriage",
+      "start": 2,
+      "end": 2,
+      "speaker": "The author",
+      "sha256": "549da16584b10baee0835ca6f3886be32d8f9def72a19622359625768d98805c",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author uses a couple and the bridal chamber to describe the image united with the angel; this is an authorial analogy.",
+      "proposals": []
+    },
+    {
+      "id": "truth-doctor-sick",
+      "source": "content/early-library/readings/gospel-truth/restoring-what-was-needed.json",
+      "edition": "gospel-truth",
+      "section": "restoring-what-was-needed",
+      "start": 2,
+      "end": 2,
+      "speaker": "The author",
+      "sha256": "3a59d07f579e16fce22a0a31ee9fbed31c92ce3ee8c4c989d3e881058bcd9e74",
+      "related": "synoptic-physician-sick",
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author’s image of a doctor going to sickness resembles Matthew 9:12–13, Mark 2:17 and Luke 5:31–32, but the application differs.",
+      "proposals": []
+    },
+    {
+      "id": "truth-father-plants",
+      "source": "content/early-library/readings/gospel-truth/the-father-s-paradise.json",
+      "edition": "gospel-truth",
+      "section": "the-father-s-paradise",
+      "start": 1,
+      "end": 1,
+      "speaker": "The author",
+      "sha256": "773374c93b1e5a188d0c65f4724253fe8cbf0e1ef82ea084ddd15ca2417e8ed6",
+      "related": "synoptic-uprooted-plant",
+      "relatedAlso": [
+        "john-vine-branches"
+      ],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The Father’s planting is a partial image comparison with Matthew 15:13 and John 15:1–8; it is not a direct quotation.",
+      "proposals": [
+        "Confirm planned synoptic-uprooted-plant ID before integration."
+      ]
+    },
+    {
+      "id": "truth-anointed-jars",
+      "source": "content/early-library/readings/gospel-truth/restoring-what-was-needed.json",
+      "edition": "gospel-truth",
+      "section": "restoring-what-was-needed",
+      "start": 3,
+      "end": 3,
+      "speaker": "The author",
+      "sha256": "f5440740086e95e81c708032d50d73cd3356cf25954eb0b54426718d5fd7c4e7",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [
+        "truth-jars"
+      ],
+      "note": "This image of anointed full and leaking jars differs from the work’s other selected jars passage.",
+      "proposals": []
+    },
+    {
+      "id": "truth-awakening-drunkenness",
+      "source": "content/early-library/readings/gospel-truth/the-book-of-the-living.json",
+      "edition": "gospel-truth",
+      "section": "the-book-of-the-living",
+      "start": 4,
+      "end": 4,
+      "speaker": "The author",
+      "sha256": "7ce79e53fab75ada5b476b88424cf0336fc8c4c91672bb2c6973298c4013d07e",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [
+        {
+          "saying": 28,
+          "note": "Both use drunkenness imagery; the applications and contexts differ."
+        }
+      ],
+      "earlyComparisons": [],
+      "note": "The author compares gaining knowledge to returning from drunkenness.",
+      "proposals": [
+        "Compare thematically with James Being Filled paragraph 1; James is a separate data model and no direct earlyComparisons link exists."
+      ]
+    },
+    {
+      "id": "truth-living-letters",
+      "source": "content/early-library/readings/gospel-truth/the-book-of-the-living.json",
+      "edition": "gospel-truth",
+      "section": "the-book-of-the-living",
+      "start": 6,
+      "end": 6,
+      "speaker": "The author",
+      "sha256": "557dbfe9d28d61951277af5a953e62bfcb477c7536f7c933dcb847dfda70bd18",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author describes the Father’s letters as speaking and knowing themselves.",
+      "proposals": []
+    },
+    {
+      "id": "truth-darkness-light",
+      "source": "content/early-library/readings/gospel-truth/the-return-to-unity.json",
+      "edition": "gospel-truth",
+      "section": "the-return-to-unity",
+      "start": 3,
+      "end": 4,
+      "speaker": "The author",
+      "sha256": "919b7d0ef39d2bf340fdc4bb2574506c6d6afaada2d846373d6002b3112c97c3",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author compares ignorance and need dissolving to darkness dissolving in light.",
+      "proposals": []
+    },
+    {
+      "id": "truth-fog-root",
+      "source": "content/early-library/readings/gospel-truth/error-and-forgetfulness.json",
+      "edition": "gospel-truth",
+      "section": "error-and-forgetfulness",
+      "start": 1,
+      "end": 3,
+      "speaker": "The author",
+      "sha256": "e9d269ac272aa10e8fa566919169cff9e72952993234ca5b56f44eacb2aee673",
+      "related": null,
+      "relatedAlso": [],
+      "thomas": [],
+      "earlyComparisons": [],
+      "note": "The author compares anguish to fog and describes Error as having no root; these are authorial images.",
+      "proposals": []
+    },
+    {
+      "id": "epistula-narrow-way",
+      "source": "public/early/texts/epistula-apostolorum.json",
+      "edition": "epistula-apostolorum",
+      "section": "chapter-24",
+      "start": 1,
+      "end": 1,
+      "speaker": "The risen Jesus and the disciples, in dialogue",
+      "sha256": "04c0c34e72771461ba86ed7cf13cd6fe81d85925bb3f6af3384a0458f64052ba",
+      "related": "synoptic-narrow-wide-gates",
+      "note": "The risen Jesus tells the disciples to minister in a direct and narrow way; Matthew 7:13–14 and Luke 13:24 use related but different imagery. James’s translation uses Coptic and Ethiopic witnesses; the hosted paragraph does not specify a sole witness.",
+      "proposals": [
+        "Witness assignment for chapter 24 is not established by the displayed chapter itself; verify against James’s edition.",
+        "Compare Hermas Mandate 6 when integrated."
+      ],
+      "relatedAlso": [
+        "synoptic-closed-door"
+      ]
+    },
+    {
+      "id": "epistula-saul-vessel-wall",
+      "source": "public/early/texts/epistula-apostolorum.json",
+      "edition": "epistula-apostolorum",
+      "section": "chapter-31",
+      "start": 1,
+      "end": 1,
+      "speaker": "The risen Jesus, as reported by the disciples",
+      "sha256": "ae8111077c46169894c01ee7d18a78868529d42bf06401664a8d16eaaa82acaf",
+      "related": null,
+      "note": "The text’s risen Jesus describes Saul as a chosen vessel and an enduring wall. After six Coptic leaves are marked lost, James continues from Ethiopic witnesses; the complete paragraph preserves an Ethiopic manuscript variant.",
+      "proposals": [
+        "Retain the full chapter-31 paragraph, including James’s parenthetical Ethiopian variant; check precise witness coverage against the edition."
+      ]
+    },
+    {
+      "id": "epistula-grain-chaff",
+      "source": "public/early/texts/epistula-apostolorum.json",
+      "edition": "epistula-apostolorum",
+      "section": "chapter-49",
+      "start": 2,
+      "end": 2,
+      "speaker": "The risen Jesus and the disciples, in dialogue",
+      "sha256": "c69cf630dab92fdaacf63377328ee970f9eec4ae312b452707bde929997f95f1",
+      "related": "synoptic-threshing-floor",
+      "note": "In James’s text the Coptic witness is defective from chapter 48; this later passage follows the Ethiopic continuation. The risen Jesus speaks here; John the Baptist speaks in Matthew 3:12 and Luke 3:17.",
+      "proposals": [],
+      "relatedAlso": []
+    },
+    {
+      "id": "james-named-parables",
+      "source": "content/early-library/readings/secret-book-james/prophecies-and-parables.json",
+      "edition": "secret-book-james",
+      "section": "prophecies-and-parables",
+      "start": 8,
+      "end": 8,
+      "speaker": "The risen Jesus, as reported by James",
+      "sha256": "c3e296fa9f29c9d44f8ce0843852a38b592e332ff9652580b2c50f36bc56805c",
+      "related": null,
+      "note": "The text’s risen Jesus names six parables; this is a list of titles, not six retellings.",
+      "proposals": [
+        "Names six parables without retelling them; compare titles cautiously rather than assert six exact Gospel identities."
+      ]
+    }
+  ],
+  "existingSelections": [
+    {
+      "id": "james-fullness-sobriety",
+      "edition": "secret-book-james",
+      "section": "being-filled",
+      "start": 1,
+      "end": 5,
+      "speaker": "The Savior, as reported by James",
+      "disposition": "already contains paragraph 1; do not duplicate",
+      "proposals": [
+        "Compare paragraph 1 thematically with Thomas 13 (spring and intoxication) and Thomas 28 (drunkenness); imagery and contexts differ. The current James model does not support Thomas comparison placements."
+      ]
+    }
+  ],
+  "handoffAtTimeOfSourceReview": [
+    "New Early source sections and Epistula chapters require runtime literal allowlist, chapter validation, trace and staged verification updates by the integrator.",
+    "Current hard-coded inventories and counts do not yet include these selections.",
+    "Planned Gospel relation IDs must be reconciled against the final integration branch.",
+    "Epistula witness details should be checked in M. R. James’s edition, especially the location and extent of Coptic gaps."
+  ]
+}

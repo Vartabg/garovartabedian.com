@@ -217,6 +217,70 @@ describe("rankPlaces", () => {
           hit.title.includes("The Law (Torah") && hit.href === "/scriptures#torah",
       ),
     );
+    assert.equal(torah[0]?.href, "/scriptures#torah");
+  });
+
+  it("indexes all 86 hosted Scripture books without dropping reading paths", () => {
+    for (const [query, expectedHref] of [
+      ["Genesis", "/scriptures/protestant/GEN/1"],
+      ["Tobit", "/scriptures/catholic/TOB/1"],
+      ["Psalms", "/scriptures/protestant/PSA/1"],
+      ["Ben Sira", "/scriptures/catholic/SIR/1"],
+      ["1 Maccabees", "/scriptures/catholic/1MA/1"],
+    ] as const) {
+      const hits = rankPlaces(FIND_CATALOG, query);
+      assert.equal(hits[0]?.href, expectedHref, query);
+    }
+    const startWalk = rankPlaces(FIND_CATALOG, "Where the story starts");
+    assert.ok(startWalk.some((hit) => hit.title === "Where the story starts"));
+  });
+
+  it("finds stories, angels, demons, stones, witnesses, frameworks, ownership records, and case studies", () => {
+    const probes: Array<[string, string]> = [
+      ["David and Goliath", "/scriptures/stories/david"],
+      ["Prodigal Son", "/scriptures/stories/lost-son"],
+      ["Good Samaritan", "/jesus/parables?story=good-samaritan"],
+      ["Gabriel", "/angels#gabriel"],
+      ["Saraqael", "/angels#saraq-l"],
+      ["Asmodaeus", "/angels/demons#asmodaeus"],
+      ["Beelzebub", "/angels/demons#beelzebul"],
+      ["Pilate Stone", "/jesus/history#pilate-stone"],
+      ["Caiaphas Ossuary", "/jesus/history#caiaphas-ossuary"],
+      ["Josephus", "/jesus/history#josephus-testimonium"],
+      ["Zoroastrianism", "/evidence/frameworks/"],
+      ["Ragnarok", "/evidence/frameworks/"],
+      ["Mictlan", "/evidence/frameworks/"],
+      ["NIV", "/word#word-entry-niv"],
+      ["JobPilot", "/work/jobpilot"],
+      ["Merge Monitor", "/work/merge-monitor"],
+      ["Armenia", "/apostles/sent#armenia-title"],
+      ["Teresa of Avila", "/church/faces#"],
+      ["resume", "/resume"],
+    ];
+    for (const [query, expectedPrefix] of probes) {
+      const hits = rankPlaces(FIND_CATALOG, query);
+      assert.ok(hits.length > 0, `expected hits for ${query}`);
+      if (expectedPrefix.endsWith("/") || expectedPrefix.endsWith("#")) {
+        assert.ok(
+          hits.some((hit) => hit.href.startsWith(expectedPrefix)),
+          `${query} -> ${hits.map((h) => h.href).join(", ")}`,
+        );
+      } else {
+        assert.equal(hits[0]?.href, expectedPrefix, query);
+      }
+    }
+  });
+
+  it("enforces word boundaries and ranks explicit room aliases ahead of blurb mentions", () => {
+    const nivHits = rankPlaces(FIND_CATALOG, "NIV", 50);
+    assert.equal(nivHits[0]?.href, "/word#word-entry-niv");
+    assert.ok(
+      !nivHits.some((hit) => /universe/i.test(hit.title) && !/\bniv\b/i.test(hit.title)),
+      "NIV must not match 'universe' mid-word",
+    );
+
+    const paulHits = rankPlaces(FIND_CATALOG, "Paul");
+    assert.equal(paulHits[0]?.href, "/apostles/sent");
   });
 });
 

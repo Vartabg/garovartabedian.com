@@ -140,7 +140,6 @@ export default function LabsPage() {
   return (
     <CleanChrome activeHref="/labs">
       <section className="hire-hero" aria-labelledby="labs-title">
-        <p className="kicker">The machinery</p>
         <h1 id="labs-title">How this site is built</h1>
         <p className="lede">
           Most sites hide how they&rsquo;re made. This one is the artifact

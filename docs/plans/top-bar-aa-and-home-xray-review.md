@@ -1,0 +1,5 @@
+# EGM Design Review Summary — `top-bar-aa-and-home-xray.md`
+
+- **Reviewer:** Fresh-context independent `research` subagent (`EGM Plan Reviewer (Unit 3)`).
+- **`r1` Verdict:** Revise before implementation (`5` material blockers identified: `390px` single-row flex math on `.discovery-lens-hint`, stale `@media (max-width: 520px)` `.a11y-trigger` offsets & `.a11y-menu` `z-index: 220` stacking context in `globals.css`, WCAG 2.2 AA SC 2.4.11 focus-out obscuration when tabbing out of `.a11y-panel` into `<header>`, `320px` implicit CSS Grid `min-content` sizing + unasserted `dimensions.overflow` in `discovery.spec.ts`, and `axe-core` selector / `site-xray.json` ordering).
+- **`r2` Verdict:** **Approved** (all 5 material blockers resolved; 3 non-blocking inline items — `@/lib/story-shelf` module path, `.discovery-lens-controls .a11y-trigger` specificity for mobile padding, and idempotent `details.open = true` in the 4-theme `axe-core` loop — folded directly into `docs/plans/top-bar-aa-and-home-xray.md` and implementation).

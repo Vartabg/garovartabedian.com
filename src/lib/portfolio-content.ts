@@ -363,11 +363,11 @@ export const RESUME: ResumeContent = {
 
 export const WORK_PAGE = {
   kicker: "Work",
-  headline: "A small project. A useful result.",
+  headline: "Case studies, systems, and working demos.",
   lede:
-    "A landing page for your business, a handler for a recurring spreadsheet task, and a job report you can make on your phone. Three focused tools, customized together for your business.",
+    "Production workflows, research software, and interactive browser tools — each documented with its boundaries, source code or live demo, and verification trail.",
   proofLine:
-    "Start with JobPilot for workflow automation and human-review boundaries; then open this research platform for product architecture, data discipline, source provenance, and verified shipping.",
+    "Start with JobPilot for workflow automation and human-review boundaries, or inspect this research platform for static-first data pipelines, source provenance, and accessibility gates.",
 };
 
 /** A working demo and a bounded customization offer, not a client case study. */
@@ -438,7 +438,7 @@ export const STARTER_MENU = {
   price: 100,
   currency: "USD",
   priceLabel: "$100 one-time",
-  href: "/work#starter-menu",
+  href: "/services#starter-menu",
   inquiryLabel: "Ask for the $100 package",
   inquiryHref: `${CONTACT_METHOD_BY_ID.email.href}?subject=${encodeURIComponent("$100 three-item business package")}&body=${encodeURIComponent("Hi Garo, I’m interested in the $100 total package: a landing page, an Excel document handler and a customized job report tool for my business.\n\nMy business:\nLanding page — what I want visitors to do, and my copy/logo/images:\nMy domain or hosting, if any:\nExcel — my recurring task, input file layout (.xlsx or .csv) and desired output:\nMy computer and Excel version:\nJob report — the work I want to record and the phone/browser I use:\n\nPlease confirm the scope and timing for all three together at $100 USD total before starting. I can provide an anonymized spreadsheet sample after we agree on what is needed.")}`,
   description:
@@ -652,15 +652,19 @@ export const HOME = {
   worldsLabel: "Scripture · History · Witness",
   worldsHeading: "Jesus Christ.",
   // The opening now introduces the reading library and its research tools.
-  heroText:
-    "Read his words. Compare the texts. Follow the witnesses. An open research library where one passage can lead you into a whole world.",
+  // The sentence under the headline is Matthew 28:6, read from the hosted text.
   primaryHref: "/jesus/words",
   primaryLabel: "Read his words",
   scriptureHref: "/scriptures",
   scriptureLabel: "Open the Scriptures",
-  discoveryLinkLabel: "Try the research tools",
-  worldsHref: "#worlds",
-  worldsLinkLabel: "Explore the whole record",
+  // The row of story pictures under the two buttons (Garo's pick, 2026-11-10).
+  // The link after it reads "All 27 stories"; the number comes from the shelf.
+  storiesHref: "/scriptures/stories",
+  storiesListLabel: "Stories",
+  storiesLinkStart: "All",
+  storiesLinkEnd: "stories",
+  // Shown only when a keyboard user tabs to it.
+  storiesSkipLabel: "Skip the story pictures",
   // The builder's line above the headline — Garo's spot and words (2026-10-03),
   // so an engineer can tell from the first screen that this is a built project.
   builderLead: "A portfolio project by",
@@ -672,8 +676,7 @@ export const HOME = {
   skyNightLead: "Shown at night for the dark theme · Jerusalem",
   skyDayLead: "Shown by day for the light theme · Jerusalem",
   scriptureHeading: "The text itself.",
-  // The heading over all eight worlds. It is where "Explore the whole record"
-  // on the first screen lands, so the two read the same (2026-10-03).
+  // The heading over all eight worlds.
   pathsHeading: "The whole record.",
   investigationsLabel: "Investigate further",
   investigationsHeading: "Three records that refuse easy answers.",

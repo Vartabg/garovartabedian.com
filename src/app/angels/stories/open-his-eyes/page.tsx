@@ -5,6 +5,9 @@ import Link from "next/link";
 import kings from "../../../../../public/scriptures/text/web/2KI.json";
 import { ChapterNavigation, Revelation } from "./StoryControls";
 import { StoryFromHere } from "../StoryFrame";
+import PassageStudyLinks from "../../../_components/PassageStudyLinks";
+import { angelStories } from "../../../../lib/angel-stories";
+import { verseStudyLinks } from "../../../../lib/scriptures/verse-study-links";
 import "../../../styles/angels-story.css";
 
 const SOURCE = "/scriptures/protestant/2KI/6?t=web#v14";
@@ -155,6 +158,7 @@ export default function OpenHisEyesPage() {
             <p className="dothan-passage-translation">World English Bible (WEB)</p>
             {verses.map((verse, index) => <p key={index}><span className="dothan-verse-number" aria-label={`Verse ${index + 14}`}>{index + 14}</span>{verse}</p>)}
             <Link href={SOURCE} className="dothan-text-link">Open the full chapter <Arrow /></Link>
+            <PassageStudyLinks links={verseStudyLinks(angelStories.find((story) => story.slug === "open-his-eyes")!.titleVerse)} />
           </div>
         </details>
       </section>

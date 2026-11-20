@@ -35,10 +35,3 @@ export function worldContinuation(world: WorldId, pathname: string): Continuatio
   }
   return links;
 }
-
-/** The reader has its own passage trail; entrances need a compact guide. */
-export function worldGuideLayout(world: WorldId, pathname: string): "compact" | "room" | "reader" {
-  const base = WORLD_GUIDES[world].base;
-  if (getSiteLocation(pathname).presentation === "reader") return "reader";
-  return routePath(pathname) === base ? "compact" : "room";
-}

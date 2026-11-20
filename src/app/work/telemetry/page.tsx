@@ -95,7 +95,6 @@ const BOUNDARIES = [
 export default function WorkAgentTelemetry() {
   return (
     <CleanChrome activeHref="/work">
-      <p className="kicker">Work / Case study</p>
       <h1>Agent Telemetry — Closed-loop memory &amp; governance</h1>
       <p className="lede">
         Across 434 multi-turn sessions in Claude Code, OpenAI Codex,

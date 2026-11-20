@@ -1,5 +1,5 @@
 import { loadBook, loadCanons, loadSearchMeta, loadShard } from "./client";
-import { NEGATION_WORDS, wordingEvidence, type WordingMatch } from "./search-wording";
+import { NEGATION_WORDS, prepareWordingQuery, wordingEvidence, type WordingMatch } from "./search-wording";
 import type {
   Canons,
   SearchMeta,
@@ -94,6 +94,7 @@ export type SearchDataSource = {
 export async function searchVersesFrom(
   query: string,
   source: SearchDataSource,
+  limit: number = MAX_HITS,
 ): Promise<SearchResult> {
   const { canons, meta } = source;
   const stop = new Set([...meta.stopwords, ...QUESTION_SCAFFOLD]);
@@ -170,10 +171,11 @@ export async function searchVersesFrom(
 
   const warnings: string[] = [];
   if (source.loadBook && ranked.length) {
-    // Every possible complete phrase is checked BEFORE the 200-result cap.
+    // Every possible complete phrase is checked BEFORE the display cap.
     // Other displayed candidates also get honest word-form/negation labels.
     const available = indexed.length - missing.length;
-    const candidates = ranked.filter((hit, i) => i < MAX_HITS || (tokens.length > 1 && missing.length === 0 && hit.matched === available));
+    const hasMultiWordPhrase = tokens.length > 1 || prepareWordingQuery(query).expandedTokenCount > 1;
+    const candidates = ranked.filter((hit, i) => i < limit || (hasMultiWordPhrase && missing.length === 0 && hit.matched === available));
     const needed = [...new Set(candidates.map(h => h.book))];
     const loaded = await Promise.allSettled(needed.map(book => source.loadBook!(book)));
     const texts = new Map<string, BookText>();
@@ -227,7 +229,7 @@ export async function searchVersesFrom(
     );
 
   return {
-    hits: ranked.slice(0, MAX_HITS),
+    hits: ranked.slice(0, limit),
     totalHits: ranked.length,
     books,
     translation: meta.trans,
@@ -241,6 +243,7 @@ export async function searchVersesFrom(
 export async function searchVerses(
   query: string,
   trans: TranslationId = "web",
+  limit: number = MAX_HITS,
 ): Promise<SearchResult> {
   const [meta, canons] = await Promise.all([
     loadSearchMeta(trans),
@@ -251,7 +254,7 @@ export async function searchVerses(
     canons,
     loadShard: (shard) => loadShard(trans, shard),
     loadBook: (book) => loadBook(trans, book),
-  });
+  }, limit);
 }
 
 export { parseRef, parseScriptureQueryRef } from "./refs";

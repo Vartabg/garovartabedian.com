@@ -8,7 +8,7 @@ import { firstYear, handForYear, type Hand } from "@/lib/hands";
 import HandChange from "../_components/HandChange";
 import GlossText from "../_components/GlossText";
 import WorldDisclosure from "../_components/WorldDisclosure";
-import WorldEntry from "../_components/WorldEntry";
+import WorldHeroActions from "../_components/WorldHeroActions";
 import WorldHomeHero from "../_components/WorldHomeHero";
 import ChurchSectionNav from "./ChurchSectionNav";
 import EraSpine from "./EraSpine";
@@ -49,9 +49,20 @@ export default function ChurchHome({
     <>
       <WorldHomeHero
         world="church"
-        eyebrow="The church"
         title="The road from the upper room."
         facets={["Two thousand years", "Every major fork", "Sources inline"]}
+        actions={
+          <WorldHeroActions
+            label="Explore church history"
+            links={[
+              { href: "#upper-room", label: "Open the historical road" },
+              { href: "/church/tree", label: "The tree" },
+              { href: "/church/councils", label: "The councils" },
+              { href: "/church/faces", label: "The faces" },
+              { href: "/church/giants", label: "The giants" },
+            ]}
+          />
+        }
       >
         The church begins with about a hundred and twenty people praying in a
         borrowed room. This page walks from there to today — every step dated
@@ -59,39 +70,6 @@ export default function ChurchHome({
         And at every era, the same question: who held the power, and what did
         they do with it?
       </WorldHomeHero>
-      <WorldEntry
-        eyebrow="Walk the road"
-        href="#upper-room"
-        title="Begin with the upper room"
-        note="Follow the sourced road from the first gathering to today."
-        action="Open the historical road"
-        paths={[
-          {
-            href: "/church/tree",
-            label: "The tree",
-            note: "See the whole shape, its great forks, and every living branch.",
-            meta: "Whole shape",
-          },
-          {
-            href: "/church/councils",
-            label: "The councils",
-            note: "Map the gatherings, callers, decisions, and consequences.",
-            meta: "Map + decisions",
-          },
-          {
-            href: "/church/faces",
-            label: "The faces",
-            note: "Meet the people and cultures through the art they made.",
-            meta: "People + cultures",
-          },
-          {
-            href: "/church/giants",
-            label: "The giants",
-            note: "Weigh what the church owes its teachers against their faults.",
-            meta: "Gift + fault",
-          },
-        ]}
-      />
 
       <WorldDisclosure
         label="Open the full church-history road"
@@ -123,7 +101,8 @@ export default function ChurchHome({
                 <GlossText text={era.power} seen={glossSeen} />
               </p>
 
-              {era.steps.map((s) => {
+              {(() => {
+                const renderStep = (s: (typeof era.steps)[number]) => {
                 const stepLinks = linksByStep.get(`${era.id}::${s.title}`);
                 return (
                 <article className="ch-step" key={s.year + s.title}>
@@ -183,7 +162,20 @@ export default function ChurchHome({
                   </div>
                 </article>
                 );
-              })}
+                };
+                const [first, ...rest] = era.steps;
+                return (
+                  <>
+                    {first && renderStep(first)}
+                    {rest.length > 0 && (
+                      <details className="ch-era-rest">
+                        <summary>The rest of {era.name}</summary>
+                        {rest.map(renderStep)}
+                      </details>
+                    )}
+                  </>
+                );
+              })()}
             </section>
           ))}
         </div>

@@ -9,9 +9,12 @@ import type { Canons } from "@/lib/scriptures/types";
 import GlossText from "@/app/_components/GlossText";
 import { RedLetterMap } from "./RedLetterMap";
 import WordStudyGuide from "./WordStudyGuide";
+import { WORD_STUDIES } from "@/lib/jesus/word-studies";
 import { groupWordChapters } from "./word-utils";
 import MeaningRail from "@/app/_components/MeaningRail";
 import OriginalLine from "@/app/_components/OriginalLine";
+import PassageStudyLinks from "@/app/_components/PassageStudyLinks";
+import type { VerseStudyLink } from "@/lib/scriptures/verse-study-links";
 import type { WordsEntry } from "@/lib/semantic-corpus";
 
 type LoadBookData = (book: string) => Promise<WordsBook>;
@@ -24,6 +27,8 @@ export default function WordsRoom({
   counts,
   canons,
   originalEditions,
+  initialStudy,
+  studyLinks,
   loadBookData = loadWordsBook,
 }: {
   initialBook: string;
@@ -32,19 +37,30 @@ export default function WordsRoom({
   canons: Canons;
   /** Book id to hosted edition id, from the server manifest. */
   originalEditions: Record<string, string>;
+  /** A word-study id from `?study=`, already checked against the six studies. */
+  initialStudy?: string;
+  /** Saying id to its compare and words lines, built on the server from the anchor verse. */
+  studyLinks: Record<string, readonly VerseStudyLink[]>;
   loadBookData?: LoadBookData;
 }) {
+  const requested = WORD_STUDIES.find((item) => item.id === initialStudy) ?? null;
 
-  const [book, setBook] = useState(initialBook);
+  const [book, setBook] = useState(requested?.anchor.book ?? initialBook);
   const [versesByBook, setVersesByBook] = useState<Record<string, WordsBook>>({
     [initialBook]: initialVerses,
   });
   const [filter, setFilter] = useState("");
   const [selectedChapter, setSelectedChapter] = useState<number | null>(
-    groupWordChapters(initialVerses)[0]?.[0] ?? null,
+    requested?.anchor.chapter ?? groupWordChapters(initialVerses)[0]?.[0] ?? null,
   );
   const [status, setStatus] = useState<"ready" | "loading" | "error">("ready");
-  const [studyTarget, setStudyTarget] = useState<StudyTarget | null>(null);
+  const [studyTarget, setStudyTarget] = useState<StudyTarget | null>(
+    requested
+      ? { book: requested.anchor.book, chapter: requested.anchor.chapter, verse: requested.anchor.verse }
+      : null,
+  );
+  const [doorId, setDoorId] = useState<string | null>(requested?.id ?? null);
+  const [chapterOpen, setChapterOpen] = useState(requested === null);
   const requestId = useRef(0);
   const readerRef = useRef<HTMLDivElement>(null);
 
@@ -62,6 +78,7 @@ export default function WordsRoom({
     const next = allChapters[chapterIndex + direction];
     if (!next) return;
     setStudyTarget(null);
+    setChapterOpen(true);
     setSelectedChapter(next[0]);
     readerRef.current?.focus({ preventScroll: true });
     readerRef.current?.scrollIntoView?.({ block: "start" });
@@ -113,25 +130,112 @@ export default function WordsRoom({
     void fetchBook(nextBook, nextChapter);
   };
 
+  const showSaying = (id: string) => {
+    const study = WORD_STUDIES.find((item) => item.id === id);
+    if (!study) return false;
+    setFilter("");
+    setDoorId(study.id);
+    setChapterOpen(false);
+    setStudyTarget({
+      book: study.anchor.book,
+      chapter: study.anchor.chapter,
+      verse: study.anchor.verse,
+    });
+    selectBook(study.anchor.book, study.anchor.chapter);
+    return true;
+  };
+  const openSaying = (id: string) => {
+    if (!showSaying(id)) return;
+    const next = `?study=${encodeURIComponent(id)}`;
+    if (window.location.search === next) return;
+    window.history.pushState(null, "", next);
+  };
+  useEffect(() => {
+    const onPop = () => {
+      const id = new URL(window.location.href).searchParams.get("study");
+      if (!id) {
+        setDoorId(null);
+        setStudyTarget(null);
+        setChapterOpen(true);
+        return;
+      }
+      showSaying(id);
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  });
+  const chosen = WORD_STUDIES.find((item) => item.id === doorId) ?? null;
+  const chapterVisible = chapterOpen || Boolean(filter.trim());
+  const hostedVerse = chosen
+    ? versesByBook[chosen.anchor.book]?.[`${chosen.anchor.chapter}:${chosen.anchor.verse}`]
+    : undefined;
   const tid = traditionFor(canons, book);
   useEffect(() => {
-    if (!studyTarget || status !== "ready" || book !== studyTarget.book || selectedChapter !== studyTarget.chapter) return;
+    if (!chapterOpen || !studyTarget || status !== "ready" || book !== studyTarget.book || selectedChapter !== studyTarget.chapter) return;
     const verse = document.getElementById(`word-${studyTarget.book}-${studyTarget.chapter}-${studyTarget.verse}`);
     verse?.scrollIntoView?.({ behavior: "smooth", block: "center" });
     verse?.focus();
-  }, [book, selectedChapter, status, studyTarget]);
+  }, [book, chapterOpen, selectedChapter, status, studyTarget]);
   const glossSeen = new Map<string, string>();
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/jesus">Jesus Christ</Link>
-      </p>
       <h1>His words</h1>
-      <p className="lede">
-        Jesus&rsquo; words in the World English Bible. Open any verse to read
-        it in context.
+      <p className="lede">{WORD_STUDIES[0].saying}</p>
+      <p>
+        <Link href={`/scriptures/${traditionFor(canons, WORD_STUDIES[0].anchor.book)}/${WORD_STUDIES[0].anchor.book}/${WORD_STUDIES[0].anchor.chapter}#v${WORD_STUDIES[0].anchor.verse}`}>
+          {WORD_STUDIES[0].anchor.label}
+        </Link>
       </p>
+
+      <nav className="jsu-word-door" aria-label="Begin with a saying">
+        {WORD_STUDIES.map((study) => (
+          <button
+            key={study.id}
+            type="button"
+            aria-pressed={doorId === study.id}
+            onClick={() => openSaying(study.id)}
+          >
+            {study.title}
+          </button>
+        ))}
+      </nav>
+      {chosen && (
+        <article className="jsu-word-door-saying" aria-labelledby={`word-door-${chosen.id}`}>
+          <h2 id={`word-door-${chosen.id}`}>{chosen.title}</h2>
+          <p>{chosen.saying}</p>
+          <p>
+            <Link
+              href={`/scriptures/${traditionFor(canons, chosen.anchor.book)}/${chosen.anchor.book}/${chosen.anchor.chapter}#v${chosen.anchor.verse}`}
+            >
+              {chosen.anchor.label}
+            </Link>
+          </p>
+          {/* A native image keeps the saying independent of the image optimizer. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="jsu-word-door-picture"
+            src={chosen.picture.src}
+            alt={`${chosen.picture.alt} Interpretive illustration.`}
+            width={960}
+            height={720}
+            loading="lazy"
+            decoding="async"
+          />
+          {hostedVerse && (
+            <p className="jsu-word-door-verse">
+              <span className="world-vnum">{chosen.anchor.verse}</span>
+              {hostedVerse}
+            </p>
+          )}
+          <PassageStudyLinks links={studyLinks[chosen.id] ?? []} />
+          {!chapterOpen && (
+            <button type="button" className="jsu-word-door-chapter" onClick={() => setChapterOpen(true)}>
+              Read this chapter
+            </button>
+          )}
+        </article>
+      )}
 
       <div className="jsu-word-reader" ref={readerRef} tabIndex={-1} aria-label="Words reader">
         <div className="jsu-word-tools" role="group" aria-label="Choose a passage">
@@ -141,6 +245,7 @@ export default function WordsRoom({
               value={book}
               onChange={(event) => {
                 setStudyTarget(null);
+                setChapterOpen(true);
                 selectBook(event.target.value);
               }}
             >
@@ -157,6 +262,7 @@ export default function WordsRoom({
               value={selectedChapter ?? ""}
               onChange={(event) => {
                 setStudyTarget(null);
+                setChapterOpen(true);
                 setSelectedChapter(Number(event.target.value));
               }}
               disabled={status !== "ready" || Boolean(filter.trim())}
@@ -187,7 +293,7 @@ export default function WordsRoom({
           <Link href="/jesus/harmony">Compare Gospel accounts →</Link>
         </div>
 
-        {status === "ready" && (
+        {status === "ready" && chapterVisible && (
           <p className="scr-meta jsu-word-results" role="status" aria-live="polite">
             {filter.trim()
               ? `${visibleVerseCount.toLocaleString()} matching ${visibleVerseCount === 1 ? "verse" : "verses"} across ${chapters.length.toLocaleString()} ${chapters.length === 1 ? "chapter" : "chapters"}.`
@@ -212,11 +318,11 @@ export default function WordsRoom({
             </button>
           </div>
         )}
-        {status === "ready" && chapters.length === 0 && (
+        {status === "ready" && chapterVisible && chapters.length === 0 && (
           <p className="scr-meta">Nothing matches that filter here.</p>
         )}
 
-        {status === "ready" && chapters.map(([c, verses]) => (
+        {status === "ready" && chapterVisible && chapters.map(([c, verses]) => (
           <section key={c} className="jsu-word-page" aria-label={`${canons.books[book]?.name ?? book} ${c}`}>
             <header className="jsu-word-page-heading">
             <h2 className="jsu-chapter">
@@ -260,7 +366,7 @@ export default function WordsRoom({
             ))}
           </section>
         ))}
-        {status === "ready" && !filter.trim() && chapterIndex >= 0 && (
+        {status === "ready" && chapterVisible && !filter.trim() && chapterIndex >= 0 && (
           <nav className="jsu-word-pagination" aria-label="Speaking chapters">
             <button type="button" onClick={() => moveChapter(-1)} disabled={chapterIndex === 0}>
               <span aria-hidden="true">← </span>Previous chapter

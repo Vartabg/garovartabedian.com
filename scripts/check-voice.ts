@@ -13,6 +13,11 @@ import truthBank from "../src/lib/portfolio-truth.json";
 export const PORTFOLIO_SOURCE_FILES = [
   "src/lib/portfolio-content.ts",
   "src/lib/discovery-content.ts",
+  "src/lib/scriptures/xray-tags.ts",
+  "src/lib/site/world-xray.ts",
+  "src/lib/jesus/parables-xray.ts",
+  "src/app/_components/xray/XrayTag.tsx",
+  "src/app/_components/xray/XrayFoot.tsx",
   "src/lib/merge-monitor-case-study.ts",
   "src/app/layout.tsx",
   "src/app/_components/CleanChrome.tsx",

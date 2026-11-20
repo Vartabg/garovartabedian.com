@@ -25,9 +25,6 @@
 /* Hosted books shift from the world's exhibition layout into a quieter
    reading room. Maps and source records can remain wide; the prose itself
    keeps a stable measure that follows the site-wide appearance controls. */
-.wrap:has(.ew-reading-page) .world-guide {
-  display: none;
-}
 
 main:has(.ew-reading-page) {
   padding-top: 1.5rem;
@@ -190,35 +187,6 @@ main:has(.ew-reading-page) {
 }
 
 /* Era grouping — the four timeline lanes on the writings shelf. */
-.ew-era-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1.1rem 0 1.6rem;
-}
-.ew-era-nav a {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  padding: 0.5rem 0.8rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--ink);
-  text-decoration: none;
-  transition: border-color 0.15s ease, transform 0.15s ease;
-}
-.ew-era-nav a:hover {
-  border-color: var(--accent);
-  transform: translateY(-1px);
-}
-.ew-era-nav a strong {
-  font-weight: 600;
-}
-.ew-era-nav a span {
-  font-size: 0.8rem;
-  color: var(--muted);
-}
 .ew-era {
   scroll-margin-top: 1.5rem;
   margin-top: 2rem;
@@ -820,4 +788,42 @@ main:has(.ew-reading-page) {
   .ew-library-metadata dd { margin-bottom: .8rem; }
   .ew-library-pager { gap: .75rem; }
   .ew-library-pager span { max-height: 5.5rem; overflow: auto; }
+}
+
+/* Library shelves: the page opens on seven closed shelves; a shelf opens to short rows. */
+.ew-library-counts { margin: .6rem 0 0; line-height: 1.5; }
+.ew-library-find { margin: 1.1rem 0 1.2rem; }
+.ew-library-search { margin-top: 2.5rem; }
+.ew-shelf { border-top: 1px solid var(--line); scroll-margin-top: 1rem; }
+.ew-shelf:last-child { border-bottom: 1px solid var(--line); }
+.ew-shelf > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: .15rem .6rem; align-items: center; min-height: 44px; padding: .8rem 0 .85rem; cursor: pointer; list-style: none; }
+.ew-shelf > summary::-webkit-details-marker, .ew-shelf-author > summary::-webkit-details-marker { display: none; }
+.ew-shelf[open] > summary { border-bottom: 2px solid var(--accent); }
+.ew-shelf-name { margin: 0; padding: 0; border: 0; color: var(--ink); font-size: 1.22rem; line-height: 1.25; }
+.ew-shelf-count { color: var(--muted); font-size: .8rem; font-weight: 600; letter-spacing: .04em; }
+.ew-shelf-names { grid-column: 1 / -1; overflow: hidden; color: var(--muted); font-size: .9rem; line-height: 1.45; text-overflow: ellipsis; white-space: nowrap; }
+.ew-shelf[open] > summary .ew-shelf-names { display: none; }
+.ew-shelf-chevron { width: .5rem; height: .5rem; margin: 0 .35rem; border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); transform: translateY(-.12rem) rotate(45deg); transition: transform .15s ease; }
+details[open] > summary > .ew-shelf-chevron { transform: translateY(.12rem) rotate(225deg); }
+.ew-shelf-note { margin: .9rem 0 .4rem; color: var(--muted); font-size: .95rem; line-height: 1.55; }
+.ew-shelf-rows { margin: 0; padding: 0; list-style: none; }
+.ew-shelf > .ew-shelf-rows { margin-bottom: 1.2rem; }
+.ew-shelf-rows > li { border-bottom: 1px solid var(--line); }
+.ew-shelf-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .1rem .75rem; align-items: center; min-height: 44px; padding: .62rem 0; color: var(--ink); text-decoration: none; }
+.ew-shelf-row strong { grid-column: 1; font-family: var(--font-display); font-size: 1.06rem; font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
+.ew-shelf-row small { grid-column: 1; color: var(--muted); font-size: .86rem; line-height: 1.4; overflow-wrap: anywhere; }
+.ew-shelf-row small em { color: var(--ink); font-style: normal; font-weight: 700; }
+a.ew-shelf-row:hover strong { color: var(--accent); text-decoration: underline; }
+.ew-shelf-author > summary { cursor: pointer; list-style: none; }
+.ew-shelf-author > summary .ew-shelf-chevron { grid-column: 2; grid-row: 1 / span 2; }
+.ew-shelf-rows--in { margin: 0 0 .5rem; padding-left: .9rem; border-left: 2px solid var(--accent); }
+.ew-shelf-rows--in > li:last-child { border-bottom: 0; }
+.ew-shelf-rows--in .ew-shelf-row { padding: .5rem 0; }
+.ew-shelf-rows--in .ew-shelf-row strong { font-size: 1rem; font-weight: 500; }
+.ew-shelf-results > .scr-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0 .6rem; min-height: 44px; margin: 0; }
+.ew-shelf-results > .scr-meta a { color: var(--accent); text-decoration: underline; text-underline-offset: .15em; }
+.ew-shelf-results .jsu-chapter { margin-top: 1.4rem; }
+.ew-shelf-results section:first-of-type .jsu-chapter { margin-top: .4rem; }
+@media (prefers-reduced-motion: reduce) {
+  .ew-shelf-chevron { transition: none; }
 }

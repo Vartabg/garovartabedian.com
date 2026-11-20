@@ -8,6 +8,7 @@ test("Leviticus context preserves its checked edition across the chapter five/si
   await expect(page.locator("#chapter-text")).toContainText(brenton.chapters[5][1]);
   const context = page.getByRole("complementary", { name: "Chapter context" });
   await expect(context).toContainText("References use World English Bible.");
+  await context.getByText("Where this chapter fits", { exact: true }).click();
   await context.locator('a[href^="/scriptures/orthodox/LEV/6?t=web#v"]').first().click();
   await expect(page).toHaveURL(/\/LEV\/6\?t=web#v\d+/);
   await expect(page.locator(".scr-rh .scr-read-meta")).toContainText("World English Bible");

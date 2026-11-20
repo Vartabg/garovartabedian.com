@@ -8,7 +8,6 @@ const TARGETS = [
   ".st-front-title",
   ".st-worlds-heading h2",
   ".world-home-hero h1",
-  ".world-home-hero-eyebrow",
   ".scr-rubric",
   ".scr-read-after-h",
   ".scr-rh-title",

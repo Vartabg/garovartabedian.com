@@ -257,9 +257,6 @@ export default function FallRoom({
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/angels">Angels &amp; Demons</Link>
-      </p>
       <h1>The fall.</h1>
       <p className="lede">
         Scripture never tells the adversary&rsquo;s story in one place — it

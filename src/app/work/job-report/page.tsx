@@ -17,7 +17,6 @@ export default function JobReportPage() {
   return (
     <CleanChrome activeHref="/work" showWorldSwitcher={false}>
       <header className={styles.intro}>
-        <p className="kicker">Work / A tool to try</p>
         <h1>{offer.headline}</h1>
         <p className="lede">Before-and-after photos, a checklist, and your notes — together in a report you can save or share from your phone.</p>
         <p className={styles.privacy}>Free to try. No account. Your report fields and photos stay in this open page. Save your PDF before refreshing or closing it.</p>

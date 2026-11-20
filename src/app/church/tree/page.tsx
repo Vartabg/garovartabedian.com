@@ -36,9 +36,6 @@ export const metadata: Metadata = {
 export default function TreePage() {
   return (
     <>
-      <p className="kicker">
-        <Link href="/church">The Church</Link>
-      </p>
       <h1>The tree</h1>
       <p className="lede">
         One trunk, from the upper room. Four great forks — 431, 451, 1054,

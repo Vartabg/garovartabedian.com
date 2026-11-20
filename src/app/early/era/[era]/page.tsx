@@ -40,9 +40,6 @@ export default async function EraPage({ params }: PageProps) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/early">The Writings</Link>
-      </p>
 
       <header className="ew-era-header">
         <p className="ew-era-badge">Era</p>

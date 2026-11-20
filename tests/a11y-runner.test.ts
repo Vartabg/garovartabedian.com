@@ -44,8 +44,14 @@ function mockAuditor(outcomes: unknown[]) {
 }
 
 test("one or two workers audit every route exactly once, including the visual story and source tools", () => {
-  assert.equal(routes.length, 87);
+  assert.equal(routes.length, 94);
+  assert.ok(routes.includes("/scriptures/stories/play"));
+  assert.ok(routes.includes("/scriptures/stories/play/overturned-tables"));
+  assert.ok(routes.includes("/play/hermon/crossing/account"));
   assert.ok(routes.includes("/scriptures/word-bridge"));
+  assert.ok(routes.includes("/#lens=engineer"));
+  assert.ok(routes.includes("/scriptures#lens=engineer"));
+  assert.ok(routes.includes("/scriptures/protestant/MRK/4#lens=engineer"));
   assert.ok(routes.includes("/scriptures/protestant/JHN/3?t=web&study=word-bridge#v16"));
   for (const slug of ["come-and-eat", "peace-be-with-you", "every-language"]) {
     assert.ok(routes.includes(`/apostles/stories/${slug}`));

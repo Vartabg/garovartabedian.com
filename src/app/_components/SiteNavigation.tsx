@@ -4,7 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { setFindOpen, subscribeFind } from "@/lib/site/find-bridge";
+import { usePlatformShortcutMod } from "@/lib/site/use-platform-mod";
 import { subscribeFromHere, type FromHere } from "@/lib/site/from-here";
+import { sectionMenu } from "@/lib/site/section-menu";
 import { getNavigationCurrent, type SiteLink } from "@/lib/site-navigation";
 import { WORLD_REGISTRY } from "@/lib/world-registry";
 
@@ -29,6 +31,11 @@ const MENU_GROUPS: Array<{
   {
     label: "Use Scripture",
     links: [
+      {
+        href: "/scriptures/stories",
+        label: "Stories",
+        note: "Walk a Bible story one scene at a time",
+      },
       {
         href: "/scriptures/search",
         label: "Search Scripture",
@@ -84,6 +91,9 @@ const MENU_GROUPS: Array<{
   },
 ];
 
+/** The two groups an about or work page opens the menu on. */
+const ABOUT_GROUPS = new Set(["Understand the work", "Work with Garo"]);
+
 export default function SiteNavigation({
   activeHref,
   className = "",
@@ -93,6 +103,7 @@ export default function SiteNavigation({
 }) {
   const pathname = usePathname() ?? activeHref ?? "/";
   const groupId = useId();
+  const shortcutMod = usePlatformShortcutMod();
   const detailsRef = useRef<HTMLDetailsElement | null>(null);
   const summaryRef = useRef<HTMLElement | null>(null);
   const [findOpen, setFindOpenState] = useState(false);
@@ -100,6 +111,8 @@ export default function SiteNavigation({
 
   useEffect(() => subscribeFind(setFindOpenState), []);
   useEffect(() => subscribeFromHere(setFromHereState), []);
+  const section = sectionMenu(activeHref, pathname);
+  const sectionHrefs = new Set(section?.all.map((link) => link.href));
   const directIsActive = DIRECT_LINKS.some((link) =>
     getNavigationCurrent(pathname, link.href),
   );
@@ -114,8 +127,25 @@ export default function SiteNavigation({
   };
 
   useEffect(() => {
-    if (detailsRef.current) detailsRef.current.open = false;
+    const menu = detailsRef.current;
+    if (!menu) return;
+    menu.open = false;
+    // A new page starts from its own short list again.
+    const everything = menu.querySelector<HTMLDetailsElement>(".site-nav-everything");
+    if (everything) everything.open = false;
   }, [pathname]);
+
+  // Which site groups open the menu on a page with no section and no
+  // From-here list: an about or work page opens on those two groups; any
+  // other page (the front door, a page the menu does not list) opens on the
+  // sections.
+  const onAboutPage = MENU_GROUPS.some(
+    (group) =>
+      ABOUT_GROUPS.has(group.label) &&
+      group.links.some((link) => getNavigationCurrent(pathname, link.href)),
+  );
+  const leads = (index: number) =>
+    onAboutPage ? ABOUT_GROUPS.has(MENU_GROUPS[index].label) : index === 0;
 
   useEffect(() => {
     const closeFromOutside = (event: Event) => {
@@ -130,9 +160,16 @@ export default function SiteNavigation({
     };
   }, []);
 
-  // Under "Everything else" the groups sit beneath the From-here heading,
-  // so they step down a level for screen-reader heading lists.
-  const siteGroups = (Heading: "h2" | "h3") => MENU_GROUPS.map((group, index) => (
+  // Under "Everything else" the groups sit beneath the heading that opens
+  // the menu, so they step down a level for screen-reader heading lists.
+  const siteGroups = (
+    Heading: "h2" | "h3",
+    include: (index: number) => boolean = () => true,
+  ) => MENU_GROUPS.map((group, index) => {
+    if (!include(index)) return null;
+    // A link already listed under this section is not repeated below it.
+    const links = group.links.filter((link) => !sectionHrefs.has(link.href));
+    return links.length === 0 ? null : (
     <section
       key={group.label}
       className={index === 0 ? "site-nav-group site-nav-group--worlds" : "site-nav-group"}
@@ -140,7 +177,7 @@ export default function SiteNavigation({
     >
       <Heading id={`${groupId}-group-${index}`}>{group.label}</Heading>
       <div className="site-nav-group-links">
-        {group.links.map((link) => (
+        {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
@@ -153,7 +190,42 @@ export default function SiteNavigation({
         ))}
       </div>
     </section>
-  ));
+    );
+  });
+
+  // "section" is what the menu opens on; "more" is the rest of a long
+  // section, shown inside "Everything else".
+  const sectionGroup = (
+    Heading: "h2" | "h3",
+    links: SiteLink[] = section?.links ?? [],
+    part: "section" | "more" = "section",
+  ) => section && links.length > 0 ? (
+    <section className={`site-nav-group site-nav-group--${part}`} aria-labelledby={`${groupId}-${part}`}>
+      <Heading id={`${groupId}-${part}`}>{part === "more" ? `More in ${section.label}` : section.label}</Heading>
+      <div className="site-nav-group-links">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            aria-current={link.href === section.current ? getNavigationCurrent(pathname, link.href) : undefined}
+            onClick={closeMenu}
+          >
+            <strong>{link.label}</strong>
+            {link.note ? <span>{link.note}</span> : null}
+          </Link>
+        ))}
+      </div>
+    </section>
+  ) : null;
+
+  // The same small chevron in every browser: Safari drew its own triangle
+  // here and Chrome drew nothing.
+  const everythingSummary = (
+    <summary>
+      <span>Everything else</span>
+      <span className="site-nav-fold-chevron" aria-hidden="true" />
+    </summary>
+  );
 
   return (
     <nav
@@ -186,13 +258,15 @@ export default function SiteNavigation({
         aria-haspopup="dialog"
         aria-expanded={findOpen}
         aria-keyshortcuts="Meta+K Control+K"
-        onClick={() => {
+        onClick={(event) => {
           closeMenu();
-          setFindOpen(true);
+          setFindOpen(true, event.currentTarget);
         }}
       >
         <span className="site-nav-find-label">Find</span>
-        <kbd className="site-nav-find-kbd">⌘K</kbd>
+        <kbd className="site-nav-find-kbd">
+          {shortcutMod === "⌘" ? "⌘K" : "Ctrl K"}
+        </kbd>
       </button>
 
       <details
@@ -200,15 +274,14 @@ export default function SiteNavigation({
         className={`site-nav-menu${menuIsActive ? " has-current" : ""}`}
       >
         <summary ref={summaryRef}>
-          <span className="site-nav-summary-desktop">Explore</span>
-          <span className="site-nav-summary-mobile">Menu</span>
+          <span>Menu</span>
           <span className="site-nav-chevron" aria-hidden="true" />
         </summary>
         {fromHere ? (
           // A reading page opens the menu on what connects to it; the whole
           // site folds below. People move in small steps from where they
           // are (Teevan et al., CHI 2004), and most arrive deep, from search.
-          <div className="site-nav-panel site-nav-panel--here">
+          <div className="site-nav-panel">
             <section className="site-nav-here" aria-labelledby={`${groupId}-here`}>
               <h2 id={`${groupId}-here`}>From {fromHere.label}</h2>
               <div className="site-nav-group-links">
@@ -221,17 +294,26 @@ export default function SiteNavigation({
               </div>
             </section>
             <details className="site-nav-everything">
-              <summary>Everything else</summary>
-              <div className="site-nav-everything-groups">{siteGroups("h3")}</div>
+              {everythingSummary}
+              <div className="site-nav-everything-groups">
+                {sectionGroup("h3", section?.all)}
+                {siteGroups("h3")}
+              </div>
             </details>
           </div>
         ) : (
+          // Every other page opens on its own links too: a section's pages,
+          // the about and work pages, or the sections from the front door.
+          // The rest of the site is one tap further, as on a reading page.
           <div className="site-nav-panel">
-            <div className="site-nav-panel-head">
-              <strong>Explore the whole site</strong>
-              <span>Choose a world, use the Bible tools, or learn about the work.</span>
-            </div>
-            {siteGroups("h2")}
+            {section ? sectionGroup("h2") : siteGroups("h2", leads)}
+            <details className="site-nav-everything">
+              {everythingSummary}
+              <div className="site-nav-everything-groups">
+                {sectionGroup("h3", section?.more, "more")}
+                {siteGroups("h3", section ? undefined : (index) => !leads(index))}
+              </div>
+            </details>
           </div>
         )}
       </details>

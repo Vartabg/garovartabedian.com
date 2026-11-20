@@ -5,6 +5,8 @@ export const angelStories = [
     title: "Open his eyes",
     reference: "2 Kings 6:14–17",
     passage: "/scriptures/protestant/2KI/6?t=web#v14",
+    /** The verse the title comes from; the passage box links its translations and original words. */
+    titleVerse: { book: "2KI", chapter: 6, verse: 17 },
     place: "Dothan",
     invitation: "A surrounded city. A prayer for sight.",
     movement: "Fear gives way to assurance.",
@@ -18,6 +20,8 @@ export const angelStories = [
     title: "I am with you",
     reference: "Genesis 28:10–19",
     passage: "/scriptures/protestant/GEN/28?t=web#v10",
+    /** The verse the title comes from; the passage box links its translations and original words. */
+    titleVerse: { book: "GEN", chapter: 28, verse: 15 },
     place: "Bethel",
     invitation: "A stone for a pillow. A sky he had not imagined.",
     movement: "An ordinary place becomes a place of promise.",
@@ -31,6 +35,8 @@ export const angelStories = [
     title: "The gate opened",
     reference: "Acts 12:5–11",
     passage: "/scriptures/protestant/ACT/12?t=web#v5",
+    /** The verse the title comes from; the passage box links its translations and original words. */
+    titleVerse: { book: "ACT", chapter: 12, verse: 10 },
     place: "Jerusalem",
     invitation: "Two chains. A sleeping prisoner. A way into the night.",
     movement: "Confinement gives way to freedom.",

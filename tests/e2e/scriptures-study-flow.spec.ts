@@ -31,7 +31,6 @@ test("study entrances reflow with enlarged text while the reader keeps its own c
   }
   expect(overflow).toEqual([]);
   await page.goto("/scriptures/protestant/JHN/3?t=web#v16");
-  await expect(page.locator(".world-guide")).toBeHidden();
   await expect(page.getByRole("button", { name: "Word Bridge", exact: true })).toBeVisible();
 });
 

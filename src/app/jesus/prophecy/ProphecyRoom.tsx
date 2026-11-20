@@ -175,9 +175,6 @@ export default function ProphecyRoom({
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/jesus">Jesus Christ</Link>
-      </p>
       <h1>Prophecy → fulfillment</h1>
       <p className="lede">
         Written centuries apart. The prophecy on the left, the passage that

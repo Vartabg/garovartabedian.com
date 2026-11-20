@@ -1,7 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { WORLD_BY_ID, type WorldId } from "@/lib/world-registry";
-import type { Hand } from "@/lib/hands";
 import Breathe from "./Breathe";
 
 /** What each world's plate shows — the caption set under the frame. */
@@ -24,17 +23,6 @@ const WORLD_PLATE_CAPTION: Record<WorldId, string> = {
     "A telescope, manuscript, archaeological stone, prism, and balance share a research table at the edge of dawn.",
 };
 
-/** The hand each world's title is set in: the era its words come from.
- *  Angels and How We Know span every era, so they keep today's face. */
-const WORLD_HAND: Partial<Record<WorldId, Hand>> = {
-  scriptures: "capitals",
-  jesus: "capitals",
-  apostles: "capitals",
-  church: "capitals",
-  early: "uncial",
-  word: "print",
-};
-
 /**
  * A world's threshold, laid out like a leaf: the copy on the world's own
  * ground, the image beside it as a framed plate with its caption. No
@@ -44,14 +32,12 @@ const WORLD_HAND: Partial<Record<WorldId, Hand>> = {
  */
 export default function WorldHomeHero({
   world,
-  eyebrow,
   title,
   children,
   facets,
   actions,
 }: {
   world: WorldId;
-  eyebrow: string;
   title: string;
   children: ReactNode;
   facets: string[];
@@ -66,8 +52,7 @@ export default function WorldHomeHero({
       aria-labelledby={`${world}-world-title`}
     >
       <div className="world-home-hero-copy">
-        <p className="world-home-hero-eyebrow">{eyebrow}</p>
-        <h1 id={`${world}-world-title`} data-hand={WORLD_HAND[world]}>
+        <h1 id={`${world}-world-title`}>
           <Breathe text={title} />
         </h1>
         <div className="world-home-hero-lede">{children}</div>

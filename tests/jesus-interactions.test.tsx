@@ -7,10 +7,13 @@ import ArtPlate from "../src/app/_components/ArtPlate";
 import GalileeMap from "../src/app/jesus/life/GalileeMap";
 import ProphecyRoom from "../src/app/jesus/prophecy/ProphecyRoom";
 import WordsRoom from "../src/app/jesus/words/WordsRoom";
+import { sayingStudyLinks } from "../src/lib/jesus/saying-study-links";
 import type { Passage } from "../src/lib/jesus/client";
 import type { ProphecyPair } from "../src/lib/jesus/types";
 import prophecies from "../public/jesus/prophecies.json" with { type: "json" };
 import type { Canons } from "../src/lib/scriptures/types";
+
+const STUDY_LINKS = sayingStudyLinks();
 
 const CANONS: Canons = {
   bookOrder: ["MAT", "MRK"],
@@ -90,6 +93,7 @@ describe("Jesus room interactions", () => {
         counts={{ MAT: 2, MRK: 1 }}
         canons={CANONS}
         originalEditions={{}}
+        studyLinks={STUDY_LINKS}
         loadBookData={async (book) => {
           requested.push(book);
           return { "1:15": "The Kingdom of God is at hand." };
@@ -123,6 +127,7 @@ describe("Jesus room interactions", () => {
         counts={{ MAT: 1 }}
         canons={CANONS}
         originalEditions={{ MAT: "sblgnt" }}
+        studyLinks={STUDY_LINKS}
         loadBookData={async () => ({ "3:15": "Allow it now." })}
       />,
     );

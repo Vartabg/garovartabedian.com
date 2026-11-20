@@ -10,7 +10,7 @@ import { getThomasTexts } from "../src/lib/jesus/thomas-parallels-server";
 import { getJamesTexts } from "../src/lib/jesus/james-parables-server";
 import { JAMES_PARABLES, jamesHref } from "../src/lib/jesus/james-parables";
 import { EARLY_FIGURES, earlyFigureHref, earlyFigureParts } from "../src/lib/jesus/early-figures";
-import { getEarlyFigureTexts } from "../src/lib/jesus/early-figures-server";
+import { getEarlyFigureTexts, getEarlyOriginalReaderAvailability } from "../src/lib/jesus/early-figures-server";
 import { THOMAS_PARABLES } from "../src/lib/jesus/thomas-parables";
 import ParablesRoom from "../src/app/jesus/parables/ParablesRoom";
 import type { PassageVerses } from "../src/lib/jesus/client";
@@ -23,6 +23,9 @@ import type { Canons } from "../src/lib/scriptures/types";
 import parablesJson from "../public/jesus/parables.json" with { type: "json" };
 import canonsJson from "../public/scriptures/canons.json" with { type: "json" };
 import round3Comparisons from "../scripts/release/early-round3-comparisons.json" with { type: "json" };
+import audit from "./fixtures/parables-audit-gospel-thomas.json" with { type: "json" };
+import eusebiusAudit from "./fixtures/parables-audit-eusebius.json" with { type: "json" };
+import { validateGospelThomasAudit } from "../scripts/release/check-staged-thomas.mjs";
 
 const parables = parablesJson as Parable[];
 const canons = canonsJson as Canons;
@@ -46,6 +49,16 @@ const refsOf = (parable: Parable) =>
   );
 
 describe("parables data", () => {
+  it("matches all 54 independent Gospel dispositions, the added vipers figure, and 46 Thomas candidates", () => {
+    validateGospelThomasAudit(audit, {
+      "public/jesus/parables.json": parables,
+      "public/jesus/synoptic-figures.json": SYNOPTIC_FIGURES,
+      "public/jesus/john-figures.json": JOHN_FIGURES,
+      "public/jesus/thomas-parables.json": THOMAS_PARABLES,
+      "public/jesus/james-parables.json": JAMES_PARABLES,
+      "public/jesus/early-figures.json": EARLY_FIGURES,
+    });
+  });
   it("holds the 31 stories from Snodgrass and Trench and the 7 sayings the Gospels call parables", () => {
     assert.equal(parables.length, 38);
     assert.equal(parables.filter((p) => p.kind === "story").length, 31);
@@ -67,16 +80,19 @@ describe("parables data", () => {
 
   it("keeps the selected John figures distinct, ordered, and in the hosted text", () => {
     const expected: Record<string, string[]> = {
-      "john-temple": ["JHN 2:19"], "john-born-anew": ["JHN 3:3-7"], "john-wind": ["JHN 3:8"],
+      "john-temple": ["JHN 2:19-21"], "john-born-anew": ["JHN 3:3-7"], "john-wind": ["JHN 3:8"],
       "john-bronze-serpent": ["JHN 3:14-15"], "john-bridegrooms-friend": ["JHN 3:29"], "john-living-water": ["JHN 4:13-14"],
       "john-fields-harvest": ["JHN 4:35-38"], "john-father-son": ["JHN 5:19-23"],
-      "john-burning-lamp": ["JHN 5:35"], "john-bread-of-life": ["JHN 6:32-40", "JHN 6:48-51"],
-      "john-servant-son": ["JHN 8:35"], "john-work-by-day": ["JHN 9:4"],
+      "john-burning-lamp": ["JHN 5:35"], "john-bread-of-life": ["JHN 6:32-40", "JHN 6:48-51", "JHN 6:52-58"],
+      "john-servant-son": ["JHN 8:31-36"], "john-work-by-day": ["JHN 9:4"],
       "john-sheepfold-shepherd": ["JHN 10:1-18"], "john-daylight": ["JHN 11:9-10"],
-      "john-grain-wheat": ["JHN 12:24"], "john-walking-light": ["JHN 12:35"],
+      "john-grain-wheat": ["JHN 12:24"], "john-walking-light": ["JHN 8:12", "JHN 12:35"],
       "john-servant-master": ["JHN 13:16", "JHN 15:20"], "john-preparing-place": ["JHN 14:1-4"],
       "john-vine-branches": ["JHN 15:1-8"], "john-woman-childbirth": ["JHN 16:20-24"],
+      "john-father-son-dwelling": ["JHN 14:23"],
     };
+    for (const item of audit.gospel_candidates.filter(item => item.file.endsWith("john-figures.json") && (item.status === "new" || item.status === "new_followup"))) expected[item.id] = item.accounts.map(a => a.ref);
+    expected["john-lamb-god"] = ["JHN 1:29"];
     assert.deepEqual(JOHN_FIGURES.map(p => p.id), Object.keys(expected));
     const ids = [...parables, ...THOMAS_PARABLES, ...JOHN_FIGURES, ...SYNOPTIC_FIGURES].map(p => p.id);
     assert.equal(new Set(ids).size, ids.length);
@@ -119,10 +135,22 @@ describe("parables data", () => {
       "synoptic-birds-provision": ["MAT 6:25-34", "LUK 12:22-31"],
       "synoptic-ask-seek": ["MAT 7:7-8", "LUK 11:9-10"],
       "synoptic-physician-sick": ["MAT 9:12-13", "MRK 2:17", "LUK 5:31-32"],
-      "synoptic-fine-clothing": ["MAT 11:8", "LUK 7:25"],
+      "synoptic-fine-clothing": ["MAT 11:7-8", "LUK 7:24-25"],
       "synoptic-shepherd-struck": ["MAT 26:31", "MRK 14:27"],
       "synoptic-four-winds": ["MAT 24:31", "MRK 13:27"],
+      "synoptic-lips-heart": ["MAT 15:7-9", "MRK 7:6-7"],
+      "synoptic-isaiah-release": ["LUK 4:16-21"],
+      "synoptic-lot-wife": ["LUK 17:28-32"],
+      "synoptic-treasures-heaven": ["MAT 6:19-21", "LUK 12:33-34"],
+      "synoptic-left-home": ["MAT 19:27-29", "MRK 10:28-30"],
     };
+    for (const item of audit.gospel_candidates.filter(item => item.file.endsWith("synoptic-figures.json") && (item.status === "new" || item.status === "new_followup"))) expected[item.id] = item.accounts.map(a => a.ref);
+    expected["synoptic-trees-fruit"] = ["MAT 7:15-20", "LUK 6:43-45", "MAT 12:33"];
+    expected["synoptic-peter-rock-keys"] = ["MAT 16:18-19"];
+    expected["synoptic-disciple-teacher"] = ["MAT 10:24-25", "LUK 6:40"];
+    expected["synoptic-coming-lightning"] = ["MAT 24:23-27", "LUK 17:23-24"];
+    expected["synoptic-east-west-feast"] = ["MAT 8:11-12", "LUK 13:28-29"];
+    expected["synoptic-lost-sheep-israel"] = ["MAT 10:5-6", "MAT 15:24"];
     assert.deepEqual(SYNOPTIC_FIGURES.map(p => p.id), Object.keys(expected));
     for (const figure of SYNOPTIC_FIGURES) {
       assert.deepEqual(figure.accounts.map(a => a.ref), expected[figure.id]);
@@ -168,7 +196,7 @@ describe("parables data", () => {
       "wedding-banquet": [[64, /dinner/i], [75, /door.*bridal chamber/i]], "watchful-servants": [[21, /bandit/i], [103, /bandits/i]],
       "ten-virgins": [[75, /door.*bridal chamber/i]], "tower-and-king": [[98, /sword.*strong enough/i]],
       "talents-and-pounds": [[41, /given more/i]], "seed-growing": [[21, /sickle.*harvest/i]],
-      "rich-fool": [[63, /rich man/i]], "unjust-steward": [[47, /servant.*two leaders/i]],
+      "rich-fool": [[63, /rich man/i], [72, /inheritance/i]], "unjust-steward": [[47, /servant.*two leaders/i]],
     };
     assert.deepEqual(parables.filter(p => p.thomas?.length).map(p => p.id).sort(), Object.keys(expected).sort());
     for (const p of parables.filter(p => p.thomas?.length)) {
@@ -220,16 +248,35 @@ describe("parables data", () => {
   });
 
   it("offers the comparison links without JavaScript", () => {
-    const html = renderToStaticMarkup(<ParablesRoom parables={getParables()} thomasStories={THOMAS_PARABLES} counts={{}} canons={canons} originalEditions={{}} />);
+    const available = Object.fromEntries(EARLY_FIGURES.filter(item => item.originalReader).flatMap(item => [[item.id, true], [`${item.id}:continuation`, true]]));
+    const html = renderToStaticMarkup(<ParablesRoom parables={getParables()} thomasStories={THOMAS_PARABLES} counts={{}} canons={canons} originalEditions={{}} earlyReaderAvailability={available} />);
     const doc = new JSDOM(html).window.document;
     const fallback = doc.querySelector("noscript section")!;
     assert.match(fallback.textContent ?? "", /Gospel of Thomas · outside the canon/);
     for (const n of [21, 64, 65, 66, 97, 98]) assert.ok(fallback.querySelector(`a[href="/early/library/gospel-thomas/saying-${n}"]`));
     for (const story of JAMES_PARABLES) assert.ok(doc.querySelector(`noscript a[href="${jamesHref(story)}"]`));
     for (const figure of EARLY_FIGURES) for (const part of earlyFigureParts(figure)) assert.ok(doc.querySelector(`noscript a[href="${earlyFigureHref(figure, part)}"]`));
+    for (const figure of EARLY_FIGURES.filter(item => item.originalReader)) {
+      const original = figure.originalReader!;
+      const link = doc.querySelector(`noscript a[href="/early/library/${original.edition}/${original.section}#p${original.start}"]`);
+      assert.equal(link?.textContent, "Read the uncorrected edition", figure.id);
+    }
+    for (const [id, relatedId] of [["hermas-tower", "hermas-tower-explanation"], ["hermas-vineyard-servant", "hermas-vineyard-servant-explanation"], ["hermas-two-paths", "didache-two-ways"]]) {
+      const figure = EARLY_FIGURES.find(item => item.id === id)!;
+      const related = EARLY_FIGURES.find(item => item.id === relatedId)!;
+      const link = [...doc.querySelectorAll("noscript a")].find(node => node.textContent?.startsWith(figure.title) && node.getAttribute("href") === earlyFigureHref(figure));
+      const item = link!.closest("li")!;
+      assert.ok([...item.querySelectorAll("a")].some(node => node.getAttribute("href") === earlyFigureHref(related) && node.textContent?.includes(related.title)), `${id}: ${relatedId}`);
+      if (related.excerpt) assert.match(earlyFigureHref(related), /#page=\d+$/, relatedId);
+    }
+    for (const [id, href] of [["hermas-tower-explanation", "/early/library/shepherd-hermas/vision-3-part-2#p1"], ["hermas-vineyard-servant-explanation", "/early/library/shepherd-hermas/another-parable-part-2#p1"]]) {
+      const figure = EARLY_FIGURES.find(item => item.id === id)!;
+      const link = [...doc.querySelectorAll("noscript a")].find(node => node.textContent?.startsWith(figure.title) && node.getAttribute("href") === earlyFigureHref(figure));
+      assert.ok(link!.closest("li")!.querySelector(`a[href="${href}"]`), id);
+    }
     for (const id of ["acts-thomas-birds", "first-clement-workers", "barnabas-cornerstone"]) {
       const figure = EARLY_FIGURES.find(item => item.id === id)!;
-      const link = [...doc.querySelectorAll("noscript a")].find(node => node.textContent?.includes(figure.title) && node.getAttribute("href") === earlyFigureHref(figure));
+      const link = [...doc.querySelectorAll("noscript a")].find(node => node.textContent?.startsWith(figure.title) && node.getAttribute("href") === earlyFigureHref(figure));
       const item = link!.closest("li")!;
       assert.ok(item.textContent?.includes(figure.speaker));
       assert.ok(item.textContent?.includes(figure.note!));
@@ -309,9 +356,10 @@ const echoLoader = async (ref: string): Promise<PassageVerses | null> => {
 };
 
 async function renderRoom(loader = echoLoader) {
-  const thomasTexts = await getThomasTexts([...getParables(), ...SYNOPTIC_FIGURES, ...EARLY_FIGURES, ...THOMAS_PARABLES.map(story => ({ thomas: [{ saying: story.saying }] }))]);
+  const thomasTexts = await getThomasTexts([...getParables(), ...SYNOPTIC_FIGURES, ...JOHN_FIGURES, ...EARLY_FIGURES, ...JAMES_PARABLES, ...THOMAS_PARABLES.map(story => ({ thomas: [{ saying: story.saying }] }))]);
   const jamesTexts = await getJamesTexts();
   const earlyFigureTexts = await getEarlyFigureTexts();
+  const earlyReaderAvailability = await getEarlyOriginalReaderAvailability();
   await act(async () =>
     root.render(
       <ParablesRoom
@@ -323,6 +371,7 @@ async function renderRoom(loader = echoLoader) {
         thomasTexts={thomasTexts}
         jamesTexts={jamesTexts}
         earlyFigureTexts={earlyFigureTexts}
+        earlyReaderAvailability={earlyReaderAvailability}
         passageLoader={loader}
       />,
     ),
@@ -338,12 +387,95 @@ describe("parables room", () => {
     dom.window.close();
   });
 
+  it("renders every Eusebius excerpt and each of its Gospel placements with source and attribution", async () => {
+    await renderRoom();
+    const texts = await getEarlyFigureTexts();
+    for (const item of eusebiusAudit.selections) {
+      await act(async () => head(item.id).click());
+      const own = document.getElementById(`parable-${item.id}`)!;
+      const panel = own.querySelector(".jsu-parable-early")!;
+      assert.ok(panel.textContent?.includes(item.speaker), item.id);
+      assert.ok(panel.textContent?.includes(item.displayedNote), item.id);
+      assert.ok(panel.querySelector(`a[href="${item.scanUrl}"]`), item.id);
+      for (const text of texts[item.id] ?? []) assert.ok(panel.textContent?.includes(text), item.id);
+      assert.ok(texts[item.id]?.length, item.id);
+      for (const target of item.related) {
+        await act(async () => head(target).click());
+        const entry = document.getElementById(`parable-${target}`)!;
+        const matching = [...entry.querySelectorAll(".jsu-parable-early")].filter(node => node.textContent?.includes(item.displayedNote) && node.querySelector(`a[href="${item.scanUrl}"]`));
+        assert.equal(matching.length, 1, `${item.id} / ${target}`);
+        assert.ok(matching[0].textContent?.includes(item.speaker), item.id);
+        assert.ok(matching[0].textContent?.includes(item.displayedNote), item.id);
+        for (const text of texts[item.id]!) assert.ok(matching[0].textContent?.includes(text), item.id);
+      }
+    }
+  });
+
+  it("renders every audited Gospel range and Thomas placement with its complete note and source", async () => {
+    await renderRoom();
+    const texts = await getThomasTexts([...getParables(), ...SYNOPTIC_FIGURES, ...JOHN_FIGURES, ...EARLY_FIGURES, ...JAMES_PARABLES, ...THOMAS_PARABLES.map(story => ({ thomas: [{ saying: story.saying }] }))]);
+    const checkThomas = (entry: Element, number: number, note: string | null) => {
+      const panels = [...entry.querySelectorAll(".jsu-parable-thomas")].filter(panel => panel.querySelector(`a[href="/early/library/gospel-thomas/saying-${number}"]`));
+      assert.equal(panels.length, 1, `${entry.id}: Thomas ${number}`);
+      const panel = panels[0];
+      assert.match(panel.textContent ?? "", new RegExp(`Saying ${number} · outside the canon`));
+      assert.ok(texts[number]?.length, `source Thomas ${number}`);
+      for (const paragraph of texts[number]!) assert.ok(panel.textContent?.includes(paragraph), `${entry.id}: full Thomas ${number}`);
+      if (note) assert.ok(panel.textContent?.includes(note), `${entry.id}: Thomas ${number} note`);
+    };
+    for (const item of audit.gospel_candidates) {
+      await act(async () => head(item.id).click());
+      const entry = document.getElementById(`parable-${item.id}`)!;
+      const panels = entry.querySelectorAll(".jsu-parable-account");
+      assert.equal(panels.length, item.accounts.length, item.id);
+      for (const [index, account] of item.accounts.entries()) {
+        for (const key of ["ref", "setting", "explanation"] as const) {
+          const ref = (account as Record<string, string>)[key];
+          if (ref) assert.ok(panels[index].textContent?.includes(`Text of ${ref}`), `${item.id}: ${key} ${ref}`);
+        }
+        for (const ref of Object.values(account)) {
+          const parsed = parseRef(ref)!;
+          assert.ok(panels[index].querySelector(`a[href="/scriptures/protestant/${parsed.book}/${parsed.chapter}#v${parsed.verse}"]`), `${item.id}: ${ref} reader`);
+        }
+      }
+      if ("note" in item && item.note) assert.ok(entry.textContent?.includes(item.note), `${item.id}: figure note`);
+      if ("speaker" in item && item.speaker && item.speaker !== "Jesus by context") assert.ok(entry.textContent?.includes(item.speaker), `${item.id}: speaker`);
+      for (const candidate of audit.thomas_candidates) for (const placement of candidate.placements) {
+        if (placement.id === item.id && placement.role === "comparison") checkThomas(entry, Number(candidate.candidate.split(" ")[1]), placement.note);
+      }
+    }
+    for (const candidate of audit.thomas_candidates) for (const placement of candidate.placements) {
+      if (placement.role === "comparison") continue;
+      await act(async () => head(placement.id).click());
+      checkThomas(document.getElementById(`parable-${placement.id}`)!, Number(candidate.candidate.split(" ")[1]), placement.note);
+    }
+  });
+
+  it("renders the James fullness comparison with Truth and its limited shared image", async () => {
+    await renderRoom();
+    await act(async () => head("james-fullness-sobriety").click());
+    const entry = document.getElementById("parable-james-fullness-sobriety")!;
+    const expected = audit.james_early_comparisons[0];
+    assert.ok(entry.querySelector(".jsu-parable-james")?.textContent?.includes(expected.james_note));
+    const panel = entry.querySelector(".jsu-parable-early")!;
+    assert.ok(panel.textContent?.includes(`${expected.work} · ${expected.locator} · outside the canon`));
+    assert.ok(panel.textContent?.includes(expected.speaker));
+    assert.ok(panel.textContent?.includes(expected.translator));
+    assert.ok(panel.textContent?.includes(expected.note));
+    assert.ok(panel.querySelector(`a[href="${expected.reader}"]`));
+    const source = await getLibraryPage(expected.edition, expected.section);
+    assert.ok(source);
+    assert.ok(panel.textContent?.includes(source.blocks[expected.start - 1].text!));
+    for (const number of [13, 28]) assert.ok(entry.querySelector(`.jsu-parable-thomas a[href="/early/library/gospel-thomas/saying-${number}"]`));
+  });
+
   it("opens James paragraphs by hash and compares the sourced Mark images", async () => {
     dom.window.history.replaceState({}, "", "/jesus/parables#parable-james-ear-grain");
     await renderRoom();
     assert.equal(head("james-ear-grain").getAttribute("aria-expanded"), "true");
-    // The early writings fold opens so the entry it holds can be read.
-    assert.equal(document.getElementById("parables-early-writings")?.closest("details")?.open, true);
+    // The early group and its James writing show, so the entry they hold can be read.
+    assert.equal(document.querySelector('[data-parable-group="early"]')?.getAttribute("data-shown"), "true");
+    assert.equal(document.querySelector('[data-parable-writing="Secret Book of James"]')?.getAttribute("data-shown"), "true");
     const panel = document.querySelector("#parable-james-ear-grain .jsu-parable-james")!;
     assert.match(panel.textContent ?? "", /outside the canon.*ear of grain/i);
     assert.ok(panel.querySelector('a[href="/early/library/secret-book-james/know-yourselves#p1"]'));
@@ -401,7 +533,7 @@ describe("parables room", () => {
       for (const id of item.figures) {
         const figure = EARLY_FIGURES.find(candidate => candidate.id === id)!;
         assert.ok([figure.related, ...(figure.relatedAlso ?? [])].includes(item.id), id);
-        const panel = [...entry.querySelectorAll(".jsu-parable-early")].find(node => node.textContent?.includes(`${figure.work} · ${figure.locator}`));
+        const panel = [...entry.querySelectorAll(".jsu-parable-early")].find(node => node.textContent?.includes(`${figure.work} · ${figure.locator}`) && node.textContent?.includes(figure.note!));
         assert.ok(panel, `${id} / ${item.id}`);
         assert.ok(panel.textContent?.includes(figure.speaker));
         assert.ok(panel.textContent?.includes(figure.note!));
@@ -454,6 +586,38 @@ describe("parables room", () => {
     const panel = document.querySelector("#parable-acts-thomas-hymn .jsu-parable-early")!;
     assert.match(panel.textContent ?? "", /could not be loaded here.*source link/);
     assert.ok(panel.querySelector('a[href^="https://www.biblicalstudies.org.uk/"]'));
+  });
+
+  it("keeps the scan and uncorrected reader links when a corrected excerpt fails", async () => {
+    await act(async () => root.render(<ParablesRoom parables={getParables()} thomasStories={THOMAS_PARABLES} counts={{}} canons={canons} originalEditions={{}} earlyReaderAvailability={{ "first-clement-pillars": true }} />));
+    await act(async () => head("first-clement-pillars").click());
+    const panel = document.querySelector("#parable-first-clement-pillars .jsu-parable-early")!;
+    assert.match(panel.textContent ?? "", /could not be loaded here/);
+    assert.match(panel.textContent ?? "", /corrects identified transcription errors/);
+    assert.equal(panel.querySelector('a[href^="https://archive.org/"]')?.textContent, "Read the 1891 scan");
+    assert.equal(panel.querySelector('a[href="/early/library/1-clement/1-clem-5#p1"]')?.textContent, "Read the uncorrected edition");
+  });
+
+  it("links each available uncorrected Hermas continuation independently", async () => {
+    const earlyFigureTexts = await getEarlyFigureTexts();
+    const id = "hermas-vineyard-servant-explanation";
+    await act(async () => root.render(<ParablesRoom parables={getParables()} thomasStories={THOMAS_PARABLES} counts={{}} canons={canons} originalEditions={{}} earlyFigureTexts={earlyFigureTexts} earlyReaderAvailability={{ [id]: false, [`${id}:continuation`]: true }} />));
+    await act(async () => head(id).click());
+    const panel = document.querySelector(`#parable-${id} .jsu-parable-early`)!;
+    assert.match(panel.textContent ?? "", /Uncorrected edition unavailable/);
+    assert.equal(panel.querySelector('a[href="/early/library/shepherd-hermas/another-parable-part-2#p1"]')?.textContent, "Read the uncorrected continuation");
+    assert.equal((panel.querySelector("p[style]") as HTMLElement | null)?.style.whiteSpace, "pre-line");
+  });
+
+  it("keeps the corrected excerpt and scan while a reader is unavailable", async () => {
+    const earlyFigureTexts = await getEarlyFigureTexts();
+    await act(async () => root.render(<ParablesRoom parables={getParables()} thomasStories={THOMAS_PARABLES} counts={{}} canons={canons} originalEditions={{}} earlyFigureTexts={earlyFigureTexts} earlyReaderAvailability={{ "first-clement-pillars": false }} />));
+    await act(async () => head("first-clement-pillars").click());
+    const panel = document.querySelector("#parable-first-clement-pillars .jsu-parable-early")!;
+    assert.doesNotMatch(panel.textContent ?? "", /could not be loaded here/);
+    assert.match(panel.textContent ?? "", /Uncorrected edition unavailable/);
+    assert.ok(panel.querySelector('a[href^="https://archive.org/"]'));
+    assert.equal(panel.querySelector('a[href^="/early/library/1-clement/1-clem-5"]'), null);
   });
 
   it("keeps the James reader link visible if its paragraph is unavailable", async () => {
@@ -669,15 +833,16 @@ describe("parables room", () => {
 
   it("folds complete Thomas text below the biblical accounts with distinct labels", async () => {
     await renderRoom();
-    assert.equal(document.getElementById("parables-early-writings")?.closest("details")?.open, false);
-    assert.equal(head("wicked-tenants").querySelector(".jsu-pair-refs")?.textContent, "Matthew · Mark · Luke + 2 early writings");
+    // The early writings wait until their group is chosen.
+    assert.equal(document.querySelector('[data-parable-group="early"]')?.getAttribute("data-shown"), "false");
+    assert.equal(head("wicked-tenants").querySelector(".jsu-pair-refs")?.textContent, "Matthew · Mark · Luke + 4 early writings");
     await act(async () => head("wicked-tenants").dispatchEvent(new MouseEvent("click", { bubbles: true })));
     const grid = document.querySelector("#parable-wicked-tenants .jsu-parable-accounts")!;
     assert.equal(grid.querySelectorAll(":scope > .jsu-parable-account").length, 3);
     assert.equal(grid.querySelectorAll(".jsu-parable-thomas").length, 0);
     const fold = document.querySelector<HTMLDetailsElement>("#parable-wicked-tenants details.jsu-parable-also")!;
     assert.equal(fold.open, false);
-    assert.match(fold.querySelector("summary")?.textContent ?? "", /outside the canon.*Gospel of Thomas · Epistle of Barnabas/);
+    assert.match(fold.querySelector("summary")?.textContent ?? "", /outside the canon.*Gospel of Thomas · Epistle to Diognetus · Epistle of Barnabas/);
     const thomas = fold.querySelectorAll(".jsu-parable-accounts > .jsu-parable-thomas");
     assert.equal(thomas.length, 2);
     assert.match(thomas[0].textContent ?? "", /Saying 65 · outside the canon/);
@@ -699,5 +864,81 @@ describe("parables room", () => {
   it("states the Greek word counts it is given", async () => {
     await renderRoom();
     assert.match(document.body.textContent ?? "", /Matthew uses the Greek word for parable, parabolē, 17 times, Mark 13, and Luke 18\. John never uses it/);
+  });
+
+  it("shows one group at a time and switches with the group buttons", async () => {
+    await renderRoom();
+    const shown = () => [...document.querySelectorAll("[data-parable-group]")].filter((section) => section.getAttribute("data-shown") === "true").map((section) => section.getAttribute("data-parable-group"));
+    assert.deepEqual(shown(), ["stories"]);
+    const buttons = [...document.querySelectorAll<HTMLButtonElement>(".parables-rail button")];
+    assert.deepEqual(buttons.map((button) => button.getAttribute("aria-pressed")), ["true", "false", "false", "false", "false"]);
+    await act(async () => buttons[3].click());
+    assert.deepEqual(shown(), ["john"]);
+    assert.equal(buttons[3].getAttribute("aria-pressed"), "true");
+    await act(async () => buttons[4].click());
+    assert.deepEqual(shown(), ["early"]);
+    const writings = [...document.querySelectorAll("[data-parable-writing]")].filter((section) => section.getAttribute("data-shown") === "true");
+    assert.deepEqual(writings.map((section) => section.getAttribute("data-parable-writing")), ["Gospel of Thomas"]);
+  });
+
+  it("steps through a group from an open entry and closes back to its row", async () => {
+    await renderRoom();
+    await act(async () => head("sower").click());
+    const step = document.querySelector("#parable-sower .parables-step")!;
+    assert.match(step.textContent ?? "", /^2 of 31 · Stories/);
+    const [previous, next, close] = [...step.querySelectorAll("button")];
+    assert.equal(previous.getAttribute("aria-label"), "Previous: The two builders");
+    assert.equal(next.getAttribute("aria-label"), "Next: The weeds among the wheat");
+    await act(async () => next.click());
+    assert.equal(head("sower").getAttribute("aria-expanded"), "false");
+    assert.equal(head("weeds-among-wheat").getAttribute("aria-expanded"), "true");
+    assert.equal(window.location.hash, "#parable-weeds-among-wheat");
+    await act(async () => document.querySelector<HTMLButtonElement>("#parable-weeds-among-wheat .parables-step-close")!.click());
+    assert.equal(head("weeds-among-wheat").getAttribute("aria-expanded"), "false");
+    assert.equal(document.activeElement, head("weeds-among-wheat"));
+    await act(async () => head("two-builders").click());
+    assert.equal(document.querySelector<HTMLButtonElement>("#parable-two-builders .parables-step button")!.disabled, true);
+  });
+
+  it("lets search stand in for the group lists, then opens a result in its own group", async () => {
+    await renderRoom();
+    // Until a search runs, the pressed group button names the group; the status line stays empty and the heading is for screen readers.
+    assert.equal(document.querySelector(".parables-results")?.textContent, "");
+    assert.equal(document.querySelector("#parables-stories")?.textContent, "Stories");
+    const input = document.querySelector<HTMLInputElement>("#parables-overview-search")!;
+    const setter = Object.getOwnPropertyDescriptor(dom.window.HTMLInputElement.prototype, "value")!.set!;
+    // React loads before this file's DOM exists, so it watches typing through its keyup fallback.
+    await act(async () => {
+      input.focus();
+      setter.call(input, "lost sheep");
+      input.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
+      input.dispatchEvent(new dom.window.KeyboardEvent("keyup", { bubbles: true, key: "p" }));
+    });
+    assert.ok([...document.querySelectorAll("[data-parable-group]")].every((section) => section.getAttribute("data-shown") === "false"));
+    assert.match(document.querySelector(".parables-results")?.textContent ?? "", /^Searching all groups: \d+ entr/);
+    const result = [...document.querySelectorAll<HTMLAnchorElement>(".parables-search-area a")].find((link) => link.textContent === "The shepherd seeks the lost sheep")!;
+    await act(async () => result.dispatchEvent(new dom.window.MouseEvent("click", { bubbles: true, button: 0 })));
+    assert.equal(input.value, "");
+    assert.equal(document.querySelector('[data-parable-group="early"]')?.getAttribute("data-shown"), "true");
+    assert.equal(document.querySelector('[data-parable-writing="Eusebius, Theophany"]')?.getAttribute("data-shown"), "true");
+    assert.equal(head("eusebius-lee-audit-shepherd-lost-sheep").getAttribute("aria-expanded"), "true");
+  });
+
+  it("compare links open the related entry in its own group", async () => {
+    dom.window.history.replaceState({}, "", "/jesus/parables#parable-james-grain-wheat");
+    await renderRoom();
+    const toGospel = [...document.querySelectorAll<HTMLAnchorElement>("#parable-james-grain-wheat a")].find((link) => link.textContent?.startsWith("Compare the related Gospel passage"))!;
+    await act(async () => toGospel.dispatchEvent(new dom.window.MouseEvent("click", { bubbles: true, cancelable: true, button: 0 })));
+    assert.equal(window.location.hash, "#parable-sower");
+    assert.equal(document.querySelector('[data-parable-group="stories"]')?.getAttribute("data-shown"), "true");
+    assert.equal(head("sower").getAttribute("aria-expanded"), "true");
+
+    dom.window.history.replaceState({}, "", "/jesus/parables#parable-barnabas-two-ways");
+    await act(async () => window.dispatchEvent(new dom.window.HashChangeEvent("hashchange")));
+    const toEarly = [...document.querySelectorAll<HTMLAnchorElement>("#parable-barnabas-two-ways a")].find((link) => link.textContent?.startsWith("Compare the related early passage"))!;
+    await act(async () => toEarly.dispatchEvent(new dom.window.MouseEvent("click", { bubbles: true, cancelable: true, button: 0 })));
+    assert.equal(window.location.hash, "#parable-didache-two-ways");
+    assert.equal(document.querySelector('[data-parable-writing="The Didache"]')?.getAttribute("data-shown"), "true");
+    assert.equal(head("didache-two-ways").getAttribute("aria-expanded"), "true");
   });
 });

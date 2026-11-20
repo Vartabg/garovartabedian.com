@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SCRIPTURE_STORIES, scriptureStoryPath } from "@/lib/scriptures/stories";
+import { SHELF_SITUATIONS, SHELF_STORIES, shelfCiteLabel } from "@/lib/story-shelf";
+import StoryShelf, { type ShelfChoice } from "./StoryShelf";
 
 const TITLE = "Stories";
-const DESCRIPTION =
-  "Read a story that runs through many chapters, in the words of the hosted text.";
+const DESCRIPTION = "Find a Bible story by what the people in it faced.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -18,25 +18,27 @@ export const metadata: Metadata = {
   },
 };
 
+/** Plain props for the client list: every line and verse label is resolved here, on the server. */
+const CHOICES: ShelfChoice[] = SHELF_SITUATIONS.map((situation) => ({
+  id: situation.id,
+  label: situation.label,
+  tags: Object.fromEntries(
+    Object.entries(situation.tags).map(([storyId, tag]) => [
+      storyId,
+      { line: tag.line, ref: shelfCiteLabel(tag.cite), quoted: tag.source.kind === "quote" },
+    ]),
+  ),
+}));
+
 export default function ScriptureStoriesPage() {
   return (
-    <article className="scr-story">
-      <header>
-        <p className="scr-story-kicker">Scriptures</p>
+    <article className="storyshelf">
+      <header className="storyshelf-heading">
         <h1>{TITLE}</h1>
-        <p className="scr-story-deck">{DESCRIPTION}</p>
+        <Link className="textlink" href="/scriptures/stories/play">Playable stories</Link>
       </header>
-      <ul className="scr-story-list">
-        {SCRIPTURE_STORIES.map((story) => (
-          <li key={story.slug}>
-            <Link href={scriptureStoryPath(story.slug)}>
-              <h2>{story.title}</h2>
-              <p className="scr-story-ref">{story.reference}</p>
-              <p>{story.summary}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <StoryShelf stories={SHELF_STORIES} choices={CHOICES} />
+      <p className="storyshelf-note">The pictures are interpretive illustrations.</p>
     </article>
   );
 }

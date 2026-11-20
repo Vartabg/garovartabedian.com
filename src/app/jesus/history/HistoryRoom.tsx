@@ -9,6 +9,7 @@ import type {
   StoneItem,
 } from "@/lib/jesus/types";
 import SourceBasis from "../../_components/SourceBasis";
+import HashDisclosureOpener from "../../_components/HashDisclosureOpener";
 import ChristianWitnessCard from "./ChristianWitnessCard";
 import StoneEvidenceCard from "./StoneEvidenceCard";
 import WrittenWitnessCard from "./WrittenWitnessCard";
@@ -59,7 +60,7 @@ export default function HistoryRoom({
 
   return (
     <>
-      <p className="kicker"><Link href="/jesus">Jesus Christ</Link></p>
+      <HashDisclosureOpener />
       <h1>What can history actually establish?</h1>
       <p className="lede">
         Start with the earliest Christian testimony, then test it against Jewish

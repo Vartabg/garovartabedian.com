@@ -4,6 +4,7 @@ import { ButtonAnchor, ButtonLink } from "../_components/Button";
 import CleanChrome from "../_components/CleanChrome";
 import ProjectLink from "../_components/ProjectLink";
 import {
+  ABOUT_PAGE,
   ACTION_LABELS,
   CONTACT_METHOD_BY_ID,
   CONTACT_METHODS,
@@ -97,9 +98,9 @@ export default function Hire() {
       />
 
       <section className="hire-hero" aria-labelledby="hire-title">
-        <p className="kicker">{HIRE_PAGE.kicker}</p>
-        <h1 id="hire-title">{HIRE_PAGE.headline}</h1>
-        <p className="lede">{RESUME.summary}</p>
+        <h1 id="hire-title">{ABOUT_PAGE.builderLede}</h1>
+        <p className="lede">{HIRE_PAGE.headline}</p>
+        <p>{RESUME.summary}</p>
 
         <p className="cta-row">
           <ButtonAnchor variant="primary" href={PROFILE.links.resumePdf}>

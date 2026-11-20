@@ -142,34 +142,23 @@ function EarlyCatalogInner() {
           ))}
         </div>
       ) : (
-        <>
-          <nav className="ew-era-nav" aria-label="Jump to an era">
-            {ERAS.map((e) => (
-              <a key={e.id} href={`#era-${e.id}`}>
-                <strong>{e.label}</strong>
-                <span>{e.range}</span>
-              </a>
-            ))}
-          </nav>
-
-          {byEra.map(({ era: e, texts }) => (
-            <section key={e.id} id={`era-${e.id}`} className="ew-era">
-              <div className="ew-era-head">
-                <h2 className="jsu-chapter">{e.label}</h2>
-                <span className="ew-era-range">{e.range}</span>
-                <Link href={`/early/era/${e.id}`} className="ew-era-open">
-                  Open this era →
-                </Link>
-              </div>
-              <p className="ew-era-blurb">{e.blurb}</p>
-              <div className="scr-cards">
-                {texts.map((t) => (
-                  <EarlyTextCard key={t.id} text={t} />
-                ))}
-              </div>
-            </section>
-          ))}
-        </>
+        byEra.map(({ era: e, texts }) => (
+          <section key={e.id} id={`era-${e.id}`} className="ew-era">
+            <div className="ew-era-head">
+              <h2 className="jsu-chapter">{e.label}</h2>
+              <span className="ew-era-range">{e.range}</span>
+              <Link href={`/early/era/${e.id}`} className="ew-era-open">
+                Open this era →
+              </Link>
+            </div>
+            <p className="ew-era-blurb">{e.blurb}</p>
+            <div className="scr-cards">
+              {texts.map((t) => (
+                <EarlyTextCard key={t.id} text={t} />
+              ))}
+            </div>
+          </section>
+        ))
       )}
     </div>
   );

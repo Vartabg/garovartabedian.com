@@ -10,7 +10,8 @@ test("keyboard opens a parable, then its early writings, and follows its Thomas 
   // The early writings fold is closed until asked for.
   await expect(page.locator("#parable-thomas-empty-jar")).toBeHidden();
   const button = page.locator("#parable-wicked-tenants button");
-  await expect(button).toContainText("Matthew · Mark · Luke + 2 early writings");
+  await expect(button).toContainText("Matthew · Mark · Luke + 4 early writings");
+  await expect(button).toBeEnabled();
   await button.focus();
   await page.keyboard.press("Enter");
   const panel = page.locator("#parable-wicked-tenants-text");
@@ -82,7 +83,7 @@ test("Thomas-only stories open from hashes and show every source paragraph in or
   for (const story of thomasStories) {
     await page.goto(`/jesus/parables#parable-${story.id}`);
     const entry = page.locator(`#parable-${story.id}`);
-    const button = entry.getByRole("button");
+    const button = entry.locator(".jsu-pair-head");
     await expect(button).toHaveAttribute("aria-expanded", "true");
     const panel = entry.locator(".jsu-parable-thomas");
     await expect(panel.getByRole("heading", { name: `Gospel of Thomas · Saying ${story.saying} · outside the canon` })).toBeVisible();
@@ -110,20 +111,20 @@ test("Find opens a Thomas-only story in the room", async ({ page }) => {
   await expect(result).toBeVisible();
   await result.click();
   await expect(page).toHaveURL(/\/jesus\/parables(?:\?[^#]*)?#parable-thomas-empty-jar$/);
-  await expect(page.locator("#parable-thomas-empty-jar button")).toHaveAttribute("aria-expanded", "true");
+  await expect(page.locator("#parable-thomas-empty-jar .jsu-pair-head")).toHaveAttribute("aria-expanded", "true");
   await expect(page.locator("#parable-thomas-empty-jar .jsu-parable-thomas")).toContainText("jar of flour");
 });
 
 test("Find opens another Thomas story while already in the room", async ({ page }) => {
   await page.goto("/jesus/parables#parable-thomas-children-in-field");
-  await expect(page.locator("#parable-thomas-children-in-field button")).toHaveAttribute("aria-expanded", "true");
+  await expect(page.locator("#parable-thomas-children-in-field .jsu-pair-head")).toHaveAttribute("aria-expanded", "true");
   await page.getByRole("navigation", { name: "Primary site navigation" }).getByRole("button", { name: "Find" }).click();
   const dialog = page.getByRole("dialog", { name: "Find" });
   await dialog.getByRole("searchbox", { name: "Find" }).fill("empty jar");
   await dialog.getByRole("option").filter({ hasText: "The empty jar" }).first().click();
   await expect(page).toHaveURL(/#parable-thomas-empty-jar$/);
-  await expect(page.locator("#parable-thomas-empty-jar button")).toHaveAttribute("aria-expanded", "true");
-  await expect(page.locator("#parable-thomas-children-in-field button")).toHaveAttribute("aria-expanded", "false");
+  await expect(page.locator("#parable-thomas-empty-jar .jsu-pair-head")).toHaveAttribute("aria-expanded", "true");
+  await expect(page.locator("#parable-thomas-children-in-field .jsu-pair-head")).toHaveAttribute("aria-expanded", "false");
   await expect(page.locator("#parable-thomas-empty-jar .jsu-parable-thomas")).toContainText("jar of flour");
   await page.getByRole("navigation", { name: "Primary site navigation" }).getByRole("button", { name: "Find" }).click();
   const search = page.getByRole("dialog", { name: "Find" }).getByRole("searchbox", { name: "Find" });
@@ -132,8 +133,8 @@ test("Find opens another Thomas story while already in the room", async ({ page 
   await search.press("ArrowDown");
   await search.press("Enter");
   await expect(page).toHaveURL(/#parable-thomas-assassin$/);
-  await expect(page.locator("#parable-thomas-assassin button")).toHaveAttribute("aria-expanded", "true");
-  await expect(page.locator("#parable-thomas-empty-jar button")).toHaveAttribute("aria-expanded", "false");
+  await expect(page.locator("#parable-thomas-assassin .jsu-pair-head")).toHaveAttribute("aria-expanded", "true");
+  await expect(page.locator("#parable-thomas-empty-jar .jsu-pair-head")).toHaveAttribute("aria-expanded", "false");
 });
 
 test("the lamp comparison shows every Gospel passage and Thomas 33", async ({ page }) => {
@@ -183,10 +184,14 @@ test("James passages open beside related Gospel text and link to their exact rea
 test("every mapped comparison contains its complete hosted text", async ({ page }) => {
   test.setTimeout(90_000);
   await page.goto("/jesus/parables");
+  const groups = page.getByRole("navigation", { name: "Parable groups" });
   for (const parable of [...parables, ...synopticFigures]) {
     if (!("thomas" in parable) || !parable.thomas) continue;
+    // One group shows at a time; choose the entry's group before opening it.
+    const group = parable.kind === "story" ? /^Stories/ : parable.kind === "saying" ? /^Short sayings/ : /^More in Matthew/;
+    await groups.getByRole("button", { name: group }).click();
     const entry = page.locator(`#parable-${parable.id}`);
-    await entry.getByRole("button").first().click();
+    await entry.locator(".jsu-pair-head").click();
     await entry.locator("details.jsu-parable-also > summary").click();
     const panels = entry.locator(".jsu-parable-thomas");
     await expect(panels).toHaveCount(parable.thomas.length);
@@ -240,13 +245,20 @@ function assertGrid(columns: number, width: number) {
 }
 
 test("other early passages show their speakers and link to every selected source", async ({ page }) => {
-  test.setTimeout(180_000);
+  test.setTimeout(360_000);
   const figures = JSON.parse(readFileSync("public/jesus/early-figures.json", "utf8"));
   const legacy = JSON.parse(readFileSync("public/early/texts/epistula-apostolorum.json", "utf8"));
   const didache = JSON.parse(readFileSync("public/early/texts/didache.json", "utf8"));
   const barnabas = JSON.parse(readFileSync("public/early/texts/barnabas.json", "utf8"));
   const clement = JSON.parse(readFileSync("public/early/texts/1clement.json", "utf8"));
-  const external: Record<string, string> = { "acts-thomas-wedding-invitation": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-old-new-48": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-lost-sheep": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-old-new-58": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-heat-day": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-flock-wolves": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-wolves-clothing": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-stolen-thoughts": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-physician-10": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-birds": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-wealth": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-ask": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-physician-95": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-physician-143": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-physician-156": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf",  "acts-thomas-marriage": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-bride-response": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-shepherd": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-crowd": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-bitter-tree": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-yoke": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-seed": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-mygdonia-marriage": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-soldiers": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-tower": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-oil": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf",  "acts-thomas-bride": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-palace": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-prayer": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "eusebius-talents": "https://en.wikisource.org/wiki/Page:The_Apocryphal_New_Testament_(1924).djvu/41", "acts-thomas-hymn": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf" };
+  const external: Record<string, string> = { "lightfoot-barnabas-goats-thorns": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-barnabas-thorns-heart": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-first-clement-sheep-lamb": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-barnabas-two-peoples": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-first-clement-aaron-rod": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-first-clement-pillars": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-first-clement-dust-smoke": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-first-clement-wisdom-fruit": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-first-clement-pasture-prayer": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-barnabas-yoke-sacrifice": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-barnabas-fast-light": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-barnabas-beast-covenant": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-barnabas-sheep-sun": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "lightfoot-barnabas-vessel-body": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf", "acts-thomas-groom-prayer": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-creditor": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-youth-light": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-desert-temple": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-oil-121": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-open-treasury": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-prayer-opening": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-four-one": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-mother-houses": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-good-shepherd": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-spirit-return": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-hidden-mother": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-dwelling-places": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-eagle-dream": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-life-loan": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-bread-life": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-crown": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-wedding-invitation": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-old-new-48": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-lost-sheep": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-old-new-58": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-heat-day": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-flock-wolves": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-wolves-clothing": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-stolen-thoughts": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-physician-10": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-birds": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-wealth": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-ask": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-physician-95": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-physician-143": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-physician-156": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf",  "acts-thomas-marriage": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-bride-response": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-shepherd": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-crowd": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-bitter-tree": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-yoke": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-seed": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-mygdonia-marriage": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-soldiers": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-tower": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-oil": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf",  "acts-thomas-bride": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-palace": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "acts-thomas-prayer": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf", "eusebius-talents": "https://en.wikisource.org/wiki/Page:The_Apocryphal_New_Testament_(1924).djvu/41", "acts-thomas-hymn": "https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf" };
+  const lightfootAudit = JSON.parse(readFileSync("tests/fixtures/parables-audit-lightfoot.json", "utf8"));
+  const eusebiusAudit = JSON.parse(readFileSync("tests/fixtures/parables-audit-eusebius.json", "utf8"));
+  for (const item of lightfootAudit.selections.filter((item: { excerpt: string | null }) => item.excerpt)) {
+    const edition = item.excerpt.split("/").pop().replace(/\.json$/, "");
+    external[edition] = item.scanUrl;
+  }
+  for (const item of eusebiusAudit.selections) external[item.id] = item.scanUrl;
   const normalize = (text: string) => text.replace(/\s+/g, " ").trim();
   for (const scheme of ["light", "dark"] as const) {
     await page.emulateMedia({ colorScheme: scheme, reducedMotion: "reduce" });
@@ -273,10 +285,18 @@ test("other early passages show their speakers and link to every selected source
         await expect(entry.getByRole("heading", { name: `${comparison.work} · ${comparison.locator} · outside the canon` })).toBeVisible();
         await expect(entry.locator(".jsu-parable-early").filter({ has: page.getByRole("heading", { name: `${comparison.work} · ${comparison.locator} · outside the canon` }) })).toContainText(comparison.speaker);
       }
-      if (figure.thomas?.length) await expect(entry.locator(".jsu-parable-thomas")).toContainText("When you make the two into one");
+      for (const comparison of figure.thomas ?? []) {
+        const source = JSON.parse(readFileSync(`content/early-library/readings/gospel-thomas/saying-${comparison.saying}.json`, "utf8"));
+        const panel = entry.locator(".jsu-parable-thomas").filter({ has: page.getByRole("heading", { name: `Gospel of Thomas · Saying ${comparison.saying} · outside the canon` }) });
+        await expect(panel).toHaveCount(1);
+        for (const block of source.blocks) await expect(panel).toContainText(block.text);
+        if (comparison.note) await expect(panel).toContainText(comparison.note);
+        await expect(panel.getByRole("link", { name: `Saying ${comparison.saying}`, exact: true })).toHaveAttribute("href", `/early/library/gospel-thomas/saying-${comparison.saying}`);
+      }
       for (const [index, part] of resolved.entries()) {
-        const link = panel.getByRole("link", { name: index ? `Read part ${index + 1} in the edition` : figure.excerpt ? "Read the source" : "Read in the edition", exact: true });
+        const link = panel.getByRole("link", { name: index ? `Read part ${index + 1} in the edition` : figure.originalReader ? "Read the 1891 scan" : figure.excerpt ? "Read the source" : "Read in the edition", exact: true });
         await expect(link).toHaveAttribute("href", part.href);
+        if (figure.originalReader) await expect(panel.getByRole("link", { name: "Read the uncorrected edition", exact: true })).toHaveAttribute("href", `/early/library/${figure.originalReader.edition}/${figure.originalReader.section}#p${figure.originalReader.start}`);
         if (figure.excerpt) continue;
         await link.click();
         await expect(page.locator(figure.legacy ? `#s${part.index}-p${part.start}` : `#p${part.start}`)).toBeVisible();
@@ -292,5 +312,146 @@ test("other early passages show their speakers and link to every selected source
         }
       }
     }
+  }
+});
+
+test("Theophany passages preserve speakers and partial comparisons in light and dark", async ({ page }) => {
+  test.setTimeout(90_000);
+  const figures = JSON.parse(readFileSync("public/jesus/early-figures.json", "utf8"));
+  for (const [width, colorScheme] of [[390, "light"], [390, "dark"], [1280, "light"], [1280, "dark"]] as const) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.emulateMedia({ colorScheme, reducedMotion: "reduce" });
+    for (const [target, id, phrase] of [
+      ["lost-sheep", "eusebius-lee-audit-shepherd-lost-sheep", /sheep.*strayed/i],
+      ["synoptic-peter-rock-keys", "eusebius-lee-audit-rock-keys-5", /keys.*kingdom/i],
+    ] as const) {
+      await page.goto(`/jesus/parables#parable-${target}`);
+      const entry = page.locator(`#parable-${target}`);
+      await expect(entry.getByRole("button").first()).toHaveAttribute("aria-expanded", "true");
+      await entry.locator("details.jsu-parable-also > summary").click();
+      const figure = figures.find((item: { id: string }) => item.id === id);
+      expect(figure).toBeTruthy();
+      const panel = entry.locator(".jsu-parable-early").filter({ hasText: figure.note });
+      await expect(panel.getByRole("heading")).toContainText("outside the canon");
+      await expect(panel).toContainText(figure.speaker);
+      await expect(panel).toContainText(figure.note);
+      await expect(panel).toContainText(phrase);
+      await expect(panel.getByRole("link", { name: "Read the source", exact: true })).toHaveAttribute("href", /eusebiusbishopof00euse\.pdf#page=\d+$/);
+      const bounds = await panel.boundingBox();
+      expect(bounds).not.toBeNull();
+      expect(bounds!.width).toBeLessThanOrEqual(width);
+    }
+  }
+});
+
+test("collection overview shows the Gospel coverage and searches across groups", async ({ page }) => {
+  await page.goto("/jesus/parables");
+  const overview = page.locator("#parables-overview");
+  const summary = overview.getByRole("table", { name: "Entries in each group with an account in each Gospel" });
+  await expect(summary.getByRole("row", { name: /Stories · 31/ })).toContainText("17");
+  const groups = page.getByRole("navigation", { name: "Parable groups" });
+  await expect(groups.getByRole("button", { name: "Stories 31" })).toHaveAttribute("aria-pressed", "true");
+  const searchArea = page.locator("#parables-search");
+  const search = page.getByRole("searchbox", { name: "Search all groups" });
+  await search.fill("Matthew 13:3");
+  await expect(searchArea.getByRole("link", { name: "The sower", exact: true })).toBeVisible();
+  await expect(searchArea.getByRole("row", { name: /The sower/ })).toContainText("Matthew: account in this room");
+  await expect(searchArea.getByRole("row", { name: /The sower/ })).toContainText("John: no account in this room");
+  await expect(searchArea.getByRole("link", { name: "The ten virgins", exact: true })).toHaveCount(0);
+  // While searching, the results stand in for the group lists.
+  await expect(page.locator("#parables-stories")).toBeHidden();
+  await expect(groups.getByRole("button", { name: "Stories 31" })).toHaveAttribute("aria-pressed", "false");
+  await search.fill("Matthew 13:6");
+  await expect(searchArea.getByRole("row", { name: /The sower/ })).toContainText("Account: Matthew 13:3-9");
+  await search.fill("Matthew 13:6—8 sower");
+  await expect(searchArea.getByRole("link", { name: "The sower", exact: true })).toBeVisible();
+  await search.fill("Matthew 13:3 virgins");
+  await expect(searchArea.getByText("No entries found. Try another title, reference or writing.")).toBeVisible();
+  await search.fill("Thomas 1");
+  await expect(searchArea.getByRole("link", { name: "The sower", exact: true })).toHaveCount(0);
+  await search.fill("Thomas 64");
+  await expect(searchArea.getByRole("row", { name: /The wedding banquet and the great supper/ })).toContainText("Related: Gospel of Thomas, Saying 64");
+  await search.fill("Eusebius lost sheep");
+  const work = searchArea.locator("details").filter({ has: page.locator("summary", { hasText: "Eusebius, Theophany" }) });
+  await expect(work.locator("summary")).toContainText("outside the canon");
+  await expect(work.getByRole("link", { name: "The shepherd seeks the lost sheep" })).toBeVisible();
+  await search.fill("zzzxxyyqq");
+  await expect(searchArea.getByText("No entries found. Try another title, reference or writing.")).toBeVisible();
+  await search.fill("");
+  await expect(groups.getByRole("button", { name: "Stories 31" })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("#parables-stories")).toBeVisible();
+});
+
+test("one group shows at a time, and an open entry steps through its group and closes to its row", async ({ page }) => {
+  await page.goto("/jesus/parables");
+  const groups = page.getByRole("navigation", { name: "Parable groups" });
+  await expect(page.locator("#parables-stories")).toBeVisible();
+  await expect(page.locator("#parables-john-figures")).toBeHidden();
+  await groups.getByRole("button", { name: /^Figures in John/ }).click();
+  await expect(page.locator("#parables-john-figures")).toBeVisible();
+  await expect(page.locator("#parables-stories")).toBeHidden();
+  await groups.getByRole("button", { name: /^Early writings/ }).click();
+  const writings = page.getByRole("group", { name: "Choose a writing" });
+  await expect(writings.getByRole("button", { name: /^Gospel of Thomas/ })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("#parable-thomas-empty-jar")).toBeVisible();
+  await writings.getByRole("button", { name: /^Acts of Thomas/ }).click();
+  await expect(page.locator("#parable-thomas-empty-jar")).toBeHidden();
+  await groups.getByRole("button", { name: "Stories 31" }).click();
+
+  const sower = page.locator("#parable-sower");
+  await sower.getByRole("button").first().click();
+  const step = sower.getByRole("navigation", { name: "Move through Stories" });
+  await expect(step).toContainText("2 of 31 · Stories");
+  await step.getByRole("button", { name: "Next: The weeds among the wheat" }).click();
+  const weeds = page.locator("#parable-weeds-among-wheat");
+  await expect(weeds.getByRole("button").first()).toHaveAttribute("aria-expanded", "true");
+  await expect(weeds.getByRole("button").first()).toBeFocused();
+  await expect(sower.getByRole("button").first()).toHaveAttribute("aria-expanded", "false");
+  await expect(page).toHaveURL(/#parable-weeds-among-wheat$/);
+  await weeds.getByRole("button", { name: "Close" }).click();
+  await expect(weeds.getByRole("button").first()).toHaveAttribute("aria-expanded", "false");
+  await expect(weeds.getByRole("button").first()).toBeFocused();
+});
+
+test("search results and addresses open entries in their own group", async ({ page }) => {
+  await page.goto("/jesus/parables");
+  const search = page.getByRole("searchbox", { name: "Search all groups" });
+  await expect(search).toBeEnabled();
+  await search.fill("sower");
+  const sowerLink = page.locator("#parables-search").getByRole("link", { name: "The sower", exact: true });
+  await sowerLink.focus();
+  await page.keyboard.press("Enter");
+  const sower = page.locator("#parable-sower");
+  await expect(sower.getByRole("button").first()).toHaveAttribute("aria-expanded", "true");
+  await expect(sower.getByRole("button").first()).toBeFocused();
+  await expect(search).toHaveValue("");
+  await search.fill("Eusebius lost sheep");
+  await page.locator("#parables-search").getByRole("link", { name: "The shepherd seeks the lost sheep" }).click();
+  const early = page.locator("#parable-eusebius-lee-audit-shepherd-lost-sheep");
+  await expect(early.getByRole("button").first()).toHaveAttribute("aria-expanded", "true");
+  await expect(early.getByRole("heading", { name: /outside the canon/ })).toBeVisible();
+  await expect(page.getByRole("group", { name: "Choose a writing" }).getByRole("button", { name: /^Eusebius, Theophany/ })).toHaveAttribute("aria-pressed", "true");
+  await page.goBack();
+  await expect(page).toHaveURL(/#parable-sower$/);
+  await expect(sower.getByRole("button").first()).toHaveAttribute("aria-expanded", "true");
+  await page.goForward();
+  await expect(early.getByRole("button").first()).toHaveAttribute("aria-expanded", "true");
+  await expect(early.getByRole("button").first()).toBeFocused();
+});
+
+test("collection overview reflows at narrow widths and enlarged text", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 800 });
+  for (const colorScheme of ["light", "dark"] as const) {
+    await page.emulateMedia({ colorScheme, reducedMotion: "reduce" });
+    await page.goto("/jesus/parables");
+    const overview = page.locator("#parables-overview");
+    await expect(page.getByRole("searchbox", { name: "Search all groups" })).toBeEnabled();
+    const region = overview.getByRole("region", { name: "Gospel coverage by group" });
+    expect(await region.evaluate((node) => node.scrollWidth)).toBeLessThanOrEqual(await region.evaluate((node) => node.clientWidth));
+    await page.evaluate(() => { document.documentElement.style.fontSize = "200%"; });
+    await expect(region.getByText("Scroll across to see all Gospel columns.")).toBeVisible();
+    expect(await overview.evaluate((node) => node.scrollWidth)).toBeLessThanOrEqual(await overview.evaluate((node) => node.clientWidth));
+    expect(await region.evaluate((node) => node.scrollWidth)).toBeGreaterThan(await region.evaluate((node) => node.clientWidth));
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
 });

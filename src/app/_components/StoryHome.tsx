@@ -1,13 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HOME, PROFILE } from "@/lib/portfolio-content";
+import { hostedWebVerse } from "@/lib/scriptures/hosted-verse";
 import Reveal from "./Reveal";
 import SiteNavigation from "./SiteNavigation";
 import WorldsRail from "./sections/WorldsRail";
 import { ButtonLink } from "./Button";
 import SunlitLeaf from "./SunlitLeaf";
 import DiscoveryDesk from "./DiscoveryDesk";
+import StoryStrip from "./StoryStrip";
 import SiteFooterLinks from "./SiteFooterLinks";
+import XrayTag from "./xray/XrayTag";
+import { homeXrayTag } from "@/lib/site/world-xray";
 
 /**
  * The site's front door: Jesus first, Scripture immediately usable, and the
@@ -45,6 +49,7 @@ export default function StoryHome() {
             <span aria-hidden="true">→</span>
           </Link>
         </p>
+        <XrayTag {...homeXrayTag()} />
 
         <section className="st-frontispiece" aria-labelledby="home-purpose" style={{ viewTransitionName: "frontispiece" }}>
           {/* The plate is 1536x1024 — the largest that exists — so a wide
@@ -53,10 +58,14 @@ export default function StoryHome() {
               detail the source still has. */}
           <div className="st-front" style={{ viewTransitionName: "front" }}>
             <p className="st-label">{HOME.worldsLabel}</p>
-            <h1 className="st-front-title" id="home-purpose" data-hand="capitals">
+            <h1 className="st-front-title" id="home-purpose">
               {HOME.worldsHeading}
             </h1>
-            <p className="st-front-text">{HOME.heroText}</p>
+            <p className="st-front-text">{hostedWebVerse("MAT", 28, 6)}</p>
+            <p className="st-front-cite">
+              <Link href="/scriptures/protestant/MAT/28#v6">Matthew 28:6</Link>
+              <span> · World English Bible</span>
+            </p>
             <div className="st-front-actions">
               <ButtonLink
                 href={HOME.primaryHref}
@@ -73,11 +82,10 @@ export default function StoryHome() {
                 {HOME.scriptureLabel}
               </ButtonLink>
             </div>
-            <a href="#discover" className="st-front-tool-link">{HOME.discoveryLinkLabel} <span aria-hidden="true">↓</span></a>
-            <a href={HOME.worldsHref} className="st-front-explore">
-              {HOME.worldsLinkLabel}
-              <span aria-hidden="true">↓</span>
-            </a>
+            {/* Garo's pick, 2026-11-10: the story pictures take the place of
+                the two scroll links, so the first screen shows a way in that
+                needs no reading. */}
+            <StoryStrip />
             {/* Filled in by SunlitLeaf with the time and the sun's place;
                 hidden unless the light is actually drawn. */}
             <p className="st-sky" data-sky-readout>

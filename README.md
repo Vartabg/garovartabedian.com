@@ -1,16 +1,55 @@
 # garovartabedian.com
 
-Independent work portfolio for Garo Vartabedian, and a live
-**eight-world research site** about Scripture, Jesus Christ, the apostles, the
-early church, the church through history, angels and demons, and who owns the
-Bible—and how its claims are known. The site **is** the engineering proof: generated public-domain data,
-source provenance, static-friendly App Router routes, and verified shipping.
+A Scripture research site in eight sections: the text of the canons, the
+early writings, cross-references, maps and source records, generated from
+public-domain and openly licensed sources. It is also Garo Vartabedian's
+portfolio project.
 
-The front door is the eight worlds. Independent services live at `/services`,
-with the full-time employment profile retained separately at `/hire`. Story is
-the SSR default, so the research site works with JavaScript disabled.
+- Live site: <https://garovartabedian.com>
+- Case study and release record: <https://garovartabedian.com/work/garovartabedian>
+
+The working repository is private. The public copy on GitHub is a snapshot of
+the code: it does not carry the working commit history, and it can lag behind
+the live site.
+
+## How it works
+
+```mermaid
+flowchart LR
+  S["Sources<br/>public-domain and openly licensed texts"] --> B["Build scripts<br/>scripts/*/build-*.mjs"]
+  B --> J["Generated JSON<br/>public/"]
+  J --> P["Pages<br/>Next.js App Router"]
+  P --> R["Release script<br/>scripts/release/production.mjs"]
+  R --> L["Live site"]
+```
+
+The pages read the generated JSON. A release runs one script on the merged
+commit: secret scans, lint, typecheck, unit and smoke tests, a production
+build, browser tests, accessibility tests and a staged deployment check, then
+promotion and domain checks. Every attempt is recorded. The case study on the
+live site shows that record, including the attempts that stopped.
+
+The code is written with AI coding agents that work under
+[`AGENTS.md`](AGENTS.md). Plans for larger changes, and the review records for
+them, are in [`docs/plans/`](docs/plans/).
+
+## Where to look
+
+| To see | Open |
+|---|---|
+| How a change reaches the live site | [`scripts/release/production.mjs`](scripts/release/production.mjs) |
+| How the data is generated | `scripts/*/build-*.mjs`, with the output in `public/` |
+| Where the texts come from | [`public/scriptures/SOURCES.md`](public/scriptures/SOURCES.md) and [`public/scriptures/original/SOURCES.md`](public/scriptures/original/SOURCES.md) |
+| What a page is built from | The Engineer lens at the top of the live site, fed by [`scripts/site/build-site-xray.mjs`](scripts/site/build-site-xray.mjs) |
+| How the generated chapter guides are checked | [`tests/scripture-guide-v2.test.ts`](tests/scripture-guide-v2.test.ts), with the review counts in [`public/meta/corpus-health.json`](public/meta/corpus-health.json) |
+| The tests | `tests/` (unit), `tests/e2e/` (browser), `scripts/smoke/`, `scripts/a11y/` |
 
 ## The eight worlds
+
+The code calls the eight sections worlds. The front door is the eight worlds.
+Independent services live at `/services`, with the full-time employment
+profile retained separately at `/hire`. Story is the SSR default, so the
+research site works with JavaScript disabled.
 
 All eight render from one shared content layer
 (`src/lib/portfolio-content.ts` for the portfolio spine; generated JSON under
@@ -28,13 +67,14 @@ keeps every page truthful.
 | **Who Owns the Word?** | `/word` | Modern translations are owned — the facts, the fences, and the ones given free |
 | **How We Know** | `/evidence` | Observation, inference, interpretation, and explicit limits — beginning with Faith & Science |
 
-The portfolio surfaces sit alongside the worlds: `/about`, `/work` (with case
-studies for JobPilot, garovartabedian.com, and EYE), `/hire`, `/resume`,
-`/services` (the $500 Workflow & Automation Audit), `/sources`, and `/contact`.
+The portfolio surfaces sit alongside the worlds: `/about`, `/work` (case
+studies and three browser demos), `/hire`, `/resume`, `/services` (the $500
+Workflow & Automation Audit), `/sources`, and `/contact`.
 
 ## Stack
 
-- **Next.js 16.4.2** (App Router, Turbopack) + **React 19.3.1**, TypeScript
+- **Next.js 16** (App Router, Turbopack) + **React 19**, TypeScript; the exact
+  versions are in `package.json`
 - **Generated JSON data** in `public/` (scripture text, canons, cross-refs,
   search shards, Nave topics, early writings, church road, angels, word
   studies, evidence cases, source records) — static-friendly and inspectable
@@ -42,7 +82,8 @@ studies for JobPilot, garovartabedian.com, and EYE), `/hire`, `/resume`,
   loaded at route level for per-route splitting
 - **Self-hosted fonts** compiled by `next/font/local` from local `@fontsource`
   files: Atkinson Hyperlegible (default), Atkinson Hyperlegible Mono,
-  OpenDyslexic, and Fraunces. There are no Google font requests; swap rendering
+  OpenDyslexic, Fraunces, Cinzel, EB Garamond, Uncial Antiqua and
+  UnifrakturMaguntia. There are no Google font requests; swap rendering
   and adjusted fallbacks reduce font-related layout shift.
 - **Strict CSP** in production: `default-src 'self'`, `object-src 'none'`,
   `frame-ancestors 'none'`, HSTS preload, nosniff, referrer-policy,
@@ -77,9 +118,8 @@ the early writings index and needs no secrets. The optional AI relevance checks
 with work dispatched through a Vercel queue; the API answers 503 unless every
 value is set. Without `FIND_PUBLIC_ENABLED=1` the reading path and search show
 no AI check, and because those pages read it when they are prerendered, it must
-be set at build time. The `/scriptures`
-per-chapter reader is server-rendered on demand (every other route is
-prerendered as static or SSG). The `/scriptures` and `/jesus` traditions use
+be set at build time. Chapter pages under `/scriptures` are prerendered and
+revalidated daily. The `/scriptures` and `/jesus` traditions use
 public-domain texts (World English Bible, etc.); modern copyrighted
 translations are analyzed in `/word` but never hosted as scripture.
 
@@ -96,7 +136,8 @@ checks with a Vercel production build:
 - `npm run test:e2e` — Playwright browser checks
 - `npm run test:a11y` — **axe** (WCAG 2a/2aa/2.1a/2.1aa/2.2aa), run under both
   light and dark `prefers-color-scheme`, + **Lighthouse accessibility ≥ 0.95**
-  on 72 routes across every world and all three business demos. Two isolated Node
+  on every route listed in `scripts/a11y/config.mjs`, across every world and
+  all three business demos. Two isolated Node
   workers share the route list; each reuses Chrome with fresh page storage.
   Per-route timings and the temporary Lighthouse report directory are logged.
   Use `A11Y_WORKERS=1 npm run test:a11y` to diagnose resource contention on a
@@ -112,7 +153,8 @@ npm run release:production
 ```
 
 Requirements: Node 24, npm, git, authenticated `gh`, authenticated Vercel CLI
-(via `npx vercel@59.9.1`), `gitleaks`, Chrome, and `pdftotext`. Keep the Mac
+(the version pinned in `scripts/release/production.mjs`), `gitleaks`, Chrome,
+and `pdftotext`. Keep the Mac
 awake for the whole run. Run one release at a time locally.
 
 The script fetches `origin/master` and deploys from a separate temporary
@@ -161,6 +203,8 @@ independently (currently Pro plan, unchanged).
 - `src/lib/{world}/` — per-world loaders, types, and plate data
 - `src/lib/i18n/` — nine locale bundles (en/es/fr/de/ar/hi/ja/pt/zh)
 - `src/hooks/` — `useReveal`
+- `games/hermon/` — a separate app with its own dependency lock; its static
+  build is published at `/play/hermon`
 - `src/app/sitemap.ts` — generated from the same data the pages use, so it
   cannot drift from the live routes (worlds, rooms, traditions, eras, hosted
   early texts, and the portfolio surfaces)

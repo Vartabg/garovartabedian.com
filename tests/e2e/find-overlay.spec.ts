@@ -103,10 +103,8 @@ test("the shared menu still opens from a deep page", async ({ page }) => {
   const navigation = page.getByRole("navigation", {
     name: "Primary site navigation",
   });
-  await navigation.locator("summary").click();
-  await expect(
-    navigation.getByText("Explore the whole site", { exact: true }),
-  ).toBeVisible();
+  await navigation.locator(".site-nav-menu > summary").click();
+  await expect(navigation.locator(".site-nav-group--section")).toBeVisible();
 });
 
 test("Find trigger meets a 44px target and does not overflow the phone", async ({
@@ -122,6 +120,7 @@ test("Find trigger meets a 44px target and does not overflow the phone", async (
   await find.click();
   const dialog = page.getByRole("dialog", { name: "Find" });
   await expect(dialog).toBeVisible();
+  await expect(dialog.locator(".find-shortcut")).toBeHidden();
   const input = dialog.getByRole("searchbox", { name: "Find" });
   const inputBox = await input.boundingBox();
   const viewport = page.viewportSize();
@@ -136,6 +135,16 @@ test("Find trigger meets a 44px target and does not overflow the phone", async (
     content: document.documentElement.scrollWidth,
   }));
   expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
+
+  await page.goto("/");
+  const homeNav = page.getByRole("navigation", { name: "Primary site navigation" });
+  await homeNav.locator(".site-nav-menu > summary").click();
+  const firstMenuLink = homeNav.locator(".site-nav-group a").first();
+  const linkBox = await firstMenuLink.boundingBox();
+  const labelBox = await firstMenuLink.locator("strong").boundingBox();
+  expect(linkBox).toBeTruthy();
+  expect(labelBox).toBeTruthy();
+  expect((labelBox?.x ?? 0) - (linkBox?.x ?? 0)).toBeLessThan(24);
 });
 
 test("Find executes quick action to switch theme", async ({ page }) => {
@@ -296,4 +305,94 @@ test("Find scholarly commands require an explicit prefix", async ({ page }) => {
   await expect(dialog.getByRole("option", { name: /Compare canons/ })).toBeVisible();
   await input.press("Enter");
   await expect(page).toHaveURL(/\/scriptures\/canons#canons-matrix$/);
+});
+
+test("Find routes unambiguous non-verse catalog entities on Enter and dismisses on backdrop click", async ({
+  page,
+}, testInfo) => {
+  await page.goto("/");
+  const find = findButton(page);
+  await find.click();
+  const dialog = page.getByRole("dialog", { name: "Find" });
+  await expect(dialog).toBeVisible();
+
+  if (testInfo.project.name !== "phone") {
+    // Clicking the modal backdrop outside the dialog rect dismisses Find and restores focus.
+    await page.mouse.click(8, 8);
+    await expect(dialog).toHaveCount(0);
+    await expect(find).toBeFocused();
+    await find.click();
+  }
+
+  const input = dialog.getByRole("searchbox", { name: "Find" });
+  await input.fill("Didache");
+  await input.press("Enter");
+  await expect(page).toHaveURL(/\/early\/didache\?find=Didache&findTrans=web&findScope=all$/);
+});
+
+test("Find offers clickable source-wording chips and related snippets when exact words miss", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const dialog = await openFind(page);
+  const input = dialog.getByRole("searchbox", { name: "Find" });
+  await input.fill("loneliness");
+  await expect(dialog.getByText(/No word matches in/)).toBeVisible({
+    timeout: 15_000,
+  });
+  const forsakenChip = dialog.locator(".find-chip", { hasText: "forsaken" });
+  await expect(forsakenChip).toBeVisible();
+  await forsakenChip.click();
+  await expect(input).toHaveValue("forsaken");
+  await expect(
+    dialog.getByRole("heading", { name: "Words and phrases (WEB)" }),
+  ).toBeVisible({ timeout: 15_000 });
+  await expect(dialog.locator("mark.find-hl").first()).toBeVisible();
+});
+
+test("Find keeps first result near the top on phone and passes WCAG AA axe checks in light and dark mode", async ({
+  page,
+}, testInfo) => {
+  await page.goto("/");
+  const dialog = await openFind(page);
+  const firstResult = dialog.locator(".find-results").getByRole("option").first();
+  await expect(firstResult).toBeVisible();
+
+  if (testInfo.project.name === "phone") {
+    const box = await firstResult.boundingBox();
+    expect(box).toBeTruthy();
+    expect(box?.y ?? 999).toBeLessThan(280);
+  }
+
+  await dialog.getByRole("searchbox", { name: "Find" }).fill("light of the world");
+  await expect(
+    dialog.getByRole("heading", { name: "Words and phrases (WEB)" }),
+  ).toBeVisible({ timeout: 15_000 });
+  await expect(dialog.locator("mark.find-hl").first()).toBeVisible();
+
+  await page.addScriptTag({ path: "node_modules/axe-core/axe.min.js" });
+  for (const theme of ["light", "dark"] as const) {
+    const violations = await page.evaluate(async (mode) => {
+      document.documentElement.dataset.a11yTheme = mode;
+      await new Promise((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(resolve)),
+      );
+      const w = window as unknown as {
+        axe: {
+          run: (
+            context: string,
+            options: object,
+          ) => Promise<{ violations: Array<{ id: string; description: string }> }>;
+        };
+      };
+      const res = await w.axe.run(".find-dialog", {
+        runOnly: {
+          type: "tag",
+          values: ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"],
+        },
+      });
+      return res.violations.map((v) => `${v.id}: ${v.description}`);
+    }, theme);
+    expect(violations, `axe violations in ${theme} mode`).toEqual([]);
+  }
 });

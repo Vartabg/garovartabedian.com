@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 export default function AccessibilityCaseStudy() {
   return (
     <CleanChrome activeHref="/work" showWorldSwitcher={false}>
-      <p className="kicker">Work / Four products, one responsibility</p>
       <h1>{study.title}</h1>
       <p className="lede">{study.lede}</p>
       <p className="cta-row">

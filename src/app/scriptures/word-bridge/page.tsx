@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import StudyPageHeader from "@/app/_components/StudyPageHeader";
+import Link from "next/link";
 import { canons } from "@/lib/scriptures/server/canons";
+import { wordBridgeHref } from "@/lib/scriptures/word-bridge-url";
+import { WORD_STUDIES } from "@/lib/jesus/word-studies";
 import WordBridgeEntry from "./WordBridgeEntry";
 
 export const metadata: Metadata = {
@@ -25,6 +28,12 @@ export const metadata: Metadata = {
 export default function WordBridgePage() {
   return <article className="prose-wrap">
     <StudyPageHeader path="/scriptures/word-bridge" action="Choose a verse, then select an English or source word to see the connection, dictionary entry, and grammar." />
+    <p>
+      <Link href={wordBridgeHref("protestant", WORD_STUDIES[0].anchor.book, WORD_STUDIES[0].anchor.chapter, WORD_STUDIES[0].anchor.verse)}>
+        {WORD_STUDIES[0].saying}
+      </Link>
+      {" "}The Greek behind “kingdom” here is {WORD_STUDIES[0].language.term} ({WORD_STUDIES[0].language.transliteration}). {WORD_STUDIES[0].language.note}
+    </p>
     <WordBridgeEntry canons={canons} />
     <details className="scr-bridge-method">
       <summary>Coverage and how the links are checked</summary>

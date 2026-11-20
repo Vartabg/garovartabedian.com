@@ -7,10 +7,16 @@ import {
   getBookBriefing,
   getChapterGuide,
   getChapterNeighbours,
+  getChapterXray,
   hasOriginalChapter,
   pickTranslation,
 } from "@/lib/scriptures/server";
+import { ORIGINAL_EDITION_DISPLAY } from "@/lib/scriptures/original-editions";
+import { SCRIPTURE_SOURCES } from "@/lib/scriptures/sources";
+import { chapterXrayTags } from "@/lib/scriptures/xray-tags";
+import { CORPUS_HEALTH } from "@/lib/site/corpus-health";
 import { getUnseenForChapter } from "@/lib/angels/chapter-index";
+import { chapterContinuation } from "@/lib/scriptures/chapter-continuation";
 import ReaderClient from "./ReaderClient";
 
 type PageProps = {
@@ -105,6 +111,20 @@ export default async function ChapterPage({ params }: PageProps) {
   // whole BookText put every other chapter of the book (Psalms ≈ 226 KB) into
   // the RSC/hydration payload of all ~150 of its chapter pages.
   const verses = text.chapters[chapterNumber - 1] ?? null;
+  const unseen = getUnseenForChapter(bookId, chapterNumber);
+  // The Engineer lens's facts about this chapter, computed from the same
+  // files the regions render, then worded once here so the client gets text.
+  const xray = await getChapterXray({ bookId, chapter: chapterNumber, translation: trans, verses, originalTranslations, guide, neighbours, unseen });
+  const guides = CORPUS_HEALTH.corpus.guides;
+  const xrayTags = chapterXrayTags(xray, {
+    translationName: canons.translations[trans].name,
+    bookId,
+    bookName: canons.books[bookId].name,
+    bookNameFor: (id) => canons.books[id]?.name ?? id,
+    source: SCRIPTURE_SOURCES[trans],
+    originalName: (edition) => (edition in ORIGINAL_EDITION_DISPLAY ? ORIGINAL_EDITION_DISPLAY[edition as keyof typeof ORIGINAL_EDITION_DISPLAY].name : edition),
+    guides: { files: guides.files, agentReviewed: guides.review.agentReviewed, humanReviewed: guides.review.humanReviewed, untracked: guides.review.untracked, batchTemplate: guides.batchTemplateGuides },
+  });
 
   return (
     <ReaderClient
@@ -119,7 +139,9 @@ export default async function ChapterPage({ params }: PageProps) {
       initialGuide={guide}
       guideSources={briefing?.sources ?? []}
       neighbours={neighbours}
-      unseen={getUnseenForChapter(bookId, chapterNumber)}
+      unseen={unseen}
+      continuation={chapterContinuation(bookId, chapterNumber)}
+      xrayTags={xrayTags}
     />
   );
 }

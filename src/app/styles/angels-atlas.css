@@ -3,9 +3,6 @@
 .world-angels .world-home-hero-art {
   object-position: 65% 45%;
 }
-.world-angels .world-home-hero-eyebrow {
-  color: var(--holy, var(--accent));
-}
 .world-angels .world-home-hero h1 {
   max-width: 10ch;
   color: var(--ink);
@@ -320,4 +317,37 @@
 }
 @media (forced-colors: active) {
   .an-hero-actions a, .an-hero-realms a, .an-story-door, .an-atlas-nav a { color: LinkText; border: 1px solid LinkText; }
+}
+/* The whole story — chronological spine (ArcSpine). Proof styling: a ruled
+   timeline reusing the atlas panel/ink variables, no new imagery. */
+.world-angels .an-arc { --ink: #e8e6db; --muted: #bec3c4; --line: #454a4c; --holy: #dec28b; --fallen: #e29978; width: 100%; margin: 0 0 5rem; padding: 2.5rem 2rem 4rem; background: #111820; color: var(--ink); }
+.an-arc > * { max-width: 72rem; margin-inline: auto; }
+.an-arc-head { max-width: 38rem; margin-bottom: 2.5rem; margin-inline: 0 auto; }
+/* The spine stays dark in both themes. The shared kicker uses --accent, which is brown on the light theme and fails on this ground. */
+.an-arc .an-section-kicker { color: #d9bc80; }
+.an-arc-head h2 { margin: 0 0 1rem; color: #f0e5d1; font-size: clamp(2rem, 4.2vw, 3.4rem); line-height: 1.1; letter-spacing: -0.035em; }
+.an-arc-head > p:last-child { color: #d8d5c9; font-size: 0.94rem; line-height: 1.8; }
+.an-arc-eras { list-style: none; margin: 0; padding: 0; }
+.an-arc-era { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 2.5rem; padding: 2.2rem 0; border-top: 1px solid #454a4c; scroll-margin-top: 7rem; }
+.an-arc-era-head { align-self: start; position: sticky; top: 7rem; }
+.an-arc-era-number { display: block; margin-bottom: 0.8rem; color: #d9bc80; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; }
+.an-arc-era-when { margin: 0 0 0.4rem; color: #d9bc80; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.an-arc-era-head h3 { margin: 0 0 0.9rem; color: #f0e5d1; font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.1; font-weight: 450; }
+.an-arc-era-claim { margin: 0 0 1rem; color: #d8d5c9; font-size: 1rem; line-height: 1.75; }
+.an-arc-stops { display: grid; gap: 1rem; align-content: start; }
+.an-arc-stop { padding: 1.3rem 1.4rem; border: 1px solid #3b444c; background: #1a232d; }
+.an-arc-stop h4 { margin: 0 0 0.7rem; color: #f0e5d1; font-family: var(--font-display); font-size: 1.25rem; line-height: 1.25; font-weight: 500; }
+.an-arc-stop blockquote { margin: 0 0 0.8rem; padding: 0; border: 0; background: transparent; color: #d8d5c9; font-size: 0.92rem; line-height: 1.7; }
+.an-arc-stop blockquote cite { color: #bec3c4; font-size: 0.78rem; font-style: normal; }
+.an-arc-stop > p { margin: 0 0 0.8rem; color: #d8d5c9; font-size: 0.95rem; line-height: 1.7; }
+.an-arc-stop-note { color: #ddc48d !important; }
+.an-arc-stop .an-evidence-note.compact { display: block; margin: 0.9rem 0; padding: 0.1rem 0 0.1rem 0.9rem; border-left: 1px solid #454a4c; }
+.an-arc-stop .an-evidence-note p, .an-arc-era-head .an-evidence-note p { margin-top: 0.55rem; color: #d8d5c9; font-size: 0.88rem; line-height: 1.65; }
+.an-arc-stop-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+.an-arc-stop-links a { color: #ddc48d; font-size: 0.8rem; text-decoration: none; }
+.an-arc-stop-links a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+@media (max-width: 760px) {
+  .world-angels .an-arc { padding: 2rem 1.25rem 3rem; margin-bottom: 3rem; }
+  .an-arc-era { grid-template-columns: 1fr; gap: 1.4rem; }
+  .an-arc-era-head { position: static; }
 }

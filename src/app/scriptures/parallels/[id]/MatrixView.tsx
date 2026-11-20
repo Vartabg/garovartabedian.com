@@ -90,7 +90,7 @@ export default function MatrixView({ matrix, returnHref = "/scriptures/parallels
           </div>
         </div>
 
-        <h1 data-hand="capitals" className="text-3xl sm:text-4xl font-serif font-medium tracking-tight parallel-ink mb-2">
+        <h1 className="text-3xl sm:text-4xl font-serif font-medium tracking-tight parallel-ink mb-2">
           {matrix.title}
         </h1>
         <p className="text-lg parallel-accent font-serif mb-4">{matrix.subtitle}</p>

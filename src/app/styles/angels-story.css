@@ -10,7 +10,7 @@
 
 .world-angels:has(.dothan-story) main { padding: 0; }
 .world-angels main > .wrap:has(> .dothan-story) { display: block; width: 100%; max-width: none; padding: 0; }
-.world-angels main > .wrap:has(> .dothan-story) > :is(.world-guide, .world-next) { display: none; }
+.world-angels main > .wrap:has(> .dothan-story) > .world-next { display: none; }
 .world-angels:has(.dothan-story) > .site-header { background: #101310; border-bottom: 1px solid #444535; }
 .world-angels:has(.dothan-story) .an-sky { display: none; }
 

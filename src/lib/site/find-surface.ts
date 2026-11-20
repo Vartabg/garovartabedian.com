@@ -1,8 +1,9 @@
 import type { Canons, TranslationId } from "../scriptures/types";
 import type { FindGroup, FindItem } from "./find-query";
+import { WORLD_REGISTRY } from "../world-registry";
 
 export type FindScope = "all" | "texts" | "site";
-const textKinds = new Set(["verse", "ref", "topic", "text", "section"]);
+const textKinds = new Set(["verse", "ref", "book", "topic", "text", "section"]);
 
 /** Present bounded discovery groups; specialist commands remain searchable. */
 export function surfaceGroups(
@@ -11,12 +12,24 @@ export function surfaceGroups(
   hasQuery: boolean,
 ): FindGroup[] {
   const seen = new Set<string>();
+  const hasDirectPassages =
+    scope === "all" &&
+    hasQuery &&
+    groups.some((g) => g.id === "exact" && g.items.length > 0);
   return groups.flatMap((group) => {
     if (
       group.id === "ask" ||
       (!hasQuery && (group.id === "console" || group.id === "walks"))
     )
       return [];
+    const cap = hasQuery
+      ? group.id === "places" && hasDirectPassages
+        ? 3
+        : 8
+      : group.id === "worlds"
+        ? // Every section, so the opening list never hides one.
+          WORLD_REGISTRY.length
+        : 3;
     const items = group.items
       .filter((item) => {
         const matches =
@@ -32,7 +45,7 @@ export function surfaceGroups(
         seen.add(key);
         return true;
       })
-      .slice(0, hasQuery ? 8 : group.id === "worlds" ? 6 : 3);
+      .slice(0, cap);
     return items.length ? [{ ...group, items }] : [];
   });
 }

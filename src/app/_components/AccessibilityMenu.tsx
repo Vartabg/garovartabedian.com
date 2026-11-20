@@ -36,12 +36,24 @@ export default function AccessibilityMenu() {
         setOpen(false);
       }
     };
+    const closeOnFocusOutside = (event: FocusEvent) => {
+      const target = event.target;
+      if (
+        target instanceof Node &&
+        !panelRef.current?.contains(target) &&
+        !triggerRef.current?.contains(target)
+      ) {
+        setOpen(false);
+      }
+    };
 
     document.addEventListener("keydown", closeOnEscape);
     document.addEventListener("pointerdown", closeOutside);
+    document.addEventListener("focusin", closeOnFocusOutside);
     return () => {
       document.removeEventListener("keydown", closeOnEscape);
       document.removeEventListener("pointerdown", closeOutside);
+      document.removeEventListener("focusin", closeOnFocusOutside);
     };
   }, [open]);
 
@@ -94,7 +106,7 @@ export default function AccessibilityMenu() {
           settings continue to work.
         </p>
 
-        <ReadingAppearance />
+        <ReadingAppearance showPersistenceHelp={false} />
 
       </section>
     </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import type { FacesData } from "@/lib/church/types";
 import ArtPlate from "@/app/_components/ArtPlate";
 import GlossText from "@/app/_components/GlossText";
@@ -38,9 +37,6 @@ export default function FacesRoom({ data }: { data: FacesData }) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/church">The Church</Link>
-      </p>
       <h1>The faces.</h1>
       <p className="lede">
         The road and the tree show the shape of the whole. This is a handful

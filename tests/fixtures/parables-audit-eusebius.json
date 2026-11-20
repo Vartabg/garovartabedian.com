@@ -1,0 +1,2463 @@
+{
+  "work": "Eusebius, Theophania, English translation by Samuel Lee from Syriac (1843)",
+  "sourceUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf",
+  "sourceSha256": "d474deaaf504a206673122e80360742ea114fbb171ead596e69f5f5baaf77cc5",
+  "transcriptionPolicy": "Transcribed against printed scans; line-break hyphenation and print footnote callout numerals omitted; whitespace normalized; small-cap type represented as ordinary case. Translator parentheticals and textual punctuation retained. Individual excerpts are selections, not full reproductions of broad candidate ranges.",
+  "numberingCaution": "Lee Syriac Book IV §22 is a Josephus citation, not the existing James translation of the Greek fragment conventionally cited as Theophany 4.22; do not conflate their numbered sections or translations.",
+  "selections": [
+    {
+      "id": "eusebius-lee-house-ship-city",
+      "path": "content/jesus/early-excerpts/eusebius-lee-house-ship-city.json",
+      "sections": "1.1",
+      "pdfPages": [
+        171,
+        172
+      ],
+      "printedPages": "1–2",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius argues that household, ship, garment and city require care or skill; this is his analogy, not a Gospel quotation.",
+      "sha256": "7b633be07f2ae930917c94708d19eb727b693788ca2d07cd2f5bd412963d83cb",
+      "displayedNote": "Eusebius argues that household, ship, garment and city require care or skill; this is his analogy, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=171"
+    },
+    {
+      "id": "eusebius-lee-architect-house",
+      "path": "content/jesus/early-excerpts/eusebius-lee-architect-house.json",
+      "sections": "1.2",
+      "pdfPages": [
+        173,
+        174
+      ],
+      "printedPages": "3–4",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares honouring creation without its maker to admiring a royal house without its architect. The word “cielings” follows the print.",
+      "sha256": "916f89daf4e2acb1dc1487336f232ea1c012844312797e811e1a6cfef3a98752",
+      "displayedNote": "Eusebius compares honouring creation without its maker to admiring a royal house without its architect. The word “cielings” follows the print. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=173"
+    },
+    {
+      "id": "eusebius-lee-imperial-city",
+      "path": "content/jesus/early-excerpts/eusebius-lee-imperial-city.json",
+      "sections": "1.37; candidate 1.37–44",
+      "pdfPages": [
+        195,
+        196
+      ],
+      "printedPages": "25–26",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Selected opening of a longer comparison across 1.37–44; the excerpt does not claim to reproduce the whole range.",
+      "sha256": "a94b4f9039ce0f4d125efa97a4123154fd51c044710c8fde91ad46e1dfded87b",
+      "displayedNote": "Selected opening of a longer comparison across 1.37–44; the excerpt does not claim to reproduce the whole range. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=195"
+    },
+    {
+      "id": "eusebius-lee-birth-life",
+      "path": "content/jesus/early-excerpts/eusebius-lee-birth-life.json",
+      "sections": "1.69; candidate 1.69–73",
+      "pdfPages": [
+        222
+      ],
+      "printedPages": "52",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares mortal life and its departure to birth; this is his interpretation, not a saying attributed to Jesus.",
+      "sha256": "013a106992e3d20880fea47abfe2a2b20d4a791b9d454eb7a74f0ebf7c4565f7",
+      "displayedNote": "Eusebius compares mortal life and its departure to birth; this is his interpretation, not a saying attributed to Jesus. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=222"
+    },
+    {
+      "id": "eusebius-lee-seed-corruption",
+      "path": "content/jesus/early-excerpts/eusebius-lee-seed-corruption.json",
+      "sections": "1.77; candidate 1.76–77",
+      "pdfPages": [
+        232
+      ],
+      "printedPages": "62",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "john-grain-wheat"
+      ],
+      "notes": "A seed analogy concerning corruption and the rational faculty; only a thematic image comparison with John 12:24, not a quotation of it.",
+      "sha256": "b0e97de38f80af3c351b9ad9792cbd967f2d478014c2b903aaf0629ed9518084",
+      "displayedNote": "A seed analogy concerning corruption and the rational faculty; only a thematic image comparison with John 12:24, not a quotation of it. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=232"
+    },
+    {
+      "id": "eusebius-lee-physician-souls",
+      "path": "content/jesus/early-excerpts/eusebius-lee-physician-souls.json",
+      "sections": "2.86",
+      "pdfPages": [
+        315,
+        316
+      ],
+      "printedPages": "145–146",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-physician-sick"
+      ],
+      "notes": "Eusebius calls the Word a physician of souls and interprets afflictions as remedies. This is a partial image comparison, not a Gospel quotation.",
+      "sha256": "eb95fad4c9e7074a2144b1d4aefe439fdba9dca4977ceeddca90c1190a7f17e7",
+      "displayedNote": "Eusebius calls the Word a physician of souls and interprets afflictions as remedies. This is a partial image comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=315"
+    },
+    {
+      "id": "eusebius-lee-shepherd-physician",
+      "path": "content/jesus/early-excerpts/eusebius-lee-shepherd-physician.json",
+      "sections": "2.95",
+      "pdfPages": [
+        323
+      ],
+      "printedPages": "153",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "john-sheepfold-shepherd",
+        "synoptic-physician-sick"
+      ],
+      "notes": "Authorial shepherd and physician imagery; Eusebius attributes punishment to the Saviour. Its application differs from the Gospel passages.",
+      "sha256": "54b40475fcb5629d7dfb2207ff880fa4e632359fd9d8d8af70c640418469c0db",
+      "displayedNote": "Authorial shepherd and physician imagery; Eusebius attributes punishment to the Saviour. Its application differs from the Gospel passages. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=323"
+    },
+    {
+      "id": "eusebius-lee-vessel-fire",
+      "path": "content/jesus/early-excerpts/eusebius-lee-vessel-fire.json",
+      "sections": "3.57",
+      "pdfPages": [
+        362
+      ],
+      "printedPages": "192",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares a vessel surviving fire to the body and the defeat of death. This is his interpretation, not a Gospel parable.",
+      "sha256": "d5aa175a695d48e29a7ac01f1dca04134e1dd969bbc90cea0ad39b14d576285c",
+      "displayedNote": "Eusebius compares a vessel surviving fire to the body and the defeat of death. This is his interpretation, not a Gospel parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=362"
+    },
+    {
+      "id": "eusebius-lee-vineyard-isaiah",
+      "path": "content/jesus/early-excerpts/eusebius-lee-vineyard-isaiah.json",
+      "sections": "4.13",
+      "pdfPages": [
+        406
+      ],
+      "printedPages": "236",
+      "category": "Gospel reception and quotation",
+      "speaker": "Eusebius, quoting Isaiah in comparison with the Gospel",
+      "related": [
+        "wicked-tenants"
+      ],
+      "notes": "Eusebius explicitly compares the Gospel vineyard parable with Isaiah’s vineyard; the quoted words are attributed to the prophet, not a new saying of Jesus.",
+      "sha256": "afcab1f8b6ec15c2a07b5f95e5ad1a592f5d794fbc1c3a3352aabbeec95deab9",
+      "displayedNote": "Eusebius explicitly compares the Gospel vineyard parable with Isaiah’s vineyard; the quoted words are attributed to the prophet, not a new saying of Jesus. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=406"
+    },
+    {
+      "id": "eusebius-lee-vineyard-explanation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-vineyard-explanation.json",
+      "sections": "4.14",
+      "pdfPages": [
+        407
+      ],
+      "printedPages": "237",
+      "category": "Gospel reception and commentary",
+      "speaker": "Eusebius",
+      "related": [
+        "wicked-tenants"
+      ],
+      "notes": "A brief extract from Eusebius’s allegorical reading of the vineyard; his identification is interpretation, not a Gospel quotation.",
+      "sha256": "adea118c36c10159b48fe04205974aab1e0986bc111c4de155b2fede16d091d1",
+      "displayedNote": "A brief extract from Eusebius’s allegorical reading of the vineyard; his identification is interpretation, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=407"
+    },
+    {
+      "id": "eusebius-lee-wedding-feast",
+      "path": "content/jesus/early-excerpts/eusebius-lee-wedding-feast.json",
+      "sections": "4.15",
+      "pdfPages": [
+        409
+      ],
+      "printedPages": "239",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes the Gospel of Matthew, attributing the parable to Jesus",
+      "related": [
+        "wedding-banquet"
+      ],
+      "notes": "Matthew’s wedding-feast parable as quoted by Eusebius, through the gathering of the guests; the wedding garment portion is quoted later, at printed page 243.",
+      "sha256": "37d8e027fda7d1e631e8cce59eb27a8bdc6657be04621cade663a4d9fdb32465",
+      "displayedNote": "Matthew’s wedding-feast parable as quoted by Eusebius, through the gathering of the guests; the wedding garment portion is quoted later, at printed page 243. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=409"
+    },
+    {
+      "id": "eusebius-lee-marriage-feast-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-marriage-feast-interpretation.json",
+      "sections": "4.16",
+      "pdfPages": [
+        410
+      ],
+      "printedPages": "240",
+      "category": "Gospel reception and commentary",
+      "speaker": "Eusebius",
+      "related": [
+        "wedding-banquet"
+      ],
+      "notes": "Eusebius interprets Matthew’s wedding-feast parable; the bride is his interpretive image, not a person explicitly introduced in Matthew 22:1–14.",
+      "sha256": "4b8fa628e0ae2366bf43b0800def7326d84531ea19496066ffd8f5281db854bf",
+      "displayedNote": "Eusebius interprets Matthew’s wedding-feast parable; the bride is his interpretive image, not a person explicitly introduced in Matthew 22:1–14. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=410"
+    },
+    {
+      "id": "eusebius-lee-serpents-vipers",
+      "path": "content/jesus/early-excerpts/eusebius-lee-serpents-vipers.json",
+      "sections": "4.17",
+      "pdfPages": [
+        413
+      ],
+      "printedPages": "243",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes the Gospel of Matthew, attributing the words to Jesus",
+      "related": [
+        "synoptic-serpents-vipers"
+      ],
+      "notes": "Matthew 23:33–36 as quoted by Eusebius. This is a Gospel quotation and his surrounding polemic concerns Jewish people; it is not a new parable.",
+      "sha256": "31697a2c7299b5a29fdd22aaa2a0a68bd3925702ef37506c9d0bb8955128bfa0",
+      "displayedNote": "Matthew 23:33–36 as quoted by Eusebius. This is a Gospel quotation and his surrounding polemic concerns Jewish people; it is not a new parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=413"
+    },
+    {
+      "id": "eusebius-lee-hen-chickens",
+      "path": "content/jesus/early-excerpts/eusebius-lee-hen-chickens.json",
+      "sections": "4.18",
+      "pdfPages": [
+        415
+      ],
+      "printedPages": "245",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes Jesus’s lament over Jerusalem",
+      "related": [
+        "synoptic-hen-chicks"
+      ],
+      "notes": "Eusebius quotes the lament in Matthew 23:37–39 and Luke 13:34–35; his historical interpretation follows the quotation.",
+      "sha256": "8e52eb6cd42ef6a2171caa7cdea3e616ac54dc86782377e02d679036431fa50f",
+      "displayedNote": "Eusebius quotes the lament in Matthew 23:37–39 and Luke 13:34–35; his historical interpretation follows the quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=415"
+    },
+    {
+      "id": "eusebius-lee-grain-wheat",
+      "path": "content/jesus/early-excerpts/eusebius-lee-grain-wheat.json",
+      "sections": "4.25",
+      "pdfPages": [
+        431
+      ],
+      "printedPages": "261",
+      "category": "Gospel quotation and commentary",
+      "speaker": "Eusebius quotes Jesus in John and then comments",
+      "related": [
+        "john-grain-wheat"
+      ],
+      "notes": "Eusebius quotes John 12:23–24, then interprets the grain in the discussion that follows; he does not present a new story.",
+      "sha256": "daee5d7f46c0e1f5c0f73741ee132cda9c5a42280775e08d278d66bb278c77d4",
+      "displayedNote": "Eusebius quotes John 12:23–24, then interprets the grain in the discussion that follows; he does not present a new story. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=431"
+    },
+    {
+      "id": "eusebius-lee-family-persecution",
+      "path": "content/jesus/early-excerpts/eusebius-lee-family-persecution.json",
+      "sections": "4.28",
+      "pdfPages": [
+        435
+      ],
+      "printedPages": "265",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes the Gospel of Matthew",
+      "related": [
+        "divided-house"
+      ],
+      "notes": "Eusebius quotes Matthew 10:21–22 concerning persecution; it is distinct from the divided-house saying. The proposed comparison is thematic only.",
+      "sha256": "0703d6eff3f1911b2fff070a974dbfc77252f388cab44a225b17a0442c13697c",
+      "displayedNote": "Eusebius quotes Matthew 10:21–22 concerning persecution; it is distinct from the divided-house saying. The proposed comparison is thematic only. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=435"
+    },
+    {
+      "id": "eusebius-lee-net",
+      "path": "content/jesus/early-excerpts/eusebius-lee-net.json",
+      "sections": "4.29",
+      "pdfPages": [
+        436
+      ],
+      "printedPages": "266",
+      "category": "Gospel quotation and commentary",
+      "speaker": "Eusebius quotes Matthew and then interprets the net",
+      "related": [
+        "net"
+      ],
+      "notes": "Matthew 13:47–50 is followed by Eusebius’s interpretation of the net as doctrine and the sea as human life; distinguish his interpretation from Jesus’s quoted words.",
+      "sha256": "1f26c1e080386973811b0b5517e2644adced556f735921124b677ec4b3401c7b",
+      "displayedNote": "Matthew 13:47–50 is followed by Eusebius’s interpretation of the net as doctrine and the sea as human life; distinguish his interpretation from Jesus’s quoted words. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=436"
+    },
+    {
+      "id": "eusebius-lee-sower-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-sower-interpretation.json",
+      "sections": "4.33",
+      "pdfPages": [
+        444
+      ],
+      "printedPages": "274",
+      "category": "Gospel reception and commentary",
+      "speaker": "Eusebius",
+      "related": [
+        "sower"
+      ],
+      "notes": "The preceding page quotes the sower and its explanation; this selected passage is Eusebius’s own summary of the parable.",
+      "sha256": "7c6331ff81eb6212671584e00f54961330d2cc17e2e0942e77e7bab4db4bd885",
+      "displayedNote": "The preceding page quotes the sower and its explanation; this selected passage is Eusebius’s own summary of the parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=444"
+    },
+    {
+      "id": "eusebius-lee-weeds-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-weeds-interpretation.json",
+      "sections": "4.34",
+      "pdfPages": [
+        447
+      ],
+      "printedPages": "277",
+      "category": "Gospel reception and commentary",
+      "speaker": "Eusebius",
+      "related": [
+        "weeds-among-wheat"
+      ],
+      "notes": "Eusebius interprets the tares as teachings he calls heretical. The text is his interpretation of Matthew’s parable, not another account of Jesus telling it.",
+      "sha256": "d70737a84ce81437bdcc2292d00960a3b33b77ef84ab2fc0d155d74a01bf0770",
+      "displayedNote": "Eusebius interprets the tares as teachings he calls heretical. The text is his interpretation of Matthew’s parable, not another account of Jesus telling it. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=447"
+    },
+    {
+      "id": "eusebius-lee-fishers",
+      "path": "content/jesus/early-excerpts/eusebius-lee-fishers.json",
+      "sections": "5.46",
+      "pdfPages": [
+        502
+      ],
+      "printedPages": "332",
+      "category": "Gospel quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and then comments",
+      "related": [
+        "synoptic-fishers-people"
+      ],
+      "notes": "Eusebius cites the Gospel’s fishers of men saying, then describes the disciples as fishers of souls; his interpretation is distinct from the quotation.",
+      "sha256": "349fac5bdf3a1263055aa5e86ca2c4532b29b44092c7196e15bf8badaffd2ed4",
+      "displayedNote": "Eusebius cites the Gospel’s fishers of men saying, then describes the disciples as fishers of souls; his interpretation is distinct from the quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=502"
+    },
+    {
+      "id": "eusebius-lee-sower-quotation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-sower-quotation.json",
+      "sections": "4.33",
+      "pdfPages": [
+        443
+      ],
+      "printedPages": "273",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes Jesus’s sower parable from Matthew",
+      "related": [
+        "sower"
+      ],
+      "notes": "The Gospel quotation as preserved in Lee’s translation of Eusebius; the following selected block gives the explanation, and Eusebius’s own reading is a separate block.",
+      "sha256": "b36fa42aa5c970d9ba3c40dee42f8d014f927a0dc6142e34c359b7a5c65c886e",
+      "displayedNote": "The Gospel quotation as preserved in Lee’s translation of Eusebius; the following selected block gives the explanation, and Eusebius’s own reading is a separate block. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=443"
+    },
+    {
+      "id": "eusebius-lee-sower-explanation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-sower-explanation.json",
+      "sections": "4.33",
+      "pdfPages": [
+        443
+      ],
+      "printedPages": "273",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes the explanation attributed to Jesus",
+      "related": [
+        "sower"
+      ],
+      "notes": "The explanation as quoted by Eusebius follows his sower quotation; distinguish it from Eusebius’s own subsequent commentary.",
+      "sha256": "a3a1227c0316e1077b0aea633c510003d797421f91a06181061556421fa2de05",
+      "displayedNote": "The explanation as quoted by Eusebius follows his sower quotation; distinguish it from Eusebius’s own subsequent commentary. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=443"
+    },
+    {
+      "id": "eusebius-lee-weeds-quotation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-weeds-quotation.json",
+      "sections": "4.34",
+      "pdfPages": [
+        445,
+        446
+      ],
+      "printedPages": "275–276",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes Jesus’s parable from Matthew",
+      "related": [
+        "weeds-among-wheat"
+      ],
+      "notes": "The Gospel parable as quoted by Eusebius; its explanation and Eusebius’s later interpretation are separate selections.",
+      "sha256": "c804e994e0a44b6e75f661ad5ec9c4199b00f58f33f7892a1aad040a0206fac3",
+      "displayedNote": "The Gospel parable as quoted by Eusebius; its explanation and Eusebius’s later interpretation are separate selections. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=445"
+    },
+    {
+      "id": "eusebius-lee-weeds-explanation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-weeds-explanation.json",
+      "sections": "4.34",
+      "pdfPages": [
+        446
+      ],
+      "printedPages": "276",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes the disciples and Jesus’s explanation",
+      "related": [
+        "weeds-among-wheat"
+      ],
+      "notes": "The explanation quoted by Eusebius contains “Gehenna”; Lee’s footnote observes a difference from the Greek and Peschito. It is not Eusebius’s later commentary.",
+      "sha256": "ad6c84b69deb1e53042a547290f424f73aefaa0418ca2bacea64523f8fc674df",
+      "displayedNote": "The explanation quoted by Eusebius contains “Gehenna”; Lee’s footnote observes a difference from the Greek and Peschito. It is not Eusebius’s later commentary. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=446"
+    },
+    {
+      "id": "eusebius-lee-vineyard-quotation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-vineyard-quotation.json",
+      "sections": "4.13",
+      "pdfPages": [
+        405,
+        406
+      ],
+      "printedPages": "235–236",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes Jesus’s parable from Matthew",
+      "related": [
+        "wicked-tenants"
+      ],
+      "notes": "Matthew’s vineyard parable as quoted by Eusebius; the Isaiah comparison and his own interpretation are separate selections.",
+      "sha256": "15aaed4a2b1252c6ab6dd2bdd611d4e946963965f12f88b6afbaa7458787954f",
+      "displayedNote": "Matthew’s vineyard parable as quoted by Eusebius; the Isaiah comparison and his own interpretation are separate selections. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=405"
+    },
+    {
+      "id": "eusebius-lee-wedding-garment",
+      "path": "content/jesus/early-excerpts/eusebius-lee-wedding-garment.json",
+      "sections": "4.16",
+      "pdfPages": [
+        413
+      ],
+      "printedPages": "243",
+      "category": "Gospel quotation",
+      "speaker": "Eusebius quotes Jesus’s parable from Matthew",
+      "related": [
+        "wedding-banquet"
+      ],
+      "notes": "The wedding-garment conclusion, quoted after Eusebius’s own discussion of the feast; this is a later portion of the Gospel parable, not a separate story.",
+      "sha256": "91db492e6dc67fc9aa8e8aa51a0b061ea73e5bb871273da2ad5382a87f0645b0",
+      "displayedNote": "The wedding-garment conclusion, quoted after Eusebius’s own discussion of the feast; this is a later portion of the Gospel parable, not a separate story. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=413"
+    },
+    {
+      "id": "eusebius-lee-audit-lyre-warrior-city",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-lyre-warrior-city.json",
+      "sections": "1.2",
+      "pdfPages": [
+        174
+      ],
+      "printedPages": "4",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "8d3e460d331d7b5d673db0b04c087df5cdc10caa2df7342c7fd1750544553051",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=174"
+    },
+    {
+      "id": "eusebius-lee-audit-philosopher-mind",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-philosopher-mind.json",
+      "sections": "1.3",
+      "pdfPages": [
+        174,
+        175
+      ],
+      "printedPages": "4–5",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "2b050c7eb0d12be714ba7ca542a88ebef74d7d10e7fbe5245a589d2b9d91ed9e",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=174"
+    },
+    {
+      "id": "eusebius-lee-audit-watering-husbandman",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-watering-husbandman.json",
+      "sections": "1.18",
+      "pdfPages": [
+        180
+      ],
+      "printedPages": "10",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "2400a2bd5e8013152c5f947c4e8954ddbbf3a0b9d808f5301d53f4672e082588",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=180"
+    },
+    {
+      "id": "eusebius-lee-audit-fountain-mind-messenger",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-fountain-mind-messenger.json",
+      "sections": "1.23",
+      "pdfPages": [
+        182,
+        183
+      ],
+      "printedPages": "12–13",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "667268fa6345138497acdf78745bc99b30b3ae8ecf9ce069615142523b0e3e0b",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=182"
+    },
+    {
+      "id": "eusebius-lee-audit-ship-soul-body",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-ship-soul-body.json",
+      "sections": "1.25",
+      "pdfPages": [
+        184,
+        185
+      ],
+      "printedPages": "14–15",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares the universe to a ship guided by the Word. The following soul-and-body sentence is omitted because the scan contains an inline Syriac parenthetical that needs transcription.",
+      "sha256": "4a9bc0867497e7a5ca5311e77ffc4a875ba1fb457cdd902519b089de71d2b975",
+      "displayedNote": "Eusebius compares the universe to a ship guided by the Word. The following soul-and-body sentence is omitted because the scan contains an inline Syriac parenthetical that needs transcription. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=184"
+    },
+    {
+      "id": "eusebius-lee-audit-body-divided",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-body-divided.json",
+      "sections": "1.26",
+      "pdfPages": [
+        186,
+        187
+      ],
+      "printedPages": "16–17",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "9801add942b670577e3cbb5bbf2520844a8685795866574c144808b84de9f4b7",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=186"
+    },
+    {
+      "id": "eusebius-lee-audit-lyre-world",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-lyre-world.json",
+      "sections": "1.28",
+      "pdfPages": [
+        188,
+        189
+      ],
+      "printedPages": "18–19",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "5657e3a1698c011276f60a139f63f6089d32d833a62b7a1a3aa2deb142b94c0d",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=188"
+    },
+    {
+      "id": "eusebius-lee-audit-body-one-soul",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-body-one-soul.json",
+      "sections": "1.29",
+      "pdfPages": [
+        189
+      ],
+      "printedPages": "19",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "aad6e059f48481df11ecebf79c664ce47ef28d866d303d8be711b10cc4a27e68",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=189"
+    },
+    {
+      "id": "eusebius-lee-audit-one-sun-word",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-one-sun-word.json",
+      "sections": "1.30",
+      "pdfPages": [
+        189,
+        190
+      ],
+      "printedPages": "19–20",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "081e6c194afcadcc94b28494a2852c7a773450a0948ec91a9ccf72d01c419248",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=189"
+    },
+    {
+      "id": "eusebius-lee-audit-one-modeller",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-one-modeller.json",
+      "sections": "1.31–32",
+      "pdfPages": [
+        192,
+        193
+      ],
+      "printedPages": "22–23",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "b50e17ca2a641cb95a58495e0509958388bad1d0b245b94d1a3e9b169f861751",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=192"
+    },
+    {
+      "id": "eusebius-lee-audit-sun-fire-many-effects",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-sun-fire-many-effects.json",
+      "sections": "1.33",
+      "pdfPages": [
+        193
+      ],
+      "printedPages": "23",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "bf945f792fe4ceb76cd65c6105de4e1c77e2ab9e897c780938898e41bec71e22",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=193"
+    },
+    {
+      "id": "eusebius-lee-audit-word-world-lyre",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-word-world-lyre.json",
+      "sections": "1.34",
+      "pdfPages": [
+        194
+      ],
+      "printedPages": "24",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "835fbecc9267a1544fbe9a54c05cbfd690c7e305465e42bb22fa23b966333b16",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=194"
+    },
+    {
+      "id": "eusebius-lee-audit-imperial-city-heavens",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-imperial-city-heavens.json",
+      "sections": "1.37",
+      "pdfPages": [
+        196,
+        197,
+        198
+      ],
+      "printedPages": "26–28",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Continues Eusebius’s imperial-city comparison after the existing opening; the passage’s ranks and cosmology are his own.",
+      "sha256": "ead97e3b4a96c7596bc436e1aabea4fb699ae77a3dfe52df9624a779c34e74fc",
+      "displayedNote": "Continues Eusebius’s imperial-city comparison after the existing opening; the passage’s ranks and cosmology are his own. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=196"
+    },
+    {
+      "id": "eusebius-lee-audit-imperial-city-ranks",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-imperial-city-ranks.json",
+      "sections": "1.37",
+      "pdfPages": [
+        198,
+        199
+      ],
+      "printedPages": "28–29",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius extends his imperial-city analogy through human ranks and government; the opening is already displayed separately.",
+      "sha256": "59807d7e145ff76181c54fa47d07efe8c277308d63e7e62cc218ea9713bd10f7",
+      "displayedNote": "Eusebius extends his imperial-city analogy through human ranks and government; the opening is already displayed separately. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=198"
+    },
+    {
+      "id": "eusebius-lee-audit-imperial-city-application",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-imperial-city-application.json",
+      "sections": "1.38",
+      "pdfPages": [
+        200
+      ],
+      "printedPages": "30",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius applies the imperial-city comparison to the Word and its distribution of places; the final quotation is introduced as divine words.",
+      "sha256": "2d5aa607c701c54618f0f61506a4647a64b29273daba8884243f82e14ef69af5",
+      "displayedNote": "Eusebius applies the imperial-city comparison to the Word and its distribution of places; the final quotation is introduced as divine words. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=200"
+    },
+    {
+      "id": "eusebius-lee-audit-heart-tablets",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-heart-tablets.json",
+      "sections": "1.39",
+      "pdfPages": [
+        200,
+        201
+      ],
+      "printedPages": "30–31",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "db2a3ef1a45da97b0fa53c010e8886f7fe55c5d9368170abf19f2658c2c5640f",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=200"
+    },
+    {
+      "id": "eusebius-lee-audit-earth-rational-seed",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-earth-rational-seed.json",
+      "sections": "1.42",
+      "pdfPages": [
+        203,
+        204
+      ],
+      "printedPages": "33–34",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius introduces the cultivation image developed in 1.43; this is his philosophical analogy.",
+      "sha256": "16696e58154316c46f934e58f9237565271ba54a4485d5ff92d282b27563a79e",
+      "displayedNote": "Eusebius introduces the cultivation image developed in 1.43; this is his philosophical analogy. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=203"
+    },
+    {
+      "id": "eusebius-lee-audit-sower-harvest-soul",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-sower-harvest-soul.json",
+      "sections": "1.43",
+      "pdfPages": [
+        205
+      ],
+      "printedPages": "35",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "sower"
+      ],
+      "notes": "Eusebius’s seed, growth and harvest image concerns rational life and death. Its comparison to the Gospel sower is partial and thematic; this is not a retelling.",
+      "sha256": "dea9bad7dab3b35959e92ff19dbbac58bbd1fff70b01ad742dd1680618bb1c68",
+      "displayedNote": "Eusebius’s seed, growth and harvest image concerns rational life and death. Its comparison to the Gospel sower is partial and thematic; this is not a retelling. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=205"
+    },
+    {
+      "id": "eusebius-lee-audit-birth-nurture",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-birth-nurture.json",
+      "sections": "1.70",
+      "pdfPages": [
+        222,
+        223
+      ],
+      "printedPages": "52–53",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius extends his existing birth comparison into nurture and education; this is his analogy, not a quotation of John 3.",
+      "sha256": "5124a2bbf053109991d0f5b9c00355b7f2b5a1d107584e7af453b42f096efecb",
+      "displayedNote": "Eusebius extends his existing birth comparison into nurture and education; this is his analogy, not a quotation of John 3. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=222"
+    },
+    {
+      "id": "eusebius-lee-audit-difficult-birth",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-difficult-birth.json",
+      "sections": "1.71",
+      "pdfPages": [
+        223
+      ],
+      "printedPages": "53",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius describes a difficult birth as part of his extended comparison of bodily life and death.",
+      "sha256": "25ee190b8455f849429ef8d99442cb0cdcc3c2e763fd4847493366f2134e5745",
+      "displayedNote": "Eusebius describes a difficult birth as part of his extended comparison of bodily life and death. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=223"
+    },
+    {
+      "id": "eusebius-lee-audit-birth-two-outcomes",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-birth-two-outcomes.json",
+      "sections": "1.72",
+      "pdfPages": [
+        223,
+        224,
+        225,
+        226
+      ],
+      "printedPages": "53–56",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius applies his birth analogy to contrasting outcomes after death. These are his theological claims.",
+      "sha256": "19c4269a7509d41d659f363b3409d6c8ed6df1dd993dfa43e9d8d4886a625a6e",
+      "displayedNote": "Eusebius applies his birth analogy to contrasting outcomes after death. These are his theological claims. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=223"
+    },
+    {
+      "id": "eusebius-lee-audit-seed-cultivated-soul",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-seed-cultivated-soul.json",
+      "sections": "1.73",
+      "pdfPages": [
+        226,
+        227
+      ],
+      "printedPages": "56–57",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius develops the analogy of a rational seed planted in better ground; this is his own comparison.",
+      "sha256": "c91f3f01c4858aba281079fff94355ced8c0f53d1d1767e5a2695e193b8864fb",
+      "displayedNote": "Eusebius develops the analogy of a rational seed planted in better ground; this is his own comparison. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=226"
+    },
+    {
+      "id": "eusebius-lee-audit-infant-adult-soul",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-infant-adult-soul.json",
+      "sections": "1.74",
+      "pdfPages": [
+        227,
+        228
+      ],
+      "printedPages": "57–58",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "734c4eb29a38d98e399f7f0b31941c26d5d7c3fca49da01bd278dd34045c8bf0",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=227"
+    },
+    {
+      "id": "eusebius-lee-audit-body-wild-beast",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-body-wild-beast.json",
+      "sections": "1.75",
+      "pdfPages": [
+        230
+      ],
+      "printedPages": "60",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "c62d120f5ff2cac9d3380a3bff33a0d85ae9bfd7d543b2b5ce37e2ad9fb81f6b",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=230"
+    },
+    {
+      "id": "eusebius-lee-audit-seed-future-fruit",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-seed-future-fruit.json",
+      "sections": "1.77",
+      "pdfPages": [
+        232,
+        233
+      ],
+      "printedPages": "62–63",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "john-grain-wheat"
+      ],
+      "notes": "Eusebius continues the seed comparison after the passage already displayed; only a partial thematic comparison with the grain of wheat.",
+      "sha256": "bd2adb9d0d1ee35f6b0cdd08a7c04fc8342a425723c4661e4dcfeb42752dd49e",
+      "displayedNote": "Eusebius continues the seed comparison after the passage already displayed; only a partial thematic comparison with the grain of wheat. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=232"
+    },
+    {
+      "id": "eusebius-lee-audit-wickedness-nets",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-wickedness-nets.json",
+      "sections": "1.78",
+      "pdfPages": [
+        234,
+        235
+      ],
+      "printedPages": "64–65",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius depicts wickedness and demons setting snares; the concluding scriptural quotation is introduced by him.",
+      "sha256": "e0852824cf301b78bc25a5ded3d81d8d7a837c364338906cf9d1720c3fc451c2",
+      "displayedNote": "Eusebius depicts wickedness and demons setting snares; the concluding scriptural quotation is introduced by him. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=234"
+    },
+    {
+      "id": "eusebius-lee-audit-world-storm",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-world-storm.json",
+      "sections": "2.18",
+      "pdfPages": [
+        248,
+        249
+      ],
+      "printedPages": "78–79",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius’s storm image is part of his polemical account of the world.",
+      "sha256": "242918ba9dfaf2e4eb4600fff0eb31cb29acd2dd0b14478997ca2e4745f569e1",
+      "displayedNote": "Eusebius’s storm image is part of his polemical account of the world. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=248"
+    },
+    {
+      "id": "eusebius-lee-audit-plato-shipmaster",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-plato-shipmaster.json",
+      "sections": "2.26",
+      "pdfPages": [
+        261
+      ],
+      "printedPages": "91",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius reports and interprets Plato’s thought; the shipmaster comparison is presented in Eusebius’s own voice.",
+      "sha256": "2de1667e3eed78ad1eb1f8d968541e36c9c9fedd97a802872e63ab587a4a0823",
+      "displayedNote": "Eusebius reports and interprets Plato’s thought; the shipmaster comparison is presented in Eusebius’s own voice. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=261"
+    },
+    {
+      "id": "eusebius-lee-audit-plato-storm",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-plato-storm.json",
+      "sections": "2.36",
+      "pdfPages": [
+        269
+      ],
+      "printedPages": "99",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quoting a philosophical speaker attributed to Plato",
+      "related": [],
+      "notes": "Eusebius presents the passage as Plato’s; the storm may be literal or figurative. The attribution has not been independently checked.",
+      "sha256": "d605723b6b97b90f8b458d5fd3f81ca7411764a8816472b9bde98706dd23ab59",
+      "displayedNote": "Eusebius presents the passage as Plato’s; the storm may be literal or figurative. The attribution has not been independently checked. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=269"
+    },
+    {
+      "id": "eusebius-lee-audit-plato-chariot",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-plato-chariot.json",
+      "sections": "2.39",
+      "pdfPages": [
+        270
+      ],
+      "printedPages": "100",
+      "category": "quotation and commentary",
+      "speaker": "Plato, as quoted by Eusebius",
+      "related": [],
+      "notes": "Eusebius presents this image as a Platonic quotation; the attribution has not been independently checked.",
+      "sha256": "dd15e2f3e3868b28e9098e9caba327d2e5d8512a486d0d17442c4655ef978d94",
+      "displayedNote": "Eusebius presents this image as a Platonic quotation; the attribution has not been independently checked. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=270"
+    },
+    {
+      "id": "eusebius-lee-audit-maker-made",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-maker-made.json",
+      "sections": "2.46",
+      "pdfPages": [
+        278
+      ],
+      "printedPages": "108",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "9c47243dfdaff0712ebf0c66ebd1db0416bfc76d2fbd2953dad326db4a5fc8ef",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=278"
+    },
+    {
+      "id": "eusebius-lee-audit-philosophers-war-giants",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-philosophers-war-giants.json",
+      "sections": "2.47–48",
+      "pdfPages": [
+        278,
+        279
+      ],
+      "printedPages": "108–109",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius, an unnamed poet, and Plato as quoted by Eusebius",
+      "related": [],
+      "notes": "Eusebius compares philosophical disagreement to battle, cites an unnamed poet, and introduces a comparison attributed to Plato; the quoted voices are distinct.",
+      "sha256": "fbb8061746eaa2502db53ea7ae8c271ce968efa6b8cd1cf9875a94e4b2314b72",
+      "displayedNote": "Eusebius compares philosophical disagreement to battle, cites an unnamed poet, and introduces a comparison attributed to Plato; the quoted voices are distinct. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=278"
+    },
+    {
+      "id": "eusebius-lee-audit-philosophers-war",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-philosophers-war.json",
+      "sections": "2.49",
+      "pdfPages": [
+        280
+      ],
+      "printedPages": "110",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "dc0e400d52710b03ae8f0d957dae14f46f89c0d857607b003de4f6b06429c1a0",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=280"
+    },
+    {
+      "id": "eusebius-lee-audit-physicians-consulted",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-physicians-consulted.json",
+      "sections": "2.50",
+      "pdfPages": [
+        282
+      ],
+      "printedPages": "112",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius imagines philosophers consulting their gods as physicians; his argument is not a Gospel quotation.",
+      "sha256": "0fd3a3faa9b6210ed84e9240b4b8f2658ee9cf39c2423d993881d9069142fc1f",
+      "displayedNote": "Eusebius imagines philosophers consulting their gods as physicians; his argument is not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=282"
+    },
+    {
+      "id": "eusebius-lee-audit-soul-healing",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-soul-healing.json",
+      "sections": "2.50–51",
+      "pdfPages": [
+        284,
+        285
+      ],
+      "printedPages": "114–115",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius contrasts bodily concerns with healing the soul in his critique of the gods; this is not a Gospel quotation.",
+      "sha256": "daba958c3ddfb3a3051ed0cbfb33ea6446e8bb10a7331b572bf092e83bf9497b",
+      "displayedNote": "Eusebius contrasts bodily concerns with healing the soul in his critique of the gods; this is not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=284"
+    },
+    {
+      "id": "eusebius-lee-audit-sun-clay",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-sun-clay.json",
+      "sections": "2.52",
+      "pdfPages": [
+        287
+      ],
+      "printedPages": "117",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius uses this comparison in his own theological argument.",
+      "sha256": "d4bf602305c5c182f8dd44f3dbad4d1cae328729f57f12afe789feaada55c63a",
+      "displayedNote": "Eusebius uses this comparison in his own theological argument. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=287"
+    },
+    {
+      "id": "eusebius-lee-audit-pythian-oracle",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-pythian-oracle.json",
+      "sections": "2.69",
+      "pdfPages": [
+        299,
+        300
+      ],
+      "printedPages": "129–130",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius introduces and quotes the Pythian oracle",
+      "related": [],
+      "notes": "Eusebius quotes the oracle and describes Croesus’s response; its reported attribution is not independently verified.",
+      "sha256": "9c7ec557d1edbc60cc8cb4397f609bda297380e2d2ee4bd377fce4ce300079cd",
+      "displayedNote": "Eusebius quotes the oracle and describes Croesus’s response; its reported attribution is not independently verified. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=299"
+    },
+    {
+      "id": "eusebius-lee-audit-tree-fruit",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-tree-fruit.json",
+      "sections": "2.70",
+      "pdfPages": [
+        302
+      ],
+      "printedPages": "132",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius, quoting a scriptural saying",
+      "related": [
+        "synoptic-trees-fruit"
+      ],
+      "notes": "Eusebius quotes a recognizable tree-and-fruit saying and applies it to the gods. The comparison with the Gospel saying is partial; the local passage supplies no exact citation.",
+      "sha256": "e39507f99a9335994beb8936f3567774743575f7785be8d8457226f7131f1a8e",
+      "displayedNote": "Eusebius quotes a recognizable tree-and-fruit saying and applies it to the gods. The comparison with the Gospel saying is partial; the local passage supplies no exact citation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=302"
+    },
+    {
+      "id": "eusebius-lee-audit-storm-peace",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-storm-peace.json",
+      "sections": "2.76",
+      "pdfPages": [
+        304
+      ],
+      "printedPages": "134",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius’s storm-and-helm image accompanies his sweeping historical claim of peace; that claim is his own and is not independently established.",
+      "sha256": "65e77a2edab4d9646297b4573d319ee1fa15f38c179d05b54ca3aaba2c9bd0c5",
+      "displayedNote": "Eusebius’s storm-and-helm image accompanies his sweeping historical claim of peace; that claim is his own and is not independently established. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=304"
+    },
+    {
+      "id": "eusebius-lee-audit-shepherd-lost-sheep",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-shepherd-lost-sheep.json",
+      "sections": "2.83",
+      "pdfPages": [
+        313,
+        314
+      ],
+      "printedPages": "143–144",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "lost-sheep"
+      ],
+      "notes": "Eusebius develops the lost-sheep motif alongside a captain and a general. It is an authorial comparison, not an explicitly quoted Gospel account.",
+      "sha256": "8e2cdd255b6395f2a414b4093289d0e82398aa1a42aaa42cac9c03c3494dbe67",
+      "displayedNote": "Eusebius develops the lost-sheep motif alongside a captain and a general. It is an authorial comparison, not an explicitly quoted Gospel account. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=313"
+    },
+    {
+      "id": "eusebius-lee-audit-shepherd-physician-care",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-shepherd-physician-care.json",
+      "sections": "2.84",
+      "pdfPages": [
+        314,
+        315
+      ],
+      "printedPages": "144–145",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-physician-sick"
+      ],
+      "notes": "Eusebius’s blame of a neglectful shepherd or physician is his own argument; the Gospel physician comparison is partial.",
+      "sha256": "7a6a1023fdf1fca6d2684de4fddfab960f44f30f1bcfdc8a9afd87648de999f0",
+      "displayedNote": "Eusebius’s blame of a neglectful shepherd or physician is his own argument; the Gospel physician comparison is partial. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=314"
+    },
+    {
+      "id": "eusebius-lee-audit-discipline-calamities",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-discipline-calamities.json",
+      "sections": "2.86",
+      "pdfPages": [
+        316
+      ],
+      "printedPages": "146",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Continuation after the existing physician excerpt. Eusebius attributes calamities and destruction of temples to divine discipline; these are his claims.",
+      "sha256": "ca505fe6e104d7f8cc3fcc75d58be30977b830807361633bc848c81c5ba89403",
+      "displayedNote": "Continuation after the existing physician excerpt. Eusebius attributes calamities and destruction of temples to divine discipline; these are his claims. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=316"
+    },
+    {
+      "id": "eusebius-lee-audit-discipline-bridle",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-discipline-bridle.json",
+      "sections": "2.86",
+      "pdfPages": [
+        316,
+        317
+      ],
+      "printedPages": "146–147",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius interprets calamities and destruction as divine discipline, using arrows and a bridle; these are his claims.",
+      "sha256": "55ee2753b8bac75adea553a541593ec2ce46daec0fefb93ac8a5dc27a41b9fef",
+      "displayedNote": "Eusebius interprets calamities and destruction as divine discipline, using arrows and a bridle; these are his claims. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=316"
+    },
+    {
+      "id": "eusebius-lee-audit-seed-herbs-fountain",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-seed-herbs-fountain.json",
+      "sections": "2.93",
+      "pdfPages": [
+        321
+      ],
+      "printedPages": "151",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius describes divine teaching through seed, medicine and fountain imagery; this is his own extended analogy.",
+      "sha256": "152e0f06b2920b9430f4bfc812485aeb339ea55c283e473d4ae5cc6f65a87adc",
+      "displayedNote": "Eusebius describes divine teaching through seed, medicine and fountain imagery; this is his own extended analogy. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=321"
+    },
+    {
+      "id": "eusebius-lee-audit-punishment-rains",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-punishment-rains.json",
+      "sections": "2.95",
+      "pdfPages": [
+        323
+      ],
+      "printedPages": "153",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Continuation of the existing shepherd-and-physician passage; Eusebius’s attribution of calamities to divine punishment is his own claim.",
+      "sha256": "90d1f8b9f06f145ccdfdb3c596bfd1635fc703d36596a66ced46f51d81324241",
+      "displayedNote": "Continuation of the existing shepherd-and-physician passage; Eusebius’s attribution of calamities to divine punishment is his own claim. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=323"
+    },
+    {
+      "id": "eusebius-lee-audit-father-gifts-seed",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-father-gifts-seed.json",
+      "sections": "2.96",
+      "pdfPages": [
+        323
+      ],
+      "printedPages": "153",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius’s paternal and sowing imagery describes divine provision and instruction; this is not a Gospel quotation.",
+      "sha256": "50a55a756cadddb3dcdd042a2b81b3276cbe049c5fb831032ba642e02ec7b7f2",
+      "displayedNote": "Eusebius’s paternal and sowing imagery describes divine provision and instruction; this is not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=323"
+    },
+    {
+      "id": "eusebius-lee-audit-war-engine",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-war-engine.json",
+      "sections": "3.1",
+      "pdfPages": [
+        325
+      ],
+      "printedPages": "155",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "7ca5d5dd70c860480fe1ac08e2ebfd1025fc184f40a9181ab02f92763d043241",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=325"
+    },
+    {
+      "id": "eusebius-lee-audit-stream-and-family",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-stream-and-family.json",
+      "sections": "3.2",
+      "pdfPages": [
+        326,
+        327
+      ],
+      "printedPages": "156–157",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "3b17f7f5619a9b6d1f0f6cc07429348bbb676020bc4e0af0560e60b4a586fa91",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=326"
+    },
+    {
+      "id": "eusebius-lee-audit-world-family",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-world-family.json",
+      "sections": "3.2",
+      "pdfPages": [
+        327
+      ],
+      "printedPages": "157",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "17139b6a127d9603ace1e6fdb1d35ff1f0d1c67f0acc0fd04eeab898a4781aa1",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=327"
+    },
+    {
+      "id": "eusebius-lee-audit-swords-ploughshares",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-swords-ploughshares.json",
+      "sections": "3.2",
+      "pdfPages": [
+        327,
+        328
+      ],
+      "printedPages": "157–158",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes the prophets",
+      "related": [],
+      "notes": "Eusebius quotes prophetic passages about peace, including swords made into ploughshares; the speakers are the prophets as presented by Eusebius.",
+      "sha256": "30465945c62e41178c744bdfca910202dd5fce0095163e5c45be20967daeaf69",
+      "displayedNote": "Eusebius quotes prophetic passages about peace, including swords made into ploughshares; the speakers are the prophets as presented by Eusebius. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=327"
+    },
+    {
+      "id": "eusebius-lee-audit-sun-rational-light",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-sun-rational-light.json",
+      "sections": "3.11",
+      "pdfPages": [
+        331
+      ],
+      "printedPages": "161",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "8a1615e66443a88180bbb92284f6ab37a55a110657831ef50f415a6f9fe852d0",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=331"
+    },
+    {
+      "id": "eusebius-lee-audit-flock-evil-beasts",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-flock-evil-beasts.json",
+      "sections": "3.13",
+      "pdfPages": [
+        331,
+        332
+      ],
+      "printedPages": "161–162",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "john-sheepfold-shepherd"
+      ],
+      "notes": "Eusebius compares demons to beasts driven from a flock. John’s shepherd discourse has a different setting.",
+      "sha256": "cc82aae9c36d31e5f30d532da5107b5e2dc81efab225e349584f8e7d02582ac5",
+      "displayedNote": "Eusebius compares demons to beasts driven from a flock. John’s shepherd discourse has a different setting. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=331"
+    },
+    {
+      "id": "eusebius-lee-audit-food-of-soul",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-food-of-soul.json",
+      "sections": "3.22",
+      "pdfPages": [
+        338
+      ],
+      "printedPages": "168",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "john-bread-of-life"
+      ],
+      "notes": "Eusebius compares reading with nourishment. This is a thematic comparison with John’s bread discourse.",
+      "sha256": "03b821abc807893fd80391f346318bda76cdcf4ade6ef03b513935c0f6784882",
+      "displayedNote": "Eusebius compares reading with nourishment. This is a thematic comparison with John’s bread discourse. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=338"
+    },
+    {
+      "id": "eusebius-lee-audit-eye-and-yoke",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-eye-and-yoke.json",
+      "sections": "3.23",
+      "pdfPages": [
+        338,
+        339
+      ],
+      "printedPages": "168–169",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-yoke"
+      ],
+      "notes": "Eusebius uses the images of an eye and a yoke; the Gospel yoke saying has a different setting.",
+      "sha256": "ab377a94529cdf7c511b18046199c84621e1c3d8b131517ce437d56922f5fa96",
+      "displayedNote": "Eusebius uses the images of an eye and a yoke; the Gospel yoke saying has a different setting. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=338"
+    },
+    {
+      "id": "eusebius-lee-audit-mind-rock-fruit",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-mind-rock-fruit.json",
+      "sections": "3.24",
+      "pdfPages": [
+        339
+      ],
+      "printedPages": "169",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "3937f54fff4409e21fa932fc43ef1a5e04bc04175cc2629447432e6fa43c2c73",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=339"
+    },
+    {
+      "id": "eusebius-lee-audit-church-rock-3",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-church-rock-3.json",
+      "sections": "3.27",
+      "pdfPages": [
+        339,
+        340
+      ],
+      "printedPages": "169–170",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus",
+      "related": [
+        "synoptic-peter-rock-keys"
+      ],
+      "notes": "Eusebius quotes the rock and church saying from Matthew in a discussion of the church.",
+      "sha256": "71d6007d1fc50a8432d943e46539b724944b1644c5e53c0f64acf9f5837d2ed8",
+      "displayedNote": "Eusebius quotes the rock and church saying from Matthew in a discussion of the church. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=339"
+    },
+    {
+      "id": "eusebius-lee-audit-fishers-3",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-fishers-3.json",
+      "sections": "3.28",
+      "pdfPages": [
+        340
+      ],
+      "printedPages": "170",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "synoptic-fishers-people"
+      ],
+      "notes": "This is another occurrence of the fishers saying; Eusebius discusses the disciples’ work.",
+      "sha256": "ff3f706fc2d15b26c7f723f07380c0d555b547dcbcdc78b4fea3dd167468cd72",
+      "displayedNote": "This is another occurrence of the fishers saying; Eusebius discusses the disciples’ work. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=340"
+    },
+    {
+      "id": "eusebius-lee-audit-armor-righteousness",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-armor-righteousness.json",
+      "sections": "3.30",
+      "pdfPages": [
+        340,
+        341
+      ],
+      "printedPages": "170–171",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "cf9dc74a092aaab6538159b77327e6f8f2bec5d063edd782190a8b6ed7fee784",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=340"
+    },
+    {
+      "id": "eusebius-lee-audit-word-sown",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-word-sown.json",
+      "sections": "3.33",
+      "pdfPages": [
+        341
+      ],
+      "printedPages": "171",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "sower"
+      ],
+      "notes": "Eusebius uses sowing as an image for the word. This is not another telling of Jesus’s sower parable.",
+      "sha256": "9d30981a6440df9acd322e6fd3357000a65eb291fdb64307cc6ead62fe8c881d",
+      "displayedNote": "Eusebius uses sowing as an image for the word. This is not another telling of Jesus’s sower parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=341"
+    },
+    {
+      "id": "eusebius-lee-audit-sun-doctrine",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-sun-doctrine.json",
+      "sections": "3.34",
+      "pdfPages": [
+        342
+      ],
+      "printedPages": "172",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "416aeb1b0de057c7b80b5d13af0b428edeee9de617afabb77f45a5ae75c7cb41",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=342"
+    },
+    {
+      "id": "eusebius-lee-audit-king-interpreter",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-king-interpreter.json",
+      "sections": "3.39",
+      "pdfPages": [
+        345,
+        346
+      ],
+      "printedPages": "175–176",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "b644e59dc6f6299dd8402eebd389bffc44b4ed1898cb07819ba7fad9e51f0946",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=345"
+    },
+    {
+      "id": "eusebius-lee-audit-sun-rays",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-sun-rays.json",
+      "sections": "3.39",
+      "pdfPages": [
+        347
+      ],
+      "printedPages": "177",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "d81c984358600e3797edf88820def5c28458019d10da4f3d655d579b925ac65c",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=347"
+    },
+    {
+      "id": "eusebius-lee-audit-musician-lyre",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-musician-lyre.json",
+      "sections": "3.39",
+      "pdfPages": [
+        347,
+        348
+      ],
+      "printedPages": "177–178",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares the Word’s use of a human body to a musician playing an instrument and discusses the story of Orpheus.",
+      "sha256": "03a7db2724d470eb15914bd17ad04f1d32623ce61e40e78e2110eeaddba785d0",
+      "displayedNote": "Eusebius compares the Word’s use of a human body to a musician playing an instrument and discusses the story of Orpheus. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=347"
+    },
+    {
+      "id": "eusebius-lee-audit-lyre-sunlight",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-lyre-sunlight.json",
+      "sections": "3.39",
+      "pdfPages": [
+        349,
+        350
+      ],
+      "printedPages": "179–180",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius extends his lyre and sunlight comparisons to suffering and impurity.",
+      "sha256": "ce3ffce443aef5d511c79e17f0ae0433f80adcb8a6c41c9c10229610ebd61bdd",
+      "displayedNote": "Eusebius extends his lyre and sunlight comparisons to suffering and impurity. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=349"
+    },
+    {
+      "id": "eusebius-lee-audit-seed-tablets",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-seed-tablets.json",
+      "sections": "3.40",
+      "pdfPages": [
+        351
+      ],
+      "printedPages": "181",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "sower"
+      ],
+      "notes": "Eusebius compares teaching to scattered seed and words written on tablets. This is not a quotation of the sower parable.",
+      "sha256": "99d783a79358fafbc05cd8a4ebc48e10201cb2189d9b444044be284d1a0c59d7",
+      "displayedNote": "Eusebius compares teaching to scattered seed and words written on tablets. This is not a quotation of the sower parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=351"
+    },
+    {
+      "id": "eusebius-lee-audit-healing-souls-bodies",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-healing-souls-bodies.json",
+      "sections": "3.40",
+      "pdfPages": [
+        352
+      ],
+      "printedPages": "182",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-physician-sick"
+      ],
+      "notes": "Eusebius calls Jesus a physician of souls and bodies. The comparison with Jesus’s physician saying is thematic.",
+      "sha256": "425c43c377fea97c11928c21b3fd3a69c9e786b3833989bb612dbc0d20bc4305",
+      "displayedNote": "Eusebius calls Jesus a physician of souls and bodies. The comparison with Jesus’s physician saying is thematic. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=352"
+    },
+    {
+      "id": "eusebius-lee-audit-good-shepherd-wheat-3",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-good-shepherd-wheat-3.json",
+      "sections": "3.43",
+      "pdfPages": [
+        354,
+        355
+      ],
+      "printedPages": "184–185",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and then comments",
+      "related": [
+        "john-sheepfold-shepherd",
+        "john-grain-wheat"
+      ],
+      "notes": "Eusebius quotes Jesus’s shepherd and grain-of-wheat sayings in connection with his death.",
+      "sha256": "f1edfb9311c2e7f80773f1420fdb996c79080a82f6b5e51e2db5e8747c02a3ee",
+      "displayedNote": "Eusebius quotes Jesus’s shepherd and grain-of-wheat sayings in connection with his death. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=354"
+    },
+    {
+      "id": "eusebius-lee-audit-wilderness-wild-beasts",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-wilderness-wild-beasts.json",
+      "sections": "3.55",
+      "pdfPages": [
+        358,
+        359,
+        360
+      ],
+      "printedPages": "188–190",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius reads the wilderness beasts and the animals in the psalm as figures for demons. The psalm quotation and Gospel account are distinct.",
+      "sha256": "9f9be8ea0f55ec21e0c90122a7a665e6f65505b7f784ddd751ddf64b994a5ab6",
+      "displayedNote": "Eusebius reads the wilderness beasts and the animals in the psalm as figures for demons. The psalm quotation and Gospel account are distinct. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=358"
+    },
+    {
+      "id": "eusebius-lee-audit-strong-man",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-strong-man.json",
+      "sections": "3.57",
+      "pdfPages": [
+        361
+      ],
+      "printedPages": "191",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and then comments",
+      "related": [
+        "divided-house"
+      ],
+      "notes": "Eusebius quotes the strong-man saying and interprets the strong man and his house in relation to demons.",
+      "sha256": "cdb0f9fd27e10e253b599a71864a9e14dfd4bd18a325516cbfc21ba05e7b668f",
+      "displayedNote": "Eusebius quotes the strong-man saying and interprets the strong man and his house in relation to demons. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=361"
+    },
+    {
+      "id": "eusebius-lee-audit-lamb-flock",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-lamb-flock.json",
+      "sections": "3.59",
+      "pdfPages": [
+        363,
+        364,
+        365
+      ],
+      "printedPages": "193–195",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius; John the Baptist and Isaiah quoted",
+      "related": [
+        "john-lamb-god"
+      ],
+      "notes": "Eusebius uses sacrifice and flock imagery, then quotes John the Baptist and Isaiah. The quotations have different speakers and settings.",
+      "sha256": "18ea21d612582d55a40c3eff34653f8989aecb1b127ec5323b1b79f23dfb40ac",
+      "displayedNote": "Eusebius uses sacrifice and flock imagery, then quotes John the Baptist and Isaiah. The quotations have different speakers and settings. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=363"
+    },
+    {
+      "id": "eusebius-lee-audit-death-ruler",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-death-ruler.json",
+      "sections": "3.61",
+      "pdfPages": [
+        367
+      ],
+      "printedPages": "197",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "7c4b8705b57134a5da00579193975af103acd5483ce4781210440424c0dd919c",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=367"
+    },
+    {
+      "id": "eusebius-lee-audit-death-theatre",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-death-theatre.json",
+      "sections": "3.61",
+      "pdfPages": [
+        369
+      ],
+      "printedPages": "199",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "This is Eusebius’s comparison, not a Gospel quotation.",
+      "sha256": "edd64f83cf628dae5cf5ccb88d95e7d0c4813841ede2848b382ebf75d40dc9c0",
+      "displayedNote": "This is Eusebius’s comparison, not a Gospel quotation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=369"
+    },
+    {
+      "id": "eusebius-lee-audit-body-instrument",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-body-instrument.json",
+      "sections": "3.78",
+      "pdfPages": [
+        375,
+        376
+      ],
+      "printedPages": "205–206",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares the body used in praise to an instrument. His musician-and-lyre analogy in 3.39 has a different application.",
+      "sha256": "539a0c1790341d9f5c4506e0e195d0f8fa89a010db85b95d4e3e0efa404774eb",
+      "displayedNote": "Eusebius compares the body used in praise to an instrument. His musician-and-lyre analogy in 3.39 has a different application. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=375"
+    },
+    {
+      "id": "eusebius-lee-audit-parent-child",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-parent-child.json",
+      "sections": "4.1",
+      "pdfPages": [
+        379
+      ],
+      "printedPages": "209",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares the Word speaking to people with a parent speaking to a child.",
+      "sha256": "2888981139ece9c76fbd4ca97e1a42b90d91bac65a48f99de4fe12b926121b2b",
+      "displayedNote": "Eusebius compares the Word speaking to people with a parent speaking to a child. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=379"
+    },
+    {
+      "id": "eusebius-lee-audit-east-west-feast",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-east-west-feast.json",
+      "sections": "4.2",
+      "pdfPages": [
+        381,
+        382
+      ],
+      "printedPages": "211–212",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes the centurion and Jesus",
+      "related": [
+        "synoptic-east-west-feast"
+      ],
+      "notes": "The centurion’s comparison of authority precedes Jesus’s saying about people coming from east and west. This feast is distinct from the wedding banquet.",
+      "sha256": "b6ac2bb02485e848b642086e10828d98f31d829e14d7f6b2172caec5b0e6f0af",
+      "displayedNote": "The centurion’s comparison of authority precedes Jesus’s saying about people coming from east and west. This feast is distinct from the wedding banquet. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=381"
+    },
+    {
+      "id": "eusebius-lee-audit-east-west-feast-luke",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-east-west-feast-luke.json",
+      "sections": "4.5",
+      "pdfPages": [
+        384,
+        385
+      ],
+      "printedPages": "214–215",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus",
+      "related": [
+        "synoptic-east-west-feast"
+      ],
+      "notes": "Eusebius quotes feast sayings from Matthew and Luke; their settings differ.",
+      "sha256": "94f3d43051bf08ad689d801b66f9dd573ea967ba0f6d5b95d7c4f9e6a4bde9a7",
+      "displayedNote": "Eusebius quotes feast sayings from Matthew and Luke; their settings differ. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=384"
+    },
+    {
+      "id": "eusebius-lee-audit-fishers-gospels",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-fishers-gospels.json",
+      "sections": "4.6",
+      "pdfPages": [
+        385,
+        386,
+        387
+      ],
+      "printedPages": "215–217",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Gospel accounts and comments",
+      "related": [
+        "synoptic-fishers-people"
+      ],
+      "notes": "Eusebius quotes the calling in Matthew and recounts Luke’s catch of fish. He distinguishes the two accounts.",
+      "sha256": "96e07cac335f4f0b0fe5438aa318727c2a6912a7c24af4d1a2b9a79a8cd3035d",
+      "displayedNote": "Eusebius quotes the calling in Matthew and recounts Luke’s catch of fish. He distinguishes the two accounts. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=385"
+    },
+    {
+      "id": "eusebius-lee-audit-fishers-net",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-fishers-net.json",
+      "sections": "4.6",
+      "pdfPages": [
+        387,
+        388
+      ],
+      "printedPages": "217–218",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-fishers-people",
+        "net"
+      ],
+      "notes": "Eusebius interprets the disciples’ net as teaching and the sea as humanity. This is a partial comparison with the separate net parable.",
+      "sha256": "fe658a1c5e04fe38e44d63e73747b8363c3266c447469166d08b235d38521f8f",
+      "displayedNote": "Eusebius interprets the disciples’ net as teaching and the sea as humanity. This is a partial comparison with the separate net parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=387"
+    },
+    {
+      "id": "eusebius-lee-audit-fishers-catch-life",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-fishers-catch-life.json",
+      "sections": "4.6",
+      "pdfPages": [
+        388,
+        389
+      ],
+      "printedPages": "218–219",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-fishers-people"
+      ],
+      "notes": "Eusebius interprets Luke’s catch and imagines Jesus explaining it. The imagined speech is Eusebius’s presentation.",
+      "sha256": "3e7387403c2f66b6ff2c39e8fbca18997cb2209e9e21016c5d151f1a1b0679e7",
+      "displayedNote": "Eusebius interprets Luke’s catch and imagines Jesus explaining it. The imagined speech is Eusebius’s presentation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=388"
+    },
+    {
+      "id": "eusebius-lee-audit-light-city-lamp",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-light-city-lamp.json",
+      "sections": "4.7",
+      "pdfPages": [
+        390,
+        391
+      ],
+      "printedPages": "220–221",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and then comments",
+      "related": [
+        "synoptic-city-hill",
+        "synoptic-lamp"
+      ],
+      "notes": "Eusebius quotes Jesus’s light, city and lamp sayings and begins to discuss the disciples.",
+      "sha256": "c05b8fd9dac73ae4acfd0bfff0c14600ffb433ca41e316d38005368b4c4cce0a",
+      "displayedNote": "Eusebius quotes Jesus’s light, city and lamp sayings and begins to discuss the disciples. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=390"
+    },
+    {
+      "id": "eusebius-lee-audit-city-lamp-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-city-lamp-interpretation.json",
+      "sections": "4.7",
+      "pdfPages": [
+        391,
+        392
+      ],
+      "printedPages": "221–222",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-city-hill",
+        "synoptic-lamp"
+      ],
+      "notes": "Eusebius applies the city and lamp images to the disciples and their teaching.",
+      "sha256": "1a0920c4ab0ad3512415573ff65627c13d0fbee571c6b975f87101ff47b90eb2",
+      "displayedNote": "Eusebius applies the city and lamp images to the disciples and their teaching. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=391"
+    },
+    {
+      "id": "eusebius-lee-audit-light-and-housetops",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-light-and-housetops.json",
+      "sections": "4.7",
+      "pdfPages": [
+        392
+      ],
+      "printedPages": "222",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "john-walking-light",
+        "synoptic-hidden-revealed"
+      ],
+      "notes": "Eusebius quotes Jesus’s light saying, a Gospel narrator’s description of the light, and Matthew’s instruction to proclaim openly; these are distinct passages.",
+      "sha256": "22d791839c50d32e2271e3c3a22969e106dff5ca4d57a377e7fb0fdee73e0470",
+      "displayedNote": "Eusebius quotes Jesus’s light saying, a Gospel narrator’s description of the light, and Matthew’s instruction to proclaim openly; these are distinct passages. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=392"
+    },
+    {
+      "id": "eusebius-lee-audit-church-rock-4",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-church-rock-4.json",
+      "sections": "4.11",
+      "pdfPages": [
+        400,
+        401,
+        402
+      ],
+      "printedPages": "230–232",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "synoptic-peter-rock-keys"
+      ],
+      "notes": "Eusebius quotes Matthew’s rock and church saying and gives his interpretation of the rock.",
+      "sha256": "862d668744ad5154b6a614dea7c8887ebb3d20e0ab226d211986f070c64cb9b0",
+      "displayedNote": "Eusebius quotes Matthew’s rock and church saying and gives his interpretation of the rock. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=400"
+    },
+    {
+      "id": "eusebius-lee-audit-division-sword",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-division-sword.json",
+      "sections": "4.12",
+      "pdfPages": [
+        402,
+        403
+      ],
+      "printedPages": "232–233",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "synoptic-household-division"
+      ],
+      "notes": "Eusebius quotes Matthew and Luke on division in a household. These sayings differ from the divided kingdom and strong man.",
+      "sha256": "ef1639d6ca5396f443d4224299a3104c5ad0aafd3cc6648cdc43a0432a8bc979",
+      "displayedNote": "Eusebius quotes Matthew and Luke on division in a household. These sayings differ from the divided kingdom and strong man. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=402"
+    },
+    {
+      "id": "eusebius-lee-audit-isaiah-vineyard-reading",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-isaiah-vineyard-reading.json",
+      "sections": "4.13",
+      "pdfPages": [
+        406
+      ],
+      "printedPages": "236",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Isaiah",
+      "related": [
+        "wicked-tenants"
+      ],
+      "notes": "Eusebius quotes Isaiah’s interpretation of the vineyard after comparing it with the Gospel parable. The vineyard images are related but distinct.",
+      "sha256": "e4fadbb4f8333b9f7389ccd0c18dba7b12d365a3d5d16a4e43d7769285e33129",
+      "displayedNote": "Eusebius quotes Isaiah’s interpretation of the vineyard after comparing it with the Gospel parable. The vineyard images are related but distinct. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=406"
+    },
+    {
+      "id": "eusebius-lee-audit-vineyard-tenants",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-vineyard-tenants.json",
+      "sections": "4.14",
+      "pdfPages": [
+        406,
+        407
+      ],
+      "printedPages": "236–237",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "wicked-tenants"
+      ],
+      "notes": "Eusebius identifies the vineyard, tenants, tower and winepress in his reading of the parable.",
+      "sha256": "79d612890dbabb309895cbc45b1bcf307cc4b3bc3d28983b744466a0eef52e66",
+      "displayedNote": "Eusebius identifies the vineyard, tenants, tower and winepress in his reading of the parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=406"
+    },
+    {
+      "id": "eusebius-lee-audit-cornerstone-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-cornerstone-interpretation.json",
+      "sections": "4.14",
+      "pdfPages": [
+        407,
+        408,
+        409
+      ],
+      "printedPages": "237–239",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and Scripture, then comments",
+      "related": [
+        "wicked-tenants"
+      ],
+      "notes": "Eusebius quotes the rejected-stone saying and explains it alongside the vineyard parable.",
+      "sha256": "1c5705c2e6bb8b54d7029c5908d7d8f523966bf4b7ab7c5355c9786a2d032597",
+      "displayedNote": "Eusebius quotes the rejected-stone saying and explains it alongside the vineyard parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=407"
+    },
+    {
+      "id": "eusebius-lee-audit-vineyard-feast-comparison",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-vineyard-feast-comparison.json",
+      "sections": "4.15",
+      "pdfPages": [
+        409,
+        410
+      ],
+      "printedPages": "239–240",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "wicked-tenants",
+        "wedding-banquet"
+      ],
+      "notes": "Eusebius compares the vineyard parable with the wedding feast; the two are distinct stories.",
+      "sha256": "0e105f07559c41969fdd07b3aa535ea88907c4391d29903f947457e4dc3ce653",
+      "displayedNote": "Eusebius compares the vineyard parable with the wedding feast; the two are distinct stories. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=409"
+    },
+    {
+      "id": "eusebius-lee-audit-feast-servants",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-feast-servants.json",
+      "sections": "4.16",
+      "pdfPages": [
+        410,
+        411
+      ],
+      "printedPages": "240–241",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "wedding-banquet",
+        "synoptic-lost-sheep-israel"
+      ],
+      "notes": "Eusebius interprets the servants in the wedding feast and quotes Jesus’s instruction about the lost sheep of Israel.",
+      "sha256": "211386c583d0145575ab626d40c1c24b86fa4550166b59bf4a3b588fa615edbc",
+      "displayedNote": "Eusebius interprets the servants in the wedding feast and quotes Jesus’s instruction about the lost sheep of Israel. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=410"
+    },
+    {
+      "id": "eusebius-lee-audit-feast-invitations",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-feast-invitations.json",
+      "sections": "4.16",
+      "pdfPages": [
+        412,
+        413
+      ],
+      "printedPages": "242–243",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "wedding-banquet"
+      ],
+      "notes": "Eusebius discusses the invitations and guests in the wedding feast. His historical claims are his interpretation of the parable.",
+      "sha256": "7ef920c14b435de021426239593e28d8fb63b7b3811bccfb99caea580c0842d7",
+      "displayedNote": "Eusebius discusses the invitations and guests in the wedding feast. His historical claims are his interpretation of the parable. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=412"
+    },
+    {
+      "id": "eusebius-lee-audit-vipers-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-vipers-interpretation.json",
+      "sections": "4.17",
+      "pdfPages": [
+        413,
+        414
+      ],
+      "printedPages": "243–244",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-serpents-vipers"
+      ],
+      "notes": "Eusebius relates persecution and judgment to Jesus’s warning. These historical claims are Eusebius’s interpretation.",
+      "sha256": "6e71e76f231ad3d310b5a3780ae4b4efe8dab82c3c1438404b5a508dca0a7921",
+      "displayedNote": "Eusebius relates persecution and judgment to Jesus’s warning. These historical claims are Eusebius’s interpretation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=413"
+    },
+    {
+      "id": "eusebius-lee-audit-hen-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-hen-interpretation.json",
+      "sections": "4.18",
+      "pdfPages": [
+        415,
+        416
+      ],
+      "printedPages": "245–246",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-hen-chicks"
+      ],
+      "notes": "Eusebius explains the city, its children and its house in Jesus’s lament. His historical claims are his interpretation.",
+      "sha256": "badd5178ba466ea66a23e932528e83a59a8ac77eaa39c770d8bdcf47275e6906",
+      "displayedNote": "Eusebius explains the city, its children and its house in Jesus’s lament. His historical claims are his interpretation. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=415"
+    },
+    {
+      "id": "eusebius-lee-audit-good-shepherd-4",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-good-shepherd-4.json",
+      "sections": "4.24",
+      "pdfPages": [
+        428,
+        429
+      ],
+      "printedPages": "258–259",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "john-sheepfold-shepherd",
+        "synoptic-lost-sheep-israel"
+      ],
+      "notes": "Eusebius quotes John’s good shepherd and Matthew’s lost sheep of Israel; the sayings have different settings.",
+      "sha256": "dd5a92140fbfcf9aab9ef15d3eab6b58da2e1b9e8b4dbe4c4a60aab9a003770b",
+      "displayedNote": "Eusebius quotes John’s good shepherd and Matthew’s lost sheep of Israel; the sayings have different settings. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=428"
+    },
+    {
+      "id": "eusebius-lee-audit-shepherd-wolves",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-shepherd-wolves.json",
+      "sections": "4.24",
+      "pdfPages": [
+        430,
+        431
+      ],
+      "printedPages": "260–261",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "john-sheepfold-shepherd"
+      ],
+      "notes": "Eusebius explains the flock and identifies the wolves with demons. That interpretation is his own.",
+      "sha256": "a9ead96de5b603e7497cbd14789ec0b19a8dd8a43dc21783271b89480dc97b60",
+      "displayedNote": "Eusebius explains the flock and identifies the wolves with demons. That interpretation is his own. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=430"
+    },
+    {
+      "id": "eusebius-lee-audit-wheat-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-wheat-interpretation.json",
+      "sections": "4.25",
+      "pdfPages": [
+        431,
+        432
+      ],
+      "printedPages": "261–262",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "john-grain-wheat"
+      ],
+      "notes": "Eusebius explains the grain of wheat in relation to Jesus’s death and resurrection.",
+      "sha256": "591c6d8ba451ba7c1e0aa868a3d81c3146fb2db08d0f5d5da5dfcccea58b57b9",
+      "displayedNote": "Eusebius explains the grain of wheat in relation to Jesus’s death and resurrection. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=431"
+    },
+    {
+      "id": "eusebius-lee-audit-harvest-and-fields",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-harvest-and-fields.json",
+      "sections": "4.25",
+      "pdfPages": [
+        432
+      ],
+      "printedPages": "262",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and then comments",
+      "related": [
+        "synoptic-harvest-workers",
+        "john-fields-harvest"
+      ],
+      "notes": "Eusebius quotes Jesus’s harvest-workers and white-fields sayings; these occur in different Gospel settings.",
+      "sha256": "59341c823782ec0493eb2a7c5851782673e262f58d750f7f58fe759c3fb89a88",
+      "displayedNote": "Eusebius quotes Jesus’s harvest-workers and white-fields sayings; these occur in different Gospel settings. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=432"
+    },
+    {
+      "id": "eusebius-lee-audit-winnowing-floor",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-winnowing-floor.json",
+      "sections": "4.25",
+      "pdfPages": [
+        432
+      ],
+      "printedPages": "262",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes John the Baptist",
+      "related": [
+        "synoptic-threshing-floor"
+      ],
+      "notes": "John the Baptist’s winnowing image is distinct from Jesus’s harvest sayings.",
+      "sha256": "6f482b56b56c0bcf773a41812cedc0b97a94fed42164eccd7c8bfa251a99db74",
+      "displayedNote": "John the Baptist’s winnowing image is distinct from Jesus’s harvest sayings. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=432"
+    },
+    {
+      "id": "eusebius-lee-audit-net-fishers",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-net-fishers.json",
+      "sections": "4.29",
+      "pdfPages": [
+        437
+      ],
+      "printedPages": "267",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "net",
+        "synoptic-fishers-people"
+      ],
+      "notes": "Eusebius connects the fishers of men to the net parable. They are different Gospel sayings.",
+      "sha256": "383efeec8cd62481b49a19d83fa03e28165107994d6d4df32c14a76b0d72769b",
+      "displayedNote": "Eusebius connects the fishers of men to the net parable. They are different Gospel sayings. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=437"
+    },
+    {
+      "id": "eusebius-lee-audit-wolves-trees",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-wolves-trees.json",
+      "sections": "4.30",
+      "pdfPages": [
+        437
+      ],
+      "printedPages": "267",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and then comments",
+      "related": [
+        "synoptic-trees-fruit"
+      ],
+      "notes": "Eusebius quotes Jesus’s warnings and identifies the fruits with words and conduct.",
+      "sha256": "35983528ccff6b54fff54d0fba8ae76d65216aa5226fe68333adcace61caec3d",
+      "displayedNote": "Eusebius quotes Jesus’s warnings and identifies the fruits with words and conduct. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=437"
+    },
+    {
+      "id": "eusebius-lee-audit-sheep-wolves-voice",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-sheep-wolves-voice.json",
+      "sections": "4.30",
+      "pdfPages": [
+        439,
+        440
+      ],
+      "printedPages": "269–270",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and then comments",
+      "related": [
+        "john-sheep-hear-voice",
+        "synoptic-lambs-wolves"
+      ],
+      "notes": "Eusebius quotes Jesus’s sayings about sheep hearing his voice and sheep among wolves; their Gospel settings differ.",
+      "sha256": "4e7cd785cca9eee9f1c930ba159d5962810426fd10ed975c6d8fd803494f049e",
+      "displayedNote": "Eusebius quotes Jesus’s sayings about sheep hearing his voice and sheep among wolves; their Gospel settings differ. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=439"
+    },
+    {
+      "id": "eusebius-lee-audit-teacher-hidden",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-teacher-hidden.json",
+      "sections": "4.31",
+      "pdfPages": [
+        440
+      ],
+      "printedPages": "270",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus",
+      "related": [
+        "synoptic-disciple-teacher",
+        "synoptic-hidden-revealed"
+      ],
+      "notes": "Eusebius quotes adjacent sayings from Matthew; the teacher comparison and hidden things being revealed are distinct.",
+      "sha256": "aeb695a98a46f2da484699eefdec3b30a7d6656945cdfdc48c51de4575011828",
+      "displayedNote": "Eusebius quotes adjacent sayings from Matthew; the teacher comparison and hidden things being revealed are distinct. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=440"
+    },
+    {
+      "id": "eusebius-lee-audit-hidden-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-hidden-interpretation.json",
+      "sections": "4.31",
+      "pdfPages": [
+        441
+      ],
+      "printedPages": "271",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-hidden-revealed"
+      ],
+      "notes": "Eusebius interprets Jesus’s hidden-and-revealed saying in relation to the disciples’ teaching.",
+      "sha256": "b5f86baf49130da398fb34fee1936f21b68f58ca2eb7cde910d93c9de9fc22b5",
+      "displayedNote": "Eusebius interprets Jesus’s hidden-and-revealed saying in relation to the disciples’ teaching. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=441"
+    },
+    {
+      "id": "eusebius-lee-audit-harvest-after-sower",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-harvest-after-sower.json",
+      "sections": "4.33",
+      "pdfPages": [
+        444,
+        445
+      ],
+      "printedPages": "274–275",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and then comments",
+      "related": [
+        "sower",
+        "synoptic-harvest-workers",
+        "john-fields-harvest"
+      ],
+      "notes": "After discussing the sower, Eusebius quotes Jesus’s sayings about the harvest workers and the white fields. They are distinct sayings.",
+      "sha256": "53bc6afae3f6a3c59fce98dec32be0e70a48f909e95b7903c9fbe6a81c12765c",
+      "displayedNote": "After discussing the sower, Eusebius quotes Jesus’s sayings about the harvest workers and the white fields. They are distinct sayings. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=444"
+    },
+    {
+      "id": "eusebius-lee-audit-coming-lightning",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-coming-lightning.json",
+      "sections": "4.35",
+      "pdfPages": [
+        448,
+        449
+      ],
+      "printedPages": "278–279",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "synoptic-coming-lightning"
+      ],
+      "notes": "Eusebius quotes Matthew’s comparison of the coming of the Son of Man to lightning.",
+      "sha256": "921697da5a4d04f5d5ac2d95190bed71c6db010ae4876d231bc7718aa7b8fe08",
+      "displayedNote": "Eusebius quotes Matthew’s comparison of the coming of the Son of Man to lightning. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=448"
+    },
+    {
+      "id": "eusebius-lee-audit-lightning-interpretation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-lightning-interpretation.json",
+      "sections": "4.35",
+      "pdfPages": [
+        450,
+        451
+      ],
+      "printedPages": "280–281",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Jesus and comments",
+      "related": [
+        "synoptic-coming-lightning"
+      ],
+      "notes": "Eusebius contrasts the lightning comparison with claims that Christ is in one place.",
+      "sha256": "3621d87f006538e9806b5982449677e2d8a8e1ac854c8115cedeeef94aec85e9",
+      "displayedNote": "Eusebius contrasts the lightning comparison with claims that Christ is in one place. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=450"
+    },
+    {
+      "id": "eusebius-lee-audit-teachers-and-pupils",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-teachers-and-pupils.json",
+      "sections": "5.9",
+      "pdfPages": [
+        462
+      ],
+      "printedPages": "292",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares disciples with students of medicine, geometry, arithmetic and magic.",
+      "sha256": "6979cb25fdfc11a4d4283054feca05606150c002badcc75deb61f96cc74d49e5",
+      "displayedNote": "Eusebius compares disciples with students of medicine, geometry, arithmetic and magic. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=462"
+    },
+    {
+      "id": "eusebius-lee-audit-crafts-teachers",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-crafts-teachers.json",
+      "sections": "5.15",
+      "pdfPages": [
+        466,
+        467
+      ],
+      "printedPages": "296–297",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares learning trades and arts with becoming a teacher.",
+      "sha256": "589dac3a39e96949111a62625e149b0d662be56b0e98d8b5c172da548b750a08",
+      "displayedNote": "Eusebius compares learning trades and arts with becoming a teacher. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=466"
+    },
+    {
+      "id": "eusebius-lee-audit-moses-accusation",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-moses-accusation.json",
+      "sections": "5.34",
+      "pdfPages": [
+        487,
+        488
+      ],
+      "printedPages": "317–318",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius makes a hypothetical comparison concerning the interpretation of Moses’s prohibitions.",
+      "sha256": "6967b5c234d2161437b9cdcdbba1d2207eb8581544a6aad4fb76bdced04e49d8",
+      "displayedNote": "Eusebius makes a hypothetical comparison concerning the interpretation of Moses’s prohibitions. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=487"
+    },
+    {
+      "id": "eusebius-lee-audit-rock-keys-5",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-rock-keys-5.json",
+      "sections": "5.40",
+      "pdfPages": [
+        494,
+        495
+      ],
+      "printedPages": "324–325",
+      "category": "quotation and commentary",
+      "speaker": "Eusebius quotes Peter and Jesus",
+      "related": [
+        "synoptic-peter-rock-keys"
+      ],
+      "notes": "Eusebius quotes Peter’s confession and Jesus’s rock, church and keys saying in a discussion comparing Matthew and Mark.",
+      "sha256": "3d7084252602c22d52648300ea6b419c40259628e497c75077afbc1e1132d316",
+      "displayedNote": "Eusebius quotes Peter’s confession and Jesus’s rock, church and keys saying in a discussion comparing Matthew and Mark. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=494"
+    },
+    {
+      "id": "eusebius-lee-audit-soul-body",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-soul-body.json",
+      "sections": "1.25",
+      "pdfPages": [
+        185
+      ],
+      "printedPages": "15",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [],
+      "notes": "Eusebius compares the Word in the world to a soul in a body. Lee’s brief Syriac and Greek gloss is omitted; the scan retains it.",
+      "sha256": "40ee5ac95712a6bf440a28c8e693b75809d04c1c055efa3a972cb412b1753f2b",
+      "displayedNote": "Eusebius compares the Word in the world to a soul in a body. Lee’s brief Syriac and Greek gloss is omitted; the scan retains it. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=185"
+    },
+    {
+      "id": "eusebius-lee-audit-seed-coat",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-seed-coat.json",
+      "sections": "1.76–77",
+      "pdfPages": [
+        231,
+        232
+      ],
+      "printedPages": "61–62",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "john-grain-wheat"
+      ],
+      "notes": "Eusebius compares the seed’s outer coat with the body; the comparison with John’s grain of wheat is partial. The conclusion continues in the existing 1.77 selection, whose opening is repeated here.",
+      "sha256": "ce8835054d92176a602491d6c1272b47b6d187c734396bbb2bc329190dbc950f",
+      "displayedNote": "Eusebius compares the seed’s outer coat with the body; the comparison with John’s grain of wheat is partial. The conclusion continues in the existing 1.77 selection, whose opening is repeated here. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=231"
+    },
+    {
+      "id": "eusebius-lee-audit-physician-remedies",
+      "path": "content/jesus/early-excerpts/eusebius-lee-audit-physician-remedies.json",
+      "sections": "2.94–95",
+      "pdfPages": [
+        322,
+        323
+      ],
+      "printedPages": "152–153",
+      "category": "authorial analogy",
+      "speaker": "Eusebius",
+      "related": [
+        "synoptic-physician-sick"
+      ],
+      "notes": "Eusebius compares care for souls to a physician’s treatments. This is a thematic comparison with the Gospel physician saying; the opening of 2.95 repeats the existing shepherd and physician selection.",
+      "sha256": "80aa218f69879a627078b3e12a2b0fa79194a5dcd954942d3d7a4bfe9ba309b0",
+      "displayedNote": "Eusebius compares care for souls to a physician’s treatments. This is a thematic comparison with the Gospel physician saying; the opening of 2.95 repeats the existing shepherd and physician selection. This is a selected excerpt; print footnotes are omitted.",
+      "scanUrl": "https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf#page=322"
+    }
+  ],
+  "unresolved": [
+    {
+      "candidate": "1.37–44, 1.69–73, 1.76–77, 4.13–18",
+      "issue": "Selections identify individual sections and are not exhaustive reproductions of every section in each range."
+    },
+    {
+      "candidate": "1.1–2",
+      "issue": "Footnote markers and Lee’s footnotes are not included in the excerpt blocks; consult printed pages 1–4 for source and translation notes."
+    }
+  ]
+}

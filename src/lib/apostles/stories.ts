@@ -15,6 +15,8 @@ export type ApostleStory = {
   chapter: number;
   start: number;
   end: number;
+  /** The verse the title comes from, in the same chapter; the passage box links its translations and original words. */
+  titleVerse: number;
   opening: { title: string; text: string; reference: string };
   encounter: { title: string; text: string; reference: string };
   after: { title: string; text: string; href: string; label: string };
@@ -30,7 +32,7 @@ export const APOSTLE_STORIES = [
     alt: "Disciples tend an empty fishing net on a quiet lake before dawn. Interpretive illustration.",
     encounterImage: "/apostles/stories/peter-breakfast.jpg",
     encounterAlt: "Jesus offers bread beside a charcoal fire as Peter sits with him on the shore. Interpretive illustration.",
-    book: "JHN", chapter: 21, start: 1, end: 19,
+    book: "JHN", chapter: 21, start: 1, end: 19, titleVerse: 12,
     opening: {
       title: "A night with nothing to show.",
       text: "Peter goes fishing, and the others go with him. Through the night, they catch nothing. At daybreak Jesus stands on the beach, but they do not recognize him. He tells them where to cast the net. The catch comes before the recognition.",
@@ -56,7 +58,7 @@ export const APOSTLE_STORIES = [
     alt: "Thomas listens at the edge of a lamplit room while other disciples gather nearby. Interpretive illustration.",
     encounterImage: "/apostles/stories/thomas-peace.jpg",
     encounterAlt: "Jesus stands with open hands before Thomas, with space between them and no touch depicted. Interpretive illustration.",
-    book: "JHN", chapter: 20, start: 24, end: 29,
+    book: "JHN", chapter: 20, start: 24, end: 29, titleVerse: 26,
     opening: {
       title: "Someone was missing.",
       text: "Thomas was not with the disciples when Jesus came. They tell him they have seen the Lord. He answers with a demand to see and touch for himself. John lets his words stand.",
@@ -82,7 +84,7 @@ export const APOSTLE_STORIES = [
     alt: "A community sits together in a simple Jerusalem house, with small forms like flame above them. Interpretive illustration.",
     encounterImage: "/apostles/stories/pentecost-hearers.jpg",
     encounterAlt: "People of different ages gather to listen in a Jerusalem street. Interpretive illustration.",
-    book: "ACT", chapter: 2, start: 1, end: 13,
+    book: "ACT", chapter: 2, start: 1, end: 13, titleVerse: 8,
     opening: {
       title: "All together in one place.",
       text: "Acts describes a sound like a mighty wind filling the house, tongues like fire resting on each of them, and the Holy Spirit giving them speech in other languages. The gift comes to the gathered community; the account does not reduce that community to a list of twelve men.",

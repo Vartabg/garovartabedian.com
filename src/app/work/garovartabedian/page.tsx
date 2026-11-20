@@ -86,7 +86,6 @@ export default function WorkGaroVartabedian() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudyLd) }}
       />
 
-      <p className="kicker">{SITE_CASE_STUDY.kicker}</p>
       <h1>{SITE_CASE_STUDY.title}</h1>
       <p className="lede">{SITE_CASE_STUDY.lede}</p>
 

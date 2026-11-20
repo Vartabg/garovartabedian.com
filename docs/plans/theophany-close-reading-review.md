@@ -1,0 +1,16 @@
+# Independent review: Theophany completion
+
+Reviewed plan SHA-256 `58aee2d9304accf317171d0a094ebc81d69f90b46598f5d9ba9a926e1538b3b4`, against base `0c949c1c577cddd9094267ec39440fc6fa0c9b31` and two representative figure and fixture records. Reviewer: fresh isolated Antigravity session, `gemini-3.8-flash-high`, terminal result SUCCESS; `/tmp/theophany-egm-result.jsonl` records the result. No tools requested by the review were relied on. Lead checked the actual source and tests.
+
+- Field shape and digests: accept the need to specify exact existing contracts; amended plan records scalar `related` plus `relatedAlso` vs fixture array, `note` vs `displayedNote`, and exact excerpt-text hash. The existing `tests/parables-audit-early.test.ts` already normalizes these; replacing the schema with arrays would break existing consumers.
+- Speaker/canon clarity: accept clearer segmentation and test it. Existing ParablesRoom heading visibly says “outside the canon” for every early figure and renders `figure.speaker` and note. A new `canonical` field is unnecessary. Separate quoted and interpreted selections where practical; do not infer a WCAG violation from free text alone.
+- Static loader: accept explicit parity validation. Existing loader catches invalid mappings and returns the accessible source-link fallback rather than a 500; tests should assert each new mapping loads and is pinned, including failure behavior.
+- Provenance: accept scan-first boundaries, printed page span, and audit-ledger decisions. Check against Lee's 1843 print, distinguish Greek fragments and note that scan is not a fresh collation of the underlying Syriac.
+- Release gate: reject the proposed extra human approval and CI-only release as inconsistent with the user's explicit “ship it” and the repository's `AGENTS.md`, which directs audited PR merge and local production release. All required checks and security gates remain mandatory.
+- Browser: accept concrete light/dark desktop/phone checks for title, outside-canon label, speaker, source, note, and comparison.
+
+Reviewer categorized several existing schema differences as automatic failures without checking the existing normalization or fallback. The lead verified these against the source rather than accepting those claims. The report is a design review, not proof of content accuracy or a substitute for tests.
+
+## Implemented content review
+
+A fresh read-only independent review examined the new Book III–V excerpts against the section transcription. It found a truncated Psalm quotation, a dropped word in the lightning quotation, two passages starting inside already displayed quotations, a wedding-feast excerpt ending inside a quotation, an unfinished transition after the harvest sayings, and missing portions of IV.17 and V.15. The lead checked the 1843 print at pp. 243–244 and 278 and repaired the boundaries, restored “believe,” corrected a duplicated transcription phrase, completed the historical interpretation and craft comparison, and updated their page spans and hashes. The review also identified Book V nonfigurative Gospel quotations; the prior audit classified those as outside the figure/parable scope, so they were not recast as parables. The review was a focused implementation check, not a complete independent scan collation.

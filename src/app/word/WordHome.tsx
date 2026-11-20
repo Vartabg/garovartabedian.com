@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import type { WordData } from "@/lib/word/types";
 import GlossText from "../_components/GlossText";
 import WorldDisclosure from "../_components/WorldDisclosure";
-import WorldEntry from "../_components/WorldEntry";
+import WorldHeroActions from "../_components/WorldHeroActions";
 import WorldHomeHero from "../_components/WorldHomeHero";
 import SourceBasis from "../_components/SourceBasis";
 import WordFences, { type Fence } from "./WordFences";
@@ -32,9 +32,19 @@ export default function WordHome({ data, audioOverview }: { data: WordData; audi
     <>
       <WorldHomeHero
         world="word"
-        eyebrow="The ownership record"
         title="Who owns the Word?"
         facets={["Owners + policies", "Cases", "The free way"]}
+        actions={
+          <WorldHeroActions
+            label="Explore who owns the Word"
+            links={[
+              { href: "#word-ledger", label: "Search the record" },
+              { href: "#word-provenance", label: "Trace one translation" },
+              { href: "#word-sources", label: "Open the source cards" },
+              { href: "/word/cases", label: "When a fence gets tested" },
+            ]}
+          />
+        }
       >
         No one owns the words of Jesus. They were spoken to crowds on
         hillsides, written down in common Greek, and handed on for free by
@@ -44,34 +54,6 @@ export default function WordHome({ data, audioOverview }: { data: WordData; audi
         factual story of how the Word acquired owners — and of the
         translators who refused to own it.
       </WorldHomeHero>
-
-      <WorldEntry
-        eyebrow="Start with one record"
-        href="#word-ledger"
-        title="Search the ownership ledger"
-        note="Find a translation, inspect who holds the rights, follow the provenance, and open the source behind the claim."
-        action="Search the record"
-        paths={[
-          {
-            href: "#word-provenance",
-            label: "Trace one translation",
-            note: "Read the dated path from publication record to current policy.",
-            meta: "Provenance",
-          },
-          {
-            href: "#word-sources",
-            label: "Open the source cards",
-            note: "Keep rights-holder pages and public-domain records beside the claim.",
-            meta: "Sources",
-          },
-          {
-            href: "/word/cases",
-            label: "When a fence gets tested",
-            note: "Read the lawsuits, licensing fights, and public reversals.",
-            meta: "Case studies",
-          },
-        ]}
-      />
 
       {audioOverview}
 

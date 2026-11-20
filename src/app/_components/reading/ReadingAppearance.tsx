@@ -4,7 +4,11 @@ import { useReadingPreferences } from "./useReadingPreferences";
 import { defaultAccessibilityPreferences, type AccessibilityFont, type AccessibilitySize, type AccessibilityTheme, type AccessibilityPreferences } from "@/lib/accessibility-preferences";
 
 /** Shared controls, whether opened from Aa, a chapter sheet, or a reading page. */
-export default function ReadingAppearance() {
+export default function ReadingAppearance({
+  showPersistenceHelp = true,
+}: {
+  showPersistenceHelp?: boolean;
+} = {}) {
   const [p, update] = useReadingPreferences();
   const id = useId();
   return <div className="reading-appearance">
@@ -30,6 +34,8 @@ export default function ReadingAppearance() {
       <label className="reading-toggle"><input type="checkbox" checked={p.underlineLinks} onChange={e => update({ underlineLinks: e.target.checked })} />Underline text links</label>
     </details>
     <button type="button" onClick={() => update(defaultAccessibilityPreferences)}>Reset to site defaults</button>
-    <p className="reading-help">Saved in this browser and shared between texts. Labels and line patterns remain in every theme.</p>
+    {showPersistenceHelp ? (
+      <p className="reading-help">Saved in this browser and shared between texts. Labels and line patterns remain in every theme.</p>
+    ) : null}
   </div>;
 }

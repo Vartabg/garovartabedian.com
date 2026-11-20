@@ -66,7 +66,7 @@ async function fillOwnReport(page: Page) {
 }
 
 test("the free job report demo and $100 three-item package are discoverable and fit a phone", async ({ page }) => {
-  await page.goto("/work");
+  await page.goto("/services");
   const menu = page.getByRole("region", { name: "All three. $100 total." });
   await expect(menu.getByRole("article")).toHaveCount(3);
   const inquiry = menu.getByRole("link", { name: "Ask for the $100 package", exact: true });
