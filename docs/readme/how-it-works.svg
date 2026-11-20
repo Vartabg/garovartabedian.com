@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="212" viewBox="0 0 680 212" role="img" aria-labelledby="hiw-title hiw-desc">
+  <title id="hiw-title">How the site is built and released</title>
+  <desc id="hiw-desc">Sources feed the build scripts, which write generated JSON. The pages read that JSON. The release script checks the merged commit and publishes the live site.</desc>
+  <style>
+    .box { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1; }
+    .h { font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; fill: #1f2328; }
+    .s { font: 400 12px -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; fill: #59636e; }
+    .a { stroke: #8b949e; stroke-width: 1.5; fill: none; }
+    .ah { fill: #8b949e; }
+    @media (prefers-color-scheme: dark) {
+      .box { fill: #161b22; stroke: #3d444d; }
+      .h { fill: #f0f6fc; }
+      .s { fill: #9198a1; }
+    }
+  </style>
+  <defs>
+    <marker id="hiw-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path class="ah" d="M0 0L10 5L0 10z"/>
+    </marker>
+  </defs>
+
+  <rect class="box" x="5" y="10" width="206" height="72" rx="6"/>
+  <text class="h" x="108" y="31" text-anchor="middle" dominant-baseline="central">Sources</text>
+  <text class="s" x="108" y="50" text-anchor="middle" dominant-baseline="central">Public-domain and</text>
+  <text class="s" x="108" y="66" text-anchor="middle" dominant-baseline="central">openly licensed texts</text>
+
+  <rect class="box" x="237" y="10" width="206" height="72" rx="6"/>
+  <text class="h" x="340" y="37" text-anchor="middle" dominant-baseline="central">Build scripts</text>
+  <text class="s" x="340" y="57" text-anchor="middle" dominant-baseline="central">scripts/*/build-*.mjs</text>
+
+  <rect class="box" x="469" y="10" width="206" height="72" rx="6"/>
+  <text class="h" x="572" y="37" text-anchor="middle" dominant-baseline="central">Generated JSON</text>
+  <text class="s" x="572" y="57" text-anchor="middle" dominant-baseline="central">public/</text>
+
+  <line class="a" x1="213" y1="46" x2="235" y2="46" marker-end="url(#hiw-arrow)"/>
+  <line class="a" x1="445" y1="46" x2="467" y2="46" marker-end="url(#hiw-arrow)"/>
+  <path class="a" d="M572 84V106H108V128" marker-end="url(#hiw-arrow)"/>
+
+  <rect class="box" x="5" y="130" width="206" height="72" rx="6"/>
+  <text class="h" x="108" y="157" text-anchor="middle" dominant-baseline="central">Pages</text>
+  <text class="s" x="108" y="177" text-anchor="middle" dominant-baseline="central">Next.js App Router</text>
+
+  <rect class="box" x="237" y="130" width="206" height="72" rx="6"/>
+  <text class="h" x="340" y="157" text-anchor="middle" dominant-baseline="central">Release script</text>
+  <text class="s" x="340" y="177" text-anchor="middle" dominant-baseline="central">scripts/release/production.mjs</text>
+
+  <rect class="box" x="469" y="130" width="206" height="72" rx="6"/>
+  <text class="h" x="572" y="157" text-anchor="middle" dominant-baseline="central">Live site</text>
+  <text class="s" x="572" y="177" text-anchor="middle" dominant-baseline="central">garovartabedian.com</text>
+
+  <line class="a" x1="213" y1="166" x2="235" y2="166" marker-end="url(#hiw-arrow)"/>
+  <line class="a" x1="445" y1="166" x2="467" y2="166" marker-end="url(#hiw-arrow)"/>
+</svg>
