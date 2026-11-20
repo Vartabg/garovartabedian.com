@@ -14,14 +14,7 @@ the live site.
 
 ## How it works
 
-```mermaid
-flowchart LR
-  S["Sources<br/>public-domain and openly licensed texts"] --> B["Build scripts<br/>scripts/*/build-*.mjs"]
-  B --> J["Generated JSON<br/>public/"]
-  J --> P["Pages<br/>Next.js App Router"]
-  P --> R["Release script<br/>scripts/release/production.mjs"]
-  R --> L["Live site"]
-```
+![How the site is built and released: sources, build scripts, generated JSON, pages, release script, live site](docs/readme/how-it-works.svg)
 
 The pages read the generated JSON. A release runs one script on the merged
 commit: secret scans, lint, typecheck, unit and smoke tests, a production
