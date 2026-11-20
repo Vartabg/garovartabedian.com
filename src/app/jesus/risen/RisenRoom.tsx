@@ -266,9 +266,6 @@ export default function RisenRoom({ data }: { data: RisenData }) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/jesus">Jesus Christ</Link>
-      </p>
       <h1>From the cross to the ascension</h1>
       <p className="lede">
         The accounts do not tell one unbroken story. This room follows the

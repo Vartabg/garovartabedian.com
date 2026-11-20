@@ -59,8 +59,8 @@ test("shared buttons keep device-appropriate targets without overflow", async ({
         ".jsu-map-place-picker select, .jsu-map-view-switch button, .jsu-journey-console button",
     },
     { route: "/jesus/words", selector: ".jsu-word-tools select" },
-    { route: "/scriptures/topics", selector: ".scr-topic-bars button" },
-    { route: "/evidence", selector: ".hw-claim-filters button" },
+    { route: "/scriptures/topics", selector: ".scr-topics-az button" },
+    { route: "/evidence#claim-index", selector: ".hw-claim-filters button" },
   ] as const;
 
   for (const surface of surfaces) {
@@ -114,19 +114,22 @@ test("the compact accessibility trigger never covers a live target", async ({
   test.skip(testInfo.project.name !== "phone", "compact touch layout only");
 
   const surfaces = [
+    { route: "/", selector: ".st-nav a, .st-nav button, .st-nav summary, .st-front-actions a" },
+    { route: "/jesus", selector: ".site-header a, .site-header button, .site-header summary, .jl-more a" },
     { route: "/early/ignatius", selector: ".map-picker select" },
     { route: "/scriptures/topics", selector: ".scr-topics-az button" },
   ] as const;
 
   for (const surface of surfaces) {
     await page.goto(surface.route);
-    const trigger = page.locator(".a11y-trigger");
+    const trigger = page.locator(".discovery-lens-bar .a11y-trigger");
     const targets = page.locator(`${surface.selector}:visible`);
     await expect(trigger).toBeVisible();
     expect(await targets.count()).toBeGreaterThan(0);
 
     const triggerBox = await trigger.boundingBox();
     expect(triggerBox).not.toBeNull();
+    expect(triggerBox!.y).toBeLessThan(100);
     const targetBoxes = await targets.evaluateAll((elements) =>
       elements.map((element) => {
         const rect = element.getBoundingClientRect();
@@ -163,8 +166,10 @@ test("world home titles keep a readable measure beside the plate", async ({
     expect((await page.goto(route))?.status(), `${route} should load`).toBe(200);
     const title = await page.locator(".world-home-hero h1").boundingBox();
     expect(title?.width, `${route} title width`).toBeGreaterThanOrEqual(320);
-    await expect(page.locator(".world-guide .wg-nav")).toHaveCSS("flex-direction", "row");
   }
+  expect((await page.goto("/apostles"))?.status(), "/apostles should load").toBe(200);
+  const apostlesTitle = await page.locator(".ap-home-title").boundingBox();
+  expect(apostlesTitle?.width, "/apostles title width").toBeGreaterThanOrEqual(320);
 });
 
 test("all eight world entrances adapt without document overflow", async ({
@@ -177,41 +182,88 @@ test("all eight world entrances adapt without document overflow", async ({
     expect(response?.status(), `${route} should load`).toBe(200);
     await expect(page.getByRole("heading", { level: 1 }).first()).toBeVisible();
     if (route === "/scriptures") {
-      // The picker retains its direct tools, with a compact shared section menu.
+      // The picker retains its direct tools.
       await expect(page.locator(".dw")).toBeVisible();
-      await expect(page.locator(".world-guide")).toBeVisible();
       await expect(page.getByRole("navigation", { name: "Start studying" }).getByRole("link")).toHaveCount(4);
       await expect(page.getByRole("region", { name: "Find a way into your question." })).toBeVisible();
+      if (isPhone) {
+        const brandBox = await page.locator(".world-brand-lockup").boundingBox();
+        const navBox = await page.locator(".site-navigation").boundingBox();
+        expect(brandBox).not.toBeNull();
+        expect(navBox).not.toBeNull();
+        expect(Math.abs(brandBox!.y - navBox!.y)).toBeLessThan(20);
+      }
       await expectNoDocumentOverflow(page);
       continue;
     }
     if (route === "/jesus") {
-      // His life remains the page, with the same compact section menu as the other worlds.
+      // His life remains the page.
       await expect(page.locator(".jl")).toBeVisible();
-      await expect(page.locator(".world-guide")).toBeVisible();
       await expect(page.locator(".jl-more a")).toHaveCount(9);
       await expectNoDocumentOverflow(page);
       continue;
     }
-    await expect(page.locator(".world-guide")).toBeVisible();
     await expectNoDocumentOverflow(page);
 
     if (isPhone) {
-      const menu = page.locator(".wg-mobile-menu");
-      const worlds = page.locator(".wg-worlds-link");
-      await expect(menu).toBeVisible();
-      await expect(worlds).toBeVisible();
-      await expect(page.locator(".wg-grid")).toBeHidden();
-
-      for (const target of [menu.locator(":scope > summary"), worlds]) {
-        const box = await target.boundingBox();
-        expect(box?.height).toBeGreaterThanOrEqual(44);
-        expect(box?.width).toBeGreaterThanOrEqual(44);
-      }
-    } else {
-      await expect(page.locator(".wg-grid")).toBeVisible();
+      // The section's pages live in the header menu; its button stays a full target.
+      const box = await page.locator(".site-nav-menu > summary").boundingBox();
+      expect(box?.height).toBeGreaterThanOrEqual(44);
+      expect(box?.width).toBeGreaterThanOrEqual(44);
     }
   }
+});
+
+test("every section home names its section once, in the header, and opens on its title", async ({ page }) => {
+  for (const route of WORLD_ROUTES) {
+    await page.goto(route);
+    const h1 = page.locator("main h1").first();
+    await expect(h1).toBeVisible();
+    // No label above the title, and no wayfinding box between header and page.
+    expect(await h1.evaluate((el) => el.previousElementSibling === null), `${route} has nothing above its title`).toBe(true);
+    const brand = (await page.locator("header .brand").innerText()).trim().toLowerCase();
+    const repeats = await h1.evaluate((title, name) => {
+      const top = title.getBoundingClientRect().top;
+      return [...document.querySelectorAll("main *")].filter((el) =>
+        el.children.length === 0 &&
+        el.getBoundingClientRect().top < top &&
+        (el as HTMLElement).innerText?.trim().toLowerCase() === name).length;
+    }, brand);
+    expect(repeats, `${route} repeats "${brand}" above its title`).toBe(0);
+  }
+});
+
+const ROOM_ROUTES = [
+  "/jesus/parables", "/jesus/words", "/jesus/life", "/jesus/lens", "/jesus/history", "/jesus/prophecy", "/jesus/risen", "/jesus/harmony",
+  "/church/faces", "/church/councils", "/church/giants", "/church/tree",
+  "/apostles/twelve", "/apostles/sent",
+  "/early/didache", "/early/ignatius", "/early/library", "/early/era/jewish",
+  "/angels/fall", "/angels/demons", "/angels/encounters", "/angels/vocabulary",
+  "/word/cases", "/word/free",
+  "/scriptures/protestant", "/scriptures/topics", "/scriptures/search", "/scriptures/canons", "/scriptures/graph",
+] as const;
+
+test("room pages leave the section name to the header", async ({ page }) => {
+  test.setTimeout(120_000);
+  for (const route of ROOM_ROUTES) {
+    await page.goto(route);
+    const brand = (await page.locator("header .brand").innerText()).trim().toLowerCase();
+    const above = await page.locator("main h1").first().evaluate((title) => {
+      const top = title.getBoundingClientRect().top;
+      return [...document.querySelectorAll("main *")]
+        .filter((el) => el.children.length === 0 && el.getBoundingClientRect().top < top)
+        .map((el) => (el as HTMLElement).innerText?.trim().toLowerCase());
+    });
+    expect(above, `${route} repeats "${brand}" above its title`).not.toContain(brand);
+    expect(above, `${route} labels its title "Scripture study"`).not.toContain("scripture study");
+  }
+});
+
+test("the writings shelf lists its eras once: filter buttons, then one heading per era", async ({ page }) => {
+  await page.goto("/early");
+  await expect(page.getByRole("group", { name: "Filter by era" })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "Jump to an era" })).toHaveCount(0);
+  await expect(page.locator("section.ew-era > .ew-era-head h2")).toHaveCount(4);
 });
 
 test("every Jesus room stays readable and truthful at this viewport", async ({
@@ -365,7 +417,7 @@ test("homepage and dense world tools remain readable at this viewport", async ({
     }
     const siteMenu = page
       .getByRole("navigation", { name: "Primary site navigation" })
-      .locator("summary");
+      .locator(".site-nav-menu > summary");
     const menuBox = await siteMenu.boundingBox();
     expect(menuBox?.height).toBeGreaterThanOrEqual(44);
     await siteMenu.click();
@@ -481,4 +533,132 @@ test("reading and accessibility choices persist without blocking keyboard use", 
     page.getByRole("dialog", { name: "Reading & accessibility" }),
   ).toBeHidden();
   await expect(trigger).toBeFocused();
+});
+
+test("the front door's story pictures scroll inside the first screen and open a story", async ({ page }) => {
+  await page.goto("/");
+  const strip = page.locator(".st-stories-strip");
+  await expect(strip.getByRole("link")).toHaveCount(27);
+  // One row that scrolls sideways by itself; the page never does.
+  const row = await strip.evaluate((list) => ({
+    scrolls: list.scrollWidth > list.clientWidth,
+    tops: new Set([...list.querySelectorAll("li")].map((item) => Math.round(item.getBoundingClientRect().top))).size,
+  }));
+  expect(row.scrolls).toBe(true);
+  expect(row.tops).toBe(1);
+  await expectNoDocumentOverflow(page);
+  // A keyboard user can step over the pictures to the link after them.
+  const skip = page.getByRole("link", { name: "Skip the story pictures" });
+  await skip.focus();
+  await expect(skip).toBeInViewport();
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("link", { name: /^All 27 stories/ })).toBeFocused();
+  await strip.getByRole("link", { name: "Noah" }).click();
+  await expect(page).toHaveURL(/\/scriptures\/stories\/noah$/);
+});
+
+test("long-intro catalog pages surface a primary link on the first phone screen and clean pages drop duplicate hero kickers", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const route of ["/early", "/early/library", "/apostles/twelve", "/church", "/evidence", "/word"]) {
+    await page.goto(route);
+    // The library's first-screen actions are its shelves, which open in place.
+    const firstScreenLinks = await page.locator(route === "/early/library" ? "main .ew-shelf > summary" : "main a[href]").evaluateAll((links) =>
+      links
+        .map((link) => {
+          const rect = link.getBoundingClientRect();
+          const style = getComputedStyle(link);
+          return {
+            href: link.getAttribute("href"),
+            bottom: rect.bottom,
+            top: rect.top,
+            height: rect.height,
+            visible: rect.width > 0 && rect.height > 0 && style.visibility !== "hidden" && style.display !== "none",
+          };
+        })
+        .filter((item) => item.visible && item.top >= 0 && item.bottom <= 844 && item.height >= 44),
+    );
+    expect(firstScreenLinks.length, `${route} should expose a >=44px link on screen 1 at 390x844`).toBeGreaterThan(0);
+  }
+
+  for (const route of [
+    "/about",
+    "/services",
+    "/work",
+    "/work/garovartabedian",
+    "/work/excel-handler",
+    "/hire",
+    "/resume",
+    "/contact",
+    "/labs",
+    "/sources",
+  ]) {
+    await page.goto(route);
+    const hasHeroKicker = await page.locator("main h1").first().evaluate((h1) => {
+      const prev = h1.previousElementSibling;
+      return Boolean(prev && (prev.classList.contains("kicker") || prev.tagName === "P"));
+    });
+    expect(hasHeroKicker, `${route} should not repeat a hero kicker above h1`).toBe(false);
+  }
+});
+
+test("a long section name wraps beside Find and Menu instead of pushing them to a second row on a phone", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const route of ["/word", "/word/cases", "/angels/demons", "/angels/stories/open-his-eyes"]) {
+    await page.goto(route);
+    const brandBox = await page.locator(".world-brand-lockup").boundingBox();
+    const navBox = await page.locator(".site-navigation").boundingBox();
+    expect(brandBox, `${route} brand`).not.toBeNull();
+    expect(navBox, `${route} navigation`).not.toBeNull();
+    const brandMiddle = brandBox!.y + brandBox!.height / 2;
+    const navMiddle = navBox!.y + navBox!.height / 2;
+    expect(Math.abs(brandMiddle - navMiddle), `${route} header should stay on one row`).toBeLessThan(12);
+    await expectNoDocumentOverflow(page);
+  }
+});
+
+test("section homes give their ways in once: buttons under the opening paragraph, nothing repeating them", async ({ page }) => {
+  await page.goto("/early");
+  await expect(page.locator(".world-hero-actions a")).toHaveCount(4);
+  await expect(page.locator(".world-home-hero-facets")).toHaveCount(0);
+
+  for (const [route, count] of [["/church", 5], ["/evidence", 4], ["/word", 4]] as const) {
+    await page.goto(route);
+    const hrefs = await page.locator(".world-hero-actions a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
+    expect(hrefs.length, `${route} hero links`).toBe(count);
+    expect(new Set(hrefs).size, `${route} hero links repeat`).toBe(count);
+  }
+});
+
+test("home titles share Fraunces display type and deep reference pages fold long inventories on phones", async ({ page }) => {
+  for (const route of [
+    "/",
+    "/scriptures",
+    "/jesus",
+    "/apostles",
+    "/early",
+    "/church",
+    "/angels",
+    "/word",
+    "/evidence",
+    "/work",
+  ]) {
+    await page.goto(route);
+    const fontFamily = await page
+      .locator("main h1")
+      .first()
+      .evaluate((el) => getComputedStyle(el).fontFamily.toLowerCase());
+    expect(fontFamily, `${route} h1 should render in Fraunces`).toContain("fraunces");
+  }
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const route of ["/angels", "/evidence", "/evidence/frameworks"]) {
+    await page.goto(route);
+    const screens = await page.evaluate(
+      () => document.documentElement.scrollHeight / 844,
+    );
+    expect(
+      screens,
+      `${route} should fold deep inventories below 34 phone screens (was 49-58)`,
+    ).toBeLessThan(34);
+  }
 });

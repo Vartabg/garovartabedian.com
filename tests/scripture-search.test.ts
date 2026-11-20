@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
+import { searchExpansion } from "../src/lib/scriptures/search-expansion";
 import {
   searchVersesFrom,
   type SearchDataSource,
@@ -275,6 +277,101 @@ describe("scripture search", () => {
       { id: "PEACOCK", section: "P", items: [{ label: "Bird", refs: ["GEN 1:2"], depth: 0 }] },
     ] } }));
     assert.deepEqual(result.topics.map(topic => topic.id), ["PEACE"]);
+  });
+
+  it("caps single-word book verification to the requested limit while still promoting complete multi-word phrases", async () => {
+    const loadedBooks: string[] = [];
+    const books = {
+      GEN: { trans: "web" as const, book: "GEN", name: "Genesis", chapters: [["Let there be light, and light was good."]] },
+      EXO: { trans: "web" as const, book: "EXO", name: "Exodus", chapters: [["The light shines in the camp."]] },
+    };
+    const makeSource = (): SearchDataSource => ({
+      ...source({
+        li: { light: [[0, 1, 1], [1, 1, 1]] },
+        sh: { shines: [[1, 1, 1]] },
+      }),
+      loadBook: async (book) => {
+        loadedBooks.push(book);
+        return books[book as "GEN" | "EXO"];
+      },
+    });
+
+    const singleWord = await searchVersesFrom("light", makeSource(), 1);
+    assert.equal(singleWord.totalHits, 2);
+    assert.equal(singleWord.hits.length, 1);
+    assert.deepEqual(loadedBooks, ["GEN"]);
+
+    loadedBooks.length = 0;
+    const phrase = await searchVersesFrom("light shines", makeSource(), 1);
+    assert.equal(phrase.hits[0]?.book, "EXO");
+    assert.equal(phrase.hits[0]?.match, "phrase");
+    assert.ok(loadedBooks.includes("EXO"));
+  });
+
+  it("maps every vocabulary bridge topic to a populated Nave entry and gives loneliness consolation/sorrow hits", async () => {
+    const naveIndex: NaveIndex = JSON.parse(
+      readFileSync("public/scriptures/nave/index.json", "utf8"),
+    );
+    const topicMap = new Map(naveIndex.topics.map((t) => [t.id, t]));
+    const sampleQueries = [
+      "loneliness",
+      "anxiety",
+      "grief",
+      "sadness",
+      "afraid",
+      "abandoned",
+      "anger",
+      "forgive",
+      "guilt",
+      "shame",
+      "doubt",
+      "tired",
+      "jealous",
+      "wealth",
+      "poverty",
+      "generous",
+      "injustice",
+      "conflict",
+      "hospitality",
+      "betrayal",
+      "pride",
+      "patience",
+      "persecution",
+      "afterlife",
+      "save",
+      "wisdom",
+      "temptation",
+      "thankful",
+    ];
+    for (const q of sampleQueries) {
+      const { topics } = searchExpansion(q);
+      assert.ok(topics.length > 0, `expected topics for ${q}`);
+      for (const id of topics) {
+        const meta = topicMap.get(id);
+        assert.ok(meta && meta.refCount > 0, `broken Nave topic ${id} for ${q}`);
+      }
+    }
+
+    const fullCanons: Canons = JSON.parse(
+      readFileSync("public/scriptures/canons.json", "utf8"),
+    );
+    const metaJson: { stopwords: string[] } = JSON.parse(
+      readFileSync("public/scriptures/search/web/meta.json", "utf8"),
+    );
+    const loneliness = await searchRelatedPassagesFrom("loneliness", {
+      canons: fullCanons,
+      index: naveIndex,
+      stopwords: metaJson.stopwords,
+      loadShard: async (section) =>
+        JSON.parse(
+          readFileSync(`public/scriptures/nave/${section}.json`, "utf8"),
+        ) as NaveTopicFile,
+    });
+    assert.ok(loneliness.hits.length > 0);
+    assert.notEqual(
+      `${loneliness.hits[0]?.book} ${loneliness.hits[0]?.chapter}:${loneliness.hits[0]?.verse}`,
+      "DEU 13:6",
+    );
   });
 
 });

@@ -56,9 +56,10 @@ body [data-reading-surface] a { text-underline-offset: .22em; }
 .reading-modes button { border: 0; border-bottom: 3px solid transparent; background: none; color: inherit; font: inherit; min-height: 44px; cursor: pointer; }
 .reading-modes button[aria-pressed="true"] { border-bottom-color: currentColor; }
 .reading-settings-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,12rem),1fr)); gap: 1rem; }
-.reading-settings-grid > div { display: grid; gap: .4rem; }
+.reading-settings-grid > div { display: grid; gap: .4rem; min-width: 0; }
 .reading-appearance { font: .875rem/1.6 var(--font-interface); text-align: start; }
 .reading-appearance :is(select,button) { color: var(--ink); background: var(--surface); border: 1px solid var(--line); font: inherit; min-height: 44px; padding: .5rem; max-width: 100%; }
+.reading-appearance select { width: 100%; min-width: 0; }
 .reading-toggle { display: flex; align-items: center; gap: .7rem; min-height: 44px; }
 .reading-toggle input { width: 1.1rem; height: 1.1rem; accent-color: currentColor; }
 .reading-help { color: var(--muted); font: .85rem/1.7 var(--font-interface); }
@@ -132,7 +133,7 @@ html[data-reading-monochrome="true"] [data-reading-surface] :is(.reading-tools,.
 body [data-reading-surface].ew-reading-page .ew-section .ew-para > p {
   font: var(--reading-size)/var(--reading-leading) var(--reading-face); margin-block: 1.25em;
 }
-body .reading-narrative p:not(.kicker,.scr-meta,.world-cite,.world-note,[class$="-meta"],[class$="-kicker"],[class$="-eyebrow"],[class$="-number"]):not(nav p,header p,summary p,table p,[role="dialog"] p,.world-pair p,.maplibregl-map p,.ui-panel p) {
+body .reading-narrative p:not(.kicker,.scr-meta,.world-cite,.world-note,[class$="-meta"],[class$="-kicker"],[class$="-eyebrow"],[class$="-number"]):not(nav p,header p,summary p,table p,[role="dialog"] p,.world-pair p,.maplibregl-map p,.ui-panel p,.xray-tag p) {
   font-family: var(--reading-face); font-size: var(--reading-size); line-height: var(--reading-leading); max-width: var(--reading-measure);
 }
 /* Stable citation and return offsets. Images keep their existing lazy loading. */
@@ -197,3 +198,32 @@ body [data-reading-surface].ew-reading-page .ew-section .reading-formatted p {
 .scr-flow > .scr-reading-paragraph:first-child { margin-block-start: 0; }
 .scr-read-text .scr-verse { white-space: pre-line; }
 .scr-flow .scr-lined-verse, .scr-flow .scr-lined-verse .scr-verse { display: block; }
+
+/* Two study lines on the verse a told story turns on (PassageStudyLinks). They
+   sit inside boxes with their own paper: cream on the angel pages, the page
+   surface on the apostle pages and in the Jesus rooms. Every colour follows the
+   text of the box (`inherit`, `currentColor`), so the rows read in light, dark
+   and each box. The selectors outrank `.visual-story-passage a` and the
+   Dothan focus colour, which assume the dark scene. */
+body .passage-study { margin-top: 1.25rem; font-family: inherit; }
+body .passage-study ul {
+  margin: 0; padding: 0; list-style: none;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+}
+body .passage-study li { margin: 0; padding: 0; }
+body .passage-study li > a {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  min-height: 3rem; padding-block: .65rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  color: inherit; font-size: 1rem; line-height: 1.35; text-decoration: none;
+}
+body .passage-study li > a > span:first-child { min-width: 0; }
+body .passage-study li > a > span:last-child { flex: none; }
+body .passage-study li > a:is(:hover, :focus-visible) > span:first-child { text-decoration: underline; text-underline-offset: 3px; }
+body .passage-study li > a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+/* Dothan indents its verses and its chapter link; the rows line up with them. */
+body .dothan-passage-text .passage-study { margin: 1.5rem 0 0 2.5rem; }
+@media (max-width: 700px) { body .dothan-passage-text .passage-study { margin-left: 2rem; } }
+@media (forced-colors: active) {
+  body .passage-study ul, body .passage-study li > a { border-color: CanvasText; }
+}

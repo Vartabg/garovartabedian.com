@@ -61,7 +61,7 @@ export default function GraphPage() {
 
   return (
     <div className="scr-graph">
-      <StudyPageHeader path="/scriptures/graph" action="Choose two verses to trace a path, or start with a book connection below. Open each passage to judge the connection in context." />
+      <StudyPageHeader path="/scriptures/graph" action={iconicPaths[0] ? `${iconicPaths[0].title}: ${iconicPaths[0].from} to ${iconicPaths[0].to}. Open each passage to judge the connection in context.` : "Choose two verses to trace a path, or start with a book connection below. Open each passage to judge the connection in context."} />
       <p className="scr-meta">Built from {fmt(meta.stats.verses)} indexed verses and{" "}
         {fmt(meta.stats.distinctEdges)} distinct cross-reference links. Open the
         passages to judge each connection in context.

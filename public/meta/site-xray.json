@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "counts": {
+    "buildScripts": 35,
+    "publicJson": 7673,
+    "unitTestFiles": 172,
+    "browserSpecs": 66,
+    "smokeChecks": 15
+  },
+  "routeTests": {
+    "about": [
+      "buttons.spec.ts",
+      "find-overlay.spec.ts",
+      "job-report.spec.ts",
+      "navigation-reflow.spec.ts",
+      "navigation.spec.ts",
+      "og-images.spec.ts",
+      "recruiter-path.spec.ts",
+      "work-demos.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "angels": [
+      "angels-exploration.spec.ts",
+      "angels-stories-collection.spec.ts",
+      "angels-story-touch.spec.ts",
+      "angels-story.spec.ts",
+      "continuity.spec.ts",
+      "discovery.spec.ts",
+      "dossier-release.spec.ts",
+      "navigation.spec.ts",
+      "section-homes-xray.spec.ts",
+      "shared-reading-a11y.spec.ts",
+      "story-verse-links.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "apostles": [
+      "apostles-stories.spec.ts",
+      "navigation.spec.ts",
+      "og-images.spec.ts",
+      "section-homes-xray.spec.ts",
+      "shared-reading-a11y.spec.ts",
+      "shared-reading.spec.ts",
+      "story-verse-links.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "book": [
+      "og-images.spec.ts",
+      "scripture-edition-counts.spec.ts",
+      "scripture-genesis-context.spec.ts",
+      "scripture-jubilees.spec.ts",
+      "scripture-search.spec.ts"
+    ],
+    "chapter": [
+      "all-text-coverage.spec.ts",
+      "angels-exploration.spec.ts",
+      "angels-stories-collection.spec.ts",
+      "angels-story.spec.ts",
+      "engineer-xray.spec.ts",
+      "find-overlay.spec.ts",
+      "jesus-life-lenses.spec.ts",
+      "navigation-reflow.spec.ts",
+      "navigation.spec.ts",
+      "offline-accessibility.spec.ts",
+      "offline-reader.spec.ts",
+      "og-images.spec.ts",
+      "playable-stories-navigation.spec.ts",
+      "scripture-doorways.spec.ts",
+      "scripture-exodus-context.spec.ts",
+      "scripture-genesis-context.spec.ts",
+      "scripture-jubilees.spec.ts",
+      "scripture-leviticus-context.spec.ts",
+      "scripture-original-alignment.spec.ts",
+      "scripture-path-tracer.spec.ts",
+      "scripture-search.spec.ts",
+      "scripture-speech.spec.ts",
+      "scripture-study-context.spec.ts",
+      "scripture-study.spec.ts",
+      "scriptures-hub.spec.ts",
+      "scriptures-study-flow.spec.ts",
+      "shared-reading-a11y.spec.ts",
+      "shared-reading.spec.ts",
+      "word-bridge.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "church": [
+      "buttons.spec.ts",
+      "continuity.spec.ts",
+      "find-overlay.spec.ts",
+      "navigation.spec.ts",
+      "og-images.spec.ts",
+      "research-audio.spec.ts",
+      "section-homes-xray.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "early": [
+      "all-text-coverage.spec.ts",
+      "buttons.spec.ts",
+      "continuity.spec.ts",
+      "early-library.spec.ts",
+      "navigation.spec.ts",
+      "og-images.spec.ts",
+      "reading-layout.spec.ts",
+      "reading-path.spec.ts",
+      "section-homes-xray.spec.ts",
+      "semantic-corpus.spec.ts",
+      "shared-reading-a11y.spec.ts",
+      "shared-reading.spec.ts",
+      "thomas-parables.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "evidence": [
+      "continuity.spec.ts",
+      "discovery.spec.ts",
+      "evidence-journey.spec.ts",
+      "navigation.spec.ts",
+      "section-homes-xray.spec.ts",
+      "semantic-corpus.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "home": [
+      "all-text-coverage.spec.ts",
+      "buttons.spec.ts",
+      "discovery.spec.ts",
+      "engineer-xray.spec.ts",
+      "find-overlay.spec.ts",
+      "navigation-reflow.spec.ts",
+      "navigation.spec.ts",
+      "og-images.spec.ts",
+      "public-search-relevance.spec.ts",
+      "scriptures-study-flow.spec.ts",
+      "section-homes-xray.spec.ts",
+      "thomas-parables.spec.ts",
+      "word-bridge.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "jesus": [
+      "buttons.spec.ts",
+      "continuity.spec.ts",
+      "dossier-release.spec.ts",
+      "find-overlay.spec.ts",
+      "interactive-connections.spec.ts",
+      "jesus-first-pass.spec.ts",
+      "jesus-harmony.spec.ts",
+      "jesus-life-lenses.spec.ts",
+      "journey-map-contrast.spec.ts",
+      "navigation-reflow.spec.ts",
+      "navigation.spec.ts",
+      "parables-xray.spec.ts",
+      "section-homes-xray.spec.ts",
+      "shared-reading-a11y.spec.ts",
+      "shared-reading.spec.ts",
+      "story-verse-links.spec.ts",
+      "terrain-worker.spec.ts",
+      "thomas-parables.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "scriptures": [
+      "all-text-coverage.spec.ts",
+      "apostles-stories.spec.ts",
+      "continuity.spec.ts",
+      "discovery.spec.ts",
+      "interactive-connections.spec.ts",
+      "navigation.spec.ts",
+      "og-images.spec.ts",
+      "playable-stories-navigation.spec.ts",
+      "polyglot.spec.ts",
+      "public-meaning-search.spec.ts",
+      "public-search-relevance.spec.ts",
+      "reading-path.spec.ts",
+      "scripture-doorways.spec.ts",
+      "scripture-edition-counts.spec.ts",
+      "scripture-investigation.spec.ts",
+      "scripture-jubilees.spec.ts",
+      "scripture-original-alignment.spec.ts",
+      "scripture-path-tracer.spec.ts",
+      "scripture-resonance.spec.ts",
+      "scripture-search.spec.ts",
+      "scripture-speech.spec.ts",
+      "scripture-study-context.spec.ts",
+      "scripture-study.spec.ts",
+      "scripture-topics.spec.ts",
+      "scriptures-hub.spec.ts",
+      "scriptures-study-flow.spec.ts",
+      "section-homes-xray.spec.ts",
+      "shared-reading-a11y.spec.ts",
+      "shared-reading.spec.ts",
+      "story-verse-links.spec.ts",
+      "word-bridge.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "sources": [
+      "navigation.spec.ts",
+      "og-images.spec.ts",
+      "sources-groups.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "word": [
+      "navigation-reflow.spec.ts",
+      "navigation.spec.ts",
+      "og-images.spec.ts",
+      "section-homes-xray.spec.ts",
+      "shared-reading.spec.ts",
+      "worlds-responsive.spec.ts"
+    ],
+    "work": [
+      "accessibility-proof.spec.ts",
+      "continuity.spec.ts",
+      "engineer-xray.spec.ts",
+      "job-report.spec.ts",
+      "merge-monitor-demo.spec.ts",
+      "og-images.spec.ts",
+      "recruiter-path.spec.ts",
+      "work-demos.spec.ts",
+      "worlds-responsive.spec.ts"
+    ]
+  },
+  "worlds": {
+    "scriptures": {
+      "publicJson": 7516,
+      "scripts": 36
+    },
+    "jesus": {
+      "publicJson": 33,
+      "scripts": 8
+    },
+    "apostles": {
+      "publicJson": 2,
+      "scripts": 1
+    },
+    "early": {
+      "publicJson": 57,
+      "scripts": 8
+    },
+    "church": {
+      "publicJson": 7,
+      "scripts": 3
+    },
+    "word": {
+      "publicJson": 4,
+      "scripts": 0
+    },
+    "angels": {
+      "publicJson": 8,
+      "scripts": 4
+    },
+    "evidence": {
+      "publicJson": 4,
+      "scripts": 0
+    }
+  }
+}

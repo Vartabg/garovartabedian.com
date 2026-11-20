@@ -5,11 +5,12 @@ import type { AngelsPlateMeta } from "@/lib/angels/media-plates";
 import { segmentText, type GlossSeen } from "@/lib/glossary/segment";
 import { traditionFor } from "@/lib/scriptures/server";
 import { parseRef } from "@/lib/scriptures/refs";
-import type { OrderData, TeachingData } from "@/lib/angels/types";
+import type { EncountersData, FallData, OrderData, TeachingData } from "@/lib/angels/types";
 import type { Canons } from "@/lib/scriptures/types";
 import { GlossSegments } from "../_components/Gloss";
 import WorldDisclosure from "../_components/WorldDisclosure";
 import WorldHomeHero from "../_components/WorldHomeHero";
+import ArcSpine from "./ArcSpine";
 import Descent from "./Descent";
 import FeaturedAngelStory from "./FeaturedAngelStory";
 import { EvidenceLegend } from "./EvidenceNote";
@@ -287,12 +288,16 @@ function WorldSynthesis() {
 /** Server-rendered world body; glossary disclosures remain narrow client islands. */
 export default function AngelsHome({
   data,
+  fall,
+  encounters,
   teaching,
   canons,
   stats,
   plates,
 }: {
   data: OrderData;
+  fall: FallData;
+  encounters: EncountersData;
   teaching: TeachingData;
   canons: Canons;
   stats: AngelsWorldStats;
@@ -331,7 +336,6 @@ export default function AngelsHome({
     <>
       <WorldHomeHero
         world="angels"
-        eyebrow="A field guide to the unseen"
         title="Angels & Demons."
         facets={[]}
         actions={
@@ -353,6 +357,14 @@ export default function AngelsHome({
       <FeaturedAngelStory />
       <StartHere plates={plates} />
 
+      <WorldDisclosure
+        label="The whole story by era"
+        note="Six eras from before the world to the end, traced with evidence labels."
+        variant="deep"
+      >
+        <ArcSpine data={{ order: data, fall, encounters, teaching }} canons={canons} seen={glossSeen} />
+      </WorldDisclosure>
+
       <section id="order-ladder" className="an-order-atlas world-focus-anchor" aria-labelledby="an-order-heading">
         <header className="an-atlas-heading">
           <div>
@@ -373,52 +385,55 @@ export default function AngelsHome({
         <Descent bands={data.bands} canons={canons} seen={glossSeen} plates={plates} />
       </section>
 
-      <AngelsFieldGuide data={data} stats={stats} />
-
-      <section className="an-named-section" aria-labelledby="named-ones">
-      <h2 className="an-lane holy" id="named-ones">The named ones</h2>
-      <p className="scr-meta">
-        For all its hosts, scripture gives remarkably few names.
-      </p>
-      <div className="an-names">
-        {data.named.map((n) => {
-          const q = refLink(n.quoteRef);
-          return (
-            <article className="an-name-card" key={n.name} id={n.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}>
-              <h3>{n.name}</h3>
-              <p className="an-name-meaning">
-                <ServerGlossText text={n.meaning} seen={glossSeen} />
-              </p>
-              <blockquote>
-                &ldquo;
-                <ServerGlossText text={n.quote} seen={glossSeen} />
-                &rdquo;{" "}
-                {q && (
-                  <Link className="scr-ref" href={q.href}>
-                    — {q.label}
-                  </Link>
-                )}
-              </blockquote>
-              <p>
-                <ServerGlossText text={n.line} seen={glossSeen} />
-              </p>
-              <Refs refs={n.refs} />
-              {n.canonNote && (
-                <p className="an-canon-note">
-                  <ServerGlossText text={n.canonNote} seen={glossSeen} />
+      <WorldDisclosure
+        label="The named ones"
+        note={`${data.named.length} figures named in scripture and apocrypha, with meanings and passages.`}
+      >
+        <section className="an-named-section" aria-labelledby="named-ones">
+        <h2 className="an-lane holy" id="named-ones">The named ones</h2>
+        <p className="scr-meta">
+          For all its hosts, scripture gives remarkably few names.
+        </p>
+        <div className="an-names">
+          {data.named.map((n) => {
+            const q = refLink(n.quoteRef);
+            return (
+              <article className="an-name-card" key={n.name} id={n.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}>
+                <h3>{n.name}</h3>
+                <p className="an-name-meaning">
+                  <ServerGlossText text={n.meaning} seen={glossSeen} />
                 </p>
-              )}
-              {n.seeAlso && (
-                <span className="an-see-also">
-                  <Link href={n.seeAlso.href}>{n.seeAlso.label} →</Link>
-                </span>
-              )}
-            </article>
-          );
-        })}
-      </div>
+                <blockquote>
+                  &ldquo;
+                  <ServerGlossText text={n.quote} seen={glossSeen} />
+                  &rdquo;{" "}
+                  {q && (
+                    <Link className="scr-ref" href={q.href}>
+                      — {q.label}
+                    </Link>
+                  )}
+                </blockquote>
+                <p>
+                  <ServerGlossText text={n.line} seen={glossSeen} />
+                </p>
+                <Refs refs={n.refs} />
+                {n.canonNote && (
+                  <p className="an-canon-note">
+                    <ServerGlossText text={n.canonNote} seen={glossSeen} />
+                  </p>
+                )}
+                {n.seeAlso && (
+                  <span className="an-see-also">
+                    <Link href={n.seeAlso.href}>{n.seeAlso.label} →</Link>
+                  </span>
+                )}
+              </article>
+            );
+          })}
+        </div>
 
-      </section>
+        </section>
+      </WorldDisclosure>
 
       <EvidenceMethod />
       <WorldDisclosure
@@ -452,7 +467,13 @@ export default function AngelsHome({
       >
         <TeachingSection data={teaching} canons={canons} glossSeen={glossSeen} />
       </WorldDisclosure>
-      <WorldSynthesis />
+      <WorldDisclosure
+        label="The field guide and the worksheets"
+        note="Ranks, vocabulary, and research dossiers, after the story."
+      >
+        <AngelsFieldGuide data={data} stats={stats} />
+        <WorldSynthesis />
+      </WorldDisclosure>
     </>
   );
 }

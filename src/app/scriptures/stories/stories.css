@@ -151,7 +151,6 @@
 }
 
 .scr-cites a,
-.scr-story-chapters a,
 .scr-step-nav label {
   color: var(--accent);
 }
@@ -183,49 +182,210 @@
   margin-top: 0.9rem;
 }
 
-.scr-story-chapters { margin-top: 1.5rem; }
+.scr-story-more { margin-top: 1.5rem; }
 
-.scr-story-chapters summary {
-  cursor: pointer;
+.scr-story-more ul {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--line);
+  list-style: none;
+}
+
+.scr-story-more a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3rem;
+  padding-block: 0.65rem;
+  border-top: 1px solid var(--line);
   color: var(--ink);
   font-size: 1.05rem;
+  line-height: 1.35;
+  text-decoration: none;
 }
 
-.scr-story-chapters ol {
+.scr-story-more a > span:last-child { color: var(--accent); }
+
+.scr-story-more a:is(:hover, :focus-visible) > span:first-child {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* The shelf: every told story in one list. The page wrap sets the width; story pages keep .scr-story. */
+.storyshelf {
+  padding-bottom: 3rem;
+}
+
+.storyshelf-heading {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem 0.9rem;
-  margin: 0.8rem 0 0;
-  padding: 0;
-  list-style: none;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1.5rem;
 }
 
-.scr-story-list {
-  margin: 1.5rem 0 0;
-  padding: 0;
-  list-style: none;
+.storyshelf-heading a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.storyshelf-heading h1 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.storyshelf-lead {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.storyshelf-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+}
+
+/* Eleven words have to fit a phone in few rows: same target height, less side padding. */
+.storyshelf-choices :where(.ui-button) {
+  padding-inline: 0.6rem;
+}
+
+.storyshelf-choices :where(.ui-button)[aria-pressed="true"] {
+  --_button-bg: var(--ink);
+  --_button-fg: var(--surface);
+  --_button-border: var(--ink);
+  --_button-hover: var(--ink);
+}
+
+.storyshelf-count {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  min-height: 2.75rem;
+  margin-top: 0.9rem;
+  padding-top: 0.5rem;
   border-top: 1px solid var(--line);
 }
 
-.scr-story-list a {
-  display: block;
-  padding: 1rem 0;
+.storyshelf-count p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.storyshelf-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 0.9rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .storyshelf-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem 1.25rem;
+  }
+}
+
+/* A chosen word: rows, so each line and verse has room beside its picture. */
+.storyshelf-list--rows {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+@media (min-width: 52rem) {
+  .storyshelf-list--rows {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 2rem;
+  }
+}
+
+.storyshelf-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
   color: var(--ink);
   text-decoration: none;
-  border-bottom: 1px solid var(--line);
 }
 
-.scr-story-list h2 {
+.storyshelf-list--rows .storyshelf-card {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.storyshelf-picture {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background: color-mix(in oklab, var(--ink) 10%, transparent);
+}
+
+.storyshelf-list--rows .storyshelf-picture {
+  flex: none;
+  width: 7.25rem;
+}
+
+.storyshelf-picture img {
+  object-fit: cover;
+}
+
+.storyshelf-words {
+  min-width: 0;
+}
+
+.storyshelf-words h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
-.scr-story-list p,
-.scr-story-ref {
-  margin: 0.35rem 0 0;
+.storyshelf-card:is(:hover, :focus-visible) h2 {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.storyshelf-ref {
+  margin: 0.2rem 0 0;
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.storyshelf-why {
+  margin: 0.45rem 0 0;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.storyshelf-why span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.storyshelf-note {
+  margin: 2.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
   line-height: 1.45;
 }
 

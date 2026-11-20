@@ -42,9 +42,6 @@ export default function SentRoom({
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/apostles">The Apostles</Link>
-      </p>
       <h1>The sending.</h1>
       <p className="lede">
         <GlossText text={data.intro} seen={glossSeen} />

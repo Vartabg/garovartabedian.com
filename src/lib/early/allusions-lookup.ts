@@ -240,3 +240,12 @@ export function earlyAllusionsForVerse(
   const key = `${book}:${chapter}:${verse}`;
   return SCRIPTURE_EARLY_ALLUSIONS[key] ?? [];
 }
+
+/** The first hosted early writing that quotes this chapter, if one does. */
+export function earlyAllusionForChapter(book: string, chapter: number): EarlyAllusionHit | null {
+  const prefix = `${book}:${chapter}:`;
+  for (const [key, hits] of Object.entries(SCRIPTURE_EARLY_ALLUSIONS)) {
+    if (key.startsWith(prefix) && hits[0]) return hits[0];
+  }
+  return null;
+}

@@ -122,9 +122,6 @@ export default async function EarlyTextPage({ params }: PageProps) {
 
   return (
     <ReadingSurface className="world-reading-page ew-reading-page" hasTrace={!!allusionFile?.allusions.length}>
-      <p className="kicker">
-        <Link href="/early">The Writings</Link>
-      </p>
       <h1>{text.title}</h1>
       <FromHere label={EARLY_TEXTS.find((item) => item.id === text.id)?.title ?? text.title} links={fromHere} />
       <ShelfCanonStatus textId={text.id} />

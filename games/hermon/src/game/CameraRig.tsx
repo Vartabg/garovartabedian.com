@@ -1,0 +1,130 @@
+import { useMemo, useRef } from 'react';
+import { useFrame } from '@react-three/fiber';
+import { useRapier } from '@react-three/rapier';
+import { Euler, Vector3, Quaternion, type Mesh, type PerspectiveCamera } from 'three';
+import { runtime } from './runtime';
+import { presentation as pose, CHASE_HEAD } from './presentation';
+import { baseFovStep, boomFor, CAM, fovFor, hipFovFor, shortWeight } from './cameraFx';
+import { useGame } from './store';
+import { boomBlocks } from './boomFilter';
+import { strike } from './strike';
+import { banish, MODE } from './banishState';
+import { isElite } from './encounter';
+import { flightFeel } from './flightFeel';
+import { clearCombatSight, createCombatSight } from './combatSight';
+import { createCombatCamera, stepCombatCamera, createFinisherFocus, stepFinisherFocus, rememberCombatPilot, aheadOf, createWatch, stepWatch, combatCameraReadout as readout } from './combatCamera';
+const rotation = new Euler(0, 0, 0, 'YXZ'), q = new Quaternion(), desired = new Vector3(), dir = new Vector3(), head = new Vector3();
+const shakeEuler = new Euler(0, 0, 0, 'YXZ'), shake = new Quaternion(), axis = new Vector3();
+// Speed-widened FOV, damped on its own so the ADS drop and shot punches never compound into the damp. Synced to c.fov on init.
+// Short landscape screens get a narrower hip FOV and a closer boom (cameraFx.shortWeight); a hip change shifts baseFov, never glides.
+let baseFov = NaN, lastHip = NaN, lastW = NaN;
+const statKeys = ['drawCalls', 'triangles', 'geometries', 'textures'] as const;
+const moveKeys = ['KeyW', 'KeyA', 'KeyS', 'KeyD', 'KeyE', 'KeyQ', 'Space'];
+const identity = { x: 0, y: 0, z: 0, w: 1 };
+const level = { x: 0, y: 0, z: 0 };
+const watch = createWatch();
+export default function CameraRig() {
+  const { world, rapier } = useRapier();
+  const initialized = useRef(false), epoch = useRef(-1), marker = useRef<Mesh>(null);
+  const combat = useRef(createCombatCamera()), clearance = useRef(createCombatSight()), finishing = useRef(createFinisherFocus());
+  const sight = useMemo(() => new rapier.Ray({ x: 0, y: 0, z: 0 }, { x: 0, y: 0, z: -1 }), [rapier]);
+  const boom = useRef(new Vector3()), probe = useMemo(() => new rapier.Ball(.28), [rapier]);
+  useFrame(({ camera, invalidate, gl, size }, dt) => {
+    const state = useGame.getState();
+    if (!state.ready) { invalidate(); return; }
+    const persp = 'fov' in camera ? camera as PerspectiveCamera : null;
+    const aspect = persp ? persp.aspect : 1, w = shortWeight(size.height, aspect), hip = hipFovFor(aspect, w);
+    const resized = w !== lastW || hip !== lastHip;
+    // Paused, the view stays frozen, except that a rotation or resize re-frames it once at zero elapsed time (no damp or spring moves).
+    if (state.paused && initialized.current && !resized) return;
+    const elapsed = state.paused ? 0 : Math.min(dt, .05), shooter = runtime.shooter, fx = shooter.camFx, aim = shooter.aim, reduced = state.reduced;
+    const blend = reduced ? 0 : aim.blend;
+    const steering = moveKeys.some(k => runtime.keys.has(k)) || runtime.thumb.active || runtime.stick.active || runtime.trackpad.active;
+    const finisher = stepFinisherFocus(finishing.current, { last: banish.last, mode: banish.mode[banish.last], phase: strike.phase,
+      brake: flightFeel.brake, steering: steering || state.camera !== 'third' || state.reduced || !!runtime.landGoal, manual: combat.current.manual > 0 });
+    // A sword string is one engagement for the camera: it stays on the demon between cuts instead of pumping in and out, and a
+    // step-in from above or below turns the view to the demon without pitching the pilot down onto it.
+    const stringing = finisher < 0 && strike.target >= 0 && (strike.phase === 1 ? strike.lunge : strike.phase === 2 && strike.hold > 0 && !strike.last);
+    if (stringing) { const c = shooter.targets[strike.target].c, eye = pose.position.y + .65; level.x = c.x; level.y = eye + (c.y - eye) * .35; level.z = c.z; }
+    // A lesser demon cast down: the view follows it most of the way to where it strikes, without turning the pilot, holds a
+    // beat on where it struck, and comes back. Flying on or looking elsewhere drops it for good (combatCamera.stepWatch).
+    const cast = banish.last, casting = cast >= 0 && !isElite(cast) && banish.mode[cast] === MODE.cast;
+    stepWatch(watch, { cast, casting, flown: runtime.flown, looked: combat.current.manual > 0, open: finisher < 0 && !stringing && strike.phase !== 1,
+      ahead: aheadOf(runtime.yaw, pose.position, casting ? shooter.drones.pos[cast] : level), dt: elapsed });
+    if (watch.falling) { const c = shooter.drones.pos[cast], eye = pose.position.y + .65; level.x = c.x; level.y = eye + (c.y - eye) * .6; level.z = c.z; }
+    const watching = watch.watching;
+    const framed = stringing || watching;
+    const focus = finisher >= 0 ? banish.base[finisher] : framed ? level : strike.aim, phase = finisher >= 0 || framed ? 1 : strike.phase;
+    const frame = stepCombatCamera(combat.current, { yaw: pose.viewYaw, pitch: pose.viewPitch, pilotYaw: runtime.yaw, pilotPitch: runtime.pitch,
+      epoch: runtime.poseEpoch, enabled: state.shooter && state.camera === 'third' && !runtime.landGoal, reduced,
+      phase, target: finisher >= 0 ? finisher : watching ? cast : strike.target, aim: focus, hero: pose.position, aspect, dt: elapsed, release: watch.dropped });
+    if (frame.tracking && !watching) { runtime.yaw = frame.yaw; runtime.pitch = frame.pitch; }
+    rememberCombatPilot(frame, runtime.yaw, runtime.pitch);
+    // Recoil kick joins the view; an idle kick adds nothing (adding a literal 0 could turn -0 into +0).
+    rotation.set(fx.kickP === 0 ? frame.pitch : frame.pitch + fx.kickP, fx.kickY === 0 ? frame.yaw : frame.yaw + fx.kickY, 0);
+    q.setFromEuler(rotation);
+    head.copy(pose.position); head.y += CHASE_HEAD;
+    if (state.camera === 'third') boomFor(blend, aspect, desired, w); else desired.set(0, 0, 0);
+    desired.multiplyScalar(frame.scale).applyQuaternion(q);
+    const snap = state.reduced || !initialized.current || epoch.current !== runtime.poseEpoch || resized;
+    if (!snap && frame.weight > .001 && desired.length() > .01) {
+      // Orientation is already damped by the combat planner: orbit with it, never lerp a chord through the angel.
+      const distance = boom.current.length() + (desired.length() - boom.current.length()) * (1 - Math.exp(-12 * elapsed));
+      boom.current.copy(desired).setLength(distance);
+    } else boom.current.lerp(desired, snap ? 1 : 1 - Math.exp(-12 * elapsed));
+    const length = boom.current.length();
+    if (length > .05) {
+      dir.copy(boom.current).divideScalar(length);
+      const hit = world.castShape(head, identity, dir, probe, .04, length, false, undefined, undefined, undefined, undefined, boomBlocks);
+      if (hit) boom.current.setLength(Math.max(0, hit.time_of_impact - .08));
+    }
+    if (snap || !frame.tracking || phase !== 1) { clearance.current.distance = Infinity; clearance.current.hold = 0; }
+    if (frame.tracking && phase === 1) clearCombatSight(world, sight, head, boom.current, focus, clearance.current, elapsed);
+    // Both camera and suit consume the same interpolated anchor. Only the boom eases.
+    camera.position.copy(head).add(boom.current); camera.quaternion.copy(q);
+    runtime.cameraDistance = camera.position.distanceTo(pose.position);
+    // The unshaken camera ray (kick included) for the shooter: shots, assist, drone perception and the suit aim read it.
+    aim.origin.x = camera.position.x; aim.origin.y = camera.position.y; aim.origin.z = camera.position.z;
+    axis.set(0, 0, -1).applyQuaternion(q); aim.dir.x = axis.x; aim.dir.y = axis.y; aim.dir.z = axis.z;
+    axis.set(1, 0, 0).applyQuaternion(q); aim.right.x = axis.x; aim.right.y = axis.y; aim.right.z = axis.z;
+    axis.set(0, 1, 0).applyQuaternion(q); aim.up.x = axis.x; aim.up.y = axis.y; aim.up.z = axis.z;
+    aim.valid = true;
+    // Kill shake: rotation only (no roll, no translation), after the ray and cameraDistance are published.
+    if (fx.trauma > 0 && !reduced) { shakeEuler.set(fx.shakeP, fx.shakeY, 0); camera.quaternion.multiply(shake.setFromEuler(shakeEuler)); }
+    if (persp) {
+      const fresh = !initialized.current || !Number.isFinite(baseFov);
+      if (fresh) baseFov = hip === CAM.hipFov ? persp.fov : hip;
+      baseFov = baseFovStep(baseFov, fresh ? NaN : lastHip, hip, pose.speed, reduced, elapsed);
+      persp.fov = fovFor(baseFov, blend, reduced, reduced ? 0 : fx.fovShot + fx.fovKill, hip);
+      aim.hipFov = hip;
+      persp.updateProjectionMatrix();
+      aim.fov = persp.fov;
+    }
+    readout.finisher = finisher; readout.target = finisher >= 0 ? finisher : strike.target; readout.phase = strike.phase; readout.age = frame.age; readout.weight = frame.weight; readout.manual = frame.manual;
+    readout.yaw = frame.yaw; readout.pitch = frame.pitch;
+    const half = Math.tan(aim.fov * Math.PI / 360);
+    for (let n = 0; n < 2; n++) {
+      const point = n === 0 ? pose.position : focus;
+      const x = point.x - aim.origin.x, y = point.y + (n === 0 ? .65 : 0) - aim.origin.y, z = point.z - aim.origin.z;
+      const depth = x * aim.dir.x + y * aim.dir.y + z * aim.dir.z;
+      const nx = depth > 0 ? (x * aim.right.x + y * aim.right.y + z * aim.right.z) / (depth * half * aspect) : 99;
+      const ny = depth > 0 ? (x * aim.up.x + y * aim.up.y + z * aim.up.z) / (depth * half) : 99;
+      if (n === 0) { readout.heroX = nx; readout.heroY = ny; } else { readout.targetX = nx; readout.targetY = ny; }
+    }
+    initialized.current = true; epoch.current = runtime.poseEpoch; lastW = w; lastHip = hip;
+    if (marker.current) {
+      marker.current.visible = !!runtime.landTarget && state.flying;
+      if (runtime.landTarget) { marker.current.position.copy(runtime.landTarget); marker.current.position.y += .04; }
+    }
+    if (state.started && !state.paused) {
+      if (!runtime.skipSample) { runtime.frames[runtime.frameIndex++ % 18000] = dt * 1000; runtime.elapsed += dt; }
+      runtime.skipSample = false;
+      const resources = runtime.resources;
+      resources.drawCalls = gl.info.render.calls; resources.triangles = gl.info.render.triangles;
+      resources.geometries = gl.info.memory.geometries; resources.textures = gl.info.memory.textures;
+      for (const key of statKeys) runtime.peakResources[key] = Math.max(runtime.peakResources[key], runtime.resources[key]);
+      invalidate();
+    }
+  }, -10);
+  return <mesh ref={marker} visible={false} rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[.65, .82, 32]} /><meshBasicMaterial color="#e6ffc1" side={2} /></mesh>;
+}

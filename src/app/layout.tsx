@@ -4,11 +4,11 @@ import type { Metadata, Viewport } from "next";
 import { Suspense } from "react";
 import localFont from "next/font/local";
 import ReadingNavigation from "./_components/reading/ReadingNavigation";
-import AccessibilityMenu from "./_components/AccessibilityMenu";
-import FindOverlay from "./_components/FindOverlay";
+import FindOverlayGate from "./_components/FindOverlayGate";
 import DocumentPolicyBoundary from "./_components/DocumentPolicyBoundary";
 import PenWrites from "./_components/PenWrites";
 import DiscoveryLens from "./_components/DiscoveryLens";
+import XrayFoot from "./_components/xray/XrayFoot";
 import IlluminatedEffects from "./_components/IlluminatedEffects";
 
 const atkinson = localFont({
@@ -315,14 +315,17 @@ export default function RootLayout({
         </a>
         <DiscoveryLens />
         {children}
+        {/* The Engineer lens's foot: how this page reached the visitor. Always
+            in the DOM so the release check can read it from the built HTML;
+            shown only under html[data-site-lens="engineer"]. */}
+        <XrayFoot />
         {/* The nav's Find button only flips a bridge flag; this is what listens
             for it and renders the dialog. The same 39-branch auto-merge that
             dropped the controls.css import left this component orphaned in the
             tree — imported by nothing — so every Find test failed on an element
             that was never mounted. */}
-        <FindOverlay localEvidence={process.env.NODE_ENV === "development" && !!process.env.JEV_RESEARCH_BRIDGE_PORT} />
+        <FindOverlayGate localEvidence={process.env.NODE_ENV === "development" && !!process.env.JEV_RESEARCH_BRIDGE_PORT} />
         <ReadingNavigation />
-        <AccessibilityMenu />
         {/* The reading thread: a vermilion hairline across the top whose length
             follows the scroll (core.css, scroll-driven; hidden under reduced
             motion). The pen writes headings in as they come into view. */}

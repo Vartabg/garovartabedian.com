@@ -134,6 +134,7 @@ export default function BethelPage() {
       <div className="bethel-last-word"><span aria-hidden="true">✧</span><p>A place he had passed through.<br /><em>A place he would remember.</em></p></div>
 
       <StorySource
+        current="i-am-with-you"
         reference="Genesis 28:10–19"
         chapterHref={SOURCE}
         verses={genesis.chapters[27].slice(9, 19)}

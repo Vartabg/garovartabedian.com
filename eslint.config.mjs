@@ -14,6 +14,9 @@ const eslintConfig = [
       ".claude/**",
       // Vendored onnxruntime-web loader served for the in-browser semantic search.
       "public/ort/**",
+      // The standalone Hermon renderer has a separate dependency tree and verification.
+      "games/hermon/**",
+      "public/play/hermon/**",
       // Unmodified BSD-licensed MapLibre worker and its shared runtime.
       "public/vendor/maplibre-gl/**",
       "test-results/**",
@@ -31,8 +34,6 @@ const eslintConfig = [
     name: "legacy/react-effects-migration",
     files: [
       "src/app/_components/AccessibilityMenu.tsx",
-      "src/app/_components/FindOverlay.tsx",
-      "src/app/_components/FindPreview.tsx",
       "src/app/_components/MeaningRail.tsx",
       "src/app/_components/NotFoundScripture.tsx",
       "src/app/_components/OriginalLine.tsx",
@@ -65,14 +66,8 @@ const eslintConfig = [
     rules: { "react-hooks/set-state-in-effect": "warn" },
   },
   {
-    name: "legacy/react-refs-migration",
-    files: ["src/app/_components/FindOverlay.tsx"],
-    rules: { "react-hooks/refs": "warn" },
-  },
-  {
     name: "legacy/react-immutability-migration",
     files: [
-      "src/app/_components/WorldGuide.tsx",
       "src/app/scriptures/_components/doorways/ChapterBars.tsx",
     ],
     rules: { "react-hooks/immutability": "warn" },

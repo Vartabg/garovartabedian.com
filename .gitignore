@@ -53,3 +53,8 @@ next-env.d.ts
 
 # Per-worktree semantic index builder locks (never served)
 /.cache/scripture-index-builds/
+
+# Local caches and the generated mount for the separately locked Hermon game.
+/.cache/hermon-build/
+/public/play/hermon/
+/public/play/.hermon-backup-*/

@@ -265,9 +265,6 @@ export default function EncountersRoom({
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/angels">Angels &amp; Demons</Link>
-      </p>
       <h1>The encounters.</h1>
       <p className="lede">
         The unseen doesn&rsquo;t stay unseen. One lane for the appearances —

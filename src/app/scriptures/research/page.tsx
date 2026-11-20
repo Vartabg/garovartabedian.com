@@ -13,7 +13,7 @@ export default async function ResearchPage() {
   if (![`127.0.0.1:${port}`, `localhost:${port}`].includes(requestHeaders.get("host") ?? "")) notFound();
   return (
     <article className={styles.workspace}>
-      <p className="kicker"><Link href="/scriptures">Scriptures</Link> / Local research · Experimental</p>
+      <p className="kicker">Local research · Experimental</p>
       <h1>Read the evidence together.</h1>
       <p className={styles.lede}>Compare passages, explore possible connections, or check a supplied claim. Keep the source text beside every judgment.</p>
       <p><Link className="textlink" href="/scriptures/find">Find: Evidence Explorer →</Link></p>

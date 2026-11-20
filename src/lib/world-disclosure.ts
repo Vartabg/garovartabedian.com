@@ -16,10 +16,13 @@ export function openDisclosureForHash(
   const target = root.getElementById(id);
   if (!target) return null;
 
-  const disclosure =
+  let cur: Element | null =
     target.tagName === "DETAILS" ? target : target.closest("details");
-  if (disclosure && "open" in disclosure) {
-    (disclosure as HTMLDetailsElement).open = true;
+  while (cur) {
+    if ("open" in cur) {
+      (cur as HTMLDetailsElement).open = true;
+    }
+    cur = cur.parentElement?.closest("details") ?? null;
   }
 
   return target;

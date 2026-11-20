@@ -36,7 +36,6 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <CleanChrome activeHref="/contact">
-      <p className="kicker">Contact</p>
       <h1>Tell me what is slowing the team down.</h1>
       <p className="lede">
         Best fit: a recurring customer or operations workflow spread across too

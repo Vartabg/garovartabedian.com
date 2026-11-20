@@ -79,7 +79,9 @@ export default async function PolyglotPage({
     <article className="prose-wrap">
       <StudyPageHeader
         path="/scriptures/polyglot"
-        action="Choose a passage to compare its named Hebrew or Greek edition with the available English translations. Inspect a word for language details; source notes identify each witness."
+        action={contextual
+          ? "Compare this passage in the named Hebrew or Greek edition and the English translations. Inspect a word for language details; source notes identify each witness."
+          : `${initialPreset.title}. ${initialPreset.summary}`}
       />
 
       <Suspense fallback={<div className="scr-loading">Loading polyglot witnesses...</div>}>

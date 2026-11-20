@@ -94,6 +94,8 @@ test("unreadable reports are skipped and a missing folder is an empty record", a
 test("the release fails when the built page shows the fallback instead of the record", () => {
   const record = JSON.stringify({ schemaVersion: 1, steps: ["Lint"], attempts: [{}, {}] });
   assert.equal(checkReleaseRecord(record, `<div data-release-attempts="2">`), 2);
+  assert.equal(checkReleaseRecord(record, `<div data-release-attempts="2">`, `<section data-release-attempts="2">`), 2);
   assert.throws(() => checkReleaseRecord(record, `<p class="note">The release record is added…</p>`), /does not show the 2-attempt/);
+  assert.throws(() => checkReleaseRecord(record, `<div data-release-attempts="2">`, `<section class="xray-foot">`), /chapter reader does not show the 2-attempt/);
   assert.throws(() => checkReleaseRecord(JSON.stringify({ attempts: [] }), ""), /no attempts/);
 });

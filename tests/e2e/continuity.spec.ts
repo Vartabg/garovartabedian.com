@@ -5,13 +5,17 @@ for (const width of [390, 1280]) {
     await page.setViewportSize({ width, height: 900 });
     for (const route of ["/scriptures", "/jesus", "/early", "/church/councils", "/angels/encounters", "/evidence/frameworks"]) {
       await page.goto(route);
-      const guide = page.locator(".world-guide");
-      await expect(guide).toBeVisible();
-      const menu = guide.locator(width < 561 ? ".wg-mobile-menu" : ".wg-browse");
+      // The section's pages open the header menu; the brand link is the section home.
+      const menu = page.locator(".site-nav-menu");
       await menu.locator(":scope > summary").click();
-      const links = menu.locator("nav > a");
-      expect(await links.count()).toBeGreaterThanOrEqual(3);
-      await expect(menu.locator(`a[href="${route}"]`)).toHaveAttribute("aria-current", "page");
+      const everything = menu.locator(".site-nav-everything");
+      if (await everything.isVisible()) await everything.locator(":scope > summary").click();
+      const group = menu.locator(".site-nav-group--section");
+      await expect(group).toBeVisible();
+      expect(await group.locator("a").count()).toBeGreaterThanOrEqual(3);
+      const isHome = (await page.locator("header .brand").getAttribute("href")) === route;
+      if (isHome) await expect(group.locator("[aria-current]")).toHaveCount(0);
+      else await expect(group.locator(`a[href="${route}"]`)).toHaveAttribute("aria-current", "page");
       await menu.locator(":scope > summary").press("Escape");
       await expect(menu).not.toHaveAttribute("open", "");
       const next = page.getByRole("navigation", { name: /guided next steps$/ });
@@ -26,14 +30,16 @@ for (const width of [390, 1280]) {
 
 test("all Scripture study tools are reachable from the entrance", async ({ page }) => {
   await page.goto("/scriptures");
-  const browse = page.locator(".wg-browse");
-  await browse.locator("summary").click();
-  const debates = browse.locator('a[href="/scriptures/disputation"]');
+  await page.locator(".site-nav-menu > summary").click();
+  // The section's main pages lead; its other tools are one tap further.
+  await expect(page.locator('.site-nav-group--section a[href="/scriptures/search"]')).toBeVisible();
+  const debates = page.locator('.site-nav-group--more a[href="/scriptures/disputation"]');
+  await expect(debates).toBeHidden();
+  await page.locator(".site-nav-everything > summary").click();
   await expect(debates).toBeVisible();
   await debates.click();
   await expect(page).toHaveURL(/\/scriptures\/disputation$/);
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-  await expect(page.getByRole("navigation", { name: "Breadcrumb", exact: true })).toContainText("Biblical debates");
   await expect(page.locator(".site-nav-direct a[href='/scriptures']")).toHaveAttribute("aria-current", "location");
 });
 
@@ -140,7 +146,6 @@ test("shared section and map controls retain accessible structure and contrast i
   await page.setViewportSize({ width: 390, height: 844 });
   for (const route of ["/jesus", "/early/ignatius"]) {
     await page.goto(route);
-    await expect(page.locator(".world-guide")).toBeVisible();
     await expect(page.locator(".map-guide")).toBeVisible();
     await page.addScriptTag({ path: "node_modules/axe-core/axe.min.js" });
     for (const theme of ["light", "dark"]) {
@@ -148,9 +153,13 @@ test("shared section and map controls retain accessible structure and contrast i
       await page.getByRole("dialog", { name: "Reading & accessibility" }).getByLabel("Page theme", { exact: true }).selectOption(theme);
       await page.getByRole("button", { name: "Close accessibility settings" }).click();
       await expect(page.locator("html")).toHaveAttribute("data-a11y-theme", theme);
+      await page.locator(".site-nav-menu > summary").click();
+      const everything = page.locator(".site-nav-everything");
+      if (await everything.isVisible()) await everything.locator(":scope > summary").click();
+      await expect(page.locator(".site-nav-group--section")).toBeVisible();
       const violations = await page.evaluate(async () => {
         const axe = (window as unknown as { axe: { run: (context: string, options: unknown) => Promise<{ violations: { id: string; nodes: { target: unknown; failureSummary: string }[] }[] }> } }).axe;
-        return (await axe.run(".world-guide, .map-guide", { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"] } })).violations
+        return (await axe.run(".site-nav-group--section, .map-guide", { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"] } })).violations
           .map(({ id, nodes }) => ({ id, nodes: nodes.map(({ target, failureSummary }) => ({ target, failureSummary })) }));
       });
       expect(violations, `${route} ${theme} shared controls`).toEqual([]);

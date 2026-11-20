@@ -1,106 +1,92 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState, type CSSProperties } from "react";
+import { useMemo, useState } from "react";
 import type { NaveIndex } from "@/lib/scriptures/types";
+import { topicTitle } from "@/lib/scriptures/topic-title";
+import {
+  LARGER_MIN_REFS,
+  MATCH_LIMIT,
+  largestTopics,
+  letterTopics,
+  matchTopics,
+  type IndexTopic,
+} from "@/lib/scriptures/topics-index";
 
-function TopicAtlas({
-  topics,
-  sections,
-  activeSection,
-  setActiveSection,
-}: {
-  topics: NaveIndex["topics"];
-  sections: string[];
-  activeSection: string | null;
-  setActiveSection: (section: string | null) => void;
-}) {
-  const rows = sections.map((section) => {
-    const group = topics.filter((t) => t.section === section);
-    return {
-      section,
-      count: group.length,
-      refs: group.reduce((sum, t) => sum + t.refCount, 0),
-    };
-  });
-  const max = Math.max(1, ...rows.map((row) => row.count));
-  const totalRefs = rows.reduce((sum, row) => sum + row.refs, 0);
-
+function TopicList({ topics }: { topics: IndexTopic[] }) {
   return (
-    <section className="scr-topic-atlas" aria-label="Topic index density by letter">
-      <div className="scr-search-lens-head">
-        <strong>Index density</strong>
-        <span>{totalRefs.toLocaleString()} scripture references</span>
-      </div>
-      <div className="scr-topic-bars">
-        {rows.map((row) => (
-          <button
-            key={row.section}
-            type="button"
-            className={activeSection === row.section ? "is-active" : ""}
-            aria-pressed={activeSection === row.section}
-            onClick={() => setActiveSection(activeSection === row.section ? null : row.section)}
-            style={{ "--h": `${Math.max(18, (row.count / max) * 100)}%` } as CSSProperties}
-            aria-label={`${row.section}: ${row.count} topics`}
-          >
-            <span className="scr-topic-bar" />
-            <span className="scr-topic-letter">{row.section}</span>
-            <span className="scr-topic-count">{row.count}</span>
-          </button>
-        ))}
-      </div>
-    </section>
+    <ul className="scr-topics-list">
+      {topics.map((topic) => (
+        <li key={topic.id}>
+          <Link href={`/scriptures/topics/${encodeURIComponent(topic.id)}`} prefetch={false}>
+            {topicTitle(topic.id)}
+          </Link>
+          <span>{topic.refCount.toLocaleString()}</span>
+        </li>
+      ))}
+    </ul>
   );
 }
 
+function ListHead({ title, detail }: { title: string; detail: string }) {
+  return (
+    <div className="scr-search-lens-head scr-topics-head">
+      <h2>{title}</h2>
+      <span>{detail}</span>
+    </div>
+  );
+}
+
+/**
+ * Nave's index. It opens on the topics with the most references; a letter lists its
+ * larger topics first and keeps the rest one tap away; typing lists the matches.
+ */
 export default function TopicsRoom({ data }: { data: NaveIndex }) {
   const [query, setQuery] = useState("");
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const total = data.topics.length;
 
-  const sections = useMemo(
-    () => [...new Set(data.topics.map((t) => t.section))].sort(),
-    [data],
+  const sections = useMemo(() => [...new Set(data.topics.map((t) => t.section))].sort(), [data]);
+  const largest = useMemo(() => largestTopics(data.topics), [data]);
+  const letter = useMemo(
+    () => (activeSection ? letterTopics(data.topics, activeSection) : null),
+    [data, activeSection],
   );
+  const matches = useMemo(() => matchTopics(data.topics, query), [data, query]);
+  const searching = Boolean(query.trim());
 
-  const shown = useMemo(() => {
-    const q = query.trim().toUpperCase();
-    let list = data.topics;
-    if (activeSection) list = list.filter((t) => t.section === activeSection);
-    if (q) list = list.filter((t) => t.id.includes(q));
-    return list.slice(0, 400);
-  }, [data, query, activeSection]);
+  const clear = () => {
+    setQuery("");
+    setActiveSection(null);
+  };
 
   return (
     <>
-      <p className="kicker">Scriptures</p>
       <h1>Topics.</h1>
       <p className="lede">
-        Nave&rsquo;s Topical Bible, 1897 — {data.topics.length.toLocaleString()}{" "}
-        subjects, every scripture reference verified against the text hosted
-        here. Long before software could search a Bible, this book already
-        had.
+        Nave&rsquo;s Topical Bible, 1897 — {total.toLocaleString()} subjects, every scripture
+        reference verified against the text hosted here. Long before software could search
+        a Bible, this book already had.
       </p>
+      {largest[0] && (
+        <p>
+          <Link href={`/scriptures/topics/${encodeURIComponent(largest[0].id)}`}>
+            {topicTitle(largest[0].id)}
+          </Link>
+          {" "}is the largest subject here, with {largest[0].refCount.toLocaleString()} scripture references.
+        </p>
+      )}
 
       <input
         type="text"
         className="scr-topics-search"
-        placeholder="Search a topic — e.g. Faith, Forgiveness, Angels"
+        placeholder="Search a topic (e.g. Faith, Angels)"
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);
           setActiveSection(null);
         }}
         aria-label="Search topics"
-      />
-
-      <TopicAtlas
-        topics={data.topics}
-        sections={sections}
-        activeSection={activeSection}
-        setActiveSection={(section) => {
-          setActiveSection(section);
-          setQuery("");
-        }}
       />
 
       <nav className="scr-topics-az" aria-label="Browse by letter">
@@ -120,38 +106,61 @@ export default function TopicsRoom({ data }: { data: NaveIndex }) {
         ))}
       </nav>
 
-      {shown.length > 0 ? (
-        <ul className="scr-topics-list">
-          {shown.map((t) => (
-            <li key={t.id}>
-              <Link href={`/scriptures/topics/${encodeURIComponent(t.id)}`}>
-                {t.id.charAt(0) + t.id.slice(1).toLowerCase()}
-              </Link>
-              <span>{t.refCount}</span>
-            </li>
-          ))}
-        </ul>
+      {searching ? (
+        matches.length > 0 ? (
+          <>
+            <ListHead
+              title={`${matches.length.toLocaleString()} ${matches.length === 1 ? "topic matches" : "topics match"}`}
+              detail="scripture references"
+            />
+            <TopicList topics={matches.slice(0, MATCH_LIMIT)} />
+            {matches.length > MATCH_LIMIT && (
+              <p className="scr-meta">Showing the first {MATCH_LIMIT} matches — narrow your search for more.</p>
+            )}
+          </>
+        ) : (
+          <div className="scr-empty" role="status">
+            <p>{`No topics match “${query.trim()}”. Try another word or clear the search.`}</p>
+            <button type="button" className="scr-btn" onClick={clear}>
+              Clear search
+            </button>
+          </div>
+        )
+      ) : letter && activeSection ? (
+        letter.larger.length > 0 ? (
+          <>
+            <ListHead
+              title={activeSection}
+              detail={`${letter.larger.length} with ${LARGER_MIN_REFS} or more references`}
+            />
+            <TopicList topics={letter.larger} />
+            <details className="scr-topics-fold" key={activeSection}>
+              <summary>
+                <span>
+                  All {letter.all.length.toLocaleString()} topics under {activeSection}
+                </span>
+                <span className="scr-topics-fold-chevron" aria-hidden="true" />
+              </summary>
+              <TopicList topics={letter.all} />
+            </details>
+          </>
+        ) : (
+          <>
+            <ListHead
+              title={activeSection}
+              detail={`${letter.all.length} ${letter.all.length === 1 ? "topic" : "topics"}`}
+            />
+            <TopicList topics={letter.all} />
+          </>
+        )
       ) : (
-        <div className="scr-empty" role="status">
-          <p>
-            {query
-              ? `No topics match “${query.trim()}”. Try another word or clear the search.`
-              : `No topics are listed under ${activeSection}. Clear the filter to see every topic.`}
+        <>
+          <ListHead title={`The ${largest.length} largest topics`} detail="scripture references" />
+          <TopicList topics={largest} />
+          <p className="scr-meta scr-topics-note">
+            {total.toLocaleString()} topics in all. Pick a letter or search to see the rest.
           </p>
-          <button
-            type="button"
-            className="scr-btn"
-            onClick={() => {
-              setQuery("");
-              setActiveSection(null);
-            }}
-          >
-            Clear search
-          </button>
-        </div>
-      )}
-      {shown.length > 0 && data.topics.length > shown.length && (query || activeSection) && (
-        <p className="scr-meta">Showing the first 400 matches — narrow your search for more.</p>
+        </>
       )}
     </>
   );

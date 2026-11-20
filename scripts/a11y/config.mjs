@@ -72,6 +72,9 @@ export const routes = [
   "/evidence",
   "/scriptures",
   "/scriptures/stories",
+  "/scriptures/stories/play",
+  "/scriptures/stories/play/overturned-tables",
+  "/play/hermon/crossing/account",
   "/scriptures/stories/joseph",
   "/scriptures/stories/noah",
   "/scriptures/stories/mountain",
@@ -118,6 +121,13 @@ export const routes = [
   "/hire",
   "/labs",
   "/resume",
+  // The Engineer lens: the foot on the home page and the six tags on a
+  // chapter, audited in both colour schemes. The worker sets the lens from
+  // the hash before the page loads; Lighthouse clears storage and stays Reader.
+  "/#lens=engineer",
+  "/scriptures/protestant/MRK/4#lens=engineer",
+  "/scriptures#lens=engineer",
+  "/jesus/parables#lens=engineer",
 ];
 
 // Navigation, HTTP probing, and server readiness are separate budgets. Named

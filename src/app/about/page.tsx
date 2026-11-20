@@ -17,9 +17,11 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <CleanChrome activeHref="/about">
-      <p className="kicker">{ABOUT_PAGE.kicker}</p>
       <h1>{ABOUT_PAGE.title}</h1>
       <p className="lede">{ABOUT_PAGE.lede}</p>
+      <p>
+        The question I keep close is: &ldquo;{FAITH.verse}&rdquo; — {FAITH.ref}
+      </p>
       <p className="cta-row">
         <ButtonLink variant="primary" href="/jesus">
           Start with Jesus
@@ -54,9 +56,6 @@ export default function About() {
 
       <h2>{ABOUT_PAGE.builderHeading}</h2>
       <p>{ABOUT_PAGE.builderLede}</p>
-      <p>
-        The question I keep close is: &ldquo;{FAITH.verse}&rdquo; — {FAITH.ref}
-      </p>
       <p className="cta-row">
         <ButtonLink variant="primary" href="/services">
           {ACTION_LABELS.workWithGaro}

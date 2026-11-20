@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import WorldSwitcher from "../_components/WorldSwitcher";
-import { WorldGuide, WorldNextSteps } from "../_components/WorldGuide";
+import { WorldNextSteps } from "../_components/WorldNextSteps";
 import WorldHeader from "../_components/WorldHeader";
 import SiteFooterLinks from "../_components/SiteFooterLinks";
 import { getWorldRoutes } from "@/lib/site-navigation";
@@ -70,7 +70,6 @@ export default function ScripturesLayout({ children }: { children: React.ReactNo
       <WorldHeader href="/scriptures" label="Scriptures" />
       <main id="main">
         <div className="wrap">
-          <WorldGuide world="scriptures" />
           {process.env.NODE_ENV === "development" && process.env.JEV_RESEARCH_BRIDGE_PORT && <p className="local-research-shortcut"><Link className="textlink" href="/scriptures/research">Open local Jev research workspace →</Link></p>}
           {children}
           <WorldNextSteps world="scriptures" />

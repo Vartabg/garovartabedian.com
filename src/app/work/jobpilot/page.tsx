@@ -92,7 +92,6 @@ const BOUNDARIES = [
 export default function WorkJobPilot() {
   return (
     <CleanChrome activeHref="/work">
-      <p className="kicker">Work / Case study</p>
       <h1>JobPilot — ATS-first application copilot</h1>
       <p className="lede">
         JobPilot is the system I built for the job-search problem I was living:

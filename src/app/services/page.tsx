@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonAnchor, ButtonLink } from "../_components/Button";
 import CleanChrome from "../_components/CleanChrome";
+import StarterMenu from "../work/StarterMenu";
 import {
+  ABOUT_PAGE,
   ACTION_LABELS,
   CONTACT_METHOD_BY_ID,
   PROFILE,
@@ -161,6 +163,13 @@ const serviceLd = {
         name: "Knowledge Pipeline Sprint",
         url: `${SITE_URL}/services`,
       },
+      {
+        "@type": "Offer",
+        name: "Small-Business Starter Package (Landing Page, Excel Handler & Job Report)",
+        price: "100",
+        priceCurrency: "USD",
+        url: `${SITE_URL}/services#starter-menu`,
+      },
     ],
   },
 };
@@ -173,19 +182,22 @@ export default function Services() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }}
       />
 
-      <p className="kicker">Work with Garo</p>
       <h1>Practical help for messy workflows and company knowledge.</h1>
-      <p className="lede">
-        Independent technical help for operations and knowledge-heavy teams.
-        Start with a bounded diagnostic — whether untangling a manual operations
-        workflow or structuring trapped corporate files into verified dossiers
-        for Google NotebookLM™ and internal LLMs.
+      <p className="lede">{ABOUT_PAGE.workCopy[0]}</p>
+      <p>
+        Three bounded ways to engage: a $500 workflow and automation audit for
+        operations teams, verified source-dossier pipelines for Google
+        NotebookLM™ and internal LLMs, or a $100 three-tool starter package for
+        a small business.
       </p>
 
       <p className="cta-row">
         <ButtonAnchor variant="primary" href={inquiryHref}>
           {ACTION_LABELS.discussProject}
         </ButtonAnchor>
+        <ButtonLink variant="ghost" href="#starter-menu">
+          See the $100 starter package
+        </ButtonLink>
         <ButtonAnchor
           variant="ghost"
           href={PROFILE.links.knowledgePipelinePdf}
@@ -270,6 +282,8 @@ export default function Services() {
           Download Executive Brief (PDF)
         </ButtonAnchor>
       </p>
+
+      <StarterMenu />
 
       <h2>If a build makes sense</h2>
       <p>

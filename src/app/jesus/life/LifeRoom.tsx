@@ -241,9 +241,6 @@ export default function LifeRoom({
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/jesus">Jesus Christ</Link>
-      </p>
       <h1>{t("life.title")}</h1>
 
       <LifeMapExperience

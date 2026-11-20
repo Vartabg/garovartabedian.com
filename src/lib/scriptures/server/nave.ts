@@ -45,6 +45,4 @@ export async function getNaveTopic(id: string): Promise<NaveTopic | null> {
   return topic;
 }
 
-export function topicTitle(id: string): string {
-  return id.charAt(0) + id.slice(1).toLowerCase();
-}
+export { topicTitle } from "../topic-title";

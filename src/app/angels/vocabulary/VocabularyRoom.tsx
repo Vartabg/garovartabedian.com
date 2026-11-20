@@ -93,9 +93,6 @@ export default function VocabularyRoom({ data, canons }: { data: LexiconData; ca
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/angels">Angels &amp; Demons</Link>
-      </p>
       <h1>The vocabulary.</h1>
       <p className="lede">
         Selected Hebrew and Greek terms for the unseen, counted in the hosted

@@ -2,7 +2,7 @@ import ReadingNarrative from "../_components/reading/ReadingNarrative";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WorldSwitcher from "../_components/WorldSwitcher";
-import { WorldGuide, WorldNextSteps } from "../_components/WorldGuide";
+import { WorldNextSteps } from "../_components/WorldNextSteps";
 import WorldHeader from "../_components/WorldHeader";
 import SiteFooterLinks from "../_components/SiteFooterLinks";
 import "../styles/worlds-shared.css";
@@ -66,7 +66,6 @@ export default function WordLayout({ children }: { children: React.ReactNode }) 
       <WorldHeader href="/word" label="Who Owns the Word?" />
       <main id="main">
         <div className="wrap">
-          <WorldGuide world="word" />
           <ReadingNarrative>{children}</ReadingNarrative>
           <WorldNextSteps world="word" />
         </div>

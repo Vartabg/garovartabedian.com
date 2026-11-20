@@ -20,6 +20,9 @@ export type WorldGuideConfig = {
     hrefLabel?: string;
   };
   nav: WorldGuideLink[];
+  /** Pages the section's menu opens on, when it has too many to fit a phone
+      screen. Its other pages fold under "Everything else". */
+  menuLead?: string[];
   journey: WorldGuideLink[];
 };
 
@@ -44,6 +47,16 @@ export const WORLD_GUIDES: Record<WorldId, WorldGuideConfig> = {
       { href: "/scriptures/polyglot", label: "Compare translations" },
       { href: "/scriptures/catena", label: "Early commentary" },
       { href: "/scriptures/graph", label: "Cross-references" },
+    ],
+    // Sixteen links did not fit a phone screen (966 px in a 748 px panel).
+    menuLead: [
+      "/scriptures/stories",
+      "/scriptures/search",
+      "/scriptures/word-bridge",
+      "/scriptures/topics",
+      "/scriptures/polyglot",
+      "/scriptures/catena",
+      "/scriptures/graph",
     ],
     journey: [
       {
@@ -86,6 +99,15 @@ export const WORLD_GUIDES: Record<WorldId, WorldGuideConfig> = {
       { href: "/jesus/history", label: "History" },
       { href: "/jesus/lens", label: "How the world sees him" },
       { href: "/jesus/dossier", label: "Research worksheets" },
+    ],
+    // Eleven links scrolled on a small phone (707 px in a 569 px panel at 375 x 667).
+    menuLead: [
+      "/jesus/words",
+      "/jesus/parables",
+      "/jesus/life",
+      "/jesus/risen",
+      "/jesus/harmony",
+      "/jesus/prophecy",
     ],
     journey: [
       {

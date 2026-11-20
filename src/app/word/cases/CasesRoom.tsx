@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import type { CasesData, EnforcementCategory } from "@/lib/word/types";
 import GlossText from "../../_components/GlossText";
 import SourceBasis from "../../_components/SourceBasis";
@@ -62,9 +61,6 @@ export default function CasesRoom({ data }: { data: CasesData }) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/word">Who Owns the Word?</Link>
-      </p>
       <h1>When the fence gets tested.</h1>
       <p className="lede">
         <GlossText text={data.roomIntro} seen={glossSeen} />

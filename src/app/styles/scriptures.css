@@ -21,32 +21,6 @@
 }
 .world-scr main {
   flex: 1;
-  /* The header, an empty band, and the room tabs once pushed a page's title a
-     third of the way down a narrow screen. Scripture pages start sooner. */
-  padding-top: 1.75rem;
-}
-.world-scr .world-guide {
-  margin-bottom: 1.25rem;
-}
-/* Where the room tabs sit on top of the page (between the phone bar and the
-   desktop rail), they keep to one row and Sources tucks in beside them. */
-@media (min-width: 760px) and (max-width: 1099px) {
-  .world-scr .wg-grid {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
-  }
-  .world-scr .wg-source-disclosure:not([open]) {
-    border-top: 0;
-    padding-top: 0;
-  }
-  .world-scr .wg-source-disclosure[open] {
-    grid-column: 1 / -1;
-  }
-}
-@media (max-width: 640px) {
-  .world-scr main {
-    padding-top: 1rem;
-  }
 }
 
 /* The landing page is a working reader's desk, not a catalog. The shared
@@ -1153,8 +1127,7 @@
   max-width: 46rem;
 }
 
-.scr-search-lens,
-.scr-topic-atlas {
+.scr-search-lens {
   border: 1px solid var(--line);
   border-radius: 12px;
   background:
@@ -1899,26 +1872,6 @@
   padding-bottom: calc(var(--scr-bar-h) + 1.5rem + env(safe-area-inset-bottom));
 }
 
-/* The world's orientation card is a fine front door and pure noise on a
-   reading page — it cost ~380px above the text. The breadcrumb covers it. */
-.wrap:has(.scr-read) .world-guide {
-  display: none;
-}
-/* The same holds for the two pages that lead to a chapter. The header already
-   links Home and Scriptures, each page carries its own trail in the kicker,
-   and the room tabs have nothing to do with choosing a book or a chapter. */
-.wrap:has(> .scr-tradition-nav) > .world-guide,
-.wrap:has(> .scr-book-neighbors) > .world-guide {
-  display: none;
-}
-/* With no rail to hold, the wide layout gives the column back to the page. */
-@media (min-width: 1100px) {
-  .world-scr main > .wrap:has(> .scr-tradition-nav),
-  .world-scr main > .wrap:has(> .scr-book-neighbors) {
-    display: block;
-    max-width: var(--maxw);
-  }
-}
 /* The world's generous 4rem top padding is right for a landing page and is
    dead space on a page whose job is to show you a sentence. */
 main:has(.scr-read) {
@@ -5403,7 +5356,7 @@ html[data-a11y-theme="dark"] .scr-witness-mt {
 /* Find is a reading workspace, with its own source and research navigation. */
 .world-scr main:has([data-find-workspace]) { padding-top: 0; }
 .world-scr main > .wrap:has(> [data-find-workspace]) { display: block; max-width: 1400px; padding-inline: clamp(1rem,3vw,2.5rem); }
-.world-scr main > .wrap:has(> [data-find-workspace]) > :is(.world-guide,.world-next,.world-continuation,.local-research-shortcut) { display: none; }
+.world-scr main > .wrap:has(> [data-find-workspace]) > :is(.world-next, .world-continuation, .local-research-shortcut) { display: none; }
 
 /* ── Scripture picker (the Scripture page's front door) ──────────────
    The reader chooses everything: the way to browse, the tradition, the

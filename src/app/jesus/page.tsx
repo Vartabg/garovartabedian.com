@@ -3,6 +3,9 @@ import Link from "next/link";
 import lifeLenses from "../../../public/jesus/life-lenses.json";
 import type { LifeLensesIndex } from "@/lib/jesus/life-lenses";
 import LifeLenses from "./_components/life-lenses/LifeLenses";
+import XrayTag from "@/app/_components/xray/XrayTag";
+import { jesusFacts, worldXrayTag } from "@/lib/site/world-xray";
+import { momentOpenings } from "@/lib/jesus/moment-openings";
 
 export const metadata: Metadata = {
   title: "The person himself",
@@ -30,12 +33,13 @@ const MORE_WAYS = [
  */
 export default function JesusHome() {
   return (
-    <div className="jl-home">
+    <>
+      <XrayTag {...worldXrayTag("jesus", jesusFacts(data))} />
+      <div className="jl-home">
       <header className="jl-head">
-        <p className="jl-eyebrow">Jesus Christ</p>
-        <h1 data-hand="capitals">The person himself.</h1>
+        <h1>The person himself.</h1>
       </header>
-      <LifeLenses data={data} />
+      <LifeLenses data={data} openings={momentOpenings(data.moments)} />
       <nav className="jl-more" aria-labelledby="jl-more-title">
         <h2 id="jl-more-title">More ways in</h2>
         <ul>
@@ -47,5 +51,6 @@ export default function JesusHome() {
         </ul>
       </nav>
     </div>
+    </>
   );
 }

@@ -40,9 +40,10 @@ export default function ChapterContext({
   return (
     <aside className="scr-reading-context" aria-labelledby="chapter-context-heading">
       <h2 id="chapter-context-heading">Chapter context</h2>
-      {paragraph(here)}
       <details>
         <summary>Where this chapter fits</summary>
+        <h3>In this chapter</h3>
+        {paragraph(here)}
         <h3>Leading into this chapter</h3>
         {paragraph(before)}
         <h3>Where the book goes from here</h3>

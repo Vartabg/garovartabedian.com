@@ -76,9 +76,7 @@ test.describe("hire page", () => {
   test("loads with the full-time pitch and quick facts", async ({ page }) => {
     const response = await page.goto("/hire");
     expect(response?.status()).toBe(200);
-    await expect(page.getByRole("heading", { level: 1 })).toContainText(
-      "Solutions Engineer"
-    );
+    await expect(page.getByText("Solutions Engineer who can own the messy middle.")).toBeVisible();
     await expect(page.getByText("Location")).toBeVisible();
   });
 

@@ -47,7 +47,7 @@ export default async function AfterlifeComparatorPage({
         <p className="hw-kicker">
           <Link href="/evidence/frameworks">← The Afterlife Atlas</Link> · Comparative Workbench
         </p>
-        <h1 style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.4rem)", letterSpacing: "-0.03em", margin: "0.25rem 0 0.5rem" }}>
+        <h1 style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.4rem)", letterSpacing: "-0.03em", margin: "0 0 0.5rem" }}>
           Synoptic Berean Comparator
         </h1>
         <p style={{ fontSize: "1.15rem", color: "var(--muted)", maxWidth: "52rem", lineHeight: 1.6, margin: 0 }}>

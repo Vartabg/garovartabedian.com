@@ -1,5 +1,4 @@
 .world-apostles main > .wrap:has(> .as-story) { display: block; width: min(100% - 2rem, 80rem); max-width: none; padding: 0; }
-.world-apostles:has(.as-story) .world-guide,
 .world-apostles:has(.as-story) .world-next { display: none; }
 .as-story { --as-night: #162328; --as-gold: #ead1a2; margin: 2rem 0 5rem; min-width: 0; overflow-wrap: anywhere; }
 .as-story :is(h1,h2,h3,p,figure) { margin: 0; }

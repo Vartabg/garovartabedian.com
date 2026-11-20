@@ -1,0 +1,11 @@
+{
+  "name": "Mount Hermon at dawn",
+  "short_name": "Mount Hermon",
+  "start_url": "/play/hermon",
+  "scope": "/play/hermon",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#14111d",
+  "theme_color": "#14111d",
+  "icons": [{ "src": "/play/hermon/mountain.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

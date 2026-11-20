@@ -1,0 +1,2213 @@
+{
+  "provenance": {
+    "independent_map": "/tmp/gospel-thomas-candidate-map.json",
+    "baseline": "265eab56958b77db0a23a3ab65829fc5ad0f0e7b",
+    "gospel_source": "public/scriptures/text/web",
+    "thomas_source": "content/early-library/readings/gospel-thomas",
+    "thomas_translation": "Mark M. Mattison, https://www.gospels.net/thomas/",
+    "scope": "54 Gospel dispositions from independent source reconciliation, the additional Matthew 23:33–36 figure, 46 Thomas sayings, and James fullness comparisons."
+  },
+  "gospel_candidates": [
+    {
+      "id": "rich-fool",
+      "file": "public/jesus/parables.json",
+      "status": "extended_or_linked",
+      "title": "The rich fool",
+      "accounts": [
+        {
+          "setting": "LUK 12:13-15",
+          "ref": "LUK 12:16-21",
+          "called": "LUK 12:16"
+        }
+      ],
+      "speaker": "Jesus by context",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 63
+        },
+        {
+          "saying": 72,
+          "note": "The inheritance request resembles the Luke 12:13–15 setting; Thomas does not include the rich fool story."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-lambs-wolves",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "extended_or_linked",
+      "title": "Sheep among wolves",
+      "accounts": [
+        {
+          "ref": "MAT 10:16"
+        },
+        {
+          "ref": "LUK 10:3"
+        }
+      ],
+      "speaker": "Jesus by context",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 39,
+          "note": "Thomas 39 ends with serpents and doves; its preceding keys and entry saying is a separate comparison."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-holy-dogs",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "extended_or_linked",
+      "title": "What is holy and the dogs",
+      "accounts": [
+        {
+          "ref": "MAT 7:6"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 93,
+          "note": "The images of holy things, dogs, pearls and pigs recur; Thomas ends in a damaged passage."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-yoke",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "extended_or_linked",
+      "title": "The yoke and the burden",
+      "accounts": [
+        {
+          "ref": "MAT 11:28-30"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 90,
+          "note": "The easy yoke and rest recur with different wording."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-birds-provision",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "extended_or_linked",
+      "title": "The birds and the lilies",
+      "accounts": [
+        {
+          "ref": "MAT 6:25-34"
+        },
+        {
+          "ref": "LUK 12:22-31"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 36,
+          "note": "Thomas speaks briefly about anxiety over clothing; the Gospel passages develop additional images."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-ask-seek",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "extended_or_linked",
+      "title": "Ask, seek and knock",
+      "accounts": [
+        {
+          "ref": "MAT 7:7-8"
+        },
+        {
+          "ref": "LUK 11:9-10"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 92,
+          "note": "Thomas speaks of seeking and finding in a different dialogue."
+        },
+        {
+          "saying": 94,
+          "note": "Seeking and finding, and knocking and opening, recur; the latter clause is reconstructed in brackets."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-fine-clothing",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "extended_or_linked",
+      "title": "Fine clothing and kings’ houses",
+      "accounts": [
+        {
+          "ref": "MAT 11:7-8"
+        },
+        {
+          "ref": "LUK 7:24-25"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 78,
+          "note": "The reed and fine clothing recur; Thomas has damaged wording and a different ending."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-treasures-heaven",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "extended_or_linked",
+      "title": "Treasure in heaven",
+      "accounts": [
+        {
+          "ref": "MAT 6:19-21"
+        },
+        {
+          "ref": "LUK 12:33-34"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 76,
+          "note": "The second part speaks of enduring treasure safe from destructive creatures; the first part is a pearl story."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-city-hill",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "A city on a hill",
+      "accounts": [
+        {
+          "ref": "MAT 5:14-16"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "Matthew 5:15 also appears in the lamp on a stand.",
+      "thomas": [
+        {
+          "saying": 32,
+          "note": "Both say that a city on a height cannot be hidden; Thomas adds that it cannot fall."
+        },
+        {
+          "saying": 24,
+          "note": "Thomas speaks of light within a person. The light image is thematic; the sayings differ."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-eye-lamp",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The eye as a lamp",
+      "accounts": [
+        {
+          "ref": "MAT 6:22-23"
+        },
+        {
+          "ref": "LUK 11:34-36"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": []
+    },
+    {
+      "id": "synoptic-narrow-wide-gates",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The narrow and wide gates",
+      "accounts": [
+        {
+          "ref": "MAT 7:13-14"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "Luke 13:24 is already included with the closed door; its setting and emphasis differ.",
+      "thomas": []
+    },
+    {
+      "id": "synoptic-foxes-birds",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Foxes and birds have homes",
+      "accounts": [
+        {
+          "ref": "MAT 8:20"
+        },
+        {
+          "ref": "LUK 9:58"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 86,
+          "note": "The foxes and birds contrast with the Son of Humanity having nowhere to rest; Thomas is partly reconstructed."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-harvest-workers",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The harvest and the workers",
+      "accounts": [
+        {
+          "ref": "MAT 9:37-38"
+        },
+        {
+          "ref": "LUK 10:2"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 73,
+          "note": "The harvest and few workers recur; the surrounding settings differ."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-fishers-people",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Fishers of people",
+      "accounts": [
+        {
+          "ref": "MAT 4:19"
+        },
+        {
+          "ref": "MRK 1:17"
+        },
+        {
+          "ref": "LUK 5:10"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "The calling of fishers differs from the fish-selection story in Thomas 8.",
+      "thomas": []
+    },
+    {
+      "id": "synoptic-pharisees-yeast",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The yeast of the Pharisees",
+      "accounts": [
+        {
+          "ref": "MAT 16:6-12"
+        },
+        {
+          "ref": "MRK 8:14-21"
+        },
+        {
+          "ref": "LUK 12:1"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "These warnings use yeast differently from the kingdom leaven comparison.",
+      "thomas": []
+    },
+    {
+      "id": "synoptic-uprooted-plant",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The plant uprooted",
+      "accounts": [
+        {
+          "ref": "MAT 15:13"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 40,
+          "note": "Thomas speaks of a grapevine planted outside the Father; the wording and application differ."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-children-dogs-crumbs",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Children, dogs and crumbs",
+      "accounts": [
+        {
+          "ref": "MAT 15:26-27"
+        },
+        {
+          "ref": "MRK 7:27-28"
+        }
+      ],
+      "speaker": "Jesus and the woman",
+      "note": null,
+      "thomas": []
+    },
+    {
+      "id": "synoptic-cup-inside-outside",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The inside and outside of the cup",
+      "accounts": [
+        {
+          "ref": "MAT 23:25-26"
+        },
+        {
+          "ref": "LUK 11:39-41"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 89,
+          "note": "Thomas asks about the maker of the inside and outside; the Gospel criticisms and applications differ."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-gnat-camel",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The gnat and the camel",
+      "accounts": [
+        {
+          "ref": "MAT 23:24"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": []
+    },
+    {
+      "id": "synoptic-tombs",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Tombs and hidden graves",
+      "accounts": [
+        {
+          "ref": "MAT 23:27-28"
+        },
+        {
+          "ref": "LUK 11:44"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "Matthew compares outwardly beautiful tombs with hidden uncleanness; Luke speaks of unmarked graves.",
+      "thomas": []
+    },
+    {
+      "id": "synoptic-hen-chicks",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The hen and her chicks",
+      "accounts": [
+        {
+          "ref": "MAT 23:37"
+        },
+        {
+          "ref": "LUK 13:34"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": []
+    },
+    {
+      "id": "synoptic-moving-mountain",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Faith and the mountain",
+      "accounts": [
+        {
+          "ref": "MAT 17:20"
+        },
+        {
+          "ref": "MAT 21:21"
+        },
+        {
+          "ref": "MRK 11:23"
+        },
+        {
+          "ref": "LUK 17:6"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "Luke speaks of a mulberry tree; the conditions and settings differ among the sayings. Matthew 17:20 has textual variation in some witnesses.",
+      "thomas": [
+        {
+          "saying": 48,
+          "note": "Thomas connects the mountain moving with two people making peace in a house."
+        },
+        {
+          "saying": 106,
+          "note": "Thomas joins making two into one with a mountain moving; the conditions and framing differ."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-keys-entry",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Keys and the barred entrance",
+      "accounts": [
+        {
+          "ref": "MAT 23:14"
+        },
+        {
+          "ref": "LUK 11:52"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "Luke names a key of knowledge; Matthew describes the kingdom being shut. The hosted World English Bible numbers the Matthew saying as verse 14; other editions number it as verse 13.",
+      "thomas": [
+        {
+          "saying": 39,
+          "note": "The keys and blocked entry are followed by a separate serpents-and-doves saying."
+        },
+        {
+          "saying": 102,
+          "note": "The dog preventing cattle from eating shares the theme of hindering others; it is a different comparison."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-sift-wheat",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Sifted like wheat",
+      "accounts": [
+        {
+          "ref": "LUK 22:31"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": []
+    },
+    {
+      "id": "synoptic-green-dry-wood",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Green and dry wood",
+      "accounts": [
+        {
+          "ref": "LUK 23:31"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "The saying is given on the way to the crucifixion; its application is not spelled out here.",
+      "thomas": []
+    },
+    {
+      "id": "synoptic-hidden-revealed",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Hidden and revealed",
+      "accounts": [
+        {
+          "ref": "MRK 4:22"
+        },
+        {
+          "ref": "LUK 8:17"
+        },
+        {
+          "ref": "MAT 10:26-27"
+        },
+        {
+          "ref": "LUK 12:2-3"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "Matthew and Luke also include a related instruction about speaking openly; Mark 4 and Luke 8 place the hidden saying beside a lamp image.",
+      "thomas": [
+        {
+          "saying": 5,
+          "note": "Thomas combines what is hidden being revealed with a call to know what is before one."
+        },
+        {
+          "saying": 6,
+          "note": "The hidden and revealed saying follows a discussion of conduct, fasting, prayer and food."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-fire-earth",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Fire on the earth",
+      "accounts": [
+        {
+          "ref": "LUK 12:49"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 10,
+          "note": "Both sayings speak of fire cast on the world or earth; the wording and setting differ."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-kingdom-within-among",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The kingdom and its coming",
+      "accounts": [
+        {
+          "ref": "LUK 17:20-21"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "Translations differ on whether Luke says the kingdom is within or among those addressed.",
+      "thomas": [
+        {
+          "saying": 3,
+          "note": "Thomas speaks of the kingdom within and outside; the sayings and their contexts differ."
+        },
+        {
+          "saying": 113,
+          "note": "Thomas says the kingdom is spread over the earth but unseen; the wording differs from Luke."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-reading-sky",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Reading the sky and the present",
+      "accounts": [
+        {
+          "ref": "MAT 16:2-3"
+        },
+        {
+          "ref": "LUK 12:54-56"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "Matthew 16:2b–3 is absent in some early manuscripts.",
+      "thomas": [
+        {
+          "saying": 91,
+          "note": "Thomas compares reading the sky and earth with failing to recognize the present; the surrounding exchange differs."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-left-right-hand",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The left and right hand",
+      "accounts": [
+        {
+          "ref": "MAT 6:1-4"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 62,
+          "note": "The hand saying follows a statement about mysteries in Thomas; Matthew places it in teaching about giving."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-lending-expecting-return",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Lending without expecting return",
+      "accounts": [
+        {
+          "ref": "LUK 6:34-35"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 95,
+          "note": "Thomas contrasts lending at interest with giving without expecting return; the emphasis differs."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-household-division",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Division within a household",
+      "accounts": [
+        {
+          "ref": "MAT 10:34-36"
+        },
+        {
+          "ref": "LUK 12:51-53"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "These sayings about division differ from the divided kingdom and strong man passage.",
+      "thomas": [
+        {
+          "saying": 16,
+          "note": "Thomas also speaks of division within a house; its concluding wording differs."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-john-least-kingdom",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "John and the least in the kingdom",
+      "accounts": [
+        {
+          "ref": "MAT 11:11"
+        },
+        {
+          "ref": "LUK 7:28"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 46,
+          "note": "Thomas uses a little-child formulation in its comparison with John; the wording differs."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-hearing-message",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Hearing and keeping the word",
+      "accounts": [
+        {
+          "ref": "LUK 11:27-28"
+        },
+        {
+          "ref": "LUK 23:29"
+        }
+      ],
+      "speaker": "Jesus and a woman in Luke 11; Jesus in Luke 23",
+      "note": "Luke 23:29 occurs in a different setting from the exchange in Luke 11.",
+      "thomas": [
+        {
+          "saying": 79,
+          "note": "Thomas combines a woman’s blessing and a reply about hearing with a saying about childlessness; Luke places these in different settings."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-temple-testimony",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "Testimony about destroying the temple",
+      "accounts": [
+        {
+          "ref": "MAT 26:61"
+        },
+        {
+          "ref": "MRK 14:58"
+        }
+      ],
+      "speaker": "Witnesses report words attributed to Jesus",
+      "note": "Witnesses report a claim attributed to Jesus at his trial; the reports differ from John 2:19–21.",
+      "thomas": [
+        {
+          "saying": 71,
+          "note": "Thomas attributes destroying a house to Jesus; its ending is damaged and it does not mention three days."
+        }
+      ]
+    },
+    {
+      "id": "synoptic-threshing-floor",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The threshing floor and chaff",
+      "accounts": [
+        {
+          "ref": "MAT 3:12"
+        },
+        {
+          "ref": "LUK 3:17"
+        }
+      ],
+      "speaker": "John the Baptist",
+      "note": "John the Baptist speaks of gathering grain and burning chaff.",
+      "thomas": []
+    },
+    {
+      "id": "synoptic-house-den-robbers",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new",
+      "title": "The house and the den of robbers",
+      "accounts": [
+        {
+          "ref": "MAT 21:13"
+        },
+        {
+          "ref": "MRK 11:17"
+        },
+        {
+          "ref": "LUK 19:46"
+        }
+      ],
+      "speaker": "Jesus quotes Scripture",
+      "note": "Jesus quotes Scripture in the temple; the quoted language is also used in 2 Clement 14:1.",
+      "thomas": []
+    },
+    {
+      "id": "john-temple",
+      "file": "public/jesus/john-figures.json",
+      "status": "extended_or_linked",
+      "title": "The temple",
+      "accounts": [
+        {
+          "ref": "JHN 2:19-21"
+        }
+      ],
+      "speaker": "Jesus by context",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 71,
+          "note": "Thomas speaks of destroying a house; the ending is damaged, and it does not mention three days. John describes a different exchange."
+        }
+      ]
+    },
+    {
+      "id": "john-living-water",
+      "file": "public/jesus/john-figures.json",
+      "status": "extended_or_linked",
+      "title": "Living water",
+      "accounts": [
+        {
+          "ref": "JHN 4:13-14"
+        }
+      ],
+      "speaker": "Jesus by context",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 13,
+          "note": "Thomas uses a bubbling spring and intoxication in a different dialogue; the comparison is thematic."
+        }
+      ]
+    },
+    {
+      "id": "john-bread-of-life",
+      "file": "public/jesus/john-figures.json",
+      "status": "extended_or_linked",
+      "title": "The bread of life",
+      "accounts": [
+        {
+          "ref": "JHN 6:32-40"
+        },
+        {
+          "ref": "JHN 6:48-51"
+        },
+        {
+          "ref": "JHN 6:52-58"
+        }
+      ],
+      "speaker": "Jesus by context",
+      "note": null,
+      "thomas": []
+    },
+    {
+      "id": "john-servant-son",
+      "file": "public/jesus/john-figures.json",
+      "status": "extended_or_linked",
+      "title": "The servant and the son",
+      "accounts": [
+        {
+          "ref": "JHN 8:31-36"
+        }
+      ],
+      "speaker": "Jesus by context",
+      "note": null,
+      "thomas": []
+    },
+    {
+      "id": "john-walking-light",
+      "file": "public/jesus/john-figures.json",
+      "status": "extended_or_linked",
+      "title": "Walking in the light",
+      "accounts": [
+        {
+          "ref": "JHN 8:12"
+        },
+        {
+          "ref": "JHN 12:35"
+        }
+      ],
+      "speaker": "Jesus by context",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 24,
+          "note": "Thomas speaks of light within a person; the comparison is thematic and the settings differ."
+        }
+      ]
+    },
+    {
+      "id": "john-food-fathers-will",
+      "file": "public/jesus/john-figures.json",
+      "status": "new",
+      "title": "Food and the Father’s will",
+      "accounts": [
+        {
+          "ref": "JHN 4:34"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": null,
+      "thomas": []
+    },
+    {
+      "id": "john-rivers-living-water",
+      "file": "public/jesus/john-figures.json",
+      "status": "new",
+      "title": "Rivers of living water",
+      "accounts": [
+        {
+          "ref": "JHN 7:37-39"
+        }
+      ],
+      "speaker": "Jesus; the narrator explains in verse 39",
+      "note": "Jesus speaks in verses 37–38; verse 39 is the narrator’s explanation concerning the Spirit.",
+      "thomas": []
+    },
+    {
+      "id": "john-blindness-sight",
+      "file": "public/jesus/john-figures.json",
+      "status": "new",
+      "title": "Blindness and sight",
+      "accounts": [
+        {
+          "ref": "JHN 9:39-41"
+        }
+      ],
+      "speaker": "Jesus and the Pharisees",
+      "note": null,
+      "thomas": [
+        {
+          "saying": 28,
+          "note": "Thomas uses blindness of heart and drunkenness; this is a thematic comparison in a different setting."
+        }
+      ]
+    },
+    {
+      "id": "john-sheep-hear-voice",
+      "file": "public/jesus/john-figures.json",
+      "status": "new",
+      "title": "The sheep and the shepherd’s voice",
+      "accounts": [
+        {
+          "ref": "JHN 10:26-29"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "This later exchange follows the sheepfold and shepherd discourse.",
+      "thomas": []
+    },
+    {
+      "id": "john-feed-sheep",
+      "file": "public/jesus/john-figures.json",
+      "status": "new",
+      "title": "Feed my sheep",
+      "accounts": [
+        {
+          "ref": "JHN 21:15-17"
+        }
+      ],
+      "speaker": "The risen Jesus and Peter",
+      "note": "The risen Jesus speaks with Peter; this is a different setting from John 10.",
+      "thomas": []
+    },
+    {
+      "id": "sower",
+      "file": "public/jesus/parables.json",
+      "status": "covered_before_change",
+      "accounts": [
+        {
+          "setting": "MAT 13:1-2",
+          "ref": "MAT 13:3-9",
+          "explanation": "MAT 13:18-23",
+          "called": "MAT 13:3"
+        },
+        {
+          "setting": "MRK 4:1-2",
+          "ref": "MRK 4:3-9",
+          "explanation": "MRK 4:13-20",
+          "called": "MRK 4:2"
+        },
+        {
+          "setting": "LUK 8:4",
+          "ref": "LUK 8:5-8",
+          "explanation": "LUK 8:11-15",
+          "called": "LUK 8:4"
+        }
+      ],
+      "thomas": [
+        {
+          "saying": 9
+        }
+      ]
+    },
+    {
+      "id": "weeds-among-wheat",
+      "file": "public/jesus/parables.json",
+      "status": "covered_before_change",
+      "accounts": [
+        {
+          "ref": "MAT 13:24-30",
+          "explanation": "MAT 13:36-43",
+          "called": "MAT 13:24"
+        }
+      ],
+      "thomas": [
+        {
+          "saying": 57
+        }
+      ]
+    },
+    {
+      "id": "net",
+      "file": "public/jesus/parables.json",
+      "status": "covered_before_change",
+      "accounts": [
+        {
+          "ref": "MAT 13:47-48",
+          "explanation": "MAT 13:49-50",
+          "called": "MAT 13:53"
+        }
+      ],
+      "thomas": [
+        {
+          "saying": 8,
+          "note": "Fisherman and net"
+        }
+      ]
+    },
+    {
+      "id": "what-defiles",
+      "file": "public/jesus/parables.json",
+      "status": "covered_before_change",
+      "accounts": [
+        {
+          "setting": "MAT 15:1-2",
+          "ref": "MAT 15:10-11",
+          "explanation": "MAT 15:15-20",
+          "called": "MAT 15:15"
+        },
+        {
+          "setting": "MRK 7:1-5",
+          "ref": "MRK 7:14-15",
+          "explanation": "MRK 7:17-23",
+          "called": "MRK 7:17"
+        }
+      ],
+      "thomas": [
+        {
+          "saying": 14,
+          "note": "What enters and leaves the mouth"
+        }
+      ]
+    },
+    {
+      "id": "unjust-steward",
+      "file": "public/jesus/parables.json",
+      "status": "covered_before_change",
+      "accounts": [
+        {
+          "ref": "LUK 16:1-13"
+        }
+      ],
+      "thomas": [
+        {
+          "saying": 47,
+          "note": "Related saying: two masters, Luke 16:13"
+        }
+      ]
+    },
+    {
+      "id": "pearl",
+      "file": "public/jesus/parables.json",
+      "status": "covered_before_change",
+      "accounts": [
+        {
+          "ref": "MAT 13:45-46",
+          "called": "MAT 13:53"
+        }
+      ],
+      "thomas": [
+        {
+          "saying": 76
+        }
+      ]
+    },
+    {
+      "id": "synoptic-closed-door",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "covered_before_change",
+      "accounts": [
+        {
+          "ref": "LUK 13:24-30"
+        }
+      ]
+    },
+    {
+      "id": "synoptic-serpents-vipers",
+      "file": "public/jesus/synoptic-figures.json",
+      "status": "new_followup",
+      "title": "Serpents and offspring of vipers",
+      "accounts": [
+        {
+          "ref": "MAT 23:33-36"
+        }
+      ],
+      "speaker": "Jesus",
+      "note": "This figurative address appears in a warning to scribes and Pharisees.",
+      "thomas": []
+    }
+  ],
+  "thomas_candidates": [
+    {
+      "candidate": "Thomas 3",
+      "source": "content/early-library/readings/gospel-thomas/saying-3.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-3",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-kingdom-within-among",
+          "role": "comparison",
+          "note": "Thomas speaks of the kingdom within and outside; the sayings and their contexts differ.",
+          "accounts": [
+            {
+              "ref": "LUK 17:20-21"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 5",
+      "source": "content/early-library/readings/gospel-thomas/saying-5.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-5",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-hidden-revealed",
+          "role": "comparison",
+          "note": "Thomas combines what is hidden being revealed with a call to know what is before one.",
+          "accounts": [
+            {
+              "ref": "MRK 4:22"
+            },
+            {
+              "ref": "LUK 8:17"
+            },
+            {
+              "ref": "MAT 10:26-27"
+            },
+            {
+              "ref": "LUK 12:2-3"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 6",
+      "source": "content/early-library/readings/gospel-thomas/saying-6.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-6",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-hidden-revealed",
+          "role": "comparison",
+          "note": "The hidden and revealed saying follows a discussion of conduct, fasting, prayer and food.",
+          "accounts": [
+            {
+              "ref": "MRK 4:22"
+            },
+            {
+              "ref": "LUK 8:17"
+            },
+            {
+              "ref": "MAT 10:26-27"
+            },
+            {
+              "ref": "LUK 12:2-3"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 7",
+      "source": "content/early-library/readings/gospel-thomas/saying-7.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-7",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-lion-human",
+          "role": "standalone",
+          "note": "The paradox has disputed meaning; translations and possible emendations differ."
+        }
+      ],
+      "constraints": [
+        "The paradox and proposed emendations have disputed interpretations."
+      ]
+    },
+    {
+      "candidate": "Thomas 10",
+      "source": "content/early-library/readings/gospel-thomas/saying-10.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-10",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-fire-earth",
+          "role": "comparison",
+          "note": "Both sayings speak of fire cast on the world or earth; the wording and setting differ.",
+          "accounts": [
+            {
+              "ref": "LUK 12:49"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 13",
+      "source": "content/early-library/readings/gospel-thomas/saying-13.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-13",
+      "placements": [
+        {
+          "file": "public/jesus/john-figures.json",
+          "id": "john-living-water",
+          "role": "comparison",
+          "note": "Thomas uses a bubbling spring and intoxication in a different dialogue; the comparison is thematic.",
+          "accounts": [
+            {
+              "ref": "JHN 4:13-14"
+            }
+          ]
+        },
+        {
+          "file": "public/jesus/james-parables.json",
+          "id": "james-fullness-sobriety",
+          "role": "james_comparison",
+          "note": "Thomas uses drinking and intoxication in a different dialogue; the comparison is thematic.",
+          "locator": "Being Filled · paragraphs 1–5"
+        }
+      ],
+      "constraints": [
+        "John comparison requires John figures in the Thomas loader and no-JS/trace enumeration."
+      ]
+    },
+    {
+      "candidate": "Thomas 16",
+      "source": "content/early-library/readings/gospel-thomas/saying-16.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-16",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-household-division",
+          "role": "comparison",
+          "note": "Thomas also speaks of division within a house; its concluding wording differs.",
+          "accounts": [
+            {
+              "ref": "MAT 10:34-36"
+            },
+            {
+              "ref": "LUK 12:51-53"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 19",
+      "source": "content/early-library/readings/gospel-thomas/saying-19.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-19",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-five-trees",
+          "role": "standalone",
+          "note": "The five trees are an image whose interpretation is uncertain."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 24",
+      "source": "content/early-library/readings/gospel-thomas/saying-24.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-24",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-city-hill",
+          "role": "comparison",
+          "note": "Thomas speaks of light within a person. The light image is thematic; the sayings differ.",
+          "accounts": [
+            {
+              "ref": "MAT 5:14-16"
+            }
+          ]
+        },
+        {
+          "file": "public/jesus/john-figures.json",
+          "id": "john-walking-light",
+          "role": "comparison",
+          "note": "Thomas speaks of light within a person; the comparison is thematic and the settings differ.",
+          "accounts": [
+            {
+              "ref": "JHN 8:12"
+            },
+            {
+              "ref": "JHN 12:35"
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        "John comparison requires John figures in the Thomas loader; no-JS and trace enumeration also need John."
+      ]
+    },
+    {
+      "candidate": "Thomas 25",
+      "source": "content/early-library/readings/gospel-thomas/saying-25.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-25",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-brother-eye",
+          "role": "standalone",
+          "note": "Thomas compares care for a brother with protecting the pupil of the eye."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 28",
+      "source": "content/early-library/readings/gospel-thomas/saying-28.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-28",
+      "placements": [
+        {
+          "file": "public/jesus/john-figures.json",
+          "id": "john-blindness-sight",
+          "role": "comparison",
+          "note": "Thomas uses blindness of heart and drunkenness; this is a thematic comparison in a different setting.",
+          "accounts": [
+            {
+              "ref": "JHN 9:39-41"
+            }
+          ]
+        },
+        {
+          "file": "public/jesus/early-figures.json",
+          "id": "truth-awakening-drunkenness",
+          "role": "early_comparison_observed_outside_authorized_scope",
+          "note": "Both use drunkenness imagery; the applications and contexts differ.",
+          "locator": "The Book of the Living · paragraph 4",
+          "related": null
+        },
+        {
+          "file": "public/jesus/james-parables.json",
+          "id": "james-fullness-sobriety",
+          "role": "james_comparison",
+          "note": "Thomas uses drunkenness and sobriety in a different setting; the comparison is thematic.",
+          "locator": "Being Filled · paragraphs 1–5"
+        }
+      ],
+      "constraints": [
+        "John comparison requires John figures in the Thomas loader and no-JS/trace enumeration."
+      ]
+    },
+    {
+      "candidate": "Thomas 32",
+      "source": "content/early-library/readings/gospel-thomas/saying-32.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-32",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-city-hill",
+          "role": "comparison",
+          "note": "Both say that a city on a height cannot be hidden; Thomas adds that it cannot fall.",
+          "accounts": [
+            {
+              "ref": "MAT 5:14-16"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 36",
+      "source": "content/early-library/readings/gospel-thomas/saying-36.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-36",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-birds-provision",
+          "role": "comparison",
+          "note": "Thomas speaks briefly about anxiety over clothing; the Gospel passages develop additional images.",
+          "accounts": [
+            {
+              "ref": "MAT 6:25-34"
+            },
+            {
+              "ref": "LUK 12:22-31"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 39",
+      "source": "content/early-library/readings/gospel-thomas/saying-39.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-39",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-lambs-wolves",
+          "role": "comparison",
+          "note": "Thomas 39 ends with serpents and doves; its preceding keys and entry saying is a separate comparison.",
+          "accounts": [
+            {
+              "ref": "MAT 10:16"
+            },
+            {
+              "ref": "LUK 10:3"
+            }
+          ]
+        },
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-keys-entry",
+          "role": "comparison",
+          "note": "The keys and blocked entry are followed by a separate serpents-and-doves saying.",
+          "accounts": [
+            {
+              "ref": "MAT 23:14"
+            },
+            {
+              "ref": "LUK 11:52"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 40",
+      "source": "content/early-library/readings/gospel-thomas/saying-40.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-40",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-uprooted-plant",
+          "role": "comparison",
+          "note": "Thomas speaks of a grapevine planted outside the Father; the wording and application differ.",
+          "accounts": [
+            {
+              "ref": "MAT 15:13"
+            }
+          ]
+        },
+        {
+          "file": "public/jesus/early-figures.json",
+          "id": "philip-unplanted-plant",
+          "role": "early_comparison_observed_outside_authorized_scope",
+          "note": "Thomas 40 also speaks of an unrooted vine being uprooted; the wording and context differ.",
+          "locator": "Uprooting Evil · paragraph 5",
+          "related": "synoptic-uprooted-plant"
+        }
+      ],
+      "constraints": [
+        "Philip Uprooting Evil paragraph 5 is an early-data comparison outside this task; check the observed placements and source before integrating."
+      ]
+    },
+    {
+      "candidate": "Thomas 46",
+      "source": "content/early-library/readings/gospel-thomas/saying-46.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-46",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-john-least-kingdom",
+          "role": "comparison",
+          "note": "Thomas uses a little-child formulation in its comparison with John; the wording differs.",
+          "accounts": [
+            {
+              "ref": "MAT 11:11"
+            },
+            {
+              "ref": "LUK 7:28"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 48",
+      "source": "content/early-library/readings/gospel-thomas/saying-48.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-48",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-moving-mountain",
+          "role": "comparison",
+          "note": "Thomas connects the mountain moving with two people making peace in a house.",
+          "accounts": [
+            {
+              "ref": "MAT 17:20"
+            },
+            {
+              "ref": "MAT 21:21"
+            },
+            {
+              "ref": "MRK 11:23"
+            },
+            {
+              "ref": "LUK 17:6"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 56",
+      "source": "content/early-library/readings/gospel-thomas/saying-56.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-56",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-world-corpse",
+          "role": "standalone",
+          "note": "Compare Thomas 80, which uses body rather than corpse; their wording differs."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 60",
+      "source": "content/early-library/readings/gospel-thomas/saying-60.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-60",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-samaritan-lamb",
+          "role": "standalone",
+          "note": "Jesus and the disciples discuss the lamb; this is not the Good Samaritan story."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 62",
+      "source": "content/early-library/readings/gospel-thomas/saying-62.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-62",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-left-right-hand",
+          "role": "comparison",
+          "note": "The hand saying follows a statement about mysteries in Thomas; Matthew places it in teaching about giving.",
+          "accounts": [
+            {
+              "ref": "MAT 6:1-4"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 70",
+      "source": "content/early-library/readings/gospel-thomas/saying-70.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-70",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-bringing-forth",
+          "role": "standalone",
+          "note": "The saying contains bracketed words; the image and its interpretation are disputed."
+        }
+      ],
+      "constraints": [
+        "Preserve bracketed words and avoid an asserted interpretation."
+      ]
+    },
+    {
+      "candidate": "Thomas 71",
+      "source": "content/early-library/readings/gospel-thomas/saying-71.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-71",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-temple-testimony",
+          "role": "comparison",
+          "note": "Thomas attributes destroying a house to Jesus; its ending is damaged and it does not mention three days.",
+          "accounts": [
+            {
+              "ref": "MAT 26:61"
+            },
+            {
+              "ref": "MRK 14:58"
+            }
+          ]
+        },
+        {
+          "file": "public/jesus/john-figures.json",
+          "id": "john-temple",
+          "role": "comparison",
+          "note": "Thomas speaks of destroying a house; the ending is damaged, and it does not mention three days. John describes a different exchange.",
+          "accounts": [
+            {
+              "ref": "JHN 2:19-21"
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        "John comparison requires John figures in the Thomas loader; no-JS and trace enumeration also need John. Trial witness comparison has a different speaker."
+      ]
+    },
+    {
+      "candidate": "Thomas 72",
+      "source": "content/early-library/readings/gospel-thomas/saying-72.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-72",
+      "placements": [
+        {
+          "file": "public/jesus/parables.json",
+          "id": "rich-fool",
+          "role": "comparison",
+          "note": "The inheritance request resembles the Luke 12:13–15 setting; Thomas does not include the rich fool story.",
+          "accounts": [
+            {
+              "setting": "LUK 12:13-15",
+              "ref": "LUK 12:16-21",
+              "called": "LUK 12:16"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 73",
+      "source": "content/early-library/readings/gospel-thomas/saying-73.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-73",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-harvest-workers",
+          "role": "comparison",
+          "note": "The harvest and few workers recur; the surrounding settings differ.",
+          "accounts": [
+            {
+              "ref": "MAT 9:37-38"
+            },
+            {
+              "ref": "LUK 10:2"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 74",
+      "source": "content/early-library/readings/gospel-thomas/saying-74.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-74",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-empty-well",
+          "role": "standalone",
+          "note": "The speaker and the meaning of the crowded well are unclear in the saying."
+        }
+      ],
+      "constraints": [
+        "The source does not clearly identify the speaker or provide an explanation."
+      ]
+    },
+    {
+      "candidate": "Thomas 76",
+      "source": "content/early-library/readings/gospel-thomas/saying-76.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-76",
+      "placements": [
+        {
+          "file": "public/jesus/parables.json",
+          "id": "pearl",
+          "role": "comparison",
+          "note": null,
+          "accounts": [
+            {
+              "ref": "MAT 13:45-46",
+              "called": "MAT 13:53"
+            }
+          ]
+        },
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-treasures-heaven",
+          "role": "comparison",
+          "note": "The second part speaks of enduring treasure safe from destructive creatures; the first part is a pearl story.",
+          "accounts": [
+            {
+              "ref": "MAT 6:19-21"
+            },
+            {
+              "ref": "LUK 12:33-34"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 77",
+      "source": "content/early-library/readings/gospel-thomas/saying-77.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-77",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-light-wood-stone",
+          "role": "standalone",
+          "note": "Thomas combines a statement about light with finding the speaker in wood and stone."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 78",
+      "source": "content/early-library/readings/gospel-thomas/saying-78.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-78",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-fine-clothing",
+          "role": "comparison",
+          "note": "The reed and fine clothing recur; Thomas has damaged wording and a different ending.",
+          "accounts": [
+            {
+              "ref": "MAT 11:7-8"
+            },
+            {
+              "ref": "LUK 7:24-25"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 79",
+      "source": "content/early-library/readings/gospel-thomas/saying-79.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-79",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-hearing-message",
+          "role": "comparison",
+          "note": "Thomas combines a woman’s blessing and a reply about hearing with a saying about childlessness; Luke places these in different settings.",
+          "accounts": [
+            {
+              "ref": "LUK 11:27-28"
+            },
+            {
+              "ref": "LUK 23:29"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 80",
+      "source": "content/early-library/readings/gospel-thomas/saying-80.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-80",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-world-body",
+          "role": "standalone",
+          "note": "Compare Thomas 56, which uses corpse rather than body; their wording differs."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 84",
+      "source": "content/early-library/readings/gospel-thomas/saying-84.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-84",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-likeness-images",
+          "role": "standalone",
+          "note": "The saying contrasts a visible likeness with images that came into being earlier; interpretation is uncertain."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 86",
+      "source": "content/early-library/readings/gospel-thomas/saying-86.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-86",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-foxes-birds",
+          "role": "comparison",
+          "note": "The foxes and birds contrast with the Son of Humanity having nowhere to rest; Thomas is partly reconstructed.",
+          "accounts": [
+            {
+              "ref": "MAT 8:20"
+            },
+            {
+              "ref": "LUK 9:58"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 87",
+      "source": "content/early-library/readings/gospel-thomas/saying-87.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-87",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-body-soul",
+          "role": "standalone",
+          "note": "The saying describes dependence among body and soul; its interpretation is not explained."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 89",
+      "source": "content/early-library/readings/gospel-thomas/saying-89.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-89",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-cup-inside-outside",
+          "role": "comparison",
+          "note": "Thomas asks about the maker of the inside and outside; the Gospel criticisms and applications differ.",
+          "accounts": [
+            {
+              "ref": "MAT 23:25-26"
+            },
+            {
+              "ref": "LUK 11:39-41"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 90",
+      "source": "content/early-library/readings/gospel-thomas/saying-90.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-90",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-yoke",
+          "role": "comparison",
+          "note": "The easy yoke and rest recur with different wording.",
+          "accounts": [
+            {
+              "ref": "MAT 11:28-30"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 91",
+      "source": "content/early-library/readings/gospel-thomas/saying-91.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-91",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-reading-sky",
+          "role": "comparison",
+          "note": "Thomas compares reading the sky and earth with failing to recognize the present; the surrounding exchange differs.",
+          "accounts": [
+            {
+              "ref": "MAT 16:2-3"
+            },
+            {
+              "ref": "LUK 12:54-56"
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        "Matthew 16:2b–3 has manuscript uncertainty."
+      ]
+    },
+    {
+      "candidate": "Thomas 92",
+      "source": "content/early-library/readings/gospel-thomas/saying-92.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-92",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-ask-seek",
+          "role": "comparison",
+          "note": "Thomas speaks of seeking and finding in a different dialogue.",
+          "accounts": [
+            {
+              "ref": "MAT 7:7-8"
+            },
+            {
+              "ref": "LUK 11:9-10"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 93",
+      "source": "content/early-library/readings/gospel-thomas/saying-93.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-93",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-holy-dogs",
+          "role": "comparison",
+          "note": "The images of holy things, dogs, pearls and pigs recur; Thomas ends in a damaged passage.",
+          "accounts": [
+            {
+              "ref": "MAT 7:6"
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        "Preserve the damaged ending in the source reader."
+      ]
+    },
+    {
+      "candidate": "Thomas 94",
+      "source": "content/early-library/readings/gospel-thomas/saying-94.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-94",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-ask-seek",
+          "role": "comparison",
+          "note": "Seeking and finding, and knocking and opening, recur; the latter clause is reconstructed in brackets.",
+          "accounts": [
+            {
+              "ref": "MAT 7:7-8"
+            },
+            {
+              "ref": "LUK 11:9-10"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 95",
+      "source": "content/early-library/readings/gospel-thomas/saying-95.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-95",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-lending-expecting-return",
+          "role": "comparison",
+          "note": "Thomas contrasts lending at interest with giving without expecting return; the emphasis differs.",
+          "accounts": [
+            {
+              "ref": "LUK 6:34-35"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 101",
+      "source": "content/early-library/readings/gospel-thomas/saying-101.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-101",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-father-mother",
+          "role": "standalone",
+          "note": "Words and a clause are damaged or reconstructed; the source marks them with brackets and a gap."
+        }
+      ],
+      "constraints": [
+        "Preserve brackets and a gap in the source reader."
+      ]
+    },
+    {
+      "candidate": "Thomas 102",
+      "source": "content/early-library/readings/gospel-thomas/saying-102.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-102",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-keys-entry",
+          "role": "comparison",
+          "note": "The dog preventing cattle from eating shares the theme of hindering others; it is a different comparison.",
+          "accounts": [
+            {
+              "ref": "MAT 23:14"
+            },
+            {
+              "ref": "LUK 11:52"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 106",
+      "source": "content/early-library/readings/gospel-thomas/saying-106.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-106",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-moving-mountain",
+          "role": "comparison",
+          "note": "Thomas joins making two into one with a mountain moving; the conditions and framing differ.",
+          "accounts": [
+            {
+              "ref": "MAT 17:20"
+            },
+            {
+              "ref": "MAT 21:21"
+            },
+            {
+              "ref": "MRK 11:23"
+            },
+            {
+              "ref": "LUK 17:6"
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        "2 Clement 12:2–6 and Thomas 22 comparison requires early-data changes outside this task."
+      ]
+    },
+    {
+      "candidate": "Thomas 108",
+      "source": "content/early-library/readings/gospel-thomas/saying-108.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-108",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-drinking-mouth",
+          "role": "standalone",
+          "note": "The saying joins drinking, becoming alike and the revelation of what is hidden."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 112",
+      "source": "content/early-library/readings/gospel-thomas/saying-112.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-112",
+      "placements": [
+        {
+          "file": "public/jesus/thomas-parables.json",
+          "id": "thomas-flesh-soul",
+          "role": "standalone",
+          "note": "The saying presents mutual dependence of flesh and soul as a pair of woes."
+        }
+      ],
+      "constraints": []
+    },
+    {
+      "candidate": "Thomas 113",
+      "source": "content/early-library/readings/gospel-thomas/saying-113.json",
+      "source_url": "https://www.gospels.net/thomas/",
+      "reader": "/early/library/gospel-thomas/saying-113",
+      "placements": [
+        {
+          "file": "public/jesus/synoptic-figures.json",
+          "id": "synoptic-kingdom-within-among",
+          "role": "comparison",
+          "note": "Thomas says the kingdom is spread over the earth but unseen; the wording differs from Luke.",
+          "accounts": [
+            {
+              "ref": "LUK 17:20-21"
+            }
+          ]
+        }
+      ],
+      "constraints": []
+    }
+  ],
+  "james_early_comparisons": [
+    {
+      "james_id": "james-fullness-sobriety",
+      "early_id": "truth-awakening-drunkenness",
+      "james_note": "The Gospel of Truth also uses an image of drunkenness; the settings and applications differ.",
+      "work": "Gospel of Truth",
+      "locator": "The Book of the Living · paragraph 4",
+      "speaker": "The author",
+      "translator": "Mark M. Mattison · translation from the Coptic",
+      "note": "The author compares gaining knowledge to returning from drunkenness.",
+      "edition": "gospel-truth",
+      "section": "the-book-of-the-living",
+      "start": 4,
+      "end": 4,
+      "sha256": "7ce79e53fab75ada5b476b88424cf0336fc8c4c91672bb2c6973298c4013d07e",
+      "reader": "/early/library/gospel-truth/the-book-of-the-living#p4",
+      "source": "https://www.gospels.net/truth"
+    }
+  ],
+  "early_relationships": [
+    {
+      "kind": "gospel",
+      "id": "second-clement-temple-physician",
+      "target": "john-temple",
+      "note": "These images resemble John 2:19–21 and the physician sayings only in imagery; the subjects and applications differ."
+    },
+    {
+      "kind": "gospel",
+      "id": "second-clement-house-robbers",
+      "target": "synoptic-house-den-robbers",
+      "note": "The homilist invokes the house and robbers quotation, rather than narrating a Gospel parable. This excerpt corrects identified transcription errors against the 1891 printed edition."
+    },
+    {
+      "kind": "gospel",
+      "id": "hermas-neglected-vineyard",
+      "target": "sower",
+      "note": "The Shepherd compares distractions to thorns and weeds in a neglected vineyard; the application differs from the Gospel sower. His speech continues."
+    },
+    {
+      "kind": "early",
+      "id": "hermas-tower-explanation",
+      "target": "hermas-tower",
+      "note": "The woman explains the tower and its stones; the final block continues across the source-section boundary. This continues the earlier tower vision. This excerpt corrects identified transcription errors against the 1891 printed edition."
+    },
+    {
+      "kind": "early",
+      "id": "hermas-wine-jars-temptation",
+      "target": "truth-jars",
+      "note": "The Shepherd compares temptation to testing full and empty jars. The Shepherd’s speech continues. The Gospel of Truth uses jars in a different image and setting."
+    },
+    {
+      "kind": "gospel",
+      "id": "second-clement-temple-physician",
+      "target": "synoptic-physician-sick",
+      "note": "These images resemble John 2:19–21 and the physician sayings only in imagery; the subjects and applications differ."
+    },
+    {
+      "kind": "gospel",
+      "id": "second-clement-lips-heart",
+      "target": "synoptic-lips-heart",
+      "note": "The Isaiah quotation also appears in Matthew 15:7–9 and Mark 7:6–7. This excerpt corrects identified transcription errors against the 1891 printed edition."
+    },
+    {
+      "kind": "early",
+      "id": "hermas-tower",
+      "target": "hermas-tower-explanation",
+      "note": "Selected paragraphs; the woman’s explanation continues in the edition."
+    },
+    {
+      "kind": "early",
+      "id": "hermas-vineyard-servant",
+      "target": "hermas-vineyard-servant-explanation",
+      "note": "The Shepherd’s explanation continues in the edition."
+    },
+    {
+      "kind": "early",
+      "id": "hermas-vineyard-servant-explanation",
+      "target": "hermas-vineyard-servant",
+      "note": "The Shepherd first applies the story to fasting, then explains its figures. This selection includes the bridge between the story and its later interpretation. This excerpt corrects identified transcription errors against the 1891 printed edition."
+    }
+  ]
+}

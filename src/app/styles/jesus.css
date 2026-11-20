@@ -21,19 +21,6 @@
 .world-jesus main {
   flex: 1;
 }
-.world-jesus .wg-source-disclosure {
-  border-top: 1px solid var(--line);
-  padding-top: 0.65rem;
-}
-.world-jesus .wg-source-disclosure summary {
-  color: var(--accent);
-  cursor: pointer;
-  font-size: 0.84rem;
-  font-weight: 700;
-}
-.world-jesus .wg-source-disclosure .wg-source {
-  margin-top: 0.55rem;
-}
 /* The Jesus landing keeps world navigation in normal flow after the footer. */
 .world-jesus:has(.vsw[data-world-switcher="true"]) {
   --world-dock-clearance: 0rem;
@@ -64,6 +51,152 @@
   background: color-mix(in oklab, var(--accent) 9%, transparent);
   box-shadow: 0 0 0 0.35rem color-mix(in oklab, var(--accent) 9%, transparent);
   outline: none;
+}
+.jsu-word-door {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 0;
+}
+.jsu-word-door button {
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  text-align: start;
+}
+.jsu-word-door button[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.jsu-word-door button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.jsu-word-door-saying {
+  max-width: 40rem;
+  margin-top: 1rem;
+}
+.jsu-word-door-saying h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.jsu-word-door-saying p {
+  margin: 0.55rem 0 0;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+.jsu-word-door-picture {
+  display: block;
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  margin-top: 0.9rem;
+}
+.jsu-word-door-verse {
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+.jsu-word-door-verse .world-vnum {
+  margin-inline-end: 0.45rem;
+}
+.jsu-word-door-chapter {
+  min-height: 2.75rem;
+  margin-top: 0.9rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.jsu-word-door-chapter:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.parable-walk-details {
+  margin: 1.25rem 0 0;
+}
+.parable-walk-details > summary {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  list-style: none;
+}
+.parable-walk-details > summary::-webkit-details-marker {
+  display: none;
+}
+.parable-walk-details[open] > summary {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.parable-walk-details > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.parable-walk {
+  max-width: 40rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  border: 0;
+}
+.parable-walk-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.parable-stop {
+  display: none;
+}
+.parable-stop h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.parable-stop-where {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+}
+.parable-stop-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+.parable-stop-nav label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.parable-stop-nav label:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 .jsu-word-tools {
   display: grid;
@@ -2684,18 +2817,6 @@
   .world-jesus main {
     padding-top: 2rem;
   }
-  .world-jesus .world-guide {
-    margin-bottom: 1.5rem;
-  }
-  .world-jesus .wg-nav {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 0.2rem;
-    scrollbar-width: thin;
-  }
-  .world-jesus .wg-nav a {
-    flex: none;
-  }
   .jsu-connection-key {
     grid-template-columns: 1fr;
   }
@@ -4665,12 +4786,9 @@
    The page is the picker, so the room box and the path list step aside. */
 .world-jesus:has(.jl-home) { --maxw: 74rem; }
 .world-jesus main > .wrap:has(> .jl-home) { display: block; max-width: var(--maxw); }
-/* Start just under the header, as the Scripture pages do. */
-.world-jesus main:has(> .wrap > .jl-home) { padding-top: clamp(1rem, 2.5vw, 1.75rem); }
 
 .jl-home { display: grid; gap: 1.4rem; padding-bottom: 1rem; }
 .jl-head { display: grid; gap: 0.3rem; }
-.jl-eyebrow { margin: 0; color: var(--accent); font-family: var(--font-display); font-style: italic; font-size: 1.1rem; }
 .jl-head h1 { margin: 0; font-family: var(--font-display); font-size: clamp(2.4rem, 5.5vw, 3.8rem); font-weight: 500; line-height: 1; letter-spacing: -0.02em; text-wrap: balance; }
 .jl { display: grid; gap: 1rem; }
 
@@ -4810,3 +4928,365 @@
 .jsu-thomas-source-list a { text-decoration: underline; text-underline-offset: 0.15em; }
 .jsu-parable-thomas ul { margin-bottom: 0; }
 .jsu-parable-thomas li { margin: .4rem 0; }
+
+/* A compact map of the Parables room, before the full readings. */
+.parables-overview {
+  margin: 2.5rem 0 3rem;
+  scroll-margin-top: 6rem;
+}
+.parables-overview h2 {
+  margin: 0 0 .6rem;
+  font-size: 1.6rem;
+}
+.parables-overview > p {
+  max-width: 62ch;
+}
+.parables-map-table-wrap {
+  /* Keep the absolute screen-reader labels inside the table's scroller. */
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  container-type: inline-size;
+}
+.parables-table-scroll-hint {
+  display: none;
+  color: var(--muted);
+  font-size: .8rem;
+}
+.parables-map-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  line-height: 1.35;
+  font-size: .88rem;
+}
+.parables-map-table caption {
+  text-align: left;
+  margin: 1.25rem 0 .5rem;
+  color: var(--muted);
+  font-size: .85rem;
+}
+.parables-map-table th,
+.parables-map-table td {
+  border-bottom: 1px solid var(--line);
+  padding: .65rem .25rem;
+  vertical-align: middle;
+}
+.parables-map-table th:first-child {
+  width: auto;
+  text-align: left;
+  padding-left: 0;
+}
+.parables-map-table thead th:not(:first-child),
+.parables-map-table td {
+  width: 2.7rem;
+  text-align: center;
+}
+.parables-map-table tbody th {
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.parables-map-table td {
+  color: var(--accent);
+}
+.parables-map-table abbr {
+  text-decoration: none;
+}
+.parables-map-table a,
+.parables-work-list a,
+.parables-back a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: .16em;
+}
+.parables-overview a[aria-disabled="true"] {
+  pointer-events: none;
+}
+.parables-index-writings {
+  display: block;
+  margin-top: .15rem;
+  color: var(--muted);
+  font-size: .75rem;
+}
+.parables-overview p.parables-overview-note,
+.parables-overview p.parables-results {
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.5;
+}
+.parables-search {
+  display: block;
+  font-weight: 650;
+  margin: 1.6rem 0 .4rem;
+}
+.parables-search-input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: .7rem .8rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.parables-group-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+.parables-group-controls button {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: .55rem .7rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: .83rem;
+  text-align: left;
+  cursor: pointer;
+}
+.parables-group-controls button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+.parables-group-controls button:focus-visible,
+.parables-overview a:focus-visible,
+.parables-overview input:focus-visible,
+.parables-work-list summary:focus-visible,
+.parables-back a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.parables-map-table-wrap:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.parables-index-group h3 {
+  margin: 1.4rem 0 .5rem;
+  font-size: 1rem;
+}
+.parables-work-list details {
+  border-bottom: 1px solid var(--line);
+}
+.parables-work-list summary {
+  padding: .7rem 0;
+  cursor: pointer;
+  font-weight: 650;
+}
+.parables-work-list summary span,
+.parables-work-list li span {
+  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 400;
+}
+.parables-work-list ul {
+  margin: .2rem 0 .8rem;
+  padding-left: 1.5rem;
+}
+.parables-work-list li {
+  margin: .6rem 0;
+}
+.parables-work-list li span {
+  display: block;
+}
+.parables-back {
+  margin: 1rem 0 1.5rem;
+  font-size: .85rem;
+}
+.parables-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+@media (max-width: 480px) {
+  .parables-map-table { font-size: .85rem; }
+  .parables-map-table thead th:not(:first-child),
+  .parables-map-table td {
+    box-sizing: border-box;
+    width: 1.8em;
+    padding-inline: .1rem;
+  }
+}
+@container (max-width: 13rem) {
+  .parables-map-table { min-width: 320px; }
+  .parables-table-scroll-hint { display: block; }
+}
+
+/* Parables browse: one group at a time. The group buttons wrap above the list
+   at every width. */
+.parables-browse {
+  scroll-margin-top: 1rem;
+  margin: 0 0 3rem;
+}
+.parables-browse-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+.parables-browse-main {
+  min-width: 0;
+}
+.parables-browse-main > .parables-search-area .parables-search {
+  margin-top: 0;
+}
+.parables-rail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.parables-rail button,
+.parables-writings button {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .45rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: .5rem .8rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: .88rem;
+  line-height: 1.25;
+  text-align: left;
+  cursor: pointer;
+}
+.parables-rail-count,
+.parables-writings button span {
+  color: var(--muted);
+  font-size: .8rem;
+  font-variant-numeric: tabular-nums;
+}
+.parables-rail button[aria-pressed="true"],
+.parables-writings button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+.parables-rail button[aria-pressed="true"] .parables-rail-count,
+.parables-writings button[aria-pressed="true"] span {
+  color: var(--bg);
+}
+.parables-rail button:focus-visible,
+.parables-writings button:focus-visible,
+.parables-step button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.parables-writings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: 0 0 1rem;
+}
+.parables-writings button {
+  font-size: .82rem;
+  padding: .42rem .7rem;
+}
+#parables-early-writings small {
+  color: var(--muted);
+  font-size: .8rem;
+  font-weight: 400;
+  margin-left: .4rem;
+}
+/* Where an open entry sits, with steps to its neighbours. */
+.parables-step {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem 1rem;
+  margin: 1rem 0 1.25rem;
+  padding-top: .8rem;
+  border-top: 1px solid var(--line);
+}
+.parables-step-where {
+  margin: 0;
+  color: var(--muted);
+  font-size: .85rem;
+  font-variant-numeric: tabular-nums;
+}
+.parables-step-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+}
+.parables-step button {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: .45rem .8rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: .88rem;
+  cursor: pointer;
+}
+.parables-step button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+.parables-step .parables-step-close {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+.parables-browse [data-shown="false"] {
+  display: none;
+}
+/* The pressed group button names the shown group, so its heading is kept for
+   screen readers only; the status line is empty until a search runs. */
+.parables-browse-main > [data-parable-group] > h2.jsu-chapter {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.parables-search-area p.parables-results:empty {
+  margin: 0;
+}
+
+/* In the browse list, entries are compact rows rather than cards, so a group
+   fits in a few screens; an open entry keeps the card's accent. */
+.parables-browse .jsu-pair-block {
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+}
+.parables-browse .jsu-pair-head {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .1rem 1rem;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  padding: .65rem .2rem;
+}
+.parables-browse .jsu-pair-head > span:first-child {
+  min-width: 0;
+}
+.parables-browse .jsu-pair-head .jsu-pair-refs {
+  font-size: .78rem;
+}
+.parables-browse .jsu-pair-head:hover > span:first-child,
+.parables-browse .jsu-pair-head[aria-expanded="true"] > span:first-child {
+  color: var(--accent);
+}
+.parables-browse .jsu-pair-head[aria-expanded="true"] {
+  font-weight: 650;
+}
+.parables-browse .jsu-pair-head:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

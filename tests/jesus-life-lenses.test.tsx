@@ -86,6 +86,7 @@ test("the Jesus page opens on his life, with nothing chosen for the visitor", ()
   assert.deepEqual([dots[0], dots.at(-1)], ["annunciation", "ascension"]);
   assert.ok(!markup.includes('aria-current="true"'), "no moment is chosen before the visitor chooses one");
   assert.match(markup, /Choose a moment on the line or a place on the map\./);
+  assert.match(markup, /Mary Magdalene and the other Mary came to see the tomb\./);
 
   // The rooms, under names a reader recognizes.
   for (const label of ["All his words", "The full map", "Gospels word by word", "Research worksheets"]) {

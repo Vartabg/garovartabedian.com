@@ -1,7 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
 import canonsJson from "../public/scriptures/canons.json";
 import type { Canons } from "../src/lib/scriptures/types";
+import { highlightFindText } from "../src/lib/site/find-highlight";
 import type { FindGroup, FindItem } from "../src/lib/site/find-query";
 import { surfaceGroups, previewTarget } from "../src/lib/site/find-surface";
 const canons = canonsJson as Canons;
@@ -47,7 +50,8 @@ test("Find's opening surface is bounded and hides the command directory until re
   ];
   const opening = surfaceGroups(groups, "all", false);
   assert.equal(opening.length, 1);
-  assert.equal(opening[0].items.length, 6);
+  // Bounded at the number of sections, so none of the eight is hidden.
+  assert.equal(opening[0].items.length, 8);
   assert.equal(surfaceGroups(groups, "texts", true)[0].items[0].id, "action");
 });
 test("duplicate destinations collapse but distinct preference commands survive", () => {
@@ -109,4 +113,22 @@ test("unavailable editions, out-of-range chapters, and non-reader URLs have no p
       null,
       href,
     );
+});
+
+test("highlightFindText wraps matched words without shifting ligature or diacritic offsets", () => {
+  const sample = "From Judæa and Nicæa unto Cæsar's household: light of the world.";
+  const html = renderToStaticMarkup(
+    createElement("span", null, highlightFindText(sample, "Nicaea Caesar light")),
+  );
+  assert.match(html, /<mark class="find-hl">Nicæa<\/mark>/);
+  assert.match(html, /<mark class="find-hl">Cæsar<\/mark>/);
+  assert.match(html, /<mark class="find-hl">light<\/mark>/);
+  const stripped = html
+    .replace(/<\/?span>/g, "")
+    .replace(/<\/?mark[^>]*>/g, "")
+    .replace(/&#x27;/g, "'");
+  assert.equal(stripped, sample);
+
+  // Command queries never highlight ordinary text.
+  assert.equal(highlightFindText("Theme: Dark", "> dark"), "Theme: Dark");
 });

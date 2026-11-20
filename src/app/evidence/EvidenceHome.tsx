@@ -4,7 +4,9 @@ import type { EvidenceData, EvidenceLayerId } from "@/lib/evidence/types";
 import type { Claim } from "@/lib/evidence/claims";
 import ClaimIndex from "./ClaimIndex";
 import SourceBasis from "../_components/SourceBasis";
-import WorldEntry from "../_components/WorldEntry";
+import HashDisclosureOpener from "../_components/HashDisclosureOpener";
+import WorldDisclosure from "../_components/WorldDisclosure";
+import WorldHeroActions from "../_components/WorldHeroActions";
 import WorldHomeHero from "../_components/WorldHomeHero";
 
 const LAYER_MARK: Record<EvidenceLayerId, string> = {
@@ -31,44 +33,25 @@ export default function EvidenceHome({
 
   return (
     <>
+      <HashDisclosureOpener />
       <WorldHomeHero
         world="evidence"
-        eyebrow={data.title}
         title="Follow the claim."
         facets={["Source", "Evidence", "Inference", "Interpretation", "Limit"]}
+        actions={
+          <WorldHeroActions
+            label="Explore how we know"
+            links={[
+              { href: "#claim-lab", label: "Test the first claim" },
+              { href: "#method", label: "Learn the four-step loop" },
+              { href: "#rooms", label: "Choose an evidence lens" },
+              { href: "#source-map", label: "Trace the sources" },
+            ]}
+          />
+        }
       >
-        Before asking whether a claim is convincing, ask what kind of claim it
-        is. This world keeps text, stone, witness, experiment, argument, and
-        tradition distinct—then shows exactly where they meet.
+        {data.claimLab[0].record} {data.claimLab[0].limit}
       </WorldHomeHero>
-
-      <WorldEntry
-        eyebrow="A world about method"
-        href="#claim-lab"
-        title="How does a claim become knowledge?"
-        note="Start with a real claim. Open its record, inspect the reasoning, and stop exactly where the evidence stops."
-        action="Test the first claim"
-        paths={[
-          {
-            href: "#method",
-            label: "Learn the four-step loop",
-            note: "Observation, inference, interpretation, and limit.",
-            meta: "Method",
-          },
-          {
-            href: "#rooms",
-            label: "Choose an evidence lens",
-            note: "Eight questions for text, stone, witnesses, experiments, and more.",
-            meta: "Lenses",
-          },
-          {
-            href: "#source-map",
-            label: "Trace the sources",
-            note: "See which records can answer which kinds of questions.",
-            meta: "Provenance",
-          },
-        ]}
-      />
 
       <ResearchAudio id="evidence-method" />
 
@@ -138,8 +121,18 @@ export default function EvidenceHome({
         </div>
       </section>
 
-      <ClaimIndex claims={claims} />
+      <WorldDisclosure
+        label="Every graded claim on the site"
+        note={`${claims.length} claims across the worlds, filterable by textual and attestation grade.`}
+        variant="deep"
+      >
+        <ClaimIndex claims={claims} />
+      </WorldDisclosure>
 
+      <WorldDisclosure
+        label="The method and the eight lenses"
+        note="The loop, the charter, and the rooms that change the question."
+      >
       <section className="hw-method" id="method" aria-labelledby="hw-method-title">
         <div className="hw-section-heading">
           <p className="hw-kicker">The method</p>
@@ -223,6 +216,7 @@ export default function EvidenceHome({
           ))}
         </div>
       </section>
+      </WorldDisclosure>
 
       <section
         className="hw-source-map"

@@ -1,0 +1,131 @@
+import { WORLD, FOOT, FLIGHT_FLOOR as FLOOR, type Vec } from './motion';
+import arrival from '../content/arrival.json';
+// brake: the one soft limiter's deceleration (m/s2). Was 65, which the 60 Hz stop turned into peaks of 105-152 (about 8 g, 34 m/s to 0
+// in 0.43 s); 30 keeps the same stop point (buffer) and ramps a surge stop over 1.1 s (limits plan S2, 2026-09-28).
+export const CLEARANCE = { margin: .04, brake: 30, lookAhead: .25, buffer: .45 };
+const STEP = 1 / 60;
+/** The fastest closing speed that still stops `distance` short of the buffer at CLEARANCE.brake, counted per 60 Hz step: the
+ *  closing speed then drops by exactly brake x step a frame, never more (the continuous sqrt(2 a d) overshoots that near zero). */
+export function allowedClosing(distance: number) {
+  const a = CLEARANCE.brake, half = a * STEP / 2;
+  return Math.sqrt(half * half + 2 * a * Math.max(0, distance - CLEARANCE.buffer)) - half;
+}
+export const BUILDING_ROUTE = [
+  { id: 'arrival', label: 'Threshold of Hermon', x: 0, y: 20 + FOOT, z: 65 },
+  { id: 'lift', label: 'Summit liftoff', x: 0, y: 26, z: 65 },
+  { id: 'launch', label: 'Oath sanctuary departure', x: 0, y: 26, z: 47 },
+  { id: 'boulevard', label: 'Lower Gorge', x: 0, y: 3.2, z: 22 },
+  { id: 'viaduct', label: 'Cloven Arch', x: -3, y: 3.2, z: -1 },
+  { id: 'north', label: 'Watcher Gorge', x: 0, y: 8, z: -27 },
+  { id: 'ascent', label: 'High Sanctuary ascent', x: 9, y: 69, z: -38 },
+  { id: 'roof', label: 'Sanctuary of the Throne', x: 30, y: 69, z: -38 },
+] as const;
+// Discoverable story terminals: physical spots paired with the record a
+// player recovers there. Adding a terminal is a content change — Player.tsx
+// reads this table without flight-loop edits.
+export interface Terminal { id: string; position: Vec; radius: number; location: string; record: typeof arrival }
+// Each tablet cites its own passage. Its position identifies where a pilot may read it on Hermon.
+const sourceNote = "Quoted word for word from R. H. Charles, The Book of Enoch (1917), public domain; his editorial marks are left out. The tablet, its title and its placement on Hermon are game fiction.";
+export const TERMINALS: Terminal[] = [
+  { id: 'hermon-oath-01', position: { x: -7, y: 21, z: 58 }, radius: 5, location: 'Tablet of Semjaza', record: arrival },
+  { id: 'north-core-12', position: { x: 0, y: 12, z: -260 }, radius: 8, location: 'Tablet of the Seven Stars', record: {
+    id: 'north-core-12', locationId: 'hermon-north-core-12', title: 'The Prison of the Burning Stars', kind: 'Quoted source · 1 Enoch 21:3, 6',
+    place: 'Northern Ridge · Northern Vigil', date: '1 Enoch 21:3, 6',
+    body: "And there I saw seven stars of the heaven bound together in it, like great mountains and burning with fire. … ‘These are of the number of the stars of heaven, which have transgressed the commandment of the Lord, and are bound here till ten thousand years, the time entailed by their sins, are consummated.’",
+    note: sourceNote } },
+  { id: 'west-flats-09', position: { x: -230, y: 18, z: -40 }, radius: 8, location: 'Tablet of Azazel', record: {
+    id: 'west-flats-09', locationId: 'hermon-west-flats-09', title: 'The Binding in Dudael', kind: 'Quoted source · 1 Enoch 10:4–5',
+    place: 'Western Cleft · Western Vigil', date: '1 Enoch 10:4–5',
+    body: "And again the Lord said to Raphael: ‘Bind Azâzêl hand and foot, and cast him into the darkness: and make an opening in the desert, which is in Dûdâêl, and cast him therein. And place upon him rough and jagged rocks, and cover him with darkness, and let him abide there for ever, and cover his face that he may not see light.’",
+    note: sourceNote + " This passage describes Dudael. The western tablet marks where the pilot reads it on Hermon." } },
+  { id: 'east-flats-14', position: { x: 230, y: 18, z: -30 }, radius: 8, location: 'Tablet of Kokabiel', record: {
+    id: 'east-flats-14', locationId: 'hermon-east-flats-14', title: 'Secrets of the Firmament', kind: 'Quoted source · 1 Enoch 8:3',
+    place: 'Eastern Monoliths · Eastern Vigil', date: '1 Enoch 8:3',
+    body: "Semjâzâ taught enchantments, and root-cuttings, Armârôs the resolving of enchantments, Barâqîjâl (taught) astrology, Kôkabêl the constellations, Êzêqêêl the knowledge of the clouds, Araqiêl the signs of the earth, Shamsiêl the signs of the sun, and Sariêl the course of the moon.",
+    note: sourceNote } },
+  { id: 'south-breach-03', position: { x: 0, y: 10, z: 165 }, radius: 8, location: 'Tablet of Michael', record: {
+    id: 'south-breach-03', locationId: 'hermon-south-breach-03', title: 'The Four Looked Down', kind: 'Quoted source · 1 Enoch 9:1',
+    place: 'Southern Saddle · Outer Sanctuary', date: '1 Enoch 9:1',
+    body: "And then Michael, Uriel, Raphael, and Gabriel looked down from heaven and saw much blood being shed upon the earth, and all lawlessness being wrought upon the earth.",
+    note: sourceNote } },
+];
+export function nearestTerminal(position: Vec): Terminal | null {
+  for (const terminal of TERMINALS) {
+    const { x, y, z } = terminal.position;
+    if (Math.hypot(position.x - x, position.y - y, position.z - z) < terminal.radius) return terminal;
+  }
+  return null;
+}
+export function locationName(p: Vec, terminal = nearestTerminal(p)): string {
+  if (terminal) return terminal.location;
+  if (p.z < -208) return 'Northern Ridge';
+  if (p.z > 128) return 'Southern Saddle';
+  if (p.x < -225) return 'Western Cleft';
+  if (p.x > 225) return 'Eastern Ridge';
+  return p.y > 50 ? 'Sanctuary of the Throne' : p.y < 6 ? 'Lower Gorge' : p.z < 15 ? 'Cloven Arch' : 'Threshold of Hermon';
+}
+export function boundaryDistance(p: Vec) {
+  return Math.min(p.x - WORLD.minX, WORLD.maxX - p.x, p.z - WORLD.minZ, WORLD.maxZ - p.z, WORLD.ceiling - p.y);
+}
+export function limitApproach(velocity: Vec, normal: Vec, distance: number) {
+  const closing = -(velocity.x * normal.x + velocity.y * normal.y + velocity.z * normal.z);
+  const allowed = allowedClosing(distance);
+  const correction = Math.max(0, closing - allowed);
+  return { x: velocity.x + normal.x * correction, y: velocity.y + normal.y * correction, z: velocity.z + normal.z * correction };
+}
+/** Where a suit stops short of a wall or the ceiling: the plane offsets that keep the old stop points (1.14 m from a wall, where the
+ *  flight sweep used to meet the invisible collider; 0.54 m under the ceiling; the floor is the clamp itself). */
+const WALL_GAP = .69, CEILING_GAP = .09;
+/**
+ * The soft limiter's ramp also holds against a push the other way (limits review, F12). Closing speed only drops 30 m/s2 while the
+ * limiter ramps, but a suit that turns away as it brakes has its thrust re-aimed outward in the same frames: the velocity blend then
+ * adds up to 40 m/s2 more, and the last metre of a surge stop measured 38-42. While a face is in the ramp (previous closing within one
+ * step of the cap), the closing speed may not fall more than brake x step below where it was: the turn-away thrust waits for the ramp.
+ */
+export function paceClosing(p: Vec, prev: Vec, v: Vec): Vec {
+  let r = v;
+  for (const [n, distance] of PLANES(p)) {
+    const before = -(prev.x * n.x + prev.y * n.y + prev.z * n.z);
+    if (before <= 0 || before < allowedClosing(distance) - CLEARANCE.brake * STEP) continue;
+    const now = -(r.x * n.x + r.y * n.y + r.z * n.z), floor = before - CLEARANCE.brake * STEP;
+    if (now < floor) r = { x: r.x - n.x * (floor - now), y: r.y - n.y * (floor - now), z: r.z - n.z * (floor - now) };
+  }
+  return r;
+}
+/** The six faces: inward normal and the plane distance the soft limiter counts from (see WALL_GAP and CEILING_GAP). */
+const PLANES = (p: Vec) => [
+  [{ x: 1, y: 0, z: 0 }, p.x - WORLD.minX - WALL_GAP], [{ x: -1, y: 0, z: 0 }, WORLD.maxX - p.x - WALL_GAP],
+  [{ x: 0, y: 0, z: 1 }, p.z - WORLD.minZ - WALL_GAP], [{ x: 0, y: 0, z: -1 }, WORLD.maxZ - p.z - WALL_GAP],
+  [{ x: 0, y: -1, z: 0 }, WORLD.ceiling - p.y - CEILING_GAP], [{ x: 0, y: 1, z: 0 }, p.y - FLOOR + CLEARANCE.buffer],
+] as const;
+/** The one soft limiter for the six district faces: closing speed is capped by allowedClosing of the plane distance. */
+export function softenBounds(p: Vec, v: Vec): Vec {
+  let result = v;
+  for (const [normal, distance] of PLANES(p)) result = limitApproach(result, normal, distance);
+  return result;
+}
+/**
+ * Ceiling and floor keep the commanded speed (limits plan S5a). The soft limiter takes the closing part away, and the slide that
+ * is left ran at speed x cos(pitch): 32-90% of what the pilot asked for. Within SLIDE_ZONE of a surface the commanded vector pushes
+ * into, the horizontal speed rises toward sqrt(commanded^2 - vy^2), so the suit slides at full speed. Full weight from 2 m in.
+ */
+export const SLIDE_ZONE = 4;
+/** `peel`: +1 while the pitch peel is leaving the ceiling, -1 the floor (the slide keeps its speed through the peel too), else 0. */
+export function keepSlide(p: Vec, v: Vec, target: Vec, peel = 0): Vec {
+  const up = peel ? peel > 0 : target.y > 0, into = peel ? 1 : up ? target.y : -target.y;
+  const distance = up ? WORLD.ceiling - p.y : p.y - FLOOR;
+  if (into < .5 || distance >= SLIDE_ZONE) return v;
+  const u = Math.min(1, Math.max(0, (SLIDE_ZONE - distance) / (SLIDE_ZONE - 2))), weight = u * u * (3 - 2 * u);
+  const h = Math.hypot(v.x, v.z), commanded = Math.hypot(target.x, target.y, target.z);
+  const goal = peel ? commanded : Math.sqrt(Math.max(0, commanded * commanded - v.y * v.y));
+  // Only along the way the suit is already commanded to go: a suit still moving against its command (turning back) is not sped up.
+  if (goal <= h || v.x * target.x + v.z * target.z < 0) return v;
+  const next = h + (goal - h) * weight;
+  if (h > 1e-6) return { x: v.x * next / h, y: v.y, z: v.z * next / h };
+  const th = Math.hypot(target.x, target.z);
+  return th > 1e-6 ? { x: target.x / th * next, y: v.y, z: target.z / th * next } : v;
+}
+export function removeInward(velocity: Vec, normal: Vec) {
+  const closing = Math.min(0, velocity.x * normal.x + velocity.y * normal.y + velocity.z * normal.z);
+  return { x: velocity.x - normal.x * closing, y: velocity.y - normal.y * closing, z: velocity.z - normal.z * closing };
+}

@@ -39,9 +39,6 @@ export default function GiantsRoom({ data }: { data: GiantsData }) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/church">The Church</Link>
-      </p>
       <h1>The giants.</h1>
       <p className="lede">
         <GlossText text={data.intro} seen={glossSeen} />

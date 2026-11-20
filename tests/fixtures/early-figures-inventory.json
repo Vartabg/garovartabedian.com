@@ -1,0 +1,716 @@
+[
+  {
+    "id": "didache-two-ways",
+    "edition": "didache",
+    "section": "s1",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author’s instruction",
+    "related": "synoptic-before-judge",
+    "relatedAlso": [
+      "synoptic-yoke"
+    ]
+  },
+  {
+    "id": "first-clement-seed",
+    "edition": "1-clement",
+    "section": "1-clem-24",
+    "start": 1,
+    "end": 5,
+    "speaker": "The author",
+    "related": "john-grain-wheat",
+    "relatedAlso": []
+  },
+  {
+    "id": "diognetus-king-son",
+    "edition": "diognetus",
+    "section": "diogn-7",
+    "start": 3,
+    "end": 6,
+    "speaker": "The author",
+    "related": "wicked-tenants",
+    "relatedAlso": []
+  },
+  {
+    "id": "diognetus-garden",
+    "edition": "diognetus",
+    "section": "diogn-12",
+    "start": 1,
+    "end": 9,
+    "speaker": "The author",
+    "related": "synoptic-trees-fruit",
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-cross-serpent",
+    "edition": "barnabas",
+    "section": "barn-12",
+    "start": 1,
+    "end": 7,
+    "speaker": "The author interprets Scripture",
+    "related": "john-bronze-serpent",
+    "relatedAlso": []
+  },
+  {
+    "id": "diognetus-exchange",
+    "edition": "diognetus",
+    "section": "diogn-9",
+    "start": 2,
+    "end": 6,
+    "speaker": "The author",
+    "related": "synoptic-physician-sick",
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-goats-thorns",
+    "edition": "lightfoot-barnabas-goats-thorns",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-wedding-invitation",
+    "edition": "acts-thomas-wedding-invitation",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator, townspeople, Abbanes and Thomas",
+    "related": "wedding-banquet",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-heat-day",
+    "edition": "acts-thomas-heat-day",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "Thomas prays to Jesus",
+    "related": "workers-in-vineyard",
+    "relatedAlso": [
+      "synoptic-left-home"
+    ]
+  },
+  {
+    "id": "barnabas-thorns-heart",
+    "edition": "lightfoot-barnabas-thorns-heart",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author quotes and interprets Scripture",
+    "related": "sower",
+    "relatedAlso": []
+  },
+  {
+    "id": "diognetus-sojourners",
+    "edition": "diognetus",
+    "section": "diogn-5",
+    "start": 4,
+    "end": 17,
+    "speaker": "The author describes Christians",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-lips-heart",
+    "edition": "1-clement",
+    "section": "1-clem-15",
+    "start": 2,
+    "end": 4,
+    "speaker": "The author quotes Isaiah and the Psalms",
+    "related": "synoptic-lips-heart",
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-sheep-lamb",
+    "edition": "lightfoot-first-clement-sheep-lamb",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author quotes Isaiah and a psalm",
+    "related": "lost-sheep",
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-clothed-concord",
+    "edition": "1-clement",
+    "section": "1-clem-30",
+    "start": 3,
+    "end": 3,
+    "speaker": "The author exhorts the readers",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-grass-grain",
+    "edition": "1-clement",
+    "section": "1-clem-56",
+    "start": 14,
+    "end": 16,
+    "speaker": "The author quotes Job and comments",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-two-peoples",
+    "edition": "lightfoot-barnabas-two-peoples",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author recounts and interprets Scripture",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-light-captives",
+    "edition": "barnabas",
+    "section": "barn-14",
+    "start": 7,
+    "end": 9,
+    "speaker": "The author quotes prophetic words",
+    "related": "synoptic-isaiah-release",
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-temple-fold",
+    "edition": "barnabas",
+    "section": "barn-16",
+    "start": 2,
+    "end": 5,
+    "speaker": "The author quotes and interprets prophetic words",
+    "related": "john-temple",
+    "relatedAlso": []
+  },
+  {
+    "id": "diognetus-planted-teaching",
+    "edition": "diognetus",
+    "section": "diogn-7",
+    "start": 2,
+    "end": 2,
+    "speaker": "The author describes God’s teaching",
+    "related": "sower",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-mother-houses",
+    "edition": "acts-thomas-mother-houses",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator, the Lord’s voice and Thomas in prayer",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-good-shepherd",
+    "edition": "acts-thomas-good-shepherd",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator, a colt and Thomas in prayer",
+    "related": "john-sheepfold-shepherd",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-spirit-return",
+    "edition": "acts-thomas-spirit-return",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator, a devil, Thomas and a woman",
+    "related": "synoptic-unclean-spirit",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-hidden-mother",
+    "edition": "acts-thomas-hidden-mother",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "Thomas prays; the narrator continues",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-dwelling-places",
+    "edition": "acts-thomas-dwelling-places",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "A devil speaks to Thomas",
+    "related": "synoptic-unclean-spirit",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-eagle-dream",
+    "edition": "acts-thomas-eagle-dream",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "Charisius recounts a dream; Mygdonia responds",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-life-loan",
+    "edition": "acts-thomas-life-loan",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "King Misdaeus and Thomas",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-bread-life",
+    "edition": "acts-thomas-bread-life",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator and Thomas in prayer",
+    "related": "john-bread-of-life",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-crown",
+    "edition": "acts-thomas-crown",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator and Thomas in prayer",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-lot-wife",
+    "edition": "1-clement",
+    "section": "1-clem-11",
+    "start": 1,
+    "end": 2,
+    "speaker": "The author interprets the story of Lot’s wife",
+    "related": "synoptic-lot-wife",
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-aaron-rod",
+    "edition": "lightfoot-first-clement-aaron-rod",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author recounts and interprets Scripture",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-heart-tablets",
+    "edition": "1-clement",
+    "section": "1-clem-2",
+    "start": 8,
+    "end": 8,
+    "speaker": "The author describes the Corinthians",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-fattened",
+    "edition": "1-clement",
+    "section": "1-clem-3",
+    "start": 1,
+    "end": 2,
+    "speaker": "The author quotes Scripture and describes strife",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-pillars",
+    "edition": "lightfoot-first-clement-pillars",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author describes the apostles",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-stars-dust",
+    "edition": "1-clement",
+    "section": "1-clem-10",
+    "start": 4,
+    "end": 6,
+    "speaker": "The author quotes promises to Abraham",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-cedar",
+    "edition": "1-clement",
+    "section": "1-clem-14",
+    "start": 5,
+    "end": 5,
+    "speaker": "The author quotes a psalm",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-dust-smoke",
+    "edition": "lightfoot-first-clement-dust-smoke",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author recounts words attributed to Abraham, Job and Moses",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-penitent",
+    "edition": "1-clement",
+    "section": "1-clem-18",
+    "start": 1,
+    "end": 14,
+    "speaker": "The author quotes a penitential psalm",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-searching-lamp",
+    "edition": "1-clement",
+    "section": "1-clem-21",
+    "start": 1,
+    "end": 3,
+    "speaker": "The author quotes Scripture",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-speaking-heavens",
+    "edition": "1-clement",
+    "section": "1-clem-27",
+    "start": 4,
+    "end": 7,
+    "speaker": "The author quotes a psalm",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-firstfruits",
+    "edition": "1-clement",
+    "section": "1-clem-29",
+    "start": 1,
+    "end": 3,
+    "speaker": "The author quotes Scripture",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-stars-again",
+    "edition": "1-clement",
+    "section": "1-clem-32",
+    "start": 1,
+    "end": 2,
+    "speaker": "The author quotes a promise",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-lion",
+    "edition": "1-clement",
+    "section": "1-clem-35",
+    "start": 7,
+    "end": 12,
+    "speaker": "The author quotes a psalm",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-tomb-darkness",
+    "edition": "1-clement",
+    "section": "1-clem-38",
+    "start": 3,
+    "end": 3,
+    "speaker": "The author addresses the readers",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-clay-moth",
+    "edition": "1-clement",
+    "section": "1-clem-39",
+    "start": 3,
+    "end": 9,
+    "speaker": "The author quotes Job",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-presbyters-flock",
+    "edition": "1-clement",
+    "section": "1-clem-44",
+    "start": 1,
+    "end": 3,
+    "speaker": "The author describes the apostles and ministers",
+    "related": "john-sheepfold-shepherd",
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-love-covers",
+    "edition": "1-clement",
+    "section": "1-clem-49",
+    "start": 1,
+    "end": 6,
+    "speaker": "The author describes love",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-inner-room",
+    "edition": "1-clement",
+    "section": "1-clem-50",
+    "start": 1,
+    "end": 3,
+    "speaker": "The author quotes Scripture",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-death-shepherd",
+    "edition": "1-clement",
+    "section": "1-clem-51",
+    "start": 1,
+    "end": 5,
+    "speaker": "The author recalls the rebels against Moses",
+    "related": "john-sheepfold-shepherd",
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-sacrifice-praise",
+    "edition": "1-clement",
+    "section": "1-clem-52",
+    "start": 1,
+    "end": 4,
+    "speaker": "The author quotes psalmic words",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-book-living",
+    "edition": "1-clement",
+    "section": "1-clem-53",
+    "start": 1,
+    "end": 5,
+    "speaker": "The author recounts Moses’s prayer",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-peace-flock",
+    "edition": "1-clement",
+    "section": "1-clem-54",
+    "start": 1,
+    "end": 3,
+    "speaker": "The author imagines a conciliatory speaker",
+    "related": "john-sheepfold-shepherd",
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-wisdom-fruit",
+    "edition": "lightfoot-first-clement-wisdom-fruit",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author quotes personified Wisdom",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "first-clement-pasture-prayer",
+    "edition": "lightfoot-first-clement-pasture-prayer",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The letter’s collective prayer",
+    "related": "john-sheepfold-shepherd",
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-yoke-sacrifice",
+    "edition": "lightfoot-barnabas-yoke-sacrifice",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author quotes and interprets prophetic words",
+    "related": "synoptic-yoke",
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-fast-light",
+    "edition": "lightfoot-barnabas-fast-light",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author quotes Isaiah and comments",
+    "related": "synoptic-isaiah-release",
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-beast-covenant",
+    "edition": "lightfoot-barnabas-beast-covenant",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author quotes and interprets Scripture",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-sheep-sun",
+    "edition": "lightfoot-barnabas-sheep-sun",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author quotes Isaiah and offers an analogy",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-letters-cross",
+    "edition": "barnabas",
+    "section": "barn-9",
+    "start": 6,
+    "end": 7,
+    "speaker": "The author interprets Scripture",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-broken-tablets",
+    "edition": "barnabas",
+    "section": "barn-14",
+    "start": 1,
+    "end": 6,
+    "speaker": "The author recounts and interprets Moses’s tablets",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-days-rest",
+    "edition": "barnabas",
+    "section": "barn-15",
+    "start": 3,
+    "end": 8,
+    "speaker": "The author interprets the creation days",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "barnabas-vessel-body",
+    "edition": "lightfoot-barnabas-vessel-body",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The author exhorts the readers",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "diognetus-vessels",
+    "edition": "diognetus",
+    "section": "diogn-2",
+    "start": 1,
+    "end": 9,
+    "speaker": "The author addresses Diognetus",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "diognetus-old-new-word",
+    "edition": "diognetus",
+    "section": "diogn-11",
+    "start": 1,
+    "end": 5,
+    "speaker": "The author of the closing section",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-groom-prayer",
+    "edition": "acts-thomas-groom-prayer",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator and the bridegroom",
+    "related": "synoptic-physician-sick",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-creditor",
+    "edition": "acts-thomas-creditor",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "Bystanders, Thomas and the narrator",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-youth-light",
+    "edition": "acts-thomas-youth-light",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The revived youth and Thomas",
+    "related": "john-walking-light",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-desert-temple",
+    "edition": "acts-thomas-desert-temple",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "Mygdonia and Thomas",
+    "related": "john-father-son-dwelling",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-oil-121",
+    "edition": "acts-thomas-oil-121",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator and Thomas in prayer",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-open-treasury",
+    "edition": "acts-thomas-open-treasury",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "Tertia, Mygdonia and Thomas",
+    "related": "synoptic-treasures-heaven",
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-prayer-opening",
+    "edition": "acts-thomas-prayer-opening",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "Thomas prays; M. R. James describes manuscript variants",
+    "related": null,
+    "relatedAlso": []
+  },
+  {
+    "id": "acts-thomas-four-one",
+    "edition": "acts-thomas-four-one",
+    "section": "excerpt",
+    "start": 1,
+    "end": 1,
+    "speaker": "The narrator and Thomas",
+    "related": null,
+    "relatedAlso": []
+  }
+]

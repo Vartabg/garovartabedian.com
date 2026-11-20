@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useReducer, useRef, useState, useSyncExternalStore, type MouseEvent, type ReactNode } from "react";
 import { getPassageVerses, type PassageVerses } from "@/lib/jesus/client";
 import { parseRef } from "@/lib/scriptures/refs";
 import type { ScriptureFigure, Parable, ParableAccount, ThomasParable } from "@/lib/jesus/types";
@@ -10,11 +10,14 @@ import { JOHN_FIGURES } from "@/lib/jesus/john-figures";
 import type { ThomasTexts } from "@/lib/jesus/thomas-parallels-server";
 import { JAMES_PARABLES, jamesHref, type JamesParable } from "@/lib/jesus/james-parables";
 import type { JamesTexts } from "@/lib/jesus/james-parables-server";
-import { EARLY_FIGURES, earlyFigureHref, earlyFigureParts, earlyDisplayBlocks, type EarlyFigure } from "@/lib/jesus/early-figures";
+import { EARLY_FIGURES, earlyFigureHref, earlyFigureParts, earlyDisplayBlocks, originalEarlyReaderHref, originalEarlyContinuationHref, type EarlyFigure } from "@/lib/jesus/early-figures";
 import type { EarlyFigureTexts } from "@/lib/jesus/early-figures-server";
 import type { Canons } from "@/lib/scriptures/types";
 import GlossText from "@/app/_components/GlossText";
 import OriginalLine from "@/app/_components/OriginalLine";
+import ParablesOverview, { ParablesSearch, isSearching, makeOverviewGroups, thomasSpeaker, type GroupId } from "./ParablesOverview";
+import XrayTag from "@/app/_components/xray/XrayTag";
+import type { ParablesXrayTags } from "@/lib/jesus/parables-xray";
 
 type RoomEntry = Parable | ScriptureFigure;
 
@@ -27,6 +30,19 @@ export type ParableWordCounts = Record<string, { parabole: number; paroimia: num
 
 const accountRefs = (account: ParableAccount) =>
   [account.setting, account.ref, account.explanation].filter((ref): ref is string => Boolean(ref));
+const THOMAS = "Gospel of Thomas";
+const JAMES = "Secret Book of James";
+/** One run of entries a reader can step through: a group, or one early writing inside the early group. */
+type Sequence = { group: GroupId; writing?: string; label: string; ids: string[] };
+/**
+ * Without JavaScript every group and writing shows, and the group buttons (which need script) hide.
+ * Groups hide through data-shown, not the hidden attribute: the base stylesheet forces [hidden]
+ * from a cascade layer, which an unlayered override cannot undo.
+ */
+const NO_SCRIPT_STYLE = ".parables-browse [data-shown=false]{display:block!important}.parables-rail,.parables-writings,.parables-search-area{display:none!important}";
+const subscribeToHydration = () => () => {};
+const clientReady = () => true;
+const serverReady = () => false;
 
 /**
  * The parables room. The list comes from the server; a parable's passages load
@@ -43,7 +59,11 @@ export default function ParablesRoom({
   thomasTexts = {},
   jamesTexts = {},
   earlyFigureTexts = {},
+  earlyReaderAvailability = {},
   passageLoader = getPassageVerses,
+  xrayTags,
+  opening = [],
+  children,
 }: {
   parables: Parable[];
   thomasStories: ThomasParable[];
@@ -54,12 +74,40 @@ export default function ParablesRoom({
   thomasTexts?: ThomasTexts;
   jamesTexts?: JamesTexts;
   earlyFigureTexts?: EarlyFigureTexts;
+  earlyReaderAvailability?: Record<string, boolean>;
   passageLoader?: PassageLoader;
+  /** Engineer-lens tags, computed on the server; absent in tests that do not need them. */
+  xrayTags?: ParablesXrayTags;
+  /** Two hosted openings of one parable, Matthew beside Luke. */
+  opening?: { cite: string; href: string; text: string }[];
+  /** A story walk rendered by the server. Absent in tests that do not need it. */
+  children?: ReactNode;
 }) {
   const [open, setOpen] = useState<string | null>(null);
+  const ready = useSyncExternalStore(subscribeToHydration, clientReady, serverReady);
   const [resolved, setResolved] = useState<Map<string, Result>>(new Map());
   const inFlight = useRef<Set<string>>(new Set());
-  const earlyFold = useRef<HTMLDetailsElement>(null);
+  const pendingFocus = useRef<string | null>(null);
+  const pendingScroll = useRef<string | null>(null);
+  const browse = useRef<HTMLDivElement>(null);
+  const [group, setGroup] = useState<GroupId>("stories");
+  const [query, setQuery] = useState("");
+  const [, rerender] = useReducer((tick: number) => tick + 1, 0);
+  const searching = isSearching(query);
+
+  const groups = useMemo(() => makeOverviewGroups(parables, SYNOPTIC_FIGURES, JOHN_FIGURES, thomasStories, JAMES_PARABLES, EARLY_FIGURES), [parables, thomasStories]);
+  const writings = useMemo(() => [
+    { name: THOMAS, ids: thomasStories.map((story) => story.id) },
+    { name: JAMES, ids: [...JAMES_PARABLES.filter((story) => story.kind !== "figure"), ...JAMES_PARABLES.filter((story) => story.kind === "figure")].map((story) => story.id) },
+    ...[...new Set(EARLY_FIGURES.map((figure) => figure.work))].map((name) => ({ name, ids: EARLY_FIGURES.filter((figure) => figure.work === name).map((figure) => figure.id) })),
+  ], [thomasStories]);
+  const [writing, setWriting] = useState(THOMAS);
+  const sequences = useMemo<Sequence[]>(() => [
+    ...groups.filter((item) => item.id !== "early").map((item) => ({ group: item.id, label: item.label, ids: item.items.map((entry) => entry.id) })),
+    ...writings.map((item) => ({ group: "early" as const, writing: item.name, label: item.name, ids: item.ids })),
+  ], [groups, writings]);
+  const titles = useMemo(() => new Map(groups.flatMap((item) => item.items.map((entry) => [entry.id, entry.title] as const))), [groups]);
+  const locate = (id: string) => sequences.find((sequence) => sequence.ids.includes(id));
 
   const bookName = (book: string) => canons.books[book]?.name ?? book;
 
@@ -115,19 +163,75 @@ export default function ParablesRoom({
     if (!resolved.has(parable.id)) load(parable);
   };
 
-  /** Opens a parable named in the address and brings it into view. */
+  const scrollTo = (target: HTMLElement | null) => {
+    const reducedMotion = typeof window.matchMedia === "function" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    target?.scrollIntoView({ behavior: reducedMotion ? "instant" : "smooth", block: "start" });
+  };
+
+  /**
+   * Opens a parable named in the address, a search result, or a step, and
+   * shows its group first: a hidden group cannot scroll into view, so the
+   * scroll waits for the render that shows it.
+   */
   const openParable = (id: string) => {
+    const place = locate(id);
+    if (!place) return;
     const parable = [...parables, ...SYNOPTIC_FIGURES, ...JOHN_FIGURES].find((p) => p.id === id);
-    const early = thomasStories.some((story) => story.id === id) || JAMES_PARABLES.some(story => story.id === id) || EARLY_FIGURES.some(figure => figure.id === id);
-    if (!parable && !early) return;
-    // Early writings sit in a closed fold; open it so the entry can scroll into view.
-    if (early && earlyFold.current) earlyFold.current.open = true;
+    setQuery("");
+    setGroup(place.group);
+    if (place.writing) setWriting(place.writing);
     setOpen(id);
     if (parable && !resolved.has(parable.id)) load(parable);
-    document
-      .getElementById(`parable-${id}`)
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    pendingScroll.current = id;
+    rerender();
   };
+
+  /**
+   * In-room links to another entry. A Next Link would update the address
+   * without a hashchange and try to scroll to an entry whose group is hidden,
+   * so the room opens the entry itself; modified clicks keep their default.
+   */
+  const jump = (id: string, event: MouseEvent<HTMLAnchorElement>) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    const hash = `#parable-${id}`;
+    if (window.location.hash !== hash) window.history.pushState(null, "", hash);
+    openParable(id);
+  };
+
+  /** Closes an entry and leaves the reader on its row. */
+  const closeEntry = (id: string) => {
+    setOpen(null);
+    const button = document.getElementById(`parable-${id}`)?.querySelector<HTMLButtonElement>(".jsu-pair-head");
+    button?.focus({ preventScroll: true });
+    button?.scrollIntoView?.({ block: "nearest" });
+  };
+
+  /** Shows one group; brings the list's top back into view when the reader had scrolled past it. */
+  const selectGroup = (id: GroupId) => {
+    setGroup(id);
+    setQuery("");
+    const top = browse.current?.getBoundingClientRect().top;
+    if (top !== undefined && top < 0) browse.current?.scrollIntoView?.({ block: "start" });
+  };
+
+  const selectWriting = (name: string) => {
+    setWriting(name);
+    const top = browse.current?.getBoundingClientRect().top;
+    if (top !== undefined && top < 0) browse.current?.scrollIntoView?.({ block: "start" });
+  };
+
+  useEffect(() => {
+    const id = pendingScroll.current;
+    if (!id) return;
+    const target = document.getElementById(`parable-${id}`);
+    if (!target || target.closest('[data-shown="false"]')) return;
+    pendingScroll.current = null;
+    scrollTo(target);
+    const button = target.querySelector<HTMLButtonElement>(".jsu-pair-head");
+    if (button?.disabled) pendingFocus.current = id;
+    else button?.focus({ preventScroll: true });
+  });
 
   // Find and other rooms link to /jesus/parables#parable-<id>; open that
   // parable on arrival, and again if the address changes while the room is open.
@@ -135,6 +239,7 @@ export default function ParablesRoom({
     const openFromHash = () => {
       const match = /^#parable-(.+)$/.exec(window.location.hash);
       if (match) openParable(match[1]);
+      else if (window.location.hash === "#parables-overview") document.getElementById("parables-overview")?.focus({ preventScroll: true });
     };
     const openFromFind = (event: Event) => {
       const id: unknown = (event as CustomEvent).detail;
@@ -152,8 +257,36 @@ export default function ParablesRoom({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    if (!ready || !pendingFocus.current) return;
+    document.getElementById(`parable-${pendingFocus.current}`)?.querySelector<HTMLButtonElement>(".jsu-pair-head")?.focus({ preventScroll: true });
+    pendingFocus.current = null;
+  }, [ready]);
+
   // Glossary: dot a foreign term once per page render.
   const glossSeen = new Map<string, string>();
+  /** Where an open entry sits in its group, with steps to its neighbours and a way back to its row. */
+  const step = (id: string) => {
+    const place = locate(id);
+    if (!place) return null;
+    const index = place.ids.indexOf(id);
+    const previous = place.ids[index - 1];
+    const next = place.ids[index + 1];
+    const go = (target: string) => {
+      window.history.replaceState(null, "", `#parable-${target}`);
+      openParable(target);
+    };
+    return (
+      <nav className="parables-step" aria-label={`Move through ${place.label}`}>
+        <p className="parables-step-where">{index + 1} of {place.ids.length} · {place.label}</p>
+        <div className="parables-step-buttons">
+          <button type="button" disabled={!previous} aria-label={previous ? `Previous: ${titles.get(previous) ?? previous}` : "Previous"} onClick={() => previous && go(previous)}>Previous</button>
+          <button type="button" disabled={!next} aria-label={next ? `Next: ${titles.get(next) ?? next}` : "Next"} onClick={() => next && go(next)}>Next</button>
+          <button type="button" className="parables-step-close" onClick={() => closeEntry(id)}>Close</button>
+        </div>
+      </nav>
+    );
+  };
 
   const verses = (passage: PassageVerses | null | undefined) =>
     passage ? (
@@ -208,7 +341,7 @@ export default function ParablesRoom({
   const thomasPanel = (saying: number, note?: string) => (
     <section className="jsu-panel jsu-parable-thomas" key={`thomas-${saying}`}>
       <h3 className="jsu-parable-gospel">Gospel of Thomas · Saying {saying} · outside the canon</h3>
-      <p className="scr-meta">Mark M. Mattison · translation from the Coptic</p>
+      <p className="scr-meta">{thomasSpeaker(saying)} · Mark M. Mattison · translation from the Coptic</p>
       <p className="jsu-parable-label">
         <Link className="textlink jsu-thomas-link" href={`/early/library/gospel-thomas/saying-${saying}`}>Saying {saying}</Link>
         {note && <> · {note}</>}
@@ -222,7 +355,7 @@ export default function ParablesRoom({
   const jamesPanel = (story: JamesParable) => (
     <section className="jsu-panel jsu-parable-james" key={story.id}>
       <h3 className="jsu-parable-gospel">Secret Book of James · {story.locator} · outside the canon</h3>
-      <p className="scr-meta">Mark M. Mattison · translation from the Coptic</p>
+      <p className="scr-meta">Speech attributed to the Savior; James or Peter also speak where shown · Mark M. Mattison · translation from the Coptic</p>
       <p className="jsu-parable-label"><Link className="textlink" href={jamesHref(story)}>Read in the edition</Link>{story.note && <> · {story.note}</>}</p>
       {jamesTexts[story.id] ? jamesTexts[story.id]!.map((paragraph, index) => <p key={index}>{paragraph}</p>) : <p className="scr-empty">This passage could not be loaded here. Follow the link to the full reader.</p>}
     </section>
@@ -231,10 +364,13 @@ export default function ParablesRoom({
   const jamesEntry = (story: JamesParable) => {
     const isOpen = open === story.id;
     return <article className="jsu-pair-block" key={story.id} id={`parable-${story.id}`}>
-      <button type="button" className="jsu-pair-head" onClick={() => setOpen(isOpen ? null : story.id)} aria-expanded={isOpen} aria-controls={`parable-${story.id}-text`}>
+      <button type="button" className="jsu-pair-head" disabled={!ready} onClick={() => setOpen(isOpen ? null : story.id)} aria-expanded={isOpen} aria-controls={`parable-${story.id}-text`}>
         <span>{story.title}</span><span className="scr-meta jsu-pair-refs">Secret Book of James {story.locator}</span>
       </button>
-      {isOpen && <div id={`parable-${story.id}-text`}><div className="jsu-parable-accounts">{jamesPanel(story)}</div>{story.related && <p><Link className="textlink" href={`#parable-${story.related}`}>Compare the related Gospel passage →</Link></p>}</div>}
+      {isOpen && <div id={`parable-${story.id}-text`}><div className="jsu-parable-accounts">{jamesPanel(story)}{story.thomas?.map(({ saying, note }) => thomasPanel(saying, note))}{story.earlyComparisons?.map(id => {
+        const matches = EARLY_FIGURES.filter(figure => figure.id === id);
+        return matches.length === 1 ? earlyPanel(matches[0]) : <p key={id} className="scr-empty">The comparison could not be loaded.</p>;
+      })}</div>{story.related && <p><a className="textlink" href={`#parable-${story.related}`} onClick={(event) => jump(story.related!, event)}>Compare the related Gospel passage →</a></p>}{step(story.id)}</div>}
     </article>;
   };
 
@@ -242,23 +378,23 @@ export default function ParablesRoom({
     <section className="jsu-panel jsu-parable-early" key={figure.id}>
       <h3 className="jsu-parable-gospel">{figure.work} · {figure.locator} · outside the canon</h3>
       <p className="scr-meta">{figure.speaker} · {figure.translator}</p>
-      <p className="jsu-parable-label"><Link className="textlink" href={earlyFigureHref(figure)}>{figure.excerpt ? "Read the source" : "Read in the edition"}</Link>{figure.note && <> · {figure.note}</>}</p>
+      <p className="jsu-parable-label"><Link className="textlink" href={earlyFigureHref(figure)}>{figure.originalReader ? "Read the 1891 scan" : figure.excerpt ? "Read the source" : "Read in the edition"}</Link>{figure.originalReader && (earlyReaderAvailability[figure.id] && originalEarlyReaderHref(figure) ? <> · <Link className="textlink" href={originalEarlyReaderHref(figure)!}>Read the uncorrected edition</Link></> : <> · Uncorrected edition unavailable</>)}{originalEarlyContinuationHref(figure) && (earlyReaderAvailability[`${figure.id}:continuation`] ? <> · <Link className="textlink" href={originalEarlyContinuationHref(figure)!}>Read the uncorrected continuation</Link></> : <> · Uncorrected continuation unavailable</>)}{figure.note && <> · {figure.note}</>}</p>
       {earlyFigureParts(figure).length > 1 && <p className="jsu-parable-label">{earlyFigureParts(figure).slice(1).map((part, index) => <span key={part.section}> · <Link className="textlink" href={earlyFigureHref(figure, part)}>Read part {index + 2} in the edition</Link></span>)}</p>}
-      {earlyFigureTexts[figure.id] ? earlyDisplayBlocks(figure, earlyFigureTexts[figure.id]!).map((paragraph, index) => <p key={index} style={figure.poetry || figure.preserveLines ? { whiteSpace: "pre-line" } : undefined}>{paragraph}</p>) : <p className="scr-empty">This passage could not be loaded here. Follow the {figure.excerpt ? "source link" : "link to the full reader"}.</p>}
+      {earlyFigureTexts[figure.id] ? earlyDisplayBlocks(figure, earlyFigureTexts[figure.id]!).map((paragraph, index) => <p key={index} style={figure.poetry || figure.preserveLines || (figure.excerpt && paragraph.includes("\n\n")) ? { whiteSpace: "pre-line" } : undefined}>{paragraph}</p>) : <p className="scr-empty">This passage could not be loaded here. Follow the {figure.excerpt ? "source link" : "link to the full reader"}.</p>}
     </section>
   );
 
   const earlyEntry = (figure: EarlyFigure) => {
     const isOpen = open === figure.id;
     return <article className="jsu-pair-block" key={figure.id} id={`parable-${figure.id}`}>
-      <button type="button" className="jsu-pair-head" onClick={() => setOpen(isOpen ? null : figure.id)} aria-expanded={isOpen} aria-controls={`parable-${figure.id}-text`}>
+      <button type="button" className="jsu-pair-head" disabled={!ready} onClick={() => setOpen(isOpen ? null : figure.id)} aria-expanded={isOpen} aria-controls={`parable-${figure.id}-text`}>
         <span>{figure.title}</span><span className="scr-meta jsu-pair-refs">{figure.work} · {figure.speaker}</span>
       </button>
       {isOpen && <div id={`parable-${figure.id}-text`}><div className="jsu-parable-accounts">{earlyPanel(figure)}{figure.earlyComparisons?.map(id => {
         const matches = EARLY_FIGURES.filter(candidate => candidate.id === id);
         return id !== figure.id && matches.length === 1 && figure.earlyComparisons?.filter(value => value === id).length === 1
           ? earlyPanel(matches[0]) : <p key={id} className="scr-empty">The comparison could not be loaded.</p>;
-      })}{figure.thomas?.map(({ saying, note }) => thomasPanel(saying, note))}</div>{[figure.related, ...(figure.relatedAlso ?? [])].filter((id): id is string => Boolean(id)).map(id => <p key={id}><Link className="textlink" href={`#parable-${id}`}>Compare the related Gospel passage →</Link></p>)}{figure.compareFrom && <p><Link className="textlink" href={`#parable-${figure.compareFrom}`}>Compare the related early passage →</Link></p>}</div>}
+      })}{figure.thomas?.map(({ saying, note }) => thomasPanel(saying, note))}</div>{[figure.related, ...(figure.relatedAlso ?? [])].filter((id): id is string => Boolean(id)).map(id => <p key={id}><a className="textlink" href={`#parable-${id}`} onClick={(event) => jump(id, event)}>Compare the related Gospel passage →</a></p>)}{figure.compareFrom && <p><a className="textlink" href={`#parable-${figure.compareFrom}`} onClick={(event) => jump(figure.compareFrom!, event)}>Compare the related early passage →</a></p>}{step(figure.id)}</div>}
     </article>;
   };
 
@@ -280,6 +416,7 @@ export default function ParablesRoom({
         <button
           type="button"
           className="jsu-pair-head"
+          disabled={!ready}
           onClick={() => toggle(parable)}
           aria-expanded={isOpen}
           aria-controls={`parable-${parable.id}-text`}
@@ -360,6 +497,7 @@ export default function ParablesRoom({
               </details>
             )}
             {result && result !== "error" && <p className="scr-meta jsu-parable-sources">{sources(parable)}</p>}
+            {step(parable.id)}
           </div>
         )}
       </article>
@@ -376,20 +514,34 @@ export default function ParablesRoom({
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/jesus">Jesus Christ</Link>
-      </p>
       <h1>Parables</h1>
-      <p className="lede">
-        Read parables and figures of speech from Matthew, Mark, Luke and John, with related
-        accounts side by side, with selected passages from early writings outside the canon.
-      </p>
+      {opening.length > 0 ? (
+        <div className="lede">
+          {opening.map((line) => (
+            <blockquote key={line.href}>
+              <p>{line.text}</p>
+              <footer><Link href={line.href}>{line.cite}</Link></footer>
+            </blockquote>
+          ))}
+        </div>
+      ) : (
+        <p className="lede">
+          Compare Gospel accounts of parables and figures of speech, alongside selected early
+          writings outside the canon.
+        </p>
+      )}
+
+      {children}
+
+      {xrayTags && <XrayTag {...xrayTags.built} />}
+      <ParablesOverview groups={groups} />
 
       <noscript>
+        <p>To open passages here, turn on JavaScript. Source links are also listed below.</p>
         <section aria-labelledby="thomas-no-script">
           <h2 className="jsu-chapter" id="thomas-no-script">Gospel of Thomas · outside the canon</h2>
           <p>Related sayings in the hosted translation:</p>
-          {[...parables, ...SYNOPTIC_FIGURES].filter((parable) => parable.thomas?.length).map((parable) => (
+          {[...parables, ...SYNOPTIC_FIGURES, ...JOHN_FIGURES].filter((parable) => parable.thomas?.length).map((parable) => (
             <div key={parable.id}>
               <h3>{parable.title}</h3>
               {thomasLinks(parable)}
@@ -404,82 +556,103 @@ export default function ParablesRoom({
         </section>
         <section aria-labelledby="james-no-script">
           <h2 className="jsu-chapter" id="james-no-script">Secret Book of James · outside the canon</h2>
-          <ul>{JAMES_PARABLES.map(story => <li key={story.id}><Link href={jamesHref(story)}>{story.title} · {story.locator}</Link></li>)}</ul>
+          <ul>{JAMES_PARABLES.map(story => <li key={story.id}><Link href={jamesHref(story)}>{story.title} · {story.locator}</Link>{story.thomas?.map(({ saying }) => <Link key={saying} href={`/early/library/gospel-thomas/saying-${saying}`}> · Thomas {saying} · outside the canon</Link>)}{story.earlyComparisons?.map(id => { const match = EARLY_FIGURES.find(figure => figure.id === id); return match ? <Link key={id} href={earlyFigureHref(match)}> · {match.work} · outside the canon</Link> : null; })}</li>)}</ul>
         </section>
         <section aria-labelledby="early-figures-no-script">
           <h2 className="jsu-chapter" id="early-figures-no-script">Other early writings · outside the canon</h2>
-          <ul>{EARLY_FIGURES.map(figure => <li key={figure.id}>{earlyFigureParts(figure).map((part, index) => <span key={part.section}><Link href={earlyFigureHref(figure, part)}>{figure.title} · {figure.work} · {figure.locator}{index ? ` · part ${index + 1}` : ""}</Link>{" "}</span>)}{figure.thomas?.map(({ saying }) => <Link key={saying} href={`/early/library/gospel-thomas/saying-${saying}`}>Thomas {saying} · outside the canon</Link>)}<span> · {figure.speaker}{figure.note && <> · {figure.note}</>}</span></li>)}</ul>
+          <ul>{EARLY_FIGURES.map(figure => <li key={figure.id}>{earlyFigureParts(figure).map((part, index) => <span key={part.section}><Link href={earlyFigureHref(figure, part)}>{figure.title} · {figure.work} · {figure.locator}{index ? ` · part ${index + 1}` : ""}{figure.originalReader ? " · 1891 scan" : ""}</Link>{" "}</span>)}{figure.originalReader && (earlyReaderAvailability[figure.id] && originalEarlyReaderHref(figure) ? <Link href={originalEarlyReaderHref(figure)!}>Read the uncorrected edition</Link> : <span>Uncorrected edition unavailable</span>)}{originalEarlyContinuationHref(figure) && (earlyReaderAvailability[`${figure.id}:continuation`] ? <Link href={originalEarlyContinuationHref(figure)!}> · Read the uncorrected continuation</Link> : <span> · Uncorrected continuation unavailable</span>)}{figure.earlyComparisons?.map(id => { const compared = EARLY_FIGURES.find(item => item.id === id); return compared ? <Link key={id} href={earlyFigureHref(compared)}> · Compare {compared.title} · {compared.work} · outside the canon</Link> : null; })}{figure.thomas?.map(({ saying }) => <Link key={saying} href={`/early/library/gospel-thomas/saying-${saying}`}>Thomas {saying} · outside the canon</Link>)}<span> · {figure.speaker}{figure.note && <> · {figure.note}</>}</span></li>)}</ul>
         </section>
       </noscript>
+      <noscript><style>{NO_SCRIPT_STYLE}</style></noscript>
 
-      <section aria-labelledby="parables-stories">
-        <h2 className="jsu-chapter" id="parables-stories">Stories</h2>
-        {stories.map(entry)}
-      </section>
+      <div className="parables-browse" id="parables-browse" ref={browse}>
+        <div className="parables-browse-grid">
+          <nav className="parables-rail" aria-label="Parable groups">
+            {groups.map((item) => (
+              <button type="button" key={item.id} disabled={!ready} aria-pressed={!searching && group === item.id} onClick={() => selectGroup(item.id)}>
+                <span>{item.id === "early" ? "Early writings" : item.label}</span>
+                <span className="parables-rail-count">{item.items.length}</span>
+              </button>
+            ))}
+          </nav>
 
-      <section aria-labelledby="parables-sayings">
-        <h2 className="jsu-chapter" id="parables-sayings">Short sayings the Gospels call parables</h2>
-        {sayings.map(entry)}
-      </section>
+          <div className="parables-browse-main">
+            <ParablesSearch groups={groups} query={query} onQuery={setQuery} openEntry={openParable} />
 
-      <section aria-labelledby="parables-synoptic-figures">
-        <h2 className="jsu-chapter" id="parables-synoptic-figures">More parables and figures of speech</h2>
-        <p>These passages add stories and shorter figures from Matthew, Mark and Luke. Scholars differ on which figures to call parables.</p>
-        {SYNOPTIC_FIGURES.map(entry)}
-      </section>
+            <section aria-labelledby="parables-stories" data-parable-group="stories" data-shown={!searching && group === "stories"}>
+              <h2 className="jsu-chapter" id="parables-stories">Stories</h2>
+              {stories.map(entry)}
+            </section>
 
-      <section aria-labelledby="parables-john-figures">
-        <h2 className="jsu-chapter" id="parables-john-figures">Figures of speech in John</h2>
-        <p>John uses figures of speech; scholars differ on which to call parables. This is a selection, not a list of every figure in John.</p>
-        {JOHN_FIGURES.map(entry)}
-      </section>
+            <section aria-labelledby="parables-sayings" data-parable-group="sayings" data-shown={!searching && group === "sayings"}>
+              <h2 className="jsu-chapter" id="parables-sayings">Short sayings the Gospels call parables</h2>
+              {sayings.map(entry)}
+            </section>
 
-      {/* The Gospels come first; the early writings wait in one fold, said once to be outside the canon. */}
-      <section aria-labelledby="parables-early-writings">
-        <details className="jsu-parable-fold" ref={earlyFold}>
-          <summary className="jsu-chapter">
-            <h2 id="parables-early-writings">Early writings outside the canon</h2>
-            <small>{thomasStories.length + JAMES_PARABLES.length + EARLY_FIGURES.length} passages</small>
-          </summary>
+            <section aria-labelledby="parables-synoptic-figures" data-parable-group="synoptic" data-shown={!searching && group === "synoptic"}>
+              <h2 className="jsu-chapter" id="parables-synoptic-figures">More parables and figures of speech</h2>
+              <p>These passages add stories and shorter figures from Matthew, Mark and Luke. Scholars differ on which figures to call parables.</p>
+              {SYNOPTIC_FIGURES.map(entry)}
+            </section>
 
-          <section aria-labelledby="parables-thomas-stories">
-            <h3 className="jsu-chapter" id="parables-thomas-stories">Stories in the Gospel of Thomas</h3>
-            <p>These stories appear in Thomas and have no matching story in Matthew, Mark or Luke.</p>
-            {thomasStories.map((story) => {
-              const isOpen = open === story.id;
-              return (
-                <article className="jsu-pair-block" key={story.id} id={`parable-${story.id}`}>
-                  <button type="button" className="jsu-pair-head" onClick={() => setOpen(isOpen ? null : story.id)}
-                    aria-expanded={isOpen} aria-controls={`parable-${story.id}-text`}>
-                    <span>{story.title}</span>
-                    <span className="scr-meta jsu-pair-refs">Thomas {story.saying}</span>
+            <section aria-labelledby="parables-john-figures" data-parable-group="john" data-shown={!searching && group === "john"}>
+              <h2 className="jsu-chapter" id="parables-john-figures">Figures of speech in John</h2>
+              <p>John uses figures of speech; scholars differ on which to call parables. This is a selection, not a list of every figure in John.</p>
+              {JOHN_FIGURES.map(entry)}
+            </section>
+
+            {/* The Gospels come first; the early writings are said once to be outside the canon, then shown one writing at a time. */}
+            <section aria-labelledby="parables-early-writings" data-parable-group="early" data-shown={!searching && group === "early"}>
+              <h2 className="jsu-chapter" id="parables-early-writings">Early writings outside the canon <small>{thomasStories.length + JAMES_PARABLES.length + EARLY_FIGURES.length} passages</small></h2>
+              {xrayTags && <XrayTag {...xrayTags.checked} />}
+              <div className="parables-writings" role="group" aria-label="Choose a writing">
+                {writings.map((item) => (
+                  <button type="button" key={item.name} disabled={!ready} aria-pressed={writing === item.name} onClick={() => selectWriting(item.name)}>
+                    {item.name} <span>· {item.ids.length}</span>
                   </button>
-                  {isOpen && <div className="jsu-parable-accounts" id={`parable-${story.id}-text`}>{thomasPanel(story.saying, story.note)}</div>}
-                </article>
-              );
-            })}
-          </section>
+                ))}
+              </div>
 
-          <section aria-labelledby="parables-james-stories">
-            <h3 className="jsu-chapter" id="parables-james-stories">Passages in the Secret Book of James</h3>
-            <p>Three parabolic images attributed to Jesus in this writing. References use Nag Hammadi Codex I,2 page and line numbers. Related images in the Gospels differ in wording and setting.</p>
-            {JAMES_PARABLES.filter(story => story.kind !== "figure").map(jamesEntry)}
-          </section>
+              <section aria-labelledby="parables-thomas-stories" data-parable-writing={THOMAS} data-shown={writing === THOMAS}>
+                <h3 className="jsu-chapter" id="parables-thomas-stories">Sayings and figures in the Gospel of Thomas</h3>
+                <p>These selected sayings include stories and shorter figures. Related passages can differ in wording and setting.</p>
+                {thomasStories.map((story) => {
+                  const isOpen = open === story.id;
+                  return (
+                    <article className="jsu-pair-block" key={story.id} id={`parable-${story.id}`}>
+                      <button type="button" className="jsu-pair-head" disabled={!ready} onClick={() => setOpen(isOpen ? null : story.id)}
+                        aria-expanded={isOpen} aria-controls={`parable-${story.id}-text`}>
+                        <span>{story.title}</span>
+                        <span className="scr-meta jsu-pair-refs">Thomas {story.saying}</span>
+                      </button>
+                      {isOpen && <div id={`parable-${story.id}-text`}><div className="jsu-parable-accounts">{thomasPanel(story.saying, story.note)}</div>{step(story.id)}</div>}
+                    </article>
+                  );
+                })}
+              </section>
 
-          <section aria-labelledby="parables-james-figures">
-            <h3 className="jsu-chapter" id="parables-james-figures">Figures of speech in the Secret Book of James</h3>
-            <p>These references use section titles and paragraph numbers from the hosted translation.</p>
-            {JAMES_PARABLES.filter(story => story.kind === "figure").map(jamesEntry)}
-          </section>
+              <section aria-labelledby="parables-james-stories" data-parable-writing={JAMES} data-shown={writing === JAMES}>
+                <h3 className="jsu-chapter" id="parables-james-stories">Passages in the Secret Book of James</h3>
+                <p>Three parabolic images attributed to Jesus in this writing. References use Nag Hammadi Codex I,2 page and line numbers. Related images in the Gospels differ in wording and setting.</p>
+                {JAMES_PARABLES.filter(story => story.kind !== "figure").map(jamesEntry)}
+                <h3 className="jsu-chapter" id="parables-james-figures">Figures of speech in the Secret Book of James</h3>
+                <p>These references use section titles and paragraph numbers from the hosted translation.</p>
+                {JAMES_PARABLES.filter(story => story.kind === "figure").map(jamesEntry)}
+              </section>
 
-          <section aria-labelledby="parables-early-figures">
-            <h3 className="jsu-chapter" id="parables-early-figures">Other early writings</h3>
-            <p>These passages distinguish speakers in the writings from images used by their authors. Each selection identifies its source and translation.</p>
-            {EARLY_FIGURES.map(earlyEntry)}
-          </section>
-        </details>
-      </section>
+              {writings.slice(2).map((item) => (
+                <section key={item.name} aria-label={item.name} data-parable-writing={item.name} data-shown={writing === item.name}>
+                  <h3 className="jsu-chapter">{item.name}</h3>
+                  <p>These passages distinguish speakers in the writings from images used by their authors. Each selection identifies its source and translation.</p>
+                  {EARLY_FIGURES.filter((figure) => figure.work === item.name).map(earlyEntry)}
+                </section>
+              ))}
+            </section>
+          </div>
+        </div>
+      </div>
 
+      {xrayTags && <XrayTag {...xrayTags.counted} />}
       <section aria-labelledby="parables-method" className="jsu-parable-method">
         <details className="jsu-parable-fold">
           <summary className="jsu-chapter">
@@ -533,9 +706,9 @@ export default function ParablesRoom({
             Some entries show and link to related sayings in the <Link href="/early/library/gospel-thomas">Gospel of Thomas</Link>,
             a writing outside the canon. Parallels can differ in wording and setting; a link does not establish dependence.
           </p>
-          <p>The three parabolic passages from the <Link href="/early/library/secret-book-james">Secret Book of James</Link> are identified by Francis Watson in <a href="https://www.peeters-leuven.be/download_OA.php?id=9789042943902&amp;name=Texts+in+Context"><cite>Texts in Context</cite></a>, p. 226, note 58. Jean-Claude Loba Mkole compares the grain images with Mark in <a href="https://scielo.org.za/scielo.php?pid=S0259-94222022000400056&amp;script=sci_arttext">“Jesus: The apex of biblical canons”</a>. The title list in James 8 names parables without retelling them. The additional figures are selected from <a href="https://www.gospels.net/james">Mark M. Mattison’s translation</a>.</p>
+          <p>The three parabolic passages from the <Link href="/early/library/secret-book-james">Secret Book of James</Link> are identified by Francis Watson in <a href="https://www.peeters-leuven.be/download_OA.php?id=9789042943902&amp;name=Texts+in+Context"><cite>Texts in Context</cite></a>, p. 226, note 58. Jean-Claude Loba Mkole compares the grain images with Mark in <a href="https://scielo.org.za/scielo.php?pid=S0259-94222022000400056&amp;script=sci_arttext">“Jesus: The apex of biblical canons”</a>. Its “Prophecies and Parables” section names parables without retelling them. The additional figures are selected from <a href="https://www.gospels.net/james">Mark M. Mattison’s translation</a>.</p>
           <p>Other selections use the site’s hosted editions of the <Link href="/early/epistula-apostolorum">Epistula Apostolorum</Link>, <Link href="/early/library/2-clement">2 Clement</Link>, <Link href="/early/library/gospel-philip">Gospel of Philip</Link>, <Link href="/early/library/gospel-truth">Gospel of Truth</Link>, <Link href="/early/library/shepherd-hermas">Shepherd of Hermas</Link>, <Link href="/early/didache">Didache</Link>, <Link href="/early/library/barnabas">Barnabas</Link>, <Link href="/early/library/1-clement">1 Clement</Link>, and <Link href="/early/library/diognetus">Diognetus</Link>. Their speakers and relationships to Gospel passages are identified with each selection. R. McL. Wilson notes the axe comparison in <a href="https://gnosis.study/library/%D0%93%D0%BD%D0%BE%D0%B7%D0%B8%D1%81/%D0%98%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/ENG/Wilson%20R.McL.%20-%20The%20Gospel%20of%20Philip.%20Translated%20from%20the%20Coptic%20text%2C%20with%20an%20Introduction%20and%20Commentary.pdf"><cite>The Gospel of Philip</cite></a>.</p>
-          <p>The Eusebius report and Acts of Thomas excerpts are from M. R. James, <a href="https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf"><cite>The Apocryphal New Testament</cite></a> (1924), p. 3 and the Acts of Thomas, pp. 365–435. Eusebius reports a gospel in Hebrew letters; its identification is debated. The Hymn of the Pearl appears in some manuscripts of the Acts of Thomas.</p>
+          <p>The Eusebius report and Acts of Thomas excerpts are from M. R. James, <a href="https://www.biblicalstudies.org.uk/pdf/e-books/james_m-r/apocryphal-new-testament_james.pdf"><cite>The Apocryphal New Testament</cite></a> (1924), p. 3 and the Acts of Thomas, pp. 365–435. Eusebius reports a gospel in Hebrew letters; its identification is debated. The other Theophany selections use Samuel Lee’s <a href="https://archive.org/download/eusebiusbishopof00euse/eusebiusbishopof00euse.pdf">1843 translation from Syriac</a>. They include his own analogies and his quotations and interpretations of Gospel passages; his discussion and the quoted words are labeled separately. The Hymn of the Pearl appears in some manuscripts of the Acts of Thomas.</p>
           <p>
             The three Thomas stories are listed by Simon Gathercole, <a href="https://brill.com/abstract/title/19205"><cite>The Gospel of Thomas: Introduction and Commentary</cite></a> (2014), p. 234,
             and Ernest van Eck, <a href="https://www.scielo.org.za/pdf/stj/v7n1/13.pdf">“The land is ours, not yours”</a>, <cite>Stellenbosch Theological Journal</cite> 7 (2021), p. 10.

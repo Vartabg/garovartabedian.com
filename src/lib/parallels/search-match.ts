@@ -7,6 +7,10 @@ export type MatchedParallel = {
   witnesses: string[];
 };
 
+export type ParallelMatrixCatalogEntry = MatchedParallel & {
+  aliases: string[];
+};
+
 const MATRIX_KEYWORDS: Array<{
   id: string;
   title: string;
@@ -14,6 +18,7 @@ const MATRIX_KEYWORDS: Array<{
   summary: string;
   href: string;
   witnesses: string[];
+  aliases: string[];
   patterns: RegExp[];
 }> = [
   {
@@ -23,6 +28,7 @@ const MATRIX_KEYWORDS: Array<{
     summary: "Compare the binding of the son across the Hebrew Bible, Second Temple Jubilees, and the Qur'an.",
     href: "/scriptures/parallels/sacrifice-of-the-son",
     witnesses: ["Genesis 22", "Jubilees 17–18", "Qur'an 37"],
+    aliases: ["Akedah", "Binding of Isaac", "Moriah", "Eid al-Adha", "Ibrahim"],
     patterns: [
       /\bsacrifice\b.*\b(son|isaac|ishmael)\b/i,
       /\bbinding\b.*\b(isaac|son)\b/i,
@@ -40,6 +46,7 @@ const MATRIX_KEYWORDS: Array<{
     summary: "The primeval fall, Satan refusing to bow to clay, and the origins of human sin across three witnesses.",
     href: "/scriptures/parallels/adam-fall-and-iblis",
     witnesses: ["Genesis 3", "Vita Adae", "Qur'an 2 & 7"],
+    aliases: ["Iblis", "Fall of Adam", "Tree of the Knowledge", "Original Sin"],
     patterns: [
       /\biblis\b/i,
       /\badam\b.*\b(fall|sin|iblis|clay)\b/i,
@@ -56,6 +63,7 @@ const MATRIX_KEYWORDS: Array<{
     summary: "Mary's temple childhood, birth under the palm tree, cradle speech, and the clay birds miracle.",
     href: "/scriptures/parallels/infancy-and-clay-birds",
     witnesses: ["Luke 1–2", "Protoevangelium", "Infancy Thomas", "Qur'an 3 & 19"],
+    aliases: ["Clay Birds", "Protoevangelium of James", "Infancy Gospel"],
     patterns: [
       /\bclay\s+birds?\b/i,
       /\bcradle\b/i,
@@ -71,6 +79,7 @@ const MATRIX_KEYWORDS: Array<{
     summary: "Aaron's role under pressure vs. Al-Samiri's deception and the doctrine of prophetic infallibility.",
     href: "/scriptures/parallels/the-golden-calf-and-samiri",
     witnesses: ["Exodus 32", "Qur'an 20"],
+    aliases: ["Golden Calf", "Al-Samiri", "Samiri", "Molten Calf"],
     patterns: [
       /\bgolden\s+calf\b/i,
       /\bsamiri\b/i,
@@ -85,6 +94,7 @@ const MATRIX_KEYWORDS: Array<{
     summary: "Cosmic justice for murder and the maxim that saving a single soul saves the entire world.",
     href: "/scriptures/parallels/sanctity-of-human-life",
     witnesses: ["Genesis 4", "Mishnah Sanhedrin 4:5", "Qur'an 5:32"],
+    aliases: ["Cain and Abel", "Blood of Abel", "Mishnah Sanhedrin", "Sanctity of Life"],
     patterns: [
       /\bsanctity\s+of\s+life\b/i,
       /\bsave(s|d)?\s+(a\s+)?(single\s+)?(life|soul|world)\b/i,
@@ -101,6 +111,7 @@ const MATRIX_KEYWORDS: Array<{
     summary: "The terse Genesis notice about the sons of God and Nephilim compared to the expansive Enochic account.",
     href: "/scriptures/parallels/the-watchers",
     witnesses: ["Genesis 6", "1 Enoch 6–16"],
+    aliases: ["Nephilim", "Sons of God", "Azazel"],
     patterns: [
       /\bwatchers\b/i,
       /\bnephilim\b/i,
@@ -116,6 +127,7 @@ const MATRIX_KEYWORDS: Array<{
     summary: "Verbatim textual comparison of Jude citing the Seventh from Adam against the Ge'ez and Greek Enoch texts.",
     href: "/scriptures/parallels/jude-enoch-quotation",
     witnesses: ["Jude 14–15", "1 Enoch 1:9"],
+    aliases: ["Seventh from Adam", "Prophecy of Enoch", "Jude Enoch"],
     patterns: [
       /\bjude\b.*\benoch\b/i,
       /\bten\s+thousands\s+of\s+(his\s+)?holy\s+ones\b/i,
@@ -130,6 +142,7 @@ const MATRIX_KEYWORDS: Array<{
     summary: "The apocalyptic Son of Man title from Daniel 7, Enoch's Similitudes, and Jesus' trial before the Sanhedrin.",
     href: "/scriptures/parallels/son-of-man",
     witnesses: ["Daniel 7", "1 Enoch 46/71", "Matthew 26", "Mark 14"],
+    aliases: ["Son of Man", "Ancient of Days", "Clouds of Heaven", "Throne of Glory"],
     patterns: [
       /\bson\s+of\s+man\b/i,
       /\bancient\s+of\s+days\b/i,
@@ -139,6 +152,9 @@ const MATRIX_KEYWORDS: Array<{
     ],
   },
 ];
+
+export const PARALLEL_MATRICES: ReadonlyArray<ParallelMatrixCatalogEntry> =
+  MATRIX_KEYWORDS.map(({ patterns: _patterns, ...rest }) => rest);
 
 export function findMatchingParallels(query: string): MatchedParallel[] {
   const q = query.trim();

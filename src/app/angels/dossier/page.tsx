@@ -149,7 +149,7 @@ export default async function AngelsDossierPage({
 
       <header className="page-header" style={{ marginBottom: "2rem" }}>
         <p className="kicker">HOSTED SCRIPTURE · CURATED SOURCE NOTES</p>
-        <h1 style={{ fontFamily: "Cinzel, serif", fontSize: "clamp(2rem, 5vw, 3rem)", margin: "0.5rem 0 1rem" }}>
+        <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", margin: "0 0 1rem" }}>
           Angels &amp; Demons Research Dossier Engine
         </h1>
         <p style={{ fontSize: "1.125rem", lineHeight: 1.6, color: "var(--muted-ink)", maxWidth: "56rem" }}>

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent } from "react";
 import Link from "next/link";
 import { ERA_SHORT, isLens, type LifeLens, type LifeLensesIndex } from "@/lib/jesus/life-lenses";
+import type { MomentOpening } from "@/lib/jesus/moment-openings";
 import { useLifeDetail } from "./detail";
 import FindMoment from "./FindMoment";
 import LifeMap from "./LifeMap";
@@ -35,7 +36,13 @@ function readSaved(): Saved {
  * prophecy pairs then all show that same moment, and the choice (and the lens)
  * stays as they switch, move along, or come back later.
  */
-export default function LifeLenses({ data }: { data: LifeLensesIndex }) {
+export default function LifeLenses({
+  data,
+  openings = {},
+}: {
+  data: LifeLensesIndex;
+  openings?: Record<string, MomentOpening>;
+}) {
   const [id, setId] = useState<string | null>(null);
   const [lens, setLens] = useState<LifeLens>("words");
   const [restored, setRestored] = useState(false);
@@ -207,6 +214,7 @@ export default function LifeLenses({ data }: { data: LifeLensesIndex }) {
             placeName={placeName(moment.place)}
             lens={lens}
             onLens={setLens}
+            opening={openings[moment.id] ?? null}
             detail={detail?.moments[moment.id] ?? null}
             failed={failed}
             onRetry={retry}
@@ -216,6 +224,12 @@ export default function LifeLenses({ data }: { data: LifeLensesIndex }) {
           />
         ) : (
           <div className="jl-moment is-rest">
+            {openings.resurrection && (
+              <blockquote className="jl-opening">
+                <p>{openings.resurrection.text}</p>
+                <footer>{openings.resurrection.cite}</footer>
+              </blockquote>
+            )}
             <h2>Choose a moment on the line or a place on the map.</h2>
             <p>
               {data.moments.length} moments from his birth to his ascension, at {data.places.length} places. His own

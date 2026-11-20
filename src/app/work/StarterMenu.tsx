@@ -5,6 +5,7 @@ import styles from "./starter-menu.module.css";
 export default function StarterMenu() {
   return (
     <section id="starter-menu" className={styles.menu} aria-labelledby="starter-menu-title">
+      <p className={styles.track}>Track 3 · Small-business starter package</p>
       <h2 id="starter-menu-title">{STARTER_MENU.headline}</h2>
       <p className={styles.intro}>{STARTER_MENU.description} Try all three demos below before you ask.</p>
       <div className={styles.offers}>

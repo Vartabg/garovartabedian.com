@@ -1,5 +1,4 @@
-.world-apostles main > .wrap:has(> .ap-home) { display: block; width: min(100% - 2rem, 80rem); max-width: none; padding: 0; }
-.world-apostles main > .wrap:has(> .ap-home) > .world-guide { position: static; margin-bottom: 2rem; max-height: none; overflow: visible; }
+.world-apostles main > .wrap:has(> .ap-home, > .reading-narrative > .ap-home) { display: block; width: min(100% - 2rem, 80rem); max-width: none; padding: 0; }
 .ap-home, .ap-home * { min-width: 0; overflow-wrap: break-word; }
 .ap-home { display: grid; gap: 4rem; max-width: 72rem; margin: 0 auto; padding: 0 1rem 4rem; color: var(--ink); }
 .ap-home-img { display: block; width: 100%; height: auto; border-radius: 4px; }
@@ -9,7 +8,6 @@
 .ap-home-meta, .ap-home-ref, .ap-home-person { color: var(--muted); font-size: 0.92rem; }
 .ap-home-hero { display: grid; grid-template-columns: 1fr; gap: 0; overflow: hidden; border-radius: 0; background: #211a13; color: #f7f1e3; }
 .ap-home-hero-copy { padding: clamp(1.5rem, 4vw, 3rem); }
-.ap-home-hero-copy .ap-home-eyebrow { color: #c9a86a; }
 .ap-home-hero-art { margin: 0; padding: 0; }
 .ap-home-hero-art figcaption { padding: 1rem; margin-top: 0; font-size: 0.85rem; color: #d8cbb2; }
 .ap-home-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; margin: 0 0 1rem; }
@@ -34,7 +32,7 @@
 .ap-home-doorway { border-top: 1px solid var(--line); padding-top: 2rem; }
 .ap-home :focus-visible { outline: 3px solid #8d6a2f; outline-offset: 3px; border-radius: 4px; }
 @media (min-width: 900px) {
-  .ap-home-hero { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; }
+  .ap-home-hero { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: start; }
   .ap-home-story { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 2rem; align-items: start; }
   .ap-home-story-list > li:nth-child(even) .ap-home-story-art { order: 2; }
 }
@@ -54,11 +52,6 @@
 
 .ap-home :is(h2,h3) { text-transform: none; border: 0; padding: 0; }
 .world-apostles:has(.ap-home) .world-next-grid { grid-template-columns: repeat(auto-fit,minmax(min(100%,13rem),1fr)); }
-
-@media(min-width: 1100px) {
-  .world-apostles main > .wrap:has(> .ap-home) .wg-grid { grid-template-columns: minmax(0,1fr) auto; }
-  .world-apostles main > .wrap:has(> .ap-home) .wg-nav { flex-direction: row; flex-wrap: wrap; align-items: center; }
-}
 
 /* Allow the shared header to reflow when large reading type outgrows a row. */
 @media(max-width: 520px) {

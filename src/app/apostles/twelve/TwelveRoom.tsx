@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import type { Apostle, TwelveData } from "@/lib/apostles/types";
+import type { Apostle, TraditionWeight, TwelveData } from "@/lib/apostles/types";
+import { GRADE_LABEL } from "@/lib/evidence/claims";
 import { APOSTLE_PLATES, PAUL_PLATE } from "@/lib/apostles/plates";
 import GlossText from "@/app/_components/GlossText";
 import InlineMediaPlate from "@/app/_components/InlineMediaPlate";
@@ -32,6 +33,13 @@ function TwelveMap({ data }: { data: TwelveData }) {
   );
 }
 
+function roadGrades(apostle: Apostle): string {
+  if (apostle.sent.length === 0) return "no road beyond the New Testament";
+  const present = new Set(apostle.sent.map((claim) => claim.weight));
+  const order: TraditionWeight[] = ["scripture", "early", "late"];
+  return order.filter((weight) => present.has(weight)).map((weight) => GRADE_LABEL[weight]).join(" · ");
+}
+
 function ApostleRecord({
   apostle,
   glossSeen,
@@ -58,11 +66,14 @@ function ApostleRecord({
         </span>
         <span className="ap-glance">
           <span>
-            <strong>The call</strong>
+            <strong>The call · {GRADE_LABEL.scripture}</strong>
             {a.glanceCall}
           </span>
           <span>
-            <strong>The cost</strong>
+            <strong>The road · {roadGrades(a)}</strong>
+          </span>
+          <span>
+            <strong>The cost · {GRADE_LABEL[a.death.weight]}</strong>
             {a.glanceCost}
           </span>
         </span>
@@ -180,10 +191,15 @@ export default function TwelveRoom({ data }: { data: TwelveData }) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/apostles">The Apostles</Link>
-      </p>
       <h1>The twelve records.</h1>
+      <nav className="ap-room-jump" aria-label="Jump into the twelve records">
+        <a href="#apostle-records">
+          Jump to the {data.apostles.length} records <span aria-hidden="true">↓</span>
+        </a>
+        <Link href="/apostles/sent">
+          Where they were sent <span aria-hidden="true">→</span>
+        </Link>
+      </nav>
       <p className="lede">
         <GlossText text={data.intro} seen={glossSeen} />
       </p>

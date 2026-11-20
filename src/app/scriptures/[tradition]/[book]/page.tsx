@@ -101,8 +101,6 @@ export default async function BookChaptersPage({ params }: PageProps) {
   return (
     <>
       <p className="kicker">
-        <Link href="/scriptures">Scriptures</Link>
-        {" · "}
         <Link href={`/scriptures/${tradition.id}`}>{tradition.name}</Link>
       </p>
       <h1>{meta.name}</h1>

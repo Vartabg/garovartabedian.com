@@ -94,6 +94,8 @@ test("the Scripture page opens on the picker, with nothing picked for the reader
   );
 
   assert.match(markup, /<h1[^>]*>Read the Bible\.<\/h1>/);
+  assert.match(markup, /But Noah found favor in Yahweh’s eyes\./);
+  assert.match(markup, /href="\/scriptures\/stories\/noah"/);
   for (const gone of ["I want to", "Begin with John 1", "Enter by purpose", "Start with the text"]) {
     assert.ok(!markup.includes(gone), `the page still says “${gone}”`);
   }

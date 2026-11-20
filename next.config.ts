@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 import { CHRISTIANITY_ESSAY_PATH, EXCERPT_FRAME_ORIGIN } from "./src/lib/site/excerpt-video";
+import { RELEASE_SUMMARY_ENV } from "./src/lib/site/release-summary";
+import { readReleaseSummary } from "./src/lib/site/release-summary-node";
 
 // Static-friendly policy, matching the headers used by the deployed site.
 // Next 16 began discovering the old root middleware.ts, whose request nonce
@@ -32,10 +34,21 @@ function buildCsp(isProd: boolean, allowExcerptVideo = false): string {
   ].join("; ");
 }
 
+const releaseSummary = readReleaseSummary();
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  experimental: {
+    agentUpgrade: "security",
+  },
   compress: true,
   poweredByHeader: false,
+  // The Engineer foot's release summary, inlined at build so no page reads
+  // .release-record/record.json at render (ISR routes regenerate on Vercel,
+  // where the file does not exist). "" means a local build without a record.
+  env: {
+    [RELEASE_SUMMARY_ENV]: releaseSummary ? JSON.stringify(releaseSummary) : "",
+  },
   // Keep browser sessions and assessment origin checks on one public host.
   // Next preserves the incoming query string as well as the captured path.
   async redirects() {
@@ -64,6 +77,8 @@ const nextConfig: NextConfig = {
     // shards through fs; tracing cannot infer the filename from the index.
     "/scriptures/topics/**": ["./public/scriptures/nave/*.json"],
     "/api/find/*": ["./public/scriptures/canons.json", "./public/scriptures/text/{web,kjv,drb,brenton}/*.json", "./public/early/texts/*.json"],
+    // The Early Writings home counts the library catalog for its Engineer tag.
+    "/early": ["./content/early-library/catalog.json"],
     "/early/library/*": ["./content/early-library/catalog.json", "./content/early-library/readings/**/*.json"],
     "/early/search": ["./content/early-library/catalog.json", "./content/early-library/readings/**/*.json", "./public/early/texts/*.json"],
     "/api/library-search": ["./content/early-library/catalog.json", "./content/early-library/readings/**/*.json", "./public/early/texts/*.json"],
@@ -87,6 +102,8 @@ const nextConfig: NextConfig = {
       "./public/early/semantic/**",
       "./public/semantic-corpora/**",
       "./public/social/**",
+      "./games/hermon/**",
+      "./public/play/hermon/**",
       "./public/angels/**",
       "./public/apostles/**",
       "./public/church/**",
@@ -106,6 +123,8 @@ const nextConfig: NextConfig = {
       "public/scriptures/search/**",
       "public/scriptures/semantic/**",
       "public/social/**",
+      "games/hermon/**",
+      "public/play/hermon/**",
       "public/angels/**",
       "public/apostles/**",
       "public/church/**",
@@ -128,6 +147,10 @@ const nextConfig: NextConfig = {
           destination: `http://127.0.0.1:${process.env.JEV_RESEARCH_BRIDGE_PORT}/:path*`,
         },
       ] : []),
+      // These are complete HTML documents built with the game's own React renderer.
+      { source: "/play/hermon", destination: "/play/hermon/index.html" },
+      { source: "/play/hermon/crossing", destination: "/play/hermon/crossing.html" },
+      { source: "/play/hermon/crossing/account", destination: "/play/hermon/crossing/account.html" },
       { source: "/models/v1/:path+", destination: "/models/:path+" },
       { source: "/ort/v1/:path+", destination: "/ort/:path+" },
     ];

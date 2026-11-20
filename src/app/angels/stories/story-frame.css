@@ -1,7 +1,7 @@
 .world-angels.world-shell:has(.visual-story) { --bg: #111316; --ink: #f0e8dc; --surface: #1d2024; --muted: #c2bcb2; --line: #605a50; --accent: #e0c28e; }
 .world-angels:has(.visual-story) main { padding: 0; }
 .world-angels main > .wrap:has(> .visual-story, > .reading-narrative > .visual-story) { display: block; width: 100%; max-width: none; padding: 0; }
-.world-angels main > .wrap:has(> .visual-story, > .reading-narrative > .visual-story) > :is(.world-guide, .world-next) { display: none; }
+.world-angels main > .wrap:has(> .visual-story, > .reading-narrative > .visual-story) > .world-next { display: none; }
 .world-angels:has(.visual-story) .an-sky { display: none; }
 .visual-story { --story-ink: #f0e8dc; --story-muted: #c2bcb2; --story-accent: #e0c28e; --story-rule: #605a50; --story-serif: var(--font-fraunces), Georgia, serif; color: var(--story-ink); background: #111316; }
 .visual-story :is(h1,h2,h3,p,figure,blockquote) { margin: 0; }

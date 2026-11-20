@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { existsSync } from "node:fs";
 import test from "node:test";
-import { RESEARCH_TOOLS, discoveryThreads, engineeringNote, researchToolForPath } from "../src/lib/discovery-content";
+import { RESEARCH_TOOLS, discoveryThreads, researchToolForPath } from "../src/lib/discovery-content";
 import { HEXAPLA_WITNESSES } from "../src/lib/scriptures/polyglot";
 import { WORLD_REGISTRY } from "../src/lib/world-registry";
 
@@ -11,7 +11,6 @@ test("discovery tools and their implementation references resolve to real files"
     assert.ok(existsSync(`src/app${tool.href}/page.tsx`), tool.href);
     assert.ok(existsSync(tool.source), tool.source);
   }
-  assert.ok(existsSync(engineeringNote("/scriptures/protestant/JHN/1").source));
 });
 
 test("every world has three distinct onward tools and never links to the current tool", () => {
@@ -29,6 +28,4 @@ test("implementation notes match route boundaries and safely fall back", () => {
   assert.equal(researchToolForPath("/scriptures/polyglot")?.id, "polyglot");
   assert.equal(researchToolForPath("/scriptures/polyglot/extra")?.id, "polyglot");
   assert.equal(researchToolForPath("/scriptures/polyglot-extra"), undefined);
-  assert.equal(engineeringNote("/scriptures/protestant/JHN/1").title, "THE CHAPTER READER");
-  assert.equal(engineeringNote("/work").title, "THE RESEARCH & THE CRAFT");
 });

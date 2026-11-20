@@ -12,9 +12,6 @@ export default function IgnatiusRoom({ data }: { data: IgnatiusData }) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/early">The Writings</Link>
-      </p>
       <h1>Ignatius&rsquo; road</h1>
       <p className="lede">
         Around AD 107 the bishop of Antioch was marched under Roman guard to

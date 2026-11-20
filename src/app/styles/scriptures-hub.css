@@ -6,7 +6,6 @@
 .scr-hub-lede { max-width: 40rem; margin: 0; color: var(--muted); font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.6; }
 .scr-hub-stories { margin: 1.5rem 0 2.5rem; }
 .scr-hub-stories .scr-hub-section-head { align-items: start; }
-.scr-hub-stories .scr-hub-group { max-width: 42rem; }
 @media (max-width: 700px) {
   .scr-hub-stories .scr-hub-section-head { display: block; }
   .scr-hub-stories .scr-hub-section-head > p { margin-top: .45rem; }
@@ -49,17 +48,13 @@
 }
 @media (max-width: 600px) {
   .world-scr:has(.scr-hub) > .world-header > .wrap { flex-wrap: wrap; }
-  .world-scr:has(.scr-hub) .world-brand-lockup { flex: 1 0 100%; max-width: 100%; flex-wrap: wrap; }
+  .world-scr:has(.scr-hub) .world-brand-lockup { min-width: 0; max-width: 100%; flex-wrap: wrap; }
   .world-scr:has(.scr-hub) .world-header .brand { max-width: 100%; overflow: visible; white-space: normal; }
-  .world-scr:has(.scr-hub) .site-navigation { flex: 1 1 100%; min-width: 0; max-width: 100%; flex-wrap: wrap; }
+  .world-scr:has(.scr-hub) .site-navigation { min-width: 0; max-width: 100%; flex-wrap: wrap; }
   .world-scr:has(.scr-hub) :is(.site-nav-menu, .site-nav-find) { max-width: 100%; }
   .world-scr:has(.scr-hub) .site-nav-menu > summary { white-space: normal; }
-  .world-scr:has(.scr-hub) .world-guide { display: flex; flex-wrap: wrap; gap: .45rem; }
-  .world-scr:has(.scr-hub) .wg-mobile-menu { flex: 1 1 7rem; min-width: 0; max-width: 100%; }
-  .world-scr:has(.scr-hub) .wg-worlds-link { flex: 1 1 5.5rem; max-width: 100%; }
   .scr-hub-start { grid-template-columns: minmax(0, 1fr); }
   .scr-hub-start > a + a { border-inline-start: 0; border-top: 1px solid var(--line); }
-  .scr-hub-reading { scroll-margin-top: 8rem; }
   .scr-hub-groups { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
   .scr-hub-start > a { padding: .85rem; gap: .45rem; }
   .scr-hub-start strong { font-size: .95rem; }

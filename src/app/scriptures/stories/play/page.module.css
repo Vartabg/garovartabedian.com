@@ -1,0 +1,91 @@
+.collection {
+  max-width: 64rem;
+  margin-inline: auto;
+  padding-bottom: 2rem;
+  color: var(--ink);
+}
+
+.collection h1,
+.collection h2 {
+  margin: 0;
+  font-family: var(--reading-face, var(--font-display));
+  font-weight: 500;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.collection h1 {
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+}
+
+.collection h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+.collection p {
+  max-width: 50ch;
+  margin: 0.45rem 0 0.65rem;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.episode,
+.reading {
+  padding-block: clamp(1.1rem, 3vw, 1.8rem);
+  border-top: 1px solid var(--line);
+}
+
+.episode {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+  align-items: start;
+  gap: clamp(1rem, 3vw, 2.25rem);
+}
+
+.illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 1.25rem;
+  align-items: center;
+}
+
+.actions a,
+.heading a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--accent);
+  line-height: 1.35;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.actions .play {
+  font-weight: 700;
+}
+
+.reading h2 {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 38rem) {
+  .episode {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+}

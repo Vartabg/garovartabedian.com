@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Canons } from "@/lib/scriptures/types";
 import { loadBook } from "@/lib/scriptures/client";
+import { highlightFindText } from "@/lib/site/find-highlight";
 import type { FindItem } from "@/lib/site/find-query";
 import { previewTarget } from "@/lib/site/find-surface";
 
@@ -12,52 +13,61 @@ export default function FindPreview({
   query,
   localEvidence,
   onOpen,
-  onSearch,
 }: {
   item?: FindItem;
   canons: Canons | null;
   query: string;
   localEvidence: boolean;
   onOpen: (item: FindItem) => void;
-  onSearch: () => void;
 }) {
   const target = item && canons ? previewTarget(item, canons) : null;
-  const [preview, setPreview] = useState<{
-    text: string;
+  const book = target?.book;
+  const chapter = target?.chapter;
+  const verse = target?.verse;
+  const translation = target?.translation;
+  const targetKey =
+    book && chapter && verse && translation
+      ? `${translation}:${book}:${chapter}:${verse}`
+      : "";
+
+  const [loaded, setLoaded] = useState<{
+    key: string;
+    text?: string;
     before?: string;
     after?: string;
+    failed: boolean;
   } | null>(null);
-  const [failed, setFailed] = useState(false);
-  const book = target?.book,
-    chapter = target?.chapter,
-    verse = target?.verse,
-    translation = target?.translation;
+
   useEffect(() => {
-    setPreview(null);
-    setFailed(false);
     if (!book || !chapter || !verse || !translation) return;
+    const key = `${translation}:${book}:${chapter}:${verse}`;
     let cancelled = false;
     void loadBook(translation, book)
       .then((data) => {
         if (cancelled) return;
         const verses = data.chapters[chapter - 1];
         if (!verses?.[verse - 1]) {
-          setFailed(true);
+          setLoaded({ key, failed: true });
           return;
         }
-        setPreview({
+        setLoaded({
+          key,
           text: verses[verse - 1],
           before: verses[verse - 2],
           after: verses[verse],
+          failed: false,
         });
       })
       .catch(() => {
-        if (!cancelled) setFailed(true);
+        if (!cancelled) setLoaded({ key, failed: true });
       });
     return () => {
       cancelled = true;
     };
   }, [book, chapter, verse, translation]);
+
+  const current = targetKey && loaded?.key === targetKey ? loaded : null;
+
   return (
     <aside className="find-preview" aria-label="Result preview">
       {item ? (
@@ -79,20 +89,20 @@ export default function FindPreview({
             </p>
           )}
           {target ? (
-            preview ? (
+            current && !current.failed && current.text ? (
               <>
-                <blockquote>{preview.text}</blockquote>
-                {(preview.before || preview.after) && (
+                <blockquote>{highlightFindText(current.text, query)}</blockquote>
+                {(current.before || current.after) && (
                   <details>
                     <summary>Surrounding verses</summary>
-                    {preview.before && (
+                    {current.before && (
                       <p>
-                        <sup>{target.verse - 1}</sup> {preview.before}
+                        <sup>{target.verse - 1}</sup> {current.before}
                       </p>
                     )}
-                    {preview.after && (
+                    {current.after && (
                       <p>
-                        <sup>{target.verse + 1}</sup> {preview.after}
+                        <sup>{target.verse + 1}</sup> {current.after}
                       </p>
                     )}
                   </details>
@@ -100,13 +110,20 @@ export default function FindPreview({
               </>
             ) : (
               <p role="status">
-                {failed
+                {current?.failed
                   ? "This preview couldn’t load. Open the passage to read its source."
                   : "Loading source text…"}
               </p>
             )
           ) : (
-            <><p className="find-preview-note">{item.note}</p>{item.snippet && <blockquote dir="auto">{item.snippet}</blockquote>}</>
+            <>
+              <p className="find-preview-note">{item.note}</p>
+              {item.snippet && (
+                <blockquote dir="auto">
+                  {highlightFindText(item.snippet, query)}
+                </blockquote>
+              )}
+            </>
           )}
           <button
             type="button"
@@ -131,24 +148,15 @@ export default function FindPreview({
           <span className="find-preview-mark" aria-hidden="true">
             ↗
           </span>
-          <p className="find-preview-kicker">Follow your curiosity</p>
+          <p className="find-preview-kicker">Across the record</p>
           <h3>
             {query ? "Start with the sources." : "A word can open a world."}
           </h3>
           <p className="find-preview-note">
             {query
-              ? "Search the full text, or preview a result before you open it."
-              : "Find a passage, discover a writing, or jump to a person or place. Choose a result to look closer."}
+              ? "Try another word, reference, or switch scope above."
+              : "Find a passage, discover a writing, or jump to a person or place."}
           </p>
-          {query && (
-            <button
-              type="button"
-              className="find-preview-open"
-              onClick={onSearch}
-            >
-              Explore this question<span aria-hidden="true">↗</span>
-            </button>
-          )}
           <p className="find-preview-footnote">
             {localEvidence
               ? "The full workspace adds context, saved passages, and optional relevance checks."

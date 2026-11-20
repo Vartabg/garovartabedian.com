@@ -32,6 +32,8 @@ export function parseTranslationPrefix(query: string, fallback: TranslationId = 
   };
 }
 
+export const FIND_TEXT_EXACT_LIMIT = 12;
+
 export async function loadFindText(
   query: string,
   canons: Canons,
@@ -50,7 +52,7 @@ export async function loadFindText(
   }
 
   const [exactSettled, relatedSettled] = await Promise.allSettled([
-    searchVerses(cleanQuery, translation),
+    searchVerses(cleanQuery, translation, FIND_TEXT_EXACT_LIMIT),
     searchRelatedPassages(cleanQuery, canons),
   ]);
 
@@ -61,6 +63,43 @@ export async function loadFindText(
     translation,
     searchedText: cleanQuery,
   };
+}
+
+/**
+ * Resolve exact concordance hits independently of slower Nave topic shards so
+ * direct verse matches appear as soon as their concordance shard finishes.
+ */
+export function streamFindText(
+  query: string,
+  canons: Canons,
+  preferredTranslation: TranslationId = "web",
+  handlers: {
+    onExact: (exact: SearchResult | null, exactFailed: boolean) => void;
+    onRelated: (related: RelatedSearchResult | null) => void;
+    onDone: () => void;
+  },
+): void {
+  const { translation, text } = parseTranslationPrefix(query, preferredTranslation);
+  const cleanQuery = text.trim();
+  if (!cleanQuery) {
+    handlers.onExact(null, false);
+    handlers.onRelated(null);
+    handlers.onDone();
+    return;
+  }
+
+  const exactPromise = searchVerses(cleanQuery, translation, FIND_TEXT_EXACT_LIMIT).then(
+    (exact) => handlers.onExact(exact, false),
+    () => handlers.onExact(null, true),
+  );
+  const relatedPromise = searchRelatedPassages(cleanQuery, canons).then(
+    (related) => handlers.onRelated(related),
+    () => handlers.onRelated(null),
+  );
+
+  void Promise.allSettled([exactPromise, relatedPromise]).then(() => {
+    handlers.onDone();
+  });
 }
 
 /** Text submission is independent of asynchronous suggestions. */

@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 export default function Resume() {
   return (
     <CleanChrome activeHref="/resume">
-      <p className="kicker">Résumé</p>
       <h1>{PROFILE.name}</h1>
       <p className="lede">{RESUME.headline}</p>
       <p className="cta-row">

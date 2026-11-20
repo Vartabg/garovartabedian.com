@@ -7,6 +7,7 @@ export { getTraditionBriefing } from "./server/tradition-briefings";
 export { naveIndex } from "./server/nave-index";
 export { getNaveTopic, topicTitle } from "./server/nave";
 export { getOriginalChapter } from "./server/originals";
+export { getChapterXray } from "./server/xray";
 export {
   originalManifest,
   hasOriginalChapter,

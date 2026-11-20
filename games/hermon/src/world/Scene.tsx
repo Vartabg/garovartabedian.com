@@ -1,0 +1,107 @@
+'use client';
+import { Suspense, lazy, useEffect, useRef } from 'react';
+import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber';
+import { characterLoader } from './characterLoader';
+import { Physics } from '@react-three/rapier';
+import { ACESFilmicToneMapping, type DirectionalLight } from 'three';
+import NearMassif from './NearMassif';
+import OuterRanges from './OuterRanges';
+import DistrictBoundary from './DistrictBoundary';
+import { Water } from './Atmosphere';
+import Backdrop from './Backdrop';
+import EdgeRing from './EdgeRing';
+import TerrainLayer from './TerrainLayer';
+import Drift from './Drift';
+import SealedGround from './SealedGround';
+import FlightRush from './FlightRush';
+import Battle from './Battle';
+import Banishment from './Banishment';
+import CounterCue from './CounterCue';
+import FlamingSword from './FlamingSword';
+import Suit, { ADVERSARY_URL } from './Suit';
+import Player from '@/game/Player';
+import CameraRig from '@/game/CameraRig';
+import FlightPresentation from '@/game/FlightPresentation';
+import Shooter from '@/game/Shooter';
+import { shooterFault } from '@/game/shooterFault';
+import Boundary from '@/ui/Boundary';
+import Drones from './Drones';
+import ShotFx from './ShotFx';
+import ImpactFx from './ImpactFx';
+import { useGame } from '@/game/store';
+import { clearInput, runtime } from '@/game/runtime';
+import { EXPOSURE, FAR_PLANE, FOG, HEMISPHERE, SUN_COLOR, SUN_INTENSITY, SUN_POSITION } from './atmospherePalette';
+import { labFault } from '@/ui/labSwitch';
+import { useTouchCapable } from '@/ui/useTouchCapable';
+// The Gesture Lab's scene parts load only when a lab scheme is on (spec 10): the drone screen history (-9), Draw's world probe
+// (-45) and ribbon, and the hero trail. The standard controls fetch only the drone screen history, and only for the classic one
+// thumb with the blaster on (tap a drone to blast, 2026-09-26).
+const GestureTrack = lazy(() => import('./GestureTrack'));
+const DrawProbe = lazy(() => import('./DrawProbe'));
+const GestureRibbon = lazy(() => import('./GestureRibbon'));
+const HeroTrail = lazy(() => import('./HeroTrail'));
+function GraphicsRecovery({ onLoss, sun }: { onLoss: () => void; sun: React.RefObject<DirectionalLight | null> }) {
+  const { gl, invalidate } = useThree();
+  useEffect(() => {
+    const canvas = gl.domElement;
+    const lost = (e: Event) => { e.preventDefault(); clearInput(true); useGame.setState({ paused: true, ready: false }); onLoss(); };
+    canvas.addEventListener('webglcontextlost', lost);
+    invalidate(); return () => canvas.removeEventListener('webglcontextlost', lost);
+  }, [gl, invalidate, onLoss]);
+  useFrame(() => {
+    const l = sun.current; if (!l) return;
+    const gx = Math.round(runtime.position.x / 8) * 8, gz = Math.round(runtime.position.z / 8) * 8;
+    if (l.target.position.x === gx && l.target.position.z === gz) return;
+    l.position.set(gx + SUN_POSITION[0], SUN_POSITION[1], gz + SUN_POSITION[2]);
+    l.target.position.set(gx, 0, gz); l.target.updateMatrixWorld();
+  });
+  return null;
+}
+/** The fight: the demons, their attacks, the sword and the casting down, mounted only while the setting is on. A render error
+ * turns the fight off; flight continues. */
+function ShooterLayer() {
+  const shooter = useGame(s => s.shooter);
+  return shooter ? <ShooterAssets /> : null;
+}
+function ShooterAssets() {
+  // A missing demon model is a reloadable world download failure. Load outside the optional fault boundary.
+  useLoader(characterLoader, ADVERSARY_URL);
+  return <Boundary fallback={null} onError={() => shooterFault('render', null)}><Shooter /><Drones /><ShotFx /><ImpactFx /><Battle />
+    <Banishment /><CounterCue /><FlamingSword /></Boundary>;
+}
+/** Standard on the classic one thumb, blaster on, touch-capable device: the drone screen history alone (the tap pick reads it).
+ *  A desktop that has never shown touch mounts nothing here, so its Standard stays as it was. A failure only leaves it out. */
+function TapTrack() {
+  const on = useGame(s => s.shooter && s.touchScheme === 'classic' && s.controlLab === 'standard'), capable = useTouchCapable();
+  return on && capable ? <Boundary fallback={null} onError={() => {}}><Suspense fallback={null}><GestureTrack /></Suspense></Boundary> : null;
+}
+/** Mounted inside Physics (DrawProbe queries the world). A load or render error returns the session to the standard controls. */
+function LabLayer() {
+  const lab = useGame(s => s.controlLab);
+  if (lab === 'standard') return <TapTrack />;
+  return <Boundary key={lab} fallback={null} onError={() => labFault('The Gesture Lab scene failed. Standard controls are on.')}>
+    <Suspense fallback={null}><GestureTrack />{lab === 'draw' && <><DrawProbe /><GestureRibbon /></>}<HeroTrail /></Suspense>
+  </Boundary>;
+}
+export default function Scene({ onLoss }: { onLoss: () => void }) {
+  const paused = useGame(s => s.paused), quality = useGame(s => s.quality), sun = useRef<DirectionalLight>(null);
+  return <Canvas aria-label="Three-dimensional Mount Hermon at dawn. A winged angel fights the host of the fallen Watchers. Text description and keyboard controls are available in the field guide."
+    role="img" frameloop="demand" dpr={quality === 'high' ? [1, 1.5] : 1} shadows={quality === 'high' ? 'percentage' : false}
+    camera={{ position: [0, 24, 72], fov: 65, near: .1, far: FAR_PLANE }}
+    gl={{ antialias: true, alpha: false, powerPreference: 'high-performance', stencil: false }}
+    onCreated={({ gl }) => { gl.toneMapping = ACESFilmicToneMapping; gl.toneMappingExposure = EXPOSURE; }}>
+    <GraphicsRecovery onLoss={onLoss} sun={sun} />
+    <fog attach="fog" args={[FOG.color, FOG.near, FOG.far]} />
+    <hemisphereLight args={[HEMISPHERE.sky, HEMISPHERE.ground, HEMISPHERE.intensity]} />
+    <directionalLight ref={sun} position={SUN_POSITION} color={SUN_COLOR} intensity={SUN_INTENSITY} castShadow={quality === 'high'}
+      shadow-mapSize={[2048, 2048]} shadow-camera-left={-110} shadow-camera-right={110}
+      shadow-camera-top={110} shadow-camera-bottom={-110} shadow-camera-far={380} shadow-bias={-.0002} shadow-normalBias={.09} />
+    <Backdrop /><TerrainLayer /><Water /><EdgeRing /><Drift /><SealedGround /><FlightRush />
+    <Suspense fallback={null}>
+      <Physics paused={paused} timeStep={1 / 60} updatePriority={-50} gravity={[0, -22, 0]}>
+        <NearMassif /><OuterRanges /><DistrictBoundary /><Player /><FlightPresentation /><Suit /><CameraRig />
+        <ShooterLayer /><LabLayer />
+      </Physics>
+    </Suspense>
+  </Canvas>;
+}

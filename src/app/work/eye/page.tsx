@@ -43,7 +43,6 @@ const STACK = [
 export default function WorkEye() {
   return (
     <CleanChrome activeHref="/work">
-      <p className="kicker">Work / Case study</p>
       <h1>EYE — Visual Code Execution</h1>
       <p className="lede">
         I taught myself to code the non-traditional way, and reading walls of

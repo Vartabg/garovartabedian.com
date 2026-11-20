@@ -246,6 +246,39 @@
 }
 
 /* ---- Sticky progress nav ---- */
+.ap-room-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.85rem 0 1.25rem;
+}
+.ap-room-jump a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 3rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.ap-room-jump a:first-child {
+  border-color: var(--accent);
+}
+.ap-room-jump a:hover {
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.ap-room-jump a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .ap-section-nav {
   position: sticky;
   top: 0.65rem;

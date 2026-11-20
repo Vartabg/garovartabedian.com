@@ -1,0 +1,9 @@
+export const HERMON_PATH = '/play/hermon';
+export const CROSSING_PATH = `${HERMON_PATH}/crossing`;
+export const ACCOUNT_PATH = `${CROSSING_PATH}/account`;
+export const STORIES_PATH = '/scriptures/stories/play';
+export const PUBLIC_HERMON_URL = `https://garovartabedian.com${HERMON_PATH}`;
+export const BUILD_STAMP = process.env.NEXT_PUBLIC_HERMON_BUILD ?? 'development';
+export const ENOCH_SIX = '/early/enoch#chapter-6';
+export const ARCHANGEL_MODEL = `${HERMON_PATH}/models/archangel.glb`;
+export const WATCHER_MODEL = `${HERMON_PATH}/models/watcher.glb`;

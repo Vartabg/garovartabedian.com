@@ -9,7 +9,6 @@ export const DISCOVERY = {
   readerLabel: "Reader",
   engineerLabel: "Engineer",
   lensHint: "Read the record. Inspect the craft.",
-  notesLabel: "Behind this page",
   sourceLabel: "Explore the case study",
   compassHeading: "Pull this thread",
   compassNote: "Another way into the question. Each tool opens with its own selection.",
@@ -92,21 +91,4 @@ export function discoveryThreads(world: WorldId, pathname: string) {
     ? RESEARCH_TOOLS.filter((tool) => tool.id !== current.id).map((tool) => tool.id)
     : WORLD_THREADS[world];
   return ids.slice(0, 3).map((id) => RESEARCH_TOOLS.find((tool) => tool.id === id)!);
-}
-
-export function engineeringNote(pathname: string) {
-  const tool = researchToolForPath(pathname);
-  if (tool) return { title: tool.category, text: tool.engineering, source: tool.source };
-  if (/^\/scriptures\/[^/]+\/[^/]+\/\d+\/?$/.test(pathname)) {
-    return {
-      title: "THE CHAPTER READER",
-      text: "Hosted chapter data, original-language resources, and reading controls meet here. Availability depends on the book and edition; source notes identify the text.",
-      source: "src/app/scriptures/[tradition]/[book]/[chapter]/page.tsx",
-    };
-  }
-  return {
-    title: "THE RESEARCH & THE CRAFT",
-    text: "This Next.js site brings hosted texts, curated research, and browser interactions together. The case study explains the architecture and its limits.",
-    source: "src/app/work/garovartabedian/page.tsx",
-  };
 }

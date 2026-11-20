@@ -2,13 +2,17 @@ import { ReadingTools } from "../../_components/reading/ReadingSurface";
 import Link from "next/link";
 import { angelStories, type AngelStorySlug } from "../../../lib/angel-stories";
 import FromHere from "../../_components/FromHere";
+import PassageStudyLinks from "../../_components/PassageStudyLinks";
+import { verseStudyLinks } from "../../../lib/scriptures/verse-study-links";
 import "./story-frame.css";
 
 export function StoryShell({ children, className, titleId }: { children: React.ReactNode; className: string; titleId: string }) {
   return <article data-reading-surface data-reading-mode="read" className={`visual-story ${className}`} aria-labelledby={titleId}><ReadingTools />{children}</article>;
 }
 
-export function StorySource({ reference, chapterHref, verses, startVerse, note }: { reference: string; chapterHref: string; verses: readonly string[]; startVerse: number; note: string }) {
+/** Links the story's title verse via `current`: its translations and original words sit under the read link. */
+export function StorySource({ current, reference, chapterHref, verses, startVerse, note }: { current: AngelStorySlug; reference: string; chapterHref: string; verses: readonly string[]; startVerse: number; note: string }) {
+  const story = angelStories.find(item => item.slug === current)!;
   return (
     <section className="visual-story-source" aria-label="The passage behind the story">
       <p className="visual-story-source-label">The passage behind the story</p>
@@ -19,6 +23,7 @@ export function StorySource({ reference, chapterHref, verses, startVerse, note }
           <p className="visual-story-translation">World English Bible (WEB)</p>
           {verses.map((verse, index) => <p key={startVerse + index}><span className="visual-story-verse" aria-label={`Verse ${startVerse + index}`}>{startVerse + index}</span>{verse}</p>)}
           <Link href={chapterHref.replace(/(#|$)/, "?t=web$1")}>Read the full chapter <span aria-hidden="true">↗</span></Link>
+          <PassageStudyLinks links={verseStudyLinks(story.titleVerse)} />
         </div>
       </details>
     </section>

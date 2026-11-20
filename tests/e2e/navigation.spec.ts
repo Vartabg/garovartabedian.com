@@ -133,6 +133,7 @@ test("the angels field guide jumps to its already visible record", async ({ page
   const orderLadder = page.locator("#order-ladder");
   await expect(orderLadder).toBeVisible();
   await expect(orderLadder.locator("xpath=ancestor::details")).toHaveCount(0);
+  await page.getByText("The field guide and the worksheets").click();
   await page.locator('a.an-field-gate[href="#order-ladder"]').click();
   await expect(page).toHaveURL(/\/angels#order-ladder$/);
   await expect(orderLadder).toBeInViewport();
@@ -176,13 +177,68 @@ test("a reading page opens the menu on its own next steps and folds the rest", a
   await expect(page).toHaveURL(/\/angels/);
   await navigation.locator(".site-nav-menu > summary").click();
   await expect(navigation.locator(".site-nav-here")).toHaveCount(0);
-  await expect(navigation.getByText("Explore the whole site", { exact: true })).toBeVisible();
+  await expect(navigation.locator(".site-nav-group--section")).toBeVisible();
 
-  // A page without From here keeps the whole menu.
+  // A page without From here opens on its section's pages and folds the rest.
   await page.goto("/jesus");
   await navigation.locator(".site-nav-menu > summary").click();
   await expect(navigation.locator(".site-nav-here")).toHaveCount(0);
-  await expect(navigation.getByText("Explore the whole site", { exact: true })).toBeVisible();
+  await expect(navigation.locator(".site-nav-group--section")).toBeVisible();
+  await expect(navigation.locator('.site-nav-everything a[href="/church"]')).toBeHidden();
+});
+
+test("every page opens the menu on its own links, short enough for one phone screen", async ({
+  page,
+}) => {
+  const navigation = page.getByRole("navigation", { name: "Primary site navigation" });
+  // The longest section menu also fits a small phone.
+  await page.setViewportSize({ width: 375, height: 667 });
+  await page.goto("/jesus");
+  await navigation.locator(".site-nav-menu > summary").click();
+  expect(
+    await navigation.locator(".site-nav-panel").evaluate((element) => element.scrollHeight <= element.clientHeight + 1),
+    "/jesus menu should fit a 375 x 667 phone without scrolling",
+  ).toBe(true);
+  await expect(navigation.locator(".site-nav-group--more")).toHaveCount(1);
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const [route, heading, firstHref] of [
+    ["/", "Explore the record", "/scriptures"],
+    ["/jesus/parables", "Jesus Christ", "/jesus/words"],
+    ["/scriptures", "Scriptures", "/scriptures/stories"],
+    ["/hire", "Understand the work", "/sources"],
+  ] as const) {
+    await page.goto(route);
+    await navigation.locator(".site-nav-menu > summary").click();
+    const panel = navigation.locator(".site-nav-panel");
+    await expect(panel.getByRole("heading").first()).toHaveText(heading);
+    await expect(panel.getByRole("link").first()).toHaveAttribute("href", firstHref);
+    const fits = await panel.evaluate(
+      (element) =>
+        element.scrollHeight <= element.clientHeight + 1 &&
+        element.getBoundingClientRect().bottom <= window.innerHeight,
+    );
+    expect(fits, `${route} menu should fit one phone screen without scrolling`).toBe(true);
+    // The rest of the site is one tap further, and nothing in the menu repeats.
+    const everything = panel.locator(".site-nav-everything");
+    await expect(everything.locator("a").first()).toBeHidden();
+    await everything.locator("summary").click();
+    await expect(everything.locator("a").first()).toBeVisible();
+    const hrefs = await panel.locator("a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
+    expect(new Set(hrefs).size, `${route} menu repeats a link`).toBe(hrefs.length);
+    await page.keyboard.press("Escape");
+  }
+
+  // Moving to another page in the same section starts from the short list again.
+  await page.goto("/jesus");
+  await navigation.locator(".site-nav-menu > summary").click();
+  await navigation.locator(".site-nav-everything > summary").click();
+  await expect(navigation.locator('.site-nav-everything a[href="/church"]')).toBeVisible();
+  await navigation.locator('.site-nav-group--section a[href="/jesus/words"]').click();
+  await expect(page).toHaveURL(/\/jesus\/words$/);
+  await navigation.locator(".site-nav-menu > summary").click();
+  await expect(navigation.locator(".site-nav-group--section")).toBeVisible();
+  await expect(navigation.locator('.site-nav-everything a[href="/church"]')).toBeHidden();
 });
 
 test("the shared menu exposes the whole site from a deep page", async ({
@@ -193,17 +249,34 @@ test("the shared menu exposes the whole site from a deep page", async ({
     name: "Primary site navigation",
   });
 
-  await navigation.locator("summary").click();
-  await expect(
-    navigation.getByText("Explore the whole site", { exact: true }),
-  ).toBeVisible();
+  await navigation.locator(".site-nav-menu > summary").click();
+  // The section's own pages lead; the whole site is one tap further.
+  await expect(navigation.locator(".site-nav-group--section")).toBeVisible();
+  await navigation.locator(".site-nav-everything > summary").click();
   await expect(
     navigation.locator('.site-nav-group--worlds a[href="/church"]'),
   ).toHaveAttribute("aria-current", "location");
   await expect(
     navigation.locator('a[href="/scriptures/search"]'),
   ).toBeVisible();
+  await expect(
+    navigation.locator('a[href="/scriptures/stories"]'),
+  ).toBeVisible();
 
+  for (const route of ["/", "/scriptures"]) {
+    await page.goto(route);
+    await navigation.locator(".site-nav-menu > summary").click();
+    await expect(navigation.locator(".site-nav-menu > summary")).toHaveText("Menu");
+    const panelHrefs = await navigation
+      .locator(".site-nav-panel a")
+      .evaluateAll((links) => links.map((link) => link.getAttribute("href")));
+    expect(panelHrefs).toContain("/scriptures/stories");
+    expect(new Set(panelHrefs).size).toBe(panelHrefs.length);
+  }
+
+  await page.goto("/church/councils");
+  await navigation.locator(".site-nav-menu > summary").click();
+  await navigation.locator(".site-nav-everything > summary").click();
   await navigation
     .locator('a[href="/scriptures/search"]')
     .click();

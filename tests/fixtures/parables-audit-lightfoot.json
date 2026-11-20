@@ -1,0 +1,901 @@
+{
+  "edition": "Lightfoot/Harmer, The Apostolic Fathers (1891)",
+  "scan": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+  "baselineRecords": 189,
+  "created": 23,
+  "selections": [
+    {
+      "id": "second-clement-two-masters-ages",
+      "selection": [
+        [
+          "2-clem-6",
+          1,
+          5
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        104
+      ],
+      "printedPages": [
+        88
+      ],
+      "sha256": "717040a9367b27c6bfe8c0b19500627df0bb98d271acd517dfb8e38dbe0a1c60",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The opening quotation resembles Matthew 6:24 and Luke 16:13; the two ages are the homilist’s further image.",
+      "speaker": "The homilist quotes the Lord, then comments",
+      "related": "synoptic-two-masters",
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The opening quotation resembles Matthew 6:24 and Luke 16:13; the two ages are the homilist’s further image."
+    },
+    {
+      "id": "second-clement-small-great",
+      "selection": [
+        [
+          "2-clem-8",
+          4,
+          6
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        105
+      ],
+      "printedPages": [
+        89
+      ],
+      "sha256": "ede54403d91939f87699c2acf30256f38bfa7f79791ab33f4797bc37d574c5f5",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-second-clement-small-great.json",
+      "corrections": [
+        {
+          "before": "is also faithful in much",
+          "after": "is faithful also in much"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The homilist applies the quotation to keeping flesh and seal pure; compare Luke 16:10–12, whose setting differs.",
+      "excerptFileSha256": "e4cc704836bf02bad49d3f049ae694634f2aaf382eee47cbb4cc6dad35fc7c9b",
+      "speaker": "The homilist quotes the Lord, then explains the saying",
+      "related": "unjust-steward",
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The homilist applies the quotation to keeping flesh and seal pure; compare Luke 16:10–12, whose setting differs. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=105"
+    },
+    {
+      "id": "second-clement-temple-physician",
+      "selection": [
+        [
+          "2-clem-9",
+          3,
+          8
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        105
+      ],
+      "printedPages": [
+        89
+      ],
+      "sha256": "c6af057858e090f8ed5ef7d882c952ff755fec2341ffa57790bb051b21c03641",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "These images resemble John 2:19–21 and the physician sayings only in imagery; the subjects and applications differ.",
+      "speaker": "The homilist",
+      "related": "synoptic-physician-sick",
+      "relatedAlso": [
+        "john-temple"
+      ],
+      "earlyComparisons": [],
+      "displayedNote": "These images resemble John 2:19–21 and the physician sayings only in imagery; the subjects and applications differ."
+    },
+    {
+      "id": "second-clement-house-robbers",
+      "selection": [
+        [
+          "2-clem-14",
+          1,
+          1
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        107
+      ],
+      "printedPages": [
+        91
+      ],
+      "sha256": "614335b0b8a3242dda2fb8b7151a49da520e800fc34faee32e471df56f9ae11f",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-second-clement-house-robbers.json",
+      "corrections": [
+        {
+          "before": "before the sun and the moon",
+          "after": "before the sun and moon"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The homilist invokes the house and robbers quotation, rather than narrating a Gospel parable.",
+      "excerptFileSha256": "6dc7783a042560cc6e252cf90c31de26184d57f42d128a43d4716ea041d83885",
+      "speaker": "The homilist quotes scripture, then comments",
+      "related": "synoptic-house-den-robbers",
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The homilist invokes the house and robbers quotation, rather than narrating a Gospel parable. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=107"
+    },
+    {
+      "id": "second-clement-darkness-sight",
+      "selection": [
+        [
+          "2-clem-1",
+          6,
+          6
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        102
+      ],
+      "printedPages": [
+        86
+      ],
+      "sha256": "10028eaf4a8717311029622079aef00f8f84e07263dceb33c1e75aeb5c91e0a1",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The homilist describes regaining sight as an image for deliverance from ignorance.",
+      "speaker": "The homilist",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The homilist describes regaining sight as an image for deliverance from ignorance."
+    },
+    {
+      "id": "second-clement-barren",
+      "selection": [
+        [
+          "2-clem-2",
+          1,
+          3
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        102,
+        103
+      ],
+      "printedPages": [
+        86,
+        87
+      ],
+      "sha256": "1ac02a0794c33308ec037e6a97736ba04130d0e2874a934013b57df8a95a187e",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-second-clement-barren.json",
+      "corrections": [
+        {
+          "before": "barren that barest not",
+          "after": "barren that bearest not"
+        },
+        {
+          "before": "barren that barest not",
+          "after": "barren that bearest not"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The barren woman is explicitly interpreted as an image for the Church.",
+      "excerptFileSha256": "98ffde35d341509e97da85df53e16b32415796eaa1ad45a2f8d656c38c017e98",
+      "speaker": "The homilist quotes and interprets Isaiah",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The barren woman is explicitly interpreted as an image for the Church. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=102"
+    },
+    {
+      "id": "second-clement-lips-heart",
+      "selection": [
+        [
+          "2-clem-3",
+          4,
+          5
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        103
+      ],
+      "printedPages": [
+        87
+      ],
+      "sha256": "026170ad3777c8a55f56b1ea72ff123702e5fead17d7eb3a3890946e0f34e23b",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-second-clement-lips-heart.json",
+      "corrections": [
+        {
+          "before": "honoreth me with their lips",
+          "after": "honoreth Me with their lips"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The Isaiah quotation also appears in Matthew 15:7–9 and Mark 7:6–7.",
+      "excerptFileSha256": "709c530c39d886b559123f9231824d12e49a9cf50b9f051a4120b03529d676bb",
+      "speaker": "The homilist quotes Isaiah",
+      "related": "synoptic-lips-heart",
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The Isaiah quotation also appears in Matthew 15:7–9 and Mark 7:6–7. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=103"
+    },
+    {
+      "id": "second-clement-burning-day",
+      "selection": [
+        [
+          "2-clem-16",
+          3,
+          3
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        108
+      ],
+      "printedPages": [
+        92
+      ],
+      "sha256": "df62eb8b0f3bde78f09e51f8a53dbc9bb8e3cb7cc3479a2ec565ff672ab5dac7",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The homilist compares the coming judgment to a burning oven.",
+      "speaker": "The homilist",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The homilist compares the coming judgment to a burning oven."
+    },
+    {
+      "id": "second-clement-immortal-fruit",
+      "selection": [
+        [
+          "2-clem-19",
+          3,
+          3
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        110
+      ],
+      "printedPages": [
+        94
+      ],
+      "sha256": "af7bce5be6c230033c6c187898d15044968e6e85a17f3dc656b1c83697118d3c",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The homilist describes the resurrection as immortal fruit.",
+      "speaker": "The homilist",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The homilist describes the resurrection as immortal fruit."
+    },
+    {
+      "id": "second-clement-waiting-fruit",
+      "selection": [
+        [
+          "2-clem-20",
+          2,
+          4
+        ]
+      ],
+      "sourceEdition": "2-clement",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        110
+      ],
+      "printedPages": [
+        94
+      ],
+      "sha256": "a4ee268f07d1b06a2b9f4d0d08285b04754e4e9cb8409a350e785f53314464f0",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-second-clement-waiting-fruit.json",
+      "corrections": [
+        {
+          "before": "We are trained by the present life",
+          "after": "We are contending in the lists of a living God; and we are trained by the present life"
+        },
+        {
+          "before": "but which is gainful",
+          "after": "but that which is gainful"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The homilist speaks of waiting for fruit and compares present training to a contest.",
+      "excerptFileSha256": "a91d65eb9dc2893629db7616f5ffb80fcdd4261eb0db03c538a4588f19b92976",
+      "speaker": "The homilist",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The homilist speaks of waiting for fruit and compares present training to a contest. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=110"
+    },
+    {
+      "id": "hermas-tower-explanation",
+      "selection": [
+        [
+          "vision-3",
+          22,
+          43
+        ],
+        [
+          "vision-3-part-2",
+          1,
+          1
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        428,
+        429,
+        430,
+        431
+      ],
+      "printedPages": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "sha256": "006a69339bb4340e7a2cb5072ee46a7374dd43d2acb3ae02e3ae7a6d8d1979a4",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-hermas-tower-explanation.json",
+      "corrections": [
+        {
+          "before": "bringing the stones in?",
+          "after": "bringing the stones?"
+        },
+        {
+          "before": "revealed to thee, all shall be revealed",
+          "after": "revealed to thee, and shall be revealed"
+        },
+        {
+          "before": "go to the building The stones",
+          "after": "go to the building. The stones"
+        },
+        {
+          "before": "Learn first from thyself When",
+          "after": "Learn first from thyself. When"
+        },
+        {
+          "before": "which are near the waters",
+          "after": "which fall near the waters"
+        },
+        {
+          "before": "tower that was repentance",
+          "after": "tower there was repentance"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The woman explains the tower and its stones; the final block continues across the source-section boundary. This continues the earlier tower vision.",
+      "excerptFileSha256": "3b6948a938fd5e6649769c7978bc55521f6724efd6521b0b0184fe9669e72b50",
+      "speaker": "Hermas narrates; Hermas and the woman speak",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [
+        "hermas-tower"
+      ],
+      "displayedNote": "The woman explains the tower and its stones; the final block continues across the source-section boundary. This continues the earlier tower vision. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=428"
+    },
+    {
+      "id": "hermas-seven-women",
+      "selection": [
+        [
+          "vision-3-part-2",
+          3,
+          10
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        431,
+        432
+      ],
+      "printedPages": [
+        415,
+        416
+      ],
+      "sha256": "52a11d97e05117005193b539cc6e20d2e3c16169a8ae0f2943c1bb76dd962cc5",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The woman identifies the tower’s seven supporters. The printed list and the subsequent sequence differ; both are preserved. The speech continues after the selection.",
+      "speaker": "Hermas narrates; Hermas and the woman speak",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The woman identifies the tower’s seven supporters. The printed list and the subsequent sequence differ; both are preserved. The speech continues after the selection."
+    },
+    {
+      "id": "hermas-three-forms",
+      "selection": [
+        [
+          "vision-3-part-2",
+          33,
+          43
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        433,
+        434,
+        435
+      ],
+      "printedPages": [
+        417,
+        418,
+        419
+      ],
+      "sha256": "f4a147643f0c6e01eab58b35fd2abbbef211b7c3a950ba64c17ef3b38ac3bba9",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-hermas-three-forms.json",
+      "corrections": [
+        {
+          "before": "Listen,\" saith he,",
+          "after": "\"Listen,\" saith he,"
+        },
+        {
+          "before": "when you heard the revelation",
+          "after": "when ye heard the revelation"
+        },
+        {
+          "before": "a firm on;",
+          "after": "a firm one;"
+        },
+        {
+          "before": "world too Is upheld",
+          "after": "world too is upheld"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The young man explains the woman’s successive forms, including an old man’s unexpected inheritance.",
+      "excerptFileSha256": "5d6378aed893efdd448b8ec32d9baf78f843afd6afb0f1ac0af8fe8daf0632de",
+      "speaker": "The young man explains the vision to Hermas",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The young man explains the woman’s successive forms, including an old man’s unexpected inheritance. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=433"
+    },
+    {
+      "id": "hermas-beast-colors",
+      "selection": [
+        [
+          "vision-4",
+          5,
+          22
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        435,
+        436,
+        437
+      ],
+      "printedPages": [
+        419,
+        420,
+        421
+      ],
+      "sha256": "aa162a51d1f7e7c0a19ac5ef7a7dfcced178b00e14edee753b9bbb33e4f4065e",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-hermas-beast-colors.json",
+      "corrections": [
+        {
+          "before": "bridal-chamber",
+          "after": "bride-chamber"
+        },
+        {
+          "before": "\"Did nothing meet thee? \"I say unto her, Lady,",
+          "after": "\"Did nothing meet thee?\" I say unto her, \"Lady,"
+        },
+        {
+          "before": "shut his mouth",
+          "after": "shut its mouth"
+        },
+        {
+          "before": "ye that has escaped",
+          "after": "ye that have escaped"
+        },
+        {
+          "before": "the old loses its dross. so Ye",
+          "after": "the gold loses its dross, so ye"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "Hermas narrates the vision; the woman explains the beast and its colors as signs of tribulation.",
+      "excerptFileSha256": "3d0b6a93d6ec531be2e1fe7ace6f673d892ce5cecfa79837d07f02a14c8faf61",
+      "speaker": "Hermas narrates; Hermas and the woman speak",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "Hermas narrates the vision; the woman explains the beast and its colors as signs of tribulation. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=435"
+    },
+    {
+      "id": "hermas-two-paths",
+      "selection": [
+        [
+          "mandate-6",
+          1,
+          4
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        444
+      ],
+      "printedPages": [
+        428
+      ],
+      "sha256": "ee4c573dca9f0473ab914866e4418341e43fa8f2a4b2807e1355dfa94e4da91f",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-hermas-two-paths.json",
+      "corrections": [
+        {
+          "before": "I charged thee,\" saith he",
+          "after": "\"I charged thee,\" saith he"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The Shepherd compares righteousness and unrighteousness to paths; the Didache and Gospel passages use the two ways differently.",
+      "excerptFileSha256": "1d890a34c6b2248b188f00ee013d2eb7399a244c44b2358e314bb2c2e6bd344a",
+      "speaker": "Hermas and the Shepherd speak",
+      "related": "synoptic-narrow-wide-gates",
+      "relatedAlso": [],
+      "earlyComparisons": [
+        "didache-two-ways",
+        "epistula-narrow-way"
+      ],
+      "displayedNote": "The Shepherd compares righteousness and unrighteousness to paths; the Didache and Gospel passages use the two ways differently. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=444"
+    },
+    {
+      "id": "hermas-neglected-vineyard",
+      "selection": [
+        [
+          "mandate-10",
+          3,
+          6
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        448,
+        449
+      ],
+      "printedPages": [
+        432,
+        433
+      ],
+      "sha256": "61c9ec0a23c1def0d73ce92f6ebcbafba4a8972985c169ca5b75025c15dc562c",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The Shepherd compares distractions to thorns and weeds in a neglected vineyard; the application differs from the Gospel sower. His speech continues.",
+      "speaker": "Hermas narrates; Hermas and the Shepherd speak",
+      "related": "sower",
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The Shepherd compares distractions to thorns and weeds in a neglected vineyard; the application differs from the Gospel sower. His speech continues."
+    },
+    {
+      "id": "hermas-vinegar-wine",
+      "selection": [
+        [
+          "mandate-10",
+          15,
+          15
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        450
+      ],
+      "printedPages": [
+        434
+      ],
+      "sha256": "6a279ee014fe9f7517f2ee20a67400e414c9b946b47eebd294b93a38ab4c232c",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The Shepherd compares sadness mixed with intercession to vinegar mixed with wine. His speech continues.",
+      "speaker": "Hermas narrates; Hermas and the Shepherd speak",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [
+        "hermas-wormwood-honey"
+      ],
+      "displayedNote": "The Shepherd compares sadness mixed with intercession to vinegar mixed with wine. His speech continues."
+    },
+    {
+      "id": "hermas-empty-vessels",
+      "selection": [
+        [
+          "mandate-11",
+          13,
+          16
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        451,
+        452
+      ],
+      "printedPages": [
+        435,
+        436
+      ],
+      "sha256": "0ba8b9c33fd26481cbdc7f2c2c42dcb7ea87b2b9b80bc93ebd68ab710d80cde3",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-hermas-empty-vessels.json",
+      "corrections": [
+        {
+          "before": "vessel which you place there empty",
+          "after": "vessel which you placed there empty"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The Shepherd uses empty vessels to describe false prophets; it shares vessel imagery with Truth but differs in application.",
+      "excerptFileSha256": "56b9e018b339387bc7c98ccd03fc14c23c16f25bb2d8bea5c49e4788d75d532c",
+      "speaker": "The Shepherd speaks to Hermas",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [
+        "truth-jars"
+      ],
+      "displayedNote": "The Shepherd uses empty vessels to describe false prophets; it shares vessel imagery with Truth but differs in application. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=451"
+    },
+    {
+      "id": "hermas-wine-jars-temptation",
+      "selection": [
+        [
+          "mandate-12",
+          23,
+          25
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        454,
+        455
+      ],
+      "printedPages": [
+        438,
+        439
+      ],
+      "sha256": "f455c967d82a7258298a4ae862dccc7a76899c58b868abc92c93cb798fe89c2c",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The Shepherd compares temptation to testing full and empty jars. The Shepherd’s speech continues.",
+      "speaker": "The Shepherd speaks to Hermas",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [
+        "truth-jars"
+      ],
+      "displayedNote": "The Shepherd compares temptation to testing full and empty jars. The Shepherd’s speech continues. The Gospel of Truth uses jars in a different image and setting."
+    },
+    {
+      "id": "hermas-vineyard-servant-explanation",
+      "selection": [
+        [
+          "another-parable",
+          38,
+          48
+        ],
+        [
+          "another-parable-part-2",
+          1,
+          16
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        461,
+        462,
+        463
+      ],
+      "printedPages": [
+        445,
+        446,
+        447
+      ],
+      "sha256": "1faa2161d386429dc48e1a55d45def0b9aa30d3994a95f3d57e0b0bb594af737",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-hermas-vineyard-servant-explanation.json",
+      "corrections": [
+        {
+          "before": "this fast which thou art about to observe]",
+          "after": "this fast [which thou art about to observe]"
+        },
+        {
+          "before": "such (powers of intercession and art not idle, wherefore dost thou not ask understanding of the Lord, and obtain it from Him).",
+          "after": "such (powers of) intercession and art not idle, wherefore dost thou not ask understanding of the Lord, and obtain it from Him?"
+        },
+        {
+          "before": "Wherefore, Sir,]",
+          "after": "Wherefore, [Sir,]"
+        },
+        {
+          "before": "Spirit. Which created",
+          "after": "Spirit, Which created"
+        },
+        {
+          "before": "seem to hare lost",
+          "after": "seem to have lost"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The Shepherd first applies the story to fasting, then explains its figures. This selection includes the bridge between the story and its later interpretation.",
+      "excerptFileSha256": "78f2f9ac8eabc9546c47d18a06511cdffbc57aa94a28b0193b1d40d9c2fd45fd",
+      "speaker": "Hermas narrates; Hermas and the Shepherd speak",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [
+        "hermas-vineyard-servant"
+      ],
+      "displayedNote": "The Shepherd first applies the story to fasting, then explains its figures. This selection includes the bridge between the story and its later interpretation. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=461"
+    },
+    {
+      "id": "hermas-smith-discourse",
+      "selection": [
+        [
+          "vision-1",
+          15,
+          15
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        422,
+        423
+      ],
+      "printedPages": [
+        406,
+        407
+      ],
+      "sha256": "02a2eb5741a72994670372f83924d2ed05c56d5848586b3a338b134256d9f1e6",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The woman compares repeated righteous instruction to a smith hammering his work.",
+      "speaker": "The woman speaks to Hermas",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The woman compares repeated righteous instruction to a smith hammering his work."
+    },
+    {
+      "id": "hermas-spirits-vessel",
+      "selection": [
+        [
+          "mandate-5",
+          7,
+          14
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        442,
+        443
+      ],
+      "printedPages": [
+        426,
+        427
+      ],
+      "sha256": "757d243b37f1707ed8fd1d2bbf4a1227daf45b09ca1cc32d688ebae0a381bb64",
+      "sourceType": "hosted-blocks",
+      "excerpt": null,
+      "corrections": [],
+      "runtimeStatus": "requires source allowlist where not already present",
+      "note": "The Shepherd continues his account of angry temper and the Holy Spirit in one vessel. The speech continues.",
+      "speaker": "Hermas narrates; Hermas and the Shepherd speak",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [
+        "hermas-wormwood-honey"
+      ],
+      "displayedNote": "The Shepherd continues his account of angry temper and the Holy Spirit in one vessel. The speech continues."
+    },
+    {
+      "id": "hermas-clean-house",
+      "selection": [
+        [
+          "parable-10",
+          8,
+          12
+        ]
+      ],
+      "sourceEdition": "shepherd-hermas",
+      "sourcePdf": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf",
+      "pdfPages": [
+        498
+      ],
+      "printedPages": [
+        482
+      ],
+      "sha256": "776fa0fb14b0956e3b2740b86c684a4d59b262739cc0f5b3d676f5c6638c26ff",
+      "sourceType": "corrected-excerpt",
+      "excerpt": "content/jesus/early-excerpts/lightfoot-hermas-clean-house.json",
+      "corrections": [
+        {
+          "before": "chaste and industrious, and have favor",
+          "after": "chaste and industrious, and all have favor"
+        }
+      ],
+      "runtimeStatus": "requires allowlist and original-reader integration",
+      "note": "The angel describes the virgins dwelling in a clean house; this is a later image distinct from the tower.",
+      "excerptFileSha256": "53d279a0742ed5d99a5ab966a315d7f25067a5078413cd16c0f59d7daad0fb42",
+      "speaker": "Hermas narrates; the angel and Hermas speak",
+      "related": null,
+      "relatedAlso": [],
+      "earlyComparisons": [],
+      "displayedNote": "The angel describes the virgins dwelling in a clean house; this is a later image distinct from the tower. This excerpt corrects identified transcription errors against the 1891 printed edition.",
+      "scanUrl": "https://archive.org/download/apostolicfathers00lighuoft/apostolicfathers00lighuoft.pdf#page=498"
+    }
+  ],
+  "validation": {
+    "passageHashes": "All 23 independently re-read and verified",
+    "lint": "exit 0; 55 warnings",
+    "typecheck": "tsc --noEmit --incremental false, exit 0 on Node 24.20.0",
+    "targetedTests": "16 passed, 2 failed: 22 candidate selections fail closed because runtime allowlists are outside scope; original excerpt count fixture requires update",
+    "build": "not run: prebuild writes generated repository artifacts outside the authorized scope"
+  },
+  "handoffAtTimeOfSourceReview": [
+    "The current renderer, trace checks, staged checks, source URL map and original-reader allowlist need integration outside this worker write scope. New corrected excerpts currently fail closed; unallowlisted hosted sections do likewise.",
+    "The image and editorial punctuation comparisons are documented in shared notes; byte-for-byte reproduction of all 1891 punctuation and orthography is not claimed."
+  ]
+}

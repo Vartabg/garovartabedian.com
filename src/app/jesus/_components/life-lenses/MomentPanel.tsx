@@ -13,6 +13,7 @@ import {
   type LifeLensMomentDetail,
   type LifeLensPassage,
 } from "@/lib/jesus/life-lenses";
+import type { MomentOpening } from "@/lib/jesus/moment-openings";
 
 function PassageText({ passage }: { passage: LifeLensPassage }) {
   return (
@@ -110,6 +111,7 @@ export default function MomentPanel({
   placeName,
   lens,
   onLens,
+  opening,
   detail,
   failed,
   onRetry,
@@ -122,6 +124,7 @@ export default function MomentPanel({
   placeName: string;
   lens: LifeLens;
   onLens: (lens: LifeLens) => void;
+  opening: MomentOpening | null;
   detail: LifeLensMomentDetail | null;
   failed: boolean;
   onRetry: () => void;
@@ -146,7 +149,14 @@ export default function MomentPanel({
       <h2 className="jl-title" id="jl-moment-title">
         {moment.title}
       </h2>
-      <p className="jl-summary">{moment.line}</p>
+      {opening ? (
+        <blockquote className="jl-opening">
+          <p>{opening.text}</p>
+          <footer>{opening.cite}</footer>
+        </blockquote>
+      ) : (
+        <p className="jl-summary">{moment.line}</p>
+      )}
       <p className="jl-told">
         Told by{" "}
         {GOSPELS.map((g) => (

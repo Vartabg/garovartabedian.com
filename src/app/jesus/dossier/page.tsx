@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   canons,
   getBookText,
@@ -129,15 +130,23 @@ export default async function JesusDossierPage({
     <article className="prose-wrap jsu-dossier-wrap">
       <header className="page-header" style={{ marginBottom: "2rem" }}>
         <p className="kicker">HOSTED SCRIPTURE · CURATED SOURCE NOTES</p>
-        <h1 style={{ fontFamily: "Cinzel, serif", fontSize: "clamp(2rem, 5vw, 3rem)", margin: "0.5rem 0 1rem" }}>
+        <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", margin: "0 0 1rem" }}>
           Research worksheets
         </h1>
         <p style={{ fontSize: "1.125rem", lineHeight: 1.6, color: "var(--muted-ink)", maxWidth: "56rem" }}>
-          Build a structured Markdown worksheet from hosted Hebrew or Greek text, public-domain translations,
-          and curated notes keyed to named Jewish, Roman, and early Christian sources. The export is formatted for
-          Google NotebookLM™ and includes prompts for comparing the evidence. Historical notes are research aids;
-          check the named work before quoting or publishing them.
+          Historical notes are research aids; check the named work before quoting or publishing them.
         </p>
+        <p>
+          <Link href="/jesus/words">Read his words first.</Link>
+        </p>
+        <details>
+          <summary>How a worksheet is built</summary>
+          <p>
+            The export is Markdown from hosted Hebrew or Greek text, public-domain translations,
+            and curated notes keyed to named Jewish, Roman, and early Christian sources. It is
+            formatted for Google NotebookLM™ and includes prompts for comparing the evidence.
+          </p>
+        </details>
       </header>
 
       {/* No Suspense here: everything is read on the server, and a boundary

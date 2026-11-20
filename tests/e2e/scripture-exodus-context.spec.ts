@@ -8,6 +8,7 @@ test("Exodus tabernacle context opens its checked edition despite different chap
   await expect(page.locator("#chapter-text")).toContainText(brenton.chapters[37][0]);
   const context = page.getByRole("complementary", { name: "Chapter context" });
   await expect(context).toContainText("References use World English Bible.");
+  await context.getByText("Where this chapter fits", { exact: true }).click();
   const chapterReference = context.locator('a[href^="/scriptures/orthodox/EXO/38?t=web#v"]').first();
   await expect(chapterReference).toBeVisible();
   await chapterReference.click();

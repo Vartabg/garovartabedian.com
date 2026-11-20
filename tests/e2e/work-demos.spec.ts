@@ -74,7 +74,7 @@ async function fillLandingInquiry(page: Page) {
 }
 
 test("the $100 total package links to all three working examples", async ({ page }) => {
-  await page.goto("/work");
+  await page.goto("/services");
   const menu = page.getByRole("region", { name: "All three. $100 total.", exact: true });
   await expect(menu.getByRole("article")).toHaveCount(3);
   for (const [label, href] of [
@@ -93,7 +93,7 @@ test("the $100 total package links to all three working examples", async ({ page
   await expect(page).toHaveURL(/\/work\/landing-page$/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Your books,");
   await page.getByRole("link", { name: "Back to the $100 package", exact: false }).click();
-  await expect(page).toHaveURL(/\/work#starter-menu$/);
+  await expect(page).toHaveURL(/\/services#starter-menu$/);
   await page.getByRole("region", { name: "All three. $100 total.", exact: true }).getByRole("link", { name: "Try the Excel handler demo", exact: true }).click();
   await expect(page).toHaveURL(/\/work\/excel-handler$/);
   await expect(page.getByRole("button", { name: "Try the fictional sample", exact: true })).toBeVisible();

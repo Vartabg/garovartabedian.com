@@ -93,9 +93,6 @@ export default function LensRoom({
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/jesus">Jesus Christ</Link>
-      </p>
       <h1>Who is Jesus to the world?</h1>
       <p className="lede">
         Christians worship him. Muslims honor him. Judaism does not receive him as

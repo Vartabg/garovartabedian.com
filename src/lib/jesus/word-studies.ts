@@ -10,6 +10,8 @@ export type WordStudy = {
   themeLabel: string;
   title: string;
   saying: string;
+  /** Painted scene for the front door. Alt text does not include the illustration label. */
+  picture: { src: string; alt: string };
   anchor: { book: string; chapter: number; verse: number; label: string };
   scene: string;
   parallels: StudyReference[];
@@ -40,6 +42,10 @@ export const WORD_STUDIES: WordStudy[] = [
     themeLabel: "The kingdom",
     title: "The mustard seed",
     saying: "The Kingdom of Heaven is like a grain of mustard seed.",
+    picture: {
+      src: "/jesus/words/mustard-seed.jpg",
+      alt: "An open hand holds a few tiny seeds, with a tree and birds beside a lake.",
+    },
     anchor: { book: "MAT", chapter: 13, verse: 31, label: "Matthew 13:31" },
     scene: "Matthew places this image in a sequence of lakeside parables. Jesus addresses the crowd publicly, then explains selected images to the disciples in private.",
     parallels: [
@@ -68,6 +74,10 @@ export const WORD_STUDIES: WordStudy[] = [
     themeLabel: "Prayer",
     title: "Teach us to pray",
     saying: "Our Father in heaven, may your name be kept holy.",
+    picture: {
+      src: "/jesus/words/lords-prayer.jpg",
+      alt: "A person kneels alone on a hillside above a lake.",
+    },
     anchor: { book: "MAT", chapter: 6, verse: 9, label: "Matthew 6:9" },
     scene: "In the Sermon on the Mount, the prayer follows warnings against performing devotion for an audience and against piling up empty phrases.",
     parallels: [
@@ -96,6 +106,10 @@ export const WORD_STUDIES: WordStudy[] = [
     themeLabel: "Love and mercy",
     title: "Love your enemies",
     saying: "Love your enemies, bless those who curse you.",
+    picture: {
+      src: "/jesus/words/love-enemies.jpg",
+      alt: "One man steadies a donkey that has fallen under its load while another man watches.",
+    },
     anchor: { book: "MAT", chapter: 5, verse: 44, label: "Matthew 5:44" },
     scene: "This saying closes a series in which Jesus cites familiar commands and presses beyond retaliation toward active goodwill, prayer, and undiscriminating generosity.",
     parallels: [
@@ -123,6 +137,10 @@ export const WORD_STUDIES: WordStudy[] = [
     themeLabel: "Discipleship",
     title: "Take up the cross",
     saying: "Whoever wants to come after me, let him deny himself, and take up his cross, and follow me.",
+    picture: {
+      src: "/jesus/words/take-up-cross.jpg",
+      alt: "A man carries a wooden beam on a road, following another figure who carries one ahead.",
+    },
     anchor: { book: "MRK", chapter: 8, verse: 34, label: "Mark 8:34" },
     scene: "The call comes immediately after Peter names Jesus as the Christ, Jesus predicts rejection and death, and Peter resists that path. Jesus then summons both the disciples and the crowd.",
     parallels: [
@@ -151,6 +169,10 @@ export const WORD_STUDIES: WordStudy[] = [
     themeLabel: "Identity",
     title: "Before Abraham was",
     saying: "Most certainly, I tell you, before Abraham came into existence, I am.",
+    picture: {
+      src: "/jesus/words/before-abraham.jpg",
+      alt: "A teacher speaks with a small group in a stone court.",
+    },
     anchor: { book: "JHN", chapter: 8, verse: 58, label: "John 8:58" },
     scene: "The statement ends a long temple dispute about ancestry, freedom, truth, and who can rightly claim Abraham as father. The crowd's attempt to stone Jesus shows how sharply they hear it.",
     parallels: [
@@ -179,6 +201,10 @@ export const WORD_STUDIES: WordStudy[] = [
     themeLabel: "The last night",
     title: "A new commandment",
     saying: "Just as I have loved you, you also love one another.",
+    picture: {
+      src: "/jesus/words/new-commandment.jpg",
+      alt: "In a lamplit room, one man washes another man's feet.",
+    },
     anchor: { book: "JHN", chapter: 13, verse: 34, label: "John 13:34" },
     scene: "Jesus speaks after washing the disciples' feet, identifying the betrayer, and telling the group that he is going away. The command interprets what he has just enacted.",
     parallels: [
@@ -201,6 +227,12 @@ export const WORD_STUDIES: WordStudy[] = [
     question: "What in the footwashing and farewell gives the old command its new standard?",
   },
 ];
+
+export function wordStudyFromQuery(value: string | string[] | undefined): WordStudy | null {
+  const id = Array.isArray(value) ? value[0] : value;
+  if (!id) return null;
+  return WORD_STUDIES.find((study) => study.id === id) ?? null;
+}
 
 export const WORD_STUDY_THEMES = WORD_STUDIES.map(({ theme, themeLabel }) => ({
   id: theme,

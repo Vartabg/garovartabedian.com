@@ -50,9 +50,18 @@ process.once("disconnect", interrupt);
 async function runAxe(url, colorScheme) {
   const context = await browser.newContext({ colorScheme, reducedMotion: "reduce" });
   try {
-    const page = await context.newPage();
-    await page.goto(url, { waitUntil: "networkidle", timeout: navigationTimeoutMs });
     const location = new URL(url);
+    // "#lens=engineer" audits the page with the Engineer lens on. The lens is a
+    // localStorage preference (src/lib/discovery-lens.ts), so it is set before
+    // the page's first script runs; the hash itself is not part of the page.
+    if (location.hash === "#lens=engineer") {
+      location.hash = "";
+      await context.addInitScript(() => {
+        try { localStorage.setItem("garovartabedian:lens:v1", "engineer"); } catch { /* storage blocked */ }
+      });
+    }
+    const page = await context.newPage();
+    await page.goto(location.href, { waitUntil: "networkidle", timeout: navigationTimeoutMs });
     if (location.pathname === "/jesus/parables" && location.hash === "#parable-wicked-tenants") {
       const entry = page.locator("#parable-wicked-tenants");
       await page.waitForFunction(() => document.querySelector("#parable-wicked-tenants button")?.getAttribute("aria-expanded") === "true", null, { timeout: navigationTimeoutMs });
@@ -74,8 +83,9 @@ async function runAxe(url, colorScheme) {
       await page.waitForFunction(() => document.querySelector("#parable-john-bread-of-life button")?.getAttribute("aria-expanded") === "true", null, { timeout: navigationTimeoutMs });
       await entry.getByText("I am the bread of life", { exact: false }).first().waitFor({ state: "visible", timeout: navigationTimeoutMs });
       const panels = entry.locator(".jsu-parable-account");
-      if (await panels.count() !== 2) throw new Error("Both John bread passages must be visible");
+      if (await panels.count() !== 3) throw new Error("All three John bread passages must be visible");
       await panels.nth(1).getByText("I am the bread of life", { exact: false }).first().waitFor({ state: "visible", timeout: navigationTimeoutMs });
+      await panels.nth(2).getByText("He who eats my flesh and drinks my blood has eternal life", { exact: false }).first().waitFor({ state: "visible", timeout: navigationTimeoutMs });
     }
     if (location.pathname === "/jesus/parables" && location.hash === "#parable-synoptic-lamp") {
       const entry = page.locator("#parable-synoptic-lamp");
@@ -199,7 +209,7 @@ async function auditRoute(route) {
     }
   }
   const axeFinished = performance.now();
-  const reportName = route === "/" ? "home" : route.slice(1).replaceAll("/", "-");
+  const reportName = (route === "/" ? "home" : route.startsWith("/#") ? `home${route.slice(1)}` : route.slice(1)).replaceAll("/", "-");
   try {
     const { score, passed } = await lighthouse.audit(url, join(reportsDirectory, `${reportName}.json`));
     if (!passed) failures.push(`Lighthouse ${route}: expected at least ${minimumLighthouseScore}, received ${score}`);

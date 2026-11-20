@@ -58,8 +58,12 @@ import ChapterGuide from "./ChapterGuide";
 import ChapterContext from "./ChapterContext";
 import ChapterNeighbours, { neighbourHref } from "./ChapterNeighbours";
 import FromHere from "@/app/_components/FromHere";
+import XrayTag from "@/app/_components/xray/XrayTag";
+import type { ChapterXrayTags } from "@/lib/scriptures/xray-types";
 import type { FromHereLink } from "@/lib/site/from-here";
 import UnseenRecord from "./UnseenRecord";
+import ChapterContinuation from "./ChapterContinuation";
+import type { ChapterContinuation as ChapterContinuationLink } from "@/lib/scriptures/chapter-continuation";
 import VerseText from "./VerseText";
 import VersePanel from "./VersePanel";
 import ReaderBar from "./ReaderBar";
@@ -148,6 +152,10 @@ type ReaderClientProps = {
   neighbours: ChapterNeighboursData | null;
   /** Angels & Demons records and vocabulary for this chapter, or null when the world never touches it. */
   unseen: UnseenChapter | null;
+  /** One other world that already takes this chapter up, or null. */
+  continuation: ChapterContinuationLink | null;
+  /** The Engineer lens's six tags, worded on the server from this chapter's own data. */
+  xrayTags: ChapterXrayTags;
 };
 
 /**
@@ -178,6 +186,8 @@ export default function ReaderClient({
   guideSources = [],
   neighbours,
   unseen,
+  continuation,
+  xrayTags,
 }: ReaderClientProps) {
   const router = useRouter();
   const [xref, setXref] = useState<XrefFile | null>(null);
@@ -265,6 +275,7 @@ export default function ReaderClient({
       // when the cross-references also join the two chapters.
       kind: n.xrefLinks > 0 ? `Similar wording · cross-referenced ${n.xrefLinks}×` : "Similar wording",
     })) ?? []),
+    ...(continuation ? [{ href: continuation.href, label: continuation.label, kind: continuation.where }] : []),
     ...(unseen?.entries[0] ? [{ href: unseen.entries[0].href, label: unseen.entries[0].label, kind: "In Angels & Demons" }] : []),
     ...(parallel ? [{ href: parallel.href, label: parallel.title, kind: "Parallel accounts" }] : []),
   ];
@@ -764,6 +775,7 @@ export default function ReaderClient({
         </aside>
       )}
 
+      <XrayTag {...xrayTags.text} />
       {verses && (
         <article
           id="chapter-text"
@@ -905,6 +917,7 @@ export default function ReaderClient({
           editionName={guide?.readingContextSource && canons.translations[guide.readingContextSource.translation]?.name}
         />
 
+        <XrayTag {...xrayTags.guide} />
         <ChapterGuide
           guide={guide}
           bookName={meta.name}
@@ -915,6 +928,7 @@ export default function ReaderClient({
           onToggle={setChapterGuideOpen}
         />
 
+        <XrayTag {...xrayTags.xref} />
         <div id="connections" className="scr-threads-block">
           <button
             type="button"
@@ -944,6 +958,7 @@ export default function ReaderClient({
           <span>Connect English words with Hebrew and Greek.</span>
         </nav>
 
+        <XrayTag {...xrayTags.neighbours} />
         <ChapterNeighbours
           data={neighbours}
           translation={trans}
@@ -953,6 +968,8 @@ export default function ReaderClient({
           chapter={chapter}
         />
 
+        <ChapterContinuation link={continuation} bookName={meta.name} chapter={chapter} />
+        <XrayTag {...xrayTags.unseen} />
         <UnseenRecord data={unseen} bookName={meta.name} chapter={chapter} />
 
         {parallel && (
@@ -964,6 +981,7 @@ export default function ReaderClient({
           </div>
         )}
 
+        <XrayTag {...xrayTags.original} />
         <div className="scr-neighbours scr-chapter-source">
           <h3 className="scr-neighbours-h">Source</h3>
           <p className="scr-meta">

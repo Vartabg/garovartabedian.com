@@ -4,6 +4,7 @@ import Link from "next/link";
 import { APOSTLE_PLATES } from "@/lib/apostles/plates";
 import { APOSTLE_STORIES } from "@/lib/apostles/stories";
 import type { SentData, TwelveData } from "@/lib/apostles/types";
+import { GRADE_LABEL } from "@/lib/evidence/claims";
 import ApostlesSources from "./ApostlesSources";
 
 export default function ApostlesHome({
@@ -15,13 +16,13 @@ export default function ApostlesHome({
 }) {
   const hero = APOSTLE_STORIES[0];
   const placed = sent.rays.length;
+  const andrew = data.apostles.find((apostle) => apostle.id === "andrew");
 
   return (
     <div className="ap-home">
       <header className="ap-home-hero">
         <div className="ap-home-hero-copy">
-          <p className="ap-home-eyebrow">The Apostles · Witnesses of Jesus</p>
-          <h1 className="ap-home-title" data-hand="capitals">Called. Changed. Sent.</h1>
+          <h1 className="ap-home-title">Called. Changed. Sent.</h1>
           <p className="ap-home-lede">
             They walked with Jesus. Their questions and failures remain on the
             page. Their witness carries the story onward.
@@ -99,6 +100,20 @@ export default function ApostlesHome({
           ))}
         </ol>
       </section>
+
+      {andrew && (
+        <aside className="ap-home-index" aria-labelledby="andrew-grades">
+          <h2 id="andrew-grades">Andrew</h2>
+          <p><strong>The call · {GRADE_LABEL.scripture}.</strong> {andrew.glanceCall}</p>
+          {andrew.sent[0] && (
+            <p><strong>The road · {GRADE_LABEL[andrew.sent[0].weight]}.</strong> {andrew.sent[0].claim}</p>
+          )}
+          <p><strong>The cost · {GRADE_LABEL[andrew.death.weight]}.</strong> {andrew.death.claim}</p>
+          <p>
+            <Link className="ap-home-textlink" href="/apostles/twelve#andrew">Open the record</Link>
+          </p>
+        </aside>
+      )}
 
       <section className="ap-home-index" aria-labelledby="meet-the-apostles">
         <h2 id="meet-the-apostles">Meet the apostles</h2>

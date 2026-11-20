@@ -126,7 +126,7 @@ test("search totals stay honest and browser history keeps the input synchronized
   await page.getByRole("button", { name: "Clear search" }).click();
   await expect(page).toHaveURL(/\/scriptures\/search$/);
   await expect(input).toHaveValue("");
-  await expect(page.getByText(/Search 81 books in World English Bible/)).toBeVisible();
+  await expect(page.getByText(/across \d+ books in World English Bible/)).toBeVisible();
 });
 
 test("one search separates exact words from curated related passages", async ({

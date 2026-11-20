@@ -302,9 +302,6 @@ export default function DemonsRoom({
   return (
     <>
       <EmberDrift />
-      <p className="kicker">
-        <Link href="/angels">Angels &amp; Demons</Link>
-      </p>
       <h1>The demons.</h1>
       <p className="lede">
         A name spoken from the tombs. An angel over the abyss. Princes opposing

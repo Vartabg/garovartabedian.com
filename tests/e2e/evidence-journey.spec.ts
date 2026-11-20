@@ -7,18 +7,20 @@ test("How We Know leads with one claim and reveals depth on demand", async ({
 
   const claimLab = page.locator("#claim-lab");
   const method = page.locator("#method");
-  const worldEntryLead = page.locator(".world-entry-lead");
+  const waysIn = page.getByRole("navigation", { name: "Explore how we know" }).getByRole("link");
   await expect(claimLab).toBeVisible();
+  await expect(method).toBeHidden();
+  await page.getByText("The method and the eight lenses").click();
   await expect(method).toBeVisible();
-  await expect(worldEntryLead.locator("h2")).toBeVisible();
+  await expect(waysIn).toHaveCount(4);
+  await expect(waysIn.first()).toHaveAttribute("href", "#claim-lab");
 
   const doesNotOverflow = await page.evaluate(() => {
-    const lead = document.querySelector(".world-entry-lead");
-    const h2 = lead?.querySelector("h2");
-    if (!lead || !h2) return false;
-    const leadRect = lead.getBoundingClientRect();
-    const h2Rect = h2.getBoundingClientRect();
-    return h2Rect.right <= leadRect.right + 1;
+    const copy = document.querySelector(".world-home-hero-copy");
+    const links = [...(copy?.querySelectorAll(".world-hero-actions a") ?? [])];
+    if (!copy || links.length === 0) return false;
+    const copyRect = copy.getBoundingClientRect();
+    return links.every((link) => link.getBoundingClientRect().right <= copyRect.right + 1);
   });
   expect(doesNotOverflow).toBe(true);
 

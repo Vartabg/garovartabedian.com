@@ -26,6 +26,12 @@
   --rubric: #a8232e; /* scarlet */
   --antique-gold: #c9a24a;
   --deep-gold: #6b4c12;
+  /* The Engineer lens's x-ray colour: a teal no world uses, so a tag never
+     reads as content. tests/xray-contrast.test.ts holds text at 4.5:1 and
+     the line at 3:1 against the page in both appearances. */
+  --xray: #0f5e58;
+  --xray-line: #2f8a82;
+  --xray-wash: rgba(15, 94, 88, 0.07);
   --bg: var(--vellum);
   --paper: var(--vellum);
   --surface: var(--folio);
@@ -49,8 +55,7 @@
   --plate-blend: multiply;
   --maxw: 48rem;
   /* Page frame shared by the site header, home sections, and world shells —
-     one width so chrome edges line up everywhere. Prose keeps --maxw;
-     the world-entry feature card keeps its own 68rem. */
+     one width so chrome edges line up everywhere. Prose keeps --maxw. */
   --pagew: 82rem;
   /* The hands of the record: each headline takes the letterform of the era
      its words come from (layout.tsx loads the faces). Scripture and the old
@@ -251,7 +256,7 @@ html[data-a11y-motion="reduce"] .lamp {
 }
 /* Reading and search keep a steady page luminance, including before hydration.
    The remaining glow is only a subdued decorative effect on other pages. */
-html[data-a11y-theme] body:has([data-reading-surface], .world-reading-page, .scr-search-stage, .find-root) .lamp,
+html[data-a11y-theme] body:has([data-reading-surface], .world-reading-page, .scr-search-stage, .find-dialog[open]) .lamp,
 html[data-reading-monochrome="true"] .lamp {
   display: none;
 }
@@ -317,7 +322,7 @@ html[data-a11y-contrast="high"] .versal-inline {
 }
 
 main {
-  padding: 4rem 0 5rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0 5rem;
 }
 
 @media (max-width: 640px) {
@@ -351,7 +356,7 @@ main {
   }
 
   main {
-    padding: 3rem 0 4rem;
+    padding: 1.5rem 0 4rem;
   }
 }
 
@@ -446,10 +451,6 @@ main {
   color: var(--site-nav-active);
 }
 
-.site-nav-summary-mobile {
-  display: none;
-}
-
 .site-nav-chevron {
   width: 0.42rem;
   height: 0.42rem;
@@ -465,15 +466,17 @@ main {
   transform: rotate(225deg);
 }
 
+/* The menu is one column: this page's own links, then the whole site folded
+   under "Everything else". */
 .site-nav-panel {
   position: absolute;
   z-index: 120;
   top: calc(100% + 0.65rem);
   right: 0;
   display: grid;
-  grid-template-columns: minmax(18rem, 1.65fr) repeat(3, minmax(10rem, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.25rem;
-  width: min(62rem, calc(100vw - 2rem));
+  width: min(30rem, calc(100vw - 2rem));
   max-height: min(76vh, 43rem);
   padding: 1.2rem;
   overflow-y: auto;
@@ -485,33 +488,19 @@ main {
   color: var(--site-menu-text);
 }
 
-.site-nav-panel-head {
-  grid-column: 1 / -1;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem 1.5rem;
-  padding-bottom: 0.9rem;
-  border-bottom: 1px solid var(--site-menu-line);
-}
-
-.site-nav-panel-head strong {
-  font-size: 1.05rem;
-}
-
-.site-nav-panel-head span {
-  color: var(--site-menu-muted);
-  font-size: 0.82rem;
-  text-align: right;
-}
-
-.site-nav-group :is(h2, h3),
-.site-nav-here h2 {
+/* The menu's group labels look the same on every page. Named from the
+   navigation so a page's own heading rules (the display face in a section,
+   the red italic rubric on the about and work pages) do not restyle them. */
+.site-navigation .site-nav-group :is(h2, h3),
+.site-navigation .site-nav-here h2 {
   margin: 0 0 0.65rem;
   padding: 0;
   border: 0;
   color: var(--site-menu-muted);
+  font-family: inherit;
   font-size: 0.7rem;
+  font-style: normal;
+  font-variation-settings: normal;
   font-weight: 800;
   letter-spacing: 0.13em;
   line-height: 1.3;
@@ -527,17 +516,25 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+/* The current section's pages open the menu; a long section's other pages
+   take the same layout inside "Everything else". */
+:is(.site-nav-group--section, .site-nav-group--more) .site-nav-group-links {
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+}
+
 .site-nav-group a,
 .site-nav-here a {
   display: flex;
   min-height: 2.75rem;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   gap: 0.08rem;
   padding: 0.5rem 0.6rem;
   border-radius: 2px;
   color: var(--site-menu-text);
   line-height: 1.25;
+  text-align: left;
 }
 
 .site-nav-group a:hover,
@@ -563,14 +560,8 @@ main {
   font-weight: 400;
 }
 
-/* From here: on a reading page the menu opens on what connects to the page
-   (next chapter, quoted passage, era), one column, with the whole site
-   folded under "Everything else". */
-.site-nav-panel.site-nav-panel--here {
-  grid-template-columns: minmax(0, 1fr);
-  width: min(30rem, calc(100vw - 2rem));
-}
-
+/* From here: the menu opens on what connects to the page (a reading page's
+   next steps, a section's pages, the sections from the front door). */
 .site-nav-everything {
   border-top: 1px solid var(--site-menu-line);
 }
@@ -578,10 +569,40 @@ main {
 .site-nav-everything > summary {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
   min-height: 2.75rem;
   color: var(--site-menu-muted);
   font-size: 0.85rem;
   cursor: pointer;
+  list-style: none;
+}
+
+/* One chevron in every browser in place of Safari's own triangle. */
+.site-nav-everything > summary::-webkit-details-marker {
+  display: none;
+}
+
+.site-nav-fold-chevron {
+  flex: none;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin: -0.2rem 0.35rem 0 0;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 150ms ease;
+}
+
+.site-nav-everything[open] > summary .site-nav-fold-chevron {
+  margin-top: 0.15rem;
+  transform: rotate(225deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav-fold-chevron {
+    transition: none;
+  }
 }
 
 .site-nav-everything-groups {
@@ -605,10 +626,6 @@ body:has([data-from-here]) :is(.world-continuation .world-next, .vsw) {
 }
 
 @media (min-width: 761px) and (max-width: 1000px) {
-  .site-nav-panel {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   /* The direct links only fit this range at the default type. Turn on the
      dyslexic face, a larger size, or extra spacing and the row grows past the
      viewport — on an iPad at 834px the header pushed the document to 872px,
@@ -630,6 +647,7 @@ body:has([data-from-here]) :is(.world-continuation .world-next, .vsw) {
   .site-header .wrap,
   .clean .site-header .wrap {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.75rem;
     min-height: 4rem;
@@ -639,20 +657,34 @@ body:has([data-from-here]) :is(.world-continuation .world-next, .vsw) {
 
   .site-header .brand {
     min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* Let enlarged navigation take another row before it squeezes the title
+     or extends beyond the screen. This also covers the home-page header. */
+  .st-nav,
+  .site-navigation {
+    flex-wrap: wrap;
+  }
+
+  .world-brand-lockup,
+  .site-navigation {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* A long section name ("Who Owns the Word?") wraps inside its own column so
+     Find and Menu stay on the same row. The base width is in rem, so under
+     enlarged type it grows with the text and the navigation takes a second
+     row again, as above. */
+  .world-header .world-brand-lockup {
+    flex: 1 1 9rem;
   }
 
   .site-nav-direct {
     display: none;
-  }
-
-  .site-nav-summary-desktop {
-    display: none;
-  }
-
-  .site-nav-summary-mobile {
-    display: inline;
   }
 
   .site-nav-find-kbd {
@@ -669,31 +701,20 @@ body:has([data-from-here]) :is(.world-continuation .world-next, .vsw) {
   }
 
   .site-nav-panel {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: min(38rem, calc(100vw - 2rem));
     max-height: calc(100svh - 6rem);
+    overflow-wrap: anywhere;
   }
 }
 
 @media (max-width: 520px) {
   .site-nav-panel {
-    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
   }
 
-  .site-nav-panel-head {
-    display: block;
-  }
-
-  .site-nav-panel-head span {
-    display: block;
-    margin-top: 0.2rem;
-    text-align: left;
-  }
-
-  .site-nav-group--worlds .site-nav-group-links {
-    grid-template-columns: 1fr;
+  .site-nav-group--worlds .site-nav-group-links,
+  :is(.site-nav-group--section, .site-nav-group--more) .site-nav-group-links {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -701,6 +722,7 @@ body:has([data-from-here]) :is(.world-continuation .world-next, .vsw) {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
+  overflow-wrap: anywhere;
 }
 .site-footer .wrap {
   padding-top: 2rem;
@@ -962,221 +984,6 @@ html[data-a11y-theme="dark"] .release-record {
 }
 
 /* ── World wayfinding ────────────────────────────────────────── */
-.world-guide {
-  border: 1px solid var(--line);
-  border-radius: 0.5rem;
-  background:
-    linear-gradient(135deg, color-mix(in oklab, var(--accent) 7%, transparent), transparent 68%),
-    color-mix(in oklab, var(--surface) 94%, var(--bg) 6%);
-  padding: 0.9rem 1rem;
-  margin: 0 0 2rem;
-}
-.wg-breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  align-items: center;
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-.wg-breadcrumb a:hover {
-  color: var(--accent);
-}
-.wg-grid {
-  display: grid;
-  gap: 0.85rem;
-  margin-top: 0.85rem;
-}
-.wg-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-.wg-nav a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 24px;
-  border: 1px solid var(--line);
-  border-radius: 2px;
-  color: var(--muted);
-  font-size: 0.86rem;
-  font-weight: 700;
-  padding: 0.32rem 0.72rem;
-}
-.wg-nav a:hover,
-.wg-nav a[aria-current="page"] {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: color-mix(in oklab, var(--accent) 8%, transparent);
-}
-.wg-source {
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.45;
-  margin: 0;
-}
-.wg-source strong {
-  color: var(--ink);
-}
-.wg-source a {
-  color: var(--accent);
-  font-weight: 700;
-}
-.wg-source a:hover {
-  text-decoration: underline;
-}
-.wg-source-disclosure {
-  border-top: 1px solid var(--line);
-  padding-top: 0.65rem;
-}
-.wg-mobile-menu,
-.wg-worlds-link {
-  display: none;
-}
-.wg-source-disclosure summary {
-  color: var(--accent);
-  cursor: pointer;
-  font-size: 0.84rem;
-  font-weight: 700;
-}
-.wg-source-disclosure .wg-source {
-  margin-top: 0.55rem;
-}
-.world-entry {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(15rem, 0.85fr);
-  margin: 1.75rem 0 2.5rem;
-  border: 1px solid var(--line);
-  border-top: 3px solid var(--accent);
-  background: var(--surface);
-}
-.world-entry-lead {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 0;
-  padding: clamp(1.25rem, 3vw, 2rem);
-}
-.world-entry-eyebrow,
-.world-entry-paths > p {
-  margin: 0 0 0.45rem;
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: none;
-}
-.world-entry-lead h2 {
-  margin: 0;
-  border-bottom: 0;
-  font-size: clamp(1.45rem, 3vw, 2rem);
-  line-height: 1.15;
-  text-transform: none;
-  text-wrap: balance;
-  overflow-wrap: break-word;
-}
-.world-entry-note {
-  max-width: 36rem;
-  margin: 0.65rem 0 1.1rem;
-  color: var(--muted);
-  font-size: 0.98rem;
-  line-height: 1.55;
-}
-.world-entry-primary {
-  --control-radius: 2px;
-  --button-primary-bg: var(--accent);
-  --button-primary-fg: var(--accent-ink);
-  --button-primary-border: var(--accent);
-  --button-primary-hover: var(--accent-deep);
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  min-width: min(100%, 16rem);
-  min-height: 3rem;
-  margin-top: 0;
-  padding: 0.65rem 0.85rem;
-  border: 1px solid var(--accent);
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 800;
-}
-.world-entry-primary span:last-child {
-  font-size: 1.2em;
-  line-height: 1;
-}
-.world-entry-paths {
-  min-width: 0;
-  border-left: 1px solid var(--line);
-  padding: 1.25rem;
-  background: color-mix(in oklab, var(--accent) 4%, var(--surface));
-}
-.world-entry-paths ul {
-  display: grid;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.world-entry-paths li + li {
-  border-top: 1px solid var(--line);
-}
-.world-entry-path {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.3rem 0.75rem;
-  align-items: center;
-  min-height: 3.25rem;
-  padding: 0.65rem 0.25rem;
-}
-.world-entry-path > span {
-  display: grid;
-  gap: 0.08rem;
-}
-.world-entry-path strong {
-  color: var(--ink);
-  font-size: 0.95rem;
-  line-height: 1.3;
-}
-.world-entry-path small {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.35;
-}
-
-html[data-a11y-size="largest"] .world-entry-path small,
-html[data-a11y-spacing="spacious"] .world-entry-path small {
-  display: block;
-  overflow: visible;
-  -webkit-line-clamp: unset;
-}
-.world-entry-path em {
-  color: var(--accent);
-  font-size: 0.7rem;
-  font-style: normal;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.world-entry-path:hover strong {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
-}
-@media (max-width: 700px) {
-  .world-entry {
-    grid-template-columns: 1fr;
-  }
-  .world-entry-paths {
-    border-top: 1px solid var(--line);
-    border-left: 0;
-  }
-}
 .world-focus-anchor {
   scroll-margin-top: 2rem;
 }
@@ -1239,9 +1046,11 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   padding: 0.35rem 1rem 1.25rem;
 }
 .world-disclosure-content > .scr-cards:first-child,
-.world-disclosure-content > .ew-era-nav:first-child,
 .world-disclosure-content > .wd-collision:first-child {
   margin-top: 1rem;
+}
+.world-disclosure-content > :is(.an-arc, .an-named-section, .hw-claims):first-child {
+  margin-block: 0.75rem 0;
 }
 .world-disclosure--deep {
   border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
@@ -1312,8 +1121,7 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   color: var(--muted);
   margin: 0;
 }
-.source-basis-kicker,
-.source-group-kicker {
+.source-basis-kicker {
   color: var(--accent);
   font-size: 0.74rem;
   font-weight: 800;
@@ -1365,28 +1173,9 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   border-color: var(--accent);
   background: color-mix(in oklab, var(--accent) 8%, transparent);
 }
-.source-index {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1.2rem 0 2rem;
-}
-.source-index a {
-  border: 1px solid var(--line);
-  border-radius: 2px;
-  color: var(--muted);
-  font-size: 0.84rem;
-  font-weight: 800;
-  padding: 0.32rem 0.72rem;
-}
-.source-index a:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
 .source-page-grid {
-  display: grid;
-  gap: 1rem;
   margin-top: 1.5rem;
+  border-bottom: 1px solid var(--line);
 }
 .source-build-card {
   margin-top: 1rem;
@@ -1400,12 +1189,64 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   padding-bottom: 0;
   text-transform: none;
 }
+/* Each source group is a closed row that opens in place; a link to one opens it. */
 .source-group {
-  border: 1px solid var(--line);
-  border-radius: 0.5rem;
-  background: var(--surface);
-  padding: 1.1rem;
-  scroll-margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 1rem;
+}
+.source-group[open] {
+  padding-bottom: 1.4rem;
+}
+.source-group > summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 0.15rem 0.6rem;
+  align-items: center;
+  min-height: 48px;
+  padding: 0.8rem 0 0.85rem;
+  cursor: pointer;
+  list-style: none;
+}
+.source-group > summary::-webkit-details-marker {
+  display: none;
+}
+.source-group[open] > summary {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent);
+}
+.source-group-count {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.source-group-names {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.source-group[open] > summary .source-group-names {
+  display: none;
+}
+.source-group-chevron {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0 0.35rem;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: translateY(-0.12rem) rotate(45deg);
+  transition: transform 0.15s ease;
+}
+.source-group[open] > summary > .source-group-chevron {
+  transform: translateY(0.12rem) rotate(225deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .source-group-chevron {
+    transition: none;
+  }
 }
 .source-page-grid .source-group h2,
 .source-page-grid .source-group h3 {
@@ -1414,9 +1255,10 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
 .source-page-grid .source-group h2 {
   border-bottom: 0;
   color: var(--ink);
-  font-size: clamp(1.45rem, 3vw, 2rem);
+  font-size: 1.22rem;
+  line-height: 1.25;
   letter-spacing: 0;
-  margin-top: 0;
+  margin: 0;
   padding-bottom: 0;
   text-transform: none;
 }
@@ -1480,10 +1322,6 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
 }
 
 @media (min-width: 760px) {
-  .wg-grid {
-    grid-template-columns: minmax(14rem, 0.85fr) minmax(0, 1.15fr);
-    align-items: start;
-  }
 
   .source-basis {
     grid-template-columns: minmax(0, 1.05fr) minmax(13rem, 0.95fr);
@@ -1498,157 +1336,9 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
      The wrap widens and the rail takes the extra space, so the content
      column keeps its reading width. Browsers without :has() keep the
      stacked layout. ─────────────────────────────────────────────── */
-@media (min-width: 1100px) {
-  main > .wrap:has(> .world-guide--room) {
-    max-width: calc(var(--maxw) + 16.75rem);
-    display: grid;
-    grid-template-columns: 14rem minmax(0, 1fr);
-    column-gap: 2.75rem;
-  }
-  main > .wrap:has(> .world-guide--room) > * {
-    grid-column: 2;
-  }
-  main > .wrap:has(> .world-guide--room) > .world-guide {
-    grid-column: 1;
-    grid-row: 1 / span 40;
-    align-self: start;
-    position: sticky;
-    top: 1.25rem;
-    margin-bottom: 0;
-    max-height: calc(100vh - 2.5rem);
-    overflow-y: auto;
-    scrollbar-width: thin;
-  }
-  main > .wrap:has(> .world-guide--room) .wg-grid {
-    grid-template-columns: 1fr;
-  }
-  main > .wrap:has(> .world-guide--room) .wg-nav {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.3rem;
-  }
-  main > .wrap:has(> .world-guide--room) .wg-nav a {
-    border-color: transparent;
-    border-radius: 0.4rem;
-    padding: 0.34rem 0.6rem;
-  }
-}
 
 @media (max-width: 560px) {
-  .world-guide {
-    position: sticky;
-    z-index: 35;
-    top: max(0.45rem, env(safe-area-inset-top));
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 0.45rem;
-    padding: 0.4rem;
-    margin-bottom: 1.25rem;
-    box-shadow: 0 8px 22px color-mix(in srgb, var(--ink) 14%, transparent);
-  }
 
-  .wg-breadcrumb,
-  .wg-grid {
-    display: none;
-  }
-
-  .wg-mobile-menu,
-  .wg-worlds-link {
-    display: block;
-  }
-
-  .wg-mobile-menu {
-    min-width: 0;
-  }
-
-  .wg-mobile-menu summary {
-    display: grid;
-    align-content: center;
-    min-height: 2.75rem;
-    padding: 0.3rem 0.7rem;
-    border: 1px solid var(--line);
-    background: color-mix(in oklab, var(--accent) 6%, var(--surface));
-    cursor: pointer;
-    list-style: none;
-  }
-
-  .wg-mobile-menu summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .wg-mobile-menu summary span {
-    color: var(--muted);
-    font-size: 0.63rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    line-height: 1.1;
-    text-transform: uppercase;
-  }
-
-  .wg-mobile-menu summary strong {
-    overflow: hidden;
-    color: var(--ink);
-    font-size: 0.9rem;
-    line-height: 1.25;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .wg-mobile-menu[open] {
-    max-height: calc(100dvh - 1rem - env(safe-area-inset-top));
-    overflow-y: auto;
-    overscroll-behavior: contain;
-  }
-
-  .wg-mobile-menu > nav {
-    display: grid;
-    margin-top: 0.4rem;
-    border: 1px solid var(--line);
-    background: var(--surface);
-  }
-
-  .wg-mobile-menu > nav a {
-    display: flex;
-    align-items: center;
-    min-height: 2.75rem;
-    padding: 0.45rem 0.7rem;
-    border-bottom: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.88rem;
-    font-weight: 700;
-  }
-
-  .wg-mobile-menu > nav a:last-child {
-    border-bottom: 0;
-  }
-
-  .wg-mobile-menu > nav a[aria-current="page"] {
-    color: var(--accent);
-    background: color-mix(in oklab, var(--accent) 8%, var(--surface));
-  }
-
-  .wg-mobile-menu .wg-source-disclosure {
-    margin-top: 0.4rem;
-    padding: 0.55rem 0.7rem;
-    border: 1px solid var(--line);
-    background: var(--surface);
-  }
-
-  .wg-worlds-link {
-    align-content: center;
-    min-height: 2.75rem;
-    padding: 0.4rem 0.7rem;
-    border: 1px solid var(--accent);
-    background: var(--accent);
-    color: var(--accent-ink);
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .source-index a,
   .source-basis-link {
     width: 100%;
     text-align: center;
@@ -2137,18 +1827,18 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(16rem, 34rem);
-  align-items: center;
+  align-items: start;
   gap: clamp(1.5rem, 4vw, 4rem);
   width: min(100%, var(--home-width));
   margin: 0 auto;
-  padding: clamp(2rem, 5vw, 4.5rem) 2rem clamp(2rem, 4vw, 3.5rem);
+  padding: clamp(1.5rem, 3vw, 2.25rem) 2rem clamp(2rem, 4vw, 3.5rem);
   border-top: 1px solid var(--line);
   background: var(--bg);
 }
 
 .st-frontispiece-plate {
   --plate-ar: 3 / 2;
-  align-self: center;
+  align-self: start;
 }
 
 @media (max-width: 899px) {
@@ -2223,31 +1913,112 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   margin-top: 2rem;
 }
 
-.st-front-explore {
-  display: inline-flex;
-  min-height: 2.75rem;
-  align-items: center;
-  gap: 0.65rem;
-  margin-top: clamp(1.75rem, 4vh, 3rem);
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 650;
-  letter-spacing: 0.05em;
+/* The front door's story pictures: one row that scrolls sideways inside the
+   text column, so the page itself never does. */
+.st-stories {
+  position: relative;
+  align-self: stretch;
+  min-width: 0;
+  margin-top: 1.25rem;
+}
+
+/* The site's skip link, anchored to the strip instead of the page corner. */
+.st-stories-skip:focus {
+  left: 0;
+}
+
+.st-stories-strip {
+  display: flex;
+  gap: 0.6rem;
+  /* Room for the focus ring, which the scroller would otherwise clip. */
+  margin: -0.25rem -0.25rem 0;
+  padding: 0.25rem 0.25rem 0.35rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  list-style: none;
+  /* Where the browser draws a scrollbar (desktop with a mouse), keep it a
+     thin line in the page's ink on no track, so it reads as a cue and not
+     as a bar. Phones draw their own and are unaffected. */
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--ink) 38%, transparent) transparent;
+}
+
+/* Safari before 18.2 has no scrollbar-width; this is its equivalent. */
+@supports not (scrollbar-width: thin) {
+  .st-stories-strip::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .st-stories-strip::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .st-stories-strip::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: color-mix(in oklab, var(--ink) 38%, transparent);
+  }
+}
+
+.st-stories-strip li {
+  flex: none;
+  width: 6.2rem;
+}
+
+.st-stories-strip a {
+  display: block;
+  color: var(--ink);
   text-decoration: none;
 }
 
-.st-front-explore span {
-  color: var(--home-gold);
-  font-size: 1rem;
-  transition: transform 160ms ease;
+.st-stories-picture {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background: color-mix(in oklab, var(--ink) 12%, transparent);
 }
 
-.st-front-explore:hover {
+.st-stories-picture img {
+  object-fit: cover;
+}
+
+.st-stories-title {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.st-stories-strip a:is(:hover, :focus-visible) .st-stories-title {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.st-stories-all {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
   color: var(--ink);
+  font-size: 0.95rem;
+  text-underline-offset: 0.3em;
 }
 
-.st-front-explore:hover span {
-  transform: translateY(3px);
+@media (max-width: 899px) {
+  /* One column: the pictures run to the screen's right edge (the hero's side
+     padding is 2rem), so three show whole and a fourth shows its edge. */
+  .st-front .st-stories {
+    margin-right: -2rem;
+  }
+
+  /* The list already ends at the screen edge here; its own outward margin
+     would push the page 4px wider than the screen. */
+  .st-front .st-stories-strip {
+    margin-right: 0;
+    padding-right: 0;
+  }
 }
 
 /* ── The sunlit leaf (SunlitLeaf.tsx) ──────────────────────────────
@@ -2385,7 +2156,7 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   background: var(--sky-halo);
 }
 
-.story.is-lit :is(.st-front-text, .st-builder, .st-label, .st-sky, .st-front-explore, .st-nav-links a) {
+.story.is-lit :is(.st-front-text, .st-builder, .st-label, .st-sky, .st-stories-title, .st-stories-all, .st-nav-links > .site-nav-direct > a) {
   text-shadow:
     0 0 12px var(--sky-halo),
     0 0 2px var(--sky-halo);
@@ -2515,9 +2286,11 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  overflow-wrap: anywhere;
 }
 .st-rail-title {
   width: fit-content;
+  max-width: 100%;
   color: var(--home-white);
   font-family: var(--font-display);
   font-size: clamp(1.4rem, 2.6vw, 2rem);
@@ -2679,10 +2452,6 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
     flex: 1 1 10rem;
   }
 
-  .st-front-explore {
-    margin-top: 1.6rem;
-  }
-
   .st-worlds-heading h2 {
     font-size: clamp(2.5rem, 12vw, 3.6rem);
   }
@@ -2717,7 +2486,6 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   .st-home-mark,
   .st-intro-primary,
   .st-intro-secondary,
-  .st-front-explore span,
   .st-rail-go {
     transition: none;
   }
@@ -2725,7 +2493,6 @@ html[data-a11y-spacing="spacious"] .world-entry-path small {
   .st-home-mark:hover,
   .st-intro-primary:hover,
   .st-intro-secondary:hover,
-  .st-front-explore:hover span,
   .st-rail-row:hover .st-rail-go {
     transform: none;
   }
@@ -2799,16 +2566,16 @@ html[data-a11y-font="system"] .v-root.v-story {
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.16);
   animation: vsw-in 0.6s 0.4s both;
 }
-:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word) {
+:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word, .world-evidence) {
   --world-dock-clearance: calc(5.25rem + env(safe-area-inset-bottom));
 }
-:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word) main {
+:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word, .world-evidence) main {
   padding-bottom: calc(5rem + var(--world-dock-clearance));
 }
-:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word) .site-footer .wrap {
+:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word, .world-evidence) .site-footer .wrap {
   padding-bottom: calc(2rem + var(--world-dock-clearance));
 }
-:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word):has(.vsw[data-world-switcher="true"]) {
+:where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word, .world-evidence):has(.vsw[data-world-switcher="true"]) {
   --world-dock-clearance: 0rem;
 }
 @keyframes vsw-in {
@@ -3063,7 +2830,7 @@ html[data-a11y-font="system"] .v-root.v-story {
     bottom: calc(100% + 0.36rem);
     line-height: 1.25;
   }
-  :where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word) main {
+  :where(.world-scr, .world-jesus, .world-apostles, .world-early, .world-church, .world-angels, .world-word, .world-evidence) main {
     padding-bottom: calc(4rem + var(--world-dock-clearance));
   }
 }
@@ -3073,43 +2840,7 @@ html[data-a11y-font="system"] .v-root.v-story {
     --tap-target: var(--control-target-coarse);
   }
 
-  :where(
-    .st-nav-links a,
-    .site-nav-find,
-    .wg-nav a,
-    .a11y-close,
-    .a11y-size-options button,
-    .scr-btn,
-    .scr-bar button,
-    .scr-bar a,
-    .scr-sheet button,
-    .scr-sheet select,
-    .scr-toolbar select,
-    .scr-topic-bars button,
-    .scr-topics-az button,
-    .ap-section-links a,
-    .ch-section-links a,
-    .ap-dive-controls button,
-    .ch-dive-controls button,
-    .ew-catalog-eras button,
-    .hw-claim-filters button,
-    .jsu-word-bar,
-    .jsu-map-view-switch button,
-    .jsu-terrain-modes button,
-    .jsu-terrain-reset,
-    .jsu-terrain-era-nav button,
-    .jsu-journey-console button,
-    .jsu-map-event-card button,
-    .jsu-terrain-map .maplibregl-ctrl-group button,
-    .jsu-terrain-map .maplibregl-ctrl-attrib-button,
-    .orig-line-toggle,
-    .scr-ask-clear,
-    .word-search-clear,
-    .scr-original-token button,
-    .scr-word-inspector-head button,
-    .vsw-coach-x,
-    .vsw-opt
-  ) {
+  :where(.st-nav-links > .site-nav-direct > a, .site-nav-find, .a11y-close, .a11y-size-options button, .scr-btn, .scr-bar button, .scr-bar a, .scr-sheet button, .scr-sheet select, .scr-toolbar select, .scr-topics-az button, .ap-section-links a, .ch-section-links a, .ap-dive-controls button, .ch-dive-controls button, .ew-catalog-eras button, .hw-claim-filters button, .jsu-word-bar, .jsu-map-view-switch button, .jsu-terrain-modes button, .jsu-terrain-reset, .jsu-terrain-era-nav button, .jsu-journey-console button, .jsu-map-event-card button, .jsu-terrain-map .maplibregl-ctrl-group button, .jsu-terrain-map .maplibregl-ctrl-attrib-button, .orig-line-toggle, .scr-ask-clear, .word-search-clear, .scr-original-token button, .scr-word-inspector-head button, .vsw-coach-x, .vsw-opt) {
     display: inline-flex;
     align-items: center;
     min-height: var(--tap-target) !important;
@@ -3230,14 +2961,15 @@ html[data-a11y-motion="reduce"] :is(.write-in, .wheel) { animation: none; }
 .world-word,
 .world-church,
 .world-angels,
+.world-evidence,
 .clean {
   --font-display: var(--font-fraunces), var(--font-reading);
 }
-html[data-a11y-font="dyslexic"] :is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .clean),
-html[data-a11y-font="system"] :is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .clean) {
+html[data-a11y-font="dyslexic"] :is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .world-evidence, .clean),
+html[data-a11y-font="system"] :is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .world-evidence, .clean) {
   --font-display: var(--font-reading);
 }
-:is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .clean)
+:is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .world-evidence, .clean)
   :is(h1, h2, h3) {
   font-family: var(--font-display);
   font-variation-settings: var(--display-tune);
@@ -3260,7 +2992,7 @@ html[data-a11y-font="system"] :is(.world-scr, .world-jesus, .world-apostles, .wo
 }
 /* The ancient voice: scripture and the old texts read in Cardo, the
    Scripture face — you can see where the old words begin. */
-:is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels)
+:is(.world-scr, .world-jesus, .world-apostles, .world-early, .world-word, .world-church, .world-angels, .world-evidence)
   :is(.scr-verse, .ew-section p, .jsu-quote, blockquote) {
   font-family: var(--font-scripture);
   font-variation-settings: normal;

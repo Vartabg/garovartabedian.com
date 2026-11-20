@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/app/_components/Button";
 import CleanChrome from "../_components/CleanChrome";
+import HashDisclosureOpener from "../_components/HashDisclosureOpener";
 import { SOURCE_GROUPS } from "@/lib/source-guidance";
 import { WORLD_GUIDES } from "@/lib/world-guidance";
 
@@ -41,7 +42,6 @@ export default function SourcesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <p className="kicker">Sources</p>
       <h1>What this site is built from.</h1>
       <p className="lede">
         This is the audit trail for the eight research worlds. The individual
@@ -55,23 +55,26 @@ export default function SourcesPage() {
         single-source records are labeled rather than presented as settled.
       </p>
 
-      <nav className="source-index" aria-label="Source sections">
-        {SOURCE_GROUPS.map((group) => (
-          <a key={group.id} href={`#${group.id}`}>
-            {group.title}
-          </a>
-        ))}
-      </nav>
-
+      <HashDisclosureOpener />
       <div className="source-page-grid">
         {SOURCE_GROUPS.map((group) => {
           const world = Object.values(WORLD_GUIDES).find(
             (guide) => guide.source.href === `/sources#${group.id}`,
           );
           return (
-            <section className="source-group" id={group.id} key={group.id}>
-              <p className="source-group-kicker">Source group</p>
-              <h2>{group.title}</h2>
+            <details className="source-group" id={group.id} key={group.id}>
+              <summary>
+                <h2>{group.title}</h2>
+                <span className="source-group-count">
+                  {group.links.length}
+                  <span className="sr-fallback"> records</span>
+                </span>
+                <span className="source-group-chevron" aria-hidden="true" />
+                <span className="source-group-names">
+                  {group.links.slice(0, 3).map((link) => link.label).join(", ")}
+                  {group.links.length > 3 ? "…" : ""}
+                </span>
+              </summary>
               <p>{group.summary}</p>
               {world && (
                 <p className="source-world-link">
@@ -104,7 +107,7 @@ export default function SourcesPage() {
                   </li>
                 ))}
               </ul>
-            </section>
+            </details>
           );
         })}
       </div>

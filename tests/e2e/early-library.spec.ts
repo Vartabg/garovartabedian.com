@@ -6,13 +6,44 @@ for (const width of [390, 1280]) {
     test("focused Gnostic collection exposes six readers with distinct witnesses", async ({ page }) => {
       await page.goto("/early/library?group=gnostic");
       await expect(page.getByRole("heading", { name: "Gnostic writings", exact: true })).toBeVisible();
-      await expect(page.locator(".scr-card")).toHaveCount(6);
-      await page.getByRole("link", { name: /Read edition The Secret Book of John/ }).click();
+      await expect(page.locator("#collection-gnostic[open] > .ew-shelf-rows > li")).toHaveCount(6);
+      await expect(page.locator(".ew-shelf[open]")).toHaveCount(1);
+      await page.getByRole("link", { name: /^The Secret Book of John/ }).click();
       await expect(page.locator("article")).toContainText("Samuel Zinner");
       await page.getByRole("link", { name: "Chapter 1 — Berlin Codex", exact: true }).click();
       await expect(page).toHaveURL(/chapter-1-berlin-codex$/);
       await expect(page.locator(".ew-section")).toContainText("John");
       await expect(page.getByRole("heading", { name: "Cite this section" })).toBeVisible();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBeTruthy();
+    });
+    test("the library opens on closed shelves, a shelf opens to short rows, and the find box filters in place", async ({ page }) => {
+      await page.goto("/early/library");
+      await expect(page.locator(".ew-shelf")).toHaveCount(7);
+      await expect(page.locator(".ew-shelf[open]")).toHaveCount(0);
+      await expect(page.locator(".ew-shelf > summary").first()).toBeInViewport({ ratio: 1 });
+      // Closed, the whole list of shelves ends within two screens.
+      expect(await page.locator(".ew-shelves").evaluate(el => el.getBoundingClientRect().bottom + window.scrollY)).toBeLessThan(2 * 900);
+
+      await page.locator("#collection-historical > summary").click();
+      await expect(page.locator("#collection-historical > .ew-shelf-rows > li")).toHaveCount(4);
+      const philo = page.locator("#collection-historical .ew-shelf-author").filter({ hasText: "Philo" });
+      await expect(philo.locator("summary")).toContainText("45 entries · C. D. Yonge (1854–1855)");
+      await philo.locator("summary").click();
+      await expect(philo.locator(".ew-shelf-rows--in > li")).toHaveCount(45);
+      await expect(philo.getByRole("link", { name: "On the Creation", exact: true })).toHaveAttribute("href", "/early/library/philo-01");
+
+      await page.getByLabel("Find a writing").fill("clem");
+      await expect(page.locator(".ew-shelf-results .ew-shelf-row")).toHaveCount(4);
+      await expect(page.locator(".ew-shelves")).toBeHidden();
+      await expect(page).toHaveURL(/\/early\/library\?q=clem$/);
+      await page.getByRole("link", { name: "Show all shelves" }).click();
+      await expect(page.locator(".ew-shelf-results")).toHaveCount(0);
+      await expect(page.locator("#collection-historical")).toHaveAttribute("open", "");
+      await expect(page).toHaveURL(/\/early\/library$/);
+
+      await page.goto("/early/library#collection-fathers");
+      await expect(page.locator("#collection-fathers")).toHaveAttribute("open", "");
+      await expect(page.locator("#collection-fathers > summary")).toBeInViewport();
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBeTruthy();
     });
     test("complete letter, old citation, long work and source-only edition", async ({ page }) => {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { bookName, passageHref, readSpan } from "@/lib/scriptures/story-text";
+import { storyPassageLinks } from "@/lib/scriptures/story-deeper";
 import { storyStops, type ScriptureStory, type StoryStop } from "@/lib/scriptures/stories";
 import ReadingSurface from "../../_components/reading/ReadingSurface";
 import { STORY_ILLUSTRATION_ALTS } from "./story-illustrations";
@@ -13,14 +14,9 @@ function stopId(slug: string, id: string) {
 }
 
 export default function StoryReading({ story }: { story: ScriptureStory }) {
-  const chapters = Array.from(
-    { length: story.toChapter - story.fromChapter + 1 },
-    (_, index) => story.fromChapter + index,
-  );
   const placed = story.moves.flatMap((move) => move.stops.map((stop) => ({ move, stop })));
   const stops = storyStops(story);
   const points = stops.map((stop) => `${stop.place.x},${stop.place.y}`).join(" ");
-  const name = bookName(story.book);
   const rules = stops.map((stop) => `.scr-walk:has(#${stopId(story.slug, stop.id)}:checked) .scr-stop--${stop.id}{display:block}`).join("");
 
   return (
@@ -66,16 +62,18 @@ export default function StoryReading({ story }: { story: ScriptureStory }) {
         </div>
       </fieldset>
 
-      <details className="scr-story-chapters">
-        <summary>Read the chapters in order</summary>
-        <ol>
-          {chapters.map((chapter) => (
-            <li key={chapter}>
-              <Link href={passageHref(story.book, chapter, 1)}>{name} {chapter}</Link>
+      <nav className="scr-story-more" aria-label="More on this story">
+        <ul>
+          {storyPassageLinks(story).map((link) => (
+            <li key={link.id}>
+              <Link href={link.href}>
+                <span>{link.label}</span>
+                <span aria-hidden="true">→</span>
+              </Link>
             </li>
           ))}
-        </ol>
-      </details>
+        </ul>
+      </nav>
     </ReadingSurface>
   );
 }

@@ -69,7 +69,7 @@ export default async function TraditionDossierPage({
   };
 
   return (
-    <div className="hw-dossier-container" style={{ maxWidth: "58rem", margin: "0 auto", padding: "2rem 1.5rem 5rem" }}>
+    <div className="hw-dossier-container" style={{ maxWidth: "58rem", margin: "0 auto", padding: "0 1.5rem 5rem" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -79,7 +79,7 @@ export default async function TraditionDossierPage({
         <p className="hw-kicker">
           <Link href="/evidence/frameworks">← The Afterlife Atlas</Link> · {familyLabel}
         </p>
-        <h1 style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", margin: "0.25rem 0 0.5rem", letterSpacing: "-0.02em" }}>
+        <h1 style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", margin: "0 0 0.5rem", letterSpacing: "-0.02em" }}>
           {belief.name}
         </h1>
         <p style={{ color: "var(--muted)", fontSize: "0.95rem", margin: 0 }}>

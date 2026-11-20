@@ -118,6 +118,7 @@ export default function TheGateOpenedPage() {
       </section>
 
       <StorySource
+        current="the-gate-opened"
         reference="Acts 12:5–11"
         chapterHref={CHAPTER}
         verses={acts.chapters[11].slice(4, 11)}

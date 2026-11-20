@@ -106,9 +106,6 @@ export default function FreeRoom({ data }: { data: FreeChainView }) {
 
   return (
     <>
-      <p className="kicker">
-        <Link href="/word">Who Owns the Word?</Link>
-      </p>
       <h1>The free way, checked.</h1>
       <p className="lede">{data.intro}</p>
 
