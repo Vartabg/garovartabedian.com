@@ -289,7 +289,8 @@ export function collectCorpusHealth() {
           status: guides.files === chapterSlots ? "complete" : "incomplete",
           guides: guides.files,
           chapterSlots,
-          scope: "one guide for every hosted union book/chapter slot",
+          scope:
+            "published guides counted against every hosted union book/chapter slot; a chapter without one shows no guide",
         },
         referencesAndQuotations: {
           status: "automated",

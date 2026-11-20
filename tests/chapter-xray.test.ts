@@ -16,7 +16,7 @@ const xrefFile = JSON.parse(readFileSync("public/scriptures/xref/MRK.json", "utf
 const bridgeFile = JSON.parse(readFileSync("public/scriptures/bridge/MRK/4.json", "utf8"));
 const bridgeIndex = JSON.parse(readFileSync("public/scriptures/bridge/index.json", "utf8"));
 
-const guides = { files: 1586, agentReviewed: 737, humanReviewed: 0, untracked: 849, batchTemplate: 829 };
+const guides = { files: 757, chapterSlots: 1586, agentReviewed: 737, humanReviewed: 0, untracked: 20, batchTemplate: 0 };
 const context = {
   translationName: "World English Bible",
   bookId: "MRK",
@@ -62,6 +62,7 @@ test("Mark 4's x-ray matches its own files", async () => {
   assert.ok(tags.original.facts.some((fact) => fact.includes("691 links, 615 supported, 39 other, 37 need review")));
   assert.ok(tags.original.facts.some((fact) => fact.startsWith("39 of 41 verses drafted by AI models")));
   assert.ok(tags.guide.facts.includes("0 human-reviewed guides on the site"));
+  assert.equal(tags.guide.detail[0], "Site-wide: 757 of 1,586 chapters have a guide; 737 agent-reviewed, 0 human-reviewed, 20 untracked.");
   assert.ok(tags.neighbours.facts.includes("Matthew 13 shares 50 cross-references"));
   assert.ok(tags.unseen.facts.includes("1 lexicon term in the original text"));
   // Nothing in a tag is a path or a URL.

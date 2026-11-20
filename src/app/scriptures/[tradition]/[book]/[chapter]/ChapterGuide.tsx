@@ -34,24 +34,9 @@ export default function ChapterGuide({ guide, bookName, chapter, baseHref, open:
     if (controlledOpen === undefined) setInternalOpen(resolved);
   };
 
-  if (!guide) {
-    return (
-      <div className="scr-guide scr-guide--empty">
-        <div className="scr-guide-head">
-          <strong>Cheat Sheet — {bookName} {chapter}</strong>
-          <span className="scr-guide-badge">not published</span>
-        </div>
-        <p className="scr-guide-empty">
-          No expanded chapter guide has been published here. Read the chapter itself, use the
-          cross-references and Threads view below, or return to the book overview for the larger
-          setting.
-        </p>
-        <p className="scr-guide-source">
-          <Link href={baseHref}>Book overview</Link> · <Link href="/sources">Sources</Link>
-        </p>
-      </div>
-    );
-  }
+  // A chapter without a published guide shows nothing here. The Engineer lens
+  // tag above this component says so.
+  if (!guide) return null;
 
   const toggleQ = (id: string) =>
     setOpenQs((prev) => ({ ...prev, [id]: !prev[id] }));

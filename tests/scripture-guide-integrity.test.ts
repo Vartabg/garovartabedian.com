@@ -3,6 +3,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import type { BookText, Canons, ChapterGuide } from "../src/lib/scriptures/types";
+import { hasTemplateSignature } from "../scripts/scriptures/guide-validation.mjs";
 
 const GUIDES_ROOT = "public/scriptures/guides";
 const TEXT_ROOT = "public/scriptures/text";
@@ -199,16 +200,37 @@ test("every Scripture guide resolves its references and quotes one hosted transl
   assert.deepEqual(failures.sort(), []);
 });
 
-test("every hosted WEB chapter has exactly one guide", () => {
-  const failures: string[] = [];
-  const webRoot = path.join(TEXT_ROOT, "web");
+const guideFiles = (): { book: string; file: string }[] =>
+  readdirSync(GUIDES_ROOT, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .flatMap((entry) =>
+      readdirSync(path.join(GUIDES_ROOT, entry.name))
+        .filter((name) => name.endsWith(".json"))
+        .map((file) => ({ book: entry.name, file })),
+    );
 
-  for (const file of readdirSync(webRoot).filter((name) => name.endsWith(".json"))) {
-    const book = file.replace(/\.json$/, "");
-    const text = readJson<BookText>(path.join(webRoot, file));
-    for (let chapter = 1; chapter <= text.chapters.length; chapter += 1) {
-      const guide = path.join(GUIDES_ROOT, book, `${chapter}.json`);
-      if (!existsSync(guide)) failures.push(`${book}/${chapter}.json is missing`);
+// A chapter may have no guide. What ships must be a finished one: the v1
+// batch-template files were removed on 2026-11-19 and must not come back.
+test("no published guide carries the batch-template signature", () => {
+  const failures = guideFiles()
+    .filter(({ book, file }) =>
+      hasTemplateSignature(readJson<ChapterGuide>(path.join(GUIDES_ROOT, book, file))),
+    )
+    .map(({ book, file }) => `${book}/${file} is a batch-template guide`);
+
+  assert.deepEqual(failures, []);
+});
+
+test("every guide belongs to a chapter of a hosted text", () => {
+  const failures: string[] = [];
+
+  for (const { book, file } of guideFiles()) {
+    const chapter = Number.parseInt(file.replace(/\.json$/, ""), 10);
+    const chapterCounts = hostedTextsFor(book).map(({ text }) => text.chapters.length);
+    if (chapterCounts.length === 0) {
+      failures.push(`${book}/${file}: no hosted translation of ${book}`);
+    } else if (!(chapter >= 1 && chapter <= Math.max(...chapterCounts))) {
+      failures.push(`${book}/${file}: no hosted chapter ${chapter}`);
     }
   }
 

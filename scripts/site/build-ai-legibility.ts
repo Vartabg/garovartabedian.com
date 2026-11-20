@@ -190,7 +190,7 @@ ${EARLY_TEXTS.map(
 - Sitemap: ${BASE}/sitemap.xml
 - Scripture chapter route: ${BASE}/scriptures/{tradition}/{BOOK}/{chapter}
 - Scripture text as JSON: ${BASE}/scriptures/text/{translation}/{BOOK}.json
-- Chapter guide as JSON: ${BASE}/scriptures/guides/{BOOK}/{chapter}.json
+- Chapter guide as JSON: ${BASE}/scriptures/guides/{BOOK}/{chapter}.json (not every chapter has one; a missing guide returns 404)
 - Early text as JSON: ${BASE}/early/texts/{id}.json
 - Abrahamic parallel matrix as JSON: ${BASE}/parallels/{id}.json
 - Parallel rights manifest as JSON: ${BASE}/parallels/rights-manifest.json

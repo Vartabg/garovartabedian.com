@@ -1445,22 +1445,6 @@
   background: var(--surface);
   overflow: hidden;
 }
-.scr-guide--empty {
-  padding: 0 1.1rem 1.1rem;
-}
-.scr-guide-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  min-height: 3rem;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid var(--line);
-}
-.scr-guide-head strong {
-  font-size: 1rem;
-  font-weight: 600;
-}
 .scr-guide-badge {
   font-size: 0.75rem;
   font-weight: 600;
@@ -1469,12 +1453,6 @@
   border-radius: 999px;
   padding: 0.2rem 0.7rem;
   white-space: nowrap;
-}
-.scr-guide-empty {
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.65;
-  margin: 1rem 0 0;
 }
 .scr-guide-toggle {
   display: flex;

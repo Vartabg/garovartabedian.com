@@ -1,38 +1,30 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readdirSync } from "node:fs";
-import path from "node:path";
-import canons from "../public/scriptures/canons.json";
 import snapshot from "../public/meta/corpus-health.json";
 import { collectCorpusHealth } from "../scripts/site/build-corpus-health.mjs";
-
-const ROOT = path.resolve(import.meta.dirname, "..");
 
 test("the public corpus-health snapshot matches the repository", () => {
   assert.deepEqual(snapshot, collectCorpusHealth());
 });
 
 test("corpus health keeps automated validation separate from editorial review", () => {
-  // Guide coverage may be incomplete only by whole unguided books (e.g. the
-  // newly hosted 1 Enoch, pending its guide batch) — never by guides
-  // disappearing from books that are in the guide program.
+  // A chapter may have no guide: the v1 batch-template files were removed on
+  // 2026-11-19, so coverage is counted per chapter. Finished guides must not
+  // disappear, and a template file must not come back.
   const coverage = snapshot.validation.guides.coverage;
   assert.ok(
     coverage.status === "complete" || coverage.status === "incomplete",
     `invalid coverage status ${coverage.status}`,
   );
-  const guidedBooks = new Set(
-    readdirSync(path.join(ROOT, "public/scriptures/guides"), { withFileTypes: true })
-      .filter((entry) => entry.isDirectory())
-      .map((entry) => entry.name),
-  );
-  const unguidedChapters = Object.entries(canons.books)
-    .filter(([bookId]) => !guidedBooks.has(bookId))
-    .reduce((sum, [, meta]) => sum + meta.chapters, 0);
+  assert.equal(coverage.guides, snapshot.corpus.guides.files);
   assert.equal(
-    coverage.chapterSlots - coverage.guides,
-    unguidedChapters,
-    "coverage gap must equal exactly the chapters of unguided books",
+    snapshot.corpus.guides.batchTemplateGuides,
+    0,
+    "no batch-template guide may ship",
+  );
+  assert.ok(
+    snapshot.corpus.guides.files >= 757,
+    "published guides must not fall below the count at template removal",
   );
   assert.equal(
     coverage.status,

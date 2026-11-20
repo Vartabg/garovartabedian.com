@@ -13,7 +13,7 @@ export type ChapterXrayContext = {
   bookNameFor: (id: string) => string;
   source: SourceRow;
   originalName: (edition: string) => string;
-  guides: { files: number; agentReviewed: number; humanReviewed: number; untracked: number; batchTemplate: number };
+  guides: { files: number; chapterSlots: number; agentReviewed: number; humanReviewed: number; untracked: number; batchTemplate: number };
 };
 
 const n = (value: number) => value.toLocaleString("en-US");
@@ -74,6 +74,8 @@ export function chapterXrayTags(xray: ChapterXray, ctx: ChapterXrayContext): Cha
   };
 
   const g = ctx.guides;
+  // Zero on real data; a test keeps template files out. Named if one returns.
+  const templateNote = g.batchTemplate > 0 ? ` ${n(g.batchTemplate)} still on the batch template.` : "";
   const guide: XrayTagSpec =
     xray.guide.kind === "published"
       ? {
@@ -86,12 +88,12 @@ export function chapterXrayTags(xray: ChapterXray, ctx: ChapterXrayContext): Cha
             `${n(g.humanReviewed)} human-reviewed guides on the site`,
           ],
           detail: [
-            `Site-wide: ${n(g.files)} guides; ${n(g.agentReviewed)} agent-reviewed, ${n(g.humanReviewed)} human-reviewed, ${n(g.untracked)} untracked; ${n(g.batchTemplate)} still on the batch template.`,
+            `Site-wide: ${n(g.files)} of ${n(g.chapterSlots)} chapters have a guide; ${n(g.agentReviewed)} agent-reviewed, ${n(g.humanReviewed)} human-reviewed, ${n(g.untracked)} untracked.${templateNote}`,
           ],
         }
       : xray.guide.kind === "template"
         ? { id: "guide", label: "Chapter guide", facts: ["A guide file exists but is still the batch template, so it is not published"], detail: [`Site-wide: ${n(g.batchTemplate)} of ${n(g.files)} guides are still on the batch template.`] }
-        : { id: "guide", label: "Chapter guide", facts: ["No guide file for this chapter"], detail: [] };
+        : { id: "guide", label: "Chapter guide", facts: ["No guide file for this chapter"], detail: [`Site-wide: ${n(g.files)} of ${n(g.chapterSlots)} chapters have a guide.`] };
 
   const neighbours: XrayTagSpec = xray.neighbours
     ? {

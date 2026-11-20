@@ -75,7 +75,7 @@ const HEALTH_FACTS = [
   {
     id: "guide-coverage",
     n: `${number.format(validation.guides.coverage.guides)} / ${number.format(validation.guides.coverage.chapterSlots)}`,
-    label: "hosted chapter slots with a guide — complete structural coverage",
+    label: "hosted chapter slots with a published guide",
   },
   {
     id: "question-citations",
@@ -88,7 +88,7 @@ const HEALTH_FACTS = [
   {
     id: "custom-guides",
     n: number.format(corpus.guides.customStructuredGuides),
-    label: `guides without the batch-template signature; ${number.format(corpus.guides.batchTemplateGuides)} retain it, and structure is not a human-review claim`,
+    label: "published guides; none carries the batch-template signature, and structure is not a human-review claim",
   },
   {
     id: "guide-v2",
@@ -98,7 +98,7 @@ const HEALTH_FACTS = [
   {
     id: "editorial-review",
     n: `${number.format(validation.guides.editorialReview.agentReviewed)} agent / ${number.format(validation.guides.editorialReview.humanReviewed)} human`,
-    label: `guides carrying an editorial review record — agent panels reviewed every non-template guide; human sign-off is tracked separately and still pending`,
+    label: `guides carrying an editorial review record — ${number.format(validation.guides.editorialReview.untracked)} published guides have none yet; human sign-off is tracked separately and still pending`,
   },
   {
     id: "book-briefings",

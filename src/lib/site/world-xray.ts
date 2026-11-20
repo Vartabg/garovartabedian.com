@@ -68,7 +68,7 @@ export function scripturesFacts(health: CorpusHealth): WorldFacts {
       plural(c.topics.count, "topic"),
     ],
     detail: [
-      `Chapter guides: ${n(c.guides.review.agentReviewed)} agent-reviewed, ${n(c.guides.review.humanReviewed)} human-reviewed, ${n(c.guides.review.untracked)} untracked; ${n(c.guides.batchTemplateGuides)} still on the batch template.`,
+      `Chapter guides: ${n(c.guides.files)} of ${n(c.books.unionChapterSlots)} chapters have one; ${n(c.guides.review.agentReviewed)} agent-reviewed, ${n(c.guides.review.humanReviewed)} human-reviewed, ${n(c.guides.review.untracked)} untracked.${c.guides.batchTemplateGuides > 0 ? ` ${n(c.guides.batchTemplateGuides)} still on the batch template.` : ""}`,
       "Editions and licenses are listed on the Sources page.",
     ],
   };

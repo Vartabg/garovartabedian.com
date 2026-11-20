@@ -82,7 +82,7 @@
 - Sitemap: https://garovartabedian.com/sitemap.xml
 - Scripture chapter route: https://garovartabedian.com/scriptures/{tradition}/{BOOK}/{chapter}
 - Scripture text as JSON: https://garovartabedian.com/scriptures/text/{translation}/{BOOK}.json
-- Chapter guide as JSON: https://garovartabedian.com/scriptures/guides/{BOOK}/{chapter}.json
+- Chapter guide as JSON: https://garovartabedian.com/scriptures/guides/{BOOK}/{chapter}.json (not every chapter has one; a missing guide returns 404)
 - Early text as JSON: https://garovartabedian.com/early/texts/{id}.json
 - Abrahamic parallel matrix as JSON: https://garovartabedian.com/parallels/{id}.json
 - Parallel rights manifest as JSON: https://garovartabedian.com/parallels/rights-manifest.json

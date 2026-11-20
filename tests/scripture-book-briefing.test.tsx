@@ -483,12 +483,9 @@ test("chapter guides return readers to the book briefing without promising unpub
       baseHref="/scriptures/protestant/LEV"
     />,
   );
-  assert.doesNotMatch(unpublishedMarkup, /being generated|check back soon/i);
-  const unpublished = JSDOM.fragment(unpublishedMarkup);
-  assert.equal(
-    unpublished.querySelector('a[href="/scriptures/protestant/LEV"]')?.textContent,
-    "Book overview",
-  );
+  // A chapter without a published guide renders nothing here, so there is
+  // nothing to promise. The chapter header already links to the book.
+  assert.equal(unpublishedMarkup, "");
 });
 
 test("guide-v2 review and provenance are visible without implying human approval", () => {
