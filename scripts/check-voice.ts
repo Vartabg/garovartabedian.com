@@ -47,6 +47,8 @@ export const PORTFOLIO_SOURCE_FILES = [
   "src/app/work/garovartabedian/page.tsx",
   "src/app/work/garovartabedian/ReleaseRecord.tsx",
   "src/app/work/garovartabedian/ReleaseRecordSection.tsx",
+  "src/app/work/garovartabedian/GuideRecord.tsx",
+  "src/app/work/garovartabedian/GuideRecordSection.tsx",
   "src/app/work/garovartabedian/opengraph-image.tsx",
   "src/app/work/jobpilot/page.tsx",
   "src/app/work/jobpilot/opengraph-image.tsx",

@@ -929,24 +929,174 @@ html[data-a11y-theme="dark"] .release-record {
     font-size: 0.72rem;
   }
 }
-.release-record-table {
+.release-record-table,
+.guide-record-table {
   margin-top: 1rem;
 }
-.release-record-table summary {
+.release-record-table summary,
+.guide-record-table summary {
   cursor: pointer;
   color: var(--accent);
 }
-.release-record-table table {
+.release-record-table table,
+.guide-record-table table {
   width: 100%;
   margin-top: 0.5rem;
   border-collapse: collapse;
   font-size: 0.85rem;
 }
-.release-record-table :is(th, td) {
+.release-record-table :is(th, td),
+.guide-record-table :is(th, td) {
   text-align: left;
   padding: 0.3rem 0.5rem 0.3rem 0;
   border-bottom: 1px solid var(--line);
   vertical-align: top;
+}
+/* Guide checks on the site case study: one mark per hosted chapter. Fill
+   shape carries the state as well as colour (solid, half, hollow). The teal
+   is the release record's "went live". */
+.guide-record {
+  --gr-pass: #14866a;
+  --gr-none: var(--muted);
+  margin: 1rem 0 0;
+}
+html[data-a11y-theme="dark"] .guide-record {
+  --gr-pass: #1d9e75;
+}
+@media (prefers-color-scheme: dark) {
+  html[data-a11y-theme="system"] .guide-record {
+    --gr-pass: #1d9e75;
+  }
+}
+.guide-record :is(.is-current, .is-earlier, .is-none) {
+  box-sizing: border-box;
+  display: block;
+  flex: none;
+  width: var(--gr-size);
+  height: var(--gr-size);
+  border-radius: 1.5px;
+}
+.guide-record .is-current {
+  background: var(--gr-pass);
+}
+.guide-record .is-earlier {
+  border: 1px solid var(--gr-pass);
+  background: linear-gradient(135deg, var(--gr-pass) 50%, transparent 50%);
+}
+.guide-record .is-none {
+  border: 1px solid var(--gr-none);
+}
+.guide-record-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.guide-record-legend span,
+.guide-record-state {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.guide-record-legend i,
+.guide-record-state i {
+  --gr-size: 0.72rem;
+}
+.guide-record-map {
+  --gr-size: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 0.5rem -4px 0;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.guide-record-map:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.guide-record-book {
+  display: contents;
+}
+.guide-record-book + .guide-record-book > i:first-child {
+  margin-left: 6px;
+}
+.guide-record-book.is-selected > i {
+  box-shadow: 0 2.5px 0 -0.5px var(--ink);
+}
+.guide-record-map i.is-on {
+  outline: 2px solid var(--ink);
+  outline-offset: 1.5px;
+  box-shadow: none;
+}
+@media (max-width: 40rem) {
+  .guide-record-map {
+    --gr-size: 7px;
+    gap: 1.5px;
+  }
+  .guide-record-book + .guide-record-book > i:first-child {
+    margin-left: 4px;
+  }
+}
+.guide-record-step {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+}
+.guide-record-step :is(button, select) {
+  min-height: 2.25rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--muted);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+}
+.guide-record-step button {
+  cursor: pointer;
+}
+.guide-record-step :is(button, select):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+/* The marks are small on a phone, so these are the comfortable route there. */
+@media (max-width: 40rem) {
+  .guide-record-step :is(button, select) {
+    min-height: 2.75rem;
+  }
+}
+.guide-record-detail {
+  min-height: 15rem;
+  margin-top: 0.75rem;
+}
+.guide-record-detail h3 {
+  margin: 0;
+}
+.guide-record-state {
+  margin: 0.35rem 0 0;
+  font-weight: 700;
+}
+.guide-record-detail ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+.guide-record-detail li {
+  overflow-wrap: anywhere;
+}
+.guide-record-detail li + li {
+  margin-top: 0.2rem;
+}
+.guide-record-note {
+  margin-top: 1rem;
+}
+.guide-record-links {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
 }
 .work-links {
   color: var(--accent) !important;

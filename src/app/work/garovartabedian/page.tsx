@@ -8,6 +8,7 @@ import {
   SITE_SOURCE_URL,
   type CaseStudyItem,
 } from "@/lib/portfolio-content";
+import GuideRecordSection from "./GuideRecordSection";
 import { readReleaseRecord } from "./release-record-data";
 import ReleaseRecordSection from "./ReleaseRecordSection";
 
@@ -116,6 +117,8 @@ export default function WorkGaroVartabedian() {
       </p>
 
       <ReleaseRecordSection record={readReleaseRecord()} />
+
+      <GuideRecordSection />
 
       <h2>What it proves</h2>
       <DetailList items={SITE_CASE_STUDY.facts} />

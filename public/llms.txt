@@ -38,6 +38,9 @@
 
 - Machine-readable corpus health, including counts, review tiers, and every
   validation gate: https://garovartabedian.com/meta/corpus-health.json
+- The same checks chapter by chapter, one row per hosted chapter: which checks
+  its guide passed, who or what reviewed it, and what drafted it:
+  https://garovartabedian.com/meta/guide-record.json
 - Source records for the hosted texts and research: https://garovartabedian.com/sources
 - Nothing on this site is generated at request time. Every dataset is built
   ahead of time and committed, so what a crawler reads is what a visitor reads.
