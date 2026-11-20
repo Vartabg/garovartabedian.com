@@ -30,7 +30,8 @@ test("the Scriptures home counts what the corpus-health snapshot counts", () => 
     `${n(c.topics.count)} topics`,
   ]);
   assert.ok(detail[0].includes(`${c.guides.review.humanReviewed} human-reviewed`));
-  assert.ok(detail[0].includes(`${c.guides.batchTemplateGuides} still on the batch template`));
+  assert.ok(detail[0].includes(`${n(c.guides.files)} of ${n(c.books.unionChapterSlots)} chapters have one`));
+  assert.equal(detail[0].includes("batch template"), c.guides.batchTemplateGuides > 0);
 });
 
 test("the Jesus home counts the life-lens index", () => {

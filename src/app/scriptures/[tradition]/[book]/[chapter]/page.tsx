@@ -123,7 +123,7 @@ export default async function ChapterPage({ params }: PageProps) {
     bookNameFor: (id) => canons.books[id]?.name ?? id,
     source: SCRIPTURE_SOURCES[trans],
     originalName: (edition) => (edition in ORIGINAL_EDITION_DISPLAY ? ORIGINAL_EDITION_DISPLAY[edition as keyof typeof ORIGINAL_EDITION_DISPLAY].name : edition),
-    guides: { files: guides.files, agentReviewed: guides.review.agentReviewed, humanReviewed: guides.review.humanReviewed, untracked: guides.review.untracked, batchTemplate: guides.batchTemplateGuides },
+    guides: { files: guides.files, chapterSlots: CORPUS_HEALTH.corpus.books.unionChapterSlots, agentReviewed: guides.review.agentReviewed, humanReviewed: guides.review.humanReviewed, untracked: guides.review.untracked, batchTemplate: guides.batchTemplateGuides },
   });
 
   return (

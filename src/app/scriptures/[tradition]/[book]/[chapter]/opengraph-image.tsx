@@ -45,7 +45,7 @@ export default async function Image({
   const keyVerse = guide?.keyVerses?.[0];
   const line = keyVerse
     ? `“${trim(keyVerse.text, 150)}” — ${meta.name} ${keyVerse.ref}`
-    : `${meta.name} has ${meta.chapters} chapters. Read the text, its cross-references, and its guide.`;
+    : `${meta.name} has ${meta.chapters} chapters. Read the text and its cross-references.`;
 
   return renderOgImage({
     kicker: "Scriptures",

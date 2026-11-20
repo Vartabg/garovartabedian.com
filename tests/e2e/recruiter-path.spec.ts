@@ -144,9 +144,8 @@ test.describe("machinery page", () => {
     expect(snapshotResponse.status()).toBe(200);
     const snapshot = await snapshotResponse.json();
     expect(snapshot.schemaVersion).toBe(1);
-    // Guide coverage may be incomplete only by whole unguided books (e.g. the
-    // newly hosted 1 Enoch, pending its guide batch) — the status must always
-    // match the underlying numbers, never drift from them.
+    // A chapter may have no guide, so coverage can be incomplete. The status
+    // must always match the underlying numbers, never drift from them.
     const coverage = snapshot.validation.guides.coverage;
     expect(["complete", "incomplete"]).toContain(coverage.status);
     expect(coverage.status).toBe(

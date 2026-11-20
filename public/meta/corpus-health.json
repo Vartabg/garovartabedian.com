@@ -43,16 +43,16 @@
       ]
     },
     "guides": {
-      "files": 1586,
-      "questions": 10970,
-      "questionsWithVerseRefs": 9122,
-      "questionsWithoutVerseRefs": 1848,
-      "batchTemplateGuides": 829,
+      "files": 757,
+      "questions": 5996,
+      "questionsWithVerseRefs": 5996,
+      "questionsWithoutVerseRefs": 0,
+      "batchTemplateGuides": 0,
       "customStructuredGuides": 757,
       "review": {
         "agentReviewed": 737,
         "humanReviewed": 0,
-        "untracked": 849
+        "untracked": 20
       },
       "v2": {
         "rubricVersion": "guide-v2",
@@ -122,10 +122,10 @@
   "validation": {
     "guides": {
       "coverage": {
-        "status": "complete",
-        "guides": 1586,
+        "status": "incomplete",
+        "guides": 757,
         "chapterSlots": 1586,
-        "scope": "one guide for every hosted union book/chapter slot"
+        "scope": "published guides counted against every hosted union book/chapter slot; a chapter without one shows no guide"
       },
       "referencesAndQuotations": {
         "status": "automated",
@@ -146,7 +146,7 @@
         "status": "in-progress",
         "agentReviewed": 737,
         "humanReviewed": 0,
-        "untracked": 849,
+        "untracked": 20,
         "note": "reviewStatus tiers: agent-reviewed (multi-pass automated-agent editorial panel; quotations and references also machine-verified) and human-reviewed (a named person signed off). Only human-reviewed implies personal approval."
       }
     }
