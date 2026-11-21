@@ -23,9 +23,10 @@ test("the public guide record matches the repository", () => {
 });
 
 test("a record of another shape stops the build", () => {
-  assert.throws(() => guideRecordFrom({ ...record, schemaVersion: 2 }), /schemaVersion 1/);
-  assert.throws(() => guideRecordFrom({ ...record, books: [] }), /schemaVersion 1/);
-  assert.throws(() => guideRecordFrom(null), /schemaVersion 1/);
+  assert.throws(() => guideRecordFrom({ ...record, schemaVersion: 1 }), /schemaVersion 2/);
+  assert.throws(() => guideRecordFrom({ ...record, rubrics: undefined }), /schemaVersion 2/);
+  assert.throws(() => guideRecordFrom({ ...record, books: [] }), /schemaVersion 2/);
+  assert.throws(() => guideRecordFrom(null), /schemaVersion 2/);
 });
 
 test("the record has one row for every hosted chapter, in order", () => {
@@ -71,7 +72,12 @@ test("the record's totals are its rows, and they tie to corpus health", () => {
     { chapters: totals.chapters, current: totals.current, earlier: totals.earlier, none: totals.none },
   );
   assert.equal(totals.chapters, health.corpus.books.unionChapterSlots);
-  assert.equal(totals.current, health.corpus.guides.v2.passing);
+  // Each current guide is counted once, under the rubric it is locked to.
+  assert.equal(totals.current, health.corpus.guides.v2.passing + health.corpus.guides.v3.passing);
+  assert.deepEqual(record.rubrics, [health.corpus.guides.v2.rubricVersion, health.corpus.guides.v3.rubricVersion]);
+  for (const [index, block] of [health.corpus.guides.v2, health.corpus.guides.v3].entries()) {
+    assert.equal(rows.filter((row) => row.state === "current" && row.rubric === index).length, block.passing, block.rubricVersion);
+  }
   assert.equal(totals.current + totals.earlier, health.corpus.guides.files);
   assert.equal(totals.agentReviewed, health.corpus.guides.review.agentReviewed);
   assert.equal(totals.humanReviewed, health.corpus.guides.review.humanReviewed);
@@ -87,6 +93,9 @@ test("a guide is on the current checks only when the rubric reports nothing", ()
         assert.equal(row.problems, 0, `${label} is current with problems`);
         assert.ok(row.verses > 0, `${label} is current without a text to check against`);
         assert.notEqual(row.drafter, null, `${label} is current without a drafting record`);
+        assert.ok(row.rubric !== null && record.rubrics[row.rubric], `${label} is current without a rubric`);
+      } else {
+        assert.equal(row.rubric, null, `${label} names a rubric it is not locked to`);
       }
       // The rubric cannot run exactly where the text it checks against lacks the chapter.
       assert.equal(row.problems === null, row.verses === 0, label);

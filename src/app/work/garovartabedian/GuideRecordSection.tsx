@@ -15,6 +15,16 @@ export default function GuideRecordSection({ record = GUIDE_RECORD }: { record?:
   const { totals } = record;
   const count = (states: string[], rows: GuideRecordData["books"][number]["chapters"]) =>
     number.format(rows.filter((row) => states.includes(row.state)).length);
+  // How many current guides are locked to each rubric, for rubrics that have any.
+  const lockedTo = record.rubrics
+    .map((name, index) => ({
+      name,
+      guides: record.books.reduce(
+        (sum, book) => sum + book.chapters.filter((row) => row.state === "current" && row.rubric === index).length,
+        0,
+      ),
+    }))
+    .filter((rubric) => rubric.guides > 0);
 
   return (
     <section aria-labelledby="guide-checks">
@@ -32,6 +42,14 @@ export default function GuideRecordSection({ record = GUIDE_RECORD }: { record?:
           {totals.humanReviewed === 0
             ? "No person has reviewed any."
             : `A person has reviewed ${number.format(totals.humanReviewed)}.`}{" "}
+          {lockedTo.length > 1
+            ? `Guides are checked against the rubric they are locked to: ${lockedTo
+                .map((rubric) => `${number.format(rubric.guides)} against ${rubric.name}`)
+                .join(" and ")}.${
+                // GUIDE_RUBRICS in scripts/scriptures/guide-validation.mjs: guide-v3 only widens guide-v2.
+                lockedTo.some((rubric) => rubric.name === "guide-v3") ? " guide-v3 has wider limits." : ""
+              } `
+            : null}
           {TEMPLATES_REMOVED}
         </p>
         <details className="guide-record-table">
@@ -60,9 +78,20 @@ export default function GuideRecordSection({ record = GUIDE_RECORD }: { record?:
           </table>
         </details>
         <p className="guide-record-links">
-          <a href={`${SITE_SOURCE_URL}/blob/main/scripts/scriptures/GUIDE_RUBRIC_V2.md`} target="_blank" rel="noopener noreferrer">
-            Read the rubric
-          </a>
+          {/* One link per rubric that has guides locked to it. */}
+          {lockedTo.length > 1 ? "Read the rubrics: " : null}
+          {lockedTo.map(({ name }, index) => (
+            <span key={name}>
+              {index > 0 ? " · " : null}
+              <a
+                href={`${SITE_SOURCE_URL}/blob/main/scripts/scriptures/${name.replace("guide-v", "GUIDE_RUBRIC_V")}.md`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {lockedTo.length > 1 ? name : "Read the rubric"}
+              </a>
+            </span>
+          ))}
           {" · "}
           <a href={`${SITE_SOURCE_URL}/blob/main/scripts/scriptures/guide-validation.mjs`} target="_blank" rel="noopener noreferrer">
             Read the checks

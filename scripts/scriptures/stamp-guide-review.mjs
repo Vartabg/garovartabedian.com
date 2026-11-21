@@ -19,6 +19,10 @@
  *     --bind-hand-authored --generated-at 2026-08-28T12:00:00.000Z \
  *     --grounding-bundle-reviewed
  *
+ * --rubric names the rubric the guide is locked to (guide-v2 or guide-v3; see
+ * GUIDE_RUBRICS). A guide already locked to one rubric cannot be restamped
+ * or re-bound under another.
+ *
  * This command can never name the model that wrote a guide.
  *
  * It used to accept `--generation-model <anything>`, which let an operator
@@ -57,7 +61,8 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { prepareTarget } from "./build-guides-v2.mjs";
 import {
-  GUIDE_RUBRIC_VERSION,
+  GUIDE_RUBRICS,
+  isSupportedRubric,
   isCanonicalIsoDate,
   isCanonicalIsoTimestamp,
   validateGuideV2,
@@ -141,16 +146,18 @@ function parseArgs(argv) {
   for (const book of args.books) {
     if (!/^[1-4]?[A-Z]+$/.test(book)) throw new Error(`Bad --books target: ${book}`);
   }
-  if (args.rubric !== null && args.rubric !== GUIDE_RUBRIC_VERSION) {
-    throw new Error(`--rubric must be ${GUIDE_RUBRIC_VERSION}`);
+  if (args.rubric !== null && !isSupportedRubric(args.rubric)) {
+    throw new Error(`--rubric must be one of ${Object.keys(GUIDE_RUBRICS).join(", ")}`);
   }
   if (args.reviewedAt !== null) {
     if (!isCanonicalIsoDate(args.reviewedAt)) {
       throw new Error("--reviewed-at must be a real ISO calendar date");
     }
   }
-  if (args.bindHandAuthored && args.rubric !== GUIDE_RUBRIC_VERSION) {
-    throw new Error("--bind-hand-authored requires --rubric guide-v2");
+  if (args.bindHandAuthored && args.rubric === null) {
+    throw new Error(
+      `--bind-hand-authored requires --rubric (one of ${Object.keys(GUIDE_RUBRICS).join(", ")})`,
+    );
   }
   if (args.generatedAt !== null && !isCanonicalIsoTimestamp(args.generatedAt)) {
     throw new Error("--generated-at must be a real canonical ISO timestamp");
@@ -301,8 +308,15 @@ function main() {
     }
 
     let strictSources = null;
-    if (args.rubric === GUIDE_RUBRIC_VERSION) {
-      const prepared = prepareTarget(book, Number(ch));
+    if (args.rubric !== null) {
+      // A guide is locked to one rubric. Naming another here would measure
+      // it against limits it was never bound to, or move its lock.
+      const lockedTo = guide.generation?.rubricVersion;
+      if (lockedTo !== undefined && lockedTo !== args.rubric) {
+        skipped.push(`${item}: locked to ${lockedTo}; --rubric ${args.rubric} cannot restamp or move it`);
+        continue;
+      }
+      const prepared = prepareTarget(book, Number(ch), { rubricVersion: args.rubric });
       if (args.bindHandAuthored) {
         // A model that actually ran left its own name here. Binding a
         // hand-authored draft may never overwrite that, or the record of which
@@ -320,7 +334,7 @@ function main() {
           attributedModel: args.attributedModel ?? HAND_AUTHORED_MODEL,
           promptHash: prepared.promptHash,
           generatedAt: new Date(args.generatedAt).toISOString(),
-          rubricVersion: GUIDE_RUBRIC_VERSION,
+          rubricVersion: args.rubric,
           method: "review-bound",
         };
       }
@@ -331,9 +345,10 @@ function main() {
         book,
         chapter: Number(ch),
         expectedPromptHash: prepared.promptHash,
+        rubricVersion: args.rubric,
       });
       if (validation.failures.length > 0) {
-        skipped.push(`${item}: v2 validation failed — ${validation.failures.join("; ")}`);
+        skipped.push(`${item}: ${args.rubric} validation failed — ${validation.failures.join("; ")}`);
         continue;
       }
       const provenance = guide.generation;
@@ -341,13 +356,13 @@ function main() {
       if (
         !provenance ||
         !(provenance.model?.trim() || provenance.attributedModel?.trim()) ||
-        provenance.rubricVersion !== GUIDE_RUBRIC_VERSION ||
+        provenance.rubricVersion !== args.rubric ||
         !["direct-generation", "review-bound"].includes(provenance.method) ||
         !isCanonicalIsoTimestamp(provenance.generatedAt) ||
         !/^[a-f0-9]{64}$/.test(provenance.promptHash ?? "") ||
         provenance.promptHash !== expectedHash
       ) {
-        skipped.push(`${item}: missing, stale, or invalid v2 generation provenance`);
+        skipped.push(`${item}: missing, stale, or invalid ${args.rubric} generation provenance`);
         continue;
       }
       strictSources = validation.matchingTranslationIds;

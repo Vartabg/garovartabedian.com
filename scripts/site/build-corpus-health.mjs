@@ -4,8 +4,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  GUIDE_RUBRIC_VERSION,
+  GUIDE_RUBRICS,
   hasTemplateSignature,
+  isSupportedRubric,
   validateGuideV2,
 } from "../scriptures/guide-validation.mjs";
 import { prepareTarget } from "../scriptures/build-guides-v2.mjs";
@@ -40,10 +41,14 @@ function collectGuideStats(canons) {
   let batchTemplateGuides = 0;
   let agentReviewed = 0;
   let humanReviewed = 0;
-  let v2Provenance = 0;
-  let v2Passing = 0;
-  let v2Failing = 0;
-  let v2Rebound = 0;
+  // One tally per supported rubric. A guide is counted under the rubric it
+  // is locked to, and checked against that rubric's limits and prompt.
+  const byRubric = Object.fromEntries(
+    Object.keys(GUIDE_RUBRICS).map((version) => [
+      version,
+      { provenance: 0, passing: 0, failing: 0, rebound: 0 },
+    ]),
+  );
 
   for (const file of guideFiles) {
     const guide = readJson(file);
@@ -56,11 +61,13 @@ function collectGuideStats(canons) {
       if ((question.verseRefs ?? []).length > 0) questionsWithVerseRefs += 1;
     }
 
-    if (guide.generation?.rubricVersion === GUIDE_RUBRIC_VERSION) {
-      v2Provenance += 1;
+    const rubricVersion = guide.generation?.rubricVersion;
+    if (isSupportedRubric(rubricVersion)) {
+      const tally = byRubric[rubricVersion];
+      tally.provenance += 1;
       const book = path.basename(path.dirname(file));
       const chapter = Number.parseInt(path.basename(file, ".json"), 10);
-      const expectedPromptHash = prepareTarget(book, chapter).promptHash;
+      const expectedPromptHash = prepareTarget(book, chapter, { rubricVersion }).promptHash;
       const validation = validateGuideV2({
         guide,
         root: ROOT,
@@ -69,9 +76,9 @@ function collectGuideStats(canons) {
         chapter,
         expectedPromptHash,
       });
-      if (validation.failures.length === 0) v2Passing += 1;
-      else v2Failing += 1;
-      if ((guide.generation.rebound ?? []).length > 0) v2Rebound += 1;
+      if (validation.failures.length === 0) tally.passing += 1;
+      else tally.failing += 1;
+      if ((guide.generation.rebound ?? []).length > 0) tally.rebound += 1;
     }
   }
 
@@ -89,13 +96,8 @@ function collectGuideStats(canons) {
       humanReviewed,
       untracked: guideFiles.length - reviewed,
     },
-    v2: {
-      rubricVersion: GUIDE_RUBRIC_VERSION,
-      provenance: v2Provenance,
-      passing: v2Passing,
-      failing: v2Failing,
-      rebound: v2Rebound,
-    },
+    v2: { rubricVersion: "guide-v2", ...byRubric["guide-v2"] },
+    v3: { rubricVersion: "guide-v3", ...byRubric["guide-v3"] },
   };
 }
 
@@ -310,6 +312,16 @@ export function collectCorpusHealth() {
           reboundNote:
             "rebound counts guides whose prompt hash was moved after a citation url/label correction to their book briefing, each carrying a validated generation.rebound record (when, who, why, previous hash, fields changed). No re-bind may cross a change to hosted text, briefing claims, cross-references, or the rubric.",
         },
+        v3Rubric: {
+          status: guides.v3.failing === 0 ? "passing" : "failing",
+          rubricVersion: guides.v3.rubricVersion,
+          guidesWithProvenance: guides.v3.provenance,
+          passing: guides.v3.passing,
+          failing: guides.v3.failing,
+          rebound: guides.v3.rebound,
+          scope:
+            "the guide-v2 checks with wider limits (up to 14 questions, 9 outline parts, 5 key verses) and no required word question; a glossary entry may be tied to verses instead of sharing a word with the chapter, and for that tie the code checks only that the reference resolves in the chapter",
+        },
         editorialReview: {
           status:
             guides.review.humanReviewed === guides.files
@@ -359,10 +371,12 @@ export function collectCorpusHealth() {
 
 export function writeCorpusHealth() {
   const health = collectCorpusHealth();
-  if (health.corpus.guides.v2.failing > 0) {
-    throw new Error(
-      `${health.corpus.guides.v2.failing} guide-v2 file(s) failed the published rubric`,
-    );
+  for (const block of [health.corpus.guides.v2, health.corpus.guides.v3]) {
+    if (block.failing > 0) {
+      throw new Error(
+        `${block.failing} ${block.rubricVersion} file(s) failed the published rubric`,
+      );
+    }
   }
   fs.mkdirSync(path.dirname(CORPUS_HEALTH_PATH), { recursive: true });
   fs.writeFileSync(
