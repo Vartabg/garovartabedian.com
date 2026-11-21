@@ -13,7 +13,7 @@ export type GuideReview = "agent" | "human" | "none";
 type Linked = { chapter: number; tradition: number | null };
 
 export type GuideChecked = Linked & {
-  /** current: passes every rule of the current rubric. earlier: passes the checks every guide must pass, and predates the rubric. */
+  /** current: locked to a supported rubric and passes every rule of it. earlier: passes the checks every guide must pass, and is locked to no rubric. */
   state: "current" | "earlier";
   keyVerses: number;
   questions: number;
@@ -27,6 +27,8 @@ export type GuideChecked = Linked & {
   rebinds: number;
   /** Rubric failure messages; null where the rubric cannot run. */
   problems: number | null;
+  /** Index into `rubrics`: the rubric a current guide is locked to. Null for an earlier one. */
+  rubric: number | null;
 };
 
 export type GuideRow = (Linked & { state: "none" }) | GuideChecked;
@@ -46,7 +48,8 @@ export type GuideTotals = {
 export type GuideRecord = {
   schemaVersion: number;
   generatedBy: string;
-  rubricVersion: string;
+  /** The supported rubrics; a current row's `rubric` indexes this. */
+  rubrics: string[];
   totals: GuideTotals;
   traditions: string[];
   reviewers: string[];
@@ -58,11 +61,13 @@ export type GuideRecord = {
  * A chapter with no guide is its tradition index alone. A guide is, in order:
  * tradition, state (1 earlier, 2 current), key verses, questions, outline
  * parts, verses, review (0 none, 1 agent, 2 human), reviewer index, review
- * date index, drafter index, rebinds, problems. A missing index or count is -1.
+ * date index, drafter index, rebinds, problems, rubric index. A missing index
+ * or count is -1.
  */
 export type PackedRow = number | number[];
 
 export type PackedGuideRecord = {
+  rubrics: string[];
   traditions: string[];
   reviewers: string[];
   drafters: GuideDrafter[];
@@ -83,6 +88,7 @@ export function packGuideRecord(record: GuideRecord): PackedGuideRecord {
     return found === -1 ? dates.push(date) - 1 : found;
   };
   return {
+    rubrics: record.rubrics,
     traditions: record.traditions,
     reviewers: record.reviewers,
     drafters: record.drafters,
@@ -106,6 +112,7 @@ export function packGuideRecord(record: GuideRecord): PackedGuideRecord {
               orMissing(row.drafter),
               row.rebinds,
               orMissing(row.problems),
+              orMissing(row.rubric),
             ],
       ),
     })),
@@ -114,7 +121,7 @@ export function packGuideRecord(record: GuideRecord): PackedGuideRecord {
 
 export function unpackRow(row: PackedRow, chapter: number, dates: string[]): GuideRow {
   if (typeof row === "number") return { chapter, state: "none", tradition: orNull(row) };
-  const [tradition, state, keyVerses, questions, outlineParts, verses, review, reviewer, date, drafter, rebinds, problems] = row;
+  const [tradition, state, keyVerses, questions, outlineParts, verses, review, reviewer, date, drafter, rebinds, problems, rubric] = row;
   return {
     chapter,
     state: state === 2 ? "current" : "earlier",
@@ -129,6 +136,7 @@ export function unpackRow(row: PackedRow, chapter: number, dates: string[]): Gui
     drafter: orNull(drafter),
     rebinds,
     problems: orNull(problems),
+    rubric: orNull(rubric),
   };
 }
 

@@ -1,0 +1,2981 @@
+{
+ "book": "MRK",
+ "readAt": "2026-11-21",
+ "readers": [
+  "muse-wonder-1.0",
+  "gemini-4-hydrogen-medium"
+ ],
+ "note": "Raw findings as each reader returned them. A finding is the reader's claim, not a verified fact; see 2026-11-21-mark-grounding-review.md for what the lead verified.",
+ "findings": [
+  {
+   "chapter": 1,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, mostly not Jewish — Mark explains Jewish customs and translates every Aramaic phrase",
+   "evidence": "bookBriefing.facts.writtenFor (\"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference...\") and bookBriefing.language.readerSignal (\"does not identify a city or prove that every reader was Gentile\") and bookBriefing.language.writtenIn (\"in several places, translated for the reader\")",
+   "problem": "The audience field drops the briefing's uncertainty, upgrades \"probably including Gentiles\" to \"mostly not Jewish,\" and overstates \"in several places\" as \"every Aramaic phrase.\""
+  },
+  {
+   "chapter": 1,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[0].def",
+   "guideText": "In ordinary Greek, the announcement of a victory or the arrival of a ruler — a herald's word, not originally a religious one.",
+   "evidence": "bookBriefing.form and bookBriefing.language (contain no Greek lexical claim about \"Gospel\" as a herald's word for a victory or ruler's arrival)",
+   "problem": "This Greek linguistic claim about the ordinary meaning of \"Gospel\" is not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 1,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "Their authority came from citing tradition — which is exactly the contrast being drawn in verse 22.",
+   "evidence": "1:22 (\"for he taught them as having authority, and not as the scribes\") and bookBriefing.cast (\"Religious teachers and legal experts\")",
+   "problem": "Neither verse 22 nor the book briefing states that the scribes' authority came from citing tradition or that this is the exact contrast being drawn."
+  },
+  {
+   "chapter": 1,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "contradiction",
+   "where": "outline[0].note",
+   "guideText": "John in the desert, quoting Isaiah, pointing past himself",
+   "evidence": "1:2-3 (\"As it is written in the prophets...\") and 1:4 (\"John came baptizing in the wilderness...\")",
+   "problem": "The hosted text attributes the quotation in verses 2-3 to the narrator citing \"the prophets,\" not to John quoting Isaiah."
+  },
+  {
+   "chapter": 1,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[6].answer",
+   "guideText": "Read from inside the book: the crowds already treat him as a miracle-worker and would happily make him a rebel king, and once that label sticks the actual mission — dying — becomes impossible to explain.",
+   "evidence": "bookBriefing.snags[1] (\"Other readers treat the secrecy as Mark's storytelling device, so this remains an interpretation rather than a settled fact.\")",
+   "problem": "The answer presents one explanation of the messianic secret as settled without noting that readers differ and treat it as an interpretation."
+  },
+  {
+   "chapter": 1,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, mostly not Jewish — Mark explains Jewish customs and translates every Aramaic phrase",
+   "evidence": "Briefing facts.writtenFor: “Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference”",
+   "problem": "The guide drops the briefing’s “likely/probably” uncertainty and turns “probably including Gentiles” into “mostly not Jewish.”"
+  },
+  {
+   "chapter": 1,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s",
+   "evidence": "Briefing facts.writtenWhen: “Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.”",
+   "problem": "The guide widens the main scholarly range back into the AD 50s without preserving the briefing’s distinction between the majority range and earlier defended dates."
+  },
+  {
+   "chapter": 1,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[0].def",
+   "guideText": "In ordinary Greek, the announcement of a victory or the arrival of a ruler — a herald's word, not originally a religious one.",
+   "evidence": "Briefing language.writtenIn: “Koine Greek”; its supplied Greek features cover εὐθύς, καί, and the historical present, with no claim about the ordinary Greek meaning of the word behind “Good News.”",
+   "problem": "This Greek lexical-history claim is stated as fact but is not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 1,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "To turn around and go a different way. It can carry regret, but the core of the word is change of direction, not feeling bad.",
+   "evidence": "Mark 1:15: “Repent, and believe in the Good News.” Briefing language features supply no Greek or Hebrew definition of “repent.”",
+   "problem": "The guide states a word-core linguistic claim about “repent” that neither the hosted chapter nor the briefing supports."
+  },
+  {
+   "chapter": 1,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "contradiction",
+   "where": "outline[0].note",
+   "guideText": "John in the desert, quoting Isaiah, pointing past himself",
+   "evidence": "Mark 1:2: “As it is written in the prophets, ‘Behold, I send my messenger before your face…’”; TSK links 1:2 to MAL 3:1 and 1:3 to ISA 40:3-5",
+   "problem": "The opening quotation is presented in the hosted text as from “the prophets” and is composite, not simply a quotation of Isaiah."
+  },
+  {
+   "chapter": 1,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "overreach",
+   "where": "questions[3].answer",
+   "guideText": "Not a place you go when you die, and not a political state. It means God's rule breaking into the present — the world starting to run the way it was meant to. 'At hand' means close enough to touch.",
+   "evidence": "Mark 1:15: “The time is fulfilled, and God’s Kingdom is at hand! Repent, and believe in the Good News.” Briefing whereYouAre: Jewish hopes “take several forms — political, national, and religious — rather than one single expectation.”",
+   "problem": "The guide gives one contested definition of the kingdom as settled fact and excludes political expectation despite the briefing’s diversity of hopes."
+  },
+  {
+   "chapter": 1,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "overreach",
+   "where": "questions[6].answer",
+   "guideText": "the crowds already treat him as a miracle-worker and would happily make him a rebel king, and once that label sticks the actual mission — dying — becomes impossible to explain",
+   "evidence": "Briefing snags on secrecy: “Other readers treat the secrecy as Mark's storytelling device, so this remains an interpretation rather than a settled fact.”",
+   "problem": "The guide presents one reading of the messianic secret, plus an invented “rebel king” motive, as the explanation without naming the briefing’s alternative reading."
+  },
+  {
+   "chapter": 2,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Non-Jewish readers who need the customs explained — note how the Sabbath dispute is spelled out",
+   "evidence": "bookBriefing.facts.writtenFor (\"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.\") and bookBriefing.language.readerSignal (\"by itself it does not identify a city or prove that every reader was Gentile.\")",
+   "problem": "The guide drops the briefing's uncertainty by stating flatly that the audience is non-Jewish readers, and wrongly cites the Sabbath dispute in Mark 2 as an explained custom rather than the handwashing customs in 7:3-4."
+  },
+  {
+   "chapter": 2,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "A Galilean village house had a flat roof of wooden beams packed with branches and dried mud, reached by an outside stair, used for sleeping and drying grain.",
+   "evidence": "Mark 2:4 (\"they removed the roof where he was. When they had broken it up, they let down the mat that the paralytic was lying on.\") and bookBriefing (no architectural details of Galilean roofs)",
+   "problem": "The guide states specific archaeological claims about Galilean house construction and roof use as fact without support from the chapter text or the book briefing."
+  },
+  {
+   "chapter": 2,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "Tax collectors in Galilee worked for Herod Antipas and, behind him, Rome — collaborating with the occupying power against their own people — and the system let them keep whatever they squeezed above the quota.",
+   "evidence": "Mark 2:14 (\"Levi the son of Alphaeus sitting at the tax office\") and bookBriefing.whereYouAre (\"Galilee is ruled by Herod Antipas under Roman power.\")",
+   "problem": "Neither the chapter text nor the book briefing supports the historical claims about how Galilean tax-collection quotas and excess profits operated."
+  },
+  {
+   "chapter": 2,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[8].answer",
+   "guideText": "Some take the Greek phrase as 'in the passage about Abiathar,' pointing to the section of scripture rather than the moment.",
+   "evidence": "Mark 2:26 (\"at the time of Abiathar the high priest\") and bookBriefing.language (no Greek analysis of 2:26)",
+   "problem": "The guide makes a linguistic claim about the Greek phrasing of Mark 2:26 that is not present in the supplied book briefing."
+  },
+  {
+   "chapter": 2,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "In everyday Aramaic the phrase can just mean 'a human being,'",
+   "evidence": "bookBriefing.snags[4] (\"\\\"Son of Man\\\" sounds like it means \\\"just a human.\\\"\") and bookBriefing.language.spokenWorld",
+   "problem": "The guide makes an Aramaic linguistic claim about the phrase \"Son of Man\" that is not supported by the supplied book briefing."
+  },
+  {
+   "chapter": 2,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[9].answer",
+   "guideText": "The phrase lets him make an enormous claim without ever using the word king — useful in a province where claiming kingship got you executed.",
+   "evidence": "bookBriefing.snags[4] (\"the phrase can carry more than one force: a human being, a suffering figure, or the Daniel 7:13 figure given authority by God. ... not every use has to mean exactly the same thing.\")",
+   "problem": "The guide treats every use of \"Son of Man\" as a calculated royal claim and supplies an ungrounded motive, flattening the range of meanings preserved in the book briefing."
+  },
+  {
+   "chapter": 2,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "contradiction",
+   "where": "summary",
+   "guideText": "Five short confrontations, back to back.",
+   "evidence": "Mark 2:1-28 and guide outline (verses 1-12, 13-17, 18-22, 23-28)",
+   "problem": "Mark 2 contains four confrontations (2:1-12, 2:15-17, 2:18-22, and 2:23-28), not five, as Levi's call in 2:13-14 involves no confrontation."
+  },
+  {
+   "chapter": 2,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Non-Jewish readers who need the customs explained — note how the Sabbath dispute is spelled out",
+   "evidence": "Book briefing, writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.\"",
+   "problem": "The guide turns a likely, inferred audience into settled non-Jewish readership and substitutes an explanatory example the briefing does not give."
+  },
+  {
+   "chapter": 2,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "Capernaum, a fishing town on the Sea of Galilee, and the grain fields around it",
+   "evidence": "Mark 2:1 names Capernaum, 2:13 says \"by the seaside,\" and 2:23 mentions grain fields; neither the chapter nor the briefing calls Capernaum a fishing town or names the Sea of Galilee.",
+   "problem": "The setting adds geographic and occupational details that the supplied sources do not state."
+  },
+  {
+   "chapter": 2,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[0].def",
+   "guideText": "Under the law it was a capital charge, which is why the accusation here is not a small one.",
+   "evidence": "Mark 2:7: \"Why does this man speak blasphemies like that? Who can forgive sins but God alone?\" The chapter and briefing do not state the legal penalty for blasphemy.",
+   "problem": "The capital-charge claim is an unsupported legal-historical detail."
+  },
+  {
+   "chapter": 2,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "keyVerses[2].why",
+   "guideText": "A principle for reading every rule in the book — the rule exists to serve people, not the reverse.",
+   "evidence": "Mark 2:27: \"The Sabbath was made for man, not man for the Sabbath.\"",
+   "problem": "The guide expands a saying specifically about the Sabbath into a principle governing every rule."
+  },
+  {
+   "chapter": 2,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "A Galilean village house had a flat roof of wooden beams packed with branches and dried mud, reached by an outside stair, used for sleeping and drying grain. You could dig through it and patch it afterward.",
+   "evidence": "Mark 2:4: \"they removed the roof where he was. When they had broken it up, they let down the mat that the paralytic was lying on.\"",
+   "problem": "The chapter and briefing provide none of these architectural or household-use details."
+  },
+  {
+   "chapter": 2,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "the system let them keep whatever they squeezed above the quota",
+   "evidence": "Mark 2:14 says Levi was \"sitting at the tax office\"; the briefing says only that Galilee was ruled by Herod Antipas under Roman power.",
+   "problem": "The quota-and-overcollection system is stated as fact without support in the chapter or briefing."
+  },
+  {
+   "chapter": 2,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "Beyond the one day the law required, devout groups fasted regularly by choice, and it marked you as serious.",
+   "evidence": "Mark 2:18: \"John’s disciples and the Pharisees were fasting\"; neither the chapter nor the briefing specifies a legally required fast day or the groups’ fasting frequency.",
+   "problem": "The legal requirement and regular devotional practice are unsupported historical claims stated as fact."
+  },
+  {
+   "chapter": 2,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "The phrase lets him make an enormous claim without ever using the word king — useful in a province where claiming kingship got you executed.",
+   "evidence": "Mark 2:10 and 2:28 use \"Son of Man\" but mention neither kingship nor execution; the briefing says the phrase can carry more than one force and that Mark makes the Daniel connection explicit at 13:26 and 14:62.",
+   "problem": "The guide invents a strategic motive and adds an unsupported historical claim about execution for claiming kingship."
+  },
+  {
+   "chapter": 3,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Non-Jewish readers — note that Mark stops to translate the nickname 'Boanerges' in verse 17",
+   "evidence": "bookBriefing.facts.writtenFor (\"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference...\") and bookBriefing.language.readerSignal (\"by itself it does not identify a city or prove that every reader was Gentile.\")",
+   "problem": "The guide states flatly that the audience was \"Non-Jewish readers,\" dropping the book briefing's explicit uncertainty that Gentile readership is an inference and not proven for every reader."
+  },
+  {
+   "chapter": 3,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "The Greek phrase covers his relatives or close associates, and the verb for what they came to do is forceful — to seize or take charge of him.",
+   "evidence": "Mark 3:21 (\"When his friends heard it, they went out to seize him; for they said, “He is insane.”\") and bookBriefing.language (contains no discussion of the Greek phrase or verb in 3:21)",
+   "problem": "The guide makes claims about the underlying Greek phrase and verb in Mark 3:21 that are not supported by the hosted chapter text or the book briefing."
+  },
+  {
+   "chapter": 3,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "contradiction",
+   "where": "questions[4].question",
+   "guideText": "Verse 21 says his family thought he was insane.",
+   "evidence": "Mark 3:21 (\"When his friends heard it, they went out to seize him; for they said, “He is insane.”\")",
+   "problem": "The guide states that verse 21 says Jesus's \"family\" thought he was insane, whereas the hosted World English Bible text of 3:21 says \"his friends.\""
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Non-Jewish readers — note that Mark stops to translate the nickname 'Boanerges' in verse 17",
+   "evidence": "Briefing writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"; readerSignal adds it does not prove every reader was Gentile.",
+   "problem": "The guide turns a likely, mixed-audience inference into exclusively non-Jewish readers and drops the briefing's uncertainty."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s",
+   "evidence": "Briefing writtenWhen: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\"",
+   "problem": "The range presents the 50s as equally in play without noting that most scholarship begins in the mid-60s and earlier dates are the defended minority."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "a hint at their temperament",
+   "evidence": "3:17 says only that James and John were called \"Boanerges, which means, Sons of Thunder\"; neither the verse nor the briefing assigns a temperament.",
+   "problem": "A character trait is inferred from the nickname and stated as its meaning-bearing hint without textual support."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[2].def",
+   "guideText": "It marks intense devotion to the law and, in this period, sympathy with armed resistance to Rome — which makes the presence of a tax collector in the same group of twelve remarkable.",
+   "evidence": "3:18 lists only \"Simon the Zealot\" among the names, with no definition of Zealot and no identification of Matthew as a tax collector in this chapter; the briefing provides neither claim.",
+   "problem": "The armed-resistance definition and the tax-collector contrast are historical claims the chapter and briefing do not support."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "outline[1].note",
+   "guideText": "People come from five regions; the unclean spirits keep announcing him and keep getting silenced",
+   "evidence": "3:7-8 lists Galilee, Judea, Jerusalem, Idumaea, beyond the Jordan, and those from around Tyre and Sidon.",
+   "problem": "The hosted text names more than five places or regions."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Healing counted as work, and the accepted position allowed it on the Sabbath only when a life was in danger.",
+   "evidence": "3:2 says only that they watched whether he would heal on the Sabbath so they might accuse him; 3:4 asks whether it is lawful to do good or harm, save life or kill. Neither the chapter nor the briefing states an accepted life-in-danger-only rule.",
+   "problem": "A specific Sabbath-law position is stated as fact without support in the chapter or briefing."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "The Pharisees were a devout renewal movement with no love for Herod's court. These two groups had little reason to cooperate on anything.",
+   "evidence": "3:6 says only that \"The Pharisees went out, and immediately conspired with the Herodians against him\"; the briefing cast describes Pharisees and scribes as religious teachers and legal experts, with no claim about their relation to Herod's court.",
+   "problem": "The alleged mutual hostility that makes the alliance remarkable is not in the chapter or briefing."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[3].answer",
+   "guideText": "Almost certainly. Israel was founded as twelve tribes, and by this period most of them had long since been scattered. Appointing exactly twelve men reads as a deliberate claim: this is Israel being restarted.",
+   "evidence": "3:14 says only \"He appointed twelve, that they might be with him, and that he might send them out to preach\"; the chapter gives no tribal explanation for the number.",
+   "problem": "The guide claims near-certainty for a symbolic reading the text does not spell out, without naming that readers may read the number differently."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "The Greek phrase covers his relatives or close associates, and the verb for what they came to do is forceful — to seize or take charge of him.",
+   "evidence": "Hosted 3:21 reads \"When his friends heard it, they went out to seize him\"; the briefing's language section gives no Greek analysis of 3:21.",
+   "problem": "A Greek lexical claim is made that neither the hosted translation nor the supplied briefing supports."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[7].answer",
+   "guideText": "It is the settled decision to name good as evil, which by its nature will not seek forgiveness. Readers across traditions have generally observed that anxiety about having committed it is itself evidence to the contrary.",
+   "evidence": "3:28-30 attaches the warning to blasphemy against the Holy Spirit \"because they said, 'He has an unclean spirit'\"; nothing in the chapter or briefing defines it as a settled decision or offers the anxiety test.",
+   "problem": "The guide preaches a definitive definition and pastoral reassurance beyond what the verses and briefing give."
+  },
+  {
+   "chapter": 3,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[8].answer",
+   "guideText": "Worth noting that Mark shows the same brothers unconvinced here, and that James, one of them, later leads the church in Jerusalem.",
+   "evidence": "3:31-32 names only \"His mother and his brothers\" and \"your mother, your brothers, and your sisters\"; no brother is named James in this chapter and no later Jerusalem leadership appears in the chapter or briefing.",
+   "problem": "The identity of a named brother and his later church role are imported without support from this chapter or the briefing."
+  },
+  {
+   "chapter": 4,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, not familiar with Galilean farming or the lake",
+   "evidence": "bookBriefing.facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.\"",
+   "problem": "The audience field drops the briefing's \"Likely\" uncertainty and adds an unsupported claim that readers were unfamiliar with Galilean farming or the lake."
+  },
+  {
+   "chapter": 4,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "The verb used for the wind in verse 39 is the same one used to silence the unclean spirit in 1:25 — the storm is addressed the way a hostile power is addressed.",
+   "evidence": "Mark 4:39 (WEB) uses \"rebuked\", while Mark 1:25 is outside the chapter and the book briefing makes no claim about a shared verb between 1:25 and 4:39.",
+   "problem": "This asserts a lexical identity between Mark 4:39 and Mark 1:25 that is not supported by the hosted chapter text or the book briefing."
+  },
+  {
+   "chapter": 4,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "keyVerses[2].why",
+   "guideText": "The verb 'rebuked' is the same one used on demons in chapter 1 — Mark is not describing a weather forecast.",
+   "evidence": "bookBriefing.snags cites 1:25 and 1:34 only for secrecy commands, and neither the chapter 4 text nor the book briefing mentions a shared Greek verb in chapter 1.",
+   "problem": "This makes a cross-chapter linguistic claim about the Greek verb in Mark 1 that neither the hosted chapter text nor the book briefing supports."
+  },
+  {
+   "chapter": 4,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "Second, the Aramaic behind 'that' can carry the sense of result rather than purpose: this is what happens, not this is the aim.",
+   "evidence": "bookBriefing.language.writtenIn: \"Koine Greek. Mark's narrative and its earliest surviving manuscripts are Greek.\" and bookBriefing.language.textualHistory: \"Every recoverable form of Mark is a Greek book.\"",
+   "problem": "This asserts an Aramaic linguistic claim behind the wording of Mark 4:12 that is not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 4,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "misquote",
+   "where": "questions[6].question",
+   "guideText": "'smaller than all the seeds on earth'",
+   "evidence": "Mark 4:31 (WEB): \"though it is less than all the seeds that are on the earth\"",
+   "problem": "The quoted phrase alters the hosted World English Bible wording (\"less than all the seeds that are on the earth\") to \"smaller than all the seeds on earth.\""
+  },
+  {
+   "chapter": 4,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "Mark uses a strong phrase — they feared a great fear —",
+   "evidence": "Mark 4:41 (WEB): \"They were greatly afraid\"",
+   "problem": "The guide cites a literalistic rendering of the underlying Greek (\"they feared a great fear\") that is neither in the hosted World English Bible text nor in the book briefing."
+  },
+  {
+   "chapter": 4,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "contradiction",
+   "where": "summary",
+   "guideText": "he stops it with two words",
+   "evidence": "Mark 4:39 (WEB): “Peace! Be still!”",
+   "problem": "The summary says Jesus stops the storm with two words, whereas the hosted World English Bible text has three words (“Peace! Be still!”)."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, not familiar with Galilean farming or the lake",
+   "evidence": "Briefing writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"",
+   "problem": "The guide turns the briefing's hedged inference into a definite claim and adds unfamiliarity with farming and the lake that the briefing does not state."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s",
+   "evidence": "Briefing writtenWhen: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\"",
+   "problem": "The guide replaces the briefing's weighted range with a broader 50s-70s range and drops the distinction between the majority range and earlier defended dates."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "The shore of the Sea of Galilee — a lake about 13 miles long, ringed by hills that funnel sudden violent winds down onto the water",
+   "evidence": "Mark 4:1: \"he entered into a boat in the sea and sat down. All the multitude were on the land by the sea.\"",
+   "problem": "Neither the chapter text nor the book briefing supports the lake's stated size or the claim that surrounding hills funnel violent winds onto it."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "The verb used for the wind in verse 39 is the same one used to silence the unclean spirit in 1:25",
+   "evidence": "Mark 4:39: \"He awoke and rebuked the wind\"; the briefing's language features and examples contain no such verb comparison with Mark 1:25.",
+   "problem": "The glossary repeats a Greek lexical-identity claim that neither the hosted chapter nor the book briefing supports."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "A freshwater lake roughly 13 miles by 7, about 700 feet below sea level, notorious for sudden squalls funnelled down from the surrounding hills.",
+   "evidence": "Mark 4:1 and 4:37 mention the sea and a \"big wind storm\" but provide no dimensions, elevation, or funneling explanation, and the briefing supplies none.",
+   "problem": "The glossary states specific geographical facts about the lake that are unsupported by the grounding bundle."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "keyVerses[2].why",
+   "guideText": "The verb 'rebuked' is the same one used on demons in chapter 1",
+   "evidence": "Mark 4:39: \"He awoke and rebuked the wind\"; the briefing's language section contains no claim identifying this Greek verb with the verb used in Mark 1.",
+   "problem": "This Greek lexical-identity claim is not supplied by the chapter text or the book briefing and should have been left out under the grounding rules."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "outline[5].verses",
+   "guideText": "33-41",
+   "evidence": "Mark 4:33-34: \"With many such parables he spoke the word to them... Without a parable he didn’t speak to them\"; the storm narrative begins at 4:35.",
+   "problem": "The outline labels verses 33-41 as the storm section even though verses 33-34 still concern Jesus speaking in parables."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "Seed was broadcast by hand across the whole field first and ploughed in afterward, so some inevitably landed on the footpath running through it, on the thin soil over bedrock, and at the weedy edges.",
+   "evidence": "Mark 4:3-7 describes seed falling by the road, on rocky ground, and among thorns, but gives no account of broadcast-then-ploughing practice.",
+   "problem": "The specific ancient sowing method is stated as historical fact without support from the chapter text or the book briefing."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "the Aramaic behind 'that' can carry the sense of result rather than purpose",
+   "evidence": "Briefing textualHistory: \"Every recoverable form of Mark is a Greek book\" and \"recovering any earlier Aramaic form requires a method rather than simply reversing a translation.\"",
+   "problem": "The guide asserts an Aramaic linguistic explanation behind Mark's Greek wording that the briefing does not supply and that its transmission discussion cautions against deriving this way."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "A good harvest in that agriculture returned something in the range of tenfold.",
+   "evidence": "Mark 4:8 and 4:20 give only the thirtyfold, sixtyfold, and hundredfold yields; neither the chapter nor the briefing gives a normal tenfold harvest benchmark.",
+   "problem": "The comparative historical harvest figure is stated as fact without support in the grounding bundle."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[6].answer",
+   "guideText": "The phrase was a proverbial expression for something tiny, the way we say a grain of sand, and it is comparing garden seeds a Galilean farmer would actually sow.",
+   "evidence": "Mark 4:31: \"though it is less than all the seeds that are on the earth\"; neither the chapter nor the briefing identifies the phrase as a proverb restricted to garden seeds.",
+   "problem": "The guide presents a specific linguistic and historical explanation of the mustard-seed phrase that the grounding bundle does not support."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "The Sea of Galilee sits about 700 feet below sea level in a basin ringed by hills, with ravines that channel cold air down onto warm water. Violent squalls arrive with very little warning and can drop again just as quickly.",
+   "evidence": "Mark 4:37: \"A big wind storm arose, and the waves beat into the boat\"; neither the chapter nor the briefing gives the lake's elevation, topography, or squall mechanism.",
+   "problem": "These geographical and meteorological details are stated as fact without support from the chapter text or the book briefing."
+  },
+  {
+   "chapter": 4,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "Mark uses a strong phrase — they feared a great fear",
+   "evidence": "Mark 4:41 in the hosted text: \"They were greatly afraid\"; the briefing's language section supplies no literal Greek rendering \"they feared a great fear\" for this verse.",
+   "problem": "This underlying Greek phrasing claim is not in the supplied briefing and should have been left out under the grounding rules."
+  },
+  {
+   "chapter": 5,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea — Mark translates the Aramaic 'Talitha cumi' and explains nothing about pigs, assuming his readers already keep them",
+   "evidence": "bookBriefing.facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.\"",
+   "problem": "The audience field drops the briefing's uncertainty and adds an unsupported claim that Mark assumes his readers keep pigs."
+  },
+  {
+   "chapter": 5,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "overreach",
+   "where": "keyVerses[1].why",
+   "guideText": "Notice he is not Jewish — the silence rule does not apply out here.",
+   "evidence": "Mark 5:1, 5:19-20 (names the country of the Gadarenes and Decapolis without stating the man's ethnicity)",
+   "problem": "The note states as fact that the healed man is not Jewish even though the chapter text only identifies the region and not his ethnicity."
+  },
+  {
+   "chapter": 5,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[4].answer",
+   "guideText": "It is a real and deliberate reversal, and the geography explains it. In Jewish Galilee, the title 'Messiah' carried the expectation of a warrior king, so publicity was dangerous. In the Decapolis, ten Gentile cities where nobody was waiting for a Jewish deliverer, that risk was absent.",
+   "evidence": "bookBriefing.snags[1]: \"Other readers treat the secrecy as Mark's storytelling device, so this remains an interpretation rather than a settled fact.\" and bookBriefing.whereYouAre: \"Jewish hopes for God's deliverance take several forms — political, national, and religious — rather than one single expectation.\"",
+   "problem": "The answer presents one interpretation of the secrecy motif and Jewish messianic expectation as settled fact when the briefing marks both as unsettled or varied."
+  },
+  {
+   "chapter": 5,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "overreach",
+   "where": "questions[9].answer",
+   "guideText": "Keeping the sound is the mark of a memory passed down by people who heard it. Translating it is the mark of a writer whose readers do not speak that language. Both things are true at once, and together they tell you something about how this book came to be.",
+   "evidence": "bookBriefing.sources (delgado-socioling): \"treats the preserved forms as social and literary choices rather than accidental leftovers.\"",
+   "problem": "The answer states as settled fact that preserving Aramaic phrases is a mark of eyewitness memory, whereas the briefing notes they can also be read as social and literary choices."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea — Mark translates the Aramaic 'Talitha cumi' and explains nothing about pigs, assuming his readers already keep them",
+   "evidence": "Briefing writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.\"",
+   "problem": "The guide states the audience as certain and adds an unsupported pig-keeping inference that the briefing does not make."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s",
+   "evidence": "Briefing writtenWhen: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\"",
+   "problem": "The guide widens and flattens the briefing's dating position and drops its stated scholarly centre."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.literaryForm",
+   "guideText": "Narrative, including Mark's signature sandwich — the woman's story is set inside the girl's",
+   "evidence": "Briefing form.name: \"Gospel — an ancient life-of-a-person written to persuade, not a diary or a news report\"",
+   "problem": "The guide replaces the briefing's Gospel/ancient-biography form with generic narrative."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "keyVerses[1].why",
+   "guideText": "Notice he is not Jewish — the silence rule does not apply out here.",
+   "evidence": "Mark 5:19-20 says the man was sent home and proclaimed in Decapolis; neither verse states the man's ethnicity or a geographic limit to a silence rule.",
+   "problem": "The guide asserts the man's ethnicity and the reason for the instruction without textual or briefing support."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "keyVerses[2].why",
+   "guideText": "'Daughter' is the only time he calls anyone that.",
+   "evidence": "Mark 5:34: \"Daughter, your faith has made you well.\" No briefing line supports a whole-Mark uniqueness claim.",
+   "problem": "A book-wide uniqueness claim is stated as fact from a single chapter instance."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "A legion was a Roman army unit of several thousand men.",
+   "evidence": "Mark 5:9: \"My name is Legion, for we are many.\"",
+   "problem": "The verse supports number in general, not the specific Roman-unit size claimed as fact."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[10].answer",
+   "guideText": "It is the kind of specific, unnecessary thing that tends to come from someone who was in the room.",
+   "evidence": "Briefing source papias: Mark \"never heard Jesus himself\"; language caution also warns style is \"not proof that the author was remembering an eyewitness scene.\"",
+   "problem": "The guide implies eyewitness origin for a narrative detail, contrary to the briefing's caution."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "overreach",
+   "where": "questions[4].answer",
+   "guideText": "It is a real and deliberate reversal, and the geography explains it.",
+   "evidence": "Briefing snag on secrecy: \"Other readers treat the secrecy as Mark's storytelling device, so this remains an interpretation rather than a settled fact.\"",
+   "problem": "The guide presents one contested explanation of Mark's secrecy pattern as settled geography-based fact."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "Under Leviticus 15, a discharge of blood made a woman ritually unclean, and anything and anyone she touched became unclean too.",
+   "evidence": "The bundle lists LEV 15:19-27 only as TSK comparison refs for 5:25; the grounding rules say TSK matches are routes for comparison, not proof of content.",
+   "problem": "The specific Leviticus transfer rules are stated as fact although the supplied bundle does not quote or brief them."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "overreach",
+   "where": "questions[9].answer",
+   "guideText": "Keeping the sound is the mark of a memory passed down by people who heard it.",
+   "evidence": "Briefing readerSignal: preserved Semitic forms support \"an audience unfamiliar with the phrases; by itself it does not identify a city or prove that every reader was Gentile\"; textualHistory likewise warns Aramaic source proposals are not evidence for direct transmission claims.",
+   "problem": "The guide turns preserved Aramaic into a settled eyewitness-memory transmission claim the briefing does not support."
+  },
+  {
+   "chapter": 5,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "whyItMatters",
+   "guideText": "A corpse, a chronic discharge of blood, and a graveyard were the three great sources of ritual defilement in Jewish law.",
+   "evidence": "Mark 5:25 says only \"A certain woman who had a discharge of blood for twelve years\"; no chapter verse or briefing line ranks these as the three great sources of defilement.",
+   "problem": "A historical/legal ranking is stated as fact without support in the chapter text or briefing."
+  },
+  {
+   "chapter": 6,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea; Mark uses the Roman 'fourth watch of the night' rather than a Jewish time reckoning",
+   "evidence": "bookBriefing.facts.writtenFor: Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.",
+   "problem": "The audience field drops the book briefing's uncertainty ('Likely', 'inference') and adds an unsupported claim about Roman versus Jewish night watches."
+  },
+  {
+   "chapter": 6,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[0].def",
+   "guideText": "The Greek word covers a builder working in wood and stone — a general craftsman rather than specifically a furniture maker.",
+   "evidence": "Mark 6:3: Isn’t this the carpenter, the son of Mary... (No Greek lexical claim about 'carpenter' appears in bookBriefing.language.)",
+   "problem": "The glossary makes a Greek lexical claim about the word translated 'carpenter' that is absent from the supplied book briefing."
+  },
+  {
+   "chapter": 6,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "Son of Herod the Great; Rome's client ruler over Galilee and Perea. Not a king in Roman law, though Mark uses the popular title.",
+   "evidence": "bookBriefing.whereYouAre: Galilee is ruled by Herod Antipas under Roman power.",
+   "problem": "The glossary states historical and legal claims—Herod Antipas's parentage, rule over Perea, and status under Roman law—that are not supported by Mark 6 or the book briefing."
+  },
+  {
+   "chapter": 6,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "Roughly 3 to 6 a.m. Mark divides the night into four Roman watches rather than the three used in Jewish reckoning — a small sign of who he was writing for.",
+   "evidence": "Mark 6:48: about the fourth watch of the night he came to them... (Neither Mark 6 nor bookBriefing.facts.writtenFor mentions 3 to 6 a.m. or Roman versus Jewish night watches.)",
+   "problem": "The glossary states as fact that 'fourth watch' reflects a four-watch Roman reckoning rather than a three-watch Jewish one and uses it to infer audience, which neither the chapter nor the briefing supports."
+  },
+  {
+   "chapter": 6,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[10].answer",
+   "guideText": "and the phrase 'It is I' in verse 50 is the same construction used for the divine name in Exodus 3:14.",
+   "evidence": "Mark 6:50: “Cheer up! It is I! Don’t be afraid.” (No Greek linguistic claim connecting 6:50 to Exodus 3:14 appears in bookBriefing.language.)",
+   "problem": "The answer makes an unsupported linguistic claim equating the construction of 'It is I' in Mark 6:50 with the divine name in Exodus 3:14, which is not in the supplied briefing."
+  },
+  {
+   "chapter": 6,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "Herod the Great, who ruled at Jesus's birth, died around 4 BC. This is his son Herod Antipas, ruler of Galilee and Perea for Rome — the one who executed John and who appears again at Jesus's trial in Luke.",
+   "evidence": "bookBriefing.whereYouAre: Galilee is ruled by Herod Antipas under Roman power. (Neither Mark 6 nor the book briefing mentions Herod the Great, Jesus's birth, 4 BC, or Perea.)",
+   "problem": "The answer states historical and dating claims as fact—Herod the Great's death around 4 BC, Jesus's birth under his rule, and Herod Antipas ruling Perea—that neither the chapter text nor the book briefing supports."
+  },
+  {
+   "chapter": 6,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "this feeding happens on the Jewish side of the lake. In chapter 8 he feeds four thousand on the Gentile side",
+   "evidence": "Mark 6:32: They went away in the boat to a deserted place by themselves. (Neither Mark 6 nor the book briefing identifies this location as the Jewish side or chapter 8's location as the Gentile side.)",
+   "problem": "The answer states as fact that the feeding of the five thousand took place on the Jewish side of the lake and the feeding of the four thousand on the Gentile side, which neither the chapter nor the briefing supports."
+  },
+  {
+   "chapter": 6,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea; Mark uses the Roman 'fourth watch of the night' rather than a Jewish time reckoning",
+   "evidence": "Briefing writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"; Mark 6:48 says only \"about the fourth watch of the night.\"",
+   "problem": "The audience is stated without the briefing's \"likely\" uncertainty, and the Roman-versus-Jewish reckoning claim is not in the briefing or chapter."
+  },
+  {
+   "chapter": 6,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s",
+   "evidence": "Briefing writtenWhen: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\"",
+   "problem": "The stated range drops the briefing's weighting and its \"shortly after 70\" end."
+  },
+  {
+   "chapter": 6,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[0].def",
+   "guideText": "The Greek word covers a builder working in wood and stone — a general craftsman rather than specifically a furniture maker.",
+   "evidence": "Briefing language features and examples list no Greek term for \"carpenter\"; Mark 6:3 in the hosted text says only \"the carpenter.\"",
+   "problem": "A Greek lexical claim is stated as fact with no support in the chapter text or briefing, which the grounding rules require be left out."
+  },
+  {
+   "chapter": 6,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "Roughly 3 to 6 a.m. Mark divides the night into four Roman watches rather than the three used in Jewish reckoning",
+   "evidence": "Mark 6:48: \"about the fourth watch of the night\"; the briefing contains no watch-reckoning or hour claim.",
+   "problem": "The hours and the Roman-versus-Jewish reckoning are historical claims stated as fact that neither source supports."
+  },
+  {
+   "chapter": 6,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[10].answer",
+   "guideText": "the phrase 'It is I' in verse 50 is the same construction used for the divine name in Exodus 3:14",
+   "evidence": "Mark 6:50: \"Cheer up! It is I! Don't be afraid.\" The briefing's language section preserves and explains only the listed Aramaic forms (5:41, 7:11, 7:34, 14:36, 15:34) and gives no Exodus 3:14 construction.",
+   "problem": "A Greek linguistic claim is stated as fact that neither the chapter text nor the briefing supports."
+  },
+  {
+   "chapter": 6,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[8].answer",
+   "guideText": "A denarius was roughly a day's wage for an ordinary labourer. Two hundred denarii is therefore something like eight months of work",
+   "evidence": "Mark 6:37: \"buy two hundred denarii worth of bread\" — neither the chapter nor the briefing gives a wage equivalence.",
+   "problem": "A historical wage claim and a derived eight-month figure are stated as fact without bundle support."
+  },
+  {
+   "chapter": 6,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[9].answer",
+   "guideText": "Almost certainly. Twelve is the number of the tribes of Israel and of the men he had just sent out — and this feeding happens on the Jewish side of the lake. In chapter 8 he feeds four thousand on the Gentile side and there are seven baskets left.",
+   "evidence": "Mark 6:43-44: \"twelve baskets full of broken pieces\" and \"five thousand men\" — no tribes, no Jewish or Gentile side of the lake is stated.",
+   "problem": "The guide claims near-certainty for a symbolic reading and supplies geographic facts the cited verses do not give."
+  },
+  {
+   "chapter": 6,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "wrong-chapter",
+   "where": "summary",
+   "guideText": "Jesus goes home to Nazareth",
+   "evidence": "Mark 6:1: \"He came into his own country\" — the hosted chapter never names Nazareth.",
+   "problem": "The place-name is imported from outside the hosted chapter and presented as this chapter's setting."
+  },
+  {
+   "chapter": 7,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Non-Jewish readers — verses 3-4 stop the narrative to explain Jewish washing customs, which no Jewish reader would need",
+   "evidence": "bookBriefing.facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\" and bookBriefing.language.readerSignal: \"by itself it does not identify a city or prove that every reader was Gentile.\"",
+   "problem": "The guide drops the book briefing's uncertainty by stating as fact that the audience was exclusively non-Jewish."
+  },
+  {
+   "chapter": 7,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "Originally a Greek stage term for an actor.",
+   "evidence": "Mark 7:6 (WEB): \"hypocrites\" (neither the hosted text nor bookBriefing mentions this Greek etymology)",
+   "problem": "The guide states a Greek etymological claim for \"hypocrite\" that neither the chapter text nor the book briefing supports."
+  },
+  {
+   "chapter": 7,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "overreach",
+   "where": "keyVerses[2].why",
+   "guideText": "The only time in the gospels anyone wins an exchange with Jesus — and he says so.",
+   "evidence": "Mark 7:29 (WEB): \"For this saying, go your way. The demon has gone out of your daughter.\"",
+   "problem": "The guide claims certainty across all the gospels and asserts that Jesus says she won, going beyond what Mark 7:29 or the briefing states."
+  },
+  {
+   "chapter": 7,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[4].answer",
+   "guideText": "most modern translations set it off, and this one does too.",
+   "evidence": "Mark 7:19 (WEB): \"because it doesn’t go into his heart, but into his stomach, then into the latrine, making all foods clean?”\"",
+   "problem": "The hosted World English Bible includes \"making all foods clean?\" inside Jesus's quotation marks rather than setting it off as Mark's own comment."
+  },
+  {
+   "chapter": 7,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "the word used is not the term for a street scavenger but a diminutive, closer to a household dog under the table",
+   "evidence": "Mark 7:27 (WEB): \"throw it to the dogs.\" (neither the hosted text nor bookBriefing mentions this Greek distinction)",
+   "problem": "The guide makes a Greek lexical claim about a diminutive word for \"dogs\" that is not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 7,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "overreach",
+   "where": "questions[6].answer",
+   "guideText": "this is the one conversation in the gospels that Jesus concedes",
+   "evidence": "Mark 7:29 (WEB): \"For this saying, go your way. The demon has gone out of your daughter.\"",
+   "problem": "The guide makes an unsupported universal claim about all four gospels that goes beyond the chapter text and book briefing."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Non-Jewish readers — verses 3-4 stop the narrative to explain Jewish washing customs, which no Jewish reader would need",
+   "evidence": "Briefing writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"",
+   "problem": "The guide turns a hedged inference that the audience probably included Gentiles into a definite non-Jewish audience."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.literaryForm",
+   "guideText": "A controversy story with an explanation attached, followed by two healings placed to make the argument concrete",
+   "evidence": "Briefing form: \"Gospel — an ancient life-of-a-person written to persuade, not a diary or a news report\"",
+   "problem": "The context literaryForm replaces the briefing's book-level form with a chapter-level description."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[2].def",
+   "guideText": "Aramaic for 'dedicated to God.'",
+   "evidence": "Briefing examples, 7:11 Corban: meaning \"given to God\"; why: \"Mark keeps the Semitic religious term and explains it\"",
+   "problem": "The briefing identifies Corban only as a Semitic term, so the specific Aramaic attribution is unsupported by the grounding."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "Originally a Greek stage term for an actor.",
+   "evidence": "Briefing language section discusses euthys, kai, historical present and register only; it gives no etymology for \"hypocrite\" in MRK 7:6.",
+   "problem": "A Greek etymological claim is stated as fact without support in the briefing."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "Mark also calls her Greek — meaning Greek-speaking and pagan, not Greek by descent.",
+   "evidence": "MRK 7:26: \"Now the woman was a Greek, a Syrophoenician by race.\" The briefing gives no definition of \"Greek\" here.",
+   "problem": "A linguistic and ethnic definition of \"Greek\" is stated as fact although neither the verse nor the briefing supplies it."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "misquote",
+   "where": "keyVerses[0].text",
+   "guideText": "For you set aside the commandment of God, and hold tightly to the tradition of men",
+   "evidence": "MRK 7:8: \"For you set aside the commandment of God, and hold tightly to the tradition of men—the washing of pitchers and cups, and you do many other such things.\"",
+   "problem": "The quotation silently omits the end of the hosted verse without an ellipsis."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "keyVerses[2].why",
+   "guideText": "The only time in the gospels anyone wins an exchange with Jesus — and he says so.",
+   "evidence": "MRK 7:29: \"For this saying, go your way. The demon has gone out of your daughter.\"",
+   "problem": "Jesus does not say she won, and the bundle supplies no gospel-wide survey to support the only-time claim."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Not in the written law for ordinary people — the Hebrew scriptures require it of priests handling holy things. What developed was a practice of extending priestly purity into everyday life, so that ordinary meals were treated with something of the care given to temple service.",
+   "evidence": "MRK 7:3-5 calls the practice \"the tradition of the elders\" and gives no priestly-law or historical-development account; the briefing supplies none either.",
+   "problem": "A historical claim about priestly law and its later extension is stated as fact without support in the chapter or briefing."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[4].answer",
+   "guideText": "It is Mark's own comment on what Jesus said, not part of the quotation — most modern translations set it off, and this one does too.",
+   "evidence": "MRK 7:19 hosted text: \"because it doesn’t go into his heart, but into his stomach, then into the latrine, making all foods clean?”\"",
+   "problem": "The hosted text does not set the phrase off as a parenthesis; it runs it inside the quoted sentence ending at the question mark."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "the word used is not the term for a street scavenger but a diminutive, closer to a household dog under the table — which is the opening she takes.",
+   "evidence": "Briefing language features cover euthys, kai, the historical present and Mark's register, and its examples list Corban and Ephphatha; no Greek term for \"dogs\" in 7:27-28 is discussed.",
+   "problem": "A specific Greek lexical claim is stated as fact although the briefing does not support it."
+  },
+  {
+   "chapter": 7,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[9].answer",
+   "guideText": "Notice these orders stop after the crucifixion, when the thing that was being protected has happened.",
+   "evidence": "Briefing snag on secrecy lists refs including 7:36 and 9:9 and says the pattern \"remains an interpretation rather than a settled fact\"; MRK 7:36 itself only reports the order and its spread.",
+   "problem": "The guide presents a book-wide timing claim and an invented protective purpose for the secrecy orders as settled fact."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, in a setting where 'take up your cross' described a real and familiar execution",
+   "evidence": "bookBriefing.facts.writtenFor: 'Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.'",
+   "problem": "The guide states the audience as a settled fact, dropping the book briefing's explicit uncertainty ('Likely... That is an inference')."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "The Gentile side of the lake, then Bethsaida, then the villages of Caesarea Philippi — twenty-five miles north, at the foot of Mount Hermon, a town full of pagan shrines and named for Caesar",
+   "evidence": "Mark 8:4 ('in a deserted place'), Mark 8:10 ('region of Dalmanutha'), Mark 8:27 ('villages of Caesarea Philippi'), and bookBriefing (no mention of the Gentile side, 25 miles, Mount Hermon, pagan shrines, or naming for Caesar).",
+   "problem": "The setting asserts that the first scene is on the Gentile side of the lake and adds geographical and archaeological details about Caesarea Philippi that neither Mark 8 nor the book briefing supports."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "A town about 25 miles north of the lake, rebuilt by Herod Philip and named for Caesar and himself. A centre of pagan worship, and the setting for the book's central question.",
+   "evidence": "Mark 8:27 and bookBriefing (no mention of 25 miles, Herod Philip, Caesar, or pagan worship at Caesarea Philippi).",
+   "problem": "The glossary definition states geographical, historical, and religious details about Caesarea Philippi that neither Mark 8 nor the book briefing supports."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "A reference to the crossbeam a condemned man carried to his own crucifixion — a Roman execution for rebels and slaves.",
+   "evidence": "Mark 8:34 ('take up his cross') and bookBriefing (no mention of crossbeams or execution specifically for rebels and slaves).",
+   "problem": "The glossary definition adds specific historical claims about Roman crucifixion that are not supported by Mark 8 or the book briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "outline[3].note",
+   "guideText": "The only healing in the gospels that takes two attempts",
+   "evidence": "Mark 8:22-26 and bookBriefing (neither compares all gospel healings to establish this as the only two-stage healing).",
+   "problem": "The note states as fact a comparative claim across all four gospels that neither Mark 8 nor the book briefing supports."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Five thousand, five loaves, twelve baskets — on the Jewish side of the lake, twelve being the number of the tribes. Four thousand, seven loaves, seven baskets — on the Gentile side, after the argument in chapter 7 about clean and unclean. The repetition is the message: the same bread, the same abundance, for both sides of a boundary that has just been dismantled.",
+   "evidence": "Mark 8:1-10 ('a deserted place', 'region of Dalmanutha'), Mark 8:19-20 (mentions twelve and seven baskets without tribal or Gentile symbolism), and bookBriefing (no mention of Jewish vs. Gentile sides for the two feedings).",
+   "problem": "The answer asserts unsupported geographic and symbolic meanings for the two feedings and presents one theological interpretation as the passage's settled message."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[3].answer",
+   "guideText": "Seven questions in a row, no answers offered, ending with 'Don't you understand yet?'",
+   "evidence": "Mark 8:17-21 contains nine questions, and the disciples answer two of them: 'They told him, “Twelve.”' (8:19) and 'They told him, “Seven.”' (8:20).",
+   "problem": "The guide miscounts the questions in 8:17-21 as seven and falsely claims no answers are offered when the disciples answer 'Twelve' and 'Seven' in verses 19-20."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "It is the only staged healing in the gospels, and Mark alone records it.",
+   "evidence": "Mark 8:22-26 and bookBriefing (no comparison of healing accounts across the other gospels).",
+   "problem": "The answer makes an unsupported comparative claim about the contents of the other gospels."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "It is about as far from Jerusalem as Jesus goes, deep in Gentile territory at the foot of Mount Hermon. The town had a famous shrine to the god Pan and had been renamed to honour Caesar by Herod Philip.",
+   "evidence": "Mark 8:27 ('into the villages of Caesarea Philippi') and bookBriefing (no mention of Mount Hermon, a shrine to Pan, or Herod Philip renaming the town).",
+   "problem": "The answer states historical, geographical, and archaeological facts about Caesarea Philippi that are absent from both Mark 8 and the book briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[6].answer",
+   "guideText": "Because he has the right title and the wrong content, which the next four verses expose. 'Christ' meant God's anointed king, and popular expectation attached that to a deliverer who would break Roman rule. Announcing it publicly would have summoned exactly that hope. Jesus accepts the title and then immediately starts redefining it — suffering, rejection, execution — and Peter's reaction shows why the ban was necessary.",
+   "evidence": "bookBriefing.snags[1]: 'One strong reading inside the book is that healings and royal titles can be misunderstood before the suffering path is clear... Other readers treat the secrecy as Mark's storytelling device, so this remains an interpretation rather than a settled fact.'",
+   "problem": "The answer presents one reading of Jesus's command to stay silent as settled fact, ignoring the book briefing's note that readers and scholars debate whether it is historical or Mark's storytelling device."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[8].answer",
+   "guideText": "Crucifixion was a Roman public execution used on rebels and slaves, and the condemned carried the crossbeam to the site through the streets. Galilee had seen it used.",
+   "evidence": "Mark 8:34 ('take up his cross') and bookBriefing (neither mentions crossbeams, execution specifically for rebels and slaves, or prior crucifixions in Galilee).",
+   "problem": "The answer states specific historical details about Roman crucifixion practices and their prior use in Galilee that are not supported by Mark 8 or the book briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "The Greek word behind 'life' here also means soul or self, and the saying trades on that.",
+   "evidence": "bookBriefing.language (does not mention the Greek word for 'life' in Mark 8:35-37 or its semantic range).",
+   "problem": "The answer makes a Greek lexical claim about the word behind 'life' that is not in the supplied book briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, in a setting where 'take up your cross' described a real and familiar execution",
+   "evidence": "Briefing facts.writtenFor: 'Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference'",
+   "problem": "The guide drops the briefing's 'likely' and 'inference' uncertainty and replaces the probable Gentile audience with an unsupported crucifixion-familiarity claim."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "The Gentile side of the lake, then Bethsaida, then the villages of Caesarea Philippi — twenty-five miles north, at the foot of Mount Hermon, a town full of pagan shrines and named for Caesar",
+   "evidence": "8:27 says only 'into the villages of Caesarea Philippi'; 8:1-9 names no Gentile side, distance, Mount Hermon, shrines, or naming origin.",
+   "problem": "The setting adds geographical and religious-historical details that neither the hosted chapter nor the briefing supplies."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "glossary[0].def",
+   "guideText": "By this period the title carried a widespread expectation of national deliverance from Rome, which is the expectation Jesus spends the rest of the book dismantling.",
+   "evidence": "Briefing whereYouAre: 'Jewish hopes for God's deliverance take several forms — political, national, and religious — rather than one single expectation.'",
+   "problem": "The glossary likewise turns varied Jewish hopes into a single widespread Rome-deliverance expectation, contrary to the briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "A town about 25 miles north of the lake, rebuilt by Herod Philip and named for Caesar and himself. A centre of pagan worship, and the setting for the book's central question.",
+   "evidence": "8:27 says only 'into the villages of Caesarea Philippi'; Nave's match says only 'A city in the north of Palestine; visited by Jesus'.",
+   "problem": "The distance, rebuilding, naming, and pagan-worship-centre details are asserted without support in the chapter or briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "outline[0].note",
+   "guideText": "Seven loaves, seven baskets left — on the Gentile side this time",
+   "evidence": "8:5-8 gives 'Seven' loaves and 'seven baskets' but states no location or ethnic side for the feeding.",
+   "problem": "The Gentile-side location is asserted as fact without support in this chapter or the briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "outline[3].note",
+   "guideText": "The only healing in the gospels that takes two attempts",
+   "evidence": "8:22-25 is the only healing narrated in this bundle; neither the chapter nor the briefing surveys healings in the other Gospels.",
+   "problem": "The uniqueness claim across all Gospels exceeds what the grounding bundle supports."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Five thousand, five loaves, twelve baskets — on the Jewish side of the lake, twelve being the number of the tribes. Four thousand, seven loaves, seven baskets — on the Gentile side, after the argument in chapter 7 about clean and unclean.",
+   "evidence": "8:19-20 recites only the numbers: 'five loaves among the five thousand' / 'Twelve' and 'seven loaves fed the four thousand' / 'Seven', with no tribes symbolism or Jewish/Gentile sides.",
+   "problem": "The tribal symbolism, ethnic geography, and chapter-7 boundary framing are stated as fact but are not supported by the cited verses or briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[0].answer",
+   "guideText": "The repetition is the message: the same bread, the same abundance, for both sides of a boundary that has just been dismantled.",
+   "evidence": "8:19-20 contains Jesus' numerical recap only; it does not state that a boundary has been dismantled or that this is the repetition's message.",
+   "problem": "The guide presents a symbolic interpretation as the settled meaning without signalling that readers may read the repetition differently."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[3].answer",
+   "guideText": "Seven questions in a row, no answers offered, ending with 'Don't you understand yet?'",
+   "evidence": "8:19 'how many baskets full of broken pieces did you take up?' 'They told him, “Twelve.”' 8:20 'how many baskets...?' 'They told him, “Seven.”'",
+   "problem": "Verses 19-20 are answered questions inside the sequence, so the claim of unanswered questions in a row contradicts the hosted text."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[4].answer",
+   "guideText": "Reading it as failure runs against everything else in the book, where a word is enough. Reading it structurally: this is placed between the disciples' total incomprehension and Peter's half-right confession.",
+   "evidence": "8:23-25 depicts two touches and restored sight without stating the purpose; the briefing shape note only observes that 8:26 closes the section before the disciples half-see.",
+   "problem": "The guide dismisses one reading and presents the structural reading as settled intent without naming reader disagreement."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "It is about as far from Jerusalem as Jesus goes, deep in Gentile territory at the foot of Mount Hermon. The town had a famous shrine to the god Pan and had been renamed to honour Caesar by Herod Philip.",
+   "evidence": "8:27 says only 'into the villages of Caesarea Philippi'; Nave's match says only 'A city in the north of Palestine; visited by Jesus'.",
+   "problem": "The Mount Hermon, Gentile-territory, Pan-shrine, and renaming details are historical/geographical claims with no support in the chapter or briefing."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[6].answer",
+   "guideText": "'Christ' meant God's anointed king, and popular expectation attached that to a deliverer who would break Roman rule.",
+   "evidence": "Briefing whereYouAre: 'Jewish hopes for God's deliverance take several forms — political, national, and religious — rather than one single expectation.'",
+   "problem": "The guide reduces the briefing's several forms of hope to one popular expectation of breaking Roman rule."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[8].answer",
+   "guideText": "Crucifixion was a Roman public execution used on rebels and slaves, and the condemned carried the crossbeam to the site through the streets. Galilee had seen it used.",
+   "evidence": "8:34 says only 'take up his cross'; neither the hosted chapter nor the briefing describes crucifixion victims, crossbeam-carrying, streets, or prior use in Galilee.",
+   "problem": "Specific historical claims about crucifixion practice and Galilean experience are stated as fact without grounding support."
+  },
+  {
+   "chapter": 8,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "The Greek word behind 'life' here also means soul or self, and the saying trades on that.",
+   "evidence": "Briefing language.features and language.examples give no Greek word or sense range for 8:35; the hosted verse uses only 'life'.",
+   "problem": "This is a Greek lexical claim about 8:35 that the supplied briefing does not support, which the grounding rules require leaving out."
+  },
+  {
+   "chapter": 9,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea; Mark keeps 'Rabbi' and explains Gehenna's imagery by quoting Isaiah rather than assuming knowledge",
+   "evidence": "bookBriefing.facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.\"; Mark 9:43-48",
+   "problem": "The audience field drops the briefing's uncertainty (\"Likely... That is an inference\") and claims Mark keeps 'Rabbi' and explains Gehenna's imagery by quoting Isaiah for uninformed readers, which neither the briefing nor Mark 9 supports."
+  },
+  {
+   "chapter": 9,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "A respectful address for a teacher, literally something like 'my great one.' Mark keeps the Aramaic term.",
+   "evidence": "Mark 9:5 and bookBriefing.language.examples (does not include 'Rabbi' or state its literal meaning)",
+   "problem": "The glossary makes an Aramaic linguistic claim about what \"Rabbi\" literally means that is not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 9,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "A heavy grinding stone, the large kind turned by a donkey.",
+   "evidence": "Mark 9:42 (\"a millstone hung around his neck\") and bookBriefing",
+   "problem": "The glossary specifies \"the large kind turned by a donkey,\" a Greek/historical detail not present in the hosted translation or the book briefing."
+  },
+  {
+   "chapter": 9,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[10].answer",
+   "guideText": "the underlying picture is a cursed valley, permanent burning, and rubbish that is never dealt with.",
+   "evidence": "Mark 9:43-48 and bookBriefing (neither mentions rubbish or a garbage dump)",
+   "problem": "The guide states as fact that Gehenna's underlying picture includes \"rubbish that is never dealt with,\" an archaeological/historical claim not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 9,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[6].answer",
+   "guideText": "Jesus's answer, that this kind comes out only by prayer, points at the difference.",
+   "evidence": "Mark 9:29: \"He said to them, “This kind can come out by nothing but by prayer and fasting.”\"",
+   "problem": "The guide states that this kind comes out \"only by prayer,\" contradicting the hosted World English Bible text of Mark 9:29, which says \"by prayer and fasting.\""
+  },
+  {
+   "chapter": 9,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea; Mark keeps 'Rabbi' and explains Gehenna's imagery by quoting Isaiah rather than assuming knowledge",
+   "evidence": "Briefing writtenFor: 'Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.'",
+   "problem": "The audience rationale replaces the briefing's stated inference and treats an untranslated address and an unexplained quotation as explanations."
+  },
+  {
+   "chapter": 9,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s",
+   "evidence": "Briefing writtenWhen: 'Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.'",
+   "problem": "The date range shifts the briefing's main range and presents the debated span without preserving its uncertainty."
+  },
+  {
+   "chapter": 9,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "A respectful address for a teacher, literally something like 'my great one.' Mark keeps the Aramaic term.",
+   "evidence": "Mark 9:5 contains 'Rabbi,' but the briefing's preserved Aramaic examples are 5:41, 7:11, 7:34, 14:36, and 15:34, with no entry or literal meaning for Rabbi.",
+   "problem": "The linguistic origin and literal meaning claimed for Rabbi are not supported by the supplied briefing."
+  },
+  {
+   "chapter": 9,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[10].answer",
+   "guideText": "the underlying picture is a cursed valley, permanent burning, and rubbish that is never dealt with",
+   "evidence": "Mark 9:43 and 9:48 mention only Gehenna, unquenchable fire, and the worm that does not die; neither the chapter nor the briefing describes Gehenna as a rubbish site.",
+   "problem": "The rubbish-valley detail is an unsupported historical claim stated as fact."
+  },
+  {
+   "chapter": 9,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[8].answer",
+   "guideText": "In that society a child had no legal standing, no status, no ability to advance anyone's position — a person you were responsible for rather than a person who could do anything for you.",
+   "evidence": "Mark 9:36-37 says Jesus took a child, set him among them, and spoke about receiving such a child; neither the chapter nor the briefing states this legal or social status claim.",
+   "problem": "A specific historical claim about children's standing is stated as fact without support in the grounding bundle."
+  },
+  {
+   "chapter": 9,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "whyItMatters",
+   "guideText": "within a day the group is arguing about rank",
+   "evidence": "Mark 9:30-33 says only that they 'passed through Galilee' and 'He came to Capernaum'; no one-day interval is given.",
+   "problem": "The chapter supplies no timing that supports placing the argument within a day."
+  },
+  {
+   "chapter": 10,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea; verse 12 addresses a woman divorcing her husband, which was possible under Roman law but not Jewish — a sign of who Mark is writing for",
+   "evidence": "bookBriefing.facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference...\"",
+   "problem": "The audience field drops the book briefing's uncertainty and adds an unsupported claim contrasting Roman and Jewish divorce law."
+  },
+  {
+   "chapter": 10,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "There was a live rabbinic dispute over how broadly the grounds in Deuteronomy 24:1 should be read — one school allowed divorce for almost any cause, another only for serious misconduct — so any answer would offend somebody.",
+   "evidence": "Mark 10:2-4 and bookBriefing (neither mentions a rabbinic dispute or two schools interpreting Deuteronomy 24:1)",
+   "problem": "The guide states a historical claim about a first-century rabbinic dispute over Deuteronomy 24:1 as fact without support from the chapter text or book briefing."
+  },
+  {
+   "chapter": 10,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[10].answer",
+   "guideText": "The Greek word was used for the price paid to free a slave or a prisoner of war.",
+   "evidence": "Mark 10:45 and bookBriefing.language (no Greek lexical claim for \"ransom\" is in the briefing)",
+   "problem": "The guide makes a Greek lexical claim about \"ransom\" that is not present in the supplied book briefing."
+  },
+  {
+   "chapter": 10,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "contradiction",
+   "where": "questions[11].answer",
+   "guideText": "he calls Jesus 'son of David,' a messianic title, and nobody silences him.",
+   "evidence": "Mark 10:48: \"Many rebuked him, that he should be quiet, but he cried out much more, “You son of David, have mercy on me!”\"",
+   "problem": "Stating that \"nobody silences him\" conflicts with verse 48, where many in the crowd rebuke Bartimaeus to be quiet."
+  },
+  {
+   "chapter": 10,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "Because Jewish law of the period did not give women that option — a wife could petition, but the act was the husband's. Under Roman law she could initiate it. So this half of the saying only makes practical sense for readers living under Roman rather than Jewish law, and it is one more small piece of evidence about where Mark's audience was.",
+   "evidence": "Mark 10:12 and bookBriefing.facts.writtenFor",
+   "problem": "The guide states unsupported historical claims about Jewish and Roman divorce law as fact and draws a narrower audience conclusion than the book briefing supports."
+  },
+  {
+   "chapter": 10,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "No. That explanation is medieval and there is no evidence for such a gate.",
+   "evidence": "Mark 10:25 and bookBriefing (neither mentions a medieval origin or archaeological evidence regarding a Jerusalem gate)",
+   "problem": "The guide states a dating and archaeological claim about the \"Needle's Eye\" gate explanation as fact without support in the chapter text or book briefing."
+  },
+  {
+   "chapter": 10,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "misquote",
+   "where": "questions[9].answer",
+   "guideText": "'and after three days rise again'",
+   "evidence": "Mark 10:34: \"On the third day he will rise again.\"",
+   "problem": "The guide quotes the third passion prediction in Mark 10:34 using wording not found in the hosted World English Bible text."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea; verse 12 addresses a woman divorcing her husband, which was possible under Roman law but not Jewish — a sign of who Mark is writing for",
+   "evidence": "Book briefing, facts.writtenFor: “Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference”; Mark 10:12 says only, “If a woman herself divorces her husband and marries another, she commits adultery.”",
+   "problem": "The guide turns the briefing's likely inference into a definite audience identification and adds an unsupported Roman-versus-Jewish-law explanation."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s",
+   "evidence": "Book briefing, facts.writtenWhen: “Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.”",
+   "problem": "The guide widens the briefing's stated range into the AD 50s without preserving its formulation."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.literaryForm",
+   "guideText": "Travel narrative. The whole section from 8:27 to 10:52 is framed as a walk, and it is bracketed by two blind men receiving sight",
+   "evidence": "Book briefing, form.name: “Gospel — an ancient life-of-a-person written to persuade, not a diary or a news report.”",
+   "problem": "The guide replaces the briefing's literary form for Mark with “Travel narrative,” which describes this section's movement rather than the book's form."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "the last stop before the eighteen-mile climb up to Jerusalem",
+   "evidence": "Mark 10:46 places Jesus at Jericho and 10:32 says the group was “going up to Jerusalem”; neither the chapter nor the briefing gives an eighteen-mile distance.",
+   "problem": "The guide states a precise geographical distance that the grounding bundle does not support."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "'Cup' in the Hebrew scriptures often means an allotted portion of suffering",
+   "evidence": "Mark 10:38 uses “cup” and “baptism” as images spoken by Jesus; the briefing provides no Hebrew-scripture lexical evidence for the claimed customary meaning of “cup.”",
+   "problem": "The glossary states a Hebrew-scriptures linguistic claim that the supplied briefing does not support."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "overreach",
+   "where": "glossary[5].def",
+   "guideText": "Bartimaeus shouts it in public and is not corrected — the first time in Mark that happens.",
+   "evidence": "Mark 10:47-48 records Bartimaeus crying, “Jesus, you son of David, have mercy on me!”; the briefing does not establish that this is the first such uncorrected use in Mark.",
+   "problem": "The guide claims a book-wide first occurrence with certainty beyond what the supplied grounding establishes."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "outline[2].note",
+   "guideText": "Mark alone records that Jesus looked at him and loved him",
+   "evidence": "Mark 10:21 says, “Jesus looking at him loved him”; the bundle supplies no text of the parallel accounts from which a Mark-only claim could be checked.",
+   "problem": "The guide asserts an exclusive comparison with the other Gospels that the supplied sources do not establish."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "There was a live rabbinic dispute over how broadly the grounds in Deuteronomy 24:1 should be read — one school allowed divorce for almost any cause, another only for serious misconduct — so any answer would offend somebody.",
+   "evidence": "Mark 10:2 says only that Pharisees asked, “Is it lawful for a man to divorce his wife?”; neither the chapter nor the briefing describes the two rabbinic schools or their positions.",
+   "problem": "The guide states a specific historical dispute as fact without support in the chapter text or briefing."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Mark places this beyond the Jordan, in Herod Antipas's territory. The last person who spoke publicly about the marriage of a ruler out here was beheaded in chapter 6.",
+   "evidence": "Mark 10:1 says “beyond the Jordan”; the briefing says Galilee was ruled by Herod Antipas and describes John the Baptist only as “executed halfway through (6:14-29),” without giving the marriage reason stated by the guide.",
+   "problem": "The guide adds territorial and chapter 6 motive details that the supplied chapter and briefing do not support."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[10].answer",
+   "guideText": "The Greek word was used for the price paid to free a slave or a prisoner of war.",
+   "evidence": "Mark 10:45 says Jesus came “to give his life as a ransom for many”; the briefing's language section contains no entry establishing this Greek word's usage.",
+   "problem": "The guide makes a Greek lexical claim that is absent from the supplied briefing, contrary to the grounding rule for Greek claims."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[11].answer",
+   "guideText": "He throws off his cloak, which for a beggar was both bedding and the thing he collected coins on.",
+   "evidence": "Mark 10:50 says only, “He, casting away his cloak, sprang up, and came to Jesus”; neither the chapter nor the briefing states that the cloak served as bedding and a collection surface.",
+   "problem": "The guide adds specific historical functions for the cloak that the grounding bundle does not support."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "it protected a divorced woman by documenting she was free to remarry, without which she was destitute and vulnerable",
+   "evidence": "Mark 10:4 says only, “Moses allowed a certificate of divorce to be written, and to divorce her”; neither the chapter nor the briefing explains this protective social function.",
+   "problem": "The guide states the certificate's historical function and the woman's resulting vulnerability as fact without grounding support."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "Because Jewish law of the period did not give women that option — a wife could petition, but the act was the husband's. Under Roman law she could initiate it.",
+   "evidence": "Mark 10:12 says, “If a woman herself divorces her husband and marries another, she commits adultery”; neither the chapter nor the briefing describes Jewish petition procedure or Roman divorce law.",
+   "problem": "The guide presents a detailed legal-history claim that the grounding bundle does not support."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "No. That explanation is medieval and there is no evidence for such a gate.",
+   "evidence": "Mark 10:25 says, “It is easier for a camel to go through a needle’s eye than for a rich man to enter into God’s Kingdom”; neither the chapter nor the briefing dates the gate explanation to the medieval period or discusses evidence for such a gate.",
+   "problem": "The guide makes a specific historical dating and archaeological claim without support in the supplied sources."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[8].answer",
+   "guideText": "The list also drops one item that was in the original — fathers are given up but not returned",
+   "evidence": "Mark 10:29 includes both “father” and “wife” among what is left; Mark 10:30 lists “houses, brothers, sisters, mothers, children, and land,” omitting both fathers and wives.",
+   "problem": "The return list drops two categories from verse 29, not only fathers."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "misquote",
+   "where": "questions[9].answer",
+   "guideText": "They have heard 'and after three days rise again'",
+   "evidence": "Mark 10:34 in the hosted text says, “On the third day he will rise again.”",
+   "problem": "The quoted wording attributed to what the disciples heard in this chapter is not the hosted wording of Mark 10:34."
+  },
+  {
+   "chapter": 10,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "summary",
+   "guideText": "the only person in the gospels who declines a direct invitation",
+   "evidence": "Mark 10:21-22 shows this man going away sorrowful; neither the hosted chapter nor the book briefing compares him with every invitation in the other Gospels.",
+   "problem": "The guide claims a Gospel-wide superlative that the supplied sources do not establish."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, unfamiliar with temple layout and Passover crowds",
+   "evidence": "bookBriefing.facts.writtenFor ('Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.') and bookBriefing.language.readerSignal",
+   "problem": "The guide drops the briefing's uncertainty ('Likely', 'That is an inference') and adds an unsupported claim that the audience was unfamiliar with temple layout and Passover crowds."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.setting",
+   "guideText": "Jerusalem at Passover, when the population swelled several times over and Rome moved extra troops in — the most volatile week of the year",
+   "evidence": "Mark 11:1-33 (no mention of Passover or Roman troops) and bookBriefing.shape[2] ('The last week — Jerusalem')",
+   "problem": "Neither Mark 11 nor the book briefing places this chapter at Passover or mentions population swelling and extra Roman troops."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[0].def",
+   "guideText": "Hebrew for 'save now.'",
+   "evidence": "bookBriefing.language.examples (does not include Hosanna) and Mark 11:9",
+   "problem": "The glossary states a Hebrew linguistic claim as fact that is not in the chapter text or the supplied book briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "It is Hebrew for 'save now'",
+   "evidence": "bookBriefing.language.examples (lists only Talitha cumi, Corban, Ephphatha, Abba, and Eloi, Eloi, lama sabachthani?) and Mark 11:9",
+   "problem": "The guide states a Hebrew linguistic claim as fact that is absent from both the chapter text and the supplied book briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "Pilgrims arrived with Roman coins bearing the emperor's image and needed temple currency; those travelling far could not bring animals and needed to buy them.",
+   "evidence": "Mark 11:15-17 ('overthrew the money changers’ tables and the seats of those who sold the doves') and bookBriefing.whereYouAre",
+   "problem": "The guide states historical details about Roman coinage and temple currency as fact without support in the chapter text or book briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "the outer courts covered something like thirty-five acres, with Roman troops garrisoned overlooking it during festivals",
+   "evidence": "Mark 11:15-16 and bookBriefing.whereYouAre ('The temple is standing at the center of Jewish worship.')",
+   "problem": "The guide states specific archaeological and historical claims about the temple's acreage and Roman festival garrisons as fact without support in the chapter text or book briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[6].answer",
+   "guideText": "including in Gethsemane two chapters later, where Jesus asks for the cup to pass and it does not.",
+   "evidence": "bookBriefing.language.examples (ref '14:36', why \"Jesus's prayer in Gethsemane\")",
+   "problem": "The guide places Gethsemane two chapters after Mark 11 (which would be chapter 13), contradicting the book briefing's citation of Gethsemane at Mark 14:36."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "Because it is missing from the oldest and most reliable Greek manuscripts and appears to have been added later by copyists, most likely borrowed from the parallel wording in Matthew 6:15.",
+   "evidence": "Mark 11:26 (present in hostedTranslation.verses without note) and bookBriefing.debates[1] (discusses manuscript omission only for 16:9-20)",
+   "problem": "The guide states textual-history claims about Mark 11:26's omission in early Greek manuscripts and borrowing from Matthew 6:15 that are not supported by the chapter text or book briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "Disrupting it during Passover — the festival that commemorated liberation from an empire, in a city packed with pilgrims and watched by troops",
+   "evidence": "Mark 11:15-18 (no mention of Passover, pilgrims, or troops) and bookBriefing.whereYouAre",
+   "problem": "The guide states as fact that the temple disruption occurred during Passover in a city packed with pilgrims and watched by troops, which neither Mark 11 nor the book briefing supports."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, unfamiliar with temple layout and Passover crowds",
+   "evidence": "Briefing facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"",
+   "problem": "It drops the briefing's \"likely/probably/inference\" uncertainty and adds temple-layout and Passover-crowd unfamiliarity that the briefing does not state."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s. If written after AD 70, the readers already knew the temple was gone",
+   "evidence": "Briefing facts.writtenWhen: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\"",
+   "problem": "It replaces the briefing's mid-60s-to-shortly-after-70 consensus range with a wider 50s-70s range stated without that qualification."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "Jerusalem at Passover, when the population swelled several times over and Rome moved extra troops in — the most volatile week of the year",
+   "evidence": "Mark 11:1: \"When they came near to Jerusalem, to Bethsphage and Bethany, at the Mount of Olives\"; no verse in 11:1-33 mentions Passover, crowd multiplication, or extra Roman troops, and the briefing's whereYouAre does not state them.",
+   "problem": "Passover timing, population swelling, and troop movements are stated as fact with no support in the hosted chapter or briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "A Roman general entered a city on a warhorse.",
+   "evidence": "Mark 11:7: \"They brought the young donkey to Jesus and threw their garments on it, and Jesus sat on it.\"",
+   "problem": "The Roman-general contrast is a historical claim stated as fact that neither the chapter nor the briefing supports."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[0].answer",
+   "guideText": "Choosing an unridden colt is a deliberate claim to kingship and a deliberate statement about what kind.",
+   "evidence": "Mark 11:2: \"you will find a young donkey tied, on which no one has sat\"; guide itself notes \"Mark does not quote Zechariah\" and TSK 11:7 lists ZEC 9:9 only as a comparison route.",
+   "problem": "It turns a TSK comparison route into a certain statement of Jesus's deliberate intent without noting that readers differ on the Zechariah link."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "It is Hebrew for 'save now' — originally a cry for help, which had become a shout of praise in festival use.",
+   "evidence": "Mark 11:9: \"Hosanna! Blessed is he who comes in the name of the Lord!\"; briefing language section lists preserved Aramaic forms at 5:41, 7:11, 7:34, 14:36, 15:34 and gives no Hebrew meaning for Hosanna.",
+   "problem": "A Hebrew linguistic claim is stated as fact although the supplied briefing does not support it, contrary to the rule to leave such claims out if not in the briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[1].answer",
+   "guideText": "They are enthusiastic and they have the wrong idea, which is why the same city turns in a few days.",
+   "evidence": "Mark 11:10: \"Blessed is the kingdom of our father David that is coming in the name of the Lord!\"",
+   "problem": "It forces a verdict that the crowd's Davidic hope was simply wrong and invents a causal turn by the same city that this chapter does not depict."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "a fig tree in leaf normally carries early unripe buds that were edible, so leaves without anything at all is a tree advertising more than it has",
+   "evidence": "Mark 11:13: \"he found nothing but leaves, for it was not the season for figs.\"",
+   "problem": "The edible-bud botany is stated as fact with no support in the chapter or briefing and is used to resolve the verse's stated difficulty."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[3].answer",
+   "guideText": "read as Mark placed it, it is an enacted judgment",
+   "evidence": "Briefing form.how: the fig tree and temple are \"meant to read against each other\" at 11:12-25; Mark 11:14: \"May no one ever eat fruit from you again!\"",
+   "problem": "It presents one symbolic interpretation as the settled verdict without naming that interpreters debate the fig tree's meaning."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "Pilgrims arrived with Roman coins bearing the emperor's image and needed temple currency; those travelling far could not bring animals and needed to buy them.",
+   "evidence": "Mark 11:15: \"overthrew the money changers’ tables and the seats of those who sold the doves.\"",
+   "problem": "Coinage, pilgrim travel, and animal-purchase details are historical claims stated as fact that the chapter and briefing do not supply."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "the outer courts covered something like thirty-five acres, with Roman troops garrisoned overlooking it during festivals",
+   "evidence": "Mark 11:16: \"He would not allow anyone to carry a container through the temple.\"",
+   "problem": "The acreage and festival garrison are archaeological/historical claims stated as fact with no support in the chapter or briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[6].answer",
+   "guideText": "The mountain image was a known figure of speech for an impossibility, not a literal proposal.",
+   "evidence": "Mark 11:23: \"whoever may tell this mountain, ‘Be taken up and cast into the sea,’ and doesn’t doubt in his heart\"",
+   "problem": "The claim about a known figure of speech is a linguistic/historical assertion the chapter and briefing do not support."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "Because it is missing from the oldest and most reliable Greek manuscripts and appears to have been added later by copyists, most likely borrowed from the parallel wording in Matthew 6:15.",
+   "evidence": "Hosted Mark 11:26: \"But if you do not forgive, neither will your Father in heaven forgive your transgressions.\" Briefing debates discuss manuscripts only for Mark's ending at 16:8/16:9-20, not for 11:26.",
+   "problem": "A manuscript-history claim about 11:26 is stated as fact although neither the hosted chapter nor the briefing's textual discussion supports it."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[8].answer",
+   "guideText": "It is a recognized style of rabbinic debate, not evasion.",
+   "evidence": "Mark 11:29: \"I will ask you one question. Answer me, and I will tell you by what authority I do these things.\"",
+   "problem": "The rabbinic-debate classification is a historical claim stated as fact with no support in the chapter or briefing."
+  },
+  {
+   "chapter": 11,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "overreach",
+   "where": "questions[8].answer",
+   "guideText": "Their answer is that they do not know, which is not true, and he declines to trade on it.",
+   "evidence": "Mark 11:33: \"They answered Jesus, “We don’t know.”\"",
+   "problem": "The text shows their calculation in 11:31-32 but does not state that their answer was false; the guide invents that motive as fact."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea — Mark prices the widow's coins in a Roman quadrans so they can picture the amount",
+   "evidence": "bookBriefing.facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference...\"",
+   "problem": "The guide drops the book briefing's uncertainty (\"Likely\", \"That is an inference\") and states the audience and reason for the Roman coin conversion as settled fact."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.setting",
+   "guideText": "The temple courts in Jerusalem, midweek of Passover, in public, with crowds listening",
+   "evidence": "bookBriefing.shape[2]: \"The last week — Jerusalem\" (chapters 11–16); Mark 12:35: \"as he taught in the temple\"",
+   "problem": "Neither Mark 12 nor the book briefing places these events specifically at \"midweek of Passover.\""
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[0].def",
+   "guideText": "They disappear from history after the temple's destruction in AD 70.",
+   "evidence": "Mark 12:18–27 and bookBriefing contain no claim about the Sadducees disappearing after AD 70.",
+   "problem": "The guide makes an unhedged historical claim about the Sadducees disappearing after AD 70 without support from the chapter text or book briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[2].def",
+   "guideText": "roughly a day's wage, carrying the emperor's portrait and a title claiming divine descent.",
+   "evidence": "Mark 12:15–16 mentions only a \"denarius\" and \"Caesar's\" image and inscription; bookBriefing does not describe the coin.",
+   "problem": "The guide states as fact the denarius's value as a day's wage and its specific inscription claiming divine descent without support from the chapter text or book briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "Named for its first Hebrew word, 'hear.'",
+   "evidence": "Mark 12:29 (\"Hear, Israel, the Lord our God, the Lord is one.\") and bookBriefing.language do not mention the Hebrew word Shema or its meaning.",
+   "problem": "The guide makes a Hebrew linguistic claim that is not in the chapter text or the book briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "Mark converts the widow's two lepta into it",
+   "evidence": "Mark 12:42: \"A poor widow came and she cast in two small brass coins, which equal a quadrans coin.\" Neither Mark 12 nor bookBriefing mentions the Greek word lepta.",
+   "problem": "The guide introduces the Greek word \"lepta,\" which is not in the hosted translation or the book briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[5].def",
+   "guideText": "Collection receptacles in the temple's Court of the Women",
+   "evidence": "Mark 12:41: \"Jesus sat down opposite the treasury and saw how the multitude cast money into the treasury.\"",
+   "problem": "The guide locates the treasury in \"the temple's Court of the Women,\" an archaeological detail not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "and a revolt had been raised over this very tax within living memory.",
+   "evidence": "Mark 12:13–17 and bookBriefing contain no mention of a revolt over the Roman tax.",
+   "problem": "The guide states as historical fact that a revolt had been raised over this tax within living memory without support from the chapter text or book briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "he is using the word that appears in Genesis 1:27: humans are made in God's image.",
+   "evidence": "Mark 12:16 (\"Whose is this image and inscription?\") and bookBriefing.language contain no mention of Genesis 1:27 or a shared Greek word.",
+   "problem": "The guide makes an unsupported Greek linguistic claim linking the wording of Mark 12:16 to Genesis 1:27."
+  },
+  {
+   "chapter": 12,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "an inscription naming him son of the divine Augustus",
+   "evidence": "Mark 12:16: \"He said to them, “Whose is this image and inscription?” They said to him, “Caesar’s.”\"",
+   "problem": "The guide states the specific wording of the coin's inscription as fact, which neither the chapter text nor the book briefing supports."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea — Mark prices the widow's coins in a Roman quadrans so they can picture the amount",
+   "evidence": "Briefing facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"",
+   "problem": "The guide states an inferred audience as settled fact and drops the briefing's uncertainty."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s",
+   "evidence": "Briefing facts.writtenWhen: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\"",
+   "problem": "The guide widens the briefing's main dating range into the 50s and presents the range without its stated uncertainty."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "The temple courts in Jerusalem, midweek of Passover, in public, with crowds listening",
+   "evidence": "Mark 12:35: \"Jesus responded, as he taught in the temple\"; neither Mark 12 nor the briefing supplies a Passover weekday for this chapter.",
+   "problem": "The specific Passover timing is stated as fact without support from the chapter text or briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[0].def",
+   "guideText": "They disappear from history after the temple's destruction in AD 70.",
+   "evidence": "Mark 12:18 identifies Sadducees only as those \"who say that there is no resurrection\"; neither Mark 12 nor the briefing dates their disappearance.",
+   "problem": "The AD 70 disappearance claim is an unsupported historical and dating assertion."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[2].def",
+   "guideText": "A Roman silver coin, roughly a day's wage, carrying the emperor's portrait and a title claiming divine descent.",
+   "evidence": "Mark 12:15-16 mentions a denarius and Caesar's \"image and inscription\" but gives neither its wage value nor the inscription's divine-descent wording.",
+   "problem": "The coin's wage equivalence and inscription content are unsupported by the hosted text or briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[3].def",
+   "guideText": "Named for its first Hebrew word, 'hear.'",
+   "evidence": "The briefing's language section gives no Hebrew form or meaning for Shema; its supplied examples are Mark's preserved Aramaic forms.",
+   "problem": "This Hebrew linguistic claim is not supported by the supplied briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "The smallest Roman coin. Mark converts the widow's two lepta into it so readers using Roman money understand how little it was.",
+   "evidence": "Mark 12:42: \"A poor widow came and she cast in two small brass coins, which equal a quadrans coin.\"; the hosted text does not use \"lepta\" or call the quadrans the smallest Roman coin.",
+   "problem": "The Greek coin name and smallest-coin claim go beyond the hosted translation and briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[5].def",
+   "guideText": "Collection receptacles in the temple's Court of the Women, where offerings were deposited publicly",
+   "evidence": "Mark 12:41: \"Jesus sat down opposite the treasury and saw how the multitude cast money into the treasury.\"; neither Mark 12 nor the briefing locates the treasury in the Court of the Women.",
+   "problem": "The Court of the Women location is an unsupported archaeological and historical detail."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "wrong-chapter",
+   "where": "keyVerses[3].why",
+   "guideText": "The last thing Jesus does in the temple before leaving it for good is notice her.",
+   "evidence": "Mark 12:44 ends with the widow saying; Mark 12 contains no departure from the temple, which belongs to the following chapter's movement.",
+   "problem": "The guide imports a later departure and presents it as the frame for this chapter's final scene."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[0].answer",
+   "guideText": "So the owner is God, the vineyard is Israel, the tenants are its current leadership, the beaten servants are the prophets, and the son is unmistakable. It is a prediction of his own murder told to the men about to arrange it.",
+   "evidence": "Mark 12:12: \"they perceived that he spoke the parable against them\"; Mark 12 does not name the owner, vineyard, servants, or son with those identifications.",
+   "problem": "The guide presents a full allegorical identification and predictive intention as settled rather than as an interpretation of the parable."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "The tax was a Roman head tax paid by subject peoples, and it was hated as a badge of occupation — saying yes would discredit him with the crowd, and a revolt had been raised over this very tax within living memory.",
+   "evidence": "Mark 12:14 asks only, \"Is it lawful to pay taxes to Caesar, or not?\"; neither Mark 12 nor the briefing describes a head tax or a revolt over it.",
+   "problem": "Historical claims about the tax and a prior revolt are stated as fact without grounding in the supplied sources."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "The coin carried Caesar's portrait and an inscription naming him son of the divine Augustus, which made it offensive on two counts under Jewish law.",
+   "evidence": "Mark 12:16: \"Whose is this image and inscription? They said to him, 'Caesar's.'\"; the verse does not give the inscription's wording or a two-count legal offence.",
+   "problem": "The inscription's content and its alleged legal offensiveness are not supported by the hosted text or briefing."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "he is using the word that appears in Genesis 1:27: humans are made in God's image",
+   "evidence": "Mark 12:16 uses \"image\" in the hosted English; the briefing supplies no Genesis 1:27 Greek-word claim and warns that English wording is not by itself evidence for the Greek.",
+   "problem": "The guide makes an underlying-language word claim that the briefing does not support."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "The temple aristocracy — wealthy, priestly, politically pragmatic, and cooperative with Rome. They accepted the authority of the five books of Moses above the rest, and since resurrection is not taught explicitly there, they rejected it.",
+   "evidence": "Mark 12:18: \"Some Sadducees, who say that there is no resurrection, came to him.\"; neither Mark 12 nor the briefing supplies this social profile or canon explanation.",
+   "problem": "The Sadducees' status, politics, and reason for rejecting resurrection are stated as fact without supplied support."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[8].answer",
+   "guideText": "Devout Jews recited it twice daily; it is the closest thing to a creed in Judaism.",
+   "evidence": "Mark 12:29: \"Hear, Israel, the Lord our God, the Lord is one.\"; neither Mark 12 nor the briefing states a twice-daily recitation practice.",
+   "problem": "The recitation frequency and creed comparison are historical claims unsupported by the grounding bundle."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[9].answer",
+   "guideText": "so if David calls this figure his Lord, the Messiah cannot be merely David's descendant",
+   "evidence": "Mark 12:37: \"Therefore David himself calls him Lord, so how can he be his son?\"; Jesus poses the question and the chapter supplies no explanatory verdict.",
+   "problem": "The guide turns Jesus' unanswered riddle into a settled conclusion about what the Messiah cannot be."
+  },
+  {
+   "chapter": 12,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "whyItMatters",
+   "guideText": "pointing at the poorest person in the building as the one who got it right",
+   "evidence": "Mark 12:43-44 says the widow \"gave more\" because she gave \"all that she had to live on\"; it does not call her the building's poorest person or say she \"got it right.\"",
+   "problem": "The guide adds a superlative and forces a commendation verdict beyond what Jesus' words state."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "A community already facing arrest and betrayal — verses 9-13 read as instructions to people expecting it, not as distant prediction",
+   "evidence": "bookBriefing.facts.writtenFor: 'Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.'",
+   "problem": "The audience field drops the briefing's tentative identification of Greek-speaking readers outside Judea (probably including Gentiles) and asserts a specific historical situation as settled."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "Herod's rebuilt complex, one of the largest religious structures in the Roman world, with foundation stones weighing many tons",
+   "evidence": "Mark 13:1-3 and bookBriefing (neither mentions Herod's rebuilt complex, its size in the Roman world, or stone weights)",
+   "problem": "Neither the hosted chapter text nor the book briefing supports these historical and archaeological claims about Herod's temple complex."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "Originally applied to Antiochus IV's pagan altar in 167 BC.",
+   "evidence": "Mark 13:14 and bookBriefing (neither mentions Antiochus IV or 167 BC)",
+   "problem": "The glossary states the 167 BC Antiochus IV identification as fact without support in the chapter text or book briefing."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "glossary[4].def",
+   "guideText": "Used four times in this chapter, always in contexts of protection and gathering.",
+   "evidence": "Mark 13:20, 13:22, 13:27 ('chosen ones' appears three times in the hosted text)",
+   "problem": "The hosted chapter text uses 'chosen ones' three times (verses 20, 22, and 27), not four times."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Herod the Great's expansion of the temple had been under construction for decades and was among the largest sacred complexes in the Roman world, built with dressed stones so large that visitors remarked on them — some in the retaining walls weigh many tons and are still in place today.",
+   "evidence": "Mark 13:1-2 and bookBriefing (neither mentions Herod the Great, decades of construction, dressed stones, or surviving retaining walls)",
+   "problem": "The guide states historical and archaeological details about Herod's temple expansion and surviving retaining-wall stones as fact without support in the chapter text or book briefing."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "In AD 70, at the end of a Jewish revolt against Rome, the legions under Titus took Jerusalem, burned the temple, and dismantled the complex. The Jewish historian Josephus, who was present on the Roman side, describes it at length. That event is why the Sadducees vanish from history and why Judaism reorganized around synagogue and study.",
+   "evidence": "bookBriefing.debates (mentions only 'Rome's destruction of the temple in AD 70')",
+   "problem": "The guide states historical claims about Titus, Josephus, the Sadducees, and post-70 Judaism as fact beyond what the book briefing supports."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "originally pointed at Antiochus IV, who in 167 BC set up a pagan altar in the Jerusalem temple and sacrificed a pig on it — an act remembered with horror and recounted in 1 Maccabees.",
+   "evidence": "Mark 13:14 and bookBriefing (neither mentions Antiochus IV, 167 BC, a pig sacrifice, or 1 Maccabees)",
+   "problem": "The historical and dating claim about Antiochus IV, 167 BC, a pig sacrifice, and 1 Maccabees is stated as fact without support in the chapter text or book briefing."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "Early Christian tradition holds that believers fled Jerusalem before the siege closed.",
+   "evidence": "Mark 13:15-18 and bookBriefing (neither mentions this early Christian tradition)",
+   "problem": "The guide cites an external historical tradition about believers fleeing Jerusalem that is not supported by the chapter text or book briefing."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "Others take the Greek word for generation in a broader sense, as a kind or race of people.",
+   "evidence": "bookBriefing.language (does not include any claim about the Greek word for 'generation')",
+   "problem": "The guide introduces a Greek lexical claim about the word for 'generation' that is not in the supplied book briefing."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "Those are the four Roman night watches",
+   "evidence": "Mark 13:35 and bookBriefing (neither identifies these four times as Roman night watches)",
+   "problem": "Identifying the four times in verse 35 as the four Roman night watches is a historical claim not supported by the chapter text or book briefing."
+  },
+  {
+   "chapter": 13,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "contradiction",
+   "where": "summary",
+   "guideText": "standing in the temple",
+   "evidence": "Mark 13:14: 'standing where it ought not'",
+   "problem": "The summary specifies 'standing in the temple,' whereas Mark 13:14 says 'standing where it ought not' without naming the temple."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "A community already facing arrest and betrayal — verses 9-13 read as instructions to people expecting it, not as distant prediction",
+   "evidence": "Briefing writtenFor: “Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.”",
+   "problem": "The guide replaces the briefing’s inferred audience and its uncertainty with an unsupported persecuted-community audience."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s.",
+   "evidence": "Briefing writtenWhen: “Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended. Chapter 13 is central to the debate below.”",
+   "problem": "The guide presents a broader date range as settled context and drops the briefing’s stated scholarly range and debate."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.literaryForm",
+   "guideText": "Apocalyptic discourse — a recognized ancient genre using cosmic imagery, urgency, and coded reference to speak about historical upheaval",
+   "evidence": "Briefing form: “Gospel — an ancient life-of-a-person written to persuade, not a diary or a news report”",
+   "problem": "The literaryForm field disagrees with the book briefing’s stated form for Mark."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "Herod's rebuilt complex, one of the largest religious structures in the Roman world, with foundation stones weighing many tons",
+   "evidence": "Mark 13:1: “see what kind of stones and what kind of buildings!”; briefing whereYouAre says only “The temple is standing at the center of Jewish worship.”",
+   "problem": "Neither the chapter text nor the briefing supports the Herod, size-ranking, or stone-weight claims."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "Originally applied to Antiochus IV's pagan altar in 167 BC.",
+   "evidence": "Mark 13:14: “the abomination of desolation, spoken of by Daniel the prophet, standing where it ought not”",
+   "problem": "The Antiochus application and date are not supported by the chapter text or the briefing."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[2].def",
+   "guideText": "A standard Jewish image for the distress preceding God's decisive act.",
+   "evidence": "Mark 13:8: “These things are the beginning of birth pains.”",
+   "problem": "The verse uses the image but does not establish that it was a standard Jewish image, and the briefing does not support that background claim."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "glossary[4].def",
+   "guideText": "Used four times in this chapter, always in contexts of protection and gathering.",
+   "evidence": "Mark 13:20 “for the sake of the chosen ones”; 13:22 “even the chosen ones”; 13:27 “gather together his chosen ones” — three occurrences in the hosted chapter.",
+   "problem": "The hosted chapter uses “chosen ones” three times, not four."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Herod the Great's expansion of the temple had been under construction for decades and was among the largest sacred complexes in the Roman world, built with dressed stones so large that visitors remarked on them — some in the retaining walls weigh many tons and are still in place today.",
+   "evidence": "Mark 13:1: “Teacher, see what kind of stones and what kind of buildings!”; briefing whereYouAre says only “The temple is standing at the center of Jewish worship.”",
+   "problem": "The construction history, comparative size, visitor remarks, stone weights, and present survival are not supported by the chapter text or briefing."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "The Jewish historian Josephus, who was present on the Roman side, describes it at length. That event is why the Sadducees vanish from history and why Judaism reorganized around synagogue and study.",
+   "evidence": "Briefing debate: “Rome's destruction of the temple in AD 70” is the only destruction detail supplied; neither the chapter text nor briefing mentions Josephus, the Sadducees, or a reorganization around synagogue and study.",
+   "problem": "These historical and causal claims are stated as fact without support in the grounding bundle."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "The phrase comes from Daniel (9:27, 11:31, 12:11) and originally pointed at Antiochus IV, who in 167 BC set up a pagan altar in the Jerusalem temple and sacrificed a pig on it — an act remembered with horror and recounted in 1 Maccabees.",
+   "evidence": "Mark 13:14: “the abomination of desolation, spoken of by Daniel the prophet, standing where it ought not”",
+   "problem": "The chapter names Daniel but does not support the Antiochus date, altar, pig sacrifice, or 1 Maccabees claims, and the briefing does not supply them either."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "Others take the Greek word for generation in a broader sense, as a kind or race of people.",
+   "evidence": "Mark 13:30: “this generation will not pass away until all these things happen.”; the briefing’s language section gives no claim about the Greek word for “generation.”",
+   "problem": "This Greek lexical claim is not in the supplied briefing and should be left out under the guide’s grounding rules."
+  },
+  {
+   "chapter": 13,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "Those are the four Roman night watches, and they are the exact stages of the next two chapters: the supper in the evening, Gethsemane at midnight, Peter's denial at cockcrow, the handover to Pilate in the morning.",
+   "evidence": "Mark 13:35: “whether at evening, or at midnight, or when the rooster crows, or in the morning”",
+   "problem": "The verse lists four times but neither the chapter text nor briefing supports calling them Roman night watches or mapping them exactly onto events in the next two chapters."
+  },
+  {
+   "chapter": 14,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea; Mark keeps the Aramaic 'Abba' and explains the Passover timing",
+   "evidence": "bookBriefing.facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.\"",
+   "problem": "The audience field drops the book briefing's uncertainty (\"Likely... That is an inference\") and presents the audience as settled fact."
+  },
+  {
+   "chapter": 14,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.literaryForm",
+   "guideText": "the oldest continuous block of gospel tradition",
+   "evidence": "bookBriefing.form.name (\"Gospel — an ancient life-of-a-person written to persuade, not a diary or a news report\") and bookBriefing.debates (\"Was Mark written first?\")",
+   "problem": "Neither the chapter text nor the book briefing supports the source-critical claim that the passion narrative is the oldest continuous block of gospel tradition."
+  },
+  {
+   "chapter": 14,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "context.setting",
+   "guideText": "Bethany, an upper room in Jerusalem, the Mount of Olives, Gethsemane, and the high priest's house — all within one night",
+   "evidence": "14:1 (\"It was now two days before the Passover and the Feast of Unleavened Bread\") and 14:12 (\"On the first day of unleavened bread, when they sacrificed the Passover\")",
+   "problem": "The chapter places the Bethany scene two days before the Passover (14:1-9) and the upper room, Mount of Olives, Gethsemane, and high priest's house on the day of Passover and that night (14:12-72), so they do not all happen within one night."
+  },
+  {
+   "chapter": 14,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Three hundred denarii is close to a year's wages for a labourer. Nard was imported from the Himalayan region, and the jar was sealed — breaking it meant it could not be resealed or used sparingly.",
+   "evidence": "14:3 (\"an alabaster jar of ointment of pure nard—very costly. She broke the jar and poured it over his head.\") and 14:5 (\"more than three hundred denarii\")",
+   "problem": "The historical and material claims about a year's wages, Himalayan import, and jar sealing are stated as fact without hedging and are not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 14,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "must-fix",
+   "kind": "wrong-chapter",
+   "where": "questions[4].answer",
+   "guideText": "and he told them to keep doing it.",
+   "evidence": "14:22-25 (\"Take, eat. This is my body... This is my blood of the new covenant, which is poured out for many.\")",
+   "problem": "Mark 14 does not include a command to repeat the meal; that instruction belongs to other New Testament accounts rather than this chapter."
+  },
+  {
+   "chapter": 14,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "It is the ordinary Aramaic word a child used for their father — warm and familial, though not baby talk as is sometimes claimed.",
+   "evidence": "bookBriefing.language.examples (14:36: \"Abba\" — \"Father\"; \"Mark places the Aramaic address beside its Greek equivalent in Jesus's prayer in Gethsemane.\")",
+   "problem": "The linguistic claim about how children used \"Abba\" and its warm, familial register goes beyond what the chapter text or book briefing supports."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea; Mark keeps the Aramaic 'Abba' and explains the Passover timing",
+   "evidence": "Briefing writtenFor: “Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference”",
+   "problem": "The guide states the briefing’s inferred audience as settled fact and drops its uncertainty."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.literaryForm",
+   "guideText": "Passion narrative, the oldest continuous block of gospel tradition, with Mark's sandwich technique framing the trial and the denial",
+   "evidence": "Briefing form: “Gospel — an ancient life-of-a-person written to persuade, not a diary or a news report”",
+   "problem": "The field replaces the briefing’s literary form and adds an unsupported claim that this is the oldest continuous block of gospel tradition."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.setting",
+   "guideText": "Bethany, an upper room in Jerusalem, the Mount of Olives, Gethsemane, and the high priest's house — all within one night",
+   "evidence": "14:1 “It was now two days before the Passover”; 14:12 “On the first day of unleavened bread, when they sacrificed the Passover”",
+   "problem": "The chapter spans from two days before Passover to the Passover night, so the events are not all within one night."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "misquote",
+   "where": "keyVerses[0].text",
+   "guideText": "wherever this Good News may be preached throughout the whole world, that which this woman has done will also be spoken of for a memorial of her.",
+   "evidence": "14:9 “Most certainly I tell you, wherever this Good News may be preached throughout the whole world, that which this woman has done will also be spoken of for a memorial of her.”",
+   "problem": "The quotation silently omits the opening words of the hosted verse without an ellipsis."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "contradiction",
+   "where": "outline[8].heading",
+   "guideText": "Denial — inner half resolved",
+   "evidence": "14:54 Peter is placed in the courtyard before the trial; 14:66 returns to Peter below; briefing form describes “Jesus on trial upstairs while Peter denies him in the courtyard below (14:53-72)”",
+   "problem": "Peter’s denial is the outer frame of the sandwich and the trial is the inner scene, not the reverse."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "Three hundred denarii is close to a year's wages for a labourer. Nard was imported from the Himalayan region, and the jar was sealed — breaking it meant it could not be resealed or used sparingly.",
+   "evidence": "14:3 “an alabaster jar of ointment of pure nard—very costly. She broke the jar”; 14:5 “more than three hundred denarii”",
+   "problem": "Neither the chapter text nor the briefing supports the wage comparison, Himalayan origin, or sealed-jar claims."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[11].answer",
+   "guideText": "a phrase that also echoes the divine name in Exodus 3:14",
+   "evidence": "14:62 “I am. You will see the Son of Man sitting at the right hand of Power, and coming with the clouds of the sky”",
+   "problem": "Neither the chapter text nor the briefing supports the linguistic claim that this “I am” echoes the divine name in Exodus 3:14."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[11].answer",
+   "guideText": "The high priest tears his clothes, the prescribed response to hearing blasphemy, and no further witnesses are needed.",
+   "evidence": "14:63 “The high priest tore his clothes and said, “What further need have we of witnesses?””",
+   "problem": "The verse reports the tearing but neither it nor the briefing supports the claim that this was the prescribed response to blasphemy."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "Pouring oil on the head is how kings were anointed in Israel — the word Messiah means anointed one.",
+   "evidence": "14:3 “poured it over his head”; 14:8 “She has anointed my body beforehand for the burying”",
+   "problem": "The chapter and briefing do not support the historical claim that this head-pouring reproduces Israel’s royal anointing practice."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "Because carrying water was women's work, so a man doing it stood out in a crowded festival city.",
+   "evidence": "14:13 “a man carrying a pitcher of water will meet you”",
+   "problem": "The social-history claim that water-carrying was women’s work is stated as fact but is supported by neither the chapter text nor the briefing."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "wrong-chapter",
+   "where": "questions[4].answer",
+   "guideText": "What every side agrees on: he said it at a Passover meal, where the bread and herbs were already understood to make a past deliverance present to the people eating, and he told them to keep doing it.",
+   "evidence": "14:22 “Take, eat. This is my body”; 14:24 “This is my blood of the new covenant, which is poured out for many”",
+   "problem": "Mark 14 contains no instruction to keep repeating the meal; that command belongs to other accounts and is imported here."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[7].answer",
+   "guideText": "It is the ordinary Aramaic word a child used for their father — warm and familial, though not baby talk as is sometimes claimed.",
+   "evidence": "Briefing language example 14:36: Abba, meaning “Father”; “Mark places the Aramaic address beside its Greek equivalent in Jesus's prayer in Gethsemane”",
+   "problem": "The briefing supports only the meaning “Father,” not the child-language or familial-register claims."
+  },
+  {
+   "chapter": 14,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[8].answer",
+   "guideText": "a writer inventing the scene would probably have tidied this, and would almost certainly not have made his own sources the men who slept through it.",
+   "evidence": "Briefing writtenBy: “Anonymous in the narrative itself… Papias, names Mark as Peter's interpreter”; 14:37-41 describes the disciples sleeping but identifies no sources for Mark",
+   "problem": "The guide turns an apologetic inference about invention and sources into near-certainty that the sources do not establish."
+  },
+  {
+   "chapter": 15,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "The name means, roughly, 'son of the father' — an irony most readers have noticed.",
+   "evidence": "Mark 15:7, 11, 15 and bookBriefing (Barabbas's name is not translated or explained in the chapter text or the briefing).",
+   "problem": "The guide states an Aramaic etymology for Barabbas as fact, which neither the chapter text nor the book briefing supports."
+  },
+  {
+   "chapter": 15,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "the thorn crown parodies the radiate crowns on imperial coins",
+   "evidence": "Mark 15:17 (\"weaving a crown of thorns, they put it on him\") and bookBriefing (no mention of radiate crowns or imperial coins).",
+   "problem": "The guide states a specific historical/numismatic claim about imperial coins as fact without support in the chapter text or book briefing."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Readers in the Roman world who knew what crucifixion was — Mark uses Latin terms and names Simon's sons as if they were known to his community",
+   "evidence": "Briefing writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles\"; place: \"Traditionally Rome. Latin loanwords fit that setting but do not prove it, and Syria is a major alternative\"",
+   "problem": "The guide narrows the audience to the Roman world and presents a debated Rome inference as settled context."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.setting",
+   "guideText": "Golgotha outside the city wall",
+   "evidence": "Mark 15:22: \"They brought him to the place called Golgotha, which is, being interpreted, “The place of a skull.”\"",
+   "problem": "The chapter does not say Golgotha was outside the city wall, and the briefing does not supply that location claim."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[1].def",
+   "guideText": "The name means, roughly, 'son of the father'",
+   "evidence": "Mark 15:7: \"There was one called Barabbas, bound with his fellow insurgents\"; briefing language examples for 15:34 identify only \"Eloi, Eloi, lama sabachthani?\"",
+   "problem": "The Barabbas etymology is a linguistic claim that neither the chapter nor the briefing supplies."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "glossary[2].def",
+   "guideText": "A Roman public execution reserved for slaves, rebels, and the lowest criminals, designed to be slow, exposed, and humiliating. Roman citizens were normally exempt from it.",
+   "evidence": "Mark 15:24: \"Crucifying him, they parted his garments among them\"; the briefing gives no crucifixion eligibility or citizen-exemption claim.",
+   "problem": "These historical claims about crucifixion are stated as fact without support in the chapter or briefing."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[4].def",
+   "guideText": "Counted from sunrise: roughly 9 a.m., noon, and 3 p.m.",
+   "evidence": "Mark 15:25: \"It was the third hour\"; 15:33-34 refer to \"the sixth hour\" and \"the ninth hour\" without a sunrise conversion.",
+   "problem": "The chapter and briefing do not support the sunrise-based clock conversion."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "glossary[6].def",
+   "guideText": "A Roman officer commanding around eighty men.",
+   "evidence": "Mark 15:39: \"When the centurion, who stood by opposite him, saw that he cried out like this and breathed his last\"",
+   "problem": "The chapter and briefing do not give the number of men commanded by this centurion."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "contradiction",
+   "where": "questions[0].answer",
+   "guideText": "his one question is whether Jesus claims to be King of the Jews",
+   "evidence": "Mark 15:4: \"Pilate again asked him, “Have you no answer? See how many things they testify against you!”\"; 15:9, 15:12 and 15:14 also record Pilate asking questions.",
+   "problem": "Pilate asks more than one question in the chapter, so this is not his one question."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[10].answer",
+   "guideText": "A heavy woven veil separating the innermost sanctuary — the Most Holy Place, which only the high priest entered, once a year — from the rest of the temple.",
+   "evidence": "Mark 15:38: \"The veil of the temple was torn in two from the top to the bottom.\"",
+   "problem": "The chapter and briefing do not supply these details about the veil, the Most Holy Place, or annual entry."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[10].answer",
+   "guideText": "torn from the top to the bottom, which is to say not by human hands",
+   "evidence": "Mark 15:38: \"The veil of the temple was torn in two from the top to the bottom.\"",
+   "problem": "The verse gives the direction of the tear but does not state that no human hands caused it."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[10].answer",
+   "guideText": "it happens in a building on the other side of the city from Golgotha",
+   "evidence": "Mark 15:22 names Golgotha only as \"The place of a skull\"; 15:38 says only \"The veil of the temple was torn.\"",
+   "problem": "Neither the chapter nor the briefing gives this relative location for the temple and Golgotha."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[13].answer",
+   "guideText": "Crucified bodies were normally left to hang or thrown into a common grave; that was part of the punishment.",
+   "evidence": "Mark 15:46: Joseph \"laid him in a tomb which had been cut out of a rock. He rolled a stone against the door of the tomb.\"",
+   "problem": "The normal-disposal practice is stated as fact but is supported by neither the chapter nor the briefing."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[2].answer",
+   "guideText": "takes the one who actually led an armed uprising over the one accused of it",
+   "evidence": "Mark 15:7: \"There was one called Barabbas, bound with his fellow insurgents, men who in the insurrection had committed murder.\"",
+   "problem": "The verse associates Barabbas with insurgents but does not say he led the uprising."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "while the Galilean pilgrims who lined the road are elsewhere",
+   "evidence": "Mark 15:11: \"But the chief priests stirred up the multitude, that he should release Barabbas to them instead.\"",
+   "problem": "The chapter says nothing about where Galilean pilgrims were during this scene."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "purple was the colour of royalty because the dye was ruinously expensive, the thorn crown parodies the radiate crowns on imperial coins",
+   "evidence": "Mark 15:17: \"They clothed him with purple; and weaving a crown of thorns, they put it on him.\"",
+   "problem": "Neither the chapter nor the briefing supports the dye-cost or imperial-coin claims."
+  },
+  {
+   "chapter": 15,
+   "reader": "muse-wonder-1.0",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[4].answer",
+   "guideText": "the sign nailed over his head says the same thing in earnest",
+   "evidence": "Mark 15:26: \"The superscription of his accusation was written over him: “THE KING OF THE JEWS.”\"",
+   "problem": "The hosted text calls it a written superscription and does not say a sign was nailed over his head."
+  },
+  {
+   "chapter": 16,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, who would have known the risen Jesus story already from preaching before they ever read it here",
+   "evidence": "bookBriefing.facts.writtenFor: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference: the book explains Jewish handwashing customs (7:3-4) and translates the Aramaic phrases it quotes.\"",
+   "problem": "The audience field drops the book briefing's uncertainty (\"Likely\") and adds an unsupported claim about what readers already knew from preaching."
+  },
+  {
+   "chapter": 16,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.literaryForm",
+   "guideText": "The Greek of verse 8 finishes on a conjunction, which is an unusual way to end a sentence, let alone a book",
+   "evidence": "bookBriefing.language and bookBriefing.debates[1]",
+   "problem": "This linguistic claim about the Greek of verse 8 finishing on a conjunction does not appear in the chapter text or the book briefing."
+  },
+  {
+   "chapter": 16,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "So do the oldest Syriac, an old Latin manuscript, and the earliest Armenian and Georgian versions.",
+   "evidence": "bookBriefing.debates[1].positions[0]",
+   "problem": "The book briefing cites Codex Sinaiticus, Codex Vaticanus, Eusebius, and Jerome, but does not mention Syriac, Old Latin, Armenian, or Georgian manuscripts."
+  },
+  {
+   "chapter": 16,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "several different endings survive in the manuscript tradition — a shorter one, this longer one, both together, and this one with an extra insertion",
+   "evidence": "bookBriefing.debates[1]",
+   "problem": "Neither the chapter text nor the book briefing mentions a shorter ending, combined endings, or an extra insertion in the manuscript tradition."
+  },
+  {
+   "chapter": 16,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[5].answer",
+   "guideText": "and Mark, the earliest,",
+   "evidence": "bookBriefing.debates[2]: \"Was Mark written first?\" lists both \"Mark first (Markan priority)\" and \"Matthew first\"",
+   "problem": "The guide states as settled fact that Mark is the earliest gospel even though the book briefing presents Markan priority versus Matthew-first as an open debate."
+  },
+  {
+   "chapter": 16,
+   "reader": "gemini-4-hydrogen-medium",
+   "severity": "note",
+   "kind": "unsupported",
+   "where": "questions[6].answer",
+   "guideText": "since Mark uses the same word,",
+   "evidence": "bookBriefing.language and Mark 16:5",
+   "problem": "The claim that Mark uses the same word in 14:51-52 and 16:5 is a Greek vocabulary claim not supported by the chapter text or the book briefing."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "context-mismatch",
+   "where": "context.audience",
+   "guideText": "Greek-speaking readers outside Judea, who would have known the risen Jesus story already from preaching before they ever read it here",
+   "evidence": "Briefing writtenFor: “Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference”",
+   "problem": "The guide drops the briefing’s uncertainty and adds prior knowledge of the resurrection story that the briefing does not state."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "context-mismatch",
+   "where": "context.date",
+   "guideText": "Somewhere in the AD 50s–70s; verses 9-20 are generally dated later than the rest",
+   "evidence": "Briefing writtenWhen: “Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.”",
+   "problem": "The guide changes the briefing’s dating range and adds a separate dating claim for verses 9-20 that the briefing does not give."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "context.literaryForm",
+   "guideText": "The Greek of verse 8 finishes on a conjunction, which is an unusual way to end a sentence, let alone a book",
+   "evidence": "Briefing debate on the ending says Sinaiticus and Vaticanus “stop at 16:8, with the women fleeing in silence” and gives no claim about the Greek final word being a conjunction.",
+   "problem": "This Greek claim is stated as fact but is not supported by the hosted chapter text or the book briefing."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[0].answer",
+   "guideText": "So do the oldest Syriac, an old Latin manuscript, and the earliest Armenian and Georgian versions.",
+   "evidence": "Briefing debate grounds: “The two oldest complete Greek Bibles — Codex Sinaiticus and Codex Vaticanus, both 4th century — stop at 16:8. Eusebius and Jerome both report that the accurate copies available to them ended there.”",
+   "problem": "The Syriac, Latin, Armenian, and Georgian manuscript claims are not supported by the supplied briefing."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "overreach",
+   "where": "questions[10].answer",
+   "guideText": "Then read 9-20 knowing what they are: an early and widely received summary of appearances recorded elsewhere, added by a hand other than the one that wrote the rest.",
+   "evidence": "Briefing debate position: “The longer ending, 16:9-20, belongs” because “It is in the vast majority of surviving manuscripts and was quoted as scripture by the 2nd century” and is canonical in Catholic and Orthodox tradition.",
+   "problem": "The guide presents one side of a live textual debate as settled fact instead of preserving the disagreement named in the briefing."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[1].answer",
+   "guideText": "Variants: several different endings survive in the manuscript tradition — a shorter one, this longer one, both together, and this one with an extra insertion — which is the pattern you get when copyists are trying to solve a problem, not when they are transmitting an original.",
+   "evidence": "Briefing debate on the ending supports only that Sinaiticus and Vaticanus stop at 16:8 and that verses 9-20 are in most manuscripts and quoted by the 2nd century.",
+   "problem": "The detailed list of ending variants and the conclusion about copyists’ motives are not supported by the supplied briefing."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[3].answer",
+   "guideText": "And Paul's list of resurrection witnesses in 1 Corinthians 15:3-8 is earlier than any of the gospels.",
+   "evidence": "TSK for 16:6 lists “1CO 15:3-7” only as a comparison reference; the briefing gives Mark’s date but no date for Paul or 1 Corinthians.",
+   "problem": "This dating claim is stated as fact without support in the chapter text or briefing."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "unsupported",
+   "where": "questions[5].answer",
+   "guideText": "In first-century Jewish and Roman society, a woman's testimony carried little weight and was in some legal settings not accepted at all.",
+   "evidence": "Mark 16:1 names “Mary Magdalene, and Mary the mother of James, and Salome”; neither that verse nor the briefing states the claimed legal status of women’s testimony.",
+   "problem": "This historical and legal claim is stated as fact but is unsupported by the grounding bundle."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "overreach",
+   "where": "questions[5].answer",
+   "guideText": "It is the kind of detail that is difficult to explain except as something the tradition was stuck with.",
+   "evidence": "Mark 16:1, 16:5, and 16:6 depict the women coming to the tomb and hearing the announcement; they do not establish why the tradition preserved their role.",
+   "problem": "The guide forces one historical explanation for the women’s presence instead of presenting it as a debated inference."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[6].answer",
+   "guideText": "Some connect him to the young man who fled naked in 14:51-52, since Mark uses the same word, which would make a quiet arc from a man losing his clothes in panic to a man seated in white announcing the resurrection.",
+   "evidence": "Mark 16:5 says only “a young man sitting on the right side, dressed in a white robe”; the briefing’s language section gives no same-Greek-word claim connecting 16:5 with 14:51-52.",
+   "problem": "The underlying Greek word claim is not supported by the supplied briefing."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "must-fix",
+   "kind": "contradiction",
+   "where": "questions[8].answer",
+   "guideText": "the last human action in Mark's gospel is a command disobeyed out of fear",
+   "evidence": "Mark 16:10: “She went and told those who had been with him”; Mark 16:20: “They went out and preached everywhere”",
+   "problem": "As written, this contradicts the hosted chapter, which continues beyond verse 8 with later human actions."
+  },
+  {
+   "chapter": 16,
+   "reader": "muse-wonder-1.0",
+   "severity": "should-fix",
+   "kind": "unsupported",
+   "where": "questions[9].answer",
+   "guideText": "A small number of groups have read it as a command and handled venomous snakes in worship, with fatalities; the overwhelming majority of Christian traditions read it as a description of protection in the course of the mission, not a practice to seek out.",
+   "evidence": "Mark 16:17-18 lists signs accompanying believers; neither those verses nor the briefing discusses snake-handling groups, fatalities, or the view of the overwhelming majority of traditions.",
+   "problem": "These historical and tradition-wide claims are stated as fact without support in the grounding bundle."
+  }
+ ]
+}

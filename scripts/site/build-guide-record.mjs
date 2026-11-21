@@ -22,7 +22,9 @@ import { fileURLToPath } from "node:url";
 import { validateGuideContract } from "../lib/guide-validation.mjs";
 import { prepareTarget } from "../scriptures/build-guides-v2.mjs";
 import {
-  GUIDE_RUBRIC_VERSION,
+  GUIDE_RUBRICS,
+  NO_PROVENANCE_MESSAGE,
+  isSupportedRubric,
   loadHostedTexts,
   validateGuideV2,
 } from "../scriptures/guide-validation.mjs";
@@ -32,8 +34,11 @@ export const GUIDE_RECORD_PATH = path.join(ROOT, "public/meta/guide-record.json"
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 
-/** validateGuideV2 says this of any guide that predates the rubric; it is the state, not a problem. */
-const NO_PROVENANCE = /missing or malformed guide-v2 generation provenance/;
+/** validateGuideV2 says this of any guide locked to no supported rubric; it is the state, not a problem. */
+const isNoProvenance = (message) => message.endsWith(NO_PROVENANCE_MESSAGE);
+
+/** The supported rubrics, in the order a row's `rubric` index refers to. */
+const RUBRICS = Object.keys(GUIDE_RUBRICS);
 
 const REVIEW = { "agent-reviewed": "agent", "human-reviewed": "human" };
 
@@ -79,18 +84,24 @@ export function collectGuideRecord() {
       validateGuideContract(guide, { bookId: id, bookName: meta.name, chapter, hostedTexts });
 
       const verses = primary?.chapters?.[chapter - 1]?.length ?? 0;
-      const onRubric = guide.generation?.rubricVersion === GUIDE_RUBRIC_VERSION;
+      // A guide is checked against the rubric it is locked to, and against the
+      // prompt that rubric produces. One locked to none is measured against
+      // the drafting rubric, which is what "problems" counts for it.
+      const rubricVersion = guide.generation?.rubricVersion;
+      const onRubric = isSupportedRubric(rubricVersion);
       const failures = validateGuideV2({
         guide,
         root: ROOT,
         canons,
         book: id,
         chapter,
-        ...(onRubric ? { expectedPromptHash: prepareTarget(id, chapter).promptHash } : {}),
-      }).failures.filter((message) => onRubric || !NO_PROVENANCE.test(message));
-      // A guide that claims the rubric and fails it must not ship; corpus health stops the build for the same reason.
+        ...(onRubric
+          ? { expectedPromptHash: prepareTarget(id, chapter, { rubricVersion }).promptHash }
+          : {}),
+      }).failures.filter((message) => onRubric || !isNoProvenance(message));
+      // A guide that claims a rubric and fails it must not ship; corpus health stops the build for the same reason.
       if (onRubric && failures.length > 0) {
-        throw new Error(`${id}/${chapter} carries ${GUIDE_RUBRIC_VERSION} provenance but fails the rubric:\n- ${failures.join("\n- ")}`);
+        throw new Error(`${id}/${chapter} carries ${rubricVersion} provenance but fails the rubric:\n- ${failures.join("\n- ")}`);
       }
       const state = onRubric ? "current" : "earlier";
       totals[state] += 1;
@@ -122,6 +133,8 @@ export function collectGuideRecord() {
         rebinds: (generation.rebound ?? []).length,
         // The rubric cannot run where the text it checks against lacks the chapter.
         problems: verses === 0 ? null : failures.length,
+        // Which rubric a current guide is locked to; null for an earlier one.
+        rubric: onRubric ? RUBRICS.indexOf(rubricVersion) : null,
       };
     });
 
@@ -129,9 +142,9 @@ export function collectGuideRecord() {
   });
 
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     generatedBy: "scripts/site/build-guide-record.mjs",
-    rubricVersion: GUIDE_RUBRIC_VERSION,
+    rubrics: RUBRICS,
     totals,
     traditions: canons.traditions.map((entry) => entry.id),
     reviewers,

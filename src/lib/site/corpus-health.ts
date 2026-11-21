@@ -32,6 +32,13 @@ export type CorpusHealth = {
         passing: number;
         failing: number;
       };
+      /** Guides locked to the wider guide-v3 limits. */
+      v3: {
+        rubricVersion: string;
+        provenance: number;
+        passing: number;
+        failing: number;
+      };
     };
     crossReferences: { sourceVerses: number; targets: number };
     topics: { count: number; references: number };
@@ -60,6 +67,14 @@ export type CorpusHealth = {
         test: string;
       };
       v2Rubric: {
+        status: string;
+        rubricVersion: string;
+        guidesWithProvenance: number;
+        passing: number;
+        failing: number;
+        scope: string;
+      };
+      v3Rubric: {
         status: string;
         rubricVersion: string;
         guidesWithProvenance: number;

@@ -95,6 +95,16 @@ const HEALTH_FACTS = [
     n: `${number.format(validation.guides.v2Rubric.passing)} / ${number.format(validation.guides.v2Rubric.guidesWithProvenance)}`,
     label: `guide-v2 drafts with reproducible provenance that pass the stricter ${validation.guides.v2Rubric.rubricVersion} contract`,
   },
+  // Shown once a guide is locked to guide-v3; none is yet.
+  ...(validation.guides.v3Rubric.guidesWithProvenance > 0
+    ? [
+        {
+          id: "guide-v3",
+          n: `${number.format(validation.guides.v3Rubric.passing)} / ${number.format(validation.guides.v3Rubric.guidesWithProvenance)}`,
+          label: `guides locked to the wider ${validation.guides.v3Rubric.rubricVersion} limits that pass them`,
+        },
+      ]
+    : []),
   {
     id: "editorial-review",
     n: `${number.format(validation.guides.editorialReview.agentReviewed)} agent / ${number.format(validation.guides.editorialReview.humanReviewed)} human`,

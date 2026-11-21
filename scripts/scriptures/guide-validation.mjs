@@ -2,7 +2,41 @@ import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { validateGuideContext } from "./guide-context-validation.mjs";
 
+/** The drafting default. build-guides-v2.mjs drafts under this version. */
 export const GUIDE_RUBRIC_VERSION = "guide-v2";
+/**
+ * Every rubric a guide may be locked to, and the only limits that differ
+ * between them. Everything else in validateGuideV2 is the same for both.
+ *
+ * guide-v2 bounds machine drafts. guide-v3 has the wider limits of the
+ * hand-written Mark guides, which guide-v2 rejected: more questions, outline
+ * parts and key verses, no required `word` question, and a glossary entry
+ * may name something the chapter shows without spelling (Crucifixion, the
+ * longer ending) if it is tied to verses in the chapter. guide-v3 only
+ * widens: a guide that meets guide-v2's limits meets guide-v3's.
+ */
+export const GUIDE_RUBRICS = {
+  "guide-v2": {
+    file: "GUIDE_RUBRIC_V2.md",
+    questions: [7, 9],
+    outlineMax: 7,
+    keyVerses: [2, 4],
+    requireWord: true,
+    glossaryVerseTie: false,
+  },
+  "guide-v3": {
+    file: "GUIDE_RUBRIC_V3.md",
+    questions: [7, 14],
+    outlineMax: 9,
+    keyVerses: [2, 5],
+    requireWord: false,
+    glossaryVerseTie: true,
+  },
+};
+export const isSupportedRubric = (version) =>
+  typeof version === "string" && Object.hasOwn(GUIDE_RUBRICS, version);
+/** Said of a guide whose `generation` block is absent, malformed, or names no supported rubric. */
+export const NO_PROVENANCE_MESSAGE = "missing or malformed guide generation provenance";
 export const HOSTED_TRANSLATIONS = ["web", "kjv", "drb", "brenton", "charles"];
 /**
  * The only grounding fields a guide may be re-bound across without a fresh
@@ -256,8 +290,15 @@ const QUESTION_CATEGORIES = new Set([
 ]);
 
 /**
- * Strict validation for guides produced under the v2 contract. Legacy guides
- * continue to use the repository-wide integrity test until they are replaced.
+ * Strict validation for guides locked to a rubric. Legacy guides continue to
+ * use the repository-wide integrity test until they are replaced.
+ *
+ * `rubricVersion` means "measure the content against this version's limits".
+ * Without it the guide's own version is used when it names a supported one,
+ * and the drafting rubric otherwise, so a guide with no provenance is
+ * measured as it always was. The validator does not compare the argument
+ * with the guide's own version; the stamp tool, which writes the version,
+ * holds that guard.
  *
  * @param {{
  *   guide: any,
@@ -266,6 +307,7 @@ const QUESTION_CATEGORIES = new Set([
  *   book: string,
  *   chapter: number,
  *   expectedPromptHash?: string,
+ *   rubricVersion?: string,
  * }} options
  */
 export function validateGuideV2({
@@ -275,9 +317,18 @@ export function validateGuideV2({
   book,
   chapter,
   expectedPromptHash,
+  rubricVersion,
 }) {
   const failures = [];
   const label = `${book}/${chapter}`;
+  if (rubricVersion !== undefined && !isSupportedRubric(rubricVersion)) {
+    throw new Error(
+      `Unknown rubric "${rubricVersion}"; expected one of ${Object.keys(GUIDE_RUBRICS).join(", ")}`,
+    );
+  }
+  const ownVersion = guide.generation?.rubricVersion;
+  const limits =
+    GUIDE_RUBRICS[rubricVersion ?? (isSupportedRubric(ownVersion) ? ownVersion : GUIDE_RUBRIC_VERSION)];
   const hostedTexts = loadHostedTexts({ root, canons, book });
   const primaryTranslation = hostedTexts.find(({ translation }) => translation === "web") ?? hostedTexts[0];
   const primaryText = primaryTranslation?.text;
@@ -301,12 +352,12 @@ export function validateGuideV2({
   }
   if (
     !guide.generation ||
-    guide.generation.rubricVersion !== GUIDE_RUBRIC_VERSION ||
+    !isSupportedRubric(guide.generation.rubricVersion) ||
     !["direct-generation", "review-bound"].includes(guide.generation.method) ||
     !isCanonicalIsoTimestamp(guide.generation.generatedAt) ||
     !/^[a-f0-9]{64}$/.test(guide.generation.promptHash ?? "")
   ) {
-    failures.push(`${label}: missing or malformed guide-v2 generation provenance`);
+    failures.push(`${label}: ${NO_PROVENANCE_MESSAGE}`);
   } else if (guide.generation.method === "direct-generation") {
     // `model` is a measurement: only a real run may write it.
     if (!nonEmpty(guide.generation.model)) {
@@ -352,8 +403,12 @@ export function validateGuideV2({
   }
 
   const minOutline = Math.min(3, chapterVerses.length);
-  if (!Array.isArray(guide.outline) || guide.outline.length < minOutline || guide.outline.length > 7) {
-    failures.push(`${label}: outline must contain ${minOutline}-7 chapter-specific movements`);
+  if (
+    !Array.isArray(guide.outline) ||
+    guide.outline.length < minOutline ||
+    guide.outline.length > limits.outlineMax
+  ) {
+    failures.push(`${label}: outline must contain ${minOutline}-${limits.outlineMax} chapter-specific movements`);
   } else {
     const covered = new Set();
     let expectedStart = 1;
@@ -380,8 +435,13 @@ export function validateGuideV2({
   }
 
   let matchingTranslations = hostedTexts;
-  if (!Array.isArray(guide.keyVerses) || guide.keyVerses.length < 2 || guide.keyVerses.length > 4) {
-    failures.push(`${label}: keyVerses must contain 2-4 quotations`);
+  const [minKeyVerses, maxKeyVerses] = limits.keyVerses;
+  if (
+    !Array.isArray(guide.keyVerses) ||
+    guide.keyVerses.length < minKeyVerses ||
+    guide.keyVerses.length > maxKeyVerses
+  ) {
+    failures.push(`${label}: keyVerses must contain ${minKeyVerses}-${maxKeyVerses} quotations`);
   } else {
     for (const keyVerse of guide.keyVerses) {
       const range = parseVerseRange(keyVerse.ref);
@@ -464,8 +524,9 @@ export function validateGuideV2({
   }
 
   const questions = Array.isArray(guide.questions) ? guide.questions : [];
-  if (questions.length < 7 || questions.length > 9) {
-    failures.push(`${label}: questions must contain 7-9 grounded entries`);
+  const [minQuestions, maxQuestions] = limits.questions;
+  if (questions.length < minQuestions || questions.length > maxQuestions) {
+    failures.push(`${label}: questions must contain ${minQuestions}-${maxQuestions} grounded entries`);
   }
   const ids = new Set();
   const categories = new Set();
@@ -512,7 +573,7 @@ export function validateGuideV2({
       }
     }
   }
-  if (!categories.has("word")) {
+  if (limits.requireWord && !categories.has("word")) {
     failures.push(`${label}: needs a chapter-specific word question`);
   }
   if (!categories.has("hard_verse")) {
@@ -528,10 +589,28 @@ export function validateGuideV2({
         failures.push(`${label}: glossary entries must have a term and definition`);
         continue;
       }
+      // guide-v3 only: an entry may be tied to verses instead of sharing a
+      // word with the chapter. The code checks that each ref resolves inside
+      // this chapter. That the term belongs to those verses is the
+      // reviewer's judgment, not something measured here.
+      let tiedToVerses = false;
+      if (limits.glossaryVerseTie && entry.verses !== undefined) {
+        const refs = Array.isArray(entry.verses) ? entry.verses.map(parseVerseRange) : [];
+        tiedToVerses =
+          refs.length > 0 &&
+          refs.every(
+            (range) => range && range.chapter === chapter && range.end <= chapterVerses.length,
+          );
+        if (!tiedToVerses) {
+          failures.push(`${label}: glossary term “${entry.term}” has an unresolved or off-chapter verse tie`);
+          continue;
+        }
+      }
       const termTokens = normalizeGuideQuote(entry.term)
         .split(" ")
         .filter((token) => token.length >= 4);
       if (
+        !tiedToVerses &&
         termTokens.length > 0 &&
         !termTokens.some((token) => normalizedChapter.includes(token))
       ) {

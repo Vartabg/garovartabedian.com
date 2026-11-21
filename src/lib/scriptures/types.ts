@@ -260,7 +260,13 @@ export type ChapterGuide = {
   keyVerses: { ref: string; text: string; why: string }[];
   themes: string[];
   questions: ChapterGuideQuestion[];
-  glossary?: { term: string; def: string }[];
+  /**
+   * `verses` (guide-v3 only) ties a term the chapter shows without spelling,
+   * such as "Crucifixion", to the verse or verses it names. The validator
+   * checks that each ref resolves in this chapter; that the term belongs
+   * there is the reviewer's judgment. Not rendered yet.
+   */
+  glossary?: { term: string; def: string; verses?: string[] }[];
   /**
    * Reproducible model provenance, split by what the pipeline can actually
    * know. Software cannot verify which model wrote text it did not call, so
@@ -284,7 +290,13 @@ export type ChapterGuide = {
     /** Present only for review-bound: who or what the reviewer says drafted it. */
     attributedModel?: string;
     promptHash: string;
+    /**
+     * direct-generation: when the build made the run. review-bound: when the
+     * draft was written, as supplied by whoever bound it (a commit time where
+     * one exists); it is their statement, not a measurement.
+     */
     generatedAt: string;
+    /** The rubric this guide is locked to: a key of GUIDE_RUBRICS. */
     rubricVersion: string;
     method: "direct-generation" | "review-bound";
     /**

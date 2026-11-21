@@ -22,7 +22,10 @@ const count = (n: number, noun: string) => `${n} ${noun}${n === 1 ? "" : "s"}`;
 /** A tap between marks takes the nearest one. */
 const NEAR = [[0, 0], [-3, 0], [3, 0], [0, -3], [0, 3]] as const;
 
-type Lookup = Pick<PackedGuideRecord, "reviewers" | "drafters">;
+type Lookup = Pick<PackedGuideRecord, "reviewers" | "drafters" | "rubrics">;
+
+/** The rubric an unlocked guide is measured against: the first, which is the drafting rubric. */
+const measuredBy = ({ rubrics }: Lookup) => rubrics[0];
 
 function drafterLine(row: GuideChecked, { drafters }: Lookup) {
   const drafter = row.drafter === null ? null : drafters[row.drafter];
@@ -47,22 +50,28 @@ export function guideLines(row: GuideRow, lookup: Lookup): string[] {
   if (row.state === "none") return ["No guide for this chapter."];
   const tail = [drafterLine(row, lookup), reviewLine(row, lookup)];
   if (row.state === "earlier") {
+    const rubric = measuredBy(lookup);
     return [
       "Its verse references resolve, and its key verses quote a hosted translation.",
       row.problems === null
-        ? "It has no record of being drafted under the current rubric, and the rubric cannot run here: the translation it checks against does not carry this chapter."
+        ? `It has no record of being drafted under a current rubric, and ${rubric} cannot run here: the translation it checks against does not carry this chapter.`
         : row.problems === 0
-          ? "It has no record of being drafted under the current rubric, so it is not counted as current. Run against it today, the rubric reports no problems."
-          : `It has no record of being drafted under the current rubric. Run against it today, the rubric reports ${count(row.problems, "problem")}.`,
+          ? `It has no record of being drafted under a current rubric, so it is not counted as current. Run against it today, ${rubric} reports no problems.`
+          : `It has no record of being drafted under a current rubric. Run against it today, ${rubric} reports ${count(row.problems, "problem")}.`,
       ...tail,
     ];
   }
+  // Only a run the build made can say what a guide was drafted from. A guide
+  // bound afterwards was locked at its review, and the sentence says so.
+  const drafter = row.drafter === null ? null : lookup.drafters[row.drafter];
+  const lockedTo = drafter?.kind === "measured" ? "the guide was drafted from" : "the guide was bound to at review";
   const moved = row.rebinds === 0 ? "" : ` It was moved ${row.rebinds === 1 ? "once" : `${row.rebinds} times`} after a citation’s link or name was corrected, with the reason on file.`;
   return [
     `Key verses: ${row.keyVerses}, each a quotation from the hosted text.`,
     `Questions: ${row.questions}, each tied to a verse in this chapter.`,
     `Outline: ${count(row.outlineParts, "part")} that ${row.outlineParts === 1 ? "covers" : "cover"} all ${count(row.verses, "verse")} with no gaps.`,
-    `Source lock: the saved fingerprint still matches the sources, instructions and rubric the guide was drafted from.${moved}`,
+    ...(row.rubric === null ? [] : [`Rubric: ${lookup.rubrics[row.rubric]}.`]),
+    `Source lock: the saved fingerprint still matches the sources, instructions and rubric ${lockedTo}.${moved}`,
     ...tail,
   ];
 }

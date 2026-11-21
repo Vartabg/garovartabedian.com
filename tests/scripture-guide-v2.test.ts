@@ -347,7 +347,7 @@ test("generation timestamps must be real canonical ISO instants at every boundar
   });
   assert.ok(
     validation.failures.some((failure: string) =>
-      /malformed guide-v2 generation provenance/.test(failure),
+      /malformed guide generation provenance/.test(failure),
     ),
   );
   assert.equal(readFileSync(guidePath, "utf8"), before);

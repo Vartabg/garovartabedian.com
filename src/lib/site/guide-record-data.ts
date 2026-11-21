@@ -8,8 +8,13 @@ import type { GuideRecord } from "./guide-record";
 export function guideRecordFrom(value: unknown): GuideRecord {
   const record = value as GuideRecord;
   // A file from a different generator version must stop the build, not render half a section.
-  if (record?.schemaVersion !== 1 || !Array.isArray(record.books) || record.books.length === 0) {
-    throw new Error("public/meta/guide-record.json is not a schemaVersion 1 guide record; run npm run data:guide-record.");
+  if (
+    record?.schemaVersion !== 2 ||
+    !Array.isArray(record.rubrics) ||
+    !Array.isArray(record.books) ||
+    record.books.length === 0
+  ) {
+    throw new Error("public/meta/guide-record.json is not a schemaVersion 2 guide record; run npm run data:guide-record.");
   }
   return record;
 }

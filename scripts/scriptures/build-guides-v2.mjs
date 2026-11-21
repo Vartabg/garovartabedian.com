@@ -52,6 +52,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  GUIDE_RUBRICS,
   GUIDE_RUBRIC_VERSION,
   hasTemplateSignature,
   isCanonicalIsoTimestamp,
@@ -63,10 +64,17 @@ export const ROOT = path.resolve(SCRIPT_DIR, "../..");
 const CANONS = JSON.parse(
   readFileSync(path.join(ROOT, "public/scriptures/canons.json"), "utf8"),
 );
+/**
+ * The shape and depth exemplar every prompt carries. It is the Mark 1 guide
+ * as it stood when it was frozen (its reader-facing fields, no review or
+ * provenance fields), kept in its own file because its content is inside
+ * every prompt hash: reading the published guide here meant one edit to
+ * Mark 1 would have moved the lock on every guide. Do not edit the frozen
+ * file; tests/scripture-guide-v3.test.ts pins it.
+ */
 const MARK_EXEMPLAR = JSON.parse(
-  readFileSync(path.join(ROOT, "public/scriptures/guides/MRK/1.json"), "utf8"),
+  readFileSync(path.join(SCRIPT_DIR, "mark-exemplar.json"), "utf8"),
 );
-const RUBRIC_PATH = path.join(SCRIPT_DIR, "GUIDE_RUBRIC_V2.md");
 const PUBLISHED_GUIDES_ROOT = path.join(ROOT, "public/scriptures/guides");
 
 const resolveThroughExistingAncestor = (value) => {
@@ -263,14 +271,6 @@ export function buildGrounding(book, chapter, { bookBriefing } = {}) {
     ),
   );
 
-  const { reviewStatus, reviewedAt, reviewer, sourceIds, generation, ...exemplar } =
-    MARK_EXEMPLAR;
-  void reviewStatus;
-  void reviewedAt;
-  void reviewer;
-  void sourceIds;
-  void generation;
-
   return {
     identity: {
       book,
@@ -287,12 +287,23 @@ export function buildGrounding(book, chapter, { bookBriefing } = {}) {
     bookBriefing: bookBriefing ?? readJson(briefingFile),
     treasuryOfScriptureKnowledge: chapterXrefs,
     naveTopicalMatches: naveGroundingFor(book, chapter),
-    markExemplar: exemplar,
+    markExemplar: MARK_EXEMPLAR,
   };
 }
 
-export function buildGuidePrompt(grounding) {
-  const rubric = readFileSync(RUBRIC_PATH, "utf8").trim();
+/**
+ * The prompt a guide is locked to. `rubricVersion` picks the rubric text and
+ * the version line; the default is the drafting rubric, so a call without it
+ * returns exactly what it always has and no existing hash moves.
+ */
+export function buildGuidePrompt(grounding, { rubricVersion = GUIDE_RUBRIC_VERSION } = {}) {
+  const supported = GUIDE_RUBRICS[rubricVersion];
+  if (!supported) {
+    throw new Error(
+      `Unknown rubric "${rubricVersion}"; expected one of ${Object.keys(GUIDE_RUBRICS).join(", ")}`,
+    );
+  }
+  const rubric = readFileSync(path.join(SCRIPT_DIR, supported.file), "utf8").trim();
   // Published ENO guide-v2 hashes bind the historical prompt's WEB label,
   // despite its Charles grounding. Reproduce that record until a separately
   // reviewed prompt migration; never silently rewrite existing provenance.
@@ -306,7 +317,7 @@ export function buildGuidePrompt(grounding) {
     "Separate what the chapter says from later Jewish or Christian reception. Where responsible readers differ, name the disagreement briefly and do not force a verdict.",
     "Do not preach, imitate Garo's voice, invent a historical detail, or promise certainty the sources do not provide.",
     "The Mark object is a shape and depth exemplar, never a factual source for this chapter.",
-    `Rubric version: ${GUIDE_RUBRIC_VERSION}`,
+    `Rubric version: ${rubricVersion}`,
     "\nAUTHORITATIVE RUBRIC\n",
     rubric,
     "\nGROUNDING BUNDLE\n",
@@ -706,7 +717,7 @@ const atomicWriteJson = (file, value) => {
 
 export function prepareTarget(book, chapter, options = {}) {
   const grounding = buildGrounding(book, chapter, options);
-  const prompt = buildGuidePrompt(grounding);
+  const prompt = buildGuidePrompt(grounding, { rubricVersion: options.rubricVersion });
   return { book, chapter, grounding, prompt, promptHash: sha256(prompt) };
 }
 

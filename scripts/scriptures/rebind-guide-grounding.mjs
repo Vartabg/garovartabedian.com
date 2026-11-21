@@ -48,7 +48,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { prepareTarget, ROOT } from "./build-guides-v2.mjs";
 import {
-  GUIDE_RUBRIC_VERSION,
+  isSupportedRubric,
   REBIND_ALLOWED_FIELD,
   REBIND_REASON_MIN_LENGTH,
   validateGuideV2,
@@ -108,15 +108,17 @@ export function rebindGuide({
 }) {
   const label = `${book}/${chapter}`;
   const generation = guide.generation;
-  if (!generation || generation.rubricVersion !== GUIDE_RUBRIC_VERSION) {
-    return { ok: false, reason: `${label}: not a ${GUIDE_RUBRIC_VERSION} guide; nothing to re-bind` };
+  if (!generation || !isSupportedRubric(generation.rubricVersion)) {
+    return { ok: false, reason: `${label}: not locked to a supported rubric; nothing to re-bind` };
   }
+  // Each guide is re-bound under the rubric it is already locked to.
+  const rubricVersion = generation.rubricVersion;
   if (!/^[a-f0-9]{64}$/.test(generation.promptHash ?? "")) {
     return { ok: false, reason: `${label}: stored promptHash is not a sha256` };
   }
 
-  const previous = prepareTarget(book, chapter, { bookBriefing: previousBriefing });
-  const current = prepareTarget(book, chapter);
+  const previous = prepareTarget(book, chapter, { bookBriefing: previousBriefing, rubricVersion });
+  const current = prepareTarget(book, chapter, { rubricVersion });
 
   if (previous.promptHash === current.promptHash) {
     return { ok: false, reason: `${label}: grounding is unchanged; there is nothing to re-bind` };
