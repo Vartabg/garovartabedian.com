@@ -1,0 +1,1533 @@
+{
+  "book": "MRK",
+  "checkedAt": "2026-11-21",
+  "baseline": "f60a4990",
+  "note": "All three groups were applied on 2026-11-22 by Garo's ruling. Each find string occurred exactly once in the named field at the baseline.",
+  "counts": {
+    "claims": {
+      "text": 43,
+      "partly": 15,
+      "open": 6,
+      "reading": 10,
+      "source": 41
+    },
+    "corrections": 30,
+    "softer": 18,
+    "contextLines": 30
+  },
+  "corrections": [
+    {
+      "group": "fix",
+      "chapter": 1,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "translates every Aramaic phrase",
+      "replace": "translates most of the Aramaic phrases",
+      "basis": "Tagged Greek: Rabbi (9:5, 11:21, 14:45), Rabbouni (10:51) and Hosanna (11:9-10) are left untranslated."
+    },
+    {
+      "group": "fix",
+      "chapter": 1,
+      "path": "outline[0].note",
+      "place": "outline part 1",
+      "find": "John in the desert, quoting Isaiah, pointing past himself",
+      "replace": "A line from the prophets, then John in the desert, pointing past himself",
+      "basis": "Hosted 1:2: \"As it is written in the prophets\". The narrator quotes; John does not."
+    },
+    {
+      "group": "fix",
+      "chapter": 1,
+      "path": "glossary[1].def",
+      "place": "glossary: Repent",
+      "find": "To turn around and go a different way. It can carry regret, but the core of the word is change of direction, not feeling bad.",
+      "replace": "To change your mind, and so your course. It can carry regret, but the base sense of the Greek word is a change of mind.",
+      "basis": "Thayer's, metanoeo: \"to change one's mind, i. e. to repent\". Strong's: \"to think differently or afterwards\". Neither gives \"turn\"."
+    },
+    {
+      "group": "fix",
+      "chapter": 2,
+      "path": "summary",
+      "place": "summary",
+      "find": "Five short confrontations, back to back.",
+      "replace": "Four short confrontations, back to back.",
+      "basis": "Hosted chapter 2 has four (2:6-7, 2:16, 2:18, 2:24). The fifth in the run is 3:1-6."
+    },
+    {
+      "group": "fix",
+      "chapter": 3,
+      "path": "glossary[2].def",
+      "place": "glossary: Zealot",
+      "find": "It marks intense devotion to the law and, in this period, sympathy with armed resistance to Rome — which makes the presence of a tax collector in the same group of twelve remarkable.",
+      "replace": "It marks intense devotion to the law. A generation later it was the name of a party in the armed revolt against Rome. Either way, the presence of a tax collector in the same group of twelve is remarkable.",
+      "basis": "Josephus, War 4.3.9: the party name appears during the revolt of AD 66-70 (\"that was the name they went by\"). No source read shows the armed sense about AD 30."
+    },
+    {
+      "group": "fix",
+      "chapter": 3,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "The Greek phrase covers his relatives or close associates",
+      "replace": "The translation here says 'his friends'; the Greek phrase covers his relatives or close associates",
+      "basis": "Hosted 3:21 reads \"his friends\", while the question says \"his family\". Thayer's on the Greek phrase: \"his kinsmen, relations\"."
+    },
+    {
+      "group": "fix",
+      "chapter": 4,
+      "path": "summary",
+      "place": "summary",
+      "find": "he stops it with two words",
+      "replace": "he stops it with two short commands",
+      "basis": "Hosted 4:39: \"Peace! Be still!\" (three English words). The tagged Greek has two words."
+    },
+    {
+      "group": "fix",
+      "chapter": 4,
+      "path": "questions[6].question",
+      "place": "question 7 (the question)",
+      "find": "Is 'smaller than all the seeds on earth' just wrong?",
+      "replace": "Is 'less than all the seeds that are on the earth' just wrong?",
+      "basis": "Hosted 4:31: \"less than all the seeds that are on the earth\"."
+    },
+    {
+      "group": "fix",
+      "chapter": 5,
+      "path": "whyItMatters",
+      "place": "why it matters",
+      "find": "A corpse, a chronic discharge of blood, and a graveyard were the three great sources of ritual defilement in Jewish law.",
+      "replace": "A corpse, a chronic discharge of blood, and a grave each made a person ritually unclean in Jewish law (Numbers 5:2; 19:16; Leviticus 15:25).",
+      "basis": "Hosted Numbers 5:2 names the leper, the discharge and the corpse; Mishnah Kelim 1:1-4 lists more. Nothing read ranks these three as \"the three great sources\"."
+    },
+    {
+      "group": "fix",
+      "chapter": 5,
+      "path": "questions[8].answer",
+      "place": "question 9",
+      "find": "Most read it the way Jesus uses the word elsewhere — death described as sleep",
+      "replace": "Most read it the way Jesus speaks of Lazarus in John 11:11-14 — death described as sleep",
+      "basis": "Tagged Greek: the verb in 5:39 is used elsewhere in Mark only for ordinary sleep (4:27, 4:38, 13:36, 14:37-41). The parallel is hosted John 11:11-14."
+    },
+    {
+      "group": "fix",
+      "chapter": 6,
+      "path": "questions[11].answer",
+      "place": "question 12",
+      "find": "Mark uses 'hardened' for the opposition in 3:5 — using the same word for the Twelve is deliberate and unflattering.",
+      "replace": "Mark speaks of the 'hardening' of the opposition's hearts in 3:5 — using the same root for the Twelve is deliberate and unflattering.",
+      "basis": "Tagged Greek: 3:5 has the noun porosis; 6:52 and 8:17 have the verb poroo. Same root, not the same word."
+    },
+    {
+      "group": "fix",
+      "chapter": 6,
+      "path": "glossary[0].def",
+      "place": "glossary: Carpenter",
+      "find": "The Greek word covers a builder working in wood and stone — a general craftsman rather than specifically a furniture maker.",
+      "replace": "The Greek word means a worker in wood, and more loosely a builder or craftsman — not specifically a furniture maker.",
+      "basis": "Thayer's, tekton: \"a worker in wood, a carpenter\". Wiktionary: \"one who works with wood: carpenter, builder\"; \"any craftsman\". No lexicon read gives stone."
+    },
+    {
+      "group": "fix",
+      "chapter": 7,
+      "path": "glossary[2].def",
+      "place": "glossary: Corban",
+      "find": "Aramaic for 'dedicated to God.'",
+      "replace": "Hebrew for an offering, 'given to God.'",
+      "basis": "Thayer's, korban: \"Hebrew ... an offering\". The Hebrew word is in hosted Leviticus 1:2. Hosted Mark 7:11: \"given to God\"."
+    },
+    {
+      "group": "fix",
+      "chapter": 7,
+      "path": "glossary[3].def",
+      "place": "glossary: Hypocrite",
+      "find": "Originally a Greek stage term for an actor.",
+      "replace": "In ordinary Greek, a word for a stage actor.",
+      "basis": "Thayer's, hypokrites: \"1. one who answers, an interpreter. 2. an actor, stage-player\". The stage sense is not listed as the first."
+    },
+    {
+      "group": "fix",
+      "chapter": 8,
+      "path": "questions[8].answer",
+      "place": "question 9",
+      "find": "Galilee had seen it used.",
+      "replace": "The country had seen it used: a generation earlier a Roman governor crucified about two thousand rebels (Josephus, Antiquities 17.10.10).",
+      "basis": "Josephus, Antiquities 17.10.10 and War 2.5.2: about two thousand crucified, sought \"into the country\"; no region is named. In Galilee, Sepphoris was burned and its people enslaved (17.10.9); crucifixion is not mentioned there."
+    },
+    {
+      "group": "fix",
+      "chapter": 9,
+      "path": "whyItMatters",
+      "place": "why it matters",
+      "find": "within a day the group is arguing about rank",
+      "replace": "before the chapter ends the group is arguing about rank",
+      "basis": "Hosted 9:30 and 9:33: they travel through Galilee to Capernaum first. No time is given."
+    },
+    {
+      "group": "fix",
+      "chapter": 9,
+      "path": "glossary[1].def",
+      "place": "glossary: Rabbi",
+      "find": "Mark keeps the Aramaic term.",
+      "replace": "Mark keeps the Hebrew word.",
+      "basis": "Thayer's, rabbi: \"Hebrew ... properly, my great one\". Strong's: \"of Hebrew origin\"."
+    },
+    {
+      "group": "fix",
+      "chapter": 9,
+      "path": "questions[10].answer",
+      "place": "question 11",
+      "find": "the underlying picture is a cursed valley, permanent burning, and rubbish that is never dealt with.",
+      "replace": "the underlying picture is a cursed valley and permanent burning.",
+      "basis": "The burning rubbish heap is first attributed to Rabbi David Kimhi, about AD 1200; \"there is no direct archaeological nor literary evidence for it\" (Wikipedia, \"Gehenna\"). Thayer's (1889) repeats the tradition."
+    },
+    {
+      "group": "fix",
+      "chapter": 10,
+      "path": "summary",
+      "place": "summary",
+      "find": "the only person in the gospels who declines a direct invitation",
+      "replace": "the one person in Mark who walks away from a direct invitation",
+      "basis": "Hosted Luke 9:59: \"Follow me!\" ... \"Lord, allow me first to go and bury my father.\""
+    },
+    {
+      "group": "fix",
+      "chapter": 10,
+      "path": "questions[11].answer",
+      "place": "question 12",
+      "find": "he calls Jesus 'son of David,' a messianic title, and nobody silences him.",
+      "replace": "he calls Jesus 'son of David,' a messianic title; the crowd tries to quiet him, and Jesus does not.",
+      "basis": "Hosted 10:48: \"Many rebuked him, that he should be quiet\"."
+    },
+    {
+      "group": "fix",
+      "chapter": 10,
+      "path": "glossary[5].def",
+      "place": "glossary: Son of David",
+      "find": "Bartimaeus shouts it in public and is not corrected",
+      "replace": "Bartimaeus shouts it in public and Jesus does not silence him",
+      "basis": "Hosted 10:48-49: the crowd rebukes him; Jesus calls him over."
+    },
+    {
+      "group": "fix",
+      "chapter": 11,
+      "path": "questions[0].answer",
+      "place": "question 1",
+      "find": "A Roman general entered a city on a warhorse.",
+      "replace": "A conqueror came on a warhorse or in a chariot.",
+      "basis": "No source was read for the Roman general. Hosted Zechariah 9:10, already cited in the answer, names the chariot and the horse."
+    },
+    {
+      "group": "fix",
+      "chapter": 13,
+      "path": "summary",
+      "place": "summary",
+      "find": "standing in the temple, run without stopping to pack",
+      "replace": "standing where it ought not, run without stopping to pack",
+      "basis": "Hosted 13:14: \"standing where it ought not\". \"In the holy place\" is Matthew 24:15."
+    },
+    {
+      "group": "fix",
+      "chapter": 13,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "set up a pagan altar in the Jerusalem temple and sacrificed a pig on it — an act remembered with horror and recounted in 1 Maccabees.",
+      "replace": "set up a pagan altar in the Jerusalem temple (1 Maccabees 1:54-59) and, Josephus says, sacrificed swine on it — an act remembered with horror.",
+      "basis": "Hosted 1 Maccabees 1:54 and 1:59 tell of the altar; 1:47 has the order to sacrifice swine. The swine on the temple altar is Josephus, Antiquities 12.5.4."
+    },
+    {
+      "group": "fix",
+      "chapter": 14,
+      "path": "outline[7].heading",
+      "place": "outline part 8",
+      "find": "Trial — outer half",
+      "replace": "Trial — inner story",
+      "basis": "Hosted 14:54 and 14:66-72: Peter's story opens before the trial and closes after it, so the trial is the inner part."
+    },
+    {
+      "group": "fix",
+      "chapter": 14,
+      "path": "outline[8].heading",
+      "place": "outline part 9",
+      "find": "Denial — inner half resolved",
+      "replace": "Denial — outer story resolved",
+      "basis": "Same: Peter's denial is the frame around the trial."
+    },
+    {
+      "group": "fix",
+      "chapter": 15,
+      "path": "questions[0].answer",
+      "place": "question 1",
+      "find": "his one question is whether Jesus claims to be King of the Jews",
+      "replace": "his question is whether Jesus claims to be King of the Jews",
+      "basis": "Hosted 15:2 and 15:4: Pilate asks Jesus a second question (\"Have you no answer?\")."
+    },
+    {
+      "group": "fix",
+      "chapter": 15,
+      "path": "glossary[0].def",
+      "place": "glossary: Praetorium",
+      "find": "Mark uses the Latin term, as he does 'cohort' — a unit of several hundred soldiers.",
+      "replace": "Mark uses the Latin term, as he does for 'centurion' in verse 39. The cohort called together here was a unit of several hundred soldiers.",
+      "basis": "Tagged Greek: praitorion (15:16) and kenturion (15:39) are Latin loanwords (Thayer's: \"a Latin word\"). For speira, \"cohort\", the lexicons differ: Thayer's treats it as Greek, Strong's as Latin in origin."
+    },
+    {
+      "group": "fix",
+      "chapter": 15,
+      "path": "questions[13].answer",
+      "place": "question 14",
+      "find": "Crucified bodies were normally left to hang or thrown into a common grave; that was part of the punishment.",
+      "replace": "Under Roman practice crucified bodies were often left to hang; Jewish custom was to bury them before sunset (Deuteronomy 21:22-23; Josephus, War 4.5.2).",
+      "basis": "Josephus, War 4.5.2: the Jews \"took down those that were condemned and crucified, and buried them before the going down of the sun\". Hosted Deuteronomy 21:22-23. The Roman practice rests on a secondary summary only; no source read mentions a common grave."
+    },
+    {
+      "group": "fix",
+      "chapter": 16,
+      "path": "questions[0].answer",
+      "place": "question 1",
+      "find": "So do the oldest Syriac, an old Latin manuscript, and the earliest Armenian and Georgian versions.",
+      "replace": "Verses 9-20 are also missing from the oldest Syriac copy, from one old Latin manuscript (which has a short ending instead), and from many Armenian and some Georgian manuscripts.",
+      "basis": "Codex Bobiensis is \"the only known example of the shorter ending added directly to Mark 16:8\" (Wikipedia, \"Codex Bobiensis\", citing Aland and Metzger), so it does not stop at verse 8. Wikipedia, \"Mark 16\": \"many Armenian manuscripts, some Georgian manuscripts\"."
+    }
+  ],
+  "softer": [
+    {
+      "group": "soften",
+      "chapter": 4,
+      "path": "questions[2].answer",
+      "place": "question 3",
+      "find": "Second, the Aramaic behind 'that' can carry the sense of result rather than purpose",
+      "replace": "Second, some scholars argue that an Aramaic word behind 'that' could mean result rather than purpose",
+      "basis": "A proposal about an Aramaic saying behind the Greek, tied to T. W. Manson and an ambiguous particle in the Targum of Isaiah 6:9. It is disputed. Secondary summaries only."
+    },
+    {
+      "group": "soften",
+      "chapter": 4,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "A good harvest in that agriculture returned something in the range of tenfold.",
+      "replace": "On one common estimate, a good harvest in that agriculture returned something in the range of tenfold.",
+      "basis": "Dalman's estimate (tenfold good, about sevenfold average) as reported in R. K. McIver, New Testament Studies 40 (1994), who disputes that thirtyfold was out of the ordinary. Abstract and excerpt only."
+    },
+    {
+      "group": "soften",
+      "chapter": 5,
+      "path": "keyVerses[1].why",
+      "place": "key verse 2",
+      "find": "Notice he is not Jewish — the silence rule does not apply out here.",
+      "replace": "Notice where he is — the Decapolis, Gentile country — and the silence rule does not apply out here.",
+      "basis": "Hosted 5:20 names the region. The chapter does not say what people the man belongs to."
+    },
+    {
+      "group": "soften",
+      "chapter": 6,
+      "path": "questions[10].answer",
+      "place": "question 11",
+      "find": "is the same construction used for the divine name in Exodus 3:14",
+      "replace": "is the same two Greek words that open the divine name in the Greek version of Exodus 3:14 — though they are also the ordinary way to say 'it's me'",
+      "basis": "Tagged Greek 6:50: ego eimi. Septuagint Exodus 3:14: Ego eimi ho on. The same two words are everyday Greek, so the echo is a reading."
+    },
+    {
+      "group": "soften",
+      "chapter": 6,
+      "path": "glossary[3].def",
+      "place": "glossary: Fourth watch",
+      "find": "Mark divides the night into four Roman watches rather than the three used in Jewish reckoning — a small sign of who he was writing for.",
+      "replace": "Mark divides the night into four watches, the Roman way; older Israelite reckoning had three (Judges 7:19).",
+      "basis": "Thayer's, phylake: before the exile the Israelites had three watches; later \"they adopted the Roman custom of dividing the night into four watches\". So four watches do not mark out a non-Jewish reader."
+    },
+    {
+      "group": "soften",
+      "chapter": 6,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Mark uses the Roman 'fourth watch of the night' rather than a Jewish time reckoning",
+      "replace": "Mark counts the night in four watches, the Roman way",
+      "basis": "Same entry in Thayer's."
+    },
+    {
+      "group": "soften",
+      "chapter": 7,
+      "path": "keyVerses[2].why",
+      "place": "key verse 3",
+      "find": "The only time in the gospels anyone wins an exchange with Jesus",
+      "replace": "The one time in Mark that anyone wins an exchange with Jesus",
+      "basis": "A claim about all four gospels that was not checked. Narrowed to the book the guide covers."
+    },
+    {
+      "group": "soften",
+      "chapter": 7,
+      "path": "questions[6].answer",
+      "place": "question 7",
+      "find": "this is the one conversation in the gospels that Jesus concedes",
+      "replace": "this is the one conversation in Mark that Jesus concedes",
+      "basis": "Same."
+    },
+    {
+      "group": "soften",
+      "chapter": 8,
+      "path": "glossary[0].def",
+      "place": "glossary: Christ / Messiah",
+      "find": "By this period the title carried a widespread expectation of national deliverance from Rome",
+      "replace": "By this period many attached to the title an expectation of national deliverance from Rome",
+      "basis": "The Mark briefing: Jewish hopes \"take several forms — political, national, and religious — rather than one single expectation\"."
+    },
+    {
+      "group": "soften",
+      "chapter": 9,
+      "path": "questions[8].answer",
+      "place": "question 9",
+      "find": "In that society a child had no legal standing, no status",
+      "replace": "In that society a child had no standing of its own, no status",
+      "basis": "ISBE, \"Child\": \"Children were subject to the father\". Hosted Galatians 4:1. Nothing read says a child had no legal standing."
+    },
+    {
+      "group": "soften",
+      "chapter": 12,
+      "path": "glossary[5].def",
+      "place": "glossary: The treasury",
+      "find": "Collection receptacles in the temple's Court of the Women, where",
+      "replace": "Collection chests in the temple, by tradition in the Court of the Women, where",
+      "basis": "Mishnah Shekalim 6:5: \"thirteen collection horns in the Temple\". It names no court."
+    },
+    {
+      "group": "soften",
+      "chapter": 14,
+      "path": "context.literaryForm",
+      "place": "form line",
+      "find": "Passion narrative, the oldest continuous block of gospel tradition, with",
+      "replace": "Passion narrative, often thought to be the oldest continuous block of gospel tradition, with",
+      "basis": "A source-critical proposal. No source was read for it."
+    },
+    {
+      "group": "soften",
+      "chapter": 14,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "Because carrying water was women's work, so a man doing it stood out in a crowded festival city.",
+      "replace": "Because drawing water was usually women's work (Genesis 24:11), so a man carrying a jar would stand out in a crowded festival city.",
+      "basis": "Hosted Genesis 24:11: \"the time that women go out to draw water\". No reference work read says a man with a jar would stand out."
+    },
+    {
+      "group": "soften",
+      "chapter": 15,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "while the Galilean pilgrims who lined the road are elsewhere",
+      "replace": "and nothing says the pilgrims who lined the road are there",
+      "basis": "The chapter does not say where they were."
+    },
+    {
+      "group": "soften",
+      "chapter": 15,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "the thorn crown parodies the radiate crowns on imperial coins",
+      "replace": "the thorn crown may parody the radiate crowns shown on coins",
+      "basis": "A proposal by H. St. J. Hart, Journal of Theological Studies 3 (1952). Secondary summaries only."
+    },
+    {
+      "group": "soften",
+      "chapter": 15,
+      "path": "questions[10].answer",
+      "place": "question 11",
+      "find": "A heavy woven veil separating the innermost sanctuary",
+      "replace": "Usually taken as the inner veil: a heavy woven curtain separating the innermost sanctuary",
+      "basis": "Josephus, War 5.5.4-5 describes two veils. Mark does not say which. Hosted Hebrews 9:3 calls the inner one \"the second veil\"."
+    },
+    {
+      "group": "soften",
+      "chapter": 16,
+      "path": "questions[5].answer",
+      "place": "question 6",
+      "find": "and Mark, the earliest, has no male witness",
+      "replace": "and Mark, which most scholars date earliest, has no male witness",
+      "basis": "The Mark briefing: Markan priority is \"the majority position\"; Matthew first is \"still defended today\"."
+    },
+    {
+      "group": "soften",
+      "chapter": 16,
+      "path": "questions[10].answer",
+      "place": "question 11",
+      "find": "added by a hand other than the one that wrote the rest",
+      "replace": "which most modern editions mark as a later addition",
+      "basis": "The Mark briefing lists both positions on the ending; its settled line is that modern editions flag the longer ending."
+    }
+  ],
+  "contextLines": [
+    {
+      "group": "context",
+      "chapter": 1,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 1,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea, mostly not Jewish — Mark",
+      "replace": "Likely Greek-speaking readers outside Judea, probably including Gentiles — Mark",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 2,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 2,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Non-Jewish readers who need the customs explained",
+      "replace": "Likely readers outside Judea who need the customs explained",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 3,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 3,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Non-Jewish readers — note that Mark stops",
+      "replace": "Likely readers who did not know Aramaic — note that Mark stops",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 4,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 4,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 5,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 5,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea — Mark translates the Aramaic 'Talitha cumi' and explains nothing about pigs, assuming his readers already keep them",
+      "replace": "Likely Greek-speaking readers outside Judea — Mark translates the Aramaic 'Talitha cumi'",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 6,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 6,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 7,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 7,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Non-Jewish readers — verses 3-4 stop the narrative to explain Jewish washing customs, which no Jewish reader would need",
+      "replace": "Likely readers outside Judea, probably including Gentiles — verses 3-4 stop the narrative to explain Jewish washing customs",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 8,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 8,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 9,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 9,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 10,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 10,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 11,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 11,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 12,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 12,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 13,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 14,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 14,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    },
+    {
+      "group": "context",
+      "chapter": 15,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 16,
+      "path": "context.date",
+      "place": "date line",
+      "find": "Somewhere in the AD 50s–70s",
+      "replace": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
+      "basis": "The Mark briefing: \"Most scholarship places it from the mid-AD 60s to shortly after 70, though earlier dates are defended.\""
+    },
+    {
+      "group": "context",
+      "chapter": 16,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "Greek-speaking readers outside Judea",
+      "replace": "Likely Greek-speaking readers outside Judea",
+      "basis": "The Mark briefing: \"Likely Greek-speaking readers outside Judea, probably including Gentiles. That is an inference\"."
+    }
+  ],
+  "claims": [
+    {
+      "chapter": 1,
+      "place": "context.literaryForm",
+      "claim": "'immediately' twelve times in this chapter",
+      "verdict": "text",
+      "basis": "Tagged Greek: euthys 12 times in chapter 1. Hosted English: \"immediately\" 12 times."
+    },
+    {
+      "chapter": 1,
+      "place": "glossary: Gospel",
+      "claim": "in ordinary Greek, an announcement of a victory or a ruler's arrival",
+      "verdict": "partly",
+      "basis": "Priene calendar inscription, 9 BC: the birthday of Augustus as \"the beginning of the good tidings\" (Wikipedia, \"Priene calendar inscription\"). Thayer's and Wiktionary: \"a reward for good news\", \"good news\". No page read gives \"news of a victory\"; the classical lexicon would not load."
+    },
+    {
+      "chapter": 1,
+      "place": "glossary: Christ",
+      "claim": "means 'anointed one'; the Hebrew equivalent is Messiah",
+      "verdict": "text",
+      "basis": "Hosted John 1:41: \"the Messiah! (which is, being interpreted, Christ)\"."
+    },
+    {
+      "chapter": 1,
+      "place": "glossary: Scribes",
+      "claim": "their authority came from citing tradition",
+      "verdict": "open",
+      "basis": "Nothing read."
+    },
+    {
+      "chapter": 1,
+      "place": "questions 4 and 7",
+      "claim": "what the kingdom means; why Jesus orders silence",
+      "verdict": "reading",
+      "basis": "The briefing treats the silence orders as \"an interpretation rather than a settled fact\"."
+    },
+    {
+      "chapter": 2,
+      "place": "context.setting",
+      "claim": "Capernaum, a fishing town on the Sea of Galilee",
+      "verdict": "text",
+      "basis": "Hosted 1:16-21: fishermen at the lake, then Capernaum."
+    },
+    {
+      "chapter": 2,
+      "place": "glossary: Blasphemy",
+      "claim": "a capital charge under the law",
+      "verdict": "text",
+      "basis": "Hosted Leviticus 24:16."
+    },
+    {
+      "chapter": 2,
+      "place": "question 1",
+      "claim": "flat roofs of beams, branches and dried mud; used for sleeping and drying grain; reached from outside",
+      "verdict": "source",
+      "basis": "Smith's Bible Dictionary, \"House\": \"plaster of mud and straw laid upon boughs or rafters\"; roofs used \"as sleeping-places\" and for \"drying corn\". Hosted Mark 13:15 and Joshua 2:6. Smith's puts the stairs in a corner of the court."
+    },
+    {
+      "chapter": 2,
+      "place": "question 4",
+      "claim": "tax collectors in Galilee worked for Herod Antipas; they kept what they raised above the quota",
+      "verdict": "partly",
+      "basis": "Josephus, Antiquities 17.11.4: Perea and Galilee paid their tribute to Antipas. Easton's, \"Publican\": \"one who farmed the taxes\". Hosted Luke 3:13. Keeping the excess is implied, not stated, in what was read."
+    },
+    {
+      "chapter": 2,
+      "place": "question 6",
+      "claim": "one fast day was required; devout groups fasted regularly",
+      "verdict": "text",
+      "basis": "Hosted Leviticus 16:29-31 and Luke 18:12."
+    },
+    {
+      "chapter": 2,
+      "place": "question 9",
+      "claim": "some take the Greek as 'in the passage about Abiathar'",
+      "verdict": "text",
+      "basis": "Tagged Greek: the same construction at 12:26, which the hosted text renders \"about the Bush\"."
+    },
+    {
+      "chapter": 2,
+      "place": "question 10",
+      "claim": "'son of man' can mean 'a human being'; Daniel 7:13",
+      "verdict": "partly",
+      "basis": "Hosted Aramaic of Daniel 7:13 has the phrase. Everyday Aramaic usage was not checked."
+    },
+    {
+      "chapter": 2,
+      "place": "question 10",
+      "claim": "claiming kingship got you executed in the province",
+      "verdict": "open",
+      "basis": "Nothing read."
+    },
+    {
+      "chapter": 2,
+      "place": "key verse 3",
+      "claim": "a principle for reading every rule in the book",
+      "verdict": "reading",
+      "basis": ""
+    },
+    {
+      "chapter": 3,
+      "place": "glossary: Boanerges",
+      "claim": "Mark translates it as 'Sons of Thunder'",
+      "verdict": "text",
+      "basis": "Hosted 3:17."
+    },
+    {
+      "chapter": 3,
+      "place": "question 1",
+      "claim": "healing on the Sabbath was allowed only when a life was in danger",
+      "verdict": "source",
+      "basis": "Mishnah Yoma 8:6: \"a case of uncertainty concerning a life-threatening situation overrides Shabbat\". The Mishnah was written down about AD 200."
+    },
+    {
+      "chapter": 3,
+      "place": "question 3",
+      "claim": "the Pharisees had no love for Herod's court",
+      "verdict": "partly",
+      "basis": "Josephus, Antiquities 17.2.4: above six thousand Pharisees refused the oath of loyalty. \"A devout renewal movement\" was not checked."
+    },
+    {
+      "chapter": 3,
+      "place": "question 4",
+      "claim": "twelve is 'almost certainly' a claim to restart Israel",
+      "verdict": "reading",
+      "basis": ""
+    },
+    {
+      "chapter": 3,
+      "place": "question 5",
+      "claim": "the Greek phrase covers relatives; the verb means to seize",
+      "verdict": "text",
+      "basis": "Tagged Greek 3:21; the same verb is used for arrests at 6:17, 12:12, 14:1, 14:44, 14:46. Thayer's on the phrase: \"his kinsmen\"."
+    },
+    {
+      "chapter": 3,
+      "place": "question 8",
+      "claim": "what the unforgivable sin is",
+      "verdict": "reading",
+      "basis": ""
+    },
+    {
+      "chapter": 3,
+      "place": "question 9",
+      "claim": "the brothers are unconvinced; James later leads the Jerusalem church",
+      "verdict": "text",
+      "basis": "Hosted John 7:5 and Galatians 1:19."
+    },
+    {
+      "chapter": 4,
+      "place": "setting, glossary, question 8",
+      "claim": "the lake is about 13 miles by 7, about 700 feet below sea level, with sudden squalls",
+      "verdict": "source",
+      "basis": "Wikipedia, \"Sea of Galilee\": 21 km (13 mi) long, 13 km (8 mi) wide, 209-215 m below sea level. Smith's: \"frequent sudden and violent storms\". The page read gives 8 miles wide, not 7."
+    },
+    {
+      "chapter": 4,
+      "place": "key verse 3, glossary",
+      "claim": "'rebuked' is the verb used on the unclean spirit in 1:25",
+      "verdict": "text",
+      "basis": "Tagged Greek: epitimao at 1:25 and 4:39; phimoo (\"be silent\") only at 1:25 and 4:39."
+    },
+    {
+      "chapter": 4,
+      "place": "question 2",
+      "claim": "seed was scattered first and ploughed in afterward",
+      "verdict": "source",
+      "basis": "Smith's, \"Agriculture\": \"the seed being scattered broad cast and ploughed in afterwards\". Mishnah Shabbat 7:2 lists sowing before ploughing. ISBE and hosted Isaiah 28:24 also show ploughing first, so both orders are attested."
+    },
+    {
+      "chapter": 4,
+      "place": "question 7",
+      "claim": "a mustard seed was a proverbial figure for something tiny",
+      "verdict": "source",
+      "basis": "Mishnah Niddah 5:2: \"even like the size of a mustard seed\"."
+    },
+    {
+      "chapter": 4,
+      "place": "question 10",
+      "claim": "'they feared a great fear'",
+      "verdict": "text",
+      "basis": "Tagged Greek 4:41."
+    },
+    {
+      "chapter": 4,
+      "place": "question 10",
+      "claim": "mastery of the sea belongs to God (Psalm 107:29, Job 38:8-11)",
+      "verdict": "text",
+      "basis": "Hosted Psalm 107:29."
+    },
+    {
+      "chapter": 5,
+      "place": "key verse 3",
+      "claim": "'Daughter' is the only time he calls anyone that",
+      "verdict": "text",
+      "basis": "Tagged Greek: the only use as an address in Mark is 5:34. Outside Mark, hosted Luke 23:28 has \"Daughters of Jerusalem\"."
+    },
+    {
+      "chapter": 5,
+      "place": "question 1",
+      "claim": "a legion was several thousand men",
+      "verdict": "source",
+      "basis": "Wikipedia, \"Roman legion\": about 5,200."
+    },
+    {
+      "chapter": 5,
+      "place": "question 2, glossary",
+      "claim": "the Decapolis: 'ten cities', Greek-speaking and largely Gentile",
+      "verdict": "source",
+      "basis": "Wikipedia, \"Decapolis\": \"ten Greek Hellenistic cities\". Josephus, War 3.9.7. Pliny would not load."
+    },
+    {
+      "chapter": 5,
+      "place": "question 6",
+      "claim": "Leviticus 15 on a discharge of blood",
+      "verdict": "text",
+      "basis": "Hosted Leviticus 15:25-27."
+    },
+    {
+      "chapter": 5,
+      "place": "question 10",
+      "claim": "four Aramaic sayings kept, each with a translation",
+      "verdict": "text",
+      "basis": "Tagged Greek and hosted text: 5:41, 7:34, 14:36, 15:34."
+    },
+    {
+      "chapter": 5,
+      "place": "questions 5, 10 and 11",
+      "claim": "why the silence rule is reversed; kept words as eyewitness memory",
+      "verdict": "reading",
+      "basis": "The briefing leaves both open."
+    },
+    {
+      "chapter": 6,
+      "place": "glossary: Herod, question 8",
+      "claim": "Antipas, son of Herod the Great, ruler of Galilee and Perea, not a king in Roman law",
+      "verdict": "source",
+      "basis": "Josephus, Antiquities 17.8.1: \"tetrarch of Galilee and Perea\". Hosted Luke 3:1 and Matthew 14:1."
+    },
+    {
+      "chapter": 6,
+      "place": "question 8",
+      "claim": "Herod the Great died around 4 BC",
+      "verdict": "partly",
+      "basis": "Wikipedia, \"Herod the Great\": 4 BC (Schürer) or 1 BC (Steinmann)."
+    },
+    {
+      "chapter": 6,
+      "place": "question 3",
+      "claim": "Catholic tradition reads 'brothers' as close kin",
+      "verdict": "partly",
+      "basis": "Jerome, Against Helvidius: only the editor's summary (\"first cousins\") was read word for word."
+    },
+    {
+      "chapter": 6,
+      "place": "question 9",
+      "claim": "a denarius was a day's wage; two hundred is about eight months",
+      "verdict": "text",
+      "basis": "Hosted Matthew 20:2."
+    },
+    {
+      "chapter": 6,
+      "place": "question 10, 8 outline",
+      "claim": "the first feeding is on the Jewish side, the second on the Gentile side",
+      "verdict": "reading",
+      "basis": "An inference from hosted 7:31; widely held."
+    },
+    {
+      "chapter": 6,
+      "place": "question 11",
+      "claim": "God 'passes by' Moses and Elijah (Exodus 33, 1 Kings 19)",
+      "verdict": "source",
+      "basis": "Septuagint Exodus 33:19, 33:22 and 1 Kings 19:11 use the verb Mark has at 6:48. The hosted English has \"pass by\" in each."
+    },
+    {
+      "chapter": 6,
+      "place": "glossary: Sheep without a shepherd",
+      "claim": "from Numbers 27:17 and Ezekiel 34",
+      "verdict": "text",
+      "basis": "Hosted Numbers 27:17 and Ezekiel 34:5."
+    },
+    {
+      "chapter": 6,
+      "place": "summary",
+      "claim": "Jesus goes home to Nazareth",
+      "verdict": "text",
+      "basis": "Hosted 6:1 says \"his own country\"; 1:9 names Nazareth."
+    },
+    {
+      "chapter": 7,
+      "place": "glossary: Syrophoenician",
+      "claim": "'Greek' here means Gentile, not Greek by descent",
+      "verdict": "source",
+      "basis": "Thayer's, Hellenis: \"a Gentile woman; not a Jewess\"."
+    },
+    {
+      "chapter": 7,
+      "place": "glossary: Ephphatha",
+      "claim": "Aramaic for 'be opened'",
+      "verdict": "text",
+      "basis": "Hosted 7:34; the briefing."
+    },
+    {
+      "chapter": 7,
+      "place": "question 1",
+      "claim": "the law requires washing of priests; the practice extended priestly purity to daily life",
+      "verdict": "partly",
+      "basis": "Hosted Exodus 30:19-21 for the priests. The extension was not checked."
+    },
+    {
+      "chapter": 7,
+      "place": "question 6",
+      "claim": "the word for 'dogs' is a diminutive",
+      "verdict": "text",
+      "basis": "Tagged Greek: kynarion at 7:27-28; kyon does not occur in Mark. Thayer's: \"a little dog\". No lexicon read says house dog or street dog; the table is in 7:28."
+    },
+    {
+      "chapter": 7,
+      "place": "key verse 1",
+      "claim": "the quotation of 7:8",
+      "verdict": "text",
+      "basis": "A contiguous part of hosted 7:8, which the check allows."
+    },
+    {
+      "chapter": 7,
+      "place": "question 10",
+      "claim": "the silence orders stop after the crucifixion",
+      "verdict": "reading",
+      "basis": "Hosted 9:9 sets the limit at the resurrection."
+    },
+    {
+      "chapter": 8,
+      "place": "setting, glossary, question 6",
+      "claim": "Caesarea Philippi: at the foot of Hermon, a shrine to Pan, built up by Philip and named for Caesar, about 25 miles north of the lake",
+      "verdict": "source",
+      "basis": "Josephus, Antiquities 18.2.1 and War 2.9.1 (Philip, Caesarea); Antiquities 15.10.3 and War 1.21.3 (the temple by Panium). Wikipedia, \"Banias\": foot of Mount Hermon, a shrine to Pan. The distance is not on a page read; the two sets of coordinates are about 25 miles apart."
+    },
+    {
+      "chapter": 8,
+      "place": "glossary: Take up your cross, question 9",
+      "claim": "the condemned carried the cross; a Roman execution for rebels and slaves",
+      "verdict": "partly",
+      "basis": "Hosted John 19:17 and Mark 15:21 for the carrying. Josephus, Antiquities 17.10.10 for rebels. Slaves: a secondary summary only."
+    },
+    {
+      "chapter": 8,
+      "place": "outline, question 5",
+      "claim": "the only two-stage healing; Mark alone records it",
+      "verdict": "partly",
+      "basis": "Among the four hosted gospels, \"like trees\" occurs only at Mark 8:24. \"The only one in the gospels\" was not otherwise checked."
+    },
+    {
+      "chapter": 8,
+      "place": "question 10",
+      "claim": "the Greek word for 'life' also means soul or self",
+      "verdict": "text",
+      "basis": "Tagged Greek: psyche at 8:35-37. Strong's: \"soul, life, self\"."
+    },
+    {
+      "chapter": 8,
+      "place": "question 7",
+      "claim": "what 'Christ' meant; why he orders silence",
+      "verdict": "reading",
+      "basis": ""
+    },
+    {
+      "chapter": 9,
+      "place": "glossary: Rabbi",
+      "claim": "literally something like 'my great one'",
+      "verdict": "source",
+      "basis": "Thayer's: \"properly, my great one, my honorable sir\"."
+    },
+    {
+      "chapter": 9,
+      "place": "glossary: Millstone",
+      "claim": "the large kind turned by a donkey",
+      "verdict": "text",
+      "basis": "Tagged Greek 9:42: mylos onikos. Thayer's: \"turned by an ass\"."
+    },
+    {
+      "chapter": 9,
+      "place": "question 11",
+      "claim": "Gehenna is the Valley of Hinnom, a site of child sacrifice",
+      "verdict": "text",
+      "basis": "Hosted 2 Kings 23:10 and Jeremiah 7:31."
+    },
+    {
+      "chapter": 9,
+      "place": "question 2",
+      "claim": "Moses and Elijah both met God on a mountain",
+      "verdict": "text",
+      "basis": "Hosted Exodus 24 and 1 Kings 19."
+    },
+    {
+      "chapter": 10,
+      "place": "context.setting",
+      "claim": "an eighteen-mile climb from Jericho to Jerusalem",
+      "verdict": "source",
+      "basis": "Josephus, War 4.8.3: \"an hundred and fifty furlongs from Jerusalem\", about 17 miles."
+    },
+    {
+      "chapter": 10,
+      "place": "question 1",
+      "claim": "two schools disputed the grounds for divorce in Deuteronomy 24:1",
+      "verdict": "source",
+      "basis": "Mishnah Gittin 9:10 (Shammai, Hillel, Akiva)."
+    },
+    {
+      "chapter": 10,
+      "place": "question 1",
+      "claim": "beyond the Jordan was Antipas's territory, where John was killed",
+      "verdict": "source",
+      "basis": "Josephus, Antiquities 17.8.1 (Perea) and 18.5.2 (Macherus)."
+    },
+    {
+      "chapter": 10,
+      "place": "question 2",
+      "claim": "the certificate showed a woman was free to remarry",
+      "verdict": "source",
+      "basis": "Mishnah Gittin 9:3: \"You are hereby permitted to marry any man.\" Her being destitute without it was not checked."
+    },
+    {
+      "chapter": 10,
+      "place": "question 4, audience",
+      "claim": "Jewish law gave only the husband the act of divorce; Roman law let a wife begin it",
+      "verdict": "partly",
+      "basis": "Josephus, Antiquities 15.7.10: \"not according to the Jewish laws; for with us it is lawful for a husband to do so\". Mishnah Ketubot 7:10: a court may force the husband. Roman law was not checked."
+    },
+    {
+      "chapter": 10,
+      "place": "question 8",
+      "claim": "the 'Needle's Eye gate' is medieval and has no evidence",
+      "verdict": "source",
+      "basis": "Wikipedia, \"Eye of a needle\": put forward since the 9th to 11th century; \"no evidence for the existence of such a gate\"."
+    },
+    {
+      "chapter": 10,
+      "place": "question 11, glossary",
+      "claim": "'ransom' was the price to free a slave or a captive",
+      "verdict": "source",
+      "basis": "Thayer's, lytron: \"the price for redeeming, ransom (paid for slaves ... for captives\"."
+    },
+    {
+      "chapter": 10,
+      "place": "glossary: Cup",
+      "claim": "an allotted portion of suffering; used again in 14:36",
+      "verdict": "text",
+      "basis": "Hosted Isaiah 51:17 and Jeremiah 25:15; tagged Greek 10:38-39 and 14:36."
+    },
+    {
+      "chapter": 10,
+      "place": "question 12",
+      "claim": "the cloak was a beggar's bedding",
+      "verdict": "text",
+      "basis": "Hosted Exodus 22:26-27. Collecting coins on it was not checked."
+    },
+    {
+      "chapter": 10,
+      "place": "outline 3",
+      "claim": "Mark alone records that Jesus loved him",
+      "verdict": "text",
+      "basis": "No such line in hosted Matthew 19:16-22 or Luke 18:18-23."
+    },
+    {
+      "chapter": 11,
+      "place": "setting, question 10",
+      "claim": "at Passover the city filled and Rome posted extra troops",
+      "verdict": "source",
+      "basis": "Josephus, War 2.12.1: \"a Roman cohort stood over the cloisters of the temple\" at the feast, as \"they always were armed, and kept guard at the festivals\". Antiquities 20.5.3. Crowd numbers were not read word for word."
+    },
+    {
+      "chapter": 11,
+      "place": "glossary, question 2",
+      "claim": "Hosanna is Hebrew for 'save now', from Psalm 118",
+      "verdict": "text",
+      "basis": "Hosted Hebrew of Psalm 118:25. Thayer's: \"save, I pray\"."
+    },
+    {
+      "chapter": 11,
+      "place": "question 4",
+      "claim": "a fig tree in leaf normally carries small early figs",
+      "verdict": "source",
+      "basis": "ISBE, \"Fig\": \"every fig-tree which is going to bear fruit at all will have some taksh ('immature figs') upon it\"."
+    },
+    {
+      "chapter": 11,
+      "place": "question 5",
+      "claim": "pilgrims needed temple currency; money-changers served them",
+      "verdict": "source",
+      "basis": "Mishnah Shekalim 1:3: on the 25th of Adar \"the money changers sat in the Temple\"."
+    },
+    {
+      "chapter": 11,
+      "place": "question 6",
+      "claim": "the outer courts covered about thirty-five acres, with a Roman garrison overlooking",
+      "verdict": "partly",
+      "basis": "Josephus, War 5.5.8 (Antonia). The area (36 to 37 acres) comes from a helper's summary of Wikipedia, \"Temple Mount\", not from text read word for word."
+    },
+    {
+      "chapter": 11,
+      "place": "question 7",
+      "claim": "moving a mountain was a figure of speech",
+      "verdict": "partly",
+      "basis": "Babylonian Talmud, Berakhot 64a: \"one who uproots mountains\", for a sharp scholar. Centuries later than Mark."
+    },
+    {
+      "chapter": 11,
+      "place": "question 8",
+      "claim": "verse 26 is missing from the oldest manuscripts; it resembles Matthew 6:15",
+      "verdict": "source",
+      "basis": "Wikipedia, list of verses not in modern translations: \"not in Codex Sinaiticus, Codex Vaticanus, Codex Regius\"; \"very similar to Matthew 6:15\"."
+    },
+    {
+      "chapter": 11,
+      "place": "question 9",
+      "claim": "answering a question with a question was a recognised rabbinic style",
+      "verdict": "open",
+      "basis": "Nothing read."
+    },
+    {
+      "chapter": 12,
+      "place": "question 4",
+      "claim": "the Sadducees: priestly aristocracy, the written law above tradition, no resurrection",
+      "verdict": "source",
+      "basis": "Josephus, Antiquities 13.10.6 and 18.1.4; War 2.8.14."
+    },
+    {
+      "chapter": 12,
+      "place": "glossary: Sadducees",
+      "claim": "they disappear after AD 70",
+      "verdict": "open",
+      "basis": "Nothing read."
+    },
+    {
+      "chapter": 12,
+      "place": "glossary: Denarius, question 3",
+      "claim": "the coin: the emperor's portrait and a title claiming divine descent",
+      "verdict": "source",
+      "basis": "Wikipedia, \"Tribute penny\": \"Ti[berivs] Caesar Divi Avg[vsti] F[ilivs] Avgvstvs\". Hosted Matthew 20:2 for the day's wage."
+    },
+    {
+      "chapter": 12,
+      "place": "glossary: Shema, question 9",
+      "claim": "named for its first Hebrew word; recited twice daily",
+      "verdict": "source",
+      "basis": "Hosted Hebrew of Deuteronomy 6:4. Mishnah Berakhot 1:1-2 (evening and morning)."
+    },
+    {
+      "chapter": 12,
+      "place": "glossary: Quadrans",
+      "claim": "two lepta make a quadrans, a Roman coin",
+      "verdict": "text",
+      "basis": "Tagged Greek 12:42. Thayer's: \"a Latin word, quadrans\"."
+    },
+    {
+      "chapter": 12,
+      "place": "question 2",
+      "claim": "a revolt had been raised over this tax",
+      "verdict": "source",
+      "basis": "Josephus, Antiquities 18.1.1 and War 2.8.1. Hosted Acts 5:37."
+    },
+    {
+      "chapter": 12,
+      "place": "question 3",
+      "claim": "'image' is the word of Genesis 1:27",
+      "verdict": "source",
+      "basis": "Tagged Greek 12:16: eikon. Septuagint Genesis 1:27: kat' eikona theou."
+    },
+    {
+      "chapter": 12,
+      "place": "key verse 4",
+      "claim": "the last thing he does in the temple",
+      "verdict": "text",
+      "basis": "Hosted 13:1."
+    },
+    {
+      "chapter": 12,
+      "place": "questions 1 and 10, why it matters",
+      "claim": "who the parable's figures are; what the riddle proves",
+      "verdict": "reading",
+      "basis": ""
+    },
+    {
+      "chapter": 13,
+      "place": "setting, question 1",
+      "claim": "Herod's temple: decades of building, huge stones, among the largest sanctuaries",
+      "verdict": "source",
+      "basis": "Josephus, Antiquities 15.11.1 and 15.11.3 (stones 25 cubits long) and 20.9.7 (finished much later). Hosted John 2:20. Wikipedia, \"Western Stone\": 250-300 tonnes."
+    },
+    {
+      "chapter": 13,
+      "place": "question 2",
+      "claim": "AD 70: Titus took Jerusalem; Josephus was present",
+      "verdict": "source",
+      "basis": "Josephus, War 6.4 and 7.1.1; Against Apion 1.9."
+    },
+    {
+      "chapter": 13,
+      "place": "glossary, question 4",
+      "claim": "Antiochus IV set up a pagan altar in 167 BC",
+      "verdict": "text",
+      "basis": "Hosted 1 Maccabees 1:54. The year is from Wikipedia."
+    },
+    {
+      "chapter": 13,
+      "place": "glossary: Birth pains",
+      "claim": "a standard Jewish image for distress before God acts",
+      "verdict": "open",
+      "basis": "Nothing read."
+    },
+    {
+      "chapter": 13,
+      "place": "question 6",
+      "claim": "tradition says believers fled Jerusalem before the siege",
+      "verdict": "source",
+      "basis": "Eusebius, Church History 3.5.3: to \"a certain town of Perea called Pella\"."
+    },
+    {
+      "chapter": 13,
+      "place": "question 8",
+      "claim": "the Greek for 'generation' can mean a kind or race",
+      "verdict": "source",
+      "basis": "Thayer's, genea: \"men of the same stock, a family\"; \"a perverse race\"."
+    },
+    {
+      "chapter": 13,
+      "place": "question 10",
+      "claim": "the four times named are the four night watches",
+      "verdict": "source",
+      "basis": "Hosted 13:35. Thayer's on the four Roman watches. Matching them to the next two chapters is a reading."
+    },
+    {
+      "chapter": 14,
+      "place": "question 1",
+      "claim": "three hundred denarii is about a year's wages; nard came from the Himalayan region",
+      "verdict": "partly",
+      "basis": "Hosted Matthew 20:2. Wikipedia, \"Spikenard\": the plant \"grows in the Himalayas\". The sealed jar was not checked."
+    },
+    {
+      "chapter": 14,
+      "place": "question 3",
+      "claim": "kings were anointed with oil on the head",
+      "verdict": "text",
+      "basis": "Hosted 1 Samuel 10:1 and 2 Kings 9:6."
+    },
+    {
+      "chapter": 14,
+      "place": "question 7",
+      "claim": "the cup as an image of judgment",
+      "verdict": "text",
+      "basis": "Hosted Isaiah 51:17 and Jeremiah 25:15."
+    },
+    {
+      "chapter": 14,
+      "place": "question 8",
+      "claim": "Abba: the Aramaic word for father, not baby talk; used in Romans 8:15 and Galatians 4:6",
+      "verdict": "partly",
+      "basis": "Thayer's: Aramaic, \"father\". Hosted Romans 8:15 and Galatians 4:6. \"Not baby talk\" follows J. Barr, Journal of Theological Studies 39 (1988), known here from summaries only."
+    },
+    {
+      "chapter": 14,
+      "place": "question 12",
+      "claim": "the high priest tears his clothes, the prescribed response to blasphemy",
+      "verdict": "source",
+      "basis": "Mishnah Sanhedrin 7:5: the judges \"stand on their feet and make a tear in their garments\"."
+    },
+    {
+      "chapter": 14,
+      "place": "question 12",
+      "claim": "'I am' echoes Exodus 3:14",
+      "verdict": "source",
+      "basis": "Tagged Greek 14:62 and Septuagint Exodus 3:14 share the two words. That it is an echo is a reading."
+    },
+    {
+      "chapter": 14,
+      "place": "question 9",
+      "claim": "an invented scene would have been tidied",
+      "verdict": "reading",
+      "basis": ""
+    },
+    {
+      "chapter": 14,
+      "place": "key verse 1",
+      "claim": "the quotation of 14:9",
+      "verdict": "text",
+      "basis": "A contiguous part of hosted 14:9."
+    },
+    {
+      "chapter": 15,
+      "place": "setting, glossary",
+      "claim": "Golgotha was outside the city wall",
+      "verdict": "text",
+      "basis": "Hosted Hebrews 13:12 and John 19:20."
+    },
+    {
+      "chapter": 15,
+      "place": "glossary: Barabbas",
+      "claim": "the name means 'son of the father'",
+      "verdict": "source",
+      "basis": "Thayer's: \"son of a father\"."
+    },
+    {
+      "chapter": 15,
+      "place": "glossary: Crucifixion",
+      "claim": "for slaves, rebels and the lowest criminals; citizens normally exempt",
+      "verdict": "open",
+      "basis": "A secondary summary only; Cicero would not load."
+    },
+    {
+      "chapter": 15,
+      "place": "glossary: hours",
+      "claim": "counted from sunrise",
+      "verdict": "text",
+      "basis": "Hosted John 11:9: \"twelve hours of daylight\"."
+    },
+    {
+      "chapter": 15,
+      "place": "glossary: Centurion",
+      "claim": "an officer over about eighty men",
+      "verdict": "source",
+      "basis": "Wikipedia, \"Centurion\": \"a century was typically composed of around 80 men\"."
+    },
+    {
+      "chapter": 15,
+      "place": "question 5",
+      "claim": "purple was the royal colour and very costly",
+      "verdict": "source",
+      "basis": "ISBE and American Tract Society dictionary, \"Purple\": \"the royal color\"; \"a very high price\"."
+    },
+    {
+      "chapter": 15,
+      "place": "question 11",
+      "claim": "the Most Holy Place, entered by the high priest once a year",
+      "verdict": "text",
+      "basis": "Hosted Hebrews 9:3 and 9:7."
+    },
+    {
+      "chapter": 15,
+      "place": "audience",
+      "claim": "Mark uses Latin terms",
+      "verdict": "text",
+      "basis": "Tagged Greek: praitorion, kenturion, phragelloo in this chapter."
+    },
+    {
+      "chapter": 16,
+      "place": "context.literaryForm",
+      "claim": "the Greek of verse 8 ends on a conjunction",
+      "verdict": "text",
+      "basis": "Tagged Greek: the last word before the bracketed endings is gar."
+    },
+    {
+      "chapter": 16,
+      "place": "why it matters",
+      "claim": "the account ends on the word 'afraid'",
+      "verdict": "text",
+      "basis": "Hosted 16:8."
+    },
+    {
+      "chapter": 16,
+      "place": "question 1",
+      "claim": "verses 9-20 were quoted by the second century",
+      "verdict": "source",
+      "basis": "Irenaeus, Against Heresies 3.10.5 quotes Mark 16:19 as from \"the conclusion of his Gospel\"."
+    },
+    {
+      "chapter": 16,
+      "place": "question 2",
+      "claim": "a cluster of words Mark uses nowhere else",
+      "verdict": "text",
+      "basis": "Tagged Greek: 16 of the 99 distinct words in 16:9-20 occur nowhere else in Mark."
+    },
+    {
+      "chapter": 16,
+      "place": "question 2",
+      "claim": "several endings survive: shorter, longer, both, and one with an insertion",
+      "verdict": "source",
+      "basis": "Wikipedia, \"Mark 16\" and \"Codex Bobiensis\"."
+    },
+    {
+      "chapter": 16,
+      "place": "question 4",
+      "claim": "1 Corinthians 15 is earlier than the gospels",
+      "verdict": "partly",
+      "basis": "Wikipedia: the letter is dated AD 53-57. The briefing dates Mark from the mid-60s, with earlier dates defended."
+    },
+    {
+      "chapter": 16,
+      "place": "question 6",
+      "claim": "a woman's testimony carried little weight",
+      "verdict": "source",
+      "basis": "Josephus, Antiquities 4.8.15: \"let not the testimony of women be admitted\". Mishnah Rosh Hashanah 1:8."
+    },
+    {
+      "chapter": 16,
+      "place": "question 7",
+      "claim": "the young man: the same word as in 14:51",
+      "verdict": "text",
+      "basis": "Tagged Greek: neaniskos only at 14:51 and 16:5."
+    },
+    {
+      "chapter": 16,
+      "place": "question 10",
+      "claim": "a few groups handle snakes in worship, with deaths",
+      "verdict": "source",
+      "basis": "Wikipedia, \"Snake handling in Christianity\": \"over 100 documented deaths\"."
+    }
+  ]
+}
