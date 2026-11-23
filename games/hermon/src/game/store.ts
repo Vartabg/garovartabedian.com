@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { START, validCheckpoint, type Vec } from './motion';
+import { TERMINAL_IDS } from './navigation';
 import type { LimitCue } from './limitCue';
 export type CameraMode = 'third' | 'first';
 export type TrackpadProfile = 'simple' | 'free' | 'captured' | 'flow';
@@ -11,8 +12,10 @@ export type TrackpadProfile = 'simple' | 'free' | 'captured' | 'flow';
  *    a save at 5 or later keeps its own choices.
  * 6: one-finger flight is the phone default again (Garo 2026-09-26). A save from before 6 moves touchScheme to 'classic' (the twin
  *    default of 3-5 cannot be told apart from a choice); an explicit 'twin' saved at 6 or later persists.
+ * 7: unified standard 3D desktop flight + calm exploration default (Garo 2026-11-23). Pre-v7 saves migrate to desktopMode 'mouse',
+ *    shooter false (opt-in Watchers battle), and controlLab 'standard'.
  */
-export const CONTROLS_VERSION = 6;
+export const CONTROLS_VERSION = 7;
 export type TouchScheme = 'twin' | 'classic';
 export type HintSeries = 'touch' | 'simple' | 'mouse';
 /** The Gesture Lab (docs: gesture lab spec 8). 'standard' is the restored desktop controls and, on a phone, one-finger flight with tap-a-drone; it stays the default. */
@@ -53,29 +56,45 @@ type GameState = {
   coach: Coach | null;
   /** Runtime only (never saved): the Controls sheet is open. */
   controlsOpen: boolean;
-  flying: boolean; landing: boolean; canLand: boolean; nearTerminal: boolean; limitCue: LimitCue; limitHint: string; clearanceActive: boolean; inputEpoch: number;
-  checkpoint: Vec; discovered: boolean; message: string;
+  /** Runtime only (never saved): pointer lock is active on the flight surface. */
+  pointerLocked: boolean;
+  flying: boolean; landing: boolean; canLand: boolean; nearTerminal: boolean;
+  nearTerminalId: string | null; nearTerminalLabel: string; journalTerminalId: string | null;
+  limitCue: LimitCue; limitHint: string; clearanceActive: boolean; inputEpoch: number;
+  checkpoint: Vec; discovered: boolean; discoveredTablets: string[]; message: string;
   set: (patch: Partial<Omit<GameState, 'set'>>) => void;
 };
 export const useGame = create<GameState>((set) => ({
   started: false, paused: true, ready: false, panel: false, journal: false,
   camera: 'third', quality: 'high', reduced: false, muted: true, tapControls: false,
-  desktopMode: 'trackpad', trackpadFlying: false,
+  desktopMode: 'mouse', trackpadFlying: false,
   trackpadSteering: 'free', sustainedEdges: true, reverseScroll: false, cruiseSpeed: 8, heroPoses: true,
   lookSensitivity: 1, flowIntroSeen: false,
-  shooter: true, aimToggle: false, aimAssist: 1, controlsVersion: CONTROLS_VERSION,
+  shooter: false, aimToggle: false, aimAssist: 1, controlsVersion: CONTROLS_VERSION,
   autoFire: true, aimButton: true, hintProgress: { touch: 0, simple: 0, mouse: 0 }, coach: null,
   touchScheme: 'classic', touchLook: 1, touchAim: 1, lookAccel: true, edgeRest: true, invertY: false, flipSides: false,
   controlSize: 1, controlOpacity: .85, flyWhereILook: false, homeTipSeen: false, controlLab: 'standard',
-  nearGround: false, leavePrompt: false, zoomNote: false, descendBlocked: false, controlsOpen: false,
-  flying: false, landing: false, canLand: false, nearTerminal: false, limitCue: '', limitHint: '', clearanceActive: false, inputEpoch: 0,
-  checkpoint: START, discovered: false, message: '', set,
+  nearGround: false, leavePrompt: false, zoomNote: false, descendBlocked: false, controlsOpen: false, pointerLocked: false,
+  flying: false, landing: false, canLand: false, nearTerminal: false, nearTerminalId: null, nearTerminalLabel: '', journalTerminalId: null,
+  limitCue: '', limitHint: '', clearanceActive: false, inputEpoch: 0,
+  checkpoint: START, discovered: false, discoveredTablets: [], message: '', set,
 }));
 const STORAGE = 'hermon.flight.v1';
+const VALID_TABLETS = new Set(TERMINAL_IDS);
+export function validDiscoveredTablets(raw: unknown, legacyDiscovered = false): string[] {
+  if (Array.isArray(raw)) {
+    const out: string[] = [];
+    for (const item of raw) {
+      if (typeof item === 'string' && VALID_TABLETS.has(item) && !out.includes(item)) out.push(item);
+    }
+    return out;
+  }
+  return legacyDiscovered ? ['hermon-oath-01'] : [];
+}
 // The single authoritative list of fields saved between sessions. persistGame
-// writes exactly these keys; tests/persistence.test.ts pins hydrateGame to
+// writes exactly these keys; tests/desktop-flight.test.ts pins hydrateGame to
 // restore every entry and to ignore runtime-only state.
-export const PERSISTED_KEYS = ['checkpoint', 'camera', 'quality', 'reduced', 'muted', 'discovered', 'tapControls', 'desktopMode', 'trackpadSteering', 'sustainedEdges', 'reverseScroll', 'cruiseSpeed', 'heroPoses', 'lookSensitivity', 'flowIntroSeen', 'shooter', 'aimToggle', 'aimAssist', 'controlsVersion', 'autoFire', 'aimButton', 'hintProgress',
+export const PERSISTED_KEYS = ['checkpoint', 'camera', 'quality', 'reduced', 'muted', 'discovered', 'discoveredTablets', 'tapControls', 'desktopMode', 'trackpadSteering', 'sustainedEdges', 'reverseScroll', 'cruiseSpeed', 'heroPoses', 'lookSensitivity', 'flowIntroSeen', 'shooter', 'aimToggle', 'aimAssist', 'controlsVersion', 'autoFire', 'aimButton', 'hintProgress',
   'touchScheme', 'touchLook', 'touchAim', 'lookAccel', 'edgeRest', 'invertY', 'flipSides', 'controlSize', 'controlOpacity', 'flyWhereILook', 'homeTipSeen', 'controlLab'] as const;
 /** [min, max, default] for the numeric touch settings. */
 export const TOUCH_RANGES = { touchLook: [.5, 2, 1], touchAim: [.5, 1.5, 1], controlSize: [.85, 1.2, 1], controlOpacity: [.4, 1, .85] } as const;
@@ -87,33 +106,32 @@ export function hydrateGame() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE) || '{}');
     const version = typeof saved.controlsVersion === 'number' && Number.isFinite(saved.controlsVersion) ? saved.controlsVersion : 0;
-    // 'simple' was the default from version 2 to 3 and cannot be told apart from a choice, so it returns to 'free'; captured and Flow stay.
     const steering = version < 4 && saved.trackpadSteering === 'simple' ? 'free' : saved.trackpadSteering;
-    // Version 3 shows the Aim button and restarts the touch hints, which now teach the twin-stick controls.
     const before3 = version < 3, hints = validHintProgress(saved.hintProgress);
-    // Version 5 turns the turning aids on for every older save; from 5 on the saved choice holds (missing or invalid: on).
     const before5 = version < 5;
-    // Version 6: one-finger flight is the phone default again; only a twin choice saved at 6 or later is kept.
     const before6 = version < 6;
+    const before7 = version < 7;
     if (before3) hints.touch = 0;
+    const discoveredTablets = validDiscoveredTablets(saved.discoveredTablets, saved.discovered === true);
     useGame.setState({
       checkpoint: validCheckpoint(saved.checkpoint) ? saved.checkpoint : START,
       camera: saved.camera === 'first' ? 'first' : 'third',
       quality: saved.quality === 'low' ? 'low' : 'high',
       reduced: typeof saved.reduced === 'boolean' ? saved.reduced : matchMedia('(prefers-reduced-motion: reduce)').matches,
-      muted: saved.muted !== false, discovered: saved.discovered === true,
+      muted: saved.muted !== false,
+      discoveredTablets,
+      discovered: discoveredTablets.length > 0,
       tapControls: saved.tapControls === true,
-      desktopMode: saved.desktopMode === 'mouse' ? 'mouse' : 'trackpad',
+      desktopMode: before7 ? 'mouse' : saved.desktopMode === 'trackpad' ? 'trackpad' : 'mouse',
       trackpadSteering: ['simple', 'free', 'captured', 'flow'].includes(steering) ? steering : 'free',
       sustainedEdges: before5 || strict(saved.sustainedEdges, true), reverseScroll: saved.reverseScroll === true,
       cruiseSpeed: typeof saved.cruiseSpeed === 'number' && Number.isFinite(saved.cruiseSpeed) ? Math.max(3, Math.min(34, saved.cruiseSpeed)) : 8,
       heroPoses: saved.heroPoses !== false,
       lookSensitivity: typeof saved.lookSensitivity === 'number' && Number.isFinite(saved.lookSensitivity) ? Math.max(.5, Math.min(2, saved.lookSensitivity)) : 1,
       flowIntroSeen: saved.flowIntroSeen === true,
-      shooter: saved.shooter !== false,
+      shooter: before7 ? false : saved.shooter === true,
       aimToggle: saved.aimToggle === true,
       aimAssist: typeof saved.aimAssist === 'number' && Number.isFinite(saved.aimAssist) ? Math.max(0, Math.min(1.5, saved.aimAssist)) : 1,
-      // A newer build's save keeps its version, so this build never re-runs a migration that already ran.
       controlsVersion: Math.max(CONTROLS_VERSION, version),
       autoFire: saved.autoFire !== false, aimButton: before3 || strict(saved.aimButton, true),
       hintProgress: hints,
@@ -122,8 +140,7 @@ export function hydrateGame() {
       lookAccel: before5 || strict(saved.lookAccel, true), edgeRest: before5 || strict(saved.edgeRest, true), invertY: strict(saved.invertY, false), flipSides: strict(saved.flipSides, false),
       controlSize: ranged(saved.controlSize, TOUCH_RANGES.controlSize), controlOpacity: ranged(saved.controlOpacity, TOUCH_RANGES.controlOpacity),
       flyWhereILook: strict(saved.flyWhereILook, false), homeTipSeen: strict(saved.homeTipSeen, false),
-      // No migration: a save without a lab choice (every save before the lab) plays the standard controls.
-      controlLab: isControlLab(saved.controlLab) ? saved.controlLab : 'standard',
+      controlLab: before7 ? 'standard' : isControlLab(saved.controlLab) ? saved.controlLab : 'standard',
     });
   } catch { useGame.setState({ reduced: matchMedia('(prefers-reduced-motion: reduce)').matches }); }
 }

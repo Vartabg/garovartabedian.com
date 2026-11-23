@@ -253,13 +253,24 @@
     },
     {
       "term": "Sea of Galilee",
-      "def": "A freshwater lake roughly 13 miles by 7, about 700 feet below sea level, notorious for sudden squalls funnelled down from the surrounding hills."
+      "def": "A freshwater lake roughly 13 miles by 7, about 700 feet below sea level, notorious for sudden squalls funnelled down from the surrounding hills.",
+      "verses": [
+        "4:1",
+        "4:35-41"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "70d82105d0c84017a22b0cd0eef8a26061faa66f2652cc1f1a244f033f94a6a3",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

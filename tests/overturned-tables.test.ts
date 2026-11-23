@@ -1,8 +1,11 @@
 import { verticalCameraTop } from "../src/app/scriptures/stories/play/overturned-tables/courtView";
+import { readHud } from "../src/app/scriptures/stories/play/overturned-tables/courtController";
+import { PAVING_BOUNDS } from "../src/app/scriptures/stories/play/overturned-tables/courtCoins";
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import {
-  act, approach, courtComplete, nearby, newCourt, stepCourt, WALK_BOUNDS, walkTo,
+  act, activeEncounters, actTwoCount, approach, courtComplete, courtDistance, eveningAt, eveningReady,
+  nearby, nearbyEncounter, newCourt, obstacleBox, stepCourt, WALK_BOUNDS, walkTo,
   type Court,
 } from '../src/app/scriptures/stories/play/overturned-tables/courtGame';
 
@@ -193,4 +196,172 @@ test("a short Safari landscape view keeps the player's head, feet and nearby fix
   }
   assert.equal(verticalCameraTop(460, 310), 0);
   assert.equal(verticalCameraTop(500, 310), -20);
+});
+
+test("standing stalls block direct walk-through, slide smoothly, and open the floor once overturned", () => {
+  const s = newCourt();
+  const table1 = fixture(s, 'table-1');
+  const box = obstacleBox(table1)!;
+  assert.ok(box);
+  // Walking due east from (205, 310) slightly north into the table face stops at minX instead of ghosting through.
+  walkTo(s, { x: 205, y: 298 });
+  run(s, .5);
+  assert.ok(Math.abs(s.player.y - 298) < 1e-3);
+  run(s, 1, 1, 0);
+  assert.ok(s.player.x <= box.minX + 1e-6);
+  // Overturning opens the space immediately.
+  act(s);
+  assert.equal(obstacleBox(table1), null);
+  run(s, 1, 1, 0);
+  assert.ok(s.player.x > box.maxX + 40);
+});
+
+test("approach routes cleanly around an intervening standing table at 30 and 120 Hz", () => {
+  const results = [30, 120].map(hz => {
+    const s = newCourt();
+    // Place Jesus directly west of standing table-2 on its exact Y centerline, then target table-3 beyond it.
+    walkTo(s, { x: 520, y: 265 });
+    run(s, 4, 0, 0, hz);
+    approach(s, 'gate');
+    assert.ok(s.route.length > 0, 'Expected corner clearance route around standing table-2');
+    run(s, 6, 0, 0, hz);
+    assert.notEqual(fixture(s, 'gate').at, null);
+    assert.equal(fixture(s, 'table-2').at, null);
+    assert.equal(s.actionKind, 'halt');
+    return s;
+  });
+  assert.ok(Math.hypot(results[0].player.x - results[1].player.x, results[0].player.y - results[1].player.y) < 1e-6);
+  assert.ok(Math.abs(Number(fixture(results[0], 'gate').at) - Number(fixture(results[1], 'gate').at)) < 1e-6);
+});
+
+test("coins stay inside courtyard paving bounds, report kicks, and dove seats shed kickable feathers", () => {
+  const s = newCourt();
+  // Flip table-2 (closest to the rear colonnade) and push coins northward to verify floor clamping.
+  reachAndAct(s, 'table-2');
+  const coins = fixture(s, 'table-2').coins!;
+  run(s, 5);
+  for (const coin of coins) {
+    assert.ok(coin.x >= PAVING_BOUNDS.minX && coin.x <= PAVING_BOUNDS.maxX);
+    assert.ok(coin.y >= PAVING_BOUNDS.minY && coin.y <= PAVING_BOUNDS.maxY);
+  }
+  const beforeKick = s.coinKickAt;
+  walkTo(s, { x: coins[0].x, y: coins[0].y });
+  run(s, 2);
+  assert.ok(s.coinKickAt > beforeKick, 'Walking through settled coins should record coinKickAt');
+  for (const coin of coins) {
+    assert.ok(coin.y >= PAVING_BOUNDS.minY && coin.y <= PAVING_BOUNDS.maxY);
+  }
+
+  // Tip dove seller's seat and verify drifting feathers settle inside paving and stir underfoot.
+  reachAndAct(s, 'seat-1');
+  const feathers = fixture(s, 'seat-1').feathers!;
+  assert.equal(feathers.length, 5);
+  run(s, 5);
+  assert.ok(feathers.every(f => f.z === 0 && f.y >= PAVING_BOUNDS.minY && f.y <= PAVING_BOUNDS.maxY));
+  const landed = { x: feathers[0].x, y: feathers[0].y };
+  walkTo(s, landed);
+  run(s, 1.5);
+  assert.ok(Math.hypot(feathers[0].x - landed.x, feathers[0].y - landed.y) > 2);
+});
+
+test("post-clear Teach cycles Mark 11:17-18 in HUD without breaking completion or replay", () => {
+  const s = newCourt();
+  for (const id of ['table-1', 'seat-1', 'table-2', 'table-3', 'seat-2', 'gate']) {
+    reachAndAct(s, id);
+  }
+  assert.equal(courtComplete(s), true);
+  assert.equal(s.actionKind, 'halt');
+  assert.equal(readHud(s).action, 'Teach');
+  assert.equal(readHud(s).teachingStep, 0);
+
+  act(s);
+  assert.equal(s.actionKind, 'teach');
+  assert.equal(s.teachingStep, 1);
+  assert.equal(readHud(s).teachingStep, 1);
+  assert.match(s.message, /den of robbers/i);
+
+  act(s);
+  assert.equal(s.teachingStep, 2);
+  assert.match(s.message, /colonnade/i);
+
+  act(s);
+  assert.equal(s.teachingStep, 0);
+  assert.match(s.message, /house of prayer/i);
+
+  const fresh = newCourt();
+  assert.equal(readHud(fresh).action, 'Flip table');
+  assert.equal(readHud(fresh).teachingStep, 0);
+});
+
+test("Act II encounters stay outside Act I reach, activate after clearing, and unlock evening departure", () => {
+  const fresh = newCourt();
+  assert.deepEqual(activeEncounters(fresh), []);
+  // Every Act II encounter must sit far (> 2 * REACH = 124) from every Act I fixture so completion never auto-overrides Teach.
+  for (const f of fresh.fixtures) {
+    for (const e of fresh.encounters) {
+      if (e.kind === 'depart') continue;
+      assert.ok(courtDistance(e.x - f.x, e.y - f.y) > 124, `${e.id} too close to ${f.id}`);
+    }
+  }
+  // Attempting to approach Act II encounters before clearing is a no-op.
+  approach(fresh, 'heal-lame');
+  assert.equal(fresh.selected, null);
+
+  // Clear all Act I fixtures in arbitrary order.
+  for (const id of ['gate', 'table-1', 'seat-1', 'table-2', 'seat-2', 'table-3']) {
+    reachAndAct(fresh, id);
+  }
+  assert.equal(courtComplete(fresh), true);
+  assert.equal(nearbyEncounter(fresh), undefined);
+  assert.equal(readHud(fresh).action, 'Teach');
+  assert.equal(activeEncounters(fresh).length, 3);
+  assert.equal(eveningAt(fresh), null);
+  assert.equal(eveningReady(fresh), false);
+
+  // Approach and resolve lame visitor, scribes, then blind visitor in non-default order.
+  approach(fresh, 'heal-lame');
+  run(fresh, 6);
+  assert.equal(fresh.actionKind, 'heal');
+  assert.equal(actTwoCount(fresh), 1);
+  assert.match(readHud(fresh).card.quote, /lame and the blind/i);
+
+  // Walking near scribes switches HUD action to "Answer scribes" before pressing act.
+  walkTo(fresh, { x: 860, y: 224 });
+  run(fresh, 6);
+  assert.equal(nearbyEncounter(fresh)?.id, 'scribes');
+  assert.equal(readHud(fresh).action, 'Answer scribes');
+  act(fresh);
+  assert.equal(fresh.actionKind, 'answer');
+  assert.equal(actTwoCount(fresh), 2);
+  assert.match(readHud(fresh).card.quote, /perfected praise/i);
+  assert.equal(eveningReady(fresh), false);
+
+  // Completing the third Act II encounter unlocks evening dusk and east archway departure.
+  approach(fresh, 'heal-blind');
+  run(fresh, 5);
+  assert.equal(fresh.actionKind, 'heal');
+  assert.equal(actTwoCount(fresh), 3);
+  assert.ok(eveningAt(fresh) !== null);
+  assert.equal(eveningReady(fresh), true);
+  assert.match(fresh.message, /Evening settles over the court/);
+  assert.deepEqual(activeEncounters(fresh).map(e => e.id), ['depart']);
+
+  // Walking near the east archway offers "Leave at evening".
+  walkTo(fresh, { x: 1145, y: 228 });
+  run(fresh, 5);
+  assert.equal(readHud(fresh).action, 'Leave at evening');
+  act(fresh);
+  assert.ok(fresh.departedAt !== null);
+  assert.equal(fresh.actionKind, 'depart');
+  assert.equal(readHud(fresh).departed, true);
+  assert.equal(readHud(fresh).card.heading, 'Evening');
+  assert.match(readHud(fresh).card.quote, /went out of the city/i);
+
+  // Further steering or actions after departure do not move Jesus until replay.
+  const departedPos = { ...fresh.player };
+  const seqAtDepart = fresh.seq;
+  run(fresh, 2, -1, 1);
+  act(fresh);
+  assert.deepEqual(fresh.player, departedPos);
+  assert.equal(fresh.seq, seqAtDepart);
 });

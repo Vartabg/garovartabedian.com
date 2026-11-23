@@ -6,7 +6,7 @@
   "whyItMatters": "Three times in this chapter someone approaches Jesus about status or reward, and every time he inverts it. Then a man with nothing — no name worth recording except his father's, no standing, shouting from a roadside — asks for the one thing anybody in this book has actually needed: to see.",
   "context": {
     "author": "Anonymous; early tradition names Mark, recording Peter's preaching",
-    "audience": "Likely Greek-speaking readers outside Judea; verse 12 addresses a woman divorcing her husband, which was possible under Roman law but not Jewish — a sign of who Mark is writing for",
+    "audience": "Likely Greek-speaking readers outside Judea; verse 12 addresses a woman divorcing her husband, which Jewish law did not allow — often read as a sign of who Mark is writing for",
     "date": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
     "setting": "Judea and beyond the Jordan, then Jericho — the last stop before the eighteen-mile climb up to Jerusalem",
     "literaryForm": "Travel narrative. The whole section from 8:27 to 10:52 is framed as a walk, and it is bracketed by two blind men receiving sight"
@@ -115,7 +115,7 @@
     {
       "id": "q3",
       "question": "Does this passage mean divorce is always forbidden?",
-      "answer": "Christians have not agreed, and the differences are long-standing rather than careless. Matthew's version of this saying includes an exception for sexual unfaithfulness (Matthew 19:9), and Paul addresses another case in 1 Corinthians 7:15. Catholic teaching holds a valid sacramental marriage indissoluble, with annulment addressing whether a real marriage existed. Orthodox practice permits remarriage after divorce in some circumstances as a pastoral concession. Most Protestant traditions recognize the Matthew and Paul exceptions. What is common ground: Jesus raises the bar on how seriously marriage is taken, and does it in a setting where women bore most of the cost of easy divorce.",
+      "answer": "Christians have not agreed, and the differences are long-standing rather than careless. Matthew's version of this saying includes an exception for sexual unfaithfulness (Matthew 19:9), and Paul addresses another case in 1 Corinthians 7:15. Catholic teaching holds a valid sacramental marriage indissoluble, with annulment addressing whether a real marriage existed. Orthodox practice permits remarriage after divorce in some circumstances as a pastoral concession. Many Protestant traditions recognize the Matthew and Paul exceptions. What is common ground: Jesus raises the bar on how seriously marriage is taken, and does it in a setting where women bore most of the cost of easy divorce.",
       "verseRefs": [
         "10:11",
         "10:12"
@@ -129,7 +129,7 @@
     {
       "id": "q4",
       "question": "Why does verse 12 mention a woman divorcing her husband?",
-      "answer": "Because Jewish law of the period did not give women that option — a wife could petition, but the act was the husband's. Under Roman law she could initiate it. So this half of the saying only makes practical sense for readers living under Roman rather than Jewish law, and it is one more small piece of evidence about where Mark's audience was.",
+      "answer": "Because Jewish law of the period did not give women that option — a wife could petition, but the act was the husband's. Josephus says as much when Herod's sister Salome sends her husband a bill of divorce: 'not according to the Jewish laws' (Antiquities 15.7.10). So this half of the saying is often read as written for readers outside Jewish law, a small sign of where Mark's audience was.",
       "verseRefs": [
         "10:12"
       ],
@@ -294,9 +294,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "26ad25196875f205cccfd9901084515bf58ce7c027a9d6e82a3125421911bca7",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

@@ -95,7 +95,7 @@
     {
       "id": "q2",
       "question": "Did the temple actually get destroyed?",
-      "answer": "Yes. In AD 70, at the end of a Jewish revolt against Rome, the legions under Titus took Jerusalem, burned the temple, and dismantled the complex. The Jewish historian Josephus, who was present on the Roman side, describes it at length. That event is why the Sadducees vanish from history and why Judaism reorganized around synagogue and study. It is also why the dating of this chapter is contested — see the debates on the Mark book page.",
+      "answer": "Yes. In AD 70, at the end of a Jewish revolt against Rome, the legions under Titus took Jerusalem, burned the temple, and dismantled the complex. The Jewish historian Josephus, who was present on the Roman side, describes it at length. After it the Sadducees died out, and Jewish worship went on without a temple. It is also why the dating of this chapter is contested — see the debates on the Mark book page.",
       "verseRefs": [
         "13:2"
       ],
@@ -195,7 +195,7 @@
     {
       "id": "q9",
       "question": "Verse 32 says the Son doesn't know. How can that be, if he is divine?",
-      "answer": "Christians have wrestled with this since the early centuries, and it was central to some of the great doctrinal debates. The mainstream answer that emerged: in becoming genuinely human, the Son accepted real human limits, including not knowing this — which is a statement about the incarnation rather than about a deficiency in God. Others have proposed that he chose not to exercise the knowledge. What is not in dispute is the practical force of the verse: it is quoted here in the middle of a chapter about signs, precisely to shut down calculation. Anyone announcing a date is claiming something Jesus said he did not have.",
+      "answer": "Christians have wrestled with this since the early centuries. A long-standing answer: in becoming genuinely human, the Son accepted real human limits, including not knowing this — which is a statement about the incarnation rather than about a deficiency in God. Others have proposed that he chose not to exercise the knowledge. What is not in dispute is the practical force of the verse: it is quoted here in the middle of a chapter about signs, precisely to shut down calculation. Anyone announcing a date is claiming something Jesus said he did not have.",
       "verseRefs": [
         "13:32"
       ],
@@ -228,7 +228,10 @@
   "glossary": [
     {
       "term": "Apocalyptic",
-      "def": "A genre, not a subject. Ancient apocalyptic writing uses cosmic imagery, symbolic numbers, and heightened language to speak about historical crisis and God's intervention. Reading its images as flat description usually misses the point."
+      "def": "A genre, not a subject. Ancient apocalyptic writing uses cosmic imagery, symbolic numbers, and heightened language to speak about historical crisis and God's intervention. Reading its images as flat description usually misses the point.",
+      "verses": [
+        "13:24-27"
+      ]
     },
     {
       "term": "Abomination of desolation",
@@ -236,7 +239,7 @@
     },
     {
       "term": "Birth pains",
-      "def": "A standard Jewish image for the distress preceding God's decisive act. The point of the image is that the pain is productive and has an end, not that it is pleasant."
+      "def": "An image the prophets use for distress before God acts (Isaiah 13:8; 26:17; Micah 4:9-10). The point of the image is that the pain is productive and has an end, not that it is pleasant."
     },
     {
       "term": "Son of Man coming in clouds",
@@ -248,9 +251,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "53ff5bb92bdbf87f31e8e86da15c752df5e01f7e2bb8afde749ec00554e7781c",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

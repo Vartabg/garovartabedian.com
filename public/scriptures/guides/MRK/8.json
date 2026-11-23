@@ -15,7 +15,7 @@
     {
       "heading": "Four thousand fed",
       "verses": "1-10",
-      "note": "Seven loaves, seven baskets left — on the Gentile side this time"
+      "note": "Seven loaves, seven baskets left — usually placed on the Gentile side"
     },
     {
       "heading": "No sign will be given",
@@ -30,7 +30,7 @@
     {
       "heading": "Seeing in two stages",
       "verses": "22-26",
-      "note": "The only healing in the gospels that takes two attempts"
+      "note": "The one healing in Mark that takes two steps"
     },
     {
       "heading": "Who do you say I am?",
@@ -148,7 +148,7 @@
     {
       "id": "q5",
       "question": "Why does a healing take two tries? Did the first attempt fail?",
-      "answer": "It is the only staged healing in the gospels, and Mark alone records it. Reading it as failure runs against everything else in the book, where a word is enough. Reading it structurally: this is placed between the disciples' total incomprehension and Peter's half-right confession. The man sees, but not clearly — people look like walking trees — and needs a second touch. Three verses later Peter identifies Jesus correctly and then completely misunderstands what it means. Mark has given you a picture of partial sight and then an example of it.",
+      "answer": "It is the only staged healing in Mark, and only Mark records it. Reading it as failure runs against everything else in the book, where a word is enough. Reading it structurally: this is placed between the disciples' total incomprehension and Peter's half-right confession. The man sees, but not clearly — people look like walking trees — and needs a second touch. Three verses later Peter identifies Jesus correctly and then completely misunderstands what it means. Mark has given you a picture of partial sight and then an example of it.",
       "verseRefs": [
         "8:23",
         "8:24",
@@ -176,7 +176,7 @@
     {
       "id": "q7",
       "question": "Peter finally gets it right. Why is he ordered to say nothing?",
-      "answer": "Because he has the right title and the wrong content, which the next four verses expose. 'Christ' meant God's anointed king, and popular expectation attached that to a deliverer who would break Roman rule. Announcing it publicly would have summoned exactly that hope. Jesus accepts the title and then immediately starts redefining it — suffering, rejection, execution — and Peter's reaction shows why the ban was necessary.",
+      "answer": "On the usual reading, because he has the right title and the wrong content, which the next four verses expose. 'Christ' meant God's anointed king, and many attached that to a deliverer who would break Roman rule. Announcing it publicly would have summoned exactly that hope. Jesus accepts the title and then immediately starts redefining it — suffering, rejection, execution — and Peter's reaction shows why the ban was necessary.",
       "verseRefs": [
         "8:29",
         "8:30",
@@ -255,9 +255,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "e7417c52a6b96f3ce31871e9123826778911acef4b8de77d5778703d643b9699",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

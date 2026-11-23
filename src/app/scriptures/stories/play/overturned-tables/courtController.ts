@@ -1,16 +1,35 @@
-import { act, approach, courtComplete, nearby, newCourt, stepCourt, type Court } from "./courtGame";
+import {
+  act, activeCard, actTwoCount, approach, courtComplete, eveningAt, eveningReady,
+  nearby, nearbyEncounter, newCourt, stepCourt, visibleEncounters, type Court,
+} from "./courtGame";
 import { createView } from "./courtView";
 import { courtPointer } from "./courtPointer";
 import { makeCourtSound } from "./courtSound";
 
 export function readHud(s: Court) {
-  const near = nearby(s);
+  const nearFix = nearby(s);
+  const complete = courtComplete(s);
+  const nearEnc = complete ? nearbyEncounter(s) : undefined;
   const actions = { gate: "Bar passage", seat: "Tip seat", table: "Flip table" };
+  const encActions = { lame: "Heal", blind: "Heal", scribes: "Answer scribes", depart: "Leave at evening" };
+  const action = complete
+    ? (nearEnc ? encActions[nearEnc.kind] : "Teach")
+    : (nearFix ? actions[nearFix.kind] : "Shove");
+
   return {
     fixtures: s.fixtures.map(f => ({ id: f.id, label: f.label, done: f.at !== null, kind: f.kind })),
-    action: near ? actions[near.kind] : "Shove",
+    encounters: visibleEncounters(s).map(e => ({ id: e.id, label: e.label, done: e.at !== null, kind: e.kind })),
+    action,
+    actionTone: nearEnc ? nearEnc.kind : (complete ? "teach" : "shove"),
     count: s.fixtures.filter(f => f.kind !== "gate" && f.at !== null).length,
-    barred: s.fixtures.some(f => f.kind === "gate" && f.at !== null), complete: courtComplete(s), message: s.message,
+    barred: s.fixtures.some(f => f.kind === "gate" && f.at !== null),
+    complete,
+    actTwoDone: actTwoCount(s),
+    evening: eveningAt(s) !== null,
+    departed: s.departedAt !== null,
+    teachingStep: s.teachingStep,
+    card: activeCard(s),
+    message: s.message,
     paused: false, sound: true, visual: true, ready: false,
   };
 }
@@ -22,12 +41,26 @@ export function runCourt(canvas: HTMLCanvasElement, onChange: (hud: CourtHud) =>
   const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const sound = makeCourtSound();
   const held = new Set<string>();
-  const keys: Record<string, [number, number]> = { ArrowLeft: [-1, 0], KeyA: [-1, 0], ArrowRight: [1, 0], KeyD: [1, 0], ArrowUp: [0, -1], KeyW: [0, -1], ArrowDown: [0, 1], KeyS: [0, 1] };
+  const keys: Record<string, [number, number]> = {
+    ArrowLeft: [-1, 0], KeyA: [-1, 0], ArrowRight: [1, 0], KeyD: [1, 0],
+    ArrowUp: [0, -1], KeyW: [0, -1], ArrowDown: [0, 1], KeyS: [0, 1],
+  };
   let s = newCourt(), paused = false, audible = true, ctxLost = false;
   let view: ReturnType<typeof createView> | undefined;
-  let frame = 0, last = 0, revision = -1, nearId: string | undefined, dirty = true;
+  let frame = 0, last = 0, revision = -1, nearId: string | undefined, stepShown = -1, dirty = true;
   let lastShove = s.shoveAt, handled = s.seq;
+  let lastCoinKick = s.coinKickAt, lastCoinSoundMs = -Infinity;
+  let lastStepBucket = 0;
+  let duskSoundPlayed = false;
   const stop = new AbortController();
+
+  function syncAmbiance() {
+    const tablesLeft = s.fixtures.filter(f => f.kind === "table" && f.at === null).length;
+    const seatsLeft = s.fixtures.filter(f => f.kind === "seat" && f.at === null).length;
+    const barred = s.fixtures.some(f => f.kind === "gate" && f.at !== null);
+    sound.updateAmbiance(tablesLeft + seatsLeft, barred, tablesLeft, seatsLeft);
+  }
+
   function setupView() {
     view = undefined;
     try {
@@ -40,45 +73,81 @@ export function runCourt(canvas: HTMLCanvasElement, onChange: (hud: CourtHud) =>
     } catch { /* The target buttons still run the court. */ }
     ctxLost = !view; dirty = true;
   }
+
   function publish() {
-    const near = nearby(s)?.id;
-    if (!dirty && revision === s.seq && nearId === near) return;
-    revision = s.seq; nearId = near; dirty = false;
+    const near = (courtComplete(s) ? nearbyEncounter(s) : nearby(s))?.id;
+    if (!dirty && revision === s.seq && nearId === near && stepShown === s.teachingStep) return;
+    revision = s.seq; nearId = near; stepShown = s.teachingStep; dirty = false;
     onChange({ ...readHud(s), paused, sound: audible, visual: !ctxLost, ready: true });
   }
+
   function change() {
     if (s.seq !== handled) {
-      if (s.shoveAt !== lastShove || s.time === 0) {
+      if (s.actionKind === "heal" || s.actionKind === "answer" || s.actionKind === "depart" || s.actionKind === "teach") {
+        sound.play(s.actionKind);
+      } else if (s.shoveAt !== lastShove || s.time === 0) {
         const struck = s.fixtures.find(f => f.at === s.shoveAt);
         sound.play(struck?.kind ?? "air");
       }
       handled = s.seq; lastShove = s.shoveAt;
+      syncAmbiance();
+      if (eveningReady(s) && !duskSoundPlayed) {
+        duskSoundPlayed = true;
+        sound.play("dusk");
+      }
     }
     publish();
   }
+
   function active() {
     if (document.hidden || paused) return false;
     sound.unlock();
     return true;
   }
-  function perform() { if (!active()) return; act(s); change(); }
-  function go(id: string) { if (!active()) return; approach(s, id); change(); }
+
+  function perform() { if (!active() || s.departedAt !== null) return; act(s); change(); }
+  function go(id: string) { if (!active() || s.departedAt !== null) return; approach(s, id); change(); }
+
   function reset() {
-    sound.unlock(); s = newCourt(); paused = false; held.clear(); pointer.clear(); handled = s.seq; lastShove = s.shoveAt;
-    last = 0; revision = -1; dirty = true; view?.size(); publish(); canvas.focus({ preventScroll: true });
+    sound.unlock();
+    s = newCourt(); paused = false; held.clear(); pointer.clear();
+    handled = s.seq; lastShove = s.shoveAt;
+    lastCoinKick = s.coinKickAt; lastStepBucket = 0; duskSoundPlayed = false;
+    last = 0; revision = -1; stepShown = -1; dirty = true;
+    sound.setPaused(false);
+    syncAmbiance();
+    view?.size(); publish(); canvas.focus({ preventScroll: true });
   }
+
   function pause(next: boolean) {
     if (paused === next) return;
-    paused = next; held.clear(); pointer.clear(); last = 0; dirty = true; publish();
+    paused = next; held.clear(); pointer.clear(); last = 0; dirty = true;
+    sound.setPaused(paused);
+    publish();
   }
+
   function togglePause() { sound.unlock(); pause(!paused); if (!paused) canvas.focus({ preventScroll: true }); }
   function toggleSound() { audible = !audible; sound.setEnabled(audible); dirty = true; publish(); }
+
   function animate(now: number) {
     const dt = last ? Math.min(.05, Math.max(0, (now - last) / 1000)) : 0; last = now;
     if (!paused && !document.hidden) {
       let { x, y } = pointer.axis;
       for (const key of held) { const v = keys[key]; x += v[0]; y += v[1]; }
-      stepCourt(s, dt, x, y); change();
+      stepCourt(s, dt, x, y);
+      if (s.coinKickAt > lastCoinKick) {
+        lastCoinKick = s.coinKickAt;
+        if (now - lastCoinSoundMs >= 110) {
+          lastCoinSoundMs = now;
+          sound.play("coin");
+        }
+      }
+      const stepBucket = Math.floor(s.stride / Math.PI);
+      if (s.walking && stepBucket > lastStepBucket) {
+        lastStepBucket = stepBucket;
+        sound.play("step");
+      }
+      change();
     }
     if (!ctxLost && view && (!paused || dirtyPaint)) {
       try { view.draw(s, dt, motion.matches); } catch {
@@ -88,6 +157,7 @@ export function runCourt(canvas: HTMLCanvasElement, onChange: (hud: CourtHud) =>
     dirtyPaint = false;
     frame = requestAnimationFrame(animate);
   }
+
   let dirtyPaint = true;
   const opts = { signal: stop.signal };
   window.addEventListener("keydown", (e) => {

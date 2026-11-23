@@ -1,14 +1,18 @@
 import { useEffect, useId, useRef, useState } from 'react';
+import { TERMINALS } from '@/game/navigation';
 import { persistGame, useGame } from '@/game/store';
 import { runtime } from '@/game/runtime';
 import { touchMode } from '@/game/pointerMode';
 import { computeLayout } from '@/game/touchLayout';
+import { CROSSING_PATH, STORIES_PATH } from '@/paths';
 import { headerBand, readInsets, viewportBox } from './touchInsets';
 import { isStandalone, keepPlaying, leaveGame } from './playSession';
+import { setWatchersMode } from './hermonActions';
 import LazyControls from './LazyControls';
 import styles from './Experience.module.css';
+
 type Props = { ready: boolean; onEnter: () => void; note?: string };
-// Would the touch cluster fit this screen? The same pure layout the controls use, from the visual viewport and the safe areas.
+
 function crampedNow(probe: HTMLElement | null): boolean {
   if (!probe || !touchMode()) return false;
   const s = useGame.getState(), box = viewportBox(), insets = readInsets(probe);
@@ -16,25 +20,33 @@ function crampedNow(probe: HTMLElement | null): boolean {
   const prefs = { size: s.controlSize, flip: s.flipSides, fire: s.shooter, aim: s.shooter && s.aimButton && !s.tapControls, tapPad: s.tapControls };
   return computeLayout(box.w, box.h, insets, top, prefs).cramped;
 }
-/** The pause card, the "Leave the game?" card (a back swipe during touch play) and the notes that explain a refused Resume. */
+
+/** The pause card, the "Leave the game?" card (touch back swipe), and recovery notes. */
 export default function PauseCard({ ready, onEnter, note = '' }: Props) {
   const leave = useGame(s => s.leavePrompt), zoomNote = useGame(s => s.zoomNote), shooter = useGame(s => s.shooter);
-  const tipSeen = useGame(s => s.homeTipSeen);
+  const tipSeen = useGame(s => s.homeTipSeen), discoveredCount = useGame(s => s.discoveredTablets.length);
+  const desktopMode = useGame(s => s.desktopMode), controlLab = useGame(s => s.controlLab);
   const probe = useRef<HTMLDivElement>(null), card = useRef<HTMLElement>(null), go = useRef<HTMLButtonElement>(null), kicker = useId();
-  const [cramped, setCramped] = useState(false), [tip, setTip] = useState(false);
+  const [cramped, setCramped] = useState(false), [tip, setTip] = useState(false), [isTouch, setIsTouch] = useState(false);
+
   useEffect(() => {
-    const update = () => { setCramped(crampedNow(probe.current)); setTip(touchMode() && !isStandalone()); };
+    const update = () => {
+      const touch = touchMode();
+      setIsTouch(touch);
+      setCramped(crampedNow(probe.current));
+      setTip(touch && !isStandalone());
+    };
     update();
     const vv = window.visualViewport;
     vv?.addEventListener('resize', update); window.addEventListener('resize', update);
     return () => { vv?.removeEventListener('resize', update); window.removeEventListener('resize', update); };
   }, []);
-  // A fresh card puts focus on its first action. A disabled button cannot take it (the suit is still restoring), so the card holds it
-  // until the action is ready, then hands it over: focus never falls back to the page behind.
+
   useEffect(() => {
     if (!ready) card.current?.focus({ preventScroll: true });
     else if (document.activeElement === card.current) go.current?.focus({ preventScroll: true });
   }, [ready]);
+
   const probeNode = <div ref={probe} className={styles.insetProbe} aria-hidden="true" />;
   if (leave) return <section ref={card} tabIndex={-1} className={styles.pauseCard} aria-label="Leave the game">
     {probeNode}
@@ -42,31 +54,42 @@ export default function PauseCard({ ready, onEnter, note = '' }: Props) {
     <button type="button" ref={go} className={styles.primary} autoFocus disabled={!ready} onClick={() => { useGame.setState({ leavePrompt: false }); keepPlaying(); onEnter(); }}>Keep playing <span aria-hidden="true">↗</span></button>
     <button type="button" className={styles.secondary} onClick={leaveGame}>Leave</button>
   </section>;
-  // The Home Screen tip is one muted line, not a card with a button: it counts as seen when Resume is pressed with it on screen.
+
   const showTip = tip && !tipSeen;
   const resume = () => { if (showTip) { useGame.setState({ homeTipSeen: true }); persistGame(); } onEnter(); };
-  // Escape and a click or tap outside the card resume too (Garo 2026-10-07: "why can't just clicking outside of the menu exit it?").
-  // Both go through onEnter, so the pinch-zoom refusal and the audio unlock hold; "Leave the game?" above keeps its two buttons only.
   useEffect(() => {
     const key = (e: KeyboardEvent) => { if (e.code === 'Escape') { e.preventDefault(); resume(); } };
     window.addEventListener('keydown', key);
     return () => window.removeEventListener('keydown', key);
   });
-  // The kicker is the card's name made visible ("Expedition paused", the region's label since the cleanup): one line, read once.
+
+  const showTouchControls = isTouch || controlLab !== 'standard' || desktopMode !== 'mouse';
+
   return <><div className={styles.pauseScrim} data-testid="pause-scrim" aria-hidden="true" onClick={resume} />
   <section ref={card} tabIndex={-1} className={styles.pauseCard} aria-labelledby={kicker}>
     {probeNode}
     <p id={kicker} className={styles.kicker}>Ascent paused</p>
     <h2>Take your time.</h2>
-    {shooter && runtime.shooter.stats.kills > 0 && <p>Demons cast down: {runtime.shooter.stats.kills}</p>}
+    {shooter && runtime.shooter.stats.kills > 0 && <p>Watchers cast down: {runtime.shooter.stats.kills}</p>}
     <p className={styles.note} role="status">{note || (zoomNote ? 'Pinch out to normal size, then tap Resume.' : cramped ? 'Screen too short for touch controls. Zoom out or turn the phone.' : '')}</p>
     <button type="button" ref={go} className={styles.primary} autoFocus disabled={!ready} onClick={resume}>{ready ? 'Resume flight' : 'Restoring your angel…'} <span aria-hidden="true">↗</span></button>
     <div className={styles.pauseRows}>
-      <LazyControls />
+      <button type="button" className={styles.secondary} onClick={() => setWatchersMode(!shooter)}>
+        <span>{shooter ? 'Return to calm sky' : 'Challenge the Watchers'}</span>
+        <span className={styles.muted}>{shooter ? 'Battle on' : 'Calm'}</span>
+      </button>
+      {showTouchControls && <LazyControls />}
       <div className={styles.pair}>
-        <button type="button" className={styles.secondary} onClick={() => useGame.setState({ journal: true })}>Field guide</button>
+        <button type="button" className={styles.secondary} onClick={() => useGame.setState({ journal: true, journalTerminalId: null })}>
+          <span>Field guide &amp; tablets</span>
+          <span className={styles.muted}>{discoveredCount} / {TERMINALS.length}</span>
+        </button>
         <button type="button" className={styles.secondary} aria-describedby="settings-hint" onClick={() => useGame.setState({ panel: true })}>Flight settings</button>
-        <p id="settings-hint" className={`${styles.pauseNote} ${styles.settingsHint}`}>Size, left-handed, look speed</p>
+        <p id="settings-hint" className={`${styles.pauseNote} ${styles.settingsHint}`}>Perspective, look speed, graphics, audio</p>
+      </div>
+      <div className={styles.pauseLinks}>
+        <a href={CROSSING_PATH}>Play The Cloven Arch</a>
+        <a href={STORIES_PATH}>Playable stories</a>
       </div>
     </div>
     <p className={`${styles.pauseNote} ${styles.portraitLine}`}>Best played sideways.</p>

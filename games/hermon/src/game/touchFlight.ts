@@ -3,7 +3,7 @@
 import { Vector3 } from 'three';
 import type { Collider, World } from '@dimforge/rapier3d-compat';
 import { FOOT, type Vec } from './motion';
-import { runtime } from './runtime';
+import { desktopDescendHeld, runtime } from './runtime';
 import { useGame } from './store';
 import { touchMode } from './pointerMode';
 /** Metres below the feet in which a held Descend starts the landing (at 9.1 m/s a physics step moves 0.15 m, so it cannot be skipped). */
@@ -94,5 +94,21 @@ export function touchBlockedStep(ctx: BlockedContext): boolean {
   if (!goal) { if (!g.descendBlocked) useGame.setState({ descendBlocked: true }); return false; }
   runtime.landGoal = goal; st.descendUsed = true;
   useGame.setState({ landing: true, descendBlocked: false });
+  return true;
+}
+
+/**
+ * Desktop hold-Descend-to-land (F or standalone Ctrl). Runs before readIntent() and limitStep so descending toward flat
+ * terrain smoothly touches down instead of stalling on clearance assist; keyDescendUsed drops keyboard descend from readIntent()
+ * while the approach completes, while WASD or Space/R still cancel landing immediately.
+ */
+export function desktopLandStep(ctx: TouchLandContext): boolean {
+  if (!desktopDescendHeld()) { runtime.keyDescendUsed = false; return false; }
+  if (!ctx.flying || runtime.keyDescendUsed || runtime.landGoal) return false;
+  const hit = probeBelow(ctx.world, ctx.rapier, ctx.collider, ctx.safe, ctx.position, FOOT + LAND_WINDOW);
+  if (!hit) return false;
+  runtime.landGoal = new Vector3(hit.x, hit.y + FOOT, hit.z);
+  runtime.keyDescendUsed = true;
+  useGame.setState({ landing: true });
   return true;
 }

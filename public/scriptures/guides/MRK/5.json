@@ -133,7 +133,7 @@
     {
       "id": "q5",
       "question": "Why is this man told to go and tell, when everyone else is told to keep quiet?",
-      "answer": "It is a real and deliberate reversal, and the geography explains it. In Jewish Galilee, the title 'Messiah' carried the expectation of a warrior king, so publicity was dangerous. In the Decapolis, ten Gentile cities where nobody was waiting for a Jewish deliverer, that risk was absent. So the man becomes the first person in Mark commissioned to talk — and the region he covers is the one Jesus returns to in chapter 7 to find crowds already waiting.",
+      "answer": "It is a real reversal, and the usual explanation is the geography. In Jewish Galilee, many attached the title 'Messiah' to a warrior king, so publicity was dangerous. In the Decapolis, ten Gentile cities where nobody was waiting for a Jewish deliverer, that risk was absent. So the man becomes the first person in Mark commissioned to talk — and the region he covers is the one Jesus returns to in chapter 7 to find crowds already waiting.",
       "verseRefs": [
         "5:19",
         "5:20"
@@ -221,7 +221,7 @@
     {
       "id": "q10",
       "question": "Why does Mark keep the Aramaic words instead of just translating?",
-      "answer": "'Talitha cumi' is preserved here, 'Ephphatha' in 7:34, 'Abba' in 14:36, and the cry from the cross in 15:34 — each with a translation attached. Keeping the sound is the mark of a memory passed down by people who heard it. Translating it is the mark of a writer whose readers do not speak that language. Both things are true at once, and together they tell you something about how this book came to be.",
+      "answer": "'Talitha cumi' is preserved here, 'Ephphatha' in 7:34, 'Abba' in 14:36, and the cry from the cross in 15:34 — each with a translation attached. Keeping the sound is often read as the mark of a memory passed down by people who heard it. Translating it points to readers who do not speak that language.",
       "verseRefs": [
         "5:41"
       ],
@@ -233,7 +233,7 @@
     {
       "id": "q11",
       "question": "After raising a girl from the dead, he tells them to keep it quiet and to get her something to eat. Why both?",
-      "answer": "The silence order is the same pattern as elsewhere in Mark, though here it is close to impossible — a household of mourners is outside. The instruction about food is the detail that gives the scene its texture: she is not a vision or a ghost, she is a hungry twelve-year-old. It is the kind of specific, unnecessary thing that tends to come from someone who was in the room.",
+      "answer": "The silence order is the same pattern as elsewhere in Mark, though here it is close to impossible — a household of mourners is outside. The instruction about food is the detail that gives the scene its texture: she is not a vision or a ghost, she is a hungry twelve-year-old. Many readers take a specific, unnecessary detail like this as coming from someone who was in the room.",
       "verseRefs": [
         "5:43"
       ],
@@ -266,9 +266,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "d0508139b0dad34187839cff153fcfa25607e2b2d5d5e2b7103fd0f3381bb827",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

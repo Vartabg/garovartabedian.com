@@ -51,7 +51,7 @@ test("Mark 4's x-ray matches its own files", async () => {
   assert.deepEqual(xray.bridge?.book, { words: 14205, linked: 13395, ok: 7557, plain: 1677, flag: 2370 });
   assert.equal(xray.neighbours?.count, 6);
   assert.deepEqual(xray.neighbours?.top, { book: "MAT", chapter: 13, shared: 50 });
-  assert.deepEqual(xray.guide, { kind: "published", questions: 10, status: "agent-reviewed", reviewedOn: "2026-08-25", reviewer: "agent editorial panel (7-pass review, 2026-08-24)" });
+  assert.deepEqual(xray.guide, { kind: "published", questions: 10, status: "agent-reviewed", reviewedOn: "2026-11-23", reviewer: "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo" });
   assert.deepEqual(xray.unseen, { entries: 0, terms: 1 });
 
   const tags = chapterXrayTags(xray, context);

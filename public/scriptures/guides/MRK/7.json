@@ -71,7 +71,7 @@
     {
       "id": "q1",
       "question": "Was handwashing before meals actually a law?",
-      "answer": "Not in the written law for ordinary people — the Hebrew scriptures require it of priests handling holy things. What developed was a practice of extending priestly purity into everyday life, so that ordinary meals were treated with something of the care given to temple service. Mark calls it 'the tradition of the elders,' which is precisely the distinction Jesus goes on to press. This was a devout impulse, not a petty one, which is what makes the argument serious.",
+      "answer": "Not in the written law for ordinary people — the Hebrew scriptures require it of priests handling holy things. What developed was a practice of washing hands before ordinary food as well; the Mishnah, written down later, records it (Chagigah 2:5). Mark calls it 'the tradition of the elders,' which is precisely the distinction Jesus goes on to press. This was a devout impulse, not a petty one, which is what makes the argument serious.",
       "verseRefs": [
         "7:3",
         "7:4",
@@ -101,7 +101,7 @@
     {
       "id": "q3",
       "question": "What is Corban, and what is the abuse being described?",
-      "answer": "Corban means dedicated to God. Mark translates it for his readers in verse 11. The practice under attack: a man declares his property or income Corban, which puts it out of reach for ordinary use — and then cites that dedication as the reason he cannot support his aging parents. A vow with a religious label is being used to get out of the fifth commandment. Jesus's point is not that vows are bad, but that a rule which lets you dodge 'honour your father and mother' has inverted its own purpose.",
+      "answer": "Corban means dedicated to God. Mark translates it for his readers in verse 11. The practice under attack: a man declares his property or income Corban, which puts it out of reach for ordinary use — and then cites that dedication as the reason he cannot support his aging parents. A vow with a religious label is being used to get out of the commandment to honour father and mother (Exodus 20:12). Jesus's point is not that vows are bad, but that a rule which lets you dodge 'honour your father and mother' has inverted its own purpose.",
       "verseRefs": [
         "7:9",
         "7:10",
@@ -139,7 +139,7 @@
     {
       "id": "q5",
       "question": "Verse 19 says 'making all foods clean.' Is that Jesus speaking or Mark?",
-      "answer": "It is Mark's own comment on what Jesus said, not part of the quotation — many modern translations set it off; the translation here keeps it inside Jesus's sentence. It matters because it is a rare moment where Mark steps in to tell you the implication. He is writing for a mixed community where whether Gentile believers had to keep Jewish food laws was a live and painful question, as Acts 10 and Galatians 2 both show. Mark is telling his readers where he thinks that question was settled.",
+      "answer": "It is usually read as Mark's own comment on what Jesus said, not part of the quotation; the translation here keeps it inside Jesus's sentence. It matters because it is a rare moment where Mark steps in to tell you the implication. He is writing for a mixed community where whether Gentile believers had to keep Jewish food laws was a live and painful question, as Acts 10 and Galatians 2 both show. Mark is telling his readers where he thinks that question was settled.",
       "verseRefs": [
         "7:18",
         "7:19"
@@ -215,7 +215,7 @@
     {
       "id": "q10",
       "question": "Why does he keep telling people not to talk, when it never works?",
-      "answer": "Verse 36 is almost comic about it — the more he ordered them, the more they spread it. Mark seems aware of the futility and reports it anyway. It fits the wider pattern: the reputation Jesus is trying not to build is exactly the one that makes it harder to say what he actually came to do. Notice these orders stop after the crucifixion, when the thing that was being protected has happened.",
+      "answer": "Verse 36 is almost comic about it — the more he ordered them, the more they spread it. Mark seems aware of the futility and reports it anyway. It fits the wider pattern: the reputation Jesus is trying not to build is exactly the one that makes it harder to say what he actually came to do. Notice the limit he sets in 9:9: until after the Son of Man has risen from the dead.",
       "verseRefs": [
         "7:36"
       ],
@@ -228,7 +228,7 @@
   "glossary": [
     {
       "term": "Tradition of the elders",
-      "def": "Accumulated oral rulings on how to apply the written law in daily life. Highly respected, and distinct from scripture itself — which is the distinction under argument here."
+      "def": "Observances handed down from earlier generations and not written in the law of Moses (Josephus, Antiquities 13.10.6). Respected, and distinct from scripture itself — which is the distinction under argument here."
     },
     {
       "term": "Defiled",
@@ -252,9 +252,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "5b28f19d5e9b708283ea863a1af58502c760ebe39de586cf19a06fe434172c51",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

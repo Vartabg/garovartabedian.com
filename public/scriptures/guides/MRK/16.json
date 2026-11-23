@@ -97,7 +97,7 @@
     {
       "id": "q3",
       "question": "So did Mark intend to end at verse 8, or is the real ending lost?",
-      "answer": "Three positions, held by serious readers. First, it was lost — the last leaf of a scroll or codex is the most vulnerable part, and a book beginning as confidently as 1:1 seems unlikely to end mid-fear. Second, he intended it — the abruptness does what the whole book does, refusing to let the reader sit comfortably, and Mark has been telling you all along that people fail and are sent out anyway; verse 7 has already told you what happens next, so the reader knows what the women have not yet said. Third, he was prevented from finishing. There is no way to decide from the evidence available. What is not in dispute: verse 7 promises the disciples will see him in Galilee, so even the shortest version of Mark asserts the resurrection and points beyond itself.",
+      "answer": "Three positions, held by serious readers. First, it was lost — the end of a book is easily damaged, and a book beginning as confidently as 1:1 seems unlikely to end mid-fear. Second, he intended it — the abruptness does what the whole book does, refusing to let the reader sit comfortably, and Mark has been telling you all along that people fail and are sent out anyway; verse 7 has already told you what happens next, so the reader knows what the women have not yet said. Third, he was prevented from finishing. There is no way to decide from the evidence available. What is not in dispute: verse 7 promises the disciples will see him in Galilee, so even the shortest version of Mark asserts the resurrection and points beyond itself.",
       "verseRefs": [
         "16:7",
         "16:8"
@@ -111,7 +111,7 @@
     {
       "id": "q4",
       "question": "If those verses were added later, does that mean the resurrection is in doubt?",
-      "answer": "No, and it is worth being precise about why. The empty tomb and the announcement 'he has risen' are in verses 1-8, which nobody disputes. The appearances summarized in verses 9-20 are all independently recorded elsewhere — Mary Magdalene in John 20, the two walkers in Luke 24, the meal with the eleven in Luke 24 and John 20, the commission in Matthew 28, the ascension in Luke 24 and Acts 1. And Paul's list of resurrection witnesses in 1 Corinthians 15:3-8 is earlier than any of the gospels. The textual question is about how this particular book ends, not about whether the events were reported.",
+      "answer": "No, and it is worth being precise about why. The empty tomb and the announcement 'he has risen' are in verses 1-8, which nobody disputes. The appearances summarized in verses 9-20 are all independently recorded elsewhere — Mary Magdalene in John 20, the two walkers in Luke 24, the meal with the eleven in Luke 24 and John 20, the commission in Matthew 28, the ascension in Luke 24 and Acts 1. And Paul's list of resurrection witnesses in 1 Corinthians 15:3-8 comes from a letter usually dated to the AD 50s, earlier than most scholars date any gospel. The textual question is about how this particular book ends, not about whether the events were reported.",
       "verseRefs": [
         "16:6",
         "16:9"
@@ -228,15 +228,24 @@
     },
     {
       "term": "Codex Sinaiticus / Codex Vaticanus",
-      "def": "Two fourth-century Greek Bibles, the oldest surviving near-complete copies. Both end Mark at 16:8. Sinaiticus can be viewed online page by page."
+      "def": "Two fourth-century Greek Bibles, the oldest surviving near-complete copies. Both end Mark at 16:8. Sinaiticus can be viewed online page by page.",
+      "verses": [
+        "16:8"
+      ]
     },
     {
       "term": "The longer ending",
-      "def": "Mark 16:9-20. Present in most manuscripts and quoted from the second century, absent from the earliest and best, and different in vocabulary and style from the rest of the book."
+      "def": "Mark 16:9-20. Present in most manuscripts and quoted from the second century, absent from the earliest and best, and different in vocabulary and style from the rest of the book.",
+      "verses": [
+        "16:9-20"
+      ]
     },
     {
       "term": "Textual criticism",
-      "def": "The discipline of comparing manuscript copies to work out what a text originally said. It is what produces the footnotes in modern Bibles, and this chapter is its most famous case."
+      "def": "The discipline of comparing manuscript copies to work out what a text originally said. It is what produces the footnotes in modern Bibles, and this chapter is its most famous case.",
+      "verses": [
+        "16:9-20"
+      ]
     },
     {
       "term": "Anoint",
@@ -244,9 +253,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "13dfcaa9854780945841793e2bf26ead4d48707ca572ba949a197707e45d8443",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

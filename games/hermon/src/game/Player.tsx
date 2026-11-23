@@ -4,7 +4,7 @@ import { useThree } from '@react-three/fiber';
 import { Vector3 } from 'three';
 import { useGame, persistGame } from './store';
 import { timeScale } from './slowMotion';
-import { runtime, readIntent, clearInput, arrowLook } from './runtime';
+import { runtime, readIntent, clearInput, arrowLook, desktopDescendHeld } from './runtime';
 import { boundMovement, flightTarget, landingVelocity, moving, setVec, START, FOOT } from './motion';
 import { presentation } from './presentation';
 import { applyEdgeTurns, thumbTurn } from './edgeTurn';
@@ -20,7 +20,7 @@ import { touchMode } from './pointerMode';
 import { sweepTurn } from './turnSweep';
 import { moveMode } from './combat';
 import { aimVelocity } from './aimMotion';
-import { levelFlight, probeBelow, touchBlockedStep, touchLandStep, LAND_WINDOW } from './touchFlight';
+import { desktopLandStep, levelFlight, probeBelow, touchBlockedStep, touchLandStep, LAND_WINDOW } from './touchFlight';
 import { gestureBase, gestureBefore, gestureOffset, gestureVelocity } from './gesture/applyGesture'; import { cancelStrike, strike, strikeStep } from './strike'; import { lessShove, shoveBase, shoveStep } from './hurtShove';
 import { clearGesture, gesture } from './gesture/bus';
 import { createGestureCtx } from './gestureCtx';
@@ -63,7 +63,7 @@ export default function Player() {
       b.setTranslation(checkpoint, true); b.setNextKinematicTranslation(checkpoint);
       setVec(runtime.position, checkpoint.x, checkpoint.y, checkpoint.z); runtime.poseEpoch++;
       clearInput(true); cancelStrike(); liftTime.current = 0; resetLimitSteer();
-      useGame.setState({ flying: false, landing: false, checkpoint, message: 'Suit restored to a clear landing.' });
+      useGame.setState({ flying: false, landing: false, checkpoint, message: 'Returned to a clear landing.' });
       return;
     }
     if (runtime.reset) {
@@ -71,11 +71,12 @@ export default function Player() {
       clearInput(true); cancelStrike(); runtime.reset = false; runtime.yaw = 0; runtime.pitch = -.12; runtime.poseEpoch++; liftTime.current = 0; resetLimitSteer();
       useGame.setState({ flying: false, landing: false, checkpoint: START }); persistGame(); return;
     }
-    // Held Descend: start the landing before the intent is read, so its sink is already dropped this step.
+    // Held Descend (touch or desktop F/Ctrl): start landing before intent is read and before limitStep clearance assist.
     if (touchLandStep({ world, rapier, collider: col, safe, position: current, flying: state.flying })) landingStall.current = 0;
     // Held Descend stopped short by the clearance assist (last step's result): land beside the obstacle, or say there is no landing.
     if (touchBlockedStep({ world, rapier, collider: col, safe, position: current, flying: state.flying, clearance: runtime.clearance.active,
       vy: runtime.velocity.y, dt })) landingStall.current = 0;
+    if (desktopLandStep({ world, rapier, collider: col, safe, position: current, flying: state.flying })) landingStall.current = 0;
     // The lab scheme steps first (its request, lift or land, and its turn rates), so readIntent sees this step's gesture intent.
     const p = b.translation(); gesture.reduced = state.reduced; gestureBefore(look, p, gctx, runtime);
     const intent = readIntent();
@@ -94,10 +95,15 @@ export default function Player() {
     if (strike.phase && !flying) runtime.lift = true; // a sword strike from the ground takes off first (strike.ts)
     if (runtime.lift || (pointerFlight && moving(intent) && !flying)) {
       runtime.lift = false;
-      if (!flying) { flying = true; liftTime.current = moving(intent) ? .4 : .24; runtime.velocity.y = 6; useGame.setState({ flying: true }); } // idle: .24 s up, then the flare's 1.5 m, the old 2.9 m lift-off
-      else if (runtime.landGoal) { runtime.landGoal = null; useGame.setState({ landing: false }); }
-      else if (runtime.landTarget) { runtime.landGoal = runtime.landTarget.clone().add(new Vector3(0, FOOT, 0)); landingStall.current = 0; clearGesture(); useGame.setState({ landing: true }); }
-      else useGame.setState({ message: 'Aim at a nearby flat rooftop or terrace to land.' });
+      if (!flying) { flying = true; liftTime.current = moving(intent) ? .4 : .24; runtime.velocity.y = 6; useGame.setState({ flying: true }); }
+    }
+    if (runtime.land) {
+      runtime.land = false;
+      if (flying) {
+        if (runtime.landGoal) { runtime.landGoal = null; useGame.setState({ landing: false }); }
+        else if (runtime.landTarget) { runtime.landGoal = runtime.landTarget.clone().add(new Vector3(0, FOOT, 0)); landingStall.current = 0; clearGesture(); useGame.setState({ landing: true }); }
+        else useGame.setState({ message: 'Aim at flat ground nearby to land.' });
+      }
     }
     // PR #12: the one-finger 'simple' trackpad profile looks without thrusting; every other gesture still surges.
     const gestureThrust = runtime.thumb.active && !!(runtime.thumb.throttle || runtime.thumb.strafe) || (runtime.trackpad.active && state.trackpadSteering !== 'simple');
@@ -156,8 +162,9 @@ export default function Player() {
       runtime.landGoal = null; setVec(runtime.velocity, 0, 0, 0); flying = false;
       useGame.setState({ flying: false, landing: false, checkpoint: next, message: 'Landed. Take a moment. Look around.' }); persistGame();
     }
-    // Descend held into a landable surface the probe missed (arrived from the side, or already inside the window): land here.
-    if (flying && runtime.stick.descend && c.computedGrounded() && safe.canLand({ ...next, y: next.y - FOOT })) {
+    // Descend held (touch or desktop F/Ctrl) into a landable surface the probe missed: land here.
+    const descending = !!runtime.stick.descend || (desktopDescendHeld() && !k.has('KeyR') && !k.has('Space'));
+    if (flying && descending && c.computedGrounded() && safe.canLand({ ...next, y: next.y - FOOT })) {
       runtime.landGoal = null; setVec(runtime.velocity, 0, 0, 0); flying = false;
       useGame.setState({ flying: false, landing: false, checkpoint: next, message: 'Landed. Take a moment. Look around.' }); persistGame();
     }
@@ -188,7 +195,7 @@ export default function Player() {
       const nearTerminal = terminal !== null;
       runtime.location = locationName(next, terminal);
       const nearGround = flying && probeBelow(world, rapier, col, safe, runtime.position, FOOT + LAND_WINDOW) !== null;
-      useGame.setState({ canLand: !!runtime.landTarget, nearTerminal, nearGround, limitCue: runtime.clearance.cue, limitHint: limitHint(flying ? runtime.clearance.cue : '', inputKind(touchMode(), state.trackpadSteering, state.desktopMode)), clearanceActive: runtime.clearance.active });
+      useGame.setState({ canLand: !!runtime.landTarget, nearTerminal, nearTerminalId: terminal?.id ?? null, nearTerminalLabel: terminal?.location ?? '', nearGround, limitCue: runtime.clearance.cue, limitHint: limitHint(flying ? runtime.clearance.cue : '', inputKind(touchMode(), state.trackpadSteering, state.desktopMode)), clearanceActive: runtime.clearance.active });
     }
   });
   return <RigidBody ref={body} type="kinematicPosition" colliders={false} position={[spawn.current.x, spawn.current.y, spawn.current.z]}>

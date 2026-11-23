@@ -63,8 +63,8 @@
       },
       "v3": {
         "rubricVersion": "guide-v3",
-        "provenance": 0,
-        "passing": 0,
+        "provenance": 16,
+        "passing": 16,
         "failing": 0,
         "rebound": 0
       }
@@ -152,8 +152,8 @@
       "v3Rubric": {
         "status": "passing",
         "rubricVersion": "guide-v3",
-        "guidesWithProvenance": 0,
-        "passing": 0,
+        "guidesWithProvenance": 16,
+        "passing": 16,
         "failing": 0,
         "rebound": 0,
         "scope": "the guide-v2 checks with wider limits (up to 14 questions, 9 outline parts, 5 key verses) and no required word question; a glossary entry may be tied to verses instead of sharing a word with the chapter, and for that tie the code checks only that the reference resolves in the chapter"

@@ -10,7 +10,7 @@ body:has(.court-page) > .discovery-lens { display: none; }
   color: #352e26; font-family: var(--font-body, Georgia, serif); box-sizing: border-box;
 }
 .court-page *, .court-page *::before, .court-page *::after { box-sizing: border-box; }
-.court-page a { color: #734225; text-underline-offset: .16em; }
+.court-page a { color: #734225; text-decoration: underline; text-decoration-thickness: 1.25px; text-underline-offset: .16em; }
 .court-page button, .court-page summary { cursor: pointer; }
 .court-page button { font: 600 .95rem/1.2 var(--font-ui, system-ui), sans-serif; }
 .court-page button:disabled { cursor: default; }
@@ -33,7 +33,8 @@ body:has(.court-page) > .discovery-lens { display: none; }
 .court-tally, .court-tools, .court-tools button { display: flex; align-items: center; }
 .court-tally { max-width: 100%; flex-wrap: wrap; gap: .44rem; font: 500 .91rem/1 var(--font-ui, system-ui), sans-serif; white-space: nowrap; }
 .court-tally strong { color: #ffe6a8; font-weight: 700; font-variant-numeric: tabular-nums; }
-.court-gate { margin-left: .45rem; padding-left: .85rem; border-left: 1px solid #697269; color: #efebd9; font-size: .81rem; }
+.court-gate, .court-phase { margin-left: .45rem; padding-left: .85rem; border-left: 1px solid #697269; color: #efebd9; font-size: .81rem; }
+.court-phase { color: #ffe6a8; }
 .court-fixture-icon { width: 18px; height: 10px; border-top: 3px solid #e5b96e; position: relative; }
 .court-fixture-icon::after { content: ""; position: absolute; inset: 0 2px; border-inline: 2px solid #e5b96e; }
 .court-tools { max-width: 100%; flex-wrap: wrap; gap: .2rem; margin-inline-start: auto; }
@@ -57,6 +58,11 @@ body:has(.court-page) > .discovery-lens { display: none; }
   border-bottom: 3px solid #c58663; box-shadow: 1px 2px 0 #1a231f;
 }
 .court-strike:hover { background: #a74430; }
+.court-strike[data-teach] { background: #385344; border-color: #97b5a1; border-bottom-color: #7c9b87; }
+.court-strike[data-teach]:hover { background: #446352; }
+.court-strike[data-teach] kbd { border-color: #a8c4b1; }
+.court-strike[data-tone="depart"] { background: #5a3c2f; border-color: #d6a27c; border-bottom-color: #b78059; }
+.court-strike[data-tone="depart"]:hover { background: #6b4839; }
 .court-strike:active { transform: translateY(1px); }
 .court-strike:disabled { opacity: .6; }
 .court-strike kbd { font: 500 .72rem/1 var(--font-ui, system-ui), sans-serif; border: 1px solid #e5b49a; padding: .22rem .3rem; }
@@ -76,6 +82,7 @@ body:has(.court-page) > .discovery-lens { display: none; }
 .court-reading-links a { display: inline-flex; align-items: center; min-height: 2.75rem; }
 .court-art-credit { font-size: .93rem; }
 .court-teaching { position: absolute; top: .6rem; left: .6rem; max-width: min(25rem, calc(100% - 1.2rem)); padding: .5rem .85rem; background: #fff2d9; border-left: 3px solid var(--court-red); box-shadow: 1px 2px 0 #725c4940; }
+.court-teaching[data-evening] { background: #f8e5ca; border-left-color: #7b4528; }
 .court-teaching h2 { margin: 0; font: 600 1.16rem/1.2 var(--reading-face, Georgia), serif; color: #493325; }
 .court-teaching p { margin: .2rem 0 0; font-size: .96rem; line-height: 1.3; color: #493325; }
 .court-overlay { z-index: 2; }
@@ -85,7 +92,7 @@ body:has(.court-page) > .discovery-lens { display: none; }
 @media (max-width: 40rem) {
   .court-page { padding-inline: .65rem; }
   .court-sound-word, .court-strike kbd, .court-fixture-icon { display: none; }
-  .court-gate { margin-left: .2rem; padding-left: .55rem; }
+  .court-gate, .court-phase { margin-left: .2rem; padding-left: .55rem; }
   .court-heading { padding: .15rem .15rem .65rem; }
   .court-window canvas { height: clamp(13rem, 47svh, 27rem); }
   .court-control-panel { gap: .7rem; }
@@ -100,4 +107,7 @@ body:has(.court-page) > .discovery-lens { display: none; }
   .court-window canvas { height: clamp(7rem, calc(100svh - 10.3rem), 24rem); }
   .court-control-panel { padding-block: .2rem; }
   .court-response { padding-block: .3rem; min-height: 1.6rem; font-size: .85rem; }
+  .court-teaching { top: .35rem; left: .35rem; padding: .35rem .65rem; max-width: min(21rem, calc(100% - .7rem)); }
+  .court-teaching h2 { font-size: 1rem; }
+  .court-teaching p { font-size: .84rem; margin-top: .1rem; }
 }
