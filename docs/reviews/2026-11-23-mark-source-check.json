@@ -1,0 +1,1073 @@
+{
+  "book": "MRK",
+  "checkedAt": "2026-11-23",
+  "baseline": "54f8c89d",
+  "follows": "2026-11-21-mark-source-check.json",
+  "note": "Second pass on the claims the first record left open, backed in part, or marked as readings, and a sweep of all 16 guides for background claims no check had covered. All edits were applied on 2026-11-23 by Garo's rulings. Each find string occurred exactly once in the named field when it was applied; the sweep edits were applied after the others.",
+  "counts": {
+    "open": 6,
+    "partly": 15,
+    "reading": 15,
+    "glossaryVerseTies": 10,
+    "chapter14GlossaryTerms": 5,
+    "sweepClaims": 83,
+    "sweepKept": 43,
+    "sweepEdits": 38
+  },
+  "edits": [
+    {
+      "group": "open",
+      "chapter": 1,
+      "path": "glossary[4].def",
+      "place": "glossary",
+      "find": "Their authority came from citing tradition — which is exactly the contrast being drawn in verse 22.",
+      "replace": "Verse 22 sets their teaching against his: he taught 'as having authority, and not as the scribes.'",
+      "basis": "Hosted Mark 1:22. The claim about where their authority came from is cut; nothing read backs it."
+    },
+    {
+      "group": "open",
+      "chapter": 2,
+      "path": "questions[9].answer",
+      "place": "question 10",
+      "find": " — useful in a province where claiming kingship got you executed",
+      "replace": " — and 'king' is the word on the charge above his cross (15:26)",
+      "basis": "Hosted Mark 15:26."
+    },
+    {
+      "group": "open",
+      "chapter": 11,
+      "path": "questions[8].answer",
+      "place": "question 9",
+      "find": "It is a recognized style of rabbinic debate, not evasion. And his counter-question is exact",
+      "replace": "It is not evasion. His counter-question is exact",
+      "basis": "The claim about rabbinic style is cut; nothing read backs it."
+    },
+    {
+      "group": "open",
+      "chapter": 12,
+      "path": "glossary[0].def",
+      "place": "glossary",
+      "find": "They disappear from history after the temple's destruction in AD 70.",
+      "replace": "The group died out some time after the temple's destruction in AD 70.",
+      "basis": "Wikipedia, \"Sadducees\": \"The group became extinct sometime after the destruction of the Second Temple in 70 CE.\""
+    },
+    {
+      "group": "open",
+      "chapter": 13,
+      "path": "glossary[2].def",
+      "place": "glossary",
+      "find": "A standard Jewish image for the distress preceding God's decisive act.",
+      "replace": "An image the prophets use for distress before God acts (Isaiah 13:8; 26:17; Micah 4:9-10).",
+      "basis": "Hosted Isaiah 13:8, 26:17 and Micah 4:9-10."
+    },
+    {
+      "group": "open",
+      "chapter": 15,
+      "path": "glossary[2].def",
+      "place": "glossary",
+      "find": "A Roman public execution reserved for slaves, rebels, and the lowest criminals, designed to be slow, exposed, and humiliating. Roman citizens were normally exempt from it.",
+      "replace": "A Roman public execution, used on slaves, pirates and enemies of the state. Mark shows it done in the open, over hours (verses 25-34).",
+      "basis": "Wikipedia, \"Crucifixion\": \"It was used to punish slaves, pirates, and enemies of the state.\" Hosted Mark 15:25-34. The line on citizens is cut; the page does not state it as a rule."
+    },
+    {
+      "group": "partly",
+      "chapter": 1,
+      "path": "glossary[0].def",
+      "place": "glossary",
+      "find": "In ordinary Greek, the announcement of a victory or the arrival of a ruler — a herald's word, not originally a religious one.",
+      "replace": "In ordinary Greek, good news. An inscription from 9 BC uses the word for the birthday of the emperor Augustus.",
+      "basis": "Thayer's: \"good news\". Priene calendar inscription, 9 BC. No page read gives \"news of a victory\"."
+    },
+    {
+      "group": "partly",
+      "chapter": 2,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "and the system let them keep whatever they squeezed above the quota",
+      "replace": "and the job was open to collecting more than was due (Luke 3:13)",
+      "basis": "Hosted Luke 3:13: \"Collect no more than that which is appointed to you.\""
+    },
+    {
+      "group": "partly",
+      "chapter": 2,
+      "path": "questions[9].answer",
+      "place": "question 10",
+      "find": "In everyday Aramaic the phrase can just mean 'a human being,' but it also reaches back",
+      "replace": "In the Hebrew scriptures the phrase can just mean 'a human being' (Psalm 8:4), but it also reaches back",
+      "basis": "Hosted Psalm 8:4. Everyday Aramaic usage was not checked, so the sentence now rests on the hosted text."
+    },
+    {
+      "group": "partly",
+      "chapter": 3,
+      "path": "questions[2].answer",
+      "place": "question 3",
+      "find": "The Pharisees were a devout renewal movement with no love for Herod's court.",
+      "replace": "The Pharisees prized exact knowledge of the law, and Josephus says more than six thousand of them refused an oath of loyalty under Herod the Great (Antiquities 17.2.4).",
+      "basis": "Josephus, Antiquities 17.2.4: \"the exact skill they had in the law of their fathers\"; \"these very men did not swear, being above six thousand\"."
+    },
+    {
+      "group": "partly",
+      "chapter": 6,
+      "path": "questions[7].answer",
+      "place": "question 8",
+      "find": "died around 4 BC",
+      "replace": "died in 4 BC on the usual dating (1 BC on another)",
+      "basis": "Wikipedia, \"Herod the Great\": 4 BC following Schürer; 1 BC the older date, still defended."
+    },
+    {
+      "group": "partly",
+      "chapter": 7,
+      "path": "questions[0].answer",
+      "place": "question 1",
+      "find": "What developed was a practice of extending priestly purity into everyday life, so that ordinary meals were treated with something of the care given to temple service.",
+      "replace": "What developed was a practice of washing hands before ordinary food as well; the Mishnah, written down later, records it (Chagigah 2:5).",
+      "basis": "Mishnah Chagigah 2:5 (Sefaria): \"One must wash his hands ... before eating non-sacred food\". The line about extending priestly purity is cut."
+    },
+    {
+      "group": "partly",
+      "chapter": 8,
+      "path": "outline[3].note",
+      "place": "outline part 4",
+      "find": "The only healing in the gospels that takes two attempts",
+      "replace": "The one healing in Mark that takes two steps",
+      "basis": "Hosted text of Mark."
+    },
+    {
+      "group": "partly",
+      "chapter": 8,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "It is the only staged healing in the gospels, and Mark alone records it.",
+      "replace": "It is the only staged healing in Mark, and only Mark records it.",
+      "basis": "Among the four hosted gospels, \"like trees\" occurs only at Mark 8:24."
+    },
+    {
+      "group": "partly",
+      "chapter": 10,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "Under Roman law she could initiate it. So this half of the saying only makes practical sense for readers living under Roman rather than Jewish law, and it is one more small piece of evidence about where Mark's audience was.",
+      "replace": "Josephus says as much when Herod's sister Salome sends her husband a bill of divorce: 'not according to the Jewish laws' (Antiquities 15.7.10). So this half of the saying is often read as written for readers outside Jewish law, a small sign of where Mark's audience was.",
+      "basis": "Josephus, Antiquities 15.7.10. The page read on Roman marriage dates a wife's right to divorce to about the second century, so the Roman law sentence is cut."
+    },
+    {
+      "group": "partly",
+      "chapter": 10,
+      "path": "context.audience",
+      "place": "audience line",
+      "find": "which was possible under Roman law but not Jewish — a sign of who Mark is writing for",
+      "replace": "which Jewish law did not allow — often read as a sign of who Mark is writing for",
+      "basis": "Same as question 4."
+    },
+    {
+      "group": "partly",
+      "chapter": 11,
+      "path": "questions[5].answer",
+      "place": "question 6",
+      "find": "the outer courts covered something like thirty-five acres, with Roman troops garrisoned overlooking it during festivals",
+      "replace": "the platform covers about thirty-seven acres, and a Roman garrison in the Antonia fortress overlooked it (Josephus, War 5.5.8)",
+      "basis": "Wikipedia, \"Temple Mount\": \"approximately 150,000 m2 (37 acres)\". Josephus, War 5.5.8, for the Antonia. \"During festivals\" is cut; that sentence was not read word for word."
+    },
+    {
+      "group": "partly",
+      "chapter": 11,
+      "path": "questions[6].answer",
+      "place": "question 7",
+      "find": "The mountain image was a known figure of speech for an impossibility, not a literal proposal.",
+      "replace": "Later rabbinic writing uses 'uprooting mountains' as a figure of speech (Babylonian Talmud, Berakhot 64a), so the image need not be a literal proposal.",
+      "basis": "Babylonian Talmud, Berakhot 64a. It is centuries later than Mark, and the sentence now says so."
+    },
+    {
+      "group": "partly",
+      "chapter": 14,
+      "path": "questions[0].answer",
+      "place": "question 1",
+      "find": "Nard was imported from the Himalayan region, and the jar was sealed — breaking it meant it could not be resealed or used sparingly.",
+      "replace": "Nard is a perfume from a plant that grows in the Himalayas, and she broke the jar (verse 3), so none of it was held back.",
+      "basis": "Wikipedia, \"Spikenard\": \"grows in the Himalayas of Nepal, China, and India\". Hosted Mark 14:3. The sealed jar is cut."
+    },
+    {
+      "group": "partly",
+      "chapter": 14,
+      "path": "questions[7].answer",
+      "place": "question 8",
+      "find": "It is the ordinary Aramaic word a child used for their father — warm and familial, though not baby talk as is sometimes claimed.",
+      "replace": "It is the Aramaic word for father. The popular claim that it means 'Daddy' has been challenged (James Barr, 1988).",
+      "basis": "Thayer's: Aramaic, \"father\". J. Barr, \"Abba isn't 'daddy'\", Journal of Theological Studies 39 (1988), known from summaries and a citation only."
+    },
+    {
+      "group": "partly",
+      "chapter": 16,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "is earlier than any of the gospels",
+      "replace": "comes from a letter usually dated to the AD 50s, earlier than most scholars date any gospel",
+      "basis": "Wikipedia, \"First Epistle to the Corinthians\": \"usually in the range of 53–57 CE\". The Mark briefing for the gospel's date."
+    },
+    {
+      "group": "reading",
+      "chapter": 1,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "Not a place you go when you die, and not a political state. It means God's rule breaking into the present — the world starting to run the way it was meant to.",
+      "replace": "Most readers take it as God's rule breaking into the present — the world starting to run the way it was meant to — and not a place you go when you die or a political state.",
+      "basis": "A reading."
+    },
+    {
+      "group": "reading",
+      "chapter": 1,
+      "path": "questions[6].answer",
+      "place": "question 7",
+      "find": "Read from inside the book:",
+      "replace": "One common reading:",
+      "basis": "The briefing treats the silence orders as an interpretation."
+    },
+    {
+      "group": "reading",
+      "chapter": 2,
+      "path": "keyVerses[2].why",
+      "place": "key verse 3",
+      "find": "A principle for reading every rule in the book — the rule exists to serve people, not the reverse.",
+      "replace": "Often read as the principle behind the rule disputes in this book — the rule exists to serve people, not the reverse.",
+      "basis": "A reading."
+    },
+    {
+      "group": "reading",
+      "chapter": 3,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "Almost certainly. Israel",
+      "replace": "Most readers think so. Israel",
+      "basis": "A reading."
+    },
+    {
+      "group": "reading",
+      "chapter": 3,
+      "path": "questions[7].answer",
+      "place": "question 8",
+      "find": "It is the settled decision to name good as evil",
+      "replace": "Many readers take it as the settled decision to name good as evil",
+      "basis": "A reading."
+    },
+    {
+      "group": "reading",
+      "chapter": 5,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "It is a real and deliberate reversal, and the geography explains it. In Jewish Galilee, the title 'Messiah' carried the expectation of a warrior king",
+      "replace": "It is a real reversal, and the usual explanation is the geography. In Jewish Galilee, many attached the title 'Messiah' to a warrior king",
+      "basis": "The briefing leaves the reason open."
+    },
+    {
+      "group": "reading",
+      "chapter": 5,
+      "path": "questions[9].answer",
+      "place": "question 10",
+      "find": "Keeping the sound is the mark of a memory passed down by people who heard it. Translating it is the mark of a writer whose readers do not speak that language. Both things are true at once, and together they tell you something about how this book came to be.",
+      "replace": "Keeping the sound is often read as the mark of a memory passed down by people who heard it. Translating it points to readers who do not speak that language.",
+      "basis": "The briefing leaves this open."
+    },
+    {
+      "group": "reading",
+      "chapter": 5,
+      "path": "questions[10].answer",
+      "place": "question 11",
+      "find": "It is the kind of specific, unnecessary thing that tends to come from someone who was in the room.",
+      "replace": "Many readers take a specific, unnecessary detail like this as coming from someone who was in the room.",
+      "basis": "A reading."
+    },
+    {
+      "group": "reading",
+      "chapter": 6,
+      "path": "questions[9].answer",
+      "place": "question 10",
+      "find": "Almost certainly. Twelve is the number of the tribes of Israel and of the men he had just sent out — and this feeding happens on the Jewish side of the lake. In chapter 8 he feeds four thousand on the Gentile side and there are seven baskets left.",
+      "replace": "Many readers think so. Twelve is the number of the tribes of Israel and of the men he had just sent out, and this feeding is usually placed on the Jewish side of the lake. In chapter 8 he feeds four thousand, usually placed on the Gentile side (7:31), and there are seven baskets left.",
+      "basis": "An inference from hosted 7:31; widely held."
+    },
+    {
+      "group": "reading",
+      "chapter": 8,
+      "path": "outline[0].note",
+      "place": "outline part 1",
+      "find": "on the Gentile side this time",
+      "replace": "usually placed on the Gentile side",
+      "basis": "Same inference."
+    },
+    {
+      "group": "reading",
+      "chapter": 7,
+      "path": "questions[9].answer",
+      "place": "question 10",
+      "find": "Notice these orders stop after the crucifixion, when the thing that was being protected has happened.",
+      "replace": "Notice the limit he sets in 9:9: until after the Son of Man has risen from the dead.",
+      "basis": "Hosted Mark 9:9."
+    },
+    {
+      "group": "reading",
+      "chapter": 8,
+      "path": "questions[6].answer",
+      "place": "question 7",
+      "find": "Because he has the right title and the wrong content, which the next four verses expose. 'Christ' meant God's anointed king, and popular expectation attached that to a deliverer",
+      "replace": "On the usual reading, because he has the right title and the wrong content, which the next four verses expose. 'Christ' meant God's anointed king, and many attached that to a deliverer",
+      "basis": "A reading."
+    },
+    {
+      "group": "reading",
+      "chapter": 12,
+      "path": "questions[0].answer",
+      "place": "question 1",
+      "find": "So the owner is God, the vineyard is Israel",
+      "replace": "On the usual reading the owner is God, the vineyard is Israel",
+      "basis": "A reading."
+    },
+    {
+      "group": "reading",
+      "chapter": 12,
+      "path": "questions[9].answer",
+      "place": "question 10",
+      "find": "The riddle exposes that",
+      "replace": "On one common reading, the riddle shows that",
+      "basis": "A reading."
+    },
+    {
+      "group": "reading",
+      "chapter": 14,
+      "path": "questions[8].answer",
+      "place": "question 9",
+      "find": "which is itself worth noting: a writer inventing the scene would probably have tidied this, and would almost certainly not have made his own sources the men who slept through it.",
+      "replace": "and some readers note that a writer inventing the scene would probably have tidied it.",
+      "basis": "A reading."
+    }
+  ],
+  "unchanged": [
+    {
+      "chapter": 8,
+      "place": "glossary: Take up your cross, question 9",
+      "claim": "a Roman execution for rebels and slaves",
+      "basis": "Now backed in full: Josephus, Antiquities 17.10.10 for rebels; Wikipedia, \"Crucifixion\", for slaves: \"It was used to punish slaves, pirates, and enemies of the state.\""
+    },
+    {
+      "chapter": 6,
+      "place": "question 3",
+      "claim": "Catholic tradition reads 'brothers' as close kin",
+      "basis": "Now backed by a reference page: Wikipedia, \"Brothers of Jesus\": \"The Catholic Church continues to teach that the adelphoi were cousins of Jesus.\" Jerome's own words would not load."
+    }
+  ],
+  "glossaryVerseTies": [
+    {
+      "chapter": 2,
+      "term": "Blasphemy",
+      "verses": [
+        "2:7"
+      ]
+    },
+    {
+      "chapter": 4,
+      "term": "Sea of Galilee",
+      "verses": [
+        "4:1",
+        "4:35-41"
+      ]
+    },
+    {
+      "chapter": 6,
+      "term": "Denarius",
+      "verses": [
+        "6:37"
+      ]
+    },
+    {
+      "chapter": 9,
+      "term": "Transfigured",
+      "verses": [
+        "9:2"
+      ]
+    },
+    {
+      "chapter": 12,
+      "term": "Shema",
+      "verses": [
+        "12:29-30"
+      ]
+    },
+    {
+      "chapter": 13,
+      "term": "Apocalyptic",
+      "verses": [
+        "13:24-27"
+      ]
+    },
+    {
+      "chapter": 15,
+      "term": "Crucifixion",
+      "verses": [
+        "15:24-25"
+      ]
+    },
+    {
+      "chapter": 16,
+      "term": "Codex Sinaiticus / Codex Vaticanus",
+      "verses": [
+        "16:8"
+      ]
+    },
+    {
+      "chapter": 16,
+      "term": "The longer ending",
+      "verses": [
+        "16:9-20"
+      ]
+    },
+    {
+      "chapter": 16,
+      "term": "Textual criticism",
+      "verses": [
+        "16:9-20"
+      ]
+    }
+  ],
+  "chapter14Glossary": [
+    {
+      "term": "Passover",
+      "def": "The yearly feast that remembers the night Israel left Egypt (Exodus 12). The Feast of Unleavened Bread runs for seven days with it (Exodus 12:15).",
+      "basis": "Hosted Exodus 12:14-15 and Mark 14:1, 14:12."
+    },
+    {
+      "term": "Denarius",
+      "def": "A Roman silver coin, about a day's pay for a labourer (Matthew 20:2). Three hundred of them is close to a year's wages.",
+      "verses": [
+        "14:5"
+      ],
+      "basis": "Hosted Matthew 20:2 and Mark 14:5."
+    },
+    {
+      "term": "Gethsemane",
+      "def": "A place at the foot of the Mount of Olives. The name comes from the words for 'press' and 'oil': an oil press.",
+      "basis": "Thayer's and Strong's, Greek 1068: from the words for press and oil; \"at the foot of the Mount of Olives\"."
+    },
+    {
+      "term": "Abba",
+      "def": "The Aramaic word for father. Mark gives the word and its translation side by side in verse 36.",
+      "basis": "Thayer's: Aramaic, \"father\". Hosted Mark 14:36."
+    },
+    {
+      "term": "The council",
+      "def": "The ruling court in Jerusalem, made up of chief priests, elders and scribes, with the high priest presiding.",
+      "basis": "Thayer's, Greek 4892: scribes, elders, members of the high priestly families, \"and the high priest, the president of the body\". Hosted Mark 14:53-55."
+    }
+  ],
+  "limits": [
+    "The sources are old reference works (Thayer's, Strong's, Whiston's Josephus), the Mishnah in Sefaria's English, and Wikipedia. They show a claim is standard; they are not current scholarship.",
+    "Josephus, War 5.5.8 was read word for word only after the chapter 11 sentence was trimmed; it says soldiers watched the cloisters \"on the Jewish festivals\". The sentence was left trimmed.",
+    "James Barr's 1988 article is known from summaries and a citation only.",
+    "The helpers' quotations were not re-read by the lead in this pass.",
+    "The sweep was one reader's pass with a stated bar (\"a careful editor would ask: says who?\"). It did not list readings, and a claim below that bar may remain.",
+    "Seven kept claims are marked not checked. Each is worded as someone's view or is a general characterisation.",
+    "Three places lean on hosted verses that critical editions leave out or shorten (Mark 9:29 \"and fasting\", Mark 10:29 \"wife\", Luke 23:17). The hosted text is the rubric's authority, so they stand."
+  ],
+  "sweepEdits": [
+    {
+      "group": "sweep",
+      "chapter": 2,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "'sinners,' means people known to be outside the law's requirements",
+      "replace": "'sinners,' was used of people known for a way of life the law condemned",
+      "basis": "Thayer's, Greek 268: \"men stained with certain definite vices or crimes, e. g. the tax-gatherers\"."
+    },
+    {
+      "group": "sweep",
+      "chapter": 2,
+      "path": "glossary[1].def",
+      "place": "glossary: Pharisees",
+      "find": "A movement of devout laypeople committed to applying the whole law to daily life, not just temple worship. They were widely respected.",
+      "replace": "A movement committed to keeping the law in daily life, with observances handed down beside the written law. Josephus says they had the people on their side (Antiquities 13.10.6).",
+      "basis": "Josephus, Antiquities 13.10.6: \"observances by succession from their fathers, which are not written in the laws of Moses\"; \"the Pharisees have the multitude on their side\". \"Laypeople\" is cut; nothing read says it."
+    },
+    {
+      "group": "sweep",
+      "chapter": 2,
+      "path": "glossary[2].def",
+      "place": "glossary: Sabbath",
+      "find": "by the fourth commandment",
+      "replace": "by the Sabbath commandment (Exodus 20:8-11)",
+      "basis": "Hosted Exodus 20:8. Traditions number the commandments differently."
+    },
+    {
+      "group": "sweep",
+      "chapter": 3,
+      "path": "questions[2].answer",
+      "place": "question 3",
+      "find": "a political faction, not a religious one",
+      "replace": "usually taken as a political group, not a religious one",
+      "basis": "Who the Herodians were is debated; nothing read settles it."
+    },
+    {
+      "group": "sweep",
+      "chapter": 3,
+      "path": "glossary[0].def",
+      "place": "glossary: Herodians",
+      "find": "A political faction rather than a religious party.",
+      "replace": "Usually taken as a political group rather than a religious party.",
+      "basis": "Same as question 3."
+    },
+    {
+      "group": "sweep",
+      "chapter": 3,
+      "path": "questions[5].answer",
+      "place": "question 6",
+      "find": "It appears to derive from an old title meaning something like 'lord of the high place' or, in a mocking variant, 'lord of the flies,' attached to a Philistine god (2 Kings 1:2).",
+      "replace": "The name goes back to Baal Zebub, the god of Ekron (2 Kings 1:2). Its meaning is disputed: 'lord of flies' and 'lord of dung' are both proposed.",
+      "basis": "Hosted 2 Kings 1:2. Thayer's, Greek 954: \"lord of dung or of filth\"; lord of flies from \"the few who follow Jerome\". \"Lord of the high place\" is not in what was read."
+    },
+    {
+      "group": "sweep",
+      "chapter": 3,
+      "path": "glossary[3].def",
+      "place": "glossary: Iscariot",
+      "find": "Most likely 'man of Kerioth,' a Judean town, which would make him the only non-Galilean of the Twelve.",
+      "replace": "Probably 'man of Kerioth,' a town in Judah (Joshua 15:25).",
+      "basis": "Strong's, Greek 2469: \"inhabitant of Kerioth\". Hosted Joshua 15:25. The line about the only non-Galilean is cut."
+    },
+    {
+      "group": "sweep",
+      "chapter": 6,
+      "path": "questions[3].answer",
+      "place": "question 4",
+      "find": "It also strips out anything that would make them look like travelling philosophers making a living from lectures. They arrive",
+      "replace": "They arrive",
+      "basis": "The comparison with travelling philosophers is cut; nothing read backs it."
+    },
+    {
+      "group": "sweep",
+      "chapter": 6,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "A recognized gesture of separation. Travellers returning from Gentile territory were said to shake off its dust before re-entering the land, so doing it as you leave a Jewish town is pointed: you have placed yourselves outside. It is a public statement",
+      "replace": "A gesture of separation. Verse 11 calls it 'a testimony against them.' It is a public statement",
+      "basis": "Hosted Mark 6:11. No ancient text read describes the gesture for travellers; that sentence is cut."
+    },
+    {
+      "group": "sweep",
+      "chapter": 7,
+      "path": "questions[2].answer",
+      "place": "question 3",
+      "find": "get out of the fifth commandment",
+      "replace": "get out of the commandment to honour father and mother (Exodus 20:12)",
+      "basis": "Hosted Exodus 20:12. Traditions number the commandments differently."
+    },
+    {
+      "group": "sweep",
+      "chapter": 7,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "It is Mark's own comment on what Jesus said, not part of the quotation — many modern translations set it off; the translation here",
+      "replace": "It is usually read as Mark's own comment on what Jesus said, not part of the quotation; the translation here",
+      "basis": "The other translations are not hosted, so the line about them is cut."
+    },
+    {
+      "group": "sweep",
+      "chapter": 7,
+      "path": "glossary[0].def",
+      "place": "glossary: Tradition of the elders",
+      "find": "Accumulated oral rulings on how to apply the written law in daily life. Highly respected, and distinct",
+      "replace": "Observances handed down from earlier generations and not written in the law of Moses (Josephus, Antiquities 13.10.6). Respected, and distinct",
+      "basis": "Josephus, Antiquities 13.10.6."
+    },
+    {
+      "group": "sweep",
+      "chapter": 9,
+      "path": "context.setting",
+      "place": "setting line",
+      "find": "traditionally identified as Hermon or Tabor",
+      "replace": "by tradition Tabor, with Hermon the usual alternative",
+      "basis": "Wikipedia, \"Transfiguration of Jesus\" (from a summary of the page, not read word for word)."
+    },
+    {
+      "group": "sweep",
+      "chapter": 9,
+      "path": "questions[11].answer",
+      "place": "question 12",
+      "find": "This is how sayings were gathered and remembered before books were common, and Mark",
+      "replace": "This is often explained as the way sayings were gathered and remembered before they were written down, and Mark",
+      "basis": "A scholarly explanation, now stated as one."
+    },
+    {
+      "group": "sweep",
+      "chapter": 10,
+      "path": "questions[2].answer",
+      "place": "question 3",
+      "find": "Most Protestant traditions recognize",
+      "replace": "Many Protestant traditions recognize",
+      "basis": "Wikipedia, \"Christian views on divorce\": practice \"varies by denomination\"."
+    },
+    {
+      "group": "sweep",
+      "chapter": 11,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "Pilgrims arrived with Roman coins bearing the emperor's image and needed temple currency;",
+      "replace": "Pilgrims needed the coin the temple accepted for its half-shekel offering (Exodus 30:13), and the Mishnah has money changers sitting in the temple for it (Shekalim 1:3);",
+      "basis": "Hosted Exodus 30:13. Mishnah Shekalim 1:3: \"the money changers sat in the Temple\". The emperor's image as the reason is cut; the coin the temple took also bore an image."
+    },
+    {
+      "group": "sweep",
+      "chapter": 11,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "filling the one court Gentiles were allowed into",
+      "replace": "filling, on the usual view, the outer court, the only one Gentiles could enter (Josephus, War 5.5.2)",
+      "basis": "Josephus, War 5.5.2: \"no foreigner should go within that sanctuary\". Where the trading stood is an inference."
+    },
+    {
+      "group": "sweep",
+      "chapter": 11,
+      "path": "glossary[2].def",
+      "place": "glossary: Money changers",
+      "find": "Traders who exchanged Roman coinage, which bore the emperor's image, for currency acceptable as a temple offering.",
+      "replace": "Traders who exchanged ordinary coinage for the coin the temple accepted for its offering (Mishnah Shekalim 1:3).",
+      "basis": "Same as question 5."
+    },
+    {
+      "group": "sweep",
+      "chapter": 11,
+      "path": "questions[9].answer",
+      "place": "question 10",
+      "find": "and the basis of the chief priests' authority, which Rome tolerated so long as they kept order",
+      "replace": "and the basis of the chief priests' authority; Josephus says the high priests were entrusted with rule over the nation (Antiquities 20.10.1)",
+      "basis": "Josephus, Antiquities 20.10.1: \"the high priests were intrusted with a dominion over the nation\"."
+    },
+    {
+      "group": "sweep",
+      "chapter": 11,
+      "path": "glossary[4].def",
+      "place": "glossary: Chief priests",
+      "find": "They held religious authority and, under Roman oversight, considerable civil power — and the most to lose",
+      "replace": "They held religious authority and, on Josephus's account, rule over the nation (Antiquities 20.10.1) — and had the most to lose",
+      "basis": "Same as question 10."
+    },
+    {
+      "group": "sweep",
+      "chapter": 12,
+      "path": "questions[1].answer",
+      "place": "question 2",
+      "find": "The tax was a Roman head tax paid by subject peoples, and it was hated as a badge of occupation — saying yes would discredit him with the crowd, and a revolt had been raised over this very tax within living memory.",
+      "replace": "The tax was a Roman head tax, and a generation earlier a revolt had been raised against it by a man who called it slavery (Josephus, Antiquities 18.1.1; Acts 5:37) — saying yes would discredit him with the crowd.",
+      "basis": "Thayer's, Greek 2778: \"the tax or tribute levied on individuals\". Josephus, Antiquities 18.1.1: \"this taxation was no better than an introduction to slavery\". Hosted Acts 5:37."
+    },
+    {
+      "group": "sweep",
+      "chapter": 12,
+      "path": "questions[1].answer",
+      "place": "question 2",
+      "find": "and the exact charge they later bring to Pilate",
+      "replace": "and the charge Luke records them bringing to Pilate (Luke 23:2)",
+      "basis": "Hosted Luke 23:2. Mark 15 does not give this charge."
+    },
+    {
+      "group": "sweep",
+      "chapter": 12,
+      "path": "questions[2].answer",
+      "place": "question 3",
+      "find": "The coin carried Caesar's portrait and an inscription naming him son of the divine Augustus, which made it offensive on two counts under Jewish law.",
+      "replace": "The coin usually identified here carried Caesar's portrait and an inscription naming him son of the divine Augustus — an image and a divine title, set against Exodus 20:3-4.",
+      "basis": "Wikipedia, \"Tribute penny\": \"Ti[berivs] Caesar Divi Avg[vsti] F[ilivs] Avgvstvs\"; \"usually thought by scholars\" to be this coin. Hosted Exodus 20:3-4."
+    },
+    {
+      "group": "sweep",
+      "chapter": 12,
+      "path": "questions[6].answer",
+      "place": "question 7",
+      "find": "The argument turns on the tense. God says this to Moses at the burning bush, long after all three men had died — and says 'I am,' not 'I was.'",
+      "replace": "The argument turns on when it is said. God says this to Moses at the burning bush, long after all three men had died, and still names himself their God.",
+      "basis": "Tagged Greek of Mark 12:26: there is no verb 'am' in the sentence, so the argument cannot rest on its tense."
+    },
+    {
+      "group": "sweep",
+      "chapter": 12,
+      "path": "questions[6].answer",
+      "place": "question 7",
+      "find": "It is a compressed rabbinic-style argument from a single word, and it works",
+      "replace": "It is a compressed argument from a single line, and it works",
+      "basis": "\"Rabbinic-style\" is cut; nothing read backs it."
+    },
+    {
+      "group": "sweep",
+      "chapter": 12,
+      "path": "questions[10].answer",
+      "place": "question 11",
+      "find": "Widows in that society had no independent income and depended on the goodwill of others, and religious figures often managed their affairs or received their support. The charge is that some scribes used that trust to strip them, while",
+      "replace": "The law treats widows as people who depend on others (Deuteronomy 24:19-21). The charge is that some scribes stripped them, while",
+      "basis": "Hosted Deuteronomy 24:19-21. The line about religious figures managing their affairs is cut."
+    },
+    {
+      "group": "sweep",
+      "chapter": 12,
+      "path": "glossary[1].def",
+      "place": "glossary: Head of the corner",
+      "find": "The stone that sets the position of a whole structure — either the cornerstone at the foundation or the capstone at the top.",
+      "replace": "The cornerstone: the stone that sets the position of a whole structure.",
+      "basis": "Thayer's, Greek 1137: \"the head of the corner, i. e. the cornerstone\". The capstone reading is not in what was read."
+    },
+    {
+      "group": "sweep",
+      "chapter": 13,
+      "path": "questions[1].answer",
+      "place": "question 2",
+      "find": "That event is why the Sadducees vanish from history and why Judaism reorganized around synagogue and study.",
+      "replace": "After it the Sadducees died out, and Jewish worship went on without a temple.",
+      "basis": "Wikipedia, \"Sadducees\". The line on synagogue and study is cut."
+    },
+    {
+      "group": "sweep",
+      "chapter": 13,
+      "path": "questions[8].answer",
+      "place": "question 9",
+      "find": "Christians have wrestled with this since the early centuries, and it was central to some of the great doctrinal debates. The mainstream answer that emerged:",
+      "replace": "Christians have wrestled with this since the early centuries. A long-standing answer:",
+      "basis": "The page read on Mark 13 does not mention those debates."
+    },
+    {
+      "group": "sweep",
+      "chapter": 14,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "What every side agrees on: he said it at a Passover meal, where the bread and herbs were already understood to make a past deliverance present to the people eating.",
+      "replace": "In Mark he says it at a Passover meal (verses 12-16), a meal that already remembered a past deliverance (Exodus 12:14).",
+      "basis": "Hosted Mark 14:12-16 and Exodus 12:14. John places the meal before Passover (John 18:28), so \"every side agrees\" is cut."
+    },
+    {
+      "group": "sweep",
+      "chapter": 14,
+      "path": "questions[10].answer",
+      "place": "question 11",
+      "find": "By the standards later recorded in Jewish law",
+      "replace": "By the standards later recorded in the Mishnah (Sanhedrin 4:1)",
+      "basis": "Mishnah Sanhedrin 4:1: rulings \"only in the daytime\"; a guilty verdict \"must wait until the following day\"; \"neither on the eve of Shabbat nor the eve of a Festival\"."
+    },
+    {
+      "group": "sweep",
+      "chapter": 14,
+      "path": "questions[11].answer",
+      "place": "question 12",
+      "find": "Claiming to be Messiah was not itself blasphemy; plenty of men had.",
+      "replace": "Claiming to be Messiah was not itself blasphemy; the Mishnah, written down later, requires the divine name to be spoken (Sanhedrin 7:5).",
+      "basis": "Mishnah Sanhedrin 7:5: \"is not liable unless he utters the name of God\". \"Plenty of men had\" is cut."
+    },
+    {
+      "group": "sweep",
+      "chapter": 15,
+      "path": "questions[2].answer",
+      "place": "question 3",
+      "find": "Roman governors did have discretionary power to pardon",
+      "replace": "pardons by Roman officials are recorded elsewhere",
+      "basis": "Wikipedia, \"Barabbas\": scholars cite \"evidence of such pardons\" in Livy, Josephus and Pliny the Younger. Those were not read."
+    },
+    {
+      "group": "sweep",
+      "chapter": 15,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "purple was the colour of royalty because the dye was ruinously expensive",
+      "replace": "purple was the colour of royalty",
+      "basis": "Hosted Judges 8:26. The price of the dye is cut."
+    },
+    {
+      "group": "sweep",
+      "chapter": 15,
+      "path": "questions[4].answer",
+      "place": "question 5",
+      "find": "'Hail, King of the Jews' parodies the salute to Caesar",
+      "replace": "'Hail, King of the Jews' is a mock royal salute",
+      "basis": "The link to a salute to Caesar is cut; nothing read backs it."
+    },
+    {
+      "group": "sweep",
+      "chapter": 15,
+      "path": "questions[9].answer",
+      "place": "question 10",
+      "find": "There was also a popular expectation that Elijah came to rescue the righteous in extremity.",
+      "replace": "Elijah was also expected to return (Malachi 4:5).",
+      "basis": "Hosted Malachi 4:5. The rescue stories are later and were not read."
+    },
+    {
+      "group": "sweep",
+      "chapter": 15,
+      "path": "questions[10].answer",
+      "place": "question 11",
+      "find": "and it happens in a building on the other side of the city from Golgotha",
+      "replace": "and it happens in the temple, away from the cross",
+      "basis": "Where Golgotha stood is uncertain."
+    },
+    {
+      "group": "sweep",
+      "chapter": 16,
+      "path": "questions[2].answer",
+      "place": "question 3",
+      "find": "the last leaf of a scroll or codex is the most vulnerable part",
+      "replace": "the end of a book is easily damaged",
+      "basis": "A proposal, stated more loosely."
+    }
+  ],
+  "sweepKept": [
+    {
+      "chapter": 1,
+      "place": "question 6",
+      "claim": "'Unclean' in this usage means ritual status, not dirt.",
+      "basis": "Hosted Leviticus 10:10. Thayer's, Greek 169: \"in a ceremonial sense\"."
+    },
+    {
+      "chapter": 1,
+      "place": "glossary: Synagogue",
+      "claim": "Synagogues invited visiting men to speak.",
+      "basis": "Hosted Acts 13:15."
+    },
+    {
+      "chapter": 1,
+      "place": "glossary: Leper / leprosy",
+      "claim": "Biblical 'leprosy' covered various skin conditions, not only Hansen's disease.",
+      "basis": "Hosted Leviticus 13, which covers marks on skin and on clothing (13:47)."
+    },
+    {
+      "chapter": 2,
+      "place": "question 8",
+      "claim": "Plucking grain counted as reaping/harvesting, a forbidden Sabbath labour.",
+      "basis": "Mishnah Shabbat 7:2, read in the first pass: reaping is among the listed labours."
+    },
+    {
+      "chapter": 2,
+      "place": "question 9",
+      "claim": "Abiathar was the more famous priest and became high priest right after Ahimelech.",
+      "basis": "Hosted 1 Samuel 22:20 and 23:6. Worded as what some note."
+    },
+    {
+      "chapter": 2,
+      "place": "glossary: Show bread",
+      "claim": "Twelve loaves replaced weekly, reserved for priests.",
+      "basis": "Hosted Leviticus 24:5-9."
+    },
+    {
+      "chapter": 3,
+      "place": "question 4",
+      "claim": "Most of the twelve tribes had long been scattered by Jesus's time.",
+      "basis": "Hosted 2 Kings 17:23."
+    },
+    {
+      "chapter": 3,
+      "place": "glossary: Idumaea",
+      "claim": "Idumaea lay south of Judea and was ancient Edom.",
+      "basis": "Strong's, Greek 2401: \"Idumea, a region S. of Judea\"; Thayer's: \"inhabited by Esau or Edom\"."
+    },
+    {
+      "chapter": 4,
+      "place": "glossary: Mystery",
+      "claim": "Greek 'mystery' means something once hidden, now revealed.",
+      "basis": "Thayer's, Greek 3466: \"which was once hidden but now is revealed\"."
+    },
+    {
+      "chapter": 5,
+      "place": "glossary: Unclean",
+      "claim": "Uncleanness barred worship temporarily and passed by contact.",
+      "basis": "Hosted Leviticus 15:19 and Numbers 19:22."
+    },
+    {
+      "chapter": 5,
+      "place": "glossary: Ruler of the synagogue",
+      "claim": "A synagogue ruler was a layman who arranged services and readings.",
+      "basis": "Thayer's, Greek 752: \"to select the readers or teachers in the synagogue\"."
+    },
+    {
+      "chapter": 6,
+      "place": "question 2",
+      "claim": "Men were normally named by their father, so 'son of Mary' is unusual.",
+      "basis": "Hosted Matthew 13:55 has \"the carpenter's son\" in the parallel. The naming custom itself was not checked."
+    },
+    {
+      "chapter": 6,
+      "place": "question 3",
+      "claim": "Orthodox tradition: the brothers were Joseph's children by an earlier marriage.",
+      "basis": "Wikipedia, \"Brothers of Jesus\": \"sons of Joseph from a previous marriage\"; \"still the official position of the Eastern Orthodox Church\"."
+    },
+    {
+      "chapter": 6,
+      "place": "question 4",
+      "claim": "Hospitality was a strong social obligation in that culture.",
+      "basis": "Hosted Genesis 18:1-8."
+    },
+    {
+      "chapter": 7,
+      "place": "question 9",
+      "claim": "Sidon lies north of Tyre; the route then runs southeast through the Decapolis.",
+      "basis": "Wikipedia, \"Sidon\": \"Tyre, to the south\"."
+    },
+    {
+      "chapter": 7,
+      "place": "question 9",
+      "claim": "Scholars have questioned whether Mark knew Palestinian geography.",
+      "basis": "Worded as an argument others have had. Not checked."
+    },
+    {
+      "chapter": 9,
+      "place": "question 5",
+      "claim": "The boy's symptoms match a modern seizure disorder.",
+      "basis": "Hosted Matthew 17:15: \"he is epileptic\"."
+    },
+    {
+      "chapter": 9,
+      "place": "question 11",
+      "claim": "By Jesus's day 'Gehenna' already meant final judgment.",
+      "basis": "Hosted 1 Enoch 27:1-2 (Charles): the accursed valley as \"their place of judgement\"."
+    },
+    {
+      "chapter": 9,
+      "place": "glossary: Gehenna",
+      "claim": "Gehenna later became an image of final judgment.",
+      "basis": "Hosted 1 Enoch 27:1-2 (Charles)."
+    },
+    {
+      "chapter": 10,
+      "place": "question 3",
+      "claim": "Catholic teaching: sacramental marriage indissoluble; annulment asks if a marriage existed.",
+      "basis": "Wikipedia, \"Christian views on divorce\": \"indissoluble by mere human action\"; \"a declaration of nullity may be granted\"."
+    },
+    {
+      "chapter": 10,
+      "place": "question 3",
+      "claim": "Orthodox practice permits remarriage after divorce as a pastoral concession.",
+      "basis": "Wikipedia, \"Christian views on divorce\": the Eastern Orthodox Churches \"permit remarriage in Church\"."
+    },
+    {
+      "chapter": 10,
+      "place": "question 5",
+      "claim": "Children in that society had no legal or social standing.",
+      "basis": "A characterisation. Not checked."
+    },
+    {
+      "chapter": 10,
+      "place": "question 10",
+      "claim": "James was the first apostle executed; John was exiled.",
+      "basis": "Hosted Acts 12:2 and Revelation 1:9. Worded as tradition."
+    },
+    {
+      "chapter": 10,
+      "place": "question 11",
+      "claim": "'Many' can be a Semitic idiom for a great number (inclusive).",
+      "basis": "Worded as a question readers argue. Not checked."
+    },
+    {
+      "chapter": 10,
+      "place": "glossary: Eternal life",
+      "claim": "'Eternal life' then meant life in the age to come.",
+      "basis": "Hosted Mark 10:30: \"in the age to come eternal life\"."
+    },
+    {
+      "chapter": 11,
+      "place": "question 2",
+      "claim": "Hosanna had shifted from a plea to a festival shout of praise.",
+      "basis": "Hosted Psalm 118:25. Thayer's, Greek 5614: \"save, I pray\". Strong's: \"an exclamation of adoration\". Mishnah Sukkah 4:5."
+    },
+    {
+      "chapter": 11,
+      "place": "question 2",
+      "claim": "Psalm 118 was sung at the great festivals (the Hallel).",
+      "basis": "Mishnah Pesachim 5:7: the people \"would recite hallel\"."
+    },
+    {
+      "chapter": 11,
+      "place": "glossary: Hosanna",
+      "claim": "Hosanna had become a festival shout of praise.",
+      "basis": "Same as question 2."
+    },
+    {
+      "chapter": 11,
+      "place": "glossary: Chief priests",
+      "claim": "The chief priests were a temple aristocracy headed by the high priest.",
+      "basis": "Thayer's, Greek 749."
+    },
+    {
+      "chapter": 12,
+      "place": "question 10",
+      "claim": "Descendants honoured ancestors, never the reverse.",
+      "basis": "Hosted Exodus 20:12. The general statement was not otherwise checked."
+    },
+    {
+      "chapter": 13,
+      "place": "question 4",
+      "claim": "Roman standards entered the temple in AD 70; Caligula ordered his statue installed.",
+      "basis": "Josephus, War 6.6.1: \"brought their ensigns to the temple\"; War 2.10.1: \"to place his statues in the temple\"."
+    },
+    {
+      "chapter": 13,
+      "place": "question 8",
+      "claim": "A generation is about forty years.",
+      "basis": "Hosted Numbers 32:13."
+    },
+    {
+      "chapter": 14,
+      "place": "question 5",
+      "claim": "Catholic teaching is transubstantiation.",
+      "basis": "Wikipedia, \"Eucharistic theology\"."
+    },
+    {
+      "chapter": 14,
+      "place": "question 5",
+      "claim": "Orthodox tradition affirms a real change but does not define the mechanism.",
+      "basis": "Wikipedia, \"Eucharistic theology\"."
+    },
+    {
+      "chapter": 14,
+      "place": "question 5",
+      "claim": "Lutherans hold Christ truly present in and with the elements.",
+      "basis": "Wikipedia, \"Eucharistic theology\" (from a summary of the page)."
+    },
+    {
+      "chapter": 14,
+      "place": "question 5",
+      "claim": "Reformed traditions hold a spiritual presence received by faith.",
+      "basis": "Wikipedia, \"Eucharistic theology\": \"received ... only by those partakers who have faith\"."
+    },
+    {
+      "chapter": 14,
+      "place": "question 5",
+      "claim": "Zwingli read the Supper as a memorial.",
+      "basis": "Wikipedia, \"Eucharistic theology\": memorialism, \"Zwinglianism\"."
+    },
+    {
+      "chapter": 14,
+      "place": "question 10",
+      "claim": "A long-standing guess identifies the young man as Mark himself.",
+      "basis": "Wikipedia, \"Naked fugitive\": many have proposed John Mark."
+    },
+    {
+      "chapter": 15,
+      "place": "question 1",
+      "claim": "Under Rome the council could not carry out a death sentence itself.",
+      "basis": "Hosted John 18:31."
+    },
+    {
+      "chapter": 15,
+      "place": "question 3",
+      "claim": "No source outside the gospels records the Passover release custom.",
+      "basis": "Wikipedia, \"Barabbas\": \"not recorded in any historical document other than the gospels\". The page also notes hints in rabbinic sources."
+    },
+    {
+      "chapter": 15,
+      "place": "question 9",
+      "claim": "Quoting a psalm's first line invoked the whole psalm.",
+      "basis": "Worded as what others point out. Not checked."
+    },
+    {
+      "chapter": 16,
+      "place": "question 7",
+      "claim": "White clothing is the standard marker of an angel.",
+      "basis": "Hosted John 20:12 and Acts 1:10."
+    },
+    {
+      "chapter": 16,
+      "place": "glossary: The first day of the week",
+      "claim": "The Sabbath ran from Friday evening to Saturday evening.",
+      "basis": "Hosted Leviticus 23:32: \"from evening to evening\"."
+    }
+  ]
+}

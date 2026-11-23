@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { releaseAim, releaseFire, resetShooterInput } from '@/game/combat';
+import { SHIELD } from '@/game/commands';
 import { runtime } from '@/game/runtime';
 import { useGame } from '@/game/store';
 import { touchCapable, touchMode } from '@/game/pointerMode';
@@ -45,8 +46,10 @@ export function useShooterInput(options?: { unlock?: () => void }) {
     const lock = () => {
       if (document.pointerLockElement) return;
       releaseFire(s, 'click');
+      s.input.shield &= ~SHIELD.mouse;
       if (useGame.getState().desktopMode === 'mouse') releaseAim(s);
     };
+    const blur = () => { s.input.shield &= ~(SHIELD.mouse | SHIELD.keys); };
     // Desktop only, decided when the event fires (last pointer type): iPhone Safari fires gesturestart for any second finger,
     // which would drop a two-thumb Fire hold; an iPad with a trackpad still gets the desktop reset.
     const zoom = () => { if (touchMode()) return; if (on() && s.input.touchId === null) resetShooterInput(s); };
@@ -57,12 +60,15 @@ export function useShooterInput(options?: { unlock?: () => void }) {
     window.addEventListener('mousedown', mousedown, cap); window.addEventListener('mouseup', mouseup, cap);
     window.addEventListener('pointerup', pointerup, cap); document.addEventListener('pointerlockchange', lock);
     window.addEventListener('wheel', wheel, passive); window.addEventListener('gesturestart', zoom);
+    window.addEventListener('blur', blur);
     return () => {
       window.removeEventListener('keydown', keydown); window.removeEventListener('keyup', keyup);
       window.removeEventListener('pointerdown', pointerdown, cap); window.removeEventListener('pointermove', pointermove, passive);
       window.removeEventListener('mousedown', mousedown, cap); window.removeEventListener('mouseup', mouseup, cap);
       window.removeEventListener('pointerup', pointerup, cap); document.removeEventListener('pointerlockchange', lock);
       window.removeEventListener('wheel', wheel, passive); window.removeEventListener('gesturestart', zoom);
+      window.removeEventListener('blur', blur);
+      s.input.shield &= ~(SHIELD.mouse | SHIELD.keys);
       resetShooterInput(s);
     };
   }, []);

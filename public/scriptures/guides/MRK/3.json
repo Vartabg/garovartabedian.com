@@ -104,7 +104,7 @@
     {
       "id": "q3",
       "question": "Who are the Herodians, and why does it matter that the Pharisees teamed up with them?",
-      "answer": "Supporters of Herod Antipas, the Rome-appointed ruler of Galilee — a political faction, not a religious one. The Pharisees were a devout renewal movement with no love for Herod's court. These two groups had little reason to cooperate on anything. Mark's point in putting them in the same sentence is that Jesus has managed to unite people who agree on nothing else.",
+      "answer": "Supporters of Herod Antipas, the Rome-appointed ruler of Galilee — usually taken as a political group, not a religious one. The Pharisees prized exact knowledge of the law, and Josephus says more than six thousand of them refused an oath of loyalty under Herod the Great (Antiquities 17.2.4). These two groups had little reason to cooperate on anything. Mark's point in putting them in the same sentence is that Jesus has managed to unite people who agree on nothing else.",
       "verseRefs": [
         "3:6"
       ],
@@ -116,7 +116,7 @@
     {
       "id": "q4",
       "question": "Why twelve? Is the number meaningful?",
-      "answer": "Almost certainly. Israel was founded as twelve tribes, and by this period most of them had long since been scattered. Appointing exactly twelve men reads as a deliberate claim: this is Israel being restarted. Mark doesn't spell that out, but the number would not have been lost on his sources.",
+      "answer": "Most readers think so. Israel was founded as twelve tribes, and by this period most of them had long since been scattered. Appointing exactly twelve men reads as a deliberate claim: this is Israel being restarted. Mark doesn't spell that out, but the number would not have been lost on his sources.",
       "verseRefs": [
         "3:13",
         "3:14",
@@ -148,7 +148,7 @@
     {
       "id": "q6",
       "question": "Who or what is Beelzebul?",
-      "answer": "A name for the prince of demons — Satan, in the scribes' usage here. It appears to derive from an old title meaning something like 'lord of the high place' or, in a mocking variant, 'lord of the flies,' attached to a Philistine god (2 Kings 1:2). The charge is not that Jesus is a fraud. They concede the exorcisms are real and argue about the source of the power.",
+      "answer": "A name for the prince of demons — Satan, in the scribes' usage here. The name goes back to Baal Zebub, the god of Ekron (2 Kings 1:2). Its meaning is disputed: 'lord of flies' and 'lord of dung' are both proposed. The charge is not that Jesus is a fraud. They concede the exorcisms are real and argue about the source of the power.",
       "verseRefs": [
         "3:22"
       ],
@@ -180,7 +180,7 @@
     {
       "id": "q8",
       "question": "What is the unforgivable sin, and should I be worried I've committed it?",
-      "answer": "Verses 28-29 have frightened readers for centuries, so start with what Mark actually attaches it to: verse 30 says he said this 'because they said, He has an unclean spirit.' The sin in view is looking directly at God's Spirit at work — a man freed, a hand restored — and calling it the work of the devil. It is not a swear word, a doubt, or a season of unbelief. It is the settled decision to name good as evil, which by its nature will not seek forgiveness. Readers across traditions have generally observed that anxiety about having committed it is itself evidence to the contrary.",
+      "answer": "Verses 28-29 have frightened readers for centuries, so start with what Mark actually attaches it to: verse 30 says he said this 'because they said, He has an unclean spirit.' The sin in view is looking directly at God's Spirit at work — a man freed, a hand restored — and calling it the work of the devil. It is not a swear word, a doubt, or a season of unbelief. Many readers take it as the settled decision to name good as evil, which by its nature will not seek forgiveness. Readers across traditions have generally observed that anxiety about having committed it is itself evidence to the contrary.",
       "verseRefs": [
         "3:28",
         "3:29",
@@ -233,7 +233,7 @@
   "glossary": [
     {
       "term": "Herodians",
-      "def": "Backers of Herod Antipas, Rome's client ruler in Galilee. A political faction rather than a religious party."
+      "def": "Backers of Herod Antipas, Rome's client ruler in Galilee. Usually taken as a political group rather than a religious party."
     },
     {
       "term": "Boanerges",
@@ -245,7 +245,7 @@
     },
     {
       "term": "Iscariot",
-      "def": "The surname of Judas. Most likely 'man of Kerioth,' a Judean town, which would make him the only non-Galilean of the Twelve."
+      "def": "The surname of Judas. Probably 'man of Kerioth,' a town in Judah (Joshua 15:25)."
     },
     {
       "term": "Idumaea",
@@ -253,9 +253,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "c23ac9c5d9e4bb7bff9267bd3ef56e01e20d1929cb21fbba3a52aba3a1efe7c9",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

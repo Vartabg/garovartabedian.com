@@ -15,7 +15,12 @@ import { useTrackpadWindow } from './trackpadWindow';
 type Press = { id: number; x: number; y: number; dragged: boolean; stoppedFlight: boolean; fire: boolean };
 type Live = ReturnType<typeof useGame.getState>;
 const hoverEnv = (g: Live) => ({ shooter: g.shooter, started: g.started, paused: g.paused, desktopMode: g.desktopMode, steering: g.trackpadSteering, touch: touchMode() });
-const captureError = () => useGame.setState({ message: 'Mouse capture is unavailable. Pause, then choose Cursor in Controls to continue.' });
+const DRAG_LOOK_PX = 5;
+function requestCanvasLock() {
+  const canvas = document.querySelector('canvas');
+  if (!canvas?.requestPointerLock) return;
+  try { void Promise.resolve(canvas.requestPointerLock()).catch(() => {}); } catch { /* drag-look remains active */ }
+}
 export function useTrackpad(surface: RefObject<HTMLDivElement | null>) {
   // seen: last holds the real cursor position (false after the pointer leaves or play resumes, so the first move only seeds it).
   const press = useRef<Press | null>(null), last = useRef({ x: 0, y: 0 }), seen = useRef(false);
@@ -53,14 +58,12 @@ export function useTrackpad(surface: RefObject<HTMLDivElement | null>) {
     };
     // Desktop only, decided when the event fires: iPhone Safari fires gesturestart for any second finger (two-thumb play).
     const zoom = () => { if (touchMode()) return; if (['flow', 'simple'].includes(useGame.getState().trackpadSteering)) brakeFlow(); halt(); };
-    const error = () => { if (useGame.getState().desktopMode === 'mouse') captureError(); };
     element.addEventListener('wheel', wheel, { passive: false });
     element.addEventListener('gesturestart', zoom);
-    document.addEventListener('pointerlockerror', error);
     return () => {
       unsubscribe();
       element.removeEventListener('wheel', wheel); element.removeEventListener('gesturestart', zoom);
-      document.removeEventListener('pointerlockerror', error); stopTrackpad(); dropPress();
+      stopTrackpad(); dropPress();
     };
   }, [surface, paused, halt, dropPress]);
   const start = (e: PointerEvent<HTMLDivElement>) => {
@@ -68,11 +71,10 @@ export function useTrackpad(surface: RefObject<HTMLDivElement | null>) {
     if (isFlow()) { flow.start(e); return; }
     if (e.button !== 0 || e.ctrlKey || e.metaKey || useGame.getState().paused) return;
     if (useGame.getState().desktopMode === 'mouse') {
-      if (!document.pointerLockElement) {
-        const canvas = document.querySelector('canvas');
-        if (!canvas?.requestPointerLock) captureError();
-        else { try { canvas.requestPointerLock()?.catch(captureError); } catch { captureError(); } }
-      }
+      if (document.pointerLockElement) return;
+      press.current = { id: e.pointerId, x: e.clientX, y: e.clientY, dragged: false, stoppedFlight: false, fire: false };
+      last.current = { x: e.clientX, y: e.clientY }; seen.current = true;
+      try { e.currentTarget.setPointerCapture(e.pointerId); } catch { /* optional capture */ }
       return;
     }
     if (document.pointerLockElement === e.currentTarget) { recordGesture('brake'); halt(); return; }
@@ -90,7 +92,17 @@ export function useTrackpad(surface: RefObject<HTMLDivElement | null>) {
   const move = (e: PointerEvent<HTMLDivElement>) => {
     if (isSimple()) { simple.move(e); return; }
     if (isFlow()) { flow.move(e); return; }
-    if (useGame.getState().desktopMode !== 'trackpad' || useGame.getState().paused) return;
+    const state = useGame.getState();
+    if (state.paused) return;
+    if (state.desktopMode === 'mouse') {
+      if (document.pointerLockElement) return;
+      const p = press.current;
+      if (!p || p.id !== e.pointerId) return;
+      if (!p.dragged && Math.hypot(e.clientX - p.x, e.clientY - p.y) >= DRAG_LOOK_PX) p.dragged = true;
+      if (p.dragged) look(e.clientX - last.current.x, e.clientY - last.current.y, state.lookSensitivity, state.invertY);
+      last.current = { x: e.clientX, y: e.clientY };
+      return;
+    }
     if (document.pointerLockElement === e.currentTarget) return;
     if (runtime.trackpad.active) return; // the window listener steers the cruise (trackpadWindow.ts)
     if (!seen.current) { seen.current = true; last.current = { x: e.clientX, y: e.clientY }; }
@@ -101,7 +113,7 @@ export function useTrackpad(surface: RefObject<HTMLDivElement | null>) {
       // A drag only ever looks: the press no longer fires on release.
       p.dragged = true; p.fire = false;
     }
-    if (p.dragged) look(e.clientX - last.current.x, e.clientY - last.current.y);
+    if (p.dragged) look(e.clientX - last.current.x, e.clientY - last.current.y, state.lookSensitivity, state.invertY);
     recordGesture('steer', { deltaX: e.clientX - last.current.x, deltaY: e.clientY - last.current.y });
     last.current = { x: e.clientX, y: e.clientY };
   };
@@ -110,19 +122,26 @@ export function useTrackpad(surface: RefObject<HTMLDivElement | null>) {
     if (isFlow()) { flow.end(e); return; }
     const p = press.current; if (!p || p.id !== e.pointerId) return;
     press.current = null;
-    if (p.fire) { if (!useGame.getState().paused && useGame.getState().shooter) tapShot(runtime.shooter); }
-    else if (!p.dragged && !p.stoppedFlight && !useGame.getState().paused && useGame.getState().desktopMode === 'trackpad') {
-      if (useGame.getState().trackpadSteering === 'captured') capture.request(); else startTrackpad();
-    }
     if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId);
+    const state = useGame.getState();
+    if (state.desktopMode === 'mouse') {
+      // Release pointer capture first (WebKit/Safari compatibility), then lock on a clean short click.
+      if (!p.dragged && !state.paused && !document.pointerLockElement) requestCanvasLock();
+      return;
+    }
+    if (p.fire) { if (!state.paused && state.shooter) tapShot(runtime.shooter); }
+    else if (!p.dragged && !p.stoppedFlight && !state.paused && state.desktopMode === 'trackpad') {
+      if (state.trackpadSteering === 'captured') capture.request(); else startTrackpad();
+    }
   };
   // Releasing a completed click loses capture too; that must not cancel its new cruise. Leaving the scene while cruising (the header,
   // or off the window) never brakes: the window listener keeps steering. A press (drag-look) that leaves still halts.
   const leave = () => {
+    if (useGame.getState().desktopMode === 'mouse') { dropPress(); seen.current = false; return; }
     if (runtime.trackpad.active && !press.current) return;
     seen.current = false; if (!document.pointerLockElement && !isFlow() && !isSimple()) halt();
   };
   return { start, move, end, leave,
-    cancel: () => { if (isSimple()) simple.cancel(); else if (isFlow()) flow.cancel(); else halt(); },
-    lostCapture: () => { if (isSimple()) simple.lostCapture(); else if (isFlow()) flow.lostCapture(); else if (press.current) halt(); } };
+    cancel: () => { if (isSimple()) simple.cancel(); else if (isFlow()) flow.cancel(); else if (useGame.getState().desktopMode === 'mouse') dropPress(); else halt(); },
+    lostCapture: () => { if (isSimple()) simple.lostCapture(); else if (isFlow()) flow.lostCapture(); else if (press.current) { if (useGame.getState().desktopMode === 'mouse') dropPress(); else halt(); } } };
 }

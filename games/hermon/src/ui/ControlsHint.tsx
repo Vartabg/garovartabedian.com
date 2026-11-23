@@ -30,7 +30,9 @@ export default function ControlsHint({ coarse }: { coarse: boolean }) {
   const shooter = useGame(s => s.shooter), tapControls = useGame(s => s.tapControls), desktopMode = useGame(s => s.desktopMode),
     steering = useGame(s => s.trackpadSteering), autoFire = useGame(s => s.autoFire), progress = useGame(s => s.hintProgress),
     scheme = useGame(s => s.touchScheme);
-  const track = hintTrack({ shooter, coarse, tapControls, desktopMode, steering, scheme });
+  const track = !coarse && desktopMode === 'mouse' && !tapControls
+    ? 'none'
+    : hintTrack({ shooter, coarse, tapControls, desktopMode, steering, scheme });
   const series = track === 'touch' || track === 'simple' || track === 'mouse' ? track : null;
   const [captured, setCaptured] = useState(isLocked), [said, setSaid] = useState(''), [, rerender] = useState(0);
   // A fresh mount (every Resume) shows a 6 s line again until the first takeoff of this page load.

@@ -62,6 +62,13 @@ test("Space flips the first table and the passage can be barred before the court
   }
   await expect(page.getByRole("heading", { level: 2, name: "A house of prayer" })).toBeVisible();
   await expect(targets.getByRole("button", { disabled: true })).toHaveCount(6);
+  const teachingCard = page.locator(".court-teaching");
+  const teachButton = page.getByRole("button", { name: "Teach", exact: true });
+  await expect(teachButton).toBeEnabled();
+  await teachButton.press("Enter");
+  await expect(teachingCard.getByText(/den of robbers/i)).toBeVisible();
+  await teachButton.press("Enter");
+  await expect(teachingCard.getByText(/multitude was astonished/i)).toBeVisible();
   await page.getByRole("button", { name: "Play again" }).press("Enter");
   await expect(progress(page, 0)).toBeVisible();
   await expect(page.getByRole("button", { name: "Flip table", exact: true })).toBeEnabled();
@@ -79,6 +86,21 @@ test("the passage can be barred after the last seat is overturned", async ({ pag
   await expect(teaching).toBeHidden();
   await targets.getByRole("button", { name: /^East passage/i }).click();
   await expect(teaching).toBeVisible({ timeout: 15_000 });
+
+  // Complete Act II (healing and answering scribes) and Act III (evening departure).
+  for (const name of [/^Lame visitor/i, /^Blind visitor/i, /^Chief priests and scribes/i]) {
+    const btn = targets.getByRole("button", { name });
+    await btn.click();
+    await expect(btn).toBeDisabled({ timeout: 15_000 });
+  }
+  await expect(page.getByText("Evening", { exact: true })).toBeVisible();
+  const eastArch = targets.getByRole("button", { name: /^East archway \(evening\)/i });
+  await eastArch.click();
+  await expect(page.getByRole("heading", { level: 2, name: "Evening" })).toBeVisible({ timeout: 15_000 });
+  await expect(page.locator(".court-teaching").getByText(/went out of the city/i)).toBeVisible();
+  await page.getByRole("button", { name: "Play again" }).click();
+  await expect(progress(page, 0)).toBeVisible();
+  await expect(page.getByRole("button", { name: "Flip table", exact: true })).toBeEnabled();
 });
 
 test.describe("the game index without JavaScript", () => {

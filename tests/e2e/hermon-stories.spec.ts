@@ -29,9 +29,22 @@ test("both Hermon modes launch from scoped assets without the former domain", as
     if (pathname.startsWith("/play/hermon/") && response.status() >= 400) misplaced.push(pathname);
   });
 
-  await page.goto("/play/hermon?shooter=0");
+  await page.goto("/play/hermon");
   await page.getByRole("button", { name: "Ascend Mount Hermon" }).click({ timeout: 40_000 });
+  // Calm flight-first launch: no Watchers battle HUD or 8-mode lab button on desktop by default.
+  await expect(page.getByTestId("battle-hud")).toHaveCount(0);
+  await expect(page.getByTestId("controls-trigger")).toHaveCount(0);
   await page.keyboard.press("Space");
+  await expect(page.getByTestId("flight-telemetry")).toHaveAttribute("data-flying", "true");
+  // Hold W to accelerate with full momentum flight.
+  await page.keyboard.down("KeyW");
+  await page.waitForTimeout(700);
+  await page.keyboard.up("KeyW");
+  const speed = Number(await page.getByTestId("flight-telemetry").getAttribute("data-speed"));
+  expect(speed).toBeGreaterThan(5);
+  // Opt into the Watchers' battle cleanly mid-flight without losing flight state.
+  await page.getByRole("button", { name: "Watchers", exact: true }).click();
+  await expect(page.getByTestId("battle-hud")).toBeVisible({ timeout: 20_000 });
   await expect(page.getByTestId("flight-telemetry")).toHaveAttribute("data-flying", "true");
   await page.keyboard.press("Escape");
   await expect(page.getByRole("heading", { name: "Take your time." })).toBeVisible();

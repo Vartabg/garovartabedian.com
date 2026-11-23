@@ -114,7 +114,7 @@
     {
       "id": "q4",
       "question": "Why send them out with nothing?",
-      "answer": "The packing list is severe — a staff and sandals, no bread, no bag, no money, one tunic. Practically it forces dependence on hospitality, which was a strong social obligation in that culture, and it means every town has to decide whether to receive them. It also strips out anything that would make them look like travelling philosophers making a living from lectures. They arrive with nothing to sell.",
+      "answer": "The packing list is severe — a staff and sandals, no bread, no bag, no money, one tunic. Practically it forces dependence on hospitality, which was a strong social obligation in that culture, and it means every town has to decide whether to receive them. They arrive with nothing to sell.",
       "verseRefs": [
         "6:8",
         "6:9",
@@ -130,7 +130,7 @@
     {
       "id": "q5",
       "question": "What does shaking the dust off your feet mean?",
-      "answer": "A recognized gesture of separation. Travellers returning from Gentile territory were said to shake off its dust before re-entering the land, so doing it as you leave a Jewish town is pointed: you have placed yourselves outside. It is a public statement that the matter has been put to them and they declined, and that the responsibility now rests with them. Note it is a departure, not a threat carried out — they leave rather than argue.",
+      "answer": "A gesture of separation. Verse 11 calls it 'a testimony against them.' It is a public statement that the matter has been put to them and they declined, and that the responsibility now rests with them. Note it is a departure, not a threat carried out — they leave rather than argue.",
       "verseRefs": [
         "6:11"
       ],
@@ -174,7 +174,7 @@
     {
       "id": "q8",
       "question": "Which Herod is this? There seem to be several.",
-      "answer": "There are, and they are easy to confuse. Herod the Great, who ruled at Jesus's birth, died around 4 BC. This is his son Herod Antipas, ruler of Galilee and Perea for Rome — the one who executed John and who appears again at Jesus's trial in Luke. A different son, Philip, is named here as Herodias's first husband. The family kept recycling the name, which is why the gospels usually add a detail to say which one they mean.",
+      "answer": "There are, and they are easy to confuse. Herod the Great, who ruled at Jesus's birth, died in 4 BC on the usual dating (1 BC on another). This is his son Herod Antipas, ruler of Galilee and Perea for Rome — the one who executed John and who appears again at Jesus's trial in Luke. A different son, Philip, is named here as Herodias's first husband. The family kept recycling the name, which is why the gospels usually add a detail to say which one they mean.",
       "verseRefs": [
         "6:14",
         "6:17"
@@ -202,7 +202,7 @@
     {
       "id": "q10",
       "question": "Why does it say twelve baskets left over? Is the number meaningful?",
-      "answer": "Almost certainly. Twelve is the number of the tribes of Israel and of the men he had just sent out — and this feeding happens on the Jewish side of the lake. In chapter 8 he feeds four thousand on the Gentile side and there are seven baskets left. Mark makes the disciples recite both numbers back to him in 8:19-20, which is a strong signal that he wants the reader counting.",
+      "answer": "Many readers think so. Twelve is the number of the tribes of Israel and of the men he had just sent out, and this feeding is usually placed on the Jewish side of the lake. In chapter 8 he feeds four thousand, usually placed on the Gentile side (7:31), and there are seven baskets left. Mark makes the disciples recite both numbers back to him in 8:19-20, which is a strong signal that he wants the reader counting.",
       "verseRefs": [
         "6:43",
         "6:44"
@@ -255,7 +255,10 @@
     },
     {
       "term": "Denarius",
-      "def": "A Roman silver coin, about a day's pay for a labourer. The measure the disciples reach for when estimating the impossible."
+      "def": "A Roman silver coin, about a day's pay for a labourer. The measure the disciples reach for when estimating the impossible.",
+      "verses": [
+        "6:37"
+      ]
     },
     {
       "term": "Fourth watch",
@@ -267,9 +270,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "2c160c51f0f7b5992e3fef07c518295e09dd48d82a226757cc8b627f79d12753",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

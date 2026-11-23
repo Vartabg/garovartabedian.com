@@ -117,7 +117,7 @@
     {
       "id": "q4",
       "question": "What does 'the Kingdom of God is at hand' actually mean?",
-      "answer": "Not a place you go when you die, and not a political state. It means God's rule breaking into the present — the world starting to run the way it was meant to. 'At hand' means close enough to touch. His hearers were waiting for God to act decisively in history, and he is telling them the waiting is over. That is why the sentence lands as news rather than advice.",
+      "answer": "Most readers take it as God's rule breaking into the present — the world starting to run the way it was meant to — and not a place you go when you die or a political state. 'At hand' means close enough to touch. His hearers were waiting for God to act decisively in history, and he is telling them the waiting is over. That is why the sentence lands as news rather than advice.",
       "verseRefs": [
         "1:14",
         "1:15"
@@ -165,7 +165,7 @@
     {
       "id": "q7",
       "question": "Why does Jesus silence the demon for saying something true?",
-      "answer": "This is the first of many gag orders in Mark (1:25, 1:34, 1:44, 3:12, 5:43, 7:36, 8:30, 9:9), and scholars call the pattern the messianic secret. Read from inside the book: the crowds already treat him as a miracle-worker and would happily make him a rebel king, and once that label sticks the actual mission — dying — becomes impossible to explain. A true statement can still be the wrong statement at the wrong moment.",
+      "answer": "This is the first of many gag orders in Mark (1:25, 1:34, 1:44, 3:12, 5:43, 7:36, 8:30, 9:9), and scholars call the pattern the messianic secret. One common reading: the crowds already treat him as a miracle-worker and would happily make him a rebel king, and once that label sticks the actual mission — dying — becomes impossible to explain. A true statement can still be the wrong statement at the wrong moment.",
       "verseRefs": [
         "1:25",
         "1:34"
@@ -222,7 +222,7 @@
   "glossary": [
     {
       "term": "Gospel / Good News",
-      "def": "In ordinary Greek, the announcement of a victory or the arrival of a ruler — a herald's word, not originally a religious one. Mark uses it for the news about Jesus, and it later became the name for books like this."
+      "def": "In ordinary Greek, good news. An inscription from 9 BC uses the word for the birthday of the emperor Augustus. Mark uses it for the news about Jesus, and it later became the name for books like this."
     },
     {
       "term": "Repent",
@@ -238,7 +238,7 @@
     },
     {
       "term": "Scribes",
-      "def": "Professional experts in the law who could read, write, and rule on legal questions. Their authority came from citing tradition — which is exactly the contrast being drawn in verse 22."
+      "def": "Professional experts in the law who could read, write, and rule on legal questions. Verse 22 sets their teaching against his: he taught 'as having authority, and not as the scribes.'"
     },
     {
       "term": "Leper / leprosy",
@@ -246,9 +246,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "6bacae3cc6f0109e0478ad43c0276d3684f33505d4fcfb09863a6ff74aa3883b",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

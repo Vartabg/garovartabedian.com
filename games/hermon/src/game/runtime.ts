@@ -3,13 +3,14 @@ import { SPEED, START, moving, setVec, type Intent } from './motion';
 import { useGame } from './store';
 import { flowSpeed, type CaptureState } from './flowFlight';
 import { aimGain, createShooter, engaged, resetShooterInput, releaseFire } from './combat';
+import { SHIELD } from './commands';
 import { clearGesture, gesture } from './gesture/bus';
 import type { LimitCue } from './limitCue';
 import { gestureIntent, type GestureIntentOut } from './gesture/applyGesture';
 // The landing page imports this module, so vectors stay plain objects and three.js is imported for types only; a value import would load the 3D bundle with the page.
 export const runtime = {
   position: { ...START }, velocity: { x: 0, y: 0, z: 0 },
-  yaw: 0, pitch: -0.12, surge: false, lift: false, reset: false,
+  yaw: 0, pitch: -0.12, surge: false, lift: false, land: false, keyDescendUsed: false, reset: false,
   poseEpoch: 0, cameraDistance: 0,
   turn: { lateral: 0, guard: 0 },
   clearance: { active: false, cue: '' as LimitCue, point: { x: 0, y: 0, z: 0 }, normal: { x: 0, y: 1, z: 0 } },
@@ -49,14 +50,21 @@ const labIntent: GestureIntentOut = { forward: 0, strafe: 0, vertical: 0, precis
  * Keys, thumbs, sticks, tap pad and trackpad, plus the Gesture Lab's intent (spec 2.8: added only while live or with no landGoal,
  * precise only while live). Any movement from the other sources sets gesture.override, so a lab scheme drops its path or program.
  */
+export function desktopDescendHeld(): boolean {
+  const k = runtime.keys;
+  return k.has('KeyF') || k.has('ControlLeft') || k.has('ControlRight');
+}
 export function readIntent(): Intent {
   const k = runtime.keys, st = runtime.stick;
-  const profile = useGame.getState().trackpadSteering;
+  const gState = useGame.getState();
+  const profile = gState.trackpadSteering;
   const flow = runtime.trackpad.active && profile === 'flow';
   const cruise = runtime.trackpad.active && profile !== 'simple';
   const forward = Number(k.has('KeyW')) - Number(k.has('KeyS')) + runtime.thumb.throttle + (flow ? runtime.trackpad.selectedSpeed / SPEED.surge : cruise ? runtime.trackpad.throttle : 0) + runtime.tap.forward + st.forward;
   const strafe = Number(k.has('KeyD')) - Number(k.has('KeyA')) + runtime.thumb.strafe + runtime.tap.strafe + st.strafe;
-  const vertical = Number(k.has('KeyR')) - Number(k.has('KeyF')) + runtime.tap.vertical + stickVertical();
+  const keyRise = Number(k.has('KeyR') || (gState.desktopMode === 'mouse' && k.has('Space')));
+  const keyDown = runtime.keyDescendUsed ? 0 : Number(desktopDescendHeld());
+  const vertical = keyRise - keyDown + runtime.tap.vertical + stickVertical();
   const base: Intent = { forward: clamp1(forward), strafe: clamp1(strafe), vertical: clamp1(vertical), ...(flow ? { precise: true as const } : {}) };
   gesture.override = moving(base);
   const g = gestureIntent(runtime.landGoal, labIntent);
@@ -89,7 +97,7 @@ export function clearInput(stop = false, keepShooter = false) {
   if (!keepShooter) resetShooterInput(runtime.shooter);
   runtime.keys.clear(); clearKeyHold(); releaseThumb(); stopTrackpad(); zeroStick();
   runtime.tap = { forward: 0, strafe: 0, vertical: 0 };
-  runtime.surge = false; runtime.lift = false; runtime.landGoal = null; runtime.touchEpoch++;
+  runtime.surge = false; runtime.lift = false; runtime.land = false; runtime.keyDescendUsed = false; runtime.landGoal = null; runtime.touchEpoch++;
   useGame.setState({ landing: false });
   if (stop) setVec(runtime.velocity, 0, 0, 0);
 }
@@ -105,10 +113,11 @@ function zeroStick() {
 export function releaseHeldInput() {
   runtime.keys.clear(); clearKeyHold(); releaseThumb(); zeroStick();
   runtime.tap = { forward: 0, strafe: 0, vertical: 0 };
-  runtime.surge = false; runtime.lift = false;
+  runtime.surge = false; runtime.lift = false; runtime.land = false; runtime.keyDescendUsed = false;
   const s = runtime.shooter;
   if (s.input.fireSource === 'touch' && !s.input.auto) releaseFire(s, 'touch');
   releaseFire(s, 'gesture'); clearGesture();
+  s.input.shield &= ~(SHIELD.keys | SHIELD.mouse);
   s.input.touchId = null;
   runtime.touchEpoch++;
 }
@@ -118,16 +127,18 @@ export function releaseHeldInput() {
  * Notification Center), and a blur from focus moving into an iframe (such as a preview toolbar) is no interruption at all.
  */
 export function releaseKeys() {
-  runtime.keys.clear(); clearKeyHold(); runtime.surge = false;
+  runtime.keys.clear(); clearKeyHold(); runtime.surge = false; runtime.keyDescendUsed = false;
   const s = runtime.shooter;
   if (s.input.fireSource === 'keys') releaseFire(s, 'keys');
+  s.input.shield &= ~SHIELD.keys;
 }
 export function toggleSurge() { runtime.surge = !runtime.surge; }
 /** Look input. The only shooter effect is the ADS zoom gain (1 at blend 0): no aim-assist friction anywhere (Garo 2026-09-26). */
-export function look(dx: number, dy: number, sensitivity = 1) {
+export function look(dx: number, dy: number, sensitivity = 1, invertY = false) {
   const g = aimGain(runtime.shooter.aim.blend);
   runtime.yaw -= dx * g * 0.003 * sensitivity;
-  runtime.pitch = Math.max(-1.3, Math.min(1.25, runtime.pitch - dy * g * 0.003 * sensitivity));
+  const pitchDelta = (invertY ? dy : -dy) * g * 0.003 * sensitivity;
+  runtime.pitch = Math.max(-1.3, Math.min(1.25, runtime.pitch + pitchDelta));
 }
 export function releaseThumb() {
   runtime.thumb = { active: false, throttle: 0, strafe: 0, edgeTurn: 0, edgePitch: 0, bank: 0 };
@@ -160,7 +171,7 @@ export function setFlowThrottle(u: number) {
 /** Neutralize all translation without giving up the view or restarting on button release. */
 export function brakeFlow() {
   runtime.keys.clear(); clearKeyHold(); releaseThumb(); runtime.tap = { forward: 0, strafe: 0, vertical: 0 };
-  runtime.surge = runtime.lift = false; runtime.landGoal = null;
+  runtime.surge = runtime.lift = runtime.land = runtime.keyDescendUsed = false; runtime.landGoal = null;
   setFlowThrottle(0);
   if (runtime.trackpad.capture !== 'idle') runtime.trackpad.brakeEpoch++;
   runtime.trackpad.brakedAt = performance.now();

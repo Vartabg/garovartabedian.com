@@ -1,4 +1,5 @@
 import { pressAim, pressFire, releaseAim, releaseFire, type LookSource, type ShooterState } from '../game/combat';
+import { SHIELD } from '../game/commands';
 // Pure Fire/Aim routing for keyboard and mouse. Presses are gated; releases are not, so a hold can always end.
 export type ShooterEnv = { enabled: boolean; started: boolean; paused: boolean; aimToggle: boolean; desktopMode: 'trackpad' | 'mouse'; steering: string; locked: boolean };
 export type ShooterKey = { code: string; repeat: boolean; metaKey: boolean; ctrlKey: boolean; altKey: boolean; targetTag: string };
@@ -31,7 +32,8 @@ export function keyDown(e: ShooterKey, env: ShooterEnv, s: ShooterState) {
   if (!live(env) || e.metaKey || e.ctrlKey || e.altKey || e.repeat || /^(INPUT|SELECT|TEXTAREA)$/.test(e.targetTag)) return false;
   if (HAND_KEYS.has(e.code)) s.input.lookSource = lookSourceFor('keyboard', env.desktopMode);
   if (e.code === 'KeyC') { pressFire(s, 'keys'); return true; }
-  if (e.code === 'KeyQ') { pressAim(s, env.aimToggle); return true; }
+  // ADS zoom is retired in unified standard desktop flight.
+  if (e.code === 'KeyQ' && env.desktopMode !== 'mouse') { pressAim(s, env.aimToggle); return true; }
   return false;
 }
 export function keyUp(code: string, env: ShooterEnv, s: ShooterState) {
@@ -41,12 +43,15 @@ export function keyUp(code: string, env: ShooterEnv, s: ShooterState) {
 export function mouseDown(button: number, env: ShooterEnv, s: ShooterState) {
   if (!lockedClickFire(env)) return false;
   if (button === 0) { pressFire(s, 'click'); return true; }
-  if (button === 2 && env.desktopMode === 'mouse') { pressAim(s, env.aimToggle); return true; }
+  if (button === 2 && env.desktopMode === 'mouse') { s.input.shield |= SHIELD.mouse; return true; }
   return false;
 }
 export function mouseUp(button: number, env: ShooterEnv, s: ShooterState) {
   if (button === 0) releaseFire(s, 'click');
-  else if (button === 2 && !env.aimToggle) releaseAim(s);
+  else if (button === 2) {
+    s.input.shield &= ~SHIELD.mouse;
+    if (!env.aimToggle) releaseAim(s);
+  }
 }
 /** Touch is always 'touch'; a pen counts as touch only on a touch-capable device (a non-touch desktop treats it as its pointer). */
 export function lookSourceFor(pointerType: string, desktopMode: 'trackpad' | 'mouse', capable = true): LookSource {

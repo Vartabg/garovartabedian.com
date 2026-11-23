@@ -14,6 +14,7 @@ import TerrainLayer from './TerrainLayer';
 import Drift from './Drift';
 import SealedGround from './SealedGround';
 import FlightRush from './FlightRush';
+import TabletBeacons from './TabletBeacons';
 import Battle from './Battle';
 import Banishment from './Banishment';
 import CounterCue from './CounterCue';
@@ -96,11 +97,12 @@ export default function Scene({ onLoss }: { onLoss: () => void }) {
     <directionalLight ref={sun} position={SUN_POSITION} color={SUN_COLOR} intensity={SUN_INTENSITY} castShadow={quality === 'high'}
       shadow-mapSize={[2048, 2048]} shadow-camera-left={-110} shadow-camera-right={110}
       shadow-camera-top={110} shadow-camera-bottom={-110} shadow-camera-far={380} shadow-bias={-.0002} shadow-normalBias={.09} />
-    <Backdrop /><TerrainLayer /><Water /><EdgeRing /><Drift /><SealedGround /><FlightRush />
+    <Backdrop /><TerrainLayer /><Water /><EdgeRing /><Drift /><SealedGround /><FlightRush /><TabletBeacons />
     <Suspense fallback={null}>
       <Physics paused={paused} timeStep={1 / 60} updatePriority={-50} gravity={[0, -22, 0]}>
         <NearMassif /><OuterRanges /><DistrictBoundary /><Player /><FlightPresentation /><Suit /><CameraRig />
-        <ShooterLayer /><LabLayer />
+        <Suspense fallback={null}><ShooterLayer /></Suspense>
+        <LabLayer />
       </Physics>
     </Suspense>
   </Canvas>;

@@ -8,7 +8,7 @@
     "author": "Anonymous; early tradition names Mark, recording Peter's preaching",
     "audience": "Likely Greek-speaking readers outside Judea; Mark keeps 'Rabbi' and explains Gehenna's imagery by quoting Isaiah rather than assuming knowledge",
     "date": "Most scholars say the mid-AD 60s to shortly after 70; earlier dates are defended",
-    "setting": "A high mountain, traditionally identified as Hermon or Tabor, then back through Galilee to Capernaum",
+    "setting": "A high mountain, by tradition Tabor, with Hermon the usual alternative, then back through Galilee to Capernaum",
     "literaryForm": "Narrative with a vision scene, followed by teaching gathered into a chain of linked sayings"
   },
   "outline": [
@@ -263,7 +263,7 @@
     {
       "id": "q12",
       "question": "The salt sayings at the end feel disconnected. What holds them together?",
-      "answer": "They are linked by catchword — fire in verse 49 picks up the fire of the preceding verses, and salt then runs through 49 and 50. This is how sayings were gathered and remembered before books were common, and Mark preserves the chain. The content: salt preserves and seasons, and salt that has lost its distinctiveness has no way to get it back. After a chapter about rank, failure, and severity, the last words are 'be at peace with one another.'",
+      "answer": "They are linked by catchword — fire in verse 49 picks up the fire of the preceding verses, and salt then runs through 49 and 50. This is often explained as the way sayings were gathered and remembered before they were written down, and Mark preserves the chain. The content: salt preserves and seasons, and salt that has lost its distinctiveness has no way to get it back. After a chapter about rank, failure, and severity, the last words are 'be at peace with one another.'",
       "verseRefs": [
         "9:49",
         "9:50"
@@ -278,7 +278,10 @@
   "glossary": [
     {
       "term": "Transfigured",
-      "def": "Changed in form or appearance. Mark's phrasing is that he was changed into another form in front of them — the change is in what they can see, not in who he is."
+      "def": "Changed in form or appearance. Mark's phrasing is that he was changed into another form in front of them — the change is in what they can see, not in who he is.",
+      "verses": [
+        "9:2"
+      ]
     },
     {
       "term": "Rabbi",
@@ -298,9 +301,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "f5d6de4b34bdb22614b4fa52634fd4b513ee93902c9347ee989c24fea1cc9ae7",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

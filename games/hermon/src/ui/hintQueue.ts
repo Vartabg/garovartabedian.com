@@ -9,12 +9,11 @@ export type HintKind = 'message' | 'record' | 'land' | 'limit' | 'blocked' | 'co
 export interface Hint { kind: HintKind; text: string }
 export interface HintInput {
   message: string; flying: boolean; canLand: boolean; limitCue: string; limitHint: string; descendBlocked: boolean;
-  nearTerminal: boolean; coach: Coach | null;
+  nearTerminal: boolean; nearTerminalLabel?: string; coach: Coach | null;
   /** The Controls sheet, the Field guide or Flight settings is open: the slot says nothing under a dialog. */
   hidden: boolean;
 }
-/** The land and no-landing texts are asserted by the browser specs: caps stay. */
-export const LAND_TEXT = 'SURFACE IN REACH · LAND', BLOCKED_TEXT = 'NO LANDING BELOW · MOVE TO OPEN GROUND', RECORD_TEXT = '◇ Tablet record · Read ↗';
+export const LAND_TEXT = 'Flat ground in reach · Press L to land', BLOCKED_TEXT = 'NO LANDING BELOW · MOVE TO OPEN GROUND', RECORD_TEXT = '◇ Tablet record · Read ↗';
 
 /** What Experience used to compute inline for the flight toast, moved as it was: land, a limit cue, no landing below, then a plain limit hint. */
 function flightLine(i: HintInput): Hint | null {
@@ -33,7 +32,7 @@ function flightLine(i: HintInput): Hint | null {
 export function pickHint(i: HintInput): Hint | null {
   if (i.hidden) return null;
   if (i.message) return { kind: 'message', text: i.message };
-  if (i.nearTerminal) return { kind: 'record', text: RECORD_TEXT };
+  if (i.nearTerminal) return { kind: 'record', text: i.nearTerminalLabel ? `◇ ${i.nearTerminalLabel} · Press E to read` : RECORD_TEXT };
   return flightLine(i) ?? (i.coach ? { kind: 'coach', text: i.coach.text } : null);
 }
 
@@ -41,7 +40,7 @@ type Game = ReturnType<typeof useGame.getState>;
 /** The slot's inputs from the store (a pure read, so HintSlot and ControlsHint both ask the same question). */
 export const hintInput = (s: Game): HintInput => ({
   message: s.message, flying: s.flying, canLand: s.canLand, limitCue: s.limitCue, limitHint: s.limitHint, descendBlocked: s.descendBlocked,
-  nearTerminal: s.nearTerminal, coach: s.coach, hidden: s.controlsOpen || s.journal || s.panel,
+  nearTerminal: s.nearTerminal, nearTerminalLabel: s.nearTerminalLabel, coach: s.coach, hidden: s.controlsOpen || s.journal || s.panel,
 });
 /** The slot is covered by a dialog or showing something other than the coach line: the coach's clocks wait (addendum G1). */
 export const slotBusy = (s: Game): boolean => { const i = hintInput(s); return i.hidden || pickHint({ ...i, coach: null }) !== null; };

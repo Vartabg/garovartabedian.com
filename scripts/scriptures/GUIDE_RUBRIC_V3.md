@@ -19,7 +19,26 @@ rejected. A guide that meets guide-v2's limits also meets these.
   transmission claims. Preserve its uncertainty.
 - Treat TSK and Nave matches as routes for comparison, not proof that two texts
   mean the same thing.
-- If a Hebrew or Greek claim is not in the supplied briefing, leave it out.
+- If a Hebrew, Greek, Aramaic or Latin claim is not in the supplied briefing,
+  leave it out.
+- If a claim about history, law, custom or geography is in neither the hosted
+  text nor the supplied briefing, leave it out.
+
+### Claims kept at review
+
+The two rules above bind a draft. A reviewer may keep or add such a claim
+only when the book's source check record names what it rests on. The record
+is the file or files named
+`docs/reviews/<date>-<book name, lower case>-source-check.json`. It is not
+part of the supplied grounding, so a drafter cannot use it.
+
+A kept claim carries its source in the record. Where it helps the reader,
+the sentence also names the source, as in “(Josephus, Antiquities
+17.10.10)”.
+
+No machine check ties a sentence to the record. That a claim is covered is
+the reviewer's judgment, and the record states what the review read and
+what it did not.
 
 ## Shape
 
@@ -49,12 +68,14 @@ reviewer's judgment.
   it.
 - Name meaningful disagreement with phrases such as “readers differ” or
   “interpreters debate,” then state the main options without staging a winner.
+  Where one reading is given alone, say it is a reading, with words such as
+  “most readers take it as” or “on one common reading”.
 - Do not call ritual impurity moral guilt. Do not treat narrative description
   as permission. Do not turn an ancient law into a direct modern policy without
   explaining the historical distance.
 - Avoid invented motives, dates, archaeological claims, scientific claims, and
   claims that “the Hebrew literally means” something unsupported by the
-  grounding.
+  grounding or the book's source check record.
 - Use “Yahweh” when quoting the hosted World English Bible; otherwise “God” is
   usually clearer for a first-time reader.
 

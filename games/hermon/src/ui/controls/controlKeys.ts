@@ -44,6 +44,8 @@ export function useControlKeys() {
   useEffect(() => {
     const keydown = (e: KeyboardEvent) => {
       const g = useGame.getState(), family = currentFamily();
+      // Standard desktop flight retires 1-8 control-lab switching so keys 1-4 stay dedicated to combat.
+      if (family === 'desktop' && g.desktopMode === 'mouse' && g.controlLab === 'standard') return;
       const id = controlKeyFor(e, { started: g.started, panel: g.panel, journal: g.journal }, family, keysEnabled());
       if (!id) return;
       e.preventDefault();

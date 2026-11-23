@@ -47,7 +47,7 @@
     {
       "ref": "2:27",
       "text": "The Sabbath was made for man, not man for the Sabbath.",
-      "why": "A principle for reading every rule in the book — the rule exists to serve people, not the reverse."
+      "why": "Often read as the principle behind the rule disputes in this book — the rule exists to serve people, not the reverse."
     }
   ],
   "themes": [
@@ -107,7 +107,7 @@
     {
       "id": "q4",
       "question": "Why is a tax collector such a scandalous person to recruit?",
-      "answer": "Not because of money handling. Tax collectors in Galilee worked for Herod Antipas and, behind him, Rome — collaborating with the occupying power against their own people — and the system let them keep whatever they squeezed above the quota. The word paired with them, 'sinners,' means people known to be outside the law's requirements. Calling Levi was a public statement about who was welcome, and everyone at that table understood it.",
+      "answer": "Not because of money handling. Tax collectors in Galilee worked for Herod Antipas and, behind him, Rome — collaborating with the occupying power against their own people — and the job was open to collecting more than was due (Luke 3:13). The word paired with them, 'sinners,' was used of people known for a way of life the law condemned. Calling Levi was a public statement about who was welcome, and everyone at that table understood it.",
       "verseRefs": [
         "2:14",
         "2:15",
@@ -191,7 +191,7 @@
     {
       "id": "q10",
       "question": "Who is 'the Son of Man'?",
-      "answer": "It is Jesus's usual way of referring to himself, and it is not modest. In everyday Aramaic the phrase can just mean 'a human being,' but it also reaches back to Daniel 7:13, where 'one like a son of man' comes on the clouds and is given authority over all nations. The phrase lets him make an enormous claim without ever using the word king — useful in a province where claiming kingship got you executed.",
+      "answer": "It is Jesus's usual way of referring to himself, and it is not modest. In the Hebrew scriptures the phrase can just mean 'a human being' (Psalm 8:4), but it also reaches back to Daniel 7:13, where 'one like a son of man' comes on the clouds and is given authority over all nations. The phrase lets him make an enormous claim without ever using the word king — and 'king' is the word on the charge above his cross (15:26).",
       "verseRefs": [
         "2:10",
         "2:28"
@@ -206,15 +206,18 @@
   "glossary": [
     {
       "term": "Blasphemy",
-      "def": "Speech that insults God or claims what belongs to God alone. Under the law it was a capital charge, which is why the accusation here is not a small one."
+      "def": "Speech that insults God or claims what belongs to God alone. Under the law it was a capital charge, which is why the accusation here is not a small one.",
+      "verses": [
+        "2:7"
+      ]
     },
     {
       "term": "Pharisees",
-      "def": "A movement of devout laypeople committed to applying the whole law to daily life, not just temple worship. They were widely respected. In the gospels they are Jesus's most frequent debate partners precisely because they cared enough to argue."
+      "def": "A movement committed to keeping the law in daily life, with observances handed down beside the written law. Josephus says they had the people on their side (Antiquities 13.10.6). In the gospels they are Jesus's most frequent debate partners precisely because they cared enough to argue."
     },
     {
       "term": "Sabbath",
-      "def": "The seventh day, set aside for rest by the fourth commandment. Rest was the command; the disputes were over what counted as work."
+      "def": "The seventh day, set aside for rest by the Sabbath commandment (Exodus 20:8-11). Rest was the command; the disputes were over what counted as work."
     },
     {
       "term": "Show bread",
@@ -226,9 +229,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "Claude Opus 5",
+    "promptHash": "37483500f8d74725e798668379141580cfa7d19ec2b741d369c8a9376a47dd80",
+    "generatedAt": "2026-08-04T15:51:37.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }
