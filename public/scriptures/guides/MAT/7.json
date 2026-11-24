@@ -2,31 +2,35 @@
   "book": "MAT",
   "chapter": 7,
   "bookName": "Matthew",
-  "summary": "The Sermon closes with warnings against hypocritical judgment, a compact saying about what is holy, encouragement to ask the Father, and the golden rule. Jesus then presents choices: two roads, two kinds of prophets, two responses to his name, and two builders. Crowds are astonished because he teaches with authority rather than merely citing other teachers.",
+  "summary": "The Sermon closes with warnings against hypocritical judgment, a compact saying about what is holy, encouragement to ask the Father, and the golden rule. Jesus then presents choices: two roads, two kinds of prophets, two responses to his name, and two builders. Crowds are astonished because he teaches with authority and not like the scribes.",
   "whyItMatters": "Matthew makes ‘doing’ the test of hearing. Discernment remains necessary, but self-examination comes first; prayer trusts the Father's goodness; confession and impressive works cannot replace obedience; and the entire discourse presses toward a built life rather than admiration.",
   "context": {
-    "author": "Anonymous narrator closing the first major discourse",
-    "audience": "Disciples and listening crowds who must practice what they have heard",
-    "date": "Late-first-century Gospel arrangement",
+    "author": "Anonymous narrator, traditionally associated with Matthew, closing the first major discourse",
+    "audience": "Greek-speaking readers, probably Jewish and Gentile; in the scene, disciples and listening crowds who must practice what they have heard",
+    "date": "Commonly dated after AD 70, often to the 80s or 90s; earlier dates are defended",
     "setting": "Conclusion of the mountain teaching",
     "literaryForm": "Wisdom commands, paired images, prophetic warning, and a final parable"
   },
   "outline": [
     {
       "heading": "Judgment, self-examination, and discernment",
-      "verses": "1-6"
+      "verses": "1-6",
+      "note": "The measure you use is used on you; a speck in a brother's eye, a beam in yours; no pearls for pigs"
     },
     {
       "heading": "Ask, seek, knock, and the Father's goodness",
-      "verses": "7-12"
+      "verses": "7-12",
+      "note": "Ask, seek, knock; a son asking for bread is not given a stone; do to others what you want done to you"
     },
     {
       "heading": "Two ways and false prophets",
-      "verses": "13-20"
+      "verses": "13-20",
+      "note": "A narrow gate leads to life, a wide gate to destruction; wolves in sheep's clothing are known by fruit; bad trees burn"
     },
     {
       "heading": "Profession, practice, and two foundations",
-      "verses": "21-29"
+      "verses": "21-29",
+      "note": "Saying 'Lord, Lord' is not enough; the house on rock stands in flood, the house on sand falls; crowds are astonished"
     }
   ],
   "keyVerses": [
@@ -85,7 +89,7 @@
     {
       "id": "q3",
       "question": "Do ‘ask, seek, knock’ guarantee whatever a person requests?",
-      "answer": "The three present imperatives create persistent prayer, and the comparison concerns a Father's good gifts, not a mechanism for controlling outcomes. Matthew places the promise after teaching readers to seek God's name, kingdom, will, bread, forgiveness, and deliverance. ‘Good things’ are governed by the giver's character and the Sermon's priorities.",
+      "answer": "The three commands are present imperatives, often read as urging persistent prayer, and the comparison concerns a Father's good gifts, not a mechanism for controlling outcomes. Matthew places the promise after teaching readers to seek God's name, kingdom, will, bread, forgiveness, and deliverance. ‘Good things’ are governed by the giver's character and the Sermon's priorities.",
       "verseRefs": [
         "7:7",
         "7:9",
@@ -101,7 +105,7 @@
     {
       "id": "q4",
       "question": "Why does the golden rule begin with ‘therefore’?",
-      "answer": "The connective gathers up the Father's generous action and much of the Sermon: recipients of good gifts actively seek another person's good. Unlike a merely negative rule — do not harm — Matthew's wording commands initiative. Jesus then calls it ‘the Law and the Prophets,’ echoing his claim at 5:17.",
+      "answer": "The connective gathers up the Father's generous action and much of the Sermon: recipients of good gifts actively seek another person's good. Unlike a negative rule such as ‘what you yourself hate, do to no man’ (Tobit 4:15), Matthew's wording commands initiative. Jesus then calls it ‘the Law and the Prophets,’ echoing his claim at 5:17.",
       "verseRefs": [
         "7:11",
         "7:12"
@@ -176,9 +180,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "1d6711807423048cf4c9cda606fae663649d6ff77ed81769f15244cc3fb1b8df",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

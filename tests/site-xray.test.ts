@@ -1,8 +1,23 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 import snapshot from "../public/meta/site-xray.json";
 import { assertPublicString, collectSiteXray, literalPaths } from "../scripts/site/build-site-xray.mjs";
 import { xrayFamilyFor } from "../src/lib/site/xray-families.mjs";
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+function walkBuildScripts(directory: string): string[] {
+  const found: string[] = [];
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const target = path.join(directory, entry.name);
+    if (entry.isDirectory()) found.push(...walkBuildScripts(target));
+    else if (entry.isFile() && /^build-.*\.(?:mjs|ts)$/.test(entry.name)) found.push(target);
+  }
+  return found.sort();
+}
 
 test("the public site x-ray snapshot matches the repository", () => {
   // prebuild regenerates the file and the release's generated-source check
@@ -15,6 +30,16 @@ test("the public site x-ray snapshot matches the repository", () => {
   assert.deepEqual(Object.keys(snapshot.worlds), ["scriptures", "jesus", "apostles", "early", "church", "word", "angels", "evidence"]);
   assert.ok(snapshot.worlds.scriptures.publicJson > 1000);
   assert.equal(snapshot.worlds.word.scripts, 0);
+});
+
+test("archived scripts under scripts/archive are excluded from active build script counts", () => {
+  const allBuildScripts = walkBuildScripts(path.join(ROOT, "scripts"));
+  const archivedBuildScripts = walkBuildScripts(path.join(ROOT, "scripts", "archive"));
+  assert.ok(archivedBuildScripts.length >= 1, "expected at least one archived build-*.mjs script");
+  assert.equal(
+    collectSiteXray().counts.buildScripts,
+    allBuildScripts.length - archivedBuildScripts.length,
+  );
 });
 
 test("nothing private can leave the site x-ray builder", () => {

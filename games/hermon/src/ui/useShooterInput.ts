@@ -5,17 +5,16 @@ import { runtime } from '@/game/runtime';
 import { useGame } from '@/game/store';
 import { touchCapable, touchMode } from '@/game/pointerMode';
 import { keyDown, keyUp, lockedClickFire, lookSourceFor, mouseDown, mouseUp, OWN_LOOK_SELECTOR, swallowsPress, type ShooterEnv } from './shooterKeys';
-// A separate listener set (useInput and the trackpad hooks stay untouched). Handlers write runtime.shooter.input only.
-const env: ShooterEnv = { enabled: false, started: false, paused: true, aimToggle: false, desktopMode: 'trackpad', steering: 'free', locked: false };
-/** The single ShooterEnv reader (also used by useSimpleTrackpad). `locked` is any pointer lock: under a lock every pointer event
- * targets the locked element, so when the flight surface receives a press this equals PR #12's `pointerLockElement === surface`. */
+
+const env: ShooterEnv = { enabled: false, started: false, paused: true, aimToggle: false, locked: false };
 export function readEnv() {
   const g = useGame.getState();
   env.enabled = g.shooter; env.started = g.started; env.paused = g.paused; env.aimToggle = g.aimToggle;
-  env.desktopMode = g.desktopMode; env.steering = g.trackpadSteering; env.locked = !!document.pointerLockElement;
+  env.locked = !!document.pointerLockElement;
   return env;
 }
 const ownsLook = (target: EventTarget | null) => !!(target as Element | null)?.closest?.(OWN_LOOK_SELECTOR);
+
 export function useShooterInput(options?: { unlock?: () => void }) {
   const unlock = useRef(options?.unlock);
   useEffect(() => { unlock.current = options?.unlock; });
@@ -27,13 +26,12 @@ export function useShooterInput(options?: { unlock?: () => void }) {
       e.preventDefault(); unlock.current?.();
     };
     const keyup = (e: KeyboardEvent) => keyUp(e.code, readEnv(), s);
-    const tag = (e: PointerEvent) => { if (!ownsLook(e.target)) s.input.lookSource = lookSourceFor(e.pointerType, useGame.getState().desktopMode, touchCapable()); };
+    const tag = (e: PointerEvent) => { if (!ownsLook(e.target)) s.input.lookSource = lookSourceFor(e.pointerType, touchCapable()); };
     const pointerdown = (e: PointerEvent) => {
       if (!on()) return;
       tag(e);
       if (e.pointerType === 'mouse') {
-        // The fire click replaces the simple profile's brake-and-free click; no preventDefault, so mousedown still fires for chords.
-        if (swallowsPress(e, readEnv(), runtime.trackpad.capture === 'requesting')) e.stopPropagation();
+        if (swallowsPress(e, readEnv())) e.stopPropagation();
         if (s.input.touchId !== null) { releaseFire(s, 'touch'); s.input.touchId = null; }
       } else if (e.pointerType === 'touch') {
         if (s.input.fireSource === 'keys' || s.input.fireSource === 'click') releaseFire(s, s.input.fireSource);
@@ -47,11 +45,9 @@ export function useShooterInput(options?: { unlock?: () => void }) {
       if (document.pointerLockElement) return;
       releaseFire(s, 'click');
       s.input.shield &= ~SHIELD.mouse;
-      if (useGame.getState().desktopMode === 'mouse') releaseAim(s);
+      releaseAim(s);
     };
     const blur = () => { s.input.shield &= ~(SHIELD.mouse | SHIELD.keys); };
-    // Desktop only, decided when the event fires (last pointer type): iPhone Safari fires gesturestart for any second finger,
-    // which would drop a two-thumb Fire hold; an iPad with a trackpad still gets the desktop reset.
     const zoom = () => { if (touchMode()) return; if (on() && s.input.touchId === null) resetShooterInput(s); };
     const wheel = (e: WheelEvent) => { if (e.ctrlKey || e.metaKey) zoom(); };
     const cap = { capture: true }, passive = { capture: true, passive: true };

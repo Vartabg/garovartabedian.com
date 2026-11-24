@@ -6,27 +6,31 @@
   "whyItMatters": "Matthew reaches a hinge: the title is right, but its meaning remains dangerously wrong. Confession, community authority, and suffering belong in one scene. The chapter's wordplay has shaped centuries of church debate, so Greek details must clarify the options without pretending they settle every later institutional claim automatically.",
   "context": {
     "author": "Anonymous narrator expanding Peter's confession and marking a major transition",
-    "audience": "Church communities debating authority, identity, suffering, and faithful interpretation",
-    "date": "Late-first-century Gospel composition",
-    "setting": "Galilee and the Gentile-associated district around Caesarea Philippi",
+    "audience": "Probably Jewish and Gentile followers of Jesus, weighing authority, identity, suffering, and faithful interpretation",
+    "date": "Most date it after AD 70, often the 80s or 90s; earlier dates remain defended",
+    "setting": "Across the lake, then the parts of Caesarea Philippi (16:5, 16:13)",
     "literaryForm": "Sign controversy, misunderstanding, confession, promise, passion prediction, and discipleship saying"
   },
   "outline": [
     {
       "heading": "A demanded sign and the yeast misunderstood",
-      "verses": "1-12"
+      "verses": "1-12",
+      "note": "Pharisees and Sadducees ask for a sign and get only Jonah; the disciples forgot bread and hear 'beware of the yeast'"
     },
     {
       "heading": "Peter's confession and Jesus's promises",
-      "verses": "13-20"
+      "verses": "13-20",
+      "note": "At Caesarea Philippi Peter says 'the Son of the living God'; Jesus names him Peter, speaks of a rock and keys"
     },
     {
       "heading": "The suffering Messiah and Satanic resistance",
-      "verses": "21-23"
+      "verses": "21-23",
+      "note": "Jesus says he must go to Jerusalem, suffer, be killed and raised; Peter rebukes him and hears 'Get behind me, Satan'"
     },
     {
       "heading": "Cross-bearing, life, and the Son of Man's coming",
-      "verses": "24-28"
+      "verses": "24-28",
+      "note": "Deny himself and take up his cross; whoever loses life for Jesus finds it; what profit if he 'gains the whole world'"
     }
   ],
   "keyVerses": [
@@ -57,7 +61,7 @@
     {
       "id": "q1",
       "question": "Why is asking for a sign wrong when Jesus has performed signs?",
-      "answer": "The leaders test Jesus and demand a sign ‘from heaven’ on their terms, as if the healings and feedings require a more controllable credential. Jesus calls it failure to interpret ‘the signs of the times.’ The problem is not evidence-seeking itself but a posture that keeps moving the standard after abundant evidence.",
+      "answer": "The leaders test Jesus and demand a sign ‘from heaven’ on their terms, as if the healings and feedings require a more controllable credential. Jesus calls it failure to interpret ‘the signs of the times.’ On one common reading, the problem is not evidence-seeking itself but a posture that keeps moving the standard after abundant evidence.",
       "verseRefs": [
         "16:1",
         "16:3",
@@ -91,7 +95,7 @@
     {
       "id": "q3",
       "question": "What does ‘Christ’ mean here?",
-      "answer": "Christos is Greek for ‘anointed one,’ corresponding to Messiah. In this setting it carries royal and end-time hope, not Jesus's surname. Peter supplies the correct title but rejects Jesus's first explanation of its suffering path, proving that a right word can hold a wrong imagined script.",
+      "answer": "Christos is Greek for ‘anointed one,’ corresponding to Messiah. Most readers take it here to carry royal and end-time hope, not Jesus's surname. Peter supplies the correct title but rejects Jesus's first explanation of its suffering path, proving that a right word can hold a wrong imagined script.",
       "verseRefs": [
         "16:16",
         "16:21",
@@ -107,7 +111,7 @@
     {
       "id": "q4",
       "question": "What is the wordplay between Peter and rock?",
-      "answer": "Greek has Petros for Peter and petra for rock; Jesus likely spoke an Aramaic form kepha that could serve both name and rock. Readers differ over whether the rock is Peter, his confession, Jesus, or Peter-as-confessor. The immediate grammar addresses Peter and gives him a role, while the whole Gospel keeps authority dependent on Jesus and faithful confession.",
+      "answer": "Greek has Petros for Peter and petra for rock; John gives Peter's name in Aramaic as Cephas (John 1:42), but the spoken wording behind this saying cannot be recovered from the Greek. Readers differ over whether the rock is Peter, his confession, Jesus, or Peter-as-confessor. The immediate grammar addresses Peter and gives him a role, while the whole Gospel keeps authority dependent on Jesus and faithful confession.",
       "verseRefs": [
         "16:17",
         "16:18"
@@ -133,7 +137,7 @@
     {
       "id": "q6",
       "question": "What are keys, binding, and loosing?",
-      "answer": "Keys symbolize stewardly authority; binding and loosing can describe forbidding and permitting through interpretation, and later include communal discipline and forgiveness. Greek future-perfect-style wording can be rendered ‘will have been bound in heaven,’ stressing alignment with heavenly decision. Traditions disagree about succession and scope, but the authority is accountable, not autonomous.",
+      "answer": "Keys are often read as a steward's authority (compare Isaiah 22:22); binding and loosing can describe forbidding and permitting, and in chapter 18 they sit beside communal discipline and forgiveness. Greek future-perfect-style wording can be rendered ‘will have been bound in heaven,’ often read as stressing alignment with heavenly decision. Traditions disagree about succession and scope, and many read the authority as accountable, not autonomous.",
       "verseRefs": [
         "16:19"
       ],
@@ -174,7 +178,7 @@
   "glossary": [
     {
       "term": "Messiah / Christ",
-      "def": "Hebrew and Greek forms of ‘anointed one,’ especially a royal title in this scene."
+      "def": "Hebrew and Greek forms of ‘anointed one,’ read here especially as a royal title."
     },
     {
       "term": "Assembly / church",
@@ -182,13 +186,20 @@
     },
     {
       "term": "Hades",
-      "def": "The realm of the dead; ‘gates’ picture death's power, not demons attacking from an entrance."
+      "def": "The realm of the dead; ‘gates’ are usually read as death's power (compare Isaiah 38:10), not demons attacking from an entrance."
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "12b7150268acf1361089c5e79d3493b6288889df00e8d5c7494a261d70d3951a",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

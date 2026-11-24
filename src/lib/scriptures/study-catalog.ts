@@ -37,7 +37,12 @@ const STUDY_GROUPS: readonly StudyGroupSpec[] = [
     id: "stories",
     title: "Read or play a story",
     question: "Where does this story go, without hunting chapter by chapter?",
-    paths: ["/scriptures/stories", "/scriptures/stories/play", "/scriptures/stories/play/overturned-tables"],
+    paths: [
+      "/scriptures/stories",
+      "/scriptures/stories/play",
+      "/scriptures/stories/play/overturned-tables",
+      "/scriptures/stories/play/valley-of-elah",
+    ],
   },
 ];
 

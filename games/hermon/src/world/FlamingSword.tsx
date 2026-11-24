@@ -9,7 +9,7 @@ import { banish, FX } from '@/game/banish';
 import { presentation } from '@/game/presentation';
 import { strike as dive } from '@/game/strike';
 import { useGame } from '@/game/store';
-import { cannonLink } from './cannonContract';
+import { handLink } from './handLink';
 import { createRibbon } from './ribbon';
 import { BLADE, GUARD, flameGeometry, flameMaterial, swordGeometry } from './swordBlade';
 import { SWORD_GRIP, swordGripRotation } from './swordGrip';
@@ -35,7 +35,7 @@ export default function FlamingSword() {
   }, [scene, sword]);
   useFrame((_, delta) => {
     const state = useGame.getState(), dt = Math.min(.05, delta);
-    const hand = cannonLink.forearm?.children.find(c => c.name === 'hand_r') ?? null;
+    const hand = handLink.forearm?.children.find(c => c.name === 'hand_r') ?? null;
     if (hand && sword.root.parent !== hand) hand.add(sword.root);
     if (!hand && sword.root.parent) sword.root.removeFromParent();
     sword.root.visible = !!hand;

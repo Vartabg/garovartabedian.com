@@ -2,6 +2,7 @@ import { expect, test, type Page } from "@playwright/test";
 
 const hub = "/scriptures/stories/play";
 const temple = `${hub}/overturned-tables`;
+const elah = `${hub}/valley-of-elah`;
 
 test("a filtered Stories shelf opens the games and keeps its place on Back", async ({ page }) => {
   await page.goto("/scriptures/stories");
@@ -103,6 +104,60 @@ test("the passage can be barred after the last seat is overturned", async ({ pag
   await expect(page.getByRole("button", { name: "Flip table", exact: true })).toBeEnabled();
 });
 
+test("Valley of Elah sheds Saul’s armor, gathers five stones, faces Goliath, and replays cleanly", async ({ page }) => {
+  test.setTimeout(90_000);
+  await page.goto(elah);
+  await expect(page.getByRole("heading", { level: 1, name: "The Valley of Elah" })).toBeVisible();
+  await expect(page.getByText("Armor 3 / 3", { exact: true })).toBeVisible();
+  await expect(page.getByText(/\b0\s*\/\s*5\b/)).toBeVisible();
+
+  const summary = page.locator("summary").filter({ hasText: /^Valley targets$/i });
+  await summary.press("Enter");
+  const targets = page.locator("details[open]").filter({ has: summary });
+
+  // All 5 brook stones stay locked while Saul's armor is worn.
+  await expect(targets.getByRole("button", { name: /^Smooth stone/i, disabled: true })).toHaveCount(5);
+
+  // Shed sword, coat of mail, and bronze helmet sequentially.
+  await page.getByLabel("Valley of Elah", { exact: true }).press("Space");
+  await expect(page.getByText("Armor 2 / 3", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Set aside coat of mail", exact: true }).first().click();
+  await expect(page.getByText("Armor 1 / 3", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Set aside bronze helmet", exact: true }).first().click();
+  await expect(page.getByText("Armor set aside", { exact: true })).toBeVisible();
+  await expect(targets.getByRole("button", { name: /^Smooth stone/i, disabled: false })).toHaveCount(5);
+
+  // Gather all 5 smooth stones from the brook in non-sequential order.
+  for (const [index, stoneName] of ["Smooth stone 3", "Smooth stone 1", "Smooth stone 5", "Smooth stone 2", "Smooth stone 4"].entries()) {
+    const btn = targets.getByRole("button", { name: new RegExp(`^${stoneName}`) });
+    await btn.click();
+    await expect(page.getByText(new RegExp(`\\b${index + 1}\\s*/\\s*5\\b`))).toBeVisible({ timeout: 15_000 });
+  }
+
+  // Step into the valley floor standoff -> untimed sling phase.
+  const meetBtn = targets.getByRole("button", { name: /^Step into the valley/i });
+  await meetBtn.click();
+  await expect(page.getByText("Sling ready", { exact: true })).toBeVisible({ timeout: 15_000 });
+  const card = page.locator(".elah-card");
+  await expect(card.getByText(/doesn’t save with sword and spear/i)).toBeVisible();
+
+  // Pause and resume cleanly during untimed sling stance.
+  await page.getByRole("button", { name: "Pause", exact: true }).press("Enter");
+  await page.getByRole("button", { name: "Resume", exact: true }).press("Enter");
+
+  // Deliberate release resolves the valley and unlocks verse cycling + replay.
+  await page.getByRole("button", { name: "Release stone", exact: true }).first().click();
+  await expect(page.getByText("Valley open", { exact: true })).toBeVisible();
+  const readBtn = page.getByRole("button", { name: "Read verse", exact: true });
+  await expect(readBtn).toBeEnabled();
+  await readBtn.click();
+  await expect(card.getByText(/no sword in David’s hand/i)).toBeVisible();
+
+  await page.getByRole("button", { name: "Play again", exact: true }).click();
+  await expect(page.getByText("Armor 3 / 3", { exact: true })).toBeVisible();
+  await expect(page.getByText(/\b0\s*\/\s*5\b/)).toBeVisible();
+});
+
 test.describe("the game index without JavaScript", () => {
   test.use({ javaScriptEnabled: false, viewport: { width: 320, height: 700 } });
 
@@ -116,6 +171,7 @@ test.describe("the game index without JavaScript", () => {
       ["Play The Cloven Arch", "/play/hermon/crossing"],
       ["Read the crossing", "/play/hermon/crossing/account"],
       ["Read 1 Enoch 6 in the Ethiopian canon", "/scriptures/ethiopian/ENO/6?t=charles#v4"],
+      ["Enter the Valley of Elah", elah],
       ["Read David’s story", "/scriptures/stories/david"],
       ["Read 1 Samuel 17", "/scriptures/protestant/1SA/17?t=web#v1"],
     ]) {
@@ -136,5 +192,15 @@ test.describe("the game index without JavaScript", () => {
     await expect(accounts.locator('a[href*="/scriptures/protestant/MRK/11"]')).toBeVisible();
     await expect(accounts.locator('a[href*="/scriptures/protestant/JHN/2"]')).toBeVisible();
     await expect(accounts.getByText(/a house of prayer for all the nations/i)).toBeVisible();
+  });
+
+  test("the Valley of Elah page opens 1 Samuel 17 without starting the game", async ({ page }) => {
+    await page.goto(elah);
+    const summary = page.locator("summary").filter({ hasText: /^Read 1 Samuel 17$/i });
+    await summary.press("Enter");
+    const reading = page.locator("details[open]").filter({ has: summary });
+    await expect(reading.locator('a[href*="/scriptures/protestant/1SA/17"]')).toBeVisible();
+    await expect(reading.locator('a[href="/scriptures/stories/david"]')).toBeVisible();
+    await expect(reading.getByText(/no sword in David’s hand/i)).toBeVisible();
   });
 });

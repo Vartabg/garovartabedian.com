@@ -11,19 +11,21 @@ afterEach(() => {
   clearInput(true);
   vi.unstubAllGlobals();
   useGame.setState({
-    desktopMode: 'mouse',
     shooter: false,
-    controlLab: 'standard',
     flying: false,
     landing: false,
+    controlsOpen: false,
     discovered: false,
     discoveredTablets: [],
+    lookAccel: true,
+    edgeRest: true,
+    touchScheme: 'classic',
     controlsVersion: CONTROLS_VERSION,
   });
 });
 
-describe('v7 store defaults, migration, and tablet sanitization', () => {
-  it('defaults to unified standard desktop flight in calm exploration mode', () => {
+describe('v8 store defaults, legacy migration, and tablet sanitization', () => {
+  it('defaults to calm exploration mode with touch prefs preserved', () => {
     const storage = new Map<string, string>();
     vi.stubGlobal('localStorage', {
       getItem: (k: string) => storage.get(k) ?? null,
@@ -32,14 +34,15 @@ describe('v7 store defaults, migration, and tablet sanitization', () => {
     vi.stubGlobal('matchMedia', () => ({ matches: false }));
     hydrateGame();
     const s = useGame.getState();
-    expect(s.desktopMode).toBe('mouse');
     expect(s.shooter).toBe(false);
-    expect(s.controlLab).toBe('standard');
-    expect(s.controlsVersion).toBe(7);
+    expect(s.controlsVersion).toBe(8);
+    expect(s.touchScheme).toBe('classic');
+    expect(s.lookAccel).toBe(true);
+    expect(s.edgeRest).toBe(true);
     expect(s.discoveredTablets).toEqual([]);
   });
 
-  it('migrates pre-v7 saved desktop trackpad/shooter/lab state cleanly and hydrates legacy discovered boolean', () => {
+  it('ignores retired v1-v7 legacy keys cleanly while preserving touch preferences and discovered tablets', () => {
     const storage = new Map<string, string>([
       ['hermon.flight.v1', JSON.stringify({
         controlsVersion: 6,
@@ -47,6 +50,11 @@ describe('v7 store defaults, migration, and tablet sanitization', () => {
         trackpadSteering: 'free',
         shooter: true,
         controlLab: 'draw',
+        autoFire: false,
+        hintProgress: { touch: 2, simple: 3, mouse: 1 },
+        touchScheme: 'twin',
+        lookAccel: false,
+        edgeRest: false,
         discovered: true,
       })],
     ]);
@@ -57,14 +65,16 @@ describe('v7 store defaults, migration, and tablet sanitization', () => {
     vi.stubGlobal('matchMedia', () => ({ matches: false }));
     hydrateGame();
     const s = useGame.getState();
-    expect(s.desktopMode).toBe('mouse');
     expect(s.shooter).toBe(false);
-    expect(s.controlLab).toBe('standard');
+    expect(s.touchScheme).toBe('twin');
+    expect(s.lookAccel).toBe(false);
+    expect(s.edgeRest).toBe(false);
+    expect(s.hintProgress).toEqual({ touch: 2, mouse: 1 });
     expect(s.discovered).toBe(true);
     expect(s.discoveredTablets).toEqual(['hermon-oath-01']);
   });
 
-  it('preserves v7 user choices and sanitizes discoveredTablets', () => {
+  it('preserves v7+ user choices and sanitizes discoveredTablets', () => {
     expect(validDiscoveredTablets(['hermon-oath-01', 'bogus', 'hermon-oath-01', 'east-flats-14'])).toEqual([
       'hermon-oath-01',
       'east-flats-14',
@@ -75,7 +85,7 @@ describe('v7 store defaults, migration, and tablet sanitization', () => {
       setItem: (k: string, v: string) => storage.set(k, v),
     });
     vi.stubGlobal('matchMedia', () => ({ matches: false }));
-    useGame.setState({ shooter: true, discoveredTablets: ['west-flats-09'], discovered: true, controlsVersion: 7 });
+    useGame.setState({ shooter: true, discoveredTablets: ['west-flats-09'], discovered: true, controlsVersion: CONTROLS_VERSION });
     persistGame();
     useGame.setState({ shooter: false, discoveredTablets: [], discovered: false });
     hydrateGame();
@@ -88,7 +98,6 @@ describe('v7 store defaults, migration, and tablet sanitization', () => {
 
 describe('unified desktop flight vertical intent, look sensitivity/invertY, and descend landing', () => {
   it('reads Space as vertical rise and F/Ctrl as descend, dropping descend once keyDescendUsed latches', () => {
-    useGame.setState({ desktopMode: 'mouse', controlLab: 'standard' });
     runtime.keys.add('Space');
     expect(readIntent().vertical).toBe(1);
     runtime.keys.delete('Space');
@@ -148,16 +157,16 @@ describe('unified desktop flight vertical intent, look sensitivity/invertY, and 
 });
 
 describe('opt-in Watchers desktop combat bindings', () => {
-  it('maps locked right-click to SHIELD.mouse, retires KeyQ ADS zoom, and allows Digit1 rebuke in standard desktop mode', () => {
+  it('maps locked right-click to SHIELD.mouse, retires KeyQ ADS zoom, and allows Digit1 rebuke directly', () => {
     const s = runtime.shooter;
-    const env = { enabled: true, started: true, paused: false, aimToggle: false, desktopMode: 'mouse' as const, steering: 'free', locked: true };
+    const env = { enabled: true, started: true, paused: false, aimToggle: false, locked: true };
     expect(keyDown({ code: 'KeyQ', repeat: false, metaKey: false, ctrlKey: false, altKey: false, targetTag: 'MAIN' }, env, s)).toBe(false);
     expect(mouseDown(2, env, s)).toBe(true);
     expect(s.input.shield & SHIELD.mouse).toBe(SHIELD.mouse);
     mouseUp(2, env, s);
     expect(s.input.shield & SHIELD.mouse).toBe(0);
 
-    useGame.setState({ desktopMode: 'mouse', controlLab: 'standard', shooter: true });
+    useGame.setState({ shooter: true });
     const beforeCmd = s.input.cmd;
     const handled = commandKeyDown({ code: 'Digit1', repeat: false, metaKey: false, ctrlKey: false, altKey: false, defaultPrevented: false, target: null } as unknown as KeyboardEvent, true, s);
     expect(handled).toBe(true);

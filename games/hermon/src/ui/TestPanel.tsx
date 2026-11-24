@@ -9,10 +9,10 @@ import styles from './Experience.module.css';
 import TouchSettings from './TouchSettings';
 import { readInsets } from './touchInsets';
 import { isStandalone } from './playSession';
-import { unlockBlasterAudio } from './audioUnlock';
+import { unlockHermonAudio } from './audioUnlock';
 import { setWatchersMode } from './hermonActions';
-import { ControlsRow } from './controls/PauseControls';
-import { LabStatsTable } from './gesture/LabPanel';
+import { useTouchCapable } from './useTouchCapable';
+import { TouchControlsRow } from './controls/TouchControlsPicker';
 
 function measurements() {
   const frames = [...runtime.frames].sort((a, b) => a - b);
@@ -59,8 +59,7 @@ function ScreenDiagnostics() {
 export default function TestPanel({ onClose, onResume, ready }: { onClose: () => void; onResume: () => void; ready: boolean }) {
   const state = useGame(), [stats, setStats] = useState<ReturnType<typeof measurements> | null>(null);
   const [recording, setRecording] = useState(gestureLog.enabled);
-  const [coarse] = useState(() => typeof matchMedia === 'function' && matchMedia('(pointer: coarse)').matches);
-  const [anyCoarse] = useState(() => typeof matchMedia === 'function' && matchMedia('(any-pointer: coarse)').matches);
+  const touchCapable = useTouchCapable();
   useEffect(() => { setStats(measurements()); }, []);
   const save = (patch: Parameters<typeof state.set>[0]) => { state.set(patch); persistGame(); };
 
@@ -74,7 +73,7 @@ export default function TestPanel({ onClose, onResume, ready }: { onClose: () =>
 
     <fieldset><legend>Flight &amp; camera</legend>
       <p className={styles.muted}>
-        {coarse
+        {touchCapable
           ? 'Drag to look, hold Fly to soar, release to hover, and tap a Watcher to strike when the host is active.'
           : 'WASD flies at full momentum (dive for speed, pull up to climb, release to flare into hover). Shift surges, Space takes off and rises, F or Ctrl descends to land, B brakes, L lands on flat ledges, E reads tablets. Drag the scene to look or click to lock mouse look; Esc pauses.'}
       </p>
@@ -96,8 +95,8 @@ export default function TestPanel({ onClose, onResume, ready }: { onClose: () =>
       </p>
     </fieldset>
 
-    {coarse && <ControlsRow fromPanel />}
-    {anyCoarse && <TouchSettings />}
+    {touchCapable && <TouchControlsRow fromPanel />}
+    {touchCapable && <TouchSettings />}
 
     <fieldset><legend>Graphics &amp; audio</legend>
       <label className={styles.setting}>Graphics detail
@@ -107,7 +106,7 @@ export default function TestPanel({ onClose, onResume, ready }: { onClose: () =>
         </select>
       </label>
       <label className={styles.check}><input type="checkbox" checked={!state.muted} onChange={e => {
-        save({ muted: !e.target.checked }); if (e.target.checked) unlockBlasterAudio();
+        save({ muted: !e.target.checked }); if (e.target.checked) unlockHermonAudio();
       }} /> Wind and battle audio</label>
       <label className={styles.check}><input type="checkbox" checked={state.tapControls} onChange={e => save({ tapControls: e.target.checked })} /> Show single-tap movement controls (no dragging)</label>
     </fieldset>
@@ -128,8 +127,7 @@ export default function TestPanel({ onClose, onResume, ready }: { onClose: () =>
         const url = URL.createObjectURL(new Blob([JSON.stringify(gestureRecording(), null, 2)], { type: 'application/json' }));
         const link = document.createElement('a'); link.href = url; link.download = 'hermon-gestures.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
       }}>Download input recording</button>
-      <LabStatsTable />
-      {anyCoarse && <ScreenDiagnostics />}
+      {touchCapable && <ScreenDiagnostics />}
     </details>
 
     <div className={styles.modalFoot} data-testid="settings-foot"><button type="button" className={styles.primary} aria-label="Resume flight" disabled={!ready} onClick={onResume}>Resume</button></div>

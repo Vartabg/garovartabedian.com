@@ -74,6 +74,7 @@ export const routes = [
   "/scriptures/stories",
   "/scriptures/stories/play",
   "/scriptures/stories/play/overturned-tables",
+  "/scriptures/stories/play/valley-of-elah",
   "/play/hermon/crossing/account",
   "/scriptures/stories/joseph",
   "/scriptures/stories/noah",

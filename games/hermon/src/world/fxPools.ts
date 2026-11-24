@@ -1,6 +1,5 @@
 // Pure effect math and pool bookkeeping (no three): tracer timing, ballistic debris, oldest-slot rings and timed sprite puffs.
 import type { EventKind, ShotEvent, Vec3 } from '@/game/combat';
-import type { Socket } from './cannonContract';
 import { ATTENUATE_FROM } from '../game/burst';
 export type Rgb = { r: number; g: number; b: number };
 /** The seven outcomes a shot can end in (one event per shot). */
@@ -34,13 +33,9 @@ export const FIRST_FRAME = 1 / 60;
 export const tracerWidth = (dist: number, fovDeg: number, heightPx: number, floorPx = 1.5) =>
   Math.max(.05, floorPx * dist * 2 * Math.tan(fovDeg * Math.PI / 360) / heightPx);
 export type TracerOrigin = { from: Vec3; dir: Vec3; dist: number };
-/**
- * Where a tracer's tail starts. A shot fired this frame (e.t === clock) starts at the live kicked cannon muzzle `fx` when it is
- * valid, so the flash, the tail and the cannon kick land on the same frame; dir and dist are re-derived to e.point. Otherwise the
- * event's own origin. Returns false when the tracer has no length (nothing to draw).
- */
-export function tracerOrigin(e: ShotEvent, clock: number, fx: Socket, out: TracerOrigin): boolean {
-  const f = e.t === clock && fx.valid ? fx : e.from;
+/** Derives tracer origin, direction, and length from an event; returns false when the tracer has no length. */
+export function tracerOrigin(e: ShotEvent, out: TracerOrigin): boolean {
+  const f = e.from;
   out.from.x = f.x; out.from.y = f.y; out.from.z = f.z;
   const dx = e.point.x - f.x, dy = e.point.y - f.y, dz = e.point.z - f.z, d = Math.hypot(dx, dy, dz);
   out.dist = d;
@@ -172,14 +167,11 @@ export const makeSteam = (): SteamQueue => ({ t0: 0, next: STEAM_PUFFS });
 export function startSteam(q: SteamQueue, eventT: number) { q.t0 = eventT + STEAM_LEAD; q.next = 0; }
 const steamAt = { x: 0, y: 0, z: 0 }, steamV = { x: 0, y: 0, z: 0 };
 /** Spawns every puff that is due by t; returns how many. */
-export function stepSteam(q: SteamQueue, t: number, vent: Socket, fallback: Vec3, rng: () => number, p: Puffs, c: Rgb, dir: Vec3 | null = null) {
+export function stepSteam(q: SteamQueue, t: number, fallback: Vec3, rng: () => number, p: Puffs, c: Rgb) {
   let n = 0;
   for (; q.next < STEAM_PUFFS && t >= q.t0 + q.next * STEAM_GAP; q.next++, n++) {
-    const o = vent.valid ? vent : fallback, j = vent.valid ? .012 : .06, jet = vent.valid && dir ? STEAM_JET * (.85 + .3 * rng()) : 0;
-    steamAt.x = o.x + (rng() - .5) * 2 * j; steamAt.y = o.y + rng() * .01; steamAt.z = o.z + (rng() - .5) * 2 * j;
-    steamV.x = jet ? dir!.x * jet : 0; steamV.y = jet ? dir!.y * jet : 0; steamV.z = jet ? dir!.z * jet : 0;
-    // Small, soft wisps that billow out of the hatch and die within half a second (the first tune, .2 -> .8 m at alpha .45 for
-    // 1.1 s rising .8 m/s, read as a glowing orb flying off and reached the 40 px clear aim zone in landscape).
+    steamAt.x = fallback.x + (rng() - .5) * .12; steamAt.y = fallback.y + rng() * .01; steamAt.z = fallback.z + (rng() - .5) * .12;
+    steamV.x = 0; steamV.y = 0; steamV.z = 0;
     spawnPuff(p, q.t0 + q.next * STEAM_GAP, steamAt, .06, .5, .02, .14, 1, c, c, .3, 0, steamV);
   }
   return n;

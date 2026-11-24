@@ -5,28 +5,32 @@
   "summary": "Jesus addresses crowds and disciples about scribes and Pharisees who teach from Moses's seat but fail to practice what they demand. He forbids status titles that fracture sibling equality, then pronounces repeated woes against leaders who obstruct, exploit, manipulate oaths, obsess over small tithes while neglecting justice, mercy, and faith, polish exteriors while hiding corruption, and honor dead prophets while resisting living ones. The speech ends not in triumph but with Jesus lamenting Jerusalem like a mother bird whose children refuse shelter.",
   "whyItMatters": "The chapter is a warning to religious leaders and communities that correct teaching, rigorous practice, and public honor can coexist with hypocrisy. Because its rhetoric arose inside Jewish conflict and was later weaponized by Christians against Jews, responsible reading must let the woes judge Christian power first rather than turn opponents into an ethnic caricature.",
   "context": {
-    "author": "Anonymous Jewish-scriptural narrator preserving and intensifying prophetic polemic",
-    "audience": "A late-first-century community defining leadership amid conflict with other Jewish authorities",
-    "date": "Commonly placed after AD 70",
+    "author": "Anonymous narrator, linked by early church testimony with Matthew, preserving prophetic polemic",
+    "audience": "Greek-speaking readers, probably Jewish and Gentile; on one reading, a community defining leadership amid conflict with other Jewish authorities",
+    "date": "Commonly placed after AD 70, often the 80s or 90s; earlier dates are defended",
     "setting": "Jerusalem temple teaching before the final discourse",
-    "literaryForm": "Public warning, status inversion, sevenfold prophetic woe, accusation, and lament"
+    "literaryForm": "Public warning, status inversion, repeated prophetic woes, accusation, and lament"
   },
   "outline": [
     {
       "heading": "Moses's seat, heavy burdens, and performed status",
-      "verses": "1-12"
+      "verses": "1-12",
+      "note": "Scribes and Pharisees sit on the seat of Moses; they bind heavy burdens and love the best seats; call no one father"
     },
     {
       "heading": "Woes: blocking, exploiting, and corrupted guidance",
-      "verses": "13-22"
+      "verses": "13-22",
+      "note": "Woes on hypocrites who shut the Kingdom, devour widows' houses and chase one convert; oaths by temple gold and altar gifts"
     },
     {
       "heading": "Weightier matters and clean insides",
-      "verses": "23-28"
+      "verses": "23-28",
+      "note": "They tithe mint, dill and cumin but skip justice, mercy and faith; strain out a gnat and 'swallow a camel'; whitened tombs"
     },
     {
       "heading": "Prophetic blood, accountability, and lament",
-      "verses": "29-39"
+      "verses": "29-39",
+      "note": "They build tombs for prophets yet are 'children of those who killed the prophets'; Jerusalem is like a hen gathering chicks"
     }
   ],
   "keyVerses": [
@@ -73,7 +77,7 @@
     {
       "id": "q2",
       "question": "What is ‘Moses's seat’?",
-      "answer": "The phrase names teaching authority associated with interpreting Torah; later stone seats in synagogues offer a possible social backdrop, though the exact institution in Matthew is debated. Jesus can acknowledge what is taught while condemning failure to do it. Authority therefore remains accountable to enacted truth.",
+      "answer": "The phrase names teaching authority associated with interpreting Torah. Jesus can acknowledge what is taught while condemning failure to do it. Authority therefore remains accountable to enacted truth.",
       "verseRefs": [
         "23:2",
         "23:3"
@@ -103,7 +107,7 @@
     {
       "id": "q4",
       "question": "Does Jesus literally forbid every use of teacher, father, or instructor as a title?",
-      "answer": "The piled-up prohibitions attack honor systems that make leaders ultimate sources and elevate them above siblings. The New Testament can use these ordinary relationship words elsewhere. Matthew's controlling statements are one heavenly Father, one teacher, and the greatest as servant; titles become dangerous when they claim spiritual ownership or immunity.",
+      "answer": "On one common reading, the piled-up prohibitions attack honor systems that make leaders ultimate sources and elevate them above siblings. The New Testament can use these ordinary relationship words elsewhere. Matthew's controlling statements are one heavenly Father, one teacher, and the greatest as servant; titles become dangerous when they claim spiritual ownership or immunity.",
       "verseRefs": [
         "23:8",
         "23:9",
@@ -120,8 +124,8 @@
     },
     {
       "id": "q5",
-      "question": "Why is verse 14 missing or placed elsewhere in some Bibles?",
-      "answer": "A woe about devouring widows' houses and making long prayers is absent from the earliest Matthew witnesses and appears in different positions in later manuscripts, likely imported from Mark or Luke. The warning is canonical in those parallels; the textual question is whether Matthew originally included it here.",
+      "question": "Why is the widows' houses woe missing or placed elsewhere in some Bibles?",
+      "answer": "A woe about devouring widows' houses and making long prayers (verse 13 in the hosted text, 14 in some Bibles) is absent from the earliest Matthew witnesses and appears in different positions in later manuscripts, likely imported from Mark or Luke. The warning is canonical in those parallels; the textual question is whether Matthew originally included it here.",
       "verseRefs": [
         "23:13",
         "23:15"
@@ -149,7 +153,7 @@
     {
       "id": "q7",
       "question": "What is the camel-and-gnat picture?",
-      "answer": "It is comic hyperbole, perhaps sharpened by a Greek sound resemblance between kōnōps, gnat, and kamēlos, camel. Straining liquid could avoid consuming a tiny unclean creature, while swallowing a camel imagines missing the largest possible one. Scrupulosity has inverted moral scale.",
+      "answer": "It is comic hyperbole. Leviticus counts both small winged creeping things and the camel as unclean (Leviticus 11:4, 11:23), so the picture sets the smallest against the largest. Scrupulosity has inverted moral scale.",
       "verseRefs": [
         "23:24"
       ],
@@ -161,7 +165,7 @@
     {
       "id": "q8",
       "question": "Does ‘his blood on us’ or this chapter make later Jews guilty for Jesus's death?",
-      "answer": "No. Chapter 23 addresses particular leaders in a first-century intra-Jewish conflict; Jesus, disciples, crowds, and opponents are Jewish. Collective hereditary guilt is morally and historically false. Matthew's later crowd scene cannot transfer responsibility to people absent from it, while Roman authority carries out the crucifixion. The woes must never authorize antisemitism.",
+      "answer": "No. Chapter 23 addresses particular leaders in a first-century intra-Jewish conflict; Jesus, disciples, crowds, and opponents are Jewish. Collective hereditary guilt is morally and historically false. Matthew's later crowd scene cannot transfer responsibility to people absent from it, while Roman authority carries out the crucifixion (27:26-27). The woes must never authorize antisemitism.",
       "verseRefs": [
         "23:29",
         "23:35",
@@ -190,9 +194,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "0299c55f52d26988ac371537c1d46418be0d1f36ca1608d731223d11c6d29628",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

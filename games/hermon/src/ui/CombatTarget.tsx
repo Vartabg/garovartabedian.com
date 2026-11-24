@@ -5,7 +5,7 @@ import { strike } from '@/game/strike';
 import { LAST, pressTarget } from '@/game/swordString';
 import { runtime } from '@/game/runtime';
 import { useGame } from '@/game/store';
-import { aimFrameFrom, createAimFrame, project } from '@/game/gesture/screenRay';
+import { aimFrameFrom, createAimFrame, project } from '@/game/screenRay';
 import styles from './BattleHud.module.css';
 import { combatCameraReadout as camera } from '@/game/combatCamera';
 /** Show the current strike until contact, then the next chain candidate, including a direction cue outside the view. */

@@ -8,7 +8,8 @@ import styles from "./page.module.css";
 
 const hub = scriptureDestination("/scriptures/stories/play");
 const temple = scriptureDestination("/scriptures/stories/play/overturned-tables");
-const description = "Play as Jesus in the temple court or take flight over Mount Hermon. Read the passages behind the games.";
+const elah = scriptureDestination("/scriptures/stories/play/valley-of-elah");
+const description = "Play as Jesus in the temple court, step into the Valley of Elah as David, or take flight over Mount Hermon. Read the passages behind the games.";
 
 export const metadata: Metadata = {
   title: hub.label,
@@ -64,12 +65,21 @@ export default function PlayableStoriesPage() {
         </div>
       </section>
 
-      <section className={styles.reading} aria-labelledby="david-title">
-        <h2 id="david-title">David and Goliath</h2>
-        <p>Follow David from Saul’s camp to the valley in the illustrated reading.</p>
-        <div className={styles.actions}>
-          <Link href={scriptureStoryPath("david")}>Read David’s story</Link>
-          <Link href={passageHref("1SA", 17)}>Read 1 Samuel 17</Link>
+      <section className={styles.episode} aria-labelledby="elah-title">
+        <Image
+          className={styles.illustration}
+          src="/scriptures/stories/david/name.jpg"
+          alt="David standing with a shepherd’s staff and sling in the Valley of Elah."
+          width={880} height={660} sizes="(max-width: 38rem) 100vw, 20rem" quality={70}
+        />
+        <div>
+          <h2 id="elah-title">{elah.label}</h2>
+          <p>Play as David between the two hillside lines. Feel the weight of Saul’s bronze armor, set it aside piece by piece, choose five smooth stones from the brook, and face Goliath with a sling and a stone.</p>
+          <div className={styles.actions}>
+            <a className={styles.play} href={elah.href}>Enter the Valley of Elah</a>
+            <Link href={scriptureStoryPath("david")}>Read David’s story</Link>
+            <Link href={passageHref("1SA", 17)}>Read 1 Samuel 17</Link>
+          </div>
         </div>
       </section>
     </article>

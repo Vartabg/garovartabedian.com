@@ -23,7 +23,7 @@ import { strike } from '@/game/strike';
 import { createStrikeStance, stepStrikeStance } from './strikeStance';
 import { bulkSuit } from './suitBulk';
 import { gameDt } from '@/game/slowMotion';
-import { cannonLink } from './cannonContract';
+import { handLink } from './handLink';
 import { beginSuitSprings, createSuitSprings, followBody, followWings, stepClothSway } from './suitSprings';
 import { ARCHANGEL_MODEL as SUIT_URL, WATCHER_MODEL as ADVERSARY_URL } from '@/paths';
 export { SUIT_URL, ADVERSARY_URL };
@@ -71,7 +71,7 @@ export default function Suit() {
     const roll = advanceSuitRoll(turn.current, pose, input, m.hero, mix.flare, dt), v = input.velocity;
     rig.root.visible = state.camera === 'third';
     rig.root.position.copy(pose.position);
-    orientSuit(rig.root, pose, m, roll, speedFade(Math.sqrt(v.x * v.x + v.z * v.z)), pose.spin);
+    orientSuit(rig.root, pose, m, roll, speedFade(Math.sqrt(v.x * v.x + v.z * v.z)));
     applySuitPose(rig.joints, pose, m, state.reduced);
     // In flight the authored clips blend over the pose targets (and write the added bones); the living layer then adds its motion.
     const authored = applyFlightClips(rig.joints, mix, pose, life, m.hero, state.reduced);
@@ -85,7 +85,7 @@ export default function Suit() {
     f.camera.x = cam.position.x; f.camera.y = cam.position.y; f.camera.z = cam.position.z;
     stepSuitBlaster(f, dt);
     // Library clips (idle, the sword cut, the command gestures) over everything above; the springs below follow them through.
-    Object.assign(moveInput, { dt, paused: state.paused, flying: state.flying, ground: life.ground, speed: Math.hypot(v.x, v.z), sword: cannonLink.forearm !== null, reduced: state.reduced,
+    Object.assign(moveInput, { dt, paused: state.paused, flying: state.flying, ground: life.ground, speed: Math.hypot(v.x, v.z), sword: handLink.forearm !== null, reduced: state.reduced,
       lean: pose.lean + pose.pitch * pose.power, travel: proneSpeed(v, pose.yaw), epoch: pose.epoch }); // lean: orientSuit's whole root pitch
     stepAngelMotion(moves.current, clips, rig.joints, moveInput); turnBody(rig.root, moves.current);
     stepStrikeStance(stance.current, rig.joints, moves.current, moveInput);

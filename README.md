@@ -31,7 +31,7 @@ them, are in [`docs/plans/`](docs/plans/).
 | To see | Open |
 |---|---|
 | How a change reaches the live site | [`scripts/release/production.mjs`](scripts/release/production.mjs) |
-| How the data is generated | `scripts/*/build-*.mjs`, with the output in `public/` |
+| How the data is generated | [`scripts/README.md`](scripts/README.md) (`scripts/*/build-*.mjs`, with the output in `public/`) |
 | Where the texts come from | [`public/scriptures/SOURCES.md`](public/scriptures/SOURCES.md) and [`public/scriptures/original/SOURCES.md`](public/scriptures/original/SOURCES.md) |
 | What a page is built from | The Engineer lens at the top of the live site, fed by [`scripts/site/build-site-xray.mjs`](scripts/site/build-site-xray.mjs) |
 | How the generated chapter guides are checked | [`tests/scripture-guide-v2.test.ts`](tests/scripture-guide-v2.test.ts), with the review counts in [`public/meta/corpus-health.json`](public/meta/corpus-health.json) |

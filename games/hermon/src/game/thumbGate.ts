@@ -1,5 +1,5 @@
 import { AdaptiveThumbs } from './adaptiveThumbs';
-import { TAP_MS, TAP_SLOP_TOUCH } from './gesture/tuning';
+const TAP_MS = 250, TAP_SLOP_TOUCH = 10;
 // The classic one-thumb pointer gate: who is a flying thumb and who is a tap. Pure (timers only), so node tests drive the same paths
 // useClassicThumbs does. Any second contact, on a drone or not, is pending until it lifts (a quick tap: nothing, or a blast when it
 // landed on a drone), slides TAP_SLOP_TOUCH or holds TAP_MS; only then does it join as a thumb (main's move/look handoff). A tap

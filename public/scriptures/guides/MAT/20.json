@@ -6,27 +6,31 @@
   "whyItMatters": "The chapter dismantles comparison-based entitlement and prestige. Kingdom generosity is not controlled by the longest résumé; greatness is service rather than proximity to power; and the royal Son of David hears the people a moving crowd treats as noise.",
   "context": {
     "author": "Anonymous narrator continuing the road to Jerusalem",
-    "audience": "Disciples and communities tempted by seniority, reward, and hierarchical honor",
-    "date": "Late-first-century Gospel composition",
+    "audience": "Probably Jewish and Gentile followers of Jesus, tempted by seniority, reward, and hierarchical honor",
+    "date": "Most date it after AD 70, often the 80s or 90s; earlier dates remain defended",
     "setting": "Vineyard parable, road upward to Jerusalem, and departure from Jericho",
     "literaryForm": "Kingdom parable, passion prediction, status controversy, and healing"
   },
   "outline": [
     {
       "heading": "Workers, a denarius, and the owner's generosity",
-      "verses": "1-16"
+      "verses": "1-16",
+      "note": "A master hires workers at dawn and later hours, then pays all a denarius; the first grumble; 'the last will be first'"
     },
     {
       "heading": "The third and most detailed passion prediction",
-      "verses": "17-19"
+      "verses": "17-19",
+      "note": "Going up to Jerusalem he says the Son of Man will be condemned, mocked, scourged, crucified, and raised the third day"
     },
     {
       "heading": "Royal seats, the cup, service, and ransom",
-      "verses": "20-28"
+      "verses": "20-28",
+      "note": "A mother asks seats for her sons; the ten are indignant; he gives his life 'a ransom for many'"
     },
     {
       "heading": "Two silenced men receive sight and follow",
-      "verses": "29-34"
+      "verses": "29-34",
+      "note": "Two blind men by the road cry out for mercy and are told to be quiet; Jesus touches their eyes; they follow"
     }
   ],
   "keyVerses": [
@@ -57,7 +61,7 @@
     {
       "id": "q1",
       "question": "Is the vineyard owner endorsing unfair labor practices?",
-      "answer": "A denarius was a normal day's subsistence wage. The first workers receive exactly the agreed amount; the complaint is that late workers receive generosity too. The parable addresses kingdom reward and comparison, not a payroll policy for exploiting labor. It honors the owner's freedom to give enough rather than the first group's desire to make others receive less.",
+      "answer": "A denarius was the agreed pay for a day's work (20:2). The first workers receive exactly the agreed amount; the complaint is that late workers receive generosity too. The parable addresses kingdom reward and comparison, not a payroll policy for exploiting labor. It honors the owner's freedom to give enough rather than the first group's desire to make others receive less.",
       "verseRefs": [
         "20:2",
         "20:9",
@@ -75,7 +79,7 @@
     {
       "id": "q2",
       "question": "Why are people still waiting late in the day?",
-      "answer": "The owner says they were standing because no one hired them, not because they refused work. Day laborers depended on being selected and could return home without food. The scene shifts moral attention from hours accumulated to vulnerability and a household's need for a full wage.",
+      "answer": "The workers say they were standing because no one hired them, not because they refused work. The scene shifts moral attention from hours accumulated to vulnerability and a household's need for a full wage.",
       "verseRefs": [
         "20:6",
         "20:7"
@@ -89,7 +93,7 @@
     {
       "id": "q3",
       "question": "What is the ‘evil eye’ in verse 15?",
-      "answer": "The Greek idiom asks whether their eye is evil because the owner is good. An ‘evil eye’ can signal envy, stinginess, or resentful perception. English ‘are you envious?’ carries the sense but loses Matthew's recurring eye language: how one sees another person's gift reveals the heart.",
+      "answer": "The Greek idiom asks whether their eye is evil because the owner is good. In Deuteronomy 15:9 an ‘evil eye’ refuses the poor; here it is often read as envy or resentful perception. English ‘are you envious?’ carries the sense but loses Matthew's recurring eye language: how one sees another person's gift reveals the heart.",
       "verseRefs": [
         "20:15"
       ],
@@ -119,7 +123,7 @@
     {
       "id": "q5",
       "question": "What is the ‘cup’ they claim they can drink?",
-      "answer": "The cup is a scriptural image for an allotted experience and often for suffering or judgment. Jesus will name his own cup in Gethsemane. James and John confidently accept a metaphor they do not yet understand; Jesus says they will share suffering without granting the requested rank.",
+      "answer": "The cup is a scriptural image for an allotted experience and often for suffering or judgment (Isaiah 51:17; Jeremiah 25:15). Jesus will name his own cup in Gethsemane. James and John confidently accept a metaphor they do not yet understand; Jesus says they will share suffering without granting the requested rank.",
       "verseRefs": [
         "20:22",
         "20:23"
@@ -190,9 +194,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "29560dea4e4ef6181d87bdce842ee70382231b979649a74875f692a4b0e1b5d6",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

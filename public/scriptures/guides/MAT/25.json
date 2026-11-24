@@ -6,23 +6,26 @@
   "whyItMatters": "Waiting is neither date calculation nor passive belief. Matthew describes it as durable preparedness, faithful stewardship rather than fear, and concrete mercy toward vulnerable people in whom the hidden king receives care. The chapter's judgment language is severe because everyday action reveals allegiance before people know they are being evaluated.",
   "context": {
     "author": "Anonymous narrator completing the fifth discourse",
-    "audience": "A delayed-return community needing a practical account of vigilance",
-    "date": "Late-first-century Gospel composition",
+    "audience": "Greek-speaking readers, probably Jewish and Gentile, given a practical account of vigilance while the master is away",
+    "date": "After AD 70 on most current dating, often the 80s or 90s; earlier dates are defended",
     "setting": "Parabolic wedding, household, and royal judgment scenes",
     "literaryForm": "Three eschatological parables or judgment pictures"
   },
   "outline": [
     {
       "heading": "Ten young women and delayed readiness",
-      "verses": "1-13"
+      "verses": "1-13",
+      "note": "Ten virgins take lamps to meet the bridegroom; five foolish ones have no oil at midnight, and the door is shut"
     },
     {
       "heading": "Entrusted wealth, faithful risk, and fearful burial",
-      "verses": "14-30"
+      "verses": "14-30",
+      "note": "A man leaves five, two and one talents with servants; two double theirs and hear 'Well done'; the third buries his"
     },
     {
       "heading": "The Son of Man judges nations through the least",
-      "verses": "31-46"
+      "verses": "31-46",
+      "note": "The King sets sheep on his right and goats on his left; fed, clothed and visited 'the least of these', or not"
     }
   ],
   "keyVerses": [
@@ -53,7 +56,7 @@
     {
       "id": "q1",
       "question": "Who are the ‘virgins’ in the first parable?",
-      "answer": "Parthenoi here are young women in a wedding procession, often called bridesmaids. Their sexual status is not the moral contrast; all wait, all have lamps, and all sleep. The difference is preparation that can endure an unexpectedly long delay. Modern fascination with the label can distract from the oil and timing.",
+      "answer": "Parthenoi means maidens, unmarried young women; here they go out with lamps to meet the bridegroom (25:1). Their sexual status is not the moral contrast; all wait, all have lamps, and all sleep. The difference is preparation that can endure an unexpectedly long delay. Modern fascination with the label can distract from the oil and timing.",
       "verseRefs": [
         "25:1",
         "25:3",
@@ -149,7 +152,7 @@
     {
       "id": "q7",
       "question": "What does ‘eternal’ mean in eternal punishment and life?",
-      "answer": "Aiōnios means belonging to the age, hence age-enduring or eternal in this eschatological contrast. The same adjective modifies both punishment and life, so translations usually use parallel wording. Christians differ over the nature and duration of punishment, but Matthew's sentence presents a grave, final division rather than a minor temporary inconvenience.",
+      "answer": "Aiōnios, from aiōn, ‘age,’ is usually rendered eternal or everlasting. The same adjective modifies both punishment and life, so translations usually use parallel wording. Christians differ over the nature and duration of punishment, but Matthew's sentence presents a grave, final division rather than a minor temporary inconvenience.",
       "verseRefs": [
         "25:46"
       ],
@@ -186,13 +189,20 @@
     },
     {
       "term": "Eternal / age-enduring",
-      "def": "Greek aiōnios, belonging to the age to come and used here for both punishment and life."
+      "def": "Greek aiōnios, from aiōn, ‘age’; eternal or everlasting, and used here for both punishment and life."
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "c0f54638e437f2021c7786aa5b2c724230188b6671efccffe338384166a7d88e",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

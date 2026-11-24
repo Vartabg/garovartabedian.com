@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "counts": {
-    "buildScripts": 36,
+    "buildScripts": 35,
     "publicJson": 6845,
-    "unitTestFiles": 174,
+    "unitTestFiles": 175,
     "browserSpecs": 66,
     "smokeChecks": 15
   },
@@ -217,11 +217,11 @@
   "worlds": {
     "scriptures": {
       "publicJson": 6687,
-      "scripts": 36
+      "scripts": 35
     },
     "jesus": {
       "publicJson": 33,
-      "scripts": 8
+      "scripts": 7
     },
     "apostles": {
       "publicJson": 2,

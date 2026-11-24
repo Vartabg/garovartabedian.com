@@ -4,7 +4,7 @@ import { runtime } from '@/game/runtime';
 import { useGame } from '@/game/store';
 import { touchLook } from '@/game/touchLook';
 import type { TouchButton, TouchLayout } from '@/game/touchLayout';
-import { unlockBlasterAudio } from './audioUnlock';
+import { unlockHermonAudio } from './audioUnlock';
 import { createNudges } from './nudges';
 import { ClusterFace, labelShown, markUsed } from './ClusterFace';
 import styles from './TouchControls.module.css';
@@ -111,10 +111,10 @@ export default function TouchCluster({ layout, onChange, onDescend }: Props) {
     }
     if (live && b === 'descend') {
       const g = useGame.getState();
-      if (held < LAND_TAP_MS && g.flying && g.canLand && !g.nearGround) runtime.lift = true;
+      if (held < LAND_TAP_MS && g.flying && g.canLand && !g.nearGround) runtime.land = true;
     }
     drop(b, el);
-    unlockBlasterAudio();
+    unlockHermonAudio();
   };
   const lost = (b: TouchButton, e: PointerEvent<HTMLButtonElement>) => {
     if (holds.current[b]?.id === e.pointerId) drop(b, e.currentTarget);
@@ -127,7 +127,7 @@ export default function TouchCluster({ layout, onChange, onDescend }: Props) {
     if (b === 'fire' && g.shooter) tapShot(runtime.shooter);
     if (b === 'aim') toggleAim();
     if (b === 'rise') { if (!g.flying) runtime.lift = true; else nudges.pulse('rise'); }
-    if (b === 'descend') { if (g.flying && g.canLand) runtime.lift = true; else { st.cruise = false; cb.current.onDescend(); nudges.pulse('descend'); } }
+    if (b === 'descend') { if (g.flying && g.canLand) runtime.land = true; else { st.cruise = false; cb.current.onDescend(); nudges.pulse('descend'); } }
   };
   const label = (b: TouchButton) => b === 'fire' ? 'Fire' : b === 'aim' ? 'Aim'
     : b === 'rise' ? (flying ? 'Rise' : 'Lift off') : (nearGround || canLand ? 'Land' : blocked ? 'No landing' : 'Descend');

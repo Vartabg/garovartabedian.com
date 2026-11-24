@@ -10,7 +10,7 @@ export function shooterFault(where: string, error: unknown): void {
   if (!faulted) console.error('[shooter] ' + where, error);
   faulted = true;
   resetShooterFeel(runtime.shooter);
-  overrideShooter(false); useGame.setState({ message: 'The blaster stopped. Flight continues.' });
+  overrideShooter(false); useGame.setState({ message: 'The Watchers encounter stopped. Flight continues.' });
 }
 /** The settings toggle and ?shooter=1 re-enable the blaster after a fault. */
 export function clearShooterFault(): void { faulted = false; }

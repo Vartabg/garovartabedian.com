@@ -5,24 +5,27 @@
   "summary": "Jesus turns from visible righteousness to the audience before whom it is performed. Almsgiving, prayer, and fasting can be directed toward the Father in secret or converted into theater for human approval. At the center he teaches a compact communal prayer. The chapter then joins treasure, vision, service, and anxiety: the heart follows its treasure, no one can serve God and Mammon, and disciples seek God's kingdom rather than being consumed by tomorrow.",
   "whyItMatters": "Matthew does not oppose outward practice; he exposes divided motive. The same Father who sees in secret knows daily need, and trust is practiced through prayer, forgiveness, generosity, undivided service, and attention to today's responsibility.",
   "context": {
-    "author": "Anonymous narrator continuing the Sermon on the Mount",
-    "audience": "A praying, fasting, almsgiving community addressed as a plural ‘you’",
-    "date": "Late-first-century arrangement of Jewish devotional teaching",
+    "author": "Anonymous narrator, traditionally associated with Matthew, continuing the Sermon on the Mount",
+    "audience": "Greek-speaking readers, probably Jewish and Gentile, addressed as a praying, fasting, almsgiving plural ‘you’",
+    "date": "Commonly dated after AD 70, often to the 80s or 90s (earlier dates are defended); arranges Jewish devotional teaching",
     "setting": "The mountain discourse, moving from public practice to the hidden heart",
     "literaryForm": "Three parallel warnings, model prayer, wisdom sayings, and creation imagery"
   },
   "outline": [
     {
       "heading": "Giving, praying, and fasting before the Father",
-      "verses": "1-18"
+      "verses": "1-18",
+      "note": "Give, pray and fast in secret, not like hypocrites; a prayer begins 'Our Father in heaven' and asks daily bread, forgiven debts"
     },
     {
       "heading": "Treasure, eye, and two masters",
-      "verses": "19-24"
+      "verses": "19-24",
+      "note": "Treasure on earth falls to moth, rust and thieves; the eye is the lamp of the body; no one can serve God and Mammon"
     },
     {
       "heading": "Anxiety, creation, and first seeking",
-      "verses": "25-34"
+      "verses": "25-34",
+      "note": "Look at the birds and the lilies; stop worrying about food and clothes, seek the Kingdom first, and leave tomorrow alone"
     }
   ],
   "keyVerses": [
@@ -53,7 +56,7 @@
     {
       "id": "q1",
       "question": "Why do some Bibles read ‘righteousness’ and others ‘charitable giving’ in verse 1?",
-      "answer": "The earliest Greek evidence strongly supports dikaiosynē, ‘righteousness,’ as the heading, while some later witnesses read eleēmosynē, ‘almsgiving,’ under influence from verse 2. In Matthew, almsgiving, prayer, and fasting are three expressions of righteousness. A translation note matters because one letter sequence changes the scope of the heading.",
+      "answer": "Modern critical editions of the Greek read dikaiosynē, ‘righteousness,’ as the heading, while other Greek texts, including the one behind the King James Version, read eleēmosynē, ‘almsgiving’; many scholars think it came in from verse 2. In Matthew, almsgiving, prayer, and fasting are three expressions of righteousness. A translation note matters because one letter sequence changes the scope of the heading.",
       "verseRefs": [
         "6:1",
         "6:2"
@@ -99,7 +102,7 @@
     {
       "id": "q4",
       "question": "What does the difficult word behind ‘daily bread’ mean?",
-      "answer": "Epiousios is exceptionally rare, and its exact force is debated: bread ‘for the coming day,’ ‘needed for existence,’ or ‘for today.’ The surrounding petitions support real daily dependence, while early Christian readers also heard future and sacramental resonances. English must choose a gloss where the Greek remains unusual.",
+      "answer": "Epiousios is exceptionally rare, and its exact force is debated: bread ‘for the coming day,’ ‘needed for existence,’ or ‘for today.’ The surrounding petitions support real daily dependence, while some readers from the time of the Church Fathers also heard a sacramental resonance. English must choose a gloss where the Greek remains unusual.",
       "verseRefs": [
         "6:11"
       ],
@@ -139,7 +142,7 @@
     {
       "id": "q7",
       "question": "Does ‘do not worry’ dismiss poverty, trauma, or responsible planning?",
-      "answer": "Merimnaō describes anxious preoccupation or divided concern, not every plan or physiological stress response. Jesus names food, drink, and clothing precisely because they are real needs. The teaching redirects ultimate security toward the Father and today's faithful action; it should not be weaponized against people whose bodies or circumstances need care.",
+      "answer": "Merimnaō means to be anxious or troubled with cares, not every plan or physiological stress response. Jesus names food, drink, and clothing precisely because they are real needs. The teaching redirects ultimate security toward the Father and today's faithful action; it should not be weaponized against people whose bodies or circumstances need care.",
       "verseRefs": [
         "6:25",
         "6:32",
@@ -156,11 +159,17 @@
   "glossary": [
     {
       "term": "Alms",
-      "def": "Material help given to people in need, a normal Jewish practice of righteousness."
+      "def": "Material help given to people in need, a normal Jewish practice of righteousness.",
+      "verses": [
+        "6:2-4"
+      ]
     },
     {
       "term": "Hallowed",
-      "def": "Treated or revealed as holy; the first petition asks that God's name be honored."
+      "def": "Treated or revealed as holy; the first petition asks that God's name be honored.",
+      "verses": [
+        "6:9"
+      ]
     },
     {
       "term": "Mammon",
@@ -168,9 +177,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "645aac6a689fca08c36ce55fd1f06c2cb1a7396d69d0d2a9f6dce619a2eaa41a",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

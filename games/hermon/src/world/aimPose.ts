@@ -1,6 +1,6 @@
 import { Euler, Quaternion, Vector3, type Object3D } from 'three';
 import { SNAP, type Vec3 } from '../game/combat';
-import { BARREL_AXIS, MUZZLE, fitDir, fitPoint } from './cannonContract';
+import { BARREL_AXIS, MUZZLE, fitDir, fitPoint } from './handLink';
 import { BONE_COUNT, LIMITS } from './suitSkeleton';
 import { createPose, mixPose } from './clipSampler';
 /**

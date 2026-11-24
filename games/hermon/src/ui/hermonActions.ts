@@ -5,7 +5,7 @@ import { runtime } from '@/game/runtime';
 import { clearShooterFault } from '@/game/shooterFault';
 import { persistGame, useGame } from '@/game/store';
 import { cancelStrike } from '@/game/strike';
-import { unlockBlasterAudio } from './audioUnlock';
+import { unlockHermonAudio } from './audioUnlock';
 import { pause } from './useInput';
 
 const VALID = new Set(TERMINAL_IDS);
@@ -37,7 +37,7 @@ export function setWatchersMode(on: boolean, notify = true) {
     resetBattle(runtime.shooter.stats.kills);
     useGame.setState({ shooter: true, ...(notify ? { message: 'The Watchers gather in the gorge.' } : {}) });
     persistGame();
-    unlockBlasterAudio();
+    unlockHermonAudio();
   } else {
     useGame.setState({ shooter: false, ...(notify ? { message: 'Calm sky restored.' } : {}) });
     persistGame();
