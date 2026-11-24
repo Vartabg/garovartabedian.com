@@ -6,27 +6,31 @@
   "whyItMatters": "The chapter exposes the danger of a religious interpretation that calls mercy guilt and liberation evil. Matthew's key terms — mercy, Spirit, kingdom, fruit, sign, and ‘greater than’ — ask readers to judge authority by what it produces while refusing careless claims about the unforgivable sin.",
   "context": {
     "author": "Anonymous narrator arranging controversies and sayings around recognition and refusal",
-    "audience": "A community negotiating Sabbath, authority, speech, and belonging",
-    "date": "Late-first-century Gospel composition",
+    "audience": "Greek-speaking readers familiar with Jewish Scripture, probably both Jewish and Gentile followers of Jesus; the chapter turns on Sabbath, authority, speech, and belonging",
+    "date": "After AD 70 on most current views, often the 80s or 90s; earlier dates are defended",
     "setting": "Galilean fields, synagogue, and crowd scenes",
     "literaryForm": "Legal controversy, fulfillment portrait, exorcism dispute, sign sayings, and kinship pronouncement"
   },
   "outline": [
     {
       "heading": "Grain, Sabbath, and mercy",
-      "verses": "1-8"
+      "verses": "1-8",
+      "note": "Hungry disciples pluck grain on the Sabbath; Jesus cites David and the show bread: 'one greater than the temple is here'"
     },
     {
       "heading": "Healing and the servant who does not crush",
-      "verses": "9-21"
+      "verses": "9-21",
+      "note": "A man with a withered hand is healed in the synagogue; Pharisees plot; the chosen servant will not 'break a bruised reed'"
     },
     {
       "heading": "Spirit, divided kingdom, and decisive allegiance",
-      "verses": "22-37"
+      "verses": "22-37",
+      "note": "Pharisees say he casts out demons by Beelzebul; Jesus answers 'divided against itself', speaks of binding the strong man, warns about idle words"
     },
     {
       "heading": "Jonah, return of the spirit, and Jesus's family",
-      "verses": "38-50"
+      "verses": "38-50",
+      "note": "Asked for a sign, he offers only Jonah; an unclean spirit returns with seven worse; disciples are 'my mother and my brothers'"
     }
   ],
   "keyVerses": [
@@ -57,7 +61,7 @@
     {
       "id": "q1",
       "question": "Were the disciples breaking the Sabbath law by picking grain?",
-      "answer": "Torah allowed a hungry traveler to pluck grain by hand; the dispute is whether doing so constituted forbidden Sabbath work. Jesus answers within Jewish interpretation, citing David, priestly temple service, Hosea's mercy, and the Son of Man. The scene is not Jesus versus ‘Jewish legalism’ but a dispute over faithful Sabbath reading.",
+      "answer": "Torah allowed plucking a neighbor's grain by hand (Deuteronomy 23:25); the dispute is whether doing so constituted forbidden Sabbath work. Jesus answers within Jewish interpretation, citing David, priestly temple service, Hosea's mercy, and the Son of Man. The scene is not Jesus versus ‘Jewish legalism’ but a dispute over faithful Sabbath reading.",
       "verseRefs": [
         "12:1",
         "12:2",
@@ -107,7 +111,7 @@
     {
       "id": "q4",
       "question": "What does it mean that the kingdom ‘has come upon’ them?",
-      "answer": "The verb ephthasen means arrived or overtook. Jesus argues that if the Spirit expels demons, God's reign is not merely nearby or future; it has confronted hostile rule in their presence. The phrase intensifies Matthew's kingdom language without saying every enemy and sorrow has already disappeared.",
+      "answer": "The verb ephthasen means arrived, or came sooner than expected. Jesus argues that if the Spirit expels demons, God's reign is not merely nearby or future; it has confronted hostile rule in their presence. The phrase intensifies Matthew's kingdom language without saying every enemy and sorrow has already disappeared.",
       "verseRefs": [
         "12:28",
         "12:29"
@@ -121,7 +125,7 @@
     {
       "id": "q5",
       "question": "What is blasphemy against the Holy Spirit — can an anxious person commit it accidentally?",
-      "answer": "In context, opponents see liberation and persistently name the Spirit's work demonic. The warning concerns hardened moral reversal, not an intrusive thought, doubtful question, or poorly worded sentence. Anxiety about having committed it is unlike the settled refusal depicted here. Matthew's point is that rejecting the source of restoration closes oneself to the forgiveness being offered.",
+      "answer": "In context, opponents see liberation and persistently name the Spirit's work demonic. Many readers take the warning to concern hardened moral reversal, not an intrusive thought, doubtful question, or poorly worded sentence. Anxiety about having committed it is unlike the settled refusal depicted here. On this reading, Matthew's point is that rejecting the source of restoration closes oneself to the forgiveness being offered.",
       "verseRefs": [
         "12:24",
         "12:31",
@@ -137,7 +141,7 @@
     {
       "id": "q6",
       "question": "How do words reveal a tree's fruit?",
-      "answer": "Matthew joins speech to the heart's stored abundance: words are not weightless because they make inner allegiance public and affect neighbors. The ‘idle word’ is not every casual syllable but speech without good work or responsibility. The warning follows leaders using language to call the Spirit evil.",
+      "answer": "Matthew joins speech to the heart's stored abundance: words are not weightless because they make inner allegiance public and affect neighbors. On one common reading, the ‘idle word’ is not every casual syllable but speech without good work or responsibility. The warning follows leaders using language to call the Spirit evil.",
       "verseRefs": [
         "12:33",
         "12:34",
@@ -153,7 +157,7 @@
     {
       "id": "q7",
       "question": "Do ‘three days and three nights’ require exactly seventy-two hours?",
-      "answer": "Ancient Jewish inclusive reckoning could count any part of a day-night period as a day, and Matthew elsewhere speaks of rising ‘on the third day.’ The Jonah phrase intensifies the scriptural analogy; forcing it into a modern hourly stopwatch creates a contradiction Matthew's own wording does not perceive.",
+      "answer": "Scripture can count part of a day as a day — Esther's fast of ‘three days, night or day’ ends ‘on the third day’ (Esther 4:16; 5:1) — and Matthew elsewhere speaks of rising ‘the third day’ (16:21). The Jonah phrase intensifies the scriptural analogy; forcing it into a modern hourly stopwatch creates a contradiction Matthew's own wording does not perceive.",
       "verseRefs": [
         "12:40"
       ],
@@ -194,9 +198,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "0878927d56472addf9b0ad43484ebc4c475daa1e1e37596772c4deeeab339004",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

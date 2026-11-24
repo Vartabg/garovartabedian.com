@@ -13,13 +13,11 @@ beforeAll(init);
 const FILE = new URL('./fixtures/limit-baseline.json', import.meta.url), RECORD = !!process.env.LIMITS_RECORD;
 type Base = { openAir: number[][][]; turns: Record<string, number | null> };
 const base: Base = RECORD ? { openAir: [], turns: {} } : JSON.parse(readFileSync(FILE, 'utf8'));
-const cursor = (v: number, e = 0, pe = 0): Model => ({ kind: 'cursor', throttle: v / 34, edgeTurn: e, edgePitch: pe });
 
 // Open air: city off, start mid-air 148+ m from every wall and 45+ m from floor and ceiling (the nudge zone is at most 25.5 m).
 const SCRIPTS: [string, [Model, number][]][] = [
   ['thumb 13 m/s: edge turn right, straight, left, then pitch up', [[thumb(13, 1), 1.5], [thumb(13), 1], [thumb(13, -1), 1.5], [thumb(13, 0, 1), .5], [thumb(13), 1]]],
   ['thumb 34 m/s surge: hard edge turn then straight', [[thumb(34, -1), 2], [thumb(34), 1]]],
-  ['cursor cruise 8 -> 34: fast edge turn (carve), release, pitch down', [[cursor(8, 1), 1.2], [cursor(8), 1], [cursor(34, 0, -1), .6], [cursor(34), 1]]],
   ['keys: W+D at 13 m/s, release and coast, surge W', [[keysFwd(13), 0], [{ kind: 'keys', keys: ['KeyW', 'KeyD'] }, 2], [{ kind: 'idle' }, 1.5], [keysFwd(34), 1.5]]],
 ];
 function openAir(): number[][][] {

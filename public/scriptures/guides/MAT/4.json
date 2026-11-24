@@ -5,28 +5,32 @@
   "summary": "The Spirit leads Jesus into the wilderness, where the devil tests what ‘Son of God’ will mean. Jesus answers three proposals with Deuteronomy, refusing provision, spectacle, and rule on the tester's terms. After John's arrest he settles in Capernaum, announces the kingdom in the same words John used, calls two pairs of fishermen, and begins teaching, proclaiming, and healing throughout Galilee.",
   "whyItMatters": "The beloved Son succeeds where Israel failed in the wilderness and refuses power severed from trust and worship. The chapter then gives Matthew a major transition — ‘from that time Jesus began’ — and compresses the ministry into a threefold pattern: teaching, proclaiming, and healing.",
   "context": {
-    "author": "Anonymous Greek narrator arranging scriptural testing and ministry scenes",
+    "author": "Anonymous narrator, traditionally associated with Matthew, arranging scriptural testing and ministry scenes",
     "audience": "Readers expected to recognize Deuteronomy and Isaiah inside the story",
-    "date": "Late-first-century composition narrating the beginning of Jesus's Galilean ministry",
-    "setting": "Wilderness, then Galilee around Capernaum under Herod Antipas",
+    "date": "Commonly dated after AD 70, often to the 80s or 90s (earlier dates are defended); it narrates the beginning of Jesus's Galilean ministry",
+    "setting": "Wilderness, then Galilee around Capernaum under Herod, tetrarch of Galilee (Luke 3:1)",
     "literaryForm": "Scriptural contest followed by a programmatic ministry summary and call narratives"
   },
   "outline": [
     {
       "heading": "Bread and the meaning of sonship",
-      "verses": "1-4"
+      "verses": "1-4",
+      "note": "Led into the wilderness, fasting forty days, Jesus is told to make bread; he answers 'Man shall not live by bread alone'"
     },
     {
       "heading": "Temple spectacle and world rule refused",
-      "verses": "5-11"
+      "verses": "5-11",
+      "note": "On the temple pinnacle he is told to jump; on a high mountain he is offered every kingdom; angels serve him after"
     },
     {
       "heading": "Light in Galilee and kingdom proclamation",
-      "verses": "12-17"
+      "verses": "12-17",
+      "note": "Jesus withdraws to Galilee, settles in Capernaum by the sea, and begins to preach that the Kingdom of Heaven is at hand"
     },
     {
       "heading": "Fishermen called; teaching, preaching, healing",
-      "verses": "18-25"
+      "verses": "18-25",
+      "note": "Simon, Andrew, James and John leave nets and boat to follow him; then he teaches and heals, and crowds follow"
     }
   ],
   "keyVerses": [
@@ -87,7 +91,7 @@
     {
       "id": "q3",
       "question": "Does ‘if you are the Son of God’ mean the tester doubts the title?",
-      "answer": "The Greek condition can work as ‘if, as claimed,’ not necessarily uncertainty. The pressure is about how sonship will be exercised: use power for self, force God to prove protection, or seize rule through compromise. Jesus refuses to let a true identity be defined by the wrong script.",
+      "answer": "On one reading the ‘if’ need not mean doubt: the voice at 3:17 has just said ‘This is my beloved Son.’ The pressure is about how sonship will be exercised: use power for self, force God to prove protection, or seize rule through compromise. Jesus refuses to let a true identity be defined by the wrong script.",
       "verseRefs": [
         "4:3",
         "4:6"
@@ -101,7 +105,7 @@
     {
       "id": "q4",
       "question": "Why does the devil quote Scripture too?",
-      "answer": "At the temple the devil cites Psalm 91 accurately but tears protection away from trust and turns it into a demand for spectacle. Jesus answers with Scripture that forbids testing God. Matthew therefore rejects the idea that possessing a verse automatically guarantees faithful interpretation; context, purpose, and obedience matter.",
+      "answer": "At the temple the devil cites Psalm 91:11-12 but tears protection away from trust and turns it into a demand for spectacle. Jesus answers with Scripture that forbids testing God. Matthew therefore rejects the idea that possessing a verse automatically guarantees faithful interpretation; context, purpose, and obedience matter.",
       "verseRefs": [
         "4:6",
         "4:7"
@@ -127,7 +131,7 @@
     {
       "id": "q6",
       "question": "What is a ‘gospel of the kingdom’?",
-      "answer": "Euangelion means good news or royal announcement, not yet a bound book called a Gospel. Jesus proclaims that God's reign has drawn near and demonstrates its character through teaching and healing. Matthew's summary makes word and deed interpret one another.",
+      "answer": "Euangelion means good news, not yet a bound book called a Gospel. Jesus proclaims that God's reign has drawn near and demonstrates its character through teaching and healing. Matthew's summary makes word and deed interpret one another.",
       "verseRefs": [
         "4:23"
       ],
@@ -160,17 +164,27 @@
     },
     {
       "term": "Galilee of the Gentiles",
-      "def": "Isaiah's description of a northern border region shaped by conquest and mixed populations; Matthew frames Jesus's Galilean work as light."
+      "def": "Isaiah's description of a northern border region conquered by Assyria (2 Kings 15:29); Matthew frames Jesus's Galilean work as light."
     },
     {
       "term": "Gospel",
-      "def": "Good news or royal announcement before it became the name for a written Jesus narrative."
+      "def": "Good news, before it became the name for a written Jesus narrative.",
+      "verses": [
+        "4:23"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "601671396b0f30a86bdfa2083a1c3eaeda834a32c125d4f56a7dd7dd9962f897",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

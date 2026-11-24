@@ -10,7 +10,7 @@ import Modal from './Modal';
 import CombatTarget from './CombatTarget';
 import EliteHud from './EliteHud';
 import { COMMAND, requestCommand } from '@/game/commands';
-import { unlockBlasterAudio } from './audioUnlock';
+import { unlockHermonAudio } from './audioUnlock';
 import styles from './BattleHud.module.css';
 
 const CUES: Record<Cue, string> = {
@@ -70,7 +70,7 @@ export default function BattleHud() {
     <CombatTarget /><EliteHud />
     {readout.status === 'battle' && <button type="button" className={styles.attack} aria-label="Strike next Watcher"
       onPointerDown={e => e.stopPropagation()} onPointerUp={e => e.stopPropagation()}
-      onClick={e => { e.stopPropagation(); unlockBlasterAudio(); requestCommand(runtime.shooter, COMMAND.context); }}>
+      onClick={e => { e.stopPropagation(); unlockHermonAudio(); requestCommand(runtime.shooter, COMMAND.context); }}>
       {readout.combo > 0 ? 'Chain' : 'Strike'}
     </button>}
     <aside className={styles.mission} data-testid="battle-hud" data-combo={readout.combo} data-ward={readout.ward}

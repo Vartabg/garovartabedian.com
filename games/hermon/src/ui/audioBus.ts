@@ -1,7 +1,7 @@
 import { mulberry32 } from '../game/combat';
 import { useGame } from '../game/store';
-import { FLOOR, VOICES, live } from './blasterVoices';
-import { blasterContext, releaseBlasterAudio, unlockBlasterAudio } from './audioUnlock';
+import { FLOOR, VOICES, live } from './combatVoices';
+import { hermonAudioContext, releaseHermonAudio, unlockHermonAudio } from './audioUnlock';
 // The blaster voice graph (scene chunk only). The context itself belongs to audioUnlock.ts, which the landing page imports to
 // unlock inside a gesture; the compressor, master gain and seeded noise buffer are built here on first use of each context.
 
@@ -41,14 +41,14 @@ function evict(v: Live, t: number) {
 const count = () => active.reduce((n, v) => n + (v.fading ? 0 : 1), 0);
 
 export const audioBus = {
-  /** Unlocks (see unlockBlasterAudio) and builds the graph at once. The landing page calls unlockBlasterAudio directly. */
+  /** Unlocks audio and builds the voice graph at once. */
   unlock() {
-    unlockBlasterAudio();
-    const c = blasterContext();
+    unlockHermonAudio();
+    const c = hermonAudioContext();
     if (c) { try { ensureGraph(c); } catch { graph = master = noise = null; } }
   },
   play(kind: Voice, opts: PlayOptions = NONE) {
-    const ctx = blasterContext();
+    const ctx = hermonAudioContext();
     if (!ctx || ctx.state !== 'running' || useGame.getState().muted) return;
     try { ensureGraph(ctx); } catch { graph = master = noise = null; return; }
     if (!master || !noise) return;
@@ -71,7 +71,7 @@ export const audioBus = {
   /** Drops every voice and closes the context (also restores the audio session). */
   dispose() {
     dropVoices(); graph = master = noise = null;
-    releaseBlasterAudio();
+    releaseHermonAudio();
   },
-  get voices() { const c = blasterContext(); if (c && c === graph) prune(c.currentTime); return count(); },
+  get voices() { const c = hermonAudioContext(); if (c && c === graph) prune(c.currentTime); return count(); },
 };

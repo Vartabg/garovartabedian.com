@@ -6,27 +6,31 @@
   "whyItMatters": "The chapter tests whether the teacher's authority reaches bodies, distance, creation, hostile spirits, and outsiders. Matthew also refuses triumphalism: healing authority travels with homelessness, costly following, frightened disciples, and rejection.",
   "context": {
     "author": "Anonymous narrator grouping miracle traditions after the Sermon",
-    "audience": "Readers learning how word, authority, faith, and fulfillment connect",
-    "date": "Late-first-century composition using material also found in Mark and Luke",
-    "setting": "Galilee, Capernaum, the lake, and Gentile-associated territory across it",
-    "literaryForm": "Three miracle clusters interrupted by discipleship sayings"
+    "audience": "Greek-speaking readers familiar with Jewish Scripture, probably both Jewish and Gentile followers of Jesus; here, learning how word, authority, faith, and fulfillment connect",
+    "date": "After AD 70 on most current views, often the 80s or 90s (earlier dates are defended); uses material also found in Mark and Luke",
+    "setting": "Galilee, Capernaum, the lake, and the country of the Gergesenes across it (8:28)",
+    "literaryForm": "Miracle stories interrupted by discipleship sayings"
   },
   "outline": [
     {
       "heading": "Cleansing by touch and healing by a word",
-      "verses": "1-13"
+      "verses": "1-13",
+      "note": "A leper says 'if you want to' and Jesus touches him; a centurion asks help for his paralyzed servant; a word heals"
     },
     {
       "heading": "Household and crowd restored; Isaiah fulfilled",
-      "verses": "14-17"
+      "verses": "14-17",
+      "note": "Peter's mother-in-law has a fever that leaves at a touch, and she serves; at evening he casts out spirits and heals all"
     },
     {
       "heading": "The cost of crossing with Jesus",
-      "verses": "18-22"
+      "verses": "18-22",
+      "note": "A scribe offers to follow anywhere; the Son of Man has nowhere to lay his head; another wants to bury his father"
     },
     {
       "heading": "Storm, little faith, and authority over demons",
-      "verses": "23-34"
+      "verses": "23-34",
+      "note": "He sleeps through a storm, then rebukes the sea; demons enter pigs that rush down the cliff; the city begs him to leave"
     }
   ],
   "keyVerses": [
@@ -85,7 +89,7 @@
     {
       "id": "q3",
       "question": "How does the centurion understand ‘authority’?",
-      "answer": "Exousia is delegated right and effective command. As an officer under authority who commands others, he reasons that Jesus need not be physically present: ‘say only a word.’ Matthew uses a Gentile military figure to recognize how Jesus's authority works while also showing unusual humility about entering a Jewish home.",
+      "answer": "Exousia is delegated right and effective command. As an officer under authority who commands others, he reasons that Jesus need not be physically present: ‘Just say the word.’ Matthew uses a Gentile military figure to recognize how Jesus's authority works while also showing unusual humility about Jesus entering his home.",
       "verseRefs": [
         "8:8",
         "8:9",
@@ -114,8 +118,8 @@
     },
     {
       "id": "q5",
-      "question": "Is ‘let the dead bury their own dead’ a rejection of family duty?",
-      "answer": "The sentence is deliberate prophetic shock. Burial was a weighty obligation, and the saying makes the kingdom's claim sound immediate and absolute. It may concern a request to remain home until a living father eventually dies, but the text does not say. Either way, Jesus refuses a discipleship postponed indefinitely by socially compelling reasons.",
+      "question": "Is ‘leave the dead to bury their own dead’ a rejection of family duty?",
+      "answer": "The sentence is deliberate prophetic shock. Burying a father was a son's duty (Genesis 50:5; Tobit 4:3), and the saying makes the kingdom's claim sound immediate and absolute. It may concern a request to remain home until a living father eventually dies, but the text does not say. Either way, Jesus refuses a discipleship postponed indefinitely by socially compelling reasons.",
       "verseRefs": [
         "8:21",
         "8:22"
@@ -170,9 +174,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "26723f5257ad5a6efc68e10b17ab2087a8903bc064b0a6169b6f5924de3d5d10",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

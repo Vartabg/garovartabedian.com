@@ -4,10 +4,8 @@
 // seeded variation only (mulberry32), reduced motion fades every per-shot output out over ~150 ms.
 import { SNAP, mulberry32, readEvents, springStep, type ShooterState, type ShotEvent } from '../game/combat';
 import { WEAPON } from '../game/weapon';
-import { restCannonDrive } from './cannonContract';
 import { createFollower, resetFollower, retuneFollower, stepFollower, type Follower } from './follower';
 import { CH, CHANNEL_COUNT, advanceShotSprings, createShotSprings, impulseFor, queueKick, restShotSprings, snapKick, type ShotSprings } from './shotSprings';
-import { shotDirOf } from '../game/gesture/aimedShot';
 
 export type ShotBodyEnv = { dt: number; paused: boolean; reduced: boolean; epoch: number; aimWeight: number; ads: number; ground: number; pxPerM: number };
 type Spring = { x: number; v: number };
@@ -49,7 +47,7 @@ function rest(b: ShotBody, ground: number, reduced: boolean) {
   b.n = 0; b.lastShotT = b.burstStart = -Infinity; b.shotT.fill(-Infinity); b.offset.x = b.offset.y = b.offset.z = 0;
 }
 /** Everything to exact rest (blaster off, unmount, fault), and the cannon drive to its rest values. */
-export function resetShotBody(b: ShotBody) { rest(b, 1, false); b.epoch = NaN; restCannonDrive(); }
+export function resetShotBody(b: ShotBody) { rest(b, 1, false); b.epoch = NaN; }
 /** The integrate unit multiplies the aim goal and the shoulder swing weight by this during the vent pose. */
 export const ventAimScale = (b: ShotBody) => 1 - .6 * b.v;
 
@@ -74,10 +72,8 @@ function spring(s: Spring, w: number, z: number, dt: number) {
 let evB: ShotBody, evS: ShooterState, evKick = false;
 function onEvent(e: ShotEvent) {
   if (e.kind !== 'kill') return;
-  const a = evS.aim, px = e.point.x - a.origin.x, py = e.point.y - a.origin.y, pz = e.point.z - a.origin.z, d = shotDirOf(evS);
-  // The kill-yaw basis follows the shot ray (a Gesture Lab tap's aimed ray while its burst runs): forward d, right level with it.
-  const h = Math.hypot(d.x, d.z) || 1, rx = d === a.dir ? a.right.x : -d.z / h, ry = d === a.dir ? a.right.y : 0, rz = d === a.dir ? a.right.z : d.x / h;
-  const ahead = px * d.x + py * d.y + pz * d.z, right = px * rx + py * ry + pz * rz;
+  const a = evS.aim, px = e.point.x - a.origin.x, py = e.point.y - a.origin.y, pz = e.point.z - a.origin.z, d = a.dir;
+  const ahead = px * d.x + py * d.y + pz * d.z, right = px * a.right.x + py * a.right.y + pz * a.right.z;
   // Positive head y turns left, so a kill to the right (positive `right`) gives a negative yaw.
   evB.killYaw = clamp(2 * Math.atan2(-right, ahead), -5 * DEG, 5 * DEG);
   if (evKick) evB.kill.v += KILL_I;

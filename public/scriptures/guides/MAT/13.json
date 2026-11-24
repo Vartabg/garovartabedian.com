@@ -6,31 +6,36 @@
   "whyItMatters": "Matthew refuses a kingdom visible only through immediate dominance. Parables both disclose and test: they invite patient attention while revealing resistant hearing. The chapter teaches disciples to live amid mixture without seizing final judgment and to join inherited Scripture with new understanding.",
   "context": {
     "author": "Anonymous narrator closing the third teaching block",
-    "audience": "Communities asking why the kingdom meets mixed response and delayed judgment",
-    "date": "Late-first-century arrangement of parable traditions",
+    "audience": "Greek-speaking readers familiar with Jewish Scripture, probably both Jewish and Gentile followers of Jesus; the chapter addresses mixed response and delayed judgment",
+    "date": "Parable traditions arranged after AD 70 on most current views, often the 80s or 90s; earlier dates are defended",
     "setting": "Lakeside teaching, a house, then Jesus's hometown",
     "literaryForm": "Parable discourse with private explanations and a rejection narrative"
   },
   "outline": [
     {
       "heading": "Sower, purpose of parables, and four soils",
-      "verses": "1-23"
+      "verses": "1-23",
+      "note": "From a boat he tells of seed on road, rock, thorns and good soil; then explains why parables, and each soil"
     },
     {
       "heading": "Wheat and weeds; mustard and yeast",
-      "verses": "24-35"
+      "verses": "24-35",
+      "note": "An enemy sows weeds among wheat and both grow to harvest; a mustard seed becomes a tree; yeast works through the meal"
     },
     {
       "heading": "Explanation of the weeds",
-      "verses": "36-43"
+      "verses": "36-43",
+      "note": "In the house he explains the weeds: field is the world, enemy the devil, reapers angels; the righteous 'shine like the sun'"
     },
     {
       "heading": "Treasure, pearl, net, and disciple-scribe",
-      "verses": "44-53"
+      "verses": "44-53",
+      "note": "A man sells all for a hidden treasure, a merchant for one pearl; a dragnet sorts fish; a scribe brings out new and old"
     },
     {
       "heading": "A prophet without honor at home",
-      "verses": "54-58"
+      "verses": "54-58",
+      "note": "In his own country they are astonished, then offended, naming his mother Mary and brothers; he does few mighty works there"
     }
   ],
   "keyVerses": [
@@ -77,7 +82,7 @@
     {
       "id": "q2",
       "question": "Does the sower waste seed carelessly?",
-      "answer": "Broadcast sowing could scatter seed across a field before or around plowing, so paths, thin soil, and weeds are plausible parts of the scene. The extravagant spread supports the point: the word is offered broadly, while reception differs. The parable centers hearing and fruit, not agricultural incompetence.",
+      "answer": "In the story seed falls by the roadside, on rocky ground, among thorns, and on good soil (verses 4-8), so paths, thin soil, and weeds are part of the scene. The extravagant spread supports the point: the word is offered broadly, while reception differs. The parable centers hearing and fruit, not agricultural incompetence.",
       "verseRefs": [
         "13:4",
         "13:5",
@@ -131,7 +136,7 @@
     {
       "id": "q5",
       "question": "Why not pull the weeds immediately?",
-      "answer": "The weeds resemble wheat early and their roots can intertwine. In the parable, premature separation risks destroying the crop, while final sorting belongs to the harvesters at the end. The lesson checks communities eager to purify the world by force; it does not forbid all accountability, which chapter 18 will address.",
+      "answer": "The weeds resemble wheat early and pulling them could uproot the wheat (verse 29). In the parable, premature separation risks destroying the crop, while final sorting belongs to the harvesters at the end. On one common reading, the lesson checks communities eager to purify the world by force; it does not forbid all accountability, which chapter 18 will address.",
       "verseRefs": [
         "13:28",
         "13:29",
@@ -200,7 +205,10 @@
     },
     {
       "term": "Mystery",
-      "def": "A divine purpose formerly hidden and now disclosed, not secret knowledge for an elite."
+      "def": "A divine purpose formerly hidden and now disclosed, not secret knowledge for an elite.",
+      "verses": [
+        "13:11"
+      ]
     },
     {
       "term": "Darnel / weeds",
@@ -208,9 +216,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "d984f5ddca465f6a20e0ba98639ced590a5ce9ca176f637de5892aafa61ee70e",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

@@ -6,27 +6,31 @@
   "whyItMatters": "Glory does not cancel the cross; it confirms the person whose suffering teaching disciples must hear. The chapter moves from revelation to ordinary failure and civic-religious obligation, showing authority expressed through listening, dependent faith, compassion, and freely restrained rights.",
   "context": {
     "author": "Anonymous narrator placing transfiguration after the first passion prediction",
-    "audience": "Disciples tempted to separate glory, power, and freedom from suffering service",
-    "date": "Late-first-century Gospel composition",
+    "audience": "Probably Jewish and Gentile followers of Jesus, shown that glory, power, and freedom belong with suffering service",
+    "date": "Most date it after AD 70, often the 80s or 90s; earlier dates remain defended",
     "setting": "A high mountain, Galilee, and Capernaum",
     "literaryForm": "Visionary revelation, healing controversy, passion saying, and distinctive tax anecdote"
   },
   "outline": [
     {
       "heading": "Transfiguration and the voice: listen to the Son",
-      "verses": "1-8"
+      "verses": "1-8",
+      "note": "His face shines like the sun on a mountain; Moses and Elijah appear; Peter offers tents; a voice from the cloud says 'Listen to him'"
     },
     {
       "heading": "Elijah, John, and suffering",
-      "verses": "9-13"
+      "verses": "9-13",
+      "note": "Told to keep silent until the Son of Man rises, they ask about Elijah; Jesus says he has come, meaning John"
     },
     {
       "heading": "Failed exorcism, little faith, and mustard seed",
-      "verses": "14-21"
+      "verses": "14-21",
+      "note": "A father says the disciples could not cure his son; Jesus rebukes the demon; faith like a mustard seed moves a mountain"
     },
     {
       "heading": "Betrayal predicted and temple tax paid freely",
-      "verses": "22-27"
+      "verses": "22-27",
+      "note": "He again says the Son of Man will be killed and raised; asked about the tax, he sends Peter to find a coin in a fish's mouth"
     }
   ],
   "keyVerses": [
@@ -69,7 +73,7 @@
     {
       "id": "q2",
       "question": "Why Moses and Elijah?",
-      "answer": "They can represent Law and Prophets, are both associated with Sinai/Horeb revelation, and appear in end-time expectation. Matthew does not state a single reason. The decisive movement is that the cloud's voice names Jesus the beloved Son and, when it clears, the disciples see ‘no one except Jesus alone.’",
+      "answer": "They can represent Law and Prophets, are both tied to Sinai/Horeb (Exodus 19:20; 1 Kings 19:8), and are named together before ‘the great and terrible day’ (Malachi 4:4-5). Matthew does not state a single reason. The decisive movement is that the cloud's voice names Jesus the beloved Son and, when it clears, the disciples see ‘no one except Jesus alone.’",
       "verseRefs": [
         "17:3",
         "17:5",
@@ -129,7 +133,7 @@
     {
       "id": "q6",
       "question": "Does mustard-seed faith let believers perform any impossible feat?",
-      "answer": "Jesus addresses disciples who attempted a commissioned act without adequate dependence. The point contrasts tiny real trust with their failure, not faith as a force for achieving every desire. ‘Move mountains’ was a proverbial image for overcoming the impossible; the object remains God's mission and authority.",
+      "answer": "Jesus addresses disciples who attempted a commissioned act without adequate dependence. The point contrasts tiny real trust with their failure, not faith as a force for achieving every desire. ‘Move mountains’ was a figure for the impossible, as in Paul's ‘all faith, so as to remove mountains’ (1 Corinthians 13:2); the object remains God's mission and authority.",
       "verseRefs": [
         "17:19",
         "17:20"
@@ -143,7 +147,7 @@
     {
       "id": "q7",
       "question": "Why is verse 21 missing or footnoted in some Bibles?",
-      "answer": "A line about prayer and fasting appears in later Matthew manuscripts but is absent from the earliest major Greek witnesses and likely entered from the parallel tradition in Mark. The spiritual practice is biblical elsewhere; the question is whether Matthew originally included this sentence at this location.",
+      "answer": "A line about prayer and fasting appears in later Matthew manuscripts but is absent from the earliest major Greek witnesses and likely entered from the parallel in Mark 9:29. The spiritual practice is biblical elsewhere; the question is whether Matthew originally included this sentence at this location.",
       "verseRefs": [
         "17:20",
         "17:22"
@@ -157,7 +161,7 @@
     {
       "id": "q8",
       "question": "What is the temple-tax argument about sons and strangers?",
-      "answer": "Kings tax subjects rather than their own children; Jesus reasons that the Son is free in relation to his Father's temple. Yet he pays ‘lest we cause them to stumble.’ The miraculous provision prevents the scene from becoming mere submission: freedom is real, and it is freely restrained for another's good.",
+      "answer": "Kings tax subjects rather than their own children; on the usual reading, Jesus reasons that the Son is free in relation to his Father's temple. Yet he pays ‘lest we cause them to stumble.’ The miraculous provision prevents the scene from becoming mere submission: freedom is real, and it is freely restrained for another's good.",
       "verseRefs": [
         "17:25",
         "17:26",
@@ -174,7 +178,10 @@
   "glossary": [
     {
       "term": "Transfiguration",
-      "def": "A transformation of visible appearance that reveals Jesus's glory before three disciples."
+      "def": "A transformation of visible appearance that reveals Jesus's glory before three disciples.",
+      "verses": [
+        "17:2"
+      ]
     },
     {
       "term": "Stater",
@@ -186,9 +193,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "3920c923b7ad86231622504cb76224031ef61434145c9fc1125204c5e1fd6291",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

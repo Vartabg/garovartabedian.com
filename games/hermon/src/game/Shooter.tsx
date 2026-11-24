@@ -14,7 +14,6 @@ import { createShooterWorld } from './shotResolve';
 import { createDroneSim } from './drones';
 import { createAssistMemory } from './aimAssist';
 import { createStepContext, stepShooter, type AudioSink } from './shooterStep';
-import { autoFire, resetAutoFire } from './autoFire';
 import { banish, resetBanish, stepBanish } from './banish';
 import { commandKeyDown, commandKeyUp } from './commandKeys';
 import { updateFlowPaths } from './combatFlow';
@@ -38,15 +37,9 @@ export default function Shooter() {
     const scaled = delta * stepSlowMotion(delta, game.paused, game.reduced);
     ctx.dt = scaled; ctx.realDt = delta; ctx.paused = game.paused; ctx.reduced = game.reduced; ctx.flying = game.flying;
     ctx.firstPerson = game.camera !== 'third'; ctx.strength = game.aimAssist; ctx.speed = runtime.speed;
-    // Tap-to-blast replaces auto-fire in the lab schemes and on the classic one thumb (a tapped drone is the trigger there), so no
-    // tap on Lift/Land or another control can arm it. Twin sticks keep the assist.
-    // The fight: no bracer shots, so auto-fire never runs (docs/research/combat-texts.md); commands go through banish.ts.
-    ctx.autoFire = false;
     ctx.player.x = p.x; ctx.player.y = p.y; ctx.player.z = p.z;
     ctx.head.x = h.x; ctx.head.y = h.y + CHASE_HEAD; ctx.head.z = h.z;
-    if (game.paused) resetAutoFire(runtime.shooter, autoFire);
-    // No bracer shots (docs/research/combat-texts.md): a trigger press becomes a context command on the crosshair demon and the
-    // weapon never sees it, so nothing fires, heats or recoils.
+    // No bracer shots (docs/research/combat-texts.md): a trigger press becomes a context command on the target Watcher.
     const input = runtime.shooter.input;
     if (lastPress < 0) lastPress = input.pressSerial;
     if (input.pressSerial !== lastPress) { lastPress = input.pressSerial; if (!game.paused) requestCommand(runtime.shooter, COMMAND.context); }
@@ -75,6 +68,6 @@ export default function Shooter() {
   // This component owns the slow-motion clock, so leaving (the fight switched off, a scene reload) returns game time to normal: flight
   // reads counterState.scale and would otherwise stay slow with no clock left to ease it back.
   useEffect(() => { resetBanish(banish, runtime.shooter); resetSlowMotion(); resetCounter();
-    return () => { resetAutoFire(runtime.shooter, autoFire); resetShooterFeel(runtime.shooter); resetBanish(banish, runtime.shooter); resetSlowMotion(); resetCounter(); }; }, []);
+    return () => { resetShooterFeel(runtime.shooter); resetBanish(banish, runtime.shooter); resetSlowMotion(); resetCounter(); }; }, []);
   return null;
 }

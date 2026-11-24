@@ -6,7 +6,7 @@ import { createStick, knobOffset, stickCancel, stickDown, stickMove, stickTick, 
 import { touchLook } from '@/game/touchLook';
 import { EdgeRest } from '@/game/lookEdgeRest';
 import { headerBand, readInsets, viewportBox, type ViewBox } from './touchInsets';
-import { unlockBlasterAudio } from './audioUnlock';
+import { unlockHermonAudio } from './audioUnlock';
 import type { OverlayProps, TwinRefs } from './TwinStickOverlay';
 // Twin-stick touch: a touch's role is fixed at touch-down. In the stick zone it is the floating move stick; anywhere else inside
 // the bands it looks (1:1, relative). Buttons own their own pointers (TouchCluster). One owner per pointerId for its whole life;
@@ -164,7 +164,7 @@ export function useTwinStick(surface: RefObject<HTMLDivElement | null>, enabled:
       writeStick();
     }
     paint();
-    if (lifted) unlockBlasterAudio();
+    if (lifted) unlockHermonAudio();
   };
   const cancelCruise = useCallback(() => {
     const s = stick.current;

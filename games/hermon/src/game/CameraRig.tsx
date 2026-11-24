@@ -39,7 +39,7 @@ export default function CameraRig() {
     if (state.paused && initialized.current && !resized) return;
     const elapsed = state.paused ? 0 : Math.min(dt, .05), shooter = runtime.shooter, fx = shooter.camFx, aim = shooter.aim, reduced = state.reduced;
     const blend = reduced ? 0 : aim.blend;
-    const steering = moveKeys.some(k => runtime.keys.has(k)) || runtime.thumb.active || runtime.stick.active || runtime.trackpad.active;
+    const steering = moveKeys.some(k => runtime.keys.has(k)) || runtime.thumb.active || runtime.stick.active;
     const finisher = stepFinisherFocus(finishing.current, { last: banish.last, mode: banish.mode[banish.last], phase: strike.phase,
       brake: flightFeel.brake, steering: steering || state.camera !== 'third' || state.reduced || !!runtime.landGoal, manual: combat.current.manual > 0 });
     // A sword string is one engagement for the camera: it stays on the demon between cuts instead of pumping in and out, and a

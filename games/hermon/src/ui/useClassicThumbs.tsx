@@ -1,13 +1,12 @@
 import { useEffect, useRef, type PointerEvent, type RefObject } from 'react';
 import { look, releaseThumb, runtime } from '@/game/runtime';
 import { ThumbGate } from '@/game/thumbGate';
-import { pickAt } from '@/game/gesture/tapFire';
-import { addStroke, beginStroke, cancelStroke, classifyStroke, createStroke } from '@/game/gesture/combatStroke';
+import { pickAt } from '@/game/tapStrike';
+import { addStroke, beginStroke, cancelStroke, classifyStroke, createStroke } from '@/game/combatStroke';
 import { COMMAND, SHIELD, requestCommand } from '@/game/commands';
 import { useGame } from '@/game/store';
 import styles from './Experience.module.css';
-import { unlockBlasterAudio } from './audioUnlock';
-import { markAt } from './gesture/tapMark';
+import { unlockHermonAudio } from './audioUnlock';
 // Phone scene drags only look. The separate held Fly button owns thrust; demon contacts still own strikes.
 /** Fingers down on the classic surface, across mounts: pause and resume remount the controls (Experience keys them by pause state), so
  *  a finger still down at the next mount is known here and takes a fresh grip on its first move (limits plan S8). Cleared by any lift. */
@@ -71,7 +70,7 @@ export function useClassicThumbs(surface: RefObject<HTMLDivElement | null>) {
   }, [gate]);
   /** The drone under the pointer (blaster on), else -1. Keeps the pick off the flight path with the blaster off. */
   const droneAt = (e: PointerEvent<HTMLDivElement>) => (useGame.getState().shooter ? pickAt(e.clientX, e.clientY, e.timeStamp) : -1);
-  const command = (x: number, y: number, kind: number, drone: number) => { requestCommand(runtime.shooter, kind, drone); markAt(x, y); unlockBlasterAudio(); };
+  const command = (kind: number, drone: number) => { requestCommand(runtime.shooter, kind, drone); unlockHermonAudio(); };
   const release = (e: PointerEvent<HTMLDivElement>) => { if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId); };
   const start = (e: PointerEvent<HTMLDivElement>) => {
     expired();
@@ -98,16 +97,16 @@ export function useClassicThumbs(surface: RefObject<HTMLDivElement | null>) {
   const end = (e: PointerEvent<HTMLDivElement>) => {
     if (e.pointerId === stroke.id) {
       addStroke(stroke, e.clientX, e.clientY, e.timeStamp); release(e);
-      command(e.clientX, e.clientY, STROKE_COMMAND[classifyStroke(stroke)], stroke.drone); cancelStroke(stroke); return;
+      command(STROKE_COMMAND[classifyStroke(stroke)], stroke.drone); cancelStroke(stroke); return;
     }
     expired();
     if (stale.current.delete(e.pointerId)) return;
     const lift = gate.up(e.pointerId, e.clientX, e.clientY, e.timeStamp, window.innerWidth, window.innerHeight);
     if (lift.kind === 'ignored') return;
     release(e);
-    if (lift.blast) command(lift.blast.x, lift.blast.y, COMMAND.context, lift.blast.drone);
-    // A thumb lift is an activation gesture: it is what unlocks blaster audio on a phone.
-    unlockBlasterAudio();
+    if (lift.blast) command(COMMAND.context, lift.blast.drone);
+    // A thumb lift is an activation gesture: it is what unlocks combat audio on a phone.
+    unlockHermonAudio();
   };
   const cancel = (e: PointerEvent<HTMLDivElement>) => {
     if (e.pointerId === stroke.id) { cancelStroke(stroke); return; }

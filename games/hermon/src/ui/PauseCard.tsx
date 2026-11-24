@@ -8,7 +8,8 @@ import { CROSSING_PATH, STORIES_PATH } from '@/paths';
 import { headerBand, readInsets, viewportBox } from './touchInsets';
 import { isStandalone, keepPlaying, leaveGame } from './playSession';
 import { setWatchersMode } from './hermonActions';
-import LazyControls from './LazyControls';
+import { useTouchCapable } from './useTouchCapable';
+import { TouchControlsRow } from './controls/TouchControlsPicker';
 import styles from './Experience.module.css';
 
 type Props = { ready: boolean; onEnter: () => void; note?: string };
@@ -25,14 +26,13 @@ function crampedNow(probe: HTMLElement | null): boolean {
 export default function PauseCard({ ready, onEnter, note = '' }: Props) {
   const leave = useGame(s => s.leavePrompt), zoomNote = useGame(s => s.zoomNote), shooter = useGame(s => s.shooter);
   const tipSeen = useGame(s => s.homeTipSeen), discoveredCount = useGame(s => s.discoveredTablets.length);
-  const desktopMode = useGame(s => s.desktopMode), controlLab = useGame(s => s.controlLab);
+  const touchCapable = useTouchCapable();
   const probe = useRef<HTMLDivElement>(null), card = useRef<HTMLElement>(null), go = useRef<HTMLButtonElement>(null), kicker = useId();
-  const [cramped, setCramped] = useState(false), [tip, setTip] = useState(false), [isTouch, setIsTouch] = useState(false);
+  const [cramped, setCramped] = useState(false), [tip, setTip] = useState(false);
 
   useEffect(() => {
     const update = () => {
       const touch = touchMode();
-      setIsTouch(touch);
       setCramped(crampedNow(probe.current));
       setTip(touch && !isStandalone());
     };
@@ -63,8 +63,6 @@ export default function PauseCard({ ready, onEnter, note = '' }: Props) {
     return () => window.removeEventListener('keydown', key);
   });
 
-  const showTouchControls = isTouch || controlLab !== 'standard' || desktopMode !== 'mouse';
-
   return <><div className={styles.pauseScrim} data-testid="pause-scrim" aria-hidden="true" onClick={resume} />
   <section ref={card} tabIndex={-1} className={styles.pauseCard} aria-labelledby={kicker}>
     {probeNode}
@@ -78,7 +76,7 @@ export default function PauseCard({ ready, onEnter, note = '' }: Props) {
         <span>{shooter ? 'Return to calm sky' : 'Challenge the Watchers'}</span>
         <span className={styles.muted}>{shooter ? 'Battle on' : 'Calm'}</span>
       </button>
-      {showTouchControls && <LazyControls />}
+      {touchCapable && <TouchControlsRow />}
       <div className={styles.pair}>
         <button type="button" className={styles.secondary} onClick={() => useGame.setState({ journal: true, journalTerminalId: null })}>
           <span>Field guide &amp; tablets</span>

@@ -7,38 +7,42 @@
   "context": {
     "author": "Anonymous narrator traditionally associated with Matthew",
     "audience": "Readers able to hear Micah, Hosea, Jeremiah, and exodus echoes together",
-    "date": "Written after the events; commonly placed in the late first century",
+    "date": "Commonly dated after AD 70, often to the 80s or 90s; earlier dates are defended",
     "setting": "Judea and Egypt near the end of Herod the Great's reign",
     "literaryForm": "Infancy narrative shaped by dreams, travel, royal conflict, and four scriptural formulas"
   },
   "outline": [
     {
       "heading": "Magi, Herod, and the Bethlehem citation",
-      "verses": "1-8"
+      "verses": "1-8",
+      "note": "Wise men from the east ask for the newborn King of the Jews; Herod is troubled and sends them to Bethlehem"
     },
     {
       "heading": "The child receives homage",
-      "verses": "9-12"
+      "verses": "9-12",
+      "note": "The star stops over the house; they fall down and worship, offer gold, frankincense and myrrh, and go home another way after a dream"
     },
     {
       "heading": "Flight to Egypt and Herod's violence",
-      "verses": "13-18"
+      "verses": "13-18",
+      "note": "An angel sends Joseph fleeing to Egypt by night; Herod kills Bethlehem boys aged two and under; Rachel weeps"
     },
     {
       "heading": "Return and settlement in Nazareth",
-      "verses": "19-23"
+      "verses": "19-23",
+      "note": "After Herod dies an angel sends Joseph back; afraid of Archelaus, he settles in Nazareth in Galilee"
     }
   ],
   "keyVerses": [
     {
       "ref": "2:6",
       "text": "‘You Bethlehem, land of Judah, are in no way least among the princes of Judah; for out of you shall come a governor who shall shepherd my people, Israel.’”",
-      "why": "Matthew combines royal rule with shepherding and modifies the citation to interpret Bethlehem's significance."
+      "why": "Matthew combines royal rule with shepherding and his wording, ‘in no way least,’ differs from Micah 5:2, which has ‘being small’."
     },
     {
       "ref": "2:11",
       "text": "They came into the house and saw the young child with Mary, his mother, and they fell down and worshiped him. Opening their treasures, they offered to him gifts: gold, frankincense, and myrrh.",
-      "why": "Foreign court experts recognize the king that Herod fears and Jerusalem's interpreters do not visit."
+      "why": "Wise men from the east recognize the king that Herod fears and Jerusalem's interpreters do not visit."
     },
     {
       "ref": "2:15",
@@ -57,7 +61,7 @@
     {
       "id": "q1",
       "question": "Who are the magi — were they three kings?",
-      "answer": "Magoi were eastern experts associated with courts, astrology, dreams, or priestly learning. Matthew gives no number and does not call them kings; three comes from the gifts, while royal imagery grew through later links to Psalms and Isaiah. The narrative's surprise is that foreign interpreters of signs seek Israel's king.",
+      "answer": "Magoi was the name Babylonians, Medes, Persians and others gave their wise men, among them priests, astrologers and interpreters of dreams. Matthew gives no number and does not call them kings; the number three is usually traced to the three gifts, while royal imagery grew through later links to Psalms and Isaiah. The narrative's surprise is that foreign interpreters of signs seek Israel's king.",
       "verseRefs": [
         "2:1",
         "2:2",
@@ -89,7 +93,7 @@
     {
       "id": "q3",
       "question": "Why can the scholars quote the right place and still miss the child?",
-      "answer": "Matthew separates textual knowledge from obedient response. The chief priests and scribes answer Herod accurately from Scripture, but the magi act on what they know. This is not an attack on study; it is an early warning that possession of correct words does not guarantee allegiance.",
+      "answer": "Matthew separates textual knowledge from obedient response. The chief priests and scribes answer Herod accurately from Scripture, but the magi act on what they know. On one common reading, this is not an attack on study but an early warning that possession of correct words does not guarantee allegiance.",
       "verseRefs": [
         "2:4",
         "2:5",
@@ -160,7 +164,10 @@
   "glossary": [
     {
       "term": "Magi",
-      "def": "Eastern learned or priestly court figures associated with interpreting stars, dreams, and signs; not identified as three kings in Matthew."
+      "def": "Eastern wise men and priests associated with interpreting stars, dreams, and signs; not identified as three kings in Matthew.",
+      "verses": [
+        "2:1"
+      ]
     },
     {
       "term": "Herod the Great",
@@ -172,9 +179,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "d79bf8bd34d87f2145796957317b6f23b792eaaee37e0474b120b1a871857eaa",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

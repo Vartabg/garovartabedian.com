@@ -6,31 +6,36 @@
   "whyItMatters": "Matthew's king enters without imperial force yet brings judgment to worship that has failed its purpose. The chapter repeatedly opposes public claim to actual response: saying yes versus doing, guarding a vineyard versus seizing it, building versus rejecting the cornerstone. Authority is recognized through fruit and Scripture, not merely office.",
   "context": {
     "author": "Anonymous narrator beginning the Jerusalem confrontation",
-    "audience": "Readers interpreting kingship, temple, leadership, and judgment after Jerusalem's destruction",
-    "date": "Late-first-century Gospel composition",
-    "setting": "Jerusalem during Passover pilgrimage, especially the temple precincts",
+    "audience": "Probably Jewish and Gentile readers interpreting kingship, temple, leadership, and judgment, most likely after Jerusalem's destruction",
+    "date": "Most date it after AD 70, often the 80s or 90s; earlier dates remain defended",
+    "setting": "Bethphage, Jerusalem and its temple, and Bethany (21:1, 21:12, 21:17)",
     "literaryForm": "Royal sign-act, temple protest, enacted parable, controversy, and judgment parables"
   },
   "outline": [
     {
       "heading": "Humble king enters to Hosanna",
-      "verses": "1-11"
+      "verses": "1-11",
+      "note": "Two disciples fetch a donkey and colt; crowds spread clothes and branches and cry 'Hosanna to the son of David'"
     },
     {
       "heading": "Temple protest, healing, and children's praise",
-      "verses": "12-17"
+      "verses": "12-17",
+      "note": "He drives out sellers, overturns tables, and calls the temple 'a den of robbers'; he heals the lame and blind"
     },
     {
       "heading": "Fig tree, faith, and prayer",
-      "verses": "18-22"
+      "verses": "18-22",
+      "note": "Hungry, he finds only leaves on a fig tree and it withers; he says faith can throw a mountain into the sea"
     },
     {
       "heading": "Authority and the two sons",
-      "verses": "23-32"
+      "verses": "23-32",
+      "note": "Asked his authority, Jesus asks about the baptism of John; they will not answer. Of two sons, the one who refused goes"
     },
     {
       "heading": "Violent tenants and the rejected stone",
-      "verses": "33-46"
+      "verses": "33-46",
+      "note": "Tenant farmers beat and kill the servants, then the son; Jesus cites the rejected stone; the chief priests see it targets them"
     }
   ],
   "keyVerses": [
@@ -61,7 +66,7 @@
     {
       "id": "q1",
       "question": "Why does Matthew seem to describe two animals?",
-      "answer": "Zechariah's Hebrew poetic parallelism describes a king on a donkey, on a colt; Matthew's wording foregrounds both mother and colt and later uses a plural pronoun. The disciples place garments on them, while Jesus need not be imagined riding both at once. Matthew makes the scriptural scene visibly literal, and his phrasing remains awkward enough that translations often smooth it.",
+      "answer": "Zechariah's poetry names one animal twice, ‘on a donkey, even on a colt’ (Zechariah 9:9); Matthew's wording foregrounds both mother and colt and later uses a plural pronoun. The disciples place garments on them, while Jesus need not be imagined riding both at once. Matthew makes the scriptural scene visibly literal; the hosted text says ‘he sat on them’ (21:7).",
       "verseRefs": [
         "21:2",
         "21:5",
@@ -89,7 +94,7 @@
     {
       "id": "q3",
       "question": "Was Jesus objecting to all buying and selling in the temple?",
-      "answer": "Pilgrims needed animals and acceptable coinage, so exchange itself served worship. The protest targets what the system has become and where it operates, interpreted by a ‘house of prayer’ and a ‘den of robbers.’ Jeremiah's den is not merely a place where robbery occurs; it is a refuge where wrongdoers imagine worship protects them from judgment.",
+      "answer": "The law let pilgrims from far away buy animals at the place of worship (Deuteronomy 14:24-26), and the Mishnah, written down later, puts money changers in the temple for the yearly half-shekel (Shekalim 1:3), so exchange itself served worship. The protest targets what the system has become and where it operates, interpreted by a ‘house of prayer’ and a ‘den of robbers.’ Jeremiah's den is not merely a place where robbery occurs; it is a refuge where wrongdoers imagine worship protects them from judgment (Jeremiah 7:9-11).",
       "verseRefs": [
         "21:12",
         "21:13"
@@ -103,7 +108,7 @@
     {
       "id": "q4",
       "question": "Why curse a fig tree for having no fruit?",
-      "answer": "Matthew compresses the event into an enacted prophetic sign. Fig-tree imagery can represent Israel or its leaders, and the scene follows a temple protest centered on fruitless authority. The point is not botanical fairness or Jesus's irritation at breakfast; visible leaves without expected fruit become judgment imagery.",
+      "answer": "Matthew compresses the event into an enacted prophetic sign. Fig-tree imagery can represent Israel or its leaders, and the scene follows a temple protest centered on fruitless authority. On one common reading, the point is not botanical fairness or Jesus's irritation at breakfast; visible leaves without expected fruit become judgment imagery.",
       "verseRefs": [
         "21:18",
         "21:19"
@@ -167,7 +172,7 @@
     {
       "id": "q8",
       "question": "Is the rejected stone a cornerstone or capstone?",
-      "answer": "Kephalē gōnias literally means ‘head of the corner’ and can be understood as a cornerstone or crowning stone. The architectural detail is less certain than the reversal: builders judge a stone unfit, but the Lord makes it decisive. Matthew links the rejected son with Psalm 118's vindicated stone.",
+      "answer": "Kephalē gōnias literally means ‘head of the corner’, usually taken as the cornerstone. The architectural detail is less certain than the reversal: builders judge a stone unfit, but the Lord makes it decisive. Matthew links the rejected son with Psalm 118's vindicated stone.",
       "verseRefs": [
         "21:42"
       ],
@@ -184,17 +189,27 @@
     },
     {
       "term": "Den of robbers",
-      "def": "Jeremiah's image of a refuge where wrongdoers presume worship shields them from judgment."
+      "def": "Jeremiah's image of a refuge where wrongdoers presume worship shields them from judgment (Jeremiah 7:9-11)."
     },
     {
       "term": "Cornerstone",
-      "def": "The decisive rejected stone of Psalm 118, with the exact architectural placement debated."
+      "def": "The decisive rejected stone of Psalm 118, with the exact architectural placement debated.",
+      "verses": [
+        "21:42"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "2331abe2d2ca1f7a1c878a07d8efe9754ea9e7938c682aedf39241216260bb42",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

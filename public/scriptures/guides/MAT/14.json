@@ -6,27 +6,31 @@
   "whyItMatters": "Matthew contrasts two banquets and two kinds of rule: Herod's table produces a prophet's head, while Jesus's wilderness table feeds the vulnerable. The sea scene then makes discipleship visible as a mixture of real obedience, little faith, doubt, rescue, and worship.",
   "context": {
     "author": "Anonymous narrator linking Herod's violence with bread and sea traditions",
-    "audience": "Readers learning to recognize messianic authority without hiding disciple failure",
-    "date": "Late-first-century Gospel composition",
+    "audience": "Greek-speaking readers familiar with Jewish Scripture, probably both Jewish and Gentile followers of Jesus; here, learning to recognize messianic authority without hiding disciple failure",
+    "date": "After AD 70 on most current views, often the 80s or 90s; earlier dates are defended",
     "setting": "Herod's court, a deserted Galilean place, and the lake at night",
-    "literaryForm": "Flashback martyrdom, feeding sign, sea theophany, and healing summary"
+    "literaryForm": "Flashback martyrdom, feeding sign, sea-walking scene, and healing summary"
   },
   "outline": [
     {
       "heading": "Herod's feast and John's death",
-      "verses": "1-12"
+      "verses": "1-12",
+      "note": "Herod thinks Jesus is John risen; the daughter of Herodias dances, Herod swears an oath, and John is beheaded in prison"
     },
     {
       "heading": "Compassion and bread in a deserted place",
-      "verses": "13-21"
+      "verses": "13-21",
+      "note": "Crowds follow on foot and he heals their sick; 'You give them something to eat'; five loaves, two fish, twelve baskets left"
     },
     {
       "heading": "Jesus and Peter on the sea",
-      "verses": "22-33"
+      "verses": "22-33",
+      "note": "Jesus walks on the sea in the fourth watch; Peter steps out, sinks, and cries 'Lord, save me'; those in the boat worship him"
     },
     {
       "heading": "Recognition and healing at Gennesaret",
-      "verses": "34-36"
+      "verses": "34-36",
+      "note": "At Gennesaret people recognize him and bring all the sick; everyone who touches the fringe of his garment is made whole"
     }
   ],
   "keyVerses": [
@@ -57,7 +61,7 @@
     {
       "id": "q1",
       "question": "Which Herod is this, and why does he think Jesus is John raised?",
-      "answer": "Herod Antipas, son of Herod the Great, ruled Galilee under Rome. Guilt and popular speculation make Jesus's works sound to him like the return of the prophet he executed. Matthew uses his fearful explanation to flash back and show what happened to John.",
+      "answer": "Herod Antipas, son of Herod the Great, ruled Galilee under Rome (Josephus, Antiquities 17.8.1; 17.11.4). On one common reading, guilt and popular talk (compare 16:14) make Jesus's works sound to him like the return of the prophet he executed. Matthew uses his fearful explanation to flash back and show what happened to John.",
       "verseRefs": [
         "14:1",
         "14:2",
@@ -73,7 +77,7 @@
     {
       "id": "q2",
       "question": "Why does Herod carry out an order he says grieves him?",
-      "answer": "His oath is made publicly before banquet guests, and honor culture turns retreat into loss of face. The story does not excuse him: a ruler values reputation and a rash promise above an innocent life. Matthew shows social pressure becoming lethal when power refuses repentance.",
+      "answer": "His oath is made publicly before banquet guests, and Matthew says he acted ‘for the sake of his oaths and of those who sat at the table with him’. The story does not excuse him: a ruler values reputation and a rash promise above an innocent life. Matthew shows social pressure becoming lethal when power refuses repentance.",
       "verseRefs": [
         "14:9",
         "14:10"
@@ -115,7 +119,7 @@
     {
       "id": "q5",
       "question": "Does Jesus say ‘It is I’ or ‘I am’ on the water?",
-      "answer": "Greek egō eimi can be ordinary self-identification — ‘it is I’ — and can also carry scriptural resonance when spoken by one walking the chaotic sea and saying ‘do not fear.’ Context makes the moment theophanic without requiring the phrase itself to function as a secret divine code every time it appears.",
+      "answer": "Greek egō eimi can be ordinary self-identification — ‘it is I’ — and can also carry scriptural resonance when spoken by one walking the chaotic sea and saying ‘do not fear.’ On one common reading, context makes the moment theophanic without requiring the phrase itself to function as a secret divine code every time it appears.",
       "verseRefs": [
         "14:26",
         "14:27"
@@ -174,9 +178,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "d73d2c4783ca507ac01e51a648e483606cd4ce52a1210abfa8956402a0eb495d",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

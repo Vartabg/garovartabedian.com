@@ -7,26 +7,30 @@
   "context": {
     "author": "Anonymous narrator arranging the fourth major discourse",
     "audience": "A gathered community dealing with status, harm, wandering members, conflict, and forgiveness",
-    "date": "Late-first-century Gospel composition",
-    "setting": "A house or private teaching setting in Galilee",
+    "date": "Most date it after AD 70, often the 80s or 90s; earlier dates remain defended",
+    "setting": "Galilee, which Jesus leaves when he finishes these words (19:1)",
     "literaryForm": "Symbolic action, warnings, lost-sheep image, restoration procedure, promise, and debt parable"
   },
   "outline": [
     {
       "heading": "A child in the middle and true greatness",
-      "verses": "1-5"
+      "verses": "1-5",
+      "note": "Asked who is greatest, Jesus sets a child in the middle: unless you 'become as little children' you will not enter"
     },
     {
       "heading": "Stumbling, self-judgment, and little ones",
-      "verses": "6-14"
+      "verses": "6-14",
+      "note": "A millstone is better than causing little ones to stumble; cut off the hand or foot; a man seeks one lost sheep"
     },
     {
       "heading": "A process for regaining a sibling",
-      "verses": "15-20"
+      "verses": "15-20",
+      "note": "If a brother sins, go alone, then take one or two, then tell the assembly; 'where two or three are gathered'"
     },
     {
       "heading": "Seventy-sevenfold forgiveness and refused mercy",
-      "verses": "21-35"
+      "verses": "21-35",
+      "note": "Peter proposes seven times; Jesus says 'seventy times seven'; a servant forgiven ten thousand talents jails a debtor of a hundred denarii"
     }
   ],
   "keyVerses": [
@@ -57,7 +61,7 @@
     {
       "id": "q1",
       "question": "Does ‘become like children’ mean innocent, trusting, or teachable?",
-      "answer": "Jesus explains his comparison with ‘humble himself’ and places a socially dependent child in the center of an adult rank dispute. Ancient children were loved but lacked adult status and power. The point is not romantic innocence; it is relinquishing claims to greatness and receiving the low-status person in Jesus's name.",
+      "answer": "Jesus explains his comparison with ‘humble himself’ and places a socially dependent child in the center of an adult rank dispute. Most readers take the point to be not romantic innocence but relinquishing claims to greatness and receiving the low-status person in Jesus's name.",
       "verseRefs": [
         "18:2",
         "18:3",
@@ -107,7 +111,7 @@
     {
       "id": "q4",
       "question": "Why is verse 11 absent or footnoted in many editions?",
-      "answer": "The sentence ‘the Son of Man came to save that which was lost’ is missing from early major Greek witnesses and likely entered Matthew from Luke 19:10 or a familiar liturgical tradition. The surrounding lost-sheep paragraph still teaches the Father's will that none of the little ones be lost.",
+      "answer": "The sentence ‘the Son of Man came to save that which was lost’ is missing from early major Greek witnesses and likely entered Matthew from Luke 19:10. The surrounding lost-sheep paragraph still teaches the Father's will that none of the little ones be lost.",
       "verseRefs": [
         "18:10",
         "18:12"
@@ -121,7 +125,7 @@
     {
       "id": "q5",
       "question": "Is the conflict process a license to confront every issue rigidly?",
-      "answer": "Its aim is explicit: ‘you have gained your brother.’ It begins privately, adds only one or two witnesses, and involves the assembly after refusal. Power differences, abuse, crimes, and safety can require immediate outside protection rather than private confrontation. A restorative sequence must not become a shield for secrecy or retaliation.",
+      "answer": "Its aim is explicit: ‘you have gained back your brother.’ It begins privately, adds only one or two witnesses, and involves the assembly after refusal. Power differences, abuse, crimes, and safety can require immediate outside protection rather than private confrontation. A restorative sequence must not become a shield for secrecy or retaliation.",
       "verseRefs": [
         "18:15",
         "18:16",
@@ -136,7 +140,7 @@
     },
     {
       "id": "q6",
-      "question": "What does treating someone ‘as a Gentile and a tax collector’ mean?",
+      "question": "What does treating someone ‘as a Gentile or a tax collector’ mean?",
       "answer": "It marks that the person no longer participates as a reconciled community member; boundaries are real. Yet Matthew has already shown Jesus calling a tax collector and praising Gentile faith. The phrase cannot mean hatred or permanent dehumanization. Even exclusion remains under a mission of truth and possible restoration.",
       "verseRefs": [
         "18:17"
@@ -165,7 +169,7 @@
     {
       "id": "q8",
       "question": "Is Peter told to forgive seventy-seven times or seventy times seven?",
-      "answer": "The Greek can be understood either way, and English editions differ. Both numbers answer Peter's proposed seven with a number too large for moral bookkeeping and echo Lamech's escalating vengeance in Genesis 4. Jesus reverses the arithmetic: disciples do not track mercy toward a final permitted refusal.",
+      "answer": "The Greek can be understood either way, and English editions differ. Both numbers answer Peter's proposed seven with a number too large for moral bookkeeping and are often read as an echo of Lamech's ‘seventy-seven times’ in Genesis 4:24. Jesus reverses the arithmetic: disciples do not track mercy toward a final permitted refusal.",
       "verseRefs": [
         "18:21",
         "18:22"
@@ -192,9 +196,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "8e7353ab901fe9efe853b8220b6dc96dec94bb468ed121a1c324f930b92ad152",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

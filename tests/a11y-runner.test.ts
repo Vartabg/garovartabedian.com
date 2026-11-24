@@ -44,9 +44,10 @@ function mockAuditor(outcomes: unknown[]) {
 }
 
 test("one or two workers audit every route exactly once, including the visual story and source tools", () => {
-  assert.equal(routes.length, 94);
+  assert.equal(routes.length, 95);
   assert.ok(routes.includes("/scriptures/stories/play"));
   assert.ok(routes.includes("/scriptures/stories/play/overturned-tables"));
+  assert.ok(routes.includes("/scriptures/stories/play/valley-of-elah"));
   assert.ok(routes.includes("/play/hermon/crossing/account"));
   assert.ok(routes.includes("/scriptures/word-bridge"));
   assert.ok(routes.includes("/#lens=engineer"));

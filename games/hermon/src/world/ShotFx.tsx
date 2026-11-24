@@ -14,7 +14,6 @@ import { eventBurstIndex } from '@/game/burst';
 import { guarded } from '@/game/shooterFault';
 import { runtime } from '@/game/runtime';
 import { useGame } from '@/game/store';
-import { cannonLink } from './cannonContract';
 import { ATTENUATE_FROM } from '@/game/burst';
 import { CLEAR_PX, claim, haloAlpha, haloClampPx, isShotKind, makePuffs, makeSteam, metresPerPx, pxSize, startSteam, stepSteam, tracerOrigin,
   tracerSpan, tracerWidth, type Ring, type TracerOrigin, type TracerSpan } from './fxPools';
@@ -26,8 +25,7 @@ const FLASH_T = .05, FLASH_LATE_T = .033, BLOOM_T = .033, GLINT_T = .08, CORE_PX
 const SPIKE_PX = 64, SPIKE_W = 5, CROSS_PX = 28, SPIKE_JITTER = .17, SPIKE_JITTER_LATE = .45, TRACER_PX = 4, TRACER_TOUCH_PX = 5;
 const copy = (o: Vec3, v: Vec3) => { o.x = v.x; o.y = v.y; o.z = v.z; return o; };
 const ndc = new Vector3(), ndc2 = new Vector3();
-/** The kicked cannon muzzle, else the solved gameplay muzzle, else the fallback (the shot's own origin). */
-const muzzleOr = (fallback: Vec3): Vec3 => cannonLink.fxMuzzle.valid ? cannonLink.fxMuzzle : runtime.shooter.muzzle.valid ? runtime.shooter.muzzle : fallback;
+const muzzleOr = (fallback: Vec3): Vec3 => runtime.shooter.muzzle.valid ? runtime.shooter.muzzle : fallback;
 
 export function createShotFx() {
   const tracers = tracerPool(TRACERS), sprites = spritePool(SPRITES, true);
@@ -40,7 +38,7 @@ export function createShotFx() {
   const lastFrom = { x: 0, y: 0, z: 0 }, flashPos = { x: 0, y: 0, z: 0 }, glowCol = { r: 0, g: 0, b: 0 };
   const glintPos = { x: 0, y: 0, z: 0 }, shown = new Uint8Array(PUFFS), org: TracerOrigin = { from: { x: 0, y: 0, z: 0 }, dir: { x: 0, y: 0, z: 0 }, dist: 0 };
   const shotDir = { x: 0, y: 0, z: -1 }, spikeAt = { x: 0, y: 0, z: 0 };
-  let reduced = false, flashAt = -1e9, bloomAt = -1e9, glintAt = -1e9, spriteTop = 0, clock = 0, haloA = .45, flashT = FLASH_T, late = false, jitter = 0, sign = 1;
+  let reduced = false, flashAt = -1e9, bloomAt = -1e9, glintAt = -1e9, spriteTop = 0, haloA = .45, flashT = FLASH_T, late = false, jitter = 0, sign = 1;
   /** Marks a fixed sprite slot drawn (raising the draw count) or hides it once when it goes dark. */
   const show = (slot: number, on: boolean) => {
     if (on) { shown[slot] = 1; spriteTop = Math.max(spriteTop, slot + 1); } else if (shown[slot]) { hideSprite(sprites, slot); shown[slot] = 0; }
@@ -66,7 +64,7 @@ export function createShotFx() {
     shotDir.x = dx / dl; shotDir.y = dy / dl; shotDir.z = dz / dl; sign = -sign; jitter = sign * (late ? SPIKE_JITTER_LATE : SPIKE_JITTER) * (.4 + .6 * rng());
     if (flashGate(hist, 0, e.t)) bloomAt = e.t;
     if (e.kind === 'miss') { glintAt = e.t; copy(glintPos, e.point); }
-    if (!tracerOrigin(e, clock, cannonLink.fxMuzzle, org)) return;
+    if (!tracerOrigin(e, org)) return;
     const i = claim(ring), o = i * TR, f = org.from, d = org.dir;
     tr[o] = e.t; tr[o + 1] = f.x; tr[o + 2] = f.y; tr[o + 3] = f.z;
     tr[o + 4] = d.x; tr[o + 5] = d.y; tr[o + 6] = d.z; tr[o + 7] = org.dist; live[i] = 2;
@@ -75,7 +73,7 @@ export function createShotFx() {
   const alphaOf = (m: typeof sprites) => m.geometry.attributes.aAlpha.array as Float32Array;
   const frame = (st: RootState) => {
     const s = runtime.shooter, t = s.clock, el = st.gl.domElement;
-    reduced = useGame.getState().reduced; clock = t;
+    reduced = useGame.getState().reduced;
     readEvents(s, cursor, onEvent);
     const cam = st.camera as PerspectiveCamera, fov = cam.fov || s.aim.fov, h = el.clientHeight || 1, w = el.clientWidth || 1, c = cam.position;
     const floorPx = s.input.lookSource === 'touch' || s.input.lookSource === 'tap' ? TRACER_TOUCH_PX : TRACER_PX;
@@ -132,7 +130,7 @@ export function createShotFx() {
       const k = Math.max(.3, GLINT_PX * metresPerPx(Math.hypot(glintPos.x - c.x, glintPos.y - c.y, glintPos.z - c.z), fov, h));
       setSprite(sprites, GLINT, glintPos, k, k, FX.core, 1, 1 - ga / GLINT_T);
     }
-    stepSteam(steamQ, t, cannonLink.ventMouth, muzzleOr(steamFrom), rng, steam, FX.steam, cannonLink.ventDir);
+    stepSteam(steamQ, t, muzzleOr(steamFrom), rng, steam, FX.steam);
     commit(sprites, Math.max(spriteTop, drawPuffs(sprites, steam, t, PUFFS)));
   };
   return { tracers, sprites, tick: guarded('ShotFx', frame) };

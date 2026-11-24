@@ -32,15 +32,10 @@ import ImpactFx from './ImpactFx';
 import { useGame } from '@/game/store';
 import { clearInput, runtime } from '@/game/runtime';
 import { EXPOSURE, FAR_PLANE, FOG, HEMISPHERE, SUN_COLOR, SUN_INTENSITY, SUN_POSITION } from './atmospherePalette';
-import { labFault } from '@/ui/labSwitch';
 import { useTouchCapable } from '@/ui/useTouchCapable';
-// The Gesture Lab's scene parts load only when a lab scheme is on (spec 10): the drone screen history (-9), Draw's world probe
-// (-45) and ribbon, and the hero trail. The standard controls fetch only the drone screen history, and only for the classic one
-// thumb with the blaster on (tap a drone to blast, 2026-09-26).
-const GestureTrack = lazy(() => import('./GestureTrack'));
-const DrawProbe = lazy(() => import('./DrawProbe'));
-const GestureRibbon = lazy(() => import('./GestureRibbon'));
-const HeroTrail = lazy(() => import('./HeroTrail'));
+
+const WatcherTrack = lazy(() => import('./WatcherTrack'));
+
 function GraphicsRecovery({ onLoss, sun }: { onLoss: () => void; sun: React.RefObject<DirectionalLight | null> }) {
   const { gl, invalidate } = useThree();
   useEffect(() => {
@@ -58,35 +53,28 @@ function GraphicsRecovery({ onLoss, sun }: { onLoss: () => void; sun: React.RefO
   });
   return null;
 }
-/** The fight: the demons, their attacks, the sword and the casting down, mounted only while the setting is on. A render error
- * turns the fight off; flight continues. */
+
+/** The Watchers encounter, mounted only while toggled on. A render error turns it off while flight continues. */
 function ShooterLayer() {
   const shooter = useGame(s => s.shooter);
   return shooter ? <ShooterAssets /> : null;
 }
+
 function ShooterAssets() {
-  // A missing demon model is a reloadable world download failure. Load outside the optional fault boundary.
   useLoader(characterLoader, ADVERSARY_URL);
   return <Boundary fallback={null} onError={() => shooterFault('render', null)}><Shooter /><Drones /><ShotFx /><ImpactFx /><Battle />
     <Banishment /><CounterCue /><FlamingSword /></Boundary>;
 }
-/** Standard on the classic one thumb, blaster on, touch-capable device: the drone screen history alone (the tap pick reads it).
- *  A desktop that has never shown touch mounts nothing here, so its Standard stays as it was. A failure only leaves it out. */
+
+/** Mobile One-finger tap-to-strike screen history, mounted only on touch-capable devices while Watchers are active. */
 function TapTrack() {
-  const on = useGame(s => s.shooter && s.touchScheme === 'classic' && s.controlLab === 'standard'), capable = useTouchCapable();
-  return on && capable ? <Boundary fallback={null} onError={() => {}}><Suspense fallback={null}><GestureTrack /></Suspense></Boundary> : null;
+  const on = useGame(s => s.shooter && s.touchScheme === 'classic'), capable = useTouchCapable();
+  return on && capable ? <Boundary fallback={null} onError={() => {}}><Suspense fallback={null}><WatcherTrack /></Suspense></Boundary> : null;
 }
-/** Mounted inside Physics (DrawProbe queries the world). A load or render error returns the session to the standard controls. */
-function LabLayer() {
-  const lab = useGame(s => s.controlLab);
-  if (lab === 'standard') return <TapTrack />;
-  return <Boundary key={lab} fallback={null} onError={() => labFault('The Gesture Lab scene failed. Standard controls are on.')}>
-    <Suspense fallback={null}><GestureTrack />{lab === 'draw' && <><DrawProbe /><GestureRibbon /></>}<HeroTrail /></Suspense>
-  </Boundary>;
-}
+
 export default function Scene({ onLoss }: { onLoss: () => void }) {
   const paused = useGame(s => s.paused), quality = useGame(s => s.quality), sun = useRef<DirectionalLight>(null);
-  return <Canvas aria-label="Three-dimensional Mount Hermon at dawn. A winged angel fights the host of the fallen Watchers. Text description and keyboard controls are available in the field guide."
+  return <Canvas aria-label="Three-dimensional Mount Hermon at dawn. A winged angel flies over the mountain and may challenge the host of the fallen Watchers. Text description and keyboard controls are available in the field guide."
     role="img" frameloop="demand" dpr={quality === 'high' ? [1, 1.5] : 1} shadows={quality === 'high' ? 'percentage' : false}
     camera={{ position: [0, 24, 72], fov: 65, near: .1, far: FAR_PLANE }}
     gl={{ antialias: true, alpha: false, powerPreference: 'high-performance', stencil: false }}
@@ -102,7 +90,7 @@ export default function Scene({ onLoss }: { onLoss: () => void }) {
       <Physics paused={paused} timeStep={1 / 60} updatePriority={-50} gravity={[0, -22, 0]}>
         <NearMassif /><OuterRanges /><DistrictBoundary /><Player /><FlightPresentation /><Suit /><CameraRig />
         <Suspense fallback={null}><ShooterLayer /></Suspense>
-        <LabLayer />
+        <TapTrack />
       </Physics>
     </Suspense>
   </Canvas>;

@@ -2,31 +2,35 @@
   "book": "MAT",
   "chapter": 28,
   "bookName": "Matthew",
-  "summary": "At dawn after the Sabbath, Mary Magdalene and the other Mary come to the tomb. An earthquake and descending angel expose an empty place and announce that Jesus has been raised ‘just as he said.’ The women leave with fear and great joy to tell the disciples, and Jesus meets them on the way. Guards report to chief priests, who pay for an alternative story. In Galilee the eleven worship and doubt. Jesus declares all authority in heaven and earth, commissions them to make disciples of all nations by going, baptizing, and teaching obedience, and closes with the promise, ‘I am with you always.’",
+  "summary": "At dawn after the Sabbath, Mary Magdalene and the other Mary come to the tomb. An earthquake and descending angel expose an empty place and announce that Jesus has been raised ‘just like he said.’ The women leave with fear and great joy to tell the disciples, and Jesus meets them on the way. Guards report to chief priests, who pay for an alternative story. In Galilee the eleven worship and doubt. Jesus declares all authority in heaven and earth, commissions them to make disciples of all nations by going, baptizing, and teaching obedience, and closes with the promise, ‘I am with you always.’",
   "whyItMatters": "Matthew ends by joining resurrection evidence, contested explanation, imperfect witnesses, universal mission, and presence. Doubt is not edited out before commissioning. The main command is to make disciples, not merely travel or secure decisions, and Jesus's authority is expressed through baptism, sustained teaching, and a promise that answers Immanuel in chapter 1.",
   "context": {
     "author": "Anonymous narrator concluding with distinctive guard and Galilee-commission scenes",
-    "audience": "A worshiping yet imperfect community already making disciples across nations",
-    "date": "Late-first-century Gospel composition",
+    "audience": "Greek-speaking readers, probably Jewish and Gentile, sent with the eleven to make disciples of all nations",
+    "date": "After AD 70 on most current dating, often the 80s or 90s; earlier dates are defended",
     "setting": "A tomb near Jerusalem and a mountain in Galilee",
     "literaryForm": "Empty-tomb announcement, appearance, counter-report, and commissioning epilogue"
   },
   "outline": [
     {
       "heading": "Women, earthquake, angel, and empty tomb",
-      "verses": "1-8"
+      "verses": "1-8",
+      "note": "Two women come at dawn; an earthquake, an angel rolls the stone, guards fall like dead men; 'He is not here'"
     },
     {
       "heading": "Jesus meets and sends the women",
-      "verses": "9-10"
+      "verses": "9-10",
+      "note": "Jesus meets the women on their way; they hold his feet and worship; he tells them to send his brothers to Galilee"
     },
     {
       "heading": "The guards' report and a purchased counter-story",
-      "verses": "11-15"
+      "verses": "11-15",
+      "note": "The guards tell the chief priests what happened; the elders give them silver to say the disciples stole the body"
     },
     {
       "heading": "Worship, doubt, all authority, and all nations",
-      "verses": "16-20"
+      "verses": "16-20",
+      "note": "On a Galilee mountain the eleven bow, though some doubted; Jesus says 'All authority has been given to me'"
     }
   ],
   "keyVerses": [
@@ -121,13 +125,13 @@
     {
       "id": "q5",
       "question": "How can the eleven worship and doubt at the same time?",
-      "answer": "Distazō means hesitate or waver, the word used when Peter is divided on the water. The Greek plural may mean some doubted or describe the group collectively; Matthew does not identify which. Resurrection does not instantly turn disciples into psychologically flawless heroes. Jesus approaches and commissions this worshiping, wavering community.",
+      "answer": "Distazō means doubt or waver, the word used when Peter is divided on the water. The Greek plural may mean some doubted or describe the group collectively; Matthew does not identify which. Resurrection does not instantly turn disciples into psychologically flawless heroes. Jesus approaches and commissions this worshiping, wavering community.",
       "verseRefs": [
         "28:16",
         "28:17",
         "28:18"
       ],
-      "category": "word",
+      "category": "hard_verse",
       "relatedVerses": [
         16,
         17,
@@ -163,7 +167,7 @@
     {
       "id": "q8",
       "question": "Why singular ‘name’ but Father, Son, and Holy Spirit?",
-      "answer": "Matthew uses singular onoma followed by a threefold coordinated confession. The verse became foundational for Christian trinitarian baptism, though later creeds use more developed vocabulary than Matthew supplies here. The formula joins the three within one baptismal allegiance without pausing to explain later metaphysics.",
+      "answer": "Matthew uses singular onoma followed by a threefold coordinated confession. The verse supplied Christian baptism its threefold formula, already found in the Didache (7:1-3). The formula joins the three within one baptismal allegiance without pausing to explain later metaphysics.",
       "verseRefs": [
         "28:19"
       ],
@@ -192,7 +196,10 @@
     },
     {
       "term": "Baptize",
-      "def": "Immerse or wash into a named allegiance and gathered identity."
+      "def": "Immerse or dip into a named allegiance and gathered identity.",
+      "verses": [
+        "28:19"
+      ]
     },
     {
       "term": "End of the age",
@@ -200,9 +207,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-23",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-23); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "9cd8a7280e59bcc67aa8c6d0cd9bee3e19352cc718f81605a9c988ca7b6ffd71",
+    "generatedAt": "2026-08-04T19:57:45.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

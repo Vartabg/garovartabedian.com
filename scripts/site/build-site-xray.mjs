@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url";
 import { pathOnly, xrayFamilyFor } from "../../src/lib/site/xray-families.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const ARCHIVE_SCRIPTS_DIR = path.join(ROOT, "scripts", "archive");
 export const SITE_XRAY_PATH = path.join(ROOT, "public/meta/site-xray.json");
 
 // Only plain words, digits and light punctuation leave the builder. No slash
@@ -32,17 +33,21 @@ export function assertPublicString(value, where) {
   return value;
 }
 
-function walk(directory, keep) {
+function walk(directory, keep, skipDir) {
   const found = [];
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     const target = path.join(directory, entry.name);
-    if (entry.isDirectory()) found.push(...walk(target, keep));
-    else if (entry.isFile() && keep(entry.name)) found.push(target);
+    if (entry.isDirectory()) {
+      if (skipDir?.(target)) continue;
+      found.push(...walk(target, keep, skipDir));
+    } else if (entry.isFile() && keep(entry.name)) {
+      found.push(target);
+    }
   }
   return found.sort();
 }
 
-const files = (directory, keep) => walk(path.join(ROOT, directory), keep);
+const files = (directory, keep, skipDir) => walk(path.join(ROOT, directory), keep, skipDir);
 const top = (directory, keep) =>
   fs.readdirSync(path.join(ROOT, directory), { withFileTypes: true })
     .filter((entry) => entry.isFile() && keep(entry.name))
@@ -80,7 +85,7 @@ export function collectSiteXray() {
   return {
     schemaVersion: 1,
     counts: {
-      buildScripts: files("scripts", (name) => /^build-.*\.(?:mjs|ts)$/.test(name)).length,
+      buildScripts: files("scripts", (name) => /^build-.*\.(?:mjs|ts)$/.test(name), (target) => target === ARCHIVE_SCRIPTS_DIR).length,
       publicJson: files("public", (name) => name.endsWith(".json")).length,
       unitTestFiles: top("tests", (name) => /\.test\.tsx?$/.test(name)).length,
       browserSpecs: specs.length,

@@ -1,6 +1,5 @@
-// Landing-side half of the blaster audio: the AudioContext singleton, its unlock inside a user gesture (iOS needs it
-// synchronous), and its release. The voice graph and voices live in audioBus.ts, which only the lazy scene chunk imports.
-// With the blaster off or muted nothing is created and the audio session is never touched, exactly as on main.
+// AudioContext singleton, synchronous user-gesture unlock (required on iOS), and release for Mount Hermon combat audio.
+// With Watchers off or audio muted, nothing is created and the browser audio session is never touched.
 import { useGame } from '../game/store';
 type Session = { type: string };
 let ctx: AudioContext | null = null, sessionSet = false, watching = false;
@@ -9,7 +8,6 @@ function session(): Session | undefined {
   try { return typeof navigator === 'undefined' ? undefined : (navigator as Navigator & { audioSession?: Session }).audioSession; }
   catch { return undefined; }
 }
-/** Puts the session back to 'auto' only if unlock changed it, so a player who never unlocked keeps main's behaviour. */
 function restoreSession() {
   if (!sessionSet) return;
   sessionSet = false;
@@ -19,19 +17,19 @@ function makeContext() {
   const Ctor = globalThis.AudioContext ?? (globalThis as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
   return Ctor ? new Ctor() : null;
 }
-/** The live blaster context, or null before the first unlock and after a release. */
-export const blasterContext = () => ctx;
+/** The live combat audio context, or null before first unlock and after release. */
+export const hermonAudioContext = () => ctx;
 
-/** Suspends the context (pause, mute, hidden tab) and gives the audio session back. Resuming waits for the next gesture. */
-export function quietBlasterAudio() {
+/** Suspends the context (pause, mute, hidden tab) and restores the audio session. */
+export function quietHermonAudio() {
   const c = ctx;
   if (c && c.state === 'running' && typeof c.suspend === 'function') {
     try { void c.suspend().catch(() => {}); } catch { /* already closing */ }
   }
   restoreSession();
 }
-/** Closes the context completely (blaster off, fault). The next unlock with the blaster on builds a new one. */
-export function releaseBlasterAudio() {
+/** Closes the context completely (Watchers off, fault). */
+export function releaseHermonAudio() {
   const c = ctx; ctx = null;
   if (c) { try { void c.close().catch(() => {}); } catch { /* already closed */ } }
   restoreSession();
@@ -40,17 +38,16 @@ function watch() {
   if (watching) return;
   watching = true;
   useGame.subscribe((s, p) => {
-    if (!s.shooter) { if (p.shooter) releaseBlasterAudio(); return; }
-    if ((s.muted && !p.muted) || (s.paused && !p.paused) || (!s.started && p.started)) quietBlasterAudio();
+    if (!s.shooter) { if (p.shooter) releaseHermonAudio(); return; }
+    if ((s.muted && !p.muted) || (s.paused && !p.paused) || (!s.started && p.started)) quietHermonAudio();
   });
   if (typeof document !== 'undefined')
-    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') quietBlasterAudio(); });
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') quietHermonAudio(); });
 }
 /**
- * Call from inside a click, key, mouse press or pointerup handler (touch pointerdown does not grant activation). Returns at once
- * while the blaster is off or muted: no context, no session change.
+ * Call inside a click, key, mouse press or pointerup handler. Returns immediately while Watchers are off or muted.
  */
-export function unlockBlasterAudio() {
+export function unlockHermonAudio() {
   const g = useGame.getState();
   if (!g.shooter || g.muted) return;
   watch();

@@ -11,21 +11,19 @@ import { hitDrones, projectedStart, rayWater, type DroneHit } from './shotMath';
 import type { ShooterWorld, WorldHit } from './shotResolve';
 import { advanceSpread, advanceWeapon, spreadHalfAngle } from './weapon';
 import { advanceBurst, burst } from './burst';
-import { autoFire, stepAutoFire } from './autoFire';
 import { fireShot, muzzleFrom, realMuzzle, type AudioSink, type StepContext } from './shooterShots';
-import { aimed, shotDirOf, trackAimed } from './gesture/aimedShot';
 export type { AudioSink, StepContext } from './shooterShots';
 export { NEAR_MISS } from './shooterShots';
 
 /**
  * Seconds the hip-fire arm stays raised after a shot. fireHold is exactly 1 on the press frame (held fire, or a pending press such
- * as tapShot) and while a shot is younger than ARM_HOLD, so the cannon swings onto the crosshair on the frame it fires; then it
+ * as tapShot) and while a shot is younger than ARM_HOLD, so the arm swings onto the aim line on the frame it fires; then it
  * decays as exp(-9 dt) (95% in 333 ms) and snaps to 0 under SNAP.
  */
 export const ARM_HOLD = .8, ARM_LOWER = 9;
 export function createStepContext(): StepContext {
   return { dt: 0, paused: false, reduced: false, flying: false, speed: 0, player: { x: 0, y: 0, z: 0 }, head: { x: 0, y: 0, z: 0 },
-    firstPerson: false, strength: 1, autoFire: false, voiced: -1 };
+    firstPerson: false, strength: 1, voiced: -1 };
 }
 
 const rng = mulberry32(9);
@@ -53,7 +51,7 @@ function voice(e: ShotEvent) {
 /** Crosshair point for the suit IK and the HUD: the world, water or a drone along the camera ray (the Gesture Lab's aimed ray while
  * an aimed burst runs), from level with the head. */
 function aimPoint(s: ShooterState, world: ShooterWorld, ctx: StepContext, count: number) {
-  const a = s.aim, o = a.origin, d = shotDirOf(s);
+  const a = s.aim, o = a.origin, d = a.dir;
   projectedStart(o, d, ctx.head, start);
   let t = world.castShot(start, d, SHOT_RANGE, env) ? env.t : Infinity;
   t = Math.min(t, rayWater(start, d));
@@ -78,9 +76,6 @@ export function stepShooter(s: ShooterState, sim: DroneSim, mem: AssistMemory, w
   s.clock += dt;
   const a = s.aim, w = s.weapon, input = s.input, fx = s.camFx;
   if (input.fireSource === 'tap' && s.clock > input.tapFireUntil) releaseFire(s, 'tap');
-  // Gesture Lab aimed bursts: re-aim at the tapped drone and release 'gesture' when the burst is done (the only releaser).
-  trackAimed(s);
-  stepAutoFire(s, autoFire, ctx.autoFire, dt);
   let count = s.drones.count, shotKind = '';
   if (a.valid) {
     // c. Aim state. fireHold is 1 from the press frame (the suit eases its arm weight and swings the barrel onto the line that
@@ -107,8 +102,7 @@ export function stepShooter(s: ShooterState, sim: DroneSim, mem: AssistMemory, w
   }
   // f. Drones. Targets are rebuilt after they move, so the aim point, the assist and next frame's shots see where they are drawn.
   const c = droneContext;
-  // Drones read the real threat: an aimed burst's ray, except mid lock chain (lock time counts as dwell only once it ends).
-  c.dt = dt; copy(c.player, ctx.player); copy(c.camera, a.origin); copy(c.aimDir, aimed.chainLen > 0 ? a.dir : shotDirOf(s)); c.aimDist = a.dist; c.ads = a.blend;
+  c.dt = dt; copy(c.player, ctx.player); copy(c.camera, a.origin); copy(c.aimDir, a.dir); c.aimDist = a.dist; c.ads = a.blend;
   c.threat = threat(s); c.tier = input.lookSource; c.tutorialLocked = s.stats.kills === 0; c.reduced = ctx.reduced;
   advanceDrones(s, sim, c, world.lineClear);
   count = buildTargets(s);
