@@ -18,6 +18,7 @@ export interface StoryAudioEngine {
     wave: OscillatorType,
     delay?: number,
     attack?: number,
+    detuneCents?: number,
   ) => void;
   noise: (
     duration: number,
@@ -28,17 +29,21 @@ export interface StoryAudioEngine {
     level: number,
     delay?: number,
   ) => void;
-  setAmbientTarget: (gain: number) => void;
+  setAmbientTarget: (gain: number, rampSeconds?: number) => void;
+  setAmbientFilter: (freq: number, q?: number, rampSeconds?: number) => void;
   setEnabled: (value: boolean) => void;
   setPaused: (value: boolean) => void;
   close: () => void;
 }
 
+const SUSPEND_DELAY_MS = 75;
+
 /**
  * Procedural Web Audio substrate shared by 2D playable stories:
- * lazy unlock, master/sfx/ambient gain graph, deterministic noise buffer,
- * pause/blur/mute ramping (keeping ambient timers alive across pause/resume),
- * and full teardown on close().
+ * - Lazy unlock with soft master limiter (DynamicsCompressorNode when supported)
+ * - Click-free fade-out before delayed AudioContext suspend (cancellable on resume/close)
+ * - Pre-unlock cached ambient gain & live filter frequency/Q modulation
+ * - Deterministic noise buffer, pause/blur/mute ramping, and full teardown on close()
  */
 export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
   const initialSeed = options.seed ?? 0x51a7c3;
@@ -46,13 +51,17 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
   let master: GainNode | undefined;
   let sfx: GainNode | undefined;
   let ambientGain: GainNode | undefined;
+  let ambientFilter: BiquadFilterNode | undefined;
   let ambientSource: AudioBufferSourceNode | undefined;
   let noiseBuffer: AudioBuffer | undefined;
   let ambientTimer: ReturnType<typeof setInterval> | undefined;
+  let suspendTimer: ReturnType<typeof setTimeout> | undefined;
 
   let enabled = true;
   let paused = false;
   let ambientTarget = 0;
+  let ambientFreqTarget = options.ambientFreq;
+  let ambientQTarget = options.ambientQ;
 
   function ensureNoise(ctx: AudioContext) {
     if (noiseBuffer) return noiseBuffer;
@@ -68,17 +77,51 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
     return buffer;
   }
 
-  function syncGain() {
+  function clearSuspendTimer() {
+    if (suspendTimer !== undefined) {
+      clearTimeout(suspendTimer);
+      suspendTimer = undefined;
+    }
+  }
+
+  function applyFilterParam(param: AudioParam, value: number, now: number, rampSeconds: number) {
+    if (typeof param.setTargetAtTime === 'function') {
+      param.setTargetAtTime(value, now, rampSeconds);
+    } else {
+      param.value = value;
+    }
+  }
+
+  function syncAmbientFilter(rampSeconds = 0.25) {
+    if (!audio || !ambientFilter || audio.state === 'closed') return;
+    try {
+      const now = audio.currentTime;
+      applyFilterParam(ambientFilter.frequency, ambientFreqTarget, now, rampSeconds);
+      applyFilterParam(ambientFilter.Q, ambientQTarget, now, rampSeconds);
+    } catch { /* Silent fallback. */ }
+  }
+
+  function syncGain(ambientRamp = 0.28) {
     if (!audio || !master || audio.state === 'closed') return;
     const now = audio.currentTime;
     const open = enabled && !paused;
     try {
-      master.gain.setTargetAtTime(open ? 1 : 0, now, 0.03);
+      master.gain.setTargetAtTime(open ? 1 : 0, now, open ? 0.025 : 0.015);
       if (ambientGain) {
-        ambientGain.gain.setTargetAtTime(open ? ambientTarget : 0, now, 0.28);
+        ambientGain.gain.setTargetAtTime(open ? ambientTarget : 0, now, ambientRamp);
       }
-      if (!open && audio.state === 'running') void audio.suspend().catch(() => {});
-      else if (open && audio.state === 'suspended') void audio.resume().catch(() => {});
+      if (open) {
+        clearSuspendTimer();
+        if (audio.state === 'suspended') void audio.resume().catch(() => {});
+      } else if (audio.state === 'running' && suspendTimer === undefined) {
+        // Let the 15 ms gain fade reach silence before suspending to avoid speaker pops.
+        suspendTimer = setTimeout(() => {
+          suspendTimer = undefined;
+          if (audio && audio.state === 'running' && (!enabled || paused)) {
+            void audio.suspend().catch(() => {});
+          }
+        }, SUSPEND_DELAY_MS);
+      }
     } catch { /* Silent fallback. */ }
   }
 
@@ -98,6 +141,7 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
     wave: OscillatorType,
     delay = 0,
     attack = 0.006,
+    detuneCents = 0,
   ) {
     if (!audio || !sfx || !enabled || paused || audio.state === 'closed') return;
     try {
@@ -105,6 +149,9 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
       const osc = audio.createOscillator();
       const gain = audio.createGain();
       osc.type = wave;
+      if (detuneCents !== 0 && osc.detune) {
+        osc.detune.value = detuneCents;
+      }
       osc.frequency.setValueAtTime(frequency, now);
       osc.frequency.exponentialRampToValueAtTime(Math.max(20, end), now + duration);
       gain.gain.setValueAtTime(0.0001, now);
@@ -165,11 +212,12 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
       src.loop = true;
       const filter = ctx.createBiquadFilter();
       filter.type = 'bandpass';
-      filter.frequency.value = options.ambientFreq;
-      filter.Q.value = options.ambientQ;
+      filter.frequency.value = ambientFreqTarget;
+      filter.Q.value = ambientQTarget;
       src.connect(filter);
       filter.connect(ambientGain);
       src.start();
+      ambientFilter = filter;
       ambientSource = src;
       if (options.onAmbientTick && options.ambientTickMs) {
         // Keep interval registered across pause/blur; guard with isRunning() and clear only on close().
@@ -191,7 +239,18 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
         audio = new AudioCtor();
         master = audio.createGain();
         master.gain.value = enabled && !paused ? 1 : 0;
-        master.connect(audio.destination);
+        if (typeof audio.createDynamicsCompressor === 'function') {
+          const limiter = audio.createDynamicsCompressor();
+          limiter.threshold.value = -12;
+          limiter.knee.value = 12;
+          limiter.ratio.value = 6;
+          limiter.attack.value = 0.003;
+          limiter.release.value = 0.15;
+          master.connect(limiter);
+          limiter.connect(audio.destination);
+        } else {
+          master.connect(audio.destination);
+        }
         sfx = audio.createGain();
         sfx.gain.value = 1;
         sfx.connect(master);
@@ -201,6 +260,7 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
         startAmbient(audio);
       }
       syncGain();
+      syncAmbientFilter(0.05);
     } catch { /* Playable in silence. */ }
   }
 
@@ -210,9 +270,14 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
     isRunning,
     tone,
     noise,
-    setAmbientTarget(gain: number) {
+    setAmbientTarget(gain: number, rampSeconds = 0.28) {
       ambientTarget = Math.max(0, gain);
-      syncGain();
+      syncGain(rampSeconds);
+    },
+    setAmbientFilter(freq: number, q = ambientQTarget, rampSeconds = 0.25) {
+      ambientFreqTarget = Math.max(40, freq);
+      ambientQTarget = Math.max(0.1, q);
+      syncAmbientFilter(rampSeconds);
     },
     setEnabled(value: boolean) {
       enabled = value;
@@ -224,6 +289,7 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
       syncGain();
     },
     close() {
+      clearSuspendTimer();
       if (ambientTimer !== undefined) {
         clearInterval(ambientTimer);
         ambientTimer = undefined;
@@ -231,8 +297,10 @@ export function createStoryAudio(options: StoryAudioOptions): StoryAudioEngine {
       try {
         ambientSource?.stop();
         ambientSource?.disconnect();
+        ambientFilter?.disconnect();
       } catch { /* Already stopped. */ }
       ambientSource = undefined;
+      ambientFilter = undefined;
       if (audio && audio.state !== 'closed') void audio.close().catch(() => {});
     },
   };

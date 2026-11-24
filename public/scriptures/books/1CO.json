@@ -1,0 +1,638 @@
+{
+  "book": "1CO",
+  "bookName": "1 Corinthians",
+  "oneLine": "Paul's letter to a divided assembly at Corinth, answering reports and questions about wisdom, sex, food, worship, spiritual gifts, and the resurrection of the dead.",
+  "orient": "The letter opens with Paul and Sosthenes greeting the assembly at Corinth and thanking God for its gifts of speech and knowledge. Paul has heard of rival loyalties, a case of sexual immorality, and lawsuits between members, and the Corinthians have written to him with questions. He answers point by point, often by setting the community's own claims to wisdom, knowledge, and freedom against the message of a crucified Christ and the good of other members. The answers move from divisions to marriage, food offered to idols, the shared meal, spiritual gifts, and finally the resurrection of the dead.",
+  "whereYouAre": "The letter presents Paul as the founder of this assembly (3:6, 3:10, 4:15), with Apollos working there after him. Paul is at Ephesus, planning to stay until Pentecost and then travel through Macedonia (16:5–8). News has reached him from Chloe's household (1:11) and through Stephanas, Fortunatus, and Achaicus (16:17), and the Corinthians have written to him (7:1). He has already sent them at least one earlier letter (5:9), which does not survive. Acts 18–19 tells of Paul's time in Corinth and Ephesus, and scholars combine it with the letter's travel plans to date the letter; the two remain separate witnesses.",
+  "facts": {
+    "writtenBy": "Paul, with Sosthenes named beside him in 1:1. The letter speaks mostly in Paul's own first person, and Paul writes the closing greeting with his own hand (16:21). Paul's authorship is not seriously disputed; Sosthenes' exact part is uncertain.",
+    "writtenWhen": "Usually the mid-50s CE, during Paul's stay at Ephesus; proposed ranges run roughly from 53 to 57. The date depends on combining the letter's travel plans with Acts, so no single year is secure.",
+    "writtenFor": "The assembly of God at Corinth, together with all who call on the name of Jesus in every place (1:2). Near the end of the first century, the church at Rome urged the Corinthians to take up this letter again (1 Clement 47).",
+    "place": "Ephesus. Paul says he will stay at Ephesus until Pentecost (16:8), and the assemblies of Asia send greetings (16:19).",
+    "covers": "Divisions and the message of the cross; sexual conduct and lawsuits; marriage and singleness; food offered to idols; head coverings and the Lord's Supper; spiritual gifts and love; the resurrection; the collection for Jerusalem, travel plans, and greetings.",
+    "size": "Sixteen chapters, 437 verses, and 9,342 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "wiki-1co",
+      "clement-47",
+      "polycarp-11"
+    ],
+    "writtenWhen": [
+      "wiki-1co",
+      "wiki-1co15"
+    ],
+    "writtenFor": [
+      "hosted-web",
+      "clement-47"
+    ],
+    "place": [
+      "hosted-web",
+      "wiki-1co"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek, with one Aramaic prayer carried over untranslated at 16:22.",
+    "register": "A long working letter. Paul argues, asks pointed questions, quotes Scripture, scolds, and pleads in turn. Lists organize vices, gifts, and resurrection witnesses. Some short sayings appear to repeat the Corinthians' own words before Paul qualifies them, and at 15:33 he cites a line known from Greek literature.",
+    "spokenWorld": "The letter addresses its hearers in Greek. Paul still calls Peter by his Aramaic name, Cephas (1:12, 15:5), and closes with the Aramaic prayer Marana tha (16:22), which the Didache also preserves in its meal prayers. Chapters 12 to 14 discuss speaking in languages, or tongues, that hearers cannot understand without interpretation.",
+    "readerSignal": "Watch Paul take the Corinthians' prized words, wisdom, knowledge, freedom, and spiritual, and test them. The test is whether a thing builds up other people, especially the weaker member, and whether it fits the crucified and risen Christ.",
+    "englishLayer": "The World English Bible, King James Version, and Douay-Rheims differ in ways that matter here. WEB puts some lines in quotation marks, as at 6:12 and 10:23, marking them as sayings Paul is answering; ancient Greek has no quotation marks, and KJV and Douay-Rheims leave the same lines unmarked. The hosted KJV prints supplied words in brackets, as in spiritual [gifts] at 12:1 and an [unknown] tongue at 14:2. At 11:24 WEB and KJV say the body is broken for you and Douay-Rheims says it shall be delivered for you, while the SBL Greek reads only that it is for you. Douay-Rheims has a different sentence at 15:51. The Greek examples follow the SBL Greek New Testament, a modern edited text that does not always agree with the text behind each English edition.",
+    "textualHistory": [
+      {
+        "label": "A Greek letter answering reports and a letter",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Paul names Sosthenes with himself (1:1) but writes mostly as I and adds a greeting in his own hand (16:21). The letter answers news from Chloe's household (1:11) and a letter from Corinth (7:1), and it refers back to an earlier letter that has not survived (5:9). Some scholars have proposed that the canonical letter combines parts of more than one letter; no manuscript shows such a division, and most commentators treat it as a single composition.",
+        "sourceIds": [
+          "hosted-web",
+          "greek-1co",
+          "wiki-1co"
+        ]
+      },
+      {
+        "label": "Tradition received and handed on",
+        "language": "Greek, possibly from an Aramaic-speaking setting",
+        "role": "section",
+        "spans": [
+          "11:23–25",
+          "15:3–8"
+        ],
+        "description": "At 11:23 and 15:3 Paul says he received something and handed it on, using the Greek verbs for passing on tradition. The summary in chapter 15 is widely regarded as older than the letter. Whether it first took shape in Aramaic or in Greek, how far the received formula runs, and how soon after the crucifixion it formed are discussed by scholars; see the debates below.",
+        "sourceIds": [
+          "wiki-1co15",
+          "greek-1co",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "Two verses found in two places",
+        "language": "Greek manuscripts and early Latin witnesses",
+        "role": "section",
+        "spans": [
+          "14:34–35"
+        ],
+        "description": "Every surviving Greek manuscript contains 14:34–35, but a group of Western witnesses, including Codex Claromontanus and related copies, some Old Latin manuscripts, and the Latin writer Ambrosiaster, places them after 14:40. No manuscript omits them. Whether they are original is debated below.",
+        "sourceIds": [
+          "wiki-1co",
+          "net-1co"
+        ]
+      },
+      {
+        "label": "Papyrus 46",
+        "language": "Greek papyrus codex",
+        "role": "earliest-extant",
+        "description": "Papyrus 46, a codex of Paul's letters dated by its handwriting to about 175–225 or to the early third century, contains portions of 1 Corinthians and is the earliest known manuscript of the letter. Its readings sometimes differ from later copies. At 13:3 it reads that I may boast, where many other witnesses read that I may be burned. The SBL Greek text prints burned, the NET Bible's notes prefer boast, and all three hosted English editions have burned.",
+        "sourceIds": [
+          "wiki-p46",
+          "wiki-1co",
+          "net-1co",
+          "greek-1co"
+        ]
+      },
+      {
+        "label": "Three English editions",
+        "language": "English (WEB, KJV, Douay-Rheims)",
+        "role": "translation",
+        "description": "The editions differ in punctuation, supplied words, and sometimes the underlying wording. At 6:20 WEB and KJV add and in your spirit, which are God's; Douay-Rheims and the SBL Greek lack it, and many early manuscripts do not have it. At 7:21 the Greek says only rather use, leaving the object unstated; KJV marks its supplied it in brackets, and WEB supplies it without marking.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-1co",
+          "wiki-1co"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Wisdom and foolishness",
+        "original": "σοφία / σοφός / μωρία / μωρός — sophia / sophos / mōria / mōros — wisdom / wise / foolishness / foolish",
+        "explanation": "In the SBL Greek, the lemma (dictionary form) σοφία occurs 17 times and σοφός 11 times; 26 of those 28 fall in chapters 1 to 3. There Paul sets God's wisdom against the wisdom of this age and calls the message of the cross foolishness to those who are perishing (1:18). The pairing turns the scale of values over: what looks foolish is God's wisdom, and the Corinthians' own modest standing shows it (1:26–29).",
+        "translationNote": "English keeps the pair fairly well. Notice the related verb at 1:20, where God has made foolish the wisdom of the world, and the reversal at 3:18, where a person must become foolish to become wise. At 1:17 and 2:4 the wisdom Paul refuses is tied to speech and persuasion.",
+        "caution": "Paul does not reject thinking or learning: he says he speaks wisdom among the mature (2:6). The contrast is between kinds of wisdom, measured by the cross, not a modern contest between faith and reason.",
+        "refs": [
+          "1:18",
+          "1:20",
+          "1:21",
+          "1:25",
+          "2:6",
+          "3:18",
+          "3:19"
+        ],
+        "sourceIds": [
+          "greek-1co",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Knowledge puffs up, love builds up",
+        "original": "γνῶσις / φυσιόω / ἀγάπη / οἰκοδομέω / οἰκοδομή — gnōsis / physioō / agapē / oikodomeō / oikodomē — knowledge / puff up / love / build up / building",
+        "explanation": "At 8:1 the contrast rests on four Greek words: knowledge puffs up, love builds up. Building language runs from God's building in 3:9 to the rule for worship in 14:26. The verb φυσιόω, to inflate or make proud, occurs 6 times in the SBL Greek, the last at 13:4, where WEB says love is not proud. Of the 14 occurrences of ἀγάπη, 9 are in chapter 13.",
+        "translationNote": "Edify, edification, build up, and building can all render the same Greek family; WEB uses edifies and built up side by side in chapter 14. Reading them as one family shows how chapter 13 connects with the argument about gifts on either side of it.",
+        "caution": "Paul does not dismiss knowledge. He lists it among the gifts (12:8) and says he knows in part (13:12). The problem is knowledge used without regard for others, as with the weaker member of 8:11.",
+        "refs": [
+          "8:1",
+          "8:10",
+          "10:23",
+          "13:4",
+          "14:3",
+          "14:4",
+          "14:12",
+          "14:26"
+        ],
+        "sourceIds": [
+          "greek-1co",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "One word for body",
+        "original": "σῶμα — sōma — body",
+        "explanation": "σῶμα occurs 46 times in the SBL Greek of this letter. It names the individual body joined to the Lord (6:13–20), the bread shared at the Lord's table (10:16–17, 11:24), the assembly as Christ's body (12:12–27, with 18 occurrences in chapter 12), and the body that is sown and raised (15:35–44). One word lets Paul move between personal conduct, the shared meal, and community life.",
+        "translationNote": "English body keeps the word but can blur the connections. At 6:20 WEB and KJV add and in your spirit, which are God's; that phrase is absent from the SBL Greek and from Douay-Rheims, and its absence keeps the focus on glorifying God in the body.",
+        "caution": "The uses are related but not identical. The assembly as Christ's body is a comparison developed in chapter 12, and the spiritual body of 15:44 is still called a body. None of these uses treats the body as unimportant; 6:19 calls it a temple of the Holy Spirit.",
+        "refs": [
+          "6:13",
+          "6:19",
+          "6:20",
+          "10:17",
+          "11:24",
+          "12:12",
+          "12:27",
+          "15:44"
+        ],
+        "sourceIds": [
+          "greek-1co",
+          "hosted-web",
+          "hosted-editions",
+          "wiki-1co"
+        ]
+      },
+      {
+        "title": "Spiritual things, spiritual people, and gifts",
+        "original": "πνευματικός / ψυχικός / χάρισμα — pneumatikos / psychikos / charisma — spiritual / natural / gift",
+        "explanation": "πνευματικός occurs 15 times in the SBL Greek. Used without a noun, its plural can mean spiritual things or spiritual people, and the form does not decide: the same form πνευματικοῖς is tagged neuter at 2:13 and masculine at 3:1 in the MorphGNT analysis, the word-by-word grammatical tagging used on this site. At 12:1 the topic is announced with this word, and at 12:4 Paul uses χάρισμα, gift, for the same field. Against πνευματικός stands ψυχικός, used for the natural person of 2:14 and the natural body of 15:44.",
+        "translationNote": "KJV prints spiritual [gifts] at 12:1 and 14:1 with brackets, showing that gifts is supplied. WEB has spiritual things at 12:1 and spiritual gifts at 14:1. Natural for ψυχικός hides its link to ψυχή, soul or life, which appears at 15:45 in living soul.",
+        "caution": "Spiritual in this letter is not the opposite of bodily: 15:44 speaks of a spiritual body. Nor does Paul rank members by how striking their gifts are; 12:22–25 gives more honor to the parts that seem weaker.",
+        "refs": [
+          "2:13",
+          "2:14",
+          "3:1",
+          "12:1",
+          "12:4",
+          "14:1",
+          "15:44"
+        ],
+        "sourceIds": [
+          "greek-1co",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Now concerning",
+        "original": "περὶ δέ — peri de — now concerning",
+        "explanation": "The phrase opens a new topic 6 times in the SBL Greek: marriage (7:1), virgins (7:25), food offered to idols (8:1), spiritual things (12:1), the collection (16:1), and Apollos (16:12). The first ties its topic to what the Corinthians wrote. Together the markers give the second half of the letter its outline.",
+        "translationNote": "WEB renders the phrase as now concerning in each place, so an English reader can follow the markers. KJV varies the English, with as touching at 8:1 and 16:12, so the repeated Greek marker is easier to see in WEB.",
+        "caution": "Only 7:1 says outright that the topic comes from the Corinthians' letter. That the later headings answer the same letter is a reasonable inference, not something the text states each time; 16:12 introduces news about Apollos.",
+        "refs": [
+          "7:1",
+          "7:25",
+          "8:1",
+          "12:1",
+          "16:1",
+          "16:12"
+        ],
+        "sourceIds": [
+          "greek-1co",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Raised, dead, asleep, imperishable",
+        "original": "ἐγείρω / νεκρός / κοιμάομαι / ἀφθαρσία — egeirō / nekros / koimaomai / aphtharsia — raise / dead / fall asleep / imperishability",
+        "explanation": "Chapter 15 concentrates the language of resurrection: 19 of the 20 occurrences of ἐγείρω and all 13 of νεκρός in the SBL Greek of this letter fall there. At 15:4 the verb for raised is a perfect form set among aorist (simple past) verbs for died, was buried, and appeared, one of the signs scholars note that the summary is a set formula. The sown-and-raised contrasts of 15:42–44 pair perishable with imperishable, dishonor with glory, and weakness with power.",
+        "translationNote": "WEB has he was raised at 15:4, like the past tenses around it, so the change of tense is not visible in English. Fallen asleep (15:6, 15:18, 15:20) is described in the NET Bible's notes as a common biblical way of speaking of a believer's death.",
+        "caution": "Paul argues for a resurrection of the body that is also a change (15:51–52). The vocabulary alone does not settle every later question about the raised body; Paul himself answers with comparisons from seed, flesh, and glory (15:36–41).",
+        "refs": [
+          "15:4",
+          "15:6",
+          "15:12",
+          "15:20",
+          "15:42",
+          "15:44",
+          "15:52"
+        ],
+        "sourceIds": [
+          "greek-1co",
+          "hosted-web",
+          "wiki-1co15",
+          "net-1co"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words where the letter turns",
+    "examples": [
+      {
+        "ref": "1:18",
+        "form": "μωρία — mōria",
+        "meaning": "foolishness",
+        "why": "The message of the cross is foolishness to those perishing and God's power to those being saved. Both groups are described with present participles, which WEB renders as dying and being saved.",
+        "sourceIds": [
+          "greek-1co",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "8:1",
+        "form": "οἰκοδομεῖ — oikodomei",
+        "meaning": "builds up",
+        "why": "Love builds up, in contrast with knowledge that puffs up. The same verb returns at 10:23 and through chapter 14 as the test for freedom and for worship.",
+        "sourceIds": [
+          "greek-1co",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "12:1",
+        "form": "πνευματικῶν — pneumatikōn",
+        "meaning": "of spiritual things, or of spiritual people",
+        "why": "The form alone does not show whether things or people are meant. MorphGNT tags it neuter, WEB has spiritual things, and KJV supplies [gifts] in brackets.",
+        "sourceIds": [
+          "greek-1co",
+          "hosted-editions"
+        ]
+      },
+      {
+        "ref": "13:3",
+        "form": "καυθήσομαι — kauthēsomai",
+        "meaning": "I will be burned",
+        "why": "The SBL Greek prints this reading, and the hosted English follows it. Papyrus 46 and several other early manuscripts instead read a form meaning that I may boast; the NET Bible's notes prefer that reading.",
+        "sourceIds": [
+          "greek-1co",
+          "net-1co",
+          "wiki-p46"
+        ]
+      },
+      {
+        "ref": "15:3",
+        "form": "παρέλαβον — parelabon",
+        "meaning": "I received",
+        "why": "Paired with Παρέδωκα, I handed on, at the start of the verse. The same pair introduces the Lord's Supper at 11:23 and marks what follows as tradition Paul received, not words he composed.",
+        "sourceIds": [
+          "greek-1co",
+          "wiki-1co15"
+        ]
+      },
+      {
+        "ref": "16:22",
+        "form": "Μαράνα θά — Marana tha",
+        "meaning": "Our Lord, come",
+        "why": "An Aramaic prayer written in Greek letters. The NET Bible's notes record that the letters can also be divided as Maran atha, our Lord has come. The Didache closes a meal prayer with the same words.",
+        "sourceIds": [
+          "greek-1co",
+          "net-1co",
+          "didache-10"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A pastoral letter of answers and arguments",
+    "how": "Read it as one side of a correspondence. Notice where Paul reports what he has heard, where he takes up a question with now concerning, and where he appears to repeat a Corinthian saying before answering it. Follow each answer to its reason: the cross, the good of the other member, the body, or the resurrection."
+  },
+  "cast": [
+    {
+      "name": "Paul",
+      "who": "The named sender, who presents himself as the assembly's founder, its father through the Good News (3:10, 4:15), writing from Ephesus."
+    },
+    {
+      "name": "Sosthenes",
+      "who": "Named with Paul as our brother in 1:1. The letter says nothing more about his role."
+    },
+    {
+      "name": "Apollos",
+      "who": "A teacher who worked at Corinth after Paul (3:6). Some members rally to his name (1:12); Paul calls Apollos and himself servants (3:5) and reports that Apollos is unwilling to come now (16:12)."
+    },
+    {
+      "name": "Cephas",
+      "who": "Peter, under his Aramaic name. Some at Corinth claim him (1:12), and he heads the list of those to whom the risen Christ appeared (15:5)."
+    },
+    {
+      "name": "Chloe's people; Stephanas, Fortunatus, and Achaicus",
+      "who": "Bearers of news to Paul (1:11, 16:17). Stephanas's household were the first converts in Achaia, baptized by Paul (1:16, 16:15)."
+    },
+    {
+      "name": "Timothy; Aquila and Priscilla",
+      "who": "Timothy is sent to remind the Corinthians of Paul's ways (4:17, 16:10). Aquila and Priscilla send greetings with the assembly that meets in their house (16:19)."
+    },
+    {
+      "name": "The weak",
+      "who": "Members whose conscience is troubled by food offered to idols (8:7–13). Paul asks those who claim knowledge to limit their freedom for them."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Divisions and the wisdom of the cross",
+      "chapters": "1–4",
+      "precise": "1:1–4:21",
+      "note": "Greeting and thanksgiving, then rival loyalties answered by the foolishness of the cross, the Spirit's wisdom, and the apostles as servants."
+    },
+    {
+      "heading": "Immorality, lawsuits, and the body",
+      "chapters": "5–6",
+      "precise": "5:1–6:20",
+      "note": "A case of incest, the limits of the assembly's judgment, lawsuits between members, and the body as belonging to the Lord."
+    },
+    {
+      "heading": "Marriage, singleness, and calling",
+      "chapters": "7",
+      "precise": "7:1–40",
+      "note": "The first now concerning: obligations within marriage, divorce, remaining as one was called, and the unmarried."
+    },
+    {
+      "heading": "Food offered to idols and the limits of freedom",
+      "chapters": "8–10",
+      "precise": "8:1–11:1",
+      "note": "Knowledge and love, Paul's own example of giving up rights, Israel's wilderness warnings, and practical rules for meals. The section closes at 11:1."
+    },
+    {
+      "heading": "Order in worship",
+      "chapters": "11",
+      "precise": "11:2–34",
+      "note": "Head coverings for those who pray and prophesy, and the Lord's Supper, where some go hungry while others eat their own meal (11:21–22)."
+    },
+    {
+      "heading": "Gifts, love, and building up the assembly",
+      "chapters": "12–14",
+      "precise": "12:1–14:40",
+      "note": "One Spirit and many gifts, the body and its members, the way of love, and rules for languages and prophecy in the gathering."
+    },
+    {
+      "heading": "The resurrection of the dead",
+      "chapters": "15",
+      "precise": "15:1–58",
+      "note": "The tradition received, the case that Christ's raising entails the raising of the dead, and the transformed body."
+    },
+    {
+      "heading": "Collection, travel, and greetings",
+      "chapters": "16",
+      "precise": "16:1–24",
+      "note": "The collection for Jerusalem, Paul's plans, news of Timothy and Apollos, greetings, and a closing in Paul's hand."
+    }
+  ],
+  "purpose": "1 Corinthians aims to make a divided assembly act as one body. Paul measures its wisdom, freedom, knowledge, and gifts against Christ crucified and the good of other members, insists that the body matters in sex, meals, and worship, and grounds all of it in the resurrection, so that the assembly's labor is not in vain (15:58).",
+  "snags": [
+    {
+      "snag": "Quotation marks make some lines look like Paul's own teaching, or hide that they might not be.",
+      "help": "Ancient Greek had no quotation marks. WEB marks lines such as All things are lawful for me (6:12, 10:23) as sayings Paul is answering; KJV and Douay-Rheims print them plainly. Read each such line with the qualification that follows it."
+    },
+    {
+      "snag": "The vice list of 6:9–10 is often read as aimed at one group of people.",
+      "help": "Two Greek words in 6:9 are translated very differently: male prostitutes and homosexuals in WEB, effeminate and abusers of themselves with mankind in KJV, effeminate and liers with mankind in Douay-Rheims (6:10). The NET Bible's notes, citing standard Greek lexicons, take the words to mean the passive and active partners in sex between males, note that the lexicons also mention exploitation of boys, and explain why effeminate and male prostitutes can mislead. The list also names greed, drunkenness, slander, theft, and idolatry, and 6:11 tells the assembly that some of you were such and have been washed. The passage addresses the assembly about its own members; it does not license contempt for any group."
+    },
+    {
+      "snag": "Chapters 11 and 14 seem to say opposite things about women speaking in the assembly.",
+      "help": "At 11:5 women pray and prophesy aloud, and the argument concerns only their head covering; 11:11–12 adds that in the Lord neither woman nor man is independent of the other. At 14:34–35 women are told to be silent. Both passages have been used to restrict women in general. The manuscript question and the range of readings are set out in the debates below; neither passage, read in its setting, gives a full account of women's roles by itself."
+    },
+    {
+      "snag": "The counsel to bondservants can sound like approval of slavery.",
+      "help": "The bondservants of 7:21–23 are enslaved people. Paul tells them not to be troubled by their state, then adds that if they can become free, they should rather use, and the Greek does not say use what; KJV brackets the supplied it. He also says the enslaved believer is the Lord's free man and urges, do not become bondservants of men (7:23). The passage is part of an argument about remaining in one's calling; it does not describe slavery as good or argue for it, and it does not call for ending it; 7:20 and 7:24 tell each person to remain as called."
+    },
+    {
+      "snag": "Handing someone over to Satan sounds like a curse.",
+      "help": "Chapter 5 concerns a member living with his father's wife (5:1). Paul tells the assembly to remove him, with the stated aim that the spirit may be saved in the day of the Lord (5:5). He also limits this judgment to those inside the assembly and says God judges those outside (5:10–13). It is not a warrant for shunning outsiders."
+    },
+    {
+      "snag": "Baptism for the dead (15:29) seems to describe a practice nowhere else explained.",
+      "help": "Paul mentions people baptized for the dead to show that their practice assumes the dead will be raised. He does not describe the practice or say whether he approves of it, and its meaning has drawn many explanations. Read it as one step in the argument of chapter 15, not as a full instruction."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Which lines quote the Corinthians' own sayings?",
+      "settled": "Paul answers reports and a letter from Corinth (1:11, 7:1). Some short lines, such as All things are lawful for me (6:12, 10:23), are followed at once by Paul's qualification.",
+      "positions": [
+        {
+          "view": "Several lines are Corinthian slogans",
+          "grounds": "The NET Bible's notes treat 6:12–13, 7:1, 8:1, and 8:4 as sayings the Corinthians used to justify their conduct, which Paul partly accepts and then corrects. WEB marks 6:12–13, 6:18, and 10:23 with quotation marks, but not 7:1, 8:1, or 8:4. The repeated pattern of a short maxim followed by but supports this reading."
+        },
+        {
+          "view": "Fewer slogans, or different boundaries",
+          "grounds": "Readers disagree over how far a saying runs and whether some lines are Paul's own. The NET notes say the extent of the saying at 6:13 is debated, and call the decision at 6:18 very difficult: if it is not a quotation, Paul himself is distinguishing kinds of sin. All three hosted English editions print 7:1 as a plain statement after the reference to the Corinthians' letter."
+        }
+      ],
+      "soWhat": "The choice changes who is speaking. At 7:1 it decides whether Paul or some Corinthians commend abstaining from sex, which shapes how 7:2–5 reads. Notice where an English edition adds quotation marks."
+    },
+    {
+      "question": "Are 14:34–35 part of what Paul wrote, and what do they forbid?",
+      "settled": "Every surviving Greek manuscript contains the verses; a group of Western witnesses places them after 14:40. WEB has wives at 14:34 where KJV and Douay-Rheims have women; the Greek word can mean either. The letter elsewhere assumes that women pray and prophesy in the assembly (11:5).",
+      "positions": [
+        {
+          "view": "A very early addition to the letter",
+          "grounds": "Many text critics and commentators argue that a note written in the margin entered the text at two different points, which would explain the two placements. They add internal reasons: the tension with 11:5, the address to the churches in general, and the bare appeal to the law."
+        },
+        {
+          "view": "Original, with the movement explained otherwise",
+          "grounds": "Others point out that no manuscript omits the verses and that the Western witnesses that move them are few and closely related. Copyists may have moved an original passage to smooth the argument about prophecy. The NET Bible's notes conclude the words are original and suggest Paul may have added them in the margin himself."
+        },
+        {
+          "view": "Original, but limited or quoted",
+          "grounds": "Among those who keep the verses, some read them as restricting one kind of speech in that assembly, such as disruptive questioning while prophecy was being weighed (14:29). Others read them as a Corinthian position that Paul quotes and then rejects with the questions of 14:36. WEB prints the second half of 14:35 in quotation marks."
+        }
+      ],
+      "soWhat": "Every reading has to account for 11:5. Readers who keep the verses still differ over whether they forbid all speech or a particular disruption, so the passage alone does not settle later disputes about women's roles."
+    },
+    {
+      "question": "Is the head covering of 11:2–16 a lasting practice or a local custom?",
+      "settled": "Paul assumes that both men and women pray and prophesy (11:4–5), argues from creation, nature, honor and shame, and the custom of the assemblies, and adds that in the Lord neither is independent of the other (11:11–12). The NET Bible's notes observe that he does not specify what kind of covering he means.",
+      "positions": [
+        {
+          "view": "A practice for the church in every place",
+          "grounds": "Many earlier commentators, and some churches today, read the appeal to creation and to the practice of God's assemblies (11:16) as making the covering a standing practice in worship."
+        },
+        {
+          "view": "Guidance shaped by its setting",
+          "grounds": "Since the mid-twentieth century, some scholars have read the covering and its social meaning as tied to Corinth, so that the concern for honor in worship carries over while the specific dress does not."
+        },
+        {
+          "view": "Long hair as the covering",
+          "grounds": "Since a 1965 study, some interpreters have held that long hair is the only covering Paul means, citing 11:15, where hair is given to her for a covering. Others answer that 11:15 uses a different Greek word from the verb for being covered in 11:6–7."
+        }
+      ],
+      "soWhat": "The passage combines reasons of different kinds, and readers differ on which ones carry the weight. That women pray and prophesy in the gathering is not in dispute."
+    },
+    {
+      "question": "Do the gifts of chapters 12 to 14 continue today?",
+      "settled": "Paul expects prophecies, languages, and knowledge to end when that which is complete has come (13:8–10), and he tells the Corinthians not to forbid speaking in languages (14:39).",
+      "positions": [
+        {
+          "view": "Cessationist readings",
+          "grounds": "Some Protestant traditions, especially Reformed ones, hold that gifts such as tongues, prophecy, and healing ended with the apostolic age. They argue that the gifts confirmed the apostles' founding work and appeal to the completion of Scripture, and some read 13:8–12 in that light."
+        },
+        {
+          "view": "Continuationist readings",
+          "grounds": "Continuationists hold that the gifts continue. Pentecostal and charismatic Christians hold this view, and a survey article reports that the Catholic, Orthodox, and Methodist traditions never adopted cessationism. They read that which is complete as the return of Christ or the believer's death, since 13:12 speaks of seeing face to face; some cessationists, Calvin among them, read the verse the same way."
+        }
+      ],
+      "soWhat": "The dispute concerns church life today. For reading the letter itself, Paul's test in chapter 14 applies either way: what is done in the gathering must be understood and must build others up."
+    },
+    {
+      "question": "How old is the summary Paul hands on in 15:3–8, and where does it end?",
+      "settled": "Paul says he handed on what he himself received (15:3). The summary names Christ's death, burial, raising on the third day, and appearances, and Paul adds himself last (15:8). Many commentators limit the received formula to 15:3–5; others extend it.",
+      "positions": [
+        {
+          "view": "Formed within a few years of the crucifixion",
+          "grounds": "A wide range of scholars, including some who doubt a bodily resurrection, date the formula very early, often by linking it to Paul's conversion or his early visit with Cephas and James (Galatians 1:18–19)."
+        },
+        {
+          "view": "Early, but not precisely datable",
+          "grounds": "A smaller number accept that Paul inherited the formula but question how exactly its date can be fixed, and at least one scholar has argued that it is relatively late."
+        }
+      ],
+      "soWhat": "On any of these views, the letter itself treats the summary as shared tradition that Paul and the Corinthians already hold (15:11)."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, 1 Corinthians",
+      "says": "Provides the wording, sequence, travel plans, names, and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/1CO/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "1 Corinthians in the World English Bible, King James Version, and Douay-Rheims",
+      "says": "Shows differences in quotation marks, supplied words, 6:20, 11:24, 15:51, and the renderings of 6:9–10."
+    },
+    {
+      "id": "greek-1co",
+      "label": "SBL Greek New Testament, 1 Corinthians, with MorphGNT analysis",
+      "says": "Provides the Greek forms, lemma counts, and morphological tags used in the language discussion; it is a modern edited Greek text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/67-1Co-morphgnt.txt"
+    },
+    {
+      "id": "wiki-1co",
+      "label": "Wikipedia, First Epistle to the Corinthians (survey article)",
+      "says": "Reports undisputed Pauline authorship, a usual date of 53–57 CE at Ephesus reached with the help of Acts (Barrett links 16:5–10 to Acts 19:22), Papyrus 46, the earlier letter of 5:9, the 6:20 addition, the Western placement of 14:34–35, Fitzmyer's report that most commentators now treat those verses as an interpolation and the main views against that, partition theories, the Greek literary source of 15:33, and 15:29.",
+      "url": "https://en.wikipedia.org/wiki/First_Epistle_to_the_Corinthians"
+    },
+    {
+      "id": "wiki-1co15",
+      "label": "Wikipedia, 1 Corinthians 15 (survey article)",
+      "says": "Describes 15:3–8 as an early creedal summary widely regarded as older than Paul's letters, notes the transmission verbs, the perfect passive among aorists, the debate over its extent and original language, and the range of proposed dates.",
+      "url": "https://en.wikipedia.org/wiki/1_Corinthians_15"
+    },
+    {
+      "id": "wiki-p46",
+      "label": "Wikipedia, Papyrus 46 (manuscript article)",
+      "says": "Describes P. Chester Beatty II, a papyrus codex of Paul's letters including 1 Corinthians, dated by handwriting to about 175–225 or the early third century.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_46"
+    },
+    {
+      "id": "net-1co",
+      "label": "NET Bible, 1 Corinthians: text and translator notes",
+      "says": "Treats 6:12–13, 7:1, 8:1, and 8:4 as Corinthian slogans while noting debate over 6:13 and 6:18; gives lexicon meanings for the words in 6:9; sets out the margin-gloss case against 14:34–35 and argues the verses are original; prefers boast at 13:3 with Papyrus 46; notes that the covering of 11:10 is not specified; identifies 15:33 as a line of Menander; and explains the Aramaic of 16:22.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/1co.pdf"
+    },
+    {
+      "id": "wiki-headcovering",
+      "label": "Wikipedia, Head covering for Christian women (survey article)",
+      "says": "Reports that influential 18th–19th-century commentators upheld head covering as normative, that some mid-twentieth-century scholarship read 11:3–16 as culturally specific, that most Western evangelical churches now give the practice little emphasis while some traditions keep it, and that a 1965 interpretation takes long hair as the covering, against which others point to the different Greek words in 11:15 and 11:6–7.",
+      "url": "https://en.wikipedia.org/wiki/Christian_headcovering"
+    },
+    {
+      "id": "wiki-cessation",
+      "label": "Wikipedia, Cessationism versus continuationism (survey article)",
+      "says": "Describes the dispute over whether spiritual gifts ceased with the apostolic age, its Reformed origins, the historic continuationism of Catholic, Orthodox, Methodist and other traditions, the main cessationist arguments, and the competing readings of 13:8–12, including cessationists who share the eschatological reading.",
+      "url": "https://en.wikipedia.org/wiki/Cessationism_versus_continuationism"
+    },
+    {
+      "id": "clement-47",
+      "label": "1 Clement 47 (c. AD 95–96), hosted on this site",
+      "says": "Tells the Corinthians to take up the epistle of the blessed Apostle Paul, who wrote to them about himself, Cephas, and Apollos because parties had formed.",
+      "href": "/early/1clement"
+    },
+    {
+      "id": "polycarp-11",
+      "label": "Polycarp, To the Philippians 11 (c. AD 110–140), hosted on this site",
+      "says": "Quotes the question whether the saints will judge the world (1 Corinthians 6:2) and attributes it to Paul's teaching.",
+      "href": "/early/polycarp-philippians"
+    },
+    {
+      "id": "didache-10",
+      "label": "Didache 10, hosted on this site",
+      "says": "Ends a prayer after the meal with Maran atha, the same Aramaic words found at 16:22.",
+      "href": "/early/didache"
+    },
+    {
+      "id": "third-corinthians",
+      "label": "Third Epistle to the Corinthians (c. AD 160–190), hosted on this site",
+      "says": "A later letter in Paul's name from the Acts of Paul, defending the resurrection of the body; the site's introduction notes it was received as Scripture for a time in the Armenian and Syriac churches.",
+      "href": "/early/3corinthians"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Start with the message of the cross in 1:18–2:5. Much of the letter applies this reversal of wisdom and power to new questions.",
+      "refs": [
+        "1:18",
+        "1:23",
+        "1:24",
+        "1:27",
+        "2:2"
+      ]
+    },
+    {
+      "tip": "Use the now concerning markers as an outline of the second half, and note which topics come from reports instead.",
+      "refs": [
+        "1:11",
+        "5:1",
+        "7:1",
+        "8:1",
+        "12:1",
+        "16:1"
+      ]
+    },
+    {
+      "tip": "Read chapters 8 to 10 as one argument. Paul grants the knowledge claim, then asks what it does to the weaker member, and ends with rules for actual meals.",
+      "refs": [
+        "8:1",
+        "8:9",
+        "8:13",
+        "10:23",
+        "10:24",
+        "10:31"
+      ]
+    },
+    {
+      "tip": "Read chapter 13 between chapters 12 and 14. Love is the way Paul shows for using every gift, and building up is its measure.",
+      "refs": [
+        "12:31",
+        "13:1",
+        "13:13",
+        "14:1",
+        "14:12",
+        "14:26"
+      ]
+    },
+    {
+      "tip": "Read chapter 15 as the letter's final argument: received tradition, then the logic of Christ's raising, then comparisons for the raised body, then a call to steady work.",
+      "refs": [
+        "15:3",
+        "15:12",
+        "15:20",
+        "15:35",
+        "15:58"
+      ]
+    }
+  ],
+  "next": "Read 2 Corinthians, a later letter from Paul to the same assembly. 1 Clement, hosted among the early writings, shows the church at Rome pointing the Corinthians back to this letter near the end of the first century. Romans 14 takes up the weak and the strong in a related way.",
+  "traditionNote": "1 Corinthians has 16 chapters in the Protestant, Catholic, Eastern Orthodox, Ethiopian Tewahedo, and Armenian Apostolic collections here, with the same chapter and verse counts in the three hosted English editions. The Third Epistle to the Corinthians, a later work received for a time as Scripture in the Armenian and Syriac churches, is hosted among the early writings; it is a separate letter, not part of this one."
+}

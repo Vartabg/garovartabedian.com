@@ -1,0 +1,581 @@
+{
+  "book": "1PE",
+  "bookName": "1 Peter",
+  "oneLine": "A letter to scattered believers in Asia Minor about hope, holy conduct, and doing good while they are slandered and made to suffer.",
+  "orient": "The opening names Peter and addresses chosen people living as foreigners in five regions of Asia Minor. The letter starts from new birth and a living hope, then asks how such people should live among neighbors who speak against them. Instructions for citizens, household slaves, wives, husbands, and elders sit inside that question. Christ's suffering and vindication supply the pattern throughout: suffering for doing good is not the end of the story.",
+  "whereYouAre": "The readers are already believers, described as born again through the word that was preached to them. They live in Pontus, Galatia, Cappadocia, Asia, and Bithynia, and their neighbors find their changed way of life strange and speak against them. The letter's own close names Silvanus as the one through whom it was written, sends greetings from she who is in Babylon and from Mark, and calls the writer a fellow elder and a witness of Christ's sufferings. How those claims relate to the letter's composition is a separate question.",
+  "facts": {
+    "writtenBy": "The opening names Peter, an apostle of Jesus Christ, and 5:12 says the letter was written through Silvanus. The early church received it as Peter's; many modern scholars regard it as a later writing from a circle in Rome that honored Peter, while others defend Peter's authorship, often with Silvanus or another helper shaping the Greek.",
+    "writtenWhen": "No year is secure. If Peter wrote it, it comes before his death, which Eusebius places under Nero (emperor 54–68). Proposals for later composition include the decades after 70, the reign of Domitian (81–96), and the years around 110–112, when Pliny dealt with accused Christians in Bithynia-Pontus.",
+    "writtenFor": "Believers in five regions of Asia Minor, called chosen foreigners of the Dispersion. Eusebius read this as an address to Jews of the dispersion; the NET notes take Dispersion here as a figure for Gentile believers, which fits the description of their past at 4:3.",
+    "place": "The letter sends greetings from Babylon at 5:13. Eusebius reports the early view that this is a figurative name for Rome, and most modern scholars agree; the letter itself does not say Rome.",
+    "covers": "New birth and holiness; a chosen people among outsiders, rulers, and masters; households and suffering for doing good; the fiery trial; elders and greetings.",
+    "size": "Five chapters, 105 verses, and 2,416 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "eusebius-he-3",
+      "wiki-1pe",
+      "net-1pe"
+    ],
+    "writtenWhen": [
+      "eusebius-he-2",
+      "wiki-nero",
+      "wiki-1pe",
+      "ecw-pliny",
+      "wiki-pliny-christians"
+    ],
+    "writtenFor": [
+      "hosted-web",
+      "eusebius-he-3",
+      "net-1pe"
+    ],
+    "place": [
+      "hosted-web",
+      "eusebius-he-2",
+      "net-1pe",
+      "wiki-1pe"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "A circular letter of encouragement and instruction. Long, linked sentences of praise and reasoning alternate with short commands. The Greek is often judged polished, and the letter quotes or echoes Greek Scripture throughout: Leviticus, Isaiah, the Psalms, Proverbs, Exodus, and Hosea.",
+    "spokenWorld": "The readers live in Roman provinces of Asia Minor among neighbors the letter calls the nations or Gentiles. The letter is written in Greek; it does not tell us which languages each reader spoke at home.",
+    "readerSignal": "Watch for the words that keep returning: suffer, foreigners, conduct, doing good, be subject, hope. The readers stand between what neighbors say now and what will be revealed when Christ appears.",
+    "englishLayer": "The World English Bible, King James Version, and Douay-Rheims sometimes differ because they follow different Greek readings. At 3:15, WEB and KJV have Lord God where Douay-Rheims and the SBL Greek text have Christ. At 4:14, WEB and KJV add a sentence about the Spirit being blasphemed that the SBL Greek text lacks; Douay-Rheims has a different addition. At 2:2, Douay-Rheims and the SBL Greek text include growing to salvation, which WEB and KJV lack. The Greek examples below follow the SBL Greek New Testament, a modern critical edition.",
+    "textualHistory": [
+      {
+        "label": "A Greek circular letter",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The letter is addressed to communities across several provinces, so it was meant to travel and be read aloud in more than one place. Its Greek weaves quotations of Greek Scripture into its argument, above all in 1:24–25, 2:6–10, 2:22–25, and 3:10–12. The quality of that Greek is part of the authorship debate.",
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web",
+          "net-1pe",
+          "wiki-1pe"
+        ]
+      },
+      {
+        "label": "Papyrus 72 (Papyrus Bodmer VIII)",
+        "language": "Greek",
+        "role": "earliest-extant",
+        "description": "Papyrus 72 is the earliest known manuscript of 1 Peter complete. It belongs to a codex that also holds 2 Peter and Jude, apparently copied by one scribe, and is dated by its handwriting to the third or fourth century.",
+        "sourceIds": [
+          "wiki-p72",
+          "net-1pe"
+        ]
+      },
+      {
+        "label": "Variant readings behind the English",
+        "language": "English translations of the New Testament",
+        "role": "translation",
+        "description": "Several differences among the hosted English versions go back to differences among Greek manuscripts, not only to translation choices: Christ or God at 3:15, the extra sentence at 4:14, for us at 4:1, and to salvation at 2:2. At 3:18 the manuscripts divide between Christ suffered and Christ died. The SBL Greek text is a modern edited comparison, not a claim about the textual base of each English edition.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-1pe",
+          "net-1pe"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Suffering: Christ's and the readers'",
+        "original": "πάσχω / πάθημα — paschō / pathēma — suffer / suffering",
+        "explanation": "The verb suffer occurs 12 times in the SBL Greek text of this letter (lemma πάσχω), and the noun sufferings 4 times (lemma πάθημα). The same verb describes Christ and the readers. Christ suffered and left an example in 2:21; the readers suffer for doing good in 2:20 and 3:17; Christ suffered in the flesh in 4:1, so they are to arm themselves with the same mind.",
+        "translationNote": "English versions mostly keep suffer, so this link is visible. At 3:18 some manuscripts read died rather than suffered, and translations divide accordingly; at 4:1 WEB and KJV add for us, which the SBL Greek text lacks.",
+        "caution": "The letter distinguishes kinds of suffering. Suffering as a wrongdoer earns nothing (4:15); suffering for doing good is what it commends. Sharing a word with Christ's suffering does not make the readers' suffering atone for sin.",
+        "refs": [
+          "1:11",
+          "2:20",
+          "2:21",
+          "3:17",
+          "3:18",
+          "4:1",
+          "4:13",
+          "5:1"
+        ],
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web",
+          "net-1pe"
+        ]
+      },
+      {
+        "title": "Foreigners and resident aliens",
+        "original": "παρεπίδημος / πάροικος / παροικία / διασπορά — parepidēmos / paroikos / paroikia / diaspora — temporary resident / resident alien / stay as a foreigner / dispersion",
+        "explanation": "The letter opens by calling the readers foreigners of the Dispersion and returns to the idea in 1:17 and 2:11. These words describe people who live in a place without belonging to it. Together they frame the letter: the readers belong to God and are out of place among their neighbors.",
+        "translationNote": "KJV has strangers, sojourning, and pilgrims; WEB has foreigners and living as foreigners; the NET notes give exiles and resident foreigners. Dispersion is the word used for Jewish communities living outside the land of Israel, here applied to these readers.",
+        "caution": "Whether the words also describe the readers' legal or social status before they believed, or only their status as believers, is debated. The vocabulary alone does not settle it.",
+        "refs": [
+          "1:1",
+          "1:17",
+          "2:11"
+        ],
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web",
+          "hosted-editions",
+          "net-1pe",
+          "wiki-1pe"
+        ]
+      },
+      {
+        "title": "Conduct that others can see",
+        "original": "ἀναστροφή — anastrophē — conduct, way of life",
+        "explanation": "The noun occurs 6 times in the SBL Greek text of the letter (lemma ἀναστροφή), with the related verb at 1:17. Holiness is to show in all conduct; the old way of life was inherited from ancestors; good conduct among the nations may lead slanderers to glorify God; wives' conduct may win husbands; the readers' good conduct in Christ may shame those who revile it.",
+        "translationNote": "WEB uses behavior and way of life; KJV uses conversation, which in older English meant the whole manner of living, not talk. A modern reader of KJV can easily miss this.",
+        "caution": "The letter hopes good conduct will silence or win outsiders, but it does not promise that it will. It expects that some will suffer for doing good anyway (3:14–17).",
+        "refs": [
+          "1:15",
+          "1:18",
+          "2:12",
+          "3:1",
+          "3:2",
+          "3:16"
+        ],
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Doing good and doing evil",
+        "original": "ἀγαθοποιέω / ἀγαθοποιός / ἀγαθοποιΐα / κακοποιός — agathopoieō / agathopoios / agathopoiia / kakopoios — do good / one who does good / doing good / evildoer",
+        "explanation": "A compound word family, do-good, runs through chapters 2 to 4, set against its opposite, evildoer. Outsiders call the readers evildoers (2:12); governors are to punish evildoers and praise those who do good (2:14); the readers are to silence ignorance by doing good (2:15) and to entrust themselves to God while doing good (4:19).",
+        "translationNote": "English renders the family as do well, well-doing, do good, and doing what is right, so one repeated idea can look like several. The contrast with evildoer is clearer in the Greek.",
+        "caution": "Doing good here is public, visible conduct, including within the household and before authorities. It is not presented as the price of salvation, which the letter grounds in mercy and new birth (1:3).",
+        "refs": [
+          "2:12",
+          "2:14",
+          "2:15",
+          "2:20",
+          "3:6",
+          "3:17",
+          "4:15",
+          "4:19"
+        ],
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Be subject",
+        "original": "ὑποτάσσω — hypotassō — place under, be subject",
+        "explanation": "The verb occurs 6 times in the SBL Greek text of the letter (lemma ὑποτάσσω). It addresses the readers toward human institutions (2:13), household slaves toward masters (2:18), wives toward husbands (3:1, 3:5), and younger people toward elders (5:5). At 3:22 angels and powers are made subject to the risen Christ.",
+        "translationNote": "WEB varies between subject yourselves and be in subjection; Douay-Rheims at 2:13 has every human creature, a literal rendering of the Greek. The same verb sits behind all of these.",
+        "caution": "The verb sits inside ancient social orders and is given reasons tied to the readers' witness and reputation. It is set beside mutual duties: husbands are to honor wives as joint heirs (3:7) and all are to clothe themselves with humility toward one another (5:5). It does not by itself define every later relationship.",
+        "refs": [
+          "2:13",
+          "2:18",
+          "3:1",
+          "3:5",
+          "3:22",
+          "5:5"
+        ],
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Stones, a priesthood, and a holy nation",
+        "original": "λίθος / ἐκλεκτός / ἱεράτευμα / ἅγιος — lithos / eklektos / hierateuma / hagios — stone / chosen / priesthood / holy",
+        "explanation": "In 2:4–8 the word stone occurs in every verse. Christ is the living stone, rejected by people and chosen by God; the readers are living stones built into a spiritual house. The passage joins three stone texts from Isaiah 28:16, Psalm 118:22, and Isaiah 8:14. It then applies titles from Exodus 19:5–6 and Hosea to the readers. Holy, used at 1:15–16 with a quotation from Leviticus, returns in 2:5 and 2:9.",
+        "translationNote": "KJV's peculiar people at 2:9 means a people belonging to God, not a strange people; WEB has a people for God's own possession and Douay-Rheims a purchased people.",
+        "caution": "The quotations show that the writer reads Israel's Scriptures as speaking to these believers. They do not, on their own, state a theory of what has become of Israel; see the snag on 2:9–10.",
+        "refs": [
+          "2:4",
+          "2:5",
+          "2:6",
+          "2:7",
+          "2:8",
+          "2:9",
+          "1:16"
+        ],
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web",
+          "hosted-editions",
+          "net-1pe",
+          "scriptural-parallels"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words behind the letter's hardest and most quoted lines",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "παρεπιδήμοις — parepidēmois",
+        "meaning": "to temporary residents, foreigners",
+        "why": "The first description of the readers, after chosen, is that they live where they do not belong. WEB has living as foreigners; KJV has strangers scattered.",
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "ref": "3:19",
+        "form": "ἐκήρυξεν — ekēryxen",
+        "meaning": "proclaimed, announced",
+        "why": "The verb means to proclaim; it does not by itself say what was proclaimed. At 4:6 the letter uses a different verb, εὐηγγελίσθη (the good news was announced). Whether the two passages describe the same event is part of the debate.",
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-web",
+          "net-1pe"
+        ]
+      },
+      {
+        "ref": "3:21",
+        "form": "ἐπερώτημα — eperōtēma",
+        "meaning": "an appeal, pledge, or request",
+        "why": "The word that says what baptism is, in contrast to washing dirt from the body, is hard to pin down. WEB and KJV have answer, Douay-Rheims has examination, and the NET Bible has pledge.",
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-editions",
+          "net-1pe"
+        ]
+      },
+      {
+        "ref": "4:16",
+        "form": "Χριστιανός — Christianos",
+        "meaning": "a Christian, a follower of Christ",
+        "why": "This word occurs only three times in the hosted Greek New Testament: here and at Acts 11:26 and 26:28. Here it stands beside murderer and thief (4:15) as a name someone might suffer under, whether or not as a formal charge, and the readers are told not to be ashamed of it.",
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-greek-nt"
+        ]
+      },
+      {
+        "ref": "5:13",
+        "form": "συνεκλεκτὴ — syneklektē",
+        "meaning": "she who is chosen together with you",
+        "why": "The Greek has a feminine word and no noun. KJV and Douay-Rheims supply church; WEB keeps she. The NET notes judge a church much more likely than an individual woman.",
+        "sourceIds": [
+          "greek-1pe",
+          "hosted-editions",
+          "net-1pe"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A circular letter of encouragement",
+    "how": "Read it as one letter meant to be read aloud to several communities. Each section of instruction is backed by a reason, usually God's mercy, Christ's example, or the hope of what will be revealed. When a command seems hard, look for the reason attached to it and for the persons the instruction does not address."
+  },
+  "cast": [
+    {
+      "name": "Peter",
+      "who": "The named sender, an apostle of Jesus Christ, who also calls himself a fellow elder and a witness of Christ's sufferings. Whether he composed the letter himself is debated."
+    },
+    {
+      "name": "Silvanus",
+      "who": "The one through whom the letter was written (5:12), called a faithful brother. A Silvanus also appears with Paul in 1 Thessalonians 1:1 and 2 Corinthians 1:19. Whether he drafted the letter or carried it is debated."
+    },
+    {
+      "name": "Mark",
+      "who": "Called my son at 5:13. Acts 12:12 links a John called Mark with the house where Peter went after his release; Papias reports an elder's saying that Mark was Peter's interpreter."
+    },
+    {
+      "name": "She who is in Babylon",
+      "who": "The sender of greetings at 5:13, chosen together with the readers. Usually read as a church, and Babylon as Rome."
+    },
+    {
+      "name": "The readers",
+      "who": "Believers in five regions of Asia Minor, including household slaves, wives, husbands, elders, and younger people."
+    },
+    {
+      "name": "Neighbors who speak against them",
+      "who": "People who find the readers' new way of life strange and slander them as evildoers. The letter hopes some will come to glorify God."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "New birth, living hope, and holiness",
+      "chapters": "1",
+      "precise": "1:1–25",
+      "note": "The greeting leads into praise for new birth and a hope tested by trials, then a call to holy conduct grounded in redemption and the word that endures."
+    },
+    {
+      "heading": "A chosen people living among the nations",
+      "chapters": "2",
+      "precise": "2:1–25",
+      "note": "Living stones and Israel's titles (2:1–10) lead into conduct before outsiders and rulers, and instructions to household slaves anchored in Christ's own suffering (2:11–25)."
+    },
+    {
+      "heading": "Households, suffering for good, and Christ's victory",
+      "chapters": "3",
+      "precise": "3:1–22",
+      "note": "Wives and husbands are addressed, then everyone; suffering for doing good leads into Christ's death, the spirits in prison, Noah, and baptism."
+    },
+    {
+      "heading": "Living for God's will before the end",
+      "chapters": "4",
+      "precise": "4:1–19",
+      "note": "A break with the old way of life, mutual love and service because the end is near, and the fiery trial faced under the name Christian."
+    },
+    {
+      "heading": "Elders, humility, and greetings",
+      "chapters": "5",
+      "precise": "5:1–14",
+      "note": "Instructions to elders and younger people, a warning about the adversary, and a close naming Silvanus, Babylon, and Mark."
+    }
+  ],
+  "purpose": "First Peter tells believers who are slandered and made to suffer that their hope is secure and their place with God is real. It asks them to answer hostility with visible good conduct, gentleness, and readiness to give a reason for their hope, and it grounds that request in Christ, who suffered unjustly and was raised and given glory.",
+  "snags": [
+    {
+      "snag": "The instructions to household slaves can sound like approval of slavery and of enduring abuse.",
+      "help": "The servants of 2:18 are household slaves (οἰκέται), not paid employees. The letter tells them to submit even to harsh masters and to bear unjust suffering, then grounds this in Christ's suffering at 2:21–25. The wider section keeps returning to how outsiders see the community (2:12, 2:15, 3:1, 3:16), while the reasons given to slaves themselves are conscience toward God and Christ's example (2:19–21). It does not say slavery is good, it does not address masters at all, and it calls unjust suffering unjust. Explaining that setting does not settle every later use of these lines."
+    },
+    {
+      "snag": "The instructions to wives can be read as a warrant for control.",
+      "help": "At 3:1–6 wives are told to be subject to their husbands, including husbands who do not believe, and Sarah is held up as an example. At 3:7 husbands are told to live with understanding, to honor their wives as joint heirs of the grace of life, and are warned that their prayers may be hindered. The phrase weaker vessel stands in the same verse as joint heirs. The passage assumes a husband's authority but gives him obligations, and nothing in it licenses harm."
+    },
+    {
+      "snag": "Israel's titles applied to the readers can be read as a claim that the church has replaced Israel.",
+      "help": "At 2:9–10 the readers receive titles from Exodus 19:5–6 and Hosea: a chosen race, a royal priesthood, a holy nation, a people who were once not a people. The writer reads Israel's Scriptures as now addressed to them. The letter does not discuss the Jewish people or say that God has rejected them; the people who stumble in 2:8 are those who disobey the word, not a nation. The later view that the church has superseded Israel, called supersessionism (its critics call it replacement theology), is a separate claim that this passage does not state."
+    },
+    {
+      "snag": "Christ preaching to the spirits in prison seems to come from nowhere.",
+      "help": "At 3:18–20 the letter moves from Christ's death and being made alive to a proclamation to spirits who disobeyed in Noah's day, and then to baptism. At 4:6 it says the good news was announced to the dead. These are among the hardest lines in the New Testament, and readers since Augustine have admitted their difficulty. See the debate below for the main readings."
+    },
+    {
+      "snag": "Baptism now saves you can sound like a rite that works by itself.",
+      "help": "At 3:21 the sentence immediately qualifies itself: baptism is not the removal of dirt from the body but an appeal or pledge of a good conscience toward God, through the resurrection of Jesus Christ. Noah's flood is the pattern it answers to."
+    },
+    {
+      "snag": "Babylon in 5:13 looks like the city in Mesopotamia.",
+      "help": "Most readers, from Eusebius to the NET notes, take Babylon as a figurative name for Rome, and many read Babylon in Revelation the same way. The letter itself does not say Rome, and whether the name points to a date after 70 is part of the authorship debate below."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Did the apostle Peter write 1 Peter?",
+      "settled": "The letter names Peter as sender and Silvanus as the one through whom it was written. Early writers used it widely: Polycarp's letter has wording close to several of its lines, Eusebius reports that Papias used it, and Eusebius lists it among the books acknowledged by all.",
+      "positions": [
+        {
+          "view": "Peter wrote it, perhaps with help",
+          "grounds": "Defenders point to the named sender, early and undisputed acceptance, and echoes of sayings of Jesus. Some explain the polished Greek by a helper: Silvanus as secretary is one proposal, though the NET notes argue the Greek of 5:12 more naturally means Silvanus carried the letter. On this view it predates Peter's death under Nero."
+        },
+        {
+          "view": "A later writing in Peter's name from a circle in Rome",
+          "grounds": "Many critical scholars judge the Greek too accomplished for a Galilean fisherman (Acts 4:13 calls Peter unlearned), see shared themes with letters in Paul's tradition, and take the use of Babylon for Rome as a sign of a date after 70. They describe the letter as an expression of Christian tradition at Rome associated with Peter."
+        }
+      ],
+      "soWhat": "The letter's teaching does not change with the answer, but its date and setting do. Keep three things apart: what the letter says about itself, how the early church received it, and what modern scholars reconstruct."
+    },
+    {
+      "question": "What kind of suffering are the readers facing?",
+      "settled": "The readers are slandered as evildoers, insulted for the name of Christ, and face a fiery trial; 5:9 says believers elsewhere suffer the same things. The letter tells them to honor the king.",
+      "positions": [
+        {
+          "view": "Local hostility and slander",
+          "grounds": "Scholars who hold this point to the vocabulary of speaking against, reviling, and insult (2:12, 3:16, 4:4, 4:14), and to the instruction to honor the emperor, which sits oddly with official persecution. On this view the trouble comes from neighbors, not from official Roman persecution."
+        },
+        {
+          "view": "Legal accusation as well",
+          "grounds": "Others read the readiness to give a defense (3:15) as a court setting and the name Christian at 4:16 as a charge. Some compare the letter of Pliny, governor of Bithynia-Pontus around 110–112, who asked Trajan whether Christians should be punished for the name alone."
+        }
+      ],
+      "soWhat": "This shapes the date and the picture of the readers' lives. Either way, the letter's instructions are the same: do not repay insult with insult, do good, and do not be ashamed of the name."
+    },
+    {
+      "question": "Who are the spirits in prison, and who are the dead who heard the good news?",
+      "settled": "At 3:18–20 Christ, put to death in the flesh and made alive in the spirit, goes and proclaims to spirits in prison who disobeyed in Noah's day. At 4:6 the good news was announced to the dead. The passages lead into baptism and into judgment of the living and the dead.",
+      "positions": [
+        {
+          "view": "Christ's descent to the dead",
+          "grounds": "After his death Christ went to the realm of the dead and proclaimed there. This passage, with a few others, stands behind the traditional belief in the descent into hell, which later entered the Apostles' Creed. Augustine, who himself held that Christ was in hell, found this reading of the verse hard, since it names only Noah's generation."
+        },
+        {
+          "view": "Proclamation to imprisoned angels",
+          "grounds": "The spirits are fallen angels connected with the time before the flood, and Christ announces his victory over them. Supporters compare 2 Peter 2:4–5 and Jude 6 and Jewish traditions of the kind found in 1 Enoch; the NET notes list this as one of two common readings."
+        },
+        {
+          "view": "Christ preaching through Noah",
+          "grounds": "Augustine proposed that Christ, in the spirit, preached in Noah's day to Noah's unbelieving contemporaries, imprisoned, as he read it, in ignorance. The NET notes prefer a form of this reading because of the time markers in 3:20, and take the dead of 4:6 as believers who heard the gospel in life and have since died; Augustine took them as the spiritually dead."
+        }
+      ],
+      "soWhat": "The point the letter draws is clear even where the details are not: Christ's suffering led to his vindication and authority over every power (3:22), and the readers can face suffering with that in view."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, 1 Peter",
+      "says": "Provides the wording, named persons, and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/1PE/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "1 Peter in the World English Bible, King James Version, and Douay-Rheims",
+      "says": "Shows different renderings of foreigners, conduct, the titles at 2:9, the word at 3:21, and she at 5:13, and different readings at 2:2, 3:15, 4:1, and 4:14."
+    },
+    {
+      "id": "greek-1pe",
+      "label": "SBL Greek New Testament, 1 Peter, with MorphGNT analysis",
+      "says": "Provides the Greek forms, lemmas, counts, and readings used in the language discussion; it is a modern edited Greek text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/81-1Pe-morphgnt.txt"
+    },
+    {
+      "id": "hosted-greek-nt",
+      "label": "SBL Greek New Testament as hosted on this site, all 27 books",
+      "says": "The lemma Χριστιανός occurs at 1 Peter 4:16, Acts 11:26, and Acts 26:28 and nowhere else."
+    },
+    {
+      "id": "net-1pe",
+      "label": "NET Bible, 1 Peter: text and translator notes (bible.org)",
+      "says": "Identifies the Scripture quotations; takes Dispersion at 1:1 as probably a figure for Gentile Christians; gives two common readings of 3:19 and prefers preaching through Noah; reads 4:6 as the now-dead who accepted the gospel in life; judges Silvanus more likely carrier than secretary; takes Babylon as Rome and she as a church; discusses readings at 2:2, 3:15, 3:18, and 4:1, citing Papyrus 72.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/1pe.pdf"
+    },
+    {
+      "id": "eusebius-he-2",
+      "label": "Eusebius, Church History, Book 2, chapters 15 and 25 (New Advent)",
+      "says": "Says Peter wrote his first epistle in Rome and calls the city Babylon by a figure, quoting 5:13; records that Peter was crucified at Rome under Nero.",
+      "url": "https://www.newadvent.org/fathers/250102.htm"
+    },
+    {
+      "id": "eusebius-he-3",
+      "label": "Eusebius, Church History, Book 3, chapters 3, 4, 25, and 39 (New Advent)",
+      "says": "Says one epistle of Peter, the first, is acknowledged as genuine and was used freely by the ancient elders; describes it as written to Hebrews of the dispersion in the five regions; lists it among the accepted writings; reports that Papias used testimonies from it and quotes Papias on an elder's saying that Mark was Peter's interpreter.",
+      "url": "https://www.newadvent.org/fathers/250103.htm"
+    },
+    {
+      "id": "papias",
+      "label": "Papias, Fragment VI, as quoted by Eusebius",
+      "says": "Eusebius's note that Papias uses proofs from the First Epistle of John and from the Epistle of Peter; and Papias's report of an elder's saying that Mark was Peter's interpreter.",
+      "href": "/early/papias"
+    },
+    {
+      "id": "polycarp",
+      "label": "Polycarp, Letter to the Philippians (c. AD 110–140)",
+      "says": "Uses wording very close to 1 Peter 1:8 (chapter 1), 1:13, 1:21, and 3:9 (chapter 2), 2:22 and 2:24 (chapter 8), and 2:12 (chapter 10), without naming Peter.",
+      "href": "/early/polycarp-philippians"
+    },
+    {
+      "id": "augustine-164",
+      "label": "Augustine, Letter 164 to Evodius (New Advent)",
+      "says": "Calls 3:18–21 and 4:6 difficult; holds that Christ was in hell but asks why, if he preached there, only Noah's generation is named; proposes that Christ in the spirit preached in Noah's day to people imprisoned in ignorance, and reads the dead of 4:6 as the spiritually dead.",
+      "url": "https://www.newadvent.org/fathers/1102164.htm"
+    },
+    {
+      "id": "wiki-1pe",
+      "label": "Wikipedia, First Epistle of Peter (a survey of scholarship)",
+      "says": "Reports that most scholars see the letter as Roman tradition associated with Peter, while others defend his authorship; summarizes the Greek-style argument, the secretary proposal, Babylon as Rome, social versus official persecution (with Pliny's letter of 112 and Domitian, 81–96), and 3:19, with a few other passages, behind the descent into hell in the Apostles' Creed.",
+      "url": "https://en.wikipedia.org/wiki/First_Epistle_of_Peter"
+    },
+    {
+      "id": "wiki-p72",
+      "label": "Wikipedia, Papyrus 72 (manuscript facts)",
+      "says": "Papyrus 72 (Bodmer VII–VIII) contains Jude and 1–2 Peter, copied by one scribe, dated to the third or fourth century; it is the earliest known manuscript of these letters complete.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_72"
+    },
+    {
+      "id": "wiki-spirits",
+      "label": "Wikipedia, Spirits in prison (a survey of readings)",
+      "says": "Lists readings of 3:19: preaching through Noah (Augustine), proclamation to the dead, and proclamation to fallen angels, compared with 2 Peter 2, Jude, and Enochic traditions.",
+      "url": "https://en.wikipedia.org/wiki/Spirits_in_prison"
+    },
+    {
+      "id": "wiki-supersessionism",
+      "label": "Wikipedia, Supersessionism",
+      "says": "Defines supersessionism, also called replacement theology, as the doctrine that the church has superseded the Jewish people as God's covenant people.",
+      "url": "https://en.wikipedia.org/wiki/Supersessionism"
+    },
+    {
+      "id": "wiki-nero",
+      "label": "Wikipedia, Nero",
+      "says": "Nero was Roman emperor from AD 54 until his death in AD 68.",
+      "url": "https://en.wikipedia.org/wiki/Nero"
+    },
+    {
+      "id": "scriptural-parallels",
+      "label": "Exodus 19, Isaiah 8 and 28, Psalm 118, Hosea 1–2, Acts 4 and 12, 1 Thessalonians 1, World English Bible",
+      "says": "The passages behind the titles and stone sayings of 2:4–10, and the other places where Peter's education, Mark, and Silvanus are mentioned.",
+      "href": "/scriptures/protestant/EXO/19"
+    },
+    {
+      "id": "ecw-pliny",
+      "label": "Pliny the Younger, Letters 10.96, to Trajan, in English (earlychristianwritings.com)",
+      "says": "Pliny, as governor, asks Trajan whether the name itself, even without offenses, or only offenses associated with the name should be punished; the site dates the letter 111–112.",
+      "url": "https://www.earlychristianwritings.com/text/pliny.html"
+    },
+    {
+      "id": "wiki-pliny-christians",
+      "label": "Wikipedia, Pliny the Younger on Christians (a survey article)",
+      "says": "Pliny, governor of Bithynia and Pontus, wrote to Trajan around AD 110 asking how to deal with Christians (Letters 10.96).",
+      "url": "https://en.wikipedia.org/wiki/Pliny_the_Younger_on_Christians"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read the long opening of praise as the ground for everything after it. Hope, inheritance, and testing by fire set the terms for the later talk of suffering.",
+      "refs": [
+        "1:3",
+        "1:4",
+        "1:5",
+        "1:6",
+        "1:7",
+        "1:13"
+      ]
+    },
+    {
+      "tip": "Follow the stone passage into the titles, then straight into conduct among the nations. The new identity and the visible life belong together.",
+      "refs": [
+        "2:4",
+        "2:5",
+        "2:9",
+        "2:10",
+        "2:11",
+        "2:12"
+      ]
+    },
+    {
+      "tip": "Read the household instructions with their reasons, and notice the lines from Isaiah 53 that describe Christ's own unjust suffering.",
+      "refs": [
+        "2:18",
+        "2:21",
+        "2:22",
+        "2:23",
+        "2:24",
+        "3:1",
+        "3:7"
+      ]
+    },
+    {
+      "tip": "Read 3:13–22 as one argument: suffering for doing good, readiness to answer, Christ's suffering, and his authority over every power. Let the end of the passage guide the hard middle.",
+      "refs": [
+        "3:14",
+        "3:15",
+        "3:18",
+        "3:19",
+        "3:21",
+        "3:22"
+      ]
+    },
+    {
+      "tip": "Compare the two descriptions of trial in chapters 1 and 4, and the warning not to suffer as a wrongdoer.",
+      "refs": [
+        "1:6",
+        "1:7",
+        "4:12",
+        "4:13",
+        "4:15",
+        "4:16"
+      ]
+    }
+  ],
+  "next": "Read 2 Peter, which calls itself a second letter, while keeping the relationship between the two open. Read Isaiah 53 beside 2:21–25, and Exodus 19 beside 2:9. Polycarp's letter to the Philippians shows how early this letter's wording was being used.",
+  "traditionNote": "First Peter belongs to the New Testament and is grouped with the Catholic or General Letters. Eusebius counted it among the writings acknowledged by all, while 2 Peter was among the disputed ones. Its early acceptance and the modern authorship debate are separate questions."
+}

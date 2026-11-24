@@ -1,0 +1,573 @@
+{
+  "book": "JAS",
+  "bookName": "James",
+  "oneLine": "A short letter of moral instruction that presses its hearers to put what they believe into practice, especially toward the poor.",
+  "orient": "The opening names James and addresses the twelve tribes in the Dispersion. What follows is less a running argument than a chain of short sections on testing, wisdom, speech, wealth, quarrels and prayer, often joined by a repeated word. The best-known section, 2:14–26, insists that faith without works is dead. Read it beside the rest of the letter: the works in view are concrete, such as feeding and clothing a brother or sister in need.",
+  "whereYouAre": "The letter names no event, place or date. Its sender calls himself a servant of God and of the Lord Jesus Christ, and its readers are addressed as the twelve tribes scattered abroad. Elsewhere in the New Testament, James the Lord's brother appears as a leader in Jerusalem, and later writers record his death there. Whether that James wrote this letter is a separate question, discussed below.",
+  "facts": {
+    "writtenBy": "The opening names James, without saying which James. Tradition identifies him as James the Lord's brother, the leader in Jerusalem; many modern scholars regard the letter as written later in his name, and some propose sayings of James edited by others.",
+    "writtenWhen": "Not secure. If James the Lord's brother wrote it, it predates his death, which Josephus places soon after the governor Festus died, usually dated 62 CE; scholars who favor a later writer propose the late first to mid-second century.",
+    "writtenFor": "The letter's own address is the twelve tribes in the Dispersion. Many take this of Jewish followers of Jesus living outside the land of Israel; some scholars suggest communities where followers of Jesus still worshiped alongside other Jews. The letter does not define the phrase.",
+    "place": "No place of writing or of the readers is named. Jerusalem is the traditional setting if James the Lord's brother is the author.",
+    "covers": "Testing and wisdom (chapter 1); partiality toward the rich and faith shown in works (chapter 2); speech and wisdom from above (chapter 3); quarrels, pride and presumption (chapter 4); the rich, patience, oaths and prayer (chapter 5).",
+    "size": "Five chapters, 108 verses, and 2,249 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "eusebius-2-23",
+      "jerome-2",
+      "wiki-james"
+    ],
+    "writtenWhen": [
+      "eusebius-2-23",
+      "wiki-james"
+    ],
+    "writtenFor": [
+      "hosted-web",
+      "wiki-james"
+    ],
+    "place": [
+      "hosted-web",
+      "hosted-james-nt"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "Short, direct moral teaching. Commands dominate: the grammatical tags on the hosted Greek text mark 55 verb forms as imperatives in 108 verses, a few of them inside quoted speech at 2:3 and 2:16. Vivid images (a wave, a mirror, a bit and a rudder, a spring, a vapor, a farmer waiting for rain) carry the argument, and the frequent address my brothers marks new sections.",
+    "spokenWorld": "The letter speaks of the twelve tribes, a synagogue, elders of the church, the law, the prophets, Abraham, Rahab, Job and Elijah. These belong to the world of Israel's Scriptures. The Greek of the letter does not tell us what language its first hearers spoke at home.",
+    "readerSignal": "Watch for words that hook one saying to the next. A word at the end of one sentence is often picked up at the start of the next, so a reader who follows the repeated word can see why a new topic begins where it does.",
+    "englishLayer": "The World English Bible, King James Version and Douay-Rheims sometimes differ for reasons of translation and sometimes because they follow different Greek readings. At 2:2, WEB has synagogue where KJV and Douay-Rheims have assembly. At 5:14, WEB has elders of the assembly, KJV elders of the church, and Douay-Rheims priests of the church. At 5:12, WEB ends with fall into hypocrisy, while KJV, Douay-Rheims and the SBL Greek text speak of condemnation or judgment. At 4:4, WEB and KJV address adulterers and adulteresses; the SBL Greek text has only the feminine word. The Greek examples follow the SBL Greek New Testament, a modern edited text.",
+    "textualHistory": [
+      {
+        "label": "A Greek letter of moral instruction",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The letter has a letter opening and greeting at 1:1 but no closing greetings. Its Greek uses repeated vocabulary and linked sayings. Who composed it, and when, is debated; the letter's own claims, its reception in the early church, and modern reconstructions are three separate matters.",
+        "sourceIds": [
+          "greek-jas",
+          "hosted-web",
+          "wiki-james"
+        ]
+      },
+      {
+        "label": "Third-century papyrus fragments",
+        "language": "Greek",
+        "role": "earliest-extant",
+        "description": "The oldest surviving copies are fragments from Egypt dated by handwriting to the third century: Papyrus 20 has 2:19–3:9 and Papyrus 23 has 1:10–12 and 1:15–18. The fourth-century codices Vaticanus and Sinaiticus are among the oldest larger manuscripts that contain it.",
+        "sourceIds": [
+          "wiki-p20",
+          "wiki-p23",
+          "wiki-james"
+        ]
+      },
+      {
+        "label": "English translations and reading differences",
+        "language": "English translations compared with the SBL Greek text",
+        "role": "translation",
+        "description": "Some English differences are choices of word, as with synagogue or assembly at 2:2, and elders or priests at 5:14. Others follow different Greek readings, as at 5:12 and 4:4. The SBL Greek text is a modern edited comparison, not a claim about the immediate textual base of each English version.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-jas"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Catchwords that link one saying to the next",
+        "original": "χαίρειν / χαράν · λειπόμενοι / λείπεται · πειρασμόν / πειραζόμενος — chairein / charan · leipomenoi / leipetai · peirasmon / peirazomenos — greetings / joy · lacking / lacks · testing / being tested or tempted",
+        "explanation": "Chapter 1 moves by repeated words. The greeting chairein at 1:1 is followed by joy at 1:2. Lacking in nothing at 1:4 is followed by if any of you lacks wisdom at 1:5. The person who endures temptation, or testing, at 1:12 is followed by the person who is tempted at 1:13. The repeated word carries the reader from one saying to the next even when the subject shifts.",
+        "translationNote": "English often breaks the link. WEB keeps lacking and lacks at 1:4–5, but greetings and joy look unrelated in English, and a translation such as the NET Bible, with trials at 1:2, testing at 1:12 and tempted at 1:13, makes one Greek word family look like two; WEB keeps temptation and tempted.",
+        "caution": "Catchwords show how the sayings are joined. They do not by themselves show whether the letter was planned as a whole or gathered from separate sayings.",
+        "refs": [
+          "1:1",
+          "1:2",
+          "1:4",
+          "1:5",
+          "1:12",
+          "1:13"
+        ],
+        "sourceIds": [
+          "greek-jas",
+          "hosted-web",
+          "net-jas"
+        ]
+      },
+      {
+        "title": "Complete, mature, perfect",
+        "original": "τέλειος — teleios — complete, mature, perfect",
+        "explanation": "The adjective occurs five times (lemma, SBLGNT): endurance is to have its complete work so that the readers may be complete (1:4, twice), every complete gift comes from above (1:17), the complete law of freedom (1:25), and the person who does not stumble in word is complete (3:2). The related verb at 2:22 says faith was completed by works. Wholeness, rather than divided loyalty, is the letter's ideal.",
+        "translationNote": "English perfect can suggest flawlessness. At 3:2 the same verse that names the complete person begins we all stumble in many things, so the word points to maturity and wholeness that is being pursued.",
+        "caution": "The word does not teach that believers become sinless, and its repetition does not make every use refer to the same quality. Law, gift and person are each called complete in their own way.",
+        "refs": [
+          "1:4",
+          "1:17",
+          "1:25",
+          "2:22",
+          "3:2"
+        ],
+        "sourceIds": [
+          "greek-jas",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Double-minded: a person split in two",
+        "original": "δίψυχος — dipsychos — double-souled, double-minded",
+        "explanation": "At 1:8 the person who asks while doubting is a double-minded man, unstable in all his ways. At 4:8 the double-minded are told to purify their hearts. Across the 27 books of the SBL Greek New Testament hosted here, this word occurs only in these two verses of James. Its opposite in the letter is the complete person and the God who gives without wavering.",
+        "translationNote": "Double-minded is a fair rendering, but the Greek speaks of a double soul, which is stronger than indecision about a plan. The hosted English translation of the Shepherd of Hermas renders the same word double-souled.",
+        "caution": "The word family is frequent in the Greek Shepherd of Hermas and appears in 1 Clement. A shared rare word shows a shared vocabulary of piety; it does not by itself show who borrowed from whom, or date either text.",
+        "refs": [
+          "1:6",
+          "1:8",
+          "4:8"
+        ],
+        "sourceIds": [
+          "greek-jas",
+          "hosted-web",
+          "hosted-hermas",
+          "greek-hermas",
+          "hosted-1clement"
+        ]
+      },
+      {
+        "title": "Doers and hearers",
+        "original": "ποιητής / ἀκροατής — poiētēs / akroatēs — doer / hearer",
+        "explanation": "Be doers of the word, and not only hearers (1:22). The pair recurs at 1:23 and 1:25, and the doer of the law reappears at 4:11. In the SBL Greek New Testament the doer occurs four times in James (lemma, SBLGNT); outside James, the pair hearer and doer appears together only at Romans 2:13. The mirror image at 1:23–24 shows the point: hearing without doing is forgetting.",
+        "translationNote": "Doer is an unusual English noun, and some translations replace it with a verb as the NET Bible does with live out the message, which keeps the sense but loses the repeated title that ties 1:22 to 4:11.",
+        "caution": "The contrast is between hearing and doing, not between grace and effort. The same chapter speaks of the word implanted by God (1:21) and of being born by the word of truth (1:18).",
+        "refs": [
+          "1:18",
+          "1:21",
+          "1:22",
+          "1:23",
+          "1:25",
+          "4:11"
+        ],
+        "sourceIds": [
+          "greek-jas",
+          "hosted-web",
+          "hosted-paul",
+          "net-jas"
+        ]
+      },
+      {
+        "title": "Faith and works",
+        "original": "πίστις / ἔργον / δικαιόω — pistis / ergon / dikaioō — faith / work, deed / justify, show to be righteous",
+        "explanation": "Faith occurs 16 times and work 15 times in James (lemma, SBLGNT); 11 of the uses of faith and 12 of work fall in 2:14–26. The section opens with a person who says he has faith but leaves a hungry brother or sister unfed, and closes with faith apart from works is dead. Abraham's offering of Isaac and Rahab's welcome of the messengers are its examples, and it quotes Genesis 15:6, the verse Paul also quotes in Romans 4:3 and Galatians 3:6.",
+        "translationNote": "James never uses Paul's phrase works of the law; in James the works are deeds such as giving the body what it needs. At 2:24 James writes that a person is justified by works and not by faith only; Paul at Romans 3:28 writes justified by faith apart from works of the law. The same English words sit on different phrases.",
+        "caution": "Counting shared words does not settle whether James and Paul disagree, answer each other, or use the words for different questions. That is a real debate, set out below.",
+        "refs": [
+          "2:14",
+          "2:15",
+          "2:17",
+          "2:19",
+          "2:21",
+          "2:22",
+          "2:23",
+          "2:24",
+          "2:26"
+        ],
+        "sourceIds": [
+          "greek-jas",
+          "hosted-web",
+          "hosted-paul",
+          "wiki-james"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words that change how a verse reads",
+    "examples": [
+      {
+        "ref": "1:8",
+        "form": "δίψυχος — dipsychos",
+        "meaning": "double-souled, double-minded",
+        "why": "In the New Testament the word occurs only in James. It names a divided person, the opposite of the complete person the letter hopes for.",
+        "sourceIds": [
+          "greek-jas",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "2:2",
+        "form": "συναγωγὴν — synagōgēn",
+        "meaning": "gathering place or assembly; synagogue",
+        "why": "WEB keeps synagogue, while KJV and Douay-Rheims have assembly. Elsewhere in the New Testament the word usually names Jewish synagogues; here it is the readers' own meeting. At 5:14 the letter uses ekklēsia for the same community.",
+        "sourceIds": [
+          "greek-jas",
+          "hosted-editions",
+          "net-jas"
+        ]
+      },
+      {
+        "ref": "2:24",
+        "form": "δικαιοῦται — dikaioutai",
+        "meaning": "is justified, is shown righteous",
+        "why": "The same verb and the same phrase a person is justified appear in Galatians 2:16, joined there to works of the law. How the verb is meant in each letter is part of the debate below.",
+        "sourceIds": [
+          "greek-jas",
+          "hosted-paul",
+          "wiki-james"
+        ]
+      },
+      {
+        "ref": "5:12",
+        "form": "κρίσιν — krisin",
+        "meaning": "judgment",
+        "why": "The SBL Greek text ends the verse with fall under judgment, as KJV and Douay-Rheims do. WEB's fall into hypocrisy follows another reading, eis hypokrisin, into hypocrisy, which the SBL apparatus lists from the Byzantine Majority Text, the base WEB's publisher names for its New Testament. The command about oaths is the same in either reading.",
+        "sourceIds": [
+          "greek-jas",
+          "hosted-editions",
+          "sblgnt-apparatus",
+          "web-base"
+        ]
+      },
+      {
+        "ref": "5:15",
+        "form": "σώσει — sōsei",
+        "meaning": "will save, will rescue, will make well",
+        "why": "WEB says will heal; KJV and Douay-Rheims say shall save. The Greek verb can mean either, and the same verse goes on to forgiveness of sins.",
+        "sourceIds": [
+          "greek-jas",
+          "hosted-editions"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A letter of moral instruction",
+    "how": "James opens like a letter but reads like a series of short teachings. Take each section on its own terms, notice the image that carries it, and then follow the repeated words that join it to the next. Commands are often followed by a reason introduced by for or because; read the reason as part of the command."
+  },
+  "cast": [
+    {
+      "name": "James",
+      "who": "The named sender, a servant of God and of the Lord Jesus Christ. The letter does not say which James. Tradition identifies him with James the Lord's brother, a leader of the Jerusalem church whom Hegesippus, quoted by Eusebius, says was called the Just."
+    },
+    {
+      "name": "The brothers and sisters addressed",
+      "who": "The readers, called my brothers again and again and the twelve tribes in the Dispersion. They are tested, tempted to favor the rich, and prone to quarrels and careless speech."
+    },
+    {
+      "name": "The rich and the poor",
+      "who": "The man with the gold ring and the poor man in filthy clothing at 2:2; the rich who drag believers into court at 2:6; landowners who hold back laborers' wages at 5:4."
+    },
+    {
+      "name": "Abraham and Rahab",
+      "who": "Examples of faith shown in action at 2:21–25, one the ancestor of Israel, the other a woman of Jericho who welcomed Joshua's messengers."
+    },
+    {
+      "name": "Job, the prophets and Elijah",
+      "who": "Examples of endurance and of prayer from Israel's Scriptures, at 5:10–11 and 5:17–18."
+    },
+    {
+      "name": "The elders of the church",
+      "who": "Leaders called to pray over the sick and anoint them with oil at 5:14."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Testing, wisdom and the implanted word",
+      "chapters": "1",
+      "precise": "1:1–27",
+      "note": "Greeting; trials that produce endurance; asking God for wisdom; the source of temptation; doers and not only hearers; religion that cares for orphans and widows."
+    },
+    {
+      "heading": "No partiality, and faith that works",
+      "chapters": "2",
+      "precise": "2:1–26",
+      "note": "Favoring the rich in the assembly breaks the royal law of love; faith without works is dead, shown in Abraham and Rahab."
+    },
+    {
+      "heading": "The tongue and wisdom from above",
+      "chapters": "3",
+      "precise": "3:1–18",
+      "note": "Teachers are judged more strictly; the tongue is small but sets a forest on fire; earthly wisdom is set against wisdom that is pure and peaceable."
+    },
+    {
+      "heading": "Quarrels, humility and presumption",
+      "chapters": "4",
+      "precise": "4:1–17",
+      "note": "Wars among the readers come from desire; friendship with the world is set against God; humble yourselves; do not judge; say if the Lord wills."
+    },
+    {
+      "heading": "The rich, patience and prayer",
+      "chapters": "5",
+      "precise": "5:1–20",
+      "note": "A warning to rich oppressors; patience until the coming of the Lord; no oaths; prayer and anointing for the sick; turning back one who wanders."
+    }
+  ],
+  "purpose": "James calls a community to be whole rather than divided: to ask God for wisdom without wavering, to hear and do the word, to treat the poor with honor, to govern speech, and to wait patiently for the Lord. Its insistence that faith shows itself in works is aimed at a faith that speaks kindly to the hungry and sends them away unfed.",
+  "snags": [
+    {
+      "snag": "Faith without works is dead can sound like a direct contradiction of Paul.",
+      "help": "Read 2:14–26 from its own example: a person who says go in peace to a hungry brother or sister. James does not use Paul's phrase works of the law, and Paul's and James's statements use some of the same words for different phrases. Whether the two finally agree is a real debate, set out below; neither side needs to pretend the wording is identical."
+    },
+    {
+      "snag": "The same Greek word family is translated both testing and temptation.",
+      "help": "At 1:2 and 1:12 the trials are hardships that test faith and produce endurance. At 1:13–14 the same word family describes being drawn toward evil by one's own desire, and the letter denies that God tempts anyone. Some translations, such as the NET Bible, divide the word family into trials or testing and tempted, while WEB, KJV and Douay-Rheims keep temptation throughout; the letter itself uses the shift to make its point."
+    },
+    {
+      "snag": "The warnings to the rich in 5:1–6 can be read as contempt for anyone with money, or softened into a general comment.",
+      "help": "The charges are specific: wages kept back by fraud from those who mowed the fields (5:4), luxury, and the condemnation of the righteous. In 2:1–7 the fault is also specific: honoring the rich and shaming the poor in the assembly. The passage is a warning to oppressors and a call to the readers not to imitate them. It does not license contempt for individual people, and it does not lose its force by being made vague."
+    },
+    {
+      "snag": "The promise in 5:14–15 can be used to blame a sick person who is not healed.",
+      "help": "The verses tell the sick to call the elders, who pray and anoint, and they promise that the prayer of faith will save and the Lord will raise the sick person up. The Greek verb can mean save or make well, and the verse moves straight on to forgiveness. The passage does not say that every illness will end in recovery, and it does not teach that someone who stays ill lacked faith or is being punished. Catholic teaching treats the passage as the main scriptural text for the anointing of the sick, and Douay-Rheims renders the elders as priests."
+    },
+    {
+      "snag": "A synagogue and the twelve tribes can make the readers' identity look settled.",
+      "help": "At 2:2 the assembly is called a synagogue, and at 5:14 the same community has elders of the church. The address to the twelve tribes in the Dispersion uses the language of Israel's scattering. Many take it of Jewish followers of Jesus abroad; the letter does not define it. The letter does not describe Judaism or Jewish people as opponents; its sharpest words fall on the rich, the quarrelsome and the careless speaker within the community."
+    },
+    {
+      "snag": "The name Jesus appears only twice, so the letter can seem barely Christian.",
+      "help": "Jesus is named at 1:1 and 2:1, and the Lord whose coming is awaited at 5:7–8 is mentioned as well. Several sayings resemble Jesus's teaching in Matthew 5–7 without quoting it: compare 5:12 with Matthew 5:34–37 on oaths, 1:5 with Matthew 7:7 on asking, and 1:22 with Matthew 7:24–26 on hearing and doing. These are resemblances in wording and theme, not marked quotations."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Which James wrote the letter, and when?",
+      "settled": "The letter names James, a servant of God and of the Lord Jesus Christ, and says no more about him. James the Lord's brother is named in Mark 6:3 and Galatians 1:19 and appears as a leader in Jerusalem in Acts 15 and 21. Josephus, as quoted by Eusebius, records his death after the governor Festus died.",
+      "positions": [
+        {
+          "view": "James the Lord's brother",
+          "grounds": "This is the traditional identification, recorded by Jerome and, a survey article reports, taught in the Orthodox tradition. Defenders argue that a leader of a Jerusalem community writing to Jewish believers abroad fits the address, and that the letter could come from before his death in the early 60s CE. Some think he could write this Greek himself; a few propose a secretary."
+        },
+        {
+          "view": "Sayings of James, edited later",
+          "grounds": "Some scholars propose two stages: teaching that goes back to James the Lord's brother, collected and shaped into the present letter by his followers."
+        },
+        {
+          "view": "A later writer using James's name",
+          "grounds": "Many modern scholars hold this view. They point to the accomplished Greek, possible use of 1 Peter, a possible answer to later followers of Paul, and the late and disputed reception of the letter. They usually date it from the late first to the mid-second century."
+        }
+      ],
+      "soWhat": "The date and setting change how the faith and works passage is heard: before Paul's letters circulated, alongside them, or after. They do not change what the letter asks of its readers."
+    },
+    {
+      "question": "Do James and Paul disagree about faith and works?",
+      "settled": "James 2:24 says a person is justified by works and not by faith only; Romans 3:28 says a person is justified by faith apart from works of the law. Both quote Genesis 15:6 about Abraham. Christians across traditions have read both letters as Scripture.",
+      "positions": [
+        {
+          "view": "A real tension",
+          "grounds": "Some scholars read 2:14–26 as a response to Paul or to his followers. Philip Schaff's history reports that Martin Luther found James and Paul impossible to harmonize on justification and judged James unfavorably in his New Testament prefaces; Luther still kept it in his German Bible."
+        },
+        {
+          "view": "James answers a misuse of Paul's teaching",
+          "grounds": "Others hold that James is correcting a misunderstanding of Paul rather than Paul himself. The faith James criticizes at 2:19 is belief that God is one, which the demons share."
+        },
+        {
+          "view": "Different questions and different uses of the words",
+          "grounds": "One Lutheran explanation, from the Wisconsin Evangelical Lutheran Synod, holds that Paul rejects works of the law added to faith to earn God's favor, while James rejects a faith that produces no deeds, so the two address different errors. A survey article reports that Orthodox teaching, like the Catholic teaching set out next, has historically read the passage against simplified versions of justification by faith alone. Others argue that James does not have Paul's categories in view at all."
+        },
+        {
+          "view": "Works done in faith belong to justification",
+          "grounds": "Catholic teaching reads 2:24 as a statement about growth in justification. The Council of Trent (1547) quotes the verse where it teaches that those already justified are still further justified as faith works together with good works, and it rejects the claim that faith alone justifies in the sense that nothing else is required. The Catechism of the Catholic Church quotes 2:26, faith apart from works is dead, to say that faith without hope and love does not fully unite the believer to Christ."
+        }
+      ],
+      "soWhat": "A reader can notice that both letters reject a faith that does not change how one lives, while still seeing that their emphases and vocabulary differ. Which way one resolves the tension shapes doctrine more than it changes the plain demand of 2:15–16."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, James",
+      "says": "Provides the wording, sequence, names, examples and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/JAS/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "James in the World English Bible, King James Version and Douay-Rheims",
+      "says": "Shows synagogue or assembly at 2:2, elders or priests at 5:14, heal or save at 5:15, hypocrisy or judgment at 5:12, and the address at 4:4."
+    },
+    {
+      "id": "greek-jas",
+      "label": "SBL Greek New Testament, James, with MorphGNT analysis",
+      "says": "Provides the Greek forms, lemmas and mood tags used for the counts and examples here; it is a modern edited Greek text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/80-Jas-morphgnt.txt"
+    },
+    {
+      "id": "hosted-paul",
+      "label": "Romans 2–4 and Galatians 2–3, World English Bible and SBL Greek text",
+      "says": "Romans 3:28 and Galatians 2:16 speak of being justified by faith and not by works of the law; Romans 4:3 and Galatians 3:6 quote Genesis 15:6; Romans 2:13 pairs hearers and doers of the law.",
+      "href": "/scriptures/protestant/ROM/3"
+    },
+    {
+      "id": "hosted-matthew",
+      "label": "Matthew 5–7, World English Bible",
+      "says": "Jesus's teaching on oaths (5:34–37), asking (7:7) and hearing and doing (7:24–26), which James resembles in wording and theme without quoting.",
+      "href": "/scriptures/protestant/MAT/5"
+    },
+    {
+      "id": "hosted-james-nt",
+      "label": "Mark 6, Galatians 1–2, 1 Corinthians 15 and Acts 15 and 21, World English Bible",
+      "says": "Name James as a brother of Jesus, as the Lord's brother whom Paul met, as one of the reputed pillars in Jerusalem, and as a leader in the Jerusalem meetings.",
+      "href": "/scriptures/protestant/GAL/1"
+    },
+    {
+      "id": "hosted-hermas",
+      "label": "The Shepherd of Hermas, hosted translation (Ante-Nicene Fathers)",
+      "says": "In chapter 39 of the hosted translation, those who doubt when they ask of the Lord are called double-souled, and the faith that comes from above is set against doubt as an earthly spirit.",
+      "href": "/early/shepherd-hermas"
+    },
+    {
+      "id": "greek-hermas",
+      "label": "The Shepherd of Hermas, Greek text, Greek Wikisource",
+      "says": "The Greek text uses the δίψυχος word family (adjective, verb and noun) throughout, including the line every double-souled man will with difficulty be saved, in the passage on asking without doubting.",
+      "url": "https://el.wikisource.org/wiki/%CE%9F_%CE%A0%CE%BF%CE%B9%CE%BC%CE%AE%CE%BD_%CF%84%CE%BF%CF%85_%CE%95%CF%81%CE%BC%CE%AC"
+    },
+    {
+      "id": "hosted-1clement",
+      "label": "1 Clement, hosted translation",
+      "says": "Chapters 11 and 23 warn against being double-minded; chapter 11 in Greek uses the same word, οἱ δίψυχοι.",
+      "href": "/early/1clement"
+    },
+    {
+      "id": "eusebius-2-23",
+      "label": "Eusebius, Church History 2.23 (early 4th century)",
+      "says": "Recounts the death of James the brother of the Lord, quotes Hegesippus that he was called the Just, quotes Josephus on his death after Festus died, and says James is said to be the author of the first of the so-called catholic epistles, which is disputed because not many of the ancients mention it, though it was read publicly in very many churches.",
+      "url": "https://www.newadvent.org/fathers/250102.htm"
+    },
+    {
+      "id": "eusebius-3-25",
+      "label": "Eusebius, Church History 3.25",
+      "says": "Lists the so-called epistle of James among the disputed writings that are nevertheless recognized by many, with Jude, 2 Peter and 2 and 3 John.",
+      "url": "https://www.newadvent.org/fathers/250103.htm"
+    },
+    {
+      "id": "jerome-2",
+      "label": "Jerome, On Illustrious Men 2 (late 4th century)",
+      "says": "Says James the Lord's brother, called the Just, wrote a single epistle among the seven catholic epistles, and that some claimed it was published by someone else under his name and gradually gained authority.",
+      "url": "https://www.newadvent.org/fathers/2708.htm"
+    },
+    {
+      "id": "wiki-james",
+      "label": "Wikipedia, Epistle of James (encyclopedia survey; the article carries a cleanup notice, so it is used only for summaries of scholarly positions)",
+      "says": "Surveys traditional, two-stage and pseudonymous views of authorship; lists grounds given for the pseudonymous view (polished Greek, possible dependence on 1 Peter, possible response to Paul or his followers, late attestation) and its late-first to mid-second-century dating; gives 62 CE for James's death; lists early manuscripts; reports Athanasius's list of 367 and Luther's moving James toward the end of his Bible; summarizes views that James answers Paul, answers a misunderstanding of Paul, or does not have Paul in view. The article carries a 2026 notice about suspected machine-written text.",
+      "url": "https://en.wikipedia.org/wiki/Epistle_of_James"
+    },
+    {
+      "id": "wiki-p20",
+      "label": "Wikipedia, Papyrus 20",
+      "says": "A Greek papyrus from Egypt containing James 2:19–3:9, assigned by handwriting to the early third century.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_20"
+    },
+    {
+      "id": "wiki-p23",
+      "label": "Wikipedia, Papyrus 23",
+      "says": "A Greek papyrus fragment containing James 1:10–12 and 1:15–18, assigned by handwriting to the early third century.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_23"
+    },
+    {
+      "id": "schaff-luther",
+      "label": "Philip Schaff, History of the Christian Church (1910), on Luther's translation, at Bible Research",
+      "says": "Philip Schaff's 1910 history reports that Luther found it impossible to harmonize James and Paul on justification, called James an epistle of straw because it had no evangelical character, and in his New Testament prefaces judged James unfavorably and changed the traditional order. It is a report, not Luther's own preface.",
+      "url": "https://www.bible-researcher.com/luther02.html"
+    },
+    {
+      "id": "sblgnt-apparatus",
+      "label": "SBL Greek New Testament apparatus, James (Logos Bible Software release on GitHub)",
+      "says": "At 5:12 lists ὑπὸ κρίσιν (WH, Tregelles, NA28) against εἰς ὑπόκρισιν in the Robinson-Pierpont Byzantine text; at 4:4 lists μοιχαλίδες against μοιχοὶ καὶ μοιχαλίδες in Robinson-Pierpont.",
+      "url": "https://raw.githubusercontent.com/LogosBible/SBLGNT/master/data/sblgntapp/text/Jas.txt"
+    },
+    {
+      "id": "web-base",
+      "label": "World English Bible, publisher's site",
+      "says": "Describes the WEB New Testament as based on the Greek Majority Text, with the American Standard Version of 1901 as its starting point.",
+      "url": "https://worldenglish.bible/"
+    },
+    {
+      "id": "net-jas",
+      "label": "NET Bible, James, with translators' notes (bible.org PDF)",
+      "says": "Translates πειρασμός and πειράζω as trials (1:2), testing (1:12) and tempted (1:13); renders 1:22 'live out the message'; notes that συναγωγή usually refers to Jewish places of worship but at 2:2 to a Christian assembly; 5:14 'elders of the church', 5:15 'will save the one who is sick'.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/jam.pdf"
+    },
+    {
+      "id": "athanasius-39",
+      "label": "Athanasius, Festal Letter 39 (367 CE), New Advent",
+      "says": "Lists the New Testament books, including seven catholic epistles beginning 'of James, one'.",
+      "url": "https://www.newadvent.org/fathers/2806039.htm"
+    },
+    {
+      "id": "catholic-enc-unction",
+      "label": "Catholic Encyclopedia (1909), Extreme Unction, New Advent",
+      "says": "Names Mark 6:13 and James 5:14–15 as the only scriptural texts for the sacrament, treats James as the main one, and reads 'save' at 5:15 as spiritual as well as bodily.",
+      "url": "https://www.newadvent.org/cathen/05716a.htm"
+    },
+    {
+      "id": "wels-faith-works",
+      "label": "Wisconsin Evangelical Lutheran Synod, Topical Q&A 'Faith and Works' (archived 2013)",
+      "says": "Holds that Paul opposed people who said works of the law must be added to faith to earn God's favor, while James opposed people who said faith needed no life of love.",
+      "url": "https://web.archive.org/web/20131220114120/http://arkiv.lbk.cc/faq/site.pl%401518cutopic_topicid19cuitem_itemid6343.htm"
+    },
+    {
+      "id": "trent-session-6",
+      "label": "Council of Trent, Session 6, Decree on Justification (1547), chapter 10 and canon 9, in J. Waterworth's 1848 English",
+      "says": "Chapter 10 teaches that the justified, faith co-operating with good works, increase in justice and are still further justified, quoting James 2:24; canon 9 rejects the claim that the impious is justified by faith alone in the sense that nothing else is required to co-operate.",
+      "url": "https://www.papalencyclicals.net/councils/trent/sixth-session.htm"
+    },
+    {
+      "id": "ccc-1815",
+      "label": "Catechism of the Catholic Church, paragraph 1815 (vatican.va)",
+      "says": "Quotes James 2:26, faith apart from works is dead, and says that faith deprived of hope and love does not fully unite the believer to Christ.",
+      "url": "https://www.vatican.va/archive/ENG0015/__P66.HTM"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read chapter 1 slowly and mark each word that is picked up in the next sentence. The links show why the letter moves from joy to wisdom to temptation.",
+      "refs": [
+        "1:2",
+        "1:4",
+        "1:5",
+        "1:12",
+        "1:13"
+      ]
+    },
+    {
+      "tip": "Read the scene in the assembly before the argument about faith and works. The same concern for the poor runs through both.",
+      "refs": [
+        "2:2",
+        "2:5",
+        "2:15",
+        "2:16",
+        "2:17"
+      ]
+    },
+    {
+      "tip": "Read Abraham and Rahab beside Romans 4. Notice which verse each letter quotes and which part of Abraham's story each one stresses.",
+      "refs": [
+        "2:21",
+        "2:23",
+        "2:25"
+      ]
+    },
+    {
+      "tip": "Follow the images in chapter 3, then compare the two kinds of wisdom. Speech is the test case for the whole person.",
+      "refs": [
+        "3:2",
+        "3:5",
+        "3:13",
+        "3:15",
+        "3:17"
+      ]
+    },
+    {
+      "tip": "Read chapter 5 as one movement: warning to the rich, patience for the oppressed, and prayer in the community.",
+      "refs": [
+        "5:4",
+        "5:7",
+        "5:13",
+        "5:14",
+        "5:16"
+      ]
+    }
+  ],
+  "next": "Read Matthew 5–7 to hear the teaching James most resembles, then Romans 4 and Galatians 2–3 to compare how Paul uses Abraham. Acts 15 shows James speaking in Jerusalem.",
+  "traditionNote": "Eusebius calls James the first of the seven catholic, or general, letters. Its reception was slow: Eusebius lists it among the disputed writings that are nevertheless recognized by many, noting that not many of the ancients mention it, and Jerome reports that some thought it was published under James's name by someone else. Athanasius listed it among the twenty-seven New Testament books in 367 CE. Luther questioned it and moved it toward the end of his German New Testament, but kept it, and it remained part of the New Testament canon."
+}

@@ -1,0 +1,537 @@
+{
+  "book": "2CO",
+  "bookName": "2 Corinthians",
+  "oneLine": "Paul's letter to the assembly at Corinth after a painful visit and a tearful letter, about comfort in affliction, the ministry he has received, a collection for the saints, and rivals who question whether he is an apostle at all.",
+  "orient": "The letter names Paul and Timothy and opens with praise to the God of all comfort. Paul explains a changed travel plan and an earlier letter written with many tears, then describes his work as a ministry of a new covenant carried in clay vessels. Chapters 8 and 9 ask the Corinthians to finish a gift for the saints. From chapter 10 the tone turns sharp, as Paul answers rivals by boasting, under protest, of his weaknesses. The Corinthians' side survives only where Paul quotes or answers it.",
+  "whereYouAre": "Paul had preached in Corinth and written to the assembly before; 1 Corinthians 5:9 refers to an earlier letter. This letter speaks of a visit made in sorrow (2:1), a letter written with tears instead of another visit (2:4, 7:8), Titus awaited in Macedonia (2:13, 7:5–7), and a third visit still to come (12:14, 13:1). The sequence is reconstructed from hints in the letters; Acts 20:1–3 has Paul pass through Macedonia into Greece but does not mention the letters.",
+  "facts": {
+    "writtenBy": "Paul, with Timothy named as co-sender. Paul's authorship is not seriously disputed. What is debated is whether the letter as we have it was one composition or was put together from more than one of Paul's letters.",
+    "writtenWhen": "Usually placed soon after Paul left Ephesus for Macedonia, after a stay in Ephesus that a survey article dates roughly AD 53 to 57. If the letter combines more than one letter, its parts may have been written some months apart. No year is secure.",
+    "writtenFor": "The assembly of God at Corinth and all the saints in Achaia (1:1), the Roman province around Corinth.",
+    "place": "The letter does not name its place of writing. It shows Paul in Macedonia after leaving Troas (2:12–13, 7:5) and boasting of the Corinthians to Macedonians (9:2), so it is usually placed there.",
+    "covers": "Comfort in affliction and a changed travel plan; a painful letter and forgiveness for an offender; the ministry of the new covenant and reconciliation; Titus's report; the collection for the saints; a defense against rival apostles; warnings before a third visit.",
+    "size": "Thirteen chapters, 257 verses, and 6,070 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "wp-2co",
+      "irenaeus-3-7",
+      "tertullian-marcion-5"
+    ],
+    "writtenWhen": [
+      "wp-2co",
+      "etb-background"
+    ],
+    "writtenFor": [
+      "hosted-web",
+      "wp-2co"
+    ],
+    "place": [
+      "hosted-web",
+      "wp-2co"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "A personal letter under strain. Paul moves between a shared \"we\" and an exposed \"I\", and between thanksgiving, appeal and rebuke. Lists of hardships (4:8–9, 6:4–10, 11:23–29) carry part of the argument. In 11:1–12:13 he speaks \"as in foolishness\" (11:17), with irony and mock boasting. Chapters 8 and 9 ask for money in the vocabulary of grace, fellowship and service.",
+    "spokenWorld": "Paul writes in Greek to assemblies in Corinth and the wider province of Achaia. He quotes the Jewish Scriptures in his argument (for example 6:2, 8:15, 9:9, 10:17) and, against his rivals, claims to be a Hebrew, an Israelite and a descendant of Abraham (11:22). The letter does not establish which languages each member of the assembly spoke at home.",
+    "readerSignal": "Watch the paired opposites: affliction and comfort in chapter 1, death and life in chapter 4, poverty and riches in chapters 6 and 8, weakness and power in chapters 12 and 13. Paul repeatedly sets what looks like failure beside what he says God is doing through it.",
+    "englishLayer": "The World English Bible, King James Version and Douay-Rheims sometimes divide or word the Greek differently. Douay-Rheims and the SBL Greek have 13 verses in chapter 13; WEB and KJV split the double greeting of 13:12 into two verses, so their 13:14 is Douay-Rheims 13:13. Some differences reflect readings, not just wording: at 12:11 WEB and KJV have Paul foolish \"in boasting\", while the SBL Greek and Douay-Rheims have no word for boasting there, and the final Amen of WEB, KJV and Douay-Rheims is absent from the SBL Greek. The Greek examples follow the SBL Greek New Testament, a modern edited text.",
+    "textualHistory": [
+      {
+        "label": "A Greek letter, perhaps written in stages",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The letter names Paul and Timothy and is written in Greek to Corinth and Achaia. Words for appeal, service and boasting occur on both sides of chapter 10, yet the sharp turn at chapter 10, the separate appeals of chapters 8 and 9, and the abrupt passage 6:14–7:1 have led many scholars to ask whether more than one of Paul's letters was joined to make it. That question is set out under debates; the language is Paul's either way. Early readers knew it as Paul's: Polycarp's letter to the Philippians has a line close to 4:14 without naming it, Irenaeus cites the Second Epistle to the Corinthians by name, and Tertullian discusses it as part of Marcion's collection of Paul's letters.",
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web",
+          "wp-2co",
+          "etb-background",
+          "polycarp-philippians",
+          "irenaeus-3-7",
+          "tertullian-marcion-5"
+        ]
+      },
+      {
+        "label": "Papyrus 46, the earliest surviving copy",
+        "language": "Greek",
+        "role": "earliest-extant",
+        "description": "Papyrus 46, a papyrus book of Paul's letters now divided between the Chester Beatty Library and the University of Michigan, contains 2 Corinthians after 1 Corinthians and before Ephesians. It is dated by handwriting alone, so its date is uncertain; most proposals run from the late second to the third century, and it is sometimes dated to about 200. One surviving leaf holds 11:33–12:9; like the other leaves, it has lost lines at the bottom.",
+        "sourceIds": [
+          "wp-p46",
+          "net-2co"
+        ]
+      },
+      {
+        "label": "Verse division, readings and English wording",
+        "language": "English translations of the New Testament",
+        "role": "translation",
+        "description": "The hosted editions number chapter 13 differently: WEB and KJV divide 13:12 in two and end at 13:14, while Douay-Rheims, like the SBL Greek, ends at 13:13; the NET notes say the same text stands behind both. At 12:9 WEB and KJV supply my (my power, my strength), and the closing Amen is absent from early witnesses including Papyrus 46. Douay-Rheims's exhortation at 1:4 shows the range of the Greek, not a different text.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-2co",
+          "net-2co"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Comfort, appeal and affliction",
+        "original": "παρακαλέω / παράκλησις / θλῖψις — parakaleō / paraklēsis / thlipsis — comfort, urge or entreat / comfort or appeal / affliction or pressure",
+        "explanation": "The verb and noun of comfort open the letter in a dense cluster, ten uses in 1:3–7, set against affliction. Comfort received in hardship is passed on to others. The same words return when Titus arrives (7:6–7, 7:13) and in the final charge of 13:11.",
+        "translationNote": "The same verb also means urge or entreat. WEB has comfort at 1:4 but entreat at 5:20 and 10:1, urged at 8:6 and begged at 12:8. Douay-Rheims shows the range with exhortation at 1:4 and take exhortation at 13:11, where WEB has be comforted.",
+        "caution": "Context decides each sense. The related title Paraclete, used for the Spirit in John's Gospel, does not occur here. The pairing describes Paul's experience; it does not teach that suffering is good in itself.",
+        "refs": [
+          "1:3",
+          "1:4",
+          "7:4",
+          "5:20",
+          "7:6",
+          "13:11"
+        ],
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web",
+          "hosted-editions",
+          "facts-2co"
+        ]
+      },
+      {
+        "title": "Boasting, sound and foolish",
+        "original": "καυχάομαι / καύχησις / καύχημα — kauchaomai / kauchēsis / kauchēma — boast / boasting / ground of boasting",
+        "explanation": "Boasting can be healthy: Paul and the Corinthians are each other's ground of boasting (1:14). In chapters 10 to 12 it becomes the battleground. The rivals boast, so Paul boasts \"as in foolishness\" (11:17), and he chooses to boast of his weakness (11:30, 12:9). Seventeen of the twenty uses of the verb fall in chapters 10 to 12.",
+        "translationNote": "KJV often has glory or glorying for these words (10:17, 12:9), which can be confused with the separate Greek word for glory. At 10:17, quoting Jeremiah, the verb is a command: let the one who boasts boast in the Lord.",
+        "caution": "Paul's boasting in chapters 11 and 12 is deliberate irony, staged because he says the Corinthians compelled it (12:11). Do not lift a single line of the fool's speech as a plain self-description, and do not treat all boasting in the letter as vice.",
+        "refs": [
+          "1:14",
+          "10:17",
+          "11:17",
+          "11:30",
+          "12:9"
+        ],
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web",
+          "hosted-editions",
+          "net-2co",
+          "facts-2co"
+        ]
+      },
+      {
+        "title": "Weakness and power",
+        "original": "ἀσθένεια / ἀσθενέω / δύναμις — astheneia / astheneō / dynamis — weakness / be weak / power",
+        "explanation": "All fourteen uses of the weakness word family in this letter fall in chapters 10 to 13. Someone at Corinth says Paul's bodily presence is weak (10:10); Paul takes the charge and turns it: power is made perfect in weakness (12:9). In 13:4 the pairing is applied to Christ, crucified through weakness yet living through God's power.",
+        "translationNote": "KJV and Douay-Rheims often say infirmities where WEB says weaknesses; infirmity can sound like illness alone, while the Greek also covers hardship and an unimpressive presence. At 12:9 WEB has my power and KJV my strength; the SBL Greek has no my there.",
+        "caution": "The letter does not praise weakness for its own sake or tell readers to seek it. It argues that God's power is not measured by the apostle's strength. The weakness language alone does not identify the thorn in the flesh.",
+        "refs": [
+          "10:10",
+          "11:30",
+          "12:9",
+          "12:10",
+          "13:4",
+          "13:9"
+        ],
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web",
+          "hosted-editions",
+          "net-2co",
+          "facts-2co"
+        ]
+      },
+      {
+        "title": "Ministry and service, from covenant to collection",
+        "original": "διακονία / διάκονος — diakonia / diakonos — service or ministry / servant or minister",
+        "explanation": "One noun names the ministry of death and of the Spirit in chapter 3, the ministry of reconciliation in 5:18, and the collection, the service to the saints, in 8:4 and 9:1–13. The person noun names Paul's team as servants of a new covenant (3:6) and is claimed by the rivals (11:15, 11:23). The repetition ties the money appeal to the argument about true ministry.",
+        "translationNote": "WEB varies between service, servants and ministry; KJV has ministration and ministering; Douay-Rheims has ministration and ministry. Reading only English, it is easy to miss that the collection and the ministry of the Spirit are described with one word.",
+        "caution": "These words do not here describe the later church office of deacon. They describe work done for others, and the letter uses them both for Paul's apostolic work and for a gift of money.",
+        "refs": [
+          "3:6",
+          "3:7",
+          "5:18",
+          "8:4",
+          "9:1",
+          "11:15"
+        ],
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web",
+          "hosted-editions",
+          "facts-2co"
+        ]
+      },
+      {
+        "title": "Glory, veil and mirror",
+        "original": "δόξα / κάλυμμα / κατοπτριζόμενοι — doxa / kalymma / katoptrizomenoi — glory / veil / seeing as in a mirror",
+        "explanation": "Eleven of the letter's nineteen uses of glory are in chapter 3. Paul retells Exodus 34, where Moses veiled his shining face, to compare the ministry through Moses with the ministry of the Spirit. The veil word occurs four times in 3:13–16 and is removed whenever someone turns to the Lord. In 3:18 believers, with unveiled face, see the Lord's glory as in a mirror and are transformed from glory to glory.",
+        "translationNote": "The verb in 3:18 can mean seeing as in a mirror or reflecting; KJV's as in a glass means a mirror. Where WEB says passing away (3:7, 3:11, 3:13), NET argues for rendered ineffective.",
+        "caution": "The chapter says the ministry through Moses came with glory (3:7, 3:9). Its argument is a comparison of greater and lesser glory in a dispute about commendation, not a statement that the Torah is worthless. See the snag on 3:14–15 before applying the veil to any people.",
+        "refs": [
+          "3:7",
+          "3:13",
+          "3:14",
+          "3:16",
+          "3:18"
+        ],
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web",
+          "hosted-editions",
+          "net-2co",
+          "scriptural-parallels",
+          "facts-2co"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words that carry the letter's argument",
+    "examples": [
+      {
+        "ref": "1:22",
+        "form": "ἀρραβῶνα — arrabōna",
+        "meaning": "a down payment or first instalment",
+        "why": "A commercial word for a deposit that guarantees the rest; KJV says earnest. Here and at 5:5 the Spirit is that first instalment.",
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "ref": "3:5",
+        "form": "ἱκανότης — hikanotēs",
+        "meaning": "sufficiency or competence",
+        "why": "It answers the question of 2:16, who is sufficient for these things, with the related adjective in the same verse and the verb in 3:6. Paul's claim to be qualified rests on God, not on letters of commendation.",
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "5:18",
+        "form": "καταλλαγῆς — katallagēs",
+        "meaning": "of reconciliation",
+        "why": "In 5:18–20 the verb and noun together occur five times. God is the one who reconciles, and the ministry entrusted to Paul is to announce it and appeal: be reconciled to God.",
+        "sourceIds": [
+          "greek-2co",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "11:5",
+        "form": "ὑπερλίαν — hyperlian",
+        "meaning": "beyond measure, exceedingly",
+        "why": "An adverb used as a label, usually rendered super-apostles. WEB says the very best apostles and Douay-Rheims the great apostles (above measure apostles at 12:11). It returns at 12:11; NET reads the label as ironic.",
+        "sourceIds": [
+          "greek-2co",
+          "hosted-editions",
+          "net-2co"
+        ]
+      },
+      {
+        "ref": "12:7",
+        "form": "σκόλοψ — skolops",
+        "meaning": "something pointed: a thorn or stake",
+        "why": "KJV and WEB say thorn, Douay-Rheims sting, and the old English translation of Tertullian stake. The word gives an image of pain, not a diagnosis; what it stood for is debated.",
+        "sourceIds": [
+          "greek-2co",
+          "hosted-editions",
+          "tertullian-modesty"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A pastoral letter of reconciliation and self-defense",
+    "how": "Read it as one side of a running correspondence. Paul answers charges you do not see directly, so note where he quotes or hints at what others say (1:17, 10:10, 12:16). The travel story (1:15–2:13, 7:5–16) frames the long argument about ministry. Chapters 8 and 9 are a request with reasons; chapters 10 to 13 are a deliberate change of voice."
+  },
+  "cast": [
+    {
+      "name": "Paul",
+      "who": "The sender, an apostle defending his conduct, his changed plans and his authority while appealing for reconciliation."
+    },
+    {
+      "name": "Timothy",
+      "who": "Named as co-sender (1:1) and as one who preached at Corinth with Paul and Silvanus (1:19)."
+    },
+    {
+      "name": "Titus",
+      "who": "Paul's partner and fellow worker (8:23). His delay troubles Paul at Troas (2:13), his report comforts him in Macedonia (7:6–7), and he is sent to complete the collection (8:6, 8:16–17)."
+    },
+    {
+      "name": "The assembly at Corinth",
+      "who": "The addressees, with the saints in Achaia. Grieved by Paul's letter, they responded with zeal, and they had begun a collection a year before."
+    },
+    {
+      "name": "The offender of 2:5–11",
+      "who": "An unnamed person who caused grief, was punished by the majority, and whom Paul now urges the community to forgive and comfort."
+    },
+    {
+      "name": "The rival apostles",
+      "who": "Unnamed visitors who commend themselves and claim Hebrew descent; Paul calls them false apostles (11:13) and, if the two labels name one group, ironically super-apostles (11:5). Their own account is not preserved."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Comfort, changed plans and a painful letter",
+      "chapters": "1–2",
+      "precise": "1:1–2:13",
+      "note": "Thanksgiving for comfort in affliction leads into Paul's defense of his changed travel plans, the letter written with tears, forgiveness for the offender, and his anxious wait for Titus."
+    },
+    {
+      "heading": "A ministry of the new covenant",
+      "chapters": "3–5",
+      "precise": "2:14–5:21",
+      "note": "Paul describes his ministry: the Corinthians as his letter, the glory of the Spirit compared with Moses, treasure in clay vessels, hope beyond the body, and the ministry of reconciliation."
+    },
+    {
+      "heading": "Open hearts and Titus's good news",
+      "chapters": "6–7",
+      "precise": "6:1–7:16",
+      "note": "An appeal to receive grace and open their hearts, interrupted by the warning of 6:14–7:1, then Titus's report and the godly grief that led to repentance."
+    },
+    {
+      "heading": "The collection for the saints",
+      "chapters": "8–9",
+      "precise": "8:1–9:15",
+      "note": "The Macedonians' example, Christ who became poor, equality, the sending of Titus and the brothers, and the cheerful giver."
+    },
+    {
+      "heading": "Defense against rival apostles",
+      "chapters": "10–13",
+      "precise": "10:1–13:14",
+      "note": "A sharper voice: authority for building up, the fool's speech, visions and the thorn, fears before a third visit, and greetings. Douay-Rheims and the Greek end at 13:13."
+    }
+  ],
+  "purpose": "2 Corinthians seeks to restore a damaged relationship and to define apostolic ministry by the pattern of Christ's death and life. Paul explains himself, urges forgiveness and generosity, and insists that God's power shows itself in weakness rather than in impressive presence, eloquence or letters of commendation.",
+  "snags": [
+    {
+      "snag": "The veil over hearts in 3:14–15 can be heard as a verdict on Jewish people.",
+      "help": "The passage retells Exodus 34 to compare the ministry through Moses with the ministry of the Spirit, in a dispute about how ministers are commended. It says the earlier ministry came with glory (3:7) and that the veil is removed whenever someone turns to the Lord (3:16). Tertullian, writing against Marcion, already read the veil as lying on the heart of the nation still; the text does not license contempt for Jewish people or for the Torah. In this letter Paul calls himself a Hebrew and an Israelite (11:22)."
+    },
+    {
+      "snag": "Forty stripes minus one from the Jews (11:24) can sound like an accusation.",
+      "help": "The number recalls the limit of forty stripes in Deuteronomy 25:3, where a judge may sentence a guilty man to no more than forty, lest your brother be degraded; the NET notes call forty less one a standard sentence. In the list of 11:23–29 the line belongs to Paul's catalogue of what he has endured; the same list names dangers from Gentiles, robbers and false brothers. It is not a charge against Jewish people as a whole."
+    },
+    {
+      "snag": "\"The god of this world\" in 4:4 sounds like a second god.",
+      "help": "The Greek says the god of this age. Second-century readers argued over it: Irenaeus reports teachers who took it as a separate god of this world, and Tertullian reports that Marcion read it as the Creator. Irenaeus reread the sentence as God blinding unbelievers of this world; Tertullian took the phrase as the devil. Read it in context: the verse is about unbelievers who cannot see the light of the gospel."
+    },
+    {
+      "snag": "\"Don't be unequally yoked\" (6:14) can be stretched into a rule for every relationship.",
+      "help": "The verses speak of righteousness and iniquity, Christ and Belial, a temple and idols, and quote Leviticus 26:12 and Isaiah 52:11. They name no particular relationship such as marriage or trade. In 1 Corinthians 7:12–13 Paul tells believers married to unbelievers not to leave them. The sudden placement of 6:14–7:1 is itself part of the debate about the letter's composition."
+    },
+    {
+      "snag": "The man caught up to the third heaven (12:2–4) can become the center of the letter.",
+      "help": "Paul speaks of \"a man in Christ\", but 12:7 ties the revelations to himself. He says almost nothing about what he heard, except that it cannot be told, and on his own behalf he will boast only of weaknesses (12:5). The NET notes take the third heaven as the place where God dwells, paired with Paradise in 12:4. The late fourth-century Apocalypse of Paul, hosted on this site, turns the visit into a guided tour of heaven and hell; that is a later work, not the content of this letter."
+    },
+    {
+      "snag": "Chapter 13 has 14 verses in one Bible and 13 in another.",
+      "help": "No words are missing. WEB and KJV split the double greeting of 13:12 into two verses, so their 13:14 is 13:13 in Douay-Rheims and in the SBL Greek. A reference to 13:14 must be looked up as 13:13 in those editions."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Is 2 Corinthians one letter or several joined together?",
+      "settled": "Paul wrote the material. Papyrus 46, the earliest surviving copy, already runs through the letter in its present order. The letter itself refers to an earlier painful letter (2:4, 7:8), and 1 Corinthians 5:9 to another earlier letter, so Paul wrote more letters to Corinth than survive under the names 1 and 2 Corinthians.",
+      "positions": [
+        {
+          "view": "Chapters 10 to 13 are part of the tearful letter",
+          "grounds": "The abrupt change from reconciliation to reproach at 10:1 has led many to propose that chapters 10 to 13 preserve the tearful letter, later attached to the main letter; the proposal goes back at least to Adolph Hausrath in 1870."
+        },
+        {
+          "view": "Chapters 10 to 13 are a later letter",
+          "grounds": "Others take chapters 10 to 13 as a separate letter written after chapters 1 to 9, when news worsened; the tearful letter is then lost. Some also treat chapters 8 and 9 as separate letters, and fewer see 6:14–7:1 as a fragment of another letter."
+        },
+        {
+          "view": "One letter, perhaps written in stages",
+          "grounds": "Readers of the letter as a unity usually hold that the tearful letter is lost, and point to its consistency of theological content and literary structure. One introduction says it can reasonably be read as a coherent whole even if written in stages."
+        }
+      ],
+      "soWhat": "Partition theories change the order of events, especially whether chapters 10 to 13 come before or after the reconciliation of chapter 7. They do not change who wrote the words."
+    },
+    {
+      "question": "Who were the super-apostles?",
+      "settled": "Paul is answering people present at Corinth who commend themselves (10:12), bring letters of commendation (3:1), preach what he calls another Jesus (11:4), by his charge exploit the Corinthians (11:20), and claim to be Hebrews, Israelites and descendants of Abraham (11:22). He calls some of them false apostles (11:13). Their own words are not preserved.",
+      "positions": [
+        {
+          "view": "The rival missionaries in Corinth",
+          "grounds": "The super-apostles of 11:5 and 12:11 are the same visitors as the false apostles of 11:13, and the label is ironic. The NET notes call this the more probable reading, and one introduction gives both labels to the same competing apostles."
+        },
+        {
+          "view": "The leading apostles in Jerusalem",
+          "grounds": "The super-apostles are the original apostles, to whom Paul says he is not inferior, so this view must take the false apostles of 11:13 as a separate group in Corinth. The NET Bible notes call this the older interpretation."
+        }
+      ],
+      "soWhat": "The first view keeps the conflict local and the label ironic; the second places the letter within Paul's relation to the Jerusalem leaders. Either way the rivals are known only through Paul's polemic."
+    },
+    {
+      "question": "What was the thorn in the flesh?",
+      "settled": "Paul says only that a thorn in the flesh, a messenger of Satan, was given to him to keep him from being exalted after the revelations, that he asked three times for its removal, and that the Lord answered, \"My grace is sufficient for you\" (12:7–9). He does not name it, and his other letters do not address it directly.",
+      "positions": [
+        {
+          "view": "A bodily ailment",
+          "grounds": "Some early Christians took it as physical pain. Tertullian mentions the view that it was pain in the ear or head, and John Chrysostom reports that some said it was a pain in the head. A survey article still lists a physical ailment among other interpretations."
+        },
+        {
+          "view": "Opponents and persecution",
+          "grounds": "Chrysostom rejects the illness reading and takes the messenger of Satan to be the adversaries who fought Paul's preaching, noting that Satan means adversary. A survey article says the thorn is most commonly read in relation to persecutions or hardships."
+        },
+        {
+          "view": "It cannot be identified, or is tied to the vision itself",
+          "grounds": "Some scholars conclude that the evidence does not allow an identification. Others connect the messenger of Satan with harm Paul experienced during the ascent of 12:2–4."
+        }
+      ],
+      "soWhat": "The point of the passage does not depend on the answer: the request was refused, and the refusal became a word about grace and power in weakness. Identifications that build a lesson on one specific illness or person claim more than the text says."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, 2 Corinthians",
+      "says": "Provides the wording, sequence, travel references, names and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/2CO/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "2 Corinthians in the World English Bible, King James Version and Douay-Rheims",
+      "says": "Shows the numbering of chapter 13, boasting at 12:11 in WEB and KJV only, my power (WEB) and my strength (KJV) at 12:9, and differing renderings of the comfort, boasting, weakness, service and thorn words."
+    },
+    {
+      "id": "greek-2co",
+      "label": "SBL Greek New Testament, 2 Corinthians, with MorphGNT analysis",
+      "says": "Provides the Greek forms, lemmas and readings used in the language section; a modern edited text with 13 verses in chapter 13.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/68-2Co-morphgnt.txt"
+    },
+    {
+      "id": "facts-2co",
+      "label": "Lemma counts measured over the hosted SBL Greek of 2 Corinthians",
+      "says": "Counts by lemma: παρακαλέω 18, παράκλησις 11, καυχάομαι 20 (17 in chapters 10–12), the ἀσθεν- family 14 (all in chapters 10–13), διακονία 12, δόξα 19 (11 in chapter 3), κάλυμμα 4; παράκλητος does not occur."
+    },
+    {
+      "id": "net-2co",
+      "label": "NET Bible, 2 Corinthians: text and translator notes",
+      "says": "Notes that the super-apostles are either the original apostles (the older view) or, more probably, Paul's opponents named ironically; that 13:12–13 and 13:12–14 number the same material; that the final Amen is absent from early witnesses including Papyrus 46; that my is not in the probable text of 12:9; that 3:18 may mean seeing as in a mirror; that the verb of 3:7, 3:11 and 3:13 means rendered ineffective; that the third heaven of 12:2 is the place where God dwells; and that forty less one was a standard sentence.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/2co.pdf"
+    },
+    {
+      "id": "wp-2co",
+      "label": "Wikipedia, Second Epistle to the Corinthians (survey article)",
+      "says": "Says there is little doubt among scholars that Paul is the author but discussion over whether the letter was one or several; summarizes views on chapters 10–13 (citing Hausrath, 1870, for the letter-of-tears identification), 8–9 and 6:14–7:1; dates Paul's Ephesus stay roughly AD 53–57 and places the letter after he left Ephesus for Macedonia.",
+      "url": "https://en.wikipedia.org/wiki/Second_Epistle_to_the_Corinthians"
+    },
+    {
+      "id": "etb-background",
+      "label": "Enter the Bible (Luther Seminary), Background of 2 Corinthians",
+      "says": "Describes the painful visit, the anguished letter and competing apostles whom Paul called false apostles and super-apostles; says scholars disagree on when the parts were written, yet the letter can reasonably be read as a coherent whole.",
+      "url": "https://enterthebible.org/courses/2-corinthians/lessons/background-of-2-corinthians/"
+    },
+    {
+      "id": "wp-p46",
+      "label": "Wikipedia, Papyrus 46 (manuscript article)",
+      "says": "Describes the papyrus codex of Paul's letters, split between the Chester Beatty Library and the University of Michigan, with 2 Corinthians between 1 Corinthians and Ephesians, a leaf holding 11:33–12:9, and lines lost at the foot of every leaf; its date rests on handwriting, with most proposals from the late second to the third century, sometimes about 200.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_46"
+    },
+    {
+      "id": "wp-thorn",
+      "label": "Wikipedia, Thorn in the flesh (survey article)",
+      "says": "Says Paul does not specify the thorn; says it is most commonly read in relation to persecutions or hardships and lists opponents and physical ailment among other readings; notes scholars who think it cannot be identified and others who tie it to the third-heaven experience.",
+      "url": "https://en.wikipedia.org/wiki/Thorn_in_the_flesh"
+    },
+    {
+      "id": "tertullian-modesty",
+      "label": "Tertullian, On Modesty, chapter 13 (ANF translation)",
+      "says": "Renders the thorn as a stake and mentions the view that it was pain in the ear or head.",
+      "url": "https://www.newadvent.org/fathers/0407.htm"
+    },
+    {
+      "id": "chrysostom-hom26",
+      "label": "John Chrysostom, Homily 26 on Second Corinthians (NPNF translation)",
+      "says": "Reports that some took the thorn as a pain in the head, rejects this, and reads the messenger of Satan as Paul's adversaries.",
+      "url": "https://www.newadvent.org/fathers/220226.htm"
+    },
+    {
+      "id": "irenaeus-3-7",
+      "label": "Irenaeus, Against Heresies 3.7 (ANF translation)",
+      "says": "Cites 4:4 from the Second Epistle to the Corinthians as Paul's, reports teachers who used it to posit a separate god of this world, and rereads the sentence against them.",
+      "url": "https://www.newadvent.org/fathers/0103307.htm"
+    },
+    {
+      "id": "tertullian-marcion-5",
+      "label": "Tertullian, Against Marcion, Book 5, chapters 11–12 (ANF translation)",
+      "says": "Treats 2 Corinthians as Paul's letter in Marcion's collection; reads the veil of chapter 3 as lying on Israel's heart still; reports Marcion's reading of the god of this world as the Creator and prefers the devil.",
+      "url": "https://www.newadvent.org/fathers/03125.htm"
+    },
+    {
+      "id": "polycarp-philippians",
+      "label": "Polycarp, To the Philippians 2 (hosted on this site)",
+      "says": "Contains the line that he who raised Christ from the dead will raise us also, close in wording to 4:14, without naming the letter.",
+      "href": "/early/polycarp-philippians"
+    },
+    {
+      "id": "apocalypse-paul",
+      "label": "The Apocalypse of Paul (hosted on this site)",
+      "says": "A late fourth-century work that tells, in Paul's voice, of being caught up to the third heaven and expands it into a tour of heaven and hell.",
+      "href": "/early/apocalypse-paul"
+    },
+    {
+      "id": "third-corinthians",
+      "label": "Third Epistle to the Corinthians (hosted on this site)",
+      "says": "A separate second-century exchange from the Acts of Paul; the site's notes say it was received as Scripture for a time in the Armenian and Syriac churches.",
+      "href": "/early/3corinthians"
+    },
+    {
+      "id": "scriptural-parallels",
+      "label": "1 Corinthians 5 and 16; Romans 15; Exodus 34; Deuteronomy 25; Acts 20, World English Bible",
+      "says": "1 Corinthians 5:9 mentions an earlier letter; 1 Corinthians 16:1–4 and Romans 15:25–26 name Jerusalem for the collection; Exodus 34:33–35 tells of Moses' veil; Deuteronomy 25:3 limits stripes to forty.",
+      "href": "/scriptures/protestant/1CO/16"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Follow the travel story across the long argument: Paul leaves Troas in 2:13 and the story resumes in Macedonia at 7:5. Reading 2:12–13 and then 7:5–7 together shows the frame.",
+      "refs": [
+        "2:12",
+        "2:13",
+        "7:5",
+        "7:6"
+      ]
+    },
+    {
+      "tip": "Read chapter 3 beside Exodus 34:29–35, then go on into chapter 4. Keep track of who is veiled, what is read, and what happens when someone turns to the Lord.",
+      "refs": [
+        "3:7",
+        "3:13",
+        "3:16",
+        "3:18"
+      ]
+    },
+    {
+      "tip": "In chapters 8 and 9, list the reasons Paul gives for generosity. Notice that he calls the gift grace and service and avoids commanding it.",
+      "refs": [
+        "8:1",
+        "8:8",
+        "8:9",
+        "8:14"
+      ]
+    },
+    {
+      "tip": "Read the fool's speech as a single performance, from the request to be borne with to the admission that the Corinthians compelled it. Then read the thorn and the answer to Paul's prayer as its turning point.",
+      "refs": [
+        "11:1",
+        "11:16",
+        "11:30",
+        "12:9"
+      ]
+    }
+  ],
+  "next": "Read 1 Corinthians first if you have not, especially chapters 5 and 16, for the earlier stage of the correspondence and the start of the collection. Then read Romans 15:25–32 for Paul's plan to take the gift to Jerusalem, and Acts 20:1–3 for his journey through Macedonia into Greece. Galatians 2 meets Titus again in another setting.",
+  "traditionNote": "All three hosted English editions have thirteen chapters; only the verse numbering of chapter 13 differs. A separate correspondence from the Acts of Paul, known as 3 Corinthians, was read as Scripture for a time in the Armenian and Syriac churches; it is hosted on this site as an early text and is not part of 2 Corinthians."
+}

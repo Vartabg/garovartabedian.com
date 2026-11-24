@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedBy": "scripts/scriptures/check-source-urls.mjs",
-  "generatedAt": "2026-10-04T00:12:34.000Z",
+  "generatedAt": "2026-11-24T18:17:30.000Z",
   "maxAgeDays": 180,
   "note": "'blocked' means the publisher refuses scripted requests, not that the page is missing. 'dead' is a hard failure and fails the test suite.",
   "urls": {
@@ -245,6 +245,46 @@
         "JOL:net-jol"
       ]
     },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/1co.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1CO:net-1co"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/1jo.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:net-1jn"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/1pe.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:net-1pe"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/1ti.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:net-1ti"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/2co.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2CO:net-2co"
+      ]
+    },
     "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/2pe.pdf": {
       "verdict": "ok",
       "status": 200,
@@ -253,12 +293,36 @@
         "2PE:net-2pe"
       ]
     },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/2ti.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:net-2ti"
+      ]
+    },
     "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/hag.pdf": {
       "verdict": "ok",
       "status": 200,
       "checkedAt": "2026-10-03T10:39:53.151Z",
       "citedBy": [
         "HAG:net-haggai"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/heb.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "HEB:net-heb"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/jam.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:net-jas"
       ]
     },
     "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/jon.pdf": {
@@ -291,6 +355,14 @@
       "checkedAt": "2026-10-03T19:30:39.856Z",
       "citedBy": [
         "NAM:net-nahum"
+      ]
+    },
+    "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/rev.pdf": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:net-revelation"
       ]
     },
     "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/tit.pdf": {
@@ -1259,6 +1331,14 @@
         "EXO:lexham-glory"
       ]
     },
+    "https://cbmw.org/about/danvers-statement/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:danvers-statement"
+      ]
+    },
     "https://classic.net.bible.org/passage.php?passage=Hab+2:4": {
       "verdict": "blocked",
       "status": 403,
@@ -1431,6 +1511,110 @@
         "MIC:brenton-edition"
       ]
     },
+    "https://el.wikisource.org/wiki/%CE%9F_%CE%A0%CE%BF%CE%B9%CE%BC%CE%AE%CE%BD_%CF%84%CE%BF%CF%85_%CE%95%CF%81%CE%BC%CE%AC": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:greek-hermas"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/1_Corinthians_15": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1CO:wiki-1co15"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/1_Timothy_2:12": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-1ti-2-12"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Authorship_of_the_Johannine_works": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:wiki-johannine-authorship"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Authorship_of_the_Pauline_epistles": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:wp-pauline-authorship"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Biblical_inspiration": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:wp-inspiration"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Book_of_Revelation": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:wikipedia-revelation"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Cessationism_versus_continuationism": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1CO:wiki-cessation"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Christian_egalitarianism": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-egalitarianism"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Christian_headcovering": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1CO:wiki-headcovering"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Complementarianism": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-complementarianism"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Deaconess": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-deaconess"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Epistle_of_James": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:wiki-james"
+      ]
+    },
     "https://en.wikipedia.org/wiki/Epistle_to_Philemon": {
       "verdict": "ok",
       "status": 200,
@@ -1439,12 +1623,116 @@
         "PHM:barth-blankenhorn-philemon"
       ]
     },
+    "https://en.wikipedia.org/wiki/Epistle_to_the_Hebrews": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "HEB:wiki-hebrews"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Eternal_sin": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:wiki-eternal-sin"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/First_Epistle_of_John": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:wiki-1jn"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/First_Epistle_of_Peter": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:wiki-1pe"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/First_Epistle_to_the_Corinthians": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1CO:wiki-1co"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/First_Epistle_to_Timothy": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-1ti"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Homosexuality_in_the_New_Testament": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-nt-homosexuality"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Jannes_and_Jambres": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:wp-jannes"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Johannine_Comma": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:wiki-comma"
+      ]
+    },
     "https://en.wikipedia.org/wiki/Judith_Lieu": {
       "verdict": "ok",
       "status": 200,
       "checkedAt": "2026-09-01T22:17:14.084Z",
       "citedBy": [
         "2JN:lieu-john-epistles"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/List_of_New_Testament_papyri": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:wp-nt-papyri"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Millennialism": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:wikipedia-millennialism"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Mortal_sin": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:wiki-mortal-sin"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Nero": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:wiki-nero"
       ]
     },
     "https://en.wikipedia.org/wiki/New_International_Commentary_on_the_New_Testament": {
@@ -1463,6 +1751,81 @@
         "OBA:allen-obadiah"
       ]
     },
+    "https://en.wikipedia.org/wiki/Number_of_the_beast": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:wikipedia-number-beast"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Onesiphorus": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:wp-onesiphorus"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_115": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:wikipedia-p115"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_133": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-p133"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_18": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:wikipedia-p18"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_20": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:wiki-p20"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_23": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:wiki-p23"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_46": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1CO:wiki-p46",
+        "1TI:wikipedia-p46",
+        "2CO:wp-p46",
+        "HEB:wiki-p46"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Papyrus_72": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:wiki-p72"
+      ]
+    },
     "https://en.wikipedia.org/wiki/Papyrus_74": {
       "verdict": "ok",
       "status": 200,
@@ -1479,12 +1842,125 @@
         "PHM:p87-manuscript"
       ]
     },
+    "https://en.wikipedia.org/wiki/Papyrus_9": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:wiki-p9"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Pastoral_epistles": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-pastorals",
+        "2TI:wp-pastorals"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Perseverance_of_the_saints": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "HEB:wiki-perseverance"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Pliny_the_Younger_on_Christians": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:wiki-pliny-christians"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Postmillennialism": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:wikipedia-postmillennialism"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Second_Epistle_to_the_Corinthians": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2CO:wp-2co"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Second_Epistle_to_Timothy": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:wp-2ti"
+      ]
+    },
     "https://en.wikipedia.org/wiki/Septuagint": {
       "verdict": "ok",
       "status": 200,
       "checkedAt": "2026-09-01T22:17:14.084Z",
       "citedBy": [
         "OBA:rahlfs-lxx-obadiah"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Spirits_in_prison": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:wiki-spirits"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Supersessionism": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:wiki-supersessionism"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Synagogue_of_Satan": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:wikipedia-synagogue-satan"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Textual_variants_in_the_Epistle_to_the_Hebrews": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "HEB:wiki-variants-heb"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Textual_variants_in_the_First_Epistle_of_John": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:wiki-variants-1jn"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Textual_variants_in_the_First_Epistle_to_Timothy": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:wikipedia-variants"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Thorn_in_the_flesh": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2CO:wp-thorn"
       ]
     },
     "https://en.wikipedia.org/wiki/Word_Biblical_Commentary": {
@@ -1517,6 +1993,14 @@
       "checkedAt": "2026-09-01T23:08:20.262Z",
       "citedBy": [
         "ENO:hosted-charles"
+      ]
+    },
+    "https://enterthebible.org/courses/2-corinthians/lessons/background-of-2-corinthians/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2CO:etb-background"
       ]
     },
     "https://enterthebible.org/courses/nahum/lessons/bible-in-the-world-nahum/": {
@@ -1674,6 +2158,46 @@
         "3JN:yale-johannine"
       ]
     },
+    "https://raw.githubusercontent.com/LogosBible/SBLGNT/master/data/sblgntapp/text/Jas.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:sblgnt-apparatus"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/67-1Co-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1CO:greek-1co"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/68-2Co-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2CO:greek-2co"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/75-1Ti-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:greek-1ti"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/76-2Ti-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:greek-2ti"
+      ]
+    },
     "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/77-Tit-morphgnt.txt": {
       "verdict": "ok",
       "status": 200,
@@ -1682,12 +2206,44 @@
         "TIT:greek-titus"
       ]
     },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/79-Heb-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "HEB:greek-heb"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/80-Jas-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:greek-jas"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/81-1Pe-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:greek-1pe"
+      ]
+    },
     "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/82-2Pe-morphgnt.txt": {
       "verdict": "ok",
       "status": 200,
       "checkedAt": "2026-10-03T19:30:39.856Z",
       "citedBy": [
         "2PE:greek-2pe"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/83-1Jn-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:greek-1jn"
       ]
     },
     "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/85-3Jn-morphgnt.txt": {
@@ -1704,6 +2260,14 @@
       "checkedAt": "2026-10-03T10:39:53.151Z",
       "citedBy": [
         "JUD:greek-jude"
+      ]
+    },
+    "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/87-Re-morphgnt.txt": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:greek-revelation"
       ]
     },
     "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hab.xml": {
@@ -1792,6 +2356,30 @@
       "checkedAt": "2026-10-03T10:39:53.151Z",
       "citedBy": [
         "HAG:ubs-haggai-2-7"
+      ]
+    },
+    "https://web.archive.org/web/20131220114120/http://arkiv.lbk.cc/faq/site.pl%401518cutopic_topicid19cuitem_itemid6343.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:wels-faith-works"
+      ]
+    },
+    "https://worldenglish.bible/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:web-base"
+      ]
+    },
+    "https://www.bible-researcher.com/luther02.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:schaff-luther"
       ]
     },
     "https://www.bloomsbury.com/uk/colossians-and-philemon-9780567085603/": {
@@ -2062,6 +2650,46 @@
         "JHN:manchester-p52"
       ]
     },
+    "https://www.earlychristianwritings.com/1john.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:ecw-1jn"
+      ]
+    },
+    "https://www.earlychristianwritings.com/hebrews.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "HEB:ecw-hebrews"
+      ]
+    },
+    "https://www.earlychristianwritings.com/text/muratorian-metzger.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:muratorian"
+      ]
+    },
+    "https://www.earlychristianwritings.com/text/muratorian.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:muratorian"
+      ]
+    },
+    "https://www.earlychristianwritings.com/text/pliny.html": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:ecw-pliny"
+      ]
+    },
     "https://www.esv.org/resources/esv-global-study-bible/introduction-to-joel/": {
       "verdict": "ok",
       "status": 200,
@@ -2102,6 +2730,46 @@
         "LEV:loc-leviticus-scroll"
       ]
     },
+    "https://www.newadvent.org/cathen/05716a.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:catholic-enc-unction"
+      ]
+    },
+    "https://www.newadvent.org/cathen/07181a.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "HEB:cathenc-hebrews"
+      ]
+    },
+    "https://www.newadvent.org/cathen/14727b.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:aherne-1912"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0103100.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1TI:irenaeus-preface"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0103126.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:irenaeus-1-26"
+      ]
+    },
     "https://www.newadvent.org/fathers/0103301.htm": {
       "verdict": "ok",
       "status": 200,
@@ -2109,6 +2777,80 @@
       "citedBy": [
         "ACT:irenaeus",
         "LUK:irenaeus"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0103303.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2TI:irenaeus-ah-3-3"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0103307.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2CO:irenaeus-3-7"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0103316.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:irenaeus-3-16"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0103420.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:irenaeus-ah-4-20"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0103530.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:irenaeus-ah-5-30"
+      ]
+    },
+    "https://www.newadvent.org/fathers/01286.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:justin-dialogue-81"
+      ]
+    },
+    "https://www.newadvent.org/fathers/03125.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2CO:tertullian-marcion-5"
+      ]
+    },
+    "https://www.newadvent.org/fathers/0407.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:tertullian-modesty",
+        "2CO:tertullian-modesty",
+        "HEB:tertullian-modesty"
+      ]
+    },
+    "https://www.newadvent.org/fathers/1102164.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:augustine-164"
       ]
     },
     "https://www.newadvent.org/fathers/120115.htm": {
@@ -2119,12 +2861,67 @@
         "GEN:augustine-city-god-15"
       ]
     },
+    "https://www.newadvent.org/fathers/220226.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "2CO:chrysostom-hom26"
+      ]
+    },
+    "https://www.newadvent.org/fathers/250102.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1PE:eusebius-he-2",
+        "2TI:eusebius-he-2-22",
+        "JAS:eusebius-2-23"
+      ]
+    },
     "https://www.newadvent.org/fathers/250103.htm": {
       "verdict": "ok",
       "status": 200,
       "checkedAt": "2026-08-29T23:21:09.551Z",
       "citedBy": [
-        "MAT:eusebius-papias"
+        "1JN:eusebius-3",
+        "1PE:eusebius-he-3",
+        "HEB:eusebius-history-3",
+        "JAS:eusebius-3-25",
+        "MAT:eusebius-papias",
+        "REV:eusebius-ch-3"
+      ]
+    },
+    "https://www.newadvent.org/fathers/250106.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "HEB:eusebius-history-6"
+      ]
+    },
+    "https://www.newadvent.org/fathers/250107.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "REV:eusebius-ch-7-25"
+      ]
+    },
+    "https://www.newadvent.org/fathers/2708.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:jerome-2"
+      ]
+    },
+    "https://www.newadvent.org/fathers/2806039.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:athanasius-39"
       ]
     },
     "https://www.openbible.com/strongs/hebrew/4908.htm": {
@@ -2141,6 +2938,14 @@
       "checkedAt": "2026-09-01T23:08:20.262Z",
       "citedBy": [
         "ENO:vanderkam-enoch"
+      ]
+    },
+    "https://www.papalencyclicals.net/councils/trent/sixth-session.htm": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:trent-session-6"
       ]
     },
     "https://www.peeters-leuven.be/pdf/9789042943452.pdf": {
@@ -2165,6 +2970,14 @@
       "checkedAt": "2026-08-29T23:21:09.551Z",
       "citedBy": [
         "MAT:little-faith-study"
+      ]
+    },
+    "https://www.thegospelcoalition.org/essay/sin-unto-death/": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "1JN:naselli-sin-unto-death"
       ]
     },
     "https://www.thetorah.com/article/is-azazel-a-goat-place-demon-or-deity": {
@@ -2229,6 +3042,14 @@
       "checkedAt": "2026-10-04T00:12:34.082Z",
       "citedBy": [
         "JON:alexander-genre"
+      ]
+    },
+    "https://www.vatican.va/archive/ENG0015/__P66.HTM": {
+      "verdict": "ok",
+      "status": 200,
+      "checkedAt": "2026-11-24T18:17:30.930Z",
+      "citedBy": [
+        "JAS:ccc-1815"
       ]
     },
     "https://yalebiblestudy.org/courses/leviticus-numbers-and-deuteronomy/lessons/leviticus-part-2-study-guide/": {
