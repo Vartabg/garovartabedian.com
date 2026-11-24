@@ -40,10 +40,22 @@ const normalizeQuote = (value: string) =>
     .replace(/\s+/g, " ")
     .trim();
 
+// A key verse may span a short run of verses in one chapter ("11:34-35").
+// The run resolves only when every verse in it is hosted.
 const verseAt = (text: BookText, ref: string) => {
-  const match = /^(\d+):(\d+)$/.exec(ref);
+  const match = /^(\d+):(\d+)(?:-(\d+))?$/.exec(ref);
   if (!match) return null;
-  return text.chapters[Number(match[1]) - 1]?.[Number(match[2]) - 1] ?? null;
+  const chapter = text.chapters[Number(match[1]) - 1];
+  const first = Number(match[2]);
+  const last = Number(match[3] ?? match[2]);
+  if (!chapter || last < first) return null;
+  const verses: string[] = [];
+  for (let verse = first; verse <= last; verse += 1) {
+    const hosted = chapter[verse - 1];
+    if (!hosted) return null;
+    verses.push(hosted);
+  }
+  return verses.join(" ");
 };
 
 const textFilesFor = (book: string) =>

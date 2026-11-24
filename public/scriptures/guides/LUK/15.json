@@ -5,36 +5,42 @@
   "summary": "Tax collectors and sinners draw near to hear Jesus, while Pharisees and scribes complain that he welcomes and eats with them. Jesus answers with three escalating lost-and-found stories. A shepherd seeks one sheep and calls neighbors to rejoice; a woman searches for one coin and does the same. A younger son converts inheritance into distance and degradation, then rehearses a return as hired labor. His father sees, runs, embraces, robes, rings, shoes, and feasts before the speech can negotiate status. The elder son, physically near but relationally outside, refuses the feast and names his life as slavery. The father goes out to him too, ending with an appeal: ‘your brother’ was dead and lives, lost and found.",
   "whyItMatters": "Jesus interprets table fellowship as God's searching joy, not moral indifference. The chapter refuses to leave either obvious wanderer or resentful insider alone: repentance comes home to undeserved restoration, and righteousness is tested by whether it can enter joy over a recovered sibling.",
   "context": {
-    "author": "Luke preserving three connected parables as Jesus's answer to meal criticism",
-    "audience": "Communities negotiating repentance, restoration, resentment, status, and shared table",
-    "date": "Late-first-century travel narrative, with the third story distinctive to Luke",
+    "author": "The anonymous author, traditionally identified as Luke, preserving three connected parables as Jesus's answer to meal criticism",
+    "audience": "Theophilus and a wider Greek-reading audience; the chapter addresses repentance, restoration, resentment, status, and shared table",
+    "date": "Commonly dated around AD 80–90, after AD 70; earlier dates in the 60s and later ones into the early second century are defended; part of the travel narrative, with the third story distinctive to Luke",
     "setting": "A crowd around Jesus and imagined pasture, household, distant country, pig field, family estate, and feast",
     "literaryForm": "Complaint-response sequence of two short search parables and one open-ended family narrative"
   },
   "outline": [
     {
       "heading": "Sinners draw near; religious critics complain about welcome",
-      "verses": "1-2"
+      "verses": "1-2",
+      "note": "Tax collectors and sinners come close to hear him; the Pharisees and scribes murmur that he 'welcomes sinners, and eats with them'."
     },
     {
       "heading": "Lost sheep, searching shepherd, and shared joy",
-      "verses": "3-7"
+      "verses": "3-7",
+      "note": "A man leaves ninety-nine to find one lost sheep and calls friends to rejoice; Jesus says heaven has more joy over one repenting sinner"
     },
     {
       "heading": "Lost coin, searching woman, and angelic joy",
-      "verses": "8-10"
+      "verses": "8-10",
+      "note": "A woman with ten coins loses one, lights a lamp and sweeps until she finds it, then calls her friends to rejoice"
     },
     {
       "heading": "Younger son demands, leaves, collapses, and returns",
-      "verses": "11-20"
+      "verses": "11-19",
+      "note": "The younger son wastes his share abroad, feeds pigs, and resolves to go home and say 'Father, I have sinned'"
     },
     {
       "heading": "Father runs, restores, and begins the feast",
-      "verses": "20-24"
+      "verses": "20-24",
+      "note": "While he is still far off his father runs and kisses him, then orders a robe, ring, sandals and the fattened calf"
     },
     {
       "heading": "Elder son refuses; father goes out and appeals",
-      "verses": "25-32"
+      "verses": "25-32",
+      "note": "The elder son will not go in; his father comes out and begs him, and answers his complaint: 'all that is mine is yours'."
     }
   ],
   "keyVerses": [
@@ -58,7 +64,6 @@
     "welcome under accusation",
     "searching grace",
     "repentance and return",
-    "compassion that runs",
     "restored sonship",
     "resentful proximity",
     "necessary joy"
@@ -115,7 +120,7 @@
     {
       "id": "q4",
       "question": "Why is the younger son's inheritance demand so severe?",
-      "answer": "A younger son could receive a portion, but demanding and liquidating it while the father lived treated family relationship as disposable and damaged the estate. The father nevertheless divides the property. The story's rupture is relational and economic before it becomes moral collapse in the distant country.",
+      "answer": "A younger son could receive a share (Deuteronomy 21:17), but Sirach tells fathers not to give away their goods while they live (Sirach 33:20, 24); this son asks for his early, gathers it all, and leaves. The father nevertheless divides the property. The story's rupture is relational and economic before it becomes moral collapse in the distant country.",
       "verseRefs": [
         "15:12",
         "15:13"
@@ -147,7 +152,7 @@
     {
       "id": "q6",
       "question": "What do robe, ring, shoes, and calf communicate?",
-      "answer": "They are not random luxuries. Best clothing, a household ring, footwear, and a public feast mark restored family standing rather than probationary servitude. The father answers ‘make me a hired servant’ by acting out ‘this son of mine’ before the village.",
+      "answer": "They are not random luxuries. On one common reading, the best robe, a ring, sandals, and a feast mark restored family standing rather than probationary servitude. The father answers ‘Make me as one of your hired servants’ by acting out ‘this, my son’ before the household.",
       "verseRefs": [
         "15:22",
         "15:23",
@@ -202,21 +207,31 @@
     },
     {
       "term": "Drachma",
-      "def": "Greek silver coin, roughly comparable to a denarius in ordinary value."
+      "def": "Greek silver coin, of nearly the same weight as the Roman denarius."
     },
     {
       "term": "Prodigal",
-      "def": "Wastefully extravagant; a later title, not Luke's label for the younger son."
+      "def": "Wastefully extravagant; a later title, not Luke's label for the younger son.",
+      "verses": [
+        "15:13"
+      ]
     },
     {
       "term": "Fatted calf",
-      "def": "Valuable animal reserved for a large communal celebration, signaling public restoration."
+      "def": "Animal fattened for a feast; the elder son sets it against the goat he was never given (15:29-30)."
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "6fe5d4fdd5263166c13304713e15b1507acc68b2ed2ae5849ceaa11998d6843f",
+    "generatedAt": "2026-08-04T20:49:38.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

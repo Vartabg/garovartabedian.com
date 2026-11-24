@@ -5,28 +5,32 @@
   "summary": "Jesus turns from farewell speech to prayer. He asks the Father to glorify the Son so the Son may glorify the Father and give eternal life, defined as knowing the Father and Jesus Christ whom he sent. He prays for the disciples' protection, joy, sanctification, and mission, then for future believers whose unity and love are to make his sending visible to the world.",
   "whyItMatters": "The prayer lets readers overhear the relationships that ground John's theology: glory as self-giving, eternal life as knowledge, holiness as consecration for mission, and unity as participation in Father and Son. Jesus does not pray for escape from the world but for a protected, truthful, sent people within it.",
   "context": {
-    "author": "The anonymous Fourth Gospel narrator, bringing the farewell discourse to its theological climax in Jesus's prayer",
-    "audience": "The first disciples and later believers drawn into the prayer through their testimony",
-    "date": "Prayed immediately before the arrest in John's narrative",
-    "setting": "The transition from the farewell setting toward the garden across the Kidron",
+    "author": "The anonymous Fourth Gospel narrator, traditionally identified with John son of Zebedee (authorship is debated), bringing the farewell discourse to its theological climax in Jesus's prayer",
+    "audience": "Readers invited to believe, overhearing prayer for the first disciples and for later believers drawn into the prayer through their testimony",
+    "date": "Prayed immediately before the arrest in John's narrative; the Gospel is commonly dated around AD 90–100, with earlier stages also proposed",
+    "setting": "The end of the farewell evening, just before Jesus goes out across the Kidron (18:1)",
     "literaryForm": "Intercessory prayer moving from Son and Father, to present disciples, to future believers and the world"
   },
   "outline": [
     {
       "heading": "The Son asks for glory and defines eternal life",
-      "verses": "1-5"
+      "verses": "1-5",
+      "note": "Jesus lifts his eyes to heaven and says the time has come; he says eternal life is to know 'the only true God'"
     },
     {
       "heading": "Jesus prays for disciples given from the world",
-      "verses": "6-12"
+      "verses": "6-12",
+      "note": "Jesus prays for those the Father gave him, not for the world; he says he kept them, and asks the Father to keep them"
     },
     {
       "heading": "Protection, joy, truth, sanctification, and sending",
-      "verses": "13-19"
+      "verses": "13-19",
+      "note": "Jesus prays they not be taken from the world but kept from the evil one; as the Father sent him, so he sends them"
     },
     {
       "heading": "Future believers, unity, witness, glory, and love",
-      "verses": "20-26"
+      "verses": "20-26",
+      "note": "Jesus prays for those who will believe through their word that they may all be one, and be with him where he is"
     }
   ],
   "keyVerses": [
@@ -50,8 +54,6 @@
     "glory",
     "eternal life",
     "name",
-    "keeping",
-    "world",
     "sanctification",
     "sending",
     "unity and love"
@@ -60,7 +62,7 @@
     {
       "id": "q1",
       "question": "Is this prayer called ‘high priestly’ in the text?",
-      "answer": "John never supplies that title. Christian interpreters have long called it Jesus's ‘high-priestly prayer’ because he consecrates himself, intercedes for his people, and approaches death. The label can illuminate, but readers should first hear the prayer's own vocabulary—glory, giving, name, keeping, truth, sending, unity, and love.",
+      "answer": "John never supplies that title. Christian interpreters commonly call it Jesus's ‘high-priestly prayer’ because he consecrates himself, intercedes for his people, and approaches death. The label can illuminate, but readers should first hear the prayer's own vocabulary—glory, giving, name, keeping, truth, sending, unity, and love.",
       "verseRefs": [
         "17:1",
         "17:9",
@@ -98,7 +100,7 @@
     {
       "id": "q3",
       "question": "What does ‘know’ mean in the definition of eternal life?",
-      "answer": "Ginōskō can describe knowledge gained in relationship and experience, not bare awareness of propositions. Eternal life is knowing the only true God and the one he sent. This includes truthful confession, but it is participatory and covenantal: Jesus has made the Father's name known, and disciples have received the words and recognized his mission.",
+      "answer": "Ginōskō can describe knowledge gained in relationship and experience, not bare awareness of propositions. Eternal life is knowing the only true God and the one he sent. This includes truthful confession, but on one common reading it is participatory and covenantal: Jesus has made the Father's name known, and disciples have received the words and recognized his mission.",
       "verseRefs": [
         "17:3",
         "17:6",
@@ -138,7 +140,7 @@
     {
       "id": "q5",
       "question": "What does keeping disciples in the Father's ‘name’ mean?",
-      "answer": "A divine name represents revealed identity and authority, not a protective sound. Jesus has manifested the Father's name by making the Father known and asks that disciples be guarded within that reality. Their unity is therefore grounded in shared belonging to God, not in suppressing difference through institutional force.",
+      "answer": "On one common reading, the divine name here represents revealed identity and authority, not a protective sound. Jesus has manifested the Father's name by making the Father known and asks that disciples be guarded within that reality. Their unity is therefore grounded in shared belonging to God.",
       "verseRefs": [
         "17:6",
         "17:11",
@@ -213,11 +215,21 @@
   "glossary": [
     {
       "term": "Ginōskō",
-      "def": "To know, often with relational and experiential force rather than mere awareness."
+      "def": "To know, often with relational and experiential force rather than mere awareness.",
+      "verses": [
+        "17:3",
+        "17:7-8",
+        "17:23",
+        "17:25"
+      ]
     },
     {
       "term": "Hagiazō",
-      "def": "To sanctify, make holy, or consecrate for God's purpose."
+      "def": "To sanctify, make holy, or consecrate for God's purpose.",
+      "verses": [
+        "17:17",
+        "17:19"
+      ]
     },
     {
       "term": "Glory",
@@ -225,9 +237,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "e28e742a885e94a03533b3365cd3cc37d86dcd5c729865c8f21cc58e496b1498",
+    "generatedAt": "2026-08-04T23:02:42.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

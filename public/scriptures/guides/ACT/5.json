@@ -5,24 +5,27 @@
   "summary": "Ananias and Sapphira sell property but secretly keep part of the price while presenting the gift as complete. Peter exposes the deception, each spouse falls dead, and fear seizes the community. Meanwhile signs and healings draw crowds to Solomon's porch. The high priestly party imprisons the apostles, but an angel sends them back to teach in the temple. They tell the council that obedience to God outranks the command to be silent. Gamaliel counsels restraint; after flogging, the apostles leave rejoicing that they were counted worthy to suffer dishonor for Jesus's name and continue teaching daily.",
   "whyItMatters": "Acts places an alarming internal judgment beside external pressure. The community's greatest threats are not only hostile authorities but status-seeking deception within its generosity. Yet neither fear, prison, nor flogging stops the public word: authority is accountable to God, suffering is not confused with defeat, and the witnesses refuse retaliatory violence.",
   "context": {
-    "author": "The Luke–Acts narrator contrasting truthful community, public signs, and official resistance",
-    "audience": "Readers encountering both an idealized community and its severe internal breach",
-    "date": "The early Jerusalem phase of Acts",
+    "author": "The anonymous narrator of Luke–Acts, traditionally identified as Luke, contrasting truthful community, public signs, and official resistance",
+    "audience": "Theophilus and readers who know Israel's Greek Scriptures, encountering both an idealized community and its severe internal breach",
+    "date": "Commonly dated with or shortly after Luke, often around AD 80–90 (dates in the 60s and later are also argued); the story is in the early Jerusalem phase of Acts",
     "setting": "The Jerusalem assembly, Solomon's porch, prison, temple, and council chamber",
     "literaryForm": "Judgment story, miracle summary, deliverance narrative, and trial speech"
   },
   "outline": [
     {
       "heading": "Ananias and Sapphira lie about a voluntary gift and die",
-      "verses": "1-11"
+      "verses": "1-11",
+      "note": "Ananias and Sapphira keep back part of the price; Peter says they lied to God, and each falls dead and is buried"
     },
     {
       "heading": "Signs multiply and the imprisoned apostles return to the temple",
-      "verses": "12-26"
+      "verses": "12-26",
+      "note": "The sick are laid in the streets for Peter's shadow; the high priest jails the apostles, but an angel opens the doors at night"
     },
     {
       "heading": "The council hears the witnesses, Gamaliel intervenes, and teaching continues",
-      "verses": "27-42"
+      "verses": "27-42",
+      "note": "The high priest says they were forbidden to teach; Peter says they must obey God; Gamaliel urges leaving them alone, and they keep teaching"
     }
   ],
   "keyVerses": [
@@ -48,15 +51,13 @@
     "signs and healing",
     "obedience",
     "public witness",
-    "discernment",
-    "suffering",
-    "the name of Jesus"
+    "suffering"
   ],
   "questions": [
     {
       "id": "q1",
       "question": "What exactly was Ananias and Sapphira's sin?",
-      "answer": "Peter explicitly says the unsold property was theirs and the proceeds remained under their authority. Their offense is not retaining a percentage but conspiring to present a partial gift as the whole, gaining the honor of sacrificial generosity through a lie. The verbs nosphizō and ‘put aside’ suggest secret misappropriation, but the narrative's deepest language is lying to the Holy Spirit and testing the Lord's Spirit.",
+      "answer": "Peter explicitly says the unsold property was theirs and the proceeds remained under their authority. Their offense is not retaining a percentage but conspiring to present a partial gift as the whole, gaining the honor of sacrificial generosity through a lie. The verb nosphizō, rendered ‘kept back’ (5:2), means to withdraw covertly and take for oneself, but the narrative's deepest language is lying to the Holy Spirit and testing the Lord's Spirit.",
       "verseRefs": [
         "5:1",
         "5:2",
@@ -76,7 +77,7 @@
     {
       "id": "q2",
       "question": "Why is the judgment immediate and fatal?",
-      "answer": "Acts does not offer a general rule that God immediately kills deceptive donors; later sinners are treated differently. The scene resembles severe boundary judgments at formative moments in Israel's Scriptures, exposing hypocrisy as dangerous to a community defined by Spirit-given truth and trust. The deaths remain a hard text: explanation should not soften the terror, imitate Peter as executioner, or weaponize the story for financial coercion.",
+      "answer": "Acts does not offer a general rule that God immediately kills deceptive donors; later sinners are treated differently. Many readers see in the scene a likeness to severe boundary judgments at formative moments in Israel's Scriptures, exposing hypocrisy as dangerous to a community defined by Spirit-given truth and trust. The deaths remain a hard text: explanation should not soften the terror, imitate Peter as executioner, or weaponize the story for financial coercion.",
       "verseRefs": [
         "5:5",
         "5:9",
@@ -184,7 +185,7 @@
     {
       "id": "q8",
       "question": "Do Theudas and Judas create a chronological problem?",
-      "answer": "Gamaliel mentions Theudas and then Judas the Galilean. Josephus places a well-known Theudas after the likely period of this speech, while Judas belongs around the census of AD 6; Luke's ‘after this’ can therefore look reversed or anachronistic. Proposals include another earlier Theudas, compressed memory, or authorial chronology. The uncertainty should be acknowledged rather than hidden, and it does not change Gamaliel's argument.",
+      "answer": "Gamaliel mentions Theudas and then Judas the Galilean. Josephus places a well-known Theudas under the governor Fadus (Antiquities 20.5.1), after the likely period of this speech, while Judas belongs around the census of AD 6; Luke's ‘after this’ can therefore look reversed or anachronistic. Proposals include another earlier Theudas, compressed memory, or authorial chronology. The uncertainty should be acknowledged rather than hidden, and it does not change Gamaliel's argument.",
       "verseRefs": [
         "5:36",
         "5:37"
@@ -199,7 +200,10 @@
   "glossary": [
     {
       "term": "Nosphizō",
-      "def": "To put aside or misappropriate secretly; used for the concealed share of the sale."
+      "def": "To set apart for oneself, to withdraw covertly and take as one’s own; used for the concealed share of the sale.",
+      "verses": [
+        "5:2-3"
+      ]
     },
     {
       "term": "Gamaliel",
@@ -211,9 +215,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "f7ecbe2218b37ecfcc82a4ac22539c8d377dc9b721b40001444c40ee63226fc2",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

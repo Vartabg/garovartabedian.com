@@ -1,3 +1,4 @@
+import { runStoryStage } from '../_shared/storyStage';
 import {
   ARMOR_LABELS,
   act,
@@ -11,9 +12,9 @@ import {
   nextArmorPiece,
   stepElah,
   stonesPicked,
+  walkTo,
   type ElahState,
 } from './elahGame';
-import { elahPointer } from './elahPointer';
 import { makeElahSound } from './elahSound';
 import { createElahView } from './elahView';
 
@@ -72,54 +73,22 @@ export type ElahHud = ReturnType<typeof readHud>;
 export type ElahController = ReturnType<typeof runElah>;
 
 export function runElah(canvas: HTMLCanvasElement, onChange: (hud: ElahHud) => void) {
-  const section = canvas.closest('section');
-  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const sound = makeElahSound();
-  const held = new Set<string>();
-  const keys: Record<string, [number, number]> = {
-    ArrowLeft: [-1, 0],
-    KeyA: [-1, 0],
-    ArrowRight: [1, 0],
-    KeyD: [1, 0],
-    ArrowUp: [0, -1],
-    KeyW: [0, -1],
-    ArrowDown: [0, 1],
-    KeyS: [0, 1],
-  };
-
   let s = newElah();
-  let paused = false;
   let audible = true;
   let ctxLost = false;
   let view: ReturnType<typeof createElahView> | undefined;
-  let frame = 0;
-  let last = 0;
   let revision = -1;
   let nearId: string | undefined;
   let stepShown = -1;
   let phaseShown = '';
   let dirty = true;
-  let dirtyPaint = true;
   let handled = s.seq;
   let lastStepBucket = 0;
-  const stop = new AbortController();
+  let lastWhirlBucket = -1;
 
   function syncAmbiance() {
     sound.updateAmbiance(elahPhase(s), s.armorLeft.length);
-  }
-
-  function setupView() {
-    view = undefined;
-    try {
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        const initialView = createElahView(canvas, ctx);
-        initialView.draw(s, 0, motion.matches);
-        view = initialView;
-      }
-    } catch { /* Target buttons remain operable without 2D canvas. */ }
-    ctxLost = !view;
-    dirty = true;
   }
 
   function publish() {
@@ -133,13 +102,13 @@ export function runElah(canvas: HTMLCanvasElement, onChange: (hud: ElahHud) => v
     stepShown = s.verseStep;
     phaseShown = phase;
     dirty = false;
-    onChange({ ...readHud(s), paused, sound: audible, visual: !ctxLost, ready: true });
+    onChange({ ...readHud(s), paused: stage.isPaused(), sound: audible, visual: !ctxLost, ready: true });
   }
 
   function change() {
     if (s.seq !== handled) {
       if (s.actionKind !== 'none') {
-        sound.play(s.actionKind, motion.matches);
+        sound.play(s.actionKind, stage.reduced());
       }
       handled = s.seq;
       syncAmbiance();
@@ -147,60 +116,105 @@ export function runElah(canvas: HTMLCanvasElement, onChange: (hud: ElahHud) => v
     publish();
   }
 
-  function active() {
-    if (document.hidden || paused) return false;
-    sound.unlock();
-    return true;
-  }
-
   function perform() {
-    if (!active()) return;
+    if (!stage.isActive()) return;
     act(s);
     change();
   }
 
   function go(id: string) {
-    if (!active()) return;
+    if (!stage.isActive()) return;
     approach(s, id);
     change();
   }
 
+  function setupView(reduced: boolean) {
+    view = undefined;
+    try {
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        const initialView = createElahView(canvas, ctx);
+        initialView.draw(s, 0, reduced);
+        view = initialView;
+      }
+    } catch { /* Target buttons remain operable without 2D canvas. */ }
+    ctxLost = !view;
+    dirty = true;
+  }
+
+  const stage = runStoryStage(canvas, {
+    onInteract: () => sound.unlock(),
+    onPerform: perform,
+    toWorld: (x, y) => (!ctxLost && view ? view.toWorld(x, y) : undefined),
+    onTap(position) {
+      if (ctxLost || !view) return;
+      const hitId = view.hit(s, position);
+      if (hitId) go(hitId);
+      else walkTo(s, position);
+    },
+    onStep(dt, x, y, _now, reduced) {
+      stepElah(s, dt, x, y);
+      const stepBucket = Math.floor(s.stride / Math.PI);
+      if (s.walking && stepBucket > lastStepBucket) {
+        lastStepBucket = stepBucket;
+        if (isInBrook(s.player)) sound.play('step-brook');
+        else if (s.armorLeft.length > 0) sound.play('step-heavy');
+        else sound.play('step-light');
+      }
+      if (!reduced && elahPhase(s) === 'sling') {
+        const whirlBucket = Math.floor((s.time * 8.2) / (Math.PI * 2));
+        if (whirlBucket > lastWhirlBucket) {
+          lastWhirlBucket = whirlBucket;
+          sound.play('whirl');
+        }
+      } else {
+        lastWhirlBucket = -1;
+      }
+      change();
+    },
+    onDraw(dt, reduced) {
+      if (!ctxLost && view) view.draw(s, dt, reduced);
+    },
+    onResize: () => view?.size(),
+    onContextLost() {
+      ctxLost = true;
+      dirty = true;
+      publish();
+    },
+    onContextRestored() {
+      setupView(stage.reduced());
+      publish();
+    },
+    onPauseChange(paused) {
+      sound.setPaused(paused);
+      dirty = true;
+      publish();
+    },
+    onVisualError() {
+      ctxLost = true;
+      dirty = true;
+      publish();
+    },
+  });
+
   function reset() {
     sound.unlock();
     s = newElah();
-    paused = false;
-    held.clear();
-    pointer.clear();
+    stage.setPaused(false);
+    stage.clearInput();
     handled = s.seq;
     lastStepBucket = 0;
-    last = 0;
+    lastWhirlBucket = -1;
     revision = -1;
     stepShown = -1;
     phaseShown = '';
     dirty = true;
-    dirtyPaint = true;
     sound.setPaused(false);
     syncAmbiance();
     view?.size();
+    stage.requestPaint();
     publish();
     canvas.focus({ preventScroll: true });
-  }
-
-  function pause(next: boolean) {
-    if (paused === next) return;
-    paused = next;
-    held.clear();
-    pointer.clear();
-    last = 0;
-    dirty = true;
-    sound.setPaused(paused);
-    publish();
-  }
-
-  function togglePause() {
-    sound.unlock();
-    pause(!paused);
-    if (!paused) canvas.focus({ preventScroll: true });
   }
 
   function toggleSound() {
@@ -210,101 +224,17 @@ export function runElah(canvas: HTMLCanvasElement, onChange: (hud: ElahHud) => v
     publish();
   }
 
-  function animate(now: number) {
-    const dt = last ? Math.min(0.05, Math.max(0, (now - last) / 1000)) : 0;
-    last = now;
-    if (!paused && !document.hidden) {
-      let { x, y } = pointer.axis;
-      for (const key of held) {
-        const v = keys[key];
-        x += v[0];
-        y += v[1];
-      }
-      stepElah(s, dt, x, y);
-      const stepBucket = Math.floor(s.stride / Math.PI);
-      if (s.walking && stepBucket > lastStepBucket) {
-        lastStepBucket = stepBucket;
-        if (isInBrook(s.player)) sound.play('step-brook');
-        else if (s.armorLeft.length > 0) sound.play('step-heavy');
-        else sound.play('step-light');
-      }
-      change();
-    }
-    if (!ctxLost && view && (!paused || dirtyPaint)) {
-      try {
-        view.draw(s, dt, motion.matches);
-      } catch {
-        ctxLost = true;
-        dirty = true;
-        publish();
-      }
-    }
-    dirtyPaint = false;
-    frame = requestAnimationFrame(animate);
-  }
-
-  const opts = { signal: stop.signal };
-  window.addEventListener('keydown', (e) => {
-    if (e.ctrlKey || e.metaKey || e.altKey) return;
-    const target = e.target instanceof HTMLElement ? e.target : null;
-    if (target && target !== document.body && target !== document.documentElement && !section?.contains(target)) {
-      return;
-    }
-    if (target?.closest('summary, a, input, textarea, select')) return;
-    if (keys[e.code]) {
-      e.preventDefault();
-      if (active()) held.add(e.code);
-    } else if (e.code === 'KeyP' || (e.code === 'Escape' && !paused && target === canvas)) {
-      if (!e.repeat) {
-        e.preventDefault();
-        togglePause();
-      }
-    } else if ((e.code === 'Space' || e.code === 'Enter') && !target?.closest('button')) {
-      e.preventDefault();
-      if (!e.repeat) perform();
-    }
-  }, opts);
-
-  window.addEventListener('keyup', (e) => held.delete(e.code), opts);
-  window.addEventListener('blur', () => pause(true), opts);
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) pause(true);
-  }, opts);
-
-  const resize = new ResizeObserver(() => {
-    view?.size();
-    dirtyPaint = true;
-  });
-  const pointer = elahPointer(canvas, stop.signal, active, () => (ctxLost ? undefined : view), () => s, go);
-
-  canvas.addEventListener('contextlost', (e) => {
-    e.preventDefault();
-    pointer.clear();
-    ctxLost = true;
-    dirty = true;
-    publish();
-  }, opts);
-  canvas.addEventListener('contextrestored', () => {
-    setupView();
-    dirtyPaint = true;
-    publish();
-  }, opts);
-
-  setupView();
-  resize.observe(canvas);
+  setupView(stage.reduced());
   publish();
-  frame = requestAnimationFrame(animate);
 
   return {
     perform,
     go,
     reset,
-    togglePause,
+    togglePause: () => stage.togglePause(),
     toggleSound,
     dispose() {
-      stop.abort();
-      resize.disconnect();
-      cancelAnimationFrame(frame);
+      stage.dispose();
       sound.close();
     },
   };

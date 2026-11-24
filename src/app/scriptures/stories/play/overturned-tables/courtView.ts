@@ -9,7 +9,7 @@ import {
   drawAerialSpill, drawDroppedReed, drawDroppedStaff,
   drawFixture, drawGroundScatter, drawMidairSpill,
 } from "./courtProps";
-import { oval, polygon, print } from "./courtInk";
+import { drawEdgeArrow, drawGuideMarker, fitVerticalCamera, oval, print } from "../_shared/storyInk";
 
 const clamp = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
@@ -51,18 +51,7 @@ const ARCH_OPENING = typeof Path2D !== "undefined"
   : null;
 
 export function verticalCameraTop(visibleHeight: number, feetY: number) {
-  if (visibleHeight >= courtHeight) return (courtHeight - visibleHeight) / 2;
-  const courtBottom = 433;
-  const roomAboveFeet = Math.min(128, visibleHeight * .77);
-  return Math.max(0, Math.min(courtBottom - visibleHeight, feetY - roomAboveFeet));
-}
-
-function marker(c: CanvasRenderingContext2D, x: number, y: number, time: number, reduced: boolean) {
-  const lift = reduced ? 0 : Math.sin(time * 3.6) * 1.8;
-  c.save(); c.translate(x, y + lift);
-  polygon(c, "#4c3628", -7, -9, 7, -9, 0, 1);
-  polygon(c, "#fff0a5", -5, -8, 5, -8, 0, -1);
-  c.restore();
+  return fitVerticalCamera(courtHeight, 433, 128, .77, visibleHeight, feetY);
 }
 
 function carrierOpenPose(gate: Fixture, t: number): { x: number; y: number; facing: number; alpha: number } {
@@ -593,22 +582,19 @@ export function createView(canvas: HTMLCanvasElement, ctx: CanvasRenderingContex
       const targetEnc = selectedEnc ?? nearEnc;
 
       if (targetFix) {
-        marker(ctx, targetFix.x, targetFix.y - (targetFix.kind === "gate" ? 84 : targetFix.kind === "seat" ? 58 : 66), time, reduced);
+        drawGuideMarker(ctx, targetFix.x, targetFix.y - (targetFix.kind === "gate" ? 84 : targetFix.kind === "seat" ? 58 : 66), time, reduced);
       } else if (targetEnc) {
         const yOff = targetEnc.kind === "depart" ? 88 : 68;
-        marker(ctx, targetEnc.x, targetEnc.y - yOff, time, reduced);
+        drawGuideMarker(ctx, targetEnc.x, targetEnc.y - yOff, time, reduced);
       } else if (eveningReady(s)) {
         // Gentle marker at the east archway when evening settles
-        marker(ctx, 1185, 136, time, reduced);
+        drawGuideMarker(ctx, 1185, 136, time, reduced);
       }
 
       const remaining: Point[] = complete ? actII : s.fixtures.filter(f => f.at === null);
       const next = remaining.sort((a, b) => Math.hypot(a.x - s.player.x, a.y - s.player.y) - Math.hypot(b.x - s.player.x, b.y - s.player.y))[0];
       if (!targetFix && !targetEnc && next && (next.x > left + span - 20 || next.x < left + 20)) {
-        const right = next.x > left + span / 2;
-        const x = right ? left + span - 21 : left + 21, y = top + height / scale * .59;
-        ctx.save(); ctx.translate(x, y); ctx.scale(right ? 1 : -1, 1);
-        polygon(ctx, "#514237", -5, -8, 6, 0, -5, 8); polygon(ctx, "#fff1a8", -4, -5, 3, 0, -4, 5); ctx.restore();
+        drawEdgeArrow(ctx, left, top, span, height / scale, next.x);
       }
     }
 

@@ -2,27 +2,30 @@
   "book": "ACT",
   "chapter": 11,
   "bookName": "Acts",
-  "summary": "When Peter returns to Jerusalem, circumcised believers criticize his table fellowship with uncircumcised men. Peter recounts the sheet vision, the Spirit's instruction, the six witnesses, Cornelius's angelic message, and the Spirit's descent as at Pentecost. He concludes that he could not hinder God, and the hearers glorify God for granting Gentiles repentance to life. Meanwhile scattered believers reach Phoenicia, Cyprus, and Antioch; some preach to Greeks, and Barnabas brings Saul to teach the growing assembly. The disciples are first called Christians there, and they send famine relief to Judea through Barnabas and Saul.",
+  "summary": "When Peter returns to Jerusalem, circumcised believers criticize his table fellowship with uncircumcised men. Peter recounts the sheet vision, the Spirit's instruction, the six witnesses, Cornelius's angelic message, and the Spirit's descent as at Pentecost. He concludes that he could not hinder God, and the hearers glorify God for granting Gentiles repentance to life. Meanwhile scattered believers reach Phoenicia, Cyprus, and Antioch; some preach to the Hellenists, and Barnabas brings Saul to teach the growing assembly. The disciples are first called Christians there, and they send famine relief to Judea through Barnabas and Saul.",
   "whyItMatters": "A transformative experience becomes accountable public testimony rather than private authority. Peter submits a careful sequence and multiple witnesses to a concerned community, which changes its judgment in light of God's action. Antioch then becomes a multilingual, cross-cultural center whose new identity expresses itself not in independence from Jerusalem but material solidarity with Judean believers.",
   "context": {
-    "author": "The Luke–Acts narrator interpreting Cornelius and shifting the mission center toward Antioch",
-    "audience": "Communities negotiating Gentile table fellowship, communal discernment, new identity, and economic care",
-    "date": "Before Herod Agrippa I's death and the mission of Acts 13",
+    "author": "The anonymous narrator of Luke–Acts, traditionally Luke, interpreting Cornelius and shifting the mission center toward Antioch",
+    "audience": "Theophilus and a wider audience that knows Israel's Greek Scriptures; the chapter addresses Gentile table fellowship, communal discernment, new identity, and economic care",
+    "date": "Commonly dated around AD 80–90, though dates in the 60s and later are argued; narrates events before Herod Agrippa I's death and the mission of Acts 13",
     "setting": "Jerusalem, Phoenicia, Cyprus, Syrian Antioch, and Judea",
     "literaryForm": "Defense rehearsal, communal verdict, mission summary, naming notice, prophecy, and relief account"
   },
   "outline": [
     {
       "heading": "Peter defends Gentile table fellowship by recounting God's initiative",
-      "verses": "1-18"
+      "verses": "1-18",
+      "note": "Those of the circumcision contend with Peter over eating with uncircumcised men; he retells the sheet and the Spirit falling, and they glorify God"
     },
     {
       "heading": "The scattered mission reaches Greeks and Barnabas strengthens Antioch",
-      "verses": "19-26"
+      "verses": "19-26",
+      "note": "Men of Cyprus and Cyrene preach to the Hellenists in Antioch; Barnabas, sent from Jerusalem, brings Saul, and disciples are first called Christians"
     },
     {
       "heading": "Agabus predicts famine and Antioch sends relief to Judea",
-      "verses": "27-30"
+      "verses": "27-30",
+      "note": "Agabus, one of the prophets from Jerusalem, says by the Spirit a great famine is coming; the disciples send relief by Barnabas and Saul"
     }
   ],
   "keyVerses": [
@@ -47,8 +50,6 @@
     "table fellowship",
     "equal gift",
     "repentance to life",
-    "Antioch",
-    "Barnabas",
     "Christian identity",
     "famine relief"
   ],
@@ -95,8 +96,8 @@
     },
     {
       "id": "q3",
-      "question": "What does ‘make no distinction’ mean?",
-      "answer": "The Spirit tells Peter to go mēden diakrinanta. Diakrinō can mean distinguish, discriminate, dispute, or hesitate depending on context. Here the instruction removes his hesitation and refusal to cross the Gentile threshold; it also anticipates the theological conclusion that God did not discriminate in giving the Spirit.",
+      "question": "What does ‘without discriminating’ mean?",
+      "answer": "The Spirit tells Peter to go mēden diakrinanta. Diakrinō can mean distinguish, discriminate, dispute, or hesitate depending on context. On one reading the instruction here removes his hesitation and refusal to cross the Gentile threshold; it also anticipates the theological conclusion that God did not discriminate in giving the Spirit.",
       "verseRefs": [
         "11:12"
       ],
@@ -126,7 +127,7 @@
     {
       "id": "q5",
       "question": "Why is ‘repentance to life’ called something God granted?",
-      "answer": "Metanoia is real human turning, yet the community praises God for giving or granting it to Gentiles. The phrasing prevents repentance from becoming ethnic achievement or moral boasting. Human response and divine enablement appear together rather than as rivals.",
+      "answer": "Metanoia is real human turning, yet the community praises God for giving or granting it to Gentiles. On one common reading, the phrasing prevents repentance from becoming ethnic achievement or moral boasting. Human response and divine enablement appear together rather than as rivals.",
       "verseRefs": [
         "11:18"
       ],
@@ -138,7 +139,7 @@
     {
       "id": "q6",
       "question": "Did the Antioch missionaries preach to ‘Greeks’ or ‘Hellenists’?",
-      "answer": "Greek manuscripts differ by one letter-like spelling: Hellēnas means Greeks/Gentiles; Hellēnistas usually means Greek-speaking Jews. The surrounding contrast with speaking ‘only to Jews’ and the later celebration of Gentile inclusion favor ‘Greeks’ in many critical editions, but the variant shows how closely language and identity overlap in this transition.",
+      "answer": "Greek manuscripts differ here: some, such as Papyrus 74, read Hellēnas, ‘Greeks’; others read Hellēnistas, ‘Hellenists,’ the word Acts 6:1 uses for Greek-speaking Jews. The contrast with speaking ‘to Jews only’ (11:19) leads many readers to take the hearers as Gentiles, though the critical Greek text shown here reads Hellēnistas; the variant shows how closely language and identity overlap in this transition.",
       "verseRefs": [
         "11:19",
         "11:20",
@@ -154,7 +155,7 @@
     {
       "id": "q7",
       "question": "What did ‘Christian’ originally mean?",
-      "answer": "Christianoi means people belonging to or aligned with Christos—the Messiah/Christ—and follows Roman-style party labels. Luke says the disciples ‘were called’ Christians at Antioch, perhaps by outsiders, rather than claiming they invented it. ‘Disciples,’ ‘brothers,’ believers, and ‘the Way’ remain active identities in Acts.",
+      "answer": "Christianoi means people belonging to or aligned with Christos—the Messiah/Christ. Luke says the disciples ‘were called’ Christians at Antioch, perhaps by outsiders, rather than claiming they invented it. ‘Disciples,’ ‘brothers,’ believers, and ‘the Way’ remain active identities in Acts.",
       "verseRefs": [
         "11:26"
       ],
@@ -166,7 +167,7 @@
     {
       "id": "q8",
       "question": "How should the famine prophecy and relief be read historically?",
-      "answer": "Agabus predicts a widespread famine, which Luke locates under Claudius; ancient sources attest multiple regional shortages in his reign. Antioch's disciples determine contributions ‘according to ability’ and send them to Judean elders. The scene joins charismatic warning to practical, proportionate relief rather than speculation or panic.",
+      "answer": "Agabus predicts a widespread famine, which Luke locates under Claudius; Josephus reports a great famine in Judea in these years (Antiquities 20.5.2). Antioch's disciples each send relief ‘as any of the disciples had plenty’ and send them to Judean elders. The scene joins charismatic warning to practical, proportionate relief rather than speculation or panic.",
       "verseRefs": [
         "11:27",
         "11:28",
@@ -189,7 +190,10 @@
     },
     {
       "term": "Christianoi",
-      "def": "‘Christ-people’ or adherents of Christ; a public group label first reported at Antioch."
+      "def": "‘Christ-people’ or adherents of Christ; a public group label first reported at Antioch.",
+      "verses": [
+        "11:26"
+      ]
     },
     {
       "term": "Agabus",
@@ -197,9 +201,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "5a80ef0f13ebbe745981ec48cb64c63d2d46ec5f2904de3a92196c1c1bdc5aff",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

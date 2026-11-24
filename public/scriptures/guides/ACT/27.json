@@ -2,31 +2,35 @@
   "book": "ACT",
   "chapter": 27,
   "bookName": "Acts",
-  "summary": "Paul and other prisoners sail for Italy under the centurion Julius, with Aristarchus and the first-person narrator present. After changing ships and fighting contrary winds, they reach Fair Havens after the season's safe navigation has ended. Paul warns that continuing risks cargo, ship, and lives, but the centurion trusts the pilot and owner. A violent northeaster drives the ship for two weeks; cargo and tackle are thrown overboard and hope disappears. Paul reports an angelic promise that he must stand before Caesar and that God has graciously given him all aboard. He insists that sailors remain with the ship, urges all 276 people to eat, gives thanks and breaks bread, and guides them through wreck on Malta's shore. Soldiers plan to kill prisoners, but Julius preserves Paul and everyone reaches land alive.",
-  "whyItMatters": "The voyage is one of antiquity's most detailed sea narratives and turns a prisoner into the ship's moral center without making expertise irrelevant. Paul warns, receives promise, tells the truth, prevents abandonment, nourishes exhausted people, and trusts God while sailors sound depths and cut anchors. Providence works through competent action, and salvation includes every person aboard—not only the famous apostle.",
+  "summary": "Paul and other prisoners sail for Italy under the centurion Julius, with Aristarchus and the first-person narrator present. After changing ships and fighting contrary winds, they reach Fair Havens after the Fast, when the voyage has become dangerous. Paul warns that continuing risks cargo, ship, and lives, but the centurion trusts the pilot and owner. A violent northeaster drives the ship for two weeks; cargo and tackle are thrown overboard and hope disappears. Paul reports an angelic promise that he must stand before Caesar and that God has graciously given him all aboard. He insists that sailors remain with the ship, urges all 276 people to eat, gives thanks and breaks bread, and guides them through wreck on the shore of an island (named Malta in 28:1). Soldiers plan to kill prisoners, but Julius preserves Paul and everyone reaches land alive.",
+  "whyItMatters": "The voyage is told with many technical sailing details and turns a prisoner into the ship's moral center without making expertise irrelevant. Paul warns, receives promise, tells the truth, prevents abandonment, nourishes exhausted people, and trusts God while sailors sound depths and cut anchors. Providence works through competent action, and salvation includes every person aboard—not only the famous apostle.",
   "context": {
-    "author": "The first-person Luke–Acts narrator reporting Paul's voyage toward Rome",
-    "audience": "Readers accompanying the promised witness through technical danger, imperial custody, and communal survival",
-    "date": "The voyage likely begins in an autumn and winters on Malta",
-    "setting": "Caesarea, Sidon, Cyprus, Myra, Cnidus, Crete, the Adriatic/Mediterranean, and Malta",
+    "author": "The anonymous first-person Luke–Acts narrator, traditionally Luke, Paul's companion, reporting Paul's voyage toward Rome",
+    "audience": "Theophilus and a wider audience that knows Israel's Greek Scriptures; here, readers accompanying the promised witness through technical danger, imperial custody, and communal survival",
+    "date": "Acts is often dated around AD 80–90, though some argue for the 60s or later; the voyage sets out after the Fast (27:9), with winter near (27:12)",
+    "setting": "Sidon, Cyprus, Myra, Cnidus, Crete, the Adriatic Sea, and an island named as Malta in 28:1",
     "literaryForm": "Ancient sea-voyage and storm narrative with prophecy, meal, wreck, and rescue"
   },
   "outline": [
     {
       "heading": "The prisoners sail under Julius and reach Fair Havens with difficulty",
-      "verses": "1-8"
+      "verses": "1-8",
+      "note": "The centurion Julius takes Paul and other prisoners by ship, treats Paul kindly at Sidon, and contrary winds slow them to Fair Havens"
     },
     {
       "heading": "Paul's warning is rejected and a northeaster overwhelms the ship",
-      "verses": "9-20"
+      "verses": "9-20",
+      "note": "Paul warns of loss, but the centurion heeds the ship's master; a stormy wind drives them, and all hope of being saved is gone"
     },
     {
       "heading": "Paul announces preservation and prevents the sailors' escape",
-      "verses": "21-32"
+      "verses": "21-32",
+      "note": "Paul says an angel stood by him and no life will be lost; when sailors try to flee, soldiers cut the boat's ropes"
     },
     {
       "heading": "All eat, the ship wrecks, and every person reaches land",
-      "verses": "33-44"
+      "verses": "33-44",
+      "note": "Paul urges all to eat and breaks bread with thanks; the ship runs aground and the stern breaks up, but all reach land"
     }
   ],
   "keyVerses": [
@@ -47,10 +51,8 @@
     }
   ],
   "themes": [
-    "voyage",
     "prisoner witness",
     "expert judgment",
-    "storm",
     "divine promise",
     "shared survival",
     "thanksgiving and bread",
@@ -76,7 +78,7 @@
     {
       "id": "q2",
       "question": "Who is Julius, and why does he matter?",
-      "answer": "He is a centurion of the ‘Augustan cohort,’ though the unit's exact identification is debated. He treats Paul kindly at Sidon, initially follows maritime experts rather than Paul's warning, later listens about the sailors, and finally prevents prisoner execution. Roman authority is personal and changeable, capable of both custody and preservation.",
+      "answer": "He is a centurion of the ‘Augustan band’ (27:1). He treats Paul kindly at Sidon, initially follows maritime experts rather than Paul's warning, later listens about the sailors, and finally prevents prisoner execution. Roman authority is personal and changeable, capable of both custody and preservation.",
       "verseRefs": [
         "27:1",
         "27:3",
@@ -98,7 +100,7 @@
     {
       "id": "q3",
       "question": "What is ‘the Fast,’ and why is sailing dangerous afterward?",
-      "answer": "‘The Fast’ most naturally means the Day of Atonement, placing the voyage in autumn when Mediterranean storms increased and ancient navigation became hazardous. Luke uses a Jewish calendar marker within a Roman voyage. The timing explains Paul's warning without requiring his first advice to be supernatural prophecy.",
+      "answer": "‘The Fast’ most naturally means the Day of Atonement, kept in the seventh month (Leviticus 23:27), after which, the text says, sailing was dangerous and winter near (27:9, 12). Luke uses a Jewish calendar marker within a Roman voyage. The timing explains Paul's warning without requiring his first advice to be supernatural prophecy.",
       "verseRefs": [
         "27:9",
         "27:10"
@@ -150,7 +152,7 @@
     {
       "id": "q6",
       "question": "Is the bread-breaking meal a Eucharist?",
-      "answer": "Paul takes bread, gives thanks to God before all, breaks it, and eats—language with clear Eucharistic echoes. It is also plainly a practical shipboard meal needed after prolonged fasting. Luke can let sacred resonance and ordinary nourishment inhabit the same act; the whole mixed company eats, while no formal liturgy is described.",
+      "answer": "Paul takes bread, gives thanks to God before all, breaks it, and eats—language that echoes the Last Supper (Luke 22:19). It is also plainly a practical shipboard meal needed after prolonged fasting. Luke can let sacred resonance and ordinary nourishment inhabit the same act; the whole mixed company eats, while no formal liturgy is described.",
       "verseRefs": [
         "27:33",
         "27:34",
@@ -168,7 +170,7 @@
     {
       "id": "q7",
       "question": "Why specify 276 people?",
-      "answer": "The exact total underscores the scale of the ship and allows the final ‘all’ to be concrete. Some manuscripts read seventy-six, but strong witnesses support 276. Large Alexandrian grain ships could carry hundreds, so the figure is not inherently implausible.",
+      "answer": "The exact total underscores the scale of the ship and allows the final ‘all’ to be concrete. Codex Vaticanus reads ‘about seventy-six,’ but most witnesses read 276. Large Alexandrian grain ships could carry hundreds, so the figure is not inherently implausible.",
       "verseRefs": [
         "27:37",
         "27:38"
@@ -206,7 +208,7 @@
     {
       "id": "q9",
       "question": "Why do soldiers plan to kill the prisoners?",
-      "answer": "Roman guards could be held responsible for escaped prisoners, so death prevents escape during the wreck. Julius wants to save Paul and stops the plan, thereby saving all prisoners as well. The scene exposes how imperial procedure can treat captive lives as risk liabilities even at the moment of common disaster.",
+      "answer": "Guards in Acts could pay with their lives for escaped prisoners (12:19; 16:27), so death prevents escape during the wreck. Julius wants to save Paul and stops the plan, thereby saving all prisoners as well. The scene exposes how imperial procedure can treat captive lives as risk liabilities even at the moment of common disaster.",
       "verseRefs": [
         "27:42",
         "27:43",
@@ -223,7 +225,7 @@
   "glossary": [
     {
       "term": "The Fast",
-      "def": "The Day of Atonement, used here as an autumn calendar marker for dangerous sailing."
+      "def": "Usually taken as the Day of Atonement, kept in the seventh month (Leviticus 23:27); here a calendar marker for dangerous sailing."
     },
     {
       "term": "Euroclydon",
@@ -235,9 +237,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "2c63aaed9483e6db99ce4f535dc57ca52fac6707e10d17e7222b72f3d992e156",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

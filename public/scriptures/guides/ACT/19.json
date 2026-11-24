@@ -7,26 +7,30 @@
   "context": {
     "author": "The Luke–Acts narrator presenting the third mission's long Ephesian center",
     "audience": "Readers navigating baptism, Spirit, magic, public religion, economics, and civic conflict",
-    "date": "Paul's Ephesian ministry is commonly placed in the early-to-mid 50s",
+    "date": "Acts is commonly dated around AD 80–90, with dates in the 60s and later also argued",
     "setting": "Ephesus, capital of Roman Asia, with synagogue, lecture hall, households, marketplace, and theater",
     "literaryForm": "Instruction and Spirit-reception scene, ministry summary, failed-exorcism caution, conversion report, and civic riot"
   },
   "outline": [
     {
       "heading": "Twelve disciples receive fuller instruction, baptism, and the Spirit",
-      "verses": "1-7"
+      "verses": "1-7",
+      "note": "About twelve men with only John's baptism are baptized in the name of the Lord Jesus; Paul lays hands on them and they prophesy"
     },
     {
       "heading": "Daily teaching and extraordinary works spread the word through Asia",
-      "verses": "8-12"
+      "verses": "8-12",
+      "note": "Three months in the synagogue, then daily in the school of Tyrannus; handkerchiefs and aprons from Paul's body are carried to the sick"
     },
     {
       "heading": "Failed magical use of Jesus's name leads to confession and renunciation",
-      "verses": "13-20"
+      "verses": "13-20",
+      "note": "Sceva's seven sons invoke Jesus; the spirit answers 'Jesus I know, and Paul I know' and they flee wounded; many burn their magic books"
     },
     {
       "heading": "The Artemis economy erupts into a confused civic assembly",
-      "verses": "21-41"
+      "verses": "21-41",
+      "note": "Demetrius the silversmith gathers the craftsmen; they cry 'Great is Artemis of the Ephesians' until the town clerk dismisses the assembly"
     }
   ],
   "keyVerses": [
@@ -50,8 +54,6 @@
     "John's baptism",
     "Holy Spirit",
     "the Way",
-    "daily teaching",
-    "healing",
     "magic and Jesus's name",
     "repentance's cost",
     "Artemis and economy"
@@ -60,7 +62,7 @@
     {
       "id": "q1",
       "question": "Who are the twelve ‘disciples,’ and what had they not heard?",
-      "answer": "They know John's baptism but lack teaching about the Holy Spirit's arrival in relation to Jesus. Their statement can mean they had not heard that the Spirit ‘was given’ rather than no knowledge of the Spirit's existence at all. Acts calls them disciples before fuller instruction, showing an incomplete transitional group rather than easy categories.",
+      "answer": "They know John's baptism but lack teaching about the Holy Spirit's arrival in relation to Jesus. On one reading, their statement means they had not heard that the Spirit ‘was given’ rather than no knowledge of the Spirit's existence at all. Acts calls them disciples before fuller instruction, showing an incomplete transitional group rather than easy categories.",
       "verseRefs": [
         "19:1",
         "19:2",
@@ -96,7 +98,7 @@
     {
       "id": "q3",
       "question": "What is ‘the Way’ in the Ephesian dispute?",
-      "answer": "Acts again uses hē hodos as a public name for the Jesus movement and its manner of life. When some become hardened and speak evil of ‘the Way,’ Paul relocates the disciples rather than letting synagogue conflict define the whole mission. The phrase will also be used by Demetrius for the economically disruptive movement.",
+      "answer": "Acts again uses hē hodos as a public name for the Jesus movement and its manner of life. When some become hardened and speak evil of ‘the Way,’ Paul relocates the disciples rather than letting synagogue conflict define the whole mission. The narrator uses it again for the disturbance Demetrius stirs up (19:23).",
       "verseRefs": [
         "19:9",
         "19:23"
@@ -110,7 +112,7 @@
     {
       "id": "q4",
       "question": "What was the school of Tyrannus?",
-      "answer": "Scholē can mean a lecture hall or school, and Tyrannus may be an owner or teacher. Paul uses it daily after leaving the synagogue. Some later manuscripts add teaching hours from late morning to afternoon, a vivid but probably secondary detail. The critical text supports sustained public instruction without preserving a timetable.",
+      "answer": "Scholē first meant leisure and later a school, and Tyrannus may be an owner or teacher. Paul uses it daily after leaving the synagogue. Some later manuscripts add teaching hours, ‘from the fifth hour to the tenth,’ a reading the critical Greek text does not print. The critical text supports sustained public instruction without preserving a timetable.",
       "verseRefs": [
         "19:9",
         "19:10"
@@ -235,9 +237,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "31d6424c6318ea1b25860b200ee45d8ff600b0e3b28729b03d3acf0bf2c76848",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

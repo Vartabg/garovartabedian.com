@@ -5,28 +5,32 @@
   "summary": "Before the Jerusalem council Paul claims a good conscience, but the high priest Ananias orders him struck. Paul denounces the ‘whitewashed wall,’ then apologizes when told he has insulted the high priest. Seeing Pharisees and Sadducees, he identifies himself as a Pharisee on trial for resurrection hope; the council divides so violently that Roman soldiers remove him. That night the Lord promises he will testify in Rome. More than forty men swear not to eat until they kill Paul, but his sister's son learns the plot and reports it through the chain of command. The commander Claudius Lysias transfers Paul under heavy guard to Governor Felix in Caesarea and sends a letter that retells events in a self-protective way.",
   "whyItMatters": "Paul's path to Rome moves through fragile legal protection, family intelligence, military force, and a commander's self-serving paperwork as well as a divine promise. Resurrection hope is not an imported anti-Jewish idea; it divides Jewish parties and lets Pharisaic teachers defend the possibility of revelation. The chapter invites readers to compare official narratives with events rather than assume institutional records are neutral.",
   "context": {
-    "author": "The Luke–Acts narrator tracing Paul's custody from Jerusalem toward Caesarea and Rome",
-    "audience": "Readers assessing conscience, religious authority, intramural Jewish debate, plots, family agency, and Roman administration",
-    "date": "Immediately after the temple arrest in the late 50s",
-    "setting": "Jerusalem council, Antonia barracks, nighttime road to Antipatris, and Caesarea's praetorium",
+    "author": "The anonymous Luke–Acts narrator, traditionally Luke, Paul's companion, tracing Paul's custody from Jerusalem toward Caesarea and Rome",
+    "audience": "Theophilus and a wider audience that knows Israel's Greek Scriptures; here, readers assessing conscience, religious authority, intramural Jewish debate, plots, family agency, and Roman administration",
+    "date": "Acts is often dated around AD 80–90, though some argue for the 60s or later; the scene follows the temple arrest and the hearing ordered in 22:30",
+    "setting": "Jerusalem council, Antonia barracks, nighttime road to Antipatris, and Herod's praetorium (palace) in Caesarea",
     "literaryForm": "Council confrontation, divine reassurance, conspiracy-and-rescue narrative, and official letter"
   },
   "outline": [
     {
       "heading": "A blow, rebuke, and resurrection claim divide the council",
-      "verses": "1-10"
+      "verses": "1-10",
+      "note": "Ananias commands Paul struck on the mouth; Paul says he is a Pharisee judged over the resurrection, and Pharisees and Sadducees argue"
     },
     {
       "heading": "The Lord promises Roman witness and a murder conspiracy forms",
-      "verses": "11-15"
+      "verses": "11-15",
+      "note": "The Lord says 'Cheer up, Paul' and that he must testify at Rome; over forty Jews bind themselves under a curse to kill him"
     },
     {
       "heading": "Paul's nephew exposes the plot through Roman channels",
-      "verses": "16-22"
+      "verses": "16-22",
+      "note": "Paul's sister's son warns him of more than forty men lying in wait; a centurion brings the young man to the commanding officer"
     },
     {
       "heading": "A military transfer and self-protective letter send Paul to Felix",
-      "verses": "23-35"
+      "verses": "23-35",
+      "note": "Soldiers take Paul by night to Antipatris and on to Caesarea with a letter; Felix says he will hear him when his accusers arrive"
     }
   ],
   "keyVerses": [
@@ -50,17 +54,15 @@
     "conscience",
     "abusive authority",
     "resurrection hope",
-    "Pharisees and Sadducees",
     "divine promise",
     "assassination plot",
-    "family agency",
     "official self-presentation"
   ],
   "questions": [
     {
       "id": "q1",
       "question": "What does Paul mean by a ‘good conscience’?",
-      "answer": "Syneidēsis is moral self-awareness or conscience. Paul claims he has lived before God in all good conscience up to this day, not that every past act was objectively right—he has already confessed violent persecution. A clear conscience must remain accountable to revelation and correction rather than functioning as proof of innocence by itself.",
+      "answer": "Syneidēsis is moral self-awareness or conscience. Paul claims he has lived before God in all good conscience up to this day, not that every past act was objectively right—he has already confessed violent persecution (22:4). A clear conscience must remain accountable to revelation and correction rather than functioning as proof of innocence by itself.",
       "verseRefs": [
         "23:1"
       ],
@@ -90,7 +92,7 @@
     {
       "id": "q3",
       "question": "Did Paul genuinely not know the high priest?",
-      "answer": "Proposals include poor eyesight, sarcasm—‘I did not recognize conduct worthy of a high priest’—absence of official vestments, limited familiarity after years away, or an irregular hearing. The Greek can mean ‘I did not know/realize.’ Acts does not resolve the reason, so confident psychological reconstructions exceed the text.",
+      "answer": "Proposals include poor eyesight, sarcasm—‘I did not recognize conduct worthy of a high priest’—absence of official vestments, limited familiarity after years away, or an irregular hearing. Acts does not resolve the reason, so confident psychological reconstructions exceed the text.",
       "verseRefs": [
         "23:4",
         "23:5"
@@ -182,7 +184,7 @@
     {
       "id": "q8",
       "question": "What is misleading in Claudius Lysias's letter?",
-      "answer": "He says he rescued Paul ‘having learned that he was a Roman,’ but chapter 21 shows the troops intervened during the riot and he learned citizenship only after ordering a flogging in chapter 22. The letter omits his own unlawful threat and recasts him as a proactive protector. Acts teaches readers to compare official self-presentation with narrated sequence.",
+      "answer": "He says he rescued Paul ‘having learned that he was a Roman,’ but 21:31-33 shows the troops intervened during the riot, and he learned citizenship only after ordering a flogging (22:24-29). The letter omits his own unlawful threat and recasts him as a proactive protector. Acts teaches readers to compare official self-presentation with narrated sequence.",
       "verseRefs": [
         "23:26",
         "23:27",
@@ -202,7 +204,7 @@
     {
       "id": "q9",
       "question": "Why such a large military escort?",
-      "answer": "Two hundred soldiers, seventy cavalry, and two hundred spearmen—or light troops, depending on the rare term—leave at night. The scale reflects a credible forty-person assassination plot and Jerusalem's volatility, though numbers may describe the available detachment. Roman force protects Paul while also keeping him a prisoner in the governor's praetorium.",
+      "answer": "Two hundred soldiers, seventy cavalry, and two hundred spearmen—or javelin men or slingers, depending on how the rare Greek word is read—leave at night. On one reading, the scale reflects a credible forty-person assassination plot and Jerusalem's volatility, though numbers may describe the available detachment. Roman force protects Paul while also keeping him a prisoner in the governor's praetorium.",
       "verseRefs": [
         "23:23",
         "23:24",
@@ -231,13 +233,23 @@
     },
     {
       "term": "Praetorium",
-      "def": "A governor's official residence or headquarters; Paul is held in Herod's at Caesarea."
+      "def": "A governor's official residence or headquarters; Paul is held in Herod's at Caesarea.",
+      "verses": [
+        "23:35"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "8abcd779b3ebb836aad0de3d277c4189b2ddd8636905bcf00e8aa59ba73bf3e5",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

@@ -2,27 +2,30 @@
   "book": "JHN",
   "chapter": 2,
   "bookName": "John",
-  "summary": "At a Cana wedding Jesus responds to his mother, turns six stone jars of purification water into abundant wine, and performs the ‘beginning’ of his signs, revealing glory to his disciples. He then goes to Jerusalem for Passover, drives commerce from the temple courts, and answers a demand for a sign with the riddle of a destroyed-and-raised temple. Many believe because of signs, but Jesus does not entrust himself to them.",
+  "summary": "At a Cana wedding Jesus responds to his mother, turns six stone jars of purification water into abundant wine, and performs the ‘beginning’ of his signs, revealing glory to his disciples. He then goes to Jerusalem for Passover, drives commerce from the temple, and answers a demand for a sign with the riddle of a destroyed-and-raised temple. Many believe because of signs, but Jesus does not entrust himself to them.",
   "whyItMatters": "John's first sign and temple action teach readers how to read the whole Gospel: concrete acts signify more than characters initially see, an announced ‘hour’ governs Jesus's path, Scripture is remembered after resurrection, and belief based on spectacle can remain incomplete. Water, wine, temple, body, glory, and trust are connected without becoming interchangeable symbols.",
   "context": {
-    "author": "The anonymous Fourth Gospel narrator arranging signs, festival, misunderstanding, and later remembrance",
+    "author": "The Fourth Gospel's unnamed narrator (early church tradition names John son of Zebedee; authorship is debated) arranging signs, festival, misunderstanding, and later remembrance",
     "audience": "Greek readers learning to read Jewish purification, Passover, temple practice, and Scripture through the narrated signs",
-    "date": "The scenes occur at the opening of Jesus's ministry; their final literary arrangement is commonly dated late in the first century",
+    "date": "The scenes occur at the opening of Jesus's ministry; the Gospel is commonly dated around AD 90–100, with some proposing earlier stages",
     "setting": "A village wedding in Cana, a brief stay in Capernaum, and the Jerusalem temple at Passover",
     "literaryForm": "Sign narrative, prophetic temple action, misunderstanding dialogue, and narrator explanation"
   },
   "outline": [
     {
       "heading": "Cana's need becomes the first sign of glory",
-      "verses": "1-11"
+      "verses": "1-11",
+      "note": "Jesus's mother says they have no wine; servants fill six stone water pots, and the ruler of the feast tastes water now become wine"
     },
     {
       "heading": "Jesus goes to Jerusalem and clears the temple courts",
-      "verses": "12-17"
+      "verses": "12-17",
+      "note": "Jesus stays in Capernaum, then goes up to Jerusalem, drives out sheep and oxen with a whip of cords, and overthrows tables"
     },
     {
       "heading": "The temple riddle and fragile sign-based belief",
-      "verses": "18-25"
+      "verses": "18-25",
+      "note": "Asked for a sign, Jesus says 'I will raise it up' in three days; many believe, but he does not entrust himself to them"
     }
   ],
   "keyVerses": [
@@ -43,13 +46,11 @@
     }
   ],
   "themes": [
-    "Cana",
     "sign and glory",
     "Jesus's hour",
     "purification",
     "Passover",
     "temple and body",
-    "resurrection remembrance",
     "tested belief"
   ],
   "questions": [
@@ -86,7 +87,7 @@
     {
       "id": "q3",
       "question": "Why use Jewish purification jars, and how much wine is this?",
-      "answer": "The six stone jars belong to purification practice and each holds two or three metretes apiece — roughly twenty to thirty gallons each. Their scale emphasizes abundance. John says Jesus transforms the water, not that Jewish purification was worthless or that Judaism is discarded. The sign supplies wedding joy while inviting readers to see promised abundance arriving through Jesus.",
+      "answer": "The six stone jars belong to purification practice and each holds two or three metretes apiece — roughly eighteen to twenty-seven gallons each. Their scale emphasizes abundance. John says Jesus transforms the water, not that Jewish purification was worthless or that Judaism is discarded. The sign supplies wedding joy while inviting readers to see promised abundance arriving through Jesus.",
       "verseRefs": [
         "2:6",
         "2:7",
@@ -195,21 +196,39 @@
   "glossary": [
     {
       "term": "Sēmeion",
-      "def": "A sign: an act whose meaning points beyond the event itself."
+      "def": "A sign: an act whose meaning points beyond the event itself.",
+      "verses": [
+        "2:11",
+        "2:18",
+        "2:23"
+      ]
     },
     {
       "term": "Hōra",
-      "def": "Hour or appointed time; in John, especially Jesus's death, glory, and return."
+      "def": "Hour or appointed time; in John, especially Jesus's death, glory, and return.",
+      "verses": [
+        "2:4"
+      ]
     },
     {
       "term": "Naos",
-      "def": "The temple sanctuary; John applies it to Jesus's body in 2:21."
+      "def": "The temple sanctuary; John applies it to Jesus's body in 2:21.",
+      "verses": [
+        "2:19-21"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "de231c6428de98e3ae9c19780c4345f773fb44f9a3ec1882035e368e4dab221e",
+    "generatedAt": "2026-08-04T23:02:42.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

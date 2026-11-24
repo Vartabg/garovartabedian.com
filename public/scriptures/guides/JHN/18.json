@@ -2,31 +2,35 @@
   "book": "JHN",
   "chapter": 18,
   "bookName": "John",
-  "summary": "Jesus crosses the Kidron to a familiar garden, where Judas arrives with soldiers and officers. Jesus identifies himself, protects the disciples, rejects Peter's sword, and accepts the Father's cup. Interrogated by Annas and transferred to Caiaphas, he is denied three times by Peter beside a charcoal fire. Before Pilate, Jesus describes a kingdom not sourced from this world and a vocation to testify to truth; Pilate answers with a question and releases Barabbas instead.",
+  "summary": "Jesus crosses the Kidron to a familiar garden, where Judas arrives with soldiers and officers. Jesus identifies himself, protects the disciples, rejects Peter's sword, and accepts the Father's cup. Interrogated by Annas and transferred to Caiaphas, he is denied three times by Peter beside a charcoal fire. Before Pilate, Jesus describes a kingdom not sourced from this world and a vocation to testify to truth; Pilate answers with a question, and the crowd demands Barabbas instead.",
   "whyItMatters": "John's passion begins with Jesus neither surprised nor powerless. His self-giving protects others and rejects violent defense, while Peter's courage collapses beside an ordinary fire. Before empire, Jesus's kingdom is not sustained by the world's mechanisms, yet it publicly challenges false judgment through truth.",
   "context": {
-    "author": "The anonymous Fourth Gospel narrator, presenting arrest and trials through sovereignty, testimony, irony, and interwoven scenes",
+    "author": "The anonymous Fourth Gospel narrator, traditionally identified with John son of Zebedee (authorship is debated), presenting arrest and trials through sovereignty, testimony, irony, and interwoven scenes",
     "audience": "Readers needing Roman and high-priestly procedure, Passover purity, and John's context-sensitive group labels",
-    "date": "The night and morning before crucifixion during Passover preparations",
+    "date": "The night and morning before crucifixion during Passover preparations; the Gospel is commonly dated around AD 90–100, with earlier stages also proposed",
     "setting": "A garden across the Kidron, high-priestly courtyards, and Pilate's Jerusalem headquarters",
     "literaryForm": "Passion narrative alternating Jesus's faithful testimony with Peter's denial, then a dramatic royal trial"
   },
   "outline": [
     {
       "heading": "Jesus is arrested in the garden and protects his disciples",
-      "verses": "1-11"
+      "verses": "1-11",
+      "note": "Judas brings soldiers with torches and weapons; Jesus says 'I am he' and they fall to the ground; Peter cuts off a servant's ear"
     },
     {
       "heading": "Annas questions Jesus while Peter denies him",
-      "verses": "12-27"
+      "verses": "12-27",
+      "note": "Jesus is led bound to Annas; the high priest asks about his teaching, an officer slaps him, and Peter denies being a disciple"
     },
     {
       "heading": "Pilate questions Jesus about kingship and truth",
-      "verses": "28-38"
+      "verses": "28-38",
+      "note": "At the Praetorium, Pilate asks Jesus if he is the King of the Jews; Jesus answers 'My Kingdom is not of this world'"
     },
     {
       "heading": "The crowd chooses Barabbas",
-      "verses": "39-40"
+      "verses": "39-40",
+      "note": "Pilate offers to release the King of the Jews at Passover; they all shout 'Not this man, but Barabbas', a robber"
     }
   ],
   "keyVerses": [
@@ -48,13 +52,11 @@
   ],
   "themes": [
     "self-giving sovereignty",
-    "I AM",
     "nonviolence",
     "cup",
     "testimony",
     "denial",
-    "kingdom and truth",
-    "political irony"
+    "kingdom and truth"
   ],
   "questions": [
     {
@@ -92,7 +94,7 @@
     {
       "id": "q3",
       "question": "Why do they draw back when Jesus says ‘I am he’?",
-      "answer": "Egō eimi answers their search for Jesus of Nazareth and naturally means ‘I am he.’ Yet the repeated formula, Jesus's initiative, and the armed group's falling backward give the identification theophanic resonance. John presents arrest as occurring only after Jesus openly gives himself and secures his disciples' release.",
+      "answer": "Egō eimi answers their search for Jesus of Nazareth and naturally means ‘I am he.’ Yet the repeated formula, Jesus's initiative, and the armed group's falling backward lead many readers to hear theophanic resonance in the identification. John presents arrest as occurring only after Jesus openly gives himself and secures his disciples' release.",
       "verseRefs": [
         "18:4",
         "18:5",
@@ -130,7 +132,7 @@
     {
       "id": "q5",
       "question": "Why is Jesus questioned by Annas if Caiaphas is high priest?",
-      "answer": "Annas had been high priest and remained the powerful patriarch of the high-priestly family; his son-in-law Caiaphas held the office that year. John narrates an informal interrogation before Annas and then transfer to Caiaphas. The scene's procedural irregularity sharpens Jesus's appeal to public teaching and lawful witnesses.",
+      "answer": "Annas had been high priest and remained the patriarch of a high-priestly family, his five sons all later holding the office (Josephus, Antiquities 20.9.1); his son-in-law Caiaphas held the office that year. John narrates an interrogation before Annas and then transfer to Caiaphas. The scene sharpens Jesus's appeal to public teaching and lawful witnesses.",
       "verseRefs": [
         "18:13",
         "18:14",
@@ -156,7 +158,7 @@
     {
       "id": "q6",
       "question": "What does the charcoal fire contribute to Peter's denial?",
-      "answer": "Anthrakia is a charcoal fire, a rare word that appears again at Peter's restoration in chapter 21. Here it supplies warmth, light, smell, and a circle of witnesses while Peter repeatedly denies belonging to Jesus. The later breakfast scene does not erase this failure; it deliberately returns Peter to a sensory setting where love and vocation can be addressed.",
+      "answer": "Anthrakia is a charcoal fire, a rare word that appears again at Peter's restoration in chapter 21. Here it supplies warmth, light, smell, and a circle of witnesses while Peter repeatedly denies belonging to Jesus. The later breakfast scene does not erase this failure; on one common reading it deliberately returns Peter to a sensory setting where love and vocation can be addressed.",
       "verseRefs": [
         "18:15",
         "18:17",
@@ -216,7 +218,7 @@
     {
       "id": "q9",
       "question": "What is the irony of Barabbas?",
-      "answer": "Pilate offers a Passover release while publicly declaring he finds no case against Jesus. The crowd chooses Barabbas, described as a lēstēs—a bandit or insurrectionist, not merely a petty thief. The nonviolent king is exchanged for a figure associated with violent resistance, exposing the political alternatives surrounding the cross.",
+      "answer": "Pilate offers a Passover release while publicly declaring he finds no case against Jesus. The crowd chooses Barabbas, described as a lēstēs—a robber or brigand, whom Mark 15:7 places among insurgents. The nonviolent king is exchanged for a figure associated with violent resistance, exposing the political alternatives surrounding the cross.",
       "verseRefs": [
         "18:38",
         "18:39",
@@ -233,11 +235,18 @@
   "glossary": [
     {
       "term": "Speira",
-      "def": "A Roman military cohort or a detachment associated with one; the exact arrest-party size is uncertain."
+      "def": "A Roman military cohort or a detachment associated with one; the exact arrest-party size is uncertain.",
+      "verses": [
+        "18:3",
+        "18:12"
+      ]
     },
     {
       "term": "Anthrakia",
-      "def": "A charcoal fire, linking Peter's denial in chapter 18 with restoration in chapter 21."
+      "def": "A charcoal fire, linking Peter's denial in chapter 18 with restoration in chapter 21.",
+      "verses": [
+        "18:18"
+      ]
     },
     {
       "term": "Ek",
@@ -245,9 +254,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "a611d8e3572a04a75db35a472f86b6fe0f6a327e526d4e05000010d05b1f45a1",
+    "generatedAt": "2026-08-04T23:02:42.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

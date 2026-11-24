@@ -5,24 +5,27 @@
   "summary": "Peter and John go to the temple for afternoon prayer and meet a man unable to walk from birth. Peter has no money but commands him to walk in Jesus the Nazarene's name; the healed man enters the temple walking, leaping, and praising God. When a crowd gathers at Solomon's porch, Peter refuses credit, identifies Israel's God as the one who glorified Jesus, calls Jesus the Author of life, and summons his fellow Israelites to turn so that sins may be erased and promised restoration may come.",
   "whyItMatters": "The first narrated healing after Pentecost is both compassionate restoration and public sign. It brings a previously dependent man into temple praise and creates an occasion for witness, yet the apostles explicitly reject celebrity power. Peter's difficult accusation belongs to a familial appeal—‘brothers’ and ‘children of the prophets’—and ends not in ethnic rejection but an offer of blessing and turning.",
   "context": {
-    "author": "The Luke–Acts narrator tracing witness in Jerusalem",
-    "audience": "Readers learning how Jesus's name, Israel's Scriptures, healing, and repentance fit together",
-    "date": "The narrated events belong to the earliest Jerusalem community",
+    "author": "The anonymous narrator of Luke–Acts, traditionally identified as Luke, tracing witness in Jerusalem",
+    "audience": "Theophilus and readers who know Israel's Greek Scriptures, learning how Jesus's name, Israel's Scriptures, healing, and repentance fit together",
+    "date": "Commonly dated with or shortly after Luke, often around AD 80–90 (dates in the 60s and later are also argued); the narrated events belong to the earliest Jerusalem community",
     "setting": "The Beautiful Gate and Solomon's porch in the Jerusalem temple complex at the ninth-hour prayer time",
     "literaryForm": "Healing sign followed by an interpretive temple speech"
   },
   "outline": [
     {
       "heading": "A man unable to walk is healed in Jesus's name",
-      "verses": "1-10"
+      "verses": "1-10",
+      "note": "At the Beautiful gate Peter says 'I have no silver or gold'; the lame beggar walks and leaps into the temple praising God"
     },
     {
       "heading": "Peter redirects the astonished crowd from the apostles to Israel's God",
-      "verses": "11-16"
+      "verses": "11-16",
+      "note": "The healed man clings to Peter and John in Solomon's porch; Peter says it was not their power, and names Jesus, whom they denied"
     },
     {
       "heading": "Peter calls Israel to turn within the prophets' promise",
-      "verses": "17-26"
+      "verses": "17-26",
+      "note": "Peter says they acted in ignorance; he cites Moses and Abraham's offspring, and says God sent his servant to them first"
     }
   ],
   "keyVerses": [
@@ -45,18 +48,16 @@
   "themes": [
     "healing",
     "Jesus's name",
-    "temple prayer",
     "apostolic humility",
     "resurrection witness",
     "repentance",
-    "restoration",
     "prophetic continuity"
   ],
   "questions": [
     {
       "id": "q1",
       "question": "What does healing ‘in the name’ of Jesus mean?",
-      "answer": "In biblical usage a name can represent a person's authority and identity. Peter does not utter a magical password; he commands as Jesus's commissioned witness and immediately denies that personal power or piety caused the healing. The chapter attributes the restoration to Jesus's name and the faith associated with it.",
+      "answer": "The council will ask, ‘By what power, or in what name, have you done this?’ (4:7), pairing name with power. Peter does not utter a magical password; he commands as Jesus's commissioned witness and immediately denies that personal power or piety caused the healing. The chapter attributes the restoration to Jesus's name and the faith associated with it.",
       "verseRefs": [
         "3:6",
         "3:12",
@@ -110,7 +111,7 @@
     {
       "id": "q4",
       "question": "Why does Peter call Jesus the ‘Prince’ or ‘Author’ of life?",
-      "answer": "The Greek archēgos can mean originator, leader, pioneer, or founder. The WEB's ‘Prince’ captures leadership, while ‘Author’ or ‘pioneer’ highlights Jesus as the one who opens life's path. The irony is deliberate: humans kill life's leader, but God raises him, overturning their verdict.",
+      "answer": "The Greek archēgos can mean chief leader or prince, one who takes the lead, or author. The WEB's ‘Prince’ captures leadership, while ‘Author’ or ‘pioneer’ highlights Jesus as the one who opens life's path. The irony is deliberate: humans kill life's leader, but God raises him, overturning their verdict.",
       "verseRefs": [
         "3:15"
       ],
@@ -162,7 +163,7 @@
     {
       "id": "q7",
       "question": "How does Peter use Moses's promised prophet?",
-      "answer": "He cites the Deuteronomic promise that God will raise a prophet like Moses and warns hearers to listen. Acts presents Jesus as the climactic prophet and servant within Israel's story. ‘Cut off’ is covenant warning, but Peter immediately identifies his hearers as heirs of the prophets and covenant rather than declaring them already abandoned.",
+      "answer": "He cites the Deuteronomic promise that God will raise a prophet like Moses and warns hearers to listen. Acts presents Jesus as the climactic prophet and servant within Israel's story. ‘Utterly destroyed from among the people’ is covenant warning, but Peter immediately identifies his hearers as heirs of the prophets and covenant rather than declaring them already abandoned.",
       "verseRefs": [
         "3:22",
         "3:23",
@@ -199,17 +200,27 @@
     },
     {
       "term": "Archēgos",
-      "def": "Leader, originator, founder, or pioneer; applied here to Jesus in relation to life."
+      "def": "Chief leader, one who takes the lead, or author; applied here to Jesus in relation to life.",
+      "verses": [
+        "3:15"
+      ]
     },
     {
       "term": "Repent",
-      "def": "To change mind and direction, expressed here as turning back toward God."
+      "def": "To change one's mind, expressed here as turning back toward God."
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "e53c3a66960251ba2c73174f51d725b4ec8896700e95f2fe45ea44dd5f97c66f",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

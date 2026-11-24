@@ -7,22 +7,25 @@
   "context": {
     "author": "The anonymous author of Luke's Gospel, traditionally identified as Luke, addressing Theophilus in a second volume",
     "audience": "Theophilus and later readers learning how the Jesus movement traveled from Jerusalem toward Rome",
-    "date": "Debated; commonly placed in the late first century",
+    "date": "Commonly dated with or shortly after Luke, often around AD 80–90 (dates in the 60s and later are also argued)",
     "setting": "Jerusalem and the Mount of Olives between resurrection and Pentecost",
     "literaryForm": "Secondary preface, commission scene, ascension narrative, community summary, and leadership-restoration account"
   },
   "outline": [
     {
       "heading": "The risen Jesus promises the Spirit and commissions witnesses",
-      "verses": "1-8"
+      "verses": "1-8",
+      "note": "Over forty days he speaks about God's Kingdom; told to wait in Jerusalem, they ask about the kingdom, and he says they will be his witnesses"
     },
     {
       "heading": "Jesus departs and the apostles return to Jerusalem",
-      "verses": "9-14"
+      "verses": "9-14",
+      "note": "He is taken up as they watch; two men in white speak, and the apostles pray in the upper room"
     },
     {
       "heading": "Peter interprets Judas's vacancy and Matthias is chosen",
-      "verses": "15-26"
+      "verses": "15-26",
+      "note": "Peter speaks to about one hundred twenty; two men are put forward, they pray, and the lot falls on Matthias"
     }
   ],
   "keyVerses": [
@@ -44,13 +47,11 @@
   ],
   "themes": [
     "continuity with Luke",
-    "kingdom of God",
     "Holy Spirit",
     "witness",
     "Israel and the nations",
     "ascension",
-    "prayerful waiting",
-    "the Twelve"
+    "prayerful waiting"
   ],
   "questions": [
     {
@@ -70,7 +71,7 @@
     {
       "id": "q2",
       "question": "Does Jesus reject Israel's restoration in verse 7?",
-      "answer": "No. The apostles ask ‘at this time,’ and Jesus says that the times belong to the Father's authority; he redirects them to their task rather than declaring Israel irrelevant. The route begins in Jerusalem, includes Judea and Samaria, and moves to the nations. Acts continues to speak of Israel's hope, so Gentile mission should not be read as God's contempt for Jewish people.",
+      "answer": "No. The apostles ask, ‘are you now restoring the kingdom to Israel?’ and Jesus says that the times belong to the Father's authority; he redirects them to their task rather than declaring Israel irrelevant. The route begins in Jerusalem, includes Judea and Samaria, and moves to the nations. Acts continues to speak of Israel's hope, so Gentile mission should not be read as God's contempt for Jewish people.",
       "verseRefs": [
         "1:6",
         "1:7",
@@ -114,7 +115,7 @@
     {
       "id": "q5",
       "question": "Who belongs to the waiting community?",
-      "answer": "Luke names the eleven, women who had followed Jesus, Mary his mother, and his brothers. The plural ‘women’ matters: the community is broader than the apostolic list, and women have already been resurrection witnesses in Luke. Their repeated action is homothymadon—being together with one purpose—in persistent prayer, not leaderless inactivity.",
+      "answer": "Luke names the eleven, women who had followed Jesus, Mary his mother, and his brothers. The plural ‘women’ matters: the community is broader than the apostolic list, and women have already been resurrection witnesses in Luke. Their repeated action is homothymadon—with one mind, of one accord—in persistent prayer, not leaderless inactivity.",
       "verseRefs": [
         "1:13",
         "1:14",
@@ -148,7 +149,7 @@
     {
       "id": "q7",
       "question": "What is Akeldama, and why does Luke translate it?",
-      "answer": "Akeldama is an Aramaic place-name meaning ‘Field of Blood.’ Luke supplies its meaning for Greek readers who may not know Jerusalem's Semitic speech. The gloss is a small reminder that Acts is written in Greek while its opening world is multilingual and deeply Jewish.",
+      "answer": "Akeldama is an Aramaic place-name meaning ‘The field of blood’ (1:19). Luke supplies its meaning for Greek readers who may not know Jerusalem's Semitic speech. The gloss is a small reminder that Acts is written in Greek while its opening world is multilingual and deeply Jewish.",
       "verseRefs": [
         "1:19"
       ],
@@ -160,7 +161,7 @@
     {
       "id": "q8",
       "question": "Was casting lots a careless substitute for discernment?",
-      "answer": "The group first identifies an apostolic qualification—continuous presence from John's baptism through the ascension—then presents two eligible men and prays to the heart-knowing Lord. Casting lots has biblical precedent for receiving a decision believed to be God's. Acts does not prescribe it as the normal later method; after the Spirit comes, leadership discernment takes several forms.",
+      "answer": "The group first identifies an apostolic qualification—continuous presence from John's baptism through the ascension—then presents two eligible men and prays to the heart-knowing Lord. Casting lots has biblical precedent (Leviticus 16:8; Proverbs 16:33) for receiving a decision believed to be God's. Acts does not prescribe it as the normal later method; after the Spirit comes, leadership discernment takes several forms.",
       "verseRefs": [
         "1:21",
         "1:22",
@@ -181,7 +182,7 @@
   "glossary": [
     {
       "term": "Theophilus",
-      "def": "The named recipient of Luke and Acts; the Greek name means ‘friend of God’ or ‘loved by God,’ but it can be an ordinary personal name."
+      "def": "The named recipient of Luke and Acts; the Greek name means ‘friend of God.’"
     },
     {
       "term": "Sabbath day's journey",
@@ -193,9 +194,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "c0340b70c829b6f6d93c7db972754506232e6be4fd423d78d9a8cb3e3963658a",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

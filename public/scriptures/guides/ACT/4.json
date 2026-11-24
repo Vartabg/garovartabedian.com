@@ -2,27 +2,30 @@
   "book": "ACT",
   "chapter": 4,
   "bookName": "Acts",
-  "summary": "Temple authorities arrest Peter and John because they teach resurrection in Jesus, while the believing community grows to about five thousand men. Before rulers, elders, and chief priests, Spirit-filled Peter says the healed man stands through the name of the crucified and risen Jesus and declares salvation in no other name. The council is struck by the apostles' boldness, cannot deny the public sign, and threatens them. Released, the community prays Psalm 2 not for escape but for bold speech; the place shakes, the Spirit fills them, and generous unity culminates in the introduction of Barnabas.",
+  "summary": "Temple authorities arrest Peter and John because they teach resurrection in Jesus, while the believing community grows to about five thousand men. Before rulers, elders, scribes, and the high priest's family, Spirit-filled Peter says the healed man stands through the name of the crucified and risen Jesus and declares salvation in no other name. The council is struck by the apostles' boldness, cannot deny the public sign, and threatens them. Released, the community prays Psalm 2 not for escape but for bold speech; the place shakes, the Spirit fills them, and generous unity culminates in the introduction of Barnabas.",
   "whyItMatters": "Acts' first arrest clarifies the kind of power the Spirit gives: truthful public testimony under pressure, not violent dominance. The authorities possess institutional learning while the witnesses possess experienced knowledge of Jesus, but the story does not glorify ignorance. Prayer interprets opposition through Scripture and turns fear into generous, embodied solidarity.",
   "context": {
-    "author": "The Luke–Acts narrator continuing the temple healing's consequences",
-    "audience": "Readers learning how witness responds to political and religious pressure",
-    "date": "The earliest Jerusalem phase before the mission expands beyond the city",
+    "author": "The anonymous narrator of Luke–Acts, traditionally identified as Luke, continuing the temple healing's consequences",
+    "audience": "Theophilus and readers who know Israel's Greek Scriptures, learning how witness responds to political and religious pressure",
+    "date": "Commonly dated with or shortly after Luke, often around AD 80–90 (dates in the 60s and later are also argued); the story is in the earliest Jerusalem phase before the mission expands beyond the city",
     "setting": "Temple precincts, an elite council hearing, and the gathered Jerusalem community",
     "literaryForm": "Arrest-and-defense scene framed by growth and community summaries"
   },
   "outline": [
     {
       "heading": "The authorities arrest the witnesses and the community grows",
-      "verses": "1-4"
+      "verses": "1-4",
+      "note": "Priests, the temple captain and Sadducees, upset at the teaching about resurrection, hold them overnight; about five thousand men believe"
     },
     {
       "heading": "Peter testifies before the council and the witnesses refuse silence",
-      "verses": "5-22"
+      "verses": "5-22",
+      "note": "Rulers ask by what name; Peter, filled with the Holy Spirit, names Jesus and the rejected stone, and the rulers threaten them"
     },
     {
       "heading": "The released community prays, receives boldness, and shares possessions",
-      "verses": "23-37"
+      "verses": "23-37",
+      "note": "They pray about the rage against God's servant Jesus, the place shakes, and all speak boldly; owners lay land proceeds at the apostles' feet"
     }
   ],
   "keyVerses": [
@@ -45,18 +48,16 @@
   "themes": [
     "resurrection",
     "Jesus's name",
-    "salvation",
     "bold witness",
     "civil disobedience",
     "Scripture and prayer",
-    "Spirit filling",
     "shared possessions"
   ],
   "questions": [
     {
       "id": "q1",
       "question": "Why are the Sadducees especially disturbed by the preaching?",
-      "answer": "The priestly leadership and Sadducees reject the resurrection claim and are responsible for temple order. Peter and John announce in Jesus the resurrection of the dead on the authorities' own ground, after a visible healing has gathered a crowd. The conflict is theological, institutional, and public rather than a vague clash between Christianity and all Judaism.",
+      "answer": "The Sadducees say there is no resurrection (23:8); the high priest's party belongs to their sect (5:17), and the captain of the temple comes with them (4:1). Peter and John announce in Jesus the resurrection of the dead on the authorities' own ground, after a visible healing has gathered a crowd. The conflict is theological, institutional, and public rather than a vague clash between Christianity and all Judaism.",
       "verseRefs": [
         "4:1",
         "4:2",
@@ -90,7 +91,7 @@
     {
       "id": "q3",
       "question": "Were Peter and John illiterate and proudly uneducated?",
-      "answer": "The leaders call them agrammatoi kai idiōtai. The phrase can mean unschooled in elite scribal training and ordinary laymen, not necessarily unable to read or contemptuous of learning. Their recognizable association with Jesus and their coherent Scripture-shaped defense explain the council's astonishment. Acts contrasts credentials with empowered witness, not knowledge with ignorance.",
+      "answer": "The leaders call them agrammatoi kai idiōtai. The first word is used of men unversed in the learning of the Jewish schools (compare John 7:15), and the second properly means a private person rather than an official. Their recognizable association with Jesus and their coherent Scripture-shaped defense explain the council's astonishment. Acts contrasts credentials with empowered witness, not knowledge with ignorance.",
       "verseRefs": [
         "4:8",
         "4:13"
@@ -201,11 +202,16 @@
   "glossary": [
     {
       "term": "Sanhedrin/council",
-      "def": "Jerusalem's high governing and judicial council under Roman rule."
+      "def": "Jerusalem's great council and court, which tried cases under Roman rule."
     },
     {
       "term": "Parrēsia",
-      "def": "Open, frank, courageous public speech."
+      "def": "Open, frank, courageous public speech.",
+      "verses": [
+        "4:13",
+        "4:29",
+        "4:31"
+      ]
     },
     {
       "term": "Barnabas",
@@ -213,9 +219,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "3e79351e3289d626b4b416fbd593e96a7f168e43e596886e02605ce264b476ce",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

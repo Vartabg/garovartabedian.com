@@ -1,4 +1,4 @@
-import { line, oval, polygon, print, stone } from './courtInk';
+import { line, oval, polygon, print, stone } from '../_shared/storyInk';
 
 type Brush = CanvasRenderingContext2D;
 const paving = ['#dfc292', '#e6ca9a', '#e2c596', '#d7b888', '#e8cc9d', '#dbc091'];

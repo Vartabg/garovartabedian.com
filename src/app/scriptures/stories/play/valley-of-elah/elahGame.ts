@@ -46,6 +46,7 @@ export type ElahState = {
   stones: BrookStone[];
   standoff: Point & { id: 'meet'; label: string };
   champion: Point;
+  stonesDoneAt: number | null;
   challengeAt: number | null;
   releasedAt: number | null;
   actionAt: number;
@@ -138,6 +139,7 @@ export function newElah(): ElahState {
     stones: INITIAL_STONES.map(s => ({ ...s, at: null })),
     standoff: { id: 'meet', label: 'Step into the valley', x: 785, y: 312 },
     champion: { x: 1015, y: 308 },
+    stonesDoneAt: null,
     challengeAt: null,
     releasedAt: null,
     actionAt: -10,
@@ -241,6 +243,7 @@ function pickStone(s: ElahState, at: number, st: BrookStone) {
   s.actionAt = at;
   s.actionKind = 'pick';
   const picked = stonesPicked(s);
+  if (picked === 5 && s.stonesDoneAt === null) s.stonesDoneAt = at;
   s.message = picked < 5
     ? `Smooth stone ${picked} of 5 in the shepherd’s pouch.`
     : 'Five smooth stones in his pouch, sling in hand. Step into the valley to meet the Philistine.';

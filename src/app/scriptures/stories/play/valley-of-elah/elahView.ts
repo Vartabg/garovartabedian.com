@@ -9,15 +9,21 @@ import {
   type ElahState,
   type Point,
 } from './elahGame';
-import { polygon } from './elahInk';
+import { drawEdgeArrow, drawGuideMarker, fitVerticalCamera } from '../_shared/storyInk';
 import { drawDavid, drawGoliath, drawRidgeSoldier, drawSaul, drawShieldBearer } from './elahPeople';
 import {
   drawArmyDust,
+  drawBrookFlow,
   drawBrookFootRipple,
   drawBrookStone,
+  drawCampBanner,
   drawDroppedArmor,
+  drawDroppedShield,
+  drawFootDust,
   drawSlingFlightAndImpact,
+  drawSlingSightArc,
   drawStandoffMark,
+  drawValleySunlight,
 } from './elahProps';
 import { drawValleyBackdrop } from './elahScenery';
 
@@ -51,19 +57,7 @@ const PHILISTINE_LINE: readonly { x: number; y: number; row: number; v: number }
  * even on a 129 CSS px short Safari landscape canvas.
  */
 export function verticalCameraTop(visibleHeight: number, feetY: number): number {
-  if (visibleHeight >= ELAH_HEIGHT) return (ELAH_HEIGHT - visibleHeight) / 2;
-  const valleyBottom = 436;
-  const roomAboveFeet = Math.min(132, visibleHeight * 0.80);
-  return Math.max(0, Math.min(valleyBottom - visibleHeight, feetY - roomAboveFeet));
-}
-
-function marker(c: CanvasRenderingContext2D, x: number, y: number, time: number, reduced: boolean) {
-  const lift = reduced ? 0 : Math.sin(time * 3.6) * 1.8;
-  c.save();
-  c.translate(x, y + lift);
-  polygon(c, '#4c3628', -7, -9, 7, -9, 0, 1);
-  polygon(c, '#fff0a5', -5, -8, 5, -8, 0, -1);
-  c.restore();
+  return fitVerticalCamera(ELAH_HEIGHT, 436, 132, 0.80, visibleHeight, feetY);
 }
 
 export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
@@ -103,7 +97,6 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
   function hit(s: ElahState, p: Point): string | undefined {
     const phase = elahPhase(s);
     if (phase === 'armor') {
-      // Tapping David (or right beside him) sets aside the next piece of Saul's armor
       if (Math.abs(p.x - s.player.x) < 42 && p.y > s.player.y - 76 && p.y < s.player.y + 18) {
         return 'armor';
       }
@@ -117,15 +110,13 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
       return hitStone?.id;
     }
     if (phase === 'approach') {
-      // Tapping the standoff mark OR Goliath/shield-bearer steps into the valley
       const hitMark = Math.abs(p.x - s.standoff.x) < 46 && Math.abs(p.y - s.standoff.y) < 34;
-      const hitChampion = p.x > 910 && p.x < 1090 && p.y > 195 && p.y < 345;
+      const hitChampion = p.x > 910 && p.x < 1120 && p.y > 195 && p.y < 345;
       if (hitMark || hitChampion) return 'meet';
       return undefined;
     }
     if (phase === 'sling') {
-      // Tapping Goliath or David during untimed sling stance releases the stone
-      const hitChampion = p.x > 910 && p.x < 1090 && p.y > 195 && p.y < 345;
+      const hitChampion = p.x > 910 && p.x < 1100 && p.y > 195 && p.y < 345;
       const hitDavid = Math.abs(p.x - s.player.x) < 46 && p.y > s.player.y - 105 && p.y < s.player.y + 20;
       if (hitChampion || hitDavid) return 'release';
       return undefined;
@@ -137,9 +128,27 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
     const time = s.time;
     const phase = elahPhase(s);
     const impactAt = s.releasedAt === null ? null : s.releasedAt + (reduced ? 0 : SLING_FLIGHT_SECONDS);
-    const impactAge = impactAt === null ? -1 : time - impactAt;
+    const rawImpactAge = impactAt === null ? -1 : time - impactAt;
 
-    // Camera frames David cleanly; during sling standoff gently widens view to show both David & Goliath!
+    // Crisp 42 ms hit-stop freeze right at bronze impact (skipped under reduced motion)
+    const hitStopped = !reduced && rawImpactAge >= 0 && rawImpactAge < 0.042;
+    const renderTime = hitStopped && impactAt !== null ? impactAt + 0.005 : time;
+    const impactAge = impactAt === null ? -1 : renderTime - impactAt;
+
+    // Goliath & shield-bearer advance heavily westward once all 5 stones are gathered (1 Samuel 17:41 & 48)
+    const advanceT = s.challengeAt !== null || reduced
+      ? (s.stonesDoneAt !== null || s.challengeAt !== null ? 1 : 0)
+      : s.stonesDoneAt === null
+        ? 0
+        : clamp((renderTime - s.stonesDoneAt) / 1.65, 0, 1);
+    const advanceEase = advanceT * (2 - advanceT);
+    const goliathX = lerp(1072, s.champion.x, advanceEase);
+    const goliathWalking = !reduced && advanceT > 0.01 && advanceT < 0.99 && impactAge < 0;
+    const goliathStride = goliathWalking ? renderTime * 5.6 : 0;
+
+    const sbHomeX = lerp(1024, 972, advanceEase);
+
+    // Camera frames David cleanly; during sling standoff gently widens view to show both David & Goliath
     const span = width / scale;
     const camTargetX = phase === 'sling'
       ? lerp(s.player.x, (s.player.x + s.champion.x) * 0.5, 0.55)
@@ -150,13 +159,14 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
     left = centered ? left + (to - left) * (1 - Math.exp(-dt * 9.5)) : to;
     centered = true;
 
-    // Subtle damped bronze-fall impulse right at impact (skipped under reduced motion)
+    // Damped bronze-fall ground impulse right after hit-stop (skipped under reduced motion)
     let shakeX = 0;
     let shakeY = 0;
-    if (!reduced && impactAge >= 0 && impactAge < 0.36) {
-      const amp = 2.6 * Math.exp(-impactAge * 10);
-      shakeY = Math.sin(impactAge * 52) * amp;
-      shakeX = Math.cos(impactAge * 38) * amp * 0.35;
+    if (!reduced && rawImpactAge >= 0.03 && rawImpactAge < 0.42) {
+      const a = rawImpactAge - 0.03;
+      const amp = 3.2 * Math.exp(-a * 9.5);
+      shakeY = Math.sin(a * 56) * amp;
+      shakeX = Math.cos(a * 41) * amp * 0.4;
     }
 
     ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
@@ -168,30 +178,45 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
     if (ink) ctx.drawImage(back, 0, 0, ELAH_WIDTH, ELAH_HEIGHT);
     else drawValleyBackdrop(ctx);
 
+    // Live animated flowing brook glints
+    drawBrookFlow(ctx, renderTime, reduced);
+
+    // Warm golden clearing sunlight shafts breaking over the valley after impact
+    if (impactAge >= 0) {
+      const sunStrength = reduced ? 1 : clamp(impactAge / 1.9, 0, 1);
+      drawValleySunlight(ctx, sunStrength);
+    }
+
+    // Rippling camp banners on Saul's pavilion and Philistine standards
+    const philDroop = impactAge < 0 ? 0 : (reduced ? 0.85 : clamp(impactAge / 1.4, 0, 0.85));
+    drawCampBanner(ctx, 175, 117, 1, '#9a4332', '#e4c17a', renderTime, reduced, 0);
+    drawCampBanner(ctx, 1191, 123, -1, '#6a2e28', '#cfa861', renderTime, reduced, philDroop);
+    drawCampBanner(ctx, 1289, 113, -1, '#6a2e28', '#cfa861', renderTime, reduced, philDroop);
+    drawCampBanner(ctx, 1375, 109, -1, '#6a2e28', '#cfa861', renderTime, reduced, philDroop);
+
     // Background watching armies along both ridges — react immediately after impact!
-    const armyMotion = impactAge < 0 ? 0 : (reduced ? 1 : clamp((impactAge - 0.18) / 4.2, 0, 1));
+    const armyMotion = impactAge < 0 ? 0 : (reduced ? 1 : clamp((impactAge - 0.16) / 4.0, 0, 1));
 
     for (const sol of ISRAEL_LINE) {
       const moveT = armyMotion > 0 ? clamp(armyMotion * 1.15 - sol.row * 0.08, 0, 1) : 0;
-      const sx = sol.x + moveT * (310 + (sol.v % 5) * 28);
-      const sy = sol.y + moveT * (28 - sol.row * 8);
-      const stride = !reduced && moveT > 0 && moveT < 0.98 ? time * 11 + sol.v : 0;
-      if (moveT > 0.05 && moveT < 0.9 && !reduced && sol.v % 3 === 0) {
-        drawArmyDust(ctx, sx - 10, sy + 1, (1 - moveT) * 0.28, 9);
+      const sx = sol.x + moveT * (320 + (sol.v % 5) * 30);
+      const sy = sol.y + moveT * (30 - sol.row * 8);
+      const stride = !reduced && moveT > 0 && moveT < 0.98 ? renderTime * 11.5 + sol.v : 0;
+      if (moveT > 0.05 && moveT < 0.92 && !reduced && sol.v % 3 === 0) {
+        drawArmyDust(ctx, sx - 10, sy + 1, (1 - moveT) * 0.30, 9.5);
       }
-      drawRidgeSoldier(ctx, sx, sy, 'israel', 1, stride, impactAge >= 0.1, sol.v);
+      drawRidgeSoldier(ctx, sx, sy, 'israel', 1, stride, impactAge >= 0.08, sol.v);
     }
 
     for (const sol of PHILISTINE_LINE) {
       const fleeT = armyMotion > 0 ? clamp(armyMotion * 1.25 - (1 - sol.row) * 0.05, 0, 1) : 0;
-      const sx = sol.x + fleeT * (430 + (sol.v % 4) * 34);
+      const sx = sol.x + fleeT * (440 + (sol.v % 4) * 34);
       const sy = sol.y - fleeT * 10;
       if (sx > ELAH_WIDTH + 28) continue;
-      const stride = !reduced && fleeT > 0 ? time * 13 + sol.v : 0;
+      const stride = !reduced && fleeT > 0 ? renderTime * 13.5 + sol.v : 0;
       if (fleeT > 0.04 && !reduced && sol.v % 2 === 0) {
-        drawArmyDust(ctx, sx - 12, sy + 1, (1 - fleeT) * 0.34, 10);
+        drawArmyDust(ctx, sx - 12, sy + 1, (1 - fleeT) * 0.36, 10.5);
       }
-      // Standing facing west (-1) before impact, turning and fleeing east (+1) when their champion falls
       drawRidgeSoldier(ctx, sx, sy, 'philistine', fleeT > 0 ? 1 : -1, stride, fleeT > 0, sol.v);
     }
 
@@ -209,43 +234,58 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
 
     // Standoff ground mark in 'approach' phase
     if (phase === 'approach') {
-      drawStandoffMark(ctx, s.standoff.x, s.standoff.y, nearStandoff(s), time, reduced);
+      drawStandoffMark(ctx, s.standoff.x, s.standoff.y, nearStandoff(s), renderTime, reduced);
     }
 
-    // Pass 1: Ground layer — discarded Saul's armor on western slope, brook stones, and David's brook foot ripples
+    // Pass 1: Ground layer — discarded Saul's armor, abandoned Philistine shield, brook stones, foot ripples/dust
     for (const item of s.droppedArmor) {
-      drawDroppedArmor(ctx, item, time, reduced);
+      drawDroppedArmor(ctx, item, renderTime, reduced);
+    }
+    if (impactAge >= 0.08) {
+      drawDroppedShield(ctx, 1066, 332, impactAge, reduced);
     }
     const nearSt = nearbyStone(s);
     const canPick = s.armorLeft.length === 0;
     for (const st of s.stones) {
-      drawBrookStone(ctx, st, time, nearSt?.id === st.id, canPick, reduced);
+      drawBrookStone(ctx, st, renderTime, nearSt?.id === st.id, canPick, reduced);
     }
     if (isInBrook(s.player)) {
-      drawBrookFootRipple(ctx, s.player.x, s.player.y, time, s.walking, reduced);
+      drawBrookFootRipple(ctx, s.player.x, s.player.y, renderTime, s.walking, reduced);
+    } else if (s.walking) {
+      drawFootDust(ctx, s.player.x, s.player.y, s.facing, s.stride, s.armorLeft.length > 0, reduced);
+    }
+    if (goliathWalking) {
+      drawFootDust(ctx, goliathX + 10, s.champion.y + 1, -1, goliathStride, true, reduced);
     }
 
     // Pass 2: Y-sorted actors (King Saul, David, Goliath, Shield-bearer)
     const rows: { y: number; draw: () => void }[] = [];
 
-    // King Saul on western camp slope watching David
     rows.push({
       y: 252,
-      draw: () => drawSaul(ctx, 98, 252, impactAge >= 0.2, time, reduced),
+      draw: () => drawSaul(ctx, 98, 252, impactAge >= 0.18, renderTime, reduced),
     });
 
-    // Goliath on the eastern valley floor
     rows.push({
       y: s.champion.y,
-      draw: () => drawGoliath(ctx, s.champion.x, s.champion.y, phase === 'sling', impactAge, time, reduced),
+      draw: () => drawGoliath(
+        ctx,
+        goliathX,
+        s.champion.y,
+        phase === 'sling',
+        impactAge,
+        renderTime,
+        reduced,
+        goliathStride,
+      ),
     });
 
-    // Shield-bearer standing before Goliath (972, 322), dropping shield and fleeing east after impact
-    const sbFlee = impactAge < 0 ? 0 : (reduced ? 1 : clamp((impactAge - 0.14) / 2.6, 0, 1));
+    const sbFlee = impactAge < 0 ? 0 : (reduced ? 1 : clamp((impactAge - 0.14) / 2.5, 0, 1));
     if (sbFlee < 1) {
-      const sbX = lerp(972, ELAH_WIDTH + 30, sbFlee);
+      const sbX = lerp(sbHomeX, ELAH_WIDTH + 30, sbFlee);
       const sbY = lerp(322, 286, sbFlee);
       const sbAlpha = clamp((1 - sbFlee) / 0.22, 0, 1);
+      const sbStride = sbFlee > 0 ? sbFlee * 32 : (goliathWalking ? renderTime * 6.8 : 0);
       rows.push({
         y: sbY,
         draw: () => drawShieldBearer(
@@ -253,18 +293,17 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
           sbX,
           sbY,
           sbFlee > 0 ? 1 : -1,
-          sbFlee > 0 ? sbFlee * 32 : 0,
-          sbFlee <= 0.01,
+          sbStride,
+          impactAge < 0.08,
           sbAlpha,
         ),
       });
     }
 
-    // David
     rows.push({
       y: s.player.y,
       draw: () => {
-        const age = Math.max(0, time - s.actionAt);
+        const age = Math.max(0, renderTime - s.actionAt);
         let pose: 'idle' | 'drop' | 'pick' | 'sling' | 'release' | 'read' = 'idle';
         let progress = 0;
         if (phase === 'sling') {
@@ -295,7 +334,7 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
           s.armorLeft,
           pose,
           progress,
-          time,
+          renderTime,
           reduced,
         );
       },
@@ -304,9 +343,12 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
     rows.sort((a, b) => a.y - b.y);
     for (const row of rows) row.draw();
 
-    // Pass 3: Sling stone flight arc, impact rays, and sunlit valley dust bloom
+    // Pass 3: Subtle sling sight-arc during untimed stance, then stone flight arc + impact rays + valley dust
+    if (phase === 'sling') {
+      drawSlingSightArc(ctx, s.player, { x: goliathX, y: s.champion.y }, renderTime, reduced);
+    }
     if (s.releasedAt !== null) {
-      drawSlingFlightAndImpact(ctx, s.player, s.champion, s.releasedAt, time, reduced);
+      drawSlingFlightAndImpact(ctx, s.player, { x: goliathX, y: s.champion.y }, s.releasedAt, renderTime, reduced);
     }
 
     // Subtle opening name badge on David before the first action or movement
@@ -325,40 +367,32 @@ export function createElahView(canvas: HTMLCanvasElement, ctx: CanvasRenderingCo
     // In-world guide marker & offscreen edge arrow
     let nextPoint: Point | undefined;
     if (phase === 'armor') {
-      marker(ctx, s.player.x, s.player.y - 72, time, reduced);
+      drawGuideMarker(ctx, s.player.x, s.player.y - 72, renderTime, reduced);
     } else if (phase === 'brook') {
       const selStone = s.stones.find(st => st.id === s.selected && st.at === null);
       const focused = selStone ?? nearSt;
       if (focused) {
-        marker(ctx, focused.x, focused.y - 16, time, reduced);
+        drawGuideMarker(ctx, focused.x, focused.y - 16, renderTime, reduced);
       } else {
         const remaining = s.stones
           .filter(st => st.at === null)
           .sort((a, b) => Math.hypot(a.x - s.player.x, a.y - s.player.y) - Math.hypot(b.x - s.player.x, b.y - s.player.y));
         nextPoint = remaining[0];
         if (nextPoint && nextPoint.x >= left + 20 && nextPoint.x <= left + span - 20) {
-          marker(ctx, nextPoint.x, nextPoint.y - 16, time, reduced);
+          drawGuideMarker(ctx, nextPoint.x, nextPoint.y - 16, renderTime, reduced);
         }
       }
     } else if (phase === 'approach') {
       nextPoint = s.standoff;
       if (s.standoff.x >= left + 20 && s.standoff.x <= left + span - 20) {
-        marker(ctx, s.standoff.x, s.standoff.y - 18, time, reduced);
+        drawGuideMarker(ctx, s.standoff.x, s.standoff.y - 18, renderTime, reduced);
       }
     } else if (phase === 'sling') {
-      marker(ctx, s.champion.x, s.champion.y - 114, time, reduced);
+      drawGuideMarker(ctx, goliathX, s.champion.y - 114, renderTime, reduced);
     }
 
     if (nextPoint && (nextPoint.x > left + span - 20 || nextPoint.x < left + 20)) {
-      const right = nextPoint.x > left + span / 2;
-      const ax = right ? left + span - 21 : left + 21;
-      const ay = top + (height / scale) * 0.59;
-      ctx.save();
-      ctx.translate(ax, ay);
-      ctx.scale(right ? 1 : -1, 1);
-      polygon(ctx, '#514237', -5, -8, 6, 0, -5, 8);
-      polygon(ctx, '#fff1a8', -4, -5, 3, 0, -4, 5);
-      ctx.restore();
+      drawEdgeArrow(ctx, left, top, span, height / scale, nextPoint.x);
     }
   }
 

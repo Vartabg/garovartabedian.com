@@ -5,36 +5,42 @@
   "summary": "Two Sabbath disputes expose competing judgments about hunger, healing, and authority. After spending the night in prayer, Jesus names twelve apostles from a larger disciple group. On a level place he heals a diverse crowd and addresses his disciples: blessings fall on the poor, hungry, weeping, and excluded, while matching woes confront the rich, full, laughing, and praised. Enemy-love imitates God's mercy; generosity interrupts retaliation. Jesus warns against blind judgment, unexamined hypocrisy, fruitless speech, and calling him Lord without doing what he says. Hearing enacted becomes a foundation dug to rock.",
   "whyItMatters": "Luke's discipleship is material and relational. Blessing does not romanticize suffering, and woe is not envy; both announce God's reversal. Enemy-love, mercy, truthful self-examination, generous measure, and practiced teaching identify a community whose confession survives pressure.",
   "context": {
-    "author": "Luke arranging Sabbath scenes, apostolic calling, healing, and a concentrated teaching discourse",
-    "audience": "Disciples and a wider crowd under economic, social, and communal pressure",
-    "date": "Late-first-century Lukan form of sayings shared partly with Matthew",
+    "author": "The anonymous writer, traditionally named Luke, arranging Sabbath scenes, apostolic calling, healing, and a concentrated teaching discourse",
+    "audience": "Theophilus and a wider Greek-reading audience; in the scene, disciples and a wider crowd under economic, social, and communal pressure",
+    "date": "Commonly dated around AD 80–90, with earlier and later dates defended; a Lukan form of sayings shared partly with Matthew",
     "setting": "Grainfields, synagogue, mountain prayer, and a level place before a multinational crowd",
     "literaryForm": "Controversy stories, call list, blessings and woes, wisdom imperatives, and foundation parable"
   },
   "outline": [
     {
       "heading": "Grain, David, and Lord of the Sabbath",
-      "verses": "1-5"
+      "verses": "1-5",
+      "note": "Pharisees object to disciples eating grain; Jesus recalls David eating the show bread and calls the Son of Man lord of the Sabbath"
     },
     {
       "heading": "A hand restored on the Sabbath",
-      "verses": "6-11"
+      "verses": "6-11",
+      "note": "Watched by the scribes and Pharisees, Jesus has a man stretch out his withered hand, and it is restored; they are filled with rage"
     },
     {
       "heading": "Night prayer and the Twelve named apostles",
-      "verses": "12-16"
+      "verses": "12-16",
+      "note": "After praying all night on the mountain, he chooses twelve disciples and names them apostles, including Judas Iscariot, who became a traitor"
     },
     {
       "heading": "Level place, healing, blessings, and woes",
-      "verses": "17-26"
+      "verses": "17-26",
+      "note": "On a level place, crowds are healed; he blesses the poor, hungry, weeping and hated, then pronounces woes on the rich, full and laughing"
     },
     {
       "heading": "Enemy-love, mercy, generosity, and judgment",
-      "verses": "27-42"
+      "verses": "27-42",
+      "note": "He says to love enemies, give to all who ask, be merciful, not judge, and remove the beam from one's own eye"
     },
     {
       "heading": "Trees, heart-speech, Lordship, and two foundations",
-      "verses": "43-49"
+      "verses": "43-49",
+      "note": "A tree is known by its fruit; the mouth speaks from the heart; the one who hears and does builds on rock"
     }
   ],
   "keyVerses": [
@@ -66,7 +72,7 @@
     {
       "id": "q1",
       "question": "Were Jesus's disciples stealing grain on the Sabbath?",
-      "answer": "Torah permitted travelers to pluck a neighbor's grain by hand; the dispute is about work on Sabbath, not theft. Jesus invokes David's emergency use of sacred bread and claims authority over Sabbath. The argument occurs within Jewish interpretation, not between a lawless Jesus and a uniformly legalistic Judaism.",
+      "answer": "Torah permitted plucking a neighbor's grain by hand; the dispute is about work on Sabbath, not theft. Jesus invokes David's emergency use of sacred bread and claims authority over Sabbath. The argument occurs within Jewish interpretation, not between a lawless Jesus and a uniformly legalistic Judaism.",
       "verseRefs": [
         "6:1",
         "6:3",
@@ -102,7 +108,7 @@
     {
       "id": "q3",
       "question": "What is an apostle?",
-      "answer": "Apostolos means one sent as an authorized representative. Luke says Jesus called disciples and selected twelve whom he also named apostles, so ‘disciple’ is the larger category. The number twelve symbolically recalls restored Israel; it is not a claim that only twelve people followed him.",
+      "answer": "Apostolos means one sent as an authorized representative. Luke says Jesus called disciples and selected twelve whom he also named apostles, so ‘disciple’ is the larger category. Many readers take the number twelve as recalling restored Israel; it is not a claim that only twelve people followed him.",
       "verseRefs": [
         "6:13",
         "6:14"
@@ -209,7 +215,7 @@
     },
     {
       "term": "Blessed",
-      "def": "Makarios: favored or flourishing under God's coming rule, even when present conditions look contrary."
+      "def": "Makarios: blessed or fortunate under God's coming rule, even when present conditions look contrary."
     },
     {
       "term": "Woe",
@@ -221,9 +227,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "87e2301b9e14b34c44ddcb51748e369bbf995ab6e15526d650075f82dd8da569",
+    "generatedAt": "2026-08-04T20:49:38.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }
