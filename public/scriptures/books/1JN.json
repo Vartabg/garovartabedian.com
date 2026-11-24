@@ -1,0 +1,587 @@
+{
+  "book": "1JN",
+  "bookName": "1 John",
+  "oneLine": "An unsigned letter-sermon that gives troubled believers tests for knowing God: right belief about Jesus, keeping his commands, and love for one another.",
+  "orient": "1 John opens without a greeting or a sender's name. A group speaking as \"we\" claims to have heard, seen and touched the Word of life. Some people have left the community, and the writer answers with repeated tests: what a person confesses about Jesus, whether they keep his commands, and whether they love their brothers and sisters. The letter states its aim near the end: that believers may know that they have eternal life (5:13).",
+  "whereYouAre": "No story is set up. The readers already believe and have heard a message \"from the beginning\" (2:7, 2:24). Some have left: \"They went out from us\" (2:19), and the writer calls their teaching a lie about Jesus. The Gospel of John shares much of the letter's vocabulary (the Word, life, light, truth, a commandment both old and new), but the letter never names or quotes the Gospel, and it does not say whether its readers had it in writing.",
+  "facts": {
+    "writtenBy": "The letter names no writer; it speaks as \"we\" who saw and heard (1:1–3) and as \"I\" who writes (2:1). Second-century readers attributed it to John: Irenaeus calls its writer John, the disciple of the Lord. A survey reports that most modern scholars hold that one writer produced all three letters of John, but they differ on whether he also wrote the Gospel and whether he was the apostle.",
+    "writtenWhen": "No date is given. A survey article places the letter between about 95 and 110 CE; R. E. Brown, quoted on Early Christian Writings, places it in the decade after about 90. Polycarp's letter to the Philippians, dated on this site c. 110–140, already uses wording close to 4:2–3. No year is secure.",
+    "writtenFor": "Believers the writer calls little children and beloved, who believe in the name of the Son of God (5:13) and are being pressed by those who left (2:19, 2:26). No congregation, city or person is named.",
+    "place": "The letter does not say. Tradition associates it with Ephesus, and a common modern view agrees; the text itself names no place.",
+    "covers": "The opening witness and walking in the light; knowing God by keeping his commands; those who went out; children of God and love in deed; testing the spirits; God is love; faith, testimony, prayer, and a closing warning against idols.",
+    "size": "Five chapters, 105 verses, and 2,453 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "irenaeus-3-16",
+      "eusebius-3",
+      "wiki-1jn"
+    ],
+    "writtenWhen": [
+      "wiki-1jn",
+      "polycarp"
+    ],
+    "writtenFor": [
+      "hosted-web"
+    ],
+    "place": [
+      "wiki-1jn",
+      "hosted-web"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "Plain Greek with a small vocabulary: 2,137 words in the SBL text, drawn from 233 dictionary forms. Short clauses often stand side by side without connecting words, and paired opposites carry the argument: light and darkness, truth and lie, love and hate, God and the world. One survey describes the thought as moving in circles, returning to a theme and adding to it.",
+    "spokenWorld": "The letter describes no setting and quotes no speech except the claims it tests (\"If we say\", 1:6–10; \"I know him\", 2:4; \"I love God\", 4:20). Its Greek belongs to the letter as written; nothing in it shows what everyday language its readers spoke.",
+    "readerSignal": "Watch the small formulas that introduce a test: \"By this we know\" and \"If we say\". Watch, too, how the same few verbs return: remain, know, love, be born of God. The letter repeats in order to reassure (2:12–14, 5:13) as much as to warn.",
+    "englishLayer": "The World English Bible, King James Version and Douay-Rheims differ partly because they rest on different Greek and Latin texts, most visibly at 5:7–8, and also at 2:20, 4:3 and 5:17. The Greek examples below follow the SBL Greek New Testament, a modern edited text.",
+    "textualHistory": [
+      {
+        "label": "A Greek letter-sermon without a letter frame",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Simple Koine with heavy repetition of a few verbs and nouns. The letter lacks a greeting and farewell, though it often says \"I write\" (γράφω occurs 13 times in the SBL text). Its vocabulary closely resembles the Gospel of John, so the two are discussed together.",
+        "sourceIds": [
+          "greek-1jn",
+          "wiki-1jn",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "Early copies and early use",
+        "language": "Greek",
+        "role": "earliest-extant",
+        "description": "Papyrus 9, a fragment from Oxyrhynchus in Egypt dated to the third century, preserves 4:11–12 and 4:14–17. The letter also survives in the fourth-century codices Vaticanus and Sinaiticus. Use is older than the copies: Polycarp's letter has wording close to 4:2–3, and Eusebius reports that Papias drew on the first letter of John.",
+        "sourceIds": [
+          "wiki-p9",
+          "wiki-1jn",
+          "polycarp",
+          "papias"
+        ]
+      },
+      {
+        "label": "The heavenly witnesses at 5:7–8",
+        "language": "Latin, later back-translated into Greek",
+        "role": "section",
+        "spans": [
+          "5:7",
+          "5:8"
+        ],
+        "description": "The words about three witnesses in heaven (the Father, the Word and the Holy Spirit) are known as the Johannine Comma. They are first clearly quoted as part of the letter (whether Cyprian alluded to them in the third century is debated) in a fourth-century Latin treatise and appear in Latin manuscripts from about the fifth to seventh centuries. They are absent from the older Greek manuscripts and from the Syriac, Coptic and other early versions; no Greek manuscript has them in its main text before the fourteenth century. Erasmus added them to his printed Greek New Testament in 1522, and from there they passed into the Textus Receptus and the KJV.",
+        "sourceIds": [
+          "wiki-comma",
+          "net-1jn",
+          "hosted-editions"
+        ]
+      },
+      {
+        "label": "Three English editions, three underlying texts",
+        "language": "English",
+        "role": "translation",
+        "description": "The WEB follows a modern critical text; the KJV follows the printed Greek of the Reformation era, which included the heavenly witnesses. Douay-Rheims often matches Latin witnesses: the Comma stood in the Sixtine and Clementine Vulgate, its \"dissolveth Jesus\" at 4:3 keeps the short object Jesus, which a survey of variants lists for the Vulgate and for Irenaeus in Latin, though with a different verb, and its \"sin unto death\" at 5:17 matches Tertullian's quotation. Other differences are word choice: atoning sacrifice against propitiation at 2:2 and 4:10, and charity for love.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-1jn",
+          "net-1jn",
+          "wiki-comma",
+          "irenaeus-3-16",
+          "tertullian-modesty"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Remaining: the letter's word for a lasting bond",
+        "original": "μένω — menō — remain, stay, abide",
+        "explanation": "The verb occurs 24 times (lemma count, that is, every form of the dictionary word, in the SBL Greek). Believers remain in God and God in them (3:24, 4:16), and the message heard from the beginning is to remain in the readers (2:24). Of those who left, the writer says that had they belonged, they would have remained (2:19). Belonging is shown by staying.",
+        "translationNote": "English spreads one Greek verb across several words. The WEB mostly says remain; the KJV and Douay-Rheims often say abide; at 2:19 the WEB and KJV say continued and Douay-Rheims says remained; in 3:24 and 4:12–16 the KJV often says dwell. Read these as the same verb.",
+        "caution": "The verb does not describe a technique or a special inner experience. The letter ties remaining to visible things: keeping commands (3:24), confessing the Son (4:15), and loving (4:16).",
+        "refs": [
+          "2:6",
+          "2:19",
+          "2:24",
+          "3:24",
+          "4:16"
+        ],
+        "sourceIds": [
+          "greek-1jn",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Two verbs for knowing",
+        "original": "γινώσκω / οἶδα — ginōskō / oida — know, come to know / know",
+        "explanation": "Knowing is the letter's goal (5:13). γινώσκω occurs 25 times and οἶδα 15 times (lemma counts, SBL Greek). The claim to know God is tested against conduct (2:3–4), and the letter closes with a run of \"we know\" statements (5:18–20).",
+        "translationNote": "English uses know for both verbs, so the reader cannot see which one stands behind a given sentence. Several verses use both side by side: 2:29 (if you know that he is righteous, you know that everyone who practices righteousness has been born of him) and 5:20.",
+        "caution": "Do not build a sharp contrast between the two verbs, such as learned knowledge against intuitive knowledge. In 2:29 and 5:20 they stand in parallel with no clear difference in sense. The letter's point is what knowledge leads to, not a theory of knowing.",
+        "refs": [
+          "2:3",
+          "2:4",
+          "2:29",
+          "5:13",
+          "5:20"
+        ],
+        "sourceIds": [
+          "greek-1jn",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "\"By this\": the formula that introduces a test",
+        "original": "ἐν τούτῳ — en toutō — in this, by this",
+        "explanation": "The two-word phrase occurs 14 times in the SBL text, most often with know: \"By this we know\" (2:3, 2:5, 3:19, 3:24, 4:13, 5:2). It gives the letter its rhythm of tests: obedience, love in deed, the Spirit given, and confession of Jesus.",
+        "translationNote": "The English varies: the WEB has this is how, by this and in this; the KJV has hereby and herein. At 2:4 the same Greek phrase means \"in this person\" (WEB: in him), not \"by this\".",
+        "caution": "The phrase can point back to what was just said or forward to what follows, and interpreters sometimes disagree which. At 4:2 it points forward to the confession; elsewhere the decision rests on context, not on the phrase itself.",
+        "refs": [
+          "2:3",
+          "2:4",
+          "2:5",
+          "3:19",
+          "4:2",
+          "5:2"
+        ],
+        "sourceIds": [
+          "greek-1jn",
+          "hosted-web",
+          "net-1jn"
+        ]
+      },
+      {
+        "title": "Love defined by an act",
+        "original": "ἀγαπάω / ἀγάπη / ἀγαπητός — agapaō / agapē / agapētos — love (verb) / love (noun) / beloved",
+        "explanation": "The verb occurs 28 times, the noun 18 times, and the address \"beloved\" 6 times (lemma counts, SBL Greek). Twice the letter says that God is love (4:8, 4:16), and it defines the word by acts: Christ laid down his life (3:16), God loved first and sent his Son (4:10, 4:19), and a believer shares goods with a brother in need (3:17).",
+        "translationNote": "Douay-Rheims has charity in each of the 14 verses where the noun occurs, which can hide its link with the verb love in the same verses. The WEB and KJV use love throughout.",
+        "caution": "The love commands mostly concern \"one another\" and \"the brother\", meaning fellow members of the community. That focus belongs to the letter's crisis; it does not say that love for others is excluded, and it should not be turned into a rule about whom not to love.",
+        "refs": [
+          "3:16",
+          "3:17",
+          "4:8",
+          "4:10",
+          "4:19"
+        ],
+        "sourceIds": [
+          "greek-1jn",
+          "hosted-web",
+          "hosted-editions",
+          "net-1jn"
+        ]
+      },
+      {
+        "title": "Born of God",
+        "original": "γεννάω — gennaō — beget, father, give birth; passive be born",
+        "explanation": "The verb occurs 10 times (lemma count, SBL Greek), and 8 of these are perfect forms: someone \"has been born\" of God. Birth from God is joined to doing right (2:29), not sinning (3:9), loving (4:7), believing that Jesus is the Christ (5:1), and overcoming the world (5:4). Children of God (3:1–2) is the family language that goes with it.",
+        "translationNote": "The WEB says born of God; the KJV moves between born, begat and begotten (5:1). The NET Bible notes that the image is of a father fathering children, and it translates fathered by God.",
+        "caution": "5:18 is hard. The SBL text has two different forms of the verb in one sentence, and \"the one born of God\" who keeps the believer is often read as Jesus, a reading the NET Bible notes think unlikely. The KJV reads keepeth himself, following other manuscripts, and Douay-Rheims reads the generation of God preserveth him, which matches a reading found in the Latin and a few Greek manuscripts, judged by the NET notes a scribal clarification. Do not build a doctrine on one reading of this verse.",
+        "refs": [
+          "2:29",
+          "3:9",
+          "4:7",
+          "5:1",
+          "5:18"
+        ],
+        "sourceIds": [
+          "greek-1jn",
+          "hosted-web",
+          "hosted-editions",
+          "net-1jn"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words that change how a verse reads",
+    "examples": [
+      {
+        "ref": "2:1",
+        "form": "Τεκνία — teknia",
+        "meaning": "little children",
+        "why": "An affectionate address used 7 times (2:1 to 5:21); a second word, παιδία (paidia), appears at 2:14 (the end of 2:13 in the WEB and KJV) and 2:18. The tests are written to people the writer regards as his own, not to outsiders.",
+        "sourceIds": [
+          "greek-1jn",
+          "wiki-1jn"
+        ]
+      },
+      {
+        "ref": "2:2",
+        "form": "ἱλασμός — hilasmos",
+        "meaning": "atoning sacrifice, propitiation, or expiation",
+        "why": "The noun returns only at 4:10. One line of study (L. Morris) hears the turning away of God's anger, which propitiation expresses; another (R. E. Brown) stresses cleansing from sin. The NET notes hold that the senses need not exclude each other and choose atoning sacrifice, as the WEB does; the KJV and Douay-Rheims say propitiation.",
+        "sourceIds": [
+          "greek-1jn",
+          "net-1jn",
+          "hosted-editions"
+        ]
+      },
+      {
+        "ref": "2:20",
+        "form": "πάντες — pantes",
+        "meaning": "all of you",
+        "why": "The SBL text reads \"you all know\" (WEB: you all have knowledge). Other manuscripts read πάντα, all things, followed by the KJV and Douay-Rheims. The first says every reader shares the knowledge; the second sounds like knowing everything.",
+        "sourceIds": [
+          "greek-1jn",
+          "net-1jn",
+          "hosted-editions"
+        ]
+      },
+      {
+        "ref": "4:3",
+        "form": "τὸν Ἰησοῦν — ton Iēsoun",
+        "meaning": "Jesus (the one just named)",
+        "why": "The SBL text says only that the spirit \"does not confess Jesus\", pointing back to the full confession in 4:2. Many later manuscripts repeat \"Christ has come in the flesh\", as the WEB and KJV do, and Polycarp's chapter 7 has the longer wording.",
+        "sourceIds": [
+          "greek-1jn",
+          "net-1jn",
+          "polycarp"
+        ]
+      },
+      {
+        "ref": "5:16",
+        "form": "πρὸς θάνατον — pros thanaton",
+        "meaning": "toward death, leading to death",
+        "why": "The phrase occurs three times in this verse and once in 5:17. The letter never says which sin leads to death, and the writer does not forbid prayer for it; he only declines to ask for it.",
+        "sourceIds": [
+          "greek-1jn",
+          "hosted-web"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A letter-sermon of tests and reassurance",
+    "how": "Read it as a written address to a shaken community, not a step-by-step argument. Themes return with something added: light, commands, love, true confession, the Spirit. Notice which statements test a claim (\"If we say\", \"By this we know\") and which give comfort (2:12–14, 3:19–20, 5:13)."
+  },
+  "cast": [
+    {
+      "name": "The writer",
+      "who": "Unnamed. He speaks for a \"we\" who heard and saw (1:1–3, 4:14) and writes as \"I\" to his little children. Tradition names him John; his identity is debated."
+    },
+    {
+      "name": "The readers",
+      "who": "Believers addressed as little children, beloved, fathers and young men (2:12–14). They have an anointing (2:20) and are told they already know the truth (2:21)."
+    },
+    {
+      "name": "Those who went out",
+      "who": "Former members whom the letter calls antichrists, liars and false prophets (2:18–22, 4:1–3). Their own words are not preserved."
+    },
+    {
+      "name": "Jesus Christ",
+      "who": "The Son, called the Word of life (1:1), the Counselor or advocate with the Father (2:1), and the atoning sacrifice (2:2)."
+    },
+    {
+      "name": "Cain",
+      "who": "The only other named person, given as the example of hatred: he killed his brother (3:12)."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "The witness, the light, and claims about sin",
+      "chapters": "1",
+      "precise": "1:1–2:2",
+      "note": "A prologue about what was heard, seen and touched leads to \"God is light\" and three claims answered in turn; the section ends with Jesus as advocate and atoning sacrifice in 2:1–2."
+    },
+    {
+      "heading": "Knowing him, and those who went out",
+      "chapters": "2",
+      "precise": "2:3–29",
+      "note": "Keeping his commands, the old and new commandment, reassurance to each group, the warning about loving the world, and the first account of the antichrists and the anointing."
+    },
+    {
+      "heading": "Children of God and love in deed",
+      "chapters": "3",
+      "precise": "3:1–24",
+      "note": "Being called children of God, the statements that the one born of God does not sin, Cain as the counter-example, and love shown by laying down life and sharing goods."
+    },
+    {
+      "heading": "Testing the spirits; God is love",
+      "chapters": "4",
+      "precise": "4:1–21",
+      "note": "The confession test for spirits and prophets, then the longest passage on love: God's love shown in sending the Son, and love that casts out fear."
+    },
+    {
+      "heading": "Faith, testimony, and what we know",
+      "chapters": "5",
+      "precise": "5:1–21",
+      "note": "Faith that overcomes the world, the testimony of the Spirit, the water and the blood, the stated purpose (5:13), prayer and the sin leading to death, and a warning against idols."
+    }
+  ],
+  "purpose": "The letter states its aims: that \"our joy may be fulfilled\" (1:4; the KJV and Douay-Rheims read your joy), that they may not sin (2:1), that they be warned about those who would lead them astray (2:26), and that believers may know that they have eternal life (5:13). It gives them ways to tell true from false belonging after a split: confession of Jesus come in the flesh, obedience, and love that acts. Assurance is the goal, and the tests serve it.",
+  "snags": [
+    {
+      "snag": "The KJV and Douay-Rheims have words at 5:7–8 that the WEB lacks.",
+      "help": "This is the Johannine Comma. It first appears as part of the letter in fourth-century Latin, is absent from the older Greek manuscripts and early versions, and reached printed Greek only in 1522. Translations made from critical editions leave it out of the main text or put it in a footnote, as does the Nova Vulgata (1986); translations that follow the Textus Receptus, such as the New King James Version, keep it, and some of their defenders still argue for it. In the WEB the three witnesses are the Spirit, the water and the blood."
+    },
+    {
+      "snag": "The letter seems to say both that believers sin and that they do not.",
+      "help": "1:8–10 calls the claim to be without sin a lie, and 2:1 provides for anyone who sins. 3:6, 3:9 and 5:18 say that the one born of God does not sin. Readers have explained this in different ways (see the debates). The letter keeps both within a few pages; do not settle the question by quoting only one side."
+    },
+    {
+      "snag": "\"Antichrist\" can sound like one figure at the end of history.",
+      "help": "The readers had heard that the Antichrist is coming, but the writer says many antichrists have already arisen (2:18). Here the word names those who deny that Jesus is the Christ (2:22) and a spirit that does not confess Jesus (4:3): a specific denial, not anyone a reader disagrees with."
+    },
+    {
+      "snag": "The either-or lines can feel harsh: children of God or children of the devil (3:10).",
+      "help": "The letter states its contrasts in absolute terms to separate its readers from the teaching of those who left. The same letter says that God is greater than our heart when it condemns us (3:20) and that perfect love casts out fear (4:18). Its sharpest lines concern a split in one community, not a verdict on outsiders."
+    },
+    {
+      "snag": "Fear of having committed the \"sin leading to death\" (5:16).",
+      "help": "The letter does not say what this sin is. It urges prayer for a brother whose sin does not lead to death and says only that it does not command prayer for the other. Traditions read it in different ways. One survey of Christian teaching on the unforgivable sin notes that theologians generally agree that a person who fears having committed it has not done so."
+    },
+    {
+      "snag": "Who is \"the true God\" in 5:20?",
+      "help": "The sentence ends: \"This is the true God and eternal life.\" The pronoun could point back to God the Father or to Jesus Christ, named just before. The NET Bible notes set out the case for each and lean toward Jesus Christ; the grammar does not decide it alone."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Who wrote 1 John, and how does it relate to the Gospel and to 2 and 3 John?",
+      "settled": "The letter names no writer and claims eyewitness testimony for a group (1:1–3, 4:14). Its vocabulary and style are very close to the Gospel of John and to 2 and 3 John. Eusebius lists it among writings accepted without dispute.",
+      "positions": [
+        {
+          "view": "John the apostle wrote it",
+          "grounds": "This is the church's tradition. Irenaeus quotes it as the epistle of John, the disciple of the Lord, and Papias, whom Irenaeus calls a hearer of John, used it. Its closeness to the Gospel and the \"we have seen\" of 1:1–3 are read as support."
+        },
+        {
+          "view": "A John other than the apostle, such as the presbyter Papias mentions",
+          "grounds": "Papias distinguished the apostles from \"the presbyter John\", whom he heard in person, and Eusebius records doubt whether 2 and 3 John belong to the evangelist or to another of the same name. There is no consensus on how many of these Johns were the same person."
+        },
+        {
+          "view": "A different writer from the Gospel, within the same tradition",
+          "grounds": "Scholars from H. J. Holtzmann to C. H. Dodd have held that the letter and the Gospel had different authors, and surveys cite features of style found in the letter but not in the Gospel. A survey reports that most scholars think the three letters share one author, but there is no consensus on the Gospel, and most critical scholars do not think the apostle wrote any of them."
+        }
+      ],
+      "soWhat": "The letter's authority rests on its claim to pass on what was heard from the beginning, and none of these views removes that claim. Authorship affects dating and how the letter is set beside the Gospel."
+    },
+    {
+      "question": "What did those who went out actually teach?",
+      "settled": "They left the community (2:19). The writer says they deny that Jesus is the Christ (2:22) and do not confess Jesus as come in the flesh (4:2–3). Their own statements are not preserved, so every account of them is reconstructed from the writer's replies.",
+      "positions": [
+        {
+          "view": "They separated the human Jesus from the divine Christ",
+          "grounds": "Irenaeus reads 2:18–19 and 4:1–3 against teachers who divide the Lord in two, and elsewhere describes Cerinthus as teaching that Christ came upon Jesus at his baptism and left before his suffering. The letter names no one; linking Cerinthus to it is a later inference."
+        },
+        {
+          "view": "They denied that Jesus truly came in the flesh",
+          "grounds": "The stress on what was touched (1:1) and on Jesus Christ come in the flesh (4:2) fits a view that Christ only seemed human, later called docetism. Polycarp uses the same confession as a test, and a survey article (Wikipedia) takes the letter this way."
+        },
+        {
+          "view": "Their error is not recoverable beyond the letter's own charges",
+          "grounds": "The NET Bible notes call proposals that the writer quotes the opponents' slogans conjecture. They observe that the letter charges the opponents with failing to love but not with immoral conduct, and suggest they played down sin after conversion."
+        }
+      ],
+      "soWhat": "Each reconstruction explains some verses, but none is stated in the letter. The letter itself joins the confession in 4:2 to the tests of love and obedience."
+    },
+    {
+      "question": "How can the letter say both \"if we say that we have no sin, we deceive ourselves\" (1:8) and \"whoever is born of God doesn't commit sin\" (3:9)?",
+      "settled": "Both statements are in the text, and 2:1 holds them together: the writer writes so that readers may not sin, and provides for anyone who does. In 3:6 and 3:9 the Greek verbs for sinning are in the present tense; in 2:1 (\"that you may not sin… if anyone sins\") they are in a different tense, the aorist.",
+      "positions": [
+        {
+          "view": "The present tense means ongoing or characteristic sin",
+          "grounds": "Grammarians such as M. Zerwick and N. Turner, cited in the NET Bible notes, read the present as a settled state or practice rather than single acts. The NET Bible renders 3:9 as does not practice sin."
+        },
+        {
+          "view": "Tense alone cannot carry that much weight",
+          "grounds": "C. H. Dodd and Z. Hodges, as cited in the NET notes, doubt that the tense alone signals a habit without clarifying words. The NET notes allow a habitual sense but prefer to read the contrast as deliberate either-or language aimed at the opponents."
+        },
+        {
+          "view": "The letter distinguishes kinds of sin",
+          "grounds": "Tertullian, early in the third century, read John as both admitting and denying that the children of God sin, and resolved this by the distinction in 5:16–17 between sin leading to death and sin that does not."
+        }
+      ],
+      "soWhat": "On any explanation, the letter will not let either statement cancel the other: it rules out claiming to be without sin and rules out treating sin as unimportant."
+    },
+    {
+      "question": "What is the \"sin leading to death\" in 5:16–17?",
+      "settled": "The writer distinguishes sin that leads to death from sin that does not, urges prayer for a brother whose sin does not, and declines to command prayer for the other. He does not name the sin or say what death means here.",
+      "positions": [
+        {
+          "view": "A grave class of sin that the church's prayer cannot remit",
+          "grounds": "Tertullian treated the sin unto death as irremissible and the other as remissible. One survey reports a suggestion that the later term mortal sin comes from this passage."
+        },
+        {
+          "view": "The unforgivable sin named in the Gospels",
+          "grounds": "Many interpreters read this verse with the saying about blasphemy against the Holy Spirit (Mark 3:28–29) and Hebrews 6:4–6 as passages about one unforgivable sin."
+        },
+        {
+          "view": "Apostasy, like that of those who went out",
+          "grounds": "Many readers tie the phrase to the letter's own crisis: those who left and deny the Son (2:19, 2:22, 5:12). A survey essay by A. D. Naselli lists I. H. Marshall and S. S. Smalley for apostasy by a former believer and J. R. W. Stott for the denial of Christ by those who never believed; it also notes a reading of physical death as discipline, since the phrase elsewhere in the New Testament occurs only at John 11:4."
+        }
+      ],
+      "soWhat": "The text leaves the category undefined, and every identification adds something from outside the verse. What the verse states plainly is the instruction to pray for a brother whose sin does not lead to death."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, 1 John",
+      "says": "Provides the English wording, structure, purpose statements, and measured length used throughout this briefing.",
+      "href": "/scriptures/protestant/1JN/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "1 John in the World English Bible, King James Version, and Douay-Rheims",
+      "says": "Shows the heavenly witnesses at 5:7–8 in KJV and Douay-Rheims only, the different readings at 1:4, 2:2, 2:20, 4:3, 4:10, 5:17 and 5:18, Douay-Rheims's charity for love, and its division of 2:13–14, which matches the SBL Greek."
+    },
+    {
+      "id": "greek-1jn",
+      "label": "SBL Greek New Testament, 1 John, with MorphGNT analysis",
+      "says": "Provides the Greek forms, lemmas and morphology behind every Greek word and count in this briefing; it is a modern edited text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/83-1Jn-morphgnt.txt"
+    },
+    {
+      "id": "net-1jn",
+      "label": "NET Bible, 1 John: text and translator notes (bible.org)",
+      "says": "Discusses hilasmos at 2:2, the readings at 1:4, 2:20, 4:3 and 5:18, the explanations of 3:6 and 3:9, the grammar of 5:16, 5:18 and 5:20 (leaning toward Jesus Christ at 5:20), the late Greek evidence for the Comma, and calls reconstructions of the opponents' slogans conjecture.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/1jo.pdf"
+    },
+    {
+      "id": "wiki-1jn",
+      "label": "Wikipedia, First Epistle of John (survey article)",
+      "says": "Reports that most scholars think the three letters share an author with no consensus on the Gospel; gives Ephesus and 95–110 CE as probable; notes the missing letter frame and simple, circling style; lists early manuscripts; says Polycarp knew the letter and Papias used it.",
+      "url": "https://en.wikipedia.org/wiki/First_Epistle_of_John"
+    },
+    {
+      "id": "wiki-comma",
+      "label": "Wikipedia, Johannine Comma (survey article)",
+      "says": "Traces the heavenly witnesses from the first undisputed quotation in a fourth-century Latin work into Latin manuscripts and the Sixtine and Clementine Vulgate; notes the debate over Cyprian, their absence from older Greek manuscripts and early versions, Erasmus's 1522 edition, their omission from critical-text translations and the Nova Vulgata, their retention in Textus Receptus-based translations such as the NKJV, and their defence by some Textus Receptus supporters.",
+      "url": "https://en.wikipedia.org/wiki/Johannine_Comma"
+    },
+    {
+      "id": "wiki-p9",
+      "label": "Wikipedia, Papyrus 9",
+      "says": "Describes a third-century papyrus fragment from Oxyrhynchus containing 1 John 4:11–12 and 4:14–17.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_9"
+    },
+    {
+      "id": "polycarp",
+      "label": "Polycarp, Letter to the Philippians 7 (c. AD 110–140)",
+      "says": "Says that whoever does not confess that Jesus Christ has come in the flesh is antichrist, wording close to 1 John 4:2–3 and 2 John 7. Polycarp does not name his source.",
+      "href": "/early/polycarp-philippians"
+    },
+    {
+      "id": "papias",
+      "label": "Papias, Fragment VI, as quoted by Eusebius, Church History 3.39",
+      "says": "Says that Papias used testimonies from the first epistle of John, distinguishes the apostle John from the presbyter John, whom Papias heard, and preserves Irenaeus's description of Papias as a hearer of John.",
+      "href": "/early/papias"
+    },
+    {
+      "id": "irenaeus-3-16",
+      "label": "Irenaeus, Against Heresies 3.16 (c. AD 180)",
+      "says": "Quotes 1 John 2:18–19 and 4:1–3 as the epistle of John, the disciple of the Lord, against teachers who divide the Lord; in the English translation his text of 4:3 reads separates Jesus Christ.",
+      "url": "https://www.newadvent.org/fathers/0103316.htm"
+    },
+    {
+      "id": "irenaeus-1-26",
+      "label": "Irenaeus, Against Heresies 1.26",
+      "says": "Describes Cerinthus as teaching that Christ descended on Jesus after his baptism and departed before he suffered.",
+      "url": "https://www.newadvent.org/fathers/0103126.htm"
+    },
+    {
+      "id": "eusebius-3",
+      "label": "Eusebius, Church History 3.24–25 and 3.39",
+      "says": "Says the former epistle of John has been accepted without dispute, while the second and third are disputed, whether they belong to the evangelist or to another of the same name; repeats that Papias used the first epistle.",
+      "url": "https://www.newadvent.org/fathers/250103.htm"
+    },
+    {
+      "id": "tertullian-modesty",
+      "label": "Tertullian, On Modesty 2 and 19 (early 3rd century)",
+      "says": "Reads 5:16–17 as dividing remissible from irremissible sins, uses this to explain how John both admits and denies that the children of God sin, and quotes 5:17 as there is a sin unto death.",
+      "url": "https://www.newadvent.org/fathers/0407.htm"
+    },
+    {
+      "id": "wiki-mortal-sin",
+      "label": "Wikipedia, Mortal sin (survey article)",
+      "says": "Reports that the term mortal sin is thought to derive from the New Testament, and a suggestion that it comes from 1 John 5:16–17.",
+      "url": "https://en.wikipedia.org/wiki/Mortal_sin"
+    },
+    {
+      "id": "wiki-eternal-sin",
+      "label": "Wikipedia, Eternal sin (survey article)",
+      "says": "Lists 1 John 5:16 with Mark 3:28–29 and Hebrews 6:4–6 among passages interpreted as the unforgivable sin, and says theologians generally agree that one who fears having committed it has not.",
+      "url": "https://en.wikipedia.org/wiki/Eternal_sin"
+    },
+    {
+      "id": "wiki-johannine-authorship",
+      "label": "Wikipedia, Authorship of the Johannine works (survey article)",
+      "says": "Reports that, starting with H. J. Holtzmann and continuing with C. H. Dodd, some scholars have held that the epistle and the Gospel had different authors, and gives two style features of the letter not used in the Gospel as the main arguments.",
+      "url": "https://en.wikipedia.org/wiki/Authorship_of_the_Johannine_works"
+    },
+    {
+      "id": "wiki-variants-1jn",
+      "label": "Wikipedia, Textual variants in the First Epistle of John (survey article)",
+      "says": "Lists witnesses at 1:4 (our / your) and 4:3, including the Vulgate and Irenaeus in Latin for the short reading Jesus, and Polycarp, in parentheses, for the longer reading.",
+      "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_First_Epistle_of_John"
+    },
+    {
+      "id": "naselli-sin-unto-death",
+      "label": "A. D. Naselli, The Sin unto Death, The Gospel Coalition (essay, CC BY-SA)",
+      "says": "Sets out four major views of 1 John 5:16–17: apostasy by a believer (citing Marshall, Smalley, Witherington), sin by unbelievers including the false teachers' apostasy (citing Stott), physical death as discipline, and the author's preferred believer/unbeliever reading.",
+      "url": "https://www.thegospelcoalition.org/essay/sin-unto-death/"
+    },
+    {
+      "id": "ecw-1jn",
+      "label": "Early Christian Writings, 1 John (introduction page)",
+      "says": "Quotes Kümmel for one author of Gospel and letter and Perrin for different authors; quotes R. E. Brown placing 1 and 2 John in the decade after the Gospel's body (c. 90); notes Polycarp and Papias as the latest limit.",
+      "url": "https://www.earlychristianwritings.com/1john.html"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "In 1:6–2:2, follow the three claims that begin \"If we say\" and the reply to each. The section moves from honesty about sin to Jesus as advocate.",
+      "refs": [
+        "1:6",
+        "1:8",
+        "1:10",
+        "2:1"
+      ]
+    },
+    {
+      "tip": "Mark each \"By this we know\" and ask what it is a test of: obedience, love in deed, the Spirit given, or confession.",
+      "refs": [
+        "2:3",
+        "2:5",
+        "3:19",
+        "3:24",
+        "4:13",
+        "5:2"
+      ]
+    },
+    {
+      "tip": "Read the two passages about those who went out side by side. Both join the warning to reassurance about the anointing or the one who is in you.",
+      "refs": [
+        "2:18",
+        "2:19",
+        "2:27",
+        "4:1",
+        "4:3",
+        "4:4"
+      ]
+    },
+    {
+      "tip": "Read 4:7–21 as one passage. Note where love starts (God loved first) and where it must arrive (the brother who can be seen).",
+      "refs": [
+        "4:7",
+        "4:10",
+        "4:19",
+        "4:20"
+      ]
+    },
+    {
+      "tip": "Read the purpose statements together; they show that the tests are meant to give assurance.",
+      "refs": [
+        "1:4",
+        "2:1",
+        "2:26",
+        "5:13"
+      ]
+    }
+  ],
+  "next": "Read 2 John and 3 John, short letters from \"the elder\" with the same vocabulary of truth and love. Then read John 1 beside 1 John 1:1–5, and John 13:34 beside 1 John 2:7–8. Polycarp's letter, hosted here, shows wording close to 4:2–3 in early use.",
+  "traditionNote": "1 John is in the New Testament of Catholic, Orthodox and Protestant Bibles, among the general or catholic letters, and Eusebius lists it as accepted without dispute, unlike 2 and 3 John. The three hosted English editions have the same 105 verses, though Douay-Rheims, like the SBL Greek, divides 2:13–14 differently from the WEB and KJV. The heavenly witnesses at 5:7 appear in the KJV and Douay-Rheims but not in modern translations made from critical editions."
+}

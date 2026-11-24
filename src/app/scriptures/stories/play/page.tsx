@@ -9,7 +9,8 @@ import styles from "./page.module.css";
 const hub = scriptureDestination("/scriptures/stories/play");
 const temple = scriptureDestination("/scriptures/stories/play/overturned-tables");
 const elah = scriptureDestination("/scriptures/stories/play/valley-of-elah");
-const description = "Play as Jesus in the temple court, step into the Valley of Elah as David, or take flight over Mount Hermon. Read the passages behind the games.";
+const storm = scriptureDestination("/scriptures/stories/play/storm-on-the-lake");
+const description = "Play as Jesus in the temple court, step into the Valley of Elah as David, cross the Sea of Galilee in a rising squall, or take flight over Mount Hermon. Read the passages behind the games.";
 
 export const metadata: Metadata = {
   title: hub.label,
@@ -79,6 +80,24 @@ export default function PlayableStoriesPage() {
             <a className={styles.play} href={elah.href}>Enter the Valley of Elah</a>
             <Link href={scriptureStoryPath("david")}>Read David’s story</Link>
             <Link href={passageHref("1SA", 17)}>Read 1 Samuel 17</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.episode} aria-labelledby="storm-title">
+        <Image
+          className={styles.illustration}
+          src="/jesus/life/calming-the-storm.jpg"
+          alt="Jesus standing in the stern of a wooden fishing boat on the Sea of Galilee, rebuking the wind and waves."
+          width={1280} height={720} sizes="(max-width: 38rem) 100vw, 20rem" quality={70}
+        />
+        <div>
+          <h2 id="storm-title">{storm.label}</h2>
+          <p>Board a Galilean fishing boat at dusk while Jesus sleeps on a cushion in the stern. Set sail, fight the rising squall and bailing water, and wake him before the sea goes glassy and still.</p>
+          <div className={styles.actions}>
+            <a className={styles.play} href={storm.href}>Board the Galilee boat</a>
+            <Link href="/scriptures/protestant/MRK/4?t=web#v35">Read Mark 4:35–41</Link>
+            <Link href="/scriptures/protestant/LUK/8?t=web#v22">Read Luke 8:22–25</Link>
           </div>
         </div>
       </section>

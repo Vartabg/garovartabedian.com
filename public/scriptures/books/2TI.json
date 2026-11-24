@@ -1,0 +1,554 @@
+{
+  "book": "2TI",
+  "bookName": "2 Timothy",
+  "oneLine": "A letter in Paul's name to Timothy, written as from a prisoner who expects to die, urging him not to be ashamed, to share in hardship, and to guard and hand on what he was given.",
+  "orient": "The opening names Paul and calls Timothy his beloved child. The writer presents himself in chains, deserted by many, and near the end of his life. Instruction alternates with memory: Timothy's family faith, the writer's sufferings, the Scriptures Timothy learned as a child. The letter closes with a farewell in 4:6–8 and then a run of errands, warnings and greetings. Read the charges to Timothy beside the reasons given for them: God's power and grace, the faithfulness of Christ, and a coming day of judgment and reward.",
+  "whereYouAre": "The letter presents its sender as a prisoner (1:8, 1:16, 2:9) who has been in Rome (1:17), has already made a first defense (4:16), and expects death (4:6–8). Only Luke is with him (4:11). Timothy is known from Acts 16:1–2 and from letters such as Philippians. Acts ends with Paul under guard in Rome for two years and does not narrate his death. Eusebius, writing in the fourth century, reports a tradition that Paul was released, returned to Rome, wrote this letter in a second imprisonment, and was then put to death. That account, the setting the letter describes, and the debated date of its composition are three separate things.",
+  "facts": {
+    "writtenBy": "The opening names Paul. Direct Pauline authorship is defended, and some scholars who doubt 1 Timothy and Titus accept 2 Timothy; many others regard all three Pastoral Letters as later writing in Paul's name.",
+    "writtenWhen": "If Paul wrote it, during a final imprisonment in Rome, which Eusebius connects with Nero's reign. Scholars who see later composition propose dates such as 90 to 140 CE. No year is secure.",
+    "writtenFor": "Timothy, addressed as a beloved child and coworker. The letter does not state where he is. It mentions Ephesus (1:18, 4:12), 1 Timothy 1:3 places him there, and NET study notes link the false teaching it opposes with Ephesus, citing 1 Timothy. The final greeting in the Greek (4:22) is plural.",
+    "place": "The sender writes as a prisoner who has been in Rome (1:17). Rome is the traditional place of writing; the letter does not name it as the place of writing in so many words.",
+    "covers": "Encouragement not to be ashamed and to guard what was entrusted; images of endurance and a warning about false teaching; the hard times ahead and the use of Scripture; a final charge, a farewell, and personal requests and greetings.",
+    "size": "Four chapters, 83 verses, and 1,611 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "wp-2ti",
+      "wp-pauline-authorship",
+      "irenaeus-ah-3-3",
+      "muratorian"
+    ],
+    "writtenWhen": [
+      "eusebius-he-2-22",
+      "wp-2ti",
+      "wp-pastorals"
+    ],
+    "writtenFor": [
+      "hosted-web",
+      "net-2ti",
+      "greek-2ti",
+      "acts-timothy",
+      "first-timothy-parallels"
+    ],
+    "place": [
+      "hosted-web",
+      "eusebius-he-2-22"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "A personal letter of charge and farewell. Short commands addressed to one person (you, my child) alternate with memories, small lists, quoted sayings and images from army life, sport and farming. The Greek uses many compound verbs and several words that occur nowhere else in the New Testament. The tone moves from affection to warning to settled hope, and ends in practical errands.",
+    "spokenWorld": "The letter speaks of Rome, Ephesus, Troas, Corinth, Miletus and other places in the Greek-speaking eastern Mediterranean. It also draws on Jewish tradition: it quotes wording close to Numbers 16:5 at 2:19 and names Pharaoh's magicians as Jannes and Jambres at 3:8. The Greek belongs to the letter as written; it does not tell us what language each person named in it spoke day to day.",
+    "readerSignal": "Watch the pairs the letter keeps setting side by side: shame and boldness, those who left and those who stayed, chains and the word that is not chained, what Timothy received and what he must pass on. The sender's coming death gives each instruction the weight of a last request.",
+    "englishLayer": "The World English Bible, King James Version and Douay-Rheims often choose different English for the same Greek, as at 3:16 and 4:6. Some differences are variant readings instead: WEB, KJV and Douay-Rheims have teacher of the Gentiles at 1:11 and The Lord Jesus Christ at 4:22, while the SBL Greek text has teacher alone and The Lord alone, and no closing Amen. The Douay-Rheims also divides 4:8–10 differently, so its 4:9 begins with Demas. The Greek examples follow the SBL Greek New Testament, a modern critical edition, not the base text of every English version.",
+    "textualHistory": [
+      {
+        "label": "A Greek letter of personal charge",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The letter's vocabulary of shame, shared hardship, entrusting and remembering ties its personal memories to its instructions. Its setting as Paul's last letter is the letter's own presentation; whether Paul composed the wording is debated and is treated below.",
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web",
+          "wp-2ti"
+        ]
+      },
+      {
+        "label": "Oldest surviving copies",
+        "language": "Greek",
+        "role": "earliest-extant",
+        "description": "The original and the copies of roughly the first two centuries are lost. The oldest manuscripts listed in Wikipedia's survey are the great codices of the fourth and fifth centuries, beginning with Codex Sinaiticus, and its list of New Testament papyri records none for 2 Timothy; a fifth-century fragment, Codex Freerianus, preserves part of 1:10–12.",
+        "sourceIds": [
+          "wp-2ti",
+          "wp-nt-papyri"
+        ]
+      },
+      {
+        "label": "Translation choices and variant readings",
+        "language": "English translations of the New Testament",
+        "role": "translation",
+        "description": "English versions differ in how they render key clauses, such as the relation of God-breathed and profitable at 3:16. Some differences come from the Greek text being translated: the NET Bible notes explain why modern editors omit of the Gentiles at 1:11 and prefer the shorter wording at 4:22, and discuss Lord or God at 2:14. The Latin tradition behind Douay-Rheims spells one magician's name Mambres at 3:8.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-2ti",
+          "net-2ti",
+          "wp-jannes"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Not ashamed",
+        "original": "ἐπαισχύνομαι / ἀνεπαίσχυντος — epaischynomai / anepaischyntos — be ashamed / not needing to be ashamed",
+        "explanation": "The verb occurs three times in the SBL Greek text of 2 Timothy, all in chapter 1: Timothy is not to be ashamed of the testimony or of the prisoner (1:8), the sender is not ashamed (1:12), and Onesiphorus was not ashamed of his chain (1:16). The related adjective at 2:15 describes a worker with no cause for shame. The shame in view is public: being seen with a chained man and his message.",
+        "translationNote": "English versions keep ashamed in each place, so the thread is visible. Readers can still miss that 1:16 repeats the verb of 1:8, which makes Onesiphorus an example of what Timothy is asked to do. The verb also appears at Romans 1:16 and Mark 8:38.",
+        "caution": "The word concerns loyalty under public disgrace, not guilt or self-esteem in general. The repetition shows emphasis; it proves nothing about author or date.",
+        "refs": [
+          "1:8",
+          "1:12",
+          "1:16",
+          "2:15"
+        ],
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Suffering hardship, and suffering it together",
+        "original": "κακοπαθέω / συγκακοπαθέω — kakopatheō / synkakopatheō — suffer hardship / suffer hardship together",
+        "explanation": "The simple verb describes the sender's own suffering (2:9) and is a command to Timothy (4:5). The compound with syn-, with, appears at 1:8 and 2:3 and in no other New Testament book in the SBL Greek text. It invites Timothy into a hardship the writer already bears.",
+        "translationNote": "WEB has endure hardship at 1:8 and 2:3, which loses the with. KJV has partaker of the afflictions and endure hardness; Douay-Rheims has labour with the gospel and labour as a good soldier. The NET notes give suffer hardship together, implying join with me.",
+        "caution": "The letter does not praise suffering for its own sake. Hardship is tied to the gospel and to God's power, and the letter also speaks of deliverance (3:11, 4:17–18).",
+        "refs": [
+          "1:8",
+          "2:3",
+          "2:9",
+          "4:5"
+        ],
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web",
+          "hosted-editions",
+          "net-2ti"
+        ]
+      },
+      {
+        "title": "The deposit: what is entrusted and guarded",
+        "original": "παραθήκη / φυλάσσω / παρατίθημι — parathēkē / phylassō / paratithēmi — deposit / guard / entrust",
+        "explanation": "The noun appears at 1:12 and 1:14, each time with the verb guard. At 1:14 Timothy must guard the good deposit through the Holy Spirit; at 2:2 he must in turn entrust what he heard to faithful people who can teach others. The picture is a chain of trust from the sender to Timothy to others.",
+        "translationNote": "At 1:12 the Greek says my deposit. WEB and KJV take it as what I have committed to him; the NET has what has been entrusted to me, explaining both senses and preferring the second because of 1:14 and similar wording at 2:2 and 1 Timothy 6:20. English that good thing at 1:14 hides that it is the same noun.",
+        "caution": "The letter does not list the contents of the deposit. It connects it with sound words heard from the sender (1:13) and with the gospel; it does not supply a fixed later creed.",
+        "refs": [
+          "1:12",
+          "1:14",
+          "2:2"
+        ],
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web",
+          "net-2ti"
+        ]
+      },
+      {
+        "title": "Remembering and reminding",
+        "original": "μνεία / μιμνῄσκομαι / ὑπόμνησις / ἀναμιμνῄσκω / μνημονεύω / ὑπομιμνῄσκω — mneia / mimnēskomai / hypomnēsis / anamimnēskō / mnēmoneuō / hypomimnēskō — remembrance / remember / reminder / remind / remember / remind",
+        "explanation": "Six different words from the same root for memory occur once each in the SBL Greek text of this letter, four of them in 1:3–6. The writer remembers Timothy and his tears, is reminded of his faith, and reminds him to rekindle God's gift. Then Timothy is told to remember Jesus Christ (2:8) and to remind others (2:14).",
+        "translationNote": "WEB has memory, remembering, reminded, remind, Remember and Remind, which shows the thread but not that each is a different Greek word. KJV varies more: remembrance, mindful, call to remembrance, put thee in remembrance, Remember, put them in remembrance.",
+        "caution": "These are related words, not one word repeated, and some are ordinary letter phrasing. Notice what is remembered rather than building a theory on the root.",
+        "refs": [
+          "1:3",
+          "1:4",
+          "1:5",
+          "1:6",
+          "2:8",
+          "2:14"
+        ],
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Soldier, athlete, farmer, and the finished contest",
+        "original": "στρατιώτης / ἀθλέω / γεωργός / ἀγών / στέφανος — stratiōtēs / athleō / geōrgos / agōn / stephanos — soldier / compete as an athlete / farmer / contest / wreath or crown",
+        "explanation": "Chapter 2 sets three pictures side by side: the soldier who avoids distraction, the athlete crowned only if he competes by the rules, the hard-working farmer who eats first. Then 2:7 tells Timothy to think it over. At 4:7–8 the writer applies contest language to himself: the contest fought, the course finished, the wreath waiting.",
+        "translationNote": "WEB, KJV and Douay-Rheims have fought a good fight or the good fight at 4:7, which suggests war. The NET notes say the words may refer to a race or to a boxing or wrestling match, and translate I have competed well.",
+        "caution": "Each picture makes one point and the letter leaves Timothy to draw it out. They are not a theory of reward; the crown of 4:8 is promised to all who have loved the Lord's appearing.",
+        "refs": [
+          "2:3",
+          "2:4",
+          "2:5",
+          "2:6",
+          "4:7",
+          "4:8"
+        ],
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web",
+          "hosted-editions",
+          "net-2ti"
+        ]
+      },
+      {
+        "title": "Poured out, and the time of departure",
+        "original": "σπένδομαι / ἀνάλυσις — spendomai / analysis — be poured out as a drink offering / departure",
+        "explanation": "At 4:6 the writer describes his coming death in two images. The verb pictures being poured out as an offering; in the SBL Greek New Testament it occurs only here and at Philippians 2:17, another letter from imprisonment. The noun for departure occurs only here; the related verb appears at Philippians 1:23, the wish to depart and be with Christ.",
+        "translationNote": "WEB has being offered; KJV ready to be offered; Douay-Rheims ready to be sacrificed and dissolution. The NET has being poured out as an offering, which keeps the image that offered alone can hide.",
+        "caution": "The parallel with Philippians shows shared vocabulary. It does not settle whether the same person wrote both letters; L. T. Johnson, challenging the case against Paul, points to likenesses between 2 Timothy and Philippians, but shared words alone do not prove one writer.",
+        "refs": [
+          "4:6",
+          "4:7"
+        ],
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web",
+          "hosted-editions",
+          "net-2ti",
+          "philippians-parallels",
+          "wp-pauline-authorship"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words that shape the charge to Timothy",
+    "examples": [
+      {
+        "ref": "1:13",
+        "form": "ὑγιαινόντων — hygiainontōn",
+        "meaning": "being healthy or sound; here describing words",
+        "why": "Sound words belong to the health vocabulary shared with 1 Timothy and Titus; the verb returns at 4:3 for sound doctrine. Against it stands the gangrene of 2:17, so the letter pictures false teaching as a spreading sickness.",
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "2:15",
+        "form": "ὀρθοτομοῦντα — orthotomounta",
+        "meaning": "handling correctly; literally cutting straight",
+        "why": "KJV has rightly dividing, which can sound like separating the word into parts. The NET notes describe a figure such as cutting a straight road, meaning handling the message of truth without deviation. WEB has properly handling.",
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-editions",
+          "net-2ti"
+        ]
+      },
+      {
+        "ref": "2:17",
+        "form": "γάγγραινα — gangraina",
+        "meaning": "gangrene, a spreading sore",
+        "why": "KJV and Douay-Rheims have canker. The word belongs to the letter's medical picture: sound teaching is healthy, while the empty chatter of 2:16 spreads and eats away.",
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "ref": "3:16",
+        "form": "θεόπνευστος — theopneustos",
+        "meaning": "God-breathed; inspired by God",
+        "why": "This adjective occurs only here in the SBL Greek New Testament. Jerome's Latin rendered it divinitus inspirata. How it relates to profitable in the same sentence is discussed in the debates below.",
+        "sourceIds": [
+          "greek-2ti",
+          "wp-inspiration",
+          "net-2ti"
+        ]
+      },
+      {
+        "ref": "4:13",
+        "form": "μεμβράνας — membranas",
+        "meaning": "parchments",
+        "why": "The request for the cloak, the books, and especially the parchments uses a word found only here in the New Testament. The letter does not say what the books or parchments contained.",
+        "sourceIds": [
+          "greek-2ti",
+          "hosted-web"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A personal letter of farewell and charge",
+    "how": "Read it as a letter from one person to another: thanksgiving, memories, commands, warnings, a farewell, then errands. Many scholars also compare it to farewell speeches in which a leader near death warns about the future and hands on responsibility. Notice how each command rests on something remembered or promised."
+  },
+  "cast": [
+    {
+      "name": "Paul",
+      "who": "The named sender, writing as a prisoner near death. Whether Paul directly composed the letter is debated."
+    },
+    {
+      "name": "Timothy",
+      "who": "The addressee, called beloved child; elsewhere a coworker from Lystra (Acts 16:1–2) whom Paul sent to churches. He is charged to keep the faith he learned and to come before winter."
+    },
+    {
+      "name": "Lois and Eunice",
+      "who": "Timothy's grandmother and mother, named only here (1:5), as the first to hold the sincere faith now in him. Acts 16:1 calls his mother a believing Jewish woman."
+    },
+    {
+      "name": "Onesiphorus and his household",
+      "who": "A man who searched for the prisoner in Rome and was not ashamed of his chain. The letter asks mercy for his household and for him on that day (1:16–18) and greets the household (4:19)."
+    },
+    {
+      "name": "Those who left or opposed",
+      "who": "Phygelus and Hermogenes (1:15), Hymenaeus and Philetus (2:17), Demas (4:10) and Alexander the coppersmith (4:14). Their own accounts are not preserved."
+    },
+    {
+      "name": "Companions and greeters",
+      "who": "Luke, Mark, Tychicus, Prisca and Aquila, Linus, Claudia and others in 4:10–21. Irenaeus identified this Linus with the first bishop of Rome after the apostles."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Do not be ashamed; guard what was entrusted",
+      "chapters": "1",
+      "precise": "1:1–18",
+      "note": "Greeting, thanksgiving and memories of Timothy's family lead to the call to share in hardship and to guard the deposit; those who turned away are contrasted with Onesiphorus."
+    },
+    {
+      "heading": "Endure, hand on, and handle the word rightly",
+      "chapters": "2",
+      "precise": "2:1–26",
+      "note": "Teaching is to be passed on; soldier, athlete and farmer illustrate endurance; a trustworthy saying follows; then warnings about word-quarrels and Hymenaeus and Philetus, and a call to gentle correction."
+    },
+    {
+      "heading": "Hard times, a pattern, and the Scriptures",
+      "chapters": "3",
+      "precise": "3:1–17",
+      "note": "A list of vices in the last days and a warning about certain teachers give way to Timothy's own pattern: the writer's conduct and sufferings, and the Scriptures known from childhood."
+    },
+    {
+      "heading": "Final charge, farewell, and errands",
+      "chapters": "4",
+      "precise": "4:1–22",
+      "note": "A solemn charge to preach, the writer's farewell in 4:6–8, then requests, warnings, an account of the first defense, and greetings."
+    }
+  ],
+  "purpose": "2 Timothy asks its reader to stay loyal when loyalty is costly. Timothy is to share the writer's hardship without shame, guard what he received, pass it on to others who can teach, correct opponents gently, and keep to the Scriptures he has known. The writer's own finished course and the promised appearing of Christ stand behind each request.",
+  "snags": [
+    {
+      "snag": "The description of gullible women at 3:6–7 can read like a judgment on women in general.",
+      "help": "WEB has gullible women; KJV and Douay-Rheims have silly women. The passage attacks particular teachers who enter households, and describes some people they influence in harsh polemical terms. The same letter names Lois and Eunice as the source of Timothy's faith (1:5) and greets Prisca (4:19) and passes on Claudia's greeting (4:21). The verses do not describe women as a group and give no warrant for treating them as less able to learn."
+    },
+    {
+      "snag": "The opponents are described only by their critics.",
+      "help": "The vice list of 3:2–5, the comparison with Pharaoh's magicians and the charge of corrupted minds are polemic, not neutral reports. The same letter tells Timothy to correct opponents with gentleness in hope of their repentance (2:24–26), and the writer asks that those who deserted him not be held to account (4:16)."
+    },
+    {
+      "snag": "Jannes and Jambres are not named in Exodus.",
+      "help": "Exodus 7 describes Pharaoh's magicians without names. The names come from Jewish tradition: the Damascus Document from the Dead Sea Scrolls mentions Jannes and his brother, Targum Pseudo-Jonathan names both, and the Douay-Rheims follows the Latin form Mambres. The letter uses a known tradition to make a comparison; it does not claim to be the source of the names."
+    },
+    {
+      "snag": "The resurrection already past at 2:18 can sound like a puzzle the letter will solve.",
+      "help": "The letter gives only the claim and its effect: it is upsetting the faith of some. How Hymenaeus and Philetus understood it is not stated; any fuller account is reconstruction. A Hymenaeus also appears in 1 Timothy 1:20."
+    },
+    {
+      "snag": "The last days in 3:1 can sound like a prediction about a distant future.",
+      "help": "The list is framed as future, but 3:5 tells Timothy to turn away from such people now, and 3:6–9 describes people already active."
+    },
+    {
+      "snag": "The personal notes at the end can seem like loose ends.",
+      "help": "The cloak, books and parchments (4:13), the people who left or were sent (4:10–12), and the greetings (4:19–21) belong to the letter's picture of a prisoner near the end. Titus, who in his own letter is left on Crete (Titus 1:5), here has gone to Dalmatia (4:10). The notes do not by themselves fix a chronology, and travel references such as Troas (4:13) are argued on both sides of the authorship question."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Did Paul directly compose 2 Timothy?",
+      "settled": "The letter names Paul and Timothy, and Timothy is known as Paul's coworker from Acts and from letters whose Pauline authorship is not disputed. Early Christian writers received it as Paul's: Irenaeus names Paul as the writer of the letters to Timothy, and the Muratorian list counts two to Timothy among Paul's letters.",
+      "positions": [
+        {
+          "view": "Direct Pauline authorship",
+          "grounds": "Defenders argue that differences of vocabulary and style can reflect subject matter or a secretary's work, and that a release and second imprisonment after the end of Acts, as Eusebius reports, leaves room for the letter's travel details. Some scholars treat 2 Timothy separately from 1 Timothy and Titus: Jerome Murphy-O'Connor accepted 2 Timothy as Paul's while rejecting the other two. Many who read it this way describe it as Paul's farewell testament."
+        },
+        {
+          "view": "Later writing in Paul's name",
+          "grounds": "Many scholars since the nineteenth century, most according to a survey article, conclude from vocabulary, style, church organization and the difficulty of fitting the travel references into Paul's known life that the three Pastoral Letters come from a follower of Paul, with proposed dates such as 90 to 140 CE. Within this view, Raymond Brown proposed a follower who knew of Paul's last days, and others propose use of Paul's surviving or lost letters."
+        }
+      ],
+      "soWhat": "The answer affects the date and the historical use of the letter's details, such as the first defense and the people named. It does not change what the letter asks of its reader. Keep the letter's own presentation, its early reception and modern reconstruction distinct."
+    },
+    {
+      "question": "Is the prayer for Onesiphorus a prayer for someone who has died?",
+      "settled": "At 1:16 the writer asks mercy for the household of Onesiphorus and at 1:18 asks that Onesiphorus find mercy from the Lord on that day. At 4:19 the household, not Onesiphorus himself, is greeted. The letter does not say that he has died.",
+      "positions": [
+        {
+          "view": "Onesiphorus had died, and this is prayer for the dead",
+          "grounds": "Because Onesiphorus is spoken of in the past tense and only his household is greeted, some scholars think he had died. Catholic writers cite the passage, with 2 Maccabees 12:40–46, as an early example of prayer for the dead."
+        },
+        {
+          "view": "The passage does not establish that he had died",
+          "grounds": "Some Protestants who oppose prayer for the dead reject that reading. The text gives no explicit statement of death, and a wish that a living person find mercy on the day of judgment is also possible."
+        }
+      ],
+      "soWhat": "The verses are short and the decisive fact is not stated. Christian traditions reach different conclusions about prayer for the dead on wider grounds than these verses alone."
+    },
+    {
+      "question": "How should 3:16 be translated, and what Scripture is in view?",
+      "settled": "The sentence joins God-breathed and profitable, and lists teaching, reproof, correction and instruction in righteousness. In the setting of 3:15, the writings in view include the holy writings Timothy knew from infancy. The adjective theopneustos occurs only here in the New Testament.",
+      "positions": [
+        {
+          "view": "Every Scripture is God-breathed and profitable",
+          "grounds": "WEB and KJV take both adjectives as statements about Scripture. The NET notes defend this, arguing that the two adjectives are parallel, and prefer every to all, citing ordinary Greek usage and the noun's lack of an article."
+        },
+        {
+          "view": "Every God-breathed Scripture is also profitable",
+          "grounds": "The Douay-Rheims wording, All scripture, inspired of God, is profitable, can be read this way. A survey article reports that C. H. Dodd preferred this rendering and that Daniel Wallace, who rejects it, says many scholars hold it; the NET notes also reject it."
+        }
+      ],
+      "soWhat": "Both readings treat the Scriptures in view as inspired by God; the first states it, the second assumes it. The verse does not list which books count as Scripture, so it does not by itself settle later questions about the canon."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, 2 Timothy",
+      "says": "Provides the wording, sequence, names, places and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/2TI/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "2 Timothy in the World English Bible, King James Version and Douay-Rheims",
+      "says": "Shows the different renderings, readings and verse divisions compared in the language section and snags."
+    },
+    {
+      "id": "greek-2ti",
+      "label": "SBL Greek New Testament, 2 Timothy, with MorphGNT analysis",
+      "says": "Provides the Greek forms and lemmas, the measured occurrences and the readings used in the language discussion; it is a modern edited Greek text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/76-2Ti-morphgnt.txt"
+    },
+    {
+      "id": "net-2ti",
+      "label": "NET Bible, 2 Timothy: text and translator notes",
+      "says": "Translator and text-critical notes on 1:8, 1:11, 1:12, 1:14, 2:3, 2:14, 2:15, 2:19 (a quotation from Numbers 16:5), 3:16, 4:6, 4:7 and 4:22, as cited in each place, and study notes at 2:16 and 4:4 that link the false teaching with Ephesus.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/2ti.pdf"
+    },
+    {
+      "id": "wp-2ti",
+      "label": "Wikipedia, Second Epistle to Timothy (survey article)",
+      "says": "Reports the split over authorship, a range of about 90 to 140 CE for later composition, Murphy-O'Connor's and Raymond Brown's positions, the farewell testament genre, and the oldest manuscripts, beginning with Codex Sinaiticus, including a fifth-century leaf of Codex Freerianus with 1:10–12.",
+      "url": "https://en.wikipedia.org/wiki/Second_Epistle_to_Timothy"
+    },
+    {
+      "id": "wp-pauline-authorship",
+      "label": "Wikipedia, Authorship of the Pauline epistles (survey article)",
+      "says": "Summarizes the arguments against Pauline authorship of the Pastorals, the replies of defenders (including L. T. Johnson's point about likenesses between 2 Timothy and Philippians), the secretary and follower proposals, the dispute over Paul's travels, early acceptance by many church fathers, and Marcion's exclusion of the Pastorals.",
+      "url": "https://en.wikipedia.org/wiki/Authorship_of_the_Pauline_epistles"
+    },
+    {
+      "id": "eusebius-he-2-22",
+      "label": "Eusebius, Church History 2.22 (fourth century)",
+      "says": "Reports that Paul was said to have been released after his defense, to have returned to Rome and suffered martyrdom, and that in this imprisonment he wrote 2 Timothy; he quotes 4:16–18 and 4:6 and identifies the lion of 4:17 with Nero.",
+      "url": "https://www.newadvent.org/fathers/250102.htm"
+    },
+    {
+      "id": "irenaeus-ah-3-3",
+      "label": "Irenaeus, Against Heresies 3.3 (c. AD 180)",
+      "says": "Says that the apostles committed the office of bishop at Rome to Linus, and that Paul mentions this Linus in the Epistles to Timothy.",
+      "url": "https://www.newadvent.org/fathers/0103303.htm"
+    },
+    {
+      "id": "muratorian",
+      "label": "The Muratorian Fragment (list of New Testament books)",
+      "says": "Lists among Paul's letters one to Philemon, one to Titus and two to Timothy, held sacred for church discipline.",
+      "url": "https://www.earlychristianwritings.com/text/muratorian-metzger.html"
+    },
+    {
+      "id": "polycarp-phil",
+      "label": "Polycarp, To the Philippians (c. AD 110–140)",
+      "says": "Contains wording close to 2:12 in chapter 5 (we shall also reign together with Him) and to 4:10 in chapter 9 (they loved not this present world). Whether Polycarp drew on this letter is a judgment; Wikipedia's survey of the Pastorals calls it probable that he knew the letters to Timothy.",
+      "href": "/early/polycarp-philippians"
+    },
+    {
+      "id": "wp-pastorals",
+      "label": "Wikipedia, Pastoral epistles (survey article)",
+      "says": "States that Irenaeus explicitly references the letters to Timothy and that Polycarp probably knew them, which sets a latest date for their composition.",
+      "url": "https://en.wikipedia.org/wiki/Pastoral_epistles"
+    },
+    {
+      "id": "wp-jannes",
+      "label": "Wikipedia, Jannes and Jambres (survey article)",
+      "says": "Explains that Exodus does not name the magicians, that the names occur in Jewish tradition including the Damascus Document and Targum Pseudo-Jonathan, and that Latin manuscripts have Jamnes and Mambres.",
+      "url": "https://en.wikipedia.org/wiki/Jannes_and_Jambres"
+    },
+    {
+      "id": "wp-onesiphorus",
+      "label": "Wikipedia, Onesiphorus (survey article)",
+      "says": "Reports that some scholars think Onesiphorus had died, that Catholics cite 2 Timothy 1:16–18 with 2 Maccabees 12:40–46 as an early example of prayer for the dead, and that some Protestants reject that reading.",
+      "url": "https://en.wikipedia.org/wiki/Onesiphorus"
+    },
+    {
+      "id": "wp-inspiration",
+      "label": "Wikipedia, Biblical inspiration (survey article)",
+      "says": "Notes that Jerome rendered theopneustos at 3:16 as divinitus inspirata, that modern versions use God-breathed or breathed out by God, and that C. H. Dodd preferred 'Every inspired Scripture is also useful', a rendering Daniel Wallace says many scholars hold and he rejects.",
+      "url": "https://en.wikipedia.org/wiki/Biblical_inspiration"
+    },
+    {
+      "id": "acts-timothy",
+      "label": "Acts 16 and 28, World English Bible",
+      "says": "Acts 16:1–2 introduces Timothy at Lystra as the son of a believing Jewish woman and a Greek father; Acts 28:16 and 28:30–31 leave Paul under guard in Rome for two years without narrating his death.",
+      "href": "/scriptures/protestant/ACT/16"
+    },
+    {
+      "id": "philippians-parallels",
+      "label": "Philippians 1 and 2, World English Bible with SBL Greek",
+      "says": "Philippians 2:17 has the verb for being poured out found at 2 Timothy 4:6, and Philippians 1:23 has the verb related to departure; Philippians 2:19–22 describes Timothy serving with Paul.",
+      "href": "/scriptures/protestant/PHP/2"
+    },
+    {
+      "id": "first-timothy-parallels",
+      "label": "1 Timothy 1 and 6, World English Bible",
+      "says": "1 Timothy 1:3 places Timothy at Ephesus; 1:20 names a Hymenaeus with Alexander; 6:20 tells Timothy to guard what was committed to him, using the same noun as 2 Timothy 1:12 and 1:14.",
+      "href": "/scriptures/protestant/1TI/1"
+    },
+    {
+      "id": "wp-nt-papyri",
+      "label": "Wikipedia, List of New Testament papyri (survey article)",
+      "says": "Tabulates the known New Testament papyri by book; it lists none for 2 Timothy and Papyrus 133 for 1 Timothy.",
+      "url": "https://en.wikipedia.org/wiki/List_of_New_Testament_papyri"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Follow the shame thread through chapter 1 and into 2:15. Ask who is ashamed, of what, and what answer the letter gives.",
+      "refs": [
+        "1:8",
+        "1:12",
+        "1:16",
+        "2:15"
+      ]
+    },
+    {
+      "tip": "Read the soldier, athlete and farmer together, then stop at 2:7 as the letter asks. Compare them with the writer's own contest in 4:7–8.",
+      "refs": [
+        "2:3",
+        "2:4",
+        "2:5",
+        "2:6",
+        "2:7",
+        "4:7"
+      ]
+    },
+    {
+      "tip": "Set the harsh descriptions of opponents beside the instruction to correct them gently and the writer's prayer for those who deserted him.",
+      "refs": [
+        "2:24",
+        "2:25",
+        "2:26",
+        "4:14",
+        "4:16"
+      ]
+    },
+    {
+      "tip": "Read 3:14–17 with 3:10–11: Timothy has two sources of formation, the life he watched and the writings he learned from childhood.",
+      "refs": [
+        "3:10",
+        "3:11",
+        "3:14",
+        "3:15",
+        "3:16",
+        "3:17"
+      ]
+    },
+    {
+      "tip": "Read the farewell of 4:6–8 and then the errands of 4:9–21 without hurrying past the names. The letter ends with ordinary needs as well as last words.",
+      "refs": [
+        "4:6",
+        "4:8",
+        "4:11",
+        "4:13",
+        "4:21"
+      ]
+    }
+  ],
+  "next": "Read Philippians, another letter written from imprisonment, which uses the same image of being poured out. Read 1 Timothy and Titus for the related Pastoral Letters, and Acts 16 to meet Timothy. Polycarp's letter to the Philippians, hosted on this site, shows close wording to this letter early in the second century.",
+  "traditionNote": "2 Timothy belongs to the New Testament and is grouped with 1 Timothy and Titus as the Pastoral Letters; that grouping describes shared concerns and does not settle authorship. The Muratorian list counts two letters to Timothy among Paul's. Marcion's second-century collection of Paul's letters did not include the Pastorals. In the Douay-Rheims the verse division at 4:8–10 differs from WEB and KJV, though the chapter has the same number of verses."
+}

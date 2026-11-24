@@ -1,12 +1,30 @@
 // Shared etched-print Path2D primitives, camera fit math, and subtle guide overlays for 2D playable stories.
+const MAX_CACHED_PATHS = 512;
 const blocks = new Map<string, Path2D>();
 
-export function print(ctx: CanvasRenderingContext2D, d: string, fill: string, stroke?: string, width = 1) {
-  let path = blocks.get(d);
-  if (!path) {
-    path = new Path2D(d);
-    blocks.set(d, path);
-  }
+export interface DragVisualState {
+  active: boolean;
+  originX: number;
+  originY: number;
+  curX: number;
+  curY: number;
+}
+
+export function inkCacheSize(): number {
+  return blocks.size;
+}
+
+export function clearInkCache(): void {
+  blocks.clear();
+}
+
+function drawPath(
+  ctx: CanvasRenderingContext2D,
+  path: Path2D,
+  fill: string,
+  stroke?: string,
+  width = 1,
+) {
   if (fill) {
     ctx.fillStyle = fill;
     ctx.fill(path);
@@ -16,6 +34,25 @@ export function print(ctx: CanvasRenderingContext2D, d: string, fill: string, st
     ctx.lineWidth = width;
     ctx.stroke(path);
   }
+}
+
+/** Draws and caches a static SVG path string with a bounded FIFO cache (never grows unbounded). */
+export function print(ctx: CanvasRenderingContext2D, d: string, fill: string, stroke?: string, width = 1) {
+  let path = blocks.get(d);
+  if (!path) {
+    if (blocks.size >= MAX_CACHED_PATHS) {
+      const oldest = blocks.keys().next().value;
+      if (oldest !== undefined) blocks.delete(oldest);
+    }
+    path = new Path2D(d);
+    blocks.set(d, path);
+  }
+  drawPath(ctx, path, fill, stroke, width);
+}
+
+/** Draws a per-frame dynamic/interpolated SVG path string without inserting into the static cache. */
+export function printDynamic(ctx: CanvasRenderingContext2D, d: string, fill: string, stroke?: string, width = 1) {
+  drawPath(ctx, new Path2D(d), fill, stroke, width);
 }
 
 export function polygon(ctx: CanvasRenderingContext2D, color: string, ...points: number[]) {
@@ -81,6 +118,82 @@ export function drawGuideMarker(
   ctx.translate(x, y + lift);
   polygon(ctx, '#4c3628', -7, -9, 7, -9, 0, 1);
   polygon(ctx, '#fff0a5', -5, -8, 5, -8, 0, -1);
+  ctx.restore();
+}
+
+/** Subtle etched highlight ellipse rendered in world space under a hovered interactive target. */
+export function drawHoverRing(
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  rx: number,
+  ry: number,
+  color = 'rgba(255, 241, 174, .88)',
+): void {
+  ctx.save();
+  ctx.strokeStyle = 'rgba(42, 31, 22, .45)';
+  ctx.lineWidth = 3.2;
+  ctx.beginPath();
+  ctx.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.65;
+  ctx.beginPath();
+  ctx.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.restore();
+}
+
+/**
+ * Tactile virtual steering compass drawn in canvas CSS-pixel space (after `setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0)`).
+ * Visible only while pointer drag drift exceeds the 8 px drag threshold (`drag.active === true`).
+ */
+export function drawDragCompass(
+  ctx: CanvasRenderingContext2D,
+  drag: DragVisualState,
+  reduced: boolean,
+): void {
+  if (!drag.active) return;
+  const dx = drag.curX - drag.originX;
+  const dy = drag.curY - drag.originY;
+  const dist = Math.hypot(dx, dy);
+  const maxR = 32;
+  const clampDist = Math.min(maxR, dist);
+  const nx = dist > 1e-4 ? (dx / dist) * clampDist : 0;
+  const ny = dist > 1e-4 ? (dy / dist) * clampDist : 0;
+
+  ctx.save();
+  ctx.strokeStyle = 'rgba(44, 34, 24, .46)';
+  ctx.fillStyle = 'rgba(255, 246, 218, .18)';
+  ctx.lineWidth = 2.2;
+  ctx.beginPath();
+  ctx.arc(drag.originX, drag.originY, maxR, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.strokeStyle = 'rgba(255, 243, 198, .75)';
+  ctx.lineWidth = 1.25;
+  ctx.beginPath();
+  ctx.arc(drag.originX, drag.originY, maxR - 1.5, 0, Math.PI * 2);
+  ctx.stroke();
+
+  if (!reduced && clampDist > 2) {
+    ctx.strokeStyle = 'rgba(255, 243, 198, .72)';
+    ctx.lineWidth = 1.8;
+    ctx.beginPath();
+    ctx.moveTo(drag.originX, drag.originY);
+    ctx.lineTo(drag.originX + nx, drag.originY + ny);
+    ctx.stroke();
+  }
+
+  ctx.fillStyle = 'rgba(44, 34, 24, .62)';
+  ctx.beginPath();
+  ctx.arc(drag.originX + nx, drag.originY + ny, 8.5, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = '#fff2ce';
+  ctx.beginPath();
+  ctx.arc(drag.originX + nx, drag.originY + ny, 6.2, 0, Math.PI * 2);
+  ctx.fill();
   ctx.restore();
 }
 

@@ -3,6 +3,7 @@ import { expect, test, type Page } from "@playwright/test";
 const hub = "/scriptures/stories/play";
 const temple = `${hub}/overturned-tables`;
 const elah = `${hub}/valley-of-elah`;
+const storm = `${hub}/storm-on-the-lake`;
 
 test("a filtered Stories shelf opens the games and keeps its place on Back", async ({ page }) => {
   await page.goto("/scriptures/stories");
@@ -158,6 +159,57 @@ test("Valley of Elah sheds Saul’s armor, gathers five stones, faces Goliath, a
   await expect(page.getByText(/\b0\s*\/\s*5\b/)).toBeVisible();
 });
 
+test("Storm on the Lake launches at dusk, fights the squall, wakes Jesus, calms the sea, and replays cleanly", async ({ page }) => {
+  test.setTimeout(90_000);
+  await page.goto(storm);
+  await expect(page.getByRole("heading", { level: 1, name: "The storm on the lake" })).toBeVisible();
+  await expect(page.getByText("Evening 0 / 2", { exact: true })).toBeVisible();
+
+  const summary = page.locator("summary").filter({ hasText: /^Boat targets$/i });
+  await summary.press("Enter");
+  const targets = page.locator("details[open]").filter({ has: summary });
+
+  // Complete evening launch tasks (sail & oars)
+  await targets.getByRole("button", { name: /^Set the sail/ }).click();
+  await expect(page.getByText("Evening 1 / 2", { exact: true })).toBeVisible({ timeout: 15_000 });
+  await targets.getByRole("button", { name: /^Pull the oars/ }).click();
+  await expect(page.getByText("Squall 0 / 3", { exact: true })).toBeVisible({ timeout: 15_000 });
+
+  // Fight squall (drop sail + bail bow & midship)
+  for (const [label, status] of [
+    ["Bail bow water", "Squall 1 / 3"],
+    ["Drop the sail", "Squall 2 / 3"],
+    ["Bail midship water", "Boat filling"],
+  ]) {
+    await targets.getByRole("button", { name: new RegExp(`^${label}`) }).click();
+    await expect(page.getByText(status, { exact: true })).toBeVisible({ timeout: 15_000 });
+  }
+
+  // Wake Jesus in the stern -> untimed rebuke turning point
+  await targets.getByRole("button", { name: /^Wake Jesus/ }).click();
+  await expect(page.getByText("Jesus in the stern", { exact: true })).toBeVisible({ timeout: 15_000 });
+  const card = page.locator(".storm-card");
+  await expect(card.getByText(/don’t you care that we are dying/i)).toBeVisible();
+
+  // Pause & resume cleanly before speaking stillness
+  await page.getByRole("button", { name: "Pause", exact: true }).press("Enter");
+  await page.getByRole("button", { name: "Resume", exact: true }).press("Enter");
+
+  // Speak to the sea -> Great calm + Mark 4:39–41 verse cycling + replay
+  await page.getByRole("button", { name: "Speak to the sea", exact: true }).first().click();
+  await expect(page.getByText("Great calm", { exact: true })).toBeVisible();
+  await expect(card.getByText(/Peace! Be still!/i)).toBeVisible();
+
+  const readBtn = page.getByRole("button", { name: "Read verse", exact: true });
+  await readBtn.click();
+  await expect(card.getByText(/Why are you so afraid/i)).toBeVisible();
+  await readBtn.click();
+  await expect(card.getByText(/wind and the sea obey him/i)).toBeVisible();
+
+  await page.getByRole("button", { name: "Play again", exact: true }).click();
+  await expect(page.getByText("Evening 0 / 2", { exact: true })).toBeVisible();
+});
+
 test.describe("the game index without JavaScript", () => {
   test.use({ javaScriptEnabled: false, viewport: { width: 320, height: 700 } });
 
@@ -174,6 +226,8 @@ test.describe("the game index without JavaScript", () => {
       ["Enter the Valley of Elah", elah],
       ["Read David’s story", "/scriptures/stories/david"],
       ["Read 1 Samuel 17", "/scriptures/protestant/1SA/17?t=web#v1"],
+      ["Board the Galilee boat", storm],
+      ["Read Mark 4:35–41", "/scriptures/protestant/MRK/4?t=web#v35"],
     ]) {
       const link = collection.getByRole("link", { name, exact: true });
       await expect(link).toBeVisible();
@@ -202,5 +256,15 @@ test.describe("the game index without JavaScript", () => {
     await expect(reading.locator('a[href*="/scriptures/protestant/1SA/17"]')).toBeVisible();
     await expect(reading.locator('a[href="/scriptures/stories/david"]')).toBeVisible();
     await expect(reading.getByText(/no sword in David’s hand/i)).toBeVisible();
+  });
+
+  test("the Storm on the Lake page opens the Gospel accounts without starting the game", async ({ page }) => {
+    await page.goto(storm);
+    const summary = page.locator("summary").filter({ hasText: /^Read the Gospel accounts$/i });
+    await summary.press("Enter");
+    const reading = page.locator("details[open]").filter({ has: summary });
+    await expect(reading.locator('a[href*="/scriptures/protestant/MRK/4"]')).toBeVisible();
+    await expect(reading.locator('a[href*="/scriptures/protestant/LUK/8"]')).toBeVisible();
+    await expect(reading.getByText(/Peace! Be still!/i)).toBeVisible();
   });
 });

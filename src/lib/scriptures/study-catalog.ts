@@ -42,6 +42,7 @@ const STUDY_GROUPS: readonly StudyGroupSpec[] = [
       "/scriptures/stories/play",
       "/scriptures/stories/play/overturned-tables",
       "/scriptures/stories/play/valley-of-elah",
+      "/scriptures/stories/play/storm-on-the-lake",
     ],
   },
 ];

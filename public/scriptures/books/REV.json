@@ -1,0 +1,639 @@
+{
+  "book": "REV",
+  "bookName": "Revelation",
+  "oneLine": "A prophetic vision report, sent as a letter to seven churches in Asia, that sets their present trials before God's throne and the Lamb and ends with a new creation.",
+  "orient": "In its first eleven verses the book calls itself a revelation and a prophecy and takes the form of a letter. A man named John reports what he saw and heard on Patmos and sends it to seven named assemblies. Messages to those assemblies come first; then a heavenly throne room, a slain and standing Lamb, and linked series of seven seals, trumpets, and bowls. Conflict with a dragon, two beasts, and a city called Babylon ends in judgment, and the book closes with a city coming down from heaven. Readers have long disagreed about what its images refer to, so it helps to notice first what the text says and how it says it.",
+  "whereYouAre": "The book assumes that its hearers already know of Jesus' death and resurrection: he is the one who was dead and is alive (1:5, 1:18). John says he shares with them in oppression and endurance and is on Patmos because of God's word and the testimony of Jesus (1:9). The seven assemblies face different conditions: one witness, Antipas, has been killed at Pergamum (2:13); some assemblies face poverty and prison (2:9–10); others are praised for endurance or rebuked as comfortable and self-satisfied (3:15–17). The book itself does not name an emperor or give a year.",
+  "facts": {
+    "writtenBy": "The writer calls himself John (1:1, 1:4, 1:9, 22:8) and a servant and brother, and does not call himself an apostle. Second-century writers identified him with John the apostle or the Lord's disciple; in the third century Dionysius of Alexandria argued from style that he was another John. Which John wrote it remains debated.",
+    "writtenWhen": "Irenaeus placed the vision near the end of Domitian's reign (81–96), and a date around 95 is common in modern surveys. A date under or soon after Nero (54–68) is also argued. The text gives no year, and no date is secure.",
+    "writtenFor": "Seven named assemblies in Asia: Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea (1:4, 1:11). It expects to be read aloud to listeners (1:3).",
+    "place": "John says the vision came to him on the island called Patmos (1:9). The book does not say whether it was written down there or later.",
+    "covers": "Seven messages to the assemblies; the throne and the Lamb; series of seven seals, trumpets, and bowls; the dragon and the two beasts; the fall of Babylon; the thousand years and the final judgment; the new heaven, new earth, and new Jerusalem.",
+    "size": "Twenty-two chapters, 404 verses, and 11,369 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "justin-dialogue-81",
+      "irenaeus-ah-4-20",
+      "eusebius-ch-7-25",
+      "eusebius-ch-3"
+    ],
+    "writtenWhen": [
+      "irenaeus-ah-5-30",
+      "eusebius-ch-3",
+      "wikipedia-revelation",
+      "wikipedia-number-beast"
+    ],
+    "writtenFor": [
+      "hosted-web"
+    ],
+    "place": [
+      "hosted-web",
+      "wikipedia-revelation"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "A visionary report told in short, linked clauses, many beginning with \"and\". It mixes narrative, hymns sung in heaven, formal messages, oracles of woe, and lament. It never quotes the Old Testament with a formula such as \"as it is written\", yet its phrases and images come constantly from Daniel, Ezekiel, Isaiah, Zechariah, Exodus, and the Psalms. Its Greek is sometimes irregular by ordinary grammar; ancient and modern readers have noticed this and explained it in different ways.",
+    "spokenWorld": "The book is addressed in Greek to assemblies in Asia, but the visionary world draws on Hebrew names and scenes. It marks two names as Hebrew for its readers, Abaddon, paired with the Greek Apollyon (9:11), and Harmagedon (16:16), and uses Hebrew words of worship such as Amen and Hallelujah (19:1–6). The Greek is the language of the book as written; the text does not say what language John or the assemblies spoke day to day.",
+    "readerSignal": "Watch the pairs of hearing and seeing. At 5:5 John hears of a Lion and at 5:6 he sees a Lamb that looks slain; at 7:4 he hears a number and at 7:9 he sees a crowd no one could count. Notice also how often a description begins with \"like\" or \"as\": the writer marks his images as comparisons.",
+    "englishLayer": "The World English Bible (WEB), King James Version (KJV), and Douay-Rheims (DRB) differ here in vocabulary and, at several points, in the Greek or Latin readings behind them. At 22:14 WEB and KJV bless those who do his commandments, while DRB and the SBL Greek have those who wash their robes (DRB adds in the blood of the Lamb). At 22:19 KJV and DRB have book of life, while WEB and the SBL Greek have tree of life. Chapter 12 also differs in length; see the snags below. The Greek examples follow the SBL Greek New Testament, a modern edited text.",
+    "textualHistory": [
+      {
+        "label": "A Greek vision report sent as a letter",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The book opens as an apocalypse (1:1), calls itself prophecy (1:3), and then takes the form of a letter with sender, addressees, and greeting (1:4–5), closing with a grace wish (22:21). Its Greek is dense with Old Testament language but contains no formal quotation. Dionysius of Alexandria judged its Greek inaccurate in places; modern grammarians debate whether some irregularities, as at 1:4, are deliberate.",
+        "sourceIds": [
+          "hosted-web",
+          "greek-revelation",
+          "eusebius-ch-7-25",
+          "net-revelation",
+          "wikipedia-revelation",
+          "scriptural-parallels"
+        ]
+      },
+      {
+        "label": "Early papyrus witnesses",
+        "language": "Koine Greek",
+        "role": "earliest-extant",
+        "description": "Papyrus 115, fragments from Oxyrhynchus in Egypt now in the Ashmolean Museum, preserves parts of chapters 2–15 and is dated about 225–275. At 13:18 it apparently reads the number of the beast as 616 rather than 666. A fragment known as Papyrus 18, dated to the third or fourth century, preserves 1:4–7. Both are fragments.",
+        "sourceIds": [
+          "wikipedia-p115",
+          "wikipedia-revelation",
+          "net-revelation"
+        ]
+      },
+      {
+        "label": "Printed Greek and the English editions",
+        "language": "English translations from differing Greek and Latin readings",
+        "role": "translation",
+        "description": "The NET Bible notes explain that the printed Greek behind the KJV took its last six verses of Revelation from a back-translation of the Latin, which is how book of life entered 22:19; nearly all Greek manuscripts read tree of life. The difference at 12:18 is also a matter of readings, and the SBL Greek marks a variant at 22:14, where the editions disagree. The SBL Greek is a modern critical comparison, not the base text of every English edition.",
+        "sourceIds": [
+          "net-revelation",
+          "hosted-editions",
+          "greek-revelation"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "The number seven as a structure",
+        "original": "ἑπτά — hepta — seven",
+        "explanation": "The lemma (dictionary form) ἑπτά occurs 55 times in the SBL Greek of Revelation, 11 of them in chapter 1. Seven assemblies, spirits, lampstands, and stars open the book; seven seals, trumpets, and bowls carry its middle. In the seals and the trumpets an interlude comes between the sixth and the seventh (7:1–17, 10:1–11:14), and the seventh seal opens onto the trumpets (8:1–2).",
+        "translationNote": "English keeps the number, but a translation can hide other choices. WEB and KJV print seven Spirits at 1:4 with a capital letter; DRB prints seven spirits. The capital letter is the translator's interpretation of what the seven spirits are; the hosted Greek does not capitalize the word.",
+        "caution": "The sevens arrange the vision; they do not supply a calendar, and counting them does not show whether the series follow one another or retell the same span.",
+        "refs": [
+          "1:4",
+          "1:20",
+          "5:1",
+          "8:2",
+          "15:1"
+        ],
+        "sourceIds": [
+          "greek-revelation",
+          "hosted-editions",
+          "facts-count"
+        ]
+      },
+      {
+        "title": "I saw, I heard, and like",
+        "original": "εἶδον / ἤκουσα / ὡς / ὅμοιος — eidon / ēkousa / hōs / homoios — I saw / I heard / as / like",
+        "explanation": "The form εἶδον, I saw, occurs 45 times and ἤκουσα, I heard, 27 times. Comparison words are just as frequent: ὡς, as or like, 70 times and ὅμοιος, like, 21 times. The book reports experience rather than describing objects directly: the one on the throne is like jasper (4:3). The NET Bible notes that and I saw usually marks a new vision.",
+        "translationNote": "English versions vary between like, as, and something like, and sometimes drop the comparison word in long sentences.",
+        "caution": "The order of John's report is not necessarily the order of the events he sees, and the comparison words warn against treating images as technical descriptions. Neither point settles which interpretive approach is right.",
+        "refs": [
+          "1:13",
+          "4:3",
+          "5:5",
+          "5:6",
+          "7:4",
+          "7:9"
+        ],
+        "sourceIds": [
+          "greek-revelation",
+          "net-revelation",
+          "facts-count"
+        ]
+      },
+      {
+        "title": "The one who conquers",
+        "original": "νικάω — nikaō — conquer, overcome, prevail",
+        "explanation": "The lemma νικάω occurs 17 times. Each of the seven messages ends with a promise to the one who conquers (2:7 through 3:21), and the new Jerusalem repeats it (21:7). It is used of the Lion of Judah (5:5), the Lamb (17:14), and believers who conquer the accuser by the Lamb's blood and their testimony (12:11), but also of the beast conquering the saints (11:7, 13:7).",
+        "translationNote": "WEB and KJV use overcome; other versions use conquer or be victorious. The NET Bible notes that the dangling phrase to the one who conquers, left hanging before the promise, is characteristic of this author's style.",
+        "caution": "Victory for the faithful is defined by testimony and endurance (12:11, 13:10). The word does not commission readers to fight anyone; the book uses one verb for two kinds of power and sets them against each other.",
+        "refs": [
+          "2:7",
+          "3:21",
+          "5:5",
+          "11:7",
+          "12:11",
+          "13:7",
+          "21:7"
+        ],
+        "sourceIds": [
+          "greek-revelation",
+          "net-revelation",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "Witness and testimony",
+        "original": "μάρτυς / μαρτυρία / μαρτυρέω — martys / martyria / martyreō — witness / testimony / bear witness",
+        "explanation": "This word family occurs 18 times. Jesus is the faithful witness (1:5, 3:14); John writes the testimony of Jesus (1:2); Antipas is my witness (2:13); two witnesses prophesy and are killed (11:3, 11:7). Several witnesses die, so testimony and death are closely linked.",
+        "translationNote": "At 2:13 KJV calls Antipas a faithful martyr, while WEB has my witness, my faithful one and DRB faithful witness. The NET Bible notes that the Greek word can mean both witness and martyr. English martyr narrows a word that in most of these verses means one who testifies.",
+        "caution": "Not every occurrence describes death; John's testimony at 1:2 is a report of what he saw. The later technical sense of martyr should not be read into every verse.",
+        "refs": [
+          "1:2",
+          "1:5",
+          "2:13",
+          "11:3",
+          "12:11",
+          "19:10"
+        ],
+        "sourceIds": [
+          "greek-revelation",
+          "net-revelation",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "The throne and the Lamb",
+        "original": "θρόνος / ἀρνίον — thronos / arnion — throne / lamb",
+        "explanation": "The lemma θρόνος occurs 47 times, 14 of them in chapter 4, where heaven is built around one throne. The lemma ἀρνίον occurs 29 times, first at 5:6, where a Lamb stands as though slain in the middle of the throne. From then on God and the Lamb receive worship together (5:13, 7:10) and share one throne (22:1, 22:3).",
+        "translationNote": "English Lamb hides a difference of words. Revelation always uses ἀρνίον; the Gospel of John uses ἀμνός when John the Baptist calls Jesus the Lamb of God (John 1:29, 1:36), and ἀρνίον only once, for the flock Peter is to feed (John 21:15).",
+        "caution": "The difference in words is a small data point in the authorship discussion and does not settle it. The throne scenes are visionary pictures, not a floor plan of heaven.",
+        "refs": [
+          "4:2",
+          "5:6",
+          "5:13",
+          "7:10",
+          "22:1",
+          "22:3"
+        ],
+        "sourceIds": [
+          "greek-revelation",
+          "hosted-web",
+          "facts-count"
+        ]
+      },
+      {
+        "title": "The one who is and who was and who is coming",
+        "original": "ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος — ho ōn kai ho ēn kai ho erchomenos — the one who is and the one who was and the one who is coming",
+        "explanation": "At 1:4 the Greek preposition from, which normally takes the genitive case, is followed by this title in the nominative case, the form normally used for a subject. The title returns at 1:8, and in another order at 4:8. At 11:17 and 16:5, after the seventh trumpet has sounded, God is addressed only as the one who is and who was.",
+        "translationNote": "The irregularity disappears in English. A lexicon quoted in the NET notes offers three explanations: a rendering of the divine name, reverence that leaves the name unchanged, or one more of the book's grammatical peculiarities. The NET note prefers a deliberate allusion to Exodus 3:14 in Greek.",
+        "caution": "Whether the irregular Greek is deliberate, Semitic habit, or limited Greek is debated; Dionysius already called parts of the book's Greek inaccurate. The shortened title at 11:17 and 16:5 is plainly visible, but what it signifies is an interpretation.",
+        "refs": [
+          "1:4",
+          "1:8",
+          "4:8",
+          "11:17",
+          "16:5"
+        ],
+        "sourceIds": [
+          "greek-revelation",
+          "net-revelation",
+          "eusebius-ch-7-25",
+          "hosted-web"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek forms to watch",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "Ἀποκάλυψις — apokalypsis",
+        "meaning": "revelation, unveiling",
+        "why": "This is the book's first word and the only use of the lemma in it, and the book's title comes from it. The word is singular: one revelation of Jesus Christ, not a book of Revelations.",
+        "sourceIds": [
+          "greek-revelation",
+          "wikipedia-revelation"
+        ]
+      },
+      {
+        "ref": "5:6",
+        "form": "ἐσφαγμένον — esphagmenon",
+        "meaning": "slaughtered, slain",
+        "why": "The perfect participle describes a state: the Lamb stands, yet bears the marks of having been slaughtered.",
+        "sourceIds": [
+          "greek-revelation",
+          "hosted-web"
+        ]
+      },
+      {
+        "ref": "12:18",
+        "form": "ἐστάθη — estathē",
+        "meaning": "he stood",
+        "why": "The SBL Greek and NET read he stood: the dragon waits by the sea. Most manuscripts read I stood, which WEB and KJV place at 13:1.",
+        "sourceIds": [
+          "greek-revelation",
+          "net-revelation",
+          "hosted-editions"
+        ]
+      },
+      {
+        "ref": "13:18",
+        "form": "ἑξακόσιοι ἑξήκοντα ἕξ — hexakosioi hexēkonta hex",
+        "meaning": "six hundred sixty-six",
+        "why": "The SBL Greek spells the number in words and marks a variant; Codex Ephraemi and, apparently, Papyrus 115 read 616. The verse asks the reader to calculate; it does not name anyone.",
+        "sourceIds": [
+          "greek-revelation",
+          "wikipedia-p115",
+          "net-revelation",
+          "irenaeus-ah-5-30"
+        ]
+      },
+      {
+        "ref": "22:19",
+        "form": "ξύλου — xylou",
+        "meaning": "of the tree (literally wood)",
+        "why": "The Greek reads tree of life, as in 2:7 and 22:2. KJV and DRB read book of life, which the NET notes trace to Latin copies, not Greek manuscripts.",
+        "sourceIds": [
+          "greek-revelation",
+          "net-revelation",
+          "hosted-editions"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "An apocalypse, a prophecy, and a circular letter at once",
+    "how": "Read it the way it asks to be read: aloud, to a gathered assembly (1:3), from start to finish. Treat the images as symbols the text often interprets itself: lampstands are assemblies (1:20), the incense is prayer (5:8), the waters are peoples (17:15), the woman is a city (17:18). Follow the series of seven, let the hymns sung in heaven say what each scene means, and remember that every vision is sent to real assemblies (22:16)."
+  },
+  "cast": [
+    {
+      "name": "John",
+      "who": "The narrator, who calls himself a servant, a brother, and a fellow sharer in oppression, on Patmos. He is twice corrected for trying to worship an angel (19:10, 22:9). Which John he was is debated."
+    },
+    {
+      "name": "Jesus Christ",
+      "who": "The faithful witness who was dead and is alive. He appears as one like a son of man among the lampstands, speaks the seven messages, appears as the Lamb, and later as a rider called Faithful and True and The Word of God (19:11–13)."
+    },
+    {
+      "name": "The one seated on the throne",
+      "who": "God, the Lord God, the Almighty, described only by comparison with precious stones and light, and worshipped as Creator (4:11)."
+    },
+    {
+      "name": "The seven assemblies",
+      "who": "Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea, each praised, warned, or both. Rival teachers named in the messages, such as the Nicolaitans and Jezebel, are known only from the book's side."
+    },
+    {
+      "name": "The woman clothed with the sun",
+      "who": "A sign in heaven who bears a male child and is protected in the wilderness from the dragon (12:1–17)."
+    },
+    {
+      "name": "The dragon and the two beasts",
+      "who": "The dragon is named the old serpent, the devil and Satan (12:9). A beast from the sea receives his authority, and a beast from the earth, later called the false prophet, compels worship of the first (13:1–18, 19:20)."
+    },
+    {
+      "name": "Babylon and the new Jerusalem",
+      "who": "Two women who are also two cities: the great prostitute, Babylon the great city (17:5, 17:18), and the bride, the holy city coming down from heaven (21:2, 21:9–10)."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "Opening and the first vision",
+      "chapters": "1",
+      "precise": "1:1–20",
+      "note": "Title, blessing, and greeting; John on Patmos sees one like a son of man among seven lampstands and is told to write."
+    },
+    {
+      "heading": "Seven messages to the assemblies",
+      "chapters": "2–3",
+      "precise": "2:1–3:22",
+      "note": "Each names the speaker, says I know your works, praises or rebukes, and ends with a promise to the one who conquers."
+    },
+    {
+      "heading": "The throne and the Lamb",
+      "chapters": "4–5",
+      "precise": "4:1–5:14",
+      "note": "A door opens in heaven. Worship of the Creator gives way to the Lamb who alone can open the sealed book."
+    },
+    {
+      "heading": "Six seals and an interlude",
+      "chapters": "6–7",
+      "precise": "6:1–7:17",
+      "note": "Riders and disasters follow the first six seals; then the servants of God are sealed and a countless crowd stands before the throne."
+    },
+    {
+      "heading": "The seventh seal and seven trumpets",
+      "chapters": "8–11",
+      "precise": "8:1–11:19",
+      "note": "Silence in heaven, then the trumpets; between the sixth and seventh come the little book and the two witnesses."
+    },
+    {
+      "heading": "The dragon, the beasts, and the Lamb on Zion",
+      "chapters": "12–14",
+      "precise": "12:1–14:20",
+      "note": "A birth and a war in heaven; the beasts demand worship; the Lamb stands on Zion; angels announce judgment and harvest."
+    },
+    {
+      "heading": "Seven bowls",
+      "chapters": "15–16",
+      "precise": "15:1–16:21",
+      "note": "The song of Moses and the Lamb precedes the last series of plagues, which ends with It is done."
+    },
+    {
+      "heading": "Babylon's fall and the rider on the white horse",
+      "chapters": "17–19",
+      "precise": "17:1–19:21",
+      "note": "The great city is judged and mourned by kings and merchants; heaven rejoices; the rider defeats the beast and false prophet."
+    },
+    {
+      "heading": "The thousand years and the last judgment",
+      "chapters": "20",
+      "precise": "20:1–15",
+      "note": "Satan is bound, those who were faithful reign, Satan is released and defeated, and the dead are judged before the great white throne."
+    },
+    {
+      "heading": "New heaven, new earth, and the closing words",
+      "chapters": "21–22",
+      "precise": "21:1–22:21",
+      "note": "The holy city comes down, God dwells with people, and the river and tree of life heal the nations. The epilogue from 22:6 repeats I am coming soon and warns against adding or removing words."
+    }
+  ],
+  "purpose": "Revelation tells assemblies under pressure, and others at ease, who truly rules. It sets their trials inside worship before God and the Lamb, calls them to faithful testimony and endurance rather than compromise, exposes the claims of beastly power and Babylon's luxury, and holds out a renewal in which God dwells with people and death is no more.",
+  "snags": [
+    {
+      "snag": "The phrase synagogue of Satan has been used against Jewish people.",
+      "help": "At 2:9 and 3:9 the risen Jesus speaks of people at Smyrna and Philadelphia who say they are Jews and are not, and whose slander the text mentions. Who they were is debated: the dominant reading takes them as members of local Jewish communities in conflict with the assemblies; the other main reading takes them as Christian groups the book opposes. Survey articles describe the author as probably a Jewish Christian prophet, and the book uses Jewish identity positively, sealing the tribes of Israel (7:4) and writing their names on the gates of the new Jerusalem (21:12). Later church writers used the phrase in polemic against Jews, and in modern times it has been used to justify antisemitism. The text addresses a specific local conflict and does not license contempt for Jewish people."
+    },
+    {
+      "snag": "The judgment scenes are violent, and the martyrs ask for vengeance.",
+      "help": "The book does not soften judgment: blood flows from the winepress (14:20), birds eat the flesh of kings (19:17–18), and the souls under the altar ask how long until their blood is avenged (6:10). In the book judgment belongs to God and the Lamb, the rider's sword comes from his mouth (19:15), the faithful are given endurance and testimony (13:10), and the plagues are followed by notes on whether people repent (9:20–21, 11:13). Nothing in the text authorizes readers to carry out these judgments."
+    },
+    {
+      "snag": "Babylon, the beast, and the number 666 invite confident identifications.",
+      "help": "The book gives clues: the woman sits on seven mountains, is the great city that rules over the kings of the earth, and is drunk with the blood of the saints (17:6, 17:9, 17:18). Irenaeus tested names against the number, calling Lateinos, a name for the Latins who then ruled, very probable and Teitan more credible still, and many modern readers identify Babylon with Rome in John's day. Later readers have attached the beast and the number to a long line of rulers and institutions. The number itself has a variant: Codex Ephraemi and, apparently, Papyrus 115 read 616, and Irenaeus knew such copies and rejected them. Many modern scholars link 666 to Nero Caesar spelled in Hebrew letters, which also served as numerals and in that spelling add to 666; others read it as a symbol of humanity falling short, and readers who take the book as mostly future expect a figure still to come. Irenaeus already warned against declaring a name, because many names can be fitted to the number. Hold every identification as a proposal."
+    },
+    {
+      "snag": "The numbers and time spans look like a calendar.",
+      "help": "The same span appears three ways: forty-two months (11:2, 13:5), 1,260 days (11:3, 12:6), and a time, times, and half a time (12:14), the last echoing Daniel 7:25. The 144,000 John hears (7:4) is followed by a crowd he sees that no one could count (7:9). Using these figures to date modern events is an interpretation the book does not supply."
+    },
+    {
+      "snag": "Women appear as images, sometimes harshly.",
+      "help": "A prophetess at Thyatira is called Jezebel (2:20); a great prostitute represents a city (17:18); the 144,000 are said not to be defiled with women (14:4). The book also has a woman clothed with the sun (12:1) and a bride who is the holy city (21:9–10). The prophetess at Thyatira is rebuked for what she teaches (2:20–21), under the name of Ahab's Baal-worshipping queen (1 Kings 16:31); the other women are figures for cities and loyalty in the prophets' language. None is a verdict on women as such."
+    },
+    {
+      "snag": "The book does not move in straight time order.",
+      "help": "The seventh seal opens into seven trumpets (8:1–2). The seventh trumpet already announces that the kingdom of the world has become God's (11:15), yet chapter 12 begins again with a birth and a war in heaven. Readers differ over whether the series follow one another or retell the same span; either way, expect overlaps rather than one timeline."
+    },
+    {
+      "snag": "The editions number and word some verses differently.",
+      "help": "Douay-Rheims and the SBL Greek have 12:18, the dragon standing on the sand of the sea; WEB and KJV have no 12:18 and begin 13:1 with I stood. At 1:11 KJV adds I am Alpha and Omega, the first and the last, which WEB and DRB lack. Name the edition when citing a verse number or a disputed wording."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Which John wrote Revelation?",
+      "settled": "The writer calls himself John four times (1:1, 1:4, 1:9, 22:8), a servant and a brother, places himself on Patmos, is told he must prophesy again (10:11), and is told by the angel that he belongs with the prophets (22:9). He does not call himself an apostle or claim to have known Jesus during his earthly life.",
+      "positions": [
+        {
+          "view": "John the apostle",
+          "grounds": "Justin Martyr in the second century names John, one of the apostles of Christ, as the one who prophesied by a revelation (Dialogue with Trypho 81). Irenaeus quotes the book as by John, the Lord's disciple, and Eusebius reports the tradition that the apostle John was banished to Patmos."
+        },
+        {
+          "view": "Another John, perhaps an early Christian prophet in Asia",
+          "grounds": "Dionysius of Alexandria in the third century accepted that the writer was a holy and inspired man named John, but argued from style and self-presentation that he was not the author of the Gospel and letter of John. Eusebius suggested that the presbyter John named by Papias may have seen the revelation. Modern scholarship treats the writer's identity as an open question."
+        }
+      ],
+      "soWhat": "The book's own claim is to be a prophecy given through John. The writer's identity matters most for reading Revelation beside the Gospel and letters of John."
+    },
+    {
+      "question": "When was it written?",
+      "settled": "The book names no ruler and gives no year. It speaks of a recent killing at Pergamum (2:13), of coming imprisonment (2:10), and of seven kings, five fallen, one present, and one to come (17:10).",
+      "positions": [
+        {
+          "view": "Near the end of Domitian's reign, around 95",
+          "grounds": "Irenaeus says the vision was seen near the end of Domitian's reign, and Eusebius repeats this; modern surveys commonly give about 95. Some historians caution that Domitian may not have conducted a systematic persecution."
+        },
+        {
+          "view": "Under or soon after Nero, in the 60s",
+          "grounds": "Some interpreters, especially those who read the book as mainly about its own first-century setting, argue that it was written before the destruction of the Jerusalem temple in 70, with Nero sending John to Patmos. Most modern scholars place it after Nero's death in 68. The suggested link between 666 and Nero is used on both sides, since stories of Nero's return circulated after his death."
+        }
+      ],
+      "soWhat": "The date affects which events readers connect with the beast and Babylon; the messages to the assemblies make sense under either date."
+    },
+    {
+      "question": "What do the visions refer to?",
+      "settled": "The book is sent to seven real assemblies, says the time is near (1:3, 22:10), and also looks beyond present history to a final judgment and a new creation (20:11–21:5). Every reading has to reckon with both features. A survey article reports that modern academic study reads the book in its first-century historical setting.",
+      "positions": [
+        {
+          "view": "Mostly about its own first-century setting",
+          "grounds": "Often called preterist. The book addresses its first hearers about things that must happen soon (1:1), and its images fit Rome and the pressures facing the assemblies."
+        },
+        {
+          "view": "A survey of church history",
+          "grounds": "Often called historicist. The visions are read as a broad view of history from John's day to the end, so events of later centuries are looked for in them. Its holders point to the book's echoes of Daniel 2, where symbols trace a sequence of kingdoms."
+        },
+        {
+          "view": "Mostly about events still future",
+          "grounds": "Often called futurist. The visions are read as describing a final period still to come before Christ's return; chapter 4 opens with what must happen after this (4:1)."
+        },
+        {
+          "view": "Recurring patterns rather than particular events",
+          "grounds": "Often called idealist. The images portray the ongoing conflict between God's rule and its rivals in every age, which fits the book's heavy symbolism and repeated comparisons."
+        }
+      ],
+      "soWhat": "Many readers combine these approaches. Knowing which one a commentator uses explains most of their differences."
+    },
+    {
+      "question": "What is the thousand years of 20:1–6?",
+      "settled": "The phrase a thousand years occurs six times in 20:2–7. Satan is bound, those who were faithful live and reign with Christ, and this is called the first resurrection. The passage is short and does not say where the reign takes place.",
+      "positions": [
+        {
+          "view": "A future reign that follows Christ's return",
+          "grounds": "Premillennial. Justin Martyr says he and many others expect a thousand years in Jerusalem after the resurrection, while acknowledging that many true Christians think otherwise; Eusebius reports that Papias expected an earthly reign of Christ after the resurrection."
+        },
+        {
+          "view": "A present, spiritual reign before Christ's return",
+          "grounds": "Amillennial. The thousand years is read as a symbol for the present age, with Christ reigning now through the church. Clement of Alexandria and Origen denied an earthly millennium, Dionysius of Alexandria opposed a literal earthly millennium and looked for a deeper sense beneath the book's words, and Augustine's later adoption of this reading made it widespread."
+        },
+        {
+          "view": "A coming age of the gospel's success before Christ's return",
+          "grounds": "Postmillennial. The reign is placed before the second coming, as a period in which the gospel's spread gradually brings most of the world to faith. Holders tie this to the charge to make disciples of all nations (Matthew 28:19)."
+        }
+      ],
+      "soWhat": "Every view keeps the passage's main lines: the faithful are vindicated, evil is defeated, and the dead are judged before the new creation."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, Revelation",
+      "says": "Provides the wording, sequence, and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/REV/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "Revelation in the World English Bible, King James Version, and Douay-Rheims",
+      "says": "Shows the different verse count in chapter 12, the added words at 1:11, the different readings at 22:14 and 22:19, seven Spirits versus seven spirits at 1:4, and martyr (KJV) versus witness (WEB, DRB) at 2:13."
+    },
+    {
+      "id": "greek-revelation",
+      "label": "SBL Greek New Testament, Revelation, with MorphGNT analysis",
+      "says": "Provides the Greek forms, lemmas, variant marks, and the 18-verse chapter 12 used in the language discussion; it is a modern edited Greek text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/87-Re-morphgnt.txt"
+    },
+    {
+      "id": "facts-count",
+      "label": "Lemma counts measured over the hosted SBL Greek of Revelation",
+      "says": "Counts lemmas in the 9,833 Greek words of the hosted text: ἑπτά 55, θρόνος 47, ἀρνίον 29, νικάω 17, ὅμοιος 21, ὡς 70; the forms εἶδον 45 and ἤκουσα 27; the μάρτυς family 18.",
+      "href": "/scriptures/protestant/REV/1"
+    },
+    {
+      "id": "net-revelation",
+      "label": "NET Bible, Revelation: text and translator notes",
+      "says": "Discusses the grammar of 1:4, witness and martyr at 1:5, the pendent dative, the readings at 12:18, 13:18 (616 in Papyrus 115 and Codex Ephraemi, C) and 22:19 (Erasmus's back-translation from Latin), and and I saw as a marker of a new vision.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/rev.pdf"
+    },
+    {
+      "id": "justin-dialogue-81",
+      "label": "Justin Martyr, Dialogue with Trypho 80–81 (mid-second century), Ante-Nicene Fathers translation",
+      "says": "Names John, one of the apostles of Christ, as the one who prophesied by a revelation that believers would dwell a thousand years in Jerusalem; says Justin and many others hold this, while many true Christians think otherwise.",
+      "url": "https://www.newadvent.org/fathers/01286.htm"
+    },
+    {
+      "id": "irenaeus-ah-4-20",
+      "label": "Irenaeus, Against Heresies 4.20 (late second century)",
+      "says": "Quotes the opening vision as what John, the Lord's disciple, says in the Apocalypse.",
+      "url": "https://www.newadvent.org/fathers/0103420.htm"
+    },
+    {
+      "id": "irenaeus-ah-5-30",
+      "label": "Irenaeus, Against Heresies 5.30 (late second century)",
+      "says": "Defends 666 as the number in the ancient copies, knows and rejects copies reading 616, tests Evanthas, Lateinos and Teitan without committing to one, warns that many names fit the number, and says the vision was seen near the end of Domitian's reign.",
+      "url": "https://www.newadvent.org/fathers/0103530.htm"
+    },
+    {
+      "id": "eusebius-ch-7-25",
+      "label": "Eusebius, Church History 7.25, quoting Dionysius of Alexandria (mid-third century)",
+      "says": "Dionysius reports that some rejected the book and attributed it to Cerinthus; he himself accepts it as the inspired work of a man named John but argues from style that he was not the apostle who wrote the Gospel and letter, and calls its Greek inaccurate in places.",
+      "url": "https://www.newadvent.org/fathers/250107.htm"
+    },
+    {
+      "id": "eusebius-ch-3",
+      "label": "Eusebius, Church History 3.18, 3.25, and 3.39 (early fourth century)",
+      "says": "Reports the tradition that the apostle John was banished to Patmos under Domitian; lists the Apocalypse of John both among the accepted books and among the rejected, each time adding if it seem proper; notes two Johns in Papias and suggests the second may have seen the revelation.",
+      "url": "https://www.newadvent.org/fathers/250103.htm"
+    },
+    {
+      "id": "papias",
+      "label": "The Fragments of Papias (as quoted by later writers)",
+      "says": "Fragment VI, from Eusebius, says Papias expected a millennium after the resurrection with a personal reign of Christ on earth; Fragment VIII lists Papias among early witnesses to the book's inspiration.",
+      "href": "/early/papias"
+    },
+    {
+      "id": "wikipedia-revelation",
+      "label": "Wikipedia, Book of Revelation (a survey article)",
+      "says": "Notes the three genres, that the author's identity is debated and that he was a Jewish-Christian prophet, the common dating to about 95, doubts about a Domitianic persecution, the four main approaches and three millennial views, academic study in the first-century setting, Old Testament allusion without formal quotation, Papyrus 18 (about 300), long doubt about the book in the East with some Church of the East churches still rejecting it, its absence from the Eastern Orthodox Divine Liturgy, and its full reading on Apocalypse Night in Coptic, Armenian and Ethiopian churches.",
+      "url": "https://en.wikipedia.org/wiki/Book_of_Revelation"
+    },
+    {
+      "id": "wikipedia-millennialism",
+      "label": "Wikipedia, Millennialism (a survey article)",
+      "says": "Describes premillennial, postmillennial, and amillennial views and notes early opponents of premillennialism, including Clement of Alexandria, Origen and Dionysius, and Augustine's later adoption of the amillennial reading.",
+      "url": "https://en.wikipedia.org/wiki/Millennialism"
+    },
+    {
+      "id": "wikipedia-number-beast",
+      "label": "Wikipedia, Number of the beast (a survey article)",
+      "says": "Reports the variant 616, the widespread scholarly link to Nero through a Hebrew-letter spelling of his name, the preterist argument for an early date, and the many other identifications proposed through history.",
+      "url": "https://en.wikipedia.org/wiki/Number_of_the_beast"
+    },
+    {
+      "id": "wikipedia-p115",
+      "label": "Wikipedia, Papyrus 115 (manuscript summary)",
+      "says": "Describes the papyrus as fragments of Revelation chapters 2–15 from Oxyrhynchus, dated about 225–275 and housed at the Ashmolean Museum, which apparently reads 616 at 13:18.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_115"
+    },
+    {
+      "id": "wikipedia-synagogue-satan",
+      "label": "Wikipedia, Synagogue of Satan (a survey article)",
+      "says": "Describes the two prevailing readings of 2:9 and 3:9, the dominant one taking them as unbelieving Jews and the alternative as heretical Christians, notes that the author was likely Jewish and uses the word Jew positively, and records later uses of the phrase against Jews and in other polemics.",
+      "url": "https://en.wikipedia.org/wiki/Synagogue_of_Satan"
+    },
+    {
+      "id": "scriptural-parallels",
+      "label": "Daniel 7, Isaiah 6, Ezekiel 3, Zechariah 12, World English Bible",
+      "says": "Show the one like a son of man coming with the clouds, the threefold Holy, the prophet eating a scroll sweet as honey, and the pierced one mourned, which Revelation echoes at 1:7, 1:13, 4:8, and 10:9–10.",
+      "href": "/scriptures/protestant/DAN/7"
+    },
+    {
+      "id": "wikipedia-postmillennialism",
+      "label": "Wikipedia, Postmillennialism (a survey article)",
+      "says": "Describes postmillennialism as placing Christ's return after an era of growing gospel success in which most people are saved, tied by its holders to the Great Commission (Matthew 28:19).",
+      "url": "https://en.wikipedia.org/wiki/Postmillennialism"
+    },
+    {
+      "id": "wikipedia-p18",
+      "label": "Wikipedia, Papyrus 18 (manuscript summary)",
+      "says": "Describes Papyrus 18 (P. Oxy. 1079, British Library) as containing only Revelation 1:4–7, written on the back of a papyrus with the end of Exodus, dated to the third or fourth century.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_18"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read the opening and the closing together. The same claims frame the book: things that must happen soon, a blessing for those who keep the words, and Jesus' promise that he is coming.",
+      "refs": [
+        "1:1",
+        "1:3",
+        "1:7",
+        "22:6",
+        "22:7",
+        "22:20"
+      ]
+    },
+    {
+      "tip": "Read the seven messages as the setting for everything after them. Note what each assembly is praised for, what it is warned about, and what is promised to the one who conquers; many of those promises return in chapters 21–22.",
+      "refs": [
+        "2:7",
+        "2:10",
+        "3:12",
+        "3:20",
+        "21:7",
+        "22:2"
+      ]
+    },
+    {
+      "tip": "Pay attention to what John hears and then sees. The pairing of the Lion and the Lamb, and of the counted 144,000 and the uncounted crowd, is a key to how the book reinterprets its own images.",
+      "refs": [
+        "5:5",
+        "5:6",
+        "7:4",
+        "7:9"
+      ]
+    },
+    {
+      "tip": "Listen for the Old Testament under the images: Daniel's son of man and beasts, Isaiah's Holy, holy, holy, Ezekiel's scroll, Zechariah's pierced one. The book quotes none of them formally but builds from all of them.",
+      "refs": [
+        "1:7",
+        "1:13",
+        "4:8",
+        "10:10",
+        "13:1"
+      ]
+    },
+    {
+      "tip": "Compare the two cities. Babylon and the new Jerusalem are each shown by an angel of the bowls, each as a woman, each with gold and jewels; one falls and one comes down from God.",
+      "refs": [
+        "17:1",
+        "17:4",
+        "18:2",
+        "21:9",
+        "21:10",
+        "21:22"
+      ]
+    }
+  ],
+  "next": "Read Daniel 7 and Ezekiel 1–3, which Revelation draws on heavily, then the Gospel of John and 1 John, keeping the authorship question open. The fragments of Papias on this site show an early reading of the thousand years.",
+  "traditionNote": "Revelation stands last in the New Testament. It was among the last books accepted into the canon. Eusebius lists it both among the accepted and among the rejected books, and doubts about it lasted long in parts of the East; some churches descended from the Church of the East still do not include it. The book is also called the Apocalypse. A survey article reports that it is still the only New Testament book not read in the Divine Liturgy of the Eastern Orthodox Church, while the Coptic, Armenian, and Ethiopian churches read the whole book on the night after Good Friday."
+}

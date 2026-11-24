@@ -25,6 +25,7 @@ export const SITE_ROUTES: readonly SiteRoute[] = [
   { href: "/scriptures/stories/play", label: "Playable stories", note: "Play Bible stories in Jerusalem, the Valley of Elah, and Mount Hermon.", parent: "/scriptures/stories" },
   { href: "/scriptures/stories/play/overturned-tables", label: "The overturned tables", note: "Walk through the temple court as Jesus. Overturn the tables and bar the passage.", parent: "/scriptures/stories/play" },
   { href: "/scriptures/stories/play/valley-of-elah", label: "The Valley of Elah", note: "Shed Saul’s bronze armor, choose five smooth stones from the brook, and face Goliath.", parent: "/scriptures/stories/play" },
+  { href: "/scriptures/stories/play/storm-on-the-lake", label: "The storm on the lake", note: "Cross the Sea of Galilee at dusk, fight the rising squall, and wake Jesus in the stern.", parent: "/scriptures/stories/play" },
   { href: "/scriptures/search", label: "Search the text", note: "Search Scripture and early writings, or open a reference." },
   { href: "/scriptures/word-bridge", label: "Word Bridge", note: "Connect English words with Hebrew and Greek, dictionary entries, and grammar." },
   { href: "/scriptures/topics", label: "Bible topics", note: "Follow a subject into its Scripture references." },

@@ -1,0 +1,662 @@
+{
+  "book": "HEB",
+  "bookName": "Hebrews",
+  "oneLine": "A long word of exhortation, ending like a letter, that urges weary believers to hold on because the Son through whom God has spoken is also their high priest.",
+  "orient": "Hebrews begins with no sender or greeting: God has spoken through the prophets and now through a Son. The argument compares the Son with angels, Moses, Joshua, and the Levitical priests, and almost every step is drawn from Israel's Scriptures as read in Greek. Again and again the exposition breaks into appeals to listen, hold fast, draw near, and not drift away. Chapter 11 recalls the faithful of Israel's history, chapter 12 turns that memory into a call to endure, and chapter 13 closes with instructions and greetings.",
+  "whereYouAre": "The readers heard the message from people who had heard the Lord (2:3). In earlier days they endured public abuse, stood with prisoners, and accepted the seizure of their property (10:32–34), but they have not yet resisted to the point of blood (12:4). Some have stopped meeting together (10:25), and the writer calls them slow to learn (5:11–12).",
+  "facts": {
+    "writtenBy": "The text names no author. Much of the early church, especially in the East, counted it among Paul's letters; others doubted that from early on, and most modern scholars regard the writer as unknown.",
+    "writtenWhen": "No year is secure. Wording close to Hebrews appears in 1 Clement, whose own date is estimated from about AD 95 to later; whether Hebrews was written before or after the temple's destruction in AD 70 is debated.",
+    "writtenFor": "A particular community with its own leaders (13:17, 13:24) and a remembered history of suffering (10:32–34). The title To the Hebrews is traditional and is not part of the text. Jerusalem and Rome are among the proposed destinations.",
+    "place": "Not stated. The greeting from those from Italy (13:24) has been read as a sign that the writer was in Italy and as a sign that the work was sent to Rome.",
+    "covers": "The Son above the angels; Jesus as faithful Son and high priest after the order of Melchizedek; the better covenant, the sanctuary, and the once-for-all offering; faith remembered; endurance under discipline; community life and closing news.",
+    "size": "13 chapters, 303 verses, and 6,873 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "eusebius-history-6",
+      "eusebius-history-3",
+      "tertullian-modesty",
+      "cathenc-hebrews",
+      "wiki-hebrews"
+    ],
+    "writtenWhen": [
+      "clement-rome",
+      "eusebius-history-3",
+      "ecw-hebrews",
+      "cathenc-hebrews",
+      "wiki-hebrews"
+    ],
+    "writtenFor": [
+      "hosted-web",
+      "cathenc-hebrews",
+      "ecw-hebrews"
+    ],
+    "place": [
+      "hosted-web",
+      "cathenc-hebrews",
+      "wiki-hebrews",
+      "ecw-hebrews"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek of a polished, literary kind.",
+    "register": "A sustained argument from Scripture in long, carefully built Greek sentences, broken by direct appeals in the first person plural (4:16; 10:22–24; 12:1). Origen, as quoted by Eusebius, judged its diction purer Greek than Paul's. The opening 1:1–4 is a single sentence in Greek, and the writer uses sound play, as with learned and suffered at 5:8. Scripture is usually introduced as God, the Son, or the Holy Spirit speaking (1:5; 2:12; 3:7); the writer never introduces a quotation with it is written; the one it is written, at 10:7, is inside the quoted Psalm.",
+    "spokenWorld": "The text quotes Israel's Scriptures in their Greek form and never uses the words Hebrew, Jew, or Gentile. Clement of Alexandria, as Eusebius reports, thought Paul wrote it in Hebrew and Luke translated it. No Hebrew form is known, and the quotations follow the Greek Old Testament.",
+    "readerSignal": "Watch the joins between teaching and appeal. Therefore (2:1; 3:1; 4:16; 10:19; 12:1) usually turns a point about the Son into a call to the readers. The severe warnings and the reassurances belong together: 6:4–8 is followed by 6:9–12, and 10:26–31 by 10:32–39.",
+    "englishLayer": "The three English editions here do not always reflect the same Greek wording as the SBL Greek New Testament, the modern edited Greek text used for the language notes. At 2:9 all three read the grace of God, while the SBL text prints a reading meaning apart from God. At 10:34 WEB and KJV speak of the writer's own chains or bonds, while Douay-Rheims and the SBL text refer to prisoners.",
+    "textualHistory": [
+      {
+        "label": "A Greek exhortation with a letter's ending",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "The body argues and exhorts without the sender and greeting that open ancient letters; requests, news, and greetings appear only in 13:18–25. The writer calls the whole a word of exhortation (13:22), the phrase Acts 13:15 has for an address in a synagogue after the reading of the law and the prophets. Many modern scholars read it as a sermon with a letter's closing; the 1910 Catholic Encyclopedia argued that it is a true letter written for one actual church.",
+        "sourceIds": [
+          "greek-heb",
+          "hosted-web",
+          "hosted-acts",
+          "wiki-hebrews",
+          "cathenc-hebrews"
+        ]
+      },
+      {
+        "label": "Scripture heard in Greek",
+        "language": "Greek Jewish Scriptures (the Septuagint)",
+        "role": "section",
+        "spans": [
+          "1:5–13",
+          "2:6–8",
+          "3:7–11",
+          "5:6",
+          "8:8–12",
+          "10:5–7",
+          "10:37–38",
+          "12:5–6"
+        ],
+        "description": "The argument rests on long quotations, and in the places compared here, where they differ from the Hebrew-based Old Testament they agree with the Greek. At 10:5, a body you prepared for me matches Brenton's Septuagint at Psalm 39:7 (Greek numbering), while the Hebrew-based WEB at Psalm 40:6 has You have opened my ears; the NET note calls the Greek wording an interpretive expansion of the Hebrew. Psalm 95 (Greek 94) has as in the provocation where the Hebrew names Meribah and Massah, and Jeremiah 31 (Greek 38) has I disregarded them where the Hebrew has although I was a husband to them.",
+        "sourceIds": [
+          "brenton-psalms",
+          "brenton-jeremiah",
+          "hosted-hebrew-ot",
+          "net-heb",
+          "hosted-web"
+        ]
+      },
+      {
+        "label": "Papyrus 46 and the order of Paul's letters",
+        "language": "Greek",
+        "role": "earliest-extant",
+        "description": "Papyrus 46, a codex of Paul's letters dated by its handwriting to about 175–225, contains Hebrews, with some lines lost at the foot of each leaf, and places it directly after Romans and before 1 Corinthians. The 1910 Catholic Encyclopedia notes that the oldest Greek manuscripts put Hebrews after the letters to churches and before those to Timothy and Titus, while later codices put it last among Paul's letters, the place it holds in English Bibles. It shows Hebrews copied with Paul's letters, not who wrote it.",
+        "sourceIds": [
+          "wiki-p46",
+          "cathenc-hebrews"
+        ]
+      },
+      {
+        "label": "English editions and the SBL Greek text",
+        "language": "English translations compared with the SBL Greek New Testament",
+        "role": "translation",
+        "description": "Some differences reflect different Greek readings, as at 2:9 and 10:34. The NET notes judge that the reading my imprisonment at 10:34, found in most manuscripts, probably arose from the early belief that Paul wrote Hebrews, and strongly prefer the reading about prisoners. Other differences are choices of English: the noun translated substance at 11:1 in KJV is assurance in WEB, and the word for covenant is testament throughout 9:15–20 in KJV and Douay-Rheims.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-heb",
+          "net-heb"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Better: the comparison that carries the argument",
+        "original": "κρείττων — kreittōn — better, greater, superior",
+        "explanation": "The comparative runs from 1:4 to 12:24: the Son better than the angels, a better hope, covenant, promises, sacrifices, country, and resurrection, and blood that speaks better than Abel's. The lemma (the dictionary form of the word) occurs 13 times in the SBL Greek text of Hebrews. Several of the comparisons set an earlier gift of God, such as the word spoken through angels, the Levitical priesthood, or the first covenant, beside something the writer presents as greater.",
+        "translationNote": "WEB usually says better, but at 7:7 the same word is the greater who blesses the lesser.",
+        "caution": "Better does not mean the earlier thing was worthless. The same letter says that the word spoken through angels proved steadfast (2:2) and that Moses was faithful in all God's house (3:5). The comparison concerns what each could accomplish in this argument, not the worth of the people who served under it.",
+        "refs": [
+          "1:4",
+          "7:7",
+          "7:19",
+          "7:22",
+          "8:6",
+          "9:23",
+          "11:16",
+          "12:24"
+        ],
+        "sourceIds": [
+          "greek-heb",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Made perfect: brought to the goal",
+        "original": "τελειόω / τελειωτής — teleioō / teleiōtēs — bring to completion or make perfect / one who completes",
+        "explanation": "This word family speaks of bringing something to its intended end. It is used of Jesus made perfect through sufferings (2:10; 5:9; 7:28), of what the law and the sacrifices could not do (7:19; 9:9; 10:1), of believers perfected by one offering (10:14), of the faithful of the past, not made perfect apart from later believers (11:40), and of the righteous made perfect (12:23). The verb occurs 9 times as a lemma in the SBL Greek text, and 12:2 adds the noun perfecter.",
+        "translationNote": "English perfect suggests moral flawlessness. Douay-Rheims renders 5:9 being consummated, and at 5:14 the related adjective is full grown in WEB and the perfect in Douay-Rheims.",
+        "caution": "When said of Jesus, the word does not mean he had been sinful: 4:15 says he was tempted yet without sin. In Hebrews the word is tied to suffering, priesthood, and access to God (7:19; 10:1).",
+        "refs": [
+          "2:10",
+          "5:9",
+          "7:19",
+          "7:28",
+          "10:1",
+          "10:14",
+          "11:40",
+          "12:2"
+        ],
+        "sourceIds": [
+          "greek-heb",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Once, and once for all",
+        "original": "ἅπαξ / ἐφάπαξ — hapax / ephapax — once / once for all",
+        "explanation": "Hebrews sets Christ's single offering against priestly actions repeated daily (7:27), yearly (9:25; 10:1), and often (10:11). The lemma ἅπαξ occurs 8 times and ἐφάπαξ 3 times in the SBL Greek text. The same once also describes those once enlightened (6:4), worshipers once cleansed (10:2), the human lot to die once (9:27), and God's promise to shake heaven and earth yet once more (12:26–27).",
+        "translationNote": "WEB marks ἐφάπαξ as once for all (7:27; 9:12; 10:10), but KJV and Douay-Rheims have plain once there, so their readers cannot tell the two words apart. The once of 6:4 is the same word as the once of 9:26–28.",
+        "caution": "The words describe Christ's offering in contrast with the repeated sacrifices of the tabernacle. They do not by themselves settle later Christian disagreements about how worship and sacraments relate to that offering.",
+        "refs": [
+          "6:4",
+          "7:27",
+          "9:12",
+          "9:26",
+          "9:28",
+          "10:2",
+          "10:10",
+          "12:27"
+        ],
+        "sourceIds": [
+          "greek-heb",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "High priest and drawing near",
+        "original": "ἀρχιερεύς / προσέρχομαι — archiereus / proserchomai — high priest / come near, approach",
+        "explanation": "Jesus is first called high priest at 2:17, and the lemma ἀρχιερεύς occurs 17 times in the SBL Greek text, counting the Levitical high priests set beside him. The point of a priest in this argument is access. A verb used for approaching God in worship occurs 7 times as a lemma: the readers are urged to draw near (4:16; 10:22), and are told they have come not to Sinai but to Zion (12:18, 12:22).",
+        "translationNote": "English varies the verb as draw near, come, go, and the comers thereunto (KJV and Douay-Rheims at 10:1).",
+        "caution": "The language of approach is drawn from the tabernacle and its rites; it does not describe a specific later form of worship. Hebrews also says that Jesus, descended from Judah, would not be a priest on earth under the law (7:14; 8:4); his priesthood is argued from Psalm 110 and Melchizedek.",
+        "refs": [
+          "2:17",
+          "4:14",
+          "4:16",
+          "7:25",
+          "9:11",
+          "10:1",
+          "10:22",
+          "12:22"
+        ],
+        "sourceIds": [
+          "greek-heb",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Covenant, and a will",
+        "original": "διαθήκη — diathēkē — covenant; also a last will",
+        "explanation": "Covenant becomes central from 7:22. The lemma occurs 17 times in the SBL Greek text, most densely in chapters 8 and 9 around the quotation of Jeremiah 31. At 9:16–17 the argument uses the word's everyday sense of a will that takes effect only at the death of the one who made it, then returns to the covenant at Sinai sealed with blood (9:18–20).",
+        "translationNote": "WEB has covenant at 9:15, last will and testament at 9:16, will at 9:17, and covenant again at 9:20, so the English reader sees a change that is one word in Greek. KJV and Douay-Rheims keep testament through 9:15–20, and Douay-Rheims also has new testament at 8:8, where WEB and KJV have new covenant.",
+        "caution": "The will sense is a short move inside 9:15–20, not a claim that every covenant in Hebrews is a legal will. WEB marks that move in English; KJV and Douay-Rheims, with testament throughout, do not.",
+        "refs": [
+          "7:22",
+          "8:8",
+          "9:15",
+          "9:16",
+          "9:17",
+          "9:20",
+          "12:24",
+          "13:20"
+        ],
+        "sourceIds": [
+          "greek-heb",
+          "hosted-web",
+          "hosted-editions",
+          "net-heb"
+        ]
+      },
+      {
+        "title": "Faith as acting before seeing",
+        "original": "πίστις / ὑπόστασις — pistis / hypostasis — faith, trust, faithfulness / substance, assurance",
+        "explanation": "Of the 32 occurrences of the lemma πίστις in the SBL Greek text of Hebrews, 24 stand in chapter 11, where the form πίστει, by faith, opens clause after clause; that form occurs 18 times in the chapter. 11:1 ties faith to things hoped for and not seen. The examples show people acting on God's promise before seeing it, and the chapter ends by saying they did not receive what was promised (11:39–40).",
+        "translationNote": "The noun at 11:1 is substance in KJV and Douay-Rheims and assurance in WEB. The same noun describes the Son as the image of God's substance at 1:3 and the readers' confidence at 3:14, where Douay-Rheims again has substance.",
+        "caution": "11:1 describes what faith does in this chapter's argument; it is not offered as a complete definition. In Hebrews faith is paired with endurance and obedience (10:36–39; 11:8; 12:1–2).",
+        "refs": [
+          "1:3",
+          "10:38",
+          "11:1",
+          "11:3",
+          "11:8",
+          "11:31",
+          "11:39",
+          "12:2"
+        ],
+        "sourceIds": [
+          "greek-heb",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words that show how Hebrews is built",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "Πολυμερῶς — polymerōs",
+        "meaning": "in many parts, or at many times",
+        "why": "The first word of the book. It pairs with the next word, in various ways, in a deliberate sound pattern; the NET notes observe the alliteration and that 1:1–4 is one carefully composed sentence in Greek, which English versions break into several.",
+        "sourceIds": [
+          "greek-heb",
+          "net-heb"
+        ]
+      },
+      {
+        "ref": "1:3",
+        "form": "ἀπαύγασμα — apaugasma",
+        "meaning": "radiance or reflected brightness",
+        "why": "KJV and Douay-Rheims have brightness. Chapter 36 of 1 Clement, hosted on this site, echoes this verse with brightness of His majesty and then quotes the same Psalms as Hebrews 1.",
+        "sourceIds": [
+          "greek-heb",
+          "hosted-editions",
+          "clement-rome"
+        ]
+      },
+      {
+        "ref": "2:9",
+        "form": "χωρὶς — chōris",
+        "meaning": "apart from, without",
+        "why": "The SBL Greek text reads that apart from God he might taste death for everyone and marks a variant at this word. Most manuscripts, Papyrus 46 among them, read χάριτι — chariti — by grace, and WEB, KJV, and Douay-Rheims follow them with the grace of God; a survey of variants lists minuscule 1739 and writers such as Origen and Jerome for apart from God. The English reader meets a real difference in the Greek tradition here, not a translator's paraphrase.",
+        "sourceIds": [
+          "greek-heb",
+          "hosted-editions"
+        ]
+      },
+      {
+        "ref": "10:5",
+        "form": "σῶμα — sōma",
+        "meaning": "body",
+        "why": "A body you prepared for me follows the Greek Psalm, not the Hebrew. 10:10 then builds on that word: believers are sanctified through the offering of the body of Jesus Christ.",
+        "sourceIds": [
+          "greek-heb",
+          "brenton-psalms",
+          "hosted-hebrew-ot",
+          "net-heb"
+        ]
+      },
+      {
+        "ref": "13:22",
+        "form": "παρακλήσεως — paraklēseōs",
+        "meaning": "of exhortation, encouragement, or consolation",
+        "why": "The writer's own name for the work. WEB and KJV have word of exhortation; Douay-Rheims has word of consolation. Acts 13:15 has the same phrase for an address in a synagogue.",
+        "sourceIds": [
+          "greek-heb",
+          "hosted-editions",
+          "hosted-acts"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A word of exhortation with a letter's ending",
+    "how": "Follow the alternation. A block of exposition from Scripture is followed by therefore and an appeal to the readers. Treat each long quotation as the text being preached: the verses after it reuse its words, as with today and rest from Psalm 95 in 3:12–4:11, the new of Jeremiah 31 in 8:13, and body and will from Psalm 40 in 10:8–10. Only the last chapter takes on the features of a letter."
+  },
+  "cast": [
+    {
+      "name": "God who speaks",
+      "who": "Spoke through the prophets and now through a Son (1:1–2)."
+    },
+    {
+      "name": "The Son, Jesus",
+      "who": "Heir of all things and radiance of God's glory, first named Jesus at 2:9. He shares flesh and blood and serves as high priest."
+    },
+    {
+      "name": "Angels",
+      "who": "Serving spirits compared with the Son in chapters 1–2. The word spoken through angels (2:2) refers to the law given at Sinai."
+    },
+    {
+      "name": "Moses and Joshua",
+      "who": "Moses is faithful as a servant in God's house (3:5) and a model of faith (11:23–29). Joshua did not give the people the promised rest (4:8)."
+    },
+    {
+      "name": "Melchizedek",
+      "who": "King of Salem and priest of God Most High, who meets Abraham in Genesis 14. Psalm 110 makes him the pattern for the Son's priesthood, set against Aaron's line (5:4–6; 7:11)."
+    },
+    {
+      "name": "Abraham and the faithful of chapter 11",
+      "who": "Abel to Rahab and the prophets, witnesses who trusted God's promise without receiving it (11:39)."
+    },
+    {
+      "name": "The readers and their leaders",
+      "who": "Addressed as brothers. They have suffered and are told to remember former leaders and obey present ones (13:7, 13:17)."
+    },
+    {
+      "name": "Timothy and those from Italy",
+      "who": "Timothy has been released and may travel with the writer (13:23); those from Italy send greetings (13:24)."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "The Son above the angels",
+      "chapters": "1–2",
+      "precise": "1:1–2:18",
+      "note": "God's final word through the Son, a chain of Psalms set against the angels, the first warning (2:1–4), and the Son made like his brothers to become high priest."
+    },
+    {
+      "heading": "Faithful Son, and the rest still offered",
+      "chapters": "3–4",
+      "precise": "3:1–4:16",
+      "note": "Jesus and Moses in God's house, then an exposition of Psalm 95 on today and rest, ending in the call to approach the throne of grace."
+    },
+    {
+      "heading": "A priest after the order of Melchizedek",
+      "chapters": "5–7",
+      "precise": "5:1–7:28",
+      "note": "Qualifications of a high priest, a pause to rebuke slow learners and warn against falling away (5:11–6:20), then Melchizedek and the priest made by oath."
+    },
+    {
+      "heading": "Better covenant, true sanctuary, one offering",
+      "chapters": "8–10",
+      "precise": "8:1–10:39",
+      "note": "Jeremiah's new covenant, the tabernacle and the Day of Atonement, Christ's single offering, and the appeal to draw near, with the warning of 10:26–31."
+    },
+    {
+      "heading": "Faith remembered",
+      "chapters": "11",
+      "precise": "11:1–40",
+      "note": "From creation to the martyrs, people who acted on God's promise before seeing it fulfilled."
+    },
+    {
+      "heading": "Run, endure, and listen",
+      "chapters": "12",
+      "precise": "12:1–29",
+      "note": "Jesus as pioneer and perfecter of faith, suffering as a father's discipline, and Sinai contrasted with Mount Zion, with a final warning not to refuse the one who speaks."
+    },
+    {
+      "heading": "Life together and closing words",
+      "chapters": "13",
+      "precise": "13:1–25",
+      "note": "Hospitality, prisoners, marriage, money, leaders, a sacrifice of praise, a blessing, and greetings."
+    }
+  ],
+  "purpose": "Hebrews aims to keep a tired community from drifting away. It argues that God's final word has come through a Son who shares human weakness, serves as high priest, and has made one offering that opens access to God. On that basis the readers are urged to hold their confession, draw near, keep meeting together, endure suffering, and practice hospitality and care for prisoners while they look for the city to come.",
+  "snags": [
+    {
+      "snag": "The book seems to begin in the middle, with no author or recipients named.",
+      "help": "There is no greeting, and the title To the Hebrews is not part of the text. That is why authorship, audience, and date are open questions rather than facts stated by the book."
+    },
+    {
+      "snag": "Quotations from the Old Testament do not match the reader's Old Testament.",
+      "help": "Hebrews quotes the Greek Scriptures. Compare 10:5 with Psalm 40:6, 3:8 with Psalm 95:8, and 8:9 with Jeremiah 31:32 in the hosted WEB, then with Brenton's Septuagint at Psalm 39:7, Psalm 94:8, and Jeremiah 38:32, where the numbering differs. The difference lies in the source text the writer used, not in careless quotation."
+    },
+    {
+      "snag": "The warnings sound as if there is no way back for anyone who fails.",
+      "help": "Read each warning with what follows. After 6:4–8 the writer says, “we are persuaded of better things for you” (6:9), and after 10:26–31 he recalls the readers' endurance (10:32–39). The warnings concern falling away and treating the Son with contempt (6:6; 10:29). They have been used in harsh ways, as when Tertullian cited 6:4–8 to deny adulterers a second repentance; how they apply is a real debate, set out below."
+    },
+    {
+      "snag": "Obsolete in 8:13 and the repeated better can read as contempt for Judaism.",
+      "help": "The text does say the first covenant has been made old and is near to vanishing (8:13), and that he takes away the first to establish the second (10:9). But the promise of a new covenant is quoted from Jeremiah and addressed to the house of Israel and the house of Judah (8:8). The passage speaks both of the first covenant not being faultless (8:7) and of God finding fault with them, those who did not continue in it (8:8–9). The heroes of chapter 11 come from Israel's Scriptures. The comparisons concern priesthood, sacrifice, and covenant arrangements, not the worth of Jewish people. How later Christians used this letter against Jews is a separate history; the debate below sets out how scholars read the claim."
+    },
+    {
+      "snag": "Melchizedek without father or mother sounds like a mysterious being.",
+      "help": "Genesis 14:18–20 introduces him with no parents, ancestry, or death recorded, and 7:6 explains without genealogy as a genealogy not counted from the sons of Levi. The point serves the argument that a priesthood can rest on something other than Levitical descent. The text says he was made like the Son of God (7:3); it does not say that he was an angel or the Son."
+    },
+    {
+      "snag": "English editions disagree with each other and with the Greek in a few places.",
+      "help": "Some differences reflect different Greek readings, as at 2:9 and 10:34, described in the language section. Others are English choices: at 4:8 KJV and Douay-Rheims have Jesus where WEB has Joshua, which is the same name in Greek; the context concerns Joshua and the land."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Who wrote Hebrews?",
+      "settled": "The text names no writer. The writer knows Timothy (13:23), speaks in the first person (11:32; 13:19, 13:22), and counts himself among those to whom the message was confirmed by those who heard the Lord (2:3). At 11:32 the writer refers to himself with a masculine participle, διηγούμενον — diēgoumenon — telling, and the SBL text marks no variant on that word.",
+      "positions": [
+        {
+          "view": "Paul, or Paul's teaching in another's words",
+          "grounds": "Clement of Alexandria, as Eusebius reports, held that Paul wrote to the Hebrews in Hebrew, left off his name, and that Luke translated the letter. Origen judged the thoughts to be the apostle's and the wording someone else's, commended churches that held it to be Paul's, and added that who wrote it, God knows. The East counted Hebrews among Paul's letters, in the West doubts faded gradually from the late fourth century, and the 1910 Catholic Encyclopedia preferred Origen's solution."
+        },
+        {
+          "view": "A writer other than Paul, now unknown",
+          "grounds": "Doubt is also ancient. Tertullian cited the work as Barnabas's, and Eusebius reports that the Roman writer Caius counted only thirteen letters of Paul and that some at Rome still did not consider Hebrews his. Most modern scholars regard the writer as unknown, pointing to style and the treatment of themes such as law and faith. Harold Attridge, quoted on Early Christian Writings, names Barnabas, Apollos, Priscilla, Epaphras, and Silas as candidates and judges that the arguments for none are decisive."
+        }
+      ],
+      "soWhat": "Authorship does not change the text, and every tradition represented on this site includes Hebrews in its New Testament. It affects how a reader dates the work and whether it is read as one voice with Paul's letters or beside them."
+    },
+    {
+      "question": "Was Hebrews written before or after AD 70?",
+      "settled": "The text never names the Jerusalem temple or its destruction; the argument works from the wilderness tabernacle described in Scripture (8:5; 9:1–8). It speaks of priests offering in the present tense (9:6–9; 10:1–3, 10:11) and mentions Timothy's release (13:23). Chapters 17 and 36 of 1 Clement contain wording close to Hebrews 11 and Hebrews 1; Eusebius, and the modern scholars quoted on Early Christian Writings, take this to mean that Hebrews came first.",
+      "positions": [
+        {
+          "view": "Before 70",
+          "grounds": "The present-tense descriptions of sacrifice and the silence about the temple's fall have been taken as evidence that the temple still stood. The 1910 Catholic Encyclopedia argued that the writer regards Levitical worship as still in practice and proposed 63 or early 64."
+        },
+        {
+          "view": "After 70",
+          "grounds": "Attridge, quoted on Early Christian Writings, calls the present-tense argument inconclusive because the writer deals with the desert tabernacle, not the Herodian temple, and notes that some writers after 70 still speak of the temple as present. Kümmel, quoted there, points to the readers as a second generation (2:3), their past persecutions, and 1 Clement, and places Hebrews between 80 and 90. Wikipedia's survey places Attridge and Ellen Aitken among those who date it between 70 and 100."
+        }
+      ],
+      "soWhat": "The window runs from the 60s to before 1 Clement, whose own date is estimated from about 95 into the second century. The date changes whether 8:13 is heard while the temple stands or after its fall; the argument is drawn from Scripture's tabernacle either way."
+    },
+    {
+      "question": "Can the people warned in 6:4–6 and 10:26–31 actually be lost?",
+      "settled": "The warnings are severe: renewal to repentance is called impossible for those who were enlightened, shared in the Holy Spirit, and fell away (6:4–6), and no sacrifice for sins remains for those who sin willfully after knowing the truth (10:26). Each warning is followed by reassurance (6:9–12; 10:32–39).",
+      "positions": [
+        {
+          "view": "Real believers can fall away",
+          "grounds": "The people described have been enlightened, tasted the heavenly gift, and shared in the Holy Spirit (6:4–5), which readers in this view take as genuine conversion. A survey article cites scholars such as B. J. Oropeza and Scot McKnight for this reading, and Lutheran, Arminian, and Anabaptist teaching holds that a true believer can fall away; some hold that such apostasy is final, others that it is not beyond return during life."
+        },
+        {
+          "view": "The warnings do not show that true believers are lost",
+          "grounds": "Within the Reformed doctrine of the perseverance of the saints, some read the warnings as real but hypothetical, meant to move believers to persevere; others take them to describe people who received God's gifts without being regenerated."
+        },
+        {
+          "view": "Communal or more limited readings",
+          "grounds": "Others read the warnings as addressed to the community as a whole, as threatening loss of reward, or as aimed at Jewish believers returning to earlier practice."
+        }
+      ],
+      "soWhat": "All of these readings take the warnings as urgent and the reassurances as real. The split concerns how the warnings relate to God's keeping of believers, a question on which Christian traditions have long differed."
+    },
+    {
+      "question": "Does Hebrews teach that the church replaces Israel?",
+      "settled": "8:13 says the first covenant has been made old. The text never uses the words Jew, Gentile, or Christian, its new-covenant promise is addressed to Israel and Judah (8:8), and its examples of faith come from Israel's Scriptures (chapter 11).",
+      "positions": [
+        {
+          "view": "An implicit replacement claim",
+          "grounds": "According to Wikipedia's survey, the dominant interpretation in modern scholarship has been that Hebrews implies that the Levitical sacrifices and priesthood have been superseded by Christ's sacrifice. Readers who see such a claim point to 7:12, 7:18, and 10:9, where the priesthood and law are changed and the first is taken away to establish the second. As the survey reports from Bibliowicz, Hebrews scholars divide into those sympathetic to its theological message, those critical of its replacement claim, and those seeking a middle ground."
+        },
+        {
+          "view": "A debate among Jews about Jesus",
+          "grounds": "A growing number of scholars, the same survey reports, note the absence of the words Gentile and Christian and read Hebrews as written for a Jewish audience, within a debate between Jewish followers of Jesus and other Jews. Norman Perrin, quoted on Early Christian Writings, likewise calls the writer a Hellenistic Jewish Christian writing to a community like himself."
+        }
+      ],
+      "soWhat": "The survey distinguishes the author's intent from the way the text was later used, and notes that replacement theology was later used to disenfranchise Jewish followers of Jesus and then Jews generally. A careful reader keeps those apart: what 8:13 claims about covenant arrangements, and what later Christians did with it."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, Hebrews",
+      "says": "The English wording, sequence, and measured length discussed here.",
+      "href": "/scriptures/protestant/HEB/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "Hebrews in the World English Bible, King James Version, and Douay-Rheims",
+      "says": "Shows the renderings compared here, at 2:9, 4:8, 5:9, 9:15–20, 10:34, 11:1, and 13:22 among others. None of the three hosted files carries a heading naming Paul."
+    },
+    {
+      "id": "greek-heb",
+      "label": "SBL Greek New Testament, Hebrews, with MorphGNT analysis",
+      "says": "Greek forms, lemma counts, and the readings at 2:9 and 10:34. A modern edited text, not the base of each English edition.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/79-Heb-morphgnt.txt"
+    },
+    {
+      "id": "net-heb",
+      "label": "NET Bible, Hebrews: text and translator notes",
+      "says": "Notes that 1:1–4 is one Greek sentence with alliteration at its start; names the wordplay learned / suffered at 5:8; takes the message spoken through angels at 2:2 as the law; calls the body of 10:5 an interpretive expansion of the Hebrew of Psalm 40; renders 9:16 with will; and explains the reading my imprisonment at 10:34, found in most witnesses, by belief in Pauline authorship.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/heb.pdf"
+    },
+    {
+      "id": "eusebius-history-6",
+      "label": "Eusebius, Church History, Book 6 (chapters 14, 20, 25)",
+      "says": "Reports Clement of Alexandria's view that Paul wrote Hebrews in Hebrew and Luke translated it; that Caius counted thirteen letters of Paul and some at Rome did not consider Hebrews his; and Origen's judgment that the thoughts are the apostle's, the diction purer Greek and another's, and that who wrote it God knows.",
+      "url": "https://www.newadvent.org/fathers/250106.htm"
+    },
+    {
+      "id": "eusebius-history-3",
+      "label": "Eusebius, Church History, Book 3 (chapters 3 and 38)",
+      "says": "Notes that some rejected Hebrews as disputed by the church of Rome, and that Clement's letter to Corinth draws thoughts and verbal expressions from Hebrews.",
+      "url": "https://www.newadvent.org/fathers/250103.htm"
+    },
+    {
+      "id": "tertullian-modesty",
+      "label": "Tertullian, On Modesty, chapter 20",
+      "says": "Cites an Epistle to the Hebrews under the name of Barnabas and quotes 6:4–8 to argue that no second repentance was promised to the adulterer.",
+      "url": "https://www.newadvent.org/fathers/0407.htm"
+    },
+    {
+      "id": "clement-rome",
+      "label": "1 Clement, chapters 17 and 36",
+      "says": "Chapter 36 calls Christ the brightness of God's majesty, greater than the angels by a more excellent name, and quotes the same Psalms as Hebrews 1; chapter 17 recalls those who went about in goatskins and sheepskins. The edition hosted here dates the letter c. AD 95–96.",
+      "href": "/early/1clement"
+    },
+    {
+      "id": "wiki-p46",
+      "label": "Wikipedia, Papyrus 46 (manuscript facts)",
+      "says": "Dates the codex by handwriting to about 175–225, lists its contents in the order Romans, Hebrews, 1–2 Corinthians, and others, and notes that every leaf has lost some lines at the bottom.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_46"
+    },
+    {
+      "id": "wiki-hebrews",
+      "label": "Wikipedia, Epistle to the Hebrews (survey of scholarship)",
+      "says": "Surveys authorship proposals and dates, describes the work as probably a sermon with a letter's closing, and sets out the scholarly split over supersessionism.",
+      "url": "https://en.wikipedia.org/wiki/Epistle_to_the_Hebrews"
+    },
+    {
+      "id": "wiki-perseverance",
+      "label": "Wikipedia, Perseverance of the saints (section on the Hebrews warning passages)",
+      "says": "Lists the main readings of the warnings in 6:4–6 and 10:26–39 and the scholars cited for them, and summarizes Lutheran, Arminian, and Anabaptist teaching that a believer's preservation is conditional.",
+      "url": "https://en.wikipedia.org/wiki/Perseverance_of_the_saints"
+    },
+    {
+      "id": "cathenc-hebrews",
+      "label": "Leopold Fonck, Epistle to the Hebrews, Catholic Encyclopedia (1910)",
+      "says": "Notes that the oldest Greek manuscripts place Hebrews after the letters to churches and before the pastoral letters, and later codices last among Paul's letters; concludes: Paul's ideas in another writer's form, sent from Italy to Jerusalem in 63 or early 64, a letter rather than a homily.",
+      "url": "https://www.newadvent.org/cathen/07181a.htm"
+    },
+    {
+      "id": "ecw-hebrews",
+      "label": "Early Christian Writings, Hebrews (quotations from modern scholars)",
+      "says": "Quotes Harold Attridge on date and authorship, Kümmel dating Hebrews to 80–90, and Norman Perrin calling the writer a Hellenistic Jewish Christian writing to a like community, perhaps in Rome; notes that estimates for 1 Clement run from 95 to 120 or later.",
+      "url": "https://www.earlychristianwritings.com/hebrews.html"
+    },
+    {
+      "id": "brenton-psalms",
+      "label": "Brenton's English Septuagint, Psalms 39, 94, and 109 (Greek numbering)",
+      "says": "Has a body hast thou prepared me (39:7), as in the provocation (94:8), and the Melchizedek oath (109:4), matching the forms quoted in Hebrews.",
+      "href": "/scriptures/text/brenton/PSA.json"
+    },
+    {
+      "id": "brenton-jeremiah",
+      "label": "Brenton's English Septuagint, Jeremiah 38 (Greek numbering)",
+      "says": "Has the new-covenant oracle with I disregarded them at 38:32, the form quoted at Hebrews 8:9.",
+      "href": "/scriptures/text/brenton/JER.json"
+    },
+    {
+      "id": "hosted-hebrew-ot",
+      "label": "World English Bible, Psalms 40 and 95 and Jeremiah 31",
+      "says": "Gives the Hebrew-based wording: You have opened my ears (Psalm 40:6), Meribah and Massah (Psalm 95:8), and although I was a husband to them (Jeremiah 31:32).",
+      "href": "/scriptures/protestant/PSA/40"
+    },
+    {
+      "id": "hosted-acts",
+      "label": "World English Bible, Acts 13",
+      "says": "At 13:15 the synagogue rulers invite any word of exhortation for the people after the reading of the law and the prophets.",
+      "href": "/scriptures/protestant/ACT/13"
+    },
+    {
+      "id": "hosted-genesis",
+      "label": "World English Bible, Genesis 14",
+      "says": "Introduces Melchizedek, king of Salem and priest of God Most High, who blesses Abram and receives a tenth, with no parents or death recorded.",
+      "href": "/scriptures/protestant/GEN/14"
+    },
+    {
+      "id": "wiki-variants-heb",
+      "label": "Wikipedia, Textual variants in the Epistle to the Hebrews (list of manuscript readings)",
+      "says": "At 2:9 lists χάριτι θεοῦ, by the grace of God, in 𝔓46, Sinaiticus, Alexandrinus, Vaticanus and most witnesses, and χωρὶς θεοῦ, apart from God, in 0121b, 424c, 1739 and in writers including Origen, Ambrose, and Jerome.",
+      "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_Epistle_to_the_Hebrews"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Read Psalm 95 as the writer quotes it, then track today and rest through the exposition that follows.",
+      "refs": [
+        "3:7",
+        "3:13",
+        "3:15",
+        "4:3",
+        "4:7",
+        "4:9",
+        "4:11"
+      ]
+    },
+    {
+      "tip": "Follow the priesthood argument from Psalm 110 through Melchizedek to the oath, with Genesis 14 open beside it.",
+      "refs": [
+        "5:6",
+        "6:20",
+        "7:1",
+        "7:3",
+        "7:11",
+        "7:17",
+        "7:21"
+      ]
+    },
+    {
+      "tip": "Read the two warnings with what follows each, before deciding what they mean.",
+      "refs": [
+        "6:4",
+        "6:6",
+        "6:9",
+        "6:10",
+        "10:26",
+        "10:29",
+        "10:32",
+        "10:35"
+      ]
+    },
+    {
+      "tip": "Set the repeated sacrifices beside the single offering, noting every once and year by year.",
+      "refs": [
+        "9:7",
+        "9:12",
+        "9:25",
+        "9:26",
+        "10:1",
+        "10:10",
+        "10:11",
+        "10:14"
+      ]
+    },
+    {
+      "tip": "Read chapter 11 as a list of promises not yet received, and let 11:39–40 and 12:1–2 finish the thought.",
+      "refs": [
+        "11:1",
+        "11:13",
+        "11:16",
+        "11:39",
+        "11:40",
+        "12:1",
+        "12:2"
+      ]
+    }
+  ],
+  "next": "Read Psalm 110, Psalm 95, Jeremiah 31, and Leviticus 16 for the passages Hebrews works from, and Genesis 14 for Melchizedek. Then read 1 Clement 36 on this site for an early echo of Hebrews 1.",
+  "traditionNote": "All five traditions represented on this site include Hebrews in the New Testament. English Bibles follow the later manuscript order that places it after Philemon, at the end of the letters long associated with Paul, while Papyrus 46 places it after Romans."
+}

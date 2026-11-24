@@ -1,0 +1,578 @@
+{
+  "book": "1TI",
+  "bookName": "1 Timothy",
+  "oneLine": "A letter to Timothy at Ephesus about guarding sound teaching, ordering a household of faith, and the godliness that teaching is meant to produce.",
+  "orient": "The opening names Paul and addresses Timothy, who has been urged to stay at Ephesus and stop certain people from teaching something different. The letter moves between charges to Timothy, instructions for prayer and worship, qualifications for overseers and servants, care for widows and elders, and warnings about money. A short hymn about Christ stands at its center in 3:16. Read the practical directions with the reasons attached to them: the letter keeps tying teaching to conscience, conduct and what outsiders see.",
+  "whereYouAre": "The letter presents Timothy as a younger co-worker left at Ephesus while Paul travels to Macedonia, with Paul hoping to come soon. Acts introduces Timothy at Lystra and records Paul leaving Ephesus for Macedonia, and Paul's undisputed letters call Timothy his faithful child and co-worker. Acts does not narrate the stay described in 1:3. The setting the letter describes and the historical circumstances of its composition are separate questions.",
+  "facts": {
+    "writtenBy": "The opening names Paul. Traditional Pauline authorship is still defended, while many scholars read the letter as later writing in Paul's name within the Pauline tradition.",
+    "writtenWhen": "If Paul wrote it, the 60s CE; a 1912 Catholic Encyclopedia defense of direct Pauline authorship argues for 63 to 67. The late first century or the first half of the second century in most critical reconstructions. Polycarp's letter, written about 110–140, has wording close to 6:7 and 6:10; if he drew on 1 Timothy it existed by then, but he does not name it, and the saying in 6:7 has older forms in Job and Ecclesiastes. No year is secure.",
+    "writtenFor": "Timothy, with instructions concerning the church at Ephesus. The final greeting in the SBL Greek text addresses more than one person; KJV and Douay-Rheims, following other copies, read thee.",
+    "place": "Ephesus is Timothy's assignment and Macedonia is the sender's destination at 1:3. The letter does not name the place of writing.",
+    "covers": "Rival teaching and Timothy's charge; prayer and worship; overseers and servants; Timothy's own conduct; widows, elders and enslaved people; money and a closing charge.",
+    "size": "Six chapters, 113 verses, and 2,267 words in the World English Bible edition used here."
+  },
+  "factSourceIds": {
+    "writtenBy": [
+      "hosted-web",
+      "wikipedia-1ti",
+      "aherne-1912",
+      "irenaeus-preface",
+      "muratorian"
+    ],
+    "writtenWhen": [
+      "wikipedia-1ti",
+      "aherne-1912",
+      "polycarp-philippians",
+      "scriptural-parallels"
+    ],
+    "writtenFor": [
+      "hosted-web",
+      "greek-1ti"
+    ],
+    "place": [
+      "hosted-web"
+    ],
+    "covers": [
+      "hosted-web"
+    ],
+    "size": [
+      "hosted-web"
+    ]
+  },
+  "language": {
+    "writtenIn": "Koine Greek.",
+    "register": "A letter of charge and instruction. Direct commands to Timothy alternate with lists of qualifications, vice lists, short quoted sayings, a hymn, and two doxologies. A small set of repeated words, teaching, godliness, conscience and faith, carries the argument from one practical topic to the next.",
+    "spokenWorld": "The letter addresses a Christian community at Ephesus and argues about the law, myths and genealogies, food, marriage and money. Its Greek belongs to the letter as composed; the text does not establish what language every person it mentions spoke day to day.",
+    "readerSignal": "Watch how teaching is judged by what it produces. The aim of the charge is love from a pure heart, a good conscience and sincere faith; rival teaching is faulted for producing disputes and for treating godliness as a way to gain money.",
+    "englishLayer": "The World English Bible, King James Version and Douay-Rheims often choose different English words for the same Greek, as with overseer and bishop at 3:2 or quietness and silence at 2:11–12. Some differences come from the Greek text each follows. At 3:16, WEB and KJV read God, the SBL Greek reads who, and Douay-Rheims reads which, following the Latin. The Greek examples follow the SBL Greek New Testament, a modern critical edition whose readings are not always those behind WEB or KJV.",
+    "textualHistory": [
+      {
+        "label": "A Greek letter of charge and community order",
+        "language": "Koine Greek",
+        "role": "composition",
+        "description": "Repeated Greek vocabulary links the charge to Timothy, the instructions for the community and the passages about salvation. Several of the letter's characteristic words are rare or absent in Paul's undisputed letters, which is one strand of the authorship debate. The letter's represented setting at Ephesus should be kept apart from its debated date and circumstances.",
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-web",
+          "wikipedia-1ti"
+        ]
+      },
+      {
+        "label": "Early copies",
+        "language": "Greek manuscripts",
+        "role": "earliest-extant",
+        "description": "No original survives. The earliest known copy of any part of 1 Timothy is a single papyrus leaf, Papyrus 133, with parts of 3:13–4:8. Two survey articles date it differently: the article on the papyrus reports the middle of the third century, the article on the letter 330–360. The fourth-century Codex Sinaiticus contains the letter. Papyrus 46, the oldest substantial collection of Paul's letters, has lost its final leaves, and scholars disagree whether it ever included 1 and 2 Timothy and Titus.",
+        "sourceIds": [
+          "wikipedia-1ti",
+          "wikipedia-p46",
+          "wikipedia-p133"
+        ]
+      },
+      {
+        "label": "Variant readings and translation choices",
+        "language": "Greek, Latin and English witnesses",
+        "role": "translation",
+        "description": "At 3:16 the oldest Greek witnesses read who, the Latin tradition reads which, and many later Greek manuscripts and corrections read God. At 3:1 a few Greek and Latin witnesses read a human saying instead of a faithful saying. English versions also differ in how they render the same Greek, as with a root or the root at 6:10. The SBL Greek is a modern edited text, not a claim about the base of every English edition.",
+        "sourceIds": [
+          "hosted-editions",
+          "greek-1ti",
+          "wikipedia-variants",
+          "net-1ti"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Godliness as the measure of teaching",
+        "original": "εὐσέβεια — eusebeia — godliness, reverence toward God",
+        "explanation": "The noun occurs 8 times in 1 Timothy (counting every form of the word in the SBL Greek text), more than in any other New Testament book. It names the quiet life prayed for in 2:2, the mystery of 3:16, Timothy's training and the teaching that accords with it. Rival teachers treat it as a means of gain; the letter answers that godliness with contentment is the real gain.",
+        "translationNote": "Godliness can sound like private piety. The NET notes give a range: reverence toward God, the conduct that fits it, or the whole way of belief behind both. At 5:4 a related verb describes piety toward one's own family.",
+        "caution": "The word does not occur in Romans, 1 and 2 Corinthians, Galatians, Philippians, 1 Thessalonians or Philemon (SBL Greek). That belongs in the authorship debate, but one word cannot settle it; subject and audience also shape vocabulary.",
+        "refs": [
+          "2:2",
+          "3:16",
+          "4:7",
+          "4:8",
+          "6:3",
+          "6:5",
+          "6:6",
+          "6:11"
+        ],
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-web",
+          "hosted-editions",
+          "net-1ti"
+        ]
+      },
+      {
+        "title": "Healthy teaching and different teaching",
+        "original": "ὑγιαίνω / διδασκαλία / ἑτεροδιδασκαλέω — hygiainō / didaskalia / heterodidaskaleō — be healthy or sound / teaching / teach something different",
+        "explanation": "The letter uses the same verb for teaching something different at its start and in its last chapter, at 1:3 and 6:3; in the SBL text it occurs only in this letter. The noun for teaching occurs 8 times (all forms, SBL Greek). Health language marks approved teaching at 1:10 and 6:3. Timothy must watch both himself and his teaching, because both affect his hearers.",
+        "translationNote": "WEB says doctrine in some places and teaching in others for the same noun, and sound hides the health metaphor. At 4:1 the noun is used for doctrines of demons: the word is neutral, and what qualifies it does the judging.",
+        "caution": "The health image describes reliable teaching, not bodily health. The letter's description of opponents is part of its argument, not a neutral report of their views.",
+        "refs": [
+          "1:3",
+          "1:10",
+          "4:1",
+          "4:6",
+          "4:13",
+          "4:16",
+          "6:1",
+          "6:3"
+        ],
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-web",
+          "hosted-editions"
+        ]
+      },
+      {
+        "title": "Faithful is the saying",
+        "original": "πιστὸς ὁ λόγος — pistos ho logos — faithful (trustworthy) is the saying",
+        "explanation": "The same three-word formula occurs 3 times in 1 Timothy, at 1:15, 3:1 and 4:9, and once each in 2 Timothy and Titus (measured in the SBL Greek). It marks a statement the reader is to treat as reliable and worth accepting. At 1:15 it introduces a compact confession: Christ Jesus came into the world to save sinners.",
+        "translationNote": "WEB varies the wording (The saying is faithful, This is a faithful saying, This saying is faithful), so a reader may miss that the Greek is identical.",
+        "caution": "It is not always clear whether the formula points forward or back. The NET notes take 1:15 and 3:1 as pointing forward and 4:9 as pointing to the preceding words. At 3:1 a few Greek and Latin witnesses read a human saying. The formula does not prove a fixed written collection of sayings.",
+        "refs": [
+          "1:15",
+          "3:1",
+          "4:9"
+        ],
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-web",
+          "net-1ti",
+          "wikipedia-variants"
+        ]
+      },
+      {
+        "title": "Conscience as a sign of where teaching leads",
+        "original": "συνείδησις — syneidēsis — conscience",
+        "explanation": "The word occurs 4 times (all forms, SBL Greek). A good conscience is part of the aim of the charge at 1:5; at 1:19 some who pushed it away have shipwrecked their faith. Servants hold the mystery of the faith with a pure conscience, while the liars of 4:2 have a seared one. The word joins inward integrity to outward teaching.",
+        "translationNote": "English conscience is a close match. Read the four places together to see the contrast between conscience kept and conscience damaged, each time near faith.",
+        "caution": "The letter does not define conscience or make private feeling the final test of truth; it pairs conscience with faith and teaching.",
+        "refs": [
+          "1:5",
+          "1:19",
+          "3:9",
+          "4:2"
+        ],
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-web"
+        ]
+      },
+      {
+        "title": "The mystery and the hymn",
+        "original": "μυστήριον / ἐφανερώθη / ἀνελήμφθη — mystērion / ephanerōthē / anelēmphthē — mystery / was revealed / was taken up",
+        "explanation": "At 3:9 servants hold the mystery of the faith; at 3:16 the mystery of godliness is unfolded in six short lines, each built on a passive verb with a matching phrase: revealed in flesh, justified in spirit, seen by angels, preached among nations, believed in the world, taken up in glory. Many scholars, though not all, read these lines as a hymn or creed the letter quotes. The NET notes explain mystery as a secret once hidden in God and now revealed.",
+        "translationNote": "In the SBL Greek the hymn begins with who, with no stated antecedent, which suits a quoted hymn. WEB and KJV begin with God, following a different reading; Douay-Rheims begins with which.",
+        "caution": "Mystery here is not a secret rite or an unsolved puzzle. Calling the lines a hymn describes their form, not who composed them.",
+        "refs": [
+          "3:9",
+          "3:16"
+        ],
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-web",
+          "hosted-editions",
+          "net-1ti"
+        ]
+      }
+    ],
+    "examplesHeading": "Greek words where translation and interpretation meet",
+    "examples": [
+      {
+        "ref": "1:1",
+        "form": "σωτῆρος — sōtēros",
+        "meaning": "of the Savior",
+        "why": "In 1 Timothy the title Savior is given to God at 1:1, 2:3 and 4:10. The NET notes call this use characteristic of the Pastoral Letters and common in the Old Testament, especially Isaiah. Christ is the one who came to save sinners at 1:15; the letter keeps God as the source of salvation in view.",
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-web",
+          "net-1ti"
+        ]
+      },
+      {
+        "ref": "2:12",
+        "form": "αὐθεντεῖν — authentein",
+        "meaning": "to exercise authority, or to dictate to; the exact force is disputed",
+        "why": "The verb occurs only here in the New Testament (SBL Greek). Because comparison texts are few, its sense is a central point in the debate over 2:11–15. The NET notes give a lexicon sense of taking a stance of independent authority; egalitarian readers argue for a narrower or more negative sense.",
+        "sourceIds": [
+          "greek-1ti",
+          "net-1ti",
+          "wikipedia-1ti-2-12"
+        ]
+      },
+      {
+        "ref": "3:16",
+        "form": "Ὃς — hos",
+        "meaning": "who",
+        "why": "The SBL text begins the hymn with who. Many later manuscripts read God; in ancient copies God was abbreviated in a way that looks very like who, so the two could be confused. The NET notes judge who to be the earlier reading.",
+        "sourceIds": [
+          "greek-1ti",
+          "net-1ti",
+          "wikipedia-variants"
+        ]
+      },
+      {
+        "ref": "6:10",
+        "form": "ῥίζα — rhiza",
+        "meaning": "root",
+        "why": "The Greek has no article with root. WEB reads a root of all kinds of evil; KJV reads the root of all evil and Douay-Rheims the root of all evils. The NET notes argue the phrase is definite and read it as hyperbole. Either way the subject is the love of money, not money itself.",
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-editions",
+          "net-1ti"
+        ]
+      },
+      {
+        "ref": "6:20",
+        "form": "παραθήκην — parathēkēn",
+        "meaning": "what has been deposited or entrusted",
+        "why": "A word for a deposit left in someone's keeping. It occurs once here and twice in 2 Timothy (SBL Greek). The related verb at 1:18 commits the charge to Timothy, and at 1:11 the gospel was entrusted to Paul; here Timothy must guard what was committed to him.",
+        "sourceIds": [
+          "greek-1ti",
+          "hosted-web"
+        ]
+      }
+    ]
+  },
+  "form": {
+    "name": "A letter of charge and community order",
+    "how": "Read it as instructions handed to a delegate, not as a complete church manual. Topics follow one another with little transition, so watch the repeated charges to Timothy that frame them. Each command usually carries a reason: the truth, the gospel, the good name of the community before outsiders, or the coming appearing of Christ. The hymn at 3:16 and the doxologies at 1:17 and 6:15–16 show what the order serves."
+  },
+  "cast": [
+    {
+      "name": "Paul",
+      "who": "The named sender, who describes himself as a former persecutor shown mercy and appointed apostle and teacher of the nations. Whether Paul directly composed the letter is debated."
+    },
+    {
+      "name": "Timothy",
+      "who": "The addressee, Paul's true child in faith, left at Ephesus. He is young enough to be told not to let anyone despise his youth, and he received a gift through prophecy and the laying on of the elders' hands."
+    },
+    {
+      "name": "The rival teachers",
+      "who": "Certain people teaching something different, occupied with myths, genealogies and the law; 4:1–3 warns of teachers who forbid marriage and some foods. Hymenaeus and Alexander are named at 1:20. Their own account is not preserved."
+    },
+    {
+      "name": "Overseers, servants and elders",
+      "who": "Local leaders whose qualifications are listed in chapter 3 and whose support and discipline are addressed in chapter 5."
+    },
+    {
+      "name": "Widows, the wealthy and enslaved people",
+      "who": "Groups within the community addressed through instructions about support, conduct and obligations. They are spoken about; none speaks in the letter."
+    }
+  ],
+  "shape": [
+    {
+      "heading": "The charge against different teaching",
+      "chapters": "1",
+      "precise": "1:1–20",
+      "note": "The charge at Ephesus leads into the use of the law, Paul's story of mercy, a doxology, and the charge renewed."
+    },
+    {
+      "heading": "Prayer, worship, and leaders",
+      "chapters": "2–3",
+      "precise": "2:1–3:16",
+      "note": "Prayer for all and the one mediator; men and women at prayer; overseers and servants; God's household and the hymn about Christ."
+    },
+    {
+      "heading": "Timothy's own conduct",
+      "chapters": "4",
+      "precise": "4:1–16",
+      "note": "A warning about teaching that forbids marriage and foods, the goodness of creation, and Timothy's training, reading, teaching and example."
+    },
+    {
+      "heading": "Widows and elders",
+      "chapters": "5",
+      "precise": "5:1–25",
+      "note": "Older and younger people, which widows the church supports, how elders are honored and corrected, and a note about wine."
+    },
+    {
+      "heading": "Money, godliness, and the final charge",
+      "chapters": "6",
+      "precise": "6:1–21",
+      "note": "Enslaved believers, rival teachers and the love of money, the charge before God and Christ, a doxology, and a word to the rich."
+    }
+  ],
+  "purpose": "1 Timothy charges a delegate to stop teaching that breeds disputes and to order a community so that its life matches what it confesses. The letter grounds that order in God's desire that all people be saved, in Christ as the one mediator, and in the mystery confessed in 3:16, and it measures teaching by whether it produces love, a good conscience, sincere faith and godliness without greed.",
+  "snags": [
+    {
+      "snag": "The instructions about women in 2:9–15 sound like a general rule, and they have been used to silence and diminish women.",
+      "help": "Read the whole unit together. Women are told to learn; they are not permitted to teach or to exercise authority over a man; the reasons given appeal to Adam and Eve; and 2:15 says she will be saved through childbearing, a verse the NET notes call notoriously difficult and read in several ways. The same root for quiet describes the life asked for everyone at 2:2. Christians disagree about whether the restriction is universal or addressed to a local problem; see the debate below. The NET notes reject the reading that women are saved only if they bear children. The passage does not say that women are of less worth than men."
+    },
+    {
+      "snag": "The instructions to enslaved people in 6:1–2 can be read as approving slavery.",
+      "help": "The bondservants of 6:1 are enslaved people, not paid employees, as the NET notes stress. The letter tells them to honor their masters so that God's name and the teaching are not blasphemed, and it says nothing to masters here. Read this within the social order the letter takes for granted and its concern for the community's reputation. The same letter lists slave-traders (KJV menstealers, NET kidnappers) among those the law condemns at 1:10. These verses tell people inside an existing system how to act; they do not show that the system is good, and they give no license to enslave anyone."
+    },
+    {
+      "snag": "The list at 1:9–10 is often read as aimed at one group of people.",
+      "help": "One Greek word in 1:10, ἀρσενοκοίταις, occurs in the New Testament only here and at 1 Corinthians 6:9 (all forms, SBL Greek). WEB translates it homosexuals; KJV and Douay-Rheims have them that defile themselves with mankind; the NET Bible has practicing homosexuals and notes that it supplied the word practicing. A survey article reports that scholars differ: some hold that the word repeats the condemnation in Leviticus of sex between males, and others argue that its sense is narrower or uncertain. The same list names murderers, slave-traders, liars, and perjurers, and at 1:15 the writer calls himself the chief of sinners. The list names conduct the law addresses; it does not license contempt for any group."
+    },
+    {
+      "snag": "The rules for widows in 5:3–16 can sound harsh, especially toward younger widows.",
+      "help": "The passage is about who the church should support from common funds. Families are to care for their own; a widow without family, sixty or older and known for good works, may be enrolled; younger widows are encouraged to remarry. The NET notes say the enrollment probably involved a pledge, which explains the concern about broken pledges at 5:12. The judgments about younger widows reflect the writer's concerns about idleness and reputation; they are not a statement about the worth of widows."
+    },
+    {
+      "snag": "God was revealed in the flesh at 3:16 is a famous line, but some modern Bibles, such as the NET, read He was revealed.",
+      "help": "This is a difference in the Greek text, not a translator's choice. WEB and KJV follow manuscripts that read God; the SBL Greek follows older witnesses that read who; Douay-Rheims follows the Latin, which reads which. In ancient copies God was written in an abbreviated form that looks very like who. Either way the hymn speaks of Christ, who was revealed in flesh and taken up in glory."
+    },
+    {
+      "snag": "The love of money is the root of all evil is often quoted as if money itself were evil, or as if every evil came from greed.",
+      "help": "The Greek subject is the love of money. WEB reads a root of all kinds of evil, while KJV reads the root of all evil. The NET notes read the Greek as definite and call it hyperbole, an overstatement to make a point. The surrounding verses warn those determined to be rich and, at 6:17–19, instruct the rich to be generous rather than to abandon all wealth."
+    },
+    {
+      "snag": "The advice to drink a little wine at 5:23 can be read as a general rule about alcohol, for or against.",
+      "help": "It is a personal note to Timothy about his stomach and frequent illnesses, set among instructions about elders. The letter also requires that overseers not be drinkers and servants not be addicted to much wine. The verse neither commands abstinence nor permits excess."
+    }
+  ],
+  "debates": [
+    {
+      "question": "Did Paul directly compose 1 Timothy?",
+      "settled": "The letter names Paul as sender and Timothy as recipient; Timothy is well known from Acts and from Paul's undisputed letters. By the late second century, Irenaeus cites its words as the apostle's, and the Muratorian list counts two letters of Paul to Timothy.",
+      "positions": [
+        {
+          "view": "Direct Pauline authorship",
+          "grounds": "Defenders take the letter's claim at face value and point to its early acceptance as Paul's. A 1912 Catholic Encyclopedia article argues that Paul was released from his first Roman imprisonment and wrote it between 63 and 67. Some present-day defenders argue that differences of vocabulary and style are expected in letters to close co-workers."
+        },
+        {
+          "view": "Later composition in the Pauline tradition",
+          "grounds": "Many scholars, most according to a survey article, find the combined evidence of vocabulary, style, church organization and setting more consistent with a writer after Paul's death, in the late first or early second century. They note that Marcion's collection of Paul's letters, around 140, did not include the Pastoral Letters, though the reason is unknown. Explanations through a secretary or change of circumstance are weighed by both sides; critics judge them insufficient."
+        }
+      ],
+      "soWhat": "Authorship changes the date and the history behind the letter, not its words. Keep three things separate: what the letter says about Paul and Timothy, how the early church received it, and what modern scholars reconstruct about its origin."
+    },
+    {
+      "question": "Is 2:11–15 a rule for all churches or an answer to a local problem?",
+      "settled": "The passage tells women to learn in quietness and says the writer does not permit a woman to teach or to exercise authority over a man, giving Adam and Eve as reasons. The verb at 2:12 occurs nowhere else in the New Testament, and 2:15 is hard to interpret on any view.",
+      "positions": [
+        {
+          "view": "A standing instruction for church order",
+          "grounds": "Complementarian readers, who hold that men and women are equal in dignity but differ in role in home and church, argue that the social setting, while relevant, does not limit the instruction to one time and place, that the text applies to all congregations, and that the key verb in context means having authority over men in the church. The Danvers Statement of 1987, a declaration of this view, cites 2:12–14 for differences of role as part of the created order; 2:13 gives as its reason that Adam was formed first."
+        },
+        {
+          "view": "A response to the situation at Ephesus",
+          "grounds": "Egalitarian readers, who hold that Scripture supports equal standing for women, including in church leadership, argue that the instruction answered a specific setting at Ephesus, often linked to the false teaching the letter opposes, and that the rare verb does not support excluding women from authoritative teaching. Some argue it applied only for a time, or only to untaught women."
+        },
+        {
+          "view": "A sign of later church order",
+          "grounds": "A survey article reports that critics who read the letter as post-Pauline see its rules for women as departing from more equal teaching in Paul's undisputed letters, such as Galatians 3:28."
+        }
+      ],
+      "soWhat": "This choice affects whether churches open teaching and leadership roles to women. Churches hold each position in good faith; the passage does not answer every question later put to it."
+    },
+    {
+      "question": "Who are the women of 3:11?",
+      "settled": "The word means either women or wives, and it stands in the middle of the qualifications for servants, or deacons. Romans 16:1 calls Phoebe a servant of the church at Cenchreae, using the word for the servants of 3:8 and 3:12.",
+      "positions": [
+        {
+          "view": "The wives of deacons",
+          "grounds": "WEB translates their wives, and KJV prints their as a word supplied by the translators. The NET translators prefer wives: women deacons would more naturally be treated in their own section, 3:12 requires deacons to be husbands of one wife, and the list for these women is short."
+        },
+        {
+          "view": "Women who serve as deacons",
+          "grounds": "Douay-Rheims reads the women. Others note that the setting is the deacon section, that no wives are mentioned for overseers, and that Romans 16:1 calls Phoebe a servant of a church. Clement of Alexandria already referred to Paul's instructions about women deacons in his letter to Timothy. The NET notes call the decision difficult and their own conclusion tentative."
+        }
+      ],
+      "soWhat": "The answer bears on the history of women's ministry and on current practice in some churches. The verse itself sets the same standard of reverence, truthful speech, restraint and faithfulness either way."
+    },
+    {
+      "question": "Does 3:16 read God or who?",
+      "settled": "Both readings are ancient, and both refer to Christ. The difference rests on manuscripts, not on translation.",
+      "positions": [
+        {
+          "view": "Who, as the earlier reading",
+          "grounds": "The first hands of Codex Sinaiticus, Alexandrinus and Ephraemi read who, and the Latin tradition reads which. Modern critical editions, including the SBL Greek, adopt who, and the NET notes judge that God arose later from confusion with the abbreviation or as an intentional change."
+        },
+        {
+          "view": "God, as in the received text",
+          "grounds": "Correctors of those same manuscripts, most later Greek manuscripts and several Greek church fathers read God, and the KJV and WEB follow it. Defenders of the Byzantine text argue for keeping it; the NET notes record Dean Burgon's view that who is impossible here."
+        }
+      ],
+      "soWhat": "The reading changes whether this verse names Christ as God; it does not change what the hymn says he did. A reader comparing English Bibles should know the difference comes from the Greek copies."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hosted-web",
+      "label": "World English Bible, 1 Timothy",
+      "says": "Provides the wording, sequence, instructions, names and measured length of the English text discussed here.",
+      "href": "/scriptures/protestant/1TI/1"
+    },
+    {
+      "id": "hosted-editions",
+      "label": "1 Timothy in the World English Bible, King James Version, and Douay-Rheims",
+      "says": "Shows differences at 1:10, 2:11–12, 3:2, 3:11, 3:16, 5:17, 6:10 and 6:21."
+    },
+    {
+      "id": "greek-1ti",
+      "label": "SBL Greek New Testament, 1 Timothy, with MorphGNT analysis",
+      "says": "Provides the Greek forms, lemmas and readings used here, including who at 3:16 and the plural you at 6:21; all counts were measured over this modern edited text.",
+      "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/75-1Ti-morphgnt.txt"
+    },
+    {
+      "id": "polycarp-philippians",
+      "label": "Polycarp, Letter to the Philippians, chapter 4 (c. AD 110–140)",
+      "says": "Opens chapter 4 with the love of money as the root of all evils and the saying that we brought nothing into the world and can carry nothing out, wording close to 1 Timothy 6:10 and 6:7. Polycarp does not name his source.",
+      "href": "/early/polycarp-philippians"
+    },
+    {
+      "id": "irenaeus-preface",
+      "label": "Irenaeus, Against Heresies, Book I, Preface (c. AD 180)",
+      "says": "Describes opponents who bring in vain genealogies which, as the apostle says, minister questions rather than godly edifying in faith, the wording of 1 Timothy 1:4.",
+      "url": "https://www.newadvent.org/fathers/0103100.htm"
+    },
+    {
+      "id": "muratorian",
+      "label": "The Muratorian Fragment (Roberts-Donaldson translation)",
+      "says": "Lists Paul's letters and says he also wrote one to Philemon, one to Titus and two to Timothy. The translator's note places the writer in the latter half of the second century.",
+      "url": "https://www.earlychristianwritings.com/text/muratorian.html"
+    },
+    {
+      "id": "aherne-1912",
+      "label": "Cornelius Aherne, Epistles to Timothy and Titus, Catholic Encyclopedia (1912)",
+      "says": "Defends Pauline authorship against the arguments from vocabulary, style and church order, and argues that Paul was released from his first Roman imprisonment, leaving time between 63 and 67 to write 1 Timothy and Titus.",
+      "url": "https://www.newadvent.org/cathen/14727b.htm"
+    },
+    {
+      "id": "net-1ti",
+      "label": "NET Bible, 1 Timothy: text and translator notes",
+      "says": "Discusses Savior as a title for God, kidnappers at 1:10, the direction of the faithful-saying formula, the verb and quietness at 2:12, readings of 2:15, wives or women deacons at 3:11, godliness and the form and reading of 3:16, the widows' list, slave at 6:1, and the root at 6:10.",
+      "url": "https://bible.org/sites/bible.org/resources/download/netbible/ondemand/bybook/1ti.pdf"
+    },
+    {
+      "id": "wikipedia-1ti",
+      "label": "Wikipedia, First Epistle to Timothy (survey article)",
+      "says": "Summarizes the authorship debate, reports a late first or early second century date as the common critical view, notes Marcion's collection and the Polycarp parallels, dates Papyrus 133, the earliest known copy, to 330–360, and shows 1 Timothy in Codex Sinaiticus.",
+      "url": "https://en.wikipedia.org/wiki/First_Epistle_to_Timothy"
+    },
+    {
+      "id": "wikipedia-pastorals",
+      "label": "Wikipedia, Pastoral epistles (survey article)",
+      "says": "Reports defenders who explain linguistic differences by the letters' recipients, and critics who see later vocabulary, church order and gender roles, contrasting Galatians 3:28.",
+      "url": "https://en.wikipedia.org/wiki/Pastoral_epistles"
+    },
+    {
+      "id": "wikipedia-variants",
+      "label": "Wikipedia, Textual variants in the First Epistle to Timothy",
+      "says": "Lists the witnesses for who, which and God at 3:16, and for a human saying instead of a faithful saying at 3:1.",
+      "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_First_Epistle_to_Timothy"
+    },
+    {
+      "id": "wikipedia-p46",
+      "label": "Wikipedia, Papyrus 46",
+      "says": "Describes the papyrus collection of Paul's letters, dated about 175–225, and the dispute over whether its lost final leaves once held the Pastoral Letters.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_46"
+    },
+    {
+      "id": "wikipedia-1ti-2-12",
+      "label": "Wikipedia, 1 Timothy 2:12 (survey article)",
+      "says": "Sets out complementarian and egalitarian readings of the verse on social, lexical and interpretive grounds, including the dispute over the verb at 2:12.",
+      "url": "https://en.wikipedia.org/wiki/1_Timothy_2:12"
+    },
+    {
+      "id": "wikipedia-deaconess",
+      "label": "Wikipedia, Deaconess (survey article)",
+      "says": "Quotes Clement of Alexandria referring to the instructions about women deacons given by Paul in his letter to Timothy, and notes Phoebe in Romans 16:1.",
+      "url": "https://en.wikipedia.org/wiki/Deaconess"
+    },
+    {
+      "id": "scriptural-parallels",
+      "label": "Acts 16; Acts 19–20; 1 Corinthians 4; Philippians 2; Romans 16; Job 1; Ecclesiastes 5, World English Bible",
+      "says": "Acts introduces Timothy and records Paul leaving Ephesus for Macedonia; 1 Corinthians and Philippians call Timothy Paul's child and co-worker; Romans 16:1 calls Phoebe a servant of a church; Job 1:21 and Ecclesiastes 5:15 give older forms of the saying in 6:7.",
+      "href": "/scriptures/protestant/ACT/16"
+    },
+    {
+      "id": "wikipedia-complementarianism",
+      "label": "Wikipedia, Complementarianism (survey article)",
+      "says": "Describes the view that men and women are equal in dignity but have different and complementary roles, with male headship in home and church, and quotes a statement restricting some church teaching roles to men with 1 Timothy 2:11–15 among its texts.",
+      "url": "https://en.wikipedia.org/wiki/Complementarianism"
+    },
+    {
+      "id": "wikipedia-egalitarianism",
+      "label": "Wikipedia, Christian egalitarianism (survey article)",
+      "says": "Describes Christian egalitarians as holding that the Bible supports gender equality and women's ability to exercise spiritual authority as clergy.",
+      "url": "https://en.wikipedia.org/wiki/Christian_egalitarianism"
+    },
+    {
+      "id": "wikipedia-p133",
+      "label": "Wikipedia, Papyrus 133 (manuscript summary)",
+      "says": "Describes Papyrus 133 (P. Oxy. 5259, Oxford) as fragments of one leaf with parts of 1 Timothy 3:13–16 and 4:1–8, assigned by its handwriting to the middle of the third century.",
+      "url": "https://en.wikipedia.org/wiki/Papyrus_133"
+    },
+    {
+      "id": "danvers-statement",
+      "label": "Council on Biblical Manhood and Womanhood, The Danvers Statement (1987)",
+      "says": "Affirms that distinctions in masculine and feminine roles are ordained by God as part of the created order, citing 1 Timothy 2:12–14 among its texts, and that some governing and teaching roles in the church are restricted to men, citing 2:11–15.",
+      "url": "https://cbmw.org/about/danvers-statement/"
+    },
+    {
+      "id": "wikipedia-nt-homosexuality",
+      "label": "Wikipedia, Homosexuality in the New Testament (survey article)",
+      "says": "Reports that the word at 1 Corinthians 6:9 and 1 Timothy 1:10 occurs in the Bible only in those two lists and may be coined from the Greek of Leviticus 20:13; reports scholars who read it as repeating the Leviticus condemnation of same-sex relations and others who argue for a narrower or uncertain sense.",
+      "url": "https://en.wikipedia.org/wiki/Homosexuality_in_the_New_Testament"
+    }
+  ],
+  "howToRead": [
+    {
+      "tip": "Start with the aim stated in 1:5 and test each later instruction against it: love, a good conscience and sincere faith, set against teaching that breeds disputes.",
+      "refs": [
+        "1:3",
+        "1:4",
+        "1:5",
+        "1:6",
+        "6:3",
+        "6:4"
+      ]
+    },
+    {
+      "tip": "Read Paul's own story of mercy before the instructions. The letter presents its writer as the first example of what the gospel does.",
+      "refs": [
+        "1:12",
+        "1:13",
+        "1:14",
+        "1:15",
+        "1:16",
+        "1:17"
+      ]
+    },
+    {
+      "tip": "Read 2:1–7 before 2:8–15. The prayer for all people, God's will that all be saved and the one mediator set the frame for the instructions that follow.",
+      "refs": [
+        "2:1",
+        "2:2",
+        "2:4",
+        "2:5",
+        "2:6"
+      ]
+    },
+    {
+      "tip": "Compare the qualifications in chapter 3 with the faults of the rival teachers. Most concern character and reputation; ability to teach appears in the overseer's list and not in the servants'.",
+      "refs": [
+        "3:2",
+        "3:3",
+        "3:7",
+        "3:8",
+        "6:4",
+        "6:5"
+      ]
+    },
+    {
+      "tip": "Follow money through chapters 5 and 6: support for widows and elders, the warning to those who want to be rich, and the charge to the rich who already are.",
+      "refs": [
+        "5:16",
+        "5:17",
+        "5:18",
+        "6:6",
+        "6:9",
+        "6:10",
+        "6:17",
+        "6:18"
+      ]
+    }
+  ],
+  "next": "Read 2 Timothy and Titus, which share much of this letter's vocabulary and concerns. Turn to Acts 16 and 19–20 to meet Timothy and Ephesus in Luke's account, and to Polycarp's Letter to the Philippians, chapter 4, to see early wording close to 6:7 and 6:10.",
+  "traditionNote": "1 Timothy belongs to the New Testament and is grouped with 2 Timothy and Titus as the Pastoral Letters. That grouping describes shared concerns; it does not settle their authorship."
+}
