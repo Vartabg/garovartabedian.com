@@ -1,9 +1,9 @@
+import { runStoryStage } from "../_shared/storyStage";
 import {
   act, activeCard, actTwoCount, approach, courtComplete, eveningAt, eveningReady,
-  nearby, nearbyEncounter, newCourt, stepCourt, visibleEncounters, type Court,
+  nearby, nearbyEncounter, newCourt, stepCourt, visibleEncounters, walkTo, type Court,
 } from "./courtGame";
 import { createView } from "./courtView";
-import { courtPointer } from "./courtPointer";
 import { makeCourtSound } from "./courtSound";
 
 export function readHud(s: Court) {
@@ -37,22 +37,16 @@ export type CourtHud = ReturnType<typeof readHud>;
 export type CourtController = ReturnType<typeof runCourt>;
 
 export function runCourt(canvas: HTMLCanvasElement, onChange: (hud: CourtHud) => void) {
-  const section = canvas.closest("section");
-  const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const sound = makeCourtSound();
-  const held = new Set<string>();
-  const keys: Record<string, [number, number]> = {
-    ArrowLeft: [-1, 0], KeyA: [-1, 0], ArrowRight: [1, 0], KeyD: [1, 0],
-    ArrowUp: [0, -1], KeyW: [0, -1], ArrowDown: [0, 1], KeyS: [0, 1],
-  };
-  let s = newCourt(), paused = false, audible = true, ctxLost = false;
+  let s = newCourt();
+  let audible = true;
+  let ctxLost = false;
   let view: ReturnType<typeof createView> | undefined;
-  let frame = 0, last = 0, revision = -1, nearId: string | undefined, stepShown = -1, dirty = true;
+  let revision = -1, nearId: string | undefined, stepShown = -1, dirty = true;
   let lastShove = s.shoveAt, handled = s.seq;
   let lastCoinKick = s.coinKickAt, lastCoinSoundMs = -Infinity;
   let lastStepBucket = 0;
   let duskSoundPlayed = false;
-  const stop = new AbortController();
 
   function syncAmbiance() {
     const tablesLeft = s.fixtures.filter(f => f.kind === "table" && f.at === null).length;
@@ -61,24 +55,11 @@ export function runCourt(canvas: HTMLCanvasElement, onChange: (hud: CourtHud) =>
     sound.updateAmbiance(tablesLeft + seatsLeft, barred, tablesLeft, seatsLeft);
   }
 
-  function setupView() {
-    view = undefined;
-    try {
-      const ctx = canvas.getContext("2d");
-      if (ctx) {
-        const initialView = createView(canvas, ctx);
-        initialView.draw(s, 0, motion.matches);
-        view = initialView;
-      }
-    } catch { /* The target buttons still run the court. */ }
-    ctxLost = !view; dirty = true;
-  }
-
   function publish() {
     const near = (courtComplete(s) ? nearbyEncounter(s) : nearby(s))?.id;
     if (!dirty && revision === s.seq && nearId === near && stepShown === s.teachingStep) return;
     revision = s.seq; nearId = near; stepShown = s.teachingStep; dirty = false;
-    onChange({ ...readHud(s), paused, sound: audible, visual: !ctxLost, ready: true });
+    onChange({ ...readHud(s), paused: stage.isPaused(), sound: audible, visual: !ctxLost, ready: true });
   }
 
   function change() {
@@ -99,41 +80,43 @@ export function runCourt(canvas: HTMLCanvasElement, onChange: (hud: CourtHud) =>
     publish();
   }
 
-  function active() {
-    if (document.hidden || paused) return false;
-    sound.unlock();
-    return true;
+  function perform() {
+    if (!stage.isActive() || s.departedAt !== null) return;
+    act(s);
+    change();
   }
 
-  function perform() { if (!active() || s.departedAt !== null) return; act(s); change(); }
-  function go(id: string) { if (!active() || s.departedAt !== null) return; approach(s, id); change(); }
-
-  function reset() {
-    sound.unlock();
-    s = newCourt(); paused = false; held.clear(); pointer.clear();
-    handled = s.seq; lastShove = s.shoveAt;
-    lastCoinKick = s.coinKickAt; lastStepBucket = 0; duskSoundPlayed = false;
-    last = 0; revision = -1; stepShown = -1; dirty = true;
-    sound.setPaused(false);
-    syncAmbiance();
-    view?.size(); publish(); canvas.focus({ preventScroll: true });
+  function go(id: string) {
+    if (!stage.isActive() || s.departedAt !== null) return;
+    approach(s, id);
+    change();
   }
 
-  function pause(next: boolean) {
-    if (paused === next) return;
-    paused = next; held.clear(); pointer.clear(); last = 0; dirty = true;
-    sound.setPaused(paused);
-    publish();
+  function setupView(reduced: boolean) {
+    view = undefined;
+    try {
+      const ctx = canvas.getContext("2d");
+      if (ctx) {
+        const initialView = createView(canvas, ctx);
+        initialView.draw(s, 0, reduced);
+        view = initialView;
+      }
+    } catch { /* The target buttons still run the court. */ }
+    ctxLost = !view;
+    dirty = true;
   }
 
-  function togglePause() { sound.unlock(); pause(!paused); if (!paused) canvas.focus({ preventScroll: true }); }
-  function toggleSound() { audible = !audible; sound.setEnabled(audible); dirty = true; publish(); }
-
-  function animate(now: number) {
-    const dt = last ? Math.min(.05, Math.max(0, (now - last) / 1000)) : 0; last = now;
-    if (!paused && !document.hidden) {
-      let { x, y } = pointer.axis;
-      for (const key of held) { const v = keys[key]; x += v[0]; y += v[1]; }
+  const stage = runStoryStage(canvas, {
+    onInteract: () => sound.unlock(),
+    onPerform: perform,
+    toWorld: (x, y) => (!ctxLost && view ? view.toWorld(x, y) : undefined),
+    onTap(position) {
+      if (ctxLost || !view || s.departedAt !== null) return;
+      const fixture = view.hit(s, position);
+      if (fixture) go(fixture.id);
+      else walkTo(s, position);
+    },
+    onStep(dt, x, y, now) {
       stepCourt(s, dt, x, y);
       if (s.coinKickAt > lastCoinKick) {
         lastCoinKick = s.coinKickAt;
@@ -148,51 +131,66 @@ export function runCourt(canvas: HTMLCanvasElement, onChange: (hud: CourtHud) =>
         sound.play("step");
       }
       change();
-    }
-    if (!ctxLost && view && (!paused || dirtyPaint)) {
-      try { view.draw(s, dt, motion.matches); } catch {
-        ctxLost = true; dirty = true; publish();
-      }
-    }
-    dirtyPaint = false;
-    frame = requestAnimationFrame(animate);
+    },
+    onDraw(dt, reduced) {
+      if (!ctxLost && view) view.draw(s, dt, reduced);
+    },
+    onResize: () => view?.size(),
+    onContextLost() {
+      ctxLost = true;
+      dirty = true;
+      publish();
+    },
+    onContextRestored() {
+      setupView(stage.reduced());
+      publish();
+    },
+    onPauseChange(paused) {
+      sound.setPaused(paused);
+      dirty = true;
+      publish();
+    },
+    onVisualError() {
+      ctxLost = true;
+      dirty = true;
+      publish();
+    },
+  });
+
+  function reset() {
+    sound.unlock();
+    s = newCourt();
+    stage.setPaused(false);
+    stage.clearInput();
+    handled = s.seq; lastShove = s.shoveAt;
+    lastCoinKick = s.coinKickAt; lastStepBucket = 0; duskSoundPlayed = false;
+    revision = -1; stepShown = -1; dirty = true;
+    sound.setPaused(false);
+    syncAmbiance();
+    view?.size();
+    stage.requestPaint();
+    publish();
+    canvas.focus({ preventScroll: true });
   }
 
-  let dirtyPaint = true;
-  const opts = { signal: stop.signal };
-  window.addEventListener("keydown", (e) => {
-    if (e.ctrlKey || e.metaKey || e.altKey) return;
-    const target = e.target instanceof HTMLElement ? e.target : null;
-    if (target && target !== document.body && target !== document.documentElement && !section?.contains(target)) return;
-    if (target?.closest("summary, a, input, textarea, select")) return;
-    if (keys[e.code]) {
-      e.preventDefault();
-      if (active()) held.add(e.code);
-    } else if (e.code === "KeyP" || e.code === "Escape" && (!paused && target === canvas)) {
-      if (!e.repeat) { e.preventDefault(); togglePause(); }
-    } else if ((e.code === "Space" || e.code === "Enter") && !target?.closest("button")) {
-      e.preventDefault(); if (!e.repeat) perform();
-    }
-  }, opts);
-  window.addEventListener("keyup", e => held.delete(e.code), opts);
-  window.addEventListener("blur", () => pause(true), opts);
-  document.addEventListener("visibilitychange", () => { if (document.hidden) pause(true); }, opts);
-  const resize = new ResizeObserver(() => { view?.size(); dirtyPaint = true; });
-  const pointer = courtPointer(canvas, stop.signal, active, () => ctxLost ? undefined : view, () => s, go);
-  canvas.addEventListener("contextlost", e => {
-    e.preventDefault(); pointer.clear(); ctxLost = true; dirty = true; publish();
-  }, opts);
-  canvas.addEventListener("contextrestored", () => { setupView(); dirtyPaint = true; publish(); }, opts);
-  setupView();
-  resize.observe(canvas);
+  function toggleSound() {
+    audible = !audible;
+    sound.setEnabled(audible);
+    dirty = true;
+    publish();
+  }
+
+  setupView(stage.reduced());
   publish();
-  frame = requestAnimationFrame(animate);
+
   return {
-    perform, go, reset, togglePause, toggleSound,
+    perform,
+    go,
+    reset,
+    togglePause: () => stage.togglePause(),
+    toggleSound,
     dispose() {
-      stop.abort();
-      resize.disconnect();
-      cancelAnimationFrame(frame);
+      stage.dispose();
       sound.close();
     },
   };

@@ -2,27 +2,30 @@
   "book": "ACT",
   "chapter": 6,
   "bookName": "Acts",
-  "summary": "As the disciples multiply, Greek-speaking Jewish believers complain that their widows are being neglected in the daily distribution compared with Aramaic-speaking Hebrews. The Twelve call the whole community to choose seven reputable, Spirit-filled, wise men to oversee the need while the apostles devote themselves to prayer and the ministry of the word. The word grows, disciples multiply, and many priests obey the faith. Stephen, one of the Seven, performs signs and argues in diaspora synagogues; unable to withstand his wisdom, opponents arrange accusations about Moses, God, the temple, and Torah.",
+  "summary": "As the disciples multiply, Greek-speaking Jewish believers complain that their widows are being neglected in the daily distribution compared with Aramaic-speaking Hebrews. The Twelve call the whole community to choose seven reputable, Spirit-filled, wise men to oversee the need while the apostles devote themselves to prayer and the ministry of the word. The word grows, disciples multiply, and many priests obey the faith. Stephen, one of the Seven, performs signs and is disputed by diaspora Jews from the synagogue of the Libertines and others; unable to withstand his wisdom, opponents arrange accusations about Moses, God, the temple, and Torah.",
   "whyItMatters": "Growth exposes inequity rather than proving a community has outgrown it. The apostles listen to a minority complaint, distinguish responsibilities without demeaning material care, and share authority through communal selection. Stephen then breaks any tidy division between ‘table service’ and proclamation: Spirit-filled service, wisdom, public speech, and suffering belong together.",
   "context": {
-    "author": "The Luke–Acts narrator marking the transition from Jerusalem growth toward Stephen and wider dispersion",
-    "audience": "Readers learning how the early community addressed internal cultural inequity and appointed leadership",
-    "date": "The early Jerusalem community before Stephen's death",
+    "author": "The anonymous narrator of Luke–Acts, traditionally identified as Luke, marking the transition from Jerusalem growth toward Stephen and wider dispersion",
+    "audience": "Theophilus and readers who know Israel's Greek Scriptures, learning how the early community addressed internal cultural inequity and appointed leadership",
+    "date": "Commonly dated with or shortly after Luke, often around AD 80–90 (dates in the 60s and later are also argued); the story is set in the early Jerusalem community before Stephen's death",
     "setting": "Jerusalem's multilingual assembly and synagogues associated with diaspora Jews",
     "literaryForm": "Community problem-and-resolution narrative, growth summary, and trial setup"
   },
   "outline": [
     {
       "heading": "A distribution inequity emerges between Hellenists and Hebrews",
-      "verses": "1-2"
+      "verses": "1-2",
+      "note": "The Hellenists complain that their widows are neglected in the daily service; the twelve gather the disciples and say they should not serve tables"
     },
     {
       "heading": "The community chooses and commissions the Seven",
-      "verses": "3-7"
+      "verses": "3-7",
+      "note": "Seven men full of the Spirit and wisdom are chosen, Stephen among them; prayer and laying on of hands follow, and many priests obey"
     },
     {
       "heading": "Stephen's signs and wisdom provoke charges before the council",
-      "verses": "8-15"
+      "verses": "8-15",
+      "note": "Stephen works wonders; synagogue men dispute with him, false witnesses speak against the holy place, and his face looks like an angel's"
     }
   ],
   "keyVerses": [
@@ -44,12 +47,10 @@
   ],
   "themes": [
     "growth and inequity",
-    "widow care",
     "multilingual Judaism",
     "shared leadership",
     "Spirit and wisdom",
     "service of word and table",
-    "Stephen",
     "false testimony"
   ],
   "questions": [
@@ -68,7 +69,7 @@
     {
       "id": "q2",
       "question": "Why are widows the flashpoint?",
-      "answer": "Without a male household provider, widows could be economically vulnerable, and Israel's Scriptures repeatedly require their protection. The daily diakonia appears to be a material distribution of food or funds. A rapidly expanding, multilingual community can reproduce inequality unintentionally; naming the neglected group is necessary to repair it.",
+      "answer": "Israel's Scriptures repeatedly require widows' protection (Exodus 22:22; Deuteronomy 24:19). The daily diakonia appears to be a material distribution of food or funds. A rapidly expanding, multilingual community can reproduce inequality unintentionally; naming the neglected group is necessary to repair it.",
       "verseRefs": [
         "6:1",
         "6:2"
@@ -146,7 +147,7 @@
     {
       "id": "q7",
       "question": "What is the Synagogue of the Freedmen?",
-      "answer": "The Greek may describe one synagogue or several linked diaspora groups: freed persons and Jews associated with Cyrene, Alexandria, Cilicia, and Asia. Synagogues could function as worship, teaching, and ethnic-community centers. Stephen's opponents therefore participate in an intra-diaspora Jewish debate over Scripture and Jesus, not a conflict between Jews and outsiders.",
+      "answer": "Readers differ over whether the Greek describes one synagogue or several linked diaspora groups: freed persons and Jews associated with Cyrene, Alexandria, Cilicia, and Asia. In synagogues Moses was read every Sabbath (15:21). Stephen's opponents therefore participate in an intra-diaspora Jewish debate over Scripture and Jesus, not a conflict between Jews and outsiders.",
       "verseRefs": [
         "6:9",
         "6:10"
@@ -187,13 +188,24 @@
     },
     {
       "term": "Diakonia",
-      "def": "Service or ministry; used for both material distribution and the apostles' ministry of the word."
+      "def": "Service or ministry; used for both material distribution and the apostles' ministry of the word.",
+      "verses": [
+        "6:1",
+        "6:4"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "abd15af3b78153b0ca39b88cbd24dea263e74fc82f76b7eaab94da13ed127877",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

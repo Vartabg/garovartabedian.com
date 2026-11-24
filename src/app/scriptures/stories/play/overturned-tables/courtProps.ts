@@ -1,4 +1,4 @@
-import { line, oval, polygon } from "./courtInk";
+import { line, oval, polygon } from "../_shared/storyInk";
 import { PAVING_BOUNDS } from "./courtCoins";
 import type { Fixture } from "./courtGame";
 

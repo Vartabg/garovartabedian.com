@@ -5,36 +5,42 @@
   "summary": "Luke synchronizes John's call with emperor, governor, tetrarchs, and high-priestly leadership, then lets the word of God come not to those centers but to John in the wilderness. Isaiah's road-building oracle expands to ‘all flesh.’ John demands repentance visible in shared clothing, food, honest taxation, and nonviolent use of force. He denies being the Messiah and announces the stronger Spirit-and-fire baptizer. After John's imprisonment, Jesus is baptized while praying; Spirit and voice identify him as beloved Son. A genealogy then runs backward through David and Abraham to Adam and God.",
   "whyItMatters": "Repentance in Luke is neither inherited identity nor private remorse: it produces economic and vocational fruit. Jesus enters the people's baptism, is named Son in prayer and Spirit, and is placed within both Israel's royal line and the whole human family.",
   "context": {
-    "author": "Luke's narrator combining synchronism, prophetic call, preaching, baptism, and genealogy",
-    "audience": "Readers locating Jesus within Roman history, Israel's promise, and humanity",
-    "date": "Late-first-century Gospel composition",
+    "author": "The anonymous narrator, traditionally named Luke, combining synchronism, prophetic call, preaching, baptism, and genealogy",
+    "audience": "Theophilus and a wider Greek-reading audience, locating Jesus within Roman history, Israel's promise, and humanity",
+    "date": "Commonly dated around AD 80–90; earlier dates in the 60s and later ones into the early second century are defended",
     "setting": "The Jordan region under Tiberius, Pilate, Herodian tetrarchs, and Jerusalem priestly leadership",
     "literaryForm": "Historical synchronism, prophetic oracle, ethical preaching, epiphany, and genealogy"
   },
   "outline": [
     {
       "heading": "Rulers named; God's word comes to John",
-      "verses": "1-2"
+      "verses": "1-2",
+      "note": "Tiberius reigns; Pilate, Herod, Philip and Lysanias hold rule; Annas and Caiaphas are high priests when God's word comes to John in the wilderness"
     },
     {
       "heading": "Repentance and Isaiah's road for all flesh",
-      "verses": "3-6"
+      "verses": "3-6",
+      "note": "John preaches the baptism of repentance around the Jordan, and Isaiah's words speak of valleys filled, mountains brought low, and all flesh seeing salvation"
     },
     {
       "heading": "Fruit in possessions, taxes, and military power",
-      "verses": "7-14"
+      "verses": "7-14",
+      "note": "John calls the crowds 'offspring of vipers' and says share coats and food; tax collectors take no more than appointed; soldiers do not extort"
     },
     {
       "heading": "Stronger one, Spirit, fire, and John's imprisonment",
-      "verses": "15-20"
+      "verses": "15-20",
+      "note": "People wonder if John is the Christ; he says a mightier one will baptize with the Holy Spirit and fire; Herod imprisons John"
     },
     {
       "heading": "Jesus baptized, praying, and named Son",
-      "verses": "21-22"
+      "verses": "21-22",
+      "note": "Jesus is baptized and praying; the sky opens, the Spirit descends like a dove, and a voice says 'my beloved Son'."
     },
     {
       "heading": "Genealogy from Jesus back to Adam and God",
-      "verses": "23-38"
+      "verses": "23-38",
+      "note": "Jesus is about thirty, son of Joseph as supposed; the list runs back through David, Abraham and Noah to Adam, 'the son of God'."
     }
   ],
   "keyVerses": [
@@ -79,7 +85,7 @@
     },
     {
       "id": "q2",
-      "question": "What does ‘baptism of repentance for forgiveness’ mean?",
+      "question": "What does ‘baptism of repentance for remission of sins’ mean?",
       "answer": "Metanoia is a changed mind and direction; aphesis is release or remission. John's washing embodies a return that seeks God's forgiveness and must bear fruit. The water is not presented as magic independent of life, and Luke will later distinguish John's baptism from the promised gift of the Spirit.",
       "verseRefs": [
         "3:3",
@@ -112,7 +118,7 @@
     {
       "id": "q4",
       "question": "Does the warning about Abraham reject Jewish identity?",
-      "answer": "No. John speaks as a Jewish prophet to Jewish hearers about presumption, just as Israel's prophets challenged reliance on temple or ancestry without justice. God can create children from stones means privilege cannot shield unrepentance; it does not mean God has discarded Abraham or his descendants.",
+      "answer": "No. John speaks as a Jewish prophet to Jewish hearers about presumption, just as Israel's prophets challenged reliance on the temple (Jeremiah 7:4) or on ancestry (Ezekiel 33:24) without justice. God can create children from stones means privilege cannot shield unrepentance; it does not mean God has discarded Abraham or his descendants.",
       "verseRefs": [
         "3:8",
         "3:9"
@@ -125,7 +131,7 @@
     },
     {
       "id": "q5",
-      "question": "Is baptism ‘with the Holy Spirit and fire’ one blessing or blessing and judgment?",
+      "question": "Is baptism ‘in the Holy Spirit and fire’ one blessing or blessing and judgment?",
       "answer": "The next image separates gathered wheat from burned chaff, so fire clearly includes judgment. Yet fire can also signify purification and divine presence. Luke leaves the phrase concentrated: the stronger one brings God's Spirit and decisive sorting, not merely a warmer version of John's rite.",
       "verseRefs": [
         "3:16",
@@ -166,7 +172,7 @@
     {
       "id": "q8",
       "question": "Why does Luke's genealogy differ from Matthew's?",
-      "answer": "Luke runs backward from Jesus to Adam after the baptism; Matthew runs forward from Abraham through a deliberately arranged royal-exilic pattern. The names diverge sharply after David, and Luke inserts ‘as was supposed’ before Joseph. Levirate, legal, and maternal-line harmonizations are proposals; neither Gospel supplies one.",
+      "answer": "Luke runs backward from Jesus to Adam after the baptism; Matthew runs forward from Abraham through a deliberately arranged royal-exilic pattern (Matthew 1:17). The names diverge sharply after David, and Luke inserts ‘as was supposed’ before Joseph. Levirate, legal, and maternal-line harmonizations are proposals; neither Gospel supplies one.",
       "verseRefs": [
         "3:23",
         "3:31",
@@ -191,17 +197,27 @@
     },
     {
       "term": "Winnowing fork",
-      "def": "Tool for tossing threshed grain so wind separates lighter chaff from wheat."
+      "def": "Winnowing shovel used to clean the threshing floor, separating wheat from chaff (3:17)."
     },
     {
       "term": "Genealogy",
-      "def": "Ancestral line shaped to establish identity, belonging, and theological continuity."
+      "def": "Ancestral line shaped to establish identity, belonging, and theological continuity.",
+      "verses": [
+        "3:23-38"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "c674c8b7f2f4d83b0bdb53318a42655692ee564b044665c7edbb3b19149874e5",
+    "generatedAt": "2026-08-04T20:49:38.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

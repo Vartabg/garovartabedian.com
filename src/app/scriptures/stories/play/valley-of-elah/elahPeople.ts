@@ -1,5 +1,5 @@
 import type { ArmorPiece } from './elahGame';
-import { line, oval, polygon, print } from './elahInk';
+import { line, oval, polygon, print } from '../_shared/storyInk';
 
 type Brush = CanvasRenderingContext2D;
 
@@ -93,12 +93,13 @@ export function drawDavid(
   drawLeg(c, -3, -3.5 - swing - stanceSpread, lift(Math.cos(stride)), false, skin);
   drawLeg(c, 1, 3.2 + swing + stanceSpread, lift(-Math.cos(stride)), true, skin);
 
-  // Heavy bronze armor bows David's posture forward; shedding it restores upright freedom.
-  const weightStoop = hasCoat ? 0.11 : hasHelmet || hasSword ? 0.05 : 0;
+  // Heavy bronze armor bows David's posture forward and adds a noticeable shoulder heave while trudging.
+  const weightStoop = hasCoat ? 0.12 : hasHelmet || hasSword ? 0.055 : 0;
+  const heavyHeave = armorCount > 0 && moving > 0.1 && !reduced ? Math.sin(stride) * 0.045 * (armorCount / 3) : 0;
   const pickStoop = pose === 'pick' ? actionProgress * 0.34 : 0;
   const dropStoop = pose === 'drop' ? actionProgress * 0.16 : 0;
   const releaseLean = pose === 'release' ? actionProgress * 0.18 : 0;
-  const bodyTilt = weightStoop + pickStoop + dropStoop + releaseLean;
+  const bodyTilt = weightStoop + heavyHeave + pickStoop + dropStoop + releaseLean;
 
   c.translate(0, -22 + Math.abs(phase) * 1.1 + breathe + (pose === 'pick' ? actionProgress * 4 : 0));
   c.rotate(bodyTilt);
@@ -294,7 +295,7 @@ export function drawSaul(c: Brush, x: number, y: number, cheering: boolean, time
   c.restore();
 }
 
-/** Towering Philistine champion Goliath (scale 1.56) — dignified horizontal bronze collapse on impact (zero gore). */
+/** Towering Philistine champion Goliath (scale 1.56) — heavy bronze advance stride & dignified horizontal collapse. */
 export function drawGoliath(
   c: Brush,
   x: number,
@@ -303,6 +304,7 @@ export function drawGoliath(
   impactAge: number,
   time: number,
   reduced: boolean,
+  walkStride = 0,
 ): void {
   const skin = '#a76e4a';
   const cloak = '#7d3128';
@@ -310,6 +312,10 @@ export function drawGoliath(
   const fallT = fallen ? (reduced ? 1 : Math.min(1, impactAge / 0.56)) : 0;
   // Smooth ease-in collapse: he falls forward onto his face (1 Samuel 17:49)
   const easeFall = fallT * fallT * (3 - 2 * fallT);
+  const stepPhase = !fallen && walkStride !== 0 ? Math.sin(walkStride) : 0;
+  const stepSwing = stepPhase * 4.8;
+  const stepMoving = !fallen ? Math.min(1, Math.abs(walkStride) * 3) : 0;
+  const stepLift = (v: number) => Math.max(0, v) ** 2 * stepMoving * 2.8;
 
   c.save();
   c.lineJoin = 'round';
@@ -338,11 +344,11 @@ export function drawGoliath(
   const breathe = !fallen && !reduced ? Math.sin(time * 1.45) * 0.45 : 0;
   const taunt = !fallen && challenging ? (reduced ? 0.5 : 0.45 + Math.sin(time * 2.4) * 0.25) : 0;
 
-  // Legs relax together cleanly when fallen so heels rest flat along the earth
-  drawLeg(c, -3.5 + easeFall * 2.2, -5.2 + easeFall * 4.4, 0, false, skin, true);
-  drawLeg(c, 2 - easeFall * 1.2, 5.2 - easeFall * 3.8, 0, true, skin, true);
+  // Heavy alternating bronze-greaved stride when advancing, relaxing cleanly together when fallen
+  drawLeg(c, -3.5 + easeFall * 2.2, -5.2 - stepSwing + easeFall * 4.4, stepLift(Math.cos(walkStride)), false, skin, true);
+  drawLeg(c, 2 - easeFall * 1.2, 5.2 + stepSwing - easeFall * 3.8, stepLift(-Math.cos(walkStride)), true, skin, true);
 
-  c.translate(0, -23 + breathe);
+  c.translate(0, -23 + breathe + Math.abs(stepPhase) * 0.9);
   c.translate(0, 23);
 
   // Far arm holding massive weaver's-beam iron-headed spear (1 Samuel 17:7) — drops slightly forward as he falls

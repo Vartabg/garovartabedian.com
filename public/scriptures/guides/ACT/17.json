@@ -7,22 +7,25 @@
   "context": {
     "author": "The Luke–Acts narrator tracing the Macedonian and Athenian mission",
     "audience": "Readers learning to compare synagogue reasoning, civic accusation, textual examination, and philosophical address",
-    "date": "Often placed around AD 50",
+    "date": "Acts is commonly dated around AD 80–90, with dates in the 60s and later also argued",
     "setting": "Thessalonica, Berea, and Athens, including synagogue, marketplace, and Areopagus",
     "literaryForm": "Mission conflict narratives culminating in a contextualized public speech"
   },
   "outline": [
     {
       "heading": "Scriptural reasoning in Thessalonica provokes belief and civic charges",
-      "verses": "1-9"
+      "verses": "1-9",
+      "note": "In Thessalonica Paul reasons three Sabbaths from the Scriptures; some join him, unpersuaded Jews raise a crowd, and they drag Jason before the rulers"
     },
     {
       "heading": "Bereans receive and examine the word amid renewed pressure",
-      "verses": "10-15"
+      "verses": "10-15",
+      "note": "In Beroea they examine the Scriptures daily; Jews from Thessalonica come agitating the crowds, and the brothers send Paul to the sea"
     },
     {
       "heading": "Paul debates Athens and addresses the Areopagus",
-      "verses": "16-34"
+      "verses": "16-34",
+      "note": "Paul speaks at the Areopagus of an altar 'TO AN UNKNOWN GOD'; some mock the resurrection, while Dionysius and Damaris believe"
     }
   ],
   "keyVerses": [
@@ -45,10 +48,8 @@
   "themes": [
     "Scripture and Messiah",
     "mixed reception",
-    "public accusation",
     "daily examination",
     "idolatry",
-    "Creator",
     "human unity",
     "resurrection and judgment"
   ],
@@ -108,7 +109,7 @@
     {
       "id": "q4",
       "question": "What were Thessalonian ‘politarchs’?",
-      "answer": "Politarchai is a Macedonian title for city magistrates. Inscriptions from Thessalonica and the region confirm the local term, one of Acts' precise civic titles. They respond to crowd pressure by taking a bond from Jason rather than immediately executing the visitors.",
+      "answer": "Politarchai were city officials in Hellenistic and Roman Greece, first attested in Macedonia. Inscriptions from Thessalonica and nearby Amphipolis use the title. They respond to crowd pressure by taking a bond from Jason rather than immediately executing the visitors.",
       "verseRefs": [
         "17:6",
         "17:8"
@@ -122,7 +123,7 @@
     {
       "id": "q5",
       "question": "Does calling Bereans ‘more noble’ condemn Thessalonians as an ethnic group?",
-      "answer": "Eugenesteroi can mean noble-minded or fair-minded here. Luke praises a particular synagogue's eager, daily examination, not Berean bloodline, and Paul later writes warmly to the Thessalonian church born amid opposition. The comparison commends a posture: receive seriously and test claims against Scripture.",
+      "answer": "Eugenesteroi here means noble-minded; the word's first sense is well-born. Luke praises a particular synagogue's eager, daily examination, not Berean bloodline, and Paul later writes warmly to the Thessalonian church born amid opposition. The comparison commends a posture: receive seriously and test claims against Scripture.",
       "verseRefs": [
         "17:10",
         "17:11",
@@ -158,7 +159,7 @@
     {
       "id": "q7",
       "question": "Who are the Epicureans and Stoics?",
-      "answer": "Epicureans sought tranquil life and generally denied providential divine involvement; Stoics emphasized reason permeating the cosmos, providence, and virtue. Paul agrees with neither system wholesale. His Creator who needs nothing, gives life, governs history, and raises the judge intersects with and contests both schools.",
+      "answer": "Epicureans sought tranquil life and generally denied providential divine involvement; Stoics emphasized reason permeating the cosmos, fate, and virtue. Paul agrees with neither system wholesale. His Creator who needs nothing, gives life, governs history, and raises the judge intersects with and contests both schools.",
       "verseRefs": [
         "17:18",
         "17:24",
@@ -178,7 +179,7 @@
     {
       "id": "q8",
       "question": "Does ‘one blood’ teach human unity, and why do translations vary?",
-      "answer": "The WEB reads that God made every nation ‘from one blood,’ while early critical Greek manuscripts generally read ‘from one,’ without the noun blood. Either wording presents a shared human origin under one Creator and undermines ethnic superiority. God orders times and boundaries so peoples might seek him, not so one empire can claim divine racial privilege.",
+      "answer": "The WEB reads that God made every nation ‘from one blood,’ while the critical Greek text shown here reads ‘from one,’ without the noun blood. Either wording presents a shared human origin under one Creator and undermines ethnic superiority. God orders times and boundaries so peoples might seek him, not so one empire can claim divine racial privilege.",
       "verseRefs": [
         "17:26",
         "17:27"
@@ -192,7 +193,7 @@
     {
       "id": "q9",
       "question": "Why quote pagan poets?",
-      "answer": "‘In him we live and move’ resembles Epimenides, while ‘we are his offspring’ comes from Aratus and also Cleanthes. Paul treats their language as a contact point, then reasons that divine offspring should not imagine deity as crafted metal or stone. Quoting a source does not endorse its whole worldview; truth can be redirected within a larger argument.",
+      "answer": "‘In him we live, move, and have our being’ resembles a line attributed to Epimenides, while ‘we are also his offspring’ appears in Aratus's poem Phaenomena; some point instead to Cleanthes. Paul treats their language as a contact point, then reasons that divine offspring should not imagine deity as crafted metal or stone. Quoting a source does not endorse its whole worldview; truth can be redirected within a larger argument.",
       "verseRefs": [
         "17:28",
         "17:29",
@@ -211,21 +212,35 @@
   "glossary": [
     {
       "term": "Politarch",
-      "def": "A Macedonian title for city magistrates, attested epigraphically in and around Thessalonica."
+      "def": "A title for city officials in Hellenistic and Roman Greece, used in inscriptions from Thessalonica.",
+      "verses": [
+        "17:6",
+        "17:8"
+      ]
     },
     {
       "term": "Areopagus",
-      "def": "Both the hill of Ares and the Athenian council associated with religious and civic inquiry."
+      "def": "Both the Hill of Ares in Athens and the Athenian council named after it, which heard homicide and certain religious cases."
     },
     {
       "term": "Deisidaimonesteros",
-      "def": "Ambiguous Greek meaning very religious/devout or rather superstitious."
+      "def": "Ambiguous Greek meaning very religious/devout or rather superstitious.",
+      "verses": [
+        "17:22"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "560ab32c393a251891a60717c556607c78eb97eea4b15a24136295ea1a49a4ed",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

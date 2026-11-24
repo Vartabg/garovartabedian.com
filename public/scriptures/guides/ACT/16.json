@@ -5,28 +5,32 @@
   "summary": "Paul recruits Timothy, whose Jewish mother believes and whose Greek father is known locally; Paul circumcises him for mission among Jews while delivering Jerusalem's Gentile decision. The Spirit blocks routes in Asia and Bithynia, then a Macedonian vision redirects the team west and the narration shifts to ‘we.’ At Philippi Lydia responds by a riverside place of prayer and opens her home. Paul expels a divining spirit from an enslaved girl, destroying her owners' income; they use anti-Jewish and civic charges to secure an illegal beating and imprisonment. An earthquake opens the prison, Paul prevents the jailer's suicide, and his household receives the word, washes wounds, is baptized, and shares a meal. Paul then forces the magistrates to acknowledge their abuse of Roman citizens.",
   "whyItMatters": "Spirit guidance appears through closures, vision, collaborative inference, and responsive hospitality rather than an always-linear inner voice. The gospel disrupts exploitation and crosses gender, class, ethnic, and legal boundaries, but those crossings provoke economic and political backlash. Salvation takes embodied form: doors open, suicide is prevented, wounds are washed, a table is shared, and public injustice is named.",
   "context": {
-    "author": "The Luke–Acts narrator beginning the second major mission and the first ‘we’ section",
+    "author": "The anonymous narrator of Luke–Acts, traditionally Luke, beginning the second major mission and the first ‘we’ section",
     "audience": "Readers following the word into Macedonia and Roman colonial life",
-    "date": "Often placed around AD 49–50",
-    "setting": "Southern Galatia, Troas, Samothrace, Neapolis, and Philippi, a Roman colony",
+    "date": "Acts is commonly dated around AD 80–90, with dates in the 60s and later also argued",
+    "setting": "Derbe and Lystra, Troas, Samothrace, Neapolis, and Philippi, a Roman colony",
     "literaryForm": "Travel-guidance narrative and three conversion-conflict scenes centered on a merchant, enslaved girl, and jailer"
   },
   "outline": [
     {
       "heading": "Timothy joins and the Spirit redirects the team toward Macedonia",
-      "verses": "1-10"
+      "verses": "1-10",
+      "note": "Paul circumcises Timothy; the Spirit forbids speaking in Asia, and a man of Macedonia in a vision begs 'Come over into Macedonia'"
     },
     {
       "heading": "Lydia receives the word and opens her household",
-      "verses": "11-15"
+      "verses": "11-15",
+      "note": "At Philippi they speak to women by a river; Lydia, a seller of purple, listens as the Lord opens her heart; she is baptized"
     },
     {
       "heading": "Deliverance from a divining spirit provokes beating and prison",
-      "verses": "16-24"
+      "verses": "16-24",
+      "note": "Paul commands a spirit out of a girl; her masters drag him and Silas to the magistrates, and they are beaten with rods"
     },
     {
       "heading": "The jailer and household believe; Roman abuse is exposed",
-      "verses": "25-40"
+      "verses": "25-40",
+      "note": "An earthquake opens the doors; the jailer asks 'what must I do to be saved'; the magistrates, hearing they are Romans, beg them to leave"
     }
   ],
   "keyVerses": [
@@ -48,9 +52,7 @@
   ],
   "themes": [
     "Spirit guidance",
-    "Timothy",
     "we passages",
-    "Lydia",
     "economic exploitation",
     "imprisonment and worship",
     "households",
@@ -78,7 +80,7 @@
     {
       "id": "q2",
       "question": "How can the Spirit forbid good missionary plans?",
-      "answer": "The team is prevented from speaking in Asia and from entering Bithynia, then receives a vision pointing to Macedonia. Acts does not say the regions are unworthy—Asia later becomes a major field—or explain the mechanisms. Guidance can include closed routes and timing, not only moral prohibition, and the team must keep traveling before the next direction becomes clear.",
+      "answer": "The team is prevented from speaking in Asia and from entering Bithynia, then receives a vision pointing to Macedonia. Acts does not say the regions are unworthy—Asia later becomes a major field (19:10)—or explain the mechanisms. Guidance can include closed routes and timing, not only moral prohibition, and the team must keep traveling before the next direction becomes clear.",
       "verseRefs": [
         "16:6",
         "16:7",
@@ -132,7 +134,7 @@
     {
       "id": "q5",
       "question": "What is a ‘spirit of divination’ literally?",
-      "answer": "The Greek is pneuma pythōna, ‘a Python spirit,’ invoking Apollo's Delphic oracle and its serpent tradition. English translations rightly communicate divination, but the original alerts readers to a specific Greco-Roman religious economy. The enslaved girl's accurate-sounding proclamation does not make her exploitation or spiritual bondage acceptable.",
+      "answer": "The Greek is pneuma pythōna, ‘a Python spirit,’ recalling the Pythian serpent of the region where Delphi's famous oracle stood. English translations rightly communicate divination, but the original alerts readers to a specific Greco-Roman religious economy. The enslaved girl's accurate-sounding proclamation does not make her exploitation or spiritual bondage acceptable.",
       "verseRefs": [
         "16:16",
         "16:17",
@@ -186,7 +188,7 @@
     {
       "id": "q8",
       "question": "Does ‘you and your household’ mean the jailer's faith automatically saves others?",
-      "answer": "Paul and Silas subsequently speak the Lord's word to everyone in the house; the jailer washes wounds, the household is baptized, and the household rejoices in believing. Household language recognizes ancient relational units and shared response, not salvation transferred without hearing or response. Traditions differ over implications for infant baptism because Acts does not state the household's ages.",
+      "answer": "Paul and Silas subsequently speak the Lord's word to everyone in the house; the jailer washes wounds, the household is baptized, and the household rejoices in believing. Household language here comes with shared hearing and response (16:32–34), not salvation transferred without hearing or response. Traditions differ over implications for infant baptism because Acts does not state the household's ages.",
       "verseRefs": [
         "16:31",
         "16:32",
@@ -229,7 +231,10 @@
     },
     {
       "term": "Pneuma pythōna",
-      "def": "Literally a ‘Python spirit,’ associated with Greek oracular divination."
+      "def": "Literally a ‘Python spirit,’ associated with Greek oracular divination.",
+      "verses": [
+        "16:16"
+      ]
     },
     {
       "term": "Roman citizen",
@@ -237,9 +242,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "3b0af452760d894f7dbaf99acd13e582693bb9111e41aa5ff7012161241d5a9f",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

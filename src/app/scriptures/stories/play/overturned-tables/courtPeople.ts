@@ -1,4 +1,4 @@
-import { line, oval, polygon, print } from './courtInk';
+import { line, oval, polygon, print } from '../_shared/storyInk';
 
 type Brush = CanvasRenderingContext2D;
 export type PersonRole = 'jesus' | 'seller' | 'buyer' | 'carrier' | 'listener' | 'scribe' | 'lame' | 'blind' | 'child';

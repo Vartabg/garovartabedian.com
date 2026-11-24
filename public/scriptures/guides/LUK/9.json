@@ -2,39 +2,45 @@
   "book": "LUK",
   "chapter": 9,
   "bookName": "Luke",
-  "summary": "Jesus sends the Twelve to proclaim and heal with deliberate dependence, while Herod wonders who Jesus is. After feeding a multitude, Jesus asks the same identity question: Peter names God's Messiah, but Jesus immediately says the Son of Man must suffer and calls everyone to cross-shaped following. On the mountain, Moses and Elijah speak with Jesus about the ‘exodus’ he will fulfill at Jerusalem; the divine voice commands listening. Below, disciples cannot free a boy, misunderstand a second passion warning, compete for greatness, police an outsider, and want fire on a Samaritan village. At 9:51 Jesus resolutely sets his face toward Jerusalem, and three would-be followers hear the journey's cost.",
+  "summary": "Jesus sends the Twelve to proclaim and heal with deliberate dependence, while Herod wonders who Jesus is. After feeding a multitude, Jesus asks the same identity question: Peter names God's Messiah, but Jesus immediately says the Son of Man must suffer and calls everyone to cross-shaped following. On the mountain, Moses and Elijah speak with Jesus about his ‘departure’ (in Greek, exodos), which he will fulfill at Jerusalem; the divine voice commands listening. Below, disciples cannot free a boy, misunderstand a second passion warning, compete for greatness, police an outsider, and want fire on a Samaritan village. At 9:51 Jesus resolutely sets his face toward Jerusalem, and three would-be followers hear the journey's cost.",
   "whyItMatters": "Confessing the right title is not enough if Messiah is still imagined as domination. Luke turns the book at the moment glory, suffering, Scripture, failed discipleship, rejected hospitality, and determined journey converge. The road to Jerusalem will teach what following this king means.",
   "context": {
-    "author": "Luke arranging identity traditions around the major 9:51 travel hinge",
-    "audience": "Disciples tempted by power, status, exclusion, and avoidance of the cross",
-    "date": "Late-first-century Gospel composition",
+    "author": "The anonymous author, traditionally identified as Luke, arranging identity traditions around the major 9:51 travel hinge",
+    "audience": "Theophilus and a wider Greek-reading audience; the chapter addresses disciples tempted by power, status, exclusion, and avoidance of the cross",
+    "date": "Commonly dated around AD 80–90, after AD 70; earlier dates in the 60s and later ones into the early second century are defended",
     "setting": "Galilean villages, a deserted feeding place, prayer, a mountain, a crowd below, Samaritan territory, and the road south",
     "literaryForm": "Mission, royal question, feeding, confession, passion prediction, epiphany, exorcism, correction scenes, and journey call sayings"
   },
   "outline": [
     {
       "heading": "The Twelve sent; Herod asks who Jesus is",
-      "verses": "1-9"
+      "verses": "1-9",
+      "note": "The twelve are sent to preach and heal, taking no staff, wallet, bread or money; Herod is perplexed and says 'I beheaded John'."
     },
     {
       "heading": "Return and feeding of about five thousand",
-      "verses": "10-17"
+      "verses": "10-17",
+      "note": "Crowds follow him to Bethsaida; 'You give them something to eat' — five loaves, two fish, about five thousand men, twelve baskets left"
     },
     {
       "heading": "Peter's confession, necessary suffering, and the cross",
-      "verses": "18-27"
+      "verses": "18-27",
+      "note": "Peter says 'The Christ of God'; Jesus says he must suffer and be killed, and anyone following must take up his cross"
     },
     {
       "heading": "Transfiguration and Jerusalem ‘exodus’",
-      "verses": "28-36"
+      "verses": "28-36",
+      "note": "His face changes, his clothes turn white, and Moses and Elijah talk with him; a voice from the cloud says 'Listen to him!'"
     },
     {
       "heading": "A boy freed; disciples misunderstand suffering and greatness",
-      "verses": "37-50"
+      "verses": "37-50",
+      "note": "He heals a boy the disciples could not free; they argue about who is greatest, and he sets a little child by his side"
     },
     {
       "heading": "Face set to Jerusalem, Samaritan refusal, and costly following",
-      "verses": "51-62"
+      "verses": "51-62",
+      "note": "A Samaritan village refuses him; James and John ask about fire from the sky; he rebukes them, then speaks to three people about following"
     }
   ],
   "keyVerses": [
@@ -57,7 +63,6 @@
   "themes": [
     "mission in dependence",
     "Messiah redefined",
-    "divine necessity",
     "cross-shaped following",
     "glory and exodus",
     "failed greatness",
@@ -133,7 +138,7 @@
     {
       "id": "q5",
       "question": "Why does the hosted English omit Luke's distinctive ‘daily’ in 9:23?",
-      "answer": "The locally hosted SBL Greek includes kath’ hēmeran, ‘day by day,’ a strongly attested Lukan addition to the cross saying, while the WEB line here follows a form without it. The variant matters because Luke often turns future expectation into daily discipleship. Readers can see the Greek word layer even when this English edition omits it.",
+      "answer": "The locally hosted SBL Greek includes kath’ hēmeran, ‘day by day,’ in the cross saying, marked there as a place where copies differ, while the WEB line here follows a form without it. On one common reading, the variant matters because Luke often turns future expectation into daily discipleship. Readers can see the Greek word layer even when this English edition omits it.",
       "verseRefs": [
         "9:23"
       ],
@@ -145,7 +150,7 @@
     {
       "id": "q6",
       "question": "What are Moses and Elijah discussing with Jesus?",
-      "answer": "Luke calls it his exodos, ‘departure,’ which he is about to fulfill in Jerusalem. The word can include death, resurrection, and ascension while recalling Israel's exodus. Moses and Elijah do not merely pose for a vision; Scripture's law and prophets interpret the road ahead.",
+      "answer": "Luke calls it his exodos, ‘departure,’ which he is about to fulfill in Jerusalem. On one common reading, the word includes death, resurrection, and ascension while recalling Israel's exodus. Moses and Elijah do not merely pose for a vision; Scripture's law and prophets interpret the road ahead.",
       "verseRefs": [
         "9:30",
         "9:31",
@@ -177,7 +182,7 @@
     {
       "id": "q8",
       "question": "Do the final call sayings forbid funerals and family goodbyes?",
-      "answer": "The sayings use prophetic urgency and deliberate shock to expose delay, divided priority, and nostalgia. ‘Let the dead bury their dead’ contrasts kingdom proclamation with socially unquestioned obligation; the plow image demands forward attention. They should not be weaponized to evade care or control converts through isolation.",
+      "answer": "The sayings use prophetic urgency and deliberate shock to expose delay, divided priority, and nostalgia. ‘Leave the dead to bury their own dead’ contrasts kingdom proclamation with socially unquestioned obligation; the plow image demands forward attention. They should not be weaponized to evade care or control converts through isolation.",
       "verseRefs": [
         "9:59",
         "9:60",
@@ -204,7 +209,10 @@
     },
     {
       "term": "Exodos",
-      "def": "Departure or way out; Luke's word for what Jesus will fulfill at Jerusalem."
+      "def": "Departure or way out; Luke's word for what Jesus will fulfill at Jerusalem.",
+      "verses": [
+        "9:31"
+      ]
     },
     {
       "term": "Set his face",
@@ -212,9 +220,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "3a3f4fa57b40a8fc982e0d06ec2e9130ff2a41096b6601314afb5371dfdd4f5a",
+    "generatedAt": "2026-08-04T20:49:38.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

@@ -2,35 +2,40 @@
   "book": "LUK",
   "chapter": 7,
   "bookName": "Luke",
-  "summary": "A Gentile centurion approaches through Jewish elders and friends, trusting Jesus's command authority without demanding his presence. Jesus marvels at such faith. At Nain, compassion moves Jesus to stop a widow's only son's funeral and restore him, prompting prophetic acclaim. From prison John sends disciples to ask whether Jesus is the coming one; Jesus answers with observable signs from Isaiah and then honors John while placing him at a turning point in God's kingdom. Competing audiences reject both John's austerity and Jesus's table fellowship. At a Pharisee's meal, an unnamed woman known as a sinner weeps, anoints Jesus, and receives forgiveness; a creditor parable exposes the host's loveless judgment.",
+  "summary": "A Gentile centurion approaches through Jewish elders and friends, trusting Jesus's command authority without demanding his presence. Jesus marvels at such faith. At Nain, compassion moves Jesus to stop a widow's only son's funeral and restore him, prompting prophetic acclaim. John sends disciples to ask whether Jesus is the coming one; Jesus answers with observable signs from Isaiah and then honors John while placing him at a turning point in God's kingdom. Competing audiences reject both John's austerity and Jesus's table fellowship. At a Pharisee's meal, an unnamed woman known as a sinner weeps, anoints Jesus, and receives forgiveness; a creditor parable exposes the host's loveless judgment.",
   "whyItMatters": "Faith may appear outside expected boundaries, while a great prophet can ask an anguished question. Luke makes mercy evidential: the sick restored, dead raised, poor evangelized, debt released, and excluded woman sent in peace. Recognition depends less on status than on receiving what God is doing.",
   "context": {
-    "author": "Luke joining distinctive Nain and meal stories to shared centurion and John traditions",
-    "audience": "Readers testing faith, prophetic expectation, forgiveness, and social boundary",
-    "date": "Late-first-century Gospel arrangement",
-    "setting": "Capernaum, Nain's gate and funeral procession, John's prison-mediated inquiry, public crowds, and a Pharisee's dining room",
+    "author": "The anonymous writer, traditionally named Luke, joining distinctive Nain and meal stories to shared centurion and John traditions",
+    "audience": "Theophilus and a wider Greek-reading audience, testing faith, prophetic expectation, forgiveness, and social boundary",
+    "date": "Commonly dated around AD 80–90, with earlier and later dates defended",
+    "setting": "Capernaum, Nain's gate and funeral procession, John's inquiry through two disciples, public crowds, and a Pharisee's dining room",
     "literaryForm": "Healing by delegation, resurrection story, prophetic question and testimony, wisdom saying, meal controversy, and debt parable"
   },
   "outline": [
     {
       "heading": "Centurion's mediated request and remarkable faith",
-      "verses": "1-10"
+      "verses": "1-10",
+      "note": "Elders plead for a centurion's dying servant; the centurion sends friends saying 'say the word'; Jesus marvels, and the servant is found well"
     },
     {
       "heading": "Widow's only son raised at Nain",
-      "verses": "11-17"
+      "verses": "11-17",
+      "note": "A widow's only son is carried out dead; Jesus says 'Don't cry', touches the coffin, and says 'arise'; the dead man sits up"
     },
     {
       "heading": "John asks; Jesus answers with deeds",
-      "verses": "18-23"
+      "verses": "18-23",
+      "note": "John's two disciples ask if Jesus is the one coming; he cures many and tells them: the blind see, the dead are raised"
     },
     {
       "heading": "Jesus interprets John and this generation",
-      "verses": "24-35"
+      "verses": "24-35",
+      "note": "Jesus asks what the crowds went to see, calls John 'much more than a prophet', and compares this generation to marketplace children"
     },
     {
       "heading": "Woman anoints Jesus; creditor parable and forgiveness",
-      "verses": "36-50"
+      "verses": "36-50",
+      "note": "A sinful woman wets Jesus's feet with tears, wipes and anoints them; he tells of two debtors and says 'Your sins are forgiven'."
     }
   ],
   "keyVerses": [
@@ -62,7 +67,7 @@
     {
       "id": "q1",
       "question": "Why does the centurion speak through intermediaries?",
-      "answer": "As an officer he understands delegated authority, and as a Gentile he may show cultural humility about approaching a Jewish healer. Jewish elders commend his support for their synagogue; friends deliver his unworthiness. Luke's layered messengers explain why another Gospel can narrate the centurion as speaking directly under ancient agency conventions.",
+      "answer": "As an officer he understands delegated authority, and as a Gentile he may show cultural humility about approaching a Jewish healer. Jewish elders commend his support for their synagogue; friends deliver his unworthiness. In Matthew 8:5–8 the centurion speaks to Jesus directly.",
       "verseRefs": [
         "7:3",
         "7:5",
@@ -92,7 +97,7 @@
     {
       "id": "q3",
       "question": "Why does Jesus act at Nain before anyone asks?",
-      "answer": "The widow has lost her only son, which means grief and likely economic vulnerability in a patriarchal household. Luke says Jesus was moved with compassion. He touches the bier, stops the procession, restores the son, and ‘gave him to his mother,’ echoing Elijah and centering her restoration as well as his life.",
+      "answer": "The widow has lost her only son. Luke says Jesus was moved with compassion. He touches the bier, stops the procession, restores the son, and ‘gave him to his mother,’ echoing Elijah and centering her restoration as well as his life.",
       "verseRefs": [
         "7:12",
         "7:13",
@@ -110,7 +115,7 @@
     {
       "id": "q4",
       "question": "Does John's question mean he lost all faith?",
-      "answer": "From prison John hears reports that may not match expected fiery judgment and asks honestly whether Jesus is the coming one. Jesus neither shames him nor gives a simple yes; he points to scriptural signs, then publicly calls John more than a prophet. Faith can bring its disorientation to evidence.",
+      "answer": "John, shut in prison since 3:20, hears reports that may not match the fire he announced (3:16–17), and asks honestly whether Jesus is the coming one. Jesus neither shames him nor gives a simple yes; he points to scriptural signs, then publicly calls John more than a prophet. Faith can bring its disorientation to evidence.",
       "verseRefs": [
         "7:19",
         "7:22",
@@ -128,7 +133,7 @@
     {
       "id": "q5",
       "question": "What does ‘the least in God's Kingdom is greater than John’ mean?",
-      "answer": "Jesus has just called John the greatest born of women, so the next line marks a new salvation-historical position rather than personal contempt. John stands at the threshold announcing the kingdom; those participating in its fulfillment receive a privilege he anticipated. Moral greatness and location in the unfolding story are not the same scale.",
+      "answer": "Jesus has just called John the greatest born of women, so on one common reading the next line marks a new salvation-historical position rather than personal contempt. John stands at the threshold announcing the kingdom; those participating in its fulfillment receive a privilege he anticipated. Moral greatness and location in the unfolding story are not the same scale.",
       "verseRefs": [
         "7:28"
       ],
@@ -154,7 +159,7 @@
     {
       "id": "q7",
       "question": "Is the woman forgiven because she loves much, or does she love because she is forgiven?",
-      "answer": "The creditor parable makes abundant love the response to large canceled debt, while Jesus's wording can sound causal in English. Verse 47 explains her acts as evidence of forgiveness; verse 50 names faith, not tears purchased as payment. Grace produces visible love without making love irrelevant.",
+      "answer": "The creditor parable makes abundant love the response to large canceled debt, while Jesus's wording can sound causal in English. Readers differ on verse 47: many take it as explaining her acts as evidence of forgiveness; verse 50 names faith, not tears purchased as payment. Grace produces visible love without making love irrelevant.",
       "verseRefs": [
         "7:42",
         "7:43",
@@ -187,25 +192,41 @@
   "glossary": [
     {
       "term": "Centurion",
-      "def": "Roman army officer associated with command of roughly a hundred soldiers, though actual units varied."
+      "def": "Roman army officer associated with command of roughly a hundred soldiers."
     },
     {
       "term": "Bier",
-      "def": "Open frame or stretcher carrying a body in a funeral procession."
+      "def": "Funeral couch or coffin carrying a body in a funeral procession.",
+      "verses": [
+        "7:14"
+      ]
     },
     {
       "term": "Denarius",
-      "def": "Common silver coin often used as a laborer's daily-wage comparison."
+      "def": "Silver coin; Matthew 20:2 gives a laborer a denarius a day.",
+      "verses": [
+        "7:41"
+      ]
     },
     {
       "term": "Sōzō",
-      "def": "Greek verb meaning save, rescue, heal, or make whole depending on context."
+      "def": "Greek verb meaning save, rescue, heal, or make whole depending on context.",
+      "verses": [
+        "7:50"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "5b2074ecab9e4b1e0affb5f86d46e86f104b774d567f9a8722d0e4bd98149a5b",
+    "generatedAt": "2026-08-04T20:49:38.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

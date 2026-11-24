@@ -3,30 +3,34 @@
   "chapter": 10,
   "bookName": "Acts",
   "summary": "Cornelius, a devout Roman centurion who prays and gives generously, receives an angelic command to summon Peter. In Joppa Peter sees a sheet of animals and hears, ‘What God has cleansed, you must not call unclean.’ While he puzzles over the vision, the Spirit sends him with Cornelius's messengers. Entering a Gentile household, Peter explains that God has shown him not to call any person profane or unclean. He proclaims Jesus's Spirit-anointed ministry, death, resurrection, appointed judgment, and forgiveness. The Holy Spirit falls on the Gentile hearers before baptism, astonishing the Jewish believers, and Peter orders them baptized.",
-  "whyItMatters": "Acts makes Gentile inclusion God's initiative before it becomes the church's policy. Paired visions, providential timing, the Spirit's command, intelligible praise, and an irreversible gift overcome Peter's resistance. The food imagery matters, but Peter himself states the human implication: inherited boundaries cannot be used to declare people beyond God's welcome.",
+  "whyItMatters": "Acts makes Gentile inclusion God's initiative before it becomes the church's policy. Paired visions, providential timing, the Spirit's command, Spirit-given praise, and an irreversible gift overcome Peter's resistance. The food imagery matters, but Peter himself states the human implication: inherited boundaries cannot be used to declare people beyond God's welcome.",
   "context": {
-    "author": "The Luke–Acts narrator presenting a decisive Gentile boundary crossing",
-    "audience": "Mixed communities needing to understand how uncircumcised Gentiles entered without first becoming Jewish proselytes",
-    "date": "Before the Antioch mission and Jerusalem deliberation of Acts 15",
+    "author": "The anonymous narrator of Luke–Acts, traditionally Luke, presenting a decisive Gentile boundary crossing",
+    "audience": "Theophilus and a wider audience that knows Israel's Greek Scriptures and needs assurance that Gentile inclusion belongs to God’s purpose",
+    "date": "Commonly dated around AD 80–90, though dates in the 60s and later are argued; narrates events before the Antioch mission and the Jerusalem deliberation of Acts 15",
     "setting": "Caesarea, the Roman administrative center, and Joppa on the Judean coast",
     "literaryForm": "Interlocking vision narrative, hospitality encounter, missionary speech, and Spirit outpouring"
   },
   "outline": [
     {
       "heading": "Cornelius receives a vision and sends for Peter",
-      "verses": "1-8"
+      "verses": "1-8",
+      "note": "Cornelius, a centurion who prays and gives to the needy, sees an angel and sends two servants and a soldier to Joppa"
     },
     {
       "heading": "Peter's vision and the Spirit prepare him to cross the threshold",
-      "verses": "9-23"
+      "verses": "9-23",
+      "note": "Hungry on the housetop, Peter sees a sheet of animals let down three times; the Spirit tells him to go with the three men"
     },
     {
       "heading": "Peter enters Cornelius's house and reframes purity around people",
-      "verses": "24-33"
+      "verses": "24-33",
+      "note": "Cornelius falls at Peter's feet and Peter raises him; Peter says God showed him to call no man unclean; Cornelius tells of the angel"
     },
     {
       "heading": "Peter proclaims Jesus and the Spirit falls before baptism",
-      "verses": "34-48"
+      "verses": "34-48",
+      "note": "Peter says God shows no favoritism and tells of Jesus healing, killed on a tree, and raised; the Spirit falls on all who hear"
     }
   ],
   "keyVerses": [
@@ -52,15 +56,13 @@
     "purity",
     "impartiality",
     "Gentile inclusion",
-    "witness",
-    "Holy Spirit",
-    "baptism"
+    "Holy Spirit"
   ],
   "questions": [
     {
       "id": "q1",
       "question": "What kind of ‘God-fearer’ is Cornelius?",
-      "answer": "Luke calls him devout, God-fearing, generous toward the Jewish people, and constant in prayer. Such Gentiles were attracted to Israel's God and synagogue life without necessarily completing proselyte conversion and circumcision. Cornelius is morally honored, yet still summoned to hear the apostolic message; inclusion is neither earned by Roman status nor blocked by Gentile identity.",
+      "answer": "Luke calls him devout, God-fearing, generous toward the Jewish people, and constant in prayer. Such Gentiles were attracted to Israel's God and Jewish practice without necessarily completing proselyte conversion and circumcision. Cornelius is morally honored, yet still summoned to hear the apostolic message; inclusion is neither earned by Roman status nor blocked by Gentile identity.",
       "verseRefs": [
         "10:1",
         "10:2",
@@ -78,7 +80,7 @@
     {
       "id": "q2",
       "question": "Is Peter's sheet vision only about ending food laws?",
-      "answer": "The command concerns animals and therefore has food implications, especially for shared table fellowship. But Peter's explicit interpretation is personal and social: God showed him ‘not to call any man unholy or unclean.’ The vision dismantles a barrier to entering a Gentile home; reducing it either to diet alone or to people alone misses the narrative connection.",
+      "answer": "The command concerns animals and therefore has food implications, especially for shared table fellowship. But Peter's explicit interpretation is personal and social: ‘God has shown me that I shouldn’t call any man unholy or unclean’ (10:28). The vision dismantles a barrier to entering a Gentile home; reducing it either to diet alone or to people alone misses the narrative connection.",
       "verseRefs": [
         "10:11",
         "10:12",
@@ -147,7 +149,7 @@
     },
     {
       "id": "q6",
-      "question": "Does ‘God shows no favoritism’ mean all religions are identical?",
+      "question": "Does Peter’s ‘God doesn’t show favoritism’ mean all religions are identical?",
       "answer": "Prosōpolēmptēs describes partiality based on status or ‘receiving the face.’ Peter says every nation contains people acceptable to God who fear him and practice righteousness, then immediately proclaims the particular story of Jesus as Lord, judge, and giver of forgiveness. Impartial welcome and a defined gospel are joined rather than treated as opposites.",
       "verseRefs": [
         "10:34",
@@ -217,17 +219,31 @@
     },
     {
       "term": "God-fearer",
-      "def": "A Gentile attached to Israel's God and practices without necessarily becoming a circumcised proselyte."
+      "def": "A Gentile attached to Israel's God and practices without necessarily becoming a circumcised proselyte.",
+      "verses": [
+        "10:2",
+        "10:22"
+      ]
     },
     {
       "term": "Prosōpolēmptēs",
-      "def": "One who shows favoritism based on face, status, or social identity; Peter denies this of God."
+      "def": "One who shows favoritism based on face, status, or social identity; Peter denies this of God.",
+      "verses": [
+        "10:34"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "6443e581bf1a4380dea766d00ee7b35b695726392c39f963b65acaeb35f6ff5d",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

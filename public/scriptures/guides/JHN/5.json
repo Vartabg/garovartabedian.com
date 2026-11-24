@@ -5,28 +5,32 @@
   "summary": "At a Jerusalem pool Jesus restores a man disabled for thirty-eight years, then commands him to carry his mat on the Sabbath. The dispute expands from Sabbath practice to Jesus's relation to the Father, his authority to give life and judge, and the witnesses that support his claim: John the Baptist, Jesus's works, the Father, and Scripture.",
   "whyItMatters": "The chapter refuses to separate mercy from Christology. A healing exposes what kind of work belongs to God's Sabbath, while Jesus's sustained discourse presents eternal life as a present passage from death to life and a future resurrection. It also warns that rigorous Bible study can miss the one to whom Scripture bears witness.",
   "context": {
-    "author": "The anonymous Fourth Gospel narrator, arranging a sign and discourse around life, judgment, witness, and belief",
+    "author": "The Fourth Gospel's unnamed narrator (early church tradition names John son of Zebedee; authorship is debated), arranging a sign and discourse around life, judgment, witness, and belief",
     "audience": "Readers able to hear Jewish Sabbath and monotheistic claims debated from within Israel's Scriptures",
-    "date": "The scene belongs to Jesus's Jerusalem ministry; the pool's five porticoes are archaeologically plausible while its later name forms vary",
+    "date": "The scene belongs to Jesus's Jerusalem ministry; the Gospel is commonly dated around AD 90–100, with some proposing earlier stages",
     "setting": "A feast-time Jerusalem pool near the Sheep Gate, followed by public controversy",
     "literaryForm": "Healing controversy followed by a tightly argued judicial discourse with a sequence of witnesses"
   },
   "outline": [
     {
       "heading": "Jesus heals a long-disabled man at the pool",
-      "verses": "1-9"
+      "verses": "1-9",
+      "note": "A man sick thirty-eight years says no one puts him into the pool; Jesus says 'take up your mat, and walk' and he does"
     },
     {
       "heading": "The Sabbath command provokes conflict and further encounter",
-      "verses": "10-18"
+      "verses": "10-18",
+      "note": "The Jews say carrying the mat is not lawful; Jesus finds the man in the temple, and the Jews seek to kill Jesus"
     },
     {
       "heading": "The Son gives life, judges, and acts in unity with the Father",
-      "verses": "19-30"
+      "verses": "19-30",
+      "note": "The Son does what he sees the Father doing and gives life to whom he desires; all in the tombs will hear his voice"
     },
     {
       "heading": "John, the works, the Father, and Scripture testify",
-      "verses": "31-47"
+      "verses": "31-47",
+      "note": "Jesus names his witnesses: John, his works, the Father, and the Scriptures; he adds that Moses accuses them"
     }
   ],
   "keyVerses": [
@@ -52,15 +56,13 @@
     "Father and Son",
     "eternal life",
     "judgment",
-    "resurrection",
-    "witness",
-    "Scripture"
+    "witness"
   ],
   "questions": [
     {
       "id": "q1",
       "question": "What do the pool's names and five porticoes contribute?",
-      "answer": "Manuscripts spell the place Bethesda, Bethzatha, or Bethsaida, reflecting uncertainty in transmitting a local Semitic name into Greek. The five roofed colonnades need not be allegorized as the five books of Moses. They anchor the scene in a real Jerusalem healing site where many sick people gathered.",
+      "answer": "Manuscripts spell the place Bethesda, Bethzatha, or Bethsaida, and scholars take Bethsaida to be a copying slip. The five roofed colonnades need not be allegorized as the five books of Moses. They place the scene at a Jerusalem pool where many sick people lay (5:3).",
       "verseRefs": [
         "5:1",
         "5:2",
@@ -116,7 +118,7 @@
     {
       "id": "q4",
       "question": "Why does carrying the mat create a Sabbath dispute?",
-      "answer": "The healing itself leads to a dispute about carrying a burden, language associated with Sabbath interpretation. Jesus intentionally includes the mat in the command, making restored agency visible and forcing the question of whether God's holy rest excludes life-giving mercy. The passage portrays a Jewish legal dispute, not Christianity versus a uniformly legalistic Judaism.",
+      "answer": "The healing itself leads to a dispute about carrying a burden, language associated with Sabbath interpretation. Jesus includes the mat in the command, which many readers take as making restored agency visible and forcing the question of whether God's holy rest excludes life-giving mercy. The passage portrays a Jewish legal dispute, not Christianity versus a uniformly legalistic Judaism.",
       "verseRefs": [
         "5:9",
         "5:10",
@@ -136,7 +138,7 @@
     {
       "id": "q5",
       "question": "What does ‘my Father is working, and I am working’ claim?",
-      "answer": "Jewish teachers could speak of God continuing to sustain creation, give life, and judge even on the Sabbath. Jesus places his own work alongside that divine activity and repeatedly says the Son does what he sees the Father doing. The claim is not independence from God but an extraordinary unity of action, honor, life-giving, and judgment.",
+      "answer": "The Jewish writer Philo says that ‘God never ceases from making something or other,’ even after the seventh day (Allegorical Interpretation 1.5-6). Jesus places his own work alongside that divine activity and repeatedly says the Son does what he sees the Father doing. The claim is not independence from God but an extraordinary unity of action, honor, life-giving, and judgment.",
       "verseRefs": [
         "5:17",
         "5:18",
@@ -223,21 +225,31 @@
   "glossary": [
     {
       "term": "Sabbath",
-      "def": "The seventh-day rest commanded in Torah and interpreted through ongoing Jewish debate about faithful practice."
+      "def": "The seventh-day rest commanded in Torah (Exodus 20:8-11), whose right practice is disputed in this chapter (5:10, 5:16)."
     },
     {
       "term": "Martyria",
-      "def": "Testimony or witness; a legal and relational word central to John's case for Jesus."
+      "def": "Testimony or witness; a legal and relational word central to John's case for Jesus.",
+      "verses": [
+        "5:31-36"
+      ]
     },
     {
       "term": "Eternal life",
-      "def": "God's age-to-come life, already possessed through believing and awaiting resurrection fullness."
+      "def": "The life God gives, already possessed through believing and awaiting resurrection fullness."
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "0c7b76bbbb984718c6aef3ecbeaffc1bf6f474415323cb53a668d590afba851a",
+    "generatedAt": "2026-08-04T23:02:42.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

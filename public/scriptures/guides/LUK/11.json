@@ -2,39 +2,45 @@
   "book": "LUK",
   "chapter": 11,
   "bookName": "Luke",
-  "summary": "Seeing Jesus pray, a disciple asks to be taught. Jesus gives Luke's compact form of the Lord's Prayer, then stories of a midnight friend and parental giving encourage bold persistence, culminating in the Father's gift of the Holy Spirit. After an exorcism, opponents accuse Jesus of using Beelzebul; Jesus answers with a divided kingdom, the stronger man, and God's finger. He warns that an emptied life needs new occupation, declares hearing and keeping God's word the true blessing, and gives Jonah and the queen of the South as witnesses against sign-seeking. Lamp and eye sayings examine perception. At a Pharisee's meal Jesus attacks cleansing without generosity, public honor, hidden contamination, burdensome legal expertise, and violence against prophets.",
+  "summary": "Seeing Jesus pray, a disciple asks to be taught. Jesus gives Luke's form of the Lord's Prayer, then stories of a midnight friend and parental giving encourage bold persistence, culminating in the Father's gift of the Holy Spirit. After an exorcism, opponents accuse Jesus of using Beelzebul; Jesus answers with a divided kingdom, the stronger man, and God's finger. He warns that an emptied life needs new occupation, declares hearing and keeping God's word the true blessing, and gives Jonah and the queen of the South as witnesses against sign-seeking. Lamp and eye sayings examine perception. At a Pharisee's meal Jesus attacks cleansing without generosity, public honor, hidden contamination, burdensome legal expertise, and violence against prophets.",
   "whyItMatters": "Prayer forms dependence on daily provision, released debt, testing, and Spirit. Luke also refuses neutral emptiness: liberation must become a life inhabited by God's word and mercy. Religious expertise is judged by justice, generosity, humility, and whether it helps others enter.",
   "context": {
-    "author": "Luke collecting prayer, exorcism controversy, sign, perception, and meal-woe traditions",
-    "audience": "Communities learning to pray and to distinguish liberation from religious performance",
-    "date": "Late-first-century Gospel composition",
+    "author": "The anonymous author, traditionally identified as Luke, collecting prayer, exorcism controversy, sign, perception, and meal-woe traditions",
+    "audience": "Theophilus and a wider Greek-reading audience, here learning to pray and to distinguish liberation from religious performance",
+    "date": "Commonly dated around AD 80–90, after AD 70; earlier dates in the 60s and later ones into the early second century are defended",
     "setting": "An unnamed place of prayer, houses and crowds, then a Pharisee's meal",
     "literaryForm": "Model prayer, household comparisons, controversy sayings, sign discourse, wisdom metaphors, and prophetic woes"
   },
   "outline": [
     {
       "heading": "A disciple asks; Jesus teaches the prayer",
-      "verses": "1-4"
+      "verses": "1-4",
+      "note": "A disciple asks for teaching on prayer; he gives words from 'Our Father in heaven' to 'deliver us from the evil one'."
     },
     {
       "heading": "Midnight persistence and the Father's Spirit gift",
-      "verses": "5-13"
+      "verses": "5-13",
+      "note": "A friend asks at midnight for three loaves and gets them by persistence; Jesus says keep asking, and the Father gives the Holy Spirit"
     },
     {
       "heading": "Beelzebul accusation, divided rule, and stronger one",
-      "verses": "14-23"
+      "verses": "14-23",
+      "note": "Some say he casts out demons by Beelzebul; he says a divided kingdom falls and that whoever is not with him is against him"
     },
     {
       "heading": "Returning spirit and hearing-kept blessing",
-      "verses": "24-28"
+      "verses": "24-28",
+      "note": "A spirit returns with seven worse ones; a woman praises the womb that bore him; he blesses those who hear and keep God's word"
     },
     {
       "heading": "Jonah, southern queen, lamp, and eye",
-      "verses": "29-36"
+      "verses": "29-36",
+      "note": "This generation gets only Jonah's sign; the Queen of the South and Nineveh's men will condemn it; the eye is the body's lamp"
     },
     {
       "heading": "Meal dispute and woes to Pharisees and lawyers",
-      "verses": "37-54"
+      "verses": "37-54",
+      "note": "Over dinner he says Pharisees clean the cup's outside, then pronounces woes on Pharisees and lawyers; scribes and Pharisees lie in wait for him"
     }
   ],
   "keyVerses": [
@@ -51,13 +57,11 @@
     {
       "ref": "11:28",
       "text": "But he said, “On the contrary, blessed are those who hear the word of God, and keep it.”",
-      "why": "Jesus relocates blessing from biological proximity to enacted hearing without insulting his mother, who already models it."
+      "why": "Jesus relocates blessing from biological proximity to enacted hearing without, on one common reading, insulting his mother, who already models it (8:21)."
     }
   ],
   "themes": [
     "formed prayer",
-    "daily dependence",
-    "released debt",
     "bold persistence",
     "Spirit as gift",
     "kingdom conflict",
@@ -68,7 +72,7 @@
     {
       "id": "q1",
       "question": "Why is Luke's Lord's Prayer shorter than Matthew's?",
-      "answer": "The earliest recoverable Lukan form is more compact, while later manuscripts often expanded it toward Matthew's familiar liturgical wording. The WEB displayed here includes several expansions. Jesus may have taught similar prayers more than once, but the manuscript pattern also shows worship shaping transmission.",
+      "answer": "Early Greek witnesses differ here: the critical Greek text on this site has a more compact form, without ‘in heaven’ or ‘may your will be done,’ while the WEB displayed here includes the longer wording, close to Matthew 6:9-13. Jesus may have taught similar prayers more than once.",
       "verseRefs": [
         "11:2",
         "11:3",
@@ -84,7 +88,7 @@
     {
       "id": "q2",
       "question": "What does ‘daily bread’ mean?",
-      "answer": "Epiousios is rare and debated: bread for the day, bread needed for existence, or bread for the coming day are leading senses. Luke's ‘each day’ emphasizes recurring dependence. Eucharistic and future-banquet readings can enrich reception, but the immediate prayer includes ordinary material provision.",
+      "answer": "Epiousios is rare and debated: bread for the day, bread needed for existence, or bread for the coming day are leading senses. Luke's ‘day by day’ emphasizes recurring dependence. Eucharistic and future-banquet readings can enrich reception, but the immediate prayer includes ordinary material provision.",
       "verseRefs": [
         "11:3"
       ],
@@ -96,7 +100,7 @@
     {
       "id": "q3",
       "question": "Why does Luke say sins and then debts in the same line?",
-      "answer": "The prayer asks forgiveness of hamartiai, sins, ‘for we ourselves forgive everyone indebted to us.’ Luke moves between moral failure and social-economic obligation. The metaphor explains forgiveness as release without claiming every loan is sinful or every injustice can be canceled without repair.",
+      "answer": "The prayer asks forgiveness of hamartiai, sins, ‘for we ourselves also forgive everyone who is indebted to us.’ Luke moves between moral failure and social-economic obligation. The metaphor explains forgiveness as release without claiming every loan is sinful or every injustice can be canceled without repair.",
       "verseRefs": [
         "11:4"
       ],
@@ -108,7 +112,7 @@
     {
       "id": "q4",
       "question": "Does the midnight story teach that God is reluctant and must be annoyed?",
-      "answer": "The difficult noun anaideia can mean shamelessness or bold persistence, likely describing the requester's refusal to accept social embarrassment. The comparison moves from a compromised human host to a generous Father: if even this household responds, how much more God. Prayer is encouraged, not divine stinginess.",
+      "answer": "The difficult noun anaideia can mean shamelessness or bold persistence, on one reading describing the requester's refusal to accept social embarrassment. The comparison moves from a compromised human host to a generous Father: if even this household responds, how much more God. Prayer is encouraged, not divine stinginess.",
       "verseRefs": [
         "11:5",
         "11:7",
@@ -125,8 +129,8 @@
     },
     {
       "id": "q5",
-      "question": "What is ‘the finger of God’?",
-      "answer": "It is scriptural shorthand for God's direct power, echoing the Exodus plagues and tablets. Jesus argues that if he expels demons by God's finger, God's kingdom has arrived. Luke's wording makes liberation a new-exodus sign rather than a technique of one rival exorcist.",
+      "question": "What is ‘God’s finger’?",
+      "answer": "It is scriptural shorthand for God's direct power, echoing the Exodus plagues and tablets. Jesus argues that if he expels demons by God's finger, God's kingdom has arrived. On one common reading, Luke's wording makes liberation a new-exodus sign rather than a technique of one rival exorcist.",
       "verseRefs": [
         "11:20"
       ],
@@ -138,7 +142,7 @@
     {
       "id": "q6",
       "question": "What does the returning unclean spirit warn about?",
-      "answer": "A swept, ordered, but empty house is vulnerable to worse reoccupation. Removal of oppression must become positive allegiance, community, word-kept practice, and Spirit-filled life. The saying is not a formula blaming people when illness returns; it is a warning against treating liberation as morally neutral vacancy.",
+      "answer": "A swept, ordered, but empty house is vulnerable to worse reoccupation. On one common reading, removal of oppression must become positive allegiance, community, word-kept practice, and Spirit-filled life. The saying is not a formula blaming people when illness returns; it is a warning against treating liberation as morally neutral vacancy.",
       "verseRefs": [
         "11:24",
         "11:25",
@@ -156,7 +160,7 @@
     {
       "id": "q7",
       "question": "Why is Jonah a sign in Luke?",
-      "answer": "Luke compares the Son of Man's relation to this generation with Jonah's presence to Nineveh and the queen's response to Solomon. Unlike Matthew, Luke does not explicitly say ‘three days and nights’ here. The emphasis is on prophetic presence and outsiders who respond without receiving the demanded spectacle.",
+      "answer": "Luke compares the Son of Man's relation to this generation with Jonah's presence to Nineveh and the queen's response to Solomon. Unlike Matthew, Luke does not explicitly say ‘three days and three nights’ here. The emphasis is on prophetic presence and outsiders who respond without receiving the demanded spectacle.",
       "verseRefs": [
         "11:29",
         "11:30",
@@ -195,15 +199,21 @@
   "glossary": [
     {
       "term": "Hallowed",
-      "def": "Treated as holy, honored, and publicly vindicated."
+      "def": "Treated as holy and honored; the WEB here has ‘kept holy.’",
+      "verses": [
+        "11:2"
+      ]
     },
     {
       "term": "Epiousios",
-      "def": "Rare Greek adjective in ‘daily bread,’ with debated senses around present or coming provision."
+      "def": "Rare Greek adjective in ‘daily bread,’ with debated senses around present or coming provision.",
+      "verses": [
+        "11:3"
+      ]
     },
     {
       "term": "Beelzebul",
-      "def": "Derisive name for the ruler of demons in the accusation against Jesus."
+      "def": "Name for ‘the prince of the demons’ in the accusation against Jesus; one old explanation reads it as a contemptuous ‘lord of dung.’"
     },
     {
       "term": "Lawyer",
@@ -211,9 +221,16 @@
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "674f6430ffd3aca26feac740bb996568720efb5a7955dea09d923557909d6577",
+    "generatedAt": "2026-08-04T20:49:38.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

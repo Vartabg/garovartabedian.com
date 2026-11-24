@@ -157,6 +157,8 @@ test('movement and approach arrival agree at 30 and 120 Hz within 1e-6 and stall
     ) < 1e-6,
   );
   assert.ok(Math.abs(Number(results[0].challengeAt) - Number(results[1].challengeAt)) < 1e-6);
+  assert.ok(results[0].stonesDoneAt !== null && results[1].stonesDoneAt !== null);
+  assert.ok(Math.abs(Number(results[0].stonesDoneAt) - Number(results[1].stonesDoneAt)) < 1e-6);
   assert.ok(
     Math.abs(
       Number(results[0].stones.find(st => st.id === 'stone-3')?.at) -

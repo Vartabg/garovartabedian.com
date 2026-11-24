@@ -6,31 +6,36 @@
   "whyItMatters": "John's epilogue shows resurrection becoming vocation. Failure is restored not through denial or private reassurance but through love expressed as care for Jesus's people and costly following. Peter and the beloved disciple have distinct callings; comparison and rumor must yield to faithful attention to Jesus.",
   "context": {
     "author": "An early epilogue present in all surviving complete manuscripts, associating the Gospel's testimony with the beloved disciple and a confirming ‘we’",
-    "audience": "A community interpreting Peter's vocation, the beloved disciple's death, eyewitness testimony, and its own mission",
-    "date": "A post-resurrection appearance in Galilee; the final editorial setting is not precisely dated",
+    "audience": "Readers interpreting Peter's vocation, the rumor about the beloved disciple, eyewitness testimony, and their own mission",
+    "date": "A post-resurrection appearance in Galilee; the Gospel is commonly dated around AD 90–100, and the epilogue's final setting is not precisely dated",
     "setting": "The Sea of Tiberias in Galilee, a boat at night, and breakfast on shore",
     "literaryForm": "Resurrection epilogue combining recognition scene, meal, restoration dialogue, martyrdom saying, rumor correction, and testimony colophon"
   },
   "outline": [
     {
       "heading": "An unproductive night becomes an abundant catch at Jesus's word",
-      "verses": "1-8"
+      "verses": "1-8",
+      "note": "Having caught nothing all night, the disciples cast the net on the right side as Jesus says; Peter throws himself into the sea"
     },
     {
       "heading": "The risen Jesus hosts breakfast on shore",
-      "verses": "9-14"
+      "verses": "9-14",
+      "note": "They find a fire of coals with fish and bread; Jesus says 'Come and eat breakfast', then gives them the bread and fish"
     },
     {
       "heading": "Peter's threefold love becomes pastoral commission",
-      "verses": "15-17"
+      "verses": "15-17",
+      "note": "Jesus asks Peter three times if he loves him; Peter says Jesus knows he has affection for him, and is told 'Feed my sheep'"
     },
     {
       "heading": "Jesus foretells Peter's death and commands following",
-      "verses": "18-23"
+      "verses": "18-23",
+      "note": "Jesus says another will carry Peter where he does not want to go, and tells him 'Follow me'; Peter asks 'what about this man'"
     },
     {
       "heading": "The beloved disciple's testimony and uncontainable works",
-      "verses": "24-25"
+      "verses": "24-25",
+      "note": "The disciple who testifies wrote these things; the writer supposes the world would not have room for books of everything Jesus did"
     }
   ],
   "keyVerses": [
@@ -53,8 +58,6 @@
   "themes": [
     "recognition",
     "abundant catch",
-    "breakfast",
-    "charcoal fire",
     "Peter restored",
     "feed my sheep",
     "follow me",
@@ -104,7 +107,7 @@
     {
       "id": "q3",
       "question": "What does the number 153 mean?",
-      "answer": "The precise count makes an eyewitness-like catch memorable and emphasizes abundance without a torn net. Many symbolic schemes—known fish species, numerical values, triangular numbers, nations—have been proposed, but John supplies no key and ancient claims about exactly 153 fish species are unreliable. Confidence should stop where the text stops.",
+      "answer": "The precise count makes an eyewitness-like catch memorable and emphasizes abundance without a torn net. Many symbolic schemes—known fish species, numerical values, triangular numbers—have been proposed, but John supplies no key. Confidence should stop where the text stops.",
       "verseRefs": [
         "21:6",
         "21:11"
@@ -158,7 +161,7 @@
     {
       "id": "q6",
       "question": "Do agapaō and phileō describe two different grades of love?",
-      "answer": "Jesus initially uses agapaō while Peter answers with phileō; by the third question Jesus uses phileō. Preachers often make this the key to the scene, but John elsewhere varies these verbs for the Father's and Jesus's love without a stable hierarchy, and he likewise varies ‘feed/tend’ and ‘lambs/sheep.’ The threefold questioning and commission, not a hidden two-level code, carry the main force.",
+      "answer": "Jesus initially uses agapaō while Peter answers with phileō; by the third question Jesus uses phileō. Some readers make this the key to the scene, but John elsewhere varies these verbs for the Father's and Jesus's love without a stable hierarchy, and he likewise varies ‘feed/tend’ and ‘lambs/sheep.’ The threefold questioning and commission, not a hidden two-level code, carry the main force.",
       "verseRefs": [
         "21:15",
         "21:16",
@@ -237,21 +240,37 @@
   "glossary": [
     {
       "term": "Agapaō / phileō",
-      "def": "Two common Greek verbs for love that John varies without a dependable higher-versus-lower hierarchy."
+      "def": "Two common Greek verbs for love that John varies without a dependable higher-versus-lower hierarchy.",
+      "verses": [
+        "21:15-17"
+      ]
     },
     {
       "term": "Boskō / poimainō",
-      "def": "To feed and to tend or shepherd, together describing Peter's care for Jesus's flock."
+      "def": "To feed and to tend or shepherd, together describing Peter's care for Jesus's flock.",
+      "verses": [
+        "21:15-17"
+      ]
     },
     {
       "term": "Epilogue",
-      "def": "A concluding section that follows a formal ending and resolves remaining themes or characters."
+      "def": "A concluding section that follows a formal ending and resolves remaining themes or characters.",
+      "verses": [
+        "21:1-25"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "735cd2308f31a06f68ccd8cce0716b9adde3a63ce4131f69ce4f31e37aa83a77",
+    "generatedAt": "2026-08-04T23:02:42.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

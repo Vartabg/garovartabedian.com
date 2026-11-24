@@ -5,28 +5,32 @@
   "summary": "In Antioch's diverse worshiping leadership, the Holy Spirit sets apart Barnabas and Saul for mission. Sent through Cyprus, they confront Bar-Jesus/Elymas, a Jewish magician who opposes their message, while the Roman proconsul believes. From this point Luke uses Saul's Roman name Paul. After John Mark leaves, Paul speaks in Pisidian Antioch's synagogue, recounting Israel's story from exodus to David and announcing Jesus, resurrection, forgiveness, and justification. Many Jews and proselytes respond; after organized opposition, Paul and Barnabas apply Isaiah's servant commission to their Gentile mission, and the word spreads through the region.",
   "whyItMatters": "The first sustained missionary journey begins through communal worship, fasting, Spirit speech, and accountable sending. Paul's synagogue sermon is not a rejection of Israel but an argument within Israel's hope, addressed first to Jews and God-fearing Gentiles. When opposition redirects the missionaries, Acts refuses the lazy equation ‘Jews rejected, Gentiles accepted’: both reception and resistance cross ethnic lines throughout the book.",
   "context": {
-    "author": "The Luke–Acts narrator beginning the Barnabas-Paul mission from Antioch",
-    "audience": "Readers tracing Spirit-led expansion through diaspora synagogues and Roman cities",
-    "date": "Often placed in the late 40s, though Acts gives no year",
+    "author": "The anonymous narrator of Luke–Acts, traditionally Luke, beginning the Barnabas-Paul mission from Antioch",
+    "audience": "Theophilus and a wider audience that knows Israel's Greek Scriptures, here tracing Spirit-led expansion through diaspora synagogues and Roman cities",
+    "date": "Commonly dated around AD 80–90, though dates in the 60s and later are argued; Acts gives no year for these events",
     "setting": "Syrian Antioch, Cyprus, Perga, and Pisidian Antioch in Roman Galatia",
     "literaryForm": "Commissioning scene, prophetic confrontation, travel narrative, synagogue sermon, and mission-turn summary"
   },
   "outline": [
     {
       "heading": "The Spirit sends Barnabas and Saul from Antioch",
-      "verses": "1-3"
+      "verses": "1-3",
+      "note": "While the prophets and teachers fast and serve, the Spirit says to separate Barnabas and Saul; they fast, pray, and send them"
     },
     {
       "heading": "The missionaries cross Cyprus and confront Elymas",
-      "verses": "4-12"
+      "verses": "4-12",
+      "note": "They sail to Cyprus; at Paphos the sorcerer Elymas opposes them, Paul says he will be blind, and the proconsul believes"
     },
     {
       "heading": "Paul proclaims Israel's fulfilled hope in Pisidian Antioch",
-      "verses": "13-43"
+      "verses": "13-43",
+      "note": "Paul recounts Israel's story from Egypt to David, says God raised Jesus; the Gentiles ask that it be preached the next Sabbath"
     },
     {
       "heading": "Opposition and reception spread the word toward Gentiles",
-      "verses": "44-52"
+      "verses": "44-52",
+      "note": "Almost the whole city gathers; the Jews contradict, Paul and Barnabas say they turn to the Gentiles, and they shake off the dust"
     }
   ],
   "keyVerses": [
@@ -49,9 +53,7 @@
   "themes": [
     "Spirit-led mission",
     "diverse leadership",
-    "Saul and Paul",
     "Scripture-shaped proclamation",
-    "resurrection",
     "forgiveness",
     "synagogue and Gentile mission",
     "word spreading"
@@ -90,7 +92,7 @@
     {
       "id": "q3",
       "question": "Was Saul renamed Paul when he became a Christian?",
-      "answer": "Luke introduces ‘Saul, who is also called Paul’ only when addressing the Roman proconsul. Paulos is his Roman cognomen, while Saoulos is the Greek form of his Hebrew name; bilingual diaspora people commonly carried more than one name. The narrative's usage shifts with its Gentile-facing setting, not with a divine renaming ceremony.",
+      "answer": "Luke introduces ‘Saul, who is also called Paul’ only when addressing the Roman proconsul. Paulos is a Roman name, probably his cognomen, while Saulos is the Greek form of his Hebrew name, Saul; bilingual diaspora people commonly carried more than one name. The narrative's usage shifts with its Gentile-facing setting, not with a divine renaming ceremony.",
       "verseRefs": [
         "13:7",
         "13:9"
@@ -104,7 +106,7 @@
     {
       "id": "q4",
       "question": "Why is Elymas struck blind?",
-      "answer": "Elymas actively seeks to turn the proconsul from the faith, and Paul, filled with the Spirit, announces temporary blindness while accusing him of twisting the Lord's straight ways. The judgment mirrors Paul's own temporary blindness and leaves room in the phrase ‘until a season’ for change. Still, it is a severe prophetic sign, not permission for religious leaders to curse opponents.",
+      "answer": "Elymas actively seeks to turn the proconsul from the faith, and Paul, filled with the Spirit, announces temporary blindness while accusing him of twisting the Lord's straight ways. The judgment mirrors Paul's own temporary blindness and leaves room in the phrase ‘for a season’ for change. Still, it is a severe prophetic sign, not permission for religious leaders to curse opponents.",
       "verseRefs": [
         "13:8",
         "13:9",
@@ -186,7 +188,7 @@
     {
       "id": "q8",
       "question": "Does ‘appointed to eternal life’ settle every debate about predestination?",
-      "answer": "Tetagmenoi can describe those appointed, disposed, or placed toward eternal life; the passive naturally points to God's ordering, and believers rightly emphasize grace. Traditions differ over how this relates to human response, foreknowledge, and election. In context the clause explains faith amid a larger scene of joyful reception, public proclamation, opposition, and Spirit-filled disciples—not a complete philosophical system.",
+      "answer": "Tetagmenoi can describe those appointed or placed toward eternal life; the passive naturally points to God's ordering, and believers rightly emphasize grace. Traditions differ over how this relates to human response, foreknowledge, and election. In context the clause explains faith amid a larger scene of joyful reception, public proclamation, opposition, and Spirit-filled disciples—not a complete philosophical system.",
       "verseRefs": [
         "13:48",
         "13:49",
@@ -211,13 +213,23 @@
     },
     {
       "term": "Justify",
-      "def": "To acquit or set right in a judicial-theological sense; Greek dikaioō."
+      "def": "To acquit or set right in a judicial-theological sense; Greek dikaioō.",
+      "verses": [
+        "13:38-39"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "334c63d5644523e4014ab20241fb98fc13121ba3d3f5424e30a5537081e76030",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

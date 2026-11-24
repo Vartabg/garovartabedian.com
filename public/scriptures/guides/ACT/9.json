@@ -5,24 +5,27 @@
   "summary": "Saul pursues followers of ‘the Way’ toward Damascus, but a heavenly light and Jesus's voice stop him. Blind and fasting, he is visited by the initially fearful Ananias, who calls him brother, restores his sight, and participates in his filling with the Spirit and baptism. Saul immediately proclaims Jesus, escapes a murder plot, and is introduced to a suspicious Jerusalem community through Barnabas. After Saul departs, the churches have peace and grow. Peter then heals Aeneas at Lydda and raises Tabitha—Dorcas—at Joppa, where this beloved female disciple's good works have sustained widows.",
   "whyItMatters": "The persecutor is interrupted and commissioned, not because violence is trivial but because grace can create a radically different future. Conversion is communal as well as visionary: Ananias risks welcome, Barnabas risks advocacy, and suspicious believers need credible testimony. The chapter closes by shifting attention from a famous new missionary to local communities and a woman disciple whose material care embodies life-giving witness.",
   "context": {
-    "author": "The Luke–Acts narrator joining Saul's calling to Peter's coastal ministry",
-    "audience": "Readers learning how an enemy becomes a witness and how the mission reaches toward Gentile contact",
-    "date": "After Stephen's death and before the Cornelius episode",
+    "author": "The anonymous narrator of Luke–Acts, traditionally Luke, joining Saul's calling to Peter's coastal ministry",
+    "audience": "Theophilus and a wider audience that knows Israel's Greek Scriptures, here learning how an enemy becomes a witness and how the mission reaches toward Gentile contact",
+    "date": "Commonly dated around AD 80–90, though dates in the 60s and later are argued; narrates events after Stephen's death and before the Cornelius episode",
     "setting": "The road and city of Damascus, Jerusalem, Lydda, Sharon, and Joppa",
     "literaryForm": "Call-and-transformation narrative, escape accounts, growth summary, healing, and restoration-to-life story"
   },
   "outline": [
     {
       "heading": "The risen Jesus stops Saul and Ananias receives him",
-      "verses": "1-19"
+      "verses": "1-19",
+      "note": "A light and a voice stop Saul; blind three days, he receives sight when Ananias lays hands on him, and is baptized"
     },
     {
       "heading": "Saul proclaims Jesus, escapes plots, and is welcomed through Barnabas",
-      "verses": "20-31"
+      "verses": "20-31",
+      "note": "Saul preaches in the synagogues; the Jews plot to kill him, disciples lower him in a basket, and Barnabas brings him to the apostles"
     },
     {
       "heading": "Peter heals Aeneas and restores Tabitha at Joppa",
-      "verses": "32-43"
+      "verses": "32-43",
+      "note": "Peter tells Aeneas, bedridden eight years, to get up; at Joppa he sends everyone out, prays, and says 'Tabitha, get up'"
     }
   ],
   "keyVerses": [
@@ -46,8 +49,6 @@
     "the Way",
     "call and conversion",
     "grace and accountability",
-    "Spirit filling",
-    "baptism",
     "bold witness",
     "communal discernment",
     "healing and restored life"
@@ -56,7 +57,7 @@
     {
       "id": "q1",
       "question": "Why is the movement called ‘the Way’?",
-      "answer": "Hē hodos—‘the Way’—can evoke a path of life, God's way in Scripture, and the community's lived allegiance before ‘Christianity’ becomes a usual label. Saul seeks people ‘belonging to the Way,’ so the phrase names a recognizable movement, not merely a teaching topic. Acts uses it repeatedly in contested public settings.",
+      "answer": "Hē hodos—‘the Way’—can evoke a path of life, God's way in Scripture, and the community's lived allegiance before the name ‘Christians’ appears at Antioch (11:26). Saul seeks people ‘who were of the Way,’ so the phrase names a recognizable movement, not merely a teaching topic. Acts uses it repeatedly in contested public settings.",
       "verseRefs": [
         "9:2"
       ],
@@ -68,7 +69,7 @@
     {
       "id": "q2",
       "question": "Is this Saul's conversion or his call?",
-      "answer": "It is both a radical reversal toward Jesus and a prophetic commission to witness. Because Saul already worships Israel's God, some scholars prefer ‘call’ rather than implying a switch from one religion to another; because he moves from persecuting Jesus's followers to baptism and proclamation, ‘conversion’ describes real transformation. The labels should illuminate, not erase, his Jewish identity.",
+      "answer": "It is both a radical reversal toward Jesus and a prophetic commission to witness. Because Saul already worships Israel's God, some readers prefer ‘call’ rather than implying a switch from one religion to another; because he moves from persecuting Jesus's followers to baptism and proclamation, ‘conversion’ describes real transformation. The labels should illuminate, not erase, his Jewish identity.",
       "verseRefs": [
         "9:1",
         "9:4",
@@ -104,7 +105,7 @@
     {
       "id": "q4",
       "question": "Do the three accounts of Saul's encounter contradict one another about his companions?",
-      "answer": "Here the companions hear ‘the voice’ but see no one; Acts 22 says they saw the light but did not hear or understand the voice of the speaker; Acts 26 summarizes everyone falling and focuses on words to Saul. Greek akouō can describe hearing a sound or comprehending speech, and case constructions may nuance it, though rhetoric also shapes each retelling. The core is stable while narrated details differ and deserve comparison rather than forced identity.",
+      "answer": "Here the companions hear ‘the sound’ but see no one; Acts 22 says they saw the light but did not hear or understand the voice of the speaker; Acts 26 summarizes everyone falling and focuses on words to Saul. Greek akouō can describe hearing a sound or comprehending speech, and case constructions may nuance it, though rhetoric also shapes each retelling. The core is stable while narrated details differ and deserve comparison rather than forced identity.",
       "verseRefs": [
         "9:3",
         "9:4",
@@ -217,13 +218,20 @@
     },
     {
       "term": "Tanner",
-      "def": "A leather worker; Peter's stay with Simon the tanner anticipates movement across purity and social boundaries."
+      "def": "A leather worker; Peter stays many days with Simon the tanner at Joppa (9:43)."
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "ce23e110f2ad9e833a313d8f78e5daf006406b83c97ab0a4feee440e5323aadc",
+    "generatedAt": "2026-08-04T22:00:51.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

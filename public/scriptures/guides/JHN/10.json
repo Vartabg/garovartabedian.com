@@ -5,28 +5,32 @@
   "summary": "Jesus interprets the conflict of chapter 9 through a sheepfold figure: unlike thieves and hired hands, the true shepherd knows, calls, protects, and lays down his life for the sheep. At the Festival of Dedication the dispute turns to messianic identity, Jesus's works, the security of his sheep, his unity with the Father, and his scriptural appeal to Psalm 82.",
   "whyItMatters": "The good shepherd is defined by costly self-giving, intimate knowledge, and abundant life—not domination. Jesus gathers others into one flock and grounds security in the joined grasp of Son and Father. The chapter also models careful scriptural argument: a difficult ‘gods’ text supports rather than replaces the larger claim made by Jesus's works.",
   "context": {
-    "author": "The anonymous Fourth Gospel narrator, linking a shepherd discourse to the expulsion in chapter 9 and a later Dedication controversy",
-    "audience": "Readers familiar with Israel's shepherd traditions, enclosure practices, Hanukkah, and scriptural legal argument",
-    "date": "The first discourse continues the aftermath of the blind man's healing; verse 22 shifts to the winter Festival of Dedication",
+    "author": "The Gospel's unnamed writer, whose testimony the book ties to the beloved disciple and early tradition to John son of Zebedee (authorship is debated), linking a shepherd discourse to the expulsion in chapter 9 and a later Dedication controversy",
+    "audience": "Readers at some distance from the Judean world, for whom John names the feast and the season (10:22–23); the chapter draws on Israel's shepherd traditions and scriptural legal argument",
+    "date": "Commonly dated around AD 90–100, with some proposing earlier stages or a broader late-first-century range; the first discourse continues the aftermath of the blind man's healing; verse 22 shifts to the winter Festival of Dedication",
     "setting": "Jerusalem, first near the earlier temple controversy and later Solomon's porch during Dedication",
     "literaryForm": "Shepherd figure of speech and interpretive discourse followed by a festival confrontation and withdrawal"
   },
   "outline": [
     {
       "heading": "The shepherd enters, calls, and leads while strangers scatter",
-      "verses": "1-6"
+      "verses": "1-6",
+      "note": "Entering by the door, the shepherd calls his sheep by name and goes before them; they follow, but flee from a stranger"
     },
     {
       "heading": "Jesus is the gate and good shepherd who gives his life",
-      "verses": "7-21"
+      "verses": "7-21",
+      "note": "Jesus says 'I am the door' and 'I am the good shepherd'; the hired hand flees, but the shepherd lays down his life"
     },
     {
       "heading": "At Dedication Jesus speaks of his sheep and unity with the Father",
-      "verses": "22-30"
+      "verses": "22-30",
+      "note": "In Solomon's porch the Jews ask for a plain answer; he says his sheep hear his voice and 'I and the Father are one'"
     },
     {
       "heading": "Psalm 82 and the works answer a blasphemy charge",
-      "verses": "31-42"
+      "verses": "31-42",
+      "note": "The Jews take up stones and charge him with blasphemy; he asks which good work, cites 'you are gods', then goes beyond the Jordan"
     }
   ],
   "keyVerses": [
@@ -52,15 +56,13 @@
     "abundant life",
     "self-giving death",
     "one flock",
-    "Dedication",
-    "security",
     "Father and Son"
   ],
   "questions": [
     {
       "id": "q1",
       "question": "Is this a parable in the same sense as the Synoptic parables?",
-      "answer": "John calls it a paroimia, a veiled figure or indirect saying, not the usual Synoptic term parabolē. The imagery likely assumes a communal enclosure with a gatekeeper and several flocks separated by a shepherd's distinctive call. Its elements shift as Jesus is both gate and shepherd, so it should not be forced into a one-to-one allegorical chart.",
+      "answer": "John calls it a paroimia, a veiled figure or indirect saying, not the usual Synoptic term parabolē. The picture has a fold with a gatekeeper and a shepherd who calls ‘his own sheep by name’; some readers take ‘his own’ to mean other flocks shared the fold. Its elements shift as Jesus is both gate and shepherd, so it should not be forced into a one-to-one allegorical chart.",
       "verseRefs": [
         "10:1",
         "10:2",
@@ -86,7 +88,7 @@
     {
       "id": "q2",
       "question": "Who are the thieves, robbers, and hired hands?",
-      "answer": "The immediate narrative follows authorities who expelled the healed man, and Israel's prophets condemn shepherds who feed themselves and scatter the flock. Jesus contrasts exploitative or self-protective leadership with his own costly care. The language should examine leadership by its fruit, not be mapped indiscriminately onto all Jewish leaders or everyone before Jesus.",
+      "answer": "The immediate narrative follows authorities who expelled the healed man, and Israel's prophets condemn shepherds who feed themselves and scatter the flock (Ezekiel 34:2–6). Jesus contrasts exploitative or self-protective leadership with his own costly care. The language should examine leadership by its fruit, not be mapped indiscriminately onto all Jewish leaders or everyone before Jesus.",
       "verseRefs": [
         "10:1",
         "10:5",
@@ -146,7 +148,7 @@
     {
       "id": "q5",
       "question": "Who are the ‘other sheep,’ and why one flock rather than one fold?",
-      "answer": "Within John's mission horizon they most naturally anticipate people beyond the present Jewish fold, including Gentiles, gathered through Jesus's voice. The Greek says one poimnē, ‘flock,’ under one shepherd, not one aulē, ‘fold’ or enclosure. Unity is centered on the shepherd and shared hearing, not on flattening every people into one cultural container.",
+      "answer": "Within John's mission horizon many readers take them to anticipate people beyond the present Jewish fold, including Gentiles, gathered through Jesus's voice. The Greek says one poimnē, ‘flock,’ under one shepherd, not one aulē, ‘fold’ or enclosure. Unity is centered on the shepherd and shared hearing, not on flattening every people into one cultural container.",
       "verseRefs": [
         "10:16"
       ],
@@ -158,7 +160,7 @@
     {
       "id": "q6",
       "question": "What does the Festival of Dedication add?",
-      "answer": "Dedication—Hanukkah—remembered the temple's purification after Antiochus IV's desecration. In winter Jesus walks in the temple and is pressed to identify himself as Messiah. Against a feast of renewed sacred space and contested kingship, he points to consecration by the Father, his works, and his relation to the Father.",
+      "answer": "Dedication—Hanukkah—remembered the temple's purification after Antiochus IV's desecration (1 Maccabees 1:54; 4:52–59). In winter Jesus walks in the temple and is pressed to identify himself as Messiah. Against a feast of renewed sacred space and contested kingship, he points to consecration by the Father, his works, and his relation to the Father.",
       "verseRefs": [
         "10:22",
         "10:23",
@@ -223,7 +225,10 @@
   "glossary": [
     {
       "term": "Paroimia",
-      "def": "A veiled figure or indirect saying; John's label for the shepherd speech."
+      "def": "A veiled figure or indirect saying; John's label for the shepherd speech.",
+      "verses": [
+        "10:6"
+      ]
     },
     {
       "term": "Dedication",
@@ -231,13 +236,23 @@
     },
     {
       "term": "Poimnē",
-      "def": "A flock; verse 16 promises one flock under one shepherd, not one enclosure."
+      "def": "A flock; verse 16 promises one flock under one shepherd, not one enclosure.",
+      "verses": [
+        "10:16"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "d3bc09e603d2d1c30188c20a8e2a08418ea7ab79b199104ad3b5d4ec9119db8c",
+    "generatedAt": "2026-08-04T23:02:42.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }

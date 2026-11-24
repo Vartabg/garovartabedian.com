@@ -5,32 +5,37 @@
   "summary": "Mary Magdalene finds the tomb open while it is still dark and tells Peter and the beloved disciple. They run, see the linen cloths, and begin to believe without yet understanding Scripture. Mary remains weeping, encounters the risen Jesus when he calls her by name, and becomes his messenger to ‘my brothers.’ That evening Jesus sends the disciples as the Father sent him and breathes the Holy Spirit. Thomas moves from demanded proof to the Gospel's climactic confession, and the narrator states the book's purpose: belief and life.",
   "whyItMatters": "John treats resurrection faith as evidence, encounter, Scripture, Spirit, and testimony converging—not credulity. Different witnesses come at different speeds, and Jesus meets grief and doubt personally. The resurrection creates a sent, Spirit-bearing, forgiving community and opens blessed belief to readers who cannot see as the first witnesses did.",
   "context": {
-    "author": "The anonymous Fourth Gospel narrator, bringing signs and testimony to their stated purpose while associating the beloved disciple with eyewitness memory",
+    "author": "The anonymous Fourth Gospel narrator, traditionally identified with John son of Zebedee (authorship is debated), bringing signs and testimony to their stated purpose while associating the beloved disciple with eyewitness memory",
     "audience": "Later readers explicitly included among those who have not seen yet may believe",
-    "date": "The first day of the week after Jesus's burial and eight days later",
+    "date": "The first day of the week after Jesus's burial and eight days later; the Gospel is commonly dated around AD 90–100, with earlier stages also proposed",
     "setting": "The garden tomb and a locked meeting place in Jerusalem",
     "literaryForm": "Empty-tomb investigation, recognition scene, two resurrection appearances, and a formal purpose statement"
   },
   "outline": [
     {
       "heading": "Mary reports the open tomb; two disciples inspect it",
-      "verses": "1-10"
+      "verses": "1-10",
+      "note": "Mary tells Peter and the other disciple the Lord is taken from the tomb; they run there, and the other disciple 'saw and believed'"
     },
     {
       "heading": "Jesus calls Mary by name and sends her to the brothers",
-      "verses": "11-18"
+      "verses": "11-18",
+      "note": "Weeping outside the tomb, Mary sees two angels, then Jesus, whom she supposes the gardener; he says 'Mary', and she answers 'Rabboni'"
     },
     {
       "heading": "Jesus gives peace, commission, Spirit, and authority",
-      "verses": "19-23"
+      "verses": "19-23",
+      "note": "With the doors locked, Jesus stands among the disciples, shows his hands and side, and breathes on them, saying 'Receive the Holy Spirit'"
     },
     {
       "heading": "Thomas confesses the risen Jesus",
-      "verses": "24-29"
+      "verses": "24-29",
+      "note": "Thomas will not believe unless he sees the nail prints; Jesus tells him 'see my hands', and Thomas answers 'My Lord and my God'"
     },
     {
       "heading": "The Gospel states why its signs were written",
-      "verses": "30-31"
+      "verses": "30-31",
+      "note": "Jesus did many other signs not written in this book; these are written that you may believe and have life in his name"
     }
   ],
   "keyVerses": [
@@ -53,18 +58,16 @@
   "themes": [
     "empty tomb",
     "seeing and believing",
-    "Mary Magdalene",
     "recognition",
     "sending",
     "Spirit",
-    "Thomas",
     "written testimony and life"
   ],
   "questions": [
     {
       "id": "q1",
       "question": "Why mention that it was still dark?",
-      "answer": "The phrase supplies early-morning time and continues John's light-darkness symbolism. Mary comes in grief and incomplete understanding, but the darkness is already being overtaken by resurrection. Readers should not treat her as spiritually inferior: she remains at the tomb, encounters Jesus, and becomes the first commissioned resurrection announcer in John.",
+      "answer": "The phrase supplies early-morning time and, on one common reading, continues John's light-darkness symbolism. Mary comes in grief and incomplete understanding, but the darkness is already being overtaken by resurrection. Her grief is not the end of her part: she remains at the tomb, encounters Jesus, and becomes the first commissioned resurrection announcer in John.",
       "verseRefs": [
         "20:1",
         "20:2",
@@ -96,7 +99,7 @@
     {
       "id": "q3",
       "question": "What do the cloths and face cloth show?",
-      "answer": "The linen wrappings lie in the tomb, with the face cloth separately placed. John describes an ordered absence incompatible with a hurried theft and different from Lazarus emerging still bound. The details are evidence, not a complete mechanical account of resurrection; the beloved disciple sees and believes while both still lack scriptural understanding.",
+      "answer": "The linen wrappings lie in the tomb, with the face cloth separately placed. John describes an ordered absence that many readers take as incompatible with a hurried theft and different from Lazarus emerging still bound. The details are evidence, not a complete mechanical account of resurrection; the beloved disciple sees and believes while both still lack scriptural understanding.",
       "verseRefs": [
         "20:3",
         "20:4",
@@ -120,7 +123,7 @@
     {
       "id": "q4",
       "question": "Why does Mary recognize Jesus only when he says her name?",
-      "answer": "Tears, expectation, darkness, or transformed appearance may contribute, but John does not isolate a cause. Recognition comes relationally in the shepherd's pattern: he calls his own by name and they know his voice. Her ‘Rabbouni,’ a Semitic form John translates as Teacher, joins personal continuity with the startling newness of resurrection.",
+      "answer": "Tears, expectation, darkness, or transformed appearance may contribute, but John does not isolate a cause. On one common reading, recognition comes in the shepherd's pattern of 10:3-4: he calls his own by name and they know his voice. Her ‘Rabbouni,’ a Semitic form John translates as Teacher, joins personal continuity with the startling newness of resurrection.",
       "verseRefs": [
         "20:11",
         "20:12",
@@ -158,7 +161,7 @@
     {
       "id": "q6",
       "question": "What happens when Jesus breathes the Holy Spirit?",
-      "answer": "The verb emphysaō echoes God's breath giving life in Genesis 2 and the reviving breath of Ezekiel 37. Jesus accompanies it with the Father's pattern of sending, presenting resurrection as new creation and mission. Interpreters relate this moment differently to Pentecost, but John depicts a real Spirit-gift rather than merely an acted promise.",
+      "answer": "The verb emphysaō echoes God's breath giving life in Genesis 2 and the reviving breath of Ezekiel 37. Jesus accompanies it with the Father's pattern of sending, presenting resurrection as new creation and mission. Interpreters relate this moment differently to Pentecost, and readers differ on whether John depicts a full Spirit-gift here or an acted promise.",
       "verseRefs": [
         "20:19",
         "20:20",
@@ -229,21 +232,40 @@
   "glossary": [
     {
       "term": "Rabbouni",
-      "def": "A Semitic address meaning Teacher or My Teacher, translated by John for his readers."
+      "def": "A Semitic address meaning Teacher or My Teacher, translated by John for his readers.",
+      "verses": [
+        "20:16"
+      ]
     },
     {
       "term": "Emphysaō",
-      "def": "To breathe on or into, evoking biblical creation and new-life imagery."
+      "def": "To blow or breathe on, evoking biblical creation and new-life imagery.",
+      "verses": [
+        "20:22"
+      ]
     },
     {
       "term": "Pisteuō",
-      "def": "To believe, trust, or rely; John states his purpose with this verb rather than the noun ‘faith.’"
+      "def": "To believe, trust, or rely; John states his purpose with this verb rather than the noun ‘faith.’",
+      "verses": [
+        "20:8",
+        "20:25",
+        "20:29",
+        "20:31"
+      ]
     }
   ],
   "reviewStatus": "agent-reviewed",
-  "reviewedAt": "2026-08-25",
-  "reviewer": "agent editorial panel (7-pass review, 2026-08-24)",
+  "reviewedAt": "2026-11-24",
+  "reviewer": "Claude Fable 5.2 with two outside model readers and a source check (2026-11-24); wording approved by Garo",
   "sourceIds": [
     "web"
-  ]
+  ],
+  "generation": {
+    "attributedModel": "hand-authored",
+    "promptHash": "280188ef4407d0be44487a57ea48bf003e3ed5fe6cdf748a2a7467d9ccbc0afd",
+    "generatedAt": "2026-08-04T23:02:42.000Z",
+    "rubricVersion": "guide-v3",
+    "method": "review-bound"
+  }
 }
